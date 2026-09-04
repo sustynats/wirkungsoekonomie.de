@@ -1,7 +1,172 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T05:21:19.381Z",
+  "updated_at": "2026-09-04T05:36:20.086Z",
   "stories": [
+    {
+      "story_id": "wt-aabe8c0430bf8f84",
+      "slug": "two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84",
+      "title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
+      "first_seen": "2026-09-04T05:10:44.000Z",
+      "last_updated": "2026-09-04T05:25:08.000Z",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/asia-pacific/20260904-two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal",
+          "title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
+          "summary": "Rescue teams on Friday pulled two hydropower workers free from a tunnel blocked by mud and debris during the massive flood that swept through Nepal in late August. Officials believe that hundreds of workers remain trapped in tunnels connected to hydropower projects throughout the remote Himalayan region.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:10:44.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "92d04e8126271757cf49cb55c2e613822d7358c64904328015873d3b8607dcba",
+          "source_item_id": "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:10:44.000Z",
+          "ingested_at": "2026-09-04T05:36:20.086Z",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "euronews-en",
+          "publisher": "Euronews",
+          "url": "http://www.euronews.com/2026/09/04/two-trapped-workers-rescued-from-hydropower-tunnel-nine-days-after-nepal-floods",
+          "title": "Two trapped workers rescued from hydropower tunnel nine days after Nepal floods",
+          "summary": "About 900 workers are missing from 12 hydropower projects in Nepal, with roughly 500 believed to be trapped in tunnels, according to local authorities.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:25:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Europa",
+          "content_hash": "bb4281219bc455136e1810ab86c87a56af262b4b5414bd9c0d2f0e18cfd2f2bb",
+          "source_item_id": "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+          "publisher_id": "euronews",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "EU",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:25:08.000Z",
+          "ingested_at": "2026-09-04T05:36:20.086Z",
+          "provenance": {
+            "origin": "publisher:euronews",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-aabe8c0430bf8f84-claim-01",
+          "story_id": "wt-aabe8c0430bf8f84",
+          "claim": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal: Rescue teams on Friday pulled two hydropower workers free from a tunnel blocked by mud and debris during the massive flood that swept through Nepal in late August. Officials believe that hundreds of workers remain trapped in tunnels connected to hydropower projects throughout the remote Himalayan region.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T05:36:20.086Z"
+        },
+        {
+          "claim_id": "wt-aabe8c0430bf8f84-claim-02",
+          "story_id": "wt-aabe8c0430bf8f84",
+          "claim": "Two trapped workers rescued from hydropower tunnel nine days after Nepal floods: About 900 workers are missing from 12 hydropower projects in Nepal, with roughly 500 believed to be trapped in tunnels, according to local authorities.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "euronews-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:euronews",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T05:36:20.086Z"
+        }
+      ],
+      "content_hash": "ef9141aa81da71aaad047310018b97281e2823d0b7481fd95dbf93607617d7b8",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-04T05:36:20.086Z",
+      "event_first_seen_at": "2026-09-04T05:36:20.086Z",
+      "event_detected_at": "2026-09-04T05:36:20.086Z",
+      "event_id": "event-1b0c4e9053465796c788",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.201433333333334,
+        "detection_delay_minutes": 11.201433333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      }
+    },
     {
       "story_id": "wt-e442d6ad81290406",
       "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
@@ -735,6 +900,120 @@
         }
       ],
       "retirement_history": []
+    },
+    {
+      "story_id": "wt-7f5f081ae8cf117e",
+      "slug": "pragmatic-international-relations-sanchez-seeks-to-avoid-further-conflict-with-rabat-cf117e",
+      "title": "'Pragmatic international relations: Sánchez seeks to avoid 'further conflict with Rabat'",
+      "first_seen": "2026-09-04T05:22:52.000Z",
+      "last_updated": "2026-09-04T05:22:52.000Z",
+      "topic": [
+        "Soziales",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260904-pragmatic-international-relations-s%C3%A1nchez-seeks-to-avoid-further-conflict-with-rabat",
+          "title": "'Pragmatic international relations: Sánchez seeks to avoid 'further conflict with Rabat'",
+          "summary": "Delano D'Souza is pleased to welcome Alana Moceri, International Relations Professor at IE School of Politics, Economics and Global Affairs. She sees the Ceuta migrant crossings as a both a domestic and international crisis. The scale and speed of the crossings point toward what she calls a form of \"deliberate permissiveness\" at the border and Pedro Sánchez's restrained response is understood less as exoneration of Morocco than as pragmatic international relations. Sánchez faces pressure at home from political opponents able to frame migration as an existential crisis. She extends the argument further by showing how such episodes become politically valuable after they occur: Spain's far right can amplify the language of \"invasion,\" while hostile foreign information ecosystems can exploit an already volatile controversy without necessarily having created it. The result is a crisis in which the border is simultaneously a geopolitical instrument, a domestic political weapon, and an information battleground.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:22:52.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "2fd9ad3a31c2b8004ab70f72273984784dec63a08faa4d1c6f1c359f57f23e99",
+          "source_item_id": "c4a5b9cb15c4c5087dd6a642e6b1186d0eb4109031dbb431a5b1487d886f3e5b",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:22:52.000Z",
+          "ingested_at": "2026-09-04T05:36:20.086Z",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7f5f081ae8cf117e-claim-01",
+          "story_id": "wt-7f5f081ae8cf117e",
+          "claim": "'Pragmatic international relations: Sánchez seeks to avoid 'further conflict with Rabat': Delano D'Souza is pleased to welcome Alana Moceri, International Relations Professor at IE School of Politics, Economics and Global Affairs. She sees the Ceuta migrant crossings as a both a domestic and international crisis. The scale and speed of the crossings point toward what she calls a form of \"deliberate permissiveness\" at the border and Pedro Sánchez's restrained response is understood less as exoneration of Morocco than as pragmatic international relations. Sánchez faces pressure at home from political opponents able to frame migration as an existential crisis. She extends the argument further by showing how such episodes become politically valuable after they occur: Spain's far right can amplify the language of \"invasion,\" while hostile foreign information ecosystems can exploit an already ",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T05:36:20.086Z"
+        }
+      ],
+      "content_hash": "830a69f96febf195366da11f614a76d7fef5676d35793b3268969f624269651e",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-04T05:36:20.086Z",
+      "event_first_seen_at": "2026-09-04T05:36:20.086Z",
+      "event_detected_at": "2026-09-04T05:36:20.086Z",
+      "event_id": "event-d95278f4ca435b7ed36d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.4681,
+        "detection_delay_minutes": 13.4681,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      }
     },
     {
       "story_id": "wt-d175d26e4635ba0a",
@@ -3497,7 +3776,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
         "sources": [
           {
@@ -3523,7 +3802,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T06:00:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -3531,7 +3810,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -5208,7 +5487,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
         "sources": [
           {
@@ -5234,7 +5513,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -5242,7 +5521,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -6703,7 +6982,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
         "sources": [
           {
@@ -6729,7 +7008,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T08:58:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -6737,7 +7016,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -7357,7 +7636,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
         "sources": [
           {
@@ -7384,7 +7663,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T19:26:04.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:hr",
               "basis": "publisher_only_origin_unverified",
@@ -7392,7 +7671,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -8564,7 +8843,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "8ace11004a7fe8a753aa1eb5ba413c5352a448fd99645e10812a8620c41120ad",
         "sources": [
           {
@@ -8591,7 +8870,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T19:08:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:manager-magazin",
               "basis": "publisher_only_origin_unverified",
@@ -8622,7 +8901,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T19:58:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
@@ -8636,7 +8915,7 @@
             "title": "Volkswagen: VW-Aufsichtsrat stimmt Sanierungsplan zu",
             "summary": "Bei Volkswagen ist die Entscheidung über tiefgreifende Sparmaßnahmen gefallen. Das Paket sieht radikale Umbrüche vor. Es geht um die Schließung deutscher Werke und den Abbau zehntausender Jobs.",
             "source_type": "media_rss",
-            "published_at": "2026-09-03T19:24:00.000Z",
+            "published_at": "2026-09-04T05:23:00.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Wirtschaft",
@@ -8652,8 +8931,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-03T19:24:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "source_published_at": "2026-09-04T05:23:00.000Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:wirtschaftswoche",
               "basis": "publisher_only_origin_unverified",
@@ -8684,7 +8963,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T20:55:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:spiegel",
               "basis": "publisher_only_origin_unverified",
@@ -8746,7 +9025,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T20:34:25.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
@@ -8777,7 +9056,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T04:27:36.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:swr",
               "basis": "publisher_only_origin_unverified",
@@ -8791,7 +9070,7 @@
             "title": "Automobil-Industrie - Volkswagen-Aufsichtsrat stimmt Sparpaket und Stellenabbau zu",
             "summary": "Der Volkswagen-Konzern wird in den kommenden Jahren ein breit angelegtes Sparpaket umsetzen und zusätzlich rund 50.000 Arbeitsplätze streichen. Der Aufsichtsrat des Automobil-Herstellers billigte gestern Abend in Wolfsburg die Vorschläge von Konzernchef Blume einstimmig.",
             "source_type": "media_rss",
-            "published_at": "2026-09-04T04:50:00.000Z",
+            "published_at": "2026-09-04T05:31:08.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -8807,8 +9086,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-04T04:50:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "source_published_at": "2026-09-04T05:31:08.000Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -8816,7 +9095,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -9506,7 +9785,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
         "sources": [
           {
@@ -9533,7 +9812,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T08:11:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -9541,7 +9820,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -10143,7 +10422,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
         "sources": [
           {
@@ -10169,7 +10448,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T16:05:41.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:france24",
               "basis": "publisher_only_origin_unverified",
@@ -10177,7 +10456,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -11572,7 +11851,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "5075c7ffde16cbbf806ab1eed166f847b296725de53c460c37469f3ec7552983",
         "sources": [
           {
@@ -11598,7 +11877,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T09:37:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:deutsche-welle",
               "basis": "publisher_only_origin_unverified",
@@ -11606,7 +11885,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -12233,7 +12512,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "5a56ec97c1c488c4e358f69ef0a90770eddf25eb4ca171e125fde72efa5a8d39",
         "sources": [
           {
@@ -12260,7 +12539,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T04:28:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -12268,7 +12547,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -12867,7 +13146,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "52e074d91fcf41527b53208e1dc81753768a2947dec6b23e8215f9ff45d7254c",
         "sources": [
           {
@@ -12894,7 +13173,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T13:49:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -12902,7 +13181,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -13451,7 +13730,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
         "sources": [
           {
@@ -13478,7 +13757,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T13:56:50.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
@@ -13486,7 +13765,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -14281,7 +14560,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
         "sources": [
           {
@@ -14308,7 +14587,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T16:31:09.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:hr",
               "basis": "publisher_only_origin_unverified",
@@ -14316,7 +14595,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -15050,7 +15329,49 @@
         }
       ],
       "retirement_history": [],
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-04T05:36:20.086Z",
+        "content_hash": "53d7792b0bcb66ffddd87d077bcbc8456fa488bb6bf876f7ff84b2382b774a15",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
+            "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
+            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T05:31:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "b95e8c8f1760b890c6a57dda6db08bc732593d006a11225a79166a22e923af68",
+            "source_item_id": "d7801f4def8fdd306769ddd6bd105a09d7f0a59ffa7fd728d9710a75e1761bf6",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T05:31:08.000Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": true
+      }
     },
     {
       "story_id": "wt-74ebdd4a0ed4fecd",
@@ -16228,7 +16549,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "7cc3463226d4989cf794b648503cb3da1dc5103b59b12760d5725397320362dc",
         "sources": [
           {
@@ -16255,7 +16576,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T16:21:00.000Z",
-            "ingested_at": "2026-09-03T22:21:17.010Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
@@ -16263,7 +16584,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -17249,7 +17570,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "e9e75b73f5aab7fb1c99214e98aadba05d27571cf1587f89b019b65301221bc9",
         "sources": [
           {
@@ -17307,7 +17628,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T20:57:09.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -17315,7 +17636,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -18432,7 +18753,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "ed5f3efece6a1fa55dc53629a2e0317329a77eaf4ab261f6ec855181948a97c4",
         "sources": [
           {
@@ -18490,7 +18811,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T01:06:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:spiegel",
               "basis": "publisher_only_origin_unverified",
@@ -18521,7 +18842,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T02:29:46.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
@@ -18529,10 +18850,8 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false
@@ -22715,7 +23034,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -22741,7 +23060,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T09:29:17.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -22749,7 +23068,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": true,
@@ -24772,21 +25091,21 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
-        "content_hash": "9d0a297548dc6af96d67ae3cc0b3ed9811ca1046466165e630458bed0b6f93c7",
+        "detected_at": "2026-09-04T05:36:20.086Z",
+        "content_hash": "3ca02f696fbaf3fc1c585c5a2654d7f7618fd62bb0acd353c61abcb61429f229",
         "sources": [
           {
             "source_id": "tagesspiegel-home",
             "publisher": "Der Tagesspiegel",
             "url": "https://www.tagesspiegel.de/potsdam/brandenburg/dpa-nach-angriff-auf-stromnetz-16015587.html",
             "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
-            "summary": "Die Polizei ermittelt nach der Sabotage am Stromnetz in Südbrandenburg. Nun ist ein Bekennerschreiben aufgetaucht.",
+            "summary": "Die Polizei ermittelt nach der Sabotage am Stromnetz in Südbrandenburg. Nun ist ein Bekennerschreiben aufgetaucht. Innenminister Redmann erklärte, wie die kritische Infrastruktur besser geschützt werden soll.",
             "source_type": "media_rss",
             "published_at": "2026-09-03T16:08:52.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "1f470037f1dd5d4c038d7f21f102bf1f7f9c54da7effe71a0e1722e57304f6cb",
+            "content_hash": "542cd2369f356ea7cd72de07eb3ed75da937e225d60660c46a947c96c941d4a7",
             "source_item_id": "77c9bba564348b6d62bd23998815d636084c141fe800409a400fd56299639d65",
             "publisher_id": "tagesspiegel",
             "publisher_kind": "journalism",
@@ -24799,7 +25118,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T16:08:52.000Z",
-            "ingested_at": "2026-09-03T22:21:17.010Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -24830,7 +25149,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T17:36:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
@@ -24861,7 +25180,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T18:57:30.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -24869,14 +25188,11 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 2,
         "reassessment": false,
-        "fresh": false
+        "fresh": true
       }
     },
     {
@@ -34591,7 +34907,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -34617,7 +34933,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -34625,7 +34941,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 2,
         "reassessment": true,
@@ -34835,7 +35151,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -34861,7 +35177,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T17:00:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -34869,7 +35185,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -35731,7 +36047,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -35757,7 +36073,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:06:42.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -35765,7 +36081,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 2,
         "reassessment": true,
@@ -35997,7 +36313,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -36023,7 +36339,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T13:20:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -36031,7 +36347,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -36270,7 +36586,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -36296,7 +36612,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -36304,7 +36620,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -36548,7 +36864,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -36574,7 +36890,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -36582,7 +36898,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -36822,7 +37138,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -36848,7 +37164,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:44:36.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
+            "ingested_at": "2026-09-04T05:36:20.086Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -36856,7 +37172,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -37100,7 +37416,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T05:21:19.381Z",
+        "detected_at": "2026-09-04T05:36:20.086Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -37117,7 +37433,7 @@
             "content_hash": "e362441ae1fa1127a3cf3507d33d24def790eb08e77dced1d570c2974f62a8b7"
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": true,
@@ -42102,7 +42418,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-04T05:06:21.635Z",
+          "ingested_at": "2026-09-04T05:36:20.086Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -42129,7 +42445,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T05:21:19.381Z"
+          "checked_at": "2026-09-04T05:36:20.086Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -42139,9 +42455,9 @@
       "quality_retry_count": 2,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T05:21:19.381Z",
+      "updated_at": "2026-09-04T05:36:20.086Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -42170,11 +42486,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4281.323016666666,
+        "source_age_minutes": 4296.334766666667,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 420.03951666666666,
+        "queue_age_minutes": 435.05126666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -42587,7 +42903,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-04T05:06:21.635Z",
+          "ingested_at": "2026-09-04T05:36:20.086Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -42614,7 +42930,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T05:21:19.381Z"
+          "checked_at": "2026-09-04T05:36:20.086Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -42624,9 +42940,9 @@
       "quality_retry_count": 2,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T05:21:19.381Z",
+      "updated_at": "2026-09-04T05:36:20.086Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -42658,11 +42974,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5361.323016666666,
+        "source_age_minutes": 5376.334766666667,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 420.03951666666666,
+        "queue_age_minutes": 435.05126666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
