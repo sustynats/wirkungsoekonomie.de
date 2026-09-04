@@ -1,7 +1,787 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T06:06:19.579Z",
+  "updated_at": "2026-09-04T06:21:36.915Z",
   "stories": [
+    {
+      "story_id": "wt-2ae8fdd95aa5c1fa",
+      "slug": "kinderbetreuung-bei-der-bundeswehr-a5c1fa",
+      "title": "Kinderbetreuung bei der Bundeswehr",
+      "first_seen": "2026-09-03T08:58:00.000Z",
+      "last_updated": "2026-09-04T06:22:15.056Z",
+      "published_at": "2026-09-04T04:07:24.339Z",
+      "updated_at": "2026-09-04T06:22:15.056Z",
+      "topic": [
+        "Europa",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundestag-hib",
+          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+          "title": "Kinderbetreuung bei der Bundeswehr",
+          "summary": "Verteidigung/Antwort Die Kosten der Bundeswehr für Kinderbetreuungsplätze sind laut einer Antwort der Bundesregierung von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-03T08:58:00.000Z",
+          "primary_source": true,
+          "source_priority": 96,
+          "source_topic": "Politik",
+          "content_hash": "4490f86885b2f6c2afc205ec1f07f232e15d02a4d193f1749fa57cb213f3b80f",
+          "source_item_id": "8833e3434923f8ca569d72a45bd525c70f32a3e61150c4937fd22d012f5b4fca",
+          "publisher_id": "bundestag",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T08:58:00.000Z",
+          "ingested_at": "2026-09-04T06:21:36.915Z",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2ae8fdd95aa5c1fa-v2-claim-1",
+          "story_id": "wt-2ae8fdd95aa5c1fa",
+          "claim": "Die Kosten der Bundeswehr für Kinderbetreuungsplätze sind von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "adc038fc15f4d112d667",
+              "checked_at": "2026-09-04T06:22:15.056Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "efa5a2fd47d6c1f2a93a",
+              "checked_at": "2026-09-04T06:22:15.056Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:22:15.056Z"
+        },
+        {
+          "claim_id": "wt-2ae8fdd95aa5c1fa-v2-claim-2",
+          "story_id": "wt-2ae8fdd95aa5c1fa",
+          "claim": "Die Bundesregierung nennt bundesweit aktuell 580 Plätze über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege in Liegenschaften der Bundeswehr.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "0300d55e7a5d6b1d8b50",
+              "checked_at": "2026-09-04T06:22:15.056Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "7fc1b482bc0a01501846",
+              "checked_at": "2026-09-04T06:22:15.056Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:22:15.056Z"
+        },
+        {
+          "claim_id": "wt-2ae8fdd95aa5c1fa-v2-claim-3",
+          "story_id": "wt-2ae8fdd95aa5c1fa",
+          "claim": "Im Ausland nennt die Bundesregierung unter anderem Plätze in Mons, Brunssum, Illkirch-Graffenstaden, Sigonella und Vilnius; die Angebote würden fortlaufend an den Bedarf angepasst.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "afbcdf59449096a1b037",
+              "checked_at": "2026-09-04T06:22:15.056Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "excerpt_hash": "e258d230fbc5bacbdc8d",
+              "checked_at": "2026-09-04T06:22:15.056Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:22:15.056Z"
+        }
+      ],
+      "event_id": "event-864e7c7a9a2009a72fa5",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T06:21:59.201Z",
+      "publish_ready_at": "2026-09-04T06:22:15.056Z",
+      "news_status": "developing",
+      "deepening_due_at": null,
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Bundesregierung die Kostenentwicklung künftig weiter aufschlüsselt oder ändert",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Neue Angaben zu Jahreskosten, Plätzen oder Standorten in Folgeantworten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bf1c041b6525b903",
+          "announced_at": "2026-09-03T08:58:00.000Z",
+          "follow_up_date": "2026-09-11T06:22:15.056Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-58c903bdf35be971-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "89a69db25044f5a53824c48239f4b86efe83681ef3e95139d18403dbf0549ab2"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-58c903bdf35be971-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "cf66ea20a0dd3f4583e635b2f350cb64c20832fdecb0e2177694e0ffaef57d9a"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-58c903bdf35be971-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "4b61a0e586ee024fd7a7b695414be96d3ba324380d9f8998cff164f29dcde835"
+        },
+        "source_visual": null,
+        "fingerprint": "58c903bdf35be9715ee9e3071839199456e4a4605435cc32ff51449489f8b0dc",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T06:23:48.035Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Die Bundesregierung hat auf eine Kleine Anfrage geantwortet, dass die Kosten der Bundeswehr für Kinderbetreuungsplätze von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen sind. Für 2023 nennt sie rund 7,11 Millionen Euro und für 2024 rund 7,56 Millionen Euro.\n\nNach Angaben der Regierung gibt es bundesweit aktuell 580 Betreuungsplätze im Rahmen von Belegrechten, 480 Plätze in bundeswehrnahen Kindertageseinrichtungen und 95 Plätze in der Tages- und Großtagespflege innerhalb von Liegenschaften der Bundeswehr. Im Ausland werden Betreuungsplätze unter anderem in Mons, Brunssum, Illkirch-Graffenstaden, Sigonella und Vilnius genannt; die Angebote würden fortlaufend an den Bedarf angepasst.",
+      "analysis": {
+        "story_id": "wt-2ae8fdd95aa5c1fa",
+        "news_status": "developing",
+        "publication_depth": "deepened",
+        "summary": "Die Bundesregierung meldet steigende Kosten für Kinderbetreuungsplätze bei der Bundeswehr. Zugleich nennt sie mehrere Hundert Plätze im Inland und Ausland.",
+        "detail_summary": "Gesichert ist zunächst: Die Bundesregierung hat auf eine Kleine Anfrage mit Zahlen zu Kosten und Betreuungsplätzen bei der Bundeswehr geantwortet. Die jährlichen Kosten stiegen demnach von rund 5,83 Millionen Euro 2022 auf 9,04 Millionen Euro 2025; zusätzlich nennt die Regierung konkrete Zwischenwerte für 2023 und 2024 sowie aktuelle Platzzahlen im Inland und an mehreren Auslandsstandorten. Das ist relevant, weil damit ein administrativer Kosten- und Infrastrukturpfad sichtbar wird, der für Einsatzbereitschaft, Personalbindung und Familienunterstützung der Bundeswehr eine Rolle spielen kann. Mögliche Folgen sind weitere Ausgaben, Anpassungen des Angebots oder zusätzliche Bedarfsprüfungen, besonders an wachsenden Standorten. Offen bleibt, wodurch der Kostenanstieg konkret getrieben wird und ob daraus bereits operative Änderungen folgen. Ebenso unbelegt sind Wirkungen auf Personalgewinnung oder Verbleib.",
+        "why_relevant": "Die Quelle liefert neue, belastbare Zustandsdaten zu Ausgaben und Kapazitäten einer staatlichen Unterstützungsleistung mit Bezug zu Personal, Standortstruktur und Haushaltsentwicklung.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Zahlen betreffen die Kinderbetreuung für Bundeswehrangehörige und damit einen praktischen Unterstützungsbereich für Beschäftigte und Familien."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus der Quelle ergeben sich keine unmittelbaren Umweltwirkungen oder ökologischen Zielkonflikte."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Es geht um eine Antwort der Bundesregierung auf eine parlamentarische Anfrage und damit um haushalts- und verwaltungsbezogene Transparenz."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Daten können Haushaltsplanung, Standortversorgung und Personalpolitik der Bundeswehr beeinflussen. Ein steigender Finanzbedarf kann Spielräume verschieben und den Druck erhöhen, Betreuungsangebote auszubauen oder effizienter zu organisieren.",
+        "impact_risks": [
+          "Höhere laufende Kosten ohne geklärte Ursache könnten Budgetdruck erzeugen.",
+          "Ungleich verteilte Betreuungsangebote können an einzelnen Standorten Engpässe verstärken."
+        ],
+        "mechanisms": [
+          "Kosten- und Kapazitätsangaben können Verwaltungsentscheidungen über Angebot und Finanzierung steuern.",
+          "Verlässliche Betreuung kann die Planbarkeit für Angehörige verbessern und damit Personalfragen berühren."
+        ],
+        "first_order": [
+          "Mehr Transparenz über Kosten und Platzzahlen.",
+          "Mögliche Anpassung der Betreuungsangebote an Standorten mit steigendem Bedarf."
+        ],
+        "second_order": [
+          "Veränderungen im Haushaltsansatz für familienbezogene Leistungen.",
+          "Mögliche Effekte auf Attraktivität und Bindung von Personal, falls Betreuung ausgebaut wird."
+        ],
+        "third_order": [
+          "Langfristig könnte die Standort- und Personalplanung stärker an familienbezogene Infrastruktur gekoppelt werden.",
+          "Bei dauerhaft steigenden Kosten könnte eine Priorisierung oder Umstrukturierung der Angebote folgen."
+        ],
+        "systemic_relevance": "Die Meldung berührt keine Großsysteme, zeigt aber einen kleinen, wiederkehrenden Verwaltungsbereich mit Budget- und Personalbezug innerhalb einer staatlichen Organisation.",
+        "transformation_potential": "Begrenzt. Die Quelle zeigt keinen Strukturbruch, sondern fortlaufende Anpassungen eines bestehenden Angebots.",
+        "resilience": "Die Betreuungsinfrastruktur kann die Belastbarkeit von Familien an Bundeswehrstandorten stützen; ob sie ausreicht, bleibt offen.",
+        "side_effects": [
+          "Mehr Ausgaben können andere Haushaltsposten verdrängen.",
+          "Ausbau an Auslandstandorten kann organisatorische Komplexität erhöhen."
+        ],
+        "uncertainties": [
+          "Unklar bleibt, wodurch der Kostenanstieg zwischen 2022 und 2025 getrieben wird.",
+          "Es fehlen Wirkungsdaten zu Personalbindung, Einsatzbereitschaft oder Auslastung.",
+          "Die Quelle nennt keine Bewertung der Angemessenheit der Platzzahlen."
+        ],
+        "evidence_level": "primär belegt, aber inhaltlich auf Kosten- und Kapazitätsangaben begrenzt",
+        "attribution": "Die Angaben stammen aus der Antwort der Bundesregierung, wiedergegeben im Bundestagsdienst; unabhängige Bestätigung der Zahlen liegt in den gelieferten Quellen nicht vor.",
+        "watch_next": [
+          "Neue Angaben zu Gründen des Kostenanstiegs oder zur Auslastung beobachten.",
+          "Prüfen, ob weitere Standorte oder Plätze gemeldet werden."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 5, 8 und 10 soweit Familienunterstützung, Teilhabe und Arbeitsbedingungen betroffen sind"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "none",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "material_update",
+          "rationale": "Neue, bezifferte Angaben zu Kosten, Platzzahlen und Auslandsstandorten verändern die bisher nur allgemein berichtete Lage substanziell genug für eine aktualisierte Meldung."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Kosten 2025",
+              "value": "9,04",
+              "unit": "Mio. Euro",
+              "context": "Jährliche Kosten der Bundeswehr für Kinderbetreuungsplätze",
+              "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+            },
+            {
+              "label": "Kosten 2022",
+              "value": "5,83",
+              "unit": "Mio. Euro",
+              "context": "Vergleichswert aus der Antwort der Bundesregierung",
+              "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+            },
+            {
+              "label": "Plätze im Inland",
+              "value": "580",
+              "unit": "Belegrechte",
+              "context": "Aktuell genannte Betreuungsplätze in Deutschland",
+              "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "beschaeftigte",
+            "haushalte",
+            "staat"
+          ],
+          "timeline": [
+            {
+              "date": "2025",
+              "label": "Kostenstand 2025"
+            }
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T04:07:24.339Z",
+          "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
+          "source_summary": "Die Bundesregierung hat laut einer Antwort auf eine Kleine Anfrage die Kosten der Bundeswehr für Kinderbetreuungsplätze beziffert. Genannt werden rund 5,83 Millionen Euro für 2022 und 9,04 Millionen Euro für 2025; für 2023 und 2024 nennt die Antwort rund 7,11 Millionen Euro und 7,56 Millionen Euro.\n\nAußerdem nennt die Quelle die Zahl der aktuell bereitgestellten Betreuungsplätze: 580 über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften der Bundeswehr. Für Standorte im Ausland werden Plätze in mehreren Orten aufgeführt; für Litauen heißt es, der Betreuungsbedarf nehme mit dem schrittweisen Aufwuchs der Brigade kontinuierlich zu.",
+          "analysis": {
+            "story_id": "wt-2ae8fdd95aa5c1fa",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Bundesregierung beziffert die jährlichen Kosten der Bundeswehr für Kinderbetreuungsplätze 2025 auf 9,04 Millionen Euro, nach 5,83 Millionen Euro im Jahr 2022. Zugleich nennt sie mehrere Hundert Betreuungsplätze im In- und Ausland.",
+            "detail_summary": "Gesichert ist zunächst die neue Kostenangabe der Bundesregierung: Die Ausgaben der Bundeswehr für Kinderbetreuungsplätze sind laut Antwort auf eine Kleine Anfrage von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro gestiegen. Die Quelle nennt zusätzlich Zwischenwerte für 2023 und 2024 sowie die aktuelle Zahl der verfügbaren Plätze im Inland und an Auslandsstandorten. Das ist relevant, weil damit ein konkreter, staatlich organisierter Unterstützungsbereich mit Haushaltsbezug und Personalwirkung sichtbar wird. Der Wirkpfad liegt vor allem über die Verfügbarkeit von Betreuung als Standort- und Beschäftigungsfaktor für Angehörige der Bundeswehr. Mögliche Folgen sind bessere Planbarkeit für Familien und eine stabilere Bindung von Personal, zugleich aber steigende laufende Ausgaben. Wie stark daraus tatsächlich Rekrutierung, Verbleib oder Verteilungseffekte entstehen, bleibt offen; die Quelle liefert dazu nur die Antwort selbst, keine Wirkungsmessung.",
+            "why_relevant": "Die Meldung zeigt eine konkret bezifferte Entwicklung staatlicher Betreuungsausgaben und die vorhandene Betreuungsinfrastruktur der Bundeswehr. Das ist materiell, weil es Haushaltsmittel, Personalbindung und Standortbedingungen zugleich berührt.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Die Betreuungsangebote betreffen Angehörige der Bundeswehr und damit familiäre Vereinbarkeit, Standortwahl und Beschäftigungsbedingungen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht angelegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Angaben stammen aus einer Regierungsantwort und machen staatliche Mittelverwendung nachvollziehbar."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die steigenden Kosten und die benannten Plätze können die Vereinbarkeit von Dienst und Familie verbessern und damit Personalbindung und Standortattraktivität beeinflussen.",
+            "impact_risks": [
+              "Höhere laufende Ausgaben ohne belegte Effizienzgewinne",
+              "Ungleich verteilte Betreuungszugänge zwischen Standorten"
+            ],
+            "mechanisms": [
+              "Betreuung senkt organisatorische Hürden für Dienstzeiten und Versetzungen",
+              "Bereitgestellte Plätze stabilisieren Familienplanung am Standort"
+            ],
+            "first_order": [
+              "mehr verfügbare Kinderbetreuung für Bundeswehrangehörige",
+              "höhere öffentliche Ausgaben für diesen Bereich"
+            ],
+            "second_order": [
+              "mögliche Entlastung bei Vereinbarkeit von Familie und Dienst",
+              "mögliche stärkere Bindung von Personal an bestimmte Standorte"
+            ],
+            "third_order": [
+              "langfristig veränderte Standort- und Personalpolitik innerhalb der Bundeswehr",
+              "mögliche Nachsteuerung bei Ausbau oder Finanzierung der Angebote"
+            ],
+            "systemic_relevance": "Die Meldung betrifft einen kleinen, aber strukturell relevanten Baustein der Personal- und Infrastrukturpolitik im Sicherheitsbereich.",
+            "transformation_potential": "Begrenzt: eher inkrementelle Verbesserung der Betreuungsinfrastruktur als grundlegender Strukturwandel.",
+            "resilience": "Mögliche Stärkung der personellen Resilienz der Bundeswehr durch bessere Vereinbarkeit; ob das tatsächlich greift, bleibt offen.",
+            "side_effects": [
+              "Mehr Mittelbindung im Haushalt",
+              "mögliche regionale Unterschiede bei der Versorgung"
+            ],
+            "uncertainties": [
+              "Unklar bleibt, ob die Kostensteigerung auf mehr Plätze, höhere Preise oder andere Faktoren zurückgeht",
+              "Die Quelle enthält keine Wirkungsdaten zu Personalbindung oder Einsatzbereitschaft"
+            ],
+            "evidence_level": "einzelne amtliche Antwort mit konkreten Zahlen; keine unabhängige Gegenprüfung im gelieferten Material",
+            "attribution": "Die Angaben werden der Antwort der Bundesregierung zugeschrieben; unabhängig bestätigt ist hier nur der Wortlaut der Quelle selbst.",
+            "watch_next": [
+              "Ob die Bundesregierung die Kostenentwicklung in einer Folgeantwort erklärt",
+              "Ob sich die Zahl der Betreuungsplätze oder Standorte verändert"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 4, SDG 5, SDG 8 – nur als grober Bezugsrahmen für Vereinbarkeit und Bildung"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Die amtliche Antwort enthält neue, bezifferte Informationen zu Kosten und Betreuungsplätzen. Das ist kein bloßer Routinehinweis, sondern eine materiell relevante Zustandsbeschreibung mit Haushalts- und Personalbezug."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Kosten 2022",
+                  "value": "5,83",
+                  "unit": "Millionen Euro",
+                  "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
+                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+                },
+                {
+                  "label": "Kosten 2025",
+                  "value": "9,04",
+                  "unit": "Millionen Euro",
+                  "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
+                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+                },
+                {
+                  "label": "Betreuungsplätze im Inland",
+                  "value": "580",
+                  "unit": "Plätze",
+                  "context": "Belegrechte für Angehörige der Bundeswehr",
+                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte"
+              ],
+              "timeline": [
+                {
+                  "date": "2022",
+                  "label": "Kostenbasis der Antwort"
+                },
+                {
+                  "date": "2023",
+                  "label": "Zwischenwert der Kosten"
+                },
+                {
+                  "date": "2024",
+                  "label": "Zwischenwert der Kosten"
+                },
+                {
+                  "date": "2025",
+                  "label": "genannter Kostenstand"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "offen",
+                "democracy": "chance"
+              },
+              "chart": {
+                "type": "bar",
+                "title": "Kosten der Kinderbetreuungsplätze",
+                "unit": "Millionen Euro",
+                "points": [
+                  {
+                    "label": "2022",
+                    "value": 5.83
+                  },
+                  {
+                    "label": "2023",
+                    "value": 7.11
+                  },
+                  {
+                    "label": "2024",
+                    "value": 7.56
+                  },
+                  {
+                    "label": "2025",
+                    "value": 9.04
+                  }
+                ]
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-1",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Die Bundesregierung meldet für die Bundeswehr steigende Kosten für Kinderbetreuungsplätze: von rund 5,83 Millionen Euro im Jahr 2022 auf 9,04 Millionen Euro im Jahr 2025.",
+              "status": "single_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "3634e437da269ff40f35",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "adc038fc15f4d112d667",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "efa5a2fd47d6c1f2a93a",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-2",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Für 2023 und 2024 nennt die Antwort der Bundesregierung Zwischenwerte von rund 7,11 Millionen Euro und 7,56 Millionen Euro.",
+              "status": "single_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "0300d55e7a5d6b1d8b50",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-3",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Bundesweit stehen aktuell 580 Betreuungsplätze über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften bereit.",
+              "status": "single_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "7fc1b482bc0a01501846",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            },
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-4",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Im Ausland nennt die Bundesregierung unter anderem Plätze in Mons, Brunssum, Illkirch-Graffenstaden, Sigonella und Vilnius; in Litauen wachse der Bedarf mit dem schrittweisen Aufwuchs der Brigade Litauen.",
+              "status": "single_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "afbcdf59449096a1b037",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "e258d230fbc5bacbdc8d",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "b24c4518775145ec586b",
+                  "checked_at": "2026-09-04T04:07:24.339Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:07:24.339Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "content_hash": "4490f86885b2f6c2afc205ec1f07f232e15d02a4d193f1749fa57cb213f3b80f"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T06:22:15.056Z",
+          "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
+          "source_summary": "Die Bundesregierung hat auf eine Kleine Anfrage geantwortet, dass die Kosten der Bundeswehr für Kinderbetreuungsplätze von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen sind. Für 2023 nennt sie rund 7,11 Millionen Euro und für 2024 rund 7,56 Millionen Euro.\n\nNach Angaben der Regierung gibt es bundesweit aktuell 580 Betreuungsplätze im Rahmen von Belegrechten, 480 Plätze in bundeswehrnahen Kindertageseinrichtungen und 95 Plätze in der Tages- und Großtagespflege innerhalb von Liegenschaften der Bundeswehr. Im Ausland werden Betreuungsplätze unter anderem in Mons, Brunssum, Illkirch-Graffenstaden, Sigonella und Vilnius genannt; die Angebote würden fortlaufend an den Bedarf angepasst.",
+          "analysis": {
+            "story_id": "wt-2ae8fdd95aa5c1fa",
+            "news_status": "developing",
+            "publication_depth": "deepened",
+            "summary": "Die Bundesregierung meldet steigende Kosten für Kinderbetreuungsplätze bei der Bundeswehr. Zugleich nennt sie mehrere Hundert Plätze im Inland und Ausland.",
+            "detail_summary": "Gesichert ist zunächst: Die Bundesregierung hat auf eine Kleine Anfrage mit Zahlen zu Kosten und Betreuungsplätzen bei der Bundeswehr geantwortet. Die jährlichen Kosten stiegen demnach von rund 5,83 Millionen Euro 2022 auf 9,04 Millionen Euro 2025; zusätzlich nennt die Regierung konkrete Zwischenwerte für 2023 und 2024 sowie aktuelle Platzzahlen im Inland und an mehreren Auslandsstandorten. Das ist relevant, weil damit ein administrativer Kosten- und Infrastrukturpfad sichtbar wird, der für Einsatzbereitschaft, Personalbindung und Familienunterstützung der Bundeswehr eine Rolle spielen kann. Mögliche Folgen sind weitere Ausgaben, Anpassungen des Angebots oder zusätzliche Bedarfsprüfungen, besonders an wachsenden Standorten. Offen bleibt, wodurch der Kostenanstieg konkret getrieben wird und ob daraus bereits operative Änderungen folgen. Ebenso unbelegt sind Wirkungen auf Personalgewinnung oder Verbleib.",
+            "why_relevant": "Die Quelle liefert neue, belastbare Zustandsdaten zu Ausgaben und Kapazitäten einer staatlichen Unterstützungsleistung mit Bezug zu Personal, Standortstruktur und Haushaltsentwicklung.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Die Zahlen betreffen die Kinderbetreuung für Bundeswehrangehörige und damit einen praktischen Unterstützungsbereich für Beschäftigte und Familien."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Aus der Quelle ergeben sich keine unmittelbaren Umweltwirkungen oder ökologischen Zielkonflikte."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Es geht um eine Antwort der Bundesregierung auf eine parlamentarische Anfrage und damit um haushalts- und verwaltungsbezogene Transparenz."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Daten können Haushaltsplanung, Standortversorgung und Personalpolitik der Bundeswehr beeinflussen. Ein steigender Finanzbedarf kann Spielräume verschieben und den Druck erhöhen, Betreuungsangebote auszubauen oder effizienter zu organisieren.",
+            "impact_risks": [
+              "Höhere laufende Kosten ohne geklärte Ursache könnten Budgetdruck erzeugen.",
+              "Ungleich verteilte Betreuungsangebote können an einzelnen Standorten Engpässe verstärken."
+            ],
+            "mechanisms": [
+              "Kosten- und Kapazitätsangaben können Verwaltungsentscheidungen über Angebot und Finanzierung steuern.",
+              "Verlässliche Betreuung kann die Planbarkeit für Angehörige verbessern und damit Personalfragen berühren."
+            ],
+            "first_order": [
+              "Mehr Transparenz über Kosten und Platzzahlen.",
+              "Mögliche Anpassung der Betreuungsangebote an Standorten mit steigendem Bedarf."
+            ],
+            "second_order": [
+              "Veränderungen im Haushaltsansatz für familienbezogene Leistungen.",
+              "Mögliche Effekte auf Attraktivität und Bindung von Personal, falls Betreuung ausgebaut wird."
+            ],
+            "third_order": [
+              "Langfristig könnte die Standort- und Personalplanung stärker an familienbezogene Infrastruktur gekoppelt werden.",
+              "Bei dauerhaft steigenden Kosten könnte eine Priorisierung oder Umstrukturierung der Angebote folgen."
+            ],
+            "systemic_relevance": "Die Meldung berührt keine Großsysteme, zeigt aber einen kleinen, wiederkehrenden Verwaltungsbereich mit Budget- und Personalbezug innerhalb einer staatlichen Organisation.",
+            "transformation_potential": "Begrenzt. Die Quelle zeigt keinen Strukturbruch, sondern fortlaufende Anpassungen eines bestehenden Angebots.",
+            "resilience": "Die Betreuungsinfrastruktur kann die Belastbarkeit von Familien an Bundeswehrstandorten stützen; ob sie ausreicht, bleibt offen.",
+            "side_effects": [
+              "Mehr Ausgaben können andere Haushaltsposten verdrängen.",
+              "Ausbau an Auslandstandorten kann organisatorische Komplexität erhöhen."
+            ],
+            "uncertainties": [
+              "Unklar bleibt, wodurch der Kostenanstieg zwischen 2022 und 2025 getrieben wird.",
+              "Es fehlen Wirkungsdaten zu Personalbindung, Einsatzbereitschaft oder Auslastung.",
+              "Die Quelle nennt keine Bewertung der Angemessenheit der Platzzahlen."
+            ],
+            "evidence_level": "primär belegt, aber inhaltlich auf Kosten- und Kapazitätsangaben begrenzt",
+            "attribution": "Die Angaben stammen aus der Antwort der Bundesregierung, wiedergegeben im Bundestagsdienst; unabhängige Bestätigung der Zahlen liegt in den gelieferten Quellen nicht vor.",
+            "watch_next": [
+              "Neue Angaben zu Gründen des Kostenanstiegs oder zur Auslastung beobachten.",
+              "Prüfen, ob weitere Standorte oder Plätze gemeldet werden."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 5, 8 und 10 soweit Familienunterstützung, Teilhabe und Arbeitsbedingungen betroffen sind"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "material_update",
+              "rationale": "Neue, bezifferte Angaben zu Kosten, Platzzahlen und Auslandsstandorten verändern die bisher nur allgemein berichtete Lage substanziell genug für eine aktualisierte Meldung."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Kosten 2025",
+                  "value": "9,04",
+                  "unit": "Mio. Euro",
+                  "context": "Jährliche Kosten der Bundeswehr für Kinderbetreuungsplätze",
+                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+                },
+                {
+                  "label": "Kosten 2022",
+                  "value": "5,83",
+                  "unit": "Mio. Euro",
+                  "context": "Vergleichswert aus der Antwort der Bundesregierung",
+                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+                },
+                {
+                  "label": "Plätze im Inland",
+                  "value": "580",
+                  "unit": "Belegrechte",
+                  "context": "Aktuell genannte Betreuungsplätze in Deutschland",
+                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "haushalte",
+                "staat"
+              ],
+              "timeline": [
+                {
+                  "date": "2025",
+                  "label": "Kostenstand 2025"
+                }
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v2-claim-1",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Die Kosten der Bundeswehr für Kinderbetreuungsplätze sind von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "adc038fc15f4d112d667",
+                  "checked_at": "2026-09-04T06:22:15.056Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "efa5a2fd47d6c1f2a93a",
+                  "checked_at": "2026-09-04T06:22:15.056Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:22:15.056Z"
+            },
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v2-claim-2",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Die Bundesregierung nennt bundesweit aktuell 580 Plätze über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege in Liegenschaften der Bundeswehr.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "0300d55e7a5d6b1d8b50",
+                  "checked_at": "2026-09-04T06:22:15.056Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "7fc1b482bc0a01501846",
+                  "checked_at": "2026-09-04T06:22:15.056Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:22:15.056Z"
+            },
+            {
+              "claim_id": "wt-2ae8fdd95aa5c1fa-v2-claim-3",
+              "story_id": "wt-2ae8fdd95aa5c1fa",
+              "claim": "Im Ausland nennt die Bundesregierung unter anderem Plätze in Mons, Brunssum, Illkirch-Graffenstaden, Sigonella und Vilnius; die Angebote würden fortlaufend an den Bedarf angepasst.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "afbcdf59449096a1b037",
+                  "checked_at": "2026-09-04T06:22:15.056Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+                  "excerpt_hash": "e258d230fbc5bacbdc8d",
+                  "checked_at": "2026-09-04T06:22:15.056Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:22:15.056Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
+              "content_hash": "4490f86885b2f6c2afc205ec1f07f232e15d02a4d193f1749fa57cb213f3b80f"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T04:07:24.339Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T06:22:15.056Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-4fb94d2cebfca746",
       "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
@@ -6791,7 +7571,7 @@
       "verification_started_at": "2026-09-04T04:51:21.931Z",
       "publish_ready_at": "2026-09-04T04:51:34.536Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -7231,47 +8011,7 @@
         "generated_at": "2026-09-04T04:53:39.724Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
-        "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-            "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
-            "summary": "Der Fund einer Sprengstoff-Drohne am Leipziger Flughafen zeigt deutlich: Deutschland befindet sich zunehmend im Fokus hybrider Bedrohungen, Sabotagen und Drohnenangriffen. Was das bedeutet und was die Bundesregierung dagegen tut, erfahren Sie hier.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T06:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c",
-            "source_item_id": "2eff7152390aa52f9a213db084fb9a5a808bddbacffcf1a4e73720968fce01dc",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T06:00:00.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-7a87a173a2b4c2bc",
@@ -8588,7 +9328,7 @@
       "verification_started_at": "2026-09-04T04:38:22.918Z",
       "publish_ready_at": "2026-09-04T04:38:32.687Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -8942,47 +9682,7 @@
         "generated_at": "2026-09-04T04:39:43.485Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
-        "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-startchancen-kinder-kita-qualitaetsgesetz-2451062",
-            "title": "Bessere Startchancen für Kinder",
-            "summary": "Eine gute Kinderbetreuung und die frühe Förderung für alle Kinder gehören zu den wichtigsten Zukunftsaufgaben in Deutschland. Die Bundesregierung will deshalb die Startchancen von Kindern verbessern und die Qualität der frühkindlichen Bildung stärken.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T08:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "ad106e3458e100625188956173f4767630e28a9efb5aa166e9b34a0a905837bd",
-            "source_item_id": "02e8d790bed3e7fc28284bd64172d65ac9fca6a952aeac1a0009929ce5098ac3",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-b5e0a39f46388642",
@@ -9827,697 +10527,6 @@
       }
     },
     {
-      "story_id": "wt-2ae8fdd95aa5c1fa",
-      "slug": "kinderbetreuung-bei-der-bundeswehr-a5c1fa",
-      "title": "Kinderbetreuung bei der Bundeswehr",
-      "first_seen": "2026-09-03T08:58:00.000Z",
-      "last_updated": "2026-09-04T04:07:24.339Z",
-      "published_at": "2026-09-04T04:07:24.339Z",
-      "updated_at": "2026-09-04T04:07:24.339Z",
-      "topic": [
-        "Europa",
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "bundestag-hib",
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
-          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-          "title": "Kinderbetreuung bei der Bundeswehr",
-          "summary": "Verteidigung/Antwort Die Kosten der Bundeswehr für Kinderbetreuungsplätze sind laut einer Antwort der Bundesregierung von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-03T08:58:00.000Z",
-          "primary_source": true,
-          "source_priority": 96,
-          "source_topic": "Politik",
-          "content_hash": "4490f86885b2f6c2afc205ec1f07f232e15d02a4d193f1749fa57cb213f3b80f",
-          "source_item_id": "8833e3434923f8ca569d72a45bd525c70f32a3e61150c4937fd22d012f5b4fca",
-          "publisher_id": "bundestag",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T08:58:00.000Z",
-          "ingested_at": "2026-09-04T03:51:30.621Z",
-          "provenance": {
-            "origin": "publisher:bundestag",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-1",
-          "story_id": "wt-2ae8fdd95aa5c1fa",
-          "claim": "Die Bundesregierung meldet für die Bundeswehr steigende Kosten für Kinderbetreuungsplätze: von rund 5,83 Millionen Euro im Jahr 2022 auf 9,04 Millionen Euro im Jahr 2025.",
-          "status": "single_source_claim",
-          "source_id": "bundestag-hib",
-          "evidence": [
-            {
-              "source_id": "bundestag-hib",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-              "excerpt_hash": "3634e437da269ff40f35",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            },
-            {
-              "source_id": "bundestag-hib",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-              "excerpt_hash": "adc038fc15f4d112d667",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            },
-            {
-              "source_id": "bundestag-hib",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-              "excerpt_hash": "efa5a2fd47d6c1f2a93a",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T04:07:24.339Z"
-        },
-        {
-          "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-2",
-          "story_id": "wt-2ae8fdd95aa5c1fa",
-          "claim": "Für 2023 und 2024 nennt die Antwort der Bundesregierung Zwischenwerte von rund 7,11 Millionen Euro und 7,56 Millionen Euro.",
-          "status": "single_source_claim",
-          "source_id": "bundestag-hib",
-          "evidence": [
-            {
-              "source_id": "bundestag-hib",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-              "excerpt_hash": "0300d55e7a5d6b1d8b50",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T04:07:24.339Z"
-        },
-        {
-          "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-3",
-          "story_id": "wt-2ae8fdd95aa5c1fa",
-          "claim": "Bundesweit stehen aktuell 580 Betreuungsplätze über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften bereit.",
-          "status": "single_source_claim",
-          "source_id": "bundestag-hib",
-          "evidence": [
-            {
-              "source_id": "bundestag-hib",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-              "excerpt_hash": "7fc1b482bc0a01501846",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T04:07:24.339Z"
-        },
-        {
-          "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-4",
-          "story_id": "wt-2ae8fdd95aa5c1fa",
-          "claim": "Im Ausland nennt die Bundesregierung unter anderem Plätze in Mons, Brunssum, Illkirch-Graffenstaden, Sigonella und Vilnius; in Litauen wachse der Bedarf mit dem schrittweisen Aufwuchs der Brigade Litauen.",
-          "status": "single_source_claim",
-          "source_id": "bundestag-hib",
-          "evidence": [
-            {
-              "source_id": "bundestag-hib",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-              "excerpt_hash": "afbcdf59449096a1b037",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            },
-            {
-              "source_id": "bundestag-hib",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-              "excerpt_hash": "e258d230fbc5bacbdc8d",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            },
-            {
-              "source_id": "bundestag-hib",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-              "excerpt_hash": "b24c4518775145ec586b",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T04:07:24.339Z"
-        }
-      ],
-      "event_id": "event-864e7c7a9a2009a72fa5",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T04:07:12.919Z",
-      "publish_ready_at": "2026-09-04T04:07:24.339Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "bundestag-hib"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Die Bundesregierung hat laut einer Antwort auf eine Kleine Anfrage die Kosten der Bundeswehr für Kinderbetreuungsplätze beziffert. Genannt werden rund 5,83 Millionen Euro für 2022 und 9,04 Millionen Euro für 2025; für 2023 und 2024 nennt die Antwort rund 7,11 Millionen Euro und 7,56 Millionen Euro.\n\nAußerdem nennt die Quelle die Zahl der aktuell bereitgestellten Betreuungsplätze: 580 über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften der Bundeswehr. Für Standorte im Ausland werden Plätze in mehreren Orten aufgeführt; für Litauen heißt es, der Betreuungsbedarf nehme mit dem schrittweisen Aufwuchs der Brigade kontinuierlich zu.",
-      "analysis": {
-        "story_id": "wt-2ae8fdd95aa5c1fa",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Die Bundesregierung beziffert die jährlichen Kosten der Bundeswehr für Kinderbetreuungsplätze 2025 auf 9,04 Millionen Euro, nach 5,83 Millionen Euro im Jahr 2022. Zugleich nennt sie mehrere Hundert Betreuungsplätze im In- und Ausland.",
-        "detail_summary": "Gesichert ist zunächst die neue Kostenangabe der Bundesregierung: Die Ausgaben der Bundeswehr für Kinderbetreuungsplätze sind laut Antwort auf eine Kleine Anfrage von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro gestiegen. Die Quelle nennt zusätzlich Zwischenwerte für 2023 und 2024 sowie die aktuelle Zahl der verfügbaren Plätze im Inland und an Auslandsstandorten. Das ist relevant, weil damit ein konkreter, staatlich organisierter Unterstützungsbereich mit Haushaltsbezug und Personalwirkung sichtbar wird. Der Wirkpfad liegt vor allem über die Verfügbarkeit von Betreuung als Standort- und Beschäftigungsfaktor für Angehörige der Bundeswehr. Mögliche Folgen sind bessere Planbarkeit für Familien und eine stabilere Bindung von Personal, zugleich aber steigende laufende Ausgaben. Wie stark daraus tatsächlich Rekrutierung, Verbleib oder Verteilungseffekte entstehen, bleibt offen; die Quelle liefert dazu nur die Antwort selbst, keine Wirkungsmessung.",
-        "why_relevant": "Die Meldung zeigt eine konkret bezifferte Entwicklung staatlicher Betreuungsausgaben und die vorhandene Betreuungsinfrastruktur der Bundeswehr. Das ist materiell, weil es Haushaltsmittel, Personalbindung und Standortbedingungen zugleich berührt.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Die Betreuungsangebote betreffen Angehörige der Bundeswehr und damit familiäre Vereinbarkeit, Standortwahl und Beschäftigungsbedingungen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht angelegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Angaben stammen aus einer Regierungsantwort und machen staatliche Mittelverwendung nachvollziehbar."
-        },
-        "importance": "mittel",
-        "impact_potential": "Die steigenden Kosten und die benannten Plätze können die Vereinbarkeit von Dienst und Familie verbessern und damit Personalbindung und Standortattraktivität beeinflussen.",
-        "impact_risks": [
-          "Höhere laufende Ausgaben ohne belegte Effizienzgewinne",
-          "Ungleich verteilte Betreuungszugänge zwischen Standorten"
-        ],
-        "mechanisms": [
-          "Betreuung senkt organisatorische Hürden für Dienstzeiten und Versetzungen",
-          "Bereitgestellte Plätze stabilisieren Familienplanung am Standort"
-        ],
-        "first_order": [
-          "mehr verfügbare Kinderbetreuung für Bundeswehrangehörige",
-          "höhere öffentliche Ausgaben für diesen Bereich"
-        ],
-        "second_order": [
-          "mögliche Entlastung bei Vereinbarkeit von Familie und Dienst",
-          "mögliche stärkere Bindung von Personal an bestimmte Standorte"
-        ],
-        "third_order": [
-          "langfristig veränderte Standort- und Personalpolitik innerhalb der Bundeswehr",
-          "mögliche Nachsteuerung bei Ausbau oder Finanzierung der Angebote"
-        ],
-        "systemic_relevance": "Die Meldung betrifft einen kleinen, aber strukturell relevanten Baustein der Personal- und Infrastrukturpolitik im Sicherheitsbereich.",
-        "transformation_potential": "Begrenzt: eher inkrementelle Verbesserung der Betreuungsinfrastruktur als grundlegender Strukturwandel.",
-        "resilience": "Mögliche Stärkung der personellen Resilienz der Bundeswehr durch bessere Vereinbarkeit; ob das tatsächlich greift, bleibt offen.",
-        "side_effects": [
-          "Mehr Mittelbindung im Haushalt",
-          "mögliche regionale Unterschiede bei der Versorgung"
-        ],
-        "uncertainties": [
-          "Unklar bleibt, ob die Kostensteigerung auf mehr Plätze, höhere Preise oder andere Faktoren zurückgeht",
-          "Die Quelle enthält keine Wirkungsdaten zu Personalbindung oder Einsatzbereitschaft"
-        ],
-        "evidence_level": "einzelne amtliche Antwort mit konkreten Zahlen; keine unabhängige Gegenprüfung im gelieferten Material",
-        "attribution": "Die Angaben werden der Antwort der Bundesregierung zugeschrieben; unabhängig bestätigt ist hier nur der Wortlaut der Quelle selbst.",
-        "watch_next": [
-          "Ob die Bundesregierung die Kostenentwicklung in einer Folgeantwort erklärt",
-          "Ob sich die Zahl der Betreuungsplätze oder Standorte verändert"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 4, SDG 5, SDG 8 – nur als grober Bezugsrahmen für Vereinbarkeit und Bildung"
-        ],
-        "publication_gate": {
-          "news_value": "new_evidence",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "none",
-          "evidence_basis": "primary_source_direct",
-          "duplicate_status": "new_story",
-          "rationale": "Die amtliche Antwort enthält neue, bezifferte Informationen zu Kosten und Betreuungsplätzen. Das ist kein bloßer Routinehinweis, sondern eine materiell relevante Zustandsbeschreibung mit Haushalts- und Personalbezug."
-        },
-        "visuals": {
-          "key_figures": [
-            {
-              "label": "Kosten 2022",
-              "value": "5,83",
-              "unit": "Millionen Euro",
-              "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
-              "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
-            },
-            {
-              "label": "Kosten 2025",
-              "value": "9,04",
-              "unit": "Millionen Euro",
-              "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
-              "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
-            },
-            {
-              "label": "Betreuungsplätze im Inland",
-              "value": "580",
-              "unit": "Plätze",
-              "context": "Belegrechte für Angehörige der Bundeswehr",
-              "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
-            }
-          ],
-          "affected_groups": [
-            "beschaeftigte"
-          ],
-          "timeline": [
-            {
-              "date": "2022",
-              "label": "Kostenbasis der Antwort"
-            },
-            {
-              "date": "2023",
-              "label": "Zwischenwert der Kosten"
-            },
-            {
-              "date": "2024",
-              "label": "Zwischenwert der Kosten"
-            },
-            {
-              "date": "2025",
-              "label": "genannter Kostenstand"
-            }
-          ],
-          "tendency": {
-            "human": "chance",
-            "planet": "offen",
-            "democracy": "chance"
-          },
-          "chart": {
-            "type": "bar",
-            "title": "Kosten der Kinderbetreuungsplätze",
-            "unit": "Millionen Euro",
-            "points": [
-              {
-                "label": "2022",
-                "value": 5.83
-              },
-              {
-                "label": "2023",
-                "value": 7.11
-              },
-              {
-                "label": "2024",
-                "value": 7.56
-              },
-              {
-                "label": "2025",
-                "value": 9.04
-              }
-            ]
-          }
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T04:07:24.339Z",
-          "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
-          "source_summary": "Die Bundesregierung hat laut einer Antwort auf eine Kleine Anfrage die Kosten der Bundeswehr für Kinderbetreuungsplätze beziffert. Genannt werden rund 5,83 Millionen Euro für 2022 und 9,04 Millionen Euro für 2025; für 2023 und 2024 nennt die Antwort rund 7,11 Millionen Euro und 7,56 Millionen Euro.\n\nAußerdem nennt die Quelle die Zahl der aktuell bereitgestellten Betreuungsplätze: 580 über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften der Bundeswehr. Für Standorte im Ausland werden Plätze in mehreren Orten aufgeführt; für Litauen heißt es, der Betreuungsbedarf nehme mit dem schrittweisen Aufwuchs der Brigade kontinuierlich zu.",
-          "analysis": {
-            "story_id": "wt-2ae8fdd95aa5c1fa",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Die Bundesregierung beziffert die jährlichen Kosten der Bundeswehr für Kinderbetreuungsplätze 2025 auf 9,04 Millionen Euro, nach 5,83 Millionen Euro im Jahr 2022. Zugleich nennt sie mehrere Hundert Betreuungsplätze im In- und Ausland.",
-            "detail_summary": "Gesichert ist zunächst die neue Kostenangabe der Bundesregierung: Die Ausgaben der Bundeswehr für Kinderbetreuungsplätze sind laut Antwort auf eine Kleine Anfrage von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro gestiegen. Die Quelle nennt zusätzlich Zwischenwerte für 2023 und 2024 sowie die aktuelle Zahl der verfügbaren Plätze im Inland und an Auslandsstandorten. Das ist relevant, weil damit ein konkreter, staatlich organisierter Unterstützungsbereich mit Haushaltsbezug und Personalwirkung sichtbar wird. Der Wirkpfad liegt vor allem über die Verfügbarkeit von Betreuung als Standort- und Beschäftigungsfaktor für Angehörige der Bundeswehr. Mögliche Folgen sind bessere Planbarkeit für Familien und eine stabilere Bindung von Personal, zugleich aber steigende laufende Ausgaben. Wie stark daraus tatsächlich Rekrutierung, Verbleib oder Verteilungseffekte entstehen, bleibt offen; die Quelle liefert dazu nur die Antwort selbst, keine Wirkungsmessung.",
-            "why_relevant": "Die Meldung zeigt eine konkret bezifferte Entwicklung staatlicher Betreuungsausgaben und die vorhandene Betreuungsinfrastruktur der Bundeswehr. Das ist materiell, weil es Haushaltsmittel, Personalbindung und Standortbedingungen zugleich berührt.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Die Betreuungsangebote betreffen Angehörige der Bundeswehr und damit familiäre Vereinbarkeit, Standortwahl und Beschäftigungsbedingungen."
-            },
-            "planet": {
-              "relevance": "gering",
-              "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht angelegt."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Die Angaben stammen aus einer Regierungsantwort und machen staatliche Mittelverwendung nachvollziehbar."
-            },
-            "importance": "mittel",
-            "impact_potential": "Die steigenden Kosten und die benannten Plätze können die Vereinbarkeit von Dienst und Familie verbessern und damit Personalbindung und Standortattraktivität beeinflussen.",
-            "impact_risks": [
-              "Höhere laufende Ausgaben ohne belegte Effizienzgewinne",
-              "Ungleich verteilte Betreuungszugänge zwischen Standorten"
-            ],
-            "mechanisms": [
-              "Betreuung senkt organisatorische Hürden für Dienstzeiten und Versetzungen",
-              "Bereitgestellte Plätze stabilisieren Familienplanung am Standort"
-            ],
-            "first_order": [
-              "mehr verfügbare Kinderbetreuung für Bundeswehrangehörige",
-              "höhere öffentliche Ausgaben für diesen Bereich"
-            ],
-            "second_order": [
-              "mögliche Entlastung bei Vereinbarkeit von Familie und Dienst",
-              "mögliche stärkere Bindung von Personal an bestimmte Standorte"
-            ],
-            "third_order": [
-              "langfristig veränderte Standort- und Personalpolitik innerhalb der Bundeswehr",
-              "mögliche Nachsteuerung bei Ausbau oder Finanzierung der Angebote"
-            ],
-            "systemic_relevance": "Die Meldung betrifft einen kleinen, aber strukturell relevanten Baustein der Personal- und Infrastrukturpolitik im Sicherheitsbereich.",
-            "transformation_potential": "Begrenzt: eher inkrementelle Verbesserung der Betreuungsinfrastruktur als grundlegender Strukturwandel.",
-            "resilience": "Mögliche Stärkung der personellen Resilienz der Bundeswehr durch bessere Vereinbarkeit; ob das tatsächlich greift, bleibt offen.",
-            "side_effects": [
-              "Mehr Mittelbindung im Haushalt",
-              "mögliche regionale Unterschiede bei der Versorgung"
-            ],
-            "uncertainties": [
-              "Unklar bleibt, ob die Kostensteigerung auf mehr Plätze, höhere Preise oder andere Faktoren zurückgeht",
-              "Die Quelle enthält keine Wirkungsdaten zu Personalbindung oder Einsatzbereitschaft"
-            ],
-            "evidence_level": "einzelne amtliche Antwort mit konkreten Zahlen; keine unabhängige Gegenprüfung im gelieferten Material",
-            "attribution": "Die Angaben werden der Antwort der Bundesregierung zugeschrieben; unabhängig bestätigt ist hier nur der Wortlaut der Quelle selbst.",
-            "watch_next": [
-              "Ob die Bundesregierung die Kostenentwicklung in einer Folgeantwort erklärt",
-              "Ob sich die Zahl der Betreuungsplätze oder Standorte verändert"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 4, SDG 5, SDG 8 – nur als grober Bezugsrahmen für Vereinbarkeit und Bildung"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "none",
-              "evidence_basis": "primary_source_direct",
-              "duplicate_status": "new_story",
-              "rationale": "Die amtliche Antwort enthält neue, bezifferte Informationen zu Kosten und Betreuungsplätzen. Das ist kein bloßer Routinehinweis, sondern eine materiell relevante Zustandsbeschreibung mit Haushalts- und Personalbezug."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "Kosten 2022",
-                  "value": "5,83",
-                  "unit": "Millionen Euro",
-                  "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
-                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
-                },
-                {
-                  "label": "Kosten 2025",
-                  "value": "9,04",
-                  "unit": "Millionen Euro",
-                  "context": "Ausgaben der Bundeswehr für Kinderbetreuungsplätze",
-                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
-                },
-                {
-                  "label": "Betreuungsplätze im Inland",
-                  "value": "580",
-                  "unit": "Plätze",
-                  "context": "Belegrechte für Angehörige der Bundeswehr",
-                  "claim_id": "wt-2ae8fdd95aa5c1fa-claim-01"
-                }
-              ],
-              "affected_groups": [
-                "beschaeftigte"
-              ],
-              "timeline": [
-                {
-                  "date": "2022",
-                  "label": "Kostenbasis der Antwort"
-                },
-                {
-                  "date": "2023",
-                  "label": "Zwischenwert der Kosten"
-                },
-                {
-                  "date": "2024",
-                  "label": "Zwischenwert der Kosten"
-                },
-                {
-                  "date": "2025",
-                  "label": "genannter Kostenstand"
-                }
-              ],
-              "tendency": {
-                "human": "chance",
-                "planet": "offen",
-                "democracy": "chance"
-              },
-              "chart": {
-                "type": "bar",
-                "title": "Kosten der Kinderbetreuungsplätze",
-                "unit": "Millionen Euro",
-                "points": [
-                  {
-                    "label": "2022",
-                    "value": 5.83
-                  },
-                  {
-                    "label": "2023",
-                    "value": 7.11
-                  },
-                  {
-                    "label": "2024",
-                    "value": 7.56
-                  },
-                  {
-                    "label": "2025",
-                    "value": 9.04
-                  }
-                ]
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-1",
-              "story_id": "wt-2ae8fdd95aa5c1fa",
-              "claim": "Die Bundesregierung meldet für die Bundeswehr steigende Kosten für Kinderbetreuungsplätze: von rund 5,83 Millionen Euro im Jahr 2022 auf 9,04 Millionen Euro im Jahr 2025.",
-              "status": "single_source_claim",
-              "source_id": "bundestag-hib",
-              "evidence": [
-                {
-                  "source_id": "bundestag-hib",
-                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-                  "excerpt_hash": "3634e437da269ff40f35",
-                  "checked_at": "2026-09-04T04:07:24.339Z"
-                },
-                {
-                  "source_id": "bundestag-hib",
-                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-                  "excerpt_hash": "adc038fc15f4d112d667",
-                  "checked_at": "2026-09-04T04:07:24.339Z"
-                },
-                {
-                  "source_id": "bundestag-hib",
-                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-                  "excerpt_hash": "efa5a2fd47d6c1f2a93a",
-                  "checked_at": "2026-09-04T04:07:24.339Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            },
-            {
-              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-2",
-              "story_id": "wt-2ae8fdd95aa5c1fa",
-              "claim": "Für 2023 und 2024 nennt die Antwort der Bundesregierung Zwischenwerte von rund 7,11 Millionen Euro und 7,56 Millionen Euro.",
-              "status": "single_source_claim",
-              "source_id": "bundestag-hib",
-              "evidence": [
-                {
-                  "source_id": "bundestag-hib",
-                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-                  "excerpt_hash": "0300d55e7a5d6b1d8b50",
-                  "checked_at": "2026-09-04T04:07:24.339Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            },
-            {
-              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-3",
-              "story_id": "wt-2ae8fdd95aa5c1fa",
-              "claim": "Bundesweit stehen aktuell 580 Betreuungsplätze über Belegrechte, 480 in bundeswehrnahen Kindertageseinrichtungen und 95 in der Tages- und Großtagespflege innerhalb von Liegenschaften bereit.",
-              "status": "single_source_claim",
-              "source_id": "bundestag-hib",
-              "evidence": [
-                {
-                  "source_id": "bundestag-hib",
-                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-                  "excerpt_hash": "7fc1b482bc0a01501846",
-                  "checked_at": "2026-09-04T04:07:24.339Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            },
-            {
-              "claim_id": "wt-2ae8fdd95aa5c1fa-v1-claim-4",
-              "story_id": "wt-2ae8fdd95aa5c1fa",
-              "claim": "Im Ausland nennt die Bundesregierung unter anderem Plätze in Mons, Brunssum, Illkirch-Graffenstaden, Sigonella und Vilnius; in Litauen wachse der Bedarf mit dem schrittweisen Aufwuchs der Brigade Litauen.",
-              "status": "single_source_claim",
-              "source_id": "bundestag-hib",
-              "evidence": [
-                {
-                  "source_id": "bundestag-hib",
-                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-                  "excerpt_hash": "afbcdf59449096a1b037",
-                  "checked_at": "2026-09-04T04:07:24.339Z"
-                },
-                {
-                  "source_id": "bundestag-hib",
-                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-                  "excerpt_hash": "e258d230fbc5bacbdc8d",
-                  "checked_at": "2026-09-04T04:07:24.339Z"
-                },
-                {
-                  "source_id": "bundestag-hib",
-                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-                  "excerpt_hash": "b24c4518775145ec586b",
-                  "checked_at": "2026-09-04T04:07:24.339Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T04:07:24.339Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "bundestag-hib",
-              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-              "content_hash": "4490f86885b2f6c2afc205ec1f07f232e15d02a4d193f1749fa57cb213f3b80f"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T04:07:24.339Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-470e0a04a729a7dd-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "cb0ae027af3ba03233bea0181b9702db55389fd6838dd85b792fc248e7e5d038"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-470e0a04a729a7dd-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "97580e62a547c411498afc38593e852f4c608fc4a08a854e3a5983ee00c7f8e2"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2ae8fdd95aa5c1fa-470e0a04a729a7dd-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "40c1c92dfbe42319d58798911adc0d255ff1df974d58cfcb3954060a43e2baab"
-        },
-        "source_visual": null,
-        "fingerprint": "470e0a04a729a7dd98e6b2956e5ae1079e9c78b5d6053663151544187036ed8d",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T04:08:07.078Z",
-        "status": "generated"
-      },
-      "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
-        "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
-        "sources": [
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
-            "title": "Kinderbetreuung bei der Bundeswehr",
-            "summary": "Verteidigung/Antwort Die Kosten der Bundeswehr für Kinderbetreuungsplätze sind laut einer Antwort der Bundesregierung von 2022 bis 2025 von rund 5,83 Millionen Euro auf 9,04 Millionen Euro jährlich gestiegen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-03T08:58:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "4490f86885b2f6c2afc205ec1f07f232e15d02a4d193f1749fa57cb213f3b80f",
-            "source_item_id": "8833e3434923f8ca569d72a45bd525c70f32a3e61150c4937fd22d012f5b4fca",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T08:58:00.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_REQUIRED_STRING:source_summary",
-          "AI_REQUIRED_STRING:summary",
-          "AI_REQUIRED_STRING:why_relevant",
-          "AI_REQUIRED_STRING:status",
-          "AI_REQUIRED_STRING:analysis_type",
-          "AI_REQUIRED_STRING:importance",
-          "AI_REQUIRED_STRING:impact_potential",
-          "AI_REQUIRED_STRING:systemic_relevance",
-          "AI_REQUIRED_STRING:transformation_potential",
-          "AI_REQUIRED_STRING:resilience",
-          "AI_REQUIRED_STRING:evidence_level",
-          "AI_REQUIRED_STRING:attribution",
-          "AI_REQUIRED_STRING:detail_summary",
-          "AI_STATUS_INVALID",
-          "AI_ANALYSIS_TYPE_INVALID",
-          "AI_IMPORTANCE_INVALID",
-          "AI_PUBLICATION_GATE_REQUIRED",
-          "AI_DIMENSION_INVALID:human",
-          "AI_DIMENSION_INVALID:planet",
-          "AI_DIMENSION_INVALID:democracy",
-          "AI_ARRAY_REQUIRED:impact_risks",
-          "AI_ARRAY_REQUIRED:mechanisms",
-          "AI_ARRAY_REQUIRED:first_order",
-          "AI_ARRAY_REQUIRED:second_order",
-          "AI_ARRAY_REQUIRED:third_order",
-          "AI_ARRAY_REQUIRED:side_effects",
-          "AI_ARRAY_REQUIRED:uncertainties",
-          "AI_ARRAY_REQUIRED:watch_next",
-          "AI_ARRAY_REQUIRED:reference_frameworks",
-          "AI_UNCERTAINTY_REQUIRED",
-          "AI_WATCH_NEXT_REQUIRED",
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "NEWS_STATUS_REQUIRED",
-          "EVENT_CLAIMS_REQUIRED"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false
-      }
-    },
-    {
       "story_id": "wt-7743382a4712f9be",
       "slug": "besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-12f9be",
       "title": "Besoldung: Beamte in Hessen bekommen knapp sechs Prozent mehr Geld",
@@ -10685,7 +10694,7 @@
       "verification_started_at": "2026-09-04T04:06:15.719Z",
       "publish_ready_at": "2026-09-04T04:06:28.686Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -11129,48 +11138,7 @@
         "generated_at": "2026-09-04T04:08:01.511Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
-        "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/politik/besoldung-beamte-in-hessen-bekommen-knapp-sechs-prozent-mehr-geld-v1,beamtenbesoldung-hessen-100.html",
-            "title": "Besoldung: Beamte in Hessen bekommen knapp sechs Prozent mehr Geld",
-            "summary": "Hessische Beamte und Pensionäre bekommen mehr Geld. Das beschloss der Landtag mit den Stimmen der schwarz-roten Regierung. Die Opposition sieht besonders ein verankertes Familieneinkünftemodell als rechtlich bedenklich.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-01T19:26:04.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "1f72fb08ecf5e111ffe8c70240bcc6638798e79935671ed6d028661d1249ae74",
-            "source_item_id": "e24f40b96cc644e85a71a76970f7e4c230f8439e6d32e882d3056931d60a974e",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-01T19:26:04.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-c0b0ea342baf3286",
@@ -11444,7 +11412,7 @@
       "verification_started_at": "2026-09-04T03:37:49.067Z",
       "publish_ready_at": "2026-09-04T03:38:02.536Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -11854,48 +11822,7 @@
         "generated_at": "2026-09-04T03:39:48.954Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
-        "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
-        "sources": [
-          {
-            "source_id": "rbb24-nachrichten",
-            "publisher": "rbb24",
-            "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
-            "title": "Sorte E10: Irankrieg treibt Benzinpreis auf Höchststand",
-            "summary": "",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T08:11:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "d3e4a1488797fca20322290ffb98088538856a196636f6fce909838a5dcaa0b0",
-            "source_item_id": "cf4ff84f2b730faca0cd7e35d44df4bb0a55e63a548e2f04974b7df88a6bb371",
-            "publisher_id": "rbb",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin-Brandenburg"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T08:11:00.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
-            "provenance": {
-              "origin": "publisher:rbb",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-76dd7f8508f81c11",
@@ -12125,7 +12052,7 @@
       "verification_started_at": "2026-09-04T03:36:50.985Z",
       "publish_ready_at": "2026-09-04T03:37:06.255Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -12491,47 +12418,7 @@
         "generated_at": "2026-09-04T03:39:42.892Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
-        "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
-        "sources": [
-          {
-            "source_id": "france24-en",
-            "publisher": "France 24",
-            "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
-            "title": "France agriculture production sees economic hit from heatwaves",
-            "summary": "France's recent heatwaves didn't just pose enormous health risks, they also hampered the economy. Authorities have estimated that the recent heat and drought caused production to plummet and expect wealth generated by the agricultural sector to decline by 8% over the course of the year. The knock-on effects will cost the French economy an estimated 0.1 percentage points of growth in 2026.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:05:41.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "20d6cfd905f85c4b6eeb6985e65f3135171e3ee5351cd7d09e479e6ce09029d4",
-            "source_item_id": "a5510b56d96eb7dc84ee099a7b2845d383db50c1d1ebd4beb43f81d875527f42",
-            "publisher_id": "france24",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:05:41.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
-            "provenance": {
-              "origin": "publisher:france24",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-bf5e25ce0e5f9ca3",
@@ -23511,7 +23398,7 @@
       ],
       "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
       "published": true,
-      "analysis_status": "veröffentlicht",
+      "analysis_status": "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
       "current_version": 2,
       "analysis": {
         "story_id": "wt-c15cb7a9f3b72c35",
@@ -23739,47 +23626,6 @@
           "source_count": 1
         }
       ],
-      "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
-        "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/einkommensteuerreform-2027-2451192",
-            "title": "Einkommensteuerreform beschlossen",
-            "summary": "Die breite Mehrheit entlasten, verfügbare Einkommen stärken und Subventionen mit Augenmaß abbauen: Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T09:29:17.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "08b186c00776867d5ed5bf550ee7dcd72d35b516ee25de0393bad4822af1bad5",
-            "source_item_id": "3d9bc12ac75b292328b4229f8e5dec8cdd490974f3619b7cef576e85e57bcfa7",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T09:29:17.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 1,
-        "reassessment": true,
-        "fresh": false
-      },
       "source_summary": "Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen. Vorgesehen sind höhere Beträge beim Kindergeld, beim Grund- und Kinderfreibetrag sowie beim Arbeitnehmer-Pauschbetrag. Der Einkommensteuertarif soll im Bereich zwischen 17.800 und 70.600 Euro abgeflacht werden. Die Maßnahmen sollen 2027 beginnen und ab 2028 vollständig gelten; das genannte Entlastungsvolumen liegt bei rund zehn Milliarden Euro pro Jahr.\n\nDas Kindergeld soll je Kind und Monat von 259 Euro auf 267 Euro im Jahr 2027 und 272 Euro im Jahr 2028 steigen. Genannt werden außerdem höhere Kinder- und Grundfreibeträge sowie ein Arbeitnehmer-Pauschbetrag von 1.430 Euro. Zur Gegenfinanzierung nennt die Quelle Änderungen am Reichensteuersatz und den Abbau einzelner Vergünstigungen. Unter anderem sollen die Absetzbarkeit von Handwerkerleistungen sinken und der Pauschsteuersatz für Minijobs steigen. Ein Rechenbeispiel beschreibt für eine Familie mit zwei Kindern ab 2028 eine jährliche Entlastung von mehr als 600 Euro.",
       "news_status": "corrected",
       "corrections": [
@@ -23818,6 +23664,19 @@
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:30:52.538Z",
         "status": "generated"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-04T06:21:36.915Z",
+      "retirement": {
+        "at": "2026-09-04T06:21:36.915Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ],
+        "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       }
     },
     {
@@ -35510,7 +35369,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
+        "detected_at": "2026-09-04T06:21:36.915Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -35536,7 +35395,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "ingested_at": "2026-09-04T06:21:36.915Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -35544,9 +35403,12 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 2,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_DETAIL_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 3,
         "reassessment": true,
         "fresh": false
       }
@@ -35754,7 +35616,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
+        "detected_at": "2026-09-04T06:21:36.915Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -35780,7 +35642,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T17:00:00.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "ingested_at": "2026-09-04T06:21:36.915Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -36650,7 +36512,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
+        "detected_at": "2026-09-04T06:21:36.915Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -36676,7 +36538,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:06:42.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "ingested_at": "2026-09-04T06:21:36.915Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -36684,9 +36546,47 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 2,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
+        ],
+        "quality_retry_count": 3,
         "reassessment": true,
         "fresh": false
       },
@@ -36916,7 +36816,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
+        "detected_at": "2026-09-04T06:21:36.915Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -36942,7 +36842,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T13:20:00.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "ingested_at": "2026-09-04T06:21:36.915Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -37189,7 +37089,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
+        "detected_at": "2026-09-04T06:21:36.915Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -37215,7 +37115,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "ingested_at": "2026-09-04T06:21:36.915Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -37467,7 +37367,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
+        "detected_at": "2026-09-04T06:21:36.915Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -37493,7 +37393,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "ingested_at": "2026-09-04T06:21:36.915Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -37741,7 +37641,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
+        "detected_at": "2026-09-04T06:21:36.915Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -37767,7 +37667,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:44:36.000Z",
-            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "ingested_at": "2026-09-04T06:21:36.915Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -38019,7 +37919,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T06:06:19.579Z",
+        "detected_at": "2026-09-04T06:21:36.915Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -43021,7 +42921,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "ingested_at": "2026-09-04T06:21:36.915Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -43048,19 +42948,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T06:06:19.579Z"
+          "checked_at": "2026-09-04T06:21:36.915Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 2,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 3,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T06:06:19.579Z",
+      "updated_at": "2026-09-04T06:21:36.915Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -43089,11 +42991,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4326.326316666667,
+        "source_age_minutes": 4341.61525,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 465.0428166666667,
+        "queue_age_minutes": 480.33175,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -43506,7 +43408,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "ingested_at": "2026-09-04T06:21:36.915Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -43533,19 +43435,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T06:06:19.579Z"
+          "checked_at": "2026-09-04T06:21:36.915Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 2,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 3,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T06:06:19.579Z",
+      "updated_at": "2026-09-04T06:21:36.915Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -43577,11 +43481,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5406.326316666667,
+        "source_age_minutes": 5421.61525,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 465.0428166666667,
+        "queue_age_minutes": 480.33175,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -44439,5 +44343,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T06:06:19.579Z"
+  "public_updated_at": "2026-09-04T06:21:36.915Z"
 }
