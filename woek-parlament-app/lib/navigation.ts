@@ -122,6 +122,7 @@ const segmentLabels: Record<string, string> = {
   abgeordnete: "Abgeordnete", wahl: "Wahl", regierung: "Landesregierung", "mandat-und-praxis": "Versprechen & Praxis",
   wahlprogramme: "Wahlprogramme", quellen: "Quellen", quelle: "Quellen", ziele: "Landesziele",
   faelle: "Wirkungsfälle", fachakten: "Vollständige Fachakten", fachanalysen: "Fachanalysen",
+  bestand: "Bestandskontext",
   abmelden: "Abmelden", bestaetigen: "Bestätigen", datenbetrieb: "Datenbetrieb",
 };
 
