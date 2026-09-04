@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T06:51:43.159Z",
+  "updated_at": "2026-09-04T07:06:39.584Z",
   "stories": [
     {
       "story_id": "wt-293fa4edfc2b5a5d",
@@ -560,6 +560,42 @@
           "announced_at": "2026-09-04T06:00:49.000Z",
           "follow_up_date": "2026-09-11T06:06:52.464Z",
           "status": "scheduled"
+        },
+        {
+          "claim": "Ergebnis der Expertenprüfung des Gegenstands am Umspannwerk",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizei oder Betreiber nennt gesicherte Einordnung des Gegenstands.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6cdbe9e8f974e3ab",
+          "announced_at": "2026-09-04T02:12:48.000Z",
+          "follow_up_date": "2026-09-11T02:21:50.081Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-4855e13df47f18ed"
+        },
+        {
+          "claim": "Ob die Polizei den Fund als Sabotageversuch, harmlosen Gegenstand oder etwas anderes einordnet.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Behördliche Einordnung des Fundes oder konkrete Ermittlungsmitteilung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cd5dd6963599eba1",
+          "announced_at": "2026-09-04T00:30:02.000Z",
+          "follow_up_date": "2026-09-11T01:00:23.705Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-7d3fabe103b78ce3"
+        },
+        {
+          "claim": "Wird die Polizei den Gegenstand als funktionsfähige Abschussvorrichtung einstufen?",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Behördliche Einordnung des Fundes und mögliche technische Beschreibung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8b70c8da46e59258",
+          "announced_at": "2026-09-04T00:48:10.000Z",
+          "follow_up_date": "2026-09-11T01:27:12.242Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-7d3fabe103b78ce3"
         }
       ],
       "sources": [
@@ -2739,114 +2775,6 @@
       ]
     },
     {
-      "story_id": "wt-4855e13df47f18ed",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4855e13df47f18ed-6faa25f763fdf631-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4855e13df47f18ed-6faa25f763fdf631-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4855e13df47f18ed-6faa25f763fdf631-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "kritische-infrastruktur-offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormage-7f18ed",
-      "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
-      "source_summary": "In Dormagen wird an einem Umspannwerk ein verdächtiger Gegenstand untersucht. Nach Angaben eines Polizeisprechers geht die Kölner Polizei nach Eingang eines Bekennerschreibens von Sabotage aus; zugleich heißt es, es habe zu einem Sabotageakt nicht gekommen. Der Gegenstand wird demnach von Experten geprüft, und weitere Stromanlagen in der Region werden überprüft.\n\nDer Bericht ordnet den Fund in eine Serie ähnlicher Vorfälle ein. Er verweist darauf, dass es vor zwei Tagen bereits bei Rommerskirchen westlich von Köln einen Anschlag auf ein Umspannwerk gegeben habe. Außerdem wird ein früherer Angriff in Brandenburg erwähnt; die Authentizität eines dort eingegangenen Bekennerbriefs wird als unklar beschrieben.",
-      "summary": "In Dormagen prüft die Polizei einen verdächtigen Gegenstand am Umspannwerk. Zugleich laufen Kontrollen weiterer Stromanlagen in der Region.",
-      "detail_summary": "Gesichert ist nach der vorliegenden Quelle, dass in Dormagen an einem Umspannwerk ein verdächtiger Gegenstand gefunden und von Experten untersucht wird. Die Polizei geht nach Eingang eines Bekennerschreibens von Sabotage aus, betont aber zugleich, dass es am Standort nicht zu einem Sabotageakt gekommen sei. Für die Einordnung ist das wichtig, weil damit nicht der Schaden, sondern der Gefahrenverdacht und die Schutzreaktion im Zentrum stehen. Materiell relevant ist der Vorgang, weil kritische Strominfrastruktur betroffen ist und zusätzliche Anlagen überprüft werden. Ein möglicher Wirkpfad führt von erhöhtem Sicherheitsaufwand über Prüfungen bis zu temporären Betriebs- und Schutzmaßnahmen. Offen bleibt, wie belastbar das Bekennerschreiben ist und was die technische Untersuchung ergibt.",
-      "why_relevant": "Der Vorfall betrifft kritische Strominfrastruktur und kann über Prüfungen und Schutzmaßnahmen weitere Anlagen in der Region binden.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen ist ein Stromumspannwerk; mögliche Folgen reichen von Schutzaufwand bis zu Versorgungsstörungen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus der Quelle ergeben sich keine belastbaren Umweltfolgen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Fall berührt Schutz kritischer Infrastruktur und damit staatliche Korrekturfähigkeit und Sicherheit."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Vor zwei Tagen",
-            "value": "zwei",
-            "unit": "Tage",
-            "context": "zeitlicher Abstand zum früheren Anschlag in Rommerskirchen"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "beschaeftigte",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-04T01:23:22.000Z",
-      "last_updated": "2026-09-04T02:21:50.081Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-cad42ce016710699eab5",
-      "source_published_at": "2026-09-04T02:12:48.000Z",
-      "published_at": "2026-09-04T01:27:28.471Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ergebnis der Expertenprüfung des Gegenstands am Umspannwerk",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizei oder Betreiber nennt gesicherte Einordnung des Gegenstands.",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-6cdbe9e8f974e3ab",
-          "announced_at": "2026-09-04T02:12:48.000Z",
-          "follow_up_date": "2026-09-11T02:21:50.081Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T02:12:48.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-f3d585eac14dec76",
       "title_image": {
         "mode": "impact_card",
@@ -2942,6 +2870,18 @@
           "announced_at": "2026-09-03T16:21:00.000Z",
           "follow_up_date": "2026-09-11T02:07:51.145Z",
           "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Polizei die Echtheit des Bekennerschreibens bestätigen kann",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung zur Authentizität des Schreibens",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6f87b9521d465246",
+          "announced_at": "2026-09-03T18:57:30.000Z",
+          "follow_up_date": "2026-09-10T22:37:01.821Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-57bcbc8dea706471"
         }
       ],
       "sources": [
@@ -3057,246 +2997,6 @@
           "url": "https://www1.wdr.de/nrw/bekennerschreiben-anschlag-umspannwerk-brandenburg-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T01:26:48.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-3a01df57b8cfe75f",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3a01df57b8cfe75f-bccaf0ab02830d93-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3a01df57b8cfe75f-bccaf0ab02830d93-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3a01df57b8cfe75f-bccaf0ab02830d93-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "angriffe-auf-stromnetz-polizei-geht-von-sabotage-an-umspannwerk-in-dormagen-aus-cfe75f",
-      "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
-      "source_summary": "Die gelieferten Texte berichten über einen Vorfall an einem Umspannwerk in Dormagen. Laut der einen Quelle untersucht die Polizei einen verdächtigen Fund und geht von Sabotage aus. Die andere Quelle schreibt, ein Spaziergänger habe einen verdächtigen Gegenstand entdeckt; zudem liege nach Angaben der Ermittler ein Bekennerschreiben vor. Beide Meldungen verweisen auf einen laufenden Ermittlungsstand, nennen aber keine weitergehenden Details zu Tätern, Motiv oder Folgen für die Stromversorgung.\n\nDie Quellen sind journalistische Darstellungen und keine Originalmitteilungen. Aus den gelieferten Texten geht nicht hervor, ob die Angaben bereits unabhängig bestätigt sind oder auf derselben behördlichen Grundlage beruhen.",
-      "summary": "Die Polizei geht in Dormagen nach einem verdächtigen Fund an einem Umspannwerk von Sabotage aus. In einer weiteren Meldung ist von einem verdächtigen Gegenstand und einem Bekennerschreiben die Rede.",
-      "detail_summary": "Gesichert aus den vorliegenden Texten ist vor allem der Ermittlungsstand: In Dormagen wird an einem Umspannwerk ein verdächtiger Fund geprüft, und die Polizei wertet den Fall inzwischen als Sabotageverdacht. Die zweite Meldung ergänzt, ein Spaziergänger habe den Gegenstand entdeckt und es liege demnach ein Bekennerschreiben vor. Für die Einordnung als Nachricht ist das relevant, weil Angriffe auf Energieinfrastruktur potenziell in Versorgung, Sicherheitslage und Ermittlungsdruck hineinwirken. Der Wirkpfad wäre zunächst operativ: Absicherung, Prüfung möglicher Schäden und mögliche Anpassungen bei Schutz und Überwachung. Eine mögliche Folge wären verschärfte Sicherheitsmaßnahmen an vergleichbaren Anlagen; ob es tatsächlich zu Ausfällen, Folgeschäden oder weiteren Fällen kommt, bleibt offen. Die Beleglage bleibt jedoch begrenzt, weil nur journalistische Sekundärberichte vorliegen und unklar ist, ob die Aussagen unabhängig voneinander bestätigt sind.",
-      "why_relevant": "Der Fall betrifft kritische Energieinfrastruktur und einen möglichen Sabotagevorwurf. Das kann Sicherheitsmaßnahmen, Betriebsschutz und öffentliche Versorgungskontrolle beeinflussen.",
-      "topic": [
-        "Wirtschaft",
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind potenziell Versorgungssicherheit und Sicherheitsgefühl, konkrete Ausfälle sind aber noch nicht belegt."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen oder Emissionseffekte."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Vorwurf betrifft kritische Infrastruktur und damit staatliche Schutz- und Ermittlungsfähigkeit; Hinweise auf politische Folgen fehlen."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "kommunen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-04T00:39:00.000Z",
-      "last_updated": "2026-09-04T01:28:00.255Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-cbd2c0c9db2a4a13b509",
-      "source_published_at": "2026-09-04T00:39:00.000Z",
-      "published_at": "2026-09-04T01:28:00.255Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ],
-          [
-            "spiegel-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T00:39:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:06:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7d3fabe103b78ce3",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7d3fabe103b78ce3-843eed3b8f383300-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7d3fabe103b78ce3-843eed3b8f383300-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7d3fabe103b78ce3-843eed3b8f383300-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "angriffe-auf-stromnetz-verdachtiger-gegenstand-an-umspannwerk-in-dormagen-entdeckt-b78ce3",
-      "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
-      "source_summary": "In Dormagen wird an einem Umspannwerk ein verdächtiger Gegenstand untersucht. Mehrere Beiträge berichten, dass die Polizei den Fund vor Ort prüft; zunächst war offen, ob es sich um eine Abschussvorrichtung oder nur um einen schlechten Scherz handelt. Ein WDR-Beitrag ergänzt, dass es in Dormagen-Gohr nach dem Fund zu keiner Beschädigung gekommen sei und unklar bleibe, ob der Gegenstand überhaupt geeignet gewesen wäre, Schaden hervorzurufen.\n\nDer WDR berichtet außerdem, die Polizei gehe inzwischen von einem Sabotagedelikt aus und vermute, dass offenbar ein Kurzschluss hergestellt werden sollte. Nach dem Bericht wird nach einem Mann aus dem Raum Gevelsberg gefahndet, der ein Bekennerschreiben verschickt haben soll; die Echtheit dieses Schreibens werde noch geprüft. Ein möglicher Zusammenhang mit früheren Angriffen auf Umspannwerke in Brandenburg und anderen Orten wird erwähnt, bleibt aber offen.",
-      "summary": "An einem Umspannwerk in Dormagen wurde ein verdächtiger Gegenstand entdeckt und von der Polizei untersucht. Ein WDR-Bericht spricht inzwischen von einem möglichen Sabotagedelikt und einem offenbar beabsichtigten Kurzschluss.",
-      "detail_summary": "Gesichert ist zunächst nur, dass an einem Umspannwerk in Dormagen ein verdächtiger Gegenstand gefunden und polizeilich geprüft wurde. Der WDR berichtet zusätzlich, dass es bislang zu keiner Beschädigung gekommen sei und noch offen sei, ob der Gegenstand überhaupt schadenstauglich war. Neu gegenüber einer bloßen Fundmeldung ist damit die Einordnung als möglicher Sabotageversuch mit möglichem Wirkpfad auf die Stromversorgung. Das ist für Mensch, Unternehmen und kritische Infrastruktur relevant, weil schon der Verdacht auf Angriffe an Umspannwerken Schutzmaßnahmen, Einsatzkräfte und Sicherheitslogik beeinflussen kann. Als mögliche Folge kommen verstärkte Kontrollen, Absperrungen und eine höhere Wachsamkeit an weiteren Anlagen in Betracht. Belastbar belegt ist diese Entwicklung aber nur als vorläufige Polizei- und Medienlage; die technische Funktion des Gegenstands, eine Täterschaft und ein möglicher Zusammenhang mit früheren Vorfällen bleiben offen.",
-      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur und damit einen potenziell systemrelevanten Schutzbereich. Schon ein begrenzter Sabotageverdacht kann Sicherheitsmaßnahmen, Betriebsabläufe und öffentliche Wahrnehmung beeinflussen.",
-      "topic": [
-        "Energie",
-        "Wirtschaft",
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Mögliche Folgen betreffen Versorgungssicherheit, Einsatzkräfte und Anwohner im Umfeld der Anlage; konkrete Schäden sind aber nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; nur indirekt kann kritische Infrastruktur betroffen sein."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Schutz kritischer Infrastruktur ist für staatliche Handlungsfähigkeit und öffentliche Sicherheit relevant, konkrete demokratische Auswirkungen sind jedoch offen."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "kommunen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-03T21:07:00.000Z",
-      "last_updated": "2026-09-04T01:27:12.242Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-6d73d8014561c0bc1298",
-      "source_published_at": "2026-09-03T21:03:08.000Z",
-      "published_at": "2026-09-04T01:00:23.705Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ],
-          [
-            "tagesspiegel-home"
-          ],
-          [
-            "swr-aktuell"
-          ],
-          [
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 4,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Polizei den Fund als Sabotageversuch, harmlosen Gegenstand oder etwas anderes einordnet.",
-          "source_id": "swr-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Einordnung des Fundes oder konkrete Ermittlungsmitteilung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-cd5dd6963599eba1",
-          "announced_at": "2026-09-04T00:30:02.000Z",
-          "follow_up_date": "2026-09-11T01:00:23.705Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Wird die Polizei den Gegenstand als funktionsfähige Abschussvorrichtung einstufen?",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Einordnung des Fundes und mögliche technische Beschreibung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-8b70c8da46e59258",
-          "announced_at": "2026-09-04T00:48:10.000Z",
-          "follow_up_date": "2026-09-11T01:27:12.242Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:07:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:03:08.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:00:03.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T00:48:10.000Z",
           "primary_source": false
         }
       ]
@@ -4119,135 +3819,6 @@
           "url": "https://www.swr.de/swraktuell/rheinland-pfalz/kaiserslautern/bgh-gericht-beendet-streit-um-gema-gebuehren-in-suedwestpfalz-seniorenheim-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T16:33:02.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-57bcbc8dea706471",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-57bcbc8dea706471-c4c7698f6151367a-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-57bcbc8dea706471-c4c7698f6151367a-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-57bcbc8dea706471-c4c7698f6151367a-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "nach-angriff-auf-stromnetz-brandenburger-polizei-pruft-bekennerschreiben-706471",
-      "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
-      "source_summary": "Die Berichte sagen, dass die Polizei nach der Sabotage am Umspannwerk bei Jänschwalde ein Bekennerschreiben prüft. Nach Polizeiangaben ist die Authentizität des Schreibens derzeit offen; bestätigt oder verneint werden könne sie noch nicht.\n\nDie Ermittlungen laufen weiter und werden unter anderem wegen der Bildung einer terroristischen Vereinigung geführt. Zugleich wird berichtet, dass ein Medienbericht von einem Einzeltäter spricht, der sich in dem Schreiben zu der Tat bekenne. Die polizeiliche Suche am Umspannwerk ist nach den Berichten abgeschlossen.",
-      "summary": "Die Polizei prüft nach der Sabotage am Umspannwerk bei Jänschwalde ein Bekennerschreiben. Die Echtheit des Schreibens ist nach Angaben der Ermittler noch offen.",
-      "detail_summary": "Gesichert ist zunächst nur, dass nach der Sabotage am Umspannwerk bei Jänschwalde ein Bekennerschreiben bei der Polizei eingegangen ist und geprüft wird. Die Polizei sagt zugleich, die Authentizität sei derzeit weder bestätigt noch verneint. Zusätzlich laufen Ermittlungen unter anderem wegen der Bildung einer terroristischen Vereinigung. Für die Einordnung ist das relevant, weil sich der Fokus damit von der bloßen Sachbeschädigung auf mögliche organisierte oder politisch motivierte Sabotage verschiebt. Der Wirkpfad läge vor allem in veränderten Sicherheitsvorkehrungen, Ermittlungsprioritäten und möglichen politischen Reaktionen zum Schutz kritischer Infrastruktur. Mögliche Folgen sind strengere Schutzmaßnahmen, zusätzliche Befugnisdebatten und eine breitere Prüfung ähnlicher Vorfälle. Welche Folgen tatsächlich eintreten, bleibt offen, weil die Echtheit des Schreibens und die Täterschaft bislang nicht belastbar belegt sind.",
-      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, mögliche koordiniere Sabotage und die öffentliche Sicherheitslage. Daraus können sich Schutzmaßnahmen, Ermittlungsprioritäten und politische Folgedebatten ergeben.",
-      "topic": [
-        "Energie",
-        "Demokratie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind Versorgungssicherheit, mögliche Ausfälle und der Schutz kritischer Infrastruktur."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Der Vorgang betrifft Energieinfrastruktur; direkte Umweltfolgen sind hier aber nicht belegt."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Ermittlungen wegen Terrorverdachts und mögliche Schutzbefugnisse berühren staatliche Sicherheit und Korrekturfähigkeit."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Betroffene Anlage",
-            "value": "Umspannwerk",
-            "unit": "Ort",
-            "context": "Anlage bei Jänschwalde, zu der das Bekennerschreiben geprüft wird"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "kommunen",
-          "unternehmen",
-          "haushalte"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "risiko"
-        }
-      },
-      "first_seen": "2026-09-03T16:08:52.000Z",
-      "last_updated": "2026-09-03T22:37:01.821Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-e41b12a5a072d7faff5f",
-      "source_published_at": "2026-09-03T16:08:52.000Z",
-      "published_at": "2026-09-03T22:37:01.821Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "tagesspiegel-home"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 3,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Polizei die Echtheit des Bekennerschreibens bestätigen kann",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizeimitteilung zur Authentizität des Schreibens",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-6f87b9521d465246",
-          "announced_at": "2026-09-03T18:57:30.000Z",
-          "follow_up_date": "2026-09-10T22:37:01.821Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/potsdam/brandenburg/dpa-nach-angriff-auf-stromnetz-16015587.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:08:52.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/brandenburg-bekennerschreiben-sprengvorrichtung-stromnetz-umspannwerk-jaenschwalde-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T17:36:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T18:57:30.000Z",
           "primary_source": false
         }
       ]
