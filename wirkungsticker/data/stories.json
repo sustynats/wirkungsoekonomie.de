@@ -1,7 +1,401 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T09:40:57.639Z",
+  "updated_at": "2026-09-04T09:54:54.452Z",
   "stories": [
+    {
+      "story_id": "wt-215068875954a78e",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-172e9aee987b1ceb-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-172e9aee987b1ceb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-215068875954a78e-172e9aee987b1ceb-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "erfurt-richtungsstreit-im-bsw-thuringer-abgeordnete-treten-aus-partei-aus-54a78e",
+      "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
+      "source_summary": "In Thüringen beschreibt die Quelle einen eskalierenden Streit zwischen Bundespartei und Landesverband des BSW. Nach Angaben des Beitrags verlassen zehn Landtagsabgeordnete die Partei. Genannt werden dabei auch die Vize-Ministerpräsidentin und Finanzministerin Katja Wolf, Digitalminister Steffen Schütz sowie Umweltminister Tilo Kummer.\n\nDer Bericht ordnet den Vorgang als Belastung für die Regierungskoalition ein. Zugleich heißt es, die BSW-Fraktion bilde weiter eine Fraktion und wolle nächste Woche über weitere Schritte beraten. Außerdem wird auf Äußerungen von BSW-Landesvorsitzender Wolf verwiesen, die sich gegen „endlose Selbstbeschäftigung“ und „Flirts mit Rechtsradikalen“ richteten. Eine unabhängige Bestätigung der Angaben wird in der Quelle selbst nicht geliefert.",
+      "summary": "In Thüringen verlassen zehn Landtagsabgeordnete das BSW; darunter sind Katja Wolf, Steffen Schütz und Tilo Kummer. Die Fraktion will nächste Woche über weitere Schritte beraten und hält vorerst an der Koalition fest.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Austritt von zehn Thüringer Landtagsabgeordneten aus dem BSW, darunter drei Ministerinnen und Minister. Das ist politisch relevant, weil der Schritt unmittelbar die Stabilität einer ohnehin spannungsreichen Regierungskoalition berührt. Der Wirkpfad liegt weniger in einem einzelnen Stimmverlust als in veränderten Mehrheits-, Verhandlungs- und Disziplinierungsanreizen innerhalb von Partei, Fraktion und Kabinett. Mögliche Folgen sind eine geschwächte Koalitionsfähigkeit, neue Personal- oder Abstimmungsfragen und zusätzliche Unsicherheit für die Landespolitik. Für eine endgültige Einordnung fehlt aber unabhängige Bestätigung der Zahlen und des innerparteilichen Ablaufs; aktuell stützt sich die Meldung auf einen einzelnen journalistischen Bericht. Die Nachricht bleibt deshalb vorläufig, ist aber wegen ihrer unmittelbaren Folgen für Regierungsfähigkeit und politische Steuerung berichtenswert.",
+      "why_relevant": "Der Austritt mehrerer Landtagsabgeordneter aus einer Regierungspartei kann Mehrheiten, Koalitionsstabilität und politische Steuerungsfähigkeit in Thüringen verändern.",
+      "topic": [
+        "Klima",
+        "Digitalisierung",
+        "Finanzen",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Landesregierung, Fraktion und Wählervertretung; die Koalitionsstabilität kann sich kurzfristig ändern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Bezug zu Umwelt- oder Klimawirkungen ist aus der Quelle nicht ableitbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Parteiaustritte in einer Regierungskoalition berühren Mehrheiten, Repräsentation und demokratische Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T09:31:01.000Z",
+      "last_updated": "2026-09-04T09:48:16.895Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-d32c4341ee16ff499c56",
+      "source_published_at": "2026-09-04T09:31:01.000Z",
+      "published_at": "2026-09-04T09:48:16.895Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Fraktion berät nächste Woche über weitere Schritte.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Mitteilung zu weiteren Schritten oder zur Koalitionsfrage",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c7675feabae78f97",
+          "announced_at": "2026-09-04T09:31:01.000Z",
+          "follow_up_date": "2026-09-11T09:48:16.895Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T09:31:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f596cd293d0aa8ac",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f596cd293d0aa8ac-6acd63687af9469e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f596cd293d0aa8ac-6acd63687af9469e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f596cd293d0aa8ac-6acd63687af9469e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "iom-ramps-up-emergency-aid-in-lake-chad-as-thousands-flee-boko-haram-0aa8ac",
+      "title": "IOM ramps up emergency aid in Lake Chad as thousands flee Boko Haram",
+      "source_summary": "Die Quelle meldet, dass im Lake Province des Tschad mehr als 75.000 Menschen neu vertrieben worden seien. Als Ursache nennt sie eine erneute Welle von Angriffen durch Boko Haram in den vergangenen Monaten. Nach der Meldung verteilt die Internationale Organisation für Migration Not- und Soforthilfe, um die unmittelbarsten Bedürfnisse der Betroffenen zu decken.\n\nViele der Menschen hätten die Inseln des Tschadsees verlassen und suchten nun Schutz in weiter entfernten Städten und Dörfern. Die Meldung verweist auf einen Bericht von FRANCE 24 und nennt keinen weiteren unabhängigen Beleg im gelieferten Material.",
+      "summary": "Im Tschad sind laut IOM mehr als 75.000 Menschen neu vertrieben worden. Die Meldung beschreibt akute Hilfe und eine Verlagerung von den Inseln des Tschadsees in sicherere Orte.",
+      "detail_summary": "Gesichert ist zunächst nur der von FRANCE 24 wiedergegebene IOM-Befund zu mehr als 75.000 neu Vertriebenen im Lake Province des Tschad. Die Meldung verknüpft das mit einer erneuten Angriffswelle von Boko Haram und mit laufender Nothilfe für die unmittelbarsten Bedürfnisse. Relevanz entsteht vor allem durch die Zahl der Betroffenen und die akute Verschlechterung von Schutz-, Versorgungs- und Bewegungsbedingungen. Der Wirkpfad führt über Vertreibung und Binnenflucht zu höherem Bedarf an Unterkunft, Nahrung, medizinischer Versorgung und lokaler Aufnahmefähigkeit. Mögliche Folgen sind zusätzliche Belastungen für Aufnahmegemeinden und Hilfssysteme; ob es zu weiteren Verdrängungen oder einer Stabilisierung kommt, bleibt offen. Eine unabhängige Bestätigung der Kernzahl liegt im gelieferten Material nicht vor.",
+      "why_relevant": "Die Meldung beschreibt eine große Zahl akut Vertriebener und damit eine sichtbare Verschiebung von Schutz-, Versorgungs- und Belastungslagen in einer Krisenregion.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mehr als 75.000 neu Vertriebene bedeuten unmittelbare humanitäre Bedarfe, Schutzrisiken und Druck auf Aufnahmeorte."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Im Material werden keine direkten Umweltfolgen beschrieben; mögliche Sekundäreffekte bleiben offen."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Keine direkte demokratische oder institutionelle Entscheidungsänderung ist im Material belegt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "neu vertriebene Menschen",
+            "value": "75,000",
+            "unit": "Personen",
+            "context": "laut IOM die jüngste Zahl in der Lake Province"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "kommunen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T09:40:30.000Z",
+      "last_updated": "2026-09-04T09:47:51.866Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-04fa654345f6b9b3f3b6",
+      "source_published_at": "2026-09-04T09:40:30.000Z",
+      "published_at": "2026-09-04T09:47:51.866Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260904-iom-ramps-up-emergency-aid-in-lake-chad-as-thousands-flee-boko-haram",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T09:40:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-3c6be5c124113650",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c6be5c124113650-6fa29e8e11184d8b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c6be5c124113650-6fa29e8e11184d8b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c6be5c124113650-6fa29e8e11184d8b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wohnhaus-in-chemnitz-nach-explosion-evakuiert-mieter-unter-verdacht-113650",
+      "title": "Wohnhaus in Chemnitz nach Explosion evakuiert - Mieter unter Verdacht",
+      "source_summary": "Nach einer Explosion in einer Wohnung in Chemnitz ist ein Mietshaus vorerst unbewohnbar. Der betroffene 37 Jahre alte Bewohner wurde vorläufig festgenommen. Die Polizei teilt mit, sie vermute, dass der Wohnungsmieter die Explosion selbst verursacht haben könnte; der Mann habe Verbrennungen erlitten und sei nach einem kurzen Krankenhausaufenthalt in Polizeigewahrsam. \n\nLaut Feuerwehr verließen acht Hausbewohner das Gebäude im Lutherviertel selbst. Zwei Menschen und zwei Hunde wurden aus dem verqualmten Haus gerettet, vier Bewohner und ein Hund kamen in ein Hotel. Am Löscheinsatz waren 68 Einsatzkräfte und 19 Fahrzeuge beteiligt; ein Statiker und ein Brandursachenermittler sollen das Haus und die Ursache prüfen.",
+      "summary": "Nach einer Explosion in einem Chemnitzer Mietshaus ist das Gebäude vorerst unbewohnbar und wurde evakuiert. Ein 37-Jähriger wurde vorläufig festgenommen, die Polizei prüft eine mögliche Selbstverursachung.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Meldung vor allem der Einsatz: In Chemnitz wurde nach einer Explosion in einer Wohnung ein Mietshaus geräumt und vorerst für unbewohnbar erklärt. Zudem nennt die Quelle eine vorläufige Festnahme eines 37 Jahre alten Bewohners. Für die weitere Entwicklung ist wichtig, dass Polizei und Feuerwehr nicht nur räumliche Schäden, sondern auch eine mögliche Brand- und Explosionsursache prüfen. Daraus ergibt sich ein Wirkpfad über Wohnraumnutzung, kurzfristige Unterbringung und mögliche strafrechtliche Folgen. Mögliche Folgen sind längere Unbewohnbarkeit, weitere Ermittlungen und Kosten für Sicherung oder Instandsetzung. Belastbar offen bleibt jedoch, ob die Verdachtsannahme zutrifft und wie schwer die Schäden tatsächlich sind; dafür liegt bislang nur eine einzelne journalistische Quelle vor.",
+      "why_relevant": "Die Meldung betrifft kurzfristig Wohnraum, Sicherheit, Rettungseinsatz und mögliche strafrechtliche Konsequenzen in einem bewohnten Haus. Damit sind Zahl und Art der Betroffenen sowie die Intensität des Vorfalls materiell genug für eine Erstmeldung.",
+      "topic": [
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Bewohner, Einsatzkräfte und vorläufige Unterbringung; zudem droht längere Unbewohnbarkeit."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein unmittelbarer Umweltbezug ist belegt; mögliche Brandfolgen bleiben offen."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht vor allem um Einsatz und Ermittlungen, nicht um demokratische Verfahren oder Regeln."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Bewohner",
+            "value": "37",
+            "unit": "Jahre",
+            "context": "Alter des vorläufig festgenommenen Bewohners"
+          },
+          {
+            "label": "Einsatzkräfte",
+            "value": "68",
+            "unit": "Personen",
+            "context": "Beteiligte Kräfte am Löscheinsatz"
+          },
+          {
+            "label": "Fahrzeuge",
+            "value": "19",
+            "unit": "Fahrzeuge",
+            "context": "Eingesetzte Fahrzeuge beim Löscheinsatz"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "beschaeftigte",
+          "staat",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T05:50:47.000Z",
+      "last_updated": "2026-09-04T09:47:23.735Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e36c0e80c02ea72f11c7",
+      "source_published_at": "2026-09-04T08:43:18.000Z",
+      "published_at": "2026-09-04T09:47:23.735Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Tatverdächtige einem Haftrichter vorgeführt wird",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bericht über Vorführung, Haftentscheidung oder Verfahrensstand",
+          "expected_by_evidence_hash": "7084b04dc7f9a877497dbd411e5939594552730523f3df6399a68a942632da46",
+          "followup_id": "followup-67de102d7468f78f",
+          "announced_at": "2026-09-04T08:43:18.000Z",
+          "follow_up_date": "2026-09-11T09:47:23.735Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/chemnitz/news-haus-evakuierung,explosion-polizei-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T08:43:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-8f76552549f6aa68",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8f76552549f6aa68-fba6d559c4ef221e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8f76552549f6aa68-fba6d559c4ef221e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8f76552549f6aa68-fba6d559c4ef221e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nepal-two-flood-survivors-rescued-from-hydropower-tunnel-f6aa68",
+      "title": "#Nepal: Two flood survivors rescued from hydropower tunnel",
+      "source_summary": "France 24 meldet in einem Beitrag vom 4. September, die nepalesische Armee habe in einem Video in sozialen Medien die Rettung von zwei Arbeitern aus einem Wasserkrafttunnel angekündigt. Nach der Meldung seien beide Männer nach Kathmandu in ein Krankenhaus geflogen worden.\n\nDer Bericht ordnet die Rettung in die jüngsten Fluten ein und schreibt, diese hätten mehr als 1.200 Menschen getötet und über 5.000 Menschen würden noch vermisst. Außerdem heißt es, die Rettung wecke Hoffnung auf weitere Personen, die noch im Tunnel eingeschlossen sein könnten.",
+      "summary": "France 24 meldet die Rettung von zwei Arbeitern aus einem Wasserkrafttunnel in Nepal. Zugleich verweist der Bericht auf eine weiter offene Lage mit vielen Vermissten nach den Fluten.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle, dass die nepalesische Armee nach einem Video auf sozialen Medien die Rettung von zwei in einem Wasserkrafttunnel eingeschlossenen Arbeitern meldete und dass beide nach Kathmandu ins Krankenhaus geflogen wurden. Der Bericht stellt diese Rettung in den Kontext einer schweren Flutlage mit mehr als 1.200 Toten und über 5.000 Vermissten. Materiell relevant ist das, weil es um akute Gefährdung von Beschäftigten, Rettungsfähigkeit und die Lage an einer kritischen Energie-Infrastruktur geht. Ein möglicher Wirkpfad liegt in der unmittelbaren Rettung weiterer Eingeschlossener und in Folgerisiken für Arbeitsschutz, Einsatzlogistik und Betriebsunterbrechungen. Die Evidenz bleibt jedoch auf einen journalistischen Bericht mit Verweis auf ein Social-Media-Video begrenzt; unabhängige Bestätigung für die zentralen Zahlen liegt hier nicht vor.",
+      "why_relevant": "Die Meldung betrifft ein akutes Unglück in einer kritischen Infrastruktur mit unmittelbaren Folgen für Beschäftigte und Rettungseinsätze.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Es geht um gerettete und potenziell weiter eingeschlossene Menschen sowie um die unmittelbare Gefährdungslage nach einer Flutkatastrophe."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Fluten sind Teil eines größeren Naturereignisses; zur Umweltwirkung über die Katastrophe hinaus sagt die Quelle aber wenig."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein direkter demokratischer Wirkpfad ist in der Quelle nicht erkennbar."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "beschaeftigte",
+          "staat",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "gemischt",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T09:38:17.000Z",
+      "last_updated": "2026-09-04T09:47:04.612Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-fea21a345042f920125d",
+      "source_published_at": "2026-09-04T09:38:17.000Z",
+      "published_at": "2026-09-04T09:47:04.612Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260904-nepal-two-flood-survivors-rescued-from-hydropower-tunnel",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T09:38:17.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-9c53ae7c184a9cf0",
       "title_image": {
@@ -1846,17 +2240,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-8ff53cc0479d7795-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-8ff53cc0479d7795-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-8ff53cc0479d7795-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -2078,17 +2472,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-6b9dd346df986721-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-aa898be1a7366353-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-6b9dd346df986721-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-aa898be1a7366353-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-6b9dd346df986721-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9d87c7944980e87e-aa898be1a7366353-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -2191,17 +2585,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1fa1b7a164713db7-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-bc11696bd602bc83-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1fa1b7a164713db7-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-bc11696bd602bc83-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-1fa1b7a164713db7-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5e0a39f46388642-bc11696bd602bc83-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -2292,17 +2686,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-ec16fc66ce5861b7-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-61ad23506cbe0e8f-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-ec16fc66ce5861b7-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-61ad23506cbe0e8f-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-ec16fc66ce5861b7-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7743382a4712f9be-61ad23506cbe0e8f-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -2419,20 +2813,20 @@
     {
       "story_id": "wt-c87cfdddd07432e2",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-81a99700de773714-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-04681d81027fb10d-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-81a99700de773714-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-04681d81027fb10d-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-81a99700de773714-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-04681d81027fb10d-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -2651,17 +3045,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d37d76d9fec9dcf1-f9239bc4c9297517-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d37d76d9fec9dcf1-3ec8af6f9e0a6714-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d37d76d9fec9dcf1-f9239bc4c9297517-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d37d76d9fec9dcf1-3ec8af6f9e0a6714-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d37d76d9fec9dcf1-f9239bc4c9297517-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d37d76d9fec9dcf1-3ec8af6f9e0a6714-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3358,17 +3752,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-663ce5259c717765-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-1e8e92e5912224b6-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-663ce5259c717765-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-1e8e92e5912224b6-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-663ce5259c717765-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b9487671699d6c9b-1e8e92e5912224b6-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3465,17 +3859,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e8076042f86f06d-681fdce851a5f2ab-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e8076042f86f06d-925f23a946818ca0-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e8076042f86f06d-681fdce851a5f2ab-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e8076042f86f06d-925f23a946818ca0-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e8076042f86f06d-681fdce851a5f2ab-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e8076042f86f06d-925f23a946818ca0-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3786,17 +4180,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-67083aa272f98b15-046d2cf9b584431d-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-67083aa272f98b15-3b017f8ac798f7ac-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-67083aa272f98b15-046d2cf9b584431d-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-67083aa272f98b15-3b017f8ac798f7ac-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-67083aa272f98b15-046d2cf9b584431d-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-67083aa272f98b15-3b017f8ac798f7ac-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -3883,17 +4277,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-323b99e66fb46e39-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-323b99e66fb46e39-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-323b99e66fb46e39-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -4388,17 +4782,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-98ff7e403362fdf9-572841e1897952f8-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-98ff7e403362fdf9-4709e363148138ed-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-98ff7e403362fdf9-572841e1897952f8-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-98ff7e403362fdf9-4709e363148138ed-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-98ff7e403362fdf9-572841e1897952f8-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-98ff7e403362fdf9-4709e363148138ed-square.png",
           "width": 1080,
           "height": 1080
         }
@@ -4616,17 +5010,17 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-62828346069e2cd1-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-62828346069e2cd1-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-62828346069e2cd1-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-square.png",
           "width": 1080,
           "height": 1080
         }
