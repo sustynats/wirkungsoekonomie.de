@@ -2,7 +2,7 @@
 
 Basis: `4d57b24dab20fa1daf63a661cdcd69dd04cc195c` (frisches, isoliertes main-Worktree).
 
-Vor dem Merge mit dem zwischenzeitlich fortgeschrittenen main `5a852ce415d1f04f071228e4aa05fcaec00b8af9` abgeglichen. Dessen Änderungen betreffen weder Parliament-App noch Parliament-Governance; der PR-Diff bleibt auf P1 begrenzt.
+Vor dem Merge mit dem zwischenzeitlich fortgeschrittenen main `bf41b309d79fc81dad03028ec64287c462f66985` abgeglichen. Dessen Änderungen betreffen weder Parliament-App noch Parliament-Governance; der PR-Diff bleibt auf P1 begrenzt. Der vorhandene Repository-Audit wurde für die neue, nicht öffentliche Designvorlage und den Preview-Workflow deterministisch aktualisiert; 31/31 semantische Gates bleiben grün.
 
 ## Umfang
 

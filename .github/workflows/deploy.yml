@@ -88,6 +88,8 @@ jobs:
           npm run polls:test
           npm run polls:build
           npm run news:build
+          # Fast ticker releases must retain the current shared footer as well.
+          npm run normalize:footer
           npm run build:search
           npm run news:validate
       - name: Build public deploy artifact

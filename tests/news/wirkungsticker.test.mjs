@@ -57,6 +57,31 @@ test("Large multi-source prompts retain identities and exact evidence under the 
   assert.throws(()=>fitAnalysisInput([{sources:[{url:"x".repeat(100),evidence_segments:[]}]}],10),error=>error.message==="AI_INPUT_TOO_LARGE"&&error.requestAttempts===0);
 });
 
+test("Growing living files retain all evidence identities, roles and claims with related history", () => {
+  // Frozen incident fixture: future editorial updates must not change a test's input.
+  const existing=JSON.parse(fs.readFileSync(new URL('./fixtures/growing-living-file.json',import.meta.url)));
+  const sources=existing.pending_update?.sources || existing.sources;
+  const story={...existing,existing_story:existing,sources:sources.map(s=>({...s,article_excerpt:Array.from({length:40},(_,n)=>`Passage ${n}: Dies ist ein unveränderter Testbeleg über Infrastruktur und offene Ermittlungen.`).join(' ')})),claims:sources.map((s,n)=>({claim_id:`claim-${n}`,claim:`${s.title}: ${s.summary}`,source_id:s.source_id,evidence_level:'Sekundärquelle',uncertainty:'Vollständiger Kontext ist in der Originalquelle zu prüfen.'})),related_ticker_history:Array.from({length:5},(_,n)=>({story_id:`related-${n}`,title:'Eigenständige verwandte Meldung',summary:'Dies ist eine verwandte Nachricht mit einem eigenständigen Ereignis und anderen Belegen. '.repeat(4),source_urls:[`https://example.org/${n}/eins`,`https://example.org/${n}/zwei`,`https://example.org/${n}/drei`],source_published_at:'2026-09-03T12:00:00Z'}))};
+  const before=structuredClone(story);
+  const prompt=buildAnalysisPrompt([story]);
+  assert.ok(prompt.length<=39000);
+  const compact=JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0];
+  assert.equal(compact.sources.length,sources.length);
+  assert.equal(compact.claims.length,story.claims.length);
+  assert.equal(compact.related_ticker_history.length,5);
+  compact.sources.forEach((s,n)=>{
+    const expanded={...compact.source_defaults,...s};
+    assert.equal(expanded.url,sources[n].url);
+    assert.equal(expanded.source_id,sources[n].source_id);
+    assert.equal(expanded.primary_source,sources[n].primary_source);
+    assert.deepEqual(expanded.provenance,sources[n].provenance||null);
+    assert.ok(expanded.evidence_segments.length>=2);
+    if(s.abstract_claim_id) assert.ok(compact.claims.some(c=>c.claim_id===s.abstract_claim_id&&c.claim.includes(sources[n].summary)));
+  });
+  assert.deepEqual(compact.claims.map(c=>({...compact.claim_defaults,...c})),story.claims);
+  assert.deepEqual(story,before);
+});
+
 test("Verfahrensstand trennt Entwurf, Beschluss, geltendes Recht und Ex ante", () => {
   assert.deepEqual(statusConsistencyErrors({status:"beschlossen",source_summary:"Das Gesetz ist seit März in Kraft. Es betrifft die Infrastruktur."}),["AI_STATUS_CONTRADICTS_IN_FORCE"]);
   assert.deepEqual(statusConsistencyErrors({status:"in Kraft",analysis_type:"ex_ante",source_summary:"Das Gesetz ist seit März in Kraft."}),[]);

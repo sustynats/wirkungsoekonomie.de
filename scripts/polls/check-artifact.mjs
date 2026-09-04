@@ -11,4 +11,9 @@ for(const page of pages){
   for(const name of ['POLLS_TOKEN_PEPPER','POLLS_ABUSE_PEPPER','anonymous_vote_identifier','Bearer local-test-only'])if(html.includes(name))throw new Error(`Private poll value in ${page}`);
 }
 for(const privatePath of ['ops/polls','content/polls','scripts/polls','tests/polls'])if(fs.existsSync(path.join(artifact,privatePath)))throw new Error(`Private source directory published: ${privatePath}`);
+for(const page of ['index.html','umfragen/index.html','admin/umfragen/index.html']){
+  const html=fs.readFileSync(path.join(artifact,page),'utf8');
+  const footer=html.match(/<footer\b[\s\S]*?<\/footer>/)?.[0]||'';
+  if(!/<a\b[^>]*href="(?:\.\.\/|\.\/|\/)*umfragen\/"[^>]*>Umfragen<\/a>/.test(footer))throw new Error(`Survey footer entry missing: ${page}`);
+}
 console.log(`Survey artifact passed: ${pages.length} pages, runtime assets, no private storage/source exposure.`);

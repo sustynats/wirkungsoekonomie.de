@@ -26,8 +26,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Fetch exact pre-rebuild text baseline
+        run: git fetch --depth=1 origin 4d57b24dab20fa1daf63a661cdcd69dd04cc195c
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
