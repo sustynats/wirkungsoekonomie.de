@@ -1,7 +1,210 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T04:59:28.938Z",
+  "updated_at": "2026-09-04T05:04:50.707Z",
   "stories": [
+    {
+      "story_id": "wt-3c8762489a80692b",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-4eff1ac5a1b4e041-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-4eff1ac5a1b4e041-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-4eff1ac5a1b4e041-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "regionalnachweisregister-soll-abgewickelt-werden-80692b",
+      "title": "Regionalnachweisregister soll abgewickelt werden",
+      "source_summary": "Die Wirtschaft-und-Energie-Meldung berichtet über eine Verordnung der Bundesregierung zur Abwicklung des Regionalnachweisregisters. Das bisher beim Umweltbundesamt geführte Register soll eingestellt werden; der Betrieb des Regionalnachweisregisters soll beendet werden. Als Begründung nennt das Papier, das Register sei in der Praxis wenig genutzt worden und der administrative Aufwand für Registerführung und Meldepflichten stehe nicht im Verhältnis zum Nutzen. Zugleich heißt es, Herkunftsnachweise für Strom aus erneuerbaren Energien würden weiter ausgestellt und das Herkunftsnachweisregister werde weiter betrieben.\n\nDie Meldung nennt außerdem, dass die Verordnung mit EU-Recht vereinbar sei. Für die Änderung sei die Zustimmung des Bundestags erforderlich. Ein genauer Inkrafttretenszeitpunkt oder weitere Übergangsregeln werden in dem kurzen Text nicht genannt.",
+      "summary": "Die Bundesregierung will das Regionalnachweisregister einstellen. Für die Änderung braucht es noch die Zustimmung des Bundestags.",
+      "detail_summary": "Gesichert ist zunächst nur, dass die Bundesregierung per Verordnung das Regionalnachweisregister abwickeln und den Betrieb einstellen will. Die Begründung verweist auf geringe Nutzung und auf einen aus ihrer Sicht zu hohen administrativen Aufwand. Materiell relevant ist das, weil damit ein bislang geltendes Instrument zur regionalen Herkunftskennzeichnung von Strom wegfällt und Melde- sowie Registerpflichten entfallen würden. Der Wirkpfad führt über veränderte Regeln und Pflichten zu geringeren Verwaltungskosten, zugleich aber zu einem anderen Informations- und Anreizrahmen im Strommarkt. Mögliche Folge ist, dass regionale Stromkennzeichnung einfacher wird, während ein zuvor vorgesehenes Akzeptanzinstrument entfällt. Wie stark das tatsächlich auf Marktverhalten, Akzeptanz oder Investitionen wirkt, bleibt offen, weil der Text dazu keine Daten, Übergangsregeln oder Folgenabschätzung enthält.",
+      "why_relevant": "Die Meldung beschreibt eine geplante Regeländerung mit potenziell spürbaren Folgen für Stromkennzeichnung, Verwaltungsaufwand und Anreizstrukturen im Bereich erneuerbare Energien.",
+      "topic": [
+        "Klima",
+        "Energie",
+        "Wirtschaft",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Anlagenbetreiber, Elektrizitätsversorgungsunternehmen und letztlich Stromkundinnen und -kunden über geänderte Kennzeichnungs- und Meldeprozesse."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der Bezug liegt im System der Erneuerbaren-Förderung und der regionalen Herkunftskennzeichnung; direkte Klimaeffekte sind aus der Quelle aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht um ein Verordnungsverfahren mit Bundestagszustimmung; demokratische Korrekturfähigkeit ist verfahrensrelevant, aber nicht der Hauptwirkpfad."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-02T13:20:00.000Z",
+      "last_updated": "2026-09-04T04:53:25.547Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-a245879abee746aa83eb",
+      "source_published_at": "2026-09-02T13:20:00.000Z",
+      "published_at": "2026-09-03T07:58:18.398Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-wirtschaft"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der Bundestag stimmt der Verordnung zu.",
+          "source_id": "bundestag-wirtschaft",
+          "expected_by": null,
+          "measurable_indicator": "Beschluss oder Ablehnung im parlamentarischen Verfahren",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8cc39c042eef2655",
+          "announced_at": null,
+          "follow_up_date": "2026-09-11T04:53:25.547Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag – Wirtschaft und Energie",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
+          "source_type": "official_rss",
+          "published_at": null,
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-972d20af6da2b586",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-8ff53cc0479d7795-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-8ff53cc0479d7795-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-8ff53cc0479d7795-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "was-tut-die-bundesregierung-gegen-hybride-angriffe-und-drohnenvorfalle-a2b586",
+      "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
+      "source_summary": "Die Bundesregierung veröffentlicht eine FAQ-Seite zu hybriden Angriffen und Drohnenvorfällen. Als Anlass nennt sie den Fund einer mit Sprengstoff bestückten Drohne am Leipziger Flughafen und bezeichnet den Vorfall als sehr ernst zu nehmend. Zugleich verweist sie auf eine fortlaufend verfolgte Lage und auf Beratungen im Nationalen Sicherheitsrat und im Bundeskabinett.\n\nDie Seite перечисlt mehrere Maßnahmen: Das KRITIS-Dachgesetz sei im März 2026 in Kraft getreten, die Bundespolizei habe seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Beschäftigten, dafür würden 100 Millionen Euro investiert. Außerdem sei ein Drohnenabwehrzentrum von Bund und Ländern eingerichtet worden. Die Bundesregierung nennt zudem eine Reform des Bundespolizeigesetzes, Änderungen am Luftsicherheitsgesetz und verweist auf einen Anstieg illegaler Drohnenflüge über kritische Infrastruktur.",
+      "summary": "Die Bundesregierung beschreibt eine verschärfte Bedrohungslage durch hybride Angriffe und nennt mehrere bereits laufende Gegenmaßnahmen. Dazu gehören neue Befugnisse, eine Drohnenabwehreinheit und ein gemeinsames Lagezentrum.",
+      "detail_summary": "Gesichert ist zunächst die politische Reaktion der Bundesregierung auf die von ihr geschilderte hybride Bedrohungslage. Die Quelle nennt den Leipziger Drohnenvorfall als Auslöser und verweist auf konkrete Maßnahmen wie das im März 2026 in Kraft getretene KRITIS-Dachgesetz, die Drohnenabwehreinheit der Bundespolizei und ein Drohnenabwehrzentrum von Bund und Ländern. Für die Wirkung ist relevant, dass hier nicht nur kommuniziert, sondern Sicherheitsarchitektur, Zuständigkeiten und technische Abwehrkapazitäten verändert werden. Der Wirkpfad läuft über frühere Erkennung, koordiniertere Lagebewertung und schnellere Abwehr von Vorfällen an kritischer Infrastruktur. Möglich sind dadurch geringere Verwundbarkeit und bessere Resilienz, zugleich bleiben Umfang, Effektivität und tatsächliche Umsetzung der Maßnahmen offen. Die Quelle ist jedoch eine Regierungsdarstellung; unabhängige Bestätigung der Lagebewertung oder der behaupteten Wirksamkeit liegt hier nicht vor.",
+      "why_relevant": "Die Meldung beschreibt staatliche Sicherheitsmaßnahmen mit möglichem Einfluss auf kritische Infrastruktur, Abwehrkapazitäten und Zuständigkeiten. Das ist materiell, weil Regeln, Ressourcen und Schutzarchitektur verändert werden.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Maßnahmen zielen auf Schutz von Bevölkerung und kritischer Infrastruktur vor Drohnen- und Sabotagevorfällen. Betroffen sind Sicherheitslage, öffentliche Dienste und mögliche Alltagsstörungen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht beschrieben. Allenfalls indirekt kann der Schutz von Versorgungsinfrastruktur Umweltfolgen von Ausfällen begrenzen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle betrifft Sicherheitsstaat, Zuständigkeiten und Eingriffsbefugnisse. Für demokratische Kontrolle relevant sind Transparenz, Verhältnismäßigkeit und spätere parlamentarische Prüfung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Mitarbeiterinnen und Mitarbeiter",
+            "value": "130",
+            "unit": "Personen",
+            "context": "Größe der neuen Drohnenabwehreinheit"
+          },
+          {
+            "label": "Investition",
+            "value": "100 Millionen",
+            "unit": "Euro",
+            "context": "Bundesmittel für die Drohnenabwehreinheit"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "kommunen",
+          "europa"
+        ],
+        "timeline": [
+          {
+            "date": "2025-12",
+            "label": "Drohnenabwehreinheit der Bundespolizei"
+          },
+          {
+            "date": "2026-03",
+            "label": "KRITIS-Dachgesetz in Kraft"
+          }
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-02T06:00:00.000Z",
+      "last_updated": "2026-09-04T04:51:34.536Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-3c4cec37699684f265d9",
+      "source_published_at": "2026-09-02T06:00:00.000Z",
+      "published_at": "2026-09-04T04:51:34.536Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T06:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-9cca0ad92ad1a84a",
       "title_image": {
@@ -3929,74 +4132,6 @@
       ]
     },
     {
-      "story_id": "wt-acae834e3431b203",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-acae834e3431b203-1fee91b6ff613032-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-acae834e3431b203-1fee91b6ff613032-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-acae834e3431b203-1fee91b6ff613032-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "denkmal-fur-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsministe-31b203",
-      "title": "Denkmal für die polnischen Opfer des Zweiten Weltkriegs: Errichtung ab 2027 – Staatsminister Weimer zum Jahrestag des deutschen Überfalls auf Polen",
-      "source_summary": "Die Bundesregierung kündigt den Baubeginn für ein Denkmal an, das an die polnischen Opfer des Zweiten Weltkriegs und der deutschen Besatzung Polens von 1939 bis 1945 erinnern soll. Der Deutsche Bundestag hat das Vorhaben beschlossen. Als Standort ist das Gelände der früheren Kroll-Oper im Zentrum Berlins vorgesehen, in der Nähe von Bundeskanzleramt und Bundestag.\n\nNach Angaben der Quelle läuft derzeit ein Gestaltungswettbewerb. Ein Preisgericht soll im Dezember 2026 über den Siegerentwurf beraten; die Errichtung soll 2027 beginnen. Kulturstaatsminister Wolfram Weimer äußerte sich anlässlich des Jahrestags des deutschen Überfalls auf Polen zu dem Vorhaben. Am vorgesehenen Ort besteht bereits seit Juni 2025 ein temporärer Gedenkort, der auf Initiative des Deutschen Polen-Instituts eingerichtet und der Öffentlichkeit übergeben wurde. Weitere Angaben zur endgültigen Gestaltung oder zu den Baukosten nennt die Meldung nicht.",
-      "summary": "Das geplante Denkmal ist eine dauerhafte Erinnerungsinfrastruktur im Zentrum Berlins. Die Relevanz liegt vor allem im demokratischen Resonanzraum.",
-      "detail_summary": "Fakt ist: Ein vom Bundestag beschlossenes Denkmal soll ab 2027 errichtet werden. Es soll an Millionen polnische Opfer deutscher Aggression und Besatzung erinnern. Der Wirkpfad liegt in öffentlicher Erinnerung, historischer Bildung und symbolischer Anerkennung. Wirkung ist ex ante nicht belegt. Materiell sind Dauerhaftigkeit und demokratischer Kontext, bei offener tatsächlicher Nutzung und Resonanz.",
-      "why_relevant": "Die neue Information betrifft dauerhafte öffentliche Infrastruktur und historisch-politische Erinnerung mit demokratischem Bezug.",
-      "topic": [
-        "Geopolitik",
-        "Demokratie"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind Opfergedenken, Angehörigenperspektiven und öffentliche Bildung; direkte Lebenslagenwirkung bleibt begrenzt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Aus den gelieferten Daten ergibt sich kein wesentlicher Planet-Wirkpfad."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Das Denkmal kann Erinnerungskultur, Anerkennung und demokratische Selbstverständigung berühren."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-01T08:45:00.000Z",
-      "last_updated": "2026-09-03T11:02:59.364Z",
-      "version": 1,
-      "news_status": null,
-      "event_id": null,
-      "source_published_at": "2026-09-01T08:45:00.000Z",
-      "published_at": "2026-09-03T11:02:59.364Z",
-      "evidence_groups": null,
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/denkmal-fuer-die-polnischen-opfer-des-zweiten-weltkriegs-errichtung-ab-2027-staatsminister-weimer-zum-jahrestag-des-deutschen-ueberfalls-auf-polen-2451024",
-          "source_type": "official_rss",
-          "published_at": "2026-09-01T08:45:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
       "story_id": "wt-63b6c057c20a2143",
       "title_image": {
         "mode": "impact_card",
@@ -4130,76 +4265,6 @@
           "url": "https://www.bundesregierung.de/breg-de/aktuelles/neues-foerderprogramm-mit-zehn-millionen-euro-fuer-projekte-in-ns-und-sed-gedenkstaetten-staatsminister-weimer-gerade-jetzt-orte-der-erinnerung-staerken--2451324",
           "source_type": "official_rss",
           "published_at": "2026-09-03T07:06:42.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-3c8762489a80692b",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-d86c639a2bbb6b95-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-d86c639a2bbb6b95-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-d86c639a2bbb6b95-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "regionalnachweisregister-soll-abgewickelt-werden-80692b",
-      "title": "Regionalnachweisregister soll abgewickelt werden",
-      "source_summary": "Die Bundesregierung schlägt vor, das beim Umweltbundesamt geführte Regionalnachweisregister einzustellen. Das Register dokumentiert Nachweise, mit denen Stromlieferanten gegenüber Endverbrauchern die regionale Herkunft verbrauchten Stroms aus erneuerbaren Energien bestätigen können. Nach Darstellung der Verordnung wurde das Instrument in der Praxis wenig genutzt und erreichte das beabsichtigte Ziel, die Akzeptanz für zusätzliche Anlagen erneuerbarer Energien zu fördern, nicht.\n\nAls weiteren Grund nennt die Vorlage den administrativen Aufwand der Registerführung und die Meldepflichten für Anlagenbetreiber und Energieversorgungsunternehmen. Diese stünden laut Bundesregierung nicht in einem angemessenen Verhältnis zum Nutzen. Eine europarechtliche Pflicht für Regionalnachweise bestehe nicht. Das gesonderte Herkunftsnachweisregister für Strom aus erneuerbaren Energien soll dagegen weitergeführt werden. Für die Verordnungsänderung ist nach der Bundestagsmeldung die Zustimmung des Deutschen Bundestages erforderlich; ein Abschluss dieses Verfahrens wird noch nicht berichtet.",
-      "summary": "Das Regionalnachweisregister soll nach Regierungsverordnung eingestellt werden. Eine vorsichtige Ex-ante-Einordnung ist möglich, Wirkungen sind noch nicht belegt.",
-      "detail_summary": "Fakt ist die geplante Einstellung des beim Umweltbundesamt geführten Registers. Der Wirkungspfad liegt in geänderten Regeln für Nachweise zu regionalem Strombezug. Relevanz entsteht für Transparenz, Marktkommunikation und Vertrauen. Eingetretene Wirkung ist nicht belegt. Der Kontext der Verordnung muss für Verteilungs- und Klimafolgen geprüft werden.",
-      "why_relevant": "Energie-Nachweisregeln können Transparenz, Marktanreize und Vertrauen in Ökostromangebote berühren.",
-      "topic": [
-        "Klima",
-        "Energie",
-        "Wirtschaft",
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sein können Verbraucher und Anbieter, soweit regionale Stromnachweise genutzt werden."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Klimarelevanz ist möglich, aber ein direkter Emissionspfad ist aus den Daten nicht belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Nachweisregister betreffen nachvollziehbare Information und institutionelle Prüfbarkeit."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-02T13:20:00.000Z",
-      "last_updated": "2026-09-03T07:58:18.398Z",
-      "version": 1,
-      "news_status": null,
-      "event_id": null,
-      "source_published_at": "2026-09-02T13:20:00.000Z",
-      "published_at": "2026-09-03T07:58:18.398Z",
-      "evidence_groups": null,
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
-          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T13:20:00.000Z",
           "primary_source": true
         }
       ]
@@ -4543,76 +4608,6 @@
           "url": "https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2026/0501-0600/0504-26.html",
           "source_type": "official_rss",
           "published_at": "2026-09-02T22:01:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-b891f102e908a573",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b891f102e908a573-f1575069b3e99f30-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b891f102e908a573-f1575069b3e99f30-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b891f102e908a573-f1575069b3e99f30-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "bundeszuschuss-fur-niedrigere-stromkosten-08a573",
-      "title": "Bundeszuschuss für niedrigere Stromkosten",
-      "source_summary": "Die Bundesregierung plant, die Strom-Netzentgelte auch von 2027 bis 2029 mit einem Bundeszuschuss zu dämpfen. Für jedes dieser Jahre sollen 5,525 Milliarden Euro aus dem Klima- und Transformationsfonds an die Übertragungsnetzbetreiber fließen. Das Kabinett hat dafür Änderungen am Energiewirtschaftsgesetz beschlossen. Die Netzbetreiber sollen den Zuschuss in ihre Entgeltkalkulation einbeziehen; über die Stromlieferanten soll die Kostendämpfung Haushalte und Unternehmen erreichen.\n\nFür 2026 nennt die Quelle einen Zuschuss von 6,5 Milliarden Euro. Ein Haushalt mit 3.500 Kilowattstunden Jahresverbrauch könne dadurch rechnerisch etwa 100 Euro sparen, wobei der tatsächliche Betrag unter anderem von Netzgebiet, Verbrauch und Wohnsituation abhängt. Für 2027 liegen laut Artikel noch keine konkreten Entgeltdaten vor. Die Übertragungs- und Verteilnetzbetreiber sollen transparent machen, wie der Zuschuss die Netzentgelte verändert. Die Meldung ordnet den Zuschuss in weitere Maßnahmen wie die abgeschaffte Gasspeicherumlage und einen geplanten Industriestrompreis ein.",
-      "summary": "Bund will 2027 bis 2029 jährlich gut 5,5 Mrd. Euro zur Dämpfung der Strom-Netzentgelte einsetzen. Wirkung ist ex ante offen; belegt ist nur die Ankündigung.",
-      "detail_summary": null,
-      "why_relevant": "Netzentgelte betreffen Haushalte und Unternehmen; Preis-, Verteilungs- und Energieanreize können systemisch relevant sein.",
-      "topic": [
-        "Energie",
-        "Europa",
-        "Finanzen",
-        "Wirtschaft"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Möglich sind Entlastungen bei Stromkosten; tatsächliche Höhe, Verteilung und Dauer sind noch nicht belegt."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Strompreisänderungen können Nachfrage und Elektrifizierung beeinflussen; Klimaeffekte sind nicht nachgewiesen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Bundesmittel in Milliardenhöhe berühren Haushaltsprioritäten und Transparenz; Verfahren und Kontrolle fehlen im Datensatz."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-02T13:00:00.000Z",
-      "last_updated": "2026-09-02T23:02:35.568Z",
-      "version": 1,
-      "news_status": null,
-      "event_id": null,
-      "source_published_at": "2026-09-02T13:00:00.000Z",
-      "published_at": "2026-09-02T23:02:35.568Z",
-      "evidence_groups": null,
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/niedrigere-netzentgelte-2382396",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T13:00:00.000Z",
           "primary_source": true
         }
       ]
