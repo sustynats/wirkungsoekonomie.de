@@ -1,76 +1,37 @@
 {
   "schema_version": "1.2",
-  "status": "degraded",
-  "started_at": "2026-09-04T17:34:55.826Z",
+  "status": "ok",
+  "started_at": "2026-09-04T17:39:54.371Z",
   "berlin_slot": "Automatischer Lauf 19:00",
-  "feed_entries_fetched": 0,
-  "feed_entries_new": 0,
-  "feed_entries_updated": 0,
+  "feed_entries_fetched": 915,
+  "feed_entries_new": 20,
+  "feed_entries_updated": 10,
   "feed_entries_backfilled": 0,
-  "feed_entries_deduplicated": 0,
+  "feed_entries_deduplicated": 615,
   "feed_entries_future_dated": 0,
-  "story_clusters": 0,
-  "locally_rejected": 4,
+  "story_clusters": 24,
+  "locally_rejected": 25,
   "ai_stories": 12,
   "ai_calls": 12,
-  "reviews_reused": 2,
-  "input_holds": [
-    {
-      "story_id": "wt-4fb94d2cebfca746",
-      "reason": "AI_INPUT_TOO_LARGE",
-      "reused": true
-    },
-    {
-      "story_id": "wt-a840cc8db943b070",
-      "reason": "AI_INPUT_TOO_LARGE",
-      "reused": true
-    }
-  ],
-  "prompt_chars_sent": 314905,
+  "reviews_reused": 0,
+  "input_holds": [],
+  "prompt_chars_sent": 350675,
   "ai_batches_planned": 12,
   "ai_batches_completed": 12,
-  "published_stories": 2,
+  "published_stories": 3,
   "updated_stories": 2,
   "retired_stories": 0,
   "reactivated_stories": 0,
   "provider": "Oracle WOeK-KI API",
   "model": "gpt-5.4-mini",
-  "input_tokens": 82929,
-  "output_tokens": 10763,
-  "estimated_cost_usd": 0.078316,
-  "source_successes": 0,
+  "input_tokens": 94316,
+  "output_tokens": 11312,
+  "estimated_cost_usd": 0.089327,
+  "source_successes": 32,
   "source_failures": 0,
   "source_retry_attempts": 0,
   "source_errors": [],
   "quality_holds": [
-    {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-a6f6c9c60011b50c",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-e1bb5772260a52e1",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-00fccb632042b492",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-f596cd293d0aa8ac",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-b9487671699d6c9b",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
-    {
-      "story_id": "wt-6a7145e6dc679f95",
-      "reason": "AI_BUDGET_OR_BATCH_LIMIT"
-    },
     {
       "story_id": "wt-d80fd849c477e2ad",
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
@@ -128,7 +89,7 @@
       "reason": "AI_BUDGET_OR_BATCH_LIMIT"
     },
     {
-      "story_id": "wt-1fbb056ccaaf351d",
+      "story_id": "wt-4fb94d2cebfca746",
       "reason": "NO_VERIFIED_MATERIAL_UPDATE",
       "errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
@@ -136,38 +97,15 @@
       ]
     },
     {
-      "story_id": "wt-d4ea36d47045ac56",
-      "reason": "QUALITY_GATE_FAILED",
+      "story_id": "wt-a840cc8db943b070",
+      "reason": "NO_VERIFIED_MATERIAL_UPDATE",
       "errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
+        "AI_MATERIALITY_TOO_LOW"
       ]
     },
     {
-      "story_id": "wt-bef99e4e82075a46",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ]
-    },
-    {
-      "story_id": "wt-aaa7e98d9c993988",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
-      ]
-    },
-    {
-      "story_id": "wt-100a725dc688d970",
-      "reason": "QUALITY_GATE_FAILED",
-      "errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ]
-    },
-    {
-      "story_id": "wt-5072789df611867b",
+      "story_id": "wt-9d303a16d9b17afc",
       "reason": "QUALITY_GATE_FAILED",
       "errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
@@ -175,32 +113,48 @@
       ]
     },
     {
-      "story_id": "wt-21ad99e66ca278d1",
+      "story_id": "wt-d7a0af1afc831caf",
       "reason": "QUALITY_GATE_FAILED",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ]
+    },
+    {
+      "story_id": "wt-e1bb5772260a52e1",
+      "reason": "QUALITY_GATE_FAILED",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ]
+    },
+    {
+      "story_id": "wt-f596cd293d0aa8ac",
+      "reason": "NO_VERIFIED_MATERIAL_UPDATE",
       "errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ]
     },
     {
-      "story_id": "wt-cc2357f8b9e34cc6",
-      "reason": "QUALITY_GATE_FAILED",
+      "story_id": "wt-b9487671699d6c9b",
+      "reason": "NO_VERIFIED_MATERIAL_UPDATE",
       "errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
+        "AI_DUPLICATE_WITHOUT_UPDATE"
       ]
     }
   ],
-  "article_excerpts_fetched": 13,
-  "article_excerpt_failures": 1,
+  "article_excerpts_fetched": 12,
+  "article_excerpt_failures": 0,
   "visuals_dropped": [],
   "budget_stage": 0,
-  "completed_at": "2026-09-04T17:38:07.397Z",
-  "sources_scheduled": 0,
-  "sources_not_due": 41,
-  "sources_not_modified": 0,
+  "completed_at": "2026-09-04T17:46:52.790Z",
+  "sources_scheduled": 32,
+  "sources_not_due": 9,
+  "sources_not_modified": 3,
   "living_file_merges": [],
-  "pending_stories_retried": 39,
+  "pending_stories_retried": 27,
   "budget_policy": {
     "authorized_eur": 25,
     "technical_limit_usd": 18.9,
@@ -214,71 +168,71 @@
     },
     "status": "ok"
   },
-  "monthly_spend_before_usd": 8.063346,
+  "monthly_spend_before_usd": 8.141662,
   "monthly_budget_usd": 18.9,
   "ai_hourly_limit": 48,
-  "ai_calls_in_last_hour": 4,
-  "ai_calls_available_this_run": 44,
+  "ai_calls_in_last_hour": 15,
+  "ai_calls_available_this_run": 33,
   "ai_batch_size": 1,
   "token_source": "provider_reported_usage",
   "title_images": [
     {
-      "story_id": "wt-12a75e1a8e63deaa",
-      "requested_mode": "impact_card",
-      "reason": "SENSITIVE_SUBJECT",
-      "higgsfield_called": false,
+      "story_id": "wt-87c42d6cf088c08e",
+      "requested_mode": "editorial",
+      "reason": "NEUTRAL_OBJECT_SCHOOL",
+      "higgsfield_called": true,
       "source_reused": false,
-      "title_reused": true,
+      "title_reused": false,
       "mode": "impact_card",
-      "status": "reused",
-      "duration_ms": 1
+      "status": "fallback",
+      "fallback_reason": "HIGGSFIELD_TIMEOUT",
+      "duration_ms": 122712
     },
     {
-      "story_id": "wt-7122b10e5711a154",
+      "story_id": "wt-60f4e4d7d43fad99",
       "requested_mode": "editorial",
-      "reason": "NEUTRAL_TOPIC_TECHNOLOGY",
-      "higgsfield_called": false,
-      "source_reused": true,
+      "reason": "NEUTRAL_OBJECT_GRID",
+      "higgsfield_called": true,
+      "source_reused": false,
       "title_reused": false,
       "mode": "editorial",
       "status": "generated",
-      "duration_ms": 14589
+      "duration_ms": 66419
     },
     {
-      "story_id": "wt-76dd7f8508f81c11",
-      "requested_mode": "impact_card",
-      "reason": "SENSITIVE_SUBJECT",
-      "higgsfield_called": false,
+      "story_id": "wt-a6f6c9c60011b50c",
+      "requested_mode": "editorial",
+      "reason": "NEUTRAL_OBJECT_GRID",
+      "higgsfield_called": true,
       "source_reused": false,
       "title_reused": false,
-      "mode": "impact_card",
+      "mode": "editorial",
       "status": "generated",
-      "duration_ms": 9512
+      "duration_ms": 54548
     },
     {
-      "story_id": "wt-a5874ae28ed5533f",
-      "requested_mode": "impact_card",
-      "reason": "SENSITIVE_SUBJECT",
-      "higgsfield_called": false,
-      "source_reused": false,
-      "title_reused": false,
-      "mode": "impact_card",
-      "status": "generated",
-      "duration_ms": 9291
+      "story_id": "wt-00fccb632042b492",
+      "status": "deferred",
+      "reason": "IMAGE_RUN_TIME_LIMIT"
+    },
+    {
+      "story_id": "wt-6a7145e6dc679f95",
+      "status": "deferred",
+      "reason": "IMAGE_RUN_TIME_LIMIT"
     }
   ],
   "title_images_changed": 3,
-  "latest_source_timestamp": null,
-  "ai_calls_remaining_this_hour": 32,
+  "latest_source_timestamp": "2026-09-04T17:38:00.000Z",
+  "ai_calls_remaining_this_hour": 21,
   "public_changed": true,
-  "pending_story_count": 41,
+  "pending_story_count": 32,
   "source_health": [
     {
       "source_id": "bundesregierung-kompakt",
       "publisher_id": "bundesregierung",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T12:00:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -289,7 +243,7 @@
       "publisher_id": "bundesregierung",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T12:00:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -300,7 +254,7 @@
       "publisher_id": "bundestag",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T17:00:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -311,7 +265,7 @@
       "publisher_id": "bundestag",
       "status": "active",
       "content_warning": "NO_RELIABLE_PUBLICATION_DATE",
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": null,
       "last_error": null,
       "interval_minutes": 15,
@@ -322,7 +276,7 @@
       "publisher_id": "bundestag",
       "status": "active",
       "content_warning": "NO_RELIABLE_PUBLICATION_DATE",
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": null,
       "last_error": null,
       "interval_minutes": 15,
@@ -344,7 +298,7 @@
       "publisher_id": "destatis-aktuell",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T06:00:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -355,7 +309,7 @@
       "publisher_id": "bundesbank-allgemein",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T07:30:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -366,7 +320,7 @@
       "publisher_id": "ezb-presse",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T09:10:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -377,7 +331,7 @@
       "publisher_id": "bundesnetzagentur-presse",
       "status": "active",
       "content_warning": "NO_RELIABLE_PUBLICATION_DATE",
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": null,
       "last_error": null,
       "interval_minutes": 15,
@@ -410,7 +364,7 @@
       "publisher_id": "eu-kommission-presse",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T07:28:08.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -421,7 +375,7 @@
       "publisher_id": "bundesverwaltungsgericht-presse",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-08-31T22:00:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -432,7 +386,7 @@
       "publisher_id": "woek-journal",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-08-28T06:00:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -443,7 +397,7 @@
       "publisher_id": "woek-parlament-bewertungen",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-08-15T12:00:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -465,7 +419,7 @@
       "publisher_id": "france24",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T16:26:55.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -476,7 +430,7 @@
       "publisher_id": "euronews",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T11:02:32.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -487,8 +441,8 @@
       "publisher_id": "wirtschaftswoche",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T17:07:46.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:22:06.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -498,8 +452,8 @@
       "publisher_id": "stern",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T17:16:50.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:34:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -509,8 +463,8 @@
       "publisher_id": "tagesspiegel",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T17:10:44.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:29:40.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -520,7 +474,7 @@
       "publisher_id": "deutsche-welle",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T14:55:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -542,7 +496,7 @@
       "publisher_id": "who",
       "status": "stale_content",
       "content_warning": "LATEST_ITEM_OLDER_THAN_EXPECTED",
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-02-25T18:06:55.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -641,8 +595,8 @@
       "publisher_id": "taz",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T16:43:00.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:38:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -652,7 +606,7 @@
       "publisher_id": "manager-magazin",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T16:14:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -663,7 +617,7 @@
       "publisher_id": "zdfheute",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T17:09:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -674,7 +628,7 @@
       "publisher_id": "ndr",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T17:01:48.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -685,8 +639,8 @@
       "publisher_id": "wdr",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T17:18:26.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:31:23.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -696,8 +650,8 @@
       "publisher_id": "mdr",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T17:02:32.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:27:11.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -707,7 +661,7 @@
       "publisher_id": "swr",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T17:15:02.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -718,8 +672,8 @@
       "publisher_id": "rbb",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T17:18:17.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:23:23.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -729,8 +683,8 @@
       "publisher_id": "hr",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T16:53:57.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:37:36.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -762,8 +716,8 @@
       "publisher_id": "spiegel",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T16:55:00.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:23:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -773,8 +727,8 @@
       "publisher_id": "deutschlandfunk",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
-      "latest_item": "2026-09-04T17:11:33.000Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
+      "latest_item": "2026-09-04T17:33:42.000Z",
       "last_error": null,
       "interval_minutes": 15,
       "error_rate": 0
@@ -784,7 +738,7 @@
       "publisher_id": "deutschlandfunk",
       "status": "active",
       "content_warning": null,
-      "last_success": "2026-09-04T17:21:09.783Z",
+      "last_success": "2026-09-04T17:39:54.371Z",
       "latest_item": "2026-09-04T15:43:00.000Z",
       "last_error": null,
       "interval_minutes": 15,
@@ -894,11 +848,11 @@
     "published_origin_counts": {
       "publisher:wdr": 8,
       "publisher:stern": 12,
-      "publisher:deutschlandfunk": 14,
-      "publisher:zdfheute": 4,
+      "publisher:zdfheute": 5,
+      "publisher:deutschlandfunk": 15,
+      "publisher:taz": 6,
       "publisher:eu-kommission-presse": 3,
       "publisher:bundestag": 12,
-      "publisher:taz": 4,
       "publisher:france24": 8,
       "publisher:euronews": 3,
       "publisher:hr": 5,
@@ -922,119 +876,119 @@
     {
       "story_id": "wt-a5874ae28ed5533f",
       "published": true,
-      "source_age_minutes": 20.330433333333332,
+      "source_age_minutes": 25.306183333333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.36896666666666667,
       "publication_delay_minutes": 45.70368333333333,
-      "queue_age_minutes": 43.228716666666664,
+      "queue_age_minutes": 48.20446666666667,
       "target_publication_minutes": 120,
-      "news_freshness_score": 96,
+      "news_freshness_score": 95,
       "freshness_warning": null
     },
     {
       "story_id": "wt-76dd7f8508f81c11",
       "published": true,
-      "source_age_minutes": 23.080433333333332,
+      "source_age_minutes": 28.056183333333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.1745,
       "publication_delay_minutes": 824.8046166666667,
-      "queue_age_minutes": 823.4200833333333,
+      "queue_age_minutes": 828.3958333333334,
       "target_publication_minutes": 120,
-      "news_freshness_score": 95,
-      "freshness_warning": null
-    },
-    {
-      "story_id": "wt-aaa7e98d9c993988",
-      "published": false,
-      "source_age_minutes": 23.380433333333333,
-      "detection_delay_minutes": 9.61305,
-      "verification_delay_minutes": null,
-      "publication_delay_minutes": null,
-      "queue_age_minutes": 13.767383333333333,
-      "target_publication_minutes": 120,
-      "news_freshness_score": 95,
-      "freshness_warning": null
-    },
-    {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "published": false,
-      "source_age_minutes": 45.93043333333333,
-      "detection_delay_minutes": 0,
-      "verification_delay_minutes": null,
-      "publication_delay_minutes": null,
-      "queue_age_minutes": 133.33641666666668,
-      "target_publication_minutes": 120,
-      "news_freshness_score": 90,
-      "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-    },
-    {
-      "story_id": "wt-a6f6c9c60011b50c",
-      "published": false,
-      "source_age_minutes": 60.93043333333333,
-      "detection_delay_minutes": 0,
-      "verification_delay_minutes": null,
-      "publication_delay_minutes": null,
-      "queue_age_minutes": 568.6041166666666,
-      "target_publication_minutes": 120,
-      "news_freshness_score": 87,
-      "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-    },
-    {
-      "story_id": "wt-0b6279d05f195d31",
-      "published": true,
-      "source_age_minutes": 86.2971,
-      "detection_delay_minutes": 0,
-      "verification_delay_minutes": 0.20248333333333332,
-      "publication_delay_minutes": 136.40043333333332,
-      "queue_age_minutes": 208.27261666666666,
-      "target_publication_minutes": 60,
-      "news_freshness_score": 64,
-      "freshness_warning": null
-    },
-    {
-      "story_id": "wt-12a75e1a8e63deaa",
-      "published": true,
-      "source_age_minutes": 23.380433333333333,
-      "detection_delay_minutes": 0,
-      "verification_delay_minutes": 0.38663333333333333,
-      "publication_delay_minutes": 1.00115,
-      "queue_age_minutes": 73.18815,
-      "target_publication_minutes": 60,
-      "news_freshness_score": 90,
-      "freshness_warning": null
-    },
-    {
-      "story_id": "wt-cb1584ee4d9e6a43",
-      "published": true,
-      "source_age_minutes": 99.93043333333334,
-      "detection_delay_minutes": 11.7317,
-      "verification_delay_minutes": 0.21046666666666666,
-      "publication_delay_minutes": 2.4203,
-      "queue_age_minutes": 88.19873333333334,
-      "target_publication_minutes": 60,
-      "news_freshness_score": 58,
+      "news_freshness_score": 94,
       "freshness_warning": null
     },
     {
       "story_id": "wt-7122b10e5711a154",
       "published": true,
-      "source_age_minutes": 100.93043333333334,
+      "source_age_minutes": 105.90618333333333,
       "detection_delay_minutes": 12.7317,
       "verification_delay_minutes": 0.213,
       "publication_delay_minutes": 1.6087166666666666,
-      "queue_age_minutes": 88.19873333333334,
+      "queue_age_minutes": 93.17448333333333,
       "target_publication_minutes": 120,
+      "news_freshness_score": 78,
+      "freshness_warning": null
+    },
+    {
+      "story_id": "wt-12a75e1a8e63deaa",
+      "published": true,
+      "source_age_minutes": 28.356183333333334,
+      "detection_delay_minutes": 0,
+      "verification_delay_minutes": 0.38663333333333333,
+      "publication_delay_minutes": 1.00115,
+      "queue_age_minutes": 78.1639,
+      "target_publication_minutes": 60,
+      "news_freshness_score": 88,
+      "freshness_warning": null
+    },
+    {
+      "story_id": "wt-aaa7e98d9c993988",
+      "published": false,
+      "source_age_minutes": 28.356183333333334,
+      "detection_delay_minutes": 9.61305,
+      "verification_delay_minutes": null,
+      "publication_delay_minutes": null,
+      "queue_age_minutes": 18.743133333333333,
+      "target_publication_minutes": 120,
+      "news_freshness_score": 94,
+      "freshness_warning": null
+    },
+    {
+      "story_id": "wt-60f4e4d7d43fad99",
+      "published": true,
+      "source_age_minutes": 50.90618333333333,
+      "detection_delay_minutes": 0,
+      "verification_delay_minutes": 0.25015,
+      "publication_delay_minutes": 140.04235,
+      "queue_age_minutes": 138.31216666666666,
+      "target_publication_minutes": 60,
       "news_freshness_score": 79,
+      "freshness_warning": null
+    },
+    {
+      "story_id": "wt-a6f6c9c60011b50c",
+      "published": true,
+      "source_age_minutes": 65.90618333333333,
+      "detection_delay_minutes": 0,
+      "verification_delay_minutes": 0.23428333333333334,
+      "publication_delay_minutes": 575.5860333333334,
+      "queue_age_minutes": 573.5798666666667,
+      "target_publication_minutes": 60,
+      "news_freshness_score": 73,
+      "freshness_warning": null
+    },
+    {
+      "story_id": "wt-0b6279d05f195d31",
+      "published": true,
+      "source_age_minutes": 91.27285,
+      "detection_delay_minutes": 0,
+      "verification_delay_minutes": 0.20248333333333332,
+      "publication_delay_minutes": 136.40043333333332,
+      "queue_age_minutes": 213.24836666666667,
+      "target_publication_minutes": 60,
+      "news_freshness_score": 62,
+      "freshness_warning": null
+    },
+    {
+      "story_id": "wt-cb1584ee4d9e6a43",
+      "published": true,
+      "source_age_minutes": 104.90618333333333,
+      "detection_delay_minutes": 11.7317,
+      "verification_delay_minutes": 0.21046666666666666,
+      "publication_delay_minutes": 2.4203,
+      "queue_age_minutes": 93.17448333333333,
+      "target_publication_minutes": 60,
+      "news_freshness_score": 56,
       "freshness_warning": null
     },
     {
       "story_id": "wt-b5e0a39f46388642",
       "published": true,
-      "source_age_minutes": 4405.7971,
+      "source_age_minutes": 4410.77285,
       "detection_delay_minutes": 3252.150166666667,
       "verification_delay_minutes": 0.20911666666666667,
       "publication_delay_minutes": 376.87696666666665,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1042,59 +996,47 @@
     {
       "story_id": "wt-a840cc8db943b070",
       "published": true,
-      "source_age_minutes": 108.93043333333334,
+      "source_age_minutes": 113.90618333333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.2988166666666667,
       "publication_delay_minutes": 31.602333333333334,
-      "queue_age_minutes": 133.33641666666668,
+      "queue_age_minutes": 138.31216666666666,
       "target_publication_minutes": 120,
-      "news_freshness_score": 77,
+      "news_freshness_score": 76,
       "freshness_warning": null
     },
     {
       "story_id": "wt-1fbb056ccaaf351d",
       "published": true,
-      "source_age_minutes": 110.76376666666667,
+      "source_age_minutes": 115.73951666666666,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.23876666666666665,
       "publication_delay_minutes": 1.2420166666666668,
-      "queue_age_minutes": 383.96595,
+      "queue_age_minutes": 388.9417,
       "target_publication_minutes": 60,
-      "news_freshness_score": 54,
-      "freshness_warning": null
-    },
-    {
-      "story_id": "wt-e1bb5772260a52e1",
-      "published": false,
-      "source_age_minutes": 103.93043333333334,
-      "detection_delay_minutes": 15.7317,
-      "verification_delay_minutes": null,
-      "publication_delay_minutes": null,
-      "queue_age_minutes": 88.19873333333334,
-      "target_publication_minutes": 120,
-      "news_freshness_score": 78,
+      "news_freshness_score": 52,
       "freshness_warning": null
     },
     {
       "story_id": "wt-5547189d2645384a",
       "published": true,
-      "source_age_minutes": 216.86376666666666,
+      "source_age_minutes": 221.83951666666667,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.20111666666666667,
       "publication_delay_minutes": 160.9384,
-      "queue_age_minutes": 412.56895,
+      "queue_age_minutes": 417.5447,
       "target_publication_minutes": 60,
-      "news_freshness_score": 10,
+      "news_freshness_score": 8,
       "freshness_warning": null
     },
     {
       "story_id": "wt-e442d6ad81290406",
       "published": true,
-      "source_age_minutes": 2081.9304333333334,
+      "source_age_minutes": 2086.9061833333335,
       "detection_delay_minutes": 928.2835,
       "verification_delay_minutes": 0.17465,
       "publication_delay_minutes": 210.80938333333333,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1102,11 +1044,11 @@
     {
       "story_id": "wt-aabe8c0430bf8f84",
       "published": true,
-      "source_age_minutes": 442.11376666666666,
+      "source_age_minutes": 447.08951666666667,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.2017,
       "publication_delay_minutes": 6.733883333333333,
-      "queue_age_minutes": 718.5956666666667,
+      "queue_age_minutes": 723.5714166666667,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1114,71 +1056,71 @@
     {
       "story_id": "wt-79a8fce4900e254f",
       "published": true,
-      "source_age_minutes": 142.4471,
+      "source_age_minutes": 147.42285,
       "detection_delay_minutes": 9.110683333333334,
       "verification_delay_minutes": 0.20476666666666668,
       "publication_delay_minutes": 1.7693,
-      "queue_age_minutes": 133.33641666666668,
+      "queue_age_minutes": 138.31216666666666,
       "target_publication_minutes": 60,
-      "news_freshness_score": 41,
+      "news_freshness_score": 39,
       "freshness_warning": null
     },
     {
       "story_id": "wt-e18907861b9d9b1f",
       "published": true,
-      "source_age_minutes": 147.23043333333334,
+      "source_age_minutes": 152.20618333333334,
       "detection_delay_minutes": 13.894016666666667,
       "verification_delay_minutes": 0.2841666666666667,
       "publication_delay_minutes": 1.32765,
-      "queue_age_minutes": 133.33641666666668,
+      "queue_age_minutes": 138.31216666666666,
       "target_publication_minutes": 120,
-      "news_freshness_score": 69,
+      "news_freshness_score": 68,
       "freshness_warning": null
     },
     {
       "story_id": "wt-8e4cf2004cb7951c",
       "published": true,
-      "source_age_minutes": 141.23043333333334,
+      "source_age_minutes": 146.20618333333334,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.2164,
       "publication_delay_minutes": 1.5063833333333334,
-      "queue_age_minutes": 208.27261666666666,
+      "queue_age_minutes": 213.24836666666667,
       "target_publication_minutes": 60,
-      "news_freshness_score": 41,
+      "news_freshness_score": 39,
       "freshness_warning": null
     },
     {
       "story_id": "wt-f2edeab46d126d83",
       "published": true,
-      "source_age_minutes": 177.0471,
+      "source_age_minutes": 182.02285,
       "detection_delay_minutes": 28.513416666666668,
       "verification_delay_minutes": 0.26553333333333334,
       "publication_delay_minutes": 0.7017833333333333,
-      "queue_age_minutes": 148.53368333333333,
+      "queue_age_minutes": 153.50943333333333,
       "target_publication_minutes": 60,
-      "news_freshness_score": 26,
+      "news_freshness_score": 24,
       "freshness_warning": null
     },
     {
       "story_id": "wt-d02cf2fc303cef4f",
       "published": true,
-      "source_age_minutes": 181.3471,
+      "source_age_minutes": 186.32285,
       "detection_delay_minutes": 3.3394333333333335,
       "verification_delay_minutes": 0.21823333333333333,
       "publication_delay_minutes": 1.6308,
-      "queue_age_minutes": 178.00766666666667,
+      "queue_age_minutes": 182.98341666666667,
       "target_publication_minutes": 120,
-      "news_freshness_score": 62,
+      "news_freshness_score": 61,
       "freshness_warning": null
     },
     {
       "story_id": "wt-7ae0b9f22404b684",
       "published": true,
-      "source_age_minutes": 1918.7637666666667,
+      "source_age_minutes": 1923.7395166666668,
       "detection_delay_minutes": 765.1168333333334,
       "verification_delay_minutes": 0.3023666666666667,
       "publication_delay_minutes": 45.3618,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1186,35 +1128,35 @@
     {
       "story_id": "wt-91d18230516d00b2",
       "published": true,
-      "source_age_minutes": 219.4971,
+      "source_age_minutes": 224.47285,
       "detection_delay_minutes": 11.224483333333334,
       "verification_delay_minutes": 0.26616666666666666,
       "publication_delay_minutes": 1.05975,
-      "queue_age_minutes": 208.27261666666666,
+      "queue_age_minutes": 213.24836666666667,
       "target_publication_minutes": 120,
-      "news_freshness_score": 54,
+      "news_freshness_score": 53,
       "freshness_warning": null
     },
     {
       "story_id": "wt-b076e0c16bf4a2e8",
       "published": true,
-      "source_age_minutes": 232.53043333333332,
+      "source_age_minutes": 237.50618333333333,
       "detection_delay_minutes": 9.229966666666666,
       "verification_delay_minutes": 0.14663333333333334,
       "publication_delay_minutes": 1.4982333333333333,
-      "queue_age_minutes": 223.30046666666667,
+      "queue_age_minutes": 228.27621666666667,
       "target_publication_minutes": 120,
-      "news_freshness_score": 52,
+      "news_freshness_score": 51,
       "freshness_warning": null
     },
     {
       "story_id": "wt-3c6be5c124113650",
       "published": true,
-      "source_age_minutes": 531.6304333333334,
+      "source_age_minutes": 536.6061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.18763333333333335,
       "publication_delay_minutes": 221.06926666666666,
-      "queue_age_minutes": 688.6041166666666,
+      "queue_age_minutes": 693.5798666666667,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1222,11 +1164,11 @@
     {
       "story_id": "wt-215068875954a78e",
       "published": true,
-      "source_age_minutes": 261.5971,
+      "source_age_minutes": 266.57285,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.23433333333333334,
       "publication_delay_minutes": 1.9387666666666667,
-      "queue_age_minutes": 468.5876166666667,
+      "queue_age_minutes": 473.56336666666664,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1234,35 +1176,35 @@
     {
       "story_id": "wt-7587d1bde4d3d0dd",
       "published": false,
-      "source_age_minutes": 269.9304333333333,
+      "source_age_minutes": 274.90618333333333,
       "detection_delay_minutes": 16.420166666666667,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 253.51026666666667,
+      "queue_age_minutes": 258.48601666666667,
       "target_publication_minutes": 120,
-      "news_freshness_score": 44,
+      "news_freshness_score": 43,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
     },
     {
       "story_id": "wt-a416364f223ac3fc",
       "published": true,
-      "source_age_minutes": 334.58043333333336,
+      "source_age_minutes": 339.5561833333333,
       "detection_delay_minutes": 6.290366666666666,
       "verification_delay_minutes": 0.2301,
       "publication_delay_minutes": 30.247716666666665,
-      "queue_age_minutes": 328.2900666666667,
+      "queue_age_minutes": 333.2658166666667,
       "target_publication_minutes": 120,
-      "news_freshness_score": 30,
+      "news_freshness_score": 29,
       "freshness_warning": null
     },
     {
       "story_id": "wt-00fccb632042b492",
       "published": true,
-      "source_age_minutes": 354.9304333333333,
+      "source_age_minutes": 359.90618333333333,
       "detection_delay_minutes": 26.640366666666665,
-      "verification_delay_minutes": 0.23558333333333334,
+      "verification_delay_minutes": 0.24413333333333334,
       "publication_delay_minutes": 1.7258333333333333,
-      "queue_age_minutes": 328.2900666666667,
+      "queue_age_minutes": 333.2658166666667,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1270,23 +1212,23 @@
     {
       "story_id": "wt-a39369745f4e5cef",
       "published": true,
-      "source_age_minutes": 334.9304333333333,
+      "source_age_minutes": 339.90618333333333,
       "detection_delay_minutes": 6.640366666666667,
       "verification_delay_minutes": 0.2518666666666667,
       "publication_delay_minutes": 1.2129333333333334,
-      "queue_age_minutes": 328.2900666666667,
+      "queue_age_minutes": 333.2658166666667,
       "target_publication_minutes": 120,
-      "news_freshness_score": 30,
+      "news_freshness_score": 29,
       "freshness_warning": null
     },
     {
       "story_id": "wt-d80fd849c477e2ad",
       "published": true,
-      "source_age_minutes": 1658.0971,
+      "source_age_minutes": 1663.07285,
       "detection_delay_minutes": 504.4501666666667,
       "verification_delay_minutes": 0.21331666666666665,
       "publication_delay_minutes": 255.74808333333334,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1294,23 +1236,23 @@
     {
       "story_id": "wt-68b6674db060e89b",
       "published": true,
-      "source_age_minutes": 381.36376666666666,
+      "source_age_minutes": 386.33951666666667,
       "detection_delay_minutes": 23.0899,
       "verification_delay_minutes": 0.19426666666666667,
       "publication_delay_minutes": 0.7948833333333334,
-      "queue_age_minutes": 358.27386666666666,
+      "queue_age_minutes": 363.24961666666667,
       "target_publication_minutes": 120,
-      "news_freshness_score": 21,
+      "news_freshness_score": 20,
       "freshness_warning": null
     },
     {
       "story_id": "wt-6267bf5562aa70a6",
       "published": true,
-      "source_age_minutes": 561.5304333333333,
+      "source_age_minutes": 566.5061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.18471666666666667,
       "publication_delay_minutes": 31.018383333333333,
-      "queue_age_minutes": 688.6041166666666,
+      "queue_age_minutes": 693.5798666666667,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1318,23 +1260,23 @@
     {
       "story_id": "wt-4fb94d2cebfca746",
       "published": true,
-      "source_age_minutes": 425.48043333333334,
+      "source_age_minutes": 430.45618333333334,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.18403333333333333,
       "publication_delay_minutes": 211.9503,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
-      "news_freshness_score": 11,
+      "news_freshness_score": 10,
       "freshness_warning": null
     },
     {
       "story_id": "wt-e976be74e6481ea2",
       "published": true,
-      "source_age_minutes": 451.2971,
+      "source_age_minutes": 456.27285,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.30128333333333335,
       "publication_delay_minutes": 211.33655,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1342,11 +1284,11 @@
     {
       "story_id": "wt-c84116529aa2d23b",
       "published": true,
-      "source_age_minutes": 425.48043333333334,
+      "source_age_minutes": 430.45618333333334,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.27241666666666664,
       "publication_delay_minutes": 442.40981666666664,
-      "queue_age_minutes": 853.3999333333334,
+      "queue_age_minutes": 858.3756833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1354,11 +1296,11 @@
     {
       "story_id": "wt-61d3420f0dd76f70",
       "published": true,
-      "source_age_minutes": 425.48043333333334,
+      "source_age_minutes": 430.45618333333334,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.33398333333333335,
       "publication_delay_minutes": 186.48436666666666,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1366,23 +1308,23 @@
     {
       "story_id": "wt-e99510a6e73f0fb1",
       "published": false,
-      "source_age_minutes": 429.6804333333333,
+      "source_age_minutes": 434.65618333333333,
       "detection_delay_minutes": 17.111483333333332,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 412.56895,
+      "queue_age_minutes": 417.5447,
       "target_publication_minutes": 120,
-      "news_freshness_score": 10,
+      "news_freshness_score": 9,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
     },
     {
       "story_id": "wt-31724816547fc87d",
       "published": true,
-      "source_age_minutes": 1351.6304333333333,
+      "source_age_minutes": 1356.6061833333333,
       "detection_delay_minutes": 197.9835,
       "verification_delay_minutes": 0.20706666666666668,
       "publication_delay_minutes": 159.37695,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1390,11 +1332,11 @@
     {
       "story_id": "wt-edd4484465895b46",
       "published": true,
-      "source_age_minutes": 1452.5971,
+      "source_age_minutes": 1457.57285,
       "detection_delay_minutes": 298.9501666666667,
       "verification_delay_minutes": 0.21806666666666666,
       "publication_delay_minutes": 76.33053333333334,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1402,11 +1344,11 @@
     {
       "story_id": "wt-f3d585eac14dec76",
       "published": true,
-      "source_age_minutes": 1357.4304333333334,
+      "source_age_minutes": 1362.4061833333333,
       "detection_delay_minutes": 203.7835,
       "verification_delay_minutes": 0.22741666666666666,
       "publication_delay_minutes": 226.56891666666667,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1414,11 +1356,11 @@
     {
       "story_id": "wt-7b385f58748f3d32",
       "published": true,
-      "source_age_minutes": 448.6304333333333,
+      "source_age_minutes": 453.6061833333333,
       "detection_delay_minutes": 1.3929333333333334,
       "verification_delay_minutes": 0.2654,
       "publication_delay_minutes": 1.5299166666666666,
-      "queue_age_minutes": 447.2375,
+      "queue_age_minutes": 452.21325,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1426,11 +1368,11 @@
     {
       "story_id": "wt-f596cd293d0aa8ac",
       "published": true,
-      "source_age_minutes": 474.4304333333333,
+      "source_age_minutes": 479.40618333333333,
       "detection_delay_minutes": 5.842816666666667,
       "verification_delay_minutes": 0.1412,
       "publication_delay_minutes": 1.5216166666666666,
-      "queue_age_minutes": 468.5876166666667,
+      "queue_age_minutes": 473.56336666666664,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1438,11 +1380,11 @@
     {
       "story_id": "wt-8f76552549f6aa68",
       "published": true,
-      "source_age_minutes": 476.6471,
+      "source_age_minutes": 481.62285,
       "detection_delay_minutes": 8.059483333333333,
       "verification_delay_minutes": 0.15038333333333334,
       "publication_delay_minutes": 0.73405,
-      "queue_age_minutes": 468.5876166666667,
+      "queue_age_minutes": 473.56336666666664,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1450,11 +1392,11 @@
     {
       "story_id": "wt-9c53ae7c184a9cf0",
       "published": true,
-      "source_age_minutes": 501.11376666666666,
+      "source_age_minutes": 506.08951666666667,
       "detection_delay_minutes": 7.756433333333334,
       "verification_delay_minutes": 0.2668833333333333,
       "publication_delay_minutes": 1.2275166666666666,
-      "queue_age_minutes": 493.3573333333333,
+      "queue_age_minutes": 498.3330833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1466,7 +1408,7 @@
       "detection_delay_minutes": null,
       "verification_delay_minutes": 0.28196666666666664,
       "publication_delay_minutes": 1.5772833333333334,
-      "queue_age_minutes": 568.6041166666666,
+      "queue_age_minutes": 573.5798666666667,
       "target_publication_minutes": 120,
       "news_freshness_score": null,
       "freshness_warning": null
@@ -1474,11 +1416,11 @@
     {
       "story_id": "wt-743a635e023f5ff0",
       "published": true,
-      "source_age_minutes": 599.2637666666667,
+      "source_age_minutes": 604.2395166666666,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.28503333333333336,
       "publication_delay_minutes": 285.82708333333335,
-      "queue_age_minutes": 853.3999333333334,
+      "queue_age_minutes": 858.3756833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1486,11 +1428,11 @@
     {
       "story_id": "wt-293fa4edfc2b5a5d",
       "published": true,
-      "source_age_minutes": 3454.9304333333334,
+      "source_age_minutes": 3459.9061833333335,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.20625,
       "publication_delay_minutes": 1438.3066333333334,
-      "queue_age_minutes": 3454.9304333333334,
+      "queue_age_minutes": 3459.9061833333335,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1498,11 +1440,11 @@
     {
       "story_id": "wt-63b6c057c20a2143",
       "published": true,
-      "source_age_minutes": 5794.930433333333,
+      "source_age_minutes": 5799.9061833333335,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.2324,
       "publication_delay_minutes": 3952.6183166666665,
-      "queue_age_minutes": 5794.930433333333,
+      "queue_age_minutes": 5799.9061833333335,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1510,11 +1452,11 @@
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
       "published": true,
-      "source_age_minutes": 1956.9304333333334,
+      "source_age_minutes": 1961.9061833333333,
       "detection_delay_minutes": 803.2835,
       "verification_delay_minutes": 0.26425,
       "publication_delay_minutes": 346.12215,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1522,11 +1464,11 @@
     {
       "story_id": "wt-d175d26e4635ba0a",
       "published": true,
-      "source_age_minutes": 1567.7137666666667,
+      "source_age_minutes": 1572.6895166666666,
       "detection_delay_minutes": 414.0668333333333,
       "verification_delay_minutes": 0.2274,
       "publication_delay_minutes": 160.8183,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1538,7 +1480,7 @@
       "detection_delay_minutes": null,
       "verification_delay_minutes": 0.20026666666666668,
       "publication_delay_minutes": 1118.3066333333334,
-      "queue_age_minutes": 3134.9304333333334,
+      "queue_age_minutes": 3139.9061833333335,
       "target_publication_minutes": 120,
       "news_freshness_score": null,
       "freshness_warning": null
@@ -1546,11 +1488,11 @@
     {
       "story_id": "wt-972d20af6da2b586",
       "published": true,
-      "source_age_minutes": 3574.9304333333334,
+      "source_age_minutes": 3579.9061833333335,
       "detection_delay_minutes": 2421.2835,
       "verification_delay_minutes": 0.21008333333333334,
       "publication_delay_minutes": 390.2921,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1558,11 +1500,11 @@
     {
       "story_id": "wt-9cca0ad92ad1a84a",
       "published": true,
-      "source_age_minutes": 3154.9304333333334,
+      "source_age_minutes": 3159.9061833333335,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.20871666666666666,
       "publication_delay_minutes": 1129.6449833333334,
-      "queue_age_minutes": 3154.9304333333334,
+      "queue_age_minutes": 3159.9061833333335,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1570,11 +1512,11 @@
     {
       "story_id": "wt-9d87c7944980e87e",
       "published": true,
-      "source_age_minutes": 3454.9304333333334,
+      "source_age_minutes": 3459.9061833333335,
       "detection_delay_minutes": 2301.2835,
       "verification_delay_minutes": 0.16281666666666667,
       "publication_delay_minutes": 377.2612833333333,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1582,11 +1524,11 @@
     {
       "story_id": "wt-7743382a4712f9be",
       "published": true,
-      "source_age_minutes": 4208.863766666666,
+      "source_age_minutes": 4213.839516666667,
       "detection_delay_minutes": 3055.2168333333334,
       "verification_delay_minutes": 0.21611666666666668,
       "publication_delay_minutes": 345.1946,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1594,11 +1536,11 @@
     {
       "story_id": "wt-c87cfdddd07432e2",
       "published": true,
-      "source_age_minutes": 2003.9304333333334,
+      "source_age_minutes": 2008.9061833333333,
       "detection_delay_minutes": 850.2835,
       "verification_delay_minutes": 0.22448333333333334,
       "publication_delay_minutes": 316.75876666666665,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1606,11 +1548,11 @@
     {
       "story_id": "wt-34e360cdb996a299",
       "published": true,
-      "source_age_minutes": 1529.2471,
+      "source_age_minutes": 1534.22285,
       "detection_delay_minutes": 375.60016666666667,
       "verification_delay_minutes": 0.2545,
       "publication_delay_minutes": 315.82075,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1618,11 +1560,11 @@
     {
       "story_id": "wt-d37d76d9fec9dcf1",
       "published": true,
-      "source_age_minutes": 3357.9304333333334,
+      "source_age_minutes": 3362.9061833333335,
       "detection_delay_minutes": 2204.2835,
       "verification_delay_minutes": 0.205,
       "publication_delay_minutes": 271.78535,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1630,11 +1572,11 @@
     {
       "story_id": "wt-45c66ae271691215",
       "published": true,
-      "source_age_minutes": 2226.9304333333334,
+      "source_age_minutes": 2231.9061833333335,
       "detection_delay_minutes": 1073.2835,
       "verification_delay_minutes": 0.21608333333333332,
       "publication_delay_minutes": 271.10673333333335,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1642,11 +1584,11 @@
     {
       "story_id": "wt-9de543ac63864ad7",
       "published": true,
-      "source_age_minutes": 1665.9304333333334,
+      "source_age_minutes": 1670.9061833333333,
       "detection_delay_minutes": 512.2835,
       "verification_delay_minutes": 0.18228333333333332,
       "publication_delay_minutes": 270.84891666666664,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1654,11 +1596,11 @@
     {
       "story_id": "wt-6a7145e6dc679f95",
       "published": true,
-      "source_age_minutes": 1503.7804333333333,
+      "source_age_minutes": 1508.7561833333334,
       "detection_delay_minutes": 350.1335,
-      "verification_delay_minutes": 0.24075,
+      "verification_delay_minutes": 0.2546833333333333,
       "publication_delay_minutes": 241.53045,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1666,11 +1608,11 @@
     {
       "story_id": "wt-b9487671699d6c9b",
       "published": true,
-      "source_age_minutes": 968.1304333333334,
+      "source_age_minutes": 973.1061833333333,
       "detection_delay_minutes": 24.74215,
       "verification_delay_minutes": 0.20646666666666666,
       "publication_delay_minutes": 2.2117,
-      "queue_age_minutes": 943.3882833333333,
+      "queue_age_minutes": 948.3640333333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": null
@@ -1678,11 +1620,11 @@
     {
       "story_id": "wt-9e8076042f86f06d",
       "published": true,
-      "source_age_minutes": 1587.3804333333333,
+      "source_age_minutes": 1592.3561833333333,
       "detection_delay_minutes": 433.7335,
       "verification_delay_minutes": 0.185,
       "publication_delay_minutes": 168.54471666666666,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1690,11 +1632,11 @@
     {
       "story_id": "wt-872323e750684aa1",
       "published": true,
-      "source_age_minutes": 2926.9304333333334,
+      "source_age_minutes": 2931.9061833333335,
       "detection_delay_minutes": 1773.2835,
       "verification_delay_minutes": 0.19311666666666666,
       "publication_delay_minutes": 167.7913,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1702,11 +1644,11 @@
     {
       "story_id": "wt-67083aa272f98b15",
       "published": true,
-      "source_age_minutes": 2614.9304333333334,
+      "source_age_minutes": 2619.9061833333335,
       "detection_delay_minutes": 1461.2835,
       "verification_delay_minutes": 0.2763833333333333,
       "publication_delay_minutes": 120.7145,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1714,11 +1656,11 @@
     {
       "story_id": "wt-e01001c00cf12041",
       "published": true,
-      "source_age_minutes": 2232.1804333333334,
+      "source_age_minutes": 2237.1561833333335,
       "detection_delay_minutes": 1078.5335,
       "verification_delay_minutes": 0.22116666666666668,
       "publication_delay_minutes": 45.6247,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1726,11 +1668,11 @@
     {
       "story_id": "wt-a77b5d9b2935de2a",
       "published": true,
-      "source_age_minutes": 1501.8971,
+      "source_age_minutes": 1506.87285,
       "detection_delay_minutes": 348.25016666666664,
       "verification_delay_minutes": 0.1796,
       "publication_delay_minutes": 15.968133333333334,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1738,11 +1680,11 @@
     {
       "story_id": "wt-9812656e38b0d665",
       "published": true,
-      "source_age_minutes": 1504.9304333333334,
+      "source_age_minutes": 1509.9061833333333,
       "detection_delay_minutes": 351.2835,
       "verification_delay_minutes": 0.22621666666666668,
       "publication_delay_minutes": 1.5334166666666667,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1750,11 +1692,11 @@
     {
       "story_id": "wt-98ff7e403362fdf9",
       "published": true,
-      "source_age_minutes": 1882.8637666666666,
+      "source_age_minutes": 1887.8395166666667,
       "detection_delay_minutes": 729.2168333333333,
       "verification_delay_minutes": 0.27491666666666664,
       "publication_delay_minutes": 0,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1762,11 +1704,11 @@
     {
       "story_id": "wt-d3313802dc7cf6a5",
       "published": false,
-      "source_age_minutes": 1173.9304333333334,
+      "source_age_minutes": 1178.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1173.9304333333334,
+      "queue_age_minutes": 1178.9061833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -1774,11 +1716,11 @@
     {
       "story_id": "wt-bb2365f217251d06",
       "published": false,
-      "source_age_minutes": 1173.9304333333334,
+      "source_age_minutes": 1178.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1173.9304333333334,
+      "queue_age_minutes": 1178.9061833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -1786,11 +1728,11 @@
     {
       "story_id": "wt-c45c4900b735611f",
       "published": false,
-      "source_age_minutes": 1173.9304333333334,
+      "source_age_minutes": 1178.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1173.9304333333334,
+      "queue_age_minutes": 1178.9061833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -1798,11 +1740,11 @@
     {
       "story_id": "wt-b1028f40f5c0c89a",
       "published": false,
-      "source_age_minutes": 1173.9304333333334,
+      "source_age_minutes": 1178.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1173.9304333333334,
+      "queue_age_minutes": 1178.9061833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -1810,11 +1752,11 @@
     {
       "story_id": "wt-3f3e6b2d1bf0e8a7",
       "published": false,
-      "source_age_minutes": 1435.5471,
+      "source_age_minutes": 1440.52285,
       "detection_delay_minutes": 281.9001666666667,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -1822,11 +1764,11 @@
     {
       "story_id": "wt-6347f9739484a7d1",
       "published": false,
-      "source_age_minutes": 1503.1971,
+      "source_age_minutes": 1508.17285,
       "detection_delay_minutes": 349.55016666666666,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -1834,11 +1776,11 @@
     {
       "story_id": "wt-4b5d0962d323432a",
       "published": true,
-      "source_age_minutes": 1834.9304333333334,
+      "source_age_minutes": 1839.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": 2235.7548833333335,
-      "queue_age_minutes": 4054.9304333333334,
+      "queue_age_minutes": 4059.9061833333335,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1846,11 +1788,11 @@
     {
       "story_id": "wt-b2161abe6d0a2603",
       "published": true,
-      "source_age_minutes": 2068.230433333333,
+      "source_age_minutes": 2073.2061833333332,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": 51.606633333333335,
-      "queue_age_minutes": 2068.230433333333,
+      "queue_age_minutes": 2073.2061833333332,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1858,11 +1800,11 @@
     {
       "story_id": "wt-9e4c93f4907aaa42",
       "published": true,
-      "source_age_minutes": 3470.3304333333335,
+      "source_age_minutes": 3475.306183333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": 1453.7066333333332,
-      "queue_age_minutes": 3470.3304333333335,
+      "queue_age_minutes": 3475.306183333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1870,11 +1812,11 @@
     {
       "story_id": "wt-04388fd1699f10c3",
       "published": false,
-      "source_age_minutes": 3347.9304333333334,
+      "source_age_minutes": 3352.9061833333335,
       "detection_delay_minutes": 2194.2835,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -1882,11 +1824,11 @@
     {
       "story_id": "wt-e28250d4074683af",
       "published": false,
-      "source_age_minutes": 5014.930433333333,
+      "source_age_minutes": 5019.9061833333335,
       "detection_delay_minutes": 3861.2835,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -1894,11 +1836,11 @@
     {
       "story_id": "wt-3c1003be3a1a52c8",
       "published": false,
-      "source_age_minutes": 5038.563766666667,
+      "source_age_minutes": 5043.539516666667,
       "detection_delay_minutes": 3884.916833333333,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -1906,49 +1848,37 @@
     {
       "story_id": "wt-46e5c503d6322ccb",
       "published": false,
-      "source_age_minutes": 6094.930433333333,
+      "source_age_minutes": 6099.9061833333335,
       "detection_delay_minutes": 4941.2835,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+    },
+    {
+      "story_id": "wt-87c42d6cf088c08e",
+      "published": true,
+      "source_age_minutes": 6.206183333333334,
+      "detection_delay_minutes": 6.206183333333334,
+      "verification_delay_minutes": 0.22716666666666666,
+      "publication_delay_minutes": 1.1388,
+      "queue_age_minutes": 0,
+      "target_publication_minutes": 60,
+      "news_freshness_score": 97,
+      "freshness_warning": null
     }
   ],
   "freshness_warnings": [
     {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "published": false,
-      "source_age_minutes": 45.93043333333333,
-      "detection_delay_minutes": 0,
-      "verification_delay_minutes": null,
-      "publication_delay_minutes": null,
-      "queue_age_minutes": 133.33641666666668,
-      "target_publication_minutes": 120,
-      "news_freshness_score": 90,
-      "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-    },
-    {
-      "story_id": "wt-a6f6c9c60011b50c",
-      "published": false,
-      "source_age_minutes": 60.93043333333333,
-      "detection_delay_minutes": 0,
-      "verification_delay_minutes": null,
-      "publication_delay_minutes": null,
-      "queue_age_minutes": 568.6041166666666,
-      "target_publication_minutes": 120,
-      "news_freshness_score": 87,
-      "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-    },
-    {
       "story_id": "wt-b5e0a39f46388642",
       "published": true,
-      "source_age_minutes": 4405.7971,
+      "source_age_minutes": 4410.77285,
       "detection_delay_minutes": 3252.150166666667,
       "verification_delay_minutes": 0.20911666666666667,
       "publication_delay_minutes": 376.87696666666665,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1956,11 +1886,11 @@
     {
       "story_id": "wt-e442d6ad81290406",
       "published": true,
-      "source_age_minutes": 2081.9304333333334,
+      "source_age_minutes": 2086.9061833333335,
       "detection_delay_minutes": 928.2835,
       "verification_delay_minutes": 0.17465,
       "publication_delay_minutes": 210.80938333333333,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1968,11 +1898,11 @@
     {
       "story_id": "wt-7ae0b9f22404b684",
       "published": true,
-      "source_age_minutes": 1918.7637666666667,
+      "source_age_minutes": 1923.7395166666668,
       "detection_delay_minutes": 765.1168333333334,
       "verification_delay_minutes": 0.3023666666666667,
       "publication_delay_minutes": 45.3618,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -1980,23 +1910,23 @@
     {
       "story_id": "wt-7587d1bde4d3d0dd",
       "published": false,
-      "source_age_minutes": 269.9304333333333,
+      "source_age_minutes": 274.90618333333333,
       "detection_delay_minutes": 16.420166666666667,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 253.51026666666667,
+      "queue_age_minutes": 258.48601666666667,
       "target_publication_minutes": 120,
-      "news_freshness_score": 44,
+      "news_freshness_score": 43,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
     },
     {
       "story_id": "wt-d80fd849c477e2ad",
       "published": true,
-      "source_age_minutes": 1658.0971,
+      "source_age_minutes": 1663.07285,
       "detection_delay_minutes": 504.4501666666667,
       "verification_delay_minutes": 0.21331666666666665,
       "publication_delay_minutes": 255.74808333333334,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2004,23 +1934,23 @@
     {
       "story_id": "wt-e99510a6e73f0fb1",
       "published": false,
-      "source_age_minutes": 429.6804333333333,
+      "source_age_minutes": 434.65618333333333,
       "detection_delay_minutes": 17.111483333333332,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 412.56895,
+      "queue_age_minutes": 417.5447,
       "target_publication_minutes": 120,
-      "news_freshness_score": 10,
+      "news_freshness_score": 9,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
     },
     {
       "story_id": "wt-edd4484465895b46",
       "published": true,
-      "source_age_minutes": 1452.5971,
+      "source_age_minutes": 1457.57285,
       "detection_delay_minutes": 298.9501666666667,
       "verification_delay_minutes": 0.21806666666666666,
       "publication_delay_minutes": 76.33053333333334,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2028,11 +1958,11 @@
     {
       "story_id": "wt-293fa4edfc2b5a5d",
       "published": true,
-      "source_age_minutes": 3454.9304333333334,
+      "source_age_minutes": 3459.9061833333335,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.20625,
       "publication_delay_minutes": 1438.3066333333334,
-      "queue_age_minutes": 3454.9304333333334,
+      "queue_age_minutes": 3459.9061833333335,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2040,11 +1970,11 @@
     {
       "story_id": "wt-63b6c057c20a2143",
       "published": true,
-      "source_age_minutes": 5794.930433333333,
+      "source_age_minutes": 5799.9061833333335,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.2324,
       "publication_delay_minutes": 3952.6183166666665,
-      "queue_age_minutes": 5794.930433333333,
+      "queue_age_minutes": 5799.9061833333335,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2052,11 +1982,11 @@
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
       "published": true,
-      "source_age_minutes": 1956.9304333333334,
+      "source_age_minutes": 1961.9061833333333,
       "detection_delay_minutes": 803.2835,
       "verification_delay_minutes": 0.26425,
       "publication_delay_minutes": 346.12215,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2064,11 +1994,11 @@
     {
       "story_id": "wt-d175d26e4635ba0a",
       "published": true,
-      "source_age_minutes": 1567.7137666666667,
+      "source_age_minutes": 1572.6895166666666,
       "detection_delay_minutes": 414.0668333333333,
       "verification_delay_minutes": 0.2274,
       "publication_delay_minutes": 160.8183,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2076,11 +2006,11 @@
     {
       "story_id": "wt-972d20af6da2b586",
       "published": true,
-      "source_age_minutes": 3574.9304333333334,
+      "source_age_minutes": 3579.9061833333335,
       "detection_delay_minutes": 2421.2835,
       "verification_delay_minutes": 0.21008333333333334,
       "publication_delay_minutes": 390.2921,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2088,11 +2018,11 @@
     {
       "story_id": "wt-9cca0ad92ad1a84a",
       "published": true,
-      "source_age_minutes": 3154.9304333333334,
+      "source_age_minutes": 3159.9061833333335,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": 0.20871666666666666,
       "publication_delay_minutes": 1129.6449833333334,
-      "queue_age_minutes": 3154.9304333333334,
+      "queue_age_minutes": 3159.9061833333335,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2100,11 +2030,11 @@
     {
       "story_id": "wt-9d87c7944980e87e",
       "published": true,
-      "source_age_minutes": 3454.9304333333334,
+      "source_age_minutes": 3459.9061833333335,
       "detection_delay_minutes": 2301.2835,
       "verification_delay_minutes": 0.16281666666666667,
       "publication_delay_minutes": 377.2612833333333,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2112,11 +2042,11 @@
     {
       "story_id": "wt-7743382a4712f9be",
       "published": true,
-      "source_age_minutes": 4208.863766666666,
+      "source_age_minutes": 4213.839516666667,
       "detection_delay_minutes": 3055.2168333333334,
       "verification_delay_minutes": 0.21611666666666668,
       "publication_delay_minutes": 345.1946,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2124,11 +2054,11 @@
     {
       "story_id": "wt-c87cfdddd07432e2",
       "published": true,
-      "source_age_minutes": 2003.9304333333334,
+      "source_age_minutes": 2008.9061833333333,
       "detection_delay_minutes": 850.2835,
       "verification_delay_minutes": 0.22448333333333334,
       "publication_delay_minutes": 316.75876666666665,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2136,11 +2066,11 @@
     {
       "story_id": "wt-34e360cdb996a299",
       "published": true,
-      "source_age_minutes": 1529.2471,
+      "source_age_minutes": 1534.22285,
       "detection_delay_minutes": 375.60016666666667,
       "verification_delay_minutes": 0.2545,
       "publication_delay_minutes": 315.82075,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2148,11 +2078,11 @@
     {
       "story_id": "wt-d37d76d9fec9dcf1",
       "published": true,
-      "source_age_minutes": 3357.9304333333334,
+      "source_age_minutes": 3362.9061833333335,
       "detection_delay_minutes": 2204.2835,
       "verification_delay_minutes": 0.205,
       "publication_delay_minutes": 271.78535,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2160,11 +2090,11 @@
     {
       "story_id": "wt-45c66ae271691215",
       "published": true,
-      "source_age_minutes": 2226.9304333333334,
+      "source_age_minutes": 2231.9061833333335,
       "detection_delay_minutes": 1073.2835,
       "verification_delay_minutes": 0.21608333333333332,
       "publication_delay_minutes": 271.10673333333335,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2172,11 +2102,11 @@
     {
       "story_id": "wt-9de543ac63864ad7",
       "published": true,
-      "source_age_minutes": 1665.9304333333334,
+      "source_age_minutes": 1670.9061833333333,
       "detection_delay_minutes": 512.2835,
       "verification_delay_minutes": 0.18228333333333332,
       "publication_delay_minutes": 270.84891666666664,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2184,11 +2114,11 @@
     {
       "story_id": "wt-6a7145e6dc679f95",
       "published": true,
-      "source_age_minutes": 1503.7804333333333,
+      "source_age_minutes": 1508.7561833333334,
       "detection_delay_minutes": 350.1335,
-      "verification_delay_minutes": 0.24075,
+      "verification_delay_minutes": 0.2546833333333333,
       "publication_delay_minutes": 241.53045,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2196,11 +2126,11 @@
     {
       "story_id": "wt-9e8076042f86f06d",
       "published": true,
-      "source_age_minutes": 1587.3804333333333,
+      "source_age_minutes": 1592.3561833333333,
       "detection_delay_minutes": 433.7335,
       "verification_delay_minutes": 0.185,
       "publication_delay_minutes": 168.54471666666666,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2208,11 +2138,11 @@
     {
       "story_id": "wt-872323e750684aa1",
       "published": true,
-      "source_age_minutes": 2926.9304333333334,
+      "source_age_minutes": 2931.9061833333335,
       "detection_delay_minutes": 1773.2835,
       "verification_delay_minutes": 0.19311666666666666,
       "publication_delay_minutes": 167.7913,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2220,11 +2150,11 @@
     {
       "story_id": "wt-67083aa272f98b15",
       "published": true,
-      "source_age_minutes": 2614.9304333333334,
+      "source_age_minutes": 2619.9061833333335,
       "detection_delay_minutes": 1461.2835,
       "verification_delay_minutes": 0.2763833333333333,
       "publication_delay_minutes": 120.7145,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2232,11 +2162,11 @@
     {
       "story_id": "wt-e01001c00cf12041",
       "published": true,
-      "source_age_minutes": 2232.1804333333334,
+      "source_age_minutes": 2237.1561833333335,
       "detection_delay_minutes": 1078.5335,
       "verification_delay_minutes": 0.22116666666666668,
       "publication_delay_minutes": 45.6247,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2244,11 +2174,11 @@
     {
       "story_id": "wt-a77b5d9b2935de2a",
       "published": true,
-      "source_age_minutes": 1501.8971,
+      "source_age_minutes": 1506.87285,
       "detection_delay_minutes": 348.25016666666664,
       "verification_delay_minutes": 0.1796,
       "publication_delay_minutes": 15.968133333333334,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2256,11 +2186,11 @@
     {
       "story_id": "wt-9812656e38b0d665",
       "published": true,
-      "source_age_minutes": 1504.9304333333334,
+      "source_age_minutes": 1509.9061833333333,
       "detection_delay_minutes": 351.2835,
       "verification_delay_minutes": 0.22621666666666668,
       "publication_delay_minutes": 1.5334166666666667,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2268,11 +2198,11 @@
     {
       "story_id": "wt-98ff7e403362fdf9",
       "published": true,
-      "source_age_minutes": 1882.8637666666666,
+      "source_age_minutes": 1887.8395166666667,
       "detection_delay_minutes": 729.2168333333333,
       "verification_delay_minutes": 0.27491666666666664,
       "publication_delay_minutes": 0,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2280,11 +2210,11 @@
     {
       "story_id": "wt-d3313802dc7cf6a5",
       "published": false,
-      "source_age_minutes": 1173.9304333333334,
+      "source_age_minutes": 1178.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1173.9304333333334,
+      "queue_age_minutes": 1178.9061833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2292,11 +2222,11 @@
     {
       "story_id": "wt-bb2365f217251d06",
       "published": false,
-      "source_age_minutes": 1173.9304333333334,
+      "source_age_minutes": 1178.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1173.9304333333334,
+      "queue_age_minutes": 1178.9061833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2304,11 +2234,11 @@
     {
       "story_id": "wt-c45c4900b735611f",
       "published": false,
-      "source_age_minutes": 1173.9304333333334,
+      "source_age_minutes": 1178.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1173.9304333333334,
+      "queue_age_minutes": 1178.9061833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2316,11 +2246,11 @@
     {
       "story_id": "wt-b1028f40f5c0c89a",
       "published": false,
-      "source_age_minutes": 1173.9304333333334,
+      "source_age_minutes": 1178.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1173.9304333333334,
+      "queue_age_minutes": 1178.9061833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2328,11 +2258,11 @@
     {
       "story_id": "wt-3f3e6b2d1bf0e8a7",
       "published": false,
-      "source_age_minutes": 1435.5471,
+      "source_age_minutes": 1440.52285,
       "detection_delay_minutes": 281.9001666666667,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2340,11 +2270,11 @@
     {
       "story_id": "wt-6347f9739484a7d1",
       "published": false,
-      "source_age_minutes": 1503.1971,
+      "source_age_minutes": 1508.17285,
       "detection_delay_minutes": 349.55016666666666,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2352,11 +2282,11 @@
     {
       "story_id": "wt-4b5d0962d323432a",
       "published": true,
-      "source_age_minutes": 1834.9304333333334,
+      "source_age_minutes": 1839.9061833333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": 2235.7548833333335,
-      "queue_age_minutes": 4054.9304333333334,
+      "queue_age_minutes": 4059.9061833333335,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2364,11 +2294,11 @@
     {
       "story_id": "wt-b2161abe6d0a2603",
       "published": true,
-      "source_age_minutes": 2068.230433333333,
+      "source_age_minutes": 2073.2061833333332,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": 51.606633333333335,
-      "queue_age_minutes": 2068.230433333333,
+      "queue_age_minutes": 2073.2061833333332,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2376,11 +2306,11 @@
     {
       "story_id": "wt-9e4c93f4907aaa42",
       "published": true,
-      "source_age_minutes": 3470.3304333333335,
+      "source_age_minutes": 3475.306183333333,
       "detection_delay_minutes": 0,
       "verification_delay_minutes": null,
       "publication_delay_minutes": 1453.7066333333332,
-      "queue_age_minutes": 3470.3304333333335,
+      "queue_age_minutes": 3475.306183333333,
       "target_publication_minutes": 60,
       "news_freshness_score": 0,
       "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -2388,11 +2318,11 @@
     {
       "story_id": "wt-04388fd1699f10c3",
       "published": false,
-      "source_age_minutes": 3347.9304333333334,
+      "source_age_minutes": 3352.9061833333335,
       "detection_delay_minutes": 2194.2835,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2400,11 +2330,11 @@
     {
       "story_id": "wt-e28250d4074683af",
       "published": false,
-      "source_age_minutes": 5014.930433333333,
+      "source_age_minutes": 5019.9061833333335,
       "detection_delay_minutes": 3861.2835,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2412,11 +2342,11 @@
     {
       "story_id": "wt-3c1003be3a1a52c8",
       "published": false,
-      "source_age_minutes": 5038.563766666667,
+      "source_age_minutes": 5043.539516666667,
       "detection_delay_minutes": 3884.916833333333,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2424,11 +2354,11 @@
     {
       "story_id": "wt-46e5c503d6322ccb",
       "published": false,
-      "source_age_minutes": 6094.930433333333,
+      "source_age_minutes": 6099.9061833333335,
       "detection_delay_minutes": 4941.2835,
       "verification_delay_minutes": null,
       "publication_delay_minutes": null,
-      "queue_age_minutes": 1153.6469333333334,
+      "queue_age_minutes": 1158.6226833333333,
       "target_publication_minutes": 120,
       "news_freshness_score": 0,
       "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
