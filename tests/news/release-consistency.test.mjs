@@ -11,3 +11,8 @@ test("autonomous new pages update both committed search and taxonomy before publ
   assert.ok(commit > taxonomy && publish > commit);
   assert.match(workflow.slice(commit, workflow.indexOf("\n", commit)), /content\/taxonomy\/site-map\.json/);
 });
+
+test("frequent news cannot cancel an active Pages publication", () => {
+  const workflow = fs.readFileSync(new URL("../../.github/workflows/deploy.yml", import.meta.url), "utf8");
+  assert.match(workflow, /concurrency:\s*\n\s+group: pages\s*\n(?:\s*#.*\n)*\s+cancel-in-progress: false/);
+});
