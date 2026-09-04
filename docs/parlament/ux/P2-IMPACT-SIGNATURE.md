@@ -42,6 +42,8 @@ Der erste Root-Website-Check scheiterte am bereits auf `main` veralteten Suchind
 
 Der anschließende vollständige Root-Build (Run 33861771933) zeigte einen zweiten reproduzierbaren Bestandsfehler: `build-full-knowledge-library.mjs` erzeugte die Bibliothek ohne die in den Kontextfragen verlinkten alten Abschnittsanker. Zeitgleich wurde die bereits geprüfte Korrektur aus PR #358 auf `main` integriert (`3f1d58a96dcbbb1268b46cf322d7651f19c81ad1`). P2 übernimmt diese durch Aktualisierung auf `9ef122a252b68eb8d70b3e678b59b73728542929`; der zwischenzeitliche zusätzliche Generatoransatz wurde vollständig zurückgenommen. Kein Bibliotheksgenerator und kein Kontextfragen-Test verbleibt als P2-Diff. Die vollständige Artefaktprüfung läuft erneut in CI, ohne Ausnahme oder abgeschwächte Linkprüfung.
 
+Nach diesem Abgleich reproduziert `SOURCE_DATE_EPOCH=1787270400 npm run build:search` den aktuellen Bestand von 30.544 URLs ohne jede Dateiänderung. Auch die beiden Root-Suchartefakte sind jetzt exakt auf `main`; der endgültige P2-Diff enthält keine Änderungen am Main-Site-Bestand. Alle zwölf aktuellen Kontextfragen-Tests bestehen.
+
 ## Freigabegrenze
 
 Keine Fachquelle geändert. Keine Evidenzklasse oder eingetretene Wirkung erfunden. Kein Vercel-Aufruf, keine automatische Preview/Deployment-Aktivierung. Die kontoweite rote Release-Kostensperre bleibt unverändert; GitHub-Prüfungen sind keine Production-Veröffentlichung.
