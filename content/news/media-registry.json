@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-03",
+  "updated_at": "2026-09-05",
   "policy": {
     "respect_robots": true,
     "max_items_per_source": 60,
@@ -111,7 +111,13 @@
       "source_id": "bild-access", "publisher_id": "bild", "name": "BILD", "url": "https://www.bild.de/", "source_type": "media_discovery", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": false, "topic": "Politik", "requires_corroboration": true,
       "why_relevant": "Beobachtung substanzieller Nachrichtenhinweise, nicht Übernahme von Aufmerksamkeit oder Zuspitzung als Relevanznachweis.",
       "editorial_context": "Vom Betreiber ausdrücklich für kritische Beobachtung vorgesehen; zentrale Behauptungen bedürfen weiterer Belege. Kein pauschales Urteil über jeden Beitrag.",
-      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Kostenlosen direkten Zugang noch verifizieren. Keine BILDplus-Umgehung." }
+      "access": { "status": "restricted", "cost_usd": 0, "article": "disabled", "terms_url": "https://www.bild.de/rsl.xml", "note": "Die veröffentlichte Really Simple Licensing-Datei untersagt ai-input. Deshalb kein automatischer KI-Analysezugang und keine BILDplus-Umgehung. Relevante Hinweise werden nur über zulässige amtliche und unabhängige Quellen bestätigt." }
+    },
+    {
+      "source_id": "berlin-presseportal", "publisher_id": "land-berlin", "name": "Presseportal des Landes Berlin", "url": "https://www.berlin.de/presse/", "feed_url": "https://www.berlin.de/presse/pressemitteilungen/", "source_type": "html_index", "html_layout": "berlin_press_table", "publisher_kind": "institution", "research_lane": "primary", "source_role": "official_statement", "primary_source": true, "enabled": true, "topic": "Politik", "language": "de", "geography": ["DE", "Berlin"], "frequency_class": "high_frequency", "max_items": 25,
+      "why_relevant": "Amtliche Informationen der Berliner Behörden zu Entscheidungen, Krisenlagen und Verwaltungshandeln liefern Primärbelege für regional und überregional relevante Vorgänge.",
+      "editorial_context": "Amtliche Aussagen der jeweils genannten Behörde, keine unabhängige journalistische Bestätigung. Eine bestätigte Datenveröffentlichung belegt nicht automatisch sämtliche Behauptungen der Angreifer zum Inhalt oder zur Tragweite der Daten.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "html_index": true, "terms_url": "https://www.berlin.de/presse/hilfe/", "note": "Öffentliches, robots-erlaubtes Presseportal. Der Adapter liest ausschließlich Datum, Titel, Behörde und Link aus der aktuellen Ergebnistabelle; keine Suche, Anmeldung, Bilder oder Volltextspiegelung." }
     },
     {
       "source_id": "taz-aktuell", "publisher_id": "taz", "name": "taz", "url": "https://taz.de/", "feed_url": "https://taz.de/rss.xml", "source_type": "media_rss", "publisher_kind": "journalism", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Gesellschaft", "language": "de", "geography": ["DE", "international"],

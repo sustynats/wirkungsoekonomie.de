@@ -38,6 +38,20 @@ export function parseNewsSitemap(raw, source) {
 
 export function parseHtmlIndex(raw, source) {
   if (source.access?.html_index !== true) throw new Error("HTML_INDEX_NOT_AUTHORIZED");
+  if (source.html_layout === "berlin_press_table") {
+    // The public Berlin press portal is an explicitly offered, robots-allowed
+    // index. Read only date, title, authority and link from its result table.
+    return [...String(raw).matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)].slice(0, source.max_items || 30).map((match) => {
+      const cells = [...match[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)].map((cell) => cell[1]);
+      const titleLink = cells[1]?.match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+      const date = text(cells[0], 20).match(/(\d{2})\.(\d{2})\.(\d{4})/);
+      return record(source, {
+        title: titleLink?.[2], url: titleLink?.[1],
+        published_at: date ? `${date[3]}-${date[2]}-${date[1]}T00:00:00+02:00` : null,
+        authority: text(cells[2], 180) || null,
+      });
+    }).filter(Boolean);
+  }
   if (source.html_layout === "pressroom_article_list") {
     // Explicit adapter for the provider's public press-room listing. No images,
     // login, search endpoint or forbidden Atom endpoint is requested.
