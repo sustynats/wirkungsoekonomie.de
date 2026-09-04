@@ -12,6 +12,15 @@
 .portal-subnav a { font-size: .88rem; white-space: normal; }
 .portal-entry-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
 .portal-entry-list a { display: flex; justify-content: space-between; align-items: center; min-height: 64px; padding: 1rem; border: 1px solid var(--line); border-radius: var(--r-card); color: var(--navy); font-weight: 700; }
+.portal-area-visual { padding: clamp(.8rem, 3vw, 1.5rem); border: 1px solid var(--line); border-radius: var(--r-card); background: var(--farbe-flaeche-warm); margin-block: 1.5rem; }
+.portal-area-visual h2 { margin-top: 0; }
+.portal-area-counts, .portal-area-principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: 1rem; }
+.portal-area-counts > div, .portal-area-principles > div { min-width: 0; }
+.portal-area-counts dt, .portal-area-principles dt { font-weight: var(--schriftstaerke-halb); color: var(--farbe-text); }
+.portal-area-counts dd { margin: .25rem 0 0; font-family: var(--schrift-display); font-size: 2rem; color: var(--farbe-text); }
+.portal-area-principles dd { margin: .5rem 0 0; color: var(--farbe-text); }
+.portal-context { margin-block: 1.5rem; padding: 1rem; border: 1px solid var(--line); border-radius: var(--r-card); }
+.portal-context summary { cursor: pointer; min-height: 44px; font-weight: var(--schriftstaerke-halb); }
 .portal-register-views { display: flex; flex-wrap: wrap; gap: .5rem; padding: 1rem 0; }
 .portal-register-views a { padding: .55rem; min-height: 44px; border: 1px solid var(--line); border-radius: var(--r-btn); }
 .portal-register-views a[aria-current] { font-weight: 800; text-decoration-thickness: 3px; }

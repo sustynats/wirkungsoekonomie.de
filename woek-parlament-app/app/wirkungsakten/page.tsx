@@ -6,6 +6,7 @@ import { getPublicRegister } from "@/lib/register";
 import { filterRegister, readRegisterFilters, registerFacets, registerFacetOptions } from "@/lib/register-model";
 import { registerViews } from "@/lib/navigation";
 import { governmentPublicationGatesPass } from "@/lib/government/publication-gates";
+import { PortalSectionHeader } from "@/app/components/PortalLanding";
 
 export const metadata = { title: "Wirkungsakten", description: "Gemeinsames Register veröffentlichter Vorgänge und Analysen. Ebene, Organ, Wirkungsfeld, Richtung, Evidenz und Reifegrad getrennt filtern." };
 
@@ -15,7 +16,7 @@ export default async function RegisterPage({ searchParams }: { searchParams: Pro
   const selected = filterRegister(objects, filters);
   const collection = registerViews.find((view) => view.key === filters.bestand);
   return <div className="shell content-page impact-register">
-    <header className="page-intro"><p className="eyebrow">Ein Register · getrennte Aussagen</p><h1>Wirkungsakten</h1><p className="lead">Veröffentlichte Vorgänge, Wirkungsfälle, Fach- und Missionsakten gemeinsam finden – mit ihren jeweiligen Quellen, Aussagegrenzen und offenen Fragen.</p></header>
+    <PortalSectionHeader eyebrow="Ein Register · getrennte Aussagen" title="Wirkungsakten" lead="Veröffentlichte Vorgänge, Wirkungsfälle, Fach- und Missionsakten gemeinsam finden – mit ihren jeweiligen Quellen, Aussagegrenzen und offenen Fragen." />
     <SamePageQueryForm className="register-filters" aria-label="Wirkungsakten filtern">
       {filters.bestand && <input type="hidden" name="bestand" value={filters.bestand} />}
       <label className="register-query">Titel oder Befund<input name="q" type="search" key={`q:${filters.q ?? ""}`} defaultValue={filters.q ?? ""} /></label>
