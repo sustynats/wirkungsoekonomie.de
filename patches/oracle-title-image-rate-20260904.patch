@@ -1,0 +1,7 @@
+--- a/src/http/apiServer.ts
++++ b/src/http/apiServer.ts
+@@ -110,1 +110,3 @@
+-        enforceRateLimit(request, rateLimit, "news-title-image", 12);
++        // Authenticated transport requests include fetching already-paid jobs.
++        // Cost and single-generation controls remain in the durable adapter.
++        enforceRateLimit(request, rateLimit, "news-title-image", 240);
