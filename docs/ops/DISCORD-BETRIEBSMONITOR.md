@@ -16,6 +16,10 @@ keine kostenpflichtige KI auf. Keine Vercel-Deployments oder neuen Hostingdienst
 - Seit über 45 Minuten kein abgeschlossener Nachrichtenlauf: sofortige Meldung.
 - KI-Fehler, Quellenabrufprobleme, Budget-/Wechselkurssperre und eine seit über
   45 Minuten im Live-Feed fehlende, bereits geprüfte Aktenversion werden erkannt.
+- KI-Meldungen unterscheiden das lokale Eingabelimit (keine Anfrage für die
+  betroffene Akte) von einer HTTP-Fehlerantwort der KI-Schnittstelle und nennen
+  den Zeitpunkt des zugrunde liegenden Laufberichts. Ein unbekannter Fehler wird
+  nicht pauschal als Anbieterausfall bezeichnet; rohe Fehlermeldungen bleiben intern.
 - Eine unveränderte Artikelzahl ist **kein** Ausfall. Zurückstellungen am
   Evidenz-/Relevanzgate werden gezählt, nicht ungeprüft veröffentlicht.
 - Unveränderte bestätigte Störung bleibt still; Behebung erzeugt eine Entwarnung.
