@@ -1,7 +1,521 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T12:21:52.190Z",
+  "updated_at": "2026-09-04T12:36:39.070Z",
   "stories": [
+    {
+      "story_id": "wt-a416364f223ac3fc",
+      "slug": "gardelegen-grossbrand-zerstort-jugendclub-und-vereinsheim-spendenaktion-gestartet-3ac3fc",
+      "title": "Gardelegen: Großbrand zerstört Jugendclub und Vereinsheim – Spendenaktion gestartet",
+      "first_seen": "2026-09-04T12:00:21.000Z",
+      "last_updated": "2026-09-04T12:36:53.285Z",
+      "published_at": "2026-09-04T12:36:53.285Z",
+      "updated_at": "2026-09-04T12:36:53.285Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+          "title": "Gardelegen: Großbrand zerstört Jugendclub und Vereinsheim – Spendenaktion gestartet",
+          "summary": "In Gardelegen sind drei Gebäude bei einem Großbrand zerstört worden – darunter ein Vereinsheim und ein Jugendclub. Nun wurde eine Spendenaktion gestartet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T12:00:21.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b66dbc0a01d1437b36c00416640faae317299476a0595a5fa6806a6e7d6e4458",
+          "source_item_id": "656d144a09cc23c1bf2c2e1add6939a3928cc5a7c6a6ed3515dec47bb9667643",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T12:00:21.000Z",
+          "ingested_at": "2026-09-04T12:06:38.422Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a416364f223ac3fc-v1-claim-1",
+          "story_id": "wt-a416364f223ac3fc",
+          "claim": "In Gardelegen sind ein Vereinsheim und ein Jugendclub bei einem Großbrand vollständig ausgebrannt.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+              "excerpt_hash": "a07a971f4741fb45ed64",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T12:36:53.285Z"
+        },
+        {
+          "claim_id": "wt-a416364f223ac3fc-v1-claim-2",
+          "story_id": "wt-a416364f223ac3fc",
+          "claim": "Die Löscharbeiten waren erst gegen Mittag abgeschlossen.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+              "excerpt_hash": "a07a971f4741fb45ed64",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T12:36:53.285Z"
+        },
+        {
+          "claim_id": "wt-a416364f223ac3fc-v1-claim-3",
+          "story_id": "wt-a416364f223ac3fc",
+          "claim": "Eine Feuerwehrfrau wurde bei dem Großbrand leicht verletzt.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+              "excerpt_hash": "a07a971f4741fb45ed64",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T12:36:53.285Z"
+        },
+        {
+          "claim_id": "wt-a416364f223ac3fc-v1-claim-4",
+          "story_id": "wt-a416364f223ac3fc",
+          "claim": "Die Ursache des Feuers ist nach Angaben der Quelle noch unklar.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+              "excerpt_hash": "def436620384a0729749",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T12:36:53.285Z"
+        },
+        {
+          "claim_id": "wt-a416364f223ac3fc-v1-claim-5",
+          "story_id": "wt-a416364f223ac3fc",
+          "claim": "Nach dem Brand wurde eine Spendenaktion gestartet.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+              "excerpt_hash": "69f99f688db15536c1c3",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T12:36:53.285Z"
+        }
+      ],
+      "event_id": "event-dc0ea6a5d87506732af2",
+      "event_first_seen_at": "2026-09-04T12:06:38.422Z",
+      "event_detected_at": "2026-09-04T12:06:38.422Z",
+      "verification_started_at": "2026-09-04T12:36:39.479Z",
+      "publish_ready_at": "2026-09-04T12:36:53.285Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Ursache des Brandes aufgeklärt wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Behörden oder Feuerwehr nennen eine belastbar bestätigte Brandursache.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4fa563a7dee1972c",
+          "announced_at": "2026-09-04T12:00:21.000Z",
+          "follow_up_date": "2026-09-11T12:36:53.285Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "76f972558505e81e47a2de677c8230af59ec7570c5971d5ab95b43d1b1cdca85",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "In Gardelegen sind nach Angaben der Quelle in der Nacht zu Mittwoch ein Vereinsheim und ein Jugendclub im Osten der Stadt im Altmarkkreis Salzwedel komplett ausgebrannt. Die Löscharbeiten dauerten demnach bis gegen Mittag, und eine Feuerwehrfrau wurde leicht verletzt.\n\nAls Brandort nennt der Bericht das Vereinsheim des Kulturwerk-Ost; das Feuer habe sich von dort auf ein Nebengebäude und den Jugendclub „Mood“ ausgebreitet. Alle drei Gebäude seien vollständig ausgebrannt. Die Ursache sei noch unklar. Außerdem berichtet die Quelle, dass eine Spendenaktion gestartet wurde.",
+      "analysis": {
+        "story_id": "wt-a416364f223ac3fc",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "In Gardelegen sind bei einem Großbrand ein Vereinsheim und ein Jugendclub zerstört worden. Die Ursache des Feuers ist nach der Quelle noch offen, zugleich wurde eine Spendenaktion gestartet.",
+        "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die Zerstörung mehrerer Gebäude in Gardelegen: Ein Vereinsheim und ein Jugendclub brannten vollständig aus, die Löscharbeiten dauerten bis zum Mittag, und eine Feuerwehrfrau wurde leicht verletzt. Für die öffentliche Relevanz spricht weniger die Reichweite als die konkrete materielle Veränderung vor Ort: Räume für Vereine und Jugendarbeit fallen weg, vermutlich vorübergehend oder längerfristig. Daraus kann ein Wirkpfad über eingeschränkte Nutzung, Wiederaufbaukosten und Spendenbedarf entstehen. Ob sich daraus weitere Folgen für Nutzung, Finanzierung oder Ursachenklärung ergeben, bleibt offen. Eine belastbare Einordnung über Brandursache, Schadenshöhe oder Folgewirkungen ist mit der einen Quelle noch nicht möglich.",
+        "why_relevant": "Der Brand verändert vor Ort die Verfügbarkeit von Vereins- und Jugendräumen und löst voraussichtlich Wiederaufbau- und Unterstützungsbedarf aus.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind lokale Vereins- und Jugendangebote sowie Einsatzkräfte; die soziale Infrastruktur vor Ort ist direkt geschädigt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein belastbarer Hinweis auf überlokale Umweltfolgen oder systemische Planet-Wirkungen in der Quelle."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein indirekter Bezug besteht nur über lokale Zivilgesellschaft und Gemeinwesen; ein demokratischer Effekt ist nicht belegt."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Zerstörung der Gebäude kann die Nutzung für Vereins- und Jugendarbeit vorübergehend oder länger einschränken und Wiederaufbaukosten auslösen.",
+        "impact_risks": [
+          "Längere Unterbrechung von Vereins- und Jugendangeboten",
+          "Finanzielle Belastung durch Ersatz- oder Wiederaufbau",
+          "Unsicherheit über Brandursache und mögliche Folgemaßnahmen"
+        ],
+        "mechanisms": [
+          "Sachschaden reduziert unmittelbar verfügbare Räume",
+          "Spenden können einen Teil der Finanzierungslücke schließen",
+          "Ungeklärte Ursache kann weitere Prüfungen oder Sicherungsmaßnahmen auslösen"
+        ],
+        "first_order": [
+          "Verlust der betroffenen Gebäude",
+          "Leichte Verletzung einer Feuerwehrfrau",
+          "Spendenaufruf nach dem Brand"
+        ],
+        "second_order": [
+          "Einschränkungen für lokale Vereins- und Jugendarbeit",
+          "Kosten für Räumung, Sicherung und Wiederaufbau"
+        ],
+        "third_order": [
+          "Mögliche Anpassung von Sicherheits- oder Brandschutzmaßnahmen vor Ort"
+        ],
+        "systemic_relevance": "Der Fall ist lokal begrenzt und hat nach der Quelle keinen erkennbaren Systemeffekt; relevant ist vor allem die Funktion als soziale Infrastruktur im Quartier.",
+        "transformation_potential": "Gering; allenfalls kann der Wiederaufbau zu besseren Schutz- oder Nutzungsentscheidungen führen, dafür gibt es hier aber noch keine Belege.",
+        "resilience": "Offen, ob Spenden und lokale Hilfe den Ausfall der Räume abfedern können; die Quelle nennt nur den Start einer Aktion.",
+        "side_effects": [
+          "Einsatzkräfte wurden gebunden",
+          "Der Ort verliert vorerst nutzbare Gemeinschaftsräume"
+        ],
+        "uncertainties": [
+          "Brandursache ist unklar",
+          "Schadenshöhe und Dauer der Einschränkung sind nicht belegt",
+          "Ausmaß der Spendenwirkung bleibt offen"
+        ],
+        "evidence_level": "einseitig berichtet, aber mit konkreten Textbelegen aus derselben Quelle für den Kernvorfall",
+        "attribution": "Die Zerstörung und der Spendenaufruf werden der MDR-Quelle zugeschrieben; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
+        "watch_next": [
+          "Aufklärung der Brandursache",
+          "Informationen zu Schadenshöhe und Wiederaufbau",
+          "Details zur Spendenaktion"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 11, SDG 4, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "none",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung enthält einen konkreten, aktuellen Sachschaden mit lokal relevanten Folgen für Vereins- und Jugendarbeit; belastbar belegt ist der Kern jedoch nur aus einer Quelle."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "betroffene Gebäude",
+              "value": "drei",
+              "unit": "Gebäude",
+              "context": "Nach der Quelle brannten drei Gebäude vollständig aus.",
+              "claim_id": "wt-a416364f223ac3fc-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "beschaeftigte",
+            "kinder_jugend",
+            "kommunen",
+            "staat"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T12:36:53.285Z",
+          "content_hash": "76f972558505e81e47a2de677c8230af59ec7570c5971d5ab95b43d1b1cdca85",
+          "source_summary": "In Gardelegen sind nach Angaben der Quelle in der Nacht zu Mittwoch ein Vereinsheim und ein Jugendclub im Osten der Stadt im Altmarkkreis Salzwedel komplett ausgebrannt. Die Löscharbeiten dauerten demnach bis gegen Mittag, und eine Feuerwehrfrau wurde leicht verletzt.\n\nAls Brandort nennt der Bericht das Vereinsheim des Kulturwerk-Ost; das Feuer habe sich von dort auf ein Nebengebäude und den Jugendclub „Mood“ ausgebreitet. Alle drei Gebäude seien vollständig ausgebrannt. Die Ursache sei noch unklar. Außerdem berichtet die Quelle, dass eine Spendenaktion gestartet wurde.",
+          "analysis": {
+            "story_id": "wt-a416364f223ac3fc",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "In Gardelegen sind bei einem Großbrand ein Vereinsheim und ein Jugendclub zerstört worden. Die Ursache des Feuers ist nach der Quelle noch offen, zugleich wurde eine Spendenaktion gestartet.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die Zerstörung mehrerer Gebäude in Gardelegen: Ein Vereinsheim und ein Jugendclub brannten vollständig aus, die Löscharbeiten dauerten bis zum Mittag, und eine Feuerwehrfrau wurde leicht verletzt. Für die öffentliche Relevanz spricht weniger die Reichweite als die konkrete materielle Veränderung vor Ort: Räume für Vereine und Jugendarbeit fallen weg, vermutlich vorübergehend oder längerfristig. Daraus kann ein Wirkpfad über eingeschränkte Nutzung, Wiederaufbaukosten und Spendenbedarf entstehen. Ob sich daraus weitere Folgen für Nutzung, Finanzierung oder Ursachenklärung ergeben, bleibt offen. Eine belastbare Einordnung über Brandursache, Schadenshöhe oder Folgewirkungen ist mit der einen Quelle noch nicht möglich.",
+            "why_relevant": "Der Brand verändert vor Ort die Verfügbarkeit von Vereins- und Jugendräumen und löst voraussichtlich Wiederaufbau- und Unterstützungsbedarf aus.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind lokale Vereins- und Jugendangebote sowie Einsatzkräfte; die soziale Infrastruktur vor Ort ist direkt geschädigt."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Kein belastbarer Hinweis auf überlokale Umweltfolgen oder systemische Planet-Wirkungen in der Quelle."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Ein indirekter Bezug besteht nur über lokale Zivilgesellschaft und Gemeinwesen; ein demokratischer Effekt ist nicht belegt."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Zerstörung der Gebäude kann die Nutzung für Vereins- und Jugendarbeit vorübergehend oder länger einschränken und Wiederaufbaukosten auslösen.",
+            "impact_risks": [
+              "Längere Unterbrechung von Vereins- und Jugendangeboten",
+              "Finanzielle Belastung durch Ersatz- oder Wiederaufbau",
+              "Unsicherheit über Brandursache und mögliche Folgemaßnahmen"
+            ],
+            "mechanisms": [
+              "Sachschaden reduziert unmittelbar verfügbare Räume",
+              "Spenden können einen Teil der Finanzierungslücke schließen",
+              "Ungeklärte Ursache kann weitere Prüfungen oder Sicherungsmaßnahmen auslösen"
+            ],
+            "first_order": [
+              "Verlust der betroffenen Gebäude",
+              "Leichte Verletzung einer Feuerwehrfrau",
+              "Spendenaufruf nach dem Brand"
+            ],
+            "second_order": [
+              "Einschränkungen für lokale Vereins- und Jugendarbeit",
+              "Kosten für Räumung, Sicherung und Wiederaufbau"
+            ],
+            "third_order": [
+              "Mögliche Anpassung von Sicherheits- oder Brandschutzmaßnahmen vor Ort"
+            ],
+            "systemic_relevance": "Der Fall ist lokal begrenzt und hat nach der Quelle keinen erkennbaren Systemeffekt; relevant ist vor allem die Funktion als soziale Infrastruktur im Quartier.",
+            "transformation_potential": "Gering; allenfalls kann der Wiederaufbau zu besseren Schutz- oder Nutzungsentscheidungen führen, dafür gibt es hier aber noch keine Belege.",
+            "resilience": "Offen, ob Spenden und lokale Hilfe den Ausfall der Räume abfedern können; die Quelle nennt nur den Start einer Aktion.",
+            "side_effects": [
+              "Einsatzkräfte wurden gebunden",
+              "Der Ort verliert vorerst nutzbare Gemeinschaftsräume"
+            ],
+            "uncertainties": [
+              "Brandursache ist unklar",
+              "Schadenshöhe und Dauer der Einschränkung sind nicht belegt",
+              "Ausmaß der Spendenwirkung bleibt offen"
+            ],
+            "evidence_level": "einseitig berichtet, aber mit konkreten Textbelegen aus derselben Quelle für den Kernvorfall",
+            "attribution": "Die Zerstörung und der Spendenaufruf werden der MDR-Quelle zugeschrieben; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
+            "watch_next": [
+              "Aufklärung der Brandursache",
+              "Informationen zu Schadenshöhe und Wiederaufbau",
+              "Details zur Spendenaktion"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 11, SDG 4, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält einen konkreten, aktuellen Sachschaden mit lokal relevanten Folgen für Vereins- und Jugendarbeit; belastbar belegt ist der Kern jedoch nur aus einer Quelle."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "betroffene Gebäude",
+                  "value": "drei",
+                  "unit": "Gebäude",
+                  "context": "Nach der Quelle brannten drei Gebäude vollständig aus.",
+                  "claim_id": "wt-a416364f223ac3fc-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "kinder_jugend",
+                "kommunen",
+                "staat"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-a416364f223ac3fc-v1-claim-1",
+              "story_id": "wt-a416364f223ac3fc",
+              "claim": "In Gardelegen sind ein Vereinsheim und ein Jugendclub bei einem Großbrand vollständig ausgebrannt.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+                  "excerpt_hash": "a07a971f4741fb45ed64",
+                  "checked_at": "2026-09-04T12:36:53.285Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            },
+            {
+              "claim_id": "wt-a416364f223ac3fc-v1-claim-2",
+              "story_id": "wt-a416364f223ac3fc",
+              "claim": "Die Löscharbeiten waren erst gegen Mittag abgeschlossen.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+                  "excerpt_hash": "a07a971f4741fb45ed64",
+                  "checked_at": "2026-09-04T12:36:53.285Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            },
+            {
+              "claim_id": "wt-a416364f223ac3fc-v1-claim-3",
+              "story_id": "wt-a416364f223ac3fc",
+              "claim": "Eine Feuerwehrfrau wurde bei dem Großbrand leicht verletzt.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+                  "excerpt_hash": "a07a971f4741fb45ed64",
+                  "checked_at": "2026-09-04T12:36:53.285Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            },
+            {
+              "claim_id": "wt-a416364f223ac3fc-v1-claim-4",
+              "story_id": "wt-a416364f223ac3fc",
+              "claim": "Die Ursache des Feuers ist nach Angaben der Quelle noch unklar.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+                  "excerpt_hash": "def436620384a0729749",
+                  "checked_at": "2026-09-04T12:36:53.285Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            },
+            {
+              "claim_id": "wt-a416364f223ac3fc-v1-claim-5",
+              "story_id": "wt-a416364f223ac3fc",
+              "claim": "Nach dem Brand wurde eine Spendenaktion gestartet.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+                  "excerpt_hash": "69f99f688db15536c1c3",
+                  "checked_at": "2026-09-04T12:36:53.285Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T12:36:53.285Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
+              "content_hash": "b66dbc0a01d1437b36c00416640faae317299476a0595a5fa6806a6e7d6e4458"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T12:36:53.285Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a416364f223ac3fc-341e4515c0ed5567-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "341e4515c0ed556792b2cc91236da658a60cc182e680c84872a9bbdf65267826"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a416364f223ac3fc-0a09d3a08b5a9eea-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "0a09d3a08b5a9eea6911c70300519af3c9a58bfbbc19eede72d3c0ad8d3b23a2"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a416364f223ac3fc-822feb783975a2f3-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "822feb783975a2f39b838015cf9c226144484a4223af67bbfcc95915ca3df929"
+        },
+        "source_visual": null,
+        "fingerprint": "6e8e86c4c51d3025d656ea9ec61a353ea23b3249dcccb3b2999540fc766a0b8c",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T12:37:02.216Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-d4ea36d47045ac56",
       "slug": "umspannwerk-wieder-angriff-auf-stromnetz-bekennerbrief-gibt-hinweise-45ac56",
@@ -1742,121 +2256,6 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-04T12:10:35.071Z",
         "status": "generated"
-      }
-    },
-    {
-      "story_id": "wt-a416364f223ac3fc",
-      "slug": "gardelegen-grossbrand-zerstort-jugendclub-und-vereinsheim-spendenaktion-gestartet-3ac3fc",
-      "title": "Gardelegen: Großbrand zerstört Jugendclub und Vereinsheim – Spendenaktion gestartet",
-      "first_seen": "2026-09-04T12:00:21.000Z",
-      "last_updated": "2026-09-04T12:00:21.000Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/stendal/gardelegen/jugendzentrum-jugendclub-spenden-108,brand-vereinsheim-100.html",
-          "title": "Gardelegen: Großbrand zerstört Jugendclub und Vereinsheim – Spendenaktion gestartet",
-          "summary": "In Gardelegen sind drei Gebäude bei einem Großbrand zerstört worden – darunter ein Vereinsheim und ein Jugendclub. Nun wurde eine Spendenaktion gestartet.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T12:00:21.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "b66dbc0a01d1437b36c00416640faae317299476a0595a5fa6806a6e7d6e4458",
-          "source_item_id": "656d144a09cc23c1bf2c2e1add6939a3928cc5a7c6a6ed3515dec47bb9667643",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T12:00:21.000Z",
-          "ingested_at": "2026-09-04T12:06:38.422Z",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-a416364f223ac3fc-claim-01",
-          "story_id": "wt-a416364f223ac3fc",
-          "claim": "Gardelegen: Großbrand zerstört Jugendclub und Vereinsheim – Spendenaktion gestartet: In Gardelegen sind drei Gebäude bei einem Großbrand zerstört worden – darunter ein Vereinsheim und ein Jugendclub. Nun wurde eine Spendenaktion gestartet.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:21:52.190Z"
-        }
-      ],
-      "content_hash": "76f972558505e81e47a2de677c8230af59ec7570c5971d5ab95b43d1b1cdca85",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS"
-      ],
-      "quality_retry_count": 2,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-04T12:21:52.190Z",
-      "event_first_seen_at": "2026-09-04T12:06:38.422Z",
-      "event_detected_at": "2026-09-04T12:06:38.422Z",
-      "event_id": "event-dc0ea6a5d87506732af2",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 62,
-        "public_relevance": "hoch",
-        "topics": [
-          "Gesellschaft"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [
-          "implementation"
-        ],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 21.519833333333334,
-        "detection_delay_minutes": 6.290366666666666,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 15.229466666666667,
-        "target_publication_minutes": 60,
-        "news_freshness_score": 91,
-        "freshness_warning": null
       }
     },
     {
@@ -62134,5 +62533,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T12:06:38.422Z"
+  "public_updated_at": "2026-09-04T12:36:39.070Z"
 }
