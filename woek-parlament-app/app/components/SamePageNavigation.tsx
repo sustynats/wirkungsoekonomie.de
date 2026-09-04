@@ -10,6 +10,11 @@ export function SamePageStateLink(props: SamePageStateLinkProps) {
   return <Link {...props} scroll={false} />;
 }
 
+/** A prefiltered destination on a different page keeps normal page scrolling. */
+export function CrossPageQueryLink(props: SamePageStateLinkProps) {
+  return <Link {...props} scroll={true} />;
+}
+
 type SamePageQueryFormProps = Omit<FormHTMLAttributes<HTMLFormElement>, "action" | "method" | "onSubmit"> & {
   children: ReactNode;
 };

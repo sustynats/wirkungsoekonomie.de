@@ -11,6 +11,7 @@ import { SiteAnalyticsTracker } from "@/app/components/SiteAnalyticsTracker";
 import { subscriptionDeliveryReady } from "@/lib/wirkungsradar/subscriptions";
 import "./globals.css";
 import "./impact-signature.css";
+import "./register.css";
 import "./navigation.css";
 
 export const metadata: Metadata = {

@@ -1,8 +1,10 @@
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
+import { execFileSync } from "node:child_process";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { canonicalPortalHref, portalRedirects, portalNavigation, allNavigationItems } from "../../lib/navigation.ts";
+import { filterRegister } from "../../lib/register-model.ts";
 
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PORTAL_PLAYWRIGHT_MODULE ?? "playwright");
@@ -10,6 +12,10 @@ const base = process.env.PORTAL_BASE_URL ?? "http://127.0.0.1:3024";
 const output = process.env.PORTAL_BROWSER_REPORT_DIR ?? "/tmp/woek-portal-p1-preview";
 mkdirSync(output, { recursive: true });
 const results = { redirects: [], routes: [], browser: [], errors: [] };
+const registerProof = JSON.parse(execFileSync(process.execPath, ["--conditions=react-server", "--import", "tsx", "scripts/quality/check-register.ts"], {
+  encoding: "utf8", maxBuffer: 16 * 1024 * 1024,
+  env: { ...process.env, NODE_PATH: join(process.cwd(), "node_modules/next/dist/compiled") },
+}));
 const response = await fetch(`${base}/sitemap.xml`);
 assert.equal(response.status, 200);
 const sitemap = await response.text();
@@ -52,6 +58,60 @@ try {
   results.signatures = [];
   const axeSource = readFileSync(process.env.PORTAL_AXE_MODULE ?? require.resolve("axe-core/axe.min.js"), "utf8");
   const decisionPaths = [...paths].filter((path) => path.startsWith("/entscheidungen/"));
+  results.register = [];
+  for (const width of [375, 1440]) {
+    await page.setViewportSize({ width, height: 960 });
+    await page.goto(`${base}/wirkungsakten`, { waitUntil: "networkidle" });
+    const readIds = () => page.locator("[data-register-id]").evaluateAll((rows) => rows.map((row) => row.getAttribute("data-register-id")).sort());
+    const expectedIds = registerProof.objects.map((item) => item.id).sort();
+    assert.deepEqual(await readIds(), expectedIds, "every source object in the browser");
+    const rows = await page.locator("[data-register-id]").evaluateAll((rows) => rows.map((row) => ({ id: row.getAttribute("data-register-id"), words: [...new Intl.Segmenter("de", { granularity: "word" }).segment(row.innerText)].filter((word) => word.isWordLike).length })));
+    for (const row of rows) assert.ok(row.words <= 60, `${row.id}: ${row.words} words`);
+    assert.equal(await page.locator(".register-filters select").count(), 6);
+    const counts = await page.locator("[data-register-direction] dd").allTextContents();
+    assert.equal(counts.reduce((sum, count) => sum + Number(count), 0), expectedIds.length);
+    assert.equal(await page.locator('[data-register-direction="offen"] dd').count(), 1);
+    await page.addScriptTag({ content: axeSource });
+    const a11y = await page.evaluate(async () => (await window.axe.run({ include: [[".impact-register"]] }, { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] } })).violations.map(({ id, nodes }) => ({ id, targets: nodes.map((node) => node.target) })));
+    assert.deepEqual(a11y, [], "P3 full register accessibility");
+    const selectedFilters = { ebene: "bund", organ: "bundesregierung" };
+    const selectedIds = filterRegister(registerProof.objects, selectedFilters).map((item) => item.id).sort();
+    assert.ok(selectedIds.length > 0 && selectedIds.length < expectedIds.length);
+    await page.locator('select[name="ebene"]').selectOption(selectedFilters.ebene);
+    await page.locator('select[name="organ"]').selectOption(selectedFilters.organ);
+    const submit = page.getByRole("button", { name: "Filter anwenden" });
+    await submit.evaluate((el) => window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 120, behavior: "instant" }));
+    await submit.focus();
+    const filterScrollBefore = await page.evaluate(() => scrollY);
+    await page.keyboard.press("Enter");
+    await page.waitForURL((url) => url.searchParams.get("ebene") === "bund" && url.searchParams.get("organ") === "bundesregierung");
+    await page.waitForFunction((count) => document.querySelectorAll("[data-register-id]").length === count, selectedIds.length);
+    assert.deepEqual(await readIds(), selectedIds);
+    assert.equal(await submit.evaluate((el) => document.activeElement === el), true);
+    assert.ok(filterScrollBefore > 0);
+    assert.ok(Math.abs(await page.evaluate(() => scrollY) - filterScrollBefore) < 8, "filter submit must preserve the viewport");
+    await page.reload({ waitUntil: "networkidle" });
+    assert.deepEqual(await readIds(), selectedIds, "shareable URL survives reload");
+    await page.goBack({ waitUntil: "networkidle" });
+    await page.waitForURL((url) => !url.searchParams.has("ebene"));
+    await page.waitForFunction((count) => document.querySelectorAll("[data-register-id]").length === count, expectedIds.length);
+    assert.deepEqual(await readIds(), expectedIds);
+    assert.equal(await page.locator('select[name="ebene"]').inputValue(), "");
+    await page.goForward({ waitUntil: "networkidle" });
+    await page.waitForURL((url) => url.searchParams.get("organ") === "bundesregierung");
+    await page.waitForFunction((count) => document.querySelectorAll("[data-register-id]").length === count, selectedIds.length);
+    assert.deepEqual(await readIds(), selectedIds);
+    assert.equal(await page.locator('select[name="organ"]').inputValue(), "bundesregierung");
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+    await page.screenshot({ path: join(output, `register-filtered-${width}.png`) });
+    results.register.push({ width, objects: expectedIds.length, previous_objects: registerProof.previous_objects, rows, filtered_objects: selectedIds.length, a11y, url_reload_back_forward_focus: "PASS", distribution: "PASS" });
+  }
+  for (const bestand of ["wirkungsfaelle", "entscheidungen", "fachanalysen", "regierung", "eu"]) {
+    await page.goto(`${base}/wirkungsakten/bestand?bestand=${bestand}`, { waitUntil: "networkidle" });
+    assert.ok(await page.locator("h1").count());
+    assert.equal(await page.getByRole("link", { name: "Zum gemeinsamen Wirkungsakten-Register", exact: true }).count(), 1);
+    assert.equal(await page.locator('nav[aria-label="Bestandsansichten"] a[aria-current="page"]').count(), 1);
+  }
   for (const width of [375, 1440]) {
     await page.setViewportSize({ width, height: 960 });
     await page.goto(`${base}/wirkungsakten?bestand=entscheidungen`, { waitUntil: "networkidle" });

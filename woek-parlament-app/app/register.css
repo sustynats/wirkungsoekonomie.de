@@ -1,0 +1,30 @@
+.register-filters { padding: var(--abstand-l); border: 1px solid var(--farbe-linie); border-radius: var(--radius-karte); background: var(--farbe-flaeche-warm); }
+.register-filters label { display: grid; gap: .4rem; font-weight: 700; min-width: 0; }
+.register-filters input, .register-filters select { width: 100%; min-width: 0; min-height: var(--tippziel-min); padding: .6rem; border: 1px solid var(--farbe-text-sekundaer); border-radius: var(--radius-klein); background: var(--farbe-flaeche-karte); color: var(--farbe-text); font: inherit; font-size: .9rem; }
+.register-query { margin-bottom: 1rem; }
+.register-filters fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.register-filters legend { margin-bottom: .75rem; font-weight: 700; }
+.register-facet-grid { display: grid; gap: .9rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.register-filter-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-top: 1rem; }
+.register-result-count { margin-block: 1.5rem; }
+.register-distribution { padding-block: 1rem; margin-bottom: 2rem; }
+.register-distribution h2 { font-size: 1.25rem; }
+.register-distribution-bar { display: flex; gap: 3px; height: 1rem; margin-block: 1rem; background: var(--farbe-flaeche-warm); }
+.register-distribution-bar span { flex-basis: 0; min-width: 2px; border: 1px solid var(--farbe-text); }
+.register-direction--positive { background: var(--farbe-status-positiv); }
+.register-direction--risk { background: var(--farbe-status-negativ); }
+.register-direction--ambivalent { background: linear-gradient(90deg, var(--farbe-status-negativ) 50%, var(--farbe-status-positiv) 50%); }
+.register-direction--conditional { background: var(--farbe-status-bedingt); }
+.register-direction--protection { background: var(--farbe-text); }
+.register-direction--neutral { background: var(--farbe-flaeche-karte); }
+.register-direction--open { background: repeating-linear-gradient(135deg, transparent, transparent 3px, var(--farbe-status-offen) 3px, var(--farbe-status-offen) 5px); }
+.register-distribution dl { display: flex; gap: .65rem 1.25rem; flex-wrap: wrap; margin: 0; }
+.register-distribution dl div { display: flex; gap: .5rem; }
+.register-distribution dd { margin: 0; font-weight: 800; }
+.register-rows { display: grid; gap: 1rem; }
+.impact-register-row { margin: 0; }
+.register-method-note { margin-top: 2rem; }
+.register-method-note summary { cursor: pointer; font-weight: 700; padding-block: .75rem; }
+@media (min-width: 1100px) { .register-facet-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+@media (forced-colors: active) { .register-distribution-bar span { border-color: CanvasText; } }
+@media print { .register-filters, .register-filter-actions { display: none; } }

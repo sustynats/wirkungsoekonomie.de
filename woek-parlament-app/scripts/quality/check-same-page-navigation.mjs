@@ -37,6 +37,7 @@ gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", /<SamePageQueryForm className="gove
 
 gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", !/SamePageStateLink|scroll=\{false\}/.test(caseCard), "case-card cross-page links must keep framework default scrolling");
 gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", !/SamePageStateLink|scroll=\{false\}/.test(layout), "global cross-page navigation must keep framework default scrolling");
+gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", /function CrossPageQueryLink[\s\S]*?<Link \{\.\.\.props\} scroll=\{true\}/.test(contract), "prefiltered cross-page destinations must retain normal page scrolling");
 gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", /<Link href=\{`\/quellen\?\$\{new URLSearchParams/.test(sourcesPage), "result pagination must remain normal page navigation");
 gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", /<html lang="de" data-scroll-behavior="smooth">/.test(layout), "Next.js must be told about the intentional global smooth-scroll CSS");
 
@@ -47,10 +48,15 @@ for (const file of tsxFiles(appRoot)) {
   for (const match of contents.matchAll(/<button\b([^>]*)>/gs)) {
     gate("NON_SUBMIT_UI_BUTTONS_EXPLICIT_TYPE", /\btype\s*=/.test(match[1]), `${name} contains a button without explicit type`);
   }
-  for (const match of contents.matchAll(/<(Link|SamePageStateLink)\b[\s\S]*?>/g)) {
+  for (const match of contents.matchAll(/<(Link|SamePageStateLink|CrossPageQueryLink)\b[\s\S]*?>/g)) {
     const [tag, component] = match;
     const hasQueryTarget = /href\s*=\s*(?:["'][^"']*\?|\{`[^`]*\?)/.test(tag);
     if (!hasQueryTarget || component === "SamePageStateLink") continue;
+    if (component === "CrossPageQueryLink") {
+      // These institutional pages navigate TO the register; they do not filter themselves.
+      gate("CROSS_PAGE_NAV_DEFAULT_SCROLL_UNCHANGED", name.startsWith("app/ebenen/") && /href="\/wirkungsakten\?/.test(tag), `${name} misclassifies a same-page state change`);
+      continue;
+    }
     const isResultPagination = name === "app/quellen/page.tsx" && /\/quellen\?/.test(tag);
     gate("SAME_PAGE_QUERY_NAV_PRESERVES_SCROLL", isResultPagination, `${name} contains an unclassified query Link outside the shared contract`);
   }

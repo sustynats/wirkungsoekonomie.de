@@ -150,6 +150,7 @@ export default function SearchPage() {
         <p className="lead">Suchen Sie nach einem Thema, einer Drucksache oder einer parlamentarischen Entscheidung. Die Treffer zeigen getrennt, was amtlich belegt, was bereits fachlich eingeordnet und was noch offen ist.</p>
       </header>
       <ParliamentSearch cases={cases} analyses={analyses} governmentImpacts={governmentImpacts} />
+      <p><Link href="/wirkungsakten">Das gemeinsame Register einschließlich EU-Fällen nach Titel, Befund und sechs Facetten durchsuchen</Link></p>
       <p className="page-return"><Link href="/">← Zur Portalstartseite</Link></p>
     </div>
   );
