@@ -6,6 +6,8 @@ import { join } from "node:path";
 import { canonicalPortalHref, portalRedirects, portalNavigation, allNavigationItems } from "../../lib/navigation.ts";
 import { filterRegister } from "../../lib/register-model.ts";
 import { verifyHome } from "./check-home-browser.mjs";
+import { verifyDecisionDepth } from "./check-decision-depth-browser.mjs";
+import { verifyDecisionText } from "./check-decision-text-preservation.mjs";
 
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PORTAL_PLAYWRIGHT_MODULE ?? "playwright");
@@ -52,6 +54,7 @@ for (const path of ["/pruefstandard/transparenz/datenbetrieb", "/autopilot/statu
 
 const browser = await chromium.launch({ headless: true });
 try {
+  results.decisionText = await verifyDecisionText({ browser, base, output });
   const context = await browser.newContext({ reducedMotion: "reduce" });
   const page = await context.newPage();
   page.on("pageerror", (error) => results.errors.push(error.message));
@@ -60,6 +63,7 @@ try {
   const axeSource = readFileSync(process.env.PORTAL_AXE_MODULE ?? require.resolve("axe-core/axe.min.js"), "utf8");
   results.home = await verifyHome({ page, base, output, axeSource });
   const decisionPaths = [...paths].filter((path) => path.startsWith("/entscheidungen/"));
+  results.decisionDepth = await verifyDecisionDepth({ page, base, output, axeSource, paths: decisionPaths });
   results.register = [];
   for (const width of [375, 1440]) {
     await page.setViewportSize({ width, height: 960 });

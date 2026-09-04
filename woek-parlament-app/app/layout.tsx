@@ -13,6 +13,7 @@ import "./globals.css";
 import "./impact-signature.css";
 import "./register.css";
 import "./portal-home.css";
+import "./decision-depth.css";
 import "./navigation.css";
 
 export const metadata: Metadata = {

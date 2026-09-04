@@ -1,0 +1,74 @@
+/* P5: existing tokens, three disclosure depths, no new semantic color. */
+.decision-page--depths { padding-block: var(--abstand-l); }
+.decision-reader-controls { display: flex; gap: .35rem; flex-wrap: wrap; align-items: center; justify-content: flex-end; }
+.decision-reader-controls > span { margin-right: .35rem; font-size: var(--groesse-klein); }
+.decision-reader-controls button { min-height: 44px; padding: .5rem .8rem; border: 1px solid var(--farbe-linie); border-radius: var(--radius-karte); color: var(--farbe-text); background: var(--farbe-flaeche-karte); font: inherit; cursor: pointer; }
+.decision-reader-controls button[aria-pressed="true"] { border-color: var(--navy); color: var(--paper); background: var(--navy); text-decoration: underline; text-underline-offset: .2em; }
+.decision-reader[data-reader-mode="verstaendlich"] .reader-specialist,
+.decision-reader[data-reader-mode="fachlich"] .reader-understandable { display: none; }
+.decision-tier-one { max-width: 72rem; }
+.decision-tier-one .decision-header { padding-block: var(--abstand-m); }
+.decision-tier-one h1 { max-width: 42ch; font-size: clamp(1.7rem, 3vw, 2.5rem); overflow-wrap: anywhere; }
+.decision-tier-one .record-context { flex-wrap: wrap; }
+.decision-key-finding { margin-block: var(--abstand-m); padding: var(--abstand-m); border-left: .25rem solid var(--navy); background: var(--farbe-flaeche-karte); }
+.decision-key-finding p { margin: 0 0 .4rem; }
+.decision-key-finding > p:not(.eyebrow) { font-weight: 700; font-size: 1.1rem; }
+.decision-key-finding > a { font-size: var(--groesse-klein); }
+.decision-short-intro { max-width: 75ch; }
+.decision-chain { margin-block: var(--abstand-l); }
+.decision-chain h2, .decision-references h2, .decision-rail h2, .decision-procedure h2 { font-size: 1.15rem; }
+.decision-chain ol { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem; list-style: none; padding: 0; }
+.decision-chain li { min-width: 0; padding: .8rem; border: 1px solid var(--farbe-linie); border-radius: var(--radius-karte); }
+.decision-chain li.is-open { border: 1px dashed var(--farbe-text-sekundaer); background: repeating-linear-gradient(135deg, transparent, transparent 8px, rgb(122 135 152 / 7%) 8px, rgb(122 135 152 / 7%) 10px); }
+.decision-chain h3 { margin: 0; font: 700 .9rem/1.4 var(--sans); overflow-wrap: anywhere; }
+.decision-chain li p, .chain-evidence, .decision-chain-boundary { font-size: .8rem; line-height: 1.5; }
+.decision-chain li p { margin-block: .4rem; }
+.chain-evidence { font-weight: 700; }
+.decision-references { padding-bottom: var(--abstand-m); }
+.decision-references p { font-size: .8rem; }
+.decision-references ul { display: flex; flex-wrap: wrap; list-style: none; gap: .35rem; padding: 0; }
+.decision-references li { font-size: .75rem; border: 1px solid var(--farbe-linie); border-radius: .25rem; background: var(--farbe-flaeche-karte); }
+.decision-references li > a, .decision-references li > span { display: flex; align-items: center; gap: .15rem; min-height: 32px; padding: .25rem .5rem; }
+.decision-references .is-mapped { border-color: var(--navy); }
+.decision-references .is-unmapped { color: var(--farbe-text-sekundaer); background: transparent; }
+.decision-law-references { border-left: .2rem solid var(--gold); padding-left: .7rem; }
+.decision-law-references h3 { font-size: .9rem; }
+.decision-law-references li { border-color: var(--gold); }
+.decision-depth-layout { display: grid; gap: var(--abstand-l); align-items: start; }
+.decision-depth-main, .decision-depth-main section, .decision-rail { min-width: 0; }
+.decision-depth-main [hidden] { display: none !important; }
+.decision-depth-main .decision-view-nav { grid-template-columns: 1fr; }
+.decision-depth-main .decision-view-nav > div { display: flex; flex-wrap: wrap; }
+.decision-depth-main .decision-view-nav a { min-height: 44px; display: inline-flex; align-items: center; }
+.decision-depth-main .decision-view-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: .25em; }
+.decision-depth-main .review-deep-dive { padding-inline: 0; }
+.decision-transparency { margin-top: var(--abstand-l); border: 1px solid var(--farbe-linie); border-radius: var(--radius-karte); padding: var(--abstand-m); }
+.decision-transparency > summary { cursor: pointer; min-height: 44px; font-weight: 700; }
+.decision-transparency .complete-publication-source { padding-inline: 0; }
+.decision-rail { display: grid; gap: var(--abstand-m); }
+.decision-rail .decision-process-meta { display: grid; grid-template-columns: 1fr; gap: var(--abstand-s); margin: 0; padding: var(--abstand-m); background: var(--farbe-flaeche-karte); border: 1px solid var(--farbe-linie); border-radius: var(--radius-karte); }
+.decision-rail .decision-status { padding: 0; background: transparent; border: 0; color: var(--farbe-text); }
+.decision-rail .decision-status dt, .decision-rail .decision-status dd { color: var(--farbe-text); }
+.decision-rail .decision-status > p { color: var(--farbe-text-sekundaer); }
+.decision-rail .decision-status dl { border-top-color: var(--farbe-linie); }
+.decision-rail .decision-status dt, .decision-rail .decision-status dd, .decision-rail-actions p { font-size: .8rem; }
+.decision-rail-actions { display: grid; gap: .7rem; padding: var(--abstand-m); border: 1px solid var(--farbe-linie); border-radius: var(--radius-karte); }
+.decision-rail-actions > a { min-height: 44px; display: flex; align-items: center; }
+.decision-rail-actions p { margin: 0; }
+.decision-question-ring { display: flex; align-items: center; gap: .6rem; margin: 0; }
+.decision-question-ring svg { width: 5rem; }
+.decision-procedure ol { display: flex; flex-wrap: wrap; gap: 1rem; padding: 0; list-style: none; }
+.decision-procedure li { display: grid; gap: .4rem; border-top: .15rem solid var(--navy); padding-top: .5rem; }
+.decision-procedure li.is-open { border-top-style: dashed; }
+@media (min-width: 960px) {
+  .decision-depth-layout { grid-template-columns: minmax(0, 1fr) 17rem; }
+  .decision-rail { position: sticky; top: 1rem; }
+}
+@media (max-width: 640px) {
+  .decision-chain ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .decision-reader-controls { justify-content: flex-start; }
+  .decision-depth-main .complete-publication-meta { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .decision-page--depths *, .decision-page--depths *::before, .decision-page--depths *::after { scroll-behavior: auto; animation: none; transition: none; }
+}
