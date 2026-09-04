@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
 import vm from "node:vm";
+import { selectContextualQuestions } from "../../assets/js/contextual-questions.js";
 
 const app = fs.readFileSync("assets/js/news-pwa.js", "utf8");
 const offer = app.slice(app.indexOf("  function initializePushOffer()"), app.indexOf("  async function toggleNotifications()"));
@@ -115,16 +116,11 @@ test("connection errors stay visible in the dismissible offer", async () => {
 });
 
 test("generic glossary questions are absent only from Wirkungsticker routes", () => {
-  const main = fs.readFileSync("assets/js/main.js", "utf8");
-  const code = main.slice(main.indexOf("function getContextualQuestions()"), main.indexOf("function injectContextualQuestions()"));
-  for (const path of ["/wirkungsticker", "/wirkungsticker/", "/wirkungsticker/story/", "/wirkungsticker/quellen/rbb/"]) {
-    const result = vm.runInNewContext(`${code}\ngetContextualQuestions();`, { window: { location: { pathname: path } } });
+  for (const path of ["/wirkungsticker", "/wirkungsticker/", "/wirkungsticker/story/", "/wirkungsticker/story/index.html", "/wirkungsticker/quellen/rbb/"]) {
+    const result = selectContextualQuestions({ path, title: "Energiewende und Gesundheit", override: [{ label: "Eine Frage", href: "/fragen/" }] });
     assert.equal(result.length, 0);
   }
-  const glossary = vm.runInNewContext(`${code}\ngetContextualQuestions();`, {
-    window: { location: { pathname: "/glossar/wirkung/" } },
-    document: { title: "Wirkung" }, mainElement: { textContent: "Wirkung" },
-    relatedQuestionLink: (...args) => args,
-  });
+  const glossary = selectContextualQuestions({ path: "/begriffe/energiewende/", title: "Energiewende" });
   assert.ok(glossary.length > 0);
+  assert.ok(selectContextualQuestions({ path: "/news/" }).length > 0);
 });
