@@ -1,7 +1,236 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T02:51:36.455Z",
+  "updated_at": "2026-09-04T03:36:28.411Z",
   "stories": [
+    {
+      "story_id": "wt-c87cfdddd07432e2",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-81a99700de773714-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-81a99700de773714-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-81a99700de773714-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sorte-e10-irankrieg-treibt-benzinpreis-auf-hochststand-7432e2",
+      "title": "Sorte E10: Irankrieg treibt Benzinpreis auf Höchststand",
+      "source_summary": "Nach dem Wiederaufflammen des Irankriegs hat der Preis für Superbenzin der Sorte E10 laut der Meldung einen Höchststand erreicht. Genannt wird ein bundesweiter Tagesdurchschnitt von 2,215 Euro pro Liter am Mittwoch; der bisherige Rekord liege bei 2,203 Euro aus dem März 2022, wie der ADAC auf Anfrage mitteilte. Die Meldung ordnet ein, dass es sich um einen nominalen Rekord handelt und inflationsbereinigt Benzin früher schon teurer war.\n\nAls weitere Gründe nennt die Quelle steigende Rohölpreise infolge der erneuten Eskalation sowie Niedrigwasser am Rhein, das die Transportkosten erhöhe. Außerdem heißt es, E10 sei die günstigste gängige Benzinsorte in Deutschland und in der Regel 5 bis 6 Cent billiger als Super E5. Eine Neuauflage des Tankrabatts habe die Bundesregierung bislang abgelehnt.",
+      "summary": "E10 hat laut der Meldung einen neuen nominellen Höchststand erreicht. Als Treiber nennt die Quelle den wieder aufgeflammten Irankrieg, höhere Rohölpreise und gestiegene Transportkosten wegen Niedrigwasser.",
+      "detail_summary": "Gesichert ist zunächst nur die Preisangabe: Die Meldung nennt für E10 einen bundesweiten Tagesdurchschnitt von 2,215 Euro je Liter und ordnet das als neuen nominalen Rekord ein. Für die Einordnung verweist sie auf den ADAC und auf den alten Rekord von 2,203 Euro aus dem März 2022. Relevant ist das, weil Kraftstoffpreise direkt Haushalte, Unternehmen und Logistik betreffen und sich rasch in weitere Preise übersetzen können. Der mögliche Wirkpfad läuft über teurere Rohölkosten und höhere Transportkosten bei Niedrigwasser. Offen bleibt in dieser Quellenlage, wie stark und wie lange der Preisschub anhält und ob er sich in den kommenden Tagen wieder abschwächt. Eine belastbare Wirkungsbewertung über den unmittelbaren Preisimpuls hinaus ist mit dem vorliegenden Material noch nicht möglich.",
+      "why_relevant": "Der Bericht beschreibt einen neuen Preisrekord bei E10 und nennt mehrere Preistreiber mit möglichem Durchschlag auf Mobilität, Transport und Verbraucherpreise.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Treibstoffpreise treffen Autofahrer, Pendler und Transportkosten direkt; der Effekt ist kurzfristig und breit, aber hier nur als Preisimpuls belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Meldung betrifft fossile Kraftstoffpreise, liefert aber keine direkte Aussage zu Emissionen, Verbrauchsänderungen oder Klimawirkungen."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein demokratischer Bezug ergibt sich nur indirekt über mögliche Entlastungs- und Preisdruckdebatten; ein institutioneller Effekt ist nicht belegt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "E10-Tagesdurchschnitt",
+            "value": "2,215",
+            "unit": "Euro pro Liter",
+            "context": "gemeldeter bundesweiter Durchschnitt am Mittwoch"
+          },
+          {
+            "label": "Bisheriger Rekord",
+            "value": "2,203",
+            "unit": "Euro pro Liter",
+            "context": "ADAC-Wert aus dem März 2022"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "verbraucherinnen",
+          "staat"
+        ],
+        "timeline": [
+          {
+            "date": "2022-03",
+            "label": "Bisheriger Rekord laut ADAC"
+          }
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-03T08:11:00.000Z",
+      "last_updated": "2026-09-04T03:38:02.536Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-4a6d367a382907820710",
+      "source_published_at": "2026-09-03T08:11:00.000Z",
+      "published_at": "2026-09-04T03:38:02.536Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der bundesweite E10-Durchschnitt in den nächsten Tagen wieder unter den gemeldeten Höchststand fällt.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "ADAC-Tagesdurchschnitt für E10 je Liter",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b0e7d85009226494",
+          "announced_at": "2026-09-03T08:11:00.000Z",
+          "follow_up_date": "2026-09-11T03:38:02.536Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/wirtschaft/beitrag/2026/09/berlin-brandenburg-benzinpreise-e10-teuer-hoechststand-irankrieg.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T08:11:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-34e360cdb996a299",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-34e360cdb996a299-6660135348f0ba40-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-34e360cdb996a299-6660135348f0ba40-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-34e360cdb996a299-6660135348f0ba40-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "france-agriculture-production-sees-economic-hit-from-heatwaves-96a299",
+      "title": "France agriculture production sees economic hit from heatwaves",
+      "source_summary": "France 24 berichtet über wirtschaftliche Folgen der jüngsten Hitzewellen in Frankreich. Die Meldung beschreibt, dass die Hitze und Dürre nach Angaben von Behörden die landwirtschaftliche Produktion stark gedrückt hätten. Genannt werden zwei bezifferte Folgen: Der vom Agrarsektor erzeugte Wohlstand solle im laufenden Jahr um 8% sinken, und die Folgekosten für die französische Wirtschaft würden 2026 auf 0,1 Prozentpunkte Wachstum geschätzt.\n\nDie Quelle nennt keine unabhängige zweite Bestätigung und verweist nicht auf einen vollständigen amtlichen Bericht im Textausschnitt. Offene Punkte bleiben damit die genaue Methodik der Schätzung, der betrachtete Zeitraum und die Frage, welche Teilbereiche der Landwirtschaft besonders betroffen sind.",
+      "summary": "Frankreichs jüngste Hitzewellen haben laut einer Meldung die Landwirtschaft wirtschaftlich belastet. Genannt werden ein Rückgang des agrarischen Wertschöpfungsbeitrags um 8% und ein Wachstumsabzug von 0,1 Prozentpunkten für 2026.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die bezifferte Schätzung, dass Hitze und Dürre in Frankreich die landwirtschaftliche Produktion gedrückt haben sollen. Zusätzlich nennt die Meldung einen erwarteten Rückgang des vom Agrarsektor erzeugten Wohlstands um 8% im Jahresverlauf sowie Kosten für die französische Wirtschaft von 0,1 Prozentpunkten Wachstum im Jahr 2026. Das ist relevant, weil es nicht nur ein Wetterereignis beschreibt, sondern einen quantifizierten Übergang von Klimastress zu Einkommens- und Wachstumseffekten. Der Wirkpfad verläuft über Produktionsausfälle in der Landwirtschaft zu geringerer Wertschöpfung und möglichen Folgekosten für das gesamtwirtschaftliche Wachstum. Mögliche weitere Folgen wären Druck auf Preise, Einkommen und Investitionsspielräume in betroffenen Regionen. Die Evidenz bleibt jedoch auf eine einzelne journalistische Quelle begrenzt; Methodik, Datengrundlage und mögliche Gegenprüfungen sind im gelieferten Material nicht sichtbar.",
+      "why_relevant": "Die Meldung verbindet ein aktuelles Hitzewellenereignis mit konkret bezifferten wirtschaftlichen Folgen für einen systemrelevanten Sektor und mit einer makroökonomischen Wachstumswirkung.",
+      "topic": [
+        "Gesundheit",
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Landwirtschaft betrifft Einkommen, Versorgung und Beschäftigung; Hitze- und Dürreschäden können Ernten, Erlöse und regionale Stabilität beeinträchtigen."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "rationale": "Der Vorgang ist direkt mit Hitzewellen und Dürre verknüpft und zeigt einen materiellen Klimafolgenpfad in der Realwirtschaft."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung berührt staatliche Korrekturfähigkeit über Agrar- und Klimapolitik, ohne selbst einen demokratischen Prozess zu verändern."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Rückgang sektoraler Wertschöpfung",
+            "value": "8%",
+            "unit": "Prozent",
+            "context": "Erwarteter Rückgang im laufenden Jahr laut Meldung"
+          },
+          {
+            "label": "Wachstumseffekt 2026",
+            "value": "0.1",
+            "unit": "Prozentpunkte",
+            "context": "Geschätzter Abzug vom französischen Wachstum"
+          }
+        ],
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "staat",
+          "verbraucherinnen"
+        ],
+        "timeline": [
+          {
+            "date": "2026",
+            "label": "Erwarteter Wachstumseffekt"
+          }
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "risiko",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-03T16:05:41.000Z",
+      "last_updated": "2026-09-04T03:37:06.255Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-89b1f66c8058426180f1",
+      "source_published_at": "2026-09-03T16:05:41.000Z",
+      "published_at": "2026-09-04T03:37:06.255Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260903-france-agriculture-production-sees-economic-hit-from-heatwaves",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:05:41.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-d37d76d9fec9dcf1",
       "title_image": {
