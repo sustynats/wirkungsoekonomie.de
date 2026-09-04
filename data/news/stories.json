@@ -17066,11 +17066,11 @@
     {
       "story_id": "wt-c15cb7a9f3b72c35",
       "slug": "einkommensteuerreform-beschlossen-b72c35",
-      "title": "Einkommensteuerreform beschlossen",
+      "title": "Regierung beschließt Entwurf zur Einkommensteuerreform",
       "first_seen": "2026-09-02T09:29:17.000Z",
-      "last_updated": "2026-09-03T07:44:09.616Z",
+      "last_updated": "2026-09-03T23:31:00.000Z",
       "published_at": "2026-09-03T07:44:09.616Z",
-      "updated_at": "2026-09-03T07:44:09.616Z",
+      "updated_at": "2026-09-03T23:31:00.000Z",
       "topic": [
         "Politik"
       ],
@@ -17108,12 +17108,12 @@
       "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
       "published": true,
       "analysis_status": "veröffentlicht",
-      "current_version": 1,
+      "current_version": 2,
       "analysis": {
         "story_id": "wt-c15cb7a9f3b72c35",
         "summary": "Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen. Eine Ex-ante-Einordnung ist möglich, Wirkungen sind noch nicht belegt.",
         "why_relevant": "Breite Entlastung, verfügbare Einkommen und Subventionsabbau betreffen Verteilung, Staatsfinanzen und Anreize.",
-        "status": "beschlossen",
+        "status": "Entwurf",
         "analysis_type": "ex_ante",
         "human": {
           "relevance": "hoch",
@@ -17252,12 +17252,86 @@
             }
           ],
           "source_summary": "Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen. Vorgesehen sind höhere Beträge beim Kindergeld, beim Grund- und Kinderfreibetrag sowie beim Arbeitnehmer-Pauschbetrag. Der Einkommensteuertarif soll im Bereich zwischen 17.800 und 70.600 Euro abgeflacht werden. Die Maßnahmen sollen 2027 beginnen und ab 2028 vollständig gelten; das genannte Entlastungsvolumen liegt bei rund zehn Milliarden Euro pro Jahr.\n\nDas Kindergeld soll je Kind und Monat von 259 Euro auf 267 Euro im Jahr 2027 und 272 Euro im Jahr 2028 steigen. Genannt werden außerdem höhere Kinder- und Grundfreibeträge sowie ein Arbeitnehmer-Pauschbetrag von 1.430 Euro. Zur Gegenfinanzierung nennt die Quelle Änderungen am Reichensteuersatz und den Abbau einzelner Vergünstigungen. Unter anderem sollen die Absetzbarkeit von Handwerkerleistungen sinken und der Pauschsteuersatz für Minijobs steigen. Ein Rechenbeispiel beschreibt für eine Familie mit zwei Kindern ab 2028 eine jährliche Entlastung von mehr als 600 Euro."
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-03T23:31:00.000Z",
+          "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
+          "source_summary": "Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen. Vorgesehen sind höhere Beträge beim Kindergeld, beim Grund- und Kinderfreibetrag sowie beim Arbeitnehmer-Pauschbetrag. Der Einkommensteuertarif soll im Bereich zwischen 17.800 und 70.600 Euro abgeflacht werden. Die Maßnahmen sollen 2027 beginnen und ab 2028 vollständig gelten; das genannte Entlastungsvolumen liegt bei rund zehn Milliarden Euro pro Jahr.\n\nDas Kindergeld soll je Kind und Monat von 259 Euro auf 267 Euro im Jahr 2027 und 272 Euro im Jahr 2028 steigen. Genannt werden außerdem höhere Kinder- und Grundfreibeträge sowie ein Arbeitnehmer-Pauschbetrag von 1.430 Euro. Zur Gegenfinanzierung nennt die Quelle Änderungen am Reichensteuersatz und den Abbau einzelner Vergünstigungen. Unter anderem sollen die Absetzbarkeit von Handwerkerleistungen sinken und der Pauschsteuersatz für Minijobs steigen. Ein Rechenbeispiel beschreibt für eine Familie mit zwei Kindern ab 2028 eine jährliche Entlastung von mehr als 600 Euro.",
+          "analysis": {
+            "story_id": "wt-c15cb7a9f3b72c35",
+            "summary": "Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen. Eine Ex-ante-Einordnung ist möglich, Wirkungen sind noch nicht belegt.",
+            "why_relevant": "Breite Entlastung, verfügbare Einkommen und Subventionsabbau betreffen Verteilung, Staatsfinanzen und Anreize.",
+            "status": "Entwurf",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Verfügbare Einkommen können Haushalte direkt betreffen; Verteilungsdaten fehlen."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Subventionsabbau kann Umweltanreize berühren; Art der Subventionen ist nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Steuerpolitik berührt Fairness, Haushaltsprioritäten und Korrekturfähigkeit."
+            },
+            "importance": "mittel",
+            "impact_potential": "Potenzial liegt in Entlastung, Nachfrageeffekten und veränderten Anreizen; tatsächliche Wirkung bleibt offen.",
+            "impact_risks": [
+              "Ungleiche Entlastung, Mitnahmeeffekte oder Zielkonflikte bei Haushalts- und Klimazielen."
+            ],
+            "mechanisms": [
+              "Änderung von Steuerlast, verfügbaren Einkommen, Subventionen und Kapitalflüssen."
+            ],
+            "first_order": [
+              "Beschlossener Regierungsentwurf als politischer Output, noch keine Wirkung."
+            ],
+            "second_order": [
+              "Mögliche Änderungen bei Konsum, Sparen, Investitionen und Verteilung."
+            ],
+            "third_order": [
+              "Mögliche Rückwirkungen auf Fiskalspielräume, soziale Resilienz und Transformationspfade."
+            ],
+            "systemic_relevance": "Steuern wirken systemisch über Haushalte, Unternehmen und Staat; Details entscheiden über Richtung und Stärke.",
+            "transformation_potential": "Mittel, falls Subventionsabbau Anreize strukturell verschiebt; ohne Details offen.",
+            "resilience": "Kann Haushaltsspielräume von Bürgern stärken, aber Fiskalresilienz ist ohne Zahlen nicht bewertbar.",
+            "side_effects": [
+              "Mögliche Nachfrage-, Preis- und Verteilungsfolgen sind nicht quantifiziert."
+            ],
+            "uncertainties": [
+              "Volltext, Tarife, Verteilungswirkung, Subventionsliste und Gegenfinanzierung fehlen."
+            ],
+            "evidence_level": "Ein Primärquellen-Claim der Bundesregierung; Kontext laut Metadaten in Originalquelle zu prüfen.",
+            "attribution": "Ex ante keine Zurechnung; Wirkung erst über Indikatoren, Zeitverlauf und Vergleichsdaten prüfbar.",
+            "watch_next": [
+              "Gesetzentwurf, parlamentarische Änderungen, Verteilungsrechnung, Haushalts- und Evaluationsdaten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG und DNS allgemein: Armut, Ungleichheit, Arbeit, nachhaltige Finanzpolitik."
+            ],
+            "publication_recommendation": true
+          },
+          "correction": "Korrektur des Verfahrensstands: Beschlossen wurde der Regierungsentwurf, nicht das endgültige Gesetz. Deshalb lautet der Stand „Entwurf“. Titel und Status wurden präzisiert; die frühere Version bleibt im Verlauf dokumentiert.",
+          "source_versions": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/einkommensteuerreform-2027-2451192",
+              "content_hash": "08b186c00776867d5ed5bf550ee7dcd72d35b516ee25de0393bad4822af1bad5"
+            }
+          ],
+          "provider": "Redaktionelle Statuskorrektur nach Originalquellenprüfung"
         }
       ],
       "publication_history": [
         {
           "version": 1,
           "published_at": "2026-09-03T07:44:09.616Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-03T23:31:00.000Z",
           "source_count": 1
         }
       ],
@@ -17302,7 +17376,18 @@
         "reassessment": true,
         "fresh": false
       },
-      "source_summary": "Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen. Vorgesehen sind höhere Beträge beim Kindergeld, beim Grund- und Kinderfreibetrag sowie beim Arbeitnehmer-Pauschbetrag. Der Einkommensteuertarif soll im Bereich zwischen 17.800 und 70.600 Euro abgeflacht werden. Die Maßnahmen sollen 2027 beginnen und ab 2028 vollständig gelten; das genannte Entlastungsvolumen liegt bei rund zehn Milliarden Euro pro Jahr.\n\nDas Kindergeld soll je Kind und Monat von 259 Euro auf 267 Euro im Jahr 2027 und 272 Euro im Jahr 2028 steigen. Genannt werden außerdem höhere Kinder- und Grundfreibeträge sowie ein Arbeitnehmer-Pauschbetrag von 1.430 Euro. Zur Gegenfinanzierung nennt die Quelle Änderungen am Reichensteuersatz und den Abbau einzelner Vergünstigungen. Unter anderem sollen die Absetzbarkeit von Handwerkerleistungen sinken und der Pauschsteuersatz für Minijobs steigen. Ein Rechenbeispiel beschreibt für eine Familie mit zwei Kindern ab 2028 eine jährliche Entlastung von mehr als 600 Euro."
+      "source_summary": "Die Bundesregierung hat den Entwurf eines Einkommensteuerreformgesetzes 2027 beschlossen. Vorgesehen sind höhere Beträge beim Kindergeld, beim Grund- und Kinderfreibetrag sowie beim Arbeitnehmer-Pauschbetrag. Der Einkommensteuertarif soll im Bereich zwischen 17.800 und 70.600 Euro abgeflacht werden. Die Maßnahmen sollen 2027 beginnen und ab 2028 vollständig gelten; das genannte Entlastungsvolumen liegt bei rund zehn Milliarden Euro pro Jahr.\n\nDas Kindergeld soll je Kind und Monat von 259 Euro auf 267 Euro im Jahr 2027 und 272 Euro im Jahr 2028 steigen. Genannt werden außerdem höhere Kinder- und Grundfreibeträge sowie ein Arbeitnehmer-Pauschbetrag von 1.430 Euro. Zur Gegenfinanzierung nennt die Quelle Änderungen am Reichensteuersatz und den Abbau einzelner Vergünstigungen. Unter anderem sollen die Absetzbarkeit von Handwerkerleistungen sinken und der Pauschsteuersatz für Minijobs steigen. Ein Rechenbeispiel beschreibt für eine Familie mit zwei Kindern ab 2028 eine jährliche Entlastung von mehr als 600 Euro.",
+      "news_status": "corrected",
+      "corrections": [
+        {
+          "at": "2026-09-03T23:31:00.000Z",
+          "version": 2,
+          "previous_status": "beschlossen",
+          "status": "Entwurf",
+          "note": "Korrektur des Verfahrensstands: Beschlossen wurde der Regierungsentwurf, nicht das endgültige Gesetz. Deshalb lautet der Stand „Entwurf“. Titel und Status wurden präzisiert; die frühere Version bleibt im Verlauf dokumentiert.",
+          "source_url": "https://www.bundesregierung.de/breg-de/aktuelles/einkommensteuerreform-2027-2451192"
+        }
+      ]
     },
     {
       "story_id": "wt-b650cd3f5b6f8e90",
