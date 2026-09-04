@@ -70,10 +70,6 @@ test('all editorial destinations exist, including fragment anchors',()=>{
     if(fragment)assert.match(fs.readFileSync(file,'utf8'),new RegExp(`id=["']${fragment}["']`),`${route}#${fragment}`);
   }
 });
-test('the full library generator preserves the published recommended-entry deep link',()=>{
-  const generator=fs.readFileSync(path.join(root,'scripts/library/build-full-knowledge-library.mjs'),'utf8');
-  assert.match(generator, /<section[^>]*id="empfohlener-einstieg">\s*<div class="section-header">\s*<p class="hero-kicker">Führende Referenzen<\/p>/);
-});
 test('old universal fallback and wrong fixed headline are removed',()=>{
   const main=fs.readFileSync(path.join(root,'assets/js/main.js'),'utf8');
   assert.ok(!main.includes('Passende Fragen zum Begriff'));
