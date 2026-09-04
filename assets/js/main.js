@@ -5124,7 +5124,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function buttonLabel(button, saved, item = currentItem()) {
-    button.textContent = saved ? uiText.saveRemove : uiText.saveAdd;
+    button.textContent = saved ? (item.type === "Wirkungsnachricht" ? uiText.saveSavedStatus : uiText.saveRemove) : uiText.saveAdd;
     button.setAttribute("aria-pressed", String(saved));
     button.setAttribute("aria-label", saved ? `${uiText.saveAriaRemove}: ${item.title}` : `${uiText.saveAriaAdd}: ${item.title}`);
     button.classList.toggle("is-saved", saved);
@@ -5170,6 +5170,12 @@ const WirkungsraumLayer = (() => {
     });
   }
 
+  function refreshResumedSaveButtons() {
+    refreshSaveButtons();
+    // Recheck after the browser has restored its frozen page/document state.
+    if (typeof window.requestAnimationFrame === "function") window.requestAnimationFrame(refreshSaveButtons);
+  }
+
   function initContentSaveButtons() {
     document.querySelectorAll("button[data-wirkungsraum-save-url]").forEach((button) => {
       const url = comparablePath(button.dataset.wirkungsraumSaveUrl);
@@ -5184,8 +5190,14 @@ const WirkungsraumLayer = (() => {
       bindSaveButton(button, () => item);
     });
     document.addEventListener("wirkungsraum:changed", refreshSaveButtons);
-    window.addEventListener("pageshow", refreshSaveButtons);
+    window.addEventListener("pageshow", refreshResumedSaveButtons);
     window.addEventListener("storage", refreshSaveButtons);
+    // Installed mobile apps can resume an existing document without reloading
+    // or sending another pageshow. Read the shared store again on activation.
+    window.addEventListener("focus", refreshResumedSaveButtons);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") refreshResumedSaveButtons();
+    });
   }
 
   function renderCollectionPanel(panel, item) {

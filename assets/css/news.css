@@ -935,6 +935,27 @@
 
 .news-saved-link { margin: 0 0 0.8rem; }
 
+.news-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.news-card__actions .btn {
+  min-height: 44px;
+  padding: 0.65rem 0.9rem;
+}
+
+.news-card__actions .news-share { min-width: 0; }
+.news-card__actions .news-share__button { border-color: var(--wt-line); }
+.news-card__actions .news-share__status {
+  color: var(--wt-green-dark);
+  overflow-wrap: anywhere;
+  flex-basis: 100%;
+}
+
 .news-reader-actions {
   display: flex;
   flex-wrap: wrap;

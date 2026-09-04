@@ -158,6 +158,36 @@ test("save controls reuse the existing store and update all instances", () => {
   assert.equal(a.hidden, false);
 });
 
+test("return, foregrounding and cross-tab changes refresh existing bookmark buttons", () => {
+  const main = fs.readFileSync("assets/js/main.js", "utf8");
+  const code = main.slice(main.indexOf("  const saveControls = new Map();"), main.indexOf("  function renderCollectionPanel("));
+  const saved = new Set(), events = new Map(), documentEvents = new Map(), frames = [];
+  const item = { id: "wirkungsticker/a/", url: "/wirkungsticker/a/", title: "A" };
+  const context = {
+    document: { visibilityState: "visible", querySelectorAll: () => [], addEventListener: (name, fn) => documentEvents.set(name, fn) },
+    window: { addEventListener: (name, fn) => events.set(name, fn), requestAnimationFrame: (fn) => frames.push(fn) },
+    savedPathSet: () => saved, itemSavedByPath: (s) => saved.has(s.id),
+    buttonLabel: (button, value) => { button.saved = value; },
+  };
+  vm.runInNewContext(code, context);
+  const button = { addEventListener() {} };
+  context.bindSaveButton(button, () => item);
+  context.initContentSaveButtons();
+  assert.equal(button.saved, false);
+  saved.add(item.id); events.get("pageshow")({ persisted: true });
+  assert.equal(button.saved, true);
+  saved.clear(); frames.shift()();
+  assert.equal(button.saved, false, "re-reads state after frozen document restoration");
+  saved.add(item.id); events.get("focus")();
+  assert.equal(button.saved, true);
+  saved.clear(); documentEvents.get("visibilitychange")();
+  assert.equal(button.saved, false);
+  saved.add(item.id); events.get("storage")();
+  assert.equal(button.saved, true);
+  saved.clear(); documentEvents.get("wirkungsraum:changed")();
+  assert.equal(button.saved, false);
+});
+
 test("generator includes reusable save controls and reader hooks; list preserves entry state", () => {
   const build = fs.readFileSync("scripts/news/build.mjs", "utf8");
   assert.match(build, /data-news-reader="detail"/);
