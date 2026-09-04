@@ -12,7 +12,7 @@ import { createTitleImagePipeline, publicTitleImage } from "../../scripts/news/t
 import { renderTitleImageFromStory } from "../../scripts/news/title-image/index.mjs";
 import { checkEditorialAsset, detectedWords, VISUAL_GATE_VERSION } from "../../scripts/news/title-image/quality.mjs";
 import { backfillTitleImages } from "../../scripts/news/title-image/backfill.mjs";
-import { setGeneratedDocument } from "../../scripts/news/title-image/chrome-render.mjs";
+import { setGeneratedDocument, cleanupChromeProfile } from "../../scripts/news/title-image/chrome-render.mjs";
 
 const STORY = { story_id: "wt-1234567890abcdef", title: "Neue Netzinfrastruktur", source_summary: "Die Netzagentur berichtet über ein neues Verfahren für den Ausbau der Stromnetze. Die vorgesehene Regelung betrifft die Planung und Genehmigung zusätzlicher Stromleitungen.", topic: ["Energie"], claims: [], analysis: { status: "Entwurf", analysis_type: "ex_ante", human: { relevance: "mittel" } } };
 const MODEL = { type: "image", job_type: C.model, display_name: C.model_name, params: [{ name: "aspect_ratio", enum: ["16:9"] }, { name: "resolution", enum: ["2k"] }] };
@@ -154,6 +154,15 @@ test("large inline originals use bounded CDP frames and reconstruct exactly",asy
 });
 test("CDP document construction fails closed when browser evaluation fails",async()=>{
   await assert.rejects(setGeneratedDocument(async()=>({exceptionDetails:{}}),"frame","<svg/>"),/CHROME_DOCUMENT_INVALID/);
+});
+test("Linux profile cleanup retries and cannot discard a completed image",async()=>{
+  const directory=path.join(os.tmpdir(),"wt-title-cdp-test"),warnings=[];
+  await cleanupChromeProfile(directory,{remove:async(file,options)=>{
+    assert.equal(file,directory);assert.equal(options.maxRetries,10);assert.equal(options.retryDelay,50);
+    throw Object.assign(new Error("busy"),{code:"ENOTEMPTY"});
+  },warn:value=>warnings.push(value)});
+  assert.deepEqual(warnings,["CHROME_PROFILE_CLEANUP_DEFERRED"]);
+  await assert.rejects(cleanupChromeProfile(os.tmpdir()),/CHROME_PROFILE_PATH_INVALID/);
 });
 test("public image metadata excludes prompts, credentials, private paths and arbitrary URLs",()=>{
   const result=publicTitleImage({mode:"editorial",prompt:"secret",source_visual:{file:"/private/secret"},og:{url:"https://evil.example/x"}});
