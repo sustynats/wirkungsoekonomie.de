@@ -14,6 +14,7 @@ Frischer Branch nach dem vollständig grünen P5-Merge, exakte Ausgangsbasis `01
 | Regierungsbereiche im Datenaufbau | Dieselbe Abschnittsüberschrift; der bisherige Text bleibt exakt als Lead erhalten, Datenlücke sichtbar. Kein erfundener Monitor. |
 | Keine Datenänderung | Zahlen für Radar, Register und Reifestufen ausschließlich aus `portalStand()`; keine Bewertung aus Partei, Text, Datum oder Quellenanzahl. |
 | Reproduzierbarer 320-px-Überlauf | Lange Beschriftungen der kompakten Wirkungssignatur liefen über ihre Grid-Zelle hinaus. `minmax(0, 1fr)`, `min-width: 0` und echter Wortumbruch beheben die Ursache; kein Abschneiden/Verstecken von Text und kein gelockerter Test. |
+| Linux-/Schriftmetriken-Regressionsschutz | Der erste CI-Browserlauf `33891306679` meldete weiterhin `/wirkungsakten@320`. Lange Materialitäts-Chips dürfen nun auf eine neue Zeile wechseln und vollständig umbrechen; Filter-Labels verwenden ebenfalls eine schrumpfbare Grid-Spalte. Das Gate prüft zusätzlich jeden vollständigen Chip auf internen Überlauf und speichert im Fehlerfall Maße und Screenshot. Kein kosmetisches `overflow: hidden`. |
 
 `Offen` bleibt eigene Kategorie. Sachsen-Anhalts vollständiges **Prüfpaket** ist kein Gesamturteil über ein Land; Berlin/MV bleiben Materialitätsreviews. Register-Reifestufen zählen Akten, niemals eingetretene Wirkungen. Die drei Prüfstandard-Achsen übernehmen wortgleich die bereits veröffentlichte Legende, ohne Gesamtnote.
 

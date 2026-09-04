@@ -72,7 +72,24 @@ export async function verifyAreas({ browser, page, base, output, axeSource }) {
       assert.notEqual(await disclosure.getAttribute("open"), null);
       assert.equal(await disclosure.locator("p").first().isVisible(), true);
     }
-    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, route + "@" + width);
+    const geometry = await page.evaluate(() => ({
+      viewport: innerWidth, document: document.documentElement.scrollWidth,
+      overflowing: [...document.querySelectorAll("body *")].flatMap(node => {
+        const rect = node.getBoundingClientRect();
+        if (!rect.width || (rect.right <= innerWidth + 1 && rect.left >= -1 && node.scrollWidth <= node.clientWidth + 1)) return [];
+        const style = getComputedStyle(node);
+        return [{ tag: node.tagName, class: node.className, text: node.textContent.slice(0, 160), left: rect.left, right: rect.right, client: node.clientWidth, scroll: node.scrollWidth, font: style.font, grid: style.gridTemplateColumns }];
+      }),
+    }));
+    if (geometry.document > width) {
+      writeFileSync(join(output, "area-overflow-" + width + ".json"), JSON.stringify({ route, ...geometry }, null, 2) + "\n");
+      await page.screenshot({ path: join(output, "area-overflow-" + width + ".png") });
+    }
+    assert.equal(geometry.document > width, false, JSON.stringify({ route, ...geometry }));
+    if (route === "/wirkungsakten") {
+      const clippedChips = await page.locator(".impact-register-row .chip").evaluateAll(nodes => nodes.filter(node => node.scrollWidth > node.clientWidth + 1).map(node => node.textContent));
+      assert.deepEqual(clippedChips, [], "complete materiality labels must fit independently of OS font metrics");
+    }
     await page.addScriptTag({ content: axeSource });
     const a11y = await page.evaluate(async () => (await window.axe.run({ include: [["main"]] }, { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] } })).violations.map(({ id, nodes }) => ({ id, targets: nodes.map(node => node.target) })));
     assert.deepEqual(a11y, [], route + " accessibility@" + width);

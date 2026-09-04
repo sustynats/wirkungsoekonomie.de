@@ -49,4 +49,8 @@ test("compact signature text wraps in narrow register rows instead of being clip
   const css = readFileSync("app/impact-signature.css", "utf8");
   assert.match(css, /\.impact-signature--compact dd \{[^}]*grid-template-columns: auto minmax\(0, 1fr\)/);
   assert.match(css, /\.impact-signature--compact dt, \.impact-signature--compact dd > span \{ min-width: 0; overflow-wrap: anywhere;/);
+  const register = readFileSync("app/register.css", "utf8");
+  assert.match(register, /\.register-filters label \{[^}]*grid-template-columns: minmax\(0, 1fr\)/);
+  assert.match(register, /\.impact-register-row \.case-card-topline \{ flex-wrap: wrap;/);
+  assert.match(register, /\.impact-register-row \.chip \{ max-width: 100%; min-width: 0; overflow-wrap: anywhere;/);
 });
