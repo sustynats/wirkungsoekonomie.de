@@ -1,7 +1,83 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T12:36:39.070Z",
+  "updated_at": "2026-09-04T13:21:25.210Z",
   "stories": [
+    {
+      "story_id": "wt-5547189d2645384a",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-b8c8ece83cc36995-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-d52c3acd5e7e8b6e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-59e708eaed0d93f5-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
+      "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+      "source_summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen hat es in Gevelsberg einen SEK-Einsatz gegeben. Laut WDR traf die Polizei den gesuchten Mann dort nicht an. Der Beitrag beschreibt außerdem, dass die Polizei europaweit nach einem Mann aus Gevelsberg fahndet, Jahrgang 1977, dessen Name dem WDR vorliege. Unklar bleibt nach Darstellung des Berichts, ob er tatsächlich der Verfasser der Bekennerschreiben ist.\n\nIm Umfeld des Umspannwerks in Dormagen wurden demnach selbst gebaute Abschussvorrichtungen entdeckt, die unter einer Hochspannungsleitung standen. Die Polizei bewertet die Konstruktionen als mögliches Mittel zum Angriff auf das Stromnetz. Der WDR verweist zudem darauf, dass es ähnliche Fälle in Bergheim und Brandenburg gegeben habe. Über Schäden an der Anlage oder einen Stromausfall für die Bevölkerung wird in dem Text nichts als eingetreten berichtet.",
+      "summary": "In Gevelsberg lief nach dem Dormagener Sabotageverdacht ein SEK-Einsatz, ohne dass die Polizei den gesuchten Mann dort antraf. Der WDR meldet zudem Funde und Fahndungshintergründe rund um mögliche Angriffe auf das Stromnetz.",
+      "detail_summary": "Gesichert aus dem vorliegenden Bericht ist vor allem der SEK-Einsatz in Gevelsberg und dass der dort gesuchte Mann nach Angaben des WDR nicht angetroffen wurde. Der Beitrag ordnet den Vorgang in den bereits bekannten Sabotageverdacht am Umspannwerk in Dormagen ein und nennt dort gefundene Abschussvorrichtungen unter einer Hochspannungsleitung. Zusätzlich berichtet er von einer europaweiten Fahndung nach einem Mann aus Gevelsberg, Jahrgang 1977, ohne die Identität oder Täterschaft abschließend zu klären. Für die öffentliche Relevanz spricht der Bezug zu kritischer Infrastruktur und die Möglichkeit weiterer Ermittlungs- und Schutzmaßnahmen. Ein Wirkpfad wäre, dass die Suche nach dem Verdächtigen und die Prüfung der Fundstücke die Gefährdungslage für Stromnetz-Anlagen verändert. Ob daraus bereits konkrete technische, rechtliche oder operative Folgen entstehen, bleibt offen und ist im Material nicht belegt.",
+      "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Strominfrastruktur und eine europaweite Fahndung; beides kann Ermittlungen, Schutzmaßnahmen und öffentliche Sicherheitslage beeinflussen.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind mögliche Stromversorgung, Sicherheitsbehörden und Anwohner; bei kritischer Infrastruktur können auch indirekte Folgen für Versorgung und Schutz entstehen."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Ein direkter Umweltbezug wird im Material nicht belegt; allenfalls indirekt über Energieinfrastruktur und mögliche Schadensvermeidung."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Vorgang berührt staatlichen Schutz kritischer Infrastruktur und Ermittlungsfähigkeit; belastbare Auswirkungen auf demokratische Prozesse sind daraus noch nicht ableitbar."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T10:22:28.000Z",
+      "last_updated": "2026-09-04T13:23:17.993Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-dad0642fc6ee28b03f8a",
+      "source_published_at": "2026-09-04T13:12:19.000Z",
+      "published_at": "2026-09-04T13:23:17.993Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:12:19.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-a416364f223ac3fc",
       "title_image": {
