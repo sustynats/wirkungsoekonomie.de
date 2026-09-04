@@ -54391,7 +54391,8 @@
         "public_relevance": "mittel",
         "topics": [
           "Wirtschaft",
-          "Energie"
+          "Energie",
+          "Politik"
         ],
         "dimensions": [],
         "status": "laufende Entwicklung",
@@ -55096,7 +55097,8 @@
         "internal_relevance_score": 32,
         "public_relevance": "mittel",
         "topics": [
-          "Gesellschaft"
+          "Gesellschaft",
+          "Politik"
         ],
         "dimensions": [],
         "status": "laufende Entwicklung",
@@ -95523,7 +95525,250 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die vorliegende Meldung wiederholt nur die bereits erfasste Verabschiedung der Leitlinien; aus den gelieferten Daten ergibt sich keine materiell neue Entwicklung."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-aa375d0045cfb9322f87",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-7ec2c017a36e31ab57dd",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-19e58c4d55f01726a97a",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-b3f9d3105694862a32f5",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-57bcbc8dea706471",
+      "event_id": "event-e41b12a5a072d7faff5f",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS"
+      ],
+      "rationale": "Neue, materielle Information ist das eingegangene und geprüfte Bekennerschreiben im Kontext kritischer Strominfrastruktur; Urheberschaft und Echtheit bleiben offen."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-a77b5d9b2935de2a",
+      "event_id": "event-b802f916d71dbcbf3d44",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Meldung wiederholt bereits publizierte Gerichtsentscheidung und Begründung ohne neue belastbare Information oder substanzielle Einordnung."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-9cca0ad92ad1a84a",
+      "event_id": "event-ebbcaeb2f5de9babbe87",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Quelle wiederholt die bereits publizierte Kernaussage zu Gasspeicherumlage, Netzentgelten und weiteren Entlastungen, ohne neue materiell belastbare Information oder unabhängige Bestätigung."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-b5e0a39f46388642",
+      "event_id": "event-88c06765dd812ab1333c",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quelle wiederholt die bereits veröffentlichte Rede- und Zahlenangabe ohne zusätzliche belastbare Information oder neue Einordnung gegenüber der vorhandenen Erstmeldung."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-7d3fabe103b78ce3",
+      "event_id": "event-6d73d8014561c0bc1298",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Die Kernbehauptung zu Sabotage, Kurzschluss und Bekennerschreiben beruht nur auf sekundaeren Berichten ohne belastbare unabhängige oder amtliche Originalbelege."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-3a01df57b8cfe75f",
+      "event_id": "event-cbd2c0c9db2a4a13b509",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH"
+      ],
+      "rationale": "Gegenüber der Vorläufermeldung liegt eine materiell neue Einordnung vor: Die Polizei soll nun von versuchter Sabotage ausgehen und ein Bekennerschreiben prüfen. Das betrifft kritische Infrastruktur und hat potenzielle Sicherheits- und Betriebsfolgen."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-31724816547fc87d",
+      "event_id": "event-f2fa5659b171e222bce8",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende WDR-Darstellung wiederholt den bereits erfassten Kern ohne neu belegte, eigenständige Entwicklung gegenüber der bestehenden Akte."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-872323e750684aa1",
+      "event_id": "event-766fb5a03e5c10e53cd6",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegenden Angaben wiederholen die bereits publizierte taz-Meldung zum sinkenden Kinderwunsch und liefern keine substanziell neue, unabhängige Information."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-3c8762489a80692b",
+      "event_id": "event-a245879abee746aa83eb",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Meldung wiederholt den bereits publizierten Kern, dass das Regionalnachweisregister eingestellt werden soll; es kommen keine substanziell neuen, materiell relevanten Fakten hinzu."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-d175d26e4635ba0a",
+      "event_id": "event-8b84ae4650626fa86f6f",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Eröffnung eines neuen, klimaangepassten Quartiersparks ist eine reale Umsetzung mit lokal materieller Wirkung auf Nutzung, Wasserhaushalt und Hitzeschutz. Die Belege stammen zwar nur aus einer Quelle, tragen aber den Kern der Meldung hinreichend."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-e442d6ad81290406",
+      "event_id": "event-83becedad84b8b907cdf",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Meldung enthält neue, zahlenbasierte Informationen über ein großes Schutz- und Gesundheitsproblem; die Evidenz ist aber bislang nur sekundär belegt."
+    },
+    {
+      "at": "2026-09-04T05:21:19.381Z",
+      "story_id": "wt-9e8076042f86f06d",
+      "event_id": "event-56233210d0bf06531c2d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Quelle wiederholt dieselbe Protest- und Forderungslage wie die bereits veröffentlichte Erstmeldung, ohne neue belastbare Tatsachen."
     }
   ],
-  "updated_at": "2026-09-04T05:06:21.635Z"
+  "updated_at": "2026-09-04T05:21:19.381Z"
 }
