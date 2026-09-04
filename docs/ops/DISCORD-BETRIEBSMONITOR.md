@@ -7,6 +7,12 @@ Oracle-Reserve-Taktgeber starten denselben serialisierten Job. Er benötigt
 keinen geöffneten Browser, Codex oder eingeschalteten Nutzerrechner und ruft
 keine kostenpflichtige KI auf. Keine Vercel-Deployments oder neuen Hostingdienste.
 
+Der Oracle-Takt startet bei einem gerade abgeschlossenen Nachrichtenlauf über
+`codex/ops-monitor-clock` ausschließlich den Monitor. Ohne frischen Lauf startet
+`codex/wirkungsticker-clock` Nachrichten und Monitor. So unterdrückt die
+KI-Doppellaufsperre keine Verfügbarkeitsprüfung; die bestehende zwölfminütige
+Taktgeber-Deduplizierung bleibt bestehen.
+
 ## Erkennung
 
 - HTTP-Status plus erwarteter Seiteninhalt bzw. JSON-Vertrag; begrenzter Timeout

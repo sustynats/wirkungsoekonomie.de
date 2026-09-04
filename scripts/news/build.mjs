@@ -11,10 +11,11 @@ import { loadNewsRegistry } from "./registry.mjs";
 import { buildSourcePages } from "./source-pages.mjs";
 import { canonicalizeUrl } from "./lib.mjs";
 import { relatedStories } from "./living-files.mjs";
+import { formatReferenceFramework } from "./reference-frameworks.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260904-images1";
+const PUBLIC_RELEASE = "20260904-sdg1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
 const LEGACY_NEWS_DIR = path.join(ROOT, "news");
@@ -441,7 +442,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     <article class="news-story-section" id="bedeutung"><p class="hero-kicker">${renderIcon("transformation")}<span>Systemische Bedeutung</span></p><h2>Was die Meldung für das System bedeutet</h2><div class="wt-meaning"><div class="wt-meaning__item"><h3>${renderIcon("systemisch")}Systemrelevanz</h3><p>${escapeHtml(a.systemic_relevance)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("transformation")}Transformationspotenzial</h3><p>${escapeHtml(a.transformation_potential)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("resilienz")}Resilienz</h3><p>${escapeHtml(a.resilience)}</p></div></div></article>
     <article class="news-story-section" id="offen"><p class="hero-kicker">${renderIcon("offen")}<span>Offen</span></p><h2>Offene Fragen und Beobachtungspunkte</h2><div class="wt-questions"><div><h3>${renderIcon("offen")}Unsicherheiten</h3>${list(a.uncertainties)}</div><div><h3>${renderIcon("beobachten")}Worauf jetzt zu achten ist</h3>${list(a.watch_next)}</div></div></article>
   </div><aside class="news-story-aside">
-    <article class="news-story-section" id="quellen"><p class="hero-kicker">${renderIcon("quelle")}<span>Quellenakte</span></p><h2>Quellen und Belegrollen</h2><ul class="news-source-list">${sources}</ul><div class="wt-evidence"><div class="wt-evidence__item"><strong>${renderIcon("wahrheit")}Evidenzgrad</strong><span>${escapeHtml(a.evidence_level)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("check")}Zurechnung</strong><span>${escapeHtml(a.attribution)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("bildung")}Referenzrahmen</strong><span>${escapeHtml((a.reference_frameworks || []).join(" · ") || "objektspezifisch offen")}</span></div></div><p class="news-method-note">Das interne Claim-Ledger bindet ${story.claims.length} ${story.claims.length === 1 ? "tragenden Claim" : "tragende Claims"} an die oben genannten Quellen. Feed-Kurztexte werden nicht als Originalartikel gespiegelt.</p></article>
+    <article class="news-story-section" id="quellen"><p class="hero-kicker">${renderIcon("quelle")}<span>Quellenakte</span></p><h2>Quellen und Belegrollen</h2><ul class="news-source-list">${sources}</ul><div class="wt-evidence"><div class="wt-evidence__item"><strong>${renderIcon("wahrheit")}Evidenzgrad</strong><span>${escapeHtml(a.evidence_level)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("check")}Zurechnung</strong><span>${escapeHtml(a.attribution)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("bildung")}Referenzrahmen</strong><span>${escapeHtml((a.reference_frameworks || []).map(formatReferenceFramework).join(" · ") || "objektspezifisch offen")}</span></div></div><p class="news-method-note">Das interne Claim-Ledger bindet ${story.claims.length} ${story.claims.length === 1 ? "tragenden Claim" : "tragende Claims"} an die oben genannten Quellen. Feed-Kurztexte werden nicht als Originalartikel gespiegelt.</p></article>
     <article class="news-story-section"><p class="hero-kicker">${renderIcon("version")}<span>Verlauf</span></p><h2>Versionsverlauf</h2><ol class="wt-versions">${history}</ol><p><a class="text-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list>Zurück zur Übersicht an die vorige Leseposition</a></p></article>
   </aside></div></section>
   ${renderRelatedStories(story, allStories)}
