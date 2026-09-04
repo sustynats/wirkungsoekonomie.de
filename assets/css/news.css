@@ -984,10 +984,12 @@
 }
 
 .news-install-promo {
+  box-sizing: border-box;
   display: flex;
   align-items: flex-start;
   gap: 1.25rem;
-  margin: 1.5rem 0;
+  width: min(1180px, calc(100% - 2rem));
+  margin: 1.5rem auto;
   padding: clamp(1.1rem, 3vw, 2rem);
   border: 1px solid var(--wt-line);
   border-left: 4px solid var(--wt-gold);
