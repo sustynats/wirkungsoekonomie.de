@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { canonicalAuditUrl } from "./portal-audit-url.mjs";
 import { createHash } from "node:crypto";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -42,7 +43,7 @@ async function fetchPage(route) {
       let lastError = null;
       for (let attempt = 1; attempt <= 2; attempt += 1) {
         try {
-          const response = await fetch(`${baseUrl}${route}`, { redirect: "manual", signal: AbortSignal.timeout(60_000) });
+          const response = await fetch(canonicalAuditUrl(`${baseUrl}${route}`), { redirect: "manual", signal: AbortSignal.timeout(60_000) });
           return { route, status: response.status, html: await response.text() };
         } catch (error) {
           lastError = error;

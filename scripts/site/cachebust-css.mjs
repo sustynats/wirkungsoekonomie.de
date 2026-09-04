@@ -15,9 +15,10 @@ try {
   const hash = crypto.createHash("sha256").update(fs.readFileSync(cssPath)).digest("hex").slice(0, 12);
   // Keep the shared Wirkungsraum runtime current on every page, not just the AI page.
   const mainPath = path.join(SITE, "assets", "js", "main.js");
-  const mainHash = fs.existsSync(mainPath) ? crypto.createHash("sha256").update(fs.readFileSync(mainPath)).digest("hex").slice(0, 12) : null;
-  const re = /style\.css\?v=[^"'\s>]+/g;
-  const replacement = `style.css?v=${hash}`;
+  const questionsPath = path.join(SITE, "assets", "js", "contextual-questions.js");
+  const mainHash = fs.existsSync(mainPath) ? crypto.createHash("sha256").update(fs.readFileSync(mainPath)).update(fs.existsSync(questionsPath) ? fs.readFileSync(questionsPath) : '').digest("hex").slice(0, 12) : null;
+  const re = /assets\/css\/style\.css(?:\?v=[^"'\s>]+)?/g;
+  const replacement = `assets/css/style.css?v=${hash}`;
   let changed = 0, scanned = 0;
   const walk = (dir) => {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {

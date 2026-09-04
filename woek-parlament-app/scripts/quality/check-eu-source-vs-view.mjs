@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { canonicalAuditUrl } from "./portal-audit-url.mjs";
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { projectEuEditorial } from "../../lib/publication/public-editorial-projection.mjs";
@@ -35,7 +36,7 @@ const failures = [];
 const cases = [];
 for (const { record, editorial } of records) {
   const url = `${baseUrl}/eu/wirkungsfaelle/${encodeURIComponent(record.impact_case_id)}`;
-  const response = await fetch(url, { redirect: "manual", headers: requestHeaders });
+  const response = await fetch(canonicalAuditUrl(url), { redirect: "manual", headers: requestHeaders });
   const result = { impact_case_id: record.impact_case_id, url, http_status: response.status, fields_checked: 0, failures: [], status: "PASS" };
   if (response.status !== 200) { failures.push(`${record.impact_case_id}: HTTP ${response.status}`); result.failures.push("HTTP_200"); result.status = "FAIL"; cases.push(result); continue; }
   const text = visible(await response.text());

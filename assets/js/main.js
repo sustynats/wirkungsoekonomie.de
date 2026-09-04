@@ -251,10 +251,6 @@ document.querySelectorAll(".footer-nav a, .footer-legal-nav a").forEach((link) =
   }
 });
 
-function relatedQuestionLink(href, label, tag = "Frage") {
-  return { href: relativeSiteUrl(href), label, tag };
-}
-
 function isDebugPath(path = window.location.pathname) {
   return /^\/?_debug(\/|$)/.test(path);
 }
@@ -263,6 +259,15 @@ function getQuestionSubmissionContext() {
   const path = window.location.pathname.replace(/^\/+/, "") || "index.html";
   const title = document.querySelector("h1")?.textContent?.trim() || document.title || "Website";
 
+  if (/^umfragen(?:\/|$)/.test(path)) {
+    return { context: `Umfrage: ${title}`, topic: "umfragen", pageType: "umfrage" };
+  }
+  if (/^wirkungsticker(?:\/|$)/.test(path)) {
+    return { context: `Wirkungsticker: ${title}`, topic: "wirkungsticker", pageType: "nachricht" };
+  }
+  if (/^institut(?:\/|$)/.test(path)) {
+    return { context: `Institut: ${title}`, topic: "institut", pageType: "institut" };
+  }
   if (/^blog\//.test(path)) {
     return { context: "Journal", topic: "journal", pageType: "journal" };
   }
@@ -308,131 +313,20 @@ function questionActionsHtml() {
   return `<p class="related-question-actions"><a class="text-link" href="${relativeSiteUrl("fragen/")}">Alle Fragen und Einwände lesen</a> · <a class="text-link" href="${submissionHref}" data-question-submit-link>Frage zu diesem Thema einreichen</a></p>`;
 }
 
-function getContextualQuestions() {
-  const path = window.location.pathname.replace(/^\/+/, "") || "index.html";
-  // News and source profiles are not glossary entries.
-  if (/^wirkungsticker(?:\/|$)/.test(path)) return [];
-  const pageText = `${document.title} ${mainElement?.textContent || ""}`.toLowerCase();
-
-  if (/^blog\/.+\.html$/.test(path)) {
-    if (/social taxonomy|eu-taxonomie|taxonomie|sustainable finance/.test(pageText)) {
-      return [
-        relatedQuestionLink("fragen/#esg", "Ist das nur ESG mit neuem Namen?", "Abgrenzung"),
-        relatedQuestionLink("fragen/#social-credit", "Ist das Social Credit?", "Schutzfrage"),
-        relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
-      ];
-    }
-    if (/bildung|schule|wirkungskompetenz|idg/.test(pageText)) {
-      return [
-        relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt messen?", "Verständnis"),
-        relatedQuestionLink("fragen/#social-credit", "Werden Menschen bewertet?", "Schutzfrage"),
-      ];
-    }
-    return [
-      relatedQuestionLink("fragen/#planwirtschaft", "Ist die Wirkungsökonomie Planwirtschaft?", "Einwand"),
-      relatedQuestionLink("fragen/#amtlich", "Ist das schon ein amtlicher Standard?", "Status"),
-    ];
-  }
-
-  if (/^begriffe\/[^/]+\/?$/.test(path) && !path.endsWith("begriffe/")) {
-    if (/folgencheck|faktencheck|wirkstoff|wirkungspfad|wirkungsraum/.test(path)) {
-      return [
-        relatedQuestionLink("fragen/#faktencheck-folgencheck", "Faktencheck vs. Folgencheck?", "Abgrenzung"),
-        relatedQuestionLink("fragen/#zensur", "Ist Folgencheck Zensur?", "Schutzfrage"),
-        relatedQuestionLink("fragen/#wirkstoff", "Was ist ein Wirkstoff?", "Begriff"),
-      ];
-    }
-    if (/wirkungseinkommen|wirkungsfonds|wirkungsrente/.test(path)) {
-      return [
-        relatedQuestionLink("fragen/#geld", "Woher kommt das Geld?", "Finanzierung"),
-        relatedQuestionLink("fragen/#bge", "Ist Wirkungseinkommen BGE?", "Abgrenzung"),
-      ];
-    }
-    if (/eu-taxonomie|social-taxonomy|csrd|esrs|esg|green-deal/.test(path)) {
-      return [
-        relatedQuestionLink("fragen/#esg", "Ist das nur ESG mit neuem Namen?", "Abgrenzung"),
-        relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
-      ];
-    }
-    return [
-      relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt messen?", "Verständnis"),
-      relatedQuestionLink("fragen/#amtlich", "Ist das schon ein amtlicher Standard?", "Status"),
-    ];
-  }
-
-  if (/^wirkungsfelder\//.test(path)) {
-    return [
-      relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung in diesem Feld überhaupt messen?", "Verständnis"),
-      relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
-      relatedQuestionLink("fragen/#social-credit", "Werden Menschen bewertet?", "Schutzfrage"),
-    ];
-  }
-
-  if (/^(werkzeuge|woek-id-register|register|methodik|tools)\//.test(path)) {
-    return [
-      relatedQuestionLink("fragen/#amtlich", "Ist das schon ein amtlicher Standard?", "Status"),
-      relatedQuestionLink("fragen/#fehlende-daten", "Was passiert bei fehlenden Daten?", "Daten"),
-      relatedQuestionLink("fragen/#steuerklasse", "Wer entscheidet die Steuerklasse?", "Governance"),
-    ];
-  }
-
-  if (/^(erleben|ausprobieren)\//.test(path) || /rechner|demo|scanner|generator/.test(path)) {
-    return [
-      relatedQuestionLink("fragen/#amtlich", "Ist die Demo amtlich?", "Status"),
-      relatedQuestionLink("fragen/#social-credit", "Bewertet die Demo Personen?", "Schutzfrage"),
-      relatedQuestionLink("fragen/#fehlende-daten", "Wie werden Datenlücken behandelt?", "Daten"),
-    ];
-  }
-
-  if (/^(bibliothek|dokumente|referenz|buch|downloads|werkstatt)\//.test(path) || /^(buch|downloads)\.html$/.test(path)) {
-    return [
-      relatedQuestionLink("fragen/#amtlich", "Ist das ein finaler Standard?", "Status"),
-      relatedQuestionLink("fragen/#messbarkeit", "Wie wird Wirkung fachlich begründet?", "Methodik"),
-      relatedQuestionLink("fragen/#esg", "Was ist der Unterschied zu ESG?", "Abgrenzung"),
-    ];
-  }
-
-  if (/^akademie/.test(path)) {
-    return [
-      relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt lernen und messen?", "Verständnis"),
-      relatedQuestionLink("fragen/#amtlich", "Ist das staatlich anerkannt?", "Status"),
-      relatedQuestionLink("fragen/#social-credit", "Geht es um Personenbewertung?", "Schutzfrage"),
-    ];
-  }
-
-  return [
-    relatedQuestionLink("fragen/#planwirtschaft", "Ist die Wirkungsökonomie Planwirtschaft?", "Einwand"),
-    relatedQuestionLink("fragen/#social-credit", "Ist das Social Credit?", "Schutzfrage"),
-    relatedQuestionLink("fragen/#messbarkeit", "Kann man Wirkung überhaupt messen?", "Verständnis"),
-  ];
-}
-
-function injectContextualQuestions() {
+async function injectContextualQuestions() {
   if (siteLocale === "en" || isDebugPath() || !mainElement || document.querySelector(".related-questions-block")) {
     return;
   }
-  const questions = getContextualQuestions().slice(0, 4);
-  if (!questions.length) {
-    return;
+  try {
+    const source = new URL(mainScriptUrl, window.location.href);
+    const moduleUrl = new URL(`contextual-questions.js${source.search}`, source);
+    const { mountContextualQuestions } = await import(moduleUrl.href);
+    mountContextualQuestions(document, window.location.pathname);
+    enhanceRelatedQuestionBlocks();
+  } catch {
+    // A missing optional recommendation must never break voting or page content.
+    // Do not substitute unrelated stock questions on error.
   }
-  const section = document.createElement("aside");
-  section.className = "section related-questions-block";
-  section.setAttribute("aria-labelledby", "contextual-related-questions-title");
-  section.innerHTML = `
-    <div class="section-header">
-      <p class="hero-kicker">Passende Fragen</p>
-      <h2 id="contextual-related-questions-title">Passende Fragen zum Begriff</h2>
-    </div>
-    <div class="related-question-grid">
-      ${questions
-        .map(
-          (item) => `<article class="related-question-card"><span>${item.tag}</span><strong>${item.label}</strong><a class="text-link" href="${item.href}">Antwort lesen</a></article>`,
-        )
-        .join("")}
-    </div>
-    ${questionActionsHtml()}
-  `;
-  mainElement.append(section);
 }
 
 function enhanceRelatedQuestionBlocks() {
@@ -449,6 +343,10 @@ function enhanceRelatedQuestionBlocks() {
 
 injectContextualQuestions();
 enhanceRelatedQuestionBlocks();
+window.addEventListener('woek:poll-context', () => {
+  mainElement?.querySelector('[data-contextual-questions]')?.remove();
+  injectContextualQuestions();
+});
 
 function shouldSkipSiteAnalytics() {
   return navigator.doNotTrack === "1" || window.doNotTrack === "1";

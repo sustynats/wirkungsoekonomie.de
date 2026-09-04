@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { allNavigationItems, canonicalPortalHref } from "@/lib/navigation";
 import { listPublishedCases } from "@/lib/cases";
 import { listFachanalysen } from "@/lib/fachanalysen";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
@@ -21,7 +22,7 @@ const siteUrl = "https://parlament.wirkungsoekonomie.de";
 
 function entry(path: string, lastModified?: string, priority = 0.7): MetadataRoute.Sitemap[number] {
   return {
-    url: `${siteUrl}${path}`,
+    url: `${siteUrl}${canonicalPortalHref(path)}`,
     lastModified: lastModified ? new Date(`${lastModified}T12:00:00Z`) : new Date("2026-08-15T12:00:00Z"),
     changeFrequency: "weekly",
     priority
@@ -84,5 +85,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const indicatorEntries = listDnsIndicators().map((item) => entry(`/methodik/wirkindikatoren/${item.indicator_id}`, undefined, .5));
   const stateEntries = stateJurisdictions.filter((item) => item.jurisdiction_id !== "DE-ST").map((item) => entry(`/laender/${stateSlug(item.jurisdiction_id)}`, undefined, .6));
   const mandateEntries = politicalSourceCatalog.map((item) => entry(`/mandat-und-praxis/${item.sourceKey}`, undefined, .7));
-  return [...staticEntries, ...cases, ...analyses, ...saxonyAnhaltProgrammes, ...communicationSourceRoutes, ...strategyEntries, ...strategySourceRoutes, ...coalitionEntries, ...coalitionSourceRoutes, ...governmentEntries, ...euEntries, ...indicatorEntries, ...stateEntries, ...mandateEntries];
+  return [...new Map([...allNavigationItems.map((item) => entry(item.href)), ...staticEntries, ...cases, ...analyses, ...saxonyAnhaltProgrammes, ...communicationSourceRoutes, ...strategyEntries, ...strategySourceRoutes, ...coalitionEntries, ...coalitionSourceRoutes, ...governmentEntries, ...euEntries, ...indicatorEntries, ...stateEntries, ...mandateEntries].map((item) => [item.url, item])).values()];
 }

@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { portalRedirects } from "./lib/navigation";
 
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
@@ -8,6 +9,7 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  async redirects() { return portalRedirects; },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
   }

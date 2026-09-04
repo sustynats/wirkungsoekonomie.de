@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { canonicalAuditUrl } from "./portal-audit-url.mjs";
 import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -210,7 +211,7 @@ const failures = [];
 const cases = [];
 for (const record of records) {
   const url = `${baseUrl}/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`;
-  const response = await fetch(url, { redirect: "manual", headers: requestHeaders });
+  const response = await fetch(canonicalAuditUrl(url), { redirect: "manual", headers: requestHeaders });
   const result = { impact_case_id: record.impact_case_id, url, http_status: response.status, fields_checked: 0, fields_missing: [], source_links_expected: 0, source_links_rendered: 0, full_fachtext_hash: record.source_release.case_markdown_sha256, full_fachtext_visible: false, raw_record_preserved: Boolean(record.raw_record), recommendation: null, status: "PASS" };
   if (response.status !== 200) {
     result.status = "FAIL";
@@ -270,7 +271,7 @@ for (const recommendation of recommendations.values()) {
   for (const sourceUrl of recommendation.source_refs.filter((source) => /^https:\/\//.test(source))) {
     const slug = recommendationSourceSlug(sourceUrl);
     const url = `${baseUrl}/quellen/${slug}`;
-    const response = await fetch(url, { redirect: "manual", headers: requestHeaders });
+    const response = await fetch(canonicalAuditUrl(url), { redirect: "manual", headers: requestHeaders });
     const html = response.status === 200 ? await response.text() : "";
     const text = comparable(decodeHtml(html));
     const sourcePage = {
@@ -292,7 +293,7 @@ for (const recommendation of recommendations.values()) {
 
 const aliasResults = [];
 for (const alias of aliases) {
-  const response = await fetch(`${baseUrl}/regierung/wirkungsanalysen/${encodeURIComponent(alias.alias_id)}`, { redirect: "manual", headers: requestHeaders });
+  const response = await fetch(canonicalAuditUrl(`${baseUrl}/regierung/wirkungsanalysen/${encodeURIComponent(alias.alias_id)}`), { redirect: "manual", headers: requestHeaders });
   const text = response.status === 200 ? comparable(decodeHtml(await response.text())) : "";
   const canonical = records.find((record) => record.impact_case_id === alias.canonical_impact_case_id);
   const status = canonical

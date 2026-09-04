@@ -7,5 +7,5 @@ export default async function EuImpactDetailPage({ params }: { params: Promise<{
   const { id } = await params;
   const record = euImpactCaseById(decodeURIComponent(id));
   if (!record) notFound();
-  return <div className="shell content-page"><nav className="breadcrumb" aria-label="Pfad"><Link href="/eu">Europäische Union</Link><span aria-hidden="true">/</span><Link href="/eu/wirkungsfaelle">Wirkungsfälle</Link><span aria-hidden="true">/</span><span>{record.title}</span></nav><EuImpactCase record={record} /></div>;
+  return <div className="shell content-page"><p className="record-context"><Link href="/eu">Europäische Union</Link><span aria-hidden="true">/</span><Link href="/eu/wirkungsfaelle">Wirkungsfälle</Link><span aria-hidden="true">/</span><span>{record.title}</span></p><EuImpactCase record={record} /></div>;
 }

@@ -1,8 +1,10 @@
 # Eigene Umfragen - Architektur und Betrieb
 
-Stand: 4. September 2026. **Backend produktiv; Website-Release in Veröffentlichung.**
-Der aktuelle Implementierungs- und Prüfstand steht unten. Eine erfolgreiche
-API-Abnahme ist noch keine Bestätigung der öffentlichen Website-Veröffentlichung.
+Stand: 4. September 2026. **Backend und Website produktiv, öffentliche Umfrage geprüft.**
+
+- Erste Umfrage: https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/
+- Übersicht: https://wirkungsoekonomie.de/umfragen/
+- Verwaltung: https://wirkungsoekonomie.de/admin/umfragen/ (bestehendes Discord-Konto)
 
 ## Architektur und führende Quellen
 
@@ -320,7 +322,7 @@ Restore erfolgt bewusst nicht über die öffentliche API:
    Besitzer und 0600-Rechte wiederherstellen. Den zugehörigen Token-Pepper
    beibehalten. Eine neue leere Anti-Abuse-Datei darf erzeugt werden.
 4. Seit dem Sicherungszeitpunkt erfolgte Löschungen erneut anwenden, bevor der
-   Dienst öffentlich erreichbar wird. Nicht gelöschte Altbestände wieder ausliefern.
+   Dienst öffentlich erreichbar wird. Keine bereits gelöschten Altbestände wieder ausliefern.
 5. `manage.mjs check`, Dienststart, API- und Ergebnisprüfung durchführen.
    Danach öffentlichen Metadaten-Snapshot synchronisieren.
 
@@ -385,6 +387,15 @@ Die echte Wirkungsticker-Umfrage blieb bei **0 Stimmen**.
 Der vollständige Website-Build mit PDF-Verifikation ist bestanden. Das neue
 Artefakt-Gate prüft ausdrücklich, dass die öffentlichen `.js`-Module ausgeliefert
 werden, während Backend, Secrets und private Quelldateien nicht im Artefakt liegen.
-Noch offen für die abschließende Freigabe: Pages-Deployment und Live-Browser-
-Abnahme einschließlich bestehender Discord-Anmeldung. Externe Sicherung bleibt
+Pages-Deployment und Live-Browser-Abnahme einschließlich der bestehenden
+Discord-Anmeldung sind abgeschlossen. Die echte Administration zeigte eine
+aktive Umfrage mit 0 Stimmen. Öffentliche Seite, Module, CTA und Canonical/OG
+lieferten HTTP 200; vier Antwortoptionen, verborgene Ergebnisse vor der Stimme
+und 390-Pixel-Ansicht ohne horizontales Überlaufen wurden live geprüft. Keine
+Browserfehler. Die Abnahme fügte der echten Umfrage keine Teststimmen hinzu.
+
+Erstes vollständiges Pages-Release: `caa7701c0b15ea6985bc17f577d68728463b8980`,
+Actions-Lauf `33854959682`, erfolgreich. Die Absicherung der Footer-Verlinkung
+auch bei schnellen Ticker-Releases wurde mit `bf41b309d79fc81dad03028ec64287c462f66985`
+und erfolgreichem Lauf `33856652944` veröffentlicht. Externe Sicherung bleibt
 der oben dokumentierte offene Betriebs-Härtungspunkt.

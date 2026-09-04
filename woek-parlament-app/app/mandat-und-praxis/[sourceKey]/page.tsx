@@ -41,7 +41,7 @@ export default async function CommitmentRegisterPage({ params }: { params: Promi
     : factOnlyPublicMaturity(register.source.title);
 
   return <div className="shell content-page commitment-register-page">
-    <nav className="breadcrumb" aria-label="Pfad"><Link href="/mandat-und-praxis">Wahlprogramme &amp; Koalition</Link><span aria-hidden="true">/</span><span>{sourceKind}</span></nav>
+    <p className="record-context"><Link href="/mandat-und-praxis">Wahlprogramme &amp; Koalition</Link><span aria-hidden="true">/</span><span>{sourceKind}</span></p>
     <header className="page-intro">
       <p className="eyebrow">{sourceKind} · Quellen- und Fachakte</p>
       <h1>{register.source.actor}</h1>

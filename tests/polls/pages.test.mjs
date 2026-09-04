@@ -16,6 +16,9 @@ test('public HTML has real crawlable metadata, form fallback, breadcrumbs and pr
   assert.match(html,/property="og:image"/);assert.match(html,/name="twitter:card"/);
   assert.match(html,/href="\/umfragen\/"/);assert.match(html,/aria-label="Abstimmung"/);
   assert.match(html,/keine Klartext-IP/);assert.match(html,/Diese Online-Umfrage ist nicht repräsentativ/);
+  assert.match(pollPage(root,{...poll,feedback_enabled:1}),/data-poll-feedback-enabled="true"/);
+  assert.match(pollPage(root,{...poll,feedback_enabled:0}),/data-poll-feedback-enabled="false"/);
+  assert.match(html,/data-poll-results-visibility="after_vote"/);
   assert.doesNotMatch(html,/\{\{[A-Z_]+\}\}/);
 });
 test('stored XSS is escaped in body, metadata and structured data',()=>{

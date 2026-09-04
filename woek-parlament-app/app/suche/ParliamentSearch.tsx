@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { canonicalPortalHref } from "@/lib/navigation";
 import { useMemo, useState } from "react";
 import { humanizeSystemValue, materialityLabel } from "@/lib/presentation/labels";
 import { defaultSearchFilters, searchFachanalysen, searchGovernmentImpacts, searchPublicCases, type ParliamentSearchFilters, type SearchableCase, type SearchableFachanalyse, type SearchableGovernmentImpact } from "@/lib/search";
@@ -95,7 +96,7 @@ export function ParliamentSearch({ cases, analyses, governmentImpacts }: { cases
 }
 
 function GovernmentImpactSearchResult({ item }: { item: SearchableGovernmentImpact }) {
-  const path = item.href ?? `/regierung/wirkungsanalysen/${encodeURIComponent(item.impactCaseId)}`;
+  const path = canonicalPortalHref(item.href ?? `/regierung/wirkungsanalysen/${encodeURIComponent(item.impactCaseId)}`);
   return (
     <article data-woek-preview-card="published">
       <div>
@@ -118,7 +119,7 @@ function SelectFilter({ label, value, values, onChange }: { label: string; value
 }
 
 function CaseSearchResult({ item }: { item: SearchableCase }) {
-  const path = `/entscheidungen/${item.slug}`;
+  const path = canonicalPortalHref(`/entscheidungen/${item.slug}`);
   return (
     <article data-woek-preview-card={item.assessment ? "published" : "fact-only"}>
       <div>
@@ -137,7 +138,7 @@ function CaseSearchResult({ item }: { item: SearchableCase }) {
 }
 
 function FachanalyseSearchResult({ item }: { item: SearchableFachanalyse }) {
-  const path = `/fachanalysen/${item.slug}`;
+  const path = canonicalPortalHref(`/fachanalysen/${item.slug}`);
   return (
     <article data-woek-preview-card="dossier">
       <div>

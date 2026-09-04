@@ -14,7 +14,7 @@ export default async function MemberSourcePage({ params }: { params: Promise<{ s
   const profile = await getPublishedMemberProfile((await params).slug);
   if (!profile) notFound();
   return <div className="shell content-page source-detail-page">
-    <p className="breadcrumb"><Link href="/abgeordnete">Abstimmungsbilanz</Link><span>/</span><Link href={`/abgeordnete/${profile.slug}`}>{profile.displayName}</Link><span>/</span><span>Quellen</span></p>
+    <p className="record-context"><Link href="/abgeordnete">Abstimmungsbilanz</Link><span>/</span><Link href={`/abgeordnete/${profile.slug}`}>{profile.displayName}</Link><span>/</span><span>Quellen</span></p>
     <header className="source-detail-header">
       <div><p className="eyebrow">Amtliche Personenangaben</p><h1>Quellen zu {profile.displayName}</h1><p className="lead">Dieses Profil verwendet nur amtlich dokumentierte Angaben und – falls ein Bild erscheint – einen gesondert geprüften Bildnachweis.</p></div>
       <a className="button button-primary" href={profile.officialMemberUrl} target="_blank" rel="noreferrer">Amtliche Bundestagsübersicht öffnen ↗</a>
