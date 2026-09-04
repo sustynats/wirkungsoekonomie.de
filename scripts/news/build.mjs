@@ -14,7 +14,7 @@ import { relatedStories } from "./living-files.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260904-files1";
+const PUBLIC_RELEASE = "20260904-order1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
 const LEGACY_NEWS_DIR = path.join(ROOT, "news");
@@ -273,7 +273,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=20260904-files1">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body>
@@ -283,7 +283,7 @@ ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
 <script src="${base}assets/js/main.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
-<script src="${base}assets/js/news-pwa.js?v=20260904-files1"></script>
+<script src="${base}assets/js/news-pwa.js?v=${PUBLIC_RELEASE}"></script>
 <script src="${base}assets/js/news-navigation.js?v=20260904-reader2"></script>
 ${extraScript}
 </body>
@@ -367,13 +367,22 @@ export function renderClaimEvidenceLinks(claim, sources = []) {
   }).join("; ");
 }
 
+const NEWS_STATUS_LABELS = { developing: "Sich entwickelnde Nachrichtenlage", preliminary: "Vorläufiger Nachrichtenstand", confirmed: "Bestätigter Nachrichtenkern", disputed: "Widersprüchliche Quellenlage", corrected: "Korrigierter Stand", updated: "Aktualisierter Stand" };
+
+function renderNewsStatusNotice(story) {
+  if (!story.news_status) return "";
+  const label = NEWS_STATUS_LABELS[story.news_status] || "Offener Stand";
+  const note = { developing: "Weitere Erkenntnisse können diesen Stand verändern.", preliminary: "Wesentliche Angaben sind noch vorläufig.", disputed: "Die Quellen widersprechen sich in wesentlichen Punkten.", corrected: "Bitte den Korrekturhinweis zu diesem Artikel beachten." }[story.news_status];
+  return `<aside class="news-status-notice" role="note" aria-label="Nachrichtenstand"><strong>${escapeHtml(label)}.</strong>${note ? ` ${escapeHtml(note)}` : ""} <a class="text-link" href="#belegstand">Belegstand ansehen</a></aside>`;
+}
+
 function renderNewsroomEvidence(story) {
   if (!story.news_status) return "";
-  const status = { developing: "Entwickelnde Nachrichtenlage", preliminary: "Vorläufiger Nachrichtenstand", confirmed: "Bestätigter Nachrichtenkern", disputed: "Widersprüchliche Quellenlage", corrected: "Korrigierter Stand", updated: "Aktualisierter Stand" }[story.news_status] || "Offener Stand";
+  const status = NEWS_STATUS_LABELS[story.news_status] || "Offener Stand";
   const labels = { single_source_claim: "Einer Quelle zugeschrieben", confirmed_claim: "Durch mehrere Belege gestützt", disputed_claim: "Strittig", primary_source_claim: "Primärbeleg / Selbstauskunft", uncertain_claim: "Ungeklärt" };
   const claims = (story.claims || []).filter((claim) => claim.status).map((claim) => `<li><strong>${escapeHtml(labels[claim.status] || "Offen")}:</strong> ${escapeHtml(claim.claim)} ${renderClaimEvidenceLinks(claim, story.sources)}</li>`).join("");
   const followups = (story.followups || []).map((followup) => `<li>${escapeHtml(followup.claim)} – Prüfpunkt: ${escapeHtml(followup.measurable_indicator)}. Nächste Recherche: ${escapeHtml(formatDate(followup.follow_up_date, { dateOnly: true }))}${followup.expected_by ? `; in der Quelle genannter Termin: ${escapeHtml(formatDate(followup.expected_by, { dateOnly: true }))}` : "; kein verbindlicher Quellentermin bekannt"}.</li>`).join("");
-  return `<section class="section" aria-label="Nachrichten- und Belegstand"><article class="news-story-section"><p class="hero-kicker">${escapeHtml(status)}</p><h2>Was ist wie belegt?</h2><ul>${claims}</ul><p class="news-method-note">Jeder Link führt zu einem Quellartikel. Mehrere Textstellen aus demselben Artikel sind keine voneinander unabhängigen Quellen.</p><p class="news-method-note">Automatische quellengebundene Prüfung, keine Garantie vollständiger oder fehlerfreier Berichterstattung. Abhängigkeiten zwischen Quellen können unerkannt bleiben; eine institutionelle Aussage belegt nicht automatisch den behaupteten Erfolg.</p>${followups ? `<details><summary>Geplante Folgeprüfungen</summary><ul>${followups}</ul></details>` : ""}</article></section>`;
+  return `<article class="news-story-section news-evidence-status" id="belegstand" aria-label="Nachrichten- und Belegstand"><p class="hero-kicker">${escapeHtml(status)}</p><h2>Was ist wie belegt?</h2><ul>${claims}</ul><p class="news-method-note">Jeder Link führt zu einem Quellartikel. Mehrere Textstellen aus demselben Artikel sind keine voneinander unabhängigen Quellen.</p><p class="news-method-note">Automatische quellengebundene Prüfung, keine Garantie vollständiger oder fehlerfreier Berichterstattung. Abhängigkeiten zwischen Quellen können unerkannt bleiben; eine institutionelle Aussage belegt nicht automatisch den behaupteten Erfolg.</p>${followups ? `<details><summary>Geplante Folgeprüfungen</summary><ul>${followups}</ul></details>` : ""}</article>`;
 }
 
 export function renderRelatedStories(story, stories) {
@@ -388,7 +397,7 @@ function renderConsolidations(story) {
   return `<aside class="notice news-consolidation" role="note"><strong>Zusammengeführte Berichterstattung:</strong> Frühere Meldungen zum selben Vorgang werden in dieser Akte fortgeführt. Die Zusammenführung selbst ist keine neue Nachricht. Frühere Stände bleiben nachvollziehbar:<ul>${entries.map((entry) => `<li><a class="text-link" href="../${escapeHtml(entry.slug)}/">${escapeHtml(entry.title)}</a> · zusammengeführt ${escapeHtml(formatDate(entry.at))}</li>`).join("")}</ul>${story.pending_update?.consolidation ? "<p>Zusätzliche Quellen aus der Zusammenführung stehen zur erneuten Prüfung an. Der angezeigte Nachrichten- und Analysestand bleibt bis dahin unverändert.</p>" : ""}</aside>`;
 }
 
-function storyPage(story, { newerStory = null, nextStory = null, allStories = [] } = {}) {
+export function storyPage(story, { newerStory = null, nextStory = null, allStories = [] } = {}) {
   const titleImage = publicTitleImage(story.title_image);
   const a = story.analysis;
   const detailSummary = expandedDetailSummary(a);
@@ -417,14 +426,15 @@ function storyPage(story, { newerStory = null, nextStory = null, allStories = []
   const body = `<main id="main-content" data-search-content data-no-glossary data-news-reader="detail">
   <section class="hero news-hero news-hero--story"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p><h1 class="hero-title">${escapeHtml(story.title)}</h1><div class="news-hero__meta">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Analyse: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}</div></div></section>
   ${titleImage?.wide ? `<figure class="news-title-image news-title-image--detail"><img src="${escapeHtml(titleImage.wide.url)}" alt="${escapeHtml(titleImage.label)} zum Thema ${escapeHtml(story.title)}" width="1200" height="675" decoding="async"><figcaption>${escapeHtml(titleImage.label)} · Darstellung, kein Beleg des Ereignisses.</figcaption></figure>` : ""}
-  ${renderAtAGlance(story, { formatDate })}
+  ${renderNewsStatusNotice(story)}
   ${(story.corrections || []).map((correction) => `<aside class="notice" role="note"><strong>Korrektur vom ${escapeHtml(formatDate(correction.at, { dateOnly: true }))}:</strong> ${escapeHtml(correction.note)}</aside>`).join("")}
-  ${renderConsolidations(story)}
-  ${renderNewsroomEvidence(story)}
-  <nav class="wt-subnav" aria-label="Abschnitte dieser Wirkungsakte"><div class="wt-subnav__inner"><a href="#nachricht">Nachricht</a><a href="#faktencheck">Faktencheck</a><a href="#analyse">Analyse</a><a href="#einordnung">Einordnung</a><a href="#folgencheck">Folgencheck</a><a href="#bedeutung">Bedeutung</a><a href="#offen">Offene Fragen</a><a href="#quellen">Quellen</a></div></nav>
+  <nav class="wt-subnav" aria-label="Abschnitte dieser Wirkungsakte"><div class="wt-subnav__inner"><a href="#nachricht">Nachricht</a>${story.news_status ? '<a href="#belegstand">Belegstand</a>' : ""}<a href="#faktencheck">Faktencheck</a><a href="#analyse">Analyse</a><a href="#einordnung">Einordnung</a><a href="#folgencheck">Folgencheck</a><a href="#bedeutung">Bedeutung</a><a href="#offen">Offene Fragen</a><a href="#quellen">Quellen</a></div></nav>
   <section class="section"><div class="news-story-layout"><div class="news-story-main">
     <article class="news-story-section news-source-summary" data-news-source-summary id="nachricht"><p class="hero-kicker">${renderIcon("meldung")}<span>Nachricht</span></p><h2>Worum geht es?</h2><p class="news-source-summary__note">Eigenständige Nachricht auf Grundlage der verlinkten Quellen. Die wirkungsökonomische Einordnung beginnt erst nach dem Faktencheck.</p><div class="news-source-summary__copy">${sourceSummaryParagraphs(story.source_summary)}</div>${renderKeyFigures(visuals, story)}${renderChart(visuals)}${renderTimeline(visuals)}<div class="news-source-summary__links">${sourceSummaryLinks}</div></article>
+    ${renderNewsroomEvidence(story)}
     <article class="news-story-section news-fact-check" id="faktencheck"><p class="hero-kicker">${renderIcon("wahrheit")}<span>Quellenprüfung</span></p><h2>Faktencheck</h2><p class="news-method-note"><strong>Wahrheit zuerst:</strong> Der belastbar bestätigte Sachverhalt steht vor Behauptungen, offenen Punkten und möglichen Folgen. So soll bloße Wiederholung keinen falschen Wahrheits­eindruck erzeugen.</p><div class="news-check-prose"><section><h3>${renderIcon("check")}Gesicherter Ausgangspunkt</h3><p>${escapeHtml(truthOpening)}</p><p>Die Prüfung stützt sich auf ${primarySourceCount} ${primarySourceCount === 1 ? "Primärquelle" : "Primärquellen"}${primarySourceNames ? ` von ${escapeHtml(primarySourceNames)}` : ""} und ${story.claims.length} ${story.claims.length === 1 ? "tragenden, quellengebundenen Claim" : "tragende, quellengebundene Claims"}. Der Evidenzstand lautet: ${escapeHtml(a.evidence_level)}</p></section><section><h3>${renderIcon("offen")}Was dieser Stand nicht belegt</h3><p>${escapeHtml(a.attribution)} ${escapeHtml(story.claims[0]?.uncertainty || "Vollständiger Kontext und spätere Wirkungsdaten bleiben zu prüfen.")}</p></section></div></article>
+    ${renderConsolidations(story)}
+    ${renderAtAGlance(story, { formatDate })}
     <article class="news-story-section news-story-summary" id="analyse"><p class="hero-kicker">${renderIcon("systemisch")}<span>Wirkungsökonomische Analyse</span></p><h2>Einordnung im Überblick</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p>${renderAffectedGroups(visuals)}</article>
     <article class="news-story-section" id="einordnung"><p class="hero-kicker">${renderIcon("folgen")}<span>Einordnung</span></p><h2>Warum diese Meldung relevant ist</h2><p class="news-analysis-copy">${escapeHtml(a.why_relevant)}</p>${renderDimensionMeters(a, { tendency: visuals?.tendency || null })}${visuals?.tendency ? '<p class="news-method-note">Tendenz je Dimension: analytische Einschätzung, ob Wirkungspotenzial oder Wirkungsrisiko überwiegt. Kein Nachweis eingetretener Wirkung.</p>' : ""}</article>
     <article class="news-story-section news-consequence-check" id="folgencheck"><p class="hero-kicker">${renderIcon("folgen")}<span>Folgencheck</span></p><h2>Wirkpfad und mögliche Folgen</h2><p class="news-method-note">Ausgangspunkt ist ausschließlich der oben gesicherte Sachverhalt. Der Folgencheck formuliert daraus begründete Wirkungspfade und Unsicherheiten; er ist kein Nachweis bereits eingetretener Wirkung.</p><p class="news-lead"><strong>Wirkungspotenzial:</strong> ${escapeHtml(a.impact_potential)}</p>${renderImpactPath(a, prose)}<h3>Risiken, Gegenläufe und Prüfgrenzen</h3>${riskList}</article>
