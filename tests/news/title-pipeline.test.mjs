@@ -16,13 +16,30 @@ import { setGeneratedDocument, cleanupChromeProfile } from "../../scripts/news/t
 
 const STORY = { story_id: "wt-1234567890abcdef", title: "Neue Netzinfrastruktur", source_summary: "Die Netzagentur berichtet über ein neues Verfahren für den Ausbau der Stromnetze. Die vorgesehene Regelung betrifft die Planung und Genehmigung zusätzlicher Stromleitungen.", topic: ["Energie"], claims: [], analysis: { status: "Entwurf", analysis_type: "ex_ante", human: { relevance: "mittel" } } };
 const MODEL = { type: "image", job_type: C.model, display_name: C.model_name, params: [{ name: "aspect_ratio", enum: ["16:9"] }, { name: "resolution", enum: ["2k"] }] };
-function png(width = 1200, height = 675) {
+function png(width = 1200, height = 675, shade = 0) {
   const chunk = (kind, bytes) => { const size = Buffer.alloc(4); size.writeUInt32BE(bytes.length); return Buffer.concat([size, Buffer.from(kind), bytes, Buffer.alloc(4)]); };
   const header = Buffer.alloc(13); header.writeUInt32BE(width); header.writeUInt32BE(height,4); header[8] = 8; header[9] = 6;
-  return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]), chunk("IHDR", header), chunk("IDAT", deflateSync(Buffer.alloc((width * 4 + 1) * height))), chunk("IEND", Buffer.alloc(0))]);
+  return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]), chunk("IHDR", header), chunk("IDAT", deflateSync(Buffer.alloc((width * 4 + 1) * height, shade))), chunk("IEND", Buffer.alloc(0))]);
 }
 function temp(t) { const dir = fs.mkdtempSync(path.join(os.tmpdir(), "woek-title-test-")); t.after(() => fs.rmSync(dir,{recursive:true,force:true})); return dir; }
 const asset = () => { const bytes = png(); return { ...inspectImage(bytes), bytes, model: C.model, prompt_version: C.prompt_version, generated_at: "2026-09-04T00:00:00Z" }; };
+test("immutable title assets use rendered byte hashes even when semantic input is unchanged", async t => {
+  const root = temp(t); const saved = new Map(); let shade = 0;
+  const prepare = createTitleImagePipeline({ root, allowGeneration: false,
+    raster: async (_svg, { width, height }) => ({ png: png(width, height, shade) }),
+    publish: async files => { for (const file of files) {
+      const name = path.basename(file), hash = digest(fs.readFileSync(file));
+      assert.ok(name.includes(hash.slice(0, 16)));
+      if (saved.has(name)) assert.equal(saved.get(name), hash);
+      saved.set(name, hash);
+    } },
+  });
+  const first = await prepare(STORY, { cardsOnly: true }); shade = 1;
+  const second = await prepare(STORY, { cardsOnly: true });
+  assert.equal(first.title_image.fingerprint, second.title_image.fingerprint);
+  assert.notEqual(first.title_image.wide.url, second.title_image.wide.url);
+  assert.equal(saved.size, 6);
+});
 function mockRun(calls, overrides = {}) {
   return async (args) => {
     calls.push(args);
