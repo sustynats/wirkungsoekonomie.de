@@ -20,6 +20,8 @@ export function sourceBindingWitness() {
   const units = JSON.parse(readFileSync(resolve(ROOT, LEDGER, 'source-units-p049-p056.json'), 'utf8')).records;
   const handoffPath = 'docs/parlament/audits/mv-spd-p53-handoff-5474946653.md';
   const handoff = readFileSync(resolve(ROOT, handoffPath), 'utf8');
+  const repairPath = 'docs/parlament/audits/mv-spd-p53-binding-delta-5543580667.md';
+  const repair = readFileSync(resolve(ROOT, repairPath), 'utf8');
   const find = id => units.find(unit => unit.source_unit_id === id);
   assert.equal(manifest.ledger_metadata.artifact.sha256, 'b2ed331e3bd89b93379df2f9a6adc5d3d10ddf635b0688673bc20c61cdca09bc');
   const discrepancies = [
@@ -60,15 +62,38 @@ export function sourceBindingWitness() {
     }
     return { ...witness, source_locator: parent.source_locator, parent_sha256: parent.source_text_sha256, source_page: parent.pdf_page, terminal_fach_decision: null, substitute_fach_authored: false };
   });
+  const corrected = discrepancies[0];
+  const exactReason = 'this sentence describes the strategic/system role and desired coherence of municipal energy infrastructure across supply security, climate protection and economic development. It does not itself specify a distinct intervention, instrument, resource allocation, delivery trigger, actor obligation or implementation decision. Therefore it is reviewed context/system-role framing, not a separately countable effect-bearing action.';
+  const repairedBinding = {
+    object_id: 'MV-SPD-2026-SU-00495-C02-' + corrected.actual_sha256.slice(0, 12),
+    supersedes_proposed_object_id: corrected.object_id,
+    parent_object_id: corrected.parent,
+    source_text: corrected.actual_text,
+    source_text_sha256: corrected.actual_sha256,
+    terminal_fach_state: 'NON_EFFECT_SYSTEM_ROLE_AND_GOAL_FRAME_REVIEWED',
+    zero_count: true,
+    exact_reason: exactReason,
+    authority_comment_id: 5543580667,
+  };
+  for (const exact of [corrected.actual_text, corrected.actual_sha256, repairedBinding.terminal_fach_state, 'zero_count = true', exactReason]) assert.ok(repair.includes(exact), 'REPAIR_AUTHORITY_BINDING_DRIFT');
+  assertExactSourceChild(find(corrected.parent), { text: repairedBinding.source_text, sha256: repairedBinding.source_text_sha256 });
+  for (const heading of discrepancies.slice(1)) {
+    assert.ok(repair.includes(heading.actual_text));
+    assert.ok(repair.includes(heading.actual_sha256));
+  }
   return {
     schema_version: 'woek-source-binding-witness-1.0',
     source_artifact: manifest.ledger_metadata.artifact,
     source_ledger: { path: LEDGER + 'manifest.json', file_sha256: sha256(readFileSync(resolve(ROOT, LEDGER, 'manifest.json'))) },
     authority: { issue: 240, comment_id: 5474946653, url: 'https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5474946653', path: handoffPath, file_sha256: sha256(handoff) },
     discrepancies,
-    gate: 'PASS_TRUTHFUL_NONZERO_SOURCE_BINDING_BLOCKER',
+    discrepancy_scope: 'HISTORICAL_HANDOFF_5474946653_NOT_CURRENT_BLOCKER',
+    repair_authority: { issue: 240, comment_id: 5543580667, url: 'https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5543580667', path: repairPath, file_sha256: sha256(repair) },
+    repaired_binding: repairedBinding,
+    gate: 'PASS_SOURCE_BINDING_REPAIR_VERIFIED',
     p1_p54_transaction_complete: false, p56_authorised: false,
-    required_external_delta: 'An exact source-bound correction/reference for SU00495-C02 is required before transferring the existing Fach to another text/hash. The two heading labels remain exactly as in the canonical ledger; preserving them requires no new substantive Fach. Do not re-author unaffected supplied Fach.',
+    required_external_delta: null,
+    pending_work: 'The P53 binding delta is supplied and verified, not an external blocker. Complete protected P1–P54 predecessor/approved-stock recovery and lossless materialisation; do not credit this preflight as transaction completion.',
   };
 }
 

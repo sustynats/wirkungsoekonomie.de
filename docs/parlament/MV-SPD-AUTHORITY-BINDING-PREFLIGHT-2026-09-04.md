@@ -32,7 +32,7 @@ Das Original-PDF wurde erneut direkt vom registrierten offiziellen Ursprung abge
 
 `node tools/check_mv_spd_authority_source_binding.mjs` liefert sämtliche genauen Locator-/Parent-/Text-/Hash-Belege und reproduziert die Ablehnung des falsch gebundenen Kindes. Dessen eigener Hash ist korrekt, der Text kommt aber nicht im Parent vor. Ein passender Eigenhash allein ist ausdrücklich kein Source-Fidelity-Nachweis. Mutationstests verhindern die Annahme eines fremden Kindes oder eines geänderten Parents. Erfolgreiche Textgleichheit allein erzeugt umgekehrt keine Fachfreigabe.
 
-Ein echter externer Bindungsdelta bzw. Verweis auf eine vorhandene Korrektur ist für **SU00495-C02** erforderlich. Der vorhandene Entscheid wird nicht eigenmächtig auf den anders formulierten Quellsatz übertragen. Die zwei Überschriften bleiben einfach im kanonischen Wortlaut erhalten; hierfür wird keine neue inhaltliche Fachprüfung verlangt. Keine Neufassung anderer gelieferter Fachentscheidungen.
+Für **SU00495-C02** war ein externer Bindungsdelta erforderlich. Dieser wurde anschließend ausdrücklich geliefert: **#240/5543580667**, Controller **#241/5543582832**. Der [unveränderte Reparatur-Handoff](audits/mv-spd-p53-binding-delta-5543580667.md) bindet den tatsächlichen Quellsatz an `NON_EFFECT_SYSTEM_ROLE_AND_GOAL_FRAME_REVIEWED`, zero-count, samt exakter Begründung. Die mechanische Ersatz-ID lautet `MV-SPD-2026-SU-00495-C02-800fbf3fffa1`. Der Validator prüft Wortlaut, Parent-Spanne, Hash, Rolle und Begründung gegen diesen Handoff und meldet `PASS_SOURCE_BINDING_REPAIR_VERIFIED`. Die historische fehlerhafte Bindung bleibt als Regressionsfall erhalten, ist aber **kein aktueller externer Blocker mehr**. Auch die beiden kanonischen Überschriften wurden im Delta ausdrücklich bestätigt; keine neue Fachentscheidung wird abgeleitet.
 
 ## Früher geschützter Bestand: Referenzlücke, kein pauschaler neuer Fach-Backlog
 
@@ -45,11 +45,11 @@ Der generische Ledger wird nicht als Fachautorität verwendet. Beispiel: SU00018
 ## Terminalität und weitere Arbeit
 
 - Technische Quellen-/Referenzinventur: vollständig, alle 965 Originalobjekte.
-- Bestätigte P53-Abweichungen: 3, davon 1 echter externer Text/Fach-Bindungsblocker und 2 technisch unverändert zu erhaltende kanonische Überschriften.
+- Historische P53-Abweichungen: 3; durch den späteren autoritativen Bindungsdelta geklärt. Kein verbleibender externer P53-Bindungsblocker.
 - P1–P54-Fachmaterialisierung: **nicht vollständig**, keine neuen Terminal-Zähler.
 - P56: **nicht autorisiert**. Kein Fortschritt aus Seitenarithmetik.
 - Berlin P24: autoritativer Handoff vorhanden; gemeinsame Residual-/Golden-Schreibtransaktion bleibt gemäß Controller hinter MV serialisiert.
 - Source-/Fach-/UI-/Release-Daten: unverändert.
 - `NO_NEW_VERCEL_BUILD=true`, keine Reservierung/Preview/Build/Deployment/Promotion.
 
-Externer Bindungsdelta ist bereits präzise in [#240/5543340788](https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5543340788) und [#241/5543349415](https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5543349415) angefordert. Vor jeder Fortsetzung neueste Kommentare lesen. Dieser Nachweis schließt den übergeordneten Fachauftrag nicht und versteckt keine noch ausstehende technische Arbeit.
+Der in [#240/5543340788](https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5543340788) angeforderte Delta ist mit [#240/5543580667](https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5543580667) geliefert und geprüft. Die vollständige Vorgänger-Rekonstruktion bleibt technische Arbeit. Erst nach erschöpfender Vorgänger-/freigegebener Bestandsprüfung darf eine tatsächlich nicht auffindbare frühe Freigabebindung als `PROTECTED_AUTHORED_REFERENCE_UNRESOLVED` mit endlicher Objektliste gemeldet werden; weder pauschal neu prüfen noch generische RNAA übernehmen. Vor jeder Fortsetzung neueste Kommentare lesen. Dieser Nachweis schließt den übergeordneten Fachauftrag nicht und versteckt keine noch ausstehende technische Arbeit.
