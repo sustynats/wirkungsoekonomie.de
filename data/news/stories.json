@@ -1,7 +1,679 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T21:21:52.225Z",
+  "updated_at": "2026-09-04T21:36:16.313Z",
   "stories": [
+    {
+      "story_id": "wt-a5874ae28ed5533f",
+      "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
+      "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+      "first_seen": "2026-09-04T16:15:33.000Z",
+      "last_updated": "2026-09-04T21:36:31.936Z",
+      "published_at": "2026-09-04T17:37:24.324Z",
+      "updated_at": "2026-09-04T21:36:31.936Z",
+      "topic": [
+        "Gesellschaft",
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+          "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:15:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89",
+          "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T16:15:33.000Z",
+          "ingested_at": "2026-09-04T16:51:42.103Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+          "title": "Liveticker Strom-Sabotage: Polizei verlässt Hambacher Forst",
+          "summary": "Nach Sabotageversuchen an Umspannwerken gab es einen Polizei-Einsatz am Hambacher Forst. Infos zu den Ermittlungen im Ticker.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T20:58:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "6a0d0c18f05574deeca8c7b390caadf7ac1c12b8de51e2ec1f392de4ad908b11",
+          "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T20:58:25.000Z",
+          "ingested_at": "2026-09-04T21:21:52.225Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a5874ae28ed5533f-v2-claim-1",
+          "story_id": "wt-a5874ae28ed5533f",
+          "claim": "Die Polizei hat den Hambacher Forst wieder verlassen, ohne den Tatverdächtigen gefunden zu haben.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "b21648818efc5d7690c4",
+              "checked_at": "2026-09-04T21:36:31.936Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T21:36:31.936Z"
+        },
+        {
+          "claim_id": "wt-a5874ae28ed5533f-v2-claim-2",
+          "story_id": "wt-a5874ae28ed5533f",
+          "claim": "Der WDR nennt einen 48-Jährigen, der für Sabotage-Akte an Umspannwerken in NRW und Brandenburg verantwortlich sein soll.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "455504b72492a0be9974",
+              "checked_at": "2026-09-04T21:36:31.936Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T21:36:31.936Z"
+        },
+        {
+          "claim_id": "wt-a5874ae28ed5533f-v2-claim-3",
+          "story_id": "wt-a5874ae28ed5533f",
+          "claim": "Über dem Hambacher Forst soll ein Hubschrauber mit Wärmebildkameras nach der verdächtigen Person suchen.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "excerpt_hash": "b5100ddb59b59bf708ac",
+              "checked_at": "2026-09-04T21:36:31.936Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T21:36:31.936Z"
+        }
+      ],
+      "event_id": "event-53de10df4f68e93ec96a",
+      "event_first_seen_at": "2026-09-04T16:51:42.103Z",
+      "event_detected_at": "2026-09-04T16:51:42.103Z",
+      "verification_started_at": "2026-09-04T21:36:16.946Z",
+      "publish_ready_at": "2026-09-04T21:36:31.936Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "wdr-nachrichten",
+              "wdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei den gesuchten Mann noch festnimmt oder identifiziert.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue amtliche oder belastbar bestätigte Festnahme- oder Fahndungsmeldung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c8043e94464f5d27",
+          "announced_at": "2026-09-04T16:15:33.000Z",
+          "follow_up_date": "2026-09-11T17:37:24.324Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "082dbecaaf96259681c105d37289101cde44a217f26e4c1c31f2059316657ef3",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-a64e08432a4adebe-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "a64e08432a4adebefff8bdabdad638e241835cc4012138bea9edd99d9cb8cad3"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-2d7207ad12ad5944-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "2d7207ad12ad59446d01bcfd97efd156bd4322df364675791a5a70e4f5187b63"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-894377f2ad5160e3-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "894377f2ad5160e300b7cbc2eff09793e03fdb445325be2e1561eb1f400e2ec6"
+        },
+        "source_visual": null,
+        "fingerprint": "30e322eb2eb6fd73e274fe3f4de436f16c34ac82a2b3ab2abd5e10d1879ba6c5",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T21:36:41.404Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Der WDR berichtet in einem Liveticker über einen größeren Polizeieinsatz am Hambacher Forst im Zusammenhang mit Sabotageversuchen an der Stromversorgung. Nach Angaben des Tickerttexts suchte die Polizei nach einem 48-Jährigen, der für Sabotage-Akte an Umspannwerken in NRW und Brandenburg verantwortlich sein soll. Am Hambacher Forst wurde ein Fahrzeug gefunden, das dem Mann gehören soll; Einsatzkräfte suchten im Wald nach Spuren und verließen ihn später wieder, ohne den Tatverdächtigen zu finden.\n\nDer Ticker hält mehrere Zwischenstände fest: Das Landeskriminalamt sicherte Spuren am mutmaßlichen Fahrzeug, die Polizei setzte den Einsatz am Abend zunächst fort und zog später wieder ab. Für die weitere Suche wurde ein Hubschrauber mit Wärmebildkameras angekündigt. Der WDR verweist zudem auf eine Pressekonferenz von Innenminister Herbert Reul und Bundesinnenminister Alexander Dobrindt.",
+      "analysis": {
+        "story_id": "wt-a5874ae28ed5533f",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Die Polizei hat den Hambacher Forst nach einer Suche ohne Treffer wieder verlassen. Der WDR ordnet den Einsatz den Ermittlungen zu Sabotage an Stromanlagen zu.",
+        "detail_summary": "Gesichert ist nach dem WDR-Ticker, dass die Polizei den Hambacher Forst nach einer Suche wieder verlassen hat, ohne den gesuchten Tatverdächtigen zu finden. Der Einsatz steht im Zusammenhang mit Sabotageversuchen an der Stromversorgung und der Fahndung nach einem 48-Jährigen, der laut Ticker für Sabotage-Akte an Umspannwerken in NRW und Brandenburg verantwortlich sein soll. Für die Einordnung ist relevant, dass es dabei um kritische Energieinfrastruktur und eine laufende Fahndung geht. Der Wirkpfad liegt zunächst in der Störung von Sicherheits- und Ermittlungsabläufen sowie möglichen Folgemaßnahmen an weiteren Orten. Mögliche Folgen sind eine Ausweitung der Fahndung, zusätzliche Sicherungsmaßnahmen und weitere Belastungen für den Betrieb betroffener Anlagen. Offen bleibt, ob und wann der Verdächtige gefasst wird; belastbare Aussagen zu Ursachen, Hintergründen und weiteren Beteiligten liefert der Ticker hier noch nicht.",
+        "why_relevant": "Die Meldung betrifft eine laufende Fahndung im Umfeld möglicher Angriffe auf kritische Strominfrastruktur und damit Sicherheitslage, Ermittlungsabläufe und mögliche Folgemaßnahmen.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Der Einsatz betrifft Polizeiarbeit, Fahndung und mögliche Gefährdungslagen mit unmittelbarem Bezug zu öffentlichen Sicherheitsinteressen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der Bezug zu Stromversorgung und Umspannwerken kann die Versorgungssicherheit berühren; konkrete Ausfälle nennt die Quelle hier nicht."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die öffentliche Sicherheitslage und staatliche Reaktion sind relevant, aber der Ticker berichtet noch keine institutionelle Entscheidung mit Normwirkung."
+        },
+        "importance": "hoch",
+        "impact_potential": "Kurzfristig kann der Fahndungsdruck steigen und der Schutz kritischer Infrastruktur verstärkt werden; bei weiterer Eskalation wären auch Betriebsabläufe der Energieversorgung betroffen.",
+        "impact_risks": [
+          "Weitere Sicherheitsmaßnahmen können Personal und Ressourcen binden.",
+          "Eine unklare Lage kann die Wahrnehmung von Bedrohung kritischer Infrastruktur erhöhen.",
+          "Ohne Festnahme bleibt der Ermittlungsdruck und die Unsicherheit bestehen."
+        ],
+        "mechanisms": [
+          "Fahndung und Polizeieinsatz verändern unmittelbar die Sicherheits- und Suchlage.",
+          "Der Bezug zu Umspannwerken kann zusätzliche Schutzmaßnahmen auslösen.",
+          "Öffentliche Aussagen von Innenministern verstärken die politische und operative Aufmerksamkeit."
+        ],
+        "first_order": [
+          "Polizei beendet die Suche im Wald vorerst ohne Festnahme.",
+          "Der Verdächtige bleibt vorläufig weiter gesucht."
+        ],
+        "second_order": [
+          "Weitere Suchorte oder Ermittlungsmaßnahmen werden wahrscheinlicher.",
+          "Betreiber kritischer Infrastruktur könnten Schutzmaßnahmen überprüfen."
+        ],
+        "third_order": [
+          "Eine länger anhaltende Bedrohungswahrnehmung kann Sicherheitskonzepte für Energieanlagen verschärfen.",
+          "Politisch kann der Fall Debatten über Schutz kritischer Infrastruktur anstoßen."
+        ],
+        "systemic_relevance": "Die Meldung hat Systembezug, weil sie eine mögliche Störung kritischer Energieinfrastruktur mit laufender staatlicher Gefahrenabwehr verbindet.",
+        "transformation_potential": "Aus der Meldung selbst ergibt sich kein Transformationsprozess; möglich sind aber verschärfte Sicherheitspraktiken rund um Umspannwerke.",
+        "resilience": "Kurzfristig belastet die Fahndung die Einsatzkräfte, zugleich zeigt die schnelle Suche eine funktionierende Reaktionsfähigkeit der Behörden.",
+        "side_effects": [
+          "Mehr Polizeipräsenz und Ressourcenbindung.",
+          "Mögliche Verunsicherung im Umfeld kritischer Anlagen."
+        ],
+        "uncertainties": [
+          "Ob der Gesuchte tatsächlich noch in der Gegend ist, bleibt offen.",
+          "Ob es weitere Beteiligte gibt, ist ungeklärt.",
+          "Konkrete Folgen für die Stromversorgung nennt die Quelle nicht."
+        ],
+        "evidence_level": "einzelquelle mit zeitnahen Zwischenständen; zentrale Lagebeschreibung ist direkt im Ticker belegt, Unabhängigkeit darüber hinaus nicht bestätigt",
+        "attribution": "Die Angaben stammen aus dem WDR-Liveticker und werden hier als berichtete Lage wiedergegeben, nicht als eigenständig verifiziertes Ergebnis.",
+        "watch_next": [
+          "Wird der Verdächtige gefunden?",
+          "Gibt es neue Angaben der Polizei oder LKA?",
+          "Werden weitere Einsatzorte genannt?"
+        ],
+        "reference_frameworks": [
+          "SDG 7",
+          "SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Gegenüber dem früheren Stand liegt ein konkreter Lagefortschritt vor: Die Polizei hat den Hambacher Forst ohne Festnahme verlassen. Das ist für die laufende Fahndung und den Schutz kritischer Infrastruktur materiell relevant."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Gesuchter",
+              "value": "48-Jährigen",
+              "unit": "Person",
+              "context": "laut WDR gesuchte Person im Zusammenhang mit den Ermittlungen",
+              "claim_id": "wt-a5874ae28ed5533f-claim-02"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "beschaeftigte",
+            "verbraucherinnen"
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "offen",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T17:37:24.324Z",
+          "content_hash": "94267b8238bca8c9f35bf0dac3d719411c527a320bd90dbb536bc05b74fabfb9",
+          "source_summary": "Nach dem Sabotageversuch an einem Umspannwerk in Dormagen meldet der WDR einen SEK-Einsatz beim Hambacher Forst. Im Ticker heißt es, das Spezialeinsatzkommando sei in der Nähe eines auffälligen Lasters vorgegangen; der gesuchte Tatverdächtige sei dort nicht im Fahrzeug gewesen. Später werde das Fahrzeug durchsucht, außerdem werde im angrenzenden Wald mit Spürhund gesucht.\n\nDer WDR berichtet zudem von einer Pressekonferenz in Düsseldorf mit Bundesinnenminister Alexander Dobrindt und NRW-Innenminister Herbert Reul. Dobrindt sprach dort von einer „hohen Bedrohungslage“. Reul erklärte, es sei unklar, ob der Mann allein oder gemeinsam mit anderen gehandelt habe; geprüft werde auch ein möglicher Zusammenhang mit einem Vorfall in Brandenburg.",
+          "analysis": {
+            "story_id": "wt-a5874ae28ed5533f",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Der WDR meldet einen SEK-Einsatz nahe dem Hambacher Forst nach dem Sabotageversuch in Dormagen. Der gesuchte Tatverdächtige wurde dort zunächst nicht in dem Fahrzeug angetroffen.",
+            "detail_summary": "Gesichert aus der Quelle ist vor allem, dass die Ermittlungen zu den mutmaßlichen Sabotagefällen in eine laufende Polizeilage übergegangen sind. Der WDR berichtet von einem SEK-Zugriff in der Nähe des Hambacher Forsts, bei dem der gesuchte Mann zunächst nicht im Fahrzeug war. Parallel dazu fand in Düsseldorf eine Pressekonferenz mit Dobrindt und Reul statt. Für die öffentliche Bewertung ist das relevant, weil es um mögliche Angriffe auf kritische Energieinfrastruktur und um den Zugriff staatlicher Sicherheitsorgane geht. Ein möglicher Wirkpfad liegt in erhöhtem Schutz, intensiveren Ermittlungen und möglichen Folgemaßnahmen für Betreiber und Behörden. Offen bleibt aber, ob der Verdächtige tatsächlich gefasst wird, ob es weitere Beteiligte gibt und wie tragfähig die Zuordnung der Taten ist.",
+            "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitsbehörden und mögliche weitere Ermittlungs- oder Schutzmaßnahmen. Damit sind potenzielle Folgen für Versorgungssicherheit und staatliche Reaktionsfähigkeit berührt.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Es geht um mögliche Gefahren für Menschen im Umfeld kritischer Infrastruktur und um staatliche Schutzmaßnahmen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Umwelt- oder Klimabezug ist in der Quelle nicht belegt; betroffen ist eher die Energieinfrastruktur."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Lage betrifft Sicherheitsbehörden, Ermittlungen und den Schutz kritischer Infrastruktur, also staatliche Korrekturfähigkeit."
+            },
+            "importance": "mittel",
+            "impact_potential": "Kurzfristig kann der Fall zu verstärkter Polizeipräsenz, Ermittlungsdruck und zusätzlichen Sicherungsmaßnahmen bei Infrastrukturbetreibern führen. Mittelbar könnte er die Debatte über Schutz kritischer Netze und die Fähigkeit des Staates, Sabotage zu verhindern, verschärfen.",
+            "impact_risks": [
+              "Mehr Aufwand und Kosten für Überwachung und Sicherung kritischer Anlagen",
+              "Mögliche Fehlzuordnungen oder vorschnelle Schlussfolgerungen vor Abschluss der Ermittlungen"
+            ],
+            "mechanisms": [
+              "Polizeiliche Zugriffslage und Fahndung",
+              "Kommunikation von Bedrohungslage durch Innenminister",
+              "mögliche Anpassung von Schutz- und Ermittlungsmaßnahmen"
+            ],
+            "first_order": [
+              "verstärkte Ermittlungen",
+              "erhöhte Aufmerksamkeit für Energieinfrastruktur",
+              "weitere Suche nach dem Verdächtigen"
+            ],
+            "second_order": [
+              "zusätzliche Sicherheitskosten für Betreiber",
+              "mögliche politische Forderungen nach härterem Schutz kritischer Infrastruktur"
+            ],
+            "third_order": [
+              "dauerhafte Anpassung von Schutzarchitekturen für Energieanlagen",
+              "mögliche Präzedenzwirkung für weitere Sabotagefälle"
+            ],
+            "systemic_relevance": "Der Vorgang berührt ein Systemfeld mit hoher Kopplung: Energieversorgung, Strafverfolgung und staatliche Gefahrenabwehr. Schon einzelne Sabotageverdachtsfälle können Schutzregime und Prioritäten für kritische Infrastruktur verschieben.",
+            "transformation_potential": "Kein Transformationsschub im engeren Sinn belegt; die Quelle zeigt eher einen akuten Sicherheits- und Reaktionsfall als eine strukturelle Reform.",
+            "resilience": "Die Meldung deutet auf Resilienztests des Energiesystems und der Sicherheitsbehörden hin, belegt aber noch keine tatsächliche Robustheitssteigerung.",
+            "side_effects": [
+              "mehr Unsicherheit im Umfeld betroffener Anlagen",
+              "mögliche Verlagerung von Ressourcen in Überwachung und Polizeieinsatz"
+            ],
+            "uncertainties": [
+              "Ob der Gesuchte tatsächlich gefasst wird, bleibt offen.",
+              "Ob ein Alleingang oder weitere Beteiligte vorliegen, ist ungeklärt.",
+              "Ein Zusammenhang mit Brandenburg wird nur als Prüfpunkt genannt."
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Alle zentralen Tatsachen beruhen derzeit auf der WDR-Darstellung im Liveticker; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
+            "watch_next": [
+              "Weitere amtliche Fahndungs- oder Festnahmemeldungen beobachten",
+              "Prüfen, ob sich der Verdacht gegen den Gesuchten erhärtet"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030: SDG 7, SDG 9, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Es handelt sich um eine neue operative Entwicklung in einem Sabotagefall mit Bezug zu kritischer Infrastruktur; die Beleglage ist vorläufig und nur einseitig, aber für eine Erstmeldung hinreichend."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-a5874ae28ed5533f-v1-claim-1",
+              "story_id": "wt-a5874ae28ed5533f",
+              "claim": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gab es einen SEK-Einsatz in der Nähe des Hambacher Forsts; der gesuchte Mann war im angegriffenen Fahrzeug nicht angetroffen worden.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "5673e2acd4538c90a4f6",
+                  "checked_at": "2026-09-04T17:37:24.324Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+                  "excerpt_hash": "773e0b6117bb9fb3317c",
+                  "checked_at": "2026-09-04T17:37:24.324Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T17:37:24.324Z"
+            },
+            {
+              "claim_id": "wt-a5874ae28ed5533f-v1-claim-2",
+              "story_id": "wt-a5874ae28ed5533f",
+              "claim": "Innenminister Reul und Bundesinnenminister Dobrindt informierten in Düsseldorf per Pressekonferenz über den Stand der Ermittlungen.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "773e0b6117bb9fb3317c",
+                  "checked_at": "2026-09-04T17:37:24.324Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "aa8768c674d4c2093909",
+                  "checked_at": "2026-09-04T17:37:24.324Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T17:37:24.324Z"
+            },
+            {
+              "claim_id": "wt-a5874ae28ed5533f-v1-claim-3",
+              "story_id": "wt-a5874ae28ed5533f",
+              "claim": "Reul sagte, unklar sei weiter, ob der Mann allein gehandelt habe und ob es einen Zusammenhang mit einem weiteren Anschlag in Brandenburg gebe.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+                  "excerpt_hash": "879991b2b0ed0a68f513",
+                  "checked_at": "2026-09-04T17:37:24.324Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "a40ee8ddbe8963b42af9",
+                  "checked_at": "2026-09-04T17:37:24.324Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T17:37:24.324Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+              "content_hash": "156b09cd46b3a63454c63c04077a62e97000ec5eb22bd28b856dc06e83e0503f"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T21:36:31.936Z",
+          "content_hash": "082dbecaaf96259681c105d37289101cde44a217f26e4c1c31f2059316657ef3",
+          "source_summary": "Der WDR berichtet in einem Liveticker über einen größeren Polizeieinsatz am Hambacher Forst im Zusammenhang mit Sabotageversuchen an der Stromversorgung. Nach Angaben des Tickerttexts suchte die Polizei nach einem 48-Jährigen, der für Sabotage-Akte an Umspannwerken in NRW und Brandenburg verantwortlich sein soll. Am Hambacher Forst wurde ein Fahrzeug gefunden, das dem Mann gehören soll; Einsatzkräfte suchten im Wald nach Spuren und verließen ihn später wieder, ohne den Tatverdächtigen zu finden.\n\nDer Ticker hält mehrere Zwischenstände fest: Das Landeskriminalamt sicherte Spuren am mutmaßlichen Fahrzeug, die Polizei setzte den Einsatz am Abend zunächst fort und zog später wieder ab. Für die weitere Suche wurde ein Hubschrauber mit Wärmebildkameras angekündigt. Der WDR verweist zudem auf eine Pressekonferenz von Innenminister Herbert Reul und Bundesinnenminister Alexander Dobrindt.",
+          "analysis": {
+            "story_id": "wt-a5874ae28ed5533f",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Polizei hat den Hambacher Forst nach einer Suche ohne Treffer wieder verlassen. Der WDR ordnet den Einsatz den Ermittlungen zu Sabotage an Stromanlagen zu.",
+            "detail_summary": "Gesichert ist nach dem WDR-Ticker, dass die Polizei den Hambacher Forst nach einer Suche wieder verlassen hat, ohne den gesuchten Tatverdächtigen zu finden. Der Einsatz steht im Zusammenhang mit Sabotageversuchen an der Stromversorgung und der Fahndung nach einem 48-Jährigen, der laut Ticker für Sabotage-Akte an Umspannwerken in NRW und Brandenburg verantwortlich sein soll. Für die Einordnung ist relevant, dass es dabei um kritische Energieinfrastruktur und eine laufende Fahndung geht. Der Wirkpfad liegt zunächst in der Störung von Sicherheits- und Ermittlungsabläufen sowie möglichen Folgemaßnahmen an weiteren Orten. Mögliche Folgen sind eine Ausweitung der Fahndung, zusätzliche Sicherungsmaßnahmen und weitere Belastungen für den Betrieb betroffener Anlagen. Offen bleibt, ob und wann der Verdächtige gefasst wird; belastbare Aussagen zu Ursachen, Hintergründen und weiteren Beteiligten liefert der Ticker hier noch nicht.",
+            "why_relevant": "Die Meldung betrifft eine laufende Fahndung im Umfeld möglicher Angriffe auf kritische Strominfrastruktur und damit Sicherheitslage, Ermittlungsabläufe und mögliche Folgemaßnahmen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Der Einsatz betrifft Polizeiarbeit, Fahndung und mögliche Gefährdungslagen mit unmittelbarem Bezug zu öffentlichen Sicherheitsinteressen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Der Bezug zu Stromversorgung und Umspannwerken kann die Versorgungssicherheit berühren; konkrete Ausfälle nennt die Quelle hier nicht."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die öffentliche Sicherheitslage und staatliche Reaktion sind relevant, aber der Ticker berichtet noch keine institutionelle Entscheidung mit Normwirkung."
+            },
+            "importance": "hoch",
+            "impact_potential": "Kurzfristig kann der Fahndungsdruck steigen und der Schutz kritischer Infrastruktur verstärkt werden; bei weiterer Eskalation wären auch Betriebsabläufe der Energieversorgung betroffen.",
+            "impact_risks": [
+              "Weitere Sicherheitsmaßnahmen können Personal und Ressourcen binden.",
+              "Eine unklare Lage kann die Wahrnehmung von Bedrohung kritischer Infrastruktur erhöhen.",
+              "Ohne Festnahme bleibt der Ermittlungsdruck und die Unsicherheit bestehen."
+            ],
+            "mechanisms": [
+              "Fahndung und Polizeieinsatz verändern unmittelbar die Sicherheits- und Suchlage.",
+              "Der Bezug zu Umspannwerken kann zusätzliche Schutzmaßnahmen auslösen.",
+              "Öffentliche Aussagen von Innenministern verstärken die politische und operative Aufmerksamkeit."
+            ],
+            "first_order": [
+              "Polizei beendet die Suche im Wald vorerst ohne Festnahme.",
+              "Der Verdächtige bleibt vorläufig weiter gesucht."
+            ],
+            "second_order": [
+              "Weitere Suchorte oder Ermittlungsmaßnahmen werden wahrscheinlicher.",
+              "Betreiber kritischer Infrastruktur könnten Schutzmaßnahmen überprüfen."
+            ],
+            "third_order": [
+              "Eine länger anhaltende Bedrohungswahrnehmung kann Sicherheitskonzepte für Energieanlagen verschärfen.",
+              "Politisch kann der Fall Debatten über Schutz kritischer Infrastruktur anstoßen."
+            ],
+            "systemic_relevance": "Die Meldung hat Systembezug, weil sie eine mögliche Störung kritischer Energieinfrastruktur mit laufender staatlicher Gefahrenabwehr verbindet.",
+            "transformation_potential": "Aus der Meldung selbst ergibt sich kein Transformationsprozess; möglich sind aber verschärfte Sicherheitspraktiken rund um Umspannwerke.",
+            "resilience": "Kurzfristig belastet die Fahndung die Einsatzkräfte, zugleich zeigt die schnelle Suche eine funktionierende Reaktionsfähigkeit der Behörden.",
+            "side_effects": [
+              "Mehr Polizeipräsenz und Ressourcenbindung.",
+              "Mögliche Verunsicherung im Umfeld kritischer Anlagen."
+            ],
+            "uncertainties": [
+              "Ob der Gesuchte tatsächlich noch in der Gegend ist, bleibt offen.",
+              "Ob es weitere Beteiligte gibt, ist ungeklärt.",
+              "Konkrete Folgen für die Stromversorgung nennt die Quelle nicht."
+            ],
+            "evidence_level": "einzelquelle mit zeitnahen Zwischenständen; zentrale Lagebeschreibung ist direkt im Ticker belegt, Unabhängigkeit darüber hinaus nicht bestätigt",
+            "attribution": "Die Angaben stammen aus dem WDR-Liveticker und werden hier als berichtete Lage wiedergegeben, nicht als eigenständig verifiziertes Ergebnis.",
+            "watch_next": [
+              "Wird der Verdächtige gefunden?",
+              "Gibt es neue Angaben der Polizei oder LKA?",
+              "Werden weitere Einsatzorte genannt?"
+            ],
+            "reference_frameworks": [
+              "SDG 7",
+              "SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber dem früheren Stand liegt ein konkreter Lagefortschritt vor: Die Polizei hat den Hambacher Forst ohne Festnahme verlassen. Das ist für die laufende Fahndung und den Schutz kritischer Infrastruktur materiell relevant."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Gesuchter",
+                  "value": "48-Jährigen",
+                  "unit": "Person",
+                  "context": "laut WDR gesuchte Person im Zusammenhang mit den Ermittlungen",
+                  "claim_id": "wt-a5874ae28ed5533f-claim-02"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "beschaeftigte",
+                "verbraucherinnen"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-a5874ae28ed5533f-v2-claim-1",
+              "story_id": "wt-a5874ae28ed5533f",
+              "claim": "Die Polizei hat den Hambacher Forst wieder verlassen, ohne den Tatverdächtigen gefunden zu haben.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "b21648818efc5d7690c4",
+                  "checked_at": "2026-09-04T21:36:31.936Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T21:36:31.936Z"
+            },
+            {
+              "claim_id": "wt-a5874ae28ed5533f-v2-claim-2",
+              "story_id": "wt-a5874ae28ed5533f",
+              "claim": "Der WDR nennt einen 48-Jährigen, der für Sabotage-Akte an Umspannwerken in NRW und Brandenburg verantwortlich sein soll.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "455504b72492a0be9974",
+                  "checked_at": "2026-09-04T21:36:31.936Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T21:36:31.936Z"
+            },
+            {
+              "claim_id": "wt-a5874ae28ed5533f-v2-claim-3",
+              "story_id": "wt-a5874ae28ed5533f",
+              "claim": "Über dem Hambacher Forst soll ein Hubschrauber mit Wärmebildkameras nach der verdächtigen Person suchen.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+                  "excerpt_hash": "b5100ddb59b59bf708ac",
+                  "checked_at": "2026-09-04T21:36:31.936Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T21:36:31.936Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+              "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+              "content_hash": "6a0d0c18f05574deeca8c7b390caadf7ac1c12b8de51e2ec1f392de4ad908b11"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T17:37:24.324Z",
+          "source_count": 2
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T21:36:31.936Z",
+          "source_count": 2
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-d7a0af1afc831caf",
       "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
@@ -17336,638 +18008,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_MATERIALITY_TOO_LOW"
         ]
-      }
-    },
-    {
-      "story_id": "wt-a5874ae28ed5533f",
-      "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
-      "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-      "first_seen": "2026-09-04T16:15:33.000Z",
-      "last_updated": "2026-09-04T17:37:24.324Z",
-      "published_at": "2026-09-04T17:37:24.324Z",
-      "updated_at": "2026-09-04T17:37:24.324Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "wdr-nachrichten",
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-          "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T16:15:33.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89",
-          "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
-          "publisher_id": "wdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Nordrhein-Westfalen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T16:15:33.000Z",
-          "ingested_at": "2026-09-04T16:51:42.103Z",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wdr-nachrichten",
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-          "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-          "summary": "Nach Sabotageversuchen an Umspannwerken gab es einen SEK-Einsatz beim Hambacher Forst. Aktuelle Infos zu den Ermittlungen im Ticker.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:14:36.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "156b09cd46b3a63454c63c04077a62e97000ec5eb22bd28b856dc06e83e0503f",
-          "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-          "publisher_id": "wdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Nordrhein-Westfalen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T17:14:36.000Z",
-          "ingested_at": "2026-09-04T17:21:09.783Z",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-a5874ae28ed5533f-v1-claim-1",
-          "story_id": "wt-a5874ae28ed5533f",
-          "claim": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gab es einen SEK-Einsatz in der Nähe des Hambacher Forsts; der gesuchte Mann war im angegriffenen Fahrzeug nicht angetroffen worden.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "5673e2acd4538c90a4f6",
-              "checked_at": "2026-09-04T17:37:24.324Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-              "excerpt_hash": "773e0b6117bb9fb3317c",
-              "checked_at": "2026-09-04T17:37:24.324Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T17:37:24.324Z"
-        },
-        {
-          "claim_id": "wt-a5874ae28ed5533f-v1-claim-2",
-          "story_id": "wt-a5874ae28ed5533f",
-          "claim": "Innenminister Reul und Bundesinnenminister Dobrindt informierten in Düsseldorf per Pressekonferenz über den Stand der Ermittlungen.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "773e0b6117bb9fb3317c",
-              "checked_at": "2026-09-04T17:37:24.324Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "aa8768c674d4c2093909",
-              "checked_at": "2026-09-04T17:37:24.324Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T17:37:24.324Z"
-        },
-        {
-          "claim_id": "wt-a5874ae28ed5533f-v1-claim-3",
-          "story_id": "wt-a5874ae28ed5533f",
-          "claim": "Reul sagte, unklar sei weiter, ob der Mann allein gehandelt habe und ob es einen Zusammenhang mit einem weiteren Anschlag in Brandenburg gebe.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-              "excerpt_hash": "879991b2b0ed0a68f513",
-              "checked_at": "2026-09-04T17:37:24.324Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "excerpt_hash": "a40ee8ddbe8963b42af9",
-              "checked_at": "2026-09-04T17:37:24.324Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T17:37:24.324Z"
-        }
-      ],
-      "event_id": "event-53de10df4f68e93ec96a",
-      "event_first_seen_at": "2026-09-04T16:51:42.103Z",
-      "event_detected_at": "2026-09-04T16:51:42.103Z",
-      "verification_started_at": "2026-09-04T17:37:02.186Z",
-      "publish_ready_at": "2026-09-04T17:37:24.324Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten",
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "wdr-nachrichten",
-              "wdr-nachrichten"
-            ],
-            "reason": "same_publisher"
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die Polizei den gesuchten Mann noch festnimmt oder identifiziert.",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue amtliche oder belastbar bestätigte Festnahme- oder Fahndungsmeldung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-c8043e94464f5d27",
-          "announced_at": "2026-09-04T16:15:33.000Z",
-          "follow_up_date": "2026-09-11T17:37:24.324Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "94267b8238bca8c9f35bf0dac3d719411c527a320bd90dbb536bc05b74fabfb9",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Nach dem Sabotageversuch an einem Umspannwerk in Dormagen meldet der WDR einen SEK-Einsatz beim Hambacher Forst. Im Ticker heißt es, das Spezialeinsatzkommando sei in der Nähe eines auffälligen Lasters vorgegangen; der gesuchte Tatverdächtige sei dort nicht im Fahrzeug gewesen. Später werde das Fahrzeug durchsucht, außerdem werde im angrenzenden Wald mit Spürhund gesucht.\n\nDer WDR berichtet zudem von einer Pressekonferenz in Düsseldorf mit Bundesinnenminister Alexander Dobrindt und NRW-Innenminister Herbert Reul. Dobrindt sprach dort von einer „hohen Bedrohungslage“. Reul erklärte, es sei unklar, ob der Mann allein oder gemeinsam mit anderen gehandelt habe; geprüft werde auch ein möglicher Zusammenhang mit einem Vorfall in Brandenburg.",
-      "analysis": {
-        "story_id": "wt-a5874ae28ed5533f",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Der WDR meldet einen SEK-Einsatz nahe dem Hambacher Forst nach dem Sabotageversuch in Dormagen. Der gesuchte Tatverdächtige wurde dort zunächst nicht in dem Fahrzeug angetroffen.",
-        "detail_summary": "Gesichert aus der Quelle ist vor allem, dass die Ermittlungen zu den mutmaßlichen Sabotagefällen in eine laufende Polizeilage übergegangen sind. Der WDR berichtet von einem SEK-Zugriff in der Nähe des Hambacher Forsts, bei dem der gesuchte Mann zunächst nicht im Fahrzeug war. Parallel dazu fand in Düsseldorf eine Pressekonferenz mit Dobrindt und Reul statt. Für die öffentliche Bewertung ist das relevant, weil es um mögliche Angriffe auf kritische Energieinfrastruktur und um den Zugriff staatlicher Sicherheitsorgane geht. Ein möglicher Wirkpfad liegt in erhöhtem Schutz, intensiveren Ermittlungen und möglichen Folgemaßnahmen für Betreiber und Behörden. Offen bleibt aber, ob der Verdächtige tatsächlich gefasst wird, ob es weitere Beteiligte gibt und wie tragfähig die Zuordnung der Taten ist.",
-        "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitsbehörden und mögliche weitere Ermittlungs- oder Schutzmaßnahmen. Damit sind potenzielle Folgen für Versorgungssicherheit und staatliche Reaktionsfähigkeit berührt.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Es geht um mögliche Gefahren für Menschen im Umfeld kritischer Infrastruktur und um staatliche Schutzmaßnahmen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umwelt- oder Klimabezug ist in der Quelle nicht belegt; betroffen ist eher die Energieinfrastruktur."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Lage betrifft Sicherheitsbehörden, Ermittlungen und den Schutz kritischer Infrastruktur, also staatliche Korrekturfähigkeit."
-        },
-        "importance": "mittel",
-        "impact_potential": "Kurzfristig kann der Fall zu verstärkter Polizeipräsenz, Ermittlungsdruck und zusätzlichen Sicherungsmaßnahmen bei Infrastrukturbetreibern führen. Mittelbar könnte er die Debatte über Schutz kritischer Netze und die Fähigkeit des Staates, Sabotage zu verhindern, verschärfen.",
-        "impact_risks": [
-          "Mehr Aufwand und Kosten für Überwachung und Sicherung kritischer Anlagen",
-          "Mögliche Fehlzuordnungen oder vorschnelle Schlussfolgerungen vor Abschluss der Ermittlungen"
-        ],
-        "mechanisms": [
-          "Polizeiliche Zugriffslage und Fahndung",
-          "Kommunikation von Bedrohungslage durch Innenminister",
-          "mögliche Anpassung von Schutz- und Ermittlungsmaßnahmen"
-        ],
-        "first_order": [
-          "verstärkte Ermittlungen",
-          "erhöhte Aufmerksamkeit für Energieinfrastruktur",
-          "weitere Suche nach dem Verdächtigen"
-        ],
-        "second_order": [
-          "zusätzliche Sicherheitskosten für Betreiber",
-          "mögliche politische Forderungen nach härterem Schutz kritischer Infrastruktur"
-        ],
-        "third_order": [
-          "dauerhafte Anpassung von Schutzarchitekturen für Energieanlagen",
-          "mögliche Präzedenzwirkung für weitere Sabotagefälle"
-        ],
-        "systemic_relevance": "Der Vorgang berührt ein Systemfeld mit hoher Kopplung: Energieversorgung, Strafverfolgung und staatliche Gefahrenabwehr. Schon einzelne Sabotageverdachtsfälle können Schutzregime und Prioritäten für kritische Infrastruktur verschieben.",
-        "transformation_potential": "Kein Transformationsschub im engeren Sinn belegt; die Quelle zeigt eher einen akuten Sicherheits- und Reaktionsfall als eine strukturelle Reform.",
-        "resilience": "Die Meldung deutet auf Resilienztests des Energiesystems und der Sicherheitsbehörden hin, belegt aber noch keine tatsächliche Robustheitssteigerung.",
-        "side_effects": [
-          "mehr Unsicherheit im Umfeld betroffener Anlagen",
-          "mögliche Verlagerung von Ressourcen in Überwachung und Polizeieinsatz"
-        ],
-        "uncertainties": [
-          "Ob der Gesuchte tatsächlich gefasst wird, bleibt offen.",
-          "Ob ein Alleingang oder weitere Beteiligte vorliegen, ist ungeklärt.",
-          "Ein Zusammenhang mit Brandenburg wird nur als Prüfpunkt genannt."
-        ],
-        "evidence_level": "attributed_single_source",
-        "attribution": "Alle zentralen Tatsachen beruhen derzeit auf der WDR-Darstellung im Liveticker; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
-        "watch_next": [
-          "Weitere amtliche Fahndungs- oder Festnahmemeldungen beobachten",
-          "Prüfen, ob sich der Verdacht gegen den Gesuchten erhärtet"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030: SDG 7, SDG 9, SDG 16"
-        ],
-        "publication_gate": {
-          "news_value": "material_update",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Es handelt sich um eine neue operative Entwicklung in einem Sabotagefall mit Bezug zu kritischer Infrastruktur; die Beleglage ist vorläufig und nur einseitig, aber für eine Erstmeldung hinreichend."
-        },
-        "publication_recommendation": true,
-        "visuals": null
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T17:37:24.324Z",
-          "content_hash": "94267b8238bca8c9f35bf0dac3d719411c527a320bd90dbb536bc05b74fabfb9",
-          "source_summary": "Nach dem Sabotageversuch an einem Umspannwerk in Dormagen meldet der WDR einen SEK-Einsatz beim Hambacher Forst. Im Ticker heißt es, das Spezialeinsatzkommando sei in der Nähe eines auffälligen Lasters vorgegangen; der gesuchte Tatverdächtige sei dort nicht im Fahrzeug gewesen. Später werde das Fahrzeug durchsucht, außerdem werde im angrenzenden Wald mit Spürhund gesucht.\n\nDer WDR berichtet zudem von einer Pressekonferenz in Düsseldorf mit Bundesinnenminister Alexander Dobrindt und NRW-Innenminister Herbert Reul. Dobrindt sprach dort von einer „hohen Bedrohungslage“. Reul erklärte, es sei unklar, ob der Mann allein oder gemeinsam mit anderen gehandelt habe; geprüft werde auch ein möglicher Zusammenhang mit einem Vorfall in Brandenburg.",
-          "analysis": {
-            "story_id": "wt-a5874ae28ed5533f",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Der WDR meldet einen SEK-Einsatz nahe dem Hambacher Forst nach dem Sabotageversuch in Dormagen. Der gesuchte Tatverdächtige wurde dort zunächst nicht in dem Fahrzeug angetroffen.",
-            "detail_summary": "Gesichert aus der Quelle ist vor allem, dass die Ermittlungen zu den mutmaßlichen Sabotagefällen in eine laufende Polizeilage übergegangen sind. Der WDR berichtet von einem SEK-Zugriff in der Nähe des Hambacher Forsts, bei dem der gesuchte Mann zunächst nicht im Fahrzeug war. Parallel dazu fand in Düsseldorf eine Pressekonferenz mit Dobrindt und Reul statt. Für die öffentliche Bewertung ist das relevant, weil es um mögliche Angriffe auf kritische Energieinfrastruktur und um den Zugriff staatlicher Sicherheitsorgane geht. Ein möglicher Wirkpfad liegt in erhöhtem Schutz, intensiveren Ermittlungen und möglichen Folgemaßnahmen für Betreiber und Behörden. Offen bleibt aber, ob der Verdächtige tatsächlich gefasst wird, ob es weitere Beteiligte gibt und wie tragfähig die Zuordnung der Taten ist.",
-            "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitsbehörden und mögliche weitere Ermittlungs- oder Schutzmaßnahmen. Damit sind potenzielle Folgen für Versorgungssicherheit und staatliche Reaktionsfähigkeit berührt.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Es geht um mögliche Gefahren für Menschen im Umfeld kritischer Infrastruktur und um staatliche Schutzmaßnahmen."
-            },
-            "planet": {
-              "relevance": "gering",
-              "rationale": "Ein direkter Umwelt- oder Klimabezug ist in der Quelle nicht belegt; betroffen ist eher die Energieinfrastruktur."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Die Lage betrifft Sicherheitsbehörden, Ermittlungen und den Schutz kritischer Infrastruktur, also staatliche Korrekturfähigkeit."
-            },
-            "importance": "mittel",
-            "impact_potential": "Kurzfristig kann der Fall zu verstärkter Polizeipräsenz, Ermittlungsdruck und zusätzlichen Sicherungsmaßnahmen bei Infrastrukturbetreibern führen. Mittelbar könnte er die Debatte über Schutz kritischer Netze und die Fähigkeit des Staates, Sabotage zu verhindern, verschärfen.",
-            "impact_risks": [
-              "Mehr Aufwand und Kosten für Überwachung und Sicherung kritischer Anlagen",
-              "Mögliche Fehlzuordnungen oder vorschnelle Schlussfolgerungen vor Abschluss der Ermittlungen"
-            ],
-            "mechanisms": [
-              "Polizeiliche Zugriffslage und Fahndung",
-              "Kommunikation von Bedrohungslage durch Innenminister",
-              "mögliche Anpassung von Schutz- und Ermittlungsmaßnahmen"
-            ],
-            "first_order": [
-              "verstärkte Ermittlungen",
-              "erhöhte Aufmerksamkeit für Energieinfrastruktur",
-              "weitere Suche nach dem Verdächtigen"
-            ],
-            "second_order": [
-              "zusätzliche Sicherheitskosten für Betreiber",
-              "mögliche politische Forderungen nach härterem Schutz kritischer Infrastruktur"
-            ],
-            "third_order": [
-              "dauerhafte Anpassung von Schutzarchitekturen für Energieanlagen",
-              "mögliche Präzedenzwirkung für weitere Sabotagefälle"
-            ],
-            "systemic_relevance": "Der Vorgang berührt ein Systemfeld mit hoher Kopplung: Energieversorgung, Strafverfolgung und staatliche Gefahrenabwehr. Schon einzelne Sabotageverdachtsfälle können Schutzregime und Prioritäten für kritische Infrastruktur verschieben.",
-            "transformation_potential": "Kein Transformationsschub im engeren Sinn belegt; die Quelle zeigt eher einen akuten Sicherheits- und Reaktionsfall als eine strukturelle Reform.",
-            "resilience": "Die Meldung deutet auf Resilienztests des Energiesystems und der Sicherheitsbehörden hin, belegt aber noch keine tatsächliche Robustheitssteigerung.",
-            "side_effects": [
-              "mehr Unsicherheit im Umfeld betroffener Anlagen",
-              "mögliche Verlagerung von Ressourcen in Überwachung und Polizeieinsatz"
-            ],
-            "uncertainties": [
-              "Ob der Gesuchte tatsächlich gefasst wird, bleibt offen.",
-              "Ob ein Alleingang oder weitere Beteiligte vorliegen, ist ungeklärt.",
-              "Ein Zusammenhang mit Brandenburg wird nur als Prüfpunkt genannt."
-            ],
-            "evidence_level": "attributed_single_source",
-            "attribution": "Alle zentralen Tatsachen beruhen derzeit auf der WDR-Darstellung im Liveticker; unabhängige Bestätigung liegt in den gelieferten Daten nicht vor.",
-            "watch_next": [
-              "Weitere amtliche Fahndungs- oder Festnahmemeldungen beobachten",
-              "Prüfen, ob sich der Verdacht gegen den Gesuchten erhärtet"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030: SDG 7, SDG 9, SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "material_update",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Es handelt sich um eine neue operative Entwicklung in einem Sabotagefall mit Bezug zu kritischer Infrastruktur; die Beleglage ist vorläufig und nur einseitig, aber für eine Erstmeldung hinreichend."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-a5874ae28ed5533f-v1-claim-1",
-              "story_id": "wt-a5874ae28ed5533f",
-              "claim": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gab es einen SEK-Einsatz in der Nähe des Hambacher Forsts; der gesuchte Mann war im angegriffenen Fahrzeug nicht angetroffen worden.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "5673e2acd4538c90a4f6",
-                  "checked_at": "2026-09-04T17:37:24.324Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-                  "excerpt_hash": "773e0b6117bb9fb3317c",
-                  "checked_at": "2026-09-04T17:37:24.324Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T17:37:24.324Z"
-            },
-            {
-              "claim_id": "wt-a5874ae28ed5533f-v1-claim-2",
-              "story_id": "wt-a5874ae28ed5533f",
-              "claim": "Innenminister Reul und Bundesinnenminister Dobrindt informierten in Düsseldorf per Pressekonferenz über den Stand der Ermittlungen.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "773e0b6117bb9fb3317c",
-                  "checked_at": "2026-09-04T17:37:24.324Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "aa8768c674d4c2093909",
-                  "checked_at": "2026-09-04T17:37:24.324Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T17:37:24.324Z"
-            },
-            {
-              "claim_id": "wt-a5874ae28ed5533f-v1-claim-3",
-              "story_id": "wt-a5874ae28ed5533f",
-              "claim": "Reul sagte, unklar sei weiter, ob der Mann allein gehandelt habe und ob es einen Zusammenhang mit einem weiteren Anschlag in Brandenburg gebe.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-                  "excerpt_hash": "879991b2b0ed0a68f513",
-                  "checked_at": "2026-09-04T17:37:24.324Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-                  "excerpt_hash": "a40ee8ddbe8963b42af9",
-                  "checked_at": "2026-09-04T17:37:24.324Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T17:37:24.324Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-              "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-              "content_hash": "156b09cd46b3a63454c63c04077a62e97000ec5eb22bd28b856dc06e83e0503f"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T17:37:24.324Z",
-          "source_count": 2
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-7383172017378959-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "73831720173789592fb63cc4ece2ed0f6951d00e50ad10d23898510a24bb4a87"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-e4f6f9e1b6fc97fa-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "e4f6f9e1b6fc97faa01a3c650dc0f6f48a7f202aaccb3713c498a77b3d323ce6"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-11c6e2cf82122735-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "11c6e2cf82122735f99efab6b828ae6ca3089aafc69cbfb4fe364d2bd5b9cba1"
-        },
-        "source_visual": null,
-        "fingerprint": "625d69741d9cc87fa8e42b611df0a60a06e81dbcab47915e43bfb030d1416644",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-04T17:38:07.397Z",
-        "status": "generated"
-      },
-      "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "f75d66eabe0bcafd17d820799cc9c7025ca6e7cf0a137145fae74c01ef466a35",
-        "checked_at": "2026-09-04T20:36:32.644Z",
-        "outcome": "no_material_update",
-        "expires_at": "2026-09-05T02:36:32.644Z",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T16:15:33.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89",
-            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:15:33.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-            "title": "Liveticker Strom-Sabotage: Polizei im Hambacher Forst",
-            "summary": "Nach Sabotageversuchen an Umspannwerken gibt es einen Polizei-Einsatz am Hambacher Forst. Infos zu den Ermittlungen im Ticker.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T20:01:32.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "9036f57c710be61c8095e83a44fb99a73b9c5fcc9ad043c21b258d7fba8cedc1",
-            "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T20:01:32.000Z",
-            "ingested_at": "2026-09-04T20:36:32.644Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T21:06:37.992Z",
-        "content_hash": "082dbecaaf96259681c105d37289101cde44a217f26e4c1c31f2059316657ef3",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T16:15:33.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89",
-            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:15:33.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-            "title": "Liveticker Strom-Sabotage: Polizei verlässt Hambacher Forst",
-            "summary": "Nach Sabotageversuchen an Umspannwerken gab es einen Polizei-Einsatz am Hambacher Forst. Infos zu den Ermittlungen im Ticker.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T20:58:25.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "6a0d0c18f05574deeca8c7b390caadf7ac1c12b8de51e2ec1f392de4ad908b11",
-            "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T20:58:25.000Z",
-            "ingested_at": "2026-09-04T21:21:52.225Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-        ],
-        "quality_retry_count": 2,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false
       }
     },
     {
@@ -92378,5 +92418,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T20:51:27.444Z"
+  "public_updated_at": "2026-09-04T21:36:16.313Z"
 }
