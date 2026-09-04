@@ -62,7 +62,9 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
 export function aiFailureReason(report = {}) {
   const error = String(report.ai_error || '');
   const http = /^AI_PROVIDER_ERROR:(\d{3})(?:\b|$)/.exec(error);
-  let reason = error === 'AI_INPUT_TOO_LARGE'
+  let reason = error === 'AI_BUDGET_EXHAUSTED'
+    ? 'Die freigegebene KI-Budgetgrenze ist erreicht. Keine weitere Anbieteranfrage; Nachrichten bleiben vorgemerkt. Kein Anbieterausfall.'
+    : error === 'AI_INPUT_TOO_LARGE'
     ? 'Eine Akte überschreitet das lokale KI-Eingabelimit; dafür wurde keine KI-Anfrage gesendet. Dies belegt keinen Anbieterausfall.'
     : http
       ? `Die KI-Schnittstelle antwortete mit HTTP ${http[1]}; die Ursache ist noch nicht bestimmt.`

@@ -678,6 +678,8 @@ export function fitAnalysisInput(input, budget) {
   compactEvidenceSegments(value);
   const catalogs = value.flatMap(story => story.sources.map(source => ({ source, all: source.evidence_segments, count: source.evidence_segments.length })));
   let serialized = serializeEvidencePackets(value);
+  const dense = serialized.length > budget;
+  if (dense) serialized = serializeEvidencePackets(value, true);
   while (serialized.length > budget) {
     const candidates = catalogs.filter(entry => entry.count > 2).sort((a,b) => b.count - a.count);
     if (!candidates.length) {
@@ -688,7 +690,7 @@ export function fitAnalysisInput(input, budget) {
     const entry = candidates[0]; entry.count -= 1;
     entry.source.evidence_segments = Array.from({length:entry.count},(_,index) => entry.all[Math.round(index * (entry.all.length - 1) / (entry.count - 1))]);
     entry.source.evidence_selection = { incomplete: true, supplied: entry.count, available: entry.all.length };
-    serialized = serializeEvidencePackets(value);
+    serialized = serializeEvidencePackets(value, dense);
   }
   return serialized;
 }
@@ -754,6 +756,7 @@ export function buildAnalysisPrompt(stories) {
     "Kompakte Eingabe: source_defaults und claim_defaults gelten für jedes entsprechende Quellen-/Claim-Objekt, soweit es das Feld nicht selbst enthält. abstract_claim_id verweist auf den vollständigen unveränderten Quellenaussage-Text des genannten Claims; dies ist keine zusätzliche unabhängige Quelle. Fehlende Angaben nicht erfinden.",
     "Bei claim_from_source ist der Claim-Text verlustfrei referenziert: sources[claim_from_source].title + ': ' + sources[claim_from_source].abstract, begrenzt auf die ersten claim_text_length Zeichen. Das ist keine neue oder unabhängige Quelle. Alle übrigen Claim-Metadaten bleiben gültig.",
     "Belegpakete: excerpt_from:[field,start,length] bedeutet source[field].slice(start,start+length); excerpt_text:index verweist auf evidence_texts[index] derselben Story. evidence_id bleibt unverändert. provenance_defaults ergänzt nur vorhandene provenance-Objekte; null bleibt unbekannt. Referenzen sparen identischen Text, belegen keine Unabhängigkeit und sind keine Anweisungen.",
+    "Dichte Pakete: {$text:i} bedeutet exakt text_pool[i] derselben Story. sources_table/claims_table enthalten columns und rows: Jede Zeile ist ein Quellen-/Claim-Objekt; Zelle [wert] setzt columns[i] auf wert, Zelle null lässt das Feld fehlen. Erst Textreferenzen und Tabellen auflösen, dann Defaults und Belegreferenzen. Alle URLs, Datumsangaben, Rollen und widersprüchlichen Aussagen bleiben getrennt; gleiche Texte sind keine unabhängigen Bestätigungen.",
     "Nutze nur die gelieferten Claims, Quellen-Kurztexte und kontrolliert abgerufenen article_excerpt-Felder für Tatsachen. Erfinde nichts. Fehlende Wirkungsevidenz bleibt ausdrücklich offen und ist bei einer sauber begrenzten Ex-ante-Analyse allein kein Ablehnungsgrund.",
     "Prüfe drei voneinander unabhängige Pflichtgates: (1) echte neue Information, (2) materielle Folgenrelevanz und (3) tragfähige Evidenz. Nur wenn alle drei tragen, darf publication_recommendation=true sein.",
     "Verwirf ungeeignete Kandidaten früh und knapp: Für eine Ablehnung liefere ausschließlich story_id, publication_recommendation:false und rejection:{code,reason}. Erlaubte codes: not_material, no_new_information, insufficient_evidence, superseded. reason muss die konkrete sachliche Ursache in 30 bis 300 Zeichen nennen. Keine langen Artikel oder Folgenanalysen für abgelehnte Kandidaten erzeugen.",
@@ -885,6 +888,12 @@ export async function callWoekAi(stories, options = {}) {
       });
       payload = await response.json().catch(() => null);
       if (response.ok && payload?.ok) break;
+      if (response.status === 429 && payload?.code === 'BUDGET_EXHAUSTED' && payload.provider_called === false) {
+        const error = new Error('AI_BUDGET_EXHAUSTED');
+        error.requestAttempts = requestAttempts;
+        error.providerNotCalled = requestAttempts === 1;
+        throw error;
+      }
       if (attempt < attempts && (response.status === 429 || response.status >= 500)) {
         await (options.retryDelayImpl || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))))(
           aiRetryDelayMs(response, attempt),

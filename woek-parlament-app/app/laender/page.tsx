@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { formatElectionDate, governmentLifecycleLabel, lifecycleLabel, stateJurisdictions, stateSlug } from "@/lib/autopilot/registry";
 import { statePublicContent } from "@/lib/states/public-content";
+import { PortalSectionHeader } from "@/app/components/PortalLanding";
+import { StateCartogram } from "@/app/components/StateCartogram";
+import { InstitutionRegisterLink } from "@/app/components/InstitutionRegisterLink";
 
 export const metadata = {
   title: "Bundesländer",
@@ -22,18 +25,19 @@ export default function StatesPage() {
   const operationalAdapterCount = stateJurisdictions.filter((jurisdiction) => jurisdiction.monitoring_enabled).length;
   return (
     <div className="shell content-page states-page">
-      <header className="page-intro">
-        <p className="eyebrow">Bundesländer</p>
-        <h1>16 Länder. Ein Prüfstandard. Unterschiedlicher Fachstand.</h1>
-        <p className="lead">Die Übersichtsseite zeigt nicht nur, was vorhanden ist, sondern ebenso klar, was noch fehlt. Eine registrierte Jurisdiktion ist keine fertige Wirkungsanalyse - und ein initialer Materialitätsreview ist keine vollständige Wahlprogrammanalyse.</p>
-      </header>
+      <PortalSectionHeader eyebrow="Bundesländer" title="16 Länder. Ein Prüfstandard. Unterschiedlicher Fachstand." lead="Die Übersichtsseite zeigt nicht nur, was vorhanden ist, sondern ebenso klar, was noch fehlt." />
 
+      <section className="portal-area-visual" data-portal-area-visual aria-labelledby="states-cartogram-title"><h2 id="states-cartogram-title">Fachstand auf einen Blick</h2><StateCartogram /></section>
+      <p><InstitutionRegisterLink level="land">Landesbezogene Akten im gemeinsamen Register</InstitutionRegisterLink></p>
+      <details className="portal-context" id="states-coverage-context"><summary>Abdeckung, Grenzen und bisherigen Einführungstext lesen</summary>
+      <p>Die Übersichtsseite zeigt nicht nur, was vorhanden ist, sondern ebenso klar, was noch fehlt. Eine registrierte Jurisdiktion ist keine fertige Wirkungsanalyse - und ein initialer Materialitätsreview ist keine vollständige Wahlprogrammanalyse.</p>
       <section className="notice" aria-labelledby="states-coverage-status">
         <strong id="states-coverage-status">{substantiveStateSlugs.size} Länder mit substanziellem öffentlichem Fachstand · {openStateCount} Länder ausdrücklich noch offen.</strong>
         <p>Sachsen-Anhalt ist die Blaupause für Wahlprogrammanalysen und erhält die neue Editorial-Schicht mit Gesamtzusammenfassung, Key Findings, Richtung und Evidenz. Baden-Württemberg und Rheinland-Pfalz besitzen initiale Regierungsfachreviews. Berlin und Mecklenburg-Vorpommern besitzen materialitätsorientierte Wahlprogrammreviews, aber noch keine vollständige Auswertung aller zugelassenen Programme. Für die übrigen Länder wird kein generischer Ersatztext als Analyse ausgegeben.</p>
         <p>Für {operationalAdapterCount} von {stateJurisdictions.length} Ländern ist im aktuellen Portalstand bereits ein vollständig operationalisierter amtlicher Quellenadapter nachgewiesen. Vorbereitete Wahl- und Fachbestände werden davon getrennt ausgewiesen.</p>
       </section>
 
+      </details>
       <section className="states-principles" aria-label="Qualitätsregeln des Länderportals">
         <article><span aria-hidden="true">01</span><h2>Vollständigkeit sichtbar</h2><p>Quelle registriert, initial geprüft und vollständig analysiert sind unterschiedliche Reifestufen. Sie werden nicht mehr sprachlich vermischt.</p></article>
         <article><span aria-hidden="true">02</span><h2>Richtung braucht Begründung</h2><p>Positiv, negativ, ambivalent oder offen wird nur mit objektspezifischem Wirkpfad gezeigt. Evidenz bleibt davon getrennt.</p></article>

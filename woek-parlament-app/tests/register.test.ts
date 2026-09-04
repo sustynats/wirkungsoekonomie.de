@@ -64,6 +64,10 @@ test("institutional entry has a fixed cross-page register destination and normal
   assert.doesNotMatch(component, /SamePageStateLink|scroll=\{false\}|router\.push/);
   for (const area of ["bundestag", "bundesregierung", "laender", "eu"]) {
     const page = readFileSync(`app/ebenen/${area}/page.tsx`, "utf8");
-    assert.match(page, /<InstitutionRegisterLink level=/);
+    if (area === "laender") {
+      assert.match(page, /<StatesPage/);
+      assert.match(page, /from "@\/app\/laender\/page"/);
+      assert.match(readFileSync("app/laender/page.tsx", "utf8"), /<InstitutionRegisterLink level="land"/);
+    } else assert.match(page, /<InstitutionRegisterLink level=/);
   }
 });
