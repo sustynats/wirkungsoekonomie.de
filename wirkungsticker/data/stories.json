@@ -1,7 +1,102 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T14:12:28.186Z",
+  "updated_at": "2026-09-04T14:36:55.366Z",
   "stories": [
+    {
+      "story_id": "wt-d02cf2fc303cef4f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d02cf2fc303cef4f-a5bb632f0b9eb906-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d02cf2fc303cef4f-b30b6d0c98b6f804-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d02cf2fc303cef4f-66cbc38c4a3a70ce-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "migration-frontex-unterstutzt-frankreich-bei-einsatzen-im-armelkanal-3cef4f",
+      "title": "Migration - Frontex unterstützt Frankreich bei Einsätzen im Ärmelkanal",
+      "source_summary": "Frontex soll nach Angaben des Deutschlandfunks künftig Frankreich bei Such- und Rettungseinsätzen im Ärmelkanal und in der Nordsee unterstützen. Genannt werden außerdem von Spanien und Litauen ausgeliehene Schiffe für den Einsatz.\n\nDie Entscheidung sei nach einem Treffen von Frankreichs Präsident Macron mit dem britischen Premierminister Burnham gefallen, bei dem auch Migrationsfragen beraten worden sei. Der Bericht verweist zudem auf ein jüngst geschlossenes Grenzsicherungs-Abkommen zwischen London und Paris sowie auf eine Regelung zum Austausch von Migranten ohne Papiere und Asylsuchenden mit familiären Bindungen.",
+      "summary": "Frontex soll Frankreich künftig bei Einsätzen im Ärmelkanal und in der Nordsee unterstützen. Der Bericht nennt außerdem ein französisch-britisches Grenzsicherungs-Abkommen und ausgeliehene Schiffe aus Spanien und Litauen.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle, dass Frontex Frankreich bei Such- und Rettungseinsätzen im Ärmelkanal und in der Nordsee unterstützen soll. Der Bericht ordnet das in eine jüngere Vereinbarung zwischen London und Paris ein, die illegale Überfahrten begrenzen soll. Außerdem werden Schiffe aus Spanien und Litauen als Teil des Einsatzes genannt. Für die Wirkung ist das relevant, weil sich damit operative Kapazitäten, Zuständigkeiten und Kooperationsmuster im Migrations- und Grenzkontext verändern können. Ein möglicher Wirkpfad führt über mehr maritime Präsenz zu veränderten Kontrollen, Rettungsabläufen und Rückführungspraktiken. Unklar bleibt, wie groß der tatsächliche Umfang des Einsatzes ist und ob die angekündigte Unterstützung messbar zu weniger Überfahrten oder zu anderen Verlagerungseffekten führt; dazu liegt hier nur eine einzelne journalistische Quelle vor.",
+      "why_relevant": "Die Meldung betrifft eine konkrete Änderung in der grenz- und migrationspolitischen Praxis im Ärmelkanal, also einen Bereich mit direkter Relevanz für Zuständigkeiten, Einsätze und mögliche Folgeeffekte auf Mensch und Staat.",
+      "topic": [
+        "Europa"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Migranten, Einsatzkräfte und Küstenregionen; der Eingriff betrifft Rettung und Kontrolle auf See."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist aus der Quelle nicht ersichtlich."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Maßnahme berührt grenzpolitische Kooperation und staatliche Zuständigkeiten, aber keine institutionelle Grundentscheidung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Einsatzgebiet",
+            "value": "Ärmelkanal",
+            "unit": "Ort",
+            "context": "Ort des angekündigten Frontex-Einsatzes"
+          }
+        ],
+        "affected_groups": [
+          "unternehmen",
+          "staat",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T14:33:35.000Z",
+      "last_updated": "2026-09-04T14:38:33.214Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-86e467282b4359844579",
+      "source_published_at": "2026-09-04T14:33:35.000Z",
+      "published_at": "2026-09-04T14:38:33.214Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/frontex-unterstuetzt-frankreich-bei-einsaetzen-im-aermelkanal-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:33:35.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-7ae0b9f22404b684",
       "title_image": {
