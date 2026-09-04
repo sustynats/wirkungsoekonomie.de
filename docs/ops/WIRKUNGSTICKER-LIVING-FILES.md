@@ -17,6 +17,14 @@ entfernt. Die Eingabegrenze und das Fakten-/Relevanzgate bleiben unverändert.
 
 `living-files.mjs` trennt Dokumentidentität, konkreten Vorgang und bloßen Themenbezug. `clusterItems()` löst bekannte Akten zuerst auf, bevor unbekannte Feedmeldungen neue Cluster bilden. Quellenpriorität und Reihenfolge dürfen eine bekannte Aktenidentität nicht übergehen. Historische Alias-Quellen führen zur fortgeführten Akte.
 
+Schon davor verwirft der Lauf unveränderte Wiederholungen über kanonische URL,
+Artikel-ID und Inhalts-Hash. Gleichlautende Agentur- oder Medienkopien werden zu
+einem Recherchecluster mit gekennzeichneter Abhängigkeit, nicht zu mehreren
+KI-Aufrufen oder mehreren Belegen unabhängiger Bestätigung. Eine unveränderte
+Wiederholung erzeugt keine Kandidatenakte, keine KI-Kosten, keine
+Lageakten-Aktualisierung, keine neue Feedposition und keinen Push. Dieses
+Verhalten ist ein automatischer Regressionstest und Release-Gate.
+
 - Trackingparameter und Fragmente ändern die Dokumentidentität nicht. Bei Stern, Spiegel und Tagesspiegel wird die stabile Artikel-ID auch bei geänderter URL-Überschrift erkannt; sonst bleiben bedeutungstragende URL-Parameter erhalten.
 - Konkreter Ort, Gegenstand und Zeitfenster begrenzen die Zuordnung. Herausgeberregionen sind keine Ereignisorte. Die Herkunft eines Bekennerschreibens ist ebenfalls nicht automatisch Tatort.
 - Besonders abgesichert ist die aktuelle Sabotage-Berichterstattung: ein Umspannwerk-Vorgang am selben expliziten Ort innerhalb von sieben Tagen kann dieselbe Akte fortsetzen. Andere Orte, erkennbare weitere Angriffe, ortsübergreifende Sammelmeldungen und Schutzentscheidungen bilden keine automatische Ereignisunion.
@@ -46,6 +54,32 @@ npm run news:validate
 
 Die Migration ist idempotent. Vor dem Release wird sie auf dem jeweils neuesten kanonischen Stand ausgeführt, nicht durch Zurückkopieren älterer kompletter Datensätze.
 
+## Automatische Lageakten oberhalb einzelner Wirkungsakten
+
+`case-files.mjs` ergänzt eine reine Darstellungsebene. Sie verändert keine Story,
+keine Quelle, keinen Claim, keine Ereignis-ID und keine Version. Zunächst bleiben
+zwei Meldungen getrennt im Feed. Ab drei sicher zusammenhängenden Entwicklungen
+bildet der Build rückwirkend eine Lageakte und zeigt im Feed nur noch ihren
+aktuellsten Stand. Die bisherigen Detail-URLs bleiben erreichbar und zeigen den
+vollständigen chronologischen Verlauf mit Link zum aktuellen Stand.
+
+Die Zuordnung arbeitet über den gesamten veröffentlichten Bestand ohne
+handgeschriebene Themenausnahmen: gemeinsame Rubrik, seltene gemeinsame
+Schlüsselbegriffe, Titelüberlappung, ein erkennbar fortlaufender Vorgang und ein
+enges Zeitfenster sind Pflicht. Bei besonders starker Benennung darf ein Vorgang
+auch nach einer ruhigeren Phase fortgesetzt werden. Breite Begriffe wie Angriff,
+Energie oder Nachricht genügen nicht. Die Mindestschwelle verhindert, dass eine
+einzelne ähnliche Meldung sofort eine Themenakte erzeugt.
+
+Die Lageakte ist keine Ereignisfusion. Mehrere Anschläge oder Entscheidungen
+können unter derselben Nachrichtenlage erscheinen, bleiben in der Zeitleiste
+aber als eigenständige Meldungen mit eigenen Belegen und Analysen erhalten.
+Eine neue materielle Entwicklung übernimmt als aktueller Stand die Karte und
+deren Aktualisierungszeit; dadurch rückt genau eine Lageakte im Feed nach oben.
+Wiederholungen ohne neue Information ändern weder Position noch Push-Zähler.
+RSS, Atom, JSON Feed, Web-App und Push verwenden dieselbe sichtbare
+Lageaktenansicht. Alte Meldungen bleiben über ihre URLs nachvollziehbar.
+
 ## Verwandte Nachrichten
 
 Push verwendet den Feed des erfolgreich veröffentlichten Artefakts, nicht die
@@ -64,5 +98,10 @@ Detailseiten zeigen höchstens fünf passende aktive Akten. Spezifische Gegensta
 - Übergreifender WDR-Bericht zu mehreren Orten sowie separate Schutzentscheidungen bleiben eigenständige Akten.
 - Regressionstests prüfen Reihenfolge, Orts- und Ländergrenzen, geänderte Artikel-URLs, Wiederholbarkeit, Erhalt historischer Daten, serverseitige Retry-Sperre und Versionierung.
 - Browserabnahme prüft mobile/desktop Darstellung und Leseweg über Themenverweise.
+- Rückwirkende Korpusprüfung: Die zusammenhängende Stromnetz-/Umspannwerk-Lage
+  wird als eine Lageakte dargestellt; allgemeine Cyberangriffe, internationale
+  Angriffe und bloße Hintergrundtexte bleiben getrennt. Ein synthetischer,
+  anders benannter Insolvenzfall belegt, dass die Regel nicht auf dieses Thema
+  zugeschnitten ist.
 
 Die eigenständige Akademie-Analytics-Erweiterung gehört nicht zu dieser Pages-Veröffentlichung. Das Vercel-Kostengate hat am 4. September weiterhin `NO_NEW_VERCEL_BUILD=true` gemeldet (vier Slots verbraucht, laufender Zeitraum bis 19. September). Keine Umgehung, kein Build und keine neue Datenerhebung hierfür.
