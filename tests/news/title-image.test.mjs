@@ -56,7 +56,7 @@ test("Editorial rendert Motiv, Kennzeichnung und eingebettete Fonts", () => {
   assert.match(result.svg, /@font-face\{font-family:"Source Serif 4";font-weight:700/);
   assert.match(result.svg, /url\(data:font\/woff2;base64,/);
   assert.match(result.svg, /WIRKUNG AUF/);
-  assert.match(result.svg, /fill="#07152C" fill-opacity="0.92"/);
+  assert.match(result.svg, /fill="#07152C" fill-opacity="0.62"/);
 });
 
 test("Editorial panel shares card coordinates in all sizes, including headline-free wide", () => {

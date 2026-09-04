@@ -263,7 +263,7 @@ const DIMENSION_COLORS = { human: PALETTE.dimHuman, planet: PALETTE.dimPlanet, d
 function impactPanel(u, { x, y, width, height, dimensions, status, analysisType, horizontal = false, overlay = false }) {
   const pad = 26 * u;
   const parts = [];
-  parts.push(`<rect data-impact-panel="true" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${width.toFixed(1)}" height="${height.toFixed(1)}" rx="${(18 * u).toFixed(1)}" fill="${overlay ? PALETTE.navyDeep : PALETTE.white}" fill-opacity="${overlay ? "0.92" : "0.07"}" stroke="${PALETTE.white}" stroke-opacity="0.16"/>`);
+  parts.push(`<rect data-impact-panel="true" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${width.toFixed(1)}" height="${height.toFixed(1)}" rx="${(18 * u).toFixed(1)}" fill="${overlay ? PALETTE.navyDeep : PALETTE.white}" fill-opacity="${overlay ? "0.62" : "0.07"}" stroke="${PALETTE.white}" stroke-opacity="0.16"/>`);
   parts.push(textLine("WIRKUNG AUF", x + pad, y + pad + 11 * u, "sans-700", 12.5 * u, PALETTE.gold, { letterSpacing: 2 * u }));
   const rowsTop = y + pad + 34 * u;
   const keys = Object.keys(DIMENSIONS);

@@ -164,6 +164,11 @@ test("web-wide variant preserves semantic HTML headline without repeating title 
   assert.doesNotMatch(result.svg,/>Netzinfrastruktur<\/text>/); assert.match(result.svg,/WIRKUNGSTICKER/);
   assert.match(renderTitleImageFromStory(STORY,{size:"og",fonts:"none"}).svg,/>Netzinfrastruktur<\/text>/);
 });
+test("editorial panel is translucent while its readable content remains opaque",()=>{
+  const {svg}=renderTitleImageFromStory(STORY,{size:"wide",mode:"editorial",fonts:"none",image:{src:`data:image/png;base64,${png().toString('base64')}`}});
+  assert.match(svg, /data-impact-panel="true"[^>]*fill-opacity="0\.62"/);
+  assert.doesNotMatch(svg, /<g[^>]*opacity="0\.62"/);
+});
 test("large inline originals use bounded CDP frames and reconstruct exactly",async()=>{
   const svg='<svg><image href="data:image/png;base64,'+'A'.repeat(8*1024*1024)+'"/></svg>';
   let rebuilt;

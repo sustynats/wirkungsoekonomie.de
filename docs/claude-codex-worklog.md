@@ -9,6 +9,12 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ## 2026-09-03
 
+### 2026-09-04 · Codex · Bildabnahme und halbtransparenter MPD-Overlay (PR #348)
+- **Abnahme:** Neun freigegebene Bestandsmotive genau einmal mit Nano Banana Pro angefragt (18 Credits reserviert). Sechs konkrete Motive nach Hash-, OCR- und Sichtprüfung übernommen. Zwei Anbieterfehler bleiben ohne neue kostenpflichtige Wiederholung; ein Motiv mit erfundenen Beschriftungen wurde zusätzlich manuell gesperrt. Bei diesen drei Akten bleibt das bisherige Original erhalten; private Journale/Originale sind gesichert.
+- **Overlay:** Alle neun aktuellen Editorials in OG/Wide/Square mit `woek-title-3-glass` neu gerendert: Panel 62 % deckend, Hintergrund 38 % sichtbar, Beschriftung und Meter vollständig deckend. Die sechs freigegebenen Originale wurden lokal wiederverwendet, keine zweite Generierungsrunde. Unveränderliche Medien liegen in GitHub Releases.
+- **Oracle:** Adapter und konkrete Promptvorgaben ausgerollt, OCR auf einen Thread und 30 Sekunden je Durchgang begrenzt; Qualitätsanforderungen unverändert. Backup `backups-title-20260904-CTsfZ6/adapter-before.tgz`, Healthcheck 200, unberechtigter Bildaufruf 403. Temporäre SSH-Regel nach Wartung entfernt, übrige Netzwerkregeln unverändert. Ein 502 während des Neustarts blieb als degradierter Nachrichtenlauf mit erhaltener Queue sichtbar; kein stiller Erfolgsstatus.
+- **Geprüft:** 152 News-Tests und echte PNG-Sichtprüfung. Finale Main-Synchronisierung, PR-/Pages-Gates und öffentliche Release-Verifikation folgen. Keine Änderung an Quellenfiltern, KI-/Credit-Limits oder Vercel.
+
 ### 2026-09-04 · Codex · Freigegebene Erneuerung vorhandener Symbolbilder
 - **Auftrag:** Nach ausdrücklicher Nutzerfreigabe bestehende abstrakte Motive durch konkrete, nachrichtenbezogene Symbolbilder ersetzen; sensible Themen bleiben Wirkungskarten.
 - **Umsetzung:** Begrenzter opt-in `--refresh-editorial`, persistente Restqueue, revisionsgebundene Oracle-Journale und unveränderte Credit-Limits. Alte Bilder bleiben bis zum vollständigen Erfolg sichtbar; alte Originale und Journalhistorie erhalten. Keine neue Meldung/Push allein durch Bildwechsel.
