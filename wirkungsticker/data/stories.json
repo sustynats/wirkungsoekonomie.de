@@ -1,7 +1,137 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T05:42:25.578Z",
+  "updated_at": "2026-09-04T06:06:19.579Z",
   "stories": [
+    {
+      "story_id": "wt-4fb94d2cebfca746",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-fac6ccc74a779aae-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-fac6ccc74a779aae-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-fac6ccc74a779aae-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+      "source_summary": "Mehrere Rundfunk- und Nachrichtenmeldungen berichten über einen erneuten verdächtigen Fund an einem Umspannwerk in Dormagen. Laut den Berichten wurden dort Abschussvorrichtungen entdeckt; zunächst war von einem verdächtigen Gegenstand die Rede, inzwischen spricht die Polizei von einem Sabotagedelikt beziehungsweise Sabotageversuch.\n\nEin Bericht nennt außerdem ein Bekennerschreiben, das in der Nacht aufgetaucht sei; die Polizei prüfe dessen Echtheit und fahnde nach einem Mann. In einer Meldung heißt es zudem, offenbar habe ein Kurzschluss hergestellt werden sollen. Ein möglicher Zusammenhang mit früheren Vorfällen wird in den Quellen als offen beschrieben.",
+      "summary": "In Dormagen wurden an einem Umspannwerk erneut Abschussvorrichtungen entdeckt. Mehrere Berichte sagen, die Polizei gehe inzwischen von Sabotage aus und prüfe ein Bekennerschreiben.",
+      "detail_summary": "Gesichert ist nach den vorliegenden Berichten vor allem der erneute Fund von Abschussvorrichtungen an einem Umspannwerk in Dormagen. Mehrere Redaktionen melden übereinstimmend, dass die Polizei den Vorgang inzwischen als Sabotagedelikt beziehungsweise Sabotageversuch einordnet. Ein Bericht nennt zudem ein Bekennerschreiben, dessen Echtheit die Polizei nach wie vor prüfe, und eine Fahndung nach einem Mann. Die Meldung ist für kritische Infrastruktur relevant, weil sie auf einen möglichen Angriff auf die Stromversorgung zielt. Daraus ergibt sich ein Wirkpfad über mögliche Störungen, Sicherheitsmaßnahmen und zusätzlichen Ermittlungsaufwand. Ob tatsächlich ein Schaden oder ein Kurzschluss hätte ausgelöst werden können, bleibt nach den Quellen offen; ebenso ist die Zuschreibung des Schreibens nicht gesichert.",
+      "why_relevant": "Der Vorgang betrifft kritische Infrastruktur und damit mögliche Folgen für Versorgungssicherheit, Sicherheitslage und Ermittlungsaufwand. Die neue Einordnung als Sabotage ist gegenüber der frühen Verdachtslage eine materielle Statusänderung.",
+      "topic": [
+        "Politik",
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Störungen der Stromversorgung und erhöhte Sicherheitsrisiken betreffen Haushalte und Beschäftigte, auch wenn der konkrete Schaden noch offen ist."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist in den Quellen nicht belegt; allenfalls indirekt über kritische Energieinfrastruktur."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Sabotage an Infrastruktur berührt öffentliche Sicherheit und staatliche Schutzfähigkeit, aber ohne belegte politische Steuerungsentscheidung."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T21:14:14.000Z",
+      "last_updated": "2026-09-04T06:06:52.464Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-73b1c53517b0e2f5118c",
+      "source_published_at": "2026-09-04T01:45:01.000Z",
+      "published_at": "2026-09-04T01:53:14.028Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ],
+          [
+            "swr-aktuell"
+          ],
+          [
+            "ndr-info"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 4,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Ermittler den Fund als bestätigten Sabotageakt einstufen oder nur als Verdacht behandeln.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Einordnung der Polizei oder Staatsanwaltschaft",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-71fe7d0ca37bce7e",
+          "announced_at": "2026-09-04T06:00:49.000Z",
+          "follow_up_date": "2026-09-11T06:06:52.464Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:28:26.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T01:45:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "NDR",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:37:43.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:00:49.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e976be74e6481ea2",
       "title_image": {
@@ -2613,92 +2743,6 @@
           "url": "https://www1.wdr.de/nrw/bekennerschreiben-anschlag-umspannwerk-brandenburg-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T01:26:48.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4fb94d2cebfca746",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-4f5ca183d6e68895-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-      "source_summary": "Der WDR meldet unter Berufung auf Polizeiangaben und laufende Ermittlungen einen weiteren möglichen Sabotagevorfall an einem Umspannwerk in Dormagen. In Dormagen-Gohr hätten Spaziergänger am frühen Abend einen verdächtigen Gegenstand entdeckt; zunächst sei von „sensiblen Gegenständen“ die Rede gewesen. Laut WDR ist inzwischen klar, dass auch hier Abschussvorrichtungen aufgebaut worden seien, um möglicherweise das Stromnetz anzugreifen. Die Polizei sagt zugleich, es sei bislang zu keiner Beschädigung gekommen, und die Eignung des Gegenstands sei noch offen. \n\nDer Beitrag nennt außerdem ein Bekennerschreiben, das laut Polizei in der Nacht auftauchte. Der Verfasser wolle gegen die fossile Energieindustrie vorgehen; die Echtheit werde geprüft. Zudem werde nach einem Mann aus Gevelsberg gefahndet, der das Schreiben verschickt haben soll und der der Polizei namentlich bekannt sei. Der Bericht verweist auf weitere mögliche Tatorte in Weisweiler und im Raum Dormagen sowie auf frühere Vorfälle in Bergheim und im Süden Brandenburgs.",
-      "summary": "In Dormagen ist an einem Umspannwerk erneut ein verdächtiger Fund gemeldet worden. Die Polizei geht inzwischen von Sabotage aus und prüft ein Bekennerschreiben.",
-      "detail_summary": "Am bestbelegten Kern steht, dass an einem Umspannwerk in Dormagen-Gohr erneut ein verdächtiger Gegenstand beziehungsweise eine Abschussvorrichtung entdeckt wurde. Der WDR berichtet zudem, die Polizei gehe inzwischen von Sabotage aus; ein beabsichtigter Kurzschluss sei möglich, eine Beschädigung sei bislang aber nicht festgestellt. Für die Einordnung ist das relevant, weil kritische Strominfrastruktur betroffen ist und schon ein einzelner Angriff Schutzkonzepte, Ermittlungen und Sicherheitsmaßnahmen nachziehen kann. Der Wirkpfad liegt vor allem in zusätzlichem Absicherungsaufwand, möglicher Betriebsstörung und der Frage, ob Nachahmung oder weitere Tatorte folgen. Ob daraus tatsächlich Ausfälle oder weitergehende Schäden entstehen, bleibt nach den vorliegenden Quellen offen. Die Evidenzlage stützt hier vor allem einen laufenden Ermittlungsstand, nicht schon einen abgeschlossenen Schaden.",
-      "why_relevant": "Die Meldung betrifft kritische Strominfrastruktur und damit einen potenziell systemrelevanten Schutz- und Störfall. Schon der Verdacht auf gezielte Sabotage kann Sicherheitsaufwand, Ermittlungen und Vorsorge an mehreren Standorten auslösen.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind mögliche Versorgungsstörungen, Sicherheitsrisiken und Ermittlungsfolgen; konkrete Schäden sind aber noch nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; höchstens indirekt über Energieinfrastruktur und mögliche Störfolgen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Kritische Infrastruktur und der Umgang mit Sabotage berühren Sicherheitsstaat, öffentliche Information und die Korrekturfähigkeit von Schutzsystemen."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-03T21:14:14.000Z",
-      "last_updated": "2026-09-04T01:53:14.028Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-73b1c53517b0e2f5118c",
-      "source_published_at": "2026-09-04T01:35:54.000Z",
-      "published_at": "2026-09-04T01:53:14.028Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ],
-          [
-            "swr-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:35:54.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:45:01.000Z",
           "primary_source": false
         }
       ]
