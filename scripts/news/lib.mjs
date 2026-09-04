@@ -82,7 +82,8 @@ const LOW_RELEVANCE = /\b(?:prominent(?:e|en|er|es)?|celebrity|lifestyle|mode|re
 const STATUS_RULES = [
   ["evaluiert", /\b(evaluation|evaluiert|wirkungsbericht|abschlussbericht)\w*/i],
   ["erste Daten", /\b(erste daten|statistik|zahlen|messung|monitoringbericht)\w*/i],
-  ["in Kraft", /\b(in kraft|gilt ab|verkündet|verkuendet)\w*/i],
+  ["in Kraft", /\b(?:ist|sind)\s+(?:bereits\s+)?(?:seit\s+[^.!?]{1,45}\s+)?in kraft\b|\b(?:trat|traten)\s+[^.!?]{0,45}\bin kraft\b/i],
+  ["Entwurf", /\b(?:(?:bundes)?kabinetts?beschluss|(?:bundes)?kabinett|bundesregierung)\b[^.!?]{0,90}\b(?:gesetz(?:es)?entwurf|entwurf)\b/i],
   ["beschlossen", /\b(beschlossen|verabschiedet|stimmt?e? zu|einigung)\w*/i],
   ["Entwurf", /\b(entwurf|vorschlag|referentenentwurf|gesetzentwurf|antrag)\w*/i],
   ["angekündigt", /\b(angekündigt|ankuendigt|plant|will|kündigt an|kuendigt an)\w*/i],
@@ -706,6 +707,7 @@ export function buildAnalysisPrompt(stories) {
     "Eine Zusammenfassung bereits separat erfasster Entscheidungen ist ohne neue materielle Information keine neue Story. Vergleiche dafür ausdrücklich related_ticker_history und kennzeichne eine reine Sammel- oder Rückblicksmeldung im publication_gate als duplicate_without_new_information.",
     "Setze publication_recommendation=false, wenn Ereignis, Status oder Kernbehauptung nicht ausreichend belegt sind oder aus den gelieferten Daten keine fachlich sinnvolle, vorsichtige Einordnung möglich ist. Eine quellengebundene Ex-ante-Einordnung mit klaren Unsicherheiten ist zulässig, wenn die Materialitäts- und Evidenzprüfung bestanden ist.",
     "Trenne Fakt, Beobachtung, analytische Inferenz, Wirkungspotenzial, Wirkungsrisiko, eingetretene Wirkung, Zurechnung und normative Bewertung.",
+    "Der Verfahrensstand bezieht sich ausschließlich auf den konkreten Hauptgegenstand der Meldung zum aktuellen Quellenstand. Ein Kabinettsbeschluss über einen Gesetzentwurf ist Entwurf, nicht ein parlamentarisch beschlossenes Gesetz. beschlossen bedeutet verabschiedete endgültige Regelung/Entscheidung; in Kraft erst bei belegtem bereits erfolgtem Inkrafttreten, nicht bei einem zukünftigen Termin. Bereits geltendes Recht nicht auf beschlossen zurückstufen. Fristen, Entwurf, Beschluss, Inkrafttreten und tatsächliche Umsetzung getrennt prüfen. Ein älteres Vergleichsgesetz oder eine bloße Teilregel bestimmt nicht den Status des Hauptgegenstands. Unklarer Status bleibt offen. Ex ante bleibt vor messbaren Wirkungen auch nach Inkrafttreten möglich und ist kein Verfahrensstand.",
     "Wirkung ist neutral und eine tatsächliche Zustandsveränderung. Ex ante nie behaupten, eine Maßnahme bewirke bereits etwas. Output ist keine Wirkung; Zielbezug ist kein Kausalitätsbeweis.",
     "Keine Personen-, Parteien- oder moralische Rangliste. Reichweite ist nicht Wirkung. Benenne Nichtkompensation und Reverse Merit Order nur, wenn Schutzgrenzen oder Priorisierung materiell relevant sind.",
     "Erstelle source_summary als eigenständige neutrale Zusammenfassung der gelieferten Originalquelle(n): in der Regel 100 bis 180 Wörter, gegliedert in 2 bis 3 kurze Absätze mit einer Leerzeile. Gib ausschließlich wieder, was die Quelle über Ereignis, Beteiligte, Anlass, Maßnahmen, Aussagen, Zahlen, Termine, Kontext und offene Punkte mitteilt. Keine Bewertung, keine Wirkungsannahme und keine wirkungsökonomische Einordnung. Reicht das Quellenmaterial für einen Punkt nicht, benenne ihn nicht oder kennzeichne ihn vorsichtig als offen; fülle niemals mit erfundenen Angaben auf.",
@@ -900,6 +902,20 @@ export function maxSharedWordRun(a, b) {
   return best;
 }
 
+export function statusConsistencyErrors(analysis) {
+  // Narrow self-consistency checks, not a legal-status classifier. Only the
+  // lead paragraph is used so a later comparison law cannot set the main stage.
+  const lead = String(analysis?.source_summary || "").split(/\n\s*\n/)[0];
+  const sentences = lead.split(/(?<=[.!?])\s+/);
+  const actual = sentences.some(s => !/\b(?:nicht|noch nicht|soll|könnte|würde)\b/i.test(s) && /\b(?:ist|sind)\s+(?:bereits\s+)?(?:seit\s+[^.!?]{1,45}\s+)?in kraft\b|\b(?:trat|traten)\s+[^.!?]{0,45}\bin kraft\b|\b(?:ist|sind)\s+[^.!?]{0,45}\bin kraft getreten\b/i.test(s));
+  if (["angekündigt", "Entwurf", "beschlossen"].includes(analysis?.status) && actual) return ["AI_STATUS_CONTRADICTS_IN_FORCE"];
+  const draft = /\b(?:(?:bundes)?kabinett|bundesregierung)\b[^.!?]{0,100}\b(?:gesetz(?:es)?entwurf|entwurf)\b/i.test(sentences[0] || "");
+  const final = /\b(?:bundestag|parlament|gesetzgeber)\b[^.!?]{0,100}\b(?:verabschiedet|beschlossen|zugestimmt)\b/i.test(lead);
+  if (analysis?.status === "beschlossen" && draft && !final) return ["AI_STATUS_DRAFT_NOT_FINAL"];
+  if (analysis?.status === "in Kraft" && /\b(?:soll|wird)\s+[^.!?]{0,55}\bin kraft treten\b|\bnoch nicht in kraft\b/i.test(sentences[0] || "") && !actual) return ["AI_STATUS_FUTURE_NOT_IN_FORCE"];
+  return [];
+}
+
 export function validateAnalysis(analysis, story, options = {}) {
   const errors = [];
   const filterVersion = Number.parseFloat(story?.preanalysis?.filter_version || story?.relevance_filter_version || "0");
@@ -910,6 +926,7 @@ export function validateAnalysis(analysis, story, options = {}) {
   const requiredStrings = ["story_id", "source_summary", "summary", "why_relevant", "status", "analysis_type", "importance", "impact_potential", "systemic_relevance", "transformation_potential", "resilience", "evidence_level", "attribution", ...(requiresPublicationGate ? ["detail_summary"] : [])];
   for (const key of requiredStrings) if (typeof analysis?.[key] !== "string" || !analysis[key].trim()) errors.push(`AI_REQUIRED_STRING:${key}`);
   if (analysis?.story_id !== story.story_id) errors.push("AI_STORY_ID_MISMATCH");
+  errors.push(...statusConsistencyErrors(analysis));
   if (!new Set(["angekündigt", "Entwurf", "beschlossen", "in Kraft", "laufende Umsetzung", "erste Daten", "evaluiert", "laufende Entwicklung", "offen"]).has(analysis?.status)) errors.push("AI_STATUS_INVALID");
   if (!new Set(["ex_ante", "monitoring", "ex_post"]).has(analysis?.analysis_type)) errors.push("AI_ANALYSIS_TYPE_INVALID");
   if (!new Set(["gering", "mittel", "hoch", "sehr hoch"]).has(analysis?.importance)) errors.push("AI_IMPORTANCE_INVALID");

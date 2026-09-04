@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "cli_version": "1.1.24",
+  "model": "nano_banana_pro",
+  "model_name": "Nano Banana Pro",
+  "aspect_ratio": "16:9",
+  "resolution": "2k",
+  "prompt_version": "woek-editorial-2",
+  "template_version": "woek-title-1",
+  "generation_timeout_ms": 120000,
+  "max_generations_per_run": 1,
+  "max_generations_per_day": 20,
+  "max_credits_per_month": 600,
+  "max_credits_per_image": 2,
+  "max_image_bytes": 12582912,
+  "releases": {
+    "darwin_arm64": "cf23707ea8f437c93102d891125c10318c5812233f60b4c3bfda2d1d5334fe4b",
+    "darwin_amd64": "c0038a87b372bed1a38fbeaf3e8c971fce96170c80a5098e3a484d4fa24f767c",
+    "linux_arm64": "7f54234362688b460122a6ae7d42152b16d62781f8366bf8f8d078ab566a5604",
+    "linux_amd64": "626ce7fbfec2df737ec1e5a8643431479fa0d2d2376d6a52b7d7467051754862"
+  }
+}

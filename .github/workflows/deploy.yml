@@ -22,7 +22,9 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # Finish the active publication; newer news waits in the serial Pages queue.
+  # Frequent ticker updates must not keep cancelling every in-flight deployment.
+  cancel-in-progress: false
 
 jobs:
   build:

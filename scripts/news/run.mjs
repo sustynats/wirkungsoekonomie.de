@@ -25,6 +25,7 @@ import { sourceAccess } from "./access-policy.mjs";
 import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences } from "./newsroom.mjs";
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
+import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
@@ -34,6 +35,7 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_ANALYSIS_MISSING$/,
   /^AI_REQUIRED_STRING:/,
   /^AI_STATUS_INVALID$/,
+  /^AI_STATUS_(?:CONTRADICTS_IN_FORCE|DRAFT_NOT_FINAL|FUTURE_NOT_IN_FORCE)$/,
   /^AI_ANALYSIS_TYPE_INVALID$/,
   /^AI_IMPORTANCE_INVALID$/,
   /^AI_DIMENSION_INVALID:/,
@@ -220,6 +222,8 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     story_id: candidate.story_id,
     slug: candidate.slug,
     title: candidate.title,
+    ...(existing?.title_image ? { title_image: existing.title_image } : {}),
+    ...(existing?.corrections ? { corrections: existing.corrections } : {}),
     first_seen: candidate.first_seen,
     last_updated: candidate.last_updated,
     topic: candidate.topic,
@@ -351,6 +355,8 @@ function publishedRecord(candidate, analysis, ai, now) {
     ],
     content_hash: candidate.content_hash,
     published: true,
+    ...(existing?.title_image ? { title_image: existing.title_image } : {}),
+    ...(existing?.corrections ? { corrections: existing.corrections } : {}),
     listed: true,
     analysis_status: "veröffentlicht",
     relevance_filter_version: RELEVANCE_FILTER_VERSION,
@@ -445,6 +451,7 @@ export async function fetchFeedWithRetry(source, policy, fetchImpl = fetchFeed, 
 }
 
 export async function runWirkungsticker(options = {}) {
+  const changedStoryIds = new Set();
   const nowDate = options.now ? new Date(options.now) : process.env.WOEK_NEWS_NOW ? new Date(process.env.WOEK_NEWS_NOW) : new Date();
   if (!Number.isFinite(nowDate.getTime())) throw new Error("INVALID_RUN_TIME");
   const now = nowDate.toISOString();
@@ -608,7 +615,7 @@ export async function runWirkungsticker(options = {}) {
       cluster.sources.some((source) => freshItemIds.has(source.item_id)),
     ));
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
-  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED"]);
+  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
     .filter((story) => {
@@ -698,9 +705,17 @@ export async function runWirkungsticker(options = {}) {
 
   const aiEnabled = String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
   if (selected.length && aiEnabled) {
+    const aiDeadline = Date.now() + 7 * 60000;
     const sourceRegistryById = new Map(enabledSources.map((source) => [source.source_id, source]));
     for (let offset = 0; offset < selected.length; offset += aiBatchSize) {
       const batch = selected.slice(offset, offset + aiBatchSize);
+      if (Date.now() >= aiDeadline) {
+        for (const candidate of selected.slice(offset)) {
+          byId.set(candidate.story_id, pendingRecord(candidate, "AI_RUN_TIME_LIMIT", now));
+          report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_RUN_TIME_LIMIT" });
+        }
+        break;
+      }
       if (spendBefore + report.estimated_cost_usd + NEWS_REQUEST_RESERVATION_USD > budget) {
         for (const candidate of selected.slice(offset)) {
           byId.set(candidate.story_id, pendingRecord(candidate, "AI_BUDGET_BLOCKED", now));
@@ -781,6 +796,7 @@ export async function runWirkungsticker(options = {}) {
           const wasPublished = Boolean(candidate.existing_story?.published);
           const wasListed = candidate.existing_story?.listed !== false;
           byId.set(candidate.story_id, publishedRecord(analysisCandidate, analysis, aiResult, options.now ? now : new Date().toISOString()));
+          changedStoryIds.add(candidate.story_id);
           report.published_stories += wasPublished ? 0 : 1;
           report.updated_stories += wasPublished ? 1 : 0;
           report.reactivated_stories += wasPublished && !wasListed ? 1 : 0;
@@ -811,6 +827,34 @@ export async function runWirkungsticker(options = {}) {
     }
   }
 
+  // Enhancement failures cannot enter the AI-error catch above or suppress a
+  // validated article. Revisit one delayed image per run, without redoing news AI.
+  report.title_images = [];
+  report.title_images_changed = 0;
+  if (!options.dryRun) {
+    const prepareImage = options.prepareTitleImage || createTitleImagePipeline();
+    const pendingImage = [...byId.values()].filter((story) => story.published && story.listed !== false && !changedStoryIds.has(story.story_id) && story.title_image?.retry_after && Date.parse(story.title_image.retry_after) <= nowDate.getTime()).sort((a, b) => Date.parse(a.title_image.retry_after) - Date.parse(b.title_image.retry_after))[0];
+    const imageIds = [...(pendingImage ? [pendingImage.story_id] : []), ...changedStoryIds];
+    const imageDeadline = Date.now() + 4 * 60000;
+    for (const storyId of imageIds) {
+      const story = byId.get(storyId);
+      if (Date.now() >= imageDeadline) {
+        story.title_image = { ...story.title_image, retry_after: new Date(Date.now() + 15 * 60000).toISOString() };
+        report.title_images.push({ story_id: storyId, status: "deferred", reason: "IMAGE_RUN_TIME_LIMIT" });
+        continue;
+      }
+      try {
+        const result = await prepareImage(story);
+        if (result.title_image) {
+          if (JSON.stringify(publicTitleImage(story.title_image)) !== JSON.stringify(publicTitleImage(result.title_image))) report.title_images_changed += 1;
+          story.title_image = result.title_image;
+        }
+        report.title_images.push(result.report);
+      } catch {
+        report.title_images.push({ story_id: storyId, status: "fallback", fallback_reason: "TITLE_IMAGE_UNAVAILABLE" });
+      }
+    }
+  }
   report.completed_at = new Date().toISOString();
   const currentItems = allItems.filter((item) => Date.parse(item.published_at || 0) <= nowDate.getTime() + futureToleranceMs);
   report.latest_source_timestamp = latestSourceDate(currentItems) ? new Date(latestSourceDate(currentItems)).toISOString() : null;
@@ -821,6 +865,7 @@ export async function runWirkungsticker(options = {}) {
     report.updated_stories,
     report.retired_stories,
     report.reactivated_stories,
+    report.title_images_changed,
   ].some((count) => Number(count || 0) > 0);
   state.last_attempted_run = now;
   state.relevance_filter_version = RELEVANCE_FILTER_VERSION;

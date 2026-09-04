@@ -9,6 +9,13 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ## 2026-09-03
 
+### 2026-09-04 · Codex · Automatische Titelbilder und App-Abschluss
+- **Was:** Claudes Titelbildsystem unverändert als Basis, offizielle Higgsfield-CLI 1.1.24/Nano Banana Pro auf Oracle; persistente Originale/Job-ID/Creditreservierung; konservative Moduswahl, OCR, Fallback; drei Größen über gepinntes Chrome/DevTools; immutable GitHub-Releases, sichere öffentliche Metadaten. Einmalig beauftragter Backfill mit dauerhafter Restqueue.
+- **App:** freiwilliger Erstbesuch-Push-Hinweis, keine generischen Begriffsfragen im Ticker, Leserinformation statt öffentlicher Kostenregeln. Teilen und Rückkehrposition bleiben erhalten.
+- **Nachrichten:** 12 Kandidaten/Lauf, 48 Aufrufe/Stunde innerhalb des bisherigen Monatsbudgets; begrenzte Laufzeit; Statuskonsistenzgate. Einkommensteuerreform als Regierungsentwurf berichtigt, frühere Fassung erhalten, sichtbarer Korrekturhinweis.
+- **Geprüft:** 115 News-Tests, Build/Validator, vier Backend-API-Tests/Typecheck/Build; echte OG/Wide/Square-PNGs; 390px-Browseransicht ohne Überlauf, zwei Teilen-Buttons, drei Rücklinks, keine Begriffsfragen. Release-Abnahme wird nach dem Merge protokolliert.
+- **Grenze:** kein Versprechen 100-prozentiger Nachrichtenabdeckung/Faktenfehlerfreiheit oder unbegrenzter Higgsfield-OAuth-Laufzeit. Details und reproduzierbarer Backend-Patch: `docs/ops/WIRKUNGSTICKER-TITELBILD-PIPELINE.md`.
+
 ### Codex · Wirkungsticker: 503-Resilienz und verlässliche Aktualisierung
 - **Was:** Vier versetzte Laufchancen pro Stunde mit genau einem KI-Aufruf pro Lauf; persistentes rollendes Limit von vier Aufrufen in 60 Minuten; frische Meldungen und materielle Aktenupdates vor alten Filter-Neubewertungen. Reports unterscheiden `ok` und `degraded`, erfolgreiche und versuchte Läufe werden getrennt geführt, und der abschließende Health-Check macht 503 sowie Quellenlücken sichtbar rot, ohne Queue oder bereits erfolgreiche Teilresultate zu verlieren. Pages wird nur bei einer echten öffentlichen Story-Änderung ausgelöst; Queue-Commits allein führen nicht zu App-Neuladungen oder Releases.
 - **Pfade:** `.github/workflows/wirkungsticker.yml`, `scripts/news/run.mjs`, `scripts/news/build.mjs`, `scripts/news/check-run-health.mjs`, `tests/news/wirkungsticker.test.mjs`, `docs/ops/WIRKUNGSTICKER.md`.

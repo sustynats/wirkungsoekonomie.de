@@ -10,6 +10,15 @@ on:
     # Quellenintervalle, Euro-Budget und rollende KI-Kapazität liegen im Worker.
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
+    inputs:
+      title_images_backfill:
+        description: "Vorhandene Akten ohne Titelbild nachziehen (verbraucht ggf. Higgsfield-Credits)"
+        type: boolean
+        default: false
+      title_images_limit:
+        description: "Maximale Aktenzahl für den ausdrücklich gestarteten Bild-Backfill"
+        type: number
+        default: 20
 
 permissions:
   actions: write
@@ -22,7 +31,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -36,6 +45,13 @@ jobs:
       - name: Select Europe/Berlin slot
         id: slot
         run: node scripts/news/schedule.mjs
+      - name: Set up pinned title-image rasterizer
+        continue-on-error: true
+        if: steps.slot.outputs.should_run == 'true'
+        id: chrome
+        uses: browser-actions/setup-chrome@48ad923757ca74d66703209fe939badbdf80f2f4
+        with:
+          chrome-version: "152.0.7977.82"
       - name: Record expected run start
         if: steps.slot.outputs.should_run == 'true'
         run: echo "WOEK_NEWS_EXPECTED_AFTER=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
@@ -48,9 +64,14 @@ jobs:
           WOEK_NEWS_MONTHLY_AI_BUDGET_EUR: "25"
           WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
+          WOEK_NEWS_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/news-title-image"
+          GH_TOKEN: ${{ github.token }}
+          WT_CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
+          # Isolated ephemeral runner, own escaped SVG, embedded assets only.
+          WT_CHROME_NO_SANDBOX: "true"
           # Eigene authentifizierte Nachrichten-Lane; öffentliche KI-Limits unverändert.
-          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "6"
-          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "24"
+          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "12"
+          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "48"
           # Technische Wiederholungen bleiben in der dauerhaften Stunden-Queue. So
           # verbraucht ein 503 nicht mehrere der vier reservierten Worker-Slots.
           WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"
@@ -59,16 +80,28 @@ jobs:
           WOEK_NEWS_AI_BATCH_DELAY_MS: "2500"
           WOEK_NEWS_AI_TIMEOUT_MS: "120000"
         run: npm run news:run
+      - name: Backfill explicitly requested title images
+        # Backfill is opt-in, never a second scheduler or a per-build credit spend.
+        if: steps.slot.outputs.should_run == 'true' && inputs.title_images_backfill == true
+        env:
+          WOEK_NEWS_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/news-title-image"
+          WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          WT_CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
+          WT_CHROME_NO_SANDBOX: "true"
+          TITLE_IMAGE_LIMIT: ${{ inputs.title_images_limit }}
+        run: npm run news:title-images:backfill -- --execute --limit="$TITLE_IMAGE_LIMIT"
       - name: Read public ticker outcome
         id: outcome
         if: steps.slot.outputs.should_run == 'true'
         run: node -e 'const fs=require("node:fs"); const report=require("./reports/wirkungsticker-latest-run.json"); fs.appendFileSync(process.env.GITHUB_OUTPUT, "public_changed=" + Boolean(report.public_changed) + "\n");'
-      - name: Build search index and validate output
+      - name: Build search index, taxonomy and validate output
         if: steps.slot.outputs.should_run == 'true'
         env:
           SOURCE_DATE_EPOCH: "1787270400"
         run: |
           npm run build:search
+          npm run taxonomy:build
           npm run news:validate
       - name: Commit one atomic update
         id: commit
@@ -79,7 +112,7 @@ jobs:
           set -euo pipefail
           git config user.name "wirkungsticker-bot"
           git config user.email "wirkungsticker-bot@users.noreply.github.com"
-          git add -- data/news news wirkungsticker reports/wirkungsticker-latest-run.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json
+          git add -- data/news news wirkungsticker reports/wirkungsticker-latest-run.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json
           if git diff --cached --quiet; then
             echo "Keine neue oder geänderte Wirkungsnachricht."
             echo "changed=false" >> "$GITHUB_OUTPUT"

@@ -356,7 +356,8 @@ function renderLandscape(input, W, H, u, P, mode) {
       parts.push(watermark(u, categoryIcon(input.category), panelX + panelWidth * 0.2, panelTop + (panelBottom - panelTop - panelWidth * 0.6) / 2, panelWidth * 0.6));
     }
   }
-  parts.push(block.markup);
+  if (input.headlineVisible !== false) parts.push(block.markup);
+  else parts.push(watermark(u, categoryIcon(input.category), textX, H * 0.42, 130 * u));
   parts.push(footerRow(u, P, W, H, {
     source: input.source, date: input.date,
     label: input.label, labelIcon: mode === "editorial" ? "ki" : "folgen", maxWidthFraction: 0.6,
@@ -443,6 +444,7 @@ export function normalizeInput(input = {}) {
 
 export function renderTitleImage(rawInput = {}, options = {}) {
   const input = normalizeInput(rawInput);
+  input.headlineVisible = options.headlineVisible !== false;
   const sizeKey = typeof options.size === "string" && SIZES[options.size] ? options.size : "og";
   const size = typeof options.size === "object" && options.size?.width ? { ...options.size, layout: options.size.width === options.size.height ? "square" : "landscape" } : SIZES[sizeKey];
   const W = size.width;

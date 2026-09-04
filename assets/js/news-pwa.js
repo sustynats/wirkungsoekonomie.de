@@ -125,6 +125,7 @@
     renderNotificationState(enabled);
     notificationToggle?.addEventListener("click", () => void toggleNotifications());
     markReadButton?.addEventListener("click", () => void markNewsAsSeen());
+    initializePushOffer();
     if (!enabled) return;
     try {
       await configureBackgroundChecks(true);
@@ -132,6 +133,57 @@
     } catch {
       renderNotificationState(false, "Push konnte gerade nicht verbunden werden. Beim nächsten Öffnen versucht die App es erneut.");
     }
+  }
+
+  function initializePushOffer() {
+    const offerKey = "woek_ticker_push_offer_seen_v1";
+    if (!standalone || !canRegisterServiceWorker || window.top !== window.self
+      || !("Notification" in window) || !("PushManager" in window)
+      || !("HTMLDialogElement" in window) || Notification.permission !== "default") return;
+    try {
+      // An explicit opt-out and a previous dismissal both take precedence.
+      if (window.localStorage.getItem(notificationKey) || window.localStorage.getItem(offerKey)) return;
+    } catch { return; }
+
+    registrationPromise.then((registration) => {
+      if (!registration?.pushManager) return;
+      const showOffer = () => {
+        if (document.visibilityState !== "visible") return;
+        document.removeEventListener("visibilitychange", showOffer);
+        try {
+          if (window.localStorage.getItem(notificationKey) || window.localStorage.getItem(offerKey)
+            || Notification.permission !== "default") return;
+          window.localStorage.setItem(offerKey, "seen");
+        } catch { return; }
+        const dialog = document.createElement("dialog");
+        dialog.className = "news-push-offer";
+        dialog.setAttribute("aria-labelledby", "news-push-offer-title");
+        dialog.setAttribute("aria-describedby", "news-push-offer-description");
+        dialog.innerHTML = `<p class="hero-kicker">Wirkungsticker</p>
+          <h2 id="news-push-offer-title">Bei neuen Nachrichten Bescheid wissen?</h2>
+          <p id="news-push-offer-description">Erhalte eine Push-Benachrichtigung bei neuen oder wesentlich aktualisierten Meldungen. Du kannst Push jederzeit unter „Aktualisierung und Push“ wieder deaktivieren.</p>
+          <p>Erst nach deiner Zustimmung wird ein technisches Push-Abonnement auf unserem Server gespeichert. <a href="/datenschutz.html#wirkungsticker-push">Datenschutzhinweise</a></p>
+          <div class="news-app-tools__actions"><button class="btn btn-primary" type="button" data-push-offer-accept>Benachrichtigungen aktivieren</button><button class="btn btn-secondary" type="button" data-push-offer-dismiss autofocus>Nicht jetzt</button></div>
+          <p class="news-app-status" data-push-offer-status role="status"></p>`;
+        document.body.append(dialog);
+        const accept = dialog.querySelector("[data-push-offer-accept]");
+        dialog.querySelector("[data-push-offer-dismiss]").addEventListener("click", () => dialog.close());
+        dialog.addEventListener("close", () => dialog.remove(), { once: true });
+        accept.addEventListener("click", () => {
+          accept.disabled = true;
+          // Keep requestPermission in this user gesture, never on page load.
+          void toggleNotifications().then(() => {
+            if (window.localStorage.getItem(notificationKey) === "enabled") dialog.close();
+            else dialog.querySelector("[data-push-offer-status]").textContent = notificationStatus?.textContent || "Push wurde nicht aktiviert. Du kannst es später in den Einstellungen versuchen.";
+          }).catch(() => {
+            dialog.querySelector("[data-push-offer-status]").textContent = "Push konnte gerade nicht aktiviert werden. Bitte später erneut versuchen.";
+          }).finally(() => { accept.disabled = false; });
+        });
+        dialog.showModal();
+      };
+      document.addEventListener("visibilitychange", showOffer);
+      showOffer();
+    });
   }
 
   async function toggleNotifications() {
@@ -230,7 +282,10 @@
     const registration = initialRegistration && "ready" in navigator.serviceWorker
       ? await navigator.serviceWorker.ready
       : initialRegistration;
-    if (!registration) return;
+    if (!registration) {
+      if (enabled) throw new Error("SERVICE_WORKER_NOT_READY");
+      return;
+    }
     const latest = window.localStorage.getItem(lastSeenKey) || (newestCardTimestamp() ? new Date(newestCardTimestamp()).toISOString() : null);
     if (enabled) await subscribeToServerPush(registration);
     registration.active?.postMessage({
