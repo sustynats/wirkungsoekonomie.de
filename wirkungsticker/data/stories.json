@@ -1,7 +1,864 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T14:12:28.186Z",
+  "updated_at": "2026-09-04T15:26:48.913Z",
   "stories": [
+    {
+      "story_id": "wt-5547189d2645384a",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-c66ed003a2b8a20b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-c63a52c7b525d3cc-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-2ffbcb59eccf0717-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
+      "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+      "source_summary": "Der WDR berichtet über neue Ermittlungsstände zu den mutmaßlichen Angriffen auf Umspannwerke. Am Nachmittag informierten Bundesinnenminister Alexander Dobrindt und NRW-Innenminister Herbert Reul in Düsseldorf über den Stand der Ermittlungen. Nach Angaben aus dem Liveticker läuft in Gevelsberg ein SEK-Einsatz; der gesuchte Mann sei dort nicht angetroffen worden. In seiner Wohnung hätten Ermittler sprengstoffverdächtige Stoffe gefunden.\n\nReul zufolge wird nach einem 48-jährigen Mann aus Gevelsberg unter Hochdruck gefahndet. Laut WDR ist offen, ob der Mann allein oder gemeinsam mit anderen gehandelt hat. Außerdem werde geprüft, ob ein Zusammenhang mit dem Anschlag auf ein Umspannwerk in Brandenburg besteht. Der WDR ordnet die Einsätze in die zuvor berichteten Vorfälle in Jänschwalde, Bergheim und Dormagen ein.",
+      "summary": "In Gevelsberg lief ein SEK-Einsatz im Zusammenhang mit den Ermittlungen zu den Angriffen auf Umspannwerke. Der gesuchte 48-Jährige wurde dort nicht angetroffen, in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe.",
+      "detail_summary": "Gesichert belegt ist vor allem der neue Ermittlungsstand: In Gevelsberg lief ein SEK-Einsatz, der gesuchte Mann wurde dort nicht angetroffen, und in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe. Damit verschiebt sich der Vorgang von einem bloßen Verdacht zu einer konkreteren Fahndungs- und Gefahrenlage. Für die Einordnung ist relevant, dass der WDR die Angaben im Kontext mehrerer Angriffe auf Umspannwerke berichtet und damit einen möglichen Zusammenhang zwischen den Fällen sichtbar macht. Ein möglicher Wirkpfad liegt in verstärkter Sicherung kritischer Infrastruktur, in weiterer Fahndung und in zusätzlichen Ermittlungen zu möglichen Mittätern. Ob daraus tatsächlich neue Schutzmaßnahmen, Einschränkungen oder strafrechtliche Folgen entstehen, bleibt offen. Belastbar ist bislang nur der berichtete Ermittlungsstand aus einer Quelle; die Unabhängigkeit weiterer Bestätigungen liegt hier nicht vor.",
+      "why_relevant": "Die Meldung beschreibt neue, konkret benannte Ermittlungsinformationen zu Angriffen auf kritische Infrastruktur und damit einen möglichen Präzedenz- und Schutzpfad mit Relevanz für Versorgungssicherheit und öffentliche Sicherheit.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind mögliche Gefahren für Versorgungssicherheit, Fahndung und Schutz kritischer Infrastruktur."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist aus den Belegen nicht belastbar ableitbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Lage berührt staatliche Sicherheitsfähigkeit und den Schutz kritischer Infrastruktur, nicht aber einen direkten demokratischen Verfahrenskonflikt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Alter des Gesuchten",
+            "value": "48",
+            "unit": "Jahre",
+            "context": "Das Alter des in Gevelsberg gesuchten Mannes"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T10:22:28.000Z",
+      "last_updated": "2026-09-04T15:29:14.683Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-dad0642fc6ee28b03f8a",
+      "source_published_at": "2026-09-04T13:58:04.000Z",
+      "published_at": "2026-09-04T13:23:17.993Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:58:04.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e442d6ad81290406",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-e8484d1f4ba91a88-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-39ba34d9d7fdba59-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-809b003567a12292-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
+      "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
+      "source_summary": "Die taz berichtet über eine UNICEF-Untersuchung zu sexualisierter Ausbeutung von Kindern im Netz. Nach Angaben des Berichts sei jedes fünfte Kind innerhalb eines Jahres im Internet sexuell missbraucht oder ausgebeutet worden; die Untersuchung stütze sich auf 21 Länder, Deutschland gehöre nicht dazu.\n\nDie Meldung nennt zudem Schätzungen von 20 Millionen betroffenen Mädchen und Jungen. Fast 60 Prozent der Fälle sollen auf Social-Media-Plattformen stattgefunden haben. UNICEF warnt in der Darstellung außerdem vor psychischen Folgen und verweist auf häufiger berichtete Suizidgedanken und selbstverletzendes Verhalten bei betroffenen Kindern.",
+      "summary": "UNICEF meldet laut taz eine hohe Verbreitung sexueller Ausbeutung von Kindern im Netz. Die Angaben sind folgenreich, beruhen hier aber nur auf einer sekundären Darstellung.",
+      "detail_summary": "Gesichert aus der vorliegenden Meldung ist vor allem die UNICEF-Zuschreibung eines breit angelegten Problems: Jede fünfte befragte bzw. erfasste Minderjährige soll innerhalb eines Jahres online sexuell missbraucht oder ausgebeutet worden sein, und die Untersuchung umfasst 21 Länder. Materiell relevant ist das, weil die Quelle nicht nur ein einzelnes Delikt beschreibt, sondern eine potenziell systematische Gefährdung in digitalen Räumen mit großer Reichweite. Der Wirkpfad verläuft über Plattformdesign, Kontaktanbahnung und missbräuchliche Interaktionen; damit betrifft die Meldung sowohl Schutzregeln für Kinder als auch Verantwortung von Plattformen und Aufsicht. Mögliche Folge sind verschärfte Debatten über Moderation, Meldewege und Prävention. Die Evidenz bleibt jedoch zunächst auf eine sekundäre Darstellung begrenzt; Methodik, Länderwahl und genaue Datenerhebung sind im gelieferten Material nicht vollständig geprüft.",
+      "why_relevant": "Die Meldung beschreibt ein potenziell massenhaftes Schutzproblem im digitalen Raum und damit einen relevanten Zustand für Kinder, Plattformen und Regulierung.",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "rationale": "Direkte Betroffenheit von Kindern, Schutzbedarf und mögliche Folgen für psychische Gesundheit und Sicherheit sind erheblich."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein unmittelbarer Umweltbezug aus der vorliegenden Meldung ersichtlich."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Plattformregeln, Aufsicht und Schutzstandards im digitalen Raum berühren die demokratische Korrekturfähigkeit von Regulierung."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-03T06:53:00.000Z",
+      "last_updated": "2026-09-04T15:28:30.847Z",
+      "version": 4,
+      "news_status": "preliminary",
+      "event_id": "event-83becedad84b8b907cdf",
+      "source_published_at": "2026-09-03T06:53:00.000Z",
+      "published_at": "2026-09-04T01:52:05.573Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Studie-von-Unicef/!6209752",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T06:53:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-aabe8c0430bf8f84",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-2d693857b84d8ebd-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-fbb89a82175a8a6f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-b6f5c67ee5b9bd05-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84",
+      "title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
+      "source_summary": "Zwei Berichte melden die Rettung von zwei Wasserkraftarbeitern aus einem in Nepal durch Schlamm, Geröll oder eine Überschwemmung blockierten Tunnel. Beide Texte verorten die Rettung neun Tage nach den Fluten und nennen, dass die Arbeiter lebend geborgen wurden. Ein Bericht sagt, die Männer erhielten Behandlung, während Einsatzkräfte weiter nach Überlebenden suchten.\n\nDie Quellen unterscheiden sich deutlich bei den übrigen Zahlen. Ein Text nennt etwa 900 Vermisste aus 12 Wasserkraftprojekten und ungefähr 500 vermutlich in Tunneln eingeschlossene Arbeiter. Ein anderer spricht von mehr als 5.000 Vermissten, 115 vermutlich im Tunnel Eingeschlossenen und davon, dass die Fluten mehr als 1.200 Tote gefordert hätten. Der weitere Lagebericht bleibt damit offen.",
+      "summary": "Zwei Wasserkraftarbeiter wurden in Nepal lebend aus einem verschlammten Tunnel gerettet. Über die Zahl der weiter Vermissten und Eingeschlossenen gibt es widersprüchliche Angaben.",
+      "detail_summary": "Gesichert ist die Rettung von zwei Wasserkraftarbeitern aus einem durch die Nepal-Fluten blockierten Tunnel. Die Meldung ist materiell, weil sie eine akute Gefahrenlage in einem Infrastruktursystem betrifft und zugleich auf eine größere Zahl potenziell Betroffener in anderen Projekten verweist. Der Wirkpfad liegt vor allem in der unmittelbaren Rettung, in den laufenden Such- und Bergungsarbeiten und in möglichen Folgen für Betrieb, Arbeitsschutz und Krisenkoordination. Als mögliche Folge kommen weitere Rettungen, aber auch neue Erkenntnisse über Ausmaß und Verteilung der Eingeschlossenen infrage. Offen bleibt jedoch, welche Zahl für Vermisste und Eingeschlossene belastbar ist, weil die Quellen hier deutlich auseinandergehen. Deshalb ist die Lage als laufende Entwicklung mit begrenzter Evidenz zu behandeln.",
+      "why_relevant": "Die Meldung betrifft eine akute Rettung in einem kritischen Infrastruktursystem und kann Hinweise auf Umfang, Risiken und Folgewirkungen der Flutkatastrophe liefern.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Direkte Betroffenheit von Arbeitern, Suchteams und möglicherweise weiteren Eingeschlossenen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Fluten und ihre Folgen zeigen eine Umwelt- und Katastrophenlage, die Infrastruktur und Lebensräume betrifft."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Kein direkter demokratischer Entscheidungs- oder Korrekturprozess im Kern der Meldung."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T05:10:44.000Z",
+      "last_updated": "2026-09-04T15:27:23.805Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-1b0c4e9053465796c788",
+      "source_published_at": "2026-09-04T05:10:44.000Z",
+      "published_at": "2026-09-04T05:43:04.119Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en",
+            "france24-en"
+          ],
+          [
+            "euronews-en",
+            "euronews-en"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "france24-en",
+              "france24-en"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "euronews-en",
+              "euronews-en"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Zahl der weiter Eingeschlossenen belastbar bestätigt wird.",
+          "source_id": "euronews-en",
+          "expected_by": null,
+          "measurable_indicator": "Aktualisierte Behördenangaben zur Zahl der Vermissten und Eingeschlossenen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bd2e87ef63658365",
+          "announced_at": "2026-09-04T05:25:08.000Z",
+          "follow_up_date": "2026-09-11T15:27:23.805Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/asia-pacific/20260904-two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:10:44.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Euronews",
+          "url": "http://www.euronews.com/2026/09/04/two-trapped-workers-rescued-from-hydropower-tunnel-nine-days-after-nepal-floods",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:25:08.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260904-two-trapped-workers-rescued-from-mud-clogged-tunnel-9-days-after-nepal-floods",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T10:12:49.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Euronews",
+          "url": "http://www.euronews.com/video/2026/09/04/two-hydropower-workers-rescued-alive-after-nine-days-trapped-in-nepal-tunnel",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:12:37.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-79a8fce4900e254f",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-79a8fce4900e254f-e07a57962499eda5-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-79a8fce4900e254f-583523288c78fa29-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-79a8fce4900e254f-df782c24eeb9ac57-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "france-announces-1-billion-aid-for-farmers-after-climate-hit-summer-0e254f",
+      "title": "France announces €1 billion aid for farmers after climate-hit summer",
+      "source_summary": "France 24 berichtet, Frankreich habe in diesem Jahr seinen heißesten Sommer seit Beginn der Aufzeichnungen erlebt. Genannt werden Hitzewellen, Dürre und große Waldbrände, die bis in den September hinein anhielten. Die nationale Wetterbehörde habe fünf Départements für mehrere Tage auf Orange-Alarm gesetzt; in einigen Gebieten würden bis zu 40 Grad erwartet.\n\nZugleich kündigte die Landwirtschaftsministerin einen Plan an, mehr als eine Milliarde Euro an Hilfen für den Agrarsektor freizusetzen. Der Bericht verweist darauf, dass die Landwirtschaft nach Darstellung der Quelle von dem extremen Wetter schwer betroffen sei.",
+      "summary": "Frankreichs Landwirtschaftsministerium kündigt nach einem extrem heißen Sommer Hilfen von mehr als einer Milliarde Euro an. Die Wetterlage bleibt mit Orange-Alarm und erwarteten 40 Grad weiter angespannt.",
+      "detail_summary": "Gesichert ist zunächst die Ankündigung von mehr als einer Milliarde Euro Hilfen für den französischen Agrarsektor nach einem Sommer mit Rekordhitze, Dürre und Waldbränden. France 24 berichtet außerdem, dass die nationale Wetterbehörde fünf Départements auf Orange-Alarm gesetzt habe und lokal 40 Grad erwartet würden. Die Nachricht ist materiell, weil sie auf eine staatliche finanzielle Reaktion auf klimabedingte Erntestress- und Einkommensrisiken verweist. Der Wirkpfad verläuft über Liquidität und Schadensabfederung für Betriebe; möglich sind kurzfristige Entlastung und höhere Resilienz, aber auch Mitnahmeeffekte oder unklare Verteilung. Offen bleibt, wie die Hilfen genau ausgestaltet, finanziert und an Betroffene verteilt werden. Die Evidenzlage ist vorerst eine einzelne journalistische Quelle; eine unabhängige Bestätigung der Ankündigung liegt hier nicht vor.",
+      "why_relevant": "Die Meldung verbindet Klimastress mit einer konkreten staatlichen Finanzzusage für einen systemrelevanten Wirtschaftssektor. Das betrifft mögliche Ernteausfälle, Einkommensstabilisierung und künftige Anpassungskapazitäten.",
+      "topic": [
+        "Klima",
+        "Europa",
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Entlastung für landwirtschaftliche Betriebe und Beschäftigte; Verteilungswirkung noch offen."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "rationale": "Die Ursache liegt in klimabedingter Extremhitze, Dürre und Bränden; Anpassung und Resilienz sind zentral."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Staatliche Mittelvergabe und Priorisierung sind politisch relevant, aber die demokratische Korrekturfähigkeit bleibt offen."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Hilfen für den Agrarsektor",
+            "value": "1",
+            "unit": "Mrd. EUR",
+            "context": "mehr als eine Milliarde Euro sollen freigesetzt werden"
+          },
+          {
+            "label": "Départements auf Orange-Alarm",
+            "value": "fünf",
+            "unit": "Départements",
+            "context": "fünf Regionen standen mehrere Tage auf Orange-Alarm"
+          },
+          {
+            "label": "Temperatur in einigen Gebieten",
+            "value": "40",
+            "unit": "Grad",
+            "context": "bis zu 40 Grad werden erwartet"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "unternehmen",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "risiko",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T15:12:29.000Z",
+      "last_updated": "2026-09-04T15:23:21.799Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-becb84b8e979276421c0",
+      "source_published_at": "2026-09-04T15:12:29.000Z",
+      "published_at": "2026-09-04T15:23:21.799Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260904-france-announces-%E2%82%AC1-billion-aid-for-farmers-after-climate-hit-summer",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:12:29.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e18907861b9d9b1f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-1b4fba4f63628b16-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-a1d0cfbf024586d0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-23bde49492017dd4-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "brucken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-9d9b1f",
+      "title": "Brücken-Neubau im Marburger Norden gestartet: Wieder Bahnsperrungen geplant",
+      "source_summary": "Nach dem Abriss einer wichtigen Brücke in Marburg haben die Arbeiten für den Neubau begonnen. Die Brücke über die Bahngleise in der Neuen Kasseler Straße gilt als Verbindung Richtung Norden und Lahnberge; seit November 2024 war sie gesperrt und im Frühling 2025 abgerissen worden. Laut Hessenmobil soll der Neubau bis 2027 fertig werden.\n\nFür den Bau sind weitere Einschränkungen angekündigt. Genannt werden Sperrpausen für den Bahnverkehr, etwa Mitte Oktober 2026 sowie im Mai 2027; genaue Zeitpunkte sollen gemeinsam mit der Bahn noch mitgeteilt werden. Für Auto-, Rad- und Fußverkehr bleiben Umleitungen bestehen. Der Abbruch der alten Brücke und Nebenarbeiten kosteten laut Hessenmobil rund drei Millionen Euro, der Neubau soll rund 15 Millionen Euro kosten und aus ultrahochfestem Faserbeton entstehen.",
+      "summary": "Der Neubau einer wichtigen Marburger Brücke hat begonnen, und weitere Sperrpausen für die Bahn sind angekündigt. Für Auto- und Radverkehr bleiben Umleitungen bis zur Fertigstellung bestehen.",
+      "detail_summary": "Gesichert ist der Baubeginn an der Brücke im Marburger Norden nach Abriss des alten Bauwerks. Die Meldung ist relevant, weil die Brücke eine zentrale Verbindung für Pendler, den Bahnverkehr und den Zugang Richtung Lahnberge ist und die Einschränkungen noch bis zur Fertigstellung anhalten sollen. Der Wirkpfad liegt in der fortgesetzten Umleitung von Verkehrsströmen und in erneuten Sperrpausen auf der Bahnstrecke unter der Brücke. Mögliche Folgen sind weitere Reisezeitverluste, betriebliche Störungen im Bahnverkehr und anhaltende Belastungen für Anwohner und Pendelnde. Die Evidenz ist jedoch auf eine journalistische Quelle begrenzt; unabhängige Bestätigung der Termine und der Kosten liegt hier nicht vor.",
+      "why_relevant": "Die Meldung beschreibt einen realen Infrastrukturumbau mit fortgesetzten Eingriffen in Bahn- und Straßenverkehr und damit in Mobilität, Erreichbarkeit und Alltagslogistik einer Region.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Pendlerinnen, Anwohner und Verkehrsnutzer durch weitere Sperrungen und Umleitungen über einen längeren Zeitraum."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Der Vorgang betrifft primär Infrastruktur und Verkehr; ökologische Effekte werden in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "offen",
+          "rationale": "Direkte demokratiespezifische Folgen sind aus der Quelle nicht ableitbar."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Kosten Abriss und Nebenarbeiten",
+            "value": "drei",
+            "unit": "Millionen Euro",
+            "context": "laut Hessenmobil für den Abbruch inklusive Nebenarbeiten"
+          },
+          {
+            "label": "Kosten Neubau",
+            "value": "15",
+            "unit": "Millionen Euro",
+            "context": "laut Hessenmobil für die neue Brücke"
+          },
+          {
+            "label": "Fertigstellung",
+            "value": "2027",
+            "unit": "Jahr",
+            "context": "bis dahin soll der Neubau fertig werden"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "kommunen",
+          "staat"
+        ],
+        "timeline": [
+          {
+            "date": "2026-10",
+            "label": "erste genannte Sperrpausen"
+          },
+          {
+            "date": "2027",
+            "label": "Fertigstellung geplant"
+          },
+          {
+            "date": "2027-05",
+            "label": "weitere Sperrungen und nächtliche Sperrpausen"
+          }
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T15:07:42.000Z",
+      "last_updated": "2026-09-04T15:22:55.300Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-9d4afdfe89c278d9bc9e",
+      "source_published_at": "2026-09-04T15:07:42.000Z",
+      "published_at": "2026-09-04T15:22:55.300Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die angekündigten Bahn-Sperrpausen treten wie genannt ein und werden von der Bahn bestätigt.",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Fahrplan- oder Baustellenmeldungen zu den genannten Zeiträumen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-417ea54c06a5109a",
+          "announced_at": "2026-09-04T15:07:42.000Z",
+          "follow_up_date": "2026-09-11T15:22:55.300Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/wirtschaft/bruecken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-v3,bruecke-marburg-104.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:07:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-8e4cf2004cb7951c",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-e0b6c48332571c6b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-8247f5c26c79bfa0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-f33c78a8332ff861-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "russische-drohne-trifft-geheimdienst-sitz-in-kiew-b7951c",
+      "title": "Russische Drohne trifft Geheimdienst-Sitz in Kiew",
+      "source_summary": "Die vorliegenden Berichte schildern einen Drohnenangriff in Kiew am Freitag. Nach den Angaben traf eine russische Drohne den Sitz des ukrainischen Inlandsgeheimdienstes SBU im Zentrum der Stadt. In einem Bericht heißt es, Selenskyj habe auf Telegram gesagt, der Angriff habe direkt auf das Büro des Geheimdienstchefs gezielt. Ein anderer Bericht nennt mehrere Verletzte, während im Umfeld des Gebäudes mehrere Krankenwagen gesehen worden seien und schwarzer Rauch aufgestiegen sei.\n\nDie Quellen beziehen sich auf AFP beziehungsweise Reuters, liefern aber hier keine eigenständige Primärbestätigung des Vorfalls. Unklar bleiben im gelieferten Material der genaue Schadensumfang, weitere Opferzahlen und der unabhängige Beleg für den Zielort des Angriffs.",
+      "summary": "Russische Drohnen sollen den SBU-Sitz im Zentrum von Kiew getroffen haben. In den vorliegenden Berichten ist von mehreren Verletzten und sichtbaren Schäden die Rede.",
+      "detail_summary": "Gesichert aus den gelieferten Texten ist vor allem der gemeldete Treffer auf den SBU-Sitz in Kiew und die dazugehörige Einordnung als russischer Drohnenangriff. Zusätzlich nennen die Berichte mehrere Verletzte, Krankenwagen am Ort und schwarzen Rauch über dem Bereich nahe der Sophienkathedrale. Für die Einordnung als Nachricht ist das relevant, weil ein Angriff auf einen zentralen Sicherheitsstandort in einer Hauptstadt potenziell Schutzgüter, öffentliche Ordnung und weitere militärische Reaktionen berührt. Der unmittelbare Wirkpfad liegt in der physischen Beschädigung eines staatlichen Ziels und möglichen Folgereaktionen im laufenden Krieg. Offen bleibt, ob der Treffer und die Opferzahlen unabhängig bestätigt sind und wie groß der materielle Schaden tatsächlich ist; die Evidenzbasis ist damit zunächst begrenzt.",
+      "why_relevant": "Ein Angriff auf den Sitz des Inlandsgeheimdienstes im Zentrum der Hauptstadt ist potenziell systemrelevant für Sicherheit, Eskalationsdynamik und zivile Gefährdung.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Zivilpersonen, Behördenpersonal und die Sicherheitslage in einer Hauptstadt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus den Quellen ergibt sich kein unmittelbarer Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Ein Angriff auf einen zentralen Staats- und Sicherheitsstandort kann die Funktionsfähigkeit staatlicher Institutionen berühren."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "beschaeftigte",
+          "kommunen",
+          "europa"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-04T13:52:39.000Z",
+      "last_updated": "2026-09-04T15:22:16.882Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-43f99f36657ddc9d3f73",
+      "source_published_at": "2026-09-04T13:52:39.000Z",
+      "published_at": "2026-09-04T14:08:09.852Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob es unabhängige Bestätigung des Einschlags und des Schadensumfangs gibt",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "weitere unabhängige Quellen oder Behördenangaben zum Treffer und zu Verletzten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-827fc6e0ab770af2",
+          "announced_at": "2026-09-04T13:52:39.000Z",
+          "follow_up_date": "2026-09-11T15:22:16.882Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/russische-drohne-trifft-geheimdienst-sitz-in-kiew-38209648.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T13:52:39.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-schattenflotte-drohnen-sabotage-anschlag-,ukraine-news-04-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:13:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f2edeab46d126d83",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-e4a7abfbde025a9d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-2a4d0a984def3140-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f2edeab46d126d83-1891c81a9186f849-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
+      "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+      "source_summary": "Der Bericht meldet, dass die Hackergruppe Rhysida nach einem Angriff auf das Berliner Landesnetz Daten im Darknet zum Download angeboten habe. Zuvor sei eine von der Berliner Senatsverwaltung gesetzte Zahlungsfrist abgelaufen. Nach rbb-Informationen sollen rund 1,4 Millionen Datensätze in mehreren Paketen zugänglich gemacht worden sein.\n\nDie Quelle nennt als mögliche Inhalte unter anderem Arbeitszeugnisse, Ausschreibungen, Beurteilungen und Personalakten. Zugleich heißt es, die Angaben ließen sich zunächst nicht überprüfen; auch sei unklar, ob es sich um die gesamte Menge der Anfang August erbeuteten Daten handelt. Experten hätten gewarnt, die Hacker könnten sensible Daten verkaufen.",
+      "summary": "Rhysida soll nach Ablauf einer Frist Daten aus dem Angriff auf das Berliner Landesnetz im Darknet veröffentlicht haben. Umfang und genaue Inhalte sind laut Bericht noch nicht verifiziert.",
+      "detail_summary": "Gesichert nach der vorliegenden Quelle ist vor allem der behauptete Veröffentlichungsschritt der Hackergruppe Rhysida im Darknet nach Ablauf einer gesetzten Frist. Der Vorgang ist materiell, weil er von einem bloßen Datendiebstahl in eine potenzielle Verbreitung sensibler Verwaltungs- und Personaldaten übergeht. Der Wirkpfad liegt in der möglichen Weiterveräußerung, Vervielfältigung oder gezielten Nutzung der Daten gegen Betroffene und Verwaltung. Als mögliche Folge nennt die Quelle eine Veröffentlichung von Arbeitszeugnissen, Ausschreibungen, Beurteilungen und Personalakten; zugleich bleibt offen, ob diese Ordner tatsächlich vollständig und echt sind. Die Evidenz ist jedoch begrenzt, weil die Angaben zunächst nicht überprüfbar waren und nur eine Quelle vorliegt. Deshalb ist die Lage als laufende Entwicklung mit offenem Umfang und offener technischer Verifikation zu behandeln.",
+      "why_relevant": "Der Vorgang betrifft mögliche sensible Verwaltungsdaten, Datenschutz, Verwaltungskontinuität und das Vertrauen in digitale staatliche Infrastrukturen.",
+      "topic": [
+        "Digitalisierung",
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Folgen für Beschäftigte und weitere Betroffene durch Veröffentlichung oder Weiterverwertung sensibler Daten sind naheliegend, aber noch nicht verifiziert."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Kein direkter Umweltbezug aus der Quelle erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Ein Angriff auf ein Landesnetz und mögliche Datenoffenlegung berührt Verwaltungssicherheit, Datenschutz und die Funktionsfähigkeit öffentlicher Institutionen."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Datenmenge laut Bericht",
+            "value": "1,4 Millionen",
+            "unit": "Datensätze",
+            "context": "Zugänglich gemachte Daten laut rbb-Informationen"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "staat",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "first_seen": "2026-09-04T14:37:53.000Z",
+      "last_updated": "2026-09-04T15:07:05.912Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-9ce6682a9f1a77ee5f1d",
+      "source_published_at": "2026-09-04T14:37:53.000Z",
+      "published_at": "2026-09-04T15:07:05.912Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob weitere Stellen die Darknet-Veröffentlichung und den Umfang der Daten unabhängig bestätigen.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Berichte oder technische Belege zur Veröffentlichung im Darknet",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-fbac489cdc45dae6",
+          "announced_at": "2026-09-04T14:37:53.000Z",
+          "follow_up_date": "2026-09-11T15:07:05.912Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:37:53.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-d02cf2fc303cef4f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d02cf2fc303cef4f-a5bb632f0b9eb906-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d02cf2fc303cef4f-b30b6d0c98b6f804-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d02cf2fc303cef4f-66cbc38c4a3a70ce-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "migration-frontex-unterstutzt-frankreich-bei-einsatzen-im-armelkanal-3cef4f",
+      "title": "Migration - Frontex unterstützt Frankreich bei Einsätzen im Ärmelkanal",
+      "source_summary": "Frontex soll nach Angaben des Deutschlandfunks künftig Frankreich bei Such- und Rettungseinsätzen im Ärmelkanal und in der Nordsee unterstützen. Genannt werden außerdem von Spanien und Litauen ausgeliehene Schiffe für den Einsatz.\n\nDie Entscheidung sei nach einem Treffen von Frankreichs Präsident Macron mit dem britischen Premierminister Burnham gefallen, bei dem auch Migrationsfragen beraten worden sei. Der Bericht verweist zudem auf ein jüngst geschlossenes Grenzsicherungs-Abkommen zwischen London und Paris sowie auf eine Regelung zum Austausch von Migranten ohne Papiere und Asylsuchenden mit familiären Bindungen.",
+      "summary": "Frontex soll Frankreich künftig bei Einsätzen im Ärmelkanal und in der Nordsee unterstützen. Der Bericht nennt außerdem ein französisch-britisches Grenzsicherungs-Abkommen und ausgeliehene Schiffe aus Spanien und Litauen.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle, dass Frontex Frankreich bei Such- und Rettungseinsätzen im Ärmelkanal und in der Nordsee unterstützen soll. Der Bericht ordnet das in eine jüngere Vereinbarung zwischen London und Paris ein, die illegale Überfahrten begrenzen soll. Außerdem werden Schiffe aus Spanien und Litauen als Teil des Einsatzes genannt. Für die Wirkung ist das relevant, weil sich damit operative Kapazitäten, Zuständigkeiten und Kooperationsmuster im Migrations- und Grenzkontext verändern können. Ein möglicher Wirkpfad führt über mehr maritime Präsenz zu veränderten Kontrollen, Rettungsabläufen und Rückführungspraktiken. Unklar bleibt, wie groß der tatsächliche Umfang des Einsatzes ist und ob die angekündigte Unterstützung messbar zu weniger Überfahrten oder zu anderen Verlagerungseffekten führt; dazu liegt hier nur eine einzelne journalistische Quelle vor.",
+      "why_relevant": "Die Meldung betrifft eine konkrete Änderung in der grenz- und migrationspolitischen Praxis im Ärmelkanal, also einen Bereich mit direkter Relevanz für Zuständigkeiten, Einsätze und mögliche Folgeeffekte auf Mensch und Staat.",
+      "topic": [
+        "Europa"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Migranten, Einsatzkräfte und Küstenregionen; der Eingriff betrifft Rettung und Kontrolle auf See."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist aus der Quelle nicht ersichtlich."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Maßnahme berührt grenzpolitische Kooperation und staatliche Zuständigkeiten, aber keine institutionelle Grundentscheidung."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Einsatzgebiet",
+            "value": "Ärmelkanal",
+            "unit": "Ort",
+            "context": "Ort des angekündigten Frontex-Einsatzes"
+          }
+        ],
+        "affected_groups": [
+          "unternehmen",
+          "staat",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-04T14:33:35.000Z",
+      "last_updated": "2026-09-04T14:38:33.214Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-86e467282b4359844579",
+      "source_published_at": "2026-09-04T14:33:35.000Z",
+      "published_at": "2026-09-04T14:38:33.214Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/frontex-unterstuetzt-frankreich-bei-einsaetzen-im-aermelkanal-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:33:35.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-7ae0b9f22404b684",
       "title_image": {
@@ -95,82 +952,6 @@
           "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T09:36:10.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-8e4cf2004cb7951c",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-77a2af750aee4a30-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-d7e8b04c28628dd2-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8e4cf2004cb7951c-37bb05cd423564f3-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "russische-drohne-trifft-geheimdienst-sitz-in-kiew-b7951c",
-      "title": "Russische Drohne trifft Geheimdienst-Sitz in Kiew",
-      "source_summary": "Nach Angaben des Berichts wurde der Sitz des ukrainischen Inlandsgeheimdienstes SBU im Zentrum von Kiew am helllichten Tag von einer russischen Drohne getroffen. Der Angriff soll am Freitag erfolgt sein.\n\nDer ukrainische Präsident Wolodymyr Selenskyj erklärte demnach auf Telegram, die Drohne habe „direkt“ auf das Büro des Geheimdienstchefs gezielt. AFP-Reporter sahen mehrere Krankenwagen nahe dem Gebäude im Herzen der Hauptstadt. Weitere Angaben zu Schäden, Verletzten oder einer zweiten Bestätigung nennt der Text nicht.",
-      "summary": "Eine russische Drohne soll den SBU-Sitz im Zentrum von Kiew getroffen haben. Selenskyj sagte laut Bericht, das Ziel sei direkt das Büro des Geheimdienstchefs gewesen.",
-      "detail_summary": "Gesichert ist zunächst nur der Bericht, dass eine russische Drohne den Sitz des ukrainischen Inlandsgeheimdienstes SBU im Zentrum von Kiew getroffen haben soll. Dazu kommt die im Text wiedergegebene Aussage von Präsident Wolodymyr Selenskyj, der Angriff habe direkt auf das Büro des Geheimdienstchefs gezielt. Die AFP-Reporter beobachteten zudem mehrere Krankenwagen nahe dem Gebäude, was auf einen akuten Einsatz vor Ort hindeutet. Materiell relevant ist der Vorgang, weil ein Angriff auf einen zentralen Sicherheitsapparat in der Hauptstadt potenziell Schutz, Funktionsfähigkeit und Lagebild staatlicher Institutionen beeinträchtigt. Ein möglicher Wirkpfad reicht von unmittelbaren Schäden und Sicherheitsfolgen bis zu weiterer Eskalation und zusätzlichem Druck auf zivile Infrastruktur. Eine belastbare Einordnung von Umfang, Verletzten oder strategischer Wirkung ist mit der vorliegenden Einzelquelle noch nicht möglich.",
-      "why_relevant": "Ein Angriff auf den SBU-Sitz in Kiew betrifft eine zentrale staatliche Sicherheitsinstitution im laufenden Krieg und kann kurzfristig Sicherheitslage, Funktionsfähigkeit und Eskalationsdynamik beeinflussen.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell Beschäftigte, Einsatzkräfte und zivile Anwohner im Zentrum der Hauptstadt; zugleich geht es um staatliche Sicherheitsfunktionen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Der Quellenstand beschreibt keinen direkten Umwelt- oder Klimabezug."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Ein Angriff auf einen zentralen Geheimdienstsitz berührt staatliche Sicherheits- und Schutzfunktionen sowie die demokratische Korrekturfähigkeit in einer Krisenlage."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T13:52:39.000Z",
-      "last_updated": "2026-09-04T14:08:09.852Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-43f99f36657ddc9d3f73",
-      "source_published_at": "2026-09-04T13:52:39.000Z",
-      "published_at": "2026-09-04T14:08:09.852Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/russische-drohne-trifft-geheimdienst-sitz-in-kiew-38209648.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T13:52:39.000Z",
           "primary_source": false
         }
       ]
@@ -594,82 +1375,6 @@
           "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T13:13:20.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-5547189d2645384a",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-b8c8ece83cc36995-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-d52c3acd5e7e8b6e-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5547189d2645384a-59e708eaed0d93f5-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
-      "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
-      "source_summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen hat es in Gevelsberg einen SEK-Einsatz gegeben. Laut WDR traf die Polizei den gesuchten Mann dort nicht an. Der Beitrag beschreibt außerdem, dass die Polizei europaweit nach einem Mann aus Gevelsberg fahndet, Jahrgang 1977, dessen Name dem WDR vorliege. Unklar bleibt nach Darstellung des Berichts, ob er tatsächlich der Verfasser der Bekennerschreiben ist.\n\nIm Umfeld des Umspannwerks in Dormagen wurden demnach selbst gebaute Abschussvorrichtungen entdeckt, die unter einer Hochspannungsleitung standen. Die Polizei bewertet die Konstruktionen als mögliches Mittel zum Angriff auf das Stromnetz. Der WDR verweist zudem darauf, dass es ähnliche Fälle in Bergheim und Brandenburg gegeben habe. Über Schäden an der Anlage oder einen Stromausfall für die Bevölkerung wird in dem Text nichts als eingetreten berichtet.",
-      "summary": "In Gevelsberg lief nach dem Dormagener Sabotageverdacht ein SEK-Einsatz, ohne dass die Polizei den gesuchten Mann dort antraf. Der WDR meldet zudem Funde und Fahndungshintergründe rund um mögliche Angriffe auf das Stromnetz.",
-      "detail_summary": "Gesichert aus dem vorliegenden Bericht ist vor allem der SEK-Einsatz in Gevelsberg und dass der dort gesuchte Mann nach Angaben des WDR nicht angetroffen wurde. Der Beitrag ordnet den Vorgang in den bereits bekannten Sabotageverdacht am Umspannwerk in Dormagen ein und nennt dort gefundene Abschussvorrichtungen unter einer Hochspannungsleitung. Zusätzlich berichtet er von einer europaweiten Fahndung nach einem Mann aus Gevelsberg, Jahrgang 1977, ohne die Identität oder Täterschaft abschließend zu klären. Für die öffentliche Relevanz spricht der Bezug zu kritischer Infrastruktur und die Möglichkeit weiterer Ermittlungs- und Schutzmaßnahmen. Ein Wirkpfad wäre, dass die Suche nach dem Verdächtigen und die Prüfung der Fundstücke die Gefährdungslage für Stromnetz-Anlagen verändert. Ob daraus bereits konkrete technische, rechtliche oder operative Folgen entstehen, bleibt offen und ist im Material nicht belegt.",
-      "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Strominfrastruktur und eine europaweite Fahndung; beides kann Ermittlungen, Schutzmaßnahmen und öffentliche Sicherheitslage beeinflussen.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind mögliche Stromversorgung, Sicherheitsbehörden und Anwohner; bei kritischer Infrastruktur können auch indirekte Folgen für Versorgung und Schutz entstehen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Ein direkter Umweltbezug wird im Material nicht belegt; allenfalls indirekt über Energieinfrastruktur und mögliche Schadensvermeidung."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Vorgang berührt staatlichen Schutz kritischer Infrastruktur und Ermittlungsfähigkeit; belastbare Auswirkungen auf demokratische Prozesse sind daraus noch nicht ableitbar."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T10:22:28.000Z",
-      "last_updated": "2026-09-04T13:23:17.993Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-dad0642fc6ee28b03f8a",
-      "source_published_at": "2026-09-04T13:12:19.000Z",
-      "published_at": "2026-09-04T13:23:17.993Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T13:12:19.000Z",
           "primary_source": false
         }
       ]
@@ -1999,114 +2704,6 @@
           "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-produktion-zwickau-aufsichtsrat-stellenabbau-kretschmer-panter,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T10:03:38.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-e442d6ad81290406",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-8b9b85a2956c0072-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-719275147021cda4-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e442d6ad81290406-f83836ae06c81314-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "studie-von-unicef-jedes-funfte-kind-erleidet-sexuellen-missbrauch-im-internet-290406",
-      "title": "Studie von Unicef: Jedes fünfte Kind erleidet sexuellen Missbrauch im Internet",
-      "source_summary": "Die taz berichtet über eine neue UNICEF-Studie zu sexueller Ausbeutung von Kindern im Netz. Danach sei Kinder im Internet womöglich häufiger sexueller Missbrauch ausgesetzt als bisher angenommen; die Untersuchung stützt sich auf Daten aus 21 Ländern. UNICEF nennt 20 Millionen betroffene Mädchen und Jungen und beschreibt, dass fast 60 Prozent der Fälle auf Social-Media-Plattformen stattgefunden hätten.\n\nDer Bericht führt außerdem aus, dass in gut jedem zweiten Fall bereits bekannte Personen beteiligt gewesen seien. UNICEF warnt vor schweren psychischen Folgen und verweist darauf, dass betroffene Kinder häufiger von Suizidgedanken oder selbstverletzendem Verhalten berichteten. Deutschland sei nicht unter den untersuchten Ländern gewesen.",
-      "summary": "UNICEF wird in einer taz-Meldung mit neuen Zahlen zu sexualisierter Ausbeutung von Kindern im Netz zitiert. Die Angaben reichen von globalen Betroffenenzahlen bis zu Plattformen und möglichen Folgen.",
-      "detail_summary": "Gesichert ist nach der vorliegenden Meldung vor allem der Kern der UNICEF-Zahlen: Die Organisation beschreibt eine Untersuchung in 21 Ländern und schätzt 20 Millionen betroffene Mädchen und Jungen. Zugleich heißt es, nahezu 60 Prozent der Fälle fänden auf Social-Media-Plattformen statt, und in gut jedem zweiten Fall seien bereits bekannte Personen beteiligt. Das ist relevant, weil damit nicht nur ein abstraktes Schutzproblem beschrieben wird, sondern konkrete Risikoräume und typische Kontaktwege.\n\nDer Wirkpfad liegt hier vor allem in der digitalen Umgebung: Plattformfunktionen, Kontaktanbahnung und Weitergabe von Inhalten können Missbrauch erleichtern oder verstetigen. Mögliche Folgen reichen von mehr Präventionsdruck für Plattformen bis zu verschärften Schutz- und Meldestrukturen für Kinder. Belastbar belegt ist das in diesem Datensatz aber nur als sekundär berichtete Studie; die Originalstudie liegt nicht direkt vor. Daher bleiben Methodik, Auswahl der Länder und genaue Gewichtung der Zahlen offen.",
-      "why_relevant": "Die Meldung betrifft den Schutz von Kindern in digitalen Räumen und damit ein Feld mit hoher Relevanz für Mensch, Plattformregulierung und Prävention. Sie enthält neue, quantifizierte Hinweise auf Ausmaß, typische Tatorte und mögliche Folgen.",
-      "topic": [
-        "Digitalisierung"
-      ],
-      "status": "erste Daten",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "sehr hoch",
-          "rationale": "Die Meldung beschreibt ein weltweites Risiko für Kinder und mögliche schwere psychische Folgen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Kein direkter Umweltbezug erkennbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Aussage berührt Plattformverantwortung, Schutzregeln und digitale Kontrollfähigkeit."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "betroffene Kinder",
-            "value": "20 Millionen",
-            "unit": "Mädchen und Jungen",
-            "context": "UNICEF-Schätzung für die untersuchten Länder"
-          },
-          {
-            "label": "Länder",
-            "value": "21",
-            "unit": "Länder",
-            "context": "In diesen Ländern wurden Untersuchungen durchgeführt"
-          },
-          {
-            "label": "Fälle auf Social Media",
-            "value": "nahezu 60 Prozent",
-            "unit": "Prozent",
-            "context": "Anteil der Fälle laut Studie"
-          }
-        ],
-        "affected_groups": [
-          "kinder_jugend",
-          "unternehmen",
-          "staat",
-          "europa"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "first_seen": "2026-09-03T06:53:00.000Z",
-      "last_updated": "2026-09-04T10:55:38.873Z",
-      "version": 3,
-      "news_status": "preliminary",
-      "event_id": "event-83becedad84b8b907cdf",
-      "source_published_at": "2026-09-03T06:53:00.000Z",
-      "published_at": "2026-09-04T01:52:05.573Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "taz-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Studie-von-Unicef/!6209752",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T06:53:00.000Z",
           "primary_source": false
         }
       ]
@@ -3687,118 +4284,6 @@
           "source_type": "official_rss",
           "published_at": "2026-09-03T08:58:00.000Z",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-aabe8c0430bf8f84",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-88c6b58ca0c4737d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-88c6b58ca0c4737d-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-88c6b58ca0c4737d-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84",
-      "title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
-      "source_summary": "Rescue teams have pulled two hydropower workers free from a tunnel blocked by mud and debris after the late-August floods in Nepal. The report says officials believe hundreds of workers remain trapped in tunnels linked to hydropower projects in the remote Himalayan region.\n\nA second report puts the scale of the emergency at about 900 missing workers across 12 hydropower projects, with roughly 500 believed trapped in tunnels according to local authorities. Beide Berichte beschreiben die Lage als laufende Rettungs- und Suchoperation nach schweren Überschwemmungen.",
-      "summary": "Zwei Wasserkraftarbeiter wurden in Nepal aus einem verschlammten Tunnel gerettet. Die Lage bleibt offen, weil nach Angaben in den Quellen weiter viele Arbeiter vermisst oder eingeschlossen sein sollen.",
-      "detail_summary": "Gesichert ist nach den vorliegenden Berichten die Rettung von zwei Wasserkraftarbeitern aus einem durch Schlamm und Geröll blockierten Tunnel in Nepal. Zusätzlich nennen die Quellen eine noch unklare Großlage: Hundertende Arbeiter sollen in Tunneln von Wasserkraftprojekten feststecken, eine andere Quelle spricht von etwa 900 Vermissten in 12 Projekten und rund 500 mutmaßlich Eingeschlossenen. Für die Einordnung ist das materiell, weil es um akute Lebensgefahr für Beschäftigte, um große Rettungskapazitäten und um die Störanfälligkeit von Infrastruktur in einer abgelegenen Region geht. Ein möglicher Wirkpfad betrifft kurzfristig Rettung, Versorgungslogistik und den weiteren Betrieb der Anlagen. Offen bleibt, ob die Zahlen voneinander unabhängig bestätigt sind und wie viele Betroffene tatsächlich noch eingeschlossen sind; die Folgewirkungen für Betrieb, Arbeitsschutz und regionale Versorgung lassen sich aus dem Material noch nicht belastbar beziffern.",
-      "why_relevant": "Die Meldung beschreibt eine akute Rettungslage mit möglicher Gefährdung vieler Beschäftigter und Störungen bei mehreren Wasserkraftprojekten.",
-      "topic": [
-        "Arbeit",
-        "Gesundheit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mehrere Beschäftigte sind direkt betroffen; die Berichte sprechen von anhaltender Lebensgefahr und laufender Rettung."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein Umweltbezug ist nur indirekt über Überschwemmungen und Infrastrukturstörungen erkennbar, ohne belegte ökologische Folge."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Kein direkter demokratischer Entscheidungs- oder Korrekturprozess ist in den Quellen angelegt."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Vermisste Arbeiter",
-            "value": "900",
-            "unit": "Personen",
-            "context": "Angabe zu vermissten Arbeitern in Nepal"
-          },
-          {
-            "label": "Wasserkraftprojekte",
-            "value": "12",
-            "unit": "Projekte",
-            "context": "Zahl der genannten betroffenen Projekte"
-          }
-        ],
-        "affected_groups": [
-          "beschaeftigte",
-          "staat",
-          "unternehmen"
-        ],
-        "tendency": {
-          "human": "chance",
-          "planet": "gemischt",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-04T05:10:44.000Z",
-      "last_updated": "2026-09-04T05:43:04.119Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-1b0c4e9053465796c788",
-      "source_published_at": "2026-09-04T05:10:44.000Z",
-      "published_at": "2026-09-04T05:43:04.119Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "france24-en"
-          ],
-          [
-            "euronews-en"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "France 24",
-          "url": "https://www.france24.com/en/asia-pacific/20260904-two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:10:44.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Euronews",
-          "url": "http://www.euronews.com/2026/09/04/two-trapped-workers-rescued-from-hydropower-tunnel-nine-days-after-nepal-floods",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:25:08.000Z",
-          "primary_source": false
         }
       ]
     },

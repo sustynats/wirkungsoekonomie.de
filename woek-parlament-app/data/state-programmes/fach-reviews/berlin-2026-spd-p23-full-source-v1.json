@@ -1,0 +1,173 @@
+{
+  "schema_version": "woek-canonical-source-text-proof-1.0",
+  "artifact": {
+    "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+    "title": "Wahlprogramm Abgeordnetenhauswahl 2026",
+    "version": "v4.1",
+    "url": "https://spd.berlin/media/2026/08/SPD_Berlin_Wahlprogramm_20260521-v4-1.pdf",
+    "sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9",
+    "byte_length": 663059,
+    "page_count": 66,
+    "media_type": "application/pdf",
+    "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+    "publication_status": "PARTY_APPROVED_FINAL_ELECTION_PROGRAMME"
+  },
+  "extraction": {
+    "mode": "READ_ONLY_FROZEN_ARTIFACT_EXACT_LOCATOR_EXTRACTION",
+    "full_artifact_parity_gate": "2042_OF_2042_SHA256_IDENTICAL",
+    "rule": "Full text from the exact PDF locator; line-end dehyphenation accepted only when its SHA-256 equals the pre-existing frozen source hash. No source or Fach field rewritten."
+  },
+  "source_units": [
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0266",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b003@42.52,69.84,272.22,108.22",
+      "source_text": "Wir wollen, dass die Gewässer in der Innenstadt wieder besser zugänglich werden. Als Baustein dafür machen wir Baden in der Spree möglich.",
+      "source_text_sha256": "35e24cae42e15952a7d96ee13fd5a1a8c9f063430ec5d9383e7e2fb8a11ae776"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0267",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b004@42.52,118.94,232.62,134.25",
+      "source_text": "Die Berliner Stadtnatur erhalten",
+      "source_text_sha256": "3637e40d1347d585c12d9ba891081d9c17f6b2b8cee96ea8d24fea7d5c9dfdc7"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0268",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b005@42.52,143.25,286.93,247.63",
+      "source_text": "Kleingärten stehen für lebendiges, soziales Stadtleben. Wir stärken und schützen sie, fördern Öffnung für Nachbarschaften und den Erhalt der Biodiversität. Wir entwickeln Kleingartenanlagen als Naherholungsgebiete – für die Kleingärtnerinnen und Kleingärtner und für die Stadtgesellschaft. Gemeinschaftliches Gärtnern im öffentlichen Raum unterstützen wir.",
+      "source_text_sha256": "5ac63e67d646ac04b524b252235f9390c910b957f30ae9b5f722b42ce3f7964e"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0269",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b006@42.52,257.35,292.95,361.73",
+      "source_text": "Mit der EU-Wiederherstellungsverordnung soll Berlin 20 Prozent seiner Fläche renaturieren. Wir nutzen das, um den Wert der Stadtnatur zu vermitteln – auch mit Schulen und Informationskampagnen. Die Biodiversitätsstrategie setzen wir um, am Berlin Urban Nature Pact halten wir fest und wirken dem Artensterben wirksam entgegen.",
+      "source_text_sha256": "3ecd4a300afaf6debb3a3947462cf3d88933b9e6328c3dad027c999ed23cfdbf"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0270",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b007@42.52,371.46,278.28,462.64",
+      "source_text": "Mit den Berliner Forsten machen wir den Wald klimafest und gestalten ihn naturnah um. Er bleibt Erholungswald; wirtschaftliche Nutzung bleibt nachrangig. Wir fördern den Umbau zum Mischwald vorrangig über Naturverjüngung. Den Zustand begleiten wir mit satellitengestütztem Monitoring.",
+      "source_text_sha256": "2a0b5037e07fb76a25d09c20d7302475f28bf7141e7dabae7a0a22d6120616ce"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0271",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b008@42.52,472.36,287.86,576.74",
+      "source_text": "Wir würdigen freiwilliges Umweltengagement. Einsätze, wie Müllsammeln, werden wir mit der Ehrenamtskarte anerkennen und durch Gutscheine für Museen, Theater oder Bäder belohnen. Auch die Kehrenbürger-Aktionen der BSR führen wir fort und bauen sie weiter aus. Damit unterstützen wir diejenigen, die ihre Nachbarschaft sauber halten und verschönern wollen.",
+      "source_text_sha256": "6eab3538f1e1d9e1fc65e162f7c0c9c5b208939a382be4d5b79db8d520feddc2"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0272",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b009@42.52,587.46,286.02,602.77",
+      "source_text": "Tierschutz als Teil unserer Verantwortung",
+      "source_text_sha256": "92b95cc61ff81747da1890e12678af0408e704645afebad29cb6c0625cab53ee"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0273",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b010@42.52,611.77,288.75,768.95;p023:b011@304.73,69.84,428.06,81.82",
+      "source_text": "Wir stärken die Veterinärämter, damit sie illegalen Tierhandel und Qualzuchten konsequent kontrollieren können. Wir sichern die Finanzierung des Tierheims und fördern funktionierende Konzepte für Katzenkastrationen und Stadttaubenmanagement. Der Hundeführerschein ersetzt die Rasseliste und schafft Sicherheit durch Wissen. Wir schließen den Einsatz von Tieren auf staatlichen Bühnen des Landes aus und untersagen weiterhin Auftritte von Zirkussen mit Wildtieren auf landeseigenen Flächen. Die Funktion der*des Landestierschutzbeauftragten bleibt zentrale Stimme für Tiere in Berlin.",
+      "source_text_sha256": "7da75a97ff01ded19560c20be114321d56bb82ff766c3ef6f64238e973674e20"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0274",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b012@304.72,92.54,513.27,124.65",
+      "source_text": "Regenwasser nutzen, Grundwasser schützen, Wasser sparen",
+      "source_text_sha256": "794e3269ba5f65aa741da654216c5f0f5e2dd8f7012f7ddfb495eb309d15c1a4"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0275",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b013@304.72,133.65,554.19,277.63",
+      "source_text": "Für die Schwammstadt koppeln wir mit den Berliner Wasserbetrieben und der Regenwasseragentur mehr Regenwasser von der Kanalisation ab. Es soll vor Ort versickern, Einleitungen senken und Gewässerqualität sowie Stadtgrün stärken. Wir wollen den Anteil des Regenwassers, den wir technisch von der Kanalisation abkoppeln können, weiter erhöhen. Dafür werden wir auch das grundstücksübergreifende Regenwassermanagement rechtlich verbindlich machen.",
+      "source_text_sha256": "5b355fd5f208d2ad15748aa38ea20890077c0316fe49f5fe78f9ca430ae84bb7"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0276",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b014@304.72,287.35,553.70,523.73",
+      "source_text": "Eine sichere Trinkwasserversorgung ist lebenswichtig. Wir sind uns der drohenden Grundwasserproblematik in Berlin und Brandenburg bewusst und arbeiten verstärkt an gemeinsamen Anpassungsstrategien beider Länder. Wir bringen Gewässer und Uferbereiche gemäß EU‑Wasserrahmenrichtlinie in einen guten Zustand und erhalten sie als Lebensräume und Erholungsorte – mit besonderem Fokus auf Kleingewässer. Notversorgung über Notbrunnen sichern wir und starten eine Wassersparoffensive sowie eine verstärkte Fokussierung auf Grauwasserlösungen (Aufbereitung von Wasser zur Zweitnutzung) im privaten und öffentlichen Bereich. Um die Berliner Wasserwerke nachhaltig zu schützen, wollen wir die Sanierung von Boden- und Grundwasserverunreinigungen vorantreiben. Dazu stärken wir die Bezirke personell und finanziell.",
+      "source_text_sha256": "287f992ffe639757c091bf4f13ddde453c6d0c355de054d2bf5902fd7110df1a"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0277",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b015@304.72,534.45,474.68,549.76",
+      "source_text": "Müll vermeiden und recyceln",
+      "source_text_sha256": "cf066d3d4b60fb592bd77c4f3de562cc5471fd7087363bb5a3fabaa35629b83e"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0278",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b016@304.72,558.76,523.45,636.74",
+      "source_text": "Wir stehen zum Zero‑Waste‑Konzept: Vermeidung hat Vorrang vor Verwertung und Entsorgung. Eine Verpackungssteuer soll den Müll aus Essensverpackungen senken. Das NochMall‑Kaufhaus und der Reparatur‑Bonus werden fortgeführt.",
+      "source_text_sha256": "32c055c7cbc2f76001d2beac5c67bbe82f70ef7426de0f927d525be0b22f2481"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0279",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23
+      ],
+      "source_locator": "p023:b017@304.73,646.47,549.30,711.25",
+      "source_text": "Damit der Umgang mit Müll und Umwelt wieder mehr ins Bewusstsein gelangt, verankern wir Müllvermeidung, Recycling und richtige Trennung frühzeitig im Kita- und Schulalltag. Projekttage mit der BSR werden an Berliner Schulen zum Standard.",
+      "source_text_sha256": "c8006f74029e3a0a77c224ed30683c6f6bf9dffa74c1f722db22d0e484b8b2fa"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0280",
+      "pdf_page": 23,
+      "pdf_pages": [
+        23,
+        24
+      ],
+      "source_locator": "p023:b018@304.72,720.97,549.29,772.55;p024:b003@42.52,69.84,292.26,161.02",
+      "source_text": "Nicht‑kommerzielle Träger bei Altkleidersammlung und -verteilung stärken wir. Die Altholz‑Recyclingquote erhöhen wir deutlich über 25 Prozent, besonders mit den neuen Anlagen in der Gradestraße. Unvermeidbaren Müll bereiten wir künftig stärker in Berlin auf und verwerten ihn. Wir ermöglichen weitere Müllsortieranlagen bei der BSR für verbesserte Ressourcen-Kreisläufe. Wir wollen noch mehr Haushalte mit Biotonnen ausstatten und führen auch die bezirklichen Grünabfälle konsequent der Kompostierung durch die BSR zu.",
+      "source_text_sha256": "395e5e24e2ce5960edfb0a6ddcd07fa51fefa3750bda3d2d795b2b4c7ff8258c"
+    }
+  ]
+}

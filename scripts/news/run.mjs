@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   budgetStage,
+  buildAnalysisPrompt,
   callWoekAi,
   claimLedgerFor,
   clusterItems,
@@ -28,6 +29,7 @@ import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, NEWS_REQUEST_RE
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
 import { IMAGE_CONFIG } from "./title-image/policy.mjs";
+import { articleSourceOrder, canReuseReview, reviewCheckpoint } from "./evidence-packets.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
@@ -178,7 +180,7 @@ function attachRelatedTickerHistory(candidates, stories) {
 
 function createCandidate(cluster, now, reassessment = false, fresh = false) {
   const existing = cluster.existing_story;
-  const sources = mergeSources(existing?.pending_update?.sources || existing?.sources, cluster.sources);
+  const sources = mergeSources(existing?.pending_update?.sources || existing?.review_checkpoint?.sources || existing?.sources, cluster.sources);
   const candidate = {
     story_id: cluster.story_id,
     slug: existing?.slug || `${slugify(cluster.title)}-${cluster.story_id.slice(-6)}`,
@@ -209,7 +211,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     return {
       ...existing,
       pending_update: {
-        detected_at: now,
+        detected_at: existing.pending_update?.detected_at || now,
         content_hash: candidate.content_hash,
         sources: candidate.sources,
         reason,
@@ -228,6 +230,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     ...(existing?.title_image ? { title_image: existing.title_image } : {}),
     ...(existing?.corrections ? { corrections: existing.corrections } : {}),
     ...(existing?.living_file ? { living_file: existing.living_file } : {}),
+    ...(existing?.review_checkpoint ? { review_checkpoint: existing.review_checkpoint } : {}),
     first_seen: candidate.first_seen,
     last_updated: candidate.last_updated,
     topic: candidate.topic,
@@ -488,6 +491,9 @@ export async function runWirkungsticker(options = {}) {
     locally_rejected: 0,
     ai_stories: 0,
     ai_calls: 0,
+    reviews_reused: 0,
+    input_holds: [],
+    prompt_chars_sent: 0,
     ai_batches_planned: 0,
     ai_batches_completed: 0,
     published_stories: 0,
@@ -622,7 +628,7 @@ export async function runWirkungsticker(options = {}) {
       cluster.sources.some((source) => freshItemIds.has(source.item_id)),
     ));
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
-  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT"]);
+  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => !isMerged(story))
     .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
@@ -632,9 +638,9 @@ export async function runWirkungsticker(options = {}) {
       const retryCount = story.pending_update?.quality_retry_count ?? story.quality_retry_count ?? 0;
       return dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id) || retryableReasons.has(reason) || shouldRetryQualityGate(reason, qualityErrors, retryCount);
     })
-    .filter((story) => (story.pending_update?.sources || story.sources || []).some((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs))
+    .filter((story) => (story.pending_update?.sources || story.review_checkpoint?.sources || story.sources || []).some((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs))
     .map((story) => {
-      const sources = (story.pending_update?.sources || story.sources).filter((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs);
+      const sources = (story.pending_update?.sources || story.review_checkpoint?.sources || story.sources).filter((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs);
       const candidate = {
         story_id: story.story_id,
         slug: story.slug,
@@ -660,6 +666,8 @@ export async function runWirkungsticker(options = {}) {
     });
   const clusters = attachRelatedTickerHistory([...freshCandidates, ...retryCandidates], storyStore.stories);
   for (const candidate of clusters) {
+    candidate.followup_due = dueFollowupIds.has(candidate.story_id);
+    candidate.deepening_due = dueDeepeningIds.has(candidate.story_id);
     const alternativeItems = allItems.filter((item) => !subjectConflict(item, candidate) && (livingFileMatch(item, candidate).score > 0 || candidate.sources.some((source) => !subjectConflict(item, source) && eventCompatibility(item, source).same_event)));
     candidate.sources = mergeSources(candidate.sources, alternativeItems);
     candidate.claims = claimLedgerFor(candidate.sources, candidate.story_id, now);
@@ -690,6 +698,29 @@ export async function runWirkungsticker(options = {}) {
   report.locally_rejected = clusters.length - eligible.length;
   newsroom.decisions ||= [];
   for (const candidate of clusters.filter((candidate) => !eligible.includes(candidate))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
+  const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
+  // Check size before assigning paid slots. A blocked file must never starve the
+  // next eligible story or be mislabeled as an outage of the AI provider.
+  const ready = eligible.filter(candidate => {
+    if (canReuseReview(candidate, now)) {
+      report.reviews_reused += 1;
+      if (candidate.existing_story.review_checkpoint.outcome === "input_too_large") report.input_holds.push({ story_id: candidate.story_id, reason: "AI_INPUT_TOO_LARGE", reused: true });
+      else {
+        const { pending_update: _pendingUpdate, ...preserved } = candidate.existing_story;
+        byId.set(candidate.story_id, preserved);
+      }
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, decision: "unchanged_review_reused", checked_at: candidate.existing_story.review_checkpoint.checked_at });
+      return false;
+    }
+    try { buildAnalysisPrompt([candidate]); return true; }
+    catch (error) {
+      if (error.message !== "AI_INPUT_TOO_LARGE") throw error;
+      byId.set(candidate.story_id, { ...pendingRecord(candidate, "AI_INPUT_TOO_LARGE", now, [error.message]), review_checkpoint: reviewCheckpoint(candidate, now, "input_too_large") });
+      report.input_holds.push({ story_id: candidate.story_id, reason: error.message, input_chars: error.inputChars, input_budget: error.inputBudget });
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, decision: "input_size_hold", reason: error.message });
+      return false;
+    }
+  });
   const configuredMaxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
   const maxAiCallsPerHour = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
   const aiCallsInLastHour = aiRequestsInWindow(usage, now);
@@ -698,13 +729,12 @@ export async function runWirkungsticker(options = {}) {
   report.ai_hourly_limit = maxAiCallsPerHour;
   report.ai_calls_in_last_hour = aiCallsInLastHour;
   report.ai_calls_available_this_run = remainingAiCallsThisHour;
-  const { selected, deferred } = partitionAiQueue(eligible, stage, maxAiStories);
+  const { selected, deferred } = partitionAiQueue(ready, stage, maxAiStories);
   const aiBatchSize = Math.max(1, Math.min(maxAiStories || 1, Number(process.env.WOEK_NEWS_AI_BATCH_SIZE || 2)));
   report.ai_stories = selected.length;
   report.ai_batch_size = aiBatchSize;
   report.ai_batches_planned = Math.ceil(selected.length / aiBatchSize);
 
-  const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
   const deferredReason = stage.stage >= 3 ? "AI_BUDGET_BLOCKED" : remainingAiCallsThisHour === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
   for (const candidate of deferred) {
     byId.set(candidate.story_id, pendingRecord(candidate, deferredReason, now));
@@ -737,11 +767,13 @@ export async function runWirkungsticker(options = {}) {
         );
         const analysisBatch = await Promise.all(batch.map(async (candidate) => {
           candidate.verification_started_at = options.now ? now : new Date().toISOString();
-          let articleSources = 0;
+          const articleUrls = new Set(articleSourceOrder(candidate).filter(source => {
+            const registrySource = sourceRegistryById.get(source.source_id);
+            return registrySource && sourceAccess(registrySource, "article").allowed;
+          }).slice(0, 3).map(source => source.url));
           const sources = await Promise.all(candidate.sources.map(async (source) => {
             const registrySource = sourceRegistryById.get(source.source_id);
-            if (!registrySource || !sourceAccess(registrySource, "article").allowed || articleSources >= 3) return source;
-            articleSources += 1;
+            if (!articleUrls.has(source.url)) return source;
             try {
               const result = await (options.fetchArticleImpl || fetchArticleExcerpt)(source, registrySource, registry.policy);
               report.article_excerpts_fetched += 1;
@@ -763,6 +795,7 @@ export async function runWirkungsticker(options = {}) {
         report.provider ||= aiResult.provider;
         report.model ||= aiResult.model;
         report.ai_calls += Number(aiResult.request_attempts || 1);
+        report.prompt_chars_sent += Number(aiResult.prompt_chars || 0);
         report.ai_batches_completed += 1;
         const estimated = costFromUsage(aiResult, estimateUsage(aiResult.prompt_chars, aiResult.answer_chars, aiResult.model, modelRates(aiResult.model)));
         report.input_tokens += estimated.input_tokens;
@@ -781,6 +814,9 @@ export async function runWirkungsticker(options = {}) {
           if (errors.length) {
             if (candidate.existing_story?.published && !candidate.reassessment && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error))) {
               const { pending_update: _pendingUpdate, ...preserved } = candidate.existing_story;
+              // Cache only a well-formed editorial no-update decision, never a
+              // technical failure or an insufficient-evidence retry.
+              if (["no_new_information", "not_material", "superseded"].includes(analysis?.rejection?.code)) preserved.review_checkpoint = reviewCheckpoint(candidate, now, "no_material_update");
               if (candidate.deepening_due) {
                 preserved.deepening_checks = Number(preserved.deepening_checks || 0) + 1;
                 // No repeated paid rewording of unchanged evidence. Three scheduled
@@ -814,6 +850,13 @@ export async function runWirkungsticker(options = {}) {
         report.estimated_cost_usd = Number((report.estimated_cost_usd + NEWS_REQUEST_RESERVATION_USD * Number(error?.requestAttempts ?? 1)).toFixed(6));
         report.token_source = "includes_conservative_failed_request_reservations";
         const reason = sanitizeError(error);
+        if (reason === "AI_INPUT_TOO_LARGE" && error?.requestAttempts === 0) {
+          for (const candidate of batch) {
+            byId.set(candidate.story_id, { ...pendingRecord(candidate, "AI_INPUT_TOO_LARGE", now, [reason]), review_checkpoint: reviewCheckpoint(candidate, now, "input_too_large") });
+            report.input_holds.push({ story_id: candidate.story_id, reason, input_chars: error.inputChars, input_budget: error.inputBudget });
+          }
+          continue;
+        }
         report.ai_error = reason;
         report.failed_batch_offset = offset;
         const rateLimited = /AI_PROVIDER_ERROR:429/.test(reason);
@@ -866,7 +909,7 @@ export async function runWirkungsticker(options = {}) {
   report.completed_at = new Date().toISOString();
   const currentItems = allItems.filter((item) => Date.parse(item.published_at || 0) <= nowDate.getTime() + futureToleranceMs);
   report.latest_source_timestamp = latestSourceDate(currentItems) ? new Date(latestSourceDate(currentItems)).toISOString() : null;
-  report.status = report.ai_error || report.source_failures > 0 ? "degraded" : "ok";
+  report.status = report.ai_error || report.input_holds.length || report.source_failures > 0 ? "degraded" : "ok";
   report.ai_calls_remaining_this_hour = Math.max(0, maxAiCallsPerHour - aiCallsInLastHour - report.ai_calls);
   report.public_changed = [
     report.published_stories,
@@ -921,7 +964,12 @@ export async function runWirkungsticker(options = {}) {
       story_clusters: report.story_clusters,
       locally_rejected: report.locally_rejected,
       ai_stories: report.ai_stories,
+      ai_requests: report.ai_calls,
+      reviews_reused: report.reviews_reused,
+      input_holds: report.input_holds.length,
+      prompt_chars_sent: report.prompt_chars_sent,
       published_stories: report.published_stories,
+      updated_stories: report.updated_stories,
     },
     ai: report.ai_calls ? {
       requests: report.ai_calls,

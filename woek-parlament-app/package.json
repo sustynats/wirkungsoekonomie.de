@@ -29,7 +29,7 @@
     "executive-projections:materialize": "node scripts/quality/materialize-nonblocking-projection-inventory.mjs",
     "check:executive-projections": "node scripts/quality/check-nonblocking-projection-inventory.mjs && node scripts/quality/materialize-nonblocking-projection-inventory.mjs --check",
     "check:berlin-current-source": "tsx scripts/quality/check-berlin-current-source.ts",
-    "check:berlin-fach-residual": "node scripts/quality/check-berlin-fach-truth-residual.mjs",
+    "check:berlin-fach-residual": "node scripts/quality/check-berlin-fach-truth-residual.mjs && node scripts/quality/check-berlin-spd-p23.mjs && node --test tests/berlin-spd-p23.test.mjs tests/berlin-spd-p22-materialization.test.mjs tests/berlin-fach-truth-residual.test.mjs tests/berlin-combined-terminal-matrix.test.mjs",
     "check:berlin-spd-canonical-parity": "node scripts/quality/materialize-berlin-spd-canonical-parity.mjs --check",
     "check:mv-current-source": "tsx scripts/quality/check-mv-current-source.ts",
     "check:mv-fach-residual": "node scripts/quality/check-mv-fach-truth-pending.mjs && node scripts/quality/check-mv-spd-p55.mjs && node --test tests/mv-spd-p55.test.mjs",
@@ -92,7 +92,7 @@
     "privacy:release": "node scripts/quality/check-release-safety.mjs --scope=release",
     "publications:verify": "node scripts/quality/verify-public-documents.mjs",
     "publications:deep-verify": "node scripts/quality/verify-public-documents.mjs --deep",
-    "check:portal-structure": "tsx --test tests/portal-navigation.test.ts tests/impact-signature.test.ts tests/register.test.ts tests/portal-stand.test.ts && node scripts/validate_palette.js \"#1f6f5c,#a54537,#c8a24a,#7a8798\" --mode light && tsx scripts/quality/portal-text-inventory.ts"
+    "check:portal-structure": "tsx --test tests/portal-navigation.test.ts tests/impact-signature.test.ts tests/register.test.ts tests/portal-stand.test.ts tests/decision-depth.test.ts && node scripts/validate_palette.js \"#1f6f5c,#a54537,#c8a24a,#7a8798\" --mode light && tsx scripts/quality/portal-text-inventory.ts"
   },
   "engines": {
     "node": ">=22 <25"
