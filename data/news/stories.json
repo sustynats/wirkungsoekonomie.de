@@ -1,7 +1,1215 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T06:21:36.915Z",
+  "updated_at": "2026-09-04T06:36:41.866Z",
   "stories": [
+    {
+      "story_id": "wt-63b6c057c20a2143",
+      "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
+      "title": "KI-Sicherheitsinstitut eröffnet",
+      "first_seen": "2026-08-31T17:00:00.000Z",
+      "last_updated": "2026-09-04T06:37:37.131Z",
+      "published_at": "2026-09-03T10:52:37.099Z",
+      "updated_at": "2026-09-04T06:37:37.131Z",
+      "topic": [
+        "Digitalisierung",
+        "KI",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundesregierung-kompakt",
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+          "title": "KI-Sicherheitsinstitut eröffnet",
+          "summary": "Cyberattacken, neue komplexe KI-Modelle und sich rasant entwickelnde digitale Anwendungen werfen Fragen nach Sicherheit, Verantwortung und möglichen Risiken auf. Deutschland ist vorbereitet, nun hat das KI-Sicherheitsinstitut AISI Deutschland eröffnet.",
+          "source_type": "official_rss",
+          "published_at": "2026-08-31T17:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 92,
+          "source_topic": "Politik",
+          "content_hash": "48cbd76ed1f11358abcf998a156df051e6ccd5afb21d4789c7d818f558451ee2",
+          "source_item_id": "5e37fb0d46456c655f55fc930e98748664db41a61c8d000cf05c254beeefd416",
+          "publisher_id": "bundesregierung",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-08-31T17:00:00.000Z",
+          "ingested_at": "2026-09-04T06:36:41.866Z",
+          "provenance": {
+            "origin": "publisher:bundesregierung",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-63b6c057c20a2143-v2-claim-1",
+          "story_id": "wt-63b6c057c20a2143",
+          "claim": "Deutschland hat das KI-Sicherheitsinstitut AISI Deutschland eröffnet.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+              "excerpt_hash": "f3f86b5897c804e2d94a",
+              "checked_at": "2026-09-04T06:37:37.131Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:37:37.131Z"
+        },
+        {
+          "claim_id": "wt-63b6c057c20a2143-v2-claim-2",
+          "story_id": "wt-63b6c057c20a2143",
+          "claim": "Das Institut soll sich mit Cybersicherheit, neuen KI-Modellen und deren Folgen befassen.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+              "excerpt_hash": "9f9634f256fe7a89167b",
+              "checked_at": "2026-09-04T06:37:37.131Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:37:37.131Z"
+        },
+        {
+          "claim_id": "wt-63b6c057c20a2143-v2-claim-3",
+          "story_id": "wt-63b6c057c20a2143",
+          "claim": "AISI Deutschland wird gemeinsam vom Bundesdigitalministerium und Bundesinnenministerium aufgebaut und geleitet.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+              "excerpt_hash": "1775b7c6ff2d79a3ac54",
+              "checked_at": "2026-09-04T06:37:37.131Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:37:37.131Z"
+        }
+      ],
+      "event_id": "event-f10c5b35a0961de9aa6c",
+      "event_first_seen_at": "2026-08-31T17:00:00.000Z",
+      "event_detected_at": "2026-08-31T17:00:00.000Z",
+      "verification_started_at": "2026-09-04T06:37:23.187Z",
+      "publish_ready_at": "2026-09-04T06:37:37.131Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das Institut konkrete Analysen, Beratung oder Standards veröffentlicht.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Arbeitsergebnisse, Mandate oder Standards des Instituts",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8554b3c45aa7ac07",
+          "announced_at": "2026-08-31T17:00:00.000Z",
+          "follow_up_date": "2026-09-11T06:37:37.131Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-2954e5f7cc7bfcc5-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "0df947168bf053a728d95210de93504ff68e7fa6ac19ba51411c11a253b3aacd"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-2954e5f7cc7bfcc5-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "f4872ba48ef54e93b9ead98052ea82ba44cf3487eb63308335848e3125be5e48"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-2954e5f7cc7bfcc5-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "9f45853d60c6a90baa7aa2029539696a0097edcd487f763f8f70dc805073f7c6"
+        },
+        "source_visual": null,
+        "fingerprint": "2954e5f7cc7bfcc5370dfbb04512f27f57c1463c3e2bef8bc14ddf81399b43b2",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-3-concrete",
+        "generated_at": "2026-09-04T06:38:37.577Z",
+        "status": "fallback",
+        "fallback_reason": "HIGGSFIELD_PREVIOUS_JOB_FAILED"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Die Bundesregierung meldet die Eröffnung von AISI Deutschland als KI-Sicherheitsinstitut. Die Mitteilung verknüpft dies mit Fragen nach Sicherheit, Verantwortung und Risiken durch Cyberattacken, neue KI-Modelle und schnell wachsende digitale Anwendungen.\n\nNach der Darstellung soll AISI Deutschland als nationales Kompetenz- und Evaluierungsinstitut arbeiten. Genannt werden Cybersicherheit, die Analyse neuer KI-Modelle, Beratung von Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft sowie der Aufbau einer zentralen Schnittstelle für Risikoanalyse und Abwehr. Außerdem heißt es, die Gründung sei vom Nationalen Sicherheitsrat beschlossen worden und das Institut werde gemeinsam von Bundesdigitalministerium und Bundesinnenministerium aufgebaut und geleitet. Unklar bleiben im gelieferten Text Mandat, Ressourcen, Methoden und konkrete erste Outputs.",
+      "analysis": {
+        "story_id": "wt-63b6c057c20a2143",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Deutschland hat ein KI-Sicherheitsinstitut eröffnet. Die Meldung beschreibt AISI Deutschland als neue Sicherheitsinfrastruktur mit Beratungs- und Analyseauftrag.",
+        "detail_summary": "Gesichert ist vor allem die Eröffnung von AISI Deutschland als neuem KI-Sicherheitsinstitut. Laut der Quelle soll das Institut Cybersicherheit, neue KI-Modelle und deren Folgen analysieren und als Schnittstelle für Risikoanalyse und Abwehr dienen. Für die WÖk-Perspektive ist das materiell, weil damit eine neue staatliche Sicherheits- und Bewertungsinfrastruktur geschaffen wird, die auf Regeln, technische Standards und künftige Entscheidungsprozesse wirken kann. Der Wirkpfad verläuft über bessere Risikoerkennung, koordiniertere Reaktionen und mögliche Einflussnahme auf Verwaltung, Wirtschaft und internationale Standards. Mögliche Folgen sind schnellere Bewertungen von KI-Risiken und eine stärkere Bündelung vorhandener Kapazitäten. Offen bleibt aber, wie groß das Mandat tatsächlich ist, welche Ressourcen und Prüfmethoden vorliegen und ob bereits konkrete Outputs entstanden sind; echte Wirkungen sind aus der Quelle noch nicht belegt.",
+        "why_relevant": "Die Eröffnung eines staatlichen KI-Sicherheitsinstituts kann Analyse-, Koordinations- und Standardsetzungsstrukturen verändern und damit künftige KI-Risiken, Abwehrfähigkeiten und Verwaltungshandeln beeinflussen.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind potenziell Bürgerinnen, Wirtschaft, Verwaltung und Sicherheitsstrukturen; konkrete Entlastung oder Schutzwirkung ist aber noch nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht genannt; allenfalls indirekte Wirkungen über digitale Infrastrukturen sind denkbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die neue Institution kann staatliche Entscheidungsfähigkeit bei KI stärken; demokratische Kontrolle und Transparenz bleiben aber offen."
+        },
+        "importance": "mittel",
+        "impact_potential": "Das Institut kann Risikoanalysen, technische Bewertung und behördliche Koordination bei KI bündeln und damit künftige Sicherheits- und Regulierungsentscheidungen beeinflussen.",
+        "impact_risks": [
+          "Ein institutioneller Ausbau kann Erwartungen an Sicherheit erhöhen, ohne dass kurzfristig messbare Schutzwirkung entsteht.",
+          "Unklare Zuständigkeiten oder begrenzte Ressourcen könnten die Wirksamkeit gegenüber den angekündigten Aufgaben mindern."
+        ],
+        "mechanisms": [
+          "Bündelung von Risiko- und Fähigkeitsanalyse",
+          "Beratung von Regierung und Verwaltung",
+          "Schnittstelle für Abwehr und strategische Einschätzung",
+          "möglicher Einfluss auf Standards und internationale Zusammenarbeit"
+        ],
+        "first_order": [
+          "Aufbau einer neuen staatlichen Analyse- und Beratungsstruktur",
+          "erweiterte Koordination zwischen Ressorts und Akteuren"
+        ],
+        "second_order": [
+          "schnellere Bewertung von KI-Risiken",
+          "mögliche Anpassungen von Sicherheits- und Beschaffungsstandards"
+        ],
+        "third_order": [
+          "stärkere Resilienz digitaler Infrastrukturen",
+          "potenziell veränderte internationale Normensetzung im KI-Umgang"
+        ],
+        "systemic_relevance": "Die Meldung betrifft eine neue Sicherheits- und Analysearchitektur an der Schnittstelle von Technologie, Staat und Cybersicherheit; das kann für spätere Regelsetzung und Krisenreaktion systemisch relevant werden.",
+        "transformation_potential": "Potenzial für eine schrittweise Veränderung der staatlichen KI-Sicherheitsarchitektur; die tatsächliche Transformationswirkung hängt von Mandat, Ausstattung und Output ab.",
+        "resilience": "Mögliche Stärkung der Resilienz digitaler und administrativer Systeme durch bessere Risikoanalyse; belastbare Wirkung ist noch offen.",
+        "side_effects": [
+          "Mehr institutionelle Komplexität im KI-Governance-System",
+          "mögliche Überschneidungen mit bestehenden Cyber- und Sicherheitsstrukturen"
+        ],
+        "uncertainties": [
+          "Mandat, Ressourcen, Prüfmethoden und Datenzugang sind im gelieferten Text nicht konkretisiert.",
+          "Es ist keine unabhängige Bestätigung der institutionellen Angaben vorhanden.",
+          "Konkrete Arbeitsergebnisse oder messbare Sicherheitswirkungen sind noch nicht belegt."
+        ],
+        "evidence_level": "einzelne Primärquelle ohne unabhängige Bestätigung",
+        "attribution": "Die Angaben stammen aus einer Regierungsmitteilung; daraus folgt die Existenz der Eröffnung, nicht automatisch die Qualität oder spätere Wirksamkeit des Instituts.",
+        "watch_next": [
+          "erste veröffentlichte Aufgaben, Berichte oder Standards des Instituts",
+          "konkrete Ressortzuständigkeiten und Ausstattung"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 9, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "material_update",
+          "rationale": "Die Eröffnung eines neuen staatlichen KI-Sicherheitsinstituts ist eine neue institutionelle Struktur mit potenziell systemischer Bedeutung. Trotz nur einer Primärquelle ist der Kernvorgang klar belegt; messbare Wirkungen bleiben allerdings offen."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Institut",
+              "value": "AISI Deutschland",
+              "unit": "Name",
+              "context": "Benannte neue Sicherheitsinstitution",
+              "claim_id": "wt-63b6c057c20a2143-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "beschaeftigte",
+            "europa"
+          ],
+          "tendency": {
+            "human": "offen",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-03T10:52:37.099Z",
+          "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
+          "analysis": {
+            "story_id": "wt-63b6c057c20a2143",
+            "summary": "Deutschland hat ein KI-Sicherheitsinstitut eröffnet. Das ist als neue Sicherheitsinfrastruktur materiell, Wirkungen sind aber noch nicht eingetreten belegt.",
+            "detail_summary": "Fakt ist die Eröffnung von AISI Deutschland. Der Claim nennt Cyberattacken, komplexe KI-Modelle und digitale Anwendungen als Problemkontext. Der Wirkpfad liegt in Prüfung, Risikowissen und institutioneller Sicherheitsfähigkeit. Materiell sind Systemrelevanz, mögliche Kaskaden und demokratische Korrekturfähigkeit. Konkrete Ergebnisse, Standards oder Risikoabsenkungen sind noch offen.",
+            "why_relevant": "KI-Sicherheit betrifft digitale Infrastruktur, Schutzfähigkeit und mögliche Kaskadenrisiken für viele gesellschaftliche Bereiche.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Sicherere KI-Anwendungen können Menschen indirekt vor digitalen Schäden schützen; konkrete Schutzwirkung ist offen."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Der Claim enthält keinen belastbaren Umwelt- oder Ressourcenpfad."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "KI-Sicherheit kann öffentliche Kontrolle, Verantwortlichkeit und Schutz vor digitalen Angriffen stärken."
+            },
+            "importance": "hoch",
+            "impact_potential": "Potenzial liegt in besserer Risikoerkennung, Prüfung komplexer Modelle und handlungsfähiger Sicherheitsinfrastruktur.",
+            "impact_risks": [
+              "Ohne Transparenz oder klare Mandate kann Sicherheitsarbeit schwer prüfbar bleiben."
+            ],
+            "mechanisms": [
+              "Institutionelle Bündelung von KI-Sicherheitskompetenz kann Standards, Tests und Reaktionsfähigkeit vorbereiten."
+            ],
+            "first_order": [
+              "Neue staatliche Infrastruktur für KI-Sicherheitsfragen nimmt Arbeit auf."
+            ],
+            "second_order": [
+              "Prüf- und Risikowissen kann spätere Regeln, Beschaffung oder Aufsicht beeinflussen."
+            ],
+            "third_order": [
+              "Langfristig möglich sind robustere digitale Ökosysteme und geringere Kaskadenrisiken."
+            ],
+            "systemic_relevance": "Hoch, weil KI-Modelle und Cyberrisiken viele Infrastrukturen und Entscheidungsräume berühren können.",
+            "transformation_potential": "Mittel bis hoch, falls das Institut überprüfbare Standards und wirksame Rückkopplung in Politik und Praxis schafft.",
+            "resilience": "Kann Resilienz stärken, wenn Erkenntnisse rechtzeitig, zugänglich und umsetzungsnah in Schutzmaßnahmen übersetzt werden.",
+            "side_effects": [
+              "Sicherheitsfokus kann Innovation verzögern oder Macht bei wenigen Prüfstellen bündeln."
+            ],
+            "uncertainties": [
+              "Mandat, Ressourcen, Prüfmethoden, Datenzugang und konkrete Outputs sind im Claim nicht ausgeführt."
+            ],
+            "evidence_level": "Primärquelle belegt die Eröffnung; Wirkungsevidenz, Ergebnisse und Kausalität liegen noch nicht vor.",
+            "attribution": "Zurechnung wäre erst über konkrete Maßnahmen, Indikatoren und beobachtbare Zustandsänderungen möglich.",
+            "watch_next": [
+              "Mandat, Veröffentlichungen, Testverfahren, Kooperationen und nachweisbare Sicherheitsverbesserungen beobachten."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG mit Bezug zu Infrastruktur, Institutionen und digitaler Sicherheit."
+            ],
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.5",
+          "mode": "woek-ai-oracle-llm",
+          "method_sources": [
+            {
+              "title": "Berichtsdaten",
+              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
+            },
+            {
+              "title": "Open Science",
+              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
+            },
+            {
+              "title": "Wirkungsdatenräume",
+              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
+            },
+            {
+              "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768"
+            },
+            {
+              "title": "KI-Sicherheitsinstitut eröffnet",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410"
+            },
+            {
+              "title": "Messgrenzen und Unsicherheit",
+              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
+            }
+          ],
+          "source_summary": "Die Bundesregierung meldet die Eröffnung des AI Safety and Security Institute Deutschland, kurz AISI Deutschland. Das nationale Kompetenz- und Evaluierungsinstitut wurde vom Nationalen Sicherheitsrat beschlossen und wird gemeinsam vom Bundesdigitalministerium und vom Bundesinnenministerium aufgebaut und geleitet. Es ist nach der Darstellung keine Regulierungsbehörde, sondern ein analytisch-operatives Kompetenzzentrum.\n\nAISI Deutschland soll moderne KI-Modelle, Cybersicherheit und mögliche technische Risiken untersuchen, vorhandene Analysekapazitäten bündeln und Lösungen für den sicheren Umgang mit KI-Systemen entwickeln. Vorgesehen ist Beratung für Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft. Außerdem soll das Institut mit vergleichbaren Einrichtungen im Ausland Informationen austauschen und auf gemeinsame internationale Standards hinwirken. Zur Eröffnung betonten die Minister Karsten Wildberger und Alexander Dobrindt die schnelle technische Bewertung von KI-Systemen und die internationale Zusammenarbeit. Konkrete Angaben zu Personal, Budget oder einem Zeitplan nennt der Artikel nicht."
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T06:37:37.131Z",
+          "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
+          "source_summary": "Die Bundesregierung meldet die Eröffnung von AISI Deutschland als KI-Sicherheitsinstitut. Die Mitteilung verknüpft dies mit Fragen nach Sicherheit, Verantwortung und Risiken durch Cyberattacken, neue KI-Modelle und schnell wachsende digitale Anwendungen.\n\nNach der Darstellung soll AISI Deutschland als nationales Kompetenz- und Evaluierungsinstitut arbeiten. Genannt werden Cybersicherheit, die Analyse neuer KI-Modelle, Beratung von Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft sowie der Aufbau einer zentralen Schnittstelle für Risikoanalyse und Abwehr. Außerdem heißt es, die Gründung sei vom Nationalen Sicherheitsrat beschlossen worden und das Institut werde gemeinsam von Bundesdigitalministerium und Bundesinnenministerium aufgebaut und geleitet. Unklar bleiben im gelieferten Text Mandat, Ressourcen, Methoden und konkrete erste Outputs.",
+          "analysis": {
+            "story_id": "wt-63b6c057c20a2143",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Deutschland hat ein KI-Sicherheitsinstitut eröffnet. Die Meldung beschreibt AISI Deutschland als neue Sicherheitsinfrastruktur mit Beratungs- und Analyseauftrag.",
+            "detail_summary": "Gesichert ist vor allem die Eröffnung von AISI Deutschland als neuem KI-Sicherheitsinstitut. Laut der Quelle soll das Institut Cybersicherheit, neue KI-Modelle und deren Folgen analysieren und als Schnittstelle für Risikoanalyse und Abwehr dienen. Für die WÖk-Perspektive ist das materiell, weil damit eine neue staatliche Sicherheits- und Bewertungsinfrastruktur geschaffen wird, die auf Regeln, technische Standards und künftige Entscheidungsprozesse wirken kann. Der Wirkpfad verläuft über bessere Risikoerkennung, koordiniertere Reaktionen und mögliche Einflussnahme auf Verwaltung, Wirtschaft und internationale Standards. Mögliche Folgen sind schnellere Bewertungen von KI-Risiken und eine stärkere Bündelung vorhandener Kapazitäten. Offen bleibt aber, wie groß das Mandat tatsächlich ist, welche Ressourcen und Prüfmethoden vorliegen und ob bereits konkrete Outputs entstanden sind; echte Wirkungen sind aus der Quelle noch nicht belegt.",
+            "why_relevant": "Die Eröffnung eines staatlichen KI-Sicherheitsinstituts kann Analyse-, Koordinations- und Standardsetzungsstrukturen verändern und damit künftige KI-Risiken, Abwehrfähigkeiten und Verwaltungshandeln beeinflussen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind potenziell Bürgerinnen, Wirtschaft, Verwaltung und Sicherheitsstrukturen; konkrete Entlastung oder Schutzwirkung ist aber noch nicht belegt."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht genannt; allenfalls indirekte Wirkungen über digitale Infrastrukturen sind denkbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die neue Institution kann staatliche Entscheidungsfähigkeit bei KI stärken; demokratische Kontrolle und Transparenz bleiben aber offen."
+            },
+            "importance": "mittel",
+            "impact_potential": "Das Institut kann Risikoanalysen, technische Bewertung und behördliche Koordination bei KI bündeln und damit künftige Sicherheits- und Regulierungsentscheidungen beeinflussen.",
+            "impact_risks": [
+              "Ein institutioneller Ausbau kann Erwartungen an Sicherheit erhöhen, ohne dass kurzfristig messbare Schutzwirkung entsteht.",
+              "Unklare Zuständigkeiten oder begrenzte Ressourcen könnten die Wirksamkeit gegenüber den angekündigten Aufgaben mindern."
+            ],
+            "mechanisms": [
+              "Bündelung von Risiko- und Fähigkeitsanalyse",
+              "Beratung von Regierung und Verwaltung",
+              "Schnittstelle für Abwehr und strategische Einschätzung",
+              "möglicher Einfluss auf Standards und internationale Zusammenarbeit"
+            ],
+            "first_order": [
+              "Aufbau einer neuen staatlichen Analyse- und Beratungsstruktur",
+              "erweiterte Koordination zwischen Ressorts und Akteuren"
+            ],
+            "second_order": [
+              "schnellere Bewertung von KI-Risiken",
+              "mögliche Anpassungen von Sicherheits- und Beschaffungsstandards"
+            ],
+            "third_order": [
+              "stärkere Resilienz digitaler Infrastrukturen",
+              "potenziell veränderte internationale Normensetzung im KI-Umgang"
+            ],
+            "systemic_relevance": "Die Meldung betrifft eine neue Sicherheits- und Analysearchitektur an der Schnittstelle von Technologie, Staat und Cybersicherheit; das kann für spätere Regelsetzung und Krisenreaktion systemisch relevant werden.",
+            "transformation_potential": "Potenzial für eine schrittweise Veränderung der staatlichen KI-Sicherheitsarchitektur; die tatsächliche Transformationswirkung hängt von Mandat, Ausstattung und Output ab.",
+            "resilience": "Mögliche Stärkung der Resilienz digitaler und administrativer Systeme durch bessere Risikoanalyse; belastbare Wirkung ist noch offen.",
+            "side_effects": [
+              "Mehr institutionelle Komplexität im KI-Governance-System",
+              "mögliche Überschneidungen mit bestehenden Cyber- und Sicherheitsstrukturen"
+            ],
+            "uncertainties": [
+              "Mandat, Ressourcen, Prüfmethoden und Datenzugang sind im gelieferten Text nicht konkretisiert.",
+              "Es ist keine unabhängige Bestätigung der institutionellen Angaben vorhanden.",
+              "Konkrete Arbeitsergebnisse oder messbare Sicherheitswirkungen sind noch nicht belegt."
+            ],
+            "evidence_level": "einzelne Primärquelle ohne unabhängige Bestätigung",
+            "attribution": "Die Angaben stammen aus einer Regierungsmitteilung; daraus folgt die Existenz der Eröffnung, nicht automatisch die Qualität oder spätere Wirksamkeit des Instituts.",
+            "watch_next": [
+              "erste veröffentlichte Aufgaben, Berichte oder Standards des Instituts",
+              "konkrete Ressortzuständigkeiten und Ausstattung"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 9, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "material_update",
+              "rationale": "Die Eröffnung eines neuen staatlichen KI-Sicherheitsinstituts ist eine neue institutionelle Struktur mit potenziell systemischer Bedeutung. Trotz nur einer Primärquelle ist der Kernvorgang klar belegt; messbare Wirkungen bleiben allerdings offen."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Institut",
+                  "value": "AISI Deutschland",
+                  "unit": "Name",
+                  "context": "Benannte neue Sicherheitsinstitution",
+                  "claim_id": "wt-63b6c057c20a2143-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "beschaeftigte",
+                "europa"
+              ],
+              "tendency": {
+                "human": "offen",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-63b6c057c20a2143-v2-claim-1",
+              "story_id": "wt-63b6c057c20a2143",
+              "claim": "Deutschland hat das KI-Sicherheitsinstitut AISI Deutschland eröffnet.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+                  "excerpt_hash": "f3f86b5897c804e2d94a",
+                  "checked_at": "2026-09-04T06:37:37.131Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:37:37.131Z"
+            },
+            {
+              "claim_id": "wt-63b6c057c20a2143-v2-claim-2",
+              "story_id": "wt-63b6c057c20a2143",
+              "claim": "Das Institut soll sich mit Cybersicherheit, neuen KI-Modellen und deren Folgen befassen.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+                  "excerpt_hash": "9f9634f256fe7a89167b",
+                  "checked_at": "2026-09-04T06:37:37.131Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:37:37.131Z"
+            },
+            {
+              "claim_id": "wt-63b6c057c20a2143-v2-claim-3",
+              "story_id": "wt-63b6c057c20a2143",
+              "claim": "AISI Deutschland wird gemeinsam vom Bundesdigitalministerium und Bundesinnenministerium aufgebaut und geleitet.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+                  "excerpt_hash": "1775b7c6ff2d79a3ac54",
+                  "checked_at": "2026-09-04T06:37:37.131Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:37:37.131Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+              "content_hash": "48cbd76ed1f11358abcf998a156df051e6ccd5afb21d4789c7d818f558451ee2"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-03T10:52:37.099Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T06:37:37.131Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-6267bf5562aa70a6",
+      "slug": "fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6",
+      "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
+      "first_seen": "2026-09-04T05:44:22.000Z",
+      "last_updated": "2026-09-04T06:37:20.682Z",
+      "published_at": "2026-09-04T06:37:20.682Z",
+      "updated_at": "2026-09-04T06:37:20.682Z",
+      "topic": [
+        "Gesellschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
+          "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
+          "summary": "Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:44:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4489b0cd08c0b9afaa3c6408527953eb7bc98fbf168e67ea001ff7cb6ef3af17",
+          "source_item_id": "6e155b28f46235f648154384bf13909f956b4051c3b7a0063b44b7be6378e89c",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:44:22.000Z",
+          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+          "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
+          "summary": "Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:45:34.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6a59f8f50174e5587806455e917855c3deaa9d9ff75d1a865cc6e0736d2120b2",
+          "source_item_id": "d710c4f817db49b343f9626a562a783ee8e88dff2b10a9d88ace2598542bb3c6",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:45:34.000Z",
+          "ingested_at": "2026-09-04T06:36:41.866Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+          "title": "Flugverkehr am BER läuft wieder regulär",
+          "summary": "Eine Frau soll am Flughafen BER einen gefährlichen Stoff gemeldet haben. Die Polizei hatte daher das Terminal 1 geräumt – nach einer Kontrolle wurde es wieder freigegeben.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:35:39.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9b642c57e6a495afe612b3c80d9575734c41a6cdfd42b19f47822cb37e09557a",
+          "source_item_id": "c085c5aba2c23704ceda704d591cfdf09a8a48ddb37f3eeae744d7693061dd8c",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:35:39.000Z",
+          "ingested_at": "2026-09-04T06:36:41.866Z",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6267bf5562aa70a6-v1-claim-1",
+          "story_id": "wt-6267bf5562aa70a6",
+          "claim": "Am Flughafen BER wurde nach der Meldung eines gefährlichen Stoffes das Terminal 1 zeitweise geräumt.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+              "excerpt_hash": "e0dbda64c71a3cb2bc42",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+              "excerpt_hash": "357d517849f905846d7e",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:37:20.682Z"
+        },
+        {
+          "claim_id": "wt-6267bf5562aa70a6-v1-claim-2",
+          "story_id": "wt-6267bf5562aa70a6",
+          "claim": "Der Flugbetrieb lief nach dem Vorfall wieder regulär; nur einige wenige Flüge fielen aus.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+              "excerpt_hash": "549f2993d23e0bb6a36e",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:37:20.682Z"
+        },
+        {
+          "claim_id": "wt-6267bf5562aa70a6-v1-claim-3",
+          "story_id": "wt-6267bf5562aa70a6",
+          "claim": "Die Polizei freigab das Terminal nach einer Kontrolle wieder; zuvor war Entwarnung gegeben worden.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+              "excerpt_hash": "d10f7e60814846b9ca93",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+              "excerpt_hash": "e0dbda64c71a3cb2bc42",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:37:20.682Z"
+        },
+        {
+          "claim_id": "wt-6267bf5562aa70a6-v1-claim-4",
+          "story_id": "wt-6267bf5562aa70a6",
+          "claim": "Der betroffene Stoff war nach den vorliegenden Berichten zunächst nicht bekannt.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
+              "excerpt_hash": "357d517849f905846d7e",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+              "excerpt_hash": "357d517849f905846d7e",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:37:20.682Z"
+        },
+        {
+          "claim_id": "wt-6267bf5562aa70a6-v1-claim-5",
+          "story_id": "wt-6267bf5562aa70a6",
+          "claim": "Die Abfertigung wurde nach Angaben des Berichts so weit wie möglich auf Terminal 2 verlegt.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+              "excerpt_hash": "d80f79dc642b869bb04c",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:37:20.682Z"
+        },
+        {
+          "claim_id": "wt-6267bf5562aa70a6-v1-claim-6",
+          "story_id": "wt-6267bf5562aa70a6",
+          "claim": "Der Zugverkehr zwischen Schönefeld und dem Flughafen BER war zwischenzeitlich unterbrochen und fährt wieder gemäß Fahrplan.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+              "excerpt_hash": "d9289b34dadb6fe9aa6a",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T06:37:20.682Z"
+        }
+      ],
+      "event_id": "event-993d57cff20b05016759",
+      "event_first_seen_at": "2026-09-04T06:06:19.579Z",
+      "event_detected_at": "2026-09-04T06:06:19.579Z",
+      "verification_started_at": "2026-09-04T06:37:09.728Z",
+      "publish_ready_at": "2026-09-04T06:37:20.682Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication"
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Untersuchung des gemeldeten Stoffes neue Details ergibt.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Behörden- oder Flughafenangaben zu Art, Ergebnis und Ursache der Meldung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-160ba57b85cf83d5",
+          "announced_at": "2026-09-04T06:35:39.000Z",
+          "follow_up_date": "2026-09-11T06:37:20.682Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "36ea2588d153c1e9c4d64255109e403b8c6019d5fee552b243b54c72d68b1a40",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Mehrere Berichte schildern einen Gefahrgut-Alarm am Flughafen BER. Eine Frau soll am Donnerstag einen gefährlichen Stoff gemeldet haben; daraufhin wurde der öffentliche Bereich von Terminal 1 geräumt, Passagiere mussten das Gebäude verlassen. Nach der Kontrolle gab es Entwarnung und das Terminal wurde wieder freigegeben. Über den Stoff selbst war zunächst nichts bekannt. Ein Bericht nennt zudem Verzögerungen, vereinzelt Ausfälle, eine Verlagerung der Abfertigung auf Terminal 2 und eine zeitweise Unterbrechung des Zugverkehrs zwischen Schönefeld und dem Flughafen BER.\n\nAm Freitagmorgen lief der Flugverkehr wieder regulär. Nach Angaben des Berichts fielen nur einige wenige Flüge aus. Die Flugbetriebslage und die genaue Ursache des Alarms blieben zunächst offen.",
+      "analysis": {
+        "story_id": "wt-6267bf5562aa70a6",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Am BER kam es nach einer Stoffmeldung zu einer zeitweisen Räumung von Terminal 1. Der Flugbetrieb läuft inzwischen wieder regulär, einzelne Folgen für Flüge und Bahnverkehr sind aber berichtet.",
+        "detail_summary": "Gesichert belegt ist zunächst, dass am BER nach der Meldung eines gefährlichen Stoffes Terminal 1 zeitweise geräumt wurde und die Polizei den Bereich später wieder freigab. Mehrere Berichte nennen außerdem, dass der Flugbetrieb am Morgen danach wieder regulär lief und nur einige wenige Flüge ausfielen. Für die Einordnung ist wichtig: Der Vorfall betrifft einen zentralen Flughafen mit unmittelbaren Störungen für Passagiere, Abläufe und Anschlussverkehr, auch wenn die Beeinträchtigung offenbar begrenzt blieb. Der Wirkpfad verläuft über Sicherheitsalarm, Evakuierung, Umleitung der Abfertigung und vorübergehende Unterbrechungen im Bahnzubringer. Mögliche Folge ist vor allem kurzfristige Verspätung und organisatorischer Mehraufwand; eine weitergehende Wirkung bleibt offen, solange Art des Stoffes und Ursache der Meldung nicht geklärt sind. Die Evidenzlage stützt derzeit eine vorsichtige Erstmeldung, aber noch keine abschließende Bewertung des Ausmaßes.",
+        "why_relevant": "Der Vorfall stört einen verkehrlichen Knotenpunkt mit Auswirkungen auf Passagierströme, Abläufe und den Zubringerverkehr; das ist materiell, auch wenn die Störung offenbar begrenzt blieb.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Reisende und Beschäftigte am Flughafen; die Störung war kurzfristig, aber unmittelbar in einem wichtigen Verkehrsknoten spürbar."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus den Quellen ergibt sich kein eigenständiger Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht um einen Sicherheits- und Betriebsvorfall, nicht um demokratische Verfahren oder Regeln."
+        },
+        "importance": "mittel",
+        "impact_potential": "Kurzfristige Unterbrechungen bei Abfertigung, Zugverkehr und einzelnen Flügen; mögliche Nachwirkungen betreffen vor allem Organisation und Zeitverluste.",
+        "impact_risks": [
+          "Verspätungen und Umwege für Passagiere",
+          "vorübergehende Belastung von Sicherheits- und Betriebsabläufen",
+          "unklare Ursache kann weitere Kontrollen oder Folgemeldungen auslösen"
+        ],
+        "mechanisms": [
+          "Sicherheitsmeldung löst Räumung aus",
+          "Freigabe nach Kontrolle beendet den unmittelbaren Stillstand",
+          "Umleitung auf Terminal 2 reduziert, aber beseitigt Störungen nicht sofort"
+        ],
+        "first_order": [
+          "Räumung von Terminal 1",
+          "vorübergehende Unterbrechung des Zugverkehrs",
+          "vereinzelt ausgefallene Flüge"
+        ],
+        "second_order": [
+          "verzögerte Umsteige- und Reisepläne",
+          "Mehraufwand für Flughafen- und Sicherheitskräfte"
+        ],
+        "third_order": [
+          "mögliche Anpassungen bei Sicherheits- und Notfallprozessen, falls sich der Vorfall als systematisch relevant erweist"
+        ],
+        "systemic_relevance": "Als Einzelfall begrenzt; systemisch relevant wäre er erst bei wiederholten Alarmen oder längeren Ausfällen eines Verkehrsknotens.",
+        "transformation_potential": "Der Vorgang selbst zeigt eher kurzfristige Betriebsresilienz als strukturelle Veränderung.",
+        "resilience": "Die schnelle Wiederfreigabe spricht für vorhandene Reaktionsfähigkeit; offen bleibt, ob die Ursache vermeidbar war.",
+        "side_effects": [
+          "Verzögerungen im Tagesverkehr",
+          "zeitweise Verlagerung der Abfertigung",
+          "kurzfristige Unsicherheit für Passagiere"
+        ],
+        "uncertainties": [
+          "Art des gemeldeten Stoffes",
+          "ob und wie stark die Störung die Gesamtbetriebslage beeinflusste",
+          "ob es einen Zusammenhang mit dem Vorfall gab"
+        ],
+        "evidence_level": "mehrere Sekundärquellen, keine Primärquelle zum Stoff oder zur Ursache",
+        "attribution": "Die Berichte stützen die Evakuierung, Freigabe und Wiederaufnahme des Betriebs; die zugrunde liegende Gefährdung bleibt zunächst unbestätigt.",
+        "watch_next": [
+          "Behördliche Angaben zur Ursache und zum untersuchten Stoff",
+          "mögliche Nachmeldungen zu Verspätungen oder Ausfällen"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 9, SDG 11, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "none",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Ein aktueller Betriebs- und Sicherheitsvorfall an einem Verkehrsknoten mit Räumung, Verkehrsfolgen und Wiederaufnahme des Betriebs ist neu und materiell; die Beleglage reicht für eine vorsichtige Erstmeldung, aber nicht für eine bestätigte Gesamtdarstellung."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Terminalsperrung",
+              "value": "1",
+              "unit": "Terminal",
+              "context": "betroffenes Terminal, das geräumt wurde",
+              "claim_id": "wt-6267bf5562aa70a6-claim-03"
+            }
+          ],
+          "affected_groups": [
+            "verbraucherinnen",
+            "beschaeftigte",
+            "unternehmen"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T06:37:20.682Z",
+          "content_hash": "36ea2588d153c1e9c4d64255109e403b8c6019d5fee552b243b54c72d68b1a40",
+          "source_summary": "Mehrere Berichte schildern einen Gefahrgut-Alarm am Flughafen BER. Eine Frau soll am Donnerstag einen gefährlichen Stoff gemeldet haben; daraufhin wurde der öffentliche Bereich von Terminal 1 geräumt, Passagiere mussten das Gebäude verlassen. Nach der Kontrolle gab es Entwarnung und das Terminal wurde wieder freigegeben. Über den Stoff selbst war zunächst nichts bekannt. Ein Bericht nennt zudem Verzögerungen, vereinzelt Ausfälle, eine Verlagerung der Abfertigung auf Terminal 2 und eine zeitweise Unterbrechung des Zugverkehrs zwischen Schönefeld und dem Flughafen BER.\n\nAm Freitagmorgen lief der Flugverkehr wieder regulär. Nach Angaben des Berichts fielen nur einige wenige Flüge aus. Die Flugbetriebslage und die genaue Ursache des Alarms blieben zunächst offen.",
+          "analysis": {
+            "story_id": "wt-6267bf5562aa70a6",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Am BER kam es nach einer Stoffmeldung zu einer zeitweisen Räumung von Terminal 1. Der Flugbetrieb läuft inzwischen wieder regulär, einzelne Folgen für Flüge und Bahnverkehr sind aber berichtet.",
+            "detail_summary": "Gesichert belegt ist zunächst, dass am BER nach der Meldung eines gefährlichen Stoffes Terminal 1 zeitweise geräumt wurde und die Polizei den Bereich später wieder freigab. Mehrere Berichte nennen außerdem, dass der Flugbetrieb am Morgen danach wieder regulär lief und nur einige wenige Flüge ausfielen. Für die Einordnung ist wichtig: Der Vorfall betrifft einen zentralen Flughafen mit unmittelbaren Störungen für Passagiere, Abläufe und Anschlussverkehr, auch wenn die Beeinträchtigung offenbar begrenzt blieb. Der Wirkpfad verläuft über Sicherheitsalarm, Evakuierung, Umleitung der Abfertigung und vorübergehende Unterbrechungen im Bahnzubringer. Mögliche Folge ist vor allem kurzfristige Verspätung und organisatorischer Mehraufwand; eine weitergehende Wirkung bleibt offen, solange Art des Stoffes und Ursache der Meldung nicht geklärt sind. Die Evidenzlage stützt derzeit eine vorsichtige Erstmeldung, aber noch keine abschließende Bewertung des Ausmaßes.",
+            "why_relevant": "Der Vorfall stört einen verkehrlichen Knotenpunkt mit Auswirkungen auf Passagierströme, Abläufe und den Zubringerverkehr; das ist materiell, auch wenn die Störung offenbar begrenzt blieb.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind Reisende und Beschäftigte am Flughafen; die Störung war kurzfristig, aber unmittelbar in einem wichtigen Verkehrsknoten spürbar."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Aus den Quellen ergibt sich kein eigenständiger Umweltbezug."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Es geht um einen Sicherheits- und Betriebsvorfall, nicht um demokratische Verfahren oder Regeln."
+            },
+            "importance": "mittel",
+            "impact_potential": "Kurzfristige Unterbrechungen bei Abfertigung, Zugverkehr und einzelnen Flügen; mögliche Nachwirkungen betreffen vor allem Organisation und Zeitverluste.",
+            "impact_risks": [
+              "Verspätungen und Umwege für Passagiere",
+              "vorübergehende Belastung von Sicherheits- und Betriebsabläufen",
+              "unklare Ursache kann weitere Kontrollen oder Folgemeldungen auslösen"
+            ],
+            "mechanisms": [
+              "Sicherheitsmeldung löst Räumung aus",
+              "Freigabe nach Kontrolle beendet den unmittelbaren Stillstand",
+              "Umleitung auf Terminal 2 reduziert, aber beseitigt Störungen nicht sofort"
+            ],
+            "first_order": [
+              "Räumung von Terminal 1",
+              "vorübergehende Unterbrechung des Zugverkehrs",
+              "vereinzelt ausgefallene Flüge"
+            ],
+            "second_order": [
+              "verzögerte Umsteige- und Reisepläne",
+              "Mehraufwand für Flughafen- und Sicherheitskräfte"
+            ],
+            "third_order": [
+              "mögliche Anpassungen bei Sicherheits- und Notfallprozessen, falls sich der Vorfall als systematisch relevant erweist"
+            ],
+            "systemic_relevance": "Als Einzelfall begrenzt; systemisch relevant wäre er erst bei wiederholten Alarmen oder längeren Ausfällen eines Verkehrsknotens.",
+            "transformation_potential": "Der Vorgang selbst zeigt eher kurzfristige Betriebsresilienz als strukturelle Veränderung.",
+            "resilience": "Die schnelle Wiederfreigabe spricht für vorhandene Reaktionsfähigkeit; offen bleibt, ob die Ursache vermeidbar war.",
+            "side_effects": [
+              "Verzögerungen im Tagesverkehr",
+              "zeitweise Verlagerung der Abfertigung",
+              "kurzfristige Unsicherheit für Passagiere"
+            ],
+            "uncertainties": [
+              "Art des gemeldeten Stoffes",
+              "ob und wie stark die Störung die Gesamtbetriebslage beeinflusste",
+              "ob es einen Zusammenhang mit dem Vorfall gab"
+            ],
+            "evidence_level": "mehrere Sekundärquellen, keine Primärquelle zum Stoff oder zur Ursache",
+            "attribution": "Die Berichte stützen die Evakuierung, Freigabe und Wiederaufnahme des Betriebs; die zugrunde liegende Gefährdung bleibt zunächst unbestätigt.",
+            "watch_next": [
+              "Behördliche Angaben zur Ursache und zum untersuchten Stoff",
+              "mögliche Nachmeldungen zu Verspätungen oder Ausfällen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 9, SDG 11, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Ein aktueller Betriebs- und Sicherheitsvorfall an einem Verkehrsknoten mit Räumung, Verkehrsfolgen und Wiederaufnahme des Betriebs ist neu und materiell; die Beleglage reicht für eine vorsichtige Erstmeldung, aber nicht für eine bestätigte Gesamtdarstellung."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Terminalsperrung",
+                  "value": "1",
+                  "unit": "Terminal",
+                  "context": "betroffenes Terminal, das geräumt wurde",
+                  "claim_id": "wt-6267bf5562aa70a6-claim-03"
+                }
+              ],
+              "affected_groups": [
+                "verbraucherinnen",
+                "beschaeftigte",
+                "unternehmen"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v1-claim-1",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Am Flughafen BER wurde nach der Meldung eines gefährlichen Stoffes das Terminal 1 zeitweise geräumt.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "e0dbda64c71a3cb2bc42",
+                  "checked_at": "2026-09-04T06:37:20.682Z"
+                },
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+                  "excerpt_hash": "357d517849f905846d7e",
+                  "checked_at": "2026-09-04T06:37:20.682Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            },
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v1-claim-2",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Der Flugbetrieb lief nach dem Vorfall wieder regulär; nur einige wenige Flüge fielen aus.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "549f2993d23e0bb6a36e",
+                  "checked_at": "2026-09-04T06:37:20.682Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            },
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v1-claim-3",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Die Polizei freigab das Terminal nach einer Kontrolle wieder; zuvor war Entwarnung gegeben worden.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "d10f7e60814846b9ca93",
+                  "checked_at": "2026-09-04T06:37:20.682Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "e0dbda64c71a3cb2bc42",
+                  "checked_at": "2026-09-04T06:37:20.682Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            },
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v1-claim-4",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Der betroffene Stoff war nach den vorliegenden Berichten zunächst nicht bekannt.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
+                  "excerpt_hash": "357d517849f905846d7e",
+                  "checked_at": "2026-09-04T06:37:20.682Z"
+                },
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+                  "excerpt_hash": "357d517849f905846d7e",
+                  "checked_at": "2026-09-04T06:37:20.682Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            },
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v1-claim-5",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Die Abfertigung wurde nach Angaben des Berichts so weit wie möglich auf Terminal 2 verlegt.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "d80f79dc642b869bb04c",
+                  "checked_at": "2026-09-04T06:37:20.682Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            },
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v1-claim-6",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Der Zugverkehr zwischen Schönefeld und dem Flughafen BER war zwischenzeitlich unterbrochen und fährt wieder gemäß Fahrplan.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "d9289b34dadb6fe9aa6a",
+                  "checked_at": "2026-09-04T06:37:20.682Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T06:37:20.682Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
+              "content_hash": "4489b0cd08c0b9afaa3c6408527953eb7bc98fbf168e67ea001ff7cb6ef3af17"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+              "content_hash": "6a59f8f50174e5587806455e917855c3deaa9d9ff75d1a865cc6e0736d2120b2"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+              "content_hash": "9b642c57e6a495afe612b3c80d9575734c41a6cdfd42b19f47822cb37e09557a"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T06:37:20.682Z",
+          "source_count": 3
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-2ee125ddec703367-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "9b40cc26361d5f0917d12f51f5e5080466e48c070ac5d3fd1dd47fec4322ecc2"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-2ee125ddec703367-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "b72784468da14ee163517b104eac739b50a99e52d73fc1de00b34a38ff9f9c82"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-2ee125ddec703367-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "ed40a41d437c720709f7b575b8a7d566742e1259a9a73adaf9f199169ca4ca14"
+        },
+        "source_visual": null,
+        "fingerprint": "2ee125ddec70336786c8080e513f2e6df7c0fcefe88527bfdc7274ee19939ba0",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-3-concrete",
+        "generated_at": "2026-09-04T06:38:31.328Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
       "slug": "kinderbetreuung-bei-der-bundeswehr-a5c1fa",
@@ -781,6 +1989,135 @@
         }
       ],
       "retirement_history": []
+    },
+    {
+      "story_id": "wt-c4f51c8426069f41",
+      "slug": "weiterhin-viele-insolvenzen-grosser-unternehmen-in-deutschland-069f41",
+      "title": "Weiterhin viele Insolvenzen großer Unternehmen in Deutschland",
+      "first_seen": "2026-09-04T06:18:35.000Z",
+      "last_updated": "2026-09-04T06:18:35.000Z",
+      "topic": [
+        "Europa",
+        "Finanzen",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/weiterhin-viele-insolvenzen-grosser-unternehmen-in-deutschland-38206596.html",
+          "title": "Weiterhin viele Insolvenzen großer Unternehmen in Deutschland",
+          "summary": "Im vergangenen Jahr ist eine Rekordzahl großer Unternehmen in Deutschland pleite gegangen - und der Trend hält an. Im ersten Halbjahr meldeten 33 Unternehmen mit mehr als 50 Millionen Euro Jahresumsatz Insolvenz an, wie der Kreditversicherer Allianz Trade am Freitag mitteilte. Das sind zehn Prozent mehr als im Vorjahreszeitraum.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:18:35.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "36116af0201a666a88b6c59274de9fcd4778ecaa06d68b4133b5bbe3adc80c8c",
+          "source_item_id": "3112daf46ee9a74b737fa7d0006835804dd27ac3efa44576e5c572fa5a4849c3",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T06:18:35.000Z",
+          "ingested_at": "2026-09-04T06:36:41.866Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c4f51c8426069f41-claim-01",
+          "story_id": "wt-c4f51c8426069f41",
+          "claim": "Weiterhin viele Insolvenzen großer Unternehmen in Deutschland: Im vergangenen Jahr ist eine Rekordzahl großer Unternehmen in Deutschland pleite gegangen - und der Trend hält an. Im ersten Halbjahr meldeten 33 Unternehmen mit mehr als 50 Millionen Euro Jahresumsatz Insolvenz an, wie der Kreditversicherer Allianz Trade am Freitag mitteilte. Das sind zehn Prozent mehr als im Vorjahreszeitraum.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T06:36:41.866Z"
+        }
+      ],
+      "content_hash": "e1a158651c7d46b18b336bdb9493433784d3532976a60c921e6a82929de04b36",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T06:36:41.866Z",
+      "event_first_seen_at": "2026-09-04T06:36:41.866Z",
+      "event_detected_at": "2026-09-04T06:36:41.866Z",
+      "event_id": "event-350bb5d87c369b9a58ed",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Finanzen",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "new_evidence"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.114433333333334,
+        "detection_delay_minutes": 18.114433333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T06:36:41.866Z",
+      "rejection": {
+        "at": "2026-09-04T06:36:41.866Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
     },
     {
       "story_id": "wt-4fb94d2cebfca746",
@@ -2233,182 +3570,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-6267bf5562aa70a6",
-      "slug": "fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6",
-      "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
-      "first_seen": "2026-09-04T05:44:22.000Z",
-      "last_updated": "2026-09-04T05:45:34.000Z",
-      "topic": [
-        "Gesellschaft",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
-          "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
-          "summary": "Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:44:22.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "4489b0cd08c0b9afaa3c6408527953eb7bc98fbf168e67ea001ff7cb6ef3af17",
-          "source_item_id": "6e155b28f46235f648154384bf13909f956b4051c3b7a0063b44b7be6378e89c",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T05:44:22.000Z",
-          "ingested_at": "2026-09-04T06:06:19.579Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
-          "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
-          "summary": "Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:45:34.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "6a59f8f50174e5587806455e917855c3deaa9d9ff75d1a865cc6e0736d2120b2",
-          "source_item_id": "d710c4f817db49b343f9626a562a783ee8e88dff2b10a9d88ace2598542bb3c6",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T05:45:34.000Z",
-          "ingested_at": "2026-09-04T06:06:19.579Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-6267bf5562aa70a6-claim-01",
-          "story_id": "wt-6267bf5562aa70a6",
-          "claim": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär: Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T06:06:19.579Z"
-        },
-        {
-          "claim_id": "wt-6267bf5562aa70a6-claim-02",
-          "story_id": "wt-6267bf5562aa70a6",
-          "claim": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär: Eine Frau meldet am Donnerstag einen gefährlichen Stoff. Das Terminal 1 wird zwischenzeitlich geräumt. Über den Gefahrenstoff, der die Evakuierung auslöste, ist noch nichts bekannt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T06:06:19.579Z"
-        }
-      ],
-      "content_hash": "c0d2698e6f6d0a03fbf7dde1b1f2b5713ceb30a267422be4f63f0e23ddc7e458",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T06:06:19.579Z",
-      "event_first_seen_at": "2026-09-04T06:06:19.579Z",
-      "event_detected_at": "2026-09-04T06:06:19.579Z",
-      "event_id": "event-993d57cff20b05016759",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesellschaft",
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 20.75965,
-        "detection_delay_minutes": 20.75965,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T06:06:19.579Z",
-      "rejection": {
-        "at": "2026-09-04T06:06:19.579Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -35414,279 +36575,6 @@
       }
     },
     {
-      "story_id": "wt-63b6c057c20a2143",
-      "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
-      "title": "KI-Sicherheitsinstitut eröffnet",
-      "first_seen": "2026-08-31T17:00:00.000Z",
-      "last_updated": "2026-09-03T10:52:37.099Z",
-      "published_at": "2026-09-03T10:52:37.099Z",
-      "updated_at": "2026-09-03T10:52:37.099Z",
-      "topic": [
-        "Digitalisierung",
-        "KI",
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "bundesregierung-kompakt",
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
-          "title": "KI-Sicherheitsinstitut eröffnet",
-          "summary": "Cyberattacken, neue komplexe KI-Modelle und sich rasant entwickelnde digitale Anwendungen werfen Fragen nach Sicherheit, Verantwortung und möglichen Risiken auf. Deutschland ist vorbereitet, nun hat das KI-Sicherheitsinstitut AISI Deutschland eröffnet.",
-          "source_type": "official_rss",
-          "published_at": "2026-08-31T17:00:00.000Z",
-          "primary_source": true,
-          "source_priority": 92,
-          "source_topic": "Politik",
-          "content_hash": "48cbd76ed1f11358abcf998a156df051e6ccd5afb21d4789c7d818f558451ee2"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-63b6c057c20a2143-claim-01",
-          "story_id": "wt-63b6c057c20a2143",
-          "claim": "KI-Sicherheitsinstitut eröffnet: Cyberattacken, neue komplexe KI-Modelle und sich rasant entwickelnde digitale Anwendungen werfen Fragen nach Sicherheit, Verantwortung und möglichen Risiken auf. Deutschland ist vorbereitet, nun hat das KI-Sicherheitsinstitut AISI Deutschland eröffnet.",
-          "claim_type": "Fakt oder Beobachtung laut Primärquelle",
-          "source_id": "bundesregierung-kompakt",
-          "source_function": "official_fact_source",
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T10:52:37.099Z"
-        }
-      ],
-      "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
-      "published": true,
-      "analysis_status": "veröffentlicht",
-      "current_version": 1,
-      "analysis": {
-        "story_id": "wt-63b6c057c20a2143",
-        "summary": "Deutschland hat ein KI-Sicherheitsinstitut eröffnet. Das ist als neue Sicherheitsinfrastruktur materiell, Wirkungen sind aber noch nicht eingetreten belegt.",
-        "detail_summary": "Fakt ist die Eröffnung von AISI Deutschland. Der Claim nennt Cyberattacken, komplexe KI-Modelle und digitale Anwendungen als Problemkontext. Der Wirkpfad liegt in Prüfung, Risikowissen und institutioneller Sicherheitsfähigkeit. Materiell sind Systemrelevanz, mögliche Kaskaden und demokratische Korrekturfähigkeit. Konkrete Ergebnisse, Standards oder Risikoabsenkungen sind noch offen.",
-        "why_relevant": "KI-Sicherheit betrifft digitale Infrastruktur, Schutzfähigkeit und mögliche Kaskadenrisiken für viele gesellschaftliche Bereiche.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Sicherere KI-Anwendungen können Menschen indirekt vor digitalen Schäden schützen; konkrete Schutzwirkung ist offen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Der Claim enthält keinen belastbaren Umwelt- oder Ressourcenpfad."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "KI-Sicherheit kann öffentliche Kontrolle, Verantwortlichkeit und Schutz vor digitalen Angriffen stärken."
-        },
-        "importance": "hoch",
-        "impact_potential": "Potenzial liegt in besserer Risikoerkennung, Prüfung komplexer Modelle und handlungsfähiger Sicherheitsinfrastruktur.",
-        "impact_risks": [
-          "Ohne Transparenz oder klare Mandate kann Sicherheitsarbeit schwer prüfbar bleiben."
-        ],
-        "mechanisms": [
-          "Institutionelle Bündelung von KI-Sicherheitskompetenz kann Standards, Tests und Reaktionsfähigkeit vorbereiten."
-        ],
-        "first_order": [
-          "Neue staatliche Infrastruktur für KI-Sicherheitsfragen nimmt Arbeit auf."
-        ],
-        "second_order": [
-          "Prüf- und Risikowissen kann spätere Regeln, Beschaffung oder Aufsicht beeinflussen."
-        ],
-        "third_order": [
-          "Langfristig möglich sind robustere digitale Ökosysteme und geringere Kaskadenrisiken."
-        ],
-        "systemic_relevance": "Hoch, weil KI-Modelle und Cyberrisiken viele Infrastrukturen und Entscheidungsräume berühren können.",
-        "transformation_potential": "Mittel bis hoch, falls das Institut überprüfbare Standards und wirksame Rückkopplung in Politik und Praxis schafft.",
-        "resilience": "Kann Resilienz stärken, wenn Erkenntnisse rechtzeitig, zugänglich und umsetzungsnah in Schutzmaßnahmen übersetzt werden.",
-        "side_effects": [
-          "Sicherheitsfokus kann Innovation verzögern oder Macht bei wenigen Prüfstellen bündeln."
-        ],
-        "uncertainties": [
-          "Mandat, Ressourcen, Prüfmethoden, Datenzugang und konkrete Outputs sind im Claim nicht ausgeführt."
-        ],
-        "evidence_level": "Primärquelle belegt die Eröffnung; Wirkungsevidenz, Ergebnisse und Kausalität liegen noch nicht vor.",
-        "attribution": "Zurechnung wäre erst über konkrete Maßnahmen, Indikatoren und beobachtbare Zustandsänderungen möglich.",
-        "watch_next": [
-          "Mandat, Veröffentlichungen, Testverfahren, Kooperationen und nachweisbare Sicherheitsverbesserungen beobachten."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG mit Bezug zu Infrastruktur, Institutionen und digitaler Sicherheit."
-        ],
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-03T10:52:37.099Z",
-          "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
-          "analysis": {
-            "story_id": "wt-63b6c057c20a2143",
-            "summary": "Deutschland hat ein KI-Sicherheitsinstitut eröffnet. Das ist als neue Sicherheitsinfrastruktur materiell, Wirkungen sind aber noch nicht eingetreten belegt.",
-            "detail_summary": "Fakt ist die Eröffnung von AISI Deutschland. Der Claim nennt Cyberattacken, komplexe KI-Modelle und digitale Anwendungen als Problemkontext. Der Wirkpfad liegt in Prüfung, Risikowissen und institutioneller Sicherheitsfähigkeit. Materiell sind Systemrelevanz, mögliche Kaskaden und demokratische Korrekturfähigkeit. Konkrete Ergebnisse, Standards oder Risikoabsenkungen sind noch offen.",
-            "why_relevant": "KI-Sicherheit betrifft digitale Infrastruktur, Schutzfähigkeit und mögliche Kaskadenrisiken für viele gesellschaftliche Bereiche.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Sicherere KI-Anwendungen können Menschen indirekt vor digitalen Schäden schützen; konkrete Schutzwirkung ist offen."
-            },
-            "planet": {
-              "relevance": "offen",
-              "rationale": "Der Claim enthält keinen belastbaren Umwelt- oder Ressourcenpfad."
-            },
-            "democracy": {
-              "relevance": "hoch",
-              "rationale": "KI-Sicherheit kann öffentliche Kontrolle, Verantwortlichkeit und Schutz vor digitalen Angriffen stärken."
-            },
-            "importance": "hoch",
-            "impact_potential": "Potenzial liegt in besserer Risikoerkennung, Prüfung komplexer Modelle und handlungsfähiger Sicherheitsinfrastruktur.",
-            "impact_risks": [
-              "Ohne Transparenz oder klare Mandate kann Sicherheitsarbeit schwer prüfbar bleiben."
-            ],
-            "mechanisms": [
-              "Institutionelle Bündelung von KI-Sicherheitskompetenz kann Standards, Tests und Reaktionsfähigkeit vorbereiten."
-            ],
-            "first_order": [
-              "Neue staatliche Infrastruktur für KI-Sicherheitsfragen nimmt Arbeit auf."
-            ],
-            "second_order": [
-              "Prüf- und Risikowissen kann spätere Regeln, Beschaffung oder Aufsicht beeinflussen."
-            ],
-            "third_order": [
-              "Langfristig möglich sind robustere digitale Ökosysteme und geringere Kaskadenrisiken."
-            ],
-            "systemic_relevance": "Hoch, weil KI-Modelle und Cyberrisiken viele Infrastrukturen und Entscheidungsräume berühren können.",
-            "transformation_potential": "Mittel bis hoch, falls das Institut überprüfbare Standards und wirksame Rückkopplung in Politik und Praxis schafft.",
-            "resilience": "Kann Resilienz stärken, wenn Erkenntnisse rechtzeitig, zugänglich und umsetzungsnah in Schutzmaßnahmen übersetzt werden.",
-            "side_effects": [
-              "Sicherheitsfokus kann Innovation verzögern oder Macht bei wenigen Prüfstellen bündeln."
-            ],
-            "uncertainties": [
-              "Mandat, Ressourcen, Prüfmethoden, Datenzugang und konkrete Outputs sind im Claim nicht ausgeführt."
-            ],
-            "evidence_level": "Primärquelle belegt die Eröffnung; Wirkungsevidenz, Ergebnisse und Kausalität liegen noch nicht vor.",
-            "attribution": "Zurechnung wäre erst über konkrete Maßnahmen, Indikatoren und beobachtbare Zustandsänderungen möglich.",
-            "watch_next": [
-              "Mandat, Veröffentlichungen, Testverfahren, Kooperationen und nachweisbare Sicherheitsverbesserungen beobachten."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG mit Bezug zu Infrastruktur, Institutionen und digitaler Sicherheit."
-            ],
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.5",
-          "mode": "woek-ai-oracle-llm",
-          "method_sources": [
-            {
-              "title": "Berichtsdaten",
-              "url": "https://wirkungsoekonomie.de/begriffe/berichtsdaten"
-            },
-            {
-              "title": "Open Science",
-              "url": "https://wirkungsoekonomie.de/begriffe/open-science"
-            },
-            {
-              "title": "Wirkungsdatenräume",
-              "url": "https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume"
-            },
-            {
-              "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768"
-            },
-            {
-              "title": "KI-Sicherheitsinstitut eröffnet",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410"
-            },
-            {
-              "title": "Messgrenzen und Unsicherheit",
-              "url": "https://wirkungsoekonomie.de/begriffe/messgrenzen-und-unsicherheit"
-            }
-          ],
-          "source_summary": "Die Bundesregierung meldet die Eröffnung des AI Safety and Security Institute Deutschland, kurz AISI Deutschland. Das nationale Kompetenz- und Evaluierungsinstitut wurde vom Nationalen Sicherheitsrat beschlossen und wird gemeinsam vom Bundesdigitalministerium und vom Bundesinnenministerium aufgebaut und geleitet. Es ist nach der Darstellung keine Regulierungsbehörde, sondern ein analytisch-operatives Kompetenzzentrum.\n\nAISI Deutschland soll moderne KI-Modelle, Cybersicherheit und mögliche technische Risiken untersuchen, vorhandene Analysekapazitäten bündeln und Lösungen für den sicheren Umgang mit KI-Systemen entwickeln. Vorgesehen ist Beratung für Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft. Außerdem soll das Institut mit vergleichbaren Einrichtungen im Ausland Informationen austauschen und auf gemeinsame internationale Standards hinwirken. Zur Eröffnung betonten die Minister Karsten Wildberger und Alexander Dobrindt die schnelle technische Bewertung von KI-Systemen und die internationale Zusammenarbeit. Konkrete Angaben zu Personal, Budget oder einem Zeitplan nennt der Artikel nicht."
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-03T10:52:37.099Z",
-          "source_count": 1
-        }
-      ],
-      "pending_update": {
-        "detected_at": "2026-09-04T06:21:36.915Z",
-        "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
-            "title": "KI-Sicherheitsinstitut eröffnet",
-            "summary": "Cyberattacken, neue komplexe KI-Modelle und sich rasant entwickelnde digitale Anwendungen werfen Fragen nach Sicherheit, Verantwortung und möglichen Risiken auf. Deutschland ist vorbereitet, nun hat das KI-Sicherheitsinstitut AISI Deutschland eröffnet.",
-            "source_type": "official_rss",
-            "published_at": "2026-08-31T17:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "48cbd76ed1f11358abcf998a156df051e6ccd5afb21d4789c7d818f558451ee2",
-            "source_item_id": "5e37fb0d46456c655f55fc930e98748664db41a61c8d000cf05c254beeefd416",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-08-31T17:00:00.000Z",
-            "ingested_at": "2026-09-04T06:21:36.915Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": true,
-        "fresh": false
-      },
-      "source_summary": "Die Bundesregierung meldet die Eröffnung des AI Safety and Security Institute Deutschland, kurz AISI Deutschland. Das nationale Kompetenz- und Evaluierungsinstitut wurde vom Nationalen Sicherheitsrat beschlossen und wird gemeinsam vom Bundesdigitalministerium und vom Bundesinnenministerium aufgebaut und geleitet. Es ist nach der Darstellung keine Regulierungsbehörde, sondern ein analytisch-operatives Kompetenzzentrum.\n\nAISI Deutschland soll moderne KI-Modelle, Cybersicherheit und mögliche technische Risiken untersuchen, vorhandene Analysekapazitäten bündeln und Lösungen für den sicheren Umgang mit KI-Systemen entwickeln. Vorgesehen ist Beratung für Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft. Außerdem soll das Institut mit vergleichbaren Einrichtungen im Ausland Informationen austauschen und auf gemeinsame internationale Standards hinwirken. Zur Eröffnung betonten die Minister Karsten Wildberger und Alexander Dobrindt die schnelle technische Bewertung von KI-Systemen und die internationale Zusammenarbeit. Konkrete Angaben zu Personal, Budget oder einem Zeitplan nennt der Artikel nicht.",
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-1a21963bf9e07ba6-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "cabae11bbe8cd25d75b6f30aa8548778a7fc8db4b2b3ca699bb823ac2f78490c"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-1a21963bf9e07ba6-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "4a60e90f7177ce602cf6ae5efdccf4c50b264c5850414a7f7cd02b4c1a1922b3"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-1a21963bf9e07ba6-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "7c499805718fb5ae44fdb8c852f162a034f5df0009b01a6cf83ef6fbb0db7137"
-        },
-        "source_visual": null,
-        "fingerprint": "1a21963bf9e07ba6a855a0fadc77ba74976c875a3978eba01d6d54a6867ea883",
-        "template_version": "woek-title-1",
-        "prompt_version": "woek-editorial-2",
-        "generated_at": "2026-09-04T01:31:32.012Z",
-        "status": "fallback",
-        "fallback_reason": "HIGGSFIELD_PREVIOUS_JOB_FAILED"
-      }
-    },
-    {
       "story_id": "wt-162fb20af62866b5",
       "slug": "wir-sehen-wie-sich-in-stadten-eine-fussbodenheizung-aufbaut-2866b5",
       "title": "\"Wir sehen, wie sich in Städten eine 'Fußbodenheizung' aufbaut\"",
@@ -36663,7 +37551,7 @@
       ],
       "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
       "published": true,
-      "analysis_status": "veröffentlicht",
+      "analysis_status": "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
       "current_version": 1,
       "analysis": {
         "story_id": "wt-a48a6799c362009d",
@@ -36815,47 +37703,6 @@
           "source_count": 1
         }
       ],
-      "pending_update": {
-        "detected_at": "2026-09-04T06:21:36.915Z",
-        "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
-        "sources": [
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209824",
-            "title": "Erkennung und Behandlung von Sepsis thematisiert",
-            "summary": "Gesundheit/KleineAnfrage Erkennung und Behandlung von Sepsis in Deutschland thematisiert die Fraktion Bündnis 90/Die Grünen in einer Kleinen Anfrage.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T13:20:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "c138ab79244a9cc66ce141b1539903a5176ca014618d23bfb4e26117d6e9696e",
-            "source_item_id": "e75e0cc73ec5ecb84b4ae48567a30f11fb52187c800741b76e7dc756f1f1831a",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T13:20:00.000Z",
-            "ingested_at": "2026-09-04T06:21:36.915Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": true,
-        "fresh": false
-      },
       "source_summary": "Die Fraktion Bündnis 90/Die Grünen hat im Deutschen Bundestag eine Kleine Anfrage zur Erkennung und Behandlung von Sepsis in Deutschland gestellt. In der Anfrage wird Sepsis als lebensbedrohliche Fehlregulation der Immunantwort auf eine Infektion beschrieben, die unbehandelt zu Organversagen und Tod führen kann.\n\nDie Abgeordneten fragen die Bundesregierung, ob sie Verbesserungsmöglichkeiten bei Erkennung und Versorgung von Sepsis sieht. Außerdem verlangen sie Auskunft über Forschungsmittel, die in den vergangenen zehn Jahren für die Sepsisforschung bereitgestellt wurden. Weitere Fragen betreffen Erkenntnisse zu Behandlungsfehlern und deren Nutzung für konkrete Maßnahmen zur Patientensicherheit. Die Bundestagsmeldung gibt den Inhalt der Anfrage wieder; eine Antwort der Bundesregierung, neue Versorgungsdaten oder bereits beschlossene Maßnahmen enthält sie noch nicht.",
       "title_image": {
         "mode": "impact_card",
@@ -36883,6 +37730,19 @@
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T01:31:50.256Z",
         "status": "generated"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-04T06:36:41.866Z",
+      "retirement": {
+        "at": "2026-09-04T06:36:41.866Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ],
+        "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       }
     },
     {
@@ -37089,7 +37949,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T06:21:36.915Z",
+        "detected_at": "2026-09-04T06:36:41.866Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -37115,7 +37975,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T06:21:36.915Z",
+            "ingested_at": "2026-09-04T06:36:41.866Z",
             "provenance": {
               "origin": "publisher:bundesbank-allgemein",
               "basis": "publisher_only_origin_unverified",
@@ -37123,9 +37983,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "FOLLOWUP_DATE_UNSUPPORTED"
+        ],
+        "quality_retry_count": 1,
         "reassessment": true,
         "fresh": false
       },
@@ -37214,7 +38076,7 @@
       ],
       "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
       "published": true,
-      "analysis_status": "veröffentlicht",
+      "analysis_status": "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
       "current_version": 1,
       "analysis": {
         "story_id": "wt-0e1ab5081b9f4045",
@@ -37366,47 +38228,6 @@
           "source_count": 1
         }
       ],
-      "pending_update": {
-        "detected_at": "2026-09-04T06:21:36.915Z",
-        "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
-        "sources": [
-          {
-            "source_id": "bundesbank-allgemein",
-            "publisher": "Deutsche Bundesbank",
-            "url": "https://www.bundesbank.de/de/presse/pressemitteilungen/ezb/mfi-zinsstatistik-fuer-den-euroraum-juli-2026-1007288",
-            "title": "MFI-Zinsstatistik für den Euroraum: Juli 2026",
-            "summary": "Der gewichtete Indikator der Kreditfinanzierungskosten für neue Kredite an Unternehmen und der entsprechende Indikator für neue Wohnungsbaukredite an private Haushalte waren mit 3,80 % bzw. 3,54 % weitgehend unverändert.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T08:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 84,
-            "source_topic": "Finanzen",
-            "content_hash": "65e3413f6dc37bbbccfecb7e5820747bd2106f568b1bf2ffb1f51db1adec82eb",
-            "source_item_id": "e080069afb1707590c760daa7edd072b064165476e91d8bd709752a9cf2bd647",
-            "publisher_id": "bundesbank-allgemein",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T06:21:36.915Z",
-            "provenance": {
-              "origin": "publisher:bundesbank-allgemein",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": true,
-        "fresh": false
-      },
       "source_summary": "Die Veröffentlichung der Deutschen Bundesbank verweist auf die MFI-Zinsstatistik der Europäischen Zentralbank für Juli 2026. Im verfügbaren Kurztext werden zwei gewichtete Indikatoren für neue Kreditgeschäfte im Euroraum genannt. Der Indikator der Finanzierungskosten für neue Unternehmenskredite lag bei 3,80 Prozent. Für neue Wohnungsbaukredite an private Haushalte weist die Meldung einen entsprechenden Wert von 3,54 Prozent aus.\n\nBeide Werte waren nach Angaben der Quelle gegenüber dem vorherigen Stand weitgehend unverändert. Die Meldung beschreibt damit die Kosten neuer Bankkredite in den beiden genannten Segmenten, nicht den gesamten Bestand bereits laufender Darlehen. Weitere Einzelheiten stehen in einer verlinkten EZB-Veröffentlichung als PDF. Der auf der Bundesbank-Seite verfügbare Kurztext nennt keine Ursachen für die Entwicklung und enthält dort auch keine weitergehende Bewertung des längerfristigen Trends.",
       "title_image": {
         "mode": "impact_card",
@@ -37435,6 +38256,19 @@
         "generated_at": "2026-09-04T01:32:04.606Z",
         "status": "fallback",
         "fallback_reason": "HIGGSFIELD_PREVIOUS_JOB_FAILED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-04T06:36:41.866Z",
+      "retirement": {
+        "at": "2026-09-04T06:36:41.866Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ],
+        "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       }
     },
     {
@@ -37641,7 +38475,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T06:21:36.915Z",
+        "detected_at": "2026-09-04T06:36:41.866Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -37667,7 +38501,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T07:44:36.000Z",
-            "ingested_at": "2026-09-04T06:21:36.915Z",
+            "ingested_at": "2026-09-04T06:36:41.866Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
               "basis": "publisher_only_origin_unverified",
@@ -37675,9 +38509,47 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
+        ],
+        "quality_retry_count": 1,
         "reassessment": true,
         "fresh": false
       },
@@ -37764,7 +38636,7 @@
       ],
       "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
       "published": true,
-      "analysis_status": "veröffentlicht",
+      "analysis_status": "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
       "current_version": 1,
       "analysis": {
         "story_id": "wt-ab0d79d228a04a51",
@@ -37918,30 +38790,6 @@
           "source_count": 1
         }
       ],
-      "pending_update": {
-        "detected_at": "2026-09-04T06:21:36.915Z",
-        "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
-        "sources": [
-          {
-            "source_id": "bundesrat-mitteilungen",
-            "publisher": "Bundesrat – Mitteilungen",
-            "url": "https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2026/0501-0600/0504-26.html",
-            "title": "504/26 | Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen | 3. September 2026",
-            "summary": "",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T22:01:00.000Z",
-            "primary_source": true,
-            "source_priority": 94,
-            "source_topic": "Politik",
-            "content_hash": "e362441ae1fa1127a3cf3507d33d24def790eb08e77dced1d570c2974f62a8b7"
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": true,
-        "fresh": false
-      },
       "source_summary": "Der Bundesrat führt unter der Nummer 504/26 einen Beratungsvorgang mit dem Titel „Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen“. Der Eintrag ist auf den 3. September 2026 datiert. Als federführend ist der Ausschuss mit dem Kürzel G genannt; zusätzlich weist die Seite die Kürzel AIS, Fz und K für weitere beteiligte Ausschüsse aus.\n\nDie Originalseite kündigt an, dass die Drucksachen zu diesem Vorgang noch nicht vorliegen und in Kürze veröffentlicht werden sollen. Damit dokumentiert sie bislang den Eingang und die Ausschusszuweisung der Verordnung, aber noch keine Beratungsergebnisse oder Entscheidung des Bundesrates. Auch konkrete Änderungen an Anerkennungsverfahren, betroffene Heilberufe, Fristen und Zuständigkeiten lassen sich dem derzeit veröffentlichten Eintrag noch nicht entnehmen. Diese Punkte bleiben bis zur Bereitstellung der angekündigten Drucksachen offen.",
       "title_image": {
         "mode": "editorial",
@@ -37979,6 +38827,19 @@
         "prompt_version": "woek-editorial-2",
         "generated_at": "2026-09-04T06:04:43.286Z",
         "status": "generated"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-04T06:36:41.866Z",
+      "retirement": {
+        "at": "2026-09-04T06:36:41.866Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ],
+        "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       }
     },
     {
@@ -44343,5 +45204,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T06:21:36.915Z"
+  "public_updated_at": "2026-09-04T06:36:41.866Z"
 }
