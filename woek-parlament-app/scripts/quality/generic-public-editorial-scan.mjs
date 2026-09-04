@@ -246,9 +246,9 @@ const governmentRegression = routeChecks.find((entry) => entry.route === "/regie
 const euRegression = routeChecks.find((entry) => entry.route === "/eu/wirkungsfaelle/EU-IMPACT-2026-002");
 const liveGate = (value) => baseUrl ? Boolean(value) : true;
 const gates = {
-  OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT: /Zusammenfassende WÖk-Bewertung/.test(components.overview) && [components.caseCard, components.governmentCard, components.euCard].every((value) => /<OverviewAssessment/.test(value)),
+  OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT: /Zusammenfassende WÖk-Bewertung/.test(components.overview) && [components.caseCard, components.governmentCard, components.euCard].every((value) => /<(OverviewAssessment|ImpactSignature)/.test(value)),
   PROCESS_BADGE_IS_NOT_USED_AS_ASSESSMENT: !/Vor der Entscheidung geprüft|Beobachtung und Rückkopplung|hohe Prüfrelevanz/i.test(components.overview),
-  ASSESSMENT_PRECEDES_PROCESS_METADATA: components.caseCard.indexOf("<OverviewAssessment") < components.caseCard.indexOf("case-card-topline") && components.decisionDetail.indexOf("<OverviewAssessment") < components.decisionDetail.indexOf("decision-process-meta"),
+  ASSESSMENT_PRECEDES_PROCESS_METADATA: components.caseCard.indexOf("<ImpactSignature") >= 0 && components.caseCard.indexOf("<ImpactSignature") < components.caseCard.indexOf("data-woek-process-metadata") && components.decisionDetail.indexOf("<OverviewAssessment") < components.decisionDetail.indexOf("decision-process-meta"),
   EDITORIAL_SUMMARY_IS_CASE_SPECIFIC: fieldFailures.every((value) => !value.includes("editorial_summary")) && similarityFailures.every((value) => value.field !== "editorial_summary"),
   EVIDENCE_SUMMARY_IS_CASE_SPECIFIC: fieldFailures.every((value) => !value.includes("evidence_summary")) && similarityFailures.every((value) => value.field !== "evidence_summary"),
   ASSESSMENT_AND_IMPACT_CORE_HAVE_DISTINCT_FUNCTION: fieldFailures.every((value) => !value.includes("ASSESSMENT_EQUALS_IMPACT_CORE")),
@@ -270,10 +270,10 @@ const gates = {
     && liveFailures.every((entry) => !entry.failures.includes("PROCESS_PRECEDES_SUBSTANTIVE_IMPACT_LAYER")),
   IMPACT_ANALYSIS_IS_PRIMARY_CONTENT: /impactCoreSummary: editorial\.fields\.impact_core_summary/.test(components.governmentCard) && /impactCoreSummary: editorial\.fields\.impact_core_summary/.test(components.euCard),
   GENERIC_PUBLIC_EDITORIAL_SCAN: noGeneric,
-  PREVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT: /WÖk-Kurzbewertung/.test(components.overview) && [components.caseCard, components.governmentCard, components.governmentActionCard, components.euCard, components.search, components.sourceDetail].every((value) => /<OverviewAssessment/.test(value)) && livePreviewFailures.every((entry) => !entry.failures.includes("PREVIEW_WITHOUT_ASSESSMENT")),
+  PREVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT: /WÖk-Kurzbewertung/.test(components.overview) && [components.caseCard, components.governmentCard, components.governmentActionCard, components.euCard, components.search, components.sourceDetail].every((value) => /<(OverviewAssessment|ImpactSignature)/.test(value)) && livePreviewFailures.every((entry) => !entry.failures.includes("PREVIEW_WITHOUT_ASSESSMENT")),
   PREVIEW_CARD_HAS_ICONIC_ASSESSMENT: /data-woek-assessment-icon/.test(components.overview) && /role="img"/.test(components.overview) && livePreviewFailures.every((entry) => !entry.failures.includes("ASSESSMENT_WITHOUT_ICON")),
   PREVIEW_CARD_HAS_CASE_SPECIFIC_IMPACT_SUMMARY: fieldFailures.every((value) => !/(?:editorial_summary|impact_core_summary)/.test(value)) && similarityFailures.every((value) => !["editorial_summary", "impact_core_summary"].includes(value.field)),
-  PREVIEW_CARD_IMPACT_PRECEDES_PROCESS: components.caseCard.indexOf("<OverviewAssessment") < components.caseCard.indexOf("data-woek-process-metadata") && components.governmentActionCard.indexOf("<OverviewAssessment") < components.governmentActionCard.indexOf("data-woek-process-metadata") && livePreviewFailures.every((entry) => !entry.failures.includes("PROCESS_PRECEDES_PUBLICATION_STATUS")),
+  PREVIEW_CARD_IMPACT_PRECEDES_PROCESS: components.caseCard.indexOf("<ImpactSignature") >= 0 && components.caseCard.indexOf("<ImpactSignature") < components.caseCard.indexOf("data-woek-process-metadata") && components.governmentActionCard.indexOf("<OverviewAssessment") < components.governmentActionCard.indexOf("data-woek-process-metadata") && livePreviewFailures.every((entry) => !entry.failures.includes("PROCESS_PRECEDES_PUBLICATION_STATUS")),
   PREVIEW_CARD_PROCESS_IS_NOT_MAIN_ASSESSMENT: !/Vor der Entscheidung geprüft|Beobachtung und Rückkopplung|hohe Prüfrelevanz/i.test(components.overview),
   PREVIEW_CARD_NO_GENERIC_SUMMARY: noGeneric,
   PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((entry) => !entry.failures.includes("RAW_ENUM_VISIBLE") && !entry.failures.includes("UNREVIEWED_PUBLIC_LABEL_VISIBLE")),

@@ -10,6 +10,7 @@ import { WirkungsraumLink } from "@/app/components/WirkungsraumLink";
 import { SiteAnalyticsTracker } from "@/app/components/SiteAnalyticsTracker";
 import { subscriptionDeliveryReady } from "@/lib/wirkungsradar/subscriptions";
 import "./globals.css";
+import "./impact-signature.css";
 import "./navigation.css";
 
 export const metadata: Metadata = {
