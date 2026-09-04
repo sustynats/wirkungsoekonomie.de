@@ -5622,6 +5622,42 @@
           "announced_at": "2026-09-04T06:00:49.000Z",
           "follow_up_date": "2026-09-11T06:06:52.464Z",
           "status": "scheduled"
+        },
+        {
+          "claim": "Ergebnis der Expertenprüfung des Gegenstands am Umspannwerk",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizei oder Betreiber nennt gesicherte Einordnung des Gegenstands.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6cdbe9e8f974e3ab",
+          "announced_at": "2026-09-04T02:12:48.000Z",
+          "follow_up_date": "2026-09-11T02:21:50.081Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-4855e13df47f18ed"
+        },
+        {
+          "claim": "Ob die Polizei den Fund als Sabotageversuch, harmlosen Gegenstand oder etwas anderes einordnet.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Behördliche Einordnung des Fundes oder konkrete Ermittlungsmitteilung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cd5dd6963599eba1",
+          "announced_at": "2026-09-04T00:30:02.000Z",
+          "follow_up_date": "2026-09-11T01:00:23.705Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-7d3fabe103b78ce3"
+        },
+        {
+          "claim": "Wird die Polizei den Gegenstand als funktionsfähige Abschussvorrichtung einstufen?",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Behördliche Einordnung des Fundes und mögliche technische Beschreibung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8b70c8da46e59258",
+          "announced_at": "2026-09-04T00:48:10.000Z",
+          "follow_up_date": "2026-09-11T01:27:12.242Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-7d3fabe103b78ce3"
         }
       ],
       "content_hash": "817a4ed42e4098ee8c3499f82b07ae025565c9f9b48bafc2c910943c882cff73",
@@ -6195,7 +6231,325 @@
           "source_count": 4
         }
       ],
-      "retirement_history": []
+      "retirement_history": [],
+      "pending_update": {
+        "detected_at": "2026-09-04T08:23:51.102Z",
+        "sources": [
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+            "summary": "Wieder sind Abschussvorrichtungen an einem Umspannwerk gefunden worden. Aktuell geht es um Dormagen und Weisweiler.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T05:28:26.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "6194d6122a3260b05cdaf8f1282013cba8119fed516a3e47fc88dc8bde394cff",
+            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T05:28:26.000Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+            "title": "Sabotage-Versuch an Umspannwerk in Dormagen",
+            "summary": "Nach dem Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen geht die Polizei von einem Sabotagedelikt aus. Offenbar sollte ein Kurzschluss hergestellt werden. Es…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T01:45:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "72c286e0bab4d8768792e47499ea97b1d1816d55c2d29ba1192bb9976e0e4399",
+            "source_item_id": "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T01:45:01.000Z",
+            "ingested_at": "2026-09-04T01:51:32.529Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
+            "title": "Weiterer Sabotage-Versuch an Umspannwerk in Dormagen",
+            "summary": "An einem Umspannwerk bei Dormagen in NRW gab es einen Sabotageversuch, Abschussvorrichtungen wurden gefunden. Die Polizei fahndet nach einem Mann, der ein Bekennerschreiben verfasst hat.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T05:37:43.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "861f58150d932ea7e1ae3e6e6f2a3c3654528792c6ac8b3c4b5144f8b0fe3d46",
+            "source_item_id": "286bf0c30dea8a66a74bbd8d5dfedf5d68ede625df946d30e3855702488349f4",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T05:37:43.000Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+            "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weiterer Polizeieinsatz in Oldenburg",
+            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen. Ein Sprecher der Kölner Polizei sagte, man gehe nach dem Eingang eines Bekennerschreibens von einem Sabotagedelikt aus.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T06:00:49.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "f397bdaf0a0e0965443026caf5c07d2a0d73303620bb48cc4bdec82e661ce42a",
+            "source_item_id": "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T06:00:49.000Z",
+            "ingested_at": "2026-09-04T06:06:19.579Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
+            "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
+            "summary": "In Nordrhein-Westfalen hat es offenbar den Versuch eines weiteren Anschlags auf ein Umspannwerk gegeben. Betroffen ist diesmal eine Anlage im zwischen Köln und Düsseldorf gelegenen Dormagen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T02:12:48.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "14087e66bcbc1e292a4cce1326e0a43ef35e21c1a36fc885d8df1a5f590912b3",
+            "source_item_id": "d7801f4def8fdd306769ddd6bd105a09d7f0a59ffa7fd728d9710a75e1761bf6",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T02:12:48.000Z",
+            "ingested_at": "2026-09-04T02:21:15.650Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
+            "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
+            "summary": "Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen. Nun geht sie von einem Sabotagedelikt aus.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T00:39:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "0cb6451ef05c61d48dfe4e08781be6c29a0e5450f556b38588286baa0654a19d",
+            "source_item_id": "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T00:39:00.000Z",
+            "ingested_at": "2026-09-04T01:26:36.485Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "publisher": "DER SPIEGEL",
+            "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
+            "title": "Dormagen: Polizei geht von versuchter Sabotage an Umspannwerk aus",
+            "summary": "Ein Spaziergänger hatte einen verdächtigen Gegenstand entdeckt. Jetzt erklären die Ermittler: Im neuen Fall in Dormagen dürfte es sich um versuchte Sabotage handeln. Ein Bekennerschreiben liegt demnach vor.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T01:06:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "fb23a151dcb8577bbe55a13a4d92dd302962e8cf0a9d5b9cd3bce01f52dc0ef9",
+            "source_item_id": "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60",
+            "publisher_id": "spiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T01:06:00.000Z",
+            "ingested_at": "2026-09-04T01:26:36.485Z",
+            "provenance": {
+              "origin": "publisher:spiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
+            "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+            "summary": "Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen. Handelt es sich um eine Abschussvorrichtung oder nur um einen schlechten Scherz?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T21:07:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "95ca532a46bb3d2ac8e1b929c35086ce0fba2d0a679167fc63e2de441f64c926",
+            "source_item_id": "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T21:07:00.000Z",
+            "ingested_at": "2026-09-04T00:21:22.875Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
+            "title": "Nach Angriffen auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+            "summary": "Handelt es sich um eine Abschussvorrichtung, oder nur um einen schlechten Scherz? Die Polizei untersucht einen verdächtigen Fund an einem Umspannwerk in Dormagen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T21:03:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "8bee50c615245a339fea47ea2d996565dfb75d37869a6674ac52c0f3572d2ab9",
+            "source_item_id": "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T21:03:08.000Z",
+            "ingested_at": "2026-09-04T00:21:22.875Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "fresh": false,
+        "consolidation": true,
+        "quality_retry_count": 0
+      },
+      "living_file": {
+        "merged_story_ids": [
+          "wt-4855e13df47f18ed",
+          "wt-3a01df57b8cfe75f",
+          "wt-7d3fabe103b78ce3"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-04T08:23:51.102Z",
+            "story_id": "wt-4855e13df47f18ed",
+            "slug": "kritische-infrastruktur-offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormage-7f18ed",
+            "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
+            "reason": "specific_object_or_leading_document"
+          },
+          {
+            "at": "2026-09-04T08:23:51.102Z",
+            "story_id": "wt-3a01df57b8cfe75f",
+            "slug": "angriffe-auf-stromnetz-polizei-geht-von-sabotage-an-umspannwerk-in-dormagen-aus-cfe75f",
+            "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
+            "reason": "specific_object_or_leading_document"
+          },
+          {
+            "at": "2026-09-04T08:23:51.102Z",
+            "story_id": "wt-7d3fabe103b78ce3",
+            "slug": "angriffe-auf-stromnetz-verdachtiger-gegenstand-an-umspannwerk-in-dormagen-entdeckt-b78ce3",
+            "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
+      }
     },
     {
       "story_id": "wt-0db906d5cfe1383d",
@@ -20837,8 +21191,8 @@
         "generated_at": "2026-09-04T02:23:10.031Z",
         "status": "generated"
       },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 2,
       "source_summary": "In Dormagen wird an einem Umspannwerk ein verdächtiger Gegenstand untersucht. Nach Angaben eines Polizeisprechers geht die Kölner Polizei nach Eingang eines Bekennerschreibens von Sabotage aus; zugleich heißt es, es habe zu einem Sabotageakt nicht gekommen. Der Gegenstand wird demnach von Experten geprüft, und weitere Stromanlagen in der Region werden überprüft.\n\nDer Bericht ordnet den Fund in eine Serie ähnlicher Vorfälle ein. Er verweist darauf, dass es vor zwei Tagen bereits bei Rommerskirchen westlich von Köln einen Anschlag auf ein Umspannwerk gegeben habe. Außerdem wird ein früherer Angriff in Brandenburg erwähnt; die Authentizität eines dort eingegangenen Bekennerbriefs wird als unklar beschrieben.",
@@ -21362,7 +21716,23 @@
         }
       ],
       "retirement_history": [],
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "retired_at": "2026-09-04T08:23:51.102Z",
+      "retirement": {
+        "at": "2026-09-04T08:23:51.102Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-4fb94d2cebfca746"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-4fb94d2cebfca746",
+            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-74ebdd4a0ed4fecd",
@@ -21846,6 +22216,18 @@
           "announced_at": "2026-09-03T16:21:00.000Z",
           "follow_up_date": "2026-09-11T02:07:51.145Z",
           "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Polizei die Echtheit des Bekennerschreibens bestätigen kann",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung zur Authentizität des Schreibens",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6f87b9521d465246",
+          "announced_at": "2026-09-03T18:57:30.000Z",
+          "follow_up_date": "2026-09-10T22:37:01.821Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-57bcbc8dea706471"
         }
       ],
       "content_hash": "7cc3463226d4989cf794b648503cb3da1dc5103b59b12760d5725397320362dc",
@@ -22210,7 +22592,154 @@
         "generated_at": "2026-09-04T02:08:01.160Z",
         "status": "generated"
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-04T08:23:51.102Z",
+        "sources": [
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+            "summary": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde erreicht die taz ein Bekennerschreiben. Ist es authentisch? Das lässt sich nicht zweifelsfrei klären. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T16:21:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "f31b60b5c009745086e1f791654301a0737aafb77aeb46bac4a032370f83873a",
+            "source_item_id": "195138e3840809bf416a757a6d536b0c2bd9d84ed9fe4a85a3437fba9c8a8edf",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T16:21:00.000Z",
+            "ingested_at": "2026-09-03T22:21:17.010Z",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/potsdam/brandenburg/dpa-nach-angriff-auf-stromnetz-16015587.html",
+            "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
+            "summary": "Die Polizei ermittelt nach der Sabotage am Stromnetz in Südbrandenburg. Nun ist ein Bekennerschreiben aufgetaucht.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T16:08:52.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1f470037f1dd5d4c038d7f21f102bf1f7f9c54da7effe71a0e1722e57304f6cb",
+            "source_item_id": "77c9bba564348b6d62bd23998815d636084c141fe800409a400fd56299639d65",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T16:08:52.000Z",
+            "ingested_at": "2026-09-03T22:21:17.010Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/brandenburg-bekennerschreiben-sprengvorrichtung-stromnetz-umspannwerk-jaenschwalde-100.html",
+            "title": "Brandenburg: Polizei prüft Bekennerschreiben",
+            "summary": "Nach dem Anschlag auf ein Umspannwerk in Brandenburg prüfen Ermittler ein Bekennerschreiben. Einem Medienbericht zufolge hat sich ein Einzeltäter zur Tat bekannt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T17:36:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "14f14bc3ce30b81adf2deee3d22ccda466c95b405b9bd5c0d3bdfa0819d22ec7",
+            "source_item_id": "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T17:36:00.000Z",
+            "ingested_at": "2026-09-03T22:36:32.459Z",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "rbb24-nachrichten",
+            "publisher": "rbb24",
+            "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
+            "title": "Polizei prüft Bekennerschreiben nach Angriff auf Umspannwerk",
+            "summary": "Die Polizei ermittelt nach der Sabotage am Stromnetz bei Jänschwalde unter anderem wegen der Bildung einer terroristischen Vereinigung. Nun ist ein Bekennerschreiben eingegangen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T18:57:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "42f668098c9786294164b7a51134e2c65521d71257218e5c64ce8cf84403c591",
+            "source_item_id": "a62afbc8f1549d06d1af899f7219ad906e90ac62bd8ebe24493b710cfa86cfc0",
+            "publisher_id": "rbb",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin-Brandenburg"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T18:57:30.000Z",
+            "ingested_at": "2026-09-03T22:36:32.459Z",
+            "provenance": {
+              "origin": "publisher:rbb",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "fresh": false,
+        "consolidation": true,
+        "quality_retry_count": 0
+      },
+      "living_file": {
+        "merged_story_ids": [
+          "wt-57bcbc8dea706471"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-04T08:23:51.102Z",
+            "story_id": "wt-57bcbc8dea706471",
+            "slug": "nach-angriff-auf-stromnetz-brandenburger-polizei-pruft-bekennerschreiben-706471",
+            "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
+      }
     },
     {
       "story_id": "wt-ad66b087c12c1cc9",
@@ -23456,8 +23985,8 @@
       "followups": [],
       "content_hash": "114455efb6ecf6e812f93c7d586cd5c19e2d27f3cb99cf15611f640a0c3b4cd4",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "Die gelieferten Texte berichten über einen Vorfall an einem Umspannwerk in Dormagen. Laut der einen Quelle untersucht die Polizei einen verdächtigen Fund und geht von Sabotage aus. Die andere Quelle schreibt, ein Spaziergänger habe einen verdächtigen Gegenstand entdeckt; zudem liege nach Angaben der Ermittler ein Bekennerschreiben vor. Beide Meldungen verweisen auf einen laufenden Ermittlungsstand, nennen aber keine weitergehenden Details zu Tätern, Motiv oder Folgen für die Stromversorgung.\n\nDie Quellen sind journalistische Darstellungen und keine Originalmitteilungen. Aus den gelieferten Texten geht nicht hervor, ob die Angaben bereits unabhängig bestätigt sind oder auf derselben behördlichen Grundlage beruhen.",
@@ -23728,7 +24257,23 @@
         "generated_at": "2026-09-04T01:30:18.159Z",
         "status": "generated"
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "retired_at": "2026-09-04T08:23:51.102Z",
+      "retirement": {
+        "at": "2026-09-04T08:23:51.102Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-4fb94d2cebfca746"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-4fb94d2cebfca746",
+            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-7d3fabe103b78ce3",
@@ -24065,8 +24610,8 @@
         "generated_at": "2026-09-04T01:30:01.418Z",
         "status": "generated"
       },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 2,
       "source_summary": "In Dormagen wird an einem Umspannwerk ein verdächtiger Gegenstand untersucht. Mehrere Beiträge berichten, dass die Polizei den Fund vor Ort prüft; zunächst war offen, ob es sich um eine Abschussvorrichtung oder nur um einen schlechten Scherz handelt. Ein WDR-Beitrag ergänzt, dass es in Dormagen-Gohr nach dem Fund zu keiner Beschädigung gekommen sei und unklar bleibe, ob der Gegenstand überhaupt geeignet gewesen wäre, Schaden hervorzurufen.\n\nDer WDR berichtet außerdem, die Polizei gehe inzwischen von einem Sabotagedelikt aus und vermute, dass offenbar ein Kurzschluss hergestellt werden sollte. Nach dem Bericht wird nach einem Mann aus dem Raum Gevelsberg gefahndet, der ein Bekennerschreiben verschickt haben soll; die Echtheit dieses Schreibens werde noch geprüft. Ein möglicher Zusammenhang mit früheren Angriffen auf Umspannwerke in Brandenburg und anderen Orten wird erwähnt, bleibt aber offen.",
@@ -24581,7 +25126,23 @@
         }
       ],
       "retirement_history": [],
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "retired_at": "2026-09-04T08:23:51.102Z",
+      "retirement": {
+        "at": "2026-09-04T08:23:51.102Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-4fb94d2cebfca746"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-4fb94d2cebfca746",
+            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-9e8076042f86f06d",
@@ -29545,8 +30106,8 @@
       ],
       "content_hash": "9d0a297548dc6af96d67ae3cc0b3ed9811ca1046466165e630458bed0b6f93c7",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "Die Berichte sagen, dass die Polizei nach der Sabotage am Umspannwerk bei Jänschwalde ein Bekennerschreiben prüft. Nach Polizeiangaben ist die Authentizität des Schreibens derzeit offen; bestätigt oder verneint werden könne sie noch nicht.\n\nDie Ermittlungen laufen weiter und werden unter anderem wegen der Bildung einer terroristischen Vereinigung geführt. Zugleich wird berichtet, dass ein Medienbericht von einem Einzeltäter spricht, der sich in dem Schreiben zu der Tat bekenne. Die polizeiliche Suche am Umspannwerk ist nach den Berichten abgeschlossen.",
@@ -29935,7 +30496,23 @@
         "generated_at": "2026-09-04T01:03:12.647Z",
         "status": "generated"
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "retired_at": "2026-09-04T08:23:51.102Z",
+      "retirement": {
+        "at": "2026-09-04T08:23:51.102Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-f3d585eac14dec76"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-f3d585eac14dec76",
+            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-9812656e38b0d665",
@@ -48036,5 +48613,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T08:06:19.579Z"
+  "public_updated_at": "2026-09-04T08:23:51.102Z"
 }
