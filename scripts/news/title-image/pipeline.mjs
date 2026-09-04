@@ -35,7 +35,7 @@ export async function generateEditorialVisual(story, { endpoint = process.env.WO
   const url = new URL(endpoint);
   if (url.protocol !== "https:" || url.username || url.password) throw imageError("HIGGSFIELD_ENDPOINT_INVALID");
   const response = await fetchImpl(url, { method: "POST", redirect: "error", headers: { "content-type": "application/json", authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(C.generation_timeout_ms + 60000), body: JSON.stringify({ story_id: story.story_id, title: story.title, source_summary: story.source_summary, topic: story.topic, claims: (story.claims || []).slice(0,10).map((c) => ({ claim: c.claim })), ...(story.refresh_prompt_version ? { refresh_prompt_version: story.refresh_prompt_version } : {}) }) });
-  if (!response.ok) throw imageError(response.status === 403 ? "HIGGSFIELD_AUTH_UNAVAILABLE" : "HIGGSFIELD_PROVIDER_UNAVAILABLE");
+  if (!response.ok) throw imageError(response.status === 429 ? "HIGGSFIELD_RATE_LIMIT" : response.status === 403 ? "HIGGSFIELD_AUTH_UNAVAILABLE" : "HIGGSFIELD_PROVIDER_UNAVAILABLE");
   const chunks = []; let length = 0;
   for await (const chunk of response.body) {
     length += chunk.length;
