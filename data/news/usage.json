@@ -2673,6 +2673,38 @@
       },
       "source_failures": 0,
       "quality_holds": 19
+    },
+    {
+      "run_id": "news-run-8ca8209bb04b",
+      "started_at": "2026-09-04T16:51:42.103Z",
+      "completed_at": "2026-09-04T16:52:32.097Z",
+      "berlin_slot": "Automatischer Lauf 18:00",
+      "counts": {
+        "feed_entries_fetched": 1150,
+        "feed_entries_new": 34,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 648,
+        "story_clusters": 32,
+        "locally_rejected": 27,
+        "ai_stories": 12,
+        "ai_requests": 1,
+        "reviews_reused": 1,
+        "input_holds": 2,
+        "prompt_chars_sent": 0,
+        "published_stories": 0,
+        "updated_stories": 0
+      },
+      "ai": {
+        "requests": 1,
+        "provider": null,
+        "model": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "estimated_cost_usd": 0.25,
+        "token_source": "includes_conservative_failed_request_reservations"
+      },
+      "source_failures": 0,
+      "quality_holds": 27
     }
   ]
 }
