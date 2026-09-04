@@ -1,7 +1,251 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T06:21:36.915Z",
+  "updated_at": "2026-09-04T06:36:41.866Z",
   "stories": [
+    {
+      "story_id": "wt-63b6c057c20a2143",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-2954e5f7cc7bfcc5-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-2954e5f7cc7bfcc5-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-2954e5f7cc7bfcc5-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
+      "title": "KI-Sicherheitsinstitut eröffnet",
+      "source_summary": "Die Bundesregierung meldet die Eröffnung von AISI Deutschland als KI-Sicherheitsinstitut. Die Mitteilung verknüpft dies mit Fragen nach Sicherheit, Verantwortung und Risiken durch Cyberattacken, neue KI-Modelle und schnell wachsende digitale Anwendungen.\n\nNach der Darstellung soll AISI Deutschland als nationales Kompetenz- und Evaluierungsinstitut arbeiten. Genannt werden Cybersicherheit, die Analyse neuer KI-Modelle, Beratung von Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft sowie der Aufbau einer zentralen Schnittstelle für Risikoanalyse und Abwehr. Außerdem heißt es, die Gründung sei vom Nationalen Sicherheitsrat beschlossen worden und das Institut werde gemeinsam von Bundesdigitalministerium und Bundesinnenministerium aufgebaut und geleitet. Unklar bleiben im gelieferten Text Mandat, Ressourcen, Methoden und konkrete erste Outputs.",
+      "summary": "Deutschland hat ein KI-Sicherheitsinstitut eröffnet. Die Meldung beschreibt AISI Deutschland als neue Sicherheitsinfrastruktur mit Beratungs- und Analyseauftrag.",
+      "detail_summary": "Gesichert ist vor allem die Eröffnung von AISI Deutschland als neuem KI-Sicherheitsinstitut. Laut der Quelle soll das Institut Cybersicherheit, neue KI-Modelle und deren Folgen analysieren und als Schnittstelle für Risikoanalyse und Abwehr dienen. Für die WÖk-Perspektive ist das materiell, weil damit eine neue staatliche Sicherheits- und Bewertungsinfrastruktur geschaffen wird, die auf Regeln, technische Standards und künftige Entscheidungsprozesse wirken kann. Der Wirkpfad verläuft über bessere Risikoerkennung, koordiniertere Reaktionen und mögliche Einflussnahme auf Verwaltung, Wirtschaft und internationale Standards. Mögliche Folgen sind schnellere Bewertungen von KI-Risiken und eine stärkere Bündelung vorhandener Kapazitäten. Offen bleibt aber, wie groß das Mandat tatsächlich ist, welche Ressourcen und Prüfmethoden vorliegen und ob bereits konkrete Outputs entstanden sind; echte Wirkungen sind aus der Quelle noch nicht belegt.",
+      "why_relevant": "Die Eröffnung eines staatlichen KI-Sicherheitsinstituts kann Analyse-, Koordinations- und Standardsetzungsstrukturen verändern und damit künftige KI-Risiken, Abwehrfähigkeiten und Verwaltungshandeln beeinflussen.",
+      "topic": [
+        "Digitalisierung",
+        "KI",
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind potenziell Bürgerinnen, Wirtschaft, Verwaltung und Sicherheitsstrukturen; konkrete Entlastung oder Schutzwirkung ist aber noch nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht genannt; allenfalls indirekte Wirkungen über digitale Infrastrukturen sind denkbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die neue Institution kann staatliche Entscheidungsfähigkeit bei KI stärken; demokratische Kontrolle und Transparenz bleiben aber offen."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Institut",
+            "value": "AISI Deutschland",
+            "unit": "Name",
+            "context": "Benannte neue Sicherheitsinstitution"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte",
+          "europa"
+        ],
+        "tendency": {
+          "human": "offen",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-08-31T17:00:00.000Z",
+      "last_updated": "2026-09-04T06:37:37.131Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-f10c5b35a0961de9aa6c",
+      "source_published_at": "2026-08-31T17:00:00.000Z",
+      "published_at": "2026-09-03T10:52:37.099Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das Institut konkrete Analysen, Beratung oder Standards veröffentlicht.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Arbeitsergebnisse, Mandate oder Standards des Instituts",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8554b3c45aa7ac07",
+          "announced_at": "2026-08-31T17:00:00.000Z",
+          "follow_up_date": "2026-09-11T06:37:37.131Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
+          "source_type": "official_rss",
+          "published_at": "2026-08-31T17:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-6267bf5562aa70a6",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-2ee125ddec703367-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-2ee125ddec703367-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-2ee125ddec703367-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6",
+      "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
+      "source_summary": "Mehrere Berichte schildern einen Gefahrgut-Alarm am Flughafen BER. Eine Frau soll am Donnerstag einen gefährlichen Stoff gemeldet haben; daraufhin wurde der öffentliche Bereich von Terminal 1 geräumt, Passagiere mussten das Gebäude verlassen. Nach der Kontrolle gab es Entwarnung und das Terminal wurde wieder freigegeben. Über den Stoff selbst war zunächst nichts bekannt. Ein Bericht nennt zudem Verzögerungen, vereinzelt Ausfälle, eine Verlagerung der Abfertigung auf Terminal 2 und eine zeitweise Unterbrechung des Zugverkehrs zwischen Schönefeld und dem Flughafen BER.\n\nAm Freitagmorgen lief der Flugverkehr wieder regulär. Nach Angaben des Berichts fielen nur einige wenige Flüge aus. Die Flugbetriebslage und die genaue Ursache des Alarms blieben zunächst offen.",
+      "summary": "Am BER kam es nach einer Stoffmeldung zu einer zeitweisen Räumung von Terminal 1. Der Flugbetrieb läuft inzwischen wieder regulär, einzelne Folgen für Flüge und Bahnverkehr sind aber berichtet.",
+      "detail_summary": "Gesichert belegt ist zunächst, dass am BER nach der Meldung eines gefährlichen Stoffes Terminal 1 zeitweise geräumt wurde und die Polizei den Bereich später wieder freigab. Mehrere Berichte nennen außerdem, dass der Flugbetrieb am Morgen danach wieder regulär lief und nur einige wenige Flüge ausfielen. Für die Einordnung ist wichtig: Der Vorfall betrifft einen zentralen Flughafen mit unmittelbaren Störungen für Passagiere, Abläufe und Anschlussverkehr, auch wenn die Beeinträchtigung offenbar begrenzt blieb. Der Wirkpfad verläuft über Sicherheitsalarm, Evakuierung, Umleitung der Abfertigung und vorübergehende Unterbrechungen im Bahnzubringer. Mögliche Folge ist vor allem kurzfristige Verspätung und organisatorischer Mehraufwand; eine weitergehende Wirkung bleibt offen, solange Art des Stoffes und Ursache der Meldung nicht geklärt sind. Die Evidenzlage stützt derzeit eine vorsichtige Erstmeldung, aber noch keine abschließende Bewertung des Ausmaßes.",
+      "why_relevant": "Der Vorfall stört einen verkehrlichen Knotenpunkt mit Auswirkungen auf Passagierströme, Abläufe und den Zubringerverkehr; das ist materiell, auch wenn die Störung offenbar begrenzt blieb.",
+      "topic": [
+        "Gesellschaft",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Reisende und Beschäftigte am Flughafen; die Störung war kurzfristig, aber unmittelbar in einem wichtigen Verkehrsknoten spürbar."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus den Quellen ergibt sich kein eigenständiger Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Es geht um einen Sicherheits- und Betriebsvorfall, nicht um demokratische Verfahren oder Regeln."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Terminalsperrung",
+            "value": "1",
+            "unit": "Terminal",
+            "context": "betroffenes Terminal, das geräumt wurde"
+          }
+        ],
+        "affected_groups": [
+          "verbraucherinnen",
+          "beschaeftigte",
+          "unternehmen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "first_seen": "2026-09-04T05:44:22.000Z",
+      "last_updated": "2026-09-04T06:37:20.682Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-993d57cff20b05016759",
+      "source_published_at": "2026-09-04T05:44:22.000Z",
+      "published_at": "2026-09-04T06:37:20.682Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication"
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Untersuchung des gemeldeten Stoffes neue Details ergibt.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Behörden- oder Flughafenangaben zu Art, Ergebnis und Ursache der Meldung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-160ba57b85cf83d5",
+          "announced_at": "2026-09-04T06:35:39.000Z",
+          "follow_up_date": "2026-09-11T06:37:20.682Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:44:22.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:45:34.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:35:39.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-2ae8fdd95aa5c1fa",
       "title_image": {
@@ -4247,75 +4491,6 @@
       ]
     },
     {
-      "story_id": "wt-63b6c057c20a2143",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-1a21963bf9e07ba6-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-1a21963bf9e07ba6-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-1a21963bf9e07ba6-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
-      "title": "KI-Sicherheitsinstitut eröffnet",
-      "source_summary": "Die Bundesregierung meldet die Eröffnung des AI Safety and Security Institute Deutschland, kurz AISI Deutschland. Das nationale Kompetenz- und Evaluierungsinstitut wurde vom Nationalen Sicherheitsrat beschlossen und wird gemeinsam vom Bundesdigitalministerium und vom Bundesinnenministerium aufgebaut und geleitet. Es ist nach der Darstellung keine Regulierungsbehörde, sondern ein analytisch-operatives Kompetenzzentrum.\n\nAISI Deutschland soll moderne KI-Modelle, Cybersicherheit und mögliche technische Risiken untersuchen, vorhandene Analysekapazitäten bündeln und Lösungen für den sicheren Umgang mit KI-Systemen entwickeln. Vorgesehen ist Beratung für Bundesregierung, Verwaltung, Wirtschaft und Zivilgesellschaft. Außerdem soll das Institut mit vergleichbaren Einrichtungen im Ausland Informationen austauschen und auf gemeinsame internationale Standards hinwirken. Zur Eröffnung betonten die Minister Karsten Wildberger und Alexander Dobrindt die schnelle technische Bewertung von KI-Systemen und die internationale Zusammenarbeit. Konkrete Angaben zu Personal, Budget oder einem Zeitplan nennt der Artikel nicht.",
-      "summary": "Deutschland hat ein KI-Sicherheitsinstitut eröffnet. Das ist als neue Sicherheitsinfrastruktur materiell, Wirkungen sind aber noch nicht eingetreten belegt.",
-      "detail_summary": "Fakt ist die Eröffnung von AISI Deutschland. Der Claim nennt Cyberattacken, komplexe KI-Modelle und digitale Anwendungen als Problemkontext. Der Wirkpfad liegt in Prüfung, Risikowissen und institutioneller Sicherheitsfähigkeit. Materiell sind Systemrelevanz, mögliche Kaskaden und demokratische Korrekturfähigkeit. Konkrete Ergebnisse, Standards oder Risikoabsenkungen sind noch offen.",
-      "why_relevant": "KI-Sicherheit betrifft digitale Infrastruktur, Schutzfähigkeit und mögliche Kaskadenrisiken für viele gesellschaftliche Bereiche.",
-      "topic": [
-        "Digitalisierung",
-        "KI",
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Sicherere KI-Anwendungen können Menschen indirekt vor digitalen Schäden schützen; konkrete Schutzwirkung ist offen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Der Claim enthält keinen belastbaren Umwelt- oder Ressourcenpfad."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "KI-Sicherheit kann öffentliche Kontrolle, Verantwortlichkeit und Schutz vor digitalen Angriffen stärken."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-08-31T17:00:00.000Z",
-      "last_updated": "2026-09-03T10:52:37.099Z",
-      "version": 1,
-      "news_status": null,
-      "event_id": null,
-      "source_published_at": "2026-08-31T17:00:00.000Z",
-      "published_at": "2026-09-03T10:52:37.099Z",
-      "evidence_groups": null,
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
-          "source_type": "official_rss",
-          "published_at": "2026-08-31T17:00:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
       "story_id": "wt-b2161abe6d0a2603",
       "title_image": {
         "mode": "impact_card",
@@ -4380,73 +4555,6 @@
           "url": "https://www.bundesregierung.de/breg-de/aktuelles/neues-foerderprogramm-mit-zehn-millionen-euro-fuer-projekte-in-ns-und-sed-gedenkstaetten-staatsminister-weimer-gerade-jetzt-orte-der-erinnerung-staerken--2451324",
           "source_type": "official_rss",
           "published_at": "2026-09-03T07:06:42.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-a48a6799c362009d",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a48a6799c362009d-15e5cd8d7aeb49d6-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a48a6799c362009d-15e5cd8d7aeb49d6-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a48a6799c362009d-15e5cd8d7aeb49d6-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "erkennung-und-behandlung-von-sepsis-thematisiert-62009d",
-      "title": "Erkennung und Behandlung von Sepsis thematisiert",
-      "source_summary": "Die Fraktion Bündnis 90/Die Grünen hat im Deutschen Bundestag eine Kleine Anfrage zur Erkennung und Behandlung von Sepsis in Deutschland gestellt. In der Anfrage wird Sepsis als lebensbedrohliche Fehlregulation der Immunantwort auf eine Infektion beschrieben, die unbehandelt zu Organversagen und Tod führen kann.\n\nDie Abgeordneten fragen die Bundesregierung, ob sie Verbesserungsmöglichkeiten bei Erkennung und Versorgung von Sepsis sieht. Außerdem verlangen sie Auskunft über Forschungsmittel, die in den vergangenen zehn Jahren für die Sepsisforschung bereitgestellt wurden. Weitere Fragen betreffen Erkenntnisse zu Behandlungsfehlern und deren Nutzung für konkrete Maßnahmen zur Patientensicherheit. Die Bundestagsmeldung gibt den Inhalt der Anfrage wieder; eine Antwort der Bundesregierung, neue Versorgungsdaten oder bereits beschlossene Maßnahmen enthält sie noch nicht.",
-      "summary": "Eine Kleine Anfrage thematisiert Erkennung und Behandlung von Sepsis in Deutschland. Das ist politisch und gesundheitlich relevant, belegt aber noch keine Maßnahme oder Wirkung.",
-      "detail_summary": "Fakt ist: Eine Bundestagsmeldung berichtet über eine Kleine Anfrage zur Sepsis-Erkennung und -Behandlung. Beobachtung ist parlamentarische Befassung, nicht ein Beschluss. Der mögliche Wirkungspfad führt über Transparenz, Antwort der Regierung, Problemdefinition und spätere Maßnahmen. Eingetretene Versorgungswirkungen sind nicht belegt. Die Analyse ist daher eine vorsichtige Ex-ante-Einordnung.",
-      "why_relevant": "Sepsis-Erkennung und -Behandlung betreffen potenziell Gesundheit, Versorgungssicherheit und staatliche Rechenschaft.",
-      "topic": [
-        "Gesundheit"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Der Themenbereich kann Patientensicherheit und Behandlungspfade betreffen; konkrete Verbesserungen sind nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Aus dem Claim ergibt sich kein materieller Umwelt- oder Ressourcenpfad."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Eine Kleine Anfrage kann parlamentarische Kontrolle und öffentliche Transparenz stärken; Folgen bleiben offen."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-02T13:20:00.000Z",
-      "last_updated": "2026-09-03T07:58:18.398Z",
-      "version": 1,
-      "news_status": null,
-      "event_id": null,
-      "source_published_at": "2026-09-02T13:20:00.000Z",
-      "published_at": "2026-09-03T07:58:18.398Z",
-      "evidence_groups": null,
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
-          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209824",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T13:20:00.000Z",
           "primary_source": true
         }
       ]
@@ -4522,75 +4630,6 @@
       ]
     },
     {
-      "story_id": "wt-0e1ab5081b9f4045",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0e1ab5081b9f4045-9e9963ac7c808a3b-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0e1ab5081b9f4045-9e9963ac7c808a3b-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0e1ab5081b9f4045-9e9963ac7c808a3b-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "mfi-zinsstatistik-fur-den-euroraum-juli-2026-9f4045",
-      "title": "MFI-Zinsstatistik für den Euroraum: Juli 2026",
-      "source_summary": "Die Veröffentlichung der Deutschen Bundesbank verweist auf die MFI-Zinsstatistik der Europäischen Zentralbank für Juli 2026. Im verfügbaren Kurztext werden zwei gewichtete Indikatoren für neue Kreditgeschäfte im Euroraum genannt. Der Indikator der Finanzierungskosten für neue Unternehmenskredite lag bei 3,80 Prozent. Für neue Wohnungsbaukredite an private Haushalte weist die Meldung einen entsprechenden Wert von 3,54 Prozent aus.\n\nBeide Werte waren nach Angaben der Quelle gegenüber dem vorherigen Stand weitgehend unverändert. Die Meldung beschreibt damit die Kosten neuer Bankkredite in den beiden genannten Segmenten, nicht den gesamten Bestand bereits laufender Darlehen. Weitere Einzelheiten stehen in einer verlinkten EZB-Veröffentlichung als PDF. Der auf der Bundesbank-Seite verfügbare Kurztext nennt keine Ursachen für die Entwicklung und enthält dort auch keine weitergehende Bewertung des längerfristigen Trends.",
-      "summary": "Die MFI-Zinsdaten zeigen für Juli 2026 weitgehend stabile Finanzierungskosten. Eine Wirkung ist daraus nicht belegt, aber der Finanzierungsrahmen bleibt beobachtungsrelevant.",
-      "detail_summary": "Fakt ist: Die genannten Indikatoren lagen bei 3,80 % für neue Unternehmenskredite und 3,54 % für neue Wohnungsbaukredite. Beobachtung ist eine weitgehende Unveränderung. Der mögliche Wirkungspfad läuft über Kreditkosten, Investitionen, Wohnfinanzierung und Nachfrage. Eingetretene Wirkungen auf Menschen, Planet oder Demokratie sind damit nicht belegt. Die Einordnung bleibt Monitoring mit klarer Evidenzgrenze.",
-      "why_relevant": "Kreditkosten können Investitions- und Wohnentscheidungen beeinflussen und damit Verteilung, Resilienz und Realwirtschaft berühren.",
-      "topic": [
-        "Europa",
-        "Finanzen",
-        "Wirtschaft"
-      ],
-      "status": "erste Daten",
-      "analysis_type": "monitoring",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Wohn- und Unternehmenskredite können Haushalte, Beschäftigung und finanzielle Belastung berühren; konkrete Zustandsänderungen sind nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein indirekter Bezug zu Investitionen ist möglich, aber aus dem Claim nicht sektoral oder ökologisch belegbar."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Die Statistik erhöht Transparenz, enthält aber keinen direkten demokratischen Steuerungs- oder Teilhabebeleg."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-02T08:00:00.000Z",
-      "last_updated": "2026-09-03T07:58:18.398Z",
-      "version": 1,
-      "news_status": null,
-      "event_id": null,
-      "source_published_at": "2026-09-02T08:00:00.000Z",
-      "published_at": "2026-09-03T07:58:18.398Z",
-      "evidence_groups": null,
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutsche Bundesbank",
-          "url": "https://www.bundesbank.de/de/presse/pressemitteilungen/ezb/mfi-zinsstatistik-fuer-den-euroraum-juli-2026-1007288",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T08:00:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
       "story_id": "wt-9e4c93f4907aaa42",
       "title_image": {
         "mode": "editorial",
@@ -4656,73 +4695,6 @@
           "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-windenergie-auf-see-gesetz-2451190",
           "source_type": "official_rss",
           "published_at": "2026-09-02T07:44:36.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-ab0d79d228a04a51",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ab0d79d228a04a51-ee48a914d6b80780-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ab0d79d228a04a51-ee48a914d6b80780-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ab0d79d228a04a51-ee48a914d6b80780-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "504-26-verordnung-zur-beschleunigung-der-anerkennungsverfahren-auslandischer-berufsquali-a04a51",
-      "title": "504/26 | Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen | 2. September 2026",
-      "source_summary": "Der Bundesrat führt unter der Nummer 504/26 einen Beratungsvorgang mit dem Titel „Verordnung zur Beschleunigung der Anerkennungsverfahren ausländischer Berufsqualifikationen in Heilberufen“. Der Eintrag ist auf den 3. September 2026 datiert. Als federführend ist der Ausschuss mit dem Kürzel G genannt; zusätzlich weist die Seite die Kürzel AIS, Fz und K für weitere beteiligte Ausschüsse aus.\n\nDie Originalseite kündigt an, dass die Drucksachen zu diesem Vorgang noch nicht vorliegen und in Kürze veröffentlicht werden sollen. Damit dokumentiert sie bislang den Eingang und die Ausschusszuweisung der Verordnung, aber noch keine Beratungsergebnisse oder Entscheidung des Bundesrates. Auch konkrete Änderungen an Anerkennungsverfahren, betroffene Heilberufe, Fristen und Zuständigkeiten lassen sich dem derzeit veröffentlichten Eintrag noch nicht entnehmen. Diese Punkte bleiben bis zur Bereitstellung der angekündigten Drucksachen offen.",
-      "summary": "Ein Bundesrat-Vorgang zur Beschleunigung der Anerkennung ausländischer Berufsqualifikationen in Heilberufen ist belegt. Inhalt, Betroffene und konkrete Verfahrensänderungen bleiben im Feed offen.",
-      "detail_summary": null,
-      "why_relevant": "Heilberufe betreffen Versorgung, Fachkräftezugang und Verwaltungsgerechtigkeit.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliches Potenzial für schnelleren Berufszugang und Versorgung; konkrete Wirkung ist nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Kein direkter Umweltpfad aus den gelieferten Daten erkennbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Anerkennungsregeln berühren Verfahrenstransparenz und gleiche Teilhabe am Arbeitsmarkt."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-02T22:01:00.000Z",
-      "last_updated": "2026-09-03T07:49:38.699Z",
-      "version": 1,
-      "news_status": null,
-      "event_id": null,
-      "source_published_at": "2026-09-02T22:01:00.000Z",
-      "published_at": "2026-09-03T07:49:38.699Z",
-      "evidence_groups": null,
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Bundesrat – Mitteilungen",
-          "url": "https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2026/0501-0600/0504-26.html",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T22:01:00.000Z",
           "primary_source": true
         }
       ]
