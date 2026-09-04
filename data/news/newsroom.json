@@ -210233,7 +210233,256 @@
       "story_id": "wt-a840cc8db943b070",
       "decision": "input_size_hold",
       "reason": "AI_INPUT_TOO_LARGE"
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-aa375d0045cfb9322f87",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-7ec2c017a36e31ab57dd",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-19e58c4d55f01726a97a",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-b3f9d3105694862a32f5",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-4fb94d2cebfca746",
+      "decision": "unchanged_review_reused",
+      "checked_at": "2026-09-04T16:21:44.537Z"
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-a840cc8db943b070",
+      "decision": "unchanged_review_reused",
+      "checked_at": "2026-09-04T17:21:09.783Z"
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-12a75e1a8e63deaa",
+      "event_id": "event-5af2c4bd0487548d3bd6",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Meldung liefert eine neue, materiell relevante Entwicklung zu einem Angriff auf öffentliche Verwaltungsnetze und möglicher Offenlegung sensibler Daten."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-1fbb056ccaaf351d",
+      "event_id": "event-35d991525796ba55dcd9",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte DLF-Meldung wiederholt nur den bereits erfassten Kern: Fahndung nach einem Verdächtigen aus Gevelsberg und Authentizität der Bekennerschreiben; keine substanziell neue, materielle Entwicklung belegt."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-7122b10e5711a154",
+      "event_id": "event-39a76d34400c9aa5a56b",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Der Ministervorstoß ist neu, betrifft eine potenziell systemrelevante KI-Governance-Frage und ist mit O-Ton/Einordnung in der Quelle belegt."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-d4ea36d47045ac56",
+      "event_id": "event-90b12381b9937fff51f6",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur sekundäre Kurzfassungen ohne unabhängige Bestätigung; zentrale Details zum erneuten Angriff und zum Bekennerbrief bleiben in den gelieferten Belegen unzureichend belegt."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-bef99e4e82075a46",
+      "event_id": "event-335a1227dc67d0a2b093",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen sind überwiegend Überblicks- und Erklärstücke zu kritischer Infrastruktur ohne klar neue Entscheidung, Daten oder konkrete Entwicklung."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-76dd7f8508f81c11",
+      "event_id": "event-e9bf40aa8c08b1faf8ec",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Der Text beschreibt eine neue prozessuale Entwicklung mit möglicher Verfahrensblockade; die Evidenz ist aber nur aus einer Publisher-Linie belegt."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-aaa7e98d9c993988",
+      "event_id": "event-5f3d82645fd193edc18e",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
+      ],
+      "rationale": "Neue Meldung zu Sabotageverdacht an kritischer Infrastruktur mit laufender Fahndung; materiell wegen möglicher Sicherheits- und Versorgungseffekte, aber nur sekundär belegt."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-100a725dc688d970",
+      "event_id": "event-5bc6f6cd877cbb8442a8",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine sekundäre Quelle ohne Originalbeleg oder unabhängige Bestätigung; Umfang und Inhalt der angeblich veröffentlichten Daten bleiben unverifiziert."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-5072789df611867b",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Quellen berichten vor allem über Umfragen, Wahlkampfstimmungen und Parteipositionen vor der Landtagswahl; eine materielle Zustandsänderung oder belastbare neue Entscheidung ist nicht belegt."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-a5874ae28ed5533f",
+      "event_id": "event-53de10df4f68e93ec96a",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Es handelt sich um eine neue operative Entwicklung in einem Sabotagefall mit Bezug zu kritischer Infrastruktur; die Beleglage ist vorläufig und nur einseitig, aber für eine Erstmeldung hinreichend."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-21ad99e66ca278d1",
+      "event_id": "event-11c1f56119047abc36e7",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen wiederholen nur den bereits zuvor gemeldeten Hackerangriff und die Veröffentlichung der Daten; es fehlt eine neue materielle Entwicklung."
+    },
+    {
+      "at": "2026-09-04T17:34:55.826Z",
+      "story_id": "wt-cc2357f8b9e34cc6",
+      "event_id": "event-085967a1ab5844d1292a",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Es liegt nur eine einzelne sekundäre Teaserquelle ohne Originalbeleg oder unabhängige Bestätigung vor; der konkrete Vorgang bleibt zu unsicher."
     }
   ],
-  "updated_at": "2026-09-04T17:21:09.783Z"
+  "updated_at": "2026-09-04T17:34:55.826Z"
 }

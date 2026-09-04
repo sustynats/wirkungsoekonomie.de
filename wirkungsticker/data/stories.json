@@ -1,7 +1,410 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T16:21:44.537Z",
+  "updated_at": "2026-09-04T17:34:55.826Z",
   "stories": [
+    {
+      "story_id": "wt-a5874ae28ed5533f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-7383172017378959-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-e4f6f9e1b6fc97fa-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a5874ae28ed5533f-11c6e2cf82122735-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
+      "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+      "source_summary": "Nach dem Sabotageversuch an einem Umspannwerk in Dormagen meldet der WDR einen SEK-Einsatz beim Hambacher Forst. Im Ticker heißt es, das Spezialeinsatzkommando sei in der Nähe eines auffälligen Lasters vorgegangen; der gesuchte Tatverdächtige sei dort nicht im Fahrzeug gewesen. Später werde das Fahrzeug durchsucht, außerdem werde im angrenzenden Wald mit Spürhund gesucht.\n\nDer WDR berichtet zudem von einer Pressekonferenz in Düsseldorf mit Bundesinnenminister Alexander Dobrindt und NRW-Innenminister Herbert Reul. Dobrindt sprach dort von einer „hohen Bedrohungslage“. Reul erklärte, es sei unklar, ob der Mann allein oder gemeinsam mit anderen gehandelt habe; geprüft werde auch ein möglicher Zusammenhang mit einem Vorfall in Brandenburg.",
+      "summary": "Der WDR meldet einen SEK-Einsatz nahe dem Hambacher Forst nach dem Sabotageversuch in Dormagen. Der gesuchte Tatverdächtige wurde dort zunächst nicht in dem Fahrzeug angetroffen.",
+      "detail_summary": "Gesichert aus der Quelle ist vor allem, dass die Ermittlungen zu den mutmaßlichen Sabotagefällen in eine laufende Polizeilage übergegangen sind. Der WDR berichtet von einem SEK-Zugriff in der Nähe des Hambacher Forsts, bei dem der gesuchte Mann zunächst nicht im Fahrzeug war. Parallel dazu fand in Düsseldorf eine Pressekonferenz mit Dobrindt und Reul statt. Für die öffentliche Bewertung ist das relevant, weil es um mögliche Angriffe auf kritische Energieinfrastruktur und um den Zugriff staatlicher Sicherheitsorgane geht. Ein möglicher Wirkpfad liegt in erhöhtem Schutz, intensiveren Ermittlungen und möglichen Folgemaßnahmen für Betreiber und Behörden. Offen bleibt aber, ob der Verdächtige tatsächlich gefasst wird, ob es weitere Beteiligte gibt und wie tragfähig die Zuordnung der Taten ist.",
+      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitsbehörden und mögliche weitere Ermittlungs- oder Schutzmaßnahmen. Damit sind potenzielle Folgen für Versorgungssicherheit und staatliche Reaktionsfähigkeit berührt.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Es geht um mögliche Gefahren für Menschen im Umfeld kritischer Infrastruktur und um staatliche Schutzmaßnahmen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umwelt- oder Klimabezug ist in der Quelle nicht belegt; betroffen ist eher die Energieinfrastruktur."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Lage betrifft Sicherheitsbehörden, Ermittlungen und den Schutz kritischer Infrastruktur, also staatliche Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T16:15:33.000Z",
+      "last_updated": "2026-09-04T17:37:24.324Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-53de10df4f68e93ec96a",
+      "source_published_at": "2026-09-04T16:15:33.000Z",
+      "published_at": "2026-09-04T17:37:24.324Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten",
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "wdr-nachrichten",
+              "wdr-nachrichten"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei den gesuchten Mann noch festnimmt oder identifiziert.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue amtliche oder belastbar bestätigte Festnahme- oder Fahndungsmeldung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c8043e94464f5d27",
+          "announced_at": "2026-09-04T16:15:33.000Z",
+          "follow_up_date": "2026-09-11T17:37:24.324Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:15:33.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:14:36.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-76dd7f8508f81c11",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-76dd7f8508f81c11-9a49a94ce86d6868-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-76dd7f8508f81c11-1dc0b09627d2cc29-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-76dd7f8508f81c11-f576c5b4d5f0d598-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "us-prozess-wegen-kindstotungen-verteidigung-wirft-geschworenem-blockade-von-urteil-vor-f81c11",
+      "title": "US-Prozess wegen Kindstötungen: Verteidigung wirft Geschworenem Blockade von Urteil vor",
+      "source_summary": "In dem Prozess gegen Lindsay Clancy in Plymouth, Massachusetts, berichten die vorliegenden stern-Texte übereinstimmend von einer festgefahrenen Jury. Nach sieben Tagen Beratungen habe sich die Geschworenenrunde nicht auf die Schuldfähigkeit der 36-Jährigen einigen können; ein Mitglied stimme weiterhin nicht mit den elf anderen überein. Die Verteidigung habe deshalb beantragt, dieses Jury-Mitglied auszuschließen.\n\nAls Begründung verweist die Verteidigung darauf, die Person ignoriere die richterlichen Anweisungen zum „berechtigten Zweifel“ an der Schuldfähigkeit. In einem der Texte heißt es außerdem, der Prozess drohe deshalb zu platzen. Ein weiterer Hintergrund aus dem Text ist der Vorwurf der Verteidigung, Clancy habe zum Tatzeitpunkt unter einer Wochenbettpsychose gelitten.",
+      "summary": "Die Jury im Prozess gegen Lindsay Clancy ist nach sieben Tagen weiter uneins. Die Verteidigung versucht, ein abweichendes Geschworenenmitglied auszuschließen.",
+      "detail_summary": "Gesichert ist nach den vorliegenden Texten, dass sich die Geschworenen im Prozess gegen Lindsay Clancy in Plymouth, Massachusetts, nach sieben Tagen Beratung nicht auf ihre Schuldfähigkeit einigen konnten. Die Verteidigung beantragte deshalb, ein Jury-Mitglied auszuschließen, weil dieses angeblich die Anweisungen des Richters zum „berechtigten Zweifel“ ignoriere. Der Vorgang ist prozessual relevant, weil eine festgefahrene Jury das Verfahren verzögern oder scheitern lassen kann. Als mögliche Folge steht damit ein Abbruch oder eine erneute Verhandlung im Raum; das wird in den Quellen aber nicht abschließend entschieden. Die Beleglage bleibt journalistisch begrenzt, weil nur stern-Texte vorliegen und die Angaben aus einer Sekundärquelle stammen.",
+      "why_relevant": "Der Vorgang betrifft ein laufendes Strafverfahren mit möglicher Entscheidungssperre der Jury und damit einen materiellen Zustandswechsel im Verfahren.",
+      "topic": [
+        "Geopolitik",
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Angeklagte, Geschworene und das Strafverfahren; direkte gesellschaftliche Breite bleibt aber begrenzt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt Funktionsfähigkeit und Entscheidungslogik eines Juryverfahrens."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T03:37:34.000Z",
+      "last_updated": "2026-09-04T17:36:18.898Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e9bf40aa8c08b1faf8ec",
+      "source_published_at": "2026-09-04T03:37:34.000Z",
+      "published_at": "2026-09-04T17:36:18.898Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "stern-schlagzeilen",
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher"
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-prozess-wegen-kindstoetungen--verteidigung-wirft-geschworenem-blockade-von-urteil-vor-38205910.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T03:37:34.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/uneinige-geschworene--us-prozess-gegen-lindsay-clancy-wegen-kindstoetungen-droht-zu-platzen-38205910.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T10:31:19.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/jury-uneins--us-prozess-gegen-lindsay-clancy-wegen-kindstoetungen-vor-dem-platzen-38205910.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:11:51.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-7122b10e5711a154",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-59b9792b4be217df-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-79ad77b6f2815da1-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-8406f9f7742611aa-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "braucht-ki-eine-internationale-aufsichtsbehorde-11a154",
+      "title": "Braucht KI eine internationale Aufsichtsbehörde?",
+      "source_summary": "Digitalminister Karsten Wildberger bringt nach Darstellung der Quelle eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle ins Gespräch. Die Idee soll sich an der Internationalen Atomenergiebehörde IAEA orientieren. Genannt werden gemeinsame Sicherheitsstandards, Testvorgaben und eine Meldepflicht bei schweren Vorfällen. Wildberger denkt dabei ausdrücklich an Zusammenarbeit mit den großen KI-Akteuren China und USA.\n\nDie Quelle ordnet den Vorschlag mit mehreren Fachstimmen ein. Ein Rechtswissenschaftler betont, eine solche Institution hätte in der Regel keine unmittelbar durchsetzbaren Befugnisse und wäre auf Kooperation angewiesen. Ein weiterer Experte hält internationale Zusammenarbeit für möglich, warnt aber vor bloßen „Papiertigern“ und verweist darauf, dass verbindliche Regulierung zunächst bei Staaten und EU liege. Zugleich heißt es, es gebe keinen einheitlichen KI-Rechtsrahmen.",
+      "summary": "Wildberger bringt eine internationale KI-Aufsicht nach IAEA-Vorbild ins Gespräch. Die Quelle nennt zugleich offene Fragen zu Befugnissen und Durchsetzung.",
+      "detail_summary": "Gesichert ist vor allem der Vorstoß selbst: Nach der Quelle fordert Wildberger eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle und denkt an Sicherheitsstandards, Testvorgaben und Meldepflichten. Das ist politisch relevant, weil solche Regeln Investitionen, Haftungsfragen und internationale Abstimmung beeinflussen könnten. Der Wirkpfad wäre eine koordinierte Kontrolle von Hochrisiko-KI über staatliche und unternehmensbezogene Melde- und Prüfprozesse. Kurzfristig könnte das den Druck auf Anbieter erhöhen, Transparenz und Sicherheitsverfahren auszubauen; zugleich bleibt offen, ob daraus tatsächlich verbindliche Regeln werden. Die Evidenz reicht für eine Erstmeldung zum Vorschlag, nicht für eine belastbare Aussage über spätere Umsetzung oder Wirkung.",
+      "why_relevant": "Der Vorstoß betrifft mögliche neue Regeln für ein strategisch wichtiges Technologiefeld mit Folgen für Unternehmen, Staaten und Sicherheitsarchitektur.",
+      "topic": [
+        "Digitalisierung",
+        "KI"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen für Sicherheit, Haftung, Transparenz und Nutzung leistungsfähiger KI-Systeme."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Internationale Regeln für KI berühren Aufsicht, Zuständigkeiten und staatliche Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T15:54:00.000Z",
+      "last_updated": "2026-09-04T17:35:53.642Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-39a76d34400c9aa5a56b",
+      "source_published_at": "2026-09-04T15:54:00.000Z",
+      "published_at": "2026-09-04T16:08:20.425Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wann die Bundesregierung aus dem Vorstoß konkrete internationale Verhandlungen oder einen Vorschlag ableitet.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Kabinetts-, Ministeriums- oder UN-/EU-Schritte zu KI-Aufsicht",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-899b31d44a02b221",
+          "announced_at": "2026-09-04T15:54:00.000Z",
+          "follow_up_date": "2026-09-11T16:08:20.425Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ki-modelle-kontrolle-karsten-wildberger-aufsichtsbehoerde-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:54:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-12a75e1a8e63deaa",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-a443b089c7ddd307-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-18ba7109302575b6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-2eba79c5deacf6f2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "cyberkriminalitat-hacker-veroffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-dark-63deaa",
+      "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
+      "source_summary": "Der Bericht meldet einen Hackerangriff auf die Berliner Senatsverwaltung und ordnet die Veröffentlichung gestohlener Daten im Darknet der Gruppe Rhysida zu. Genannt werden rund 1,4 Millionen Daten, die dort bereitgestellt worden sein sollen.\n\nIm weiteren Text heißt es, unter den abrufbaren Daten befänden sich laut Tagesspiegel auch sicherheitsrelevante Informationen. Außerdem wird berichtet, die Täter hätten fünf Tage im August unbemerkt Zugriff gehabt, ein Lösegeld von rund zwei Millionen Euro gefordert und das Ultimatum habe am Nachmittag geendet.",
+      "summary": "Nach einem Hackerangriff auf Berliner Verwaltungsnetze sollen Daten im Darknet veröffentlicht worden sein. Der Bericht nennt Rhysida, rund 1,4 Millionen Dateien und ein ausgelaufenes Erpressungsultimatum.",
+      "detail_summary": "Gesichert aus der vorliegenden Meldung ist vor allem, dass nach dem Angriff auf Berliner Verwaltungsnetze Daten im Darknet aufgetaucht sein sollen. Der Bericht schreibt die Veröffentlichung der Gruppe Rhysida zu und nennt als Größenordnung rund 1,4 Millionen Daten. Zusätzlich verweist er auf Hinweise, dass darunter sicherheitsrelevante Unterlagen sein könnten. Das ist für die Verwaltung und potenziell für Schutz- und Sicherheitsstrukturen relevant, weil es um Zugriff auf sensible Informationsbestände geht. Ein möglicher Wirkpfad reicht von Offenlegung über Nachsorge- und Sicherungsaufwand bis zu Folgerisiken für betroffene Stellen; belastbar belegt sind diese Folgen hier aber noch nicht. Offene Grenze bleibt, welche Daten tatsächlich geprüft sind, wie sensibel sie sind und ob der Umfang unabhängig bestätigt werden kann.",
+      "why_relevant": "Die Meldung betrifft einen möglichen Abfluss und eine Veröffentlichung sensibler Verwaltungsdaten mit möglicher Bedeutung für Sicherheit, Verwaltungsbetrieb und Informationsschutz.",
+      "topic": [
+        "Energie",
+        "Digitalisierung",
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Betroffenheit von Verwaltungsdaten, Erpressungsdruck und Folgesicherungen; konkrete Personenschäden sind nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug aus den vorliegenden Quellen erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind öffentliche Verwaltungsnetze und potenziell sicherheitsrelevante Informationen; das kann Vertrauens- und Schutzstrukturen berühren."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T16:14:15.000Z",
+      "last_updated": "2026-09-04T17:35:19.832Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-5af2c4bd0487548d3bd6",
+      "source_published_at": "2026-09-04T16:14:15.000Z",
+      "published_at": "2026-09-04T16:22:44.606Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten",
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:14:15.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:11:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-0b6279d05f195d31",
       "title_image": {
@@ -116,85 +519,6 @@
       ]
     },
     {
-      "story_id": "wt-12a75e1a8e63deaa",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-a443b089c7ddd307-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-18ba7109302575b6-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12a75e1a8e63deaa-2eba79c5deacf6f2-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "cyberkriminalitat-hacker-veroffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-dark-63deaa",
-      "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
-      "source_summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Deutschlandfunk berichtet unter Berufung auf mehrere Medien, die Hackergruppe Rhysida habe rund 1,4 Millionen Daten im Darknet bereitgestellt.\n\nLaut dem Bericht soll es darunter auch Informationen geben, die für die Sicherheit Berlins und Deutschlands relevant sind, etwa zu Zivilschutz und besonders zu schützenden Objekten. Genannt werden außerdem geheime Dokumente zu Rüstungsunternehmen, ein behaupteter unbemerkter Zugriff auf Berliner Verwaltungsnetze im August, eine Lösegeldforderung von rund zwei Millionen Euro und ein ausgelaufenes Ultimatum.",
-      "summary": "Nach einem Hackerangriff auf Berliner Verwaltungsnetze sollen Daten im Darknet veröffentlicht worden sein. Im Bericht ist außerdem von sensiblen Unterlagen, einer Lösegeldforderung und einem ausgelaufenen Ultimatum die Rede.",
-      "detail_summary": "Gesichert ist nach der vorliegenden Meldung, dass nach einem Angriff auf Berliner Verwaltungsnetze Daten im Darknet veröffentlicht worden sein sollen; der Bericht nennt dafür die Gruppe Rhysida und rund 1,4 Millionen Daten. Relevanz entsteht vor allem, weil unter den abrufbaren Informationen auch sicherheitsrelevante Angaben zu Zivilschutz, Schutzobjekten und Rüstungsunternehmen genannt werden. Der Wirkpfad liegt weniger in der reinen Reichweite als in möglichen Folgeeffekten auf Schutz, Geheimhaltung und Erpressbarkeit öffentlicher Infrastruktur. Mögliche Folgen sind zusätzliche Sicherheitsprüfungen, organisatorische Nachbesserungen und ein erhöhtes Risiko für nachgelagerte Angriffe. Offen bleibt jedoch, welcher Teil der Daten tatsächlich verifiziert ist und wie groß der sensible Anteil ist; dafür liefert die Quelle nur einen begrenzten, sekundären Befund.",
-      "why_relevant": "Die Meldung betrifft potenziell sicherheitsrelevante Verwaltungsdaten und damit Informationsgrundlagen, Schutzmaßnahmen und die Resilienz staatlicher Infrastruktur.",
-      "topic": [
-        "Energie",
-        "Digitalisierung",
-        "Geopolitik",
-        "Demokratie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Mögliche Folgen betreffen öffentliche Verwaltung, Schutzinfrastruktur und indirekt Bürgerinnen und Bürger über Sicherheits- und Vertrauensfragen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Planet-Bezug ist aus der Quelle nicht erkennbar."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Ein Angriff auf Landesnetze und die Veröffentlichung sensibler Verwaltungsdaten berührt staatliche Funktionsfähigkeit und demokratische Korrekturfähigkeit."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T16:14:15.000Z",
-      "last_updated": "2026-09-04T16:22:44.606Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-5af2c4bd0487548d3bd6",
-      "source_published_at": "2026-09-04T16:14:15.000Z",
-      "published_at": "2026-09-04T16:22:44.606Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T16:14:15.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-cb1584ee4d9e6a43",
       "title_image": {
         "mode": "editorial",
@@ -297,95 +621,6 @@
           "url": "https://www.stern.de/news/stromversorgung--reul--polizei-stuermt-fahrzeug-von-sabotage-verdaechtigem-38210002.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T15:55:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7122b10e5711a154",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-ce0c434198c639cd-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-26c7dca55074c3f2-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-f29f2779b83e8df8-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "braucht-ki-eine-internationale-aufsichtsbehorde-11a154",
-      "title": "Braucht KI eine internationale Aufsichtsbehörde?",
-      "source_summary": "Die Quelle berichtet, dass Bundesdigitalminister Karsten Wildberger im Gespräch mit einem Portal eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle angeregt hat. Als Vorbild nennt er die Internationale Atomenergiebehörde. Genannt werden Sicherheitsstandards, Testvorgaben und eine Meldepflicht bei schweren Vorfällen als mögliche Aufgaben.\n\nDie Quelle ordnet den Vorschlag mit Einschätzungen von zwei Rechtswissenschaftlern ein. Ein Experte hält die Idee grundsätzlich für sinnvoll, verweist aber darauf, dass eine internationale Behörde keine eigenen Durchgriffsrechte hätte und auf Kooperation von Staaten und Unternehmen angewiesen wäre. Der andere betont, dass KI-Risiken anders als bei der Atomenergie vor allem über Sekundäreffekte, etwa in der IT-Sicherheit, entstehen. Offene Punkte sind der konkrete Zuschnitt, die Durchsetzbarkeit und die internationale Anschlussfähigkeit.",
-      "summary": "Wildberger schlägt eine internationale KI-Aufsicht nach IAEA-Vorbild vor. Die Quelle zeigt zugleich, dass Zuständigkeiten und Durchsetzung offen bleiben.",
-      "detail_summary": "Gesichert ist, dass Digitalminister Wildberger eine internationale Aufsichtsbehörde für besonders leistungsfähige KI-Modelle ins Gespräch bringt und dabei auf Sicherheitsstandards, Testvorgaben und eine Meldepflicht bei schweren Vorfällen zielt. Das ist relevant, weil damit die Debatte von allgemeiner Regulierung zu einer möglichen neuen internationalen Institution verschoben wird. Der Wirkpfad läge über gemeinsame Regeln, Vorabtests und Vorfallmeldungen, also über präzisere Steuerung und schnellere Reaktion auf Risiken. Mögliche Folgen wären strengere internationale Koordination, aber auch Konflikte über Zuständigkeit, Verbindlichkeit und die Rolle von USA, China und EU. Die Quelle stützt diesen Vorschlag jedoch nur als journalistisch wiedergegebene ministerielle Position und ergänzt ihn mit Experteneinschätzungen; ob daraus tatsächlich eine tragfähige Institution entsteht, bleibt offen.",
-      "why_relevant": "Der Vorstoß betrifft mögliche künftige Regeln für KI-Sicherheit, internationale Koordination und die Verteilung von Regulierungsmacht.",
-      "topic": [
-        "Digitalisierung",
-        "KI"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "KI-Regeln können Sicherheit, Arbeitsabläufe und Haftungsfragen für viele Nutzer und Anbieter beeinflussen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Bezug zu Umwelt- oder Klimawirkungen wird in der Quelle nicht hergestellt."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Die Frage berührt internationale Regelsetzung, staatliche Kontrolle und demokratische Korrekturfähigkeit bei Hochrisiko-KI."
-        }
-      },
-      "visuals": null,
-      "first_seen": "2026-09-04T15:54:00.000Z",
-      "last_updated": "2026-09-04T16:08:20.425Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-39a76d34400c9aa5a56b",
-      "source_published_at": "2026-09-04T15:54:00.000Z",
-      "published_at": "2026-09-04T16:08:20.425Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob und wann die Bundesregierung aus dem Vorstoß konkrete internationale Verhandlungen oder einen Vorschlag ableitet.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Offizielle Kabinetts-, Ministeriums- oder UN-/EU-Schritte zu KI-Aufsicht",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-899b31d44a02b221",
-          "announced_at": "2026-09-04T15:54:00.000Z",
-          "follow_up_date": "2026-09-11T16:08:20.425Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/ki-modelle-kontrolle-karsten-wildberger-aufsichtsbehoerde-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T15:54:00.000Z",
           "primary_source": false
         }
       ]
