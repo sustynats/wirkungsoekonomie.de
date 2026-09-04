@@ -1,7 +1,261 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T07:06:13.529Z",
+  "updated_at": "2026-09-04T07:36:19.931Z",
   "stories": [
+    {
+      "story_id": "wt-ef8a2f218302b98a",
+      "slug": "hausbrand-durch-explosion-brand-in-chemnitz-mieter-tatverdachtig-und-leicht-verletzt-02b98a",
+      "title": "Hausbrand durch Explosion: Brand in Chemnitz: Mieter tatverdächtig und leicht verletzt",
+      "first_seen": "2026-09-04T07:04:37.000Z",
+      "last_updated": "2026-09-04T07:04:37.000Z",
+      "topic": [
+        "Soziales",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen/hausbrand-durch-explosion--brand-in-chemnitz--mieter-tatverdaechtig-und-leicht-verletzt-38206040.html",
+          "title": "Hausbrand durch Explosion: Brand in Chemnitz: Mieter tatverdächtig und leicht verletzt",
+          "summary": "In einem Mehrfamilienhaus kommt es am späten Donnerstagabend durch eine Explosion zu einem Brand. Ein Mieter soll hinter der Tat stecken.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:04:37.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "98f777fd59752ffee83b924d268bf56707dcebbc62a2c5a065dc2a120f6c7def",
+          "source_item_id": "c0ee6be8973f95678e8eeeb6ce281eec614a7e03eedd13fb70100bd96434df85",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:04:37.000Z",
+          "ingested_at": "2026-09-04T07:21:13.294Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ef8a2f218302b98a-claim-01",
+          "story_id": "wt-ef8a2f218302b98a",
+          "claim": "Hausbrand durch Explosion: Brand in Chemnitz: Mieter tatverdächtig und leicht verletzt: In einem Mehrfamilienhaus kommt es am späten Donnerstagabend durch eine Explosion zu einem Brand. Ein Mieter soll hinter der Tat stecken.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T07:21:13.294Z"
+        }
+      ],
+      "content_hash": "1b541c10a1bee41863ac167a31699e3c87dcd58ea385d4d70d99f29f7163419d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T07:21:13.294Z",
+      "event_first_seen_at": "2026-09-04T07:21:13.294Z",
+      "event_detected_at": "2026-09-04T07:21:13.294Z",
+      "event_id": "event-5fc456a406ba75382ab5",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.6049,
+        "detection_delay_minutes": 16.6049,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T07:21:13.294Z",
+      "rejection": {
+        "at": "2026-09-04T07:21:13.294Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-06476c6e980f5f47",
+      "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+      "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+      "first_seen": "2026-09-04T07:02:30.000Z",
+      "last_updated": "2026-09-04T07:02:30.000Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
+          "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+          "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:02:30.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
+          "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:02:30.000Z",
+          "ingested_at": "2026-09-04T07:21:13.294Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-01",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“: Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-04T07:21:13.294Z"
+        }
+      ],
+      "content_hash": "ea8570be4c23bd79b87df82bbc3db8cd09f02af7f9e953f2337d561e130e8674",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-04T07:21:13.294Z",
+      "event_first_seen_at": "2026-09-04T07:21:13.294Z",
+      "event_detected_at": "2026-09-04T07:21:13.294Z",
+      "event_id": "event-d0ea56670f7c42bbc7a0",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.721566666666668,
+        "detection_delay_minutes": 18.721566666666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T07:21:13.294Z",
+      "rejection": {
+        "at": "2026-09-04T07:21:13.294Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-293fa4edfc2b5a5d",
       "slug": "joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-interview-m-2b5a5d",
@@ -4202,7 +4456,7 @@
       ],
       "retirement_history": [],
       "pending_update": {
-        "detected_at": "2026-09-04T07:18:42.389Z",
+        "detected_at": "2026-09-04T07:47:49.913Z",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -4497,21 +4751,21 @@
         ],
         "consolidations": [
           {
-            "at": "2026-09-04T07:18:42.389Z",
+            "at": "2026-09-04T07:47:49.913Z",
             "story_id": "wt-4855e13df47f18ed",
             "slug": "kritische-infrastruktur-offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormage-7f18ed",
             "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
             "reason": "specific_object_or_leading_document"
           },
           {
-            "at": "2026-09-04T07:18:42.389Z",
+            "at": "2026-09-04T07:47:49.913Z",
             "story_id": "wt-3a01df57b8cfe75f",
             "slug": "angriffe-auf-stromnetz-polizei-geht-von-sabotage-an-umspannwerk-in-dormagen-aus-cfe75f",
             "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
             "reason": "specific_object_or_leading_document"
           },
           {
-            "at": "2026-09-04T07:18:42.389Z",
+            "at": "2026-09-04T07:47:49.913Z",
             "story_id": "wt-7d3fabe103b78ce3",
             "slug": "angriffe-auf-stromnetz-verdachtiger-gegenstand-an-umspannwerk-in-dormagen-entdeckt-b78ce3",
             "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
@@ -7870,14 +8124,14 @@
           "source_id": "france24-en",
           "publisher": "France 24",
           "url": "https://www.france24.com/en/video/20260904-pragmatic-international-relations-s%C3%A1nchez-seeks-to-avoid-further-conflict-with-rabat",
-          "title": "'Pragmatic international relations: Sánchez seeks to avoid 'further conflict with Rabat'",
+          "title": "'Pragmatic international relations': Sánchez seeks to avoid 'further conflict with Rabat'",
           "summary": "Delano D'Souza is pleased to welcome Alana Moceri, International Relations Professor at IE School of Politics, Economics and Global Affairs. The migrant crossings at Ceuta have become both a domestic and international political lightning rod. At home, Pedro Sánchez faces opponents who can cast migration in existential terms, with Spain's far right amplifying the rhetoric of \"invasion.\" Internationally, the crisis exposes the geopolitical leverage inherent in control of the border. Ceuta thus emerges as more than a migration crisis: the border becomes at once an instrument of geopolitical leverage, a weapon in Spain's domestic political contest, and a battleground for competing narratives and disinformation.",
           "source_type": "media_rss",
           "published_at": "2026-09-04T05:22:52.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Geopolitik",
-          "content_hash": "ce0c4239818e7e5736a50de183bda2a513a218155cd81a09fd117dba3d7e24af",
+          "content_hash": "215e72a6cccfae41b84ce13b341762e045ed0b2fdb653b61d7744695c5b2c25c",
           "source_item_id": "c4a5b9cb15c4c5087dd6a642e6b1186d0eb4109031dbb431a5b1487d886f3e5b",
           "publisher_id": "france24",
           "publisher_kind": "public_broadcasting",
@@ -7889,7 +8143,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T05:22:52.000Z",
-          "ingested_at": "2026-09-04T06:06:19.579Z",
+          "ingested_at": "2026-09-04T07:36:19.931Z",
           "provenance": {
             "origin": "publisher:france24",
             "basis": "publisher_only_origin_unverified",
@@ -7901,7 +8155,7 @@
         {
           "claim_id": "wt-7f5f081ae8cf117e-claim-01",
           "story_id": "wt-7f5f081ae8cf117e",
-          "claim": "'Pragmatic international relations: Sánchez seeks to avoid 'further conflict with Rabat': Delano D'Souza is pleased to welcome Alana Moceri, International Relations Professor at IE School of Politics, Economics and Global Affairs. The migrant crossings at Ceuta have become both a domestic and international political lightning rod. At home, Pedro Sánchez faces opponents who can cast migration in existential terms, with Spain's far right amplifying the rhetoric of \"invasion.\" Internationally, the crisis exposes the geopolitical leverage inherent in control of the border. Ceuta thus emerges as more than a migration crisis: the border becomes at once an instrument of geopolitical leverage, a weapon in Spain's domestic political contest, and a battleground for competing narratives and disinformation.",
+          "claim": "'Pragmatic international relations': Sánchez seeks to avoid 'further conflict with Rabat': Delano D'Souza is pleased to welcome Alana Moceri, International Relations Professor at IE School of Politics, Economics and Global Affairs. The migrant crossings at Ceuta have become both a domestic and international political lightning rod. At home, Pedro Sánchez faces opponents who can cast migration in existential terms, with Spain's far right amplifying the rhetoric of \"invasion.\" Internationally, the crisis exposes the geopolitical leverage inherent in control of the border. Ceuta thus emerges as more than a migration crisis: the border becomes at once an instrument of geopolitical leverage, a weapon in Spain's domestic political contest, and a battleground for competing narratives and disinformation.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "france24-en",
           "source_function": "journalistic_report",
@@ -7916,10 +8170,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T06:06:19.579Z"
+          "checked_at": "2026-09-04T07:36:19.931Z"
         }
       ],
-      "content_hash": "b50a136247481a5aa9e8d14b828b41c800ac00a909aa0910de52858454c98782",
+      "content_hash": "2eadf1138f0103da3d948e8bfe01e5684619d35d4cfe68d142c966a0fe8e5c2e",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
@@ -7928,7 +8182,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T06:06:19.579Z",
+      "updated_at": "2026-09-04T07:36:19.931Z",
       "event_first_seen_at": "2026-09-04T05:36:20.086Z",
       "event_detected_at": "2026-09-04T05:36:20.086Z",
       "event_id": "event-d95278f4ca435b7ed36d",
@@ -7959,20 +8213,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 43.45965,
+        "source_age_minutes": 133.46551666666667,
         "detection_delay_minutes": 13.4681,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.99155,
+        "queue_age_minutes": 119.99741666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 72,
         "freshness_warning": null
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T06:06:19.579Z",
+      "rejected_at": "2026-09-04T07:36:19.931Z",
       "rejection": {
-        "at": "2026-09-04T06:06:19.579Z",
+        "at": "2026-09-04T07:36:19.931Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -19813,9 +20067,9 @@
       ],
       "retirement_history": [],
       "deepening_checks": 1,
-      "retired_at": "2026-09-04T07:18:42.389Z",
+      "retired_at": "2026-09-04T07:47:49.913Z",
       "retirement": {
-        "at": "2026-09-04T07:18:42.389Z",
+        "at": "2026-09-04T07:47:49.913Z",
         "reason_code": "MERGED_INTO_LIVING_FILE",
         "canonical_story_ids": [
           "wt-4fb94d2cebfca746"
@@ -20690,7 +20944,7 @@
       },
       "deepening_checks": 1,
       "pending_update": {
-        "detected_at": "2026-09-04T07:18:42.389Z",
+        "detected_at": "2026-09-04T07:47:49.913Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -20828,7 +21082,7 @@
         ],
         "consolidations": [
           {
-            "at": "2026-09-04T07:18:42.389Z",
+            "at": "2026-09-04T07:47:49.913Z",
             "story_id": "wt-57bcbc8dea706471",
             "slug": "nach-angriff-auf-stromnetz-brandenburger-polizei-pruft-bekennerschreiben-706471",
             "title": "Nach Angriff auf Stromnetz: Brandenburger Polizei prüft Bekennerschreiben",
@@ -22354,9 +22608,9 @@
         "status": "generated"
       },
       "deepening_checks": 1,
-      "retired_at": "2026-09-04T07:18:42.389Z",
+      "retired_at": "2026-09-04T07:47:49.913Z",
       "retirement": {
-        "at": "2026-09-04T07:18:42.389Z",
+        "at": "2026-09-04T07:47:49.913Z",
         "reason_code": "MERGED_INTO_LIVING_FILE",
         "canonical_story_ids": [
           "wt-4fb94d2cebfca746"
@@ -23223,9 +23477,9 @@
       ],
       "retirement_history": [],
       "deepening_checks": 1,
-      "retired_at": "2026-09-04T07:18:42.389Z",
+      "retired_at": "2026-09-04T07:47:49.913Z",
       "retirement": {
-        "at": "2026-09-04T07:18:42.389Z",
+        "at": "2026-09-04T07:47:49.913Z",
         "reason_code": "MERGED_INTO_LIVING_FILE",
         "canonical_story_ids": [
           "wt-4fb94d2cebfca746"
@@ -28593,9 +28847,9 @@
         "status": "generated"
       },
       "deepening_checks": 1,
-      "retired_at": "2026-09-04T07:18:42.389Z",
+      "retired_at": "2026-09-04T07:47:49.913Z",
       "retirement": {
-        "at": "2026-09-04T07:18:42.389Z",
+        "at": "2026-09-04T07:47:49.913Z",
         "reason_code": "MERGED_INTO_LIVING_FILE",
         "canonical_story_ids": [
           "wt-f3d585eac14dec76"
@@ -35660,14 +35914,14 @@
           "source_id": "mdr-nachrichten",
           "publisher": "MDR",
           "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
-          "title": "Zukunftsangst dämpft Kinderwunsch",
+          "title": "Warum Kinderwünsche unerfüllt bleiben und die Geburtenrate sinkt",
           "summary": "Viele junge Menschen in Deutschland wünschen sich zwar weiterhin Kinder, aber die Geburtenrate ist trotzdem gesunken. Krisen, Wohnungsnot und unsichere Arbeitsbedingungen bremsen die Familienplanung, zeigt die Forschung.",
           "source_type": "media_rss",
           "published_at": "2026-09-03T14:23:00.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Gesellschaft",
-          "content_hash": "542984ae2fcb6c4fab6f91fce47b0a359b7a43086324734fe884feed622fab32",
+          "content_hash": "0cd98b5b1b7377b09de168e295906febecd4a13979c516e8a3d8c4cc64b6fd94",
           "source_item_id": "efcfc8639de92ea964fb9a96f83e188076966adc32c93c3104c7897e29699c53",
           "publisher_id": "mdr",
           "publisher_kind": "public_broadcasting",
@@ -35680,7 +35934,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-03T14:23:00.000Z",
-          "ingested_at": "2026-09-04T03:51:30.621Z",
+          "ingested_at": "2026-09-04T07:36:19.931Z",
           "provenance": {
             "origin": "publisher:mdr",
             "basis": "publisher_only_origin_unverified",
@@ -35692,7 +35946,7 @@
         {
           "claim_id": "wt-3b184047d464b8b5-claim-01",
           "story_id": "wt-3b184047d464b8b5",
-          "claim": "Zukunftsangst dämpft Kinderwunsch: Viele junge Menschen in Deutschland wünschen sich zwar weiterhin Kinder, aber die Geburtenrate ist trotzdem gesunken. Krisen, Wohnungsnot und unsichere Arbeitsbedingungen bremsen die Familienplanung, zeigt die Forschung.",
+          "claim": "Warum Kinderwünsche unerfüllt bleiben und die Geburtenrate sinkt: Viele junge Menschen in Deutschland wünschen sich zwar weiterhin Kinder, aber die Geburtenrate ist trotzdem gesunken. Krisen, Wohnungsnot und unsichere Arbeitsbedingungen bremsen die Familienplanung, zeigt die Forschung.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "mdr-nachrichten",
           "source_function": "journalistic_report",
@@ -35707,19 +35961,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T04:06:08.228Z"
+          "checked_at": "2026-09-04T07:36:19.931Z"
         }
       ],
-      "content_hash": "a6622718f141ec483591d3efe833f4b99941961265ad4452d8b857f43eace98b",
+      "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
       "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
+      "quality_retry_count": 1,
+      "reassessment": false,
       "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T04:06:08.228Z",
+      "updated_at": "2026-09-04T07:36:19.931Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -35750,26 +36006,14 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 823.1371333333333,
+        "source_age_minutes": 1033.3321833333334,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 344.85363333333333,
+        "queue_age_minutes": 555.0486833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T04:06:08.228Z",
-      "rejection": {
-        "at": "2026-09-04T04:06:08.228Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
       }
     },
     {
@@ -46711,5 +46955,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T07:18:42.389Z"
+  "public_updated_at": "2026-09-04T07:47:49.913Z"
 }
