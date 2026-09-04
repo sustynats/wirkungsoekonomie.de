@@ -109,9 +109,13 @@ try {
   assert.ok(await page.evaluate(() => scrollY > 0), "view change must not jump to page top");
   assert.equal(await sources.evaluate((el) => el === document.activeElement), true);
   await page.goBack({ waitUntil: "networkidle" });
+  await page.waitForURL((url) => url.pathname === decision && !url.searchParams.has("ansicht"));
+  await page.waitForFunction(() => !document.querySelector('.decision-view-nav a[href$="ansicht=quellen"]')?.hasAttribute("aria-current"));
   assert.equal(new URL(page.url()).pathname, decision);
   assert.equal(new URL(page.url()).searchParams.has("ansicht"), false);
   await page.goForward({ waitUntil: "networkidle" });
+  await page.waitForURL("**ansicht=quellen");
+  await page.waitForFunction(() => document.querySelector('.decision-view-nav a[href$="ansicht=quellen"]')?.getAttribute("aria-current") === "page");
   assert.equal(new URL(page.url()).searchParams.get("ansicht"), "quellen");
   assert.deepEqual(results.errors, []);
   results.keyboard = { drawer_focus_trap: "PASS", escape_return_focus: "PASS", visible_focus: "PASS", navigation_closes_drawer: "PASS", legacy_fragment_and_query: "PASS", same_page_scroll_focus_back_forward: "PASS", reduced_motion: "PASS" };
