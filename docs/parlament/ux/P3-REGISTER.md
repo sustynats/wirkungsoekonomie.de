@@ -36,6 +36,10 @@ Zusätzlicher lokaler DOM-Vergleich gegen den unveränderten P2-Produktionsbuild
 - Browsergate prüft sämtliche öffentlichen Sitemap-/Navigationsrouten, alle alten 308-Regeln, alle Registerzeilen und deren Wortbudget, sechs Facetten, absolute Verteilung, URL-Reload, Zurück/Vorwärts und Fokus. Die fünf vollständigen Kontextansichten werden ebenfalls geöffnet.
 - 375/1440-Pixel-Preview und WCAG-A/AA-Prüfung in derselben exact-head-GitHub-Aktion wie P1/P2; deren Bericht und `commit.txt` sind der Mergebeleg. Kein Merge bei Rot.
 
+Lokaler vollständiger Browserlauf: 342 Routen, 33 Redirect-Regeln, 136/136 Registerzeilen bei beiden Breiten, maximal 47 Wörter, keine WCAG-A/AA-Verstöße in den neuen Registerflächen, keine Runtime- oder 5xx-Fehler. Filter-Reload, Zurück/Vorwärts, Fokus und Scrollposition bestehen.
+
+Das bestehende Current-Golden-Readiness-Artefakt pinnt den SHA-256 des Same-Page-Navigation-Gates. Die ergänzte explizite Cross-Page-Klassifikation erfordert dessen deterministische Neuberechnung. Der Diff enthält ausschließlich den Gate-Hash und den daraus folgenden Descriptor-Hash. Berlin 4/12, 1.193 Review-Envelopes, der MV-Fachblocker und sämtliche Release-Sperren sind unverändert. Die historische Golden-State-Freigabe wird nicht überschrieben.
+
 ## Betrieb
 
 Keine Vercel-Anfrage, kein Build-Slot, kein Deployment. Die Vorschau ist ein commitgebundenes GitHub-Prüfartefakt. Die kontoweite rote Release-Kostensperre bleibt erhalten.
