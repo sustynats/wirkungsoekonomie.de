@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T16:21:44.537Z",
+  "updated_at": "2026-09-04T16:36:15.855Z",
   "stories": [
     {
       "story_id": "wt-0b6279d05f195d31",
@@ -6253,21 +6253,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T16:21:44.537Z"
+          "checked_at": "2026-09-04T16:36:15.855Z"
         }
       ],
       "content_hash": "121682896139e42e4e1a839bd16b5827099ebff1398c37d127dbac2d114fcb50",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        "AI_PROVIDER_ERROR:429"
       ],
       "quality_retry_count": 2,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_PROVIDER_UNAVAILABLE",
       "versions": [],
-      "updated_at": "2026-09-04T16:21:44.537Z",
+      "updated_at": "2026-09-04T16:36:15.855Z",
       "event_first_seen_at": "2026-09-04T16:06:43.902Z",
       "event_detected_at": "2026-09-04T16:06:43.902Z",
       "event_id": "event-5b61a239f0b60c85ee69",
@@ -6295,13 +6295,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 30.742283333333333,
+        "source_age_minutes": 45.26425,
         "detection_delay_minutes": 15.7317,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.010583333333333,
+        "queue_age_minutes": 29.53255,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 91,
         "freshness_warning": null
       }
     },
@@ -23730,8 +23730,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -43136,8 +43138,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -48008,8 +48012,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -49493,8 +49499,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -52998,8 +53006,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -53662,8 +53672,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -54308,8 +54320,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -55140,8 +55154,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
