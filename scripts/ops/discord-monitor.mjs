@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
+import { buildCaseFiles } from '../news/case-files.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const MINUTE = 60_000;
@@ -36,7 +37,15 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
   const monthRuns = period(today.slice(0, 7));
   const fx = report?.budget_policy?.fx;
   const fxValid = Number.isFinite(fx?.rate_usd_per_eur) && fx.rate_usd_per_eur > 0 && age(fx.rate_date, now) >= 0 && age(fx.rate_date, now) <= 7 * 1440;
-  const active = stories.filter(s => s.published && s.listed !== false && !merged(s));
+  const underlyingActive = stories.filter(s => s.published && s.listed !== false && !merged(s));
+  const caseState = buildCaseFiles(underlyingActive);
+  // The public feeds intentionally expose only the current representative of
+  // a multi-story case. Older members remain public on their detail URLs and
+  // in the case timeline, so they are not publication failures.
+  const active = underlyingActive.filter(story => {
+    const caseFile = caseState.caseByStory.get(story.story_id);
+    return !caseFile || caseFile.representative_id === story.story_id;
+  });
   const live = new Map((liveFeed?.items || []).map(item => [item.url, item.date_modified || item.date_published]));
   const pendingPublication = active.filter(s => {
     const modified = s.last_updated || s.published_at;
@@ -45,7 +54,8 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     return !live.has(url) || Date.parse(live.get(url)) < Date.parse(modified);
   });
   return {
-    today, yesterday, active: active.length, live: liveFeed?.items?.length ?? null,
+    today, yesterday, active: active.length, underlyingActive: underlyingActive.length,
+    caseCount: caseState.cases.length, live: liveFeed?.items?.length ?? null,
     newToday: published(today), newYesterday: published(yesterday),
     updatesToday: period(today).reduce((n, r) => n + Number(r.counts?.updated_stories || 0), 0),
     usdToday: costs(period(today)), usdYesterday: costs(period(yesterday)), usdMonth: costs(monthRuns),
@@ -84,7 +94,7 @@ export function evaluateChecks(data, now) {
   const failedImages = data.stories.filter(s => s.published && s.listed !== false && imageErrors.has(s.title_image?.refresh_failure || s.title_image?.fallback_reason)).length;
   checks.push({ id: 'images', name: 'Titelbilder', ok: failedImages === 0, reason: `${failedImages} ${failedImages === 1 ? 'Symbolbild' : 'Symbolbilder'} mit technischem Fehler; vorhandene Bilder oder Wirkungskarten bleiben sichtbar. Nachrichten werden dadurch nicht zurückgehalten.`, immediate: false });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: summary.sourceFailures === 0, reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
-  checks.push({ id: 'publication', name: 'Veröffentlichung', ok: data.liveFeed !== null && summary.pendingPublication === 0, reason: data.liveFeed === null ? 'Live-Feed nicht lesbar.' : `${summary.pendingPublication} geprüfte Akten seit über 45 Minuten nicht im Live-Feed.`, immediate: false });
+  checks.push({ id: 'publication', name: 'Veröffentlichung', ok: data.liveFeed !== null && summary.pendingPublication === 0, reason: data.liveFeed === null ? 'Live-Feed nicht lesbar.' : `${summary.pendingPublication} sichtbare Lagen oder Einzelakten seit über 45 Minuten nicht im Live-Feed.`, immediate: false });
   checks.push({ id: 'budget', name: 'KI-Monatsbudget', ok: data.report?.budget_policy?.status === 'ok' && summary.usdMonth < Number(data.report?.monthly_budget_usd), reason: 'Monatslimit oder Wechselkurs-Sicherheitsgate hält die KI-Verarbeitung an.', immediate: true });
   return { checks, summary };
 }
@@ -93,7 +103,7 @@ export function dailyReport(summary, checks) {
   return [
     `WÖk Tagesbericht · ${summary.today} · Europe/Berlin`,
     ...checks.filter(c => TARGETS.some(t => t.id === c.id)).map(c => `${c.ok ? '✓' : '⚠'} ${c.name}: ${c.ok ? 'erreichbar' : c.reason}`),
-    `Ticker: ${summary.live ?? 'nicht verfügbar'} live · ${summary.active} aktive Akten im Datenbestand.`,
+    `Ticker: ${summary.live ?? 'nicht verfügbar'} live · ${summary.active} aktuelle Lagen und Einzelakten aus ${summary.underlyingActive} aktiven Wirkungsakten${summary.caseCount ? ` · ${summary.caseCount} ${summary.caseCount === 1 ? 'Lageakte' : 'Lageakten'}` : ''}.`,
     `Erstveröffentlichungen gestern (${summary.yesterday}): ${summary.newYesterday}; heute bisher: ${summary.newToday} (inkl. später archivierter/zusammengeführter Akten).`,
     `Letzter Lauf: ${summary.runCompleted || 'nicht verfügbar'}; ${summary.pendingCount} offene Prüfungen, ${summary.activeSources} aktive Quellen.`,
     `KI-Schätzung: gestern $${money(summary.usdYesterday)} · heute $${money(summary.usdToday)} · Monat $${money(summary.usdMonth)}.`,

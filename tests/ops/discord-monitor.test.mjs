@@ -62,6 +62,28 @@ test('publication lag has grace period and compares versions rather than unchang
   d.stories[0].last_updated = '2026-09-04T05:50:00Z';
   assert.equal(summarizeNews(d, now).pendingPublication, 0);
 });
+test('case timeline members are not mistaken for missing live-feed publications', () => {
+  const d = fixture();
+  d.stories = [
+    ['eins', 'Sabotage an Umspannwerk Jänschwalde: Polizei ermittelt', '2026-09-03T10:00:00Z'],
+    ['zwei', 'Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben gefunden', '2026-09-03T11:00:00Z'],
+    ['drei', 'Sabotage an Umspannwerk Jänschwalde: Verdächtiger gesucht', '2026-09-03T12:00:00Z'],
+  ].map(([story_id, title, last_updated]) => ({
+    story_id, slug: story_id, title, last_updated, published_at: last_updated,
+    published: true, listed: true, topic: ['Energie'], analysis: { summary: title }, sources: [],
+  }));
+  d.liveFeed.items = [{
+    url: 'https://wirkungsoekonomie.de/wirkungsticker/drei/',
+    date_modified: '2026-09-03T12:00:00Z',
+  }];
+  const summary = summarizeNews(d, now);
+  assert.equal(summary.underlyingActive, 3);
+  assert.equal(summary.caseCount, 1);
+  assert.equal(summary.active, 1);
+  assert.equal(summary.pendingPublication, 0);
+  d.liveFeed.items = [];
+  assert.equal(summarizeNews(d, now).pendingPublication, 1);
+});
 test('AI alerts distinguish local input failures from HTTP responses and identify the report time', () => {
   const d = fixture(); d.report.ai_error = 'AI_INPUT_TOO_LARGE';
   let c = evaluateChecks(d, now).checks.find(c => c.id === 'provider');
