@@ -1,7 +1,871 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T20:21:20.922Z",
+  "updated_at": "2026-09-04T20:36:32.644Z",
   "stories": [
+    {
+      "story_id": "wt-972d20af6da2b586",
+      "slug": "was-tut-die-bundesregierung-gegen-hybride-angriffe-und-drohnenvorfalle-a2b586",
+      "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
+      "first_seen": "2026-09-02T06:00:00.000Z",
+      "last_updated": "2026-09-04T20:37:29.426Z",
+      "published_at": "2026-09-04T04:51:34.536Z",
+      "updated_at": "2026-09-04T20:37:29.426Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundesregierung-kompakt",
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+          "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
+          "summary": "Der Fund einer Sprengstoff-Drohne am Leipziger Flughafen zeigt deutlich: Deutschland befindet sich zunehmend im Fokus hybrider Bedrohungen, Sabotagen und Drohnenangriffen. Was das bedeutet und was die Bundesregierung dagegen tut, erfahren Sie hier.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-02T06:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 92,
+          "source_topic": "Politik",
+          "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c",
+          "source_item_id": "2eff7152390aa52f9a213db084fb9a5a808bddbacffcf1a4e73720968fce01dc",
+          "publisher_id": "bundesregierung",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-02T06:00:00.000Z",
+          "ingested_at": "2026-09-04T20:36:32.644Z",
+          "provenance": {
+            "origin": "publisher:bundesregierung",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-972d20af6da2b586-v2-claim-1",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Die Bundesregierung hat eine Reform des Bundespolizeigesetzes auf den Weg gebracht und die Befugnisse der Bundespolizei bei der Drohnenabwehr ausgeweitet.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "070ab6ab7d0e4a3186c1",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T20:37:29.426Z"
+        },
+        {
+          "claim_id": "wt-972d20af6da2b586-v2-claim-2",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Seit Dezember 2025 verfügt die Bundespolizei über eine Drohnenabwehreinheit mit zunächst 130 Mitarbeiterinnen und Mitarbeitern; dafür investiert die Bundesregierung insgesamt 100 Millionen Euro.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "9f374b0820e5467b320e",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "24cb284b7d2a96246414",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T20:37:29.426Z"
+        },
+        {
+          "claim_id": "wt-972d20af6da2b586-v2-claim-3",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Bund und Länder haben ein Drohnenabwehrzentrum eingerichtet, das ein nationales Lagebild zu Drohnenbewegungen erstellen und Risiken einschätzen soll.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "c602d447d6fddc49d70e",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "7bc153e7ff498f2d4d04",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T20:37:29.426Z"
+        },
+        {
+          "claim_id": "wt-972d20af6da2b586-v2-claim-4",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Im März 2026 ist das KRITIS-Dachgesetz in Kraft getreten und legt bundesweite Mindeststandards sowie Meldepflichten für Betreiber kritischer Infrastrukturen fest.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "bb14aac6c8594bbde2b8",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "35062e0c8e836af165a4",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "a19516cb46ccf3ff9507",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T20:37:29.426Z"
+        },
+        {
+          "claim_id": "wt-972d20af6da2b586-v2-claim-5",
+          "story_id": "wt-972d20af6da2b586",
+          "claim": "Die Bundesregierung ordnet die Lage nach dem Vorfall am Leipziger Flughafen als verschärfte hybride Bedrohung ein und nennt vermehrte illegale Drohnenflüge über kritische Infrastruktur.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "059a846a911a1c0b7305",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "excerpt_hash": "98c3a42746cca4c8962c",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T20:37:29.426Z"
+        }
+      ],
+      "event_id": "event-3c4cec37699684f265d9",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T20:37:13.667Z",
+      "publish_ready_at": "2026-09-04T20:37:29.426Z",
+      "news_status": "updated",
+      "deepening_due_at": null,
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "89221950e15d7889a81010e57f8be34aad0c701622d7fb36f7bf0ea685a4b725"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "f3b5c8ee781c6e3bf1b0554d698d327bda390e9d8af36bc3de5305333491b926"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "4b9c19c4e311b6a9d835242a639c5937fa2156b2432e031877489e90f7e60957"
+        },
+        "source_visual": null,
+        "fingerprint": "31011c4e3d76a914c15e5fffac1949919c4f3c11bd3d4bf1c0034d669e699065",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T09:50:31.346Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "source_summary": "Die Bundesregierung beschreibt nach dem Vorfall am Leipziger Flughafen eine verschärfte Lage durch hybride Bedrohungen, Sabotage und Drohnenangriffe. Sie verweist darauf, dass Deutschland mit Sicherheitsbehörden vorbereitet sei und bereits wichtige Maßnahmen getroffen habe. Dazu zählt nach der Quelle eine Reform des Bundespolizeigesetzes mit ausgeweiteter Drohnenabwehr, eine seit Dezember 2025 bestehende Drohnenabwehreinheit der Bundespolizei sowie ein von Bund und Ländern eingerichtetes Drohnenabwehrzentrum.\n\nDie Quelle nennt außerdem das im März 2026 in Kraft getretene KRITIS-Dachgesetz mit Mindeststandards und Meldepflichten für Betreiber kritischer Infrastrukturen. Genannt werden ferner 130 Mitarbeitende für die Drohnenabwehreinheit und eine Investition von 100 Millionen Euro. Zugleich heißt es, viele illegale Drohnenflüge zielten nicht primär auf direkte Angriffe, sondern auf Verunsicherung. Offene Punkte bleiben der genaue Umfang der Bedrohung, die Wirksamkeit der Maßnahmen und die Frage, wie viele Vorfälle staatlich gesteuert sind.",
+      "analysis": {
+        "story_id": "wt-972d20af6da2b586",
+        "news_status": "updated",
+        "publication_depth": "deepened",
+        "summary": "Die Bundesregierung verweist nach dem Vorfall am Leipziger Flughafen auf neue und bereits laufende Gegenmaßnahmen gegen hybride Angriffe und Drohnen. Genannt werden Reformen, eine Drohnenabwehreinheit, ein Lagezentrum und neue Standards für kritische Infrastruktur.",
+        "detail_summary": "Gesichert ist zunächst, dass die Bundesregierung ihre Drohnen- und Abwehrarchitektur ausbaut: Sie hat die Befugnisse der Bundespolizei erweitert, seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Mitarbeitenden eingerichtet und ein gemeinsames Drohnenabwehrzentrum von Bund und Ländern aufgebaut. Außerdem verweist die Quelle auf das KRITIS-Dachgesetz, das seit März 2026 in Kraft ist und für kritische Infrastruktur bundesweite Mindeststandards sowie Meldepflichten vorsieht. Das ist materiell relevant, weil es Sicherheitsregeln, Zuständigkeiten und technische sowie organisatorische Schutzanforderungen verändert. Der Wirkpfad liegt vor allem in besserer Detektion, schnellerer Reaktion und stärkerer Koordination zwischen Behörden. Mögliche Folgen sind weniger erfolgreiche Drohnenvorfälle, aber auch höhere Umstellungs- und Compliance-Kosten für Betreiber. Die Evidenz bleibt jedoch eine primär staatliche Selbstdarstellung; zur tatsächlichen Wirksamkeit, zum Umfang fremdgesteuerter Vorfälle und zu den realen Sicherheitsgewinnen liefert die Quelle noch keinen belastbaren Nachweis.",
+        "why_relevant": "Die Meldung beschreibt nicht nur eine Warnung, sondern konkrete staatliche Eingriffe in Sicherheitsarchitektur, Zuständigkeiten und Schutzstandards mit möglichen Folgen für kritische Infrastruktur.",
+        "status": "laufende Umsetzung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Sicherheitslage, Schutz kritischer Infrastruktur und staatliche Eingriffs- und Reaktionsfähigkeit mit möglichen Auswirkungen auf viele Menschen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug wird in der Quelle nicht beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung betrifft staatliche Sicherheitsbefugnisse, Koordination zwischen Bund und Ländern und Meldepflichten, also demokratisch relevante Steuerung."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mehr Befugnisse, Personal und Koordination können die Abwehrfähigkeit gegen Drohnenvorfälle und hybride Angriffe erhöhen und Schutzstandards für kritische Infrastruktur anheben.",
+        "impact_risks": [
+          "Ausweitung von Sicherheitsbefugnissen ohne belegte Wirksamkeit kann Kosten und Eingriffe erhöhen, ohne Vorfälle sicher zu reduzieren.",
+          "Die Quelle selbst nennt keine unabhängige Erfolgsmessung; tatsächliche Wirkung bleibt offen."
+        ],
+        "mechanisms": [
+          "erweiterte polizeiliche Befugnisse",
+          "zentrale Lagebilder und gemeinsame Risikobewertung",
+          "technische Drohnenabwehr mit zusätzlichem Personal",
+          "Mindeststandards und Meldepflichten für Betreiber kritischer Infrastruktur"
+        ],
+        "first_order": [
+          "verbesserte Detektion und Reaktionsfähigkeit bei Drohnenvorfällen",
+          "mehr organisatorische Anforderungen für Betreiber kritischer Infrastruktur"
+        ],
+        "second_order": [
+          "mögliche Verlagerung von Angriffen auf andere Ziele oder Methoden",
+          "höherer Investitionsbedarf bei betroffenen Betreibern"
+        ],
+        "third_order": [
+          "langfristig robustere Sicherheitsarchitektur oder, bei schwacher Umsetzung, nur formale Aufrüstung ohne spürbare Risikosenkung"
+        ],
+        "systemic_relevance": "Die Meldung berührt die Resilienz kritischer Infrastruktur und damit systemrelevante Versorgungs- und Sicherheitsketten.",
+        "transformation_potential": "Begrenzt bis mittel: Sie verändert Sicherheitsregeln und operative Zuständigkeiten, aber noch nicht nachweislich das tatsächliche Bedrohungsniveau.",
+        "resilience": "Potenzial zur Stärkung der Abwehr- und Koordinationsfähigkeit; ob das im Einsatz trägt, bleibt offen.",
+        "side_effects": [
+          "mehr Verwaltungs- und Investitionsaufwand",
+          "mögliche Überdehnung von Sicherheitsmaßnahmen bei unklarer Evidenz"
+        ],
+        "uncertainties": [
+          "Wie viele Vorfälle tatsächlich staatlich gesteuert sind, bleibt laut Quelle offen.",
+          "Die praktische Wirksamkeit der neuen Drohnenabwehr ist nicht belegt.",
+          "Die Quelle liefert keine unabhängige Bewertung der Maßnahmen."
+        ],
+        "evidence_level": "single-source primary-source statement mit mehreren internen Details, aber ohne unabhängige Bestätigung",
+        "attribution": "Eigenaussagen der Bundesregierung; keine unabhängige Verifikation in den gelieferten Quellen",
+        "watch_next": [
+          "Umsetzung der Reform im Bundespolizeigesetz und bei den Luftsicherheitsregeln",
+          "messbare Zahl und Qualität der Drohnenvorfälle nach Einführung der Maßnahmen",
+          "weitere belastbare Angaben zur Wirksamkeit des Lagezentrums und der Abwehrtechnik"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16",
+          "Agenda 2030/SDG 9"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "material_update",
+          "rationale": "Gegenüber dem bisherigen Zwischenstand nennt die Quelle zusätzliche, konkrete Umsetzungsdetails und Ressourcen, darunter Personal, Budget, Inkrafttreten und neue Schutzstandards."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Personal der Einheit",
+              "value": "130",
+              "unit": "Mitarbeiterinnen und Mit",
+              "context": "zunächst geplante Stärke der Drohnenabwehreinheit"
+            },
+            {
+              "label": "Investition",
+              "value": "100 Millionen",
+              "unit": "Euro",
+              "context": "Gesamtinvestition für die Drohnenabwehreinheit"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "kommunen",
+            "europa"
+          ],
+          "timeline": [
+            {
+              "date": "2025-12",
+              "label": "Drohnenabwehreinheit verfügbar"
+            },
+            {
+              "date": "2026-03",
+              "label": "KRITIS-Dachgesetz in Kraft"
+            }
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T04:51:34.536Z",
+          "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
+          "source_summary": "Die Bundesregierung veröffentlicht eine FAQ-Seite zu hybriden Angriffen und Drohnenvorfällen. Als Anlass nennt sie den Fund einer mit Sprengstoff bestückten Drohne am Leipziger Flughafen und bezeichnet den Vorfall als sehr ernst zu nehmend. Zugleich verweist sie auf eine fortlaufend verfolgte Lage und auf Beratungen im Nationalen Sicherheitsrat und im Bundeskabinett.\n\nDie Seite перечисlt mehrere Maßnahmen: Das KRITIS-Dachgesetz sei im März 2026 in Kraft getreten, die Bundespolizei habe seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Beschäftigten, dafür würden 100 Millionen Euro investiert. Außerdem sei ein Drohnenabwehrzentrum von Bund und Ländern eingerichtet worden. Die Bundesregierung nennt zudem eine Reform des Bundespolizeigesetzes, Änderungen am Luftsicherheitsgesetz und verweist auf einen Anstieg illegaler Drohnenflüge über kritische Infrastruktur.",
+          "analysis": {
+            "story_id": "wt-972d20af6da2b586",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Die Bundesregierung beschreibt eine verschärfte Bedrohungslage durch hybride Angriffe und nennt mehrere bereits laufende Gegenmaßnahmen. Dazu gehören neue Befugnisse, eine Drohnenabwehreinheit und ein gemeinsames Lagezentrum.",
+            "detail_summary": "Gesichert ist zunächst die politische Reaktion der Bundesregierung auf die von ihr geschilderte hybride Bedrohungslage. Die Quelle nennt den Leipziger Drohnenvorfall als Auslöser und verweist auf konkrete Maßnahmen wie das im März 2026 in Kraft getretene KRITIS-Dachgesetz, die Drohnenabwehreinheit der Bundespolizei und ein Drohnenabwehrzentrum von Bund und Ländern. Für die Wirkung ist relevant, dass hier nicht nur kommuniziert, sondern Sicherheitsarchitektur, Zuständigkeiten und technische Abwehrkapazitäten verändert werden. Der Wirkpfad läuft über frühere Erkennung, koordiniertere Lagebewertung und schnellere Abwehr von Vorfällen an kritischer Infrastruktur. Möglich sind dadurch geringere Verwundbarkeit und bessere Resilienz, zugleich bleiben Umfang, Effektivität und tatsächliche Umsetzung der Maßnahmen offen. Die Quelle ist jedoch eine Regierungsdarstellung; unabhängige Bestätigung der Lagebewertung oder der behaupteten Wirksamkeit liegt hier nicht vor.",
+            "why_relevant": "Die Meldung beschreibt staatliche Sicherheitsmaßnahmen mit möglichem Einfluss auf kritische Infrastruktur, Abwehrkapazitäten und Zuständigkeiten. Das ist materiell, weil Regeln, Ressourcen und Schutzarchitektur verändert werden.",
+            "status": "laufende Umsetzung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die Maßnahmen zielen auf Schutz von Bevölkerung und kritischer Infrastruktur vor Drohnen- und Sabotagevorfällen. Betroffen sind Sicherheitslage, öffentliche Dienste und mögliche Alltagsstörungen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht beschrieben. Allenfalls indirekt kann der Schutz von Versorgungsinfrastruktur Umweltfolgen von Ausfällen begrenzen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Quelle betrifft Sicherheitsstaat, Zuständigkeiten und Eingriffsbefugnisse. Für demokratische Kontrolle relevant sind Transparenz, Verhältnismäßigkeit und spätere parlamentarische Prüfung."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche höhere Abwehr- und Reaktionsfähigkeit gegen Drohnenvorfälle an kritischer Infrastruktur sowie bessere Koordination zwischen Bund, Ländern und Sicherheitsbehörden.",
+            "impact_risks": [
+              "Ausweitung von Sicherheitsbefugnissen ohne ausreichend transparente Kontrolle",
+              "Fehlallokation von Ressourcen bei unklarer tatsächlicher Bedrohungslage",
+              "Technische und organisatorische Lücken trotz angekündigter Maßnahmen"
+            ],
+            "mechanisms": [
+              "Rechtsänderungen erweitern Befugnisse und Zuständigkeiten",
+              "Ein Lagezentrum bündelt Informationen und Risikobewertungen",
+              "Spezialisierte Einheiten verbessern Erkennung und Abwehr von Drohnen"
+            ],
+            "first_order": [
+              "mehr behördliche Kapazität zur Drohnenabwehr",
+              "neue Mindeststandards und Meldepflichten für kritische Infrastruktur"
+            ],
+            "second_order": [
+              "veränderte Sicherheitskosten für Betreiber kritischer Infrastruktur",
+              "mögliche Verlagerung von Bedrohungen in andere Angriffsformen"
+            ],
+            "third_order": [
+              "dauerhafte Verschiebung der Sicherheitsarchitektur zugunsten präventiver Überwachung",
+              "mögliche neue Standards für den Schutz kritischer Versorgungssysteme"
+            ],
+            "systemic_relevance": "Die Meldung berührt die Resilienz kritischer Infrastruktur und damit einen systemrelevanten Bereich mit möglichen Kaskaden auf Energie, Transport, Gesundheit und Verwaltung.",
+            "transformation_potential": "Begrenzt bis mittel: eher Ausbau und Verdichtung bestehender Sicherheitsstrukturen als ein grundlegend neues Regime.",
+            "resilience": "Potenzial zur Stärkung von Resilienz durch bessere Lagebilder, Abwehr und Meldewege; die tatsächliche Robustheit bleibt in der Quelle unbelegt.",
+            "side_effects": [
+              "höhere Kosten für Staat und Betreiber",
+              "mögliche Normalisierung eines dauerhaft erhöhten Sicherheitsniveaus",
+              "mehr Koordinationsaufwand zwischen Bund, Ländern und Betreibern"
+            ],
+            "uncertainties": [
+              "ob die genannten Maßnahmen bereits vollständig umgesetzt sind",
+              "wie wirksam die neue Drohnenabwehr in der Praxis ist",
+              "welche konkreten Vorfälle tatsächlich staatlich gesteuert waren"
+            ],
+            "evidence_level": "primärquellenbasiert, aber ohne unabhängige Bestätigung der Wirksamkeit oder der Lagezuschreibung",
+            "attribution": "Die Maßnahmen und Bewertungen werden von der Bundesregierung selbst dargestellt; die Quelle ist primär, aber interessengeleitet.",
+            "watch_next": [
+              "Umsetzung der Gesetzesänderungen und operative Wirksamkeit der Drohnenabwehr beobachten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 9, 11, 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Die Quelle enthält neue staatliche Maßnahmen und einen konkreten Sicherheitskontext mit Bezug zu kritischer Infrastruktur. Das ist materiell und nicht bloß eine Meinungsäußerung."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Mitarbeiterinnen und Mitarbeiter",
+                  "value": "130",
+                  "unit": "Personen",
+                  "context": "Größe der neuen Drohnenabwehreinheit"
+                },
+                {
+                  "label": "Investition",
+                  "value": "100 Millionen",
+                  "unit": "Euro",
+                  "context": "Bundesmittel für die Drohnenabwehreinheit"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "kommunen",
+                "europa"
+              ],
+              "timeline": [
+                {
+                  "date": "2025-12",
+                  "label": "Drohnenabwehreinheit der Bundespolizei"
+                },
+                {
+                  "date": "2026-03",
+                  "label": "KRITIS-Dachgesetz in Kraft"
+                }
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-1",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Die Bundesregierung sagt, sie habe auf die hybride Bedrohungslage bereits reagiert und mehrere Maßnahmen zur Drohnenabwehr umgesetzt oder angestoßen.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "c12ee13edf469d09c337",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "070ab6ab7d0e4a3186c1",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "3ef794fa2eeae01740b4",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-2",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Im März 2026 ist das KRITIS-Dachgesetz in Kraft getreten und soll den Schutz kritischer Infrastruktur in mehreren Sektoren verbessern.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "bb14aac6c8594bbde2b8",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "b949af7310fbb61abe82",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "739452d40ad81434f254",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-3",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Die Bundespolizei verfügt seit Dezember 2025 über eine bundesweit eingesetzte Drohnenabwehreinheit mit zunächst 130 Mitarbeiterinnen und Mitarbeitern und 100 Millionen Euro Investitionen.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "9f374b0820e5467b320e",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "24cb284b7d2a96246414",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-4",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Bund und Länder haben ein Drohnenabwehrzentrum eingerichtet, das ein nationales Lagebild zu Drohnenbewegungen erstellen und Risiken gemeinsam bewerten soll.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "c602d447d6fddc49d70e",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "7bc153e7ff498f2d4d04",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v1-claim-5",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Die Bundesregierung nennt vermehrte illegale Drohnenflüge über kritische Infrastruktur und führt die Hochstufung der Bedrohungslage unter anderem auf mehr Hinweise aus Geheimdiensten und eigene Erkenntnisse zurück.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "98c3a42746cca4c8962c",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "1b3598c6425423988f5f",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "5475e8e7d75739b042f6",
+                  "checked_at": "2026-09-04T04:51:34.536Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T04:51:34.536Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T20:37:29.426Z",
+          "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
+          "source_summary": "Die Bundesregierung beschreibt nach dem Vorfall am Leipziger Flughafen eine verschärfte Lage durch hybride Bedrohungen, Sabotage und Drohnenangriffe. Sie verweist darauf, dass Deutschland mit Sicherheitsbehörden vorbereitet sei und bereits wichtige Maßnahmen getroffen habe. Dazu zählt nach der Quelle eine Reform des Bundespolizeigesetzes mit ausgeweiteter Drohnenabwehr, eine seit Dezember 2025 bestehende Drohnenabwehreinheit der Bundespolizei sowie ein von Bund und Ländern eingerichtetes Drohnenabwehrzentrum.\n\nDie Quelle nennt außerdem das im März 2026 in Kraft getretene KRITIS-Dachgesetz mit Mindeststandards und Meldepflichten für Betreiber kritischer Infrastrukturen. Genannt werden ferner 130 Mitarbeitende für die Drohnenabwehreinheit und eine Investition von 100 Millionen Euro. Zugleich heißt es, viele illegale Drohnenflüge zielten nicht primär auf direkte Angriffe, sondern auf Verunsicherung. Offene Punkte bleiben der genaue Umfang der Bedrohung, die Wirksamkeit der Maßnahmen und die Frage, wie viele Vorfälle staatlich gesteuert sind.",
+          "analysis": {
+            "story_id": "wt-972d20af6da2b586",
+            "news_status": "updated",
+            "publication_depth": "deepened",
+            "summary": "Die Bundesregierung verweist nach dem Vorfall am Leipziger Flughafen auf neue und bereits laufende Gegenmaßnahmen gegen hybride Angriffe und Drohnen. Genannt werden Reformen, eine Drohnenabwehreinheit, ein Lagezentrum und neue Standards für kritische Infrastruktur.",
+            "detail_summary": "Gesichert ist zunächst, dass die Bundesregierung ihre Drohnen- und Abwehrarchitektur ausbaut: Sie hat die Befugnisse der Bundespolizei erweitert, seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Mitarbeitenden eingerichtet und ein gemeinsames Drohnenabwehrzentrum von Bund und Ländern aufgebaut. Außerdem verweist die Quelle auf das KRITIS-Dachgesetz, das seit März 2026 in Kraft ist und für kritische Infrastruktur bundesweite Mindeststandards sowie Meldepflichten vorsieht. Das ist materiell relevant, weil es Sicherheitsregeln, Zuständigkeiten und technische sowie organisatorische Schutzanforderungen verändert. Der Wirkpfad liegt vor allem in besserer Detektion, schnellerer Reaktion und stärkerer Koordination zwischen Behörden. Mögliche Folgen sind weniger erfolgreiche Drohnenvorfälle, aber auch höhere Umstellungs- und Compliance-Kosten für Betreiber. Die Evidenz bleibt jedoch eine primär staatliche Selbstdarstellung; zur tatsächlichen Wirksamkeit, zum Umfang fremdgesteuerter Vorfälle und zu den realen Sicherheitsgewinnen liefert die Quelle noch keinen belastbaren Nachweis.",
+            "why_relevant": "Die Meldung beschreibt nicht nur eine Warnung, sondern konkrete staatliche Eingriffe in Sicherheitsarchitektur, Zuständigkeiten und Schutzstandards mit möglichen Folgen für kritische Infrastruktur.",
+            "status": "laufende Umsetzung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind Sicherheitslage, Schutz kritischer Infrastruktur und staatliche Eingriffs- und Reaktionsfähigkeit mit möglichen Auswirkungen auf viele Menschen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer Umweltbezug wird in der Quelle nicht beschrieben."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Meldung betrifft staatliche Sicherheitsbefugnisse, Koordination zwischen Bund und Ländern und Meldepflichten, also demokratisch relevante Steuerung."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mehr Befugnisse, Personal und Koordination können die Abwehrfähigkeit gegen Drohnenvorfälle und hybride Angriffe erhöhen und Schutzstandards für kritische Infrastruktur anheben.",
+            "impact_risks": [
+              "Ausweitung von Sicherheitsbefugnissen ohne belegte Wirksamkeit kann Kosten und Eingriffe erhöhen, ohne Vorfälle sicher zu reduzieren.",
+              "Die Quelle selbst nennt keine unabhängige Erfolgsmessung; tatsächliche Wirkung bleibt offen."
+            ],
+            "mechanisms": [
+              "erweiterte polizeiliche Befugnisse",
+              "zentrale Lagebilder und gemeinsame Risikobewertung",
+              "technische Drohnenabwehr mit zusätzlichem Personal",
+              "Mindeststandards und Meldepflichten für Betreiber kritischer Infrastruktur"
+            ],
+            "first_order": [
+              "verbesserte Detektion und Reaktionsfähigkeit bei Drohnenvorfällen",
+              "mehr organisatorische Anforderungen für Betreiber kritischer Infrastruktur"
+            ],
+            "second_order": [
+              "mögliche Verlagerung von Angriffen auf andere Ziele oder Methoden",
+              "höherer Investitionsbedarf bei betroffenen Betreibern"
+            ],
+            "third_order": [
+              "langfristig robustere Sicherheitsarchitektur oder, bei schwacher Umsetzung, nur formale Aufrüstung ohne spürbare Risikosenkung"
+            ],
+            "systemic_relevance": "Die Meldung berührt die Resilienz kritischer Infrastruktur und damit systemrelevante Versorgungs- und Sicherheitsketten.",
+            "transformation_potential": "Begrenzt bis mittel: Sie verändert Sicherheitsregeln und operative Zuständigkeiten, aber noch nicht nachweislich das tatsächliche Bedrohungsniveau.",
+            "resilience": "Potenzial zur Stärkung der Abwehr- und Koordinationsfähigkeit; ob das im Einsatz trägt, bleibt offen.",
+            "side_effects": [
+              "mehr Verwaltungs- und Investitionsaufwand",
+              "mögliche Überdehnung von Sicherheitsmaßnahmen bei unklarer Evidenz"
+            ],
+            "uncertainties": [
+              "Wie viele Vorfälle tatsächlich staatlich gesteuert sind, bleibt laut Quelle offen.",
+              "Die praktische Wirksamkeit der neuen Drohnenabwehr ist nicht belegt.",
+              "Die Quelle liefert keine unabhängige Bewertung der Maßnahmen."
+            ],
+            "evidence_level": "single-source primary-source statement mit mehreren internen Details, aber ohne unabhängige Bestätigung",
+            "attribution": "Eigenaussagen der Bundesregierung; keine unabhängige Verifikation in den gelieferten Quellen",
+            "watch_next": [
+              "Umsetzung der Reform im Bundespolizeigesetz und bei den Luftsicherheitsregeln",
+              "messbare Zahl und Qualität der Drohnenvorfälle nach Einführung der Maßnahmen",
+              "weitere belastbare Angaben zur Wirksamkeit des Lagezentrums und der Abwehrtechnik"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16",
+              "Agenda 2030/SDG 9"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber dem bisherigen Zwischenstand nennt die Quelle zusätzliche, konkrete Umsetzungsdetails und Ressourcen, darunter Personal, Budget, Inkrafttreten und neue Schutzstandards."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Personal der Einheit",
+                  "value": "130",
+                  "unit": "Mitarbeiterinnen und Mit",
+                  "context": "zunächst geplante Stärke der Drohnenabwehreinheit"
+                },
+                {
+                  "label": "Investition",
+                  "value": "100 Millionen",
+                  "unit": "Euro",
+                  "context": "Gesamtinvestition für die Drohnenabwehreinheit"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "kommunen",
+                "europa"
+              ],
+              "timeline": [
+                {
+                  "date": "2025-12",
+                  "label": "Drohnenabwehreinheit verfügbar"
+                },
+                {
+                  "date": "2026-03",
+                  "label": "KRITIS-Dachgesetz in Kraft"
+                }
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-972d20af6da2b586-v2-claim-1",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Die Bundesregierung hat eine Reform des Bundespolizeigesetzes auf den Weg gebracht und die Befugnisse der Bundespolizei bei der Drohnenabwehr ausgeweitet.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "070ab6ab7d0e4a3186c1",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v2-claim-2",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Seit Dezember 2025 verfügt die Bundespolizei über eine Drohnenabwehreinheit mit zunächst 130 Mitarbeiterinnen und Mitarbeitern; dafür investiert die Bundesregierung insgesamt 100 Millionen Euro.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "9f374b0820e5467b320e",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "24cb284b7d2a96246414",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v2-claim-3",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Bund und Länder haben ein Drohnenabwehrzentrum eingerichtet, das ein nationales Lagebild zu Drohnenbewegungen erstellen und Risiken einschätzen soll.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "c602d447d6fddc49d70e",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "7bc153e7ff498f2d4d04",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v2-claim-4",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Im März 2026 ist das KRITIS-Dachgesetz in Kraft getreten und legt bundesweite Mindeststandards sowie Meldepflichten für Betreiber kritischer Infrastrukturen fest.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "bb14aac6c8594bbde2b8",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "35062e0c8e836af165a4",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "a19516cb46ccf3ff9507",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            },
+            {
+              "claim_id": "wt-972d20af6da2b586-v2-claim-5",
+              "story_id": "wt-972d20af6da2b586",
+              "claim": "Die Bundesregierung ordnet die Lage nach dem Vorfall am Leipziger Flughafen als verschärfte hybride Bedrohung ein und nennt vermehrte illegale Drohnenflüge über kritische Infrastruktur.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "059a846a911a1c0b7305",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                },
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+                  "excerpt_hash": "98c3a42746cca4c8962c",
+                  "checked_at": "2026-09-04T20:37:29.426Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T20:37:29.426Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
+              "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T04:51:34.536Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T20:37:29.426Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-d7a0af1afc831caf",
       "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
@@ -67,7 +931,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T17:22:14.000Z",
-          "ingested_at": "2026-09-04T20:21:20.922Z",
+          "ingested_at": "2026-09-04T20:36:32.644Z",
           "provenance": {
             "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
@@ -129,7 +993,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T20:13:08.000Z",
-          "ingested_at": "2026-09-04T20:21:20.922Z",
+          "ingested_at": "2026-09-04T20:36:32.644Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -156,7 +1020,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:21:20.922Z"
+          "checked_at": "2026-09-04T20:36:32.644Z"
         },
         {
           "claim_id": "wt-d7a0af1afc831caf-claim-02",
@@ -176,7 +1040,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:21:20.922Z"
+          "checked_at": "2026-09-04T20:36:32.644Z"
         },
         {
           "claim_id": "wt-d7a0af1afc831caf-claim-03",
@@ -196,7 +1060,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:21:20.922Z"
+          "checked_at": "2026-09-04T20:36:32.644Z"
         },
         {
           "claim_id": "wt-d7a0af1afc831caf-claim-04",
@@ -216,21 +1080,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:21:20.922Z"
+          "checked_at": "2026-09-04T20:36:32.644Z"
         }
       ],
       "content_hash": "578a07f64d655c02ffc6ba32ee652400f19345d51f3437bee5a151871f571471",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_UNSUPPORTED_FRAMEWORK_NUMBER:16,3"
+        "AI_SOURCE_SUMMARY_PARAGRAPHS"
       ],
-      "quality_retry_count": 1,
+      "quality_retry_count": 2,
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T20:21:20.922Z",
+      "updated_at": "2026-09-04T20:36:32.644Z",
       "event_first_seen_at": "2026-09-04T17:39:54.371Z",
       "event_detected_at": "2026-09-04T17:39:54.371Z",
       "event_id": "event-0fef8df3a32c15bcde8d",
@@ -260,13 +1124,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.215366666666666,
+        "source_age_minutes": 23.410733333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 161.44251666666668,
+        "queue_age_minutes": 176.63788333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -4742,7 +5606,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-04T20:21:20.922Z",
+          "ingested_at": "2026-09-04T20:36:32.644Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -4769,7 +5633,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T20:21:20.922Z"
+          "checked_at": "2026-09-04T20:36:32.644Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -4777,11 +5641,11 @@
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T20:21:20.922Z",
+      "updated_at": "2026-09-04T20:36:32.644Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -4811,25 +5675,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 36.332033333333335,
+        "source_age_minutes": 51.5274,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 89.89865,
+        "queue_age_minutes": 105.09401666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 92,
+        "news_freshness_score": 89,
         "freshness_warning": null
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T20:21:20.922Z",
+      "rejected_at": "2026-09-04T20:36:32.644Z",
       "rejection": {
-        "at": "2026-09-04T20:21:20.922Z",
+        "at": "2026-09-04T20:36:32.644Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
+          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -16281,7 +17145,7 @@
       "verification_started_at": "2026-09-04T17:37:02.186Z",
       "publish_ready_at": "2026-09-04T17:37:24.324Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T18:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -16611,9 +17475,12 @@
         "generated_at": "2026-09-04T17:38:07.397Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-04T18:06:22.511Z",
-        "content_hash": "eb9dd012b78e4d29c173d6274d7917537e565f08d68e8eddfcfa66af3aba1600",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "f75d66eabe0bcafd17d820799cc9c7025ca6e7cf0a137145fae74c01ef466a35",
+        "checked_at": "2026-09-04T20:36:32.644Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T02:36:32.644Z",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -16670,23 +17537,16 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T20:01:32.000Z",
-            "ingested_at": "2026-09-04T20:21:20.922Z",
+            "ingested_at": "2026-09-04T20:36:32.644Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "CLAIM_EVIDENCE_NOT_IN_SOURCE"
-        ],
-        "quality_retry_count": 4,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-76dd7f8508f81c11",
@@ -53972,7 +54832,7 @@
       "verification_started_at": "2026-09-04T09:22:32.024Z",
       "publish_ready_at": "2026-09-04T09:22:48.037Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -54275,52 +55135,7 @@
         "fallback_reason": "HIGGSFIELD_RETRY_EXHAUSTED",
         "refresh_failure": "HIGGSFIELD_RETRY_EXHAUSTED"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-04T15:21:35.641Z",
-        "content_hash": "81cb5d63d44d23392a53f615e89cbdefdf6d803863db64c0631615366d6cf29c",
-        "sources": [
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/berlin/berliner-wirtschaft/teure-apartments-in-der-berliner-europacity-gerichtstermin-wegen-verschwundener-sozialwohnungen-steht-fest-16017038.html",
-            "title": "Teure Apartments in der Berliner Europacity: Gerichtstermin wegen verschwundener Sozialwohnungen steht fest",
-            "summary": "Vor eineinhalb Jahren reichte der Senat Klage ein, damit die 215 Wohnungen in der Berliner Europacity endlich als Sozialwohnungen vermietet werden. Nun steht der erste Verhandlungstermin kurz bevor.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T09:13:49.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "4d433f848f3ac634fddd1998e7bcaa570041707a61fa3d660aaaaa882584c18e",
-            "source_item_id": "95e90c22a1ab510646cae7b4ff28b78dd2c1cd21616b5e7295d3dd0ea770958e",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T09:13:49.000Z",
-            "ingested_at": "2026-09-04T09:21:34.386Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-b4f3b5cdcc89bd1d",
@@ -59718,677 +60533,6 @@
             }
           }
         ]
-      }
-    },
-    {
-      "story_id": "wt-972d20af6da2b586",
-      "slug": "was-tut-die-bundesregierung-gegen-hybride-angriffe-und-drohnenvorfalle-a2b586",
-      "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
-      "first_seen": "2026-09-02T06:00:00.000Z",
-      "last_updated": "2026-09-04T04:51:34.536Z",
-      "published_at": "2026-09-04T04:51:34.536Z",
-      "updated_at": "2026-09-04T04:51:34.536Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "bundesregierung-kompakt",
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-          "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
-          "summary": "Der Fund einer Sprengstoff-Drohne am Leipziger Flughafen zeigt deutlich: Deutschland befindet sich zunehmend im Fokus hybrider Bedrohungen, Sabotagen und Drohnenangriffen. Was das bedeutet und was die Bundesregierung dagegen tut, erfahren Sie hier.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-02T06:00:00.000Z",
-          "primary_source": true,
-          "source_priority": 92,
-          "source_topic": "Politik",
-          "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c",
-          "source_item_id": "2eff7152390aa52f9a213db084fb9a5a808bddbacffcf1a4e73720968fce01dc",
-          "publisher_id": "bundesregierung",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-02T06:00:00.000Z",
-          "ingested_at": "2026-09-04T04:36:37.841Z",
-          "provenance": {
-            "origin": "publisher:bundesregierung",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-972d20af6da2b586-v1-claim-1",
-          "story_id": "wt-972d20af6da2b586",
-          "claim": "Die Bundesregierung sagt, sie habe auf die hybride Bedrohungslage bereits reagiert und mehrere Maßnahmen zur Drohnenabwehr umgesetzt oder angestoßen.",
-          "status": "primary_source_claim",
-          "source_id": "bundesregierung-kompakt",
-          "evidence": [
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "c12ee13edf469d09c337",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "070ab6ab7d0e4a3186c1",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "3ef794fa2eeae01740b4",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T04:51:34.536Z"
-        },
-        {
-          "claim_id": "wt-972d20af6da2b586-v1-claim-2",
-          "story_id": "wt-972d20af6da2b586",
-          "claim": "Im März 2026 ist das KRITIS-Dachgesetz in Kraft getreten und soll den Schutz kritischer Infrastruktur in mehreren Sektoren verbessern.",
-          "status": "primary_source_claim",
-          "source_id": "bundesregierung-kompakt",
-          "evidence": [
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "bb14aac6c8594bbde2b8",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "b949af7310fbb61abe82",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "739452d40ad81434f254",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T04:51:34.536Z"
-        },
-        {
-          "claim_id": "wt-972d20af6da2b586-v1-claim-3",
-          "story_id": "wt-972d20af6da2b586",
-          "claim": "Die Bundespolizei verfügt seit Dezember 2025 über eine bundesweit eingesetzte Drohnenabwehreinheit mit zunächst 130 Mitarbeiterinnen und Mitarbeitern und 100 Millionen Euro Investitionen.",
-          "status": "primary_source_claim",
-          "source_id": "bundesregierung-kompakt",
-          "evidence": [
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "9f374b0820e5467b320e",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "24cb284b7d2a96246414",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T04:51:34.536Z"
-        },
-        {
-          "claim_id": "wt-972d20af6da2b586-v1-claim-4",
-          "story_id": "wt-972d20af6da2b586",
-          "claim": "Bund und Länder haben ein Drohnenabwehrzentrum eingerichtet, das ein nationales Lagebild zu Drohnenbewegungen erstellen und Risiken gemeinsam bewerten soll.",
-          "status": "primary_source_claim",
-          "source_id": "bundesregierung-kompakt",
-          "evidence": [
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "c602d447d6fddc49d70e",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "7bc153e7ff498f2d4d04",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T04:51:34.536Z"
-        },
-        {
-          "claim_id": "wt-972d20af6da2b586-v1-claim-5",
-          "story_id": "wt-972d20af6da2b586",
-          "claim": "Die Bundesregierung nennt vermehrte illegale Drohnenflüge über kritische Infrastruktur und führt die Hochstufung der Bedrohungslage unter anderem auf mehr Hinweise aus Geheimdiensten und eigene Erkenntnisse zurück.",
-          "status": "primary_source_claim",
-          "source_id": "bundesregierung-kompakt",
-          "evidence": [
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "98c3a42746cca4c8962c",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "1b3598c6425423988f5f",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "excerpt_hash": "5475e8e7d75739b042f6",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T04:51:34.536Z"
-        }
-      ],
-      "event_id": "event-3c4cec37699684f265d9",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T04:51:21.931Z",
-      "publish_ready_at": "2026-09-04T04:51:34.536Z",
-      "news_status": "preliminary",
-      "deepening_due_at": "2026-09-04T14:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "bundesregierung-kompakt"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Die Bundesregierung veröffentlicht eine FAQ-Seite zu hybriden Angriffen und Drohnenvorfällen. Als Anlass nennt sie den Fund einer mit Sprengstoff bestückten Drohne am Leipziger Flughafen und bezeichnet den Vorfall als sehr ernst zu nehmend. Zugleich verweist sie auf eine fortlaufend verfolgte Lage und auf Beratungen im Nationalen Sicherheitsrat und im Bundeskabinett.\n\nDie Seite перечисlt mehrere Maßnahmen: Das KRITIS-Dachgesetz sei im März 2026 in Kraft getreten, die Bundespolizei habe seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Beschäftigten, dafür würden 100 Millionen Euro investiert. Außerdem sei ein Drohnenabwehrzentrum von Bund und Ländern eingerichtet worden. Die Bundesregierung nennt zudem eine Reform des Bundespolizeigesetzes, Änderungen am Luftsicherheitsgesetz und verweist auf einen Anstieg illegaler Drohnenflüge über kritische Infrastruktur.",
-      "analysis": {
-        "story_id": "wt-972d20af6da2b586",
-        "news_status": "preliminary",
-        "publication_depth": "initial",
-        "summary": "Die Bundesregierung beschreibt eine verschärfte Bedrohungslage durch hybride Angriffe und nennt mehrere bereits laufende Gegenmaßnahmen. Dazu gehören neue Befugnisse, eine Drohnenabwehreinheit und ein gemeinsames Lagezentrum.",
-        "detail_summary": "Gesichert ist zunächst die politische Reaktion der Bundesregierung auf die von ihr geschilderte hybride Bedrohungslage. Die Quelle nennt den Leipziger Drohnenvorfall als Auslöser und verweist auf konkrete Maßnahmen wie das im März 2026 in Kraft getretene KRITIS-Dachgesetz, die Drohnenabwehreinheit der Bundespolizei und ein Drohnenabwehrzentrum von Bund und Ländern. Für die Wirkung ist relevant, dass hier nicht nur kommuniziert, sondern Sicherheitsarchitektur, Zuständigkeiten und technische Abwehrkapazitäten verändert werden. Der Wirkpfad läuft über frühere Erkennung, koordiniertere Lagebewertung und schnellere Abwehr von Vorfällen an kritischer Infrastruktur. Möglich sind dadurch geringere Verwundbarkeit und bessere Resilienz, zugleich bleiben Umfang, Effektivität und tatsächliche Umsetzung der Maßnahmen offen. Die Quelle ist jedoch eine Regierungsdarstellung; unabhängige Bestätigung der Lagebewertung oder der behaupteten Wirksamkeit liegt hier nicht vor.",
-        "why_relevant": "Die Meldung beschreibt staatliche Sicherheitsmaßnahmen mit möglichem Einfluss auf kritische Infrastruktur, Abwehrkapazitäten und Zuständigkeiten. Das ist materiell, weil Regeln, Ressourcen und Schutzarchitektur verändert werden.",
-        "status": "laufende Umsetzung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Die Maßnahmen zielen auf Schutz von Bevölkerung und kritischer Infrastruktur vor Drohnen- und Sabotagevorfällen. Betroffen sind Sicherheitslage, öffentliche Dienste und mögliche Alltagsstörungen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht beschrieben. Allenfalls indirekt kann der Schutz von Versorgungsinfrastruktur Umweltfolgen von Ausfällen begrenzen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Quelle betrifft Sicherheitsstaat, Zuständigkeiten und Eingriffsbefugnisse. Für demokratische Kontrolle relevant sind Transparenz, Verhältnismäßigkeit und spätere parlamentarische Prüfung."
-        },
-        "importance": "hoch",
-        "impact_potential": "Mögliche höhere Abwehr- und Reaktionsfähigkeit gegen Drohnenvorfälle an kritischer Infrastruktur sowie bessere Koordination zwischen Bund, Ländern und Sicherheitsbehörden.",
-        "impact_risks": [
-          "Ausweitung von Sicherheitsbefugnissen ohne ausreichend transparente Kontrolle",
-          "Fehlallokation von Ressourcen bei unklarer tatsächlicher Bedrohungslage",
-          "Technische und organisatorische Lücken trotz angekündigter Maßnahmen"
-        ],
-        "mechanisms": [
-          "Rechtsänderungen erweitern Befugnisse und Zuständigkeiten",
-          "Ein Lagezentrum bündelt Informationen und Risikobewertungen",
-          "Spezialisierte Einheiten verbessern Erkennung und Abwehr von Drohnen"
-        ],
-        "first_order": [
-          "mehr behördliche Kapazität zur Drohnenabwehr",
-          "neue Mindeststandards und Meldepflichten für kritische Infrastruktur"
-        ],
-        "second_order": [
-          "veränderte Sicherheitskosten für Betreiber kritischer Infrastruktur",
-          "mögliche Verlagerung von Bedrohungen in andere Angriffsformen"
-        ],
-        "third_order": [
-          "dauerhafte Verschiebung der Sicherheitsarchitektur zugunsten präventiver Überwachung",
-          "mögliche neue Standards für den Schutz kritischer Versorgungssysteme"
-        ],
-        "systemic_relevance": "Die Meldung berührt die Resilienz kritischer Infrastruktur und damit einen systemrelevanten Bereich mit möglichen Kaskaden auf Energie, Transport, Gesundheit und Verwaltung.",
-        "transformation_potential": "Begrenzt bis mittel: eher Ausbau und Verdichtung bestehender Sicherheitsstrukturen als ein grundlegend neues Regime.",
-        "resilience": "Potenzial zur Stärkung von Resilienz durch bessere Lagebilder, Abwehr und Meldewege; die tatsächliche Robustheit bleibt in der Quelle unbelegt.",
-        "side_effects": [
-          "höhere Kosten für Staat und Betreiber",
-          "mögliche Normalisierung eines dauerhaft erhöhten Sicherheitsniveaus",
-          "mehr Koordinationsaufwand zwischen Bund, Ländern und Betreibern"
-        ],
-        "uncertainties": [
-          "ob die genannten Maßnahmen bereits vollständig umgesetzt sind",
-          "wie wirksam die neue Drohnenabwehr in der Praxis ist",
-          "welche konkreten Vorfälle tatsächlich staatlich gesteuert waren"
-        ],
-        "evidence_level": "primärquellenbasiert, aber ohne unabhängige Bestätigung der Wirksamkeit oder der Lagezuschreibung",
-        "attribution": "Die Maßnahmen und Bewertungen werden von der Bundesregierung selbst dargestellt; die Quelle ist primär, aber interessengeleitet.",
-        "watch_next": [
-          "Umsetzung der Gesetzesänderungen und operative Wirksamkeit der Drohnenabwehr beobachten"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 9, 11, 16"
-        ],
-        "publication_gate": {
-          "news_value": "implementation",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "primary_source_direct",
-          "duplicate_status": "new_story",
-          "rationale": "Die Quelle enthält neue staatliche Maßnahmen und einen konkreten Sicherheitskontext mit Bezug zu kritischer Infrastruktur. Das ist materiell und nicht bloß eine Meinungsäußerung."
-        },
-        "visuals": {
-          "key_figures": [
-            {
-              "label": "Mitarbeiterinnen und Mitarbeiter",
-              "value": "130",
-              "unit": "Personen",
-              "context": "Größe der neuen Drohnenabwehreinheit"
-            },
-            {
-              "label": "Investition",
-              "value": "100 Millionen",
-              "unit": "Euro",
-              "context": "Bundesmittel für die Drohnenabwehreinheit"
-            }
-          ],
-          "affected_groups": [
-            "staat",
-            "unternehmen",
-            "kommunen",
-            "europa"
-          ],
-          "timeline": [
-            {
-              "date": "2025-12",
-              "label": "Drohnenabwehreinheit der Bundespolizei"
-            },
-            {
-              "date": "2026-03",
-              "label": "KRITIS-Dachgesetz in Kraft"
-            }
-          ],
-          "tendency": {
-            "human": "chance",
-            "planet": "offen",
-            "democracy": "gemischt"
-          }
-        },
-        "publication_recommendation": true
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T04:51:34.536Z",
-          "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
-          "source_summary": "Die Bundesregierung veröffentlicht eine FAQ-Seite zu hybriden Angriffen und Drohnenvorfällen. Als Anlass nennt sie den Fund einer mit Sprengstoff bestückten Drohne am Leipziger Flughafen und bezeichnet den Vorfall als sehr ernst zu nehmend. Zugleich verweist sie auf eine fortlaufend verfolgte Lage und auf Beratungen im Nationalen Sicherheitsrat und im Bundeskabinett.\n\nDie Seite перечисlt mehrere Maßnahmen: Das KRITIS-Dachgesetz sei im März 2026 in Kraft getreten, die Bundespolizei habe seit Dezember 2025 eine Drohnenabwehreinheit mit zunächst 130 Beschäftigten, dafür würden 100 Millionen Euro investiert. Außerdem sei ein Drohnenabwehrzentrum von Bund und Ländern eingerichtet worden. Die Bundesregierung nennt zudem eine Reform des Bundespolizeigesetzes, Änderungen am Luftsicherheitsgesetz und verweist auf einen Anstieg illegaler Drohnenflüge über kritische Infrastruktur.",
-          "analysis": {
-            "story_id": "wt-972d20af6da2b586",
-            "news_status": "preliminary",
-            "publication_depth": "initial",
-            "summary": "Die Bundesregierung beschreibt eine verschärfte Bedrohungslage durch hybride Angriffe und nennt mehrere bereits laufende Gegenmaßnahmen. Dazu gehören neue Befugnisse, eine Drohnenabwehreinheit und ein gemeinsames Lagezentrum.",
-            "detail_summary": "Gesichert ist zunächst die politische Reaktion der Bundesregierung auf die von ihr geschilderte hybride Bedrohungslage. Die Quelle nennt den Leipziger Drohnenvorfall als Auslöser und verweist auf konkrete Maßnahmen wie das im März 2026 in Kraft getretene KRITIS-Dachgesetz, die Drohnenabwehreinheit der Bundespolizei und ein Drohnenabwehrzentrum von Bund und Ländern. Für die Wirkung ist relevant, dass hier nicht nur kommuniziert, sondern Sicherheitsarchitektur, Zuständigkeiten und technische Abwehrkapazitäten verändert werden. Der Wirkpfad läuft über frühere Erkennung, koordiniertere Lagebewertung und schnellere Abwehr von Vorfällen an kritischer Infrastruktur. Möglich sind dadurch geringere Verwundbarkeit und bessere Resilienz, zugleich bleiben Umfang, Effektivität und tatsächliche Umsetzung der Maßnahmen offen. Die Quelle ist jedoch eine Regierungsdarstellung; unabhängige Bestätigung der Lagebewertung oder der behaupteten Wirksamkeit liegt hier nicht vor.",
-            "why_relevant": "Die Meldung beschreibt staatliche Sicherheitsmaßnahmen mit möglichem Einfluss auf kritische Infrastruktur, Abwehrkapazitäten und Zuständigkeiten. Das ist materiell, weil Regeln, Ressourcen und Schutzarchitektur verändert werden.",
-            "status": "laufende Umsetzung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Die Maßnahmen zielen auf Schutz von Bevölkerung und kritischer Infrastruktur vor Drohnen- und Sabotagevorfällen. Betroffen sind Sicherheitslage, öffentliche Dienste und mögliche Alltagsstörungen."
-            },
-            "planet": {
-              "relevance": "gering",
-              "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht beschrieben. Allenfalls indirekt kann der Schutz von Versorgungsinfrastruktur Umweltfolgen von Ausfällen begrenzen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Die Quelle betrifft Sicherheitsstaat, Zuständigkeiten und Eingriffsbefugnisse. Für demokratische Kontrolle relevant sind Transparenz, Verhältnismäßigkeit und spätere parlamentarische Prüfung."
-            },
-            "importance": "hoch",
-            "impact_potential": "Mögliche höhere Abwehr- und Reaktionsfähigkeit gegen Drohnenvorfälle an kritischer Infrastruktur sowie bessere Koordination zwischen Bund, Ländern und Sicherheitsbehörden.",
-            "impact_risks": [
-              "Ausweitung von Sicherheitsbefugnissen ohne ausreichend transparente Kontrolle",
-              "Fehlallokation von Ressourcen bei unklarer tatsächlicher Bedrohungslage",
-              "Technische und organisatorische Lücken trotz angekündigter Maßnahmen"
-            ],
-            "mechanisms": [
-              "Rechtsänderungen erweitern Befugnisse und Zuständigkeiten",
-              "Ein Lagezentrum bündelt Informationen und Risikobewertungen",
-              "Spezialisierte Einheiten verbessern Erkennung und Abwehr von Drohnen"
-            ],
-            "first_order": [
-              "mehr behördliche Kapazität zur Drohnenabwehr",
-              "neue Mindeststandards und Meldepflichten für kritische Infrastruktur"
-            ],
-            "second_order": [
-              "veränderte Sicherheitskosten für Betreiber kritischer Infrastruktur",
-              "mögliche Verlagerung von Bedrohungen in andere Angriffsformen"
-            ],
-            "third_order": [
-              "dauerhafte Verschiebung der Sicherheitsarchitektur zugunsten präventiver Überwachung",
-              "mögliche neue Standards für den Schutz kritischer Versorgungssysteme"
-            ],
-            "systemic_relevance": "Die Meldung berührt die Resilienz kritischer Infrastruktur und damit einen systemrelevanten Bereich mit möglichen Kaskaden auf Energie, Transport, Gesundheit und Verwaltung.",
-            "transformation_potential": "Begrenzt bis mittel: eher Ausbau und Verdichtung bestehender Sicherheitsstrukturen als ein grundlegend neues Regime.",
-            "resilience": "Potenzial zur Stärkung von Resilienz durch bessere Lagebilder, Abwehr und Meldewege; die tatsächliche Robustheit bleibt in der Quelle unbelegt.",
-            "side_effects": [
-              "höhere Kosten für Staat und Betreiber",
-              "mögliche Normalisierung eines dauerhaft erhöhten Sicherheitsniveaus",
-              "mehr Koordinationsaufwand zwischen Bund, Ländern und Betreibern"
-            ],
-            "uncertainties": [
-              "ob die genannten Maßnahmen bereits vollständig umgesetzt sind",
-              "wie wirksam die neue Drohnenabwehr in der Praxis ist",
-              "welche konkreten Vorfälle tatsächlich staatlich gesteuert waren"
-            ],
-            "evidence_level": "primärquellenbasiert, aber ohne unabhängige Bestätigung der Wirksamkeit oder der Lagezuschreibung",
-            "attribution": "Die Maßnahmen und Bewertungen werden von der Bundesregierung selbst dargestellt; die Quelle ist primär, aber interessengeleitet.",
-            "watch_next": [
-              "Umsetzung der Gesetzesänderungen und operative Wirksamkeit der Drohnenabwehr beobachten"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 9, 11, 16"
-            ],
-            "publication_gate": {
-              "news_value": "implementation",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "primary_source_direct",
-              "duplicate_status": "new_story",
-              "rationale": "Die Quelle enthält neue staatliche Maßnahmen und einen konkreten Sicherheitskontext mit Bezug zu kritischer Infrastruktur. Das ist materiell und nicht bloß eine Meinungsäußerung."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "Mitarbeiterinnen und Mitarbeiter",
-                  "value": "130",
-                  "unit": "Personen",
-                  "context": "Größe der neuen Drohnenabwehreinheit"
-                },
-                {
-                  "label": "Investition",
-                  "value": "100 Millionen",
-                  "unit": "Euro",
-                  "context": "Bundesmittel für die Drohnenabwehreinheit"
-                }
-              ],
-              "affected_groups": [
-                "staat",
-                "unternehmen",
-                "kommunen",
-                "europa"
-              ],
-              "timeline": [
-                {
-                  "date": "2025-12",
-                  "label": "Drohnenabwehreinheit der Bundespolizei"
-                },
-                {
-                  "date": "2026-03",
-                  "label": "KRITIS-Dachgesetz in Kraft"
-                }
-              ],
-              "tendency": {
-                "human": "chance",
-                "planet": "offen",
-                "democracy": "gemischt"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-972d20af6da2b586-v1-claim-1",
-              "story_id": "wt-972d20af6da2b586",
-              "claim": "Die Bundesregierung sagt, sie habe auf die hybride Bedrohungslage bereits reagiert und mehrere Maßnahmen zur Drohnenabwehr umgesetzt oder angestoßen.",
-              "status": "primary_source_claim",
-              "source_id": "bundesregierung-kompakt",
-              "evidence": [
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "c12ee13edf469d09c337",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                },
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "070ab6ab7d0e4a3186c1",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                },
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "3ef794fa2eeae01740b4",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "claim_id": "wt-972d20af6da2b586-v1-claim-2",
-              "story_id": "wt-972d20af6da2b586",
-              "claim": "Im März 2026 ist das KRITIS-Dachgesetz in Kraft getreten und soll den Schutz kritischer Infrastruktur in mehreren Sektoren verbessern.",
-              "status": "primary_source_claim",
-              "source_id": "bundesregierung-kompakt",
-              "evidence": [
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "bb14aac6c8594bbde2b8",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                },
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "b949af7310fbb61abe82",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                },
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "739452d40ad81434f254",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "claim_id": "wt-972d20af6da2b586-v1-claim-3",
-              "story_id": "wt-972d20af6da2b586",
-              "claim": "Die Bundespolizei verfügt seit Dezember 2025 über eine bundesweit eingesetzte Drohnenabwehreinheit mit zunächst 130 Mitarbeiterinnen und Mitarbeitern und 100 Millionen Euro Investitionen.",
-              "status": "primary_source_claim",
-              "source_id": "bundesregierung-kompakt",
-              "evidence": [
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "9f374b0820e5467b320e",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                },
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "24cb284b7d2a96246414",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "claim_id": "wt-972d20af6da2b586-v1-claim-4",
-              "story_id": "wt-972d20af6da2b586",
-              "claim": "Bund und Länder haben ein Drohnenabwehrzentrum eingerichtet, das ein nationales Lagebild zu Drohnenbewegungen erstellen und Risiken gemeinsam bewerten soll.",
-              "status": "primary_source_claim",
-              "source_id": "bundesregierung-kompakt",
-              "evidence": [
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "c602d447d6fddc49d70e",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                },
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "7bc153e7ff498f2d4d04",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            },
-            {
-              "claim_id": "wt-972d20af6da2b586-v1-claim-5",
-              "story_id": "wt-972d20af6da2b586",
-              "claim": "Die Bundesregierung nennt vermehrte illegale Drohnenflüge über kritische Infrastruktur und führt die Hochstufung der Bedrohungslage unter anderem auf mehr Hinweise aus Geheimdiensten und eigene Erkenntnisse zurück.",
-              "status": "primary_source_claim",
-              "source_id": "bundesregierung-kompakt",
-              "evidence": [
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "98c3a42746cca4c8962c",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                },
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "1b3598c6425423988f5f",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                },
-                {
-                  "source_id": "bundesregierung-kompakt",
-                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-                  "excerpt_hash": "5475e8e7d75739b042f6",
-                  "checked_at": "2026-09-04T04:51:34.536Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T04:51:34.536Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "bundesregierung-kompakt",
-              "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-              "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T04:51:34.536Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "89221950e15d7889a81010e57f8be34aad0c701622d7fb36f7bf0ea685a4b725"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "f3b5c8ee781c6e3bf1b0554d698d327bda390e9d8af36bc3de5305333491b926"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-972d20af6da2b586-31011c4e3d76a914-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "4b9c19c4e311b6a9d835242a639c5937fa2156b2432e031877489e90f7e60957"
-        },
-        "source_visual": null,
-        "fingerprint": "31011c4e3d76a914c15e5fffac1949919c4f3c11bd3d4bf1c0034d669e699065",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-04T09:50:31.346Z",
-        "status": "generated"
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-04T15:21:35.641Z",
-        "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/hybride-bedrohung-fragen-antworten-faq-2449150",
-            "title": "Was tut die Bundesregierung gegen hybride Angriffe und Drohnenvorfälle?",
-            "summary": "Der Fund einer Sprengstoff-Drohne am Leipziger Flughafen zeigt deutlich: Deutschland befindet sich zunehmend im Fokus hybrider Bedrohungen, Sabotagen und Drohnenangriffen. Was das bedeutet und was die Bundesregierung dagegen tut, erfahren Sie hier.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T06:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "f119a98cbf0994c92d17abd7116a14ef081103c7a608719bdb0660a8db7e7b7c",
-            "source_item_id": "2eff7152390aa52f9a213db084fb9a5a808bddbacffcf1a4e73720968fce01dc",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T06:00:00.000Z",
-            "ingested_at": "2026-09-04T20:21:20.922Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
-        "quality_retry_count": 2,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
       }
     },
     {
@@ -91687,5 +91831,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T19:54:51.283Z"
+  "public_updated_at": "2026-09-04T20:36:32.644Z"
 }
