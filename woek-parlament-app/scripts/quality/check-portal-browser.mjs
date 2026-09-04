@@ -97,10 +97,16 @@ try {
   const sources = views.getByRole("link", { name: "Quellen", exact: true });
   await sources.scrollIntoViewIfNeeded();
   await sources.focus();
-  const before = await page.evaluate(() => scrollY);
+  const before = await sources.boundingBox();
+  assert.ok(before);
   await page.keyboard.press("Enter");
   await page.waitForURL("**ansicht=quellen");
-  assert.ok(Math.abs(await page.evaluate(() => scrollY) - before) < 8, "view change must not jump to page top");
+  const after = await sources.boundingBox();
+  assert.ok(after);
+  // Browser scroll anchoring compensates for the overview-only block above
+  // the tabs disappearing. The user's visible focus position must stay put.
+  assert.ok(Math.abs(after.y - before.y) < 8, "view change must preserve the visible tab position");
+  assert.ok(await page.evaluate(() => scrollY > 0), "view change must not jump to page top");
   assert.equal(await sources.evaluate((el) => el === document.activeElement), true);
   await page.goBack({ waitUntil: "networkidle" });
   assert.equal(new URL(page.url()).pathname, decision);
