@@ -1,7 +1,549 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T01:51:32.529Z",
+  "updated_at": "2026-09-04T02:06:22.151Z",
   "stories": [
+    {
+      "story_id": "wt-f3d585eac14dec76",
+      "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+      "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+      "first_seen": "2026-09-03T16:21:00.000Z",
+      "last_updated": "2026-09-04T02:07:51.145Z",
+      "published_at": "2026-09-04T02:07:51.145Z",
+      "updated_at": "2026-09-04T02:07:51.145Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+          "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+          "summary": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde erreicht die taz ein Bekennerschreiben. Ist es authentisch? Das lässt sich nicht zweifelsfrei klären. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:21:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f31b60b5c009745086e1f791654301a0737aafb77aeb46bac4a032370f83873a",
+          "source_item_id": "195138e3840809bf416a757a6d536b0c2bd9d84ed9fe4a85a3437fba9c8a8edf",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T16:21:00.000Z",
+          "ingested_at": "2026-09-03T22:21:17.010Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f3d585eac14dec76-v1-claim-1",
+          "story_id": "wt-f3d585eac14dec76",
+          "claim": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde ist bei der taz ein Bekennerschreiben eingegangen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+              "excerpt_hash": "4e47af749c9a427eea14",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T02:07:51.145Z"
+        },
+        {
+          "claim_id": "wt-f3d585eac14dec76-v1-claim-2",
+          "story_id": "wt-f3d585eac14dec76",
+          "claim": "Das Schreiben nennt einen Einzeltäter aus Nordrhein-Westfalen und beschreibt detailliert selbstgebaute Raketen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+              "excerpt_hash": "2b06196808538d7f9ab7",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+              "excerpt_hash": "1b49f61def68053ad553",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T02:07:51.145Z"
+        },
+        {
+          "claim_id": "wt-f3d585eac14dec76-v1-claim-3",
+          "story_id": "wt-f3d585eac14dec76",
+          "claim": "Die Authentizität des Schreibens ist nach Darstellung der taz nicht zweifelsfrei zu klären.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+              "excerpt_hash": "8d28b8d96ee66f9ae106",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T02:07:51.145Z"
+        },
+        {
+          "claim_id": "wt-f3d585eac14dec76-v1-claim-4",
+          "story_id": "wt-f3d585eac14dec76",
+          "claim": "Eine Sprecherin des Brandenburger Polizeipräsidiums sagte, dort sei ein Bekennerschreiben zu der Tat bisher nicht bekannt.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+              "excerpt_hash": "237d2bd173a4fc14f43f",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+              "excerpt_hash": "29e0e8a03baa57813037",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T02:07:51.145Z"
+        },
+        {
+          "claim_id": "wt-f3d585eac14dec76-v1-claim-5",
+          "story_id": "wt-f3d585eac14dec76",
+          "claim": "Im Schreiben werden auch weitere Orte in Brandenburg und einer in Sachsen genannt, an denen angeblich Hochspannungsleitungen attackiert worden seien.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+              "excerpt_hash": "77ffe188d033cce66e14",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+              "excerpt_hash": "8b34447a72b7b57fca03",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-04T02:07:51.145Z"
+        }
+      ],
+      "event_id": "event-f0b1482b8ce86ec1fab2",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-04T02:07:39.921Z",
+      "publish_ready_at": "2026-09-04T02:07:51.145Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-04T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Ermittler klären die Echtheit des Bekennerschreibens.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Polizei oder Ermittler bewerten das Schreiben eindeutig als echt, falsch oder nicht belegbar.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-82c1d1ebd142a53a",
+          "announced_at": "2026-09-03T16:21:00.000Z",
+          "follow_up_date": "2026-09-11T02:07:51.145Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "7cc3463226d4989cf794b648503cb3da1dc5103b59b12760d5725397320362dc",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde berichtet die taz, dass dort ein Bekennerschreiben eingegangen sei. Das Schreiben soll nach einem Poststempel in Nordrhein-Westfalen abgeschickt worden sein und einen Einzeltäter beschreiben, der selbstgebaute Raketen eingesetzt habe.\n\nDie Redaktion schreibt, die Authentizität lasse sich nicht zweifelsfrei belegen. Eine Sprecherin des Brandenburger Polizeipräsidiums sagte laut Bericht, der Polizei sei ein Bekennerschreiben zu der Tat bisher nicht bekannt. Im Schreiben würden außerdem weitere Orte in Brandenburg und einer in Sachsen genannt, an denen angeblich ebenfalls Hochspannungsleitungen attackiert worden seien.",
+      "analysis": {
+        "story_id": "wt-f3d585eac14dec76",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Ein Bekennerschreiben zum Anschlag auf das Umspannwerk Jänschwalde ist bei der taz eingegangen. Seine Echtheit ist nach dem Bericht offen.",
+        "detail_summary": "Gesichert ist zunächst nur, dass die taz nach dem Anschlag auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben erhalten hat. Der Bericht nennt darin einen angeblichen Einzeltäter aus Nordrhein-Westfalen und beschreibt selbstgebaute Raketen sowie weitere behauptete Angriffe an anderen Orten. Zugleich hält die Redaktion fest, dass sich die Authentizität des Schreibens nicht zweifelsfrei klären lasse. Die Brandenburger Polizei sagte laut taz außerdem, ihr sei ein solches Bekennerschreiben bisher nicht bekannt. Für die öffentliche Einordnung ist das relevant, weil es um einen möglichen Angriff auf kritische Infrastruktur und um die Frage geht, ob das Schreiben Ermittlungen, Aufmerksamkeit und Schutzmaßnahmen beeinflusst. Die Wirkung bleibt vorerst potenziell: belastbar ist noch nicht, ob das Schreiben echt ist oder nur eine falsche Zuschreibung darstellt.",
+        "why_relevant": "Mögliche Sabotage an kritischer Infrastruktur und ein dazugehöriges Bekennerschreiben betreffen Sicherheitslage, Ermittlungen und Schutz kritischer Netze.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Möglicher Angriff auf Strominfrastruktur kann Versorgungsstörungen, Angst und Ermittlungsfolgen für viele Menschen auslösen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umwelt- oder Klimawirkpfad ist aus der vorliegenden Meldung nicht belastbar ableitbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Frage berührt staatliche Sicherheits- und Korrekturfähigkeit bei Angriffen auf kritische Infrastruktur."
+        },
+        "importance": "mittel",
+        "impact_potential": "Wenn das Schreiben echt ist, kann es Ermittlungen, Schutzmaßnahmen und die Wahrnehmung der Sicherheit kritischer Infrastruktur beeinflussen; wenn nicht, vor allem die Täuschungs- und Desinformationslage.",
+        "impact_risks": [
+          "Falsche Zuschreibungen können Ermittlungen und öffentliche Einordnung verzerren.",
+          "Ein echter Bezug könnte zusätzliche Sicherungsmaßnahmen an Stromanlagen auslösen."
+        ],
+        "mechanisms": [
+          "Bekennerschreiben verändert die Informationslage für Polizei und Öffentlichkeit.",
+          "Angriffe auf kritische Infrastruktur können Schutz- und Kontrollaufwand erhöhen."
+        ],
+        "first_order": [
+          "mehr Ermittlungsaufwand zur Prüfung der Echtheit",
+          "mögliche Anpassung von Schutzmaßnahmen an Umspannwerken"
+        ],
+        "second_order": [
+          "höhere Kosten und organisatorischer Aufwand für Betreiber und Behörden",
+          "mehr Vorsicht bei öffentlichen Angaben zu mutmaßlichen Tätern"
+        ],
+        "third_order": [
+          "dauerhaft verschärfte Sicherheitsstandards für kritische Infrastruktur",
+          "mögliche Folgewirkungen auf Vertrauen in Schutz und Resilienz des Stromnetzes"
+        ],
+        "systemic_relevance": "Kritische Infrastruktur ist systemrelevant; schon der Verdacht auf organisierte Sabotage kann Schutzarchitektur und Krisenkommunikation beeinflussen.",
+        "transformation_potential": "Kein Transformationsnachweis, aber möglicher Anstoß für strengere Sicherung und bessere Verifikationsprozesse bei Sabotagehinweisen.",
+        "resilience": "Die Lage prüft die Belastbarkeit von Strominfrastruktur und Ermittlungsfähigkeit; die Reversibilität hängt davon ab, ob das Schreiben echt ist.",
+        "side_effects": [
+          "öffentliche Verunsicherung bei unklarer Beleglage",
+          "mögliche Fehlpriorisierung von Schutzressourcen"
+        ],
+        "uncertainties": [
+          "Ob das Bekennerschreiben echt ist, bleibt offen.",
+          "Ob und wie weit die genannten weiteren Orte tatsächlich betroffen waren, ist in der Meldung nicht geklärt."
+        ],
+        "evidence_level": "attributed_single_source mit offener Authentizität des Schreibens",
+        "attribution": "Die Kernangaben stammen aus einem taz-Bericht; unabhängige Bestätigung der Echtheit liegt in den gelieferten Quellen nicht vor.",
+        "watch_next": [
+          "Echtheitsbewertung der Ermittler",
+          "Bestätigung oder Widerlegung der genannten weiteren Angriffe"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 9, SDG 11, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Neue Information ist das eingegangene Bekennerschreiben samt inhaltlicher Details; wegen kritischer Infrastruktur und offener Authentizität berichtenswert, aber nur vorsichtig belegbar."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Ort des Anschlags",
+              "value": "Jänschwalde",
+              "unit": "Ort",
+              "context": "genannter Tatort des Umspannwerks",
+              "claim_id": "wt-f3d585eac14dec76-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "beschaeftigte",
+            "verbraucherinnen"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T02:07:51.145Z",
+          "content_hash": "7cc3463226d4989cf794b648503cb3da1dc5103b59b12760d5725397320362dc",
+          "source_summary": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde berichtet die taz, dass dort ein Bekennerschreiben eingegangen sei. Das Schreiben soll nach einem Poststempel in Nordrhein-Westfalen abgeschickt worden sein und einen Einzeltäter beschreiben, der selbstgebaute Raketen eingesetzt habe.\n\nDie Redaktion schreibt, die Authentizität lasse sich nicht zweifelsfrei belegen. Eine Sprecherin des Brandenburger Polizeipräsidiums sagte laut Bericht, der Polizei sei ein Bekennerschreiben zu der Tat bisher nicht bekannt. Im Schreiben würden außerdem weitere Orte in Brandenburg und einer in Sachsen genannt, an denen angeblich ebenfalls Hochspannungsleitungen attackiert worden seien.",
+          "analysis": {
+            "story_id": "wt-f3d585eac14dec76",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Ein Bekennerschreiben zum Anschlag auf das Umspannwerk Jänschwalde ist bei der taz eingegangen. Seine Echtheit ist nach dem Bericht offen.",
+            "detail_summary": "Gesichert ist zunächst nur, dass die taz nach dem Anschlag auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben erhalten hat. Der Bericht nennt darin einen angeblichen Einzeltäter aus Nordrhein-Westfalen und beschreibt selbstgebaute Raketen sowie weitere behauptete Angriffe an anderen Orten. Zugleich hält die Redaktion fest, dass sich die Authentizität des Schreibens nicht zweifelsfrei klären lasse. Die Brandenburger Polizei sagte laut taz außerdem, ihr sei ein solches Bekennerschreiben bisher nicht bekannt. Für die öffentliche Einordnung ist das relevant, weil es um einen möglichen Angriff auf kritische Infrastruktur und um die Frage geht, ob das Schreiben Ermittlungen, Aufmerksamkeit und Schutzmaßnahmen beeinflusst. Die Wirkung bleibt vorerst potenziell: belastbar ist noch nicht, ob das Schreiben echt ist oder nur eine falsche Zuschreibung darstellt.",
+            "why_relevant": "Mögliche Sabotage an kritischer Infrastruktur und ein dazugehöriges Bekennerschreiben betreffen Sicherheitslage, Ermittlungen und Schutz kritischer Netze.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Möglicher Angriff auf Strominfrastruktur kann Versorgungsstörungen, Angst und Ermittlungsfolgen für viele Menschen auslösen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Umwelt- oder Klimawirkpfad ist aus der vorliegenden Meldung nicht belastbar ableitbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Frage berührt staatliche Sicherheits- und Korrekturfähigkeit bei Angriffen auf kritische Infrastruktur."
+            },
+            "importance": "mittel",
+            "impact_potential": "Wenn das Schreiben echt ist, kann es Ermittlungen, Schutzmaßnahmen und die Wahrnehmung der Sicherheit kritischer Infrastruktur beeinflussen; wenn nicht, vor allem die Täuschungs- und Desinformationslage.",
+            "impact_risks": [
+              "Falsche Zuschreibungen können Ermittlungen und öffentliche Einordnung verzerren.",
+              "Ein echter Bezug könnte zusätzliche Sicherungsmaßnahmen an Stromanlagen auslösen."
+            ],
+            "mechanisms": [
+              "Bekennerschreiben verändert die Informationslage für Polizei und Öffentlichkeit.",
+              "Angriffe auf kritische Infrastruktur können Schutz- und Kontrollaufwand erhöhen."
+            ],
+            "first_order": [
+              "mehr Ermittlungsaufwand zur Prüfung der Echtheit",
+              "mögliche Anpassung von Schutzmaßnahmen an Umspannwerken"
+            ],
+            "second_order": [
+              "höhere Kosten und organisatorischer Aufwand für Betreiber und Behörden",
+              "mehr Vorsicht bei öffentlichen Angaben zu mutmaßlichen Tätern"
+            ],
+            "third_order": [
+              "dauerhaft verschärfte Sicherheitsstandards für kritische Infrastruktur",
+              "mögliche Folgewirkungen auf Vertrauen in Schutz und Resilienz des Stromnetzes"
+            ],
+            "systemic_relevance": "Kritische Infrastruktur ist systemrelevant; schon der Verdacht auf organisierte Sabotage kann Schutzarchitektur und Krisenkommunikation beeinflussen.",
+            "transformation_potential": "Kein Transformationsnachweis, aber möglicher Anstoß für strengere Sicherung und bessere Verifikationsprozesse bei Sabotagehinweisen.",
+            "resilience": "Die Lage prüft die Belastbarkeit von Strominfrastruktur und Ermittlungsfähigkeit; die Reversibilität hängt davon ab, ob das Schreiben echt ist.",
+            "side_effects": [
+              "öffentliche Verunsicherung bei unklarer Beleglage",
+              "mögliche Fehlpriorisierung von Schutzressourcen"
+            ],
+            "uncertainties": [
+              "Ob das Bekennerschreiben echt ist, bleibt offen.",
+              "Ob und wie weit die genannten weiteren Orte tatsächlich betroffen waren, ist in der Meldung nicht geklärt."
+            ],
+            "evidence_level": "attributed_single_source mit offener Authentizität des Schreibens",
+            "attribution": "Die Kernangaben stammen aus einem taz-Bericht; unabhängige Bestätigung der Echtheit liegt in den gelieferten Quellen nicht vor.",
+            "watch_next": [
+              "Echtheitsbewertung der Ermittler",
+              "Bestätigung oder Widerlegung der genannten weiteren Angriffe"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 9, SDG 11, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neue Information ist das eingegangene Bekennerschreiben samt inhaltlicher Details; wegen kritischer Infrastruktur und offener Authentizität berichtenswert, aber nur vorsichtig belegbar."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Ort des Anschlags",
+                  "value": "Jänschwalde",
+                  "unit": "Ort",
+                  "context": "genannter Tatort des Umspannwerks",
+                  "claim_id": "wt-f3d585eac14dec76-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "beschaeftigte",
+                "verbraucherinnen"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-f3d585eac14dec76-v1-claim-1",
+              "story_id": "wt-f3d585eac14dec76",
+              "claim": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde ist bei der taz ein Bekennerschreiben eingegangen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+                  "excerpt_hash": "4e47af749c9a427eea14",
+                  "checked_at": "2026-09-04T02:07:51.145Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            },
+            {
+              "claim_id": "wt-f3d585eac14dec76-v1-claim-2",
+              "story_id": "wt-f3d585eac14dec76",
+              "claim": "Das Schreiben nennt einen Einzeltäter aus Nordrhein-Westfalen und beschreibt detailliert selbstgebaute Raketen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+                  "excerpt_hash": "2b06196808538d7f9ab7",
+                  "checked_at": "2026-09-04T02:07:51.145Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+                  "excerpt_hash": "1b49f61def68053ad553",
+                  "checked_at": "2026-09-04T02:07:51.145Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            },
+            {
+              "claim_id": "wt-f3d585eac14dec76-v1-claim-3",
+              "story_id": "wt-f3d585eac14dec76",
+              "claim": "Die Authentizität des Schreibens ist nach Darstellung der taz nicht zweifelsfrei zu klären.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+                  "excerpt_hash": "8d28b8d96ee66f9ae106",
+                  "checked_at": "2026-09-04T02:07:51.145Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            },
+            {
+              "claim_id": "wt-f3d585eac14dec76-v1-claim-4",
+              "story_id": "wt-f3d585eac14dec76",
+              "claim": "Eine Sprecherin des Brandenburger Polizeipräsidiums sagte, dort sei ein Bekennerschreiben zu der Tat bisher nicht bekannt.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+                  "excerpt_hash": "237d2bd173a4fc14f43f",
+                  "checked_at": "2026-09-04T02:07:51.145Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+                  "excerpt_hash": "29e0e8a03baa57813037",
+                  "checked_at": "2026-09-04T02:07:51.145Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            },
+            {
+              "claim_id": "wt-f3d585eac14dec76-v1-claim-5",
+              "story_id": "wt-f3d585eac14dec76",
+              "claim": "Im Schreiben werden auch weitere Orte in Brandenburg und einer in Sachsen genannt, an denen angeblich Hochspannungsleitungen attackiert worden seien.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+                  "excerpt_hash": "77ffe188d033cce66e14",
+                  "checked_at": "2026-09-04T02:07:51.145Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+                  "excerpt_hash": "8b34447a72b7b57fca03",
+                  "checked_at": "2026-09-04T02:07:51.145Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:07:51.145Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+              "content_hash": "f31b60b5c009745086e1f791654301a0737aafb77aeb46bac4a032370f83873a"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T02:07:51.145Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "632bd05a51178724b2f285515a70c7aaa9be9adae05b18577c5f4452874e216e"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "2e502f2fc8155637d52adae4ee3ce60e16c9c4a17a81b9bdc0108ede7c36b98f"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "ac22183059ffb4b756b5d24a1f98c8b225d50c196a07d3cb7d481f5bc81bb07b"
+        },
+        "source_visual": null,
+        "fingerprint": "1f191a3d74f87c58fcc7373e37b768603f6c805c456d57f60a8502d25d058365",
+        "template_version": "woek-title-1",
+        "prompt_version": "woek-editorial-2",
+        "generated_at": "2026-09-04T02:08:01.160Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-b9487671699d6c9b",
       "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
@@ -2754,7 +3296,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "44aa06b3630da7614a5526b00552b25fc9ea754ebde83bd186f39aca11147494",
@@ -2766,7 +3308,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-04T01:51:32.529Z",
       "event_detected_at": "2026-09-04T01:51:32.529Z",
       "event_id": "event-53842a842a145eaa61d9",
@@ -2798,13 +3340,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 21.458816666666667,
+        "source_age_minutes": 36.28585,
         "detection_delay_minutes": 21.458816666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.827033333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 92,
         "freshness_warning": null
       }
     },
@@ -7275,7 +7817,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "fa6d30e95e8db1232d0119806d7b379a6d39e16337568af842ffe3055acf7c88",
@@ -7287,7 +7829,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-04T01:26:36.485Z",
       "event_detected_at": "2026-09-04T01:26:36.485Z",
       "event_id": "event-ef8ee999da3b2be677e0",
@@ -7319,13 +7861,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 51.54215,
+        "source_age_minutes": 66.36918333333334,
         "detection_delay_minutes": 26.608083333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 24.934066666666666,
+        "queue_age_minutes": 39.7611,
         "target_publication_minutes": 120,
-        "news_freshness_score": 89,
+        "news_freshness_score": 86,
         "freshness_warning": null
       }
     },
@@ -8950,7 +9492,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "62ea5a2b7c2ba17db6f46a032854e0d7fadd3d10bfe439077410e40834d6bd54",
         "sources": [
           {
@@ -12817,19 +13359,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "3f75ce78686f8d56c4a7fb13958351716ed4473a523d02fe6773fbd3392bf7e4",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:01:00.000Z",
       "event_detected_at": "2026-09-03T22:01:00.000Z",
       "event_id": "event-44bdb321472f97da149a",
@@ -12862,14 +13404,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 230.54215,
+        "source_age_minutes": 245.36918333333332,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 230.54215,
+        "queue_age_minutes": 245.36918333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 52,
+        "news_freshness_score": 49,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -13007,19 +13561,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "9d385191db5f3d9ac3bed337871184b332f04f0390079c7da371be6e9b9eb03a",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:01:00.000Z",
       "event_detected_at": "2026-09-03T22:01:00.000Z",
       "event_id": "event-82e261369ab3bf81994b",
@@ -13047,14 +13601,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 230.54215,
+        "source_age_minutes": 245.36918333333332,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 230.54215,
+        "queue_age_minutes": 245.36918333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 52,
+        "news_freshness_score": 49,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -13096,19 +13662,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "84608af759731c918320003b7527fe39328f23aba4d84d906b58540c53c45c75",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:01:00.000Z",
       "event_detected_at": "2026-09-03T22:01:00.000Z",
       "event_id": "event-b8ec1f9c7ef8c59fc65c",
@@ -13136,14 +13702,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 230.54215,
+        "source_age_minutes": 245.36918333333332,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 230.54215,
+        "queue_age_minutes": 245.36918333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 52,
+        "news_freshness_score": 49,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -13199,7 +13777,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         },
         {
           "claim_id": "wt-814b7e6990a3d0cf-claim-02",
@@ -13215,7 +13793,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "96756c120a0968cd98a44aa1833d0894bcefd3b3760eefa065b731303106a22d",
@@ -13227,7 +13805,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:01:00.000Z",
       "event_detected_at": "2026-09-03T22:01:00.000Z",
       "event_id": "event-c6d7a32712dfe87d9577",
@@ -13256,13 +13834,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 230.54215,
+        "source_age_minutes": 245.36918333333332,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 230.54215,
+        "queue_age_minutes": 245.36918333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 52,
+        "news_freshness_score": 49,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -13327,19 +13905,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "753507398d64cb72b20741b97a3d29b2d2eaac90fffdeba929db2fc850ee8c61",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-99beea978d32cc6017ee",
@@ -13367,14 +13945,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 233.54215,
+        "source_age_minutes": 248.36918333333332,
         "detection_delay_minutes": 23.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 51,
+        "news_freshness_score": 48,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -13438,7 +14028,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "ce3571e8c4dd000c5aa3c4050ee8cc5f909c154c83cf9af15bcc4ac6500d9638",
@@ -13450,7 +14040,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-69730a4df0136d634142",
@@ -13478,13 +14068,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 18.09215,
+        "source_age_minutes": 32.919183333333336,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -13549,19 +14139,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "964d35430ce87b1b3f07ad96def3539270e7e39f6c35e3eb0b396b45223a2d66",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-04T01:51:32.529Z",
       "event_detected_at": "2026-09-04T01:51:32.529Z",
       "event_id": "event-20665109259b5f54ba4c",
@@ -13589,14 +14179,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 294.39215,
+        "source_age_minutes": 309.2191833333333,
         "detection_delay_minutes": 294.39215,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.827033333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 39,
+        "news_freshness_score": 36,
         "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -13964,19 +14566,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "5a4a3bf32be9734210f9e8080ced462ec9d6f8db81fbb1c8414f5849f6815260",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-2a6decbb5c4bfd870a37",
@@ -14007,14 +14609,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 343.14215,
+        "source_age_minutes": 357.9691833333333,
         "detection_delay_minutes": 132.8835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 29,
+        "news_freshness_score": 25,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -14078,7 +14692,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "d7bfc31348f4703cc5b0dfee808755c253427bf202cc4e352b4fdc14194ee6fc",
@@ -14090,7 +14704,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-44075c152c25e22316b1",
@@ -14118,13 +14732,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 350.27548333333334,
+        "source_age_minutes": 365.10251666666665,
         "detection_delay_minutes": 140.01683333333332,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 27,
+        "news_freshness_score": 24,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -14189,7 +14803,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "0ea603b5ce60131ce1233ffaa9a00edd458610f03f118dfa8543a01a4986606e",
@@ -14201,7 +14815,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-00f08d04fcf6d787465f",
@@ -14231,13 +14845,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 381.54215,
+        "source_age_minutes": 396.36918333333335,
         "detection_delay_minutes": 171.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 21,
+        "news_freshness_score": 17,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -14555,7 +15169,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "f5fb01bc41923dbb926e4ace40fef444ca0cdc648dabe6d7c31ea744bd5569b3",
@@ -14567,7 +15181,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-992e8a3200c707cd58b7",
@@ -14597,13 +15211,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 426.97548333333333,
+        "source_age_minutes": 441.8025166666667,
         "detection_delay_minutes": 216.71683333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 11,
+        "news_freshness_score": 8,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -14668,7 +15282,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "b9f75ce8ed388b1f8264637b7f90a54fc17b4af3e4f6d7c68616b45e52f2db2b",
@@ -14680,7 +15294,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-506756620d81a84e5735",
@@ -14710,13 +15324,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 440.4254833333333,
+        "source_age_minutes": 455.2525166666667,
         "detection_delay_minutes": 230.16683333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 8,
+        "news_freshness_score": 5,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -14907,7 +15521,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "355e525b90ffc2e8fc859f9b67c168753a4a57c89cc90cde0a82d8af0453a679",
@@ -14919,7 +15533,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-9ad1380215cf7ee88aa3",
@@ -14948,13 +15562,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 457.29215,
+        "source_age_minutes": 472.11918333333335,
         "detection_delay_minutes": 247.0335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 5,
+        "news_freshness_score": 2,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -15019,19 +15633,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "a52a32a4bd9716c853c44eae85145ea0fc860cb54e9f6559dc87116c417193b2",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-a9677ab8cf75ce91d6af",
@@ -15061,14 +15675,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 466.54215,
+        "source_age_minutes": 481.36918333333335,
         "detection_delay_minutes": 256.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 3,
+        "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -15805,19 +16431,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "8e816de61e2878fc98ab0365646e7748101d88f80ac36503e4aa3eca43801cc2",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-921f7bf18488baab286f",
@@ -15847,14 +16473,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 515.14215,
+        "source_age_minutes": 529.9691833333334,
         "detection_delay_minutes": 304.8835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -15918,7 +16556,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "0cc6e96cdf00f5a10fefa31911b1de6703ceaf5c3c1996ac68fa9fa70f45145d",
@@ -15930,7 +16568,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-7a528663abdbf3e3e6ce",
@@ -15958,11 +16596,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 516.0754833333333,
+        "source_age_minutes": 530.9025166666667,
         "detection_delay_minutes": 305.8168333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -16029,19 +16667,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "c2aa21b032663271f5bcfc85e587a6aef9a123b920c987c699f5b0861808f494",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_NEWS_VALUE_CONTEXT_ONLY"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42837d204fc7dd0d9660",
@@ -16069,14 +16706,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 539.0088166666667,
+        "source_age_minutes": 553.83585,
         "detection_delay_minutes": 328.75016666666664,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_NEWS_VALUE_CONTEXT_ONLY"
+        ]
       }
     },
     {
@@ -16380,19 +17028,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
+      "quality_errors": [
+        "AI_SOURCE_SUMMARY_PARAGRAPHS"
+      ],
+      "quality_retry_count": 1,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-49e6ddd9913a3803a948",
@@ -16425,11 +17075,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 560.39215,
+        "source_age_minutes": 575.2191833333334,
         "detection_delay_minutes": 350.1335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -16686,117 +17336,6 @@
       }
     },
     {
-      "story_id": "wt-f3d585eac14dec76",
-      "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
-      "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-      "first_seen": "2026-09-03T16:21:00.000Z",
-      "last_updated": "2026-09-03T16:21:00.000Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "taz-aktuell",
-          "publisher": "taz",
-          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
-          "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-          "summary": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde erreicht die taz ein Bekennerschreiben. Ist es authentisch? Das lässt sich nicht zweifelsfrei klären. mehr...",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:21:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "f31b60b5c009745086e1f791654301a0737aafb77aeb46bac4a032370f83873a",
-          "source_item_id": "195138e3840809bf416a757a6d536b0c2bd9d84ed9fe4a85a3437fba9c8a8edf",
-          "publisher_id": "taz",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T16:21:00.000Z",
-          "ingested_at": "2026-09-03T22:21:17.010Z",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-f3d585eac14dec76-claim-01",
-          "story_id": "wt-f3d585eac14dec76",
-          "claim": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht: Nach dem Anschlag auf das Umspannwerk bei Jänschwalde erreicht die taz ein Bekennerschreiben. Ist es authentisch? Das lässt sich nicht zweifelsfrei klären. mehr...",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "taz-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
-        }
-      ],
-      "content_hash": "7cc3463226d4989cf794b648503cb3da1dc5103b59b12760d5725397320362dc",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-f0b1482b8ce86ec1fab2",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesellschaft"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 570.54215,
-        "detection_delay_minutes": 360.2835,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      }
-    },
-    {
       "story_id": "wt-fe6dab1f863bd269",
       "slug": "nach-sabotage-alarm-in-der-lausitz-netzgesellschaft-potsdam-verstarkt-kontrollgange-3bd269",
       "title": "Nach Sabotage-Alarm in der Lausitz: Netzgesellschaft Potsdam verstärkt Kontrollgänge",
@@ -16857,19 +17396,54 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "2de898dbb57312f46d1939d1f28040993aea8ef218be503f188ab874bbf1e187",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_REQUIRED_STRING:source_summary",
+        "AI_REQUIRED_STRING:summary",
+        "AI_REQUIRED_STRING:why_relevant",
+        "AI_REQUIRED_STRING:status",
+        "AI_REQUIRED_STRING:analysis_type",
+        "AI_REQUIRED_STRING:importance",
+        "AI_REQUIRED_STRING:impact_potential",
+        "AI_REQUIRED_STRING:systemic_relevance",
+        "AI_REQUIRED_STRING:transformation_potential",
+        "AI_REQUIRED_STRING:resilience",
+        "AI_REQUIRED_STRING:evidence_level",
+        "AI_REQUIRED_STRING:attribution",
+        "AI_REQUIRED_STRING:detail_summary",
+        "AI_STATUS_INVALID",
+        "AI_ANALYSIS_TYPE_INVALID",
+        "AI_IMPORTANCE_INVALID",
+        "AI_PUBLICATION_GATE_REQUIRED",
+        "AI_DIMENSION_INVALID:human",
+        "AI_DIMENSION_INVALID:planet",
+        "AI_DIMENSION_INVALID:democracy",
+        "AI_ARRAY_REQUIRED:impact_risks",
+        "AI_ARRAY_REQUIRED:mechanisms",
+        "AI_ARRAY_REQUIRED:first_order",
+        "AI_ARRAY_REQUIRED:second_order",
+        "AI_ARRAY_REQUIRED:third_order",
+        "AI_ARRAY_REQUIRED:side_effects",
+        "AI_ARRAY_REQUIRED:uncertainties",
+        "AI_ARRAY_REQUIRED:watch_next",
+        "AI_ARRAY_REQUIRED:reference_frameworks",
+        "AI_UNCERTAINTY_REQUIRED",
+        "AI_WATCH_NEXT_REQUIRED",
+        "AI_SUMMARY_SENTENCE_COUNT",
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "NEWS_STATUS_REQUIRED",
+        "EVENT_CLAIMS_REQUIRED"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-94b0c2684b0f655c994b",
@@ -16897,14 +17471,61 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 579.0754833333333,
+        "source_age_minutes": 593.9025166666667,
         "detection_delay_minutes": 368.8168333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-04T02:06:22.151Z",
+      "rejection": {
+        "at": "2026-09-04T02:06:22.151Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
+        ]
       }
     },
     {
@@ -16969,7 +17590,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "eb79004ab11a07e647282d8b76f704ef95fa8b67430339999aa24167636ba16d",
@@ -16981,7 +17602,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-7cd63b230e3fac7386db",
@@ -17013,11 +17634,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 581.79215,
+        "source_age_minutes": 596.6191833333334,
         "detection_delay_minutes": 371.5335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -17208,7 +17829,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "fa6cd3ffff9b6bc07c7d498dfba3abdd09150a017541ae073f5a126be566dde6",
@@ -17220,7 +17841,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-89b1f66c8058426180f1",
@@ -17251,11 +17872,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 585.8588166666667,
+        "source_age_minutes": 600.68585,
         "detection_delay_minutes": 375.60016666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -17447,7 +18068,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "264a4f3a2eba61a9861d6253a881b899699ec789e71b831eecb0f843639b4cb7",
@@ -17459,7 +18080,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-5cb557d7746fd86bbf9c",
@@ -17487,11 +18108,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 657.0588166666666,
+        "source_age_minutes": 671.88585,
         "detection_delay_minutes": 446.80016666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -17557,7 +18178,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "4b4a67d292a7075404acd94e3f8dbff2e9ccd5539e5c7425795e1a198d641e5e",
@@ -17569,7 +18190,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-86e24e15ba8bb87159e0",
@@ -17599,11 +18220,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 666.04215,
+        "source_age_minutes": 680.8691833333334,
         "detection_delay_minutes": 455.7835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -18049,7 +18670,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "a6622718f141ec483591d3efe833f4b99941961265ad4452d8b857f43eace98b",
@@ -18061,7 +18682,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -18092,11 +18713,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 688.54215,
+        "source_age_minutes": 703.3691833333334,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -18288,7 +18909,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "8f9243230e8cb8eee702d2fb25b07939e4b0814611e0b04fff723c838c9153e0",
@@ -18300,7 +18921,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-d60ef58c65d6c2450e33",
@@ -18333,11 +18954,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 711.54215,
+        "source_age_minutes": 726.3691833333334,
         "detection_delay_minutes": 501.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -18406,7 +19027,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
@@ -18418,7 +19039,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-ef24781d9a226809238d",
@@ -18450,11 +19071,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 714.7088166666666,
+        "source_age_minutes": 729.53585,
         "detection_delay_minutes": 504.4501666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -18521,7 +19142,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "52e074d91fcf41527b53208e1dc81753768a2947dec6b23e8215f9ff45d7254c",
@@ -18533,7 +19154,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-54b00f814a91f1c08961",
@@ -18563,11 +19184,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 722.54215,
+        "source_age_minutes": 737.3691833333334,
         "detection_delay_minutes": 512.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -18634,7 +19255,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "78311a6f3eb3bf4e5efdb0c0446c91062cd213f1c9eda1b917fd8059861cb22c",
@@ -18646,7 +19267,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-2fb00fd35a6aa262c138",
@@ -18674,11 +19295,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 728.54215,
+        "source_age_minutes": 743.3691833333334,
         "detection_delay_minutes": 518.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -18745,7 +19366,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "7c32b51325aae4de9b06bf5b0a19ddc92542ddf631d7c35c60e992d9bbfdc6d1",
@@ -18757,7 +19378,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-15c3886ad20ee06ace6b",
@@ -18785,11 +19406,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 734.54215,
+        "source_age_minutes": 749.3691833333334,
         "detection_delay_minutes": 524.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -19374,7 +19995,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "1d971e1c99a1fc766eef7e6a326236dd76957da130d75e36134bae04fa972941",
         "sources": [
           {
@@ -19476,7 +20097,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "dfe842a2389ce0fce9b2ddf88872c3dec24cf7ee898ba2c1412a77356466043f",
@@ -19488,7 +20109,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-d9adfb4314c57867f414",
@@ -19516,11 +20137,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 792.34215,
+        "source_age_minutes": 807.1691833333333,
         "detection_delay_minutes": 582.0835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -20005,7 +20626,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "191e17835b91747af3acba327288831cf7cb99dd79e833bc4274d247ec3fcbb6",
         "sources": [
           {
@@ -20527,7 +21148,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "c1e2a37d5ec043868ef1f86ca0df86cde01a1cd731fcc94bf118eca225b19c69",
         "sources": [
           {
@@ -20808,7 +21429,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "3dd41ec6bae4da2e9c6d106f3c0a8329e90d3301f68db74faa3c4d74c4ba3572",
         "sources": [
           {
@@ -21061,7 +21682,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "26602ca26603b35f71ba3c029b8b851122c2f6234c65eb1ef1de21a6e6d25d27",
         "sources": [
           {
@@ -21318,7 +21939,7 @@
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       },
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
         "sources": [
           {
@@ -21562,7 +22183,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
         "sources": [
           {
@@ -21667,7 +22288,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-03T10:50:35.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "ingested_at": "2026-09-04T02:06:22.151Z",
           "provenance": {
             "origin": "publisher:klimareporter",
             "basis": "publisher_only_origin_unverified",
@@ -21694,7 +22315,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "c3f405587b03b8c02b9543ad7b6d50799e0605eb0d8e51fa50266188c4b6e467",
@@ -21706,7 +22327,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-b0ca014f15697bb2710d",
@@ -21737,11 +22358,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 900.9588166666666,
+        "source_age_minutes": 915.78585,
         "detection_delay_minutes": 690.7001666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -21808,7 +22429,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "7a190533442d8d5aff598141f7e0cdc57731d45793d6b1dac0c2399e553b95a1",
@@ -21820,7 +22441,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-ebb06e0b1a39e78b3ea3",
@@ -21851,11 +22472,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 910.54215,
+        "source_age_minutes": 925.3691833333334,
         "detection_delay_minutes": 700.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -22045,7 +22666,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "ed8c49fb5251d3923923ef73ab2ea0155988b44abfc2b58d14902bff5ad8aac9",
@@ -22057,7 +22678,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-ac5fa3a1ece2c412a708",
@@ -22085,11 +22706,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 991.54215,
+        "source_age_minutes": 1006.3691833333334,
         "detection_delay_minutes": 781.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -22156,7 +22777,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "45d35657ff7ed464e89389ec26e217997f58e71be50c566489f6b4e7337b322f",
@@ -22168,7 +22789,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e20eac76b689f5b7c4be",
@@ -22197,11 +22818,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1013.54215,
+        "source_age_minutes": 1028.3691833333332,
         "detection_delay_minutes": 803.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -22268,7 +22889,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "e42fc81c89116d92d0ab1b691de7fbb96fe65e1880f61e31743895ccd49d44c3",
@@ -22280,7 +22901,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-864e7c7a9a2009a72fa5",
@@ -22309,11 +22930,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1013.54215,
+        "source_age_minutes": 1028.3691833333332,
         "detection_delay_minutes": 803.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -22380,7 +23001,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "4f1d90e2d1e4bb8336e0da736cdee582d97385645e6ff4dc3323505766aec080",
@@ -22392,7 +23013,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-4a6d367a382907820710",
@@ -22420,11 +23041,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1060.54215,
+        "source_age_minutes": 1075.3691833333332,
         "detection_delay_minutes": 850.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -22633,7 +23254,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
         "sources": [
           {
@@ -22906,7 +23527,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "fea165348409401354ed695fdc8c03e7358c8fd9779cabcb90f7105ec380e389",
         "sources": [
           {
@@ -23182,7 +23803,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "21bad88a1a4a99e21acc45cb4f8ebf1e18716b8c6530e49819136eb9e4f0fe81",
         "sources": [
           {
@@ -23455,7 +24076,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "8ad5149d08b29881e0ec8c21540679d59d6c7440a0b702837f944ccb6c405ffa",
         "sources": [
           {
@@ -23733,7 +24354,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "b26abbce7ef4cbdc6f69c80953c2fc105d54f05a17be29a14a11d35d26cb9c1a",
         "sources": [
           {
@@ -24007,7 +24628,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "0196445645d9e2a76465661ff3e85618f2b5256d4e4155b130ba1308b3992f20",
         "sources": [
           {
@@ -24285,7 +24906,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "5947f1319fcbaa480bffbb1664ea4b76e254587e166f180208a4e406192f6ab2",
         "sources": [
           {
@@ -24409,7 +25030,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "1ec5ff19fbc7267603539d1c07db9001a02bf82fa31d176c9c0e660570a6d682",
@@ -24421,7 +25042,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-4b113bf8cff6e1b17e05",
@@ -24450,11 +25071,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1082.44215,
+        "source_age_minutes": 1097.2691833333333,
         "detection_delay_minutes": 872.1835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -24496,7 +25117,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-03T07:15:00.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "ingested_at": "2026-09-04T02:06:22.151Z",
           "provenance": {
             "origin": "publisher:klimareporter",
             "basis": "publisher_only_origin_unverified",
@@ -24523,7 +25144,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "4a9d46946481d3e00f7c1408c288587d3e5186f5dbc5456ec4f38d2166f8512c",
@@ -24535,7 +25156,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-28853aa269d93832188f",
@@ -24567,11 +25188,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1116.54215,
+        "source_age_minutes": 1131.3691833333332,
         "detection_delay_minutes": 906.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -24890,7 +25511,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "5a56ec97c1c488c4e358f69ef0a90770eddf25eb4ca171e125fde72efa5a8d39",
@@ -24902,7 +25523,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-f9a41064b5a1fe587421",
@@ -24934,11 +25555,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1283.54215,
+        "source_age_minutes": 1298.3691833333332,
         "detection_delay_minutes": 1073.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -25005,7 +25626,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "9b423e8e1bebc321e05167e66b88052a272c7d051ed8cec9019403bfd15363a5",
@@ -25017,7 +25638,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-345c45ce8487b660c2c1",
@@ -25047,11 +25668,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1306.2088166666667,
+        "source_age_minutes": 1321.03585,
         "detection_delay_minutes": 1095.9501666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -25389,7 +26010,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Feed enthält keinen Kurztext.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "69dca138b5ba94095de4159ca02c75634b273480ab3a410131fe16a7720b6c8f",
@@ -25401,7 +26022,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e78fc0b1393743b620bb",
@@ -25432,11 +26053,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1551.54215,
+        "source_age_minutes": 1566.3691833333332,
         "detection_delay_minutes": 1341.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -25644,7 +26265,7 @@
         }
       ],
       "pending_update": {
-        "detected_at": "2026-09-04T01:51:32.529Z",
+        "detected_at": "2026-09-04T02:06:22.151Z",
         "content_hash": "42e00206519b1aae799971e3470f413804e298170ec80c588eef461dc10d6126",
         "sources": [
           {
@@ -25913,7 +26534,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "31c7f7f0d5723394b61ceb3bc8a559783a61a72bff78139504916cfff2ae85b4",
@@ -25925,7 +26546,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-968b6e4b7e643f78e4c9",
@@ -25953,11 +26574,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1737.54215,
+        "source_age_minutes": 1752.3691833333332,
         "detection_delay_minutes": 1527.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -26024,7 +26645,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "99af3920cf213a90489bc6710226a442bf08a768846715ff16c0c2b52a38aa51",
@@ -26036,7 +26657,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-bf54447029570dd055c9",
@@ -26066,11 +26687,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1907.54215,
+        "source_age_minutes": 1922.3691833333332,
         "detection_delay_minutes": 1697.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -26137,7 +26758,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "20af7d9e14d1803a4ff827ebf9746307ed5267984c09c261cf526bc8bee81429",
@@ -26149,7 +26770,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-dfff3119ea5d4021a25c",
@@ -26177,11 +26798,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1918.54215,
+        "source_age_minutes": 1933.3691833333332,
         "detection_delay_minutes": 1708.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -26248,7 +26869,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "14a90eee1ec18f9ffd4c8a45abee15644adef1e579897470f99dde6141abd0a7",
@@ -26260,7 +26881,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-35623bdc716ca56484f9",
@@ -26290,11 +26911,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1919.54215,
+        "source_age_minutes": 1934.3691833333332,
         "detection_delay_minutes": 1709.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -26490,7 +27111,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "a0fe47114b0579e40a8ee3649f1f2910b80ec0d76567932237286761e795231b",
@@ -26502,7 +27123,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-216abee005246675a905",
@@ -26530,11 +27151,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1980.54215,
+        "source_age_minutes": 1995.3691833333332,
         "detection_delay_minutes": 1770.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -26601,7 +27222,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "168a0bd51dc2068e2e78f18298ee66d651613a2479d825cb0d5b4af9070b0697",
@@ -26613,7 +27234,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-569b3524d7457927ce6b",
@@ -26643,11 +27264,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2004.54215,
+        "source_age_minutes": 2019.3691833333332,
         "detection_delay_minutes": 1794.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -26715,7 +27336,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "da22bf9b52c8c4ce68f8c642bbe88b6a000c889e03afbdeae4b4d131a1a3a408",
@@ -26727,7 +27348,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1dcb546192615cabcc71",
@@ -26756,11 +27377,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2081.2754833333333,
+        "source_age_minutes": 2096.102516666667,
         "detection_delay_minutes": 1871.0168333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -26951,7 +27572,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "52ae67e5c4b8555e70383ac6755918025b7ba6fc64b79004fb3d69f1463062de",
@@ -26963,7 +27584,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-33ecb594bc95341ba5b2",
@@ -26991,11 +27612,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2172.54215,
+        "source_age_minutes": 2187.3691833333332,
         "detection_delay_minutes": 1962.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -27062,7 +27683,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "fd303f4db00a860270fcfb996541b05ae006661c97cb5c1538b57b2c97aba4d3",
@@ -27074,7 +27695,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-35177e3864a5abcfec8e",
@@ -27106,11 +27727,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2191.54215,
+        "source_age_minutes": 2206.3691833333332,
         "detection_delay_minutes": 1981.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -27178,7 +27799,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "79182c39f10f7f1a99549ff9e383ee0e0bc56b6c25dc20af8b954ca60f0bc7f7",
@@ -27190,7 +27811,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-f6bf7265b4e640e7e2d7",
@@ -27223,11 +27844,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2191.54215,
+        "source_age_minutes": 2206.3691833333332,
         "detection_delay_minutes": 1981.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -27542,7 +28163,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "2aa0e8f49a8d1209f7de9fef21067bf88ac4e0d57f9e0eca1b931dc3e5cc6e87",
@@ -27554,7 +28175,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-273c37409f54fa0c5abc",
@@ -27583,11 +28204,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2277.725483333333,
+        "source_age_minutes": 2292.5525166666666,
         "detection_delay_minutes": 2067.4668333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -27654,7 +28275,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "1e6cd7c1d6d91647b7046917beb2caa2cbc18c7c4595b3a59dd70bc4ca647908",
@@ -27666,7 +28287,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3e01d1f6d0533d6aa9c6",
@@ -27695,11 +28316,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2362.725483333333,
+        "source_age_minutes": 2377.5525166666666,
         "detection_delay_minutes": 2152.4668333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -27766,7 +28387,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "dea407218ff9ff6934bbac13a50d7ff5fb57d64d43624d482bf1ce4cc471b47e",
@@ -27778,7 +28399,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-fbbb13d555ba24335ba3",
@@ -27808,11 +28429,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2378.9588166666667,
+        "source_age_minutes": 2393.78585,
         "detection_delay_minutes": 2168.7001666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -27854,7 +28475,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-02T10:11:00.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "ingested_at": "2026-09-04T02:06:22.151Z",
           "provenance": {
             "origin": "publisher:science-media-center",
             "basis": "publisher_only_origin_unverified",
@@ -27881,7 +28502,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "0ae27a89a2f40efa2d1383b6853368086ee7b11f0ba5f586505292992303f003",
@@ -27893,7 +28514,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-80de4c464a700f12dc6f",
@@ -27925,11 +28546,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2380.54215,
+        "source_age_minutes": 2395.3691833333332,
         "detection_delay_minutes": 2170.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -27996,7 +28617,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "3eee7a83b631d0dd25abfaf6571fc4ecead80633e1527883bf1f4e8889c2ed1e",
@@ -28008,7 +28629,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-a65754a145ed4dc9c820",
@@ -28040,11 +28661,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2403.54215,
+        "source_age_minutes": 2418.3691833333332,
         "detection_delay_minutes": 2193.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -28227,7 +28848,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "5075c7ffde16cbbf806ab1eed166f847b296725de53c460c37469f3ec7552983",
@@ -28239,7 +28860,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-2b34917a75229737249c",
@@ -28267,11 +28888,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2414.54215,
+        "source_age_minutes": 2429.3691833333332,
         "detection_delay_minutes": 2204.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -28466,7 +29087,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "09f8fb7445351d4579f290369593b71556c9fba1bdf3e4465de050f8c231371d",
@@ -28478,7 +29099,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-ef9d83c7cd180ed4c9e4",
@@ -28508,11 +29129,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2511.54215,
+        "source_age_minutes": 2526.3691833333332,
         "detection_delay_minutes": 2301.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -28578,7 +29199,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "44537c5677298dd993a62b3412bb02fd48d0ce1daa3e951c410d518f5cbe82d2",
@@ -28590,7 +29211,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3c4cec37699684f265d9",
@@ -28618,11 +29239,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2631.54215,
+        "source_age_minutes": 2646.3691833333332,
         "detection_delay_minutes": 2421.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -28818,7 +29439,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "bae5605269eec706798fa2f6c96b2d865f865ce825fd157ab08e3aa8082d4ec0",
@@ -28830,7 +29451,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-795c48d3db0831ef9b61",
@@ -28862,11 +29483,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3265.475483333333,
+        "source_age_minutes": 3280.3025166666666,
         "detection_delay_minutes": 3055.2168333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -28933,7 +29554,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "58e4c870293d17700f3e430ffecdc55ba556bacce4f3ffce88d6e0e184344b3f",
@@ -28945,7 +29566,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-5e608e78b4daf02608bf",
@@ -28973,11 +29594,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3371.1588166666666,
+        "source_age_minutes": 3385.98585,
         "detection_delay_minutes": 3160.900166666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -29044,7 +29665,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "41c912e1c07d1ad93d1fc6f2f2cffd2f34d2e78486efae6f77f24052ae2fb427",
@@ -29056,7 +29677,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-88c06765dd812ab1333c",
@@ -29087,11 +29708,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3462.4088166666666,
+        "source_age_minutes": 3477.23585,
         "detection_delay_minutes": 3252.150166666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -29157,7 +29778,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "0f446ea5cb51a25c2d996418cf4baef91cd32048f5e76de72e507e26507399f0",
@@ -29169,7 +29790,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-a1baeba4f20d07fe8686",
@@ -29199,11 +29820,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3568.54215,
+        "source_age_minutes": 3583.3691833333332,
         "detection_delay_minutes": 3358.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -29616,7 +30237,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T10:17:00.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "ingested_at": "2026-09-04T02:06:22.151Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -29643,7 +30264,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "ee7dad7353b26544b265da43fabbd57bf9f547566a8ec550abcad8b81c376364",
@@ -29655,7 +30276,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-e1ac3e5b6a7b2d3e7529",
@@ -29686,11 +30307,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3814.54215,
+        "source_age_minutes": 3829.3691833333332,
         "detection_delay_minutes": 3604.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -29757,7 +30378,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -29769,7 +30390,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -29798,11 +30419,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4071.54215,
+        "source_age_minutes": 4086.3691833333332,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -30088,7 +30709,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T14:05:05.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "ingested_at": "2026-09-04T02:06:22.151Z",
           "provenance": {
             "origin": "publisher:klimareporter",
             "basis": "publisher_only_origin_unverified",
@@ -30115,7 +30736,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "ec68e1b7e01d1cf36c7107e281d04242a0644a887db1bc32b9b6d7d42de66dd2",
@@ -30127,7 +30748,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-cbca969c9d482acda1dd",
@@ -30159,11 +30780,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5026.458816666666,
+        "source_age_minutes": 5041.28585,
         "detection_delay_minutes": 4816.2001666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -30230,7 +30851,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -30242,7 +30863,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -30274,11 +30895,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5151.54215,
+        "source_age_minutes": 5166.369183333333,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -30321,7 +30942,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T06:00:00.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "ingested_at": "2026-09-04T02:06:22.151Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -30348,7 +30969,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "5cafe60794ddd870340466707a5e9ca466de5d6041f5db4a86b22fad19821908",
@@ -30360,7 +30981,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-2c1f3210dd4e743c2737",
@@ -30393,11 +31014,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5511.54215,
+        "source_age_minutes": 5526.369183333333,
         "detection_delay_minutes": 5301.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -30697,7 +31318,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-08-28T12:40:00.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "ingested_at": "2026-09-04T02:06:22.151Z",
           "provenance": {
             "origin": "publisher:science-media-center",
             "basis": "publisher_only_origin_unverified",
@@ -30724,7 +31345,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "9f024bf1572dc7074fa43d973a980b1d57f9f37c19ea38d49e7a7d53c4ecba45",
@@ -30736,7 +31357,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-7b2c4477ad64d3013bfe",
@@ -30766,11 +31387,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9431.54215,
+        "source_age_minutes": 9446.369183333334,
         "detection_delay_minutes": 9221.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -30811,7 +31432,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-08-28T12:30:00.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "ingested_at": "2026-09-04T02:06:22.151Z",
           "provenance": {
             "origin": "publisher:science-media-center",
             "basis": "publisher_only_origin_unverified",
@@ -30838,7 +31459,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-04T02:06:22.151Z"
         }
       ],
       "content_hash": "67e92b99cbf6de95d7ca8de1bdee15fa83a7a2be1a38f37e2d75bf935cf01267",
@@ -30850,7 +31471,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-04T02:06:22.151Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-b314e6fe17d75603d224",
@@ -30881,11 +31502,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9441.54215,
+        "source_age_minutes": 9456.369183333334,
         "detection_delay_minutes": 9231.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 225.08568333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -31100,5 +31721,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T01:51:32.529Z"
+  "public_updated_at": "2026-09-04T02:06:22.151Z"
 }

@@ -1,7 +1,115 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T01:51:32.529Z",
+  "updated_at": "2026-09-04T02:06:22.151Z",
   "stories": [
+    {
+      "story_id": "wt-f3d585eac14dec76",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-1f191a3d74f87c58-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+      "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+      "source_summary": "Nach dem Anschlag auf das Umspannwerk bei Jänschwalde berichtet die taz, dass dort ein Bekennerschreiben eingegangen sei. Das Schreiben soll nach einem Poststempel in Nordrhein-Westfalen abgeschickt worden sein und einen Einzeltäter beschreiben, der selbstgebaute Raketen eingesetzt habe.\n\nDie Redaktion schreibt, die Authentizität lasse sich nicht zweifelsfrei belegen. Eine Sprecherin des Brandenburger Polizeipräsidiums sagte laut Bericht, der Polizei sei ein Bekennerschreiben zu der Tat bisher nicht bekannt. Im Schreiben würden außerdem weitere Orte in Brandenburg und einer in Sachsen genannt, an denen angeblich ebenfalls Hochspannungsleitungen attackiert worden seien.",
+      "summary": "Ein Bekennerschreiben zum Anschlag auf das Umspannwerk Jänschwalde ist bei der taz eingegangen. Seine Echtheit ist nach dem Bericht offen.",
+      "detail_summary": "Gesichert ist zunächst nur, dass die taz nach dem Anschlag auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben erhalten hat. Der Bericht nennt darin einen angeblichen Einzeltäter aus Nordrhein-Westfalen und beschreibt selbstgebaute Raketen sowie weitere behauptete Angriffe an anderen Orten. Zugleich hält die Redaktion fest, dass sich die Authentizität des Schreibens nicht zweifelsfrei klären lasse. Die Brandenburger Polizei sagte laut taz außerdem, ihr sei ein solches Bekennerschreiben bisher nicht bekannt. Für die öffentliche Einordnung ist das relevant, weil es um einen möglichen Angriff auf kritische Infrastruktur und um die Frage geht, ob das Schreiben Ermittlungen, Aufmerksamkeit und Schutzmaßnahmen beeinflusst. Die Wirkung bleibt vorerst potenziell: belastbar ist noch nicht, ob das Schreiben echt ist oder nur eine falsche Zuschreibung darstellt.",
+      "why_relevant": "Mögliche Sabotage an kritischer Infrastruktur und ein dazugehöriges Bekennerschreiben betreffen Sicherheitslage, Ermittlungen und Schutz kritischer Netze.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Möglicher Angriff auf Strominfrastruktur kann Versorgungsstörungen, Angst und Ermittlungsfolgen für viele Menschen auslösen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umwelt- oder Klimawirkpfad ist aus der vorliegenden Meldung nicht belastbar ableitbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Frage berührt staatliche Sicherheits- und Korrekturfähigkeit bei Angriffen auf kritische Infrastruktur."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Ort des Anschlags",
+            "value": "Jänschwalde",
+            "unit": "Ort",
+            "context": "genannter Tatort des Umspannwerks"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "first_seen": "2026-09-03T16:21:00.000Z",
+      "last_updated": "2026-09-04T02:07:51.145Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-f0b1482b8ce86ec1fab2",
+      "source_published_at": "2026-09-03T16:21:00.000Z",
+      "published_at": "2026-09-04T02:07:51.145Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Ermittler klären die Echtheit des Bekennerschreibens.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Polizei oder Ermittler bewerten das Schreiben eindeutig als echt, falsch oder nicht belegbar.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-82c1d1ebd142a53a",
+          "announced_at": "2026-09-03T16:21:00.000Z",
+          "follow_up_date": "2026-09-11T02:07:51.145Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:21:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b9487671699d6c9b",
       "title_image": {
