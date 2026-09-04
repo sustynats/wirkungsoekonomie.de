@@ -34,6 +34,7 @@ import {
 } from "../../scripts/news/run.mjs";
 import { evaluateRunHealth } from "../../scripts/news/check-run-health.mjs";
 import { loadNewsRegistry } from "../../scripts/news/registry.mjs";
+import { expandEvidenceSegments } from "../../scripts/news/evidence-packets.mjs";
 
 const source = {
   source_id: "official-test", name: "Amtliche Testquelle", source_type: "official_rss", primary_source: true,
@@ -49,7 +50,7 @@ test("Large multi-source prompts retain identities and exact evidence under the 
   const input=JSON.parse(prompt.split("UNTRUSTED_SOURCE_DATA_BEGIN\n")[1].split("\nUNTRUSTED_SOURCE_DATA_END")[0]);
   assert.deepEqual(input[0].sources.map(x=>x.url),sources.map(x=>x.url));
   assert.ok(input[0].sources.some(x=>x.evidence_selection?.incomplete));
-  for(const item of input[0].sources) for(const segment of item.evidence_segments){
+  for(const item of expandEvidenceSegments(input[0])) for(const segment of item.evidence_segments){
     const source=sources.find(x=>x.source_id===item.source_id);
     assert.ok(`${source.title} ${source.summary} ${source.article_excerpt}`.includes(segment.excerpt));
   }
@@ -60,7 +61,8 @@ test("Large multi-source prompts retain identities and exact evidence under the 
 test("Growing living files retain all evidence identities, roles and claims with related history", () => {
   // Frozen incident fixture: future editorial updates must not change a test's input.
   const existing=JSON.parse(fs.readFileSync(new URL('./fixtures/growing-living-file.json',import.meta.url)));
-  const sources=existing.pending_update?.sources || existing.sources;
+  const priorSources=existing.pending_update?.sources || existing.sources;
+  const sources=[...priorSources, ...Array.from({length:Math.max(0,15-priorSources.length)},(_,n)=>({...priorSources[0],url:`https://example.org/continuation-${n}`,title:`Neue Entwicklung ${n}: ${priorSources[0].title}`}))];
   const story={...existing,existing_story:existing,sources:sources.map(s=>({...s,article_excerpt:Array.from({length:40},(_,n)=>`Passage ${n}: Dies ist ein unveränderter Testbeleg über Infrastruktur und offene Ermittlungen.`).join(' ')})),claims:sources.map((s,n)=>({claim_id:`claim-${n}`,claim:`${s.title}: ${s.summary}`,source_id:s.source_id,evidence_level:'Sekundärquelle',uncertainty:'Vollständiger Kontext ist in der Originalquelle zu prüfen.'})),related_ticker_history:Array.from({length:5},(_,n)=>({story_id:`related-${n}`,title:'Eigenständige verwandte Meldung',summary:'Dies ist eine verwandte Nachricht mit einem eigenständigen Ereignis und anderen Belegen. '.repeat(4),source_urls:[`https://example.org/${n}/eins`,`https://example.org/${n}/zwei`,`https://example.org/${n}/drei`],source_published_at:'2026-09-03T12:00:00Z'}))};
   const before=structuredClone(story);
   const prompt=buildAnalysisPrompt([story]);
@@ -74,7 +76,7 @@ test("Growing living files retain all evidence identities, roles and claims with
     assert.equal(expanded.url,sources[n].url);
     assert.equal(expanded.source_id,sources[n].source_id);
     assert.equal(expanded.primary_source,sources[n].primary_source);
-    assert.deepEqual(expanded.provenance,sources[n].provenance||null);
+    assert.deepEqual(expanded.provenance ? {...compact.provenance_defaults,...expanded.provenance} : null,sources[n].provenance||null);
     assert.ok(expanded.evidence_segments.length>=2);
     if(s.abstract_claim_id) assert.ok(compact.claims.some(c=>c.claim_id===s.abstract_claim_id&&c.claim.includes(sources[n].summary)));
   });

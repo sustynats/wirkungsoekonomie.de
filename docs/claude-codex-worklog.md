@@ -7,6 +7,12 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ---
 
+### 2026-09-04 · Codex · Allgemeine Eingabe- und Wiederholungsprüfung
+- **Was:** Verlustfreie Textreferenzen und Metadaten-Defaults für alle KI-Anfragen; Größenprüfung vor Slotvergabe; geänderte Artikelauszüge zuerst; dauerhafter, begrenzter Prüfstand für bereits geprüfte Updates. Keine Quellenzahlgrenze, keine abgesenkten Publikationsgates, keine Scheinversionen/Pushs für unveränderte Akten. Lokale Größenfehler getrennt von Providerfehlern und echten kostenpflichtigen Anfragen.
+- **Pfade:** `scripts/news/evidence-packets.mjs`, `lib.mjs`, `run.mjs`, `check-run-health.mjs`, Discord-Monitor und Regressionstests; Betriebsvertrag `docs/ops/WIRKUNGSTICKER-EVIDENCE-PACKETS.md`.
+- **Prüfung:** Offline-Wiederholung aller 37 prüffähigen Queue-Kandidaten des Stands `5ae5af8f`, keine lokale Größenblockade; größte Akte 15 Quellen. Reine Tests, keine KI-Kosten oder redaktionelle Bestandsänderung. Volltests, Build/Validator und echte automatische Lauf-/Release-Abnahme separat durchführen.
+- **Kosten/Hosting:** unverändertes 25-EUR-KI-Budget; bestehende GitHub-/Oracle-Verarbeitung, kein Vercel-Build. Einsparbetrag erst anhand realer Verbrauchsdaten bewerten.
+
 ### 2026-09-04 · Codex · Lebende Akten, Bestandsdubletten und Themenverweise
 - **Aktenzuordnung:** Bekannte Dokumente werden vor unbekannten Batch-Clustern aufgelöst. Dokument-IDs überstehen geänderte Publisher-Slugs; konkrete Orts-/Gegenstandsgrenzen verhindern reine Themenfusionen. Automatische hochsichere Konsolidierung läuft vor KI und Retry.
 - **Bestand:** Drei ältere Dormagen-Meldungen und eine Jänschwalde-Meldung transparent archiviert und mit den fortgeführten Akten verlinkt. Keine historischen Inhalte, Belege oder Versionen gelöscht; Quellvereinigung wird erneut geprüft. Keine künstlich neuen Nachrichten-/Versionsdaten.

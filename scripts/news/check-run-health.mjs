@@ -17,7 +17,8 @@ export function evaluateRunHealth(report, options = {}) {
   if (!Number.isFinite(completedAt) || (Number.isFinite(startedAt) && completedAt < startedAt)) errors.push("RUN_NOT_COMPLETED");
   if (expectedAfter !== null && (!Number.isFinite(expectedAfter) || !Number.isFinite(startedAt) || startedAt < expectedAfter)) errors.push("RUN_REPORT_STALE");
   if (!options.expectedAfter && Number.isFinite(startedAt) && nowMs - startedAt > maxAgeMinutes * 60 * 1000) errors.push("RUN_REPORT_STALE");
-  if (report?.ai_error) errors.push("AI_PROVIDER_DEGRADED");
+  if (report?.ai_error) errors.push(report.ai_error === "AI_INPUT_TOO_LARGE" ? "AI_INPUT_BLOCKED" : "AI_PROVIDER_DEGRADED");
+  if (report?.input_holds?.length) errors.push("AI_INPUT_BLOCKED");
   if (Number(report?.source_successes || 0) === 0 && report?.sources_scheduled !== 0) errors.push("NO_SOURCE_SUCCEEDED");
   if (Number(report?.source_failures || 0) > 0) errors.push("SOURCE_COVERAGE_DEGRADED");
   if (report?.status && report.status !== "ok") errors.push("RUN_STATUS_NOT_OK");
