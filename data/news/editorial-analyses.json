@@ -1,7 +1,1522 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": null,
-  "candidates": [],
-  "analyses": []
+  "updated_at": "2026-09-05T14:02:11.302Z",
+  "candidates": [
+    {
+      "story_id": "wt-4fb94d2cebfca746",
+      "story_slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+      "story_title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+      "editorial_analysis_score": 67,
+      "analysis_gain": 49,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 7,
+        "impact_risk": 4,
+        "observed_impact": 0,
+        "third_order_relevance": 5,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 0,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 8,
+        "evidence_quality": 8
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 13,
+        "primary_source_count": 0,
+        "cited_claim_count": 77,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "b0bbc4dc52ef7a7e171ff8bfe0378024486726ada74f4c15a24f830d47e82abd",
+      "status": "published",
+      "analysis_id": "woek-analysis-2557713b0904"
+    },
+    {
+      "story_id": "wt-aabe8c0430bf8f84",
+      "story_slug": "two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84",
+      "story_title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
+      "editorial_analysis_score": 69,
+      "analysis_gain": 51,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 9,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 7,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-edd4484465895b46",
+      "story_slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
+      "story_title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
+      "editorial_analysis_score": 67,
+      "analysis_gain": 48,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 9,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "passed",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": false,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "882570f03a13cc972007897ab935d4597225deff24a2baf33138e7d368780e61",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-1bc40229c938d48a",
+      "story_slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
+      "story_title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
+      "editorial_analysis_score": 76,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 10,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "passed",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "0fefb027a302f4eeccbc0f6418d48bb0b24426777ea68ec010072cee8fd635dd",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-98ff7e403362fdf9",
+      "story_slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
+      "story_title": "Stärkerer Schutz kritischer Infrastrukturen",
+      "editorial_analysis_score": 76,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 10,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "passed",
+        "independent_origin_count": 3,
+        "primary_source_count": 1,
+        "cited_claim_count": 6,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "6ed79b91bef11cc5feadb07f866643db995bb11b3d4bb5c24f73a0060df65c54",
+      "status": "published",
+      "analysis_id": "woek-analysis-39ddf0b6cc39"
+    }
+  ],
+  "analyses": [
+    {
+      "analysis_id": "woek-analysis-39ddf0b6cc39",
+      "story_id": "wt-98ff7e403362fdf9",
+      "related_story_ids": [
+        "wt-98ff7e403362fdf9"
+      ],
+      "related_case_id": null,
+      "slug": "kritis-dachgesetz-einheitliche-mindeststandards-fur-kritische-infrastrukturen-und--39ddf0",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+      "method_version": "1.0",
+      "source_fingerprint": "6ed79b91bef11cc5feadb07f866643db995bb11b3d4bb5c24f73a0060df65c54",
+      "candidate_score": 76,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "passed",
+        "independent_origin_count": 3,
+        "primary_source_count": 1,
+        "cited_claim_count": 6,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T14:02:11.302Z",
+      "updated_at": "2026-09-05T14:02:11.302Z",
+      "version": 1,
+      "editorial_question": "Was verändert das KRITIS-Dachgesetz systemisch am Schutz kritischer Infrastrukturen – und wo endet der belegte Wirkungsanspruch der Regelung?",
+      "analysis_type": "system_analysis",
+      "title": "KRITIS-Dachgesetz: Einheitliche Mindeststandards für kritische Infrastrukturen und ihre Grenzen",
+      "subtitle": "Das Gesetz ordnet Schutz, Zuständigkeiten und Evaluierung neu. Ob daraus mehr Resilienz wird, hängt am Vollzug.",
+      "teaser": "Das KRITIS-Dachgesetz setzt bundeseinheitliche Mindeststandards. Der zusätzliche Nutzen liegt im Systemzuschnitt – die Wirkung bleibt vom Vollzug abhängig.",
+      "seo_description": "KRITIS-Dachgesetz im Wirkungscheck: bundeseinheitliche Mindeststandards, Zuständigkeiten, Resilienz und offene Vollzugsfragen im Systemvergleich.",
+      "additional_value": "Der Mehrwert dieser Analyse liegt nicht in der Wiederholung des Gesetzesinhalts, sondern in der Einordnung des systemischen Zusatznutzens: Das Gesetz adressiert nicht nur einzelne Betreiber, sondern eine quer über Sektoren verlaufende Schutzarchitektur. Damit verschiebt sich der Blick von punktuellen Sicherheitsmaßnahmen zu einer staatlich gerahmten Resilienzordnung. Zugleich trennt die Analyse sauber zwischen dem normativen Ziel mehr Schutz und der noch nicht belegten tatsächlichen Wirkung im Alltag.",
+      "research_summary": "Gesichert aus den gelieferten Quellen ist, dass das KRITIS-Dachgesetz bundesweit und sektorübergreifend Mindeststandards für den Schutz kritischer Infrastrukturen festlegt und seit März 2026 in Kraft ist. Die Bundesregierung nennt als betroffene Bereiche unter anderem Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Im parlamentarischen Verfahren wurden Änderungen eingeführt: Länder können weitere kritische Anlagen identifizieren, das Bundesinnenministerium soll Kriterien und Verfahren per Rechtsverordnung mit Bundesratszustimmung festlegen, und eine Evaluierung ist bereits in zwei Jahren vorgesehen. Journalistische Begleitquellen beschreiben kritische Infrastruktur als verletzlich und verweisen auf Risiken wie Cyberangriffe, Sabotage und Drohnen; eine zweite Quelle kritisiert, das Gesetz sei bisher nur eine leere Hülle und die Umsetzung werde rasch benötigt. Belege für eingetretene Wirkungen, etwa sinkende Ausfallraten oder nachweislich höhere Sicherheit, liefern die Quelle",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Ein Rahmen für Schutz statt ein Einzelfallprogramm",
+          "paragraphs": [
+            "Konkret geht es um ein Gesetz, das bundeseinheitliche und sektorübergreifende Mindeststandards für den Schutz kritischer Infrastrukturen setzt. Die Bundesregierung nennt als Beispiele Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Damit wird ein Bereich reguliert, in dem Störungen nicht nur einzelne Unternehmen betreffen, sondern Versorgungs- und Funktionsketten in der Breite.",
+            "Die systemische Pointe liegt nicht darin, dass der Staat Schutz grundsätzlich fordert. Neu ist vor allem die Einheitlichkeit über Sektoren hinweg und die Verknüpfung mit weiteren Verfahrensregeln: Länder erhalten Spielräume, zusätzliche Anlagen zu identifizieren, und das Bundesinnenministerium soll die Details per Verordnung konkretisieren. Das ist ein Architekturwechsel im Schutzregime, noch kein Nachweis dafür, dass die Lage bereits sicherer geworden ist."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusatznutzen: Mehr Koordination in einem kaskadengefährdeten Feld",
+          "paragraphs": [
+            "Der zusätzliche Nutzen des Gesetzes liegt in der Reduktion von Koordinationsbrüchen. Wenn Energie, Verkehr, Gesundheit, Trinkwasser und weitere Sektoren nach einem gemeinsamen Grundrahmen behandelt werden, sinkt zumindest das Risiko, dass Schutzanforderungen vollständig auseinanderlaufen. Gerade bei kritischen Infrastrukturen ist das wichtig, weil Ausfälle oft kaskadieren: Ein Problem in einem Sektor kann andere mitziehen.",
+            "Aus Wirkungsökonomie-Sicht ist das zunächst ein Wirkungspotenzial, kein Wirkungsnachweis. Das Gesetz kann Zuständigkeiten sichtbarer machen, Prioritäten ordnen und Anpassungsdruck erzeugen. Ob daraus tatsächlich robustere Systeme entstehen, hängt an Kontrolle, Vollzug, technischen Standards und der Frage, ob Betreiber und Behörden die Regeln in belastbare Prozesse übersetzen."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Schutz von Versorgung, begrenzte Umweltwirkung, mehr Steuerungsanspruch",
+          "paragraphs": [
+            "Für Menschen ist der Bezug am unmittelbarsten: Versorgungs- und Sicherheitsleistungen sollen auch bei Vorfällen verfügbar bleiben. Wenn kritische Infrastruktur besser abgesichert wird, betrifft das im Idealfall Strom, Wasser, Gesundheit, Kommunikation und Transport. Das ist ein hoher gesellschaftlicher Relevanzkern, weil Funktionsausfälle schnell Alltags- und Gesundheitsfolgen haben können.",
+            "Für den Planeten ist der Zusammenhang indirekter. Aus den Quellen folgt keine direkte Umweltwirkung. Mittelbar kann eine stabilere Infrastruktur aber auch umweltrelevante Systeme wie Energie, Wasser und Entsorgung absichern. Für die Demokratie ist die Wirkung ebenfalls vor allem strukturell: Das Gesetz erweitert staatliche Steuerung und verknüpft Bund, Länder und Verordnungsebene. Damit steigt die Bedeutung von Transparenz, Kontrolle und nachvollziehbarer Zuständigkeitsverteilung."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Von der Norm zur möglichen Veränderung",
+          "paragraphs": [
+            "Die erste Wirkungsordnung ist klar belegt: Es gibt nun einen bundeseinheitlichen Rechtsrahmen für bestimmte Schutzanforderungen. Die zweite Ordnung ist plausibel, aber noch nicht belegt: Betreiber und Behörden könnten ihre Sicherheitsmaßnahmen anpassen, Meldewege klären und Risiken systematischer bewerten. Die dritte Ordnung bleibt vorläufig: Eine verbesserte Resilienz gegenüber Sabotage, Cyberangriffen oder physischen Störungen ist denkbar, aber im Material nicht gemessen.",
+            "Wichtig ist die Trennung zwischen Reichweite und Wirkung. Dass viele Sektoren erfasst werden, sagt noch nichts über die Qualität der tatsächlichen Zustandsänderung. Erst wenn Vollzug, Fristen, Kontrollintensität und technische Konkretisierung greifen, kann aus einem Regelungsrahmen eine überprüfbare Wirkungsänderung werden."
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Mehr Widerstandsfähigkeit ist das Ziel, nicht die belegte Folge",
+          "paragraphs": [
+            "Die Bundesregierung beschreibt das Ziel des Gesetzes ausdrücklich als höhere Widerstandsfähigkeit und die Sicherung des Betriebs auch bei Vorfällen. Das ist eine klare Wirkungsabsicht des Gesetzgebers. Die Quellen belegen jedoch nicht, dass diese Wirkung schon eingetreten ist. Es fehlt im Material eine unabhängige Messung, etwa zu Ausfallzeiten, Wiederanlaufgeschwindigkeit oder Sicherheitsniveau vor und nach Inkrafttreten.",
+            "Die journalistischen Begleitstimmen unterstreichen eher die Vulnerabilität des Feldes als den erreichten Erfolg. Ein Bericht nennt Cyberangriffe, Sabotage und Drohnen als Risiken. Eine andere Quelle zitiert die Kritik, das Gesetz sei bisher nur eine leere Hülle. Das spricht nicht gegen den Regelungsansatz, wohl aber gegen jede vorschnelle Behauptung eines bereits verwirklichten Sicherheitsgewinns."
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten: Sicherheitsgewinn kann Kosten, Aufwand und Verlagerungen auslösen",
+          "paragraphs": [
+            "Ein Schutzrahmen für kritische Infrastrukturen erzeugt typischerweise nicht nur Nutzen, sondern auch Kosten und Nebenfolgen. Mehr Prüf-, Melde- und Abstimmungspflichten können Betreiber und Behörden organisatorisch belasten. In den Quellen ist diese Belastung nicht beziffert, aber als mögliche Konsequenz des Regelungsdesigns naheliegend. Das ist keine Abwertung, sondern Teil der Wirkungsanalyse.",
+            "Zudem kann eine strengere Schutzarchitektur Prioritäten verschieben: Mittel fließen eher in Sicherheitsmaßnahmen, Monitoring und Abstimmung. Ob das gesamtwirtschaftlich effizient ist, lässt sich mit dem vorliegenden Material nicht beurteilen. Für eine vollständige Wirkungsbilanz bräuchte es Angaben zu Umsetzungsaufwand, Folgekosten und eventuellen Verdrängungseffekten."
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer trägt Aufwand, wer gewinnt Schutz?",
+          "paragraphs": [
+            "Verteilungspolitisch ist das Gesetz vor allem eine Frage der Lastenverteilung zwischen Staat und Betreibern sowie zwischen Bund und Ländern. Die Quellen zeigen, dass Länder weitere Anlagen identifizieren dürfen und das Innenministerium per Verordnung konkretisieren soll. Damit werden Zuständigkeiten differenzierter, aber auch komplexer.",
+            "Der Schutzgewinn dürfte nicht gleichmäßig verteilt sein. Sektoren mit hoher Abhängigkeit von Infrastruktur, etwa Gesundheit, Energie oder Trinkwasser, könnten besonders profitieren, wenn Standards wirksam umgesetzt werden. Umgekehrt tragen Betreiber und Verwaltungen die praktischen Umstellungskosten. Aus den gelieferten Quellen lässt sich nicht ableiten, ob diese Lasten sozial oder ökonomisch ausgewogen verteilt sind."
+          ]
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Frame und Diskurs: Sicherheitsproblem ja, Wirkungsbeweis nein",
+          "paragraphs": [
+            "Die Quellen rahmen das Thema als Reaktion auf verwundbare Infrastruktur. Das ist sachlich nachvollziehbar, weil beide journalistischen Beiträge Risiken und Schutzbedarf hervorheben. Zugleich wäre es analytisch zu stark, daraus schon einen Nachweis wirksamer Steuerung zu machen. Die Attribution bleibt klar: Die Aussagen stammen aus der Bundesregierung, einem rbb-Interview und einer Deutschlandfunk-Zitation.",
+            "Für den Diskurscheck wichtig ist deshalb die Trennung zwischen kommuniziertem Wirkungspotenzial und eingetretener Wirkung. Begriffe wie \"stärkerer Schutz\" oder \"Widerstandsfähigkeit erhöhen\" beschreiben ein normatives Ziel und eine Steuerungsabsicht. Sie sind kein Beweis dafür, dass die Lage bereits sicherer ist. Auch die Kritik, das Gesetz sei eine Hülle, belegt nicht das Gegenteil, sondern vor allem die Unsicherheit über die Umsetzung."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Der Vollzug ist der entscheidende offene Punkt",
+          "paragraphs": [
+            "Die zentrale Unsicherheit liegt im Vollzug. Die Bundesregierung nennt zwar den Rahmen, die betroffenen Sektoren und weitere Verfahrensschritte. Doch die Quellen geben keine belastbaren Details dazu, wie streng die Standards praktisch ausfallen, wie schnell sie umgesetzt werden und wie sie kontrolliert werden. Ohne diese Angaben bleibt die Wirkungsschätzung offen.",
+            "Hinzu kommt: Die journalistischen Quellen liefern Bewertung und Warnung, aber keine Messung. Sie zeigen Aufmerksamkeit und Streit über Tempo, nicht aber eine belastbare Wirkungsbilanz. Damit ist die richtige journalistische Formulierung nicht \"das Gesetz schützt bereits\", sondern: \"Das Gesetz schafft die Grundlage für Schutz; ob daraus messbar mehr Resilienz wird, ist noch offen.\""
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Wirkung künftig prüfen lässt",
+          "paragraphs": [
+            "Die nächsten Beobachtungspunkte sind klar: die angekündigte Rechtsverordnung, konkrete Kriterien und Verfahren, mögliche zusätzliche Identifizierungen durch die Länder und die in zwei Jahren vorgesehene Evaluierung. Erst dort lässt sich prüfen, ob der Rahmen in belastbare Umsetzung übersetzt wird.",
+            "Wirkungsökonomisch wären dann besonders drei Fragen relevant: Werden Standards tatsächlich eingeführt? Verändern sie die Schutzpraxis in den Sektoren? Und zeigen sich messbare Effekte auf Ausfallrobustheit, Wiederanlauf oder Schadensbegrenzung? Solange diese Punkte unbelegt bleiben, ist jede stärkere Erfolgserzählung analytisch zu früh."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Ein wichtiger Ordnungsrahmen mit offenem Wirkungsnachweis",
+          "paragraphs": [
+            "Das KRITIS-Dachgesetz ist systemisch relevant, weil es mehrere lebenswichtige Sektoren unter einen gemeinsamen Schutzrahmen stellt. Damit schafft es bessere Voraussetzungen für Koordination, Priorisierung und staatliche Steuerung. Das ist der zusätzliche Zusammenhang, der über die reine Gesetzesmeldung hinausgeht.",
+            "Der begrenzende Punkt ist ebenso wichtig: Die Quellen belegen den Rechtsrahmen und das politische Ziel, nicht aber eine bereits eingetretene Schutzwirkung. Aus Wirkungsökonomie-Sicht ist das Gesetz daher zunächst ein Instrument mit hohem Wirkungspotenzial und nachvollziehbarem Resilienzversprechen. Ob daraus tatsächlich mehr Sicherheit, weniger Ausfälle und bessere Wiederherstellung werden, entscheidet sich erst im Vollzug und in der späteren Evaluierung."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Das KRITIS-Dachgesetz setzt bundesweit einheitliche und sektorübergreifende Mindeststandards für den Schutz kritischer Infrastrukturen.",
+          "type": "fact",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quelle nennt den Rahmen, nicht die vollständige Detailausgestaltung aller Standards.",
+          "date": "2026-09-02"
+        },
+        {
+          "claim": "Die Bundesregierung nennt unter anderem Energie, Transport und Verkehr, Gesundheit und Trinkwasser als Beispiele für kritische Infrastrukturen.",
+          "type": "fact",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Es handelt sich um genannte Beispiele, nicht um eine abschließende Liste im vorliegenden Material.",
+          "date": "2026-09-02"
+        },
+        {
+          "claim": "Das Gesetz ist seit März 2026 in Kraft.",
+          "type": "fact",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Das genaue Inkrafttreten einzelner Bestimmungen ist im Material nicht vollständig aufgeschlüsselt.",
+          "date": "2026-09-02"
+        },
+        {
+          "claim": "Im parlamentarischen Verfahren erhielten Länder mehr Spielraum, weitere kritische Anlagen zu identifizieren, und das Bundesinnenministerium soll Kriterien und Verfahren per Rechtsverordnung mit Bundesratszustimmung festlegen.",
+          "type": "fact",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die konkrete Ausgestaltung der Verordnung ist im Material noch offen.",
+          "date": "2026-09-02"
+        },
+        {
+          "claim": "Eine Evaluierung ist bereits in zwei Jahren vorgesehen.",
+          "type": "fact",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Ergebnisse der Evaluierung liegen noch nicht vor.",
+          "date": "2026-09-02"
+        },
+        {
+          "claim": "Das Ziel des Gesetzes ist es, die Widerstandsfähigkeit kritischer Infrastrukturen zu erhöhen und den Betrieb auch bei Vorfällen aufrechtzuerhalten.",
+          "type": "fact",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Dies ist ein Ziel- und Zweckclaim, kein Wirkungsnachweis.",
+          "date": "2026-09-02"
+        },
+        {
+          "claim": "Das Gesetz kann die Koordination zwischen Bund, Ländern und Betreibern erleichtern.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Quellen belegen Zuständigkeiten und Verfahrenselemente, nicht den tatsächlichen Koordinationseffekt.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Das Gesetz hat ein Wirkungspotenzial für mehr Resilienz gegenüber Störungen, Sabotage und Cybervorfällen.",
+          "type": "impact_potential",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9",
+            "e02624ad2c71a2de28a9c197f4aca57bc3fb3873ede80756c3639aa4dd653328"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Schutzwirkung ist plausibel, aber nicht gemessen.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Die Quellen liefern keine unabhängige Messung einer bereits eingetretenen Sicherheits- oder Resilienzverbesserung.",
+          "type": "observation",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9",
+            "e02624ad2c71a2de28a9c197f4aca57bc3fb3873ede80756c3639aa4dd653328",
+            "f98ce2c91683bbdc26740ed46e97d2efcba70d1582da0697ffffd3508851f28f"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Es liegen nur Ziel- und Bewertungsaussagen vor, keine Wirkungsdaten.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Die journalistischen Quellen beschreiben kritische Infrastruktur als verletzlich und nennen Risiken wie Cyberangriffe, Sabotage und Drohnen.",
+          "type": "fact",
+          "source_ids": [
+            "e02624ad2c71a2de28a9c197f4aca57bc3fb3873ede80756c3639aa4dd653328"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Risikoauflistung stammt aus der journalistischen Darstellung und ist nicht als Messung zu verstehen.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Eine andere Quelle zitiert die Kritik, das Gesetz sei bisher nur eine leere Hülle und müsse in Wochen, nicht in Jahren, umgesetzt werden.",
+          "type": "fact",
+          "source_ids": [
+            "f98ce2c91683bbdc26740ed46e97d2efcba70d1582da0697ffffd3508851f28f"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Dies ist eine zugeschriebene Kritik, kein Beleg für die tatsächliche Wirkungslosigkeit des Gesetzes.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Die Regelung kann zusätzliche Umstellungs- und Abstimmungskosten für Betreiber und Behörden auslösen.",
+          "type": "impact_risk",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+          ],
+          "evidence_level": "low",
+          "data_status": "inferred",
+          "uncertainty": "Die Kostenfolge ist naheliegend, aber im Material nicht quantifiziert.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Das Gesetz verändert die staatliche Steuerungsarchitektur im Schutz kritischer Infrastrukturen.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Veränderung betrifft vor allem Zuständigkeit, Verordnung und Evaluierung; die praktische Tiefe bleibt offen.",
+          "date": "2026-09-03"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellen belegen einen Rechtsrahmen und ein Schutzversprechen, aber keine messbare Verbesserung von Ausfallsicherheit oder Wiederanlauf.",
+          "source_ids": [
+            "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9",
+            "e02624ad2c71a2de28a9c197f4aca57bc3fb3873ede80756c3639aa4dd653328",
+            "f98ce2c91683bbdc26740ed46e97d2efcba70d1582da0697ffffd3508851f28f"
+          ],
+          "effect_on_assessment": "Begrenzt jede Aussage über bereits eingetretene Wirkung und verschiebt den Fokus auf Wirkungspotenzial und Vollzug."
+        },
+        {
+          "finding": "Die Deutschlandfunk-Quelle zitiert die Kritik, das Gesetz sei bisher nur eine leere Hülle.",
+          "source_ids": [
+            "f98ce2c91683bbdc26740ed46e97d2efcba70d1582da0697ffffd3508851f28f"
+          ],
+          "effect_on_assessment": "Stützt die Unsicherheitsbewertung und zeigt, dass die praktische Umsetzung als offen umstritten gilt."
+        },
+        {
+          "finding": "Die rbb-Quelle benennt Risiken und Verletzlichkeit, aber keinen Nachweis, dass das Gesetz diese Risiken bereits reduziert hat.",
+          "source_ids": [
+            "e02624ad2c71a2de28a9c197f4aca57bc3fb3873ede80756c3639aa4dd653328"
+          ],
+          "effect_on_assessment": "Erhöht die Plausibilität des Schutzbedarfs, liefert aber keinen Wirkungsnachweis."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Veröffentlichung der Rechtsverordnung des Bundesinnenministeriums",
+        "konkrete Umsetzungsfristen und Kontrollmechanismen",
+        "Belege zu tatsächlichen Schutzverbesserungen in den betroffenen Sektoren",
+        "Ergebnisse der in zwei Jahren vorgesehenen Evaluierung"
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "KRITIS-Dachgesetz: Einheitliche Mindeststandards für kritische Infrastrukturen und ihre Grenzen",
+        "recommended_summary": "Das Gesetz setzt einen bundeseinheitlichen Schutzrahmen für kritische Infrastrukturen. Der systemische Gewinn liegt in Koordination und Standardisierung, die tatsächliche Wirkung bleibt vom Vollzug abhängig.",
+        "recommended_meta_description": "KRITIS-Dachgesetz: Bundeseinheitliche Mindeststandards, Zuständigkeiten und offene Vollzugsfragen im Wirkungscheck."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9",
+          "registry_source_id": "bundesregierung-kompakt",
+          "publisher_id": "bundesregierung",
+          "publisher": "Bundesregierung kompakt",
+          "title": "Stärkerer Schutz kritischer Infrastrukturen",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/kritis-dachgesetz-2383682",
+          "published_at": "2026-09-02T06:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "source_id": "e02624ad2c71a2de28a9c197f4aca57bc3fb3873ede80756c3639aa4dd653328",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Hacking, Drohnen, Sabotage: \"Kritische Infrastruktur geht jeden Bürger etwas an\"",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-kritische-infrastruktur-hacking-drohnen-sabotage-interview.html",
+          "published_at": "2026-09-03T07:05:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f98ce2c91683bbdc26740ed46e97d2efcba70d1582da0697ffffd3508851f28f",
+          "registry_source_id": "dlf-gesellschaft",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk – Gesellschaft",
+          "title": "IT-Sicherheitsexperte Atug mahnt bei Schutz der Infrastruktur zur Eile",
+          "url": "https://www.deutschlandfunk.de/debatte-um-schutz-kritischer-infrastruktur-102.html",
+          "published_at": "2026-09-03T10:12:04.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T14:02:11.302Z",
+          "source_fingerprint": "6ed79b91bef11cc5feadb07f866643db995bb11b3d4bb5c24f73a0060df65c54",
+          "title": "KRITIS-Dachgesetz: Einheitliche Mindeststandards für kritische Infrastrukturen und ihre Grenzen",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Das KRITIS-Dachgesetz setzt bundesweit einheitliche und sektorübergreifende Mindeststandards für den Schutz kritischer Infrastrukturen.",
+              "type": "fact",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quelle nennt den Rahmen, nicht die vollständige Detailausgestaltung aller Standards.",
+              "date": "2026-09-02"
+            },
+            {
+              "claim": "Die Bundesregierung nennt unter anderem Energie, Transport und Verkehr, Gesundheit und Trinkwasser als Beispiele für kritische Infrastrukturen.",
+              "type": "fact",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Es handelt sich um genannte Beispiele, nicht um eine abschließende Liste im vorliegenden Material.",
+              "date": "2026-09-02"
+            },
+            {
+              "claim": "Das Gesetz ist seit März 2026 in Kraft.",
+              "type": "fact",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Das genaue Inkrafttreten einzelner Bestimmungen ist im Material nicht vollständig aufgeschlüsselt.",
+              "date": "2026-09-02"
+            },
+            {
+              "claim": "Im parlamentarischen Verfahren erhielten Länder mehr Spielraum, weitere kritische Anlagen zu identifizieren, und das Bundesinnenministerium soll Kriterien und Verfahren per Rechtsverordnung mit Bundesratszustimmung festlegen.",
+              "type": "fact",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die konkrete Ausgestaltung der Verordnung ist im Material noch offen.",
+              "date": "2026-09-02"
+            },
+            {
+              "claim": "Eine Evaluierung ist bereits in zwei Jahren vorgesehen.",
+              "type": "fact",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Ergebnisse der Evaluierung liegen noch nicht vor.",
+              "date": "2026-09-02"
+            },
+            {
+              "claim": "Das Ziel des Gesetzes ist es, die Widerstandsfähigkeit kritischer Infrastrukturen zu erhöhen und den Betrieb auch bei Vorfällen aufrechtzuerhalten.",
+              "type": "fact",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Dies ist ein Ziel- und Zweckclaim, kein Wirkungsnachweis.",
+              "date": "2026-09-02"
+            },
+            {
+              "claim": "Das Gesetz kann die Koordination zwischen Bund, Ländern und Betreibern erleichtern.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Quellen belegen Zuständigkeiten und Verfahrenselemente, nicht den tatsächlichen Koordinationseffekt.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Das Gesetz hat ein Wirkungspotenzial für mehr Resilienz gegenüber Störungen, Sabotage und Cybervorfällen.",
+              "type": "impact_potential",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9",
+                "e02624ad2c71a2de28a9c197f4aca57bc3fb3873ede80756c3639aa4dd653328"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Schutzwirkung ist plausibel, aber nicht gemessen.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Die Quellen liefern keine unabhängige Messung einer bereits eingetretenen Sicherheits- oder Resilienzverbesserung.",
+              "type": "observation",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9",
+                "e02624ad2c71a2de28a9c197f4aca57bc3fb3873ede80756c3639aa4dd653328",
+                "f98ce2c91683bbdc26740ed46e97d2efcba70d1582da0697ffffd3508851f28f"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Es liegen nur Ziel- und Bewertungsaussagen vor, keine Wirkungsdaten.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Die journalistischen Quellen beschreiben kritische Infrastruktur als verletzlich und nennen Risiken wie Cyberangriffe, Sabotage und Drohnen.",
+              "type": "fact",
+              "source_ids": [
+                "e02624ad2c71a2de28a9c197f4aca57bc3fb3873ede80756c3639aa4dd653328"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Risikoauflistung stammt aus der journalistischen Darstellung und ist nicht als Messung zu verstehen.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Eine andere Quelle zitiert die Kritik, das Gesetz sei bisher nur eine leere Hülle und müsse in Wochen, nicht in Jahren, umgesetzt werden.",
+              "type": "fact",
+              "source_ids": [
+                "f98ce2c91683bbdc26740ed46e97d2efcba70d1582da0697ffffd3508851f28f"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Dies ist eine zugeschriebene Kritik, kein Beleg für die tatsächliche Wirkungslosigkeit des Gesetzes.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Die Regelung kann zusätzliche Umstellungs- und Abstimmungskosten für Betreiber und Behörden auslösen.",
+              "type": "impact_risk",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+              ],
+              "evidence_level": "low",
+              "data_status": "inferred",
+              "uncertainty": "Die Kostenfolge ist naheliegend, aber im Material nicht quantifiziert.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Das Gesetz verändert die staatliche Steuerungsarchitektur im Schutz kritischer Infrastrukturen.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "63be2a446629eaadfc7fcfba0e5545afb9d73bccf25ab2c2527094db192690e9"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Veränderung betrifft vor allem Zuständigkeit, Verordnung und Evaluierung; die praktische Tiefe bleibt offen.",
+              "date": "2026-09-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-2557713b0904",
+      "story_id": "wt-4fb94d2cebfca746",
+      "related_story_ids": [
+        "wt-4fb94d2cebfca746",
+        "wt-60f4e4d7d43fad99",
+        "wt-33e396f2be1a3a1f",
+        "wt-7b385f58748f3d32",
+        "wt-f3d585eac14dec76",
+        "wt-f7d7115a53ff2c2f",
+        "wt-c053f94b1bbc57bd",
+        "wt-00fccb632042b492",
+        "wt-a5874ae28ed5533f",
+        "wt-03c6bacdda808696",
+        "wt-a6f6c9c60011b50c",
+        "wt-cb1584ee4d9e6a43",
+        "wt-1fbb056ccaaf351d",
+        "wt-5547189d2645384a",
+        "wt-7ae0b9f22404b684",
+        "wt-b9487671699d6c9b",
+        "wt-9812656e38b0d665"
+      ],
+      "related_case_id": "case-4dc00cde414b35",
+      "slug": "dormagen-was-der-sabotageverdacht-an-einem-umspannwerk-systemisch-bedeutet-255771",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+      "method_version": "1.0",
+      "source_fingerprint": "b0bbc4dc52ef7a7e171ff8bfe0378024486726ada74f4c15a24f830d47e82abd",
+      "candidate_score": 67,
+      "analysis_gain_score": 49,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 13,
+        "primary_source_count": 0,
+        "cited_claim_count": 77,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T14:02:11.302Z",
+      "updated_at": "2026-09-05T14:02:11.302Z",
+      "version": 1,
+      "editorial_question": "Was sagt der Fund an einem Umspannwerk in Dormagen über den Schutz kritischer Strominfrastruktur, und wo endet die belegte Wirkungslage an der Schwelle von Verdacht, Fahndung und möglicher Einordnung als Sabotage?",
+      "analysis_type": "case_analysis",
+      "title": "Dormagen: Was der Sabotageverdacht an einem Umspannwerk systemisch bedeutet",
+      "subtitle": "Zwischen Verdachtslage, Fahndung und kritischer Infrastruktur ist der zusätzliche Zusammenhang wichtiger als die schnelle Zuschreibung.",
+      "teaser": "In Dormagen steht ein Umspannwerk im Fokus der Ermittler. Der Fall zeigt, wie schnell ein Verdacht an kritischer Infrastruktur Schutzaufwand, Risikoerwartungen und öffentliche Aufmerksamkeit verschiebt.",
+      "seo_description": "Dormagen: Verdacht an Umspannwerk, Fahndung und Schutz kritischer Strominfrastruktur – die WÖK-Analyse zum systemischen Zusammenhang.",
+      "additional_value": "Die Analyse trennt belegte Tatsachen von Zuschreibungen und zeigt, wie ein einzelner Verdachtsfall an kritischer Infrastruktur Schutzlogiken, Resilienzfragen und Sicherheitswahrnehmung verschiebt, ohne Schaden oder Täterhypothesen zu überdehnen.",
+      "research_summary": "Aus den gelieferten Quellen gesichert sind der Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen, die polizeiliche Einordnung als mögliches Sabotagedelikt nach Eingang eines Bekennerschreibens sowie eine Fahndung nach einem Mann aus Gevelsberg. Mehrere Berichte nennen außerdem weitere Vorfälle an anderen Umspannwerken und in späteren Meldungen weitere Ermittlungen in NRW, Brandenburg und Sachsen. Nicht belegt ist in den gelieferten Texten ein tatsächlich eingetretener Schaden am Dormagener Umspannwerk oder die unabhängige Echtheit des Bekennerschreibens.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Die Lage: Ein Verdachtsfall an einem Knoten der Stromversorgung",
+          "paragraphs": [
+            "An einem Umspannwerk in Dormagen wurde ein verdächtiger Gegenstand gefunden. Mehrere Medien berichten anschließend, die Polizei gehe von einem Sabotagedelikt aus; als Begründung wird ein eingegangenes Bekennerschreiben genannt. Der WDR meldet zudem eine Fahndung nach einem Mann aus Gevelsberg, der dort nicht angetroffen wurde. Das ist zunächst noch keine abgeschlossene Tatbeschreibung, aber bereits eine Lage, in der sich Ermittlungslogik, Sicherheitslogik und öffentliche Risikowahrnehmung überlagern.",
+            "Wirkungsökonomisch ist wichtig, nicht den Fund selbst mit einem eingetretenen Schaden gleichzusetzen. Die Quellen beschreiben einen Verdachtsfall an kritischer Infrastruktur. Damit ist die zentrale Frage nicht zuerst, wie spektakulär der Fall klingt, sondern ob und wie er tatsächliche Zustände verändert hat: bei der Anlage, bei der Einsatzlage, bei Schutzmaßnahmen und bei der Sicherheitserwartung der Betreiber und Behörden."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Der systemische Zusatznutzen liegt nicht in der Reichweite, sondern in der Knotenfunktion",
+          "paragraphs": [
+            "Umspannwerke sind keine beliebigen Orte. Sie stehen im Netz der Stromversorgung an Stellen, an denen aus einem begrenzten Vorfall schnell ein breiteres Versorgungs- und Sicherheitsproblem werden kann. Genau daraus entsteht der systemische Zusatznutzen einer WÖK-Analyse: Sie fragt nicht nur, was passiert ist, sondern warum ein Vorfall an dieser Stelle mehr ist als eine lokale Meldung. Der Knotencharakter macht aus einem einzelnen Ereignis ein mögliches Signal für Schutzarchitektur, Lagebild und Resilienz.",
+            "Die Quellen zeigen zudem, dass der Dormagener Fall nicht isoliert in der öffentlichen Wahrnehmung steht. Mehrere Berichte verknüpfen ihn mit weiteren Vorfällen an anderen Umspannwerken, teils am selben oder am Vortag, und später auch mit Ermittlungen in anderen Bundesländern. Das belegt noch keinen gemeinsamen Ursprung, aber es erhöht den systemischen Resonanzraum: Behörden und Betreiber betrachten dann nicht nur einen Einzelfall, sondern eine mögliche Serie oder zumindest eine Serie von Verdachtslagen."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Die drei Perspektiven mit unterschiedlicher Tragweite",
+          "paragraphs": [
+            "Für Menschen ist der unmittelbarste Bezug die Versorgungssicherheit. Schon ein Verdachtsfall an einer Stromanlage kann Zusatzaufwand, Alarmierung und Unsicherheit auslösen; ob daraus reale Versorgungsstörungen entstehen, ist in den Quellen aber nicht belegt. Der zweite menschliche Aspekt ist das Sicherheitsgefühl: Wo kritische Infrastruktur als angreifbar erscheint, wachsen Schutzbedarf und Wahrnehmung von Verletzlichkeit. Das ist eine Veränderung der Lagewahrnehmung, nicht automatisch eine eingetretene materielle Wirkung.",
+            "Für den Planeten ergibt sich aus dem Material kein direkter Umweltbeleg. Der Fall betrifft Strominfrastruktur, aber aus den Quellen lässt sich weder ein Emissions- noch ein Schadenseffekt an Umweltgütern ableiten. Für die Demokratie ist der Bezug anders gelagert: Der Fall berührt staatliche Schutz- und Ermittlungsfähigkeit, also die Fähigkeit, kritische Versorgung zu sichern und Vorfälle rechtsstaatlich aufzuklären. Ein demokratischer Verfahrensbruch ist daraus nicht ersichtlich. Vielmehr geht es um die Stabilität öffentlicher Daseinsvorsorge und um die Frage, ob Institutionen auf mögliche Angriffe schnell, transparent und verhältnismäßig reagieren können."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Vom Fund bis zur möglichen Systemanpassung",
+          "paragraphs": [
+            "Erste Ordnung ist die unmittelbare Einsatz- und Ermittlungsreaktion. Die Polizei untersucht den Fund, ordnet ihn laut Berichten als mögliches Sabotagedelikt ein und fahndet nach einer verdächtigen Person. Das ist eine beobachtbare Zustandsänderung im Behördenhandeln. Zweite Ordnung ist die mögliche Anpassung von Schutzmaßnahmen: Wenn Umspannwerke als angreifbar erscheinen, können Betreiber und Behörden Sicherung, Überwachung und Lagebewertung verstärken. Diese Folge wird von den Quellen nicht im Detail dokumentiert, sie ist aber als Wirkpotenzial plausibel im Rahmen des beschriebenen Falls.",
+            "Dritte Ordnung wäre eine längerfristige Veränderung der Risikowahrnehmung für kritische Energieinfrastruktur. Auch hier gilt: Die Reichweite der Berichterstattung ist nicht selbst die Wirkung. Wirkung entstünde erst, wenn Schutzkonzepte, Prioritäten oder Investitionen tatsächlich geändert würden. Die gelieferten Quellen zeigen dafür nur den Anlass, nicht schon die vollzogene Entscheidung."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Viel Verdacht, wenig verifizierte Schadenslage",
+          "paragraphs": [
+            "Die Unsicherheit ist in diesem Fall nicht nebensächlich, sondern der Kern der sauberen Einordnung. In den Quellen ist von einem Bekennerschreiben die Rede, dessen Echtheit nicht unabhängig belegt wird. Ebenso bleibt offen, ob der gefundene Gegenstand tatsächlich funktionsfähig war, ob es zu einem Schaden kam und ob ein Zusammenhang zu weiteren Vorfällen besteht. Frühere Meldungen formulieren sogar die Alternative eines bloßen schlechten Scherzes. Das ist ein wichtiger Gegenbefund gegen vorschnelle Kausalität.",
+            "Zudem stammen die vorliegenden Informationen fast ausschließlich aus journalistischen Berichten. Das genügt für eine belastbare Erstlage, aber nicht für eine harte Zurechnung von Ursache und Wirkung. Die Wirkungsökonomie verlangt hier Zurückhaltung: Wo noch nicht geklärt ist, ob überhaupt eine technische oder physische Beeinträchtigung eingetreten ist, darf man keine beobachtete Wirkung behaupten. Was belegt ist, ist eine polizeiliche Verdachts- und Fahndungslage."
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Was den Befund im Nachgang klärt oder kippt",
+          "paragraphs": [
+            "Für die weitere Bewertung kommt es darauf an, ob Polizei oder Betreiber konkrete Angaben zu Tatmittel, möglichem Funktionsprinzip, tatsächlichem Schaden oder Sicherungsmaßnahmen machen. Ebenso wichtig ist, ob das Bekennerschreiben überprüft wird und ob die Fahndung zu einer belastbaren Identifizierung führt. Solche Informationen würden die Zurechnung von Verdacht zu tatsächlicher Handlung oder von Handlung zu Wirkung erheblich verändern.",
+            "Ebenso relevant wäre, ob sich die parallelen Vorfälle an anderen Standorten als zusammenhängend oder nur als zeitliche Häufung erweisen. Erst dann ließe sich aus der Lage eine robustere Systemanalyse ableiten. Bleibt es bei einzelnen, nicht zusammengeführten Verdachtsfällen, dann bleibt auch der systemische Befund begrenzt: viel Schutzbedarf, aber noch kein belastbarer Nachweis einer koordinierten Angriffskampagne."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Der Fall ist ein Test für Resilienz, nicht schon ihr Beweis",
+          "paragraphs": [
+            "Die zusätzliche Bedeutung dieses Falls liegt darin, dass er die Fragilität und zugleich die Funktionsweise kritischer Infrastruktur sichtbar macht. Ein Verdachtsfall an einem Umspannwerk erzeugt sofort einen Wirkpfad über Ermittlungen, Schutzmaßnahmen und öffentliche Aufmerksamkeit. Das ist systemisch relevant, weil Stromversorgung ein Voraussetzungsbereich moderner Gesellschaften ist. Dennoch bleibt die materielle Wirkungslage im engeren Sinn offen: Ein Verdacht ist noch kein Schaden, eine Fahndung noch keine Auflösung, ein Bekennerschreiben noch keine verifizierte Tatbegründung.",
+            "Wirkungsökonomisch betrachtet zeigt der Fall vor allem ein Wirkungsrisiko mit Resilienzbezug. Er macht sichtbar, wo Schutzarchitektur ansetzen muss, und er kann Betreiber wie Behörden zu mehr Vorsorge veranlassen. Das ist kein Transformationsbeweis, aber ein möglicher Anlass für Anpassung. Die demokratische Relevanz liegt im rechtsstaatlichen Umgang mit einem Sicherheitsvorfall, der menschliche Versorgungssicherheit betrifft und zugleich Planet und Demokratie unterschiedlich stark berührt. Die saubere Schlussfolgerung lautet deshalb: systemisch bedeutsam ja, beobachtete Wirkung im engeren Sinne nur dort, wo Ermittlungs- und Schutzreaktionen bereits sichtbar sind, nicht jedoch bei der behaupteten Tatfolge selbst."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "An einem Umspannwerk in Dormagen wurde ein verdächtiger Gegenstand gefunden.",
+          "type": "fact",
+          "source_ids": [
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quellen beschreiben den Fund, nicht aber schon dessen Funktion oder Folgen.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Die Polizei geht nach dem Fund von einem Sabotagedelikt aus.",
+          "type": "fact",
+          "source_ids": [
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+            "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Einordnung stammt aus den Berichten; die Beweisgrundlage ist in den gelieferten Texten nicht unabhängig geprüft.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Ein Sprecher der Kölner Polizei nennt ein eingegangenes Bekennerschreiben als Grundlage der Einordnung.",
+          "type": "fact",
+          "source_ids": [
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+            "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Die Echtheit des Bekennerschreibens wird in den gelieferten Quellen nicht unabhängig bestätigt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Polizei fahndet nach einem Mann aus Gevelsberg.",
+          "type": "fact",
+          "source_ids": [
+            "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Fahndung ist belegt; die strafrechtliche Einordnung der Person bleibt in den Quellen offen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Mehrere Berichte sprechen von möglichen weiteren Vorfällen an anderen Umspannwerken am Dienstag.",
+          "type": "fact",
+          "source_ids": [
+            "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Formulierung bleibt vage und ist in den gelieferten Texten nicht konsolidiert.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Polizei fahndet weiter nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz.",
+          "type": "fact",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quellen beziehen sich auf weitere Ermittlungszusammenhänge, nicht nur auf Dormagen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "In der Wohnung des 48-Jährigen in Gevelsberg fanden Ermittler sprengstoffverdächtige Gegenstände.",
+          "type": "fact",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "medium",
+          "data_status": "confirmed",
+          "uncertainty": "Die Formulierung 'sprengstoffverdächtig' verweist auf einen Ermittlungsbefund, nicht auf eine rechtskräftige Feststellung.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Eine beobachtete Wirkung im engeren Sinn ist in den gelieferten Quellen für Dormagen nicht belegt.",
+          "type": "woek_definition",
+          "source_ids": [
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quellen zeigen Verdacht, Fahndung und Einordnung, aber keinen belegten Schaden oder eine verifizierte Zustandsverschlechterung an der Anlage.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Der Vorfall erzeugt ein Wirkungspotenzial für zusätzliche Schutz- und Ermittlungsmaßnahmen an kritischer Infrastruktur.",
+          "type": "impact_potential",
+          "source_ids": [
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Das Potenzial ergibt sich aus der Knotenfunktion von Umspannwerken und den berichteten Ermittlungsreaktionen; es ist keine bereits eingetretene Wirkung.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Bei tatsächlicher Sabotage an Umspannwerken drohen Ausfälle, Folgekosten und zusätzliche Sicherheitsmaßnahmen.",
+          "type": "impact_risk",
+          "source_ids": [
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "medium",
+          "data_status": "scenario",
+          "uncertainty": "Die Quellen benennen Risiken implizit über die Infrastrukturrelevanz; konkrete Ausfälle im Dormagener Fall sind nicht belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Der Fall berührt den Schutz kritischer Infrastruktur und staatliche Ermittlungsfähigkeit, ohne dass ein demokratischer Verfahrensbruch belegt wäre.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die demokratische Relevanz ergibt sich aus dem Objektbezug kritischer Infrastruktur und staatlicher Reaktionsfähigkeit, nicht aus einem belegten institutionellen Fehlverhalten.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Der Fall kann zu einer dauerhaften Anpassung von Schutzkonzepten führen, wenn die Ermittlungen einen belastbaren Zusammenhang mit weiteren Vorfällen bestätigen.",
+          "type": "impact_potential",
+          "source_ids": [
+            "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "low",
+          "data_status": "scenario",
+          "uncertainty": "Dies ist eine mögliche Folge, keine im Material belegte Entscheidung oder Maßnahme.",
+          "date": "2026-09-05"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Frühe Meldungen formulieren noch Unsicherheit und fragen, ob es sich nur um einen schlechten Scherz handeln könnte.",
+          "source_ids": [
+            "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10",
+            "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d"
+          ],
+          "effect_on_assessment": "Das spricht gegen vorschnelle Täter- und Schadenszuschreibung in der Frühphase."
+        },
+        {
+          "finding": "Die Echtheit des Bekennerschreibens wird in den gelieferten Quellen nicht unabhängig belegt.",
+          "source_ids": [
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+            "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60"
+          ],
+          "effect_on_assessment": "Die polizeiliche Einordnung bleibt belastbar berichtet, aber in der Zurechnung begrenzt."
+        },
+        {
+          "finding": "Aus den Quellen geht nicht hervor, ob am Dormagener Umspannwerk tatsächlich ein Schaden eingetreten ist.",
+          "source_ids": [
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9"
+          ],
+          "effect_on_assessment": "Eine beobachtete Wirkung im engen Sinn darf nicht behauptet werden."
+        },
+        {
+          "finding": "Die Hinweise auf weitere Vorfälle an anderen Standorten bleiben in den gelieferten Texten teils vage und nicht unabhängig zusammengeführt.",
+          "source_ids": [
+            "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
+            "34bc122b9bf74bebeafd71643d3d0ea7952826caa0d370a81e707a8b8fac1163"
+          ],
+          "effect_on_assessment": "Der Eindruck einer Serie ist möglich, aber noch nicht robust belegt."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Eine bestätigte Schadensmeldung am Dormagener Umspannwerk würde die Wirkungslage deutlich verschärfen.",
+        "Eine unabhängige Prüfung des Bekennerschreibens würde die Zurechnung präzisieren oder schwächen.",
+        "Behördliche Angaben zu Tatmittel, Funktionsweise und möglicher Verknüpfung mit anderen Vorfällen würden die Systemanalyse deutlich verändern.",
+        "Wenn Betreiber oder Behörden konkrete Schutzmaßnahmen veröffentlichen, wäre die Resilienz- und Transformationsbewertung belastbarer."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Dormagen: Was der Sabotageverdacht an einem Umspannwerk systemisch bedeutet",
+        "recommended_summary": "Der Verdachtsfall an einem Dormagener Umspannwerk verändert vor allem Ermittlungs-, Schutz- und Wahrnehmungslogiken. Belegt sind Fund, Fahndung und polizeiliche Einordnung; ein Schaden nicht.",
+        "recommended_meta_description": "Dormagen: Verdachtsfall an einem Umspannwerk, Fahndung und Schutz kritischer Strominfrastruktur – die WÖK-Analyse zum systemischen Zusammenhang."
+      },
+      "reading_time_minutes": 5,
+      "source_snapshot": [
+        {
+          "source_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "published_at": "2026-09-04T13:58:04.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Sabotage-Versuch an Umspannwerk in Dormagen",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+          "published_at": "2026-09-04T01:45:01.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "286bf0c30dea8a66a74bbd8d5dfedf5d68ede625df946d30e3855702488349f4",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Weiterer Sabotage-Versuch an Umspannwerk in Dormagen",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
+          "published_at": "2026-09-04T05:37:43.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weiterer Polizeieinsatz in Oldenburg",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+          "published_at": "2026-09-04T06:00:49.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "d7801f4def8fdd306769ddd6bd105a09d7f0a59ffa7fd728d9710a75e1761bf6",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
+          "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
+          "published_at": "2026-09-04T02:12:48.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
+          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
+          "published_at": "2026-09-04T00:39:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60",
+          "registry_source_id": "spiegel-schlagzeilen",
+          "publisher_id": "spiegel",
+          "publisher": "DER SPIEGEL",
+          "title": "Dormagen: Polizei geht von versuchter Sabotage an Umspannwerk aus",
+          "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
+          "published_at": "2026-09-04T01:06:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
+          "published_at": "2026-09-03T21:07:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Nach Angriffen auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+          "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
+          "published_at": "2026-09-03T21:03:08.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weitere Polizeieinsätze in Oldenburg und Aachen",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weitere-polizeieinsaetze-in-oldenburg-und-aachen-100.html",
+          "published_at": "2026-09-04T09:17:32.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst",
+          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Polizei: Mögliche Sabotage an Umspannwerk in Dormagen",
+          "url": "https://www.zdfheute.de/politik/deutschland/umspannwerk-sabotage-dormagen-verdaechtiger-gegenstand-100.html",
+          "published_at": "2026-09-04T02:29:46.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "02e1209af9a34683c59bcc8c50426b8443647ab5cbfb2060694778258a4ece49",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Nachrichten für NRW: Sabotageversuch in Dormagen",
+          "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-umspannwerk-dormagen-sabotage-versuch-bundespraesident-buergerfest-spahn-klage-ski-aggu-100.html",
+          "published_at": "2026-09-04T04:50:24.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "05552d28b92ed39570221f63df0f2d7901c46aa4f7c18565373d448570e393b5",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - bundesweite Fahndung nach Tatverdächtigem",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-bundesweite-fahndung-nach-tatverdaechtigem-100.html",
+          "published_at": "2026-09-04T10:29:27.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Stromnetz-Sabotage: Polizei fahndet weiter nach Verdächtigem",
+          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
+          "published_at": "2026-09-04T16:49:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Polizei fahndet weiter nach Verdächtigem",
+          "url": "https://www.tagesschau.de/inland/fahndung-sabotage-stromnetz-100.html",
+          "published_at": "2026-09-05T07:45:01.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "80c246f10722e36049de20d5ebd90360a95abbdc539be494b0302c4c0ceb129a",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
+          "published_at": "2026-09-04T18:13:49.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "34bc122b9bf74bebeafd71643d3d0ea7952826caa0d370a81e707a8b8fac1163",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
+          "published_at": "2026-09-04T18:15:11.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "641fb9a25b26f3aee7a02df887e0f1070210b4e401ec1e1147b35bbdfe15d256",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+          "published_at": "2026-09-05T09:21:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "7a90981849bb892e3da69556ce80d4355980593b98ee6c37d30011b10bfd1f4b",
+          "registry_source_id": "wiwo-schlagzeilen",
+          "publisher_id": "wirtschaftswoche",
+          "publisher": "WirtschaftsWoche",
+          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt – NRW-Verdächtiger flüchtig",
+          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
+          "published_at": "2026-09-04T18:30:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "7160b03b5718132dc117454643d3b54d80b051e9f3be8c840357c76b559f485d",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Innenminister Schuster: \"Sprengvorrichtungen\" auch in Sachsen entdeckt",
+          "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+          "published_at": "2026-09-04T18:27:06.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "36e6c54a7a64c95ec057ae0fe7d26e9a51c2972717fd7be63d6623bb5b74f5d6",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Fahndung nach Stromnetz-Sabotagen: Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-lausitz-100.html",
+          "published_at": "2026-09-05T07:02:53.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "bc9c53cb4afb763752eba8708477879213732db3db55260b87a31fc21a5c1d3f",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-sn-100.html",
+          "published_at": "2026-09-05T08:59:23.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "published_at": "2026-09-04T18:11:14.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "195138e3840809bf416a757a6d536b0c2bd9d84ed9fe4a85a3437fba9c8a8edf",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+          "published_at": "2026-09-03T16:21:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "a62afbc8f1549d06d1af899f7219ad906e90ac62bd8ebe24493b710cfa86cfc0",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Polizei prüft Bekennerschreiben nach Angriff auf Umspannwerk",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
+          "published_at": "2026-09-03T18:57:30.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+          "published_at": "2026-09-05T03:02:35.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ba04cc9fa8b43a5d575a67ceae7558fbed71cd69eff4143999cb6d804fe25ee6",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Angriffe auf Umspannwerke: Amprion-Chef will für Unternehmen mehr Befugnisse",
+          "url": "https://www.stern.de/news/angriffe-auf-umspannwerke--amprion-chef-will-fuer-unternehmen-mehr-befugnisse-38210948.html",
+          "published_at": "2026-09-05T08:57:36.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "6eb0d140544a4b87d72a5a018925c5b325dee21d75edc639c8c17175ea2bd2fc",
+          "registry_source_id": "dw-news",
+          "publisher_id": "deutsche-welle",
+          "publisher": "Deutsche Welle",
+          "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+          "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
+          "published_at": "2026-09-04T11:40:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Liveticker Strom-Sabotage: Polizei verlässt Hambacher Forst",
+          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+          "published_at": "2026-09-04T20:58:25.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "e05aff12f1ae9294070d863f071d4eee080ab35d205d2b446a809ce34a38e841",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst",
+          "url": "https://taz.de/Polizei-findet-Truck-des-Verdaechtigen-am-Hambacher-Forst/!6210358",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "87a85fd35481e91d473278dd554f5f37b5c88cd49634b34f46de0ec4575edb35",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
+          "url": "https://www.stern.de/news/stromversorgung--reul--polizei-stuermt-fahrzeug-von-sabotage-verdaechtigem-38210002.html",
+          "published_at": "2026-09-04T15:55:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
+          "published_at": "2026-09-04T15:44:10.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "3187d00b390be8458dae3f1af39e3bb4150df677410a9cfc22b754ccb8c28e51",
+          "registry_source_id": "hr-hessenschau",
+          "publisher_id": "hr",
+          "publisher": "hessenschau",
+          "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+          "published_at": "2026-09-03T09:36:10.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "b67de6bf0555b9eef7f2a302ab3134c970698b89af824a88c40f0c0f05737657",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
+          "url": "https://www1.wdr.de/nrw/bekennerschreiben-anschlag-umspannwerk-brandenburg-100.html",
+          "published_at": "2026-09-04T01:26:48.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "2e4a09c705f16510810b9505567dab853ce3a641b63549edaf04cb1a341f4869",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-sabotage-umspannwerk-stromnetz-jaenschwalde-sicherheitszentrum.html",
+          "published_at": "2026-09-03T16:30:00.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T14:02:11.302Z",
+          "source_fingerprint": "b0bbc4dc52ef7a7e171ff8bfe0378024486726ada74f4c15a24f830d47e82abd",
+          "title": "Dormagen: Was der Sabotageverdacht an einem Umspannwerk systemisch bedeutet",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "An einem Umspannwerk in Dormagen wurde ein verdächtiger Gegenstand gefunden.",
+              "type": "fact",
+              "source_ids": [
+                "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+                "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quellen beschreiben den Fund, nicht aber schon dessen Funktion oder Folgen.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Die Polizei geht nach dem Fund von einem Sabotagedelikt aus.",
+              "type": "fact",
+              "source_ids": [
+                "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+                "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Einordnung stammt aus den Berichten; die Beweisgrundlage ist in den gelieferten Texten nicht unabhängig geprüft.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Ein Sprecher der Kölner Polizei nennt ein eingegangenes Bekennerschreiben als Grundlage der Einordnung.",
+              "type": "fact",
+              "source_ids": [
+                "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+                "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Die Echtheit des Bekennerschreibens wird in den gelieferten Quellen nicht unabhängig bestätigt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Polizei fahndet nach einem Mann aus Gevelsberg.",
+              "type": "fact",
+              "source_ids": [
+                "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Fahndung ist belegt; die strafrechtliche Einordnung der Person bleibt in den Quellen offen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Mehrere Berichte sprechen von möglichen weiteren Vorfällen an anderen Umspannwerken am Dienstag.",
+              "type": "fact",
+              "source_ids": [
+                "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Formulierung bleibt vage und ist in den gelieferten Texten nicht konsolidiert.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Polizei fahndet weiter nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz.",
+              "type": "fact",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quellen beziehen sich auf weitere Ermittlungszusammenhänge, nicht nur auf Dormagen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "In der Wohnung des 48-Jährigen in Gevelsberg fanden Ermittler sprengstoffverdächtige Gegenstände.",
+              "type": "fact",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Die Formulierung 'sprengstoffverdächtig' verweist auf einen Ermittlungsbefund, nicht auf eine rechtskräftige Feststellung.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Eine beobachtete Wirkung im engeren Sinn ist in den gelieferten Quellen für Dormagen nicht belegt.",
+              "type": "woek_definition",
+              "source_ids": [
+                "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+                "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+                "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quellen zeigen Verdacht, Fahndung und Einordnung, aber keinen belegten Schaden oder eine verifizierte Zustandsverschlechterung an der Anlage.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Der Vorfall erzeugt ein Wirkungspotenzial für zusätzliche Schutz- und Ermittlungsmaßnahmen an kritischer Infrastruktur.",
+              "type": "impact_potential",
+              "source_ids": [
+                "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+                "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Das Potenzial ergibt sich aus der Knotenfunktion von Umspannwerken und den berichteten Ermittlungsreaktionen; es ist keine bereits eingetretene Wirkung.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Bei tatsächlicher Sabotage an Umspannwerken drohen Ausfälle, Folgekosten und zusätzliche Sicherheitsmaßnahmen.",
+              "type": "impact_risk",
+              "source_ids": [
+                "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "medium",
+              "data_status": "scenario",
+              "uncertainty": "Die Quellen benennen Risiken implizit über die Infrastrukturrelevanz; konkrete Ausfälle im Dormagener Fall sind nicht belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Der Fall berührt den Schutz kritischer Infrastruktur und staatliche Ermittlungsfähigkeit, ohne dass ein demokratischer Verfahrensbruch belegt wäre.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+                "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die demokratische Relevanz ergibt sich aus dem Objektbezug kritischer Infrastruktur und staatlicher Reaktionsfähigkeit, nicht aus einem belegten institutionellen Fehlverhalten.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Der Fall kann zu einer dauerhaften Anpassung von Schutzkonzepten führen, wenn die Ermittlungen einen belastbaren Zusammenhang mit weiteren Vorfällen bestätigen.",
+              "type": "impact_potential",
+              "source_ids": [
+                "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "low",
+              "data_status": "scenario",
+              "uncertainty": "Dies ist eine mögliche Folge, keine im Material belegte Entscheidung oder Maßnahme.",
+              "date": "2026-09-05"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
