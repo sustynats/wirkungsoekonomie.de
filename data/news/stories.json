@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T22:06:43.441Z",
+  "updated_at": "2026-09-05T22:07:32.381Z",
   "stories": [
     {
       "story_id": "wt-6347f9739484a7d1",
@@ -126384,6 +126384,896 @@
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7ebecf5b3f91d490",
+      "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+      "title": "Vor Sachsen-Anhalt-Wahl: Siegmund lässt Kandidatur bei knapper Mehrheit offen",
+      "first_seen": "2026-09-05T22:05:00Z",
+      "last_updated": "2026-09-05T22:07:32.381Z",
+      "published_at": "2026-09-05T22:07:32.381Z",
+      "updated_at": "2026-09-05T22:07:32.381Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bild-access",
+          "publisher": "BILD",
+          "url": "https://www.bild.de/politik/inland/sachsen-anhalt-ulrich-siegmund-reichen-auch-drei-stimmen-mehrheit-nicht-6a9acf6908c763dcf81f4615",
+          "title": "AfD-Mann zu BILD: Siegmund reichen auch drei Stimmen Mehrheit nicht!",
+          "summary": "BILD berichtet am 05.09.2026 über ein Interview vom 04.09.2026. Siegmund begründet seine Forderung nach einer stabilen Mehrheit mit möglichen krankheitsbedingten Ausfällen. Die Kandidatur bei einer Stimme Mehrheit bleibt im Bericht offen. Die Videoüberschrift stellt den Regierungswillen grundsätzlich infrage.",
+          "source_type": "media_discovery",
+          "published_at": "2026-09-05T06:23:00Z",
+          "primary_source": false,
+          "source_topic": "Politik",
+          "content_hash": "7d90ff832f9233d4d68b3a89b5b17396cb20c6037fe9a9ca5fe3b7353aa5af3e",
+          "publisher_id": "bild",
+          "publisher_kind": "journalism",
+          "source_role": "actor_statement_report",
+          "requires_corroboration": true,
+          "source_published_at": "2026-09-05T06:23:00Z",
+          "provenance": {
+            "origin": "interview:bild-siegmund-2026-09-04",
+            "basis": "original_interview_report",
+            "independence_established": false
+          },
+          "research_metadata": {
+            "access": "public_research",
+            "original_interview_date": "2026-09-04",
+            "video_independently_viewed": false
+          }
+        },
+        {
+          "source_id": "focus-case-research",
+          "publisher": "FOCUS online",
+          "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+          "title": "Siegmund will mit eigener Mehrheit nicht unbedingt regieren",
+          "summary": "FOCUS online berichtet am 05.09.2026 um 07:15 Uhr über Siegmunds BILD-Interview. Auf die Frage nach seiner Kandidatur bei einer Stimme Mehrheit verweist er auf eine Entscheidung am Montag nach der Wahl. Es handelt sich um denselben Interviewursprung, nicht um unabhängige Bestätigung.",
+          "source_type": "media_discovery",
+          "published_at": "2026-09-05T05:15:00Z",
+          "primary_source": false,
+          "source_topic": "Politik",
+          "content_hash": "0beba9860e1a0d0e4ce4764426e5e4532c549a05ea93344f73f27859184511a6",
+          "publisher_id": "focus",
+          "publisher_kind": "journalism",
+          "source_role": "secondary_confirmation",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T05:15:00Z",
+          "provenance": {
+            "origin": "interview:bild-siegmund-2026-09-04",
+            "basis": "explicit_reference_to_same_bild_interview",
+            "independence_established": false
+          },
+          "research_metadata": {
+            "access": "public_search_excerpt",
+            "full_article_retrieval": "unavailable",
+            "independent_confirmation": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+          "title": "Wahl in Sachsen-Anhalt: Siegmund will Briefwahl nur in Ausnahmen",
+          "summary": "Im gesonderten Eintrag vom 02.09.2026 um 15:45 Uhr berichtet ZDFheute über Siegmunds Bedingung einer stabilen eigenen Mehrheit für eine Alleinregierung. Die Aussage fiel in einem Duell von Volksstimme und Mitteldeutscher Zeitung. Dieser frühere Vorbehalt widerspricht der Darstellung eines erst am Samstag entstandenen Vorbehalts.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-02T13:45:00Z",
+          "primary_source": false,
+          "source_topic": "Politik",
+          "content_hash": "814e1ee2efa6bdd6b2bb3c756b8487c387cf91d23868e071360814cb2082fa9f",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "background",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-02T13:45:00Z",
+          "provenance": {
+            "origin": "debate:volksstimme-mz-2026-09-02",
+            "basis": "dated_liveblog_entry",
+            "independence_established": false
+          },
+          "research_metadata": {
+            "entry_time": "2026-09-02T15:45:00+02:00",
+            "liveblog_entry_title": "Siegmund will nur mit stabiler AfD-Mehrheit regieren",
+            "scope": "Nur dieser abgegrenzte Eintrag; andere Liveblog-Themen sind nicht Bestandteil der Story."
+          }
+        },
+        {
+          "source_id": "landtag-sachsen-anhalt-context",
+          "publisher": "Landtag Sachsen-Anhalt",
+          "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+          "title": "Verfassung des Landes Sachsen-Anhalt und Grundgesetz: Artikel 65 – Bildung der Landesregierung",
+          "summary": "Artikel 65 der Landesverfassung: Der Landtag wählt den Ministerpräsidenten geheim. Zuerst ist die Mehrheit seiner Mitglieder nötig. Nach erfolglosem ersten Wahlgang folgt binnen sieben Tagen ein weiterer. Scheitert auch dieser, entscheidet der Landtag binnen weiterer vierzehn Tage über ein vorzeitiges Ende der Wahlperiode. Ohne entsprechenden Mehrheitsbeschluss folgt unverzüglich ein weiterer Wahlgang mit Mehrheit der abgegebenen Stimmen.",
+          "source_type": "official_reference",
+          "published_at": null,
+          "date_status": "undated_reference",
+          "retrieved_at": "2026-09-05T21:55:00Z",
+          "primary_source": true,
+          "source_topic": "Demokratie",
+          "content_hash": "2ab43f7ca01cf4bcda184ef5b2b5d8fbe78cc78fcdaa609d3555d595d300e0b0",
+          "publisher_id": "landtag-sachsen-anhalt",
+          "publisher_kind": "institution",
+          "source_role": "legal_context",
+          "requires_corroboration": false,
+          "source_published_at": null,
+          "provenance": {
+            "origin": "primary:landesverfassung-sachsen-anhalt",
+            "basis": "official_constitution_article_65",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "sachsen-anhalt-election-context",
+          "publisher": "Landeswahlleiterin Sachsen-Anhalt",
+          "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+          "title": "FAQs zur Landtagswahl in Sachsen-Anhalt 2026",
+          "summary": "Die Landeswahlleiterin nennt den 6. September 2026 als Wahltermin. Gewählt werden die Mitglieder des Landtags, nicht unmittelbar der Ministerpräsident.",
+          "source_type": "official_reference",
+          "published_at": null,
+          "date_status": "undated_reference",
+          "retrieved_at": "2026-09-05T21:55:00Z",
+          "primary_source": true,
+          "source_topic": "Demokratie",
+          "content_hash": "834dde58c68a4b9ed6849b01a5eb57c2a48b26251ccc6d89e0c32eb5659309b9",
+          "publisher_id": "sachsen-anhalt-landeswahlleiterin",
+          "publisher_kind": "institution",
+          "source_role": "election_calendar",
+          "requires_corroboration": false,
+          "source_published_at": null,
+          "provenance": {
+            "origin": "primary:landeswahlleiterin-sachsen-anhalt",
+            "basis": "official_election_faq",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-1",
+          "story_id": "wt-7ebecf5b3f91d490",
+          "claim": "FOCUS berichtet unter Berufung auf das BILD-Interview, Siegmund wolle über eine Kandidatur bei knappster Mehrheit erst nach der Wahl entscheiden.",
+          "status": "uncertain_claim",
+          "source_id": "focus-case-research",
+          "evidence": [
+            {
+              "source_id": "focus-case-research",
+              "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+              "excerpt_hash": "6bd8ec7384f43fbfd542",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T22:07:32.381Z"
+        },
+        {
+          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-2",
+          "story_id": "wt-7ebecf5b3f91d490",
+          "claim": "ZDFheute dokumentierte den Vorbehalt einer stabilen eigenen Mehrheit bereits bei einem früheren Auftritt.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+              "excerpt_hash": "786da8664aca1ba94d5b",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T22:07:32.381Z"
+        },
+        {
+          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-3",
+          "story_id": "wt-7ebecf5b3f91d490",
+          "claim": "Der Ministerpräsident wird durch den Landtag in geheimer Abstimmung gewählt, nicht direkt durch die Bevölkerung.",
+          "status": "primary_source_claim",
+          "source_id": "landtag-sachsen-anhalt-context",
+          "evidence": [
+            {
+              "source_id": "landtag-sachsen-anhalt-context",
+              "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+              "excerpt_hash": "6c9e71de60fa8e00cae7",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T22:07:32.381Z"
+        },
+        {
+          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-4",
+          "story_id": "wt-7ebecf5b3f91d490",
+          "claim": "Die Landtagswahl findet am 6. September 2026 statt.",
+          "status": "primary_source_claim",
+          "source_id": "sachsen-anhalt-election-context",
+          "evidence": [
+            {
+              "source_id": "sachsen-anhalt-election-context",
+              "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+              "excerpt_hash": "a450f405ab53eab21d79",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T22:07:32.381Z"
+        }
+      ],
+      "event_id": "event-54b05b34eaf30592d8ab",
+      "event_first_seen_at": "2026-09-05T22:05:00Z",
+      "event_detected_at": "2026-09-05T22:05:00Z",
+      "verification_started_at": "2026-09-05T22:07:32.381Z",
+      "publish_ready_at": "2026-09-05T22:07:32.381Z",
+      "news_status": "preliminary",
+      "deepening_due_at": null,
+      "evidence_groups": {
+        "groups": [
+          [
+            "bild-access",
+            "focus-case-research"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "landtag-sachsen-anhalt-context"
+          ],
+          [
+            "sachsen-anhalt-election-context"
+          ]
+        ],
+        "possible_independent_origins": 4,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "bild-access",
+              "focus-case-research"
+            ],
+            "reason": "shared_origin",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T22:07:32.381Z",
+        "fingerprint": "a413a881cef8ca7303d76ffe5ae5cd9676483d5a467c1305cb1d805b4b717f43",
+        "issue_codes": [],
+        "warning_codes": [
+          "SOURCE_REFERENCE_UNDATED"
+        ]
+      },
+      "followups": [],
+      "content_hash": "f16a6512b142757e6511189165eedde0bacd9e23ac752a4788796fd0e688e121",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Vor der Landtagswahl in Sachsen-Anhalt bleibt unklar, ob AfD-Spitzenkandidat Ulrich Siegmund bei einer nur knappen eigenen Mehrheit als Ministerpräsident kandidieren würde. Laut FOCUS-Bericht über sein BILD-Interview soll die Entscheidung bei einer Stimme Mehrheit erst nach der Wahl fallen. BILD veröffentlichte seinen Bericht am Samstagmorgen; das Interview stammt vom Freitag.\n\nDie Bedingung einer stabilen eigenen Mehrheit ist nicht neu: ZDFheute berichtete darüber bereits am Mittwoch aus einem früheren Duell. Damit ist kein plötzlicher vollständiger Kurswechsel am Samstagabend belegt. Am Sonntag wird der Landtag gewählt; über den Ministerpräsidenten entscheidet anschließend das Parlament in geheimer Abstimmung. Die tatsächliche Sitzverteilung und Siegmunds endgültige Entscheidung stehen noch aus.",
+      "analysis": {
+        "news_status": "preliminary",
+        "publication_depth": "deepened",
+        "summary": "Vor der Wahl in Sachsen-Anhalt lässt Siegmund laut Berichten über ein BILD-Interview seine Kandidatur bei nur einer Stimme Mehrheit offen. Den Vorbehalt einer stabilen eigenen Mehrheit hatte er bereits zuvor genannt.",
+        "detail_summary": "Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Deshalb ist die offene Kandidatur bei knapper Mehrheit eine relevante Information über die mögliche Regierungsbildung. Die aktuelle Antwort ist als Bericht über ein Interview zu lesen; eine völlig neue Abkehr vom bisherigen Regierungsanspruch ist daraus nicht belegt. Der bereits zuvor genannte Mehrheitsvorbehalt gehört zum Verständnis dazu. Wenn eine Partei nur knapp über die notwendige Mitgliedermehrheit verfügt, können fehlende Stimmen im geheimen Wahlgang entscheidend sein. Ob es tatsächlich solche Ausfälle oder abweichende Stimmen geben wird, ist offen; ein Wahlergebnis liegt diesem Stand noch nicht zugrunde.",
+        "why_relevant": "Unmittelbar vor der Wahl betrifft die Aussage die Informationsgrundlage für die Wahlentscheidung und die anschließende Regierungsbildung. Sehr hoch ist hier die demokratische Informationsrelevanz – nicht eine bereits nachgewiesene gesellschaftliche Wirkung.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "importance": "sehr hoch",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Für Wahlberechtigte ist die Kenntnis der Bedingungen einer möglichen Regierungsbildung relevant. Konkrete Folgen für Gesundheit, Einkommen oder Teilhabe lassen sich aus der Interviewaussage allein nicht bestimmen."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus der offenen Kandidatur folgt noch kein bestimmter Umweltzustand und kein belastbar bezifferbares Umweltrisiko."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "rationale": "Die Unterscheidung zwischen Wahlwerbung, tatsächlicher Kandidatur und parlamentarischer Mehrheit ist unmittelbar vor der Wahl besonders informationsrelevant. Ein Einfluss auf Wahlverhalten oder Vertrauen ist damit nicht nachgewiesen."
+        },
+        "impact_potential": "Klare Angaben über Bedingungen einer Kandidatur können eine informierte Wahlentscheidung unterstützen. Welchen Unterschied diese Information tatsächlich macht, bleibt empirisch offen.",
+        "impact_risks": [
+          "Unklare Bedingungen können Erwartungen an eine mögliche Regierungsbildung erschweren.",
+          "Eine zugespitzte Darstellung als vollständiger Verzicht könnte die tatsächliche bedingte Aussage verzerren."
+        ],
+        "mechanisms": [
+          "Wahlwerbung prägt Erwartungen an die spätere Regierungsbildung; die rechtliche Entscheidung fällt jedoch erst im Landtag.",
+          "Nachvollziehbare Attribution und frühere Aussagen ermöglichen den Vergleich von Ankündigung und späterer Entscheidung."
+        ],
+        "first_order": [
+          "Ohne eigene absolute Mehrheit fehlt eine allein aus eigenen Mandaten ableitbare Mitgliedermehrheit für die ersten Wahlgänge; daraus folgt weder ein automatischer Ausschluss einer Kandidatur noch ein bestimmtes Wahlergebnis.",
+          "Bei knapper eigener Mehrheit können fehlende oder anders abgegebene Stimmen im geheimen Wahlgang ausschlaggebend sein. Konkrete Abweichler sind nicht belegt."
+        ],
+        "second_order": [
+          "Scheitern die ersten Wahlgänge, greifen die in der Landesverfassung vorgesehenen weiteren Schritte; eine einfache Zusage ersetzt dieses Verfahren nicht.",
+          "Falls Siegmund nicht kandidiert, kann die Regierungsbildung andere Kandidaturen erfordern. Sein Verzicht allein löst keine automatische Neuwahl aus."
+        ],
+        "third_order": [
+          "Erst längerfristig wäre prüfbar, ob der Umgang mit Wahlzusagen institutionelles Vertrauen verändert. Dieser mögliche Wirkungspfad ist kein Nachweis einer eingetretenen Veränderung."
+        ],
+        "systemic_relevance": "Sehr hoch für demokratische Transparenz und parlamentarische Handlungsfähigkeit in einer unmittelbar bevorstehenden Wahl; keine parteipolitische Rangordnung.",
+        "transformation_potential": "Ein struktureller Wandel ist durch die Interviewaussage nicht belegt. Mögliche Änderungen staatlichen Handelns hängen von Wahlergebnis, Regierungsbildung und späteren Entscheidungen ab.",
+        "resilience": "Geheime Wahl, gestufte Mehrheitsanforderungen und geregelte weitere Wahlgänge bilden einen institutionellen Rahmen für unklare Mehrheiten.",
+        "side_effects": [
+          "Aufmerksamkeit für die Personalfrage kann Sachprogramme überlagern; ob dies geschieht, ist nicht belegt."
+        ],
+        "uncertainties": [
+          "Die aktuelle Interviewaussage ist über BILD und den darauf beruhenden FOCUS-Bericht erschlossen; das Video wurde hier nicht eigenständig angehört.",
+          "Beide Berichte haben denselben Interviewursprung und zählen nicht als zwei unabhängige Bestätigungen.",
+          "Die tatsächliche Mehrheit, eine spätere Kandidatur und das Abstimmungsverhalten der Abgeordneten bleiben offen.",
+          "Für behauptete interne Stimmverweigerer liegt in dieser Prüfung kein belastbarer Beleg vor; entsprechende Behauptungen werden nicht übernommen."
+        ],
+        "evidence_level": "Amtliche Quellen belegen Wahltermin und Verfahren. Die spätere Interviewantwort bleibt eine zugeschriebene journalistische Quellenaussage; frühere Bedingungen sind separat dokumentiert.",
+        "attribution": "BILD ist Ursprung des aktuellen Interviews, FOCUS berichtet darüber. ZDFheute dokumentiert einen früheren Auftritt. Landeswahlleiterin und Landtag belegen ausschließlich Termin und Verfahren, nicht Siegmunds Absichten.",
+        "watch_next": [
+          "Amtliches Wahlergebnis und tatsächliche Sitzverteilung prüfen.",
+          "Siegmunds Erklärung nach der Wahl und eine formelle Kandidatur gegen Originalquellen prüfen.",
+          "Parlamentarische Wahlgänge und tatsächliches Abstimmungsergebnis dokumentieren; keine Abweichler aus Vermutungen ableiten."
+        ],
+        "reference_frameworks": [
+          "Landesverfassung Sachsen-Anhalt: Bildung der Landesregierung und parlamentarische Wahl",
+          "Agenda 2030: SDG 16 als Referenz für nachvollziehbare Institutionen, nicht als Wirkungsbeweis"
+        ],
+        "publication_recommendation": true,
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "democratic_correctability",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "democratic_correctability",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Eigenständige konkrete Aussage über eine mögliche Kandidatur vor der Wahl, nicht bloß ein weiterer Wahlkampfbericht. Der frühere Vorbehalt wird mitgenannt; interne Spekulationen bleiben ausgeschlossen. Verfassungsrechtlicher Kontext beruht auf amtlichen Originalquellen."
+        },
+        "media_impact": {
+          "relevant": true,
+          "relevance_level": "high",
+          "reason": "Die Unterscheidung zwischen bedingter Kandidatur und grundsätzlich fehlendem Regierungswillen ist für das Verständnis materiell relevant.",
+          "factual_core": "Die Kandidatur bei knapper Mehrheit bleibt laut Interviewberichten offen; die Forderung nach stabiler Mehrheit wurde bereits zuvor genannt.",
+          "epistemic_status": {
+            "confirmed": [
+              "Die Wahl und das parlamentarische Verfahren sind amtlich dokumentiert."
+            ],
+            "actor_claims": [
+              "Die Interviewantwort beschreibt eine noch ausstehende Entscheidung für eine knappe Mehrheit."
+            ],
+            "open": [
+              "Endgültige Kandidatur und gesellschaftliche Kommunikationsfolgen sind offen."
+            ]
+          },
+          "attribution": {
+            "frame_source": "BILD-Videoüberschrift",
+            "speaker": "Redaktionelle Frage",
+            "original_term": "gar nicht regieren",
+            "usage_type": "editorial",
+            "placement": [
+              "headline"
+            ],
+            "attribution_quality": "editorial"
+          },
+          "speaker_statement": {
+            "present": true,
+            "speaker": "Ulrich Siegmund",
+            "statement": "Er knüpft die Regierungsbildung an eine stabile eigene Mehrheit und verweist für die knappste Mehrheit auf eine spätere Entscheidung.",
+            "status": "claim"
+          },
+          "framing": {
+            "detected": true,
+            "term": "gar nicht regieren",
+            "origin_in_story": "BILD-Videoüberschrift",
+            "media_usage": "headline",
+            "attribution_quality": "eindeutig attribuiert",
+            "factual_status": "Interpretation",
+            "frame_type": [
+              "Konflikt"
+            ],
+            "political_history_relevant": false,
+            "political_history": "",
+            "political_history_evidence": []
+          },
+          "frame_analysis": {
+            "frame_detected": true,
+            "frame_term": "gar nicht regieren",
+            "frame_type": [
+              "Konflikt"
+            ],
+            "problem_definition": "Eine bedingte Kandidatur wird als Frage nach grundsätzlicher Regierungsbereitschaft zugespitzt.",
+            "implied_cause": "Offen; keine Absicht unterstellt.",
+            "implied_responsibility": "Im Mittelpunkt steht die Kandidaturentscheidung, nicht eine belegte persönliche Absicht.",
+            "implied_threat": "Die Formulierung kann Zweifel an der Verbindlichkeit von Wahlwerbung nahelegen.",
+            "implied_solution_space": "Ein Abgleich der früheren Bedingungen mit der aktuellen Aussage ermöglicht eine sachlichere Beurteilung.",
+            "material_omissions": [
+              "Für die Einordnung ist der frühere Vorbehalt einer stabilen Mehrheit wesentlich."
+            ]
+          },
+          "political_context": {
+            "relevant": false,
+            "classification": "",
+            "evidence_based": false,
+            "evidence": [],
+            "uncertainty": "Keine politische Herkunftsgeschichte des Ausdrucks untersucht."
+          },
+          "resonance": {
+            "resonance_space": "",
+            "resonance_risk": "",
+            "normalization_potential": "",
+            "repetition_effect": "",
+            "trust_effect": "",
+            "polarization_potential": "",
+            "discourse_effect": ""
+          },
+          "discourse_effect": {
+            "impact_status": "potential",
+            "resonance_space": "Erwartungen an Wahlzusagen und Regierungsbildung.",
+            "normalization_potential": "open",
+            "repetition_risk": "open",
+            "polarization_potential": "Die zugespitzte Frage kann eine Personaldebatte verstärken.",
+            "trust_effect_potential": "Vertrauensfolgen sind denkbar, aber nicht gemessen.",
+            "discourse_effect_potential": "Eine Trennung von Bedingung und grundsätzlicher Bereitschaft kann das Verständnis verbessern."
+          },
+          "impact_path": {
+            "first_order": "Die Frage kann die Aufmerksamkeit auf den Regierungswillen lenken.",
+            "second_order": "Wiederholung könnte den Eindruck einer grundsätzlich fehlenden Bereitschaft verstärken.",
+            "third_order": "Folgen für institutionelles Vertrauen wären gesondert zu untersuchen."
+          },
+          "evidence": {
+            "status": "medium",
+            "level": "medium",
+            "what_is_known": "Beobachtbar sind die redaktionelle Frage und der frühere Mehrheitsvorbehalt.",
+            "what_is_inferred": "Ein möglicher Unterschied zwischen bedingter Kandidatur und wahrgenommenem vollständigem Verzicht.",
+            "what_is_open": "Eine tatsächliche Veränderung von Vertrauen oder Wahlentscheidung ist nicht nachgewiesen.",
+            "facts": [
+              "Ein früherer Mehrheitsvorbehalt ist dokumentiert."
+            ],
+            "observations": [
+              "Die Videoüberschrift stellt den Regierungswillen als Frage dar."
+            ],
+            "inferences": [
+              "Eine zugespitzte Frage kann weiter reichen als die bedingte Interviewantwort."
+            ],
+            "impact_potentials": [
+              "Lesende könnten Kandidaturbedingung und vollständigen Verzicht verwechseln."
+            ],
+            "impact_risks": [
+              "Möglicher Kontextverlust bei verkürzter Weiterverbreitung."
+            ],
+            "observed_impacts": [],
+            "limitations": [
+              "Keine Untersuchung tatsächlicher Rezeption oder des Wahlverhaltens."
+            ]
+          },
+          "observed_impact": {
+            "present": false,
+            "description": null,
+            "evidence": []
+          },
+          "public_explanation": "Die Videoüberschrift bei BILD stellt die grundsätzliche Regierungsbereitschaft als Frage dar. Die berichtete Antwort betrifft dagegen die Kandidatur unter einer bestimmten Mehrheitsbedingung. Das ist nicht dasselbe wie ein vollständiger Verzicht. Die Frage ist eine redaktionelle Zuspitzung, kein direktes Zitat des Kandidaten. Für das Verständnis gehört außerdem dazu, dass der Vorbehalt einer stabilen Mehrheit schon vor diesem Interview bekannt war. Eine verkürzte Weitergabe kann den Eindruck eines umfassenderen Kurswechsels begünstigen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder dem Medium noch dem Kandidaten wird eine Absicht unterstellt. Entscheidend sind die konkrete Aussage, ihr früherer Kontext und die noch ausstehende Entscheidung.",
+          "editorial_assessment": "Die redaktionelle Frage ist als Zuspitzung zu unterscheiden von der berichteten bedingten Kandidatur; keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
+          "fact_first_alternative": "Vor der Landtagswahl bleibt die Kandidatur bei knapper Mehrheit laut Interviewberichten offen. Den Vorbehalt einer stabilen Mehrheit hatte der Kandidat bereits früher genannt.",
+          "fact_first_reframe": {
+            "title": "",
+            "source_summary": "",
+            "summary": "",
+            "detail_summary": ""
+          },
+          "self_frame_warning": false,
+          "self_frame_check": {
+            "problem_detected": false,
+            "problems": [],
+            "frame_repetition_count": 0,
+            "rewrite_required": false,
+            "recommended_title": "",
+            "recommended_summary": "",
+            "recommended_meta_description": ""
+          },
+          "source_comparison": {
+            "sufficient_basis": false,
+            "finding": ""
+          }
+        },
+        "story_id": "wt-7ebecf5b3f91d490",
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-05T22:07:32.381Z",
+        "media_trigger_fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
+        "media_trigger": {
+          "relevant": true,
+          "level": "high",
+          "score": 4,
+          "reasons": [
+            "analysis_substantive_finding"
+          ],
+          "matched_terms": [
+            "gar nicht regieren"
+          ],
+          "source_count": 5,
+          "comparable_source_count": 2,
+          "fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
+          "content_fingerprint": "726bdba0d9741462c35f84c4b991cc04a86aa1a591d9e08f1c34ac6211f0b6d5",
+          "basis": "analysis_finding",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T22:07:32.381Z",
+          "content_hash": "f16a6512b142757e6511189165eedde0bacd9e23ac752a4788796fd0e688e121",
+          "source_summary": "Vor der Landtagswahl in Sachsen-Anhalt bleibt unklar, ob AfD-Spitzenkandidat Ulrich Siegmund bei einer nur knappen eigenen Mehrheit als Ministerpräsident kandidieren würde. Laut FOCUS-Bericht über sein BILD-Interview soll die Entscheidung bei einer Stimme Mehrheit erst nach der Wahl fallen. BILD veröffentlichte seinen Bericht am Samstagmorgen; das Interview stammt vom Freitag.\n\nDie Bedingung einer stabilen eigenen Mehrheit ist nicht neu: ZDFheute berichtete darüber bereits am Mittwoch aus einem früheren Duell. Damit ist kein plötzlicher vollständiger Kurswechsel am Samstagabend belegt. Am Sonntag wird der Landtag gewählt; über den Ministerpräsidenten entscheidet anschließend das Parlament in geheimer Abstimmung. Die tatsächliche Sitzverteilung und Siegmunds endgültige Entscheidung stehen noch aus.",
+          "analysis": {
+            "news_status": "preliminary",
+            "publication_depth": "deepened",
+            "summary": "Vor der Wahl in Sachsen-Anhalt lässt Siegmund laut Berichten über ein BILD-Interview seine Kandidatur bei nur einer Stimme Mehrheit offen. Den Vorbehalt einer stabilen eigenen Mehrheit hatte er bereits zuvor genannt.",
+            "detail_summary": "Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Deshalb ist die offene Kandidatur bei knapper Mehrheit eine relevante Information über die mögliche Regierungsbildung. Die aktuelle Antwort ist als Bericht über ein Interview zu lesen; eine völlig neue Abkehr vom bisherigen Regierungsanspruch ist daraus nicht belegt. Der bereits zuvor genannte Mehrheitsvorbehalt gehört zum Verständnis dazu. Wenn eine Partei nur knapp über die notwendige Mitgliedermehrheit verfügt, können fehlende Stimmen im geheimen Wahlgang entscheidend sein. Ob es tatsächlich solche Ausfälle oder abweichende Stimmen geben wird, ist offen; ein Wahlergebnis liegt diesem Stand noch nicht zugrunde.",
+            "why_relevant": "Unmittelbar vor der Wahl betrifft die Aussage die Informationsgrundlage für die Wahlentscheidung und die anschließende Regierungsbildung. Sehr hoch ist hier die demokratische Informationsrelevanz – nicht eine bereits nachgewiesene gesellschaftliche Wirkung.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "importance": "sehr hoch",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Für Wahlberechtigte ist die Kenntnis der Bedingungen einer möglichen Regierungsbildung relevant. Konkrete Folgen für Gesundheit, Einkommen oder Teilhabe lassen sich aus der Interviewaussage allein nicht bestimmen."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus der offenen Kandidatur folgt noch kein bestimmter Umweltzustand und kein belastbar bezifferbares Umweltrisiko."
+            },
+            "democracy": {
+              "relevance": "sehr hoch",
+              "rationale": "Die Unterscheidung zwischen Wahlwerbung, tatsächlicher Kandidatur und parlamentarischer Mehrheit ist unmittelbar vor der Wahl besonders informationsrelevant. Ein Einfluss auf Wahlverhalten oder Vertrauen ist damit nicht nachgewiesen."
+            },
+            "impact_potential": "Klare Angaben über Bedingungen einer Kandidatur können eine informierte Wahlentscheidung unterstützen. Welchen Unterschied diese Information tatsächlich macht, bleibt empirisch offen.",
+            "impact_risks": [
+              "Unklare Bedingungen können Erwartungen an eine mögliche Regierungsbildung erschweren.",
+              "Eine zugespitzte Darstellung als vollständiger Verzicht könnte die tatsächliche bedingte Aussage verzerren."
+            ],
+            "mechanisms": [
+              "Wahlwerbung prägt Erwartungen an die spätere Regierungsbildung; die rechtliche Entscheidung fällt jedoch erst im Landtag.",
+              "Nachvollziehbare Attribution und frühere Aussagen ermöglichen den Vergleich von Ankündigung und späterer Entscheidung."
+            ],
+            "first_order": [
+              "Ohne eigene absolute Mehrheit fehlt eine allein aus eigenen Mandaten ableitbare Mitgliedermehrheit für die ersten Wahlgänge; daraus folgt weder ein automatischer Ausschluss einer Kandidatur noch ein bestimmtes Wahlergebnis.",
+              "Bei knapper eigener Mehrheit können fehlende oder anders abgegebene Stimmen im geheimen Wahlgang ausschlaggebend sein. Konkrete Abweichler sind nicht belegt."
+            ],
+            "second_order": [
+              "Scheitern die ersten Wahlgänge, greifen die in der Landesverfassung vorgesehenen weiteren Schritte; eine einfache Zusage ersetzt dieses Verfahren nicht.",
+              "Falls Siegmund nicht kandidiert, kann die Regierungsbildung andere Kandidaturen erfordern. Sein Verzicht allein löst keine automatische Neuwahl aus."
+            ],
+            "third_order": [
+              "Erst längerfristig wäre prüfbar, ob der Umgang mit Wahlzusagen institutionelles Vertrauen verändert. Dieser mögliche Wirkungspfad ist kein Nachweis einer eingetretenen Veränderung."
+            ],
+            "systemic_relevance": "Sehr hoch für demokratische Transparenz und parlamentarische Handlungsfähigkeit in einer unmittelbar bevorstehenden Wahl; keine parteipolitische Rangordnung.",
+            "transformation_potential": "Ein struktureller Wandel ist durch die Interviewaussage nicht belegt. Mögliche Änderungen staatlichen Handelns hängen von Wahlergebnis, Regierungsbildung und späteren Entscheidungen ab.",
+            "resilience": "Geheime Wahl, gestufte Mehrheitsanforderungen und geregelte weitere Wahlgänge bilden einen institutionellen Rahmen für unklare Mehrheiten.",
+            "side_effects": [
+              "Aufmerksamkeit für die Personalfrage kann Sachprogramme überlagern; ob dies geschieht, ist nicht belegt."
+            ],
+            "uncertainties": [
+              "Die aktuelle Interviewaussage ist über BILD und den darauf beruhenden FOCUS-Bericht erschlossen; das Video wurde hier nicht eigenständig angehört.",
+              "Beide Berichte haben denselben Interviewursprung und zählen nicht als zwei unabhängige Bestätigungen.",
+              "Die tatsächliche Mehrheit, eine spätere Kandidatur und das Abstimmungsverhalten der Abgeordneten bleiben offen.",
+              "Für behauptete interne Stimmverweigerer liegt in dieser Prüfung kein belastbarer Beleg vor; entsprechende Behauptungen werden nicht übernommen."
+            ],
+            "evidence_level": "Amtliche Quellen belegen Wahltermin und Verfahren. Die spätere Interviewantwort bleibt eine zugeschriebene journalistische Quellenaussage; frühere Bedingungen sind separat dokumentiert.",
+            "attribution": "BILD ist Ursprung des aktuellen Interviews, FOCUS berichtet darüber. ZDFheute dokumentiert einen früheren Auftritt. Landeswahlleiterin und Landtag belegen ausschließlich Termin und Verfahren, nicht Siegmunds Absichten.",
+            "watch_next": [
+              "Amtliches Wahlergebnis und tatsächliche Sitzverteilung prüfen.",
+              "Siegmunds Erklärung nach der Wahl und eine formelle Kandidatur gegen Originalquellen prüfen.",
+              "Parlamentarische Wahlgänge und tatsächliches Abstimmungsergebnis dokumentieren; keine Abweichler aus Vermutungen ableiten."
+            ],
+            "reference_frameworks": [
+              "Landesverfassung Sachsen-Anhalt: Bildung der Landesregierung und parlamentarische Wahl",
+              "Agenda 2030: SDG 16 als Referenz für nachvollziehbare Institutionen, nicht als Wirkungsbeweis"
+            ],
+            "publication_recommendation": true,
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "democratic_correctability",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "democratic_correctability",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Eigenständige konkrete Aussage über eine mögliche Kandidatur vor der Wahl, nicht bloß ein weiterer Wahlkampfbericht. Der frühere Vorbehalt wird mitgenannt; interne Spekulationen bleiben ausgeschlossen. Verfassungsrechtlicher Kontext beruht auf amtlichen Originalquellen."
+            },
+            "media_impact": {
+              "relevant": true,
+              "relevance_level": "high",
+              "reason": "Die Unterscheidung zwischen bedingter Kandidatur und grundsätzlich fehlendem Regierungswillen ist für das Verständnis materiell relevant.",
+              "factual_core": "Die Kandidatur bei knapper Mehrheit bleibt laut Interviewberichten offen; die Forderung nach stabiler Mehrheit wurde bereits zuvor genannt.",
+              "epistemic_status": {
+                "confirmed": [
+                  "Die Wahl und das parlamentarische Verfahren sind amtlich dokumentiert."
+                ],
+                "actor_claims": [
+                  "Die Interviewantwort beschreibt eine noch ausstehende Entscheidung für eine knappe Mehrheit."
+                ],
+                "open": [
+                  "Endgültige Kandidatur und gesellschaftliche Kommunikationsfolgen sind offen."
+                ]
+              },
+              "attribution": {
+                "frame_source": "BILD-Videoüberschrift",
+                "speaker": "Redaktionelle Frage",
+                "original_term": "gar nicht regieren",
+                "usage_type": "editorial",
+                "placement": [
+                  "headline"
+                ],
+                "attribution_quality": "editorial"
+              },
+              "speaker_statement": {
+                "present": true,
+                "speaker": "Ulrich Siegmund",
+                "statement": "Er knüpft die Regierungsbildung an eine stabile eigene Mehrheit und verweist für die knappste Mehrheit auf eine spätere Entscheidung.",
+                "status": "claim"
+              },
+              "framing": {
+                "detected": true,
+                "term": "gar nicht regieren",
+                "origin_in_story": "BILD-Videoüberschrift",
+                "media_usage": "headline",
+                "attribution_quality": "eindeutig attribuiert",
+                "factual_status": "Interpretation",
+                "frame_type": [
+                  "Konflikt"
+                ],
+                "political_history_relevant": false,
+                "political_history": "",
+                "political_history_evidence": []
+              },
+              "frame_analysis": {
+                "frame_detected": true,
+                "frame_term": "gar nicht regieren",
+                "frame_type": [
+                  "Konflikt"
+                ],
+                "problem_definition": "Eine bedingte Kandidatur wird als Frage nach grundsätzlicher Regierungsbereitschaft zugespitzt.",
+                "implied_cause": "Offen; keine Absicht unterstellt.",
+                "implied_responsibility": "Im Mittelpunkt steht die Kandidaturentscheidung, nicht eine belegte persönliche Absicht.",
+                "implied_threat": "Die Formulierung kann Zweifel an der Verbindlichkeit von Wahlwerbung nahelegen.",
+                "implied_solution_space": "Ein Abgleich der früheren Bedingungen mit der aktuellen Aussage ermöglicht eine sachlichere Beurteilung.",
+                "material_omissions": [
+                  "Für die Einordnung ist der frühere Vorbehalt einer stabilen Mehrheit wesentlich."
+                ]
+              },
+              "political_context": {
+                "relevant": false,
+                "classification": "",
+                "evidence_based": false,
+                "evidence": [],
+                "uncertainty": "Keine politische Herkunftsgeschichte des Ausdrucks untersucht."
+              },
+              "resonance": {
+                "resonance_space": "",
+                "resonance_risk": "",
+                "normalization_potential": "",
+                "repetition_effect": "",
+                "trust_effect": "",
+                "polarization_potential": "",
+                "discourse_effect": ""
+              },
+              "discourse_effect": {
+                "impact_status": "potential",
+                "resonance_space": "Erwartungen an Wahlzusagen und Regierungsbildung.",
+                "normalization_potential": "open",
+                "repetition_risk": "open",
+                "polarization_potential": "Die zugespitzte Frage kann eine Personaldebatte verstärken.",
+                "trust_effect_potential": "Vertrauensfolgen sind denkbar, aber nicht gemessen.",
+                "discourse_effect_potential": "Eine Trennung von Bedingung und grundsätzlicher Bereitschaft kann das Verständnis verbessern."
+              },
+              "impact_path": {
+                "first_order": "Die Frage kann die Aufmerksamkeit auf den Regierungswillen lenken.",
+                "second_order": "Wiederholung könnte den Eindruck einer grundsätzlich fehlenden Bereitschaft verstärken.",
+                "third_order": "Folgen für institutionelles Vertrauen wären gesondert zu untersuchen."
+              },
+              "evidence": {
+                "status": "medium",
+                "level": "medium",
+                "what_is_known": "Beobachtbar sind die redaktionelle Frage und der frühere Mehrheitsvorbehalt.",
+                "what_is_inferred": "Ein möglicher Unterschied zwischen bedingter Kandidatur und wahrgenommenem vollständigem Verzicht.",
+                "what_is_open": "Eine tatsächliche Veränderung von Vertrauen oder Wahlentscheidung ist nicht nachgewiesen.",
+                "facts": [
+                  "Ein früherer Mehrheitsvorbehalt ist dokumentiert."
+                ],
+                "observations": [
+                  "Die Videoüberschrift stellt den Regierungswillen als Frage dar."
+                ],
+                "inferences": [
+                  "Eine zugespitzte Frage kann weiter reichen als die bedingte Interviewantwort."
+                ],
+                "impact_potentials": [
+                  "Lesende könnten Kandidaturbedingung und vollständigen Verzicht verwechseln."
+                ],
+                "impact_risks": [
+                  "Möglicher Kontextverlust bei verkürzter Weiterverbreitung."
+                ],
+                "observed_impacts": [],
+                "limitations": [
+                  "Keine Untersuchung tatsächlicher Rezeption oder des Wahlverhaltens."
+                ]
+              },
+              "observed_impact": {
+                "present": false,
+                "description": null,
+                "evidence": []
+              },
+              "public_explanation": "Die Videoüberschrift bei BILD stellt die grundsätzliche Regierungsbereitschaft als Frage dar. Die berichtete Antwort betrifft dagegen die Kandidatur unter einer bestimmten Mehrheitsbedingung. Das ist nicht dasselbe wie ein vollständiger Verzicht. Die Frage ist eine redaktionelle Zuspitzung, kein direktes Zitat des Kandidaten. Für das Verständnis gehört außerdem dazu, dass der Vorbehalt einer stabilen Mehrheit schon vor diesem Interview bekannt war. Eine verkürzte Weitergabe kann den Eindruck eines umfassenderen Kurswechsels begünstigen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder dem Medium noch dem Kandidaten wird eine Absicht unterstellt. Entscheidend sind die konkrete Aussage, ihr früherer Kontext und die noch ausstehende Entscheidung.",
+              "editorial_assessment": "Die redaktionelle Frage ist als Zuspitzung zu unterscheiden von der berichteten bedingten Kandidatur; keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
+              "fact_first_alternative": "Vor der Landtagswahl bleibt die Kandidatur bei knapper Mehrheit laut Interviewberichten offen. Den Vorbehalt einer stabilen Mehrheit hatte der Kandidat bereits früher genannt.",
+              "fact_first_reframe": {
+                "title": "",
+                "source_summary": "",
+                "summary": "",
+                "detail_summary": ""
+              },
+              "self_frame_warning": false,
+              "self_frame_check": {
+                "problem_detected": false,
+                "problems": [],
+                "frame_repetition_count": 0,
+                "rewrite_required": false,
+                "recommended_title": "",
+                "recommended_summary": "",
+                "recommended_meta_description": ""
+              },
+              "source_comparison": {
+                "sufficient_basis": false,
+                "finding": ""
+              }
+            },
+            "story_id": "wt-7ebecf5b3f91d490",
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-05T22:07:32.381Z",
+            "media_trigger_fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
+            "media_trigger": {
+              "relevant": true,
+              "level": "high",
+              "score": 4,
+              "reasons": [
+                "analysis_substantive_finding"
+              ],
+              "matched_terms": [
+                "gar nicht regieren"
+              ],
+              "source_count": 5,
+              "comparable_source_count": 2,
+              "fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
+              "content_fingerprint": "726bdba0d9741462c35f84c4b991cc04a86aa1a591d9e08f1c34ac6211f0b6d5",
+              "basis": "analysis_finding",
+              "version": "2.0"
+            }
+          },
+          "provider": "editorial_review",
+          "model": "source_bound_review",
+          "mode": "editorial_review",
+          "method_sources": [
+            "AGENTS.md",
+            "source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
+          ],
+          "claims": [
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-1",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "FOCUS berichtet unter Berufung auf das BILD-Interview, Siegmund wolle über eine Kandidatur bei knappster Mehrheit erst nach der Wahl entscheiden.",
+              "status": "uncertain_claim",
+              "source_id": "focus-case-research",
+              "evidence": [
+                {
+                  "source_id": "focus-case-research",
+                  "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+                  "excerpt_hash": "6bd8ec7384f43fbfd542",
+                  "checked_at": "2026-09-05T22:07:32.381Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-2",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "ZDFheute dokumentierte den Vorbehalt einer stabilen eigenen Mehrheit bereits bei einem früheren Auftritt.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+                  "excerpt_hash": "786da8664aca1ba94d5b",
+                  "checked_at": "2026-09-05T22:07:32.381Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-3",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "Der Ministerpräsident wird durch den Landtag in geheimer Abstimmung gewählt, nicht direkt durch die Bevölkerung.",
+              "status": "primary_source_claim",
+              "source_id": "landtag-sachsen-anhalt-context",
+              "evidence": [
+                {
+                  "source_id": "landtag-sachsen-anhalt-context",
+                  "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+                  "excerpt_hash": "6c9e71de60fa8e00cae7",
+                  "checked_at": "2026-09-05T22:07:32.381Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-4",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "Die Landtagswahl findet am 6. September 2026 statt.",
+              "status": "primary_source_claim",
+              "source_id": "sachsen-anhalt-election-context",
+              "evidence": [
+                {
+                  "source_id": "sachsen-anhalt-election-context",
+                  "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+                  "excerpt_hash": "a450f405ab53eab21d79",
+                  "checked_at": "2026-09-05T22:07:32.381Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bild-access",
+              "url": "https://www.bild.de/politik/inland/sachsen-anhalt-ulrich-siegmund-reichen-auch-drei-stimmen-mehrheit-nicht-6a9acf6908c763dcf81f4615",
+              "content_hash": "7d90ff832f9233d4d68b3a89b5b17396cb20c6037fe9a9ca5fe3b7353aa5af3e"
+            },
+            {
+              "source_id": "focus-case-research",
+              "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+              "content_hash": "0beba9860e1a0d0e4ce4764426e5e4532c549a05ea93344f73f27859184511a6"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+              "content_hash": "814e1ee2efa6bdd6b2bb3c756b8487c387cf91d23868e071360814cb2082fa9f"
+            },
+            {
+              "source_id": "landtag-sachsen-anhalt-context",
+              "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+              "content_hash": "2ab43f7ca01cf4bcda184ef5b2b5d8fbe78cc78fcdaa609d3555d595d300e0b0"
+            },
+            {
+              "source_id": "sachsen-anhalt-election-context",
+              "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+              "content_hash": "834dde58c68a4b9ed6849b01a5eb57c2a48b26251ccc6d89e0c32eb5659309b9"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-05T22:07:32.381Z",
+          "source_count": 5
+        }
+      ],
+      "retirement_history": [],
+      "editorial_review": {
+        "research_checked_at": "2026-09-05T22:05:00Z",
+        "basis": "Quellengebundene redaktionelle Prüfung des öffentlich erschlossenen BILD-Interviews, des FOCUS-Berichts, früherer ZDF-Berichterstattung und amtlicher Wahl-/Verfassungsquellen. Das eingebettete Video wurde nicht eigenständig angehört. Keine unabhängige Bestätigung möglicher interner Abweichler. FOCUS berichtet über dasselbe Interview, nicht über eine zweite eigenständige Aussage.",
+        "original_event_date": "2026-09-04",
+        "exclusions": [
+          "Kein belegter plötzlicher Kurswechsel am Samstagabend",
+          "Keine Behauptung interner Stimmverweigerer",
+          "Keine Prognose einer absoluten Mehrheit",
+          "Keine Bewertung einer Partei oder Person"
         ]
       }
     }
