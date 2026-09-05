@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T17:21:20.943Z",
+  "updated_at": "2026-09-05T17:36:24.715Z",
   "stories": [
     {
       "story_id": "wt-6a7145e6dc679f95",
@@ -1170,6 +1170,297 @@
         }
       ],
       "retirement_history": []
+    },
+    {
+      "story_id": "wt-ba90052729946ae3",
+      "slug": "gesprache-uber-friedensabkommen-us-sondergesandte-in-moskau-eingetroffen-946ae3",
+      "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+      "first_seen": "2026-09-05T17:17:47.000Z",
+      "last_updated": "2026-09-05T17:17:47.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+          "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+          "summary": "In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T17:17:47.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987",
+          "source_item_id": "3b07aa287e50b1bbf027019a2483375c05efa7365a4acb4f008cee14ce106321",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T17:17:47.000Z",
+          "ingested_at": "2026-09-05T17:36:24.715Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ba90052729946ae3-claim-01",
+          "story_id": "wt-ba90052729946ae3",
+          "claim": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen: In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T17:36:24.715Z"
+        }
+      ],
+      "content_hash": "e8791ab952453e52d6703e23d1d2dc97b6e9286997a30dbaf166b61a949c4ed3",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-05T17:36:24.715Z",
+      "event_first_seen_at": "2026-09-05T17:36:24.715Z",
+      "event_detected_at": "2026-09-05T17:36:24.715Z",
+      "event_id": "event-01e6cd4e390eda19a265",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.628583333333335,
+        "detection_delay_minutes": 18.628583333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T17:36:24.715Z",
+        "fingerprint": "a983d6c3fbf2106a3a1d9f5de0dd20addd25782e704d208025279b7f0345a453",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-166e870242fc37e6",
+      "slug": "verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6",
+      "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+      "first_seen": "2026-09-05T17:11:39.000Z",
+      "last_updated": "2026-09-05T17:11:39.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--putin-beginnt-gespraeche-mit-us-unterhaendlern-38211192.html",
+          "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+          "summary": "Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T17:11:39.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "d7e7db6b0e4741b35f75d0f6546135afa8de2d7da7c0a187961b74c464406a54",
+          "source_item_id": "05fe1f4448cc7b34a37a0108ec8885ac629e512648e2357735d9c024aa0bfe6f",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T17:11:39.000Z",
+          "ingested_at": "2026-09-05T17:36:24.715Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
+          "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+          "summary": "Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:06:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "55ac0e89fb24cb1849e6be703510e37169b9489553772ae7d395df5445226bdc",
+          "source_item_id": "235b4021196e08f1d60c8a911f608ba014fa851de581b8c9f4817f0dc07b9c51",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T11:06:25.000Z",
+          "ingested_at": "2026-09-05T17:36:24.715Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-166e870242fc37e6-claim-01",
+          "story_id": "wt-166e870242fc37e6",
+          "claim": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern: Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T17:36:24.715Z"
+        },
+        {
+          "claim_id": "wt-166e870242fc37e6-claim-02",
+          "story_id": "wt-166e870242fc37e6",
+          "claim": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern: Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T17:36:24.715Z"
+        }
+      ],
+      "content_hash": "51c7a77ddf1291eb640acc3517b233a592ccab4939b2f5106a5c159b97438786",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-05T17:36:24.715Z",
+      "event_first_seen_at": "2026-09-05T17:36:24.715Z",
+      "event_detected_at": "2026-09-05T17:36:24.715Z",
+      "event_id": "event-165020cd14b0b8c7db2e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.761916666666668,
+        "detection_delay_minutes": 24.761916666666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T17:36:24.715Z",
+        "fingerprint": "accbbda8b9e7d7b35a08bcd09d37bc0858c82e58ec63286fc55ecb4d72a1fb21",
+        "issue_codes": [],
+        "warning_codes": []
+      }
     },
     {
       "story_id": "wt-511db9ee9aff8bfd",
@@ -4156,7 +4447,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T13:53:54.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
+            "ingested_at": "2026-09-05T17:36:24.715Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
@@ -4164,7 +4455,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -4174,7 +4465,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "9eb21fc79fb90c9c3d3a3626adc2eed4c4ac5b3faa5cc00767a54bf0e2fe63db",
           "issue_codes": [],
           "warning_codes": []
@@ -10443,7 +10734,465 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-05T17:36:24.715Z",
+        "content_hash": "fd87a3e938b001d8cf072e0ac98a8279fb63c41afccf26fb800b38f45606e5e5",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:02:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
+            "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:02:30.000Z",
+            "ingested_at": "2026-09-04T07:21:13.294Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+            "title": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt",
+            "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T05:30:02.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "4ecffbf01167f40b3db26f6f52aaf0917fc5e9a7e0fa159589f2f79d534ff88e",
+            "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T05:30:02.000Z",
+            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
+            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T04:07:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
+            "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T04:07:55.000Z",
+            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
+            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T04:09:22.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
+            "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T04:09:22.000Z",
+            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
+            "title": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht",
+            "summary": "Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-01T14:38:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "a2e4d8b52b9340ac784ec86e650c17dec22acac070fb481dd92fed8839dea886",
+            "source_item_id": "deeaaefab10d8d6be35c1a4de80f7e4de81e1ca2e130057b3b623d0c4f6aa226",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-01T14:38:55.000Z",
+            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
+            "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
+            "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:06:15.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
+            "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:06:15.000Z",
+            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
+            "title": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt",
+            "summary": "Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T13:33:07.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c520b2fed8cbae3e888aab84b15115b053449540cb1ce16bbc5d6381f5c75a14",
+            "source_item_id": "aeb6e86149e7357797f2d2695a41a092f687a2b4fb1497c4f3f5e23d68e6dba2",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T13:33:07.000Z",
+            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
+            "title": "Tausende auf der Straße: Zeichen setzen \"für unser Land\"",
+            "summary": "Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:05:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "87d3607ab26afbcab60aed3b95084bfa76b310ff98df25c7114d021cc3071a4d",
+            "source_item_id": "ae0f97241727cfd71284debe9442dad606085a254b21cae8bed1253441ee63b0",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:05:00.000Z",
+            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
+            "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T19:34:28.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
+            "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T19:34:28.000Z",
+            "ingested_at": "2026-09-05T08:51:16.120Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
+            "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
+            "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magdeburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:54:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "fdf3059172229772727d508a76d7d49f5ab40351e811e9d93893b38a9225db0c",
+            "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:54:53.000Z",
+            "ingested_at": "2026-09-05T11:59:56.834Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/panorama/in-bitterfeld-wolfen-liegt-die-demokratiefoerderung-auf-eis-38121574.html",
+            "title": "Sachsen-Anhalt vor der Wahl: Ist Bitterfeld bald überall?",
+            "summary": "In Bitterfeld-Wolfen hat die AfD die Bedingungen für das größte Demokratieförderprogramm massiv verändert. Nun fließen gar keine Gelder mehr. Was das für die Stadt bedeutet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T07:41:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "3dc55c55677f78a4eaf8236861b571b5ffa5c0b1e03a7614bfa0c572a173c429",
+            "source_item_id": "76a645c64c8f56c4bd49ee9b0dbb72c34b186507734c7a921433d8d29d9bea72",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T07:41:00.000Z",
+            "ingested_at": "2026-09-05T08:51:16.120Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-demokratie-veranstaltungen-100,demonstrationen-110.html",
+            "title": "Veranstaltungen und Demonstrationen vor der Wahl Sachsen-Anhalt – Aktuelle Entwicklungen",
+            "summary": "Einen Tag vor der Landtagswahl finden in ganz Sachsen-Anhalt Demonstrationen und Feste für Demokratie statt. Die aktuelle Lage – live im Ticker.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:08:14.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "7ef86881460778cf16a7074725e8d2283314b02c4e560be4fd25deb0c447ee60",
+            "source_item_id": "297b16c16b4e4ed43a455ef407b564000be2505ca4eda079f641c8bcfb365dff",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:08:14.000Z",
+            "ingested_at": "2026-09-05T13:54:59.667Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/mehrere-kundgebungen-vor-landtagswahl-parteien-schliessen-wahlkampf-ab-102.html",
+            "title": "Sachsen-Anhalt - Mehrere Kundgebungen vor Landtagswahl - Parteien schließen Wahlkampf ab",
+            "summary": "Einen Tag vor der Landtagswahl in Sachsen-Anhalt haben die Parteien ihren Wahlkampf abgeschlossen. An Veranstaltungen von AfD, Linke und SPD nahmen auch Bundespolitiker teil. CDU, Grüne, FDP und BSW beendeten ebenfalls ihren Wahlkampf.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:17:47.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9dc8dda134bbd5a990a3bc89d6287eb507d4955f793142a83bf0f220ef4c9a7b",
+            "source_item_id": "0fc05a24b5b765bb48cdd02ccdf3b8afcbd3971e6d1c6c03a26e9310cf333ada",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:17:47.000Z",
+            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/afd-maga-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
+            "title": "Vor Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
+            "summary": "„AFD über alles“ – mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T14:56:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "3945a9b29b190d3b3a725bb6b980ac39cec10dc15c8661960e89fe4b678e4b36",
+            "source_item_id": "93f9609fdaa127812d6085531b6225302a45705677d3b642070eb21a0eaa4e9f",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T14:56:00.000Z",
+            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T17:36:24.715Z",
+          "fingerprint": "f25d785a1e2b5bad5dae867afe8f435e019b05c39309b7ef00bd34c2d2b49f8b",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
@@ -12733,7 +13482,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "48bad01993b1585a02bf4145fc83642d90c69e61d8ee25edebeb007ca5862f12",
           "issue_codes": [
             "SOURCE_URL_INVALID"
@@ -20515,7 +21264,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -20525,7 +21274,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
           "issue_codes": [],
           "warning_codes": []
@@ -20981,7 +21730,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -20991,7 +21740,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
           "issue_codes": [],
           "warning_codes": []
@@ -37259,7 +38008,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -37269,7 +38018,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "8cbb4311fa9f589f1203fc0556130f1bac19ee292dc31d40ae0f3addbfb850a9",
           "issue_codes": [],
           "warning_codes": []
@@ -43354,7 +44103,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -43364,7 +44113,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "b77080fc28dc49ed22c2e6eed468704e8806d8a8351e880f83f2a31fb8696350",
           "issue_codes": [],
           "warning_codes": []
@@ -51278,7 +52027,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -51288,7 +52037,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "a4a1aa47f4fa7294de838044190ad1cfc64cd840dd088522df173c63655c67a4",
           "issue_codes": [],
           "warning_codes": []
@@ -54673,10 +55422,8 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
@@ -54685,7 +55432,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "3e525a90021fc16764fdd5de14d5975794e031b3860545e083397059c1ff87f4",
           "issue_codes": [],
           "warning_codes": []
@@ -56514,7 +57261,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -56524,7 +57271,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -57129,7 +57876,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:37:20.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
+            "ingested_at": "2026-09-05T17:36:24.715Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -57137,7 +57884,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -57147,7 +57894,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "7a4e3b4d3b023739dcb0220550584ff732a89bce1aebfdc7f2711100160c30f8",
           "issue_codes": [],
           "warning_codes": []
@@ -78975,7 +79722,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -78985,7 +79732,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "371951dda8885071e92902c04fd0deb7c36df7ae5adcfb2c65a7a1ebdc9e6256",
           "issue_codes": [],
           "warning_codes": []
@@ -83320,7 +84067,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -83330,7 +84077,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:21:20.943Z",
+          "checked_at": "2026-09-05T17:36:24.715Z",
           "fingerprint": "fc6394929dd9caf6a77ab1a8265c01d7c1fddece2fc2a73b24676eceaeed40eb",
           "issue_codes": [],
           "warning_codes": []
