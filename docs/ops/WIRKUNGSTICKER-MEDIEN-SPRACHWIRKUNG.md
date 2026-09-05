@@ -63,9 +63,11 @@ Neue Storys erhalten den Mediencheck innerhalb des bestehenden Analyseaufrufs. O
 - `media_checks_skipped`;
 - `media_check_tokens`;
 - `media_check_cost_usd`;
+- `media_quality_retries`;
+- `media_checks_cleaned`;
 - `self_frame_rewrites`.
 
-Der Medienkostenanteil eines regulären kombinierten Aufrufs ist eine konservative Marginalschätzung und wird nicht zusätzlich zum Gesamtpreis verbucht. Beim reinen Backfill entspricht die protokollierte Summe dem vollständigen Backfill-Aufruf.
+Der Medienkostenanteil eines regulären kombinierten Aufrufs ist eine konservative Marginalschätzung und wird nicht zusätzlich zum Gesamtpreis verbucht. Beim reinen Backfill entspricht die protokollierte Summe allen tatsächlich beantworteten Backfill-Aufrufen, einschließlich einer gegebenenfalls nötigen Qualitätskorrektur.
 
 ## Backfill
 
@@ -77,10 +79,12 @@ Der Medienkostenanteil eines regulären kombinierten Aufrufs ist eine konservati
 4. bewahrt Quellen, Claims, Quellenzusammenfassung und bestehende Fakten;
 5. hängt eine neue Version an;
 6. stoppt am bestehenden Monatsbudget;
-7. ist bei unverändertem Quellenstand idempotent.
+7. fordert bei einer formal mangelhaften Modellausgabe höchstens eine gezielte Qualitätskorrektur an und hält den Fall danach weiterhin zurück;
+8. entfernt automatisch einen früher sichtbaren Mediencheck, wenn eine verschärfte lokale Triggerregel ihn nicht mehr als relevant einstuft;
+9. ist bei unverändertem Quellenstand idempotent.
 
 Der GitHub-Workflow bietet dafür die manuellen Eingaben `media_impact_backfill` und `media_impact_limit`. Der reguläre Stundenprozess startet keinen teuren Vollbestands-Backfill.
 
 ## Testabdeckung
 
-`tests/news/media-impact.test.mjs` prüft neutrale Meldungen, Attribution, direkte und indirekte Zitate, offene Ermittlungen, Headline-Text-Abweichung, politisch symmetrische Frame-Beispiele, Herkunftsevidenz, Medienvergleich, Self-Frame-Rewrite, Absichtszuschreibung, Wirkungsüberbehauptung, Outlet-Scores, Prompt-Injection-Grenze, Backfill-Idempotenz, Versionierung und Kostenlogging.
+`tests/news/media-impact.test.mjs` prüft neutrale Meldungen einschließlich technischer Alarme, Attribution, direkte und indirekte Zitate, offene Ermittlungen, Headline-Text-Abweichung, politisch symmetrische Frame-Beispiele, Herkunftsevidenz, Medienvergleich, Self-Frame-Rewrite, Absichtszuschreibung, Wirkungsüberbehauptung, Outlet-Scores, Prompt-Injection-Grenze, Backfill-Idempotenz, automatische Trigger-Bereinigung, begrenzte Qualitätskorrektur, Versionierung und Kostenlogging.
