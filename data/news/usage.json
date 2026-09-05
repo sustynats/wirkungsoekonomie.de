@@ -4601,6 +4601,34 @@
       },
       "source_failures": 0,
       "quality_holds": 1
+    },
+    {
+      "run_id": "news-run-264cd969ab85",
+      "started_at": "2026-09-05T09:21:37.579Z",
+      "completed_at": "2026-09-05T09:21:38.122Z",
+      "berlin_slot": "Automatischer Lauf 11:00",
+      "counts": {
+        "feed_entries_fetched": 0,
+        "feed_entries_new": 0,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 0,
+        "story_clusters": 0,
+        "locally_rejected": 4,
+        "ai_stories": 0,
+        "ai_requests": 0,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 0,
+        "media_checks_triggered": 0,
+        "media_checks_skipped": 0,
+        "media_check_tokens": 0,
+        "self_frame_rewrites": 0,
+        "published_stories": 0,
+        "updated_stories": 0
+      },
+      "ai": null,
+      "source_failures": 0,
+      "quality_holds": 0
     }
   ]
 }
