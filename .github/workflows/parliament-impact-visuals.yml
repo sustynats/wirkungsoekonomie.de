@@ -1,0 +1,85 @@
+name: Parliament impact visual candidates
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_sha:
+        description: Exact reviewed commit containing the approved reference-scene contract
+        required: true
+        type: string
+      execute:
+        description: Spend Higgsfield credits and create the seven-image candidate set
+        required: true
+        default: false
+        type: boolean
+  workflow_call:
+    inputs:
+      commit_sha:
+        required: true
+        type: string
+      execute:
+        required: true
+        type: boolean
+    secrets:
+      WOEK_NEWS_PUSH_ADMIN_TOKEN:
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: parliament-impact-visuals
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      NO_NEW_VERCEL_BUILD: "true"
+      WOEK_PARLIAMENT_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/parliament-impact-visual"
+      WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
+      CANDIDATE_DIR: ${{ runner.temp }}/parliament-impact-visuals
+    steps:
+      - name: Validate exact commit input
+        shell: bash
+        env:
+          COMMIT_SHA: ${{ inputs.commit_sha }}
+        run: |
+          [[ "$COMMIT_SHA" =~ ^[a-f0-9]{40}$ ]]
+
+      - name: Checkout exact reviewed commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.commit_sha }}
+          fetch-depth: 1
+
+      - name: Prove exact clean input
+        shell: bash
+        env:
+          COMMIT_SHA: ${{ inputs.commit_sha }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$COMMIT_SHA"
+          test -z "$(git status --short)"
+
+      - name: Validate contract without generation
+        shell: bash
+        env:
+          COMMIT_SHA: ${{ inputs.commit_sha }}
+        run: node scripts/parliament/impact-visuals/generate-reference-scene.mjs --commit "$COMMIT_SHA"
+
+      - name: Generate one base and six reference-bound candidates on Oracle
+        if: inputs.execute == true
+        shell: bash
+        env:
+          COMMIT_SHA: ${{ inputs.commit_sha }}
+        run: node scripts/parliament/impact-visuals/generate-reference-scene.mjs --execute --commit "$COMMIT_SHA" --output "$CANDIDATE_DIR"
+
+      - name: Upload fail-closed candidate artifact
+        if: inputs.execute == true
+        uses: actions/upload-artifact@v4
+        with:
+          name: parliament-impact-visuals-${{ inputs.commit_sha }}
+          path: ${{ runner.temp }}/parliament-impact-visuals
+          if-no-files-found: error
+          retention-days: 30
