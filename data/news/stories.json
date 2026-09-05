@@ -1,7 +1,1725 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T06:51:33.859Z",
+  "updated_at": "2026-09-05T07:06:05.017Z",
   "stories": [
+    {
+      "story_id": "wt-015e477e516f3f8b",
+      "slug": "at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base-6f3f8b",
+      "title": "At least two killed and 81 injured after explosions at Bolivian army base",
+      "first_seen": "2026-09-05T06:51:02.000Z",
+      "last_updated": "2026-09-05T07:06:50.393Z",
+      "published_at": "2026-09-05T07:06:50.393Z",
+      "updated_at": "2026-09-05T07:06:50.393Z",
+      "topic": [
+        "Gesundheit",
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "euronews-en",
+          "publisher": "Euronews",
+          "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+          "title": "At least two killed and 81 injured after explosions at Bolivian army base",
+          "summary": "The Bolivian Defence Minister said the first explosion \"involved black powder from pyrotechnic material stored at the site,\" while the second, \"much larger\" blast was still being investigated.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T06:51:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Europa",
+          "content_hash": "3a362cedab86bae56dc37e159e1503119cc3e8f1286ae9529c2c7768f41fa8a9",
+          "source_item_id": "a5812bffb14cc989cab45455825d8efb61256f386f1845b6c1425391f592b52a",
+          "publisher_id": "euronews",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "EU",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T06:51:02.000Z",
+          "ingested_at": "2026-09-05T07:06:05.017Z",
+          "provenance": {
+            "origin": "publisher:euronews",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-015e477e516f3f8b-v1-claim-1",
+          "story_id": "wt-015e477e516f3f8b",
+          "claim": "Bei Explosionen an einer Militärbasis in Bolivien wurden nach Angaben der Quelle mindestens zwei Menschen getötet und 81 verletzt.",
+          "status": "single_source_claim",
+          "source_id": "euronews-en",
+          "evidence": [
+            {
+              "source_id": "euronews-en",
+              "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+              "excerpt_hash": "25c8fc50c125eae52115",
+              "checked_at": "2026-09-05T07:06:50.393Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T07:06:50.393Z"
+        },
+        {
+          "claim_id": "wt-015e477e516f3f8b-v1-claim-2",
+          "story_id": "wt-015e477e516f3f8b",
+          "claim": "Der bolivianische Verteidigungsminister sagte, die erste Explosion habe schwarzen Pulverstoff aus an dem Ort gelagertem pyrotechnischem Material betroffen.",
+          "status": "single_source_claim",
+          "source_id": "euronews-en",
+          "evidence": [
+            {
+              "source_id": "euronews-en",
+              "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+              "excerpt_hash": "5a03a648135b7e325c9f",
+              "checked_at": "2026-09-05T07:06:50.393Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T07:06:50.393Z"
+        },
+        {
+          "claim_id": "wt-015e477e516f3f8b-v1-claim-3",
+          "story_id": "wt-015e477e516f3f8b",
+          "claim": "Eine zweite, deutlich größere Explosion wurde laut Quelle noch untersucht.",
+          "status": "single_source_claim",
+          "source_id": "euronews-en",
+          "evidence": [
+            {
+              "source_id": "euronews-en",
+              "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+              "excerpt_hash": "5a03a648135b7e325c9f",
+              "checked_at": "2026-09-05T07:06:50.393Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T07:06:50.393Z"
+        }
+      ],
+      "event_id": "event-b5cad91fc7800c5ee413",
+      "event_first_seen_at": "2026-09-05T07:06:05.017Z",
+      "event_detected_at": "2026-09-05T07:06:05.017Z",
+      "verification_started_at": "2026-09-05T07:06:40.950Z",
+      "publish_ready_at": "2026-09-05T07:06:50.393Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "euronews-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "9db31d4d11e4d69e842532adf04a9922c95ce5f2786543b5d842ec4a8dc90ac7",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Quelle berichtet über Explosionen an einer bolivianischen Militärbasis. Dabei sollen mindestens zwei Menschen getötet und 81 verletzt worden sein.\n\nAls Ursache der ersten Explosion nennt der bolivianische Verteidigungsminister schwarzen Pulverstoff aus am Ort gelagertem pyrotechnischem Material. Eine zweite, größere Explosion sei weiter Gegenstand von Ermittlungen. Weitere Details zum Ablauf, zu Verantwortlichkeiten oder zu möglichen Folgen nennt der Text nicht.",
+      "analysis": {
+        "story_id": "wt-015e477e516f3f8b",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Bei Explosionen an einer bolivianischen Militärbasis wurden laut Quelle mindestens zwei Menschen getötet und 81 verletzt. Die Ursache der zweiten, größeren Explosion war zunächst weiter ungeklärt.",
+        "detail_summary": "Gesichert ist nach der vorliegenden Quelle ein schwerer Unfall bzw. Zwischenfall an einer bolivianischen Militärbasis mit mindestens zwei Toten und 81 Verletzten. Für die erste Explosion wird ein Bezug zu schwarzem Pulver aus gelagertem pyrotechnischem Material genannt; die zweite, größere Explosion wird noch untersucht. Das ist als aktuelle Nachricht relevant, weil es um einen akuten sicherheitsrelevanten Vorfall mit zahlreichen Betroffenen an einem staatlichen Militärstandort geht. Mögliche Folgen liegen in einer Ausweitung der Ermittlungen, in Sicherheitsprüfungen der Lagerung gefährlicher Stoffe und in vorübergehenden Einschränkungen am Standort. Über Ursache, Verantwortlichkeit und Folgeschäden lässt sich aus der Einzelquelle noch nicht belastbar urteilen; die Evidenz bleibt auf eine Sekundärmeldung begrenzt.",
+        "why_relevant": "Der Vorfall betrifft eine staatliche militärische Einrichtung mit Todesopfern und vielen Verletzten; das ist als akuter Sicherheits- und Menschenrechtsvorfall berichtenswert.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mindestens zwei Tote und 81 Verletzte machen den Vorgang für den Referenzrahmen Mensch unmittelbar relevant."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus der Quelle ergibt sich kein direkter Umwelt- oder Klimabezug."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Vorfall betrifft eine staatliche Militärbasis und kann Sicherheits- und Kontrollfragen staatlicher Infrastruktur aufwerfen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche kurzfristige Auswirkungen sind Rettungseinsatz, Sperrungen, interne Sicherheitsprüfungen und öffentliche Aufklärung über Lagerung und Umgang mit pyrotechnischem Material.",
+        "impact_risks": [
+          "Weitere Verletzte oder Folgeschäden, falls die Ursache nicht rasch geklärt wird.",
+          "Vertrauensverlust in die Sicherheitsstandards an der betroffenen Einrichtung."
+        ],
+        "mechanisms": [
+          "Explosionen führen unmittelbar zu körperlichen Schäden und Störungen des Betriebs.",
+          "Die laufende Untersuchung kann zu neuen Sicherheitsauflagen oder Betriebsänderungen führen."
+        ],
+        "first_order": [
+          "Tote und Verletzte",
+          "Ermittlungen zur Ursache"
+        ],
+        "second_order": [
+          "Prüfung von Lager- und Sicherheitsstandards",
+          "mögliche Einschränkungen am Standort"
+        ],
+        "third_order": [
+          "eventuelle Anpassungen militärischer Sicherheitsprotokolle"
+        ],
+        "systemic_relevance": "Der Vorgang ist lokal begrenzt, berührt aber eine staatliche Sicherheitsinfrastruktur und damit Fragen von Risikomanagement und Kontrolle gefährlicher Stoffe.",
+        "transformation_potential": "Allenfalls begrenzt, sofern die Untersuchung zu konkreten neuen Sicherheitsregeln oder Lagerstandards führt.",
+        "resilience": "Die Quelle erlaubt noch keine Aussage zur Resilienz; relevant wäre, ob Notfallreaktion und Sicherheitsprotokolle Folgeschäden begrenzen konnten.",
+        "side_effects": [
+          "Belastung von Rettungs- und Ermittlungsressourcen",
+          "mögliche Unterbrechungen des Betriebs"
+        ],
+        "uncertainties": [
+          "Ob die zweite Explosion dieselbe Ursache hatte, bleibt offen.",
+          "Verantwortlichkeit und genauer Ort im Areal sind nicht belegt."
+        ],
+        "evidence_level": "einzelne Sekundärquelle mit klar benanntem Kernereignis; keine unabhängige Bestätigung im gelieferten Material",
+        "attribution": "Die Zahlen und Ursache stammen aus der berichtenden Quelle unter Bezug auf den bolivianischen Verteidigungsminister.",
+        "watch_next": [
+          "Ergebnisse der Ermittlungen zur zweiten Explosion",
+          "bestätigte Opferzahlen und mögliche Ursache"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 3, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "intensity",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Akuter Vorfall mit Todesopfern und vielen Verletzten an einer Militärbasis; trotz Einquellenlage liegt eine materielle neue Lageinformation vor."
+        },
+        "publication_recommendation": true,
+        "visuals": null
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T07:06:50.393Z",
+          "content_hash": "9db31d4d11e4d69e842532adf04a9922c95ce5f2786543b5d842ec4a8dc90ac7",
+          "source_summary": "Die Quelle berichtet über Explosionen an einer bolivianischen Militärbasis. Dabei sollen mindestens zwei Menschen getötet und 81 verletzt worden sein.\n\nAls Ursache der ersten Explosion nennt der bolivianische Verteidigungsminister schwarzen Pulverstoff aus am Ort gelagertem pyrotechnischem Material. Eine zweite, größere Explosion sei weiter Gegenstand von Ermittlungen. Weitere Details zum Ablauf, zu Verantwortlichkeiten oder zu möglichen Folgen nennt der Text nicht.",
+          "analysis": {
+            "story_id": "wt-015e477e516f3f8b",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Bei Explosionen an einer bolivianischen Militärbasis wurden laut Quelle mindestens zwei Menschen getötet und 81 verletzt. Die Ursache der zweiten, größeren Explosion war zunächst weiter ungeklärt.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Quelle ein schwerer Unfall bzw. Zwischenfall an einer bolivianischen Militärbasis mit mindestens zwei Toten und 81 Verletzten. Für die erste Explosion wird ein Bezug zu schwarzem Pulver aus gelagertem pyrotechnischem Material genannt; die zweite, größere Explosion wird noch untersucht. Das ist als aktuelle Nachricht relevant, weil es um einen akuten sicherheitsrelevanten Vorfall mit zahlreichen Betroffenen an einem staatlichen Militärstandort geht. Mögliche Folgen liegen in einer Ausweitung der Ermittlungen, in Sicherheitsprüfungen der Lagerung gefährlicher Stoffe und in vorübergehenden Einschränkungen am Standort. Über Ursache, Verantwortlichkeit und Folgeschäden lässt sich aus der Einzelquelle noch nicht belastbar urteilen; die Evidenz bleibt auf eine Sekundärmeldung begrenzt.",
+            "why_relevant": "Der Vorfall betrifft eine staatliche militärische Einrichtung mit Todesopfern und vielen Verletzten; das ist als akuter Sicherheits- und Menschenrechtsvorfall berichtenswert.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Mindestens zwei Tote und 81 Verletzte machen den Vorgang für den Referenzrahmen Mensch unmittelbar relevant."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Aus der Quelle ergibt sich kein direkter Umwelt- oder Klimabezug."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Vorfall betrifft eine staatliche Militärbasis und kann Sicherheits- und Kontrollfragen staatlicher Infrastruktur aufwerfen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche kurzfristige Auswirkungen sind Rettungseinsatz, Sperrungen, interne Sicherheitsprüfungen und öffentliche Aufklärung über Lagerung und Umgang mit pyrotechnischem Material.",
+            "impact_risks": [
+              "Weitere Verletzte oder Folgeschäden, falls die Ursache nicht rasch geklärt wird.",
+              "Vertrauensverlust in die Sicherheitsstandards an der betroffenen Einrichtung."
+            ],
+            "mechanisms": [
+              "Explosionen führen unmittelbar zu körperlichen Schäden und Störungen des Betriebs.",
+              "Die laufende Untersuchung kann zu neuen Sicherheitsauflagen oder Betriebsänderungen führen."
+            ],
+            "first_order": [
+              "Tote und Verletzte",
+              "Ermittlungen zur Ursache"
+            ],
+            "second_order": [
+              "Prüfung von Lager- und Sicherheitsstandards",
+              "mögliche Einschränkungen am Standort"
+            ],
+            "third_order": [
+              "eventuelle Anpassungen militärischer Sicherheitsprotokolle"
+            ],
+            "systemic_relevance": "Der Vorgang ist lokal begrenzt, berührt aber eine staatliche Sicherheitsinfrastruktur und damit Fragen von Risikomanagement und Kontrolle gefährlicher Stoffe.",
+            "transformation_potential": "Allenfalls begrenzt, sofern die Untersuchung zu konkreten neuen Sicherheitsregeln oder Lagerstandards führt.",
+            "resilience": "Die Quelle erlaubt noch keine Aussage zur Resilienz; relevant wäre, ob Notfallreaktion und Sicherheitsprotokolle Folgeschäden begrenzen konnten.",
+            "side_effects": [
+              "Belastung von Rettungs- und Ermittlungsressourcen",
+              "mögliche Unterbrechungen des Betriebs"
+            ],
+            "uncertainties": [
+              "Ob die zweite Explosion dieselbe Ursache hatte, bleibt offen.",
+              "Verantwortlichkeit und genauer Ort im Areal sind nicht belegt."
+            ],
+            "evidence_level": "einzelne Sekundärquelle mit klar benanntem Kernereignis; keine unabhängige Bestätigung im gelieferten Material",
+            "attribution": "Die Zahlen und Ursache stammen aus der berichtenden Quelle unter Bezug auf den bolivianischen Verteidigungsminister.",
+            "watch_next": [
+              "Ergebnisse der Ermittlungen zur zweiten Explosion",
+              "bestätigte Opferzahlen und mögliche Ursache"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "intensity",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Akuter Vorfall mit Todesopfern und vielen Verletzten an einer Militärbasis; trotz Einquellenlage liegt eine materielle neue Lageinformation vor."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-015e477e516f3f8b-v1-claim-1",
+              "story_id": "wt-015e477e516f3f8b",
+              "claim": "Bei Explosionen an einer Militärbasis in Bolivien wurden nach Angaben der Quelle mindestens zwei Menschen getötet und 81 verletzt.",
+              "status": "single_source_claim",
+              "source_id": "euronews-en",
+              "evidence": [
+                {
+                  "source_id": "euronews-en",
+                  "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+                  "excerpt_hash": "25c8fc50c125eae52115",
+                  "checked_at": "2026-09-05T07:06:50.393Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T07:06:50.393Z"
+            },
+            {
+              "claim_id": "wt-015e477e516f3f8b-v1-claim-2",
+              "story_id": "wt-015e477e516f3f8b",
+              "claim": "Der bolivianische Verteidigungsminister sagte, die erste Explosion habe schwarzen Pulverstoff aus an dem Ort gelagertem pyrotechnischem Material betroffen.",
+              "status": "single_source_claim",
+              "source_id": "euronews-en",
+              "evidence": [
+                {
+                  "source_id": "euronews-en",
+                  "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+                  "excerpt_hash": "5a03a648135b7e325c9f",
+                  "checked_at": "2026-09-05T07:06:50.393Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T07:06:50.393Z"
+            },
+            {
+              "claim_id": "wt-015e477e516f3f8b-v1-claim-3",
+              "story_id": "wt-015e477e516f3f8b",
+              "claim": "Eine zweite, deutlich größere Explosion wurde laut Quelle noch untersucht.",
+              "status": "single_source_claim",
+              "source_id": "euronews-en",
+              "evidence": [
+                {
+                  "source_id": "euronews-en",
+                  "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+                  "excerpt_hash": "5a03a648135b7e325c9f",
+                  "checked_at": "2026-09-05T07:06:50.393Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T07:06:50.393Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "euronews-en",
+              "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+              "content_hash": "3a362cedab86bae56dc37e159e1503119cc3e8f1286ae9529c2c7768f41fa8a9"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-05T07:06:50.393Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-015e477e516f3f8b-cd5be888192d943d-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "cd5be888192d943d60134475dbfaba03192a875a2e06f93796bdf7cd215d1ff4"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-015e477e516f3f8b-1f7d195c64a1d8d4-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "1f7d195c64a1d8d4a3c7d3fbd00872eecf56a00fd8a7d594a5ffb4628db963b3"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-015e477e516f3f8b-2562109871bc8983-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "2562109871bc8983eb30c3911171f4add059cd8fc4462d686ca828469fdec58d"
+        },
+        "source_visual": null,
+        "fingerprint": "25714fcec2d8517f5bb3d79401e49b31342e356595bef45e3289a255afd3aa87",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-05T07:07:57.117Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-33e396f2be1a3a1f",
+      "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
+      "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+      "first_seen": "2026-09-04T18:13:49.000Z",
+      "last_updated": "2026-09-05T07:06:38.447Z",
+      "published_at": "2026-09-04T19:51:20.503Z",
+      "updated_at": "2026-09-05T07:06:38.447Z",
+      "topic": [
+        "Energie",
+        "Arbeit",
+        "Wirtschaft",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:13:49.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1ef044227fcb95d2a40c12a9431be268cc9c674ac56c69777ae35968925e5954",
+          "source_item_id": "80c246f10722e36049de20d5ebd90360a95abbdc539be494b0302c4c0ceb129a",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:13:49.000Z",
+          "ingested_at": "2026-09-04T18:21:48.041Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:15:11.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1e3bd273b937dff07ee4bad311922b81b5cce13b8642a227d2130f63fa9ec3c7",
+          "source_item_id": "34bc122b9bf74bebeafd71643d3d0ea7952826caa0d370a81e707a8b8fac1163",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:15:11.000Z",
+          "ingested_at": "2026-09-04T19:50:26.018Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+          "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "summary": "Nach mehreren Angriffen auf das Stromnetz haben Ermittler nun auch in Sachsen Sprengvorrichtungen entdeckt. Die Polizei arbeite an der Entschärfung, so Innenminister Schuster.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:28:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "99f5b9110e2ea1f5039d44a77e3d49ebbb45308022c9340b28f9021c20f48480",
+          "source_item_id": "641fb9a25b26f3aee7a02df887e0f1070210b4e401ec1e1147b35bbdfe15d256",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:28:00.000Z",
+          "ingested_at": "2026-09-05T07:06:05.017Z",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
+          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt – NRW-Verdächtiger flüchtig",
+          "summary": "Mithilfe eines Bekennerschreibens fand die Polizei Sprengsätze nahe Bautzen. Der Verdächtige in NRW konnte bislang nicht gefasst werden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:30:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "3986fe87f717ee86326bbd074a005d005a54b9d8a267cf4e7cc78cab810f4dc4",
+          "source_item_id": "7a90981849bb892e3da69556ce80d4355980593b98ee6c37d30011b10bfd1f4b",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:30:00.000Z",
+          "ingested_at": "2026-09-05T07:06:05.017Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+          "title": "Innenminister Schuster: \"Sprengvorrichtungen\" auch in Sachsen entdeckt",
+          "summary": "Seit Freitagnachmittag sind Polizisten im Wald bei Schleife und an der Landesgrenze zu Brandenburg und nördlich von Bautzen ab. Was ist da los?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:27:06.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5533ce48d63e4f7d1b62c3eb80d504a16c366f92f6439e511111a50fee1729ad",
+          "source_item_id": "7160b03b5718132dc117454643d3b54d80b051e9f3be8c840357c76b559f485d",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:27:06.000Z",
+          "ingested_at": "2026-09-04T19:50:26.018Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-lausitz-100.html",
+          "title": "Fahndung nach Stromnetz-Sabotagen: Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "summary": "Nach Anschlägen auf das Stromnetz in Nordrhein-Westfalen ist die Polizei einem Verdächtigen auf der Spur. Unterdessen wurden auch in Sachsen Sprengvorrichtungen entdeckt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:02:53.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b79f6a27d19f0d590edf9ef72d2374c907fbf01dec549f874bdd0fcada80ed71",
+          "source_item_id": "36e6c54a7a64c95ec057ae0fe7d26e9a51c2972717fd7be63d6623bb5b74f5d6",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:02:53.000Z",
+          "ingested_at": "2026-09-05T07:06:05.017Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-33e396f2be1a3a1f-v3-claim-1",
+          "story_id": "wt-33e396f2be1a3a1f",
+          "claim": "In Sachsen haben Ermittler an zwei Fundorten vier Objekte gesichert.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+              "excerpt_hash": "c708a4fa81401243ea46",
+              "checked_at": "2026-09-05T07:06:38.447Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T07:06:38.447Z"
+        },
+        {
+          "claim_id": "wt-33e396f2be1a3a1f-v3-claim-2",
+          "story_id": "wt-33e396f2be1a3a1f",
+          "claim": "Die Hinweise auf Sabotage ergaben sich laut Innenminister aus einem Bekennerschreiben; danach begannen sofort Suchmaßnahmen.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+              "excerpt_hash": "f6e32e42054a520f2627",
+              "checked_at": "2026-09-05T07:06:38.447Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T07:06:38.447Z"
+        },
+        {
+          "claim_id": "wt-33e396f2be1a3a1f-v3-claim-3",
+          "story_id": "wt-33e396f2be1a3a1f",
+          "claim": "Die Polizei fahndet weiter nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+              "excerpt_hash": "d39c0503042e4dfa62f1",
+              "checked_at": "2026-09-05T07:06:38.447Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T07:06:38.447Z"
+        },
+        {
+          "claim_id": "wt-33e396f2be1a3a1f-v3-claim-4",
+          "story_id": "wt-33e396f2be1a3a1f",
+          "claim": "Die Polizeidirektion Görlitz bestätigte einen großen Einsatz nördlich von Bautzen, nannte aber keine weiteren Details.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+              "excerpt_hash": "1272704882c63936c638",
+              "checked_at": "2026-09-05T07:06:38.447Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T07:06:38.447Z"
+        }
+      ],
+      "event_id": "event-b3909a98d9ba9b7edf64",
+      "event_first_seen_at": "2026-09-04T18:21:48.041Z",
+      "event_detected_at": "2026-09-04T18:21:48.041Z",
+      "verification_started_at": "2026-09-05T07:06:25.371Z",
+      "publish_ready_at": "2026-09-05T07:06:38.447Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 4,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "mdr-nachrichten",
+              "mdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die gesicherten Objekte tatsächlich entschärft werden und welche Sprengwirkung sie haben, soll die Polizei später präzisieren.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Behördliche Bestätigung zu Entschärfung, Art und Gefährlichkeit der Objekte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-596c5c287d66ce50",
+          "announced_at": "2026-09-04T19:28:00.000Z",
+          "follow_up_date": "2026-09-11T19:51:20.503Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Weitere Angaben der Polizei zu Art, Gefährlichkeit und Herkunft der gesicherten Objekte",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Benennung der Objekte oder offizielle Entschärfungs- bzw. Sicherungsdetails",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-7a8ae6d9fecdaefe",
+          "announced_at": "2026-09-04T18:27:06.000Z",
+          "follow_up_date": "2026-09-12T07:06:38.447Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "900374b0f19bc967cf64fedaf83e978dcc0238c2f330cbe13730846469d6b4aa",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-aca6888da178b3ac-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "aca6888da178b3ac9443cf397ef6397e23b3fb6dd5beef70ee496f4ee2afa088"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-a7f4366a5d6a9fc2-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "a7f4366a5d6a9fc2eeef1df7eab8d72497a27d7094019a6b3c7b2a414208d871"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-e2c41fab14e0acf8-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "e2c41fab14e0acf8c6d06edfd4a336db432c28c58db6e24b2a9e9b3521568b6c"
+        },
+        "source_visual": null,
+        "fingerprint": "31d66384a0bd7e90cccf73fb3cba1c887bdf2577909b9db5c8c7ec20eb4c2dab",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-05T05:24:48.357Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 3,
+      "source_summary": "Nach mehreren Angriffen auf das Stromnetz meldeten Medien am Freitag einen Polizeieinsatz in Sachsen. Innenminister Armin Schuster sagte, die Hinweise auf Sabotage hätten sich aus einem Bekennerschreiben ergeben; die Polizei habe daraufhin Suchmaßnahmen eingeleitet.\n\nIn den Berichten heißt es, die Polizeikräfte hätten an zwei Fundorten vier Objekte gesichert. Zugleich wurde auf einen großen Einsatz nördlich von Bautzen und auf eine Suche im Wald bei Schleife verwiesen. Mehrere Quellen berichten außerdem, dass weiter nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen gefahndet werde. Zu Art und Gefährlichkeit der Gegenstände blieben die Behörden zunächst zurückhaltend.",
+      "analysis": {
+        "story_id": "wt-33e396f2be1a3a1f",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Ermittler haben in Sachsen vier gesicherte Objekte an zwei Fundorten gemeldet. Parallel läuft weiter die Fahndung nach einem 48-jährigen Verdächtigen aus Nordrhein-Westfalen.",
+        "detail_summary": "Bestbelegt ist derzeit, dass die Polizei in Sachsen an zwei Fundorten vier Objekte gesichert hat und der Einsatz im Umfeld der jüngsten Stromnetz-Sabotage steht. Innenminister Schuster ordnete die Ermittlungen über ein Bekennerschreiben und sofort eingeleitete Suchmaßnahmen ein. Mehrere Medien berichten außerdem von einer laufenden Fahndung nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen. Für die Einordnung ist wichtig: Gesichert ist damit ein polizeilicher Einsatz mit möglichem Bezug zu den früheren Vorfällen, nicht abschließend die Gefährlichkeit oder genaue Herkunft der Objekte. Materiell relevant ist das, weil es um kritische Energieinfrastruktur, Sicherheitslage und mögliche Folgeeinsätze geht. Offen bleibt, ob und wie direkt die Funde mit den Sabotageakten verbunden sind.",
+        "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Sicherheitsfolgen über Sachsen hinaus.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Der Vorgang betrifft öffentliche Sicherheit, mögliche Gefährdung an kritischer Infrastruktur und eine laufende Fahndung."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umwelt- oder Klimawirkpfad."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Relevant sind staatliche Schutzfähigkeit, Informationslage der Behörden und die Korrekturfähigkeit im Sicherheitsfall."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche Auswirkungen liegen vor allem in zusätzlicher Gefahrenabwehr, Schutzmaßnahmen an Strominfrastruktur und erhöhter Belastung von Polizei und Betreibern.",
+        "impact_risks": [
+          "Weitere Funde oder Verdachtsmomente können Sicherheitsmaßnahmen ausweiten.",
+          "Unklare Lage kann Unsicherheit bei Betreibern und Öffentlichkeit verstärken."
+        ],
+        "mechanisms": [
+          "Sicherungs- und Entschärfungsmaßnahmen an potenziell gefährlichen Objekten.",
+          "Ermittlungs- und Fahndungsdruck rund um Sabotage an kritischer Infrastruktur."
+        ],
+        "first_order": [
+          "Polizeieinsatz und Absperrungen an den Fundorten.",
+          "Fortgesetzte Fahndung nach dem Verdächtigen."
+        ],
+        "second_order": [
+          "Mögliche Nachrüstungen und zusätzliche Schutzmaßnahmen an Stromanlagen.",
+          "Höherer Koordinationsbedarf zwischen Ländern und Sicherheitsbehörden."
+        ],
+        "third_order": [
+          "Wenn sich ein Muster bestätigt, kann das die Sicherheitsarchitektur für kritische Infrastruktur beeinflussen."
+        ],
+        "systemic_relevance": "Die Meldung berührt die Resilienz der Stromversorgung und damit ein System mit breiten Folgewirkungen für Versorgung, Wirtschaft und Sicherheit.",
+        "transformation_potential": "Kurzfristig gering bis mittel; strukturell könnte der Fall Debatten über Schutzstandards für kritische Infrastruktur verstärken.",
+        "resilience": "Relevant für die Frage, wie schnell Behörden und Betreiber auf wiederholte Sabotagehinweise reagieren können.",
+        "side_effects": [
+          "Mehr Kontroll- und Sicherungsaufwand.",
+          "Mögliche Verunsicherung in betroffenen Regionen."
+        ],
+        "uncertainties": [
+          "Art und Gefährlichkeit der gesicherten Objekte sind nicht abschließend belegt.",
+          "Der genaue Zusammenhang aller Vorfälle bleibt offen.",
+          "Die Quellenlage ist derzeit vor allem sekundär und teilweise gemeinsam geprägt."
+        ],
+        "evidence_level": "mehrere Sekundärquellen mit übereinstimmendem Kern, aber ohne unabhängigen Originalbeleg für alle Details",
+        "attribution": "Die Kerndaten stammen aus journalistischen Berichten; Behördenaussagen werden in diesen Berichten wiedergegeben.",
+        "watch_next": [
+          "Ob die Polizei weitere Details zu den Objekten nennt.",
+          "Ob die Fahndung nach dem Verdächtigen neue Belastungspunkte bringt.",
+          "Ob Behörden den Zusammenhang zu den Stromnetz-Angriffen konkretisieren."
+        ],
+        "reference_frameworks": [
+          "SDG 7",
+          "SDG 9",
+          "SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Die neue Meldung ergänzt die laufende Fahndung um konkrete Funde an zwei Orten und betrifft kritische Infrastruktur; der Kern ist zwar nur sekundär belegt, aber materiell neu."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "gesicherte Objekte",
+              "value": "vier",
+              "unit": "Objekte",
+              "context": "An zwei Fundorten gesicherte Gegenstände",
+              "claim_id": "wt-33e396f2be1a3a1f-claim-01"
+            },
+            {
+              "label": "Fundorte",
+              "value": "zwei",
+              "unit": "Fundorte",
+              "context": "Polizeikräfte sicherten an zwei Orten",
+              "claim_id": "wt-33e396f2be1a3a1f-claim-01"
+            },
+            {
+              "label": "Tatverdächtiger",
+              "value": "48-jährigen",
+              "unit": "Jahre",
+              "context": "Fahndung nach dem Verdächtigen",
+              "claim_id": "wt-33e396f2be1a3a1f-claim-03"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "haushalte"
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "offen",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T19:51:20.503Z",
+          "content_hash": "68d152bbecfd0fd6e5e0151f9059c01effc3134f2fd8faf636e02253cafeb45e",
+          "source_summary": "Mehrere Berichte melden einen Polizeieinsatz in Sachsen im Zusammenhang mit den Angriffen auf Stromleitungen und Umspannwerke in Brandenburg und NRW. Nach Angaben aus den Beiträgen wurden in Ostsachsen, nördlich von Bautzen beziehungsweise bei Schleife an der Grenze zu Brandenburg, Sprengvorrichtungen entdeckt oder gesichert. Innenminister Armin Schuster wird mit der Aussage zitiert, an zwei Fundorten seien vier Objekte gesichert worden; die Polizei arbeite an der Entschärfung.\n\nDie Berichte verweisen zudem auf ein Bekennerschreiben, aus dem sich die Hinweise ergeben hätten. Außerdem wird auf die laufende Fahndung nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen Bezug genommen. Mehrere Details zum genauen Ort und Ablauf bleiben in den Quellen offen oder werden aus taktischen Gründen nicht genannt.",
+          "analysis": {
+            "story_id": "wt-33e396f2be1a3a1f",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "In Sachsen haben Ermittler bei einem laufenden Einsatz vier verdächtige Objekte an zwei Fundorten gesichert. Die Berichte verknüpfen den Fall mit den jüngsten Angriffen auf Stromleitungen und einer Fahndung nach einem 48-Jährigen.",
+            "detail_summary": "Gesichert ist nach den vorliegenden Berichten, dass die Polizei in Sachsen an zwei Fundorten vier Objekte gesichert hat und diese als Sprengvorrichtungen beziehungsweise verdächtige Vorrichtungen behandelt. Der Bezug zu den Angriffen auf die Stromversorgung wird in den Quellen über ein Bekennerschreiben hergestellt, aus dem sich die Suchmaßnahmen ergeben hätten. Zugleich läuft nach Angaben der Berichte weiter die Fahndung nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen. Für die Wirkungsperspektive ist das relevant, weil ein solcher Fund unmittelbar Sicherheitsaufwand, Schutzmaßnahmen und mögliche Betriebsrisiken an kritischer Infrastruktur erhöht. Mögliche Folgen sind zusätzliche Sperrungen, Entschärfungen, Ermittlungsdruck und ein vorsorglicher Ausbau des Schutzes an Umspannwerken. Offen bleibt in den gelieferten Quellen, wie gefährlich die Objekte tatsächlich waren und ob ein Zusammenhang zwischen allen Vorfällen bereits belastbar belegt ist.",
+            "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Folgekosten für Schutz, Betrieb und öffentliche Sicherheit.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die Berichte betreffen mögliche Gefährdung von Beschäftigten, Einsatzkräften und Versorgungssicherheit an kritischer Infrastruktur."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Indirekt berührt der Fall die Stabilität der Stromversorgung, aber nicht unmittelbar Umwelt- oder Klimapolitik."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Lage betrifft staatliche Sicherheitsfähigkeit und den Schutz kritischer Infrastruktur, ohne dass ein demokratischer Entscheidungsprozess selbst verändert wird."
+            },
+            "importance": "hoch",
+            "impact_potential": "Kurzfristig können Ermittlungen, Entschärfung und Schutzmaßnahmen Ressourcen binden und den Betrieb betroffener Anlagen stören. Mittelbar kann der Fall zu Nachrüstungen und strengeren Sicherheitskonzepten an Energieanlagen führen.",
+            "impact_risks": [
+              "Weitere Einsatz- und Ausfallrisiken an kritischer Infrastruktur",
+              "Zusätzliche Kosten für Sicherung, Ermittlungen und mögliche Nachrüstung"
+            ],
+            "mechanisms": [
+              "Verdächtige Objekte lösen Polizeieinsatz und Entschärfung aus",
+              "Der Bezug zu Stromnetzangriffen erhöht den Druck auf Schutzkonzepte"
+            ],
+            "first_order": [
+              "Einsatzkräfte sichern und prüfen vier Objekte",
+              "Anlagenbetreiber und Behörden müssen Schutzmaßnahmen koordinieren"
+            ],
+            "second_order": [
+              "Mögliche Unterbrechungen oder Verzögerungen im Betrieb kritischer Infrastruktur",
+              "Höherer Aufwand für Überwachung und Gefahrenabwehr"
+            ],
+            "third_order": [
+              "Wahrscheinliche Verschärfung von Sicherheitsstandards an Energieanlagen",
+              "Möglicher Präzedenzdruck für bundesweite Schutzkonzepte"
+            ],
+            "systemic_relevance": "Der Fall betrifft kritische Energieinfrastruktur und damit ein System mit hoher Kaskadenanfälligkeit, weil Störungen an Umspannwerken Versorgung und Sicherheit überregional beeinflussen können.",
+            "transformation_potential": "Der Vorgang kann die Priorität von Schutzinvestitionen und Koordination zwischen Ländern erhöhen, ist aber selbst noch keine strukturelle Reform.",
+            "resilience": "Die Berichte sprechen für hohe Verwundbarkeit einzelner Knoten der Stromversorgung; ob die Systeme widerstandsfähig reagieren, bleibt offen.",
+            "side_effects": [
+              "Mehr Polizeipräsenz und Ermittlungsaufwand",
+              "Mögliche Verunsicherung bei Betreibern und Anwohnern"
+            ],
+            "uncertainties": [
+              "Art und Gefährlichkeit der gesicherten Objekte sind in den Quellen nicht abschließend belegt",
+              "Der genaue Zusammenhang aller Vorfälle bleibt in den Berichten offen"
+            ],
+            "evidence_level": "mehrere Sekundärberichte mit übereinstimmendem Kern, aber ohne unabhängige Primärbelege im gelieferten Material",
+            "attribution": "Die Darstellung folgt den vorliegenden Berichten und den darin zitierten Angaben von Innenminister und Polizei; vollständige Primärbelege liegen hier nicht vor.",
+            "watch_next": [
+              "Polizeiliche Bestätigung zu Art und Entschärfung der Objekte",
+              "Neue Angaben zur Fahndung nach dem Tatverdächtigen",
+              "Hinweise auf Auswirkungen für Umspannwerke und Stromversorgung"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 9, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung bringt neue, sicherheitsrelevante Informationen zu einem laufenden Vorfall an kritischer Energieinfrastruktur; der Kern ist materiell und zeitnah."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v1-claim-1",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "In Sachsen haben Ermittler bei einem laufenden Einsatz an zwei Fundorten vier Objekte gesichert und gehen von Sprengvorrichtungen aus.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+                  "excerpt_hash": "e828f6714a5204958776",
+                  "checked_at": "2026-09-04T19:51:20.503Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "3aaefd9528f05aa6352a",
+                  "checked_at": "2026-09-04T19:51:20.503Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T19:51:20.503Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v1-claim-2",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Die Hinweise auf die Funde in Sachsen ergaben sich nach Angaben von Innenminister Schuster aus einem Bekennerschreiben; die Sicherheitsbehörden stimmen sich mit anderen betroffenen Ländern ab.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+                  "excerpt_hash": "e91b068f3b4ab6d4fc72",
+                  "checked_at": "2026-09-04T19:51:20.503Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "f6e32e42054a520f2627",
+                  "checked_at": "2026-09-04T19:51:20.503Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T19:51:20.503Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v1-claim-3",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Im Zusammenhang mit den Angriffen auf Stromleitungen wird weiterhin nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen gefahndet.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "6cff9b7e9f23b4f2e4c0",
+                  "checked_at": "2026-09-04T19:51:20.503Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "14e72829820aa35d4f8b",
+                  "checked_at": "2026-09-04T19:51:20.503Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T19:51:20.503Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v1-claim-4",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Die Einsatzorte liegen nach den Berichten nördlich von Bautzen beziehungsweise bei Schleife an der Grenze zu Brandenburg.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "1272704882c63936c638",
+                  "checked_at": "2026-09-04T19:51:20.503Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+                  "excerpt_hash": "64e7a720daa226a90435",
+                  "checked_at": "2026-09-04T19:51:20.503Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T19:51:20.503Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
+              "content_hash": "1ef044227fcb95d2a40c12a9431be268cc9c674ac56c69777ae35968925e5954"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
+              "content_hash": "1e3bd273b937dff07ee4bad311922b81b5cce13b8642a227d2130f63fa9ec3c7"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+              "content_hash": "99f5b9110e2ea1f5039d44a77e3d49ebbb45308022c9340b28f9021c20f48480"
+            },
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
+              "content_hash": "3986fe87f717ee86326bbd074a005d005a54b9d8a267cf4e7cc78cab810f4dc4"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+              "content_hash": "5533ce48d63e4f7d1b62c3eb80d504a16c366f92f6439e511111a50fee1729ad"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-05T05:23:56.472Z",
+          "content_hash": "68d152bbecfd0fd6e5e0151f9059c01effc3134f2fd8faf636e02253cafeb45e",
+          "source_summary": "In Sachsen haben Ermittler nach mehreren Angriffen auf das Stromnetz nach eigenen Angaben vier unbekannte Sprengvorrichtungen an zwei Fundorten gesichert. ZDFheute zitiert Innenminister Armin Schuster mit der Aussage, die Polizei arbeite an der Entschärfung; Hinweise hätten sich aus einem Bekennerschreiben ergeben. Zudem verweist der Bericht auf einen europaweit gesuchten 48-Jährigen und auf einen laufenden Einsatz nördlich von Bautzen.\n\nDer MDR meldet parallel einen Polizeieinsatz seit Freitagnachmittag im Wald bei Schleife sowie an der Landesgrenze zu Brandenburg und nördlich von Bautzen. Dort blieb laut MDR offen, wonach die Einsatzkräfte suchten und ob der Einsatz mit den Sabotageakten zusammenhängt. Die Quellen ordnen den Vorgang in eine Serie von Vorfällen an Stromanlagen in Brandenburg, NRW und nun Sachsen ein.",
+          "analysis": {
+            "story_id": "wt-33e396f2be1a3a1f",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "In Sachsen haben Ermittler vier verdächtige Objekte an zwei Fundorten gesichert. Der Fall steht nach den Quellen im Zusammenhang mit den jüngsten Angriffen auf Stromanlagen und einer Fahndung nach einem 48-Jährigen.",
+            "detail_summary": "Gesichert ist vor allem: In Sachsen wurden an zwei Fundorten vier verdächtige Objekte entdeckt, und die Polizei arbeitet laut den Quellen an deren Entschärfung. Der Fall wird von mehreren Redaktionen in den Kontext der jüngsten Angriffe auf Stromanlagen gestellt. Für die Bewertung ist das materiell, weil es um mögliche Anschläge auf kritische Infrastruktur geht, also um Zustände mit potenziell breiter Reichweite und Folgewirkung. Der Wirkpfad reicht von akuter Gefährdung einzelner Anlagen über mögliche Störungen bis zu Sicherheits- und Schutzmaßnahmen an weiteren Standorten. Offen bleibt, ob alle gesicherten Objekte tatsächlich funktionsfähig, gleichartig oder bereits entschärft waren. Ebenfalls offen ist der exakte Zusammenhang zwischen den sächsischen Funden, dem Bekennerschreiben und der europaweiten Fahndung. Die Beleglage trägt eine belastbare Erstmeldung, aber noch keine abgeschlossene Einordnung der Kausalität.",
+            "why_relevant": "Der Vorgang betrifft potenziell kritische Energieinfrastruktur und damit Sicherheits-, Versorgungs- und Schutzfragen mit möglicher Breitenwirkung.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Mögliche Gefährdung von Menschen, Einsatzkräften und Versorgungssicherheit durch verdächtige Objekte an Stromanlagen."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen; ein indirekter Bezug bleibt offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Vorfall berührt Schutz und Resilienz kritischer Infrastruktur sowie die staatliche Sicherheitsantwort."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Auswirkungen reichen von lokalen Einsatz- und Entschärfungsfolgen bis zu zusätzlichen Schutzmaßnahmen an Stromanlagen und einer breiteren Sicherheitslage für kritische Infrastruktur.",
+            "impact_risks": [
+              "Kurzfristige Gefährdung von Anlagen und Einsatzkräften",
+              "Störungen oder Schutzaufwand an weiteren Standorten",
+              "Vertrauens- und Sicherheitsfolgen bei kritischer Infrastruktur"
+            ],
+            "mechanisms": [
+              "Entdeckung und Sicherung verdächtiger Objekte",
+              "polizeiliche Entschärfung und Fahndung",
+              "verstärkte Schutz- und Ermittlungsmaßnahmen an Stromanlagen"
+            ],
+            "first_order": [
+              "Sicherungs- und Entschärfungseinsatz vor Ort",
+              "Fahndung nach dem gesuchten Verdächtigen"
+            ],
+            "second_order": [
+              "zusätzliche Schutzmaßnahmen für weitere Anlagen",
+              "höherer Ermittlungs- und Koordinationsaufwand"
+            ],
+            "third_order": [
+              "mögliche Anpassungen bei Sicherungskonzepten kritischer Infrastruktur"
+            ],
+            "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant; selbst begrenzte Vorfälle können Vorsorge-, Schutz- und Resilienzmaßnahmen anstoßen.",
+            "transformation_potential": "Kein unmittelbarer Transformationsfall, aber möglicher Impuls für nachgeschärfte Sicherheitsstandards und Koordination bei kritischer Infrastruktur.",
+            "resilience": "Die Ereignisse testen die Resilienz von Strominfrastruktur und Sicherheitsbehörden; belastbare Schlüsse zur Wirksamkeit der Systeme sind noch offen.",
+            "side_effects": [
+              "Einsatzbindung von Polizei und Spezialkräften",
+              "mögliche Verunsicherung in betroffenen Regionen"
+            ],
+            "uncertainties": [
+              "Art und Gefährlichkeit der Objekte sind nicht abschließend belegt",
+              "Der Zusammenhang aller Vorfälle bleibt offen",
+              "Unabhängige Bestätigung der Einzelangaben liegt hier nicht vor"
+            ],
+            "evidence_level": "mehrere berichtende Quellen, aber keine vorliegende Primärquelle; Bestätigung einzelner Kernaussagen bleibt sekundär",
+            "attribution": "Die Angaben stammen aus den gelieferten Berichten und werden teils Innenminister und Ermittlern zugeschrieben; unabhängige Primärbelege fehlen in der Akte.",
+            "watch_next": [
+              "Bestätigung von Art und Gefährlichkeit der gesicherten Objekte",
+              "offizielle Angaben zur Entschärfung",
+              "neue Informationen zur Fahndung nach dem 48-Jährigen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7",
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, aktuell relevante Meldung zu verdächtigen Objekten an kritischer Energieinfrastruktur; die Beleglage trägt eine vorsichtige Erstmeldung."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-1",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "In Sachsen haben Ermittler an zwei Fundorten vier verdächtige Objekte gesichert.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "c708a4fa81401243ea46",
+                  "checked_at": "2026-09-05T05:23:56.472Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T05:23:56.472Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-2",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Die Polizei arbeitet nach Angaben von Innenminister Schuster an der Entschärfung der in Sachsen gefundenen Objekte.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "ccb14351117ccb3019e7",
+                  "checked_at": "2026-09-05T05:23:56.472Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T05:23:56.472Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-3",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Die Fundorte liegen in der Nähe von zwei Umspannwerken; ein Polizeieinsatz läuft weiter.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "3aaefd9528f05aa6352a",
+                  "checked_at": "2026-09-05T05:23:56.472Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T05:23:56.472Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-4",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Die Ermittler suchen europaweit nach einem 48-jährigen Tatverdächtigen, der mit den Vorfällen in Verbindung gebracht wird.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "6cff9b7e9f23b4f2e4c0",
+                  "checked_at": "2026-09-05T05:23:56.472Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T05:23:56.472Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-5",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Nach Angaben des MDR wurde im Wald bei Schleife und an der Landesgrenze zu Brandenburg ein Polizeieinsatz beobachtet, dessen Zusammenhang offen blieb.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+                  "excerpt_hash": "4e6ca412a60f9a193553",
+                  "checked_at": "2026-09-05T05:23:56.472Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "f04524f948ac641e0f91",
+                  "checked_at": "2026-09-05T05:23:56.472Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T05:23:56.472Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
+              "content_hash": "1ef044227fcb95d2a40c12a9431be268cc9c674ac56c69777ae35968925e5954"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
+              "content_hash": "1e3bd273b937dff07ee4bad311922b81b5cce13b8642a227d2130f63fa9ec3c7"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+              "content_hash": "99f5b9110e2ea1f5039d44a77e3d49ebbb45308022c9340b28f9021c20f48480"
+            },
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
+              "content_hash": "3986fe87f717ee86326bbd074a005d005a54b9d8a267cf4e7cc78cab810f4dc4"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+              "content_hash": "5533ce48d63e4f7d1b62c3eb80d504a16c366f92f6439e511111a50fee1729ad"
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-05T07:06:38.447Z",
+          "content_hash": "900374b0f19bc967cf64fedaf83e978dcc0238c2f330cbe13730846469d6b4aa",
+          "source_summary": "Nach mehreren Angriffen auf das Stromnetz meldeten Medien am Freitag einen Polizeieinsatz in Sachsen. Innenminister Armin Schuster sagte, die Hinweise auf Sabotage hätten sich aus einem Bekennerschreiben ergeben; die Polizei habe daraufhin Suchmaßnahmen eingeleitet.\n\nIn den Berichten heißt es, die Polizeikräfte hätten an zwei Fundorten vier Objekte gesichert. Zugleich wurde auf einen großen Einsatz nördlich von Bautzen und auf eine Suche im Wald bei Schleife verwiesen. Mehrere Quellen berichten außerdem, dass weiter nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen gefahndet werde. Zu Art und Gefährlichkeit der Gegenstände blieben die Behörden zunächst zurückhaltend.",
+          "analysis": {
+            "story_id": "wt-33e396f2be1a3a1f",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Ermittler haben in Sachsen vier gesicherte Objekte an zwei Fundorten gemeldet. Parallel läuft weiter die Fahndung nach einem 48-jährigen Verdächtigen aus Nordrhein-Westfalen.",
+            "detail_summary": "Bestbelegt ist derzeit, dass die Polizei in Sachsen an zwei Fundorten vier Objekte gesichert hat und der Einsatz im Umfeld der jüngsten Stromnetz-Sabotage steht. Innenminister Schuster ordnete die Ermittlungen über ein Bekennerschreiben und sofort eingeleitete Suchmaßnahmen ein. Mehrere Medien berichten außerdem von einer laufenden Fahndung nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen. Für die Einordnung ist wichtig: Gesichert ist damit ein polizeilicher Einsatz mit möglichem Bezug zu den früheren Vorfällen, nicht abschließend die Gefährlichkeit oder genaue Herkunft der Objekte. Materiell relevant ist das, weil es um kritische Energieinfrastruktur, Sicherheitslage und mögliche Folgeeinsätze geht. Offen bleibt, ob und wie direkt die Funde mit den Sabotageakten verbunden sind.",
+            "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Sicherheitsfolgen über Sachsen hinaus.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Der Vorgang betrifft öffentliche Sicherheit, mögliche Gefährdung an kritischer Infrastruktur und eine laufende Fahndung."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umwelt- oder Klimawirkpfad."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Relevant sind staatliche Schutzfähigkeit, Informationslage der Behörden und die Korrekturfähigkeit im Sicherheitsfall."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Auswirkungen liegen vor allem in zusätzlicher Gefahrenabwehr, Schutzmaßnahmen an Strominfrastruktur und erhöhter Belastung von Polizei und Betreibern.",
+            "impact_risks": [
+              "Weitere Funde oder Verdachtsmomente können Sicherheitsmaßnahmen ausweiten.",
+              "Unklare Lage kann Unsicherheit bei Betreibern und Öffentlichkeit verstärken."
+            ],
+            "mechanisms": [
+              "Sicherungs- und Entschärfungsmaßnahmen an potenziell gefährlichen Objekten.",
+              "Ermittlungs- und Fahndungsdruck rund um Sabotage an kritischer Infrastruktur."
+            ],
+            "first_order": [
+              "Polizeieinsatz und Absperrungen an den Fundorten.",
+              "Fortgesetzte Fahndung nach dem Verdächtigen."
+            ],
+            "second_order": [
+              "Mögliche Nachrüstungen und zusätzliche Schutzmaßnahmen an Stromanlagen.",
+              "Höherer Koordinationsbedarf zwischen Ländern und Sicherheitsbehörden."
+            ],
+            "third_order": [
+              "Wenn sich ein Muster bestätigt, kann das die Sicherheitsarchitektur für kritische Infrastruktur beeinflussen."
+            ],
+            "systemic_relevance": "Die Meldung berührt die Resilienz der Stromversorgung und damit ein System mit breiten Folgewirkungen für Versorgung, Wirtschaft und Sicherheit.",
+            "transformation_potential": "Kurzfristig gering bis mittel; strukturell könnte der Fall Debatten über Schutzstandards für kritische Infrastruktur verstärken.",
+            "resilience": "Relevant für die Frage, wie schnell Behörden und Betreiber auf wiederholte Sabotagehinweise reagieren können.",
+            "side_effects": [
+              "Mehr Kontroll- und Sicherungsaufwand.",
+              "Mögliche Verunsicherung in betroffenen Regionen."
+            ],
+            "uncertainties": [
+              "Art und Gefährlichkeit der gesicherten Objekte sind nicht abschließend belegt.",
+              "Der genaue Zusammenhang aller Vorfälle bleibt offen.",
+              "Die Quellenlage ist derzeit vor allem sekundär und teilweise gemeinsam geprägt."
+            ],
+            "evidence_level": "mehrere Sekundärquellen mit übereinstimmendem Kern, aber ohne unabhängigen Originalbeleg für alle Details",
+            "attribution": "Die Kerndaten stammen aus journalistischen Berichten; Behördenaussagen werden in diesen Berichten wiedergegeben.",
+            "watch_next": [
+              "Ob die Polizei weitere Details zu den Objekten nennt.",
+              "Ob die Fahndung nach dem Verdächtigen neue Belastungspunkte bringt.",
+              "Ob Behörden den Zusammenhang zu den Stromnetz-Angriffen konkretisieren."
+            ],
+            "reference_frameworks": [
+              "SDG 7",
+              "SDG 9",
+              "SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Die neue Meldung ergänzt die laufende Fahndung um konkrete Funde an zwei Orten und betrifft kritische Infrastruktur; der Kern ist zwar nur sekundär belegt, aber materiell neu."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "gesicherte Objekte",
+                  "value": "vier",
+                  "unit": "Objekte",
+                  "context": "An zwei Fundorten gesicherte Gegenstände",
+                  "claim_id": "wt-33e396f2be1a3a1f-claim-01"
+                },
+                {
+                  "label": "Fundorte",
+                  "value": "zwei",
+                  "unit": "Fundorte",
+                  "context": "Polizeikräfte sicherten an zwei Orten",
+                  "claim_id": "wt-33e396f2be1a3a1f-claim-01"
+                },
+                {
+                  "label": "Tatverdächtiger",
+                  "value": "48-jährigen",
+                  "unit": "Jahre",
+                  "context": "Fahndung nach dem Verdächtigen",
+                  "claim_id": "wt-33e396f2be1a3a1f-claim-03"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "haushalte"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v3-claim-1",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "In Sachsen haben Ermittler an zwei Fundorten vier Objekte gesichert.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "c708a4fa81401243ea46",
+                  "checked_at": "2026-09-05T07:06:38.447Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T07:06:38.447Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v3-claim-2",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Die Hinweise auf Sabotage ergaben sich laut Innenminister aus einem Bekennerschreiben; danach begannen sofort Suchmaßnahmen.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "f6e32e42054a520f2627",
+                  "checked_at": "2026-09-05T07:06:38.447Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T07:06:38.447Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v3-claim-3",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Die Polizei fahndet weiter nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "d39c0503042e4dfa62f1",
+                  "checked_at": "2026-09-05T07:06:38.447Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T07:06:38.447Z"
+            },
+            {
+              "claim_id": "wt-33e396f2be1a3a1f-v3-claim-4",
+              "story_id": "wt-33e396f2be1a3a1f",
+              "claim": "Die Polizeidirektion Görlitz bestätigte einen großen Einsatz nördlich von Bautzen, nannte aber keine weiteren Details.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+                  "excerpt_hash": "1272704882c63936c638",
+                  "checked_at": "2026-09-05T07:06:38.447Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T07:06:38.447Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
+              "content_hash": "1ef044227fcb95d2a40c12a9431be268cc9c674ac56c69777ae35968925e5954"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
+              "content_hash": "1e3bd273b937dff07ee4bad311922b81b5cce13b8642a227d2130f63fa9ec3c7"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+              "content_hash": "99f5b9110e2ea1f5039d44a77e3d49ebbb45308022c9340b28f9021c20f48480"
+            },
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
+              "content_hash": "3986fe87f717ee86326bbd074a005d005a54b9d8a267cf4e7cc78cab810f4dc4"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+              "content_hash": "5533ce48d63e4f7d1b62c3eb80d504a16c366f92f6439e511111a50fee1729ad"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-lausitz-100.html",
+              "content_hash": "b79f6a27d19f0d590edf9ef72d2374c907fbf01dec549f874bdd0fcada80ed71"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T19:51:20.503Z",
+          "source_count": 5
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-05T05:23:56.472Z",
+          "source_count": 5
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-05T07:06:38.447Z",
+          "source_count": 6
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-011eb9799d5c2215",
+      "slug": "sachsen-anhalt-news-zur-landtagswahl-bildungsministerin-prien-kritisiert-afd-plan-zur-ab-5c2215",
+      "title": "Sachsen-Anhalt - News zur Landtagswahl: Bildungsministerin Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht",
+      "first_seen": "2026-09-05T06:00:00.000Z",
+      "last_updated": "2026-09-05T06:56:20.000Z",
+      "topic": [
+        "Politik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/politik/deutschland/sachsen-anhalt-news-zur-landtagswahl-ulrich-siegmund-30-minuten-im-kinderkanal-a-8af9f291-616e-434b-a66d-96ba47b9990a",
+          "title": "Sachsen-Anhalt - News zur Landtagswahl: Bildungsministerin Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht",
+          "summary": "»Die Schulpflicht aufzugeben, wäre gesellschaftspolitisch eine Katastrophe«, sagt Bundesbildungsministerin Prien und warnt vor dem Vorhaben der AfD in Sachsen-Anhalt. Und: Politiker sehen kritische Infrastruktur gefährdet. Das News-Update.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T06:00:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "5bc2256b18e74a83bcd7c51cac7c79e58b9e20cdaa577cdd01b0bbd651008965",
+          "source_item_id": "4138a4ca7adcad93a18d5967347c525cf11213f6699eee8e894afa63428099dc",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T06:00:00.000Z",
+          "ingested_at": "2026-09-05T07:06:05.017Z",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/liveblog/wahl-in-sachsen-anhalt-prien-kritisiert-afd-plan-zur-abschaffung-der-schulpflicht-16008484.html",
+          "title": "Wahl in Sachsen-Anhalt: Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht",
+          "summary": "IW-Chef warnt bei AfD-Erfolg vor „ruinöser“ Zuwanderungspolitik + Wahlforscher erwarten keine Überraschung wie 2021 + Tausende zu Kundgebungen vor Wahl erwartet +",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T06:56:20.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "c180d5da24b6d7a553743b812dbaee53d5cbebcd11c17c3425a4178426ffd493",
+          "source_item_id": "eceb1f62ea5520f1b08ce1ecdf334a53bae80e04fbcdb69358d92fa564a3a05b",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T06:56:20.000Z",
+          "ingested_at": "2026-09-05T07:06:05.017Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-011eb9799d5c2215-claim-01",
+          "story_id": "wt-011eb9799d5c2215",
+          "claim": "Sachsen-Anhalt - News zur Landtagswahl: Bildungsministerin Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht: »Die Schulpflicht aufzugeben, wäre gesellschaftspolitisch eine Katastrophe«, sagt Bundesbildungsministerin Prien und warnt vor dem Vorhaben der AfD in Sachsen-Anhalt. Und: Politiker sehen kritische Infrastruktur gefährdet. Das News-Update.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T07:06:05.017Z"
+        },
+        {
+          "claim_id": "wt-011eb9799d5c2215-claim-02",
+          "story_id": "wt-011eb9799d5c2215",
+          "claim": "Wahl in Sachsen-Anhalt: Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht: IW-Chef warnt bei AfD-Erfolg vor „ruinöser“ Zuwanderungspolitik + Wahlforscher erwarten keine Überraschung wie 2021 + Tausende zu Kundgebungen vor Wahl erwartet +",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T07:06:05.017Z"
+        }
+      ],
+      "content_hash": "d3eeb66c8b059a1002f2f6239f47798b4a5173c24aafc488e54216e2894f554e",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T07:06:05.017Z",
+      "event_first_seen_at": "2026-09-05T06:06:13.174Z",
+      "event_detected_at": "2026-09-05T06:06:13.174Z",
+      "event_id": "event-43d3997a8fe20877edd8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.750283333333334,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 59.86405,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T07:06:05.017Z",
+      "rejection": {
+        "at": "2026-09-05T07:06:05.017Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-00fccb632042b492",
       "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
@@ -1723,8 +3441,131 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-05T06:40:30.152Z",
         "status": "fallback",
-        "fallback_reason": "HIGGSFIELD_TIMEOUT",
-        "retry_after": "2026-09-05T06:55:30.152Z"
+        "fallback_reason": "HIGGSFIELD_JOB_RETRY_WAIT",
+        "retry_after": "2026-09-05T07:22:58.097Z"
+      }
+    },
+    {
+      "story_id": "wt-8719fd142c6ac6b1",
+      "slug": "krieg-mit-russland-den-schwachpunkt-sieht-putin-in-deutschland-6ac6b1",
+      "title": "Krieg mit Russland: „Den Schwachpunkt sieht Putin in Deutschland“",
+      "first_seen": "2026-09-05T06:36:05.000Z",
+      "last_updated": "2026-09-05T06:36:05.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/putins-hybrider-krieg-deutschland/100251717.html",
+          "title": "Krieg mit Russland: „Den Schwachpunkt sieht Putin in Deutschland“",
+          "summary": "Die Bundesregierung ändert ihren Russland-Kurs. Ein historischer Einschnitt, findet der Chef der Münchner Sicherheitskonferenz Wolfgang Ischinger.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T06:36:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "787df6fb7c3310751feab1ed24ecf75bddc5f65e06c0092d0eb82acecbf489e1",
+          "source_item_id": "c9faf00cd3217b2521c41337663c24c8514b75937764851154c9881f8e989d3d",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T06:36:05.000Z",
+          "ingested_at": "2026-09-05T07:06:05.017Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-8719fd142c6ac6b1-claim-01",
+          "story_id": "wt-8719fd142c6ac6b1",
+          "claim": "Krieg mit Russland: „Den Schwachpunkt sieht Putin in Deutschland“: Die Bundesregierung ändert ihren Russland-Kurs. Ein historischer Einschnitt, findet der Chef der Münchner Sicherheitskonferenz Wolfgang Ischinger.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T07:06:05.017Z"
+        }
+      ],
+      "content_hash": "86872d3f2eba666334cb4381b94ed74b9fcd6aeabcba8880da4e9148140c4701",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T07:06:05.017Z",
+      "event_first_seen_at": "2026-09-05T07:06:05.017Z",
+      "event_detected_at": "2026-09-05T07:06:05.017Z",
+      "event_id": "event-d4da0884dd3fe97a0fe2",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 30.000283333333332,
+        "detection_delay_minutes": 30.000283333333332,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T07:06:05.017Z",
+      "rejection": {
+        "at": "2026-09-05T07:06:05.017Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -2584,7 +4425,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:51:33.859Z"
+          "checked_at": "2026-09-05T07:06:05.017Z"
         },
         {
           "claim_id": "wt-f64d1091d30ae1c3-claim-02",
@@ -2604,21 +4445,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:51:33.859Z"
+          "checked_at": "2026-09-05T07:06:05.017Z"
         }
       ],
       "content_hash": "05038e50d58e24ac4226582c128e5b993999a1ffda125212f7c5563821ac14db",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_PROVIDER_ERROR:429"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 1,
-      "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_PROVIDER_UNAVAILABLE",
       "versions": [],
-      "updated_at": "2026-09-05T06:51:33.859Z",
+      "updated_at": "2026-09-05T07:06:05.017Z",
       "event_first_seen_at": "2026-09-05T03:36:37.809Z",
       "event_detected_at": "2026-09-05T03:36:37.809Z",
       "event_id": "event-2a11859714a91482f648",
@@ -2649,14 +4488,26 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 31.980983333333334,
+        "source_age_minutes": 46.500283333333336,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 194.93416666666667,
+        "queue_age_minutes": 209.45346666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 90,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T07:06:05.017Z",
+      "rejection": {
+        "at": "2026-09-05T07:06:05.017Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -3706,131 +5557,6 @@
         }
       ],
       "retirement_history": []
-    },
-    {
-      "story_id": "wt-011eb9799d5c2215",
-      "slug": "sachsen-anhalt-news-zur-landtagswahl-bildungsministerin-prien-kritisiert-afd-plan-zur-ab-5c2215",
-      "title": "Sachsen-Anhalt - News zur Landtagswahl: Bildungsministerin Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht",
-      "first_seen": "2026-09-05T06:00:00.000Z",
-      "last_updated": "2026-09-05T06:00:00.000Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "spiegel-schlagzeilen",
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/politik/deutschland/sachsen-anhalt-news-zur-landtagswahl-ulrich-siegmund-30-minuten-im-kinderkanal-a-8af9f291-616e-434b-a66d-96ba47b9990a",
-          "title": "Sachsen-Anhalt - News zur Landtagswahl: Bildungsministerin Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht",
-          "summary": "»Die Schulpflicht aufzugeben, wäre gesellschaftspolitisch eine Katastrophe«, sagt Bundesbildungsministerin Prien und warnt vor dem Vorhaben der AfD in Sachsen-Anhalt. Und: Politiker sehen kritische Infrastruktur gefährdet. Das News-Update.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T06:00:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "5bc2256b18e74a83bcd7c51cac7c79e58b9e20cdaa577cdd01b0bbd651008965",
-          "source_item_id": "4138a4ca7adcad93a18d5967347c525cf11213f6699eee8e894afa63428099dc",
-          "publisher_id": "spiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T06:00:00.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:spiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-011eb9799d5c2215-claim-01",
-          "story_id": "wt-011eb9799d5c2215",
-          "claim": "Sachsen-Anhalt - News zur Landtagswahl: Bildungsministerin Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht: »Die Schulpflicht aufzugeben, wäre gesellschaftspolitisch eine Katastrophe«, sagt Bundesbildungsministerin Prien und warnt vor dem Vorhaben der AfD in Sachsen-Anhalt. Und: Politiker sehen kritische Infrastruktur gefährdet. Das News-Update.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "spiegel-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:spiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        }
-      ],
-      "content_hash": "68a82587690da655b1d3f01ea7bce97a7165532aef56e49ee9e012e63deab847",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T06:06:13.174Z",
-      "event_first_seen_at": "2026-09-05T06:06:13.174Z",
-      "event_detected_at": "2026-09-05T06:06:13.174Z",
-      "event_id": "event-43d3997a8fe20877edd8",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 36,
-        "public_relevance": "mittel",
-        "topics": [
-          "Politik"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Infrastruktur oder Versorgungskapazität"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 6.219566666666666,
-        "detection_delay_minutes": 6.219566666666666,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T06:06:13.174Z",
-      "rejection": {
-        "at": "2026-09-05T06:06:13.174Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
     },
     {
       "story_id": "wt-5072789df611867b",
@@ -5801,870 +7527,6 @@
           "AI_MATERIALITY_TOO_LOW"
         ]
       }
-    },
-    {
-      "story_id": "wt-33e396f2be1a3a1f",
-      "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
-      "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-      "first_seen": "2026-09-04T18:13:49.000Z",
-      "last_updated": "2026-09-05T05:23:56.472Z",
-      "published_at": "2026-09-04T19:51:20.503Z",
-      "updated_at": "2026-09-05T05:23:56.472Z",
-      "topic": [
-        "Energie",
-        "Arbeit",
-        "Wirtschaft",
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
-          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-          "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:13:49.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "1ef044227fcb95d2a40c12a9431be268cc9c674ac56c69777ae35968925e5954",
-          "source_item_id": "80c246f10722e36049de20d5ebd90360a95abbdc539be494b0302c4c0ceb129a",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T18:13:49.000Z",
-          "ingested_at": "2026-09-04T18:21:48.041Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
-          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-          "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:15:11.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "1e3bd273b937dff07ee4bad311922b81b5cce13b8642a227d2130f63fa9ec3c7",
-          "source_item_id": "34bc122b9bf74bebeafd71643d3d0ea7952826caa0d370a81e707a8b8fac1163",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T18:15:11.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-          "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
-          "summary": "Nach mehreren Angriffen auf das Stromnetz haben Ermittler nun auch in Sachsen Sprengvorrichtungen entdeckt. Die Polizei arbeite an der Entschärfung, so Innenminister Schuster.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:28:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "99f5b9110e2ea1f5039d44a77e3d49ebbb45308022c9340b28f9021c20f48480",
-          "source_item_id": "641fb9a25b26f3aee7a02df887e0f1070210b4e401ec1e1147b35bbdfe15d256",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:28:00.000Z",
-          "ingested_at": "2026-09-05T05:21:05.955Z",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
-          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt – NRW-Verdächtiger flüchtig",
-          "summary": "Mithilfe eines Bekennerschreibens fand die Polizei Sprengsätze nahe Bautzen. Der Verdächtige in NRW konnte bislang nicht gefasst werden.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:30:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "3986fe87f717ee86326bbd074a005d005a54b9d8a267cf4e7cc78cab810f4dc4",
-          "source_item_id": "7a90981849bb892e3da69556ce80d4355980593b98ee6c37d30011b10bfd1f4b",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T18:30:00.000Z",
-          "ingested_at": "2026-09-05T05:21:05.955Z",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-          "title": "Innenminister Schuster: \"Sprengvorrichtungen\" auch in Sachsen entdeckt",
-          "summary": "Seit Freitagnachmittag sind Polizisten im Wald bei Schleife und an der Landesgrenze zu Brandenburg und nördlich von Bautzen ab. Was ist da los?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:27:06.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "5533ce48d63e4f7d1b62c3eb80d504a16c366f92f6439e511111a50fee1729ad",
-          "source_item_id": "7160b03b5718132dc117454643d3b54d80b051e9f3be8c840357c76b559f485d",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T18:27:06.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-33e396f2be1a3a1f-v2-claim-1",
-          "story_id": "wt-33e396f2be1a3a1f",
-          "claim": "In Sachsen haben Ermittler an zwei Fundorten vier verdächtige Objekte gesichert.",
-          "status": "single_source_claim",
-          "source_id": "zdfheute-nachrichten",
-          "evidence": [
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-              "excerpt_hash": "c708a4fa81401243ea46",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T05:23:56.472Z"
-        },
-        {
-          "claim_id": "wt-33e396f2be1a3a1f-v2-claim-2",
-          "story_id": "wt-33e396f2be1a3a1f",
-          "claim": "Die Polizei arbeitet nach Angaben von Innenminister Schuster an der Entschärfung der in Sachsen gefundenen Objekte.",
-          "status": "single_source_claim",
-          "source_id": "zdfheute-nachrichten",
-          "evidence": [
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-              "excerpt_hash": "ccb14351117ccb3019e7",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T05:23:56.472Z"
-        },
-        {
-          "claim_id": "wt-33e396f2be1a3a1f-v2-claim-3",
-          "story_id": "wt-33e396f2be1a3a1f",
-          "claim": "Die Fundorte liegen in der Nähe von zwei Umspannwerken; ein Polizeieinsatz läuft weiter.",
-          "status": "single_source_claim",
-          "source_id": "zdfheute-nachrichten",
-          "evidence": [
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-              "excerpt_hash": "3aaefd9528f05aa6352a",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T05:23:56.472Z"
-        },
-        {
-          "claim_id": "wt-33e396f2be1a3a1f-v2-claim-4",
-          "story_id": "wt-33e396f2be1a3a1f",
-          "claim": "Die Ermittler suchen europaweit nach einem 48-jährigen Tatverdächtigen, der mit den Vorfällen in Verbindung gebracht wird.",
-          "status": "single_source_claim",
-          "source_id": "zdfheute-nachrichten",
-          "evidence": [
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-              "excerpt_hash": "6cff9b7e9f23b4f2e4c0",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T05:23:56.472Z"
-        },
-        {
-          "claim_id": "wt-33e396f2be1a3a1f-v2-claim-5",
-          "story_id": "wt-33e396f2be1a3a1f",
-          "claim": "Nach Angaben des MDR wurde im Wald bei Schleife und an der Landesgrenze zu Brandenburg ein Polizeieinsatz beobachtet, dessen Zusammenhang offen blieb.",
-          "status": "single_source_claim",
-          "source_id": "mdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-              "excerpt_hash": "4e6ca412a60f9a193553",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-              "excerpt_hash": "f04524f948ac641e0f91",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T05:23:56.472Z"
-        }
-      ],
-      "event_id": "event-b3909a98d9ba9b7edf64",
-      "event_first_seen_at": "2026-09-04T18:21:48.041Z",
-      "event_detected_at": "2026-09-04T18:21:48.041Z",
-      "verification_started_at": "2026-09-05T05:23:42.568Z",
-      "publish_ready_at": "2026-09-05T05:23:56.472Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-05T10:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "wiwo-schlagzeilen"
-          ],
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 4,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die gesicherten Objekte tatsächlich entschärft werden und welche Sprengwirkung sie haben, soll die Polizei später präzisieren.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Bestätigung zu Entschärfung, Art und Gefährlichkeit der Objekte",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-596c5c287d66ce50",
-          "announced_at": "2026-09-04T19:28:00.000Z",
-          "follow_up_date": "2026-09-11T19:51:20.503Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "68d152bbecfd0fd6e5e0151f9059c01effc3134f2fd8faf636e02253cafeb45e",
-      "published": true,
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-aca6888da178b3ac-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "aca6888da178b3ac9443cf397ef6397e23b3fb6dd5beef70ee496f4ee2afa088"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-a7f4366a5d6a9fc2-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "a7f4366a5d6a9fc2eeef1df7eab8d72497a27d7094019a6b3c7b2a414208d871"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-e2c41fab14e0acf8-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "e2c41fab14e0acf8c6d06edfd4a336db432c28c58db6e24b2a9e9b3521568b6c"
-        },
-        "source_visual": null,
-        "fingerprint": "31d66384a0bd7e90cccf73fb3cba1c887bdf2577909b9db5c8c7ec20eb4c2dab",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-05T05:24:48.357Z",
-        "status": "generated"
-      },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 2,
-      "source_summary": "In Sachsen haben Ermittler nach mehreren Angriffen auf das Stromnetz nach eigenen Angaben vier unbekannte Sprengvorrichtungen an zwei Fundorten gesichert. ZDFheute zitiert Innenminister Armin Schuster mit der Aussage, die Polizei arbeite an der Entschärfung; Hinweise hätten sich aus einem Bekennerschreiben ergeben. Zudem verweist der Bericht auf einen europaweit gesuchten 48-Jährigen und auf einen laufenden Einsatz nördlich von Bautzen.\n\nDer MDR meldet parallel einen Polizeieinsatz seit Freitagnachmittag im Wald bei Schleife sowie an der Landesgrenze zu Brandenburg und nördlich von Bautzen. Dort blieb laut MDR offen, wonach die Einsatzkräfte suchten und ob der Einsatz mit den Sabotageakten zusammenhängt. Die Quellen ordnen den Vorgang in eine Serie von Vorfällen an Stromanlagen in Brandenburg, NRW und nun Sachsen ein.",
-      "analysis": {
-        "story_id": "wt-33e396f2be1a3a1f",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "In Sachsen haben Ermittler vier verdächtige Objekte an zwei Fundorten gesichert. Der Fall steht nach den Quellen im Zusammenhang mit den jüngsten Angriffen auf Stromanlagen und einer Fahndung nach einem 48-Jährigen.",
-        "detail_summary": "Gesichert ist vor allem: In Sachsen wurden an zwei Fundorten vier verdächtige Objekte entdeckt, und die Polizei arbeitet laut den Quellen an deren Entschärfung. Der Fall wird von mehreren Redaktionen in den Kontext der jüngsten Angriffe auf Stromanlagen gestellt. Für die Bewertung ist das materiell, weil es um mögliche Anschläge auf kritische Infrastruktur geht, also um Zustände mit potenziell breiter Reichweite und Folgewirkung. Der Wirkpfad reicht von akuter Gefährdung einzelner Anlagen über mögliche Störungen bis zu Sicherheits- und Schutzmaßnahmen an weiteren Standorten. Offen bleibt, ob alle gesicherten Objekte tatsächlich funktionsfähig, gleichartig oder bereits entschärft waren. Ebenfalls offen ist der exakte Zusammenhang zwischen den sächsischen Funden, dem Bekennerschreiben und der europaweiten Fahndung. Die Beleglage trägt eine belastbare Erstmeldung, aber noch keine abgeschlossene Einordnung der Kausalität.",
-        "why_relevant": "Der Vorgang betrifft potenziell kritische Energieinfrastruktur und damit Sicherheits-, Versorgungs- und Schutzfragen mit möglicher Breitenwirkung.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Gefährdung von Menschen, Einsatzkräften und Versorgungssicherheit durch verdächtige Objekte an Stromanlagen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen; ein indirekter Bezug bleibt offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Vorfall berührt Schutz und Resilienz kritischer Infrastruktur sowie die staatliche Sicherheitsantwort."
-        },
-        "importance": "hoch",
-        "impact_potential": "Mögliche Auswirkungen reichen von lokalen Einsatz- und Entschärfungsfolgen bis zu zusätzlichen Schutzmaßnahmen an Stromanlagen und einer breiteren Sicherheitslage für kritische Infrastruktur.",
-        "impact_risks": [
-          "Kurzfristige Gefährdung von Anlagen und Einsatzkräften",
-          "Störungen oder Schutzaufwand an weiteren Standorten",
-          "Vertrauens- und Sicherheitsfolgen bei kritischer Infrastruktur"
-        ],
-        "mechanisms": [
-          "Entdeckung und Sicherung verdächtiger Objekte",
-          "polizeiliche Entschärfung und Fahndung",
-          "verstärkte Schutz- und Ermittlungsmaßnahmen an Stromanlagen"
-        ],
-        "first_order": [
-          "Sicherungs- und Entschärfungseinsatz vor Ort",
-          "Fahndung nach dem gesuchten Verdächtigen"
-        ],
-        "second_order": [
-          "zusätzliche Schutzmaßnahmen für weitere Anlagen",
-          "höherer Ermittlungs- und Koordinationsaufwand"
-        ],
-        "third_order": [
-          "mögliche Anpassungen bei Sicherungskonzepten kritischer Infrastruktur"
-        ],
-        "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant; selbst begrenzte Vorfälle können Vorsorge-, Schutz- und Resilienzmaßnahmen anstoßen.",
-        "transformation_potential": "Kein unmittelbarer Transformationsfall, aber möglicher Impuls für nachgeschärfte Sicherheitsstandards und Koordination bei kritischer Infrastruktur.",
-        "resilience": "Die Ereignisse testen die Resilienz von Strominfrastruktur und Sicherheitsbehörden; belastbare Schlüsse zur Wirksamkeit der Systeme sind noch offen.",
-        "side_effects": [
-          "Einsatzbindung von Polizei und Spezialkräften",
-          "mögliche Verunsicherung in betroffenen Regionen"
-        ],
-        "uncertainties": [
-          "Art und Gefährlichkeit der Objekte sind nicht abschließend belegt",
-          "Der Zusammenhang aller Vorfälle bleibt offen",
-          "Unabhängige Bestätigung der Einzelangaben liegt hier nicht vor"
-        ],
-        "evidence_level": "mehrere berichtende Quellen, aber keine vorliegende Primärquelle; Bestätigung einzelner Kernaussagen bleibt sekundär",
-        "attribution": "Die Angaben stammen aus den gelieferten Berichten und werden teils Innenminister und Ermittlern zugeschrieben; unabhängige Primärbelege fehlen in der Akte.",
-        "watch_next": [
-          "Bestätigung von Art und Gefährlichkeit der gesicherten Objekte",
-          "offizielle Angaben zur Entschärfung",
-          "neue Informationen zur Fahndung nach dem 48-Jährigen"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 7",
-          "Agenda 2030/SDG 16"
-        ],
-        "publication_gate": {
-          "news_value": "new_evidence",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Neue, aktuell relevante Meldung zu verdächtigen Objekten an kritischer Energieinfrastruktur; die Beleglage trägt eine vorsichtige Erstmeldung."
-        },
-        "publication_recommendation": true,
-        "visuals": null
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T19:51:20.503Z",
-          "content_hash": "68d152bbecfd0fd6e5e0151f9059c01effc3134f2fd8faf636e02253cafeb45e",
-          "source_summary": "Mehrere Berichte melden einen Polizeieinsatz in Sachsen im Zusammenhang mit den Angriffen auf Stromleitungen und Umspannwerke in Brandenburg und NRW. Nach Angaben aus den Beiträgen wurden in Ostsachsen, nördlich von Bautzen beziehungsweise bei Schleife an der Grenze zu Brandenburg, Sprengvorrichtungen entdeckt oder gesichert. Innenminister Armin Schuster wird mit der Aussage zitiert, an zwei Fundorten seien vier Objekte gesichert worden; die Polizei arbeite an der Entschärfung.\n\nDie Berichte verweisen zudem auf ein Bekennerschreiben, aus dem sich die Hinweise ergeben hätten. Außerdem wird auf die laufende Fahndung nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen Bezug genommen. Mehrere Details zum genauen Ort und Ablauf bleiben in den Quellen offen oder werden aus taktischen Gründen nicht genannt.",
-          "analysis": {
-            "story_id": "wt-33e396f2be1a3a1f",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "In Sachsen haben Ermittler bei einem laufenden Einsatz vier verdächtige Objekte an zwei Fundorten gesichert. Die Berichte verknüpfen den Fall mit den jüngsten Angriffen auf Stromleitungen und einer Fahndung nach einem 48-Jährigen.",
-            "detail_summary": "Gesichert ist nach den vorliegenden Berichten, dass die Polizei in Sachsen an zwei Fundorten vier Objekte gesichert hat und diese als Sprengvorrichtungen beziehungsweise verdächtige Vorrichtungen behandelt. Der Bezug zu den Angriffen auf die Stromversorgung wird in den Quellen über ein Bekennerschreiben hergestellt, aus dem sich die Suchmaßnahmen ergeben hätten. Zugleich läuft nach Angaben der Berichte weiter die Fahndung nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen. Für die Wirkungsperspektive ist das relevant, weil ein solcher Fund unmittelbar Sicherheitsaufwand, Schutzmaßnahmen und mögliche Betriebsrisiken an kritischer Infrastruktur erhöht. Mögliche Folgen sind zusätzliche Sperrungen, Entschärfungen, Ermittlungsdruck und ein vorsorglicher Ausbau des Schutzes an Umspannwerken. Offen bleibt in den gelieferten Quellen, wie gefährlich die Objekte tatsächlich waren und ob ein Zusammenhang zwischen allen Vorfällen bereits belastbar belegt ist.",
-            "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Folgekosten für Schutz, Betrieb und öffentliche Sicherheit.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Die Berichte betreffen mögliche Gefährdung von Beschäftigten, Einsatzkräften und Versorgungssicherheit an kritischer Infrastruktur."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Indirekt berührt der Fall die Stabilität der Stromversorgung, aber nicht unmittelbar Umwelt- oder Klimapolitik."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Die Lage betrifft staatliche Sicherheitsfähigkeit und den Schutz kritischer Infrastruktur, ohne dass ein demokratischer Entscheidungsprozess selbst verändert wird."
-            },
-            "importance": "hoch",
-            "impact_potential": "Kurzfristig können Ermittlungen, Entschärfung und Schutzmaßnahmen Ressourcen binden und den Betrieb betroffener Anlagen stören. Mittelbar kann der Fall zu Nachrüstungen und strengeren Sicherheitskonzepten an Energieanlagen führen.",
-            "impact_risks": [
-              "Weitere Einsatz- und Ausfallrisiken an kritischer Infrastruktur",
-              "Zusätzliche Kosten für Sicherung, Ermittlungen und mögliche Nachrüstung"
-            ],
-            "mechanisms": [
-              "Verdächtige Objekte lösen Polizeieinsatz und Entschärfung aus",
-              "Der Bezug zu Stromnetzangriffen erhöht den Druck auf Schutzkonzepte"
-            ],
-            "first_order": [
-              "Einsatzkräfte sichern und prüfen vier Objekte",
-              "Anlagenbetreiber und Behörden müssen Schutzmaßnahmen koordinieren"
-            ],
-            "second_order": [
-              "Mögliche Unterbrechungen oder Verzögerungen im Betrieb kritischer Infrastruktur",
-              "Höherer Aufwand für Überwachung und Gefahrenabwehr"
-            ],
-            "third_order": [
-              "Wahrscheinliche Verschärfung von Sicherheitsstandards an Energieanlagen",
-              "Möglicher Präzedenzdruck für bundesweite Schutzkonzepte"
-            ],
-            "systemic_relevance": "Der Fall betrifft kritische Energieinfrastruktur und damit ein System mit hoher Kaskadenanfälligkeit, weil Störungen an Umspannwerken Versorgung und Sicherheit überregional beeinflussen können.",
-            "transformation_potential": "Der Vorgang kann die Priorität von Schutzinvestitionen und Koordination zwischen Ländern erhöhen, ist aber selbst noch keine strukturelle Reform.",
-            "resilience": "Die Berichte sprechen für hohe Verwundbarkeit einzelner Knoten der Stromversorgung; ob die Systeme widerstandsfähig reagieren, bleibt offen.",
-            "side_effects": [
-              "Mehr Polizeipräsenz und Ermittlungsaufwand",
-              "Mögliche Verunsicherung bei Betreibern und Anwohnern"
-            ],
-            "uncertainties": [
-              "Art und Gefährlichkeit der gesicherten Objekte sind in den Quellen nicht abschließend belegt",
-              "Der genaue Zusammenhang aller Vorfälle bleibt in den Berichten offen"
-            ],
-            "evidence_level": "mehrere Sekundärberichte mit übereinstimmendem Kern, aber ohne unabhängige Primärbelege im gelieferten Material",
-            "attribution": "Die Darstellung folgt den vorliegenden Berichten und den darin zitierten Angaben von Innenminister und Polizei; vollständige Primärbelege liegen hier nicht vor.",
-            "watch_next": [
-              "Polizeiliche Bestätigung zu Art und Entschärfung der Objekte",
-              "Neue Angaben zur Fahndung nach dem Tatverdächtigen",
-              "Hinweise auf Auswirkungen für Umspannwerke und Stromversorgung"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7, SDG 9, SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Die Meldung bringt neue, sicherheitsrelevante Informationen zu einem laufenden Vorfall an kritischer Energieinfrastruktur; der Kern ist materiell und zeitnah."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-33e396f2be1a3a1f-v1-claim-1",
-              "story_id": "wt-33e396f2be1a3a1f",
-              "claim": "In Sachsen haben Ermittler bei einem laufenden Einsatz an zwei Fundorten vier Objekte gesichert und gehen von Sprengvorrichtungen aus.",
-              "status": "single_source_claim",
-              "source_id": "mdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-                  "excerpt_hash": "e828f6714a5204958776",
-                  "checked_at": "2026-09-04T19:51:20.503Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "3aaefd9528f05aa6352a",
-                  "checked_at": "2026-09-04T19:51:20.503Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T19:51:20.503Z"
-            },
-            {
-              "claim_id": "wt-33e396f2be1a3a1f-v1-claim-2",
-              "story_id": "wt-33e396f2be1a3a1f",
-              "claim": "Die Hinweise auf die Funde in Sachsen ergaben sich nach Angaben von Innenminister Schuster aus einem Bekennerschreiben; die Sicherheitsbehörden stimmen sich mit anderen betroffenen Ländern ab.",
-              "status": "single_source_claim",
-              "source_id": "mdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-                  "excerpt_hash": "e91b068f3b4ab6d4fc72",
-                  "checked_at": "2026-09-04T19:51:20.503Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "f6e32e42054a520f2627",
-                  "checked_at": "2026-09-04T19:51:20.503Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T19:51:20.503Z"
-            },
-            {
-              "claim_id": "wt-33e396f2be1a3a1f-v1-claim-3",
-              "story_id": "wt-33e396f2be1a3a1f",
-              "claim": "Im Zusammenhang mit den Angriffen auf Stromleitungen wird weiterhin nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen gefahndet.",
-              "status": "single_source_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "6cff9b7e9f23b4f2e4c0",
-                  "checked_at": "2026-09-04T19:51:20.503Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "14e72829820aa35d4f8b",
-                  "checked_at": "2026-09-04T19:51:20.503Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T19:51:20.503Z"
-            },
-            {
-              "claim_id": "wt-33e396f2be1a3a1f-v1-claim-4",
-              "story_id": "wt-33e396f2be1a3a1f",
-              "claim": "Die Einsatzorte liegen nach den Berichten nördlich von Bautzen beziehungsweise bei Schleife an der Grenze zu Brandenburg.",
-              "status": "single_source_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "1272704882c63936c638",
-                  "checked_at": "2026-09-04T19:51:20.503Z"
-                },
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-                  "excerpt_hash": "64e7a720daa226a90435",
-                  "checked_at": "2026-09-04T19:51:20.503Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T19:51:20.503Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
-              "content_hash": "1ef044227fcb95d2a40c12a9431be268cc9c674ac56c69777ae35968925e5954"
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
-              "content_hash": "1e3bd273b937dff07ee4bad311922b81b5cce13b8642a227d2130f63fa9ec3c7"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-              "content_hash": "99f5b9110e2ea1f5039d44a77e3d49ebbb45308022c9340b28f9021c20f48480"
-            },
-            {
-              "source_id": "wiwo-schlagzeilen",
-              "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
-              "content_hash": "3986fe87f717ee86326bbd074a005d005a54b9d8a267cf4e7cc78cab810f4dc4"
-            },
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-              "content_hash": "5533ce48d63e4f7d1b62c3eb80d504a16c366f92f6439e511111a50fee1729ad"
-            }
-          ]
-        },
-        {
-          "version": 2,
-          "analyzed_at": "2026-09-05T05:23:56.472Z",
-          "content_hash": "68d152bbecfd0fd6e5e0151f9059c01effc3134f2fd8faf636e02253cafeb45e",
-          "source_summary": "In Sachsen haben Ermittler nach mehreren Angriffen auf das Stromnetz nach eigenen Angaben vier unbekannte Sprengvorrichtungen an zwei Fundorten gesichert. ZDFheute zitiert Innenminister Armin Schuster mit der Aussage, die Polizei arbeite an der Entschärfung; Hinweise hätten sich aus einem Bekennerschreiben ergeben. Zudem verweist der Bericht auf einen europaweit gesuchten 48-Jährigen und auf einen laufenden Einsatz nördlich von Bautzen.\n\nDer MDR meldet parallel einen Polizeieinsatz seit Freitagnachmittag im Wald bei Schleife sowie an der Landesgrenze zu Brandenburg und nördlich von Bautzen. Dort blieb laut MDR offen, wonach die Einsatzkräfte suchten und ob der Einsatz mit den Sabotageakten zusammenhängt. Die Quellen ordnen den Vorgang in eine Serie von Vorfällen an Stromanlagen in Brandenburg, NRW und nun Sachsen ein.",
-          "analysis": {
-            "story_id": "wt-33e396f2be1a3a1f",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "In Sachsen haben Ermittler vier verdächtige Objekte an zwei Fundorten gesichert. Der Fall steht nach den Quellen im Zusammenhang mit den jüngsten Angriffen auf Stromanlagen und einer Fahndung nach einem 48-Jährigen.",
-            "detail_summary": "Gesichert ist vor allem: In Sachsen wurden an zwei Fundorten vier verdächtige Objekte entdeckt, und die Polizei arbeitet laut den Quellen an deren Entschärfung. Der Fall wird von mehreren Redaktionen in den Kontext der jüngsten Angriffe auf Stromanlagen gestellt. Für die Bewertung ist das materiell, weil es um mögliche Anschläge auf kritische Infrastruktur geht, also um Zustände mit potenziell breiter Reichweite und Folgewirkung. Der Wirkpfad reicht von akuter Gefährdung einzelner Anlagen über mögliche Störungen bis zu Sicherheits- und Schutzmaßnahmen an weiteren Standorten. Offen bleibt, ob alle gesicherten Objekte tatsächlich funktionsfähig, gleichartig oder bereits entschärft waren. Ebenfalls offen ist der exakte Zusammenhang zwischen den sächsischen Funden, dem Bekennerschreiben und der europaweiten Fahndung. Die Beleglage trägt eine belastbare Erstmeldung, aber noch keine abgeschlossene Einordnung der Kausalität.",
-            "why_relevant": "Der Vorgang betrifft potenziell kritische Energieinfrastruktur und damit Sicherheits-, Versorgungs- und Schutzfragen mit möglicher Breitenwirkung.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Mögliche Gefährdung von Menschen, Einsatzkräften und Versorgungssicherheit durch verdächtige Objekte an Stromanlagen."
-            },
-            "planet": {
-              "relevance": "offen",
-              "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen; ein indirekter Bezug bleibt offen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Der Vorfall berührt Schutz und Resilienz kritischer Infrastruktur sowie die staatliche Sicherheitsantwort."
-            },
-            "importance": "hoch",
-            "impact_potential": "Mögliche Auswirkungen reichen von lokalen Einsatz- und Entschärfungsfolgen bis zu zusätzlichen Schutzmaßnahmen an Stromanlagen und einer breiteren Sicherheitslage für kritische Infrastruktur.",
-            "impact_risks": [
-              "Kurzfristige Gefährdung von Anlagen und Einsatzkräften",
-              "Störungen oder Schutzaufwand an weiteren Standorten",
-              "Vertrauens- und Sicherheitsfolgen bei kritischer Infrastruktur"
-            ],
-            "mechanisms": [
-              "Entdeckung und Sicherung verdächtiger Objekte",
-              "polizeiliche Entschärfung und Fahndung",
-              "verstärkte Schutz- und Ermittlungsmaßnahmen an Stromanlagen"
-            ],
-            "first_order": [
-              "Sicherungs- und Entschärfungseinsatz vor Ort",
-              "Fahndung nach dem gesuchten Verdächtigen"
-            ],
-            "second_order": [
-              "zusätzliche Schutzmaßnahmen für weitere Anlagen",
-              "höherer Ermittlungs- und Koordinationsaufwand"
-            ],
-            "third_order": [
-              "mögliche Anpassungen bei Sicherungskonzepten kritischer Infrastruktur"
-            ],
-            "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant; selbst begrenzte Vorfälle können Vorsorge-, Schutz- und Resilienzmaßnahmen anstoßen.",
-            "transformation_potential": "Kein unmittelbarer Transformationsfall, aber möglicher Impuls für nachgeschärfte Sicherheitsstandards und Koordination bei kritischer Infrastruktur.",
-            "resilience": "Die Ereignisse testen die Resilienz von Strominfrastruktur und Sicherheitsbehörden; belastbare Schlüsse zur Wirksamkeit der Systeme sind noch offen.",
-            "side_effects": [
-              "Einsatzbindung von Polizei und Spezialkräften",
-              "mögliche Verunsicherung in betroffenen Regionen"
-            ],
-            "uncertainties": [
-              "Art und Gefährlichkeit der Objekte sind nicht abschließend belegt",
-              "Der Zusammenhang aller Vorfälle bleibt offen",
-              "Unabhängige Bestätigung der Einzelangaben liegt hier nicht vor"
-            ],
-            "evidence_level": "mehrere berichtende Quellen, aber keine vorliegende Primärquelle; Bestätigung einzelner Kernaussagen bleibt sekundär",
-            "attribution": "Die Angaben stammen aus den gelieferten Berichten und werden teils Innenminister und Ermittlern zugeschrieben; unabhängige Primärbelege fehlen in der Akte.",
-            "watch_next": [
-              "Bestätigung von Art und Gefährlichkeit der gesicherten Objekte",
-              "offizielle Angaben zur Entschärfung",
-              "neue Informationen zur Fahndung nach dem 48-Jährigen"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7",
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Neue, aktuell relevante Meldung zu verdächtigen Objekten an kritischer Energieinfrastruktur; die Beleglage trägt eine vorsichtige Erstmeldung."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-1",
-              "story_id": "wt-33e396f2be1a3a1f",
-              "claim": "In Sachsen haben Ermittler an zwei Fundorten vier verdächtige Objekte gesichert.",
-              "status": "single_source_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "c708a4fa81401243ea46",
-                  "checked_at": "2026-09-05T05:23:56.472Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            },
-            {
-              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-2",
-              "story_id": "wt-33e396f2be1a3a1f",
-              "claim": "Die Polizei arbeitet nach Angaben von Innenminister Schuster an der Entschärfung der in Sachsen gefundenen Objekte.",
-              "status": "single_source_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "ccb14351117ccb3019e7",
-                  "checked_at": "2026-09-05T05:23:56.472Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            },
-            {
-              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-3",
-              "story_id": "wt-33e396f2be1a3a1f",
-              "claim": "Die Fundorte liegen in der Nähe von zwei Umspannwerken; ein Polizeieinsatz läuft weiter.",
-              "status": "single_source_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "3aaefd9528f05aa6352a",
-                  "checked_at": "2026-09-05T05:23:56.472Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            },
-            {
-              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-4",
-              "story_id": "wt-33e396f2be1a3a1f",
-              "claim": "Die Ermittler suchen europaweit nach einem 48-jährigen Tatverdächtigen, der mit den Vorfällen in Verbindung gebracht wird.",
-              "status": "single_source_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "6cff9b7e9f23b4f2e4c0",
-                  "checked_at": "2026-09-05T05:23:56.472Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            },
-            {
-              "claim_id": "wt-33e396f2be1a3a1f-v2-claim-5",
-              "story_id": "wt-33e396f2be1a3a1f",
-              "claim": "Nach Angaben des MDR wurde im Wald bei Schleife und an der Landesgrenze zu Brandenburg ein Polizeieinsatz beobachtet, dessen Zusammenhang offen blieb.",
-              "status": "single_source_claim",
-              "source_id": "mdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "mdr-nachrichten",
-                  "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-                  "excerpt_hash": "4e6ca412a60f9a193553",
-                  "checked_at": "2026-09-05T05:23:56.472Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-                  "excerpt_hash": "f04524f948ac641e0f91",
-                  "checked_at": "2026-09-05T05:23:56.472Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T05:23:56.472Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
-              "content_hash": "1ef044227fcb95d2a40c12a9431be268cc9c674ac56c69777ae35968925e5954"
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
-              "content_hash": "1e3bd273b937dff07ee4bad311922b81b5cce13b8642a227d2130f63fa9ec3c7"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-              "content_hash": "99f5b9110e2ea1f5039d44a77e3d49ebbb45308022c9340b28f9021c20f48480"
-            },
-            {
-              "source_id": "wiwo-schlagzeilen",
-              "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
-              "content_hash": "3986fe87f717ee86326bbd074a005d005a54b9d8a267cf4e7cc78cab810f4dc4"
-            },
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-              "content_hash": "5533ce48d63e4f7d1b62c3eb80d504a16c366f92f6439e511111a50fee1729ad"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T19:51:20.503Z",
-          "source_count": 5
-        },
-        {
-          "version": 2,
-          "published_at": "2026-09-05T05:23:56.472Z",
-          "source_count": 5
-        }
-      ],
-      "retirement_history": []
     },
     {
       "story_id": "wt-743a635e023f5ff0",
@@ -14292,7 +15154,7 @@
       "verification_started_at": "2026-09-04T19:55:33.686Z",
       "publish_ready_at": "2026-09-04T19:55:49.121Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -14950,9 +15812,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "52e074d91fcf41527b53208e1dc81753768a2947dec6b23e8215f9ff45d7254c",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "931e9b4750702352104b064b6ba173e56ffa57d215705d1ca4b3c317dbee14e4",
+        "checked_at": "2026-09-05T07:06:05.017Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T13:06:05.017Z",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
@@ -14985,16 +15850,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-d80fd849c477e2ad",
@@ -15141,7 +15999,7 @@
       "verification_started_at": "2026-09-04T19:55:15.125Z",
       "publish_ready_at": "2026-09-04T19:55:31.184Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -16011,9 +16869,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "14bfd30a7eb318882c313f59d7a3585103333f0f6b2b90688bb8657658ecb110",
+        "checked_at": "2026-09-05T07:06:05.017Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T13:06:05.017Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -16046,16 +16907,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-169564c16bb23cb7",
@@ -20415,10 +21269,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -20586,7 +21438,7 @@
       "verification_started_at": "2026-09-04T18:22:24.272Z",
       "publish_ready_at": "2026-09-04T18:22:40.051Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -20954,9 +21806,12 @@
         "generated_at": "2026-09-04T18:54:01.475Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "256ab2d345b452e2a19388b09292465a6a590de6ab17c63c6d04349f166298e1",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "5614550e6972f7c336bf0ff6ba931dc40d8a1956b59cd93518793d8dd76f252f",
+        "checked_at": "2026-09-05T07:06:05.017Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T13:06:05.017Z",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
@@ -20989,16 +21844,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
-        "quality_retry_count": 2,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-29d840b10b9a38bd",
@@ -22416,7 +23264,7 @@
       "verification_started_at": "2026-09-04T17:42:33.825Z",
       "publish_ready_at": "2026-09-04T17:42:49.106Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -23049,10 +23897,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "1f7d05e68930ce46bd233579cd4fbf126de79f5fbae39f87a2fe49dcef3cfa6b",
-        "checked_at": "2026-09-04T19:54:51.283Z",
+        "fingerprint": "7d87e158aac6a4d4a70ab6b180045fca3c86461e00975ba9073741b18e57cb46",
+        "checked_at": "2026-09-05T07:06:05.017Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T01:54:51.283Z",
+        "expires_at": "2026-09-05T13:06:05.017Z",
         "sources": [
           {
             "source_id": "hr-hessenschau",
@@ -23087,52 +23935,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-            "title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
-            "summary": "Die Landesregierung will Klimaanlagen für Kitas und Pflegeeinrichtungen fördern. Die Folgen der Hitzewelle scheinen auch andere Parteien aufgerüttelt zu haben: Für das neue Programm gibt es Unterstützung - und etwas Kritik.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:31:09.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3",
-            "source_item_id": "aad4b9b61f285e525377936239ee8cad1e12c99623666f97f4df311cdb6ccee0",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:31:09.000Z",
-            "ingested_at": "2026-09-04T02:21:15.650Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-fc07cb978f098e87",
@@ -24048,11 +24851,11 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
+          "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 2,
+        "quality_retry_count": 3,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -45027,10 +45830,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -49365,10 +50166,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -63201,10 +64000,8 @@
             }
           }
         ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -64013,7 +64810,7 @@
       "verification_started_at": "2026-09-04T08:07:37.298Z",
       "publish_ready_at": "2026-09-04T08:07:54.216Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -64452,13 +65249,13 @@
         "generated_at": "2026-09-04T09:34:59.861Z",
         "status": "generated"
       },
-      "deepening_checks": 2,
+      "deepening_checks": 3,
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "5887d86abbaa9370ab9d317be575025b65f080817c8127100fa4b1b2d71e9213",
-        "checked_at": "2026-09-04T19:54:51.283Z",
+        "fingerprint": "eda0e88f386a1423ed40a86f3fbd020d8b71241272af5cfc01dd486c0d6793ea",
+        "checked_at": "2026-09-05T07:06:05.017Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T01:54:51.283Z",
+        "expires_at": "2026-09-05T13:06:05.017Z",
         "sources": [
           {
             "source_id": "bundestag-umwelt",
@@ -64483,7 +65280,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-04T19:50:26.018Z",
+            "ingested_at": "2026-09-05T07:06:05.017Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -64491,50 +65288,6 @@
             }
           }
         ]
-      },
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "e94409d7f9d4796ecc951a57c5b0db1eb9d95fb101f1bf141563ebd3062f54e6",
-        "sources": [
-          {
-            "source_id": "bundestag-umwelt",
-            "publisher": "Deutscher Bundestag – Umwelt und Klimaschutz",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
-            "title": "Verwaltungsgerichtsverfahren sollen schneller werden",
-            "summary": "Recht und Verbraucherschutz/Gesetzentwurf Die Bundesregierung will Verfahren vor Verwaltungsgerichten beschleunigen. Der Bundesrat fordert an mehreren Stellen Änderungen am Gesetzentwurf.",
-            "source_type": "official_rss",
-            "published_at": null,
-            "primary_source": true,
-            "source_priority": 90,
-            "source_topic": "Klima",
-            "content_hash": "b44ab8b4fd9960a5a66665acb13a7fdf0e500c1f3c12f49e7e3e18e8bdc1d3b8",
-            "source_item_id": "273462d6513ec2e7ecebf3f46bba056a2316586deb0d5bb203712c25c346b88c",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": null,
-            "ingested_at": "2026-09-05T06:36:46.215Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_PROVIDER_UNAVAILABLE",
-        "quality_errors": [
-          "AI_PROVIDER_ERROR:429"
-        ],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
       }
     },
     {
@@ -99214,5 +99967,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T06:36:46.215Z"
+  "public_updated_at": "2026-09-05T07:06:05.017Z"
 }
