@@ -23,6 +23,14 @@ on:
         description: "Ausdrücklich freigegebene Erneuerung alter Symbolbilder (Credit-Limits bleiben aktiv)"
         type: boolean
         default: false
+      media_impact_backfill:
+        description: "Selektiven, idempotenten Medien- und Sprachwirkungs-Backfill starten"
+        type: boolean
+        default: false
+      media_impact_limit:
+        description: "Maximale Anzahl bereits veröffentlichter Akten im Medienwirkungs-Backfill"
+        type: number
+        default: 10
 
 permissions:
   actions: write
@@ -99,6 +107,22 @@ jobs:
           args=(--execute --limit="$TITLE_IMAGE_LIMIT")
           if [ "$TITLE_IMAGE_REFRESH" = "true" ]; then args+=(--refresh-editorial); fi
           npm run news:title-images:backfill -- "${args[@]}"
+      - name: Backfill selectively triggered media-impact checks
+        id: media_impact
+        if: steps.slot.outputs.should_run == 'true' && inputs.media_impact_backfill == true
+        env:
+          WOEK_NEWS_MONTHLY_AI_BUDGET_EUR: "25"
+          WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
+          WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
+          MEDIA_IMPACT_LIMIT: ${{ inputs.media_impact_limit }}
+        run: |
+          set -euo pipefail
+          npm run news:media-impact:backfill -- --execute --limit="$MEDIA_IMPACT_LIMIT"
+          if git diff --quiet -- data/news/stories.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Read public ticker outcome
         id: outcome
         if: steps.slot.outputs.should_run == 'true'
@@ -137,7 +161,7 @@ jobs:
           node scripts/news/publish-git.mjs
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Publish the committed ticker automatically
-        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true')
+        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true' || steps.media_impact.outputs.changed == 'true')
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main -f ticker_only=true
