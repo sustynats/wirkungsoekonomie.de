@@ -199,8 +199,8 @@
           ? `Gate offen: T-SROI = ${money.format(result.benefitPv)} / ${money.format(result.costPv)} = ${decimal.format(result.tsroi)} : 1.`
           : `Gate blockiert: ${result.gate.reasons.join(" ")} Deshalb werden IOI und T-SROI nicht positiv ausgewiesen.`,
         nwiGate.passed
-          ? `NWI-Schutz-Gate offen: Der gleichgewichtete Profilwert wird unabhängig von der Euro-Quote ausgewiesen.`
-          : `NWI-Schutz-Gate blockiert: ${nwiGate.reasons.join(" ")} Deshalb wird der NWI nicht positiv ausgewiesen.`,
+          ? `Schutz-Gate des WÖk-Netto-Wirkungsindex offen: Der gleichgewichtete Profilwert wird unabhängig von der Euro-Quote ausgewiesen.`
+          : `Schutz-Gate des WÖk-Netto-Wirkungsindex blockiert: ${nwiGate.reasons.join(" ")} Deshalb wird der WÖk-Netto-Wirkungsindex nicht positiv ausgewiesen.`,
       ].map((item) => `<li>${item}</li>`).join("");
     }
   }

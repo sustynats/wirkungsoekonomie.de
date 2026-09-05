@@ -69,7 +69,7 @@
       raw,
       nwi: raw,
       status: raw > 0 ? "tragfaehig" : raw === 0 ? "unklar" : "kritisch",
-      explanation: "Der NWI ist eine dimensionsgleiche Netto-Differenz. Datenqualität wird ausgewiesen, aber weder Schäden noch Punkte werden damit multipliziert.",
+      explanation: "Der WÖk-Netto-Wirkungsindex ist eine dimensionsgleiche Netto-Differenz. Datenqualität wird ausgewiesen, aber weder Schäden noch Punkte werden damit multipliziert.",
     };
   }
 
@@ -171,8 +171,8 @@
       weakestField: final.weakestField,
       reasons,
       explanation: reasons.length
-        ? "Das NWI-Schutz-Gate ist geschlossen: Profil- und Prüfbefunde erlauben keine positive Netto-Wirkungs-Aussage."
-        : "Das NWI-Schutz-Gate ist offen: Profil, Systemgrenze, Zurechnung und Datenqualität sind dokumentiert. Der NWI bleibt ein dimensionsloser Modellwert, kein Euro- oder Beweiswert.",
+        ? "Das Schutz-Gate des WÖk-Netto-Wirkungsindex ist geschlossen: Profil- und Prüfbefunde erlauben keine positive Netto-Wirkungs-Aussage."
+        : "Das Schutz-Gate des WÖk-Netto-Wirkungsindex ist offen: Profil, Systemgrenze, Zurechnung und Datenqualität sind dokumentiert. Der WÖk-Netto-Wirkungsindex bleibt ein dimensionsloser Modellwert, kein Euro- oder Beweiswert.",
     };
   }
 

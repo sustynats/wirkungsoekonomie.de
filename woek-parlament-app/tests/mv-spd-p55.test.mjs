@@ -26,10 +26,12 @@ test('P55 cannot silently omit an exact-span child or revive a programme termina
   state.handoff.terminal_records=state.handoff.terminal_records.filter(row=>row.object_id!=='MV-SPD-2026-SU-00517-C02-2dcc7c55fc11');
   assert.throws(()=>validateP55(state,{verifyDeterminism:false}),/Dangling lineage|Uncovered source/);
   const residual=buildSpdResidual(buildP55());
-  assert.deepEqual(residual.summary.materialised_terminal_pages,[55]);
-  assert.equal(residual.summary.protected_authored_pages_pending_technical_reconciliation.length,54);
+  assert.deepEqual(residual.summary.materialised_terminal_pages,Array.from({length:55},(_,index)=>index+1));
+  assert.deepEqual(residual.summary.protected_authored_pages_pending_technical_reconciliation,[]);
   assert.equal(residual.summary.pages_without_current_terminal_proof.length,40);
-  assert.equal(residual.summary.remaining_technical_page_envelopes.length,94);
+  assert.equal(residual.summary.remaining_technical_page_envelopes.length,40);
+  assert.equal(residual.summary.protected_authored_unresolved_source_unit_ids.length,0);
+  assert.equal(residual.summary.protected_authored_role_binding_required_ids.length,0);
   const falseComplete=loadP55();falseComplete.residual.summary.programme_terminal=true;
   assert.throws(()=>validateP55(falseComplete));
 });

@@ -243,7 +243,9 @@ export function validateNewsroomAnalysis(analysis, story) {
     for (const number of claim.claim.match(/\b\d+(?:[.,]\d+)?\b/g) || []) if (!proofNumbers.has(number.replace(".", ","))) errors.push("CLAIM_NUMBER_NOT_IN_EVIDENCE");
     if (claim.status === "confirmed_claim" && groups.possible_independent_origins < 2) errors.push("CLAIM_INDEPENDENCE_NOT_ESTABLISHED");
     if (claim.status === "primary_source_claim" && !cited.some((source) => source.primary_source)) errors.push("CLAIM_PRIMARY_SOURCE_MISSING");
-    if (cited.some((source) => source.requires_corroboration) && !cited.some((source) => !source.requires_corroboration) && claim.status !== "uncertain_claim") errors.push("CLAIM_CRITICAL_SOURCE_UNCORROBORATED");
+    const criticalOrigins = new Set((story.sources || []).filter(source => source.requires_corroboration).map(source => source.provenance?.origin).filter(Boolean));
+    const critical = source => source.requires_corroboration || criticalOrigins.has(source.provenance?.origin);
+    if (cited.some(critical) && !cited.some(source => !critical(source)) && claim.status !== "uncertain_claim") errors.push("CLAIM_CRITICAL_SOURCE_UNCORROBORATED");
   }
   if (analysis.news_status === "confirmed" && claims.some((claim) => ["single_source_claim", "uncertain_claim", "disputed_claim"].includes(claim.status))) errors.push("CONFIRMED_STATUS_OVERCLAIM");
   if (!Array.isArray(analysis.followups)) errors.push("FOLLOWUPS_ARRAY_REQUIRED");

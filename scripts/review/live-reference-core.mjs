@@ -28,7 +28,7 @@ const priorityChapters = new Map([
     cluster: "Systemarchitektur",
     terms: ["Nachhaltigkeit", "Wirkungsarchitektur", "interdependente Netto-Wirkung", "Wirkungsrückkopplung"],
     source: "Nachhaltigkeit-Systemarchitektur / führender Begriffsleitfaden",
-    text: "Nachhaltigkeit wird in der lebenden Referenz nicht als Zusatzlabel, ESG-Ersatz oder Berichtspflicht gelesen, sondern als Ergebnis gelingender Wirkungsrückkopplung. Maßgeblich bleibt positive Netto-Wirkung für Mensch, Planet und Demokratie; Nachhaltigkeit beschreibt die resiliente Systemfähigkeit, die daraus entstehen kann."
+    text: "Nachhaltigkeit ist nach der führenden WÖk-Definition die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie. Diese Begriffsbestimmung gehört zum WÖk-Modell. Positive Netto-Wirkung, Systemresilienz und Wirkungsrückkopplung bleiben zu unterscheiden; eine einzelne positive Wirkung belegt noch keine langfristige Nachhaltigkeit."
   }],
   [10, {
     cluster: "Begriffssystem",
@@ -88,7 +88,7 @@ const priorityChapters = new Map([
     cluster: "Mess- und Bewertungslogik",
     terms: ["WÖk-ID", "Wirkungsindikator", "WÖk Master Items"],
     source: "WOeK_Masterregister_v1.5_2026-08-21.xlsx",
-    text: "Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Regelzuweisung, Systemgrenze, Datenqualität, Assurance und Scorecards. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren - keine Menschen und keine persönliche Wertigkeit. Leere Eingaben bleiben unbewertet; eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung."
+    text: "Die WÖk-ID ist ein stabiler technischer und fachlicher Anker für einen Prüfgegenstand. Das Masterregister v1.5 unterscheidet MasterItems von operationalisierten Wirkindikatoren. Eine ID, eine SDG/SDG+-Zuordnung oder eine Regelzuweisung ist noch keine Messung und kein Wirkungsnachweis. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren - keine Menschen und keine persönliche Wertigkeit. Leere Eingaben bleiben unbewertet; eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung."
   }],
   [32, {
     cluster: "Mess- und Bewertungslogik",
@@ -112,13 +112,13 @@ const priorityChapters = new Map([
     cluster: "Steuerlogik",
     terms: ["WStG", "Wirkungssteuergesetz", "Wirkungsrat"],
     source: "WStG_Oktober2025",
-    text: "Das WStG wird als Rahmengesetz der wirkungsbasierten Steuerordnung geführt. Es ersetzt nicht jedes Einzelsteuergesetz, sondern setzt den gemeinsamen Maßstab, an den WUStG, WEstG und weitere Steuerlogiken anschließen."
+    text: "Das WStG ist ein vorgeschlagenes Rahmengesetz im WÖk-Modell, kein geltendes Recht. Es ersetzt nicht jedes Einzelsteuergesetz, sondern setzt den gemeinsamen Maßstab, an den WUStG, WEstG und weitere Steuerlogiken anschließen."
   }],
   [38, {
     cluster: "Steuerlogik",
     terms: ["WUStG", "Wirkungsumsatzsteuer", "Vorsteuerlogik", "Score-Skalen"],
     source: "Technische Leitlinien WUStG / WP_Produkte / Apfelbeispiel",
-    text: "Das WUStG ist die Produkt- und Umsatzsteuerlogik der Wirkungsökonomie. Produkt-Scorecards können in Beispielrechnungen mit -3 bis +3 arbeiten, während rahmengesetzliche Wirkungswerte anders skaliert sein können; die Skalen sind als Anwendungsebenen zu unterscheiden."
+    text: "Das WUStG ist ein Gesetzesmodell für die Produkt- und Umsatzsteuerlogik der Wirkungsökonomie, kein geltendes Recht. Produkt-Scorecards können in Beispielrechnungen mit -3 bis +3 arbeiten, während rahmengesetzliche Wirkungswerte anders skaliert sein können; die Skalen sind als Anwendungsebenen zu unterscheiden."
   }],
   [39, {
     cluster: "Steuerlogik",
@@ -498,7 +498,7 @@ Stand: ${new Date().toISOString().slice(0, 10)}
 ## Ebene 2: Führende Terminologie
 
 - ${TERMINOLOGY_BASE}
-- Stand: 21. Mai 2026
+- Stand: ${TERMINOLOGY_BASE_DATE}
 - maßgeblich für Begriffe, Glossar, Hovers, Crosslinks, Sprachregeln und Terminologieprüfung
 
 ## Ebene 3: Neuere Logik- und Systemweiterentwicklungen
@@ -511,7 +511,8 @@ Diese Dokumente werden als mögliche Aktualisierungsquellen der lebenden Referen
 - WOeK_Masterregister_v1.5_2026-08-21.xlsx
 - WOeK_Master_Items_final_v1.2.pdf (historische Fassung)
 - Wirkungsrat_Konzept
-- Whitepaper-T-SROI
+- T-SROI-Rechenstandard v1.1 (führend für aktuelle Rechnungen)
+- Whitepaper-T-SROI (historisch, keine aktuelle Rechenregel)
 - Wirkungsökonomie in der Lieferkette
 - WP_Produkte
 - WP_Rente
@@ -572,7 +573,11 @@ export function applyLiveReferenceLayer() {
     if (hasPriorityAddendum) {
       const update = priorityChapters.get(chapterNumber);
       const marker = `woek-main-2026-k${String(chapterNumber).padStart(3, "0")}-lr-2026-2`;
-      if (!html.includes(marker)) {
+      if (html.includes(marker)) {
+        // Update this named editorial layer; preserve all original citation anchors.
+        const previous = new RegExp(`<aside\\b[^>]*id="${marker}"[^>]*>[\\s\\S]*?<\\/aside>`);
+        html = html.replace(previous, () => addendumHtml(chapterNumber, update));
+      } else {
         html = insertAfterFirstMeta(html, addendumHtml(chapterNumber, update));
       }
       addChange({

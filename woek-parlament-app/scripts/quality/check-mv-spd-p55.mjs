@@ -68,7 +68,13 @@ export function validateP55({handoff, residual}, {verifyDeterminism = true} = {}
     'MV-SPD-2026-SU-00511-A01-C01-101402e0ba43','MV-SPD-2026-SU-00511-A01-C02-fe3198dc01a5',
     'MV-SPD-2026-SU-00517-C01-dbede871c622','MV-SPD-2026-SU-00517-C02-2dcc7c55fc11','MV-SPD-2026-SU-00519-C01-c0ebf23b4206',
   ].sort());
-  assert.deepEqual(residual.summary.materialised_terminal_pages, [55]);
+  assert.deepEqual(
+    residual.summary.materialised_terminal_pages,
+    Array.from({ length: 55 }, (_, index) => index + 1),
+    'P1-P55 must be losslessly materialised from the archived authorities plus P55',
+  );
+  assert.deepEqual(residual.summary.protected_authored_pages_pending_technical_reconciliation, []);
+  assert.equal(residual.summary.remaining_technical_page_envelopes.length, 40);
   assert.equal(residual.summary.programme_terminal, false);
   assert.equal(residual.summary.p56_authoring_authorised_by_this_matrix, false);
   assert.equal(residual.summary.exact_remaining_effect_object_count, null);

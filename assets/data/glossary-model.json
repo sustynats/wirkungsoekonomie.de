@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T00:00:00.000Z",
+  "generatedAt": "2026-09-05T21:54:03.814Z",
   "schema": {
     "term": "canonicalLabel",
     "shortDefinition": "shortDefinition",
@@ -61402,8 +61402,8 @@
       "id": "wirkungsnachweis",
       "term": "Wirkungsnachweis",
       "slug": "wirkungsnachweis",
-      "shortDefinition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.",
-      "longDefinition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.\n\nIn der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "shortDefinition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann.",
+      "longDefinition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann. Dazu gehören Ausgangszustand, Zeitraum, Systemgrenze, Wirkmechanismus, Vergleich mit einer plausiblen Entwicklung ohne Maßnahme und die Unsicherheit des Befunds. Eine bloße Vorher-Nachher-Beobachtung ist noch kein belastbarer Kausalnachweis. Plausible erwartete Veränderungen werden als Wirkungspotenzial oder Wirkungsrisiko ausgewiesen.",
       "synonyms": [
         "Wirkungsnachweis",
         "Impact Evidence",
@@ -61437,7 +61437,7 @@
       "relatedObjections": [],
       "category": "WÖk-Präzisierungsbegriff / Prüfbegriff",
       "status": "approved",
-      "version": "Glossar-Sanierung v1"
+      "version": "2.1"
     },
     {
       "id": "wirkungsnachweiskonto",
@@ -66331,8 +66331,8 @@
       "id": "woek-id",
       "term": "WÖk-ID",
       "slug": "woek-id",
-      "shortDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator, mit der Wirkung systematisch, maschinenlesbar und standardübergreifend messbar gemacht wird.",
-      "longDefinition": "Die WÖk-ID ist die eindeutige Identifikationsnummer eines Wirkungsindikators innerhalb der Wirkungsökonomie. Sie dient dazu, relevante Wirkungsdaten strukturiert zu erfassen, zuzuordnen, zu prüfen, zu vergleichen und in Scorecards zu verwenden.",
+      "shortDefinition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator.",
+      "longDefinition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
       "synonyms": [
         "WÖk-ID",
         "WOK-ID",
@@ -66439,7 +66439,7 @@
       ],
       "category": "Messung, Daten & Standards",
       "status": "führender-begriff",
-      "version": "1.1"
+      "version": "2.1"
     },
     {
       "id": "nwi",
@@ -66508,8 +66508,8 @@
       "id": "woek-ids",
       "term": "WÖk-IDs",
       "slug": "woek-ids",
-      "shortDefinition": "WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.",
-      "longDefinition": "WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.\n\nIn der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "shortDefinition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung.",
+      "longDefinition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
       "synonyms": [
         "WÖk-IDs"
       ],
@@ -66532,7 +66532,7 @@
       "relatedObjections": [],
       "category": "Datenbegriff",
       "status": "approved",
-      "version": "Glossar-Sanierung v1"
+      "version": "2.1"
     },
     {
       "id": "woek-indikatorenarchitektur",

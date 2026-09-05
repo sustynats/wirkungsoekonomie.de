@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = ROOT / "ops/releases/parliament-current-golden-readiness-2026-08-28.json"
-BASE_MAIN_COMMIT = "1db5d993bd7149c3c09993bf346f66d6c587a7ee"
+BASE_MAIN_COMMIT = "3a999bd5a7e2428c28f1fe44f248a6470180fe69"
 
 HISTORICAL_GOLDEN = "ops/releases/parliament-github-golden-state-2026-08-23.json"
 ST_RELEASE = "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
@@ -27,6 +27,7 @@ MV_SOURCE = "woek-parlament-app/data/state-programmes/current-source-registers/m
 MV_REJECTED_FACH = "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-v2.json"
 MV_SPD_CURRENT = "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json"
 MV_SPD_P55 = "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p55-explicit-v1.json"
+MV_SPD_AUTHORITY_ARCHIVE = "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json"
 SAME_PAGE_GATE = "woek-parlament-app/scripts/quality/check-same-page-navigation.mjs"
 
 
@@ -64,6 +65,7 @@ def build() -> dict:
     mv_rejected = load(MV_REJECTED_FACH)
     mv_spd_current = load(MV_SPD_CURRENT)
     mv_spd_p55 = load(MV_SPD_P55)
+    mv_spd_authority_archive = load(MV_SPD_AUTHORITY_ARCHIVE)
 
     payload = {
         "schema_version": "woek-parliament-current-golden-readiness-1.0",
@@ -127,11 +129,13 @@ def build() -> dict:
                 "verified_final_programmes_requiring_truthful_residual": 12,
                 "source_maturity_pending": mv_source["coverage"]["final_election_programme_not_verified_count"],
                 "current_exact_effect_object_residual": None,
-                "current_truth_matrix": "PARTIAL_SPD_P55_EXPLICIT_OVERLAY_NOT_FULL_MV_TERMINAL",
+                "current_truth_matrix": "PARTIAL_SPD_P1_P55_AUTHORITY_MATERIALISATION_NOT_FULL_MV_TERMINAL",
                 "spd_current_residual": pin(MV_SPD_CURRENT, mv_spd_current),
                 "spd_p55_handoff": pin(MV_SPD_P55, mv_spd_p55),
+                "spd_p1_p54_authority_archive": pin(MV_SPD_AUTHORITY_ARCHIVE, mv_spd_authority_archive),
                 "spd_materialised_terminal_pages": mv_spd_current["summary"]["materialised_terminal_pages"],
                 "spd_protected_authored_pages_pending_technical_reconciliation": mv_spd_current["summary"]["protected_authored_pages_pending_technical_reconciliation"],
+                "spd_authority_pointer_gap_object_ids": mv_spd_authority_archive["coverage"]["authority_pointer_gap_object_ids"],
                 "spd_remaining_technical_page_envelopes": mv_spd_current["summary"]["remaining_technical_page_envelopes"],
                 "spd_p55_remaining_source_objects": mv_spd_current["summary"]["p55_residual_source_object_ids"],
                 "gate": "FAIL_CLOSED_MV_FACH_TRUTH_REMEDIATION_REQUIRED_AFTER_BERLIN",
@@ -173,8 +177,10 @@ def validate(actual: dict, expected: dict) -> None:
     mv = actual["blocking_lanes"]["mecklenburg_vorpommern"]
     if (mv["verified_final_programmes_requiring_truthful_residual"], mv["source_maturity_pending"]) != (12, 7):
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_MV_TRUTH_DRIFT")
-    if mv["spd_materialised_terminal_pages"] != [55] or mv["spd_p55_remaining_source_objects"]:
-        raise ValueError("PARLIAMENT_CURRENT_GOLDEN_MV_P55_DRIFT")
+    if mv["spd_materialised_terminal_pages"] != list(range(1, 56)) or mv["spd_p55_remaining_source_objects"]:
+        raise ValueError("PARLIAMENT_CURRENT_GOLDEN_MV_SPD_TERMINAL_PAGE_DRIFT")
+    if mv["spd_protected_authored_pages_pending_technical_reconciliation"] or mv["spd_authority_pointer_gap_object_ids"]:
+        raise ValueError("PARLIAMENT_CURRENT_GOLDEN_MV_SPD_POINTER_GAP_DRIFT")
     visuals = actual["protected_complete_lanes"]["sachsen_anhalt_impact_visuals"]
     if (visuals["record_count"], visuals["program_scenario_count"], visuals["case_scenario_count"], visuals["final_image_signoff_approved_count"], visuals["records_with_missing_approved_inputs"]) != (12, 6, 6, 12, 0):
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_IMPACT_VISUAL_TRUTH_DRIFT")
@@ -206,6 +212,8 @@ def main() -> None:
         "berlin_remaining_review_scopes": actual["blocking_lanes"]["berlin"]["remaining_review_scopes"],
         "mv_programmes_requiring_truthful_residual": actual["blocking_lanes"]["mecklenburg_vorpommern"]["verified_final_programmes_requiring_truthful_residual"],
         "source_maturity_pending": actual["blocking_lanes"]["mecklenburg_vorpommern"]["source_maturity_pending"],
+        "mv_spd_materialised_terminal_pages": len(actual["blocking_lanes"]["mecklenburg_vorpommern"]["spd_materialised_terminal_pages"]),
+        "mv_spd_authority_pointer_gaps": len(actual["blocking_lanes"]["mecklenburg_vorpommern"]["spd_authority_pointer_gap_object_ids"]),
         "impact_visuals_approved": actual["protected_complete_lanes"]["sachsen_anhalt_impact_visuals"]["final_image_signoff_approved_count"],
         "no_new_vercel_build": True,
         "descriptor_sha256": actual["descriptor_sha256"],

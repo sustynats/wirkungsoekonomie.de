@@ -1670,9 +1670,9 @@ function publicToolEntrypointsSection(base) {
   return `<section class="section section-soft" aria-labelledby="tool-2-entrypoints-title">
         <div>
           <div class="section-header">
-            <p class="hero-kicker">Öffentliche Tool-Landschaft 2.0</p>
-            <h2 id="tool-2-entrypoints-title">Erst die Nutzerfrage, dann die Methode.</h2>
-            <p>Diese Einstiege sind für die öffentliche Nutzung nach vorn gezogen. Labor-, Rechts- und Forschungsmodelle bleiben sichtbar, werden aber nicht als fertige Alltagstools verkauft.</p>
+            <p class="hero-kicker">Passendes Werkzeug finden</p>
+            <span id="tool-finder-title"></span><h2 id="tool-2-entrypoints-title">Welche Frage bringst du mit?</h2>
+            <p>Die folgenden Anwendungen bieten einen direkten Einstieg. Wenn du eine bestimmte Fachmethode suchst, führt dich der <a href="#method-map-title">filterbare Methodenkatalog</a> weiter.</p>
           </div>
           <div class="card-grid three">
             ${publicToolEntrypoints.map((tool) => `<article class="card method-tool-card">
@@ -1686,46 +1686,6 @@ function publicToolEntrypointsSection(base) {
               <p class="method-tool-notice">${escapeHtml(tool.notice || "Modellhafte Orientierung, keine Personenbewertung und keine automatische Entscheidung.")}</p>
               <div class="portal-card-actions"><a class="text-link" href="${href(base, tool.href)}">${escapeHtml(tool.actionLabel || "Öffnen")}</a></div>
             </article>`).join("")}
-          </div>
-        </div>
-      </section>`;
-}
-
-function toolFinderSection(base) {
-  const routes = [
-    ["Ich will eine Aussage beantworten", "Debatten-Kompass öffnen", "wirkungsradar/"],
-    ["Ich will ein Produkt einordnen", "Produktwirkung testen", "erleben/produktwirkungsrechner/"],
-    ["Ich will Medien- oder Sprachwirkung prüfen", "Medienwirkungscheck öffnen", "erleben/medienwirkungscheck/"],
-    ["Ich will Projekt- oder Unternehmenswirkung steuern", "Impact Controlling ansehen", "erleben/impact-controlling-rechner/"],
-    ["Ich will Wohnen, Kommune oder Resilienz verstehen", "Wohnwirkung öffnen", "erleben/wohnwirkungsrechner/"],
-    ["Ich suche die Methode hinter einem Begriff", "Methodenlandkarte filtern", "#method-map-title"],
-  ];
-  return `<section class="section" aria-labelledby="tool-finder-title">
-        <div>
-          <div class="section-header">
-            <p class="hero-kicker">Tool-Finder</p>
-            <h2 id="tool-finder-title">Welche Frage bringst du mit?</h2>
-            <p>Nicht alles hier ist ein Rechner. Einige Seiten erklären Begriffe, andere zeigen Demos, wieder andere sind Methodik, Registerlogik, Governance oder Labor.</p>
-          </div>
-          <div class="card-grid three">
-            ${routes.map(([question, label, target]) => `<article class="card">
-              <p class="card-kicker">Nutzerfrage</p>
-              <h3 class="card-title">${escapeHtml(question)}</h3>
-              <div class="portal-card-actions"><a class="text-link" href="${href(base, target)}">${escapeHtml(label)}</a></div>
-            </article>`).join("")}
-          </div>
-        </div>
-      </section>`;
-}
-
-function toolContractSection(base) {
-  return `<section class="section" aria-labelledby="tool-contract-title">
-        <div class="card method-orientation-card">
-          <p class="hero-kicker">WÖk-Contract</p>
-          <h2 id="tool-contract-title">Jedes Werkzeug muss Wirkung als Pfad erklären.</h2>
-          <p class="card-text">Auslöser → Wirkungspotenzial → Zustandsveränderung → Wirkungsbewertung → Netto-Wirkung → Rückkopplung → neue Entscheidung. Ein Score allein reicht nicht. Jede Toolseite muss außerdem Datenqualität, Grenzen, Nebenwirkungen und Schutzlinien sichtbar machen.</p>
-          <div class="method-related method-related-large" aria-label="Pflichtbegriffe">
-            ${["Wirkung", "Wirkungspotenzial", "Wirkpfad", "Netto-Wirkung", "NWI", "T-SROI", "Reverse Merit Order", "WÖk-ID", "Datenqualität & Assurance"].map((term) => `<span>${escapeHtml(term)}</span>`).join("")}
           </div>
         </div>
       </section>`;
@@ -1759,17 +1719,17 @@ function dashboardPilotSection(base) {
 function toolOverview() {
   return page({
     rel: "werkzeuge/index.html",
-    title: "Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0",
+    title: "Methoden und Werkzeuge: das passende Werkzeug finden | Wirkungsökonomie",
     description:
       "Tool-Landschaft 2.0 der Wirkungsökonomie: Nutzerfragen, Demos, Methoden, Scorecards, NWI, IOI, T-SROI, Datenqualität, Governance und Schutzlinien.",
     searchSection: "Werkzeuge",
     body: (base) => `<section class="hero method-map-hero">
         <div class="hero-grid">
           <div>
-            <p class="hero-kicker">Tool-Landschaft 2.0</p>
+            <p class="hero-kicker">Praxis und Methoden</p>
             <h1 class="hero-title">Methoden &amp; Werkzeuge der Wirkungsökonomie</h1>
             <p class="hero-subtitle">Erst Alltag, dann Begriff: Finde das passende Werkzeug für deine Frage und sieh erst danach die Methode dahinter.</p>
-            <p class="hero-text">Die Tool-Landschaft trennt Orientierung, Demo, Methode, Kennzahl, Registerlogik, Governance, Labor und Referenz. Keine Karte ist eine amtliche Bewertung, keine Demo trifft automatische Entscheidungen und kein Werkzeug bewertet Personen.</p>
+            <p class="hero-text">Wähle einen Einstieg für deine Frage oder suche direkt im Methodenkatalog. Demos veranschaulichen die Anwendung mit modellhaften Annahmen; Methodenseiten erklären Voraussetzungen, Rechenwege und Grenzen.</p>
             ${printActions(base)}
           </div>
           <aside class="protection-notice" role="note" aria-label="Schutzlinien der Tool-Landschaft">
@@ -1783,33 +1743,32 @@ function toolOverview() {
           </aside>
         </div>
       </section>
-      ${toolFinderSection(base)}
       ${publicToolEntrypointsSection(base)}
-      <section class="section method-orientation-section" aria-labelledby="method-orientation-title">
+      <details class="section explanation-details method-orientation-section"><summary id="method-orientation-title">Begriffe, Kennzahlen und Demos unterscheiden</summary>
         <div class="card method-orientation-card">
           <p class="hero-kicker">Orientierung</p>
-          <h2 id="method-orientation-title">Begriff, Methode, Kennzahl, Instrument, Institution oder Demo?</h2>
-          <p class="card-text">Nicht jede Karte hat dieselbe Funktion: Begriffe erklären den Zielrahmen, WÖk-IDs adressieren Daten, Scorecards bewerten, der NWI verdichtet operativ, T-SROI beschreibt Transformationshebel, Reverse Merit Order setzt Nichtkompensationsgrenzen, der Wirkungsrat sichert Governance und Demos zeigen modellhafte Anwendungen.</p>
+          <h2>Was leistet welches Instrument?</h2>
+          <p class="card-text">Nicht jede Karte hat dieselbe Funktion: Begriffe erklären den Zielrahmen, WÖk-IDs adressieren Daten, Scorecards bewerten, der NWI verdichtet operativ, T-SROI vergleicht belegte diskontierte Netto-Nutzenströme mit Kosten, Reverse Merit Order setzt Nichtkompensationsgrenzen, der Wirkungsrat sichert Governance und Demos zeigen modellhafte Anwendungen. <a href="${href(base, "methodik/")}">Den gemeinsamen Prüfweg verstehen</a>.</p>
         </div>
-      </section>
-      ${toolContractSection(base)}
-      ${dashboardPilotSection(base)}
-      <section class="section" aria-labelledby="method-pipeline-title">
+      </details>
+      
+      <details class="section explanation-details" id="dashboard-piloten"><summary>Geführte Pilot-Dashboards für vertiefte Anwendungen</summary>${dashboardPilotSection(base)}</details>
+      <details class="section explanation-details"><summary id="method-pipeline-title">Wie die Methodengruppen zusammenhängen</summary>
         <div>
           <div class="section-header">
             <p class="hero-kicker">Pipeline</p>
-            <h2 id="method-pipeline-title">Von Zielrahmen zu Anwendung</h2>
+            <h2>Von Zielrahmen zu Anwendung</h2>
           </div>
           <nav class="method-pipeline" aria-label="Methodenpipeline">
             ${methodPipeline.map(([cluster, label]) => `<a href="#cluster-${cluster.toLowerCase()}"><strong>${escapeHtml(cluster)}</strong><span>${escapeHtml(label)}</span></a>`).join("")}
           </nav>
         </div>
-      </section>
+      </details>
       <section class="section" aria-labelledby="method-map-title">
         <div>
           <div class="section-header">
             <p class="hero-kicker">Filter</p>
-            <h2 id="method-map-title">Acht Cluster statt gemischter Werkzeugliste</h2>
+            <h2 id="method-map-title">Methodenkatalog durchsuchen</h2>
             <p>Jedes Werkzeug bleibt über seine Detailseite erreichbar. Methodenübersichten erklären Nutzerfrage, Grenzen und Anschlussstellen, bevor eine spezielle Anwendung nötig ist.</p>
           </div>
           <form class="tool-filter-panel" data-tool-filter aria-label="Methoden und Werkzeuge filtern">
