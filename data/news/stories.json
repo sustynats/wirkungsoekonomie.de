@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T03:06:25.161Z",
+  "updated_at": "2026-09-05T03:21:33.562Z",
   "stories": [
     {
       "story_id": "wt-f7d7115a53ff2c2f",
@@ -531,6 +531,133 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-f48820e5a3458909",
+      "slug": "74-jahriger-bekampft-angst-und-lernt-schwimmen-458909",
+      "title": "74-Jähriger bekämpft Angst und lernt Schwimmen",
+      "first_seen": "2026-09-05T03:02:00.000Z",
+      "last_updated": "2026-09-05T03:02:00.000Z",
+      "topic": [
+        "Klima",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/muensterland/kreis-warendorf/schwimmen-lernen-sassenberg-100.html",
+          "title": "74-Jähriger bekämpft Angst und lernt Schwimmen",
+          "summary": "Manfred Rüdenholz aus Sassenberg will Nichtschwimmern Mut machen. Er ist auf dem Weg, seine Wasserangst in den Griff zu kriegen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T03:02:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "ebaa2a4d406738f21668cbacb07e102466066b378021434991cc57172c3a9274",
+          "source_item_id": "9722ab4e4ea7d0dcb5cc4a61dc04a4a9ede899e3b42578110ab22ec98432ac26",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T03:02:00.000Z",
+          "ingested_at": "2026-09-05T03:21:33.562Z",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f48820e5a3458909-claim-01",
+          "story_id": "wt-f48820e5a3458909",
+          "claim": "74-Jähriger bekämpft Angst und lernt Schwimmen: Manfred Rüdenholz aus Sassenberg will Nichtschwimmern Mut machen. Er ist auf dem Weg, seine Wasserangst in den Griff zu kriegen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T03:21:33.562Z"
+        }
+      ],
+      "content_hash": "88b030c50b09ebd87f1a3e2e75b81ab217b21504577426d34112f4e17edf3222",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T03:21:33.562Z",
+      "event_first_seen_at": "2026-09-05T03:21:33.562Z",
+      "event_detected_at": "2026-09-05T03:21:33.562Z",
+      "event_id": "event-652b9eb970ebbdf9d49f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima",
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 19.559366666666666,
+        "detection_delay_minutes": 19.559366666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T03:21:33.562Z",
+      "rejection": {
+        "at": "2026-09-05T03:21:33.562Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -10605,7 +10732,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-05T03:06:25.161Z",
+          "ingested_at": "2026-09-05T03:21:33.562Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -10632,7 +10759,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T03:06:25.161Z"
+          "checked_at": "2026-09-05T03:21:33.562Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -10644,7 +10771,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-05T03:06:25.161Z",
+      "updated_at": "2026-09-05T03:21:33.562Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -10674,20 +10801,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 441.40268333333336,
+        "source_age_minutes": 456.5427,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 494.9693,
+        "queue_age_minutes": 510.10931666666664,
         "target_publication_minutes": 120,
-        "news_freshness_score": 8,
+        "news_freshness_score": 5,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T03:06:25.161Z",
+      "rejected_at": "2026-09-05T03:21:33.562Z",
       "rejection": {
-        "at": "2026-09-05T03:06:25.161Z",
+        "at": "2026-09-05T03:21:33.562Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
