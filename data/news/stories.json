@@ -1,7 +1,1176 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T17:06:26.753Z",
+  "updated_at": "2026-09-05T17:21:20.943Z",
   "stories": [
+    {
+      "story_id": "wt-6a7145e6dc679f95",
+      "slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
+      "title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
+      "first_seen": "2026-09-03T16:31:09.000Z",
+      "last_updated": "2026-09-05T17:22:47.064Z",
+      "published_at": "2026-09-04T02:22:48.837Z",
+      "updated_at": "2026-09-05T17:22:47.064Z",
+      "topic": [
+        "Klima",
+        "Soziales",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+          "title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
+          "summary": "Die Landesregierung will Klimaanlagen für Kitas und Pflegeeinrichtungen fördern. Die Folgen der Hitzewelle scheinen auch andere Parteien aufgerüttelt zu haben: Für das neue Programm gibt es Unterstützung - und etwas Kritik.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:31:09.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3",
+          "source_item_id": "aad4b9b61f285e525377936239ee8cad1e12c99623666f97f4df311cdb6ccee0",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T16:31:09.000Z",
+          "ingested_at": "2026-09-04T02:21:15.650Z",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6a7145e6dc679f95-v3-claim-1",
+          "story_id": "wt-6a7145e6dc679f95",
+          "claim": "Hessen hat ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen beschlossen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "c6f1df7b7eef7311d37f",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "9518accd9f6c154dc635",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "23a345b8ce824f16f27a",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:22:47.064Z"
+        },
+        {
+          "claim_id": "wt-6a7145e6dc679f95-v3-claim-2",
+          "story_id": "wt-6a7145e6dc679f95",
+          "claim": "Für das Programm sind rund zehn Millionen Euro vorgesehen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "c6f1df7b7eef7311d37f",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:22:47.064Z"
+        },
+        {
+          "claim_id": "wt-6a7145e6dc679f95-v3-claim-3",
+          "story_id": "wt-6a7145e6dc679f95",
+          "claim": "Pro Standort sind bis zu 5.000 Euro Förderung geplant.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "058271c3caea1ef40503",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:22:47.064Z"
+        },
+        {
+          "claim_id": "wt-6a7145e6dc679f95-v3-claim-4",
+          "story_id": "wt-6a7145e6dc679f95",
+          "claim": "Das Ministerium nennt als Ziel den Schutz besonders gefährdeter Menschen vor Hitzewellen.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "20cbf7dcef05b5086691",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "058271c3caea1ef40503",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:22:47.064Z"
+        },
+        {
+          "claim_id": "wt-6a7145e6dc679f95-v3-claim-5",
+          "story_id": "wt-6a7145e6dc679f95",
+          "claim": "Die Grünen unterstützen das Programm, kritisieren aber die Finanzierung zulasten anderer Klimaschutzmittel.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "ccf28efb531007a78c3b",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "156c17807d9c1053fa8b",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:22:47.064Z"
+        },
+        {
+          "claim_id": "wt-6a7145e6dc679f95-v3-claim-6",
+          "story_id": "wt-6a7145e6dc679f95",
+          "claim": "Das Ministerium erwartet mehr als 6.000 geförderte Anlagen im Jahr, zugleich bleibt offen, ob das ausreicht.",
+          "status": "single_source_claim",
+          "source_id": "hr-hessenschau",
+          "evidence": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "7e3fc801aa6a86d59934",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "excerpt_hash": "7896dfe54b576e54d605",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:22:47.064Z"
+        }
+      ],
+      "event_id": "event-49e6ddd9913a3803a948",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-05T17:22:29.915Z",
+      "publish_ready_at": "2026-09-05T17:22:47.064Z",
+      "news_status": "preliminary",
+      "deepening_due_at": null,
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T17:21:20.943Z",
+        "fingerprint": "28a1e68de467ed557ab667e1b80a7a5584aac8211817c45e6f76a1c344f7628a",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Startet das Förderprogramm tatsächlich mit Antragsbeginn und ersten Bewilligungen innerhalb der angekündigten Laufzeit?",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Erste veröffentlichte Bewilligungen oder Ministeriumsangaben zu Anträgen und Auszahlungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-eb732b42b2d7e1be",
+          "announced_at": "2026-09-03T16:31:09.000Z",
+          "follow_up_date": "2026-09-11T02:22:48.837Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
+      "published": true,
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-e46aae3db6197635-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "e46aae3db61976355dd4c5640757c8e03516a186c2f895f520b783d4760caa13"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-bcaa1257892d137b-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "bcaa1257892d137bdea4bc59e5d7b87e2687065615a8f6a012e30ead91521992"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-ed9d6b837154562e-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "ed9d6b837154562eac4bc9bbce19b45ce940ffc51f9b6bdf6f8c736fa2683fa0"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-6314664b366e4bfd-source.png",
+          "sha256": "6314664b366e4bfdec00fa086515191f71354d56c30dee58a5449b26224e65b4",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-04T10:11:34.122Z"
+        },
+        "fingerprint": "8a32a32fd61110c40a3da1e6b9ecfcffc555b9d0e2017b8fcef1f8c46559b33b",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-04T10:13:27.975Z",
+        "status": "generated",
+        "retry_after": "2026-09-04T18:01:52.790Z"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 3,
+      "source_summary": "Die hessische Landesregierung will Klimaanlagen in Kitas und Pflegeeinrichtungen fördern. Das Programm „Hitzehilfe für Hessen“ ist für drei Jahre angelegt; genannt werden rund zehn Millionen Euro und bis zu 5.000 Euro pro Standort. Förderfähig sollen mobile und teilstationäre Anlagen sein, Anträge können kommunale, freigemeinnützige und private Träger stellen.\n\nIm Landtag begründete Umweltminister Ingmar Jung den Schritt mit häufigeren Hitzewellen und dem Schutz besonders gefährdeter Menschen. Die Grünen unterstützen das Vorhaben grundsätzlich, kritisieren aber, dass Geld dafür aus anderen Klimaschutzmitteln entnommen werde. Das Ministerium spricht von mehr als 6.000 Anlagen im Jahr; zugleich wird im Bericht offen gelassen, ob das für den Bedarf reicht.",
+      "analysis": {
+        "story_id": "wt-6a7145e6dc679f95",
+        "news_status": "preliminary",
+        "publication_depth": "deepened",
+        "summary": "Hessen will ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen starten. Genannt werden zehn Millionen Euro und bis zu 5.000 Euro pro Standort.",
+        "detail_summary": "Gesichert ist, dass Hessen ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen angekündigt hat. Der Bericht nennt rund zehn Millionen Euro, bis zu 5.000 Euro je Standort und Förderungen für mobile sowie teilstationäre Anlagen. Das ist materiell, weil es öffentliche Mittel, Anreize für Träger und die Ausstattung besonders hitzeanfälliger Einrichtungen betrifft. Der Wirkpfad läuft über Investitionen in Kühlung und damit über veränderte Schutzstandards in Betreuung und Pflege. Mögliche Folgen sind bessere Hitzetoleranz in einzelnen Einrichtungen, aber auch Verdrängungseffekte bei anderen Klimaschutzbudgets. Offen bleibt, wie viele Standorte tatsächlich beantragen, ob das Budget reicht und ob die Maßnahme die Belastung ausreichend senkt.",
+        "why_relevant": "Die Meldung verändert einen öffentlichen Förderrahmen für besonders hitzegefährdete Einrichtungen und kann damit Investitionen, Prioritäten und Schutzstandards betreffen.",
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Kitas, Pflegeeinrichtungen und damit Kinder, ältere und pflegebedürftige Menschen; der Schutz vor Hitzebelastung ist unmittelbar relevant."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Förderung verschiebt Mittel in technische Kühlung; zugleich kann sie mit klimabezogenen Prioritäten konkurrieren, ohne selbst eine Umweltwirkung zu belegen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Öffentliche Mittel werden politisch umgeschichtet; die Debatte zeigt Konflikte über Prioritäten und Kontrolle von Klimaschutzbudgets."
+        },
+        "importance": "mittel",
+        "impact_potential": "Das Programm kann den Einbau von Kühltechnik in besonders belasteten Einrichtungen erleichtern und damit die Hitzeschutz-Resilienz einzelner Standorte erhöhen. Zugleich lenkt es öffentliche Mittel in eine technische Lösung, die andere Klimaschutzmaßnahmen verdrängen könnte.",
+        "impact_risks": [
+          "Mögliche Verdrängung von Geld aus anderen Klimaschutz- oder Beratungsangeboten",
+          "Unklar, ob die Förderung für den tatsächlichen Bedarf ausreicht",
+          "Technische Kühlung kann Folgekosten und Energiebedarf erhöhen"
+        ],
+        "mechanisms": [
+          "öffentliche Zuschüsse senken Investitionshürden",
+          "Träger können schneller Kühltechnik anschaffen",
+          "Priorisierung verschiebt Mittel innerhalb der Klimapolitik"
+        ],
+        "first_order": [
+          "mehr Anträge und Installationen in Kitas und Pflegeeinrichtungen möglich",
+          "kurzfristig bessere Kühlung in einzelnen Gebäuden möglich"
+        ],
+        "second_order": [
+          "Umverteilung knapper Haushaltsmittel zugunsten technischer Hitzeschutzmaßnahmen",
+          "politische Debatte über wirksame Klimaanpassung kann zunehmen"
+        ],
+        "third_order": [
+          "mögliche Verschiebung von Standards für Hitzeschutz in öffentlichen und halboffenen Einrichtungen",
+          "wenn das Modell ausgeweitet wird, könnte es Investitionspfade in kommunalen Gebäuden prägen"
+        ],
+        "systemic_relevance": "Die Maßnahme ist eher sektorbezogen als systemisch, hat aber Signalwirkung für die Priorisierung von Anpassung gegenüber anderen Klimaschutzmaßnahmen.",
+        "transformation_potential": "Begrenzt: Sie kann lokale Anpassungsinvestitionen auslösen, aber keine grundlegende Strukturveränderung im Energie- oder Gebäudesystem belegen.",
+        "resilience": "Potenzial für höhere Hitzeschutz-Resilienz in besonders verletzlichen Einrichtungen; die gesamtgesellschaftliche Resilienz bleibt offen.",
+        "side_effects": [
+          "mögliche Konflikte mit bestehenden Klimaschutzbudgets",
+          "möglicher zusätzlicher Strombedarf durch Kühlung",
+          "ungleiche Nutzung je nach Träger und Antragsfähigkeit"
+        ],
+        "uncertainties": [
+          "Wie viele Einrichtungen tatsächlich gefördert werden",
+          "Ob die Mittel für den Bedarf ausreichen",
+          "Ob die angekündigten Entlastungen in der Praxis eintreten"
+        ],
+        "evidence_level": "medium",
+        "attribution": "Die Förderankündigung wird der Landesregierung bzw. Umweltminister Ingmar Jung zugeschrieben; die Kritik stammt von Grünen-Abgeordneten und wird im Bericht wiedergegeben.",
+        "watch_next": [
+          "Wird das Programm formal umgesetzt und veröffentlicht?",
+          "Wie viele Anträge und Bewilligungen folgen?",
+          "Bleibt die Kritik an der Gegenfinanzierung bestehen?"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 3",
+          "Agenda 2030/SDG 13"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "none",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Gegenüber der vorigen Kurzmeldung liefert die Quelle zusätzliche materielle Details zu Laufzeit, Fördersumme, Zielgruppe und politischer Kontroverse."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Fördervolumen",
+              "value": "zehn Millionen Euro",
+              "unit": "Euro",
+              "context": "Gesamtmittel für das Programm"
+            },
+            {
+              "label": "Förderung pro Standort",
+              "value": "5.000",
+              "unit": "Euro",
+              "context": "Maximalbetrag je Standort"
+            },
+            {
+              "label": "Programmdauer",
+              "value": "drei Jahre",
+              "unit": "Jahre",
+              "context": "Laufzeit der Hitzehilfe",
+              "claim_id": "wt-6a7145e6dc679f95-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "kinder_jugend",
+            "aeltere",
+            "patientinnen",
+            "kommunen"
+          ],
+          "tendency": {
+            "human": "chance",
+            "planet": "gemischt",
+            "democracy": "gemischt"
+          }
+        },
+        "media_impact": null,
+        "publication_recommendation": true,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-05T17:21:20.943Z",
+        "media_trigger_fingerprint": "a61d5646009ebb3d7387f98c4fb843e729808a7e6506fddeecb38f0f78358817",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "a61d5646009ebb3d7387f98c4fb843e729808a7e6506fddeecb38f0f78358817",
+          "content_fingerprint": "344d17c88d10c13ca0ecf8cd75d358a7bfc39d83948c67dfb29cfa5bc5af4ab6",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-04T02:22:48.837Z",
+          "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
+          "source_summary": "Die hessenschau berichtet, dass die Landesregierung Klimaanlagen für Kitas und Pflegeeinrichtungen fördern will. Nach Angaben im Bericht sollen dafür rund zehn Millionen Euro bereitstehen; das Programm „Hitzehilfe für Hessen“ sei auf drei Jahre angelegt und solle mobile sowie teilstationäre Anlagen unterstützen.\n\nGenannt werden außerdem Förderregeln: Bis zu 5.000 Euro pro Standort seien vorgesehen, und mehr als 6.000 Anlagen sollen im Jahr gefördert werden. Im Landtag gebe es Unterstützung für das Vorhaben, aber auch Kritik. Die Grünen begrüßten den Hitzeschutz, verwiesen jedoch auf fehlende Mittel an anderer Stelle; die FDP forderte zusätzlich Verschattung, Dämmung, Begrünung und weitere Klimaanpassung in öffentlichen Gebäuden.",
+          "analysis": {
+            "story_id": "wt-6a7145e6dc679f95",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Hessen will ein Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen auflegen. Im Bericht sind zehn Millionen Euro, eine Laufzeit von drei Jahren und Kritik aus der Opposition genannt.",
+            "detail_summary": "Gesichert berichtet ist ein neues hessisches Fördervorhaben für Klimaanlagen in Kitas und Pflegeeinrichtungen. Der Quellenkern ist klar: rund zehn Millionen Euro, eine Laufzeit von drei Jahren und ein Ziel von mehr als 6.000 geförderten Anlagen pro Jahr. Das ist materiell relevant, weil damit öffentliche Mittel in den Hitzeschutz besonders gefährdeter Gruppen gelenkt werden und sich Anreize für technische Anpassung in sozialen Einrichtungen verschieben. Mögliche Folgen sind bessere Innenraumtemperaturen und geringere Hitzebelastung, zugleich aber Verdrängungseffekte bei anderen Klimaanpassungsmaßnahmen. Offen bleibt, wie breit das Programm tatsächlich genutzt wird, ob die Mittel reichen und ob die Förderung die angekündigte Wirkung in der Fläche erreicht. Die Evidenzlage ist vorerst auf einen journalistischen Bericht mit zugeschriebenen Angaben begrenzt; unabhängige Bestätigung liegt hier noch nicht vor.",
+            "why_relevant": "Das Vorhaben verschiebt öffentliche Mittel in einen Bereich mit direkter Betroffenheit für vulnerable Gruppen und kann Anreize für Klimaanpassung in sozialen Einrichtungen verändern.",
+            "status": "angekündigt",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind Kinder, Pflegebedürftige und Einrichtungen mit unmittelbarer Hitzebelastung; der Wirkpfad zielt auf Gesundheitsschutz und Schutz vor Extremtemperaturen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Die Maßnahme setzt auf technische Kühlung und kann den Energiebedarf erhöhen; zugleich adressiert sie Anpassung an Klimafolgen, nicht deren Ursache."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Öffentliche Haushaltsmittel und Prioritätensetzung werden politisch entschieden; die Debatte zeigt Verteilungs- und Priorisierungskonflikte."
+            },
+            "importance": "hoch",
+            "impact_potential": "Das Programm kann Hitzeschäden in besonders sensiblen Einrichtungen verringern, indem es Kühlung finanziell erleichtert und Investitionen beschleunigt.",
+            "impact_risks": [
+              "Höherer Strombedarf und mögliche Zielkonflikte mit Klimaschutz",
+              "Mittelverdrängung bei anderen Anpassungsmaßnahmen wie Dämmung, Verschattung oder Beratung"
+            ],
+            "mechanisms": [
+              "Förderung senkt Investitionshürden für Klimaanlagen",
+              "Kommunale und freie Träger erhalten einen finanziellen Anreiz zur schnellen Beschaffung"
+            ],
+            "first_order": [
+              "Einrichtungen können schneller Kühltechnik anschaffen",
+              "Einzelne Räume werden kurzfristig besser gegen Hitze geschützt"
+            ],
+            "second_order": [
+              "Haushaltsmittel werden anders verteilt",
+              "Andere Anpassungsmaßnahmen könnten zurückgestellt werden"
+            ],
+            "third_order": [
+              "Technische Kühlung könnte zur Standardantwort auf Hitzestress in sozialen Einrichtungen werden",
+              "Die Priorisierung öffentlicher Anpassungspolitik verschiebt sich zugunsten sofort wirksamer Technik"
+            ],
+            "systemic_relevance": "Systemisch relevant ist vor allem die Lenkung öffentlicher Anpassungsinvestitionen in einen Bereich mit hoher Vulnerabilität und möglicher Signalwirkung für weitere Länderprogramme.",
+            "transformation_potential": "Begrenzt bis mittel: Die Maßnahme kann Beschaffungs- und Förderlogiken für Hitzeschutz verändern, ersetzt aber keine umfassende Bau- und Stadtanpassung.",
+            "resilience": "Kurzfristig kann die Widerstandsfähigkeit von Kitas und Pflegeeinrichtungen gegen Hitzespitzen steigen; langfristige Resilienz hängt davon ab, ob ergänzend bauliche und organisatorische Maßnahmen folgen.",
+            "side_effects": [
+              "Mögliche Abhängigkeit von energieintensiver Kühlung",
+              "Ungleichgewicht zwischen Soforthilfe und struktureller Prävention"
+            ],
+            "uncertainties": [
+              "Wie viele Einrichtungen tatsächlich gefördert werden",
+              "Ob die Mittel für den Bedarf ausreichen",
+              "Ob die angekündigten Effekte in der Praxis eintreten"
+            ],
+            "evidence_level": "evidence_from_single_journalistic_source_with_attributed_official_statements",
+            "attribution": "Die Angaben werden in einem journalistischen Bericht wiedergegeben; unabhängige Zweitquellen oder der vollständige amtliche Originaltext liegen hier nicht vor.",
+            "watch_next": [
+              "Beginnende Antragsphase, Bewilligungen und tatsächliche Mittelabflüsse beobachten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3, SDG 11, SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "affected_scope",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neues Förderprogramm mit Haushaltsmittelbindung, mehrjähriger Laufzeit und unmittelbarer Relevanz für vulnerable Gruppen; Evidenz bislang nur aus einem Bericht mit zugeschriebenen Amtsangaben."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Fördervolumen",
+                  "value": "zehn Millionen",
+                  "unit": "Euro",
+                  "context": "Geplantes Budget für den Hitzeschutz in Kitas und Pflegeeinrichtungen"
+                },
+                {
+                  "label": "Laufzeit",
+                  "value": "drei",
+                  "unit": "Jahre",
+                  "context": "Geplante Dauer des Förderprogramms"
+                },
+                {
+                  "label": "Förderung pro Standort",
+                  "value": "5.000",
+                  "unit": "Euro",
+                  "context": "Maximale Summe je Standort"
+                }
+              ],
+              "affected_groups": [
+                "kinder_jugend",
+                "aeltere",
+                "beschaeftigte",
+                "kommunen"
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "gemischt",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v1-claim-1",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Das Land Hessen will ein Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen auflegen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "1a375c442422af99383d",
+                  "checked_at": "2026-09-04T02:22:48.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:22:48.837Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v1-claim-2",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Für den Hitzeschutz sollen rund zehn Millionen Euro investiert werden.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "c6f1df7b7eef7311d37f",
+                  "checked_at": "2026-09-04T02:22:48.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:22:48.837Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v1-claim-3",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Das Programm „Hitzehilfe für Hessen“ ist für drei Jahre angelegt und soll die Anschaffung mobiler und teilstationärer Anlagen unterstützen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "23a345b8ce824f16f27a",
+                  "checked_at": "2026-09-04T02:22:48.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:22:48.837Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v1-claim-4",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Pro Standort sind bis zu 5.000 Euro Förderung vorgesehen, und mehr als 6.000 Anlagen sollen im Jahr gefördert werden.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "058271c3caea1ef40503",
+                  "checked_at": "2026-09-04T02:22:48.837Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "7e3fc801aa6a86d59934",
+                  "checked_at": "2026-09-04T02:22:48.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:22:48.837Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v1-claim-5",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Die Grünen unterstützen das Hitzeschutzprogramm, kritisieren aber, dass dafür Mittel bei der Beratung und Unterstützung der Klimakommunen fehlen werden.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "ccf28efb531007a78c3b",
+                  "checked_at": "2026-09-04T02:22:48.837Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "f5afebcd34cecb9f325f",
+                  "checked_at": "2026-09-04T02:22:48.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:22:48.837Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v1-claim-6",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Die FDP fordert zusätzlich stärkeren Hitzeschutz in öffentlichen Gebäuden und nennt Verschattung, Dämmung und Begrünung als weitere Maßnahmen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "6a7d4887e4c0c8fd7f75",
+                  "checked_at": "2026-09-04T02:22:48.837Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "0c2ad0cfcebe89d772ed",
+                  "checked_at": "2026-09-04T02:22:48.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T02:22:48.837Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-04T17:42:49.106Z",
+          "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
+          "source_summary": "Die hessenschau berichtet über ein neues Förderprogramm der Landesregierung für Hitzeschutz in Kitas und Pflegeeinrichtungen. Laut Bericht will Hessen rund zehn Millionen Euro investieren, um Klimaanlagen anzuschaffen; das Programm „Hitzehilfe für Hessen“ soll drei Jahre laufen und mobile sowie teilstationäre Anlagen unterstützen. Pro Standort sind bis zu 5.000 Euro Förderung vorgesehen, Anträge sollen kommunale, freigemeinnützige und private Träger stellen können.\n\nIm Landtag wird die Initiative politisch kommentiert. Die Grünen unterstützen den Hitzeschutz grundsätzlich, kritisieren aber mögliche Kürzungen an anderer Stelle. Die AfD fordert zusätzlich Verschattung, Dämmung und intelligente Lüftung. Die FDP spricht sich ebenfalls für mehr Hitzeschutz in öffentlichen Gebäuden aus und nennt weitere bauliche Maßnahmen. Offen bleibt in der Quelle, ob und wie viele Einrichtungen tatsächlich gefördert werden und ob die Mittel ausreichen.",
+          "analysis": {
+            "story_id": "wt-6a7145e6dc679f95",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Hessen will ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen auflegen. Genannt werden zehn Millionen Euro und bis zu 5.000 Euro pro Standort.",
+            "detail_summary": "Gesichert ist zunächst die Ankündigung eines hessischen Förderprogramms für Hitzeschutz in Kitas und Pflegeeinrichtungen mit einem Budget von rund zehn Millionen Euro über drei Jahre. Der Bericht nennt als Ziel die Anschaffung mobiler und teilstationärer Anlagen sowie eine Förderung von bis zu 5.000 Euro je Standort. Politisch stößt das Vorhaben auf Zustimmung und Kritik, aber der konkrete Vollzug bleibt offen. Materiell relevant ist die Meldung vor allem, weil sie öffentliche Mittel in eine konkrete Schutzinfrastruktur für besonders hitzegefährdete Gruppen lenkt. Der Wirkpfad verläuft über Investitionen in technische Kühlung; mögliche Folgen sind bessere Hitzetoleranz in einzelnen Einrichtungen, aber auch Verdrängungseffekte im Haushalt. Unklar bleibt, wie viele Einrichtungen erreicht werden, ob das Budget reicht und ob die Maßnahme im Alltag tatsächlich Entlastung bringt.",
+            "why_relevant": "Die Meldung betrifft die Verteilung öffentlicher Mittel auf Hitzeschutz in besonders sensiblen Einrichtungen und damit konkrete Schutzinfrastruktur für Kinder und Pflegebedürftige.",
+            "status": "angekündigt",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind potenziell Kinder, Pflegebedürftige und Beschäftigte in Einrichtungen mit besonderem Hitzestress."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Die Förderung betrifft Klimaanlagen und damit Technik mit möglichem Energiebedarf; ökologische Folgen bleiben aber in der Quelle offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Das Vorhaben ist Gegenstand parlamentarischer Debatte, Budgetpriorisierung und öffentlicher Kritik."
+            },
+            "importance": "hoch",
+            "impact_potential": "Das Programm kann die Ausstattung einzelner Kitas und Pflegeeinrichtungen verbessern und Hitzebelastung dort mindern; zugleich kann es Budgetspielräume anderer Hitzeschutzmaßnahmen verkleinern.",
+            "impact_risks": [
+              "Mittel könnten an anderer Stelle fehlen, wie die Grünen kritisieren.",
+              "Ohne begleitende bauliche Maßnahmen kann technische Kühlung eine nur begrenzte Lösung bleiben."
+            ],
+            "mechanisms": [
+              "Öffentliche Förderung senkt Anschaffungskosten für Klimaanlagen.",
+              "Träger erhalten Anreize, in Hitzeschutztechnik zu investieren."
+            ],
+            "first_order": [
+              "Mehr Einrichtungen könnten Kühltechnik anschaffen.",
+              "Einzelne Räume könnten bei Hitze besser nutzbar bleiben."
+            ],
+            "second_order": [
+              "Haushaltsmittel werden zugunsten dieses Instruments umgeschichtet.",
+              "Die Debatte verschiebt sich stärker zu technischem Hitzeschutz."
+            ],
+            "third_order": [
+              "Das Programm könnte Vorbild für ähnliche Förderlinien in anderen Ländern werden, falls es tatsächlich umgesetzt und nachgefragt wird."
+            ],
+            "systemic_relevance": "Begrenzt, aber politisch relevant: Es ist eine zielgerichtete staatliche Intervention in die Anpassung an Hitzefolgen für vulnerable Einrichtungen.",
+            "transformation_potential": "Eher inkrementell als transformativ; möglich ist eine stärkere Standardisierung von Hitzeschutztechnik in sozialen Einrichtungen.",
+            "resilience": "Kann lokale Resilienz gegen Hitze erhöhen, bleibt aber abhängig von Strom, Wartung und ergänzenden baulichen Maßnahmen.",
+            "side_effects": [
+              "Höherer Stromverbrauch kann laufende Kosten erhöhen.",
+              "Andere Hitzeschutzmaßnahmen könnten im Budget konkurrieren."
+            ],
+            "uncertainties": [
+              "Ob das Budget für den genannten Bedarf reicht.",
+              "Wie viele Einrichtungen tatsächlich gefördert werden.",
+              "Ob die Maßnahme in der Praxis ausreichend entlastet."
+            ],
+            "evidence_level": "einzelne journalistische Quelle mit konkreten Zahlen und Zitaten; keine unabhängige Bestätigung der Kernaussage im gelieferten Material.",
+            "attribution": "Die Angaben stammen aus dem Bericht der hessenschau; die politische Bewertung ist dort als Stellungnahmen von Grünen, AfD und FDP wiedergegeben.",
+            "watch_next": [
+              "Ob das Programm offiziell beschlossen und ausgeschrieben wird.",
+              "Wie viele Anträge eingehen und bewilligt werden.",
+              "Ob weitere Hitzeschutzmaßnahmen ergänzt werden."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3",
+              "Agenda 2030/SDG 11",
+              "Agenda 2030/SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neues, konkret beziffertes Förderprogramm mit mehrjähriger Laufzeit und Zielgruppe. Die Beleglage ist jedoch nur eine journalistische Quelle ohne unabhängige Bestätigung."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v2-claim-1",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Hessen will für Hitzeschutz in Kitas und Pflegeeinrichtungen rund zehn Millionen Euro für Klimaanlagen investieren.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "c6f1df7b7eef7311d37f",
+                  "checked_at": "2026-09-04T17:42:49.106Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T17:42:49.106Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v2-claim-2",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Das Förderprogramm „Hitzehilfe für Hessen“ ist für drei Jahre angelegt und unterstützt mobile und teilstationäre Anlagen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "23a345b8ce824f16f27a",
+                  "checked_at": "2026-09-04T17:42:49.106Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T17:42:49.106Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v2-claim-3",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Pro Standort sind bis zu 5.000 Euro Förderung vorgesehen; Anträge sollen kommunale, freigemeinnützige und private Träger stellen können.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "058271c3caea1ef40503",
+                  "checked_at": "2026-09-04T17:42:49.106Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "618d6f8cbcc10f6d1fa3",
+                  "checked_at": "2026-09-04T17:42:49.106Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T17:42:49.106Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v2-claim-4",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Die Grünen unterstützen das Programm grundsätzlich, kritisieren aber, dass die zehn Millionen Euro an anderer Stelle fehlen werden.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "f5afebcd34cecb9f325f",
+                  "checked_at": "2026-09-04T17:42:49.106Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "ccf28efb531007a78c3b",
+                  "checked_at": "2026-09-04T17:42:49.106Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T17:42:49.106Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v2-claim-5",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Die AfD fordert neben Klimaanlagen auch Verschattung, Dämmung und intelligente Lüftung und verweist auf bezahlbare Energie.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "460c5125b4f695631608",
+                  "checked_at": "2026-09-04T17:42:49.106Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T17:42:49.106Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v2-claim-6",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Die FDP fordert mittelfristig eine stärkere Klimatisierung öffentlicher Gebäude und nennt zusätzlich Verschattung, Dämmung, Begrünung und Entsiegelung.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "6a7d4887e4c0c8fd7f75",
+                  "checked_at": "2026-09-04T17:42:49.106Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "0c2ad0cfcebe89d772ed",
+                  "checked_at": "2026-09-04T17:42:49.106Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T17:42:49.106Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3"
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-05T17:22:47.064Z",
+          "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
+          "source_summary": "Die hessische Landesregierung will Klimaanlagen in Kitas und Pflegeeinrichtungen fördern. Das Programm „Hitzehilfe für Hessen“ ist für drei Jahre angelegt; genannt werden rund zehn Millionen Euro und bis zu 5.000 Euro pro Standort. Förderfähig sollen mobile und teilstationäre Anlagen sein, Anträge können kommunale, freigemeinnützige und private Träger stellen.\n\nIm Landtag begründete Umweltminister Ingmar Jung den Schritt mit häufigeren Hitzewellen und dem Schutz besonders gefährdeter Menschen. Die Grünen unterstützen das Vorhaben grundsätzlich, kritisieren aber, dass Geld dafür aus anderen Klimaschutzmitteln entnommen werde. Das Ministerium spricht von mehr als 6.000 Anlagen im Jahr; zugleich wird im Bericht offen gelassen, ob das für den Bedarf reicht.",
+          "analysis": {
+            "story_id": "wt-6a7145e6dc679f95",
+            "news_status": "preliminary",
+            "publication_depth": "deepened",
+            "summary": "Hessen will ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen starten. Genannt werden zehn Millionen Euro und bis zu 5.000 Euro pro Standort.",
+            "detail_summary": "Gesichert ist, dass Hessen ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen angekündigt hat. Der Bericht nennt rund zehn Millionen Euro, bis zu 5.000 Euro je Standort und Förderungen für mobile sowie teilstationäre Anlagen. Das ist materiell, weil es öffentliche Mittel, Anreize für Träger und die Ausstattung besonders hitzeanfälliger Einrichtungen betrifft. Der Wirkpfad läuft über Investitionen in Kühlung und damit über veränderte Schutzstandards in Betreuung und Pflege. Mögliche Folgen sind bessere Hitzetoleranz in einzelnen Einrichtungen, aber auch Verdrängungseffekte bei anderen Klimaschutzbudgets. Offen bleibt, wie viele Standorte tatsächlich beantragen, ob das Budget reicht und ob die Maßnahme die Belastung ausreichend senkt.",
+            "why_relevant": "Die Meldung verändert einen öffentlichen Förderrahmen für besonders hitzegefährdete Einrichtungen und kann damit Investitionen, Prioritäten und Schutzstandards betreffen.",
+            "status": "angekündigt",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind Kitas, Pflegeeinrichtungen und damit Kinder, ältere und pflegebedürftige Menschen; der Schutz vor Hitzebelastung ist unmittelbar relevant."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Die Förderung verschiebt Mittel in technische Kühlung; zugleich kann sie mit klimabezogenen Prioritäten konkurrieren, ohne selbst eine Umweltwirkung zu belegen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Öffentliche Mittel werden politisch umgeschichtet; die Debatte zeigt Konflikte über Prioritäten und Kontrolle von Klimaschutzbudgets."
+            },
+            "importance": "mittel",
+            "impact_potential": "Das Programm kann den Einbau von Kühltechnik in besonders belasteten Einrichtungen erleichtern und damit die Hitzeschutz-Resilienz einzelner Standorte erhöhen. Zugleich lenkt es öffentliche Mittel in eine technische Lösung, die andere Klimaschutzmaßnahmen verdrängen könnte.",
+            "impact_risks": [
+              "Mögliche Verdrängung von Geld aus anderen Klimaschutz- oder Beratungsangeboten",
+              "Unklar, ob die Förderung für den tatsächlichen Bedarf ausreicht",
+              "Technische Kühlung kann Folgekosten und Energiebedarf erhöhen"
+            ],
+            "mechanisms": [
+              "öffentliche Zuschüsse senken Investitionshürden",
+              "Träger können schneller Kühltechnik anschaffen",
+              "Priorisierung verschiebt Mittel innerhalb der Klimapolitik"
+            ],
+            "first_order": [
+              "mehr Anträge und Installationen in Kitas und Pflegeeinrichtungen möglich",
+              "kurzfristig bessere Kühlung in einzelnen Gebäuden möglich"
+            ],
+            "second_order": [
+              "Umverteilung knapper Haushaltsmittel zugunsten technischer Hitzeschutzmaßnahmen",
+              "politische Debatte über wirksame Klimaanpassung kann zunehmen"
+            ],
+            "third_order": [
+              "mögliche Verschiebung von Standards für Hitzeschutz in öffentlichen und halboffenen Einrichtungen",
+              "wenn das Modell ausgeweitet wird, könnte es Investitionspfade in kommunalen Gebäuden prägen"
+            ],
+            "systemic_relevance": "Die Maßnahme ist eher sektorbezogen als systemisch, hat aber Signalwirkung für die Priorisierung von Anpassung gegenüber anderen Klimaschutzmaßnahmen.",
+            "transformation_potential": "Begrenzt: Sie kann lokale Anpassungsinvestitionen auslösen, aber keine grundlegende Strukturveränderung im Energie- oder Gebäudesystem belegen.",
+            "resilience": "Potenzial für höhere Hitzeschutz-Resilienz in besonders verletzlichen Einrichtungen; die gesamtgesellschaftliche Resilienz bleibt offen.",
+            "side_effects": [
+              "mögliche Konflikte mit bestehenden Klimaschutzbudgets",
+              "möglicher zusätzlicher Strombedarf durch Kühlung",
+              "ungleiche Nutzung je nach Träger und Antragsfähigkeit"
+            ],
+            "uncertainties": [
+              "Wie viele Einrichtungen tatsächlich gefördert werden",
+              "Ob die Mittel für den Bedarf ausreichen",
+              "Ob die angekündigten Entlastungen in der Praxis eintreten"
+            ],
+            "evidence_level": "medium",
+            "attribution": "Die Förderankündigung wird der Landesregierung bzw. Umweltminister Ingmar Jung zugeschrieben; die Kritik stammt von Grünen-Abgeordneten und wird im Bericht wiedergegeben.",
+            "watch_next": [
+              "Wird das Programm formal umgesetzt und veröffentlicht?",
+              "Wie viele Anträge und Bewilligungen folgen?",
+              "Bleibt die Kritik an der Gegenfinanzierung bestehen?"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3",
+              "Agenda 2030/SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber der vorigen Kurzmeldung liefert die Quelle zusätzliche materielle Details zu Laufzeit, Fördersumme, Zielgruppe und politischer Kontroverse."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Fördervolumen",
+                  "value": "zehn Millionen Euro",
+                  "unit": "Euro",
+                  "context": "Gesamtmittel für das Programm"
+                },
+                {
+                  "label": "Förderung pro Standort",
+                  "value": "5.000",
+                  "unit": "Euro",
+                  "context": "Maximalbetrag je Standort"
+                },
+                {
+                  "label": "Programmdauer",
+                  "value": "drei Jahre",
+                  "unit": "Jahre",
+                  "context": "Laufzeit der Hitzehilfe",
+                  "claim_id": "wt-6a7145e6dc679f95-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "kinder_jugend",
+                "aeltere",
+                "patientinnen",
+                "kommunen"
+              ],
+              "tendency": {
+                "human": "chance",
+                "planet": "gemischt",
+                "democracy": "gemischt"
+              }
+            },
+            "media_impact": null,
+            "publication_recommendation": true,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-05T17:21:20.943Z",
+            "media_trigger_fingerprint": "a61d5646009ebb3d7387f98c4fb843e729808a7e6506fddeecb38f0f78358817",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "a61d5646009ebb3d7387f98c4fb843e729808a7e6506fddeecb38f0f78358817",
+              "content_fingerprint": "344d17c88d10c13ca0ecf8cd75d358a7bfc39d83948c67dfb29cfa5bc5af4ab6",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v3-claim-1",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Hessen hat ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen beschlossen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "c6f1df7b7eef7311d37f",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "9518accd9f6c154dc635",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "23a345b8ce824f16f27a",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v3-claim-2",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Für das Programm sind rund zehn Millionen Euro vorgesehen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "c6f1df7b7eef7311d37f",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v3-claim-3",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Pro Standort sind bis zu 5.000 Euro Förderung geplant.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "058271c3caea1ef40503",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v3-claim-4",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Das Ministerium nennt als Ziel den Schutz besonders gefährdeter Menschen vor Hitzewellen.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "20cbf7dcef05b5086691",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "058271c3caea1ef40503",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v3-claim-5",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Die Grünen unterstützen das Programm, kritisieren aber die Finanzierung zulasten anderer Klimaschutzmittel.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "ccf28efb531007a78c3b",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "156c17807d9c1053fa8b",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            },
+            {
+              "claim_id": "wt-6a7145e6dc679f95-v3-claim-6",
+              "story_id": "wt-6a7145e6dc679f95",
+              "claim": "Das Ministerium erwartet mehr als 6.000 geförderte Anlagen im Jahr, zugleich bleibt offen, ob das ausreicht.",
+              "status": "single_source_claim",
+              "source_id": "hr-hessenschau",
+              "evidence": [
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "7e3fc801aa6a86d59934",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                },
+                {
+                  "source_id": "hr-hessenschau",
+                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+                  "excerpt_hash": "7896dfe54b576e54d605",
+                  "checked_at": "2026-09-05T17:22:47.064Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:22:47.064Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "hr-hessenschau",
+              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
+              "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-04T02:22:48.837Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-04T17:42:49.106Z",
+          "source_count": 1
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-05T17:22:47.064Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-511db9ee9aff8bfd",
       "slug": "schauspieler-darum-hatte-robert-pattinson-nach-der-geburt-seines-kindes-mehr-zeit-zu-arb-ff8bfd",
@@ -3005,7 +4174,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "9eb21fc79fb90c9c3d3a3626adc2eed4c4ac5b3faa5cc00767a54bf0e2fe63db",
           "issue_codes": [],
           "warning_codes": []
@@ -5008,7 +6177,7 @@
       "verification_started_at": "2026-09-05T13:57:21.759Z",
       "publish_ready_at": "2026-09-05T13:57:35.799Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T14:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -5337,9 +6506,12 @@
         "generated_at": "2026-09-05T13:58:38.903Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "ed247b17885d4dc50ce3324e36db38c26201a390c487d081b5c87da32bf6896f",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "01f470f61307ef9951e47512d1c30cee086b875ef826f0ac4dbdefcb8089d21f",
+        "checked_at": "2026-09-05T17:21:20.943Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T23:21:20.943Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -5371,61 +6543,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_REQUIRED_STRING:source_summary",
-          "AI_REQUIRED_STRING:summary",
-          "AI_REQUIRED_STRING:why_relevant",
-          "AI_REQUIRED_STRING:status",
-          "AI_REQUIRED_STRING:analysis_type",
-          "AI_REQUIRED_STRING:importance",
-          "AI_REQUIRED_STRING:impact_potential",
-          "AI_REQUIRED_STRING:systemic_relevance",
-          "AI_REQUIRED_STRING:transformation_potential",
-          "AI_REQUIRED_STRING:resilience",
-          "AI_REQUIRED_STRING:evidence_level",
-          "AI_REQUIRED_STRING:attribution",
-          "AI_REQUIRED_STRING:detail_summary",
-          "AI_STATUS_INVALID",
-          "AI_ANALYSIS_TYPE_INVALID",
-          "AI_IMPORTANCE_INVALID",
-          "AI_PUBLICATION_GATE_REQUIRED",
-          "AI_DIMENSION_INVALID:human",
-          "AI_DIMENSION_INVALID:planet",
-          "AI_DIMENSION_INVALID:democracy",
-          "AI_ARRAY_REQUIRED:impact_risks",
-          "AI_ARRAY_REQUIRED:mechanisms",
-          "AI_ARRAY_REQUIRED:first_order",
-          "AI_ARRAY_REQUIRED:second_order",
-          "AI_ARRAY_REQUIRED:third_order",
-          "AI_ARRAY_REQUIRED:side_effects",
-          "AI_ARRAY_REQUIRED:uncertainties",
-          "AI_ARRAY_REQUIRED:watch_next",
-          "AI_ARRAY_REQUIRED:reference_frameworks",
-          "AI_UNCERTAINTY_REQUIRED",
-          "AI_WATCH_NEXT_REQUIRED",
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "NEWS_STATUS_REQUIRED",
-          "EVENT_CLAIMS_REQUIRED"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
-          "fingerprint": "2c4c71dbe59e88f96ef78d752df90d3b56ae3903f2470c677efa89f452c75f56",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-7679a123e1941a2f",
@@ -11613,7 +12733,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "48bad01993b1585a02bf4145fc83642d90c69e61d8ee25edebeb007ca5862f12",
           "issue_codes": [
             "SOURCE_URL_INVALID"
@@ -18590,7 +19710,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T17:06:26.753Z"
+          "checked_at": "2026-09-05T17:21:20.943Z"
         },
         {
           "claim_id": "wt-47a5ce1a57b5588c-claim-02",
@@ -18610,22 +19730,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T17:06:26.753Z"
+          "checked_at": "2026-09-05T17:21:20.943Z"
         }
       ],
       "content_hash": "6ba6b6dc133d2f3f3cf67180f3def1eb55ad8da12baadccbfd0e06e2f55c4292",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 2,
-      "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-05T17:06:26.753Z",
+      "updated_at": "2026-09-05T17:21:20.943Z",
       "event_first_seen_at": "2026-09-05T09:31:48.966Z",
       "event_detected_at": "2026-09-05T09:31:48.966Z",
       "event_id": "event-f351335aa873a1004e34",
@@ -18655,23 +19772,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 182.34588333333335,
+        "source_age_minutes": 197.24905,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 454.6297833333333,
+        "queue_age_minutes": 469.53295,
         "target_publication_minutes": 120,
-        "news_freshness_score": 62,
+        "news_freshness_score": 59,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T17:06:26.753Z",
+        "checked_at": "2026-09-05T17:21:20.943Z",
         "fingerprint": "f25534f68dae40729d78441311c04d32232882a28eb3c737c72de57651e3714d",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T17:21:20.943Z",
+      "rejection": {
+        "at": "2026-09-05T17:21:20.943Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -19396,7 +20525,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
           "issue_codes": [],
           "warning_codes": []
@@ -19862,7 +20991,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
           "issue_codes": [],
           "warning_codes": []
@@ -36140,7 +37269,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "8cbb4311fa9f589f1203fc0556130f1bac19ee292dc31d40ae0f3addbfb850a9",
           "issue_codes": [],
           "warning_codes": []
@@ -37548,7 +38677,7 @@
       "verification_started_at": "2026-09-05T06:38:53.341Z",
       "publish_ready_at": "2026-09-05T06:39:06.202Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T10:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -38547,9 +39676,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-05T10:23:53.587Z",
-        "content_hash": "c8edbe03eae1fe3b48b26fd6cfeec12001c15d94a3286372a49b18e5321b17d9",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "5b227f5f5613be3340401fc0047fc28c78c51e44a2553171838b4d03a44f2994",
+        "checked_at": "2026-09-05T17:21:20.943Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T23:21:20.943Z",
         "sources": [
           {
             "source_id": "dw-news",
@@ -38581,23 +39713,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
-          "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-8719fd142c6ac6b1",
@@ -42246,7 +43364,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "b77080fc28dc49ed22c2e6eed468704e8806d8a8351e880f83f2a31fb8696350",
           "issue_codes": [],
           "warning_codes": []
@@ -42550,7 +43668,7 @@
       "verification_started_at": "2026-09-05T05:21:48.645Z",
       "publish_ready_at": "2026-09-05T05:22:03.506Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T14:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -43168,48 +44286,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "e36f8890d6a6b7e45d91195c5e71fd7ca5134519404706b8214190361e380020",
-        "checked_at": "2026-09-05T11:12:42.527Z",
+        "fingerprint": "f1f534f0b781aa87b033305b4972aad18b23169acc732185a6ae1f271a3e3052",
+        "checked_at": "2026-09-05T17:21:20.943Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T17:12:42.527Z",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
-            "title": "Monheim: Vom Steuerparadies zur Schuldenhochburg",
-            "summary": "Monheim war mal reich. Heute sitzt die Stadt auf dem größten Schuldenberg in NRW und eröffnet eine ultrateure Veranstaltungshalle.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T14:36:37.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c053bc25ab73917906fed3c56b994ae9ebc3ded1e17de6edfe9cb602ef6ee3b4",
-            "source_item_id": "b1f75024e44cb4822aa189ad11e89354e36d80e53966eb1e82336e61ebbab56f",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T14:36:37.000Z",
-            "ingested_at": "2026-09-05T11:12:42.527Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "f6c536c83490a557a7520b54052ebee03c3625dbd294bb6a07fd7bd5c7fd12c0",
+        "expires_at": "2026-09-05T23:21:20.943Z",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -43242,23 +44322,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
-          "fingerprint": "8b49fdd3757064b543977b787bfffd1334001d9fd714a026ae2123598cdc3e0b",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-845027bd2675e417",
@@ -50222,7 +51288,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "a4a1aa47f4fa7294de838044190ad1cfc64cd840dd088522df173c63655c67a4",
           "issue_codes": [],
           "warning_codes": []
@@ -50374,7 +51440,7 @@
       "verification_started_at": "2026-09-04T19:55:15.125Z",
       "publish_ready_at": "2026-09-04T19:55:31.184Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T10:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -51246,10 +52312,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "14bfd30a7eb318882c313f59d7a3585103333f0f6b2b90688bb8657658ecb110",
-        "checked_at": "2026-09-05T07:06:05.017Z",
+        "fingerprint": "ff1748ceed32fafa68db5df5c872327378828707502b7ad62ea4a1113608fa9d",
+        "checked_at": "2026-09-05T17:21:20.943Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T13:06:05.017Z",
+        "expires_at": "2026-09-05T23:21:20.943Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -51284,59 +52350,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T10:23:53.587Z",
-        "content_hash": "9b3ad903ecc4c64e5d4703a078308f85c1b2770999a76f31a11bd0481b7cef01",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
-            "title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
-            "summary": "Am Ende haben sich die Ärzte durchgesetzt: Weil sie die gesetzlich vorgeschriebene Untersuchung angehender Azubis nicht mehr für den seit 30 Jahren geltenden Gebührensatz machen wollen, legt das Land was obendrauf.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T13:56:50.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3cd89b30291abf3948fa39f18f2f116b02a280d1687147302b3cd184e4d3d9e1",
-            "source_item_id": "cd756b127cb22c847b980aced730cbeeef0e04f07aca4fdb3a4d2dcfe39532df",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T13:56:50.000Z",
-            "ingested_at": "2026-09-04T02:36:31.848Z",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
-          "fingerprint": "7b17a7b748d9ee3bc2092e861fd04826f6317aa440137c83e0ebcc60582ad091",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-169564c16bb23cb7",
@@ -51909,7 +52923,7 @@
       "verification_started_at": "2026-09-04T19:06:51.222Z",
       "publish_ready_at": "2026-09-04T19:07:03.195Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T14:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -52557,9 +53571,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "c1042069cf48b2a31c1180747a2d3e42f70524069f7f105904f621ce7b64db43",
-        "checked_at": "2026-09-05T11:12:42.527Z",
+        "checked_at": "2026-09-05T17:21:20.943Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T17:12:42.527Z",
+        "expires_at": "2026-09-05T23:21:20.943Z",
         "sources": [
           {
             "source_id": "bundesregierung-kompakt",
@@ -52593,58 +53607,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/eroeffnung-ki-sicherheitsinstitut-2449410",
-            "title": "KI-Sicherheitsinstitut eröffnet",
-            "summary": "Cyberattacken, neue komplexe KI-Modelle und sich rasant entwickelnde digitale Anwendungen werfen Fragen nach Sicherheit, Verantwortung und möglichen Risiken auf. Deutschland ist vorbereitet, nun hat das KI-Sicherheitsinstitut AISI Deutschland eröffnet.",
-            "source_type": "official_rss",
-            "published_at": "2026-08-31T17:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "48cbd76ed1f11358abcf998a156df051e6ccd5afb21d4789c7d818f558451ee2",
-            "source_item_id": "5e37fb0d46456c655f55fc930e98748664db41a61c8d000cf05c254beeefd416",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-08-31T17:00:00.000Z",
-            "ingested_at": "2026-09-04T06:36:41.866Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
-          "fingerprint": "0edf8a2f127cd5fce8d8135d95613f7005cd7732202d9b790ba4d8c009971279",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-d175d26e4635ba0a",
@@ -53710,9 +54673,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -53720,7 +54685,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "3e525a90021fc16764fdd5de14d5975794e031b3860545e083397059c1ff87f4",
           "issue_codes": [],
           "warning_codes": []
@@ -55559,7 +56524,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -56182,7 +57147,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "7a4e3b4d3b023739dcb0220550584ff732a89bce1aebfdc7f2711100160c30f8",
           "issue_codes": [],
           "warning_codes": []
@@ -57429,905 +58394,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-6a7145e6dc679f95",
-      "slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
-      "title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
-      "first_seen": "2026-09-03T16:31:09.000Z",
-      "last_updated": "2026-09-04T17:42:49.106Z",
-      "published_at": "2026-09-04T02:22:48.837Z",
-      "updated_at": "2026-09-04T17:42:49.106Z",
-      "topic": [
-        "Klima",
-        "Soziales",
-        "Gesundheit"
-      ],
-      "sources": [
-        {
-          "source_id": "hr-hessenschau",
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-          "title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
-          "summary": "Die Landesregierung will Klimaanlagen für Kitas und Pflegeeinrichtungen fördern. Die Folgen der Hitzewelle scheinen auch andere Parteien aufgerüttelt zu haben: Für das neue Programm gibt es Unterstützung - und etwas Kritik.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:31:09.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3",
-          "source_item_id": "aad4b9b61f285e525377936239ee8cad1e12c99623666f97f4df311cdb6ccee0",
-          "publisher_id": "hr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Hessen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T16:31:09.000Z",
-          "ingested_at": "2026-09-04T02:21:15.650Z",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-6a7145e6dc679f95-v2-claim-1",
-          "story_id": "wt-6a7145e6dc679f95",
-          "claim": "Hessen will für Hitzeschutz in Kitas und Pflegeeinrichtungen rund zehn Millionen Euro für Klimaanlagen investieren.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "excerpt_hash": "c6f1df7b7eef7311d37f",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T17:42:49.106Z"
-        },
-        {
-          "claim_id": "wt-6a7145e6dc679f95-v2-claim-2",
-          "story_id": "wt-6a7145e6dc679f95",
-          "claim": "Das Förderprogramm „Hitzehilfe für Hessen“ ist für drei Jahre angelegt und unterstützt mobile und teilstationäre Anlagen.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "excerpt_hash": "23a345b8ce824f16f27a",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T17:42:49.106Z"
-        },
-        {
-          "claim_id": "wt-6a7145e6dc679f95-v2-claim-3",
-          "story_id": "wt-6a7145e6dc679f95",
-          "claim": "Pro Standort sind bis zu 5.000 Euro Förderung vorgesehen; Anträge sollen kommunale, freigemeinnützige und private Träger stellen können.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "excerpt_hash": "058271c3caea1ef40503",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "excerpt_hash": "618d6f8cbcc10f6d1fa3",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T17:42:49.106Z"
-        },
-        {
-          "claim_id": "wt-6a7145e6dc679f95-v2-claim-4",
-          "story_id": "wt-6a7145e6dc679f95",
-          "claim": "Die Grünen unterstützen das Programm grundsätzlich, kritisieren aber, dass die zehn Millionen Euro an anderer Stelle fehlen werden.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "excerpt_hash": "f5afebcd34cecb9f325f",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "excerpt_hash": "ccf28efb531007a78c3b",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T17:42:49.106Z"
-        },
-        {
-          "claim_id": "wt-6a7145e6dc679f95-v2-claim-5",
-          "story_id": "wt-6a7145e6dc679f95",
-          "claim": "Die AfD fordert neben Klimaanlagen auch Verschattung, Dämmung und intelligente Lüftung und verweist auf bezahlbare Energie.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "excerpt_hash": "460c5125b4f695631608",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T17:42:49.106Z"
-        },
-        {
-          "claim_id": "wt-6a7145e6dc679f95-v2-claim-6",
-          "story_id": "wt-6a7145e6dc679f95",
-          "claim": "Die FDP fordert mittelfristig eine stärkere Klimatisierung öffentlicher Gebäude und nennt zusätzlich Verschattung, Dämmung, Begrünung und Entsiegelung.",
-          "status": "single_source_claim",
-          "source_id": "hr-hessenschau",
-          "evidence": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "excerpt_hash": "6a7d4887e4c0c8fd7f75",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            },
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "excerpt_hash": "0c2ad0cfcebe89d772ed",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-04T17:42:49.106Z"
-        }
-      ],
-      "event_id": "event-49e6ddd9913a3803a948",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "verification_started_at": "2026-09-04T17:42:33.825Z",
-      "publish_ready_at": "2026-09-04T17:42:49.106Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-05T10:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Startet das Förderprogramm tatsächlich mit Antragsbeginn und ersten Bewilligungen innerhalb der angekündigten Laufzeit?",
-          "source_id": "hr-hessenschau",
-          "expected_by": null,
-          "measurable_indicator": "Erste veröffentlichte Bewilligungen oder Ministeriumsangaben zu Anträgen und Auszahlungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-eb732b42b2d7e1be",
-          "announced_at": "2026-09-03T16:31:09.000Z",
-          "follow_up_date": "2026-09-11T02:22:48.837Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
-      "published": true,
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-e46aae3db6197635-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "e46aae3db61976355dd4c5640757c8e03516a186c2f895f520b783d4760caa13"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-bcaa1257892d137b-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "bcaa1257892d137bdea4bc59e5d7b87e2687065615a8f6a012e30ead91521992"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-ed9d6b837154562e-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "ed9d6b837154562eac4bc9bbce19b45ce940ffc51f9b6bdf6f8c736fa2683fa0"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-6314664b366e4bfd-source.png",
-          "sha256": "6314664b366e4bfdec00fa086515191f71354d56c30dee58a5449b26224e65b4",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-4-contextual",
-          "generated_at": "2026-09-04T10:11:34.122Z"
-        },
-        "fingerprint": "8a32a32fd61110c40a3da1e6b9ecfcffc555b9d0e2017b8fcef1f8c46559b33b",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-04T10:13:27.975Z",
-        "status": "generated",
-        "retry_after": "2026-09-04T18:01:52.790Z"
-      },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 2,
-      "source_summary": "Die hessenschau berichtet über ein neues Förderprogramm der Landesregierung für Hitzeschutz in Kitas und Pflegeeinrichtungen. Laut Bericht will Hessen rund zehn Millionen Euro investieren, um Klimaanlagen anzuschaffen; das Programm „Hitzehilfe für Hessen“ soll drei Jahre laufen und mobile sowie teilstationäre Anlagen unterstützen. Pro Standort sind bis zu 5.000 Euro Förderung vorgesehen, Anträge sollen kommunale, freigemeinnützige und private Träger stellen können.\n\nIm Landtag wird die Initiative politisch kommentiert. Die Grünen unterstützen den Hitzeschutz grundsätzlich, kritisieren aber mögliche Kürzungen an anderer Stelle. Die AfD fordert zusätzlich Verschattung, Dämmung und intelligente Lüftung. Die FDP spricht sich ebenfalls für mehr Hitzeschutz in öffentlichen Gebäuden aus und nennt weitere bauliche Maßnahmen. Offen bleibt in der Quelle, ob und wie viele Einrichtungen tatsächlich gefördert werden und ob die Mittel ausreichen.",
-      "analysis": {
-        "story_id": "wt-6a7145e6dc679f95",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Hessen will ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen auflegen. Genannt werden zehn Millionen Euro und bis zu 5.000 Euro pro Standort.",
-        "detail_summary": "Gesichert ist zunächst die Ankündigung eines hessischen Förderprogramms für Hitzeschutz in Kitas und Pflegeeinrichtungen mit einem Budget von rund zehn Millionen Euro über drei Jahre. Der Bericht nennt als Ziel die Anschaffung mobiler und teilstationärer Anlagen sowie eine Förderung von bis zu 5.000 Euro je Standort. Politisch stößt das Vorhaben auf Zustimmung und Kritik, aber der konkrete Vollzug bleibt offen. Materiell relevant ist die Meldung vor allem, weil sie öffentliche Mittel in eine konkrete Schutzinfrastruktur für besonders hitzegefährdete Gruppen lenkt. Der Wirkpfad verläuft über Investitionen in technische Kühlung; mögliche Folgen sind bessere Hitzetoleranz in einzelnen Einrichtungen, aber auch Verdrängungseffekte im Haushalt. Unklar bleibt, wie viele Einrichtungen erreicht werden, ob das Budget reicht und ob die Maßnahme im Alltag tatsächlich Entlastung bringt.",
-        "why_relevant": "Die Meldung betrifft die Verteilung öffentlicher Mittel auf Hitzeschutz in besonders sensiblen Einrichtungen und damit konkrete Schutzinfrastruktur für Kinder und Pflegebedürftige.",
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell Kinder, Pflegebedürftige und Beschäftigte in Einrichtungen mit besonderem Hitzestress."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Die Förderung betrifft Klimaanlagen und damit Technik mit möglichem Energiebedarf; ökologische Folgen bleiben aber in der Quelle offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Das Vorhaben ist Gegenstand parlamentarischer Debatte, Budgetpriorisierung und öffentlicher Kritik."
-        },
-        "importance": "hoch",
-        "impact_potential": "Das Programm kann die Ausstattung einzelner Kitas und Pflegeeinrichtungen verbessern und Hitzebelastung dort mindern; zugleich kann es Budgetspielräume anderer Hitzeschutzmaßnahmen verkleinern.",
-        "impact_risks": [
-          "Mittel könnten an anderer Stelle fehlen, wie die Grünen kritisieren.",
-          "Ohne begleitende bauliche Maßnahmen kann technische Kühlung eine nur begrenzte Lösung bleiben."
-        ],
-        "mechanisms": [
-          "Öffentliche Förderung senkt Anschaffungskosten für Klimaanlagen.",
-          "Träger erhalten Anreize, in Hitzeschutztechnik zu investieren."
-        ],
-        "first_order": [
-          "Mehr Einrichtungen könnten Kühltechnik anschaffen.",
-          "Einzelne Räume könnten bei Hitze besser nutzbar bleiben."
-        ],
-        "second_order": [
-          "Haushaltsmittel werden zugunsten dieses Instruments umgeschichtet.",
-          "Die Debatte verschiebt sich stärker zu technischem Hitzeschutz."
-        ],
-        "third_order": [
-          "Das Programm könnte Vorbild für ähnliche Förderlinien in anderen Ländern werden, falls es tatsächlich umgesetzt und nachgefragt wird."
-        ],
-        "systemic_relevance": "Begrenzt, aber politisch relevant: Es ist eine zielgerichtete staatliche Intervention in die Anpassung an Hitzefolgen für vulnerable Einrichtungen.",
-        "transformation_potential": "Eher inkrementell als transformativ; möglich ist eine stärkere Standardisierung von Hitzeschutztechnik in sozialen Einrichtungen.",
-        "resilience": "Kann lokale Resilienz gegen Hitze erhöhen, bleibt aber abhängig von Strom, Wartung und ergänzenden baulichen Maßnahmen.",
-        "side_effects": [
-          "Höherer Stromverbrauch kann laufende Kosten erhöhen.",
-          "Andere Hitzeschutzmaßnahmen könnten im Budget konkurrieren."
-        ],
-        "uncertainties": [
-          "Ob das Budget für den genannten Bedarf reicht.",
-          "Wie viele Einrichtungen tatsächlich gefördert werden.",
-          "Ob die Maßnahme in der Praxis ausreichend entlastet."
-        ],
-        "evidence_level": "einzelne journalistische Quelle mit konkreten Zahlen und Zitaten; keine unabhängige Bestätigung der Kernaussage im gelieferten Material.",
-        "attribution": "Die Angaben stammen aus dem Bericht der hessenschau; die politische Bewertung ist dort als Stellungnahmen von Grünen, AfD und FDP wiedergegeben.",
-        "watch_next": [
-          "Ob das Programm offiziell beschlossen und ausgeschrieben wird.",
-          "Wie viele Anträge eingehen und bewilligt werden.",
-          "Ob weitere Hitzeschutzmaßnahmen ergänzt werden."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 3",
-          "Agenda 2030/SDG 11",
-          "Agenda 2030/SDG 13"
-        ],
-        "publication_gate": {
-          "news_value": "substantive_commitment",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "none",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Neues, konkret beziffertes Förderprogramm mit mehrjähriger Laufzeit und Zielgruppe. Die Beleglage ist jedoch nur eine journalistische Quelle ohne unabhängige Bestätigung."
-        },
-        "publication_recommendation": true,
-        "visuals": null
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-04T02:22:48.837Z",
-          "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
-          "source_summary": "Die hessenschau berichtet, dass die Landesregierung Klimaanlagen für Kitas und Pflegeeinrichtungen fördern will. Nach Angaben im Bericht sollen dafür rund zehn Millionen Euro bereitstehen; das Programm „Hitzehilfe für Hessen“ sei auf drei Jahre angelegt und solle mobile sowie teilstationäre Anlagen unterstützen.\n\nGenannt werden außerdem Förderregeln: Bis zu 5.000 Euro pro Standort seien vorgesehen, und mehr als 6.000 Anlagen sollen im Jahr gefördert werden. Im Landtag gebe es Unterstützung für das Vorhaben, aber auch Kritik. Die Grünen begrüßten den Hitzeschutz, verwiesen jedoch auf fehlende Mittel an anderer Stelle; die FDP forderte zusätzlich Verschattung, Dämmung, Begrünung und weitere Klimaanpassung in öffentlichen Gebäuden.",
-          "analysis": {
-            "story_id": "wt-6a7145e6dc679f95",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Hessen will ein Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen auflegen. Im Bericht sind zehn Millionen Euro, eine Laufzeit von drei Jahren und Kritik aus der Opposition genannt.",
-            "detail_summary": "Gesichert berichtet ist ein neues hessisches Fördervorhaben für Klimaanlagen in Kitas und Pflegeeinrichtungen. Der Quellenkern ist klar: rund zehn Millionen Euro, eine Laufzeit von drei Jahren und ein Ziel von mehr als 6.000 geförderten Anlagen pro Jahr. Das ist materiell relevant, weil damit öffentliche Mittel in den Hitzeschutz besonders gefährdeter Gruppen gelenkt werden und sich Anreize für technische Anpassung in sozialen Einrichtungen verschieben. Mögliche Folgen sind bessere Innenraumtemperaturen und geringere Hitzebelastung, zugleich aber Verdrängungseffekte bei anderen Klimaanpassungsmaßnahmen. Offen bleibt, wie breit das Programm tatsächlich genutzt wird, ob die Mittel reichen und ob die Förderung die angekündigte Wirkung in der Fläche erreicht. Die Evidenzlage ist vorerst auf einen journalistischen Bericht mit zugeschriebenen Angaben begrenzt; unabhängige Bestätigung liegt hier noch nicht vor.",
-            "why_relevant": "Das Vorhaben verschiebt öffentliche Mittel in einen Bereich mit direkter Betroffenheit für vulnerable Gruppen und kann Anreize für Klimaanpassung in sozialen Einrichtungen verändern.",
-            "status": "angekündigt",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Betroffen sind Kinder, Pflegebedürftige und Einrichtungen mit unmittelbarer Hitzebelastung; der Wirkpfad zielt auf Gesundheitsschutz und Schutz vor Extremtemperaturen."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Die Maßnahme setzt auf technische Kühlung und kann den Energiebedarf erhöhen; zugleich adressiert sie Anpassung an Klimafolgen, nicht deren Ursache."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Öffentliche Haushaltsmittel und Prioritätensetzung werden politisch entschieden; die Debatte zeigt Verteilungs- und Priorisierungskonflikte."
-            },
-            "importance": "hoch",
-            "impact_potential": "Das Programm kann Hitzeschäden in besonders sensiblen Einrichtungen verringern, indem es Kühlung finanziell erleichtert und Investitionen beschleunigt.",
-            "impact_risks": [
-              "Höherer Strombedarf und mögliche Zielkonflikte mit Klimaschutz",
-              "Mittelverdrängung bei anderen Anpassungsmaßnahmen wie Dämmung, Verschattung oder Beratung"
-            ],
-            "mechanisms": [
-              "Förderung senkt Investitionshürden für Klimaanlagen",
-              "Kommunale und freie Träger erhalten einen finanziellen Anreiz zur schnellen Beschaffung"
-            ],
-            "first_order": [
-              "Einrichtungen können schneller Kühltechnik anschaffen",
-              "Einzelne Räume werden kurzfristig besser gegen Hitze geschützt"
-            ],
-            "second_order": [
-              "Haushaltsmittel werden anders verteilt",
-              "Andere Anpassungsmaßnahmen könnten zurückgestellt werden"
-            ],
-            "third_order": [
-              "Technische Kühlung könnte zur Standardantwort auf Hitzestress in sozialen Einrichtungen werden",
-              "Die Priorisierung öffentlicher Anpassungspolitik verschiebt sich zugunsten sofort wirksamer Technik"
-            ],
-            "systemic_relevance": "Systemisch relevant ist vor allem die Lenkung öffentlicher Anpassungsinvestitionen in einen Bereich mit hoher Vulnerabilität und möglicher Signalwirkung für weitere Länderprogramme.",
-            "transformation_potential": "Begrenzt bis mittel: Die Maßnahme kann Beschaffungs- und Förderlogiken für Hitzeschutz verändern, ersetzt aber keine umfassende Bau- und Stadtanpassung.",
-            "resilience": "Kurzfristig kann die Widerstandsfähigkeit von Kitas und Pflegeeinrichtungen gegen Hitzespitzen steigen; langfristige Resilienz hängt davon ab, ob ergänzend bauliche und organisatorische Maßnahmen folgen.",
-            "side_effects": [
-              "Mögliche Abhängigkeit von energieintensiver Kühlung",
-              "Ungleichgewicht zwischen Soforthilfe und struktureller Prävention"
-            ],
-            "uncertainties": [
-              "Wie viele Einrichtungen tatsächlich gefördert werden",
-              "Ob die Mittel für den Bedarf ausreichen",
-              "Ob die angekündigten Effekte in der Praxis eintreten"
-            ],
-            "evidence_level": "evidence_from_single_journalistic_source_with_attributed_official_statements",
-            "attribution": "Die Angaben werden in einem journalistischen Bericht wiedergegeben; unabhängige Zweitquellen oder der vollständige amtliche Originaltext liegen hier nicht vor.",
-            "watch_next": [
-              "Beginnende Antragsphase, Bewilligungen und tatsächliche Mittelabflüsse beobachten"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 3, SDG 11, SDG 13"
-            ],
-            "publication_gate": {
-              "news_value": "substantive_commitment",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "affected_scope",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Neues Förderprogramm mit Haushaltsmittelbindung, mehrjähriger Laufzeit und unmittelbarer Relevanz für vulnerable Gruppen; Evidenz bislang nur aus einem Bericht mit zugeschriebenen Amtsangaben."
-            },
-            "visuals": {
-              "key_figures": [
-                {
-                  "label": "Fördervolumen",
-                  "value": "zehn Millionen",
-                  "unit": "Euro",
-                  "context": "Geplantes Budget für den Hitzeschutz in Kitas und Pflegeeinrichtungen"
-                },
-                {
-                  "label": "Laufzeit",
-                  "value": "drei",
-                  "unit": "Jahre",
-                  "context": "Geplante Dauer des Förderprogramms"
-                },
-                {
-                  "label": "Förderung pro Standort",
-                  "value": "5.000",
-                  "unit": "Euro",
-                  "context": "Maximale Summe je Standort"
-                }
-              ],
-              "affected_groups": [
-                "kinder_jugend",
-                "aeltere",
-                "beschaeftigte",
-                "kommunen"
-              ],
-              "tendency": {
-                "human": "chance",
-                "planet": "gemischt",
-                "democracy": "offen"
-              }
-            },
-            "publication_recommendation": true
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v1-claim-1",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Das Land Hessen will ein Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen auflegen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "1a375c442422af99383d",
-                  "checked_at": "2026-09-04T02:22:48.837Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:22:48.837Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v1-claim-2",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Für den Hitzeschutz sollen rund zehn Millionen Euro investiert werden.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "c6f1df7b7eef7311d37f",
-                  "checked_at": "2026-09-04T02:22:48.837Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:22:48.837Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v1-claim-3",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Das Programm „Hitzehilfe für Hessen“ ist für drei Jahre angelegt und soll die Anschaffung mobiler und teilstationärer Anlagen unterstützen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "23a345b8ce824f16f27a",
-                  "checked_at": "2026-09-04T02:22:48.837Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:22:48.837Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v1-claim-4",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Pro Standort sind bis zu 5.000 Euro Förderung vorgesehen, und mehr als 6.000 Anlagen sollen im Jahr gefördert werden.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "058271c3caea1ef40503",
-                  "checked_at": "2026-09-04T02:22:48.837Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "7e3fc801aa6a86d59934",
-                  "checked_at": "2026-09-04T02:22:48.837Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:22:48.837Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v1-claim-5",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Die Grünen unterstützen das Hitzeschutzprogramm, kritisieren aber, dass dafür Mittel bei der Beratung und Unterstützung der Klimakommunen fehlen werden.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "ccf28efb531007a78c3b",
-                  "checked_at": "2026-09-04T02:22:48.837Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "f5afebcd34cecb9f325f",
-                  "checked_at": "2026-09-04T02:22:48.837Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:22:48.837Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v1-claim-6",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Die FDP fordert zusätzlich stärkeren Hitzeschutz in öffentlichen Gebäuden und nennt Verschattung, Dämmung und Begrünung als weitere Maßnahmen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "6a7d4887e4c0c8fd7f75",
-                  "checked_at": "2026-09-04T02:22:48.837Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "0c2ad0cfcebe89d772ed",
-                  "checked_at": "2026-09-04T02:22:48.837Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T02:22:48.837Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3"
-            }
-          ]
-        },
-        {
-          "version": 2,
-          "analyzed_at": "2026-09-04T17:42:49.106Z",
-          "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
-          "source_summary": "Die hessenschau berichtet über ein neues Förderprogramm der Landesregierung für Hitzeschutz in Kitas und Pflegeeinrichtungen. Laut Bericht will Hessen rund zehn Millionen Euro investieren, um Klimaanlagen anzuschaffen; das Programm „Hitzehilfe für Hessen“ soll drei Jahre laufen und mobile sowie teilstationäre Anlagen unterstützen. Pro Standort sind bis zu 5.000 Euro Förderung vorgesehen, Anträge sollen kommunale, freigemeinnützige und private Träger stellen können.\n\nIm Landtag wird die Initiative politisch kommentiert. Die Grünen unterstützen den Hitzeschutz grundsätzlich, kritisieren aber mögliche Kürzungen an anderer Stelle. Die AfD fordert zusätzlich Verschattung, Dämmung und intelligente Lüftung. Die FDP spricht sich ebenfalls für mehr Hitzeschutz in öffentlichen Gebäuden aus und nennt weitere bauliche Maßnahmen. Offen bleibt in der Quelle, ob und wie viele Einrichtungen tatsächlich gefördert werden und ob die Mittel ausreichen.",
-          "analysis": {
-            "story_id": "wt-6a7145e6dc679f95",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Hessen will ein dreijähriges Förderprogramm für Klimaanlagen in Kitas und Pflegeeinrichtungen auflegen. Genannt werden zehn Millionen Euro und bis zu 5.000 Euro pro Standort.",
-            "detail_summary": "Gesichert ist zunächst die Ankündigung eines hessischen Förderprogramms für Hitzeschutz in Kitas und Pflegeeinrichtungen mit einem Budget von rund zehn Millionen Euro über drei Jahre. Der Bericht nennt als Ziel die Anschaffung mobiler und teilstationärer Anlagen sowie eine Förderung von bis zu 5.000 Euro je Standort. Politisch stößt das Vorhaben auf Zustimmung und Kritik, aber der konkrete Vollzug bleibt offen. Materiell relevant ist die Meldung vor allem, weil sie öffentliche Mittel in eine konkrete Schutzinfrastruktur für besonders hitzegefährdete Gruppen lenkt. Der Wirkpfad verläuft über Investitionen in technische Kühlung; mögliche Folgen sind bessere Hitzetoleranz in einzelnen Einrichtungen, aber auch Verdrängungseffekte im Haushalt. Unklar bleibt, wie viele Einrichtungen erreicht werden, ob das Budget reicht und ob die Maßnahme im Alltag tatsächlich Entlastung bringt.",
-            "why_relevant": "Die Meldung betrifft die Verteilung öffentlicher Mittel auf Hitzeschutz in besonders sensiblen Einrichtungen und damit konkrete Schutzinfrastruktur für Kinder und Pflegebedürftige.",
-            "status": "angekündigt",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Betroffen sind potenziell Kinder, Pflegebedürftige und Beschäftigte in Einrichtungen mit besonderem Hitzestress."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Die Förderung betrifft Klimaanlagen und damit Technik mit möglichem Energiebedarf; ökologische Folgen bleiben aber in der Quelle offen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Das Vorhaben ist Gegenstand parlamentarischer Debatte, Budgetpriorisierung und öffentlicher Kritik."
-            },
-            "importance": "hoch",
-            "impact_potential": "Das Programm kann die Ausstattung einzelner Kitas und Pflegeeinrichtungen verbessern und Hitzebelastung dort mindern; zugleich kann es Budgetspielräume anderer Hitzeschutzmaßnahmen verkleinern.",
-            "impact_risks": [
-              "Mittel könnten an anderer Stelle fehlen, wie die Grünen kritisieren.",
-              "Ohne begleitende bauliche Maßnahmen kann technische Kühlung eine nur begrenzte Lösung bleiben."
-            ],
-            "mechanisms": [
-              "Öffentliche Förderung senkt Anschaffungskosten für Klimaanlagen.",
-              "Träger erhalten Anreize, in Hitzeschutztechnik zu investieren."
-            ],
-            "first_order": [
-              "Mehr Einrichtungen könnten Kühltechnik anschaffen.",
-              "Einzelne Räume könnten bei Hitze besser nutzbar bleiben."
-            ],
-            "second_order": [
-              "Haushaltsmittel werden zugunsten dieses Instruments umgeschichtet.",
-              "Die Debatte verschiebt sich stärker zu technischem Hitzeschutz."
-            ],
-            "third_order": [
-              "Das Programm könnte Vorbild für ähnliche Förderlinien in anderen Ländern werden, falls es tatsächlich umgesetzt und nachgefragt wird."
-            ],
-            "systemic_relevance": "Begrenzt, aber politisch relevant: Es ist eine zielgerichtete staatliche Intervention in die Anpassung an Hitzefolgen für vulnerable Einrichtungen.",
-            "transformation_potential": "Eher inkrementell als transformativ; möglich ist eine stärkere Standardisierung von Hitzeschutztechnik in sozialen Einrichtungen.",
-            "resilience": "Kann lokale Resilienz gegen Hitze erhöhen, bleibt aber abhängig von Strom, Wartung und ergänzenden baulichen Maßnahmen.",
-            "side_effects": [
-              "Höherer Stromverbrauch kann laufende Kosten erhöhen.",
-              "Andere Hitzeschutzmaßnahmen könnten im Budget konkurrieren."
-            ],
-            "uncertainties": [
-              "Ob das Budget für den genannten Bedarf reicht.",
-              "Wie viele Einrichtungen tatsächlich gefördert werden.",
-              "Ob die Maßnahme in der Praxis ausreichend entlastet."
-            ],
-            "evidence_level": "einzelne journalistische Quelle mit konkreten Zahlen und Zitaten; keine unabhängige Bestätigung der Kernaussage im gelieferten Material.",
-            "attribution": "Die Angaben stammen aus dem Bericht der hessenschau; die politische Bewertung ist dort als Stellungnahmen von Grünen, AfD und FDP wiedergegeben.",
-            "watch_next": [
-              "Ob das Programm offiziell beschlossen und ausgeschrieben wird.",
-              "Wie viele Anträge eingehen und bewilligt werden.",
-              "Ob weitere Hitzeschutzmaßnahmen ergänzt werden."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 3",
-              "Agenda 2030/SDG 11",
-              "Agenda 2030/SDG 13"
-            ],
-            "publication_gate": {
-              "news_value": "substantive_commitment",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "none",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Neues, konkret beziffertes Förderprogramm mit mehrjähriger Laufzeit und Zielgruppe. Die Beleglage ist jedoch nur eine journalistische Quelle ohne unabhängige Bestätigung."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v2-claim-1",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Hessen will für Hitzeschutz in Kitas und Pflegeeinrichtungen rund zehn Millionen Euro für Klimaanlagen investieren.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "c6f1df7b7eef7311d37f",
-                  "checked_at": "2026-09-04T17:42:49.106Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v2-claim-2",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Das Förderprogramm „Hitzehilfe für Hessen“ ist für drei Jahre angelegt und unterstützt mobile und teilstationäre Anlagen.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "23a345b8ce824f16f27a",
-                  "checked_at": "2026-09-04T17:42:49.106Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v2-claim-3",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Pro Standort sind bis zu 5.000 Euro Förderung vorgesehen; Anträge sollen kommunale, freigemeinnützige und private Träger stellen können.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "058271c3caea1ef40503",
-                  "checked_at": "2026-09-04T17:42:49.106Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "618d6f8cbcc10f6d1fa3",
-                  "checked_at": "2026-09-04T17:42:49.106Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v2-claim-4",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Die Grünen unterstützen das Programm grundsätzlich, kritisieren aber, dass die zehn Millionen Euro an anderer Stelle fehlen werden.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "f5afebcd34cecb9f325f",
-                  "checked_at": "2026-09-04T17:42:49.106Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "ccf28efb531007a78c3b",
-                  "checked_at": "2026-09-04T17:42:49.106Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v2-claim-5",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Die AfD fordert neben Klimaanlagen auch Verschattung, Dämmung und intelligente Lüftung und verweist auf bezahlbare Energie.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "460c5125b4f695631608",
-                  "checked_at": "2026-09-04T17:42:49.106Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            },
-            {
-              "claim_id": "wt-6a7145e6dc679f95-v2-claim-6",
-              "story_id": "wt-6a7145e6dc679f95",
-              "claim": "Die FDP fordert mittelfristig eine stärkere Klimatisierung öffentlicher Gebäude und nennt zusätzlich Verschattung, Dämmung, Begrünung und Entsiegelung.",
-              "status": "single_source_claim",
-              "source_id": "hr-hessenschau",
-              "evidence": [
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "6a7d4887e4c0c8fd7f75",
-                  "checked_at": "2026-09-04T17:42:49.106Z"
-                },
-                {
-                  "source_id": "hr-hessenschau",
-                  "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-                  "excerpt_hash": "0c2ad0cfcebe89d772ed",
-                  "checked_at": "2026-09-04T17:42:49.106Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-04T17:42:49.106Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "hr-hessenschau",
-              "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-              "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-04T02:22:48.837Z",
-          "source_count": 1
-        },
-        {
-          "version": 2,
-          "published_at": "2026-09-04T17:42:49.106Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "7d87e158aac6a4d4a70ab6b180045fca3c86461e00975ba9073741b18e57cb46",
-        "checked_at": "2026-09-05T07:06:05.017Z",
-        "outcome": "no_material_update",
-        "expires_at": "2026-09-05T13:06:05.017Z",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-            "title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
-            "summary": "Die Landesregierung will Klimaanlagen für Kitas und Pflegeeinrichtungen fördern. Die Folgen der Hitzewelle scheinen auch andere Parteien aufgerüttelt zu haben: Für das neue Programm gibt es Unterstützung - und etwas Kritik.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:31:09.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3",
-            "source_item_id": "aad4b9b61f285e525377936239ee8cad1e12c99623666f97f4df311cdb6ccee0",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:31:09.000Z",
-            "ingested_at": "2026-09-04T02:21:15.650Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-05T10:23:53.587Z",
-        "content_hash": "51109eaa4f3f88ccb0c73e5b0200e4561df2e7e4eafe192714881173b38656a1",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/politik/hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-foerdert-klimaanlagen-v1,klimaanlage-114.html",
-            "title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
-            "summary": "Die Landesregierung will Klimaanlagen für Kitas und Pflegeeinrichtungen fördern. Die Folgen der Hitzewelle scheinen auch andere Parteien aufgerüttelt zu haben: Für das neue Programm gibt es Unterstützung - und etwas Kritik.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T16:31:09.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "73cddaec45b93cd42677f4606d8693030682b09da6c1c348d2da4d9d6cb359c3",
-            "source_item_id": "aad4b9b61f285e525377936239ee8cad1e12c99623666f97f4df311cdb6ccee0",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T16:31:09.000Z",
-            "ingested_at": "2026-09-04T02:21:15.650Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
-          "fingerprint": "28a1e68de467ed557ab667e1b80a7a5584aac8211817c45e6f76a1c344f7628a",
-          "issue_codes": [],
-          "warning_codes": []
-        }
       }
     },
     {
@@ -78919,7 +78985,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "371951dda8885071e92902c04fd0deb7c36df7ae5adcfb2c65a7a1ebdc9e6256",
           "issue_codes": [],
           "warning_codes": []
@@ -83264,7 +83330,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:06:26.753Z",
+          "checked_at": "2026-09-05T17:21:20.943Z",
           "fingerprint": "fc6394929dd9caf6a77ab1a8265c01d7c1fddece2fc2a73b24676eceaeed40eb",
           "issue_codes": [],
           "warning_codes": []
@@ -122876,5 +122942,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T16:51:14.960Z"
+  "public_updated_at": "2026-09-05T17:21:20.943Z"
 }
