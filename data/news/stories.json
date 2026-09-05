@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T06:06:13.174Z",
+  "updated_at": "2026-09-05T06:21:36.638Z",
   "stories": [
     {
       "story_id": "wt-e18907861b9d9b1f",
@@ -5671,7 +5671,7 @@
       "verification_started_at": "2026-09-05T04:36:54.707Z",
       "publish_ready_at": "2026-09-05T04:37:08.760Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -6011,9 +6011,12 @@
         "generated_at": "2026-09-05T04:37:17.584Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "c28f137e64d898d3651a6871d87b9c147673bafaf4494802b0dc8463e3f18903",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "cecc3a35ad70f48142fdd015360011bb09c5fabaf449b9cc747301c5e7f0d9bd",
+        "checked_at": "2026-09-05T06:21:36.638Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T12:21:36.638Z",
         "sources": [
           {
             "source_id": "zdfheute-nachrichten",
@@ -6039,21 +6042,16 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T04:19:00.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-f2edeab46d126d83",
@@ -14346,7 +14344,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "ingested_at": "2026-09-05T06:21:36.638Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -14373,7 +14371,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
+          "checked_at": "2026-09-05T06:21:36.638Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -14381,11 +14379,11 @@
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
+        "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-05T06:06:13.174Z",
+      "updated_at": "2026-09-05T06:21:36.638Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -14415,25 +14413,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 621.2029,
+        "source_age_minutes": 636.5939666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 674.7695166666666,
+        "queue_age_minutes": 690.1605833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T06:06:13.174Z",
+      "rejected_at": "2026-09-05T06:21:36.638Z",
       "rejection": {
-        "at": "2026-09-05T06:06:13.174Z",
+        "at": "2026-09-05T06:21:36.638Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -16026,7 +16024,7 @@
       "verification_started_at": "2026-09-04T19:06:51.222Z",
       "publish_ready_at": "2026-09-04T19:07:03.195Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -16671,9 +16669,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "d72650b0538eaeb84636ff895ac732b387bb3294c16ff71455e4b36d473af1bd",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "c1042069cf48b2a31c1180747a2d3e42f70524069f7f105904f621ce7b64db43",
+        "checked_at": "2026-09-05T06:21:36.638Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T12:21:36.638Z",
         "sources": [
           {
             "source_id": "bundesregierung-kompakt",
@@ -16705,14 +16706,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-eefb978e3155ecf0",
@@ -17014,7 +17010,7 @@
       "verification_started_at": "2026-09-04T18:52:35.368Z",
       "publish_ready_at": "2026-09-04T18:52:45.973Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -17869,9 +17865,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "cb0cd618c400691576f8bfef5e73da98d89d64efb2751bd63b15757a72498c57",
+        "checked_at": "2026-09-05T06:21:36.638Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T12:21:36.638Z",
         "sources": [
           {
             "source_id": "hr-hessenschau",
@@ -17904,17 +17903,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-a15bc39ee69aa3e5",
@@ -20270,9 +20261,12 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -23324,9 +23318,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -23910,9 +23906,11 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -28642,7 +28640,7 @@
       "verification_started_at": "2026-09-04T16:08:56.492Z",
       "publish_ready_at": "2026-09-04T16:09:09.120Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -28976,10 +28974,13 @@
         "generated_at": "2026-09-04T16:11:29.900Z",
         "status": "generated"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "aa99fb1352e01930777f592148d487126bb7e6e0d8d13c80fb23a8c163bcc82f",
+      "deepening_checks": 2,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "d05fdbdb7f5e1fd64d2ffd694017962f1066edef7f491f0e5d96ea13365e56e0",
+        "checked_at": "2026-09-05T06:21:36.638Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T12:21:36.638Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -29012,13 +29013,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -30357,7 +30352,7 @@
       "verification_started_at": "2026-09-04T15:52:53.852Z",
       "publish_ready_at": "2026-09-04T15:53:11.781Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -31082,9 +31077,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "0c787abcbbfad71cac487b01c7176054a825d1b7063b1161b0de2e3ba6d90ef7",
-        "checked_at": "2026-09-04T19:06:24.876Z",
+        "checked_at": "2026-09-05T06:21:36.638Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T01:06:24.876Z",
+        "expires_at": "2026-09-05T12:21:36.638Z",
         "sources": [
           {
             "source_id": "bundestag-hib",
@@ -31679,7 +31674,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:50:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -31709,7 +31704,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:48:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -31889,7 +31884,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T17:00:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -31919,7 +31914,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:58:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -31949,7 +31944,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:56:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -31979,7 +31974,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:54:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -32009,7 +32004,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:52:00.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
@@ -32018,949 +32013,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "f0397f1d030f1a8b98732343ef6e96782610fe5d6a3acca8182c973f0e409081",
-        "sources": [
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210250",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:16:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "d4ce466872577efc92d51aaf5c89401d47a1fe9e67d1f5813ec2ec8648599a00",
-            "source_item_id": "0f7bc36e3de7e535dba1cdabb36e4e404bbd7b2d41f5d3260e9374c7ddbcd3f8",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:16:00.000Z",
-            "ingested_at": "2026-09-04T15:21:35.641Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210244",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:14:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "58fee0245cb32f3035618b0807fb73e11d9b2e2a1a00ce966665e18dc7f601ec",
-            "source_item_id": "126d8729a77e864fd98e0435f334fa9dceca234b8ebe21212ce50830dbc12b9e",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:14:00.000Z",
-            "ingested_at": "2026-09-04T15:21:35.641Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210340",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:46:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "25837b1db8350339f0177de082587e8fae11e36b7e460e166bd1b65c99e4687a",
-            "source_item_id": "1b29751137bb5e6a9fc6bae5cd071dc202db21efd5378bf12b970709a0706e28",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:46:00.000Z",
-            "ingested_at": "2026-09-04T16:06:43.902Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210334",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:44:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "be3c7805d813770d0c918eeefb7eb3bb643e1e462c2b8173932e4c7c31705051",
-            "source_item_id": "12ee03c51803e76ac9ce676a308a6ac3f086a198f85e334680ecf67cf1bab18c",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:44:00.000Z",
-            "ingested_at": "2026-09-04T16:06:43.902Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210328",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:42:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "6d94a0f90f87b9da343aefd22028049eb5f4638592ee463027f1fb17aab423bf",
-            "source_item_id": "06637c91483709f5200495624658f7432a979538bc74ea863c89f0f8a9dcbb5c",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:42:00.000Z",
-            "ingested_at": "2026-09-04T16:06:43.902Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210322",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:40:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "b651f371f6759f944a9fa15c33de31c4e2f047acbaf5303a7591204cca15d215",
-            "source_item_id": "55ffec73d4ee5ba75df7f0bb034a13d2ab420207705b52f6f2f056437b3e366e",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:40:00.000Z",
-            "ingested_at": "2026-09-04T16:06:43.902Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210316",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:38:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "7d88461876a31e3aeda0139f306b3f04720ea1d3f5d9a608e839813251a73112",
-            "source_item_id": "8f89a75e907edaef78dea0783746593dd5ec18058e03bffd17fae93f8da30554",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:38:00.000Z",
-            "ingested_at": "2026-09-04T15:51:24.598Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210310",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:36:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "9f0954ae22d83119cbfe0602b1cf617787104d74b6d97cf2392691977215898b",
-            "source_item_id": "c969dc831b18557a7e2a97e7fa581923ab0cb47506cb9aae4bb96c25bfbf1fb8",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:36:00.000Z",
-            "ingested_at": "2026-09-04T15:51:24.598Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210304",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:34:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "a739beb7d8d71b2298d2e7e0696fdb4a10acc9e30b056327caad53753c656120",
-            "source_item_id": "2ed45f5ba279b86b12f29f89a43ba9443e2317343803c591216ef0f830607a2a",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:34:00.000Z",
-            "ingested_at": "2026-09-04T15:51:24.598Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210358",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:52:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "420d76091b71dce3bccd7874b1d5faa081b9eb69a024883a205de43c007860df",
-            "source_item_id": "56c2544e1ef84eea231ecf53d1710eb17126ac5a474d98daf27e0893e8664d19",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:52:00.000Z",
-            "ingested_at": "2026-09-04T16:06:43.902Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210352",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:50:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "8474dd577b47024c07c9c423b8e8642d80fd5aae27f573a4b3ed5a50951d7694",
-            "source_item_id": "92a58baebccb117d2da7df04d0a299785d513f185cd91544edf05a98a080b139",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:50:00.000Z",
-            "ingested_at": "2026-09-04T16:06:43.902Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210346",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T15:48:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "caafa3d8d6d143186d7bef3c438dcfdfec4024c8353160e96de4a9a3ee64ee96",
-            "source_item_id": "12f44bdab0b109f24f0c816196ce23d68882d627efb4d60eb8614e816ed51667",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:48:00.000Z",
-            "ingested_at": "2026-09-04T16:06:43.902Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210436",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:18:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "5f1cfa4a535a6bdfdb56e4b5aaddaec9220955a2b8c731afb903e05840cf4319",
-            "source_item_id": "e60343738252e7ea652f3605cfc557887a8caaad8be999d59223f2b43cd56168",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:18:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210430",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:16:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "b9cb0f47892b4c7bf0abbc3d4f4fc1cfb5c670ae258e890d8b3a0e1271cd0ef5",
-            "source_item_id": "8cad38ea67da753c0bee5ad1c2bece94ef72bfe88e902127d64db8e4aadd6ea8",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:16:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210424",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:14:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "34f77afede601557cb8dc793cf1a3b593ce385e614f7dd0212f14e0d744c446e",
-            "source_item_id": "b57ba9f7b91843b8e71b599af48f7bf5c8b951372cf6109272b1ed49083d5e53",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:14:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210418",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:12:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "b5b94cac90518a8518d9613c08561b6a15501301ad09f7f2d7b7d50b119bf86d",
-            "source_item_id": "eaf5027e59c4c750a71ace1c7636e0d4a2b132d11b2db8cd305c771f1f4c29d5",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:12:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210412",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:10:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "ad7d095b932aaa811247fb1c3d0906975d582b6c79aebad142677b93e7c14ceb",
-            "source_item_id": "611a615754d6ecb6fc96460b21f747423dc17c3fbf6112d24d5e1df513693119",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:10:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210406",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:08:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "33c7ad6ee1a4dcd6f3d289e105e43c695ec6de7ca6b932cbe97e8788f5e61b9b",
-            "source_item_id": "4b06a1ed3faac9c393ccf5cf5be1b93779af510f7e54b09bb67f90e17ab475cd",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:08:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210400",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:06:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "ba45f602821a98343c91389a755066509d2a14dd7e21fb8fe289893b61cfee9e",
-            "source_item_id": "fcd896f3559a3ad8cba5cc9fca703e6f590a7e3f195e3f6e4f54fc06904286e1",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:06:00.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210532",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:50:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "eeb47a8281361d9b6a8d1cdced82137dd10edb398761c585a95fb2140baeb5da",
-            "source_item_id": "2319c968ddcb7ee5db82366fab8af464474d89152094cfeb4410107c091b2b19",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:50:00.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210526",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:48:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "ef18b35e4c5b8393254f7f89fe939b35aa41ee056b35ef3360750c39f2b84807",
-            "source_item_id": "b273e5c2909a8485167acf8bdbe0cc91e26867146a90175504432352bc6c2586",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:48:00.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210520",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:46:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "9ec22df5e0764063353aad5f99ca71d6c898d32570ff7cac5d967c6241a49c0b",
-            "source_item_id": "e2fa921e1407a4ff456c2c2410e9d0bc3368b7e6bc834b75fe2e213ff9900f4f",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:46:00.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210514",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:44:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "ece015bba68046dcbc0e6425bcb05d812d2d7ed95442fce78b8ffedc2051bd09",
-            "source_item_id": "f3b2637f24767bddcbb102c8b26c3b7969b8dee54c79c9cd758e9a28ecd1ea0e",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:44:00.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210508",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:42:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "50cfc5e0d07b847ee28d21f5ebd2a7a359109937a1bba9096e8cacb2e0e2850b",
-            "source_item_id": "11347d27b7d8a6b9951c4ba91706bf65cb645096536dfd32356096ab9afcddb3",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:42:00.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210502",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:40:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "df80bfe6fef17fc34b2b59b99538918c0d873a371f17011f68be26ba8bff3c72",
-            "source_item_id": "3c8b51b7ba31dab3959bd5c6bdc0551b985ddd21460c47dffea609f3fc33c9f6",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:40:00.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210496",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:38:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "fa9e9878eb03900df0d80baf9333cf749bb37e305f1e181f916e2ab9e3fdf37a",
-            "source_item_id": "0bfef8bb2d2627437cfdc139cea93aaf0dbc3670970289419ed66d13db4238c6",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:38:00.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210562",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T17:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "c4a85d732aa57560d378f9b1b68f9b84e3354882e1c3491676f7fc1c762e8618",
-            "source_item_id": "f7dfac1c6caa1e0016352ea308c5dc44c18494908579912b6b7c6ea9ec7fb221",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:00:00.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210556",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:58:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "5b1b5762c34fcb64bdc4731db53d1fd3e2c30260fc9c10ec88960998d83beca7",
-            "source_item_id": "8e5a9247725e63a4c7ce5e1283f0c8844543e875f415c43f8083c579f44cc1a4",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:58:00.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210550",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:56:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "11fc89123658fdb06e26c739054f4dad15a1cad573185e498335ac2090f84f16",
-            "source_item_id": "2fe288b997282474fe2829f43904ec9880d7efe37bf9df08da57ce656ae2a8ee",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:56:00.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210544",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:54:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "bc8f7648a69aa11f09e884ff9340cab28e50c343294a63a59ac2215809114027",
-            "source_item_id": "1aad8d472b4caf7fe33f7e649f816cc4d5a2e843fac7bd75e804f019dcdb43cb",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:54:00.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag – Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210538",
-            "title": "Anhörung zur Änderung des Düngegesetzes",
-            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Der Landwirtschaftsausschuss wird am Dienstag, 8. September, eine öffentliche Anhörung zur geplanten Änderung des Düngegesetzes durchführen.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-04T16:52:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "cb93c2857f57afd95f31e76e1c94fb0ba6809fc6a84e3b22eb0f6d2779536b28",
-            "source_item_id": "cc9a921dc2122a7a48ea0a35ec5492c5f8b73ca33919ca2085d4fe1b4ade1c5e",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:52:00.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-1fbb056ccaaf351d",
@@ -37046,7 +36099,7 @@
       "verification_started_at": "2026-09-04T15:23:09.513Z",
       "publish_ready_at": "2026-09-04T15:23:21.799Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -37405,9 +36458,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "86fd6b2ea96285e75926899ad49f5c8b5fb2bc2727b82325654b5c90e3792969",
-        "checked_at": "2026-09-04T19:06:24.876Z",
+        "checked_at": "2026-09-05T06:21:36.638Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T01:06:24.876Z",
+        "expires_at": "2026-09-05T12:21:36.638Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -37432,7 +36485,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:12:29.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:france24",
               "basis": "publisher_only_origin_unverified",
@@ -37441,49 +36494,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "2813f7608bc9d1aa06daa520b46a72bf4782a80bc0416750918335a081dc5508",
-        "sources": [
-          {
-            "source_id": "france24-en",
-            "publisher": "France 24",
-            "url": "https://www.france24.com/en/video/20260904-france-announces-%E2%82%AC1-billion-aid-for-farmers-after-climate-hit-summer",
-            "title": "France announces €1 billion aid for farmers after climate-hit summer",
-            "summary": "France has recorded its hottest summer on record this year as the country battled heatwaves, drought and massive wildfires. The extreme weather has continued into September, with France's national weather service placing five departments on orange alert for several days. Temperatures are expected to reach 40°C in some areas. France's agriculture minister also announced a plan to unlock over 1 billion euros in aid to the agriculture sector, which has been severely affected by the extreme weather.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T15:12:29.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "13158aec0b2e5b10c972cc515a2a5439b27c519716b1f44d379e690492f2cc28",
-            "source_item_id": "e6ed56d5d70516c4f5e4eef5860c6dc8e04ccffb3bd2b8c14a640ac5d417f59d",
-            "publisher_id": "france24",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:12:29.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:france24",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-8e4cf2004cb7951c",
@@ -39277,7 +38288,7 @@
       "verification_started_at": "2026-09-04T14:38:20.120Z",
       "publish_ready_at": "2026-09-04T14:38:33.214Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -39638,9 +38649,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "2e64e76a21856dac036f7d3ea40d5cd4838faf1bd3e03457afcc34124351a8b7",
-        "checked_at": "2026-09-04T18:51:27.003Z",
+        "checked_at": "2026-09-05T06:21:36.638Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T00:51:27.003Z",
+        "expires_at": "2026-09-05T12:21:36.638Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -39675,50 +38686,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "2eac0a596c34859bc1c26fe892d842d1a22882fb8531ec61738173c01dd0cb92",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/frontex-unterstuetzt-frankreich-bei-einsaetzen-im-aermelkanal-100.html",
-            "title": "Migration - Frontex unterstützt Frankreich bei Einsätzen im Ärmelkanal",
-            "summary": "Die europäische Grenzschutzagentur Frontex unterstützt künftig die Seenotrettung von Migranten im Ärmelkanal und in der ‌Nordsee.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T18:30:01.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "af0ed65c1b7538b6ccd71b020e8efb41ecae511e695892d5c2da2c1e8ea80a7f",
-            "source_item_id": "cacbf9df78b9baa38d8a869c5135bbc4c7546dff937b14d343bbba39b5292ee7",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T18:30:01.000Z",
-            "ingested_at": "2026-09-04T18:51:27.003Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-61ed7f528fbdb3c0",
@@ -60243,7 +59211,7 @@
       "verification_started_at": "2026-09-04T10:08:57.447Z",
       "publish_ready_at": "2026-09-04T10:09:13.371Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -60599,47 +59567,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "f2f275831ec2841c4178a371f67387e9b32150d931d19be17fc5bfb8f4be6de1",
-        "checked_at": "2026-09-04T19:50:26.018Z",
+        "checked_at": "2026-09-05T06:21:36.638Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T01:50:26.018Z",
-        "sources": [
-          {
-            "source_id": "rbb24-nachrichten",
-            "publisher": "rbb24",
-            "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
-            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
-            "summary": "Die Polizei hält Bekennerschreiben zur Sabotage von Umspannwerken in Jänschwalde und Nordrhein-Westfalen für authentisch. Ein 48-Jähriger präsentiert sich darin als alleiniger Täter. Offenbar wurden gezielt Anlagen ausgewählt, die an Kohlekraftwerke angeschlossen sind.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T19:30:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "da6ff6380c7115d1e03ea11c774fa387efed0294474db69c86ee8475779bec10",
-            "source_item_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-            "publisher_id": "rbb",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin-Brandenburg"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T19:30:14.000Z",
-            "ingested_at": "2026-09-04T19:50:26.018Z",
-            "provenance": {
-              "origin": "publisher:rbb",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "256ab2d345b452e2a19388b09292465a6a590de6ab17c63c6d04349f166298e1",
+        "expires_at": "2026-09-05T12:21:36.638Z",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
@@ -60672,14 +59602,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-27dc5630c8e71dc0",
@@ -64821,7 +63746,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": null,
-            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "ingested_at": "2026-09-05T06:21:36.638Z",
             "provenance": {
               "origin": "publisher:bundestag",
               "basis": "publisher_only_origin_unverified",
