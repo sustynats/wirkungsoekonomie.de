@@ -1328,7 +1328,7 @@
       "source_utility_score": 50,
       "metrics": {
         "items_seen": 0,
-        "items_local_rejected": 4,
+        "items_local_rejected": 8,
         "items_duplicate": 0,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
@@ -1732,7 +1732,7 @@
       "observation_status": "insufficient_window",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 51.5,
+      "source_utility_score": 53,
       "metrics": {
         "items_seen": 0,
         "items_local_rejected": 0,
@@ -1743,7 +1743,7 @@
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 1,
+        "items_source_integrity_failed": 2,
         "items_corrected_later": 0,
         "ai_input_tokens": 0,
         "ai_output_tokens": 0,
@@ -1762,7 +1762,7 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 44.4,
+      "source_utility_score": 47.4,
       "metrics": {
         "items_seen": 20,
         "items_local_rejected": 0,
@@ -1791,7 +1791,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 53.4,
+      "source_utility_score": 62.4,
       "metrics": {
         "items_seen": 20,
         "items_local_rejected": 3,
@@ -1820,7 +1820,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 47.9,
+      "source_utility_score": 53.9,
       "metrics": {
         "items_seen": 60,
         "items_local_rejected": 4,
@@ -1847,7 +1847,7 @@
       "observation_status": "insufficient_window",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 60,
+      "source_utility_score": 61.5,
       "metrics": {
         "items_seen": 10,
         "items_local_rejected": 0,
@@ -2173,7 +2173,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 42.4,
+      "source_utility_score": 45.4,
       "metrics": {
         "items_seen": 50,
         "items_local_rejected": 4,
@@ -2232,7 +2232,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 48.4,
+      "source_utility_score": 49.9,
       "metrics": {
         "items_seen": 60,
         "items_local_rejected": 13,
@@ -2259,7 +2259,7 @@
       "observation_status": "insufficient_window",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 46.2,
+      "source_utility_score": 47.7,
       "metrics": {
         "items_seen": 15,
         "items_local_rejected": 4,
@@ -2288,7 +2288,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 47.9,
+      "source_utility_score": 49.4,
       "metrics": {
         "items_seen": 20,
         "items_local_rejected": 5,
@@ -2344,7 +2344,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 46.4,
+      "source_utility_score": 47.9,
       "metrics": {
         "items_seen": 60,
         "items_local_rejected": 1,
@@ -2402,7 +2402,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 44.1,
+      "source_utility_score": 45.6,
       "metrics": {
         "items_seen": 57,
         "items_local_rejected": 2,
@@ -2429,7 +2429,7 @@
       "observation_status": "measurable",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 55.8,
+      "source_utility_score": 58.8,
       "metrics": {
         "items_seen": 47,
         "items_local_rejected": 3,
@@ -2458,7 +2458,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 46.5,
+      "source_utility_score": 48,
       "metrics": {
         "items_seen": 54,
         "items_local_rejected": 2,
@@ -2488,7 +2488,7 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 43.7,
+      "source_utility_score": 45.2,
       "metrics": {
         "items_seen": 49,
         "items_local_rejected": 0,
@@ -2600,7 +2600,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 42.6,
+      "source_utility_score": 44.1,
       "metrics": {
         "items_seen": 27,
         "items_local_rejected": 1,
@@ -2630,7 +2630,7 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 45.5,
+      "source_utility_score": 48.5,
       "metrics": {
         "items_seen": 35,
         "items_local_rejected": 1,
