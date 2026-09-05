@@ -1,43 +1,8 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-05T18:45:53.209Z",
+  "updated_at": "2026-09-05T20:51:40.373Z",
   "candidates": [
-    {
-      "story_id": "wt-3d901522efd87e2d",
-      "story_slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
-      "story_title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
-      "editorial_analysis_score": 70,
-      "analysis_gain": 47,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 9,
-        "impact_risk": 8,
-        "observed_impact": 0,
-        "third_order_relevance": 5,
-        "transformation_relevance": 3,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 3,
-        "discourse_relevance": 0,
-        "case_depth": 8,
-        "evidence_quality": 8
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 6,
-        "primary_source_count": 0,
-        "cited_claim_count": 20,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "fdcacf32e79f464ef271fee2ad82843b3252958eb7d9531c9845fecd635ac781",
-      "status": "published",
-      "analysis_id": "woek-analysis-cf42f2c67306"
-    },
     {
       "story_id": "wt-6a7145e6dc679f95",
       "story_slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
@@ -46,8 +11,10 @@
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 14,
-        "impact_potential": 9,
-        "impact_risk": 4,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 9,
         "observed_impact": 0,
         "third_order_relevance": 10,
         "transformation_relevance": 8,
@@ -58,6 +25,11 @@
         "discourse_relevance": 0,
         "case_depth": 0,
         "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
       },
       "evidence_gate": {
         "passed": false,
@@ -77,99 +49,207 @@
       "analysis_id": null
     },
     {
-      "story_id": "wt-4742476ae893311b",
-      "story_slug": "sabotage-polizei-und-staatsanwaltschaft-fahnden-nach-tatverdachtigem-93311b",
-      "story_title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
+      "story_id": "wt-4b5d0962d323432a",
+      "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+      "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
       "editorial_analysis_score": 79,
-      "analysis_gain": 53,
+      "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 16,
-        "impact_potential": 10,
-        "impact_risk": 8,
-        "observed_impact": 0,
-        "third_order_relevance": 5,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 8,
-        "evidence_quality": 8
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 13,
-        "primary_source_count": 0,
-        "cited_claim_count": 85,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "009de1fc2b2d661492718cc8e0fd9446585289a1ba044ac23d5a7520a875a3d3",
-      "status": "published",
-      "analysis_id": "woek-analysis-166b13117cb1"
-    },
-    {
-      "story_id": "wt-aabe8c0430bf8f84",
-      "story_slug": "two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84",
-      "story_title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
-      "editorial_analysis_score": 69,
-      "analysis_gain": 51,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 9,
-        "impact_risk": 8,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
         "observed_impact": 0,
         "third_order_relevance": 10,
-        "transformation_relevance": 8,
+        "transformation_relevance": 0,
         "resilience_relevance": 8,
-        "macro_relevance": 0,
+        "macro_relevance": 9,
         "MPD_interdependence": 2,
-        "distribution_relevance": 3,
+        "distribution_relevance": 8,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
       },
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
         "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 7,
+        "primary_source_count": 2,
+        "cited_claim_count": 2,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
-      "status": "published",
-      "analysis_id": "woek-analysis-94b29d766984"
+      "fingerprint": "692ec37ba57b489213b36cd736b0fe8371be569f545a74b84d3936b0c4bfa18d",
+      "status": "ready_for_research",
+      "analysis_id": null
     },
     {
-      "story_id": "wt-edd4484465895b46",
-      "story_slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
-      "story_title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
-      "editorial_analysis_score": 67,
-      "analysis_gain": 48,
+      "story_id": "wt-f2edeab46d126d83",
+      "story_slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
+      "story_title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+      "editorial_analysis_score": 83,
+      "analysis_gain": 60,
       "factors": {
         "systemic_relevance": 16,
-        "impact_potential": 9,
-        "impact_risk": 8,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
         "observed_impact": 0,
         "third_order_relevance": 10,
         "transformation_relevance": 8,
         "resilience_relevance": 8,
-        "macro_relevance": 0,
+        "macro_relevance": 3,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 1,
+        "cited_claim_count": 5,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "32ca0d447cbc4a1cc4b5adb1679c3dbb378e35288ed8e670640ede74a03579ac",
+      "status": "published",
+      "analysis_id": "woek-analysis-061f61c466cf"
+    },
+    {
+      "story_id": "wt-d80fd849c477e2ad",
+      "story_slug": "gesundheitscheck-vor-ausbildung-thuringen-ubernimmt-kosten-fur-untersuchung-77e2ad",
+      "story_title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
         "MPD_interdependence": 2,
-        "distribution_relevance": 3,
+        "distribution_relevance": 8,
         "discourse_relevance": 0,
         "case_depth": 0,
         "evidence_quality": 3
       },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
       "evidence_gate": {
         "passed": false,
-        "source_integrity": "passed",
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 5,
+        "primary_source_expected": false,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "7c2991fc7b77ebae7a8805a3db3d8895afd14bdd9fdb5471144bcd440912ce82",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-b5e0a39f46388642",
+      "story_slug": "speech-by-commissioner-lahbib-at-the-european-parliament-on-the-2026-wildfire-season-388642",
+      "story_title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
+      "editorial_analysis_score": 84,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 3,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "031e49918d0d6a49b8108f9f992be324d092a20c1f2c8f06e6b6b4d265653c07",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-79a8fce4900e254f",
+      "story_slug": "france-announces-1-billion-aid-for-farmers-after-climate-hit-summer-0e254f",
+      "story_title": "France announces €1 billion aid for farmers after climate-hit summer",
+      "editorial_analysis_score": 77,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
         "independent_origin_count": 1,
         "primary_source_count": 0,
         "cited_claim_count": 3,
@@ -180,44 +260,96 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "882570f03a13cc972007897ab935d4597225deff24a2baf33138e7d368780e61",
+      "fingerprint": "e3acd3f26402baf58b3653cf6114aad29f93707a951e7599e46481fc2ed36140",
       "status": "research_pending",
       "analysis_id": null
     },
     {
-      "story_id": "wt-1bc40229c938d48a",
-      "story_slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
-      "story_title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
-      "editorial_analysis_score": 76,
+      "story_id": "wt-9cca0ad92ad1a84a",
+      "story_slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
+      "story_title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+      "editorial_analysis_score": 70,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 9,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 1,
+        "cited_claim_count": 5,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": [
+          "fewer_than_two_source_origins"
+        ]
+      },
+      "fingerprint": "8d84b7a038b7c685eeabd968d242133739320d8411c4dfef80756e2e5f4093ad",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-34e360cdb996a299",
+      "story_slug": "france-agriculture-production-sees-economic-hit-from-heatwaves-96a299",
+      "story_title": "France agriculture production sees economic hit from heatwaves",
+      "editorial_analysis_score": 84,
       "analysis_gain": 60,
       "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 10,
-        "impact_risk": 8,
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
         "observed_impact": 0,
         "third_order_relevance": 10,
         "transformation_relevance": 8,
         "resilience_relevance": 8,
-        "macro_relevance": 0,
+        "macro_relevance": 9,
         "MPD_interdependence": 6,
-        "distribution_relevance": 3,
+        "distribution_relevance": 8,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
       },
       "evidence_gate": {
         "passed": false,
-        "source_integrity": "passed",
-        "independent_origin_count": 3,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
         "primary_source_count": 0,
         "cited_claim_count": 3,
-        "primary_source_expected": true,
+        "primary_source_expected": false,
         "primary_source_satisfied": false,
         "reasons": [
+          "fewer_than_two_source_origins",
           "primary_source_missing"
         ]
       },
-      "fingerprint": "27b6d823c7bfe9f1f625b1555c054a9421253f68307ccc6eef2b95f3e9bd7077",
+      "fingerprint": "fe9b18304408338d6da0b51543e667e77e633f8313cd094f05fc971c90cf9078",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -229,8 +361,10 @@
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 16,
-        "impact_potential": 10,
-        "impact_risk": 8,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
         "observed_impact": 0,
         "third_order_relevance": 10,
         "transformation_relevance": 8,
@@ -242,9 +376,14 @@
         "case_depth": 0,
         "evidence_quality": 8
       },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
       "evidence_gate": {
         "passed": true,
-        "source_integrity": "passed",
+        "source_integrity": "verified",
         "independent_origin_count": 3,
         "primary_source_count": 1,
         "cited_claim_count": 6,
@@ -4772,6 +4911,487 @@
               "data_status": "inferred",
               "uncertainty": "Die Schlussfolgerung bleibt an die derzeitige Quellenlage gebunden und kann sich mit neuer Evidenz ändern.",
               "date": "2026-09-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-061f61c466cf",
+      "story_id": "wt-f2edeab46d126d83",
+      "related_story_ids": [
+        "wt-f2edeab46d126d83"
+      ],
+      "related_case_id": null,
+      "slug": "veroffentlichte-daten-aus-dem-berliner-landesnetz-was-der-vorfall-fur-verwaltung-u-061f61",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "32ca0d447cbc4a1cc4b5adb1679c3dbb378e35288ed8e670640ede74a03579ac",
+      "candidate_score": 83,
+      "analysis_gain_score": 60,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 1,
+        "cited_claim_count": 5,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T20:51:40.373Z",
+      "updated_at": "2026-09-05T20:51:40.373Z",
+      "version": 1,
+      "editorial_question": "Was verändert die Veröffentlichung mutmaßlich gestohlener Daten aus dem Berliner Landesnetz systemisch – für Verwaltung, Betroffene und die Schutzlogik öffentlicher Infrastruktur – und was bleibt dabei unbewiesen?",
+      "analysis_type": "system_analysis",
+      "title": "Veröffentlichte Daten aus dem Berliner Landesnetz: Was der Vorfall für Verwaltung und Schutzlogik verändert",
+      "subtitle": "Der gesicherte Kern ist die Veröffentlichung mutmaßlich gestohlener Daten; der größere Zusammenhang liegt in Prüfungslasten, Vertrauensverlust und möglicher Verwundbarkeit sensibler Informationen.",
+      "teaser": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein. Belegt sind Veröffentlichung und Prüfung – nicht der gesamte Inhalt oder ein Missbrauch.",
+      "seo_description": "Berliner Landesnetz: Veröffentlichung mutmaßlich gestohlener Daten, was belegt ist, welche Risiken plausibel sind und was offen bleibt.",
+      "additional_value": "Die Analyse trennt den belegten Vorgang von den noch offenen Fragen und ordnet ihn als Verwaltungs-, Sicherheits- und Demokratieproblem ein: nicht weil Reichweite schon Wirkung wäre, sondern weil veröffentlichte sensible Daten zusätzliche Prüf-, Schutz- und Informationspflichten auslösen können. Der Zusatznutzen liegt in der sauberen Trennung von Fakt, Risiko und möglicher Folgewirkung.",
+      "research_summary": "Die Quellenlage ist schmal, aber konsistent in einem Punkt: Nach dem Angriff auf das Berliner Landesnetz sollen Daten veröffentlicht worden sein, der Senat prüft sie intensiv und will Betroffene bei Bedarf informieren. rbb nennt rund 1,4 Millionen Datensätze und ein Erpressungsbegehren über 30 Bitcoin. Deutschlandfunk berichtet unter Berufung auf den Tagesspiegel, unter den Dateien könnten sich sicherheitsrelevante Unterlagen zu Zivilschutz, besonders zu schützenden Objekten und Rüstungsunternehmen befinden; amtlich bestätigt ist das nicht. Eine tatsächliche Nutzung, Weiterverbreitung oder ein konkreter Missbrauch der Daten ist in den gelieferten Quellen nicht belegt.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Veröffentlichung ja, Echtheit und Inhalt nur teilweise offen",
+          "paragraphs": [
+            "Der Ausgangspunkt ist ein bereits eingetretener Zustand: Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet zugänglich gemacht worden sein. Der rbb berichtet, die Hackergruppe Rhysida habe nach Ablauf eines Ultimatums Datenpakete veröffentlicht; Deutschlandfunk meldet ebenfalls die Veröffentlichung gestohlener Daten. Der Berliner Senat lässt die Dateien derzeit intensiv prüfen und will Betroffene bei Bedarf informieren.",
+            "Was in den Dateien tatsächlich steckt, ist damit noch nicht abschließend geklärt. rbb nennt rund 1,4 Millionen Datensätze, doch auch dieser Umfang bleibt in den Quellen eine Medienangabe. Besonders heikel ist der zusätzlich kolportierte Inhalt: Deutschlandfunk berichtet unter Berufung auf den Tagesspiegel, es könnten Zivilschutzdaten, Angaben zu besonders zu schützenden Objekten und geheime Unterlagen mit Bezug zu Rüstungsunternehmen dabei sein. Genau diese Inhalte sind bislang nicht amtlich bestätigt."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusatznutzen: Warum diese Veröffentlichung mehr ist als ein weiterer Cybervorfall",
+          "paragraphs": [
+            "Systemisch relevant wird der Fall nicht durch die bloße Schlagzahl der Meldung, sondern durch den möglichen Charakter der Daten. Wenn eine Veröffentlichung Verwaltungsdaten, Schutzbedarfe oder Notfallinformationen berührt, verschiebt sich das Problem von einem reinen Vertraulichkeitsbruch hin zu einer Frage der öffentlichen Schutzarchitektur. Dann geht es nicht nur um einzelne Datensätze, sondern um die Frage, welche Informationen im Ernstfall kriminell oder strategisch verwertet werden könnten.",
+            "Der zusätzliche systemische Nutzen einer Analyse liegt daher in der Trennung von drei Ebenen: erstens der belegten Veröffentlichung, zweitens dem noch ungesicherten Inhalt und drittens der möglichen Folgewirkung auf die Handlungsfähigkeit öffentlicher Stellen. Genau diese Trennung verhindert Überinterpretation. Reichweite ist nicht automatisch Wirkung; erst eine tatsächliche Zustandsveränderung – etwa Missbrauch, Erpressungserfolg oder operative Ausnutzung – wäre als Wirkung zu werten."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: die drei Perspektiven auf denselben Vorfall",
+          "paragraphs": [
+            "Für Menschen ist der naheliegende Bezug die mögliche Betroffenheit durch veröffentlichte Verwaltungsdaten. Wenn personenbezogene Informationen darunter sind, kann das Identitätsmissbrauch, Betrug oder zusätzliche Unsicherheit auslösen. Belegt ist in den Quellen aber nicht, dass bereits ein solcher Missbrauch stattgefunden hat. Es bleibt beim Risiko- und Potenzialrahmen.",
+            "Für den Planeten ergibt sich aus dem Material kein belastbarer direkter Bezug. Die Quellen nennen keine Umwelt- oder Klimawirkung. Für die Demokratie ist der Fall dagegen deutlich relevanter: Es geht um staatliche IT, Verwaltungsgeheimnisse und die Korrekturfähigkeit öffentlicher Stellen. Wenn sensible Informationen aus einem Landesnetz öffentlich werden, kann das Vertrauen in die Schutzfähigkeit staatlicher Systeme unter Druck geraten."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Was bereits eingetreten ist und was nur plausibel erscheint",
+          "paragraphs": [
+            "Die erste Ordnung ist klar belegt: Daten sollen veröffentlicht worden sein; der Senat prüft sie; Betroffene sollen bei Bedarf informiert werden. Das sind reale Reaktionen auf einen realen Vorfall. Eine zweite Ordnung ist plausibel, aber in den Quellen nicht als eingetretene Zustandsänderung nachgewiesen: zusätzlicher Ermittlungsaufwand, forensische Sichtung, Schutzprüfungen und Benachrichtigungen.",
+            "Eine dritte Ordnung wäre die strategische Folge, also Anpassungen bei Datentrennung, Zugriffsrechten und Krisenvorsorge. Auch das ist im Material nur als nachvollziehbare Reaktionslogik angelegt, nicht als bereits beobachtete Transformation. Die Wirkung der Veröffentlichung liegt also derzeit vor allem im Stör- und Prüfgeschehen, nicht in einer bestätigten längerfristigen Neuordnung."
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten: Aufwand, Unsicherheit und mögliche Sekundärschäden",
+          "paragraphs": [
+            "Der Vorfall erzeugt externe Kosten, die nicht bei den unmittelbar betroffenen Datensätzen enden. Behörden müssen prüfen, ob Dateien echt, vollständig und aktuell sind; sie müssen möglichen Betroffenen Informationen geben; und sie müssen die Frage beantworten, ob zusätzliche Schutzmaßnahmen nötig sind. Solche Folgekosten sind in Cybervorfällen oft größer als der erste sichtbare Schaden.",
+            "Eine weitere Externalität ist die potenzielle Irreversibilität. Wenn Daten einmal veröffentlicht sind, kann ihre Verbreitung kaum vollständig zurückgenommen werden. Selbst wenn sich später Teile als falsch, alt oder unvollständig herausstellen, bleibt das Prüf- und Unsicherheitsdefizit bestehen. Das ist noch keine belegte konkrete Missbrauchswirkung, aber ein realistischer Risikopfad."
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer trägt die Last des Vorfalls?",
+          "paragraphs": [
+            "Die Last verteilt sich ungleich. Auf Seiten des Staates entstehen Prüf-, Schutz- und Kommunikationskosten. Auf Seiten möglicher Betroffener kann schon die bloße Unsicherheit über die Veröffentlichung persönlicher Daten Aufwand, Stress und Vorsorgeverhalten auslösen. Auf Seiten sicherheitsrelevanter Einrichtungen könnte – falls die kolportierten Inhalte stimmen – zusätzlicher Schutzbedarf entstehen.",
+            "Verteilungspolitisch wichtig ist hier die Unterscheidung zwischen allgemeinem Verwaltungsrisiko und besonders sensiblen Schutzgütern. Wenn in den Dateien tatsächlich Informationen zu Krankenhäusern, Tanklagern oder Notstromanlagen enthalten wären, wäre die Betroffenheit nicht gleichmäßig, sondern konzentriert bei Einrichtungen mit systemischer Funktion. Das ist jedoch nur als berichtetes, noch unbestätigtes Szenario zu behandeln."
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Woran sich die Krisenfestigkeit nun messen lässt",
+          "paragraphs": [
+            "Resilienz zeigt sich in diesem Fall an vier Punkten: schneller forensischer Prüfung, risikobasierter Information möglicher Betroffener, Schutz sensibler Datenbestände und der Fähigkeit, aus dem Vorfall strukturelle Konsequenzen zu ziehen. Der Senat kündigt laut Quelle an, Betroffene bei Bedarf zu informieren; das ist eine erste Reaktionsform, aber noch kein Nachweis gelungener Rückkopplung.",
+            "Entscheidend ist, ob die Verwaltung zwischen kompromittierten und besonders sensiblen Beständen besser trennt. Wenn die kolportierten Zivilschutz- oder Schutzobjekt-Dokumente echt sind, würde das den Prüfmaßstab verschärfen: Dann geht es nicht nur um Datenschutz, sondern auch um die Widerstandsfähigkeit staatlicher Schutzvorsorge. Die Quellen belegen diese Gefahr nicht als eingetretene Folge, aber sie machen sie als Prüffrage sichtbar."
+          ]
+        },
+        {
+          "id": "szenarien",
+          "title": "Szenarien: Drei mögliche Entwicklungen, ohne sie voreilig zu setzen",
+          "paragraphs": [
+            "Im ersten Szenario erweist sich der Großteil der Daten als unkritisch, alt oder unvollständig. Dann bleibt der Vorfall vor allem ein erheblicher Verwaltungs- und Vertrauensschaden mit begrenzter zusätzlicher Sicherheitswirkung. Im zweiten Szenario enthalten die Dateien personenbezogene und verwaltungsinterne Informationen, die für Betrug, Erpressung oder Phishing nutzbar sind. Dann würde aus der Veröffentlichung ein konkreteres Schadenspotenzial für Betroffene.",
+            "Im dritten Szenario bestätigten sich die bisher ungesicherten Hinweise auf sicherheitsrelevante Unterlagen zu Zivilschutz oder besonders geschützten Objekten. Dann könnte der Vorfall über Datenschutz hinaus in die Schutzlogik kritischer Vorsorge hineinreichen. Dieses Szenario ist im Material jedoch nicht belegt, sondern nur als offene Möglichkeit sichtbar."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was die Quellen nicht tragen",
+          "paragraphs": [
+            "Die wichtigste Unsicherheit betrifft die Echtheit und Zusammensetzung der veröffentlichten Dateien. Offen bleibt, ob sie vollständig, aktuell und tatsächlich dem Berliner Landesnetz zuzuordnen sind. Ebenfalls offen bleibt, ob die von Deutschlandfunk unter Berufung auf den Tagesspiegel genannten sicherheitsrelevanten Inhalte wirklich enthalten sind.",
+            "Ebenso fehlt ein Beleg dafür, dass die Daten bereits missbraucht, weiterverbreitet oder operativ ausgewertet wurden. Die Quellen nennen Risiken, aber keine bestätigte Folgehandlung. Damit bleibt die Zurechnung bewusst eng: belegt ist die Veröffentlichung und die behördliche Prüfung, nicht mehr."
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Lage in den nächsten Meldungen entscheidet",
+          "paragraphs": [
+            "Für die Bewertung sind drei Beobachtungspunkte zentral: erstens amtliche oder forensische Bestätigung von Umfang, Echtheit und Inhalt; zweitens Hinweise auf Weiterverbreitung oder tatsächlichen Missbrauch; drittens Angaben dazu, welche Betroffenen und Einrichtungen informiert wurden. Erst wenn diese Punkte belastbar geklärt sind, lässt sich der Schaden präziser fassen.",
+            "Für die systemische Einordnung ist zusätzlich wichtig, ob die Berliner Stellen nach der Prüfung ihre Daten- und Schutzarchitektur anpassen. Eine solche Anpassung wäre noch keine Wirkung im engeren Sinn der Veröffentlichung, aber ein möglicher Transformationsschritt aus dem Vorfall heraus."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Die eigentliche Wirkung liegt derzeit im Prüf- und Schutzdruck",
+          "paragraphs": [
+            "Der Fall zeigt vor allem eines: Veröffentlichung ist noch nicht gleich Missbrauch, aber sie verändert den Zustand öffentlicher Sicherheitsarbeit sofort. Die Berliner Behörden müssen prüfen, benachrichtigen und möglicherweise nachschärfen. Daraus entstehen reale Kosten, Zeitdruck und Unsicherheit. Das ist eine tatsächliche Veränderung des Systems, auch wenn die weitergehenden Folgewirkungen noch offen sind.",
+            "Im WÖK-Sinn ist der Vorfall daher ein Fall mit sicherer Ausgangswirkung, aber offener Folgewirkung. Belegt ist die Störung der Vertraulichkeit und die behördliche Reaktion. Plausibel sind weitere Schutz- und Anpassungsschritte. Nicht belegt ist bislang ein konkreter operativer Missbrauch der Daten oder eine bestätigte Gefährdung durch die kolportierten sicherheitsrelevanten Inhalte. Genau diese Nüchternheit ist hier der zusätzliche journalistische Wert."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein.",
+          "type": "fact",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+            "4b388f5bd255ac527b57ddf41bbea1bb995154f2ee025fd2218e3c6df64bf251"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Veröffentlichung ist in den Quellen berichtet; die Authentizität der gesamten Datenmenge bleibt offen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Der Berliner Senat lässt die veröffentlichten Daten derzeit intensiv prüfen und will Betroffene bei Bedarf informieren.",
+          "type": "fact",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+            "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die konkrete Ausgestaltung der Prüfung ist in den Quellen nicht weiter ausbuchstabiert.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "rbb berichtet von rund 1,4 Millionen Datensätzen in mehreren Paketen.",
+          "type": "fact",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Dies ist eine Medienangabe und nicht amtlich bestätigt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Erpresser verlangten 30 Bitcoin, was rund zwei Millionen Euro entspricht.",
+          "type": "fact",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Forderung ist nur über die Medienquelle belegt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Deutschlandfunk berichtet unter Berufung auf den Tagesspiegel, unter den Dateien könnten Zivilschutzdaten, Angaben zu besonders geschützten Objekten und geheime Unterlagen mit Bezug zu Rüstungsunternehmen sein.",
+          "type": "fact",
+          "source_ids": [
+            "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863"
+          ],
+          "evidence_level": "low",
+          "data_status": "attributed",
+          "uncertainty": "Die Inhalte sind ausdrücklich als möglich berichtet und bislang nicht amtlich bestätigt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Wirkung im engeren Sinn liegt nur vor, wenn sich ein Zustand tatsächlich verändert; Reichweite, Potenzial und Risiko sind noch keine Wirkung.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodische Definition der Analyse.",
+          "date": null
+        },
+        {
+          "claim": "Der Vorfall erzeugt einen realen Prüf-, Schutz- und Benachrichtigungsdruck für den Berliner Staat.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+            "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Aus der behördlichen Prüfung und der Veröffentlichung lässt sich der Druck plausibel ableiten, aber nicht in allen Details messen.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Falls die berichteten sicherheitsrelevanten Unterlagen authentisch sind, könnte die Vorbereitung gezielter Ausspähung oder Sabotage erleichtert werden.",
+          "type": "impact_potential",
+          "source_ids": [
+            "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863"
+          ],
+          "evidence_level": "low",
+          "data_status": "scenario",
+          "uncertainty": "Die Quellen bestätigen die Authentizität und operative Nutzbarkeit dieser Inhalte nicht.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Ein tatsächlicher Missbrauch der veröffentlichten Daten ist in den gelieferten Quellen nicht belegt.",
+          "type": "observed_impact",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+            "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+            "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+          ],
+          "evidence_level": "high",
+          "data_status": "open",
+          "uncertainty": "Es gibt Hinweise und Risiken, aber keinen belastbaren Nachweis eines bereits eingetretenen Missbrauchs.",
+          "date": null
+        },
+        {
+          "claim": "Für den Planeten ergibt sich aus den Quellen kein belastbarer direkter Bezug zu Umwelt- oder Klimawirkungen.",
+          "type": "observation",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+            "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+            "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+          ],
+          "evidence_level": "medium",
+          "data_status": "confirmed",
+          "uncertainty": "Die vorliegenden Quellen thematisieren Umweltfragen nicht.",
+          "date": null
+        },
+        {
+          "claim": "Der Vorfall ist demokratiesensibel, weil er staatliche IT, Verwaltungsgeheimnisse und die Korrekturfähigkeit öffentlicher Stellen berührt.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+            "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Dies ist eine journalistisch-analytische Einordnung auf Basis der Quellenlage.",
+          "date": null
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die kolportierten sicherheitsrelevanten Inhalte sind ausdrücklich nicht amtlich bestätigt.",
+          "source_ids": [
+            "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+            "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+          ],
+          "effect_on_assessment": "Begrenzt jede harte Zurechnung zu Schutzobjekten, Zivilschutz oder Rüstungsbezug und zwingt zur offenen Formulierung als unbestätigtes Szenario."
+        },
+        {
+          "finding": "Die Datenmenge von rund 1,4 Millionen Datensätzen ist nur medienberichtet, nicht amtlich verifiziert.",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11"
+          ],
+          "effect_on_assessment": "Reduziert die Aussagekraft zum Umfang des Vorfalls; die Analyse sollte sich auf die Veröffentlichung als solche und die behördliche Prüfung konzentrieren."
+        },
+        {
+          "finding": "In den gelieferten Quellen ist kein konkreter Missbrauch der Daten belegt.",
+          "source_ids": [
+            "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+            "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+            "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+          ],
+          "effect_on_assessment": "Verhindert eine Übertragung von Risiko in behauptete Wirkung; die Bewertung bleibt bei Potenzial und Prüfaufwand."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Amtliche oder forensische Bestätigung von Echtheit, Vollständigkeit und Aktualität der Dateien",
+        "Nachweis eines tatsächlichen Missbrauchs, einer Weiterverbreitung oder einer operativen Nutzung",
+        "Bestätigung oder Widerlegung der berichteten Zivilschutz-, Schutzobjekt- und Rüstungsunterlagen",
+        "Konkrete Angaben des Senats dazu, welche Betroffenen informiert wurden und ob zusätzliche Schutzmaßnahmen eingeleitet wurden"
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Veröffentlichte Daten aus dem Berliner Landesnetz: Was der Vorfall für Verwaltung und Schutzlogik verändert",
+        "recommended_summary": "Belegt ist die Veröffentlichung mutmaßlich gestohlener Daten aus dem Berliner Landesnetz und die laufende Prüfung durch den Senat. Unbestätigt bleiben Umfang, Inhalt und Missbrauch.",
+        "recommended_meta_description": "Berliner Landesnetz: Veröffentlichung mutmaßlich gestohlener Daten, was belegt ist, welche Risiken plausibel sind und was offen bleibt."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c",
+          "registry_source_id": "berlin-presseportal",
+          "publisher_id": "land-berlin",
+          "publisher": "Presseportal des Landes Berlin",
+          "title": "Aktuelle Lage nach dem IKT-Vorfall im Landesnetz Berlin und der Veröffentlichung der gestohlenen Daten",
+          "url": "https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1710705.php",
+          "published_at": "2026-09-03T22:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "source_id": "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
+          "published_at": "2026-09-04T18:46:40.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
+          "published_at": "2026-09-04T16:14:15.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "4b388f5bd255ac527b57ddf41bbea1bb995154f2ee025fd2218e3c6df64bf251",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet",
+          "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
+          "published_at": "2026-09-04T17:11:33.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T20:51:40.373Z",
+          "source_fingerprint": "32ca0d447cbc4a1cc4b5adb1679c3dbb378e35288ed8e670640ede74a03579ac",
+          "title": "Veröffentlichte Daten aus dem Berliner Landesnetz: Was der Vorfall für Verwaltung und Schutzlogik verändert",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein.",
+              "type": "fact",
+              "source_ids": [
+                "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+                "4b388f5bd255ac527b57ddf41bbea1bb995154f2ee025fd2218e3c6df64bf251"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Veröffentlichung ist in den Quellen berichtet; die Authentizität der gesamten Datenmenge bleibt offen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Der Berliner Senat lässt die veröffentlichten Daten derzeit intensiv prüfen und will Betroffene bei Bedarf informieren.",
+              "type": "fact",
+              "source_ids": [
+                "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+                "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die konkrete Ausgestaltung der Prüfung ist in den Quellen nicht weiter ausbuchstabiert.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "rbb berichtet von rund 1,4 Millionen Datensätzen in mehreren Paketen.",
+              "type": "fact",
+              "source_ids": [
+                "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Dies ist eine Medienangabe und nicht amtlich bestätigt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Erpresser verlangten 30 Bitcoin, was rund zwei Millionen Euro entspricht.",
+              "type": "fact",
+              "source_ids": [
+                "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Forderung ist nur über die Medienquelle belegt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Deutschlandfunk berichtet unter Berufung auf den Tagesspiegel, unter den Dateien könnten Zivilschutzdaten, Angaben zu besonders geschützten Objekten und geheime Unterlagen mit Bezug zu Rüstungsunternehmen sein.",
+              "type": "fact",
+              "source_ids": [
+                "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863"
+              ],
+              "evidence_level": "low",
+              "data_status": "attributed",
+              "uncertainty": "Die Inhalte sind ausdrücklich als möglich berichtet und bislang nicht amtlich bestätigt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Wirkung im engeren Sinn liegt nur vor, wenn sich ein Zustand tatsächlich verändert; Reichweite, Potenzial und Risiko sind noch keine Wirkung.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodische Definition der Analyse.",
+              "date": null
+            },
+            {
+              "claim": "Der Vorfall erzeugt einen realen Prüf-, Schutz- und Benachrichtigungsdruck für den Berliner Staat.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+                "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Aus der behördlichen Prüfung und der Veröffentlichung lässt sich der Druck plausibel ableiten, aber nicht in allen Details messen.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Falls die berichteten sicherheitsrelevanten Unterlagen authentisch sind, könnte die Vorbereitung gezielter Ausspähung oder Sabotage erleichtert werden.",
+              "type": "impact_potential",
+              "source_ids": [
+                "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863"
+              ],
+              "evidence_level": "low",
+              "data_status": "scenario",
+              "uncertainty": "Die Quellen bestätigen die Authentizität und operative Nutzbarkeit dieser Inhalte nicht.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Ein tatsächlicher Missbrauch der veröffentlichten Daten ist in den gelieferten Quellen nicht belegt.",
+              "type": "observed_impact",
+              "source_ids": [
+                "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+                "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+                "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+              ],
+              "evidence_level": "high",
+              "data_status": "open",
+              "uncertainty": "Es gibt Hinweise und Risiken, aber keinen belastbaren Nachweis eines bereits eingetretenen Missbrauchs.",
+              "date": null
+            },
+            {
+              "claim": "Für den Planeten ergibt sich aus den Quellen kein belastbarer direkter Bezug zu Umwelt- oder Klimawirkungen.",
+              "type": "observation",
+              "source_ids": [
+                "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+                "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
+                "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Die vorliegenden Quellen thematisieren Umweltfragen nicht.",
+              "date": null
+            },
+            {
+              "claim": "Der Vorfall ist demokratiesensibel, weil er staatliche IT, Verwaltungsgeheimnisse und die Korrekturfähigkeit öffentlicher Stellen berührt.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
+                "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Dies ist eine journalistisch-analytische Einordnung auf Basis der Quellenlage.",
+              "date": null
             }
           ]
         }
