@@ -1,4 +1,5 @@
 // Deterministic routing, before AI. A shared topic is never an event identity.
+import { eventCompatibility } from "./newsroom.mjs";
 const DAY = 86400000;
 const time = (value) => Date.parse(value || "") || 0;
 const normal = (value) => String(value || "").normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
@@ -202,6 +203,8 @@ export function duplicateGroups(stories) {
       if (other === canonical || used.has(other.story_id) || subjectConflict(canonical, other)) return false;
       const a = fileSubject(canonical), b = fileSubject(other);
       if (a.key && a.key === b.key && Math.abs(time(canonical.first_seen || canonical.published_at) - time(other.first_seen || other.published_at)) <= 7 * DAY) return true;
+      const event = eventCompatibility(canonical.sources?.[0] || canonical, other.sources?.[0] || other);
+      if (event.same_event && event.reason === "structured_event_facts") return true;
       const doc = documentKey(canonical.sources?.[0]?.url);
       const leftTerms = terms(canonical.title), rightTerms = terms(other.title);
       const shared = leftTerms.filter((word) => rightTerms.includes(word)).length;

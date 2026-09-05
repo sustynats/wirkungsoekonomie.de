@@ -289,8 +289,8 @@ function editorialCard(analysis, story, index) {
 </article>`;
 }
 
-function mixedCards(stories, analyses, storiesById) {
-  if (!analyses.length) return stories.map(card).join("\n");
+function mixedFeedItems(stories, analyses) {
+  if (!analyses.length) return stories.map((story) => ({ type: "story", value: story }));
   const slots = new Map();
   analyses.forEach((analysis, index) => {
     // Analysen sind redaktionell in den Nachrichtenfluss eingestreut. Die
@@ -302,10 +302,16 @@ function mixedCards(stories, analyses, storiesById) {
   });
   const output = [];
   for (let index = 0; index <= stories.length; index += 1) {
-    for (const analysis of slots.get(index) || []) output.push(editorialCard(analysis, storiesById.get(analysis.story_id), output.length));
-    if (stories[index]) output.push(card(stories[index], output.length));
+    for (const analysis of slots.get(index) || []) output.push({ type: "analysis", value: analysis });
+    if (stories[index]) output.push({ type: "story", value: stories[index] });
   }
-  return output.join("\n");
+  return output;
+}
+
+function mixedCards(stories, analyses, storiesById) {
+  return mixedFeedItems(stories, analyses).map((item, index) => item.type === "analysis"
+    ? editorialCard(item.value, storiesById.get(item.value.story_id), index)
+    : card(item.value, index)).join("\n");
 }
 
 function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null, publicUpdatedAt = "", ogType = "website" }) {
@@ -356,7 +362,7 @@ ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkung
 <script src="${base}assets/js/main.js?v=20260904-actions1"></script>
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-pwa.js?v=${PUBLIC_RELEASE}"></script>
-<script src="${base}assets/js/news-navigation.js?v=20260904-reader2"></script>
+<script src="${base}assets/js/news-navigation.js?v=20260905-reader3"></script>
 ${extraScript}
 </body>
 </html>`;
@@ -543,8 +549,8 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
   const riskList = risks.length
     ? `<ul class="wt-risks">${risks.map((item) => `<li>${renderIcon("risiko")}<span>${escapeHtml(item)}</span></li>`).join("")}</ul>`
     : '<p class="news-analysis-copy">Offen – die Quellenlage reicht für eine belastbare Konkretisierung noch nicht aus.</p>';
-  const newerLink = newerStory ? `<a class="news-story-pagination__link news-story-pagination__link--newer" href="../${escapeHtml(newerStory.slug)}/"><span aria-hidden="true">←</span><span><small>Neuere Meldung</small><strong>${escapeHtml(newerStory.title)}</strong></span></a>` : "";
-  const nextLink = nextStory ? `<a class="news-story-pagination__link news-story-pagination__link--next" href="../${escapeHtml(nextStory.slug)}/"><span><small>Nächste Meldung</small><strong>${escapeHtml(nextStory.title)}</strong></span><span aria-hidden="true">→</span></a>` : "";
+  const newerLink = newerStory ? `<a class="news-story-pagination__link news-story-pagination__link--newer" href="${escapeHtml(newerStory.href || `../${newerStory.slug}/`)}"><span aria-hidden="true">←</span><span><small>Neuerer Beitrag</small><strong>${escapeHtml(newerStory.title)}</strong></span></a>` : "";
+  const nextLink = nextStory ? `<a class="news-story-pagination__link news-story-pagination__link--next" href="${escapeHtml(nextStory.href || `../${nextStory.slug}/`)}"><span><small>Nächster Beitrag</small><strong>${escapeHtml(nextStory.title)}</strong></span><span aria-hidden="true">→</span></a>` : "";
   const returnLink = `<a class="btn btn-secondary news-return-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list><span aria-hidden="true">←</span><span>Zur Übersicht</span></a>`;
   const body = `<main id="main-content" data-search-content data-no-glossary data-news-reader="detail">
   <section class="hero news-hero news-hero--story"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p><h1 class="hero-title">${escapeHtml(story.title)}</h1><div class="news-hero__meta">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Einordnung: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}</div></div></section>
@@ -600,7 +606,7 @@ const CLAIM_TYPE_LABELS = {
   attribution: "Zurechnung", normative_assessment: "Normative Bewertung",
 };
 
-export function editorialAnalysisPage(analysis, story) {
+export function editorialAnalysisPage(analysis, story, { nextItem = null } = {}) {
   const sourcesById = new Map((analysis.source_snapshot || []).map((source) => [source.source_id, source]));
   const sections = (analysis.sections || []).map((section) => `<section class="news-editorial-article__section" id="${escapeHtml(section.id)}"><h2>${escapeHtml(section.title)}</h2>${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}</section>`).join("");
   const sourceList = (analysis.source_snapshot || []).map((source) => `<li><a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><span>${source.primary_source ? "Primärquelle / Selbstauskunft" : "Journalistische oder fachliche Kontextquelle"} · ${escapeHtml(formatDate(source.published_at, { dateOnly: true }))}</span></li>`).join("");
@@ -612,12 +618,13 @@ export function editorialAnalysisPage(analysis, story) {
   const watch = (analysis.what_changes_the_assessment || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   const canonical = `${SITE}/wirkungsticker/analyse/${analysis.slug}/`;
   const storyUrl = `${SITE}/wirkungsticker/${story.slug}/`;
+  const nextLink = nextItem ? `<a class="news-story-pagination__link news-story-pagination__link--next" href="${escapeHtml(nextItem.href)}"><span><small>Nächster Beitrag</small><strong>${escapeHtml(nextItem.title)}</strong></span><span aria-hidden="true">→</span></a>` : "";
   const body = `<main id="main-content" data-search-content data-no-glossary data-news-reader="analysis">
   <article class="news-editorial-article">
     <header class="hero news-editorial-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../index.html">Start</a><span aria-hidden="true">/</span><a href="../../">Wirkungsticker</a><span aria-hidden="true">/</span><span>WÖK-Analyse</span></nav><p class="hero-kicker">WÖK-Analyse</p><h1 class="hero-title">${escapeHtml(analysis.title)}</h1><p class="hero-subtitle">${escapeHtml(analysis.subtitle)}</p><div class="news-editorial-byline"><img src="../../../assets/img/people/natalie-weber-woek-analyse.jpg" alt="Natalie Weber" width="144" height="144"><div><strong>Natalie Weber</strong><span>Methodik &amp; redaktionelle Verantwortung</span><span>${escapeHtml(analysis.reading_time_minutes || 8)} Min. Lesezeit · veröffentlicht ${escapeHtml(formatDate(analysis.published_at, { dateOnly: true }))}${analysis.updated_at !== analysis.published_at ? ` · aktualisiert ${escapeHtml(formatDate(analysis.updated_at, { dateOnly: true }))}` : ""}</span></div></div><div class="hero-actions"><a class="btn btn-secondary" href="../../${escapeHtml(story.slug)}/">Zur Ursprungsgeschichte</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis, "top")}</div></div></header>
     <section class="section"><div class="news-editorial-layout"><div class="news-editorial-article__main"><p class="news-editorial-deck">${escapeHtml(analysis.teaser)}</p><aside class="news-editorial-origin" role="note"><strong>Ausgangspunkt dieser Analyse</strong><a class="text-link" href="../../${escapeHtml(story.slug)}/">${escapeHtml(story.title)}</a><span>Aktueller Nachrichten-, Fakten- und Folgencheck</span></aside>${sections}<section class="news-editorial-article__section" id="beobachtungspunkte"><h2>Was die Einschätzung verändern würde</h2><ul>${watch}</ul></section></div><aside class="news-editorial-article__aside"><section class="news-story-section"><p class="hero-kicker">Autorin &amp; Methode</p><img class="news-editorial-author-image" src="../../../assets/img/people/natalie-weber-woek-analyse.jpg" alt="Natalie Weber" width="320" height="429" loading="lazy"><h2>Natalie Weber</h2><p>Gründerin der Wirkungsökonomie. Methodik und redaktionelle Verantwortung für dieses Format.</p><p class="news-method-note"><a class="text-link" href="../../../methodik/">${escapeHtml(analysis.transparency_note)}</a><br><a class="text-link" href="../../#methodik">So wird die Methode im Wirkungsticker angewendet</a></p></section><section class="news-story-section" id="quellen"><p class="hero-kicker">Recherchebasis</p><h2>Quellen</h2><ul class="news-editorial-sources">${sourceList}</ul><p class="news-method-note">Quellenrollen und Abhängigkeiten werden getrennt geprüft. Eine institutionelle Aussage belegt nicht automatisch ihre Wirkung.</p></section></aside></div></section>
     <section class="section section-soft"><article class="news-story-section"><p class="hero-kicker">Transparenz</p><h2>Was ist Fakt, was Analyse?</h2><p>Das Claim Ledger trennt Tatsachen, Beobachtungen, analytische Inferenzen, Potenziale, Risiken und belegte Zustandsveränderungen. Es ist keine Rangliste und kein wissenschaftlich exakter Gesamtscore.</p><details><summary>Beleglogik dieser Analyse öffnen</summary><ol class="news-editorial-ledger">${ledger}</ol></details>${counterEvidence ? `<h3>Gegenbefunde und Grenzen</h3><ul class="news-editorial-counterevidence">${counterEvidence}</ul>` : ""}</article></section>
-    <section class="section news-story-footer"><div class="news-story-footer__inner"><div><p class="hero-kicker">Aktuelle Lage</p><h2>Zurück zur Wirkungsakte</h2><p>Die Nachricht wird weiter aktualisiert, wenn neue belastbare Entwicklungen hinzukommen.</p><a class="btn btn-primary" href="../../${escapeHtml(story.slug)}/">Aktuelle Wirkungsakte öffnen${renderIcon("pfeil")}</a></div><div class="news-reader-actions">${editorialSaveControl(analysis)}${editorialShareControl(analysis, "bottom")}<a class="text-link" href="../../">Alle Wirkungsnachrichten</a></div></div></section>
+    <section class="section news-story-footer" aria-label="Weitere Wirkungsnachrichten"><div class="news-story-footer__inner"><div><p class="hero-kicker">Aktuelle Lage</p><h2>Zurück zur Wirkungsakte</h2><p>Die Nachricht wird weiter aktualisiert, wenn neue belastbare Entwicklungen hinzukommen.</p><a class="btn btn-primary" href="../../${escapeHtml(story.slug)}/">Aktuelle Wirkungsakte öffnen${renderIcon("pfeil")}</a></div><div class="news-reader-actions">${editorialSaveControl(analysis)}${editorialShareControl(analysis, "bottom")}<a class="text-link" href="../../" data-news-return-to-list>Alle Wirkungsnachrichten</a></div><div class="news-reader-actions" data-search-exclude><button class="btn btn-secondary" type="button" data-news-reader-back hidden>← Zurück im Leseweg</button><p class="news-swipe-hint" data-news-swipe-hint hidden>Wischen: rechts zurück${nextItem ? ", links zum nächsten Beitrag" : ""}.</p></div>${nextItem ? `<nav class="news-story-pagination" aria-label="Zwischen Beiträgen blättern">${nextLink}</nav>` : ""}</div></section>
   </article>
 </main>`;
   return pageShell({
@@ -757,6 +764,15 @@ export function buildNewsSite() {
   const storiesById = new Map(pageStories.map((story) => [story.story_id, story]));
   const editorialAnalyses = (editorialStore.analyses || []).filter((analysis) => analysis.status === "published" && storiesById.has(analysis.story_id)).sort((left, right) => Date.parse(right.updated_at) - Date.parse(left.updated_at));
   const editorialByStory = new Map(editorialAnalyses.map((analysis) => [analysis.story_id, analysis]));
+  const readerSequence = mixedFeedItems(stories, editorialAnalyses);
+  const readerKey = (item) => `${item.type}:${item.value.story_id || item.value.analysis_id}`;
+  const readerNeighbor = (item, offset, fromAnalysis = false) => {
+    const index = readerSequence.findIndex((candidate) => readerKey(candidate) === readerKey(item));
+    const neighbor = index >= 0 ? readerSequence[index + offset] : null;
+    if (!neighbor) return null;
+    const prefix = fromAnalysis ? (neighbor.type === "analysis" ? "../" : "../../") : (neighbor.type === "analysis" ? "../analyse/" : "../");
+    return { href: `${prefix}${neighbor.value.slug}/`, slug: neighbor.value.slug, title: neighbor.value.title };
+  };
   const retiredStories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed === false);
   const sourceManifest = fs.existsSync(MANIFEST_FILE) ? MANIFEST_FILE : LEGACY_MANIFEST_FILE;
   const oldSlugs = fs.existsSync(sourceManifest) ? readJson(sourceManifest).slugs || [] : [];
@@ -774,15 +790,19 @@ export function buildNewsSite() {
   for (const story of pageStories) {
     const representativeIndex = stories.findIndex((item) => item.story_id === (story.case_file?.representative_id || story.story_id));
     const sameCaseIds = new Set(story.case_file?.members.map((member) => member.story_id) || []);
+    const sequenceItem = { type: "story", value: stories[representativeIndex] || story };
     write(path.join(TICKER_DIR, story.slug, "index.html"), storyPage(story, {
-      newerStory: representativeIndex >= 0 ? stories[representativeIndex - 1] || null : null,
-      nextStory: representativeIndex >= 0 ? stories[representativeIndex + 1] || null : null,
+      newerStory: representativeIndex >= 0 ? readerNeighbor(sequenceItem, -1) : null,
+      nextStory: representativeIndex >= 0 ? readerNeighbor(sequenceItem, 1) : null,
       allStories: pageStories.filter((item) => !sameCaseIds.has(item.story_id)),
       caseFile: story.case_file || null,
       editorialAnalysis: editorialByStory.get(story.story_id) || null,
     }));
   }
-  for (const analysis of editorialAnalyses) write(path.join(TICKER_DIR, "analyse", analysis.slug, "index.html"), editorialAnalysisPage(analysis, storiesById.get(analysis.story_id)));
+  for (const analysis of editorialAnalyses) {
+    const nextItem = readerNeighbor({ type: "analysis", value: analysis }, 1, true);
+    write(path.join(TICKER_DIR, "analyse", analysis.slug, "index.html"), editorialAnalysisPage(analysis, storiesById.get(analysis.story_id), { nextItem }));
+  }
   for (const story of retiredStories) write(path.join(TICKER_DIR, story.slug, "index.html"), retiredStoryPage(story));
   const feedItems = combinedFeedItems(stories, editorialAnalyses);
   write(path.join(TICKER_DIR, "feed.xml"), feedXml(feedItems, publicationUpdatedAt));

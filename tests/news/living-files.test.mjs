@@ -93,6 +93,19 @@ test("reports about the same public-network cyber incident become one living fil
   assert.equal(fileSubject(source("Hacker melden Daten aus Landesnetz nach Ultimatum")).key, null);
 });
 
+test("synonymous headlines for the same dated event become one file before another live card is built", () => {
+  const dw = story("dw", "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen", {
+    first_seen: "2026-09-05T13:01:00Z", last_updated: "2026-09-05T14:17:03Z",
+    sources: [source("Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen", "https://www.dw.com/de/a-1", { published_at: "2026-09-05T13:01:00Z", summary: "Die Ankündigung gilt für drei Tage nur für Kyjiw." })],
+  });
+  const mdr = story("mdr", "Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew", {
+    first_seen: "2026-09-05T13:53:00Z", last_updated: "2026-09-05T14:16:34Z",
+    sources: [source("Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew", "https://www.mdr.de/nachrichten/a.html", { published_at: "2026-09-05T13:53:00Z", summary: "Putin kündigte an, drei Tage lang Kiew nicht anzugreifen." })],
+  });
+  assert.deepEqual(duplicateGroups([dw, mdr]), [{ canonical_id: "dw", duplicate_ids: ["mdr"], reason: "specific_object_or_leading_document" }]);
+  assert.equal(clusterItems([dw.sources[0], mdr.sources[0]], [], "2026-09-05T14:00:00Z").length, 1);
+});
+
 test("subsequent consolidation resolves older aliases directly and preserves the old target history", () => {
   const a = structuredClone(dormagen), b = story("b", dormagen.title), c = story("c", dormagen.title);
   const stories = [a, b, c];

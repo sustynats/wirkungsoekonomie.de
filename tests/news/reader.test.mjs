@@ -7,14 +7,14 @@ const script = fs.readFileSync("assets/js/news-navigation.js", "utf8");
 const key = "woek:wirkungsticker:navigation:v1";
 const origin = "https://wirkungsoekonomie.de";
 
-function page({ path = "/wirkungsticker/a/", pending = null, state = null, navigationType = "navigate", next = true, detail = true, locked = false } = {}) {
+function page({ path = "/wirkungsticker/a/", pending = null, state = null, navigationType = "navigate", next = true, detail = true, reader = null, locked = false } = {}) {
   const events = new Map();
   const docEvents = new Map();
   const windowEvents = new Map();
   const store = new Map(pending ? [[key, JSON.stringify(pending)]] : []);
   const assigned = [];
   let backs = 0;
-  const main = { dataset: { newsReader: detail ? "detail" : "list" }, contains: () => true, addEventListener: (name, handler) => events.set(name, handler) };
+  const main = { dataset: { newsReader: reader || (detail ? "detail" : "list") }, contains: () => true, addEventListener: (name, handler) => events.set(name, handler) };
   const target = { closest: () => null, parentElement: main, scrollWidth: 100, clientWidth: 100 };
   const location = { origin, pathname: path, href: `${origin}${path}`, search: "", assign: (value) => assigned.push(value) };
   const history = { state, length: 3, back: () => { backs++; }, replaceState(value) { this.state = value; } };
@@ -63,6 +63,14 @@ test("left advances; right follows overview → article A → article B in actua
   first.swipe({ startX: 100, endX: 280 });
   assert.equal(first.backs(), 1);
   assert.equal(first.history.state.newsReader.back, `${origin}/wirkungsticker/`);
+});
+
+test("analysis pages participate in same-tab reader history and iPhone touch navigation", () => {
+  const pending = { from: `${origin}/wirkungsticker/`, to: `${origin}/wirkungsticker/analyse/systemische-lage/`, at: Date.now() };
+  const analysis = page({ path: "/wirkungsticker/analyse/systemische-lage/", reader: "analysis", pending });
+  assert.equal(analysis.history.state.newsReader.back, `${origin}/wirkungsticker/`);
+  analysis.swipe();
+  assert.deepEqual(analysis.assigned, [`${origin}/wirkungsticker/b/`]);
 });
 
 test("deep links, stale referrals and blocked storage go to the overview, never an unrelated history entry", () => {
@@ -191,6 +199,7 @@ test("return, foregrounding and cross-tab changes refresh existing bookmark butt
 test("generator includes reusable save controls and reader hooks; list preserves entry state", () => {
   const build = fs.readFileSync("scripts/news/build.mjs", "utf8");
   assert.match(build, /data-news-reader="detail"/);
+  assert.match(build, /data-news-reader="analysis"/);
   assert.match(build, /data-news-reader="list"/);
   assert.match(build, /data-wirkungsraum-save-url/);
   assert.match(build, /mein-wirkungsraum\/#gemerkte-inhalte/);

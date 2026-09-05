@@ -79,6 +79,35 @@ const EVENT_TYPES = [
   ["announcement", /\b(announc|ankünd|ankuend|plant|plans)\w*/i],
 ];
 
+// Headlines can describe one event with different compounds or spellings.
+// These narrow observable facts supplement title similarity; one shared topic
+// or person remains deliberately insufficient.
+const EVENT_FACTS = [
+  ["air_attack_pause", /\b(?:angriffspause|angriffsstopp|(?:stopp|pause)\w*\s+(?:der\s+)?(?:luft)?angriffe|nicht\s+anzugreifen)\b/i],
+  ["ceasefire", /\b(?:waffenruhe|waffenstillstand|ceasefire)\b/i],
+  ["data_publication", /\b(?:daten\w*\s+(?:im\s+darknet\s+)?veroffentlich|veroffentlich\w*\s+daten\w*\s+(?:im\s+)?darknet)\b/i],
+];
+const PLACE_ALIASES = [
+  ["kyjiw", /\b(?:kiew|kyjiw|kyiv)\b/i],
+];
+const NUMBER_WORDS = new Map([["ein", "1"], ["einen", "1"], ["einem", "1"], ["eine", "1"], ["zwei", "2"], ["drei", "3"], ["vier", "4"], ["funf", "5"], ["sechs", "6"], ["sieben", "7"]]);
+const TITLE_ANCHOR_IGNORED = new Set([...ignored, "ukraine", "russland", "krieg", "kiew", "kyjiw", "kyiv", "tage", "tagig", "dreitagigen"]);
+
+function eventFacts(text, title) {
+  const normalized = String(text || "").normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
+  const durations = new Set();
+  for (const match of normalized.matchAll(/\b(?:(\d+)|([a-z]+))(?:tagig\w*|\s+tage?n?)\b/g)) {
+    const value = match[1] || NUMBER_WORDS.get(match[2]);
+    if (value) durations.add(`${value}d`);
+  }
+  return {
+    concepts: EVENT_FACTS.filter(([, pattern]) => pattern.test(normalized)).map(([name]) => name),
+    places: PLACE_ALIASES.filter(([, pattern]) => pattern.test(normalized)).map(([name]) => name),
+    durations: [...durations],
+    anchors: [...tokens(title)].filter((term) => !TITLE_ANCHOR_IGNORED.has(term)),
+  };
+}
+
 export function eventFingerprint(item) {
   const text = `${item.title || ""} ${item.summary || ""}`;
   const titleTerms = [...tokens(item.title)].sort();
@@ -87,7 +116,8 @@ export function eventFingerprint(item) {
   const doi = text.match(/\b10\.\d{4,9}\/[\w.();/:+-]+/i)?.[0]?.toLowerCase() || null;
   const eventType = EVENT_TYPES.find(([, pattern]) => pattern.test(text))?.[0] || "other";
   // Publisher coverage is not the location of the reported event.
-  const fingerprint = { title_terms: titleTerms, entities, references, doi, event_type: eventType, geography: item.event_geography || [], day: (item.published_at || "").slice(0, 10) };
+  const facts = eventFacts(text, item.title);
+  const fingerprint = { title_terms: titleTerms, entities, references, doi, event_type: eventType, geography: item.event_geography || [], day: (item.published_at || "").slice(0, 10), facts };
   return { ...fingerprint, id: `event-${hash(JSON.stringify(fingerprint))}` };
 }
 
@@ -98,12 +128,17 @@ export function eventCompatibility(a, b) {
   const reference = left.references.some((value) => right.references.includes(value)) || (left.doi && left.doi === right.doi);
   const shared = left.title_terms.filter((term) => right.title_terms.includes(term)).length;
   const similarity = shared / Math.max(1, Math.min(left.title_terms.length, right.title_terms.length));
+  const sharedFacts = left.facts.concepts.filter((value) => right.facts.concepts.includes(value));
+  const sharedPlaces = left.facts.places.filter((value) => right.facts.places.includes(value));
+  const sharedDurations = left.facts.durations.filter((value) => right.facts.durations.includes(value));
+  const sharedAnchors = left.facts.anchors.filter((value) => right.facts.anchors.includes(value));
+  const structuredFactMatch = sharedFacts.length > 0 && sharedPlaces.length > 0 && sharedDurations.length > 0 && sharedAnchors.length > 0;
   const eventTypesDiffer = left.event_type !== "other" && right.event_type !== "other" && left.event_type !== right.event_type;
   const geographyConflict = left.geography.length && right.geography.length && !left.geography.some((region) => right.geography.includes(region));
   return {
-    same_event: !eventTypesDiffer && !geographyConflict && timeGap <= 96 * 3600000 && (reference || (shared >= 3 && similarity >= 0.72)),
-    related: Boolean(reference || (shared >= 3 && similarity >= 0.5)),
-    reason: eventTypesDiffer ? "different_event_stage" : reference ? "shared_document_reference" : "entity_time_text_overlap",
+    same_event: !eventTypesDiffer && !geographyConflict && timeGap <= 96 * 3600000 && (reference || structuredFactMatch || (shared >= 3 && similarity >= 0.72)),
+    related: Boolean(reference || structuredFactMatch || (shared >= 3 && similarity >= 0.5)),
+    reason: eventTypesDiffer ? "different_event_stage" : reference ? "shared_document_reference" : structuredFactMatch ? "structured_event_facts" : "entity_time_text_overlap",
   };
 }
 
