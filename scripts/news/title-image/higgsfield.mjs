@@ -67,7 +67,16 @@ function qualityFailure(error) {
   return { version: VISUAL_GATE_VERSION, status: reason === "IMAGE_CONTAINS_TEXT" ? "rejected" : "pending", reason };
 }
 
-export function createHiggsfieldAdapter({ directory, run = runHiggsfield, download = downloadImage, quality = checkEditorialAsset, now = () => new Date().toISOString(), enabled = process.env.WOEK_HIGGSFIELD_ENABLED === "true" } = {}) {
+export function createHiggsfieldAdapter({
+  directory,
+  sharedLockPath = path.join(directory || ".", "generation.lock"),
+  sharedLedgerPath = path.join(directory || ".", "credits.json"),
+  run = runHiggsfield,
+  download = downloadImage,
+  quality = checkEditorialAsset,
+  now = () => new Date().toISOString(),
+  enabled = process.env.WOEK_HIGGSFIELD_ENABLED === "true",
+} = {}) {
   if (!directory) throw imageError("HIGGSFIELD_PERSISTENCE_REQUIRED");
   let active = false, unavailableUntil = 0;
   return {
@@ -119,7 +128,7 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
       // Cross-process lock plus durable intent: a crash/ambiguous submit MUST NOT
       // spend again. A known job can be polled; an unknown job requires admin audit.
       fs.mkdirSync(directory, { recursive: true, mode: 0o700 });
-      const lockPath = path.join(directory, "generation.lock");
+      const lockPath = sharedLockPath;
       let lock;
       try { lock = fs.openSync(lockPath, "wx", 0o600); }
       catch {
@@ -154,7 +163,7 @@ export function createHiggsfieldAdapter({ directory, run = runHiggsfield, downlo
           record = { status: "retry_ready", previous_attempts: [...previous_attempts, failed] };
           atomicJson(journal, record);
         }
-        const ledgerPath = path.join(directory, "credits.json");
+        const ledgerPath = sharedLedgerPath;
         const ledger = fs.existsSync(ledgerPath) ? JSON.parse(fs.readFileSync(ledgerPath, "utf8")) : { reservations: [] };
         if (!record?.job_id) {
           // Owner removed our daily/monthly caps on 2026-09-04. Keep the ledger,
