@@ -28,6 +28,7 @@ function validMedia(overrides = {}) {
 
 test("neutrales Ereignis löst keinen Mediencheck aus", () => {
   assert.equal(detectMediaImpactTrigger(story("Bund veröffentlicht Monatsbericht", "Der Bericht enthält neue Daten zur Verwaltung.")).relevant, false);
+  assert.equal(detectMediaImpactTrigger(story("Nach Gefahrengut-Alarm läuft der Flugverkehr wieder", "Eine Frau meldete einen gefährlichen Stoff; laut Polizei bestand zu keinem Zeitpunkt eine Gefahr.")).relevant, false);
 });
 
 test("englischsprachige politisch aufgeladene Meldungen nutzen dieselbe Vorprüfung", () => {
@@ -41,6 +42,22 @@ test("sauber attribuiertes politisches Zitat bleibt Akteursaussage", () => {
   const media = sanitizeMediaImpact(validMedia(), item, trigger).media_impact;
   assert.equal(media.speaker_statement.status, "interpretation");
   assert.equal(media.framing.attribution_quality, "eindeutig attribuiert");
+});
+
+test("Begriff in der Überschrift korrigiert eine widersprüchliche Nutzungsangabe deterministisch", () => {
+  const item = story("Minister bezeichnet Sabotage als Klimaextremismus", "Die Ermittlungen dauern an.");
+  const media = validMedia({ framing: { ...validMedia().framing, media_usage: "body" } });
+  const result = sanitizeMediaImpact(media, item);
+  assert.equal(result.media_impact.framing.media_usage, "headline");
+  assert.ok(result.dropped.includes("MEDIA_USAGE_DERIVED_FROM_HEADLINE"));
+});
+
+test("inhaltlich vollständige Self-Frame-Fassung erhält deterministisch zwei Absätze", () => {
+  const item = story("Minister bezeichnet Sabotage als Klimaextremismus", "Der Minister verwendet den Begriff; die Ermittlungen dauern an.");
+  const media = validMedia();
+  media.fact_first_reframe.source_summary = media.fact_first_reframe.source_summary.replace(/\n\n/g, " ");
+  const sanitized = sanitizeMediaImpact(media, item).media_impact;
+  assert.equal(sanitized.fact_first_reframe.source_summary.split(/\n\s*\n/).length, 2);
 });
 
 test("politischer Begriff ohne Attribution erhält höhere Warnsignale", () => {
@@ -161,28 +178,82 @@ test("Backfill ist idempotent, versioniert und protokolliert reale Nutzung", asy
   fs.mkdirSync(path.join(root, "data/news"), { recursive: true });
   const production = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url), "utf8"));
   const climate = structuredClone(production.stories.find((entry) => entry.slug.includes("klimaextremismus")));
+  delete climate.analysis.media_impact;
+  delete climate.analysis.media_analysis_version;
+  delete climate.analysis.media_checked_at;
+  delete climate.analysis.media_trigger_fingerprint;
+  climate.source_summary = "Bundesinnenminister Dobrindt bezeichnet die Vorfälle als Klimaextremismus. Die Ermittlungen laufen weiter und die Hintergründe sind noch offen. Diese Ausgangsfassung dient ausschließlich dem Test der automatischen Sachverhalt-zuerst-Korrektur.\n\nWeitere Einzelheiten bleiben offen; die vorhandenen Quellen und Claims werden durch den Medien-Backfill nicht verändert.";
   fs.writeFileSync(path.join(root, "data/news/stories.json"), JSON.stringify({ schema_version: "1.1", stories: [climate] }));
   fs.writeFileSync(path.join(root, "data/news/usage.json"), JSON.stringify({ schema_version: "1.0", runs: [] }));
   fs.writeFileSync(path.join(root, "data/news/state.json"), JSON.stringify({ budget_fx: { rate_usd_per_eur: 1.1, rate_date: "2026-09-05", checked_at: "2026-09-05T06:00:00Z" } }));
   let calls = 0;
-  const callAiImpl = async () => { calls += 1; return { analyses: [{ story_id: climate.story_id, media_impact: validMedia() }], provider: "test", model: "gpt-5.4-mini", mode: "test", method_sources: [], prompt_chars: 3000, answer_chars: 3000, reported_usage: { input_tokens: 900, output_tokens: 700 }, request_attempts: 1 }; };
+  const callAiImpl = async () => {
+    calls += 1;
+    const media = calls === 1 ? validMedia({ fact_first_reframe: { ...validMedia().fact_first_reframe, source_summary: "Zu kurz." } }) : validMedia();
+    return { analyses: [{ story_id: climate.story_id, media_impact: media }], provider: "test", model: "gpt-5.4-mini", mode: "test", method_sources: [], prompt_chars: 3000, answer_chars: 3000, reported_usage: { input_tokens: 900, output_tokens: 700 }, request_attempts: 1 };
+  };
   const first = await backfillMediaImpact({ root, limit: 2, dryRun: false, now: "2026-09-05T07:00:00Z", callAiImpl, build: () => {} });
   assert.equal(first.completed, 1, JSON.stringify(first));
+  assert.equal(first.quality_retries, 1);
+  assert.equal(first.ai_requests, 2);
   const saved = JSON.parse(fs.readFileSync(path.join(root, "data/news/stories.json"))).stories[0];
   assert.equal(saved.current_version, climate.current_version + 1);
   assert.equal(saved.analysis.media_analysis_version, MEDIA_ANALYSIS_VERSION);
   assert.ok(saved.analysis.media_impact.relevant);
   const second = await backfillMediaImpact({ root, limit: 2, dryRun: false, now: "2026-09-05T07:05:00Z", callAiImpl, build: () => {} });
   assert.equal(second.candidates, 0, JSON.stringify({ second, stored: saved.analysis.media_trigger_fingerprint, current: detectMediaImpactTrigger(saved).fingerprint }));
-  assert.equal(calls, 1);
+  assert.equal(calls, 2);
   const logged = JSON.parse(fs.readFileSync(path.join(root, "data/news/usage.json"))).runs[0];
   assert.ok(logged.counts.media_check_tokens > 0);
   assert.ok(logged.ai.media_check_cost_usd > 0);
+  assert.equal(logged.ai.requests, 2);
 });
 
 test("bestehende Legacy-Akten bleiben bis zum selektiven Backfill gültig", () => {
   const item = story("Klimaextremismus bedroht die Stromversorgung");
   assert.deepEqual(mediaImpactValidationErrors({ source_summary: item.source_summary }, item), []);
+});
+
+test("verschärfte Trigger entfernen einen nicht mehr relevanten Mediencheck ohne KI-Aufruf", async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "woek-media-cleanup-"));
+  fs.mkdirSync(path.join(root, "data/news"), { recursive: true });
+  const item = story("Nach Gefahrengut-Alarm läuft der Flugverkehr wieder", "Die technische Prüfung ist abgeschlossen.");
+  item.published = true;
+  item.listed = true;
+  item.current_version = 1;
+  item.versions = [];
+  item.analysis = { ...item.analysis, media_analysis_version: MEDIA_ANALYSIS_VERSION, media_trigger_fingerprint: "alter-trigger", media_impact: validMedia() };
+  fs.writeFileSync(path.join(root, "data/news/stories.json"), JSON.stringify({ schema_version: "1.1", stories: [item] }));
+  fs.writeFileSync(path.join(root, "data/news/usage.json"), JSON.stringify({ schema_version: "1.0", runs: [] }));
+  fs.writeFileSync(path.join(root, "data/news/state.json"), JSON.stringify({ budget_fx: { rate_usd_per_eur: 1.1, rate_date: "2026-09-05", checked_at: "2026-09-05T06:00:00Z" } }));
+  let calls = 0;
+  const result = await backfillMediaImpact({ root, dryRun: false, now: "2026-09-05T08:00:00Z", callAiImpl: async () => { calls += 1; }, build: () => {} });
+  const saved = JSON.parse(fs.readFileSync(path.join(root, "data/news/stories.json"))).stories[0];
+  assert.equal(result.cleaned, 1);
+  assert.equal(calls, 0);
+  assert.equal(saved.analysis.media_impact, null);
+  assert.equal(saved.current_version, 2);
+});
+
+test("bestehende Medienchecks werden ohne KI-Aufruf deterministisch normalisiert", async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "woek-media-normalize-"));
+  fs.mkdirSync(path.join(root, "data/news"), { recursive: true });
+  const item = story("Minister bezeichnet Sabotage als Klimaextremismus", "Die Ermittlungen dauern an.");
+  item.published = true;
+  item.listed = true;
+  item.current_version = 1;
+  item.versions = [];
+  item.analysis = { ...item.analysis, media_analysis_version: MEDIA_ANALYSIS_VERSION, media_trigger_fingerprint: detectMediaImpactTrigger(item).fingerprint, media_impact: validMedia({ framing: { ...validMedia().framing, media_usage: "body" } }) };
+  fs.writeFileSync(path.join(root, "data/news/stories.json"), JSON.stringify({ schema_version: "1.1", stories: [item] }));
+  fs.writeFileSync(path.join(root, "data/news/usage.json"), JSON.stringify({ schema_version: "1.0", runs: [] }));
+  fs.writeFileSync(path.join(root, "data/news/state.json"), JSON.stringify({ budget_fx: { rate_usd_per_eur: 1.1, rate_date: "2026-09-05", checked_at: "2026-09-05T06:00:00Z" } }));
+  let calls = 0;
+  const result = await backfillMediaImpact({ root, dryRun: false, now: "2026-09-05T08:05:00Z", callAiImpl: async () => { calls += 1; }, build: () => {} });
+  const saved = JSON.parse(fs.readFileSync(path.join(root, "data/news/stories.json"))).stories[0];
+  assert.equal(result.normalized, 1);
+  assert.equal(calls, 0);
+  assert.equal(saved.analysis.media_impact.framing.media_usage, "headline");
+  assert.equal(saved.current_version, 2);
 });
 
 test("Detailseite zeigt den Check nur bei Relevanz und nach der Ereignisanalyse", () => {

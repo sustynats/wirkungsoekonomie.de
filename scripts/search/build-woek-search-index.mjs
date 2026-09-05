@@ -575,7 +575,7 @@ const isRegister = /woek-master-items-(?:final-)?v1-2|woek-master-items-v1-3/.te
     priority: (isExplicitJournalEntry ? 60 : 70) + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
   };
   const entries = [pageEntry];
-  if (isFulltext) {
+  if (isFulltext || route === "/wirkungswissenschaften/") {
     return entries.map((entry) => ({ entry, meta: { ...base, sectionId: "" } }));
   }
   for (const match of sectionMatches) {
@@ -627,7 +627,7 @@ for (const term of glossary) {
   };
 }
 
-const contentFiles = ["src/content/docs", "blog", "journal", "news", "wirkungsticker", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "quellenarchiv", "export", "werkstatt", "werkzeuge", "wirkungsfelder/gesundheit-pflege/dossiers", "anwendungen", "verstehen", "fragen", "faq", "en"]
+const contentFiles = ["src/content/docs", "blog", "journal", "news", "wirkungsticker", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "quellenarchiv", "export", "werkstatt", "werkzeuge", "wirkungsfelder/gesundheit-pflege/dossiers", "anwendungen", "verstehen", "wirkungswissenschaften", "fragen", "faq", "en"]
   .flatMap((dir) => walk(dir));
 for (const rootPage of ["index.html", "blog.html"]) {
   if (fs.existsSync(rootPage)) contentFiles.push(rootPage);

@@ -6,6 +6,7 @@
   --wt-green: var(--green, #2f7d5c);
   --wt-green-dark: var(--green-dark, #174f38);
   --wt-gold: var(--gold-deep, #9a6f12);
+  --wt-gold-text: #76520a;
   --wt-coral: var(--coral, #c85a4a);
   --wt-line: var(--line, #e8e4dc);
   --wt-muted: var(--muted, #4a4a44);
@@ -206,7 +207,7 @@
 }
 
 .wt-chip--open .wt-icon {
-  color: var(--wt-gold);
+  color: var(--wt-gold-text);
 }
 
 .wt-chip__note {
@@ -274,7 +275,7 @@
 
 .wt-tendency--gemischt {
   background: rgba(154, 111, 18, 0.14);
-  color: var(--wt-gold);
+  color: var(--wt-gold-text);
 }
 
 /* --- Dimensionsmeter -------------------------------------------------- */
@@ -436,7 +437,7 @@
   padding: 0.25rem 0.65rem;
   border-radius: 999px;
   background: rgba(154, 111, 18, 0.12);
-  color: var(--wt-gold);
+  color: var(--wt-gold-text);
   font-size: 0.84rem;
   font-weight: 800;
 }
@@ -1132,7 +1133,7 @@
 
 .news-app-tools__card h2 .wt-icon,
 .news-app-tools__card h3 .wt-icon {
-  color: var(--wt-gold);
+  color: var(--wt-gold-text);
 }
 
 .news-app-tools__actions {
@@ -1263,7 +1264,7 @@
 }
 
 .news-check-prose section:last-child h3 .wt-icon {
-  color: var(--wt-gold);
+  color: var(--wt-gold-text);
 }
 
 .news-check-prose p,
@@ -1478,7 +1479,7 @@
 }
 
 .wt-questions h3 .wt-icon {
-  color: var(--wt-gold);
+  color: var(--wt-gold-text);
 }
 
 .wt-questions ul {
