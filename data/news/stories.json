@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T09:21:37.579Z",
+  "updated_at": "2026-09-05T09:26:29.719Z",
   "stories": [
     {
       "story_id": "wt-f7d7115a53ff2c2f",
@@ -1557,9 +1557,9 @@
       "slug": "fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6",
       "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
       "first_seen": "2026-09-04T05:44:22.000Z",
-      "last_updated": "2026-09-05T09:18:31.212Z",
+      "last_updated": "2026-09-05T09:26:29.719Z",
       "published_at": "2026-09-04T06:37:20.682Z",
-      "updated_at": "2026-09-05T09:18:31.212Z",
+      "updated_at": "2026-09-05T09:26:29.719Z",
       "topic": [
         "Gesellschaft",
         "Politik"
@@ -1859,7 +1859,7 @@
       "listed": true,
       "analysis_status": "veröffentlicht",
       "relevance_filter_version": "4.0",
-      "current_version": 3,
+      "current_version": 4,
       "source_summary": "Am BER gab es am Donnerstagabend einen Gefahrgut-Alarm, nachdem eine Frau bei einer Service-Stelle angegeben hatte, sie habe einen gefährlichen Stoff dabei. Daraufhin räumte die Polizei den öffentlichen Bereich von Terminal 1. Der Flugbetrieb wurde nach Angaben des Flughafens nicht eingestellt, es kam aber zu Verzögerungen, einzelnen Ausfällen und einer Verlagerung der Abfertigung nach Terminal 2.\n\nSpäter am Abend gab es Entwarnung; das Terminal wurde gegen 20:45 Uhr wieder freigegeben. Am Freitagmorgen lief der Flugverkehr laut Bericht wieder regulär, nur wenige Flüge fielen aus. Auch der Zugverkehr zwischen Schönefeld und dem BER war zwischenzeitlich unterbrochen und danach wieder im Fahrplan. Die Polizei nannte keine Angaben zum untersuchten Stoff und sagte, nach bisherigen Erkenntnissen habe zu keinem Zeitpunkt eine Gefahr bestanden.",
       "analysis": {
         "story_id": "wt-6267bf5562aa70a6",
@@ -1943,11 +1943,11 @@
         "media_impact": {
           "relevant": true,
           "relevance_level": "medium",
-          "reason": "Die Überschrift kombiniert ein Alarm-/Gefahr-Frame mit einer Entwarnung und stellt den akuten Sicherheitsvorfall als abgeschlossenen Betriebsablauf dar; das kann den Wahrnehmungsrahmen für das Ereignis prägen.",
-          "factual_core": "Am BER meldete eine Frau einen gefährlichen Stoff; daraufhin räumte die Polizei den öffentlichen Bereich von Terminal 1, kontrollierte den Bereich und gab Terminal 1 später wieder frei. Der Flugverkehr lief weiter, war aber zeitweise gestört; der Zugverkehr zwischen Schönefeld und dem BER war kurz unterbrochen.",
+          "reason": "Der Trigger zeigt einen Bedrohungs-/Gefahr-Frame und eine nicht klar im Titel attribuierte Formulierung; die Story behandelt ein reales Sicherheits- und Betriebsereignis am BER, das durch die Wortwahl als Alarm- und Evakuierungsereignis gerahmt wird.",
+          "factual_core": "Am BER meldete eine Frau einen gefährlichen Stoff; daraufhin räumte die Polizei den öffentlichen Bereich von Terminal 1, später wurde das Terminal wieder freigegeben und der Flugverkehr lief danach wieder regulär, mit zwischenzeitlichen Verzögerungen, einzelnen Ausfällen und einer kurzzeitigen Unterbrechung des Zugverkehrs.",
           "speaker_statement": {
             "present": true,
-            "speaker": "Bundespolizei laut Bericht",
+            "speaker": "Polizei/Bundespolizei laut Bericht",
             "statement": "Nach bisherigen Erkenntnissen habe zu keinem Zeitpunkt eine Gefahr bestanden.",
             "status": "claim"
           },
@@ -1956,8 +1956,8 @@
             "term": "Gefahrengut-Alarm",
             "origin_in_story": "Medium",
             "media_usage": "headline",
-            "attribution_quality": "erscheint wie redaktioneller Fakt",
-            "factual_status": "Aussage eines Akteurs",
+            "attribution_quality": "grundsätzlich attribuiert",
+            "factual_status": "Interpretation",
             "frame_type": [
               "Bedrohung"
             ],
@@ -1966,31 +1966,31 @@
             "political_history_evidence": []
           },
           "resonance": {
-            "resonance_space": "Reise-, Sicherheits- und Lokalberichterstattung; Publikum mit Bezug zu Flughafenbetrieb und öffentlicher Sicherheit.",
-            "resonance_risk": "Der Alarmbegriff kann die akute Gefahrenwahrnehmung verstärken, obwohl der Bericht später Entwarnung und fehlende Gefahr nennt.",
-            "normalization_potential": "Wiederholte Verwendung von Alarm- und Gefahrenvokabular kann im Resonanzraum routinierte Sicherheitsstörungen als bedrohlicher erscheinen lassen, als der Sachverhalt belegt.",
-            "repetition_effect": "Mehrfache Verbreitung derselben Formulierung kann ein Illusory-Truth-Risiko für den Alarmrahmen erzeugen, nicht für eine bestätigte Gefahr.",
-            "trust_effect": "Die spätere Entwarnung kann Vertrauen stützen, wenn klar bleibt, dass zwischen Meldung, Einsatz und bestätigter Lage unterschieden wird.",
-            "polarization_potential": "Gering; der Stoff betrifft primär Sicherheitswahrnehmung und Betriebsabläufe, nicht eine konfliktive politische Lagerbildung.",
-            "discourse_effect": "Der Bericht lenkt die Debatte auf Einsatzreaktion, Sicherheitskommunikation und Betriebsstabilität statt auf die Ursache des Vorfalls."
+            "resonance_space": "Reise-, Sicherheits- und Flughafenpublikum; auch allgemeiner Lokalnachrichten-Raum",
+            "resonance_risk": "Der Alarm-Frame kann den Eindruck eines akuten Gefahrenereignisses verstärken, obwohl der berichtete Sachverhalt nach der Kontrolle auf Entwarnung und begrenzte Betriebsstörungen hinausläuft.",
+            "normalization_potential": "Wiederkehrende Alarmbegriffe können den Ausnahmecharakter sprachlich überhöhen und Sicherheitsstörungen als dominanteren Kern erscheinen lassen als den späteren Entwarnungsbefund.",
+            "repetition_effect": "Mehrfache Übernahme ähnlicher Überschriften kann ein Illusory-Truth-Risiko für den Alarm-Frame erzeugen, ohne neuen Sachbeleg zu schaffen.",
+            "trust_effect": "Wenn die spätere Entwarnung erst nach dem Alarm-Frame sichtbar wird, kann dies je nach Leseweg zu anfänglicher Unsicherheit oder zu nachträglicher Einordnung führen.",
+            "polarization_potential": "Gering bis mittel; der Fall selbst ist sachlich-betrieblich, kann aber bei zugespitzter Sprache unnötige Zuspitzung von Sicherheitsdebatten begünstigen.",
+            "discourse_effect": "Die Wortwahl lenkt den Diskurs zunächst auf Gefahr und Evakuierung, obwohl der belegte Kern auch Entwarnung, Fortsetzung des Betriebs und begrenzte Störungen umfasst."
           },
           "impact_path": {
-            "first_order": "Kurzfristige Sicherheitsmaßnahme, Räumung und betriebliche Störung am Flughafen sowie kurzzeitige Unterbrechung des Zugverkehrs.",
-            "second_order": "Temporäre Umleitungen, Verzögerungen und zusätzlicher Koordinationsaufwand für Passagiere, Flughafen und Einsatzkräfte.",
-            "third_order": "Allenfalls begrenzte Lern- und Anpassungseffekte in Sicherheits- und Kommunikationsabläufen; darüber hinaus bleibt die Wirkung offen."
+            "first_order": "Lesende nehmen zunächst einen Gefahr- und Evakuierungsfall wahr.",
+            "second_order": "Die alarmierende Überschrift kann die Wahrnehmung des Vorfalls als stärkeres Sicherheitsereignis prägen als die spätere Entwarnung.",
+            "third_order": "Bei wiederholter Verbreitung ähnlicher Frames kann sich ein allgemein verstärkter Resonanzraum für Flughafen- oder Sicherheitsalarme ergeben, ohne dass daraus zusätzliche Wirkung im konkreten Fall folgt."
           },
           "evidence": {
             "status": "high",
-            "what_is_known": "Meldung eines gefährlichen Stoffs, Räumung von Terminal 1, spätere Freigabe, weiterlaufender aber gestörter Flugbetrieb, kurzzeitige Unterbrechung des Zugverkehrs.",
-            "what_is_inferred": "Dass die alarmierende Wortwahl den Wahrnehmungsrahmen des Lesers stärker auf Gefahr als auf die spätere Entwarnung lenken kann.",
-            "what_is_open": "Ob und in welchem Ausmaß der verwendete Frame das Publikum tatsächlich beeinflusst hat; Angaben zum Stoff selbst und zu möglichen Folgewirkungen über den Akutbetrieb hinaus."
+            "what_is_known": "Die Quelle nennt einen gemeldeten gefährlichen Stoff, die Räumung von Terminal 1, die spätere Freigabe sowie eine Wiederaufnahme des regulären Flugbetriebs mit begrenzten Störungen.",
+            "what_is_inferred": "Dass die Überschrift einen stärker bedrohlichen Eindruck erzeugen kann als der vollständige Sachverhalt, der auch Entwarnung enthält.",
+            "what_is_open": "Welche konkrete Substanz gemeldet wurde, bleibt laut Quelle offen; ebenso bleibt offen, wie stark einzelne Leser:innen den späteren Entwarnungsteil wahrnehmen."
           },
-          "editorial_assessment": "Die Darstellung verbindet die Einsatzmeldung mit einer alarmierenden Überschrift, ohne den Entwarnungsstatus schon im Titel präzise sichtbar zu machen; im Text wird die Lage später relativiert.",
+          "editorial_assessment": "Zuspitzende Alarmüberschrift mit anschließender Relativierung im Text; kommunikativ wirksam als Aufmerksamkeitsanker, aber sachlich nur dann ausgewogen, wenn Entwarnung und begrenzte Störungen im Verlauf klar sichtbar bleiben.",
           "fact_first_reframe": {
-            "title": "BER-Terminal nach Meldung zu gefährlichem Stoff kurz geräumt, Betrieb läuft wieder",
-            "source_summary": "Am Flughafen BER meldete eine Frau einen gefährlichen Stoff. Die Polizei räumte daraufhin den öffentlichen Bereich von Terminal 1 und kontrollierte den Bereich. Später wurde das Terminal wieder freigegeben; der Flugverkehr lief danach wieder regulär, war zuvor aber zeitweise gestört.",
-            "summary": "Am BER führte eine Meldung über einen angeblich gefährlichen Stoff zu einer vorübergehenden Räumung von Terminal 1. Nach der Kontrolle wurde der Bereich wieder freigegeben; der Flugbetrieb lief weiter, war aber zwischenzeitlich beeinträchtigt.",
-            "detail_summary": "Nach den vorliegenden Berichten meldete eine Frau am BER einen gefährlichen Stoff. Die Polizei räumte daraufhin den öffentlichen Bereich von Terminal 1, kontrollierte den Bereich und gab ihn später wieder frei. Der Flugverkehr lief weiter, kam aber zeitweise zu Verzögerungen und einzelnen Ausfällen; auch der Zugverkehr zwischen Schönefeld und dem Flughafen war vorübergehend unterbrochen. Laut Polizei bestand nach bisherigen Erkenntnissen zu keinem Zeitpunkt eine Gefahr."
+            "title": "BER: Nach Meldung eines möglichen Gefahrstoffs wurde Terminal 1 zeitweise geräumt",
+            "source_summary": "Am Flughafen BER meldete eine Frau einen möglichen gefährlichen Stoff. Die Polizei räumte daraufhin den öffentlichen Bereich von Terminal 1, kontrollierte den Vorfall und gab das Terminal später wieder frei. Der Flugbetrieb lief weiter, war aber zeitweise gestört; am Freitagmorgen wurde wieder regulärer Betrieb berichtet.",
+            "summary": "Am BER führte die Meldung eines möglichen gefährlichen Stoffes zu einer zeitweisen Räumung von Terminal 1. Nach der Kontrolle gab die Polizei das Terminal wieder frei; der Flugbetrieb lief weiter, kam aber vorübergehend zu Verzögerungen und einzelnen Ausfällen.",
+            "detail_summary": "Gesichert ist ein begrenztes Sicherheits- und Betriebsereignis am BER: Eine Frau meldete einen gefährlichen Stoff, worauf die Polizei den öffentlichen Bereich von Terminal 1 räumte. Nach der Kontrolle wurde das Terminal wieder freigegeben. Der Flugbetrieb lief nach Angaben des Flughafens weiter, war jedoch zeitweise beeinträchtigt; zusätzlich wurde eine kurzzeitige Unterbrechung des Zugverkehrs zwischen Schönefeld und dem BER berichtet. Der Text enthält außerdem die Entwarnung, dass nach bisherigen Erkenntnissen keine Gefahr bestanden habe."
           },
           "self_frame_warning": false,
           "source_comparison": {
@@ -1999,8 +1999,8 @@
           }
         },
         "media_analysis_version": "1.0",
-        "media_checked_at": "2026-09-05T09:18:31.212Z",
-        "media_trigger_fingerprint": "8d3220ea5bcb864e05c64f29d0660b2b0545ce7ec4f42336501183fba2ff61b6"
+        "media_checked_at": "2026-09-05T09:26:29.719Z",
+        "media_trigger_fingerprint": "62755d606cbb2d9d5c5ed42a4a5d11d4b98e79f8660679766578a57dd3f8230b"
       },
       "versions": [
         {
@@ -2737,6 +2737,279 @@
               "content_hash": "9b642c57e6a495afe612b3c80d9575734c41a6cdfd42b19f47822cb37e09557a"
             }
           ]
+        },
+        {
+          "version": 4,
+          "analyzed_at": "2026-09-05T09:26:29.719Z",
+          "content_hash": "36ea2588d153c1e9c4d64255109e403b8c6019d5fee552b243b54c72d68b1a40",
+          "source_summary": "Am BER gab es am Donnerstagabend einen Gefahrgut-Alarm, nachdem eine Frau bei einer Service-Stelle angegeben hatte, sie habe einen gefährlichen Stoff dabei. Daraufhin räumte die Polizei den öffentlichen Bereich von Terminal 1. Der Flugbetrieb wurde nach Angaben des Flughafens nicht eingestellt, es kam aber zu Verzögerungen, einzelnen Ausfällen und einer Verlagerung der Abfertigung nach Terminal 2.\n\nSpäter am Abend gab es Entwarnung; das Terminal wurde gegen 20:45 Uhr wieder freigegeben. Am Freitagmorgen lief der Flugverkehr laut Bericht wieder regulär, nur wenige Flüge fielen aus. Auch der Zugverkehr zwischen Schönefeld und dem BER war zwischenzeitlich unterbrochen und danach wieder im Fahrplan. Die Polizei nannte keine Angaben zum untersuchten Stoff und sagte, nach bisherigen Erkenntnissen habe zu keinem Zeitpunkt eine Gefahr bestanden.",
+          "analysis": {
+            "story_id": "wt-6267bf5562aa70a6",
+            "news_status": "updated",
+            "publication_depth": "deepened",
+            "summary": "Am BER meldete eine Frau einen gefährlichen Stoff, worauf Terminal 1 zeitweise geräumt wurde. Danach lief der Flugverkehr wieder regulär, einzelne Ausfälle und eine kurze Unterbrechung des Zugverkehrs blieben aber berichtet.",
+            "detail_summary": "Gesichert ist zunächst der Ablauf: Eine Frau meldete am BER einen gefährlichen Stoff, die Polizei räumte daraufhin den öffentlichen Bereich von Terminal 1, und nach der Kontrolle wurde das Terminal wieder freigegeben. Der Flugbetrieb lief laut Bericht weiter, wurde aber vorübergehend gestört; für den Freitagmorgen wird wieder regulärer Betrieb mit wenigen Ausfällen beschrieben. Auch der Zugverkehr zwischen Schönefeld und dem Flughafen war zeitweise unterbrochen. Für die Einordnung ist wichtig, dass der berichtete Kern ein Sicherheits- und Betriebsereignis ist, kein dauerhafter Ausfall. Der mögliche Wirkpfad liegt vor allem in kurzfristigen Störungen von Abläufen, Personalbindung und Umleitungen von Passagieren. Eine weitergehende Wirkung auf Infrastruktur oder Verhalten bleibt offen, weil die Belege dazu nur den akuten Einsatz und seine unmittelbaren Folgen zeigen.",
+            "why_relevant": "Der Vorfall betrifft einen zentralen Verkehrsknoten mit kurzfristigen Störungen für Passagiere und Betriebsabläufe. Materiell relevant ist vor allem die Kombination aus Räumung, Flugfolgen und zeitweiser Unterbrechung des Bahnanschlusses.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Kurzfristige Beeinträchtigung von Reisenden, Personal und Anschlussmobilität; keine Hinweise auf länger anhaltende Schäden."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen oder Materialflüsse mit relevanter Planetwirkung."
+            },
+            "democracy": {
+              "relevance": "offen",
+              "rationale": "Kein direkter Bezug zu demokratischer Willensbildung oder Korrekturfähigkeit erkennbar."
+            },
+            "importance": "mittel",
+            "impact_potential": "Kurzfristige Betriebsstörung an einem stark frequentierten Flughafen mit Folgewirkungen auf Flug- und Bahnverkehr, aber ohne Beleg für dauerhafte Strukturveränderung.",
+            "impact_risks": [
+              "Kurzfristige Verspätungen und Umbuchungen für Passagiere",
+              "Betriebliche Zusatzlast für Polizei, Flughafen und Airlines",
+              "Temporäre Störung des Bahnanschlusses zum Flughafen"
+            ],
+            "mechanisms": [
+              "Räumung des Terminalbereichs aufgrund einer Stoffmeldung",
+              "Sicherheitskontrolle und anschließende Freigabe durch die Polizei",
+              "Verlagerung von Abfertigung und vorübergehende Verkehrsunterbrechungen"
+            ],
+            "first_order": [
+              "Passagiere mussten den Bereich verlassen",
+              "Einzelne Flüge fielen aus oder verzögerten sich",
+              "Der Zugverkehr wurde kurzzeitig unterbrochen"
+            ],
+            "second_order": [
+              "Airlines mussten Anschluss- und Umbuchungen organisieren",
+              "Der Flughafen musste Abfertigung und Kommunikation anpassen"
+            ],
+            "third_order": [
+              "Nur begrenzt ableitbar; möglich sind kleine Lern- und Anpassungseffekte bei Sicherheits- und Einsatzabläufen"
+            ],
+            "systemic_relevance": "Als Störung an einem Flughafen und einer Bahnverbindung mit Anschlussfunktion ist der Fall betrieblich relevant, aber nach den Belegen nicht systemverändernd.",
+            "transformation_potential": "Gering; die Quellen zeigen eine akute Störung und anschließende Rückkehr zum Regelbetrieb, keine neue Struktur oder Regel.",
+            "resilience": "Die schnelle Freigabe und Rückkehr zum Fahrplan sprechen für kurzfristige Belastung bei grundsätzlich intakter Betriebsresilienz.",
+            "side_effects": [
+              "Vorübergehende Verlagerung der Abfertigung",
+              "Unsicherheit über den untersuchten Stoff bis zur Nachmeldung"
+            ],
+            "uncertainties": [
+              "Art des gemeldeten Stoffes bleibt offen",
+              "Umfang der Verspätungen wird nicht beziffert",
+              "Mögliche spätere Befunde der Untersuchung sind noch unbekannt"
+            ],
+            "evidence_level": "Mehrere übereinstimmende journalistische Berichte aus derselben Lage, aber keine unabhängige Primärquelle zum Stoff selbst.",
+            "attribution": "Die zentralen Tatsachen stammen aus einem rbb-Bericht; die übrigen Meldungen spiegeln denselben Vorgang ohne zusätzliche unabhängige Bestätigung.",
+            "watch_next": [
+              "Ergebnisse der Untersuchung zum gemeldeten Stoff",
+              "Mögliche Nachmeldungen zu ausgefallenen oder verspäteten Verbindungen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 9, SDG 11"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber der Vorfassung liegt jetzt die Betriebslage nach der Freigabe vor; der Vorfall bleibt ein materiell relevanter Störungsfall am Verkehrsknoten."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": {
+              "relevant": true,
+              "relevance_level": "medium",
+              "reason": "Der Trigger zeigt einen Bedrohungs-/Gefahr-Frame und eine nicht klar im Titel attribuierte Formulierung; die Story behandelt ein reales Sicherheits- und Betriebsereignis am BER, das durch die Wortwahl als Alarm- und Evakuierungsereignis gerahmt wird.",
+              "factual_core": "Am BER meldete eine Frau einen gefährlichen Stoff; daraufhin räumte die Polizei den öffentlichen Bereich von Terminal 1, später wurde das Terminal wieder freigegeben und der Flugverkehr lief danach wieder regulär, mit zwischenzeitlichen Verzögerungen, einzelnen Ausfällen und einer kurzzeitigen Unterbrechung des Zugverkehrs.",
+              "speaker_statement": {
+                "present": true,
+                "speaker": "Polizei/Bundespolizei laut Bericht",
+                "statement": "Nach bisherigen Erkenntnissen habe zu keinem Zeitpunkt eine Gefahr bestanden.",
+                "status": "claim"
+              },
+              "framing": {
+                "detected": true,
+                "term": "Gefahrengut-Alarm",
+                "origin_in_story": "Medium",
+                "media_usage": "headline",
+                "attribution_quality": "grundsätzlich attribuiert",
+                "factual_status": "Interpretation",
+                "frame_type": [
+                  "Bedrohung"
+                ],
+                "political_history_relevant": false,
+                "political_history": "",
+                "political_history_evidence": []
+              },
+              "resonance": {
+                "resonance_space": "Reise-, Sicherheits- und Flughafenpublikum; auch allgemeiner Lokalnachrichten-Raum",
+                "resonance_risk": "Der Alarm-Frame kann den Eindruck eines akuten Gefahrenereignisses verstärken, obwohl der berichtete Sachverhalt nach der Kontrolle auf Entwarnung und begrenzte Betriebsstörungen hinausläuft.",
+                "normalization_potential": "Wiederkehrende Alarmbegriffe können den Ausnahmecharakter sprachlich überhöhen und Sicherheitsstörungen als dominanteren Kern erscheinen lassen als den späteren Entwarnungsbefund.",
+                "repetition_effect": "Mehrfache Übernahme ähnlicher Überschriften kann ein Illusory-Truth-Risiko für den Alarm-Frame erzeugen, ohne neuen Sachbeleg zu schaffen.",
+                "trust_effect": "Wenn die spätere Entwarnung erst nach dem Alarm-Frame sichtbar wird, kann dies je nach Leseweg zu anfänglicher Unsicherheit oder zu nachträglicher Einordnung führen.",
+                "polarization_potential": "Gering bis mittel; der Fall selbst ist sachlich-betrieblich, kann aber bei zugespitzter Sprache unnötige Zuspitzung von Sicherheitsdebatten begünstigen.",
+                "discourse_effect": "Die Wortwahl lenkt den Diskurs zunächst auf Gefahr und Evakuierung, obwohl der belegte Kern auch Entwarnung, Fortsetzung des Betriebs und begrenzte Störungen umfasst."
+              },
+              "impact_path": {
+                "first_order": "Lesende nehmen zunächst einen Gefahr- und Evakuierungsfall wahr.",
+                "second_order": "Die alarmierende Überschrift kann die Wahrnehmung des Vorfalls als stärkeres Sicherheitsereignis prägen als die spätere Entwarnung.",
+                "third_order": "Bei wiederholter Verbreitung ähnlicher Frames kann sich ein allgemein verstärkter Resonanzraum für Flughafen- oder Sicherheitsalarme ergeben, ohne dass daraus zusätzliche Wirkung im konkreten Fall folgt."
+              },
+              "evidence": {
+                "status": "high",
+                "what_is_known": "Die Quelle nennt einen gemeldeten gefährlichen Stoff, die Räumung von Terminal 1, die spätere Freigabe sowie eine Wiederaufnahme des regulären Flugbetriebs mit begrenzten Störungen.",
+                "what_is_inferred": "Dass die Überschrift einen stärker bedrohlichen Eindruck erzeugen kann als der vollständige Sachverhalt, der auch Entwarnung enthält.",
+                "what_is_open": "Welche konkrete Substanz gemeldet wurde, bleibt laut Quelle offen; ebenso bleibt offen, wie stark einzelne Leser:innen den späteren Entwarnungsteil wahrnehmen."
+              },
+              "editorial_assessment": "Zuspitzende Alarmüberschrift mit anschließender Relativierung im Text; kommunikativ wirksam als Aufmerksamkeitsanker, aber sachlich nur dann ausgewogen, wenn Entwarnung und begrenzte Störungen im Verlauf klar sichtbar bleiben.",
+              "fact_first_reframe": {
+                "title": "BER: Nach Meldung eines möglichen Gefahrstoffs wurde Terminal 1 zeitweise geräumt",
+                "source_summary": "Am Flughafen BER meldete eine Frau einen möglichen gefährlichen Stoff. Die Polizei räumte daraufhin den öffentlichen Bereich von Terminal 1, kontrollierte den Vorfall und gab das Terminal später wieder frei. Der Flugbetrieb lief weiter, war aber zeitweise gestört; am Freitagmorgen wurde wieder regulärer Betrieb berichtet.",
+                "summary": "Am BER führte die Meldung eines möglichen gefährlichen Stoffes zu einer zeitweisen Räumung von Terminal 1. Nach der Kontrolle gab die Polizei das Terminal wieder frei; der Flugbetrieb lief weiter, kam aber vorübergehend zu Verzögerungen und einzelnen Ausfällen.",
+                "detail_summary": "Gesichert ist ein begrenztes Sicherheits- und Betriebsereignis am BER: Eine Frau meldete einen gefährlichen Stoff, worauf die Polizei den öffentlichen Bereich von Terminal 1 räumte. Nach der Kontrolle wurde das Terminal wieder freigegeben. Der Flugbetrieb lief nach Angaben des Flughafens weiter, war jedoch zeitweise beeinträchtigt; zusätzlich wurde eine kurzzeitige Unterbrechung des Zugverkehrs zwischen Schönefeld und dem BER berichtet. Der Text enthält außerdem die Entwarnung, dass nach bisherigen Erkenntnissen keine Gefahr bestanden habe."
+              },
+              "self_frame_warning": false,
+              "source_comparison": {
+                "sufficient_basis": false,
+                "finding": ""
+              }
+            },
+            "media_analysis_version": "1.0",
+            "media_checked_at": "2026-09-05T09:26:29.719Z",
+            "media_trigger_fingerprint": "62755d606cbb2d9d5c5ed42a4a5d11d4b98e79f8660679766578a57dd3f8230b"
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "media_impact_backfill",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v2-claim-1",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Am Flughafen BER meldete eine Frau einen gefährlichen Stoff, worauf die Polizei den öffentlichen Bereich von Terminal 1 räumte.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "e0dbda64c71a3cb2bc42",
+                  "checked_at": "2026-09-04T11:13:05.344Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "94fff5726dfef2984fff",
+                  "checked_at": "2026-09-04T11:13:05.344Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T11:13:05.344Z"
+            },
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v2-claim-2",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Nach der Kontrolle wurde Terminal 1 wieder freigegeben.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "e0dbda64c71a3cb2bc42",
+                  "checked_at": "2026-09-04T11:13:05.344Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "20ce4dd8e80818740976",
+                  "checked_at": "2026-09-04T11:13:05.344Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T11:13:05.344Z"
+            },
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v2-claim-3",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Der Flugverkehr am BER lief am Freitagmorgen wieder regulär, auch wenn einige Flüge ausfielen.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "ff6fc6fc5914757696ab",
+                  "checked_at": "2026-09-04T11:13:05.344Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "c91801223d4b406ff2d6",
+                  "checked_at": "2026-09-04T11:13:05.344Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T11:13:05.344Z"
+            },
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v2-claim-4",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Wegen des Polizeieinsatzes war der Zugverkehr zwischen Schönefeld und dem Flughafen BER zeitweise unterbrochen und lief danach wieder nach Fahrplan.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "d9289b34dadb6fe9aa6a",
+                  "checked_at": "2026-09-04T11:13:05.344Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T11:13:05.344Z"
+            },
+            {
+              "claim_id": "wt-6267bf5562aa70a6-v2-claim-5",
+              "story_id": "wt-6267bf5562aa70a6",
+              "claim": "Nach bisherigen Erkenntnissen bestand nach Angaben der Bundespolizei zu keinem Zeitpunkt eine Gefahr.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+                  "excerpt_hash": "81641a61af492b84361b",
+                  "checked_at": "2026-09-04T11:13:05.344Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T11:13:05.344Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
+              "content_hash": "4489b0cd08c0b9afaa3c6408527953eb7bc98fbf168e67ea001ff7cb6ef3af17"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+              "content_hash": "6a59f8f50174e5587806455e917855c3deaa9d9ff75d1a865cc6e0736d2120b2"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+              "content_hash": "9b642c57e6a495afe612b3c80d9575734c41a6cdfd42b19f47822cb37e09557a"
+            }
+          ]
         }
       ],
       "publication_history": [
@@ -2753,6 +3026,12 @@
         {
           "version": 3,
           "published_at": "2026-09-05T09:18:31.212Z",
+          "source_count": 3,
+          "change": "media_impact_added"
+        },
+        {
+          "version": 4,
+          "published_at": "2026-09-05T09:26:29.719Z",
           "source_count": 3,
           "change": "media_impact_added"
         }
@@ -105025,5 +105304,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T09:18:31.212Z"
+  "public_updated_at": "2026-09-05T09:26:29.719Z"
 }
