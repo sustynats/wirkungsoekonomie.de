@@ -2193,6 +2193,7 @@
 .news-editorial-byline div { display: grid; gap: .24rem; }
 .news-editorial-byline strong { font-size: 1.16rem; }
 .news-editorial-byline span, .news-editorial-transparency { color: rgb(255 255 255 / 76%); }
+.news-editorial-byline .text-link { color: #f1eee6; text-decoration-color: rgb(241 238 230 / 55%); }
 .news-editorial-transparency { max-width: 54rem; font-size: .92rem; }
 .news-editorial-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(17rem, .78fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
 .news-editorial-article__main { max-width: 52rem; }

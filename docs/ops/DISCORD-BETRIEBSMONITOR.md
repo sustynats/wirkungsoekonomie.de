@@ -60,6 +60,8 @@ einschließlich 19 % Steuerreserve. Die 25-EUR-Freigabe bleibt unverändert.
 Historische fehlende Nutzungswerte, Higgsfield-Abo/Bildcredits und Hostingkosten
 werden als fehlend/ausgeschlossen benannt. Es handelt sich nicht um eine Rechnung.
 
+Der Quellenfunnel und der automatisch fortgeschriebene Source-Utility-Report dienen ausschließlich der Betriebsoptimierung. Sie bewerten weder politische Ausrichtung noch die Gesamtqualität eines Medienhauses. Erwartbare Relevanz- und Evidenzablehnungen bleiben redaktionelle Zustände; sie lösen keine falsche Störungsmeldung aus.
+
 Besucher/Besuche, Installationen, tatsächliche aktive Push-Abonnements und
 RSS-Nutzung sind in diesem Betriebsbericht noch nicht integriert. Fehlende
 Messwerte werden niemals als null ausgegeben. Die Akademie-Analytics-Erweiterung

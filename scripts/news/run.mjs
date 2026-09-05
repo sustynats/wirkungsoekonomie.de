@@ -21,7 +21,7 @@ import {
 } from "./lib.mjs";
 import { buildNewsSite } from "./build.mjs";
 import { sanitizeVisuals } from "./visuals.mjs";
-import { loadNewsRegistry, registryErrors } from "./registry.mjs";
+import { loadNewsRegistry, normalizeNewsRegistry, registryErrors } from "./registry.mjs";
 import { sourceAccess } from "./access-policy.mjs";
 import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences } from "./newsroom.mjs";
 import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFileMatch } from "./living-files.mjs";
@@ -545,6 +545,18 @@ function sanitizeError(error) {
   return message.replace(/[A-Za-z0-9_-]{24,}/g, "[redacted]").slice(0, 240);
 }
 
+function governanceHoldFor(error, now) {
+  const message = error instanceof Error ? error.message : String(error);
+  if (!/^(?:ROBOTS_DISALLOWED|ROBOTS_UNAVAILABLE_|ROBOTS_REDIRECT_LIMIT|ROBOTS_CROSS_ORIGIN_REDIRECT|RSL_AI_INPUT_DISALLOWED|RSL_STATUS_OPEN|RSL_UNAVAILABLE_|RSL_REDIRECT_LIMIT|RSL_CROSS_ORIGIN_REDIRECT|SOURCE_ACCESS_NOT_CLEARED)/i.test(message)) return null;
+  return {
+    reason: message.split(":")[0],
+    set_at: now,
+    // Retry only the policy probe after one day. A successful fetch clears the
+    // hold; a still-restrictive policy renews it without touching article data.
+    until: new Date(Date.parse(now) + 24 * 60 * 60 * 1000).toISOString(),
+  };
+}
+
 export function isRetryableFeedError(error) {
   const message = error instanceof Error ? error.message : String(error);
   return /fetch failed|network|socket|timed?\s*out|abort|ECONNRESET|EAI_AGAIN|FEED_HTTP_(?:408|425|429|5\d\d)/i.test(message);
@@ -574,7 +586,7 @@ export async function runWirkungsticker(options = {}) {
   const runSchedule = scheduledSlot(nowDate);
   const isAutomatedRun = process.env.GITHUB_EVENT_NAME === "schedule"
     || (process.env.GITHUB_EVENT_NAME === "push" && process.env.GITHUB_REF === "refs/heads/codex/wirkungsticker-clock");
-  const registry = options.registry || loadNewsRegistry(ROOT);
+  const registry = options.registry ? normalizeNewsRegistry(options.registry) : loadNewsRegistry(ROOT);
   const invalidRegistry = registryErrors(registry);
   if (invalidRegistry.length) throw new Error(invalidRegistry.join(","));
   const state = structuredClone(options.state || readJson(files.state));
@@ -672,10 +684,12 @@ export async function runWirkungsticker(options = {}) {
     const previousStatus = state.source_status[source.source_id] || {};
     if (result.status === "rejected") {
       const error = sanitizeError(result.reason);
+      const governanceHold = governanceHoldFor(result.reason, now);
       bumpSourceFunnel(sourceFunnel, source.source_id, "fetch_failures");
+      if (/PARSER|XML|JSON|FEED_FORMAT|EMPTY_FEED/i.test(error)) bumpSourceFunnel(sourceFunnel, source.source_id, "parse_failures");
       report.source_failures += 1;
       report.source_errors.push({ source_id: source.source_id, error });
-      state.source_status[source.source_id] = { ...previousStatus, last_attempt: now, attempts: Number(previousStatus.attempts || 0) + 1, failures: Number(previousStatus.failures || 0) + 1, consecutive_failures: Number(previousStatus.consecutive_failures || 0) + 1, last_error_at: now, last_error: error, last_success: previousStatus.last_success || null };
+      state.source_status[source.source_id] = { ...previousStatus, last_attempt: now, attempts: Number(previousStatus.attempts || 0) + 1, failures: Number(previousStatus.failures || 0) + 1, consecutive_failures: Number(previousStatus.consecutive_failures || 0) + 1, last_error_at: now, last_error: error, last_success: previousStatus.last_success || null, governance_hold_reason: governanceHold?.reason || previousStatus.governance_hold_reason || null, governance_hold_until: governanceHold?.until || previousStatus.governance_hold_until || null };
       continue;
     }
     bumpSourceFunnel(sourceFunnel, source.source_id, "fetch_successes");
@@ -692,6 +706,8 @@ export async function runWirkungsticker(options = {}) {
       consecutive_failures: 0,
       last_success: now,
       last_error: null,
+      governance_hold_reason: null,
+      governance_hold_until: null,
       feed_url: result.value.fetched.final_url,
       items: result.value.fetched.not_modified ? previousStatus.items : result.value.items.length,
       latest_item: result.value.items.map((item) => item.published_at).filter(Boolean).sort().at(-1) || previousStatus.latest_item || null,
@@ -960,6 +976,14 @@ export async function runWirkungsticker(options = {}) {
         report.output_tokens += estimated.output_tokens;
         report.estimated_cost_usd = Number((report.estimated_cost_usd + estimated.estimated_cost_usd).toFixed(6));
         report.token_source = estimated.token_source;
+        for (const candidate of batch) {
+          bumpCandidateFunnel(sourceFunnel, candidate, "items_full_analyzed");
+          const sourceCount = Math.max(1, new Set((candidate.sources || []).map((source) => source.source_id).filter(Boolean)).size);
+          const share = 1 / Math.max(1, batch.length) / sourceCount;
+          bumpCandidateFunnel(sourceFunnel, candidate, "ai_input_tokens", estimated.input_tokens * share);
+          bumpCandidateFunnel(sourceFunnel, candidate, "ai_output_tokens", estimated.output_tokens * share);
+          bumpCandidateFunnel(sourceFunnel, candidate, "estimated_ai_cost", estimated.estimated_cost_usd * share);
+        }
         const analyses = new Map(aiResult.analyses.map((analysis) => [analysis.story_id, analysis]));
         for (const candidate of batch) {
           const analysis = analyses.get(candidate.story_id);

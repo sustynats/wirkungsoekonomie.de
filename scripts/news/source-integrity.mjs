@@ -47,10 +47,12 @@ export function reconcileSourceIdentity(item, collectionSource, registry) {
     geography: owner.geography || item.geography,
     research_lane: owner.research_lane || item.research_lane,
     requires_corroboration: Boolean(owner.requires_corroboration),
+    agency_origin: item.agency_origin || "unknown",
+    agency_origin_confidence: item.agency_origin_confidence || "unknown",
     provenance: {
       ...(item.provenance || {}),
-      origin: `publisher:${owner.publisher_id || owner.source_id}`,
-      basis: "publisher_resolved_from_registered_target_url",
+      origin: item.agency_origin && item.agency_origin !== "unknown" ? `agency:${item.agency_origin}` : `publisher:${owner.publisher_id || owner.source_id}`,
+      basis: item.agency_origin && item.agency_origin !== "unknown" ? "agency_attribution_in_available_text" : "publisher_resolved_from_registered_target_url",
       collection_source_id: item.source_id,
     },
   };

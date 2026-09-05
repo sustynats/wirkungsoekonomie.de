@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
-import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, mustRespectRobots } from "./access-policy.mjs";
+import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, sourceEvidenceSegments } from "./newsroom.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
 import { livingFileMatch, subjectConflict, matchingStories, isMerged } from "./living-files.mjs";
@@ -322,6 +322,7 @@ export async function fetchFeed(source, policy, fetchImpl = fetch) {
     ...(source.allowed_redirect_hosts || []).map((host) => host.toLowerCase()),
   ]);
   let current = source.feed_url;
+  await respectRsl(source, policy, fetchImpl, assertSafeFeedUrl, allowedHosts);
   for (let redirect = 0; redirect <= Number(policy.max_redirects || 3); redirect += 1) {
     await assertSafeFeedUrl(current, allowedHosts, { resolveDns: policy.resolve_dns !== false });
     if (mustRespectRobots(source, current, policy)) await respectRobots(current, policy, fetchImpl, assertSafeFeedUrl, allowedHosts);
@@ -390,6 +391,7 @@ export async function fetchArticleExcerpt(item, source, policy = {}, fetchImpl =
     ...(source.allowed_redirect_hosts || []).map((host) => host.toLowerCase()),
   ]);
   let current = item.url;
+  await respectRsl(source, policy, fetchImpl, assertSafeFeedUrl, allowedHosts);
   for (let redirect = 0; redirect <= Number(policy.max_redirects || 3); redirect += 1) {
     await assertSafeFeedUrl(current, allowedHosts, { resolveDns: policy.resolve_dns !== false });
     if (mustRespectRobots(source, current, policy)) await respectRobots(current, policy, fetchImpl, assertSafeFeedUrl, allowedHosts);

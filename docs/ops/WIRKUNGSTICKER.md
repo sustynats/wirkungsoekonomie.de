@@ -56,6 +56,8 @@ Konfiguration: `WOEK_NEWS_MONTHLY_AI_BUDGET_USD`, `WOEK_NEWS_MAX_AI_STORIES_PER_
 
 ## Betrieb
 
+Das Quellenportfolio wird über die Governance-Rollen A bis F gesteuert. Nur Rolle A mit verifiziertem offiziellen Endpunkt, technischem Zugang und hinreichend geklärtem Nutzungsstatus darf automatisch laufen. Vor der KI stehen lokaler Rauschfilter, URL-/Titel-/Agentur-Dedupe, Ereignis-Clustering und Source Integrity. Der vollständige Audit ist in `docs/ops/WIRKUNGSTICKER-QUELLENPORTFOLIO.md` dokumentiert.
+
 ```bash
 npm run news:test
 npm run news:run
@@ -63,6 +65,8 @@ npm run news:build
 npm run news:validate
 npm run news:health
 npm run news:check-source-summaries
+npm run news:source-integrity:audit -- --strict
+npm run news:source-portfolio:audit -- --strict
 npm run news:media-impact:backfill -- --dry-run --limit=100
 ```
 

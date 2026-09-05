@@ -1,6 +1,6 @@
 # Wirkungsticker: offene Recherchebasis und Betriebsstand
 
-Stand: 3. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht eine Garantie lückenloser Nachrichtenabdeckung.
+Stand: 5. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht eine Garantie lückenloser Nachrichtenabdeckung.
 
 ## Kosten und Grenzen
 
@@ -36,12 +36,12 @@ Stand: 3. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht 
 `content/news/source-registry.json` bleibt die bestehende Basis. `media-registry.json` ergänzt Herausgeber und kontrollierte Überschreibungen; `registry.mjs` führt beides zusammen.
 
 - Reuters und dpa: keine gebuchten Direktdienste. Zugeschriebene Agenturmeldungen in anderen frei verfügbaren Quellen werden als gemeinsamer Ursprung behandelt, soweit erkennbar.
-- tagesschau, ZEIT, Süddeutsche: ungeklärte kostenlose automatisierte Nutzung gesondert markiert. Andere öffentlich-rechtliche und überregionale Angebote sind separat eingerichtet.
+- tagesschau: Der offizielle Feed ist laut Anbieter nur für private, nichtkommerzielle Nutzung bestimmt. Das öffentliche Projekt ist nicht privat; deshalb Rolle E und kein automatischer Abruf. ZEIT und Süddeutsche bleiben wegen ungeklärter automatisierter Nutzung fallbezogen bzw. inaktiv. Andere öffentlich-rechtliche und überregionale Angebote sind separat eingerichtet.
 - Bundesrat, BMAS und WTO: Robots-Sperre wird eingehalten, nicht mit anderem User-Agent umgangen.
 - UN News: Nach der sicheren Weiterleitung von `/robots.txt` nach `/en/robots.txt` ist der Feed von `*/news/` erfasst. Zugang deshalb deaktiviert; keine Übernahme der ausdrücklich nur für Google Feedfetcher geltenden Ausnahme.
 - Greenpeace: Atom-Pfad durch robots.txt gesperrt; erlaubte öffentliche Presseübersicht mit eigenem begrenztem HTML-Metadatenadapter und fünf Sekunden Crawl-Delay. Keine Bilder.
 - WELT/BILD: kritische Beobachtung vorgesehen, Direktzugang noch nicht freigeschaltet. Apollo News und NIUS: redaktionell ausgeschlossen, Host-Sperre im Abrufschutz.
-- Heise Wirtschaft, Netzpolitik und Security: öffentliche RSS-/Atom-Metadaten sind aktiviert. Ein lokales Technikprofil verwirft Kaufberatung, Deals, Produkttests und routinemäßige Updates vor der KI, lässt aber Cyberrisiken, kritische Infrastruktur, digitale Grundrechte, Plattformregulierung, Arbeitsmarkt- und Lieferkettenfolgen passieren. Telepolis ist als nachrangige Kontext-/Discovery-Quelle mit Pflicht zur unabhängigen oder primären Bestätigung aktiviert; Kommentar, Analyse und Nachricht werden getrennt.
+- Heise Wirtschaft, Netzpolitik und Security: öffentliche RSS-/Atom-Metadaten sind im gemessenen Probebetrieb aktiviert. Ein lokales Technikprofil verwirft Kaufberatung, Deals, Produkttests und routinemäßige Updates vor der KI, lässt aber Cyberrisiken, kritische Infrastruktur, digitale Grundrechte, Plattformregulierung, Arbeitsmarkt- und Lieferkettenfolgen passieren. Telepolis bleibt Rolle C und wird nicht dauerhaft gepollt; Kommentar, Analyse und Nachricht werden getrennt.
 
 Quellen für technische Zugangsentscheidungen: [SPIEGEL-Syndication](https://gruppe.spiegel.de/syndication/haeufige-fragen), [DLF-RSS](https://www.deutschlandfunk.de/rss-angebot-102.html), [Heise-RSS](https://www.heise.de/news-extern/news.html), [tagesschau-RSS](https://www.tagesschau.de/infoservices/rssfeeds), [ZEIT-Impressum](https://www.zeit.de/impressum/index), [SZ-RSS](https://www.sueddeutsche.de/updates-rss), [Europe PMC API](https://europepmc.org/RestfulWebService), [Greenpeace-Presseübersicht](https://presseportal.greenpeace.de/releases/).
 
@@ -53,6 +53,8 @@ npm run news:build
 npm run news:validate
 npm run build:search
 npm run news:health
+npm run news:source-integrity:audit -- --strict
+npm run news:source-portfolio:audit -- --strict
 ```
 
 `reports/wirkungsticker-latest-run.json` enthält Source Health, Laufzahlen, Qualitätsstopps, Kostengrenze, Herkunfts-/Abdeckungsstatistik, Aktualitätswarnungen, fällige Folgeprüfungen, getrennte Betriebs-/Redaktions-/Queue-Zustände und einen Quellen-Funnel je Quelle. `data/news/newsroom.json` protokolliert Quelldokumente, Ereignisse, Zuordnungen und Entscheidungen. Diese internen Verzeichnisse werden vom öffentlichen Website-Artefakt ausgeschlossen.
