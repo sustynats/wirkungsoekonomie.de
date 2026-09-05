@@ -112,6 +112,14 @@ test("Berlin press portal adapter reads only public table metadata", () => {
   assert.equal(result.authority, "Presse- und Informationsamt des Landes Berlin");
   assert.equal(result.image, undefined);
 });
+test("Framer-Pressekarten werden über responsive Duplikate hinweg als eine Primärquelle gelesen", () => {
+  const card = '<a href="./presse/umfrage-afd-regierung"><p>01/09/26</p><h2>Umfrage: AfD-Regierung und Nachwuchsjuristen</h2><p>Öffentliche Kurzbeschreibung der eigenen Umfrage.</p><p>Mehr erfahren</p></a>';
+  const result = parseHtmlIndex(`${card}${card}`, { ...source, url: "https://www.jurafuchs.de/", html_layout: "framer_press_cards", access: { html_index: true } });
+  assert.equal(result.length, 1);
+  assert.equal(result[0].url, "https://www.jurafuchs.de/presse/umfrage-afd-regierung");
+  assert.equal(result[0].published_at, "2026-09-01T06:00:00.000Z");
+  assert.equal(result[0].summary, "Öffentliche Kurzbeschreibung der eigenen Umfrage.");
+});
 test("uncertain and single-origin claims cannot masquerade as confirmed", () => {
   const changed = structuredClone(analysis);
   changed.event_claims[0].status = "confirmed_claim";

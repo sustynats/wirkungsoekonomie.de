@@ -31,6 +31,14 @@ on:
         description: "Maximale Anzahl bereits veröffentlichter Akten im Medienwirkungs-Backfill"
         type: number
         default: 10
+      editorial_analysis_limit:
+        description: "Technische Batchgröße für analysereife WÖK-Vertiefungen; keine redaktionelle Quote"
+        type: number
+        default: 6
+      editorial_analysis_bootstrap:
+        description: "Kontrollierter Erstbackfill; alle weiteren Kandidaten bleiben automatisch in der Queue"
+        type: boolean
+        default: false
 
 permissions:
   actions: write
@@ -43,7 +51,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 55
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -123,6 +131,24 @@ jobs:
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+      - name: Research and publish relevant WÖK analyses
+        id: editorial
+        if: steps.slot.outputs.should_run == 'true'
+        env:
+          WOEK_NEWS_MONTHLY_AI_BUDGET_EUR: "25"
+          WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
+          WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
+          EDITORIAL_ANALYSIS_LIMIT: ${{ inputs.editorial_analysis_limit || 6 }}
+          EDITORIAL_ANALYSIS_BOOTSTRAP: ${{ inputs.editorial_analysis_bootstrap || false }}
+        run: |
+          set +e
+          args=(--execute --limit="$EDITORIAL_ANALYSIS_LIMIT")
+          if [ "$EDITORIAL_ANALYSIS_BOOTSTRAP" = "true" ]; then args+=(--bootstrap); fi
+          npm run news:editorial-analyses -- "${args[@]}"
+          status=$?
+          node -e 'const fs=require("node:fs"); const p="reports/wirkungsticker-editorial-analyses.json"; const r=fs.existsSync(p)?require("./"+p):{}; fs.appendFileSync(process.env.GITHUB_OUTPUT,"public_changed="+Boolean((r.editorial_analyses_published||0)+(r.editorial_analyses_updated||0))+"\n"); fs.appendFileSync(process.env.GITHUB_OUTPUT,"failed="+Boolean(r.failed?.length)+"\n");'
+          if [ "$status" -ne 0 ]; then echo "WÖK-Analyse zurückgestellt; Nachrichtenlauf und bestehende Veröffentlichungen laufen weiter."; fi
+          exit 0
       - name: Read public ticker outcome
         id: outcome
         if: steps.slot.outputs.should_run == 'true'
@@ -141,6 +167,7 @@ jobs:
         run: |
           npm run build:search
           npm run taxonomy:build
+          npm run news:source-integrity:audit -- --strict
           npm run news:validate
       - name: Commit one atomic update
         id: commit
@@ -151,7 +178,7 @@ jobs:
           set -euo pipefail
           git config user.name "wirkungsticker-bot"
           git config user.email "wirkungsticker-bot@users.noreply.github.com"
-          git add -- data/news news wirkungsticker reports/wirkungsticker-latest-run.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/polls/public-catalog.json umfragen admin/umfragen
+          git add -- data/news news wirkungsticker reports/wirkungsticker-latest-run.json reports/wirkungsticker-source-integrity.json reports/wirkungsticker-editorial-analyses.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/polls/public-catalog.json umfragen admin/umfragen
           if git diff --cached --quiet; then
             echo "Keine neue oder geänderte Wirkungsnachricht."
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -161,7 +188,7 @@ jobs:
           node scripts/news/publish-git.mjs
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Publish the committed ticker automatically
-        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true' || steps.media_impact.outputs.changed == 'true')
+        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true' || steps.media_impact.outputs.changed == 'true' || steps.editorial.outputs.public_changed == 'true')
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main -f ticker_only=true

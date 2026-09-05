@@ -6,7 +6,7 @@ import { renderRelatedStories } from "../../scripts/news/build.mjs";
 import { runWirkungsticker, publishedRecord } from "../../scripts/news/run.mjs";
 
 const now = "2026-09-04T06:00:00Z";
-const source = (title, url = "https://example.org/a", more = {}) => ({ title, url, source_id: "test", published_at: now, ...more });
+const source = (title, url = "https://example.org/a", more = {}) => ({ title, url, source_id: "test", publisher_id: "test", publisher: "Test", primary_source: true, published_at: now, ...more });
 const story = (id, title, more = {}) => ({ story_id: id, slug: id, title, source_summary: "", published: true, listed: true, published_at: now, last_updated: now, first_seen: now, sources: [source(title, `https://example.org/${id}`)], claims: [], analysis: { summary: title }, versions: [{ version: 1, analyzed_at: now }], current_version: 1, ...more });
 const dormagen = story("dormagen", "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen");
 
@@ -39,6 +39,14 @@ test("high title similarity and broad policy words cannot override different pla
   assert.notEqual(clusterItems([incoming], [dormagen], now)[0].story_id, "dormagen");
   const german = story("de", "Kommission genehmigt deutschen Kapazitätsmechanismus");
   assert.notEqual(clusterItems([source("Kommission genehmigt französischen Kapazitätsmechanismus")], [german], now)[0].story_id, "de");
+});
+test("different German election jurisdictions never become one event", () => {
+  const saxonyAnhalt = source("Vor der Wahl: Stimmung in Sachsen-Anhalt", "https://example.org/sachsen-anhalt");
+  const berlin = source("BerlinTrend kurz vor der Wahl: Stimmung vor der Berlin-Wahl", "https://example.org/berlin");
+  assert.deepEqual(fileSubject(saxonyAnhalt).elections, ["sachsen-anhalt"]);
+  assert.deepEqual(fileSubject(berlin).elections, ["berlin"]);
+  assert.equal(subjectConflict(saxonyAnhalt, berlin), true);
+  assert.equal(clusterItems([saxonyAnhalt, berlin], [], now).length, 2);
 });
 test("consolidation is idempotent, preserves histories, queues review and routes aliases", () => {
   const canonical = structuredClone(dormagen);
