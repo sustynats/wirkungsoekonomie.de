@@ -4685,6 +4685,72 @@
       },
       "source_failures": 0,
       "quality_holds": 1
+    },
+    {
+      "run_id": "news-run-f1d4c7c3afb2",
+      "started_at": "2026-09-05T09:31:48.966Z",
+      "completed_at": "2026-09-05T09:32:58.278Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 971,
+        "feed_entries_new": 15,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 583,
+        "story_clusters": 25,
+        "locally_rejected": 25,
+        "ai_stories": 4,
+        "ai_requests": 4,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 125134,
+        "media_checks_triggered": 1,
+        "media_checks_skipped": 3,
+        "media_check_tokens": 0,
+        "self_frame_rewrites": 0,
+        "published_stories": 0,
+        "updated_stories": 1
+      },
+      "ai": {
+        "requests": 4,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 32973,
+        "output_tokens": 5267,
+        "estimated_cost_usd": 0.035298,
+        "token_source": "provider_reported_usage",
+        "media_check_tokens": 0,
+        "media_check_cost_usd": 0
+      },
+      "source_failures": 0,
+      "quality_holds": 3
+    },
+    {
+      "run_id": "media-backfill-c5df53c4653c",
+      "started_at": "2026-09-05T09:32:59.604Z",
+      "completed_at": "2026-09-05T09:33:18.826Z",
+      "berlin_slot": "kontrollierter Medienwirkungs-Backfill",
+      "counts": {
+        "media_checks_triggered": 1,
+        "media_checks_skipped": 78,
+        "media_check_tokens": 8178,
+        "self_frame_rewrites": 2,
+        "media_quality_retries": 1,
+        "media_checks_cleaned": 1,
+        "updated_stories": 1
+      },
+      "ai": {
+        "requests": 2,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 8178,
+        "output_tokens": 0,
+        "estimated_cost_usd": 0.013575,
+        "media_check_tokens": 8178,
+        "media_check_cost_usd": 0.013575,
+        "token_source": "provider_or_conservative_media_backfill"
+      },
+      "source_failures": 0,
+      "quality_holds": 0
     }
   ]
 }
