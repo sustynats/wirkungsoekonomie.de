@@ -11,9 +11,14 @@
     },
     "sources": {
       "firstSeen": "2026-09-05T06:10:08.110Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "14e22cb407ffad398b82ea7f",
+      "content": "⚠ WÖk-Betriebsstörung\nQuellenabruf: 1 fehlgeschlagene Quellenabrufe im letzten Lauf.\nSeit: 2026-09-05T06:10:08.110Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-05"
 }
