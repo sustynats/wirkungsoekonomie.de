@@ -60,6 +60,26 @@ export function parseHtmlIndex(raw, source) {
       return record(source, { title: titleLink?.[2], url: titleLink?.[1], summary: block.match(/<p\b[^>]*class=["'][^"']*article__paragraph-text[^"']*["'][^>]*>([\s\S]*?)<\/p>/i)?.[1], published_at: block.match(/<time\b[^>]*datetime=["']([^"']+)["']/i)?.[1] });
     }).filter(Boolean);
   }
+  if (source.html_layout === "framer_press_cards") {
+    // Explicit adapter for a public, robots-allowed press index rendered by
+    // Framer. Only date, headline, short teaser and the original press URL are
+    // retained; repeated responsive variants are collapsed by URL.
+    const byUrl = new Map();
+    for (const match of String(raw).matchAll(/<a\b[^>]*href=["']([^"']*\/presse\/[^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+      const block = match[2];
+      const rawDate = text(block, 400).match(/\b(\d{2})\/(\d{2})\/(\d{2,4})\b/);
+      const year = rawDate ? (rawDate[3].length === 2 ? `20${rawDate[3]}` : rawDate[3]) : null;
+      const summary = [...block.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)].map((entry) => text(entry[1], 1200)).sort((left, right) => right.length - left.length)[0] || "";
+      const item = record(source, {
+        title: block.match(/<h[1-3]\b[^>]*>([\s\S]*?)<\/h[1-3]>/i)?.[1],
+        summary,
+        url: match[1],
+        published_at: rawDate ? `${year}-${rawDate[2]}-${rawDate[1]}T08:00:00+02:00` : null,
+      });
+      if (item) byUrl.set(item.url, item);
+    }
+    return [...byUrl.values()].slice(0, source.max_items || 30);
+  }
   const entries = [];
   function visit(value) {
     if (Array.isArray(value)) { value.forEach(visit); return; }

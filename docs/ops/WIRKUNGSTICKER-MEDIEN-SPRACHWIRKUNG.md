@@ -40,6 +40,8 @@ Die vorhandene `analysis`-Struktur wird ergänzt um:
 
 Ereigniswirkung bleibt in den bestehenden Wirkungsfeldern. Kommunikationswirkung bleibt im neuen Block. Ein Bezug zur Demokratiedimension muss in der Analyse nachvollziehbar begründet werden; es gibt keine automatische Score-Übernahme.
 
+Seit `media_analysis_version: 2.0` bildet der kanonische Block den Frame- und Diskurscheck vollständig ab: `epistemic_status`, `attribution`, `frame_analysis`, `political_context`, `discourse_effect`, `impact_path`, getrennte Evidenzlisten, `observed_impact`, `public_explanation`, `fact_first_alternative` und `self_frame_check`. Die vier Ebenen Sachverhalt, Akteursaussage, mediale Vermittlung und WÖk-Analyse bleiben maschinenlesbar getrennt. Eine beobachtete Kommunikationswirkung wird nur mit mehreren gelieferten, belastbaren Evidenzreferenzen zugelassen; andernfalls stuft der Sanitizer sie auf Potenzial oder Risiko zurück.
+
 ## Faktencheck, Folgencheck und Mediencheck
 
 - Faktencheck: Ist eine Ereignisbehauptung belegt, strittig oder offen?
@@ -87,7 +89,7 @@ Der Medienkostenanteil eines regulären kombinierten Aufrufs ist eine konservati
 9. entfernt automatisch einen früher sichtbaren Mediencheck, wenn eine verschärfte lokale Triggerregel ihn nicht mehr als relevant einstuft und kein zum unveränderten Quellenstand gespeicherter, qualitätsgeprüfter Triggerbefund vorliegt;
 10. ist bei unverändertem Quellenstand idempotent.
 
-Der GitHub-Workflow bietet dafür die manuellen Eingaben `media_impact_backfill` und `media_impact_limit`. Der reguläre Stundenprozess startet keinen teuren Vollbestands-Backfill.
+Der GitHub-Workflow bietet dafür die manuellen Eingaben `media_impact_backfill` und `media_impact_limit`. Nach einer Methodenversion wird der Vollbestand lokal neu gescannt; nur tatsächliche Trigger-Treffer werden KI-gestützt ergänzt. Der Prozess ist idempotent und verändert keine Fakten- oder Quellenakte.
 
 ## Testabdeckung
 

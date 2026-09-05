@@ -31,6 +31,7 @@ import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeli
 import { IMAGE_CONFIG } from "./title-image/policy.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint } from "./evidence-packets.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
+import { reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
@@ -60,7 +61,7 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_PUBLICATION_GATE_REQUIRED$/,
   /^AI_PUBLICATION_GATE_(?:NEWS_VALUE|FACTORS|EXCEPTION|EVIDENCE|DUPLICATE)_INVALID$/,
   /^AI_PUBLICATION_GATE_RATIONALE_REQUIRED$/,
-  /^MEDIA_(?:IMPACT|SPEAKER|FRAMING|FRAME|HISTORY|EVIDENCE|COMPARISON|SELF_FRAME|INTENT|OUTLET|EFFECT)/,
+  /^MEDIA_(?:IMPACT|SPEAKER|FRAMING|FRAME|HISTORY|EVIDENCE|COMPARISON|SELF_FRAME|INTENT|OUTLET|EFFECT|EPISTEMIC|ATTRIBUTION|POLITICAL|DISCOURSE|OBSERVED|PUBLIC|FACT_FIRST)/,
 ];
 const EDITORIAL_REJECTION_ERRORS = new Set([
   "AI_PUBLICATION_NOT_RECOMMENDED",
@@ -134,6 +135,8 @@ function sourcePublicRecord(item) {
     ingested_at: item.ingested_at,
     provenance: item.provenance,
     research_metadata: item.research_metadata,
+    collection_source_id: item.collection_source_id,
+    collection_publisher_id: item.collection_publisher_id,
   };
 }
 
@@ -223,6 +226,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
         reassessment: Boolean(candidate.reassessment),
         fresh: Boolean(candidate.fresh),
         consolidation: Boolean(existing.pending_update?.consolidation),
+        source_integrity: sourceIntegrityRecord(candidate.source_integrity),
       },
     };
   }
@@ -254,6 +258,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     event_id: candidate.event_id,
     preanalysis: candidate.preanalysis,
     freshness: freshnessFor(candidate, now),
+    source_integrity: sourceIntegrityRecord(candidate.source_integrity),
   };
 }
 
@@ -377,6 +382,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     news_status: analysis.news_status || "preliminary",
     deepening_due_at: analysis.publication_depth === "initial" ? nextDeepeningCheckpoint(now) : null,
     evidence_groups: candidate.evidence_groups,
+    source_integrity: sourceIntegrityRecord(candidate.source_integrity),
     followups: [
       ...(existing?.followups || []),
       ...newFollowups.filter((followup) => !(existing?.followups || []).some((old) => old.claim === followup.claim && old.source_id === followup.source_id)).map(({ expected_by_evidence, ...followup }) => ({
@@ -547,6 +553,7 @@ export async function runWirkungsticker(options = {}) {
     media_check_tokens: 0,
     media_check_cost_usd: 0,
     self_frame_rewrites: 0,
+    source_integrity_holds: [],
     budget_stage: 0,
     completed_at: null,
     sources_scheduled: dueSources.length,
@@ -562,7 +569,9 @@ export async function runWirkungsticker(options = {}) {
       { delayImpl: options.fetchRetryDelayImpl },
     );
     const { fetched } = fetchResult;
-    const items = fetched.not_modified ? [] : parseFeed(fetched.body, { ...source, max_items: source.max_items || registry.policy.max_items_per_source }).map((item) => annotateSourceItem(item, source, now));
+    const items = fetched.not_modified ? [] : parseFeed(fetched.body, { ...source, max_items: source.max_items || registry.policy.max_items_per_source })
+      .map((item) => annotateSourceItem(item, source, now))
+      .map((item) => reconcileSourceIdentity(item, source, registry));
     if (!source.allow_empty && !fetched.not_modified && !items.length && Number(state.source_status[source.source_id]?.items || 0) > 0) throw new Error("SOURCE_PARSER_DRIFT_OR_EMPTY_FEED");
     return { source, fetched, items, fetchAttempts: fetchResult.attempts };
   });
@@ -662,7 +671,7 @@ export async function runWirkungsticker(options = {}) {
       cluster.sources.some((source) => freshItemIds.has(source.item_id)),
     ));
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
-  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE"]);
+  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => !isMerged(story))
     .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
@@ -710,6 +719,7 @@ export async function runWirkungsticker(options = {}) {
     candidate.currentness = { ...freshnessFor(candidate, now), checked_at: now, compared_current_feed_items: allItems.length, matching_current_feed_items: alternativeItems.length, followups_due: scheduledFollowups.filter((followup) => followup.story_id === candidate.story_id) };
     candidate.attention_impact_gap = candidate.preanalysis.internal_relevance_score >= 48 && candidate.evidence_groups.possible_independent_origins <= 2
       ? { status: "possible_gap_in_observed_sources", observed_origins: candidate.evidence_groups.possible_independent_origins, note: "Geringe beobachtete Quellenbreite, keine Aussage über die gesamte Medienaufmerksamkeit." } : null;
+    candidate.source_integrity = sourceIntegrityForStory(candidate, registry, matchableStories, now);
     const event = newsroom.events[candidate.event_id] || { ...eventFingerprint(candidate.sources[0]), id: candidate.event_id, event_detected_at: candidate.event_detected_at };
     newsroom.events[candidate.event_id] = { ...event, story_id: candidate.story_id, relevance: candidate.preanalysis, attention_impact_gap: candidate.attention_impact_gap };
     for (const source of candidate.sources) if (source.source_item_id && newsroom.source_items[source.source_item_id]) newsroom.source_items[source.source_item_id].event_id = candidate.event_id;
@@ -736,6 +746,12 @@ export async function runWirkungsticker(options = {}) {
   // Check size before assigning paid slots. A blocked file must never starve the
   // next eligible story or be mislabeled as an outage of the AI provider.
   const ready = eligible.filter(candidate => {
+    if (candidate.source_integrity?.status !== "verified") {
+      byId.set(candidate.story_id, pendingRecord(candidate, "SOURCE_INTEGRITY_OPEN", now, candidate.source_integrity?.issues?.map((issue) => issue.code) || ["SOURCE_INTEGRITY_OPEN"]));
+      report.source_integrity_holds.push({ story_id: candidate.story_id, issues: candidate.source_integrity?.issues || [] });
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "source_integrity_hold", issues: candidate.source_integrity?.issues || [] });
+      return false;
+    }
     if (canReuseReview(candidate, now)) {
       report.reviews_reused += 1;
       if (candidate.existing_story.review_checkpoint.outcome === "input_too_large") report.input_holds.push({ story_id: candidate.story_id, reason: "AI_INPUT_TOO_LARGE", reused: true });
@@ -956,7 +972,7 @@ export async function runWirkungsticker(options = {}) {
   report.completed_at = new Date().toISOString();
   const currentItems = allItems.filter((item) => Date.parse(item.published_at || 0) <= nowDate.getTime() + futureToleranceMs);
   report.latest_source_timestamp = latestSourceDate(currentItems) ? new Date(latestSourceDate(currentItems)).toISOString() : null;
-  report.status = report.ai_error || report.input_holds.length || report.source_failures > 0 ? "degraded" : "ok";
+  report.status = report.ai_error || report.input_holds.length || report.source_integrity_holds.length || report.source_failures > 0 ? "degraded" : "ok";
   report.ai_calls_remaining_this_hour = Math.max(0, maxAiCallsPerHour - aiCallsInLastHour - report.ai_calls);
   report.public_changed = [
     report.published_stories,
@@ -1020,6 +1036,7 @@ export async function runWirkungsticker(options = {}) {
       media_checks_ai_promoted: report.media_checks_ai_promoted,
       media_check_tokens: report.media_check_tokens,
       self_frame_rewrites: report.self_frame_rewrites,
+      source_integrity_holds: report.source_integrity_holds.length,
       published_stories: report.published_stories,
       updated_stories: report.updated_stories,
     },

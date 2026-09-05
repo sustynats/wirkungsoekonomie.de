@@ -207,3 +207,11 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - Detailseite zeigt „Medien- & Sprachwirkung“ nur bei substanzieller Relevanz und verknüpft bestehende Glossarbegriffe. Die Übersicht erklärt die neue Ebene knapp.
 - Selektiver, budgetgebundener und idempotenter Backfill samt Workflow-Inputs sowie Usage-Feldern für Trigger, Skip, Token, Kostenanteil und Rewrites ergänzt.
 - Dokumentation: `docs/ops/WIRKUNGSTICKER-MEDIEN-SPRACHWIRKUNG.md`. Tests: `tests/news/media-impact.test.mjs` plus vollständige Wirkungsticker-Suite.
+# 2026-09-05 – Codex: Quellenintegrität, Frame-/Diskurscheck v2 und WÖK-Analysen
+
+- Falsche Berliner Wahlquelle in der Sachsen-Anhalt-Akte entfernt; Root Cause als fehlende Wahljurisdiktionsgrenze identifiziert und generisch behoben.
+- Dauerhaftes Source-Integrity-Gate vor KI und strikter Vollbestandsaudit vor Veröffentlichung ergänzt.
+- Medien- und Sprachwirkung auf strukturierten Frame-/Diskurscheck v2 mit vier Ebenen, Attribution, beobachteter Wirkung, Evidenzlisten und Self-Frame-Check erweitert.
+- Eigenständiges Format WÖK-ANALYSE mit lokalem Relevanz-/Analysegewinn-Trigger, Recherche-/Evidenzgate, Claim Ledger, Gegenbefund, Versionierung, Kostenlogging, Rückverlinkung, RSS/SEO/WebApp und gemischtem Feed umgesetzt.
+- Rückwirkende Scans sind idempotent; technische Batchgrößen sind keine redaktionellen Stückquoten.
+- Offene Analyse-Kandidaten werden gegen den registrierten stündlichen Recherchepool nachrecherchiert; Legal Tribune Online und die öffentliche Jurafuchs-Presse-/Primärquelle ergänzen die kostenlose Rechts- und Justizrecherche. Nahezu identische Meldungen erzeugen nur einen Deep Dive.
