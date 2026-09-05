@@ -22,6 +22,7 @@ GOLDEN_PATH = ROOT / "ops/releases/parliament-github-golden-state-2026-08-23.jso
 CURRENT_READINESS_PATH = ROOT / "ops/releases/parliament-current-golden-readiness-2026-08-28.json"
 STATE_ADAPTERS_PATH = ROOT / "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
 MV_SPD_RESIDUAL_PATH = ROOT / "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json"
+MV_SPD_AUTHORITY_ARCHIVE_PATH = ROOT / "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json"
 
 ALLOWED_STATUSES = {
     "DONE_ON_MAIN",
@@ -59,6 +60,7 @@ def validate() -> dict:
     current_readiness = load(CURRENT_READINESS_PATH)
     state_adapters = load(STATE_ADAPTERS_PATH)
     mv_spd = load(MV_SPD_RESIDUAL_PATH)
+    mv_spd_authority_archive = load(MV_SPD_AUTHORITY_ARCHIVE_PATH)
 
     require(set(matrix["classification_taxonomy"]) == ALLOWED_STATUSES, "ISSUE_241_CLASSIFICATION_TAXONOMY_DRIFT")
     requirements = matrix["requirements"]
@@ -111,9 +113,13 @@ def validate() -> dict:
     technical = matrix["finite_residuals"]["technical"]
     fach = matrix["finite_residuals"]["fach_review_required"]
     require([item["id"] for item in technical] == ["MV-SPD-PROTECTED-AUTHORED-P1-P54-MATERIALISATION", "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"], "ISSUE_241_STATE_ORDER_DRIFT")
-    require(matrix["current_state"]["mecklenburg_vorpommern"]["spd_materialised_terminal_pages"] == mv_spd["summary"]["materialised_terminal_pages"] == [55], "ISSUE_241_MV_SPD_P55_DRIFT")
+    expected_mv_spd_terminal_pages = [1, *range(5, 56)]
+    require(matrix["current_state"]["mecklenburg_vorpommern"]["spd_materialised_terminal_pages"] == mv_spd["summary"]["materialised_terminal_pages"] == expected_mv_spd_terminal_pages, "ISSUE_241_MV_SPD_TERMINAL_PAGE_DRIFT")
     require(not mv_spd["summary"]["p55_residual_source_object_ids"], "ISSUE_241_MV_P55_RESIDUAL")
-    require(mv_spd["summary"]["protected_authored_pages_pending_technical_reconciliation"] == list(range(1,55)), "ISSUE_241_MV_AUTHORED_TECHNICAL_SCOPE_DRIFT")
+    require(mv_spd["summary"]["protected_authored_pages_pending_technical_reconciliation"] == [2, 3, 4], "ISSUE_241_MV_AUTHORED_TECHNICAL_SCOPE_DRIFT")
+    require(matrix["current_state"]["mecklenburg_vorpommern"]["spd_protected_unresolved_pages"] == [2, 3, 4], "ISSUE_241_MV_UNRESOLVED_PAGE_DRIFT")
+    require(matrix["current_state"]["mecklenburg_vorpommern"]["spd_authority_pointer_gap_count"] == 15, "ISSUE_241_MV_POINTER_GAP_COUNT_DRIFT")
+    require(technical[0]["items"] == mv_spd_authority_archive["coverage"]["authority_pointer_gap_object_ids"], "ISSUE_241_MV_POINTER_GAP_SET_DRIFT")
     require(mv_spd["summary"]["programme_terminal"] is False, "ISSUE_241_MV_FALSE_PROGRAMME_TERMINAL")
     require(len(fach[0]["verified_final_programmes"]) == 12 and len(fach[0]["canonicalization_pending_programmes"]) == 0, "ISSUE_241_BE_FACH_RESIDUAL_DRIFT")
     require(fach[0]["programme_analysis_complete"] == ["BSW", "DKP", "Die PARTEI", "SGP"], "ISSUE_241_BE_FACH_TERMINAL_SET_DRIFT")
@@ -146,6 +152,8 @@ def validate() -> dict:
         "berlin_technical_items": sum(item["jurisdiction"] == "berlin" for item in technical),
         "mv_technical_items": sum(item["jurisdiction"] == "mecklenburg-vorpommern" for item in technical),
         "mv_spd_p55_remaining_source_objects": len(mv_spd["summary"]["p55_residual_source_object_ids"]),
+        "mv_spd_materialised_terminal_pages": len(mv_spd["summary"]["materialised_terminal_pages"]),
+        "mv_spd_authority_pointer_gaps": matrix["current_state"]["mecklenburg_vorpommern"]["spd_authority_pointer_gap_count"],
         "state_official_source_adapters": 16,
         "automatic_state_fact_projection": 0,
         "berlin_verified_final_programmes_pending_explicit_full_fach": 8,
