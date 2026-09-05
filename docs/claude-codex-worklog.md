@@ -215,3 +215,11 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - Eigenständiges Format WÖK-ANALYSE mit lokalem Relevanz-/Analysegewinn-Trigger, Recherche-/Evidenzgate, Claim Ledger, Gegenbefund, Versionierung, Kostenlogging, Rückverlinkung, RSS/SEO/WebApp und gemischtem Feed umgesetzt.
 - Rückwirkende Scans sind idempotent; technische Batchgrößen sind keine redaktionellen Stückquoten.
 - Offene Analyse-Kandidaten werden gegen den registrierten stündlichen Recherchepool nachrecherchiert; Legal Tribune Online und die öffentliche Jurafuchs-Presse-/Primärquelle ergänzen die kostenlose Rechts- und Justizrecherche. Nahezu identische Meldungen erzeugen nur einen Deep Dive.
+
+## 2026-09-05 — Codex: Nachrichtenbetrieb, Queue und Quellen-Funnel finalisiert
+
+- Warteschlange in Kapazitäts-, technische und redaktionelle Fälle getrennt; ältere technische Wiederholungen erhalten bei normaler Kapazität reservierte Slots, ohne frische Meldungen zu verdrängen.
+- Formell fehlerhafte KI-Ausgaben werden als `AI_OUTPUT_INVALID` verlustfrei gespeichert und mit gestaffeltem Backoff erneut verarbeitet. Erwartbare Relevanz-, Evidenz- und Source-Integrity-Ablehnungen machen den Workflow nicht mehr fälschlich rot.
+- Laufberichte führen getrennte Zustände für Betrieb, Redaktion und Queue sowie Anbieter-Erfolge/-Fehler. Discord meldet erst echte technische Verzögerungen; der Tagesbericht enthält Queue, Quellen-Funnel, Monats-/Tageskosten und Kosten je Veröffentlichung/Aktualisierung.
+- Heise Wirtschaft, Netzpolitik und Security als kostenlose Metadatenfeeds ergänzt; lokale Systemrelevanz-Vorfilterung hält Produkttests, Deals, Kaufberatung und Routineupdates vor der KI zurück. Telepolis dient nur als bestätigungspflichtige Kontext-/Discovery-Quelle.
+- Legacy-HTTP-Links desselben HTTPS-Herausgebers werden sicher kanonisiert; Drittanbieter-Hosts bleiben unverändert. Dunkle WÖK-Analyse-Headlines erhalten den bereits getesteten hellen Kontraststil.

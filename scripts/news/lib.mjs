@@ -43,6 +43,7 @@ const MATERIALITY_RULES = [
 
 const ROUTINE_RULES = [
   [-18, "Gesprächs- oder Meinungsformat ohne automatisch unterstellten Nachrichtenwert", /\b(interview|rede|keynote|gastbeitrag|laudatio|podcast)\b/i],
+  [-16, "Kommentar oder Kolumne ohne automatisch unterstellten Nachrichtenwert", /\b(kommentar|meinung|kolumne|essay)\b/i],
   [-16, "parlamentarische Frage ohne neue materielle Antwort", /\b(kleine\s*anfrage|fragt\s+nach|thematisiert|will\s+auskunft)\b/i],
   [-18, "regelmäßige Finanzmarkt- oder Statistikmeldung ohne auffällige Veränderung", /\b(tägliche\s+rendite|taegliche\s+rendite|tenderergebnis|tenderverfahren|auction\s+result|reopening\s+of|mfi-zinsstatistik|weitgehend\s+unverändert|weitgehend\s+unveraendert)\b/i],
 ];
@@ -66,6 +67,7 @@ const NEWS_VALUE_RULES = [
 
 const CONTEXT_FORMAT_RULES = [
   ["interview_or_speech", /\b(interview|rede|keynote|gastbeitrag|laudatio|podcast)\b/i],
+  ["commentary_or_column", /\b(kommentar|meinung|kolumne|essay)\b/i],
   ["parliamentary_question", /\b(kleine\s*anfrage|fragt\s+nach|thematisiert|will\s+auskunft)\b/i],
   ["routine_market_or_statistics", /\b(tägliche\s+rendite|taegliche\s+rendite|tenderergebnis|tenderverfahren|auction\s+result|reopening\s+of|mfi-zinsstatistik|weitgehend\s+unverändert|weitgehend\s+unveraendert)\b/i],
 ];
@@ -82,6 +84,8 @@ const SPECIFIC_STORY_CONCEPTS = [
 
 // Nur exakte Begriffe abwerten: "mode" darf weder "modernes" noch "Modelle" treffen.
 const LOW_RELEVANCE = /\b(?:prominent(?:e|en|er|es)?|celebrity|lifestyle|mode|rezept|filmstar|unterhaltung|lotto|sport(?:ergebnis)?|fußballergebnis|fussballergebnis|produktwerbung|gewinnspiel)\b/i;
+const TECHNOLOGY_ROUTINE = /\b(?:hands-on|kaufberatung|bestenliste|preisvergleich|rabatt|deal|gutschein|smartphone[- ]?test|laptop[- ]?test|produkttest|gaming|videospiel|spielkonsole|firmware[- ]?update|app[- ]?update|patchday|neue\s+version|jetzt\s+(?:erhältlich|erhaeltlich|kaufen))\b/i;
+const TECHNOLOGY_SYSTEMIC = /\b(?:cyberangriff|hackerangriff|datenleck|data breach|zero[- ]day|aktiv\s+ausgenutzt|actively exploited|kritische\s+infrastruktur|versorgung|plattformregulierung|digital markets act|digital services act|ai act|kartell|wettbewerbsbehörde|wettbewerbsbehoerde|massenentlassung|stellenabbau|chipkrise|lieferkette|milliard|grundrecht|datenschutz|überwachung|ueberwachung)\b/i;
 const STATUS_RULES = [
   ["evaluiert", /\b(evaluation|evaluiert|wirkungsbericht|abschlussbericht)\w*/i],
   ["erste Daten", /\b(erste daten|statistik|zahlen|messung|monitoringbericht)\w*/i],
@@ -146,6 +150,13 @@ export function canonicalizeUrl(raw, base) {
     return "";
   }
   if (url.protocol !== "https:" && url.protocol !== "http:") return "";
+  // Some established RSS feeds still emit legacy http links although their
+  // own public site and feed are HTTPS. Upgrade only the exact same host; do
+  // not rewrite third-party or cross-publisher links.
+  try {
+    const baseUrl = base ? new URL(base) : null;
+    if (url.protocol === "http:" && baseUrl?.protocol === "https:" && url.hostname.toLowerCase() === baseUrl.hostname.toLowerCase()) url.protocol = "https:";
+  } catch { /* Base is optional; validation still handles the parsed URL. */ }
   url.hash = "";
   url.username = "";
   url.password = "";
@@ -507,6 +518,10 @@ export function classifyItem(item, source = {}) {
     score -= score >= 52 ? 10 : 32;
     drivers.push("standardmäßig geringe Relevanz");
   }
+  if (source.selection_profile === "systemic_technology" && TECHNOLOGY_ROUTINE.test(originalText) && !TECHNOLOGY_SYSTEMIC.test(originalText)) {
+    score -= score >= 52 ? 8 : 28;
+    drivers.push("technische Produkt- oder Routinemeldung ohne belegten Systembezug");
+  }
   const newsValueSignals = NEWS_VALUE_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
   const contextFormats = CONTEXT_FORMAT_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
   const topics = TOPIC_RULES.filter(([, pattern]) => pattern.test(text)).map(([topic]) => topic);
@@ -725,6 +740,7 @@ export function buildAnalysisPrompt(stories) {
     })),
     woek_preanalysis: story.preanalysis,
     previous_quality_errors: story.existing_story?.pending_update?.quality_errors || story.existing_story?.quality_errors || [],
+    previous_quality_retry_count: Number(story.existing_story?.pending_update?.quality_retry_count ?? story.existing_story?.quality_retry_count ?? 0),
     evidence_groups: evidenceGroups(story.sources),
     verification_started_at: story.verification_started_at || null,
     currentness: story.currentness || null,

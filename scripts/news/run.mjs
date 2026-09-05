@@ -32,11 +32,16 @@ import { IMAGE_CONFIG } from "./title-image/policy.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint } from "./evidence-packets.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
 import { reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
+import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSourceFunnel } from "./source-funnel.mjs";
+import { sourceCoverageDegraded } from "./check-run-health.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
 const RELEVANCE_BACKFILL_DAYS = 7;
 const MAX_QUALITY_RETRIES = 3;
+const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE"]);
+const CAPACITY_HOLD_REASONS = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
+const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
 const RETRYABLE_QUALITY_ERRORS = [
   /^AI_ANALYSIS_MISSING$/,
   /^AI_REQUIRED_STRING:/,
@@ -212,7 +217,10 @@ function createCandidate(cluster, now, reassessment = false, fresh = false) {
 function pendingRecord(candidate, reason, now, qualityErrors = []) {
   const existing = candidate.existing_story;
   const previousQualityRetries = Number(existing?.pending_update?.quality_retry_count ?? existing?.quality_retry_count ?? 0);
-  const qualityRetryCount = previousQualityRetries + (reason === "QUALITY_GATE_FAILED" ? 1 : 0);
+  const retryableOutput = reason === "QUALITY_GATE_FAILED" || reason === "AI_OUTPUT_INVALID";
+  const qualityRetryCount = previousQualityRetries + (retryableOutput ? 1 : 0);
+  const retryDelayMinutes = qualityRetryCount <= 1 ? 15 : qualityRetryCount === 2 ? 30 : qualityRetryCount === 3 ? 60 : Math.min(720, 180 * (2 ** Math.min(2, qualityRetryCount - 4)));
+  const qualityRetryAfter = retryableOutput ? new Date(Date.parse(now) + retryDelayMinutes * 60000).toISOString() : null;
   if (existing?.published) {
     return {
       ...existing,
@@ -223,6 +231,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
         reason,
         quality_errors: qualityErrors,
         quality_retry_count: qualityRetryCount,
+        quality_retry_after: qualityRetryAfter,
         reassessment: Boolean(candidate.reassessment),
         fresh: Boolean(candidate.fresh),
         consolidation: Boolean(existing.pending_update?.consolidation),
@@ -248,6 +257,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     analysis_status: "automatische Veröffentlichung zurückgestellt",
     quality_errors: qualityErrors,
     quality_retry_count: qualityRetryCount,
+    quality_retry_after: qualityRetryAfter,
     reassessment: Boolean(candidate.reassessment),
     fresh: Boolean(candidate.fresh),
     pending_reason: reason,
@@ -304,8 +314,11 @@ function retiredRecord(candidate, now, qualityErrors) {
   };
 }
 
-export function shouldRetryQualityGate(reason, qualityErrors, retryCount = 0) {
-  if (reason !== "QUALITY_GATE_FAILED" || Number(retryCount || 0) >= MAX_QUALITY_RETRIES || !Array.isArray(qualityErrors) || !qualityErrors.length) return false;
+export function shouldRetryQualityGate(reason, qualityErrors, retryCount = 0, retryAfter = null, now = null) {
+  if (!["QUALITY_GATE_FAILED", "AI_OUTPUT_INVALID"].includes(reason) || !Array.isArray(qualityErrors) || !qualityErrors.length) return false;
+  if (retryAfter && now && Date.parse(retryAfter) > Date.parse(now)) return false;
+  if (Number(retryCount || 0) >= MAX_QUALITY_RETRIES && !retryAfter) return false;
+  if (reason === "AI_OUTPUT_INVALID") return qualityErrors.every((error) => OUTPUT_FORMAT_ERRORS.has(error));
   const hasStructuralError = qualityErrors.some((error) => RETRYABLE_QUALITY_ERRORS.some((pattern) => pattern.test(error)));
   return hasStructuralError && qualityErrors.every((error) => (
     RETRYABLE_QUALITY_ERRORS.some((pattern) => pattern.test(error)) || RETRY_COMPANION_ERRORS.has(error)
@@ -448,9 +461,29 @@ export function aiRequestsInWindow(usage, now, windowMinutes = 60) {
 }
 
 export function partitionAiQueue(eligible, stage, maxStories) {
-  const selected = stage.stage >= 3 ? [] : eligible
-    .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold)
-    .slice(0, Math.max(0, maxStories));
+  const allowed = stage.stage >= 3 ? [] : eligible
+    .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold);
+  const limit = Math.max(0, maxStories);
+  let selected = allowed.slice(0, limit);
+  // With the normal 12-slot run, reserve a quarter for older retryable work.
+  // Fresh material keeps the majority, but a continuous news stream can no
+  // longer starve the durable queue indefinitely.
+  if (limit >= 4 && allowed.length > limit) {
+    const queued = allowed.filter((candidate) => !candidate.fresh && candidate.existing_story)
+      .sort((left, right) => {
+        const leftReason = left.existing_story?.pending_update?.reason || left.existing_story?.pending_reason;
+        const rightReason = right.existing_story?.pending_update?.reason || right.existing_story?.pending_reason;
+        const leftTechnical = TECHNICAL_HOLD_REASONS.has(leftReason) || leftReason === "QUALITY_GATE_FAILED";
+        const rightTechnical = TECHNICAL_HOLD_REASONS.has(rightReason) || rightReason === "QUALITY_GATE_FAILED";
+        return Number(rightTechnical) - Number(leftTechnical)
+          || Date.parse(left.existing_story?.pending_update?.detected_at || left.existing_story?.updated_at || left.first_seen || 0)
+            - Date.parse(right.existing_story?.pending_update?.detected_at || right.existing_story?.updated_at || right.first_seen || 0);
+      });
+    const reserve = Math.min(queued.length, Math.max(1, Math.floor(limit / 4)));
+    const reserved = queued.slice(0, reserve);
+    const reservedIds = new Set(reserved.map((candidate) => candidate.story_id));
+    selected = [...allowed.filter((candidate) => !reservedIds.has(candidate.story_id)).slice(0, limit - reserve), ...reserved];
+  }
   const selectedIds = new Set(selected.map((candidate) => candidate.story_id));
   return { selected, deferred: eligible.filter((candidate) => !selectedIds.has(candidate.story_id)) };
 }
@@ -462,6 +495,49 @@ export function retainUsageHistory(runs, now) {
     ...runs.filter((run) => !String(run.started_at).startsWith(month)).slice(-400),
     ...runs.filter((run) => String(run.started_at).startsWith(month)),
   ];
+}
+
+export function aiProviderCoverageDegraded(report = {}) {
+  const failures = Math.max(0, Number(report.ai_provider_failures || 0));
+  const successes = Math.max(0, Number(report.ai_provider_successes || 0));
+  if (!failures) return false;
+  if (!successes) return true;
+  return failures >= 3 || failures / (failures + successes) >= 0.2;
+}
+
+export function queueSnapshot(stories = [], now = new Date().toISOString(), before = 0) {
+  const rows = stories.filter((story) => !isMerged(story) && ((!story.published && story.listed !== false) || story.pending_update));
+  const snapshot = { before: Number(before || 0), after: rows.length, retryable: 0, capacity: 0, technical: 0, editorial: 0, oldest_minutes: 0, oldest_technical_minutes: 0, by_reason: {} };
+  for (const story of rows) {
+    const pending = story.pending_update || story;
+    const reason = pending.reason || story.pending_reason || "UNCLASSIFIED";
+    const errors = pending.quality_errors || story.quality_errors || [];
+    const retryCount = pending.quality_retry_count ?? story.quality_retry_count ?? 0;
+    const retryAfter = pending.quality_retry_after || story.quality_retry_after || null;
+    const queuedAt = Date.parse(pending.detected_at || story.updated_at || story.first_seen || now);
+    const ageMinutes = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / 60000) : 0;
+    snapshot.oldest_minutes = Math.max(snapshot.oldest_minutes, ageMinutes);
+    snapshot.by_reason[reason] = Number(snapshot.by_reason[reason] || 0) + 1;
+    const structuralRetry = shouldRetryQualityGate(reason, errors, retryCount, retryAfter, retryAfter || now);
+    if (CAPACITY_HOLD_REASONS.has(reason)) {
+      snapshot.capacity += 1;
+      snapshot.retryable += 1;
+    } else if (TECHNICAL_HOLD_REASONS.has(reason) || structuralRetry) {
+      snapshot.technical += 1;
+      snapshot.retryable += 1;
+      snapshot.oldest_technical_minutes = Math.max(snapshot.oldest_technical_minutes, ageMinutes);
+    } else {
+      snapshot.editorial += 1;
+    }
+  }
+  snapshot.status = snapshot.technical && snapshot.oldest_technical_minutes >= 90
+    ? "technical_delay"
+    : snapshot.retryable
+      ? "draining"
+      : snapshot.editorial
+        ? "editorial_holds"
+        : "clear";
+  return snapshot;
 }
 
 function sanitizeError(error) {
@@ -508,6 +584,8 @@ export async function runWirkungsticker(options = {}) {
   const enabledSources = registry.sources.filter((source) => source.enabled && sourceAccess(source).allowed);
   const dueSources = enabledSources.filter((source) => sourceDue(source, state.source_status[source.source_id], now));
   const previousSourceStatus = structuredClone(state.source_status);
+  const pendingStoryCountBefore = (state.pending_story_ids || []).length;
+  const sourceFunnel = createSourceFunnel(enabledSources, dueSources);
   const report = {
     schema_version: "1.2",
     status: "running",
@@ -521,6 +599,7 @@ export async function runWirkungsticker(options = {}) {
     feed_entries_future_dated: 0,
     story_clusters: 0,
     locally_rejected: 0,
+    eligible_stories: 0,
     ai_stories: 0,
     ai_calls: 0,
     reviews_reused: 0,
@@ -541,6 +620,11 @@ export async function runWirkungsticker(options = {}) {
     source_failures: 0,
     source_retry_attempts: 0,
     source_errors: [],
+    ai_provider_successes: 0,
+    ai_provider_failures: 0,
+    ai_provider_errors: [],
+    ai_output_invalid: 0,
+    budget_blocked: false,
     quality_holds: [],
     article_excerpts_fetched: 0,
     article_excerpt_failures: 0,
@@ -559,6 +643,11 @@ export async function runWirkungsticker(options = {}) {
     sources_scheduled: dueSources.length,
     sources_not_due: enabledSources.length - dueSources.length,
     sources_not_modified: 0,
+    pending_story_count_before: pendingStoryCountBefore,
+    source_funnel: [],
+    queue: null,
+    operational_status: "running",
+    editorial_status: "running",
   };
 
   const fetchResults = await mapLimit(dueSources, Number(process.env.WOEK_NEWS_FETCH_CONCURRENCY || 3), async (source) => {
@@ -583,11 +672,14 @@ export async function runWirkungsticker(options = {}) {
     const previousStatus = state.source_status[source.source_id] || {};
     if (result.status === "rejected") {
       const error = sanitizeError(result.reason);
+      bumpSourceFunnel(sourceFunnel, source.source_id, "fetch_failures");
       report.source_failures += 1;
       report.source_errors.push({ source_id: source.source_id, error });
       state.source_status[source.source_id] = { ...previousStatus, last_attempt: now, attempts: Number(previousStatus.attempts || 0) + 1, failures: Number(previousStatus.failures || 0) + 1, consecutive_failures: Number(previousStatus.consecutive_failures || 0) + 1, last_error_at: now, last_error: error, last_success: previousStatus.last_success || null };
       continue;
     }
+    bumpSourceFunnel(sourceFunnel, source.source_id, "fetch_successes");
+    bumpSourceFunnel(sourceFunnel, source.source_id, "feed_items", result.value.items.length);
     report.source_successes += 1;
     if (result.value.fetched.not_modified) report.sources_not_modified += 1;
     report.source_retry_attempts += Math.max(0, Number(result.value.fetchAttempts || 1) - 1);
@@ -622,6 +714,7 @@ export async function runWirkungsticker(options = {}) {
     const published = Date.parse(item.published_at || 0);
     if (published > nowDate.getTime() + futureToleranceMs) {
       report.feed_entries_future_dated += 1;
+      bumpSourceFunnel(sourceFunnel, item.source_id, "future_dated_items");
       continue;
     }
     const backfillCandidate = needsRelevanceBackfill && (!published || published >= backfillCutoff);
@@ -631,14 +724,17 @@ export async function runWirkungsticker(options = {}) {
       if (previous) report.feed_entries_backfilled += 1;
       else {
         report.feed_entries_new += 1;
+        bumpSourceFunnel(sourceFunnel, item.source_id, "new_items");
         freshItemIds.add(item.item_id);
       }
     } else if (previous.content_hash !== item.content_hash) {
       changedItems.push(item);
       report.feed_entries_updated += 1;
+      bumpSourceFunnel(sourceFunnel, item.source_id, "updated_items");
       freshItemIds.add(item.item_id);
     } else {
       report.feed_entries_deduplicated += 1;
+      bumpSourceFunnel(sourceFunnel, item.source_id, "unchanged_items");
     }
     state.seen_items[item.item_id] = {
       source_id: item.source_id,
@@ -679,7 +775,8 @@ export async function runWirkungsticker(options = {}) {
       const reason = story.pending_update?.reason || story.pending_reason;
       const qualityErrors = story.pending_update?.quality_errors || story.quality_errors || [];
       const retryCount = story.pending_update?.quality_retry_count ?? story.quality_retry_count ?? 0;
-      return dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id) || retryableReasons.has(reason) || shouldRetryQualityGate(reason, qualityErrors, retryCount);
+      const retryAfter = story.pending_update?.quality_retry_after || story.quality_retry_after || null;
+      return dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id) || retryableReasons.has(reason) || shouldRetryQualityGate(reason, qualityErrors, retryCount, retryAfter, now);
     })
     .filter((story) => (story.pending_update?.sources || story.review_checkpoint?.sources || story.sources || []).some((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs))
     .map((story) => {
@@ -707,6 +804,8 @@ export async function runWirkungsticker(options = {}) {
       candidate.content_hash = story.pending_update?.content_hash || storyContentHash(candidate);
       return candidate;
     });
+  for (const candidate of freshCandidates) bumpCandidateFunnel(sourceFunnel, candidate, "story_candidates");
+  for (const candidate of retryCandidates) bumpCandidateFunnel(sourceFunnel, candidate, "queue_retries");
   const clusters = attachRelatedTickerHistory([...freshCandidates, ...retryCandidates], storyStore.stories);
   for (const candidate of clusters) {
     candidate.followup_due = dueFollowupIds.has(candidate.story_id);
@@ -740,6 +839,9 @@ export async function runWirkungsticker(options = {}) {
     .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= 30)
     .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
   report.locally_rejected = clusters.length - eligible.length;
+  report.eligible_stories = eligible.length;
+  for (const candidate of eligible) bumpCandidateFunnel(sourceFunnel, candidate, "eligible_stories");
+  for (const candidate of clusters.filter((candidate) => !eligible.includes(candidate))) bumpCandidateFunnel(sourceFunnel, candidate, "local_rejections");
   newsroom.decisions ||= [];
   for (const candidate of clusters.filter((candidate) => !eligible.includes(candidate))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
   const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
@@ -747,6 +849,7 @@ export async function runWirkungsticker(options = {}) {
   // next eligible story or be mislabeled as an outage of the AI provider.
   const ready = eligible.filter(candidate => {
     if (candidate.source_integrity?.status !== "verified") {
+      bumpCandidateFunnel(sourceFunnel, candidate, "source_integrity_holds");
       byId.set(candidate.story_id, pendingRecord(candidate, "SOURCE_INTEGRITY_OPEN", now, candidate.source_integrity?.issues?.map((issue) => issue.code) || ["SOURCE_INTEGRITY_OPEN"]));
       report.source_integrity_holds.push({ story_id: candidate.story_id, issues: candidate.source_integrity?.issues || [] });
       newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "source_integrity_hold", issues: candidate.source_integrity?.issues || [] });
@@ -780,6 +883,7 @@ export async function runWirkungsticker(options = {}) {
   report.ai_calls_in_last_hour = aiCallsInLastHour;
   report.ai_calls_available_this_run = remainingAiCallsThisHour;
   const { selected, deferred } = partitionAiQueue(ready, stage, maxAiStories);
+  for (const candidate of selected) bumpCandidateFunnel(sourceFunnel, candidate, "ai_selected");
   const aiBatchSize = Math.max(1, Math.min(maxAiStories || 1, Number(process.env.WOEK_NEWS_AI_BATCH_SIZE || 2)));
   report.ai_stories = selected.length;
   report.ai_batch_size = aiBatchSize;
@@ -787,6 +891,7 @@ export async function runWirkungsticker(options = {}) {
 
   const deferredReason = stage.stage >= 3 ? "AI_BUDGET_BLOCKED" : remainingAiCallsThisHour === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
   for (const candidate of deferred) {
+    bumpCandidateFunnel(sourceFunnel, candidate, "capacity_deferred");
     byId.set(candidate.story_id, pendingRecord(candidate, deferredReason, now));
     report.quality_holds.push({ story_id: candidate.story_id, reason: deferredReason });
   }
@@ -844,6 +949,7 @@ export async function runWirkungsticker(options = {}) {
           timeoutMs: Number(process.env.WOEK_NEWS_AI_TIMEOUT_MS || 120000),
           attempts: Number(process.env.WOEK_NEWS_AI_ATTEMPTS_PER_STORY || 1),
         });
+        report.ai_provider_successes += 1;
         report.provider ||= aiResult.provider;
         report.model ||= aiResult.model;
         report.ai_calls += Number(aiResult.request_attempts || 1);
@@ -874,6 +980,7 @@ export async function runWirkungsticker(options = {}) {
           newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
             if (candidate.existing_story?.published && !candidate.reassessment && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error))) {
+              bumpCandidateFunnel(sourceFunnel, candidate, "editorial_rejections");
               const { pending_update: _pendingUpdate, ...preserved } = candidate.existing_story;
               // Cache only a well-formed editorial no-update decision, never a
               // technical failure or an insufficient-evidence retry.
@@ -889,12 +996,15 @@ export async function runWirkungsticker(options = {}) {
               continue;
             }
             if (shouldRetireAfterReassessment(candidate, errors)) {
+              bumpCandidateFunnel(sourceFunnel, candidate, "editorial_rejections");
               byId.set(candidate.story_id, retiredRecord(candidate, now, errors));
               report.retired_stories += 1;
               report.quality_holds.push({ story_id: candidate.story_id, reason: "FILTER_REASSESSMENT_NOT_MATERIAL", errors });
               continue;
             }
             byId.set(candidate.story_id, pendingRecord(candidate, "QUALITY_GATE_FAILED", now, errors));
+            if (shouldRetryQualityGate("QUALITY_GATE_FAILED", errors, Number(candidate.existing_story?.pending_update?.quality_retry_count ?? candidate.existing_story?.quality_retry_count ?? 0))) bumpCandidateFunnel(sourceFunnel, candidate, "technical_retries");
+            else bumpCandidateFunnel(sourceFunnel, candidate, "editorial_rejections");
             report.quality_holds.push({ story_id: candidate.story_id, reason: "QUALITY_GATE_FAILED", errors });
             continue;
           }
@@ -904,6 +1014,7 @@ export async function runWirkungsticker(options = {}) {
           changedStoryIds.add(candidate.story_id);
           report.published_stories += wasPublished ? 0 : 1;
           report.updated_stories += wasPublished ? 1 : 0;
+          bumpCandidateFunnel(sourceFunnel, candidate, wasPublished ? "updated_stories" : "published_stories");
           report.reactivated_stories += wasPublished && !wasListed ? 1 : 0;
         }
       } catch (error) {
@@ -913,18 +1024,33 @@ export async function runWirkungsticker(options = {}) {
         const reason = sanitizeError(error);
         if (reason === "AI_INPUT_TOO_LARGE" && error?.requestAttempts === 0) {
           for (const candidate of batch) {
+            bumpCandidateFunnel(sourceFunnel, candidate, "technical_retries");
             byId.set(candidate.story_id, { ...pendingRecord(candidate, "AI_INPUT_TOO_LARGE", now, [reason]), review_checkpoint: reviewCheckpoint(candidate, now, "input_too_large") });
             report.input_holds.push({ story_id: candidate.story_id, reason, input_chars: error.inputChars, input_budget: error.inputBudget });
           }
           continue;
         }
-        report.ai_error = reason;
-        report.failed_batch_offset = offset;
+        if (OUTPUT_FORMAT_ERRORS.has(reason)) {
+          report.ai_output_invalid += batch.length;
+          for (const candidate of batch) {
+            bumpCandidateFunnel(sourceFunnel, candidate, "technical_retries");
+            byId.set(candidate.story_id, pendingRecord(candidate, "AI_OUTPUT_INVALID", now, [reason]));
+            report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_OUTPUT_INVALID", errors: [reason] });
+          }
+          continue;
+        }
         const budgetBlocked = reason === 'AI_BUDGET_EXHAUSTED';
         const rateLimited = budgetBlocked || /AI_PROVIDER_ERROR:429/.test(reason);
         const deferred = rateLimited ? selected.slice(offset) : batch;
+        if (budgetBlocked) report.budget_blocked = true;
+        else {
+          report.ai_provider_failures += 1;
+          report.ai_provider_errors.push({ batch_offset: offset, error: reason });
+          report.failed_batch_offset = offset;
+        }
         for (const candidate of deferred) {
           const holdReason = budgetBlocked ? 'AI_BUDGET_BLOCKED' : 'AI_PROVIDER_UNAVAILABLE';
+          bumpCandidateFunnel(sourceFunnel, candidate, budgetBlocked ? "capacity_deferred" : "technical_retries");
           byId.set(candidate.story_id, pendingRecord(candidate, holdReason, now, [reason]));
           report.quality_holds.push({ story_id: candidate.story_id, reason: holdReason });
         }
@@ -972,7 +1098,8 @@ export async function runWirkungsticker(options = {}) {
   report.completed_at = new Date().toISOString();
   const currentItems = allItems.filter((item) => Date.parse(item.published_at || 0) <= nowDate.getTime() + futureToleranceMs);
   report.latest_source_timestamp = latestSourceDate(currentItems) ? new Date(latestSourceDate(currentItems)).toISOString() : null;
-  report.status = report.ai_error || report.input_holds.length || report.source_integrity_holds.length || report.source_failures > 0 ? "degraded" : "ok";
+  report.ai_provider_degraded = aiProviderCoverageDegraded(report);
+  if (report.ai_provider_degraded) report.ai_error = report.ai_provider_errors.at(-1)?.error || "AI_PROVIDER_DEGRADED";
   report.ai_calls_remaining_this_hour = Math.max(0, maxAiCallsPerHour - aiCallsInLastHour - report.ai_calls);
   report.public_changed = [
     report.published_stories,
@@ -996,8 +1123,14 @@ export async function runWirkungsticker(options = {}) {
   }
   state.pending_story_ids = [...byId.values()].filter((story) => !isMerged(story) && ((!story.published && story.listed !== false) || story.pending_update)).map((story) => story.story_id);
   report.pending_story_count = state.pending_story_ids.length;
+  report.queue = queueSnapshot([...byId.values()], now, pendingStoryCountBefore);
+  report.queue_status = report.queue.status;
+  report.source_funnel = finalizeSourceFunnel(sourceFunnel);
   report.source_health = registry.sources.map((source) => sourceHealth(source, state, now));
-  if (report.source_health.some((source) => ["disturbed", "stale"].includes(source.status))) report.status = "degraded";
+  const sourceHealthDegraded = report.source_health.some((source) => ["disturbed", "stale"].includes(source.status));
+  report.operational_status = report.ai_provider_degraded || sourceCoverageDegraded(report) || sourceHealthDegraded ? "degraded" : "ok";
+  report.editorial_status = report.queue.editorial || report.source_integrity_holds.length ? "holds" : "clear";
+  report.status = report.operational_status;
   if (report.status === "ok") state.last_successful_run = now;
   report.coverage = coverageReport(enabledSources, [...byId.values()]);
   report.freshness = [...byId.values()].filter((story) => story.listed !== false).map((story) => ({ story_id: story.story_id, published: Boolean(story.published), ...freshnessFor(story, now) }));
@@ -1022,10 +1155,12 @@ export async function runWirkungsticker(options = {}) {
     counts: {
       feed_entries_fetched: report.feed_entries_fetched,
       feed_entries_new: report.feed_entries_new,
+      feed_entries_updated: report.feed_entries_updated,
       feed_entries_backfilled: report.feed_entries_backfilled,
       feed_entries_deduplicated: report.feed_entries_deduplicated,
       story_clusters: report.story_clusters,
       locally_rejected: report.locally_rejected,
+      eligible_stories: report.eligible_stories,
       ai_stories: report.ai_stories,
       ai_requests: report.ai_calls,
       reviews_reused: report.reviews_reused,
@@ -1053,6 +1188,8 @@ export async function runWirkungsticker(options = {}) {
     } : null,
     source_failures: report.source_failures,
     quality_holds: report.quality_holds.length,
+    queue: report.queue,
+    source_funnel: report.source_funnel,
   });
   usage.runs = retainUsageHistory(usage.runs, now);
 

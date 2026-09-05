@@ -4,7 +4,7 @@
   "policy": {
     "respect_robots": true,
     "max_items_per_source": 60,
-    "copying_rule": "Kostenlose öffentliche Recherche. Keine Abos, bezahlten Nachrichten-APIs, Login- oder Paywall-Umgehung. Quellen mit ungeklärtem Zugang bleiben deaktiviert. Metadaten sind Recherchehinweise, kein Volltext und kein unabhängiger Faktennachweis. Eigene journalistische Synthese statt Artikelnacherzählung; keine fremden Bilder oder Volltexte speichern."
+    "copying_rule": "Kostenlose öffentliche Recherche. Keine Abos, bezahlten Nachrichten-APIs, Login- oder Paywall-Umgehung. Die nichtkommerzielle und werbefreie Ausrichtung hebt Nutzungsbedingungen oder private-only-Beschränkungen nicht auf. Quellen mit ungeklärtem Zugang bleiben deaktiviert. Metadaten sind Recherchehinweise, kein Volltext und kein unabhängiger Faktennachweis. Eigene journalistische Synthese statt Artikelnacherzählung; keine fremden Bilder oder Volltexte speichern."
   },
   "public_article_sources": ["dlf-nachrichten", "dlf-wirtschaft", "dlf-wissen", "dlf-gesellschaft", "zdfheute-nachrichten", "ndr-info", "wdr-nachrichten", "mdr-nachrichten", "swr-aktuell", "rbb24-nachrichten", "hr-hessenschau", "dw-news", "taz-aktuell", "klimareporter-news", "lto-news", "jurafuchs-presse"],
   "source_overrides": {
@@ -142,6 +142,30 @@
       "why_relevant": "Unternehmensentscheidungen, Recherchen und substanzielle Interviews können Arbeitsplätze, Investitionen und Marktstrukturen betreffen.",
       "editorial_context": "Keine Rekonstruktion kostenpflichtiger Exklusivartikel. Unternehmensankündigungen und unabhängig geprüfte Tatsachen unterscheiden.",
       "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://gruppe.spiegel.de/syndication/haeufige-fragen" }
+    },
+    {
+      "source_id": "heise-wirtschaft", "publisher_id": "heise", "name": "heise online – Wirtschaft", "url": "https://www.heise.de/thema/Wirtschaft", "feed_url": "https://www.heise.de/rss/heise-Rubrik-Wirtschaft-atom.xml", "source_type": "media_rss", "publisher_kind": "specialist_journalism", "research_lane": "media", "source_role": "journalistic_report", "primary_source": false, "enabled": true, "topic": "Wirtschaft", "language": "de", "geography": ["DE", "international"], "frequency_class": "high_frequency", "priority": 78, "selection_profile": "systemic_technology",
+      "why_relevant": "Wirtschaftliche Folgen von Digitalisierung, Plattformen, Halbleitern, KI, Regulierung und technischer Infrastruktur werden fachjournalistisch beobachtet.",
+      "editorial_context": "Produkttests, Kaufberatung, Deals und routinemäßige Versionsmeldungen werden lokal herausgefiltert. Relevant sind systemische Wirtschafts-, Arbeitsmarkt-, Wettbewerbs- und Infrastrukturfolgen.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.heise.de/news-extern/news.html", "note": "Öffentlich angebotener RSS-/Atom-Recherchefeed. Nur Überschrift, Teaser und Original-Link; keine Bilder oder Artikelkopien." }
+    },
+    {
+      "source_id": "heise-netzpolitik", "publisher_id": "heise", "name": "heise online – Netzpolitik", "url": "https://www.heise.de/thema/Netzpolitik", "feed_url": "https://www.heise.de/rss/heise-Rubrik-Netzpolitik-atom.xml", "source_type": "media_rss", "publisher_kind": "specialist_journalism", "research_lane": "blindspot", "source_role": "journalistic_report", "primary_source": false, "enabled": true, "topic": "Digitalisierung", "language": "de", "geography": ["DE", "EU", "international"], "frequency_class": "high_frequency", "priority": 84, "selection_profile": "systemic_technology",
+      "why_relevant": "Netzpolitik, digitale Grundrechte, Plattformregulierung, Überwachung und KI-Governance können Mensch, Wirtschaft und Demokratie zugleich betreffen.",
+      "editorial_context": "Nur materiell relevante politische, rechtliche oder gesellschaftliche Entwicklungen werden weitergeleitet; reine Produkt- und Servicemeldungen bleiben vor der KI außen vor.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.heise.de/news-extern/news.html", "note": "Öffentlich angebotener RSS-/Atom-Recherchefeed. Nur Überschrift, Teaser und Original-Link; keine Bilder oder Artikelkopien." }
+    },
+    {
+      "source_id": "heise-security", "publisher_id": "heise", "name": "heise Security", "url": "https://www.heise.de/security/", "feed_url": "https://www.heise.de/security/feed.xml", "source_type": "media_rss", "publisher_kind": "specialist_journalism", "research_lane": "blindspot", "source_role": "journalistic_report", "primary_source": false, "enabled": true, "topic": "Digitalisierung", "language": "de", "geography": ["DE", "international"], "frequency_class": "high_frequency", "priority": 86, "selection_profile": "systemic_technology",
+      "why_relevant": "Cyberangriffe, Datenlecks, aktiv ausgenutzte Schwachstellen und Risiken kritischer Infrastruktur besitzen häufig hohe Resilienz- und Demokratiebezüge.",
+      "editorial_context": "Routinemäßige Patch-, Produkt- und Warnmeldungen ohne breite Betroffenheit werden lokal verworfen. Täter-, Schadens- und Zurechnungsangaben benötigen belastbare Bestätigung.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.heise.de/news-extern/news.html", "note": "Öffentlich angebotener RSS-Recherchefeed. Nur Überschrift, Teaser und Original-Link; keine Bilder oder Artikelkopien." }
+    },
+    {
+      "source_id": "telepolis-aktuell", "publisher_id": "telepolis", "name": "Telepolis", "url": "https://www.telepolis.de/", "feed_url": "https://www.telepolis.de/feed.xml", "source_type": "media_rss", "publisher_kind": "specialist_journalism", "research_lane": "blindspot", "source_role": "context_source", "primary_source": false, "enabled": true, "topic": "Gesellschaft", "language": "de", "geography": ["DE", "international"], "frequency_class": "high_frequency", "priority": 60, "selection_profile": "analysis_discovery", "requires_corroboration": true,
+      "why_relevant": "Analysen und Debattenbeiträge können auf gesellschaftliche, geopolitische und technologische Wirkungszusammenhänge hinweisen, die in reinen Nachrichtenfeeds unterbelichtet bleiben.",
+      "editorial_context": "Nachricht, Analyse, Kommentar und These strikt unterscheiden. Telepolis dient als Recherchehinweis und Kontextquelle; zentrale Tatsachen werden an Primärquellen oder unabhängigen Berichten bestätigt.",
+      "access": { "status": "public", "cost_usd": 0, "article": "metadata_only", "terms_url": "https://www.heise.de/news-extern/news.html", "note": "Öffentlich angebotener RSS-Recherchefeed. Nur Metadaten und Original-Link; keine Bilder oder Artikelkopien." }
     },
     {
       "source_id": "zdfheute-nachrichten", "publisher_id": "zdfheute", "name": "ZDFheute", "url": "https://www.zdfheute.de/", "feed_url": "https://www.zdfheute.de/rss/zdf/nachrichten", "source_type": "media_rss", "publisher_kind": "public_broadcasting", "research_lane": "media", "primary_source": false, "enabled": true, "topic": "Politik", "language": "de", "geography": ["DE", "international"],
