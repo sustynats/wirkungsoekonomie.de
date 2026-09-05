@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { normalizePublicPunctuation } from "./public-punctuation.mjs";
 
 const repoRoot = process.cwd();
 const forbidden = String.fromCharCode(0x2014);
@@ -83,8 +84,10 @@ function scan(filePath) {
   if (!stat.isFile() || !extensions.has(path.extname(filePath))) return;
   const text = fs.readFileSync(filePath, "utf8");
   if (!text.includes(forbidden)) return;
+  const normalized = normalizePublicPunctuation(text, path.extname(filePath));
+  if (normalized === text) return;
   if (shouldFix) {
-    fs.writeFileSync(filePath, text.replaceAll(forbidden, "-"));
+    fs.writeFileSync(filePath, normalized);
     fixedFiles += 1;
   }
   const rel = path.relative(repoRoot, filePath);
@@ -110,4 +113,4 @@ if (fixedFiles) {
   console.log(`Normalized U+2014 to '-' in ${fixedFiles} files.`);
 }
 
-console.log("No U+2014 characters found in public/deployed text.");
+console.log("Public prose punctuation checked; code, attributes and data preserved.");

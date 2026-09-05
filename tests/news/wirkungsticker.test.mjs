@@ -488,6 +488,7 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
 test("Visual-Sanitizer entfernt unbelegte Kennzahlen vor dem Qualitätsgate und protokolliert sie", () => {
   const story = candidate();
   story.sources[0].article_excerpt = "Der Zuschuss beträgt 5,5 Milliarden Euro.";
+  story.claims[0].claim += " Der Zuschuss beträgt 5,5 Milliarden Euro.";
   const analysis = validAnalysis();
   analysis.source_summary = analysis.source_summary.replace("Weitere Einzelheiten fehlen.", "Der Zuschuss beträgt 5,5 Milliarden Euro.");
   analysis.visuals = {

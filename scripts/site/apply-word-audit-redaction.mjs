@@ -295,7 +295,8 @@ if (exists("woek-ki/index.html")) {
 if (exists("verstehen/index.html")) {
   const rel = "verstehen/index.html";
   let html = read(rel);
-  html = insertAfterHero(html, "<!-- word-audit-2-0:start:verstehen-sequence -->", verstehenSequence());
+  // The newer SDG explainer already contains the apple example.
+  if (!html.includes("sdg-resilience-verstehen")) html = insertAfterHero(html, "<!-- word-audit-2-0:start:verstehen-sequence -->", verstehenSequence());
   if (writeIfChanged(rel, html)) touched += 1;
 }
 

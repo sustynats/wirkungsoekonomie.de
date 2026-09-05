@@ -194,8 +194,8 @@ function buildHub() {
     heroSection({
       kicker: "Grundlagenbereich · Verstehen",
       title: "Wirkungswissenschaften",
-      subtitle: "Der wissenschaftliche Rahmen hinter der Wirkungsökonomie.",
-      intro: "Wirkungswissenschaften untersuchen, wie Handlungen, Unterlassen, Produkte, Gesetze, Kapitalflüsse, Technologien, Sprache, Institutionen und Medien reale Zustände verändern. Im Rahmen der von Natalie Weber begründeten Wirkungsökonomie werden sie zu einem inter- und transdisziplinären Bezugsrahmen für Wirkung auf Mensch, Planet und Demokratie.",
+      subtitle: "Ein von der Wirkungsökonomie vorgeschlagener inter- und transdisziplinärer Bezugsrahmen für die Frage, wie Zustände entstehen, sich verändern, stabilisieren und rückgekoppelt werden.",
+      intro: "Wirkungswissenschaften untersuchen, wie Handlungen, Unterlassen, Produkte, Gesetze, Kapitalflüsse, Technologien, Sprache, Institutionen und Medien reale Zustände verändern. Natalie Weber schlägt vor, diese Fragen im Rahmen der Wirkungsökonomie gemeinsam auf Mensch, Planet und Demokratie zu beziehen. Der Rahmen ist konzeptionell; er ersetzt keine bestehende Fachdisziplin oder empirische Prüfung.",
       actions: `<a class="btn btn-primary" href="${base}${DOSSIER}">Dossier lesen</a> <a class="btn btn-secondary" href="${base}${JOURNAL}">Journalbeitrag lesen</a> <a class="btn btn-ghost" href="${base}wirkungswissenschaften/begriffssystem/">Zum Begriffssystem</a>`,
     }),
     subnav(base, "wirkungswissenschaften/"),
@@ -203,13 +203,13 @@ function buildHub() {
       inner: cardGrid("three", [
         { kicker: "Der Oberrahmen", title: "Wirkungswissenschaften", text: "Fragen, wie Zustände entstehen, verändert, stabilisiert oder destabilisiert werden - und wie diese Wirkung verantwortbar bewertet und rückgekoppelt werden kann.", href: `${base}wirkungswissenschaften/definition/`, link: "Definition" },
         { kicker: "Die methodische Teildisziplin", title: "Wirkungsforschung", text: "Untersucht Wirkungen, Wirkungspotenziale, Wirkmechanismen, Nebenwirkungen, Wechselwirkungen und Transformationsbeiträge empirisch, theoretisch und systemisch.", href: `${base}wirkungswissenschaften/wirkungsforschung/`, link: "Wirkungsforschung" },
-        { kicker: "Die erste Steuerungsdisziplin", title: "Wirkungsökonomie", text: "Überführt Wirkung in Preise, Steuern, Kapital, Unternehmen, Politik, Recht, Medien und demokratische Rückkopplung.", href: `${base}wirkungswissenschaften/wirkungsoekonomie/`, link: "Wirkungsökonomie" },
+        { kicker: "Wirkungsökonomie als Steuerungsdisziplin", title: "Wirkungsökonomie", text: "Überführt Wirkung in Preise, Steuern, Kapital, Unternehmen, Politik, Recht, Medien und demokratische Rückkopplung.", href: `${base}wirkungswissenschaften/wirkungsoekonomie/`, link: "Wirkungsökonomie" },
       ]) }),
     section({ soft: true, kicker: "Auf einen Blick", heading: "Drei Ebenen, eine Ordnung", inner: `        ${SVG_ROLES}` }),
-    section({ kicker: "Urheberschaft, wissenschaftlich sauber", heading: "Was Natalie Weber neu begründet",
+    section({ kicker: "Urheberschaft, wissenschaftlich sauber", heading: "Der WÖk-eigene Beitrag",
       inner: prose([
-        "Wirkung wurde auch vor der Wirkungsökonomie untersucht: in Evaluation, Wirkungsforschung, Impact Assessment, Technikfolgenabschätzung, Nachhaltigkeitswissenschaft und Transformationsforschung. Neu ist jedoch der systemische Rahmen, in dem Wirkung nicht nur Gegenstand nachträglicher Bewertung ist, sondern zur Leitkategorie gesellschaftlicher Erkenntnis, Verantwortung und Steuerung wird.",
-        "Natalie Weber begründet mit der Wirkungsökonomie einen Rahmen, in dem Wirkungsforschung, Wirkungswissenschaften und wirkungsorientierte Steuerung zusammengeführt werden. Wirkung wird dadurch nicht nur gemessen, sondern in Entscheidungs-, Preis-, Steuer-, Kapital-, Rechts-, Medien- und Demokratieprozesse rückgekoppelt.",
+        "Wirkung wurde auch vor der Wirkungsökonomie untersucht: in Evaluation, Wirkungsforschung, Impact Assessment, Technikfolgenabschätzung, Nachhaltigkeitswissenschaft und Transformationsforschung. Der WÖk-eigene Vorschlag besteht darin, diese Perspektiven in einer gemeinsamen Wirkungs- und Steuerungsarchitektur zusammenzuführen. Wirkung soll darin nicht nur nachträglich bewertet, sondern in Entscheidungen und Lernen zurückgeführt werden. Das ist eine konzeptionelle Position, keine belegte wissenschaftliche Erstmaligkeit.",
+        "Natalie Weber schlägt mit der Wirkungsökonomie vor, bestehende Wirkungsforschung und wirkungsorientierte Steuerung in einem gemeinsamen Bezugsrahmen zu verbinden. Die Zielarchitektur soll geprüfte Erkenntnisse in Entscheidungs-, Preis-, Steuer-, Kapital-, Rechts-, Medien- und Demokratieprozesse zurückführen. Ihre Tragfähigkeit bleibt fachlich und empirisch zu prüfen.",
       ]) + `
         <div class="wiwi-formula">
           <p class="card-kicker">Kurzformel</p>
@@ -240,7 +240,7 @@ ${[["begriffe/wirkung/", "Wirkung"], ["begriffe/wirkstoff/", "Wirkstoff"], ["beg
   return page({
     rel: "wirkungswissenschaften/index.html", title: "Wirkungswissenschaften",
     metaTitle: "Wirkungswissenschaften | Der wissenschaftliche Rahmen der Wirkungsökonomie",
-    description: "Wirkungswissenschaften untersuchen, wie Handlungen, Produkte, Gesetze, Kapitalflüsse, Technologien, Sprache und Institutionen reale Zustände verändern. Der von Natalie Weber im Kontext der Wirkungsökonomie begründete Rahmen verbindet Wirkungsforschung, Evaluation, Nachhaltigkeitswissenschaft und systemische Rückkopplung.",
+    description: "Wirkungswissenschaften untersuchen, wie Handlungen, Produkte, Gesetze, Kapitalflüsse, Technologien, Sprache und Institutionen reale Zustände verändern. Der von Natalie Weber im Kontext der Wirkungsökonomie vorgeschlagene Bezugsrahmen verbindet Wirkungsforschung, Evaluation, Nachhaltigkeitswissenschaft und systemische Rückkopplung.",
     section: "Verstehen", base, body,
   });
 }
@@ -393,10 +393,10 @@ ${terms.map(([s, t, d]) => `          <div class="wiwi-term"><dt><a href="${base
   }));
 
   const faqs = [
-    ["Sind Wirkungswissenschaften neu?", "Neu ist nicht, dass Wirkung untersucht wird, sondern der systemische Dachrahmen, der verstreute Ansätze zusammenführt und Wirkung zur Leitkategorie von Erkenntnis, Bewertung und Steuerung macht."],
+    ["Sind Wirkungswissenschaften neu?", "Wirkungsforschung, Evaluation und Folgenabschätzung bestehen bereits. Der WÖk-eigene Vorschlag ist ein gemeinsamer Bezugsrahmen für Erkenntnis, Bewertung und Steuerung, keine belegte Erstmaligkeitsbehauptung."],
     ["Was ist der Unterschied zwischen Wirkungsforschung und Wirkungswissenschaften?", "Wirkungsforschung ist die methodische Teildisziplin (sie untersucht, ob und wie etwas wirkt). Die Wirkungswissenschaften sind der übergreifende Rahmen, in dem Wirkung als Grundkategorie verstanden, bewertet und rückgekoppelt wird."],
     ["Hat Natalie Weber die Wirkungsforschung erfunden?", "Nein. Bestehende Wirkungsforschung, Evaluation und Impact Assessment liefern wichtige Vorarbeiten. Natalie Weber führt sie in einen eigenständigen systemischen Rahmen zusammen und erweitert sie zur voraus-, begleit- und rückkoppelnden Wirkungsforschung."],
-    ["Was ist der neue Beitrag der Wirkungsökonomie?", "Die Wirkungsökonomie ist die erste ausgearbeitete Steuerungs- und Ordnungsdisziplin dieses Rahmens: Sie überführt Wirkung in Preise, Steuern, Kapital, Recht, Medien und demokratische Rückkopplung."],
+    ["Was ist der neue Beitrag der Wirkungsökonomie?", "Die Wirkungsökonomie wird als Steuerungs- und Ordnungsdisziplin in diesem vorgeschlagenen Bezugsrahmen ausgearbeitet. Ihre Zielarchitektur soll geprüfte Erkenntnisse in Preise, Steuern, Kapital, Recht, Medien und demokratische Entscheidungen zurückführen."],
     ["Ist das eine neue Wissenschaft oder ein Ordnungsrahmen?", "Beides ist zu unterscheiden: Die Wirkungswissenschaften sind ein Wissenschafts- und Bezugsrahmen; die Wirkungsökonomie ist die daraus abgeleitete Steuerungsdisziplin."],
     ["Bewerten Wirkungswissenschaften Menschen?", "Nein. Bewertet werden Wirkungen von Handlungen, Produkten, Strukturen, Institutionen, Kapitalflüssen und Kommunikation - nicht Personen. Personenbewertung ist eine rote Linie."],
     ["Wie verhalten sich Wirkungswissenschaften zu ESG, SROI und Nachhaltigkeitswissenschaft?", "Sie schließen an diese Felder an, gehen aber über Berichtspflichten und Einzelkennzahlen hinaus, indem sie Wirkung bewerten, gewichten und in Entscheidungen zurückkoppeln."],

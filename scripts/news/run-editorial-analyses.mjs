@@ -32,6 +32,7 @@ function publicCandidate(assessment, story, existing) {
     editorial_analysis_score: assessment.editorial_analysis_score,
     analysis_gain: assessment.analysis_gain,
     factors: assessment.factors,
+    factor_status: assessment.factor_status,
     evidence_gate: assessment.evidence_gate,
     fingerprint: assessment.fingerprint,
     status: existing && existing.source_fingerprint === assessment.fingerprint ? "published" : assessment.status,
@@ -179,9 +180,15 @@ export async function runEditorialAnalyses({
   const usage = read(usageFile, { runs: [] });
   const store = read(analysesFile, { schema_version: "1.0", method_version: EDITORIAL_ANALYSIS_VERSION, updated_at: null, candidates: [], analyses: [] });
   const activeStories = (storyStore.stories || []).filter((story) => story.published && story.listed !== false && story.analysis);
-  const baseSubjects = editorialSubjects(activeStories);
+  const baseSubjects = editorialSubjects(activeStories).map(story => ({
+    ...story, source_integrity: sourceIntegrityForStory(story, newsRegistry, [], now),
+  }));
   const researchExpansion = execute ? enrichEditorialResearchSubjects(baseSubjects, newsroom, newsRegistry, now) : { subjects: baseSubjects, added: 0 };
-  const subjects = researchExpansion.subjects;
+  // Revalidate the final combined source set locally, including legacy records
+  // without a stored integrity result. No paid analysis or article fetch required.
+  const subjects = researchExpansion.subjects.map((story) => ({
+    ...story, source_integrity: sourceIntegrityForStory(story, newsRegistry, [], now),
+  }));
   const assessed = subjects.map((story) => ({ story, assessment: editorialAnalysisAssessment(story) }));
   const candidateRows = assessed.filter(({ assessment }) => assessment.candidate).map(({ story, assessment }) => publicCandidate(assessment, story, existingForStory(store, story.story_id)));
   const changedCandidateState = JSON.stringify(store.candidates || []) !== JSON.stringify(candidateRows);

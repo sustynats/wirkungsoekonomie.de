@@ -129,7 +129,7 @@ for (const analysis of editorialStore.analyses.filter((item) => item.status === 
   const analysisFile = path.join(ROOT, "wirkungsticker/analyse", analysis.slug, "index.html");
   if (!fs.existsSync(analysisFile)) fail(`EDITORIAL_PAGE_MISSING:${analysis.analysis_id}`);
   const html = fs.readFileSync(analysisFile, "utf8");
-  if (!html.includes("WÖK-Analyse") || !html.includes("Natalie Weber") || !html.includes("natalie-weber-woek-analyse.jpg") || !html.includes(analysis.transparency_note) || !html.includes(`wirkungsticker/analyse/${analysis.slug}/`) || !html.includes(`../../${story.slug}/`) || !html.includes('"@type":"Article"')) fail(`EDITORIAL_PAGE_INVALID:${analysis.analysis_id}`);
+  if (!html.includes("WÖk-Analyse") || !html.includes("Natalie Weber") || !html.includes("natalie-weber-woek-analyse.jpg") || !html.includes(analysis.transparency_note) || !html.includes(`wirkungsticker/analyse/${analysis.slug}/`) || !html.includes(`../../${story.slug}/`) || !html.includes('"@type":"Article"')) fail(`EDITORIAL_PAGE_INVALID:${analysis.analysis_id}`);
   const readerIndex = readerOrder.indexOf(`analyse/${analysis.slug}/`);
   const nextHref = readerOrder[readerIndex + 1];
   const analysisNextHref = nextHref?.startsWith("analyse/") ? `../${nextHref.slice("analyse/".length)}` : nextHref ? `../../${nextHref}` : null;
