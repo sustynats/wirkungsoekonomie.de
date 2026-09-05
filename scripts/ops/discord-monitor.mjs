@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { buildCaseFiles } from '../news/case-files.mjs';
+import { reportOperationallyHealthy, sourceCoverageDegraded } from '../news/check-run-health.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const MINUTE = 60_000;
@@ -86,14 +87,14 @@ export function aiFailureReason(report = {}) {
 export function evaluateChecks(data, now) {
   const summary = summarizeNews(data, now);
   const checks = (data.probes || []).map(p => ({ id: p.id, name: p.name, ok: p.ok, reason: p.ok ? 'erreichbar' : p.error, immediate: false }));
-  checks.push({ id: 'run', name: 'Automatische Nachrichtenläufe', ok: summary.runAgeMinutes >= 0 && summary.runAgeMinutes <= 45 && data.report?.status === 'ok', reason: summary.runAgeMinutes > 45 ? 'Seit über 45 Minuten kein abgeschlossener Laufbericht.' : 'Letzter Lauf meldet einen Fehler oder einen ungültigen Zeitstempel.', immediate: true });
+  checks.push({ id: 'run', name: 'Automatische Nachrichtenläufe', ok: summary.runAgeMinutes >= 0 && summary.runAgeMinutes <= 45 && reportOperationallyHealthy(data.report), reason: summary.runAgeMinutes > 45 ? 'Seit über 45 Minuten kein abgeschlossener Laufbericht.' : 'Letzter Lauf meldet einen Fehler oder einen ungültigen Zeitstempel.', immediate: true });
   checks.push({ id: 'provider', name: 'KI-Verarbeitung', ok: !data.report?.ai_error, reason: aiFailureReason(data.report), immediate: false });
   const inputHolds = data.report?.input_holds || [];
   checks.push({ id: 'news-input', name: 'Nachrichten-Eingabeprüfung', ok: inputHolds.length === 0, reason: `${inputHolds.length} Akte(n) überschreiten das Eingabelimit. Diese Akten bleiben zur Prüfung erhalten; andere Nachrichten werden weiterverarbeitet. Kein Nachweis eines Anbieterausfalls.`, immediate: false });
   const imageErrors = new Set(['HIGGSFIELD_RETRY_EXHAUSTED', 'HIGGSFIELD_AUTH_UNAVAILABLE', 'HIGGSFIELD_NOT_CONFIGURED', 'HIGGSFIELD_PROVIDER_UNAVAILABLE']);
   const failedImages = data.stories.filter(s => s.published && s.listed !== false && imageErrors.has(s.title_image?.refresh_failure || s.title_image?.fallback_reason)).length;
   checks.push({ id: 'images', name: 'Titelbilder', ok: failedImages === 0, reason: `${failedImages} ${failedImages === 1 ? 'Symbolbild' : 'Symbolbilder'} mit technischem Fehler; vorhandene Bilder oder Wirkungskarten bleiben sichtbar. Nachrichten werden dadurch nicht zurückgehalten.`, immediate: false });
-  checks.push({ id: 'sources', name: 'Quellenabruf', ok: summary.sourceFailures === 0, reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
+  checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   checks.push({ id: 'publication', name: 'Veröffentlichung', ok: data.liveFeed !== null && summary.pendingPublication === 0, reason: data.liveFeed === null ? 'Live-Feed nicht lesbar.' : `${summary.pendingPublication} sichtbare Lagen oder Einzelakten seit über 45 Minuten nicht im Live-Feed.`, immediate: false });
   checks.push({ id: 'budget', name: 'KI-Monatsbudget', ok: data.report?.budget_policy?.status === 'ok' && summary.usdMonth < Number(data.report?.monthly_budget_usd), reason: 'Monatslimit oder Wechselkurs-Sicherheitsgate hält die KI-Verarbeitung an.', immediate: true });
   return { checks, summary };

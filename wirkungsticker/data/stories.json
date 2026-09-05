@@ -1,7 +1,301 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T11:31:43.777Z",
+  "updated_at": "2026-09-05T11:59:56.834Z",
   "stories": [
+    {
+      "story_id": "wt-06476c6e980f5f47",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06476c6e980f5f47-a6a808b7771ac519-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06476c6e980f5f47-80d04bad15019dbe-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06476c6e980f5f47-a1c00d75a17eb4e5-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+      "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+      "source_summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt berichten mehrere Redaktionen über den Endspurt des Wahlkampfs. Genannt werden Abschlussveranstaltungen in Magdeburg und Halle, angemeldete Demonstrationen sowie Kundgebungen und Feste für Demokratie im ganzen Land. Mehrere Texte erwarten für den Wahltag tausende Teilnehmende. \n\nEinige Beiträge greifen außerdem die Umfragen auf und schreiben der AfD eine führende Position zu. Ein weiterer Bericht nennt einen Einsatz der Landespolizei mit allen verfügbaren Kräften und zusätzlich angeforderten Beamten aus anderen Bundesländern. Daneben erscheinen zugespitzte politische Einordnungen und Warnungen vor einem AfD-Erfolg.",
+      "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
+      "detail_summary": "Gesichert ist vor allem, dass der Wahlkampf in Sachsen-Anhalt am Wahltag endet und für denselben Tag Demonstrationen und Kundgebungen angekündigt sind. Mehrere Quellen erwarten tausende Teilnehmende, teils auch Demokratiefeste und weitere Veranstaltungen in mehreren Orten. Zusätzlich berichtet eine Quelle von einem umfassenden Polizeieinsatz mit Unterstützung aus anderen Bundesländern. Politisch relevant ist das, weil sich Wahlkampf, Protest und Sicherheitslage an einem Tag verdichten und damit die öffentliche Wahrnehmung der Wahl beeinflussen können. Als mögliche Folge kommen stärkere Mobilisierung, erhöhte Belastung für Einsatzkräfte und eine zugespitzte Debatte über das Abschneiden der AfD in Betracht. Offen bleibt, wie groß die tatsächlichen Teilnehmerzahlen und welche konkreten Auswirkungen der Tag vor Ort haben wird; dazu liefern die Quellen nur Ankündigungen und Prognosen.",
+      "why_relevant": "Die Meldung bündelt Wahlkampfende, angekündigte Großkundgebungen und Polizeieinsatz an einem Landtagswahltag. Das kann Anreize, öffentliche Sicherheit und die demokratische Auseinandersetzung vor Ort betreffen.",
+      "topic": [
+        "Demokratie",
+        "Politik",
+        "Wirtschaft"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Es geht um Wahlkampf, Proteste und Sicherheitsmaßnahmen vor einer Landtagswahl mit potenziell vielen Beteiligten."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Quellen enthalten keinen direkten Umwelt- oder Klimabezug."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "rationale": "Wahlkampf, Demonstrationen und die mögliche Regierungsbildung betreffen unmittelbar den demokratischen Prozess."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Teilnehmende",
+            "value": "tausende",
+            "unit": "Menschen",
+            "context": "Für Kundgebungen und Demonstrationen erwartet"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "beschaeftigte",
+          "kinder_jugend"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "high",
+        "reason": "Mehrere Texte arbeiten mit zugespitzten politischen Frames und Warnformeln rund um AfD und Demokratie.",
+        "factual_core": "Der Wahlkampf endet, Demonstrationen sind angekündigt, und mehrere Berichte verweisen auf ein mögliches starkes AfD-Ergebnis.",
+        "speaker_statement": {
+          "present": true,
+          "speaker": "Akteure in den Berichten",
+          "statement": "Die Wahl werde politisch zugespitzt und ein AfD-Erfolg sei folgenreich.",
+          "status": "claim"
+        },
+        "framing": {
+          "detected": true,
+          "term": "rechte Republik",
+          "origin_in_story": "Medium",
+          "media_usage": "headline",
+          "attribution_quality": "grundsätzlich attribuiert",
+          "factual_status": "Interpretation",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "resonance": {
+          "resonance_space": "Wahlkampf- und Demokratiedeutung",
+          "resonance_risk": "Der Frame kann die Wahl als existenzielle Bedrohung rahmen.",
+          "normalization_potential": "Wiederholung kann den Deutungsrahmen verfestigen.",
+          "repetition_effect": "Mehrfach ähnliche Zuspitzungen erhöhen den Wiedererkennungseffekt.",
+          "trust_effect": "Starke Frames können Vertrauen je nach Vorverständnis stärken oder schwächen.",
+          "polarization_potential": "Hoch, weil Lagerkonflikte betont werden.",
+          "discourse_effect": "Die Debatte kann vom Wahlverlauf auf Abwehr- und Warnnarrative verschoben werden."
+        },
+        "impact_path": {
+          "first_order": "Auffällige Schlagworte prägen die Erstwahrnehmung.",
+          "second_order": "Leserinnen und Leser ordnen die Wahl stärker als Gefahrenlage ein.",
+          "third_order": "Der Debattenrahmen kann politische Polarisierung und Illusory-Truth-Effekte begünstigen."
+        },
+        "evidence": {
+          "status": "medium",
+          "what_is_known": "Zugespitzte Titel und Formulierungen liegen vor; die Wahl ist real und umstritten.",
+          "what_is_inferred": "Die Frame-Wirkung auf Wahrnehmung und Debatte ist möglich, aber nicht direkt gemessen.",
+          "what_is_open": "Ob der Frame tatsächlich Einstellungen verändert, bleibt offen."
+        },
+        "editorial_assessment": "Die Formulierungen setzen auf starke politische Zuspitzung; sachlicher wäre eine klare Trennung von Wahlfakt und Warnung.",
+        "fact_first_reframe": {
+          "title": "Sachsen-Anhalt: Wahlkampfende, Kundgebungen und Polizeieinsatz am Wahltag",
+          "source_summary": "Mehrere Berichte beschreiben den Endspurt vor der Landtagswahl in Sachsen-Anhalt. Genannt werden angemeldete Demonstrationen, Kundgebungen und ein umfassender Polizeieinsatz.",
+          "summary": "Am Wahltag in Sachsen-Anhalt laufen Wahlkampfende, Proteste und Sicherheitsvorkehrungen zusammen. Mehrere Quellen erwarten tausende Teilnehmende und verweisen auf eine führende AfD in Umfragen.",
+          "detail_summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt enden die Wahlkampfaktivitäten, zugleich sind Demonstrationen und Demokratiefeste angekündigt. Mehrere Berichte nennen tausende erwartete Teilnehmende; eine Quelle berichtet zusätzlich von einem großen Polizeieinsatz mit Unterstützung aus anderen Bundesländern. Auch die Umfragen werden aufgegriffen, in denen die AfD vorn liegt. Das macht die Lage politisch bedeutsam, weil Mobilisierung, Sicherheitsaufwand und öffentliche Deutung an einem Tag zusammenfallen. Die tatsächlichen Folgen für Wahlverhalten und Ordnung sind aber offen und aus den Quellen nicht messbar."
+        },
+        "self_frame_warning": false,
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "Mehrere voneinander unabhängige Berichte greifen denselben Wahltag mit Kundgebungen und Sicherheitslage auf."
+        }
+      },
+      "media_analysis_version": "1.0",
+      "media_checked_at": "2026-09-05T11:59:56.834Z",
+      "first_seen": "2026-09-04T07:02:30.000Z",
+      "last_updated": "2026-09-05T12:01:00.915Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-d0ea56670f7c42bbc7a0",
+      "case_file": null,
+      "source_published_at": "2026-09-01T14:38:55.000Z",
+      "published_at": "2026-09-05T12:01:00.915Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "swr-aktuell"
+          ],
+          [
+            "ndr-info"
+          ],
+          [
+            "rbb24-nachrichten"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 7,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "swr-aktuell",
+              "swr-aktuell"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:02:30.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T05:30:02.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T04:07:55.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T04:09:22.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-01T14:38:55.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:06:15.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T13:33:07.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-trend-wahl-agh-bvv-hauptstadt-2026-sonntagsfrage.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:00:20.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T08:39:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:34:28.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:54:53.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/in-bitterfeld-wolfen-liegt-die-demokratiefoerderung-auf-eis-38121574.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:41:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-demokratie-veranstaltungen-100,demonstrationen-110.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:30:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-60f4e4d7d43fad99",
       "title_image": {

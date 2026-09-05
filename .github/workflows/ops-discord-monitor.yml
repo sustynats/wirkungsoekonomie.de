@@ -30,6 +30,7 @@ jobs:
           sparse-checkout: |
             scripts/ops/discord-monitor.mjs
             scripts/news/case-files.mjs
+            scripts/news/check-run-health.mjs
             tests/ops/discord-monitor.test.mjs
             reports/wirkungsticker-latest-run.json
             data/news/stories.json

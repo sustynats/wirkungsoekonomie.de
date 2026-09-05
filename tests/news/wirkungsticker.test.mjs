@@ -676,12 +676,15 @@ test("Laufgesundheit erkennt 503, Quellenlücken und veraltete Berichte", () => 
   };
   assert.deepEqual(evaluateRunHealth(healthy, { expectedAfter: "2026-09-03T17:00:00.000Z" }), { ok: true, errors: [] });
 
-  const degraded = { ...healthy, status: "degraded", ai_error: "AI_PROVIDER_ERROR:503", source_failures: 1 };
+  const degraded = { ...healthy, status: "degraded", ai_error: "AI_PROVIDER_ERROR:503", source_failures: 7, sources_scheduled: 27 };
   const degradedHealth = evaluateRunHealth(degraded, { expectedAfter: "2026-09-03T17:00:00.000Z" });
   assert.equal(degradedHealth.ok, false);
   assert.ok(degradedHealth.errors.includes("AI_PROVIDER_DEGRADED"));
   assert.ok(degradedHealth.errors.includes("SOURCE_COVERAGE_DEGRADED"));
   assert.ok(degradedHealth.errors.includes("RUN_STATUS_NOT_OK"));
+
+  const transientSource = { ...healthy, status: "degraded", source_failures: 1, source_successes: 32, sources_scheduled: 33 };
+  assert.deepEqual(evaluateRunHealth(transientSource, { expectedAfter: "2026-09-03T17:00:00.000Z" }), { ok: true, errors: [] });
 
   const staleHealth = evaluateRunHealth(healthy, { expectedAfter: "2026-09-03T17:00:11.000Z" });
   assert.equal(staleHealth.ok, false);
