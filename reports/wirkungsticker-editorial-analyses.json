@@ -2,12 +2,13 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-05T18:54:50.440Z",
+  "started_at": "2026-09-05T21:17:19.384Z",
   "scanned_stories": 89,
-  "scanned_subjects": 65,
-  "editorial_candidates": 7,
+  "scanned_subjects": 64,
+  "editorial_candidates": 10,
   "ready_for_research": 0,
-  "research_pending": 3,
+  "research_pending": 6,
+  "retry_deferred": 0,
   "editorial_research_sources_discovered": 6,
   "selected": 0,
   "editorial_research_started": 0,
@@ -22,39 +23,49 @@
   "failed": [],
   "candidates": [
     {
-      "story_id": "wt-3d901522efd87e2d",
-      "story_slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
-      "story_title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
-      "editorial_analysis_score": 70,
-      "analysis_gain": 47,
+      "story_id": "wt-6347f9739484a7d1",
+      "story_slug": "nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh-84a7d1",
+      "story_title": "Nach Sabotage: Mehr Polizei an kritischer Infrastruktur in SH",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 64,
       "factors": {
         "systemic_relevance": 16,
-        "impact_potential": 9,
-        "impact_risk": 8,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
         "observed_impact": 0,
-        "third_order_relevance": 5,
-        "transformation_relevance": 3,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
         "resilience_relevance": 8,
         "macro_relevance": 0,
-        "MPD_interdependence": 2,
+        "MPD_interdependence": 0,
         "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 8,
         "evidence_quality": 8
       },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 6,
-        "primary_source_count": 0,
-        "cited_claim_count": 20,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
       },
-      "fingerprint": "fdcacf32e79f464ef271fee2ad82843b3252958eb7d9531c9845fecd635ac781",
-      "status": "published",
-      "analysis_id": "woek-analysis-cf42f2c67306"
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "open",
+        "independent_origin_count": 14,
+        "primary_source_count": 0,
+        "cited_claim_count": 88,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "source_integrity_open",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "04a94ad7b4098e50269e588736f64ea6d81edbbab8d5b4555590861a56a8f91d",
+      "status": "research_pending",
+      "analysis_id": null
     },
     {
       "story_id": "wt-6a7145e6dc679f95",
@@ -64,8 +75,10 @@
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 14,
-        "impact_potential": 9,
-        "impact_risk": 4,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 9,
         "observed_impact": 0,
         "third_order_relevance": 10,
         "transformation_relevance": 8,
@@ -76,6 +89,11 @@
         "discourse_relevance": 0,
         "case_depth": 0,
         "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
       },
       "evidence_gate": {
         "passed": false,
@@ -95,99 +113,207 @@
       "analysis_id": null
     },
     {
-      "story_id": "wt-4742476ae893311b",
-      "story_slug": "sabotage-polizei-und-staatsanwaltschaft-fahnden-nach-tatverdachtigem-93311b",
-      "story_title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
+      "story_id": "wt-4b5d0962d323432a",
+      "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+      "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
       "editorial_analysis_score": 79,
-      "analysis_gain": 53,
+      "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 16,
-        "impact_potential": 10,
-        "impact_risk": 8,
-        "observed_impact": 0,
-        "third_order_relevance": 5,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 8,
-        "evidence_quality": 8
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 13,
-        "primary_source_count": 0,
-        "cited_claim_count": 85,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "009de1fc2b2d661492718cc8e0fd9446585289a1ba044ac23d5a7520a875a3d3",
-      "status": "published",
-      "analysis_id": "woek-analysis-166b13117cb1"
-    },
-    {
-      "story_id": "wt-aabe8c0430bf8f84",
-      "story_slug": "two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84",
-      "story_title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
-      "editorial_analysis_score": 69,
-      "analysis_gain": 51,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 9,
-        "impact_risk": 8,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
         "observed_impact": 0,
         "third_order_relevance": 10,
-        "transformation_relevance": 8,
+        "transformation_relevance": 0,
         "resilience_relevance": 8,
-        "macro_relevance": 0,
+        "macro_relevance": 9,
         "MPD_interdependence": 2,
-        "distribution_relevance": 3,
+        "distribution_relevance": 8,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
       },
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
         "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 7,
+        "primary_source_count": 2,
+        "cited_claim_count": 2,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
+      "fingerprint": "692ec37ba57b489213b36cd736b0fe8371be569f545a74b84d3936b0c4bfa18d",
       "status": "published",
-      "analysis_id": "woek-analysis-94b29d766984"
+      "analysis_id": "woek-analysis-0bfd0f9a3434"
     },
     {
-      "story_id": "wt-edd4484465895b46",
-      "story_slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
-      "story_title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
-      "editorial_analysis_score": 67,
-      "analysis_gain": 48,
+      "story_id": "wt-f2edeab46d126d83",
+      "story_slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
+      "story_title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
+      "editorial_analysis_score": 83,
+      "analysis_gain": 60,
       "factors": {
         "systemic_relevance": 16,
-        "impact_potential": 9,
-        "impact_risk": 8,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
         "observed_impact": 0,
         "third_order_relevance": 10,
         "transformation_relevance": 8,
         "resilience_relevance": 8,
-        "macro_relevance": 0,
+        "macro_relevance": 3,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 1,
+        "cited_claim_count": 5,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "32ca0d447cbc4a1cc4b5adb1679c3dbb378e35288ed8e670640ede74a03579ac",
+      "status": "published",
+      "analysis_id": "woek-analysis-061f61c466cf"
+    },
+    {
+      "story_id": "wt-d80fd849c477e2ad",
+      "story_slug": "gesundheitscheck-vor-ausbildung-thuringen-ubernimmt-kosten-fur-untersuchung-77e2ad",
+      "story_title": "Gesundheitscheck vor Ausbildung: Thüringen übernimmt Kosten für Untersuchung",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
         "MPD_interdependence": 2,
-        "distribution_relevance": 3,
+        "distribution_relevance": 8,
         "discourse_relevance": 0,
         "case_depth": 0,
         "evidence_quality": 3
       },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
       "evidence_gate": {
         "passed": false,
-        "source_integrity": "passed",
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 5,
+        "primary_source_expected": false,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "7c2991fc7b77ebae7a8805a3db3d8895afd14bdd9fdb5471144bcd440912ce82",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-b5e0a39f46388642",
+      "story_slug": "speech-by-commissioner-lahbib-at-the-european-parliament-on-the-2026-wildfire-season-388642",
+      "story_title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
+      "editorial_analysis_score": 84,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 3,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "031e49918d0d6a49b8108f9f992be324d092a20c1f2c8f06e6b6b4d265653c07",
+      "status": "published",
+      "analysis_id": "woek-analysis-852ebdd0a0aa"
+    },
+    {
+      "story_id": "wt-79a8fce4900e254f",
+      "story_slug": "france-announces-1-billion-aid-for-farmers-after-climate-hit-summer-0e254f",
+      "story_title": "France announces €1 billion aid for farmers after climate-hit summer",
+      "editorial_analysis_score": 77,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
         "independent_origin_count": 1,
         "primary_source_count": 0,
         "cited_claim_count": 3,
@@ -198,44 +324,96 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "882570f03a13cc972007897ab935d4597225deff24a2baf33138e7d368780e61",
+      "fingerprint": "e3acd3f26402baf58b3653cf6114aad29f93707a951e7599e46481fc2ed36140",
       "status": "research_pending",
       "analysis_id": null
     },
     {
-      "story_id": "wt-1bc40229c938d48a",
-      "story_slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
-      "story_title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
-      "editorial_analysis_score": 76,
+      "story_id": "wt-9cca0ad92ad1a84a",
+      "story_slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
+      "story_title": "Das macht die Bundesregierung für Entlastungen bei den Energiepreisen",
+      "editorial_analysis_score": 70,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 9,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 1,
+        "cited_claim_count": 5,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": [
+          "fewer_than_two_source_origins"
+        ]
+      },
+      "fingerprint": "8d84b7a038b7c685eeabd968d242133739320d8411c4dfef80756e2e5f4093ad",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-34e360cdb996a299",
+      "story_slug": "france-agriculture-production-sees-economic-hit-from-heatwaves-96a299",
+      "story_title": "France agriculture production sees economic hit from heatwaves",
+      "editorial_analysis_score": 84,
       "analysis_gain": 60,
       "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 10,
-        "impact_risk": 8,
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
         "observed_impact": 0,
         "third_order_relevance": 10,
         "transformation_relevance": 8,
         "resilience_relevance": 8,
-        "macro_relevance": 0,
+        "macro_relevance": 9,
         "MPD_interdependence": 6,
-        "distribution_relevance": 3,
+        "distribution_relevance": 8,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
       },
       "evidence_gate": {
         "passed": false,
-        "source_integrity": "passed",
-        "independent_origin_count": 3,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
         "primary_source_count": 0,
         "cited_claim_count": 3,
-        "primary_source_expected": true,
+        "primary_source_expected": false,
         "primary_source_satisfied": false,
         "reasons": [
+          "fewer_than_two_source_origins",
           "primary_source_missing"
         ]
       },
-      "fingerprint": "27b6d823c7bfe9f1f625b1555c054a9421253f68307ccc6eef2b95f3e9bd7077",
+      "fingerprint": "fe9b18304408338d6da0b51543e667e77e633f8313cd094f05fc971c90cf9078",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -247,8 +425,10 @@
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 16,
-        "impact_potential": 10,
-        "impact_risk": 8,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
         "observed_impact": 0,
         "third_order_relevance": 10,
         "transformation_relevance": 8,
@@ -260,9 +440,14 @@
         "case_depth": 0,
         "evidence_quality": 8
       },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
       "evidence_gate": {
         "passed": true,
-        "source_integrity": "passed",
+        "source_integrity": "verified",
         "independent_origin_count": 3,
         "primary_source_count": 1,
         "cited_claim_count": 6,

@@ -16,7 +16,9 @@ test("detail reading order starts with the news, then evidence and facts before 
     previous = position;
   }
   assert.ok(html.indexOf('class="news-status-notice"') < html.indexOf('id="nachricht"'));
-  assert.match(html, /href="#belegstand">Belegstand<\/a>/);
+  assert.match(html, /href="#faktencheck">Belege<\/a>/);
+  const subnav = html.match(/<nav class="wt-subnav"[\s\S]*?<\/nav>/)[0];
+  assert.equal((subnav.match(/<a /g) || []).length, 4);
   assert.equal((html.match(/id="belegstand"/g) || []).length, 1);
   assert.deepEqual(story, before, "rendering never rewrites journalistic content or dates");
 });

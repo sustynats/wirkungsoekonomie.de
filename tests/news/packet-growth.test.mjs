@@ -36,6 +36,14 @@ test('dense tables and text references round-trip roles, nulls, omissions, IDs a
   assert.deepEqual(expandPacketTransport(JSON.parse(serializeEvidencePackets([optional],true))[0]),JSON.parse(JSON.stringify(optional)));
   assert.throws(()=>expandPacketTransport({sources:[{$text:9}],text_pool:[]}),/PACKET_TEXT_REFERENCE_INVALID/);
 });
+
+test('repeated long source URLs are losslessly factored with every reference retained',()=>{
+  const url='https://example.org/news/'+ 'identical-document-'.repeat(15);
+  const story={sources:[{url,source_id:'a',evidence_segments:[]}],related_ticker_history:[{source_urls:[url]}],currentness:{followups_due:[{source_url:url}]} };
+  const packed=serializeEvidencePackets([story],true);
+  assert.ok(packed.length<JSON.stringify([story]).length);
+  assert.deepEqual(expandPacketTransport(JSON.parse(packed)[0]),story);
+});
 test('an authenticated budget refusal is not retried or charged as an unknown provider failure',async()=>{
   let calls=0;
   await assert.rejects(callWoekAi([{story_id:'test',title:'Test',sources:[],claims:[]}],{attempts:3,fetchImpl:async()=>{calls++;return new Response(JSON.stringify({ok:false,code:'BUDGET_EXHAUSTED',provider_called:false}),{status:429,headers:{'Content-Type':'application/json'}})}}),error=>error.message==='AI_BUDGET_EXHAUSTED'&&error.providerNotCalled===true&&error.requestAttempts===1);
@@ -58,4 +66,15 @@ test('both actual September 4 input failures fit, with full source identity and 
       assert.ok(`${original.title} ${original.summary} ${original.article_excerpt||''}`.includes(proof.excerpt));
     }
   }
+});
+
+test('September 5 election backlog fits with related stories, all claims and media context',()=>{
+  const fixture=JSON.parse(fs.readFileSync(new URL('./fixtures/input-limit-regression-20260905.json',import.meta.url)));
+  const prompt=buildAnalysisPrompt([fixture]);
+  assert.ok(prompt.length<=39000);
+  const packet=expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
+  assert.deepEqual(packet.sources.map(s=>s.url),fixture.sources.map(s=>s.url));
+  assert.equal(packet.claims.length,fixture.claims.length);
+  assert.equal(packet.related_ticker_history.length,fixture.related_ticker_history.length);
+  assert.deepEqual(packet.media_trigger,fixture.media_trigger);
 });

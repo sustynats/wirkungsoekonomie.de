@@ -78,12 +78,18 @@ const html = `<!doctype html>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>So wirkt die Wirkungsökonomie</title>
-    <meta name="description" content="Die Wirkungsökonomie erklärt, wie Entscheidungen, Preise, Regeln, Kapital und Sprache auf Mensch, Planet und Demokratie wirken.">
+    <meta name="description" content="Sechs einfache Fragen: mögliche Folgen, tatsächliche Veränderungen, Evidenz, Bewertung, Schutzgrenzen und Lernen.">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/so-wirkt-wirkungsoekonomie/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="So wirkt die Wirkungsökonomie">
+    <meta property="og:description" content="Sechs einfache Fragen: mögliche Folgen, tatsächliche Veränderungen, Evidenz, Bewertung, Schutzgrenzen und Lernen.">
+    <meta property="og:url" content="https://wirkungsoekonomie.de/so-wirkt-wirkungsoekonomie/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"So wirkt die Wirkungsökonomie","url":"https://wirkungsoekonomie.de/so-wirkt-wirkungsoekonomie/","description":"Sechs einfache Fragen: mögliche Folgen, tatsächliche Veränderungen, Evidenz, Bewertung, Schutzgrenzen und Lernen.","inLanguage":"de"}</script>
     <link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
 ${renderHeader(BASE)}
-    <main>
+    <main id="main-content" data-pagefind-body>
       <section class="hero compact-hero">
         <nav class="breadcrumb"><a href="../index.html">Start</a> / So wirkt die Wirkungsökonomie</nav>
         <p class="hero-kicker">Wirkungsökonomie verstehen</p>
@@ -99,7 +105,7 @@ ${renderHeader(BASE)}
         <div class="section-header compact">
           <p class="hero-kicker">Kernformel</p>
           <h2 id="kernformel-title">Wirkung ist nicht Absicht, Reichweite oder Kapital.</h2>
-          <p><strong>Wirkung</strong> ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein - und sie muss im jeweiligen Wirkungsraum geprüft werden.</p>
+          <p><strong>Wirkung</strong> ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ, neutral oder ambivalent bewertet werden. Reicht die Evidenz nicht aus, bleibt die Einordnung offen.</p>
         </div>
       </section>
 
@@ -120,8 +126,8 @@ ${renderHeader(BASE)}
         </div>
         <div class="card-grid three">
           <article class="card"><p class="card-kicker">Vorwirkung</p><h3 class="card-title">Auslöser, Wirkstoff, Potenzial und Risiko</h3><p class="card-text">Ein Produkt, eine Regel, ein Preis, ein Kapitalfluss oder ein Narrativ kann etwas auslösen. Der Wirkstoff bleibt dabei eine didaktische Analogie, nicht eine naturwissenschaftliche Behauptung.</p></article>
-          <article class="card"><p class="card-kicker">Wirkpfad</p><h3 class="card-title">IOOI kann einen Abschnitt strukturieren</h3><p class="card-text">IOOI ist eine externe, optionale Results Chain: Input, Aktivität, Output, Outcome und Impact können Ressourcen, Leistungen und Veränderung gliedern. Output ist noch keine Wirkung; Outcome ist eine Wirkungsebene.</p></article>
-          <article class="card"><p class="card-kicker">Steuerung</p><h3 class="card-title">Maßstab, Schutz und Rückkopplung</h3><p class="card-text">Die WÖk ergänzt Evidenz, Referenzrahmen, Nichtkompensation, Transformationswirkung und die Rückführung in Preise, Kapital, Beschaffung, Management, Recht und Regulation.</p></article>
+          <article class="card"><p class="card-kicker">Wirkpfad</p><h3 class="card-title">IOOI kann einen Abschnitt strukturieren</h3><p class="card-text">IOOI steht für Input, Output, Outcome und Impact. Eine Aktivität kann als zusätzliche Prozessstufe zwischen Input und Output dargestellt werden; sie gehört nicht zum Akronym. Diese externe Results-Chain-Methode ist optional, kein Grundmodell der WÖk. Output ist noch keine Wirkung.</p></article>
+          <article class="card"><p class="card-kicker">Steuerung</p><h3 class="card-title">Maßstab, Schutz und Rückkopplung</h3><p class="card-text">Die Wirkungsökonomie ist die Gesamtarchitektur. IOOI kann darin optional einen Teil des Wirkungspfads strukturieren. Die WÖk selbst reicht von Wirkungspotenzial und Risiko über Evidenz, Bewertung und Schutzregeln bis zu Rückkopplung und Lernen.</p></article>
         </div>
         <p><a class="text-link" href="../verstehen/iooi-und-wirkungsoekonomie/">IOOI und Wirkungsökonomie im vollständigen Überblick</a></p>
       </section>
@@ -129,29 +135,15 @@ ${renderHeader(BASE)}
       <section class="section" id="wirkungsmodell" aria-labelledby="wirkungsmodell-title">
         <div class="section-header">
           <p class="hero-kicker">Modell</p>
-          <h2 id="wirkungsmodell-title">Vier Schritte machen Wirkung lesbar</h2>
+          <h2 id="wirkungsmodell-title">Sechs Fragen machen Wirkung verständlich</h2>
         </div>
-        <div class="card-grid four">
-          <article class="card">
-            <p class="card-kicker">1</p>
-            <h3 class="card-title">Handlung</h3>
-            <p class="card-text">Eine Entscheidung, ein Produkt, eine Regel, ein Preis, ein Medium oder ein politischer Satz greift in ein System ein.</p>
-          </article>
-          <article class="card">
-            <p class="card-kicker">2</p>
-            <h3 class="card-title">Zustandsveränderung</h3>
-            <p class="card-text">Geprüft wird, was sich dadurch real verändert: Belastung, Freiheit, Sicherheit, Vertrauen, Ressourcen, Teilhabe oder Resilienz.</p>
-          </article>
-          <article class="card">
-            <p class="card-kicker">3</p>
-            <h3 class="card-title">Bewertung</h3>
-            <p class="card-text">Die Veränderung wird nicht moralisch geraten, sondern entlang von Mensch, Planet und Demokratie eingeordnet.</p>
-          </article>
-          <article class="card">
-            <p class="card-kicker">4</p>
-            <h3 class="card-title">Rückkopplung</h3>
-            <p class="card-text">Gute Wirkung muss sich lohnen, schädliche Wirkung darf nicht billig bleiben. Dafür braucht es Preise, Regeln, Kapital, Beschaffung und Verantwortung.</p>
-          </article>
+        <div class="card-grid three">
+          <article class="card"><p class="card-kicker">1</p><h3 class="card-title">Was löst etwas aus?</h3><p class="card-text">Eine Entscheidung, ein Produkt, eine Regel oder eine Formulierung kann ein System verändern.</p></article>
+          <article class="card"><p class="card-kicker">2</p><h3 class="card-title">Was könnte sich verändern?</h3><p class="card-text">Wir beschreiben mögliche Folgen und Risiken. Was möglich ist, ist noch nicht eingetreten.</p></article>
+          <article class="card"><p class="card-kicker">3</p><h3 class="card-title">Was hat sich tatsächlich verändert?</h3><p class="card-text">Wir vergleichen reale Zustände mit der Ausgangslage. Eine erbrachte Leistung allein ist noch keine Wirkung.</p></article>
+          <article class="card"><p class="card-kicker">4</p><h3 class="card-title">Wie sicher wissen wir das?</h3><p class="card-text">Wir prüfen Quellen, Daten und andere mögliche Ursachen. Eine beobachtete Veränderung beweist noch nicht, wer sie verursacht hat.</p></article>
+          <article class="card"><p class="card-kicker">5</p><h3 class="card-title">Wie bewerten wir es – und wo liegen rote Linien?</h3><p class="card-text">Wir legen den Maßstab für Mensch, Planet und Demokratie offen. Schwere Schäden dürfen nicht mit Vorteilen an anderer Stelle verrechnet werden.</p></article>
+          <article class="card"><p class="card-kicker">6</p><h3 class="card-title">Was folgt daraus?</h3><p class="card-text">Die Erkenntnis soll die nächste Entscheidung verbessern. Neue Daten können zeigen, dass Annahmen oder Regeln geändert werden müssen.</p></article>
         </div>
       </section>
 

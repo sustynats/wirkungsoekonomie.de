@@ -488,6 +488,7 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
 test("Visual-Sanitizer entfernt unbelegte Kennzahlen vor dem Qualitätsgate und protokolliert sie", () => {
   const story = candidate();
   story.sources[0].article_excerpt = "Der Zuschuss beträgt 5,5 Milliarden Euro.";
+  story.claims[0].claim += " Der Zuschuss beträgt 5,5 Milliarden Euro.";
   const analysis = validAnalysis();
   analysis.source_summary = analysis.source_summary.replace("Weitere Einzelheiten fehlen.", "Der Zuschuss beträgt 5,5 Milliarden Euro.");
   analysis.visuals = {
@@ -617,7 +618,11 @@ test("Technische Qualitätsfehler werden begrenzt erneut versucht, fachliche Abl
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_UNSUPPORTED_NUMBER:17"], 2), true);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_PUBLICATION_GATE_FACTORS_INVALID", "AI_MATERIALITY_GATE_FAILED"], 1), true);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_MATERIALITY_GATE_FAILED"], 0), false);
-  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 3), false);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 3), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_REQUIRED_STRING:summary", "AI_PUBLICATION_NOT_RECOMMENDED"], 4), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_EX_ANTE_CAUSAL_OVERCLAIM"], 3), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["CLAIM_INDEPENDENCE_NOT_ESTABLISHED"], 3), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 9, "2026-09-04T12:00:00Z", "2026-09-04T11:00:00Z"), false);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_PUBLICATION_NOT_RECOMMENDED"], 0), false);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_MATERIALITY_TOO_LOW"], 0), false);
   assert.equal(shouldRetryQualityGate("AI_OUTPUT_INVALID", ["AI_MALFORMED_JSON"], 0), true);
