@@ -1,7 +1,1538 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T22:07:32.381Z",
+  "updated_at": "2026-09-05T22:23:21.567Z",
   "stories": [
+    {
+      "story_id": "wt-58cac49b38f415db",
+      "slug": "kriegsgegner-demonstrieren-polizei-stoppt-teil-von-protestzug-gegen-rheinmetall-in-koln-f415db",
+      "title": "Kriegsgegner demonstrieren: Polizei stoppt Teil von Protestzug gegen Rheinmetall in Köln",
+      "first_seen": "2026-09-05T16:27:14.000Z",
+      "last_updated": "2026-09-05T22:11:14.000Z",
+      "topic": [
+        "Geopolitik",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/kriegsgegner-demonstrieren--polizei-stoppt-teil-von-protestzug-gegen-rheinmetall-in-koeln-38211736.html",
+          "title": "Kriegsgegner demonstrieren: Polizei stoppt Teil von Protestzug gegen Rheinmetall in Köln",
+          "summary": "In Köln demonstrieren mehr Teilnehmer als erwartet mit dem Bündnis „Rheinmetall entwaffnen“. Ein Teil von ihnen wird von der Polizei gestoppt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T16:27:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "427f83aaa7444f4519311860942a2c37c8695b81855487d5f9c110fdd9d48d69",
+          "source_item_id": "519f2f4a8b4a118ce96508c6836298766d66576d1df84b5078d628f10c345b4f",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T16:27:14.000Z",
+          "ingested_at": "2026-09-05T16:36:34.186Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/elf-verletzte-polizisten--polizei-stoppt-teil-von-protestzug-gegen-rheinmetall-in-koeln-38211736.html",
+          "title": "Elf verletzte Polizisten: Polizei stoppt Teil von Protestzug gegen Rheinmetall in Köln",
+          "summary": "Vermummte sollen mit Stahlkugeln auf Polizisten geschossen haben. Die Polizei berichtet von beschädigten Helmen und sichergestellten Metallkugeln.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:11:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "2489652056099f132b28ab766472c813f1931bb6513343597f86fdaf72626f08",
+          "source_item_id": "84d495d69a5f638be9bf5c50ee510582b54800a6f1e6efa7447b352bfe15497e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T22:11:14.000Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-58cac49b38f415db-claim-01",
+          "story_id": "wt-58cac49b38f415db",
+          "claim": "Kriegsgegner demonstrieren: Polizei stoppt Teil von Protestzug gegen Rheinmetall in Köln: In Köln demonstrieren mehr Teilnehmer als erwartet mit dem Bündnis „Rheinmetall entwaffnen“. Ein Teil von ihnen wird von der Polizei gestoppt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T22:23:21.567Z"
+        },
+        {
+          "claim_id": "wt-58cac49b38f415db-claim-02",
+          "story_id": "wt-58cac49b38f415db",
+          "claim": "Elf verletzte Polizisten: Polizei stoppt Teil von Protestzug gegen Rheinmetall in Köln: Vermummte sollen mit Stahlkugeln auf Polizisten geschossen haben. Die Polizei berichtet von beschädigten Helmen und sichergestellten Metallkugeln.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T22:23:21.567Z"
+        }
+      ],
+      "content_hash": "3f0ed37b30304fe29dcca7b6cd4ac8076e37777deb0667a015026c76c5aeb95a",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_BLOCKED",
+      "versions": [],
+      "updated_at": "2026-09-05T22:23:21.567Z",
+      "event_first_seen_at": "2026-09-05T16:36:34.186Z",
+      "event_detected_at": "2026-09-05T16:36:34.186Z",
+      "event_id": "event-201da883bf8004ddde01",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 12.126116666666666,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 346.78968333333336,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T22:23:21.567Z",
+        "fingerprint": "27778afca13942aaba1af50846dc46589c13bc35657b8d285e46536282fbf33f",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-7ebecf5b3f91d490",
+      "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+      "title": "Vor Sachsen-Anhalt-Wahl: Siegmund lässt Kandidatur bei knapper Mehrheit offen",
+      "first_seen": "2026-09-05T22:05:00Z",
+      "last_updated": "2026-09-05T22:07:32.381Z",
+      "published_at": "2026-09-05T22:07:32.381Z",
+      "updated_at": "2026-09-05T22:07:32.381Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bild-access",
+          "publisher": "BILD",
+          "url": "https://www.bild.de/politik/inland/sachsen-anhalt-ulrich-siegmund-reichen-auch-drei-stimmen-mehrheit-nicht-6a9acf6908c763dcf81f4615",
+          "title": "AfD-Mann zu BILD: Siegmund reichen auch drei Stimmen Mehrheit nicht!",
+          "summary": "BILD berichtet am 05.09.2026 über ein Interview vom 04.09.2026. Siegmund begründet seine Forderung nach einer stabilen Mehrheit mit möglichen krankheitsbedingten Ausfällen. Die Kandidatur bei einer Stimme Mehrheit bleibt im Bericht offen. Die Videoüberschrift stellt den Regierungswillen grundsätzlich infrage.",
+          "source_type": "media_discovery",
+          "published_at": "2026-09-05T06:23:00Z",
+          "primary_source": false,
+          "source_topic": "Politik",
+          "content_hash": "7d90ff832f9233d4d68b3a89b5b17396cb20c6037fe9a9ca5fe3b7353aa5af3e",
+          "publisher_id": "bild",
+          "publisher_kind": "journalism",
+          "source_role": "actor_statement_report",
+          "requires_corroboration": true,
+          "source_published_at": "2026-09-05T06:23:00Z",
+          "provenance": {
+            "origin": "interview:bild-siegmund-2026-09-04",
+            "basis": "original_interview_report",
+            "independence_established": false
+          },
+          "research_metadata": {
+            "access": "public_research",
+            "original_interview_date": "2026-09-04",
+            "video_independently_viewed": false
+          }
+        },
+        {
+          "source_id": "focus-case-research",
+          "publisher": "FOCUS online",
+          "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+          "title": "Siegmund will mit eigener Mehrheit nicht unbedingt regieren",
+          "summary": "FOCUS online berichtet am 05.09.2026 um 07:15 Uhr über Siegmunds BILD-Interview. Auf die Frage nach seiner Kandidatur bei einer Stimme Mehrheit verweist er auf eine Entscheidung am Montag nach der Wahl. Es handelt sich um denselben Interviewursprung, nicht um unabhängige Bestätigung.",
+          "source_type": "media_discovery",
+          "published_at": "2026-09-05T05:15:00Z",
+          "primary_source": false,
+          "source_topic": "Politik",
+          "content_hash": "0beba9860e1a0d0e4ce4764426e5e4532c549a05ea93344f73f27859184511a6",
+          "publisher_id": "focus",
+          "publisher_kind": "journalism",
+          "source_role": "secondary_confirmation",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T05:15:00Z",
+          "provenance": {
+            "origin": "interview:bild-siegmund-2026-09-04",
+            "basis": "explicit_reference_to_same_bild_interview",
+            "independence_established": false
+          },
+          "research_metadata": {
+            "access": "public_search_excerpt",
+            "full_article_retrieval": "unavailable",
+            "independent_confirmation": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+          "title": "Wahl in Sachsen-Anhalt: Siegmund will Briefwahl nur in Ausnahmen",
+          "summary": "Im gesonderten Eintrag vom 02.09.2026 um 15:45 Uhr berichtet ZDFheute über Siegmunds Bedingung einer stabilen eigenen Mehrheit für eine Alleinregierung. Die Aussage fiel in einem Duell von Volksstimme und Mitteldeutscher Zeitung. Dieser frühere Vorbehalt widerspricht der Darstellung eines erst am Samstag entstandenen Vorbehalts.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-02T13:45:00Z",
+          "primary_source": false,
+          "source_topic": "Politik",
+          "content_hash": "814e1ee2efa6bdd6b2bb3c756b8487c387cf91d23868e071360814cb2082fa9f",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "background",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-02T13:45:00Z",
+          "provenance": {
+            "origin": "debate:volksstimme-mz-2026-09-02",
+            "basis": "dated_liveblog_entry",
+            "independence_established": false
+          },
+          "research_metadata": {
+            "entry_time": "2026-09-02T15:45:00+02:00",
+            "liveblog_entry_title": "Siegmund will nur mit stabiler AfD-Mehrheit regieren",
+            "scope": "Nur dieser abgegrenzte Eintrag; andere Liveblog-Themen sind nicht Bestandteil der Story."
+          }
+        },
+        {
+          "source_id": "landtag-sachsen-anhalt-context",
+          "publisher": "Landtag Sachsen-Anhalt",
+          "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+          "title": "Verfassung des Landes Sachsen-Anhalt und Grundgesetz: Artikel 65 – Bildung der Landesregierung",
+          "summary": "Artikel 65 der Landesverfassung: Der Landtag wählt den Ministerpräsidenten geheim. Zuerst ist die Mehrheit seiner Mitglieder nötig. Nach erfolglosem ersten Wahlgang folgt binnen sieben Tagen ein weiterer. Scheitert auch dieser, entscheidet der Landtag binnen weiterer vierzehn Tage über ein vorzeitiges Ende der Wahlperiode. Ohne entsprechenden Mehrheitsbeschluss folgt unverzüglich ein weiterer Wahlgang mit Mehrheit der abgegebenen Stimmen.",
+          "source_type": "official_reference",
+          "published_at": null,
+          "date_status": "undated_reference",
+          "retrieved_at": "2026-09-05T21:55:00Z",
+          "primary_source": true,
+          "source_topic": "Demokratie",
+          "content_hash": "2ab43f7ca01cf4bcda184ef5b2b5d8fbe78cc78fcdaa609d3555d595d300e0b0",
+          "publisher_id": "landtag-sachsen-anhalt",
+          "publisher_kind": "institution",
+          "source_role": "legal_context",
+          "requires_corroboration": false,
+          "source_published_at": null,
+          "provenance": {
+            "origin": "primary:landesverfassung-sachsen-anhalt",
+            "basis": "official_constitution_article_65",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "sachsen-anhalt-election-context",
+          "publisher": "Landeswahlleiterin Sachsen-Anhalt",
+          "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+          "title": "FAQs zur Landtagswahl in Sachsen-Anhalt 2026",
+          "summary": "Die Landeswahlleiterin nennt den 6. September 2026 als Wahltermin. Gewählt werden die Mitglieder des Landtags, nicht unmittelbar der Ministerpräsident.",
+          "source_type": "official_reference",
+          "published_at": null,
+          "date_status": "undated_reference",
+          "retrieved_at": "2026-09-05T21:55:00Z",
+          "primary_source": true,
+          "source_topic": "Demokratie",
+          "content_hash": "834dde58c68a4b9ed6849b01a5eb57c2a48b26251ccc6d89e0c32eb5659309b9",
+          "publisher_id": "sachsen-anhalt-landeswahlleiterin",
+          "publisher_kind": "institution",
+          "source_role": "election_calendar",
+          "requires_corroboration": false,
+          "source_published_at": null,
+          "provenance": {
+            "origin": "primary:landeswahlleiterin-sachsen-anhalt",
+            "basis": "official_election_faq",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-1",
+          "story_id": "wt-7ebecf5b3f91d490",
+          "claim": "FOCUS berichtet unter Berufung auf das BILD-Interview, Siegmund wolle über eine Kandidatur bei knappster Mehrheit erst nach der Wahl entscheiden.",
+          "status": "uncertain_claim",
+          "source_id": "focus-case-research",
+          "evidence": [
+            {
+              "source_id": "focus-case-research",
+              "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+              "excerpt_hash": "6bd8ec7384f43fbfd542",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T22:07:32.381Z"
+        },
+        {
+          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-2",
+          "story_id": "wt-7ebecf5b3f91d490",
+          "claim": "ZDFheute dokumentierte den Vorbehalt einer stabilen eigenen Mehrheit bereits bei einem früheren Auftritt.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+              "excerpt_hash": "786da8664aca1ba94d5b",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T22:07:32.381Z"
+        },
+        {
+          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-3",
+          "story_id": "wt-7ebecf5b3f91d490",
+          "claim": "Der Ministerpräsident wird durch den Landtag in geheimer Abstimmung gewählt, nicht direkt durch die Bevölkerung.",
+          "status": "primary_source_claim",
+          "source_id": "landtag-sachsen-anhalt-context",
+          "evidence": [
+            {
+              "source_id": "landtag-sachsen-anhalt-context",
+              "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+              "excerpt_hash": "6c9e71de60fa8e00cae7",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T22:07:32.381Z"
+        },
+        {
+          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-4",
+          "story_id": "wt-7ebecf5b3f91d490",
+          "claim": "Die Landtagswahl findet am 6. September 2026 statt.",
+          "status": "primary_source_claim",
+          "source_id": "sachsen-anhalt-election-context",
+          "evidence": [
+            {
+              "source_id": "sachsen-anhalt-election-context",
+              "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+              "excerpt_hash": "a450f405ab53eab21d79",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T22:07:32.381Z"
+        }
+      ],
+      "event_id": "event-54b05b34eaf30592d8ab",
+      "event_first_seen_at": "2026-09-05T22:05:00Z",
+      "event_detected_at": "2026-09-05T22:05:00Z",
+      "verification_started_at": "2026-09-05T22:07:32.381Z",
+      "publish_ready_at": "2026-09-05T22:07:32.381Z",
+      "news_status": "preliminary",
+      "deepening_due_at": null,
+      "evidence_groups": {
+        "groups": [
+          [
+            "bild-access",
+            "focus-case-research"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "landtag-sachsen-anhalt-context"
+          ],
+          [
+            "sachsen-anhalt-election-context"
+          ]
+        ],
+        "possible_independent_origins": 4,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "bild-access",
+              "focus-case-research"
+            ],
+            "reason": "shared_origin",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T22:07:32.381Z",
+        "fingerprint": "a413a881cef8ca7303d76ffe5ae5cd9676483d5a467c1305cb1d805b4b717f43",
+        "issue_codes": [],
+        "warning_codes": [
+          "SOURCE_REFERENCE_UNDATED"
+        ]
+      },
+      "followups": [],
+      "content_hash": "f16a6512b142757e6511189165eedde0bacd9e23ac752a4788796fd0e688e121",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Vor der Landtagswahl in Sachsen-Anhalt bleibt unklar, ob AfD-Spitzenkandidat Ulrich Siegmund bei einer nur knappen eigenen Mehrheit als Ministerpräsident kandidieren würde. Laut FOCUS-Bericht über sein BILD-Interview soll die Entscheidung bei einer Stimme Mehrheit erst nach der Wahl fallen. BILD veröffentlichte seinen Bericht am Samstagmorgen; das Interview stammt vom Freitag.\n\nDie Bedingung einer stabilen eigenen Mehrheit ist nicht neu: ZDFheute berichtete darüber bereits am Mittwoch aus einem früheren Duell. Damit ist kein plötzlicher vollständiger Kurswechsel am Samstagabend belegt. Am Sonntag wird der Landtag gewählt; über den Ministerpräsidenten entscheidet anschließend das Parlament in geheimer Abstimmung. Die tatsächliche Sitzverteilung und Siegmunds endgültige Entscheidung stehen noch aus.",
+      "analysis": {
+        "news_status": "preliminary",
+        "publication_depth": "deepened",
+        "summary": "Vor der Wahl in Sachsen-Anhalt lässt Siegmund laut Berichten über ein BILD-Interview seine Kandidatur bei nur einer Stimme Mehrheit offen. Den Vorbehalt einer stabilen eigenen Mehrheit hatte er bereits zuvor genannt.",
+        "detail_summary": "Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Deshalb ist die offene Kandidatur bei knapper Mehrheit eine relevante Information über die mögliche Regierungsbildung. Die aktuelle Antwort ist als Bericht über ein Interview zu lesen; eine völlig neue Abkehr vom bisherigen Regierungsanspruch ist daraus nicht belegt. Der bereits zuvor genannte Mehrheitsvorbehalt gehört zum Verständnis dazu. Wenn eine Partei nur knapp über die notwendige Mitgliedermehrheit verfügt, können fehlende Stimmen im geheimen Wahlgang entscheidend sein. Ob es tatsächlich solche Ausfälle oder abweichende Stimmen geben wird, ist offen; ein Wahlergebnis liegt diesem Stand noch nicht zugrunde.",
+        "why_relevant": "Unmittelbar vor der Wahl betrifft die Aussage die Informationsgrundlage für die Wahlentscheidung und die anschließende Regierungsbildung. Sehr hoch ist hier die demokratische Informationsrelevanz – nicht eine bereits nachgewiesene gesellschaftliche Wirkung.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "importance": "sehr hoch",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Für Wahlberechtigte ist die Kenntnis der Bedingungen einer möglichen Regierungsbildung relevant. Konkrete Folgen für Gesundheit, Einkommen oder Teilhabe lassen sich aus der Interviewaussage allein nicht bestimmen."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus der offenen Kandidatur folgt noch kein bestimmter Umweltzustand und kein belastbar bezifferbares Umweltrisiko."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "rationale": "Die Unterscheidung zwischen Wahlwerbung, tatsächlicher Kandidatur und parlamentarischer Mehrheit ist unmittelbar vor der Wahl besonders informationsrelevant. Ein Einfluss auf Wahlverhalten oder Vertrauen ist damit nicht nachgewiesen."
+        },
+        "impact_potential": "Klare Angaben über Bedingungen einer Kandidatur können eine informierte Wahlentscheidung unterstützen. Welchen Unterschied diese Information tatsächlich macht, bleibt empirisch offen.",
+        "impact_risks": [
+          "Unklare Bedingungen können Erwartungen an eine mögliche Regierungsbildung erschweren.",
+          "Eine zugespitzte Darstellung als vollständiger Verzicht könnte die tatsächliche bedingte Aussage verzerren."
+        ],
+        "mechanisms": [
+          "Wahlwerbung prägt Erwartungen an die spätere Regierungsbildung; die rechtliche Entscheidung fällt jedoch erst im Landtag.",
+          "Nachvollziehbare Attribution und frühere Aussagen ermöglichen den Vergleich von Ankündigung und späterer Entscheidung."
+        ],
+        "first_order": [
+          "Ohne eigene absolute Mehrheit fehlt eine allein aus eigenen Mandaten ableitbare Mitgliedermehrheit für die ersten Wahlgänge; daraus folgt weder ein automatischer Ausschluss einer Kandidatur noch ein bestimmtes Wahlergebnis.",
+          "Bei knapper eigener Mehrheit können fehlende oder anders abgegebene Stimmen im geheimen Wahlgang ausschlaggebend sein. Konkrete Abweichler sind nicht belegt."
+        ],
+        "second_order": [
+          "Scheitern die ersten Wahlgänge, greifen die in der Landesverfassung vorgesehenen weiteren Schritte; eine einfache Zusage ersetzt dieses Verfahren nicht.",
+          "Falls Siegmund nicht kandidiert, kann die Regierungsbildung andere Kandidaturen erfordern. Sein Verzicht allein löst keine automatische Neuwahl aus."
+        ],
+        "third_order": [
+          "Erst längerfristig wäre prüfbar, ob der Umgang mit Wahlzusagen institutionelles Vertrauen verändert. Dieser mögliche Wirkungspfad ist kein Nachweis einer eingetretenen Veränderung."
+        ],
+        "systemic_relevance": "Sehr hoch für demokratische Transparenz und parlamentarische Handlungsfähigkeit in einer unmittelbar bevorstehenden Wahl; keine parteipolitische Rangordnung.",
+        "transformation_potential": "Ein struktureller Wandel ist durch die Interviewaussage nicht belegt. Mögliche Änderungen staatlichen Handelns hängen von Wahlergebnis, Regierungsbildung und späteren Entscheidungen ab.",
+        "resilience": "Geheime Wahl, gestufte Mehrheitsanforderungen und geregelte weitere Wahlgänge bilden einen institutionellen Rahmen für unklare Mehrheiten.",
+        "side_effects": [
+          "Aufmerksamkeit für die Personalfrage kann Sachprogramme überlagern; ob dies geschieht, ist nicht belegt."
+        ],
+        "uncertainties": [
+          "Die aktuelle Interviewaussage ist über BILD und den darauf beruhenden FOCUS-Bericht erschlossen; das Video wurde hier nicht eigenständig angehört.",
+          "Beide Berichte haben denselben Interviewursprung und zählen nicht als zwei unabhängige Bestätigungen.",
+          "Die tatsächliche Mehrheit, eine spätere Kandidatur und das Abstimmungsverhalten der Abgeordneten bleiben offen.",
+          "Für behauptete interne Stimmverweigerer liegt in dieser Prüfung kein belastbarer Beleg vor; entsprechende Behauptungen werden nicht übernommen."
+        ],
+        "evidence_level": "Amtliche Quellen belegen Wahltermin und Verfahren. Die spätere Interviewantwort bleibt eine zugeschriebene journalistische Quellenaussage; frühere Bedingungen sind separat dokumentiert.",
+        "attribution": "BILD ist Ursprung des aktuellen Interviews, FOCUS berichtet darüber. ZDFheute dokumentiert einen früheren Auftritt. Landeswahlleiterin und Landtag belegen ausschließlich Termin und Verfahren, nicht Siegmunds Absichten.",
+        "watch_next": [
+          "Amtliches Wahlergebnis und tatsächliche Sitzverteilung prüfen.",
+          "Siegmunds Erklärung nach der Wahl und eine formelle Kandidatur gegen Originalquellen prüfen.",
+          "Parlamentarische Wahlgänge und tatsächliches Abstimmungsergebnis dokumentieren; keine Abweichler aus Vermutungen ableiten."
+        ],
+        "reference_frameworks": [
+          "Landesverfassung Sachsen-Anhalt: Bildung der Landesregierung und parlamentarische Wahl",
+          "Agenda 2030: SDG 16 als Referenz für nachvollziehbare Institutionen, nicht als Wirkungsbeweis"
+        ],
+        "publication_recommendation": true,
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "democratic_correctability",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "democratic_correctability",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Eigenständige konkrete Aussage über eine mögliche Kandidatur vor der Wahl, nicht bloß ein weiterer Wahlkampfbericht. Der frühere Vorbehalt wird mitgenannt; interne Spekulationen bleiben ausgeschlossen. Verfassungsrechtlicher Kontext beruht auf amtlichen Originalquellen."
+        },
+        "media_impact": {
+          "relevant": true,
+          "relevance_level": "high",
+          "reason": "Die Unterscheidung zwischen bedingter Kandidatur und grundsätzlich fehlendem Regierungswillen ist für das Verständnis materiell relevant.",
+          "factual_core": "Die Kandidatur bei knapper Mehrheit bleibt laut Interviewberichten offen; die Forderung nach stabiler Mehrheit wurde bereits zuvor genannt.",
+          "epistemic_status": {
+            "confirmed": [
+              "Die Wahl und das parlamentarische Verfahren sind amtlich dokumentiert."
+            ],
+            "actor_claims": [
+              "Die Interviewantwort beschreibt eine noch ausstehende Entscheidung für eine knappe Mehrheit."
+            ],
+            "open": [
+              "Endgültige Kandidatur und gesellschaftliche Kommunikationsfolgen sind offen."
+            ]
+          },
+          "attribution": {
+            "frame_source": "BILD-Videoüberschrift",
+            "speaker": "Redaktionelle Frage",
+            "original_term": "gar nicht regieren",
+            "usage_type": "editorial",
+            "placement": [
+              "headline"
+            ],
+            "attribution_quality": "editorial"
+          },
+          "speaker_statement": {
+            "present": true,
+            "speaker": "Ulrich Siegmund",
+            "statement": "Er knüpft die Regierungsbildung an eine stabile eigene Mehrheit und verweist für die knappste Mehrheit auf eine spätere Entscheidung.",
+            "status": "claim"
+          },
+          "framing": {
+            "detected": true,
+            "term": "gar nicht regieren",
+            "origin_in_story": "BILD-Videoüberschrift",
+            "media_usage": "headline",
+            "attribution_quality": "eindeutig attribuiert",
+            "factual_status": "Interpretation",
+            "frame_type": [
+              "Konflikt"
+            ],
+            "political_history_relevant": false,
+            "political_history": "",
+            "political_history_evidence": []
+          },
+          "frame_analysis": {
+            "frame_detected": true,
+            "frame_term": "gar nicht regieren",
+            "frame_type": [
+              "Konflikt"
+            ],
+            "problem_definition": "Eine bedingte Kandidatur wird als Frage nach grundsätzlicher Regierungsbereitschaft zugespitzt.",
+            "implied_cause": "Offen; keine Absicht unterstellt.",
+            "implied_responsibility": "Im Mittelpunkt steht die Kandidaturentscheidung, nicht eine belegte persönliche Absicht.",
+            "implied_threat": "Die Formulierung kann Zweifel an der Verbindlichkeit von Wahlwerbung nahelegen.",
+            "implied_solution_space": "Ein Abgleich der früheren Bedingungen mit der aktuellen Aussage ermöglicht eine sachlichere Beurteilung.",
+            "material_omissions": [
+              "Für die Einordnung ist der frühere Vorbehalt einer stabilen Mehrheit wesentlich."
+            ]
+          },
+          "political_context": {
+            "relevant": false,
+            "classification": "",
+            "evidence_based": false,
+            "evidence": [],
+            "uncertainty": "Keine politische Herkunftsgeschichte des Ausdrucks untersucht."
+          },
+          "resonance": {
+            "resonance_space": "",
+            "resonance_risk": "",
+            "normalization_potential": "",
+            "repetition_effect": "",
+            "trust_effect": "",
+            "polarization_potential": "",
+            "discourse_effect": ""
+          },
+          "discourse_effect": {
+            "impact_status": "potential",
+            "resonance_space": "Erwartungen an Wahlzusagen und Regierungsbildung.",
+            "normalization_potential": "open",
+            "repetition_risk": "open",
+            "polarization_potential": "Die zugespitzte Frage kann eine Personaldebatte verstärken.",
+            "trust_effect_potential": "Vertrauensfolgen sind denkbar, aber nicht gemessen.",
+            "discourse_effect_potential": "Eine Trennung von Bedingung und grundsätzlicher Bereitschaft kann das Verständnis verbessern."
+          },
+          "impact_path": {
+            "first_order": "Die Frage kann die Aufmerksamkeit auf den Regierungswillen lenken.",
+            "second_order": "Wiederholung könnte den Eindruck einer grundsätzlich fehlenden Bereitschaft verstärken.",
+            "third_order": "Folgen für institutionelles Vertrauen wären gesondert zu untersuchen."
+          },
+          "evidence": {
+            "status": "medium",
+            "level": "medium",
+            "what_is_known": "Beobachtbar sind die redaktionelle Frage und der frühere Mehrheitsvorbehalt.",
+            "what_is_inferred": "Ein möglicher Unterschied zwischen bedingter Kandidatur und wahrgenommenem vollständigem Verzicht.",
+            "what_is_open": "Eine tatsächliche Veränderung von Vertrauen oder Wahlentscheidung ist nicht nachgewiesen.",
+            "facts": [
+              "Ein früherer Mehrheitsvorbehalt ist dokumentiert."
+            ],
+            "observations": [
+              "Die Videoüberschrift stellt den Regierungswillen als Frage dar."
+            ],
+            "inferences": [
+              "Eine zugespitzte Frage kann weiter reichen als die bedingte Interviewantwort."
+            ],
+            "impact_potentials": [
+              "Lesende könnten Kandidaturbedingung und vollständigen Verzicht verwechseln."
+            ],
+            "impact_risks": [
+              "Möglicher Kontextverlust bei verkürzter Weiterverbreitung."
+            ],
+            "observed_impacts": [],
+            "limitations": [
+              "Keine Untersuchung tatsächlicher Rezeption oder des Wahlverhaltens."
+            ]
+          },
+          "observed_impact": {
+            "present": false,
+            "description": null,
+            "evidence": []
+          },
+          "public_explanation": "Die Videoüberschrift bei BILD stellt die grundsätzliche Regierungsbereitschaft als Frage dar. Die berichtete Antwort betrifft dagegen die Kandidatur unter einer bestimmten Mehrheitsbedingung. Das ist nicht dasselbe wie ein vollständiger Verzicht. Die Frage ist eine redaktionelle Zuspitzung, kein direktes Zitat des Kandidaten. Für das Verständnis gehört außerdem dazu, dass der Vorbehalt einer stabilen Mehrheit schon vor diesem Interview bekannt war. Eine verkürzte Weitergabe kann den Eindruck eines umfassenderen Kurswechsels begünstigen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder dem Medium noch dem Kandidaten wird eine Absicht unterstellt. Entscheidend sind die konkrete Aussage, ihr früherer Kontext und die noch ausstehende Entscheidung.",
+          "editorial_assessment": "Die redaktionelle Frage ist als Zuspitzung zu unterscheiden von der berichteten bedingten Kandidatur; keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
+          "fact_first_alternative": "Vor der Landtagswahl bleibt die Kandidatur bei knapper Mehrheit laut Interviewberichten offen. Den Vorbehalt einer stabilen Mehrheit hatte der Kandidat bereits früher genannt.",
+          "fact_first_reframe": {
+            "title": "",
+            "source_summary": "",
+            "summary": "",
+            "detail_summary": ""
+          },
+          "self_frame_warning": false,
+          "self_frame_check": {
+            "problem_detected": false,
+            "problems": [],
+            "frame_repetition_count": 0,
+            "rewrite_required": false,
+            "recommended_title": "",
+            "recommended_summary": "",
+            "recommended_meta_description": ""
+          },
+          "source_comparison": {
+            "sufficient_basis": false,
+            "finding": ""
+          }
+        },
+        "story_id": "wt-7ebecf5b3f91d490",
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-05T22:07:32.381Z",
+        "media_trigger_fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
+        "media_trigger": {
+          "relevant": true,
+          "level": "high",
+          "score": 4,
+          "reasons": [
+            "analysis_substantive_finding"
+          ],
+          "matched_terms": [
+            "gar nicht regieren"
+          ],
+          "source_count": 5,
+          "comparable_source_count": 2,
+          "fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
+          "content_fingerprint": "726bdba0d9741462c35f84c4b991cc04a86aa1a591d9e08f1c34ac6211f0b6d5",
+          "basis": "analysis_finding",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T22:07:32.381Z",
+          "content_hash": "f16a6512b142757e6511189165eedde0bacd9e23ac752a4788796fd0e688e121",
+          "source_summary": "Vor der Landtagswahl in Sachsen-Anhalt bleibt unklar, ob AfD-Spitzenkandidat Ulrich Siegmund bei einer nur knappen eigenen Mehrheit als Ministerpräsident kandidieren würde. Laut FOCUS-Bericht über sein BILD-Interview soll die Entscheidung bei einer Stimme Mehrheit erst nach der Wahl fallen. BILD veröffentlichte seinen Bericht am Samstagmorgen; das Interview stammt vom Freitag.\n\nDie Bedingung einer stabilen eigenen Mehrheit ist nicht neu: ZDFheute berichtete darüber bereits am Mittwoch aus einem früheren Duell. Damit ist kein plötzlicher vollständiger Kurswechsel am Samstagabend belegt. Am Sonntag wird der Landtag gewählt; über den Ministerpräsidenten entscheidet anschließend das Parlament in geheimer Abstimmung. Die tatsächliche Sitzverteilung und Siegmunds endgültige Entscheidung stehen noch aus.",
+          "analysis": {
+            "news_status": "preliminary",
+            "publication_depth": "deepened",
+            "summary": "Vor der Wahl in Sachsen-Anhalt lässt Siegmund laut Berichten über ein BILD-Interview seine Kandidatur bei nur einer Stimme Mehrheit offen. Den Vorbehalt einer stabilen eigenen Mehrheit hatte er bereits zuvor genannt.",
+            "detail_summary": "Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Deshalb ist die offene Kandidatur bei knapper Mehrheit eine relevante Information über die mögliche Regierungsbildung. Die aktuelle Antwort ist als Bericht über ein Interview zu lesen; eine völlig neue Abkehr vom bisherigen Regierungsanspruch ist daraus nicht belegt. Der bereits zuvor genannte Mehrheitsvorbehalt gehört zum Verständnis dazu. Wenn eine Partei nur knapp über die notwendige Mitgliedermehrheit verfügt, können fehlende Stimmen im geheimen Wahlgang entscheidend sein. Ob es tatsächlich solche Ausfälle oder abweichende Stimmen geben wird, ist offen; ein Wahlergebnis liegt diesem Stand noch nicht zugrunde.",
+            "why_relevant": "Unmittelbar vor der Wahl betrifft die Aussage die Informationsgrundlage für die Wahlentscheidung und die anschließende Regierungsbildung. Sehr hoch ist hier die demokratische Informationsrelevanz – nicht eine bereits nachgewiesene gesellschaftliche Wirkung.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "importance": "sehr hoch",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Für Wahlberechtigte ist die Kenntnis der Bedingungen einer möglichen Regierungsbildung relevant. Konkrete Folgen für Gesundheit, Einkommen oder Teilhabe lassen sich aus der Interviewaussage allein nicht bestimmen."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus der offenen Kandidatur folgt noch kein bestimmter Umweltzustand und kein belastbar bezifferbares Umweltrisiko."
+            },
+            "democracy": {
+              "relevance": "sehr hoch",
+              "rationale": "Die Unterscheidung zwischen Wahlwerbung, tatsächlicher Kandidatur und parlamentarischer Mehrheit ist unmittelbar vor der Wahl besonders informationsrelevant. Ein Einfluss auf Wahlverhalten oder Vertrauen ist damit nicht nachgewiesen."
+            },
+            "impact_potential": "Klare Angaben über Bedingungen einer Kandidatur können eine informierte Wahlentscheidung unterstützen. Welchen Unterschied diese Information tatsächlich macht, bleibt empirisch offen.",
+            "impact_risks": [
+              "Unklare Bedingungen können Erwartungen an eine mögliche Regierungsbildung erschweren.",
+              "Eine zugespitzte Darstellung als vollständiger Verzicht könnte die tatsächliche bedingte Aussage verzerren."
+            ],
+            "mechanisms": [
+              "Wahlwerbung prägt Erwartungen an die spätere Regierungsbildung; die rechtliche Entscheidung fällt jedoch erst im Landtag.",
+              "Nachvollziehbare Attribution und frühere Aussagen ermöglichen den Vergleich von Ankündigung und späterer Entscheidung."
+            ],
+            "first_order": [
+              "Ohne eigene absolute Mehrheit fehlt eine allein aus eigenen Mandaten ableitbare Mitgliedermehrheit für die ersten Wahlgänge; daraus folgt weder ein automatischer Ausschluss einer Kandidatur noch ein bestimmtes Wahlergebnis.",
+              "Bei knapper eigener Mehrheit können fehlende oder anders abgegebene Stimmen im geheimen Wahlgang ausschlaggebend sein. Konkrete Abweichler sind nicht belegt."
+            ],
+            "second_order": [
+              "Scheitern die ersten Wahlgänge, greifen die in der Landesverfassung vorgesehenen weiteren Schritte; eine einfache Zusage ersetzt dieses Verfahren nicht.",
+              "Falls Siegmund nicht kandidiert, kann die Regierungsbildung andere Kandidaturen erfordern. Sein Verzicht allein löst keine automatische Neuwahl aus."
+            ],
+            "third_order": [
+              "Erst längerfristig wäre prüfbar, ob der Umgang mit Wahlzusagen institutionelles Vertrauen verändert. Dieser mögliche Wirkungspfad ist kein Nachweis einer eingetretenen Veränderung."
+            ],
+            "systemic_relevance": "Sehr hoch für demokratische Transparenz und parlamentarische Handlungsfähigkeit in einer unmittelbar bevorstehenden Wahl; keine parteipolitische Rangordnung.",
+            "transformation_potential": "Ein struktureller Wandel ist durch die Interviewaussage nicht belegt. Mögliche Änderungen staatlichen Handelns hängen von Wahlergebnis, Regierungsbildung und späteren Entscheidungen ab.",
+            "resilience": "Geheime Wahl, gestufte Mehrheitsanforderungen und geregelte weitere Wahlgänge bilden einen institutionellen Rahmen für unklare Mehrheiten.",
+            "side_effects": [
+              "Aufmerksamkeit für die Personalfrage kann Sachprogramme überlagern; ob dies geschieht, ist nicht belegt."
+            ],
+            "uncertainties": [
+              "Die aktuelle Interviewaussage ist über BILD und den darauf beruhenden FOCUS-Bericht erschlossen; das Video wurde hier nicht eigenständig angehört.",
+              "Beide Berichte haben denselben Interviewursprung und zählen nicht als zwei unabhängige Bestätigungen.",
+              "Die tatsächliche Mehrheit, eine spätere Kandidatur und das Abstimmungsverhalten der Abgeordneten bleiben offen.",
+              "Für behauptete interne Stimmverweigerer liegt in dieser Prüfung kein belastbarer Beleg vor; entsprechende Behauptungen werden nicht übernommen."
+            ],
+            "evidence_level": "Amtliche Quellen belegen Wahltermin und Verfahren. Die spätere Interviewantwort bleibt eine zugeschriebene journalistische Quellenaussage; frühere Bedingungen sind separat dokumentiert.",
+            "attribution": "BILD ist Ursprung des aktuellen Interviews, FOCUS berichtet darüber. ZDFheute dokumentiert einen früheren Auftritt. Landeswahlleiterin und Landtag belegen ausschließlich Termin und Verfahren, nicht Siegmunds Absichten.",
+            "watch_next": [
+              "Amtliches Wahlergebnis und tatsächliche Sitzverteilung prüfen.",
+              "Siegmunds Erklärung nach der Wahl und eine formelle Kandidatur gegen Originalquellen prüfen.",
+              "Parlamentarische Wahlgänge und tatsächliches Abstimmungsergebnis dokumentieren; keine Abweichler aus Vermutungen ableiten."
+            ],
+            "reference_frameworks": [
+              "Landesverfassung Sachsen-Anhalt: Bildung der Landesregierung und parlamentarische Wahl",
+              "Agenda 2030: SDG 16 als Referenz für nachvollziehbare Institutionen, nicht als Wirkungsbeweis"
+            ],
+            "publication_recommendation": true,
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "democratic_correctability",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "democratic_correctability",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Eigenständige konkrete Aussage über eine mögliche Kandidatur vor der Wahl, nicht bloß ein weiterer Wahlkampfbericht. Der frühere Vorbehalt wird mitgenannt; interne Spekulationen bleiben ausgeschlossen. Verfassungsrechtlicher Kontext beruht auf amtlichen Originalquellen."
+            },
+            "media_impact": {
+              "relevant": true,
+              "relevance_level": "high",
+              "reason": "Die Unterscheidung zwischen bedingter Kandidatur und grundsätzlich fehlendem Regierungswillen ist für das Verständnis materiell relevant.",
+              "factual_core": "Die Kandidatur bei knapper Mehrheit bleibt laut Interviewberichten offen; die Forderung nach stabiler Mehrheit wurde bereits zuvor genannt.",
+              "epistemic_status": {
+                "confirmed": [
+                  "Die Wahl und das parlamentarische Verfahren sind amtlich dokumentiert."
+                ],
+                "actor_claims": [
+                  "Die Interviewantwort beschreibt eine noch ausstehende Entscheidung für eine knappe Mehrheit."
+                ],
+                "open": [
+                  "Endgültige Kandidatur und gesellschaftliche Kommunikationsfolgen sind offen."
+                ]
+              },
+              "attribution": {
+                "frame_source": "BILD-Videoüberschrift",
+                "speaker": "Redaktionelle Frage",
+                "original_term": "gar nicht regieren",
+                "usage_type": "editorial",
+                "placement": [
+                  "headline"
+                ],
+                "attribution_quality": "editorial"
+              },
+              "speaker_statement": {
+                "present": true,
+                "speaker": "Ulrich Siegmund",
+                "statement": "Er knüpft die Regierungsbildung an eine stabile eigene Mehrheit und verweist für die knappste Mehrheit auf eine spätere Entscheidung.",
+                "status": "claim"
+              },
+              "framing": {
+                "detected": true,
+                "term": "gar nicht regieren",
+                "origin_in_story": "BILD-Videoüberschrift",
+                "media_usage": "headline",
+                "attribution_quality": "eindeutig attribuiert",
+                "factual_status": "Interpretation",
+                "frame_type": [
+                  "Konflikt"
+                ],
+                "political_history_relevant": false,
+                "political_history": "",
+                "political_history_evidence": []
+              },
+              "frame_analysis": {
+                "frame_detected": true,
+                "frame_term": "gar nicht regieren",
+                "frame_type": [
+                  "Konflikt"
+                ],
+                "problem_definition": "Eine bedingte Kandidatur wird als Frage nach grundsätzlicher Regierungsbereitschaft zugespitzt.",
+                "implied_cause": "Offen; keine Absicht unterstellt.",
+                "implied_responsibility": "Im Mittelpunkt steht die Kandidaturentscheidung, nicht eine belegte persönliche Absicht.",
+                "implied_threat": "Die Formulierung kann Zweifel an der Verbindlichkeit von Wahlwerbung nahelegen.",
+                "implied_solution_space": "Ein Abgleich der früheren Bedingungen mit der aktuellen Aussage ermöglicht eine sachlichere Beurteilung.",
+                "material_omissions": [
+                  "Für die Einordnung ist der frühere Vorbehalt einer stabilen Mehrheit wesentlich."
+                ]
+              },
+              "political_context": {
+                "relevant": false,
+                "classification": "",
+                "evidence_based": false,
+                "evidence": [],
+                "uncertainty": "Keine politische Herkunftsgeschichte des Ausdrucks untersucht."
+              },
+              "resonance": {
+                "resonance_space": "",
+                "resonance_risk": "",
+                "normalization_potential": "",
+                "repetition_effect": "",
+                "trust_effect": "",
+                "polarization_potential": "",
+                "discourse_effect": ""
+              },
+              "discourse_effect": {
+                "impact_status": "potential",
+                "resonance_space": "Erwartungen an Wahlzusagen und Regierungsbildung.",
+                "normalization_potential": "open",
+                "repetition_risk": "open",
+                "polarization_potential": "Die zugespitzte Frage kann eine Personaldebatte verstärken.",
+                "trust_effect_potential": "Vertrauensfolgen sind denkbar, aber nicht gemessen.",
+                "discourse_effect_potential": "Eine Trennung von Bedingung und grundsätzlicher Bereitschaft kann das Verständnis verbessern."
+              },
+              "impact_path": {
+                "first_order": "Die Frage kann die Aufmerksamkeit auf den Regierungswillen lenken.",
+                "second_order": "Wiederholung könnte den Eindruck einer grundsätzlich fehlenden Bereitschaft verstärken.",
+                "third_order": "Folgen für institutionelles Vertrauen wären gesondert zu untersuchen."
+              },
+              "evidence": {
+                "status": "medium",
+                "level": "medium",
+                "what_is_known": "Beobachtbar sind die redaktionelle Frage und der frühere Mehrheitsvorbehalt.",
+                "what_is_inferred": "Ein möglicher Unterschied zwischen bedingter Kandidatur und wahrgenommenem vollständigem Verzicht.",
+                "what_is_open": "Eine tatsächliche Veränderung von Vertrauen oder Wahlentscheidung ist nicht nachgewiesen.",
+                "facts": [
+                  "Ein früherer Mehrheitsvorbehalt ist dokumentiert."
+                ],
+                "observations": [
+                  "Die Videoüberschrift stellt den Regierungswillen als Frage dar."
+                ],
+                "inferences": [
+                  "Eine zugespitzte Frage kann weiter reichen als die bedingte Interviewantwort."
+                ],
+                "impact_potentials": [
+                  "Lesende könnten Kandidaturbedingung und vollständigen Verzicht verwechseln."
+                ],
+                "impact_risks": [
+                  "Möglicher Kontextverlust bei verkürzter Weiterverbreitung."
+                ],
+                "observed_impacts": [],
+                "limitations": [
+                  "Keine Untersuchung tatsächlicher Rezeption oder des Wahlverhaltens."
+                ]
+              },
+              "observed_impact": {
+                "present": false,
+                "description": null,
+                "evidence": []
+              },
+              "public_explanation": "Die Videoüberschrift bei BILD stellt die grundsätzliche Regierungsbereitschaft als Frage dar. Die berichtete Antwort betrifft dagegen die Kandidatur unter einer bestimmten Mehrheitsbedingung. Das ist nicht dasselbe wie ein vollständiger Verzicht. Die Frage ist eine redaktionelle Zuspitzung, kein direktes Zitat des Kandidaten. Für das Verständnis gehört außerdem dazu, dass der Vorbehalt einer stabilen Mehrheit schon vor diesem Interview bekannt war. Eine verkürzte Weitergabe kann den Eindruck eines umfassenderen Kurswechsels begünstigen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder dem Medium noch dem Kandidaten wird eine Absicht unterstellt. Entscheidend sind die konkrete Aussage, ihr früherer Kontext und die noch ausstehende Entscheidung.",
+              "editorial_assessment": "Die redaktionelle Frage ist als Zuspitzung zu unterscheiden von der berichteten bedingten Kandidatur; keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
+              "fact_first_alternative": "Vor der Landtagswahl bleibt die Kandidatur bei knapper Mehrheit laut Interviewberichten offen. Den Vorbehalt einer stabilen Mehrheit hatte der Kandidat bereits früher genannt.",
+              "fact_first_reframe": {
+                "title": "",
+                "source_summary": "",
+                "summary": "",
+                "detail_summary": ""
+              },
+              "self_frame_warning": false,
+              "self_frame_check": {
+                "problem_detected": false,
+                "problems": [],
+                "frame_repetition_count": 0,
+                "rewrite_required": false,
+                "recommended_title": "",
+                "recommended_summary": "",
+                "recommended_meta_description": ""
+              },
+              "source_comparison": {
+                "sufficient_basis": false,
+                "finding": ""
+              }
+            },
+            "story_id": "wt-7ebecf5b3f91d490",
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-05T22:07:32.381Z",
+            "media_trigger_fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
+            "media_trigger": {
+              "relevant": true,
+              "level": "high",
+              "score": 4,
+              "reasons": [
+                "analysis_substantive_finding"
+              ],
+              "matched_terms": [
+                "gar nicht regieren"
+              ],
+              "source_count": 5,
+              "comparable_source_count": 2,
+              "fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
+              "content_fingerprint": "726bdba0d9741462c35f84c4b991cc04a86aa1a591d9e08f1c34ac6211f0b6d5",
+              "basis": "analysis_finding",
+              "version": "2.0"
+            }
+          },
+          "provider": "editorial_review",
+          "model": "source_bound_review",
+          "mode": "editorial_review",
+          "method_sources": [
+            "AGENTS.md",
+            "source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
+          ],
+          "claims": [
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-1",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "FOCUS berichtet unter Berufung auf das BILD-Interview, Siegmund wolle über eine Kandidatur bei knappster Mehrheit erst nach der Wahl entscheiden.",
+              "status": "uncertain_claim",
+              "source_id": "focus-case-research",
+              "evidence": [
+                {
+                  "source_id": "focus-case-research",
+                  "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+                  "excerpt_hash": "6bd8ec7384f43fbfd542",
+                  "checked_at": "2026-09-05T22:07:32.381Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-2",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "ZDFheute dokumentierte den Vorbehalt einer stabilen eigenen Mehrheit bereits bei einem früheren Auftritt.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+                  "excerpt_hash": "786da8664aca1ba94d5b",
+                  "checked_at": "2026-09-05T22:07:32.381Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-3",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "Der Ministerpräsident wird durch den Landtag in geheimer Abstimmung gewählt, nicht direkt durch die Bevölkerung.",
+              "status": "primary_source_claim",
+              "source_id": "landtag-sachsen-anhalt-context",
+              "evidence": [
+                {
+                  "source_id": "landtag-sachsen-anhalt-context",
+                  "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+                  "excerpt_hash": "6c9e71de60fa8e00cae7",
+                  "checked_at": "2026-09-05T22:07:32.381Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-4",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "Die Landtagswahl findet am 6. September 2026 statt.",
+              "status": "primary_source_claim",
+              "source_id": "sachsen-anhalt-election-context",
+              "evidence": [
+                {
+                  "source_id": "sachsen-anhalt-election-context",
+                  "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+                  "excerpt_hash": "a450f405ab53eab21d79",
+                  "checked_at": "2026-09-05T22:07:32.381Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T22:07:32.381Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bild-access",
+              "url": "https://www.bild.de/politik/inland/sachsen-anhalt-ulrich-siegmund-reichen-auch-drei-stimmen-mehrheit-nicht-6a9acf6908c763dcf81f4615",
+              "content_hash": "7d90ff832f9233d4d68b3a89b5b17396cb20c6037fe9a9ca5fe3b7353aa5af3e"
+            },
+            {
+              "source_id": "focus-case-research",
+              "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+              "content_hash": "0beba9860e1a0d0e4ce4764426e5e4532c549a05ea93344f73f27859184511a6"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+              "content_hash": "814e1ee2efa6bdd6b2bb3c756b8487c387cf91d23868e071360814cb2082fa9f"
+            },
+            {
+              "source_id": "landtag-sachsen-anhalt-context",
+              "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+              "content_hash": "2ab43f7ca01cf4bcda184ef5b2b5d8fbe78cc78fcdaa609d3555d595d300e0b0"
+            },
+            {
+              "source_id": "sachsen-anhalt-election-context",
+              "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+              "content_hash": "834dde58c68a4b9ed6849b01a5eb57c2a48b26251ccc6d89e0c32eb5659309b9"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-05T22:07:32.381Z",
+          "source_count": 5
+        }
+      ],
+      "retirement_history": [],
+      "editorial_review": {
+        "research_checked_at": "2026-09-05T22:05:00Z",
+        "basis": "Quellengebundene redaktionelle Prüfung des öffentlich erschlossenen BILD-Interviews, des FOCUS-Berichts, früherer ZDF-Berichterstattung und amtlicher Wahl-/Verfassungsquellen. Das eingebettete Video wurde nicht eigenständig angehört. Keine unabhängige Bestätigung möglicher interner Abweichler. FOCUS berichtet über dasselbe Interview, nicht über eine zweite eigenständige Aussage.",
+        "original_event_date": "2026-09-04",
+        "exclusions": [
+          "Kein belegter plötzlicher Kurswechsel am Samstagabend",
+          "Keine Behauptung interner Stimmverweigerer",
+          "Keine Prognose einer absoluten Mehrheit",
+          "Keine Bewertung einer Partei oder Person"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-78b8df2827ab4527",
+      "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+      "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+      "first_seen": "2026-09-05T18:15:04.000Z",
+      "last_updated": "2026-09-05T22:05:33.000Z",
+      "topic": [
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
+          "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+          "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:15:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ada3b25d5f1d2f6395fdb01c2694dc1c91caad6028096c51398f529688341224",
+          "source_item_id": "caa7462337f456f714632a73839e9496507b2c89174f6f0116345ae1d1cdd47d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T18:15:04.000Z",
+          "ingested_at": "2026-09-05T18:21:18.289Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-100.html",
+          "title": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
+          "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T20:57:48.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ba6b5336cbefd5ab70cccb0ef8cbf8e0aa12442ee33c3304eb8af8705fc795b2",
+          "source_item_id": "88ed0dc883a49659c74146dce5d751ea22310c09eefc2d2a9aabbbbe22ae7017",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T20:57:48.000Z",
+          "ingested_at": "2026-09-05T22:06:43.441Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/ausland/europa/witkoff-kushner-treffen-putin-100.html",
+          "title": "Witkoff und Kushner treffen Putin in Moskau",
+          "summary": "Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Details des Friedensplans ble…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T21:00:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "f97c41dda0f39166152195a2658feceaacb5f3f5245019c765e996777dece68e",
+          "source_item_id": "94e3ce8628219fad670ec251de9fd4161e140178b0ec05449ed0a8ab76a74bc6",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T21:00:08.000Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-102.html",
+          "title": "Gespräche über Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
+          "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Jetzt werden die Gesandten von Präsident Trump in Kiew erwartet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:05:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4366d035e754dab47a94244de00e70f6bc063f150ee84fe83a67b893671b1127",
+          "source_item_id": "9a0ca262de20d1c36c88339951571de63ee0f66468c2c9a41e6d97cd2ba9c277",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T22:05:33.000Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-01",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen: Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T22:23:21.567Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-02",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen: Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T22:23:21.567Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-03",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Witkoff und Kushner treffen Putin in Moskau: Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Details des Friedensplans ble…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T22:23:21.567Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-04",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Gespräche über Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen: In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Jetzt werden die Gesandten von Präsident Trump in Kiew erwartet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T22:23:21.567Z"
+        }
+      ],
+      "content_hash": "87099f26eb9b2c19b85860e1e721c043e89e2b618a164f526dc8ea04a6dba03b",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_BLOCKED",
+      "versions": [],
+      "updated_at": "2026-09-05T22:23:21.567Z",
+      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
+      "event_detected_at": "2026-09-05T18:21:18.289Z",
+      "event_id": "event-33c99d9ec5432a4822d9",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.80945,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 242.05463333333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T22:23:21.567Z",
+        "fingerprint": "412e54d122e186380a2ed8ec85602211fed9059f2cc619c3c0a61682c337fff9",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-ee07be9df8bc0aea",
+      "slug": "nach-hackerangriff-auf-berliner-verwaltung-senatskanzlei-richtet-zusatzliche-steuerungse-bc0aea",
+      "title": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein",
+      "first_seen": "2026-09-05T18:15:04.000Z",
+      "last_updated": "2026-09-05T22:05:33.000Z",
+      "topic": [
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/senatskanzlei-richtet-zusaetzliche-steuerungseinheit-ein-100.html",
+          "title": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein",
+          "summary": "Nach dem Hackerangriff auf die Berliner Senatsverwaltung ist eine neue Einheit eingerichtet worden, um die von den Tätern veröffentlichten Dateien auszuwerten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:15:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4c7f03431d7580ae551858aac1ddb23233a7f64645f5e0aa34fedd75b354950f",
+          "source_item_id": "dd82a34880818d128cd242532c378f513d3c45e69f8e4dbe01eb20e5d5a917c0",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T18:15:04.000Z",
+          "ingested_at": "2026-09-05T18:21:18.289Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/senatskanzlei-richtet-zusaetzliche-steuerungseinheit-ein-104.html",
+          "title": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein",
+          "summary": "Nach dem Hackerangriff auf die Berliner Senatsverwaltung ist eine neue Einheit eingerichtet worden, um die von den Tätern veröffentlichten Dateien auszuwerten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:05:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4de7b9008116f649b02eed51fe78fbd5e386bebce9278f127bc18ac836da0c50",
+          "source_item_id": "7929aa93997dcd5de39aa473dfba160e4a9d8484b94ee9b57a3921fa0651b34c",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T22:05:33.000Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ee07be9df8bc0aea-claim-01",
+          "story_id": "wt-ee07be9df8bc0aea",
+          "claim": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein: Nach dem Hackerangriff auf die Berliner Senatsverwaltung ist eine neue Einheit eingerichtet worden, um die von den Tätern veröffentlichten Dateien auszuwerten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T22:23:21.567Z"
+        },
+        {
+          "claim_id": "wt-ee07be9df8bc0aea-claim-02",
+          "story_id": "wt-ee07be9df8bc0aea",
+          "claim": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein: Nach dem Hackerangriff auf die Berliner Senatsverwaltung ist eine neue Einheit eingerichtet worden, um die von den Tätern veröffentlichten Dateien auszuwerten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T22:23:21.567Z"
+        }
+      ],
+      "content_hash": "471b1464745dbdbd241b23858c2aaafc3c2124f340b1b92a990b58c28ce160b5",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_BLOCKED",
+      "versions": [],
+      "updated_at": "2026-09-05T22:23:21.567Z",
+      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
+      "event_detected_at": "2026-09-05T18:21:18.289Z",
+      "event_id": "event-7fdfd0a829751fedc836",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Finanzen"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.80945,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 242.05463333333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T22:23:21.567Z",
+        "fingerprint": "eb41a4e1276b21f332f0926f92a92bebd49731d7b861a8d9601d9f796086d2e1",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-6347f9739484a7d1",
       "slug": "nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh-84a7d1",
@@ -504,235 +2035,6 @@
       }
     },
     {
-      "story_id": "wt-78b8df2827ab4527",
-      "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
-      "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
-      "first_seen": "2026-09-05T18:15:04.000Z",
-      "last_updated": "2026-09-05T21:00:08.000Z",
-      "topic": [
-        "Geopolitik",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
-          "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
-          "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T18:15:04.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "ada3b25d5f1d2f6395fdb01c2694dc1c91caad6028096c51398f529688341224",
-          "source_item_id": "caa7462337f456f714632a73839e9496507b2c89174f6f0116345ae1d1cdd47d",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T18:15:04.000Z",
-          "ingested_at": "2026-09-05T18:21:18.289Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-100.html",
-          "title": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
-          "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T20:57:48.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "ba6b5336cbefd5ab70cccb0ef8cbf8e0aa12442ee33c3304eb8af8705fc795b2",
-          "source_item_id": "88ed0dc883a49659c74146dce5d751ea22310c09eefc2d2a9aabbbbe22ae7017",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T20:57:48.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesschau-access",
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/ausland/europa/witkoff-kushner-treffen-putin-100.html",
-          "title": "Witkoff und Kushner treffen Putin in Moskau",
-          "summary": "Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Details des Friedensplans ble…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T21:00:08.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "f97c41dda0f39166152195a2658feceaacb5f3f5245019c765e996777dece68e",
-          "source_item_id": "94e3ce8628219fad670ec251de9fd4161e140178b0ec05449ed0a8ab76a74bc6",
-          "publisher_id": "tagesschau",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T21:00:08.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "collection_source_id": "swr-aktuell",
-          "collection_publisher_id": "swr"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-01",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen: Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
-        },
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-02",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen: Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
-        },
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-03",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Witkoff und Kushner treffen Putin in Moskau: Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Details des Friedensplans ble…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesschau-access",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
-        }
-      ],
-      "content_hash": "f37ce3c8ea1b75752a0440f8eb45cb0f58aa01ec750dfcd385740d615c1408f1",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_BLOCKED",
-      "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
-      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
-      "event_detected_at": "2026-09-05T18:21:18.289Z",
-      "event_id": "event-33c99d9ec5432a4822d9",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik",
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 66.59068333333333,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 225.4192,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 86,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
-        "fingerprint": "1b1bbfdddb20f1c6cd32ffbfe0e6275f4f751671f85126efc9c90d594f35a19d",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
       "story_id": "wt-68eadb9f102a5367",
       "slug": "angriff-auf-stromversorgung-das-ist-der-mutmassliche-strom-saboteur-2a5367",
       "title": "Angriff auf Stromversorgung: Das ist der mutmaßliche Strom-Saboteur",
@@ -930,7 +2232,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T11:06:25.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
           "provenance": {
             "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
@@ -961,7 +2263,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T21:17:10.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
           "provenance": {
             "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
@@ -988,7 +2290,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         },
         {
           "claim_id": "wt-166e870242fc37e6-claim-02",
@@ -1008,7 +2310,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         },
         {
           "claim_id": "wt-166e870242fc37e6-claim-03",
@@ -1028,7 +2330,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "d349ce975404f77382ab8400a897afcd739aa635581788f16062f33478935031",
@@ -1041,12 +2343,17 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-05T17:36:24.715Z",
       "event_detected_at": "2026-09-05T17:36:24.715Z",
       "event_id": "event-165020cd14b0b8c7db2e",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 32,
         "public_relevance": "mittel",
         "topics": [
@@ -1069,20 +2376,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 49.55735,
+        "source_age_minutes": 66.19278333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 270.3121,
+        "queue_age_minutes": 286.94753333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 90,
+        "news_freshness_score": 86,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "a8701b3ca35d56bd4789e3a73b6b0f2b1b016df62768a4e7a9b8a06bf96e9a54",
         "issue_codes": [],
         "warning_codes": []
@@ -1122,7 +2429,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T20:35:57.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
           "provenance": {
             "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
@@ -1153,7 +2460,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T20:35:44.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
           "provenance": {
             "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
@@ -1180,7 +2487,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         },
         {
           "claim_id": "wt-cc6813674a95cd84-claim-02",
@@ -1200,7 +2507,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "a37620d5cb519089823f5f7893d2ab760eb93d40f258a1e81395135cb0e871db",
@@ -1213,12 +2520,17 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-05T21:06:22.039Z",
       "event_detected_at": "2026-09-05T21:06:22.039Z",
       "event_id": "event-99d0bee0898a1a2949a1",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 34,
         "public_relevance": "mittel",
         "topics": [
@@ -1243,20 +2555,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 90.77401666666667,
+        "source_age_minutes": 107.40945,
         "detection_delay_minutes": 30.417316666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 60.3567,
+        "queue_age_minutes": 76.99213333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 81,
+        "news_freshness_score": 78,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "012f5b204ce7d0cf2d33b8977172eeab8c0aad0257465128b991d25f9437daa2",
         "issue_codes": [],
         "warning_codes": []
@@ -2737,138 +4049,6 @@
         "version": "1.0",
         "checked_at": "2026-09-05T18:21:18.289Z",
         "fingerprint": "6b627418f52a3be4b910bc7fe523eb3534d59ba3dee43283619d12490ee757f1",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T18:21:18.289Z",
-      "rejection": {
-        "at": "2026-09-05T18:21:18.289Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-ee07be9df8bc0aea",
-      "slug": "nach-hackerangriff-auf-berliner-verwaltung-senatskanzlei-richtet-zusatzliche-steuerungse-bc0aea",
-      "title": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein",
-      "first_seen": "2026-09-05T18:15:04.000Z",
-      "last_updated": "2026-09-05T18:15:04.000Z",
-      "topic": [
-        "Finanzen"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/senatskanzlei-richtet-zusaetzliche-steuerungseinheit-ein-100.html",
-          "title": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein",
-          "summary": "Nach dem Hackerangriff auf die Berliner Senatsverwaltung ist eine neue Einheit eingerichtet worden, um die von den Tätern veröffentlichten Dateien auszuwerten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T18:15:04.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "4c7f03431d7580ae551858aac1ddb23233a7f64645f5e0aa34fedd75b354950f",
-          "source_item_id": "dd82a34880818d128cd242532c378f513d3c45e69f8e4dbe01eb20e5d5a917c0",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T18:15:04.000Z",
-          "ingested_at": "2026-09-05T18:21:18.289Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-ee07be9df8bc0aea-claim-01",
-          "story_id": "wt-ee07be9df8bc0aea",
-          "claim": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein: Nach dem Hackerangriff auf die Berliner Senatsverwaltung ist eine neue Einheit eingerichtet worden, um die von den Tätern veröffentlichten Dateien auszuwerten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T18:21:18.289Z"
-        }
-      ],
-      "content_hash": "17727dab95a97d815e5f5bb3112fb8651e68f377cd97629c5de3f2fe6e6dbfe5",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T18:21:18.289Z",
-      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
-      "event_detected_at": "2026-09-05T18:21:18.289Z",
-      "event_id": "event-7fdfd0a829751fedc836",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 40,
-        "public_relevance": "mittel",
-        "topics": [
-          "Finanzen"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung finanzieller Anreize und Kapitalflüsse"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 6.23815,
-        "detection_delay_minutes": 6.23815,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-05T18:21:18.289Z",
-        "fingerprint": "eebe47ebe70705578c0982c42d9aa4536ea07aa46b9681b4d9f6443e3241e349",
         "issue_codes": [],
         "warning_codes": []
       },
@@ -5823,138 +7003,6 @@
       }
     },
     {
-      "story_id": "wt-58cac49b38f415db",
-      "slug": "kriegsgegner-demonstrieren-polizei-stoppt-teil-von-protestzug-gegen-rheinmetall-in-koln-f415db",
-      "title": "Kriegsgegner demonstrieren: Polizei stoppt Teil von Protestzug gegen Rheinmetall in Köln",
-      "first_seen": "2026-09-05T16:27:14.000Z",
-      "last_updated": "2026-09-05T16:27:14.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/kriegsgegner-demonstrieren--polizei-stoppt-teil-von-protestzug-gegen-rheinmetall-in-koeln-38211736.html",
-          "title": "Kriegsgegner demonstrieren: Polizei stoppt Teil von Protestzug gegen Rheinmetall in Köln",
-          "summary": "In Köln demonstrieren mehr Teilnehmer als erwartet mit dem Bündnis „Rheinmetall entwaffnen“. Ein Teil von ihnen wird von der Polizei gestoppt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T16:27:14.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "427f83aaa7444f4519311860942a2c37c8695b81855487d5f9c110fdd9d48d69",
-          "source_item_id": "519f2f4a8b4a118ce96508c6836298766d66576d1df84b5078d628f10c345b4f",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T16:27:14.000Z",
-          "ingested_at": "2026-09-05T16:36:34.186Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-58cac49b38f415db-claim-01",
-          "story_id": "wt-58cac49b38f415db",
-          "claim": "Kriegsgegner demonstrieren: Polizei stoppt Teil von Protestzug gegen Rheinmetall in Köln: In Köln demonstrieren mehr Teilnehmer als erwartet mit dem Bündnis „Rheinmetall entwaffnen“. Ein Teil von ihnen wird von der Polizei gestoppt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:51:14.960Z"
-        }
-      ],
-      "content_hash": "aa05d76fd8e0b51d486cc57b970b860958a5a9df057e4c39c0dd1509d7a57a12",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T16:51:14.960Z",
-      "event_first_seen_at": "2026-09-05T16:36:34.186Z",
-      "event_detected_at": "2026-09-05T16:36:34.186Z",
-      "event_id": "event-201da883bf8004ddde01",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 24.016,
-        "detection_delay_minutes": 9.336433333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 14.679566666666666,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-05T16:51:14.960Z",
-        "fingerprint": "7683a6a2de212fe2088e556bc0b70e694aacde2ee210d91cf5a99c980b403a44",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T16:51:14.960Z",
-      "rejection": {
-        "at": "2026-09-05T16:51:14.960Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-79a0c19273cf58ad",
       "slug": "filmfestspiele-robert-pattinson-nach-geburt-von-baby-mehr-zeit-zu-arbeiten-cf58ad",
       "title": "Filmfestspiele: Robert Pattinson: Nach Geburt von Baby mehr Zeit zu arbeiten",
@@ -7381,7 +8429,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T14:37:00.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
           "provenance": {
             "origin": "publisher:zdfheute",
             "basis": "publisher_only_origin_unverified",
@@ -7408,7 +8456,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "5077504fba761724756585440bff06fc3606bde296cdd7d92e1ab67b5eeafabd",
@@ -7421,12 +8469,17 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-05T11:31:43.777Z",
       "event_detected_at": "2026-09-05T11:31:43.777Z",
       "event_id": "event-454194767a4d7ef00523",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 32,
         "public_relevance": "mittel",
         "topics": [
@@ -7449,20 +8502,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 449.72401666666667,
+        "source_age_minutes": 466.35945,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 634.9944,
+        "queue_age_minutes": 651.6298333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 6,
+        "news_freshness_score": 3,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "1c4421f45303671688dac2f2d2e352c04a184c96a7ca440b37089a865ea2a7ec",
         "issue_codes": [],
         "warning_codes": []
@@ -13822,7 +14875,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T05:30:02.000Z",
-            "ingested_at": "2026-09-05T22:06:43.441Z",
+            "ingested_at": "2026-09-05T22:23:21.567Z",
             "provenance": {
               "origin": "publisher:tagesschau",
               "basis": "publisher_resolved_from_registered_target_url",
@@ -13980,7 +15033,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T13:33:07.000Z",
-            "ingested_at": "2026-09-05T22:06:43.441Z",
+            "ingested_at": "2026-09-05T22:23:21.567Z",
             "provenance": {
               "origin": "publisher:swr",
               "basis": "publisher_only_origin_unverified",
@@ -14197,7 +15250,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T14:56:00.000Z",
-            "ingested_at": "2026-09-05T22:06:43.441Z",
+            "ingested_at": "2026-09-05T22:23:21.567Z",
             "provenance": {
               "origin": "publisher:wirtschaftswoche",
               "basis": "publisher_only_origin_unverified",
@@ -14228,7 +15281,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-05T22:06:43.441Z",
+            "ingested_at": "2026-09-05T22:23:21.567Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -14259,7 +15312,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T20:52:04.000Z",
-            "ingested_at": "2026-09-05T22:06:43.441Z",
+            "ingested_at": "2026-09-05T22:23:21.567Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -14290,7 +15343,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-05T22:06:43.441Z",
+            "ingested_at": "2026-09-05T22:23:21.567Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -14309,7 +15362,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T22:06:43.441Z",
+          "checked_at": "2026-09-05T22:23:21.567Z",
           "fingerprint": "bf416bc95e588925b00fbdce5325170097ce6b8c2321165a4c93fa80cb7a3c6f",
           "issue_codes": [],
           "warning_codes": []
@@ -16572,7 +17625,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T22:06:43.441Z",
+          "checked_at": "2026-09-05T22:23:21.567Z",
           "fingerprint": "24487ee7197ad0eb1b0dabd2efe09a7989c40310929eed16cb7eda32bc9ca43e",
           "issue_codes": [],
           "warning_codes": []
@@ -33276,7 +34329,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T22:06:43.441Z",
+          "checked_at": "2026-09-05T22:23:21.567Z",
           "fingerprint": "677f489384916d5a8bbf8a20da66c9ad5228f077a28a07c98965b3764ea80a8e",
           "issue_codes": [],
           "warning_codes": []
@@ -83398,7 +84451,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "88f9f75e9b977eb411285a1009f724f8bdf50ae43f800a4436cf773e03c61894",
@@ -83411,12 +84464,17 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-04T13:21:25.210Z",
       "event_detected_at": "2026-09-04T13:21:25.210Z",
       "event_id": "event-dee7eaf221842b5eb806",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 38,
         "public_relevance": "mittel",
         "topics": [
@@ -83441,11 +84499,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1981.7240166666666,
+        "source_age_minutes": 1998.35945,
         "detection_delay_minutes": 16.420166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1965.30385,
+        "queue_age_minutes": 1981.9392833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -83454,7 +84512,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "c4537b5e8eb723cbbe6fa201e3664ea9d4fbfbb6060aeff34ffe3168bf3e3c6c",
         "issue_codes": [],
         "warning_codes": []
@@ -90202,7 +91260,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "f69a9040291956f1035206b894236f5463981613981c97acaf24fb57d9a59acb",
@@ -90215,12 +91273,17 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-04T10:42:21.689Z",
       "event_detected_at": "2026-09-04T10:42:21.689Z",
       "event_id": "event-9ae33d5472490875b05f",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 44,
         "public_relevance": "mittel",
         "topics": [
@@ -90245,11 +91308,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2141.4740166666666,
+        "source_age_minutes": 2158.10945,
         "detection_delay_minutes": 17.111483333333332,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2124.3625333333334,
+        "queue_age_minutes": 2140.997966666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -90258,7 +91321,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "babead12236dce24ec26f5b1481d35fd72251f5f8b5afb990a4277543450d5f1",
         "issue_codes": [],
         "warning_codes": []
@@ -113799,7 +114862,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "02cc77c17049979f0e81e30abbd0c34e10afcc530f3207819c3bb8c950ead248",
@@ -113812,12 +114875,17 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-5afeb135245d9a108fe2",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 34,
         "public_relevance": "mittel",
         "topics": [
@@ -113842,11 +114910,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3147.3406833333333,
+        "source_age_minutes": 3163.9761166666667,
         "detection_delay_minutes": 281.9001666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2865.4405166666666,
+        "queue_age_minutes": 2882.07595,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -113855,7 +114923,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "f299fdea87b744d1bc89a7a02ac3cc1267d473b9fd7c1b3a6aad76678d251450",
         "issue_codes": [],
         "warning_codes": []
@@ -123841,7 +124909,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "2e8e68e350a380b603d567595582f115849ef3f3d2b1a34ef28ceb1c675670fe",
@@ -123854,12 +124922,17 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-18e06fadbbed69b9214b",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 36,
         "public_relevance": "mittel",
         "topics": [
@@ -123886,11 +124959,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5059.724016666667,
+        "source_age_minutes": 5076.35945,
         "detection_delay_minutes": 2194.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2865.4405166666666,
+        "queue_age_minutes": 2882.07595,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -123899,7 +124972,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "1df91de84cc41611131a84ab6f902d9ffe2ac4164dfb5454446436028a327d00",
         "issue_codes": [],
         "warning_codes": []
@@ -124942,7 +126015,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -124969,7 +126042,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -124982,12 +126055,17 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 30,
         "public_relevance": "mittel",
         "topics": [
@@ -125011,11 +126089,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6726.724016666667,
+        "source_age_minutes": 6743.35945,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2865.4405166666666,
+        "queue_age_minutes": 2882.07595,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -125024,7 +126102,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
         "issue_codes": [],
         "warning_codes": []
@@ -125066,7 +126144,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T05:36:22.000Z",
-          "ingested_at": "2026-09-05T21:15:13.080Z",
+          "ingested_at": "2026-09-05T22:21:19.350Z",
           "provenance": {
             "origin": "publisher:klimareporter",
             "basis": "publisher_only_origin_unverified",
@@ -125093,7 +126171,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "a4e4c4a8abd15f0dda563e6ae2e80cceda5644f27ab757453621fc50c0bbf44a",
@@ -125106,12 +126184,17 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3b24dabc10b485f8857d",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 40,
         "public_relevance": "mittel",
         "topics": [
@@ -125138,11 +126221,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6750.35735,
+        "source_age_minutes": 6766.992783333333,
         "detection_delay_minutes": 3884.916833333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2865.4405166666666,
+        "queue_age_minutes": 2882.07595,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -125151,7 +126234,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "322e43d7b940e1cdd6f5461c479867f7b33a854a65ce68757d914f296abd19fe",
         "issue_codes": [],
         "warning_codes": []
@@ -125445,7 +126528,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
+          "ingested_at": "2026-09-05T22:23:21.567Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -125472,7 +126555,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T22:06:43.441Z"
+          "checked_at": "2026-09-05T22:23:21.567Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -125485,12 +126568,17 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-05T22:06:43.441Z",
+      "updated_at": "2026-09-05T22:23:21.567Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 30,
         "public_relevance": "mittel",
         "topics": [
@@ -125517,11 +126605,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7806.724016666667,
+        "source_age_minutes": 7823.35945,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2865.4405166666666,
+        "queue_age_minutes": 2882.07595,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -125530,7 +126618,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T22:06:43.441Z",
+        "checked_at": "2026-09-05T22:23:21.567Z",
         "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
         "issue_codes": [],
         "warning_codes": []
@@ -126384,896 +127472,6 @@
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-7ebecf5b3f91d490",
-      "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-      "title": "Vor Sachsen-Anhalt-Wahl: Siegmund lässt Kandidatur bei knapper Mehrheit offen",
-      "first_seen": "2026-09-05T22:05:00Z",
-      "last_updated": "2026-09-05T22:07:32.381Z",
-      "published_at": "2026-09-05T22:07:32.381Z",
-      "updated_at": "2026-09-05T22:07:32.381Z",
-      "topic": [
-        "Demokratie",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "bild-access",
-          "publisher": "BILD",
-          "url": "https://www.bild.de/politik/inland/sachsen-anhalt-ulrich-siegmund-reichen-auch-drei-stimmen-mehrheit-nicht-6a9acf6908c763dcf81f4615",
-          "title": "AfD-Mann zu BILD: Siegmund reichen auch drei Stimmen Mehrheit nicht!",
-          "summary": "BILD berichtet am 05.09.2026 über ein Interview vom 04.09.2026. Siegmund begründet seine Forderung nach einer stabilen Mehrheit mit möglichen krankheitsbedingten Ausfällen. Die Kandidatur bei einer Stimme Mehrheit bleibt im Bericht offen. Die Videoüberschrift stellt den Regierungswillen grundsätzlich infrage.",
-          "source_type": "media_discovery",
-          "published_at": "2026-09-05T06:23:00Z",
-          "primary_source": false,
-          "source_topic": "Politik",
-          "content_hash": "7d90ff832f9233d4d68b3a89b5b17396cb20c6037fe9a9ca5fe3b7353aa5af3e",
-          "publisher_id": "bild",
-          "publisher_kind": "journalism",
-          "source_role": "actor_statement_report",
-          "requires_corroboration": true,
-          "source_published_at": "2026-09-05T06:23:00Z",
-          "provenance": {
-            "origin": "interview:bild-siegmund-2026-09-04",
-            "basis": "original_interview_report",
-            "independence_established": false
-          },
-          "research_metadata": {
-            "access": "public_research",
-            "original_interview_date": "2026-09-04",
-            "video_independently_viewed": false
-          }
-        },
-        {
-          "source_id": "focus-case-research",
-          "publisher": "FOCUS online",
-          "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
-          "title": "Siegmund will mit eigener Mehrheit nicht unbedingt regieren",
-          "summary": "FOCUS online berichtet am 05.09.2026 um 07:15 Uhr über Siegmunds BILD-Interview. Auf die Frage nach seiner Kandidatur bei einer Stimme Mehrheit verweist er auf eine Entscheidung am Montag nach der Wahl. Es handelt sich um denselben Interviewursprung, nicht um unabhängige Bestätigung.",
-          "source_type": "media_discovery",
-          "published_at": "2026-09-05T05:15:00Z",
-          "primary_source": false,
-          "source_topic": "Politik",
-          "content_hash": "0beba9860e1a0d0e4ce4764426e5e4532c549a05ea93344f73f27859184511a6",
-          "publisher_id": "focus",
-          "publisher_kind": "journalism",
-          "source_role": "secondary_confirmation",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T05:15:00Z",
-          "provenance": {
-            "origin": "interview:bild-siegmund-2026-09-04",
-            "basis": "explicit_reference_to_same_bild_interview",
-            "independence_established": false
-          },
-          "research_metadata": {
-            "access": "public_search_excerpt",
-            "full_article_retrieval": "unavailable",
-            "independent_confirmation": false
-          }
-        },
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
-          "title": "Wahl in Sachsen-Anhalt: Siegmund will Briefwahl nur in Ausnahmen",
-          "summary": "Im gesonderten Eintrag vom 02.09.2026 um 15:45 Uhr berichtet ZDFheute über Siegmunds Bedingung einer stabilen eigenen Mehrheit für eine Alleinregierung. Die Aussage fiel in einem Duell von Volksstimme und Mitteldeutscher Zeitung. Dieser frühere Vorbehalt widerspricht der Darstellung eines erst am Samstag entstandenen Vorbehalts.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-02T13:45:00Z",
-          "primary_source": false,
-          "source_topic": "Politik",
-          "content_hash": "814e1ee2efa6bdd6b2bb3c756b8487c387cf91d23868e071360814cb2082fa9f",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "background",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-02T13:45:00Z",
-          "provenance": {
-            "origin": "debate:volksstimme-mz-2026-09-02",
-            "basis": "dated_liveblog_entry",
-            "independence_established": false
-          },
-          "research_metadata": {
-            "entry_time": "2026-09-02T15:45:00+02:00",
-            "liveblog_entry_title": "Siegmund will nur mit stabiler AfD-Mehrheit regieren",
-            "scope": "Nur dieser abgegrenzte Eintrag; andere Liveblog-Themen sind nicht Bestandteil der Story."
-          }
-        },
-        {
-          "source_id": "landtag-sachsen-anhalt-context",
-          "publisher": "Landtag Sachsen-Anhalt",
-          "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
-          "title": "Verfassung des Landes Sachsen-Anhalt und Grundgesetz: Artikel 65 – Bildung der Landesregierung",
-          "summary": "Artikel 65 der Landesverfassung: Der Landtag wählt den Ministerpräsidenten geheim. Zuerst ist die Mehrheit seiner Mitglieder nötig. Nach erfolglosem ersten Wahlgang folgt binnen sieben Tagen ein weiterer. Scheitert auch dieser, entscheidet der Landtag binnen weiterer vierzehn Tage über ein vorzeitiges Ende der Wahlperiode. Ohne entsprechenden Mehrheitsbeschluss folgt unverzüglich ein weiterer Wahlgang mit Mehrheit der abgegebenen Stimmen.",
-          "source_type": "official_reference",
-          "published_at": null,
-          "date_status": "undated_reference",
-          "retrieved_at": "2026-09-05T21:55:00Z",
-          "primary_source": true,
-          "source_topic": "Demokratie",
-          "content_hash": "2ab43f7ca01cf4bcda184ef5b2b5d8fbe78cc78fcdaa609d3555d595d300e0b0",
-          "publisher_id": "landtag-sachsen-anhalt",
-          "publisher_kind": "institution",
-          "source_role": "legal_context",
-          "requires_corroboration": false,
-          "source_published_at": null,
-          "provenance": {
-            "origin": "primary:landesverfassung-sachsen-anhalt",
-            "basis": "official_constitution_article_65",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "sachsen-anhalt-election-context",
-          "publisher": "Landeswahlleiterin Sachsen-Anhalt",
-          "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
-          "title": "FAQs zur Landtagswahl in Sachsen-Anhalt 2026",
-          "summary": "Die Landeswahlleiterin nennt den 6. September 2026 als Wahltermin. Gewählt werden die Mitglieder des Landtags, nicht unmittelbar der Ministerpräsident.",
-          "source_type": "official_reference",
-          "published_at": null,
-          "date_status": "undated_reference",
-          "retrieved_at": "2026-09-05T21:55:00Z",
-          "primary_source": true,
-          "source_topic": "Demokratie",
-          "content_hash": "834dde58c68a4b9ed6849b01a5eb57c2a48b26251ccc6d89e0c32eb5659309b9",
-          "publisher_id": "sachsen-anhalt-landeswahlleiterin",
-          "publisher_kind": "institution",
-          "source_role": "election_calendar",
-          "requires_corroboration": false,
-          "source_published_at": null,
-          "provenance": {
-            "origin": "primary:landeswahlleiterin-sachsen-anhalt",
-            "basis": "official_election_faq",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-1",
-          "story_id": "wt-7ebecf5b3f91d490",
-          "claim": "FOCUS berichtet unter Berufung auf das BILD-Interview, Siegmund wolle über eine Kandidatur bei knappster Mehrheit erst nach der Wahl entscheiden.",
-          "status": "uncertain_claim",
-          "source_id": "focus-case-research",
-          "evidence": [
-            {
-              "source_id": "focus-case-research",
-              "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
-              "excerpt_hash": "6bd8ec7384f43fbfd542",
-              "checked_at": "2026-09-05T22:07:32.381Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T22:07:32.381Z"
-        },
-        {
-          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-2",
-          "story_id": "wt-7ebecf5b3f91d490",
-          "claim": "ZDFheute dokumentierte den Vorbehalt einer stabilen eigenen Mehrheit bereits bei einem früheren Auftritt.",
-          "status": "single_source_claim",
-          "source_id": "zdfheute-nachrichten",
-          "evidence": [
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
-              "excerpt_hash": "786da8664aca1ba94d5b",
-              "checked_at": "2026-09-05T22:07:32.381Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T22:07:32.381Z"
-        },
-        {
-          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-3",
-          "story_id": "wt-7ebecf5b3f91d490",
-          "claim": "Der Ministerpräsident wird durch den Landtag in geheimer Abstimmung gewählt, nicht direkt durch die Bevölkerung.",
-          "status": "primary_source_claim",
-          "source_id": "landtag-sachsen-anhalt-context",
-          "evidence": [
-            {
-              "source_id": "landtag-sachsen-anhalt-context",
-              "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
-              "excerpt_hash": "6c9e71de60fa8e00cae7",
-              "checked_at": "2026-09-05T22:07:32.381Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T22:07:32.381Z"
-        },
-        {
-          "claim_id": "wt-7ebecf5b3f91d490-v1-claim-4",
-          "story_id": "wt-7ebecf5b3f91d490",
-          "claim": "Die Landtagswahl findet am 6. September 2026 statt.",
-          "status": "primary_source_claim",
-          "source_id": "sachsen-anhalt-election-context",
-          "evidence": [
-            {
-              "source_id": "sachsen-anhalt-election-context",
-              "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
-              "excerpt_hash": "a450f405ab53eab21d79",
-              "checked_at": "2026-09-05T22:07:32.381Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T22:07:32.381Z"
-        }
-      ],
-      "event_id": "event-54b05b34eaf30592d8ab",
-      "event_first_seen_at": "2026-09-05T22:05:00Z",
-      "event_detected_at": "2026-09-05T22:05:00Z",
-      "verification_started_at": "2026-09-05T22:07:32.381Z",
-      "publish_ready_at": "2026-09-05T22:07:32.381Z",
-      "news_status": "preliminary",
-      "deepening_due_at": null,
-      "evidence_groups": {
-        "groups": [
-          [
-            "bild-access",
-            "focus-case-research"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "landtag-sachsen-anhalt-context"
-          ],
-          [
-            "sachsen-anhalt-election-context"
-          ]
-        ],
-        "possible_independent_origins": 4,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "bild-access",
-              "focus-case-research"
-            ],
-            "reason": "shared_origin",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-05T22:07:32.381Z",
-        "fingerprint": "a413a881cef8ca7303d76ffe5ae5cd9676483d5a467c1305cb1d805b4b717f43",
-        "issue_codes": [],
-        "warning_codes": [
-          "SOURCE_REFERENCE_UNDATED"
-        ]
-      },
-      "followups": [],
-      "content_hash": "f16a6512b142757e6511189165eedde0bacd9e23ac752a4788796fd0e688e121",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Vor der Landtagswahl in Sachsen-Anhalt bleibt unklar, ob AfD-Spitzenkandidat Ulrich Siegmund bei einer nur knappen eigenen Mehrheit als Ministerpräsident kandidieren würde. Laut FOCUS-Bericht über sein BILD-Interview soll die Entscheidung bei einer Stimme Mehrheit erst nach der Wahl fallen. BILD veröffentlichte seinen Bericht am Samstagmorgen; das Interview stammt vom Freitag.\n\nDie Bedingung einer stabilen eigenen Mehrheit ist nicht neu: ZDFheute berichtete darüber bereits am Mittwoch aus einem früheren Duell. Damit ist kein plötzlicher vollständiger Kurswechsel am Samstagabend belegt. Am Sonntag wird der Landtag gewählt; über den Ministerpräsidenten entscheidet anschließend das Parlament in geheimer Abstimmung. Die tatsächliche Sitzverteilung und Siegmunds endgültige Entscheidung stehen noch aus.",
-      "analysis": {
-        "news_status": "preliminary",
-        "publication_depth": "deepened",
-        "summary": "Vor der Wahl in Sachsen-Anhalt lässt Siegmund laut Berichten über ein BILD-Interview seine Kandidatur bei nur einer Stimme Mehrheit offen. Den Vorbehalt einer stabilen eigenen Mehrheit hatte er bereits zuvor genannt.",
-        "detail_summary": "Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Deshalb ist die offene Kandidatur bei knapper Mehrheit eine relevante Information über die mögliche Regierungsbildung. Die aktuelle Antwort ist als Bericht über ein Interview zu lesen; eine völlig neue Abkehr vom bisherigen Regierungsanspruch ist daraus nicht belegt. Der bereits zuvor genannte Mehrheitsvorbehalt gehört zum Verständnis dazu. Wenn eine Partei nur knapp über die notwendige Mitgliedermehrheit verfügt, können fehlende Stimmen im geheimen Wahlgang entscheidend sein. Ob es tatsächlich solche Ausfälle oder abweichende Stimmen geben wird, ist offen; ein Wahlergebnis liegt diesem Stand noch nicht zugrunde.",
-        "why_relevant": "Unmittelbar vor der Wahl betrifft die Aussage die Informationsgrundlage für die Wahlentscheidung und die anschließende Regierungsbildung. Sehr hoch ist hier die demokratische Informationsrelevanz – nicht eine bereits nachgewiesene gesellschaftliche Wirkung.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "importance": "sehr hoch",
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Für Wahlberechtigte ist die Kenntnis der Bedingungen einer möglichen Regierungsbildung relevant. Konkrete Folgen für Gesundheit, Einkommen oder Teilhabe lassen sich aus der Interviewaussage allein nicht bestimmen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus der offenen Kandidatur folgt noch kein bestimmter Umweltzustand und kein belastbar bezifferbares Umweltrisiko."
-        },
-        "democracy": {
-          "relevance": "sehr hoch",
-          "rationale": "Die Unterscheidung zwischen Wahlwerbung, tatsächlicher Kandidatur und parlamentarischer Mehrheit ist unmittelbar vor der Wahl besonders informationsrelevant. Ein Einfluss auf Wahlverhalten oder Vertrauen ist damit nicht nachgewiesen."
-        },
-        "impact_potential": "Klare Angaben über Bedingungen einer Kandidatur können eine informierte Wahlentscheidung unterstützen. Welchen Unterschied diese Information tatsächlich macht, bleibt empirisch offen.",
-        "impact_risks": [
-          "Unklare Bedingungen können Erwartungen an eine mögliche Regierungsbildung erschweren.",
-          "Eine zugespitzte Darstellung als vollständiger Verzicht könnte die tatsächliche bedingte Aussage verzerren."
-        ],
-        "mechanisms": [
-          "Wahlwerbung prägt Erwartungen an die spätere Regierungsbildung; die rechtliche Entscheidung fällt jedoch erst im Landtag.",
-          "Nachvollziehbare Attribution und frühere Aussagen ermöglichen den Vergleich von Ankündigung und späterer Entscheidung."
-        ],
-        "first_order": [
-          "Ohne eigene absolute Mehrheit fehlt eine allein aus eigenen Mandaten ableitbare Mitgliedermehrheit für die ersten Wahlgänge; daraus folgt weder ein automatischer Ausschluss einer Kandidatur noch ein bestimmtes Wahlergebnis.",
-          "Bei knapper eigener Mehrheit können fehlende oder anders abgegebene Stimmen im geheimen Wahlgang ausschlaggebend sein. Konkrete Abweichler sind nicht belegt."
-        ],
-        "second_order": [
-          "Scheitern die ersten Wahlgänge, greifen die in der Landesverfassung vorgesehenen weiteren Schritte; eine einfache Zusage ersetzt dieses Verfahren nicht.",
-          "Falls Siegmund nicht kandidiert, kann die Regierungsbildung andere Kandidaturen erfordern. Sein Verzicht allein löst keine automatische Neuwahl aus."
-        ],
-        "third_order": [
-          "Erst längerfristig wäre prüfbar, ob der Umgang mit Wahlzusagen institutionelles Vertrauen verändert. Dieser mögliche Wirkungspfad ist kein Nachweis einer eingetretenen Veränderung."
-        ],
-        "systemic_relevance": "Sehr hoch für demokratische Transparenz und parlamentarische Handlungsfähigkeit in einer unmittelbar bevorstehenden Wahl; keine parteipolitische Rangordnung.",
-        "transformation_potential": "Ein struktureller Wandel ist durch die Interviewaussage nicht belegt. Mögliche Änderungen staatlichen Handelns hängen von Wahlergebnis, Regierungsbildung und späteren Entscheidungen ab.",
-        "resilience": "Geheime Wahl, gestufte Mehrheitsanforderungen und geregelte weitere Wahlgänge bilden einen institutionellen Rahmen für unklare Mehrheiten.",
-        "side_effects": [
-          "Aufmerksamkeit für die Personalfrage kann Sachprogramme überlagern; ob dies geschieht, ist nicht belegt."
-        ],
-        "uncertainties": [
-          "Die aktuelle Interviewaussage ist über BILD und den darauf beruhenden FOCUS-Bericht erschlossen; das Video wurde hier nicht eigenständig angehört.",
-          "Beide Berichte haben denselben Interviewursprung und zählen nicht als zwei unabhängige Bestätigungen.",
-          "Die tatsächliche Mehrheit, eine spätere Kandidatur und das Abstimmungsverhalten der Abgeordneten bleiben offen.",
-          "Für behauptete interne Stimmverweigerer liegt in dieser Prüfung kein belastbarer Beleg vor; entsprechende Behauptungen werden nicht übernommen."
-        ],
-        "evidence_level": "Amtliche Quellen belegen Wahltermin und Verfahren. Die spätere Interviewantwort bleibt eine zugeschriebene journalistische Quellenaussage; frühere Bedingungen sind separat dokumentiert.",
-        "attribution": "BILD ist Ursprung des aktuellen Interviews, FOCUS berichtet darüber. ZDFheute dokumentiert einen früheren Auftritt. Landeswahlleiterin und Landtag belegen ausschließlich Termin und Verfahren, nicht Siegmunds Absichten.",
-        "watch_next": [
-          "Amtliches Wahlergebnis und tatsächliche Sitzverteilung prüfen.",
-          "Siegmunds Erklärung nach der Wahl und eine formelle Kandidatur gegen Originalquellen prüfen.",
-          "Parlamentarische Wahlgänge und tatsächliches Abstimmungsergebnis dokumentieren; keine Abweichler aus Vermutungen ableiten."
-        ],
-        "reference_frameworks": [
-          "Landesverfassung Sachsen-Anhalt: Bildung der Landesregierung und parlamentarische Wahl",
-          "Agenda 2030: SDG 16 als Referenz für nachvollziehbare Institutionen, nicht als Wirkungsbeweis"
-        ],
-        "publication_recommendation": true,
-        "publication_gate": {
-          "news_value": "material_update",
-          "materiality_factors": [
-            "affected_scope",
-            "democratic_correctability",
-            "systemic_relevance"
-          ],
-          "exceptional_factor": "democratic_correctability",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Eigenständige konkrete Aussage über eine mögliche Kandidatur vor der Wahl, nicht bloß ein weiterer Wahlkampfbericht. Der frühere Vorbehalt wird mitgenannt; interne Spekulationen bleiben ausgeschlossen. Verfassungsrechtlicher Kontext beruht auf amtlichen Originalquellen."
-        },
-        "media_impact": {
-          "relevant": true,
-          "relevance_level": "high",
-          "reason": "Die Unterscheidung zwischen bedingter Kandidatur und grundsätzlich fehlendem Regierungswillen ist für das Verständnis materiell relevant.",
-          "factual_core": "Die Kandidatur bei knapper Mehrheit bleibt laut Interviewberichten offen; die Forderung nach stabiler Mehrheit wurde bereits zuvor genannt.",
-          "epistemic_status": {
-            "confirmed": [
-              "Die Wahl und das parlamentarische Verfahren sind amtlich dokumentiert."
-            ],
-            "actor_claims": [
-              "Die Interviewantwort beschreibt eine noch ausstehende Entscheidung für eine knappe Mehrheit."
-            ],
-            "open": [
-              "Endgültige Kandidatur und gesellschaftliche Kommunikationsfolgen sind offen."
-            ]
-          },
-          "attribution": {
-            "frame_source": "BILD-Videoüberschrift",
-            "speaker": "Redaktionelle Frage",
-            "original_term": "gar nicht regieren",
-            "usage_type": "editorial",
-            "placement": [
-              "headline"
-            ],
-            "attribution_quality": "editorial"
-          },
-          "speaker_statement": {
-            "present": true,
-            "speaker": "Ulrich Siegmund",
-            "statement": "Er knüpft die Regierungsbildung an eine stabile eigene Mehrheit und verweist für die knappste Mehrheit auf eine spätere Entscheidung.",
-            "status": "claim"
-          },
-          "framing": {
-            "detected": true,
-            "term": "gar nicht regieren",
-            "origin_in_story": "BILD-Videoüberschrift",
-            "media_usage": "headline",
-            "attribution_quality": "eindeutig attribuiert",
-            "factual_status": "Interpretation",
-            "frame_type": [
-              "Konflikt"
-            ],
-            "political_history_relevant": false,
-            "political_history": "",
-            "political_history_evidence": []
-          },
-          "frame_analysis": {
-            "frame_detected": true,
-            "frame_term": "gar nicht regieren",
-            "frame_type": [
-              "Konflikt"
-            ],
-            "problem_definition": "Eine bedingte Kandidatur wird als Frage nach grundsätzlicher Regierungsbereitschaft zugespitzt.",
-            "implied_cause": "Offen; keine Absicht unterstellt.",
-            "implied_responsibility": "Im Mittelpunkt steht die Kandidaturentscheidung, nicht eine belegte persönliche Absicht.",
-            "implied_threat": "Die Formulierung kann Zweifel an der Verbindlichkeit von Wahlwerbung nahelegen.",
-            "implied_solution_space": "Ein Abgleich der früheren Bedingungen mit der aktuellen Aussage ermöglicht eine sachlichere Beurteilung.",
-            "material_omissions": [
-              "Für die Einordnung ist der frühere Vorbehalt einer stabilen Mehrheit wesentlich."
-            ]
-          },
-          "political_context": {
-            "relevant": false,
-            "classification": "",
-            "evidence_based": false,
-            "evidence": [],
-            "uncertainty": "Keine politische Herkunftsgeschichte des Ausdrucks untersucht."
-          },
-          "resonance": {
-            "resonance_space": "",
-            "resonance_risk": "",
-            "normalization_potential": "",
-            "repetition_effect": "",
-            "trust_effect": "",
-            "polarization_potential": "",
-            "discourse_effect": ""
-          },
-          "discourse_effect": {
-            "impact_status": "potential",
-            "resonance_space": "Erwartungen an Wahlzusagen und Regierungsbildung.",
-            "normalization_potential": "open",
-            "repetition_risk": "open",
-            "polarization_potential": "Die zugespitzte Frage kann eine Personaldebatte verstärken.",
-            "trust_effect_potential": "Vertrauensfolgen sind denkbar, aber nicht gemessen.",
-            "discourse_effect_potential": "Eine Trennung von Bedingung und grundsätzlicher Bereitschaft kann das Verständnis verbessern."
-          },
-          "impact_path": {
-            "first_order": "Die Frage kann die Aufmerksamkeit auf den Regierungswillen lenken.",
-            "second_order": "Wiederholung könnte den Eindruck einer grundsätzlich fehlenden Bereitschaft verstärken.",
-            "third_order": "Folgen für institutionelles Vertrauen wären gesondert zu untersuchen."
-          },
-          "evidence": {
-            "status": "medium",
-            "level": "medium",
-            "what_is_known": "Beobachtbar sind die redaktionelle Frage und der frühere Mehrheitsvorbehalt.",
-            "what_is_inferred": "Ein möglicher Unterschied zwischen bedingter Kandidatur und wahrgenommenem vollständigem Verzicht.",
-            "what_is_open": "Eine tatsächliche Veränderung von Vertrauen oder Wahlentscheidung ist nicht nachgewiesen.",
-            "facts": [
-              "Ein früherer Mehrheitsvorbehalt ist dokumentiert."
-            ],
-            "observations": [
-              "Die Videoüberschrift stellt den Regierungswillen als Frage dar."
-            ],
-            "inferences": [
-              "Eine zugespitzte Frage kann weiter reichen als die bedingte Interviewantwort."
-            ],
-            "impact_potentials": [
-              "Lesende könnten Kandidaturbedingung und vollständigen Verzicht verwechseln."
-            ],
-            "impact_risks": [
-              "Möglicher Kontextverlust bei verkürzter Weiterverbreitung."
-            ],
-            "observed_impacts": [],
-            "limitations": [
-              "Keine Untersuchung tatsächlicher Rezeption oder des Wahlverhaltens."
-            ]
-          },
-          "observed_impact": {
-            "present": false,
-            "description": null,
-            "evidence": []
-          },
-          "public_explanation": "Die Videoüberschrift bei BILD stellt die grundsätzliche Regierungsbereitschaft als Frage dar. Die berichtete Antwort betrifft dagegen die Kandidatur unter einer bestimmten Mehrheitsbedingung. Das ist nicht dasselbe wie ein vollständiger Verzicht. Die Frage ist eine redaktionelle Zuspitzung, kein direktes Zitat des Kandidaten. Für das Verständnis gehört außerdem dazu, dass der Vorbehalt einer stabilen Mehrheit schon vor diesem Interview bekannt war. Eine verkürzte Weitergabe kann den Eindruck eines umfassenderen Kurswechsels begünstigen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder dem Medium noch dem Kandidaten wird eine Absicht unterstellt. Entscheidend sind die konkrete Aussage, ihr früherer Kontext und die noch ausstehende Entscheidung.",
-          "editorial_assessment": "Die redaktionelle Frage ist als Zuspitzung zu unterscheiden von der berichteten bedingten Kandidatur; keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
-          "fact_first_alternative": "Vor der Landtagswahl bleibt die Kandidatur bei knapper Mehrheit laut Interviewberichten offen. Den Vorbehalt einer stabilen Mehrheit hatte der Kandidat bereits früher genannt.",
-          "fact_first_reframe": {
-            "title": "",
-            "source_summary": "",
-            "summary": "",
-            "detail_summary": ""
-          },
-          "self_frame_warning": false,
-          "self_frame_check": {
-            "problem_detected": false,
-            "problems": [],
-            "frame_repetition_count": 0,
-            "rewrite_required": false,
-            "recommended_title": "",
-            "recommended_summary": "",
-            "recommended_meta_description": ""
-          },
-          "source_comparison": {
-            "sufficient_basis": false,
-            "finding": ""
-          }
-        },
-        "story_id": "wt-7ebecf5b3f91d490",
-        "media_analysis_version": "2.0",
-        "media_checked_at": "2026-09-05T22:07:32.381Z",
-        "media_trigger_fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
-        "media_trigger": {
-          "relevant": true,
-          "level": "high",
-          "score": 4,
-          "reasons": [
-            "analysis_substantive_finding"
-          ],
-          "matched_terms": [
-            "gar nicht regieren"
-          ],
-          "source_count": 5,
-          "comparable_source_count": 2,
-          "fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
-          "content_fingerprint": "726bdba0d9741462c35f84c4b991cc04a86aa1a591d9e08f1c34ac6211f0b6d5",
-          "basis": "analysis_finding",
-          "version": "2.0"
-        }
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-05T22:07:32.381Z",
-          "content_hash": "f16a6512b142757e6511189165eedde0bacd9e23ac752a4788796fd0e688e121",
-          "source_summary": "Vor der Landtagswahl in Sachsen-Anhalt bleibt unklar, ob AfD-Spitzenkandidat Ulrich Siegmund bei einer nur knappen eigenen Mehrheit als Ministerpräsident kandidieren würde. Laut FOCUS-Bericht über sein BILD-Interview soll die Entscheidung bei einer Stimme Mehrheit erst nach der Wahl fallen. BILD veröffentlichte seinen Bericht am Samstagmorgen; das Interview stammt vom Freitag.\n\nDie Bedingung einer stabilen eigenen Mehrheit ist nicht neu: ZDFheute berichtete darüber bereits am Mittwoch aus einem früheren Duell. Damit ist kein plötzlicher vollständiger Kurswechsel am Samstagabend belegt. Am Sonntag wird der Landtag gewählt; über den Ministerpräsidenten entscheidet anschließend das Parlament in geheimer Abstimmung. Die tatsächliche Sitzverteilung und Siegmunds endgültige Entscheidung stehen noch aus.",
-          "analysis": {
-            "news_status": "preliminary",
-            "publication_depth": "deepened",
-            "summary": "Vor der Wahl in Sachsen-Anhalt lässt Siegmund laut Berichten über ein BILD-Interview seine Kandidatur bei nur einer Stimme Mehrheit offen. Den Vorbehalt einer stabilen eigenen Mehrheit hatte er bereits zuvor genannt.",
-            "detail_summary": "Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Deshalb ist die offene Kandidatur bei knapper Mehrheit eine relevante Information über die mögliche Regierungsbildung. Die aktuelle Antwort ist als Bericht über ein Interview zu lesen; eine völlig neue Abkehr vom bisherigen Regierungsanspruch ist daraus nicht belegt. Der bereits zuvor genannte Mehrheitsvorbehalt gehört zum Verständnis dazu. Wenn eine Partei nur knapp über die notwendige Mitgliedermehrheit verfügt, können fehlende Stimmen im geheimen Wahlgang entscheidend sein. Ob es tatsächlich solche Ausfälle oder abweichende Stimmen geben wird, ist offen; ein Wahlergebnis liegt diesem Stand noch nicht zugrunde.",
-            "why_relevant": "Unmittelbar vor der Wahl betrifft die Aussage die Informationsgrundlage für die Wahlentscheidung und die anschließende Regierungsbildung. Sehr hoch ist hier die demokratische Informationsrelevanz – nicht eine bereits nachgewiesene gesellschaftliche Wirkung.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "importance": "sehr hoch",
-            "human": {
-              "relevance": "mittel",
-              "rationale": "Für Wahlberechtigte ist die Kenntnis der Bedingungen einer möglichen Regierungsbildung relevant. Konkrete Folgen für Gesundheit, Einkommen oder Teilhabe lassen sich aus der Interviewaussage allein nicht bestimmen."
-            },
-            "planet": {
-              "relevance": "offen",
-              "rationale": "Aus der offenen Kandidatur folgt noch kein bestimmter Umweltzustand und kein belastbar bezifferbares Umweltrisiko."
-            },
-            "democracy": {
-              "relevance": "sehr hoch",
-              "rationale": "Die Unterscheidung zwischen Wahlwerbung, tatsächlicher Kandidatur und parlamentarischer Mehrheit ist unmittelbar vor der Wahl besonders informationsrelevant. Ein Einfluss auf Wahlverhalten oder Vertrauen ist damit nicht nachgewiesen."
-            },
-            "impact_potential": "Klare Angaben über Bedingungen einer Kandidatur können eine informierte Wahlentscheidung unterstützen. Welchen Unterschied diese Information tatsächlich macht, bleibt empirisch offen.",
-            "impact_risks": [
-              "Unklare Bedingungen können Erwartungen an eine mögliche Regierungsbildung erschweren.",
-              "Eine zugespitzte Darstellung als vollständiger Verzicht könnte die tatsächliche bedingte Aussage verzerren."
-            ],
-            "mechanisms": [
-              "Wahlwerbung prägt Erwartungen an die spätere Regierungsbildung; die rechtliche Entscheidung fällt jedoch erst im Landtag.",
-              "Nachvollziehbare Attribution und frühere Aussagen ermöglichen den Vergleich von Ankündigung und späterer Entscheidung."
-            ],
-            "first_order": [
-              "Ohne eigene absolute Mehrheit fehlt eine allein aus eigenen Mandaten ableitbare Mitgliedermehrheit für die ersten Wahlgänge; daraus folgt weder ein automatischer Ausschluss einer Kandidatur noch ein bestimmtes Wahlergebnis.",
-              "Bei knapper eigener Mehrheit können fehlende oder anders abgegebene Stimmen im geheimen Wahlgang ausschlaggebend sein. Konkrete Abweichler sind nicht belegt."
-            ],
-            "second_order": [
-              "Scheitern die ersten Wahlgänge, greifen die in der Landesverfassung vorgesehenen weiteren Schritte; eine einfache Zusage ersetzt dieses Verfahren nicht.",
-              "Falls Siegmund nicht kandidiert, kann die Regierungsbildung andere Kandidaturen erfordern. Sein Verzicht allein löst keine automatische Neuwahl aus."
-            ],
-            "third_order": [
-              "Erst längerfristig wäre prüfbar, ob der Umgang mit Wahlzusagen institutionelles Vertrauen verändert. Dieser mögliche Wirkungspfad ist kein Nachweis einer eingetretenen Veränderung."
-            ],
-            "systemic_relevance": "Sehr hoch für demokratische Transparenz und parlamentarische Handlungsfähigkeit in einer unmittelbar bevorstehenden Wahl; keine parteipolitische Rangordnung.",
-            "transformation_potential": "Ein struktureller Wandel ist durch die Interviewaussage nicht belegt. Mögliche Änderungen staatlichen Handelns hängen von Wahlergebnis, Regierungsbildung und späteren Entscheidungen ab.",
-            "resilience": "Geheime Wahl, gestufte Mehrheitsanforderungen und geregelte weitere Wahlgänge bilden einen institutionellen Rahmen für unklare Mehrheiten.",
-            "side_effects": [
-              "Aufmerksamkeit für die Personalfrage kann Sachprogramme überlagern; ob dies geschieht, ist nicht belegt."
-            ],
-            "uncertainties": [
-              "Die aktuelle Interviewaussage ist über BILD und den darauf beruhenden FOCUS-Bericht erschlossen; das Video wurde hier nicht eigenständig angehört.",
-              "Beide Berichte haben denselben Interviewursprung und zählen nicht als zwei unabhängige Bestätigungen.",
-              "Die tatsächliche Mehrheit, eine spätere Kandidatur und das Abstimmungsverhalten der Abgeordneten bleiben offen.",
-              "Für behauptete interne Stimmverweigerer liegt in dieser Prüfung kein belastbarer Beleg vor; entsprechende Behauptungen werden nicht übernommen."
-            ],
-            "evidence_level": "Amtliche Quellen belegen Wahltermin und Verfahren. Die spätere Interviewantwort bleibt eine zugeschriebene journalistische Quellenaussage; frühere Bedingungen sind separat dokumentiert.",
-            "attribution": "BILD ist Ursprung des aktuellen Interviews, FOCUS berichtet darüber. ZDFheute dokumentiert einen früheren Auftritt. Landeswahlleiterin und Landtag belegen ausschließlich Termin und Verfahren, nicht Siegmunds Absichten.",
-            "watch_next": [
-              "Amtliches Wahlergebnis und tatsächliche Sitzverteilung prüfen.",
-              "Siegmunds Erklärung nach der Wahl und eine formelle Kandidatur gegen Originalquellen prüfen.",
-              "Parlamentarische Wahlgänge und tatsächliches Abstimmungsergebnis dokumentieren; keine Abweichler aus Vermutungen ableiten."
-            ],
-            "reference_frameworks": [
-              "Landesverfassung Sachsen-Anhalt: Bildung der Landesregierung und parlamentarische Wahl",
-              "Agenda 2030: SDG 16 als Referenz für nachvollziehbare Institutionen, nicht als Wirkungsbeweis"
-            ],
-            "publication_recommendation": true,
-            "publication_gate": {
-              "news_value": "material_update",
-              "materiality_factors": [
-                "affected_scope",
-                "democratic_correctability",
-                "systemic_relevance"
-              ],
-              "exceptional_factor": "democratic_correctability",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Eigenständige konkrete Aussage über eine mögliche Kandidatur vor der Wahl, nicht bloß ein weiterer Wahlkampfbericht. Der frühere Vorbehalt wird mitgenannt; interne Spekulationen bleiben ausgeschlossen. Verfassungsrechtlicher Kontext beruht auf amtlichen Originalquellen."
-            },
-            "media_impact": {
-              "relevant": true,
-              "relevance_level": "high",
-              "reason": "Die Unterscheidung zwischen bedingter Kandidatur und grundsätzlich fehlendem Regierungswillen ist für das Verständnis materiell relevant.",
-              "factual_core": "Die Kandidatur bei knapper Mehrheit bleibt laut Interviewberichten offen; die Forderung nach stabiler Mehrheit wurde bereits zuvor genannt.",
-              "epistemic_status": {
-                "confirmed": [
-                  "Die Wahl und das parlamentarische Verfahren sind amtlich dokumentiert."
-                ],
-                "actor_claims": [
-                  "Die Interviewantwort beschreibt eine noch ausstehende Entscheidung für eine knappe Mehrheit."
-                ],
-                "open": [
-                  "Endgültige Kandidatur und gesellschaftliche Kommunikationsfolgen sind offen."
-                ]
-              },
-              "attribution": {
-                "frame_source": "BILD-Videoüberschrift",
-                "speaker": "Redaktionelle Frage",
-                "original_term": "gar nicht regieren",
-                "usage_type": "editorial",
-                "placement": [
-                  "headline"
-                ],
-                "attribution_quality": "editorial"
-              },
-              "speaker_statement": {
-                "present": true,
-                "speaker": "Ulrich Siegmund",
-                "statement": "Er knüpft die Regierungsbildung an eine stabile eigene Mehrheit und verweist für die knappste Mehrheit auf eine spätere Entscheidung.",
-                "status": "claim"
-              },
-              "framing": {
-                "detected": true,
-                "term": "gar nicht regieren",
-                "origin_in_story": "BILD-Videoüberschrift",
-                "media_usage": "headline",
-                "attribution_quality": "eindeutig attribuiert",
-                "factual_status": "Interpretation",
-                "frame_type": [
-                  "Konflikt"
-                ],
-                "political_history_relevant": false,
-                "political_history": "",
-                "political_history_evidence": []
-              },
-              "frame_analysis": {
-                "frame_detected": true,
-                "frame_term": "gar nicht regieren",
-                "frame_type": [
-                  "Konflikt"
-                ],
-                "problem_definition": "Eine bedingte Kandidatur wird als Frage nach grundsätzlicher Regierungsbereitschaft zugespitzt.",
-                "implied_cause": "Offen; keine Absicht unterstellt.",
-                "implied_responsibility": "Im Mittelpunkt steht die Kandidaturentscheidung, nicht eine belegte persönliche Absicht.",
-                "implied_threat": "Die Formulierung kann Zweifel an der Verbindlichkeit von Wahlwerbung nahelegen.",
-                "implied_solution_space": "Ein Abgleich der früheren Bedingungen mit der aktuellen Aussage ermöglicht eine sachlichere Beurteilung.",
-                "material_omissions": [
-                  "Für die Einordnung ist der frühere Vorbehalt einer stabilen Mehrheit wesentlich."
-                ]
-              },
-              "political_context": {
-                "relevant": false,
-                "classification": "",
-                "evidence_based": false,
-                "evidence": [],
-                "uncertainty": "Keine politische Herkunftsgeschichte des Ausdrucks untersucht."
-              },
-              "resonance": {
-                "resonance_space": "",
-                "resonance_risk": "",
-                "normalization_potential": "",
-                "repetition_effect": "",
-                "trust_effect": "",
-                "polarization_potential": "",
-                "discourse_effect": ""
-              },
-              "discourse_effect": {
-                "impact_status": "potential",
-                "resonance_space": "Erwartungen an Wahlzusagen und Regierungsbildung.",
-                "normalization_potential": "open",
-                "repetition_risk": "open",
-                "polarization_potential": "Die zugespitzte Frage kann eine Personaldebatte verstärken.",
-                "trust_effect_potential": "Vertrauensfolgen sind denkbar, aber nicht gemessen.",
-                "discourse_effect_potential": "Eine Trennung von Bedingung und grundsätzlicher Bereitschaft kann das Verständnis verbessern."
-              },
-              "impact_path": {
-                "first_order": "Die Frage kann die Aufmerksamkeit auf den Regierungswillen lenken.",
-                "second_order": "Wiederholung könnte den Eindruck einer grundsätzlich fehlenden Bereitschaft verstärken.",
-                "third_order": "Folgen für institutionelles Vertrauen wären gesondert zu untersuchen."
-              },
-              "evidence": {
-                "status": "medium",
-                "level": "medium",
-                "what_is_known": "Beobachtbar sind die redaktionelle Frage und der frühere Mehrheitsvorbehalt.",
-                "what_is_inferred": "Ein möglicher Unterschied zwischen bedingter Kandidatur und wahrgenommenem vollständigem Verzicht.",
-                "what_is_open": "Eine tatsächliche Veränderung von Vertrauen oder Wahlentscheidung ist nicht nachgewiesen.",
-                "facts": [
-                  "Ein früherer Mehrheitsvorbehalt ist dokumentiert."
-                ],
-                "observations": [
-                  "Die Videoüberschrift stellt den Regierungswillen als Frage dar."
-                ],
-                "inferences": [
-                  "Eine zugespitzte Frage kann weiter reichen als die bedingte Interviewantwort."
-                ],
-                "impact_potentials": [
-                  "Lesende könnten Kandidaturbedingung und vollständigen Verzicht verwechseln."
-                ],
-                "impact_risks": [
-                  "Möglicher Kontextverlust bei verkürzter Weiterverbreitung."
-                ],
-                "observed_impacts": [],
-                "limitations": [
-                  "Keine Untersuchung tatsächlicher Rezeption oder des Wahlverhaltens."
-                ]
-              },
-              "observed_impact": {
-                "present": false,
-                "description": null,
-                "evidence": []
-              },
-              "public_explanation": "Die Videoüberschrift bei BILD stellt die grundsätzliche Regierungsbereitschaft als Frage dar. Die berichtete Antwort betrifft dagegen die Kandidatur unter einer bestimmten Mehrheitsbedingung. Das ist nicht dasselbe wie ein vollständiger Verzicht. Die Frage ist eine redaktionelle Zuspitzung, kein direktes Zitat des Kandidaten. Für das Verständnis gehört außerdem dazu, dass der Vorbehalt einer stabilen Mehrheit schon vor diesem Interview bekannt war. Eine verkürzte Weitergabe kann den Eindruck eines umfassenderen Kurswechsels begünstigen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder dem Medium noch dem Kandidaten wird eine Absicht unterstellt. Entscheidend sind die konkrete Aussage, ihr früherer Kontext und die noch ausstehende Entscheidung.",
-              "editorial_assessment": "Die redaktionelle Frage ist als Zuspitzung zu unterscheiden von der berichteten bedingten Kandidatur; keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
-              "fact_first_alternative": "Vor der Landtagswahl bleibt die Kandidatur bei knapper Mehrheit laut Interviewberichten offen. Den Vorbehalt einer stabilen Mehrheit hatte der Kandidat bereits früher genannt.",
-              "fact_first_reframe": {
-                "title": "",
-                "source_summary": "",
-                "summary": "",
-                "detail_summary": ""
-              },
-              "self_frame_warning": false,
-              "self_frame_check": {
-                "problem_detected": false,
-                "problems": [],
-                "frame_repetition_count": 0,
-                "rewrite_required": false,
-                "recommended_title": "",
-                "recommended_summary": "",
-                "recommended_meta_description": ""
-              },
-              "source_comparison": {
-                "sufficient_basis": false,
-                "finding": ""
-              }
-            },
-            "story_id": "wt-7ebecf5b3f91d490",
-            "media_analysis_version": "2.0",
-            "media_checked_at": "2026-09-05T22:07:32.381Z",
-            "media_trigger_fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
-            "media_trigger": {
-              "relevant": true,
-              "level": "high",
-              "score": 4,
-              "reasons": [
-                "analysis_substantive_finding"
-              ],
-              "matched_terms": [
-                "gar nicht regieren"
-              ],
-              "source_count": 5,
-              "comparable_source_count": 2,
-              "fingerprint": "9e05efdf903a9b2c0436589458dbbe0b50a0387ea78d5de0b79736154dadb45c",
-              "content_fingerprint": "726bdba0d9741462c35f84c4b991cc04a86aa1a591d9e08f1c34ac6211f0b6d5",
-              "basis": "analysis_finding",
-              "version": "2.0"
-            }
-          },
-          "provider": "editorial_review",
-          "model": "source_bound_review",
-          "mode": "editorial_review",
-          "method_sources": [
-            "AGENTS.md",
-            "source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
-          ],
-          "claims": [
-            {
-              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-1",
-              "story_id": "wt-7ebecf5b3f91d490",
-              "claim": "FOCUS berichtet unter Berufung auf das BILD-Interview, Siegmund wolle über eine Kandidatur bei knappster Mehrheit erst nach der Wahl entscheiden.",
-              "status": "uncertain_claim",
-              "source_id": "focus-case-research",
-              "evidence": [
-                {
-                  "source_id": "focus-case-research",
-                  "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
-                  "excerpt_hash": "6bd8ec7384f43fbfd542",
-                  "checked_at": "2026-09-05T22:07:32.381Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T22:07:32.381Z"
-            },
-            {
-              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-2",
-              "story_id": "wt-7ebecf5b3f91d490",
-              "claim": "ZDFheute dokumentierte den Vorbehalt einer stabilen eigenen Mehrheit bereits bei einem früheren Auftritt.",
-              "status": "single_source_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
-                  "excerpt_hash": "786da8664aca1ba94d5b",
-                  "checked_at": "2026-09-05T22:07:32.381Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T22:07:32.381Z"
-            },
-            {
-              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-3",
-              "story_id": "wt-7ebecf5b3f91d490",
-              "claim": "Der Ministerpräsident wird durch den Landtag in geheimer Abstimmung gewählt, nicht direkt durch die Bevölkerung.",
-              "status": "primary_source_claim",
-              "source_id": "landtag-sachsen-anhalt-context",
-              "evidence": [
-                {
-                  "source_id": "landtag-sachsen-anhalt-context",
-                  "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
-                  "excerpt_hash": "6c9e71de60fa8e00cae7",
-                  "checked_at": "2026-09-05T22:07:32.381Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T22:07:32.381Z"
-            },
-            {
-              "claim_id": "wt-7ebecf5b3f91d490-v1-claim-4",
-              "story_id": "wt-7ebecf5b3f91d490",
-              "claim": "Die Landtagswahl findet am 6. September 2026 statt.",
-              "status": "primary_source_claim",
-              "source_id": "sachsen-anhalt-election-context",
-              "evidence": [
-                {
-                  "source_id": "sachsen-anhalt-election-context",
-                  "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
-                  "excerpt_hash": "a450f405ab53eab21d79",
-                  "checked_at": "2026-09-05T22:07:32.381Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T22:07:32.381Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "bild-access",
-              "url": "https://www.bild.de/politik/inland/sachsen-anhalt-ulrich-siegmund-reichen-auch-drei-stimmen-mehrheit-nicht-6a9acf6908c763dcf81f4615",
-              "content_hash": "7d90ff832f9233d4d68b3a89b5b17396cb20c6037fe9a9ca5fe3b7353aa5af3e"
-            },
-            {
-              "source_id": "focus-case-research",
-              "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
-              "content_hash": "0beba9860e1a0d0e4ce4764426e5e4532c549a05ea93344f73f27859184511a6"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
-              "content_hash": "814e1ee2efa6bdd6b2bb3c756b8487c387cf91d23868e071360814cb2082fa9f"
-            },
-            {
-              "source_id": "landtag-sachsen-anhalt-context",
-              "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
-              "content_hash": "2ab43f7ca01cf4bcda184ef5b2b5d8fbe78cc78fcdaa609d3555d595d300e0b0"
-            },
-            {
-              "source_id": "sachsen-anhalt-election-context",
-              "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
-              "content_hash": "834dde58c68a4b9ed6849b01a5eb57c2a48b26251ccc6d89e0c32eb5659309b9"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-05T22:07:32.381Z",
-          "source_count": 5
-        }
-      ],
-      "retirement_history": [],
-      "editorial_review": {
-        "research_checked_at": "2026-09-05T22:05:00Z",
-        "basis": "Quellengebundene redaktionelle Prüfung des öffentlich erschlossenen BILD-Interviews, des FOCUS-Berichts, früherer ZDF-Berichterstattung und amtlicher Wahl-/Verfassungsquellen. Das eingebettete Video wurde nicht eigenständig angehört. Keine unabhängige Bestätigung möglicher interner Abweichler. FOCUS berichtet über dasselbe Interview, nicht über eine zweite eigenständige Aussage.",
-        "original_event_date": "2026-09-04",
-        "exclusions": [
-          "Kein belegter plötzlicher Kurswechsel am Samstagabend",
-          "Keine Behauptung interner Stimmverweigerer",
-          "Keine Prognose einer absoluten Mehrheit",
-          "Keine Bewertung einer Partei oder Person"
         ]
       }
     }

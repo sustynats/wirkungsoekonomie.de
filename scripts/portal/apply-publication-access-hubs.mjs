@@ -284,6 +284,7 @@ function hub(config) {
 function applyHub(config) {
   if (!exists(config.rel)) return false;
   let html = fs.readFileSync(abs(config.rel), "utf8");
+  if (html.includes('data-publication-hub="curated"')) return false;
   if (config.keepExisting && (html.includes('id="publikationszugang"') || html.includes('id="vertiefung-arbeitsmaterial"'))) return false;
   html = html.replace(/<!-- publication-access-hub:start -->[\s\S]*?<!-- publication-access-hub:end -->\n?/, "");
   const beforeClosingMain = html.lastIndexOf("</main>");

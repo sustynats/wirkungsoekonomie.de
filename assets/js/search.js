@@ -17,7 +17,7 @@
   const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
   const i18n = (deText, enText) => (siteLocale === "en" ? enText : deText);
   const searchPageHref = siteLocale === "en" ? "/en/search/" : "/suche.html";
-  const searchDataVersion = "20260827-live-index";
+  const searchDataVersion = "20260905-current-index";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 2500;
   const MAX_VISIBLE_RESULTS = 24;
@@ -75,8 +75,12 @@
     "social taxonomy": ["/begriffe/social-taxonomy/", "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html", "/begriffe/eu-taxonomie/"],
     "social-taxonomy": ["/begriffe/social-taxonomy/", "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html", "/begriffe/eu-taxonomie/"],
     "reverse merit order": ["/begriffe/reverse-merit-order/", "/werkzeuge/reverse-merit-order/", "/wirkungsfelder/produkte-konsum/"],
-    nwi: ["/begriffe/nwi/", "/werkzeuge/netto-wirkungs-index/", "/werkzeuge/impact-controlling/"],
-    "t-sroi": ["/begriffe/t-sroi/", "/werkzeuge/impact-controlling/t-sroi/", "/werkzeuge/impact-controlling/"],
+    nwi: ["/begriffe/nationaler-wohlfahrtsindex/", "/begriffe/nwi/", "/werkzeuge/netto-wirkungs-index/"],
+    "t-sroi": ["/begriffe/t-sroi/", "/werkzeuge/t-sroi/", "/werkzeuge/impact-controlling/"],
+    "impact controlling": ["/werkzeuge/impact-controlling/", "/erleben/impact-controlling-rechner/", "/werkzeuge/impact-controlling/dossier/"],
+    "impact-controlling": ["/werkzeuge/impact-controlling/", "/erleben/impact-controlling-rechner/"],
+    "dns": ["/methodik/", "/begriffe/deutsche-nachhaltigkeitsstrategie/", "/methodik/datenbasis.html"],
+    "enap": ["/methodik/", "/begriffe/elektronische-nachhaltigkeitspruefung/", "/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html"],
     "wök-id": ["/begriffe/woek-id/", "/werkzeuge/woek-ids/", "/verstehen/sdgs-sdgplus/"],
     "woek-id": ["/begriffe/woek-id/", "/werkzeuge/woek-ids/", "/verstehen/sdgs-sdgplus/"],
     "5 p": ["/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/marketing_fuenftes_p_planet/", "/wirkungsfelder/wirtschaft-unternehmen/"],
@@ -166,13 +170,13 @@
     },
     "t sroi": {
       title: "Begriff: T-SROI",
-      description: "Der Begriff erklärt den transformierten Social Return on Investment als Wirkungs- und Transformationsmaß.",
+      description: "Der Begriff erklärt den Transformational Social Return on Investment mit kausal begrenzten und diskontierten Nutzen- und Kostenströmen.",
       url: "/begriffe/t-sroi/",
       tags: ["Begriff", "Impact Controlling"],
     },
     "t-sroi": {
       title: "Begriff: T-SROI",
-      description: "Der Begriff erklärt den transformierten Social Return on Investment als Wirkungs- und Transformationsmaß.",
+      description: "Der Begriff erklärt den Transformational Social Return on Investment mit kausal begrenzten und diskontierten Nutzen- und Kostenströmen.",
       url: "/begriffe/t-sroi/",
       tags: ["Begriff", "Impact Controlling"],
     },
@@ -423,7 +427,7 @@
     const route = canonicalResultRoute(entry.url);
     const routes = CURATED_QUERY_ROUTES[query] || [];
     const index = routes.indexOf(route);
-    return index >= 0 ? 2000 - index * 120 : 0;
+    return index >= 0 && !String(entry.url).includes("#") ? 2000 - index * 120 : 0;
   }
 
   function getGroupLabel(groupId) {
@@ -725,6 +729,9 @@
     const query = normalize(rawQuery);
     if (!query) return null;
     if (RECOMMENDED_QUERY_ENTRYPOINTS[query]) return RECOMMENDED_QUERY_ENTRYPOINTS[query];
+    const curatedRoute = CURATED_QUERY_ROUTES[query]?.[0];
+    const curated = curatedRoute && state.index.find(entry => !String(entry.url).includes("#") && canonicalResultRoute(entry.url) === curatedRoute);
+    if (curated) return {title:curated.title,description:curated.description,url:curated.url,tags:curated.tags};
     return state.entrypoints.find((entrypoint) =>
       asArray(entrypoint.match).some((match) => {
         const normalizedMatch = normalize(match);
@@ -789,7 +796,7 @@
   }
 
   function renderTagList(tags) {
-    const list = unique(asArray(tags).map((tag) => String(tag || "").trim()).filter(Boolean)).slice(0, 6);
+    const list = unique(asArray(tags).map((tag) => String(tag || "").trim()).filter(tag => tag && !/^(?:approved|draft|reviewed|published|generated|historical|woek-praezisierungsbegriff)$/i.test(tag))).slice(0, 6);
     if (!list.length) return "";
     return `<ul class="search-tag-list">${list
       .map((tag) => `<li><a href="${searchPageHref}?q=${encodeURIComponent(tag)}" aria-label="${escapeHtml(i18n(`Nach ${tag} suchen`, `Search for ${tag}`))}">${escapeHtml(tag)}</a></li>`)
@@ -1263,10 +1270,10 @@
     if (state.loading) return state.loading;
     state.loading = (async () => {
       const [index, dictionary, associations, entrypoints] = await Promise.all([
-        fetch(dataUrl("search-index.json"), { cache: "no-store" }).then((response) => response.json()),
-        fetch(dataUrl("search-dictionary.json"), { cache: "no-store" }).then((response) => response.json()),
-        fetch(dataUrl("search-associations.json"), { cache: "no-store" }).then((response) => response.json()),
-        fetch(dataUrl("search-curated-entrypoints.json"), { cache: "no-store" }).then((response) => response.json()),
+        import(new URL('search-index-loader.js?v=20260905', searchScriptUrl).href).then(({ loadBrowserSearchIndex }) => loadBrowserSearchIndex(new URL('../search/', searchScriptUrl).href)),
+        fetch(dataUrl("search-dictionary.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('dictionary'); return response.json(); }),
+        fetch(dataUrl("search-associations.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('associations'); return response.json(); }),
+        fetch(dataUrl("search-curated-entrypoints.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('entrypoints'); return response.json(); }),
       ]);
       state.index = index.map((entry) => ({
         ...entry,
@@ -1281,7 +1288,7 @@
       state.entrypoints = entrypoints;
       state.ready = true;
     })().catch(() => {
-      status.textContent = i18n("Die Suche konnte nicht geladen werden.", "Search could not be loaded.");
+      status.textContent = i18n("Die Suche konnte nicht geladen werden. Bitte starte sie mit „Suchen“ erneut. Die Themenlinks bleiben verfügbar.", "Search could not be loaded. Please try Search again. Topic links remain available.");
     }).finally(() => {
       state.loading = null;
     });

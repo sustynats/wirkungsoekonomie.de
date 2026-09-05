@@ -1,6 +1,14 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-08-16T06:09:38.422Z
+Stand: 2026-09-05T21:54:05.598Z
+
+## § 7 Bundeshaushaltsordnung (BHO)
+
+§ 7 BHO verpflichtet den Bund zu Wirtschaftlichkeit und Sparsamkeit; für alle finanzwirksamen Maßnahmen sind angemessene Wirtschaftlichkeitsuntersuchungen durchzuführen.
+
+§ 7 der Bundeshaushaltsordnung verankert die Grundsätze der Wirtschaftlichkeit und Sparsamkeit. Absatz 2 verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen und die Berücksichtigung der Risikoverteilung. Die konkreten Anforderungen an Planung und spätere Erfolgskontrolle werden durch die Allgemeinen Verwaltungsvorschriften zur BHO ergänzt.
+
+Die BHO ist weder GGO noch DNS oder eNAP. Sie belegt zugleich, dass nichtlegislative finanzwirksame Maßnahmen nicht pauschal als staatliche Prüfleere beschrieben werden dürfen.
 
 ## 5. P = Planet
 
@@ -2186,6 +2194,14 @@ Ein destruktives Narrativ reduziert Komplexität durch Feindbilder, Schuldzuweis
 
 Destruktive Narrative können kurzfristig Kohärenz simulieren, indem sie klare Schuldige und einfache Lösungen anbieten. Langfristig erhöhen sie häufig Misstrauen, Polarisierung und institutionelle Destabilisierung.
 
+## Deutsche Nachhaltigkeitsstrategie (DNS)
+
+Die Deutsche Nachhaltigkeitsstrategie (DNS) ist der nationale Ziel-, Management- und Monitoringrahmen, mit dem Deutschland die Agenda 2030 und ihre 17 SDGs in eigene Ziele, Indikatoren und Governance übersetzt.
+
+Die Deutsche Nachhaltigkeitsstrategie ist die nationale Umsetzungs- und Steuerungsarchitektur für nachhaltige Entwicklung. Sie verbindet politische Ziele und Indikatoren mit einem Managementsystem, ressortübergreifender Governance und regelmäßigem Monitoring. Die Weiterentwicklung 2025 ordnet die deutsche Nachhaltigkeitspolitik weiterhin an der Agenda 2030 aus.
+
+Für die Wirkungsökonomie ist die DNS eine amtliche Referenz-, Ziel-, Baseline- und Monitoringquelle. Eine Zuordnung zu einem DNS-Ziel oder Indikator belegt jedoch noch nicht, dass eine konkrete Maßnahme die beobachtete Veränderung verursacht hat.
+
 ## Dezentralisierung
 
 Dezentralisierung beschreibt die Verteilung von Entscheidungs-, Eigentums-, Daten- oder Gestaltungsmacht auf mehrere Akteure oder Ebenen.
@@ -2333,6 +2349,14 @@ Dissonanzrationalisierung ist der präzise Unterbegriff zur Wirkungsabwehr. Ein 
 Dissonanzreduktion beschreibt den Versuch, innere Spannung zwischen Wahrnehmung, Erwartung und Realität zu verringern.
 
 Dissonanzreduktion kann konstruktiv oder destruktiv erfolgen. Konstruktiv ist sie, wenn neue Informationen integriert und das eigene Weltbild erweitert wird. Destruktiv ist sie, wenn Komplexität durch Sündenböcke, Feindbilder, Verschwörungsnarrative oder monokausale Erklärungen reduziert wird.
+
+## DNS-Indikator
+
+Ein DNS-Indikator ist eine amtlich definierte Beobachtungsgröße, mit der der Stand und die Zielerreichung der Deutschen Nachhaltigkeitsstrategie verfolgt werden.
+
+Die Bundesregierung ordnet der Deutschen Nachhaltigkeitsstrategie Ziele und Indikatoren zu; Destatis unterstützt deren Messung und veröffentlicht regelmäßig Daten und Indikatorenberichte. Indikatoren zeigen Zustände, Trends und Zielabstände. Sie können für politische Wirkungsanalysen eine wichtige Baseline oder Monitoringreferenz sein.
+
+Aus der Bewegung eines Indikators folgt aber nicht automatisch, dass ein bestimmtes Gesetz, Programm oder Budget diese Veränderung verursacht hat. Dafür braucht es eine eigenständige Kausal- und Zurechnungsprüfung.
 
 ## DNSH – Do No Significant Harm
 
@@ -2485,6 +2509,12 @@ E-Fuels sind synthetische Kraftstoffe, die mit Strom, Wasserstoff und Kohlenstof
 E-Fuels sind synthetische Kraftstoffe, die mit Strom, Wasserstoff und Kohlenstoffquellen hergestellt werden. Wirkungsökonomisch zählt nicht das Label, sondern die Netto-Wirkung: Stromherkunft, Effizienz, Einsatzfeld, Klimabilanz und Alternativen müssen geprüft werden.
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
+
+## E-Gesetzgebung / eGFA
+
+Die E-Gesetzgebung ist die digitale Arbeitsumgebung des Bundes für Rechtsetzung; die eGFA bildet dort Schritte der elektronischen Gesetzesfolgenabschätzung ab und bindet eNAP ein.
+
+Die E-Gesetzgebungsplattform unterstützt die ressortübergreifende Erstellung und Abstimmung von Regelungsvorhaben. Im Cockpit steht die elektronische Gesetzesfolgenabschätzung zur Verfügung; eNAP ist dort als Nachhaltigkeitsprüfung integriert. Die digitale Plattform verändert den Verfahrenszugang, ersetzt aber weder die rechtlichen Anforderungen der GGO noch die fachliche Bewertung des jeweiligen Vorhabens.
 
 ## EBA
 
@@ -2699,6 +2729,14 @@ Ein Elektromobilitätsdienstleister bietet Zugang, Verträge oder Abrechnung fü
 EMPs beeinflussen Preistransparenz, Roaming, Nutzerbindung und Plattformmacht.
 
 Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
+## Elektronische Nachhaltigkeitsprüfung (eNAP)
+
+eNAP ist das elektronische Prüfwerkzeug des Bundes für die Nachhaltigkeitsprüfung von Regelungsvorhaben und ist in die E-Gesetzgebung beziehungsweise eGFA eingebettet.
+
+Die elektronische Nachhaltigkeitsprüfung eNAP unterstützt Bundesressorts dabei, Nachhaltigkeitsbezüge eines Regelungsvorhabens systematisch zu prüfen. Sie führt durch relevante SDGs, Zielvorgaben sowie Ziele und Indikatoren der Deutschen Nachhaltigkeitsstrategie und ist Teil der digitalen E-Gesetzgebungsumgebung.
+
+Die mit eNAP erstellte Zusammenfassung wird im Verfahren dokumentiert. Öffentliche Gesetzesbegründungen können Nachhaltigkeitsaspekte wiedergeben; ohne konkreten Nachweis darf diese öffentliche Darstellung jedoch nicht als wort- oder byteidentischer eNAP-Rohexport bezeichnet werden.
 
 ## Elinor Ostrom / Commons
 
@@ -3341,6 +3379,14 @@ Der evolutorische Unternehmer entwickelt nicht nur Produkte und Märkte, sondern
 Der evolutorische Unternehmer erweitert die Schumpeter-Figur um Lernen, Selbstevolution und Kompetenzentwicklung. Er setzt nicht nur neue Kombinationen durch, sondern entwickelt die Fähigkeit, neue Möglichkeiten überhaupt wahrzunehmen, mit Unsicherheit umzugehen, eigene Routinen zu verändern und sich an neue Herausforderungen bewusst anzupassen.
 
 Für die Wirkungsökonomie ist diese Figur besonders anschlussfähig, weil sie Wirklichkeitsfähigkeit, Rückkopplungsfähigkeit und Transformationsfähigkeit verbindet. Sie fragt nicht nur: Was kann ich durchsetzen? Sondern auch: Was bewirkt mein Handeln, was muss ich lernen, welche Kompetenz fehlt und welche alte Routine muss ich verlassen?
+
+## Ex-ante-Folgenprüfung und Reality Check
+
+Ex-ante-Folgenprüfung schätzt mögliche Folgen vor einer Entscheidung; der Reality Check prüft später beobachtete Zustände und Evidenz gegen die ursprünglichen Annahmen und führt die Erkenntnisse in die nächste Analyseversion zurück.
+
+Die staatliche Gesetzesfolgenabschätzung ist primär ex ante ausgerichtet, enthält nach § 44 Absatz 7 GGO aber auch Vorgaben dazu, ob und nach welchem Zeitraum die beabsichtigten Wirkungen, Angemessenheit von Kosten und Ergebnissen sowie eingetretene Nebenwirkungen überprüft werden sollen.
+
+Der WÖk-Reality-Check behauptet deshalb nicht, Ex-post-Überprüfung neu erfunden zu haben. Er bezeichnet die systematische Rückführung von StateObservations, EvidenceEvents, Unsicherheit und Zurechnung in eine versionierte Wirkungsanalyse, Recommendation und nächste Entscheidung.
 
 ## Exergie
 
@@ -3988,6 +4034,14 @@ Gemeineigentum beschreibt Eigentum, das gemeinschaftlich oder öffentlich gehalt
 
 Es kann Kommune, Staat, Gemeinschaften oder institutionelle Träger betreffen.
 
+## Gemeinsame Geschäftsordnung der Bundesministerien (GGO)
+
+Die GGO ist die gemeinsame Verwaltungsvorschrift für die Arbeit der Bundesministerien; §§ 43 und 44 regeln zentrale Anforderungen an Gesetzesbegründung und Gesetzesfolgenabschätzung.
+
+Die Gemeinsame Geschäftsordnung der Bundesministerien strukturiert die Vorbereitung und Zusammenarbeit der Bundesministerien. Für die Folgen- und Nachhaltigkeitsprüfung sind besonders §§ 43 und 44 wichtig. § 43 nennt Anforderungen an die Begründung von Gesetzentwürfen, darunter Zielsetzung und Notwendigkeit, Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten. § 44 definiert Gesetzesfolgen als wesentliche Auswirkungen einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen, verlangt die Darstellung des Nachhaltigkeitsbezugs und enthält Vorgaben zur späteren Überprüfung.
+
+Die GGO ist eine amtliche Verwaltungsvorschrift und nicht mit der Deutschen Nachhaltigkeitsstrategie, eNAP oder der unabhängigen WÖk-Methodik gleichzusetzen.
+
 ## Gemeinsame Zukunftssicherung
 
 Gemeinsame Zukunftssicherung bezeichnet die kooperative Verantwortung, globale Lebens-, Friedens-, Klima-, Gesundheits-, Daten- und Demokratiegrundlagen so zu schützen, dass heutige und künftige Generationen handlungsfähig bleiben.
@@ -4123,6 +4177,14 @@ Ein Gesetz ist eine allgemein verbindliche Regel, die in einem verfassungsmäßi
 Ein Gesetz ist eine allgemein verbindliche Regel, die in einem verfassungsmäßigen Verfahren beschlossen wird.
 
 Gesetze sind Wirkungsträger: Sie verändern Rechte, Pflichten, Preise, Verfahren, Schutz und Handlungsmöglichkeiten.
+
+## Gesetzesfolgenabschätzung (GFA)
+
+Die Gesetzesfolgenabschätzung des Bundes prüft die wesentlichen voraussichtlichen Auswirkungen eines Regelungsvorhabens, einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen.
+
+Die Gemeinsame Geschäftsordnung der Bundesministerien verankert eine institutionalisierte Folgenprüfung. § 43 GGO verlangt in der Gesetzesbegründung unter anderem Zielsetzung und Notwendigkeit, den zugrunde liegenden Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten und die Gründe für ihre Ablehnung. § 44 GGO versteht unter Gesetzesfolgen die wesentlichen Auswirkungen einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen und verlangt die Darstellung des Nachhaltigkeitsbezugs und langfristiger Wirkungen. § 44 Absatz 7 enthält Vorgaben zur späteren Überprüfung.
+
+Die GFA ist deshalb keine bloße Kostenrechnung und keine Leerstelle, die die WÖk erst erfindet. Zugleich ist sie nicht identisch mit der vollständigen WÖk-Wirkungsarchitektur.
 
 ## Gesicherte Leistung
 
@@ -5588,6 +5650,16 @@ Kaskadennutzung nutzt Material oder Produkte mehrstufig über verschiedene Anwen
 
 Wichtig im biologischen Kreislauf, etwa bei Biomasse, Holz oder Fasern.
 
+## Katechon
+
+Katechon bezeichnet ein politisch-theologisches Motiv des Aufhaltens: Eine Kraft, Institution oder Person soll einen drohenden Zusammenbruch, das Chaos oder den Untergang zurückhalten. Der Begriff ist ein externer Anschlussbegriff und kein Wirkmechanismus der Wirkungsökonomie.
+
+Katechon geht auf die griechischen Ausdrücke κατέχον beziehungsweise κατέχων in 2 Thessalonicher 2,6–7 zurück. Sie bezeichnen dort das Aufhaltende beziehungsweise den Aufhaltenden, der das Offenbarwerden des Gesetzlosen zunächst zurückhält. Der Text benennt nicht eindeutig, wer oder was damit gemeint ist. Gerade diese Offenheit ermöglichte später unterschiedliche theologische, geschichtsphilosophische und politische Deutungen.
+
+Im 20. Jahrhundert erhielt das Motiv besonders durch Carl Schmitt politische Bedeutung. Es konnte nun für eine Macht, Institution oder Person stehen, die einen als existenziell beschriebenen Zerfall noch aufhalte. In heutigen Debatten begegnet das Motiv unter anderem dort, wo gesellschaftlicher Niedergang, Chaos oder Untergang behauptet und ein Akteur als letzte verbleibende Schutz- oder Ordnungskraft dargestellt wird. Volker Weiß hat diese gegenwärtige Wiederkehr 2026 in seiner Schrift „Katechon“ ideengeschichtlich eingeordnet.
+
+Katechon ist weder ein Synonym für Diktator, Führer, Messias oder Retter noch ein Beleg für Extremismus oder autoritäre Absicht. Ob eine Aussage dem Motiv entspricht, muss anhand ihres Zusammenhangs geprüft werden: Wird eine existenzielle Bedrohung konstruiert? Wird gewöhnliche demokratische Korrektur als unzureichend dargestellt? Wird einer Person, Bewegung oder Institution die Rolle der letzten aufhaltenden Kraft zugeschrieben? Die bloße Warnung vor einer Gefahr oder der Schutz demokratischer Institutionen genügt dafür nicht.
+
 ## Kausalität und Zurechnung
 
 Kausalität und Zurechnung unterscheiden zwischen tatsächlichen Ursachen, Beiträgen und der fairen Verantwortungszuordnung für beobachtete Folgen.
@@ -5743,6 +5815,14 @@ Klima- und Emissionsstandards legen fest, wie Treibhausgase erfasst, reduziert, 
 Klimaanpassung umfasst Maßnahmen, die Systeme widerstandsfähiger gegenüber eingetretenen oder erwartbaren Klimafolgen machen.
 
 Anpassung mindert Verwundbarkeit und Schäden, ersetzt aber nicht Klimaschutz.
+
+## Klimaanpassungsmanager:in
+
+Klimaanpassungsmanager:innen koordinieren in Kommunen die Entwicklung und Umsetzung einer strategischen Anpassung an Klimafolgen und verbinden dafür Fachbereiche, Wissen, Akteure und Maßnahmen.
+
+Klimaanpassungsmanager:innen sind kommunale Koordinations- und Steuerungsakteur:innen für die Anpassung an bereits eingetretene oder erwartbare Folgen des Klimawandels. Zu ihren Kernaufgaben gehört insbesondere, die Erstellung und Umsetzung eines Klimaanpassungskonzepts zu koordinieren, vorhandene Aktivitäten zusammenzuführen und Klimaanpassung ressortübergreifend in der Kommune zu verankern. Die konkrete Ausgestaltung der Stelle, ihre Schwerpunkte und die geforderten Qualifikationen können je nach Kommune variieren.
+
+Die Rolle verbindet Fachwissen über Klimafolgen und Anpassungsmaßnahmen mit Projektmanagement, Moderation, Kommunikation, Beteiligung und Verwaltungskenntnis. Sie ersetzt weder politische Beschlüsse noch die Zuständigkeit von Fachämtern, Katastrophenschutz, Gesundheitsdiensten oder Infrastrukturbetreibern. Ihre Wirksamkeit hängt davon ab, ob Mandat, Ressourcen, Daten, fachbereichsübergreifende Zusammenarbeit und Umsetzungskapazität tatsächlich vorhanden sind.
 
 ## Klimabeschluss des Bundesverfassungsgerichts
 
@@ -7457,6 +7537,14 @@ Nachhaltigkeitsmanagement ist das Management von Beiträgen zur langfristig gesi
 
 Es verbindet Wirkungs-, Risiko- und Rückkopplungssteuerung mit Grenzachtung, Regeneration, Lernen und Nicht-Externalisierung. Reporting, ESG-Berichte und Audits können Nachweise und Lerninstrumente sein, nicht Nachhaltigkeit selbst.
 
+## Nachhaltigkeitsprüfung des Bundes
+
+Die Nachhaltigkeitsprüfung ist der Teil der Gesetzesfolgenabschätzung, in dem geprüft und dargestellt wird, ob die Wirkungen eines Regelungsvorhabens einer nachhaltigen Entwicklung entsprechen.
+
+Bei Bundesregelungsvorhaben ist im Rahmen der Gesetzesfolgenabschätzung darzustellen, ob die Wirkungen einer nachhaltigen Entwicklung entsprechen. Das BMJV beschreibt dafür die Prüfung betroffener SDGs und Zielvorgaben sowie von Zielen und Indikatoren der Deutschen Nachhaltigkeitsstrategie. Seit 2018 unterstützt eNAP diese Prüfung elektronisch.
+
+Eine veröffentlichte Darstellung von Nachhaltigkeitsaspekten in einer Gesetzesbegründung ist öffentliche GFA-/Nachhaltigkeitsprüfungsdokumentation. Sie ist aber nicht automatisch als wort- oder byteidentischer öffentlicher eNAP-Export zu bezeichnen.
+
 ## Nachtwächterstaat
 
 Der Nachtwächterstaat ist ein Minimalstaat, der sich auf Schutz von Eigentum, Sicherheit und Rechtsordnung beschränkt.
@@ -7486,6 +7574,12 @@ Natalität bezeichnet bei Arendt die Fähigkeit, etwas Neues zu beginnen.
 Natalität bezeichnet bei Arendt die Fähigkeit, etwas Neues zu beginnen.
 
 Wichtig für Transformation, Innovation, demokratisches Handeln und Wirkungsökonomie als neuer Anfang.
+
+## Nationaler Wohlfahrtsindex (NWI)
+
+Der Nationale Wohlfahrtsindex (NWI) ist ein deutscher Wohlfahrtsindikator aus 21 monetär bewerteten wohlfahrtsstiftenden und wohlfahrtsmindernden Komponenten.
+
+Der Nationale Wohlfahrtsindex (NWI) ist ein in Deutschland etablierter Wohlfahrtsindikator. Nach der Indikatorbeschreibung des Umweltbundesamtes umfasst er 21 monetär bewertete Komponenten. Dazu gehören unter anderem mit der Einkommensverteilung gewichteter privater Konsum, Hausarbeit, ehrenamtliche Tätigkeiten, Bildung und Gesundheit sowie Kosten von Umweltschäden und weitere wohlfahrtsmindernde Kategorien. Er ist vom WÖk-Netto-Wirkungsindex zu unterscheiden.
 
 ## Nationalismus
 
@@ -7630,12 +7724,6 @@ Die WÖk prüft, ob Net-Zero-Pfade real, datenbasiert, sozial tragfähig und nic
 Netto-Wirkung bezeichnet die zusammengeführte Bewertung positiver und negativer Wirkungen unter Berücksichtigung von Wirkungsgrenzen, Datenqualität und Nichtkompensation.
 
 Netto-Wirkung bezeichnet die zusammengeführte Bewertung der positiven, negativen, neutralen und unsicheren Wirkungen eines Auslösers. In der WÖk ist sie keine einfache Rechenoperation und nicht positive Punkte minus negative Punkte. Systemgrenzen, Wirkungsräume, Datenqualität, zeitliche Wirkung, Nebenwirkungen, Rückkopplungen und nicht kompensierbare rote Linien müssen berücksichtigt werden.
-
-## Netto-Wirkungs-Index (NWI)
-
-Der Netto-Wirkungs-Index (NWI) verdichtet geprüfte positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl.
-
-Der Netto-Wirkungs-Index (NWI) ist eine Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Seine Grundformel stellt gewichtete positive und negative Wirkungen gegenüber. Damit der Wert aussagekräftig ist, müssen Zielzustand, Referenz, Systemgrenze, Zeitraum, Zurechnung, Skala, Gewichte, Datenqualität, Unsicherheit und relevante Nebenwirkungen dokumentiert sein.
 
 ## Nettokreditaufnahme
 
@@ -8109,6 +8197,22 @@ Relevant für Ladeinfrastruktur, Wechselrichter, Netzqualität und technische An
 
 Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
+## Objektspezifische staatliche Prüfarchitektur
+
+Staatliche Folgen-, Nachhaltigkeits-, Wirtschaftlichkeits- und Berücksichtigungsprüfungen folgen unterschiedlichen Rechts- und Verfahrensrahmen je nach Entscheidungsobjekt.
+
+Deutschland verfügt nicht über nur ein einziges Prüfverfahren für jedes staatliche Handeln. Für Bundesregelungsvorhaben sind unter anderem GGO, GFA, Nachhaltigkeitsprüfung und eNAP/eGFA relevant. Für finanzwirksame Maßnahmen gelten § 7 BHO und die VV-BHO. Je nach Gegenstand können Fachgesetze wie § 13 KSG oder § 8 KAnG, Vergabe-, Beteiligungs-, Förder- oder weitere Vorschriften hinzutreten.
+
+Objektspezifisch bedeutet deshalb: Zuerst werden Handlungsform, Zuständigkeit, Rechtsraum und materieller Gegenstand bestimmt; erst dann wird der wirklich anwendbare staatliche Prüf- und Kontrollrahmen belegt. Die Existenz einer Regel darf nicht mit ihrer Anwendung im Einzelfall verwechselt werden.
+
+## Objektspezifischer staatlicher Prüfbenchmark
+
+Der objektspezifische staatliche Prüfbenchmark dokumentiert für eine konkrete staatliche Entscheidung, welche amtlichen Prüf-, Bewertungs- und Kontrollrahmen gelten und was daraus öffentlich belegt ist.
+
+Staatliche Prüfung ist nicht auf ein einheitliches Verfahren reduziert. Der Benchmark erfasst je Objekt die anwendbaren staatlichen Rahmen: für Regelungsvorhaben insbesondere GGO, GFA, Nachhaltigkeitsprüfung und eNAP/eGFA; für finanzwirksame Maßnahmen § 7 BHO und die VV-BHO; KSG § 13, KAnG § 8, DNS-Governance und sektorale Evaluationsregime nur bei sachlicher Anwendbarkeit. Dokumentiert werden staatliche Problem- oder Bedarfsprüfung, Optionsvergleich, Ex-ante-Folgenprüfung, Erfolgs- oder Wirkungskontrolle, Zurechnungsmethode und öffentlicher Dokumentationsstand.
+
+Fehlende öffentliche Unterlagen bedeuten nicht automatisch, dass keine Prüfung stattfand. Der Benchmark bleibt von der unabhängigen WÖk-Analyse getrennt und erzeugt weder Wirkungsrichtung noch DNS-Zuordnung noch Empfehlung.
+
 ## OCPP
 
 OCPP ist ein Kommunikationsprotokoll zwischen Ladepunkten und Backend-Systemen.
@@ -8510,6 +8614,14 @@ In einer parlamentarischen Demokratie ist das Parlament zentraler Ort demokratis
 In einer parlamentarischen Demokratie ist das Parlament zentraler Ort demokratischer Gesetzgebung und Kontrolle der Regierung.
 
 Relevant für Machtbegrenzung, Rechenschaft und Regierungskontrolle.
+
+## Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)
+
+Der PBnEZ ist ein Gremium des Deutschen Bundestages, das Nachhaltigkeit parlamentarisch begleitet und die Nachhaltigkeitsprüfung von Regelungsvorhaben kontrolliert.
+
+Der Parlamentarische Beirat für nachhaltige Entwicklung und Zukunftsfragen begleitet die Nachhaltigkeitspolitik des Bundes im Deutschen Bundestag und befasst sich unter anderem mit der Nachhaltigkeitsprüfung von Regelungsvorhaben. Er steht neben der Regierungsgovernance der DNS und bildet eine parlamentarische Kontrollperspektive.
+
+Der Beirat darf nicht mit dem von der Wirkungsökonomie vorgeschlagenen Wirkungsrat gleichgesetzt werden. Aufgaben, Rechtsstellung und institutionelle Legitimation sind unterschiedlich.
 
 ## Parteistaat
 
@@ -9164,6 +9276,12 @@ Der Begriff zeigt, ob ein Angebot für Kund:innen und Markt attraktiv genug ist.
 Produkt-, Umwelt- und Kreislauflabels informieren über bestimmte Eigenschaften, Standards oder Lebenszyklusaspekte von Produkten, ersetzen aber keine Gesamtbewertung.
 
 Produkt-, Umwelt- und Kreislauflabels informieren über bestimmte Eigenschaften, Standards oder Lebenszyklusaspekte von Produkten, ersetzen aber keine Gesamtbewertung.
+
+## Produkt-ID
+
+Eine Produkt-ID identifiziert das konkrete Produkt, Modell oder andere Steuerobjekt, auf das Wirkungsdaten und Rechtsfolgen bezogen werden.
+
+Produkt-ID ist im WStG 3.0 der Sammelbegriff für eine eindeutige Produkt- oder Objektkennung, etwa eine DPP-, Register-, Steuer-, EAN-/GTIN- oder sonstige Objektkennung. Sie verbindet einen konkreten Gegenstand mit Datenpunkten und Nachweisen. Die Produkt-ID sagt nicht, welche Wirkung gemessen wird, und ist weder eine Personen-ID noch selbst eine Bewertung.
 
 ## Produkt-Markt-Wirkungs-Fit
 
@@ -10134,6 +10252,16 @@ Residuallast ist die Stromnachfrage nach Abzug variabler erneuerbarer Einspeisun
 Residuallast ist die Stromnachfrage nach Abzug variabler erneuerbarer Einspeisung.
 
 Wichtig für Speicher, Backup, Flexibilität und Strommarktdesign.
+
+## Resignifikation / subversive Resignifikation
+
+Resignifikation bezeichnet die Veränderung oder gezielte Neubesetzung der Bedeutung eines Begriffs, Zeichens oder historischen Narrativs. Im Sinne von Volker Weiß beschreibt subversive beziehungsweise strategische Resignifikation des Historischen, wie politische Akteure historische Begriffe und Deutungen aus ihrem Zusammenhang lösen, umcodieren und als anschlussfähige Gegenwirklichkeit in den öffentlichen Diskurs zurückspielen.
+
+Resignifikation ist zunächst ein allgemeiner sprachlicher, kultureller und politischer Vorgang: Die Bedeutung eines Wortes, Zeichens, Symbols oder Narrativs wird verändert, neu besetzt oder in einen anderen Deutungszusammenhang gestellt. Das kann offen oder schleichend, emanzipatorisch oder manipulativ, beabsichtigt oder als Ergebnis gesellschaftlicher Auseinandersetzung geschehen. Der Begriff ist daher nicht von sich aus auf extrem rechte Kommunikation festgelegt. Auch die selbstbestimmte Wiederaneignung einer abwertenden Bezeichnung durch Betroffene kann eine Resignifikation sein.
+
+Volker Weiß verwendet die Begriffe subversive beziehungsweise strategische Resignifikation des Historischen für ein Verfahren extrem rechter Geschichtspolitik. Historische Begriffe, Ereignisse und Symbole werden aus ihren Zusammenhängen gelöst, neu kombiniert oder mit vertauschten Rollen und Verantwortlichkeiten in die Gegenwart zurückgespielt. So kann eine erfundene oder umcodierte Vergangenheit als Begründungsressource für autoritäre und antidemokratische Zukunftsentwürfe dienen. Subversiv bezeichnet hier die Unterwanderung einer geteilten historischen Bedeutungsordnung; es ist kein Gütesiegel für eine emanzipatorische Wirkung.
+
+Analytisch müssen drei Ebenen getrennt bleiben: die beobachtbare semantische Veränderung, eine belegbare strategische Absicht und die tatsächlich eingetretene Wirkung bei Menschen, Institutionen oder im öffentlichen Diskurs. Dass eine Umdeutung verbreitet oder häufig wiederholt wird, zeigt Reichweite und Wirkungspotenzial, aber noch keine Einstellungs- oder Verhaltensänderung.
 
 ## Resilienz
 
@@ -11289,6 +11417,22 @@ Der Staat 2035:
 - ermöglicht Beteiligung,
 - korrigiert Fehler,
 - schützt vor Technokratie und Überwachung.
+
+## Staatliche Nachhaltigkeitsarchitektur
+
+Die staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur des Bundes ist nach Entscheidungstyp verteilt: GGO/GFA/eNAP für Regelungsvorhaben, BHO/VV-BHO für finanzwirksame Maßnahmen sowie weitere objekt- und fachrechtliche Regime, soweit anwendbar.
+
+Deutschland verfügt über eine mehrschichtige, objektspezifische Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie mit Zielen, Governance und Monitoring, die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA für Regelungsvorhaben sowie § 7 BHO und die VV-BHO für finanzwirksame Maßnahmen. Die VV-BHO konkretisiert Planung und Erfolgskontrolle mit Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. KSG, KAnG und sektorale Evaluationsregime kommen nur bei sachlicher Anwendbarkeit hinzu.
+
+Diese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Fehlende öffentliche Dokumentation beweist nicht, dass keine Prüfung stattgefunden hat. Die jeweils anwendbaren staatlichen Rahmen müssen bei einer fairen WÖk-Abgrenzung zuerst objektspezifisch ausgewiesen werden.
+
+## Staatlicher GFA-/eNAP-Benchmark
+
+staatlicher GFA-/eNAP-Benchmark ist der WÖk-Datenlayer, der bei geeigneten Bundesregelungsvorhaben die öffentlich belegbare staatliche GFA-/Nachhaltigkeitseinschätzung getrennt von der unabhängigen WÖk-Analyse dokumentiert.
+
+Der Layer erfasst nur, was aus amtlichen Quellen für ein konkretes Bundesregelungsvorhaben öffentlich festgestellt werden kann: Umfang der GFA/Nachhaltigkeitsprüfung, DNS-/SDG-Bezüge, positive und negative Aspekte, Zielkonflikte, Langfrist- und Drittstaatenbezüge sowie den Dokumentationsstatus. Anschließend werden Konvergenz, zusätzliche WÖk-Befunde und echte Widersprüche getrennt ausgewiesen.
+
+Eine öffentliche Nachhaltigkeitsdarstellung ist nicht automatisch ein öffentlicher eNAP-Rohexport. Fehlt ein solcher Nachweis, bleibt der eNAP-Dokumentationsstatus offen beziehungsweise öffentlich nicht belegt; er wird niemals automatisch zu nicht geprüft.
 
 ## Staatsdelegitimierung
 
@@ -13185,6 +13329,14 @@ Vulnerabilität beschreibt die Verwundbarkeit von Menschen, Ökosystemen, Infras
 
 Sie hängt von Sensitivität, Exposition und Anpassungskapazität ab.
 
+## VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle
+
+Die VV zu § 7 BHO konkretisieren für finanzwirksame Maßnahmen die Wirtschaftlichkeitsuntersuchung in der Planungsphase und die begleitende oder abschließende Erfolgskontrolle.
+
+Die Allgemeinen Verwaltungsvorschriften zu § 7 BHO konkretisieren Wirtschaftlichkeitsuntersuchungen und Erfolgskontrollen für finanzwirksame Maßnahmen des Bundes. Erfolgskontrolle ist ein systematisches Prüfverfahren und wird vom laufenden Monitoring unterschieden. Sie umfasst grundsätzlich Zielerreichungskontrolle, Wirkungskontrolle und Wirtschaftlichkeitskontrolle. Die Wirkungskontrolle untersucht, ob die Maßnahme für die Zielerreichung ursächlich war, und bezieht beabsichtigte sowie unbeabsichtigte Wirkungen und eingetretene Risiken ein.
+
+Das Verfahren ist ein wichtiger bestehender Ex-ante-/Ex-post-Rahmen. Seine öffentliche Dokumentation, Prüftiefe und Anwendung sind für den konkreten Gegenstand zu belegen und nicht aus der bloßen Existenz der Vorschrift abzuleiten.
+
 ## W-BIP
 
 W-BIP bezeichnet eine erweiterte Wohlstandskennzahl, die wirtschaftliche Leistung um soziale, ökologische und gesellschaftliche Aspekte ergänzt.
@@ -13915,9 +14067,11 @@ Die Wirkungsbiografie erweitert den Blick auf Leistung. Während die Erwerbsbiog
 
 ## Wirkungsblindheit
 
-Wirkungsblindheit beschreibt Systeme, Kennzahlen oder Entscheidungen, die Aktivität, Kapital, Gewinn, Reichweite oder Output messen, aber tatsächliche Folgen für Mensch, Planet und Demokratie nicht erkennen.
+Wirkungsblindheit bedeutet in der WÖk nicht, dass ein System keinerlei Folgen prüft oder misst. Gemeint ist eine strukturelle Lücke, wenn relevante Zustandsveränderungen, Wirkpfade oder Unsicherheiten nicht vollständig erkannt, nicht kausal zugeordnet oder nicht wirksam in Entscheidungen, Anreize und spätere Korrektur zurückgeführt werden.
 
-Wirkungsblindheit ist die strukturelle Unfähigkeit eines Systems, tatsächliche Folgen zu erkennen oder zurückzukoppeln, obwohl es Aktivität, Kapital, Output, Gewinn, Wachstum, Beschäftigung oder Reichweite präzise misst.
+Ein System kann viele Daten erheben, Folgen abschätzen, Ziele prüfen und trotzdem wirkungsblind bleiben, wenn entscheidungsrelevante Zustandsveränderungen, Nebenfolgen, Zurechnung oder Lernschleifen nicht ausreichend verbunden sind. Wirkungsblindheit ist deshalb ein gradueller Diagnosebegriff und keine Behauptung vollständiger Abwesenheit von Folgenprüfung.
+
+Deutschland ist ein wichtiges Gegenbeispiel zur Totalblindheit: DNS und Destatis-Monitoring sowie GGO/GFA/Nachhaltigkeitsprüfung und eNAP zeigen, dass institutionalisierte Prüf- und Messstrukturen existieren. Die WÖk-Kritik richtet sich auf die noch nicht vollständig geschlossene, objektspezifische Rückkopplungskette und darf diese vorhandene Architektur nicht ausblenden.
 
 ## Wirkungsbonus
 
@@ -14413,11 +14567,15 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## Wirkungsnachweis
 
-Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.
+Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann.
 
-Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.
+Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann. Dazu gehören Ausgangszustand, Zeitraum, Systemgrenze, Wirkmechanismus, Vergleich mit einer plausiblen Entwicklung ohne Maßnahme und die Unsicherheit des Befunds. Eine bloße Vorher-Nachher-Beobachtung ist noch kein belastbarer Kausalnachweis. Plausible erwartete Veränderungen werden als Wirkungspotenzial oder Wirkungsrisiko ausgewiesen.
 
-In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
+## Wirkungsnachweiskonto
+
+Das Wirkungsnachweiskonto ist eine digitale, revisionssichere Nachweis- und Versionsschicht für steuerrelevante Wirkungsdaten je Tatbestand.
+
+Das Wirkungsnachweiskonto speichert für einen steuerlich bestimmten Gegenstand nachvollziehbar, welche Wirkungsdaten, Quellen, Benchmarks, Versionen, Prüfungen und Rechtsfolgen verwendet wurden. Es dient Nachweis, Korrektur, Rechtsschutz und Evaluation. Es bildet weder einen steuerartenübergreifenden Saldo guter und schlechter Wirkung noch ein Personenrating und ermöglicht keine freie Verrechnung zwischen unterschiedlichen Steuerzwecken oder Wirkungsfeldern.
 
 ## Wirkungsnetz
 
@@ -14773,6 +14931,14 @@ Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirku
 
 Das Wirkungsregister bündelt Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Datenquellen, Prüfstatus, Systemgrenzen, Wirkungsgrenzen, Audit-Trails, Versionen und Korrekturen so, dass Wirkungsdaten auffindbar, prüfbar, vergleichbar und rückkopplungsfähig werden.
 
+## Wirkungsrelevanz statt Rechtsform
+
+Wirkungsrelevanz statt Rechtsform ist das WÖk-Prinzip, Prüfgegenstände nach möglicher materieller Zustandsveränderung und nicht allein nach ihrer rechtlichen Handlungsform auszuwählen.
+
+Das Prinzip erweitert den möglichen WÖk-Prüfumfang über Rechtsetzung hinaus. Ein Gegenstand wird relevant, wenn er einen materiell bedeutsamen Zustand von Mensch, Planet oder Demokratie verändern kann. Die Rechtsform bleibt dennoch wichtig, weil sie Zuständigkeit, Verfahren, Rechtsfolgen und den anwendbaren staatlichen Prüfrahmen bestimmt.
+
+Das Prinzip behauptet keine staatliche Prüfleere. Es verbindet vielmehr unterschiedliche Objekttypen mit einer gemeinsamen WÖk-Analysekette, nachdem die objektspezifischen staatlichen Verfahren festgestellt wurden.
+
 ## Wirkungsrelevanz- und Materialitätsanalyse
 
 Relevante tatsächliche und potenzielle Wirkungen unabhängig von finanzieller Materialität identifizieren und anschließend mit Risiken, Chancen und Abhängigkeiten verbinden.
@@ -14923,15 +15089,15 @@ Der Wirkungsstaat ist kein stärkerer Staat im autoritären Sinn, sondern ein ge
 
 ## Wirkungssteuer
 
-Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.
+Wirkungssteuer bezeichnet eine modulare fiskalische Rückkopplungsarchitektur, die nachgewiesene oder gesetzlich modellierte Wirkung über klar bestimmte Module an bestehende Steuerarten anbindet.
 
-Die Wirkungssteuer bezeichnet die steuerliche Rückkopplung gemessener und bewerteter Wirkung. Sie verknüpft Steuerlast, Entlastung oder Bonuslogik mit der Wirkung eines Produkts, einer Tätigkeit, eines Einkommens, eines Kapitalflusses oder einer öffentlichen Ausgabe.
+Wirkungssteuer 3.0 ist keine universelle Supersteuer. Ausgangspunkt bleibt jede bestehende Steuer mit eigenem Steuergegenstand, eigener Bemessungsgrundlage und Kompetenzordnung. Ein Wirkungsmodul kann nur durch Gesetz aktiviert werden und muss Datengrundlage, Schutzgrenzen, Tariffolge, Übergang, Rechtsschutz und Evaluation bestimmen. Nichtkompensation und Reverse Merit Order schützen vor dem Wegmitteln schwerer Schäden; Personen werden nicht bewertet.
 
 ## Wirkungssteuergesetz
 
-Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.
+Das Wirkungssteuergesetz (WStG) 3.0 ist der vollständige Rahmengesetzentwurf für eine modulare, rechtsgebundene Wirkungsrückkopplung über bestehende Steuerarten.
 
-Das Wirkungssteuergesetz bezeichnet den konzeptionellen Rahmenentwurf der Wirkungsökonomie, mit dem Wirkung als steuerliche Bemessungs- und Steuerungsgröße eingeführt werden soll. Es ist als Entwurf und Rahmenlogik zu kennzeichnen, nicht als geltendes Recht.
+Das WStG 3.0 enthält 125 kommentierte Paragrafen. Es ordnet Wirkung, Evidenz und Zurechnung, Nichtkompensation und Reverse Merit Order, Daten- und Registerarchitektur, getrennte WÖk- und Produkt-IDs, das Wirkungsnachweiskonto, Wirkungsrat, Datenschutz, Rechtsschutz, KI, Haushaltsneutralität, Pilotierung und EU-Pfad. Das WStG ist ein Referenz- und Diskussionsentwurf, kein geltendes Recht.
 
 ## Wirkungssteuerkonto
 
@@ -15253,17 +15419,21 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## WÖk-ID
 
-Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator, mit der Wirkung systematisch, maschinenlesbar und standardübergreifend messbar gemacht wird.
+Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator.
 
-Die WÖk-ID ist die eindeutige Identifikationsnummer eines Wirkungsindikators innerhalb der Wirkungsökonomie. Sie dient dazu, relevante Wirkungsdaten strukturiert zu erfassen, zuzuordnen, zu prüfen, zu vergleichen und in Scorecards zu verwenden.
+Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.
+
+## WÖk-Netto-Wirkungsindex
+
+Der WÖk-Netto-Wirkungsindex verdichtet geprüfte operative Wirkungen innerhalb einer offengelegten Bewertungs- und Schutzlogik.
+
+Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Er stellt geprüfte positive und negative Wirkungen gegenüber und bleibt an Systemgrenze, Zeitraum, Zurechnung, Datenqualität, Unsicherheit, Wirkungsgrenzen und Nichtkompensation gebunden. Die frühere Kurzbezeichnung NWI wird öffentlich nicht mehr verwendet, weil NWI in Deutschland etabliert für den Nationalen Wohlfahrtsindex steht.
 
 ## WÖk-IDs
 
-WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.
+WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung.
 
-WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.
-
-In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
+WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.
 
 ## WÖk-Indikatorenarchitektur
 
@@ -15371,9 +15541,9 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## WStG
 
-WStG steht für Wirkungssteuergesetz, den Rahmengesetz-Entwurf für steuerliche Wirkungsrückkopplung.
+WStG steht für Wirkungssteuergesetz 3.0, den modularen Rahmengesetzentwurf für steuerliche Wirkungsrückkopplung über bestehende Steuerarten.
 
-Das WStG strukturiert die rechtliche Rahmung von Wirkungssteuerung und Wirkungsrückkopplung.
+Das WStG 3.0 ordnet die gemeinsame Architektur der Wirkungssteuer. Es setzt selbst keinen Universaltarif und überträgt Scorecards keine Gesetzgebungsmacht. Steuersätze und Rechtsfolgen bleiben beim Gesetzgeber. Der Entwurf schließt Personenbewertung aus und behandelt fehlende Daten als zu bearbeitende Unsicherheit statt als Neutralwert.
 
 ## Wu Wei
 
@@ -15488,6 +15658,14 @@ Ein wirkungsfähiges Zielbild und realistische Zwischenzustände für Organisati
 Ein wirkungsfähiges Zielbild und realistische Zwischenzustände für Organisation, Prozesse, Daten, Technologie und Governance gestalten.
 
 J07 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Zielarchitektur mit Übergangsarchitekturen, Architekturbausteinen, Risiken, Abhängigkeiten und Roadmap.
+
+## Zielbezug und Wirkung
+
+Zielbezug zeigt, zu welchem Ziel oder Schutzgut ein Vorhaben fachlich gehört; Wirkung beschreibt dagegen eine tatsächliche Zustandsveränderung. Beides ist nicht dasselbe.
+
+Ein Regelungsvorhaben kann plausibel einem SDG, DNS-Ziel, Grundrecht oder anderen Referenzrahmen zugeordnet werden. Diese Zuordnung sagt, welche Zielrichtung oder welches Schutzgut berührt ist. Ob sich ein Zustand tatsächlich verändert und ob diese Veränderung dem Vorhaben zugerechnet werden kann, sind getrennte empirische Fragen.
+
+Diese Trennung verhindert, dass Zielkongruenz, politische Absicht, Indikatorbewegung und Kausalität ineinandergeschoben werden.
 
 ## Zielkonflikt
 
