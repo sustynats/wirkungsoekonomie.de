@@ -70,11 +70,11 @@ export function validateP55({handoff, residual}, {verifyDeterminism = true} = {}
   ].sort());
   assert.deepEqual(
     residual.summary.materialised_terminal_pages,
-    [1, ...Array.from({ length: 51 }, (_, index) => index + 5)],
-    'P1 and P5-P55 must be losslessly materialised from the archived authorities plus P55',
+    Array.from({ length: 55 }, (_, index) => index + 1),
+    'P1-P55 must be losslessly materialised from the archived authorities plus P55',
   );
-  assert.deepEqual(residual.summary.protected_authored_pages_pending_technical_reconciliation, [2, 3, 4]);
-  assert.equal(residual.summary.remaining_technical_page_envelopes.length, 43);
+  assert.deepEqual(residual.summary.protected_authored_pages_pending_technical_reconciliation, []);
+  assert.equal(residual.summary.remaining_technical_page_envelopes.length, 40);
   assert.equal(residual.summary.programme_terminal, false);
   assert.equal(residual.summary.p56_authoring_authorised_by_this_matrix, false);
   assert.equal(residual.summary.exact_remaining_effect_object_count, null);

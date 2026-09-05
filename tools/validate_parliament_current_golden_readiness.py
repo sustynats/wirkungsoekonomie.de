@@ -177,9 +177,9 @@ def validate(actual: dict, expected: dict) -> None:
     mv = actual["blocking_lanes"]["mecklenburg_vorpommern"]
     if (mv["verified_final_programmes_requiring_truthful_residual"], mv["source_maturity_pending"]) != (12, 7):
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_MV_TRUTH_DRIFT")
-    if mv["spd_materialised_terminal_pages"] != [1, *range(5, 56)] or mv["spd_p55_remaining_source_objects"]:
+    if mv["spd_materialised_terminal_pages"] != list(range(1, 56)) or mv["spd_p55_remaining_source_objects"]:
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_MV_SPD_TERMINAL_PAGE_DRIFT")
-    if mv["spd_protected_authored_pages_pending_technical_reconciliation"] != [2, 3, 4] or len(mv["spd_authority_pointer_gap_object_ids"]) != 15:
+    if mv["spd_protected_authored_pages_pending_technical_reconciliation"] or mv["spd_authority_pointer_gap_object_ids"]:
         raise ValueError("PARLIAMENT_CURRENT_GOLDEN_MV_SPD_POINTER_GAP_DRIFT")
     visuals = actual["protected_complete_lanes"]["sachsen_anhalt_impact_visuals"]
     if (visuals["record_count"], visuals["program_scenario_count"], visuals["case_scenario_count"], visuals["final_image_signoff_approved_count"], visuals["records_with_missing_approved_inputs"]) != (12, 6, 6, 12, 0):

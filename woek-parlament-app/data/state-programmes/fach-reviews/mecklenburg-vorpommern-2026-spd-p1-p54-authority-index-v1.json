@@ -1109,9 +1109,40 @@
       "file_sha256": "b0760aa9a94016f8ddfd501b5aa4c64514e6240aec9602ce2716325812427a3f",
       "byte_length": 2351,
       "title": "## CONTINUE / EXECUTE NOW — MV SPD P1–P54 technical transaction is still stalled; restart from fresh exact main"
+    },
+    {
+      "issue_comment_id": 5554389664,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5554389664",
+      "kind": "authority",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "role": "FINITE_OBJECT_SPECIFIC_REAUTHORISATION_EXCEPTION",
+      "replacement": null,
+      "reason": null,
+      "path": "docs/parlament/audits/mv-spd-p1-p54-authorities/authority-5554389664.md",
+      "file_sha256": "d22b6d10be180a501c1cca8c2dddc76b860c69ffe85ac66a37c4936eb4b0408b",
+      "byte_length": 15561,
+      "title": "## WÖk AUTHORITATIVE FACH HANDOFF — MV SPD P2–P4 finite 15-object pointer closure"
+    },
+    {
+      "issue_comment_id": 5554390846,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/pull/389#issuecomment-5554390846",
+      "kind": "controller",
+      "pages": [],
+      "role": null,
+      "replacement": null,
+      "reason": null,
+      "path": "docs/parlament/audits/mv-spd-p1-p54-authorities/controller-5554390846.md",
+      "file_sha256": "e3913b5d683b5ac11bb868d9b3bfa67e72ca02cb14b4bf4e0d93e4ce802f9083",
+      "byte_length": 1202,
+      "title": "## CONTINUE / EXECUTE NOW — finite 15-object Fach pointer gap is now authoritatively closed"
     }
   ],
-  "controller_identified_unresolved_source_unit_ids": [
+  "controller_identified_unresolved_source_unit_ids": [],
+  "superseded_controller_identified_unresolved_source_unit_ids": [
     "MV-SPD-2026-SU-00010",
     "MV-SPD-2026-SU-00017",
     "MV-SPD-2026-SU-00018",
@@ -1124,23 +1155,7 @@
     "MV-SPD-2026-SU-00028",
     "MV-SPD-2026-SU-00033"
   ],
-  "unresolved_source_unit_ids": [
-    "MV-SPD-2026-SU-00008",
-    "MV-SPD-2026-SU-00010",
-    "MV-SPD-2026-SU-00012",
-    "MV-SPD-2026-SU-00015",
-    "MV-SPD-2026-SU-00017",
-    "MV-SPD-2026-SU-00018",
-    "MV-SPD-2026-SU-00019",
-    "MV-SPD-2026-SU-00020",
-    "MV-SPD-2026-SU-00021",
-    "MV-SPD-2026-SU-00022",
-    "MV-SPD-2026-SU-00024",
-    "MV-SPD-2026-SU-00025",
-    "MV-SPD-2026-SU-00026",
-    "MV-SPD-2026-SU-00028",
-    "MV-SPD-2026-SU-00033"
-  ],
+  "unresolved_source_unit_ids": [],
   "source_records": [
     {
       "object_id": "MV-SPD-2026-SU-00008-A01",
@@ -1152,13 +1167,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ARCHIVED_ROLE_BINDING_REQUIRED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "RETROSPECTIVE_FRAME_NO_IDENTIFIABLE_INTERVENTION",
+      "exact_reason": "The sentence is a retrospective/narrative continuation frame. It specifies no independent intervention, responsible delivery path, affected system, baseline/counterfactual, causal mechanism, scale, time horizon or effect evidence. Assigning a WÖk direction or materiality would therefore require inventing policy content outside this exact object."
     },
     {
       "object_id": "MV-SPD-2026-SU-00010-A01",
@@ -1170,13 +1195,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "ECONOMIC_AND_LABOUR_GOAL_WITHOUT_IMPLEMENTING_LEVER",
+      "exact_reason": "This defines desired economic/labour outcomes, but no instrument, target sectors/workers, financing or regulation, delivery actor, baseline, counterfactual or causal route. The desired state cannot itself be assessed as an implemented measure."
     },
     {
       "object_id": "MV-SPD-2026-SU-00010-A02",
@@ -1188,13 +1223,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "COORDINATION_FORUM_DECISION_OUTPUT_AND_CAUSAL_ROLE_UNSPECIFIED",
+      "exact_reason": "Continuing a coordination forum is an identifiable organisational action, but the object does not specify mandate, decision rights, outputs/triggers, resources, implementation commitments, baseline performance or a causal link from the forum to material outcomes. Presence of coordination alone is insufficient for a net WÖk effect judgement."
     },
     {
       "object_id": "MV-SPD-2026-SU-00012-A01",
@@ -1206,13 +1251,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ARCHIVED_ROLE_BINDING_REQUIRED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "NORMATIVE_FUTURE_FRAME_NO_INTERVENTION",
+      "exact_reason": "The object contrasts preferred and undesired societal states but contains no measure, competence path, implementation design, affected operational system, counterfactual or evidence. A value frame is not an independently assessable intervention."
     },
     {
       "object_id": "MV-SPD-2026-SU-00015-A01",
@@ -1224,13 +1279,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ARCHIVED_ROLE_BINDING_REQUIRED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "PROGRAMME_VISION_NO_OPERATIONAL_MEASURE",
+      "exact_reason": "This is an umbrella programme vision spanning several outcome dimensions without a bounded intervention, baseline, delivery mechanism, affected group/system, time horizon, resource path or independent evidence. No object-specific net effect can be assigned."
     },
     {
       "object_id": "MV-SPD-2026-SU-00017-A01",
@@ -1242,13 +1307,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "ECONOMY_STRENGTHENING_INSTRUMENT_UNSPECIFIED",
+      "exact_reason": "`stärken` supplies neither the policy lever nor its scale, beneficiaries/incidence, funding/regulatory design, delivery actor, baseline/counterfactual or effect evidence. Different possible levers have materially different MPD effects, so direction cannot be inferred from the goal phrase."
     },
     {
       "object_id": "MV-SPD-2026-SU-00017-A02",
@@ -1260,13 +1335,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "MULTISECTOR_SUPPORT_INSTRUMENT_SCALE_AND_CONDITIONS_UNSPECIFIED",
+      "exact_reason": "The sectors are named but `unterstützen` leaves subsidy/regulation/infrastructure/procurement or other lever, amount, eligibility, transition conditions, distribution, environmental and labour safeguards, counterfactual and evidence unresolved. The sectors themselves do not determine impact direction."
     },
     {
       "object_id": "MV-SPD-2026-SU-00017-A03",
@@ -1278,13 +1363,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "RESEARCH_INNOVATION_POLICY_LEVERS_AND_ADDITIONALITY_UNSPECIFIED",
+      "exact_reason": "The object names a broad mechanism family but not the concrete research instruments, funding/allocation, target fields, governance, additionality, knowledge-transfer design, baseline/counterfactual, time horizon or independent effect evidence. A positive innovation intention is not sufficient for a net MPD assessment."
     },
     {
       "object_id": "MV-SPD-2026-SU-00018-A01",
@@ -1296,13 +1391,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "INFRASTRUCTURE_PORTFOLIO_ALLOCATION_ADDITIONALITY_AND_OUTCOMES_UNRESOLVED",
+      "exact_reason": "The amount and programme horizon are inputs, not an effect result. The object does not identify the infrastructure portfolio/allocation, project types/locations, financing and lifecycle costs, additionality against the baseline, affected groups/systems, environmental/social trade-offs or outcome evidence. Heterogeneous infrastructure cannot receive one net direction from spending volume alone."
     },
     {
       "object_id": "MV-SPD-2026-SU-00018-A02",
@@ -1314,13 +1419,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "EXPECTED_ECONOMIC_OUTCOME_NOT_INDEPENDENT_INTERVENTION",
+      "exact_reason": "This is an asserted consequence of the preceding investment, not a separately specified lever. It provides no independent intervention boundary, causal estimate, counterfactual, incidence/distribution, additionality or evidence with which to verify the claimed economic effect."
     },
     {
       "object_id": "MV-SPD-2026-SU-00018-A03",
@@ -1332,13 +1447,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "PROCUREMENT_BENEFIT_GOAL_WITHOUT_PROCUREMENT_RULE",
+      "exact_reason": "The desired beneficiary is stated, but no procurement criterion, threshold, legal mechanism, competition/market-access safeguard, scope, incidence, baseline or evidence is specified. Regional benefit cannot be assumed from the goal alone."
     },
     {
       "object_id": "MV-SPD-2026-SU-00022-A01",
@@ -1350,13 +1475,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "FEDERAL_REPORTING_SUSPENSION_SCOPE_LEGAL_ROUTE_AND_SAFEGUARDS_UNRESOLVED",
+      "exact_reason": "A two-year advocacy target is stated, but `alle Berichtspflichten` is an undefined heterogeneous set whose functions, legal bases, competent federal decision routes, exceptions/safeguards, affected firms/third parties and compliance/public-interest consequences are not bounded. Without the exact duties and counterfactual, administrative relief cannot be weighed against lost protection/information functions."
     },
     {
       "object_id": "MV-SPD-2026-SU-00026-A01",
@@ -1369,15 +1504,22 @@
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
       "controlling_comment_ids": [
-        5468200571,
-        5468017394
+        5554389664
       ],
-      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ARCHIVED_ROLE_BINDING_REQUIRED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "INCOMPLETE_SOURCE_FRAGMENT_NO_CLOSED_INTERVENTION_OBJECT",
+      "exact_reason": "The exact atom is syntactically incomplete and ends before the object of `sorgen dafür, dass`. It also bundles several broad action families without amounts, instruments, beneficiaries, delivery path, baseline or causal mechanism. A complete Fach object cannot be reconstructed without crossing this exact source boundary and inventing/rebinding content."
     },
     {
       "object_id": "MV-SPD-2026-SU-00029-A01",
@@ -2015,13 +2157,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "BUNDLED_HOUSING_SUPPLY_AND_RENT_CONTROL_DESIGNS_UNRESOLVED",
+      "exact_reason": "This atom combines at least two materially different levers—housing-construction support and rent regulation—without the construction subsidy/tenure/unit/location/timing design or the exact rent-control scope/current-law interaction. Their supply, price, distribution, fiscal and displacement effects cannot be netted into one source-bound direction without further exact design/segmentation."
     },
     {
       "object_id": "MV-SPD-2026-SU-00033-A02",
@@ -2033,13 +2185,23 @@
       "source_object_kind": "SOURCE_ATOM",
       "mechanical_source_role": null,
       "mechanical_terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
-      "terminal_role": null,
-      "counts_as_effect_object": null,
-      "authority_binding_evidence": [],
-      "terminal_role_authority_comment_id": null,
-      "terminal_role_binding_method": null
+      "controlling_comment_ids": [
+        5554389664
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
+      "terminal_role": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "authority_binding_evidence": [
+        {
+          "comment_id": 5554389664,
+          "match_kind": "EXACT_ID_TEXT_SHA256_AND_LOCATOR"
+        }
+      ],
+      "terminal_role_authority_comment_id": 5554389664,
+      "terminal_role_binding_method": "FINITE_EXPLICIT_COMMENT_SECTION_BINDING",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "exact_reason_code": "SUBSIDISED_LOAN_TERMS_ELIGIBILITY_ADDITIONALITY_AND_INCIDENCE_UNRESOLVED",
+      "exact_reason": "The instrument family and beneficiary category are identifiable, but loan amount, interest subsidy, eligibility/income thresholds, housing purpose, maturity/risk sharing, budget, take-up/additionality, house-price incidence and distribution are not specified. Those parameters determine affordability, fiscal cost and capitalization effects, so a net direction cannot be approved from this object alone."
     },
     {
       "object_id": "MV-SPD-2026-SU-00035-A01",
@@ -23144,7 +23306,7 @@
       "mechanical_source_role": "EFFECT_BEARING",
       "mechanical_terminal_status": null,
       "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
       "terminal_role": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -23270,7 +23432,7 @@
       "mechanical_source_role": "EFFECT_BEARING",
       "mechanical_terminal_status": null,
       "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
       "terminal_role": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -23288,7 +23450,7 @@
       "mechanical_source_role": "EFFECT_BEARING",
       "mechanical_terminal_status": null,
       "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
       "terminal_role": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -23306,7 +23468,7 @@
       "mechanical_source_role": "NON_EFFECT_CONTEXT",
       "mechanical_terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
       "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "authority_resolution_status": "MECHANICAL_NON_EFFECT_SOURCE_ROLE_ZERO_COUNT",
       "terminal_role": "NON_EFFECT_CONTEXT_REVIEWED",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -23324,7 +23486,7 @@
       "mechanical_source_role": "NON_EFFECT_CONTEXT",
       "mechanical_terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
       "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "authority_resolution_status": "MECHANICAL_NON_EFFECT_SOURCE_ROLE_ZERO_COUNT",
       "terminal_role": "NON_EFFECT_CONTEXT_REVIEWED",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -23342,7 +23504,7 @@
       "mechanical_source_role": "NON_EFFECT_CONTEXT",
       "mechanical_terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
       "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "authority_resolution_status": "MECHANICAL_NON_EFFECT_SOURCE_ROLE_ZERO_COUNT",
       "terminal_role": "NON_EFFECT_CONTEXT_REVIEWED",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -23360,7 +23522,7 @@
       "mechanical_source_role": "EFFECT_BEARING",
       "mechanical_terminal_status": null,
       "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
       "terminal_role": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -23395,8 +23557,11 @@
       "source_object_kind": "SOURCE_UNIT",
       "mechanical_source_role": "NON_EFFECT_CONTEXT",
       "mechanical_terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "controlling_comment_ids": [
+        5468200571,
+        5468017394
+      ],
+      "authority_resolution_status": "MECHANICAL_NON_EFFECT_SOURCE_ROLE_ZERO_COUNT",
       "terminal_role": "NON_EFFECT_CONTEXT_REVIEWED",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -23413,8 +23578,11 @@
       "source_object_kind": "SOURCE_UNIT",
       "mechanical_source_role": "NON_EFFECT_CONTEXT",
       "mechanical_terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "controlling_comment_ids": [
+        5468200571,
+        5468017394
+      ],
+      "authority_resolution_status": "MECHANICAL_NON_EFFECT_SOURCE_ROLE_ZERO_COUNT",
       "terminal_role": "NON_EFFECT_CONTEXT_REVIEWED",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -23473,8 +23641,11 @@
       "source_object_kind": "SOURCE_UNIT",
       "mechanical_source_role": "NON_EFFECT_CONTEXT",
       "mechanical_terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "controlling_comment_ids": [
+        5468200571,
+        5468017394
+      ],
+      "authority_resolution_status": "MECHANICAL_NON_EFFECT_SOURCE_ROLE_ZERO_COUNT",
       "terminal_role": "NON_EFFECT_CONTEXT_REVIEWED",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -24123,8 +24294,11 @@
       "source_object_kind": "SOURCE_UNIT",
       "mechanical_source_role": "EFFECT_BEARING",
       "mechanical_terminal_status": null,
-      "controlling_comment_ids": [],
-      "authority_resolution_status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED",
+      "controlling_comment_ids": [
+        5468200571,
+        5468017394
+      ],
+      "authority_resolution_status": "LOSSLESS_AUTHORITATIVE_FACH_COMMENT_ROLE_BOUND",
       "terminal_role": "SOURCE_CONTAINER_COVERED_ZERO_COUNT",
       "counts_as_effect_object": false,
       "authority_binding_evidence": [],
@@ -65424,15 +65598,18 @@
     "source_units": 509,
     "source_atoms": 456,
     "generated_authorised_records": 261,
-    "mechanical_non_effect_zero_count": 260,
-    "authoritative_role_bound": 679,
+    "mechanical_non_effect_zero_count": 266,
+    "authoritative_role_bound": 699,
     "authoritative_generated_role_bound": 261,
-    "archived_role_binding_required": 4,
-    "unresolved_records": 22
+    "archived_role_binding_required": 0,
+    "unresolved_records": 0
   },
   "coverage": {
     "recoverable_terminal_pages": [
       1,
+      2,
+      3,
+      4,
       5,
       6,
       7,
@@ -65484,16 +65661,27 @@
       53,
       54
     ],
-    "unresolved_physical_pages": [
-      2,
-      3,
-      4
-    ],
+    "unresolved_physical_pages": [],
     "active_terminal_review_leaf_ids": [
+      "MV-SPD-2026-SU-00008-A01",
+      "MV-SPD-2026-SU-00010-A01",
+      "MV-SPD-2026-SU-00010-A02",
+      "MV-SPD-2026-SU-00012-A01",
+      "MV-SPD-2026-SU-00015-A01",
+      "MV-SPD-2026-SU-00017-A01",
+      "MV-SPD-2026-SU-00017-A02",
+      "MV-SPD-2026-SU-00017-A03",
+      "MV-SPD-2026-SU-00018-A01",
+      "MV-SPD-2026-SU-00018-A02",
+      "MV-SPD-2026-SU-00018-A03",
+      "MV-SPD-2026-SU-00022-A01",
+      "MV-SPD-2026-SU-00026-A01",
       "MV-SPD-2026-SU-00030-A02",
       "MV-SPD-2026-SU-00030-A03",
       "MV-SPD-2026-SU-00031-A02",
       "MV-SPD-2026-SU-00031-A03",
+      "MV-SPD-2026-SU-00033-A01",
+      "MV-SPD-2026-SU-00033-A02",
       "MV-SPD-2026-SU-00035-A01",
       "MV-SPD-2026-SU-00035-A02",
       "MV-SPD-2026-SU-00035-A03",
@@ -66704,24 +66892,8 @@
       "MV-SPD-2026-XP51P52-C01-bc1b8c067be6",
       "MV-SPD-2026-XP53P54-C01-ead239367bce"
     ],
-    "authority_pointer_gap_object_ids": [
-      "MV-SPD-2026-SU-00008-A01",
-      "MV-SPD-2026-SU-00010-A01",
-      "MV-SPD-2026-SU-00010-A02",
-      "MV-SPD-2026-SU-00012-A01",
-      "MV-SPD-2026-SU-00015-A01",
-      "MV-SPD-2026-SU-00017-A01",
-      "MV-SPD-2026-SU-00017-A02",
-      "MV-SPD-2026-SU-00017-A03",
-      "MV-SPD-2026-SU-00018-A01",
-      "MV-SPD-2026-SU-00018-A02",
-      "MV-SPD-2026-SU-00018-A03",
-      "MV-SPD-2026-SU-00022-A01",
-      "MV-SPD-2026-SU-00026-A01",
-      "MV-SPD-2026-SU-00033-A01",
-      "MV-SPD-2026-SU-00033-A02"
-    ],
-    "gate": "PASS_RECOVERABLE_SCOPE_MATERIALISED_FAIL_CLOSED_FINITE_AUTHORITY_POINTER_GAP"
+    "authority_pointer_gap_object_ids": [],
+    "gate": "PASS_P1_P54_SOURCE_BOUND_TERMINAL_ZERO_AUTHORITY_POINTER_GAP"
   },
   "constraints": {
     "generic_delegated_rnaa_used_as_fach": false,
@@ -66731,7 +66903,7 @@
     "score_synthesized": false,
     "vercel_action_triggered": false
   },
-  "p1_p54_transaction_complete": false,
+  "p1_p54_transaction_complete": true,
   "p56_authorised": false,
-  "descriptor_sha256": "2511b1ce1d83455393258e994f7e150ee6639a8d4f4dbcd20c70d0adf378e2da"
+  "descriptor_sha256": "aab2bcbd0d843a1cefe6774aa80207bf5c669465028f9edd38170009bb85f541"
 }

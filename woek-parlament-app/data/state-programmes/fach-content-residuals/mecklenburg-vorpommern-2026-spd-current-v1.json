@@ -6,7 +6,7 @@
   "explicit_handoffs": [
     {
       "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json",
-      "descriptor_sha256": "2511b1ce1d83455393258e994f7e150ee6639a8d4f4dbcd20c70d0adf378e2da"
+      "descriptor_sha256": "aab2bcbd0d843a1cefe6774aa80207bf5c669465028f9edd38170009bb85f541"
     },
     {
       "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p55-explicit-v1.json",
@@ -22,17 +22,17 @@
     {
       "pdf_page": 2,
       "source_unit_count": 10,
-      "status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED"
+      "status": "MATERIALISED_EXACT_SOURCE_BOUND_TERMINAL"
     },
     {
       "pdf_page": 3,
       "source_unit_count": 10,
-      "status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED"
+      "status": "MATERIALISED_EXACT_SOURCE_BOUND_TERMINAL"
     },
     {
       "pdf_page": 4,
       "source_unit_count": 11,
-      "status": "PROTECTED_AUTHORED_REFERENCE_UNRESOLVED"
+      "status": "MATERIALISED_EXACT_SOURCE_BOUND_TERMINAL"
     },
     {
       "pdf_page": 5,
@@ -494,6 +494,9 @@
     "source_page_count": 95,
     "materialised_terminal_pages": [
       1,
+      2,
+      3,
+      4,
       5,
       6,
       7,
@@ -546,11 +549,7 @@
       54,
       55
     ],
-    "protected_authored_pages_pending_technical_reconciliation": [
-      2,
-      3,
-      4
-    ],
+    "protected_authored_pages_pending_technical_reconciliation": [],
     "pages_without_current_terminal_proof": [
       56,
       57,
@@ -594,9 +593,6 @@
       95
     ],
     "remaining_technical_page_envelopes": [
-      2,
-      3,
-      4,
       56,
       57,
       58,
@@ -639,34 +635,13 @@
       95
     ],
     "p55_residual_source_object_ids": [],
-    "protected_authored_unresolved_source_unit_ids": [
-      "MV-SPD-2026-SU-00008",
-      "MV-SPD-2026-SU-00010",
-      "MV-SPD-2026-SU-00012",
-      "MV-SPD-2026-SU-00015",
-      "MV-SPD-2026-SU-00017",
-      "MV-SPD-2026-SU-00018",
-      "MV-SPD-2026-SU-00019",
-      "MV-SPD-2026-SU-00020",
-      "MV-SPD-2026-SU-00021",
-      "MV-SPD-2026-SU-00022",
-      "MV-SPD-2026-SU-00024",
-      "MV-SPD-2026-SU-00025",
-      "MV-SPD-2026-SU-00026",
-      "MV-SPD-2026-SU-00028",
-      "MV-SPD-2026-SU-00033"
-    ],
-    "protected_authored_role_binding_required_ids": [
-      "MV-SPD-2026-SU-00008-A01",
-      "MV-SPD-2026-SU-00012-A01",
-      "MV-SPD-2026-SU-00015-A01",
-      "MV-SPD-2026-SU-00026-A01"
-    ],
+    "protected_authored_unresolved_source_unit_ids": [],
+    "protected_authored_role_binding_required_ids": [],
     "exact_remaining_effect_object_count": null,
     "programme_terminal": false,
     "p56_authoring_authorised_by_this_matrix": false,
-    "gate": "FAIL_CLOSED_FINITE_PROTECTED_AUTHORITY_POINTER_GAP"
+    "gate": "PASS_P1_P55_SOURCE_BOUND_TERMINAL_P56_PLUS_NOT_AUTHORISED"
   },
   "counting_rule": "SET_DIFFERENCE_OF_FROZEN_SOURCE_PAGES_AND_VALIDATED_EXPLICIT_HANDOFF_PAGE_IDS_NOT_GENERIC_RNAA_COUNTS",
-  "descriptor_sha256": "58e77030eb9429b4837b54ad8844a984bd69d6dfad1aeec79dbf03de9f5d9298"
+  "descriptor_sha256": "ffc29e61e36ff609257fd7779eae9eb4ad85eca99c271aa8aa5d38a1bbcbd05b"
 }

@@ -86,6 +86,10 @@ const AUTHORITIES = [
   { id: 5476819703, pages: [54], role: 'BASE_AFTER_RECONCILIATION' },
 ];
 
+const FINITE_AUTHORITIES = [
+  { id: 5554389664, pages: [2, 3, 4], role: 'FINITE_OBJECT_SPECIFIC_REAUTHORISATION_EXCEPTION' },
+];
+
 const SUPERSEDED = [
   { id: 5468809728, replacement: 5469051242, reason: 'VOID_P10' },
   { id: 5468838223, replacement: 5469051242, reason: 'VOID_P10' },
@@ -98,8 +102,8 @@ const SUPERSEDED = [
   { id: 5474880384, replacement: 5476008740, reason: 'OLDER_P51_TREATMENT' },
 ];
 
-const CONTROLLERS = [5472678228, 5473248079, 5476705244, 5476822553, 5544455946, 5550258669];
-const UNRESOLVED_SOURCE_UNITS = [
+const CONTROLLERS = [5472678228, 5473248079, 5476705244, 5476822553, 5544455946, 5550258669, 5554390846];
+const PRIOR_UNRESOLVED_SOURCE_UNITS = [
   'MV-SPD-2026-SU-00010',
   'MV-SPD-2026-SU-00017',
   'MV-SPD-2026-SU-00018',
@@ -112,6 +116,29 @@ const UNRESOLVED_SOURCE_UNITS = [
   'MV-SPD-2026-SU-00028',
   'MV-SPD-2026-SU-00033',
 ];
+const UNRESOLVED_SOURCE_UNITS = [];
+const FINITE_REAUTHORISATION = {
+  comment_id: 5554389664,
+  archived_file_sha256: 'd22b6d10be180a501c1cca8c2dddc76b860c69ffe85ac66a37c4936eb4b0408b',
+  terminal_fach_state: 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON',
+  object_ids: [
+    'MV-SPD-2026-SU-00008-A01',
+    'MV-SPD-2026-SU-00010-A01',
+    'MV-SPD-2026-SU-00010-A02',
+    'MV-SPD-2026-SU-00012-A01',
+    'MV-SPD-2026-SU-00015-A01',
+    'MV-SPD-2026-SU-00017-A01',
+    'MV-SPD-2026-SU-00017-A02',
+    'MV-SPD-2026-SU-00017-A03',
+    'MV-SPD-2026-SU-00018-A01',
+    'MV-SPD-2026-SU-00018-A02',
+    'MV-SPD-2026-SU-00018-A03',
+    'MV-SPD-2026-SU-00022-A01',
+    'MV-SPD-2026-SU-00026-A01',
+    'MV-SPD-2026-SU-00033-A01',
+    'MV-SPD-2026-SU-00033-A02',
+  ],
+};
 
 // These roles are not inferred from programme prose. Each entry records an
 // explicit sentence/section in the frozen authoritative comment where the
@@ -220,6 +247,35 @@ function validTerminalRole(role) {
   return role === 'EXPLICIT_FACH_APPROVED'
     || role === 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON'
     || /^(?:NON_EFFECT|SOURCE|COMPOUND|FRAGMENT|CROSSPAGE|DUPLICATE|PARENT)_[A-Z0-9_]+$/.test(role);
+}
+
+function finiteReauthorisationDecisions(body) {
+  const decisions = new Map();
+  const sectionPattern = /### \d+\. `([^`]+)`\n([\s\S]*?)(?=\n### \d+\. `|\n## Closure \/ materialisation contract)/g;
+  for (const match of body.matchAll(sectionPattern)) {
+    const objectId = match[1];
+    if (!FINITE_REAUTHORISATION.object_ids.includes(objectId)) continue;
+    const section = match[2];
+    const field = (pattern, label) => {
+      const value = section.match(pattern)?.[1];
+      assert.ok(value, `${objectId}: missing ${label} in finite Fach authority`);
+      return value;
+    };
+    const decision = {
+      object_id: objectId,
+      source_locator: field(/- locator: `([^`]+)`/, 'locator'),
+      source_text: field(/- exact text: `([^`]+)`/, 'exact text'),
+      source_text_sha256: field(/- SHA-256: `([a-f0-9]{64})`/, 'SHA-256'),
+      terminal_fach_state: field(/- `terminal_fach_state = ([A-Z0-9_]+)`/, 'terminal Fach state'),
+      exact_reason_code: field(/- `exact_reason_code = ([A-Z0-9_]+)`/, 'exact reason code'),
+      exact_reason: field(/- exact reason: ([^\n]+)/, 'exact reason'),
+    };
+    assert.equal(decision.terminal_fach_state, FINITE_REAUTHORISATION.terminal_fach_state, `${objectId}: unauthorised terminal role`);
+    assert.equal(sha256(decision.source_text), decision.source_text_sha256, `${objectId}: authority text/hash mismatch`);
+    decisions.set(objectId, decision);
+  }
+  assert.deepEqual([...decisions.keys()], FINITE_REAUTHORISATION.object_ids, 'FINITE_REAUTHORISATION_EXACT_ID_SET_DRIFT');
+  return decisions;
 }
 
 function sourceRecords() {
@@ -438,6 +494,7 @@ function writeArchive() {
   fs.mkdirSync(path.join(ROOT, OUT_DIR), { recursive: true });
   const all = [
     ...AUTHORITIES.map(item => ({ ...item, kind: 'authority' })),
+    ...FINITE_AUTHORITIES.map(item => ({ ...item, kind: 'authority' })),
     ...SUPERSEDED.map(item => ({ ...item, kind: 'superseded' })),
     ...CONTROLLERS.map(id => ({ id, kind: 'controller' })),
   ];
@@ -448,6 +505,9 @@ function writeArchive() {
     fs.writeFileSync(path.join(ROOT, markdownPath(item.kind, item.id)), comment.body.endsWith('\n') ? comment.body : `${comment.body}\n`);
   }
   const commentsById = seen;
+  const finiteAuthority = commentsById.get(FINITE_REAUTHORISATION.comment_id);
+  assert.ok(finiteAuthority, 'FINITE_REAUTHORISATION_AUTHORITY_MISSING');
+  const finiteDecisions = finiteReauthorisationDecisions(finiteAuthority.body);
   const rawRecords = sourceRecords();
   const atomSourceUnitIds = new Set(rawRecords.filter(row => row.source_object_kind === 'SOURCE_ATOM').map(row => row.source_unit_id));
   const originalRecords = rawRecords.map(record => {
@@ -456,15 +516,25 @@ function writeArchive() {
     const comments = pageAuthorities.map(item => item.id);
     const unresolved = UNRESOLVED_SOURCE_UNITS.includes(record.source_unit_id);
     const mechanicalZero = record.mechanical_source_role === 'NON_EFFECT_CONTEXT' && record.source_object_kind === 'SOURCE_UNIT';
-    const explicitBinding = EXPLICIT_ROLE_BINDINGS[record.object_id];
-    const binding = unresolved ? { matches: [], extracted_terminal_role: null, extracted_from_comment_id: null } : bindingEvidence(record, pageAuthorities, commentsById);
+    const finiteDecision = finiteDecisions.get(record.object_id);
+    if (finiteDecision) {
+      assert.equal(record.source_locator, finiteDecision.source_locator, `${record.object_id}: finite authority locator drift`);
+      assert.equal(record.source_text, finiteDecision.source_text, `${record.object_id}: finite authority source text drift`);
+      assert.equal(record.source_text_sha256, finiteDecision.source_text_sha256, `${record.object_id}: finite authority source hash drift`);
+    }
+    const explicitBinding = finiteDecision
+      ? [FINITE_REAUTHORISATION.comment_id, finiteDecision.terminal_fach_state]
+      : EXPLICIT_ROLE_BINDINGS[record.object_id];
+    const binding = finiteDecision
+      ? { matches: [{ comment_id: FINITE_REAUTHORISATION.comment_id, match_kind: 'EXACT_ID_TEXT_SHA256_AND_LOCATOR' }], extracted_terminal_role: finiteDecision.terminal_fach_state, extracted_from_comment_id: FINITE_REAUTHORISATION.comment_id }
+      : unresolved ? { matches: [], extracted_terminal_role: null, extracted_from_comment_id: null } : bindingEvidence(record, pageAuthorities, commentsById);
     const sourceContainer = !mechanicalZero && record.source_object_kind === 'SOURCE_UNIT' && atomSourceUnitIds.has(record.source_unit_id);
     const terminalRole = mechanicalZero
       ? record.mechanical_terminal_status
       : explicitBinding?.[1] ?? (sourceContainer ? 'SOURCE_CONTAINER_COVERED_ZERO_COUNT' : binding.extracted_terminal_role);
     return {
       ...record,
-      controlling_comment_ids: unresolved ? [] : comments,
+      controlling_comment_ids: finiteDecision ? [FINITE_REAUTHORISATION.comment_id] : unresolved ? [] : comments,
       authority_resolution_status: unresolved
         ? 'PROTECTED_AUTHORED_REFERENCE_UNRESOLVED'
         : mechanicalZero
@@ -477,6 +547,11 @@ function writeArchive() {
       authority_binding_evidence: binding.matches,
       terminal_role_authority_comment_id: explicitBinding?.[0] ?? binding.extracted_from_comment_id,
       terminal_role_binding_method: explicitBinding ? 'FINITE_EXPLICIT_COMMENT_SECTION_BINDING' : terminalRole ? 'AUTHORITATIVE_COMMENT_TOKEN_OR_MECHANICAL_CONTAINER' : null,
+      ...(finiteDecision ? {
+        terminal_fach_state: finiteDecision.terminal_fach_state,
+        exact_reason_code: finiteDecision.exact_reason_code,
+        exact_reason: finiteDecision.exact_reason,
+      } : {}),
     };
   });
   const generated = generatedRecords(rawRecords, commentsById);
@@ -537,6 +612,7 @@ function writeArchive() {
     source_rule: 'NO_FACH_DERIVED_FROM_SOURCE_TEXT_KEYWORDS_PARTY_IDENTITY_METADATA_OR_GENERIC_DELEGATED_RNAA',
     comments,
     controller_identified_unresolved_source_unit_ids: UNRESOLVED_SOURCE_UNITS,
+    superseded_controller_identified_unresolved_source_unit_ids: PRIOR_UNRESOLVED_SOURCE_UNITS,
     unresolved_source_unit_ids: unresolvedSourceUnitIds,
     source_records: records,
     counts: {
@@ -556,7 +632,7 @@ function writeArchive() {
       active_terminal_review_leaf_ids: records.filter(row => row.counts_as_effect_object).map(row => row.object_id),
       zero_count_ids: records.filter(row => row.counts_as_effect_object === false).map(row => row.object_id),
       authority_pointer_gap_object_ids: records.filter(row => row.terminal_role === null).map(row => row.object_id),
-      gate: 'PASS_RECOVERABLE_SCOPE_MATERIALISED_FAIL_CLOSED_FINITE_AUTHORITY_POINTER_GAP',
+      gate: 'PASS_P1_P54_SOURCE_BOUND_TERMINAL_ZERO_AUTHORITY_POINTER_GAP',
     },
     constraints: {
       generic_delegated_rnaa_used_as_fach: false,
@@ -566,7 +642,7 @@ function writeArchive() {
       score_synthesized: false,
       vercel_action_triggered: false,
     },
-    p1_p54_transaction_complete: false,
+    p1_p54_transaction_complete: true,
     p56_authorised: false,
   };
   result.descriptor_sha256 = sha256(JSON.stringify(result));
@@ -580,8 +656,9 @@ export function validate() {
   assert.equal(sha256(JSON.stringify(payload)), descriptor_sha256, 'AUTHORITY_INDEX_DESCRIPTOR_DRIFT');
   assert.equal(result.artifact_sha256, ARTIFACT_SHA256);
   assert.deepEqual(result.controller_identified_unresolved_source_unit_ids, UNRESOLVED_SOURCE_UNITS);
-  assert.deepEqual(result.coverage.unresolved_physical_pages, [2, 3, 4]);
-  assert.equal(result.coverage.authority_pointer_gap_object_ids.length, 15);
+  assert.deepEqual(result.superseded_controller_identified_unresolved_source_unit_ids, PRIOR_UNRESOLVED_SOURCE_UNITS);
+  assert.deepEqual(result.coverage.unresolved_physical_pages, []);
+  assert.deepEqual(result.coverage.authority_pointer_gap_object_ids, []);
   assert.equal(result.constraints.fach_synthesized, false);
   assert.equal(result.source_records.filter(row => row.source_object_kind !== 'DETERMINISTIC_AUTHORISED_EXACT_SPAN_OR_REPAIR').length, 965);
   assert.equal(result.counts.source_units, 509);
@@ -595,11 +672,23 @@ export function validate() {
   assert.deepEqual(
     result.source_records
       .filter(row => row.source_object_kind !== 'DETERMINISTIC_AUTHORISED_EXACT_SPAN_OR_REPAIR')
-      .map(({ controlling_comment_ids: _a, authority_resolution_status: _b, terminal_role: _c, counts_as_effect_object: _d, authority_binding_evidence: _e, terminal_role_authority_comment_id: _f, terminal_role_binding_method: _g, superseded_by: _h, ...source }) => source),
+      .map(({ controlling_comment_ids: _a, authority_resolution_status: _b, terminal_role: _c, counts_as_effect_object: _d, authority_binding_evidence: _e, terminal_role_authority_comment_id: _f, terminal_role_binding_method: _g, superseded_by: _h, terminal_fach_state: _i, exact_reason_code: _j, exact_reason: _k, ...source }) => source),
     currentSources,
     'SOURCE_LEDGER_DRIFT',
   );
-  assert.equal(result.p1_p54_transaction_complete, false);
+  const finiteRecords = result.source_records.filter(row => FINITE_REAUTHORISATION.object_ids.includes(row.object_id));
+  assert.deepEqual(finiteRecords.map(row => row.object_id), FINITE_REAUTHORISATION.object_ids);
+  for (const row of finiteRecords) {
+    assert.equal(row.terminal_fach_state, FINITE_REAUTHORISATION.terminal_fach_state);
+    assert.equal(row.terminal_role, FINITE_REAUTHORISATION.terminal_fach_state);
+    assert.equal(row.terminal_role_authority_comment_id, FINITE_REAUTHORISATION.comment_id);
+    assert.equal(row.counts_as_effect_object, true);
+    assert.ok(row.exact_reason_code);
+    assert.ok(row.exact_reason);
+  }
+  const finiteComment = result.comments.find(comment => comment.issue_comment_id === FINITE_REAUTHORISATION.comment_id);
+  assert.equal(finiteComment.file_sha256, FINITE_REAUTHORISATION.archived_file_sha256);
+  assert.equal(result.p1_p54_transaction_complete, true);
   assert.equal(result.p56_authorised, false);
   return { gate: 'PASS_LOSSLESS_AUTHORITY_ARCHIVE_FAIL_CLOSED', ...result.counts, descriptor_sha256 };
 }

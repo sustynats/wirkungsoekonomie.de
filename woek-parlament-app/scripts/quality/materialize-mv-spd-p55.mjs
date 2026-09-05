@@ -226,7 +226,9 @@ export function buildSpdResidual(handoff) {
       exact_remaining_effect_object_count: null,
       programme_terminal: false,
       p56_authoring_authorised_by_this_matrix: false,
-      gate: predecessor ? 'FAIL_CLOSED_FINITE_PROTECTED_AUTHORITY_POINTER_GAP' : 'FAIL_CLOSED_PREDECESSOR_MATERIALISATION_NOT_PROVEN',
+      gate: predecessor?.p1_p54_transaction_complete
+        ? 'PASS_P1_P55_SOURCE_BOUND_TERMINAL_P56_PLUS_NOT_AUTHORISED'
+        : predecessor ? 'FAIL_CLOSED_FINITE_PROTECTED_AUTHORITY_POINTER_GAP' : 'FAIL_CLOSED_PREDECESSOR_MATERIALISATION_NOT_PROVEN',
     },
     counting_rule: 'SET_DIFFERENCE_OF_FROZEN_SOURCE_PAGES_AND_VALIDATED_EXPLICIT_HANDOFF_PAGE_IDS_NOT_GENERIC_RNAA_COUNTS',
   };

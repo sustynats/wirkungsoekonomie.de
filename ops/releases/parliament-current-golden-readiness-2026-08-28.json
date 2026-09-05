@@ -41,30 +41,17 @@
         "path": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
       },
       "source_maturity_pending": 7,
-      "spd_authority_pointer_gap_object_ids": [
-        "MV-SPD-2026-SU-00008-A01",
-        "MV-SPD-2026-SU-00010-A01",
-        "MV-SPD-2026-SU-00010-A02",
-        "MV-SPD-2026-SU-00012-A01",
-        "MV-SPD-2026-SU-00015-A01",
-        "MV-SPD-2026-SU-00017-A01",
-        "MV-SPD-2026-SU-00017-A02",
-        "MV-SPD-2026-SU-00017-A03",
-        "MV-SPD-2026-SU-00018-A01",
-        "MV-SPD-2026-SU-00018-A02",
-        "MV-SPD-2026-SU-00018-A03",
-        "MV-SPD-2026-SU-00022-A01",
-        "MV-SPD-2026-SU-00026-A01",
-        "MV-SPD-2026-SU-00033-A01",
-        "MV-SPD-2026-SU-00033-A02"
-      ],
+      "spd_authority_pointer_gap_object_ids": [],
       "spd_current_residual": {
-        "descriptor_sha256": "58e77030eb9429b4837b54ad8844a984bd69d6dfad1aeec79dbf03de9f5d9298",
-        "file_sha256": "0c96a7ec55dba788ca4d5de1c060bff9ab329ebdc88503b06903319e54a79b7d",
+        "descriptor_sha256": "ffc29e61e36ff609257fd7779eae9eb4ad85eca99c271aa8aa5d38a1bbcbd05b",
+        "file_sha256": "0335f8cfdd6acaf83ad091569ecdb6f4076b606dca3b3a2717ad4c42fbcfcd72",
         "path": "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json"
       },
       "spd_materialised_terminal_pages": [
         1,
+        2,
+        3,
+        4,
         5,
         6,
         7,
@@ -118,8 +105,8 @@
         55
       ],
       "spd_p1_p54_authority_archive": {
-        "descriptor_sha256": "2511b1ce1d83455393258e994f7e150ee6639a8d4f4dbcd20c70d0adf378e2da",
-        "file_sha256": "e81f5f6af0054f6032660facea17efa43a314100d26cfa7376220a05d1582d6b",
+        "descriptor_sha256": "aab2bcbd0d843a1cefe6774aa80207bf5c669465028f9edd38170009bb85f541",
+        "file_sha256": "3f63989dc9669c325aacfdf3cec6819aea5230d6377810c38e0dbc8c9193aa55",
         "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json"
       },
       "spd_p55_handoff": {
@@ -128,15 +115,8 @@
         "path": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p55-explicit-v1.json"
       },
       "spd_p55_remaining_source_objects": [],
-      "spd_protected_authored_pages_pending_technical_reconciliation": [
-        2,
-        3,
-        4
-      ],
+      "spd_protected_authored_pages_pending_technical_reconciliation": [],
       "spd_remaining_technical_page_envelopes": [
-        2,
-        3,
-        4,
         56,
         57,
         58,
@@ -200,7 +180,7 @@
     "score_synthesized": false,
     "vercel_action_triggered": false
   },
-  "descriptor_sha256": "0df68ec1643eefdfd03c856bf93d59a31de4a8c47cc427df9a7136e39543c943",
+  "descriptor_sha256": "288bf47b0c2469d46a0812b971f2936037b5b83b572aa596bc58b22035d69135",
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
   "historical_production_golden_state": {
     "disposition": "IMMUTABLE_HISTORICAL_RELEASE_EVIDENCE_NOT_CURRENT_READINESS",

@@ -112,14 +112,14 @@ def validate() -> dict:
 
     technical = matrix["finite_residuals"]["technical"]
     fach = matrix["finite_residuals"]["fach_review_required"]
-    require([item["id"] for item in technical] == ["MV-SPD-PROTECTED-AUTHORED-P1-P54-MATERIALISATION", "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"], "ISSUE_241_STATE_ORDER_DRIFT")
-    expected_mv_spd_terminal_pages = [1, *range(5, 56)]
+    require([item["id"] for item in technical] == ["BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"], "ISSUE_241_STATE_ORDER_DRIFT")
+    expected_mv_spd_terminal_pages = list(range(1, 56))
     require(matrix["current_state"]["mecklenburg_vorpommern"]["spd_materialised_terminal_pages"] == mv_spd["summary"]["materialised_terminal_pages"] == expected_mv_spd_terminal_pages, "ISSUE_241_MV_SPD_TERMINAL_PAGE_DRIFT")
     require(not mv_spd["summary"]["p55_residual_source_object_ids"], "ISSUE_241_MV_P55_RESIDUAL")
-    require(mv_spd["summary"]["protected_authored_pages_pending_technical_reconciliation"] == [2, 3, 4], "ISSUE_241_MV_AUTHORED_TECHNICAL_SCOPE_DRIFT")
-    require(matrix["current_state"]["mecklenburg_vorpommern"]["spd_protected_unresolved_pages"] == [2, 3, 4], "ISSUE_241_MV_UNRESOLVED_PAGE_DRIFT")
-    require(matrix["current_state"]["mecklenburg_vorpommern"]["spd_authority_pointer_gap_count"] == 15, "ISSUE_241_MV_POINTER_GAP_COUNT_DRIFT")
-    require(technical[0]["items"] == mv_spd_authority_archive["coverage"]["authority_pointer_gap_object_ids"], "ISSUE_241_MV_POINTER_GAP_SET_DRIFT")
+    require(not mv_spd["summary"]["protected_authored_pages_pending_technical_reconciliation"], "ISSUE_241_MV_AUTHORED_TECHNICAL_SCOPE_DRIFT")
+    require(not matrix["current_state"]["mecklenburg_vorpommern"]["spd_protected_unresolved_pages"], "ISSUE_241_MV_UNRESOLVED_PAGE_DRIFT")
+    require(matrix["current_state"]["mecklenburg_vorpommern"]["spd_authority_pointer_gap_count"] == 0, "ISSUE_241_MV_POINTER_GAP_COUNT_DRIFT")
+    require(not mv_spd_authority_archive["coverage"]["authority_pointer_gap_object_ids"], "ISSUE_241_MV_POINTER_GAP_SET_DRIFT")
     require(mv_spd["summary"]["programme_terminal"] is False, "ISSUE_241_MV_FALSE_PROGRAMME_TERMINAL")
     require(len(fach[0]["verified_final_programmes"]) == 12 and len(fach[0]["canonicalization_pending_programmes"]) == 0, "ISSUE_241_BE_FACH_RESIDUAL_DRIFT")
     require(fach[0]["programme_analysis_complete"] == ["BSW", "DKP", "Die PARTEI", "SGP"], "ISSUE_241_BE_FACH_TERMINAL_SET_DRIFT")
@@ -142,7 +142,7 @@ def validate() -> dict:
     counts = Counter(item["status"] for item in requirements)
     require(counts["PRESENT_BUT_HIDDEN"] == 0, "ISSUE_241_UNRESOLVED_HIDDEN_CONTENT")
     require(counts["RESTORE_REQUIRED"] == 0, "ISSUE_241_UNRESOLVED_RESTORE")
-    require(counts["APPROVED_FACH_NOT_PROJECTED"] == 1, "ISSUE_241_APPROVED_FACH_TECHNICAL_QUEUE_DRIFT")
+    require(counts["APPROVED_FACH_NOT_PROJECTED"] == 0, "ISSUE_241_APPROVED_FACH_TECHNICAL_QUEUE_DRIFT")
     return {
         "gate": "PARLIAMENT_ISSUE_241_CURRENT_RESIDUAL",
         "status": "PASS_CURRENT_RESIDUAL_FINITE",

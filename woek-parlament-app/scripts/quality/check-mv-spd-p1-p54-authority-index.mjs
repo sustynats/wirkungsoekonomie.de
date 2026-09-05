@@ -14,7 +14,7 @@ export const APP_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)
 export const INDEX = 'data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json';
 
 const ARTIFACT_SHA256 = 'b2ed331e3bd89b93379df2f9a6adc5d3d10ddf635b0688673bc20c61cdca09bc';
-const GAP_OBJECT_IDS = [
+const FINITE_REAUTHORISED_OBJECT_IDS = [
   'MV-SPD-2026-SU-00008-A01',
   'MV-SPD-2026-SU-00010-A01',
   'MV-SPD-2026-SU-00010-A02',
@@ -50,17 +50,28 @@ export function validate() {
   assert.equal(result.counts.generated_authorised_records, 261);
   assert.equal(result.source_records.length, 1226);
   assert.equal(result.source_records.filter(row => row.source_object_kind !== 'DETERMINISTIC_AUTHORISED_EXACT_SPAN_OR_REPAIR').length, 965);
-  assert.equal(result.coverage.active_terminal_review_leaf_ids.length, 377);
+  assert.equal(result.coverage.active_terminal_review_leaf_ids.length, 392);
   assert.equal(result.coverage.zero_count_ids.length, 834);
-  assert.deepEqual(result.coverage.authority_pointer_gap_object_ids, GAP_OBJECT_IDS);
-  assert.equal(377 + 834 + GAP_OBJECT_IDS.length, 1226);
-  assert.deepEqual(result.coverage.unresolved_physical_pages, [2, 3, 4]);
-  assert.equal(result.coverage.gate, 'PASS_RECOVERABLE_SCOPE_MATERIALISED_FAIL_CLOSED_FINITE_AUTHORITY_POINTER_GAP');
+  assert.deepEqual(result.coverage.authority_pointer_gap_object_ids, []);
+  assert.equal(392 + 834, 1226);
+  assert.deepEqual(result.coverage.unresolved_physical_pages, []);
+  assert.equal(result.coverage.gate, 'PASS_P1_P54_SOURCE_BOUND_TERMINAL_ZERO_AUTHORITY_POINTER_GAP');
 
   const activeRecords = result.source_records.filter(row => row.counts_as_effect_object === true);
   assert.deepEqual(activeRecords.map(row => row.object_id), result.coverage.active_terminal_review_leaf_ids);
   assert.deepEqual(result.source_records.filter(row => row.counts_as_effect_object === false).map(row => row.object_id), result.coverage.zero_count_ids);
-  assert.deepEqual(result.source_records.filter(row => row.terminal_role === null).map(row => row.object_id), GAP_OBJECT_IDS);
+  assert.deepEqual(result.source_records.filter(row => row.terminal_role === null).map(row => row.object_id), []);
+  const finiteRecords = result.source_records.filter(row => FINITE_REAUTHORISED_OBJECT_IDS.includes(row.object_id));
+  assert.deepEqual(finiteRecords.map(row => row.object_id), FINITE_REAUTHORISED_OBJECT_IDS);
+  for (const row of finiteRecords) {
+    assert.equal(row.terminal_role, 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON');
+    assert.equal(row.terminal_fach_state, 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON');
+    assert.equal(row.terminal_role_authority_comment_id, 5554389664);
+    assert.equal(row.terminal_role_binding_method, 'FINITE_EXPLICIT_COMMENT_SECTION_BINDING');
+    assert.equal(row.counts_as_effect_object, true);
+    assert.ok(row.exact_reason_code);
+    assert.ok(row.exact_reason);
+  }
   const activeHashes = activeRecords.map(row => row.source_text_sha256);
   assert.equal(new Set(activeHashes).size, activeHashes.length, 'DUPLICATE_ACTIVE_SOURCE_HASH');
 
@@ -72,7 +83,7 @@ export function validate() {
     score_synthesized: false,
     vercel_action_triggered: false,
   });
-  assert.equal(result.p1_p54_transaction_complete, false);
+  assert.equal(result.p1_p54_transaction_complete, true);
   assert.equal(result.p56_authorised, false);
   return {
     gate: 'PASS_MINIMAL_ARTIFACT_AUTHORITY_INDEX_FAIL_CLOSED',
@@ -81,7 +92,7 @@ export function validate() {
     generated_authorised_records: result.counts.generated_authorised_records,
     active_terminal_review_leaves: result.coverage.active_terminal_review_leaf_ids.length,
     zero_count_records: result.coverage.zero_count_ids.length,
-    authority_pointer_gaps: GAP_OBJECT_IDS.length,
+    authority_pointer_gaps: 0,
   };
 }
 
