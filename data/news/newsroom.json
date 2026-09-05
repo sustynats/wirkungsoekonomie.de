@@ -332764,7 +332764,268 @@
         "AI_MATERIALITY_TOO_LOW"
       ],
       "rationale": "Ein einzelner lokaler Schussvorfall mit Fahndung nach Opfer und Täter ist nach den gelieferten Angaben kein materiell relevanter Zustandswechsel mit breiter Wirkung."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-456d531f3d66c4032ebc",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-791815da9c1316d4332f",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-38011391daff71050742",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-4c478ed30911a06dbc6f",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-015e477e516f3f8b",
+      "event_id": "event-b5cad91fc7800c5ee413",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "euronews-en",
+          "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+          "code": "SOURCE_URL_INVALID",
+          "detail": "Die Quellen-URL ist nicht als öffentliche HTTPS-Adresse prüfbar."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-f2edeab46d126d83",
+      "event_id": "event-9ce6682a9f1a77ee5f1d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quellen wiederholen bereits gemeldete Veröffentlichung gestohlener Berliner Verwaltungsdaten; gegenüber der vorhandenen Ticker-Historie ist kein materiell neuer Sachverhalt belegt."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-a5874ae28ed5533f",
+      "event_id": "event-53de10df4f68e93ec96a",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine journalistische Quelle ohne unabhängige Bestätigung; die neuen Tickerdetails bleiben teilweise sekundär und reichen für eine belastbare aktualisierte Meldung nicht aus."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-58cac49b38f415db",
+      "event_id": "event-201da883bf8004ddde01",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine sekundäre Stern-Meldung ohne unabhängige Bestätigung oder Originalbeleg; dafür reicht die Evidenz für eine belastbare Veröffentlichung nicht."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-4742476ae893311b",
+      "event_id": "event-28a661fe3f1acf4e79bb",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Fahndung mit Foto, der genannte Sprengstofffund und der Bezug zu kritischer Infrastruktur sind eine neue, materiell relevante Entwicklung gegenüber den Vorläufern."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-885c8a852f14f435",
+      "event_id": "event-a0007694e8600ed66b72",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Meldung berichtet nur die Auslosung eines einzelnen Pokalspiels ohne breitere Zustandsänderung, Regelwirkung oder erhebliche Folge für Mensch, Planet oder Demokratie."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-ea2b0a22e7ee1a9e",
+      "event_id": "event-55479ea1a5a89a46548d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine sekundäre Quelle liegt vor; die zentrale Fahndungs- und Tatverdächtigenbehauptung ist ohne unabhängige oder primäre Bestätigung für eine belastbare Veröffentlichung zu dünn belegt."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-2f34113ccea8e579",
+      "event_id": "event-e16886400c38491431a7",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine journalistische Sekundärquelle liegt vor; die zentralen Zahlen und Zuschreibungen sind ohne unabhängige Bestätigung oder Originalbeleg nicht tragfähig genug."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-a1d32125e25a690c",
+      "event_id": "event-503f6ca19ad2a3cf9a88",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen wiederholen nur die bereits vorher gemeldete Moskau-Reise und Gesprächsabsicht der US-Unterhändler; keine neue materielle Entwicklung."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-cfab7f71dce825fc",
+      "event_id": "event-1a9faeb9b5f3564015f0",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quelle bietet nur eine knappe Sekundärzusammenfassung zum bekannten Berliner Hackerangriff; ein materiell neuer Sachverhalt oder belastbar neuer Befund ist darin nicht belegt."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-27aad8dd3978a295",
+      "event_id": "event-fddc22a38dea53bc5372",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine sekundäre Quelle ohne unabhängige Bestätigung oder Primärbeleg; die zentralen Tat- und Täterzuschreibungen bleiben dadurch zu dünn belegt."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-5f67ff1f08c90a73",
+      "event_id": "event-5a4f17a6f1296aa1c126",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quelle wiederholt nur bereits gemeldete Fahndung, 48-Jähriger, Sprengstoff und Bekennerschreiben; gegenüber der vorhandenen Vorgeschichte ist kein materiell neuer Sachverhalt belegt."
+    },
+    {
+      "at": "2026-09-05T16:51:14.960Z",
+      "story_id": "wt-f48820e5a3458909",
+      "event_id": "event-652b9eb970ebbdf9d49f",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Ein einzelner Lokalbericht über einen 74-Jährigen beim Schwimmenlernen hat keine hinreichende Breite, Intensität oder Systemrelevanz für Mensch, Planet oder Demokratie."
     }
   ],
-  "updated_at": "2026-09-05T16:36:34.186Z"
+  "updated_at": "2026-09-05T16:51:14.960Z"
 }
