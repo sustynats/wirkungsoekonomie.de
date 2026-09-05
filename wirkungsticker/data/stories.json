@@ -1,7 +1,100 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-05T17:22:55.401Z",
+  "updated_at": "2026-09-05T17:54:23.215Z",
   "stories": [
+    {
+      "story_id": "wt-ba90052729946ae3",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-b7731e34d04dd290-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-dfe61a8bbf389ad6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-ffb38514efffc00f-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "gesprache-uber-friedensabkommen-us-sondergesandte-in-moskau-eingetroffen-946ae3",
+      "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+      "source_summary": "In Moskau haben am Abend kurzfristig angesetzte neue Gespräche zum Ukraine-Krieg begonnen. Nach der Meldung empfing Kremlchef Wladimir Putin die US-Unterhändler Witkoff und Kushner im Kreml; beide werden als Gesandte von US-Präsident Trump beschrieben.\n\nDer Bericht nennt zudem die Aussicht, dass die beiden nach dem Moskau-Besuch weiter in die Ukraine reisen. In Kiew würden dann zwei ranghohe US-Vertreter erwartet. Außerdem wird auf eine dreitägige Pause weiterer Angriffe auf Kiew verwiesen, die Putin angeordnet haben soll; Selenskyj habe eine spiegelbildliche Zurückhaltung bis Montag angeboten, falls Russland daran festhalte.",
+      "summary": "Putin hat in Moskau US-Unterhändler empfangen, die über den Ukraine-Krieg sprechen. Weitere Termine in Kiew und eine dreitägige Angriffspause werden in der Meldung ebenfalls genannt.",
+      "detail_summary": "Gesichert ist zunächst, dass in Moskau neue Gespräche zum Ukraine-Krieg begonnen haben und Putin die US-Unterhändler Witkoff und Kushner im Kreml empfing. Die Meldung ordnet sie als Gesandte von Präsident Trump ein und stellt einen möglichen Anschlussbesuch in der Ukraine in Aussicht. Politisch relevant ist das, weil der Vorgang die diplomatischen Kontakte zwischen den USA, Russland und der Ukraine direkt betrifft. Ein möglicher Wirkpfad liegt darin, dass solche Kontakte die Verhandlungsoptionen, die militärische Lage rund um Kiew und die öffentliche Erwartung an eine Feuerpause verändern. Als mögliche Folge nennt die Quelle weitere Gespräche in Kiew sowie eine befristete Reduktion von Angriffen. Offen bleibt, ob daraus belastbare Schritte zu einem Friedensabkommen entstehen und wie verlässlich die angekündigten oder behaupteten Pausen tatsächlich greifen.",
+      "why_relevant": "Die Meldung beschreibt direkte hochrangige Kontakte zwischen den Konfliktparteien und mögliche kurzfristige Änderungen im militärisch-diplomatischen Ablauf. Das kann Anreize, Sicherheitslage und Verhandlungsdynamik beeinflussen.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind mittelbar viele Menschen in der Ukraine und in Russland durch mögliche Änderungen bei Angriffen, Verhandlungen und Sicherheit."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Die Quelle nennt keine unmittelbaren Umweltfolgen; ein indirekter Zusammenhang ist hier nicht belastbar belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Gespräche berühren Kriegsverhandlungen und diplomatische Entscheidungswege, also einen relevanten Teil politischer Steuerung."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-05T17:51:35.693Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-05T17:17:47.000Z",
+      "last_updated": "2026-09-05T17:52:55.835Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-01e6cd4e390eda19a265",
+      "case_file": null,
+      "source_published_at": "2026-09-05T17:17:47.000Z",
+      "published_at": "2026-09-05T17:52:55.835Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob Kushner und Witkoff nach dem Moskau-Besuch tatsächlich in die Ukraine weiterreisen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Reiseberichte oder bestätigte Termine in Kiew",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e973b3fadf8627bc",
+          "announced_at": "2026-09-05T17:17:47.000Z",
+          "follow_up_date": "2026-09-12T17:52:55.835Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T17:17:47.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-6a7145e6dc679f95",
       "title_image": {
@@ -202,7 +295,14 @@
       "media_impact": null,
       "media_analysis_version": "2.0",
       "media_checked_at": "2026-09-05T16:51:14.960Z",
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-166b13117cb1",
+        "slug": "fahndung-nach-umspannwerk-sabotage-was-der-fall-fur-kritische-infrastruktur-verand-166b13",
+        "title": "Fahndung nach Umspannwerk-Sabotage: Was der Fall für kritische Infrastruktur verändert",
+        "teaser": "Polizei und Staatsanwaltschaft suchen nach einem 48-Jährigen im Umfeld mutmaßlicher Sabotage an Stromanlagen. Der Fall zeigt vor allem die Verwundbarkeit kritischer Infrastruktur.",
+        "published_at": "2026-09-05T17:54:23.215Z",
+        "updated_at": "2026-09-05T17:54:23.215Z"
+      },
       "first_seen": "2026-09-05T16:24:05.000Z",
       "last_updated": "2026-09-05T16:52:06.230Z",
       "version": 1,
@@ -8606,6 +8706,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-166b13117cb1",
+      "story_id": "wt-4742476ae893311b",
+      "slug": "fahndung-nach-umspannwerk-sabotage-was-der-fall-fur-kritische-infrastruktur-verand-166b13",
+      "title": "Fahndung nach Umspannwerk-Sabotage: Was der Fall für kritische Infrastruktur verändert",
+      "subtitle": "Die Ermittlungen verdichten sich, doch der belastbare Wirkzusammenhang bleibt vorerst begrenzt",
+      "teaser": "Polizei und Staatsanwaltschaft suchen nach einem 48-Jährigen im Umfeld mutmaßlicher Sabotage an Stromanlagen. Der Fall zeigt vor allem die Verwundbarkeit kritischer Infrastruktur.",
+      "published_at": "2026-09-05T17:54:23.215Z",
+      "updated_at": "2026-09-05T17:54:23.215Z",
+      "reading_time_minutes": 6
+    },
     {
       "analysis_id": "woek-analysis-94b29d766984",
       "story_id": "wt-aabe8c0430bf8f84",
