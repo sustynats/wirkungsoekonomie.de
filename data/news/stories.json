@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T19:21:39.490Z",
+  "updated_at": "2026-09-05T19:36:18.282Z",
   "stories": [
     {
       "story_id": "wt-78b8df2827ab4527",
@@ -14841,7 +14841,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-05T19:21:39.490Z",
+          "checked_at": "2026-09-05T19:36:18.282Z",
           "fingerprint": "48bad01993b1585a02bf4145fc83642d90c69e61d8ee25edebeb007ca5862f12",
           "issue_codes": [
             "SOURCE_URL_INVALID"
@@ -40733,7 +40733,7 @@
       "verification_started_at": "2026-09-05T06:38:53.341Z",
       "publish_ready_at": "2026-09-05T06:39:06.202Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": "2026-09-06T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -41735,9 +41735,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "5b227f5f5613be3340401fc0047fc28c78c51e44a2553171838b4d03a44f2994",
-        "checked_at": "2026-09-05T17:21:20.943Z",
+        "checked_at": "2026-09-05T19:36:18.282Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:21:20.943Z",
+        "expires_at": "2026-09-06T01:36:18.282Z",
         "sources": [
           {
             "source_id": "dw-news",
@@ -41771,59 +41771,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T18:06:31.189Z",
-        "content_hash": "c8edbe03eae1fe3b48b26fd6cfeec12001c15d94a3286372a49b18e5321b17d9",
-        "sources": [
-          {
-            "source_id": "dw-news",
-            "publisher": "Deutsche Welle",
-            "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
-            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
-            "summary": "Ermittler halten zwei Bekennerschreiben wegen detaillierten Täterwissens für authentisch. Darin nennt der Verfasser fossile Stromerzeugung und Deutschlands Rolle im Nahostkonflikt als Motive.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T11:40:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "5f8384a44e7c9fc167b0c37ecea23922bcb13d3d2d40177a683e1d72c05142e7",
-            "source_item_id": "6eb0d140544a4b87d72a5a018925c5b325dee21d75edc639c8c17175ea2bd2fc",
-            "publisher_id": "deutsche-welle",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T11:40:00.000Z",
-            "ingested_at": "2026-09-04T15:06:23.805Z",
-            "provenance": {
-              "origin": "publisher:deutsche-welle",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T19:21:39.490Z",
-          "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-8719fd142c6ac6b1",
@@ -44561,7 +44509,7 @@
       "verification_started_at": "2026-09-05T05:31:59.419Z",
       "publish_ready_at": "2026-09-05T05:32:14.214Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -45139,10 +45087,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "3bc55a216616c88efca4e1f1888013bef6866dd63083674153e49b7721071794",
-        "checked_at": "2026-09-05T17:51:35.693Z",
+        "fingerprint": "5b513eb89c47376dd3a5bb6e0b4143d7685a2831470f2ef96ea1500354044b57",
+        "checked_at": "2026-09-05T19:36:18.282Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:51:35.693Z",
+        "expires_at": "2026-09-06T01:36:18.282Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -45301,186 +45249,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-05T18:06:31.189Z",
-        "content_hash": "960f9fbf1823f5e1ce3f3a36b41b937fcab14afecd1d7e13697919d69195c3ec",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
-            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:21:16.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
-            "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:21:16.000Z",
-            "ingested_at": "2026-09-04T17:39:54.371Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
-            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:22:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
-            "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:22:14.000Z",
-            "ingested_at": "2026-09-05T05:21:05.955Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
-            "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
-            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:46:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
-            "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:46:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
-            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T20:13:08.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
-            "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T20:13:08.000Z",
-            "ingested_at": "2026-09-04T20:36:32.644Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
-            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:18:53.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "7a7f9a1bdaea2412f799dd9ad08b8440ee47057859b3cb170b2ca789a4373bcc",
-            "source_item_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:18:53.000Z",
-            "ingested_at": "2026-09-05T11:31:43.777Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-05T19:51:39.490Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T19:21:39.490Z",
-          "fingerprint": "b77080fc28dc49ed22c2e6eed468704e8806d8a8351e880f83f2a31fb8696350",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-3b4e9709d1d57534",
@@ -50611,12 +50380,12 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
           "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
-          "MEDIA_PUBLIC_EXPLANATION_LENGTH",
           "CLAIM_NUMBER_NOT_IN_EVIDENCE"
         ],
-        "quality_retry_count": 3,
-        "quality_retry_after": "2026-09-05T20:21:39.490Z",
+        "quality_retry_count": 4,
+        "quality_retry_after": "2026-09-05T22:36:18.282Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -50624,7 +50393,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T19:21:39.490Z",
+          "checked_at": "2026-09-05T19:36:18.282Z",
           "fingerprint": "5cca189a2d339df25b4655be8ee5f35850628c1c53d5caced12e19b7768e0a7e",
           "issue_codes": [],
           "warning_codes": [
@@ -58766,7 +58535,7 @@
       "verification_started_at": "2026-09-04T18:22:24.272Z",
       "publish_ready_at": "2026-09-04T18:22:40.051Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T14:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -59136,48 +58905,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "9e517f3a593381fa44ce577486431a56146d43eb86e4ad86182917457e152c00",
-        "checked_at": "2026-09-05T11:59:56.834Z",
+        "fingerprint": "a8b9d0a59daf79f08e96b5143e97f03479778cc4e6bcce6a19872150a3b134c3",
+        "checked_at": "2026-09-05T19:36:18.282Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T17:59:56.834Z",
-        "sources": [
-          {
-            "source_id": "rbb24-nachrichten",
-            "publisher": "rbb24",
-            "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
-            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
-            "summary": "Die Polizei hält Bekennerschreiben zur Sabotage von Umspannwerken in Jänschwalde und Nordrhein-Westfalen für authentisch. Ein 48-Jähriger präsentiert sich darin als alleiniger Täter. Offenbar wurden gezielt Anlagen ausgewählt, die an Kohlekraftwerke angeschlossen sind.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T19:30:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "da6ff6380c7115d1e03ea11c774fa387efed0294474db69c86ee8475779bec10",
-            "source_item_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-            "publisher_id": "rbb",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin-Brandenburg"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T19:30:14.000Z",
-            "ingested_at": "2026-09-05T05:21:05.955Z",
-            "provenance": {
-              "origin": "publisher:rbb",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "256ab2d345b452e2a19388b09292465a6a590de6ab17c63c6d04349f166298e1",
+        "expires_at": "2026-09-06T01:36:18.282Z",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
@@ -59210,24 +58941,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 1,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T19:21:39.490Z",
-          "fingerprint": "7a4e3b4d3b023739dcb0220550584ff732a89bce1aebfdc7f2711100160c30f8",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-29d840b10b9a38bd",
@@ -85176,7 +84892,7 @@
       "verification_started_at": "2026-09-04T11:37:15.431Z",
       "publish_ready_at": "2026-09-04T11:37:27.087Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -85543,9 +85259,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "dc31e3abf01ac6a7943a8855faef3da0a2718d127517b39066103781daff9901",
-        "checked_at": "2026-09-05T07:21:32.324Z",
+        "checked_at": "2026-09-05T19:36:18.282Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T13:21:32.324Z",
+        "expires_at": "2026-09-06T01:36:18.282Z",
         "sources": [
           {
             "source_id": "swr-aktuell",
@@ -85580,62 +85296,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-05T10:23:53.587Z",
-        "content_hash": "dfa59f6b6552c7a39827ee42e391db763f8104fa0fafb13879b9e7fb595816e5",
-        "sources": [
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/friedrichshafen/spritpreise-bodensee-drastisch-gestiegen-tanktourismus-nach-oesterreich-boomt-100.html",
-            "title": "Spritpreise am Bodensee auf Rekordniveau - so viel sparen Autofahrer in Österreich",
-            "summary": "Die Benzinpreise sind kräftig gestiegen. In der Bodenseeregion liegen sie sogar deutlich über dem Landesdurchschnitt. Viele Autofahrer weichen deshalb ins nahe Vorarlberg aus.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T11:13:34.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "b208f4583e7075f41ff13de6d6e40b977373c6a7398b9ca67d054af0a12754b5",
-            "source_item_id": "a8dc4ffb62e5b2d2c0d991b164289ab746e86a9fa52407ee7511d5d8992ac682",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T11:13:34.000Z",
-            "ingested_at": "2026-09-04T11:36:39.394Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-05T19:36:39.490Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T19:21:39.490Z",
-          "fingerprint": "fc6394929dd9caf6a77ab1a8265c01d7c1fddece2fc2a73b24676eceaeed40eb",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-4f130f019115e3a8",
