@@ -1,7 +1,130 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T07:21:32.324Z",
+  "updated_at": "2026-09-05T07:36:45.767Z",
   "stories": [
+    {
+      "story_id": "wt-4d45c64b930426e2",
+      "slug": "ukraine-news-tote-nach-luftangriffen-im-gebiet-dnipropetrowsk-0426e2",
+      "title": "Ukraine-News: Tote nach Luftangriffen im Gebiet Dnipropetrowsk",
+      "first_seen": "2026-09-05T07:27:13.000Z",
+      "last_updated": "2026-09-05T07:27:13.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-luftangriff-dnipropetrowsk-kamjanske-tote-wittkoff-,ukraine-news-05-09-2026-100.html",
+          "title": "Ukraine-News: Tote nach Luftangriffen im Gebiet Dnipropetrowsk",
+          "summary": "Nach einem russischen Luftangriff auf das Gebiet Dnipropetrowsk in der zentral-östlichen Ukraine gibt es mehrere Tote. Der US-Sondergesandte Steve Witkoff und Jared Kushner werden heute in Moskau zu Gesprächen erwartet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:27:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "730b4a53851d52129854398f018e3bccbc6cb92e4fccb8600a3e583f14ff75e0",
+          "source_item_id": "6e40b5faf20370fc2d31f4696d22c32effefe402fbd0fc78a9df36e4de64316e",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:27:13.000Z",
+          "ingested_at": "2026-09-05T07:36:45.767Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4d45c64b930426e2-claim-01",
+          "story_id": "wt-4d45c64b930426e2",
+          "claim": "Ukraine-News: Tote nach Luftangriffen im Gebiet Dnipropetrowsk: Nach einem russischen Luftangriff auf das Gebiet Dnipropetrowsk in der zentral-östlichen Ukraine gibt es mehrere Tote. Der US-Sondergesandte Steve Witkoff und Jared Kushner werden heute in Moskau zu Gesprächen erwartet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T07:36:45.767Z"
+        }
+      ],
+      "content_hash": "5eb54c1e34b93bc09d5e8cd9a43efa6c2bd7d4c2e638941a82b17ceb6fa2618f",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T07:36:45.767Z",
+      "event_first_seen_at": "2026-09-05T07:36:45.767Z",
+      "event_detected_at": "2026-09-05T07:36:45.767Z",
+      "event_id": "event-2cff29fd20197c5546b0",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.546116666666666,
+        "detection_delay_minutes": 9.546116666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T07:36:45.767Z",
+      "rejection": {
+        "at": "2026-09-05T07:36:45.767Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-19ad19be6d5e7cf2",
       "slug": "polizei-fahndet-weiter-nach-verdachtigem-5e7cf2",
@@ -3615,8 +3738,8 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-05T06:40:30.152Z",
         "status": "fallback",
-        "fallback_reason": "HIGGSFIELD_JOB_RETRY_WAIT",
-        "retry_after": "2026-09-05T07:22:58.097Z"
+        "fallback_reason": "HIGGSFIELD_TIMEOUT",
+        "retry_after": "2026-09-05T07:54:22.113Z"
       }
     },
     {
@@ -24449,7 +24572,7 @@
       "verification_started_at": "2026-09-04T17:41:40.684Z",
       "publish_ready_at": "2026-09-04T17:41:54.741Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -24886,10 +25009,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "b98827e840969bf450efaaf5957cf522b235044a45ec4605317b2884f5fef3f5",
-        "checked_at": "2026-09-04T19:06:24.876Z",
+        "fingerprint": "aea439dc6143a1fd5e94538470bd9bd98457eb420e203ae57e4a673e5f37bfc2",
+        "checked_at": "2026-09-05T07:36:45.767Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T01:06:24.876Z",
+        "expires_at": "2026-09-05T13:36:45.767Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -24946,7 +25069,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T16:34:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "ingested_at": "2026-09-05T07:36:45.767Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
@@ -24955,85 +25078,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "403ee319f5030c2830dfcd8e5cc6de3a9fa4a4318a2a11654f2c0d1e190591c2",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
-            "title": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst",
-            "summary": "Die Polizei fahndet nach dem Gevelsberger Daniel V. Sein LKW wird am Hambacher Forst entdeckt. Er hatte ein Bekennerschreiben an die taz geschickt. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T16:34:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "42161c0e907ca11494093c2b8c13f700ffd6e31c38591d64a38055c80f4331ec",
-            "source_item_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:34:00.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Polizei-findet-Truck-des-Verdaechtigen-am-Hambacher-Forst/!6210358",
-            "title": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst",
-            "summary": "Die Polizei fahndet nach dem Gevelsberger Daniel V. Sein LKW wird am Hambacher Forst entdeckt. Er hatte ein Bekennerschreiben an die taz geschickt. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T16:34:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "ac9d541fc8a986eb9f173192f1753b7782bf08298e465a4e7f852815fe0b746f",
-            "source_item_id": "e05aff12f1ae9294070d863f071d4eee080ab35d205d2b446a809ce34a38e841",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:34:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_DETAIL_SUMMARY_LENGTH",
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "CLAIM_EVIDENCE_NOT_IN_SOURCE"
-        ],
-        "quality_retry_count": 4,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
