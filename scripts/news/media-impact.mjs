@@ -54,7 +54,7 @@ export const MEDIA_IMPACT_SCHEMA = {
 };
 
 export const MEDIA_PROMPT_RULES = [
-  "MEDIEN- & SPRACHWIRKUNG: media_trigger ist die lokale Vorprüfung. Bei relevant=false gib media_impact:null aus. Bei true prüfe die Story; der Trigger ist kein Befund und media_impact.relevant darf false sein.",
+  "MEDIEN- & SPRACHWIRKUNG: media_trigger ist eine kostengünstige lokale Vorprüfung. Bei relevant=false gib in der Regel media_impact:null aus. Nur wenn der gelieferte Inhalt trotzdem einen konkreten, substanziellen Medienbefund trägt, darfst du einen vollständigen media_impact-Block mit reason, factual_core, Evidenztrennung und sachlicher Einordnung liefern; eine bloße Vermutung reicht nicht. Bei true prüfe die Story; der Trigger ist kein Befund und media_impact.relevant darf false sein.",
   "Trenne zwingend (A) belegtes Ereignis, (B) Aussage oder Deutung eines Akteurs und (C) mediale Vermittlung. Eine politische Einordnung darf nie wie ein amtlich festgestellter Sachverhalt erscheinen. Direkte und indirekte Zitate sowie Attribution in Überschrift, Teaser und Text getrennt beurteilen.",
   "Analysiere politisch symmetrisch: Regierung, Opposition, rechts, links, Unternehmen, Verbände, NGOs, Gewerkschaften, Aktivist:innen, Behörden und Medien nach denselben Kriterien. Keine Personen-, Parteien-, Redaktions- oder Medienhaus-Scores und keine Gesamtgesinnungsbewertung.",
   "Medienwirkung bleibt getrennt von Ereigniswirkung und MPD-Werten. Prüfe konkrete Wortwahl, Platzierung, Attribution, Kontext, materielle Auslassungen und kommunikative Wirkungspfade.",
@@ -108,6 +108,67 @@ function strings(value, maxItems = 4, max = 220) {
 
 function textForStory(story) {
   return [story?.title, story?.source_summary, story?.analysis?.summary, ...(story?.sources || []).flatMap((source) => [source.title, source.summary, source.article_excerpt])].filter(Boolean).join(" \n ");
+}
+
+function triggerContentFingerprint(story = {}) {
+  return createHash("sha256").update(JSON.stringify({
+    story_id: story.story_id || null,
+    content_hash: story.content_hash || null,
+    sources: (story.sources || []).map((source) => [source.source_id, source.url, source.title, source.summary, source.content_hash]),
+  })).digest("hex");
+}
+
+export function mediaTriggerRecord(trigger = {}, story = {}) {
+  return {
+    relevant: Boolean(trigger.relevant),
+    level: LEVELS.has(trigger.level) ? trigger.level : "low",
+    score: Number.isFinite(Number(trigger.score)) ? Number(trigger.score) : 0,
+    reasons: strings(trigger.reasons, 12, 100),
+    matched_terms: strings(trigger.matched_terms, 8, 80),
+    source_count: Number(trigger.source_count || (story.sources || []).length),
+    comparable_source_count: Number(trigger.comparable_source_count || 0),
+    fingerprint: plain(trigger.fingerprint, 100),
+    content_fingerprint: triggerContentFingerprint(story),
+    basis: trigger.basis === "analysis_finding" ? "analysis_finding" : (story.sources || []).some((source) => source.article_excerpt) ? "controlled_source_text" : "feed_metadata",
+    version: MEDIA_ANALYSIS_VERSION,
+  };
+}
+
+export function mediaTriggerForAnalysis(analysis = {}, story = {}) {
+  const stored = analysis?.media_trigger;
+  if (stored && stored.version === MEDIA_ANALYSIS_VERSION
+    && stored.fingerprint === analysis.media_trigger_fingerprint
+    && stored.content_fingerprint === triggerContentFingerprint(story)) return stored;
+  return detectMediaImpactTrigger(story);
+}
+
+function substantiveAnalysisFinding(input) {
+  const framing = object(input?.framing);
+  const speaker = object(input?.speaker_statement);
+  const evidence = object(input?.evidence);
+  return Boolean(input?.relevant
+    && plain(input.reason, 300)
+    && plain(input.factual_core, 500)
+    && plain(input.editorial_assessment, 500)
+    && plain(evidence.what_is_known, 400)
+    && plain(evidence.what_is_inferred, 400)
+    && plain(evidence.what_is_open, 400)
+    && ((framing.detected && plain(framing.term, 120)) || speaker.present));
+}
+
+export function effectiveMediaImpactTrigger(trigger, input, story = {}) {
+  if (trigger?.relevant || !substantiveAnalysisFinding(input)) return trigger;
+  const framing = object(input.framing);
+  return {
+    ...trigger,
+    relevant: true,
+    level: LEVELS.has(input.relevance_level) && input.relevance_level !== "low" ? input.relevance_level : "medium",
+    score: Math.max(4, Number(trigger?.score || 0)),
+    reasons: [...new Set([...(trigger?.reasons || []), "analysis_substantive_finding"])],
+    matched_terms: [...new Set([...(trigger?.matched_terms || []), plain(framing.term, 80)].filter(Boolean))].slice(0, 8),
+    fingerprint: createHash("sha256").update(`${trigger?.fingerprint || ""}:analysis:${plain(framing.term, 120)}:${plain(input.reason, 300)}`).digest("hex"),
+    basis: "analysis_finding",
+  };
 }
 
 export function detectMediaImpactTrigger(story = {}) {
@@ -255,7 +316,7 @@ export function applySelfFrameRewrites(analysis, story, report = {}) {
   return { analysis, story, rewritten_fields: rewritten };
 }
 
-export function mediaImpactValidationErrors(analysis, story = {}, trigger = detectMediaImpactTrigger(story)) {
+export function mediaImpactValidationErrors(analysis, story = {}, trigger = mediaTriggerForAnalysis(analysis, story)) {
   const errors = [];
   // Historische Versionen bleiben bis zum selektiven Backfill gültig. Jede neu
   // erzeugte oder ergänzte Analyse trägt dagegen die aktuelle Methodenversion.

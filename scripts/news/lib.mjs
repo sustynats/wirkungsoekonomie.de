@@ -7,7 +7,7 @@ import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, sourceEvi
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
 import { livingFileMatch, subjectConflict, matchingStories, isMerged } from "./living-files.mjs";
 import { compactEvidenceSegments, serializeEvidencePackets } from "./evidence-packets.mjs";
-import { MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, detectMediaImpactTrigger, mediaImpactValidationErrors } from "./media-impact.mjs";
+import { MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, detectMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis } from "./media-impact.mjs";
 
 const STOPWORDS = new Set([
   "aber", "alle", "als", "auch", "auf", "aus", "bei", "bis", "das", "dass", "dem", "den", "der", "des", "die", "ein", "eine", "einer", "eines", "fuer", "für", "hat", "im", "in", "ist", "mit", "nach", "nicht", "oder", "sich", "sind", "und", "vom", "von", "vor", "werden", "wird", "zur", "zum",
@@ -693,7 +693,9 @@ export function fitAnalysisInput(input, budget) {
       throw error;
     }
     const entry = candidates[0]; entry.count -= 1;
-    entry.source.evidence_segments = Array.from({length:entry.count},(_,index) => entry.all[Math.round(index * (entry.all.length - 1) / (entry.count - 1))]);
+    entry.source.evidence_segments = entry.count === 1
+      ? [entry.all[0]]
+      : Array.from({length:entry.count},(_,index) => entry.all[Math.round(index * (entry.all.length - 1) / (entry.count - 1))]);
     entry.source.evidence_selection = { incomplete: true, supplied: entry.count, available: entry.all.length };
     serialized = serializeEvidencePackets(value, dense);
   }
@@ -1057,7 +1059,7 @@ export function validateAnalysis(analysis, story, options = {}) {
     }
   }
   if (analysis?.publication_recommendation !== true) errors.push("AI_PUBLICATION_NOT_RECOMMENDED");
-  errors.push(...mediaImpactValidationErrors(analysis, story, story?.media_trigger || detectMediaImpactTrigger(story)));
+  errors.push(...mediaImpactValidationErrors(analysis, story, story?.media_trigger || mediaTriggerForAnalysis(analysis, story)));
   if (filterVersion >= 4 && options.persisted !== true) errors.push(...validateNewsroomAnalysis(analysis, story));
   else if (filterVersion < 4 && !story.sources.some((source) => source.primary_source)) errors.push("PRIMARY_SOURCE_REQUIRED");
   if (!story.claims.length || story.claims.some((claim) => !claim.source_id)) errors.push("CLAIM_LEDGER_INCOMPLETE");
@@ -1076,7 +1078,7 @@ export function validateAnalysis(analysis, story, options = {}) {
   // Visuals have their own source-bound sanitizer before this gate. Their
   // internal claim IDs and ISO date components are not journalistic numbers.
   const mediaForNumbers = analysis?.media_impact ? { ...analysis.media_impact, framing: { ...analysis.media_impact.framing, political_history_evidence: [] } } : null;
-  const textWithoutFrameworks = collectStrings({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null, media_impact: mediaForNumbers, media_analysis_version: "", media_checked_at: "", media_trigger_fingerprint: "" }).join(" ");
+  const textWithoutFrameworks = collectStrings({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null, media_impact: mediaForNumbers, media_analysis_version: "", media_checked_at: "", media_trigger_fingerprint: "", media_trigger: null }).join(" ");
   for (const token of numberTokens(withoutPublisherNames(textWithoutFrameworks))) if (!allowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_UNSUPPORTED_NUMBER:${token}`);
   if (options.validateSourceSummaryNumbers !== false) {
     for (const token of numberTokens(withoutPublisherNames(analysis?.source_summary || ""))) if (!rawAllowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);
