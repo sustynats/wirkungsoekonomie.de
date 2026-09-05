@@ -52,11 +52,19 @@ function packTransport(story) {
   story = JSON.parse(JSON.stringify(story));
   const counts = new Map();
   function count(value, key) {
-    if (typeof value === 'string' && value.length >= 50) counts.set(value, (counts.get(value) || 0) + 1);
+    if (typeof value === 'string' && value.length >= 16) counts.set(value, (counts.get(value) || 0) + 1);
     else if (value && typeof value === 'object') for (const [key, child] of Object.entries(value)) count(child, key);
   }
   count(story);
-  const texts = [...counts].filter(([,n]) => n > 1).map(([s]) => s);
+  // Repeated roles, dates and registry IDs also grow with a living file. Pool
+  // them only when their exact JSON representation is cheaper than repeating
+  // it, including the dictionary entry and every reference wrapper.
+  const texts = [];
+  for (const [value, count] of counts) {
+    const bytes = JSON.stringify(value).length;
+    const referenceBytes = JSON.stringify({ $text: texts.length }).length;
+    if (count > 1 && count * bytes > bytes + 1 + count * referenceBytes) texts.push(value);
+  }
   const indices = new Map(texts.map((s,i) => [s,i]));
   function replace(value, key) {
     if (typeof value === 'string' && indices.has(value)) return { $text: indices.get(value) };

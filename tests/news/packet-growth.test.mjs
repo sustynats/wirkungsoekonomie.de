@@ -1,10 +1,20 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { buildAnalysisPrompt, callWoekAi, claimLedgerFor, preAnalyzeStory } from '../../scripts/news/lib.mjs';
+import { buildAnalysisPrompt, callWoekAi, claimLedgerFor, preAnalyzeStory, fitAnalysisInput } from '../../scripts/news/lib.mjs';
+import { detectMediaImpactTrigger } from '../../scripts/news/media-impact.mjs';
 import { evidenceGroups } from '../../scripts/news/newsroom.mjs';
 import { serializeEvidencePackets, expandPacketTransport, expandEvidenceSegments } from '../../scripts/news/evidence-packets.mjs';
 import { evaluateRunHealth } from '../../scripts/news/check-run-health.mjs';
+import { aiDeferralReason } from '../../scripts/news/run.mjs';
+
+test('early budget priority is not mislabeled as a temporary batch or hourly queue',()=>{
+  const candidate={preanalysis:{internal_relevance_score:34},reassessment:false};
+  assert.equal(aiDeferralReason(candidate,{stage:1,threshold:48},25),'AI_BUDGET_BLOCKED');
+  assert.equal(aiDeferralReason(candidate,{stage:0,threshold:30},25),'AI_BUDGET_OR_BATCH_LIMIT');
+  assert.equal(aiDeferralReason(candidate,{stage:0,threshold:30},0),'AI_HOURLY_CALL_LIMIT');
+  assert.equal(aiDeferralReason({...candidate,reassessment:true},{stage:1,threshold:48},25),'AI_BUDGET_OR_BATCH_LIMIT');
+});
 
 test('325 equal dependency records retain their multiplicity without quadratic prompt growth',()=>{
   const sources=Array.from({length:26},(_,i)=>({source_id:'same',publisher_id:'same',url:`https://example.org/${i}`,title:'Anhörung zur geplanten Änderung',summary:'Unveränderter Text'}));
@@ -77,4 +87,42 @@ test('September 5 election backlog fits with related stories, all claims and med
   assert.equal(packet.claims.length,fixture.claims.length);
   assert.equal(packet.related_ticker_history.length,fixture.related_ticker_history.length);
   assert.deepEqual(packet.media_trigger,fixture.media_trigger);
+});
+
+test('a living file still fits after the two real late arrivals and fresh article excerpts',()=>{
+  const fixture=JSON.parse(fs.readFileSync(new URL('./fixtures/input-limit-regression-20260905.json',import.meta.url)));
+  const arrivals=JSON.parse(fs.readFileSync(new URL('./fixtures/input-limit-growth-20260905.json',import.meta.url)));
+  const sources=[...fixture.sources,...arrivals].map((s,i)=>({...s,...(i<3?{article_excerpt:Array.from({length:35},(_,n)=>`Absatz ${n}: Die bislang vorliegenden Angaben klären die Folgen nicht abschließend. Widersprüche müssen ausdrücklich offenbleiben.`).join(' ')}:{})}));
+  const candidate={...fixture,sources};
+  candidate.claims=claimLedgerFor(sources,candidate.story_id,'2026-09-05T21:15:13.080Z');
+  candidate.preanalysis=preAnalyzeStory(candidate);
+  candidate.media_trigger=detectMediaImpactTrigger(candidate);
+  const prompt=buildAnalysisPrompt([candidate]);
+  assert.ok(prompt.length<=39000);
+  const packet=expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
+  assert.equal(packet.sources.length,17);
+  assert.deepEqual(packet.sources.map(s=>s.url),sources.map(s=>s.url));
+  assert.equal(packet.claims.length,candidate.claims.length);
+  assert.deepEqual(packet.media_trigger,candidate.media_trigger);
+  packet.sources.forEach((row,i)=>{
+    const s={...packet.source_defaults,...row};
+    assert.equal(s.primary_source,sources[i].primary_source);
+    assert.equal(s.source_id,sources[i].source_id);
+    assert.equal(s.role,sources[i].source_role||(sources[i].primary_source?'institutional_statement':'journalistic_report'));
+    assert.deepEqual(s.provenance?{...packet.provenance_defaults,...s.provenance}:null,sources[i].provenance||null);
+  });
+  for(const s of expandEvidenceSegments(packet)) for(const proof of s.evidence_segments){
+    const original=sources.find(o=>o.url===s.url);
+    assert.ok(`${original.title} ${original.summary} ${original.article_excerpt||''}`.includes(proof.excerpt));
+  }
+});
+
+test('majority transport defaults retain minority roles, explicit nulls and missing values',()=>{
+  const sources=Array.from({length:6},(_,i)=>({source_id:`s-${i}`,publisher:i===5?null:'Journalismus',role:i===5?'interest_statement':'journalistic_report',primary_source:i===5,provenance:i===5?null:{basis:'publisher_only_origin_unverified',independence_established:false},evidence_segments:[]}));
+  delete sources[0].publisher;
+  const [packed]=JSON.parse(fitAnalysisInput([{sources,claims:[]}],10000));
+  assert.equal(packed.source_defaults.role,'journalistic_report');
+  assert.equal(Object.hasOwn(packed.source_defaults,'publisher'),false);
+  const restored=packed.sources.map(row=>{const s={...packed.source_defaults,...row};if(s.provenance)s.provenance={...packed.provenance_defaults,...s.provenance};return s;});
+  assert.deepEqual(restored,sources);
 });
