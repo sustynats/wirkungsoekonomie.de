@@ -232,9 +232,9 @@ function card(story, index) {
     "Faktencheck",
     "Folgencheck",
     ...(story.topic || []),
-    ...Object.values(a)
-      .filter((value) => value && typeof value === "object" && !Array.isArray(value))
-      .flatMap((value) => Object.values(value).filter((item) => typeof item === "string")),
+    ...[a.human, a.planet, a.democracy]
+      .filter(Boolean)
+      .flatMap((dimension) => [dimension.relevance, dimension.rationale]),
     ...story.sources.map((source) => source.publisher),
   ].join(" ").toLowerCase().slice(0, 2400);
   const visuals = sanitizeVisuals(a.visuals, story).visuals;
