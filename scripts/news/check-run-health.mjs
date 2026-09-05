@@ -19,9 +19,12 @@ export function sourceCoverageDegraded(report = {}) {
 }
 
 export function reportOperationallyHealthy(report = {}) {
-  if (report.ai_error || report.input_holds?.length || sourceCoverageDegraded(report)) return false;
+  if (report.ai_error || sourceCoverageDegraded(report)) return false;
+  if (report.operational_status) return report.operational_status === "ok";
   if (!report.status || report.status === "ok") return true;
-  return report.status === "degraded" && Number(report.source_failures || 0) > 0;
+  if (report.status === "degraded") return Number(report.source_failures || 0) > 0
+    || Boolean(report.input_holds?.length || report.source_integrity_holds?.length || report.quality_holds?.length);
+  return false;
 }
 
 export function evaluateRunHealth(report, options = {}) {
@@ -37,7 +40,6 @@ export function evaluateRunHealth(report, options = {}) {
   if (expectedAfter !== null && (!Number.isFinite(expectedAfter) || !Number.isFinite(startedAt) || startedAt < expectedAfter)) errors.push("RUN_REPORT_STALE");
   if (!options.expectedAfter && Number.isFinite(startedAt) && nowMs - startedAt > maxAgeMinutes * 60 * 1000) errors.push("RUN_REPORT_STALE");
   if (report?.ai_error) errors.push(report.ai_error === 'AI_BUDGET_EXHAUSTED' ? 'AI_BUDGET_EXHAUSTED' : report.ai_error === "AI_INPUT_TOO_LARGE" ? "AI_INPUT_BLOCKED" : "AI_PROVIDER_DEGRADED");
-  if (report?.input_holds?.length) errors.push("AI_INPUT_BLOCKED");
   if (Number(report?.source_successes || 0) === 0 && report?.sources_scheduled !== 0) errors.push("NO_SOURCE_SUCCEEDED");
   if (sourceCoverageDegraded(report)) errors.push("SOURCE_COVERAGE_DEGRADED");
   if (!reportOperationallyHealthy(report)) errors.push("RUN_STATUS_NOT_OK");

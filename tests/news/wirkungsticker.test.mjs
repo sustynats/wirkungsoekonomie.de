@@ -24,8 +24,10 @@ import {
   statusConsistencyErrors,
 } from "../../scripts/news/lib.mjs";
 import {
+  aiProviderCoverageDegraded,
   aiRequestsInWindow,
   fetchFeedWithRetry,
+  queueSnapshot,
   queuePriority,
   partitionAiQueue,
   retainUsageHistory,
@@ -35,6 +37,7 @@ import {
 import { evaluateRunHealth } from "../../scripts/news/check-run-health.mjs";
 import { loadNewsRegistry } from "../../scripts/news/registry.mjs";
 import { expandEvidenceSegments, expandPacketTransport } from "../../scripts/news/evidence-packets.mjs";
+import { bumpCandidateFunnel, createSourceFunnel, finalizeSourceFunnel, summarizeSourceFunnel } from "../../scripts/news/source-funnel.mjs";
 
 const source = {
   source_id: "official-test", name: "Amtliche Testquelle", source_type: "official_rss", primary_source: true,
@@ -271,6 +274,8 @@ test("BMAS-Feed darf seine offizielle Artikeldomain lesen, aber keine fremde Dom
 
 test("Deduplizierung, Ähnlichkeit und Story-Cluster sind deterministisch", () => {
   assert.equal(canonicalizeUrl("https://EXAMPLE.org/a/?utm_campaign=x#frag"), "https://example.org/a");
+  assert.equal(canonicalizeUrl("http://example.org/a", "https://example.org/feed.xml"), "https://example.org/a");
+  assert.equal(canonicalizeUrl("http://other.example/a", "https://example.org/feed.xml"), "http://other.example/a");
   assert.ok(storySimilarity("Bund beschließt neues Klimagesetz", "Neues Klimagesetz vom Bund beschlossen") > 0.58);
   const items = parseFeed(feed, source);
   assert.equal(clusterItems([...items, { ...items[0], item_id: "zweite", url: "https://example.org/b" }]).length, 1);
@@ -299,6 +304,15 @@ test("Relevanzfilter verwechselt modern und Modelle nicht mit Mode", () => {
   assert.ok(aiSafety.score >= 34);
   assert.ok(!transparency.drivers.includes("standardmäßig geringe Relevanz"));
   assert.ok(!aiSafety.drivers.includes("standardmäßig geringe Relevanz"));
+});
+
+test("Technikfeeds filtern Produktrauschen lokal, behalten aber Systemrisiken", () => {
+  const technologySource = { priority: 78, selection_profile: "systemic_technology" };
+  const routine = classifyItem({ title: "Smartphone-Test mit Rabatt: neues Modell jetzt kaufen", summary: "Hands-on und Kaufberatung", categories: [] }, technologySource);
+  const systemic = classifyItem({ title: "Cyberangriff auf kritische Infrastruktur", summary: "Ein Datenleck betrifft die Stromversorgung und den Datenschutz.", categories: [] }, technologySource);
+  assert.ok(routine.score < 30);
+  assert.ok(systemic.score >= 30);
+  assert.ok(routine.drivers.includes("technische Produkt- oder Routinemeldung ohne belegten Systembezug"));
 });
 
 test("Format ist kein Ausschlussgrund, aber bloßer Kontext reicht nicht", () => {
@@ -474,6 +488,7 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
 test("Visual-Sanitizer entfernt unbelegte Kennzahlen vor dem Qualitätsgate und protokolliert sie", () => {
   const story = candidate();
   story.sources[0].article_excerpt = "Der Zuschuss beträgt 5,5 Milliarden Euro.";
+  story.claims[0].claim += " Der Zuschuss beträgt 5,5 Milliarden Euro.";
   const analysis = validAnalysis();
   analysis.source_summary = analysis.source_summary.replace("Weitere Einzelheiten fehlen.", "Der Zuschuss beträgt 5,5 Milliarden Euro.");
   analysis.visuals = {
@@ -603,9 +618,16 @@ test("Technische Qualitätsfehler werden begrenzt erneut versucht, fachliche Abl
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_UNSUPPORTED_NUMBER:17"], 2), true);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_PUBLICATION_GATE_FACTORS_INVALID", "AI_MATERIALITY_GATE_FAILED"], 1), true);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_MATERIALITY_GATE_FAILED"], 0), false);
-  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 3), false);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 3), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_REQUIRED_STRING:summary", "AI_PUBLICATION_NOT_RECOMMENDED"], 4), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_EX_ANTE_CAUSAL_OVERCLAIM"], 3), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["CLAIM_INDEPENDENCE_NOT_ESTABLISHED"], 3), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 9, "2026-09-04T12:00:00Z", "2026-09-04T11:00:00Z"), false);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_PUBLICATION_NOT_RECOMMENDED"], 0), false);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_MATERIALITY_TOO_LOW"], 0), false);
+  assert.equal(shouldRetryQualityGate("AI_OUTPUT_INVALID", ["AI_MALFORMED_JSON"], 0), true);
+  assert.equal(shouldRetryQualityGate("AI_OUTPUT_INVALID", ["AI_SCHEMA_ANALYSES_REQUIRED"], 1, "2026-09-03T17:30:00.000Z", "2026-09-03T17:00:00.000Z"), false);
+  assert.equal(shouldRetryQualityGate("AI_OUTPUT_INVALID", ["AI_SCHEMA_ANALYSES_REQUIRED"], 1, "2026-09-03T17:30:00.000Z", "2026-09-03T17:31:00.000Z"), true);
 });
 
 test("Frische Meldungen und materielle Updates stehen vor alten Neubewertungen", () => {
@@ -658,6 +680,15 @@ test("Budget- und Kapazitätsgrenzen vertagen alle nicht bearbeiteten Kandidaten
   assert.deepEqual(constrained.deferred.map((item) => item.story_id), ["medium"]);
 });
 
+test("Dauerhafter Nachrichtenzufluss lässt ältere technische Queue-Einträge nicht verhungern", () => {
+  const fresh = Array.from({ length: 12 }, (_, index) => ({ ...candidate(), story_id: `fresh-${index}`, fresh: true, existing_story: null, preanalysis: { internal_relevance_score: 90 - index } }));
+  const queued = Array.from({ length: 4 }, (_, index) => ({ ...candidate(), story_id: `queued-${index}`, fresh: false, existing_story: { published: true, pending_update: { reason: "AI_OUTPUT_INVALID", detected_at: `2026-09-03T0${index}:00:00.000Z` } }, preanalysis: { internal_relevance_score: 50 } }));
+  const result = partitionAiQueue([...fresh, ...queued], budgetStage(0, 25), 12);
+  assert.equal(result.selected.length, 12);
+  assert.equal(result.selected.filter(item => item.story_id.startsWith("queued-")).length, 3);
+  assert.ok(result.selected.some(item => item.story_id === "queued-0"));
+});
+
 test("Monatskosten bleiben auch nach mehr als 400 automatischen Läufen erhalten", () => {
   const previous = Array.from({ length: 450 }, () => ({ started_at: "2026-08-31T12:00:00Z" }));
   const current = Array.from({ length: 600 }, () => ({ started_at: "2026-09-03T12:00:00Z", ai: { estimated_cost_usd: 0.01 } }));
@@ -686,7 +717,45 @@ test("Laufgesundheit erkennt 503, Quellenlücken und veraltete Berichte", () => 
   const transientSource = { ...healthy, status: "degraded", source_failures: 1, source_successes: 32, sources_scheduled: 33 };
   assert.deepEqual(evaluateRunHealth(transientSource, { expectedAfter: "2026-09-03T17:00:00.000Z" }), { ok: true, errors: [] });
 
+  const editorialHold = { ...healthy, status: "ok", operational_status: "ok", editorial_status: "holds", input_holds: [{ story_id: "queued" }], source_integrity_holds: [{ story_id: "source-open" }] };
+  assert.deepEqual(evaluateRunHealth(editorialHold, { expectedAfter: "2026-09-03T17:00:00.000Z" }), { ok: true, errors: [] });
+
   const staleHealth = evaluateRunHealth(healthy, { expectedAfter: "2026-09-03T17:00:11.000Z" });
   assert.equal(staleHealth.ok, false);
   assert.ok(staleHealth.errors.includes("RUN_REPORT_STALE"));
+});
+
+test("Queue- und Providerstatus unterscheiden Kapazität, Redaktion und Betriebsstörung", () => {
+  const now = "2026-09-03T17:00:00.000Z";
+  const rows = [
+    { story_id: "capacity", published: false, first_seen: "2026-09-03T16:00:00.000Z", pending_reason: "AI_HOURLY_CALL_LIMIT" },
+    { story_id: "editorial", published: false, first_seen: "2026-09-03T15:00:00.000Z", pending_reason: "SOURCE_INTEGRITY_OPEN" },
+    { story_id: "technical", published: true, pending_update: { reason: "AI_OUTPUT_INVALID", quality_errors: ["AI_MALFORMED_JSON"], quality_retry_count: 1, quality_retry_after: "2026-09-03T15:30:00.000Z", detected_at: "2026-09-03T14:00:00.000Z" } },
+  ];
+  const snapshot = queueSnapshot(rows, now, 4);
+  assert.equal(snapshot.capacity, 1);
+  assert.equal(snapshot.editorial, 1);
+  assert.equal(snapshot.technical, 1);
+  assert.equal(snapshot.status, "technical_delay");
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 8, ai_provider_failures: 1 }), false);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 4, ai_provider_failures: 1 }), false);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 2, ai_provider_failures: 2 }), true);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1 }), true);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:429" }] }), false);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 2, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:429" }, { error: "AI_PROVIDER_ERROR:429" }] }), false);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:503" }] }), true);
+});
+
+test("Quellen-Funnel zählt Beiträge je Quelle und fasst sie prüfbar zusammen", () => {
+  const sourceRows = [{ source_id: "eins", name: "Quelle Eins" }, { source_id: "zwei", name: "Quelle Zwei" }];
+  const funnel = createSourceFunnel(sourceRows, sourceRows);
+  const story = { sources: [{ source_id: "eins" }, { source_id: "eins" }, { source_id: "zwei" }] };
+  bumpCandidateFunnel(funnel, story, "eligible_stories");
+  bumpCandidateFunnel(funnel, story, "published_stories");
+  const rows = finalizeSourceFunnel(funnel);
+  const summary = summarizeSourceFunnel(rows);
+  assert.equal(summary.totals.scheduled, 2);
+  assert.equal(summary.totals.eligible_stories, 2);
+  assert.equal(summary.totals.published_stories, 2);
+  assert.deepEqual(summary.productive.map(item => item.source_id), ["eins", "zwei"]);
 });

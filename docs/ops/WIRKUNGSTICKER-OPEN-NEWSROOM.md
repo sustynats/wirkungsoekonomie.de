@@ -1,16 +1,16 @@
 # Wirkungsticker: offene Recherchebasis und Betriebsstand
 
-Stand: 3. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht eine Garantie lückenloser Nachrichtenabdeckung.
+Stand: 5. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht eine Garantie lückenloser Nachrichtenabdeckung.
 
 ## Kosten und Grenzen
 
 - Freigabe: höchstens **25 EUR monatlich für die Nachrichten-KI**. Das separate Vercel-Bruttobudget von 25 EUR bleibt unverändert. Kein Vercel-Build für dieses Paket; statische Veröffentlichung über GitHub Pages.
 - Nachrichten-Abos und bezahlte Nachrichten-/Agentur-APIs: **0 EUR**. Keine Login-/Paywall-Umgehung, keine Removepaywall-Anbindung. Öffentliche RSS-Metadaten sind keine Volltextlizenz.
 - `budget.mjs`: täglicher ECB-Kurs, höchstens sieben Tage alt; konservative USD-Grenze mit 19 % Steuer- und 10 % FX-Reserve, derzeit höchstens 18,90 USD. Ohne hinreichend frischen Kurs bleibt die KI zurückgestellt, Recherche läuft weiter.
-- Oracle: eigener authentifizierter `/api/news-analysis`-Zugang, `gpt-5.4-mini`, höchstens eine laufende Anfrage, 24 Anfragen/Stunde, maximal 40.000 Zeichen Eingabe und 6.500 Ausgabetoken. Öffentliche KI-Ratenlimits werden nicht angehoben.
+- Oracle: eigener authentifizierter `/api/news-analysis`-Zugang, `gpt-5.4-mini`, serielle Einzelanfragen. Der Nachrichtenlauf nutzt rollend höchstens 40 der 48 verfügbaren Anfragen in 60 Minuten; acht Aufrufe bleiben für die unabhängigen Redaktions-/Mediengates und sichere Laufübergänge reserviert. Maximal 40.000 Zeichen Eingabe und 6.500 Ausgabetoken. Öffentliche KI-Ratenlimits werden nicht angehoben.
 - Nachrichtenmodus mit Reasoning `low` und eigenem JSON-Auftrag; kein angehängter allgemeiner Chat-Auftrag und keine sachfremden Website-Suchtreffer als Nachrichtenbeleg.
 - Dauerhaftes privates Oracle-Kostenjournal reserviert 0,25 USD vor einer Anfrage; fehlgeschlagene/unterbrochene Aufrufe behalten die Reserve. Erfolgreiche Aufrufe ohne technische Wiederholung werden mit gemeldeten Tokenzahlen abgerechnet. September-Altkosten wurden mit 3 USD einschließlich Sicherheitsreserve übernommen. Der übergeordnete bestehende API-Kostenschutz bleibt wirksam.
-- Ein festes Budget begrenzt die Zahl bearbeitbarer Kandidaten. 24 Anfragen/Stunde sind technische Spitzenkapazität, keine Zusage dauerhafter Vollauslastung oder vollständiger Berichterstattung.
+- Ein festes Budget begrenzt die Zahl bearbeitbarer Kandidaten. 40 Nachrichtenaufrufe in 60 Minuten sind die reservierte Spitzenkapazität, keine Zusage dauerhafter Vollauslastung oder vollständiger Berichterstattung. HTTP 429 wird als erwartbare Kapazitätsdrosselung eingeordnet und in der dauerhaften Queue erneut versucht, nicht als KI-Anbieterausfall gemeldet.
 
 ## Umsetzung A–N
 
@@ -36,13 +36,14 @@ Stand: 3. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht 
 `content/news/source-registry.json` bleibt die bestehende Basis. `media-registry.json` ergänzt Herausgeber und kontrollierte Überschreibungen; `registry.mjs` führt beides zusammen.
 
 - Reuters und dpa: keine gebuchten Direktdienste. Zugeschriebene Agenturmeldungen in anderen frei verfügbaren Quellen werden als gemeinsamer Ursprung behandelt, soweit erkennbar.
-- tagesschau, ZEIT, Süddeutsche: ungeklärte kostenlose automatisierte Nutzung gesondert markiert. Andere öffentlich-rechtliche und überregionale Angebote sind separat eingerichtet.
+- tagesschau: Der offizielle Feed ist laut Anbieter nur für private, nichtkommerzielle Nutzung bestimmt. Das öffentliche Projekt ist nicht privat; deshalb Rolle E und kein automatischer Abruf. ZEIT und Süddeutsche bleiben wegen ungeklärter automatisierter Nutzung fallbezogen bzw. inaktiv. Andere öffentlich-rechtliche und überregionale Angebote sind separat eingerichtet.
 - Bundesrat, BMAS und WTO: Robots-Sperre wird eingehalten, nicht mit anderem User-Agent umgangen.
 - UN News: Nach der sicheren Weiterleitung von `/robots.txt` nach `/en/robots.txt` ist der Feed von `*/news/` erfasst. Zugang deshalb deaktiviert; keine Übernahme der ausdrücklich nur für Google Feedfetcher geltenden Ausnahme.
 - Greenpeace: Atom-Pfad durch robots.txt gesperrt; erlaubte öffentliche Presseübersicht mit eigenem begrenztem HTML-Metadatenadapter und fünf Sekunden Crawl-Delay. Keine Bilder.
 - WELT/BILD: kritische Beobachtung vorgesehen, Direktzugang noch nicht freigeschaltet. Apollo News und NIUS: redaktionell ausgeschlossen, Host-Sperre im Abrufschutz.
+- Heise Wirtschaft, Netzpolitik und Security: öffentliche RSS-/Atom-Metadaten sind im gemessenen Probebetrieb aktiviert. Ein lokales Technikprofil verwirft Kaufberatung, Deals, Produkttests und routinemäßige Updates vor der KI, lässt aber Cyberrisiken, kritische Infrastruktur, digitale Grundrechte, Plattformregulierung, Arbeitsmarkt- und Lieferkettenfolgen passieren. Telepolis bleibt Rolle C und wird nicht dauerhaft gepollt; Kommentar, Analyse und Nachricht werden getrennt.
 
-Quellen für technische Zugangsentscheidungen: [SPIEGEL-Syndication](https://gruppe.spiegel.de/syndication/haeufige-fragen), [DLF-RSS](https://www.deutschlandfunk.de/rss-angebot-102.html), [tagesschau-RSS](https://www.tagesschau.de/infoservices/rssfeeds), [ZEIT-Impressum](https://www.zeit.de/impressum/index), [SZ-RSS](https://www.sueddeutsche.de/updates-rss), [Europe PMC API](https://europepmc.org/RestfulWebService), [Greenpeace-Presseübersicht](https://presseportal.greenpeace.de/releases/).
+Quellen für technische Zugangsentscheidungen: [SPIEGEL-Syndication](https://gruppe.spiegel.de/syndication/haeufige-fragen), [DLF-RSS](https://www.deutschlandfunk.de/rss-angebot-102.html), [Heise-RSS](https://www.heise.de/news-extern/news.html), [tagesschau-RSS](https://www.tagesschau.de/infoservices/rssfeeds), [ZEIT-Impressum](https://www.zeit.de/impressum/index), [SZ-RSS](https://www.sueddeutsche.de/updates-rss), [Europe PMC API](https://europepmc.org/RestfulWebService), [Greenpeace-Presseübersicht](https://presseportal.greenpeace.de/releases/).
 
 ## Betrieb und Prüfung
 
@@ -52,9 +53,11 @@ npm run news:build
 npm run news:validate
 npm run build:search
 npm run news:health
+npm run news:source-integrity:audit -- --strict
+npm run news:source-portfolio:audit -- --strict
 ```
 
-`reports/wirkungsticker-latest-run.json` enthält Source Health, Laufzahlen, Qualitätsstopps, Kostengrenze, Herkunfts-/Abdeckungsstatistik, Aktualitätswarnungen und fällige Folgeprüfungen. `data/news/newsroom.json` protokolliert Quelldokumente, Ereignisse, Zuordnungen und Entscheidungen. Diese internen Verzeichnisse werden vom öffentlichen Website-Artefakt ausgeschlossen.
+`reports/wirkungsticker-latest-run.json` enthält Source Health, Laufzahlen, Qualitätsstopps, Kostengrenze, Herkunfts-/Abdeckungsstatistik, Aktualitätswarnungen, fällige Folgeprüfungen, getrennte Betriebs-/Redaktions-/Queue-Zustände und einen Quellen-Funnel je Quelle. `data/news/newsroom.json` protokolliert Quelldokumente, Ereignisse, Zuordnungen und Entscheidungen. Diese internen Verzeichnisse werden vom öffentlichen Website-Artefakt ausgeschlossen.
 
 Öffentlich bleiben eigene Nachrichten, Quellenlinks, Belegrollen und begrenzte Statusangaben. Fremde Artikeltexte sind nur flüchtige Prüfgrundlage; der dauerhafte Belegnachweis enthält Hashes statt kopierter Zitate.
 

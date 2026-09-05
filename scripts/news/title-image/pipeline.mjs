@@ -24,6 +24,10 @@ export function publicTitleImage(value) {
     const file = value[key];
     if (file && typeof file.url === "string" && (file.url === FALLBACK || /^https:\/\/github\.com\/sustynats\/wirkungsoekonomie\.de\/releases\/download\/wirkungsticker-media-\d{4}-\d{2}\/wt-[a-f0-9]{16}-[a-f0-9]{16}-(?:og|wide|square)\.png$/.test(file.url))) result[key] = { url: file.url, width: SIZES[key].width, height: SIZES[key].height };
   }
+  const original = value.source_visual;
+  if (value.mode === "editorial" && /^https:\/\/github\.com\/sustynats\/wirkungsoekonomie\.de\/releases\/download\/wirkungsticker-media-\d{4}-\d{2}\/wt-[a-f0-9]{16}-[a-f0-9]{16}-source\.(?:png|jpe?g|webp)$/.test(original?.url || "")) {
+    result.background = { url: original.url };
+  }
   return ["og", "wide", "square"].some(key => result[key]) ? result : null;
 }
 export function titleFingerprint(story, mode, sourceHash = null) {

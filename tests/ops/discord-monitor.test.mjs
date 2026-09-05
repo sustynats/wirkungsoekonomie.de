@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord } from '../../scripts/ops/discord-monitor.mjs';
 
 const now = '2026-09-04T06:00:00Z';
-const fixture = () => ({ report: { status: 'ok', completed_at: now, source_failures: 0, monthly_budget_usd: 18.9, budget_policy: { status: 'ok', fx: { rate_date: '2026-09-03', rate_usd_per_eur: 1.16 } }, source_health: [] }, usage: { runs: [] }, stories: [], liveFeed: { items: [] }, probes: [] });
+const fixture = () => ({ report: { status: 'ok', operational_status: 'ok', completed_at: now, source_failures: 0, monthly_budget_usd: 18.9, budget_policy: { status: 'ok', fx: { rate_date: '2026-09-03', rate_usd_per_eur: 1.16 } }, source_health: [], queue: { status: 'clear', total: 0, capacity: 0, technical: 0, editorial: 0 }, source_funnel: [] }, usage: { runs: [] }, stories: [], liveFeed: { items: [] }, probes: [] });
 const healthy = [{ id: 'main', name: 'Hauptseite', ok: true }];
 const failed = [{ id: 'main', name: 'Hauptseite', ok: false, reason: 'HTTP 503' }];
 
@@ -39,6 +39,13 @@ test('transient outage stays quiet; confirmed outage and recovery each notify on
 });
 test('no new articles is not a pipeline failure', () => {
   assert.ok(evaluateChecks(fixture(), now).checks.every(c => c.ok));
+});
+test('worker queue after-count is not misreported as zero in Discord',()=>{
+  const data=fixture();
+  data.report.queue={status:'draining',before:21,after:17,capacity:2,technical:15,editorial:0};
+  const summary=summarizeNews(data,now);
+  assert.equal(summary.queue.total,17);
+  assert.match(dailyReport(summary,healthy),/Queue: 17 offen/);
 });
 test('one transient source throttle stays observable without a false outage alarm', () => {
   const d = fixture();
@@ -122,12 +129,39 @@ test('cost report deduplicates runs, counts missing usage, and does not invent a
   assert.equal(summarizeNews(d, now).eurMonthWithTaxReserve, null);
 });
 test('preflight holds are not provider outages or unknown paid requests', () => {
-  const d=fixture(); d.report.status='degraded'; d.report.input_holds=[{story_id:'test',reason:'AI_INPUT_TOO_LARGE'}];
+  const d=fixture(); d.report.input_holds=[{story_id:'test',reason:'AI_INPUT_TOO_LARGE'}]; d.report.queue={status:'draining',total:1,capacity:0,technical:1,editorial:0,oldest_technical_minutes:20};
   const checks=evaluateChecks(d,now).checks;
-  assert.equal(checks.find(c=>c.id==='news-input').ok,false);
+  assert.equal(checks.find(c=>c.id==='queue').ok,true);
+  assert.equal(checks.find(c=>c.id==='run').ok,true);
   assert.equal(checks.find(c=>c.id==='provider').ok,true);
   d.usage.runs=[{run_id:'local-only',started_at:now,counts:{ai_stories:1,ai_requests:0},ai:null}];
   assert.equal(summarizeNews(d,now).missingCostRuns,0);
+});
+test('only an aged technical queue creates an incident; capacity and editorial holds stay in reporting', () => {
+  const d=fixture();
+  d.report.queue={status:'editorial_holds',total:7,capacity:3,technical:0,editorial:4,oldest_minutes:240};
+  let checks=evaluateChecks(d,now).checks;
+  assert.equal(checks.find(c=>c.id==='queue').ok,true);
+  d.report.queue={status:'technical_delay',total:2,capacity:0,technical:2,editorial:0,oldest_technical_minutes:120};
+  checks=evaluateChecks(d,now).checks;
+  const queue=checks.find(c=>c.id==='queue');
+  assert.equal(queue.ok,false);
+  assert.match(queue.reason,/2 technisch blockierte/);
+  assert.match(queue.reason,/120 Minuten/);
+});
+test('daily report contains exact pipeline, source funnel, queue and unit-cost monitoring', () => {
+  const d=fixture();
+  d.report.source_funnel=[{source_id:'heise-security',name:'heise Security',feed_items:10,new_items:2,eligible_stories:1,ai_selected:1,published_stories:1}];
+  d.report.queue={status:'draining',total:3,capacity:3,technical:0,editorial:0};
+  d.usage.runs=[{run_id:'today',started_at:now,counts:{feed_entries_fetched:10,feed_entries_new:2,feed_entries_updated:1,story_clusters:2,eligible_stories:1,locally_rejected:1,ai_stories:1,published_stories:1,updated_stories:0},ai:{estimated_cost_usd:0.12},source_funnel:d.report.source_funnel}];
+  d.stories=[{published:true,listed:true,story_id:'eins',slug:'eins',published_at:now,last_updated:now,title:'Neue Akte',analysis:{summary:'Neue Akte'},sources:[]}];
+  d.liveFeed.items=[{url:'https://wirkungsoekonomie.de/wirkungsticker/eins/',date_modified:now}];
+  const summary=summarizeNews(d,now);
+  const report=dailyReport(summary,evaluateChecks(d,now).checks);
+  assert.match(report,/Queue: 3 offen/);
+  assert.match(report,/10 Feed-Einträge → 3 neu\/aktualisiert → 2 Story-Kandidaten/);
+  assert.match(report,/heise Security/);
+  assert.match(report,/\$0\.120/);
 });
 test('probe validates content and retries one transient connection failure', async () => {
   let calls = 0;

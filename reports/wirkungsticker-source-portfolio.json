@@ -1,0 +1,3060 @@
+{
+  "audit_date": "2026-09-05",
+  "schema_version": 1,
+  "objective": "Mit möglichst wenig Rauschen, Dubletten und KI-Kosten alle materiell relevanten Entwicklungen mit hoher Wahrscheinlichkeit erkennen.",
+  "methodology": {
+    "source_roles": {
+      "A": "aktiv automatisiert überwachen",
+      "B": "nur Entdeckung/Hinweis",
+      "C": "nur fallbezogene Sekundär-/Gegenquelle",
+      "D": "nur Primärquelle für eigene Aussagen/Daten",
+      "E": "vorerst nicht nutzen",
+      "F": "ausdrücklich ausgeschlossen"
+    },
+    "legal_note": "Technische Erreichbarkeit ist keine rechtliche Freigabe. Offene Kandidaten bleiben in Rolle C, D oder E und werden nicht automatisch abgerufen.",
+    "utility_note": "Der Source Utility Score ist eine interne Betriebskennzahl, keine Medienqualitäts- oder politische Bewertung.",
+    "observation_window": "30 Tage; bei weniger als 20 gesehenen Einträgen und acht erfassten Läufen keine automatische Review-Markierung."
+  },
+  "summary": {
+    "registered_sources": 66,
+    "active_automated_sources": 47,
+    "trial_sources": 3,
+    "coverage_good": 27,
+    "coverage_partial": 12,
+    "coverage_critical_gap": 1,
+    "performance_items_seen": 7500
+  },
+  "coverage": [
+    {
+      "topic": "Bundespolitik",
+      "coverage": "good",
+      "active_sources": [
+        "bundesregierung-kompakt",
+        "bundesregierung-presse",
+        "bundestag-hib",
+        "zdfheute-nachrichten",
+        "dlf-nachrichten"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Länder",
+      "coverage": "partial",
+      "active_sources": [
+        "ndr-info",
+        "wdr-nachrichten",
+        "mdr-nachrichten",
+        "swr-aktuell",
+        "rbb24-nachrichten",
+        "hr-hessenschau"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "Kommunen",
+      "coverage": "partial",
+      "active_sources": [
+        "ndr-info",
+        "wdr-nachrichten",
+        "mdr-nachrichten",
+        "swr-aktuell",
+        "rbb24-nachrichten",
+        "hr-hessenschau"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "EU",
+      "coverage": "good",
+      "active_sources": [
+        "eu-kommission-presse",
+        "ezb-presse",
+        "euronews-en",
+        "dw-news"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "internationale Politik",
+      "coverage": "good",
+      "active_sources": [
+        "dw-news",
+        "france24-en",
+        "euronews-en",
+        "dlf-nachrichten"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Konjunktur",
+      "coverage": "good",
+      "active_sources": [
+        "destatis-aktuell",
+        "bundesbank-allgemein",
+        "ezb-presse",
+        "dlf-wirtschaft",
+        "wiwo-schlagzeilen"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Unternehmen",
+      "coverage": "good",
+      "active_sources": [
+        "wiwo-schlagzeilen",
+        "manager-magazin-news",
+        "dlf-wirtschaft"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Arbeit",
+      "coverage": "partial",
+      "active_sources": [
+        "destatis-aktuell",
+        "dlf-wirtschaft",
+        "dlf-gesellschaft"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "Finanzen",
+      "coverage": "good",
+      "active_sources": [
+        "bundesbank-allgemein",
+        "ezb-presse",
+        "dlf-wirtschaft",
+        "wiwo-schlagzeilen"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Märkte",
+      "coverage": "good",
+      "active_sources": [
+        "bundesbank-allgemein",
+        "ezb-presse",
+        "wiwo-schlagzeilen",
+        "manager-magazin-news"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Energie",
+      "coverage": "good",
+      "active_sources": [
+        "bundesnetzagentur-presse",
+        "bundestag-wirtschaft",
+        "klimareporter-news",
+        "dlf-wirtschaft"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Infrastruktur",
+      "coverage": "good",
+      "active_sources": [
+        "bundesnetzagentur-presse",
+        "zdfheute-nachrichten",
+        "dlf-nachrichten",
+        "mdr-nachrichten"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "kritische Infrastruktur",
+      "coverage": "good",
+      "active_sources": [
+        "bundesnetzagentur-presse",
+        "heise-security",
+        "zdfheute-nachrichten",
+        "dlf-nachrichten"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Klima",
+      "coverage": "good",
+      "active_sources": [
+        "umweltbundesamt-presse",
+        "ipcc-news",
+        "klimareporter-news",
+        "europepmc-impact-research"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Biodiversität",
+      "coverage": "critical_gap",
+      "active_sources": [
+        "umweltbundesamt-presse",
+        "europepmc-impact-research"
+      ],
+      "gap_note": "Kein ausreichend eigenständiger aktiver Fachzugang."
+    },
+    {
+      "topic": "Ressourcen",
+      "coverage": "partial",
+      "active_sources": [
+        "umweltbundesamt-presse",
+        "eu-kommission-presse",
+        "europepmc-impact-research"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "Umwelt",
+      "coverage": "good",
+      "active_sources": [
+        "umweltbundesamt-presse",
+        "klimareporter-news",
+        "europepmc-impact-research",
+        "greenpeace-presse"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Wohnen",
+      "coverage": "partial",
+      "active_sources": [
+        "rbb24-nachrichten",
+        "wdr-nachrichten",
+        "dlf-gesellschaft",
+        "tagesspiegel-home"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "Gesundheit",
+      "coverage": "good",
+      "active_sources": [
+        "who-news",
+        "smc-research",
+        "europepmc-impact-research",
+        "dlf-wissen"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Pflege",
+      "coverage": "partial",
+      "active_sources": [
+        "dlf-gesellschaft",
+        "zdfheute-nachrichten",
+        "wdr-nachrichten"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "Bildung",
+      "coverage": "partial",
+      "active_sources": [
+        "dlf-gesellschaft",
+        "zdfheute-nachrichten",
+        "mdr-nachrichten"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "soziale Sicherung",
+      "coverage": "partial",
+      "active_sources": [
+        "dlf-gesellschaft",
+        "destatis-aktuell",
+        "zdfheute-nachrichten"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "Armut",
+      "coverage": "partial",
+      "active_sources": [
+        "destatis-aktuell",
+        "dlf-gesellschaft",
+        "taz-aktuell"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "Verteilung",
+      "coverage": "partial",
+      "active_sources": [
+        "destatis-aktuell",
+        "dlf-wirtschaft",
+        "dlf-gesellschaft",
+        "taz-aktuell"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "Teilhabe",
+      "coverage": "partial",
+      "active_sources": [
+        "dlf-gesellschaft",
+        "taz-aktuell",
+        "zdfheute-nachrichten"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "gesellschaftlicher Zusammenhalt",
+      "coverage": "good",
+      "active_sources": [
+        "dlf-gesellschaft",
+        "zdfheute-nachrichten",
+        "spiegel-schlagzeilen",
+        "stern-schlagzeilen"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Justiz",
+      "coverage": "good",
+      "active_sources": [
+        "lto-news",
+        "bundesverwaltungsgericht-presse",
+        "jurafuchs-presse"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Rechtsstaat",
+      "coverage": "good",
+      "active_sources": [
+        "lto-news",
+        "bundesverwaltungsgericht-presse",
+        "bundestag-hib",
+        "dlf-nachrichten"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Demokratie",
+      "coverage": "good",
+      "active_sources": [
+        "bundestag-hib",
+        "dlf-nachrichten",
+        "zdfheute-nachrichten",
+        "spiegel-schlagzeilen"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Medien",
+      "coverage": "partial",
+      "active_sources": [
+        "dlf-gesellschaft",
+        "spiegel-schlagzeilen",
+        "taz-aktuell"
+      ],
+      "gap_note": "Bestehende Breitenquellen erkennen relevante Fälle, ein enger Primär-/Fachzugang fehlt oder die geografische Abdeckung ist unvollständig."
+    },
+    {
+      "topic": "Digitalisierung",
+      "coverage": "good",
+      "active_sources": [
+        "heise-netzpolitik",
+        "heise-wirtschaft",
+        "dlf-wissen",
+        "eu-kommission-presse"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "KI",
+      "coverage": "good",
+      "active_sources": [
+        "heise-netzpolitik",
+        "heise-wirtschaft",
+        "dlf-wissen",
+        "smc-research"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Cybersecurity",
+      "coverage": "good",
+      "active_sources": [
+        "heise-security",
+        "heise-netzpolitik",
+        "dlf-nachrichten"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Datenschutz",
+      "coverage": "good",
+      "active_sources": [
+        "heise-netzpolitik",
+        "heise-security",
+        "dlf-gesellschaft"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Plattformen",
+      "coverage": "good",
+      "active_sources": [
+        "heise-netzpolitik",
+        "eu-kommission-presse",
+        "dlf-wissen"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Wissenschaft",
+      "coverage": "good",
+      "active_sources": [
+        "europepmc-impact-research",
+        "smc-research",
+        "dlf-wissen"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Forschung",
+      "coverage": "good",
+      "active_sources": [
+        "europepmc-impact-research",
+        "smc-research",
+        "dlf-wissen"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "neue Studien",
+      "coverage": "good",
+      "active_sources": [
+        "europepmc-impact-research",
+        "smc-research"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "Technologie",
+      "coverage": "good",
+      "active_sources": [
+        "heise-wirtschaft",
+        "heise-netzpolitik",
+        "heise-security",
+        "dlf-wissen"
+      ],
+      "gap_note": null
+    },
+    {
+      "topic": "geopolitische Entwicklungen mit Wirkung auf Deutschland/EU",
+      "coverage": "good",
+      "active_sources": [
+        "dw-news",
+        "france24-en",
+        "euronews-en",
+        "dlf-nachrichten"
+      ],
+      "gap_note": null
+    }
+  ],
+  "changes": [
+    {
+      "source": "heise online – Wirtschaft",
+      "source_id": "heise-wirtschaft",
+      "old_role": "E",
+      "new_role": "A",
+      "topics": [
+        "Wirtschaft",
+        "Digitalisierung",
+        "Technologie"
+      ],
+      "reason": "Schließt Digitalwirtschafts- und Halbleiterlücken; enger lokaler Filter; Probebetrieb.",
+      "official_endpoint": "https://www.heise.de/rss/heise-Rubrik-Wirtschaft-atom.xml",
+      "terms_url": "https://www.heise.de/news-extern/news.html",
+      "robots_url": "https://www.heise.de/robots.txt",
+      "rsl_url": "https://www.heise.de/rsl.xml",
+      "access": "verified_metadata_only",
+      "unique_value": "high",
+      "duplication_risk": "medium",
+      "noise_risk": "high",
+      "prefilter": "systemic_technology",
+      "confidence": "high"
+    },
+    {
+      "source": "heise online – Netzpolitik",
+      "source_id": "heise-netzpolitik",
+      "old_role": "E",
+      "new_role": "A",
+      "topics": [
+        "Netzpolitik",
+        "Datenschutz",
+        "Plattformen",
+        "KI"
+      ],
+      "reason": "Schließt eine materielle Governance- und Grundrechtslücke; Probebetrieb.",
+      "official_endpoint": "https://www.heise.de/rss/heise-Rubrik-Netzpolitik-atom.xml",
+      "terms_url": "https://www.heise.de/news-extern/news.html",
+      "robots_url": "https://www.heise.de/robots.txt",
+      "rsl_url": "https://www.heise.de/rsl.xml",
+      "access": "verified_metadata_only",
+      "unique_value": "very_high",
+      "duplication_risk": "low",
+      "noise_risk": "low",
+      "prefilter": "systemic_technology",
+      "confidence": "high"
+    },
+    {
+      "source": "heise Security",
+      "source_id": "heise-security",
+      "old_role": "E",
+      "new_role": "A",
+      "topics": [
+        "Cybersecurity",
+        "kritische Infrastruktur",
+        "Datenschutz"
+      ],
+      "reason": "Schließt die akute Cyber-Blindstelle; Patch-, Produkt- und Routinewarnungen werden lokal verworfen; Probebetrieb.",
+      "official_endpoint": "https://www.heise.de/security/feed.xml",
+      "terms_url": "https://www.heise.de/news-extern/news.html",
+      "robots_url": "https://www.heise.de/robots.txt",
+      "rsl_url": "https://www.heise.de/rsl.xml",
+      "access": "verified_metadata_only",
+      "unique_value": "very_high",
+      "duplication_risk": "low",
+      "noise_risk": "high",
+      "prefilter": "systemic_technology",
+      "confidence": "high"
+    },
+    {
+      "source": "Telepolis",
+      "source_id": "telepolis-aktuell",
+      "old_role": "A",
+      "new_role": "C",
+      "topics": [
+        "Gesellschaft",
+        "Geopolitik",
+        "Technologie"
+      ],
+      "reason": "Hoher Analyse-/Meinungsanteil und bislang kein belegter einzigartiger Nachrichtengewinn; nur fallbezogene Kontext- oder Gegenquelle.",
+      "official_endpoint": "https://www.telepolis.de/feed.xml",
+      "terms_url": "https://www.heise.de/news-extern/news.html",
+      "robots_url": "https://www.telepolis.de/robots.txt",
+      "rsl_url": "https://www.telepolis.de/rsl.xml",
+      "access": "verified_case_only",
+      "unique_value": "open",
+      "duplication_risk": "medium",
+      "noise_risk": "high",
+      "prefilter": "analysis_discovery",
+      "confidence": "medium"
+    },
+    {
+      "source": "tagesschau.de",
+      "source_id": "tagesschau-access",
+      "old_role": "E",
+      "new_role": "E",
+      "topics": [
+        "Politik",
+        "Wirtschaft",
+        "Wissen"
+      ],
+      "reason": "Offizieller Feed vorhanden, aber Nutzung laut Anbieter nur privat und nichtkommerziell; das öffentliche Projekt ist nicht privat.",
+      "official_endpoint": "https://www.tagesschau.de/index~rss2.xml",
+      "terms_url": "https://www.tagesschau.de/infoservices/rssfeeds",
+      "robots_url": "https://www.tagesschau.de/robots.txt",
+      "rsl_url": "https://www.tagesschau.de/rsl.xml",
+      "access": "legal_restriction",
+      "unique_value": "high",
+      "duplication_risk": "high",
+      "noise_risk": "medium",
+      "prefilter": "not_active",
+      "confidence": "high"
+    },
+    {
+      "source": "BR24",
+      "source_id": "br24-access",
+      "old_role": "E",
+      "new_role": "E",
+      "topics": [
+        "Bayern",
+        "Landespolitik"
+      ],
+      "reason": "Offizieller BR24-Feed verifiziert; Nutzungsrahmen und regionaler Filter werden vor einer späteren Trial-Aktivierung separat geklärt.",
+      "official_endpoint": "https://nachrichtenfeeds.br.de/rss/nachrichten/seiten/QXAPkQJ",
+      "terms_url": "https://www.br.de/service/br-rss-feeds-100.html",
+      "robots_url": null,
+      "rsl_url": null,
+      "access": "technical_verified_legal_open",
+      "unique_value": "high_regional",
+      "duplication_risk": "medium",
+      "noise_risk": "high",
+      "prefilter": "regional_materiality",
+      "confidence": "medium"
+    },
+    {
+      "source": "EEA",
+      "source_id": "eea-access",
+      "old_role": "E",
+      "new_role": "D",
+      "topics": [
+        "Biodiversität",
+        "Umwelt",
+        "Ressourcen"
+      ],
+      "reason": "Geeignete CC-BY-Primärquelle zur kritischen Biodiversitätslücke; der offizielle RSS-Pfad ist laut aktueller robots.txt gesperrt und bleibt deshalb aus dem Collector.",
+      "official_endpoint": "https://www.eea.europa.eu/en/newsroom/rss-feeds/publications-rss/rss.xml",
+      "terms_url": "https://www.eea.europa.eu/en/legal-notice",
+      "robots_url": "https://www.eea.europa.eu/robots.txt",
+      "rsl_url": "https://www.eea.europa.eu/rsl.xml",
+      "access": "robots_disallowed_case_primary",
+      "unique_value": "very_high",
+      "duplication_risk": "low",
+      "noise_risk": "low",
+      "prefilter": "official_environment",
+      "confidence": "high"
+    },
+    {
+      "source": "BSI",
+      "source_id": "bsi-access",
+      "old_role": "E",
+      "new_role": "D",
+      "topics": [
+        "Cybersecurity",
+        "kritische IT"
+      ],
+      "reason": "Amtliche Primärquelle für eigene Warnungen und Lagebilder; fallbezogen, bis ein offizieller automatisierbarer Nachrichtenendpunkt verifiziert ist.",
+      "official_endpoint": null,
+      "terms_url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/presse.html",
+      "robots_url": null,
+      "rsl_url": null,
+      "access": "case_primary_pending_endpoint",
+      "unique_value": "very_high",
+      "duplication_risk": "low",
+      "noise_risk": "medium",
+      "prefilter": "official_cyber",
+      "confidence": "medium"
+    }
+  ],
+  "do_not_activate": [
+    {
+      "source": "Apollo News",
+      "role": "F",
+      "reason": "Ausdrücklicher redaktioneller Ausschluss.",
+      "covered_by": "Andere Primär- und journalistische Quellen."
+    },
+    {
+      "source": "NIUS",
+      "role": "F",
+      "reason": "Ausdrücklicher redaktioneller Ausschluss.",
+      "covered_by": "Andere Primär- und journalistische Quellen."
+    },
+    {
+      "source": "BILD",
+      "role": "C",
+      "reason": "RSL untersagt AI-Input; höchstens externer Hinweis mit unabhängiger Bestätigung.",
+      "covered_by": "Primärquelle und unabhängige freie Berichte."
+    },
+    {
+      "source": "WELT",
+      "role": "C",
+      "reason": "Paywall-/Nutzungsrahmen nicht ausreichend für dauerhaftes Polling.",
+      "covered_by": "ÖR, DLF, SPIEGEL, Primärquellen."
+    },
+    {
+      "source": "tagesschau.de",
+      "role": "E",
+      "reason": "Feed laut Anbieter nur für privaten, nichtkommerziellen Gebrauch.",
+      "covered_by": "ZDFheute, DLF und regionale ÖR-Feeds."
+    },
+    {
+      "source": "DIE ZEIT / ZEIT ONLINE",
+      "role": "C",
+      "reason": "Paywall und Automationsbedingungen offen.",
+      "covered_by": "SPIEGEL, DLF, Tagesspiegel und Primärquellen."
+    },
+    {
+      "source": "Süddeutsche Zeitung",
+      "role": "C",
+      "reason": "Geschäftliche RSS-Nutzung verlangt gesonderte Klärung.",
+      "covered_by": "ÖR, SPIEGEL, regionale Quellen."
+    },
+    {
+      "source": "Reuters",
+      "role": "C",
+      "reason": "Kein kostenloser Direktfeed; nur erkannte Agenturprovenienz.",
+      "covered_by": "Freie Medien und Primärquellen."
+    },
+    {
+      "source": "dpa",
+      "role": "C",
+      "reason": "Kein kostenloser Direktfeed; nur erkannte Agenturprovenienz.",
+      "covered_by": "Freie Medien und Primärquellen."
+    },
+    {
+      "source": "AFP",
+      "role": "C",
+      "reason": "Kein kostenloser Direktfeed; nur erkannte Agenturprovenienz.",
+      "covered_by": "Freie Medien und Primärquellen."
+    },
+    {
+      "source": "AP",
+      "role": "C",
+      "reason": "Kein kostenloser Direktfeed; nur erkannte Agenturprovenienz.",
+      "covered_by": "Freie Medien und Primärquellen."
+    },
+    {
+      "source": "Telepolis",
+      "role": "C",
+      "reason": "Noch kein belastbarer einzigartiger Nachrichtengewinn gegenüber Rauschen.",
+      "covered_by": "Heise-Fachfeeds, DLF und fallbezogene Nutzung."
+    },
+    {
+      "source": "Handelsblatt",
+      "role": "C",
+      "reason": "Wirtschaftsraum bereits breit abgedeckt; Paywall und Bedingungen offen.",
+      "covered_by": "WiWo, manager magazin, DLF Wirtschaft, Destatis, Bundesbank, EZB."
+    },
+    {
+      "source": "FAZ",
+      "role": "C",
+      "reason": "Hoher Überschneidungsgrad; Automationsbedingungen offen.",
+      "covered_by": "SPIEGEL, DLF, ÖR und Primärquellen."
+    },
+    {
+      "source": "Focus",
+      "role": "E",
+      "reason": "Erwartetes Lifestyle-, Ratgeber- und Agenturrauschen überwiegt den Zusatznutzen.",
+      "covered_by": "Bestehendes überregionales Portfolio."
+    },
+    {
+      "source": "Capital",
+      "role": "E",
+      "reason": "Unternehmens- und Anlageraum bereits abgedeckt; Zusatznutzen nicht belegt.",
+      "covered_by": "WiWo, manager magazin, DLF Wirtschaft."
+    },
+    {
+      "source": "Börsen-Zeitung",
+      "role": "C",
+      "reason": "Spezialnutzen fallbezogen; kein Bedarf für Dauerpolling.",
+      "covered_by": "Bundesbank, EZB, Destatis und Wirtschaftspresse."
+    },
+    {
+      "source": "Science",
+      "role": "C",
+      "reason": "Kein allgemeiner Paper-Feed; nur konkrete Studie/Metadaten nach Fachfilter.",
+      "covered_by": "Europe PMC, SMC und Originalstudie."
+    },
+    {
+      "source": "Nature",
+      "role": "C",
+      "reason": "Nur fallbezogene Originalstudien oder News; kein Volltextimport.",
+      "covered_by": "Europe PMC, SMC und Originalstudie."
+    },
+    {
+      "source": "National Geographic",
+      "role": "E",
+      "reason": "Keine belegte materielle Lücke gegenüber Fach- und Umweltquellen.",
+      "covered_by": "IPCC, UBA, Europe PMC; EEA/IPBES als nächste Primärquellen."
+    }
+  ],
+  "core_network": [
+    {
+      "source_id": "bundesregierung-kompakt",
+      "name": "Bundesregierung kompakt",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bundesregierung-presse",
+      "name": "Pressemitteilungen der Bundesregierung",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bundestag-hib",
+      "name": "Deutscher Bundestag – Heute im Bundestag",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bundestag-umwelt",
+      "name": "Deutscher Bundestag – Umwelt und Klimaschutz",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bundestag-wirtschaft",
+      "name": "Deutscher Bundestag – Wirtschaft und Energie",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "destatis-aktuell",
+      "name": "Statistisches Bundesamt",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bundesbank-allgemein",
+      "name": "Deutsche Bundesbank",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "ezb-presse",
+      "name": "Europäische Zentralbank",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bundesnetzagentur-presse",
+      "name": "Bundesnetzagentur – Pressemitteilungen",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "umweltbundesamt-presse",
+      "name": "Umweltbundesamt – Pressemitteilungen",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": false
+    },
+    {
+      "source_id": "eu-kommission-presse",
+      "name": "Europäische Kommission – Press Corner",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bundesverwaltungsgericht-presse",
+      "name": "Bundesverwaltungsgericht – Pressemitteilungen",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "woek-journal",
+      "name": "Journal der Wirkungsökonomie",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "woek-parlament-bewertungen",
+      "name": "Wirkungsportal Parlament – veröffentlichte WÖk-Bewertungen",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "jurafuchs-presse",
+      "name": "Jurafuchs – Presse",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": false
+    },
+    {
+      "source_id": "france24-en",
+      "name": "France 24",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "euronews-en",
+      "name": "Euronews",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "wiwo-schlagzeilen",
+      "name": "WirtschaftsWoche",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "stern-schlagzeilen",
+      "name": "stern",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "tagesspiegel-home",
+      "name": "Der Tagesspiegel",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "dw-news",
+      "name": "Deutsche Welle",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "who-news",
+      "name": "Weltgesundheitsorganisation (WHO)",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "berlin-presseportal",
+      "name": "Presseportal des Landes Berlin",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "taz-aktuell",
+      "name": "taz",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "manager-magazin-news",
+      "name": "manager magazin",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "zdfheute-nachrichten",
+      "name": "ZDFheute",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "ndr-info",
+      "name": "NDR",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "wdr-nachrichten",
+      "name": "WDR",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "mdr-nachrichten",
+      "name": "MDR",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "swr-aktuell",
+      "name": "SWR Aktuell",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "rbb24-nachrichten",
+      "name": "rbb24",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "hr-hessenschau",
+      "name": "hessenschau",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "spiegel-schlagzeilen",
+      "name": "DER SPIEGEL",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "dlf-nachrichten",
+      "name": "Deutschlandfunk",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "dlf-wirtschaft",
+      "name": "Deutschlandfunk – Wirtschaft",
+      "role": "A",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    }
+  ],
+  "blindspot_network": [
+    {
+      "source_id": "lto-news",
+      "name": "Legal Tribune Online",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": false
+    },
+    {
+      "source_id": "europepmc-impact-research",
+      "name": "Europe PMC – offene Wirkungsforschung",
+      "role": "A",
+      "cadence": "slow_monitoring",
+      "trial_mode": false
+    },
+    {
+      "source_id": "ipcc-news",
+      "name": "IPCC",
+      "role": "A",
+      "cadence": "slow_monitoring",
+      "trial_mode": false
+    },
+    {
+      "source_id": "greenpeace-presse",
+      "name": "Greenpeace Deutschland",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": false
+    },
+    {
+      "source_id": "heise-wirtschaft",
+      "name": "heise online – Wirtschaft",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": true
+    },
+    {
+      "source_id": "heise-netzpolitik",
+      "name": "heise online – Netzpolitik",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": true
+    },
+    {
+      "source_id": "heise-security",
+      "name": "heise Security",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": true
+    },
+    {
+      "source_id": "klimareporter-news",
+      "name": "Klimareporter°",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": false
+    },
+    {
+      "source_id": "smc-research",
+      "name": "Science Media Center Germany",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": false
+    },
+    {
+      "source_id": "dlf-wissen",
+      "name": "Deutschlandfunk – Wissen",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": false
+    },
+    {
+      "source_id": "dlf-gesellschaft",
+      "name": "Deutschlandfunk – Gesellschaft",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": false
+    },
+    {
+      "source_id": "utopia-news",
+      "name": "Utopia",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": false
+    }
+  ],
+  "case_research_sources": [
+    {
+      "source_id": "bundesrat-mitteilungen",
+      "name": "Bundesrat – Mitteilungen",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bmas-aktuell",
+      "name": "Bundesministerium für Arbeit und Soziales",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "un-news",
+      "name": "UN News",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "wto-news",
+      "name": "Welthandelsorganisation (WTO)",
+      "role": "D",
+      "cadence": "regular",
+      "trial_mode": false
+    },
+    {
+      "source_id": "welt-access",
+      "name": "WELT",
+      "role": "C",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bild-access",
+      "name": "BILD",
+      "role": "C",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "telepolis-aktuell",
+      "name": "Telepolis",
+      "role": "C",
+      "cadence": "slow_monitoring",
+      "trial_mode": false
+    },
+    {
+      "source_id": "reuters-access",
+      "name": "Reuters",
+      "role": "C",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "dpa-access",
+      "name": "dpa",
+      "role": "C",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "afp-access",
+      "name": "Agence France-Presse (AFP)",
+      "role": "C",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "ap-access",
+      "name": "Associated Press (AP)",
+      "role": "C",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "eea-access",
+      "name": "European Environment Agency (EEA)",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "bsi-access",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik (BSI)",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    }
+  ],
+  "source_performance": [
+    {
+      "source_id": "bundesregierung-kompakt",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 44.3,
+      "metrics": {
+        "items_seen": 160,
+        "items_local_rejected": 0,
+        "items_duplicate": 136,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 3,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 22013,
+        "ai_output_tokens": 1904,
+        "estimated_ai_cost": 0.01687,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bundesregierung-presse",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 44,
+      "metrics": {
+        "items_seen": 160,
+        "items_local_rejected": 0,
+        "items_duplicate": 112,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 1,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 8622,
+        "ai_output_tokens": 336,
+        "estimated_ai_cost": 0.004695,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bundestag-hib",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "duplicates_over_90_percent",
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 40,
+      "metrics": {
+        "items_seen": 120,
+        "items_local_rejected": 0,
+        "items_duplicate": 120,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bundestag-umwelt",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 48.7,
+      "metrics": {
+        "items_seen": 120,
+        "items_local_rejected": 0,
+        "items_duplicate": 16,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bundestag-wirtschaft",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 48.7,
+      "metrics": {
+        "items_seen": 120,
+        "items_local_rejected": 0,
+        "items_duplicate": 16,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bundesrat-mitteilungen",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 48,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "destatis-aktuell",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "duplicates_over_90_percent",
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 43,
+      "metrics": {
+        "items_seen": 80,
+        "items_local_rejected": 0,
+        "items_duplicate": 80,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bundesbank-allgemein",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 41,
+      "metrics": {
+        "items_seen": 80,
+        "items_local_rejected": 0,
+        "items_duplicate": 72,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "ezb-presse",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 47.3,
+      "metrics": {
+        "items_seen": 120,
+        "items_local_rejected": 0,
+        "items_duplicate": 32,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bundesnetzagentur-presse",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 80,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "umweltbundesamt-presse",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bmas-aktuell",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "eu-kommission-presse",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 42.4,
+      "metrics": {
+        "items_seen": 80,
+        "items_local_rejected": 0,
+        "items_duplicate": 64,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 1,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 4667,
+        "ai_output_tokens": 1433,
+        "estimated_ai_cost": 0.008307,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bundesverwaltungsgericht-presse",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "woek-journal",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 49.8,
+      "metrics": {
+        "items_seen": 180,
+        "items_local_rejected": 0,
+        "items_duplicate": 3,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "woek-parlament-bewertungen",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 120,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "lto-news",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 46.3,
+      "metrics": {
+        "items_seen": 90,
+        "items_local_rejected": 0,
+        "items_duplicate": 33,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "jurafuchs-presse",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "europepmc-impact-research",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "france24-en",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 41.9,
+      "metrics": {
+        "items_seen": 184,
+        "items_local_rejected": 1,
+        "items_duplicate": 151,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 1,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 6897,
+        "ai_output_tokens": 2530,
+        "estimated_ai_cost": 0.013275,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "euronews-en",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 68,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 11,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "wiwo-schlagzeilen",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "duplicates_over_90_percent",
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 63.6,
+      "metrics": {
+        "items_seen": 160,
+        "items_local_rejected": 0,
+        "items_duplicate": 160,
+        "items_existing_story": 8,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 4,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 6715,
+        "ai_output_tokens": 247,
+        "estimated_ai_cost": 0.003712,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "stern-schlagzeilen",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 100,
+      "metrics": {
+        "items_seen": 160,
+        "items_local_rejected": 11,
+        "items_duplicate": 81,
+        "items_existing_story": 11,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 12,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 53441,
+        "ai_output_tokens": 4078,
+        "estimated_ai_cost": 0.03903,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "tagesspiegel-home",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 82,
+      "metrics": {
+        "items_seen": 480,
+        "items_local_rejected": 13,
+        "items_duplicate": 400,
+        "items_existing_story": 9,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 7,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 16786,
+        "ai_output_tokens": 1156,
+        "estimated_ai_cost": 0.011522,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "dw-news",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 67,
+      "metrics": {
+        "items_seen": 80,
+        "items_local_rejected": 0,
+        "items_duplicate": 16,
+        "items_existing_story": 1,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 2,
+        "items_published": 0,
+        "items_story_updates": 1,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 14376,
+        "ai_output_tokens": 2002,
+        "estimated_ai_cost": 0.014864,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "un-news",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "who-news",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 25,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "wto-news",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "ipcc-news",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "greenpeace-presse",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 47.5,
+      "metrics": {
+        "items_seen": 36,
+        "items_local_rejected": 0,
+        "items_duplicate": 9,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "tagesschau-access",
+      "role": "E",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 75.8,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 2,
+        "items_duplicate": 61,
+        "items_existing_story": 13,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 6,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 4,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 10604,
+        "ai_output_tokens": 1496,
+        "estimated_ai_cost": 0.011547,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "zeit-access",
+      "role": "E",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "sz-access",
+      "role": "E",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "welt-access",
+      "role": "C",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bild-access",
+      "role": "C",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "berlin-presseportal",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 53.4,
+      "metrics": {
+        "items_seen": 80,
+        "items_local_rejected": 0,
+        "items_duplicate": 16,
+        "items_existing_story": 4,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 4,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 4,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 8230,
+        "ai_output_tokens": 1424,
+        "estimated_ai_cost": 0.010405,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "taz-aktuell",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 51.9,
+      "metrics": {
+        "items_seen": 50,
+        "items_local_rejected": 4,
+        "items_duplicate": 45,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 2,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 18088,
+        "ai_output_tokens": 633,
+        "estimated_ai_cost": 0.009848,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "manager-magazin-news",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "duplicates_over_90_percent",
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 40.7,
+      "metrics": {
+        "items_seen": 240,
+        "items_local_rejected": 0,
+        "items_duplicate": 224,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "heise-wirtschaft",
+      "role": "A",
+      "trial_mode": true,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 51.1,
+      "metrics": {
+        "items_seen": 60,
+        "items_local_rejected": 13,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 2,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 13363,
+        "ai_output_tokens": 499,
+        "estimated_ai_cost": 0.005702,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "heise-netzpolitik",
+      "role": "A",
+      "trial_mode": true,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 48.9,
+      "metrics": {
+        "items_seen": 15,
+        "items_local_rejected": 4,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 1,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 6576,
+        "ai_output_tokens": 208,
+        "estimated_ai_cost": 0.002585,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "heise-security",
+      "role": "A",
+      "trial_mode": true,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 58.1,
+      "metrics": {
+        "items_seen": 60,
+        "items_local_rejected": 5,
+        "items_duplicate": 14,
+        "items_existing_story": 4,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 5,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 4,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 15696,
+        "ai_output_tokens": 1701,
+        "estimated_ai_cost": 0.013968,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "telepolis-aktuell",
+      "role": "C",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "zdfheute-nachrichten",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 66,
+      "metrics": {
+        "items_seen": 480,
+        "items_local_rejected": 4,
+        "items_duplicate": 294,
+        "items_existing_story": 9,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 3,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 4509,
+        "ai_output_tokens": 156,
+        "estimated_ai_cost": 0.002466,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "ndr-info",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 72.8,
+      "metrics": {
+        "items_seen": 388,
+        "items_local_rejected": 1,
+        "items_duplicate": 92,
+        "items_existing_story": 8,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 3,
+        "items_published": 1,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 11287,
+        "ai_output_tokens": 2009,
+        "estimated_ai_cost": 0.01326,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "wdr-nachrichten",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 46.2,
+      "metrics": {
+        "items_seen": 454,
+        "items_local_rejected": 13,
+        "items_duplicate": 308,
+        "items_existing_story": 4,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 5,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 51577,
+        "ai_output_tokens": 12969,
+        "estimated_ai_cost": 0.084428,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "mdr-nachrichten",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 79.6,
+      "metrics": {
+        "items_seen": 376,
+        "items_local_rejected": 9,
+        "items_duplicate": 318,
+        "items_existing_story": 9,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 5,
+        "items_published": 0,
+        "items_story_updates": 1,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 14595,
+        "ai_output_tokens": 1891,
+        "estimated_ai_cost": 0.014557,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "swr-aktuell",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 64,
+      "metrics": {
+        "items_seen": 425,
+        "items_local_rejected": 6,
+        "items_duplicate": 255,
+        "items_existing_story": 8,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 4,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 19274,
+        "ai_output_tokens": 3438,
+        "estimated_ai_cost": 0.022397,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "rbb24-nachrichten",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "duplicates_over_90_percent",
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 57.2,
+      "metrics": {
+        "items_seen": 392,
+        "items_local_rejected": 1,
+        "items_duplicate": 359,
+        "items_existing_story": 4,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 5,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 4,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 17614,
+        "ai_output_tokens": 1817,
+        "estimated_ai_cost": 0.015928,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "hr-hessenschau",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 42.6,
+      "metrics": {
+        "items_seen": 389,
+        "items_local_rejected": 2,
+        "items_duplicate": 283,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "klimareporter-news",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "duplicates_over_90_percent",
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 41.5,
+      "metrics": {
+        "items_seen": 33,
+        "items_local_rejected": 0,
+        "items_duplicate": 33,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "smc-research",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 45,
+      "metrics": {
+        "items_seen": 30,
+        "items_local_rejected": 0,
+        "items_duplicate": 15,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "spiegel-schlagzeilen",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 46.2,
+      "metrics": {
+        "items_seen": 206,
+        "items_local_rejected": 10,
+        "items_duplicate": 156,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 3,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 16502,
+        "ai_output_tokens": 4282,
+        "estimated_ai_cost": 0.027539,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "dlf-nachrichten",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "duplicates_over_90_percent",
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 79.6,
+      "metrics": {
+        "items_seen": 287,
+        "items_local_rejected": 3,
+        "items_duplicate": 282,
+        "items_existing_story": 14,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 10,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 4,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 29522,
+        "ai_output_tokens": 2600,
+        "estimated_ai_cost": 0.023591,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "dlf-wirtschaft",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 49.3,
+      "metrics": {
+        "items_seen": 480,
+        "items_local_rejected": 0,
+        "items_duplicate": 32,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "dlf-wissen",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 47.2,
+      "metrics": {
+        "items_seen": 180,
+        "items_local_rejected": 0,
+        "items_duplicate": 51,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "dlf-gesellschaft",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 47.8,
+      "metrics": {
+        "items_seen": 180,
+        "items_local_rejected": 0,
+        "items_duplicate": 39,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "utopia-news",
+      "role": "A",
+      "trial_mode": false,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 49.5,
+      "metrics": {
+        "items_seen": 60,
+        "items_local_rejected": 0,
+        "items_duplicate": 3,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "reuters-access",
+      "role": "C",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "dpa-access",
+      "role": "C",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "afp-access",
+      "role": "C",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "ap-access",
+      "role": "C",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "br24-access",
+      "role": "E",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "eea-access",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bsi-access",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "apollo-excluded",
+      "role": "F",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "nius-excluded",
+      "role": "F",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    }
+  ],
+  "open_followups": [
+    {
+      "source": "EEA/IPBES",
+      "reason": "Biodiversität ist die einzige kritische Fachlücke; exakten offiziellen Endpoint, Robots/RSL und Nutzungsrahmen vor einer Trial-Aktivierung verifizieren."
+    },
+    {
+      "source": "BR24, Radio Bremen, Saarländischer Rundfunk",
+      "reason": "Geografische Abdeckung ist nur teilweise vollständig; einzelne offizielle Feed- und Nutzungsprüfungen gestuft durchführen."
+    },
+    {
+      "source": "BSI, BfDI, ENISA",
+      "reason": "Als fallbezogene Primärquellen verwenden; automatisierte Endpunkte erst nach vollständiger technischer und rechtlicher Prüfung aktivieren."
+    }
+  ]
+}

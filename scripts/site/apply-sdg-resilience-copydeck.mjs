@@ -291,6 +291,8 @@ function updateHomepage() {
 function updateVerstehen() {
   if (!exists("verstehen/index.html")) return;
   let html = read("verstehen/index.html");
+  // Supersedes the earlier apple explainer; retain exactly one example.
+  html = html.replace(/<section class="section section-soft" id="wirkungslogik">[\s\S]*?<\/section>/g, "");
   html = updateMeta(
     html,
     "Ein verständlicher Einstieg in Wirkung, positive Netto-Wirkung, SDGs als Risikoregister, SDG+ als Korrekturfähigkeit und Rückkopplung.",
@@ -319,10 +321,10 @@ function updateVerstehen() {
     </section>
     <section class="section">
       <div class="section-header">
-        <p class="hero-kicker">SDGs als Risikoregister</p>
+        <p class="hero-kicker">SDGs als Risikoregister – eine WÖk-Lesart</p>
         <h2>Warum die SDGs härter sind als ein Nachhaltigkeitsetikett</h2>
         <p>Armut ist nicht nur ein Sozialthema, sondern ein Nachfrage-, Gesundheits-, Sicherheits- und Demokratierisiko. Wasser ist nicht nur ein Umweltziel, sondern Standort-, Produktions-, Gesundheits- und Konfliktrisiko. Bildung ist nicht nur ein weiches Gesellschaftsziel, sondern Fachkräfte-, Innovations-, Anpassungs- und Demokratierisiko.</p>
-        <p>SDG+ ergänzt diese Logik um die Korrekturfähigkeit moderner Gesellschaften: Wahrheit, Recht, Vertrauen, Diskurs, Medienqualität, digitale Integrität, kulturelle Teilhabe und öffentliche Rechenschaft.</p>
+        <p>SDG+ ist eine WÖk-eigene Erweiterung des Referenzrahmens. Sie ist keine offizielle UN-Kategorie und macht insbesondere Demokratie, Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit und digitale Selbstbestimmung für die WÖk expliziter prüfbar.</p>
       </div>
       <div class="hero-actions">
         <a class="btn btn-primary" href="../verstehen/sdgs-sdgplus/risiko-resilienzregister/">Risiko- und Resilienzregister verstehen</a>

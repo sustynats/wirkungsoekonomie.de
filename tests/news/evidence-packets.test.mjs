@@ -78,8 +78,64 @@ test('oversize preflight preserves a queue item and leaves the paid slot to anot
   const report=await runWirkungsticker(opts);
   assert.deepEqual(calls,['wt-other']); assert.equal(report.ai_error,undefined); assert.equal(report.input_holds.length,1); assert.equal(report.ai_calls,1);
   assert.equal(captured.storyStore.stories.find(s=>s.story_id==='wt-test').pending_update.reason,'AI_INPUT_TOO_LARGE');
-  assert.ok(evaluateRunHealth(report,{now}).errors.includes('AI_INPUT_BLOCKED'));
+  assert.deepEqual(evaluateRunHealth(report,{now}),{ok:true,errors:[]});
   assert.ok(!evaluateRunHealth(report,{now}).errors.includes('AI_PROVIDER_DEGRADED'));
   const again=await runWirkungsticker({...opts,...captured});
   assert.equal(again.input_holds[0].reused,undefined); assert.equal(again.ai_calls,0);
+});
+
+test('malformed AI output is retained and retried automatically after backoff', async () => {
+  let captured, calls=0, fail=true;
+  const callAiImpl=async stories=>{
+    calls++;
+    if(fail){const error=new Error('AI_MALFORMED_JSON');error.requestAttempts=1;throw error;}
+    return {analyses:stories.map(story=>({story_id:story.story_id,publication_recommendation:false,rejection:{code:'no_new_information',reason:'Die Quellen enthalten keine neue materielle Information gegenüber der bestehenden Fassung.'}})),model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50}};
+  };
+  const first=await runWirkungsticker(options(storedStory(),{callAiImpl,captureState:value=>captured=value}));
+  const pending=captured.storyStore.stories[0].pending_update;
+  assert.equal(first.ai_output_invalid,1);
+  assert.equal(first.operational_status,'ok');
+  assert.equal(pending.reason,'AI_OUTPUT_INVALID');
+  assert.equal(pending.quality_retry_count,1);
+  assert.equal(pending.quality_retry_after,'2026-09-04T12:15:00.000Z');
+  await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T12:10:00.000Z',callAiImpl,captureState:value=>captured=value});
+  assert.equal(calls,1);
+  fail=false;
+  const third=await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T12:16:00.000Z',callAiImpl,captureState:value=>captured=value});
+  assert.equal(calls,2);
+  assert.equal(third.ai_batches_completed,1);
+  assert.equal(captured.storyStore.stories[0].pending_update,undefined);
+});
+
+test('legacy exhausted records retry, but malformed rejection is never published or retired', async()=>{
+  let captured,calls=0;
+  const legacy=storedStory();
+  legacy.published=false;
+  delete legacy.pending_update;
+  legacy.pending_reason='QUALITY_GATE_FAILED';
+  legacy.quality_retry_count=4;
+  legacy.quality_errors=['AI_REQUIRED_STRING:summary','AI_PUBLICATION_NOT_RECOMMENDED'];
+  const callAiImpl=async stories=>{calls++;return {analyses:stories.map(s=>({story_id:s.story_id,publication_recommendation:false,rejection:{code:'not_material',reason:'kurz'}})),model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50}}};
+  const first=await runWirkungsticker(options(legacy,{callAiImpl,captureState:value=>captured=value}));
+  assert.equal(calls,1);
+  assert.equal(first.published_stories,0);
+  const saved=captured.storyStore.stories[0];
+  assert.notEqual(saved.listed,false);
+  assert.equal(saved.quality_retry_count,5);
+  assert.ok(Date.parse(saved.quality_retry_after)>Date.parse(now));
+  assert.equal(first.queue.technical,1);
+  await runWirkungsticker({...options(saved),...captured,now:'2026-09-04T12:10:00Z',callAiImpl});
+  assert.equal(calls,1);
+});
+
+test('local relevance rejection settles stale capacity entries without a paid call',async()=>{
+  const low={...storedStory(),published:false,title:'Neues Spiel für die Konsole',analysis:undefined};
+  delete low.pending_update;
+  low.pending_reason='AI_BUDGET_OR_BATCH_LIMIT';
+  low.sources=[{...item,title:low.title,summary:'Ein neues Videospiel erscheint für die Konsole.'}];
+  let captured,calls=0;
+  const report=await runWirkungsticker(options(low,{callAiImpl:async()=>{calls++;throw Error('must not call')},captureState:value=>captured=value}));
+  assert.equal(calls,0);assert.equal(report.local_queue_completed,1);assert.equal(report.queue.after,0);
+  assert.equal(captured.storyStore.stories[0].listed,false);
+  assert.deepEqual(captured.storyStore.stories[0].rejection.quality_errors,['LOCAL_RELEVANCE_BELOW_THRESHOLD']);
 });

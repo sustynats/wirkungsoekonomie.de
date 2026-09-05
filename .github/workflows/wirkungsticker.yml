@@ -91,7 +91,9 @@ jobs:
           WT_CHROME_NO_SANDBOX: "true"
           # Eigene authentifizierte Nachrichten-Lane; öffentliche KI-Limits unverändert.
           WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "12"
-          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "48"
+          # Reserve eight of the 48 Oracle calls for the independent
+          # editorial/media gates and for a safe handover between runs.
+          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "40"
           # Technische Wiederholungen bleiben in der dauerhaften Stunden-Queue. So
           # verbraucht ein 503 nicht mehrere der vier reservierten Worker-Slots.
           WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"
@@ -168,6 +170,7 @@ jobs:
           npm run build:search
           npm run taxonomy:build
           npm run news:source-integrity:audit -- --strict
+          npm run news:source-portfolio:audit -- --strict
           npm run news:validate
       - name: Commit one atomic update
         id: commit
@@ -178,7 +181,7 @@ jobs:
           set -euo pipefail
           git config user.name "wirkungsticker-bot"
           git config user.email "wirkungsticker-bot@users.noreply.github.com"
-          git add -- data/news news wirkungsticker reports/wirkungsticker-latest-run.json reports/wirkungsticker-source-integrity.json reports/wirkungsticker-editorial-analyses.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/polls/public-catalog.json umfragen admin/umfragen
+          git add -- data/news data/wirkungsticker/source-audit-2026-09-05.json news wirkungsticker reports/wirkungsticker-latest-run.json reports/wirkungsticker-source-integrity.json reports/wirkungsticker-source-portfolio.json reports/wirkungsticker-editorial-analyses.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/polls/public-catalog.json umfragen admin/umfragen
           if git diff --cached --quiet; then
             echo "Keine neue oder geänderte Wirkungsnachricht."
             echo "changed=false" >> "$GITHUB_OUTPUT"

@@ -82,14 +82,15 @@ export const VISUALS_SCHEMA = {
     claim_id: "claim_id aus dem Claim-Ledger",
   }],
   affected_groups: ["haushalte|unternehmen|beschaeftigte|kommunen|staat|patientinnen|verbraucherinnen|kinder_jugend|aeltere|investoren|natur|europa"],
-  timeline: [{ date: "YYYY, YYYY-MM oder YYYY-MM-DD, nur wenn die Quelle den Termin nennt", label: "höchstens 80 Zeichen" }],
+  timeline: [{ date: "YYYY, YYYY-MM oder YYYY-MM-DD, nur wenn der zugehörige Claim den Termin nennt", label: "Ereignisbezeichnung mit Worten aus dem Claim, höchstens 80 Zeichen", claim_id: "claim_id aus dem Claim-Ledger" }],
   tendency: { human: "chance|risiko|gemischt|offen", planet: "chance|risiko|gemischt|offen", democracy: "chance|risiko|gemischt|offen" },
-  chart: { type: "bar", title: "höchstens 80 Zeichen", unit: "Einheit", points: [{ label: "Kategorie oder Zeitpunkt", value: 0 }] },
+  chart: { type: "bar", title: "höchstens 80 Zeichen", measure: "dieselbe konkret benannte Messgröße für alle Punkte", unit: "konkrete gemeinsame Einheit samt Größenordnung", points: [{ label: "Kategorie oder Zeitpunkt wörtlich im Beleg", value: 0, claim_id: "claim_id aus dem Claim-Ledger", evidence_quote: "kurzer wörtlicher Belegausschnitt mit Messgröße, Kategorie, Zahl und Einheit, höchstens 240 Zeichen" }] },
 };
 
 export const VISUALS_PROMPT_RULES = [
   "Ergänze optional ein Objekt visuals für visuelle Anker. Jedes Element ist freiwillig: Liefere es nur, wenn die gelieferten Claims oder Quelltexte es unmittelbar tragen; sonst lasse den Schlüssel weg oder setze null. Visuals sind Darstellung, kein zusätzlicher Wirkungsbeleg.",
   "key_figures (höchstens 3): nur Zahlen, die wörtlich im Claim oder Quelltext stehen, Schreibweise unverändert (Zahlwort bleibt Zahlwort); keine Umrechnung, Summe, Schätzung oder Ableitung. chart (nur type bar, 3 bis 8 Punkte): nur wenn die Quelle mindestens drei vergleichbare Zahlen derselben Einheit nennt. timeline (höchstens 4): nur Termine oder Fristen, die die Quelle nennt. affected_groups (höchstens 4) ausschließlich aus der festen Liste. tendency je Dimension als analytische Tendenz: chance = Wirkungspotenzial überwiegt, risiko = Wirkungsrisiko überwiegt, gemischt, offen; ex ante nie als eingetretene Wirkung.",
+  "Für jeden Diagrammpunkt sind claim_id und evidence_quote Pflicht. Der kurze unveränderte Ausschnitt muss im zugehörigen Claim oder dessen konkretem Quellenauszug stehen und genau diesen Punkt tragen: dieselbe Messgröße (measure), Kategorie (label) sowie Zahl unmittelbar mit Einheit. Keine Währungen, Mengen oder Größenordnungen vermischen; keine Jahreszahl als Messwert. Generische Einheiten wie 'Einheit' reichen nicht. Wenn dieser Nachweis fehlt, chart weglassen. Keine zusätzlichen Quellenaufrufe nur für ein Diagramm.",
 ];
 
 function escapeHtml(value = "") {
@@ -128,6 +129,79 @@ export function storySourceText(story = {}) {
   ].join(" ");
 }
 
+function normalizedEvidence(value) {
+  return String(value || "").normalize("NFC").toLowerCase().replace(/\s+/g, " ").trim();
+}
+
+function comparableUnits(value) {
+  return normalizedEvidence(value)
+    .replace(/\b(?:mrd\.?|milliarden?)\b\.?/g, "milliarden")
+    .replace(/\b(?:mio\.?|millionen?)\b\.?/g, "millionen")
+    .replace(/\b(?:eur|euro)\b|€/g, "euro")
+    .replace(/\bprozent\b|%/g, "prozent");
+}
+
+function escapedPattern(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function boundVisualClaims(story, claimId) {
+  const sourceIds = new Set((story.sources || []).map(source => source.source_id));
+  const sourceUrls = new Set((story.sources || []).map(source => source.url));
+  return (story.claims || []).filter(claim => (!claimId || claim.claim_id === claimId)
+    && claim.claim_id && (sourceIds.has(claim.source_id) || (claim.evidence || []).some(e => sourceUrls.has(e.url) || sourceIds.has(e.source_id))));
+}
+
+function amountInClaim(claim, value, unit) {
+  const text = comparableUnits(claim.claim);
+  const amount = escapedPattern(comparableUnits(value));
+  const normalizedUnit = comparableUnits(unit);
+  const suffix = normalizedUnit ? `\\s*${escapedPattern(normalizedUnit)}` : "";
+  return new RegExp(`(?<![\\p{L}\\p{N}.,+−-])${amount}${suffix}(?![\\p{L}\\p{N}/²³])`, "u").test(text);
+}
+
+function dateInClaim(claim, date, label) {
+  const text = normalizedEvidence(claim.claim);
+  const [year, month, day] = date.split("-");
+  if (day && new Date(`${date}T12:00:00Z`).toISOString().slice(0, 10) !== date) return false;
+  if (month && (!Number(month) || Number(month) > 12)) return false;
+  const datePatterns = [date];
+  if (month) {
+    datePatterns.push(day ? `${day}.${month}.${year}` : `${month}.${year}`);
+    datePatterns.push(`${day ? `${Number(day)}. ` : ""}${MONTHS[Number(month) - 1]} ${year}`);
+  }
+  if (!datePatterns.some(pattern => text.includes(pattern))) return false;
+  const words = normalizedEvidence(label).match(/[\p{L}]{4,}/gu) || [];
+  return words.length > 0 && words.some(word => text.includes(word));
+}
+
+// Fail closed for the optional chart, not for the article. A number found elsewhere
+// in the story is insufficient: every point needs its own category/measure/unit proof.
+function chartPointProof(raw, chart, story, allLabels) {
+  const claim = (story.claims || []).find((item) => item.claim_id === raw?.claim_id);
+  const quote = cleanText(raw?.evidence_quote, 240);
+  const label = cleanText(raw?.label, 40);
+  const value = raw?.value;
+  if (!claim || !quote || !label || typeof value !== "number" || !Number.isFinite(value)) return null;
+  const sourceIds = new Set((story.sources || []).map((item) => item.source_id));
+  const sourceUrls = new Set((story.sources || []).map((item) => item.url));
+  const evidence = (claim.evidence || []).filter((item) => sourceUrls.has(item.url) || sourceIds.has(item.source_id));
+  if (!sourceIds.has(claim.source_id) && !evidence.length) return null;
+  const texts = [claim.claim, ...evidence.map((item) => item.excerpt)].map(normalizedEvidence);
+  const exactQuote = normalizedEvidence(quote);
+  if (!texts.some((text) => text.includes(exactQuote))) return null;
+  const hasPhrase = (phrase) => new RegExp(`(?<![\\p{L}\\p{N}])${escapedPattern(normalizedEvidence(phrase))}(?![\\p{L}\\p{N}])`, "u").test(exactQuote);
+  if (!hasPhrase(label) || !hasPhrase(chart.measure)) return null;
+  // A whole paragraph containing all categories cannot establish which value belongs
+  // to which one. Request separate, unambiguous excerpts instead of guessing.
+  if (allLabels.some((other) => other !== label && hasPhrase(other))) return null;
+  const amount = escapedPattern(String(value)).replace(/\\\./g, "[.,]");
+  const unit = escapedPattern(comparableUnits(chart.unit));
+  const amountPattern = new RegExp(`(?<![\\d.,+−-])${amount}\\s*${unit}(?![\\p{L}\\p{N}/²³])`, "u");
+  if (!amountPattern.test(comparableUnits(quote))) return null;
+  return { label, value, claim_id: claim.claim_id, evidence_quote: quote };
+}
+
 export function sanitizeVisuals(input, story = {}) {
   const dropped = [];
   if (input === undefined || input === null) return { visuals: null, dropped };
@@ -147,13 +221,14 @@ export function sanitizeVisuals(input, story = {}) {
     const unit = cleanText(raw?.unit, VISUALS_LIMITS.unit);
     const context = cleanText(raw?.context, VISUALS_LIMITS.context);
     if (!label || !value) { dropped.push(`KEY_FIGURE_INCOMPLETE:${index}`); continue; }
-    const valueTokens = numberTokens(value);
-    const supported = valueTokens.size
-      ? [...valueTokens].every((token) => allowed.has(token))
-      : lowerSource.includes(value.toLowerCase());
+    // Claim IDs may change when a newsroom check versions the ledger. Rebind a
+    // stale reference only if exactly one current, source-bound claim proves it.
+    const currentClaimId = (story.claims || []).some(claim => claim.claim_id === raw?.claim_id) ? raw.claim_id : undefined;
+    const matchingClaims = boundVisualClaims(story, currentClaimId).filter(claim => amountInClaim(claim, value, unit));
+    const supported = matchingClaims.length === 1;
     if (!supported || !numbersSupported(`${label} ${context} ${unit}`, allowed)) { dropped.push(`KEY_FIGURE_UNSUPPORTED:${value}`); continue; }
     const figure = { label, value, unit, context };
-    if (raw?.claim_id && claimIds.has(raw.claim_id)) figure.claim_id = raw.claim_id;
+    figure.claim_id = matchingClaims[0].claim_id;
     figures.push(figure);
   }
   if (figures.length) output.key_figures = figures;
@@ -174,12 +249,10 @@ export function sanitizeVisuals(input, story = {}) {
     const label = cleanText(raw?.label, 80);
     const match = date.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?$/);
     if (!match || !label) { dropped.push(`TIMELINE_INVALID:${index}`); continue; }
-    const [, year, month, day] = match;
-    const monthName = month ? MONTHS[Number(month) - 1] : null;
-    const monthSupported = !month || (monthName && lowerSource.includes(monthName)) || lowerSource.includes(`${month}.${year}`) || lowerSource.includes(`${year}-${month}`);
-    const daySupported = !day || allowed.has(String(Number(day))) || allowed.has(day) || lowerSource.includes(`${day}.${month}.${year}`);
-    if (!allowed.has(year) || !monthSupported || !daySupported || !numbersSupported(label, allowed)) { dropped.push(`TIMELINE_UNSUPPORTED:${date}`); continue; }
-    timeline.push({ date, label });
+    let matchingClaims = [];
+    try { matchingClaims = boundVisualClaims(story, raw?.claim_id).filter(claim => dateInClaim(claim, date, label)); } catch { /* invalid calendar date */ }
+    if (matchingClaims.length !== 1 || !numbersSupported(label, allowed)) { dropped.push(`TIMELINE_UNSUPPORTED:${date}`); continue; }
+    timeline.push({ date, label, claim_id: matchingClaims[0].claim_id });
   }
   if (timeline.length) output.timeline = timeline.sort((a, b) => a.date.localeCompare(b.date));
 
@@ -197,20 +270,22 @@ export function sanitizeVisuals(input, story = {}) {
   if (chart && typeof chart === "object" && !Array.isArray(chart)) {
     const title = cleanText(chart.title, VISUALS_LIMITS.title);
     const unit = cleanText(chart.unit, VISUALS_LIMITS.unit);
+    const measure = cleanText(chart.measure, VISUALS_LIMITS.label);
     const points = [];
-    for (const raw of Array.isArray(chart.points) ? chart.points : []) {
+    const rawPoints = Array.isArray(chart.points) ? chart.points : [];
+    const labels = rawPoints.map((point) => cleanText(point?.label, 40));
+    for (const raw of rawPoints) {
       if (points.length >= VISUALS_LIMITS.chartPoints) break;
-      const label = cleanText(raw?.label, 40);
-      const value = typeof raw?.value === "number" ? raw.value : Number(String(raw?.value ?? "").replace(",", "."));
-      if (!label || !Number.isFinite(value)) continue;
-      const token = String(value).replace(".", ",");
-      if (!allowed.has(token) || !numbersSupported(label, allowed)) { dropped.push(`CHART_POINT_UNSUPPORTED:${token}`); continue; }
-      points.push({ label, value });
+      const point = chartPointProof(raw, { measure, unit }, story, labels);
+      if (!point) { dropped.push(`CHART_POINT_UNSUPPORTED:${raw?.value}`); continue; }
+      points.push(point);
     }
-    if (String(chart.type || "bar") !== "bar" || !title || points.length < VISUALS_LIMITS.chartMinPoints || !numbersSupported(`${title} ${unit}`, allowed)) {
+    if (String(chart.type || "bar") !== "bar" || !title || !measure || !unit || /^(?:einheit(?:en)?|wert(?:e)?|anzahl|index|punkte?)$/i.test(unit)
+      || points.length < VISUALS_LIMITS.chartMinPoints || points.length !== rawPoints.length
+      || new Set(labels.map(normalizedEvidence)).size !== labels.length || !numbersSupported(`${title} ${unit}`, allowed)) {
       dropped.push("CHART_INVALID");
     } else {
-      output.chart = { type: "bar", title, unit, points };
+      output.chart = { type: "bar", title, measure, unit, points };
     }
   }
 
@@ -344,7 +419,7 @@ export function renderDimensionMeters(analysis = {}, { compact = false, tendency
     const label = value.relevance || "offen";
     return `<div class="wt-dim wt-dim--${key}" data-level="${level}">
       <div class="wt-dim__head">${renderIcon(meta.icon)}<strong>${meta.label}</strong><span class="wt-dim__level">${escapeHtml(label)}</span>${tendency ? renderTendency(tendency[key]) : ""}</div>
-      ${meter(level, `${meta.label}: ${label}`, { className: "wt-dim__track" })}
+      ${meter(level, `Relevanz für ${meta.label}: ${label}`, { className: "wt-dim__track" })}
       <p class="wt-dim__note${compact ? " sr-only" : ""}">${escapeHtml(value.rationale || "")}</p>
     </div>`;
   }).join("");
@@ -394,10 +469,12 @@ export function renderAtAGlance(story, { formatDate = (value) => String(value ||
 export function renderKeyFigures(visuals, story = {}) {
   const figures = visuals?.key_figures || [];
   if (!figures.length) return "";
-  const publisherById = new Map((story.claims || []).map((claim) => [claim.claim_id, (story.sources || []).find((source) => source.source_id === claim.source_id)?.publisher]));
-  const fallbackPublisher = (story.sources || []).find((source) => source.primary_source)?.publisher || (story.sources || [])[0]?.publisher || "";
+  const publisherById = new Map((story.claims || []).map((claim) => [claim.claim_id,
+    [...new Set((story.sources || []).filter(source => source.source_id === claim.source_id
+      || (claim.evidence || []).some(evidence => evidence.url === source.url)).map(source => source.publisher))].join(", ")
+  ]));
   const tiles = figures.map((figure) => {
-    const publisher = publisherById.get(figure.claim_id) || fallbackPublisher;
+    const publisher = publisherById.get(figure.claim_id);
     return `<div class="wt-figure"><span class="wt-figure__value">${escapeHtml(figure.value)}${figure.unit ? ` <small>${escapeHtml(figure.unit)}</small>` : ""}</span><span class="wt-figure__label">${escapeHtml(figure.label)}</span>${figure.context ? `<span class="wt-figure__context">${escapeHtml(figure.context)}</span>` : ""}${publisher ? `<span class="wt-figure__source">${renderIcon("quelle")}laut ${escapeHtml(publisher)}</span>` : ""}</div>`;
   }).join("");
   return `<div class="wt-figures" role="group" aria-label="Zahlen aus der Quelle">${tiles}</div>`;

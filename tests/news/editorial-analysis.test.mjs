@@ -22,6 +22,7 @@ function highStory(id = "critical") {
     source_summary: "Eine verbindliche Entscheidung verändert Schutzstandards für kritische Infrastruktur. Betroffen sind Versorgungssicherheit, langfristige Investitionen und staatliche Handlungsfähigkeit.\n\nDie Umsetzung, Folgekosten und beobachtbaren Ergebnisse bleiben zu prüfen.",
     topic: ["Energie", "Demokratie"], published: true, listed: true, current_version: 1, content_hash: `${id}-hash`, first_seen: "2026-09-05T08:00:00Z", last_updated: "2026-09-05T09:00:00Z",
     sources,
+    source_integrity: { status: "verified" },
     claims: sources.map((item, index) => ({ claim: `Quellengebundener Fakt ${index + 1} zu Schutzstandard und Umsetzung.`, source_id: item.source_id, evidence: [{ source_id: item.source_id, url: item.url, excerpt: item.summary.slice(0, 80) }] })),
     analysis: {
       importance: "sehr hoch", human: { relevance: "hoch" }, planet: { relevance: "hoch" }, democracy: { relevance: "hoch" },
@@ -34,6 +35,13 @@ function highStory(id = "critical") {
       uncertainties: ["Umsetzung und Langzeitdaten sind offen."], watch_next: ["Umsetzungsdaten und unabhängige Evaluation."], reference_frameworks: ["Agenda 2030/SDG 9"],
     },
   };
+}
+
+function registryFor(stories) {
+  return { sources: stories.flatMap(story => story.sources.map(source => ({
+    ...source, name: source.publisher, enabled: true, source_type: "media_rss", publisher_kind: "journalism",
+    feed_url: source.url, canonical_domain: new URL(source.url).hostname,
+  }))) };
 }
 
 function validEditorial(story) {
@@ -77,6 +85,34 @@ test("eine einzelne systemrelevante Meldung kann ohne Lageakte Kandidat sein", (
   assert.equal(assessment.candidate, true);
   assert.equal(assessment.evidence_gate.passed, true);
   assert.ok(assessment.analysis_gain >= 46);
+});
+
+test("Medienrelevanz berücksichtigt englische und frühere deutsche Stufen identisch", () => {
+  for (const [english, german, expected] of [["low", "gering", 2], ["medium", "mittel", 4], ["high", "hoch", 6], ["very_high", "sehr hoch", 8], ["open", "offen", 0]]) {
+    const item = highStory();
+    item.analysis.media_impact = { relevant: true, relevance_level: english };
+    const current = editorialAnalysisAssessment(item);
+    assert.equal(current.factors.discourse_relevance, expected, english);
+    item.analysis.media_impact.relevance_level = german;
+    assert.deepEqual(editorialAnalysisAssessment(item).factors, current.factors, german);
+  }
+});
+
+test("irrelevante, unbekannte oder fehlende Medienbewertung erfindet keinen Diskurswert", () => {
+  for (const media of [undefined, { relevant: false, relevance_level: "very_high" }, { relevant: true, relevance_level: "unknown" }, { relevance_level: "high" }]) {
+    const item = highStory();
+    item.analysis.media_impact = media;
+    assert.equal(editorialAnalysisAssessment(item).factors.discourse_relevance, 0);
+  }
+});
+
+test("hohe Medienrelevanz umgeht weder Analysegewinn noch Evidenzgate", () => {
+  const item = highStory();
+  item.sources = [item.sources[1]];
+  item.analysis.media_impact = { relevant: true, relevance_level: "very_high" };
+  assert.equal(editorialAnalysisAssessment(item).status, "research_pending");
+  item.analysis = { importance: "gering", media_impact: item.analysis.media_impact };
+  assert.equal(editorialAnalysisAssessment(item).candidate, false);
 });
 
 test("hohes Schadenspotenzial bei zu dünner Quelle bleibt research_pending", () => {
@@ -138,6 +174,29 @@ test("Fakten ohne Quelle, technische Interna und behauptete Medienwirkung werden
   assert.ok(errors.includes("EDITORIAL_INTERNAL_LANGUAGE"));
 });
 
+test("fehlgeschlagene Deep Dives behalten Korrekturhinweise und werden nach Pause automatisch geprüft", async t => {
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),"woek-editorial-retry-"));
+  t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+  fs.mkdirSync(path.join(root,"data/news"),{recursive:true});
+  const stories=[highStory("retry")];
+  fs.writeFileSync(path.join(root,"data/news/stories.json"),JSON.stringify({stories}));
+  fs.writeFileSync(path.join(root,"data/news/state.json"),JSON.stringify({budget_fx:{rate_usd_per_eur:1.1,rate_date:"2026-09-05"}}));
+  let calls=0,valid=false,lastPrompt='';
+  const callAiImpl=async ([story],options)=>{calls++;lastPrompt=options.prompt;const output=validEditorial(story);if(!valid)output.title='Zu kurz';return {analyses:[{story_id:story.story_id,editorial_analysis:output}],model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50}}};
+  const options={root,registry:registryFor(stories),execute:true,callAiImpl,build:()=>{}};
+  const first=await runEditorialAnalyses({...options,now:'2026-09-05T10:00:00Z'});
+  assert.equal(first.failed.length,1);assert.equal(first.editorial_analyses_published,0);assert.equal(calls,2);
+  const stored=JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json')));
+  assert.ok(stored.retry_state[stories[0].story_id].quality_errors.includes('EDITORIAL_TITLE_LENGTH'));
+  const early=await runEditorialAnalyses({...options,now:'2026-09-05T10:05:00Z'});
+  assert.equal(early.retry_deferred,1);assert.equal(calls,2);
+  valid=true;
+  const retried=await runEditorialAnalyses({...options,now:'2026-09-05T10:16:00Z'});
+  assert.equal(retried.editorial_analyses_published,1);assert.equal(calls,3);
+  assert.ok(lastPrompt.includes('EDITORIAL_TITLE_LENGTH'));
+  assert.equal(Object.keys(JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json'))).retry_state).length,0);
+});
+
 test("Backfill publiziert jeden relevanten Kandidaten bis zur technischen Batchgrenze und ist idempotent", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "woek-editorial-"));
   fs.mkdirSync(path.join(root, "data/news"), { recursive: true });
@@ -151,10 +210,10 @@ test("Backfill publiziert jeden relevanten Kandidaten bis zur technischen Batchg
     calls += 1;
     return { analyses: [{ story_id: story.story_id, editorial_analysis: validEditorial(story) }], provider: "test", model: "gpt-5.4-mini", prompt_chars: 5000, answer_chars: 10000, reported_usage: { input_tokens: 1300, output_tokens: 2200 } };
   };
-  const first = await runEditorialAnalyses({ root, execute: true, bootstrap: true, limit: 2, now: "2026-09-05T10:00:00Z", callAiImpl, build: () => {} });
+  const first = await runEditorialAnalyses({ root, registry: registryFor(stories), execute: true, bootstrap: true, limit: 2, now: "2026-09-05T10:00:00Z", callAiImpl, build: () => {} });
   assert.equal(first.editorial_analyses_published, 2, JSON.stringify(first));
   assert.equal(calls, 2);
-  const second = await runEditorialAnalyses({ root, execute: true, limit: 2, now: "2026-09-05T10:05:00Z", callAiImpl, build: () => {} });
+  const second = await runEditorialAnalyses({ root, registry: registryFor(stories), execute: true, limit: 2, now: "2026-09-05T10:05:00Z", callAiImpl, build: () => {} });
   assert.equal(second.ready_for_research, 0);
   assert.equal(calls, 2);
   const stored = JSON.parse(fs.readFileSync(path.join(root, "data/news/editorial-analyses.json")));
@@ -205,8 +264,14 @@ test("Generator bindet Portrait, eigenständige Route, Rücklink, RSS und gemisc
   assert.match(html, /href="\.\.\/\.\.\/#methodik"/);
   assert.match(html, /id="analysis-visuals-title"/);
   assert.match(html, /Die Wirkungsstruktur auf einen Blick/);
-  assert.match(html, /aria-label="Mensch: hoch"/);
+  assert.match(html, /aria-label="Relevanz für Mensch: hoch"/);
+  assert.match(html, /Relevanz für Mensch, Planet und Demokratie/);
+  assert.match(html, /href="\.\.\/\.\.\/\.\.\/so-wirkt-wirkungsoekonomie\/">Wirkungsökonomie einfach erklärt/);
+  assert.match(html, /Methodik hinter dieser Analyse/);
+  assert.match(html, /So arbeitet der Wirkungsticker/);
+  assert.doesNotMatch(html, /WÖK-Analyse/);
+  assert.match(html, /"articleSection":"WÖk-Analyse"/);
   assert.match(html, /Vom Ereignis zur systemischen Folge/);
   assert.match(html, /Erste Ordnung – unmittelbar/);
-  assert.match(storyPage(story, { editorialAnalysis: analysis }), /WÖK-Analyse zu diesem Thema/);
+  assert.match(storyPage(story, { editorialAnalysis: analysis }), /WÖk-Analyse zu diesem Thema/);
 });

@@ -10,6 +10,7 @@ export const SOURCE_INTERVALS = Object.freeze({ realtime: 5, high_frequency: 15,
 
 export function sourceDue(source, status = {}, now = new Date().toISOString()) {
   if (!sourceAccess(source).allowed) return false;
+  if (status.governance_hold_until && ms(status.governance_hold_until) > ms(now)) return false;
   const interval = Math.max(5, Number(source.poll_minutes || SOURCE_INTERVALS[source.frequency_class] || 15));
   const errorBackoff = Math.min(360, interval * 2 ** Math.min(5, Number(status.consecutive_failures || 0)));
   return ms(now) - ms(status.last_attempt) >= Math.max(interval, status.last_error ? errorBackoff : 0) * 60000;
@@ -17,7 +18,11 @@ export function sourceDue(source, status = {}, now = new Date().toISOString()) {
 
 export function annotateSourceItem(item, source, now) {
   const evidenceText = `${item.title} ${item.summary}`;
-  const agency = evidenceText.match(/\b(reuters|dpa|afp)\b|\bAssociated Press\b|(?:^|[(/ ])AP(?:[)/]|\s*[-–])/i)?.[0]?.trim().replace(/[()/–-]/g, "").trim().toLowerCase();
+  const agency = /\b(?:dpa|Deutsche[nrms]? Presse-Agentur)\b/i.test(evidenceText) ? "dpa"
+    : /\b(?:AFP|Agence France-Presse)\b/i.test(evidenceText) ? "afp"
+      : /\bReuters\b/i.test(evidenceText) ? "reuters"
+        : /\bAssociated Press\b|(?:^|[(/ ])AP(?:[)/]|\s*[-–])/i.test(evidenceText) ? "ap"
+          : null;
   const publisherId = source.publisher_id || source.source_id;
   return {
     ...item,
@@ -31,8 +36,10 @@ export function annotateSourceItem(item, source, now) {
     requires_corroboration: Boolean(source.requires_corroboration),
     source_published_at: item.published_at,
     ingested_at: now,
+    agency_origin: agency || "unknown",
+    agency_origin_confidence: agency ? "high" : "unknown",
     provenance: {
-      origin: item.research_metadata?.doi ? `study:${item.research_metadata.doi.toLowerCase()}` : agency ? `agency:${agency === "associated press" ? "ap" : agency}` : `publisher:${publisherId}`,
+      origin: item.research_metadata?.doi ? `study:${item.research_metadata.doi.toLowerCase()}` : agency ? `agency:${agency}` : `publisher:${publisherId}`,
       basis: agency ? "agency_attribution_in_available_text" : "publisher_only_origin_unverified",
       independence_established: false,
     },
@@ -173,10 +180,10 @@ export function sourceHealth(source, state, now) {
   const staleContent = Boolean(status.latest_item) && ms(now) - ms(status.latest_item) > latestAgeLimit * 3600000;
   return {
     source_id: source.source_id, publisher_id: source.publisher_id || source.source_id,
-    status: !access.allowed ? source.access?.status || "disabled" : status.last_error ? "disturbed" : stale ? "stale" : staleContent ? "stale_content" : status.last_success ? "active" : "configured_not_yet_verified",
+    status: !access.allowed ? source.access?.status || "disabled" : status.governance_hold_until && ms(status.governance_hold_until) > ms(now) ? "governance_hold" : status.last_error ? "disturbed" : stale ? "stale" : staleContent ? "stale_content" : status.last_success ? "active" : "configured_not_yet_verified",
     content_warning: staleContent ? "LATEST_ITEM_OLDER_THAN_EXPECTED" : status.last_success && !status.latest_item ? "NO_RELIABLE_PUBLICATION_DATE" : null,
     last_success: status.last_success || null, latest_item: status.latest_item || null,
-    last_error: status.last_error || null, interval_minutes: interval,
+    last_error: status.last_error || null, governance_hold_until: status.governance_hold_until || null, interval_minutes: interval,
     error_rate: status.attempts ? Number(((status.failures || 0) / status.attempts).toFixed(3)) : null,
   };
 }
