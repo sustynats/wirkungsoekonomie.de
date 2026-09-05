@@ -11,9 +11,14 @@
     },
     "news-input": {
       "firstSeen": "2026-09-05T10:36:23.209Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "437c77ab343aa43596881958",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Eingabeprüfung: 1 Akte(n) überschreiten das Eingabelimit. Diese Akten bleiben zur Prüfung erhalten; andere Nachrichten werden weiterverarbeitet. Kein Nachweis eines Anbieterausfalls.\nSeit: 2026-09-05T10:36:23.209Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-05"
 }
