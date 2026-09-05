@@ -1,14 +1,33 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-05T23:04:56.705Z",
+  "generated_at": "2026-09-05T23:27:44.737Z",
   "gate_version": "1.0",
   "stories_checked": 89,
-  "sources_checked": 176,
+  "sources_checked": 177,
   "passed": 89,
   "held": 0,
   "warnings": 5,
   "findings": [],
   "warning_findings": [
+    {
+      "story_id": "wt-7ebecf5b3f91d490",
+      "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+      "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
+      "warnings": [
+        {
+          "source_id": "landtag-sachsen-anhalt-context",
+          "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+          "code": "SOURCE_REFERENCE_UNDATED",
+          "detail": "Amtlicher Kontext ohne ausgewiesenes Veröffentlichungsdatum; Abrufdatum separat dokumentiert, kein Aktualitätssignal."
+        },
+        {
+          "source_id": "sachsen-anhalt-election-context",
+          "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+          "code": "SOURCE_REFERENCE_UNDATED",
+          "detail": "Amtlicher Kontext ohne ausgewiesenes Veröffentlichungsdatum; Abrufdatum separat dokumentiert, kein Aktualitätssignal."
+        }
+      ]
+    },
     {
       "story_id": "wt-4fb94d2cebfca746",
       "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
@@ -45,25 +64,6 @@
           "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
           "code": "SOURCE_MUTABLE_URL_REUSED",
           "detail": "Dieselbe veränderliche URL liegt in 1 fachlich abweichenden Akte(n); die aktuelle Inhaltsübereinstimmung ist beim Abruf erneut zu prüfen."
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7ebecf5b3f91d490",
-      "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-      "title": "Sachsen-Anhalt-Wahl: Siegmund laut n-tv auch bei knapper Mehrheit regierungsbereit",
-      "warnings": [
-        {
-          "source_id": "landtag-sachsen-anhalt-context",
-          "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
-          "code": "SOURCE_REFERENCE_UNDATED",
-          "detail": "Amtlicher Kontext ohne ausgewiesenes Veröffentlichungsdatum; Abrufdatum separat dokumentiert, kein Aktualitätssignal."
-        },
-        {
-          "source_id": "sachsen-anhalt-election-context",
-          "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
-          "code": "SOURCE_REFERENCE_UNDATED",
-          "detail": "Amtlicher Kontext ohne ausgewiesenes Veröffentlichungsdatum; Abrufdatum separat dokumentiert, kein Aktualitätssignal."
         }
       ]
     }
