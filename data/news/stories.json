@@ -1,7 +1,544 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T18:06:31.189Z",
+  "updated_at": "2026-09-05T18:21:18.289Z",
   "stories": [
+    {
+      "story_id": "wt-5f843f61cc5736d4",
+      "slug": "rohstoffpolitik-mit-dem-kolonialen-erbe-am-runden-tisch-5736d4",
+      "title": "Rohstoffpolitik: Mit dem kolonialen Erbe am runden Tisch",
+      "first_seen": "2026-09-05T18:18:00.000Z",
+      "last_updated": "2026-09-05T18:18:00.000Z",
+      "topic": [
+        "Klima",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Rohstoffpolitik/!6209804",
+          "title": "Rohstoffpolitik: Mit dem kolonialen Erbe am runden Tisch",
+          "summary": "Unsere Autorin war zu einem Gespräch über Rohstoffpolitik geladen, wo Einigkeit herrschte: Menschenrechte sind deplatziert, wenn es um Ressourcen geht. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:18:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "955fbbe93aada884382834559ee359330518b29a676aa439877c353aed768fcf",
+          "source_item_id": "63cde9e27ba0a7cb2c49ea9487d92fd7f641ed9bd2ec4949d5413ba097351a53",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T18:18:00.000Z",
+          "ingested_at": "2026-09-05T18:21:18.289Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5f843f61cc5736d4-claim-01",
+          "story_id": "wt-5f843f61cc5736d4",
+          "claim": "Rohstoffpolitik: Mit dem kolonialen Erbe am runden Tisch: Unsere Autorin war zu einem Gespräch über Rohstoffpolitik geladen, wo Einigkeit herrschte: Menschenrechte sind deplatziert, wenn es um Ressourcen geht. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T18:21:18.289Z"
+        }
+      ],
+      "content_hash": "a0b26cd0b085a6117f05e99e800f197c43ca55388ad77d81dcf9f3d991a9b98f",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T18:21:18.289Z",
+      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
+      "event_detected_at": "2026-09-05T18:21:18.289Z",
+      "event_id": "event-673c318dde135080d3f6",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima",
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.3048166666666665,
+        "detection_delay_minutes": 3.3048166666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T18:21:18.289Z",
+        "fingerprint": "6b627418f52a3be4b910bc7fe523eb3534d59ba3dee43283619d12490ee757f1",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T18:21:18.289Z",
+      "rejection": {
+        "at": "2026-09-05T18:21:18.289Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-ee07be9df8bc0aea",
+      "slug": "nach-hackerangriff-auf-berliner-verwaltung-senatskanzlei-richtet-zusatzliche-steuerungse-bc0aea",
+      "title": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein",
+      "first_seen": "2026-09-05T18:15:04.000Z",
+      "last_updated": "2026-09-05T18:15:04.000Z",
+      "topic": [
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/senatskanzlei-richtet-zusaetzliche-steuerungseinheit-ein-100.html",
+          "title": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein",
+          "summary": "Nach dem Hackerangriff auf die Berliner Senatsverwaltung ist eine neue Einheit eingerichtet worden, um die von den Tätern veröffentlichten Dateien auszuwerten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:15:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4c7f03431d7580ae551858aac1ddb23233a7f64645f5e0aa34fedd75b354950f",
+          "source_item_id": "dd82a34880818d128cd242532c378f513d3c45e69f8e4dbe01eb20e5d5a917c0",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T18:15:04.000Z",
+          "ingested_at": "2026-09-05T18:21:18.289Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ee07be9df8bc0aea-claim-01",
+          "story_id": "wt-ee07be9df8bc0aea",
+          "claim": "Nach Hackerangriff auf Berliner Verwaltung - Senatskanzlei richtet zusätzliche Steuerungseinheit ein: Nach dem Hackerangriff auf die Berliner Senatsverwaltung ist eine neue Einheit eingerichtet worden, um die von den Tätern veröffentlichten Dateien auszuwerten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T18:21:18.289Z"
+        }
+      ],
+      "content_hash": "17727dab95a97d815e5f5bb3112fb8651e68f377cd97629c5de3f2fe6e6dbfe5",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T18:21:18.289Z",
+      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
+      "event_detected_at": "2026-09-05T18:21:18.289Z",
+      "event_id": "event-7fdfd0a829751fedc836",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Finanzen"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.23815,
+        "detection_delay_minutes": 6.23815,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T18:21:18.289Z",
+        "fingerprint": "eebe47ebe70705578c0982c42d9aa4536ea07aa46b9681b4d9f6443e3241e349",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T18:21:18.289Z",
+      "rejection": {
+        "at": "2026-09-05T18:21:18.289Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-78b8df2827ab4527",
+      "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+      "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+      "first_seen": "2026-09-05T18:15:04.000Z",
+      "last_updated": "2026-09-05T18:15:04.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
+          "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+          "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:15:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ada3b25d5f1d2f6395fdb01c2694dc1c91caad6028096c51398f529688341224",
+          "source_item_id": "caa7462337f456f714632a73839e9496507b2c89174f6f0116345ae1d1cdd47d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T18:15:04.000Z",
+          "ingested_at": "2026-09-05T18:21:18.289Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-01",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen: Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T18:21:18.289Z"
+        }
+      ],
+      "content_hash": "614829d18e5a308309808b10587915b4c14f3db0d8f343088905392b89ef61cb",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T18:21:18.289Z",
+      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
+      "event_detected_at": "2026-09-05T18:21:18.289Z",
+      "event_id": "event-33c99d9ec5432a4822d9",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.23815,
+        "detection_delay_minutes": 6.23815,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T18:21:18.289Z",
+        "fingerprint": "f5fb1fed94e61dadcb0ff9139c6ca7e626ce19a09cb637adb7d28fa5d13a6ea5",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T18:21:18.289Z",
+      "rejection": {
+        "at": "2026-09-05T18:21:18.289Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-04f122c056ef6801",
+      "slug": "friedrich-merz-fest-entschlossen-uns-zu-verteidigen-bundeskanzler-sendet-botschaft-an-pu-ef6801",
+      "title": "Friedrich Merz: »Fest entschlossen, uns zu verteidigen« – Bundeskanzler sendet Botschaft an Putin",
+      "first_seen": "2026-09-05T18:15:00.000Z",
+      "last_updated": "2026-09-05T18:15:00.000Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-fest-entschlossen-uns-zu-verteidigen-bundeskanzler-sendet-botschaft-an-putin-a-19da0f9d-a99a-4e43-bec3-5f55b2d971cc",
+          "title": "Friedrich Merz: »Fest entschlossen, uns zu verteidigen« – Bundeskanzler sendet Botschaft an Putin",
+          "summary": "Bei einer Wahlkampfveranstaltung spricht der Bundeskanzler über ein neues Narrativ für Deutschland. Russland forderte er auf, die »hybride Kriegsführung« zu stoppen. Mit deutlichen Worten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:15:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d745f24ec901902db4a6a01d87f3a15680adbd5e6fc5e0c5e7c14a8045270fd4",
+          "source_item_id": "40778340c95d7621c36f763b13ab9befb3469f853baeef630eaec8add49b60da",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T18:15:00.000Z",
+          "ingested_at": "2026-09-05T18:21:18.289Z",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-04f122c056ef6801-claim-01",
+          "story_id": "wt-04f122c056ef6801",
+          "claim": "Friedrich Merz: »Fest entschlossen, uns zu verteidigen« – Bundeskanzler sendet Botschaft an Putin: Bei einer Wahlkampfveranstaltung spricht der Bundeskanzler über ein neues Narrativ für Deutschland. Russland forderte er auf, die »hybride Kriegsführung« zu stoppen. Mit deutlichen Worten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T18:21:18.289Z"
+        }
+      ],
+      "content_hash": "92f9acaededfeb2192383195d1129042b771d19bcb1f1b819da84c4c15061392",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T18:21:18.289Z",
+      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
+      "event_detected_at": "2026-09-05T18:21:18.289Z",
+      "event_id": "event-aac522d670b6fe13903c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.3048166666666665,
+        "detection_delay_minutes": 6.3048166666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T18:21:18.289Z",
+        "fingerprint": "141beda9899d4e7985c31ca6da801c76f9b589ea3b9033bdfea60a2bd4cbd20e",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T18:21:18.289Z",
+      "rejection": {
+        "at": "2026-09-05T18:21:18.289Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-ba90052729946ae3",
       "slug": "gesprache-uber-friedensabkommen-us-sondergesandte-in-moskau-eingetroffen-946ae3",
@@ -156,7 +693,7 @@
       "verification_started_at": "2026-09-05T17:52:36.037Z",
       "publish_ready_at": "2026-09-05T17:52:55.835Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": "2026-09-06T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -550,9 +1087,12 @@
         "generated_at": "2026-09-05T17:54:21.658Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-05T18:06:31.189Z",
-        "content_hash": "e8791ab952453e52d6703e23d1d2dc97b6e9286997a30dbaf166b61a949c4ed3",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "5e5b6fa64eb5fc1dc54479c41754b07ec3acb888afca7ac7a9918d710d190d31",
+        "checked_at": "2026-09-05T18:21:18.289Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T00:21:18.289Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -585,23 +1125,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
-          "fingerprint": "a983d6c3fbf2106a3a1d9f5de0dd20addd25782e704d208025279b7f0345a453",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-6a7145e6dc679f95",
@@ -2227,7 +2753,7 @@
       "verification_started_at": "2026-09-05T16:51:47.534Z",
       "publish_ready_at": "2026-09-05T16:52:06.230Z",
       "news_status": "updated",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": "2026-09-06T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -2643,9 +3169,12 @@
         "generated_at": "2026-09-05T16:52:57.128Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-05T18:06:31.189Z",
-        "content_hash": "77af0c70e4ee5ad9d95b6a4d9a8d82d53d7e87bd4ec3fc13a747723a529cbeb0",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "6eb1a62e2de3039a81e6031e64f4b1ec2285005b24255e23079b2d527b4e2ab1",
+        "checked_at": "2026-09-05T18:21:18.289Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T00:21:18.289Z",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
@@ -2654,7 +3183,7 @@
             "title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
             "summary": "Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus bitten um Mithilfe aus der Bevölkerung – gesucht wird nach einem 48-jährigem Tatverdächtigem. Der Mann soll Sabotageakte auf Umspannwerke in Brandenburg und NRW verübt haben.",
             "source_type": "media_rss",
-            "published_at": "2026-09-05T16:24:05.000Z",
+            "published_at": "2026-09-05T16:53:46.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -2670,31 +3199,17 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-05T16:24:05.000Z",
-            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "source_published_at": "2026-09-05T16:53:46.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
-          "fingerprint": "48283262f5d1a537152d48a72d316403c329a5e38c93e715b11044341ba0e9c6",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-eefb978e3155ecf0",
@@ -5076,7 +5591,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T13:53:54.000Z",
-            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
@@ -5094,7 +5609,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "9eb21fc79fb90c9c3d3a3626adc2eed4c4ac5b3faa5cc00767a54bf0e2fe63db",
           "issue_codes": [],
           "warning_codes": []
@@ -6585,7 +7100,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T07:38:13.000Z",
-            "ingested_at": "2026-09-05T14:13:45.805Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -6647,7 +7162,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T13:58:18.000Z",
-            "ingested_at": "2026-09-05T14:13:45.805Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -6665,7 +7180,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "149b7fa7ca0dcfd76e7a397555d5805e931a1468e471daf2147c018703d2105e",
           "issue_codes": [],
           "warning_codes": []
@@ -7228,7 +7743,7 @@
       "verification_started_at": "2026-09-05T13:57:21.759Z",
       "publish_ready_at": "2026-09-05T13:57:35.799Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": "2026-09-06T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -7560,9 +8075,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "01f470f61307ef9951e47512d1c30cee086b875ef826f0ac4dbdefcb8089d21f",
-        "checked_at": "2026-09-05T17:21:20.943Z",
+        "checked_at": "2026-09-05T18:21:18.289Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:21:20.943Z",
+        "expires_at": "2026-09-06T00:21:18.289Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -7587,7 +8102,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T12:47:33.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:france24",
               "basis": "publisher_only_origin_unverified",
@@ -7596,60 +8111,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T18:06:31.189Z",
-        "content_hash": "ed247b17885d4dc50ce3324e36db38c26201a390c487d081b5c87da32bf6896f",
-        "sources": [
-          {
-            "source_id": "france24-en",
-            "publisher": "France 24",
-            "url": "https://www.france24.com/en/video/20260905-two-nepal-rescues-revive-hopes-10-days-after-flood",
-            "title": "Two Nepal rescues revive hopes 10 days after flood",
-            "summary": "Rescuers in Nepal pulled alive on Saturday a Chinese national from a tunnel and a local woman from her partially submerged home, as emergency response teams searched with renewed vigour for thousands missing since catastrophic flooding 10 days ago. Our correspondent Shahzaib Wahlah tells us more.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T12:47:33.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "124dc7cf8534006b9dc86ea0d73ddce5e98b6a99b1f1cfe051b4fc54760da71f",
-            "source_item_id": "3c56356eb3d34e342c77f1703d4bb0bbb8762f1d9c9f30f5ec13f0c4a417e6eb",
-            "publisher_id": "france24",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T12:47:33.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
-            "provenance": {
-              "origin": "publisher:france24",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
-          "fingerprint": "2c4c71dbe59e88f96ef78d752df90d3b56ae3903f2470c677efa89f452c75f56",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-7679a123e1941a2f",
@@ -11547,7 +12009,468 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 2,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:21:18.289Z",
+        "content_hash": "fd87a3e938b001d8cf072e0ac98a8279fb63c41afccf26fb800b38f45606e5e5",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:02:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
+            "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:02:30.000Z",
+            "ingested_at": "2026-09-04T07:21:13.294Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+            "title": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt",
+            "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T05:30:02.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "4ecffbf01167f40b3db26f6f52aaf0917fc5e9a7e0fa159589f2f79d534ff88e",
+            "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T05:30:02.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
+            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T04:07:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
+            "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T04:07:55.000Z",
+            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
+            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T04:09:22.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
+            "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T04:09:22.000Z",
+            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
+            "title": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht",
+            "summary": "Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-01T14:38:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "a2e4d8b52b9340ac784ec86e650c17dec22acac070fb481dd92fed8839dea886",
+            "source_item_id": "deeaaefab10d8d6be35c1a4de80f7e4de81e1ca2e130057b3b623d0c4f6aa226",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-01T14:38:55.000Z",
+            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
+            "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
+            "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:06:15.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
+            "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:06:15.000Z",
+            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
+            "title": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt",
+            "summary": "Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T13:33:07.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c520b2fed8cbae3e888aab84b15115b053449540cb1ce16bbc5d6381f5c75a14",
+            "source_item_id": "aeb6e86149e7357797f2d2695a41a092f687a2b4fb1497c4f3f5e23d68e6dba2",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T13:33:07.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
+            "title": "Tausende auf der Straße: Zeichen setzen \"für unser Land\"",
+            "summary": "Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:56:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "87d3607ab26afbcab60aed3b95084bfa76b310ff98df25c7114d021cc3071a4d",
+            "source_item_id": "ae0f97241727cfd71284debe9442dad606085a254b21cae8bed1253441ee63b0",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:56:00.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
+            "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T19:34:28.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
+            "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T19:34:28.000Z",
+            "ingested_at": "2026-09-05T08:51:16.120Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
+            "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
+            "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magdeburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:54:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "fdf3059172229772727d508a76d7d49f5ab40351e811e9d93893b38a9225db0c",
+            "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:54:53.000Z",
+            "ingested_at": "2026-09-05T11:59:56.834Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/panorama/in-bitterfeld-wolfen-liegt-die-demokratiefoerderung-auf-eis-38121574.html",
+            "title": "Sachsen-Anhalt vor der Wahl: Ist Bitterfeld bald überall?",
+            "summary": "In Bitterfeld-Wolfen hat die AfD die Bedingungen für das größte Demokratieförderprogramm massiv verändert. Nun fließen gar keine Gelder mehr. Was das für die Stadt bedeutet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T07:41:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "3dc55c55677f78a4eaf8236861b571b5ffa5c0b1e03a7614bfa0c572a173c429",
+            "source_item_id": "76a645c64c8f56c4bd49ee9b0dbb72c34b186507734c7a921433d8d29d9bea72",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T07:41:00.000Z",
+            "ingested_at": "2026-09-05T08:51:16.120Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-demokratie-veranstaltungen-100,demonstrationen-110.html",
+            "title": "Veranstaltungen und Demonstrationen vor der Wahl Sachsen-Anhalt – Aktuelle Entwicklungen",
+            "summary": "Einen Tag vor der Landtagswahl finden in ganz Sachsen-Anhalt Demonstrationen und Feste für Demokratie statt. Die aktuelle Lage – live im Ticker.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:08:14.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "7ef86881460778cf16a7074725e8d2283314b02c4e560be4fd25deb0c447ee60",
+            "source_item_id": "297b16c16b4e4ed43a455ef407b564000be2505ca4eda079f641c8bcfb365dff",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:08:14.000Z",
+            "ingested_at": "2026-09-05T13:54:59.667Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/mehrere-kundgebungen-vor-landtagswahl-parteien-schliessen-wahlkampf-ab-102.html",
+            "title": "Sachsen-Anhalt - Mehrere Kundgebungen vor Landtagswahl - Parteien schließen Wahlkampf ab",
+            "summary": "Einen Tag vor der Landtagswahl in Sachsen-Anhalt haben die Parteien ihren Wahlkampf abgeschlossen. An Veranstaltungen von AfD, Linke und SPD nahmen auch Bundespolitiker teil. CDU, Grüne, FDP und BSW beendeten ebenfalls ihren Wahlkampf.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:15:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9dc8dda134bbd5a990a3bc89d6287eb507d4955f793142a83bf0f220ef4c9a7b",
+            "source_item_id": "0fc05a24b5b765bb48cdd02ccdf3b8afcbd3971e6d1c6c03a26e9310cf333ada",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:15:04.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/afd-maga-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
+            "title": "Vor Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
+            "summary": "„AFD über alles“ – mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T14:56:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "3945a9b29b190d3b3a725bb6b980ac39cec10dc15c8661960e89fe4b678e4b36",
+            "source_item_id": "93f9609fdaa127812d6085531b6225302a45705677d3b642070eb21a0eaa4e9f",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T14:56:00.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
+          "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:21:18.289Z",
+          "fingerprint": "f25d785a1e2b5bad5dae867afe8f435e019b05c39309b7ef00bd34c2d2b49f8b",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
@@ -13817,7 +14740,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:51:02.000Z",
-            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:euronews",
               "basis": "publisher_only_origin_unverified",
@@ -13837,7 +14760,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "48bad01993b1585a02bf4145fc83642d90c69e61d8ee25edebeb007ca5862f12",
           "issue_codes": [
             "SOURCE_URL_INVALID"
@@ -21612,7 +22535,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T11:18:00.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
@@ -21630,7 +22553,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
           "issue_codes": [],
           "warning_codes": []
@@ -22137,7 +23060,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
           "issue_codes": [],
           "warning_codes": []
@@ -24607,7 +25530,7 @@
       "deepening_checks": 1,
       "pending_update": {
         "detected_at": "2026-09-05T18:06:31.189Z",
-        "content_hash": "9eb97c03359c7b2da033ed03120077ee997c86fda8c8b9874db7ebbdc6ec4508",
+        "content_hash": "5e73ed6d2e220bbf566a759143c257914489606a436d95f13d787542f3686f12",
         "sources": [
           {
             "source_id": "tagesspiegel-home",
@@ -24695,7 +25618,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T13:11:00.000Z",
-            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:spiegel",
               "basis": "publisher_only_origin_unverified",
@@ -24726,18 +25649,47 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T14:11:00.000Z",
-            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:wirtschaftswoche",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
+            "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+            "summary": "Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:06:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "55ac0e89fb24cb1849e6be703510e37169b9489553772ae7d395df5445226bdc",
+            "source_item_id": "235b4021196e08f1d60c8a911f608ba014fa851de581b8c9f4817f0dc07b9c51",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:06:25.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
@@ -24746,8 +25698,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
-          "fingerprint": "ee7cae8c34f5a4e888661d0baa4022786000f9f57884b3c1d8c59e28fdf12b30",
+          "checked_at": "2026-09-05T18:21:18.289Z",
+          "fingerprint": "cbd522f79e0080b207ae7c02a7da139a9352233570e88aa744a01c0335d631fc",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -29246,7 +30198,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T17:44:00.000Z",
-            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
@@ -29401,7 +30353,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T15:27:15.000Z",
-            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
@@ -29412,10 +30364,12 @@
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
           "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
           "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
-          "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+          "MEDIA_PUBLIC_EXPLANATION_LENGTH",
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
         ],
-        "quality_retry_count": 1,
+        "quality_retry_count": 2,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -29423,7 +30377,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "80efb46bef3166853e894d790d5fe9b51642cde8c98aaba05c5f91bdaef7106f",
           "issue_codes": [],
           "warning_codes": []
@@ -38835,7 +39789,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "8cbb4311fa9f589f1203fc0556130f1bac19ee292dc31d40ae0f3addbfb850a9",
           "issue_codes": [],
           "warning_codes": []
@@ -41327,7 +42281,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
           "issue_codes": [],
           "warning_codes": []
@@ -44971,10 +45925,8 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
@@ -44983,7 +45935,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "b77080fc28dc49ed22c2e6eed468704e8806d8a8351e880f83f2a31fb8696350",
           "issue_codes": [],
           "warning_codes": []
@@ -50021,7 +50973,7 @@
       "deepening_checks": 2,
       "pending_update": {
         "detected_at": "2026-09-05T18:06:31.189Z",
-        "content_hash": "fdf831d014d106948b8fb801228db82f0b52399a85ae1f653845582802e5963a",
+        "content_hash": "9b30781232d09578c47fcdc5cf2978266ce7b3ea6c3aaf4a9e24d12d84bcd954",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -50058,14 +51010,14 @@
             "source_id": "wdr-nachrichten",
             "publisher": "WDR",
             "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-            "title": "Liveticker Strom-Sabotage: Weiter Suche nach Tatverdächtigem",
-            "summary": "Nach Sabotageversuchen an Umspannwerken ist der mutmaßliche Tatverdächtige immer noch auf der Flucht. Alle Infos im Ticker.",
+            "title": "Liveticker Strom-Sabotage: Suche nach Tatverdächtigem",
+            "summary": "Die Polizei hat Fotos des Tatverdächtigen um die Sabotageversuche an der Stromversorgung veröffentlicht. Alle Infos im Ticker.",
             "source_type": "media_rss",
-            "published_at": "2026-09-05T04:55:43.000Z",
+            "published_at": "2026-09-05T17:43:13.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
-            "content_hash": "2dae58db0d55e4c92e69ac92d5b1bd347727c6de411ef95a67105c56c1aa442c",
+            "content_hash": "5d35171dd88090b9c85adb1bcaec7d051bce9e4d359c9f9882b49cbcabb0597a",
             "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
             "publisher_id": "wdr",
             "publisher_kind": "public_broadcasting",
@@ -50077,8 +51029,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-05T04:55:43.000Z",
-            "ingested_at": "2026-09-05T05:21:05.955Z",
+            "source_published_at": "2026-09-05T17:43:13.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -50088,10 +51040,12 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "MEDIA_IMPACT_REQUIRED",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
+          "MEDIA_PUBLIC_EXPLANATION_LENGTH",
           "CLAIM_NUMBER_NOT_IN_EVIDENCE"
         ],
-        "quality_retry_count": 1,
+        "quality_retry_count": 2,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -50099,8 +51053,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
-          "fingerprint": "b1617fbc3184d18fa17d6eef44fde1c861cf9d67192f2884de62ebf4784dc961",
+          "checked_at": "2026-09-05T18:21:18.289Z",
+          "fingerprint": "5cca189a2d339df25b4655be8ee5f35850628c1c53d5caced12e19b7768e0a7e",
           "issue_codes": [],
           "warning_codes": [
             "SOURCE_MUTABLE_URL_REUSED"
@@ -58107,7 +59061,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T17:51:00.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
@@ -58125,7 +59079,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -58730,7 +59684,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:37:20.000Z",
-            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -58748,7 +59702,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "7a4e3b4d3b023739dcb0220550584ff732a89bce1aebfdc7f2711100160c30f8",
           "issue_codes": [],
           "warning_codes": []
@@ -80586,7 +81540,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "371951dda8885071e92902c04fd0deb7c36df7ae5adcfb2c65a7a1ebdc9e6256",
           "issue_codes": [],
           "warning_codes": []
@@ -84931,7 +85885,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T18:06:31.189Z",
+          "checked_at": "2026-09-05T18:21:18.289Z",
           "fingerprint": "fc6394929dd9caf6a77ab1a8265c01d7c1fddece2fc2a73b24676eceaeed40eb",
           "issue_codes": [],
           "warning_codes": []
