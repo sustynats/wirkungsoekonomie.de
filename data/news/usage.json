@@ -5298,6 +5298,73 @@
       },
       "source_failures": 0,
       "quality_holds": 47
+    },
+    {
+      "run_id": "news-run-07c0a206dfa9",
+      "started_at": "2026-09-05T16:51:14.960Z",
+      "completed_at": "2026-09-05T16:52:57.131Z",
+      "berlin_slot": "Automatischer Lauf 18:00",
+      "counts": {
+        "feed_entries_fetched": 0,
+        "feed_entries_new": 0,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 0,
+        "story_clusters": 0,
+        "locally_rejected": 4,
+        "ai_stories": 12,
+        "ai_requests": 12,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 381041,
+        "media_checks_triggered": 3,
+        "media_checks_skipped": 9,
+        "media_checks_ai_promoted": 0,
+        "media_check_tokens": 0,
+        "self_frame_rewrites": 0,
+        "source_integrity_holds": 1,
+        "published_stories": 1,
+        "updated_stories": 0
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 99702,
+        "output_tokens": 5873,
+        "estimated_cost_usd": 0.06008,
+        "token_source": "provider_reported_usage",
+        "media_check_tokens": 0,
+        "media_check_cost_usd": 0
+      },
+      "source_failures": 0,
+      "quality_holds": 36
+    },
+    {
+      "run_id": "editorial-949026a2acae",
+      "started_at": "2026-09-05T16:52:58.753Z",
+      "completed_at": "2026-09-05T16:54:10.152Z",
+      "berlin_slot": "automatische WÖK-Analyse",
+      "counts": {
+        "editorial_candidates": 6,
+        "editorial_research_started": 2,
+        "editorial_analyses_published": 0,
+        "editorial_analyses_updated": 0,
+        "editorial_research_sources_discovered": 6,
+        "research_calls": 2,
+        "research_tokens": 20059,
+        "analysis_tokens": 12485
+      },
+      "ai": {
+        "requests": 2,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 20059,
+        "output_tokens": 12485,
+        "estimated_cost_usd": 0.071227,
+        "token_source": "provider_or_conservative_editorial_analysis"
+      },
+      "source_failures": 0,
+      "quality_holds": 1
     }
   ]
 }

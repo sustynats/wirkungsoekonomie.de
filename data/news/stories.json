@@ -1,7 +1,562 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T16:36:34.186Z",
+  "updated_at": "2026-09-05T16:51:14.960Z",
   "stories": [
+    {
+      "story_id": "wt-4742476ae893311b",
+      "slug": "sabotage-polizei-und-staatsanwaltschaft-fahnden-nach-tatverdachtigem-93311b",
+      "title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
+      "first_seen": "2026-09-05T16:24:05.000Z",
+      "last_updated": "2026-09-05T16:52:06.230Z",
+      "published_at": "2026-09-05T16:52:06.230Z",
+      "updated_at": "2026-09-05T16:52:06.230Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+          "title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
+          "summary": "Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus bitten um Mithilfe aus der Bevölkerung – gesucht wird nach einem 48-jährigem Tatverdächtigem. Der Mann soll Sabotageakte auf Umspannwerke in Brandenburg und NRW verübt haben.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T16:24:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "42ef51fdf99dcd2e18cd8255487700f023a1df737db60a7ad47db6a2b8a07180",
+          "source_item_id": "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T16:24:05.000Z",
+          "ingested_at": "2026-09-05T16:36:34.186Z",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4742476ae893311b-v1-claim-1",
+          "story_id": "wt-4742476ae893311b",
+          "claim": "Polizei Brandenburg und Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Tatverdächtigen und bitten die Bevölkerung um Hinweise.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+              "excerpt_hash": "bdc767e6709cef2d4a82",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T16:52:06.230Z"
+        },
+        {
+          "claim_id": "wt-4742476ae893311b-v1-claim-2",
+          "story_id": "wt-4742476ae893311b",
+          "claim": "Der Gesuchte soll im Zusammenhang mit Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen stehen.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+              "excerpt_hash": "a47b189aec8ac560f6d0",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+              "excerpt_hash": "7e4acb9258d9aa8553c5",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T16:52:06.230Z"
+        },
+        {
+          "claim_id": "wt-4742476ae893311b-v1-claim-3",
+          "story_id": "wt-4742476ae893311b",
+          "claim": "Nach Angaben des Berichts wurde in der Wohnung des 48-Jährigen in Gevelsberg Sprengstoff gefunden.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+              "excerpt_hash": "c2375045b2afab585761",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T16:52:06.230Z"
+        },
+        {
+          "claim_id": "wt-4742476ae893311b-v1-claim-4",
+          "story_id": "wt-4742476ae893311b",
+          "claim": "Die Behörden veröffentlichten Bilder des Verdächtigen und richten ein Hinweistelefon sowie ein Hinweisportal ein.",
+          "status": "single_source_claim",
+          "source_id": "rbb24-nachrichten",
+          "evidence": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+              "excerpt_hash": "bdc767e6709cef2d4a82",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+              "excerpt_hash": "9320c9dc492eb93316b4",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            },
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+              "excerpt_hash": "a7c06f913268baba7fc0",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T16:52:06.230Z"
+        }
+      ],
+      "event_id": "event-28a661fe3f1acf4e79bb",
+      "event_first_seen_at": "2026-09-05T16:36:34.186Z",
+      "event_detected_at": "2026-09-05T16:36:34.186Z",
+      "verification_started_at": "2026-09-05T16:51:47.534Z",
+      "publish_ready_at": "2026-09-05T16:52:06.230Z",
+      "news_status": "updated",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T16:51:14.960Z",
+        "fingerprint": "48283262f5d1a537152d48a72d316403c329a5e38c93e715b11044341ba0e9c6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Gesuchte gefasst wird oder sich weiter dem Zugriff entzieht.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Amtliche Mitteilung oder Medienbericht zur Festnahme",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-72f54dd0868263c6",
+          "announced_at": "2026-09-05T16:24:05.000Z",
+          "follow_up_date": "2026-09-12T16:52:06.230Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "77af0c70e4ee5ad9d95b6a4d9a8d82d53d7e87bd4ec3fc13a747723a529cbeb0",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Tatverdächtigen und bitten die Bevölkerung um Mithilfe. Nach dem Bericht steht der Mann im Zusammenhang mit Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen. Die Behörden veröffentlichten Bilder des Gesuchten und nennen ein Hinweistelefon sowie ein Online-Portal für Hinweise.\n\nDer Bericht nennt zudem weitere Ermittlungsdetails: In der Wohnung des 48-Jährigen in Gevelsberg sei Sprengstoff gefunden worden. Außerdem sei später ein Lastwagen in Niederzier von einem Spezialeinsatzkommando durchsucht worden; der Gesuchte wurde dabei nicht gefunden. Offene Punkte bleiben laut Text die genaue Rolle des Mannes, der Stand der Fahndung und der weitere Ermittlungsverlauf.",
+      "analysis": {
+        "story_id": "wt-4742476ae893311b",
+        "news_status": "updated",
+        "publication_depth": "initial",
+        "summary": "Die Polizei und die Staatsanwaltschaft suchen nach einem 48-Jährigen im Zusammenhang mit Sabotagevorwürfen gegen Stromanlagen. Laut Bericht wurde in seiner Wohnung Sprengstoff gefunden, der Gesuchte aber noch nicht gefasst.",
+        "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die laufende Fahndung: Polizei Brandenburg und Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Tatverdächtigen und haben dazu Bilder sowie Kontaktwege für Hinweise veröffentlicht. Der Bericht ordnet ihn einem Komplex von Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen zu. Zusätzlich nennt die Quelle einen Sprengstofffund in seiner Wohnung in Gevelsberg und eine spätere Durchsuchung eines Lastwagens in Niederzier, bei der der Gesuchte nicht angetroffen wurde. Für die Nachrichtenlage ist das relevant, weil sich damit der Ermittlungsstand verdichtet und der Fall über eine bloße Verdachtsmeldung hinaus in eine konkrete Fahndung übergeht. Ein möglicher Wirkpfad betrifft vor allem die öffentliche Sicherheit und die Schutzmaßnahmen rund um kritische Infrastruktur; zugleich bleibt offen, ob und wie belastbar die Zuschreibungen später gerichtsfest werden. Die Evidenz bleibt jedoch journalistisch begrenzt, weil hier nur ein einzelner Bericht vorliegt und der unmittelbare Originalbeleg der Behördenaussagen nicht separat mitgeliefert wurde.",
+        "why_relevant": "Die Meldung berichtet über eine aktive Fahndung im Zusammenhang mit möglichen Angriffen auf kritische Infrastruktur und über einen genannten Sprengstofffund. Das ist für Sicherheit, Ermittlungsstand und mögliche Schutzmaßnahmen materiell bedeutsam.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Es geht um einen Tatverdächtigen im Umfeld möglicher Sabotage an Stromanlagen und um Hinweise an die Bevölkerung."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Betroffen ist kritische Energieinfrastruktur, deren Störung Versorgungsrisiken und Folgekosten auslösen kann."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt staatliche Sicherheitsfähigkeit und die demokratische Kontrolle über Schutz kritischer Infrastruktur."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Fahndung kann Ermittlungen beschleunigen und Schutzmaßnahmen gegen weitere Sabotageverdachtsfälle auslösen. Mittelbar kann sie das Sicherheitsniveau an kritischer Infrastruktur erhöhen, falls die Ermittlungen zu belastbaren Präventionsmaßnahmen führen.",
+        "impact_risks": [
+          "Unbestätigte Zuschreibungen können das öffentliche Lagebild verzerren, solange die Beweislage offen bleibt.",
+          "Eine Eskalation des Sicherheitsdiskurses kann Ressourcen binden, ohne dass der Sachverhalt abschließend geklärt ist."
+        ],
+        "mechanisms": [
+          "Öffentliche Fahndung erhöht den Informationsfluss an Ermittler und kann den Aufenthaltsort des Gesuchten klären.",
+          "Hinweise auf Sprengstoff in einer Wohnung können Schutz- und Ermittlungsschritte bei kritischer Infrastruktur verstärken."
+        ],
+        "first_order": [
+          "Mehr Hinweise aus der Bevölkerung oder von Behörden zur Identität und zum Aufenthaltsort des Gesuchten."
+        ],
+        "second_order": [
+          "Mögliche Anpassungen von Sicherheitsvorkehrungen an Stromanlagen und im Umfeld kritischer Infrastruktur."
+        ],
+        "third_order": [
+          "Falls sich der Verdacht erhärtet, könnte der Fall Präzedenzwirkung für den Schutz ähnlicher Anlagen haben."
+        ],
+        "systemic_relevance": "Der Vorgang betrifft kritische Infrastruktur und damit einen Bereich mit möglichen Kaskaden für Versorgung, Sicherheit und staatliche Reaktionsfähigkeit.",
+        "transformation_potential": "Kurzfristig eher begrenzt; mittelbar kann der Fall zu verschärften Sicherheitsstandards und Ermittlungsroutinen im Infrastrukturschutz beitragen.",
+        "resilience": "Die öffentliche Fahndung und die Hinweiswege können die Resilienz der Ermittlungen stärken, sind aber ohne abschließende Aufklärung noch kein Beleg für erhöhte Systemsicherheit.",
+        "side_effects": [
+          "Mögliche Verunsicherung in der Bevölkerung und im Umfeld kritischer Infrastruktur.",
+          "Erhöhter Aufwand für Polizei, Betreiber und Schutzkräfte."
+        ],
+        "uncertainties": [
+          "Die genaue Täterschaft ist nicht abschließend belegt.",
+          "Die rechtliche Bewertung der behaupteten Sabotage bleibt offen.",
+          "Der Zusammenhang zwischen den einzelnen Vorfällen wird in der Quelle nur behauptet, nicht unabhängig belegt."
+        ],
+        "evidence_level": "medium",
+        "attribution": "Die Quelle berichtet als journalistischer Beitrag über Angaben von Polizei und Staatsanwaltschaft; die zentralen Zuschreibungen sind daher attribuiert und nur teilweise extern bestätigt.",
+        "watch_next": [
+          "Ob die Polizei den Gesuchten festnimmt oder seinen Aufenthaltsort präzisiert.",
+          "Ob weitere amtliche Angaben den Sprengstofffund und die Sabotagevorwürfe konkretisieren."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 9, 11 und 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Die Fahndung mit Foto, der genannte Sprengstofffund und der Bezug zu kritischer Infrastruktur sind eine neue, materiell relevante Entwicklung gegenüber den Vorläufern."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Alter des Tatverdächtigen",
+              "value": "48",
+              "unit": "Jahre",
+              "context": "Von den Behörden gesuchte Person",
+              "claim_id": "wt-4742476ae893311b-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "verbraucherinnen",
+            "europa"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "media_impact": null,
+        "publication_recommendation": true,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-05T16:51:14.960Z",
+        "media_trigger_fingerprint": "1a890ed44a731b289c7ddc4a2d649a1dd88e0b5911f360e4b20c90f149e45e7c",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "motive_or_guilt_attribution"
+          ],
+          "matched_terms": [
+            "mutmaßlicher täter"
+          ],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "1a890ed44a731b289c7ddc4a2d649a1dd88e0b5911f360e4b20c90f149e45e7c",
+          "content_fingerprint": "2530de0fa05f15bedb766091192d3755698936636d1204453fa43b3ced34c7f4",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T16:52:06.230Z",
+          "content_hash": "77af0c70e4ee5ad9d95b6a4d9a8d82d53d7e87bd4ec3fc13a747723a529cbeb0",
+          "source_summary": "Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Tatverdächtigen und bitten die Bevölkerung um Mithilfe. Nach dem Bericht steht der Mann im Zusammenhang mit Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen. Die Behörden veröffentlichten Bilder des Gesuchten und nennen ein Hinweistelefon sowie ein Online-Portal für Hinweise.\n\nDer Bericht nennt zudem weitere Ermittlungsdetails: In der Wohnung des 48-Jährigen in Gevelsberg sei Sprengstoff gefunden worden. Außerdem sei später ein Lastwagen in Niederzier von einem Spezialeinsatzkommando durchsucht worden; der Gesuchte wurde dabei nicht gefunden. Offene Punkte bleiben laut Text die genaue Rolle des Mannes, der Stand der Fahndung und der weitere Ermittlungsverlauf.",
+          "analysis": {
+            "story_id": "wt-4742476ae893311b",
+            "news_status": "updated",
+            "publication_depth": "initial",
+            "summary": "Die Polizei und die Staatsanwaltschaft suchen nach einem 48-Jährigen im Zusammenhang mit Sabotagevorwürfen gegen Stromanlagen. Laut Bericht wurde in seiner Wohnung Sprengstoff gefunden, der Gesuchte aber noch nicht gefasst.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die laufende Fahndung: Polizei Brandenburg und Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Tatverdächtigen und haben dazu Bilder sowie Kontaktwege für Hinweise veröffentlicht. Der Bericht ordnet ihn einem Komplex von Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen zu. Zusätzlich nennt die Quelle einen Sprengstofffund in seiner Wohnung in Gevelsberg und eine spätere Durchsuchung eines Lastwagens in Niederzier, bei der der Gesuchte nicht angetroffen wurde. Für die Nachrichtenlage ist das relevant, weil sich damit der Ermittlungsstand verdichtet und der Fall über eine bloße Verdachtsmeldung hinaus in eine konkrete Fahndung übergeht. Ein möglicher Wirkpfad betrifft vor allem die öffentliche Sicherheit und die Schutzmaßnahmen rund um kritische Infrastruktur; zugleich bleibt offen, ob und wie belastbar die Zuschreibungen später gerichtsfest werden. Die Evidenz bleibt jedoch journalistisch begrenzt, weil hier nur ein einzelner Bericht vorliegt und der unmittelbare Originalbeleg der Behördenaussagen nicht separat mitgeliefert wurde.",
+            "why_relevant": "Die Meldung berichtet über eine aktive Fahndung im Zusammenhang mit möglichen Angriffen auf kritische Infrastruktur und über einen genannten Sprengstofffund. Das ist für Sicherheit, Ermittlungsstand und mögliche Schutzmaßnahmen materiell bedeutsam.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Es geht um einen Tatverdächtigen im Umfeld möglicher Sabotage an Stromanlagen und um Hinweise an die Bevölkerung."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Betroffen ist kritische Energieinfrastruktur, deren Störung Versorgungsrisiken und Folgekosten auslösen kann."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Fall berührt staatliche Sicherheitsfähigkeit und die demokratische Kontrolle über Schutz kritischer Infrastruktur."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Fahndung kann Ermittlungen beschleunigen und Schutzmaßnahmen gegen weitere Sabotageverdachtsfälle auslösen. Mittelbar kann sie das Sicherheitsniveau an kritischer Infrastruktur erhöhen, falls die Ermittlungen zu belastbaren Präventionsmaßnahmen führen.",
+            "impact_risks": [
+              "Unbestätigte Zuschreibungen können das öffentliche Lagebild verzerren, solange die Beweislage offen bleibt.",
+              "Eine Eskalation des Sicherheitsdiskurses kann Ressourcen binden, ohne dass der Sachverhalt abschließend geklärt ist."
+            ],
+            "mechanisms": [
+              "Öffentliche Fahndung erhöht den Informationsfluss an Ermittler und kann den Aufenthaltsort des Gesuchten klären.",
+              "Hinweise auf Sprengstoff in einer Wohnung können Schutz- und Ermittlungsschritte bei kritischer Infrastruktur verstärken."
+            ],
+            "first_order": [
+              "Mehr Hinweise aus der Bevölkerung oder von Behörden zur Identität und zum Aufenthaltsort des Gesuchten."
+            ],
+            "second_order": [
+              "Mögliche Anpassungen von Sicherheitsvorkehrungen an Stromanlagen und im Umfeld kritischer Infrastruktur."
+            ],
+            "third_order": [
+              "Falls sich der Verdacht erhärtet, könnte der Fall Präzedenzwirkung für den Schutz ähnlicher Anlagen haben."
+            ],
+            "systemic_relevance": "Der Vorgang betrifft kritische Infrastruktur und damit einen Bereich mit möglichen Kaskaden für Versorgung, Sicherheit und staatliche Reaktionsfähigkeit.",
+            "transformation_potential": "Kurzfristig eher begrenzt; mittelbar kann der Fall zu verschärften Sicherheitsstandards und Ermittlungsroutinen im Infrastrukturschutz beitragen.",
+            "resilience": "Die öffentliche Fahndung und die Hinweiswege können die Resilienz der Ermittlungen stärken, sind aber ohne abschließende Aufklärung noch kein Beleg für erhöhte Systemsicherheit.",
+            "side_effects": [
+              "Mögliche Verunsicherung in der Bevölkerung und im Umfeld kritischer Infrastruktur.",
+              "Erhöhter Aufwand für Polizei, Betreiber und Schutzkräfte."
+            ],
+            "uncertainties": [
+              "Die genaue Täterschaft ist nicht abschließend belegt.",
+              "Die rechtliche Bewertung der behaupteten Sabotage bleibt offen.",
+              "Der Zusammenhang zwischen den einzelnen Vorfällen wird in der Quelle nur behauptet, nicht unabhängig belegt."
+            ],
+            "evidence_level": "medium",
+            "attribution": "Die Quelle berichtet als journalistischer Beitrag über Angaben von Polizei und Staatsanwaltschaft; die zentralen Zuschreibungen sind daher attribuiert und nur teilweise extern bestätigt.",
+            "watch_next": [
+              "Ob die Polizei den Gesuchten festnimmt oder seinen Aufenthaltsort präzisiert.",
+              "Ob weitere amtliche Angaben den Sprengstofffund und die Sabotagevorwürfe konkretisieren."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 9, 11 und 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Die Fahndung mit Foto, der genannte Sprengstofffund und der Bezug zu kritischer Infrastruktur sind eine neue, materiell relevante Entwicklung gegenüber den Vorläufern."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Alter des Tatverdächtigen",
+                  "value": "48",
+                  "unit": "Jahre",
+                  "context": "Von den Behörden gesuchte Person",
+                  "claim_id": "wt-4742476ae893311b-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "verbraucherinnen",
+                "europa"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "media_impact": null,
+            "publication_recommendation": true,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-05T16:51:14.960Z",
+            "media_trigger_fingerprint": "1a890ed44a731b289c7ddc4a2d649a1dd88e0b5911f360e4b20c90f149e45e7c",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "motive_or_guilt_attribution"
+              ],
+              "matched_terms": [
+                "mutmaßlicher täter"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "1a890ed44a731b289c7ddc4a2d649a1dd88e0b5911f360e4b20c90f149e45e7c",
+              "content_fingerprint": "2530de0fa05f15bedb766091192d3755698936636d1204453fa43b3ced34c7f4",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-4742476ae893311b-v1-claim-1",
+              "story_id": "wt-4742476ae893311b",
+              "claim": "Polizei Brandenburg und Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Tatverdächtigen und bitten die Bevölkerung um Hinweise.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+                  "excerpt_hash": "bdc767e6709cef2d4a82",
+                  "checked_at": "2026-09-05T16:52:06.230Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            },
+            {
+              "claim_id": "wt-4742476ae893311b-v1-claim-2",
+              "story_id": "wt-4742476ae893311b",
+              "claim": "Der Gesuchte soll im Zusammenhang mit Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen stehen.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+                  "excerpt_hash": "a47b189aec8ac560f6d0",
+                  "checked_at": "2026-09-05T16:52:06.230Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+                  "excerpt_hash": "7e4acb9258d9aa8553c5",
+                  "checked_at": "2026-09-05T16:52:06.230Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            },
+            {
+              "claim_id": "wt-4742476ae893311b-v1-claim-3",
+              "story_id": "wt-4742476ae893311b",
+              "claim": "Nach Angaben des Berichts wurde in der Wohnung des 48-Jährigen in Gevelsberg Sprengstoff gefunden.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+                  "excerpt_hash": "c2375045b2afab585761",
+                  "checked_at": "2026-09-05T16:52:06.230Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            },
+            {
+              "claim_id": "wt-4742476ae893311b-v1-claim-4",
+              "story_id": "wt-4742476ae893311b",
+              "claim": "Die Behörden veröffentlichten Bilder des Verdächtigen und richten ein Hinweistelefon sowie ein Hinweisportal ein.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+                  "excerpt_hash": "bdc767e6709cef2d4a82",
+                  "checked_at": "2026-09-05T16:52:06.230Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+                  "excerpt_hash": "9320c9dc492eb93316b4",
+                  "checked_at": "2026-09-05T16:52:06.230Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+                  "excerpt_hash": "a7c06f913268baba7fc0",
+                  "checked_at": "2026-09-05T16:52:06.230Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T16:52:06.230Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+              "content_hash": "42ef51fdf99dcd2e18cd8255487700f023a1df737db60a7ad47db6a2b8a07180"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-05T16:52:06.230Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4742476ae893311b-27f116da3c0da363-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "27f116da3c0da363447aa834cf58e606c5df9872d228cc0cc5e30075579b2cc1"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4742476ae893311b-0d7abef7caf73ec2-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "0d7abef7caf73ec2b6294a95c83a551b5f76b177d6a064ec8f9db7ae351c9e97"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4742476ae893311b-fe3a2fabac74feee-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "fe3a2fabac74feeea4afeebaf8df1be8f315b74cfca038e67b59bfefe2827def"
+        },
+        "source_visual": null,
+        "fingerprint": "286dc882fdce97206a304067a03a0903eea3e05775730b2362ea8859ac4408c7",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-05T16:52:57.128Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-58cac49b38f415db",
       "slug": "kriegsgegner-demonstrieren-polizei-stoppt-teil-von-protestzug-gegen-rheinmetall-in-koln-f415db",
@@ -63,19 +618,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "aa05d76fd8e0b51d486cc57b970b860958a5a9df057e4c39c0dd1509d7a57a12",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T16:36:34.186Z",
       "event_detected_at": "2026-09-05T16:36:34.186Z",
       "event_id": "event-201da883bf8004ddde01",
@@ -103,143 +658,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9.336433333333334,
+        "source_age_minutes": 24.016,
         "detection_delay_minutes": 9.336433333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.679566666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "7683a6a2de212fe2088e556bc0b70e694aacde2ee210d91cf5a99c980b403a44",
         "issue_codes": [],
         "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-4742476ae893311b",
-      "slug": "sabotage-polizei-und-staatsanwaltschaft-fahnden-nach-tatverdachtigem-93311b",
-      "title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
-      "first_seen": "2026-09-05T16:24:05.000Z",
-      "last_updated": "2026-09-05T16:24:05.000Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "rbb24-nachrichten",
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
-          "title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
-          "summary": "Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus bitten um Mithilfe aus der Bevölkerung – gesucht wird nach einem 48-jährigem Tatverdächtigem. Der Mann soll Sabotageakte auf Umspannwerke in Brandenburg und NRW verübt haben.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T16:24:05.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "42ef51fdf99dcd2e18cd8255487700f023a1df737db60a7ad47db6a2b8a07180",
-          "source_item_id": "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
-          "publisher_id": "rbb",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin-Brandenburg"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T16:24:05.000Z",
-          "ingested_at": "2026-09-05T16:36:34.186Z",
-          "provenance": {
-            "origin": "publisher:rbb",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-4742476ae893311b-claim-01",
-          "story_id": "wt-4742476ae893311b",
-          "claim": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem: Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus bitten um Mithilfe aus der Bevölkerung – gesucht wird nach einem 48-jährigem Tatverdächtigem. Der Mann soll Sabotageakte auf Umspannwerke in Brandenburg und NRW verübt haben.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "rbb24-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:rbb",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
-        }
-      ],
-      "content_hash": "77af0c70e4ee5ad9d95b6a4d9a8d82d53d7e87bd4ec3fc13a747723a529cbeb0",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
-      "event_first_seen_at": "2026-09-05T16:36:34.186Z",
-      "event_detected_at": "2026-09-05T16:36:34.186Z",
-      "event_id": "event-28a661fe3f1acf4e79bb",
-      "preanalysis": {
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejection": {
+        "at": "2026-09-05T16:51:14.960Z",
         "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
         ]
-      },
-      "freshness": {
-        "source_age_minutes": 12.486433333333334,
-        "detection_delay_minutes": 12.486433333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
-        "fingerprint": "48283262f5d1a537152d48a72d316403c329a5e38c93e715b11044341ba0e9c6",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -334,7 +781,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         },
         {
           "claim_id": "wt-79a0c19273cf58ad-claim-02",
@@ -354,7 +801,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "740363175794a3479b04bf59a9912121d5f641d6378fda70092d65f04c85a27d",
@@ -366,7 +813,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T13:54:59.667Z",
       "event_detected_at": "2026-09-05T13:54:59.667Z",
       "event_id": "event-b21464d90d3e9f0cc6bc",
@@ -396,20 +843,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 19.3531,
+        "source_age_minutes": 34.032666666666664,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 161.57531666666668,
+        "queue_age_minutes": 176.25488333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "6d6173d3c4413011bff4a079dc5668abd0d80cceb5e41e83d37deef5fc1e214b",
         "issue_codes": [],
         "warning_codes": []
@@ -609,19 +1056,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "64291a751d283f4aad99d6e4812c7ae9dc5ea1681f891b67050d290809ac1119",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T16:36:34.186Z",
       "event_detected_at": "2026-09-05T16:36:34.186Z",
       "event_id": "event-a0007694e8600ed66b72",
@@ -651,23 +1098,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 34.569766666666666,
+        "source_age_minutes": 49.24933333333333,
         "detection_delay_minutes": 34.569766666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.679566666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 90,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "901e2a405c9d000e7aca68e05d757b08afaf0b5802ee795d75558dc9230b23f9",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejection": {
+        "at": "2026-09-05T16:51:14.960Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -866,19 +1325,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "87b7bb8127645114ba858720e508b88a1779864392743fc787e72941e9d5a873",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T16:36:34.186Z",
       "event_detected_at": "2026-09-05T16:36:34.186Z",
       "event_id": "event-55479ea1a5a89a46548d",
@@ -906,23 +1365,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 44.11976666666666,
+        "source_age_minutes": 58.79933333333334,
         "detection_delay_minutes": 44.11976666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.679566666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 88,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "285f0d14fd6987dbf29a0802a04796e2812141d74ebc008d22c429b18c39bc64",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejection": {
+        "at": "2026-09-05T16:51:14.960Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -2076,7 +2547,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "9eb21fc79fb90c9c3d3a3626adc2eed4c4ac5b3faa5cc00767a54bf0e2fe63db",
           "issue_codes": [],
           "warning_codes": []
@@ -2631,19 +3102,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "6e3e2ca9cd9eb29343b354a14c1afa38b50ca0c5150101e8374941cd57a18be5",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T16:36:34.186Z",
       "event_detected_at": "2026-09-05T16:36:34.186Z",
       "event_id": "event-e16886400c38491431a7",
@@ -2673,23 +3144,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 140.26976666666667,
+        "source_age_minutes": 154.94933333333333,
         "detection_delay_minutes": 140.26976666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.679566666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 71,
+        "news_freshness_score": 68,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "37f8ab4847cd03bedbffe0af3259b36c712e55e7dde85789dd61f63274fcd9a1",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejection": {
+        "at": "2026-09-05T16:51:14.960Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -2754,7 +3237,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "ac7ff1efdfe45aeb3486690eb18b26f972c03df9ead159d085536113252788c8",
@@ -2766,7 +3249,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T14:51:17.850Z",
       "event_detected_at": "2026-09-05T14:51:17.850Z",
       "event_id": "event-7bc5595e6dd842cac4e7",
@@ -2797,20 +3280,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 140.56976666666668,
+        "source_age_minutes": 155.24933333333334,
         "detection_delay_minutes": 35.2975,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 105.27226666666667,
+        "queue_age_minutes": 119.95183333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 71,
+        "news_freshness_score": 68,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "65f9c6ed613c43ddc1483449db763f04954111d419c6f69cc38d0604d70b1229",
         "issue_codes": [],
         "warning_codes": []
@@ -3591,7 +4074,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         },
         {
           "claim_id": "wt-a1d32125e25a690c-claim-02",
@@ -3611,19 +4094,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "a8750e0bb981f9f92bd27f4a352cca27e4b8f18d060149058114d4148e9be9a8",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T14:51:17.850Z",
       "event_detected_at": "2026-09-05T14:51:17.850Z",
       "event_id": "event-503f6ca19ad2a3cf9a88",
@@ -3651,23 +4134,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 145.56976666666668,
+        "source_age_minutes": 160.24933333333334,
         "detection_delay_minutes": 40.2975,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 105.27226666666667,
+        "queue_age_minutes": 119.95183333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 70,
+        "news_freshness_score": 67,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "1bed52aae020ff7a71bdd5ec023cf4cf5acd367025827feca20e02a70b7aa928",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejection": {
+        "at": "2026-09-05T16:51:14.960Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -4417,7 +4912,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "2c4c71dbe59e88f96ef78d752df90d3b56ae3903f2470c677efa89f452c75f56",
           "issue_codes": [],
           "warning_codes": []
@@ -5127,19 +5622,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "f2848779135c304a0d1cf3d521ab97a54e033f3e6b4f954028802f8925360001",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T14:51:17.850Z",
       "event_detected_at": "2026-09-05T14:51:17.850Z",
       "event_id": "event-1a9faeb9b5f3564015f0",
@@ -5171,23 +5666,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 190.01976666666667,
+        "source_age_minutes": 204.69933333333333,
         "detection_delay_minutes": 84.7475,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 105.27226666666667,
+        "queue_age_minutes": 119.95183333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 60,
+        "news_freshness_score": 57,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "b1be12eae09a7084f4058ed65509a93bce4936711e6a2733ebe388c410672ddd",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejection": {
+        "at": "2026-09-05T16:51:14.960Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -6069,19 +6576,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "502df13e3e78d05ba3a19a68f54d96b9849c629ecdfb78f7ef8bd23e27733075",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T13:54:59.667Z",
       "event_detected_at": "2026-09-05T13:54:59.667Z",
       "event_id": "event-fddc22a38dea53bc5372",
@@ -6109,23 +6616,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 233.56976666666668,
+        "source_age_minutes": 248.24933333333334,
         "detection_delay_minutes": 71.99445,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 161.57531666666668,
+        "queue_age_minutes": 176.25488333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 51,
+        "news_freshness_score": 48,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "dc5f5c3f8dc9eead888d40d7a96ccb8c9a5d3bf49041fe25133e3fe597f94041",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejection": {
+        "at": "2026-09-05T16:51:14.960Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -6189,19 +6708,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "96f2482b3949bb4fe3aecc3fc27f0cb96865f3a8e4334d66f5679c69bc57911e",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T14:51:17.850Z",
       "event_detected_at": "2026-09-05T14:51:17.850Z",
       "event_id": "event-5a4f17a6f1296aa1c126",
@@ -6229,23 +6748,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 233.56976666666668,
+        "source_age_minutes": 248.24933333333334,
         "detection_delay_minutes": 128.2975,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 105.27226666666667,
+        "queue_age_minutes": 119.95183333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 51,
+        "news_freshness_score": 48,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "ec463e1a26206950cfabc2a63c9cc6d016a3c666e7897aba5006476c1c74975f",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejection": {
+        "at": "2026-09-05T16:51:14.960Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -10574,7 +11105,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "48bad01993b1585a02bf4145fc83642d90c69e61d8ee25edebeb007ca5862f12",
           "issue_codes": [
             "SOURCE_URL_INVALID"
@@ -17385,19 +17916,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "75c9dc6b20fdf1b7fb2c69991baf4b3723ba2c4e0960fbe53e135c1059edfcef",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T03:21:33.562Z",
       "event_detected_at": "2026-09-05T03:21:33.562Z",
       "event_id": "event-652b9eb970ebbdf9d49f",
@@ -17428,23 +17959,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 258.7864333333333,
+        "source_age_minutes": 273.466,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 795.0104,
+        "queue_age_minutes": 809.6899666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 46,
+        "news_freshness_score": 43,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "379056dc6bc98c4ff177f65ed2aaaf28f90e2c30d0fca5da629fb047e5d2d1e7",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejection": {
+        "at": "2026-09-05T16:51:14.960Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -17539,7 +18082,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         },
         {
           "claim_id": "wt-47a5ce1a57b5588c-claim-02",
@@ -17559,7 +18102,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "6ba6b6dc133d2f3f3cf67180f3def1eb55ad8da12baadccbfd0e06e2f55c4292",
@@ -17571,7 +18114,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T09:31:48.966Z",
       "event_detected_at": "2026-09-05T09:31:48.966Z",
       "event_id": "event-f351335aa873a1004e34",
@@ -17601,20 +18144,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 152.46976666666666,
+        "source_age_minutes": 167.14933333333335,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 424.7536666666667,
+        "queue_age_minutes": 439.4332333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 68,
+        "news_freshness_score": 65,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "f25534f68dae40729d78441311c04d32232882a28eb3c737c72de57651e3714d",
         "issue_codes": [],
         "warning_codes": []
@@ -18342,7 +18885,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
           "issue_codes": [],
           "warning_codes": []
@@ -18808,7 +19351,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
           "issue_codes": [],
           "warning_codes": []
@@ -19864,7 +20407,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "090608b129e6846c5d15d916b3aaf0da5765a18c3b8576cccb9fffecc6a56ad7",
           "issue_codes": [],
           "warning_codes": []
@@ -20908,7 +21451,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "a94e42a10fee0ca4358313d0c1433a5e135b9eccdc47643442950d15c3b0784b",
           "issue_codes": [],
           "warning_codes": []
@@ -23140,7 +23683,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "c247733d9976b5b0c1d4fe80fbb8dd21e1deedcf6f0f639185da50dd68f182d8",
           "issue_codes": [],
           "warning_codes": []
@@ -28738,7 +29281,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "bba51dd5bf563d0eaa49de0b3dc3aa2a90b51c3526165b3cdbe3c833bf767d34",
           "issue_codes": [],
           "warning_codes": []
@@ -35597,7 +36140,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "8cbb4311fa9f589f1203fc0556130f1bac19ee292dc31d40ae0f3addbfb850a9",
           "issue_codes": [],
           "warning_codes": []
@@ -36759,7 +37302,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         },
         {
           "claim_id": "wt-19ad19be6d5e7cf2-claim-02",
@@ -36779,7 +37322,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:36:34.186Z"
+          "checked_at": "2026-09-05T16:51:14.960Z"
         }
       ],
       "content_hash": "431b68d714bece77a3332961f1fb4cdb377fd0c2fa8bc577945640612b5cc931",
@@ -36791,7 +37334,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T16:36:34.186Z",
+      "updated_at": "2026-09-05T16:51:14.960Z",
       "event_first_seen_at": "2026-09-05T07:21:32.324Z",
       "event_detected_at": "2026-09-05T07:21:32.324Z",
       "event_id": "event-47b63689127b7d9ed5dd",
@@ -36820,11 +37363,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 531.5531,
+        "source_age_minutes": 546.2326666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 555.0310333333333,
+        "queue_age_minutes": 569.7106,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -36833,7 +37376,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "checked_at": "2026-09-05T16:51:14.960Z",
         "fingerprint": "d0b2bef0f574e1d61b24987360a3f7b385b265e250c41318ae4622a0ed9fba8a",
         "issue_codes": [],
         "warning_codes": []
@@ -38037,7 +38580,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
           "issue_codes": [],
           "warning_codes": []
@@ -41691,7 +42234,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "b77080fc28dc49ed22c2e6eed468704e8806d8a8351e880f83f2a31fb8696350",
           "issue_codes": [],
           "warning_codes": []
@@ -42698,7 +43241,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "8b49fdd3757064b543977b787bfffd1334001d9fd714a026ae2123598cdc3e0b",
           "issue_codes": [],
           "warning_codes": []
@@ -44793,9 +45336,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-05T14:51:17.850Z",
-        "content_hash": "c6472988818b6b10ce4d6cf038897d94d59628aae0a4a59074893d158d2d295f",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "5c45a057fd6f7adf6055240ab769699c3e534f7788d80c598915c35da0692fe0",
+        "checked_at": "2026-09-05T16:51:14.960Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T22:51:14.960Z",
         "sources": [
           {
             "source_id": "berlin-presseportal",
@@ -44955,25 +45501,7 @@
             "collection_source_id": "swr-aktuell",
             "collection_publisher_id": "swr"
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "MEDIA_IMPACT_REQUIRED"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
-          "fingerprint": "5c6f48530b4d1891a6e5d46bd576799c3b88f1e1227d1a8826bfb30f4ce74dfe",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
       }
     },
     {
@@ -46186,7 +46714,7 @@
       "verification_started_at": "2026-09-04T21:36:16.946Z",
       "publish_ready_at": "2026-09-04T21:36:31.936Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T10:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -46793,131 +47321,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T10:23:53.587Z",
-        "content_hash": "9b30781232d09578c47fcdc5cf2978266ce7b3ea6c3aaf4a9e24d12d84bcd954",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T16:15:33.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89",
-            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:15:33.000Z",
-            "ingested_at": "2026-09-04T16:51:42.103Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
-            "title": "Liveticker Strom-Sabotage: Suche nach Tatverdächtigem",
-            "summary": "Die Polizei hat Fotos des Tatverdächtigen um die Sabotageversuche an der Stromversorgung veröffentlicht. Alle Infos im Ticker.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T16:26:16.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "5d35171dd88090b9c85adb1bcaec7d051bce9e4d359c9f9882b49cbcabb0597a",
-            "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T16:26:16.000Z",
-            "ingested_at": "2026-09-05T16:36:34.186Z",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_REQUIRED_STRING:source_summary",
-          "AI_REQUIRED_STRING:summary",
-          "AI_REQUIRED_STRING:why_relevant",
-          "AI_REQUIRED_STRING:status",
-          "AI_REQUIRED_STRING:analysis_type",
-          "AI_REQUIRED_STRING:importance",
-          "AI_REQUIRED_STRING:impact_potential",
-          "AI_REQUIRED_STRING:systemic_relevance",
-          "AI_REQUIRED_STRING:transformation_potential",
-          "AI_REQUIRED_STRING:resilience",
-          "AI_REQUIRED_STRING:evidence_level",
-          "AI_REQUIRED_STRING:attribution",
-          "AI_REQUIRED_STRING:detail_summary",
-          "AI_STATUS_INVALID",
-          "AI_ANALYSIS_TYPE_INVALID",
-          "AI_IMPORTANCE_INVALID",
-          "AI_PUBLICATION_GATE_REQUIRED",
-          "AI_DIMENSION_INVALID:human",
-          "AI_DIMENSION_INVALID:planet",
-          "AI_DIMENSION_INVALID:democracy",
-          "AI_ARRAY_REQUIRED:impact_risks",
-          "AI_ARRAY_REQUIRED:mechanisms",
-          "AI_ARRAY_REQUIRED:first_order",
-          "AI_ARRAY_REQUIRED:second_order",
-          "AI_ARRAY_REQUIRED:third_order",
-          "AI_ARRAY_REQUIRED:side_effects",
-          "AI_ARRAY_REQUIRED:uncertainties",
-          "AI_ARRAY_REQUIRED:watch_next",
-          "AI_ARRAY_REQUIRED:reference_frameworks",
-          "AI_UNCERTAINTY_REQUIRED",
-          "AI_WATCH_NEXT_REQUIRED",
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "MEDIA_IMPACT_REQUIRED",
-          "NEWS_STATUS_REQUIRED",
-          "EVENT_CLAIMS_REQUIRED"
-        ],
-        "quality_retry_count": 7,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
-          "fingerprint": "5cca189a2d339df25b4655be8ee5f35850628c1c53d5caced12e19b7768e0a7e",
-          "issue_codes": [],
-          "warning_codes": [
-            "SOURCE_MUTABLE_URL_REUSED"
-          ]
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-9d9b1a5968a2d3b8",
@@ -49806,7 +50210,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "a4a1aa47f4fa7294de838044190ad1cfc64cd840dd088522df173c63655c67a4",
           "issue_codes": [],
           "warning_codes": []
@@ -50915,7 +51319,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "7b17a7b748d9ee3bc2092e861fd04826f6317aa440137c83e0ebcc60582ad091",
           "issue_codes": [],
           "warning_codes": []
@@ -52223,7 +52627,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "0edf8a2f127cd5fce8d8135d95613f7005cd7732202d9b790ba4d8c009971279",
           "issue_codes": [],
           "warning_codes": []
@@ -53304,7 +53708,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "3e525a90021fc16764fdd5de14d5975794e031b3860545e083397059c1ff87f4",
           "issue_codes": [],
           "warning_codes": []
@@ -55143,7 +55547,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -55766,7 +56170,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "7a4e3b4d3b023739dcb0220550584ff732a89bce1aebfdc7f2711100160c30f8",
           "issue_codes": [],
           "warning_codes": []
@@ -57907,7 +58311,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "28a1e68de467ed557ab667e1b80a7a5584aac8211817c45e6f76a1c344f7628a",
           "issue_codes": [],
           "warning_codes": []
@@ -78503,7 +78907,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "371951dda8885071e92902c04fd0deb7c36df7ae5adcfb2c65a7a1ebdc9e6256",
           "issue_codes": [],
           "warning_codes": []
@@ -82848,7 +83252,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T16:36:34.186Z",
+          "checked_at": "2026-09-05T16:51:14.960Z",
           "fingerprint": "fc6394929dd9caf6a77ab1a8265c01d7c1fddece2fc2a73b24676eceaeed40eb",
           "issue_codes": [],
           "warning_codes": []
@@ -122460,5 +122864,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T15:11:13.065Z"
+  "public_updated_at": "2026-09-05T16:51:14.960Z"
 }

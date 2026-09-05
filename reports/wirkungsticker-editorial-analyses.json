@@ -2,25 +2,65 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-05T16:39:12.580Z",
-  "scanned_stories": 87,
+  "started_at": "2026-09-05T16:52:58.753Z",
+  "scanned_stories": 88,
   "scanned_subjects": 64,
   "editorial_candidates": 6,
-  "ready_for_research": 0,
+  "ready_for_research": 1,
   "research_pending": 2,
   "editorial_research_sources_discovered": 6,
-  "selected": 0,
-  "editorial_research_started": 0,
+  "selected": 1,
+  "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
-  "quality_retries": 0,
+  "research_calls": 2,
+  "research_tokens": 20059,
+  "analysis_tokens": 12485,
+  "estimated_cost_usd": 0.071227,
+  "quality_retries": 1,
   "publication_deferred": false,
-  "failed": [],
+  "failed": [
+    {
+      "story_id": "wt-4742476ae893311b",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_IMPACT_OPEN,EDITORIAL_SELF_FRAME_FAILED"
+    }
+  ],
   "candidates": [
+    {
+      "story_id": "wt-4742476ae893311b",
+      "story_slug": "sabotage-polizei-und-staatsanwaltschaft-fahnden-nach-tatverdachtigem-93311b",
+      "story_title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
+      "editorial_analysis_score": 79,
+      "analysis_gain": 53,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 10,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 5,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 8,
+        "evidence_quality": 8
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 13,
+        "primary_source_count": 0,
+        "cited_claim_count": 85,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "009de1fc2b2d661492718cc8e0fd9446585289a1ba044ac23d5a7520a875a3d3",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-3d901522efd87e2d",
       "story_slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
@@ -55,41 +95,6 @@
       "fingerprint": "6050c749ed2800ac1c360d181c19b6115714eae2c6db9b871a0c8f0931f179f8",
       "status": "published",
       "analysis_id": "woek-analysis-cf42f2c67306"
-    },
-    {
-      "story_id": "wt-6c26e428b894e714",
-      "story_slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
-      "story_title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
-      "editorial_analysis_score": 77,
-      "analysis_gain": 53,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 10,
-        "impact_risk": 8,
-        "observed_impact": 0,
-        "third_order_relevance": 5,
-        "transformation_relevance": 3,
-        "resilience_relevance": 8,
-        "macro_relevance": 3,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 8,
-        "evidence_quality": 8
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 13,
-        "primary_source_count": 0,
-        "cited_claim_count": 81,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "5f3f1ea154a0a471ef080877764d397f3a7d07bb0b9cda59e9072552d9854a62",
-      "status": "published",
-      "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
       "story_id": "wt-aabe8c0430bf8f84",
@@ -236,5 +241,6 @@
       "status": "published",
       "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
-  ]
+  ],
+  "completed_at": "2026-09-05T16:54:10.152Z"
 }
