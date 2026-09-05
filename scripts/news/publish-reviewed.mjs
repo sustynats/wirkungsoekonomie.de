@@ -19,7 +19,7 @@ export function prepareReviewedStory(review, registry, stories, now) {
     if (!registered || registered.role === "F") throw new Error("EDITORIAL_SOURCE_NOT_ALLOWED");
     return { ...input, publisher: registered.name, publisher_id: registered.publisher_id, primary_source: registered.primary_source, source_type: registered.source_type, publisher_kind: registered.publisher_kind, requires_corroboration: Boolean(registered.requires_corroboration), source_topic: registered.topic, content_hash: sha256(JSON.stringify(input)) };
   });
-  const candidate = { story_id: id, title: review.title, slug: existing?.slug || `${slugify(review.title)}-${id.slice(-6)}`, first_seen: existing?.first_seen || review.research_checked_at, sources, existing_story: existing, source_summary: review.analysis.source_summary, event_id: eventFingerprint(sources[0]).id, event_detected_at: review.research_checked_at, event_first_seen_at: review.research_checked_at, content_hash: sha256(JSON.stringify(review)) };
+  const candidate = { story_id: id, title: review.title, slug: existing?.slug || `${slugify(review.title)}-${id.slice(-6)}`, first_seen: existing?.first_seen || review.research_checked_at, sources, existing_story: existing, source_summary: review.analysis.source_summary, event_id: existing?.event_id || eventFingerprint(sources[0]).id, event_detected_at: review.research_checked_at, event_first_seen_at: existing?.event_first_seen_at || review.research_checked_at, content_hash: sha256(JSON.stringify(review)) };
   candidate.claims = claimLedgerFor(sources, id, now);
   candidate.preanalysis = preAnalyzeStory(candidate, now);
   candidate.topic = review.topics || candidate.preanalysis.topics;
@@ -32,6 +32,10 @@ export function prepareReviewedStory(review, registry, stories, now) {
   if (errors.length) return { errors, candidate };
   const record = publishedRecord(candidate, analysis, { provider: "editorial_review", model: "source_bound_review", mode: "editorial_review", method_sources: review.method_sources }, now);
   record.editorial_review = { research_checked_at: review.research_checked_at, basis: review.review_basis, original_event_date: review.original_event_date, exclusions: review.exclusions || [] };
+  if (review.correction_note && existing && existing.content_hash !== candidate.content_hash) {
+    if (typeof review.correction_note !== "string" || review.correction_note.length > 1500) throw new Error("EDITORIAL_CORRECTION_NOTE_INVALID");
+    record.corrections = [...(existing.corrections || []), { at: now, note: review.correction_note }];
+  }
   return { errors: [], record, unchanged: existing?.content_hash === candidate.content_hash };
 }
 

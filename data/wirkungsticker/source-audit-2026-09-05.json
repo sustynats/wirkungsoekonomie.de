@@ -16,7 +16,7 @@
     "observation_window": "30 Tage; bei weniger als 20 gesehenen Einträgen und acht erfassten Läufen keine automatische Review-Markierung."
   },
   "summary": {
-    "registered_sources": 69,
+    "registered_sources": 70,
     "active_automated_sources": 47,
     "trial_sources": 3,
     "coverage_good": 27,
@@ -1101,6 +1101,13 @@
       "trial_mode": false
     },
     {
+      "source_id": "ntv-case-research",
+      "name": "n-tv",
+      "role": "C",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
       "source_id": "landtag-sachsen-anhalt-context",
       "name": "Landtag Sachsen-Anhalt",
       "role": "D",
@@ -1641,6 +1648,33 @@
       "source_utility_score": 50,
       "metrics": {
         "items_seen": 180,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "ntv-case-research",
+      "role": "C",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
         "items_local_rejected": 0,
         "items_duplicate": 0,
         "items_existing_story": 0,
