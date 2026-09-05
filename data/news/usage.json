@@ -5201,6 +5201,63 @@
       },
       "source_failures": 0,
       "quality_holds": 1
+    },
+    {
+      "run_id": "news-run-3fb785f6e2d2",
+      "started_at": "2026-09-05T14:51:17.850Z",
+      "completed_at": "2026-09-05T14:51:49.929Z",
+      "berlin_slot": "Nachmittagsupdate",
+      "counts": {
+        "feed_entries_fetched": 929,
+        "feed_entries_new": 31,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 559,
+        "story_clusters": 37,
+        "locally_rejected": 34,
+        "ai_stories": 0,
+        "ai_requests": 0,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 0,
+        "media_checks_triggered": 0,
+        "media_checks_skipped": 0,
+        "media_checks_ai_promoted": 0,
+        "media_check_tokens": 0,
+        "self_frame_rewrites": 0,
+        "source_integrity_holds": 1,
+        "published_stories": 0,
+        "updated_stories": 0
+      },
+      "ai": null,
+      "source_failures": 0,
+      "quality_holds": 36
+    },
+    {
+      "run_id": "editorial-385abe614e76",
+      "started_at": "2026-09-05T14:51:51.466Z",
+      "completed_at": "2026-09-05T14:52:21.168Z",
+      "berlin_slot": "automatische WÖK-Analyse",
+      "counts": {
+        "editorial_candidates": 6,
+        "editorial_research_started": 1,
+        "editorial_analyses_published": 1,
+        "editorial_analyses_updated": 0,
+        "editorial_research_sources_discovered": 6,
+        "research_calls": 1,
+        "research_tokens": 5440,
+        "analysis_tokens": 5356
+      },
+      "ai": {
+        "requests": 1,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 5440,
+        "output_tokens": 5356,
+        "estimated_cost_usd": 0.028182,
+        "token_source": "provider_or_conservative_editorial_analysis"
+      },
+      "source_failures": 0,
+      "quality_holds": 0
     }
   ]
 }
