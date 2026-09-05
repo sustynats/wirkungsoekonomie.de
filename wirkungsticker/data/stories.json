@@ -1,7 +1,96 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T08:06:46.297Z",
+  "updated_at": "2026-09-05T08:36:15.992Z",
   "stories": [
+    {
+      "story_id": "wt-bba0a3bb9ff283b4",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-d95e45b43d8ec572-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-1e9435421e5cf3d3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-f023c92e0aa48540-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nach-cyberangriff-auf-berlins-verwaltung-stundenzettel-im-darknet-f283b4",
+      "title": "Nach Cyberangriff auf Berlins Verwaltung: Stundenzettel im Darknet",
+      "source_summary": "Die Quelle berichtet über den Berliner Cyberangriff und das Auslaufen eines Ultimatums an den Senat. Danach habe die Hackergruppe Rhysida die erbeuteten Daten im Darknet veröffentlicht; die Redaktion verweist auf eine laufende Prüfung durch die Senatskanzlei.\n\nGenannt werden als mögliche Inhalte unter anderem Bauangelegenheiten, Notfallpläne, Bewerbungsverfahren, Stundenzettel, Wiedereingliederungsmaßnahmen und Betriebsratsunterlagen. Außerdem heißt es, die Erpresser hätten 30 Bitcoin verlangt, und der Senat habe vorab erklärt, kein Lösegeld zu zahlen. Betroffene sollen nach Angaben der Senatskanzlei kontaktiert werden.",
+      "summary": "Nach dem Berliner Cyberangriff sollen gestohlene Daten im Darknet veröffentlicht worden sein. Der Senat lässt die Dateien prüfen und will betroffene Personen kontaktieren.",
+      "detail_summary": "Gesichert belegt ist nach der vorliegenden Quelle vor allem die Abfolge: Das Ultimatum an den Berliner Senat lief ab, danach wurden die Daten von der Hackergruppe Rhysida öffentlich zugänglich gemacht. Die Meldung nennt außerdem die zuvor geforderte Lösegeldsumme von 30 Bitcoin und verweist darauf, dass der Senat keine Zahlung leisten wollte. Inhaltlich sollen in den Dateien unter anderem Verwaltungsdokumente, Stundenzettel, Bewerbungsunterlagen und Notfallpläne liegen. Für die Betroffenen bedeutet das ein mögliches Risiko von Identitätsmissbrauch, zusätzlicher Informationsoffenlegung und administrativem Aufwand. Materiell relevant ist der Vorgang vor allem wegen der Sensibilität der veröffentlichten Verwaltungsdaten und möglicher Folgekaskaden für Beschäftigte und Verwaltung. Offen bleibt hier, wie groß der tatsächlich zugängliche Datensatz ist und welche betroffenen Personen oder Stellen bereits sicher identifiziert wurden.",
+      "why_relevant": "Der Vorgang betrifft sensible Verwaltungsdaten, mögliche Identitätsrisiken und die Reaktion einer Landesverwaltung auf Erpressung nach einem Cyberangriff.",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Veröffentlichung kann Beschäftigte und weitere Betroffene durch Offenlegung sensibler Verwaltungsdaten direkt betreffen."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus der Quelle ergibt sich kein direkter Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Vertraulichkeit, Verwaltungsfähigkeit und das Vertrauen in staatliche Informationssicherheit."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-05T08:20:00.000Z",
+      "last_updated": "2026-09-05T08:37:06.303Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-d19b8d8749731496b454",
+      "case_file": null,
+      "source_published_at": "2026-09-05T08:20:00.000Z",
+      "published_at": "2026-09-05T08:37:06.303Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Senat betroffene Personen und Unternehmen identifiziert und informiert hat.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Mitteilung oder bestätigte Benachrichtigungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-38f1d8923e28a376",
+          "announced_at": "2026-09-05T08:20:00.000Z",
+          "follow_up_date": "2026-09-12T08:37:06.303Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T08:20:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-015e477e516f3f8b",
       "title_image": {
