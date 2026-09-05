@@ -91,7 +91,9 @@ jobs:
           WT_CHROME_NO_SANDBOX: "true"
           # Eigene authentifizierte Nachrichten-Lane; öffentliche KI-Limits unverändert.
           WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "12"
-          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "48"
+          # Reserve eight of the 48 Oracle calls for the independent
+          # editorial/media gates and for a safe handover between runs.
+          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "40"
           # Technische Wiederholungen bleiben in der dauerhaften Stunden-Queue. So
           # verbraucht ein 503 nicht mehrere der vier reservierten Worker-Slots.
           WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"
