@@ -203,5 +203,10 @@ test("Generator bindet Portrait, eigenständige Route, Rücklink, RSS und gemisc
   assert.equal((html.match(/Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie/g) || []).length, 1);
   assert.match(html, /href="\.\.\/\.\.\/\.\.\/methodik\/"/);
   assert.match(html, /href="\.\.\/\.\.\/#methodik"/);
+  assert.match(html, /id="analysis-visuals-title"/);
+  assert.match(html, /Die Wirkungsstruktur auf einen Blick/);
+  assert.match(html, /aria-label="Mensch: hoch"/);
+  assert.match(html, /Vom Ereignis zur systemischen Folge/);
+  assert.match(html, /Erste Ordnung – unmittelbar/);
   assert.match(storyPage(story, { editorialAnalysis: analysis }), /WÖK-Analyse zu diesem Thema/);
 });
