@@ -29278,7 +29278,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-24f948c3062a0ccce5e6",
+      "event_id": "event-e58efb35b527ea929251",
       "first_seen_at": "2026-09-04T03:21:31.830Z"
     },
     "005593383f7067f44b6e52d93532a438d7e28937dae60c05ac2f33e68b7c3c52": {
@@ -68116,7 +68116,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-7725e87fcc2b62896e83",
+      "event_id": "event-53de10df4f68e93ec96a",
       "first_seen_at": "2026-09-04T17:21:09.783Z"
     },
     "4b9e044b88c5bf30f128efc949ba53dca33487a38becfe8fabdc922e1705486c": {
@@ -82051,7 +82051,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-b17a2d1344e3e0336396",
+      "event_id": "event-b41cee1ee68fadae72f2",
       "first_seen_at": "2026-09-05T08:06:46.297Z"
     },
     "3003b184f5237edc531b4dd6aafa6ddbde994a49b6e1baff53abc296bbc0d4f2": {
@@ -89826,7 +89826,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-2ad73e936bd26f461175",
+      "event_id": "event-72ae9f8aa4a7b9f609e9",
       "first_seen_at": "2026-09-05T13:54:59.667Z"
     },
     "1522ef5c43350c683d83e7ed2135384f4141e03cfe3ee7070a0f938ffc8f2bf3": {
@@ -92363,7 +92363,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-055bb618122c85416084",
+      "event_id": "event-71017bf01deb22c62170",
       "first_seen_at": "2026-09-05T13:54:59.667Z"
     },
     "66b8311ff076c34a2da47858e2c2162336c1e080e19d460a63bef95315b7e227": {
@@ -92957,7 +92957,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-fb8018e9c624d8aaf087",
+      "event_id": "event-b41cee1ee68fadae72f2",
       "first_seen_at": "2026-09-05T14:13:45.805Z"
     },
     "19f71e45c78761eda8aa7bc4154a6742a1525480e54086a60efa9cfda495e7f6": {
@@ -93386,7 +93386,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-e9ef80fd13467567f25a",
+      "event_id": "event-71017bf01deb22c62170",
       "first_seen_at": "2026-09-05T14:51:17.850Z"
     },
     "db0d0138e6425987497f69851d0a177ddec75be91a228052e2c06109a3431f8d": {
@@ -198168,7 +198168,32 @@
         ]
       },
       "id": "event-28a661fe3f1acf4e79bb",
-      "event_detected_at": "2026-09-05T16:36:34.186Z"
+      "event_detected_at": "2026-09-05T16:36:34.186Z",
+      "story_id": "wt-4742476ae893311b",
+      "relevance": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "attention_impact_gap": null
     },
     "event-5e6ae95d2931fa8b346f": {
       "title_terms": [
@@ -212757,7 +212782,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-24f948c3062a0ccce5e6",
+      "event_id": "event-e58efb35b527ea929251",
       "source_item_id": "b1f75024e44cb4822aa189ad11e89354e36d80e53966eb1e82336e61ebbab56f",
       "source_id": "wdr-nachrichten",
       "role": "journalistic_report"
@@ -219837,7 +219862,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-7725e87fcc2b62896e83",
+      "event_id": "event-53de10df4f68e93ec96a",
       "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
       "source_id": "wdr-nachrichten",
       "role": "journalistic_report"
@@ -222369,7 +222394,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-b17a2d1344e3e0336396",
+      "event_id": "event-b41cee1ee68fadae72f2",
       "source_item_id": "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
       "source_id": "tagesspiegel-home",
       "role": "journalistic_report"
@@ -223785,7 +223810,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-2ad73e936bd26f461175",
+      "event_id": "event-72ae9f8aa4a7b9f609e9",
       "source_item_id": "3c56356eb3d34e342c77f1703d4bb0bbb8762f1d9c9f30f5ec13f0c4a417e6eb",
       "source_id": "france24-en",
       "role": "journalistic_report"
@@ -224247,7 +224272,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-055bb618122c85416084",
+      "event_id": "event-71017bf01deb22c62170",
       "source_item_id": "b3b61b9a82cdf7ec0e5c191c25db15e381b4219c0c673cb3d9c52543245fd1c6",
       "source_id": "spiegel-schlagzeilen",
       "role": "journalistic_report"
@@ -224355,7 +224380,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-fb8018e9c624d8aaf087",
+      "event_id": "event-b41cee1ee68fadae72f2",
       "source_item_id": "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854",
       "source_id": "tagesspiegel-home",
       "role": "journalistic_report"
@@ -224433,7 +224458,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-e9ef80fd13467567f25a",
+      "event_id": "event-71017bf01deb22c62170",
       "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
       "source_id": "wiwo-schlagzeilen",
       "role": "journalistic_report"
@@ -338040,7 +338065,269 @@
         "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
       ],
       "rationale": "Gegenüber dem bisherigen Stand liefert die Quelle die konkreten Stoffe und präzisiert die laufende Fahndung. Der Fall betrifft kritische Energieinfrastruktur und ist deshalb materiell, auch wenn vieles weiter offen ist."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-456d531f3d66c4032ebc",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-791815da9c1316d4332f",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-38011391daff71050742",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-4c478ed30911a06dbc6f",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-015e477e516f3f8b",
+      "event_id": "event-b5cad91fc7800c5ee413",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "euronews-en",
+          "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+          "code": "SOURCE_URL_INVALID",
+          "detail": "Die Quellen-URL ist nicht als öffentliche HTTPS-Adresse prüfbar."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-33e396f2be1a3a1f",
+      "event_id": "event-b3909a98d9ba9b7edf64",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "rationale": "Gegenüber dem bisherigen Stand ist die Zahl der gefundenen Vorrichtungen neu und präzisiert den Umfang des Vorfalls an kritischer Infrastruktur."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-eb6e7bfa7e906259",
+      "event_id": "event-aaf5027a1c1ce5bf0c81",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegenden Quellen wiederholen nur die bereits veröffentlichte Warnung vor Phishing und die vage Bezugnahme auf das Daten-Leak; gegenüber der vorhandenen Historie fehlt eine materiell neue, eigenständige Information."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-aaa7e98d9c993988",
+      "event_id": "event-5f3d82645fd193edc18e",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen wiederholen im Kern die bereits veröffentlichte Fahndung und die Zuschreibung „Klimaextremismus“; eine materiell neue, anders belegte Entwicklung fehlt."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-b14b47324d087353",
+      "event_id": "event-72ae9f8aa4a7b9f609e9",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH"
+      ],
+      "rationale": "Die Quelle ergänzt die frühere Lage um eine konkrete zweite Rettung und den fortgesetzten Suchkontext; das ist mehr als bloße Wiederholung."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-bba0a3bb9ff283b4",
+      "event_id": "event-d19b8d8749731496b454",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt im Kern bereits gemeldete Details zur Veröffentlichung der Berliner Verwaltungsdaten nach dem Ultimatum; gegenüber der vorhandenen Vorgeschichte ist keine materielle neue Information belegt."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-743a635e023f5ff0",
+      "event_id": "event-e58efb35b527ea929251",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte WDR-Quelle bestätigt nur den bereits veröffentlichten Stand zu K714 und Monheims Haushaltsdruck; gegenüber der bestehenden Akte ist keine materiell neue Information belegt."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-a5874ae28ed5533f",
+      "event_id": "event-53de10df4f68e93ec96a",
+      "decision": "held_or_rejected",
+      "errors": [
+        "MEDIA_IMPACT_REQUIRED",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Es gibt neue, konkrete Angaben zu Zugriff, Fahndung, Fundorten und Spurensicherung; das ist mehr als eine bloße Wiederholung des bisherigen Suchstands."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-d80fd849c477e2ad",
+      "event_id": "event-ef24781d9a226809238d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegenden Angaben wiederholen die bereits veröffentlichte MDR-Meldung ohne neue belastbare Information oder substantiell bessere Beleglage."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-9de543ac63864ad7",
+      "event_id": "event-54b00f814a91f1c08961",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle bestätigt nur die bereits veröffentlichte Ankündigung eines 13-Punkte-Plans gegen Gewalt an Schulen; gegenüber der vorhandenen Akte steckt keine neue materielle Information darin."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-06476c6e980f5f47",
+      "event_id": "event-d0ea56670f7c42bbc7a0",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quellen wiederholen den Wahlkampf-Endspurt mit Demonstrationen und erwarteten Kundgebungen, ohne eine materiell neue Entwicklung gegenüber der bereits veröffentlichten Lage zu belegen."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-d7a0af1afc831caf",
+      "event_id": "event-0fef8df3a32c15bcde8d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH"
+      ],
+      "rationale": "Der Vorgang ist mehr als ein Routinehinweis: Er beschreibt einen erneuten, konkret terminierten Vermittlungsversuch mit möglichem Einfluss auf den Kriegskanal und ergänzt die frühere Lage um belastbare Zusatzdetails."
+    },
+    {
+      "at": "2026-09-05T18:06:31.189Z",
+      "story_id": "wt-1633927424587a06",
+      "event_id": "event-71017bf01deb22c62170",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH"
+      ],
+      "rationale": "Gegenüber der Vorabmeldung liegt mit der Ankunft in Moskau und dem geplanten Treffen ein neuer, materieller Entwicklungsschritt in einem sicherheitspolitisch relevanten Vorgang vor."
     }
   ],
-  "updated_at": "2026-09-05T17:51:35.693Z"
+  "updated_at": "2026-09-05T18:06:31.189Z"
 }
