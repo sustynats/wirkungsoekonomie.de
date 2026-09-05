@@ -31,14 +31,13 @@ import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeli
 import { IMAGE_CONFIG } from "./title-image/policy.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint } from "./evidence-packets.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
-import { reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
+import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
 import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSourceFunnel } from "./source-funnel.mjs";
 import { sourceCoverageDegraded } from "./check-run-health.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
 const RELEVANCE_BACKFILL_DAYS = 7;
-const MAX_QUALITY_RETRIES = 3;
 const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE"]);
 const CAPACITY_HOLD_REASONS = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
 const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
@@ -57,6 +56,8 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_SOURCE_SUMMARY_(?:LENGTH|PARAGRAPHS|NOT_NEUTRAL)$/,
   /^AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:/,
   /^AI_EXCESSIVE_SOURCE_SUMMARY_COPY$/,
+  /^AI_EX_ANTE_CAUSAL_OVERCLAIM$/,
+  /^CLAIM_INDEPENDENCE_NOT_ESTABLISHED$/,
   /^(?:NEWS_STATUS_REQUIRED|EVENT_CLAIMS_REQUIRED|EVENT_CLAIM_INVALID|FOLLOWUPS_ARRAY_REQUIRED|FOLLOWUP_INVALID|FOLLOWUP_DATE_INVALID)$/,
   /^(?:CLAIM_EVIDENCE_REQUIRED|CLAIM_EVIDENCE_NOT_IN_SOURCE|CLAIM_NUMBER_NOT_IN_EVIDENCE)$/,
   /^(?:CLAIM_PRIMARY_SOURCE_MISSING|CONFIRMED_STATUS_OVERCLAIM|FOLLOWUP_DATE_UNSUPPORTED)$/,
@@ -77,7 +78,7 @@ const EDITORIAL_REJECTION_ERRORS = new Set([
   "AI_DUPLICATE_WITHOUT_UPDATE",
 ]);
 const RETRY_COMPANION_ERRORS = new Set([
-  "AI_MATERIALITY_GATE_FAILED",
+  ...EDITORIAL_REJECTION_ERRORS,
 ]);
 const files = {
   registry: path.join(ROOT, "content/news/source-registry.json"),
@@ -317,7 +318,10 @@ function retiredRecord(candidate, now, qualityErrors) {
 export function shouldRetryQualityGate(reason, qualityErrors, retryCount = 0, retryAfter = null, now = null) {
   if (!["QUALITY_GATE_FAILED", "AI_OUTPUT_INVALID"].includes(reason) || !Array.isArray(qualityErrors) || !qualityErrors.length) return false;
   if (retryAfter && now && Date.parse(retryAfter) > Date.parse(now)) return false;
-  if (Number(retryCount || 0) >= MAX_QUALITY_RETRIES && !retryAfter) return false;
+  // Older queue records have a retry count but no retry timestamp. They must
+  // not remain permanently parked after the old three-attempt ceiling. The
+  // next failed attempt writes the existing bounded exponential backoff.
+  // Pure, well-formed editorial rejections still do not retry unchanged data.
   if (reason === "AI_OUTPUT_INVALID") return qualityErrors.every((error) => OUTPUT_FORMAT_ERRORS.has(error));
   const hasStructuralError = qualityErrors.some((error) => RETRYABLE_QUALITY_ERRORS.some((pattern) => pattern.test(error)));
   return hasStructuralError && qualityErrors.every((error) => (
@@ -486,6 +490,11 @@ export function partitionAiQueue(eligible, stage, maxStories) {
   }
   const selectedIds = new Set(selected.map((candidate) => candidate.story_id));
   return { selected, deferred: eligible.filter((candidate) => !selectedIds.has(candidate.story_id)) };
+}
+
+export function aiDeferralReason(candidate, stage, remainingCalls) {
+  if (stage.stage >= 3 || (!candidate.reassessment && candidate.preanalysis.internal_relevance_score < stage.threshold)) return "AI_BUDGET_BLOCKED";
+  return remainingCalls === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
 }
 
 export function retainUsageHistory(runs, now) {
@@ -836,7 +845,9 @@ export async function runWirkungsticker(options = {}) {
     candidate.followup_due = dueFollowupIds.has(candidate.story_id);
     candidate.deepening_due = dueDeepeningIds.has(candidate.story_id);
     const alternativeItems = allItems.filter((item) => !subjectConflict(item, candidate) && (livingFileMatch(item, candidate).score > 0 || candidate.sources.some((source) => !subjectConflict(item, source) && eventCompatibility(item, source).same_event)));
-    candidate.sources = mergeSources(candidate.sources, alternativeItems);
+    const mergedSources = mergeSources(candidate.sources, alternativeItems);
+    candidate.sources = reconcileKnownSourceAliases(mergedSources);
+    report.source_aliases_reconciled = Number(report.source_aliases_reconciled || 0) + mergedSources.length - candidate.sources.length;
     candidate.claims = claimLedgerFor(candidate.sources, candidate.story_id, now);
     candidate.evidence_groups = evidenceGroups(candidate.sources);
     candidate.content_hash = storyContentHash(candidate);
@@ -870,6 +881,20 @@ export async function runWirkungsticker(options = {}) {
   newsroom.decisions ||= [];
   for (const candidate of clusters.filter((candidate) => !eligible.includes(candidate))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
   const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
+  // A local relevance rejection is a completed decision, not an AI-capacity
+  // backlog. Preserve published text and history; changed source arrivals can
+  // still reopen the same story through normal discovery.
+  for (const candidate of clusters.filter(candidate => !eligible.includes(candidate))) {
+    const existing = candidate.existing_story;
+    if (!existing) continue;
+    if (existing.published) {
+      const { pending_update: _pendingUpdate, ...preserved } = existing;
+      byId.set(candidate.story_id, { ...preserved, review_checkpoint: { ...reviewCheckpoint(candidate, now, "no_material_update"), reviewed_by: "local_relevance_filter" } });
+    } else {
+      byId.set(candidate.story_id, rejectedRecord(existing, now, ["LOCAL_RELEVANCE_BELOW_THRESHOLD"]));
+    }
+    report.local_queue_completed = Number(report.local_queue_completed || 0) + 1;
+  }
   // Check size before assigning paid slots. A blocked file must never starve the
   // next eligible story or be mislabeled as an outage of the AI provider.
   const ready = eligible.filter(candidate => {
@@ -914,8 +939,9 @@ export async function runWirkungsticker(options = {}) {
   report.ai_batch_size = aiBatchSize;
   report.ai_batches_planned = Math.ceil(selected.length / aiBatchSize);
 
-  const deferredReason = stage.stage >= 3 ? "AI_BUDGET_BLOCKED" : remainingAiCallsThisHour === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
   for (const candidate of deferred) {
+    const deferredReason = aiDeferralReason(candidate, stage, remainingAiCallsThisHour);
+    if (deferredReason === "AI_BUDGET_BLOCKED") report.budget_deferred = Number(report.budget_deferred || 0) + 1;
     bumpCandidateFunnel(sourceFunnel, candidate, "capacity_deferred");
     byId.set(candidate.story_id, pendingRecord(candidate, deferredReason, now));
     report.quality_holds.push({ story_id: candidate.story_id, reason: deferredReason });

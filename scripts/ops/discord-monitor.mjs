@@ -65,7 +65,7 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
   const legacyCapacity = legacyHolds.filter(hold => /BUDGET|LIMIT|DISABLED|RUN_TIME/.test(hold.reason || '')).length;
   const legacyTechnical = (report?.input_holds?.length || 0) + legacyHolds.filter(hold => /PROVIDER_UNAVAILABLE|OUTPUT_INVALID/.test(hold.reason || '')).length;
   const legacyEditorial = legacyHolds.length - legacyCapacity - legacyHolds.filter(hold => /PROVIDER_UNAVAILABLE|OUTPUT_INVALID/.test(hold.reason || '')).length + (report?.source_integrity_holds?.length || 0);
-  const queue = report?.queue || {
+  const queue = report?.queue ? { ...report.queue, total: report.queue.total ?? report.queue.after ?? pendingTotal } : {
     status: legacyTechnical ? 'draining' : pendingTotal ? 'draining' : legacyEditorial ? 'editorial_holds' : 'clear',
     total: pendingTotal,
     capacity: legacyCapacity + Math.max(0, pendingTotal - legacyCapacity - legacyTechnical - legacyEditorial),

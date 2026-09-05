@@ -1,8 +1,53 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-05T20:51:40.373Z",
+  "updated_at": "2026-09-05T21:17:19.384Z",
   "candidates": [
+    {
+      "story_id": "wt-6347f9739484a7d1",
+      "story_slug": "nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh-84a7d1",
+      "story_title": "Nach Sabotage: Mehr Polizei an kritischer Infrastruktur in SH",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 64,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 0,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 8,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "open",
+        "independent_origin_count": 14,
+        "primary_source_count": 0,
+        "cited_claim_count": 88,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "source_integrity_open",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "04a94ad7b4098e50269e588736f64ea6d81edbbab8d5b4555590861a56a8f91d",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-6a7145e6dc679f95",
       "story_slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
@@ -87,8 +132,8 @@
         "reasons": []
       },
       "fingerprint": "692ec37ba57b489213b36cd736b0fe8371be569f545a74b84d3936b0c4bfa18d",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-0bfd0f9a3434"
     },
     {
       "story_id": "wt-f2edeab46d126d83",
@@ -216,8 +261,8 @@
         "reasons": []
       },
       "fingerprint": "031e49918d0d6a49b8108f9f992be324d092a20c1f2c8f06e6b6b4d265653c07",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-852ebdd0a0aa"
     },
     {
       "story_id": "wt-79a8fce4900e254f",
@@ -5396,6 +5441,893 @@
           ]
         }
       ]
+    },
+    {
+      "analysis_id": "woek-analysis-852ebdd0a0aa",
+      "story_id": "wt-b5e0a39f46388642",
+      "related_story_ids": [
+        "wt-b5e0a39f46388642"
+      ],
+      "related_case_id": null,
+      "slug": "fast-700-000-hektar-brandflache-was-die-eu-waldbrandsaison-2026-uber-belastung-und-852ebd",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "031e49918d0d6a49b8108f9f992be324d092a20c1f2c8f06e6b6b4d265653c07",
+      "candidate_score": 84,
+      "analysis_gain_score": 60,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 3,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T21:07:03.109Z",
+      "updated_at": "2026-09-05T21:07:03.109Z",
+      "version": 1,
+      "editorial_question": "Was bedeutet die von der EU-Kommission gemeldete Brandfläche von fast 700.000 Hektar in diesem Sommer für Belastung, Resilienz und Prioritäten in der EU – und was lässt sich daraus noch nicht ableiten?",
+      "analysis_type": "system_analysis",
+      "title": "Fast 700.000 Hektar Brandfläche: Was die EU-Waldbrandsaison 2026 über Belastung und Resilienz zeigt",
+      "subtitle": "Die Kommission meldet eine außergewöhnlich große verbrannte Fläche. Der zusätzliche Erkenntniswert liegt weniger in der Zahl selbst als in ihrem systemischen Wirkpfad.",
+      "teaser": "Die EU-Kommission spricht von fast 700.000 Hektar verbrannter Fläche in diesem Sommer. Das zeigt vor allem, wie stark Brandereignisse Schutz, Anpassung und Krisenfähigkeit unter Druck setzen können.",
+      "seo_description": "EU-Waldbrandsaison 2026: Fast 700.000 Hektar verbrannt – was die Zahl über Belastung, Resilienz und EU-Prioritäten aussagt.",
+      "additional_value": "Der zusätzliche Wert dieser Analyse liegt darin, die gemeldete Brandfläche nicht als bloße Schlagzeile zu behandeln, sondern als Hinweis auf einen möglichen Belastungszustand des Systems aus Bevölkerungsschutz, Umwelt, Infrastruktur und öffentlicher Steuerung. Die Meldung ist ein Zustandsindikator, aber kein Wirkungsnachweis für Ursachen, Langfristtrends oder politische Wirksamkeit. Genau diese Trennung macht sichtbar, wo die Zahl belastbar ist und wo nicht.",
+      "research_summary": "Im vorliegenden Material liegt als maßgebliche Quelle die Rede der Kommissarin Lahbib im Europäischen Parlament vor. Darin heißt es, in diesem Sommer seien in der EU bereits fast 700.000 Hektar verbrannt, mehr als der Jahresdurchschnitt der vergangenen zwei Jahrzehnte. Ergänzend liegen zwei weitere institutionelle Quellen vor, die jedoch keine zusätzlichen Angaben zur Waldbrandsaison enthalten. Der Kernbefund ist damit eng begrenzt: Es gibt eine amtliche Behauptung über eine große verbrannte Fläche und eine vergleichende Einordnung durch die Kommission. Nicht belegt sind im Material die genaue Methodik, die räumliche und zeitliche Abgrenzung, die Ursachen der Brände, regionale Verteilung, Folgeschäden oder eine längerfristige Veränderung des Brandgeschehens. Die Analyse bleibt deshalb strikt bei der Zustandsbeschreibung und dem systemischen Zusammenhang, ohne aus der Zahl eine weitergehende Kausalität abzuleiten.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Eine große Zahl, aber noch keine vollständige Lagebeschreibung",
+          "paragraphs": [
+            "Die Kommission meldet, dass in diesem Sommer in der EU fast 700.000 Hektar verbrannt sind. Sie sagt zugleich, diese Fläche liege über dem jährlichen Durchschnitt der vergangenen zwei Jahrzehnte. Das ist zunächst eine amtliche Größenangabe und eine relative Einordnung. Mehr nicht. Die Zahl markiert also einen auffälligen Zustand, aber sie erklärt ihn noch nicht.",
+            "Für die Einordnung ist wichtig: Eine große Brandfläche bedeutet nicht automatisch schon eine eindeutig nachgewiesene Trendwende, ebenso wenig wie sie allein eine bestimmte politische Ursache belegt. Im Material fehlen die Angaben, die für eine streng kausale Bewertung nötig wären: Methodik, räumliche Verteilung, Brandursachen, Zeitraumgrenzen und Folgen. Die Lage ist damit ernst, aber analytisch nur teilweise ausgeleuchtet."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusatznutzen: Warum die Zahl über den Feuerherd hinausweist",
+          "paragraphs": [
+            "Der zusätzliche Erkenntniswert liegt darin, dass Brandflächen dieser Größenordnung mehrere Systeme gleichzeitig unter Druck setzen können. Betroffen sind nicht nur Wälder und Böden, sondern auch Einsatzkräfte, Gesundheitsvorsorge, Wiederaufbau, kommunale Haushalte und langfristig die Anpassungsfähigkeit ganzer Regionen. Das ist keine behauptete eingetretene Wirkung, sondern der systemische Wirkpfad, den die Meldung sichtbar macht.",
+            "In der Wirkungsökonomie ist das wichtig, weil Reichweite und Wirkung nicht dasselbe sind. Eine hohe betroffene Fläche beschreibt zunächst den Umfang der Störung. Wirkung entsteht erst dort, wo sich Zustände tatsächlich verändern: etwa bei Ökosystemen, bei Schutzkapazitäten oder bei öffentlichen Kosten. Das Material belegt den Störungsumfang, nicht die Folgekette im Einzelnen."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: drei Perspektiven auf denselben Befund",
+          "paragraphs": [
+            "Aus der Perspektive des Menschen ist die Meldung relevant, weil große Waldbrandflächen Schutz- und Einsatzstrukturen beanspruchen und damit mittelbar auch Gesundheits- und Sicherheitsfragen berühren können. Das ist im Material nicht als konkrete Belastung einzelner Bevölkerungen belegt, aber als plausibler Wirkpfad erkennbar. Für die Analyse heißt das: Belastungspotenzial ja, beobachtete Wirkung noch nein.",
+            "Aus der Perspektive des Planeten ist der Befund unmittelbarer: Verbrannte Wälder, Böden und Lebensräume stehen direkt für materielle Verluste im Naturhaushalt. Für die Demokratie ist der Zusammenhang indirekter, aber real: Krisenlagen verlangen transparente Information, koordinierte öffentliche Reaktion und belastbare Prioritätensetzung. Die Quelle selbst enthält keine politische Entscheidung, aber sie markiert eine Lage, in der staatliche Koordination an Bedeutung gewinnt."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Was sicher ist, was wahrscheinlich ist, was offen bleibt",
+          "paragraphs": [
+            "Die erste Wirkungsordnung ist die direkte Zustandsänderung: verbrannte Fläche, verlorene Vegetation, beschädigter Naturraum. Diese Ebene ist durch die Meldung selbst angesprochen, auch wenn die methodischen Details fehlen. Die zweite Ordnung betrifft den Druck auf Einsatz- und Schutzsysteme. Hier liegt ein Wirkungspotenzial vor, aber kein Beweis im engeren Sinn, weil die Quelle keine Einsatzdaten, Kosten oder Ausfallfolgen liefert.",
+            "Die dritte Ordnung betrifft mögliche Anpassungs- und Priorisierungsfolgen. Wenn solche Brandlagen wiederholt auftreten, können Vorsorge, Waldmanagement und Katastrophenschutz stärker gewichtet werden. Das ist eine analytische Inferenz, keine beobachtete Veränderung. Für eine harte Zurechnung müsste man weitere Quellen zu Entscheidungen, Budgets oder institutionellen Anpassungen prüfen."
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer die Last trägt, ist im Material nicht aufgelöst",
+          "paragraphs": [
+            "Die Meldung benennt eine EU-weite Fläche, aber keine regionale oder soziale Verteilung. Damit bleibt offen, ob einzelne Mitgliedstaaten oder Bevölkerungsgruppen besonders stark betroffen sind. Gerade diese Verteilung wäre wichtig, um Belastung und Resilienz genauer zu bewerten. Eine EU-Gesamtzahl kann das Ausmaß signalisieren, aber nicht die ungleiche Betroffenheit ersetzen.",
+            "Für die Wirkungsanalyse ist das ein zentraler blinder Fleck. Ohne regionale Differenzierung lassen sich weder Priorisierungen noch Ausgleichsbedarfe seriös bestimmen. Eine Zahl von fast 700.000 Hektar kann daher als Warnsignal gelten, aber nicht als vollständige Grundlage für Verteilungsurteile oder für die Bewertung einzelner Politikinstrumente."
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten und Folgekosten: naheliegend, aber nicht belegt",
+          "paragraphs": [
+            "Großbrände erzeugen typischerweise Folgelasten, etwa für Wiederherstellung, öffentliche Infrastruktur oder Gesundheitsvorsorge. Im vorliegenden Material werden solche Kosten jedoch nicht beziffert. Deshalb wäre es falsch, aus der Brandfläche direkt eine konkrete Budgetwirkung oder einen bestimmten gesamtwirtschaftlichen Schaden abzuleiten. Das wäre eine Überschreitung der Evidenz.",
+            "Gleichzeitig macht die Meldung sichtbar, warum externe Kosten in dieser Debatte relevant sind: Die Schäden bleiben selten auf den Ort des Brandes beschränkt. Gerade darin liegt der systemische Zusatznutzen der Analyse: Sie trennt den belegten Zustandswechsel von den nur plausiblen, aber noch offenen Folgelasten."
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Belastung sichtbar, Widerstandskraft nicht gemessen",
+          "paragraphs": [
+            "Die Zahl spricht dafür, dass das System in diesem Sommer stark beansprucht wurde. Ob es auch resilient reagiert hat, ist damit noch nicht belegt. Resilienz wäre erst dann nachweisbar, wenn man etwa schnelle Eindämmung, geringe Sekundärschäden oder erfolgreiche Wiederherstellung dokumentieren könnte. Davon steht im Material nichts.",
+            "Trotzdem ist der Resilienzbezug journalistisch sinnvoll, weil die Meldung eine Schwelle markiert, an der Vorsorge und Reaktionsfähigkeit auf die Probe gestellt werden. Die Quelle belegt also eine Belastung, nicht die Leistungsfähigkeit des Systems unter Belastung. Das ist analytisch ein wichtiger Unterschied."
+          ]
+        },
+        {
+          "id": "szenarien",
+          "title": "Szenarien: Was die Zahl auslösen könnte und was sie nicht beweist",
+          "paragraphs": [
+            "Wenn sich die Lage über mehrere Jahre ähnlich darstellt, könnte das Investitionen in Prävention, Waldmanagement und Katastrophenschutz begünstigen. Das ist ein mögliches Szenario, kein Befund. Ebenso möglich ist, dass die Zahl vor allem eine besonders schwere Saison beschreibt, ohne dass sich daraus automatisch eine dauerhafte neue Lage ergibt. Beides bleibt im Material offen.",
+            "Die Meldung allein belegt also weder einen dauerhaften Trend noch eine Wirksamkeit von Gegenmaßnahmen. Sie ist ein Gegenwartsindikator mit offenem Zukunftspfad. Für die Analyse heißt das: wachsam lesen, aber nicht überdehnen."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Die offene Methodik begrenzt die Aussagekraft",
+          "paragraphs": [
+            "Die größte Unsicherheit betrifft die Mess- und Abgrenzungsfrage. Der Auszug liefert keine Methodik, keine Vergleichsreihe im Detail und keine Erklärung, wie die Fläche erfasst wurde. Auch die Frage, ob die Brandzahl bestimmte Länder, Vegetationsarten oder Zeiträume überproportional betrifft, bleibt unbeantwortet.",
+            "Hinzu kommt: Die im Paket enthaltenen weiteren Quellen sind institutionell, aber thematisch nicht ergänzend zur Waldbrandsaison. Es gibt also keine zweite, unabhängige Quellenbasis, die den konkreten Befund hier zusätzlich absichert oder präzisiert. Das mindert nicht die Relevanz der Meldung, aber es begrenzt die Stärke der Zurechnung."
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Was als Nächstes geklärt werden müsste",
+          "paragraphs": [
+            "Für eine belastbarere Bewertung wären vor allem drei Dinge nötig: erstens die exakte Methodik der Flächenmessung, zweitens regionale und zeitliche Aufschlüsselung, drittens Informationen zu Folgen für Gesundheit, Infrastruktur, Ökosysteme und öffentliche Ausgaben. Erst diese Daten würden aus dem Lageindikator eine robustere Wirkungsanalyse machen.",
+            "Ebenso wichtig wären Vergleichsdaten aus früheren Jahren und mögliche Gegenbefunde, etwa ob andere Regionen in derselben Saison entlastet waren oder ob Präventionsmaßnahmen lokal gewirkt haben. Ohne diese Ergänzungen bleibt die Analyse bewusst vorsichtig. Sie sagt: große Belastung ist belegt, größere Wirkungsketten sind möglich, aber nicht nachgewiesen."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Ein Warnsignal für Belastung, kein Beweis für Ursache oder Erfolg",
+          "paragraphs": [
+            "Die Meldung der Kommission ist systemisch wichtig, weil sie eine außergewöhnlich große verbrannte Fläche als amtlichen Befund sichtbar macht. Der zusätzliche Nutzen einer WÖK-Analyse besteht darin, die Zahl als Zustandsänderung zu lesen und zugleich ihre Grenzen zu markieren. Der Befund weist auf Belastung hin, nicht auf eine bereits bewiesene längerfristige Verschlechterung der Lage.",
+            "In der Verbindung von Mensch, Planet und Demokratie ergibt sich ein klares Bild: Brandflächen dieser Größenordnung können Schutzsysteme, Naturhaushalte und öffentliche Koordination zugleich beanspruchen. Aber die Quelle belegt weder Folgen im Detail noch politische Wirksamkeit. Genau diese Trennung schützt vor Überinterpretation. Die Zahl ist relevant, weil sie Handlungsdruck andeutet; sie ist noch kein vollständiger Wirkungsnachweis."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Die Europäische Kommission veröffentlicht am 1. September 2026 eine Rede von Kommissarin Lahbib zur Waldbrandsaison 2026.",
+          "type": "fact",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quelle ist eine institutionelle Rede der Kommission; der genaue redaktionelle Kontext ist im Material nicht weiter erläutert.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Die Kommission meldet, dass in diesem Sommer in der EU bereits fast 700.000 Hektar verbrannt sind.",
+          "type": "fact",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quelle nennt die Zahl, aber im Auszug fehlen Methodik, Abgrenzung und weiterführende Details.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Die Kommission ordnet diese Fläche als mehr Land ein als der jährliche Durchschnitt der vergangenen zwei Jahrzehnte.",
+          "type": "fact",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Im Material ist nicht erklärt, wie der Durchschnitt berechnet wurde.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Wirkung ist in der WÖK die tatsächliche Zustandsveränderung, nicht bloß Reichweite, Potenzial oder Bericht.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodische Definition aus dem Auftrag.",
+          "date": null
+        },
+        {
+          "claim": "Die gemeldete Brandfläche ist ein Zustandsindikator, aber noch kein Beleg für Ursachen, Folgekosten oder langfristige Trendwende.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Schlussfolgerung stützt sich auf das Fehlen methodischer und zeitlicher Details im Material.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Großflächige Brände können Schutz- und Einsatzsysteme, Naturhaushalte und öffentliche Haushalte unter Druck setzen.",
+          "type": "impact_potential",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Im Material selbst werden diese Folgen nicht beziffert; es handelt sich um einen systemischen Wirkpfad, nicht um einen belegten Einzelfolgenachweis.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Im vorliegenden Material ist keine beobachtete Folgewirkung wie Gesundheitsbelastung, Budgeteffekt oder politische Entscheidung belegt.",
+          "type": "observed_impact",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
+            "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
+            "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die gelieferten Quellen enthalten keine solche Folgeinformation.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Die zwei weiteren im Paket enthaltenen Quellen liefern keine zusätzlichen Angaben zur Waldbrandsaison 2026.",
+          "type": "observation",
+          "source_ids": [
+            "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
+            "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Titel und Abstracts sind thematisch nicht auf Waldbrände bezogen.",
+          "date": "2026-09-02"
+        },
+        {
+          "claim": "Aus der gemeldeten Brandfläche kann man eine mögliche Mehrbelastung für Mensch, Planet und öffentliche Steuerung ableiten, aber keine gesicherte Kausalität für längerfristige politische oder ökonomische Folgen.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Quelle zeigt eine große Brandfläche, aber keine Folgekette.",
+          "date": "2026-09-01"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Das Paket enthält keine zweite unabhängige Quelle mit konkreten Waldbranddaten oder Methodik; die weiteren Dokumente sind themenfremd.",
+          "source_ids": [
+            "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
+            "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
+          ],
+          "effect_on_assessment": "Senkt die Belegbreite für eine robuste Einordnung; die Kommissionsangabe bleibt aber als amtlicher Einzelbefund bestehen."
+        },
+        {
+          "finding": "Im Auszug fehlen Angaben zur Messmethode, zeitlichen Abgrenzung und regionalen Verteilung der verbrannten Fläche.",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "effect_on_assessment": "Begrenzt die Stärke von Trend-, Ursache- und Wirkungszuordnungen erheblich."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Eine zweite belastbare Quelle mit eigener Methodik zur verbrannten Fläche würde die Evidenz stärken.",
+        "Angaben zur regionalen Verteilung könnten Verteilungs- und Resilienzfragen präzisieren.",
+        "Daten zu Folgen für Gesundheit, Infrastruktur, Ökosysteme oder öffentliche Ausgaben würden aus dem Lageindikator eine Wirkungsanalyse machen.",
+        "Vergleichsdaten mehrerer Jahre würden zeigen, ob es sich um eine Ausnahmesaison oder einen Trend handelt."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Fast 700.000 Hektar Brandfläche: Was die EU-Waldbrandsaison 2026 über Belastung und Resilienz zeigt",
+        "recommended_summary": "Die EU-Kommission meldet fast 700.000 Hektar verbrannte Fläche. Die Zahl zeigt vor allem Belastung, aber noch keinen Beweis für Ursachen, Folgen oder langfristige Trends.",
+        "recommended_meta_description": "EU-Waldbrandsaison 2026: Fast 700.000 Hektar verbrannt – was die Zahl über Belastung, Resilienz und EU-Prioritäten aussagt."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
+          "registry_source_id": "eu-kommission-presse",
+          "publisher_id": "eu-kommission-presse",
+          "publisher": "Europäische Kommission – Press Corner",
+          "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
+          "published_at": "2026-09-01T16:09:08.000Z",
+          "primary_source": true
+        },
+        {
+          "source_id": "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
+          "registry_source_id": "ezb-presse",
+          "publisher_id": "ezb-presse",
+          "publisher": "Europäische Zentralbank",
+          "title": "Meeting of 22-23 July 2026",
+          "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html",
+          "published_at": "2026-08-27T11:30:00.000Z",
+          "primary_source": true
+        },
+        {
+          "source_id": "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6",
+          "registry_source_id": "eu-kommission-presse",
+          "publisher_id": "eu-kommission-presse",
+          "publisher": "Europäische Kommission – Press Corner",
+          "title": "Tägliche Nachrichten 02 / 09 / 2026",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/de/mex_26_1789",
+          "published_at": "2026-09-02T07:22:18.000Z",
+          "primary_source": true
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T21:07:03.109Z",
+          "source_fingerprint": "031e49918d0d6a49b8108f9f992be324d092a20c1f2c8f06e6b6b4d265653c07",
+          "title": "Fast 700.000 Hektar Brandfläche: Was die EU-Waldbrandsaison 2026 über Belastung und Resilienz zeigt",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Die Europäische Kommission veröffentlicht am 1. September 2026 eine Rede von Kommissarin Lahbib zur Waldbrandsaison 2026.",
+              "type": "fact",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quelle ist eine institutionelle Rede der Kommission; der genaue redaktionelle Kontext ist im Material nicht weiter erläutert.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Die Kommission meldet, dass in diesem Sommer in der EU bereits fast 700.000 Hektar verbrannt sind.",
+              "type": "fact",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quelle nennt die Zahl, aber im Auszug fehlen Methodik, Abgrenzung und weiterführende Details.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Die Kommission ordnet diese Fläche als mehr Land ein als der jährliche Durchschnitt der vergangenen zwei Jahrzehnte.",
+              "type": "fact",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Im Material ist nicht erklärt, wie der Durchschnitt berechnet wurde.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Wirkung ist in der WÖK die tatsächliche Zustandsveränderung, nicht bloß Reichweite, Potenzial oder Bericht.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodische Definition aus dem Auftrag.",
+              "date": null
+            },
+            {
+              "claim": "Die gemeldete Brandfläche ist ein Zustandsindikator, aber noch kein Beleg für Ursachen, Folgekosten oder langfristige Trendwende.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Schlussfolgerung stützt sich auf das Fehlen methodischer und zeitlicher Details im Material.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Großflächige Brände können Schutz- und Einsatzsysteme, Naturhaushalte und öffentliche Haushalte unter Druck setzen.",
+              "type": "impact_potential",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Im Material selbst werden diese Folgen nicht beziffert; es handelt sich um einen systemischen Wirkpfad, nicht um einen belegten Einzelfolgenachweis.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Im vorliegenden Material ist keine beobachtete Folgewirkung wie Gesundheitsbelastung, Budgeteffekt oder politische Entscheidung belegt.",
+              "type": "observed_impact",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
+                "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
+                "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die gelieferten Quellen enthalten keine solche Folgeinformation.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Die zwei weiteren im Paket enthaltenen Quellen liefern keine zusätzlichen Angaben zur Waldbrandsaison 2026.",
+              "type": "observation",
+              "source_ids": [
+                "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
+                "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Titel und Abstracts sind thematisch nicht auf Waldbrände bezogen.",
+              "date": "2026-09-02"
+            },
+            {
+              "claim": "Aus der gemeldeten Brandfläche kann man eine mögliche Mehrbelastung für Mensch, Planet und öffentliche Steuerung ableiten, aber keine gesicherte Kausalität für längerfristige politische oder ökonomische Folgen.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Quelle zeigt eine große Brandfläche, aber keine Folgekette.",
+              "date": "2026-09-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-0bfd0f9a3434",
+      "story_id": "wt-4b5d0962d323432a",
+      "related_story_ids": [
+        "wt-4b5d0962d323432a"
+      ],
+      "related_case_id": null,
+      "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "692ec37ba57b489213b36cd736b0fe8371be569f545a74b84d3936b0c4bfa18d",
+      "candidate_score": 79,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 2,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T21:07:03.109Z",
+      "updated_at": "2026-09-05T21:07:03.109Z",
+      "version": 1,
+      "editorial_question": "Was bedeutet die beihilferechtliche Genehmigung eines deutschen Kapazitätsmechanismus für Stromversorgungssicherheit, Marktsteuerung und die Verteilung von Risiken und Kosten im Energiesystem?",
+      "analysis_type": "system_analysis",
+      "title": "Deutscher Kapazitätsmechanismus: Was die EU-Genehmigung für Stromsicherheit und Systemrisiken bedeutet",
+      "subtitle": "Zwischen Versorgungssicherheit, Investitionsanreizen und offenen Verteilungsfragen liegt der eigentliche Wirkungsraum der Entscheidung.",
+      "teaser": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus genehmigt. Die Analyse ordnet ein, welche Systemwirkung das potenziell hat – und was noch offen bleibt.",
+      "seo_description": "EU genehmigt deutschen Kapazitätsmechanismus: Einordnung zu Stromsicherheit, Kosten, Flexibilität, Risiken und offenen Wirkungen ab 2031.",
+      "additional_value": "Die Analyse trennt Genehmigung, Wirkungspotenzial und tatsächliche Wirkung. Sie zeigt, dass die Entscheidung vor allem die Architektur der Stromversorgung betrifft, aber noch keine belegte Zustandsveränderung im System nachweist.",
+      "research_summary": "Die EU-Kommission hat am 2. September 2026 einen ab 2031 verfügbaren deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften genehmigt. Laut Kommission soll die Maßnahme ausreichende Kapazitäten für Erzeugung, Speicherung und flexiblen Verbrauch von Strom absichern; die geschätzten Kosten liegen bei 15,6 bis 35,2 Milliarden Euro. Die Bundesregierung teilt ergänzend mit, dass das Gesetz für neue Stromkapazitäten am 22. Juli in Kraft getreten sei. Aus den Quellen ergibt sich damit eine klare regulatorische Weichenstellung, aber noch keine belegte tatsächliche Wirkung auf Versorgungslage, Emissionen, Marktpreise oder Verteilungseffekte.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Genehmigt ist die Regel, nicht schon ihr Effekt",
+          "paragraphs": [
+            "Die Europäische Kommission hat einen deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften genehmigt. Laut ihrer Mitteilung soll die Maßnahme ab 2031 zur Verfügung stehen und ausreichende Kapazitäten für Erzeugung, Speicherung und flexiblen Verbrauch von Strom sichern, damit die erwartete Nachfrage durchweg gedeckt werden kann. Die Bundesregierung verweist ergänzend darauf, dass das Gesetz für neue Stromkapazitäten am 22. Juli in Kraft getreten ist.",
+            "Für die journalistische Einordnung ist wichtig: Hier liegt zunächst eine regulatorische Entscheidung vor, keine bereits gemessene Zustandsänderung im Stromsystem. Wirkung im Sinn der Wirkungsökonomie ist erst dann belegt, wenn sich Versorgungssicherheit, Investitionen, Flexibilität, Preise oder Emissionen tatsächlich verändert haben. Das ist aus den Quellen noch nicht ersichtlich."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusammenhang: Stromsicherheit als Basisfunktion",
+          "paragraphs": [
+            "Die Entscheidung betrifft eine Infrastruktur, von der viele andere Systeme abhängen. Stromversorgung ist nicht nur eine Marktfrage, sondern eine Basisfunktion für Haushalte, Industrie, digitale Dienste und öffentliche Versorgung. Gerade deshalb kann ein Mechanismus, der gesicherte Leistung und flexible Kapazitäten anreizt, über den Strommarkt hinaus wirken.",
+            "Der zusätzliche systemische Zusammenhang liegt also nicht in der nackten Fördersumme, sondern in der Architektur: Wenn Kapazitäten verlässlich bereitstehen sollen, verändert das die Anreizstruktur für Investitionen, die Vorhaltung von Leistung und den Umgang mit Knappheit. Ob daraus tatsächlich mehr Resilienz entsteht, ist offen; das Potenzial ist aber strukturell vorhanden."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: drei Perspektiven auf dieselbe Entscheidung",
+          "paragraphs": [
+            "Aus der Mensch-Perspektive steht die Versorgungssicherheit im Vordergrund. Wenn Stromausfälle oder Knappheiten vermieden werden, betrifft das Alltag, Wirtschaft und kritische Dienste. Die Quellen behaupten genau dieses Ziel, aber sie belegen noch nicht, dass es schon erreicht wurde.",
+            "Aus der Planet-Perspektive ist die Lage ambivalenter. Die Kommission nennt Erzeugung, Speicherung und flexiblen Verbrauch als Zielgruppen des Mechanismus. Das kann mit einer besseren Integration erneuerbarer Energien zusammenpassen, muss es aber nicht automatisch. Emissionswirkung, Technologiemix und mögliche Lock-in-Effekte bleiben in den Quellen offen. Aus der Demokratie-Perspektive berührt die Maßnahme erhebliche öffentliche Mittel und Marktregeln. Damit steigen Anforderungen an Transparenz, Begründung und spätere Korrekturfähigkeit."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Von der Vergütung zur möglichen Systemverschiebung",
+          "paragraphs": [
+            "Erste Ordnung ist die beihilferechtlich genehmigte Vergütungslogik: Kapazität soll nicht nur für tatsächlich gelieferten Strom, sondern für Vorhaltung und Verfügbarkeit honoriert werden. Das schafft ein Instrument, das Investitionen und Betriebsentscheidungen beeinflussen kann.",
+            "Zweite Ordnung sind indirekte Effekte auf Marktverhalten, Speicherwirtschaft, Flexibilitätsangebote und möglicherweise auf Netzausbau und Verbraucherlasten. Das sind plausible Wirkpfade, aber noch keine beobachteten Wirkungen. Dritte Ordnung betrifft die langfristige Systemarchitektur: Je nachdem, welche Technologien und Kriterien der Mechanismus bevorzugt, kann er die Resilienz des Energiesystems stärken oder bestehende Pfade verfestigen. Genau hier liegt ein zentraler Wirkungsrisikoraum."
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Mehr Puffer ist nicht automatisch mehr Zukunftsfähigkeit",
+          "paragraphs": [
+            "Die Quellen legen nahe, dass der Mechanismus auf Versorgungssicherheit zielt. Resilienz im WOeK-Sinn meint dabei nicht bloß Reichweite oder Aktivität, sondern die tatsächliche Fähigkeit eines Systems, Belastungen abzufedern und Funktionsfähigkeit zu erhalten. Gesicherte Kapazitäten können dazu beitragen, wenn sie dort entstehen, wo Engpässe real sind.",
+            "Gleichzeitig ist ein Resilienzgewinn nicht automatisch gegeben. Wenn vorhandene Kapazitäten lediglich teurer abgesichert werden, ohne Flexibilität oder Speicher substantiell zu stärken, könnte die Maßnahme vor allem Kosten verschieben statt Systempuffer zu erhöhen. Ob die Architektur diesen Unterschied auflöst, ist aus den Quellen nicht belegt."
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten: Kosten, Emissionen und Lock-in bleiben offen",
+          "paragraphs": [
+            "Die Kommission beziffert die geschätzten Kosten auf 15,6 bis 35,2 Milliarden Euro. Das ist zunächst eine Größenordnung der öffentlichen oder marktlich vermittelten Mittelbindung, aber noch kein Nachweis über Nutzen, Verteilungswirkung oder Effizienz. In der Wirkungsökonomie ist entscheidend, welche externen Effekte daraus folgen: Wer trägt die Kosten, wer erhält die Vorteile, und welche Folgewirkungen entstehen im System?",
+            "Offen bleibt laut Quellenlage insbesondere, ob die Maßnahme emissionsmindernd wirkt oder bestehende fossile Strukturen eher verlängert. Ebenso offen ist, ob sie Technologien fördert, die tatsächlich zur Flexibilisierung beitragen, oder ob sie primär konventionelle Leistung absichert. Diese Unterscheidung ist wesentlich, weil Wirkungspotenzial und Wirkungsrisiko gleichzeitig vorliegen können."
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer zahlt, wer profitiert, wer trägt das Risiko?",
+          "paragraphs": [
+            "Die Quellen nennen keine konkrete Kostenwälzung, keine Nutzergruppen und keine Differenzierung nach Belastungsträgern. Damit ist die Verteilungsfrage analytisch offen. Gerade bei einem Mechanismus mit Milliardenvolumen ist sie aber zentral, weil öffentliche oder quasi-öffentliche Kosten nie gleichmäßig bei allen ankommen.",
+            "Im Sinne von Nichtkompensation und Reverse-Merit-Order wäre eine Priorisierungsfrage erst dann relevant, wenn bestimmte Schutzgrenzen oder Versorgungsvorränge explizit gegeneinander abgewogen würden. Das ist hier in den Quellen nicht dargestellt. Deshalb lässt sich nur festhalten: Die Maßnahme berührt Verteilungsfragen, aber sie beantwortet sie noch nicht."
+          ]
+        },
+        {
+          "id": "szenarien",
+          "title": "Szenarien: Drei plausible Entwicklungspfade ab 2031",
+          "paragraphs": [
+            "Im günstigen Szenario erzeugt der Mechanismus tatsächlich zusätzliche gesicherte Leistung, Speicher und Flexibilität. Dann würde er die Wahrscheinlichkeit von Knappheiten senken und das Stromsystem robuster machen. Ein solcher Effekt wäre aber erst nach Einführung und im Betrieb nachweisbar.",
+            "Im mittleren Szenario schafft die Regel vor allem planbare Einnahmen, ohne das System grundsätzlich umzubauen. Dann wäre die Wirkung eher eine Absicherung bestehender Strukturen mit begrenztem Transformationsbeitrag. Im ungünstigen Szenario werden Fehlanreize, Überförderung oder lock-inartige Effekte sichtbar, sodass hohe Mittelbindung nicht in entsprechend hohe Systemqualität übersetzt wird. Alle drei Pfade bleiben vorerst hypothetisch."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was die Quellen nicht hergeben",
+          "paragraphs": [
+            "Nicht belegt sind konkrete Auktionen, technische Kriterien, die genaue Ausgestaltung der Ausschreibungen, die Verteilung der Kosten, die tatsächliche Nutzung durch Anbieter und die spätere Wirkung auf Emissionen oder Preise. Ebenfalls nicht belegt ist, ob und wie stark die Versorgungslage ab 2031 tatsächlich beeinflusst wird.",
+            "Diese Unsicherheit ist keine inhaltliche Entwarnung. Sie bedeutet vielmehr, dass die Analyse sauber zwischen Potenzial, Risiko und beobachteter Wirkung trennen muss. Der Mechanismus ist plausibel systemrelevant, aber die Quellen tragen noch kein hartes Urteil über seine tatsächliche Wirksamkeit."
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich Wirkung später messen ließe",
+          "paragraphs": [
+            "Relevant wären vor allem die konkrete Ausgestaltung der Regeln, die Ergebnisse der Ausschreibungen, der Technologiemix, die Kostenverteilung und die Versorgungslage nach dem Start. Erst daran lässt sich erkennen, ob aus der Genehmigung eine tatsächliche Zustandsveränderung entstanden ist.",
+            "Wirkungsökonomisch sinnvoll wäre zudem, auf Indikatoren zu achten, die nicht nur Reichweite abbilden, sondern echte Systemveränderung: gesicherte Leistung, Flexibilitätszuwachs, Speicheranteil, Knappheitssituationen, Preisvolatilität und mögliche emissionsseitige Effekte. Ohne solche Beobachtungen bleibt es bei der Bewertung eines Wirkungspotenzials."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Eine Weichenstellung mit hohem Systembezug, aber noch ohne Wirkungsnachweis",
+          "paragraphs": [
+            "Die Genehmigung ist ein klarer Eingriff in die Steuerungsarchitektur der Stromversorgung. Sie setzt ein Signal, dass Versorgungssicherheit, Flexibilität und Vorhaltung von Leistung künftig ausdrücklich vergütet werden sollen. Damit ist die Entscheidung systemisch relevant und politisch teuer, aber sie ist zunächst eine Voraussetzung für mögliche Wirkung, nicht deren Beleg.",
+            "Aus Sicht von Mensch, Planet und Demokratie ist die Bilanz deshalb zweigeteilt: Das Versorgungsversprechen ist plausibel, die Transformationswirkung aber offen; mögliche Resilienzgewinne stehen möglichen Lock-in- und Verteilungsrisiken gegenüber. Der zusätzliche journalistische Wert liegt genau darin, diese Ebenen nicht zu vermischen: Die Entscheidung ist bedeutend, weil sie den Pfad des Stromsystems verändert. Ob sie ihn im Sinne von mehr Sicherheit, mehr Flexibilität und besserer Nachhaltigkeit tatsächlich verbessert, muss sich erst zeigen."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Die Europäische Kommission hat einen deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften geprüft und genehmigt.",
+          "type": "fact",
+          "source_ids": [
+            "206204ebc75209a89584"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Aussage ist direkt aus der Kommissionsmitteilung übernommen.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Der Mechanismus soll ab 2031 zur Verfügung stehen.",
+          "type": "fact",
+          "source_ids": [
+            "206204ebc75209a89584"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Der Startzeitpunkt wird in der Kommissionsmitteilung genannt.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Die geschätzten Kosten liegen zwischen 15,6 Milliarden Euro und 35,2 Milliarden Euro.",
+          "type": "fact",
+          "source_ids": [
+            "206204ebc75209a89584"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quellen nennen eine Kostenschätzung, aber keine spätere Abweichung.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Der Mechanismus soll ausreichende Kapazitäten für Erzeugung, Speicherung und flexiblen Verbrauch von Strom sicherstellen.",
+          "type": "fact",
+          "source_ids": [
+            "206204ebc75209a89584"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Das Ziel ist in der Primärquelle explizit benannt.",
+          "date": "2026-09-01"
+        },
+        {
+          "claim": "Die Bundesregierung teilt mit, dass das Gesetz für neue Stromkapazitäten am 22. Juli in Kraft getreten ist.",
+          "type": "fact",
+          "source_ids": [
+            "a921a62e0005301121b0"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Regierungsseite nennt diesen Zeitpunkt als rechtlichen Status.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Wirkung ist eine tatsächliche Zustandsveränderung und nicht schon die Genehmigung, Reichweite oder ein Zielbild.",
+          "type": "woek_definition",
+          "source_ids": [
+            "206204ebc75209a89584",
+            "a921a62e0005301121b0"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodische Einordnung nach WOeK-Prüflogik, nicht als Nachrichtenfakt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Es liegt eine regulatorische Weichenstellung vor, aber noch keine belegte tatsächliche Wirkung auf Versorgungslage, Emissionen oder Preise.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "206204ebc75209a89584",
+            "a921a62e0005301121b0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Quellen nennen Ziele und Rechtsakt, aber keine Messung nach Inkrafttreten oder nach Inbetriebnahme.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Der Mechanismus hat Wirkungspotenzial für Investitionen und Verfügbarkeit von Kapazitäten.",
+          "type": "impact_potential",
+          "source_ids": [
+            "206204ebc75209a89584",
+            "a921a62e0005301121b0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Das Potenzial folgt aus der beschriebenen Vergütungs- und Sicherungslogik, ist aber noch nicht beobachtet.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Es besteht ein Wirkungsrisiko von Fehlanreizen, Überförderung oder fossilem Lock-in.",
+          "type": "impact_risk",
+          "source_ids": [
+            "206204ebc75209a89584"
+          ],
+          "evidence_level": "low",
+          "data_status": "inferred",
+          "uncertainty": "Die Quellen nennen diese Risiken nicht ausdrücklich; sie ergeben sich als plausible, aber offene Folgefragen aus der Mechanik.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Maßnahme kann die Stromversorgung als Basisinfrastruktur resilienter machen, wenn gesicherte Leistung und Flexibilität tatsächlich entstehen.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "206204ebc75209a89584"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Resilienzpotenzial ist aus dem Ziel der Kapazitätssicherung ableitbar, aber nicht nachgewiesen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Kostenfrage berührt Verteilung und demokratische Kontrolle, weil erhebliche Mittel und Marktregeln betroffen sind.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "206204ebc75209a89584"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Quellen nennen das Kostenband; die Folgerung zu Verteilung und Kontrolle ist analytisch, nicht empirisch belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Maßnahme ist für Mensch, Planet und Demokratie relevant, weil sie Versorgungssicherheit, mögliche Klimawirkungen und die Steuerung öffentlicher Mittel berührt.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "206204ebc75209a89584",
+            "a921a62e0005301121b0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Normative Einordnung auf Basis der beschriebenen Ziel- und Kostenstruktur.",
+          "date": "2026-09-05"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellen belegen keine bereits eingetretene Veränderung der Versorgungssicherheit, der Emissionen oder der Marktpreise.",
+          "source_ids": [
+            "206204ebc75209a89584",
+            "a921a62e0005301121b0"
+          ],
+          "effect_on_assessment": "Begrenzt jede Aussage auf Potenzial und Architektur; keine beobachtete Wirkung behaupten."
+        },
+        {
+          "finding": "Die Ausgestaltung der Ausschreibungen, die Technologiekriterien und die Kostenwälzung bleiben in den Quellen offen.",
+          "source_ids": [
+            "206204ebc75209a89584",
+            "a921a62e0005301121b0"
+          ],
+          "effect_on_assessment": "Verteilungs-, Transformations- und Lock-in-Risiken können nur als offene Risiken, nicht als belegte Folgen beschrieben werden."
+        },
+        {
+          "finding": "Die Bundesregierung nennt die bestehende Zuverlässigkeit der Stromversorgung, ohne daraus eine neue Wirkung des Mechanismus abzuleiten.",
+          "source_ids": [
+            "a921a62e0005301121b0"
+          ],
+          "effect_on_assessment": "Das stützt die Trennung zwischen Ausgangslage und zusätzlicher Wirkung; die Maßnahme ist nicht mit einer Störung gleichzusetzen."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Veröffentlichte Details zur Mechanik der Ausschreibungen und Vergütung.",
+        "Messbare Daten zu gesicherter Leistung, Flexibilität und Speicherzubau ab 2031.",
+        "Informationen zur tatsächlichen Kostenwälzung und sektoralen Verteilung.",
+        "Empirische Hinweise darauf, ob Emissionen, Preise oder Knappheitssituationen sinken oder steigen."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Deutscher Kapazitätsmechanismus: Was die EU-Genehmigung für Stromsicherheit und Systemrisiken bedeutet",
+        "recommended_summary": "Die EU-Kommission hat den deutschen Kapazitätsmechanismus genehmigt. Die Analyse trennt das regulatorische Signal von einer noch nicht belegten Wirkung auf Versorgung, Klima und Verteilung.",
+        "recommended_meta_description": "EU genehmigt deutschen Kapazitätsmechanismus: Einordnung zu Stromsicherheit, Kosten, Flexibilität, Risiken und offenen Wirkungen ab 2031."
+      },
+      "reading_time_minutes": 5,
+      "source_snapshot": [
+        {
+          "source_id": "206204ebc75209a89584",
+          "registry_source_id": "eu-kommission-presse",
+          "publisher_id": null,
+          "publisher": "Europäische Kommission – Press Corner",
+          "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
+          "published_at": "2026-09-01T22:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "source_id": "a921a62e0005301121b0",
+          "registry_source_id": "bundesregierung-kompakt",
+          "publisher_id": null,
+          "publisher": "Bundesregierung kompakt",
+          "title": "Für eine verlässliche Stromversorgung – auch in Zukunft",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
+          "published_at": "2026-09-03T11:00:00.000Z",
+          "primary_source": true
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T21:07:03.109Z",
+          "source_fingerprint": "692ec37ba57b489213b36cd736b0fe8371be569f545a74b84d3936b0c4bfa18d",
+          "title": "Deutscher Kapazitätsmechanismus: Was die EU-Genehmigung für Stromsicherheit und Systemrisiken bedeutet",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Die Europäische Kommission hat einen deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften geprüft und genehmigt.",
+              "type": "fact",
+              "source_ids": [
+                "206204ebc75209a89584"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Aussage ist direkt aus der Kommissionsmitteilung übernommen.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Der Mechanismus soll ab 2031 zur Verfügung stehen.",
+              "type": "fact",
+              "source_ids": [
+                "206204ebc75209a89584"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Der Startzeitpunkt wird in der Kommissionsmitteilung genannt.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Die geschätzten Kosten liegen zwischen 15,6 Milliarden Euro und 35,2 Milliarden Euro.",
+              "type": "fact",
+              "source_ids": [
+                "206204ebc75209a89584"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quellen nennen eine Kostenschätzung, aber keine spätere Abweichung.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Der Mechanismus soll ausreichende Kapazitäten für Erzeugung, Speicherung und flexiblen Verbrauch von Strom sicherstellen.",
+              "type": "fact",
+              "source_ids": [
+                "206204ebc75209a89584"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Das Ziel ist in der Primärquelle explizit benannt.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Die Bundesregierung teilt mit, dass das Gesetz für neue Stromkapazitäten am 22. Juli in Kraft getreten ist.",
+              "type": "fact",
+              "source_ids": [
+                "a921a62e0005301121b0"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Regierungsseite nennt diesen Zeitpunkt als rechtlichen Status.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Wirkung ist eine tatsächliche Zustandsveränderung und nicht schon die Genehmigung, Reichweite oder ein Zielbild.",
+              "type": "woek_definition",
+              "source_ids": [
+                "206204ebc75209a89584",
+                "a921a62e0005301121b0"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodische Einordnung nach WOeK-Prüflogik, nicht als Nachrichtenfakt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Es liegt eine regulatorische Weichenstellung vor, aber noch keine belegte tatsächliche Wirkung auf Versorgungslage, Emissionen oder Preise.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "206204ebc75209a89584",
+                "a921a62e0005301121b0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Quellen nennen Ziele und Rechtsakt, aber keine Messung nach Inkrafttreten oder nach Inbetriebnahme.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Der Mechanismus hat Wirkungspotenzial für Investitionen und Verfügbarkeit von Kapazitäten.",
+              "type": "impact_potential",
+              "source_ids": [
+                "206204ebc75209a89584",
+                "a921a62e0005301121b0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Das Potenzial folgt aus der beschriebenen Vergütungs- und Sicherungslogik, ist aber noch nicht beobachtet.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Es besteht ein Wirkungsrisiko von Fehlanreizen, Überförderung oder fossilem Lock-in.",
+              "type": "impact_risk",
+              "source_ids": [
+                "206204ebc75209a89584"
+              ],
+              "evidence_level": "low",
+              "data_status": "inferred",
+              "uncertainty": "Die Quellen nennen diese Risiken nicht ausdrücklich; sie ergeben sich als plausible, aber offene Folgefragen aus der Mechanik.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Maßnahme kann die Stromversorgung als Basisinfrastruktur resilienter machen, wenn gesicherte Leistung und Flexibilität tatsächlich entstehen.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "206204ebc75209a89584"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Resilienzpotenzial ist aus dem Ziel der Kapazitätssicherung ableitbar, aber nicht nachgewiesen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Kostenfrage berührt Verteilung und demokratische Kontrolle, weil erhebliche Mittel und Marktregeln betroffen sind.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "206204ebc75209a89584"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Quellen nennen das Kostenband; die Folgerung zu Verteilung und Kontrolle ist analytisch, nicht empirisch belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Maßnahme ist für Mensch, Planet und Demokratie relevant, weil sie Versorgungssicherheit, mögliche Klimawirkungen und die Steuerung öffentlicher Mittel berührt.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "206204ebc75209a89584",
+                "a921a62e0005301121b0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Normative Einordnung auf Basis der beschriebenen Ziel- und Kostenstruktur.",
+              "date": "2026-09-05"
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "retry_state": {}
 }

@@ -15,6 +15,26 @@ const registryHosts = (source = {}) => [...new Set([
   ...(source.allowed_redirect_hosts || []).map((host) => normalHost(`https://${host}`)),
 ].filter(Boolean))];
 
+// Historical HTTP aliases may survive in the queue even after discovery has
+// already supplied the same HTTPS document. Use only an exact, already known
+// counterpart; never guess a replacement address or discard divergent text.
+export function reconcileKnownSourceAliases(sources = []) {
+  return sources.filter(source => {
+    if (!String(source.url || "").startsWith("http://")) return true;
+    const secure = source.url.replace(/^http:/, "https:");
+    return !sources.some(other => other.url === secure
+      && other.source_id === source.source_id
+      && other.title === source.title && other.summary === source.summary
+      && other.published_at === source.published_at
+      && Boolean(other.primary_source) === Boolean(source.primary_source)
+      && other.source_role === source.source_role
+      && JSON.stringify(other.provenance || null) === JSON.stringify(source.provenance || null)
+      && JSON.stringify(other.research_metadata || null) === JSON.stringify(source.research_metadata || null)
+      && (!source.article_excerpt || other.article_excerpt === source.article_excerpt)
+      && (!source.evidence_segments || JSON.stringify(other.evidence_segments) === JSON.stringify(source.evidence_segments)));
+  });
+}
+
 function matchingRegistrySources(url, registry) {
   const host = normalHost(url);
   return (registry?.sources || []).filter((source) => registryHosts(source).some((candidate) => relatedHost(host, candidate)));

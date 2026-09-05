@@ -179,6 +179,11 @@ export async function runEditorialAnalyses({
   const state = read(stateFile, {});
   const usage = read(usageFile, { runs: [] });
   const store = read(analysesFile, { schema_version: "1.0", method_version: EDITORIAL_ANALYSIS_VERSION, updated_at: null, candidates: [], analyses: [] });
+  store.retry_state ||= {};
+  const retryFor = (story, assessment) => {
+    const retry = store.retry_state[story.story_id];
+    return retry?.fingerprint === assessment.fingerprint && retry.method_version === EDITORIAL_ANALYSIS_VERSION ? retry : null;
+  };
   const activeStories = (storyStore.stories || []).filter((story) => story.published && story.listed !== false && story.analysis);
   const baseSubjects = editorialSubjects(activeStories).map(story => ({
     ...story, source_integrity: sourceIntegrityForStory(story, newsRegistry, [], now),
@@ -195,10 +200,12 @@ export async function runEditorialAnalyses({
   const ready = assessed
     .filter(({ story, assessment }) => assessment.candidate && assessment.evidence_gate.passed && existingForStory(store, story.story_id)?.source_fingerprint !== assessment.fingerprint)
     .sort((left, right) => right.assessment.editorial_analysis_score - left.assessment.editorial_analysis_score || right.assessment.analysis_gain - left.assessment.analysis_gain || Date.parse(right.story.last_updated || 0) - Date.parse(left.story.last_updated || 0));
+  const runnable = ready.filter(({ story, assessment }) => !(Date.parse(retryFor(story, assessment)?.next_attempt_at) > Date.parse(now)));
   const researchPending = candidateRows.filter((candidate) => candidate.status === "research_pending");
   const report = {
     schema_version: "1.0", execute, bootstrap, started_at: now, scanned_stories: activeStories.length, scanned_subjects: subjects.length,
     editorial_candidates: candidateRows.length, ready_for_research: ready.length, research_pending: researchPending.length,
+    retry_deferred: ready.length - runnable.length,
     editorial_research_sources_discovered: researchExpansion.added,
     selected: 0, editorial_research_started: 0, editorial_analyses_published: 0, editorial_analyses_updated: 0,
     research_calls: 0, research_tokens: 0, analysis_tokens: 0, estimated_cost_usd: 0, quality_retries: 0,
@@ -211,7 +218,7 @@ export async function runEditorialAnalyses({
     store.updated_at = now;
     writeAtomic(analysesFile, store);
   }
-  if (!ready.length) return report;
+  if (!runnable.length) return report;
   const budget = newsBudget(state.budget_fx, now, Number(process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_EUR || 25));
   if (budget.status !== "ok") {
     report.failed.push({ reason: "EDITORIAL_BUDGET_FX_UNAVAILABLE" });
@@ -220,7 +227,7 @@ export async function runEditorialAnalyses({
   let spend = monthlyUsage(usage, now.slice(0, 7));
   // `limit` protects one worker run from provider/time exhaustion. It is not an
   // editorial quota: every remaining relevant candidate stays in the queue.
-  const selected = ready.slice(0, limit);
+  const selected = runnable.slice(0, limit);
   report.selected = selected.length;
   for (const { story, assessment } of selected) {
     if (spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) {
@@ -230,7 +237,8 @@ export async function runEditorialAnalyses({
     const existing = existingForStory(store, story.story_id);
     let result;
     let analysis;
-    let errors = [];
+    const previousRetry = retryFor(story, assessment);
+    let errors = previousRetry?.quality_errors || [];
     try {
       for (let qualityAttempt = 0; qualityAttempt < 2; qualityAttempt += 1) {
         if (qualityAttempt && spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) throw new Error("EDITORIAL_AI_BUDGET_BLOCKED");
@@ -273,6 +281,7 @@ export async function runEditorialAnalyses({
         versions: [...(existing?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, provider: result.provider, model: result.model, claim_ledger: analysis.claim_ledger }],
       };
       const index = (store.analyses || []).findIndex((item) => item.analysis_id === analysisId);
+      delete store.retry_state[story.story_id];
       if (index >= 0) {
         store.analyses[index] = record;
         report.editorial_analyses_updated += 1;
@@ -284,7 +293,16 @@ export async function runEditorialAnalyses({
       store.updated_at = now;
       writeAtomic(analysesFile, store);
     } catch (error) {
-      report.failed.push({ story_id: story.story_id, reason: String(error?.message || error).slice(0, 700) });
+      const reason = String(error?.message || error).slice(0, 700);
+      const attempts = Number(previousRetry?.attempts || 0) + 1;
+      const delayMinutes = Math.min(720, 15 * (2 ** Math.min(6, attempts - 1)));
+      store.retry_state[story.story_id] = {
+        fingerprint: assessment.fingerprint, method_version: EDITORIAL_ANALYSIS_VERSION,
+        attempts, last_attempt_at: now, next_attempt_at: new Date(Date.parse(now) + delayMinutes * 60000).toISOString(),
+        quality_errors: errors, reason,
+      };
+      writeAtomic(analysesFile, store);
+      report.failed.push({ story_id: story.story_id, reason, next_attempt_at: store.retry_state[story.story_id].next_attempt_at });
     }
   }
   report.completed_at = new Date().toISOString();

@@ -8,6 +8,12 @@ on:
       - "docs/audits/parliament-241-current-residual-2026-08-24.json"
       - "ops/releases/parliament-current-golden-readiness-2026-08-28.json"
       - "tools/validate_parliament_current_golden_readiness.py"
+      - "tools/build_mv_spd_p1_p54_authority_archive.mjs"
+      - "docs/parlament/audits/mv-spd-p1-p54-authorities/**"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json"
+      - "woek-parlament-app/scripts/quality/check-mv-spd-p1-p54-authority-index.mjs"
+      - "woek-parlament-app/scripts/quality/materialize-mv-spd-p55.mjs"
+      - "woek-parlament-app/tests/mv-spd-p1-p54-authority-archive.test.mjs"
       - "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json"
       - "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v2.json"
       - "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v3.json"
@@ -170,5 +176,7 @@ jobs:
         run: python3 tools/validate_parliament_issue_241_residual.py
       - name: Validate current fail-closed Golden readiness
         run: python3 tools/validate_parliament_current_golden_readiness.py
+      - name: Validate lossless MV SPD P1-P54 authority archive
+        run: node tools/build_mv_spd_p1_p54_authority_archive.mjs
       - name: Assert immutable validation
         run: git diff --exit-code

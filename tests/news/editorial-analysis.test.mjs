@@ -174,6 +174,29 @@ test("Fakten ohne Quelle, technische Interna und behauptete Medienwirkung werden
   assert.ok(errors.includes("EDITORIAL_INTERNAL_LANGUAGE"));
 });
 
+test("fehlgeschlagene Deep Dives behalten Korrekturhinweise und werden nach Pause automatisch geprüft", async t => {
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),"woek-editorial-retry-"));
+  t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+  fs.mkdirSync(path.join(root,"data/news"),{recursive:true});
+  const stories=[highStory("retry")];
+  fs.writeFileSync(path.join(root,"data/news/stories.json"),JSON.stringify({stories}));
+  fs.writeFileSync(path.join(root,"data/news/state.json"),JSON.stringify({budget_fx:{rate_usd_per_eur:1.1,rate_date:"2026-09-05"}}));
+  let calls=0,valid=false,lastPrompt='';
+  const callAiImpl=async ([story],options)=>{calls++;lastPrompt=options.prompt;const output=validEditorial(story);if(!valid)output.title='Zu kurz';return {analyses:[{story_id:story.story_id,editorial_analysis:output}],model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50}}};
+  const options={root,registry:registryFor(stories),execute:true,callAiImpl,build:()=>{}};
+  const first=await runEditorialAnalyses({...options,now:'2026-09-05T10:00:00Z'});
+  assert.equal(first.failed.length,1);assert.equal(first.editorial_analyses_published,0);assert.equal(calls,2);
+  const stored=JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json')));
+  assert.ok(stored.retry_state[stories[0].story_id].quality_errors.includes('EDITORIAL_TITLE_LENGTH'));
+  const early=await runEditorialAnalyses({...options,now:'2026-09-05T10:05:00Z'});
+  assert.equal(early.retry_deferred,1);assert.equal(calls,2);
+  valid=true;
+  const retried=await runEditorialAnalyses({...options,now:'2026-09-05T10:16:00Z'});
+  assert.equal(retried.editorial_analyses_published,1);assert.equal(calls,3);
+  assert.ok(lastPrompt.includes('EDITORIAL_TITLE_LENGTH'));
+  assert.equal(Object.keys(JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json'))).retry_state).length,0);
+});
+
 test("Backfill publiziert jeden relevanten Kandidaten bis zur technischen Batchgrenze und ist idempotent", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "woek-editorial-"));
   fs.mkdirSync(path.join(root, "data/news"), { recursive: true });

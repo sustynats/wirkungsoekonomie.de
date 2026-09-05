@@ -32,7 +32,7 @@
     "check:berlin-fach-residual": "node scripts/quality/check-berlin-fach-truth-residual.mjs && node scripts/quality/check-berlin-spd-p23.mjs && node --test tests/berlin-spd-p23.test.mjs tests/berlin-spd-p22-materialization.test.mjs tests/berlin-fach-truth-residual.test.mjs tests/berlin-combined-terminal-matrix.test.mjs",
     "check:berlin-spd-canonical-parity": "node scripts/quality/materialize-berlin-spd-canonical-parity.mjs --check",
     "check:mv-current-source": "tsx scripts/quality/check-mv-current-source.ts",
-    "check:mv-fach-residual": "node scripts/quality/check-mv-fach-truth-pending.mjs && node scripts/quality/check-mv-spd-p55.mjs && node --test tests/mv-spd-p55.test.mjs",
+    "check:mv-fach-residual": "node scripts/quality/check-mv-spd-p1-p54-authority-index.mjs && node scripts/quality/check-mv-fach-truth-pending.mjs && node scripts/quality/check-mv-spd-p55.mjs && node --test tests/mv-spd-p1-p54-authority-archive.test.mjs tests/mv-spd-p55.test.mjs",
     "check:state-source-adapters": "node scripts/run-official-state-source-adapters.mjs",
     "monitor:state-source-adapters": "node scripts/run-official-state-source-adapters.mjs --live",
     "check:government-identifiers": "tsx scripts/quality/check-government-identifier-shapes.ts",
