@@ -1,7 +1,130 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T23:51:32.425Z",
+  "updated_at": "2026-09-05T00:06:28.919Z",
   "stories": [
+    {
+      "story_id": "wt-61056437cfc6bac9",
+      "slug": "attacken-auf-stromversorgung-strom-sabotage-suche-nach-verdachtigem-lauft-c6bac9",
+      "title": "Attacken auf Stromversorgung: Strom-Sabotage: Suche nach Verdächtigem läuft",
+      "first_seen": "2026-09-04T23:49:03.000Z",
+      "last_updated": "2026-09-04T23:49:03.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/attacken-auf-stromversorgung--strom-sabotage--suche-nach-verdaechtigem-laeuft-38210384.html",
+          "title": "Attacken auf Stromversorgung: Strom-Sabotage: Suche nach Verdächtigem läuft",
+          "summary": "Die versuchten Sabotageakte gegen das deutsche Stromnetz häufen sich, es gibt Bekennerschreiben. Das Fahrzeug des mutmaßlichen Verfassers hat die Polizei gefunden - doch er selbst ist noch flüchtig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T23:49:03.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1d5c5ef71736e7fc8023919a868e014e6c5af4556ac805d4db78cee17dcce0c2",
+          "source_item_id": "135bd10a4fc44b9e076275f6203f4c9e25c8d4b7f3bc157c866f40d7b6be8347",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T23:49:03.000Z",
+          "ingested_at": "2026-09-05T00:06:28.919Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-61056437cfc6bac9-claim-01",
+          "story_id": "wt-61056437cfc6bac9",
+          "claim": "Attacken auf Stromversorgung: Strom-Sabotage: Suche nach Verdächtigem läuft: Die versuchten Sabotageakte gegen das deutsche Stromnetz häufen sich, es gibt Bekennerschreiben. Das Fahrzeug des mutmaßlichen Verfassers hat die Polizei gefunden - doch er selbst ist noch flüchtig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T00:06:28.919Z"
+        }
+      ],
+      "content_hash": "a3cece649fe2f60beac34085bb67cef2ece23320f018dccf744dbe86e1646e6c",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T00:06:28.919Z",
+      "event_first_seen_at": "2026-09-05T00:06:28.919Z",
+      "event_detected_at": "2026-09-05T00:06:28.919Z",
+      "event_id": "event-d0ca9a94eee93d421fb4",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.431983333333335,
+        "detection_delay_minutes": 17.431983333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T00:06:28.919Z",
+      "rejection": {
+        "at": "2026-09-05T00:06:28.919Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-fd1d413e1406b066",
       "slug": "die-lage-im-uberblick-vorstoss-zu-ende-des-ukraine-kriegs-trump-schickt-vermittler-06b066",
@@ -9402,7 +9525,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-04T23:36:44.117Z",
+          "ingested_at": "2026-09-05T00:06:28.919Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -9429,7 +9552,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T23:36:44.117Z"
+          "checked_at": "2026-09-05T00:06:28.919Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -9437,11 +9560,11 @@
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T23:36:44.117Z",
+      "updated_at": "2026-09-05T00:06:28.919Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -9471,25 +9594,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 231.71861666666666,
+        "source_age_minutes": 261.4653166666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 285.28523333333334,
+        "queue_age_minutes": 315.0319333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 52,
+        "news_freshness_score": 46,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T23:36:44.117Z",
+      "rejected_at": "2026-09-05T00:06:28.919Z",
       "rejection": {
-        "at": "2026-09-04T23:36:44.117Z",
+        "at": "2026-09-05T00:06:28.919Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
+          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
