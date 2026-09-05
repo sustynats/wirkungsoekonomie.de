@@ -1,7 +1,118 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T05:31:58.551Z",
+  "updated_at": "2026-09-05T06:06:13.174Z",
   "stories": [
+    {
+      "story_id": "wt-e18907861b9d9b1f",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-794d51a0fca1be3f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-4d67b9cbcbaf0d85-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-cca0258224ed71d6-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "brucken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-9d9b1f",
+      "title": "Brücken-Neubau im Marburger Norden gestartet: Wieder Bahnsperrungen geplant",
+      "source_summary": "Nach dem Abriss einer wichtigen Brücke im Marburger Norden haben die Arbeiten für den Neubau begonnen. Die Brücke über die Bahngleise in der Neuen Kasseler Straße verbindet Marburg Richtung Norden und Richtung Lahnberge; dort liegt unter anderem das Uni-Klinikum. Laut Hessenmobil ist der Spatenstich erfolgt, und die Geduld der Betroffenen werde weiter beansprucht.\n\nFür den Bahnverkehr kündigt die Quelle erneute Sperrpausen an, etwa für den Einhub neuer Brückenträger. Betroffen ist die Strecke zwischen Marburg und Cölbe; die genauen Zeitpunkte sollen noch gemeinsam mit der Bahn bekanntgegeben werden. Bereits genannt werden Sperrpausen im Oktober 2026 sowie im Mai 2027. Für Auto- und Radverkehr bleiben Umleitungen über die B3 beziehungsweise die Alte Kasseler Straße bestehen.",
+      "summary": "Der Neubau einer wichtigen Brücke im Marburger Norden hat begonnen. Für Bahn, Auto- und Radverkehr sind weitere Einschränkungen angekündigt.",
+      "detail_summary": "Gesichert ist zunächst der Baustart für den Neubau der Brücke über die Bahngleise in der Neuen Kasseler Straße. Die Quelle nennt zugleich weitere Sperrpausen für die Bahnstrecke Marburg–Cölbe und hält die Umleitungen für Auto- und Radverkehr aufrecht. Für die Einordnung ist das relevant, weil damit ein zentraler Verkehrsweg im Norden Marburgs noch längere Zeit nur eingeschränkt funktioniert. Der Wirkpfad verläuft über Baustelle, Bahnunterbrechungen und Ausweichrouten direkt auf Pendel- und Lieferverkehre. Als mögliche Folge bleiben zusätzliche Reisezeiten, Umwege und Belastungen für Anwohnende und Betriebe bestehen; die Dauer hängt von der Bau- und Sperrplanung ab. Die Evidenz bleibt begrenzt, weil alle Kernaussagen hier aus einer einzelnen journalistischen Quelle stammen.",
+      "why_relevant": "Die Meldung beschreibt den Beginn eines Infrastrukturvorhabens mit anhaltenden Sperrungen auf einer wichtigen Verkehrsachse und damit eine materielle Veränderung von Mobilität und Erreichbarkeit.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Pendlerinnen, Fahrgäste sowie weitere Nutzerinnen der Verbindung; die Umleitungen und Sperrpausen wirken direkt auf Wegezeiten und Erreichbarkeit."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Quelle beschreibt vor allem Verkehrsverlagerungen; ein eigenständiger Umwelt- oder Klimawirkpfad ist daraus nur indirekt ableitbar."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer demokratischer Effekt wird nicht beschrieben; relevant ist hier vor allem die öffentliche Infrastrukturentscheidung."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-04T15:07:42.000Z",
+      "last_updated": "2026-09-05T06:08:02.113Z",
+      "version": 3,
+      "news_status": "developing",
+      "event_id": "event-9d4afdfe89c278d9bc9e",
+      "case_file": null,
+      "source_published_at": "2026-09-04T15:07:42.000Z",
+      "published_at": "2026-09-04T15:22:55.300Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die angekündigten Bahn-Sperrpausen treten wie genannt ein und werden von der Bahn bestätigt.",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Fahrplan- oder Baustellenmeldungen zu den genannten Zeiträumen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-417ea54c06a5109a",
+          "announced_at": "2026-09-04T15:07:42.000Z",
+          "follow_up_date": "2026-09-11T15:22:55.300Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die angekündigten Sperrpausen im Bahnverkehr werden zu den genannten Zeiträumen umgesetzt.",
+          "source_id": "hr-hessenschau",
+          "expected_by": "2026-10-18",
+          "measurable_indicator": "Meldungen oder Fahrplanhinweise zu den angekündigten Sperrpausen",
+          "expected_by_evidence_hash": "c3ac3043a6cec1ff9ca3948c211144065638af979ea3ef27aa30f7ccebf555ef",
+          "followup_id": "followup-25d8fc82074368e0",
+          "announced_at": "2026-09-04T15:07:42.000Z",
+          "follow_up_date": "2026-10-18T00:00:00.000Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die angekündigten Sperrpausen wie genannt umgesetzt werden.",
+          "source_id": "hr-hessenschau",
+          "expected_by": "2026-10-31",
+          "measurable_indicator": "Tatsächliche Bahn-Sperrungen auf der Strecke Marburg–Cölbe",
+          "expected_by_evidence_hash": "c3ac3043a6cec1ff9ca3948c211144065638af979ea3ef27aa30f7ccebf555ef",
+          "followup_id": "followup-a655157453ebcb4d",
+          "announced_at": "2026-09-04T15:07:42.000Z",
+          "follow_up_date": "2026-10-31T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/wirtschaft/bruecken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-v3,bruecke-marburg-104.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T15:07:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-d7a0af1afc831caf",
       "title_image": {
@@ -1376,145 +1487,6 @@
           "url": "https://www.mdr.de/nachrichten/thueringen/azubis-land-uebernimmt-kosten-fuer-gesundheitschecks,berufsausbildung-112.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T13:56:50.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-e18907861b9d9b1f",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-e499452b8f5ad06b-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-8de88d95592ab9bb-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-475bf7eb663e9235-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "brucken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-9d9b1f",
-      "title": "Brücken-Neubau im Marburger Norden gestartet: Wieder Bahnsperrungen geplant",
-      "source_summary": "Nach dem Abriss einer wichtigen Brücke in Marburg haben die Arbeiten für den Neubau begonnen. Die Brücke über die Bahngleise in der Neuen Kasseler Straße war laut Bericht seit November 2024 gesperrt und wurde im Frühling 2025 abgerissen. Sie verbindet Marburg mit dem Norden und den Lahnbergen, unter anderem in Richtung des Uni-Klinikums.\n\nFür Auto-, Rad- und Fußverkehr bleiben Umleitungen bis zur Fertigstellung bestehen. Hessenmobil nennt als Ziel für den Neubau das Jahr 2027. Zudem sind im Bauablauf wieder Sperrpausen für die Bahnstrecke Marburg–Cölbe geplant, unter anderem Mitte Oktober 2026 sowie im Mai 2027. Der Abbruch inklusive Nebenarbeiten soll rund drei Millionen Euro gekostet haben, die neue Brücke rund 15 Millionen Euro.",
-      "summary": "Der Neubau einer wichtigen Brücke im Marburger Norden hat begonnen. Für den Bahnverkehr und für Umleitungen im Straßen- und Radverkehr sind weitere Einschränkungen angekündigt.",
-      "detail_summary": "Gesichert ist, dass die Bauarbeiten für den Neubau der Brücke im Marburger Norden begonnen haben. Der Bericht ordnet das als Fortsetzung eines längeren Eingriffs ein: Die Brücke war seit November 2024 gesperrt und wurde im Frühling 2025 abgerissen. Für den Verkehr über die Bahntrasse bleiben Umleitungen bestehen, und auch neue Sperrpausen für die Strecke Marburg–Cölbe sind angekündigt. Das ist materiell relevant, weil die Verbindung für Pendel- und Regionalverkehr sowie für Wege Richtung Lahnberge beschrieben wird. Der Wirkpfad liegt vor allem in vorübergehenden Zugausfällen, Umwegen und Zeitverlusten; daraus können Belastungen für Mobilität und Erreichbarkeit folgen. Offen bleibt, ob die genannten Zeitfenster und die Fertigstellung 2027 wie geplant eingehalten werden.",
-      "why_relevant": "Die Meldung betrifft eine zentrale Verkehrsverbindung mit laufenden Einschränkungen für Bahn-, Auto-, Rad- und Fußverkehr sowie weitere Sperrpausen im Bauablauf.",
-      "topic": [
-        "Arbeit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Pendlerinnen, Anwohner und weitere Verkehrsteilnehmer sind durch Umleitungen und Sperrpausen unmittelbar betroffen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Es geht vor allem um Bau- und Verkehrsfolgen; ökologische Wirkungen werden in der Quelle nicht belegt."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Kein direkter demokratischer Entscheidungs- oder Kontrollkonflikt ist aus der Quelle ersichtlich."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Abbruchkosten",
-            "value": "drei Millionen",
-            "unit": "Euro",
-            "context": "Kosten des Abbruchs inklusive Nebenarbeiten"
-          },
-          {
-            "label": "Neubaukosten",
-            "value": "15 Millionen",
-            "unit": "Euro",
-            "context": "Kosten der neuen Brücke laut Hessenmobil"
-          }
-        ],
-        "affected_groups": [
-          "haushalte",
-          "beschaeftigte",
-          "kommunen"
-        ],
-        "timeline": [
-          {
-            "date": "2026-10",
-            "label": "erste angekündigte Sperrpausen"
-          },
-          {
-            "date": "2027",
-            "label": "geplante Fertigstellung"
-          },
-          {
-            "date": "2027-05",
-            "label": "weitere Sperrungen der Bahnstrecke"
-          }
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "offen"
-        }
-      },
-      "first_seen": "2026-09-04T15:07:42.000Z",
-      "last_updated": "2026-09-04T19:52:38.990Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-9d4afdfe89c278d9bc9e",
-      "case_file": null,
-      "source_published_at": "2026-09-04T15:07:42.000Z",
-      "published_at": "2026-09-04T15:22:55.300Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Die angekündigten Bahn-Sperrpausen treten wie genannt ein und werden von der Bahn bestätigt.",
-          "source_id": "hr-hessenschau",
-          "expected_by": null,
-          "measurable_indicator": "Öffentliche Fahrplan- oder Baustellenmeldungen zu den genannten Zeiträumen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-417ea54c06a5109a",
-          "announced_at": "2026-09-04T15:07:42.000Z",
-          "follow_up_date": "2026-09-11T15:22:55.300Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Die angekündigten Sperrpausen im Bahnverkehr werden zu den genannten Zeiträumen umgesetzt.",
-          "source_id": "hr-hessenschau",
-          "expected_by": "2026-10-18",
-          "measurable_indicator": "Meldungen oder Fahrplanhinweise zu den angekündigten Sperrpausen",
-          "expected_by_evidence_hash": "c3ac3043a6cec1ff9ca3948c211144065638af979ea3ef27aa30f7ccebf555ef",
-          "followup_id": "followup-25d8fc82074368e0",
-          "announced_at": "2026-09-04T15:07:42.000Z",
-          "follow_up_date": "2026-10-18T00:00:00.000Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/wirtschaft/bruecken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-v3,bruecke-marburg-104.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T15:07:42.000Z",
           "primary_source": false
         }
       ]
