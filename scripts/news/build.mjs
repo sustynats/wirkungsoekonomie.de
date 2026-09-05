@@ -140,7 +140,7 @@ function expandedDetailSummary(analysis) {
     `Als möglicher Wirkmechanismus gilt: ${mechanism}.`,
     `Als unmittelbare Folge kommt in Betracht: ${immediate}; nachgelagert ist zu prüfen: ${downstream}.`,
     `Für die systemische Perspektive gilt: ${systemic}.`,
-    `Die Evidenzgrenze bleibt: ${sentenceFragment(analysis.evidence_level)}; zur Zurechnung gilt: ${sentenceFragment(analysis.attribution)}; offen bleibt: ${uncertainty}.`,
+    `Die Evidenzgrenze bleibt: ${sentenceFragment(evidenceLevelLabel(analysis.evidence_level))}; zur Zurechnung gilt: ${sentenceFragment(analysis.attribution)}; offen bleibt: ${uncertainty}.`,
   ].filter(Boolean).join(" ");
 }
 
@@ -161,6 +161,28 @@ function storyHref(story) {
 
 function analysisTypeLabel(type) {
   return (ANALYSIS_TYPES[type] || ANALYSIS_TYPES.monitoring).label;
+}
+
+export function evidenceLevelLabel(value) {
+  const raw = String(value || "").trim();
+  const exact = {
+    attributed_single_source: "Einer Quelle zugeschrieben; keine unabhängige Bestätigung",
+    single_source_attributed: "Einer Quelle zugeschrieben; keine unabhängige Bestätigung",
+    single_source_primary_statement: "Primärquelle / Selbstauskunft; keine unabhängige Bestätigung",
+    single_source_secondary_report: "Ein journalistischer Bericht; keine unabhängige Bestätigung",
+    "single primary-source statement with caveats": "Primärquelle / Selbstauskunft mit Vorbehalten",
+  };
+  if (exact[raw]) return exact[raw];
+  return raw
+    .replace(/\battributed_single_source\b/gi, "zugeschriebene Quellenlage")
+    .replace(/\bsingle_source_attributed\b/gi, "zugeschriebene Einzelquelle")
+    .replace(/\bsingle_source_primary_statement\b/gi, "Primärquelle / Selbstauskunft")
+    .replace(/\bsingle_source_secondary_report\b/gi, "ein journalistischer Bericht")
+    .replace(/\bsingle_source_claim\b/gi, "einer Quelle zugeschrieben")
+    .replace(/\bsingle[-_]source\b/gi, "Einzelquelle")
+    .replace(/\bprimary-source statement\b/gi, "Primärquelle / Selbstauskunft")
+    .replace(/\bsingle secondary source\b/gi, "ein journalistischer Bericht")
+    .replace(/\bsingle journalistische Quelle\b/gi, "einzelne journalistische Quelle");
 }
 
 function shareControl(story, suffix = "top", label = "Nachricht teilen") {
@@ -460,7 +482,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     <article class="news-story-section news-source-summary" data-news-source-summary id="nachricht"><p class="hero-kicker">${renderIcon("meldung")}<span>Nachricht</span></p><h2>Worum geht es?</h2><p class="news-source-summary__note">Eigenständige Nachricht auf Grundlage der verlinkten Quellen. Die wirkungsökonomische Einordnung beginnt erst nach dem Faktencheck.</p><div class="news-source-summary__copy">${sourceSummaryParagraphs(story.source_summary)}</div>${renderKeyFigures(visuals, story)}${renderChart(visuals)}${renderTimeline(visuals)}<div class="news-source-summary__links">${sourceSummaryLinks}</div></article>
     ${renderCaseFile(story, caseFile)}
     ${renderNewsroomEvidence(story)}
-    <article class="news-story-section news-fact-check" id="faktencheck"><p class="hero-kicker">${renderIcon("wahrheit")}<span>Quellenprüfung</span></p><h2>Faktencheck</h2><p class="news-method-note"><strong>Wahrheit zuerst:</strong> Der belastbar bestätigte Sachverhalt steht vor Behauptungen, offenen Punkten und möglichen Folgen. So soll bloße Wiederholung keinen falschen Wahrheits­eindruck erzeugen.</p><div class="news-check-prose"><section><h3>${renderIcon("check")}Gesicherter Ausgangspunkt</h3><p>${escapeHtml(truthOpening)}</p><p>Die Prüfung stützt sich auf ${primarySourceCount} ${primarySourceCount === 1 ? "Primärquelle" : "Primärquellen"}${primarySourceNames ? ` von ${escapeHtml(primarySourceNames)}` : ""} und ${story.claims.length} ${story.claims.length === 1 ? "tragenden, quellengebundenen Claim" : "tragende, quellengebundene Claims"}. Der Evidenzstand lautet: ${escapeHtml(a.evidence_level)}</p></section><section><h3>${renderIcon("offen")}Was dieser Stand nicht belegt</h3><p>${escapeHtml(a.attribution)} ${escapeHtml(story.claims[0]?.uncertainty || "Vollständiger Kontext und spätere Wirkungsdaten bleiben zu prüfen.")}</p></section></div></article>
+    <article class="news-story-section news-fact-check" id="faktencheck"><p class="hero-kicker">${renderIcon("wahrheit")}<span>Quellenprüfung</span></p><h2>Faktencheck</h2><p class="news-method-note"><strong>Wahrheit zuerst:</strong> Der belastbar bestätigte Sachverhalt steht vor Behauptungen, offenen Punkten und möglichen Folgen. So soll bloße Wiederholung keinen falschen Wahrheits­eindruck erzeugen.</p><div class="news-check-prose"><section><h3>${renderIcon("check")}Gesicherter Ausgangspunkt</h3><p>${escapeHtml(truthOpening)}</p><p>Die Prüfung stützt sich auf ${primarySourceCount} ${primarySourceCount === 1 ? "Primärquelle" : "Primärquellen"}${primarySourceNames ? ` von ${escapeHtml(primarySourceNames)}` : ""} und ${story.claims.length} ${story.claims.length === 1 ? "tragenden, quellengebundenen Claim" : "tragende, quellengebundene Claims"}. Der Evidenzstand lautet: ${escapeHtml(evidenceLevelLabel(a.evidence_level))}</p></section><section><h3>${renderIcon("offen")}Was dieser Stand nicht belegt</h3><p>${escapeHtml(a.attribution)} ${escapeHtml(story.claims[0]?.uncertainty || "Vollständiger Kontext und spätere Wirkungsdaten bleiben zu prüfen.")}</p></section></div></article>
     ${renderConsolidations(story)}
     ${renderAtAGlance(story, { formatDate })}
     <article class="news-story-section news-story-summary" id="analyse"><p class="hero-kicker">${renderIcon("systemisch")}<span>Wirkungsökonomische Analyse</span></p><h2>Einordnung im Überblick</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p>${renderAffectedGroups(visuals)}</article>
@@ -469,7 +491,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     <article class="news-story-section" id="bedeutung"><p class="hero-kicker">${renderIcon("transformation")}<span>Systemische Bedeutung</span></p><h2>Was die Meldung für das System bedeutet</h2><div class="wt-meaning"><div class="wt-meaning__item"><h3>${renderIcon("systemisch")}Systemrelevanz</h3><p>${escapeHtml(a.systemic_relevance)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("transformation")}Transformationspotenzial</h3><p>${escapeHtml(a.transformation_potential)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("resilienz")}Resilienz</h3><p>${escapeHtml(a.resilience)}</p></div></div></article>
     <article class="news-story-section" id="offen"><p class="hero-kicker">${renderIcon("offen")}<span>Offen</span></p><h2>Offene Fragen und Beobachtungspunkte</h2><div class="wt-questions"><div><h3>${renderIcon("offen")}Unsicherheiten</h3>${list(a.uncertainties)}</div><div><h3>${renderIcon("beobachten")}Worauf jetzt zu achten ist</h3>${list(a.watch_next)}</div></div></article>
   </div><aside class="news-story-aside">
-    <article class="news-story-section" id="quellen"><p class="hero-kicker">${renderIcon("quelle")}<span>Quellenakte</span></p><h2>Quellen und Belegrollen</h2><ul class="news-source-list">${sources}</ul><div class="wt-evidence"><div class="wt-evidence__item"><strong>${renderIcon("wahrheit")}Evidenzgrad</strong><span>${escapeHtml(a.evidence_level)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("check")}Zurechnung</strong><span>${escapeHtml(a.attribution)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("bildung")}Referenzrahmen</strong><span>${escapeHtml((a.reference_frameworks || []).map(formatReferenceFramework).join(" · ") || "objektspezifisch offen")}</span></div></div><p class="news-method-note">Das interne Claim-Ledger bindet ${story.claims.length} ${story.claims.length === 1 ? "tragenden Claim" : "tragende Claims"} an die oben genannten Quellen. Feed-Kurztexte werden nicht als Originalartikel gespiegelt.</p></article>
+    <article class="news-story-section" id="quellen"><p class="hero-kicker">${renderIcon("quelle")}<span>Quellenakte</span></p><h2>Quellen und Belegrollen</h2><ul class="news-source-list">${sources}</ul><div class="wt-evidence"><div class="wt-evidence__item"><strong>${renderIcon("wahrheit")}Evidenzgrad</strong><span>${escapeHtml(evidenceLevelLabel(a.evidence_level))}</span></div><div class="wt-evidence__item"><strong>${renderIcon("check")}Zurechnung</strong><span>${escapeHtml(a.attribution)}</span></div><div class="wt-evidence__item"><strong>${renderIcon("bildung")}Referenzrahmen</strong><span>${escapeHtml((a.reference_frameworks || []).map(formatReferenceFramework).join(" · ") || "objektspezifisch offen")}</span></div></div><p class="news-method-note">Das interne Claim-Ledger bindet ${story.claims.length} ${story.claims.length === 1 ? "tragenden Claim" : "tragende Claims"} an die oben genannten Quellen. Feed-Kurztexte werden nicht als Originalartikel gespiegelt.</p></article>
     <article class="news-story-section"><p class="hero-kicker">${renderIcon("version")}<span>Verlauf</span></p><h2>Versionsverlauf</h2><ol class="wt-versions">${history}</ol><p><a class="text-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list>Zurück zur Übersicht an die vorige Leseposition</a></p></article>
   </aside></div></section>
   ${renderRelatedStories(story, allStories)}
