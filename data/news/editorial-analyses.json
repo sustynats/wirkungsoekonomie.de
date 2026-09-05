@@ -1,25 +1,60 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-05T14:02:11.302Z",
+  "updated_at": "2026-09-05T14:17:38.262Z",
   "candidates": [
     {
-      "story_id": "wt-4fb94d2cebfca746",
-      "story_slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-      "story_title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-      "editorial_analysis_score": 67,
-      "analysis_gain": 49,
+      "story_id": "wt-3d901522efd87e2d",
+      "story_slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
+      "story_title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 46,
       "factors": {
         "systemic_relevance": 16,
-        "impact_potential": 7,
-        "impact_risk": 4,
+        "impact_potential": 9,
+        "impact_risk": 8,
         "observed_impact": 0,
         "third_order_relevance": 5,
         "transformation_relevance": 8,
         "resilience_relevance": 8,
         "macro_relevance": 0,
-        "MPD_interdependence": 0,
-        "distribution_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 0,
+        "discourse_relevance": 0,
+        "case_depth": 8,
+        "evidence_quality": 8
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 5,
+        "primary_source_count": 0,
+        "cited_claim_count": 21,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "6050c749ed2800ac1c360d181c19b6115714eae2c6db9b871a0c8f0931f179f8",
+      "status": "published",
+      "analysis_id": "woek-analysis-cf42f2c67306"
+    },
+    {
+      "story_id": "wt-6c26e428b894e714",
+      "story_slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
+      "story_title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+      "editorial_analysis_score": 77,
+      "analysis_gain": 53,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 10,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 5,
+        "transformation_relevance": 3,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
         "discourse_relevance": 0,
         "case_depth": 8,
         "evidence_quality": 8
@@ -29,14 +64,14 @@
         "source_integrity": "verified",
         "independent_origin_count": 13,
         "primary_source_count": 0,
-        "cited_claim_count": 77,
+        "cited_claim_count": 81,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "b0bbc4dc52ef7a7e171ff8bfe0378024486726ada74f4c15a24f830d47e82abd",
-      "status": "published",
-      "analysis_id": "woek-analysis-2557713b0904"
+      "fingerprint": "5f3f1ea154a0a471ef080877764d397f3a7d07bb0b9cda59e9072552d9854a62",
+      "status": "ready_for_research",
+      "analysis_id": null
     },
     {
       "story_id": "wt-aabe8c0430bf8f84",
@@ -144,7 +179,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "0fefb027a302f4eeccbc0f6418d48bb0b24426777ea68ec010072cee8fd635dd",
+      "fingerprint": "27b6d823c7bfe9f1f625b1555c054a9421253f68307ccc6eef2b95f3e9bd7077",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -1512,6 +1547,516 @@
               "evidence_level": "low",
               "data_status": "scenario",
               "uncertainty": "Dies ist eine mögliche Folge, keine im Material belegte Entscheidung oder Maßnahme.",
+              "date": "2026-09-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-cf42f2c67306",
+      "story_id": "wt-3d901522efd87e2d",
+      "related_story_ids": [
+        "wt-3d901522efd87e2d",
+        "wt-4eb46eab6c6d9511",
+        "wt-86783bc04f815007",
+        "wt-1633927424587a06",
+        "wt-d7a0af1afc831caf",
+        "wt-b076e0c16bf4a2e8"
+      ],
+      "related_case_id": "case-0e368539fdc9df",
+      "slug": "dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+      "method_version": "1.0",
+      "source_fingerprint": "6050c749ed2800ac1c360d181c19b6115714eae2c6db9b871a0c8f0931f179f8",
+      "candidate_score": 72,
+      "analysis_gain_score": 46,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 5,
+        "primary_source_count": 0,
+        "cited_claim_count": 21,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T14:17:38.262Z",
+      "updated_at": "2026-09-05T14:17:38.262Z",
+      "version": 1,
+      "editorial_question": "Was bedeutet eine angekündigte dreitägige Angriffspause auf Kyjiw im Umfeld neuer US-Vermittlungsversuche für den Krieg, die Verhandlungslogik und die Sicherheitslage?",
+      "analysis_type": "case_analysis",
+      "title": "Dreitägige Angriffspause auf Kyjiw: Was die neue Vermittlungsphase wirklich verändert",
+      "subtitle": "Zwischen militärischer Unterbrechung und diplomatischem Signal bleibt die Reichweite der Wirkung vorläufig.",
+      "teaser": "Putin soll eine dreitägige Pause der Luftangriffe auf Kyjiw angeordnet haben. Zugleich reisen US-Gesandte zu Gesprächen nach Moskau und Kyjiw.",
+      "seo_description": "Dreitägige Angriffspause auf Kyjiw und neue US-Vermittlung: Was die Meldung für Sicherheit, Verhandlungskanal und Wirkungsgrenzen bedeutet.",
+      "additional_value": "Der zusätzliche systemische Zusammenhang liegt nicht in der bloßen Reise der Unterhändler, sondern in der Kopplung von zeitlich befristeter Gewaltunterbrechung und diplomatischem Kontakt. Die Meldung beschreibt damit einen möglichen Wirkpfad, aber noch keine belastbar beobachtete Friedenswirkung. Gerade in einem laufenden Krieg ist die Differenz zwischen Ankündigung, Einhaltung und tatsächlicher Zustandsveränderung entscheidend. Die Analyse trennt deshalb klar zwischen kurzfristiger Sicherheitsentlastung, symbolischer Signalwirkung und offenem Risiko taktischer Instrumentalisierung.",
+      "research_summary": "Aus den vorliegenden Quellen ergibt sich ein konsistenter Kern: US-Gesandte Jared Kushner und Steve Witkoff reisen laut mehreren Berichten nach Moskau und sollen anschließend Kyjiw besuchen. Die DW meldet zusätzlich, Putin habe wegen dieses Besuchs eine dreitägige Angriffspause auf Kyjiw angeordnet, beginnend am Sonntag. Die taz berichtet, Trump habe die beiden als Verhandler geschickt und Selenskyj habe vor dem Besuch eine Feuerpause vorgeschlagen. Ein tatsächlicher Rückgang von Angriffen, Opferzahlen oder eine nachweisbare politische Einigung sind in den Quellen nicht belegt. Die Evidenz trägt damit eine Analyse von Wirkungspotenzial und Wirkungsrisiko, aber keine starke Zuschreibung einer bereits eingetretenen Friedens- oder Deeskalationswirkung.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Eine Pause wird angekündigt, während die Gespräche anlaufen",
+          "paragraphs": [
+            "Die Meldung setzt an einem konkreten Punkt an: Laut DW hat Putin wegen des Besuchs von Jared Kushner und Steve Witkoff einen dreitägigen Stopp der Luftangriffe auf Kyjiw angeordnet, beginnend am Sonntag. Parallel dazu sollen die US-Unterhändler in Moskau und Kyjiw Gespräche führen. Das ist zunächst eine zeitlich begrenzte Veränderung der militärischen Praxis in einem laufenden Krieg, nicht schon ein Beleg für eine veränderte Kriegslogik.",
+            "Mehrere Quellen stützen den diplomatischen Teil: Die USA nehmen ihre Vermittlungsbemühungen wieder auf, Kushner und Witkoff sind in Moskau eingetroffen, und nach den Berichten sollen sie auch nach Kyjiw weiterreisen. Selenskyj hatte laut taz eine Feuerpause vorgeschlagen. Damit liegt ein Umfeld vor, in dem eine befristete Unterbrechung von Angriffen und eine neue Gesprächsphase zeitlich zusammenfallen."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusatznutzen: Warum die Kopplung von Gewaltpause und Vermittlung relevant ist",
+          "paragraphs": [
+            "Der zusätzliche Wert der Meldung liegt in der Kopplung zweier Systeme: militärische Gewalt und politische Vermittlung. Eine befristete Angriffspause kann die unmittelbare Sicherheitslage in Kyjiw verändern und zugleich einen Gesprächsrahmen öffnen, in dem Signale, Zugeständnisse oder rote Linien sichtbarer werden. Genau diese Verbindung macht die Nachricht systemisch relevant.",
+            "WÖk-analytisch ist Reichweite hier nicht Wirkung. Dass Unterhändler reisen oder Gespräche angekündigt werden, sagt noch nichts über eine eingetretene Zustandsänderung aus. Wirkung wäre erst dann belegt, wenn die Gefährdung in Kyjiw tatsächlich sinkt, Angriffe ausbleiben oder Verhandlungen zu überprüfbaren Vereinbarungen führen. Bis dahin bleibt es bei einem Wirkpfad mit offenem Ausgang."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Wo die Meldung tatsächlich berührt",
+          "paragraphs": [
+            "Aus der Perspektive Mensch ist die Relevanz am klarsten. Eine dreitägige Pause von Luftangriffen auf Kyjiw kann kurzfristig das Risiko für zivile Opfer, Verletzungen und psychische Belastung senken, sofern sie tatsächlich eingehalten wird. Das ist ein mögliches Wirkungspotenzial, aber noch kein beobachteter Effekt. Für die Bevölkerung ist zudem nicht nur die Angriffspause selbst wichtig, sondern auch die Frage, ob sie als verlässliches Signal oder nur als taktische Unterbrechung wahrgenommen wird.",
+            "Für Planet und Umwelt liefert die Quelle keinen direkten Befund. Die demokratische Perspektive ist indirekter, aber nicht nebensächlich: Die Meldung betrifft die internationale Steuerung eines Kriegs durch Regierungen und ihre Gesandten. Das berührt Verhandlungsmacht, Legitimität und die Form politischer Konfliktbearbeitung. Aus SDG-Sicht lässt sich allenfalls der Bezug zu Frieden, Recht und starken Institutionen herstellen; ein Kausalbeweis für Fortschritt ist daraus nicht ableitbar."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Von der ersten zur dritten Ordnung",
+          "paragraphs": [
+            "In der ersten Ordnung liegt die mögliche kurzfristige Zustandsänderung: weniger Luftangriffe auf Kyjiw während der genannten Frist. Das wäre eine unmittelbare Veränderung des militärischen Drucks, falls die Anordnung umgesetzt wird. Die zweite Ordnung betrifft die Verhandlungsdynamik: Eine Pause kann Vertrauen testen, Erwartungen verschieben oder Gegenforderungen auslösen. Sie kann also den Gesprächsrahmen verändern, ohne den Kriegskurs schon zu kippen.",
+            "In der dritten Ordnung geht es um Strukturfragen. Sollte eine befristete Pause wiederholt werden oder in formellere Vereinbarungen münden, könnte sich ein verlässlicherer Kanal zwischen den Konfliktparteien entwickeln. Das Gegenteil ist ebenso möglich: Wenn die Pause nur symbolisch bleibt oder gebrochen wird, kann Misstrauen wachsen. Die Quelle trägt beide Richtungen als Risiko, nicht als Gewissheit."
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Was die Meldung über Belastbarkeit und Verwundbarkeit zeigt",
+          "paragraphs": [
+            "Die Ankündigung selbst ist ein Hinweis auf fragile Resilienz. Eine befristete Angriffspause ersetzt keine gesicherte Deeskalation, sondern markiert eher eine kurze Entlastung innerhalb eines weiterhin offenen Konflikts. Für Kyjiw bedeutet das: Die Sicherheitslage kann sich vorübergehend verbessern, bleibt aber grundsätzlich verletzlich.",
+            "Resilienz im WÖk-Sinn ist hier nicht die heroische Anpassung von Menschen, sondern die Stabilität des Systems gegenüber erneuter Gewalt. Gerade weil die Quellenlage nur eine angekündigte Pause und mehrere journalistische Berichte über Reisen und Gespräche liefert, ist die Belastbarkeit der behaupteten Veränderung offen. Ob die Pause eingehalten wird, ist der zentrale Prüfpunkt."
+          ]
+        },
+        {
+          "id": "transformation",
+          "title": "Transformation: Kein Friedensdurchbruch, aber ein möglicher Einstiegspunkt",
+          "paragraphs": [
+            "Transformation wäre eine strukturelle Veränderung des Konflikts, nicht nur eine temporäre Unterbrechung. Die vorliegenden Quellen reichen dafür nicht aus. Sie zeigen lediglich einen möglichen Einstiegspunkt: neue US-Vermittlung, Gespräche in Moskau und Kyjiw, dazu eine angekündigte dreitägige Angriffspause. Das ist politisch relevant, aber noch nicht transformativ im engeren Sinn.",
+            "Der Unterschied ist wichtig, weil kommunikative Großsignale im Krieg leicht mit materieller Veränderung verwechselt werden. Eine Reise von Gesandten, selbst verbunden mit einer militärischen Pause, kann ein neuer Wirkpfad sein. Sie kann aber ebenso in einer Episode enden, die keine dauerhafte Kursänderung bewirkt. Deshalb bleibt der Transformationsbezug vorsichtig und vorläufig."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was sich aus den Quellen nicht sicher ableiten lässt",
+          "paragraphs": [
+            "Die wichtigste Unsicherheit betrifft die Umsetzung. Die DW meldet eine Anordnung, aber die Quellen belegen nicht unabhängig, dass die Luftangriffe tatsächlich ausbleiben. Ebenso offen bleibt, ob die angekündigten Gespräche in Moskau und Kyjiw zu irgendeiner belastbaren Vereinbarung führen. Es gibt in den Quellen auch keine Zahlen zu Angriffen, Opfern oder einer messbaren Veränderung der Sicherheitslage.",
+            "Hinzu kommt die Frage der Zurechnung. Dass die Pause mit dem Besuch der US-Unterhändler zusammenhängt, ist in der DW zugeschrieben, aber noch kein harter Kausalbeweis für eine Friedensabsicht oder eine echte Deeskalationsentscheidung. Es kann ebenso ein taktisches Signal, ein Gesprächsangebot oder eine temporäre Friktion im Kriegsablauf sein. Hohe Unsicherheit macht die Lage nicht neutral, sondern vorläufig."
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Bewertung in den nächsten Stunden entscheidet",
+          "paragraphs": [
+            "Erstens: Ob die angekündigte dreitägige Pause am Sonntag tatsächlich beginnt und ob sie räumlich oder inhaltlich nur auf Kyjiw begrenzt bleibt. Zweitens: Ob es während dieser Frist objektiv weniger Angriffe, Luftalarme oder Schäden gibt. Drittens: Ob aus den Gesprächen in Moskau und Kyjiw konkrete Vereinbarungen, neue Kontaktkanäle oder nur politische Statements hervorgehen.",
+            "Diese Beobachtungspunkte sind entscheidend, weil Wirkung nur als tatsächliche Zustandsveränderung gilt. Ohne bestätigte Umsetzung bleibt die Meldung eine Ankündigung mit Wirkungspotenzial, aber kein Nachweis eingetretener Wirkung. Genau an dieser Stelle trennt die Wirkungsökonomie Meldung, Signal und beobachtete Veränderung."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Ein begrenzter, aber materiell relevanter Wirkpfad",
+          "paragraphs": [
+            "Die Quellen beschreiben keinen Durchbruch, wohl aber einen materiell relevanten Wirkpfad: zeitlich befristete Gewaltunterbrechung plus erneute Vermittlung. Das ist für Menschen in Kyjiw kurzfristig sicherheitsrelevant, für die Diplomatie anschlussfähig und für die Kriegslage potenziell bedeutsam. Doch die Evidenz trägt nur eine vorläufige Bewertung. Ob aus der Pause mehr wird als ein Signal, ist offen.",
+            "Der systemische Zusatznutzen der Analyse liegt deshalb in der sauberen Trennung von Ankündigung und Wirkung. Es gibt ein plausibles Wirkungspotenzial auf Schutz, Verhandlung und Risikowahrnehmung. Es gibt ein ebenso plausibles Wirkungsrisiko, dass die Pause taktisch bleibt oder schnell endet. Beobachtbar ist bisher nur die Ankündigung und die Reise der Unterhändler. Alles Weitere muss sich an der tatsächlichen Zustandsveränderung messen lassen."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Putin hat wegen des Besuchs der US-Unterhändler einen dreitägigen Stopp der Luftangriffe auf Kyjiw angeordnet.",
+          "type": "fact",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Nur eine journalistische Quelle liegt vor; die Anordnung ist berichtet, aber nicht unabhängig bestätigt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Angriffspause soll am Sonntag beginnen und drei Tage dauern.",
+          "type": "fact",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Zeitpunkt und Dauer stammen aus der Berichterstattung der DW; keine unabhängige Verifikation in den Quellen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "US-Unterhändler Jared Kushner und Steve Witkoff sollen Gespräche in Moskau und anschließend in Kyjiw führen.",
+          "type": "fact",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Reisepläne werden in mehreren journalistischen Berichten genannt; der tatsächliche Gesprächsverlauf ist offen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Trump bezeichnete Kushner und Witkoff als zwei großartige Verhandler und erklärte, man wolle prüfen, ob etwas erreicht werden könne.",
+          "type": "fact",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Äußerung wird journalistisch wiedergegeben; sie ist eine politische Selbstbeschreibung, kein Wirkungsnachweis.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Eine befristete Unterbrechung von Luftangriffen kann die unmittelbare Sicherheitslage in Kyjiw kurzfristig verbessern.",
+          "type": "impact_potential",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Potenzial hängt von tatsächlicher Einhaltung ab; in den Quellen ist noch keine Umsetzung belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die angekündigte Pause kann als taktisches Signal dienen, ohne den Kriegskurs zu ändern.",
+          "type": "impact_risk",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Dies ist eine analytische Risikoeinschätzung auf Basis der befristeten Ankündigung, kein belegter Verlauf.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Es gibt noch keinen belegten Rückgang von Angriffen, Opferzahlen oder eine nachweisbare politische Einigung.",
+          "type": "observation",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
+            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die gelieferten Quellen berichten nur über Ankündigungen und Reisen, nicht über eingetretene Zustandsänderungen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Wirkung ist nur als tatsächliche Zustandsveränderung zu bewerten; Reichweite, Ankündigung oder Zielbezug sind noch kein Wirkungsnachweis.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodische WOeK-Definition aus dem Auftrag.",
+          "date": null
+        },
+        {
+          "claim": "Die Meldung berührt vor allem Mensch und Demokratie; ein direkter Planet-Bezug ist in den Quellen nicht angelegt.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
+            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Normative Einordnung innerhalb der WÖk; kein externer Wirkungsnachweis.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Wenn die Pause eingehalten wird, könnte die Gesprächsdynamik zwischen Russland, den USA und der Ukraine verändert werden.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
+          ],
+          "evidence_level": "medium",
+          "data_status": "scenario",
+          "uncertainty": "Abhängig von Umsetzung und Reaktion der Konfliktparteien; kein Beleg für eingetretene Veränderung.",
+          "date": "2026-09-05"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellen belegen Gespräche und Ankündigungen, aber keinen tatsächlich eingetretenen Rückgang von Angriffen oder eine belastbare Friedensvereinbarung.",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
+            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
+          ],
+          "effect_on_assessment": "Begrenzt jede starke Wirkungszuschreibung; Analyse bleibt bei Potenzial, Risiko und vorläufiger Zurechnung."
+        },
+        {
+          "finding": "Selenskyj wird in einer Quelle mit einem Feuerpausen-Vorschlag zitiert, gleichzeitig heißt es, dass die Ukraine und Russland weiter gegenseitige Angriffe melden.",
+          "source_ids": [
+            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
+          ],
+          "effect_on_assessment": "Zeigt, dass die Kriegsdynamik fortbesteht und die angekündigte Pause nicht als bereits wirksame Deeskalation gelesen werden kann."
+        },
+        {
+          "finding": "Die US-Unterhändler werden in mehreren Berichten nur als unterwegs oder angekommen beschrieben; das belegt den Besuch, aber nicht die Resultate der Gespräche.",
+          "source_ids": [
+            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
+            "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb",
+            "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5"
+          ],
+          "effect_on_assessment": "Verhindert eine Zurechnung von Verhandlungserfolg; die Lage bleibt offen."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Bestätigung, dass die dreitägige Pause tatsächlich eingehalten wird",
+        "Unabhängige Hinweise auf geringere Angriffe, Luftalarme oder Schäden in Kyjiw während der Frist",
+        "Konkrete Vereinbarungen oder schriftlich bestätigte Ergebnisse aus den Gesprächen in Moskau oder Kyjiw",
+        "Widersprüchliche Berichte, dass die Pause nicht umgesetzt wurde oder sofort gebrochen wurde",
+        "Neue Aussagen der Beteiligten, die den Zweck der Pause klar als taktisch oder als Verhandlungsschritt einordnen"
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Dreitägige Angriffspause auf Kyjiw: Was die neue Vermittlungsphase wirklich verändert",
+        "recommended_summary": "Die Quellen zeigen eine angekündigte dreitägige Pause der Luftangriffe auf Kyjiw und neue US-Vermittlungsversuche. Das ist ein möglicher Wirkpfad, aber noch kein belegter Friedens- oder Deeskalationseffekt.",
+        "recommended_meta_description": "Dreitägige Angriffspause auf Kyjiw und neue US-Vermittlung: Was die Meldung für Sicherheit, Verhandlungskanal und Wirkungsgrenzen bedeutet."
+      },
+      "reading_time_minutes": 5,
+      "source_snapshot": [
+        {
+          "source_id": "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+          "registry_source_id": "dw-news",
+          "publisher_id": "deutsche-welle",
+          "publisher": "Deutsche Welle",
+          "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+          "url": "https://www.dw.com/de/putin-drei-tage-angriffspause-w%C3%A4hrend-ukraine-verhandlungen/a-79047412?maca=de-rss-de-news-1089-xml-mrss",
+          "published_at": "2026-09-05T13:01:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Krieg in der Ukraine: Trump schickt mal wieder seinen Schwiegersohn",
+          "url": "https://taz.de/Krieg-in-der-Ukraine/!6210492",
+          "published_at": "2026-09-05T11:18:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
+          "url": "https://www.stern.de/news/us-gesandte-kushner-und-witkoff-zu-gespraechen-ueber-ukraine-krieg-in-moskau-38211250.html",
+          "published_at": "2026-09-05T11:25:11.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16021136.html",
+          "published_at": "2026-09-05T11:06:25.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+          "published_at": "2026-09-04T17:21:16.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
+          "published_at": "2026-09-04T17:22:14.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
+          "published_at": "2026-09-04T17:46:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+          "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+          "published_at": "2026-09-04T20:13:08.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+          "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
+          "published_at": "2026-09-05T04:32:04.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "be5457cf56d6c22003d767d6e0c16fe71f724e0359f0004dfbc21d19ebd10836",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Iran-Krieg: US-Dieselpreis auf Höchststand",
+          "url": "https://www.stern.de/news/iran-krieg--us-dieselpreis-auf-hoechststand-38209606.html",
+          "published_at": "2026-09-04T13:42:24.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T14:17:38.262Z",
+          "source_fingerprint": "6050c749ed2800ac1c360d181c19b6115714eae2c6db9b871a0c8f0931f179f8",
+          "title": "Dreitägige Angriffspause auf Kyjiw: Was die neue Vermittlungsphase wirklich verändert",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Putin hat wegen des Besuchs der US-Unterhändler einen dreitägigen Stopp der Luftangriffe auf Kyjiw angeordnet.",
+              "type": "fact",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Nur eine journalistische Quelle liegt vor; die Anordnung ist berichtet, aber nicht unabhängig bestätigt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Angriffspause soll am Sonntag beginnen und drei Tage dauern.",
+              "type": "fact",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Zeitpunkt und Dauer stammen aus der Berichterstattung der DW; keine unabhängige Verifikation in den Quellen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "US-Unterhändler Jared Kushner und Steve Witkoff sollen Gespräche in Moskau und anschließend in Kyjiw führen.",
+              "type": "fact",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+                "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Reisepläne werden in mehreren journalistischen Berichten genannt; der tatsächliche Gesprächsverlauf ist offen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Trump bezeichnete Kushner und Witkoff als zwei großartige Verhandler und erklärte, man wolle prüfen, ob etwas erreicht werden könne.",
+              "type": "fact",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+                "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Äußerung wird journalistisch wiedergegeben; sie ist eine politische Selbstbeschreibung, kein Wirkungsnachweis.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Eine befristete Unterbrechung von Luftangriffen kann die unmittelbare Sicherheitslage in Kyjiw kurzfristig verbessern.",
+              "type": "impact_potential",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Potenzial hängt von tatsächlicher Einhaltung ab; in den Quellen ist noch keine Umsetzung belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die angekündigte Pause kann als taktisches Signal dienen, ohne den Kriegskurs zu ändern.",
+              "type": "impact_risk",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+                "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Dies ist eine analytische Risikoeinschätzung auf Basis der befristeten Ankündigung, kein belegter Verlauf.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Es gibt noch keinen belegten Rückgang von Angriffen, Opferzahlen oder eine nachweisbare politische Einigung.",
+              "type": "observation",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+                "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
+                "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die gelieferten Quellen berichten nur über Ankündigungen und Reisen, nicht über eingetretene Zustandsänderungen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Wirkung ist nur als tatsächliche Zustandsveränderung zu bewerten; Reichweite, Ankündigung oder Zielbezug sind noch kein Wirkungsnachweis.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodische WOeK-Definition aus dem Auftrag.",
+              "date": null
+            },
+            {
+              "claim": "Die Meldung berührt vor allem Mensch und Demokratie; ein direkter Planet-Bezug ist in den Quellen nicht angelegt.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+                "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
+                "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Normative Einordnung innerhalb der WÖk; kein externer Wirkungsnachweis.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Wenn die Pause eingehalten wird, könnte die Gesprächsdynamik zwischen Russland, den USA und der Ukraine verändert werden.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+                "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "scenario",
+              "uncertainty": "Abhängig von Umsetzung und Reaktion der Konfliktparteien; kein Beleg für eingetretene Veränderung.",
               "date": "2026-09-05"
             }
           ]

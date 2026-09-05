@@ -2,47 +2,86 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": true,
-  "started_at": "2026-09-05T14:02:11.302Z",
-  "scanned_stories": 85,
-  "scanned_subjects": 64,
-  "editorial_candidates": 5,
+  "started_at": "2026-09-05T14:17:38.262Z",
+  "scanned_stories": 88,
+  "scanned_subjects": 65,
+  "editorial_candidates": 6,
   "ready_for_research": 3,
   "research_pending": 2,
   "editorial_research_sources_discovered": 6,
   "selected": 3,
-  "editorial_research_started": 4,
-  "editorial_analyses_published": 2,
+  "editorial_research_started": 5,
+  "editorial_analyses_published": 1,
   "editorial_analyses_updated": 0,
-  "research_calls": 4,
-  "research_tokens": 25331,
-  "analysis_tokens": 19988,
-  "estimated_cost_usd": 0.108945,
-  "quality_retries": 1,
+  "research_calls": 5,
+  "research_tokens": 37512,
+  "analysis_tokens": 26053,
+  "estimated_cost_usd": 0.13604,
+  "quality_retries": 2,
   "publication_deferred": false,
   "failed": [
     {
+      "story_id": "wt-6c26e428b894e714",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
+    },
+    {
       "story_id": "wt-aabe8c0430bf8f84",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
     }
   ],
   "candidates": [
     {
-      "story_id": "wt-4fb94d2cebfca746",
-      "story_slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-      "story_title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-      "editorial_analysis_score": 67,
-      "analysis_gain": 49,
+      "story_id": "wt-3d901522efd87e2d",
+      "story_slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
+      "story_title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 46,
       "factors": {
         "systemic_relevance": 16,
-        "impact_potential": 7,
-        "impact_risk": 4,
+        "impact_potential": 9,
+        "impact_risk": 8,
         "observed_impact": 0,
         "third_order_relevance": 5,
         "transformation_relevance": 8,
         "resilience_relevance": 8,
         "macro_relevance": 0,
-        "MPD_interdependence": 0,
-        "distribution_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 0,
+        "discourse_relevance": 0,
+        "case_depth": 8,
+        "evidence_quality": 8
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 5,
+        "primary_source_count": 0,
+        "cited_claim_count": 21,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "6050c749ed2800ac1c360d181c19b6115714eae2c6db9b871a0c8f0931f179f8",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-6c26e428b894e714",
+      "story_slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
+      "story_title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+      "editorial_analysis_score": 77,
+      "analysis_gain": 53,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 10,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 5,
+        "transformation_relevance": 3,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
         "discourse_relevance": 0,
         "case_depth": 8,
         "evidence_quality": 8
@@ -52,12 +91,12 @@
         "source_integrity": "verified",
         "independent_origin_count": 13,
         "primary_source_count": 0,
-        "cited_claim_count": 77,
+        "cited_claim_count": 81,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "b0bbc4dc52ef7a7e171ff8bfe0378024486726ada74f4c15a24f830d47e82abd",
+      "fingerprint": "5f3f1ea154a0a471ef080877764d397f3a7d07bb0b9cda59e9072552d9854a62",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -167,7 +206,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "0fefb027a302f4eeccbc0f6418d48bb0b24426777ea68ec010072cee8fd635dd",
+      "fingerprint": "27b6d823c7bfe9f1f625b1555c054a9421253f68307ccc6eef2b95f3e9bd7077",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -203,9 +242,9 @@
         "reasons": []
       },
       "fingerprint": "6ed79b91bef11cc5feadb07f866643db995bb11b3d4bb5c24f73a0060df65c54",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
   ],
-  "completed_at": "2026-09-05T14:04:16.424Z"
+  "completed_at": "2026-09-05T14:21:38.353Z"
 }
