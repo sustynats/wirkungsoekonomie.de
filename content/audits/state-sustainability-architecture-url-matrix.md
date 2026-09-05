@@ -1,10 +1,10 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4366**
+- Sitemap routes: **4379**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **12195**
-- Routes with non-default #253 action: **3589**
-- Routes with Wirkungsblindheit/novelty/absence claim signals: **248**
+- Extra tracked source HTML not in sitemap: **12201**
+- Routes with non-default #253 action: **3590**
+- Routes with Wirkungsblindheit/novelty/absence claim signals: **249**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
 
@@ -19,7 +19,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/kompass.html | `kompass.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | nachhaltigkeitspruefung |
 | https://wirkungsoekonomie.de/fuer/politik.html | `fuer/politik.html` | REWRITE_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_DNS_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/evidenz/ | `evidenz/index.html` | ADD_SOURCE_LINKS | — |
-| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/datenbasis.html | `methodik/datenbasis.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/daten-standards-regularien.html | `methodik/daten-standards-regularien.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/externe-quellen.html | `methodik/externe-quellen.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
@@ -3601,6 +3601,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9048/ | `quellenarchiv/wok-q-9048/index.html` | ADD_SOURCE_LINKS | enap, dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9049/ | `quellenarchiv/wok-q-9049/index.html` | ADD_SOURCE_LINKS | dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9050/ | `quellenarchiv/wok-q-9050/index.html` | ADD_SOURCE_LINKS | dns, evaluation |
+| https://wirkungsoekonomie.de/referenz/aktualisierung/ | `referenz/aktualisierung/index.html` | REVIEW_REQUIRED, ADD_DNS_REFERENCE | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 
 ## Claim-signal review
 
@@ -3671,17 +3672,11 @@ Signals are review candidates, not automatic errors.
 - `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence — Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
 - `wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/index.html` — wirkungsblind, alternativen, evaluation — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/index.html` — wirkungsblind, evaluation — No material #253 change identified by path rule; semantic scan still applies.
+- `werkzeuge/impact-controlling/index.html` — folgenabschaetzung, enap, dns, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/index.html` — wirkungsblind, evaluation — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/gesundheit-pflege/dossiers/index.html` — evaluation, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` — wirkungsblind, evaluation — No material #253 change identified by path rule; semantic scan still applies.
 - `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/iran-krieg-us-dieselpreis-auf-hochststand-f4a2e8/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `begriffe/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/affektheuristik/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/algorithmische-fairness/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3854,11 +3849,18 @@ Signals are review candidates, not automatic errors.
 - `quellenarchiv/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0465/index.html` — novelty_or_absence — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0843/index.html` — wirkungsblind — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
+- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/iran-krieg-us-dieselpreis-auf-hochststand-f4a2e8/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1106**
-- Combined matrix items (routes + extra HTML + support): **17667**
+- Tracked support text files inventoried: **1128**
+- Combined matrix items (routes + extra HTML + support): **17708**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3927,6 +3929,7 @@ Signals are review candidates, not automatic errors.
 | `content/glossary/imports/recht-wirtschaft-innovation-klima.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | wirkungsblind |
 | `content/glossary/imports/rechtsgrundlagen-primarquellen.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
 | `content/glossary/imports/resignifikation.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
+| `content/glossary/imports/site-review-2026-09-05.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
 | `content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/glossary/imports/terminologie-leitplanken.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | evaluation |
 | `content/glossary/imports/terminologische-korrekturen.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
@@ -3952,6 +3955,9 @@ Signals are review candidates, not automatic errors.
 | `content/quellenarchiv/publication-supplements/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus.json` | source_archive_source_or_generator | NO_CHANGE_REQUIRED | alternativen |
 | `content/quellenarchiv/publication-supplements/wirkungsbasiertes-value-pricing-v1.2.json` | source_archive_source_or_generator | NO_CHANGE_REQUIRED | evaluation |
 | `content/quellenarchiv/sources.json` | source_archive_source_or_generator | CORRECT_OVERCLAIM | wirkungsblind, folgenabschaetzung, dns, alternativen, evaluation, novelty_or_absence |
+| `content/site/fragment-aliases.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/site/methodik.json` | support_text | ADD_SOURCE_LINKS | enap, egfa, dns, alternativen, evaluation |
+| `content/site/reference-update.json` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/sources/alternative-models-revival-monitor.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/sources/bibliography.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/sources/evidence-source-registry.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
@@ -4272,6 +4278,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/news/media-impact.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/newsroom.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/run.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
+| `scripts/news/source-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/title-image/image-file.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns |
 | `scripts/news/visuals.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/podcast/build-podcast-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
@@ -4283,7 +4290,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/portal/build-go3-sdg-reference-v1.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns, evaluation |
 | `scripts/portal/build-health-care.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/portal/build-housing-city.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
-| `scripts/portal/build-impact-controlling.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/portal/build-impact-controlling.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, enap, dns, evaluation, novelty_or_absence |
 | `scripts/portal/build-media-public-sphere.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `scripts/portal/build-pension-social-security.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/portal/build-portal-architecture.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation, novelty_or_absence |
@@ -4301,6 +4308,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/portal/build-work-income-automation.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/publications/build-begriffsleitfaden-v1.6.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, dns, evaluation |
 | `scripts/publications/build-begriffsleitfaden-v1.7.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, enap, dns, evaluation |
+| `scripts/publications/build-site-review-pdfs.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap |
 | `scripts/quality/apply-stage13-usability-a11y-seo.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/quality/check-state-sustainability-architecture.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
 | `scripts/quellenarchiv/check-quellenarchiv-quality.mjs` | source_archive_source_or_generator | NO_CHANGE_REQUIRED | novelty_or_absence |
@@ -4311,6 +4319,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/site/build-institut-teaser.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/site/build-iooi-wirkungsarchitektur.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `scripts/site/build-parlament-info.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/site/build-reference-update.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap |
 | `scripts/site/build-so-wirkt-wirkungsoekonomie.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/sources/check-evidence-source-archive-links.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/studienskripte/apply-v33-rechenstandard.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
@@ -4366,7 +4375,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17668**
+- Combined reviewed items: **17709**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
