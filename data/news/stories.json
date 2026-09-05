@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T06:36:46.215Z",
+  "updated_at": "2026-09-05T06:51:33.859Z",
   "stories": [
     {
       "story_id": "wt-00fccb632042b492",
@@ -2584,7 +2584,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
+          "checked_at": "2026-09-05T06:51:33.859Z"
         },
         {
           "claim_id": "wt-f64d1091d30ae1c3-claim-02",
@@ -2604,21 +2604,21 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
+          "checked_at": "2026-09-05T06:51:33.859Z"
         }
       ],
       "content_hash": "05038e50d58e24ac4226582c128e5b993999a1ffda125212f7c5563821ac14db",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        "AI_PROVIDER_ERROR:429"
       ],
       "quality_retry_count": 1,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_PROVIDER_UNAVAILABLE",
       "versions": [],
-      "updated_at": "2026-09-05T06:36:46.215Z",
+      "updated_at": "2026-09-05T06:51:33.859Z",
       "event_first_seen_at": "2026-09-05T03:36:37.809Z",
       "event_detected_at": "2026-09-05T03:36:37.809Z",
       "event_id": "event-2a11859714a91482f648",
@@ -2649,13 +2649,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 17.186916666666665,
+        "source_age_minutes": 31.980983333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 180.1401,
+        "queue_age_minutes": 194.93416666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       }
     },
@@ -14986,8 +14986,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -16045,9 +16047,9 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
+        "reason": "AI_PROVIDER_UNAVAILABLE",
         "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
+          "AI_PROVIDER_ERROR:429"
         ],
         "quality_retry_count": 1,
         "reassessment": false,
@@ -20413,8 +20415,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -20986,10 +20990,9 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
+        "reason": "AI_PROVIDER_UNAVAILABLE",
         "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+          "AI_PROVIDER_ERROR:429"
         ],
         "quality_retry_count": 2,
         "reassessment": false,
@@ -23121,10 +23124,9 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
+        "reason": "AI_PROVIDER_UNAVAILABLE",
         "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+          "AI_PROVIDER_ERROR:429"
         ],
         "quality_retry_count": 1,
         "reassessment": false,
@@ -24046,10 +24048,9 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
+        "reason": "AI_PROVIDER_UNAVAILABLE",
         "quality_errors": [
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+          "AI_PROVIDER_ERROR:429"
         ],
         "quality_retry_count": 2,
         "reassessment": false,
@@ -45026,8 +45027,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -49362,8 +49365,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -63196,8 +63201,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
@@ -64520,8 +64527,10 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
+        "reason": "AI_PROVIDER_UNAVAILABLE",
+        "quality_errors": [
+          "AI_PROVIDER_ERROR:429"
+        ],
         "quality_retry_count": 0,
         "reassessment": false,
         "fresh": false,
