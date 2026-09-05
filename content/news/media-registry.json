@@ -19,6 +19,21 @@
   },
   "sources": [
     {
+      "source_id": "landtag-sachsen-anhalt-context", "publisher_id": "landtag-sachsen-anhalt", "name": "Landtag Sachsen-Anhalt", "url": "https://www.landtag.sachsen-anhalt.de/", "source_type": "official_reference", "publisher_kind": "institution", "source_role": "legal_context", "primary_source": true, "role": "D", "enabled": false, "topic": "Demokratie", "research_lane": "primary", "language": "de", "geography": ["DE"],
+      "why_relevant": "Fallbezogene Originalquellen zu Landesverfassung und parlamentarischen Verfahren. Kein neuer automatischer Feed.",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Öffentliche Originaldokumente fallbezogen geprüft. Automatisierte Abrufbedingungen nicht freigegeben; kein Polling." }
+    },
+    {
+      "source_id": "sachsen-anhalt-election-context", "publisher_id": "sachsen-anhalt-landeswahlleiterin", "name": "Landeswahlleiterin Sachsen-Anhalt", "url": "https://wahlen.sachsen-anhalt.de/", "source_type": "official_reference", "publisher_kind": "institution", "source_role": "election_calendar", "primary_source": true, "role": "D", "enabled": false, "topic": "Demokratie", "research_lane": "primary", "language": "de", "geography": ["DE"],
+      "why_relevant": "Fallbezogene Originalinformationen zu Wahltermin und Wahlverfahren. Kein neuer automatischer Feed.",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Öffentliche Wahlhinweise fallbezogen geprüft. Keine pauschale Freigabe automatisierter Abrufe." }
+    },
+    {
+      "source_id": "focus-case-research", "publisher_id": "focus", "name": "FOCUS online", "url": "https://www.focus.de/", "source_type": "media_discovery", "publisher_kind": "journalism", "source_role": "journalistic_report", "primary_source": false, "role": "C", "enabled": false, "topic": "Politik", "research_lane": "secondary", "language": "de", "geography": ["DE"],
+      "why_relevant": "Nur fallbezogene Recherche; gemeinsame Interview- oder Agenturursprünge sind keine unabhängigen Bestätigungen.",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Keine Freigabe für automatisches Polling oder Paywall-Inhalte. Nur öffentlich zugängliche Recherchehinweise." }
+    },
+    {
       "source_id": "lto-news", "publisher_id": "legal-tribune-online", "name": "Legal Tribune Online", "url": "https://www.lto.de/", "feed_url": "https://www.lto.de/rss/feed.xml", "source_type": "media_rss", "publisher_kind": "specialist_journalism", "research_lane": "blindspot", "source_role": "journalistic_report", "primary_source": false, "enabled": true, "topic": "Recht und Justiz", "language": "de", "geography": ["DE"], "frequency_class": "regular", "max_items": 60,
       "why_relevant": "Fachjournalistische Berichte zu Recht, Justiz, Gerichten und rechtsstaatlicher Praxis können Primärdokumente und allgemeine Nachrichtenquellen gezielt ergänzen.",
       "editorial_context": "Journalistische Sekundärquelle. Urteile, Umfragen und politische Aussagen werden nach Möglichkeit zusätzlich an der jeweiligen Primärquelle geprüft.",

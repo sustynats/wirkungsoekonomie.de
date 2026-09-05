@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-development.mjs";
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
@@ -471,7 +472,7 @@ function existingStoryMatch(item, entry, now) {
   return Math.max(0, ...compatibleSources.filter((source) => eventCompatibility(item, source).same_event).map((source) => storySimilarity(item.title, source.title)));
 }
 
-export function classifyItem(item, source = {}) {
+export function classifyItem(item, source = {}, now = new Date().toISOString()) {
   const originalText = `${item.title} ${item.summary} ${(item.categories || []).join(" ")}`;
   const internationalSignals = [
     [/\b(climate|emissions?|biodiversity|environment|pollution)\b/i, "Klima Umwelt Emission"],
@@ -494,6 +495,15 @@ export function classifyItem(item, source = {}) {
   // Quellenqualität bestimmt die Vertrauensbasis, aber nie allein die materielle Relevanz.
   let score = 10;
   const drivers = [];
+  const politicalDevelopment = politicalDevelopmentFor(item, now);
+  if (politicalDevelopment.signals.some(signal => !["resignation", "election_result"].includes(signal))) {
+    score += 24;
+    drivers.push("neue Aussage zu Kandidatur oder Regierungsbildung: materiellen Unterschied prüfen");
+  }
+  if (politicalDevelopment.time_sensitive) {
+    score += 16;
+    drivers.push("zeitkritische politische Entwicklung vor einer Wahl: vorrangig verifizieren");
+  }
   if (/\b(rücktritt|ruecktritt|regierungsbruch|koalitionsbruch|wahlergebnis|wahlgewinn|resigns?|election result|coalition collapse|ceasefire|waffenstillstand|evakuierung|erdbeben|großbrand|hochwasser|angriff)\b/i.test(originalText)) {
     score += 24;
     drivers.push("materielle Änderung der politischen, Sicherheits- oder Versorgungslage");
@@ -572,9 +582,9 @@ export function claimLedgerFor(items, storyId, checkedAt) {
   }));
 }
 
-export function preAnalyzeStory(story) {
+export function preAnalyzeStory(story, now = new Date().toISOString()) {
   const combined = story.sources.map((source) => `${source.title} ${source.summary}`).join(" ");
-  const classifications = story.sources.map((source) => classifyItem(source, source));
+  const classifications = story.sources.map((source) => classifyItem(source, source, now));
   const strongest = classifications.sort((a, b) => b.score - a.score)[0];
   const topics = [...new Set(classifications.flatMap((entry) => entry.topics))];
   const dimensions = [...new Set(classifications.flatMap((entry) => entry.dimensions))];
@@ -586,6 +596,7 @@ export function preAnalyzeStory(story) {
   if (!mechanismHints.length) mechanismHints.push("Wirkmechanismus anhand der Primärquelle noch zu konkretisieren");
   return {
     filter_version: "4.0",
+    material_development_review: materialDevelopmentReview(story.sources, story.existing_story?.sources || [], now),
     internal_relevance_score: strongest.score,
     public_relevance: strongest.relevance,
     topics,
@@ -799,6 +810,7 @@ export function buildAnalysisPrompt(stories) {
     "Prüfe Materialität ausdrücklich nach Zahl und Art der Betroffenen, Intensität, Dauer, Reversibilität, Systemrelevanz, Kaskaden, Verteilung, Resilienz und demokratischer Korrekturfähigkeit. Mindestens zwei verschiedene Faktoren müssen substanziell sein oder ein einzelner Faktor muss außergewöhnlich stark sein. Resonanz und Aufmerksamkeit zählen nicht als materielle Faktoren und begründen auch keine Ausnahme.",
     "Konkrete Materialität begründen: Lokaler Einzelfall, Produkt- oder Gebührenänderung reicht ohne belegte Intensität, Breite oder Präzedenzwirkung nicht. Denkbare Übertragbarkeit allein reicht nicht. Die Publikationsform ist niemals allein ein Ausschlussgrund: Auch regelmäßige Arbeitsmarkt-/Preis-/Gesundheits-/Klimastatistik, Interview, Rede oder parlamentarische Antwort kann neue Zustandsinformation, zurechenbare Entscheidung, verbindliche Zusage, Evidenz oder Kursänderung liefern.",
     "Ablehnen: bloße Meinung, Wiederholung, Spekulation, Zeremonie, Routinezahl, Börsen-/Tenderzahl, Frage ohne materielle Antwort oder formales Verfahren ohne relevanten Wirkpfad. Quellenrang und Aufmerksamkeit sind kein Relevanzbeweis. Sammel-/Rückblicksmeldung bereits erfasster Entscheidungen ohne neue Information: related_ticker_history prüfen, duplicate_without_new_information.",
+    "Ein bekanntes Wahlthema ist nicht automatisch eine Dublette. material_development_review ist nur ein lokales Prüfsignal: Vergleiche neue Kandidatur-, Rücktritts-, Koalitions-, Regierungsbildungs- oder Ergebnisangaben mit dem bisherigen Stand. Eine neue materielle Aussage als material_update behandeln; bloß andere Medien oder Formulierungen nicht. Frühere Bedingungen und Originalzeitpunkte gegenprüfen, bevor ein Kurswechsel behauptet wird. Zeitkritik erhöht die Prüfpriorität, niemals den Evidenzgrad. Keine partei- oder medienspezifische Sonderregel; Landtagswahl und anschließende Regierungschefwahl auseinanderhalten.",
     "Setze publication_recommendation=false, wenn Ereignis, Status oder Kernbehauptung nicht ausreichend belegt sind oder aus den gelieferten Daten keine fachlich sinnvolle, vorsichtige Einordnung möglich ist. Eine quellengebundene Ex-ante-Einordnung mit klaren Unsicherheiten ist zulässig, wenn die Materialitäts- und Evidenzprüfung bestanden ist.",
     "Trenne Fakt, Beobachtung, analytische Inferenz, Wirkungspotenzial, Wirkungsrisiko, eingetretene Wirkung, Zurechnung und normative Bewertung.",
     "Verfahrensstand des konkreten Hauptgegenstands zum Quellenstand: Kabinettsbeschluss über Gesetzentwurf = Entwurf; beschlossen = endgültig verabschiedete Regelung/Entscheidung; in Kraft = bereits belegtes Inkrafttreten, nie Zukunftstermin. Geltendes Recht nicht zurückstufen. Frist/Entwurf/Beschluss/Inkrafttreten/Umsetzung getrennt halten; Vergleichsgesetz oder Teilregel bestimmt nicht den Hauptstatus. Unklar bleibt offen. Ex ante ist kein Verfahrensstand und vor messbarer Wirkung auch nach Inkrafttreten möglich.",
