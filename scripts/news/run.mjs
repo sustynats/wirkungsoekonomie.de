@@ -502,7 +502,11 @@ export function aiProviderCoverageDegraded(report = {}) {
   const successes = Math.max(0, Number(report.ai_provider_successes || 0));
   if (!failures) return false;
   if (!successes) return true;
-  return failures >= 3 || failures / (failures + successes) >= 0.2;
+  // A single late 429/timeout after successful responses is a retryable
+  // throttle, not evidence that the provider or the whole run is down.
+  // Keep it observable in ai_provider_errors and the technical queue, but
+  // escalate only when failures repeat within the same run.
+  return failures >= 3 || (failures >= 2 && failures / (failures + successes) >= 0.2);
 }
 
 export function queueSnapshot(stories = [], now = new Date().toISOString(), before = 0) {
