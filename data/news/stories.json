@@ -1,7 +1,1347 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T07:51:41.218Z",
+  "updated_at": "2026-09-05T08:06:46.297Z",
   "stories": [
+    {
+      "story_id": "wt-3a99a6b38ec7118a",
+      "slug": "umspannwerk-suche-nach-verdachtigem-wegen-strom-sabotage-lauft-c7118a",
+      "title": "Umspannwerk: Suche nach Verdächtigem wegen Strom-Sabotage läuft",
+      "first_seen": "2026-09-05T08:01:00.000Z",
+      "last_updated": "2026-09-05T08:01:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-suche-nach-verdaechtigem-wegen-strom-sabotage-laeuft/100251404.html",
+          "title": "Umspannwerk: Suche nach Verdächtigem wegen Strom-Sabotage läuft",
+          "summary": "Die versuchten Sabotageakte gegen das deutsche Stromnetz häufen sich, es gibt Bekennerschreiben. Der mutmaßliche Verfasser ist noch flüchtig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T08:01:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "57c6e8e96c8174df0fc62f552044a1e2eeb1cea5ee11f5a0f1742197c404ea01",
+          "source_item_id": "fa31d47b4e064b38165858f09bae8e17671c06097ca4a9509b550b014e62f07c",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T08:01:00.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3a99a6b38ec7118a-claim-01",
+          "story_id": "wt-3a99a6b38ec7118a",
+          "claim": "Umspannwerk: Suche nach Verdächtigem wegen Strom-Sabotage läuft: Die versuchten Sabotageakte gegen das deutsche Stromnetz häufen sich, es gibt Bekennerschreiben. Der mutmaßliche Verfasser ist noch flüchtig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        }
+      ],
+      "content_hash": "9660e07a72962ce8f42bd874ae5ef8936d6648dab09eb6c0d802879e76d987a5",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T08:06:46.297Z",
+      "event_first_seen_at": "2026-09-05T08:06:46.297Z",
+      "event_detected_at": "2026-09-05T08:06:46.297Z",
+      "event_id": "event-4c2008fc104671b979e2",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.771616666666667,
+        "detection_delay_minutes": 5.771616666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T08:06:46.297Z",
+      "rejection": {
+        "at": "2026-09-05T08:06:46.297Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-39b2983868cd0e20",
+      "slug": "chipkonzern-nvidias-griff-nach-dem-github-der-ki-und-seine-folgen-cd0e20",
+      "title": "Chipkonzern: Nvidias Griff nach dem GitHub der KI – und seine Folgen",
+      "first_seen": "2026-09-04T08:56:16.000Z",
+      "last_updated": "2026-09-05T07:53:00.000Z",
+      "topic": [
+        "Digitalisierung",
+        "KI"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/it/nvidia-kauft-hugging-face-warum-die-uebernahme-die-ki-branche-spaltet/100251976.html",
+          "title": "Chipkonzern: Nvidias Griff nach dem GitHub der KI – und seine Folgen",
+          "summary": "Nvidia übernimmt Hugging Face für 13 Milliarden Dollar – und damit die zentrale Plattform für offene KI‑Modelle. Doch die Übernahme wirft Fragen auf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T08:56:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "e5267c689a9554a4f58a7fd811a46bf9ccd333227734e2b2f339cf1047788adf",
+          "source_item_id": "6673ef6beed165bf40cfbe88045d85dbe60c2da9f67a70eb902d029b149f0bb4",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T08:56:16.000Z",
+          "ingested_at": "2026-09-04T09:21:34.386Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/it/nvidia-kauft-hugging-face-warum-die-uebernahme-die-branche-spaltet/100251976.html",
+          "title": "Chipkonzern: Nvidias Griff nach dem GitHub der KI – und seine Folgen",
+          "summary": "Nvidia übernimmt Hugging Face für 13 Milliarden Dollar – und damit die zentrale Plattform für offene KI‑Modelle. Doch die Übernahme wirft Fragen auf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:53:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "4697458dfccee63cb5450b98b9722119fdc863150ac8603a3228e037a1252e68",
+          "source_item_id": "4b670d80d639293bd7b48c1be72328c427247dad7ec70f6a74fe9e3901b83bb5",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:53:00.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-39b2983868cd0e20-claim-01",
+          "story_id": "wt-39b2983868cd0e20",
+          "claim": "Chipkonzern: Nvidias Griff nach dem GitHub der KI – und seine Folgen: Nvidia übernimmt Hugging Face für 13 Milliarden Dollar – und damit die zentrale Plattform für offene KI‑Modelle. Doch die Übernahme wirft Fragen auf.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-39b2983868cd0e20-claim-02",
+          "story_id": "wt-39b2983868cd0e20",
+          "claim": "Chipkonzern: Nvidias Griff nach dem GitHub der KI – und seine Folgen: Nvidia übernimmt Hugging Face für 13 Milliarden Dollar – und damit die zentrale Plattform für offene KI‑Modelle. Doch die Übernahme wirft Fragen auf.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        }
+      ],
+      "content_hash": "eae0d111a26565575ff504331bccb044d44a66f95d0ffc46d58f3b184038bc2e",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T08:06:46.297Z",
+      "event_first_seen_at": "2026-09-04T09:21:34.386Z",
+      "event_detected_at": "2026-09-04T09:21:34.386Z",
+      "event_id": "event-1d1078364b5718a1888d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 48,
+        "public_relevance": "hoch",
+        "topics": [
+          "Digitalisierung",
+          "KI"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.771616666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 1365.1985166666666,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 94,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T08:06:46.297Z",
+      "rejection": {
+        "at": "2026-09-05T08:06:46.297Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-19ad19be6d5e7cf2",
+      "slug": "polizei-fahndet-weiter-nach-verdachtigem-5e7cf2",
+      "title": "Polizei fahndet weiter nach Verdächtigem",
+      "first_seen": "2026-09-05T07:15:01.000Z",
+      "last_updated": "2026-09-05T07:45:01.000Z",
+      "topic": [
+        "Energie",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/fahndung-sabotage-stromnetz-100.html",
+          "title": "Polizei fahndet weiter nach Verdächtigem",
+          "summary": "Die Polizei fahndet weiter nach einem Mann, der sich zu Sabotageakten auf das Stromnetz bekannt hat. Nach Anschlagsversuchen in Brandenburg und Nordrhein-Westfalen wurden auch in …",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:45:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f0320a303b54eac4d548ad24a724c9f1826c24b3794ce6fd300b79258af1954b",
+          "source_item_id": "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:45:01.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/anschlaege-auf-umspannwerke--polizei-fahndet-weiter-nach-verdaechtigem-38210774.html",
+          "title": "Anschläge auf Umspannwerke: Polizei fahndet weiter nach Verdächtigem",
+          "summary": "Nach den Anschlägen auf Umspannwerke in Brandenburg und Nordrhein-Westfalen fahnden die Ermittler weiter nach einem 48-jährigen Verdächtigen. „Wir befinden uns immer noch in der Fahndungslage“, sagte eine Sprecherin der Polizei Köln am Samstagmorgen der Nachrichtenagentur AFP. Es seien „starke Polizeikräfte im Einsatz“, fügte sie hinzu.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T06:54:27.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b02b7b7d4dbce18ee7236795f084a07080da4edaeb421f0ba8c86a76dfc9491f",
+          "source_item_id": "8841df4c5c6f9b161cad135f4587b1c19b2a790a0d0d230483dacb81d55d797e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T06:54:27.000Z",
+          "ingested_at": "2026-09-05T07:21:32.324Z",
+          "provenance": {
+            "origin": "agency:afp",
+            "basis": "agency_attribution_in_available_text",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-19ad19be6d5e7cf2-claim-01",
+          "story_id": "wt-19ad19be6d5e7cf2",
+          "claim": "Polizei fahndet weiter nach Verdächtigem: Die Polizei fahndet weiter nach einem Mann, der sich zu Sabotageakten auf das Stromnetz bekannt hat. Nach Anschlagsversuchen in Brandenburg und Nordrhein-Westfalen wurden auch in …",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-19ad19be6d5e7cf2-claim-02",
+          "story_id": "wt-19ad19be6d5e7cf2",
+          "claim": "Anschläge auf Umspannwerke: Polizei fahndet weiter nach Verdächtigem: Nach den Anschlägen auf Umspannwerke in Brandenburg und Nordrhein-Westfalen fahnden die Ermittler weiter nach einem 48-jährigen Verdächtigen. „Wir befinden uns immer noch in der Fahndungslage“, sagte eine Sprecherin der Polizei Köln am Samstagmorgen der Nachrichtenagentur AFP. Es seien „starke Polizeikräfte im Einsatz“, fügte sie hinzu.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "agency:afp",
+            "basis": "agency_attribution_in_available_text",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        }
+      ],
+      "content_hash": "431b68d714bece77a3332961f1fb4cdb377fd0c2fa8bc577945640612b5cc931",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T08:06:46.297Z",
+      "event_first_seen_at": "2026-09-05T07:21:32.324Z",
+      "event_detected_at": "2026-09-05T07:21:32.324Z",
+      "event_id": "event-47b63689127b7d9ed5dd",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.75495,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 45.232883333333334,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T08:06:46.297Z",
+      "rejection": {
+        "at": "2026-09-05T08:06:46.297Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-06476c6e980f5f47",
+      "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+      "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+      "first_seen": "2026-09-04T07:02:30.000Z",
+      "last_updated": "2026-09-05T07:41:00.000Z",
+      "topic": [
+        "Demokratie",
+        "Politik",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
+          "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+          "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:02:30.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
+          "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:02:30.000Z",
+          "ingested_at": "2026-09-04T07:21:13.294Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+          "title": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt",
+          "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T05:30:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4ecffbf01167f40b3db26f6f52aaf0917fc5e9a7e0fa159589f2f79d534ff88e",
+          "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T05:30:02.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
+          "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+          "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T04:07:55.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
+          "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T04:07:55.000Z",
+          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
+          "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+          "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T04:09:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
+          "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T04:09:22.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
+          "title": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht",
+          "summary": "Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-01T14:38:55.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a2e4d8b52b9340ac784ec86e650c17dec22acac070fb481dd92fed8839dea886",
+          "source_item_id": "deeaaefab10d8d6be35c1a4de80f7e4de81e1ca2e130057b3b623d0c4f6aa226",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-01T14:38:55.000Z",
+          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
+          "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
+          "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:06:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
+          "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:06:15.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
+          "title": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt",
+          "summary": "Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T13:33:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c520b2fed8cbae3e888aab84b15115b053449540cb1ce16bbc5d6381f5c75a14",
+          "source_item_id": "aeb6e86149e7357797f2d2695a41a092f687a2b4fb1497c4f3f5e23d68e6dba2",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T13:33:07.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-trend-wahl-agh-bvv-hauptstadt-2026-sonntagsfrage.html",
+          "title": "BerlinTrend 2026 kurz vor der Wahl: Stimmung vor der Berlin-Wahl",
+          "summary": "Die Linke verliert an Zuspruch, die CDU gewinnt dazu: Das geht aus dem aktuellen BerlinTrend von infratest dimap im Auftrag der rbb24 Abendschau und von rbb88.8 hervor.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:00:20.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "c468fdf9aeab473129730e3507ab43615812ad3083c9953fc3de2cd9fec4961f",
+          "source_item_id": "18481a4af6c2ff4c6dda078ad4862a98a5278221f24c539189784125ec2b0da0",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T05:00:20.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
+          "title": "Vor der Wahl: Tausende zu Kundgebungen erwartet",
+          "summary": "Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:01:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d407d9426e797355c8fc64b10bbc6287bb504052bb626d8c4e2163d848546151",
+          "source_item_id": "ae0f97241727cfd71284debe9442dad606085a254b21cae8bed1253441ee63b0",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:01:00.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
+          "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
+          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:34:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
+          "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:34:28.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
+          "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
+          "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magedburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:44:54.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "fbbceebe971c2093a36cea4f1b36e265798323d52433084477828063d9eff3b6",
+          "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:44:54.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/in-bitterfeld-wolfen-liegt-die-demokratiefoerderung-auf-eis-38121574.html",
+          "title": "Sachsen-Anhalt vor der Wahl: Ist Bitterfeld bald überall?",
+          "summary": "In Bitterfeld-Wolfen hat die AfD die Bedingungen für das größte Demokratieförderprogramm massiv verändert. Nun fließen gar keine Gelder mehr. Was das für die Stadt bedeutet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:41:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "3dc55c55677f78a4eaf8236861b571b5ffa5c0b1e03a7614bfa0c572a173c429",
+          "source_item_id": "76a645c64c8f56c4bd49ee9b0dbb72c34b186507734c7a921433d8d29d9bea72",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:41:00.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-01",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“: Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-02",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt: Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-03",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet: Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-04",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet: Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-05",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht: Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-06",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt: Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-07",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt: Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-08",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "BerlinTrend 2026 kurz vor der Wahl: Stimmung vor der Berlin-Wahl: Die Linke verliert an Zuspruch, die CDU gewinnt dazu: Das geht aus dem aktuellen BerlinTrend von infratest dimap im Auftrag der rbb24 Abendschau und von rbb88.8 hervor.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "rbb24-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-09",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Vor der Wahl: Tausende zu Kundgebungen erwartet: Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-10",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden: Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-11",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet: In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magedburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-06476c6e980f5f47-claim-12",
+          "story_id": "wt-06476c6e980f5f47",
+          "claim": "Sachsen-Anhalt vor der Wahl: Ist Bitterfeld bald überall?: In Bitterfeld-Wolfen hat die AfD die Bedingungen für das größte Demokratieförderprogramm massiv verändert. Nun fließen gar keine Gelder mehr. Was das für die Stadt bedeutet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        }
+      ],
+      "content_hash": "8ecd18207558288d2ae1128622bea06d2fc0768ab63a9647c4d45b737e85d5ad",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T08:06:46.297Z",
+      "event_first_seen_at": "2026-09-04T07:21:13.294Z",
+      "event_detected_at": "2026-09-04T07:21:13.294Z",
+      "event_id": "event-d0ea56670f7c42bbc7a0",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Politik",
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Demokratie",
+          "Mensch"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.871616666666668,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 1485.55005,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T08:06:46.297Z",
+      "rejection": {
+        "at": "2026-09-05T08:06:46.297Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-6c26e428b894e714",
+      "slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
+      "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+      "first_seen": "2026-09-05T07:36:46.000Z",
+      "last_updated": "2026-09-05T07:38:13.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--angriffe-aufs-stromnetz--einsatz-in-sachsen-geht-weiter-38210826.html",
+          "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+          "summary": "In Ostsachsen geht die Polizei weiter Hinweisen zu versuchten Angriffen aufs Stromnetz nach. Einsatzkräfte sichern Spuren, neue Details wurden nicht bekannt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:36:46.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "d561294661b0e0f397c7777a873d3acf73c2361f64264078362d74e9d6b5c028",
+          "source_item_id": "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:36:46.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020817.html",
+          "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+          "summary": "In Ostsachsen geht die Polizei weiter Hinweisen zu versuchten Angriffen aufs Stromnetz nach. Einsatzkräfte sichern Spuren, neue Details wurden nicht bekannt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:38:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "45c9eafb8cd02cf0fcf670f59c2447cce6094fffe0795cf90b6d873d80aea13a",
+          "source_item_id": "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:38:13.000Z",
+          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6c26e428b894e714-claim-01",
+          "story_id": "wt-6c26e428b894e714",
+          "claim": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter: In Ostsachsen geht die Polizei weiter Hinweisen zu versuchten Angriffen aufs Stromnetz nach. Einsatzkräfte sichern Spuren, neue Details wurden nicht bekannt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        },
+        {
+          "claim_id": "wt-6c26e428b894e714-claim-02",
+          "story_id": "wt-6c26e428b894e714",
+          "claim": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter: In Ostsachsen geht die Polizei weiter Hinweisen zu versuchten Angriffen aufs Stromnetz nach. Einsatzkräfte sichern Spuren, neue Details wurden nicht bekannt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:06:46.297Z"
+        }
+      ],
+      "content_hash": "b583d71582797cd49c1e6571c384e3f4e948b140d990250513a75db3fd1512d9",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T08:06:46.297Z",
+      "event_first_seen_at": "2026-09-05T08:06:46.297Z",
+      "event_detected_at": "2026-09-05T08:06:46.297Z",
+      "event_id": "event-b41cee1ee68fadae72f2",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 28.55495,
+        "detection_delay_minutes": 28.55495,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T08:06:46.297Z",
+      "rejection": {
+        "at": "2026-09-05T08:06:46.297Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-4d45c64b930426e2",
       "slug": "ukraine-news-tote-nach-luftangriffen-im-gebiet-dnipropetrowsk-0426e2",
@@ -122,180 +1462,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-19ad19be6d5e7cf2",
-      "slug": "polizei-fahndet-weiter-nach-verdachtigem-5e7cf2",
-      "title": "Polizei fahndet weiter nach Verdächtigem",
-      "first_seen": "2026-09-05T07:15:01.000Z",
-      "last_updated": "2026-09-05T07:15:01.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.tagesschau.de/inland/fahndung-sabotage-stromnetz-100.html",
-          "title": "Polizei fahndet weiter nach Verdächtigem",
-          "summary": "Die Polizei fahndet weiter nach einem Mann, der sich zu Sabotageakten auf das Stromnetz bekannt hat. Nach Anschlagsversuchen in Brandenburg und Nordrhein-Westfalen wurden auch in …",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T07:15:01.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "f0320a303b54eac4d548ad24a724c9f1826c24b3794ce6fd300b79258af1954b",
-          "source_item_id": "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T07:15:01.000Z",
-          "ingested_at": "2026-09-05T07:21:32.324Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/anschlaege-auf-umspannwerke--polizei-fahndet-weiter-nach-verdaechtigem-38210774.html",
-          "title": "Anschläge auf Umspannwerke: Polizei fahndet weiter nach Verdächtigem",
-          "summary": "Nach den Anschlägen auf Umspannwerke in Brandenburg und Nordrhein-Westfalen fahnden die Ermittler weiter nach einem 48-jährigen Verdächtigen. „Wir befinden uns immer noch in der Fahndungslage“, sagte eine Sprecherin der Polizei Köln am Samstagmorgen der Nachrichtenagentur AFP. Es seien „starke Polizeikräfte im Einsatz“, fügte sie hinzu.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T06:54:27.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "b02b7b7d4dbce18ee7236795f084a07080da4edaeb421f0ba8c86a76dfc9491f",
-          "source_item_id": "8841df4c5c6f9b161cad135f4587b1c19b2a790a0d0d230483dacb81d55d797e",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T06:54:27.000Z",
-          "ingested_at": "2026-09-05T07:21:32.324Z",
-          "provenance": {
-            "origin": "agency:afp",
-            "basis": "agency_attribution_in_available_text",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-19ad19be6d5e7cf2-claim-01",
-          "story_id": "wt-19ad19be6d5e7cf2",
-          "claim": "Polizei fahndet weiter nach Verdächtigem: Die Polizei fahndet weiter nach einem Mann, der sich zu Sabotageakten auf das Stromnetz bekannt hat. Nach Anschlagsversuchen in Brandenburg und Nordrhein-Westfalen wurden auch in …",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "swr-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T07:21:32.324Z"
-        },
-        {
-          "claim_id": "wt-19ad19be6d5e7cf2-claim-02",
-          "story_id": "wt-19ad19be6d5e7cf2",
-          "claim": "Anschläge auf Umspannwerke: Polizei fahndet weiter nach Verdächtigem: Nach den Anschlägen auf Umspannwerke in Brandenburg und Nordrhein-Westfalen fahnden die Ermittler weiter nach einem 48-jährigen Verdächtigen. „Wir befinden uns immer noch in der Fahndungslage“, sagte eine Sprecherin der Polizei Köln am Samstagmorgen der Nachrichtenagentur AFP. Es seien „starke Polizeikräfte im Einsatz“, fügte sie hinzu.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "agency:afp",
-            "basis": "agency_attribution_in_available_text",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T07:21:32.324Z"
-        }
-      ],
-      "content_hash": "431b68d714bece77a3332961f1fb4cdb377fd0c2fa8bc577945640612b5cc931",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T07:21:32.324Z",
-      "event_first_seen_at": "2026-09-05T07:21:32.324Z",
-      "event_detected_at": "2026-09-05T07:21:32.324Z",
-      "event_id": "event-47b63689127b7d9ed5dd",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 6.5220666666666665,
-        "detection_delay_minutes": 6.5220666666666665,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T07:21:32.324Z",
-      "rejection": {
-        "at": "2026-09-05T07:21:32.324Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -3713,33 +4879,41 @@
       ],
       "retirement_history": [],
       "title_image": {
-        "mode": "impact_card",
+        "mode": "editorial",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-4077255ab8d62126-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-0ce4b0298e131c8c-og.png",
           "width": 1200,
           "height": 630,
-          "sha256": "4077255ab8d6212695f6df2b1536cb3bfb5db27ab8c8cccfb569054dc4e68c5c"
+          "sha256": "0ce4b0298e131c8c3606ff97fc1b06fd5b363da91f3d6d06b882dc5e2960770a"
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-232ee57eb43b6b26-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-47be1bb91812ee45-wide.png",
           "width": 1200,
           "height": 675,
-          "sha256": "232ee57eb43b6b265e96142378093e1157207946a5ab6694d2d9be21065cd818"
+          "sha256": "47be1bb91812ee45d475b8f5950f795cf9c610a19d5c35171cd8724ee0697341"
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-6369698976afe49a-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-eacd2cd6006536ea-square.png",
           "width": 1080,
           "height": 1080,
-          "sha256": "6369698976afe49a060d1586807988173e8a9bd85b2552b7534332857419507a"
+          "sha256": "eacd2cd6006536eaa33e3fe4cac218f786a69e448d9b82c23c2fef8add92d363"
         },
-        "source_visual": null,
-        "fingerprint": "658aaa0a6aef803536bcea7d61b8d30a6acc1f1139cc325e731bb6929195b2b8",
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-06841ebe422370b3-source.png",
+          "sha256": "06841ebe422370b3f67b520653849a009a365c08db2fea8241280436863e06a4",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-05T07:37:29.993Z"
+        },
+        "fingerprint": "8455cee35d5f58cb3c6725519a85caf9d6693754527aa498e1a1ad880406cbfb",
         "template_version": "woek-title-3-glass",
         "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-05T06:40:30.152Z",
-        "status": "fallback",
-        "fallback_reason": "HIGGSFIELD_TIMEOUT",
-        "retry_after": "2026-09-05T07:54:22.113Z"
+        "generated_at": "2026-09-05T08:08:03.523Z",
+        "status": "generated"
       }
     },
     {
@@ -3862,646 +5036,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-06476c6e980f5f47",
-      "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
-      "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-      "first_seen": "2026-09-04T07:02:30.000Z",
-      "last_updated": "2026-09-05T06:33:00.000Z",
-      "topic": [
-        "Demokratie",
-        "Politik",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
-          "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-          "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:02:30.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
-          "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T07:02:30.000Z",
-          "ingested_at": "2026-09-04T07:21:13.294Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
-          "title": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt",
-          "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T05:30:02.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "4ecffbf01167f40b3db26f6f52aaf0917fc5e9a7e0fa159589f2f79d534ff88e",
-          "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T05:30:02.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
-          "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
-          "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T04:07:55.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
-          "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T04:07:55.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
-          "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
-          "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T04:09:22.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
-          "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T04:09:22.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
-          "title": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht",
-          "summary": "Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-01T14:38:55.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "a2e4d8b52b9340ac784ec86e650c17dec22acac070fb481dd92fed8839dea886",
-          "source_item_id": "deeaaefab10d8d6be35c1a4de80f7e4de81e1ca2e130057b3b623d0c4f6aa226",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-01T14:38:55.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
-          "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
-          "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:06:15.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
-          "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T07:06:15.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
-          "title": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt",
-          "summary": "Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T13:33:07.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "c520b2fed8cbae3e888aab84b15115b053449540cb1ce16bbc5d6381f5c75a14",
-          "source_item_id": "aeb6e86149e7357797f2d2695a41a092f687a2b4fb1497c4f3f5e23d68e6dba2",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T13:33:07.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "rbb24-nachrichten",
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-trend-wahl-agh-bvv-hauptstadt-2026-sonntagsfrage.html",
-          "title": "BerlinTrend 2026 kurz vor der Wahl: Stimmung vor der Berlin-Wahl",
-          "summary": "Die Linke verliert an Zuspruch, die CDU gewinnt dazu: Das geht aus dem aktuellen BerlinTrend von infratest dimap im Auftrag der rbb24 Abendschau und von rbb88.8 hervor.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:00:20.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "c468fdf9aeab473129730e3507ab43615812ad3083c9953fc3de2cd9fec4961f",
-          "source_item_id": "18481a4af6c2ff4c6dda078ad4862a98a5278221f24c539189784125ec2b0da0",
-          "publisher_id": "rbb",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin-Brandenburg"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T05:00:20.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
-          "provenance": {
-            "origin": "publisher:rbb",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
-          "title": "Vor der Wahl: Tausende zu Kundgebungen erwartet",
-          "summary": "Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T06:33:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "d407d9426e797355c8fc64b10bbc6287bb504052bb626d8c4e2163d848546151",
-          "source_item_id": "ae0f97241727cfd71284debe9442dad606085a254b21cae8bed1253441ee63b0",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T06:33:00.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
-          "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
-          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:34:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
-          "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:34:28.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
-          "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
-          "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magedburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T06:25:17.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "fbbceebe971c2093a36cea4f1b36e265798323d52433084477828063d9eff3b6",
-          "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T06:25:17.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-01",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“: Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-02",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt: Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "swr-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-03",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet: Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-04",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet: Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-05",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht: Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-06",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt: Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-07",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt: Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "swr-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-08",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "BerlinTrend 2026 kurz vor der Wahl: Stimmung vor der Berlin-Wahl: Die Linke verliert an Zuspruch, die CDU gewinnt dazu: Das geht aus dem aktuellen BerlinTrend von infratest dimap im Auftrag der rbb24 Abendschau und von rbb88.8 hervor.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "rbb24-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:rbb",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-09",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "Vor der Wahl: Tausende zu Kundgebungen erwartet: Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "zdfheute-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-10",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden: Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "swr-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        },
-        {
-          "claim_id": "wt-06476c6e980f5f47-claim-11",
-          "story_id": "wt-06476c6e980f5f47",
-          "claim": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet: In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magedburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
-        }
-      ],
-      "content_hash": "21975ef704bcdcacab72c6ca5cc6defd5a9513a4ed5a21cf91ef547c93862cf2",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T06:36:46.215Z",
-      "event_first_seen_at": "2026-09-04T07:21:13.294Z",
-      "event_detected_at": "2026-09-04T07:21:13.294Z",
-      "event_id": "event-d0ea56670f7c42bbc7a0",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie",
-          "Politik",
-          "Wirtschaft"
-        ],
-        "dimensions": [
-          "Demokratie",
-          "Mensch"
-        ],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung finanzieller Anreize und Kapitalflüsse"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 3.77025,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 1395.5486833333334,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T06:36:46.215Z",
-      "rejection": {
-        "at": "2026-09-05T06:36:46.215Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -64262,131 +64796,6 @@
       }
     },
     {
-      "story_id": "wt-39b2983868cd0e20",
-      "slug": "chipkonzern-nvidias-griff-nach-dem-github-der-ki-und-seine-folgen-cd0e20",
-      "title": "Chipkonzern: Nvidias Griff nach dem GitHub der KI – und seine Folgen",
-      "first_seen": "2026-09-04T08:56:16.000Z",
-      "last_updated": "2026-09-04T08:56:16.000Z",
-      "topic": [
-        "Digitalisierung",
-        "KI"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/it/nvidia-kauft-hugging-face-warum-die-uebernahme-die-ki-branche-spaltet/100251976.html",
-          "title": "Chipkonzern: Nvidias Griff nach dem GitHub der KI – und seine Folgen",
-          "summary": "Nvidia übernimmt Hugging Face für 13 Milliarden Dollar – und damit die zentrale Plattform für offene KI‑Modelle. Doch die Übernahme wirft Fragen auf.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T08:56:16.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "e5267c689a9554a4f58a7fd811a46bf9ccd333227734e2b2f339cf1047788adf",
-          "source_item_id": "6673ef6beed165bf40cfbe88045d85dbe60c2da9f67a70eb902d029b149f0bb4",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T08:56:16.000Z",
-          "ingested_at": "2026-09-04T09:21:34.386Z",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-39b2983868cd0e20-claim-01",
-          "story_id": "wt-39b2983868cd0e20",
-          "claim": "Chipkonzern: Nvidias Griff nach dem GitHub der KI – und seine Folgen: Nvidia übernimmt Hugging Face für 13 Milliarden Dollar – und damit die zentrale Plattform für offene KI‑Modelle. Doch die Übernahme wirft Fragen auf.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T09:21:34.386Z"
-        }
-      ],
-      "content_hash": "e79241ec9ce6ca3e3d56306649efa34cf72e89757b29e1f576380ca27bb4eaaa",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T09:21:34.386Z",
-      "event_first_seen_at": "2026-09-04T09:21:34.386Z",
-      "event_detected_at": "2026-09-04T09:21:34.386Z",
-      "event_id": "event-1d1078364b5718a1888d",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 48,
-        "public_relevance": "hoch",
-        "topics": [
-          "Digitalisierung",
-          "KI"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 25.306433333333334,
-        "detection_delay_minutes": 25.306433333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 60,
-        "news_freshness_score": 89,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T09:21:34.386Z",
-      "rejection": {
-        "at": "2026-09-04T09:21:34.386Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-c6525bb67707f7aa",
       "slug": "anschlage-auf-infrastruktur-wahlkampffutter-fur-die-afd-07f7aa",
       "title": "Anschläge auf Infrastruktur: Wahlkampffutter für die AfD",
@@ -100097,5 +100506,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T07:06:05.017Z"
+  "public_updated_at": "2026-09-05T08:06:46.297Z"
 }
