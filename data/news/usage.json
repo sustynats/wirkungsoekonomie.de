@@ -5077,6 +5077,130 @@
       },
       "source_failures": 0,
       "quality_holds": 1
+    },
+    {
+      "run_id": "news-run-f0e6ca099268",
+      "started_at": "2026-09-05T14:13:45.805Z",
+      "completed_at": "2026-09-05T14:17:36.646Z",
+      "berlin_slot": "Nachmittagsupdate",
+      "counts": {
+        "feed_entries_fetched": 914,
+        "feed_entries_new": 23,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 600,
+        "story_clusters": 30,
+        "locally_rejected": 27,
+        "ai_stories": 12,
+        "ai_requests": 12,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 392041,
+        "media_checks_triggered": 4,
+        "media_checks_skipped": 8,
+        "media_checks_ai_promoted": 0,
+        "media_check_tokens": 2056,
+        "self_frame_rewrites": 0,
+        "source_integrity_holds": 1,
+        "published_stories": 3,
+        "updated_stories": 0
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 103121,
+        "output_tokens": 16259,
+        "estimated_cost_usd": 0.110418,
+        "token_source": "provider_reported_usage",
+        "media_check_tokens": 2056,
+        "media_check_cost_usd": 0.007677
+      },
+      "source_failures": 0,
+      "quality_holds": 36
+    },
+    {
+      "run_id": "editorial-a42b4f5d318d",
+      "started_at": "2026-09-05T14:17:38.262Z",
+      "completed_at": "2026-09-05T14:21:38.353Z",
+      "berlin_slot": "kontrollierter WÖK-Analyse-Erstbackfill",
+      "counts": {
+        "editorial_candidates": 6,
+        "editorial_research_started": 5,
+        "editorial_analyses_published": 1,
+        "editorial_analyses_updated": 0,
+        "editorial_research_sources_discovered": 6,
+        "research_calls": 5,
+        "research_tokens": 37512,
+        "analysis_tokens": 26053
+      },
+      "ai": {
+        "requests": 5,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 37512,
+        "output_tokens": 26053,
+        "estimated_cost_usd": 0.13604,
+        "token_source": "provider_or_conservative_editorial_analysis"
+      },
+      "source_failures": 0,
+      "quality_holds": 2
+    },
+    {
+      "run_id": "news-run-a419df9e10d7",
+      "started_at": "2026-09-05T14:23:17.291Z",
+      "completed_at": "2026-09-05T14:23:19.204Z",
+      "berlin_slot": "Nachmittagsupdate",
+      "counts": {
+        "feed_entries_fetched": 0,
+        "feed_entries_new": 0,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 0,
+        "story_clusters": 0,
+        "locally_rejected": 4,
+        "ai_stories": 0,
+        "ai_requests": 0,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 0,
+        "media_checks_triggered": 0,
+        "media_checks_skipped": 0,
+        "media_checks_ai_promoted": 0,
+        "media_check_tokens": 0,
+        "self_frame_rewrites": 0,
+        "source_integrity_holds": 1,
+        "published_stories": 0,
+        "updated_stories": 0
+      },
+      "ai": null,
+      "source_failures": 0,
+      "quality_holds": 29
+    },
+    {
+      "run_id": "editorial-0642a5a22d1d",
+      "started_at": "2026-09-05T14:23:20.689Z",
+      "completed_at": "2026-09-05T14:25:28.268Z",
+      "berlin_slot": "automatische WÖK-Analyse",
+      "counts": {
+        "editorial_candidates": 6,
+        "editorial_research_started": 4,
+        "editorial_analyses_published": 1,
+        "editorial_analyses_updated": 0,
+        "editorial_research_sources_discovered": 6,
+        "research_calls": 4,
+        "research_tokens": 29920,
+        "analysis_tokens": 20875
+      },
+      "ai": {
+        "requests": 4,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 29920,
+        "output_tokens": 20875,
+        "estimated_cost_usd": 0.107046,
+        "token_source": "provider_or_conservative_editorial_analysis"
+      },
+      "source_failures": 0,
+      "quality_holds": 1
     }
   ]
 }
