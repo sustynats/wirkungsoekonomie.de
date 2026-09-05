@@ -40,6 +40,17 @@ test('transient outage stays quiet; confirmed outage and recovery each notify on
 test('no new articles is not a pipeline failure', () => {
   assert.ok(evaluateChecks(fixture(), now).checks.every(c => c.ok));
 });
+test('one transient source throttle stays observable without a false outage alarm', () => {
+  const d = fixture();
+  d.report = { ...d.report, status: 'degraded', source_failures: 1, source_successes: 32, sources_scheduled: 33, source_errors: [{ source_id: 'berlin', error: 'FEED_HTTP_429' }] };
+  const checks = evaluateChecks(d, now).checks;
+  assert.equal(checks.find(c => c.id === 'run').ok, true);
+  assert.equal(checks.find(c => c.id === 'sources').ok, true);
+  d.report = { ...d.report, source_failures: 4, source_successes: 12, sources_scheduled: 16 };
+  const degraded = evaluateChecks(d, now).checks;
+  assert.equal(degraded.find(c => c.id === 'run').ok, false);
+  assert.equal(degraded.find(c => c.id === 'sources').ok, false);
+});
 test('image-provider outages and exhausted retries are monitored, deliberate cards and safety rejections are not outages', () => {
   const d=fixture();
   d.stories=[{published:true,title_image:{mode:'impact_card',fallback_reason:'IMAGE_CONTAINS_TEXT'}}];

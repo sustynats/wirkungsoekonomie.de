@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "execute": true,
+  "bootstrap": true,
+  "started_at": "2026-09-05T14:02:11.302Z",
+  "scanned_stories": 85,
+  "scanned_subjects": 64,
+  "editorial_candidates": 5,
+  "ready_for_research": 3,
+  "research_pending": 2,
+  "editorial_research_sources_discovered": 6,
+  "selected": 3,
+  "editorial_research_started": 4,
+  "editorial_analyses_published": 2,
+  "editorial_analyses_updated": 0,
+  "research_calls": 4,
+  "research_tokens": 25331,
+  "analysis_tokens": 19988,
+  "estimated_cost_usd": 0.108945,
+  "quality_retries": 1,
+  "publication_deferred": false,
+  "failed": [
+    {
+      "story_id": "wt-aabe8c0430bf8f84",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG"
+    }
+  ],
+  "candidates": [
+    {
+      "story_id": "wt-4fb94d2cebfca746",
+      "story_slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+      "story_title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+      "editorial_analysis_score": 67,
+      "analysis_gain": 49,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 7,
+        "impact_risk": 4,
+        "observed_impact": 0,
+        "third_order_relevance": 5,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 0,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 8,
+        "evidence_quality": 8
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 13,
+        "primary_source_count": 0,
+        "cited_claim_count": 77,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "b0bbc4dc52ef7a7e171ff8bfe0378024486726ada74f4c15a24f830d47e82abd",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-aabe8c0430bf8f84",
+      "story_slug": "two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84",
+      "story_title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
+      "editorial_analysis_score": 69,
+      "analysis_gain": 51,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 9,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 7,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-edd4484465895b46",
+      "story_slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
+      "story_title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
+      "editorial_analysis_score": 67,
+      "analysis_gain": 48,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 9,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "passed",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": false,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "882570f03a13cc972007897ab935d4597225deff24a2baf33138e7d368780e61",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-1bc40229c938d48a",
+      "story_slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
+      "story_title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
+      "editorial_analysis_score": 76,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 10,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "passed",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "0fefb027a302f4eeccbc0f6418d48bb0b24426777ea68ec010072cee8fd635dd",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-98ff7e403362fdf9",
+      "story_slug": "starkerer-schutz-kritischer-infrastrukturen-62fdf9",
+      "story_title": "Stärkerer Schutz kritischer Infrastrukturen",
+      "editorial_analysis_score": 76,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 10,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "passed",
+        "independent_origin_count": 3,
+        "primary_source_count": 1,
+        "cited_claim_count": 6,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "6ed79b91bef11cc5feadb07f866643db995bb11b3d4bb5c24f73a0060df65c54",
+      "status": "ready_for_research",
+      "analysis_id": null
+    }
+  ],
+  "completed_at": "2026-09-05T14:04:16.424Z"
+}

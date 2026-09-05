@@ -1,0 +1,155 @@
+{
+  "schema_version": "woek-parliament-reference-scene-1.0",
+  "contract_sha256": "b7ba77569067a039b1d2b9052cd83ce6bc75a3b84043ed8d327070f449838ab0",
+  "set_id": "st-ltw-2026-shared-city-reference-v1",
+  "jurisdiction": "Sachsen-Anhalt",
+  "election": "Landtagswahl 2026",
+  "source_descriptor_path": "woek-parlament-app/data/impact-visuals/sachsen-anhalt-2026-v1.json",
+  "source_descriptor_manifest_sha256": "326b3b1369225f5f5e6b34f9d364fcfca43ec1ae3350e3752300ddccace84b4b",
+  "owner_authorization": {
+    "status": "APPROVED",
+    "date": "2026-09-05",
+    "scope": "ONE_SHARED_REFERENCE_SCENE_AND_SIX_PROGRAMME_VARIANTS",
+    "generator_lane": "EXISTING_ORACLE_HIGGSFIELD_SERVICE",
+    "publication_mode": "FAIL_CLOSED_UNTIL_ASSET_AND_SOURCE_FIDELITY_GATES_PASS"
+  },
+  "governance": {
+    "input_mode": "APPROVED_VISUAL_BRIEF_ONLY",
+    "raw_programme_text_allowed": false,
+    "party_identity_as_semantic_input_allowed": false,
+    "campaign_style_allowed": false,
+    "image_to_fachdata_backpropagation_allowed": false,
+    "open_or_not_assessable_depicted_as_fact_allowed": false,
+    "common_camera_and_geometry_required": true,
+    "base_scene_is_evidence": false,
+    "output_label": "Modellbild auf Basis freigegebener Wirkpfade · keine Prognose"
+  },
+  "generation": {
+    "provider": "higgsfield",
+    "model": "nano_banana_pro",
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "max_credits_per_image": 2,
+    "max_new_images": 7,
+    "serial_only": true,
+    "blind_retry_allowed": false,
+    "reference_mode": "ONE_GENERATED_BASE_THEN_IMAGE_TO_IMAGE_VARIANTS"
+  },
+  "base": {
+    "item_id": "st-ltw-2026-shared-city-reference-v1-base",
+    "prompt_version": "woek-parliament-shared-city-reference-1",
+    "output_filename": "sachsen-anhalt-shared-city-reference-v1.png",
+    "alt_text": "Neutrales, ausdrücklich fiktives Referenzbild einer mittelgroßen Stadt in Sachsen-Anhalt mit kommunalem Gebäude, leerem Gemeinschaftsraum, Bushaltestelle, Radweg, Stadtbäumen sowie Acker und Waldsaum am Horizont. Es bildet dieselbe Ausgangsszene für sechs visualisierte Wahlprogrammvarianten; es ist weder ein reales Ortsbild noch eine Prognose.",
+    "approved_scene_instruction": "Eine glaubwürdige, fiktive mittelgroße Stadt in Sachsen-Anhalt am Übergang von kompakter Innenstadt zu ländlichem Rand: derselbe ruhige Straßenraum, ein neutrales kommunales Gebäude, ein kleiner leerer Laden- oder Gemeinschaftsraum, Bushaltestelle, Radweg, Stadtbäume sowie am Horizont Ackerfläche und Waldsaum. Sachliche Alltagsansicht auf Augenhöhe, keine erkennbare reale Stadt und kein Ereignisfoto.",
+    "composition_lock": "Kameraposition, Brennweite, Perspektive, Straßen- und Gebäudegeometrie, Horizont, Tageszeit und Wetter müssen in allen sechs Varianten erkennbar identisch bleiben.",
+    "negative_constraints": "Keine Personen, Gesichter, Parteifarben, Logos, Wahlplakate, Flaggen, Schrift, Zahlen, Karten, Diagramme, Katastrophen, Gewalt, Polizeiaktionen oder behauptete Messergebnisse. Keine utopische oder dystopische Überzeichnung."
+  },
+  "variants": [
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-cdu",
+      "source_key": "ltw-2026-st-cdu",
+      "source_programme_record_sha256": "6933afa3fbe1a53d23e9b3badaf41d2a1a6eb3e96c03ec8c069c16e34d0d8432",
+      "source_visual_brief_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "not_depicted_as_fact": [
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol"
+      ],
+      "approved_scene_instruction": "Verändere im identischen Referenzraum ausschließlich den kommunalen Infrastrukturanker zu einem sachlichen Feuerwehr-Ausbildungs- und Katastrophenschutzstandort und einer neutralen Ordnungsbehörden-Nebenstelle. Keine Einsatzszene, keine Uniformierten, keine Überwachungssymbolik und kein sichtbares Erfolgsversprechen.",
+      "source_alt_text_basis": "links ein sachlicher öffentlicher Infrastruktur- und Sicherheitskontext mit Feuerwehr-Ausbildungszentrum und Ordnungsbehörde",
+      "output_filename": "cdu-program-reference-scenario-v3.png"
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-spd",
+      "source_key": "ltw-2026-st-spd",
+      "source_programme_record_sha256": "7147d93a0bdebc38ed63e718c7e6dc2493ea9f27a7bf9305ad6db0a4dc1739a7",
+      "source_visual_brief_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "not_depicted_as_fact": [],
+      "approved_scene_instruction": "Verändere im identischen Referenzraum ausschließlich den leeren Laden- oder Gemeinschaftsraum zu einem sichtbaren, aber menschenleeren Repair-Café mit Werkbank und wiederverwendbaren Alltagsgegenständen sowie einem benachbarten neutralen Bildungs- und Begegnungsraum. Keine behaupteten Beschäftigungs-, Bildungs- oder Regionalergebnisse.",
+      "source_alt_text_basis": "links ein lokaler Stadt- und Nachbarschaftskontext mit Repair-Café und Bildungs-/Begegnungsangebot",
+      "output_filename": "spd-program-reference-scenario-v3.png"
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-gruene",
+      "source_key": "ltw-2026-st-gruene",
+      "source_programme_record_sha256": "41f2343569601d3807ca17af0f491404a7c0aaaa4567a0569abced00669fb957",
+      "source_visual_brief_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "not_depicted_as_fact": [],
+      "approved_scene_instruction": "Verändere im identischen Referenzraum ausschließlich Grün- und Randflächen: artenreiche Stadtbepflanzung, sichtbar strukturierter Waldsaum mit sachlichem präventivem Brandschutzkorridor und ökologisch bewirtschaftete Ackerfläche am unveränderten Horizont. Keine Tiere, keine Brand- oder Schadensszene und keine behauptete Umweltverbesserung.",
+      "source_alt_text_basis": "links Landwirtschaft, Biodiversitätsstrukturen und Waldsaum mit präventivem Brandschutzkorridor",
+      "output_filename": "gruene-program-reference-scenario-v3.png"
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-linke",
+      "source_key": "ltw-2026-st-linke",
+      "source_programme_record_sha256": "a5687949bc35c7ac21e964ee03a3b13677b83e823fba137d2f63cef3a4197138",
+      "source_visual_brief_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "not_depicted_as_fact": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "approved_scene_instruction": "Verändere im identischen Referenzraum ausschließlich den kommunalen Gebäudeanker zu einem neutralen, menschenleeren Bürgerhaus mit zugänglichem Gemeinschaftsraum und sichtbarer, textfreier Ausstattung für ehrenamtliche Aktivitäten. Keine Abstimmungsszene und keine behauptete Beteiligungs- oder Repräsentativitätswirkung.",
+      "source_alt_text_basis": "links ein Bürgerhaus mit Ehrenamt, lokaler Beteiligung und gemeinschaftlichen Aktivitäten",
+      "output_filename": "linke-program-reference-scenario-v3.png"
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-bsw",
+      "source_key": "ltw-2026-st-bsw",
+      "source_programme_record_sha256": "20c7029df5163c0e77b44151f575c1eca50a1787e587fe8f7c4a6d23cf019534",
+      "source_visual_brief_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "not_depicted_as_fact": [
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "approved_scene_instruction": "Verändere im identischen Referenzraum ausschließlich den kommunalen Gebäudeanker zu einem neutralen Rathaus mit menschenleerem, textfrei erkennbarem Beteiligungsraum für Bürgerbudget-Verfahren. Keine Militärsymbolik, keine Dialog- oder Abstimmungsergebnisse und kein behaupteter gesellschaftlicher Zusammenhalt.",
+      "source_alt_text_basis": "links Rathaus und öffentlicher Beteiligungsraum mit Dialog",
+      "output_filename": "bsw-program-reference-scenario-v3.png"
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-afd",
+      "source_key": "ltw-2026-st-afd",
+      "source_programme_record_sha256": "bd202811ca7a9d214a23939c848c9887f9304ce98ce3e7b2de0d0778920226b9",
+      "source_visual_brief_sha256": "ff4d217bef7dc2971a304d9eb69b0931f3aead728a40fbddbfc5effce3f8c9c3",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "not_depicted_as_fact": [
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu"
+      ],
+      "approved_scene_instruction": "Verändere im identischen Referenzraum ausschließlich den leeren Gemeinschaftsraum zu einem neutralen öffentlichen Beratungsraum sowie einer getrennten, menschenleeren vorschulischen Leseecke mit Büchern ohne lesbare Titel. Keine Schwangerschaft, Person, medizinische Szene, politische Botschaft oder behauptete Gesundheits- und Bildungswirkung.",
+      "source_alt_text_basis": "links ein neutraler öffentlicher Beratungsraum als visueller Anker",
+      "output_filename": "afd-program-reference-scenario-v3.png"
+    }
+  ]
+}

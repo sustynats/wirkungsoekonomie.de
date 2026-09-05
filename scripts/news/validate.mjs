@@ -5,6 +5,7 @@ import { validateAnalysis } from "./lib.mjs";
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { isMerged, relatedStories } from "./living-files.mjs";
 import { buildCaseFiles } from "./case-files.mjs";
+import { editorialAnalysisValidationErrors } from "./editorial-analysis.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
@@ -14,12 +15,13 @@ const registry = loadNewsRegistry(ROOT);
 const state = readJson("data/news/state.json");
 const store = readJson("data/news/stories.json");
 const usage = readJson("data/news/usage.json");
+const editorialStore = fs.existsSync(path.join(ROOT, "data/news/editorial-analyses.json")) ? readJson("data/news/editorial-analyses.json") : { candidates: [], analyses: [] };
 
 if (registry.schema_version !== "1.0" || !Array.isArray(registry.sources) || registry.sources.length < 5) fail("SOURCE_REGISTRY_INVALID");
 const sourceErrors = registryErrors(registry);
 if (sourceErrors.length) fail(sourceErrors.join(","));
 if (!state.seen_items || !state.source_status || !Array.isArray(state.pending_story_ids)) fail("STATE_SCHEMA_INVALID");
-if (!Array.isArray(store.stories) || !Array.isArray(usage.runs)) fail("DATA_SCHEMA_INVALID");
+if (!Array.isArray(store.stories) || !Array.isArray(usage.runs) || !Array.isArray(editorialStore.candidates) || !Array.isArray(editorialStore.analyses)) fail("DATA_SCHEMA_INVALID");
 const storiesById = new Map(store.stories.map((story) => [story.story_id, story]));
 if (storiesById.size !== store.stories.length) fail("DUPLICATE_STORY_ID");
 
@@ -56,7 +58,7 @@ for (const relative of ["news/index.html", "wirkungsticker/index.html", "wirkung
 }
 const index = fs.readFileSync(path.join(ROOT, "wirkungsticker/index.html"), "utf8");
 if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
-if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Analyse aktualisiert") || !index.includes("data-news-refresh-button") || !index.includes("Push-Benachrichtigungen") || !index.includes("data-news-story-id")) fail("NEWS_APP_UI_INVALID");
+if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Einordnung aktualisiert") || !index.includes("data-news-refresh-button") || !index.includes("Push-Benachrichtigungen") || !index.includes("data-news-story-id")) fail("NEWS_APP_UI_INVALID");
 const activeStories = store.stories.filter((item) => item.published && item.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
 const grouping = buildCaseFiles(activeStories);
 const visibleStories = grouping.visibleStories;
@@ -99,7 +101,7 @@ for (const story of activeStories) {
   const truthAt = detail.indexOf("Gesicherter Ausgangspunkt");
   const uncertaintyAt = detail.indexOf("Was dieser Stand nicht belegt");
   if (!detail.includes("Wahrheit zuerst:") || truthAt < 0 || uncertaintyAt < 0 || truthAt > uncertaintyAt) fail(`NEWS_TRUTH_FIRST_INVALID:${story.story_id}`);
-  if (!detail.includes("Ausgangsmeldung vom") || !detail.includes("WÖk-Analyse:")) fail(`NEWS_SOURCE_DATE_MISSING:${story.story_id}`);
+  if (!detail.includes("Ausgangsmeldung vom") || !detail.includes("WÖk-Einordnung:")) fail(`NEWS_SOURCE_DATE_MISSING:${story.story_id}`);
   if (!detail.includes("Erste Ordnung – unmittelbar") || !detail.includes("Risiken, Gegenläufe und Prüfgrenzen")) fail(`NEWS_CONSEQUENCE_PROSE_INVALID:${story.story_id}`);
 }
 for (const caseFile of grouping.cases) {
@@ -117,6 +119,20 @@ if (!newsScript.includes("woek:wirkungsticker:list-state:v1") || !newsScript.inc
 const rss = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.xml"), "utf8");
 const atom = fs.readFileSync(path.join(ROOT, "wirkungsticker/feed.atom"), "utf8");
 if (!rss.startsWith("<?xml") || !rss.includes("<rss ") || !atom.startsWith("<?xml") || !atom.includes("<feed ")) fail("FEED_INVALID");
+for (const analysis of editorialStore.analyses.filter((item) => item.status === "published")) {
+  const story = storiesById.get(analysis.story_id);
+  if (!story?.published || story.listed === false) fail(`EDITORIAL_STORY_INVALID:${analysis.analysis_id}`);
+  const errors = editorialAnalysisValidationErrors(analysis, story, { candidate: true, evidence_gate: { passed: Boolean(analysis.evidence_gate?.passed) } });
+  if (errors.length) fail(`EDITORIAL_ANALYSIS_QUALITY_INVALID:${analysis.analysis_id}:${errors.join(",")}`);
+  const sourceIds = new Set((analysis.source_snapshot || []).map((source) => source.source_id));
+  if (sourceIds.size < 2 || (analysis.claim_ledger || []).some((claim) => (claim.source_ids || []).some((sourceId) => !sourceIds.has(sourceId)))) fail(`EDITORIAL_SOURCE_LEDGER_INVALID:${analysis.analysis_id}`);
+  const analysisFile = path.join(ROOT, "wirkungsticker/analyse", analysis.slug, "index.html");
+  if (!fs.existsSync(analysisFile)) fail(`EDITORIAL_PAGE_MISSING:${analysis.analysis_id}`);
+  const html = fs.readFileSync(analysisFile, "utf8");
+  if (!html.includes("WÖK-Analyse") || !html.includes("Natalie Weber") || !html.includes("natalie-weber-woek-analyse.jpg") || !html.includes(analysis.transparency_note) || !html.includes(`wirkungsticker/analyse/${analysis.slug}/`) || !html.includes(`../../${story.slug}/`) || !html.includes('"@type":"Article"')) fail(`EDITORIAL_PAGE_INVALID:${analysis.analysis_id}`);
+  const storyHtml = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
+  if (!storyHtml.includes(`../analyse/${analysis.slug}/`) || !rss.includes(`/wirkungsticker/analyse/${analysis.slug}/`)) fail(`EDITORIAL_BACKLINK_OR_FEED_INVALID:${analysis.analysis_id}`);
+}
 const portal = fs.readFileSync(path.join(ROOT, "news/index.html"), "utf8");
 if (portal.includes('rel="manifest"') || portal.includes("data-news-app-install")) fail("NEWS_PORTAL_MUST_NOT_SHARE_TICKER_APP");
 const legacyIndex = fs.readFileSync(path.join(ROOT, "news/wirkungsticker/index.html"), "utf8");
