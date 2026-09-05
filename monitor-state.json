@@ -4,16 +4,17 @@
     "images": {
       "firstSeen": "2026-09-04T10:20:20.169Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-05T12:50:46.952Z",
-      "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-09-05T12:50:46.952Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "4abb7b4540c996214eaa3798",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-05T14:05:28.950Z"
+    },
+    {
+      "id": "0def3ab930b516338bf3209c",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-09-05T14:05:28.950Z"
+    }
+  ],
   "dailyDate": "2026-09-05"
 }
