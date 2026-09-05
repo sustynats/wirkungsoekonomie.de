@@ -94,6 +94,7 @@ function formatDate(value, options = {}) {
 
 function firstSourceDate(story) {
   const timestamps = (story.sources || [])
+    .filter(source => !["legal_context", "election_calendar", "background"].includes(source.source_role))
     .map((source) => Date.parse(source.published_at || ""))
     .filter(Number.isFinite)
     .sort((a, b) => a - b);
@@ -551,13 +552,13 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     : /^(fakt|gesichert|belegt)\b/i.test(factStatement) ? factStatement : `Gesichert ist: ${factStatement}`;
   const primarySourceCount = story.sources.filter((source) => source.primary_source).length;
   const primarySourceNames = [...new Set(story.sources.filter((source) => source.primary_source).map((source) => source.publisher))].join(", ");
-  const primary = story.sources.find((source) => source.primary_source) || story.sources[0];
+  const primary = story.sources.find((source) => source.primary_source && !["legal_context", "election_calendar"].includes(source.source_role)) || story.sources[0];
   const visuals = sanitizeVisuals(a.visuals, story).visuals;
   const originalSources = [...story.sources]
-    .filter((source) => source.primary_source || !story.sources.some((item) => item.primary_source))
+    .filter((source) => source === primary || (source.primary_source && !["legal_context", "election_calendar"].includes(source.source_role)))
     .sort((left, right) => Date.parse(right.published_at || 0) - Date.parse(left.published_at || 0));
   const sourceSummaryLinks = originalSources.map((source, index) => `<a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><span>${index === 0 ? "Originalquelle ansehen" : `Weitere Originalquelle bei ${escapeHtml(source.publisher)}`}</span>${renderIcon("extern")}</a>`).join("");
-  const sources = story.sources.map((source) => `<li class="news-source"><span class="news-source__avatar${source.primary_source ? "" : " news-source__avatar--secondary"}" aria-hidden="true">${escapeHtml(publisherInitials(source.publisher))}</span><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</span>${renderIcon("extern")}</a><div class="news-source-meta"><span class="news-badge${source.primary_source ? "" : " news-badge--update"}">${source.primary_source ? "Primärbeleg / Selbstauskunft" : "Journalistischer Bericht / Kontext"}</span><span>${escapeHtml(formatDate(source.published_at, { dateOnly: true }))}</span>${source.publisher_id ? `<a class="text-link" href="../quellen/${escapeHtml(source.publisher_id)}/">Quellenprofil</a>` : ""}</div></li>`).join("");
+  const sources = story.sources.map((source) => `<li class="news-source"><span class="news-source__avatar${source.primary_source ? "" : " news-source__avatar--secondary"}" aria-hidden="true">${escapeHtml(publisherInitials(source.publisher))}</span><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</span>${renderIcon("extern")}</a><div class="news-source-meta"><span class="news-badge${source.primary_source ? "" : " news-badge--update"}">${source.primary_source ? "Primärbeleg / Selbstauskunft" : "Journalistischer Bericht / Kontext"}</span><span>${escapeHtml(source.date_status === "undated_reference" ? `Ohne Veröffentlichungsdatum · geprüft ${formatDate(source.retrieved_at, { dateOnly: true })}` : formatDate(source.published_at, { dateOnly: true }))}</span>${source.publisher_id ? `<a class="text-link" href="../quellen/${escapeHtml(source.publisher_id)}/">Quellenprofil</a>` : ""}</div></li>`).join("");
   const history = [...(story.versions || [])].reverse().map((version, index) => `<li${index === 0 ? ' class="is-current"' : ""}><strong>Version ${escapeHtml(version.version)} · ${escapeHtml(analysisTypeLabel(version.analysis?.analysis_type))}</strong><span>WÖk-Einordnung ${escapeHtml(formatDate(version.analyzed_at))}</span></li>`).join("")
     + `<li><strong>Ausgangsmeldung</strong><span>${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}${primary ? ` · ${escapeHtml(primary.publisher)}` : ""}</span></li>`;
   const risks = [...(a.impact_risks || []), ...(a.side_effects || [])];

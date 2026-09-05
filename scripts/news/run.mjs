@@ -125,6 +125,8 @@ function sourcePublicRecord(item) {
     summary: item.summary,
     source_type: item.source_type,
     published_at: item.published_at,
+    date_status: item.date_status,
+    retrieved_at: item.retrieved_at,
     primary_source: item.primary_source,
     source_priority: item.source_priority,
     source_topic: item.source_topic,
@@ -208,7 +210,7 @@ function createCandidate(cluster, now, reassessment = false, fresh = false) {
     evidence_groups: evidenceGroups(sources),
   };
   candidate.claims = claimLedgerFor(sources, candidate.story_id, now);
-  candidate.preanalysis = preAnalyzeStory(candidate);
+  candidate.preanalysis = preAnalyzeStory(candidate, now);
   candidate.topic = candidate.preanalysis.topics;
   candidate.content_hash = storyContentHash(candidate);
   candidate.media_trigger = detectMediaImpactTrigger(candidate);
@@ -446,7 +448,8 @@ export function queuePriority(candidate, now) {
   const queuedAt = Date.parse(existing?.pending_update?.detected_at || existing?.updated_at || candidate.first_seen || now);
   const ageHours = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / (60 * 60 * 1000)) : 0;
   const waitingBonus = Math.min(36, Math.floor(ageHours / 6));
-  return candidate.preanalysis.internal_relevance_score + freshBonus + publishedUpdateBonus + reassessmentPenalty + waitingBonus;
+  const urgentReviewBonus = candidate.preanalysis.material_development_review?.time_sensitive ? 72 : 0;
+  return candidate.preanalysis.internal_relevance_score + freshBonus + publishedUpdateBonus + reassessmentPenalty + waitingBonus + urgentReviewBonus;
 }
 
 export function aiRequestsInWindow(usage, now, windowMinutes = 60) {
@@ -833,7 +836,7 @@ export async function runWirkungsticker(options = {}) {
         evidence_groups: evidenceGroups(sources),
       };
       candidate.claims = claimLedgerFor(sources, candidate.story_id, now);
-      candidate.preanalysis = preAnalyzeStory(candidate);
+      candidate.preanalysis = preAnalyzeStory(candidate, now);
       candidate.topic = candidate.preanalysis.topics;
       candidate.content_hash = story.pending_update?.content_hash || storyContentHash(candidate);
       return candidate;

@@ -16,13 +16,13 @@
     "observation_window": "30 Tage; bei weniger als 20 gesehenen Einträgen und acht erfassten Läufen keine automatische Review-Markierung."
   },
   "summary": {
-    "registered_sources": 66,
+    "registered_sources": 69,
     "active_automated_sources": 47,
     "trial_sources": 3,
     "coverage_good": 27,
     "coverage_partial": 12,
     "coverage_critical_gap": 1,
-    "performance_items_seen": 9238
+    "performance_items_seen": 10127
   },
   "coverage": [
     {
@@ -1101,6 +1101,27 @@
       "trial_mode": false
     },
     {
+      "source_id": "landtag-sachsen-anhalt-context",
+      "name": "Landtag Sachsen-Anhalt",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "sachsen-anhalt-election-context",
+      "name": "Landeswahlleiterin Sachsen-Anhalt",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "focus-case-research",
+      "name": "FOCUS online",
+      "role": "C",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
       "source_id": "un-news",
       "name": "UN News",
       "role": "D",
@@ -1190,9 +1211,9 @@
       ],
       "source_utility_score": 45.1,
       "metrics": {
-        "items_seen": 200,
+        "items_seen": 220,
         "items_local_rejected": 0,
-        "items_duplicate": 170,
+        "items_duplicate": 187,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 4,
@@ -1219,9 +1240,9 @@
       ],
       "source_utility_score": 44,
       "metrics": {
-        "items_seen": 200,
+        "items_seen": 220,
         "items_local_rejected": 0,
-        "items_duplicate": 140,
+        "items_duplicate": 154,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 1,
@@ -1249,9 +1270,9 @@
       ],
       "source_utility_score": 40,
       "metrics": {
-        "items_seen": 150,
+        "items_seen": 165,
         "items_local_rejected": 0,
-        "items_duplicate": 150,
+        "items_duplicate": 165,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1278,9 +1299,9 @@
       ],
       "source_utility_score": 48.7,
       "metrics": {
-        "items_seen": 150,
+        "items_seen": 165,
         "items_local_rejected": 0,
-        "items_duplicate": 20,
+        "items_duplicate": 22,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1307,9 +1328,9 @@
       ],
       "source_utility_score": 48.7,
       "metrics": {
-        "items_seen": 150,
+        "items_seen": 165,
         "items_local_rejected": 0,
-        "items_duplicate": 20,
+        "items_duplicate": 22,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1362,11 +1383,11 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 49,
+      "source_utility_score": 52,
       "metrics": {
-        "items_seen": 100,
+        "items_seen": 110,
         "items_local_rejected": 0,
-        "items_duplicate": 100,
+        "items_duplicate": 110,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1393,9 +1414,9 @@
       ],
       "source_utility_score": 41,
       "metrics": {
-        "items_seen": 100,
+        "items_seen": 110,
         "items_local_rejected": 0,
-        "items_duplicate": 90,
+        "items_duplicate": 99,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1422,9 +1443,9 @@
       ],
       "source_utility_score": 47.3,
       "metrics": {
-        "items_seen": 150,
+        "items_seen": 165,
         "items_local_rejected": 0,
-        "items_duplicate": 40,
+        "items_duplicate": 44,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1451,7 +1472,7 @@
       ],
       "source_utility_score": 50,
       "metrics": {
-        "items_seen": 100,
+        "items_seen": 110,
         "items_local_rejected": 0,
         "items_duplicate": 0,
         "items_existing_story": 0,
@@ -1534,9 +1555,9 @@
       ],
       "source_utility_score": 42.4,
       "metrics": {
-        "items_seen": 100,
+        "items_seen": 110,
         "items_local_rejected": 0,
-        "items_duplicate": 80,
+        "items_duplicate": 88,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 1,
@@ -1590,9 +1611,9 @@
       ],
       "source_utility_score": 49.8,
       "metrics": {
-        "items_seen": 300,
+        "items_seen": 360,
         "items_local_rejected": 0,
-        "items_duplicate": 5,
+        "items_duplicate": 6,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1619,7 +1640,88 @@
       ],
       "source_utility_score": 50,
       "metrics": {
-        "items_seen": 150,
+        "items_seen": 165,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "landtag-sachsen-anhalt-context",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "sachsen-anhalt-election-context",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "focus-case-research",
+      "role": "C",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
         "items_local_rejected": 0,
         "items_duplicate": 0,
         "items_existing_story": 0,
@@ -1731,9 +1833,9 @@
       ],
       "source_utility_score": 41.9,
       "metrics": {
-        "items_seen": 230,
+        "items_seen": 253,
         "items_local_rejected": 1,
-        "items_duplicate": 189,
+        "items_duplicate": 208,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 1,
@@ -1756,7 +1858,7 @@
       "observation_status": "insufficient_window",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 71,
+      "source_utility_score": 72.5,
       "metrics": {
         "items_seen": 0,
         "items_local_rejected": 0,
@@ -1786,11 +1888,11 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 66.6,
+      "source_utility_score": 68.1,
       "metrics": {
-        "items_seen": 200,
+        "items_seen": 220,
         "items_local_rejected": 0,
-        "items_duplicate": 200,
+        "items_duplicate": 220,
         "items_existing_story": 9,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 4,
@@ -1817,9 +1919,9 @@
       ],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 200,
-        "items_local_rejected": 12,
-        "items_duplicate": 111,
+        "items_seen": 220,
+        "items_local_rejected": 15,
+        "items_duplicate": 128,
         "items_existing_story": 12,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 12,
@@ -1844,11 +1946,11 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 91.1,
+      "source_utility_score": 95.6,
       "metrics": {
-        "items_seen": 600,
-        "items_local_rejected": 13,
-        "items_duplicate": 499,
+        "items_seen": 660,
+        "items_local_rejected": 14,
+        "items_duplicate": 548,
         "items_existing_story": 10,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 7,
@@ -1871,11 +1973,11 @@
       "observation_status": "measurable",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 70,
+      "source_utility_score": 71.5,
       "metrics": {
-        "items_seen": 100,
+        "items_seen": 110,
         "items_local_rejected": 0,
-        "items_duplicate": 20,
+        "items_duplicate": 22,
         "items_existing_story": 1,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 2,
@@ -2037,11 +2139,11 @@
       "observation_status": "insufficient_window",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 81.8,
+      "source_utility_score": 84.8,
       "metrics": {
         "items_seen": 0,
-        "items_local_rejected": 4,
-        "items_duplicate": 77,
+        "items_local_rejected": 5,
+        "items_duplicate": 85,
         "items_existing_story": 14,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 6,
@@ -2176,9 +2278,9 @@
       ],
       "source_utility_score": 53.5,
       "metrics": {
-        "items_seen": 100,
+        "items_seen": 110,
         "items_local_rejected": 0,
-        "items_duplicate": 20,
+        "items_duplicate": 22,
         "items_existing_story": 4,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 4,
@@ -2203,7 +2305,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 54.9,
+      "source_utility_score": 56.4,
       "metrics": {
         "items_seen": 50,
         "items_local_rejected": 4,
@@ -2235,9 +2337,9 @@
       ],
       "source_utility_score": 40.7,
       "metrics": {
-        "items_seen": 300,
+        "items_seen": 330,
         "items_local_rejected": 0,
-        "items_duplicate": 280,
+        "items_duplicate": 308,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -2318,11 +2420,11 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 58.1,
+      "source_utility_score": 58.2,
       "metrics": {
-        "items_seen": 60,
+        "items_seen": 80,
         "items_local_rejected": 5,
-        "items_duplicate": 14,
+        "items_duplicate": 21,
         "items_existing_story": 4,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 5,
@@ -2374,11 +2476,11 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 72,
+      "source_utility_score": 75,
       "metrics": {
-        "items_seen": 600,
+        "items_seen": 660,
         "items_local_rejected": 4,
-        "items_duplicate": 368,
+        "items_duplicate": 405,
         "items_existing_story": 10,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 3,
@@ -2401,11 +2503,11 @@
       "observation_status": "measurable",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 75.7,
+      "source_utility_score": 77.2,
       "metrics": {
-        "items_seen": 478,
+        "items_seen": 523,
         "items_local_rejected": 1,
-        "items_duplicate": 114,
+        "items_duplicate": 125,
         "items_existing_story": 9,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 3,
@@ -2430,11 +2532,11 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 46.2,
+      "source_utility_score": 46.3,
       "metrics": {
-        "items_seen": 566,
+        "items_seen": 622,
         "items_local_rejected": 13,
-        "items_duplicate": 388,
+        "items_duplicate": 428,
         "items_existing_story": 4,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 5,
@@ -2457,11 +2559,11 @@
       "observation_status": "measurable",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 88.7,
+      "source_utility_score": 93.2,
       "metrics": {
-        "items_seen": 470,
+        "items_seen": 517,
         "items_local_rejected": 9,
-        "items_duplicate": 400,
+        "items_duplicate": 441,
         "items_existing_story": 10,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 5,
@@ -2486,11 +2588,11 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 67,
+      "source_utility_score": 68.5,
       "metrics": {
-        "items_seen": 531,
+        "items_seen": 584,
         "items_local_rejected": 6,
-        "items_duplicate": 321,
+        "items_duplicate": 354,
         "items_existing_story": 9,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 4,
@@ -2516,11 +2618,11 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 60.2,
+      "source_utility_score": 61.7,
       "metrics": {
-        "items_seen": 490,
+        "items_seen": 539,
         "items_local_rejected": 1,
-        "items_duplicate": 449,
+        "items_duplicate": 494,
         "items_existing_story": 4,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 5,
@@ -2547,9 +2649,9 @@
       ],
       "source_utility_score": 42.6,
       "metrics": {
-        "items_seen": 489,
+        "items_seen": 539,
         "items_local_rejected": 2,
-        "items_duplicate": 357,
+        "items_duplicate": 394,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -2575,7 +2677,7 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 44.5,
+      "source_utility_score": 46,
       "metrics": {
         "items_seen": 33,
         "items_local_rejected": 0,
@@ -2635,9 +2737,9 @@
       ],
       "source_utility_score": 47.1,
       "metrics": {
-        "items_seen": 254,
+        "items_seen": 278,
         "items_local_rejected": 11,
-        "items_duplicate": 193,
+        "items_duplicate": 212,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 4,
@@ -2663,11 +2765,11 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 85.6,
+      "source_utility_score": 88.6,
       "metrics": {
-        "items_seen": 361,
+        "items_seen": 398,
         "items_local_rejected": 3,
-        "items_duplicate": 356,
+        "items_duplicate": 393,
         "items_existing_story": 15,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 10,
@@ -2694,9 +2796,9 @@
       ],
       "source_utility_score": 49.3,
       "metrics": {
-        "items_seen": 600,
+        "items_seen": 660,
         "items_local_rejected": 0,
-        "items_duplicate": 40,
+        "items_duplicate": 44,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
