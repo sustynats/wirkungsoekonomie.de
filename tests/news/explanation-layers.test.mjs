@@ -9,7 +9,7 @@ const pages = ["wirkungsticker/index.html", "wirkungsticker/quellen/index.html",
 
 test("Erklärungsebenen: unverändertes Ticker-Versprechen und kompakte Leselogik", () => {
   const html = read(pages[0]);
-  for (const text of ["Die Nachrichten, bei denen zählt, was daraus folgt.", "Weniger Meldungen, mehr Relevanz", "So liest du den Ticker", "Wirkungsakte", "Lageakte", "WÖk-Analyse", "Relevanz, nicht gut oder schlecht.", "Festgestellte Zustandsveränderung", 'id="methodik"']) assert.ok(html.includes(text), text);
+  for (const text of ["Wichtige Nachrichten. Fakten, Folgen, Zusammenhänge.", "Politik, Wirtschaft, Gesellschaft, Umwelt und Technik", "was belegt ist", "welche Folgen möglich sind", "wie über Ereignisse gesprochen wird", "So liest du den Ticker", "Wirkungsakte", "Lageakte", "WÖk-Analyse", "Relevanz, nicht gut oder schlecht.", "Festgestellte Zustandsveränderung", 'id="methodik"']) assert.ok(html.includes(text), text);
   assert.doesNotMatch(html, /WÖK-Analyse/);
   assert.ok(html.includes("Automatisch aktualisierte Nachrichten, quellengebunden geprüft"));
 });

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { auditSourceIntegrity, reconcileSourceIdentity, sourceIntegrityForStory } from "../../scripts/news/source-integrity.mjs";
+import { auditSourceIntegrity, reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory } from "../../scripts/news/source-integrity.mjs";
 
 const registry = { sources: [
   { source_id: "swr", publisher_id: "swr", name: "SWR", url: "https://www.swr.de/", feed_url: "https://www.swr.de/feed.xml", primary_source: false, source_type: "media_rss", publisher_kind: "public_broadcasting", research_lane: "media", geography: ["DE"] },
@@ -8,6 +8,15 @@ const registry = { sources: [
 ] };
 const source = (title, url, extra = {}) => ({ source_id: "swr", publisher_id: "swr", publisher: "SWR", title, summary: title, url, published_at: "2026-09-05T08:00:00Z", primary_source: false, ...extra });
 const story = (title, sources) => ({ story_id: `story-${title}`, title, source_summary: title, sources, published: true, listed: true, last_updated: "2026-09-05T09:00:00Z" });
+
+test("historische HTTP-Dublette wird nur mit identischem bekannten HTTPS-Beleg bereinigt",()=>{
+  const secure=source("Gleicher Artikel", "https://www.swr.de/artikel.html"), old={...secure,url:"http://www.swr.de/artikel.html"};
+  const originals=structuredClone([secure,old]);
+  assert.deepEqual(reconcileKnownSourceAliases([old,secure]),[secure]);
+  assert.deepEqual([secure,old],originals);
+  assert.deepEqual(reconcileKnownSourceAliases([old]),[old]);
+  for(const change of [{summary:'Widerspruch'},{source_id:'anderer'},{primary_source:true},{published_at:'2026-09-04T08:00:00Z'},{article_excerpt:'Ein zusätzlicher Gegenbeleg.'}]) assert.equal(reconcileKnownSourceAliases([secure,{...old,...change}]).length,2);
+});
 
 test("eine registrierte Feed-Weiterleitung wird dem Zielpublisher zugeordnet", () => {
   const item = source("Wahl in Sachsen-Anhalt", "https://www.tagesschau.de/inland/wahl-sachsen-anhalt.html");

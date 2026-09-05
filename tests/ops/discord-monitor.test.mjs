@@ -40,6 +40,13 @@ test('transient outage stays quiet; confirmed outage and recovery each notify on
 test('no new articles is not a pipeline failure', () => {
   assert.ok(evaluateChecks(fixture(), now).checks.every(c => c.ok));
 });
+test('worker queue after-count is not misreported as zero in Discord',()=>{
+  const data=fixture();
+  data.report.queue={status:'draining',before:21,after:17,capacity:2,technical:15,editorial:0};
+  const summary=summarizeNews(data,now);
+  assert.equal(summary.queue.total,17);
+  assert.match(dailyReport(summary,healthy),/Queue: 17 offen/);
+});
 test('one transient source throttle stays observable without a false outage alarm', () => {
   const d = fixture();
   d.report = { ...d.report, status: 'degraded', source_failures: 1, source_successes: 32, sources_scheduled: 33, source_errors: [{ source_id: 'berlin', error: 'FEED_HTTP_429' }] };

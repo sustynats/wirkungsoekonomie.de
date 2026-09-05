@@ -390,8 +390,8 @@ function indexPage(stories, updatedAt, { totalStories = stories.length, caseCoun
     <div class="hero-copy">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a><span aria-hidden="true">/</span><a href="../oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a></nav>
       <p class="hero-kicker news-hero__kicker">${renderIcon("folgen")}<span>Wirkungsticker</span></p>
-      <h1 class="hero-title">Die Nachrichten, bei denen zählt, was daraus folgt.</h1>
-      <p class="hero-subtitle">Weniger Meldungen, mehr Relevanz: quellengebundene Einordnung von Wirkungspotenzial, Wirkungsrisiken und beobachteten Zustandsveränderungen für Mensch, Planet und Demokratie.</p>
+      <h1 class="hero-title">Wichtige Nachrichten. Fakten, Folgen, Zusammenhänge.</h1>
+      <p class="hero-subtitle">Aus Politik, Wirtschaft, Gesellschaft, Umwelt und Technik. Der Wirkungsticker erklärt, was passiert ist, was belegt ist und welche Folgen möglich sind. Er zeigt Zusammenhänge und prüft auch, wie über Ereignisse gesprochen wird.</p>
       <ul class="news-hero__stats"><li><strong>${stories.length}</strong> aktuelle Lagen und Einzelakten</li><li><strong>${totalStories}</strong> geprüfte Wirkungsakten${caseCount ? ` · ${caseCount} automatisch gebündelte ${caseCount === 1 ? "Lageakte" : "Lageakten"}` : ""}</li>${editorialAnalyses.length ? `<li><strong>${editorialAnalyses.length}</strong> eigenständige WÖk-${editorialAnalyses.length === 1 ? "Analyse" : "Analysen"}</li>` : ""}<li><strong>${highCount}</strong> mit hoher systemischer Relevanz</li><li>${renderIcon("uhr")}<span>Stand ${escapeHtml(formatDate(updatedAt))} · automatische Quellenprüfung</span></li><li><a class="text-link" href="#methodik">Methodik und Qualitätsgate</a> · <a class="text-link" href="quellen/">Quellen &amp; Auswahl</a></li></ul>
     </div>
   </section>
