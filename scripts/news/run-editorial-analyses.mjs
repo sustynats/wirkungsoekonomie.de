@@ -256,7 +256,7 @@ export async function runEditorialAnalyses({
         related_story_ids: story.case_file?.members?.map((member) => member.story_id) || story.editorial_subject?.member_story_ids || [story.story_id], related_case_id: story.case_file?.case_id || null,
         slug: existing?.slug || editorialSlug(analysis.title, story.story_id), status: "published",
         author: { name: "Natalie Weber", role: "Methodik & redaktionelle Verantwortung", image: "/assets/img/people/natalie-weber-woek-analyse.jpg" },
-        transparency_note: "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+        transparency_note: "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
         method_version: EDITORIAL_ANALYSIS_VERSION, source_fingerprint: assessment.fingerprint,
         candidate_score: assessment.editorial_analysis_score, analysis_gain_score: assessment.analysis_gain,
         evidence_gate: assessment.evidence_gate, published_at: publishedAt, updated_at: now, version,
