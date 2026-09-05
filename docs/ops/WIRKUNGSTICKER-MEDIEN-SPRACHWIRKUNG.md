@@ -8,16 +8,16 @@ Der Wirkungsticker prüft bei sprachlich oder medial relevanten Meldungen zusät
 
 Die Erweiterung nutzt die bestehende Pipeline und den bestehenden Story-Speicher:
 
-1. `detectMediaImpactTrigger()` in `scripts/news/media-impact.mjs` prüft vor dem KI-Aufruf lokale Signale.
+1. `detectMediaImpactTrigger()` in `scripts/news/media-impact.mjs` prüft vor dem KI-Aufruf lokale Signale. Der geprüfte Triggerstand wird zusammen mit einem Inhaltsfingerabdruck gespeichert, damit ein Befund aus einem nur flüchtig abgerufenen öffentlichen Artikeltext nach dessen absichtlicher Nicht-Speicherung reproduzierbar validiert werden kann.
 2. `buildAnalysisPrompt()` übergibt das Triggerergebnis und verlangt bei einem Treffer den strukturierten `media_impact`-Block im normalen Story-Aufruf. Es gibt keinen zweiten regulären KI-Aufruf.
-3. `sanitizeAnalysisMediaImpact()` läuft in `run.mjs` vor `validateAnalysis()`. Unbelegte Herkunftsbelege, Ein-Quellen-Vergleiche und unbekannte Werte werden entfernt.
+3. `sanitizeAnalysisMediaImpact()` läuft in `run.mjs` vor `validateAnalysis()`. Unbelegte Herkunftsbelege, Ein-Quellen-Vergleiche und unbekannte Werte werden entfernt. Ein lokaler Nichttreffer darf nur durch einen vollständigen, evidenzgetrennten KI-Befund hochgestuft werden; eine bloße Behauptung oder ein Teilobjekt reicht nicht.
 4. `mediaImpactValidationErrors()` prüft die fachliche Trennung und die Eigenformulierungen.
 5. `build.mjs` zeigt den Bereich nur bei `media_impact.relevant === true` an.
 6. `backfill-media-impact.mjs` ergänzt ausschließlich bereits veröffentlichte Trigger-Treffer und versioniert sie im vorhandenen Story-Modell.
 
 ## Trigger
 
-Der lokale Trigger ist ein Recherche- und Kostengate, kein Urteil. Er berücksichtigt unter anderem:
+Der lokale Trigger ist ein Recherche- und Kostengate, kein abschließendes Urteil. Er berücksichtigt unter anderem:
 
 - politisch aufgeladene oder kampagnenartige Bezeichnungen;
 - Bedrohungs-, Feindbild-, Moral-, Generalisierungs- und Katastrophisierungsframes;
@@ -26,7 +26,7 @@ Der lokale Trigger ist ein Recherche- und Kostengate, kein Urteil. Er berücksic
 - fehlende Attribution in der Überschrift;
 - einen erkennbaren Unterschied zwischen Überschrift und geliefertem Kurztext.
 
-Die Regeln enthalten keine ideologische Blacklist. Links, rechts, Regierung, Opposition, Wirtschaft, Verbände, NGOs, Gewerkschaften, Behörden und Medien werden mit derselben Signallogik behandelt. Ein Treffer aktiviert die Prüfung; die vertiefte Analyse darf anschließend `relevant:false` feststellen.
+Die Regeln enthalten keine ideologische Blacklist. Links, rechts, Regierung, Opposition, Wirtschaft, Verbände, NGOs, Gewerkschaften, Behörden und Medien werden mit derselben Signallogik behandelt. Ein Treffer aktiviert die Prüfung; die vertiefte Analyse darf anschließend `relevant:false` feststellen. Umgekehrt darf ein konkreter, vollständig ausgefüllter und anschließend durch alle Qualitätsregeln geprüfter Befund einen zu engen lokalen Nichttreffer ergänzen. Diese Eskalation wird als `analysis_finding` protokolliert und verändert weder Fakten- noch Ereigniswirkung.
 
 ## Datenmodell
 
@@ -36,6 +36,7 @@ Die vorhandene `analysis`-Struktur wird ergänzt um:
 - `media_analysis_version`;
 - `media_checked_at`;
 - `media_trigger_fingerprint`.
+- `media_trigger`: serverseitig normalisierter Triggerstand mit Begründungen, Prüfgrundlage und Inhaltsfingerabdruck; nicht Teil der öffentlichen Lesertexte.
 
 Ereigniswirkung bleibt in den bestehenden Wirkungsfeldern. Kommunikationswirkung bleibt im neuen Block. Ein Bezug zur Demokratiedimension muss in der Analyse nachvollziehbar begründet werden; es gibt keine automatische Score-Übernahme.
 
@@ -61,6 +62,7 @@ Neue Storys erhalten den Mediencheck innerhalb des bestehenden Analyseaufrufs. O
 
 - `media_checks_triggered`;
 - `media_checks_skipped`;
+- `media_checks_ai_promoted`;
 - `media_check_tokens`;
 - `media_check_cost_usd`;
 - `media_quality_retries`;
@@ -82,7 +84,7 @@ Der Medienkostenanteil eines regulären kombinierten Aufrufs ist eine konservati
 6. stoppt am bestehenden Monatsbudget;
 7. gliedert eine inhaltlich vollständige Ersatzfassung bei Bedarf deterministisch an einer Satzgrenze in zwei Absätze, fordert bei anderen formalen Mängeln höchstens eine gezielte Qualitätskorrektur an und hält den Fall danach weiterhin zurück;
 8. leitet objektiv erkennbare Angaben wie die Verwendung eines Frame-Begriffs in der Überschrift deterministisch aus den gespeicherten Feldern ab und normalisiert widersprüchliche Altangaben ohne KI-Aufruf;
-9. entfernt automatisch einen früher sichtbaren Mediencheck, wenn eine verschärfte lokale Triggerregel ihn nicht mehr als relevant einstuft;
+9. entfernt automatisch einen früher sichtbaren Mediencheck, wenn eine verschärfte lokale Triggerregel ihn nicht mehr als relevant einstuft und kein zum unveränderten Quellenstand gespeicherter, qualitätsgeprüfter Triggerbefund vorliegt;
 10. ist bei unverändertem Quellenstand idempotent.
 
 Der GitHub-Workflow bietet dafür die manuellen Eingaben `media_impact_backfill` und `media_impact_limit`. Der reguläre Stundenprozess startet keinen teuren Vollbestands-Backfill.

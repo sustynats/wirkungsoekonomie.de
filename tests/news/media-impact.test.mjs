@@ -5,7 +5,8 @@ import os from "node:os";
 import path from "node:path";
 import { buildAnalysisPrompt } from "../../scripts/news/lib.mjs";
 import { backfillMediaImpact } from "../../scripts/news/backfill-media-impact.mjs";
-import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, mediaImpactValidationErrors, sanitizeMediaImpact } from "../../scripts/news/media-impact.mjs";
+import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis, mediaTriggerRecord, sanitizeMediaImpact } from "../../scripts/news/media-impact.mjs";
+import { sanitizeAnalysisMediaImpact } from "../../scripts/news/run.mjs";
 import { storyPage } from "../../scripts/news/build.mjs";
 
 const source = (title, summary = title, extra = {}) => ({ source_id: "medium-a", publisher: "Testmedium", title, summary, url: "https://example.org/a", published_at: "2026-09-05T06:00:00Z", ...extra });
@@ -29,6 +30,48 @@ function validMedia(overrides = {}) {
 test("neutrales Ereignis löst keinen Mediencheck aus", () => {
   assert.equal(detectMediaImpactTrigger(story("Bund veröffentlicht Monatsbericht", "Der Bericht enthält neue Daten zur Verwaltung.")).relevant, false);
   assert.equal(detectMediaImpactTrigger(story("Nach Gefahrengut-Alarm läuft der Flugverkehr wieder", "Eine Frau meldete einen gefährlichen Stoff; laut Polizei bestand zu keinem Zeitpunkt eine Gefahr.")).relevant, false);
+});
+
+test("vollständiger KI-Befund darf einen zu engen lokalen Trigger abgesichert ergänzen", () => {
+  const item = story("Bund veröffentlicht Monatsbericht", "Der Bericht enthält neue Daten zur Verwaltung.");
+  const local = detectMediaImpactTrigger(item);
+  assert.equal(local.relevant, false);
+  const promoted = effectiveMediaImpactTrigger(local, validMedia(), item);
+  assert.equal(promoted.relevant, true);
+  assert.equal(promoted.basis, "analysis_finding");
+  assert.ok(promoted.reasons.includes("analysis_substantive_finding"));
+  assert.equal(effectiveMediaImpactTrigger(local, { relevant: true, reason: "bloße Behauptung" }, item).relevant, false);
+  const analysis = { media_impact: validMedia() };
+  const report = {};
+  sanitizeAnalysisMediaImpact(analysis, { ...item, media_trigger: local }, report, "2026-09-05T11:00:00Z");
+  assert.equal(analysis.media_trigger.basis, "analysis_finding");
+  assert.equal(report.media_checks_ai_promoted, 1);
+});
+
+test("Trigger aus kontrolliertem Artikeltext bleibt nach flüchtigem Abruf prüfbar", () => {
+  const enriched = story("Bund veröffentlicht Monatsbericht", "Der Bericht enthält neue Daten zur Verwaltung.", [source("Bund veröffentlicht Monatsbericht", "Der Bericht enthält neue Daten zur Verwaltung.", {
+    article_excerpt: "Ein Minister bezeichnet die Entwicklung als extremistisch und warnt vor einer Bedrohung.",
+    content_hash: "source-v1",
+  })]);
+  enriched.content_hash = "story-v1";
+  const trigger = detectMediaImpactTrigger(enriched);
+  assert.equal(trigger.relevant, true);
+  const persisted = structuredClone(enriched);
+  delete persisted.sources[0].article_excerpt;
+  assert.equal(detectMediaImpactTrigger(persisted).relevant, false);
+  const analysis = {
+    media_impact: validMedia(),
+    source_summary: persisted.source_summary,
+    summary: "Der Bericht enthält neue Daten. Die Einordnung bleibt offen.",
+    detail_summary: "Der Bericht enthält neue Daten. Die Einordnung bleibt offen.",
+  };
+  sanitizeAnalysisMediaImpact(analysis, { ...enriched, media_trigger: trigger }, {}, "2026-09-05T11:00:00Z");
+  assert.equal(analysis.media_trigger.basis, "controlled_source_text");
+  assert.equal(mediaTriggerForAnalysis(analysis, persisted).relevant, true);
+  assert.ok(!mediaImpactValidationErrors(analysis, persisted).includes("MEDIA_IMPACT_UNTRIGGERED"));
+  persisted.sources[0].content_hash = "source-v2";
+  assert.equal(mediaTriggerForAnalysis(analysis, persisted).relevant, false);
+  assert.ok(mediaImpactValidationErrors(analysis, persisted).includes("MEDIA_IMPACT_UNTRIGGERED"));
 });
 
 test("englischsprachige politisch aufgeladene Meldungen nutzen dieselbe Vorprüfung", () => {

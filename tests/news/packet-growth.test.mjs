@@ -15,6 +15,17 @@ test('325 equal dependency records retain their multiplicity without quadratic p
   assert.equal(groups.independence_is_verified,false);
   assert.deepEqual(groups.groups,[['same']]);
 });
+test('large same-registry source sets factor publisher metadata without losing document URLs',()=>{
+  const sources=Array.from({length:31},(_,i)=>({source_id:'bundestag-hib',publisher:'Deutscher Bundestag – Heute im Bundestag',publisher_id:'bundestag',url:`https://www.bundestag.de/presse/hib/kurzmeldungen-${1210200+i}`,title:'Anhörung zur Änderung des Düngegesetzes',summary:'Der Ausschuss veröffentlicht eine eigene Stellungnahme zur Anhörung.',published_at:`2026-09-04T15:${String(i).padStart(2,'0')}:00Z`,primary_source:true,source_role:'institutional_statement',provenance:{origin:'publisher:bundestag',basis:'publisher_only_origin_unverified',independence_established:false}}));
+  const candidate={story_id:'wt-large-hearing',title:'Anhörung zur Änderung des Düngegesetzes',sources,claims:claimLedgerFor(sources,'wt-large-hearing','2026-09-05T11:00:00Z'),preanalysis:preAnalyzeStory({title:'Anhörung zur Änderung des Düngegesetzes',sources}),related_ticker_history:[]};
+  const prompt=buildAnalysisPrompt([candidate]);
+  const packed=JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0];
+  assert.equal(packed.source_defaults.source_id,'bundestag-hib');
+  assert.equal(packed.source_defaults.publisher,'Deutscher Bundestag – Heute im Bundestag');
+  const expanded=expandPacketTransport(packed);
+  assert.deepEqual(expanded.sources.map(source=>source.url),sources.map(source=>source.url));
+  assert.ok(prompt.length<=39000);
+});
 test('dense tables and text references round-trip roles, nulls, omissions, IDs and contradictions',()=>{
   const repeated='Eine lange unveränderte Textstelle, die identisch in verschiedenen Dokumenten vorkommt.';
   const story={sources:[{source_id:'s1',url:'https://example.org/1',title:repeated,primary_source:false,provenance:null,evidence_segments:[{evidence_id:'ev1',excerpt:repeated}]},{source_id:'s2',url:'https://example.org/2',title:'Die Behauptung wird ausdrücklich bestritten.',summary:repeated,evidence_segments:[{evidence_id:'ev2',excerpt:'Die Behauptung wird ausdrücklich bestritten.'}]}],claims:[{claim_id:'c1',claim:repeated,source_id:'s1'}]};

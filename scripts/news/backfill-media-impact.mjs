@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { buildNewsSite } from "./build.mjs";
 import { callWoekAi, estimateUsage, monthlyUsage, sha256, validateAnalysis } from "./lib.mjs";
 import { NEWS_REQUEST_RESERVATION_USD, costFromUsage, modelRates, newsBudget } from "./budget.mjs";
-import { MEDIA_ANALYSIS_VERSION, MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, applySelfFrameRewrites, detectMediaImpactTrigger, estimateMediaUsage, sanitizeMediaImpact } from "./media-impact.mjs";
+import { MEDIA_ANALYSIS_VERSION, MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, applySelfFrameRewrites, detectMediaImpactTrigger, estimateMediaUsage, mediaTriggerForAnalysis, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
 
 const DEFAULT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
@@ -60,7 +60,7 @@ export async function backfillMediaImpact({
   const month = now.slice(0, 7);
   const budget = newsBudget(state.budget_fx, now, Number(process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_EUR || 25));
   let spend = monthlyUsage(usage, month);
-  const reviewed = store.stories.filter((story) => story.published && story.listed !== false && story.analysis).map((story) => ({ story, trigger: detectMediaImpactTrigger(story) }));
+  const reviewed = store.stories.filter((story) => story.published && story.listed !== false && story.analysis).map((story) => ({ story, trigger: mediaTriggerForAnalysis(story.analysis, story) }));
   const obsolete = reviewed.filter(({ story, trigger }) => !trigger.relevant && story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_impact?.relevant);
   const normalizable = reviewed.map(({ story, trigger }) => ({ story, trigger, sanitized: trigger.relevant && story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_trigger_fingerprint === trigger.fingerprint && story.analysis.media_impact ? sanitizeMediaImpact(story.analysis.media_impact, story, trigger).media_impact : null })).filter(({ story, sanitized }) => sanitized && JSON.stringify(sanitized) !== JSON.stringify(story.analysis.media_impact));
   const candidates = reviewed.filter(({ story, trigger }) => trigger.relevant && !(story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_trigger_fingerprint === trigger.fingerprint));
@@ -70,7 +70,7 @@ export async function backfillMediaImpact({
   if (budget.status !== "ok") throw new Error("MEDIA_BACKFILL_BUDGET_FX_UNAVAILABLE");
   for (const { story, trigger } of obsolete) {
     const version = Number(story.current_version || 0) + 1;
-    const nextAnalysis = { ...story.analysis, media_impact: null, media_checked_at: now, media_trigger_fingerprint: trigger.fingerprint };
+    const nextAnalysis = { ...story.analysis, media_impact: null, media_checked_at: now, media_trigger_fingerprint: trigger.fingerprint, media_trigger: mediaTriggerRecord(trigger, story) };
     story.analysis = nextAnalysis;
     story.current_version = version;
     story.updated_at = now;
@@ -84,7 +84,7 @@ export async function backfillMediaImpact({
   }
   for (const { story, trigger, sanitized } of normalizable) {
     const version = Number(story.current_version || 0) + 1;
-    const nextAnalysis = { ...story.analysis, media_impact: sanitized, media_checked_at: now, media_trigger_fingerprint: trigger.fingerprint };
+    const nextAnalysis = { ...story.analysis, media_impact: sanitized, media_checked_at: now, media_trigger_fingerprint: trigger.fingerprint, media_trigger: mediaTriggerRecord(trigger, story) };
     story.analysis = nextAnalysis;
     story.current_version = version;
     story.updated_at = now;
@@ -118,10 +118,9 @@ export async function backfillMediaImpact({
         const raw = ai.analyses?.find((entry) => entry.story_id === story.story_id)?.media_impact;
         const sanitized = sanitizeMediaImpact(raw, story, trigger);
         workingStory = structuredClone(story);
-        nextAnalysis = { ...workingStory.analysis, media_impact: sanitized.media_impact, media_analysis_version: MEDIA_ANALYSIS_VERSION, media_checked_at: now, media_trigger_fingerprint: trigger.fingerprint };
+        nextAnalysis = { ...workingStory.analysis, media_impact: sanitized.media_impact, media_analysis_version: MEDIA_ANALYSIS_VERSION, media_checked_at: now, media_trigger_fingerprint: trigger.fingerprint, media_trigger: mediaTriggerRecord(trigger, workingStory) };
         localReport = {};
         applySelfFrameRewrites(nextAnalysis, workingStory, localReport);
-        nextAnalysis.media_trigger_fingerprint = detectMediaImpactTrigger(workingStory).fingerprint;
         qualityErrors = validateAnalysis({ source_summary: workingStory.source_summary, ...nextAnalysis }, { ...workingStory, media_trigger: trigger }, { validateSourceSummaryNumbers: false, persisted: true });
         if (!qualityErrors.length) break;
         if (qualityAttempt === 0) { result.quality_retries += 1; continue; }
@@ -131,7 +130,7 @@ export async function backfillMediaImpact({
       story.title = workingStory.title;
       story.source_summary = workingStory.source_summary;
       story.analysis = nextAnalysis;
-      story.analysis.media_trigger_fingerprint = detectMediaImpactTrigger(story).fingerprint;
+      story.analysis.media_trigger = mediaTriggerRecord(trigger, story);
       story.current_version = version;
       story.last_updated = now;
       story.updated_at = now;
