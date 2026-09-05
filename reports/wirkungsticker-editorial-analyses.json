@@ -2,21 +2,21 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-05T18:45:53.209Z",
+  "started_at": "2026-09-05T18:54:50.440Z",
   "scanned_stories": 89,
   "scanned_subjects": 65,
   "editorial_candidates": 7,
-  "ready_for_research": 1,
+  "ready_for_research": 0,
   "research_pending": 3,
   "editorial_research_sources_discovered": 6,
-  "selected": 1,
-  "editorial_research_started": 1,
+  "selected": 0,
+  "editorial_research_started": 0,
   "editorial_analyses_published": 0,
-  "editorial_analyses_updated": 1,
-  "research_calls": 1,
-  "research_tokens": 7602,
-  "analysis_tokens": 4827,
-  "estimated_cost_usd": 0.022412,
+  "editorial_analyses_updated": 0,
+  "research_calls": 0,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
   "quality_retries": 0,
   "publication_deferred": false,
   "failed": [],
@@ -53,7 +53,7 @@
         "reasons": []
       },
       "fingerprint": "fdcacf32e79f464ef271fee2ad82843b3252958eb7d9531c9845fecd635ac781",
-      "status": "ready_for_research",
+      "status": "published",
       "analysis_id": "woek-analysis-cf42f2c67306"
     },
     {
@@ -274,6 +274,5 @@
       "status": "published",
       "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
-  ],
-  "completed_at": "2026-09-05T18:46:18.989Z"
+  ]
 }
