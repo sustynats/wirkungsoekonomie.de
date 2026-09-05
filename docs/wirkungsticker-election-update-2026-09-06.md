@@ -1,6 +1,6 @@
 # Zeitkritische Wahlentwicklung: Quellenprüfung und Erkennung
 
-## Redaktioneller Befund
+## Redaktioneller Befund der Erstfassung
 
 Die aktuelle Interviewantwort betrifft Siegmunds Kandidatur bei knappster eigener Mehrheit. BILD veröffentlichte den gefundenen Artikel am 5. September um 08:23 Uhr; das Interview stammt vom 4. September. FOCUS berichtete am 5. September um 07:15 Uhr über denselben Interviewursprung. Diese Berichte sind keine zwei unabhängigen Bestätigungen. Das Video wurde nicht eigenständig angehört.
 
@@ -33,3 +33,37 @@ Regressionen: Partei-/Publishersymmetrie, Kandidaturrückzug, Koalitionsänderun
 Keine neue kostenpflichtige Analyse oder Bildgenerierung wurde für diesen Import gestartet. Die neuen lokalen Signale verursachen selbst keine API-Aufrufe. Künftige zusätzliche materielle Prüfungen unterliegen den bisherigen Euro- und Stundenlimits.
 
 Verbleibende Grenze: Eine exklusive Entwicklung, die ausschließlich in einer nicht automatisch nutzbaren Quelle vorkommt und von keinem aktiven Feed aufgegriffen wird, kann dieses Portfolio weiterhin verpassen. Dafür wird weder eine unzulässige Quelle aktiviert noch eine lückenlose Breaking-News-Erkennung versprochen.
+
+## Nachkontrolle der öffentlichen Darstellung
+
+Die Live-Kontrolle deckte im bestehenden Medien-Renderer eine Vermischung auf: Der Frame-Sprecher wurde mit dem Text der separat gespeicherten Akteursaussage kombiniert. Die Anzeige nutzt dafür jetzt ausschließlich den Sprecher der Akteursaussage; die Quelle des Frames bleibt daneben getrennt. Fehlt ein Sprecher, wird er nicht aus der Medienquelle geraten. Zuordnungs- und Relevanzcodes werden in deutsche öffentliche Bezeichnungen übersetzt. Zwei zusätzliche Regressionen prüfen diese Trennung und die sicheren Text-Fallbacks. Bestehende Artikeltexte und Analyseversionen bleiben bei dieser reinen Darstellungskorrektur unverändert.
+
+Ein durch die parallel veröffentlichte Methodik-Neugestaltung veralteter Oberflächentest wurde auf deren bestehenden Bus-Einstieg und sechs Prüfschritte ausgerichtet. Die Methodik-Inhalte wurden dafür nicht verändert; Wirkungspotenzial, Wirkungsrisiko, Schutzprinzipien und Rückkopplung bleiben ausdrücklich geprüft.
+
+## Korrektur nach n-tv-Hinweis
+
+Der vom Nutzer ergänzte n-tv-Artikel vom 5. September, 03:20 Uhr, nennt ntv.de, ino/AFP und beruft sich auf dasselbe BILD-Interview. Die Agenturherkunft wird als AFP gespeichert, der konkrete Interviewursprung bleibt BILD. Bei der Nachprüfung wurde ein späterer n-tv-Videobeitrag vom 5. September, 18:24 Uhr, gefunden, dessen Überschrift Siegmund Regierungsbereitschaft auch bei einer Stimme Mehrheit zuschreibt. Dieser spätere Beitrag war in der Erstfassung übersehen worden. Deshalb bleibt die offene Antwort nicht mehr der alleinige aktuelle Stand: Titel, Zusammenfassung, Belegliste und Mediencheck werden versioniert korrigiert. Die alte URL bleibt erhalten; ein sichtbarer Korrekturhinweis benennt die Lücke der Erstfassung. Geprüft sind Überschrift und Datum, kein vollständig angehörter Originalton. Die neuere Aussage bleibt n-tv zugeschrieben.
+
+Die lokale Erkennung berücksichtigt nun auch spätere Bereitschaftserklärungen bei knapper Mehrheit. Die vorhandene Analyseanweisung verlangt ausdrücklich zeitliche Einordnung neuerer Klarstellungen. Beides ist partei- und publisherunabhängig; fehlende Discovery wird damit nicht als vollständig gelöst behauptet. Regressionen sichern die Priorisierung, den identischen Ereignisschlüssel, die stabile URL, frühere Versionen und einen idempotenten Korrekturhinweis.
+
+n-tv ist als fallbezogene Quelle C im bestehenden Register ergänzt. Politik- und Wirtschafts-RSS sind im offiziellen Verzeichnis verlinkt und antworten bei der technischen HEAD-Prüfung mit HTTP 200 / text/xml. Robots wurde gelesen; eine RSL-Verknüpfung steht dort nicht. Die offizielle RSS-Einladung wird nicht zur pauschalen Freigabe jeder automatischen öffentlichen KI-Verarbeitung erklärt. Rechtlicher Nutzungsumfang bleibt offen, automatische Überwachung und Artikelabruf bleiben aus. Es wurden weder ein Abo abgeschlossen noch Tracking-Einwilligungen erteilt, fremde Videos/Bilder kopiert oder neue kostenpflichtige Analysen gestartet.
+
+Quellen: https://www.n-tv.de/politik/Siegmund-will-auch-bei-absoluter-Mehrheit-nicht-unbedingt-Ministerpraesident-werden-id31272045.html ; https://www.n-tv.de/mediathek/videos/politik/Siegmund-Regieren-natuerlich-auch-mit-einer-Stimme-mehr-id31273399.html ; https://www.n-tv.de/incoming/RSS-Feeds-von-n-tv-de-article10735026.html ; https://www.n-tv.de/robots.txt ; https://www.n-tv.de/ntvintern/Impressum-id6405904.html
+
+Prüfstand der Korrektur: 345 Ticker-Tests bestanden, einschließlich des begrenzten Eingabepakets mit 17 Quellen. Die neue Promptregel wurde dafür kompakt gehalten; kein Eingabelimit erhöht. 89 veröffentlichte aktuelle Storys mit 176 Quellen bestanden den strikten Integritätsaudit, ebenso Registry-/Portfolio- und Build-Prüfung. Nur der betroffene Story-Datensatz wurde geändert; die übrigen 421 gespeicherten Datensätze bleiben objektgleich. Erneuter redaktioneller Import ist unverändert und schreibt keine dritte Version. Lokaler Browsercheck: stabile Canonical-URL, Version 2, sichtbarer Korrekturhinweis, korrekte Sprechertrennung, n-tv-Profil ohne automatische Überwachung; bei 390 Pixel Breite kein horizontaler Überlauf und weiße lesbare Überschrift.
+
+## Weiterer Quellenhinweis: Artikelzeit ist nicht Aussagezeit
+
+Der Nutzer ergänzte anschließend die konkrete zweite BILD-URL mit der ID `6a9b18eb3f723da3e680c586`. Sie war zuvor nicht erfasst. Die öffentliche Browseransicht und NewsArticle-Metadaten weisen Veröffentlichung und Aktualisierung am 5. September, 22:26 Uhr aus. Die im Artikel referierte eigene Antwort Siegmunds wird dagegen ausdrücklich auf Freitag datiert. Der Text enthält zusätzlich nicht unabhängig bestätigte Angaben aus dem Parteiumfeld. Das neuere Artikeldatum allein belegt keinen erneuten Kurswechsel nach dem ntv-Beitrag.
+
+Ebenso wird die vorige Einordnung präzisiert: Der frühere ntv/AFP-Artikel zitiert BILD; beim ntv-Video sind Originalton, Aufnahmezeitpunkt und Herkunft weiterhin nicht abschließend geprüft. Sein späteres Veröffentlichungsdatum beweist deshalb keine unabhängig überprüfte neuere Aussage. Die dritte Fassung erhält einen neutralen Titel über unterschiedliche Berichte, zeigt beide Artikelzeiten und die verbleibende Evidenzgrenze. Alte Versionen und ihre Korrekturhinweise werden nicht rückwirkend umgeschrieben.
+
+Dauerhafte Promptregel: Artikelzeit und Aussagezeit unterscheiden; später veröffentlichte ältere Zitate lösen Widersprüche nicht allein durch ihre Datierung auf. Auch diese Ergänzung bleibt innerhalb des bestehenden Eingabelimits. 346 Ticker-Tests bestehen, einschließlich einer zusätzlichen Regression zu dieser Regel und einer Prüfung, dass der ntv-Videobeitrag keine nachgewiesene Unabhängigkeit erhält.
+
+Bei der Betriebsprüfung um 01:05 Uhr waren zwei Nachrichtenläufe am veralteten Methodik-Oberflächentest gescheitert. Die Anpassung an die parallel neu gestaltete Methodikseite ist im geprüften Release enthalten, ohne die fachlichen Schutzprüfungen zu entfernen. Letzter vollständiger Lauf vor der Korrektur: 00:23 Uhr, 33 erfolgreiche Quellenabrufe, 18 Queue-Einträge (16 Sparstufe, 2 technische Qualitätswiederholungen). Sechs Vertiefungskandidaten warteten auf Quellen; zwei Symbolbilder meldeten erschöpfte Wiederholungen mit weiter sichtbaren Ersatzkarten. Das war kein vollständig abgearbeitetes Backlog und kein uneingeschränkt grüner Betriebsstand.
+
+## Wiederanlauf und konkurrierende Publikationen
+
+Der Lauf 33998393587 bestand Import und Prüfungen, brach aber beim Speichern wegen gleichzeitiger redaktioneller Änderungen an `data/news/stories.json` ab. Dadurch blieb der veröffentlichte Laufbericht alt; die 45-Minuten-Warnung war berechtigt. Ein normaler Wiederanlauf auf dem aktuellen Main-Stand (33998562628) wurde erfolgreich abgeschlossen.
+
+`publish-git.mjs` behandelt künftig rein disjunkte Story-Änderungen über einen strukturellen Drei-Wege-Vergleich anhand der `story_id`. Es werden nur vollständige Datensätze übernommen, keine Quellenlisten, Claims oder Texte feldweise vermischt. Beidseitig unterschiedliche Änderungen an derselben Akte, Löschung gegen Korrektur, doppelte IDs oder widersprüchliche Schemas bleiben harte Konflikte. Ein neuerer Zeitstempel ist kein Auswahlkriterium für den Inhalt. Generierte Ansichten und Berichte werden danach neu gebaut und alle vorhandenen Ticker-/Quellengates erneut geprüft. Kein Force-Push und keine erneute KI-Analyse für die Zusammenführung. Vier zusätzliche Regressionen einschließlich eines echten konkurrierenden Git-Publishs sichern diese Fälle; insgesamt 350 Ticker-Tests bestanden.

@@ -141,6 +141,8 @@ function sourcePublicRecord(item) {
     requires_corroboration: item.requires_corroboration,
     source_published_at: item.source_published_at || item.published_at,
     ingested_at: item.ingested_at,
+    agency_origin: item.agency_origin,
+    agency_origin_confidence: item.agency_origin_confidence,
     provenance: item.provenance,
     research_metadata: item.research_metadata,
     collection_source_id: item.collection_source_id,
