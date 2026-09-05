@@ -1,7 +1,88 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-04T23:17:59.151Z",
+  "updated_at": "2026-09-05T03:06:25.161Z",
   "stories": [
+    {
+      "story_id": "wt-f7d7115a53ff2c2f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f7d7115a53ff2c2f-1f99eadcac2178e4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f7d7115a53ff2c2f-6a2182179b8071cc-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f7d7115a53ff2c2f-abd30cef622acbbe-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
+      "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
+      "source_summary": "Der Tagesspiegel berichtet unter der Überschrift, dass jedes fünfte Unternehmen hybride Bedrohung spürt. Genannt werden Cyberangriffe, Desinformation, Spionage und Sabotage als Felder, in denen Wirtschaftsforscher wachsende Risiken sehen.\n\nDer Text nennt als Beispiele mögliche Folgen für die Versorgung mit Strom und Wasser. Außerdem heißt es, dass es beim Thema Schutzmaßnahmen deutliche Hinweise gebe. Weitere Details zu Methodik, Zeitraum oder betroffenen Branchen sind in dem vorliegenden Auszug nicht enthalten.",
+      "summary": "Wirtschaftsforscher sehen laut Bericht wachsende hybride Risiken für Unternehmen. Genannt werden unter anderem mögliche Auswirkungen auf Strom- und Wasserversorgung.",
+      "detail_summary": "Der gesicherte Kern ist ein Bericht über wachsende hybride Bedrohungen für Unternehmen, genannt werden Cyberangriffe, Desinformation, Spionage und Sabotage. Als betroffene Infrastruktur werden Strom und Wasser ausdrücklich erwähnt. Das ist materiell relevant, weil solche Risiken nicht nur einzelne Firmen, sondern potenziell Versorgungsketten und damit Resilienz betreffen können. Der Wirkpfad liegt in Störungen, Schutzaufwand und möglichen Ausfällen, die Kosten, Abläufe und Sicherheitsstandards verändern können. Offen bleibt, auf welcher Datengrundlage die Aussage „jedes fünfte Unternehmen“ beruht und wie breit die Befunde tatsächlich reichen. Mangels Originalstudie und unabhängiger Zweitquelle bleibt die Einordnung vorläufig.",
+      "why_relevant": "Die Meldung betrifft potenzielle Störungen kritischer Infrastruktur und damit Zustände, die für Wirtschaft und Versorgungssysteme relevant sind.",
+      "topic": [
+        "Klima",
+        "Energie",
+        "Digitalisierung",
+        "Wirtschaft",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen für Betriebe, Arbeitsabläufe und Versorgungssicherheit werden angesprochen, aber im Auszug nicht quantifiziert."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird nicht belegt; nur indirekte Folgen über Infrastrukturstörungen sind möglich."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Desinformation und Sabotage berühren Informationsintegrität und Schutz der öffentlichen Infrastruktur, konkrete demokratische Effekte bleiben offen."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-05T03:02:35.000Z",
+      "last_updated": "2026-09-05T03:07:38.569Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-f4d2465f230d13357c75",
+      "case_file": null,
+      "source_published_at": "2026-09-05T03:02:35.000Z",
+      "published_at": "2026-09-05T03:07:38.569Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T03:02:35.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-f2edeab46d126d83",
       "title_image": {

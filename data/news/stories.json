@@ -1,7 +1,664 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T02:51:31.860Z",
+  "updated_at": "2026-09-05T03:06:25.161Z",
   "stories": [
+    {
+      "story_id": "wt-f7d7115a53ff2c2f",
+      "slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
+      "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
+      "first_seen": "2026-09-05T03:02:35.000Z",
+      "last_updated": "2026-09-05T03:07:38.569Z",
+      "published_at": "2026-09-05T03:07:38.569Z",
+      "updated_at": "2026-09-05T03:07:38.569Z",
+      "topic": [
+        "Klima",
+        "Energie",
+        "Digitalisierung",
+        "Wirtschaft",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+          "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
+          "summary": "Cyberangriffe, Desinformation, Spionage und Sabotage – Wirtschaftsforscher sehen wachsende Risiken, etwa für die Versorgung mit Strom und Wasser. Beim Thema Schutzmaßnahmen werden sie deutlich.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T03:02:35.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "36d57ed97cfbfd2f5784346f718db37d3985c61c7ad1234da43d2d09c4d850bb",
+          "source_item_id": "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T03:02:35.000Z",
+          "ingested_at": "2026-09-05T03:06:25.161Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f7d7115a53ff2c2f-v1-claim-1",
+          "story_id": "wt-f7d7115a53ff2c2f",
+          "claim": "Jedes fünfte Unternehmen spürt hybride Bedrohung.",
+          "status": "single_source_claim",
+          "source_id": "tagesspiegel-home",
+          "evidence": [
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+              "excerpt_hash": "92ae06214abd7a6db0fd",
+              "checked_at": "2026-09-05T03:07:38.569Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T03:07:38.569Z"
+        },
+        {
+          "claim_id": "wt-f7d7115a53ff2c2f-v1-claim-2",
+          "story_id": "wt-f7d7115a53ff2c2f",
+          "claim": "Wirtschaftsforscher sehen wachsende Risiken etwa für die Versorgung mit Strom und Wasser.",
+          "status": "single_source_claim",
+          "source_id": "tagesspiegel-home",
+          "evidence": [
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+              "excerpt_hash": "55c254ba3230ba6b3113",
+              "checked_at": "2026-09-05T03:07:38.569Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T03:07:38.569Z"
+        }
+      ],
+      "event_id": "event-f4d2465f230d13357c75",
+      "event_first_seen_at": "2026-09-05T03:06:25.161Z",
+      "event_detected_at": "2026-09-05T03:06:25.161Z",
+      "verification_started_at": "2026-09-05T03:07:26.397Z",
+      "publish_ready_at": "2026-09-05T03:07:38.569Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "content_hash": "96d626281e084eeab439c9062daaca4466f8f18f782509ef1b7420f4787a0d33",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Der Tagesspiegel berichtet unter der Überschrift, dass jedes fünfte Unternehmen hybride Bedrohung spürt. Genannt werden Cyberangriffe, Desinformation, Spionage und Sabotage als Felder, in denen Wirtschaftsforscher wachsende Risiken sehen.\n\nDer Text nennt als Beispiele mögliche Folgen für die Versorgung mit Strom und Wasser. Außerdem heißt es, dass es beim Thema Schutzmaßnahmen deutliche Hinweise gebe. Weitere Details zu Methodik, Zeitraum oder betroffenen Branchen sind in dem vorliegenden Auszug nicht enthalten.",
+      "analysis": {
+        "story_id": "wt-f7d7115a53ff2c2f",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Wirtschaftsforscher sehen laut Bericht wachsende hybride Risiken für Unternehmen. Genannt werden unter anderem mögliche Auswirkungen auf Strom- und Wasserversorgung.",
+        "detail_summary": "Der gesicherte Kern ist ein Bericht über wachsende hybride Bedrohungen für Unternehmen, genannt werden Cyberangriffe, Desinformation, Spionage und Sabotage. Als betroffene Infrastruktur werden Strom und Wasser ausdrücklich erwähnt. Das ist materiell relevant, weil solche Risiken nicht nur einzelne Firmen, sondern potenziell Versorgungsketten und damit Resilienz betreffen können. Der Wirkpfad liegt in Störungen, Schutzaufwand und möglichen Ausfällen, die Kosten, Abläufe und Sicherheitsstandards verändern können. Offen bleibt, auf welcher Datengrundlage die Aussage „jedes fünfte Unternehmen“ beruht und wie breit die Befunde tatsächlich reichen. Mangels Originalstudie und unabhängiger Zweitquelle bleibt die Einordnung vorläufig.",
+        "why_relevant": "Die Meldung betrifft potenzielle Störungen kritischer Infrastruktur und damit Zustände, die für Wirtschaft und Versorgungssysteme relevant sind.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen für Betriebe, Arbeitsabläufe und Versorgungssicherheit werden angesprochen, aber im Auszug nicht quantifiziert."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird nicht belegt; nur indirekte Folgen über Infrastrukturstörungen sind möglich."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Desinformation und Sabotage berühren Informationsintegrität und Schutz der öffentlichen Infrastruktur, konkrete demokratische Effekte bleiben offen."
+        },
+        "importance": "mittel",
+        "impact_potential": "Mögliche Wirkungspfad sind höhere Schutzkosten, Anpassungen von Sicherheitsmaßnahmen und Störungen bei kritischer Versorgung. Sollte sich die Lage verbreitern, kann das die Resilienz von Unternehmen und Infrastruktur spürbar beeinflussen.",
+        "impact_risks": [
+          "Mehr Aufwand für IT- und physische Sicherung",
+          "Störungen bei Strom- oder Wasserversorgung",
+          "Verbreitung von Desinformation und Vertrauensverlust"
+        ],
+        "mechanisms": [
+          "Bedrohungen erhöhen den Schutzbedarf",
+          "Sabotage kann Versorgungsketten unterbrechen",
+          "Desinformation kann Reaktionsfähigkeit schwächen"
+        ],
+        "first_order": [
+          "Mehr Prüf- und Sicherungsaufwand in Unternehmen"
+        ],
+        "second_order": [
+          "Mögliche Anpassungen von Schutz- und Resilienzkonzepten"
+        ],
+        "third_order": [
+          "Bei breiterem Auftreten potenziell stärkere Standardisierung von Sicherheitsanforderungen"
+        ],
+        "systemic_relevance": "Der Bericht verweist auf Risiken für kritische Versorgung und damit auf mögliche Kaskaden über einzelne Unternehmen hinaus.",
+        "transformation_potential": "Falls sich die beschriebenen Risiken bestätigen, kann das zu dauerhaften Änderungen bei Sicherheitsarchitektur, Meldewegen und Investitionen führen.",
+        "resilience": "Resilienz ist berührt, weil Strom- und Wasserversorgung als verletzliche Knoten genannt werden; ob konkrete Schwächen vorliegen, bleibt offen.",
+        "side_effects": [
+          "Steigende Betriebskosten für Schutzmaßnahmen",
+          "Mögliche Verlagerung von Investitionen in Sicherheit statt Expansion"
+        ],
+        "uncertainties": [
+          "Unklar bleibt die Datengrundlage für die genannte Fünftel-Angabe",
+          "Es fehlt unabhängige Bestätigung der zentralen Zahlen",
+          "Der konkrete Umfang der Risiken wird im Auszug nicht belegt"
+        ],
+        "evidence_level": "attributed_single_source",
+        "attribution": "Berichtete Aussage eines journalistischen Beitrags; im vorliegenden Material keine unabhängige Bestätigung und keine Originalstudie enthalten.",
+        "watch_next": [
+          "Originalstudie oder belastbare Datengrundlage zur Fünftel-Angabe",
+          "Weitere Berichte mit unabhängigen Quellen zur Lage bei Strom und Wasser"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 9, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung bringt eine neue, materiell relevante Warnung zu hybriden Risiken und möglicher Betroffenheit kritischer Infrastruktur."
+        },
+        "publication_recommendation": true,
+        "visuals": null
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T03:07:38.569Z",
+          "content_hash": "96d626281e084eeab439c9062daaca4466f8f18f782509ef1b7420f4787a0d33",
+          "source_summary": "Der Tagesspiegel berichtet unter der Überschrift, dass jedes fünfte Unternehmen hybride Bedrohung spürt. Genannt werden Cyberangriffe, Desinformation, Spionage und Sabotage als Felder, in denen Wirtschaftsforscher wachsende Risiken sehen.\n\nDer Text nennt als Beispiele mögliche Folgen für die Versorgung mit Strom und Wasser. Außerdem heißt es, dass es beim Thema Schutzmaßnahmen deutliche Hinweise gebe. Weitere Details zu Methodik, Zeitraum oder betroffenen Branchen sind in dem vorliegenden Auszug nicht enthalten.",
+          "analysis": {
+            "story_id": "wt-f7d7115a53ff2c2f",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Wirtschaftsforscher sehen laut Bericht wachsende hybride Risiken für Unternehmen. Genannt werden unter anderem mögliche Auswirkungen auf Strom- und Wasserversorgung.",
+            "detail_summary": "Der gesicherte Kern ist ein Bericht über wachsende hybride Bedrohungen für Unternehmen, genannt werden Cyberangriffe, Desinformation, Spionage und Sabotage. Als betroffene Infrastruktur werden Strom und Wasser ausdrücklich erwähnt. Das ist materiell relevant, weil solche Risiken nicht nur einzelne Firmen, sondern potenziell Versorgungsketten und damit Resilienz betreffen können. Der Wirkpfad liegt in Störungen, Schutzaufwand und möglichen Ausfällen, die Kosten, Abläufe und Sicherheitsstandards verändern können. Offen bleibt, auf welcher Datengrundlage die Aussage „jedes fünfte Unternehmen“ beruht und wie breit die Befunde tatsächlich reichen. Mangels Originalstudie und unabhängiger Zweitquelle bleibt die Einordnung vorläufig.",
+            "why_relevant": "Die Meldung betrifft potenzielle Störungen kritischer Infrastruktur und damit Zustände, die für Wirtschaft und Versorgungssysteme relevant sind.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Mögliche Folgen für Betriebe, Arbeitsabläufe und Versorgungssicherheit werden angesprochen, aber im Auszug nicht quantifiziert."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Umweltbezug wird nicht belegt; nur indirekte Folgen über Infrastrukturstörungen sind möglich."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Desinformation und Sabotage berühren Informationsintegrität und Schutz der öffentlichen Infrastruktur, konkrete demokratische Effekte bleiben offen."
+            },
+            "importance": "mittel",
+            "impact_potential": "Mögliche Wirkungspfad sind höhere Schutzkosten, Anpassungen von Sicherheitsmaßnahmen und Störungen bei kritischer Versorgung. Sollte sich die Lage verbreitern, kann das die Resilienz von Unternehmen und Infrastruktur spürbar beeinflussen.",
+            "impact_risks": [
+              "Mehr Aufwand für IT- und physische Sicherung",
+              "Störungen bei Strom- oder Wasserversorgung",
+              "Verbreitung von Desinformation und Vertrauensverlust"
+            ],
+            "mechanisms": [
+              "Bedrohungen erhöhen den Schutzbedarf",
+              "Sabotage kann Versorgungsketten unterbrechen",
+              "Desinformation kann Reaktionsfähigkeit schwächen"
+            ],
+            "first_order": [
+              "Mehr Prüf- und Sicherungsaufwand in Unternehmen"
+            ],
+            "second_order": [
+              "Mögliche Anpassungen von Schutz- und Resilienzkonzepten"
+            ],
+            "third_order": [
+              "Bei breiterem Auftreten potenziell stärkere Standardisierung von Sicherheitsanforderungen"
+            ],
+            "systemic_relevance": "Der Bericht verweist auf Risiken für kritische Versorgung und damit auf mögliche Kaskaden über einzelne Unternehmen hinaus.",
+            "transformation_potential": "Falls sich die beschriebenen Risiken bestätigen, kann das zu dauerhaften Änderungen bei Sicherheitsarchitektur, Meldewegen und Investitionen führen.",
+            "resilience": "Resilienz ist berührt, weil Strom- und Wasserversorgung als verletzliche Knoten genannt werden; ob konkrete Schwächen vorliegen, bleibt offen.",
+            "side_effects": [
+              "Steigende Betriebskosten für Schutzmaßnahmen",
+              "Mögliche Verlagerung von Investitionen in Sicherheit statt Expansion"
+            ],
+            "uncertainties": [
+              "Unklar bleibt die Datengrundlage für die genannte Fünftel-Angabe",
+              "Es fehlt unabhängige Bestätigung der zentralen Zahlen",
+              "Der konkrete Umfang der Risiken wird im Auszug nicht belegt"
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Berichtete Aussage eines journalistischen Beitrags; im vorliegenden Material keine unabhängige Bestätigung und keine Originalstudie enthalten.",
+            "watch_next": [
+              "Originalstudie oder belastbare Datengrundlage zur Fünftel-Angabe",
+              "Weitere Berichte mit unabhängigen Quellen zur Lage bei Strom und Wasser"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 9, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung bringt eine neue, materiell relevante Warnung zu hybriden Risiken und möglicher Betroffenheit kritischer Infrastruktur."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-f7d7115a53ff2c2f-v1-claim-1",
+              "story_id": "wt-f7d7115a53ff2c2f",
+              "claim": "Jedes fünfte Unternehmen spürt hybride Bedrohung.",
+              "status": "single_source_claim",
+              "source_id": "tagesspiegel-home",
+              "evidence": [
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+                  "excerpt_hash": "92ae06214abd7a6db0fd",
+                  "checked_at": "2026-09-05T03:07:38.569Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T03:07:38.569Z"
+            },
+            {
+              "claim_id": "wt-f7d7115a53ff2c2f-v1-claim-2",
+              "story_id": "wt-f7d7115a53ff2c2f",
+              "claim": "Wirtschaftsforscher sehen wachsende Risiken etwa für die Versorgung mit Strom und Wasser.",
+              "status": "single_source_claim",
+              "source_id": "tagesspiegel-home",
+              "evidence": [
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+                  "excerpt_hash": "55c254ba3230ba6b3113",
+                  "checked_at": "2026-09-05T03:07:38.569Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T03:07:38.569Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+              "content_hash": "36d57ed97cfbfd2f5784346f718db37d3985c61c7ad1234da43d2d09c4d850bb"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-05T03:07:38.569Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f7d7115a53ff2c2f-1f99eadcac2178e4-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "1f99eadcac2178e4511c346bd4da731abd6fdb4df32a666ca950c459e9ed6090"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f7d7115a53ff2c2f-6a2182179b8071cc-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "6a2182179b8071cc0055a215928df7cd95606dc3ca31de5615c1c8a08f069c3a"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f7d7115a53ff2c2f-abd30cef622acbbe-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "abd30cef622acbbe95a56fabc5a3bac694e09759cef8416e773f4c6516ecc14a"
+        },
+        "source_visual": null,
+        "fingerprint": "f49200f31fd20b36de7426d02a8084bb27b60e7b2ee0081e99d473d0f5b9416d",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-05T03:07:56.076Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-eb6e7bfa7e906259",
+      "slug": "folgen-des-hackerangriffs-bsi-warnt-nach-daten-leak-vor-erhohter-cyber-bedrohung-906259",
+      "title": "Folgen des Hackerangriffs: BSI warnt nach Daten-Leak vor erhöhter Cyber-Bedrohung",
+      "first_seen": "2026-09-05T03:00:12.000Z",
+      "last_updated": "2026-09-05T03:03:16.000Z",
+      "topic": [
+        "Digitalisierung",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/folgen-des-hackerangriffs--bsi-warnt-nach-daten-leak-vor-erhoehter-cyber-bedrohung-38210530.html",
+          "title": "Folgen des Hackerangriffs: BSI warnt nach Daten-Leak vor erhöhter Cyber-Bedrohung",
+          "summary": "Nach dem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen und rät Betroffenen, besonders wachsam zu sein. Auch mit Blick auf die anstehenden Wahlen gibt es Befürchtungen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T03:00:12.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "3d3ca27c9c41c6fa5e80e9ac9be181223658206b194f135fb686d5d641e87128",
+          "source_item_id": "bf1dba9da44afe077803000ed5570d67cb76d1834b735c6fec31d8883f3a4288",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T03:00:12.000Z",
+          "ingested_at": "2026-09-05T03:06:25.161Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-folgen-des-hackerangriffs-16020663.html",
+          "title": "Folgen des Hackerangriffs: BSI warnt nach Daten-Leak vor erhöhter Cyber-Bedrohung",
+          "summary": "Nach dem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen und rät Betroffenen, besonders wachsam zu sein. Auch mit Blick auf die anstehenden Wahlen gibt es Befürchtungen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T03:03:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "c0511a81ecbc91b26ce1c2d5dafc9bf87ff0a488a87dc1bcbe220186359539b8",
+          "source_item_id": "7cd3b06f9d306195042e03256212712f10b7ab76379c09c1ea49d9603f4b9809",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T03:03:16.000Z",
+          "ingested_at": "2026-09-05T03:06:25.161Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-eb6e7bfa7e906259-claim-01",
+          "story_id": "wt-eb6e7bfa7e906259",
+          "claim": "Folgen des Hackerangriffs: BSI warnt nach Daten-Leak vor erhöhter Cyber-Bedrohung: Nach dem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen und rät Betroffenen, besonders wachsam zu sein. Auch mit Blick auf die anstehenden Wahlen gibt es Befürchtungen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T03:06:25.161Z"
+        },
+        {
+          "claim_id": "wt-eb6e7bfa7e906259-claim-02",
+          "story_id": "wt-eb6e7bfa7e906259",
+          "claim": "Folgen des Hackerangriffs: BSI warnt nach Daten-Leak vor erhöhter Cyber-Bedrohung: Nach dem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen und rät Betroffenen, besonders wachsam zu sein. Auch mit Blick auf die anstehenden Wahlen gibt es Befürchtungen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T03:06:25.161Z"
+        }
+      ],
+      "content_hash": "ddc229efb5015f5ca1bfd34ec9662ab2385192aee2c1f30fc536fcabfb0ff68d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T03:06:25.161Z",
+      "event_first_seen_at": "2026-09-05T03:06:25.161Z",
+      "event_detected_at": "2026-09-05T03:06:25.161Z",
+      "event_id": "event-aaf5027a1c1ce5bf0c81",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Digitalisierung",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.1526833333333335,
+        "detection_delay_minutes": 3.1526833333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T03:06:25.161Z",
+      "rejection": {
+        "at": "2026-09-05T03:06:25.161Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-e3a108227d917c97",
+      "slug": "bald-gleiche-chancen-fur-alle-kinder-die-kita-plane-von-bildungsministerin-prien-917c97",
+      "title": "Bald gleiche Chancen für alle Kinder? Die Kita-Pläne von Bildungsministerin Prien",
+      "first_seen": "2026-09-05T03:00:00.000Z",
+      "last_updated": "2026-09-05T03:00:00.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/gesetz-prien-sprachtest-kinder-4-jahre-kein-personal,kita-568.html",
+          "title": "Bald gleiche Chancen für alle Kinder? Die Kita-Pläne von Bildungsministerin Prien",
+          "summary": "Das neue Kita-Gesetz soll gleiche Bildungschancen für alle Kinder schaffen. Doch der Personalmangel bleibt ungelöst. Haben die Pläne von Bildungsministerin Prien damit überhaupt Zukunft?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T03:00:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "096fe5828443caf6445643ff01841b3830af19ff6a61516a4c0dc82105e5b3e5",
+          "source_item_id": "58685ec23bf36ad04beec6d49bdb7ddc4556562a0846586b300d45c5430a2d8d",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T03:00:00.000Z",
+          "ingested_at": "2026-09-05T03:06:25.161Z",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e3a108227d917c97-claim-01",
+          "story_id": "wt-e3a108227d917c97",
+          "claim": "Bald gleiche Chancen für alle Kinder? Die Kita-Pläne von Bildungsministerin Prien: Das neue Kita-Gesetz soll gleiche Bildungschancen für alle Kinder schaffen. Doch der Personalmangel bleibt ungelöst. Haben die Pläne von Bildungsministerin Prien damit überhaupt Zukunft?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T03:06:25.161Z"
+        }
+      ],
+      "content_hash": "f32bfcb4622bbcfa9e250521c3343d71399fdbdec5bfd59c327dfb8e89c29a3f",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T03:06:25.161Z",
+      "event_first_seen_at": "2026-09-05T03:06:25.161Z",
+      "event_detected_at": "2026-09-05T03:06:25.161Z",
+      "event_id": "event-982e270ef66b5c060e1e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.41935,
+        "detection_delay_minutes": 6.41935,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T03:06:25.161Z",
+      "rejection": {
+        "at": "2026-09-05T03:06:25.161Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-1ef3a88ea9148916",
       "slug": "landwirtschaft-karpfensaison-in-bayern-eroffnet-148916",
@@ -9948,7 +10605,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-05T02:36:38.507Z",
+          "ingested_at": "2026-09-05T03:06:25.161Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -9975,7 +10632,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T02:36:38.507Z"
+          "checked_at": "2026-09-05T03:06:25.161Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -9983,11 +10640,11 @@
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
+        "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-05T02:36:38.507Z",
+      "updated_at": "2026-09-05T03:06:25.161Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -10017,25 +10674,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 411.62511666666666,
+        "source_age_minutes": 441.40268333333336,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 465.19173333333333,
+        "queue_age_minutes": 494.9693,
         "target_publication_minutes": 120,
-        "news_freshness_score": 14,
+        "news_freshness_score": 8,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T02:36:38.507Z",
+      "rejected_at": "2026-09-05T03:06:25.161Z",
       "rejection": {
-        "at": "2026-09-05T02:36:38.507Z",
+        "at": "2026-09-05T03:06:25.161Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -94077,5 +94734,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-04T23:17:59.151Z"
+  "public_updated_at": "2026-09-05T03:06:25.161Z"
 }
