@@ -32,8 +32,9 @@ export function renderDemoGovernanceBlock(root, fromFile, demo) {
         <div class="section-header">
           <p class="hero-kicker">Demo-Methodik</p>
           <h2 id="stage8-demo-${escapeHtml(demo.slug)}-title">Was diese Demo zeigt und was nicht</h2>
-          <p>Dieser Standardblock gilt für Demos, Rechner, Scanner und interaktive Tools. Er trennt modellhafte Darstellung von amtlicher Bewertung, Beratung oder automatisierter Entscheidung.</p>
+          <p>Du arbeitest mit einem vereinfachten Modell und Beispielannahmen. Die Ergebnisse helfen beim Verstehen; eine reale Prüfung braucht belegte Daten und eine verantwortliche Entscheidung.</p>
         </div>
+        <details class="explanation-details"><summary>Modellannahmen, Schutzlinien und Vertiefungen</summary>
         <aside class="protection-notice" role="note" aria-label="Schutzlinien dieser Demo">
           <p class="card-kicker">Schutzlinien</p>
           <h3 class="card-title">Nicht amtlich. Keine Beratung. Keine Personenbewertung.</h3>
@@ -88,6 +89,7 @@ export function renderDemoGovernanceBlock(root, fromFile, demo) {
             <div class="demo-governance-links">${linkList(root, fromFile, demo.next)}</div>
           </article>
         </div>
+        </details>
       </section>
 ${demoGovernanceMarkerEnd}`;
 }

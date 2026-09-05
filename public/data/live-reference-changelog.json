@@ -1,6 +1,6 @@
 {
   "version": "2026.2-live-reference",
-  "generatedAt": "2026-08-02T19:46:31.594Z",
+  "generatedAt": "2026-09-05T21:47:26.237Z",
   "changes": [
     {
       "changeId": "lr-2026-2-0001",
@@ -14,7 +14,7 @@
       "affectedRoute": "/referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/",
       "affectedSectionId": "woek-main-2026-k006-lr-2026-2",
       "previousText": "",
-      "newText": "Nachhaltigkeit wird in der lebenden Referenz nicht als Zusatzlabel, ESG-Ersatz oder Berichtspflicht gelesen, sondern als Ergebnis gelingender Wirkungsrückkopplung. Maßgeblich bleibt positive Netto-Wirkung für Mensch, Planet und Demokratie; Nachhaltigkeit beschreibt die resiliente Systemfähigkeit, die daraus entstehen kann.",
+      "newText": "Nachhaltigkeit ist nach der führenden WÖk-Definition die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie. Diese Begriffsbestimmung gehört zum WÖk-Modell. Positive Netto-Wirkung, Systemresilienz und Wirkungsrückkopplung bleiben zu unterscheiden; eine einzelne positive Wirkung belegt noch keine langfristige Nachhaltigkeit.",
       "reason": "Delta-Review-Ergänzung für Cluster Systemarchitektur.",
       "sourceForChange": "Nachhaltigkeit-Systemarchitektur / führender Begriffsleitfaden",
       "affectedTerms": [
@@ -41,14 +41,14 @@
       "previousText": "",
       "newText": "Wirkung ist in der Wirkungsökonomie neutral und relational: die tatsächliche Veränderung von Zuständen. Wenn eine Zielgröße gemeint ist, lautet sie positive Netto-Wirkung für Mensch, Planet und Demokratie. Eine Absicht, ein Output, ein Bericht oder ein Image ist noch keine Wirkung.",
       "reason": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
-      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
       "affectedTerms": [
         "Wirkung",
         "positive Netto-Wirkung",
         "Wirkungspotenzial"
       ],
       "affectedDocuments": [
-        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+        "WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
       ]
     },
     {
@@ -65,7 +65,7 @@
       "previousText": "",
       "newText": "Wirkungspotenzial bezeichnet die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung. Der Begriff Wirkstoff wird nur als didaktische Analogie verwendet: Ein gesellschaftlicher Wirkstoff kann etwas auslösen, muss aber über Wirkmechanismus, Wirkungspfad, Kontext, Dosis, Nebenwirkung und Wechselwirkung geprüft werden.",
       "reason": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
-      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
       "affectedTerms": [
         "Wirkungspotenzial",
         "Wirkstoff",
@@ -73,7 +73,7 @@
         "Wirkungspfad"
       ],
       "affectedDocuments": [
-        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+        "WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
       ]
     },
     {
@@ -90,14 +90,14 @@
       "previousText": "",
       "newText": "Wirkungslenkung und Wirkungsrückkopplung sind verschiedene Dinge. Wirkungslenkung legt Richtung, Ziele, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Wirkungsrückkopplung führt beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurück. Erst die Rückkopplung zeigt, ob die Lenkung beibehalten, verändert oder beendet werden muss.",
       "reason": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
-      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
       "affectedTerms": [
         "Wirkungsrückkopplung",
         "Wirkungslenkung",
         "Wirkungsrisiko"
       ],
       "affectedDocuments": [
-        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+        "WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
       ]
     },
     {
@@ -114,7 +114,7 @@
       "previousText": "",
       "newText": "Wirkungsraum, Resonanzraum, Wirkungsträger und Wirkungsempfänger werden getrennt geführt. Ein Wirkungsraum ist der Bereich, in dem Zustände verändert werden; ein Resonanzraum ist ein sozialer oder kultureller Raum, in dem Deutungen, Zugehörigkeit und Reaktionen entstehen können.",
       "reason": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
-      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
       "affectedTerms": [
         "Wirkungsträger",
         "Wirkungsempfänger",
@@ -122,7 +122,7 @@
         "Resonanzraum"
       ],
       "affectedDocuments": [
-        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+        "WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
       ]
     },
     {
@@ -139,7 +139,7 @@
       "previousText": "",
       "newText": "Wirkungsarchitektur meint nicht eine Website oder ein Diagramm, sondern das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Preisen, Steuern, Governance, Kontrolle, Lernen und Rückkopplung. Wirkungswahrheit meint Wirkungsnähe und Transparenz über Folgen, kein Wahrheitsmonopol.",
       "reason": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
-      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
       "affectedTerms": [
         "Wirkungsarchitektur",
         "Wirkungsgrenze",
@@ -147,7 +147,7 @@
         "Wirkungsnetz"
       ],
       "affectedDocuments": [
-        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+        "WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
       ]
     },
     {
@@ -189,13 +189,13 @@
       "previousText": "",
       "newText": "Wirkungslenkung beschreibt die bewusste Ausrichtung von Anreizen und Entscheidungen: Ziele, Schutzgrenzen, Prioritäten und Instrumente. Wirkungsrückkopplung ist der Lernmechanismus: Beobachtungen über tatsächliche Zustandsveränderungen, Datenqualität und Unsicherheit fließen in die nächste Entscheidung ein. Eine Preis-, Steuer- oder Förderregel kann ein Instrument der Lenkung sein; sie ist nicht mit der Rückkopplung selbst gleichzusetzen.",
       "reason": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
-      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
       "affectedTerms": [
         "Wirkungslenkung",
         "Wirkungsrückkopplung"
       ],
       "affectedDocuments": [
-        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+        "WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
       ]
     },
     {
@@ -212,14 +212,14 @@
       "previousText": "",
       "newText": "Wirkungsresilienz wird als positive, normativ gebundene Resilienz verstanden: Ein System bleibt unter Stress handlungsfähig, lernt und stärkt tragende Lebens-, Sozial- und Demokratiefunktionen. Robustheit allein reicht nicht; auch destruktive Systeme können robust sein.",
       "reason": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
-      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceForChange": "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
       "affectedTerms": [
         "Wirkungsrisiko",
         "Wirkungsresilienz",
         "Resilienz"
       ],
       "affectedDocuments": [
-        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+        "WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
       ]
     },
     {
@@ -236,14 +236,14 @@
       "previousText": "",
       "newText": "Die Messlogik der lebenden Referenz unterscheidet Berichtsdaten, Steuerungsdaten und Wirkungsdaten. Daten werden erst dann wirkungsökonomisch relevant, wenn sie auf Zustandsveränderungen, Datenqualität, Systemgrenzen und Rückkopplung bezogen werden.",
       "reason": "Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.",
-      "sourceForChange": "Technische Leitlinien WUStG / WÖk Master Items v1.2",
+      "sourceForChange": "Technische Leitlinien WUStG / WÖk-Masterregister v1.5",
       "affectedTerms": [
         "Wirkungsbewertung",
         "Datenqualität",
         "Wirkungsindikator"
       ],
       "affectedDocuments": [
-        "Technische Leitlinien WUStG / WÖk Master Items v1.2"
+        "Technische Leitlinien WUStG / WÖk-Masterregister v1.5"
       ]
     },
     {
@@ -258,16 +258,16 @@
       "affectedRoute": "/referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/",
       "affectedSectionId": "woek-main-2026-k031-lr-2026-2",
       "previousText": "",
-      "newText": "Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren – keine Menschen und keine persönliche Wertigkeit. Eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung.",
+      "newText": "Die WÖk-ID ist ein stabiler technischer und fachlicher Anker für einen Prüfgegenstand. Das Masterregister v1.5 unterscheidet MasterItems von operationalisierten Wirkindikatoren. Eine ID, eine SDG/SDG+-Zuordnung oder eine Regelzuweisung ist noch keine Messung und kein Wirkungsnachweis. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren - keine Menschen und keine persönliche Wertigkeit. Leere Eingaben bleiben unbewertet; eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung.",
       "reason": "Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.",
-      "sourceForChange": "WOeK_Master_Items_final_v1.2.xlsx",
+      "sourceForChange": "WOeK_Masterregister_v1.5_2026-08-21.xlsx",
       "affectedTerms": [
         "WÖk-ID",
         "Wirkungsindikator",
         "WÖk Master Items"
       ],
       "affectedDocuments": [
-        "WOeK_Master_Items_final_v1.2.xlsx"
+        "WOeK_Masterregister_v1.5_2026-08-21.xlsx"
       ]
     },
     {
@@ -282,9 +282,9 @@
       "affectedRoute": "/referenz/kapitel-032-benchmarks-skalen-und-scorecards/",
       "affectedSectionId": "woek-main-2026-k032-lr-2026-2",
       "previousText": "",
-      "newText": "Scorecards bleiben Bewertungsinstrumente, nicht die Wirkung selbst. Benchmarks, Archetypen und FinalScores müssen mit Datenqualität, Wirkungsgrenzen und Nichtkompensation verbunden werden.",
+      "newText": "Scorecards bleiben Bewertungsinstrumente, nicht die Wirkung selbst. Benchmarks, Regeln und FinalScores müssen mit Datenqualität, Wirkungsgrenzen, Assurance und Nichtkompensation verbunden werden. Nicht aktiv validierte Benchmarks werden nicht als aktive Bewertungsgrundlage ausgegeben.",
       "reason": "Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.",
-      "sourceForChange": "Technische Leitlinien WUStG / WÖk Master Items v1.2",
+      "sourceForChange": "Technische Leitlinien WUStG / WÖk-Masterregister v1.5",
       "affectedTerms": [
         "Scorecard",
         "Benchmark",
@@ -292,7 +292,7 @@
         "FinalScore"
       ],
       "affectedDocuments": [
-        "Technische Leitlinien WUStG / WÖk Master Items v1.2"
+        "Technische Leitlinien WUStG / WÖk-Masterregister v1.5"
       ]
     },
     {
@@ -356,7 +356,7 @@
       "affectedRoute": "/referenz/kapitel-037-das-wirkungssteuergesetz-wstg/",
       "affectedSectionId": "woek-main-2026-k037-lr-2026-2",
       "previousText": "",
-      "newText": "Das WStG wird als Rahmengesetz der wirkungsbasierten Steuerordnung geführt. Es ersetzt nicht jedes Einzelsteuergesetz, sondern setzt den gemeinsamen Maßstab, an den WUStG, WEstG und weitere Steuerlogiken anschließen.",
+      "newText": "Das WStG ist ein vorgeschlagenes Rahmengesetz im WÖk-Modell, kein geltendes Recht. Es ersetzt nicht jedes Einzelsteuergesetz, sondern setzt den gemeinsamen Maßstab, an den WUStG, WEstG und weitere Steuerlogiken anschließen.",
       "reason": "Delta-Review-Ergänzung für Cluster Steuerlogik.",
       "sourceForChange": "WStG_Oktober2025",
       "affectedTerms": [
@@ -380,7 +380,7 @@
       "affectedRoute": "/referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/",
       "affectedSectionId": "woek-main-2026-k038-lr-2026-2",
       "previousText": "",
-      "newText": "Das WUStG ist die Produkt- und Umsatzsteuerlogik der Wirkungsökonomie. Produkt-Scorecards können in Beispielrechnungen mit -3 bis +3 arbeiten, während rahmengesetzliche Wirkungswerte anders skaliert sein können; die Skalen sind als Anwendungsebenen zu unterscheiden.",
+      "newText": "Das WUStG ist ein Gesetzesmodell für die Produkt- und Umsatzsteuerlogik der Wirkungsökonomie, kein geltendes Recht. Produkt-Scorecards können in Beispielrechnungen mit -3 bis +3 arbeiten, während rahmengesetzliche Wirkungswerte anders skaliert sein können; die Skalen sind als Anwendungsebenen zu unterscheiden.",
       "reason": "Delta-Review-Ergänzung für Cluster Steuerlogik.",
       "sourceForChange": "Technische Leitlinien WUStG / WP_Produkte / Apfelbeispiel",
       "affectedTerms": [
@@ -477,16 +477,16 @@
       "affectedRoute": "/referenz/kapitel-050-produktscorecards/",
       "affectedSectionId": "woek-main-2026-k050-lr-2026-2",
       "previousText": "",
-      "newText": "Produktscorecards werden mit WÖk-IDs, Datenqualität, Benchmarks und Reverse Merit Order verbunden. Sie sind Beispiel- und Steuerungsinstrumente, keine endgültige Rechtsanwendung ohne geprüfte Datenbasis.",
+      "newText": "Produktscorecards werden mit WÖk-IDs, Datenqualität, Benchmarkstatus, Assurance und Reverse Merit Order verbunden. Sie sind Beispiel- und Steuerungsinstrumente, keine endgültige Rechtsanwendung und keine automatische Entscheidung ohne geprüfte Datenbasis.",
       "reason": "Delta-Review-Ergänzung für Cluster Produkt- und Lieferkettenlogik.",
-      "sourceForChange": "Technische Leitlinien WUStG / WÖk Master Items v1.2",
+      "sourceForChange": "Technische Leitlinien WUStG / WÖk-Masterregister v1.5",
       "affectedTerms": [
         "Scorecard",
         "Reverse Merit Order",
         "Datenqualität"
       ],
       "affectedDocuments": [
-        "Technische Leitlinien WUStG / WÖk Master Items v1.2"
+        "Technische Leitlinien WUStG / WÖk-Masterregister v1.5"
       ]
     },
     {
@@ -647,7 +647,7 @@
       "previousText": "",
       "newText": "Der digitale Produktpass wird als technische Brücke zwischen Produktdaten, WÖk-ID, Scorecards, Lieferkette und Rückkopplung verstanden. Er ersetzt keine Bewertung, sondern transportiert prüfbare Daten und Versionen.",
       "reason": "Delta-Review-Ergänzung für Cluster Produkt- und Lieferkettenlogik.",
-      "sourceForChange": "WP_Produkte / technische Leitlinien / WÖk Master Items v1.2",
+      "sourceForChange": "WP_Produkte / technische Leitlinien / WÖk-Masterregister v1.5",
       "affectedTerms": [
         "Digitaler Produktpass",
         "DPP",
@@ -655,7 +655,7 @@
         "NACE"
       ],
       "affectedDocuments": [
-        "WP_Produkte / technische Leitlinien / WÖk Master Items v1.2"
+        "WP_Produkte / technische Leitlinien / WÖk-Masterregister v1.5"
       ]
     },
     {

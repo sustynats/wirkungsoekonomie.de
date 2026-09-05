@@ -1,0 +1,114 @@
+{
+  "reviewedAt": "2026-09-05",
+  "releaseTag": "woek-reference-update-2026-09-05",
+  "sources": [
+    "content/site/methodik.json",
+    "content/site/methodik.inc",
+    "content/site/reference-update.json",
+    "content/site/impact-controlling.json",
+    "scripts/portal/build-impact-controlling.mjs",
+    "scripts/publications/build-site-review-pdfs.py"
+  ],
+  "files": [
+    {
+      "filename": "woek-methodik-integration-2026-09-05.pdf",
+      "title": "Methodik und Integration bestehender Ansätze",
+      "kind": "explainer",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/woek-methodik-integration-2026-09-05.pdf",
+      "sha256": "2f49dc3552665cb3c7a1ce41ba2d66074874a0f6d28005c46f8b1866281119b9",
+      "bytes": 61600,
+      "pages": 5
+    },
+    {
+      "filename": "woek-impact-controlling-erklaerung-2026-09-05.pdf",
+      "title": "Impact Controlling verständlich erklärt",
+      "kind": "explainer",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/woek-impact-controlling-erklaerung-2026-09-05.pdf",
+      "sha256": "8c7aa49eafdb039d25f2511026f612012835ab6562cce53e4155f880c18e1491",
+      "bytes": 56175,
+      "pages": 4
+    },
+    {
+      "filename": "woek-grundlagen-aktualisierung-2026-09-05.pdf",
+      "title": "Fachliche Aktualisierung zu Buch und Fachpapieren",
+      "kind": "addendum",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/woek-grundlagen-aktualisierung-2026-09-05.pdf",
+      "sha256": "2636d67637b778a60666011da5fb0d88e57a4e0940484fa57401b7efea939526",
+      "bytes": 52774,
+      "pages": 3
+    },
+    {
+      "filename": "die-neue-ordnung-des-wohlstands-lesefassung-2026-09-05.pdf",
+      "title": "Die neue Ordnung des Wohlstands: ergänzte Lesefassung",
+      "kind": "reading-edition",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/die-neue-ordnung-des-wohlstands-lesefassung-2026-09-05.pdf",
+      "sha256": "38e9f15af90734580d354bb7a83998a148feed045b10e9101bc4d39e7fd02b48",
+      "bytes": 30605365,
+      "pages": 1253,
+      "source": "assets/pdf/die-neue-ordnung-des-wohlstands.pdf",
+      "sourceSha256": "4e04ea740de878099f8375a033c09aa39645f4715c710251cb3d6f41e9b2ba10",
+      "originalPages": 1250,
+      "updatePages": 3
+    },
+    {
+      "filename": "woemm-2-0-lesefassung-2026-09-05.pdf",
+      "title": "WÖMM 2.0: ergänzte Lesefassung",
+      "kind": "reading-edition",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/woemm-2-0-lesefassung-2026-09-05.pdf",
+      "sha256": "9b73511c28ea8c82e0e8c398d0a4ee6cf44840a7f115b181067d335fd58130a5",
+      "bytes": 4121091,
+      "pages": 101,
+      "source": "assets/downloads/grundlagen/woemm-2.0-referenzfassung.pdf",
+      "sourceSha256": "1450cb5c1955f0451909333009249c75b86d9328c16aa4f82c0a4e7723c7b896",
+      "originalPages": 98,
+      "updatePages": 3
+    },
+    {
+      "filename": "woems-2-0-lesefassung-2026-09-05.pdf",
+      "title": "WÖMS 2.0: ergänzte Lesefassung",
+      "kind": "reading-edition",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/woems-2-0-lesefassung-2026-09-05.pdf",
+      "sha256": "129ef604daa83e089513eb4bed9270edccc99b88806ad870bae44faa8443f195",
+      "bytes": 8729017,
+      "pages": 390,
+      "source": "assets/downloads/grundlagen/woems-2.0-referenzfassung.pdf",
+      "sourceSha256": "10820c06a12ae6c072175abc8f01acb4d7dfc6fb9823add7469b31af58bfd57a",
+      "originalPages": 387,
+      "updatePages": 3
+    },
+    {
+      "filename": "woek-ids-indikatorenarchitektur-lesefassung-2026-09-05.pdf",
+      "title": "WÖk-IDs und Indikatorenarchitektur: ergänzte Lesefassung",
+      "kind": "reading-edition",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/woek-ids-indikatorenarchitektur-lesefassung-2026-09-05.pdf",
+      "sha256": "64f1144e7e8f0390256fde0ef9c84b0f2cbfd45c15f95460435f4e5dfc8b4bd6",
+      "bytes": 248965,
+      "pages": 12,
+      "source": "assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.pdf",
+      "sourceSha256": "9971108c62242d8e15b8075c675febacbfa2c897477cc2b163bc0546aa3c2c9e",
+      "originalPages": 9,
+      "updatePages": 3
+    },
+    {
+      "filename": "scorecards-benchmarks-nwi-lesefassung-2026-09-05.pdf",
+      "title": "Scorecards, Benchmarks und WÖk-Netto-Wirkungsindex: ergänzte Lesefassung",
+      "kind": "reading-edition",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-reference-update-2026-09-05/scorecards-benchmarks-nwi-lesefassung-2026-09-05.pdf",
+      "sha256": "af4f43a0c8cd9598b88b9745dea2749c0f2615d6c343d45c846fcbcaaab3263a",
+      "bytes": 244178,
+      "pages": 12,
+      "source": "assets/downloads/22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0.pdf",
+      "sourceSha256": "55d30559309b75e6411e6bf73429b44fad1ddf0d48eb1b8d31fef53129713667",
+      "originalPages": 9,
+      "updatePages": 3
+    }
+  ],
+  "sourceHashes": {
+    "content/site/methodik.json": "7713f8d97dffad2914fc5d51383154e4625c2a8c079429e1053a028f752c9a77",
+    "content/site/methodik.inc": "86b5bb1b5a9436652ed973a3687e1abfb5183e777906c9702070a9851000e320",
+    "content/site/reference-update.json": "d01f1c547d629bb3b303a65b1d37c0ccee521783f45b8a1f6a7d7f0b92286835",
+    "content/site/impact-controlling.json": "c8d2677a72f6df599df99749de2d2a4cb267557abb35ec92c3de8ae2f0831ec1",
+    "scripts/portal/build-impact-controlling.mjs": "802d1ec0658c0509ec81d8af3d0c2f9da5021093d93186d6ba3bbdb004a5e64f",
+    "scripts/publications/build-site-review-pdfs.py": "34b14def995f714d99b2d8ad107068e84732edfbbb73b4d2b86a8b9e94c29f67"
+  }
+}

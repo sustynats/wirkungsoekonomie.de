@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T00:00:00.000Z",
+  "generatedAt": "2026-09-05T21:54:03.814Z",
   "terms": [
     {
       "termId": "bundeshaushaltsordnung-paragraf-7",
@@ -424226,16 +424226,16 @@
         "Wirksamkeitsnachweis",
         "Nachweis eingetretener Wirkung"
       ],
-      "shortDefinition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.",
-      "hoverDefinition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.",
-      "longDefinition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.\n\nIn der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "shortDefinition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann.",
+      "hoverDefinition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann.",
+      "longDefinition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann. Dazu gehören Ausgangszustand, Zeitraum, Systemgrenze, Wirkmechanismus, Vergleich mit einer plausiblen Entwicklung ohne Maßnahme und die Unsicherheit des Befunds. Eine bloße Vorher-Nachher-Beobachtung ist noch kein belastbarer Kausalnachweis. Plausible erwartete Veränderungen werden als Wirkungspotenzial oder Wirkungsrisiko ausgewiesen.",
       "woekRelation": "Nicht mit Absicht, Output oder Bericht verwechseln; er braucht Daten, Bilanzgrenze und Unsicherheitsangabe.",
-      "usageNote": "Nicht mit Absicht, Output oder Bericht verwechseln; er braucht Daten, Bilanzgrenze und Unsicherheitsangabe.",
+      "usageNote": "Aussagekraft und Grenzen der Evidenz ausweisen. Ein Zielbezug, Bericht oder plausibler Zukunftspfad ist kein Nachweis eingetretener Wirkung.",
       "status": "approved",
       "type": "WÖk-Präzisierungsbegriff / Prüfbegriff",
       "category": "WÖk-Präzisierungsbegriff / Prüfbegriff",
-      "version": "Glossar-Sanierung v1",
-      "reviewStatus": "redaktionell aus Definitionsmaster übernommen",
+      "version": "2.1",
+      "reviewStatus": "Eingetretene Veränderung, Zurechnung und Potenzial getrennt",
       "source": "Definitionsmaster WÖk v1",
       "sourceDocument": "Definitionsmaster WÖk v1",
       "sourceSection": "Messung, Prüfung und Vertrauen",
@@ -424286,7 +424286,7 @@
         "Wirksamkeitsnachweis",
         "Nachweis eingetretener Wirkung"
       ],
-      "definition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.",
+      "definition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann. Dazu gehören Ausgangszustand, Zeitraum, Systemgrenze, Wirkmechanismus, Vergleich mit einer plausiblen Entwicklung ohne Maßnahme und die Unsicherheit des Befunds. Eine bloße Vorher-Nachher-Beobachtung ist noch kein belastbarer Kausalnachweis. Plausible erwartete Veränderungen werden als Wirkungspotenzial oder Wirkungsrisiko ausgewiesen.",
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
       "statusNote": "",
@@ -424301,11 +424301,12 @@
         "woek-praezisierungsbegriff",
         "messbegriff"
       ],
+      "metaDescription": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann.",
+      "lastUpdated": "2026-09-05",
       "cluster": "Messung, Prüfung und Vertrauen",
       "theme": "Messung, Prüfung und Vertrauen",
       "conceptStatus": "WÖk-Arbeitsbegriff",
       "metaTitle": "Wirkungsnachweis | Glossar der Wirkungsökonomie",
-      "metaDescription": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder…",
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen.",
       "related_terms": [
         "wirkungsaudit",
@@ -446212,12 +446213,12 @@
         "Wirkungs-ID",
         "Indikator-ID der Wirkungsökonomie"
       ],
-      "shortDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator, mit der Wirkung systematisch, maschinenlesbar und standardübergreifend messbar gemacht wird.",
-      "definition": "Die WÖk-ID ist die eindeutige Identifikationsnummer eines Wirkungsindikators innerhalb der Wirkungsökonomie. Sie dient dazu, relevante Wirkungsdaten strukturiert zu erfassen, zuzuordnen, zu prüfen, zu vergleichen und in Scorecards zu verwenden.",
-      "longDefinition": "Die WÖk-ID ist die eindeutige Identifikationsnummer eines Wirkungsindikators innerhalb der Wirkungsökonomie. Sie dient dazu, relevante Wirkungsdaten strukturiert zu erfassen, zuzuordnen, zu prüfen, zu vergleichen und in Scorecards zu verwenden.",
-      "woekRelation": "WÖk-IDs sind die technische Sprache der Wirkungsökonomie und ermöglichen Vergleichbarkeit, Mapping, Prüf- und Steuerlogik sowie Greenwashing-Schutz.",
+      "shortDefinition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator.",
+      "definition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
+      "longDefinition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
+      "woekRelation": "Das Register macht Prüfgegenstände auffindbar und standardübergreifend verknüpfbar. Es ersetzt weder Messung noch Wirkungsnachweis.",
       "statusNote": "Als Modellbegriff verwenden, nicht als amtliche ID darstellen.",
-      "usageNote": "Eine WÖk-ID ist kein moralisches Urteil und kein Score. Bewertung entsteht erst durch Messwert, Datenquelle, Benchmark, Kontext, Datenqualität und Scorecard-Logik.",
+      "usageNote": "Kennung, MasterItem, Indikator, Messwert und kausalen Befund getrennt ausweisen.",
       "categories": [
         "daten-standards-regularien",
         "woek-uebersetzung"
@@ -446272,26 +446273,17 @@
       ],
       "officialSources": [
         "WÖk-ID Werkzeug|/quellenarchiv/wok-g-0ab304938a99/",
-        "UN Sustainable Development Goals|/quellenarchiv/wok-q-0922/",
-        "UN Agenda 2030|/quellenarchiv/wok-q-0025/",
-        "European Commission: Corporate sustainability reporting|/quellenarchiv/wok-q-0509/",
-        "EFRAG: European Sustainability Reporting Standards|/quellenarchiv/wok-q-0544/",
-        "GRI Standards|/quellenarchiv/wok-q-0052/",
-        "European Commission: Ecodesign for Sustainable Products Regulation|/quellenarchiv/wok-q-0559/",
-        "European Commission: EU Taxonomy|/quellenarchiv/wok-q-0401/",
-        "Eurostat: NACE Rev. 2|/quellenarchiv/wok-q-0294/",
-        "ISO 14040 / ISO 14044 Life Cycle Assessment|/quellenarchiv/wok-q-0943/",
-        "Product Environmental Footprint methods|/quellenarchiv/wok-q-0127/"
+        "UN Agenda 2030|/quellenarchiv/wok-q-0025/"
       ],
       "pageUrl": "/begriffe/woek-id/",
       "priority": 98,
       "status": "führender-begriff",
-      "version": "1.1",
+      "version": "2.1",
       "category": "Messung, Daten & Standards",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "Glossar-Pack 002: Produktwirkung & Bewertungsarchitektur",
       "sourceSection": "Professionalisiertes Glossar-Pack 002",
-      "hoverDefinition": "Eine WÖk-ID identifiziert einen Wirkungsindikator eindeutig. Sie ist kein Score, sondern der Code für das, was gemessen und bewertet wird.",
+      "hoverDefinition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator.",
       "doNotConfuseWith": [
         "NACE",
         "Produkt-ID",
@@ -446330,10 +446322,10 @@
       "deprecatedUsage": [
         "WOK-ID"
       ],
-      "reviewStatus": "approved",
+      "reviewStatus": "Prüfgegenstand, Kennung und Messung begrifflich getrennt",
       "glossaryOrderKey": "wök id",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-06-01",
+      "lastUpdated": "2026-09-05",
       "related_terms": [
         "scorecard",
         "benchmark",
@@ -446638,6 +446630,7 @@
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
       "curatedSources": [],
+      "metaDescription": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator.",
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
@@ -446992,12 +446985,12 @@
       "synonyms": [
         "WÖk-IDs"
       ],
-      "shortDefinition": "WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.",
-      "hoverDefinition": "WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.",
-      "definition": "WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.",
-      "longDefinition": "WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.\n\nIn der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.",
-      "woekRelation": "Als Plural von WÖk-ID verwenden; nicht mit Produkten oder Personen verwechseln.",
-      "usageNote": "Als Plural von WÖk-ID verwenden; nicht mit Produkten oder Personen verwechseln.",
+      "shortDefinition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung.",
+      "hoverDefinition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung.",
+      "definition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
+      "longDefinition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
+      "woekRelation": "Das Register macht Prüfgegenstände auffindbar und standardübergreifend verknüpfbar. Es ersetzt weder Messung noch Wirkungsnachweis.",
+      "usageNote": "Kennung, MasterItem, Indikator, Messwert und kausalen Befund getrennt ausweisen.",
       "doNotConfuseWith": [
         "Nicht als bloße Absicht, Imagewirkung oder Outputkennzahl verwenden.",
         "Nicht mit positiver Netto-Wirkung gleichsetzen; die Bewertung erfolgt erst über Referenzrahmen, Bilanzgrenze, Datenqualität und Rückkopplung.",
@@ -447010,9 +447003,9 @@
       "source": "Definitionsmaster WÖk v1",
       "sourceDocument": "Definitionsmaster WÖk v1",
       "sourceSection": "Messung, Daten und Standards",
-      "version": "Glossar-Sanierung v1",
+      "version": "2.1",
       "status": "approved",
-      "reviewStatus": "redaktionell aus Definitionsmaster übernommen",
+      "reviewStatus": "Prüfgegenstand, Kennung und Messung begrifflich getrennt",
       "conceptStatus": "WÖk-Arbeitsbegriff",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
@@ -447033,7 +447026,7 @@
         "datenbegriff"
       ],
       "metaTitle": "WÖk-IDs | Glossar der Wirkungsökonomie",
-      "metaDescription": "WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.",
+      "metaDescription": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung.",
       "glossaryOrderKey": "WÖk-IDs",
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
@@ -447042,12 +447035,14 @@
       "dataStandardsGroup": "",
       "priority": 1541,
       "officialSources": [
-        "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
+        "WÖk-ID Werkzeug|/quellenarchiv/wok-g-0ab304938a99/",
+        "UN Agenda 2030|/quellenarchiv/wok-q-0025/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
       "deprecatedUsage": [],
+      "lastUpdated": "2026-09-05",
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen.",
       "related_terms": [
         "woek-id",

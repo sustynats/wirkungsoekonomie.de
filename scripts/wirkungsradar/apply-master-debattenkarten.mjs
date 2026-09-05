@@ -1697,7 +1697,7 @@ function rescueFactsAndSources(card) {
 
 function renderCardPageV2(card, mode = "live") {
   const base = mode === "live" ? "../../../" : "../../../";
-  const canonicalPath = `/wirkungsradar/${mode}/${card.slug}/`;
+  const canonicalPath = `/wirkungsradar/live/${card.slug}/`;
   const pathSteps = (card.impactPathSteps || []).map((step) => `<li>${esc(cleanText(step))}</li>`).join("");
   const questions = (card.criticalQuestions || []).map((question) => `<li>${esc(question)}</li>`).join("");
   const guardLine = /migration|sozial|arbeit/i.test(`${card.category} ${card.title}`)
@@ -1768,7 +1768,7 @@ ${guardLine}
 function renderCardPage(card, mode = "live") {
   if (card.templateVersion === "2.0") return renderCardPageV2(card, mode);
   const base = mode === "live" ? "../../../" : "../../../";
-  const canonicalPath = `/wirkungsradar/${mode}/${card.slug}/`;
+  const canonicalPath = `/wirkungsradar/live/${card.slug}/`;
   const main = `
     <section class="hero radar-page-hero theme-hero">
       <div class="radar-hero-copy">
@@ -1788,7 +1788,7 @@ function renderCardPage(card, mode = "live") {
     <span id="relevanz" class="sr-only">Warum relevant?</span>
     ${answerAccordion(card)}
     <section class="section section-soft" id="frameanalyse"><div><div class="section-header"><p class="hero-kicker">Frameanalyse</p><h2>Welche Geschichte wird erzählt?</h2></div><article class="card">${paragraphize(card.hook)}<p><strong>Systemischer Hebel:</strong> ${esc(card.systemLever)}</p></article></div></section>
-    <section class="section section-soft v3-layer v3-layer-consequences debate-consequence-main" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was dieses Narrativ bewirken kann.</h2><p>Wirkungspotenzial wird nicht automatisch als eingetretene Wirkung gelesen. Entscheidend ist der konkrete Wirkpfad.</p></div><div class="card-grid three v3-consequence-orders"><article class="card v3-order-card"><p class="v2-badge">Wirkung 1. Ordnung</p><h3>Wahrnehmung</h3>${paragraphize(card.effectPath.order1)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> ${esc(card.falseJump)}</p><p><strong>Wirkungspfad:</strong> Aufmerksamkeit verschiebt sich vom vollständigen Wirkungsraum auf den verkürzten Frame.</p><p><strong>Begründung:</strong> Diese Wirkung ist aus dem Mastertext abgeleitet, nicht aus einer generischen Karte.</p></article><article class="card v3-order-card"><p class="v2-badge">Wirkung 2. Ordnung</p><h3>Entscheidung</h3>${paragraphize(card.effectPath.order2)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> ${esc(card.hook)}</p><p><strong>Wirkungspfad:</strong> Der Frame macht bestimmte politische Antworten plausibler und andere unsichtbarer.</p><p><strong>Begründung:</strong> Der zweite Schritt beschreibt Anschlussentscheidungen und Nebenwirkungen.</p></article><article class="card v3-order-card"><p class="v2-badge">Wirkung 3. Ordnung</p><h3>Systempfad</h3>${paragraphize(card.effectPath.order3)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> Wiederholung stabilisiert die verkürzte Deutung.</p><p><strong>Wirkungspfad:</strong> Öffentlicher Diskurs, Investitionen, Regeln und Vertrauen folgen dem falschen Problemzuschnitt.</p><p><strong>Begründung:</strong> Der Langfristpfad zeigt, was passiert, wenn der Frame Lernfähigkeit ersetzt.</p></article></div></div></section>
+    <section class="section section-soft v3-layer v3-layer-consequences debate-consequence-main" id="folgencheck" data-v3-consequence-check><div><div class="section-header"><p class="hero-kicker">Folgencheck</p><h2>Was dieses Narrativ bewirken kann.</h2><p>Wirkungspotenzial wird nicht automatisch als eingetretene Wirkung gelesen. Entscheidend ist der konkrete Wirkpfad.</p></div><div class="card-grid three v3-consequence-orders"><article class="card v3-order-card"><p class="v2-badge">Mögliche Folge 1. Ordnung</p><h3>Wahrnehmung</h3>${paragraphize(card.effectPath.order1)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> ${esc(card.falseJump)}</p><p><strong>Wirkungspfad:</strong> Aufmerksamkeit verschiebt sich vom vollständigen Wirkungsraum auf den verkürzten Frame.</p><p><strong>Begründung:</strong> Dieser mögliche Wirkpfad wird aus dem Inhalt der Aussage hergeleitet. Er ist ohne entsprechende Daten kein Nachweis einer eingetretenen Wirkung.</p></article><article class="card v3-order-card"><p class="v2-badge">Mögliche Folge 2. Ordnung</p><h3>Entscheidung</h3>${paragraphize(card.effectPath.order2)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> ${esc(card.hook)}</p><p><strong>Wirkungspfad:</strong> Der Frame macht bestimmte politische Antworten plausibler und andere unsichtbarer.</p><p><strong>Begründung:</strong> Der zweite Schritt beschreibt Anschlussentscheidungen und Nebenwirkungen.</p></article><article class="card v3-order-card"><p class="v2-badge">Mögliche Folge 3. Ordnung</p><h3>Systempfad</h3>${paragraphize(card.effectPath.order3)}<p><strong>Narrativ:</strong> ${esc(card.title)}</p><p><strong>Wirkmechanismus:</strong> Wiederholung stabilisiert die verkürzte Deutung.</p><p><strong>Wirkungspfad:</strong> Ein dauerhaft verkürzter Problemzuschnitt kann Diskurs, Investitionen, Regeln und Vertrauen beeinflussen. Ob und in welchem Umfang dies geschieht, ist empirisch zu prüfen.</p><p><strong>Begründung:</strong> Der Langfristpfad beschreibt eine mögliche Entwicklung. Eintritt, Stärke und Zurechnung müssen empirisch geprüft werden.</p></article></div></div></section>
     ${factsSystemBlock(card)}
     ${notSaidBlock(card)}
     ${boundaryBlock(card)}
@@ -1947,14 +1947,14 @@ for (const card of master.cards) {
     write(`wirkungsradar/detail/${card.slug}/index.html`, redirectShell({
       title: card.title,
       description: `Weiterleitung zur kanonischen Debattenkarte ${card.redirectTarget}.`,
-      canonical: `${PUBLIC_BASE}/wirkungsradar/detail/${card.redirectTarget}/`,
+      canonical: `${PUBLIC_BASE}/wirkungsradar/live/${card.redirectTarget}/`,
       target: detailTarget,
       base: "../../../",
     }));
     continue;
   }
   write(`wirkungsradar/live/${card.slug}/index.html`, renderCardPage(card, "live"));
-  write(`wirkungsradar/detail/${card.slug}/index.html`, renderCardPage(card, "detail"));
+  write(`wirkungsradar/detail/${card.slug}/index.html`, renderCardPage(card, "detail").replace("</head>", '<meta name="robots" content="noindex, follow">\n</head>'));
 }
 
 const canonicalCards = master.cards.filter((card) => !card.redirectTarget);

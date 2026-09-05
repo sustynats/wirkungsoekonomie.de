@@ -1,0 +1,50 @@
+{
+  "terms": [
+    {
+      "termId": "woek-id",
+      "shortDefinition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator.",
+      "hoverDefinition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator.",
+      "definition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
+      "longDefinition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
+      "metaDescription": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator.",
+      "woekRelation": "Das Register macht Prüfgegenstände auffindbar und standardübergreifend verknüpfbar. Es ersetzt weder Messung noch Wirkungsnachweis.",
+      "usageNote": "Kennung, MasterItem, Indikator, Messwert und kausalen Befund getrennt ausweisen.",
+      "version": "2.1",
+      "lastUpdated": "2026-09-05",
+      "reviewStatus": "Prüfgegenstand, Kennung und Messung begrifflich getrennt",
+      "officialSources": [
+        "WÖk-ID Werkzeug|/quellenarchiv/wok-g-0ab304938a99/",
+        "UN Agenda 2030|/quellenarchiv/wok-q-0025/"
+      ]
+    },
+    {
+      "termId": "woek-ids",
+      "shortDefinition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung.",
+      "hoverDefinition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung.",
+      "definition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
+      "longDefinition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung. Ein adressierter MasterItem kann unterschiedliche fachliche Funktionen haben. Erst eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität begründet einen verwendbaren Indikator. Ob eine beobachtete Veränderung auf eine Maßnahme zurückgeht, erfordert eine gesonderte Zurechnungsprüfung.",
+      "metaDescription": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung.",
+      "woekRelation": "Das Register macht Prüfgegenstände auffindbar und standardübergreifend verknüpfbar. Es ersetzt weder Messung noch Wirkungsnachweis.",
+      "usageNote": "Kennung, MasterItem, Indikator, Messwert und kausalen Befund getrennt ausweisen.",
+      "version": "2.1",
+      "lastUpdated": "2026-09-05",
+      "reviewStatus": "Prüfgegenstand, Kennung und Messung begrifflich getrennt",
+      "officialSources": [
+        "WÖk-ID Werkzeug|/quellenarchiv/wok-g-0ab304938a99/",
+        "UN Agenda 2030|/quellenarchiv/wok-q-0025/"
+      ]
+    },
+    {
+      "termId": "wirkungsnachweis",
+      "shortDefinition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann.",
+      "hoverDefinition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann.",
+      "definition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann. Dazu gehören Ausgangszustand, Zeitraum, Systemgrenze, Wirkmechanismus, Vergleich mit einer plausiblen Entwicklung ohne Maßnahme und die Unsicherheit des Befunds. Eine bloße Vorher-Nachher-Beobachtung ist noch kein belastbarer Kausalnachweis. Plausible erwartete Veränderungen werden als Wirkungspotenzial oder Wirkungsrisiko ausgewiesen.",
+      "longDefinition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann. Dazu gehören Ausgangszustand, Zeitraum, Systemgrenze, Wirkmechanismus, Vergleich mit einer plausiblen Entwicklung ohne Maßnahme und die Unsicherheit des Befunds. Eine bloße Vorher-Nachher-Beobachtung ist noch kein belastbarer Kausalnachweis. Plausible erwartete Veränderungen werden als Wirkungspotenzial oder Wirkungsrisiko ausgewiesen.",
+      "metaDescription": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann.",
+      "version": "2.1",
+      "lastUpdated": "2026-09-05",
+      "reviewStatus": "Eingetretene Veränderung, Zurechnung und Potenzial getrennt",
+      "usageNote": "Aussagekraft und Grenzen der Evidenz ausweisen. Ein Zielbezug, Bericht oder plausibler Zukunftspfad ist kein Nachweis eingetretener Wirkung."
+    }
+  ]
+}

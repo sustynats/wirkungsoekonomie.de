@@ -1,5 +1,6 @@
-# WÖk Reference Manifest — führende Referenzen und Versionssicherheit
+# WÖk Reference Manifest - führende Referenzen und Versionssicherheit
 # Stand: 2026-08-14 · Quelle der Statusangaben: assets/data/library-version-registry.json
+# Historischer Bestandszählstand, nicht aktuelle Versionssteuerung:
 #   (3196 Einträge; Status-Werte: führend=11, aktuell=2625, Arbeitsfassung=277, ältere Fassung=261, ersetzt=21, archiviert=1)
 #   Generator: scripts/library/build-library-versioning-stage9.mjs · Oberfläche: bibliothek/index.html + downloads.html#lesepfade
 # REGEL: Website-Bibliotheksstatus schlägt lokale Dateinamen. Bei Widersprüchen: REFERENCE_METADATA_CONFLICT dokumentieren (KNOWLEDGE_GAPS.md), nicht still harmonisieren.
@@ -53,15 +54,17 @@ references:
     title: "WÖk-Begriffsleitfaden führend"
     domain: Sprache und Begriffe
     status: leading
-    version: "1.5"
-    date: "2026-08-15"
+    version: "1.7"
+    date: "2026-08-21"
     canonical_url: "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
-    download_asset: WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf
+    download_asset: WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf
     local_repository_copy: >
-      public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf;
-      Live-HTML: content/documents/online/woek-begriffsleitfaden-fuehrend.inc (Build: scripts/publications/build-begriffsleitfaden-v1.5.py);
-      Quell-MD: source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.md (vollständige führende Fassung)
+      public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf;
+      Live-HTML: content/documents/online/woek-begriffsleitfaden-fuehrend.inc (Build: scripts/publications/build-begriffsleitfaden-v1.7.py);
+      Quell-MD: source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md (vollständige führende Fassung)
     supersedes:
+      - {version: "1.6", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf, status: archiviert}
+      - {version: "1.5", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf, status: archiviert}
       - {version: "1.4", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf, status: archiviert}
       - {version: "1.3", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf, status: archiviert}
       - {version: "1.2", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf, status: archiviert}
@@ -69,10 +72,10 @@ references:
       - {version: "1.0", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf, status: archiviert}
     authority_scope: [begriffe, formulierung, wirkungsarchitektur, wirkpfad, wirkungsradar, resilienzsystematik, nachhaltigkeitsdefinition]
     notes: >
-      v1.5 präzisiert die eigenständige WÖk-Wirkungsarchitektur: IOOI ist eine externe optionale Results Chain,
+      v1.7 ergänzt die objektspezifische staatliche Prüfarchitektur und erhält die eigenständige WÖk-Wirkungsarchitektur: IOOI ist eine externe optionale Results Chain,
       der Wirkpfad ist versioniert und evidenzsensibel, das Wirkungsradar kein Diagramm. Führende Definition:
       „Nachhaltigkeit ist die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie."
-    last_verified: "2026-08-16"
+    last_verified: "2026-09-05"
 
   - reference_id: WOEK_GLOSSAR
     title: "Glossar der Wirkungsökonomie"
@@ -85,7 +88,7 @@ references:
     local_repository_copy: "glossar.html → begriffe/ (2281 Begriffsseiten); Daten: assets/data/glossary-lookup.json (2121 Begriffe, 2026-08-05)"
     supersedes: []
     authority_scope: [oeffentliche_kurzdefinitionen]
-    notes: "Nur soweit mit Begriffsleitfaden v1.5 vereinbar; öffentliche Such- und API-Exporte werden im Website-Build synchronisiert."
+    notes: "Nur soweit mit Begriffsleitfaden v1.7 vereinbar; öffentliche Such- und API-Exporte werden im Website-Build synchronisiert."
     last_verified: "2026-08-14"
 
   - reference_id: SDG_SDGPLUS_REFERENZRAHMEN
@@ -106,21 +109,22 @@ references:
     title: "WÖk Master Items"
     domain: WÖk-IDs, Regeln, Benchmarks, Governance
     status: leading
-    version: "1.4 FINAL"
-    date: "2026-08-16"
+    version: "1.5"
+    date: "2026-08-21"
     canonical_url: "https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/"
-    download_asset: WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx
-    local_repository_copy: data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx
-    checksum: b70ad437dc1ab8d0b4264658346d5c10910d83309a51902e32dfe047e072ebcc
+    download_asset: WOeK_Masterregister_v1.5_2026-08-21.xlsx
+    local_repository_copy: data/master-register/WOeK_Masterregister_v1.5_2026-08-21.xlsx
+    checksum: be71c4eedb6646b0167483575fb484930d34e7c563af3086c495615ae95d6988
     supersedes:
+      - {version: "1.4 FINAL", local: assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx, status: ersetzt}
       - {version: "1.3 (geprüft)", local: assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx, status: ersetzt}
       - {version: "1.2 (PDF)", local: assets/pdf/woek-master-items-v1-2.pdf, status: ersetzt}
       - {version: "1.2 (final, PDF)", local: public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf, status: aktuell, conflict: "müsste konsequent ersetzt sein → KNOWLEDGE_GAPS.md"}
     related_not_leading:
-      - {title: "Public Research Register", version: "2.1", local: assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx, status: aktuell, note: "Forschungsvariante, 621 Items, erweiterte Spalten (MPD_Dimension, Core_Field, Archetype, NonCompensation_RedLine …) — NICHT führend"}
+      - {title: "Public Research Register", version: "2.1", local: assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx, status: aktuell, note: "Forschungsvariante, 621 Items, erweiterte Spalten (MPD_Dimension, Core_Field, Archetype, NonCompensation_RedLine …) - NICHT führend"}
     authority_scope: [woek_ids, indicator_registry, benchmark_status, governance_rules, assurance_status]
-    notes: "621 WÖk-IDs, 28 Scoring-Regeln, 48 Quellen und 11 Tabellenblätter. FINAL bezeichnet die kanonische Registerfassung, nicht die abgeschlossene Validierung jeder Schwelle."
-    last_verified: "2026-08-16 (XLSX geprüft, öffentliche Exporte und Viewer aus derselben Quelle erzeugt)"
+    notes: "621 WÖk-IDs, 204 Indikatorfamilien und 28 Scoring-Regeln. v1.5 trennt MasterItems vom Wirkindikatorenregister. Eine ID belegt keine Operationalisierung oder Validierung; offene Schwellen bleiben offen."
+    last_verified: "2026-09-05 (Manifest, Dateipfade und Quellhash abgeglichen)"
 
   - reference_id: T_SROI_RECHENSTANDARD
     title: "T-SROI-Rechenstandard (Impact Controlling · Transformationsmessung, Methodenpapier)"
@@ -138,13 +142,13 @@ references:
     notes: >
       Kausal begrenzte, diskontierte Netto-Nutzenrechnung mit Schutz-Gate.
       ACHTUNG Versionslinien: docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md (2026-05-24) trägt höhere Nummer,
-      ist aber ÄLTER, nur Entwurf und NICHT führend — Nummern nie über Statusregister stellen.
+      ist aber ÄLTER, nur Entwurf und NICHT führend - Nummern nie über Statusregister stellen.
     last_verified: "2026-08-14"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # ABGLEICH MIT DEM STATUSREGISTER (Prüfung 2026-08-14)
 # assets/data/library-version-registry.json enthält 11 Einträge mit status="führend".
-# Diese 11 Einträge sind 11 MANIFESTATIONEN von 8 Werken — drei Werke werden doppelt
+# Diese 11 Einträge sind 11 MANIFESTATIONEN von 8 Werken - drei Werke werden doppelt
 # geführt (Onlinefassung/Bibliotheksseite + Download-Asset). Es fehlt keine Referenz.
 # Zuordnung (registry_id → reference_id), maschinell prüfbar:
 registry_id_map:
@@ -154,8 +158,8 @@ registry_id_map:
   WOEMM_2_0:  [woemm-2-0]
   WOEMS_2_0:  [woems-2-0]
   WOEK_BEGRIFFSLEITFADEN:
-    - leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html  # Onlinefassung v1.5
-    - download-or-document-public-downloads-originals-woek-begriffsleitfaden…  # PDF v1.5
+    - leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html  # Onlinefassung v1.7
+    - download-or-document-public-downloads-originals-woek-begriffsleitfaden…  # PDF v1.7
   WOEK_GLOSSAR: [leading-reference-glossar-html]
   SDG_SDGPLUS_REFERENZRAHMEN:
     - download-or-document-assets-downloads-woek-sdg-sdgplus-referenzrahmen…   # Lesefassung v0.3 (PDF)
@@ -165,7 +169,8 @@ registry_id_map:
 # Summe: 2+1+1+2+1+2+1+1 = 11 ✓
 
 # ─────────────────────────────────────────────────────────────────────────────
-# IMPORT-STATUS DER FÜHRENDEN INHALTE (nicht nur Metadaten) — Stand 2026-08-14
+# HISTORISCHER IMPORT-SNAPSHOT - Stand 2026-08-14, KEIN aktueller Versionszeiger
+# Aktuelle fachbezogene Versionen stehen oben in references; dieser Snapshot dokumentiert den früheren Import.
 # FULL = strukturiert maschinenlesbar im Repo · TEXT = nur Volltext/HTML/PDF · GAP = fehlt
 machine_readable_import:
   WOEMS_2_0:
@@ -199,8 +204,8 @@ machine_readable_import:
     status: TEXT
     artefakte:
       - {pfad: docs/impact-controlling/go10-methodenpapiere/t-sroi-rechenstandard-v1_1.md, inhalt: "113 Zeilen Markdown-Quelle"}
-      - {pfad: assets/js/impact-calculations.js, inhalt: "calculateTSROI — implementierte Rechenlogik"}
-    luecke: "Parameter/Diskontsätze/Schutz-Gate nicht als Daten (JSON) hinterlegt — Rechenstandard und Code können auseinanderlaufen"
+      - {pfad: assets/js/impact-calculations.js, inhalt: "calculateTSROI - implementierte Rechenlogik"}
+    luecke: "Parameter/Diskontsätze/Schutz-Gate nicht als Daten (JSON) hinterlegt - Rechenstandard und Code können auseinanderlaufen"
   WOEMM_2_0:
     status: TEXT
     artefakte:
@@ -212,9 +217,9 @@ machine_readable_import:
     artefakte: [{pfad: "referenz/", inhalt: "Online-Lesefassung, 1670 Dateien, Kapitel + Cite-Anker"}, {pfad: assets/pdf/die-neue-ordnung-des-wohlstands.pdf}]
   WOEK_GLOSSAR:
     status: FULL
-    artefakte: [{pfad: assets/data/glossary-lookup.json, inhalt: "2121 Begriffe (2026-08-05)"}, {pfad: api/v1/glossary/index.json, inhalt: "2092 — Snapshot-Drift, Rebuild nötig"}]
+    artefakte: [{pfad: assets/data/glossary-lookup.json, inhalt: "2121 Begriffe (2026-08-05)"}, {pfad: api/v1/glossary/index.json, inhalt: "2092 - Snapshot-Drift, Rebuild nötig"}]
 
-# Domainbezogene Autorität (Konfliktregel): Begriff/Formulierung → Begriffsleitfaden v1.5 · öffentliche Kurzdefinition → Glossar (soweit leitfadenkonform)
+# Domainbezogene Autorität (Konfliktregel): Begriff/Formulierung → Begriffsleitfaden v1.7 · öffentliche Kurzdefinition → Glossar (soweit leitfadenkonform)
 # · Gesamtsystemlogik → Buch · Management → WÖMM 2.0 · Methoden/Canvas/Journeys → WÖMS 2.0 · SDG/SDG+ → Referenzrahmen v0.3 + Onlinefassung
-# · WÖk-IDs/Regeln/Benchmarks/Prüfstatus → Master Items v1.3 · T-SROI → Rechenstandard v1.1.
+# · WÖk-IDs/Regeln/Benchmarks/Prüfstatus → Masterregister v1.5 · T-SROI → Rechenstandard v1.1.
 # Eine ältere Gesamtquelle überschreibt nie eine neuere fachgebietsspezifische führende Referenz.

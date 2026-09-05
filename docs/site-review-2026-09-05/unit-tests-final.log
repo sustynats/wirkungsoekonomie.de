@@ -1,0 +1,24 @@
+Browser search: 1 entries; 0.00 MB full → 0.00 MB compact / 0.00 MB transferred.
+Browser search: 1 entries; 0.00 MB full → 0.00 MB compact / 0.00 MB transferred.
+✔ build preserves search routes and meaningful fields in a reproducible gzip, without another raw index (4.84125ms)
+▶ shared loader handles gzip, caching, interrupted data and older releases
+  ✔ one compressed request is shared by concurrent consumers (26.243042ms)
+  ✔ damaged gzip falls back to the existing versioned JSON (1.239208ms)
+  ✔ a missing manifest supports older static releases (0.242125ms)
+  ✔ an incomplete index rejects and a new attempt can recover (1.358208ms)
+  ✔ a manifest cannot redirect the loader to an unrelated destination (0.132333ms)
+✔ shared loader handles gzip, caching, interrupted data and older releases (29.625584ms)
+Public content: 0 direct links, 2 restored anchors, 0 pages with distinct content IDs, 1 duplicate pages consolidated, 1 redundant search records removed.
+Public content: 0 direct links, 0 restored anchors, 0 pages with distinct content IDs, 0 duplicate pages consolidated, 0 redundant search records removed.
+✔ duplicate headings retain old links, update self-citations and reserve existing IDs (1.388958ms)
+✔ interactive control contracts are left for explicit review (0.178375ms)
+✔ data attributes are not document IDs and survive normalization (0.2315ms)
+✔ publication normalization preserves routes, self-linked fragments and distinct documents (12.945667ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 114.750542
