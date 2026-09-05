@@ -4,8 +4,21 @@
     "images": {
       "firstSeen": "2026-09-04T10:20:20.169Z",
       "active": true
+    },
+    "run": {
+      "firstSeen": "2026-09-05T00:20:44.642Z",
+      "active": true
+    },
+    "sources": {
+      "firstSeen": "2026-09-05T00:20:44.642Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "67f5f78d002da070aa10b280",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Letzter Lauf meldet einen Fehler oder einen ungültigen Zeitstempel.\nSeit: 2026-09-05T00:20:44.642Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-04"
 }
