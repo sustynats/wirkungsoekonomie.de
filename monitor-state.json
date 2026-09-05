@@ -8,12 +8,13 @@
     "run": {
       "firstSeen": "2026-09-05T06:10:08.110Z",
       "active": true
-    },
-    "sources": {
-      "firstSeen": "2026-09-05T06:10:08.110Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "a2cc23896139d64d3451142b",
+      "content": "✓ WÖk-Störung behoben\nQuellenabruf\nPrüfung: 2026-09-05T06:35:47.654Z"
+    }
+  ],
   "dailyDate": "2026-09-05"
 }
