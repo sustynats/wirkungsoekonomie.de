@@ -17,7 +17,7 @@
   const siteLocale = document.documentElement.lang === "en" ? "en" : "de";
   const i18n = (deText, enText) => (siteLocale === "en" ? enText : deText);
   const searchPageHref = siteLocale === "en" ? "/en/search/" : "/suche.html";
-  const searchDataVersion = "20260827-live-index";
+  const searchDataVersion = "20260905-current-index";
   const MAX_HAYSTACK_CHARS = 1800;
   const MAX_SEARCH_SCAN = 2500;
   const MAX_VISIBLE_RESULTS = 24;
@@ -76,7 +76,11 @@
     "social-taxonomy": ["/begriffe/social-taxonomy/", "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html", "/begriffe/eu-taxonomie/"],
     "reverse merit order": ["/begriffe/reverse-merit-order/", "/werkzeuge/reverse-merit-order/", "/wirkungsfelder/produkte-konsum/"],
     nwi: ["/begriffe/nwi/", "/werkzeuge/netto-wirkungs-index/", "/werkzeuge/impact-controlling/"],
-    "t-sroi": ["/begriffe/t-sroi/", "/werkzeuge/impact-controlling/t-sroi/", "/werkzeuge/impact-controlling/"],
+    "t-sroi": ["/begriffe/t-sroi/", "/werkzeuge/t-sroi/", "/werkzeuge/impact-controlling/"],
+    "impact controlling": ["/werkzeuge/impact-controlling/", "/erleben/impact-controlling-rechner/", "/werkzeuge/impact-controlling/dossier/"],
+    "impact-controlling": ["/werkzeuge/impact-controlling/", "/erleben/impact-controlling-rechner/"],
+    "dns": ["/methodik/", "/begriffe/deutsche-nachhaltigkeitsstrategie/", "/methodik/datenbasis.html"],
+    "enap": ["/methodik/", "/begriffe/elektronische-nachhaltigkeitspruefung/", "/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html"],
     "wök-id": ["/begriffe/woek-id/", "/werkzeuge/woek-ids/", "/verstehen/sdgs-sdgplus/"],
     "woek-id": ["/begriffe/woek-id/", "/werkzeuge/woek-ids/", "/verstehen/sdgs-sdgplus/"],
     "5 p": ["/wirkungsfelder/wirtschaft-unternehmen/detailkonzepte/marketing_fuenftes_p_planet/", "/wirkungsfelder/wirtschaft-unternehmen/"],
@@ -1263,10 +1267,10 @@
     if (state.loading) return state.loading;
     state.loading = (async () => {
       const [index, dictionary, associations, entrypoints] = await Promise.all([
-        fetch(dataUrl("search-index.json"), { cache: "no-store" }).then((response) => response.json()),
-        fetch(dataUrl("search-dictionary.json"), { cache: "no-store" }).then((response) => response.json()),
-        fetch(dataUrl("search-associations.json"), { cache: "no-store" }).then((response) => response.json()),
-        fetch(dataUrl("search-curated-entrypoints.json"), { cache: "no-store" }).then((response) => response.json()),
+        import(new URL('search-index-loader.js?v=20260905', searchScriptUrl).href).then(({ loadBrowserSearchIndex }) => loadBrowserSearchIndex(new URL('../search/', searchScriptUrl).href)),
+        fetch(dataUrl("search-dictionary.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('dictionary'); return response.json(); }),
+        fetch(dataUrl("search-associations.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('associations'); return response.json(); }),
+        fetch(dataUrl("search-curated-entrypoints.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('entrypoints'); return response.json(); }),
       ]);
       state.index = index.map((entry) => ({
         ...entry,
@@ -1281,7 +1285,7 @@
       state.entrypoints = entrypoints;
       state.ready = true;
     })().catch(() => {
-      status.textContent = i18n("Die Suche konnte nicht geladen werden.", "Search could not be loaded.");
+      status.textContent = i18n("Die Suche konnte nicht geladen werden. Bitte starte sie mit „Suchen“ erneut. Die Themenlinks bleiben verfügbar.", "Search could not be loaded. Please try Search again. Topic links remain available.");
     }).finally(() => {
       state.loading = null;
     });

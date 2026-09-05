@@ -1,10 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { editionLink } from "../lib/publication-editions.mjs";
+import { ImpactProcess, ExampleCards, FeedbackLoop } from "../lib/explainer-components.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+const impactExplanation = JSON.parse(fs.readFileSync(path.join(ROOT, "content/site/impact-controlling.json"), "utf8"));
 const SITE = "https://wirkungsoekonomie.de";
-const DATE = "2026-06-01";
+const DATE = "2026-09-05";
 const CSS_VERSION = "20260525-result-interpretation";
 const JS_VERSION = "20260525-cta-cleanup";
 
@@ -330,8 +333,8 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation"><a href="${base}index.html">Start</a></nav>
     </header>
     <main>
-      <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Druckdatum: 24.05.2026</p>
-${body(base, route)}
+      <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Onlinefassung · Druckdatum siehe Druckdialog</p>
+${rel === "werkzeuge/impact-controlling/index.html" ? body(base, route).replaceAll('<p class="card-text">', '<p class="card-text" data-publication-abstract>').replaceAll('<p>Kausal begrenzte', '<p data-publication-abstract>Kausal begrenzte').replaceAll('<p>621 IDs', '<p data-publication-abstract>621 IDs').replaceAll('<p>Wie Nachhaltigkeitsberichterstattung', '<p data-publication-abstract>Wie Nachhaltigkeitsberichterstattung') : body(base, route)}
     </main>
     <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
     ${[extraScript, ...extraScripts].filter(Boolean).map((script) => `<script src="${base}${script}"></script>`).join("\n    ")}
@@ -711,102 +714,64 @@ function methodPapersForTool(title) {
 function overviewPage() {
   page({
     rel: "werkzeuge/impact-controlling/index.html",
-    title: "Impact Controlling | Wirkungsökonomie",
-    description: "Impact Controlling übersetzt Wirkung in Steuerung, Controlling, Reporting, Risiko, IOI, T-SROI, Investition und Entscheidung.",
+    title: "Impact Controlling: Wirkung prüfen und Entscheidungen verbessern | Wirkungsökonomie",
+    description: "Impact Controlling verständlich erklärt: vom Schulungsbeispiel zur Entscheidung, mit Wirkpfad, Evidenz, Schutzgrenzen, NWI, IOI und T-SROI. Demo und aktuelle Methodenpapiere.",
     searchSection: "Werkzeuge",
-    body: (base, route) => `${hero(base, {
-      kicker: "Methodenbereich",
+    searchType: "Methodenübersicht",
+    body: (base) => `${hero(base, {
+      kicker: "Methodenübersicht · mit interaktiver Demo",
       title: "Impact Controlling",
-      subtitle: "Wirkung sichtbar, bewertbar und entscheidungsrelevant machen.",
-      text: "Impact Controlling ist der methodische Dachbereich der Wirkungsökonomie. Es verbindet WÖk-IDs, Scorecards, NWI, IOI, T-SROI, Datenqualität, Benchmarks und Wirkungsdatenräume.",
-      action: `<a class="btn btn-primary" href="${href(base, wirkungscontrollingDetailDossier.href)}">T-SROI-Rechenstandard lesen</a>${tsroiRechenstandardLink(base, "btn btn-secondary", "T-SROI-Rechenstandard PDF v1.1")}<a class="btn btn-secondary" href="${href(base, "werkzeuge/impact-controlling/dossier/")}">Gesamtdossier lesen</a>`,
+      subtitle: "Nicht nur zählen, was getan wurde. Prüfen, was sich dadurch verändert.",
+      text: "Impact Controlling verbindet Wirkungsfragen, Daten und Entscheidungen: Was verändert sich für wen, wie sicher wissen wir das, und was muss deshalb angepasst werden? Die Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      action: `<a class="btn btn-primary" href="${href(base, "erleben/impact-controlling-rechner/")}">Mit einem Beispiel ausprobieren</a><a class="btn btn-secondary" href="#logic">Zuerst die Logik verstehen</a><a class="hero-secondary-link" href="#methodenpapiere">Aktuelle Fachgrundlagen</a>`,
     })}
-    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${statusMeta("Methodenportal / Online-Volltext")}</section>
     <section class="section" aria-labelledby="logic">
-      <div class="section-header">
-        <p class="hero-kicker">Methodik</p>
-        ${sectionTitle("logic", "Von Wirkung zu Entscheidung")}
-        <p>Wirkung ist neutral und relational. Impact Controlling macht sichtbar, welche Zustände sich verändern, welche Nebenwirkungen entstehen, welche Daten belastbar sind und wie Entscheidungen auf positive Netto-Wirkung, wirksamen Kapitaleinsatz und lernende Rückkopplung ausgerichtet werden können.</p>
-      </div>
-    ${cardGrid(base, [
-        { title: "Messen", text: "WÖk-IDs, Datenquellen, Einheiten und Schwellen machen Wirkung adressierbar." },
-        { title: "Bewerten", text: "Scorecards, Benchmarks, NWI, IOI und Reverse Merit Order ordnen Wirkung ein." },
-        { title: "Steuern", text: "IOI, T-SROI, KII, Assurance und Wirkungsdatenräume machen Wirkung entscheidungsrelevant." },
+      <div class="section-header"><p class="hero-kicker">Gedankenexperiment · keine gemessene Fallstudie</p><h2 id="logic">Eine Schulung ist noch kein Lernerfolg</h2><p>Ein Unternehmen bietet eine Sicherheitsschulung an. Die Teilnahmeliste ist vollständig. Aber arbeiten die Menschen anschließend sicherer? Und liegt eine Veränderung an der Schulung oder etwa an neuen Maschinen?</p></div>
+      ${ExampleCards([
+        {label: "Leistung", title: "100 Menschen nehmen teil", text: "Teilnehmende und Schulungsstunden beschreiben den Output. Sie zeigen, dass eine Leistung stattgefunden hat."},
+        {label: "Veränderung", title: "Gefahren werden früher erkannt", text: "Beobachtete Veränderungen von Wissen, Verhalten oder Unfallhäufigkeit können Wirkungsbefunde sein. Messmethode, Zeitraum und Ausgangszustand gehören dazu."},
+        {label: "Entscheidung", title: "Was soll sich als Nächstes ändern?", text: "Ein Vergleich mit der Entwicklung ohne Schulung hilft bei der Zurechnung. Vielleicht braucht es andere Arbeitsabläufe oder technische Sicherungen statt mehr Unterricht."},
       ])}
+      <p>Wirkung ist neutral und relational: eine tatsächliche Zustandsveränderung. Eine erwartete Verbesserung ist Wirkungspotenzial; eine mögliche unerwünschte Folge ist Wirkungsrisiko. Erst begründete Evidenz und Referenzen erlauben eine Bewertung.</p>
+      ${ImpactProcess(impactExplanation.process)}
     </section>
-    <section class="section section-soft" aria-labelledby="iooi-evidenz">
-      <div class="section-header">
-        <p class="hero-kicker">Evidenzlogik</p>
-        ${sectionTitle("iooi-evidenz", "Vom Projektmodell zur steuerungsfähigen Wirkung")}
-        <p>IOOI und Theory of Change ordnen den Wirkpfad: Welche Inputs ermöglichen welche Aktivitäten, welche Outputs entstehen, welche Outcomes werden beobachtet und welcher Impact ist plausibel oder nachweisbar? Das ist keine Ersatzmessung für Wirkung, sondern die Grundlage, um Annahmen, Datenlücken, Attribution und Nebenwirkungen offen zu legen.</p>
-      </div>
+    <section class="section section-soft" aria-labelledby="iooi-evidenz"><h2 id="iooi-evidenz">Erst die Frage, dann das Instrument</h2>
+      <p>Die WÖk beginnt mit Problem- und Zielprüfung. Theory of Change und IOOI können Wirkungspfade als optionale Anschlussmethoden strukturieren. Sie sind keine Voraussetzung für jede WÖk-Analyse und keine automatische Evidenz für Kausalität.</p>
+      <div class="table-wrap" role="region" aria-label="Kennzahlen unterscheiden" tabindex="0"><table class="data-table"><caption>Welche Frage beantwortet welches Instrument?</caption><thead><tr><th scope="col">Frage</th><th scope="col">Instrument</th><th scope="col">Grenze</th></tr></thead><tbody>
+        <tr><th scope="row">Welche Aspekte müssen geprüft werden?</th><td>WÖk-IDs und Register</td><td>Eine ID adressiert einen Prüfgegenstand. Ein MasterItem ist nicht automatisch ein messbarer oder validierter Indikator.</td></tr>
+        <tr><th scope="row">Wie unterscheiden sich nichtmonetäre Folgen?</th><td>Scorecard und Netto-Wirkungs-Index (NWI)</td><td>Gewichte, Skalen und Datenqualität müssen begründet sein. Fehlende Daten sind kein neutraler Wert.</td></tr>
+        <tr><th scope="row">Welcher direkte Nettonutzen entsteht je Kosteneuro?</th><td>Impact-of-Investment (IOI)</td><td>Nur belegte und kausal begrenzte monetäre Ströme innerhalb einer offengelegten Bilanzgrenze.</td></tr>
+        <tr><th scope="row">Welcher zusätzliche transformative Nutzen ist belegbar?</th><td>T-SROI nach Rechenstandard v1.1</td><td>Direkte und transformative Nutzenreihen getrennt belegen und diskontieren. Keine freien Transformationsmultiplikatoren und keine Umrechnung von Profilpunkten in Euro.</td></tr>
+      </tbody></table></div>
+      <p><strong>Nichtkompensation und Reverse Merit Order:</strong> Harte Schutzgrenzen werden vor einer Freigabe geprüft. Schwere unzulässige Schäden werden nicht durch positive Teilwerte aufgewogen; kritische negative Wirkungen erhalten Vorrang in der Bearbeitung. Ein guter Quotient hebt ein gesperrtes Schutz-Gate nicht auf.</p>
+      ${FeedbackLoop({title: "Reporting wird durch Reaktion zur Rückkopplung", text: "Daten werden mit Ausgangszustand, Gegenfaktum und Unsicherheit geprüft. Verantwortliche legen fest, wann eine Maßnahme fortgesetzt, geändert oder beendet wird. Ein Dashboard allein trifft diese Entscheidung nicht.", action: "Prüffrage → Befund → begründete Entscheidung → spätere Überprüfung."})}
+      <p><a href="${href(base, "methodik/")}">Wie die WÖk bestehende Ansätze integriert</a> · <a href="${href(base, "verstehen/iooi-und-wirkungsoekonomie/")}">IOOI und WÖk genauer unterscheiden</a></p>
+    </section>
+    <section class="section" aria-labelledby="context-tools"><h2 id="context-tools">Passend weiterarbeiten</h2>
       ${cardGrid(base, [
-        { title: "Vor der Wirkung", text: "Auslöser, Wirkungspotenzial, Wirkungsrisiko und Wirkmechanismus werden als Annahmen oder Risiken gekennzeichnet – nicht als eingetretene Wirkung." },
-        { title: "IOOI und Evidenz", text: "Input → Aktivität → Output → Outcome → Impact trennt Ressourceneinsatz, Leistung und Veränderung. Output ist keine Wirkung; Outcome ist eine Wirkungsebene." },
-        { title: "Bewertung und Steuerung", text: "Die WÖk bewertet nach SDGs, Agenda 2030 und SDG+, schützt durch Nichtkompensation und übersetzt Ergebnisse in Investitions-, Beschaffungs- und Managemententscheidungen." },
+        {title: "Die Logik ausprobieren", text: "Die interaktive Demo zeigt Eingaben, Kennzahlen, Datenqualität und Schutz-Gates anhand modellhafter Annahmen.", href: "erleben/impact-controlling-rechner/", label: "Demo öffnen"},
+        {title: "Eine reale Prüfung vorbereiten", text: "Datenbasis, Systemgrenze, Wirkpfad, Gegenfaktum und Verantwortung festlegen, bevor gerechnet wird.", href: "methodik/datenbasis.html", label: "Datenanforderungen lesen"},
+        {title: "Im Management anwenden", text: "Die Prüfung mit Planung, Umsetzung, Verantwortlichkeiten und Lernen im Unternehmen verbinden.", href: "fuer/unternehmen/impact-controlling/", label: "Unternehmensanwendung ansehen"},
       ])}
-      <p><a class="text-link" href="${href(base, "verstehen/iooi-und-wirkungsoekonomie/")}">IOOI und Wirkungsökonomie im vollständigen Überblick</a></p>
+      <p>Die Demo ist keine validierte Bewertung eines Unternehmens oder einer Person. Für einen realen Fall müssen Quellen, Annahmen, Schwellen und Zuständigkeiten zusätzlich geprüft werden.</p>
     </section>
-    ${toolGrid(base)}
-    <section class="section" aria-labelledby="methodenpapiere">
-      <div class="section-header">
-        <p class="hero-kicker">Go 10 · Methodenpapiere</p>
-        ${sectionTitle("methodenpapiere", "Ausführliche Methodenpapiere")}
-        <p>Diese Veröffentlichungen sind Methodenpapiere für Impact Controlling, WÖk-IDs, Scorecards, NWI, IOI und T-SROI. Sie sind keine Ausarbeitungen eines einzelnen Wirkungsfelds, sondern methodische Grundlagen für mehrere Wirkungsfelder.</p>
+    <section class="section section-soft" id="vertiefung-arbeitsmaterial" data-publication-hub="curated" aria-labelledby="vertiefung-arbeitsmaterial-title">
+      <h2 id="vertiefung-arbeitsmaterial-title">Fachgrundlagen und Materialien</h2>
+      <p data-pdf-exclude>${editionLink("woek-impact-controlling-erklaerung-2026-09-05.pdf", "Diese Erklärung als PDF")}</p>
+      <p>Für aktuelle Rechnungen ist der T-SROI-Rechenstandard v1.1 maßgeblich. Frühere konzeptionelle Papiere bleiben nachvollziehbar, begründen aber keine abweichende aktuelle Rechenregel.</p>
+      <div id="methodenpapiere" class="card-grid three">
+        <article class="card"><p class="card-kicker">Führende Rechenfassung · v1.1</p><h3 class="card-title">T-SROI: Nutzen, Kosten und Schutz-Gate</h3><p>Kausal begrenzte und diskontierte Netto-Nutzenrechnung. Profilwerte, Geldströme und Schutzentscheidung bleiben getrennt.</p><div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Rechenstandard lesen</a>${tsroiRechenstandardLink(base)}</div></article>
+        <article class="card"><p class="card-kicker">Aktuelles Register · v1.5</p><h3 class="card-title">WÖk-IDs und Prüfgegenstände</h3><p>621 IDs mit sichtbaren Zuordnungen und Prüfständen. MasterItems und operationalisierte Wirkindikatoren sind unterschiedliche Ebenen.</p><a class="text-link" href="${href(base, "woek-id-register/")}">Register erkunden</a></article>
+        <article class="card"><p class="card-kicker">Arbeitspapier</p><h3 class="card-title">Doppelte Wesentlichkeit</h3><p>Wie Nachhaltigkeitsberichterstattung und die Prüfung von Wirkungsfolgen zusammenhängen.</p><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a></article>
       </div>
-      <div class="card-grid three">
-        <article class="card">
-          <p class="card-kicker">Aktuelle Rechenfassung · v1.1</p>
-          <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
-          <p class="card-text">Kausale, diskontierte Netto-Nutzenrechnung mit klarer Trennung von Profilwerten, Geldströmen und Schutz-Gate.</p>
-          <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Rechenstandard lesen</a>${tsroiRechenstandardLink(base)}</div>
-        </article>
-        <article class="card">
-          <p class="card-kicker">Arbeitspapier · CSRD-Brücke</p>
-          <h3 class="card-title">${escapeHtml(doubleMaterialityWorkpaper.title)}</h3>
-          <p class="card-text">${escapeHtml(doubleMaterialityWorkpaper.text)}</p>
-          <div class="portal-card-actions"><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.pdf)}">PDF</a></div>
-        </article>${methodPaperCardGrid(base).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
-      </div>
+      <details class="explanation-details" id="go10-tools"><summary>Weitere Methodenpapiere und Instrumente</summary>${methodPaperCardGrid(base)}${go10ToolGrid(base).replace('id="go10-tools"', 'id="go10-tools-liste"')}</details>
+      <details class="explanation-details" id="dossiers"><summary>Konzeptionelle Dossiers und ergänzende Downloads</summary><p>Die Dossiers vertiefen einzelne Begriffe und Anwendungsfragen. Bei abweichender älterer Rechenlogik gilt die oben genannte aktuelle Fachreferenz.</p>${cardGrid(base, dossierPages.map(([slug,title,text]) => ({title,text,href: `werkzeuge/impact-controlling/dossiers/${slug}/`,label: "Dossier lesen"})))}<p><a href="${href(base, "werkzeuge/impact-controlling/dossier/")}">Zusammenhängendes Gesamtdossier lesen</a></p>${downloadBlock(base, impactDownloads)}</details>
     </section>
-    ${go10ToolGrid(base)}
-    ${impactCrossLinks(base)}
-    <section class="section" aria-labelledby="dossiers">
-      <div class="section-header">
-        <p class="hero-kicker">Online-Volltexte</p>
-        ${sectionTitle("dossiers", "Dossiers online lesen")}
-        <p>Alle Dossiers sind als Webfassung mit Ankern angelegt. Downloads stehen gesammelt am Seitenende.</p>
-      </div>
-      <div class="card-grid three">
-        <article class="card">
-          <p class="card-kicker">Aktuelle Rechenfassung · v1.1</p>
-          <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
-          <p class="card-text">${escapeHtml(wirkungscontrollingDetailDossier.text)}</p>
-          <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Rechenstandard lesen</a>${tsroiRechenstandardLink(base)}</div>
-        </article>
-        <article class="card">
-          <p class="card-kicker">Arbeitspapier · Doppelte Wesentlichkeit</p>
-          <h3 class="card-title">${escapeHtml(doubleMaterialityWorkpaper.title)}</h3>
-          <p class="card-text">${escapeHtml(doubleMaterialityWorkpaper.text)}</p>
-          <div class="portal-card-actions"><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.href)}">Einordnung lesen</a><a class="text-link" href="${href(base, doubleMaterialityWorkpaper.pdf)}">PDF</a></div>
-        </article>${cardGrid(base, dossierPages.map(([slug, title, text]) => ({
-        title,
-        text,
-        href: `werkzeuge/impact-controlling/dossiers/${slug}/`,
-        label: "Dossier lesen",
-      }))).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
-      </div>
-    </section>
-    ${politicalBlock(base)}
+    <section class="section" id="impact-crosslinks"><h2>Von der Analyse zur Anwendung</h2><p id="political-implementation">Bei öffentlichen Entscheidungen werden DNS, Gesetzesfolgenabschätzung, eNAP und die jeweils anwendbare Haushaltsprüfung einbezogen. Die WÖk führt Folgenprüfung nicht erstmals ein. Ihr Zusatzbefund muss für das konkrete Vorhaben gezeigt werden.</p><p><a href="${href(base, "methodik/#staatliche-nachhaltigkeitsarchitektur")}">Staatliche Prüfarchitektur und WÖk</a> · <a href="${href(base, "werkzeuge/")}">Alle Methoden und Werkzeuge</a></p></section>
     ${sdgBlock()}
     ${bookBlock(base)}
-    ${externalSourcesBlock()}
-    ${downloadBlock(base, [
-      ...impactDownloads,
-      { label: doubleMaterialityWorkpaper.title, href: doubleMaterialityWorkpaper.pdf },
-      ...go10MethodPapers.flatMap(methodPaperDownloadItems),
-    ])}`,
+    <details class="section explanation-details" id="external-sources"><summary>Externe Fachquellen</summary>${externalSourcesBlock().replace('id="external-sources"', 'id="external-sources-liste"')}</details>
+    <p class="meta-line">Erläuterung geprüft am <time datetime="2026-09-05">5. September 2026</time>. <a href="${href(base, "referenz/aktualisierung/")}">Stand und Präzisierungen der Grundlagen</a>.</p>`,
   });
 }
 

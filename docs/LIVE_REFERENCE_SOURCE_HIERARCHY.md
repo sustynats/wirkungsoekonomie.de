@@ -1,6 +1,6 @@
 # Live-Reference-Quellenhierarchie
 
-Stand: 2026-08-13
+Stand: 2026-09-05
 
 ## Ebene 1: Original / Source
 
@@ -11,8 +11,8 @@ Stand: 2026-08-13
 
 ## Ebene 2: Führende Terminologie
 
-- WOeK_Begriffsleitfaden_fuehrend_v1.0.md
-- Stand: 21. Mai 2026
+- WOeK_Begriffsleitfaden_fuehrend_v1.7.md
+- Stand: 2026-08-21
 - maßgeblich für Begriffe, Glossar, Hovers, Crosslinks, Sprachregeln und Terminologieprüfung
 
 ## Ebene 3: Neuere Logik- und Systemweiterentwicklungen
@@ -22,10 +22,11 @@ Diese Dokumente werden als mögliche Aktualisierungsquellen der lebenden Referen
 - WStG_Oktober2025
 - Technische_Leitlinien_WUStG_Vollversion_Extended_v2
 - Beispiel_Apfel_Wirkungssteuer_Bonusregel
-- WOeK_Master_Items_v1.3_geprueft.xlsx
+- WOeK_Masterregister_v1.5_2026-08-21.xlsx
 - WOeK_Master_Items_final_v1.2.pdf (historische Fassung)
 - Wirkungsrat_Konzept
-- Whitepaper-T-SROI
+- T-SROI-Rechenstandard v1.1 (führend für aktuelle Rechnungen)
+- Whitepaper-T-SROI (historisch, keine aktuelle Rechenregel)
 - Wirkungsökonomie in der Lieferkette
 - WP_Produkte
 - WP_Rente

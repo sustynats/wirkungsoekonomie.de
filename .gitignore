@@ -30,3 +30,7 @@ assets/video/*.wav
 
 # Titelbild-Vorschauen: PNGs nur lokal (--png-out), SVG + Galerie versioniert
 scripts/news/title-image/previews/*.png
+
+# Reproducible browser search artifacts; generated after the source index.
+assets/search/browser-index-*.json
+assets/search/browser-index-*.json.gz

@@ -17,6 +17,8 @@ try {
   const mainPath = path.join(SITE, "assets", "js", "main.js");
   const questionsPath = path.join(SITE, "assets", "js", "contextual-questions.js");
   const mainHash = fs.existsSync(mainPath) ? crypto.createHash("sha256").update(fs.readFileSync(mainPath)).update(fs.existsSync(questionsPath) ? fs.readFileSync(questionsPath) : '').digest("hex").slice(0, 12) : null;
+  const searchPath = path.join(SITE, "assets/js/search.js");
+  const searchHash = fs.existsSync(searchPath) ? crypto.createHash("sha256").update(fs.readFileSync(searchPath)).digest("hex").slice(0, 12) : null;
   const re = /assets\/css\/style\.css(?:\?v=[^"'\s>]+)?/g;
   const replacement = `assets/css/style.css?v=${hash}`;
   let changed = 0, scanned = 0;
@@ -29,6 +31,7 @@ try {
         const s = fs.readFileSync(full, "utf8");
         let out = s.replace(re, replacement);
         if (mainHash) out = out.replace(/assets\/js\/main\.js(?:\?v=[^"'\s>]+)?/g, `assets/js/main.js?v=${mainHash}`);
+        if (searchHash) out = out.replace(/assets\/js\/search\.js(?:\?v=[^"'\s>]+)?/g, `assets/js/search.js?v=${searchHash}`);
         if (out !== s) { fs.writeFileSync(full, out); changed++; }
       }
     }

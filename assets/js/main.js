@@ -2,6 +2,11 @@ const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const mainScriptUrl =
   document.currentScript?.src || document.querySelector('script[src*="assets/js/main.js"]')?.src || "";
+window.loadWoekSearchIndex = async () => {
+  const loaderUrl = new URL('search-index-loader.js?v=20260905', mainScriptUrl || window.location.href);
+  const { loadBrowserSearchIndex } = await import(loaderUrl.href);
+  return loadBrowserSearchIndex(new URL('../search/', mainScriptUrl || window.location.href).href);
+};
 const siteAnalyticsEndpoint = "https://fganranxrdyewbjpvubx.supabase.co/functions/v1/site-event";
 const siteAnalyticsSessionKey = "wirkungsoekonomie-site-session";
 const siteAnalyticsVisitorKey = "wirkungsoekonomie-site-visitor";
@@ -1038,7 +1043,7 @@ function initRadarSearch() {
   };
 
   Promise.all([
-    fetch(relativeSiteUrl("assets/search/search-index.json")).then((response) => (response.ok ? response.json() : Promise.reject(new Error("search-index")))),
+    window.loadWoekSearchIndex(),
     fetch(relativeSiteUrl("assets/data/wirkungsradar-synonyms.json")).then((response) => (response.ok ? response.json() : {})).catch(() => ({})),
     fetch(relativeSiteUrl("assets/data/wirkungsradar-canonical-map.json")).then((response) => (response.ok ? response.json() : {})).catch(() => ({})),
   ])
@@ -2524,6 +2529,9 @@ const ToolExplanationLayer = (() => {
 
   function insert(config) {
     if (!matchesPage(config)) return;
+    // Method readers already explain their subject. A route under /werkzeuge/
+    // does not imply that a calculator or a result is present.
+    if (config.pagePath?.startsWith('/werkzeuge/') && !document.querySelector('main [data-tool-root], main [data-scanner-mvp-root], main .product-calculator, main .tool-lab')) return;
     if (config.skipIf && document.querySelector(config.skipIf)) return;
     const root = document.querySelector(config.selector || "body");
     if (!root || root.dataset.toolExplanationReady === "true") return;
@@ -2899,7 +2907,7 @@ const GenericToolPageExplanationLayer = (() => {
 
   function init() {
     if (!isToolLikePath() || !mainElement || document.querySelector(".tool-explanation-before")) return;
-    const target = mainElement.querySelector("[data-scanner-mvp-root], [data-tool-root], .product-calculator-section, .tool-lab, .section");
+    const target = mainElement.querySelector("[data-scanner-mvp-root], [data-tool-root], .product-calculator-section, .tool-lab");
     if (!target || target.dataset.genericToolExplanationReady === "true") return;
     const config = configForPage();
     target.insertAdjacentHTML("beforebegin", ToolExplanationLayer.renderBefore(config));
@@ -4280,14 +4288,24 @@ const WirkungsraumLayer = (() => {
   }
 
   function actionTarget() {
+    let row = document.querySelector("[data-wirkungsraum-actions-row]");
+    if (row) return { container: row, panelAfter: row };
     const actions = document.querySelector(".hero-actions");
-    if (actions) return { container: actions, panelAfter: actions };
+    if (actions) {
+      const details = document.createElement("details");
+      details.className = "content-save-tools";
+      const summary = document.createElement("summary");
+      summary.textContent = i18n("Diese Seite merken und organisieren", "Save and organize this page");
+      row = document.createElement("div");
+      row.className = "wirkungsraum-save-row";
+      row.dataset.wirkungsraumActionsRow = "true";
+      details.append(summary, row);
+      actions.insertAdjacentElement("afterend", details);
+      return { container: row, panelAfter: row };
+    }
 
     const termActions = document.querySelector(".glossary-detail .term-detail-hero .term-action-row");
     if (termActions) return { container: termActions, panelAfter: termActions };
-
-    let row = document.querySelector("[data-wirkungsraum-actions-row]");
-    if (row) return { container: row, panelAfter: row };
 
     row = document.createElement("p");
     row.className = "wirkungsraum-save-row";
@@ -4536,7 +4554,7 @@ const WirkungsraumLayer = (() => {
   async function knowledgeCatalog() {
     if (!knowledgeCatalogPromise) {
       knowledgeCatalogPromise = Promise.all([
-        fetchJson(knowledgeGraphConfig.searchIndexUrl, []),
+        window.loadWoekSearchIndex().catch(() => []),
         fetchJson(knowledgeGraphConfig.relationshipManifestUrl, { relationships: {} })
       ]).then(([searchIndex, relationshipManifest]) => {
         const nodes = Array.isArray(searchIndex) ? searchIndex.map(knowledgeNodeFromEntry).filter(Boolean) : [];
@@ -7480,7 +7498,7 @@ const WirkungsraumLayer = (() => {
     ) {
       return { kind: "debatten", label: "Nur gemerkt", countLabel: "gemerkte Debatten", empty: "Im Debatten-Kompass ist noch keine Seite gemerkt." };
     }
-    if (normalized === "/werkzeuge/" || normalized === "/tools/" || normalized === "/methoden/" || normalized === "/methodik/") {
+    if (normalized === "/werkzeuge/" || normalized === "/tools/" || normalized === "/methoden/") {
       return { kind: "werkzeuge", label: "Nur gemerkt", countLabel: "gemerkte Werkzeuge", empty: "In Methoden & Werkzeugen ist noch nichts gemerkt." };
     }
     if (normalized === "/akademie/" || normalized === "/akademie.html") {
