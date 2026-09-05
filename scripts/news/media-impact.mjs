@@ -168,6 +168,12 @@ export function sanitizeMediaImpact(input, story = {}, trigger = detectMediaImpa
   const sufficientComparison = Boolean(comparison.sufficient_basis && trigger.comparable_source_count >= 2);
   if (comparison.sufficient_basis && !sufficientComparison) dropped.push("MEDIA_COMPARISON_INSUFFICIENT_SOURCES");
   const relevant = Boolean(input.relevant);
+  const frameTerm = plain(framing.term, 120);
+  let mediaUsage = enumValue(framing.media_usage, MEDIA_USAGE, "body");
+  if (frameTerm && plain(story.title, 300).toLowerCase().includes(frameTerm.toLowerCase()) && !["headline", "multiple"].includes(mediaUsage)) {
+    mediaUsage = "headline";
+    dropped.push("MEDIA_USAGE_DERIVED_FROM_HEADLINE");
+  }
   const mediaImpact = {
     relevant,
     relevance_level: enumValue(input.relevance_level, LEVELS, trigger.level),
@@ -178,8 +184,8 @@ export function sanitizeMediaImpact(input, story = {}, trigger = detectMediaImpa
       status: enumValue(speaker.status, STATUSES, "open"),
     },
     framing: {
-      detected: Boolean(framing.detected), term: plain(framing.term, 120), origin_in_story: plain(framing.origin_in_story || "offen", 180),
-      media_usage: enumValue(framing.media_usage, MEDIA_USAGE, "body"),
+      detected: Boolean(framing.detected), term: frameTerm, origin_in_story: plain(framing.origin_in_story || "offen", 180),
+      media_usage: mediaUsage,
       attribution_quality: enumValue(framing.attribution_quality, ATTRIBUTION_QUALITY, "unklare Attribution"),
       factual_status: enumValue(framing.factual_status, FACTUAL_STATUSES, speaker.status === "fact" ? "amtlich festgestellt" : speaker.present ? "Aussage eines Akteurs" : "offen"),
       frame_type: strings(framing.frame_type, 4, 80).filter((item) => FRAME_TYPES.has(item)),

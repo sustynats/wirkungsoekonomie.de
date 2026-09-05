@@ -65,6 +65,7 @@ Neue Storys erhalten den Mediencheck innerhalb des bestehenden Analyseaufrufs. O
 - `media_check_cost_usd`;
 - `media_quality_retries`;
 - `media_checks_cleaned`;
+- `media_checks_normalized`;
 - `self_frame_rewrites`.
 
 Der Medienkostenanteil eines regulären kombinierten Aufrufs ist eine konservative Marginalschätzung und wird nicht zusätzlich zum Gesamtpreis verbucht. Beim reinen Backfill entspricht die protokollierte Summe allen tatsächlich beantworteten Backfill-Aufrufen, einschließlich einer gegebenenfalls nötigen Qualitätskorrektur.
@@ -80,8 +81,9 @@ Der Medienkostenanteil eines regulären kombinierten Aufrufs ist eine konservati
 5. hängt eine neue Version an;
 6. stoppt am bestehenden Monatsbudget;
 7. gliedert eine inhaltlich vollständige Ersatzfassung bei Bedarf deterministisch an einer Satzgrenze in zwei Absätze, fordert bei anderen formalen Mängeln höchstens eine gezielte Qualitätskorrektur an und hält den Fall danach weiterhin zurück;
-8. entfernt automatisch einen früher sichtbaren Mediencheck, wenn eine verschärfte lokale Triggerregel ihn nicht mehr als relevant einstuft;
-9. ist bei unverändertem Quellenstand idempotent.
+8. leitet objektiv erkennbare Angaben wie die Verwendung eines Frame-Begriffs in der Überschrift deterministisch aus den gespeicherten Feldern ab und normalisiert widersprüchliche Altangaben ohne KI-Aufruf;
+9. entfernt automatisch einen früher sichtbaren Mediencheck, wenn eine verschärfte lokale Triggerregel ihn nicht mehr als relevant einstuft;
+10. ist bei unverändertem Quellenstand idempotent.
 
 Der GitHub-Workflow bietet dafür die manuellen Eingaben `media_impact_backfill` und `media_impact_limit`. Der reguläre Stundenprozess startet keinen teuren Vollbestands-Backfill.
 

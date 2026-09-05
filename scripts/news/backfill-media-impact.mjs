@@ -62,9 +62,10 @@ export async function backfillMediaImpact({
   let spend = monthlyUsage(usage, month);
   const reviewed = store.stories.filter((story) => story.published && story.listed !== false && story.analysis).map((story) => ({ story, trigger: detectMediaImpactTrigger(story) }));
   const obsolete = reviewed.filter(({ story, trigger }) => !trigger.relevant && story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_impact?.relevant);
+  const normalizable = reviewed.map(({ story, trigger }) => ({ story, trigger, sanitized: trigger.relevant && story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_trigger_fingerprint === trigger.fingerprint && story.analysis.media_impact ? sanitizeMediaImpact(story.analysis.media_impact, story, trigger).media_impact : null })).filter(({ story, sanitized }) => sanitized && JSON.stringify(sanitized) !== JSON.stringify(story.analysis.media_impact));
   const candidates = reviewed.filter(({ story, trigger }) => trigger.relevant && !(story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_trigger_fingerprint === trigger.fingerprint));
   const selected = candidates.slice(0, limit);
-  const result = { schema_version: "1.0", dry_run: dryRun, started_at: now, candidates: candidates.length, selected: selected.length, obsolete_checks: obsolete.length, completed: 0, cleaned: 0, failed: [], ai_requests: 0, quality_retries: 0, media_check_tokens: 0, media_check_cost_usd: 0, self_frame_rewrites: 0, budget_status: budget.status };
+  const result = { schema_version: "1.0", dry_run: dryRun, started_at: now, candidates: candidates.length, selected: selected.length, obsolete_checks: obsolete.length, normalizable_checks: normalizable.length, completed: 0, cleaned: 0, normalized: 0, failed: [], ai_requests: 0, quality_retries: 0, media_check_tokens: 0, media_check_cost_usd: 0, self_frame_rewrites: 0, budget_status: budget.status };
   if (dryRun) return result;
   if (budget.status !== "ok") throw new Error("MEDIA_BACKFILL_BUDGET_FX_UNAVAILABLE");
   for (const { story, trigger } of obsolete) {
@@ -79,6 +80,20 @@ export async function backfillMediaImpact({
       source_versions: (story.sources || []).map((source) => ({ source_id: source.source_id, url: source.url, content_hash: source.content_hash })),
     }];
     result.cleaned += 1;
+    writeAtomic(storiesFile, store);
+  }
+  for (const { story, trigger, sanitized } of normalizable) {
+    const version = Number(story.current_version || 0) + 1;
+    const nextAnalysis = { ...story.analysis, media_impact: sanitized, media_checked_at: now, media_trigger_fingerprint: trigger.fingerprint };
+    story.analysis = nextAnalysis;
+    story.current_version = version;
+    story.updated_at = now;
+    story.versions = [...(story.versions || []), {
+      version, analyzed_at: now, content_hash: story.content_hash, source_summary: story.source_summary, analysis: nextAnalysis,
+      provider: null, model: null, mode: "media_impact_deterministic_normalization", method_sources: [], claims: story.claims,
+      source_versions: (story.sources || []).map((source) => ({ source_id: source.source_id, url: source.url, content_hash: source.content_hash })),
+    }];
+    result.normalized += 1;
     writeAtomic(storiesFile, store);
   }
   for (const { story, trigger } of selected) {
@@ -136,7 +151,7 @@ export async function backfillMediaImpact({
     }
   }
   result.completed_at = new Date().toISOString();
-  if (result.completed || result.cleaned) {
+  if (result.completed || result.cleaned || result.normalized) {
     store.updated_at = now;
     store.public_updated_at = now;
     writeAtomic(storiesFile, store);
@@ -145,7 +160,7 @@ export async function backfillMediaImpact({
   if (result.ai_requests) {
     usage.runs.push({
       run_id: `media-backfill-${sha256(now).slice(0, 12)}`, started_at: now, completed_at: result.completed_at, berlin_slot: "kontrollierter Medienwirkungs-Backfill",
-      counts: { media_checks_triggered: selected.length, media_checks_skipped: store.stories.filter((story) => story.published && story.listed !== false).length - candidates.length, media_check_tokens: result.media_check_tokens, self_frame_rewrites: result.self_frame_rewrites, media_quality_retries: result.quality_retries, media_checks_cleaned: result.cleaned, updated_stories: result.completed },
+      counts: { media_checks_triggered: selected.length, media_checks_skipped: store.stories.filter((story) => story.published && story.listed !== false).length - candidates.length, media_check_tokens: result.media_check_tokens, self_frame_rewrites: result.self_frame_rewrites, media_quality_retries: result.quality_retries, media_checks_cleaned: result.cleaned, media_checks_normalized: result.normalized, updated_stories: result.completed },
       ai: { requests: result.ai_requests, provider: result.last_provider || null, model: result.last_model || null, input_tokens: result.media_check_tokens, output_tokens: 0, estimated_cost_usd: result.media_check_cost_usd, media_check_tokens: result.media_check_tokens, media_check_cost_usd: result.media_check_cost_usd, token_source: "provider_or_conservative_media_backfill" },
       source_failures: 0, quality_holds: result.failed.length,
     });

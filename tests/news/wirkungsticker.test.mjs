@@ -569,6 +569,7 @@ test("Oracle-Clock-Push startet auch nachts; andere Pushes erzwingen keinen Lauf
 
 test("Technische Qualitätsfehler werden begrenzt erneut versucht, fachliche Ablehnungen nicht", () => {
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_DETAIL_SUMMARY_LENGTH"], 0), true);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["MEDIA_SELF_FRAME_UNSAFE:title"], 0), true);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_UNSUPPORTED_NUMBER:17"], 2), true);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_PUBLICATION_GATE_FACTORS_INVALID", "AI_MATERIALITY_GATE_FAILED"], 1), true);
   assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", ["AI_MATERIALITY_GATE_FAILED"], 0), false);
