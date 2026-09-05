@@ -1,7 +1,181 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T07:06:05.017Z",
+  "updated_at": "2026-09-05T07:21:32.324Z",
   "stories": [
+    {
+      "story_id": "wt-19ad19be6d5e7cf2",
+      "slug": "polizei-fahndet-weiter-nach-verdachtigem-5e7cf2",
+      "title": "Polizei fahndet weiter nach Verdächtigem",
+      "first_seen": "2026-09-05T07:15:01.000Z",
+      "last_updated": "2026-09-05T07:15:01.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/fahndung-sabotage-stromnetz-100.html",
+          "title": "Polizei fahndet weiter nach Verdächtigem",
+          "summary": "Die Polizei fahndet weiter nach einem Mann, der sich zu Sabotageakten auf das Stromnetz bekannt hat. Nach Anschlagsversuchen in Brandenburg und Nordrhein-Westfalen wurden auch in …",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:15:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f0320a303b54eac4d548ad24a724c9f1826c24b3794ce6fd300b79258af1954b",
+          "source_item_id": "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T07:15:01.000Z",
+          "ingested_at": "2026-09-05T07:21:32.324Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/anschlaege-auf-umspannwerke--polizei-fahndet-weiter-nach-verdaechtigem-38210774.html",
+          "title": "Anschläge auf Umspannwerke: Polizei fahndet weiter nach Verdächtigem",
+          "summary": "Nach den Anschlägen auf Umspannwerke in Brandenburg und Nordrhein-Westfalen fahnden die Ermittler weiter nach einem 48-jährigen Verdächtigen. „Wir befinden uns immer noch in der Fahndungslage“, sagte eine Sprecherin der Polizei Köln am Samstagmorgen der Nachrichtenagentur AFP. Es seien „starke Polizeikräfte im Einsatz“, fügte sie hinzu.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T06:54:27.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b02b7b7d4dbce18ee7236795f084a07080da4edaeb421f0ba8c86a76dfc9491f",
+          "source_item_id": "8841df4c5c6f9b161cad135f4587b1c19b2a790a0d0d230483dacb81d55d797e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T06:54:27.000Z",
+          "ingested_at": "2026-09-05T07:21:32.324Z",
+          "provenance": {
+            "origin": "agency:afp",
+            "basis": "agency_attribution_in_available_text",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-19ad19be6d5e7cf2-claim-01",
+          "story_id": "wt-19ad19be6d5e7cf2",
+          "claim": "Polizei fahndet weiter nach Verdächtigem: Die Polizei fahndet weiter nach einem Mann, der sich zu Sabotageakten auf das Stromnetz bekannt hat. Nach Anschlagsversuchen in Brandenburg und Nordrhein-Westfalen wurden auch in …",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T07:21:32.324Z"
+        },
+        {
+          "claim_id": "wt-19ad19be6d5e7cf2-claim-02",
+          "story_id": "wt-19ad19be6d5e7cf2",
+          "claim": "Anschläge auf Umspannwerke: Polizei fahndet weiter nach Verdächtigem: Nach den Anschlägen auf Umspannwerke in Brandenburg und Nordrhein-Westfalen fahnden die Ermittler weiter nach einem 48-jährigen Verdächtigen. „Wir befinden uns immer noch in der Fahndungslage“, sagte eine Sprecherin der Polizei Köln am Samstagmorgen der Nachrichtenagentur AFP. Es seien „starke Polizeikräfte im Einsatz“, fügte sie hinzu.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "agency:afp",
+            "basis": "agency_attribution_in_available_text",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T07:21:32.324Z"
+        }
+      ],
+      "content_hash": "431b68d714bece77a3332961f1fb4cdb377fd0c2fa8bc577945640612b5cc931",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T07:21:32.324Z",
+      "event_first_seen_at": "2026-09-05T07:21:32.324Z",
+      "event_detected_at": "2026-09-05T07:21:32.324Z",
+      "event_id": "event-47b63689127b7d9ed5dd",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.5220666666666665,
+        "detection_delay_minutes": 6.5220666666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T07:21:32.324Z",
+      "rejection": {
+        "at": "2026-09-05T07:21:32.324Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-015e477e516f3f8b",
       "slug": "at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base-6f3f8b",
@@ -20855,7 +21029,7 @@
       "verification_started_at": "2026-09-04T18:22:42.556Z",
       "publish_ready_at": "2026-09-04T18:22:57.645Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -21233,9 +21407,12 @@
         "generated_at": "2026-09-04T18:28:15.203Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "e1d10f1e3205f9bd0288812db38efd34491e5c0c02f672864119780a4e303310",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "be7bbbcde59dc72b3094641962979a75674b0bb6c9324cf775e87c170dd9bb81",
+        "checked_at": "2026-09-05T07:21:32.324Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T13:21:32.324Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -21268,14 +21445,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-03c6bacdda808696",
@@ -24853,9 +25025,11 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
+          "AI_DETAIL_SUMMARY_LENGTH",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "CLAIM_EVIDENCE_NOT_IN_SOURCE"
         ],
-        "quality_retry_count": 3,
+        "quality_retry_count": 4,
         "reassessment": false,
         "fresh": false,
         "consolidation": false
@@ -45040,7 +45214,7 @@
       "verification_started_at": "2026-09-04T13:36:32.741Z",
       "publish_ready_at": "2026-09-04T13:36:46.801Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -45756,9 +45930,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "5017936963322a9c52a5fff555629fdc853bbf49b7dc4b3881f6957d9af44b4a",
-        "checked_at": "2026-09-04T19:54:51.283Z",
+        "checked_at": "2026-09-05T07:21:32.324Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T01:54:51.283Z",
+        "expires_at": "2026-09-05T13:21:32.324Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -45793,50 +45967,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "6eb0bc5c430336e7af5ed53109695e748ec7c0155866e0779e4f7c388100302a",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/richtungsstreit-im-bsw-thueringer-abgeordnete-treten-aus-partei-aus-100.html",
-            "title": "Erfurt - Richtungsstreit im BSW: Thüringer Abgeordnete treten aus Partei aus",
-            "summary": "In Thüringen ist der Streit des Bündnis Sahra Wagenknecht zwischen Bundespartei und Landesverband weiter eskaliert - und wird zur Belastungsprobe für die Regierungskoalition. Zehn Landtagsabgeordnete verlassen die Partei. Darunter auch Vize-Ministerpräsidentin und Finanzministerin Wolf, Digitalminister Schütz und Umweltminister Kummer.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T19:15:07.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ff14c73e58edfe1fbfec5b9f7f6cd9ae671d91614ac2aeaa993cf31beb0b56b1",
-            "source_item_id": "1d0f5f5617926e7e43843881fbc35fb25bc1e3a046dab524532fb7c969610b2d",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T19:15:07.000Z",
-            "ingested_at": "2026-09-04T19:50:26.018Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-dbeea3e8c3d46f35",
@@ -49725,7 +49856,7 @@
       "verification_started_at": "2026-09-04T11:37:15.431Z",
       "publish_ready_at": "2026-09-04T11:37:27.087Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -50092,9 +50223,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "dc31e3abf01ac6a7943a8855faef3da0a2718d127517b39066103781daff9901",
-        "checked_at": "2026-09-04T20:21:20.922Z",
+        "checked_at": "2026-09-05T07:21:32.324Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T02:21:20.922Z",
+        "expires_at": "2026-09-05T13:21:32.324Z",
         "sources": [
           {
             "source_id": "swr-aktuell",
@@ -50129,50 +50260,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "dfa59f6b6552c7a39827ee42e391db763f8104fa0fafb13879b9e7fb595816e5",
-        "sources": [
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/friedrichshafen/spritpreise-bodensee-drastisch-gestiegen-tanktourismus-nach-oesterreich-boomt-100.html",
-            "title": "Spritpreise am Bodensee auf Rekordniveau - so viel sparen Autofahrer in Österreich",
-            "summary": "Die Benzinpreise sind kräftig gestiegen. In der Bodenseeregion liegen sie sogar deutlich über dem Landesdurchschnitt. Viele Autofahrer weichen deshalb ins nahe Vorarlberg aus.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T11:13:34.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "b208f4583e7075f41ff13de6d6e40b977373c6a7398b9ca67d054af0a12754b5",
-            "source_item_id": "a8dc4ffb62e5b2d2c0d991b164289ab746e86a9fa52407ee7511d5d8992ac682",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T11:13:34.000Z",
-            "ingested_at": "2026-09-04T11:36:39.394Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-4f130f019115e3a8",
@@ -63660,7 +63748,7 @@
       "verification_started_at": "2026-09-04T09:22:32.024Z",
       "publish_ready_at": "2026-09-04T09:22:48.037Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -63963,10 +64051,13 @@
         "fallback_reason": "HIGGSFIELD_RETRY_EXHAUSTED",
         "refresh_failure": "HIGGSFIELD_RETRY_EXHAUSTED"
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-05T05:21:05.955Z",
-        "content_hash": "81cb5d63d44d23392a53f615e89cbdefdf6d803863db64c0631615366d6cf29c",
+      "deepening_checks": 3,
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "bb9c0859c917f58a188ca1bd5494a36b9ac51562fa5dca47f9a2e0934e4a1653",
+        "checked_at": "2026-09-05T07:21:32.324Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T13:21:32.324Z",
         "sources": [
           {
             "source_id": "tagesspiegel-home",
@@ -63999,13 +64090,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false
+        ]
       }
     },
     {
