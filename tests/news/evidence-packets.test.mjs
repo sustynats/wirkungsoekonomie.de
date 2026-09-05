@@ -78,8 +78,31 @@ test('oversize preflight preserves a queue item and leaves the paid slot to anot
   const report=await runWirkungsticker(opts);
   assert.deepEqual(calls,['wt-other']); assert.equal(report.ai_error,undefined); assert.equal(report.input_holds.length,1); assert.equal(report.ai_calls,1);
   assert.equal(captured.storyStore.stories.find(s=>s.story_id==='wt-test').pending_update.reason,'AI_INPUT_TOO_LARGE');
-  assert.ok(evaluateRunHealth(report,{now}).errors.includes('AI_INPUT_BLOCKED'));
+  assert.deepEqual(evaluateRunHealth(report,{now}),{ok:true,errors:[]});
   assert.ok(!evaluateRunHealth(report,{now}).errors.includes('AI_PROVIDER_DEGRADED'));
   const again=await runWirkungsticker({...opts,...captured});
   assert.equal(again.input_holds[0].reused,undefined); assert.equal(again.ai_calls,0);
+});
+
+test('malformed AI output is retained and retried automatically after backoff', async () => {
+  let captured, calls=0, fail=true;
+  const callAiImpl=async stories=>{
+    calls++;
+    if(fail){const error=new Error('AI_MALFORMED_JSON');error.requestAttempts=1;throw error;}
+    return {analyses:stories.map(story=>({story_id:story.story_id,publication_recommendation:false,rejection:{code:'no_new_information',reason:'Die Quellen enthalten keine neue materielle Information gegenüber der bestehenden Fassung.'}})),model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50}};
+  };
+  const first=await runWirkungsticker(options(storedStory(),{callAiImpl,captureState:value=>captured=value}));
+  const pending=captured.storyStore.stories[0].pending_update;
+  assert.equal(first.ai_output_invalid,1);
+  assert.equal(first.operational_status,'ok');
+  assert.equal(pending.reason,'AI_OUTPUT_INVALID');
+  assert.equal(pending.quality_retry_count,1);
+  assert.equal(pending.quality_retry_after,'2026-09-04T12:15:00.000Z');
+  await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T12:10:00.000Z',callAiImpl,captureState:value=>captured=value});
+  assert.equal(calls,1);
+  fail=false;
+  const third=await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T12:16:00.000Z',callAiImpl,captureState:value=>captured=value});
+  assert.equal(calls,2);
+  assert.equal(third.ai_batches_completed,1);
+  assert.equal(captured.storyStore.stories[0].pending_update,undefined);
 });

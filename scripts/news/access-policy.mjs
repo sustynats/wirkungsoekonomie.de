@@ -14,6 +14,7 @@ export function assertDirectNewsUrl(raw) {
 
 export function sourceAccess(source, purpose = "feed") {
   if (!source || source.enabled === false) return { allowed: false, reason: "SOURCE_DISABLED" };
+  if (purpose === "feed" && source.role && source.role !== "A") return { allowed: false, reason: "SOURCE_NOT_AUTOMATED_ROLE" };
   if (source.access?.cost_usd > 0 || source.access?.requires_payment || source.access?.requires_login) return { allowed: false, reason: "FREE_PUBLIC_SOURCES_ONLY" };
   if (source.access?.status && source.access.status !== "public") return { allowed: false, reason: "SOURCE_ACCESS_NOT_CLEARED" };
   if (purpose === "article" && source.access?.article !== "bounded_public_text") return { allowed: false, reason: "SOURCE_METADATA_ONLY" };
@@ -66,6 +67,7 @@ export function robotsDecision(raw, url, agent = "WOek-Wirkungsticker") {
 }
 
 const robotsCache = new Map();
+const rslCache = new Map();
 const nextRequests = new Map();
 export async function respectRobots(rawUrl, policy, fetchImpl, assertSafeUrl, allowedHosts) {
   const url = assertDirectNewsUrl(rawUrl);
@@ -99,6 +101,57 @@ export async function respectRobots(rawUrl, policy, fetchImpl, assertSafeUrl, al
   nextRequests.set(url.origin, Date.now() + wait + decision.crawl_delay_seconds * 1000);
   if (wait) await new Promise((resolve) => setTimeout(resolve, wait));
   return decision;
+}
+
+export function rslDecision(raw) {
+  const text = String(raw || "");
+  if (!/<rsl\b[^>]*xmlns=["']https:\/\/rslstandard\.org\/rsl["']/i.test(text)) return { allowed: false, status: "open", reason: "RSL_STATUS_OPEN" };
+  if (!/<content\b[^>]*url=["']\/["']/i.test(text)) return { allowed: false, status: "open", reason: "RSL_STATUS_OPEN" };
+  const prohibited = [...text.matchAll(/<prohibits\b[^>]*type=["']usage["'][^>]*>([\s\S]*?)<\/prohibits>/gi)].some((match) => /\b(?:ai-input|ai-all)\b/i.test(match[1]));
+  if (prohibited) return { allowed: false, status: "prohibited", reason: "RSL_AI_INPUT_DISALLOWED" };
+  const prohibitedUser = [...text.matchAll(/<prohibits\b[^>]*type=["']user["'][^>]*>([\s\S]*?)<\/prohibits>/gi)].some((match) => /\bnon-commercial\b/i.test(match[1]));
+  if (prohibitedUser) return { allowed: false, status: "prohibited", reason: "RSL_AI_INPUT_DISALLOWED" };
+  const permitted = [...text.matchAll(/<permits\b[^>]*type=["']usage["'][^>]*>([\s\S]*?)<\/permits>/gi)].some((match) => /\b(?:ai-input|ai-all)\b/i.test(match[1]));
+  const userPermits = [...text.matchAll(/<permits\b[^>]*type=["']user["'][^>]*>([\s\S]*?)<\/permits>/gi)].map((match) => match[1]);
+  const unsupportedUserRestriction = userPermits.length && !userPermits.some((value) => /\bnon-commercial\b/i.test(value));
+  const externalConditions = unsupportedUserRestriction || /<(?:server|reporting|custom|standard)\b/i.test(text) || /<payment\b[^>]*type=["'](?:purchase|subscription|training|crawl|use|contribution)["']/i.test(text);
+  if (!permitted || externalConditions) return { allowed: false, status: "open", reason: "RSL_STATUS_OPEN" };
+  return { allowed: true, status: "permitted", reason: "RSL_AI_INPUT_PERMITTED" };
+}
+
+export async function respectRsl(source, policy, fetchImpl, assertSafeUrl, allowedHosts) {
+  if (!source?.rsl_url) return { allowed: true, status: "not_declared", reason: "RSL_NOT_DECLARED" };
+  const initial = assertDirectNewsUrl(source.rsl_url);
+  const key = initial.href;
+  let cached = rslCache.get(key);
+  if (!cached || cached.expires < Date.now()) {
+    let current = initial.href;
+    let response;
+    for (let redirects = 0; redirects <= 3; redirects += 1) {
+      await assertSafeUrl(current, allowedHosts, { resolveDns: policy.resolve_dns !== false });
+      response = await fetchImpl(current, { redirect: "manual", signal: AbortSignal.timeout(Number(policy.request_timeout_ms || 18000)), headers: { "User-Agent": policy.user_agent || "WOek-Wirkungsticker", Accept: "application/rsl+xml, application/xml, text/xml;q=0.9" } });
+      if (![301, 302, 303, 307, 308].includes(response.status)) break;
+      const location = response.headers.get("location");
+      await response.body?.cancel();
+      if (!location || redirects === 3) throw new Error("RSL_REDIRECT_LIMIT");
+      const next = assertDirectNewsUrl(new URL(location, current).href);
+      if (next.origin !== initial.origin) throw new Error("RSL_CROSS_ORIGIN_REDIRECT");
+      current = next.href;
+    }
+    if ([404, 410].includes(response.status)) {
+      await response.body?.cancel();
+      cached = { decision: { allowed: true, status: "not_found", reason: "RSL_NOT_FOUND" }, expires: Date.now() + 86400000 };
+    }
+    else {
+      if (response.status !== 200) throw new Error(`RSL_UNAVAILABLE_${response.status}`);
+      const body = await response.text();
+      if (body.length > 512000) throw new Error("RSL_TOO_LARGE");
+      cached = { decision: rslDecision(body), expires: Date.now() + 86400000 };
+    }
+    rslCache.set(key, cached);
+  }
+  if (!cached.decision.allowed) throw new Error(cached.decision.reason);
+  return cached.decision;
 }
 
 export function mustRespectRobots(source, current, policy) {

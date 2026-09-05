@@ -168,6 +168,7 @@ jobs:
           npm run build:search
           npm run taxonomy:build
           npm run news:source-integrity:audit -- --strict
+          npm run news:source-portfolio:audit -- --strict
           npm run news:validate
       - name: Commit one atomic update
         id: commit
@@ -178,7 +179,7 @@ jobs:
           set -euo pipefail
           git config user.name "wirkungsticker-bot"
           git config user.email "wirkungsticker-bot@users.noreply.github.com"
-          git add -- data/news news wirkungsticker reports/wirkungsticker-latest-run.json reports/wirkungsticker-source-integrity.json reports/wirkungsticker-editorial-analyses.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/polls/public-catalog.json umfragen admin/umfragen
+          git add -- data/news data/wirkungsticker/source-audit-2026-09-05.json news wirkungsticker reports/wirkungsticker-latest-run.json reports/wirkungsticker-source-integrity.json reports/wirkungsticker-source-portfolio.json reports/wirkungsticker-editorial-analyses.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/polls/public-catalog.json umfragen admin/umfragen
           if git diff --cached --quiet; then
             echo "Keine neue oder geänderte Wirkungsnachricht."
             echo "changed=false" >> "$GITHUB_OUTPUT"

@@ -31,6 +31,8 @@ test("source cadence and bounded error backoff do not skip failed sources foreve
   assert.equal(sourceDue(source, { last_attempt: "2026-09-03T11:30:00Z" }, now), true);
   assert.equal(sourceDue(source, { last_attempt: "2026-09-03T11:30:00Z", last_error: "503", consecutive_failures: 2 }, now), false);
   assert.equal(sourceDue(source, { last_attempt: "2026-09-02T11:30:00Z", last_error: "503", consecutive_failures: 90 }, now), true);
+  assert.equal(sourceDue(source, { governance_hold_until: "2026-09-04T12:00:00Z" }, now), false);
+  assert.equal(sourceDue(source, { governance_hold_until: "2026-09-03T11:59:59Z" }, now), true);
 });
 test("publisher copies and attributed agency syndication are not independent evidence", () => {
   const a = annotateSourceItem({ ...item, summary: "Nach Angaben der Nachrichtenagentur Reuters gelten neue Regeln." }, source, now);
@@ -38,11 +40,20 @@ test("publisher copies and attributed agency syndication are not independent evi
   assert.equal(evidenceGroups([a, b]).possible_independent_origins, 1);
   assert.equal(evidenceGroups([item, { ...item, url: "https://example.org/second" }]).possible_independent_origins, 1);
   assert.equal(evidenceGroups([a, b]).independence_is_verified, false);
+  assert.equal(a.agency_origin, "reuters");
+  assert.equal(a.agency_origin_confidence, "high");
 });
 test("event stages and real locations remain distinct; publisher coverage is not event location", () => {
   assert.equal(eventCompatibility(item, { ...item, url: "https://other.example/a", geography: ["international"] }).same_event, true);
   assert.equal(eventCompatibility(item, { ...item, url: "https://example.org/b", title: "Bund plant Klimagesetz zur Energieversorgung" }).same_event, false);
   assert.equal(eventCompatibility({ ...item, event_geography: ["DE"] }, { ...item, url: "https://example.org/c", event_geography: ["FR"] }).same_event, false);
+});
+test("structured event facts join headline synonyms without joining a broad recurring topic", () => {
+  const dw = { title: "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen", summary: "Die Ankündigung gilt nur für Kyjiw.", published_at: "2026-09-05T13:01:00Z" };
+  const mdr = { title: "Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew", summary: "Putin kündigte an, drei Tage lang Kiew nicht anzugreifen.", published_at: "2026-09-05T13:53:00Z" };
+  assert.deepEqual(eventCompatibility(dw, mdr), { same_event: true, related: true, reason: "structured_event_facts" });
+  assert.equal(eventCompatibility(dw, { ...mdr, title: "Selenskyj besucht Kiew für neue Gespräche", summary: "Neue Verhandlungen in Kiew.", url: "https://example.org/other" }).same_event, false);
+  assert.equal(eventCompatibility(dw, { ...mdr, title: "Putin verkündet zweitägigen Angriffsstopp auf Kiew", summary: "Zwei Tage Pause.", url: "https://example.org/two" }).same_event, false);
 });
 test("source health distinguishes stale content and missing publication dates from fetch failure", () => {
   assert.equal(sourceHealth(source, { source_status: { test: { last_success: now, latest_item: "2026-06-01" } } }, now).status, "stale_content");
@@ -166,6 +177,14 @@ test("all-source outage preserves successful cursor and reports degradation with
   assert.equal(report.status, "degraded"); assert.equal(report.all_sources_failed, true);
   assert.equal(captured.state.source_status.test.last_success, "2026-09-01T12:00:00Z");
   assert.equal(captured.state.last_successful_run, undefined);
+});
+test("a restrictive robots change places the source on a renewable governance hold", async () => {
+  let captured;
+  const report = await runWirkungsticker(fixture({ fetchFeedImpl: async () => { throw new Error("ROBOTS_DISALLOWED"); }, captureState: (value) => captured = value }));
+  assert.equal(report.source_failures, 1);
+  assert.equal(captured.state.source_status.test.governance_hold_reason, "ROBOTS_DISALLOWED");
+  assert.equal(captured.state.source_status.test.governance_hold_until, "2026-09-04T12:00:00.000Z");
+  assert.equal(sourceHealth(source, captured.state, now).status, "governance_hold");
 });
 test("304 preserves latest content and a non-due source makes no network request", async () => {
   let calls = 0, captured;

@@ -1,25 +1,25 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-05T14:23:20.689Z",
+  "updated_at": "2026-09-05T18:45:53.209Z",
   "candidates": [
     {
       "story_id": "wt-3d901522efd87e2d",
       "story_slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
       "story_title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
-      "editorial_analysis_score": 72,
-      "analysis_gain": 46,
+      "editorial_analysis_score": 70,
+      "analysis_gain": 47,
       "factors": {
         "systemic_relevance": 16,
         "impact_potential": 9,
         "impact_risk": 8,
         "observed_impact": 0,
         "third_order_relevance": 5,
-        "transformation_relevance": 8,
+        "transformation_relevance": 3,
         "resilience_relevance": 8,
         "macro_relevance": 0,
         "MPD_interdependence": 2,
-        "distribution_relevance": 0,
+        "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 8,
         "evidence_quality": 8
@@ -27,22 +27,60 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 5,
+        "independent_origin_count": 6,
         "primary_source_count": 0,
-        "cited_claim_count": 21,
+        "cited_claim_count": 20,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "6050c749ed2800ac1c360d181c19b6115714eae2c6db9b871a0c8f0931f179f8",
+      "fingerprint": "fdcacf32e79f464ef271fee2ad82843b3252958eb7d9531c9845fecd635ac781",
       "status": "published",
       "analysis_id": "woek-analysis-cf42f2c67306"
     },
     {
-      "story_id": "wt-6c26e428b894e714",
-      "story_slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
-      "story_title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
-      "editorial_analysis_score": 77,
+      "story_id": "wt-6a7145e6dc679f95",
+      "story_slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
+      "story_title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 9,
+        "impact_risk": 4,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "b50187c093be64689e1da2999b5780b8cb3848810ebe15c6ec3a7b5dd8dabecd",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-4742476ae893311b",
+      "story_slug": "sabotage-polizei-und-staatsanwaltschaft-fahnden-nach-tatverdachtigem-93311b",
+      "story_title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
+      "editorial_analysis_score": 79,
       "analysis_gain": 53,
       "factors": {
         "systemic_relevance": 16,
@@ -50,9 +88,9 @@
         "impact_risk": 8,
         "observed_impact": 0,
         "third_order_relevance": 5,
-        "transformation_relevance": 3,
+        "transformation_relevance": 8,
         "resilience_relevance": 8,
-        "macro_relevance": 3,
+        "macro_relevance": 0,
         "MPD_interdependence": 2,
         "distribution_relevance": 6,
         "discourse_relevance": 0,
@@ -64,14 +102,14 @@
         "source_integrity": "verified",
         "independent_origin_count": 13,
         "primary_source_count": 0,
-        "cited_claim_count": 81,
+        "cited_claim_count": 85,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "5f3f1ea154a0a471ef080877764d397f3a7d07bb0b9cda59e9072552d9854a62",
+      "fingerprint": "009de1fc2b2d661492718cc8e0fd9446585289a1ba044ac23d5a7520a875a3d3",
       "status": "published",
-      "analysis_id": "woek-analysis-1b3323ad407f"
+      "analysis_id": "woek-analysis-166b13117cb1"
     },
     {
       "story_id": "wt-aabe8c0430bf8f84",
@@ -105,8 +143,8 @@
         "reasons": []
       },
       "fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-94b29d766984"
     },
     {
       "story_id": "wt-edd4484465895b46",
@@ -234,7 +272,7 @@
         "role": "Methodik & redaktionelle Verantwortung",
         "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
       },
-      "transparency_note": "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
       "method_version": "1.0",
       "source_fingerprint": "6ed79b91bef11cc5feadb07f866643db995bb11b3d4bb5c24f73a0060df65c54",
       "candidate_score": 76,
@@ -758,7 +796,7 @@
         "role": "Methodik & redaktionelle Verantwortung",
         "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
       },
-      "transparency_note": "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
       "method_version": "1.0",
       "source_fingerprint": "b0bbc4dc52ef7a7e171ff8bfe0378024486726ada74f4c15a24f830d47e82abd",
       "candidate_score": 67,
@@ -1572,264 +1610,290 @@
         "role": "Methodik & redaktionelle Verantwortung",
         "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
       },
-      "transparency_note": "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
       "method_version": "1.0",
-      "source_fingerprint": "6050c749ed2800ac1c360d181c19b6115714eae2c6db9b871a0c8f0931f179f8",
-      "candidate_score": 72,
-      "analysis_gain_score": 46,
+      "source_fingerprint": "fdcacf32e79f464ef271fee2ad82843b3252958eb7d9531c9845fecd635ac781",
+      "candidate_score": 70,
+      "analysis_gain_score": 47,
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 5,
+        "independent_origin_count": 6,
         "primary_source_count": 0,
-        "cited_claim_count": 21,
+        "cited_claim_count": 20,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
       "published_at": "2026-09-05T14:17:38.262Z",
-      "updated_at": "2026-09-05T14:17:38.262Z",
-      "version": 1,
-      "editorial_question": "Was bedeutet eine angekündigte dreitägige Angriffspause auf Kyjiw im Umfeld neuer US-Vermittlungsversuche für den Krieg, die Verhandlungslogik und die Sicherheitslage?",
+      "updated_at": "2026-09-05T18:45:53.209Z",
+      "version": 2,
+      "editorial_question": "Was bedeutet die angekündigte dreitägige Angriffspause auf Kyjiw im Zusammenhang mit den neu aufgenommenen Gesprächen zwischen Russland und den USA – als diplomatischer Vorgang, als Sicherheitsereignis und als möglicher Wirkungsraum?",
       "analysis_type": "case_analysis",
-      "title": "Dreitägige Angriffspause auf Kyjiw: Was die neue Vermittlungsphase wirklich verändert",
-      "subtitle": "Zwischen militärischer Unterbrechung und diplomatischem Signal bleibt die Reichweite der Wirkung vorläufig.",
-      "teaser": "Putin soll eine dreitägige Pause der Luftangriffe auf Kyjiw angeordnet haben. Zugleich reisen US-Gesandte zu Gesprächen nach Moskau und Kyjiw.",
-      "seo_description": "Dreitägige Angriffspause auf Kyjiw und neue US-Vermittlung: Was die Meldung für Sicherheit, Verhandlungskanal und Wirkungsgrenzen bedeutet.",
-      "additional_value": "Der zusätzliche systemische Zusammenhang liegt nicht in der bloßen Reise der Unterhändler, sondern in der Kopplung von zeitlich befristeter Gewaltunterbrechung und diplomatischem Kontakt. Die Meldung beschreibt damit einen möglichen Wirkpfad, aber noch keine belastbar beobachtete Friedenswirkung. Gerade in einem laufenden Krieg ist die Differenz zwischen Ankündigung, Einhaltung und tatsächlicher Zustandsveränderung entscheidend. Die Analyse trennt deshalb klar zwischen kurzfristiger Sicherheitsentlastung, symbolischer Signalwirkung und offenem Risiko taktischer Instrumentalisierung.",
-      "research_summary": "Aus den vorliegenden Quellen ergibt sich ein konsistenter Kern: US-Gesandte Jared Kushner und Steve Witkoff reisen laut mehreren Berichten nach Moskau und sollen anschließend Kyjiw besuchen. Die DW meldet zusätzlich, Putin habe wegen dieses Besuchs eine dreitägige Angriffspause auf Kyjiw angeordnet, beginnend am Sonntag. Die taz berichtet, Trump habe die beiden als Verhandler geschickt und Selenskyj habe vor dem Besuch eine Feuerpause vorgeschlagen. Ein tatsächlicher Rückgang von Angriffen, Opferzahlen oder eine nachweisbare politische Einigung sind in den Quellen nicht belegt. Die Evidenz trägt damit eine Analyse von Wirkungspotenzial und Wirkungsrisiko, aber keine starke Zuschreibung einer bereits eingetretenen Friedens- oder Deeskalationswirkung.",
+      "title": "Drei Tage Angriffspause auf Kyjiw: Was die Gespräche in Moskau für Sicherheit und Verhandlungen bedeuten",
+      "subtitle": "Zwischen diplomatischem Signal und realer Entlastung bleibt offen, ob die angekündigte Pause hält und ob daraus mehr als ein kurzer Verhandlungsmoment wird.",
+      "teaser": "In Moskau laufen neue Gespräche zwischen Russland und den USA. Gleichzeitig soll es eine dreitägige Angriffspause auf Kyjiw geben. Entscheidend ist nicht die Ankündigung, sondern die tatsächliche Zustandsänderung.",
+      "seo_description": "Gespräche in Moskau, angekündigte Angriffspause auf Kyjiw: Die Analyse erklärt Wirkpfad, Risiken und Grenzen der diplomatischen Entwicklung.",
+      "additional_value": "Der zusätzliche systemische Nutzen liegt darin, die Meldung nicht als bloßes Verhandlungsgeräusch zu lesen, sondern als möglichen kurzfristigen Eingriff in die Sicherheitslage einer Hauptstadt und zugleich als Testfall für die Verlässlichkeit von Deeskalationssignalen. Der Fall zeigt, wie Diplomatie, militärische Praxis und öffentliche Erwartung zusammenhängen, ohne dass aus einer Ankündigung schon Wirkung folgt.",
+      "research_summary": "Die vorliegenden Berichte sagen übereinstimmend, dass US-Gesandte in Moskau eingetroffen sind oder dort Gespräche aufgenommen haben und dass eine Reise nach Kyjiw folgen soll. Die MDR meldet, in Moskau hätten die Gespräche zwischen Putin und den US-Unterhändlern begonnen; außerdem habe Putin wegen des Besuchs einen dreitägigen Stopp der Luftangriffe auf Kyjiw angeordnet. Deutsche Welle berichtet ebenfalls über eine auf Kyjiw beschränkte Angriffspause und verweist auf die Wiederaufnahme der US-Vermittlung. Weitere Quellen bestätigen die geplanten Stationen Moskau und Kyjiw. Belegt ist damit ein diplomatischer Vorgang mit angekündigter militärischer Unterbrechung, nicht aber, ob die Pause eingehalten wird oder ob daraus eine belastbare Vereinbarung entsteht.",
       "sections": [
         {
           "id": "lage",
-          "title": "Lage: Eine Pause wird angekündigt, während die Gespräche anlaufen",
+          "title": "Lage: Gespräche in Moskau, angekündigte Pause auf Kyjiw",
           "paragraphs": [
-            "Die Meldung setzt an einem konkreten Punkt an: Laut DW hat Putin wegen des Besuchs von Jared Kushner und Steve Witkoff einen dreitägigen Stopp der Luftangriffe auf Kyjiw angeordnet, beginnend am Sonntag. Parallel dazu sollen die US-Unterhändler in Moskau und Kyjiw Gespräche führen. Das ist zunächst eine zeitlich begrenzte Veränderung der militärischen Praxis in einem laufenden Krieg, nicht schon ein Beleg für eine veränderte Kriegslogik.",
-            "Mehrere Quellen stützen den diplomatischen Teil: Die USA nehmen ihre Vermittlungsbemühungen wieder auf, Kushner und Witkoff sind in Moskau eingetroffen, und nach den Berichten sollen sie auch nach Kyjiw weiterreisen. Selenskyj hatte laut taz eine Feuerpause vorgeschlagen. Damit liegt ein Umfeld vor, in dem eine befristete Unterbrechung von Angriffen und eine neue Gesprächsphase zeitlich zusammenfallen."
+            "Die Nachricht ist konkret: In Moskau haben nach den vorliegenden Berichten Gespräche zwischen Wladimir Putin und den US-Unterhändlern Steve Witkoff und Jared Kushner begonnen. Gleichzeitig wird berichtet, Putin habe wegen des Besuchs eine dreitägige Pause der Luftangriffe auf Kyjiw angeordnet. Zusätzlich ist von einer anschließenden Reise der US-Gesandten nach Kyjiw die Rede. Das ist mehr als Routine-Diplomatie, aber noch kein belegter Durchbruch.",
+            "Für die Einordnung ist wichtig: Die Quellen berichten übereinstimmend über Kontakte und Reisepläne, nicht über ein abgeschlossenes Abkommen. Es handelt sich also um einen laufenden Vorgang mit offenem Ausgang."
           ]
         },
         {
           "id": "system",
-          "title": "Systemischer Zusatznutzen: Warum die Kopplung von Gewaltpause und Vermittlung relevant ist",
+          "title": "Systemischer Zusatznutzen: Warum dieser Vorgang über eine Einzelnachricht hinausgeht",
           "paragraphs": [
-            "Der zusätzliche Wert der Meldung liegt in der Kopplung zweier Systeme: militärische Gewalt und politische Vermittlung. Eine befristete Angriffspause kann die unmittelbare Sicherheitslage in Kyjiw verändern und zugleich einen Gesprächsrahmen öffnen, in dem Signale, Zugeständnisse oder rote Linien sichtbarer werden. Genau diese Verbindung macht die Nachricht systemisch relevant.",
-            "WÖk-analytisch ist Reichweite hier nicht Wirkung. Dass Unterhändler reisen oder Gespräche angekündigt werden, sagt noch nichts über eine eingetretene Zustandsänderung aus. Wirkung wäre erst dann belegt, wenn die Gefährdung in Kyjiw tatsächlich sinkt, Angriffe ausbleiben oder Verhandlungen zu überprüfbaren Vereinbarungen führen. Bis dahin bleibt es bei einem Wirkpfad mit offenem Ausgang."
+            "Der systemische Zusatznutzen liegt darin, dass sich hier drei Ebenen überlagern: Kriegsgeschehen, Vermittlungspolitik und kurzfristige Sicherheitslage einer Großstadt. Eine angekündigte Unterbrechung der Angriffe kann, wenn sie tatsächlich eingehalten wird, das unmittelbare Gefährdungsniveau für Menschen in Kyjiw senken. Das wäre eine tatsächliche Zustandsveränderung – aber nur dann, wenn die Pause praktisch wirksam wird.",
+            "Zugleich erzeugt die Kombination aus Moskau-Gesprächen und geplanter Weiterreise nach Kyjiw einen Verhandlungsrahmen mit möglicher Signalwirkung. Das ist zunächst ein Wirkungs- oder Resonanzpotenzial, kein Wirkungsnachweis. Ob daraus Substanz entsteht, hängt daran, ob die Gesprächskanäle belastbare Zusagen hervorbringen und ob die Ankündigung auf dem Boden der militärischen Realität Bestand hat."
           ]
         },
         {
           "id": "mpd",
-          "title": "Mensch, Planet, Demokratie: Wo die Meldung tatsächlich berührt",
+          "title": "Mensch, Planet, Demokratie: unterschiedliche Relevanzachsen",
           "paragraphs": [
-            "Aus der Perspektive Mensch ist die Relevanz am klarsten. Eine dreitägige Pause von Luftangriffen auf Kyjiw kann kurzfristig das Risiko für zivile Opfer, Verletzungen und psychische Belastung senken, sofern sie tatsächlich eingehalten wird. Das ist ein mögliches Wirkungspotenzial, aber noch kein beobachteter Effekt. Für die Bevölkerung ist zudem nicht nur die Angriffspause selbst wichtig, sondern auch die Frage, ob sie als verlässliches Signal oder nur als taktische Unterbrechung wahrgenommen wird.",
-            "Für Planet und Umwelt liefert die Quelle keinen direkten Befund. Die demokratische Perspektive ist indirekter, aber nicht nebensächlich: Die Meldung betrifft die internationale Steuerung eines Kriegs durch Regierungen und ihre Gesandten. Das berührt Verhandlungsmacht, Legitimität und die Form politischer Konfliktbearbeitung. Aus SDG-Sicht lässt sich allenfalls der Bezug zu Frieden, Recht und starken Institutionen herstellen; ein Kausalbeweis für Fortschritt ist daraus nicht ableitbar."
+            "Für den Referenzrahmen Mensch ist die Relevanz am höchsten, weil der Vorgang unmittelbar ein aktives Kriegsgeschehen betrifft und die Lage von Menschen in Kyjiw betreffen kann. Eine eingehaltene Angriffspause hätte kurzfristig Schutzwirkung für Zivilbevölkerung und Infrastruktur, eine nicht eingehaltene Ankündigung würde das gegenteilige Wirkungsrisiko offenlassen.",
+            "Für den Referenzrahmen Demokratie ist der Fall mittelbar relevant: Er betrifft staatliche Verhandlungen, öffentliche Nachvollziehbarkeit und die Frage, wie Entscheidungen über Krieg und Waffenruhe kommuniziert werden. Für den Referenzrahmen Planet gibt es in den gelieferten Quellen keinen direkten Umwelt- oder Klimabezug. Daraus folgt kein Umweltwirkungsnachweis und auch kein Anlass, den Fall ökologisch stärker zu laden als die Quellen tragen."
           ]
         },
         {
           "id": "wirkungsordnungen",
-          "title": "Wirkungsordnungen: Von der ersten zur dritten Ordnung",
+          "title": "Wirkungsordnungen: Erst die Unterlassung, dann erst der mögliche Strukturimpuls",
           "paragraphs": [
-            "In der ersten Ordnung liegt die mögliche kurzfristige Zustandsänderung: weniger Luftangriffe auf Kyjiw während der genannten Frist. Das wäre eine unmittelbare Veränderung des militärischen Drucks, falls die Anordnung umgesetzt wird. Die zweite Ordnung betrifft die Verhandlungsdynamik: Eine Pause kann Vertrauen testen, Erwartungen verschieben oder Gegenforderungen auslösen. Sie kann also den Gesprächsrahmen verändern, ohne den Kriegskurs schon zu kippen.",
-            "In der dritten Ordnung geht es um Strukturfragen. Sollte eine befristete Pause wiederholt werden oder in formellere Vereinbarungen münden, könnte sich ein verlässlicherer Kanal zwischen den Konfliktparteien entwickeln. Das Gegenteil ist ebenso möglich: Wenn die Pause nur symbolisch bleibt oder gebrochen wird, kann Misstrauen wachsen. Die Quelle trägt beide Richtungen als Risiko, nicht als Gewissheit."
+            "In der ersten Wirkungsordnung wäre eine tatsächlich eingehaltene Pause der Luftangriffe die unmittelbarste Veränderung: weniger oder keine Angriffe auf Kyjiw innerhalb des angekündigten Zeitraums. Das wäre eine beobachtbare Zustandsänderung, wenn sie belegt wäre. Im Material ist diese Wirkung aber nur angekündigt, nicht nachgewiesen.",
+            "In der zweiten Wirkungsordnung könnte die Pause Verhandlungen erleichtern oder den Druck auf die Konfliktparteien verschieben. In der dritten Ordnung wäre denkbar, dass sich wiederholbare Muster von Feuerpausen und Vermittlungskorridoren herausbilden. Das bleibt jedoch Szenario, nicht Befund. Die Quellen reichen nicht aus, um eine dauerhafte Veränderung der Kriegslogik zu behaupten."
           ]
         },
         {
           "id": "resilienz",
-          "title": "Resilienz: Was die Meldung über Belastbarkeit und Verwundbarkeit zeigt",
+          "title": "Resilienz: kurzfristige Entlastung ja, Verlässlichkeit offen",
           "paragraphs": [
-            "Die Ankündigung selbst ist ein Hinweis auf fragile Resilienz. Eine befristete Angriffspause ersetzt keine gesicherte Deeskalation, sondern markiert eher eine kurze Entlastung innerhalb eines weiterhin offenen Konflikts. Für Kyjiw bedeutet das: Die Sicherheitslage kann sich vorübergehend verbessern, bleibt aber grundsätzlich verletzlich.",
-            "Resilienz im WÖk-Sinn ist hier nicht die heroische Anpassung von Menschen, sondern die Stabilität des Systems gegenüber erneuter Gewalt. Gerade weil die Quellenlage nur eine angekündigte Pause und mehrere journalistische Berichte über Reisen und Gespräche liefert, ist die Belastbarkeit der behaupteten Veränderung offen. Ob die Pause eingehalten wird, ist der zentrale Prüfpunkt."
+            "Wenn die Angriffspause hält, kann sie die zivile Resilienz in Kyjiw kurzfristig stärken, weil Gefährdung reduziert und Alltag für kurze Zeit stabilisiert würde. Resilienz meint hier nicht Fortschritt, sondern die Fähigkeit, eine Belastungsspitze für einen Moment zu dämpfen.",
+            "Das Gegenstück ist das Wirkungsrisiko: Eine Ankündigung kann symbolisch bleiben, taktisch motiviert sein oder schlicht nicht eingehalten werden. Dann wäre die erwartete Entlastung ausgeblieben und die Glaubwürdigkeit des Signals beschädigt. Das Material selbst enthält keinen Beleg dafür, dass die Pause bereits tatsächlich wirksam geworden ist."
           ]
         },
         {
           "id": "transformation",
-          "title": "Transformation: Kein Friedensdurchbruch, aber ein möglicher Einstiegspunkt",
+          "title": "Transformation: noch kein Kurswechsel, aber ein Verhandlungskanal",
           "paragraphs": [
-            "Transformation wäre eine strukturelle Veränderung des Konflikts, nicht nur eine temporäre Unterbrechung. Die vorliegenden Quellen reichen dafür nicht aus. Sie zeigen lediglich einen möglichen Einstiegspunkt: neue US-Vermittlung, Gespräche in Moskau und Kyjiw, dazu eine angekündigte dreitägige Angriffspause. Das ist politisch relevant, aber noch nicht transformativ im engeren Sinn.",
-            "Der Unterschied ist wichtig, weil kommunikative Großsignale im Krieg leicht mit materieller Veränderung verwechselt werden. Eine Reise von Gesandten, selbst verbunden mit einer militärischen Pause, kann ein neuer Wirkpfad sein. Sie kann aber ebenso in einer Episode enden, die keine dauerhafte Kursänderung bewirkt. Deshalb bleibt der Transformationsbezug vorsichtig und vorläufig."
+            "Transformation wäre erst dann begründbar, wenn aus dem Gesprächsformat ein tragfähiger politischer oder militärischer Kurswechsel entstünde. Die Quellen berichten zwar über wiederaufgenommene Vermittlungsversuche und einen neuen Vorschlag der US-Seite, aber nicht über einen substantiellen Friedenspfad. Der Vorgang markiert also eher einen möglichen Anfang als ein Ergebnis.",
+            "Gerade deshalb ist sprachliche Vorsicht nötig: Von Transformationswirkung kann man hier nur als Potenzial sprechen. Das Material belegt einen Kanal, nicht den Ausgang des Kanals. Wer aus der Einladung nach Moskau und Kyjiw schon einen strukturellen Wandel ableitet, überschreitet die Evidenz."
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten und Verteilung: Wer gewinnt Zeit, wer trägt das Risiko?",
+          "paragraphs": [
+            "Die externe Wirkung eines solchen Vorgangs ist asymmetrisch verteilt. Ein kurzer Waffenstillstands- oder Pausenmoment würde vor allem denjenigen zugutekommen, die in Kyjiw Schutz suchen oder vor Ort leben. Das Risiko einer misslungenen oder taktischen Pause trägt dagegen die Bevölkerung im Kriegsgebiet unmittelbar.",
+            "Auf der Ebene der internationalen Politik kann die US-Vermittlung ihre Rolle sichtbar machen. Das ist aber keine positive Wirkung an sich. Reichweite der Vermittlung ist nicht gleich Wirkung. Erst wenn die Lage für Betroffene tatsächlich sicherer wird oder Gewalt zurückgeht, liegt eine positive Netto-Wirkung vor."
+          ]
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Frame- und Diskurscheck: Nicht der Begriff, sondern die Lage zählt",
+          "paragraphs": [
+            "Der Diskurs um Friedensmissionen, Verhandler und Signale erzeugt leicht eine größere Erwartung als die Quellen hergeben. Sachlich bleibt: Es gibt Gespräche, Reisepläne und eine angekündigte Angriffspause. Das ist der überprüfbare Kern. Alles Weitere muss als Inferenz oder Szenario markiert werden.",
+            "Auch die Zuschreibung ist zu trennen: Dass die US-Seite die Vermittlung wieder aufnehmen will, ist berichtet; dass daraus Erfolg folgt, ist nicht berichtet. Ebenso ist die dreitägige Pause eine Anordnung oder Ankündigung in den Quellen, aber kein Beweis für tatsächliche militärische Zurückhaltung. Kommunikationswirkung darf nicht mit eingetretener Wirkung verwechselt werden."
           ]
         },
         {
           "id": "unsicherheit",
-          "title": "Unsicherheit: Was sich aus den Quellen nicht sicher ableiten lässt",
+          "title": "Unsicherheit: Was offen bleibt",
           "paragraphs": [
-            "Die wichtigste Unsicherheit betrifft die Umsetzung. Die DW meldet eine Anordnung, aber die Quellen belegen nicht unabhängig, dass die Luftangriffe tatsächlich ausbleiben. Ebenso offen bleibt, ob die angekündigten Gespräche in Moskau und Kyjiw zu irgendeiner belastbaren Vereinbarung führen. Es gibt in den Quellen auch keine Zahlen zu Angriffen, Opfern oder einer messbaren Veränderung der Sicherheitslage.",
-            "Hinzu kommt die Frage der Zurechnung. Dass die Pause mit dem Besuch der US-Unterhändler zusammenhängt, ist in der DW zugeschrieben, aber noch kein harter Kausalbeweis für eine Friedensabsicht oder eine echte Deeskalationsentscheidung. Es kann ebenso ein taktisches Signal, ein Gesprächsangebot oder eine temporäre Friktion im Kriegsablauf sein. Hohe Unsicherheit macht die Lage nicht neutral, sondern vorläufig."
+            "Offen bleibt erstens, ob die Angriffspause tatsächlich eingehalten wird. Zweitens ist unklar, ob die Gespräche in Moskau zu einer belastbaren Vereinbarung führen. Drittens ist aus den vorliegenden Quellen nicht sicher, wie konkret oder bindend die angekündigten Folgegespräche in Kyjiw sind.",
+            "Diese Unsicherheit ist nicht bloß Randnotiz, sondern Teil der Analyse. In Kriegs- und Verhandlungslagen entscheidet die Verlässlichkeit des Signals über den Wirkpfad. Ohne Bestätigung der tatsächlichen Umsetzung gibt es nur Wirkungspotenzial, aber keine beobachtete Wirkung."
           ]
         },
         {
           "id": "beobachtung",
-          "title": "Beobachtungspunkte: Woran sich die Bewertung in den nächsten Stunden entscheidet",
+          "title": "Beobachtungspunkte: Woran sich der Fall prüfen lässt",
           "paragraphs": [
-            "Erstens: Ob die angekündigte dreitägige Pause am Sonntag tatsächlich beginnt und ob sie räumlich oder inhaltlich nur auf Kyjiw begrenzt bleibt. Zweitens: Ob es während dieser Frist objektiv weniger Angriffe, Luftalarme oder Schäden gibt. Drittens: Ob aus den Gesprächen in Moskau und Kyjiw konkrete Vereinbarungen, neue Kontaktkanäle oder nur politische Statements hervorgehen.",
-            "Diese Beobachtungspunkte sind entscheidend, weil Wirkung nur als tatsächliche Zustandsveränderung gilt. Ohne bestätigte Umsetzung bleibt die Meldung eine Ankündigung mit Wirkungspotenzial, aber kein Nachweis eingetretener Wirkung. Genau an dieser Stelle trennt die Wirkungsökonomie Meldung, Signal und beobachtete Veränderung."
+            "Als Nächstes relevant sind Meldungen zur tatsächlichen Einhaltung der Angriffspause, konkrete Ergebnisse oder gemeinsame Erklärungen nach den Gesprächen und die Bestätigung des geplanten Besuchs in Kyjiw. Erst daran lässt sich die Nachricht von der Ankündigung zur Wirkung unterscheiden.",
+            "Besonders wichtig wäre ein externer Befund, dass im angekündigten Zeitraum tatsächlich keine Angriffe auf Kyjiw stattfanden. Ohne so einen Zustandsnachweis bleibt die Wirkung offen. Ebenso wäre jede belastbare Vereinbarung ein neues Faktum, das die Bewertung deutlich verändern könnte."
           ]
         },
         {
           "id": "synthese",
-          "title": "Synthese: Ein begrenzter, aber materiell relevanter Wirkpfad",
+          "title": "Synthese: Ein politischer Moment mit möglicher Schutzwirkung, aber ohne Wirkungsnachweis",
           "paragraphs": [
-            "Die Quellen beschreiben keinen Durchbruch, wohl aber einen materiell relevanten Wirkpfad: zeitlich befristete Gewaltunterbrechung plus erneute Vermittlung. Das ist für Menschen in Kyjiw kurzfristig sicherheitsrelevant, für die Diplomatie anschlussfähig und für die Kriegslage potenziell bedeutsam. Doch die Evidenz trägt nur eine vorläufige Bewertung. Ob aus der Pause mehr wird als ein Signal, ist offen.",
-            "Der systemische Zusatznutzen der Analyse liegt deshalb in der sauberen Trennung von Ankündigung und Wirkung. Es gibt ein plausibles Wirkungspotenzial auf Schutz, Verhandlung und Risikowahrnehmung. Es gibt ein ebenso plausibles Wirkungsrisiko, dass die Pause taktisch bleibt oder schnell endet. Beobachtbar ist bisher nur die Ankündigung und die Reise der Unterhändler. Alles Weitere muss sich an der tatsächlichen Zustandsveränderung messen lassen."
+            "Zusammengefasst zeigt der Fall einen seltenen Doppelvorgang: direkte Gespräche zwischen russischer und US-amerikanischer Seite und zugleich die Ankündigung einer dreitägigen Angriffspause auf Kyjiw. Das kann kurzfristig entlastend wirken und den Verhandlungsraum öffnen. Es kann aber ebenso gut ein fragiles Signal ohne Substanz bleiben.",
+            "Die richtige WÖK-Lesart lautet deshalb: hohe Relevanz, offenes Potenzial, kein gesicherter Wirkungsnachweis. Menschlich ist der Fall bedeutsam, demokratiebezogen mittelbar, ökologisch in den Quellen nicht belegt. Systemisch ist er interessant, weil er zeigt, wie schnell aus diplomischer Bewegung ein Erwartungsraum entsteht, der erst durch tatsächliche Zustandsänderungen zu Wirkung wird."
           ]
         }
       ],
       "claim_ledger": [
         {
-          "claim": "Putin hat wegen des Besuchs der US-Unterhändler einen dreitägigen Stopp der Luftangriffe auf Kyjiw angeordnet.",
+          "claim": "In Moskau haben die Gespräche zwischen Wladimir Putin und den US-Unterhändlern Steve Witkoff und Jared Kushner begonnen.",
           "type": "fact",
           "source_ids": [
-            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
-          ],
-          "evidence_level": "medium",
-          "data_status": "attributed",
-          "uncertainty": "Nur eine journalistische Quelle liegt vor; die Anordnung ist berichtet, aber nicht unabhängig bestätigt.",
-          "date": "2026-09-05"
-        },
-        {
-          "claim": "Die Angriffspause soll am Sonntag beginnen und drei Tage dauern.",
-          "type": "fact",
-          "source_ids": [
-            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
-          ],
-          "evidence_level": "medium",
-          "data_status": "attributed",
-          "uncertainty": "Zeitpunkt und Dauer stammen aus der Berichterstattung der DW; keine unabhängige Verifikation in den Quellen.",
-          "date": "2026-09-05"
-        },
-        {
-          "claim": "US-Unterhändler Jared Kushner und Steve Witkoff sollen Gespräche in Moskau und anschließend in Kyjiw führen.",
-          "type": "fact",
-          "source_ids": [
-            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
-            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
-          ],
-          "evidence_level": "medium",
-          "data_status": "attributed",
-          "uncertainty": "Die Reisepläne werden in mehreren journalistischen Berichten genannt; der tatsächliche Gesprächsverlauf ist offen.",
-          "date": "2026-09-05"
-        },
-        {
-          "claim": "Trump bezeichnete Kushner und Witkoff als zwei großartige Verhandler und erklärte, man wolle prüfen, ob etwas erreicht werden könne.",
-          "type": "fact",
-          "source_ids": [
-            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
-            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
-          ],
-          "evidence_level": "medium",
-          "data_status": "attributed",
-          "uncertainty": "Die Äußerung wird journalistisch wiedergegeben; sie ist eine politische Selbstbeschreibung, kein Wirkungsnachweis.",
-          "date": "2026-09-05"
-        },
-        {
-          "claim": "Eine befristete Unterbrechung von Luftangriffen kann die unmittelbare Sicherheitslage in Kyjiw kurzfristig verbessern.",
-          "type": "impact_potential",
-          "source_ids": [
-            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
-          ],
-          "evidence_level": "medium",
-          "data_status": "inferred",
-          "uncertainty": "Potenzial hängt von tatsächlicher Einhaltung ab; in den Quellen ist noch keine Umsetzung belegt.",
-          "date": "2026-09-05"
-        },
-        {
-          "claim": "Die angekündigte Pause kann als taktisches Signal dienen, ohne den Kriegskurs zu ändern.",
-          "type": "impact_risk",
-          "source_ids": [
-            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
-            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
-          ],
-          "evidence_level": "medium",
-          "data_status": "inferred",
-          "uncertainty": "Dies ist eine analytische Risikoeinschätzung auf Basis der befristeten Ankündigung, kein belegter Verlauf.",
-          "date": "2026-09-05"
-        },
-        {
-          "claim": "Es gibt noch keinen belegten Rückgang von Angriffen, Opferzahlen oder eine nachweisbare politische Einigung.",
-          "type": "observation",
-          "source_ids": [
-            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
-            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
-            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0"
           ],
           "evidence_level": "high",
           "data_status": "confirmed",
-          "uncertainty": "Die gelieferten Quellen berichten nur über Ankündigungen und Reisen, nicht über eingetretene Zustandsänderungen.",
+          "uncertainty": "Die Quelle berichtet den Beginn der Gespräche; nähere Inhalte sind in den gelieferten Daten nicht belegt.",
           "date": "2026-09-05"
         },
         {
-          "claim": "Wirkung ist nur als tatsächliche Zustandsveränderung zu bewerten; Reichweite, Ankündigung oder Zielbezug sind noch kein Wirkungsnachweis.",
-          "type": "woek_definition",
-          "source_ids": [],
+          "claim": "Putin hat wegen des Besuchs von US-Unterhändlern einen dreitägigen Stopp der Luftangriffe auf Kyjiw angeordnet.",
+          "type": "fact",
+          "source_ids": [
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0"
+          ],
           "evidence_level": "high",
           "data_status": "confirmed",
-          "uncertainty": "Methodische WOeK-Definition aus dem Auftrag.",
-          "date": null
-        },
-        {
-          "claim": "Die Meldung berührt vor allem Mensch und Demokratie; ein direkter Planet-Bezug ist in den Quellen nicht angelegt.",
-          "type": "normative_assessment",
-          "source_ids": [
-            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
-            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
-            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
-          ],
-          "evidence_level": "medium",
-          "data_status": "inferred",
-          "uncertainty": "Normative Einordnung innerhalb der WÖk; kein externer Wirkungsnachweis.",
+          "uncertainty": "Die tatsächliche Einhaltung der Pause ist in den gelieferten Quellen nicht belegt.",
           "date": "2026-09-05"
         },
         {
-          "claim": "Wenn die Pause eingehalten wird, könnte die Gesprächsdynamik zwischen Russland, den USA und der Ukraine verändert werden.",
+          "claim": "Die US-Seite will ihre Vermittlungsversuche im Ukraine-Krieg wieder aufnehmen und einen neuen Vorschlag präsentieren.",
+          "type": "fact",
+          "source_ids": [
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Ob der neue Vorschlag in den Gesprächen substanziell aufgenommen wurde, bleibt offen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Am Sonntag sollen die US-Gesandten erstmals auch Kyjiw besuchen.",
+          "type": "fact",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Quelle berichtet einen geplanten Besuch; eine tatsächliche Durchführung ist nicht belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die USA nehmen ihre Vermittlung für ein Ende des Kriegs in der Ukraine wieder auf.",
+          "type": "fact",
+          "source_ids": [
+            "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Aussage stammt aus einem journalistischen Bericht; die vorliegenden Daten belegen die Wiederaufnahme der Vermittlung als berichteten Vorgang, nicht als unabhängig verifizierten Abschluss.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Eine tatsächlich eingehaltene Angriffspause auf Kyjiw würde die unmittelbare Sicherheitslage für Menschen in der Stadt kurzfristig verbessern.",
           "type": "analytical_inference",
           "source_ids": [
-            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
-            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
           ],
           "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Das ist eine logische Folge einer realen Unterlassung von Angriffen, aber in den gelieferten Quellen nicht als eingetretene Wirkung belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Ankündigung einer Pause ist zunächst nur ein Wirkungs- oder Resonanzpotenzial, kein Beleg für eingetretene Wirkung.",
+          "type": "woek_definition",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodische Einordnung nach WÖK-Logik, nicht als Nachrichtenfakt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Für den Referenzrahmen Mensch ist der Fall hoch relevant, weil er ein aktives Kriegsgeschehen und mögliche Schutzwirkung für Zivilbevölkerung betrifft.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Bewertung auf Basis der berichteten Lage; kein Wirkungsnachweis.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Für den Referenzrahmen Planet gibt es in den gelieferten Quellen keinen direkten Umwelt- oder Klimabezug.",
+          "type": "fact",
+          "source_ids": [
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Keine der gelieferten Quellen enthält einen belegten Umweltbezug.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Eine wiederholbare Feuerpausen-Logik könnte künftig Verhandlungs- und Deeskalationsmuster prägen.",
+          "type": "impact_potential",
+          "source_ids": [
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+          ],
+          "evidence_level": "low",
           "data_status": "scenario",
-          "uncertainty": "Abhängig von Umsetzung und Reaktion der Konfliktparteien; kein Beleg für eingetretene Veränderung.",
+          "uncertainty": "Langfristige Strukturwirkung ist nicht belegt, sondern nur als mögliches Szenario abgeleitet.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die angekündigte Pause könnte symbolisch sein oder nicht eingehalten werden.",
+          "type": "impact_risk",
+          "source_ids": [
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Das Risiko folgt aus der offenen Beleglage; keine der Quellen bestätigt die Umsetzung der Pause.",
           "date": "2026-09-05"
         }
       ],
       "counter_evidence": [
         {
-          "finding": "Die Quellen belegen Gespräche und Ankündigungen, aber keinen tatsächlich eingetretenen Rückgang von Angriffen oder eine belastbare Friedensvereinbarung.",
+          "finding": "Die gelieferten Quellen belegen Gespräche und Ankündigungen, aber keine tatsächliche Einhaltung der Angriffspause auf Kyjiw.",
+          "source_ids": [
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+          ],
+          "effect_on_assessment": "Begrenzt die Bewertung auf Potenzial und Risiko; eine beobachtete Wirkung darf nicht behauptet werden."
+        },
+        {
+          "finding": "Die Quellen sprechen von einer Wiederaufnahme der Vermittlung und einem neuen Vorschlag, belegen aber keinen inhaltlichen Durchbruch.",
+          "source_ids": [
+            "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb"
+          ],
+          "effect_on_assessment": "Schwächt jede These eines bereits eingetretenen Transformationseffekts."
+        },
+        {
+          "finding": "Die geplante Reise nach Kyjiw ist angekündigt, aber in den gelieferten Daten nicht als tatsächlich erfolgt belegt.",
           "source_ids": [
             "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
-            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
-            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3"
+            "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
+            "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7"
           ],
-          "effect_on_assessment": "Begrenzt jede starke Wirkungszuschreibung; Analyse bleibt bei Potenzial, Risiko und vorläufiger Zurechnung."
-        },
-        {
-          "finding": "Selenskyj wird in einer Quelle mit einem Feuerpausen-Vorschlag zitiert, gleichzeitig heißt es, dass die Ukraine und Russland weiter gegenseitige Angriffe melden.",
-          "source_ids": [
-            "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3"
-          ],
-          "effect_on_assessment": "Zeigt, dass die Kriegsdynamik fortbesteht und die angekündigte Pause nicht als bereits wirksame Deeskalation gelesen werden kann."
-        },
-        {
-          "finding": "Die US-Unterhändler werden in mehreren Berichten nur als unterwegs oder angekommen beschrieben; das belegt den Besuch, aber nicht die Resultate der Gespräche.",
-          "source_ids": [
-            "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
-            "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb",
-            "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5"
-          ],
-          "effect_on_assessment": "Verhindert eine Zurechnung von Verhandlungserfolg; die Lage bleibt offen."
+          "effect_on_assessment": "Reduziert die Sicherheit der Schlussfolgerung, dass sich der Verhandlungsprozess bereits sichtbar ausgeweitet hat."
         }
       ],
       "what_changes_the_assessment": [
-        "Bestätigung, dass die dreitägige Pause tatsächlich eingehalten wird",
-        "Unabhängige Hinweise auf geringere Angriffe, Luftalarme oder Schäden in Kyjiw während der Frist",
-        "Konkrete Vereinbarungen oder schriftlich bestätigte Ergebnisse aus den Gesprächen in Moskau oder Kyjiw",
-        "Widersprüchliche Berichte, dass die Pause nicht umgesetzt wurde oder sofort gebrochen wurde",
-        "Neue Aussagen der Beteiligten, die den Zweck der Pause klar als taktisch oder als Verhandlungsschritt einordnen"
+        "Ein belastbarer Nachweis, dass die dreitägige Angriffspause tatsächlich eingehalten wurde, würde aus Potenzial eine beobachtete Schutzwirkung machen.",
+        "Ein gemeinsames Ergebnis oder eine konkrete Vereinbarung nach den Gesprächen würde die Bewertung von reiner Diplomatiebewegung in Richtung substantieller Wirkung verschieben.",
+        "Ein Ausbleiben oder Scheitern des angekündigten Kyjiw-Besuchs würde die Zuverlässigkeit des gesamten Signalmusters schwächen."
       ],
       "self_frame_check": {
         "passed": true,
         "issues": [],
-        "recommended_title": "Dreitägige Angriffspause auf Kyjiw: Was die neue Vermittlungsphase wirklich verändert",
-        "recommended_summary": "Die Quellen zeigen eine angekündigte dreitägige Pause der Luftangriffe auf Kyjiw und neue US-Vermittlungsversuche. Das ist ein möglicher Wirkpfad, aber noch kein belegter Friedens- oder Deeskalationseffekt.",
-        "recommended_meta_description": "Dreitägige Angriffspause auf Kyjiw und neue US-Vermittlung: Was die Meldung für Sicherheit, Verhandlungskanal und Wirkungsgrenzen bedeutet."
+        "recommended_title": "Drei Tage Angriffspause auf Kyjiw: Was die Gespräche in Moskau für Sicherheit und Verhandlungen bedeuten",
+        "recommended_summary": "Die Gespräche in Moskau und die angekündigte Angriffspause auf Kyjiw schaffen einen relevanten Wirkungsraum, aber noch keinen Wirkungsnachweis. Entscheidend bleibt die tatsächliche Umsetzung.",
+        "recommended_meta_description": "Gespräche in Moskau, angekündigte Angriffspause auf Kyjiw: Analyse von Wirkungspotenzial, Risiken und Grenzen der Vermittlung."
       },
       "reading_time_minutes": 5,
       "source_snapshot": [
@@ -1841,6 +1905,16 @@
           "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
           "url": "https://www.dw.com/de/putin-drei-tage-angriffspause-w%C3%A4hrend-ukraine-verhandlungen/a-79047412?maca=de-rss-de-news-1089-xml-mrss",
           "published_at": "2026-09-05T13:01:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Ukraine-News: Gespräche zwischen Putin und US-Unterhändlern begonnen",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-158.html",
+          "published_at": "2026-09-05T18:33:12.000Z",
           "primary_source": false
         },
         {
@@ -2060,6 +2134,144 @@
               "date": "2026-09-05"
             }
           ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-05T18:45:53.209Z",
+          "source_fingerprint": "fdcacf32e79f464ef271fee2ad82843b3252958eb7d9531c9845fecd635ac781",
+          "title": "Drei Tage Angriffspause auf Kyjiw: Was die Gespräche in Moskau für Sicherheit und Verhandlungen bedeuten",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "In Moskau haben die Gespräche zwischen Wladimir Putin und den US-Unterhändlern Steve Witkoff und Jared Kushner begonnen.",
+              "type": "fact",
+              "source_ids": [
+                "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quelle berichtet den Beginn der Gespräche; nähere Inhalte sind in den gelieferten Daten nicht belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Putin hat wegen des Besuchs von US-Unterhändlern einen dreitägigen Stopp der Luftangriffe auf Kyjiw angeordnet.",
+              "type": "fact",
+              "source_ids": [
+                "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die tatsächliche Einhaltung der Pause ist in den gelieferten Quellen nicht belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die US-Seite will ihre Vermittlungsversuche im Ukraine-Krieg wieder aufnehmen und einen neuen Vorschlag präsentieren.",
+              "type": "fact",
+              "source_ids": [
+                "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Ob der neue Vorschlag in den Gesprächen substanziell aufgenommen wurde, bleibt offen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Am Sonntag sollen die US-Gesandten erstmals auch Kyjiw besuchen.",
+              "type": "fact",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Quelle berichtet einen geplanten Besuch; eine tatsächliche Durchführung ist nicht belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die USA nehmen ihre Vermittlung für ein Ende des Kriegs in der Ukraine wieder auf.",
+              "type": "fact",
+              "source_ids": [
+                "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Aussage stammt aus einem journalistischen Bericht; die vorliegenden Daten belegen die Wiederaufnahme der Vermittlung als berichteten Vorgang, nicht als unabhängig verifizierten Abschluss.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Eine tatsächlich eingehaltene Angriffspause auf Kyjiw würde die unmittelbare Sicherheitslage für Menschen in der Stadt kurzfristig verbessern.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Das ist eine logische Folge einer realen Unterlassung von Angriffen, aber in den gelieferten Quellen nicht als eingetretene Wirkung belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Ankündigung einer Pause ist zunächst nur ein Wirkungs- oder Resonanzpotenzial, kein Beleg für eingetretene Wirkung.",
+              "type": "woek_definition",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+                "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodische Einordnung nach WÖK-Logik, nicht als Nachrichtenfakt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Für den Referenzrahmen Mensch ist der Fall hoch relevant, weil er ein aktives Kriegsgeschehen und mögliche Schutzwirkung für Zivilbevölkerung betrifft.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Bewertung auf Basis der berichteten Lage; kein Wirkungsnachweis.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Für den Referenzrahmen Planet gibt es in den gelieferten Quellen keinen direkten Umwelt- oder Klimabezug.",
+              "type": "fact",
+              "source_ids": [
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+                "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+                "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Keine der gelieferten Quellen enthält einen belegten Umweltbezug.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Eine wiederholbare Feuerpausen-Logik könnte künftig Verhandlungs- und Deeskalationsmuster prägen.",
+              "type": "impact_potential",
+              "source_ids": [
+                "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+              ],
+              "evidence_level": "low",
+              "data_status": "scenario",
+              "uncertainty": "Langfristige Strukturwirkung ist nicht belegt, sondern nur als mögliches Szenario abgeleitet.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die angekündigte Pause könnte symbolisch sein oder nicht eingehalten werden.",
+              "type": "impact_risk",
+              "source_ids": [
+                "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+                "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Das Risiko folgt aus der offenen Beleglage; keine der Quellen bestätigt die Umsetzung der Pause.",
+              "date": "2026-09-05"
+            }
+          ]
         }
       ]
     },
@@ -2094,7 +2306,7 @@
         "role": "Methodik & redaktionelle Verantwortung",
         "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
       },
-      "transparency_note": "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
       "method_version": "1.0",
       "source_fingerprint": "5f3f1ea154a0a471ef080877764d397f3a7d07bb0b9cda59e9072552d9854a62",
       "candidate_score": 77,
@@ -3014,6 +3226,1551 @@
               "evidence_level": "low",
               "data_status": "inferred",
               "uncertainty": "Resonanzpotenzial ist aus der Berichterstattung ableitbar, aber nicht als eingetretene öffentliche Wirkung belegt.",
+              "date": "2026-09-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-94b29d766984",
+      "story_id": "wt-aabe8c0430bf8f84",
+      "related_story_ids": [
+        "wt-aabe8c0430bf8f84",
+        "wt-8f76552549f6aa68"
+      ],
+      "related_case_id": null,
+      "slug": "rettung-in-nepal-was-der-tunnel-fall-uber-infrastruktur-arbeitsschutz-und-krisenko-94b29d",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
+      "candidate_score": 69,
+      "analysis_gain_score": 51,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 7,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T14:51:51.466Z",
+      "updated_at": "2026-09-05T14:51:51.466Z",
+      "version": 1,
+      "editorial_question": "Was zeigt die Rettung zweier Wasserkraftarbeiter in Nepal über die Verwundbarkeit von Infrastruktur, Arbeitsschutz und Krisenkoordination in einer Flutlage – und was lässt sich daraus systemisch, aber quellengebunden, ableiten?",
+      "analysis_type": "case_analysis",
+      "title": "Rettung in Nepal: Was der Tunnel-Fall über Infrastruktur, Arbeitsschutz und Krisenkoordination zeigt",
+      "subtitle": "Zwei Arbeiter wurden lebend aus einem blockierten Wasserkrafttunnel geborgen; über die Zahl weiterer Betroffener gehen die Angaben auseinander.",
+      "teaser": "Die Rettung zweier Wasserkraftarbeiter in Nepal ist ein akutes Humanereignis. Systemisch wird sie dort relevant, wo Fluten, Tunnelbau, Notfalllogistik und unklare Lagebilder zusammenwirken.",
+      "seo_description": "Nepal: Zwei Wasserkraftarbeiter wurden gerettet. Die Analyse ordnet die Lage, die offene Zahl weiterer Betroffener und die systemischen Folgen ein.",
+      "additional_value": "Der zusätzliche journalistische Nutzen liegt nicht im Wiederholen der Rettungsmeldung, sondern in der Einordnung des Wirkpfads: Eine Einzelrettung ist noch keine Strukturänderung, verweist hier aber auf ein verletzliches Zusammenspiel aus Katastrophenlage, Arbeitsplätzen in sensibler Infrastruktur und unklarer Lageführung. Der Fall zeigt damit zugleich menschliche Sofortwirkung, planetare Auslöser und die Frage, wie belastbar Rettungs- und Informationsketten in einer Extremwetterlage sind.",
+      "research_summary": "Quellengebunden gesichert ist, dass zwei Wasserkraftarbeiter in Nepal aus einem durch Schlamm und Geröll blockierten Tunnel gerettet wurden. Die Rettung erfolgte neun Tage nach den Fluten. Mindestens eine Quelle berichtet, dass beide Männer nach Kathmandu in ein Krankenhaus geflogen wurden. Offen und widersprüchlich bleibt die Gesamtzahl weiterer Vermisster und im Tunnel Eingeschlossener: Ein Bericht spricht von etwa 900 Vermissten aus 12 Wasserkraftprojekten und rund 500 mutmaßlich in Tunneln Eingeschlossenen, ein anderer von über 5.000 Vermissten und 115 mutmaßlich im Tunnel Eingeschlossenen. Aus diesen Angaben folgt kein belastbarer Schluss auf das Gesamtausmaß, wohl aber auf eine laufende, dynamische Krisenlage mit begrenzter Evidenz.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Zwei Gerettete, aber ein offenes Gesamtbild",
+          "paragraphs": [
+            "Im Kern steht ein klar belegtens Ereignis: Zwei Wasserkraftarbeiter wurden in Nepal lebend aus einem Tunnel befreit, der nach massiven Überschwemmungen mit Schlamm und Geröll blockiert war. Die Rettung erfolgte neun Tage nach den Fluten. Eine Quelle ergänzt, dass beide Männer anschließend nach Kathmandu in ein Krankenhaus geflogen wurden. Das ist zunächst eine unmittelbare humanitäre Schadensbegrenzung und keine bloße Symbolmeldung.",
+            "Der systemische Haken liegt im Rest der Lage. Die Quellen beschreiben keine abgeschlossene Situation, sondern eine fortlaufende Suche nach weiteren Überlebenden. Dabei weichen die Angaben zur Zahl der Vermissten deutlich voneinander ab. Gerade diese Widersprüche sind für die Einordnung wichtiger als eine vorschnelle Gesamtzahl: Sie zeigen, dass das Lagebild noch nicht stabil ist und die Rettungs- und Informationsarbeit parallel laufen."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusammenhang: Katastrophe trifft auf Energie- und Arbeitsinfrastruktur",
+          "paragraphs": [
+            "Der Fall ist nicht nur ein Unglücksbericht über zwei Menschen in einem Tunnel. Er zeigt, wie eng Naturgefahr, Bau- und Betriebsinfrastruktur und Arbeitsrisiken in einer Flutlage verschränkt sind. Wasserkraftprojekte sind auf funktionierende Zugänge, Tunnelsysteme und verlässliche Notfalllogik angewiesen. Wenn eine Flut diese Zugänge verschüttet, wird aus einer technischen Anlage ein Rettungsraum mit eigener Dynamik.",
+            "Wirkung im WOeK-Sinn ist hier die tatsächliche Zustandsveränderung: Die Rettung verschiebt den Zustand von „eingeschlossen und akut gefährdet“ zu „geborgen und medizinisch versorgt“. Alles Weitere ist zunächst Wirkungspotenzial oder Wirkungsrisiko. Dass Einsatzkräfte weiter nach Überlebenden suchen, deutet auf eine laufende Krisenreaktion hin, aber nicht automatisch auf zusätzliche eingetretene Wirkung."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Drei Blickrichtungen auf denselben Vorfall",
+          "paragraphs": [
+            "Aus der Mensch-Perspektive steht die unmittelbare Rettung und medizinische Versorgung im Vordergrund. Die Quellen nennen lebend geborgene Arbeiter und in einer Meldung den Weitertransport ins Krankenhaus. Das ist die stärkste belegte Wirkung dieser Geschichte: Sie betrifft konkrete Menschen in akuter Gefahr. Über die Langzeitfolgen für Gesundheit oder Einkommen lässt sich aus dem Material nichts Belastbares ableiten.",
+            "Aus der Planet-Perspektive verweist der Fall auf die Fluten als Auslöser. Die Umweltlage ist nicht Kulisse, sondern kausaler Ausgangspunkt der Blockade. Allerdings ist ein Extremwetterereignis nicht automatisch ein Nachweis für Klimawirkung im engeren Sinn; dafür fehlen hier Referenzen. Für Demokratie und öffentliche Kontrolle ist der Fall nur indirekt relevant: Widersprüchliche Zahlen zeigen, wie wichtig belastbare Lagekommunikation ist. Eine demokratische Frage wird daraus erst dort, wo Behörden, Betreiber und Öffentlichkeit über Datenqualität, Schutzkonzepte und Rechenschaft sprechen."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Von der Rettung zur möglichen Strukturfrage",
+          "paragraphs": [
+            "Die erste Ordnung ist die Rettung selbst. Sie beendet für zwei Personen eine akute Gefährdung und ist damit eine beobachtete Wirkung. Die zweite Ordnung betrifft den laufenden Einsatz: Suchteams, medizinische Versorgung und Bergung verändern das Krisenmanagement, aber die Wirkung ist hier noch situativ und offen.",
+            "Erst die dritte Ordnung berührt strukturelle Fragen: Wenn sich herausstellt, dass viele Menschen in Tunneln oder an anderen Projektstandorten eingeschlossen waren, kann das Druck auf Sicherheitsstandards, Evakuierungsroutinen und Notfallplanung ausüben. Das ist kein automatisch eingetretener Wandel, sondern ein mögliches Transformationsfenster. In der WOeK-Logik ist das Wirkungspotenzial, nicht bereits Wirkung."
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Die Rettung zeigt Handlungsfähigkeit, die Datenlage eher Begrenzung",
+          "paragraphs": [
+            "Die erfolgreiche Bergung spricht für operative Resilienz: Unter schwierigen Bedingungen war es möglich, den Zugang zu den beiden Arbeitern wiederherzustellen und sie lebend herauszubringen. Das ist ein reales Leistungszeichen von Einsatzkräften und Rettungsorganisationen.",
+            "Gleichzeitig zeigen die widersprüchlichen Angaben zur Zahl weiterer Betroffener eine Grenze der Lageübersicht. Resilienz ist nicht nur Rettungskraft, sondern auch Informations- und Koordinationsfähigkeit. Wenn die Zahlenlage auseinandergeht, kann das Priorisierung erschweren. Nichtkompensation und Reverse Merit Order sind hier keine Steuerungsvorschriften, aber als Denkhinweise relevant: Zuerst zählt die Sicherung akuter Schutzbedarfe, nicht die abstrakte Optimierung nach Reichweite oder Fernwirkung."
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externe Effekte: Der Tunnel-Fall strahlt auf Betrieb, Sicherheit und Vertrauen aus",
+          "paragraphs": [
+            "Die direkte externe Folge ist die Belastung von Such-, Rettungs- und Gesundheitskapazitäten. Das sind keine abstrakten Nebenwirkungen, sondern zusätzliche reale Einsätze in einer ohnehin katastrophischen Lage. Außerdem kann eine solche Situation auf den Betrieb betroffener Wasserkraftprojekte zurückwirken, etwa durch Unterbrechungen, Inspektionen oder spätere Sicherheitsprüfungen. Dafür gibt es im Material jedoch keine bestätigte operative Folgemeldung.",
+            "Auch Vertrauen ist ein externer Effekt, aber hier nur in einem engen Sinn: Nicht als Stimmung, sondern als Robustheit des Lagebilds. Unterschiedliche Zahlen in den Berichten zeigen, dass Öffentlichkeit und Einsatzkräfte mit einer Informationssituation arbeiten, die noch nicht harmonisiert ist. Das ist eine relevante Schwäche, aber noch keine nachgewiesene Fehlsteuerung."
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer trägt die Last, wer erhält die Rettung?",
+          "paragraphs": [
+            "Die Lasten treffen zunächst die eingeschlossenen Arbeiter, dann ihre Familien, die Rettungsteams und potenziell weitere Betroffene in den Projekten. Die begünstigte Gruppe ist unmittelbar sehr klein: zwei gerettete Personen. Das ist keine politische Wertung, sondern eine Beschreibung der asymmetrischen Betroffenheit.",
+            "Verteilungsfragen entstehen systemisch dort, wo die gleiche Infrastruktur einigen Beschäftigung und Energieversorgung bietet, anderen aber im Krisenfall besondere Verwundbarkeit auferlegt. Das Material erlaubt keine Aussage über Arbeitsverträge, Schutzstandards oder Entschädigungen. Es zeigt lediglich, dass Infrastrukturnutzen und infrastrukturelles Risiko im selben System verknüpft sein können."
+          ]
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Frame- und Diskurscheck: Sachverhalt vor Deutung",
+          "paragraphs": [
+            "Die Meldung lädt zu starken Bildern ein: Rettung, Hoffnung, Katastrophe. Für die Analyse ist aber wichtig, dass diese Bilder nicht an die Stelle des Sachverhalts treten. Belegt ist die Rettung zweier Arbeiter und die fortgesetzte Suche nach weiteren Überlebenden. Nicht belegt ist, dass daraus bereits eine umfassende politische oder technologische Lehre gezogen werden kann.",
+            "Attribution muss sichtbar bleiben. Die Fluten haben die Tunnel blockiert; das ist der Ausgangspunkt. Die Berichte unterscheiden sich dann stark in ihren Zahlen. Deshalb wäre es unseriös, eine einzelne Zahl als endgültige Wahrheit zu setzen oder aus Kommunikationsstärke automatisch Wirksamkeit abzuleiten. Kommunikatives Wirkungspotenzial ist vorhanden, weil der Fall Aufmerksamkeit auf Infrastrukturverwundbarkeit lenkt. Eingetretene Wirkung ist aber nur die Rettung selbst."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was das Material nicht trägt",
+          "paragraphs": [
+            "Die größte Unsicherheit betrifft die Gesamtzahl der Vermissten und Eingeschlossenen. Die Quellen nennen sehr unterschiedliche Größenordnungen. Daraus folgt, dass keine belastbare Gesamtbilanz erstellt werden kann. Die Lage bleibt offen und potenziell dynamisch.",
+            "Ebenfalls offen sind Ausmaß und Verteilung möglicher Schäden an den betroffenen Projekten, die Frage nach der Dauer der Betriebsunterbrechung sowie mögliche Folgemaßnahmen zu Arbeitsschutz und Katastrophenvorsorge. Auch eine Einordnung als überregionale Transformationsgeschichte wäre derzeit zu stark. Das Material trägt eher eine Case- als eine Makroanalyse."
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Lage weiter messen lässt",
+          "paragraphs": [
+            "Entscheidend sind neue Behördenangaben zur Zahl der Vermissten, bestätigte weitere Rettungen oder Todesfälle und belastbare Angaben dazu, wie viele Menschen in welchen Projekten betroffen sind. Erst solche Informationen würden aus dem offenen Lagebild eine robustere Schadens- und Wirkungsbilanz machen.",
+            "Ebenso relevant wären Hinweise auf konkrete Anpassungen bei Rettungswegen, Sicherheitskonzepten oder Projektbetrieb. Ohne solche Belege bleibt die strukturelle Folge eine plausible, aber nicht bestätigte Erwartung. Die Analyse sollte deshalb zwischen aktueller Rettung, laufender Gefahrenlage und möglicher Reformwirkung sauber trennen."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Eine kleine bestätigte Rettung in einer großen unklaren Katastrophe",
+          "paragraphs": [
+            "Die bestätigte Wirkung dieser Geschichte ist eng, aber wichtig: Zwei Menschen sind lebend aus einer lebensgefährlichen Lage geborgen worden. Das ist ein echter Zustandswechsel mit unmittelbarer humanitärer Bedeutung. Der Rest des Falls ist vor allem offene Krisenlage, kein abgeschlossener Befund.",
+            "Systemisch zeigt der Fall, wie Katastrophen, technische Infrastruktur und Arbeitsschutz ineinandergreifen. Er verweist auf ein mögliches Wirkungspotenzial für Sicherheits- und Rettungspraktiken, aber die Evidenz reicht nicht aus, um bereits von Transformationswirkung zu sprechen. Der journalistische Mehrwert liegt deshalb in der disziplinierten Trennung von Rettung, Risiko, Ungewissheit und möglicher Folgewirkung."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Zwei Wasserkraftarbeiter wurden in Nepal aus einem durch Schlamm und Geröll blockierten Tunnel gerettet.",
+          "type": "fact",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Kernrettung ist mehrfach berichtet; die genaue Begleitumstände variieren in den Meldungen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Rettung erfolgte neun Tage nach den Überschwemmungen in Nepal.",
+          "type": "fact",
+          "source_ids": [
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die zeitliche Einordnung ist konsistent in den vorliegenden Berichten.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Mindestens eine Quelle berichtet, dass beide Männer nach Kathmandu in ein Krankenhaus geflogen wurden.",
+          "type": "observation",
+          "source_ids": [
+            "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Diese Information steht nur in einer der gelieferten Quellen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Zahl der weiteren Vermissten und Eingeschlossenen ist in den Quellen widersprüchlich.",
+          "type": "fact",
+          "source_ids": [
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Ein Bericht nennt etwa 900 Vermisste aus 12 Projekten und rund 500 mutmaßlich in Tunneln Eingeschlossene; ein anderer über 5.000 Vermisste und 115 im Tunnel Vermutete.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Wirkung im WOeK-Sinn ist eine tatsächliche Zustandsveränderung, nicht bloß Reichweite oder Aufmerksamkeit.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "open",
+          "data_status": "open",
+          "uncertainty": "Methodische Setzung aus dem Auftrag; kein Nachrichtenfakt.",
+          "date": null
+        },
+        {
+          "claim": "Die Rettung von zwei Arbeitern ist eine beobachtete Wirkung, weil sich ihr Zustand von eingeschlossen zu geborgen verändert hat.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+          ],
+          "evidence_level": "high",
+          "data_status": "inferred",
+          "uncertainty": "Die Zustandsveränderung ist aus der Rettungsmeldung klar ableitbar.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die laufende Suche nach weiteren Überlebenden zeigt Wirkungspotenzial, aber noch keine belegte zusätzliche Wirkung.",
+          "type": "impact_potential",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Es gibt Hinweise auf laufende Einsätze, aber keine belastbare Bestätigung weiterer Rettungen im Material.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Unklare Zahlen können Lagebild und Priorisierung der Rettung erschweren.",
+          "type": "impact_risk",
+          "source_ids": [
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Das folgt aus der widersprüchlichen Berichterstattung, ist aber nicht direkt belegt als eingetretene Fehlsteuerung.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Der Fall berührt kritische Energie- und Arbeitsinfrastruktur in einer Katastrophenlage.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Zuordnung zur Infrastruktur ergibt sich aus der Art der betroffenen Wasserkraftprojekte und Tunnel.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Rettung kann Druck auf Sicherheitsstandards, Notfallplanung und den Betrieb betroffener Wasserkraftprojekte ausüben.",
+          "type": "impact_potential",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "evidence_level": "low",
+          "data_status": "scenario",
+          "uncertainty": "Im Material nicht als Folge bestätigt; es handelt sich um ein plausibles Potenzial.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Der Bericht nennt mehr als 1.200 Todesopfer und über 5.000 Vermisste infolge der Fluten.",
+          "type": "fact",
+          "source_ids": [
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+            "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Diese Zahlen erscheinen nur in einzelnen Berichten und stehen im Spannungsverhältnis zu anderen Zahlenangaben.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Quellenlage erlaubt keine belastbare Gesamtbilanz des Katastrophenausmaßes.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+            "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+          ],
+          "evidence_level": "high",
+          "data_status": "inferred",
+          "uncertainty": "Die Berichte divergieren deutlich in zentralen Zahlen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Rettung zweier Arbeiter ist eine unmittelbare Schadensbegrenzung.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+          ],
+          "evidence_level": "high",
+          "data_status": "inferred",
+          "uncertainty": "Normative Einordnung auf Basis des belegten Zustandswechsels.",
+          "date": "2026-09-04"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die zentralen Zahlen zur Zahl weiterer Vermisster und Eingeschlossener widersprechen sich deutlich zwischen den Berichten.",
+          "source_ids": [
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "effect_on_assessment": "Verhindert eine harte Gesamtbilanz und begrenzt Zurechnung zu einem exakten Ausmaß der Katastrophe."
+        },
+        {
+          "finding": "Die Quellen sind journalistische Berichte und keine Primärdokumente; für zahlreiche Details liegt nur berichtete, nicht direkt verifizierte Information vor.",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc",
+            "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+          ],
+          "effect_on_assessment": "Erhöht die Unsicherheit bei Detailangaben wie Opferzahlen, Krankenhausverlegung und Gesamtzahl Betroffener."
+        },
+        {
+          "finding": "Es gibt keine bestätigten Angaben im Material zu konkreten Reformen, neuen Regeln oder tatsächlichen Änderungen an Sicherheitsstandards.",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "effect_on_assessment": "Begrenzt Aussagen über Transformation, Wirkungslenkung oder strukturelle Folgewirkung auf Potenzial statt auf eingetretene Wirkung."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Bestätigung neuer, konsistenter Behördenzahlen zur Gesamtzahl der Vermissten und Eingeschlossenen.",
+        "Belastbare Angaben zu weiteren Rettungen, Todesfällen oder Verletzten.",
+        "Konkrete Hinweise auf Sicherheits- oder Betriebsanpassungen bei den betroffenen Wasserkraftprojekten.",
+        "Eine Primärquelle oder offizielle Lageübersicht, die die widersprüchlichen Zahlen auflöst."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Rettung in Nepal: Was der Tunnel-Fall über Infrastruktur, Arbeitsschutz und Krisenkoordination zeigt",
+        "recommended_summary": "Zwei Wasserkraftarbeiter wurden in Nepal lebend aus einem blockierten Tunnel gerettet. Die Zahl weiterer Betroffener bleibt widersprüchlich.",
+        "recommended_meta_description": "Nepal: Zwei Wasserkraftarbeiter wurden gerettet. Die Analyse ordnet die Lage, die offene Zahl weiterer Betroffener und die systemischen Folgen ein."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+          "registry_source_id": "france24-en",
+          "publisher_id": "france24",
+          "publisher": "France 24",
+          "title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
+          "url": "https://www.france24.com/en/asia-pacific/20260904-two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal",
+          "published_at": "2026-09-04T05:10:44.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+          "registry_source_id": "euronews-en",
+          "publisher_id": "euronews",
+          "publisher": "Euronews",
+          "title": "Two trapped workers rescued from hydropower tunnel nine days after Nepal floods",
+          "url": "https://www.euronews.com/2026/09/04/two-trapped-workers-rescued-from-hydropower-tunnel-nine-days-after-nepal-floods",
+          "published_at": "2026-09-04T05:25:08.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+          "registry_source_id": "france24-en",
+          "publisher_id": "france24",
+          "publisher": "France 24",
+          "title": "Two trapped workers rescued from mud-clogged tunnel 9 days after Nepal floods",
+          "url": "https://www.france24.com/en/video/20260904-two-trapped-workers-rescued-from-mud-clogged-tunnel-9-days-after-nepal-floods",
+          "published_at": "2026-09-04T10:12:49.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc",
+          "registry_source_id": "euronews-en",
+          "publisher_id": "euronews",
+          "publisher": "Euronews",
+          "title": "Two hydropower workers rescued alive after nine days trapped in Nepal tunnel",
+          "url": "https://www.euronews.com/video/2026/09/04/two-hydropower-workers-rescued-alive-after-nine-days-trapped-in-nepal-tunnel",
+          "published_at": "2026-09-04T06:12:37.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b",
+          "registry_source_id": "france24-en",
+          "publisher_id": "france24",
+          "publisher": "France 24",
+          "title": "#Nepal: Two flood survivors rescued from hydropower tunnel",
+          "url": "https://www.france24.com/en/video/20260904-nepal-two-flood-survivors-rescued-from-hydropower-tunnel",
+          "published_at": "2026-09-04T09:38:17.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T14:51:51.466Z",
+          "source_fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
+          "title": "Rettung in Nepal: Was der Tunnel-Fall über Infrastruktur, Arbeitsschutz und Krisenkoordination zeigt",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Zwei Wasserkraftarbeiter wurden in Nepal aus einem durch Schlamm und Geröll blockierten Tunnel gerettet.",
+              "type": "fact",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Kernrettung ist mehrfach berichtet; die genaue Begleitumstände variieren in den Meldungen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Rettung erfolgte neun Tage nach den Überschwemmungen in Nepal.",
+              "type": "fact",
+              "source_ids": [
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+                "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die zeitliche Einordnung ist konsistent in den vorliegenden Berichten.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Mindestens eine Quelle berichtet, dass beide Männer nach Kathmandu in ein Krankenhaus geflogen wurden.",
+              "type": "observation",
+              "source_ids": [
+                "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Diese Information steht nur in einer der gelieferten Quellen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Zahl der weiteren Vermissten und Eingeschlossenen ist in den Quellen widersprüchlich.",
+              "type": "fact",
+              "source_ids": [
+                "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Ein Bericht nennt etwa 900 Vermisste aus 12 Projekten und rund 500 mutmaßlich in Tunneln Eingeschlossene; ein anderer über 5.000 Vermisste und 115 im Tunnel Vermutete.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Wirkung im WOeK-Sinn ist eine tatsächliche Zustandsveränderung, nicht bloß Reichweite oder Aufmerksamkeit.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "open",
+              "data_status": "open",
+              "uncertainty": "Methodische Setzung aus dem Auftrag; kein Nachrichtenfakt.",
+              "date": null
+            },
+            {
+              "claim": "Die Rettung von zwei Arbeitern ist eine beobachtete Wirkung, weil sich ihr Zustand von eingeschlossen zu geborgen verändert hat.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+              ],
+              "evidence_level": "high",
+              "data_status": "inferred",
+              "uncertainty": "Die Zustandsveränderung ist aus der Rettungsmeldung klar ableitbar.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die laufende Suche nach weiteren Überlebenden zeigt Wirkungspotenzial, aber noch keine belegte zusätzliche Wirkung.",
+              "type": "impact_potential",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Es gibt Hinweise auf laufende Einsätze, aber keine belastbare Bestätigung weiterer Rettungen im Material.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Unklare Zahlen können Lagebild und Priorisierung der Rettung erschweren.",
+              "type": "impact_risk",
+              "source_ids": [
+                "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Das folgt aus der widersprüchlichen Berichterstattung, ist aber nicht direkt belegt als eingetretene Fehlsteuerung.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Der Fall berührt kritische Energie- und Arbeitsinfrastruktur in einer Katastrophenlage.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Zuordnung zur Infrastruktur ergibt sich aus der Art der betroffenen Wasserkraftprojekte und Tunnel.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Rettung kann Druck auf Sicherheitsstandards, Notfallplanung und den Betrieb betroffener Wasserkraftprojekte ausüben.",
+              "type": "impact_potential",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+              ],
+              "evidence_level": "low",
+              "data_status": "scenario",
+              "uncertainty": "Im Material nicht als Folge bestätigt; es handelt sich um ein plausibles Potenzial.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Der Bericht nennt mehr als 1.200 Todesopfer und über 5.000 Vermisste infolge der Fluten.",
+              "type": "fact",
+              "source_ids": [
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+                "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Diese Zahlen erscheinen nur in einzelnen Berichten und stehen im Spannungsverhältnis zu anderen Zahlenangaben.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Quellenlage erlaubt keine belastbare Gesamtbilanz des Katastrophenausmaßes.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+                "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+              ],
+              "evidence_level": "high",
+              "data_status": "inferred",
+              "uncertainty": "Die Berichte divergieren deutlich in zentralen Zahlen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Rettung zweier Arbeiter ist eine unmittelbare Schadensbegrenzung.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+              ],
+              "evidence_level": "high",
+              "data_status": "inferred",
+              "uncertainty": "Normative Einordnung auf Basis des belegten Zustandswechsels.",
+              "date": "2026-09-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-166b13117cb1",
+      "story_id": "wt-4742476ae893311b",
+      "related_story_ids": [
+        "wt-4742476ae893311b",
+        "wt-6c26e428b894e714",
+        "wt-4fb94d2cebfca746",
+        "wt-60f4e4d7d43fad99",
+        "wt-33e396f2be1a3a1f",
+        "wt-7b385f58748f3d32",
+        "wt-f3d585eac14dec76",
+        "wt-f7d7115a53ff2c2f",
+        "wt-c053f94b1bbc57bd",
+        "wt-00fccb632042b492",
+        "wt-a5874ae28ed5533f",
+        "wt-03c6bacdda808696",
+        "wt-a6f6c9c60011b50c",
+        "wt-cb1584ee4d9e6a43",
+        "wt-1fbb056ccaaf351d",
+        "wt-5547189d2645384a",
+        "wt-7ae0b9f22404b684",
+        "wt-b9487671699d6c9b",
+        "wt-9812656e38b0d665"
+      ],
+      "related_case_id": "case-4dc00cde414b35",
+      "slug": "fahndung-nach-umspannwerk-sabotage-was-der-fall-fur-kritische-infrastruktur-verand-166b13",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "009de1fc2b2d661492718cc8e0fd9446585289a1ba044ac23d5a7520a875a3d3",
+      "candidate_score": 79,
+      "analysis_gain_score": 53,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 13,
+        "primary_source_count": 0,
+        "cited_claim_count": 85,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T17:54:23.215Z",
+      "updated_at": "2026-09-05T17:54:23.215Z",
+      "version": 1,
+      "editorial_question": "Was verändert die Fahndung nach einem 48-jährigen Tatverdächtigen im Kontext möglicher Sabotage an Umspannwerken systemisch – über den Einzelfall hinaus für Sicherheit, Versorgung und Vertrauen in kritische Infrastruktur?",
+      "analysis_type": "system_analysis",
+      "title": "Fahndung nach Umspannwerk-Sabotage: Was der Fall für kritische Infrastruktur verändert",
+      "subtitle": "Die Ermittlungen verdichten sich, doch der belastbare Wirkzusammenhang bleibt vorerst begrenzt",
+      "teaser": "Polizei und Staatsanwaltschaft suchen nach einem 48-Jährigen im Umfeld mutmaßlicher Sabotage an Stromanlagen. Der Fall zeigt vor allem die Verwundbarkeit kritischer Infrastruktur.",
+      "seo_description": "Fahndung nach Umspannwerk-Sabotage: Was der Fall für Stromnetz, Sicherheit und kritische Infrastruktur systemisch bedeuten kann.",
+      "additional_value": "Der Zusatznutzen liegt nicht im bloßen Meldungsstand, sondern in der Einordnung des Ermittlungs- und Schutzgeschehens als Problem kritischer Infrastruktur: öffentliche Fahndung, Hinweiswege, Spurenlage und parallele Vorfälle in NRW, Brandenburg und Sachsen zeigen einen Wirkpfad zwischen Sicherheitslage, Versorgungsresilienz und staatlicher Reaktionsfähigkeit. Zugleich trennt die Analyse sauber zwischen belegter Lage und bloßem Potenzial.",
+      "research_summary": "Gesichert aus den gelieferten Quellen ist eine laufende Fahndung: Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Verdächtigen und bitten um Hinweise aus der Bevölkerung. Ein Bericht ordnet ihn Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen zu. Weitere Berichte nennen einen verdächtigen Gegenstand an einem Umspannwerk in Dormagen, eine polizeiliche Einordnung als Sabotagedelikt nach einem Bekennerschreiben sowie einen späteren Fund von zwölf Sprengsätzen an Stromtrassen in Sachsen, die entschärft wurden. Die Quellen sprechen teilweise vorsichtig von möglich, offenbar oder verdächtig; eine gerichtsfeste Klärung ist darin nicht enthalten.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Fahndung, Spuren, Hinweise",
+          "paragraphs": [
+            "Im Kern steht eine konkrete Fahndung. Polizei Brandenburg und Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Tatverdächtigen und bitten die Bevölkerung um Mithilfe. Dazu wurden Bilder veröffentlicht und Hinweise über Telefon und Online-Portal angefordert. Der Bericht verknüpft den Gesuchten mit Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen.",
+            "Parallel dazu melden weitere Quellen ähnliche Vorfälle oder Ermittlungsansätze an Stromanlagen. Für Dormagen nennen die Berichte einen verdächtigen Gegenstand, den die Polizei nach einem Bekennerschreiben als Sabotagedelikt einordnet. In Sachsen berichten Quellen von zwölf Sprengsätzen an Stromtrassen, die Spezialisten entschärfen konnten. Das zeigt eine verdichtete, aber noch nicht abschließend geklärte Lage im Umfeld kritischer Energieinfrastruktur."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusatznutzen: Warum der Fall mehr ist als ein Ermittlungsstand",
+          "paragraphs": [
+            "Der zusätzliche systemische Zusammenhang liegt darin, dass hier nicht nur ein einzelner Tatverdacht verhandelt wird, sondern ein Schutzproblem für kritische Infrastruktur sichtbar wird. Umspannwerke und Stromtrassen sind Knotenpunkte mit hoher Abhängigkeit für Versorgung, Wirtschaft und öffentliche Sicherheit. Schon der Verdacht auf gezielte Eingriffe zwingt Behörden zu Fahndung, Spurenarbeit und Schutzanpassungen.",
+            "Wirkung im Sinn der Wirkungsökonomie meint die tatsächliche Zustandsveränderung. Belegt ist hier vor allem eine Veränderung im Ermittlungsmodus: öffentliche Fahndung, Hinweise aus der Bevölkerung und verstärkte Sicherung von Spuren. Ob daraus eine nachhaltige Verbesserung der Systemsicherheit entsteht, ist offen. Das ist Wirkungspotenzial, noch keine beobachtete Schutzwirkung."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Drei Blickwinkel auf denselben Sicherheitsfall",
+          "paragraphs": [
+            "Aus der Perspektive des Menschen zählt zuerst die unmittelbare Sicherheit. Der Fall berührt die Frage, ob Stromversorgung, Transport, Kommunikation und weitere Alltagsinfrastrukturen vor gezielten Angriffen geschützt sind. Eine belastete Sicherheitslage erzeugt Unsicherheit, Mehrarbeit und potenziell Versorgungsausfälle; genau das ist der relevante Wirkpfad, nicht die bloße Reichweite der Berichterstattung.",
+            "Aus Planetensicht betrifft der Fall eine Energieinfrastruktur, deren Störung Folgekosten und zusätzliche Belastungen auslösen kann. Die Quellen liefern dafür keine Schadensbilanz, aber sie zeigen den empfindlichen Punkt im Energiesystem. Aus demokratietheoretischer Sicht ist entscheidend, dass Polizei und Staatsanwaltschaft öffentlich informieren, Hinweise erbitten und damit nachvollziehbar machen, wie der Staat auf Gefährdungen kritischer Infrastruktur reagiert. Das stärkt Transparenz im Verfahren, ohne die Unschuldsvermutung zu ersetzen."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Was bereits wirkt, was nur möglich ist",
+          "paragraphs": [
+            "Erste Ordnung ist die operative Fahndung. Sie kann die Wahrscheinlichkeit erhöhen, den Aufenthaltsort des Gesuchten zu klären, und damit Ermittlungen beschleunigen. Das ist ein Wirkungspotenzial, weil es auf einen möglichen Zustandswechsel in der Ermittlungsfähigkeit zielt. Belegt ist aber nur, dass die Fahndung läuft, nicht ihr Erfolg.",
+            "Zweite Ordnung ist die Anpassung von Schutzmaßnahmen an kritischen Anlagen. Die Quellen legen nahe, dass Polizeiarbeit und Sicherung der Infrastruktur intensiviert werden. Auch das ist zunächst ein Wirkungspotenzial. Dritte Ordnung wäre eine längerfristige Veränderung von Schutzstandards, Routinen oder Aufmerksamkeit für ähnliche Anlagen. Dazu liefern die Quellen nur Anlass, keinen Nachweis. Hier ist die Reverse-Merit-Logik wichtig: Nicht die größte mediale Aufmerksamkeit verdient die höchste Bewertung, sondern der materiell kritischste Schutzbedarf."
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten: Kosten, Verunsicherung und Folgelasten",
+          "paragraphs": [
+            "Gezielte Eingriffe oder ihr Verdacht erzeugen externe Effekte. Schon die Ermittlungen binden personelle Ressourcen bei Polizei, Staatsanwaltschaft und Spezialkräften. Der Schutz von Stromanlagen kostet zusätzlich Zeit und Geld. Solche Kosten sind in den Quellen nicht beziffert, aber der Wirkmechanismus ist naheliegend und wird durch die beschriebenen Einsätze sichtbar.",
+            "Dazu kommen Unsicherheitskosten für Bevölkerung und Betreiber. Wenn sich mehrere Hinweise und Vorfälle um Stromanlagen bündeln, steigt der Druck auf Alarmierung und Vorsorge. Das ist keine Wirkung im Sinne eines eingetretenen Schadens, sondern ein Wirkungsrisiko: Der öffentliche Sicherheitsrahmen wird empfindlicher, solange die Beweislage offen bleibt."
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer trägt Lasten, wer gewinnt Schutz?",
+          "paragraphs": [
+            "Die Lasten verteilen sich ungleich. Betreiber und Sicherheitsbehörden tragen den direkten Aufwand, während die Allgemeinheit von stabiler Versorgung abhängt. Bei kritischer Infrastruktur wirkt ein möglicher Angriff daher nie nur lokal. Selbst wenn der Vorfall räumlich begrenzt bleibt, kann die Verteilung der Schutzkosten bundesweit ausstrahlen, wenn Sicherheitsvorkehrungen nachjustiert werden.",
+            "Ein wichtiger Gegenpunkt ist jedoch: Die Quellen belegen noch keine flächige Versorgungsstörung und keinen verifizierten Schaden an der Netzinfrastruktur. Deshalb wäre es falsch, bereits von eingetretener gesellschaftlicher Belastung im großen Maßstab zu sprechen. Der Fall zeigt vor allem ein Verteilungsrisiko: Schutzkosten werden früh fällig, während der Nutzen erst mit erfolgreicher Aufklärung oder Prävention sichtbar werden kann."
+          ]
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Frame- und Diskurscheck: Sicherheit ohne Überdehnung",
+          "paragraphs": [
+            "Die Berichterstattung rahmt den Vorgang stark als Sabotage-, Anschlags- oder Angriffskomplex. Sachlich ist das verständlich, weil die Quellen entsprechende Begriffe selbst verwenden. Für die Analyse zählt aber die Attribution: Wer spricht von Sabotage, auf welcher Grundlage und mit welchem Unsicherheitsgrad? Genau hier bleiben die Quellen vorsichtig und teils ausdrücklich offen.",
+            "Kommunikatives Wirkungspotenzial darf nicht mit tatsächlicher Wirkung verwechselt werden. Dass die Fahndung Aufmerksamkeit erzeugt, ist keine Beweisführung für mehr Sicherheit. Ebenso ist erhöhte Resonanz im Nachrichtenraum kein Nachweis für einen realen Systemschaden. Problematische Begriffe wie Anschlag oder Angriff werden deshalb nicht als bestätigte Tatsachen, sondern als journalistische Rahmung behandelt."
+          ]
+        },
+        {
+          "id": "szenarien",
+          "title": "Szenarien: Was sich jetzt ändern kann",
+          "paragraphs": [
+            "Im günstigen Szenario führt die Fahndung zu einer Festnahme oder zu belastbaren Hinweisen, die weitere Anlagen sichern und das Risiko weiterer Vorfälle senken. Dann läge eine echte Zustandsänderung vor: mehr Aufklärung, mehr Prävention, möglicherweise erhöhte Resilienz. Dafür gibt es aber in den gelieferten Quellen noch keinen Nachweis.",
+            "Im mittleren Szenario bleibt der Fall vorerst ein offener Ermittlungsstrang mit punktuellen Sicherungsmaßnahmen. Dann entsteht vor allem ein administrativer und sicherheitlicher Daueraufwand. Im ungünstigen Szenario verstetigen sich Verdachtslagen ohne gerichtsfeste Klärung; dann wächst der Druck auf den Sicherheitsdiskurs, ohne dass die tatsächliche Aufklärung zunimmt. Genau dieses Auseinanderfallen von Wahrnehmung und Wirklichkeit ist ein zentrales Wirkungsrisiko."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was die Evidenz trägt – und was nicht",
+          "paragraphs": [
+            "Die Quellenlage ist journalistisch brauchbar, aber begrenzt. Es liegen mehrere Berichte vor, doch kein mitgelieferter Behörden-Originalbeleg. Die Aussagen zur Rolle des 48-Jährigen, zur Verbindung zwischen den Vorfällen und zur rechtlichen Bewertung bleiben daher nur so stark, wie die Berichte sie tragen. Besonders wichtig: In mehreren Texten ist die Formulierung vorsichtig oder vorläufig, etwa mit möglicherweise, offenbar oder Verdacht.",
+            "Nicht belegt sind eine gerichtliche Feststellung, eine abschließende Täterzuordnung oder ein tatsächlich eingetretener Versorgungs- oder Infrastrukturschaden. Belegt ist vor allem eine Verdichtung von Ermittlungen und Schutzmaßnahmen. Das reicht für eine systemische Analyse, aber nicht für eine harte Zurechnung von Schadenswirkung."
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Lage als Nächstes messen lässt",
+          "paragraphs": [
+            "Entscheidend sind jetzt vier Punkte: Ob der Gesuchte festgenommen oder lokalisiert wird, ob die Behörden die Verbindung zwischen den einzelnen Vorfällen präzisieren, ob weitere Anlagen betroffen sind und ob daraus konkrete Schutzanpassungen folgen. Erst dann lässt sich unterscheiden, ob aus dem Wirkpotenzial eine beobachtete Wirkung wird.",
+            "Auch die Kommunikation der Behörden bleibt relevant. Wenn Hinweise aus der Bevölkerung zu belastbaren Ergebnissen führen, wäre das ein operativer Erfolg. Wenn die Lage hingegen nur kommunikativ anschwillt, ohne dass sich die Sicherheitslage verbessert, bleibt es bei Resonanz ohne messbaren Mehrwert. Für die WOeK ist genau diese Trennung zentral."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Der Fall zeigt die Verletzlichkeit des Stromsystems, aber noch keine belegte Systemwende",
+          "paragraphs": [
+            "Die eigentliche Nachricht ist nicht nur die Fahndung nach einem einzelnen Tatverdächtigen. Sie ist der Hinweis darauf, dass kritische Energieinfrastruktur als Angriffsfläche wahrgenommen und bearbeitet werden muss. Öffentliche Fahndung, Spurenarbeit und Hinweiswege sind Mittel der Schadensbegrenzung und Prävention. Sie entfalten aber erst dann echte Wirkung, wenn sie zu Aufklärung, Sicherung oder Vermeidung weiterer Vorfälle führen.",
+            "Systemisch liegt der Zusatznutzen der Analyse darin, die Lage nicht als Spektakel, sondern als Schutzproblem zu lesen. Für Mensch, Planet und Demokratie ist das relevant, weil Versorgungssicherheit, staatliche Reaktionsfähigkeit und das Vertrauen in die Stabilität von Infrastruktur zusammenhängen. Der Fall hat damit hohes Wirkungspotenzial und ein reales Wirkungsrisiko, aber nach der derzeitigen Quellenlage noch keine belegte positive Netto-Wirkung im engeren Sinn."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Polizei Brandenburg und Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Tatverdächtigen und bitten die Bevölkerung um Mithilfe.",
+          "type": "fact",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Fahndung ist durch den Bericht belegt; die zugrunde liegende amtliche Originalquelle ist in den gelieferten Daten nicht separat enthalten.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Der Gesuchte soll im Zusammenhang mit Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen stehen.",
+          "type": "fact",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Es handelt sich um eine berichtete Zuschreibung, nicht um eine gerichtsfeste Feststellung.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "In der Wohnung des 48-Jährigen in Gevelsberg wurde Sprengstoff gefunden.",
+          "type": "fact",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Quelle berichtet dies als Ermittlungsergebnis; ein gesonderter Primärbeleg liegt nicht vor.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Behörden veröffentlichten Bilder des Verdächtigen und richteten ein Hinweistelefon sowie ein Online-Portal ein.",
+          "type": "fact",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Maßnahme ist im Bericht beschrieben.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "An einem Umspannwerk in Dormagen wurde ein verdächtiger Gegenstand gefunden.",
+          "type": "fact",
+          "source_ids": [
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d"
+          ],
+          "evidence_level": "medium",
+          "data_status": "confirmed",
+          "uncertainty": "Die Berichte stimmen im Kern überein, verwenden aber vorsichtige Formulierungen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Polizei geht nach dem Fund in Dormagen von einem Sabotagedelikt aus.",
+          "type": "fact",
+          "source_ids": [
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+            "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Einordnung ist eine polizeiliche Bewertung auf Grundlage der damaligen Lage, nicht der abschließende Nachweis.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Ein Sprecher der Kölner Polizei nennt ein eingegangenes Bekennerschreiben als Grundlage der Einordnung in Dormagen.",
+          "type": "fact",
+          "source_ids": [
+            "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Quellen berichten die polizeiliche Begründung; der Inhalt des Schreibens ist nicht mitgeliefert.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "In Sachsen hat die Polizei zwölf Sprengsätze an Stromtrassen gefunden.",
+          "type": "fact",
+          "source_ids": [
+            "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Meldungen stimmen überein; Details zur Fundlage bleiben in den gelieferten Quellen knapp.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Spezialisten konnten die Sprengvorrichtungen in Sachsen entschärfen.",
+          "type": "fact",
+          "source_ids": [
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "evidence_level": "medium",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quelle nennt die Entschärfung; weitere technische Details fehlen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Polizei setzt ihre Suche in Ostsachsen weiter fort und bittet um Hinweise aus der Bevölkerung.",
+          "type": "fact",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Belegt ist die Fortsetzung der Suche; der konkrete Fahndungserfolg bleibt offen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die öffentliche Fahndung kann Ermittlungen beschleunigen und damit die Chance erhöhen, den Aufenthaltsort des Gesuchten zu klären.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Plausibler Wirkpfad, aber in den Quellen nicht als eingetretene Wirkung belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Der Fall berührt kritische Energieinfrastruktur und damit Risiken für Versorgung, Sicherheit und staatliche Reaktionsfähigkeit.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Systemrelevanz ist aus den betroffenen Anlagen ableitbar, nicht als messbarer Schaden belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Fahndung und die Hinweise aus der Bevölkerung erhöhen das Wirkpotenzial für Prävention, sind aber noch keine beobachtete Schutzwirkung.",
+          "type": "woek_definition",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "WOeK-Abgrenzung: Potenzial ist nicht Wirkung.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Unbestätigte Zuschreibungen können das öffentliche Lagebild verzerren, solange die Beweislage offen bleibt.",
+          "type": "impact_risk",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Risiko folgt aus der offenen Lage und der vorläufigen Sprache der Berichte.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Berichterstattung selbst ist kein Nachweis für eine reale Sicherheitsverbesserung.",
+          "type": "woek_definition",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Abgrenzung zwischen Reichweite/Resonanz und tatsächlicher Wirkung.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Es liegt derzeit keine belegte positive Netto-Wirkung im engeren Sinn vor, weil weder Festnahme noch gerichtsfeste Klärung oder nachweisbare Schutzverbesserung belegt sind.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "evidence_level": "open",
+          "data_status": "inferred",
+          "uncertainty": "Die Schlussfolgerung bleibt an die derzeitige Quellenlage gebunden und kann sich mit neuer Evidenz ändern.",
+          "date": "2026-09-05"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Mehrere Quellen formulieren vorsichtig mit 'möglicherweise', 'offenbar' oder 'verdächtig' und liefern keine endgültige Klärung der Täterschaft oder des Sachverhalts.",
+          "source_ids": [
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "d7801f4def8fdd306769ddd6bd105a09d7f0a59ffa7fd728d9710a75e1761bf6",
+            "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10"
+          ],
+          "effect_on_assessment": "Begrenzt jede harte Zurechnung und stützt nur eine vorläufige systemische Einordnung."
+        },
+        {
+          "finding": "Die Quellen berichten keinen abschließend bestätigten Stromausfall, keine Versorgungsunterbrechung und keinen dokumentierten Infrastrukturschaden.",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5"
+          ],
+          "effect_on_assessment": "Spricht gegen die Formulierung einer bereits eingetretenen großflächigen Systemwirkung."
+        },
+        {
+          "finding": "Der Zusammenhang zwischen den einzelnen Vorfällen wird in den Berichten nahegelegt, aber nicht unabhängig belegt.",
+          "source_ids": [
+            "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+            "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "effect_on_assessment": "Verhindert eine überdehnte Kausalitätserzählung und verlangt Zurückhaltung bei der Gesamtzuschreibung."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Eine bestätigte Festnahme oder amtliche Präzisierung der Rolle des 48-Jährigen.",
+        "Belastbare Angaben zu konkreten Schäden, Ausfällen oder verhinderten Schäden an Stromanlagen.",
+        "Amtliche Informationen, die die Verbindung zwischen den Vorfällen in Brandenburg, Nordrhein-Westfalen und Sachsen präzisieren oder widerlegen.",
+        "Nachweisbare Schutz- oder Präventionsmaßnahmen mit dokumentierter Wirkung auf die Sicherheit kritischer Infrastruktur."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Fahndung nach Umspannwerk-Sabotage: Was der Fall für kritische Infrastruktur verändert",
+        "recommended_summary": "Die Fahndung nach einem 48-Jährigen im Umfeld mutmaßlicher Sabotage an Stromanlagen zeigt die Verwundbarkeit kritischer Infrastruktur, aber noch keine belegte Systemwende.",
+        "recommended_meta_description": "Fahndung nach Umspannwerk-Sabotage: Was der Fall für Stromnetz, Sicherheit und kritische Infrastruktur systemisch bedeuten kann."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+          "published_at": "2026-09-05T16:24:05.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--angriffe-aufs-stromnetz--einsatz-in-sachsen-geht-weiter-38210826.html",
+          "published_at": "2026-09-05T07:36:46.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020817.html",
+          "published_at": "2026-09-05T07:38:13.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-38210826.html",
+          "published_at": "2026-09-05T13:26:55.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Nach Anschlägen in NRW und Brandenburg: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-16021488.html",
+          "published_at": "2026-09-05T13:58:18.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "published_at": "2026-09-04T13:58:04.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Sabotage-Versuch an Umspannwerk in Dormagen",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+          "published_at": "2026-09-04T01:45:01.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "286bf0c30dea8a66a74bbd8d5dfedf5d68ede625df946d30e3855702488349f4",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Weiterer Sabotage-Versuch an Umspannwerk in Dormagen",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
+          "published_at": "2026-09-04T05:37:43.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weiterer Polizeieinsatz in Oldenburg",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+          "published_at": "2026-09-04T06:00:49.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "d7801f4def8fdd306769ddd6bd105a09d7f0a59ffa7fd728d9710a75e1761bf6",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
+          "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
+          "published_at": "2026-09-04T02:12:48.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
+          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
+          "published_at": "2026-09-04T00:39:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60",
+          "registry_source_id": "spiegel-schlagzeilen",
+          "publisher_id": "spiegel",
+          "publisher": "DER SPIEGEL",
+          "title": "Dormagen: Polizei geht von versuchter Sabotage an Umspannwerk aus",
+          "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
+          "published_at": "2026-09-04T01:06:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
+          "published_at": "2026-09-03T21:07:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Nach Angriffen auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+          "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
+          "published_at": "2026-09-03T21:03:08.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weitere Polizeieinsätze in Oldenburg und Aachen",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weitere-polizeieinsaetze-in-oldenburg-und-aachen-100.html",
+          "published_at": "2026-09-04T09:17:32.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst",
+          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Polizei: Mögliche Sabotage an Umspannwerk in Dormagen",
+          "url": "https://www.zdfheute.de/politik/deutschland/umspannwerk-sabotage-dormagen-verdaechtiger-gegenstand-100.html",
+          "published_at": "2026-09-04T02:29:46.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "02e1209af9a34683c59bcc8c50426b8443647ab5cbfb2060694778258a4ece49",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Nachrichten für NRW: Sabotageversuch in Dormagen",
+          "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-umspannwerk-dormagen-sabotage-versuch-bundespraesident-buergerfest-spahn-klage-ski-aggu-100.html",
+          "published_at": "2026-09-04T04:50:24.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "05552d28b92ed39570221f63df0f2d7901c46aa4f7c18565373d448570e393b5",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - bundesweite Fahndung nach Tatverdächtigem",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-bundesweite-fahndung-nach-tatverdaechtigem-100.html",
+          "published_at": "2026-09-04T10:29:27.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Stromnetz-Sabotage: Polizei fahndet weiter nach Verdächtigem",
+          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
+          "published_at": "2026-09-04T16:49:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Polizei fahndet weiter nach Verdächtigem",
+          "url": "https://www.tagesschau.de/inland/fahndung-sabotage-stromnetz-100.html",
+          "published_at": "2026-09-05T07:45:01.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "80c246f10722e36049de20d5ebd90360a95abbdc539be494b0302c4c0ceb129a",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
+          "published_at": "2026-09-04T18:13:49.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "34bc122b9bf74bebeafd71643d3d0ea7952826caa0d370a81e707a8b8fac1163",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
+          "published_at": "2026-09-04T18:15:11.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "641fb9a25b26f3aee7a02df887e0f1070210b4e401ec1e1147b35bbdfe15d256",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+          "published_at": "2026-09-05T09:21:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "7a90981849bb892e3da69556ce80d4355980593b98ee6c37d30011b10bfd1f4b",
+          "registry_source_id": "wiwo-schlagzeilen",
+          "publisher_id": "wirtschaftswoche",
+          "publisher": "WirtschaftsWoche",
+          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt – NRW-Verdächtiger flüchtig",
+          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
+          "published_at": "2026-09-04T18:30:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "7160b03b5718132dc117454643d3b54d80b051e9f3be8c840357c76b559f485d",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Innenminister Schuster: \"Sprengvorrichtungen\" auch in Sachsen entdeckt",
+          "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+          "published_at": "2026-09-04T18:27:06.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "36e6c54a7a64c95ec057ae0fe7d26e9a51c2972717fd7be63d6623bb5b74f5d6",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Fahndung nach Stromnetz-Sabotagen: Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-lausitz-100.html",
+          "published_at": "2026-09-05T07:02:53.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "bc9c53cb4afb763752eba8708477879213732db3db55260b87a31fc21a5c1d3f",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-sn-100.html",
+          "published_at": "2026-09-05T08:59:23.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "published_at": "2026-09-04T18:11:14.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "195138e3840809bf416a757a6d536b0c2bd9d84ed9fe4a85a3437fba9c8a8edf",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+          "published_at": "2026-09-03T16:21:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "a62afbc8f1549d06d1af899f7219ad906e90ac62bd8ebe24493b710cfa86cfc0",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Polizei prüft Bekennerschreiben nach Angriff auf Umspannwerk",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
+          "published_at": "2026-09-03T18:57:30.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+          "published_at": "2026-09-05T03:02:35.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ba04cc9fa8b43a5d575a67ceae7558fbed71cd69eff4143999cb6d804fe25ee6",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Angriffe auf Umspannwerke: Amprion-Chef will für Unternehmen mehr Befugnisse",
+          "url": "https://www.stern.de/news/angriffe-auf-umspannwerke--amprion-chef-will-fuer-unternehmen-mehr-befugnisse-38210948.html",
+          "published_at": "2026-09-05T08:57:36.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "6eb0d140544a4b87d72a5a018925c5b325dee21d75edc639c8c17175ea2bd2fc",
+          "registry_source_id": "dw-news",
+          "publisher_id": "deutsche-welle",
+          "publisher": "Deutsche Welle",
+          "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+          "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
+          "published_at": "2026-09-04T11:40:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Liveticker Strom-Sabotage: Polizei verlässt Hambacher Forst",
+          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+          "published_at": "2026-09-04T20:58:25.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "e05aff12f1ae9294070d863f071d4eee080ab35d205d2b446a809ce34a38e841",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst",
+          "url": "https://taz.de/Polizei-findet-Truck-des-Verdaechtigen-am-Hambacher-Forst/!6210358",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "87a85fd35481e91d473278dd554f5f37b5c88cd49634b34f46de0ec4575edb35",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
+          "url": "https://www.stern.de/news/stromversorgung--reul--polizei-stuermt-fahrzeug-von-sabotage-verdaechtigem-38210002.html",
+          "published_at": "2026-09-04T15:55:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
+          "published_at": "2026-09-04T15:44:10.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "3187d00b390be8458dae3f1af39e3bb4150df677410a9cfc22b754ccb8c28e51",
+          "registry_source_id": "hr-hessenschau",
+          "publisher_id": "hr",
+          "publisher": "hessenschau",
+          "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+          "published_at": "2026-09-03T09:36:10.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "b67de6bf0555b9eef7f2a302ab3134c970698b89af824a88c40f0c0f05737657",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
+          "url": "https://www1.wdr.de/nrw/bekennerschreiben-anschlag-umspannwerk-brandenburg-100.html",
+          "published_at": "2026-09-04T01:26:48.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "2e4a09c705f16510810b9505567dab853ce3a641b63549edaf04cb1a341f4869",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-sabotage-umspannwerk-stromnetz-jaenschwalde-sicherheitszentrum.html",
+          "published_at": "2026-09-03T16:30:00.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T17:54:23.215Z",
+          "source_fingerprint": "009de1fc2b2d661492718cc8e0fd9446585289a1ba044ac23d5a7520a875a3d3",
+          "title": "Fahndung nach Umspannwerk-Sabotage: Was der Fall für kritische Infrastruktur verändert",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Polizei Brandenburg und Staatsanwaltschaft Cottbus suchen nach einem 48-jährigen Tatverdächtigen und bitten die Bevölkerung um Mithilfe.",
+              "type": "fact",
+              "source_ids": [
+                "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Fahndung ist durch den Bericht belegt; die zugrunde liegende amtliche Originalquelle ist in den gelieferten Daten nicht separat enthalten.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Der Gesuchte soll im Zusammenhang mit Sabotageakten auf Umspannwerke in Brandenburg und Nordrhein-Westfalen stehen.",
+              "type": "fact",
+              "source_ids": [
+                "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Es handelt sich um eine berichtete Zuschreibung, nicht um eine gerichtsfeste Feststellung.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "In der Wohnung des 48-Jährigen in Gevelsberg wurde Sprengstoff gefunden.",
+              "type": "fact",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Quelle berichtet dies als Ermittlungsergebnis; ein gesonderter Primärbeleg liegt nicht vor.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Behörden veröffentlichten Bilder des Verdächtigen und richteten ein Hinweistelefon sowie ein Online-Portal ein.",
+              "type": "fact",
+              "source_ids": [
+                "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Maßnahme ist im Bericht beschrieben.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "An einem Umspannwerk in Dormagen wurde ein verdächtiger Gegenstand gefunden.",
+              "type": "fact",
+              "source_ids": [
+                "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+                "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Die Berichte stimmen im Kern überein, verwenden aber vorsichtige Formulierungen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Polizei geht nach dem Fund in Dormagen von einem Sabotagedelikt aus.",
+              "type": "fact",
+              "source_ids": [
+                "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+                "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Einordnung ist eine polizeiliche Bewertung auf Grundlage der damaligen Lage, nicht der abschließende Nachweis.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Ein Sprecher der Kölner Polizei nennt ein eingegangenes Bekennerschreiben als Grundlage der Einordnung in Dormagen.",
+              "type": "fact",
+              "source_ids": [
+                "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
+                "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Quellen berichten die polizeiliche Begründung; der Inhalt des Schreibens ist nicht mitgeliefert.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "In Sachsen hat die Polizei zwölf Sprengsätze an Stromtrassen gefunden.",
+              "type": "fact",
+              "source_ids": [
+                "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5",
+                "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Meldungen stimmen überein; Details zur Fundlage bleiben in den gelieferten Quellen knapp.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Spezialisten konnten die Sprengvorrichtungen in Sachsen entschärfen.",
+              "type": "fact",
+              "source_ids": [
+                "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quelle nennt die Entschärfung; weitere technische Details fehlen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Polizei setzt ihre Suche in Ostsachsen weiter fort und bittet um Hinweise aus der Bevölkerung.",
+              "type": "fact",
+              "source_ids": [
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+                "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Belegt ist die Fortsetzung der Suche; der konkrete Fahndungserfolg bleibt offen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die öffentliche Fahndung kann Ermittlungen beschleunigen und damit die Chance erhöhen, den Aufenthaltsort des Gesuchten zu klären.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Plausibler Wirkpfad, aber in den Quellen nicht als eingetretene Wirkung belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Der Fall berührt kritische Energieinfrastruktur und damit Risiken für Versorgung, Sicherheit und staatliche Reaktionsfähigkeit.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+                "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+                "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Systemrelevanz ist aus den betroffenen Anlagen ableitbar, nicht als messbarer Schaden belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Fahndung und die Hinweise aus der Bevölkerung erhöhen das Wirkpotenzial für Prävention, sind aber noch keine beobachtete Schutzwirkung.",
+              "type": "woek_definition",
+              "source_ids": [
+                "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+                "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "WOeK-Abgrenzung: Potenzial ist nicht Wirkung.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Unbestätigte Zuschreibungen können das öffentliche Lagebild verzerren, solange die Beweislage offen bleibt.",
+              "type": "impact_risk",
+              "source_ids": [
+                "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+                "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+                "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Risiko folgt aus der offenen Lage und der vorläufigen Sprache der Berichte.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Berichterstattung selbst ist kein Nachweis für eine reale Sicherheitsverbesserung.",
+              "type": "woek_definition",
+              "source_ids": [
+                "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Abgrenzung zwischen Reichweite/Resonanz und tatsächlicher Wirkung.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Es liegt derzeit keine belegte positive Netto-Wirkung im engeren Sinn vor, weil weder Festnahme noch gerichtsfeste Klärung oder nachweisbare Schutzverbesserung belegt sind.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+                "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+              ],
+              "evidence_level": "open",
+              "data_status": "inferred",
+              "uncertainty": "Die Schlussfolgerung bleibt an die derzeitige Quellenlage gebunden und kann sich mit neuer Evidenz ändern.",
               "date": "2026-09-05"
             }
           ]
