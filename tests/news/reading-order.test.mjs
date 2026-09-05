@@ -39,4 +39,5 @@ test("technical evidence codes are translated on every public detail surface", (
   assert.equal((html.match(/Einer Quelle zugeschrieben; keine unabhängige Bestätigung/g) || []).length, 2);
   assert.equal(evidenceLevelLabel("single_source_primary_statement"), "Primärquelle / Selbstauskunft; keine unabhängige Bestätigung");
   assert.equal(evidenceLevelLabel("single_source_claim mit bezifferten Angaben"), "einer Quelle zugeschrieben mit bezifferten Angaben");
+  assert.equal(evidenceLevelLabel("attributed_single_source: mehrere Berichte"), "zugeschriebene Quellenlage: mehrere Berichte");
 });
