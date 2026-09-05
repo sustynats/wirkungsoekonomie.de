@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { politicalDevelopmentFor, materialDevelopmentReview } from "../../scripts/news/political-development.mjs";
-import { classifyItem, clusterItems } from "../../scripts/news/lib.mjs";
+import { buildAnalysisPrompt, classifyItem, clusterItems } from "../../scripts/news/lib.mjs";
 import { queuePriority } from "../../scripts/news/run.mjs";
 
 const now = "2026-09-05T21:45:00Z";
@@ -46,4 +46,11 @@ test("urgent review raises queue priority without changing evidence or publicati
   const urgent = { ...candidate, preanalysis: { ...candidate.preanalysis, material_development_review: { time_sensitive: true } } };
   assert.equal(queuePriority(urgent, now) - queuePriority(candidate, now), 72);
   assert.equal(candidate.preanalysis.internal_relevance_score, 60);
+});
+test("review instruction distinguishes later publication from the date of an actor statement", () => {
+  const prompt = buildAnalysisPrompt([]);
+  assert.match(prompt, /Artikelzeit ist nicht Aussagezeit/);
+  assert.match(prompt, /Spätere Artikel können alte Zitate enthalten/);
+  assert.match(prompt, /Publikationsdatum entscheidet keinen Widerspruch/);
+  assert.match(prompt, /Videoüberschrift ist kein geprüfter Originalton/);
 });

@@ -16,15 +16,17 @@ test("reviewed election story passes production source, evidence, media and self
   assert.equal(result.record.analysis.media_impact.relevant, true);
   assert.equal(result.record.analysis.media_impact.observed_impact.present, false);
   assert.equal(result.record.analysis.planet.relevance, "offen");
-  assert.ok(result.record.source_summary.includes("nicht neu"));
+  assert.ok(result.record.source_summary.includes("bereits am Mittwoch"));
+  assert.ok(result.record.source_summary.includes("keinen erneuten Kurswechsel"));
   assert.ok(!result.record.title.includes("Kurswechsel"));
   assert.equal(result.record.news_status, "corrected");
   assert.equal(result.record.sources.some(source => "article_excerpt" in source), false);
   assert.equal(result.record.sources.find(source => source.source_id === "bild-access").provenance.origin, result.record.sources.find(source => source.source_id === "focus-case-research").provenance.origin);
   assert.equal(result.record.sources.find(source => source.url.includes("31272045")).agency_origin, "afp");
   assert.equal(result.record.claims.some(claim => claim.status === "confirmed_claim"), false);
-  assert.equal(result.record.claims[0].status, "single_source_claim");
-  assert.ok(result.record.title.includes("laut n-tv"));
+  assert.equal(result.record.claims.find(claim => claim.evidence.some(evidence => evidence.url.includes("31273399"))).status, "single_source_claim");
+  assert.ok(result.record.title.includes("Unterschiedliche Berichte"));
+  assert.equal(result.record.sources.find(source => source.url.includes("31273399")).provenance.independence_established, false);
   assert.ok(result.record.claims.some(claim => claim.status === "uncertain_claim"));
 });
 test("reprinting a restricted-origin interview is not independent corroboration", () => {

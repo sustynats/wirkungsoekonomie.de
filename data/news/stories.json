@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T23:04:54.936Z",
+  "updated_at": "2026-09-05T23:19:18.605Z",
   "stories": [
     {
       "story_id": "wt-58cac49b38f415db",
@@ -126588,11 +126588,11 @@
     {
       "story_id": "wt-7ebecf5b3f91d490",
       "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-      "title": "Sachsen-Anhalt-Wahl: Siegmund laut n-tv auch bei knapper Mehrheit regierungsbereit",
+      "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
       "first_seen": "2026-09-05T22:05:00Z",
-      "last_updated": "2026-09-05T23:04:54.936Z",
+      "last_updated": "2026-09-05T23:19:18.605Z",
       "published_at": "2026-09-05T22:07:32.381Z",
-      "updated_at": "2026-09-05T23:04:54.936Z",
+      "updated_at": "2026-09-05T23:19:18.605Z",
       "topic": [
         "Demokratie",
         "Politik"
@@ -126608,7 +126608,7 @@
           "published_at": "2026-09-05T16:24:00Z",
           "primary_source": false,
           "source_topic": "Politik",
-          "content_hash": "61d67da5eb40dad64356471eade33013abc678b89324d22c7adcae6d449e0e27",
+          "content_hash": "4bd1a24a9082b9e67665b5d197eb8a97e6992104099d2098ccff35639c089e4a",
           "publisher_id": "ntv",
           "publisher_kind": "journalism",
           "source_role": "actor_statement_report",
@@ -126622,9 +126622,40 @@
             "independence_established": false
           },
           "research_metadata": {
-            "access": "public_search_metadata",
+            "access": "public_search_and_browser_metadata",
             "video_independently_viewed": false,
-            "scope": "Veröffentlichte Videoüberschrift und Datum; keine erfundene Transkription."
+            "statement_recorded_at": null,
+            "original_interview_origin": "unknown",
+            "scope": "Veröffentlichte Videoüberschrift und Datum. Aufnahmezeitpunkt und möglicher Interviewursprung nicht geklärt; keine unabhängige Gegenbestätigung und keine erfundene Transkription."
+          }
+        },
+        {
+          "source_id": "bild-access",
+          "publisher": "BILD",
+          "url": "https://www.bild.de/politik/inland/afd-droht-in-sachsen-anhalt-die-grosse-wahl-verarsche-6a9b18eb3f723da3e680c586",
+          "title": "AfD: Droht in Sachsen-Anhalt die große Wahl-Verarsche?",
+          "summary": "Der BILD-Artikel vom 05.09.2026 um 22:26 Uhr behandelt Siegmunds Kandidatur und mögliche interne Widerstände. Für seine eigene Antwort verweist der Text ausdrücklich auf Freitag. Die ergänzenden Angaben aus dem Parteiumfeld sind nicht unabhängig bestätigt.",
+          "source_type": "media_discovery",
+          "published_at": "2026-09-05T20:26:55.636Z",
+          "primary_source": false,
+          "source_topic": "Politik",
+          "content_hash": "4d7e23adb52a8a2f76508db8d04057394e39f34b32b3761424c90b4c3c4afa8b",
+          "publisher_id": "bild",
+          "publisher_kind": "journalism",
+          "source_role": "context",
+          "requires_corroboration": true,
+          "source_published_at": "2026-09-05T20:26:55.636Z",
+          "provenance": {
+            "origin": "interview:bild-siegmund-2026-09-04",
+            "basis": "explicit_reference_to_friday_interview_only",
+            "independence_established": false
+          },
+          "research_metadata": {
+            "access": "public_browser_research",
+            "date_modified": "2026-09-05T20:26:55.636Z",
+            "original_interview_date": "2026-09-04",
+            "statement_time_precision": "day",
+            "scope": "Artikelzeit nicht mit Aussagezeit gleichsetzen; zusätzliche anonyme Behauptungen nicht als Tatsachen übernehmen."
           }
         },
         {
@@ -126788,7 +126819,24 @@
       ],
       "claims": [
         {
-          "claim_id": "wt-7ebecf5b3f91d490-v2-claim-1",
+          "claim_id": "wt-7ebecf5b3f91d490-v3-claim-1",
+          "story_id": "wt-7ebecf5b3f91d490",
+          "claim": "Der später veröffentlichte BILD-Artikel verweist für Siegmunds eigene Antwort ausdrücklich auf Freitag.",
+          "status": "uncertain_claim",
+          "source_id": "bild-access",
+          "evidence": [
+            {
+              "source_id": "bild-access",
+              "url": "https://www.bild.de/politik/inland/afd-droht-in-sachsen-anhalt-die-grosse-wahl-verarsche-6a9b18eb3f723da3e680c586",
+              "excerpt_hash": "917b777548e90bb7ed73",
+              "checked_at": "2026-09-05T23:19:18.605Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T23:19:18.605Z"
+        },
+        {
+          "claim_id": "wt-7ebecf5b3f91d490-v3-claim-2",
           "story_id": "wt-7ebecf5b3f91d490",
           "claim": "n-tv schreibt Siegmund in einem später veröffentlichten Videobeitrag Regierungsbereitschaft auch bei einer Stimme Mehrheit zu.",
           "status": "single_source_claim",
@@ -126798,14 +126846,14 @@
               "source_id": "ntv-case-research",
               "url": "https://www.n-tv.de/mediathek/videos/politik/Siegmund-Regieren-natuerlich-auch-mit-einer-Stimme-mehr-id31273399.html",
               "excerpt_hash": "036274b3dd206577f624",
-              "checked_at": "2026-09-05T23:04:54.936Z"
+              "checked_at": "2026-09-05T23:19:18.605Z"
             }
           ],
           "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T23:04:54.936Z"
+          "checked_at": "2026-09-05T23:19:18.605Z"
         },
         {
-          "claim_id": "wt-7ebecf5b3f91d490-v2-claim-2",
+          "claim_id": "wt-7ebecf5b3f91d490-v3-claim-3",
           "story_id": "wt-7ebecf5b3f91d490",
           "claim": "FOCUS berichtet unter Berufung auf das BILD-Interview, Siegmund wolle über eine Kandidatur bei knappster Mehrheit erst nach der Wahl entscheiden.",
           "status": "uncertain_claim",
@@ -126815,14 +126863,14 @@
               "source_id": "focus-case-research",
               "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
               "excerpt_hash": "6bd8ec7384f43fbfd542",
-              "checked_at": "2026-09-05T23:04:54.936Z"
+              "checked_at": "2026-09-05T23:19:18.605Z"
             }
           ],
           "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T23:04:54.936Z"
+          "checked_at": "2026-09-05T23:19:18.605Z"
         },
         {
-          "claim_id": "wt-7ebecf5b3f91d490-v2-claim-3",
+          "claim_id": "wt-7ebecf5b3f91d490-v3-claim-4",
           "story_id": "wt-7ebecf5b3f91d490",
           "claim": "ZDFheute dokumentierte den Vorbehalt einer stabilen eigenen Mehrheit bereits bei einem früheren Auftritt.",
           "status": "single_source_claim",
@@ -126832,14 +126880,14 @@
               "source_id": "zdfheute-nachrichten",
               "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
               "excerpt_hash": "786da8664aca1ba94d5b",
-              "checked_at": "2026-09-05T23:04:54.936Z"
+              "checked_at": "2026-09-05T23:19:18.605Z"
             }
           ],
           "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T23:04:54.936Z"
+          "checked_at": "2026-09-05T23:19:18.605Z"
         },
         {
-          "claim_id": "wt-7ebecf5b3f91d490-v2-claim-4",
+          "claim_id": "wt-7ebecf5b3f91d490-v3-claim-5",
           "story_id": "wt-7ebecf5b3f91d490",
           "claim": "Der Ministerpräsident wird durch den Landtag in geheimer Abstimmung gewählt, nicht direkt durch die Bevölkerung.",
           "status": "primary_source_claim",
@@ -126849,14 +126897,14 @@
               "source_id": "landtag-sachsen-anhalt-context",
               "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
               "excerpt_hash": "6c9e71de60fa8e00cae7",
-              "checked_at": "2026-09-05T23:04:54.936Z"
+              "checked_at": "2026-09-05T23:19:18.605Z"
             }
           ],
           "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T23:04:54.936Z"
+          "checked_at": "2026-09-05T23:19:18.605Z"
         },
         {
-          "claim_id": "wt-7ebecf5b3f91d490-v2-claim-5",
+          "claim_id": "wt-7ebecf5b3f91d490-v3-claim-6",
           "story_id": "wt-7ebecf5b3f91d490",
           "claim": "Die Landtagswahl findet am 6. September 2026 statt.",
           "status": "primary_source_claim",
@@ -126866,18 +126914,18 @@
               "source_id": "sachsen-anhalt-election-context",
               "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
               "excerpt_hash": "a450f405ab53eab21d79",
-              "checked_at": "2026-09-05T23:04:54.936Z"
+              "checked_at": "2026-09-05T23:19:18.605Z"
             }
           ],
           "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T23:04:54.936Z"
+          "checked_at": "2026-09-05T23:19:18.605Z"
         }
       ],
       "event_id": "event-54b05b34eaf30592d8ab",
       "event_first_seen_at": "2026-09-05T22:05:00Z",
-      "event_detected_at": "2026-09-05T22:52:00Z",
-      "verification_started_at": "2026-09-05T23:04:54.936Z",
-      "publish_ready_at": "2026-09-05T23:04:54.936Z",
+      "event_detected_at": "2026-09-05T23:15:00Z",
+      "verification_started_at": "2026-09-05T23:19:18.605Z",
+      "publish_ready_at": "2026-09-05T23:19:18.605Z",
       "news_status": "corrected",
       "deepening_due_at": null,
       "evidence_groups": {
@@ -126903,10 +126951,18 @@
           {
             "source_ids": [
               "bild-access",
+              "bild-access"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "bild-access",
               "focus-case-research"
             ],
             "reason": "shared_origin",
-            "document_pairs": 1
+            "document_pairs": 2
           },
           {
             "source_ids": [
@@ -126922,7 +126978,7 @@
               "ntv-case-research"
             ],
             "reason": "shared_origin",
-            "document_pairs": 1
+            "document_pairs": 2
           },
           {
             "source_ids": [
@@ -126938,27 +126994,37 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T23:04:54.936Z",
-        "fingerprint": "a08efad45d45da0ad406851a24626b3da95a9359e2a133c3615cc0550bf6f568",
+        "checked_at": "2026-09-05T23:19:18.605Z",
+        "fingerprint": "f3493e37ce6a1157a104ba47ae5271948ae176ad9c40a412bc7de392a4f85894",
         "issue_codes": [],
         "warning_codes": [
           "SOURCE_REFERENCE_UNDATED"
         ]
       },
       "followups": [],
-      "content_hash": "a05e7ef94d2b201185a2bc6a95a6ef3ef75dcd196171f4e39fe7d946a90ef2d2",
+      "content_hash": "ee58ffd15f12e13f0a5f0fce6c42b9ef1b801665944f64262ecdfda4093e1bac",
       "published": true,
+      "corrections": [
+        {
+          "at": "2026-09-05T23:04:54.936Z",
+          "note": "Die erste Fassung berücksichtigte die frühere Interviewberichterstattung, aber noch nicht den bereits am 5. September um 18:24 Uhr veröffentlichten n-tv-Videobeitrag. Darin wird Siegmund mit Regierungsbereitschaft auch bei einer Stimme Mehrheit angekündigt. Titel und Zusammenfassung wurden deshalb korrigiert; die frühere offene Antwort ist nicht mehr der alleinige aktuelle Stand. Geprüft sind die n-tv-Überschrift und ihre Datierung, nicht der vollständige Originalton. Die frühere Version bleibt im Verlauf erhalten."
+        },
+        {
+          "at": "2026-09-05T23:19:18.605Z",
+          "note": "Ergänzung nach weiterem Quellenhinweis: Ein anderer BILD-Artikel vom 5. September, 22:26 Uhr, war in den bisherigen Fassungen nicht berücksichtigt. Er ist später veröffentlicht als der n-tv-Beitrag um 18:24 Uhr, bezieht Siegmunds eigene Antwort aber auf Freitag. Ein neueres Artikeldatum beweist keine neuere Aussage. Auch der Ursprung und Aufnahmezeitpunkt des n-tv-Videos sind nicht abschließend geprüft. Deshalb wird weder ein erneuter Kurswechsel noch eine unabhängige Widerlegung behauptet. Der Titel bildet nun die unterschiedlichen Berichte ab. Unbestätigte Angaben zu internen Widerständen bleiben ungesichert; die vollständigen Originaltöne sind weiterhin nicht geprüft."
+        }
+      ],
       "listed": true,
       "analysis_status": "veröffentlicht",
       "relevance_filter_version": "4.0",
-      "current_version": 2,
-      "source_summary": "Vor der Landtagswahl in Sachsen-Anhalt berichtet n-tv über eine neuere Aussage von AfD-Spitzenkandidat Ulrich Siegmund: Auch bei einer Stimme Mehrheit wolle er regieren. Der Sender veröffentlichte den entsprechend überschriebenen Videobeitrag am Samstag um 18:24 Uhr. Geprüft sind die veröffentlichte Überschrift und das Datum; der vollständige Originalton ist in dieser Prüfung nicht ausgewertet. Die neuere Angabe bleibt n-tv zugeschrieben.\n\nZuvor hatten BILD, FOCUS und n-tv/AFP über eine offene Antwort zur Kandidatur bei knappster Mehrheit berichtet. Diese Berichte beziehen sich auf dasselbe BILD-Interview und sind keine drei unabhängigen Interviewbelege. Die Bedingung einer stabilen eigenen Mehrheit ist nicht neu: ZDFheute dokumentierte sie bereits am Mittwoch. Die frühere offene Antwort darf angesichts des späteren Beitrags nicht mehr allein als aktueller Stand gelten. Am Sonntag wählen die Bürger den Landtag; dieser wählt anschließend den Ministerpräsidenten geheim. Wahlergebnis, formelle Kandidatur und tatsächliche Regierungsbildung stehen noch aus.",
+      "current_version": 3,
+      "source_summary": "Am Sonntag wird in Sachsen-Anhalt der Landtag gewählt. Vorher liegen unterschiedliche Berichte über die Regierungsbereitschaft von AfD-Spitzenkandidat Ulrich Siegmund bei knappster Mehrheit vor. n-tv schreibt ihm in einem am Samstag um 18:24 Uhr veröffentlichten Videobeitrag Bereitschaft auch bei einer Stimme Mehrheit zu. Geprüft sind Überschrift und Datum, nicht der vollständige Originalton.\n\nEin anderer BILD-Artikel erschien später, um 22:26 Uhr. Für Siegmunds eigene Antwort verweist er jedoch auf Freitag; zusätzliche Angaben über interne Widerstände sind nicht unabhängig bestätigt. Das neuere Artikeldatum belegt somit keinen erneuten Kurswechsel nach dem n-tv-Beitrag. Die früheren Berichte von BILD, FOCUS und n-tv/AFP teilen denselben Interviewursprung. ZDFheute dokumentierte bereits am Mittwoch den Vorbehalt einer stabilen Mehrheit.\n\nEine abschließende Auflösung anhand vollständig geprüfter Originaltöne liegt nicht vor. Gewählt wird der Landtag, nicht direkt der Ministerpräsident. Über dessen Wahl entscheiden anschließend die Abgeordneten geheim. Wahlergebnis, formelle Kandidatur und Regierungsbildung stehen noch aus.",
       "analysis": {
         "news_status": "corrected",
         "publication_depth": "deepened",
-        "summary": "Vor der Sachsen-Anhalt-Wahl berichtet n-tv über Siegmunds Regierungsbereitschaft auch bei knapper Mehrheit. Der spätere Videobeitrag ergänzt die frühere offene Antwort; die Aussage bleibt dem Sender zugeschrieben.",
-        "detail_summary": "Die zeitliche Reihenfolge ist entscheidend: Auf frühere Berichte über eine offene Kandidaturantwort folgt ein n-tv-Videobeitrag, der Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zuschreibt. Deshalb wurde der frühere Stand dieser Akte korrigiert. Eine Überschrift ersetzt jedoch keine vollständige Prüfung des Originaltons und keine spätere formelle Kandidatur. Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Wenn eine Partei nur knapp über die notwendige Mitgliedermehrheit verfügt, können fehlende Stimmen im geheimen Wahlgang entscheidend sein. Ob solche Ausfälle oder abweichende Stimmen tatsächlich auftreten, ist offen; ein Wahlergebnis liegt diesem Stand noch nicht zugrunde.",
-        "why_relevant": "Unmittelbar vor der Wahl ist entscheidend, welche Aussage aktuell ist und welche bereits durch weitere Berichterstattung ergänzt wurde. Das betrifft Wahlentscheidung und Regierungsbildung. Sehr hoch ist die demokratische Informationsrelevanz, nicht eine nachgewiesene gesellschaftliche Wirkung.",
+        "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
+        "detail_summary": "Der n-tv-Beitrag um 18:24 Uhr und der BILD-Artikel um 22:26 Uhr dürfen nicht allein nach ihrem Veröffentlichungszeitpunkt als Abfolge neuer Kandidatenaussagen gelesen werden. BILD verweist für Siegmunds Antwort auf Freitag; die spätere Veröffentlichung beweist keinen erneuten Kurswechsel nach n-tv. Umgekehrt ersetzt die n-tv-Überschrift keine vollständige Prüfung des Originaltons und keine formelle Kandidatur. Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Bei knapper eigener Mehrheit können fehlende Stimmen im geheimen Wahlgang ausschlaggebend sein. Ob solche Ausfälle oder abweichende Stimmen auftreten, ist offen; zusätzliche Berichte über parteiinterne Widerstände sind nicht unabhängig bestätigt.",
+        "why_relevant": "Unmittelbar vor der Wahl sind Bedingungen einer Kandidatur und ihr tatsächlicher Aussagezeitpunkt besonders informationsrelevant. Ungeklärte Berichte dürfen weder als sicherer Verzicht noch als sichere Zusage erscheinen. Eine gesellschaftliche Wirkung ist damit nicht nachgewiesen.",
         "status": "laufende Entwicklung",
         "analysis_type": "ex_ante",
         "importance": "sehr hoch",
@@ -127001,13 +127067,14 @@
           "Aufmerksamkeit für die Personalfrage kann Sachprogramme überlagern; ob dies geschieht, ist nicht belegt."
         ],
         "uncertainties": [
-          "Für die neuere Aussage sind die n-tv-Videoüberschrift und ihre Datierung geprüft, nicht der vollständige Originalton. Die Angabe bleibt deshalb dem Sender zugeschrieben.",
+          "Für die n-tv-Angabe sind Videoüberschrift und Veröffentlichungsdatum geprüft, nicht der vollständige Originalton oder dessen Aufnahmezeit. Die Angabe bleibt dem Sender zugeschrieben.",
+          "Das Veröffentlichungsdatum des späteren BILD-Artikels datiert nicht automatisch die darin beschriebene Kandidatenaussage. Eine neue Aussage nach dem n-tv-Beitrag ist damit nicht belegt.",
           "BILD, FOCUS und der frühere n-tv/AFP-Bericht beziehen sich auf dasselbe Interview. Auch dessen Video wurde hier nicht vollständig angehört; drei Berichte sind keine drei unabhängigen Interviewbelege.",
           "Die tatsächliche Mehrheit, eine formelle Kandidatur und das Abstimmungsverhalten der Abgeordneten bleiben offen.",
-          "Für behauptete interne Stimmverweigerer liegt in dieser Prüfung kein belastbarer Beleg vor; entsprechende Behauptungen werden nicht übernommen."
+          "Für behauptete interne Stimmverweigerer liegt in dieser Prüfung kein unabhängig bestätigter Beleg vor; entsprechende Behauptungen werden nicht als Tatsachen übernommen."
         ],
-        "evidence_level": "Amtliche Quellen belegen Wahltermin und Verfahren. Die neuere Regierungsbereitschaft ist der n-tv-Videoüberschrift zugeschrieben; frühere Interviewantworten und Bedingungen sind separat dokumentiert.",
-        "attribution": "Die neuere Regierungsbereitschaft ist n-tv zugeschrieben. BILD, FOCUS und der frühere n-tv/AFP-Text teilen für die offene Antwort denselben Interviewursprung. ZDFheute dokumentiert einen früheren Auftritt. Amtliche Quellen belegen nur Termin und Verfahren.",
+        "evidence_level": "Amtliche Quellen belegen Wahltermin und Verfahren. Die anderslautende Regierungsbereitschaft ist nur der n-tv-Videoüberschrift zugeschrieben; Aufnahmezeitpunkt und Originalton sind nicht vollständig geprüft. Der Quellenwiderspruch ist nicht abschließend aufgelöst.",
+        "attribution": "BILD, FOCUS und der frühere n-tv/AFP-Text teilen denselben Interviewursprung. Für das n-tv-Video ist ein unabhängiger Ursprung nicht nachgewiesen. ZDFheute dokumentiert einen früheren Auftritt. Amtliche Quellen belegen nur Termin und Verfahren.",
         "watch_next": [
           "Amtliches Wahlergebnis und tatsächliche Sitzverteilung prüfen.",
           "Siegmunds Erklärung nach der Wahl und eine formelle Kandidatur gegen Originalquellen prüfen.",
@@ -127028,13 +127095,13 @@
           "exceptional_factor": "democratic_correctability",
           "evidence_basis": "attributed_single_source",
           "duplicate_status": "material_update",
-          "rationale": "Ein späterer n-tv-Beitrag verändert die Einordnung der früheren offenen Antwort. Derselbe Vorgang wird transparent aktualisiert, keine zweite Meldung erzeugt. Die neuere Aussage bleibt zugeschrieben; Originalton, Kandidatur und tatsächliche Mehrheiten sind nicht abschließend geprüft."
+          "rationale": "Ein zusätzlicher Abendbericht erfordert die Unterscheidung von Artikel- und Aussagezeit. Dieselbe Akte wird korrigiert. Unterschiedliche Berichte sind sichtbar; weder sichere Zusage noch sicherer Verzicht oder erneuter Kurswechsel werden behauptet."
         },
         "media_impact": {
           "relevant": true,
           "relevance_level": "high",
           "reason": "Bedingte Kandidatur, grundsätzlicher Regierungswille und die zeitliche Reihenfolge unterschiedlicher Aussagen müssen getrennt bleiben.",
-          "factual_core": "Ein späterer n-tv-Videobeitrag schreibt Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Die frühere offene Antwort ist damit nicht mehr der alleinige aktuelle Stand.",
+          "factual_core": "Vor der Landtagswahl liegen unterschiedlich zugespitzte Berichte vor. Der später veröffentlichte BILD-Artikel verweist auf eine frühere Antwort; n-tv schreibt dem Kandidaten Bereitschaft auch bei knapper Mehrheit zu.",
           "epistemic_status": {
             "confirmed": [
               "Die Wahl und das parlamentarische Verfahren sind amtlich dokumentiert."
@@ -127059,7 +127126,7 @@
           "speaker_statement": {
             "present": true,
             "speaker": "Ulrich Siegmund, laut n-tv",
-            "statement": "Im späteren Videobeitrag wird ihm Regierungsbereitschaft auch bei knapper Mehrheit zugeschrieben. Der vollständige Originalton bleibt zu prüfen.",
+            "statement": "Die Videoüberschrift schreibt ihm Regierungsbereitschaft auch bei knapper Mehrheit zu. Originalton, Aufnahmezeitpunkt und Interviewursprung bleiben zu prüfen.",
             "status": "claim"
           },
           "framing": {
@@ -127152,9 +127219,9 @@
             "description": null,
             "evidence": []
           },
-          "public_explanation": "Die ältere Videoüberschrift bei BILD stellt die grundsätzliche Regierungsbereitschaft als Frage dar. Die damalige berichtete Antwort betrifft dagegen eine bestimmte Mehrheitsbedingung. Die Frage ist eine redaktionelle Zuspitzung, kein direktes Zitat des Kandidaten. Ein späterer n-tv-Beitrag schreibt ihm nun Bereitschaft auch bei knapper Mehrheit zu. Wird nur die ältere Überschrift weitergegeben, kann ein überholter Eindruck entstehen. Auch eine ursprünglich korrekt wiedergegebene Aussage braucht deshalb ihren Zeitpunkt und spätere Ergänzungen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder dem Medium noch dem Kandidaten wird eine Absicht unterstellt. Die vollständigen Originaltöne und die spätere formelle Kandidatur bleiben gesondert zu prüfen.",
-          "editorial_assessment": "Die frühere redaktionelle Frage und die neuere zugeschriebene Bereitschaft sind zeitlich auseinanderzuhalten. Keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
-          "fact_first_alternative": "Vor der Landtagswahl berichtet n-tv über Regierungsbereitschaft auch bei knapper Mehrheit. Die frühere offene Antwort gehört zur Vorgeschichte; der vollständige Kontext der neueren Aussage bleibt zu prüfen.",
+          "public_explanation": "Die frühere BILD-Videoüberschrift stellt den Regierungswillen grundsätzlich infrage. Der ergänzte Abendartikel verschärft dies zu einer redaktionellen Täuschungsfrage; das ist kein belegter Täuschungsvorgang. n-tv stellt dagegen die Bereitschaft bei knapper Mehrheit heraus. Ein neuerer Artikel kann eine ältere Aussage aufgreifen: Veröffentlichung und Aussage sind deshalb getrennt zu datieren. Ohne diesen Kontext könnte dieselbe Person fälschlich als erneut widersprüchlich oder als abschließend festgelegt erscheinen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder eine politische Absicht noch eine Medienabsicht wird unterstellt. Die vollständigen Originaltöne und eine spätere formelle Kandidatur bleiben gesondert zu prüfen.",
+          "editorial_assessment": "Artikelzeit, Aussagezeit und redaktionelle Deutung getrennt halten. Ein unabhängiger Ursprung des n-tv-Videos ist nicht nachgewiesen. Keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
+          "fact_first_alternative": "Vor der Landtagswahl berichtet n-tv über Bereitschaft auch bei knapper Mehrheit. Ein späterer BILD-Artikel greift eine frühere Antwort auf. Ohne vollständige Originaltöne ist daraus kein erneuter Kurswechsel abzuleiten.",
           "fact_first_reframe": {
             "title": "",
             "source_summary": "",
@@ -127178,8 +127245,8 @@
         },
         "story_id": "wt-7ebecf5b3f91d490",
         "media_analysis_version": "2.0",
-        "media_checked_at": "2026-09-05T23:04:54.936Z",
-        "media_trigger_fingerprint": "9696f284185c8008cb79f9e22084e9e84a49442a2733bf19a61cbedd32eae6e5",
+        "media_checked_at": "2026-09-05T23:19:18.605Z",
+        "media_trigger_fingerprint": "3bfa51823c37320b0ab8d2346e308ef48145d829ff329d7f0d13d5689d086d19",
         "media_trigger": {
           "relevant": true,
           "level": "high",
@@ -127190,10 +127257,10 @@
           "matched_terms": [
             "gar nicht regieren"
           ],
-          "source_count": 7,
+          "source_count": 8,
           "comparable_source_count": 3,
-          "fingerprint": "9696f284185c8008cb79f9e22084e9e84a49442a2733bf19a61cbedd32eae6e5",
-          "content_fingerprint": "0848732e7ee90b907bdc6bc0c8fa6f6454a3218be9caa1c4e3d277396ed8cc2a",
+          "fingerprint": "3bfa51823c37320b0ab8d2346e308ef48145d829ff329d7f0d13d5689d086d19",
+          "content_fingerprint": "528a4b71a9f807d2a42687f1f0fab99886504c71c54acf0a16fc659a1a69daad",
           "basis": "analysis_finding",
           "version": "2.0"
         }
@@ -127935,6 +128002,411 @@
               "content_hash": "834dde58c68a4b9ed6849b01a5eb57c2a48b26251ccc6d89e0c32eb5659309b9"
             }
           ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-05T23:19:18.605Z",
+          "content_hash": "ee58ffd15f12e13f0a5f0fce6c42b9ef1b801665944f64262ecdfda4093e1bac",
+          "source_summary": "Am Sonntag wird in Sachsen-Anhalt der Landtag gewählt. Vorher liegen unterschiedliche Berichte über die Regierungsbereitschaft von AfD-Spitzenkandidat Ulrich Siegmund bei knappster Mehrheit vor. n-tv schreibt ihm in einem am Samstag um 18:24 Uhr veröffentlichten Videobeitrag Bereitschaft auch bei einer Stimme Mehrheit zu. Geprüft sind Überschrift und Datum, nicht der vollständige Originalton.\n\nEin anderer BILD-Artikel erschien später, um 22:26 Uhr. Für Siegmunds eigene Antwort verweist er jedoch auf Freitag; zusätzliche Angaben über interne Widerstände sind nicht unabhängig bestätigt. Das neuere Artikeldatum belegt somit keinen erneuten Kurswechsel nach dem n-tv-Beitrag. Die früheren Berichte von BILD, FOCUS und n-tv/AFP teilen denselben Interviewursprung. ZDFheute dokumentierte bereits am Mittwoch den Vorbehalt einer stabilen Mehrheit.\n\nEine abschließende Auflösung anhand vollständig geprüfter Originaltöne liegt nicht vor. Gewählt wird der Landtag, nicht direkt der Ministerpräsident. Über dessen Wahl entscheiden anschließend die Abgeordneten geheim. Wahlergebnis, formelle Kandidatur und Regierungsbildung stehen noch aus.",
+          "analysis": {
+            "news_status": "corrected",
+            "publication_depth": "deepened",
+            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
+            "detail_summary": "Der n-tv-Beitrag um 18:24 Uhr und der BILD-Artikel um 22:26 Uhr dürfen nicht allein nach ihrem Veröffentlichungszeitpunkt als Abfolge neuer Kandidatenaussagen gelesen werden. BILD verweist für Siegmunds Antwort auf Freitag; die spätere Veröffentlichung beweist keinen erneuten Kurswechsel nach n-tv. Umgekehrt ersetzt die n-tv-Überschrift keine vollständige Prüfung des Originaltons und keine formelle Kandidatur. Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Bei knapper eigener Mehrheit können fehlende Stimmen im geheimen Wahlgang ausschlaggebend sein. Ob solche Ausfälle oder abweichende Stimmen auftreten, ist offen; zusätzliche Berichte über parteiinterne Widerstände sind nicht unabhängig bestätigt.",
+            "why_relevant": "Unmittelbar vor der Wahl sind Bedingungen einer Kandidatur und ihr tatsächlicher Aussagezeitpunkt besonders informationsrelevant. Ungeklärte Berichte dürfen weder als sicherer Verzicht noch als sichere Zusage erscheinen. Eine gesellschaftliche Wirkung ist damit nicht nachgewiesen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "importance": "sehr hoch",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Für Wahlberechtigte ist die Kenntnis der Bedingungen einer möglichen Regierungsbildung relevant. Konkrete Folgen für Gesundheit, Einkommen oder Teilhabe lassen sich aus der Interviewaussage allein nicht bestimmen."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus den Kandidaturaussagen folgt noch kein bestimmter Umweltzustand und kein belastbar bezifferbares Umweltrisiko."
+            },
+            "democracy": {
+              "relevance": "sehr hoch",
+              "rationale": "Die Unterscheidung zwischen Wahlwerbung, tatsächlicher Kandidatur und parlamentarischer Mehrheit ist unmittelbar vor der Wahl besonders informationsrelevant. Ein Einfluss auf Wahlverhalten oder Vertrauen ist damit nicht nachgewiesen."
+            },
+            "impact_potential": "Klare Angaben über Bedingungen einer Kandidatur können eine informierte Wahlentscheidung unterstützen. Welchen Unterschied diese Information tatsächlich macht, bleibt empirisch offen.",
+            "impact_risks": [
+              "Unklare Bedingungen können Erwartungen an eine mögliche Regierungsbildung erschweren.",
+              "Eine zugespitzte Darstellung als vollständiger Verzicht könnte die tatsächliche bedingte Aussage verzerren."
+            ],
+            "mechanisms": [
+              "Wahlwerbung prägt Erwartungen an die spätere Regierungsbildung; die rechtliche Entscheidung fällt jedoch erst im Landtag.",
+              "Nachvollziehbare Attribution und frühere Aussagen ermöglichen den Vergleich von Ankündigung und späterer Entscheidung."
+            ],
+            "first_order": [
+              "Ohne eigene absolute Mehrheit fehlt eine allein aus eigenen Mandaten ableitbare Mitgliedermehrheit für die ersten Wahlgänge; daraus folgt weder ein automatischer Ausschluss einer Kandidatur noch ein bestimmtes Wahlergebnis.",
+              "Bei knapper eigener Mehrheit können fehlende oder anders abgegebene Stimmen im geheimen Wahlgang ausschlaggebend sein. Konkrete Abweichler sind nicht belegt."
+            ],
+            "second_order": [
+              "Scheitern die ersten Wahlgänge, greifen die in der Landesverfassung vorgesehenen weiteren Schritte; eine einfache Zusage ersetzt dieses Verfahren nicht.",
+              "Falls Siegmund nicht kandidiert, kann die Regierungsbildung andere Kandidaturen erfordern. Sein Verzicht allein löst keine automatische Neuwahl aus."
+            ],
+            "third_order": [
+              "Erst längerfristig wäre prüfbar, ob der Umgang mit Wahlzusagen institutionelles Vertrauen verändert. Dieser mögliche Wirkungspfad ist kein Nachweis einer eingetretenen Veränderung."
+            ],
+            "systemic_relevance": "Sehr hoch für demokratische Transparenz und parlamentarische Handlungsfähigkeit in einer unmittelbar bevorstehenden Wahl; keine parteipolitische Rangordnung.",
+            "transformation_potential": "Ein struktureller Wandel ist durch die Interviewaussage nicht belegt. Mögliche Änderungen staatlichen Handelns hängen von Wahlergebnis, Regierungsbildung und späteren Entscheidungen ab.",
+            "resilience": "Geheime Wahl, gestufte Mehrheitsanforderungen und geregelte weitere Wahlgänge bilden einen institutionellen Rahmen für unklare Mehrheiten.",
+            "side_effects": [
+              "Aufmerksamkeit für die Personalfrage kann Sachprogramme überlagern; ob dies geschieht, ist nicht belegt."
+            ],
+            "uncertainties": [
+              "Für die n-tv-Angabe sind Videoüberschrift und Veröffentlichungsdatum geprüft, nicht der vollständige Originalton oder dessen Aufnahmezeit. Die Angabe bleibt dem Sender zugeschrieben.",
+              "Das Veröffentlichungsdatum des späteren BILD-Artikels datiert nicht automatisch die darin beschriebene Kandidatenaussage. Eine neue Aussage nach dem n-tv-Beitrag ist damit nicht belegt.",
+              "BILD, FOCUS und der frühere n-tv/AFP-Bericht beziehen sich auf dasselbe Interview. Auch dessen Video wurde hier nicht vollständig angehört; drei Berichte sind keine drei unabhängigen Interviewbelege.",
+              "Die tatsächliche Mehrheit, eine formelle Kandidatur und das Abstimmungsverhalten der Abgeordneten bleiben offen.",
+              "Für behauptete interne Stimmverweigerer liegt in dieser Prüfung kein unabhängig bestätigter Beleg vor; entsprechende Behauptungen werden nicht als Tatsachen übernommen."
+            ],
+            "evidence_level": "Amtliche Quellen belegen Wahltermin und Verfahren. Die anderslautende Regierungsbereitschaft ist nur der n-tv-Videoüberschrift zugeschrieben; Aufnahmezeitpunkt und Originalton sind nicht vollständig geprüft. Der Quellenwiderspruch ist nicht abschließend aufgelöst.",
+            "attribution": "BILD, FOCUS und der frühere n-tv/AFP-Text teilen denselben Interviewursprung. Für das n-tv-Video ist ein unabhängiger Ursprung nicht nachgewiesen. ZDFheute dokumentiert einen früheren Auftritt. Amtliche Quellen belegen nur Termin und Verfahren.",
+            "watch_next": [
+              "Amtliches Wahlergebnis und tatsächliche Sitzverteilung prüfen.",
+              "Siegmunds Erklärung nach der Wahl und eine formelle Kandidatur gegen Originalquellen prüfen.",
+              "Parlamentarische Wahlgänge und tatsächliches Abstimmungsergebnis dokumentieren; keine Abweichler aus Vermutungen ableiten."
+            ],
+            "reference_frameworks": [
+              "Landesverfassung Sachsen-Anhalt: Bildung der Landesregierung und parlamentarische Wahl",
+              "Agenda 2030: SDG 16 als Referenz für nachvollziehbare Institutionen, nicht als Wirkungsbeweis"
+            ],
+            "publication_recommendation": true,
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "democratic_correctability",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "democratic_correctability",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Ein zusätzlicher Abendbericht erfordert die Unterscheidung von Artikel- und Aussagezeit. Dieselbe Akte wird korrigiert. Unterschiedliche Berichte sind sichtbar; weder sichere Zusage noch sicherer Verzicht oder erneuter Kurswechsel werden behauptet."
+            },
+            "media_impact": {
+              "relevant": true,
+              "relevance_level": "high",
+              "reason": "Bedingte Kandidatur, grundsätzlicher Regierungswille und die zeitliche Reihenfolge unterschiedlicher Aussagen müssen getrennt bleiben.",
+              "factual_core": "Vor der Landtagswahl liegen unterschiedlich zugespitzte Berichte vor. Der später veröffentlichte BILD-Artikel verweist auf eine frühere Antwort; n-tv schreibt dem Kandidaten Bereitschaft auch bei knapper Mehrheit zu.",
+              "epistemic_status": {
+                "confirmed": [
+                  "Die Wahl und das parlamentarische Verfahren sind amtlich dokumentiert."
+                ],
+                "actor_claims": [
+                  "Der spätere n-tv-Beitrag schreibt dem Kandidaten Bereitschaft auch bei knapper Mehrheit zu; frühere Berichte gaben eine offene Antwort wieder."
+                ],
+                "open": [
+                  "Vollständiger Kontext der neueren Aussage, formelle Kandidatur und gesellschaftliche Kommunikationsfolgen sind offen."
+                ]
+              },
+              "attribution": {
+                "frame_source": "BILD-Videoüberschrift",
+                "speaker": "Redaktionelle Frage",
+                "original_term": "gar nicht regieren",
+                "usage_type": "editorial",
+                "placement": [
+                  "headline"
+                ],
+                "attribution_quality": "editorial"
+              },
+              "speaker_statement": {
+                "present": true,
+                "speaker": "Ulrich Siegmund, laut n-tv",
+                "statement": "Die Videoüberschrift schreibt ihm Regierungsbereitschaft auch bei knapper Mehrheit zu. Originalton, Aufnahmezeitpunkt und Interviewursprung bleiben zu prüfen.",
+                "status": "claim"
+              },
+              "framing": {
+                "detected": true,
+                "term": "gar nicht regieren",
+                "origin_in_story": "BILD-Videoüberschrift",
+                "media_usage": "headline",
+                "attribution_quality": "eindeutig attribuiert",
+                "factual_status": "Interpretation",
+                "frame_type": [
+                  "Konflikt"
+                ],
+                "political_history_relevant": false,
+                "political_history": "",
+                "political_history_evidence": []
+              },
+              "frame_analysis": {
+                "frame_detected": true,
+                "frame_term": "gar nicht regieren",
+                "frame_type": [
+                  "Konflikt"
+                ],
+                "problem_definition": "Eine bedingte Kandidatur wird als Frage nach grundsätzlicher Regierungsbereitschaft zugespitzt.",
+                "implied_cause": "Offen; keine Absicht unterstellt.",
+                "implied_responsibility": "Im Mittelpunkt steht die Kandidaturentscheidung, nicht eine belegte persönliche Absicht.",
+                "implied_threat": "Die Formulierung kann Zweifel an der Verbindlichkeit von Wahlwerbung nahelegen.",
+                "implied_solution_space": "Ein Abgleich der früheren Bedingungen mit der aktuellen Aussage ermöglicht eine sachlichere Beurteilung.",
+                "material_omissions": [
+                  "Für die Einordnung ist der frühere Vorbehalt einer stabilen Mehrheit wesentlich."
+                ]
+              },
+              "political_context": {
+                "relevant": false,
+                "classification": "",
+                "evidence_based": false,
+                "evidence": [],
+                "uncertainty": "Keine politische Herkunftsgeschichte des Ausdrucks untersucht."
+              },
+              "resonance": {
+                "resonance_space": "",
+                "resonance_risk": "",
+                "normalization_potential": "",
+                "repetition_effect": "",
+                "trust_effect": "",
+                "polarization_potential": "",
+                "discourse_effect": ""
+              },
+              "discourse_effect": {
+                "impact_status": "potential",
+                "resonance_space": "Erwartungen an Wahlzusagen und Regierungsbildung.",
+                "normalization_potential": "open",
+                "repetition_risk": "open",
+                "polarization_potential": "Die zugespitzte Frage kann eine Personaldebatte verstärken.",
+                "trust_effect_potential": "Vertrauensfolgen sind denkbar, aber nicht gemessen.",
+                "discourse_effect_potential": "Eine Trennung von Bedingung und grundsätzlicher Bereitschaft kann das Verständnis verbessern."
+              },
+              "impact_path": {
+                "first_order": "Die Frage kann die Aufmerksamkeit auf den Regierungswillen lenken.",
+                "second_order": "Wiederholung könnte den Eindruck einer grundsätzlich fehlenden Bereitschaft verstärken.",
+                "third_order": "Folgen für institutionelles Vertrauen wären gesondert zu untersuchen."
+              },
+              "evidence": {
+                "status": "medium",
+                "level": "medium",
+                "what_is_known": "Beobachtbar sind die redaktionelle Frage und der frühere Mehrheitsvorbehalt.",
+                "what_is_inferred": "Ein möglicher Unterschied zwischen bedingter Kandidatur und wahrgenommenem vollständigem Verzicht.",
+                "what_is_open": "Eine tatsächliche Veränderung von Vertrauen oder Wahlentscheidung ist nicht nachgewiesen.",
+                "facts": [
+                  "Ein früherer Mehrheitsvorbehalt ist dokumentiert."
+                ],
+                "observations": [
+                  "Die Videoüberschrift stellt den Regierungswillen als Frage dar."
+                ],
+                "inferences": [
+                  "Eine zugespitzte Frage kann weiter reichen als die bedingte Interviewantwort."
+                ],
+                "impact_potentials": [
+                  "Lesende könnten Kandidaturbedingung und vollständigen Verzicht verwechseln."
+                ],
+                "impact_risks": [
+                  "Möglicher Kontextverlust bei verkürzter Weiterverbreitung."
+                ],
+                "observed_impacts": [],
+                "limitations": [
+                  "Keine Untersuchung tatsächlicher Rezeption oder des Wahlverhaltens."
+                ]
+              },
+              "observed_impact": {
+                "present": false,
+                "description": null,
+                "evidence": []
+              },
+              "public_explanation": "Die frühere BILD-Videoüberschrift stellt den Regierungswillen grundsätzlich infrage. Der ergänzte Abendartikel verschärft dies zu einer redaktionellen Täuschungsfrage; das ist kein belegter Täuschungsvorgang. n-tv stellt dagegen die Bereitschaft bei knapper Mehrheit heraus. Ein neuerer Artikel kann eine ältere Aussage aufgreifen: Veröffentlichung und Aussage sind deshalb getrennt zu datieren. Ohne diesen Kontext könnte dieselbe Person fälschlich als erneut widersprüchlich oder als abschließend festgelegt erscheinen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder eine politische Absicht noch eine Medienabsicht wird unterstellt. Die vollständigen Originaltöne und eine spätere formelle Kandidatur bleiben gesondert zu prüfen.",
+              "editorial_assessment": "Artikelzeit, Aussagezeit und redaktionelle Deutung getrennt halten. Ein unabhängiger Ursprung des n-tv-Videos ist nicht nachgewiesen. Keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
+              "fact_first_alternative": "Vor der Landtagswahl berichtet n-tv über Bereitschaft auch bei knapper Mehrheit. Ein späterer BILD-Artikel greift eine frühere Antwort auf. Ohne vollständige Originaltöne ist daraus kein erneuter Kurswechsel abzuleiten.",
+              "fact_first_reframe": {
+                "title": "",
+                "source_summary": "",
+                "summary": "",
+                "detail_summary": ""
+              },
+              "self_frame_warning": false,
+              "self_frame_check": {
+                "problem_detected": false,
+                "problems": [],
+                "frame_repetition_count": 0,
+                "rewrite_required": false,
+                "recommended_title": "",
+                "recommended_summary": "",
+                "recommended_meta_description": ""
+              },
+              "source_comparison": {
+                "sufficient_basis": false,
+                "finding": ""
+              }
+            },
+            "story_id": "wt-7ebecf5b3f91d490",
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-05T23:19:18.605Z",
+            "media_trigger_fingerprint": "3bfa51823c37320b0ab8d2346e308ef48145d829ff329d7f0d13d5689d086d19",
+            "media_trigger": {
+              "relevant": true,
+              "level": "high",
+              "score": 4,
+              "reasons": [
+                "analysis_substantive_finding"
+              ],
+              "matched_terms": [
+                "gar nicht regieren"
+              ],
+              "source_count": 8,
+              "comparable_source_count": 3,
+              "fingerprint": "3bfa51823c37320b0ab8d2346e308ef48145d829ff329d7f0d13d5689d086d19",
+              "content_fingerprint": "528a4b71a9f807d2a42687f1f0fab99886504c71c54acf0a16fc659a1a69daad",
+              "basis": "analysis_finding",
+              "version": "2.0"
+            }
+          },
+          "provider": "editorial_review",
+          "model": "source_bound_review",
+          "mode": "editorial_review",
+          "method_sources": [
+            "AGENTS.md",
+            "source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md"
+          ],
+          "claims": [
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v3-claim-1",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "Der später veröffentlichte BILD-Artikel verweist für Siegmunds eigene Antwort ausdrücklich auf Freitag.",
+              "status": "uncertain_claim",
+              "source_id": "bild-access",
+              "evidence": [
+                {
+                  "source_id": "bild-access",
+                  "url": "https://www.bild.de/politik/inland/afd-droht-in-sachsen-anhalt-die-grosse-wahl-verarsche-6a9b18eb3f723da3e680c586",
+                  "excerpt_hash": "917b777548e90bb7ed73",
+                  "checked_at": "2026-09-05T23:19:18.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T23:19:18.605Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v3-claim-2",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "n-tv schreibt Siegmund in einem später veröffentlichten Videobeitrag Regierungsbereitschaft auch bei einer Stimme Mehrheit zu.",
+              "status": "single_source_claim",
+              "source_id": "ntv-case-research",
+              "evidence": [
+                {
+                  "source_id": "ntv-case-research",
+                  "url": "https://www.n-tv.de/mediathek/videos/politik/Siegmund-Regieren-natuerlich-auch-mit-einer-Stimme-mehr-id31273399.html",
+                  "excerpt_hash": "036274b3dd206577f624",
+                  "checked_at": "2026-09-05T23:19:18.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T23:19:18.605Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v3-claim-3",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "FOCUS berichtet unter Berufung auf das BILD-Interview, Siegmund wolle über eine Kandidatur bei knappster Mehrheit erst nach der Wahl entscheiden.",
+              "status": "uncertain_claim",
+              "source_id": "focus-case-research",
+              "evidence": [
+                {
+                  "source_id": "focus-case-research",
+                  "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+                  "excerpt_hash": "6bd8ec7384f43fbfd542",
+                  "checked_at": "2026-09-05T23:19:18.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T23:19:18.605Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v3-claim-4",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "ZDFheute dokumentierte den Vorbehalt einer stabilen eigenen Mehrheit bereits bei einem früheren Auftritt.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+                  "excerpt_hash": "786da8664aca1ba94d5b",
+                  "checked_at": "2026-09-05T23:19:18.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T23:19:18.605Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v3-claim-5",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "Der Ministerpräsident wird durch den Landtag in geheimer Abstimmung gewählt, nicht direkt durch die Bevölkerung.",
+              "status": "primary_source_claim",
+              "source_id": "landtag-sachsen-anhalt-context",
+              "evidence": [
+                {
+                  "source_id": "landtag-sachsen-anhalt-context",
+                  "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+                  "excerpt_hash": "6c9e71de60fa8e00cae7",
+                  "checked_at": "2026-09-05T23:19:18.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T23:19:18.605Z"
+            },
+            {
+              "claim_id": "wt-7ebecf5b3f91d490-v3-claim-6",
+              "story_id": "wt-7ebecf5b3f91d490",
+              "claim": "Die Landtagswahl findet am 6. September 2026 statt.",
+              "status": "primary_source_claim",
+              "source_id": "sachsen-anhalt-election-context",
+              "evidence": [
+                {
+                  "source_id": "sachsen-anhalt-election-context",
+                  "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+                  "excerpt_hash": "a450f405ab53eab21d79",
+                  "checked_at": "2026-09-05T23:19:18.605Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T23:19:18.605Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "ntv-case-research",
+              "url": "https://www.n-tv.de/mediathek/videos/politik/Siegmund-Regieren-natuerlich-auch-mit-einer-Stimme-mehr-id31273399.html",
+              "content_hash": "4bd1a24a9082b9e67665b5d197eb8a97e6992104099d2098ccff35639c089e4a"
+            },
+            {
+              "source_id": "bild-access",
+              "url": "https://www.bild.de/politik/inland/afd-droht-in-sachsen-anhalt-die-grosse-wahl-verarsche-6a9b18eb3f723da3e680c586",
+              "content_hash": "4d7e23adb52a8a2f76508db8d04057394e39f34b32b3761424c90b4c3c4afa8b"
+            },
+            {
+              "source_id": "bild-access",
+              "url": "https://www.bild.de/politik/inland/sachsen-anhalt-ulrich-siegmund-reichen-auch-drei-stimmen-mehrheit-nicht-6a9acf6908c763dcf81f4615",
+              "content_hash": "7d90ff832f9233d4d68b3a89b5b17396cb20c6037fe9a9ca5fe3b7353aa5af3e"
+            },
+            {
+              "source_id": "focus-case-research",
+              "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
+              "content_hash": "0beba9860e1a0d0e4ce4764426e5e4532c549a05ea93344f73f27859184511a6"
+            },
+            {
+              "source_id": "ntv-case-research",
+              "url": "https://www.n-tv.de/politik/Siegmund-will-auch-bei-absoluter-Mehrheit-nicht-unbedingt-Ministerpraesident-werden-id31272045.html",
+              "content_hash": "56458819cee2ec4567e3b679e97ca79613c7215c8e5aafcb944610dabbb059a9"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
+              "content_hash": "814e1ee2efa6bdd6b2bb3c756b8487c387cf91d23868e071360814cb2082fa9f"
+            },
+            {
+              "source_id": "landtag-sachsen-anhalt-context",
+              "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
+              "content_hash": "2ab43f7ca01cf4bcda184ef5b2b5d8fbe78cc78fcdaa609d3555d595d300e0b0"
+            },
+            {
+              "source_id": "sachsen-anhalt-election-context",
+              "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
+              "content_hash": "834dde58c68a4b9ed6849b01a5eb57c2a48b26251ccc6d89e0c32eb5659309b9"
+            }
+          ]
         }
       ],
       "publication_history": [
@@ -127947,12 +128419,17 @@
           "version": 2,
           "published_at": "2026-09-05T23:04:54.936Z",
           "source_count": 7
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-05T23:19:18.605Z",
+          "source_count": 8
         }
       ],
       "retirement_history": [],
       "editorial_review": {
-        "research_checked_at": "2026-09-05T22:52:00Z",
-        "basis": "Erweiterte Quellenprüfung nach Nutzerhinweis auf n-tv. Der frühere n-tv/AFP-Text bezieht sich auf dasselbe BILD-Interview wie FOCUS. Zusätzlich wurde ein späterer n-tv-Videobeitrag vom 05.09.2026 um 18:24 Uhr mit einer anderslautenden, Siegmund zugeschriebenen Aussage gefunden. Die veröffentlichte Überschrift und das Datum sind geprüft; die Videos wurden nicht vollständig angehört. Die neuere Aussage bleibt deshalb n-tv zugeschrieben. Frühere ZDF-Berichterstattung und amtliche Wahl-/Verfassungsquellen bleiben getrennte Belege.",
+        "research_checked_at": "2026-09-05T23:15:00Z",
+        "basis": "Zusätzlicher Nutzerhinweis auf einen anderen BILD-Artikel. Die öffentliche Seite samt Datum und Artikeltext wurde im Browser geprüft: Veröffentlichung und Aktualisierung am 05.09.2026 um 22:26 Uhr. Dieser Artikel ist neuer als der n-tv-Beitrag um 18:24 Uhr, verweist für Siegmunds eigene Antwort aber ausdrücklich auf Freitag. Beide Publikationszeiten werden getrennt vom Aussagezeitpunkt geführt. Videos wurden nicht vollständig angehört. Unabhängige Bestätigung der zusätzlich behaupteten internen Widerstände liegt nicht vor.",
         "original_event_date": "2026-09-04",
         "exclusions": [
           "Kein belegter plötzlicher Kurswechsel am Samstagabend",
@@ -127960,13 +128437,7 @@
           "Keine Prognose einer absoluten Mehrheit",
           "Keine Bewertung einer Partei oder Person"
         ]
-      },
-      "corrections": [
-        {
-          "at": "2026-09-05T23:04:54.936Z",
-          "note": "Die erste Fassung berücksichtigte die frühere Interviewberichterstattung, aber noch nicht den bereits am 5. September um 18:24 Uhr veröffentlichten n-tv-Videobeitrag. Darin wird Siegmund mit Regierungsbereitschaft auch bei einer Stimme Mehrheit angekündigt. Titel und Zusammenfassung wurden deshalb korrigiert; die frühere offene Antwort ist nicht mehr der alleinige aktuelle Stand. Geprüft sind die n-tv-Überschrift und ihre Datierung, nicht der vollständige Originalton. Die frühere Version bleibt im Verlauf erhalten."
-        }
-      ]
+      }
     }
   ],
   "public_updated_at": "2026-09-05T21:51:30.215Z"
