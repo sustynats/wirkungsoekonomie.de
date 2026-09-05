@@ -37,6 +37,8 @@ test('review reuse is bounded and invalidated by evidence, scope and publication
   }
   const repeated = structuredClone(c); repeated.sources[0].ingested_at='later'; repeated.sources[0].last_checked_at='later';
   assert.equal(reviewFingerprint(repeated),reviewFingerprint(c));
+  c.existing_story.review_checkpoint = reviewCheckpoint(c, now, 'input_too_large');
+  assert.equal(canReuseReview(c, now), false);
   c.sources.push({...item,url:item.url+'/b'}); const before=reviewFingerprint(c); c.sources.reverse(); assert.equal(reviewFingerprint(c),before);
 });
 
@@ -79,5 +81,5 @@ test('oversize preflight preserves a queue item and leaves the paid slot to anot
   assert.ok(evaluateRunHealth(report,{now}).errors.includes('AI_INPUT_BLOCKED'));
   assert.ok(!evaluateRunHealth(report,{now}).errors.includes('AI_PROVIDER_DEGRADED'));
   const again=await runWirkungsticker({...opts,...captured});
-  assert.equal(again.input_holds[0].reused,true); assert.equal(again.ai_calls,0);
+  assert.equal(again.input_holds[0].reused,undefined); assert.equal(again.ai_calls,0);
 });

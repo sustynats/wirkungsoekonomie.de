@@ -144,7 +144,9 @@ export function reviewCheckpoint(candidate, now, outcome) {
 export function canReuseReview(candidate, now) {
   const checkpoint = candidate.existing_story?.review_checkpoint;
   return Boolean(checkpoint && checkpoint.version === EVIDENCE_PACKET_VERSION &&
-    ["no_material_update", "input_too_large"].includes(checkpoint.outcome) &&
+    // Only editorial no-update decisions are reusable. Input-size holds are
+    // technical and must be retried after packing or source-shape changes.
+    checkpoint.outcome === "no_material_update" &&
     !candidate.followup_due && !candidate.deepening_due &&
     Date.parse(checkpoint.expires_at) > Date.parse(now) && checkpoint.fingerprint === reviewFingerprint(candidate));
 }
