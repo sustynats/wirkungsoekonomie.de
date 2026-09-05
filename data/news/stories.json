@@ -1,7 +1,1219 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T09:32:59.604Z",
+  "updated_at": "2026-09-05T09:44:12.170Z",
   "stories": [
+    {
+      "story_id": "wt-aaa7e98d9c993988",
+      "slug": "anschlage-auf-umspannwerke-dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverda-993988",
+      "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
+      "first_seen": "2026-09-04T17:11:33.000Z",
+      "last_updated": "2026-09-05T09:32:59.604Z",
+      "published_at": "2026-09-05T06:37:35.694Z",
+      "updated_at": "2026-09-05T09:44:12.170Z",
+      "topic": [
+        "Klima"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+          "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
+          "summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft. Am Hambacher Forst kam es zu einem SEK-Einsatz.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T17:11:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f",
+          "source_item_id": "603b3a314a06b872ded379d4bff2af2156df9995f2d16048da924eb6c7544d5a",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T17:11:33.000Z",
+          "ingested_at": "2026-09-04T17:21:09.783Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+          "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
+          "summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T06:25:17.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "151e54943f2f40e4411b21eafe8ca35dd989429c9930f29c1b06dba72cd27220",
+          "source_item_id": "26e81c07cc436169edeac35ec7b110399a8e58184bf4a6fc604c4beeb00ca4ce",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T06:25:17.000Z",
+          "ingested_at": "2026-09-05T06:36:46.215Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-aaa7e98d9c993988-v1-claim-1",
+          "story_id": "wt-aaa7e98d9c993988",
+          "claim": "Bundesinnenminister Dobrindt bezeichnet die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\".",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "excerpt_hash": "1c7dc01730b8922f64ef",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "excerpt_hash": "52354455b03b2d3fef4a",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T06:37:35.694Z"
+        },
+        {
+          "claim_id": "wt-aaa7e98d9c993988-v1-claim-2",
+          "story_id": "wt-aaa7e98d9c993988",
+          "claim": "Die Fahndung nach einem verdächtigen Mann läuft weiter, nachdem die Polizei ihn bei einem SEK-Einsatz am Hambacher Forst nicht gefunden hat.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "excerpt_hash": "392009238bfc4e2cf945",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+              "excerpt_hash": "a1f7bfe473e9e6c51828",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T06:37:35.694Z"
+        },
+        {
+          "claim_id": "wt-aaa7e98d9c993988-v1-claim-3",
+          "story_id": "wt-aaa7e98d9c993988",
+          "claim": "In Brandenburg und Nordrhein-Westfalen wurden am Dienstag gezielt die Stromversorgung gestört; am Donnerstagabend fand man ähnliche Gegenstände bei Dormagen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "excerpt_hash": "53bd1c44999f9c50e13f",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+              "excerpt_hash": "ac6be1d44520ad045ebb",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T06:37:35.694Z"
+        },
+        {
+          "claim_id": "wt-aaa7e98d9c993988-v1-claim-4",
+          "story_id": "wt-aaa7e98d9c993988",
+          "claim": "Auch in Sachsen wurden an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt, und es gab dort ein Bekennerschreiben.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "excerpt_hash": "9f4853f30707628fd94a",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "excerpt_hash": "c712525df3c79eb862f6",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T06:37:35.694Z"
+        },
+        {
+          "claim_id": "wt-aaa7e98d9c993988-v1-claim-5",
+          "story_id": "wt-aaa7e98d9c993988",
+          "claim": "Laut den Berichten geht die Polizei derzeit von einem Einzeltäter aus.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+              "excerpt_hash": "49973ab03a408f460bef",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "excerpt_hash": "1c7dc01730b8922f64ef",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T06:37:35.694Z"
+        }
+      ],
+      "event_id": "event-5f3d82645fd193edc18e",
+      "event_first_seen_at": "2026-09-04T17:21:09.783Z",
+      "event_detected_at": "2026-09-04T17:21:09.783Z",
+      "verification_started_at": "2026-09-05T06:37:14.306Z",
+      "publish_ready_at": "2026-09-05T06:37:35.694Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "content_hash": "b3f734b08717690c3f2c914414bb236f9e337139f7eaa449d918378a126332e3",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 3,
+      "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
+      "analysis": {
+        "story_id": "wt-aaa7e98d9c993988",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
+        "detail_summary": "Gesichert ist nach dem vorliegenden Bericht vor allem die laufende Fahndung im Zusammenhang mit Sabotageversuchen an Umspannwerken und die politische Einordnung durch Bundesinnenminister Dobrindt. Der Vorgang ist relevant, weil Umspannwerke zur kritischen Infrastruktur gehören und Ausfälle Versorgung, Sicherheit und Resilienz direkt berühren können. Der mögliche Wirkpfad liegt weniger in der bloßen Meldung selbst als in den tatsächlichen Eingriffen an Stromanlagen und den daraus folgenden Risiken für Versorgung und öffentliche Sicherheit. Als mögliche Folge sind weitere Sicherheitsmaßnahmen, Ermittlungen und eine Verschärfung der Debatte über den Schutz kritischer Infrastruktur denkbar. Ob die Zuordnung zu einem Einzeltäter, die Motive oder die Reichweite der Vorfälle belastbar sind, bleibt in der vorliegenden Quellenlage offen. Eine unabhängige Bestätigung der zentralen Tatsachen liegt hier nicht vor; die Meldung bleibt deshalb quellengebunden und vorläufig.",
+        "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitslage und mögliche Versorgungsrisiken. Sie liefert zudem neue Angaben zu Umfang, Fahndung und politischer Einordnung des Vorgangs.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind mögliche Störungen der Stromversorgung und Sicherheitsrisiken an kritischer Infrastruktur."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der Bezug zur Klimadebatte ist politisch relevant, materielle Umweltfolgen werden in der Quelle aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Vorgang berührt innere Sicherheit, staatliche Schutzfähigkeit und die öffentliche Debatte über Extremismus."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche Folgen reichen von verstärkter Sicherung kritischer Infrastruktur bis zu Ermittlungs- und Präventionsmaßnahmen. Falls weitere Taten oder Netzstörungen folgen, kann das Versorgungs- und Sicherheitsrisiken erhöhen.",
+        "impact_risks": [
+          "Weitere Sabotage an kritischer Infrastruktur",
+          "Versorgungsstörungen und Sicherheitskosten",
+          "Polarisierung in der Klimadebatte"
+        ],
+        "mechanisms": [
+          "Physische Eingriffe an Umspannwerken können Versorgung und Sicherheitslage beeinträchtigen.",
+          "Ermittlungen und Fahndung können Schutzmaßnahmen und Prioritäten verschieben."
+        ],
+        "first_order": [
+          "Ermittlungen, Fahndung und Sicherungsmaßnahmen werden verstärkt.",
+          "Die öffentliche Aufmerksamkeit auf den Schutz von Umspannwerken nimmt zu."
+        ],
+        "second_order": [
+          "Betreiber und Behörden könnten Schutzkonzepte anpassen.",
+          "Politisch könnte der Druck auf Infrastruktur- und Sicherheitsgesetzgebung steigen."
+        ],
+        "third_order": [
+          "Langfristig könnten Prioritäten im Schutz kritischer Infrastruktur neu gesetzt werden.",
+          "Die Debatte über klima- oder extremismusbezogene Sabotage könnte sich verhärten."
+        ],
+        "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant, weil Störungen Kaskaden in Versorgung, öffentlicher Sicherheit und Wirtschaft auslösen können.",
+        "transformation_potential": "Die Meldung kann die Priorisierung von Schutz, Überwachung und Resilienz kritischer Infrastruktur beeinflussen, falls die Vorfälle als Muster gelten.",
+        "resilience": "Kurzfristig schwach, wenn ähnliche Vorfälle an mehreren Orten auftreten; mittel bis hoch, wenn Schutzmaßnahmen rasch greifen.",
+        "side_effects": [
+          "Mehr Sicherheitsaufwand für Betreiber",
+          "Mögliche Verlagerung von Ressourcen zu Ermittlungen",
+          "Verstärkte öffentliche Verunsicherung"
+        ],
+        "uncertainties": [
+          "Unabhängige Bestätigung der Motive fehlt.",
+          "Der Umfang der tatsächlichen Schäden bleibt in der Quelle offen.",
+          "Die Zuschreibung zu einem Einzeltäter ist vorläufig."
+        ],
+        "evidence_level": "attributed_single_source",
+        "attribution": "Die zentrale Einordnung stammt aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung durch weitere, nicht abhängige Quellen liegt hier nicht vor.",
+        "watch_next": [
+          "Wird der Verdächtige identifiziert oder gefasst?",
+          "Bestätigen Behörden den Schaden und den Umfang der Vorfälle?",
+          "Gibt es weitere Funde oder Störungen an Umspannwerken?"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7",
+          "Agenda 2030/SDG 9",
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Neuer berichteter Stand zu Sabotage an kritischer Infrastruktur mit Fahndung und mehreren Orten; materiell wegen möglicher Versorgungs- und Sicherheitsfolgen."
+        },
+        "publication_recommendation": true,
+        "visuals": null,
+        "media_impact": {
+          "relevant": true,
+          "relevance_level": "medium",
+          "reason": "Der Trigger ist ein politisch aufgeladener Begriff in der Überschrift und im Text; er rahmt eine noch offene Ermittlungs- und Fahndungslage als Deutung eines Akteurs. Dadurch entsteht ein relevanter Resonanzraum für Attribution, Zuspitzung und mögliche Verwechslung von Aussage und Befund.",
+          "factual_core": "Belegt ist im vorliegenden Bericht die laufende Fahndung im Zusammenhang mit Vorfällen an Umspannwerken sowie die Einordnung durch Bundesinnenminister Dobrindt. Der Begriff „Klimaextremismus“ ist eine zugeschriebene politische Deutung, kein amtlich festgestellter Sachverhalt.",
+          "speaker_statement": {
+            "present": true,
+            "speaker": "Bundesinnenminister Dobrindt",
+            "statement": "Er ordnet die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ ein und geht derzeit von einem Einzeltäter aus.",
+            "status": "claim"
+          },
+          "framing": {
+            "detected": true,
+            "term": "Klimaextremismus",
+            "origin_in_story": "Akteur",
+            "media_usage": "headline",
+            "attribution_quality": "grundsätzlich attribuiert",
+            "factual_status": "Aussage eines Akteurs",
+            "frame_type": [
+              "Bedrohung"
+            ],
+            "political_history_relevant": false,
+            "political_history": "",
+            "political_history_evidence": []
+          },
+          "resonance": {
+            "resonance_space": "Die Formulierung kann in Debatten über Klimaaktivismus, Extremismus und Schutz kritischer Infrastruktur Anschluss finden.",
+            "resonance_risk": "Ohne klare Trennung von Aussage und Befund kann der Begriff als vorläufige Tatsachenbeschreibung gelesen werden.",
+            "normalization_potential": "Wiederholte Nutzung kann den Begriff im öffentlichen Sprachraum verfestigen, obwohl er hier nur als politische Einordnung vorliegt.",
+            "repetition_effect": "Mehrfaches Auftauchen in Überschrift und Text kann die Deutungsrahmung verstärken; das belegt keine inhaltliche Richtigkeit.",
+            "trust_effect": "Die Wahrnehmung journalistischer Distanz kann leiden, wenn die politische Einordnung nicht sofort als solche erkennbar ist.",
+            "polarization_potential": "Der Frame kann bestehende Konfliktlinien zwischen Klima-, Sicherheits- und Ordnungspolitik zuspitzen.",
+            "discourse_effect": "Der Diskurs verschiebt sich eher auf die Deutung der Tat als auf den gesicherten Stand der Ermittlungen."
+          },
+          "impact_path": {
+            "first_order": "Die Überschrift setzt einen starken Deutungsrahmen, bevor der Ermittlungsstand vollständig geklärt ist.",
+            "second_order": "Lesende können die politische Einordnung mit einem amtlich gesicherten Befund verwechseln oder den Fall stärker politisieren.",
+            "third_order": "Bei Wiederholung kann sich ein allgemeiner Deutungsrahmen für ähnliche Vorfälle etablieren, der die Sprache der Berichterstattung prägt."
+          },
+          "evidence": {
+            "status": "medium",
+            "what_is_known": "Die Meldung nennt die laufende Fahndung, einen SEK-Einsatz und die politische Einordnung durch Dobrindt; sie verweist auf weitere Funde und Vorfälle an Umspannwerken.",
+            "what_is_inferred": "Dass der Begriff als politischer Frame Wirkung entfalten kann, folgt aus seiner Platzierung in Überschrift und Text, nicht aus einer belegten Absicht.",
+            "what_is_open": "Offen bleiben der belastbar gesicherte Tathergang, die Täterschaft, die Motivation und die Frage, ob die Einordnung als „Klimaextremismus“ durch Ermittlungen gestützt wird."
+          },
+          "editorial_assessment": "Die Formulierung sollte als Akteurszitat klar von den berichteten Ereignissen getrennt und im Titel oder Lead stärker als Einordnung kenntlich gemacht werden.",
+          "fact_first_reframe": {
+            "title": "Fahndung nach Verdächtigem nach Vorfällen an Umspannwerken läuft",
+            "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
+            "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
+            "detail_summary": "Im Bericht werden Vorfälle an deutschen Umspannwerken und eine laufende Fahndung beschrieben. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Aussage ist als politische Deutung des Ministers erkennbar und nicht als amtlich festgestellter Sachverhalt belegt. Zusätzlich nennt die Quelle einen SEK-Einsatz am Hambacher Forst sowie weitere Funde und Vorfälle in Brandenburg, Nordrhein-Westfalen und Sachsen. Die Berichterstattung verweist auf kritische Infrastruktur und auf mögliche Sicherheitsfolgen. Die Tatmotivation, die Täterschaft und der endgültige Ermittlungsstand bleiben offen."
+          },
+          "self_frame_warning": true,
+          "source_comparison": {
+            "sufficient_basis": false,
+            "finding": ""
+          }
+        },
+        "media_analysis_version": "1.0",
+        "media_checked_at": "2026-09-05T09:44:12.170Z",
+        "media_trigger_fingerprint": "29e466609bb35860bd3d3d86590bfe9e3b720f9ec8de85d16c5ae4630483a763"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T06:37:35.694Z",
+          "content_hash": "b3f734b08717690c3f2c914414bb236f9e337139f7eaa449d918378a126332e3",
+          "source_summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ bezeichnet. Nach Angaben des Berichts geht die Polizei derzeit von einem Einzeltäter aus, die Fahndung nach dem Verdächtigen läuft weiter. Zudem wird ein SEK-Einsatz am Hambacher Forst beschrieben, bei dem Spezialkräfte einen auffälligen Lkw gestürmt, den Verdächtigen aber nicht gefunden haben sollen.\n\nDer Bericht verweist außerdem auf Vorfälle in Brandenburg und Nordrhein-Westfalen sowie auf ähnliche Funde in der Nähe von Dormagen. Auch in Sachsen seien an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt worden; dort hätten Sicherheitsbehörden von einem Bekennerschreiben gesprochen. Umspannwerke werden als kritische Infrastruktur eingeordnet.",
+          "analysis": {
+            "story_id": "wt-aaa7e98d9c993988",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Dobrindt ordnet die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ ein. Die Fahndung nach einem Verdächtigen läuft weiter, zugleich werden weitere Funde und Einsätze in mehreren Ländern beschrieben.",
+            "detail_summary": "Gesichert ist nach dem vorliegenden Bericht vor allem die laufende Fahndung im Zusammenhang mit Sabotageversuchen an Umspannwerken und die politische Einordnung durch Bundesinnenminister Dobrindt. Der Vorgang ist relevant, weil Umspannwerke zur kritischen Infrastruktur gehören und Ausfälle Versorgung, Sicherheit und Resilienz direkt berühren können. Der mögliche Wirkpfad liegt weniger in der bloßen Meldung selbst als in den tatsächlichen Eingriffen an Stromanlagen und den daraus folgenden Risiken für Versorgung und öffentliche Sicherheit. Als mögliche Folge sind weitere Sicherheitsmaßnahmen, Ermittlungen und eine Verschärfung der Debatte über den Schutz kritischer Infrastruktur denkbar. Ob die Zuordnung zu einem Einzeltäter, die Motive oder die Reichweite der Vorfälle belastbar sind, bleibt in der vorliegenden Quellenlage offen. Eine unabhängige Bestätigung der zentralen Tatsachen liegt hier nicht vor; die Meldung bleibt deshalb quellengebunden und vorläufig.",
+            "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitslage und mögliche Versorgungsrisiken. Sie liefert zudem neue Angaben zu Umfang, Fahndung und politischer Einordnung des Vorgangs.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind mögliche Störungen der Stromversorgung und Sicherheitsrisiken an kritischer Infrastruktur."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Der Bezug zur Klimadebatte ist politisch relevant, materielle Umweltfolgen werden in der Quelle aber nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Vorgang berührt innere Sicherheit, staatliche Schutzfähigkeit und die öffentliche Debatte über Extremismus."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Folgen reichen von verstärkter Sicherung kritischer Infrastruktur bis zu Ermittlungs- und Präventionsmaßnahmen. Falls weitere Taten oder Netzstörungen folgen, kann das Versorgungs- und Sicherheitsrisiken erhöhen.",
+            "impact_risks": [
+              "Weitere Sabotage an kritischer Infrastruktur",
+              "Versorgungsstörungen und Sicherheitskosten",
+              "Polarisierung in der Klimadebatte"
+            ],
+            "mechanisms": [
+              "Physische Eingriffe an Umspannwerken können Versorgung und Sicherheitslage beeinträchtigen.",
+              "Ermittlungen und Fahndung können Schutzmaßnahmen und Prioritäten verschieben."
+            ],
+            "first_order": [
+              "Ermittlungen, Fahndung und Sicherungsmaßnahmen werden verstärkt.",
+              "Die öffentliche Aufmerksamkeit auf den Schutz von Umspannwerken nimmt zu."
+            ],
+            "second_order": [
+              "Betreiber und Behörden könnten Schutzkonzepte anpassen.",
+              "Politisch könnte der Druck auf Infrastruktur- und Sicherheitsgesetzgebung steigen."
+            ],
+            "third_order": [
+              "Langfristig könnten Prioritäten im Schutz kritischer Infrastruktur neu gesetzt werden.",
+              "Die Debatte über klima- oder extremismusbezogene Sabotage könnte sich verhärten."
+            ],
+            "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant, weil Störungen Kaskaden in Versorgung, öffentlicher Sicherheit und Wirtschaft auslösen können.",
+            "transformation_potential": "Die Meldung kann die Priorisierung von Schutz, Überwachung und Resilienz kritischer Infrastruktur beeinflussen, falls die Vorfälle als Muster gelten.",
+            "resilience": "Kurzfristig schwach, wenn ähnliche Vorfälle an mehreren Orten auftreten; mittel bis hoch, wenn Schutzmaßnahmen rasch greifen.",
+            "side_effects": [
+              "Mehr Sicherheitsaufwand für Betreiber",
+              "Mögliche Verlagerung von Ressourcen zu Ermittlungen",
+              "Verstärkte öffentliche Verunsicherung"
+            ],
+            "uncertainties": [
+              "Unabhängige Bestätigung der Motive fehlt.",
+              "Der Umfang der tatsächlichen Schäden bleibt in der Quelle offen.",
+              "Die Zuschreibung zu einem Einzeltäter ist vorläufig."
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Die zentrale Einordnung stammt aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung durch weitere, nicht abhängige Quellen liegt hier nicht vor.",
+            "watch_next": [
+              "Wird der Verdächtige identifiziert oder gefasst?",
+              "Bestätigen Behörden den Schaden und den Umfang der Vorfälle?",
+              "Gibt es weitere Funde oder Störungen an Umspannwerken?"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7",
+              "Agenda 2030/SDG 9",
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neuer berichteter Stand zu Sabotage an kritischer Infrastruktur mit Fahndung und mehreren Orten; materiell wegen möglicher Versorgungs- und Sicherheitsfolgen."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-1",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Bundesinnenminister Dobrindt bezeichnet die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\".",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "1c7dc01730b8922f64ef",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "52354455b03b2d3fef4a",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-2",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Die Fahndung nach einem verdächtigen Mann läuft weiter, nachdem die Polizei ihn bei einem SEK-Einsatz am Hambacher Forst nicht gefunden hat.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "392009238bfc4e2cf945",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+                  "excerpt_hash": "a1f7bfe473e9e6c51828",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-3",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "In Brandenburg und Nordrhein-Westfalen wurden am Dienstag gezielt die Stromversorgung gestört; am Donnerstagabend fand man ähnliche Gegenstände bei Dormagen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "53bd1c44999f9c50e13f",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+                  "excerpt_hash": "ac6be1d44520ad045ebb",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-4",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Auch in Sachsen wurden an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt, und es gab dort ein Bekennerschreiben.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "9f4853f30707628fd94a",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "c712525df3c79eb862f6",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-5",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Laut den Berichten geht die Polizei derzeit von einem Einzeltäter aus.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+                  "excerpt_hash": "49973ab03a408f460bef",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "1c7dc01730b8922f64ef",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+              "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "content_hash": "151e54943f2f40e4411b21eafe8ca35dd989429c9930f29c1b06dba72cd27220"
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-05T09:32:59.604Z",
+          "content_hash": "b3f734b08717690c3f2c914414bb236f9e337139f7eaa449d918378a126332e3",
+          "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
+          "analysis": {
+            "story_id": "wt-aaa7e98d9c993988",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
+            "detail_summary": "Gesichert ist nach dem vorliegenden Bericht vor allem die laufende Fahndung im Zusammenhang mit Sabotageversuchen an Umspannwerken und die politische Einordnung durch Bundesinnenminister Dobrindt. Der Vorgang ist relevant, weil Umspannwerke zur kritischen Infrastruktur gehören und Ausfälle Versorgung, Sicherheit und Resilienz direkt berühren können. Der mögliche Wirkpfad liegt weniger in der bloßen Meldung selbst als in den tatsächlichen Eingriffen an Stromanlagen und den daraus folgenden Risiken für Versorgung und öffentliche Sicherheit. Als mögliche Folge sind weitere Sicherheitsmaßnahmen, Ermittlungen und eine Verschärfung der Debatte über den Schutz kritischer Infrastruktur denkbar. Ob die Zuordnung zu einem Einzeltäter, die Motive oder die Reichweite der Vorfälle belastbar sind, bleibt in der vorliegenden Quellenlage offen. Eine unabhängige Bestätigung der zentralen Tatsachen liegt hier nicht vor; die Meldung bleibt deshalb quellengebunden und vorläufig.",
+            "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitslage und mögliche Versorgungsrisiken. Sie liefert zudem neue Angaben zu Umfang, Fahndung und politischer Einordnung des Vorgangs.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind mögliche Störungen der Stromversorgung und Sicherheitsrisiken an kritischer Infrastruktur."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Der Bezug zur Klimadebatte ist politisch relevant, materielle Umweltfolgen werden in der Quelle aber nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Vorgang berührt innere Sicherheit, staatliche Schutzfähigkeit und die öffentliche Debatte über Extremismus."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Folgen reichen von verstärkter Sicherung kritischer Infrastruktur bis zu Ermittlungs- und Präventionsmaßnahmen. Falls weitere Taten oder Netzstörungen folgen, kann das Versorgungs- und Sicherheitsrisiken erhöhen.",
+            "impact_risks": [
+              "Weitere Sabotage an kritischer Infrastruktur",
+              "Versorgungsstörungen und Sicherheitskosten",
+              "Polarisierung in der Klimadebatte"
+            ],
+            "mechanisms": [
+              "Physische Eingriffe an Umspannwerken können Versorgung und Sicherheitslage beeinträchtigen.",
+              "Ermittlungen und Fahndung können Schutzmaßnahmen und Prioritäten verschieben."
+            ],
+            "first_order": [
+              "Ermittlungen, Fahndung und Sicherungsmaßnahmen werden verstärkt.",
+              "Die öffentliche Aufmerksamkeit auf den Schutz von Umspannwerken nimmt zu."
+            ],
+            "second_order": [
+              "Betreiber und Behörden könnten Schutzkonzepte anpassen.",
+              "Politisch könnte der Druck auf Infrastruktur- und Sicherheitsgesetzgebung steigen."
+            ],
+            "third_order": [
+              "Langfristig könnten Prioritäten im Schutz kritischer Infrastruktur neu gesetzt werden.",
+              "Die Debatte über klima- oder extremismusbezogene Sabotage könnte sich verhärten."
+            ],
+            "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant, weil Störungen Kaskaden in Versorgung, öffentlicher Sicherheit und Wirtschaft auslösen können.",
+            "transformation_potential": "Die Meldung kann die Priorisierung von Schutz, Überwachung und Resilienz kritischer Infrastruktur beeinflussen, falls die Vorfälle als Muster gelten.",
+            "resilience": "Kurzfristig schwach, wenn ähnliche Vorfälle an mehreren Orten auftreten; mittel bis hoch, wenn Schutzmaßnahmen rasch greifen.",
+            "side_effects": [
+              "Mehr Sicherheitsaufwand für Betreiber",
+              "Mögliche Verlagerung von Ressourcen zu Ermittlungen",
+              "Verstärkte öffentliche Verunsicherung"
+            ],
+            "uncertainties": [
+              "Unabhängige Bestätigung der Motive fehlt.",
+              "Der Umfang der tatsächlichen Schäden bleibt in der Quelle offen.",
+              "Die Zuschreibung zu einem Einzeltäter ist vorläufig."
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Die zentrale Einordnung stammt aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung durch weitere, nicht abhängige Quellen liegt hier nicht vor.",
+            "watch_next": [
+              "Wird der Verdächtige identifiziert oder gefasst?",
+              "Bestätigen Behörden den Schaden und den Umfang der Vorfälle?",
+              "Gibt es weitere Funde oder Störungen an Umspannwerken?"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7",
+              "Agenda 2030/SDG 9",
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neuer berichteter Stand zu Sabotage an kritischer Infrastruktur mit Fahndung und mehreren Orten; materiell wegen möglicher Versorgungs- und Sicherheitsfolgen."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": {
+              "relevant": true,
+              "relevance_level": "medium",
+              "reason": "Der Trigger ist ein politisch aufgeladener Begriff in der Überschrift und im Text; er rahmt eine noch offene Ermittlungs- und Fahndungslage als Deutung eines Akteurs. Dadurch entsteht ein relevanter Resonanzraum für Attribution, Zuspitzung und mögliche Verwechslung von Aussage und Befund.",
+              "factual_core": "Belegt ist im vorliegenden Bericht die laufende Fahndung im Zusammenhang mit Vorfällen an Umspannwerken sowie die Einordnung durch Bundesinnenminister Dobrindt. Der Begriff „Klimaextremismus“ ist eine zugeschriebene politische Deutung, kein amtlich festgestellter Sachverhalt.",
+              "speaker_statement": {
+                "present": true,
+                "speaker": "Bundesinnenminister Dobrindt",
+                "statement": "Er ordnet die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ ein und geht derzeit von einem Einzeltäter aus.",
+                "status": "claim"
+              },
+              "framing": {
+                "detected": true,
+                "term": "Klimaextremismus",
+                "origin_in_story": "Akteur",
+                "media_usage": "body",
+                "attribution_quality": "grundsätzlich attribuiert",
+                "factual_status": "Aussage eines Akteurs",
+                "frame_type": [
+                  "Bedrohung"
+                ],
+                "political_history_relevant": false,
+                "political_history": "",
+                "political_history_evidence": []
+              },
+              "resonance": {
+                "resonance_space": "Die Formulierung kann in Debatten über Klimaaktivismus, Extremismus und Schutz kritischer Infrastruktur Anschluss finden.",
+                "resonance_risk": "Ohne klare Trennung von Aussage und Befund kann der Begriff als vorläufige Tatsachenbeschreibung gelesen werden.",
+                "normalization_potential": "Wiederholte Nutzung kann den Begriff im öffentlichen Sprachraum verfestigen, obwohl er hier nur als politische Einordnung vorliegt.",
+                "repetition_effect": "Mehrfaches Auftauchen in Überschrift und Text kann die Deutungsrahmung verstärken; das belegt keine inhaltliche Richtigkeit.",
+                "trust_effect": "Die Wahrnehmung journalistischer Distanz kann leiden, wenn die politische Einordnung nicht sofort als solche erkennbar ist.",
+                "polarization_potential": "Der Frame kann bestehende Konfliktlinien zwischen Klima-, Sicherheits- und Ordnungspolitik zuspitzen.",
+                "discourse_effect": "Der Diskurs verschiebt sich eher auf die Deutung der Tat als auf den gesicherten Stand der Ermittlungen."
+              },
+              "impact_path": {
+                "first_order": "Die Überschrift setzt einen starken Deutungsrahmen, bevor der Ermittlungsstand vollständig geklärt ist.",
+                "second_order": "Lesende können die politische Einordnung mit einem amtlich gesicherten Befund verwechseln oder den Fall stärker politisieren.",
+                "third_order": "Bei Wiederholung kann sich ein allgemeiner Deutungsrahmen für ähnliche Vorfälle etablieren, der die Sprache der Berichterstattung prägt."
+              },
+              "evidence": {
+                "status": "medium",
+                "what_is_known": "Die Meldung nennt die laufende Fahndung, einen SEK-Einsatz und die politische Einordnung durch Dobrindt; sie verweist auf weitere Funde und Vorfälle an Umspannwerken.",
+                "what_is_inferred": "Dass der Begriff als politischer Frame Wirkung entfalten kann, folgt aus seiner Platzierung in Überschrift und Text, nicht aus einer belegten Absicht.",
+                "what_is_open": "Offen bleiben der belastbar gesicherte Tathergang, die Täterschaft, die Motivation und die Frage, ob die Einordnung als „Klimaextremismus“ durch Ermittlungen gestützt wird."
+              },
+              "editorial_assessment": "Die Formulierung sollte als Akteurszitat klar von den berichteten Ereignissen getrennt und im Titel oder Lead stärker als Einordnung kenntlich gemacht werden.",
+              "fact_first_reframe": {
+                "title": "Fahndung nach Verdächtigem nach Vorfällen an Umspannwerken läuft",
+                "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
+                "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
+                "detail_summary": "Im Bericht werden Vorfälle an deutschen Umspannwerken und eine laufende Fahndung beschrieben. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Aussage ist als politische Deutung des Ministers erkennbar und nicht als amtlich festgestellter Sachverhalt belegt. Zusätzlich nennt die Quelle einen SEK-Einsatz am Hambacher Forst sowie weitere Funde und Vorfälle in Brandenburg, Nordrhein-Westfalen und Sachsen. Die Berichterstattung verweist auf kritische Infrastruktur und auf mögliche Sicherheitsfolgen. Die Tatmotivation, die Täterschaft und der endgültige Ermittlungsstand bleiben offen."
+              },
+              "self_frame_warning": true,
+              "source_comparison": {
+                "sufficient_basis": false,
+                "finding": ""
+              }
+            },
+            "media_analysis_version": "1.0",
+            "media_checked_at": "2026-09-05T09:32:59.604Z",
+            "media_trigger_fingerprint": "29e466609bb35860bd3d3d86590bfe9e3b720f9ec8de85d16c5ae4630483a763"
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "media_impact_backfill",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-1",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Bundesinnenminister Dobrindt bezeichnet die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\".",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "1c7dc01730b8922f64ef",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "52354455b03b2d3fef4a",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-2",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Die Fahndung nach einem verdächtigen Mann läuft weiter, nachdem die Polizei ihn bei einem SEK-Einsatz am Hambacher Forst nicht gefunden hat.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "392009238bfc4e2cf945",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+                  "excerpt_hash": "a1f7bfe473e9e6c51828",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-3",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "In Brandenburg und Nordrhein-Westfalen wurden am Dienstag gezielt die Stromversorgung gestört; am Donnerstagabend fand man ähnliche Gegenstände bei Dormagen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "53bd1c44999f9c50e13f",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+                  "excerpt_hash": "ac6be1d44520ad045ebb",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-4",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Auch in Sachsen wurden an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt, und es gab dort ein Bekennerschreiben.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "9f4853f30707628fd94a",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "c712525df3c79eb862f6",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-5",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Laut den Berichten geht die Polizei derzeit von einem Einzeltäter aus.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+                  "excerpt_hash": "49973ab03a408f460bef",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "1c7dc01730b8922f64ef",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+              "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "content_hash": "151e54943f2f40e4411b21eafe8ca35dd989429c9930f29c1b06dba72cd27220"
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-05T09:44:12.170Z",
+          "content_hash": "b3f734b08717690c3f2c914414bb236f9e337139f7eaa449d918378a126332e3",
+          "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
+          "analysis": {
+            "story_id": "wt-aaa7e98d9c993988",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
+            "detail_summary": "Gesichert ist nach dem vorliegenden Bericht vor allem die laufende Fahndung im Zusammenhang mit Sabotageversuchen an Umspannwerken und die politische Einordnung durch Bundesinnenminister Dobrindt. Der Vorgang ist relevant, weil Umspannwerke zur kritischen Infrastruktur gehören und Ausfälle Versorgung, Sicherheit und Resilienz direkt berühren können. Der mögliche Wirkpfad liegt weniger in der bloßen Meldung selbst als in den tatsächlichen Eingriffen an Stromanlagen und den daraus folgenden Risiken für Versorgung und öffentliche Sicherheit. Als mögliche Folge sind weitere Sicherheitsmaßnahmen, Ermittlungen und eine Verschärfung der Debatte über den Schutz kritischer Infrastruktur denkbar. Ob die Zuordnung zu einem Einzeltäter, die Motive oder die Reichweite der Vorfälle belastbar sind, bleibt in der vorliegenden Quellenlage offen. Eine unabhängige Bestätigung der zentralen Tatsachen liegt hier nicht vor; die Meldung bleibt deshalb quellengebunden und vorläufig.",
+            "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitslage und mögliche Versorgungsrisiken. Sie liefert zudem neue Angaben zu Umfang, Fahndung und politischer Einordnung des Vorgangs.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind mögliche Störungen der Stromversorgung und Sicherheitsrisiken an kritischer Infrastruktur."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Der Bezug zur Klimadebatte ist politisch relevant, materielle Umweltfolgen werden in der Quelle aber nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Vorgang berührt innere Sicherheit, staatliche Schutzfähigkeit und die öffentliche Debatte über Extremismus."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Folgen reichen von verstärkter Sicherung kritischer Infrastruktur bis zu Ermittlungs- und Präventionsmaßnahmen. Falls weitere Taten oder Netzstörungen folgen, kann das Versorgungs- und Sicherheitsrisiken erhöhen.",
+            "impact_risks": [
+              "Weitere Sabotage an kritischer Infrastruktur",
+              "Versorgungsstörungen und Sicherheitskosten",
+              "Polarisierung in der Klimadebatte"
+            ],
+            "mechanisms": [
+              "Physische Eingriffe an Umspannwerken können Versorgung und Sicherheitslage beeinträchtigen.",
+              "Ermittlungen und Fahndung können Schutzmaßnahmen und Prioritäten verschieben."
+            ],
+            "first_order": [
+              "Ermittlungen, Fahndung und Sicherungsmaßnahmen werden verstärkt.",
+              "Die öffentliche Aufmerksamkeit auf den Schutz von Umspannwerken nimmt zu."
+            ],
+            "second_order": [
+              "Betreiber und Behörden könnten Schutzkonzepte anpassen.",
+              "Politisch könnte der Druck auf Infrastruktur- und Sicherheitsgesetzgebung steigen."
+            ],
+            "third_order": [
+              "Langfristig könnten Prioritäten im Schutz kritischer Infrastruktur neu gesetzt werden.",
+              "Die Debatte über klima- oder extremismusbezogene Sabotage könnte sich verhärten."
+            ],
+            "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant, weil Störungen Kaskaden in Versorgung, öffentlicher Sicherheit und Wirtschaft auslösen können.",
+            "transformation_potential": "Die Meldung kann die Priorisierung von Schutz, Überwachung und Resilienz kritischer Infrastruktur beeinflussen, falls die Vorfälle als Muster gelten.",
+            "resilience": "Kurzfristig schwach, wenn ähnliche Vorfälle an mehreren Orten auftreten; mittel bis hoch, wenn Schutzmaßnahmen rasch greifen.",
+            "side_effects": [
+              "Mehr Sicherheitsaufwand für Betreiber",
+              "Mögliche Verlagerung von Ressourcen zu Ermittlungen",
+              "Verstärkte öffentliche Verunsicherung"
+            ],
+            "uncertainties": [
+              "Unabhängige Bestätigung der Motive fehlt.",
+              "Der Umfang der tatsächlichen Schäden bleibt in der Quelle offen.",
+              "Die Zuschreibung zu einem Einzeltäter ist vorläufig."
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Die zentrale Einordnung stammt aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung durch weitere, nicht abhängige Quellen liegt hier nicht vor.",
+            "watch_next": [
+              "Wird der Verdächtige identifiziert oder gefasst?",
+              "Bestätigen Behörden den Schaden und den Umfang der Vorfälle?",
+              "Gibt es weitere Funde oder Störungen an Umspannwerken?"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7",
+              "Agenda 2030/SDG 9",
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neuer berichteter Stand zu Sabotage an kritischer Infrastruktur mit Fahndung und mehreren Orten; materiell wegen möglicher Versorgungs- und Sicherheitsfolgen."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": {
+              "relevant": true,
+              "relevance_level": "medium",
+              "reason": "Der Trigger ist ein politisch aufgeladener Begriff in der Überschrift und im Text; er rahmt eine noch offene Ermittlungs- und Fahndungslage als Deutung eines Akteurs. Dadurch entsteht ein relevanter Resonanzraum für Attribution, Zuspitzung und mögliche Verwechslung von Aussage und Befund.",
+              "factual_core": "Belegt ist im vorliegenden Bericht die laufende Fahndung im Zusammenhang mit Vorfällen an Umspannwerken sowie die Einordnung durch Bundesinnenminister Dobrindt. Der Begriff „Klimaextremismus“ ist eine zugeschriebene politische Deutung, kein amtlich festgestellter Sachverhalt.",
+              "speaker_statement": {
+                "present": true,
+                "speaker": "Bundesinnenminister Dobrindt",
+                "statement": "Er ordnet die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ ein und geht derzeit von einem Einzeltäter aus.",
+                "status": "claim"
+              },
+              "framing": {
+                "detected": true,
+                "term": "Klimaextremismus",
+                "origin_in_story": "Akteur",
+                "media_usage": "headline",
+                "attribution_quality": "grundsätzlich attribuiert",
+                "factual_status": "Aussage eines Akteurs",
+                "frame_type": [
+                  "Bedrohung"
+                ],
+                "political_history_relevant": false,
+                "political_history": "",
+                "political_history_evidence": []
+              },
+              "resonance": {
+                "resonance_space": "Die Formulierung kann in Debatten über Klimaaktivismus, Extremismus und Schutz kritischer Infrastruktur Anschluss finden.",
+                "resonance_risk": "Ohne klare Trennung von Aussage und Befund kann der Begriff als vorläufige Tatsachenbeschreibung gelesen werden.",
+                "normalization_potential": "Wiederholte Nutzung kann den Begriff im öffentlichen Sprachraum verfestigen, obwohl er hier nur als politische Einordnung vorliegt.",
+                "repetition_effect": "Mehrfaches Auftauchen in Überschrift und Text kann die Deutungsrahmung verstärken; das belegt keine inhaltliche Richtigkeit.",
+                "trust_effect": "Die Wahrnehmung journalistischer Distanz kann leiden, wenn die politische Einordnung nicht sofort als solche erkennbar ist.",
+                "polarization_potential": "Der Frame kann bestehende Konfliktlinien zwischen Klima-, Sicherheits- und Ordnungspolitik zuspitzen.",
+                "discourse_effect": "Der Diskurs verschiebt sich eher auf die Deutung der Tat als auf den gesicherten Stand der Ermittlungen."
+              },
+              "impact_path": {
+                "first_order": "Die Überschrift setzt einen starken Deutungsrahmen, bevor der Ermittlungsstand vollständig geklärt ist.",
+                "second_order": "Lesende können die politische Einordnung mit einem amtlich gesicherten Befund verwechseln oder den Fall stärker politisieren.",
+                "third_order": "Bei Wiederholung kann sich ein allgemeiner Deutungsrahmen für ähnliche Vorfälle etablieren, der die Sprache der Berichterstattung prägt."
+              },
+              "evidence": {
+                "status": "medium",
+                "what_is_known": "Die Meldung nennt die laufende Fahndung, einen SEK-Einsatz und die politische Einordnung durch Dobrindt; sie verweist auf weitere Funde und Vorfälle an Umspannwerken.",
+                "what_is_inferred": "Dass der Begriff als politischer Frame Wirkung entfalten kann, folgt aus seiner Platzierung in Überschrift und Text, nicht aus einer belegten Absicht.",
+                "what_is_open": "Offen bleiben der belastbar gesicherte Tathergang, die Täterschaft, die Motivation und die Frage, ob die Einordnung als „Klimaextremismus“ durch Ermittlungen gestützt wird."
+              },
+              "editorial_assessment": "Die Formulierung sollte als Akteurszitat klar von den berichteten Ereignissen getrennt und im Titel oder Lead stärker als Einordnung kenntlich gemacht werden.",
+              "fact_first_reframe": {
+                "title": "Fahndung nach Verdächtigem nach Vorfällen an Umspannwerken läuft",
+                "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
+                "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
+                "detail_summary": "Im Bericht werden Vorfälle an deutschen Umspannwerken und eine laufende Fahndung beschrieben. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Aussage ist als politische Deutung des Ministers erkennbar und nicht als amtlich festgestellter Sachverhalt belegt. Zusätzlich nennt die Quelle einen SEK-Einsatz am Hambacher Forst sowie weitere Funde und Vorfälle in Brandenburg, Nordrhein-Westfalen und Sachsen. Die Berichterstattung verweist auf kritische Infrastruktur und auf mögliche Sicherheitsfolgen. Die Tatmotivation, die Täterschaft und der endgültige Ermittlungsstand bleiben offen."
+              },
+              "self_frame_warning": true,
+              "source_comparison": {
+                "sufficient_basis": false,
+                "finding": ""
+              }
+            },
+            "media_analysis_version": "1.0",
+            "media_checked_at": "2026-09-05T09:44:12.170Z",
+            "media_trigger_fingerprint": "29e466609bb35860bd3d3d86590bfe9e3b720f9ec8de85d16c5ae4630483a763"
+          },
+          "provider": null,
+          "model": null,
+          "mode": "media_impact_deterministic_normalization",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-1",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Bundesinnenminister Dobrindt bezeichnet die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\".",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "1c7dc01730b8922f64ef",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "52354455b03b2d3fef4a",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-2",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Die Fahndung nach einem verdächtigen Mann läuft weiter, nachdem die Polizei ihn bei einem SEK-Einsatz am Hambacher Forst nicht gefunden hat.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "392009238bfc4e2cf945",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+                  "excerpt_hash": "a1f7bfe473e9e6c51828",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-3",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "In Brandenburg und Nordrhein-Westfalen wurden am Dienstag gezielt die Stromversorgung gestört; am Donnerstagabend fand man ähnliche Gegenstände bei Dormagen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "53bd1c44999f9c50e13f",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+                  "excerpt_hash": "ac6be1d44520ad045ebb",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-4",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Auch in Sachsen wurden an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt, und es gab dort ein Bekennerschreiben.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "9f4853f30707628fd94a",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "c712525df3c79eb862f6",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            },
+            {
+              "claim_id": "wt-aaa7e98d9c993988-v1-claim-5",
+              "story_id": "wt-aaa7e98d9c993988",
+              "claim": "Laut den Berichten geht die Polizei derzeit von einem Einzeltäter aus.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+                  "excerpt_hash": "49973ab03a408f460bef",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+                  "excerpt_hash": "1c7dc01730b8922f64ef",
+                  "checked_at": "2026-09-05T06:37:35.694Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T06:37:35.694Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
+              "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
+              "content_hash": "151e54943f2f40e4411b21eafe8ca35dd989429c9930f29c1b06dba72cd27220"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-05T06:37:35.694Z",
+          "source_count": 2
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-05T09:32:59.604Z",
+          "source_count": 2,
+          "change": "media_impact_added"
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-0ce4b0298e131c8c-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "0ce4b0298e131c8c3606ff97fc1b06fd5b363da91f3d6d06b882dc5e2960770a"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-47be1bb91812ee45-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "47be1bb91812ee45d475b8f5950f795cf9c610a19d5c35171cd8724ee0697341"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-eacd2cd6006536ea-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "eacd2cd6006536eaa33e3fe4cac218f786a69e448d9b82c23c2fef8add92d363"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-06841ebe422370b3-source.png",
+          "sha256": "06841ebe422370b3f67b520653849a009a365c08db2fea8241280436863e06a4",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-05T07:37:29.993Z"
+        },
+        "fingerprint": "8455cee35d5f58cb3c6725519a85caf9d6693754527aa498e1a1ad880406cbfb",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-05T08:08:03.523Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-33e396f2be1a3a1f",
       "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
@@ -3563,21 +4775,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T09:31:48.966Z"
+          "checked_at": "2026-09-05T09:43:50.375Z"
         }
       ],
       "content_hash": "f7e293ec049f4f43449a167e3f2e7e27c7ab25ced67c7243a0c9138002124be1",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
         "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 1,
+      "quality_retry_count": 2,
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-05T09:31:48.966Z",
+      "updated_at": "2026-09-05T09:43:50.375Z",
       "event_first_seen_at": "2026-09-05T09:31:48.966Z",
       "event_detected_at": "2026-09-05T09:31:48.966Z",
       "event_id": "event-0f294ab0856a024b8206",
@@ -3608,13 +4821,13 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 11.7661,
+        "source_age_minutes": 23.789583333333333,
         "detection_delay_minutes": 11.7661,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 12.023483333333333,
         "target_publication_minutes": 60,
-        "news_freshness_score": 95,
+        "news_freshness_score": 90,
         "freshness_warning": null
       }
     },
@@ -5175,7 +6388,7 @@
       "first_seen": "2026-09-03T19:08:00.000Z",
       "last_updated": "2026-09-05T09:18:31.212Z",
       "published_at": "2026-09-04T01:52:37.203Z",
-      "updated_at": "2026-09-05T09:18:31.212Z",
+      "updated_at": "2026-09-05T09:44:12.170Z",
       "topic": [
         "Geopolitik",
         "Politik",
@@ -5710,7 +6923,7 @@
       "listed": true,
       "analysis_status": "veröffentlicht",
       "relevance_filter_version": "4.0",
-      "current_version": 6,
+      "current_version": 7,
       "source_summary": "Mehrere Berichte melden eine Einigung im Volkswagen-Aufsichtsrat über ein Spar- und Sanierungspaket. Genannt werden der Abbau von rund 50.000 weiteren Stellen und eine offene Zukunft für vier Werke, darunter Zwickau, Hannover und Neckarsulm. Einige Texte schreiben die Entscheidung als einstimmig. Einzelne Quellen zitieren Unternehmensangaben, wonach für bestimmte Standorte aktuell keine wettbewerbsfähige Folgebelegung gewährleistet werden könne; für andere Standorte werden alternative Nutzungsmöglichkeiten geprüft.\n\nDie Quellen enthalten außerdem Einordnungen von Politik und Konzernvertretern. Dabei wird beschrieben, dass die Entscheidung als Einschnitt oder historischer Umbau gesehen wird. Offen bleibt in den gelieferten Ausschnitten, wie die Stellenzahlen auf Marken und Standorte verteilt sind, welche Werke genau betroffen sind und welche konkreten nächsten Umsetzungsschritte folgen.",
       "analysis": {
         "story_id": "wt-e976be74e6481ea2",
@@ -5812,7 +7025,7 @@
         "media_impact": {
           "relevant": true,
           "relevance_level": "medium",
-          "reason": "Die Berichterstattung nutzt teils wertende und zugespitzte Formulierungen wie „radikale Umbrüche“, „umstritten“ oder „auf der Kippe“ bei einem zugleich belegten Beschluss des VW-Aufsichtsrats. Dadurch entsteht ein Resonanzraum für Rahmung und Deutung, ohne dass die zugrunde liegenden Ereignisfakten ",
+          "reason": "Die Berichterstattung nutzt teils wertende und zugespitzte Formulierungen wie „radikale Umbrüche“, „umstritten“ oder „auf der Kippe“ bei einem zugleich belegten Beschluss des VW-Aufsichtsrats. Dadurch entsteht ein Resonanzraum für Rahmung und Deutung, ohne dass die zugrunde liegenden Ereignisfakten",
           "factual_core": "Belegt ist in den gelieferten Quellen die Zustimmung des VW-Aufsichtsrats zu einem Spar- und Sanierungsplan sowie der genannte Abbau von rund 50.000 weiteren Stellen; zudem bleibt die Zukunft mehrerer Werke offen.",
           "speaker_statement": {
             "present": true,
@@ -5868,7 +7081,7 @@
           }
         },
         "media_analysis_version": "1.0",
-        "media_checked_at": "2026-09-05T09:18:31.212Z",
+        "media_checked_at": "2026-09-05T09:44:12.170Z",
         "media_trigger_fingerprint": "00f0b529def5c341e42071521781595fa0a32ea9c012bb1f177d539320063853"
       },
       "versions": [
@@ -7353,6 +8566,333 @@
           "provider": "Oracle WOeK-KI API",
           "model": "gpt-5.4-mini",
           "mode": "media_impact_backfill",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-e976be74e6481ea2-v5-claim-1",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Der VW-Aufsichtsrat hat dem Sparpaket beziehungsweise Sanierungsplan des Konzerns zugestimmt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "fac0965da8f51be2287f",
+                  "checked_at": "2026-09-04T10:56:05.208Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-produktion-zwickau-aufsichtsrat-stellenabbau-kretschmer-panter,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+                  "excerpt_hash": "a22b28c8a92bb4648483",
+                  "checked_at": "2026-09-04T10:56:05.208Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:56:05.208Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v5-claim-2",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Im Zusammenhang mit dem Paket sollen rund 50.000 weitere Stellen wegfallen.",
+              "status": "single_source_claim",
+              "source_id": "manager-magazin-news",
+              "evidence": [
+                {
+                  "source_id": "manager-magazin-news",
+                  "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+                  "excerpt_hash": "350e0201830a0725cb24",
+                  "checked_at": "2026-09-04T10:56:05.208Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "fac0965da8f51be2287f",
+                  "checked_at": "2026-09-04T10:56:05.208Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:56:05.208Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v5-claim-3",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Die Zukunft von vier Werken ist offen; genannt werden unter anderem Zwickau, Hannover, Neckarsulm und ein weiteres Werk.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+                  "excerpt_hash": "098a03ed43858a7777a7",
+                  "checked_at": "2026-09-04T10:56:05.208Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+                  "excerpt_hash": "6bcfe2815e23d8feb9c2",
+                  "checked_at": "2026-09-04T10:56:05.208Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:56:05.208Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v5-claim-4",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "VW sagt, für Zwickau, Hannover und Neckarsulm könne aktuell keine wettbewerbsfähige Folgebelegung gestaffelt ab 2031 bis 2034 gewährleistet werden.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+                  "excerpt_hash": "6bcfe2815e23d8feb9c2",
+                  "checked_at": "2026-09-04T10:56:05.208Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:56:05.208Z"
+            },
+            {
+              "claim_id": "wt-e976be74e6481ea2-v5-claim-5",
+              "story_id": "wt-e976be74e6481ea2",
+              "claim": "Mehrere Berichte verweisen darauf, dass die Zustimmung einstimmig erfolgte.",
+              "status": "single_source_claim",
+              "source_id": "tagesspiegel-home",
+              "evidence": [
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+                  "excerpt_hash": "a127e41814f986abb663",
+                  "checked_at": "2026-09-04T10:56:05.208Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+                  "excerpt_hash": "2cbdd79b0c394c0e048d",
+                  "checked_at": "2026-09-04T10:56:05.208Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:56:05.208Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "manager-magazin-news",
+              "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+              "content_hash": "6c56839e915f29ca2e0e11b45598a3de58addb9f6c0a7e1f5f950f71091599c2"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+              "content_hash": "66f0339e0e8ecbf52936b2aa160ce78516d0707392e2b728ab31b0bdb2420670"
+            },
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
+              "content_hash": "a9ce3ab942c71b5423d9c6d8e19a5584d58c0681033f59989dacc41ff80cb1ef"
+            },
+            {
+              "source_id": "spiegel-schlagzeilen",
+              "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
+              "content_hash": "13ee749f4606aea809de723cfb8be6f6803d99c568d361e11ed14958c52024c1"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+              "content_hash": "81e442a9aed5fde98a30b234ac551cd20cf4b1136e5d0696808e3419a0c896f6"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+              "content_hash": "f965731b68fc5f8601ce77ee6eb09354580de0e0fdbd0c9b70fc8b6b4d257052"
+            },
+            {
+              "source_id": "swr-aktuell",
+              "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+              "content_hash": "74ffdae2d901c30f5d7f50fb3f16654f2e42c30a5941feb32415d8bd7a70d9bc"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+              "content_hash": "3e8c8d14cbb7c8f921b9190f4d05ce7f7e58e4ac3a0953f580d39b5883e6c66d"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-produktion-zwickau-aufsichtsrat-stellenabbau-kretschmer-panter,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+              "content_hash": "a70416204fbda3a4874d7be1dd9894cfb992e3070a7071a610c31006703638b2"
+            }
+          ]
+        },
+        {
+          "version": 7,
+          "analyzed_at": "2026-09-05T09:44:12.170Z",
+          "content_hash": "731046438a40c84f75638847d5f73aefc6a932f12f8b8ef2abf7c570b10ab210",
+          "source_summary": "Mehrere Berichte melden eine Einigung im Volkswagen-Aufsichtsrat über ein Spar- und Sanierungspaket. Genannt werden der Abbau von rund 50.000 weiteren Stellen und eine offene Zukunft für vier Werke, darunter Zwickau, Hannover und Neckarsulm. Einige Texte schreiben die Entscheidung als einstimmig. Einzelne Quellen zitieren Unternehmensangaben, wonach für bestimmte Standorte aktuell keine wettbewerbsfähige Folgebelegung gewährleistet werden könne; für andere Standorte werden alternative Nutzungsmöglichkeiten geprüft.\n\nDie Quellen enthalten außerdem Einordnungen von Politik und Konzernvertretern. Dabei wird beschrieben, dass die Entscheidung als Einschnitt oder historischer Umbau gesehen wird. Offen bleibt in den gelieferten Ausschnitten, wie die Stellenzahlen auf Marken und Standorte verteilt sind, welche Werke genau betroffen sind und welche konkreten nächsten Umsetzungsschritte folgen.",
+          "analysis": {
+            "story_id": "wt-e976be74e6481ea2",
+            "news_status": "preliminary",
+            "publication_depth": "deepened",
+            "summary": "Mehrere Quellen melden, dass der VW-Aufsichtsrat einem Spar- und Sanierungsplan zugestimmt hat. Im Zentrum stehen rund 50.000 zusätzliche Stellenstreichungen und die unklare Zukunft mehrerer Werke.",
+            "detail_summary": "Gesichert ist nach den gelieferten Berichten vor allem die Zustimmung des VW-Aufsichtsrats zu einem Spar- und Sanierungsplan sowie der darin genannte Abbau von rund 50.000 Arbeitsplätzen. Mehrere Quellen nennen zusätzlich vier Werke mit offener Zukunft; eine Quelle führt Zwickau, Hannover und Neckarsulm als Standorte ohne aktuell gesicherte wettbewerbsfähige Folgebelegung an. Das ist für Beschäftigte, Standorte und Zulieferketten materiell relevant, weil es auf Eingriffe in Beschäftigung, Produktionsstruktur und Standortverteilung hinausläuft. Der Wirkpfad reicht von internen Kostensenkungen über Standortentscheidungen bis zu möglichen Folgen für regionale Arbeitsmärkte und industrielle Kapazitäten. Offen bleibt, welche Teile des Pakets tatsächlich umgesetzt werden, wie die Verteilung der Einschnitte ausfällt und ob daraus Werksschließungen, Umnutzungen oder andere Folgen entstehen. Die Evidenz ist belastbar für die Erstmeldung, aber nur als aggregierte Sekundärberichterstattung; unabhängige Primärbelege zum vollständigen Beschluss liegen in den Ausschnitten nicht vor.",
+            "why_relevant": "Die Meldung betrifft einen konzernweiten Eingriff in Beschäftigung und Standorte eines der größten Industrieunternehmen Europas. Das kann auf Arbeitsmärkte, regionale Wertschöpfung, Lieferketten und die industrielle Struktur in Deutschland ausstrahlen.",
+            "status": "beschlossen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind Beschäftigte und Regionen an mehreren Standorten; möglich sind Stellenabbau, Versetzungen und Unsicherheit über Werksperspektiven."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus den gelieferten Quellen ergibt sich kein belastbarer direkter Umweltfaktor; mögliche Produktionsverlagerungen bleiben offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Ein großer Konzernumbau mit Folgen für Standorte und Beschäftigung kann politische Korrekturfähigkeit und Tarifkonflikte berühren, ist aber hier vor allem wirtschaftlich belegt."
+            },
+            "importance": "hoch",
+            "impact_potential": "Der Beschluss kann Beschäftigung, Standorte und industrielle Kapazitäten bei VW neu ordnen und damit regionale Arbeitsmärkte sowie Lieferketten beeinflussen.",
+            "impact_risks": [
+              "Stellenabbau kann Einkommen und Beschäftigungssicherheit für Belegschaften verschlechtern.",
+              "Offene Werksperspektiven erhöhen Planungsunsicherheit für Regionen und Zulieferer."
+            ],
+            "mechanisms": [
+              "Kostensenkung durch Personalabbau",
+              "Neuzuschnitt von Produktions- und Standortstrukturen",
+              "Prüfung alternativer Folgebelegung an betroffenen Werken"
+            ],
+            "first_order": [
+              "Weniger Stellen bei VW",
+              "Offene Zukunft einzelner Werke"
+            ],
+            "second_order": [
+              "Unsicherheit in regionalen Arbeitsmärkten",
+              "Druck auf Zulieferketten und Standortgemeinden"
+            ],
+            "third_order": [
+              "Mögliche strategische Neuordnung der Produktion im Konzern",
+              "Veränderte industrielle Arbeitsteilung zwischen Standorten"
+            ],
+            "systemic_relevance": "Als Entscheidung eines Leitunternehmens im Automobilsektor kann der Plan über den Konzern hinaus Signale für die deutsche Industrie, Tarifkonflikte und Standortpolitik senden.",
+            "transformation_potential": "Eher Restrukturierung als Transformation: Das Paket zielt auf Kostensenkung und Wettbewerbsfähigkeit, nicht auf einen klar belegten Branchenumbau mit neuen Leitmärkten.",
+            "resilience": "Kurzfristig sinkt für Beschäftigte und Standorte die Resilienz durch Unsicherheit; mittelfristig könnte die Konzernstruktur stabilisiert werden, falls der Plan trägt.",
+            "side_effects": [
+              "Mögliche Verschiebung von Produktion zwischen Marken und Standorten",
+              "Anhaltende Konflikte mit Beschäftigten und Politik"
+            ],
+            "uncertainties": [
+              "Die unabhängige Bestätigung des vollständigen Beschlusses fehlt in den gelieferten Ausschnitten.",
+              "Die konkrete Verteilung der 50.000 Stellen auf Marken und Standorte ist offen.",
+              "Ob Werke geschlossen, umgenutzt oder anderweitig belegt werden, ist nicht belegt."
+            ],
+            "evidence_level": "attributed_single_source: mehrere Sekundärquellen berichten übereinstimmend, aber unabhängige Primärbelege liegen in den Ausschnitten nicht vor.",
+            "attribution": "Die Fakten stammen aus übereinstimmenden journalistischen Berichten; die zugrunde liegenden Unternehmensangaben sind nur teilweise direkt zitiert.",
+            "watch_next": [
+              "Konkrete Umsetzungspläne, Sozialplan-Schritte und Standortentscheidungen beobachten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8, SDG 9, SDG 11"
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Die Zustimmung zu einem konzernweiten Sparpaket mit rund 50.000 Stellenabbau ist materiell; unabhängige Primärbelege fehlen jedoch in den Ausschnitten."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Stellenabbau",
+                  "value": "50.000",
+                  "unit": "Arbeitsplätze",
+                  "context": "So viele weitere Stellen sollen wegfallen.",
+                  "claim_id": "wt-e976be74e6481ea2-claim-02"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "unternehmen",
+                "kommunen"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true,
+            "media_impact": {
+              "relevant": true,
+              "relevance_level": "medium",
+              "reason": "Die Berichterstattung nutzt teils wertende und zugespitzte Formulierungen wie „radikale Umbrüche“, „umstritten“ oder „auf der Kippe“ bei einem zugleich belegten Beschluss des VW-Aufsichtsrats. Dadurch entsteht ein Resonanzraum für Rahmung und Deutung, ohne dass die zugrunde liegenden Ereignisfakten",
+              "factual_core": "Belegt ist in den gelieferten Quellen die Zustimmung des VW-Aufsichtsrats zu einem Spar- und Sanierungsplan sowie der genannte Abbau von rund 50.000 weiteren Stellen; zudem bleibt die Zukunft mehrerer Werke offen.",
+              "speaker_statement": {
+                "present": true,
+                "speaker": "VW-Aufsichtsrat / Konzernangaben / journalistische Einordnung",
+                "statement": "Der Aufsichtsrat habe dem Sanierungsplan zugestimmt; für bestimmte Werke könne aktuell keine wettbewerbsfähige Folgebelegung gewährleistet werden; einzelne Berichte bezeichnen das Paket als radikal, umstritten oder als historische Zäsur.",
+                "status": "claim"
+              },
+              "framing": {
+                "detected": true,
+                "term": "radikale Umbrüche",
+                "origin_in_story": "Medium",
+                "media_usage": "headline",
+                "attribution_quality": "grundsätzlich attribuiert",
+                "factual_status": "Interpretation",
+                "frame_type": [
+                  "Bedrohung"
+                ],
+                "political_history_relevant": false,
+                "political_history": "",
+                "political_history_evidence": []
+              },
+              "resonance": {
+                "resonance_space": "Arbeitsplatzabbau, Standortunsicherheit und industrielle Umstrukturierung sind anschlussfähig für starke Deutungen in Wirtschaft, Politik und Regionen.",
+                "resonance_risk": "Die Zuspitzung kann den Eindruck einer bereits vollzogenen, maximalen Zäsur verstärken, obwohl Teile der Folgen in den Quellen noch offen bleiben.",
+                "normalization_potential": "Wiederholte Benennungen als ‚Sparpaket‘ oder ‚Sanierungsplan‘ können harte Einschnitte als betriebswirtschaftliche Routine erscheinen lassen.",
+                "repetition_effect": "Mehrere parallele Meldungen erhöhen die Vertrautheit mit der Rahmung, ersetzen aber keinen zusätzlichen Wirkungsbeleg.",
+                "trust_effect": "Bei erkennbar wertender Wortwahl kann das Vertrauen in die Trennschärfe zwischen Nachricht und Kommentar sinken, sofern Attribution und Faktenteil nicht klar getrennt sind.",
+                "polarization_potential": "Die Kombination aus Stellenabbau, Werkunsicherheit und zugespitzter Sprache kann polarisierende Lesarten zwischen Beschäftigten-, Standort- und Managementperspektiven begünstigen.",
+                "discourse_effect": "Der Diskurs verschiebt sich leicht von der Frage des Beschlusses hin zur Bewertung von Härte, Dramatik und politischer Tragweite des Sanierungsplans."
+              },
+              "impact_path": {
+                "first_order": "Lesende nehmen den Beschluss und die Größenordnung des Stellenabbaus als harte wirtschaftliche Maßnahme wahr.",
+                "second_order": "Die sprachliche Zuspitzung kann die Deutung als Krise, Einschnitt oder Bedrohung von Standorten verstärken.",
+                "third_order": "In der öffentlichen Debatte kann sich der Fokus auf industrielle Transformation, Beschäftigungssicherung und Standortpolitik weiter verfestigen."
+              },
+              "evidence": {
+                "status": "high",
+                "what_is_known": "Die Quellen belegen den Beschluss, den Stellenabbau und die offene Werkperspektive; außerdem enthalten sie wertende Überschriften und Einordnungen.",
+                "what_is_inferred": "Dass die Wortwahl die Wahrnehmung dramatisiert und den Deutungsrahmen verschiebt.",
+                "what_is_open": "Welche konkrete Wirkung die Formulierungen auf einzelne Zielgruppen hatten und ob redaktionelle Zuspitzung gegenüber nüchterner Sprache tatsächlich mehr Resonanz erzeugte."
+              },
+              "editorial_assessment": "Die Berichterstattung trennt den Beschluss nicht immer sauber von zugespitzter Einordnung; sachlich wäre eine strengere Attribution wertender Begriffe und eine klarere Trennung von Fakt und Deutung.",
+              "fact_first_reframe": {
+                "title": "VW-Aufsichtsrat billigt Spar- und Sanierungsplan mit weiterem Stellenabbau",
+                "source_summary": "Mehrere Berichte melden, dass der VW-Aufsichtsrat einem Spar- und Sanierungsplan zugestimmt hat. Genannt wird ein Abbau von rund 50.000 weiteren Stellen. Für mehrere Werke bleibt die künftige Nutzung offen; in einzelnen Berichten werden Zwickau, Hannover und Neckarsulm genannt.",
+                "summary": "Der VW-Aufsichtsrat hat laut mehreren Berichten einem Spar- und Sanierungsplan zugestimmt. Vorgesehen ist ein weiterer Abbau von rund 50.000 Stellen. Die Zukunft mehrerer Werke ist offen.",
+                "detail_summary": "Nach den gelieferten Berichten hat der VW-Aufsichtsrat dem vom Management vorgeschlagenen Spar- und Sanierungsplan zugestimmt. Im Zusammenhang damit wird ein weiterer Abbau von rund 50.000 Arbeitsplätzen genannt. Mehrere Quellen berichten außerdem, dass die Zukunft von vier Werken offen sei; in einzelnen Angaben werden Zwickau, Hannover und Neckarsulm als Standorte ohne gesicherte Folgebelegung genannt. Die Berichte enthalten zudem wertende Formulierungen und politische Einordnungen, die als journalistische Deutung kenntlich bleiben sollten. Offen bleibt in den Ausschnitten, wie die Maßnahmen konkret umgesetzt werden und welche Standorte in welcher Form betroffen sind."
+              },
+              "self_frame_warning": false,
+              "source_comparison": {
+                "sufficient_basis": true,
+                "finding": "Es liegen mindestens zwei unterschiedliche journalistische Darstellungen vor, die den Beschluss und den Stellenabbau übereinstimmend berichten; die Vergleichsbasis reicht damit für einen Medien- und Sprachwirkungscheck."
+              }
+            },
+            "media_analysis_version": "1.0",
+            "media_checked_at": "2026-09-05T09:44:12.170Z",
+            "media_trigger_fingerprint": "00f0b529def5c341e42071521781595fa0a32ea9c012bb1f177d539320063853"
+          },
+          "provider": null,
+          "model": null,
+          "mode": "media_impact_deterministic_normalization",
           "method_sources": [],
           "claims": [
             {
@@ -16083,935 +17623,6 @@
         }
       ],
       "retirement_history": []
-    },
-    {
-      "story_id": "wt-aaa7e98d9c993988",
-      "slug": "anschlage-auf-umspannwerke-dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverda-993988",
-      "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
-      "first_seen": "2026-09-04T17:11:33.000Z",
-      "last_updated": "2026-09-05T09:32:59.604Z",
-      "published_at": "2026-09-05T06:37:35.694Z",
-      "updated_at": "2026-09-05T09:32:59.604Z",
-      "topic": [
-        "Klima"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-          "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
-          "summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft. Am Hambacher Forst kam es zu einem SEK-Einsatz.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:11:33.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f",
-          "source_item_id": "603b3a314a06b872ded379d4bff2af2156df9995f2d16048da924eb6c7544d5a",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T17:11:33.000Z",
-          "ingested_at": "2026-09-04T17:21:09.783Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-          "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
-          "summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T06:25:17.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "151e54943f2f40e4411b21eafe8ca35dd989429c9930f29c1b06dba72cd27220",
-          "source_item_id": "26e81c07cc436169edeac35ec7b110399a8e58184bf4a6fc604c4beeb00ca4ce",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T06:25:17.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-aaa7e98d9c993988-v1-claim-1",
-          "story_id": "wt-aaa7e98d9c993988",
-          "claim": "Bundesinnenminister Dobrindt bezeichnet die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\".",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-              "excerpt_hash": "1c7dc01730b8922f64ef",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-              "excerpt_hash": "52354455b03b2d3fef4a",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T06:37:35.694Z"
-        },
-        {
-          "claim_id": "wt-aaa7e98d9c993988-v1-claim-2",
-          "story_id": "wt-aaa7e98d9c993988",
-          "claim": "Die Fahndung nach einem verdächtigen Mann läuft weiter, nachdem die Polizei ihn bei einem SEK-Einsatz am Hambacher Forst nicht gefunden hat.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-              "excerpt_hash": "392009238bfc4e2cf945",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-              "excerpt_hash": "a1f7bfe473e9e6c51828",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T06:37:35.694Z"
-        },
-        {
-          "claim_id": "wt-aaa7e98d9c993988-v1-claim-3",
-          "story_id": "wt-aaa7e98d9c993988",
-          "claim": "In Brandenburg und Nordrhein-Westfalen wurden am Dienstag gezielt die Stromversorgung gestört; am Donnerstagabend fand man ähnliche Gegenstände bei Dormagen.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-              "excerpt_hash": "53bd1c44999f9c50e13f",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-              "excerpt_hash": "ac6be1d44520ad045ebb",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T06:37:35.694Z"
-        },
-        {
-          "claim_id": "wt-aaa7e98d9c993988-v1-claim-4",
-          "story_id": "wt-aaa7e98d9c993988",
-          "claim": "Auch in Sachsen wurden an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt, und es gab dort ein Bekennerschreiben.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-              "excerpt_hash": "9f4853f30707628fd94a",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-              "excerpt_hash": "c712525df3c79eb862f6",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T06:37:35.694Z"
-        },
-        {
-          "claim_id": "wt-aaa7e98d9c993988-v1-claim-5",
-          "story_id": "wt-aaa7e98d9c993988",
-          "claim": "Laut den Berichten geht die Polizei derzeit von einem Einzeltäter aus.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-              "excerpt_hash": "49973ab03a408f460bef",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-              "excerpt_hash": "1c7dc01730b8922f64ef",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-05T06:37:35.694Z"
-        }
-      ],
-      "event_id": "event-5f3d82645fd193edc18e",
-      "event_first_seen_at": "2026-09-04T17:21:09.783Z",
-      "event_detected_at": "2026-09-04T17:21:09.783Z",
-      "verification_started_at": "2026-09-05T06:37:14.306Z",
-      "publish_ready_at": "2026-09-05T06:37:35.694Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-05T10:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [],
-      "content_hash": "b3f734b08717690c3f2c914414bb236f9e337139f7eaa449d918378a126332e3",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 2,
-      "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
-      "analysis": {
-        "story_id": "wt-aaa7e98d9c993988",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
-        "detail_summary": "Gesichert ist nach dem vorliegenden Bericht vor allem die laufende Fahndung im Zusammenhang mit Sabotageversuchen an Umspannwerken und die politische Einordnung durch Bundesinnenminister Dobrindt. Der Vorgang ist relevant, weil Umspannwerke zur kritischen Infrastruktur gehören und Ausfälle Versorgung, Sicherheit und Resilienz direkt berühren können. Der mögliche Wirkpfad liegt weniger in der bloßen Meldung selbst als in den tatsächlichen Eingriffen an Stromanlagen und den daraus folgenden Risiken für Versorgung und öffentliche Sicherheit. Als mögliche Folge sind weitere Sicherheitsmaßnahmen, Ermittlungen und eine Verschärfung der Debatte über den Schutz kritischer Infrastruktur denkbar. Ob die Zuordnung zu einem Einzeltäter, die Motive oder die Reichweite der Vorfälle belastbar sind, bleibt in der vorliegenden Quellenlage offen. Eine unabhängige Bestätigung der zentralen Tatsachen liegt hier nicht vor; die Meldung bleibt deshalb quellengebunden und vorläufig.",
-        "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitslage und mögliche Versorgungsrisiken. Sie liefert zudem neue Angaben zu Umfang, Fahndung und politischer Einordnung des Vorgangs.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind mögliche Störungen der Stromversorgung und Sicherheitsrisiken an kritischer Infrastruktur."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Der Bezug zur Klimadebatte ist politisch relevant, materielle Umweltfolgen werden in der Quelle aber nicht belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Vorgang berührt innere Sicherheit, staatliche Schutzfähigkeit und die öffentliche Debatte über Extremismus."
-        },
-        "importance": "hoch",
-        "impact_potential": "Mögliche Folgen reichen von verstärkter Sicherung kritischer Infrastruktur bis zu Ermittlungs- und Präventionsmaßnahmen. Falls weitere Taten oder Netzstörungen folgen, kann das Versorgungs- und Sicherheitsrisiken erhöhen.",
-        "impact_risks": [
-          "Weitere Sabotage an kritischer Infrastruktur",
-          "Versorgungsstörungen und Sicherheitskosten",
-          "Polarisierung in der Klimadebatte"
-        ],
-        "mechanisms": [
-          "Physische Eingriffe an Umspannwerken können Versorgung und Sicherheitslage beeinträchtigen.",
-          "Ermittlungen und Fahndung können Schutzmaßnahmen und Prioritäten verschieben."
-        ],
-        "first_order": [
-          "Ermittlungen, Fahndung und Sicherungsmaßnahmen werden verstärkt.",
-          "Die öffentliche Aufmerksamkeit auf den Schutz von Umspannwerken nimmt zu."
-        ],
-        "second_order": [
-          "Betreiber und Behörden könnten Schutzkonzepte anpassen.",
-          "Politisch könnte der Druck auf Infrastruktur- und Sicherheitsgesetzgebung steigen."
-        ],
-        "third_order": [
-          "Langfristig könnten Prioritäten im Schutz kritischer Infrastruktur neu gesetzt werden.",
-          "Die Debatte über klima- oder extremismusbezogene Sabotage könnte sich verhärten."
-        ],
-        "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant, weil Störungen Kaskaden in Versorgung, öffentlicher Sicherheit und Wirtschaft auslösen können.",
-        "transformation_potential": "Die Meldung kann die Priorisierung von Schutz, Überwachung und Resilienz kritischer Infrastruktur beeinflussen, falls die Vorfälle als Muster gelten.",
-        "resilience": "Kurzfristig schwach, wenn ähnliche Vorfälle an mehreren Orten auftreten; mittel bis hoch, wenn Schutzmaßnahmen rasch greifen.",
-        "side_effects": [
-          "Mehr Sicherheitsaufwand für Betreiber",
-          "Mögliche Verlagerung von Ressourcen zu Ermittlungen",
-          "Verstärkte öffentliche Verunsicherung"
-        ],
-        "uncertainties": [
-          "Unabhängige Bestätigung der Motive fehlt.",
-          "Der Umfang der tatsächlichen Schäden bleibt in der Quelle offen.",
-          "Die Zuschreibung zu einem Einzeltäter ist vorläufig."
-        ],
-        "evidence_level": "attributed_single_source",
-        "attribution": "Die zentrale Einordnung stammt aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung durch weitere, nicht abhängige Quellen liegt hier nicht vor.",
-        "watch_next": [
-          "Wird der Verdächtige identifiziert oder gefasst?",
-          "Bestätigen Behörden den Schaden und den Umfang der Vorfälle?",
-          "Gibt es weitere Funde oder Störungen an Umspannwerken?"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 7",
-          "Agenda 2030/SDG 9",
-          "Agenda 2030/SDG 16"
-        ],
-        "publication_gate": {
-          "news_value": "new_evidence",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "material_update",
-          "rationale": "Neuer berichteter Stand zu Sabotage an kritischer Infrastruktur mit Fahndung und mehreren Orten; materiell wegen möglicher Versorgungs- und Sicherheitsfolgen."
-        },
-        "publication_recommendation": true,
-        "visuals": null,
-        "media_impact": {
-          "relevant": true,
-          "relevance_level": "medium",
-          "reason": "Der Trigger ist ein politisch aufgeladener Begriff in der Überschrift und im Text; er rahmt eine noch offene Ermittlungs- und Fahndungslage als Deutung eines Akteurs. Dadurch entsteht ein relevanter Resonanzraum für Attribution, Zuspitzung und mögliche Verwechslung von Aussage und Befund.",
-          "factual_core": "Belegt ist im vorliegenden Bericht die laufende Fahndung im Zusammenhang mit Vorfällen an Umspannwerken sowie die Einordnung durch Bundesinnenminister Dobrindt. Der Begriff „Klimaextremismus“ ist eine zugeschriebene politische Deutung, kein amtlich festgestellter Sachverhalt.",
-          "speaker_statement": {
-            "present": true,
-            "speaker": "Bundesinnenminister Dobrindt",
-            "statement": "Er ordnet die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ ein und geht derzeit von einem Einzeltäter aus.",
-            "status": "claim"
-          },
-          "framing": {
-            "detected": true,
-            "term": "Klimaextremismus",
-            "origin_in_story": "Akteur",
-            "media_usage": "body",
-            "attribution_quality": "grundsätzlich attribuiert",
-            "factual_status": "Aussage eines Akteurs",
-            "frame_type": [
-              "Bedrohung"
-            ],
-            "political_history_relevant": false,
-            "political_history": "",
-            "political_history_evidence": []
-          },
-          "resonance": {
-            "resonance_space": "Die Formulierung kann in Debatten über Klimaaktivismus, Extremismus und Schutz kritischer Infrastruktur Anschluss finden.",
-            "resonance_risk": "Ohne klare Trennung von Aussage und Befund kann der Begriff als vorläufige Tatsachenbeschreibung gelesen werden.",
-            "normalization_potential": "Wiederholte Nutzung kann den Begriff im öffentlichen Sprachraum verfestigen, obwohl er hier nur als politische Einordnung vorliegt.",
-            "repetition_effect": "Mehrfaches Auftauchen in Überschrift und Text kann die Deutungsrahmung verstärken; das belegt keine inhaltliche Richtigkeit.",
-            "trust_effect": "Die Wahrnehmung journalistischer Distanz kann leiden, wenn die politische Einordnung nicht sofort als solche erkennbar ist.",
-            "polarization_potential": "Der Frame kann bestehende Konfliktlinien zwischen Klima-, Sicherheits- und Ordnungspolitik zuspitzen.",
-            "discourse_effect": "Der Diskurs verschiebt sich eher auf die Deutung der Tat als auf den gesicherten Stand der Ermittlungen."
-          },
-          "impact_path": {
-            "first_order": "Die Überschrift setzt einen starken Deutungsrahmen, bevor der Ermittlungsstand vollständig geklärt ist.",
-            "second_order": "Lesende können die politische Einordnung mit einem amtlich gesicherten Befund verwechseln oder den Fall stärker politisieren.",
-            "third_order": "Bei Wiederholung kann sich ein allgemeiner Deutungsrahmen für ähnliche Vorfälle etablieren, der die Sprache der Berichterstattung prägt."
-          },
-          "evidence": {
-            "status": "medium",
-            "what_is_known": "Die Meldung nennt die laufende Fahndung, einen SEK-Einsatz und die politische Einordnung durch Dobrindt; sie verweist auf weitere Funde und Vorfälle an Umspannwerken.",
-            "what_is_inferred": "Dass der Begriff als politischer Frame Wirkung entfalten kann, folgt aus seiner Platzierung in Überschrift und Text, nicht aus einer belegten Absicht.",
-            "what_is_open": "Offen bleiben der belastbar gesicherte Tathergang, die Täterschaft, die Motivation und die Frage, ob die Einordnung als „Klimaextremismus“ durch Ermittlungen gestützt wird."
-          },
-          "editorial_assessment": "Die Formulierung sollte als Akteurszitat klar von den berichteten Ereignissen getrennt und im Titel oder Lead stärker als Einordnung kenntlich gemacht werden.",
-          "fact_first_reframe": {
-            "title": "Fahndung nach Verdächtigem nach Vorfällen an Umspannwerken läuft",
-            "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
-            "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
-            "detail_summary": "Im Bericht werden Vorfälle an deutschen Umspannwerken und eine laufende Fahndung beschrieben. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Aussage ist als politische Deutung des Ministers erkennbar und nicht als amtlich festgestellter Sachverhalt belegt. Zusätzlich nennt die Quelle einen SEK-Einsatz am Hambacher Forst sowie weitere Funde und Vorfälle in Brandenburg, Nordrhein-Westfalen und Sachsen. Die Berichterstattung verweist auf kritische Infrastruktur und auf mögliche Sicherheitsfolgen. Die Tatmotivation, die Täterschaft und der endgültige Ermittlungsstand bleiben offen."
-          },
-          "self_frame_warning": true,
-          "source_comparison": {
-            "sufficient_basis": false,
-            "finding": ""
-          }
-        },
-        "media_analysis_version": "1.0",
-        "media_checked_at": "2026-09-05T09:32:59.604Z",
-        "media_trigger_fingerprint": "29e466609bb35860bd3d3d86590bfe9e3b720f9ec8de85d16c5ae4630483a763"
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-05T06:37:35.694Z",
-          "content_hash": "b3f734b08717690c3f2c914414bb236f9e337139f7eaa449d918378a126332e3",
-          "source_summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ bezeichnet. Nach Angaben des Berichts geht die Polizei derzeit von einem Einzeltäter aus, die Fahndung nach dem Verdächtigen läuft weiter. Zudem wird ein SEK-Einsatz am Hambacher Forst beschrieben, bei dem Spezialkräfte einen auffälligen Lkw gestürmt, den Verdächtigen aber nicht gefunden haben sollen.\n\nDer Bericht verweist außerdem auf Vorfälle in Brandenburg und Nordrhein-Westfalen sowie auf ähnliche Funde in der Nähe von Dormagen. Auch in Sachsen seien an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt worden; dort hätten Sicherheitsbehörden von einem Bekennerschreiben gesprochen. Umspannwerke werden als kritische Infrastruktur eingeordnet.",
-          "analysis": {
-            "story_id": "wt-aaa7e98d9c993988",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Dobrindt ordnet die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ ein. Die Fahndung nach einem Verdächtigen läuft weiter, zugleich werden weitere Funde und Einsätze in mehreren Ländern beschrieben.",
-            "detail_summary": "Gesichert ist nach dem vorliegenden Bericht vor allem die laufende Fahndung im Zusammenhang mit Sabotageversuchen an Umspannwerken und die politische Einordnung durch Bundesinnenminister Dobrindt. Der Vorgang ist relevant, weil Umspannwerke zur kritischen Infrastruktur gehören und Ausfälle Versorgung, Sicherheit und Resilienz direkt berühren können. Der mögliche Wirkpfad liegt weniger in der bloßen Meldung selbst als in den tatsächlichen Eingriffen an Stromanlagen und den daraus folgenden Risiken für Versorgung und öffentliche Sicherheit. Als mögliche Folge sind weitere Sicherheitsmaßnahmen, Ermittlungen und eine Verschärfung der Debatte über den Schutz kritischer Infrastruktur denkbar. Ob die Zuordnung zu einem Einzeltäter, die Motive oder die Reichweite der Vorfälle belastbar sind, bleibt in der vorliegenden Quellenlage offen. Eine unabhängige Bestätigung der zentralen Tatsachen liegt hier nicht vor; die Meldung bleibt deshalb quellengebunden und vorläufig.",
-            "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitslage und mögliche Versorgungsrisiken. Sie liefert zudem neue Angaben zu Umfang, Fahndung und politischer Einordnung des Vorgangs.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Betroffen sind mögliche Störungen der Stromversorgung und Sicherheitsrisiken an kritischer Infrastruktur."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Der Bezug zur Klimadebatte ist politisch relevant, materielle Umweltfolgen werden in der Quelle aber nicht belegt."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Der Vorgang berührt innere Sicherheit, staatliche Schutzfähigkeit und die öffentliche Debatte über Extremismus."
-            },
-            "importance": "hoch",
-            "impact_potential": "Mögliche Folgen reichen von verstärkter Sicherung kritischer Infrastruktur bis zu Ermittlungs- und Präventionsmaßnahmen. Falls weitere Taten oder Netzstörungen folgen, kann das Versorgungs- und Sicherheitsrisiken erhöhen.",
-            "impact_risks": [
-              "Weitere Sabotage an kritischer Infrastruktur",
-              "Versorgungsstörungen und Sicherheitskosten",
-              "Polarisierung in der Klimadebatte"
-            ],
-            "mechanisms": [
-              "Physische Eingriffe an Umspannwerken können Versorgung und Sicherheitslage beeinträchtigen.",
-              "Ermittlungen und Fahndung können Schutzmaßnahmen und Prioritäten verschieben."
-            ],
-            "first_order": [
-              "Ermittlungen, Fahndung und Sicherungsmaßnahmen werden verstärkt.",
-              "Die öffentliche Aufmerksamkeit auf den Schutz von Umspannwerken nimmt zu."
-            ],
-            "second_order": [
-              "Betreiber und Behörden könnten Schutzkonzepte anpassen.",
-              "Politisch könnte der Druck auf Infrastruktur- und Sicherheitsgesetzgebung steigen."
-            ],
-            "third_order": [
-              "Langfristig könnten Prioritäten im Schutz kritischer Infrastruktur neu gesetzt werden.",
-              "Die Debatte über klima- oder extremismusbezogene Sabotage könnte sich verhärten."
-            ],
-            "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant, weil Störungen Kaskaden in Versorgung, öffentlicher Sicherheit und Wirtschaft auslösen können.",
-            "transformation_potential": "Die Meldung kann die Priorisierung von Schutz, Überwachung und Resilienz kritischer Infrastruktur beeinflussen, falls die Vorfälle als Muster gelten.",
-            "resilience": "Kurzfristig schwach, wenn ähnliche Vorfälle an mehreren Orten auftreten; mittel bis hoch, wenn Schutzmaßnahmen rasch greifen.",
-            "side_effects": [
-              "Mehr Sicherheitsaufwand für Betreiber",
-              "Mögliche Verlagerung von Ressourcen zu Ermittlungen",
-              "Verstärkte öffentliche Verunsicherung"
-            ],
-            "uncertainties": [
-              "Unabhängige Bestätigung der Motive fehlt.",
-              "Der Umfang der tatsächlichen Schäden bleibt in der Quelle offen.",
-              "Die Zuschreibung zu einem Einzeltäter ist vorläufig."
-            ],
-            "evidence_level": "attributed_single_source",
-            "attribution": "Die zentrale Einordnung stammt aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung durch weitere, nicht abhängige Quellen liegt hier nicht vor.",
-            "watch_next": [
-              "Wird der Verdächtige identifiziert oder gefasst?",
-              "Bestätigen Behörden den Schaden und den Umfang der Vorfälle?",
-              "Gibt es weitere Funde oder Störungen an Umspannwerken?"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7",
-              "Agenda 2030/SDG 9",
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "material_update",
-              "rationale": "Neuer berichteter Stand zu Sabotage an kritischer Infrastruktur mit Fahndung und mehreren Orten; materiell wegen möglicher Versorgungs- und Sicherheitsfolgen."
-            },
-            "publication_recommendation": true,
-            "visuals": null
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-1",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "Bundesinnenminister Dobrindt bezeichnet die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\".",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "1c7dc01730b8922f64ef",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "52354455b03b2d3fef4a",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-2",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "Die Fahndung nach einem verdächtigen Mann läuft weiter, nachdem die Polizei ihn bei einem SEK-Einsatz am Hambacher Forst nicht gefunden hat.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "392009238bfc4e2cf945",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-                  "excerpt_hash": "a1f7bfe473e9e6c51828",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-3",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "In Brandenburg und Nordrhein-Westfalen wurden am Dienstag gezielt die Stromversorgung gestört; am Donnerstagabend fand man ähnliche Gegenstände bei Dormagen.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "53bd1c44999f9c50e13f",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-                  "excerpt_hash": "ac6be1d44520ad045ebb",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-4",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "Auch in Sachsen wurden an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt, und es gab dort ein Bekennerschreiben.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "9f4853f30707628fd94a",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "c712525df3c79eb862f6",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-5",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "Laut den Berichten geht die Polizei derzeit von einem Einzeltäter aus.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-                  "excerpt_hash": "49973ab03a408f460bef",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "1c7dc01730b8922f64ef",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-              "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-              "content_hash": "151e54943f2f40e4411b21eafe8ca35dd989429c9930f29c1b06dba72cd27220"
-            }
-          ]
-        },
-        {
-          "version": 2,
-          "analyzed_at": "2026-09-05T09:32:59.604Z",
-          "content_hash": "b3f734b08717690c3f2c914414bb236f9e337139f7eaa449d918378a126332e3",
-          "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
-          "analysis": {
-            "story_id": "wt-aaa7e98d9c993988",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
-            "detail_summary": "Gesichert ist nach dem vorliegenden Bericht vor allem die laufende Fahndung im Zusammenhang mit Sabotageversuchen an Umspannwerken und die politische Einordnung durch Bundesinnenminister Dobrindt. Der Vorgang ist relevant, weil Umspannwerke zur kritischen Infrastruktur gehören und Ausfälle Versorgung, Sicherheit und Resilienz direkt berühren können. Der mögliche Wirkpfad liegt weniger in der bloßen Meldung selbst als in den tatsächlichen Eingriffen an Stromanlagen und den daraus folgenden Risiken für Versorgung und öffentliche Sicherheit. Als mögliche Folge sind weitere Sicherheitsmaßnahmen, Ermittlungen und eine Verschärfung der Debatte über den Schutz kritischer Infrastruktur denkbar. Ob die Zuordnung zu einem Einzeltäter, die Motive oder die Reichweite der Vorfälle belastbar sind, bleibt in der vorliegenden Quellenlage offen. Eine unabhängige Bestätigung der zentralen Tatsachen liegt hier nicht vor; die Meldung bleibt deshalb quellengebunden und vorläufig.",
-            "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitslage und mögliche Versorgungsrisiken. Sie liefert zudem neue Angaben zu Umfang, Fahndung und politischer Einordnung des Vorgangs.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Betroffen sind mögliche Störungen der Stromversorgung und Sicherheitsrisiken an kritischer Infrastruktur."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Der Bezug zur Klimadebatte ist politisch relevant, materielle Umweltfolgen werden in der Quelle aber nicht belegt."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Der Vorgang berührt innere Sicherheit, staatliche Schutzfähigkeit und die öffentliche Debatte über Extremismus."
-            },
-            "importance": "hoch",
-            "impact_potential": "Mögliche Folgen reichen von verstärkter Sicherung kritischer Infrastruktur bis zu Ermittlungs- und Präventionsmaßnahmen. Falls weitere Taten oder Netzstörungen folgen, kann das Versorgungs- und Sicherheitsrisiken erhöhen.",
-            "impact_risks": [
-              "Weitere Sabotage an kritischer Infrastruktur",
-              "Versorgungsstörungen und Sicherheitskosten",
-              "Polarisierung in der Klimadebatte"
-            ],
-            "mechanisms": [
-              "Physische Eingriffe an Umspannwerken können Versorgung und Sicherheitslage beeinträchtigen.",
-              "Ermittlungen und Fahndung können Schutzmaßnahmen und Prioritäten verschieben."
-            ],
-            "first_order": [
-              "Ermittlungen, Fahndung und Sicherungsmaßnahmen werden verstärkt.",
-              "Die öffentliche Aufmerksamkeit auf den Schutz von Umspannwerken nimmt zu."
-            ],
-            "second_order": [
-              "Betreiber und Behörden könnten Schutzkonzepte anpassen.",
-              "Politisch könnte der Druck auf Infrastruktur- und Sicherheitsgesetzgebung steigen."
-            ],
-            "third_order": [
-              "Langfristig könnten Prioritäten im Schutz kritischer Infrastruktur neu gesetzt werden.",
-              "Die Debatte über klima- oder extremismusbezogene Sabotage könnte sich verhärten."
-            ],
-            "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant, weil Störungen Kaskaden in Versorgung, öffentlicher Sicherheit und Wirtschaft auslösen können.",
-            "transformation_potential": "Die Meldung kann die Priorisierung von Schutz, Überwachung und Resilienz kritischer Infrastruktur beeinflussen, falls die Vorfälle als Muster gelten.",
-            "resilience": "Kurzfristig schwach, wenn ähnliche Vorfälle an mehreren Orten auftreten; mittel bis hoch, wenn Schutzmaßnahmen rasch greifen.",
-            "side_effects": [
-              "Mehr Sicherheitsaufwand für Betreiber",
-              "Mögliche Verlagerung von Ressourcen zu Ermittlungen",
-              "Verstärkte öffentliche Verunsicherung"
-            ],
-            "uncertainties": [
-              "Unabhängige Bestätigung der Motive fehlt.",
-              "Der Umfang der tatsächlichen Schäden bleibt in der Quelle offen.",
-              "Die Zuschreibung zu einem Einzeltäter ist vorläufig."
-            ],
-            "evidence_level": "attributed_single_source",
-            "attribution": "Die zentrale Einordnung stammt aus einem Deutschlandfunk-Bericht; unabhängige Bestätigung durch weitere, nicht abhängige Quellen liegt hier nicht vor.",
-            "watch_next": [
-              "Wird der Verdächtige identifiziert oder gefasst?",
-              "Bestätigen Behörden den Schaden und den Umfang der Vorfälle?",
-              "Gibt es weitere Funde oder Störungen an Umspannwerken?"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 7",
-              "Agenda 2030/SDG 9",
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "material_update",
-              "rationale": "Neuer berichteter Stand zu Sabotage an kritischer Infrastruktur mit Fahndung und mehreren Orten; materiell wegen möglicher Versorgungs- und Sicherheitsfolgen."
-            },
-            "publication_recommendation": true,
-            "visuals": null,
-            "media_impact": {
-              "relevant": true,
-              "relevance_level": "medium",
-              "reason": "Der Trigger ist ein politisch aufgeladener Begriff in der Überschrift und im Text; er rahmt eine noch offene Ermittlungs- und Fahndungslage als Deutung eines Akteurs. Dadurch entsteht ein relevanter Resonanzraum für Attribution, Zuspitzung und mögliche Verwechslung von Aussage und Befund.",
-              "factual_core": "Belegt ist im vorliegenden Bericht die laufende Fahndung im Zusammenhang mit Vorfällen an Umspannwerken sowie die Einordnung durch Bundesinnenminister Dobrindt. Der Begriff „Klimaextremismus“ ist eine zugeschriebene politische Deutung, kein amtlich festgestellter Sachverhalt.",
-              "speaker_statement": {
-                "present": true,
-                "speaker": "Bundesinnenminister Dobrindt",
-                "statement": "Er ordnet die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ ein und geht derzeit von einem Einzeltäter aus.",
-                "status": "claim"
-              },
-              "framing": {
-                "detected": true,
-                "term": "Klimaextremismus",
-                "origin_in_story": "Akteur",
-                "media_usage": "body",
-                "attribution_quality": "grundsätzlich attribuiert",
-                "factual_status": "Aussage eines Akteurs",
-                "frame_type": [
-                  "Bedrohung"
-                ],
-                "political_history_relevant": false,
-                "political_history": "",
-                "political_history_evidence": []
-              },
-              "resonance": {
-                "resonance_space": "Die Formulierung kann in Debatten über Klimaaktivismus, Extremismus und Schutz kritischer Infrastruktur Anschluss finden.",
-                "resonance_risk": "Ohne klare Trennung von Aussage und Befund kann der Begriff als vorläufige Tatsachenbeschreibung gelesen werden.",
-                "normalization_potential": "Wiederholte Nutzung kann den Begriff im öffentlichen Sprachraum verfestigen, obwohl er hier nur als politische Einordnung vorliegt.",
-                "repetition_effect": "Mehrfaches Auftauchen in Überschrift und Text kann die Deutungsrahmung verstärken; das belegt keine inhaltliche Richtigkeit.",
-                "trust_effect": "Die Wahrnehmung journalistischer Distanz kann leiden, wenn die politische Einordnung nicht sofort als solche erkennbar ist.",
-                "polarization_potential": "Der Frame kann bestehende Konfliktlinien zwischen Klima-, Sicherheits- und Ordnungspolitik zuspitzen.",
-                "discourse_effect": "Der Diskurs verschiebt sich eher auf die Deutung der Tat als auf den gesicherten Stand der Ermittlungen."
-              },
-              "impact_path": {
-                "first_order": "Die Überschrift setzt einen starken Deutungsrahmen, bevor der Ermittlungsstand vollständig geklärt ist.",
-                "second_order": "Lesende können die politische Einordnung mit einem amtlich gesicherten Befund verwechseln oder den Fall stärker politisieren.",
-                "third_order": "Bei Wiederholung kann sich ein allgemeiner Deutungsrahmen für ähnliche Vorfälle etablieren, der die Sprache der Berichterstattung prägt."
-              },
-              "evidence": {
-                "status": "medium",
-                "what_is_known": "Die Meldung nennt die laufende Fahndung, einen SEK-Einsatz und die politische Einordnung durch Dobrindt; sie verweist auf weitere Funde und Vorfälle an Umspannwerken.",
-                "what_is_inferred": "Dass der Begriff als politischer Frame Wirkung entfalten kann, folgt aus seiner Platzierung in Überschrift und Text, nicht aus einer belegten Absicht.",
-                "what_is_open": "Offen bleiben der belastbar gesicherte Tathergang, die Täterschaft, die Motivation und die Frage, ob die Einordnung als „Klimaextremismus“ durch Ermittlungen gestützt wird."
-              },
-              "editorial_assessment": "Die Formulierung sollte als Akteurszitat klar von den berichteten Ereignissen getrennt und im Titel oder Lead stärker als Einordnung kenntlich gemacht werden.",
-              "fact_first_reframe": {
-                "title": "Fahndung nach Verdächtigem nach Vorfällen an Umspannwerken läuft",
-                "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
-                "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
-                "detail_summary": "Im Bericht werden Vorfälle an deutschen Umspannwerken und eine laufende Fahndung beschrieben. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Aussage ist als politische Deutung des Ministers erkennbar und nicht als amtlich festgestellter Sachverhalt belegt. Zusätzlich nennt die Quelle einen SEK-Einsatz am Hambacher Forst sowie weitere Funde und Vorfälle in Brandenburg, Nordrhein-Westfalen und Sachsen. Die Berichterstattung verweist auf kritische Infrastruktur und auf mögliche Sicherheitsfolgen. Die Tatmotivation, die Täterschaft und der endgültige Ermittlungsstand bleiben offen."
-              },
-              "self_frame_warning": true,
-              "source_comparison": {
-                "sufficient_basis": false,
-                "finding": ""
-              }
-            },
-            "media_analysis_version": "1.0",
-            "media_checked_at": "2026-09-05T09:32:59.604Z",
-            "media_trigger_fingerprint": "29e466609bb35860bd3d3d86590bfe9e3b720f9ec8de85d16c5ae4630483a763"
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "media_impact_backfill",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-1",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "Bundesinnenminister Dobrindt bezeichnet die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\".",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "1c7dc01730b8922f64ef",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "52354455b03b2d3fef4a",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-2",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "Die Fahndung nach einem verdächtigen Mann läuft weiter, nachdem die Polizei ihn bei einem SEK-Einsatz am Hambacher Forst nicht gefunden hat.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "392009238bfc4e2cf945",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-                  "excerpt_hash": "a1f7bfe473e9e6c51828",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-3",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "In Brandenburg und Nordrhein-Westfalen wurden am Dienstag gezielt die Stromversorgung gestört; am Donnerstagabend fand man ähnliche Gegenstände bei Dormagen.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "53bd1c44999f9c50e13f",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-                  "excerpt_hash": "ac6be1d44520ad045ebb",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-4",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "Auch in Sachsen wurden an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt, und es gab dort ein Bekennerschreiben.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "9f4853f30707628fd94a",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "c712525df3c79eb862f6",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            },
-            {
-              "claim_id": "wt-aaa7e98d9c993988-v1-claim-5",
-              "story_id": "wt-aaa7e98d9c993988",
-              "claim": "Laut den Berichten geht die Polizei derzeit von einem Einzeltäter aus.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-                  "excerpt_hash": "49973ab03a408f460bef",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-                  "excerpt_hash": "1c7dc01730b8922f64ef",
-                  "checked_at": "2026-09-05T06:37:35.694Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-05T06:37:35.694Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-              "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-              "content_hash": "151e54943f2f40e4411b21eafe8ca35dd989429c9930f29c1b06dba72cd27220"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-05T06:37:35.694Z",
-          "source_count": 2
-        },
-        {
-          "version": 2,
-          "published_at": "2026-09-05T09:32:59.604Z",
-          "source_count": 2,
-          "change": "media_impact_added"
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-0ce4b0298e131c8c-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "0ce4b0298e131c8c3606ff97fc1b06fd5b363da91f3d6d06b882dc5e2960770a"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-47be1bb91812ee45-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "47be1bb91812ee45d475b8f5950f795cf9c610a19d5c35171cd8724ee0697341"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-eacd2cd6006536ea-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "eacd2cd6006536eaa33e3fe4cac218f786a69e448d9b82c23c2fef8add92d363"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-06841ebe422370b3-source.png",
-          "sha256": "06841ebe422370b3f67b520653849a009a365c08db2fea8241280436863e06a4",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-4-contextual",
-          "generated_at": "2026-09-05T07:37:29.993Z"
-        },
-        "fingerprint": "8455cee35d5f58cb3c6725519a85caf9d6693754527aa498e1a1ad880406cbfb",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-05T08:08:03.523Z",
-        "status": "generated"
-      }
     },
     {
       "story_id": "wt-8719fd142c6ac6b1",
@@ -106265,5 +106876,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T09:32:59.604Z"
+  "public_updated_at": "2026-09-05T09:44:12.170Z"
 }
