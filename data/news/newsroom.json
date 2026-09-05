@@ -349095,7 +349095,195 @@
         "AI_SOURCE_SUMMARY_LENGTH"
       ],
       "rationale": "Die Quelle liefert einen konkreten regionalen Preissprung mit direktem Ausweichanreiz über die Grenze. Das ist für Haushalte und Grenzverkehr materiell, aber nur einseitig belegt und daher als laufende Entwicklung einzuordnen."
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-456d531f3d66c4032ebc",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-791815da9c1316d4332f",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-38011391daff71050742",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-4c478ed30911a06dbc6f",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-015e477e516f3f8b",
+      "event_id": "event-b5cad91fc7800c5ee413",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "euronews-en",
+          "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+          "code": "SOURCE_URL_INVALID",
+          "detail": "Die Quellen-URL ist nicht als öffentliche HTTPS-Adresse prüfbar."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-a5874ae28ed5533f",
+      "event_id": "event-53de10df4f68e93ec96a",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Die neue Ticker-Fassung ergänzt die laufende Fahndung um veröffentlichte Fotos, Ortsangaben und weitere Funde. Das ist für einen fortlaufenden Sicherheits- und Infrastrukturfall materiell, bleibt aber nur auf einer journalistischen Quelle gestützt."
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-d7a0af1afc831caf",
+      "event_id": "event-0fef8df3a32c15bcde8d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegenden Quellen wiederholen im Kern nur die bereits veröffentlichte Ankündigung des Kiew-Besuchs; keine materiell neue, belastbar zusätzliche Entwicklung."
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-03c6bacdda808696",
+      "event_id": "event-5fed0f90ee4fb60ffd0d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Kernpunkte sind bereits in der Vorfassung enthalten; die neue Quelle vertieft nur dieselbe Fahndungs- und Fundlage ohne eigenständig neue, materiell belegte Entwicklung."
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-00fccb632042b492",
+      "event_id": "event-e4876e29370bc0f63efa",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte DW-Meldung wiederholt im Kern bereits veröffentlichte Fahndungs- und Bekennerschreiben-Informationen, ohne substanziell neue, materiale Entwicklung gegenüber dem bestehenden Stand zu liefern."
+    },
+    {
+      "at": "2026-09-05T19:36:18.282Z",
+      "story_id": "wt-68b6674db060e89b",
+      "event_id": "event-eb3a46e622601f11b539",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Quelle bestätigt den bereits veröffentlichten Stand zu hohen Spritpreisen am Bodensee und Tankausweichverkehr nach Vorarlberg, bringt aber keine substanziell neue Entwicklung gegenüber der bestehenden Meldung."
     }
   ],
-  "updated_at": "2026-09-05T19:21:39.490Z"
+  "updated_at": "2026-09-05T19:36:18.282Z"
 }
