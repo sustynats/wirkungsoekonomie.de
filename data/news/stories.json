@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T14:13:45.805Z",
+  "updated_at": "2026-09-05T14:23:17.291Z",
   "stories": [
     {
       "story_id": "wt-3d901522efd87e2d",
@@ -2401,7 +2401,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -2411,7 +2411,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "2c4c71dbe59e88f96ef78d752df90d3b56ae3903f2470c677efa89f452c75f56",
           "issue_codes": [],
           "warning_codes": []
@@ -3566,7 +3566,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T14:13:45.805Z"
+          "checked_at": "2026-09-05T14:23:17.291Z"
         }
       ],
       "content_hash": "186b563d99377d40420b0575c5737917a92e27ffcf54c718a974e7843a3833a5",
@@ -3576,9 +3576,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T14:13:45.805Z",
+      "updated_at": "2026-09-05T14:23:17.291Z",
       "event_first_seen_at": "2026-09-05T13:54:59.667Z",
       "event_detected_at": "2026-09-05T13:54:59.667Z",
       "event_id": "event-b21464d90d3e9f0cc6bc",
@@ -3608,20 +3608,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 75.34675,
+        "source_age_minutes": 84.87151666666666,
         "detection_delay_minutes": 56.577783333333336,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 18.768966666666667,
+        "queue_age_minutes": 28.293733333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 84,
+        "news_freshness_score": 82,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T14:13:45.805Z",
+        "checked_at": "2026-09-05T14:23:17.291Z",
         "fingerprint": "47208476c559e1164d1c8b36cf3333025916029729609e8a487f417cf9f6b6de",
         "issue_codes": [],
         "warning_codes": []
@@ -4059,7 +4059,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T14:13:45.805Z"
+          "checked_at": "2026-09-05T14:23:17.291Z"
         }
       ],
       "content_hash": "502df13e3e78d05ba3a19a68f54d96b9849c629ecdfb78f7ef8bd23e27733075",
@@ -4069,9 +4069,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T14:13:45.805Z",
+      "updated_at": "2026-09-05T14:23:17.291Z",
       "event_first_seen_at": "2026-09-05T13:54:59.667Z",
       "event_detected_at": "2026-09-05T13:54:59.667Z",
       "event_id": "event-fddc22a38dea53bc5372",
@@ -4099,20 +4099,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 90.76341666666667,
+        "source_age_minutes": 100.28818333333334,
         "detection_delay_minutes": 71.99445,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 18.768966666666667,
+        "queue_age_minutes": 28.293733333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 81,
+        "news_freshness_score": 79,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T14:13:45.805Z",
+        "checked_at": "2026-09-05T14:23:17.291Z",
         "fingerprint": "dc5f5c3f8dc9eead888d40d7a96ccb8c9a5d3bf49041fe25133e3fe597f94041",
         "issue_codes": [],
         "warning_codes": []
@@ -8413,7 +8413,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "48bad01993b1585a02bf4145fc83642d90c69e61d8ee25edebeb007ca5862f12",
           "issue_codes": [
             "SOURCE_URL_INVALID"
@@ -15224,7 +15224,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T14:13:45.805Z"
+          "checked_at": "2026-09-05T14:23:17.291Z"
         }
       ],
       "content_hash": "75c9dc6b20fdf1b7fb2c69991baf4b3723ba2c4e0960fbe53e135c1059edfcef",
@@ -15234,9 +15234,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T14:13:45.805Z",
+      "updated_at": "2026-09-05T14:23:17.291Z",
       "event_first_seen_at": "2026-09-05T03:21:33.562Z",
       "event_detected_at": "2026-09-05T03:21:33.562Z",
       "event_id": "event-652b9eb970ebbdf9d49f",
@@ -15267,20 +15267,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 115.98008333333334,
+        "source_age_minutes": 125.50485,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 652.20405,
+        "queue_age_minutes": 661.7288166666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 76,
+        "news_freshness_score": 74,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T14:13:45.805Z",
+        "checked_at": "2026-09-05T14:23:17.291Z",
         "fingerprint": "379056dc6bc98c4ff177f65ed2aaaf28f90e2c30d0fca5da629fb047e5d2d1e7",
         "issue_codes": [],
         "warning_codes": []
@@ -15378,7 +15378,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T14:13:45.805Z"
+          "checked_at": "2026-09-05T14:23:17.291Z"
         },
         {
           "claim_id": "wt-47a5ce1a57b5588c-claim-02",
@@ -15398,7 +15398,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T14:13:45.805Z"
+          "checked_at": "2026-09-05T14:23:17.291Z"
         }
       ],
       "content_hash": "6ba6b6dc133d2f3f3cf67180f3def1eb55ad8da12baadccbfd0e06e2f55c4292",
@@ -15408,9 +15408,9 @@
       "quality_retry_count": 1,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T14:13:45.805Z",
+      "updated_at": "2026-09-05T14:23:17.291Z",
       "event_first_seen_at": "2026-09-05T09:31:48.966Z",
       "event_detected_at": "2026-09-05T09:31:48.966Z",
       "event_id": "event-f351335aa873a1004e34",
@@ -15440,20 +15440,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9.663416666666667,
+        "source_age_minutes": 19.188183333333335,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 281.94731666666667,
+        "queue_age_minutes": 291.47208333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 96,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T14:13:45.805Z",
+        "checked_at": "2026-09-05T14:23:17.291Z",
         "fingerprint": "f25534f68dae40729d78441311c04d32232882a28eb3c737c72de57651e3714d",
         "issue_codes": [],
         "warning_codes": []
@@ -16171,7 +16171,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -16181,7 +16181,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
           "issue_codes": [],
           "warning_codes": []
@@ -16637,7 +16637,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -16647,7 +16647,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
           "issue_codes": [],
           "warning_codes": []
@@ -17693,7 +17693,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -17703,7 +17703,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "090608b129e6846c5d15d916b3aaf0da5765a18c3b8576cccb9fffecc6a56ad7",
           "issue_codes": [],
           "warning_codes": []
@@ -18737,7 +18737,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -18747,7 +18747,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "a94e42a10fee0ca4358313d0c1433a5e135b9eccdc47643442950d15c3b0784b",
           "issue_codes": [],
           "warning_codes": []
@@ -19265,7 +19265,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -19275,7 +19275,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "0f205e02e54b70bd57a58005025f03add2a0a0c7623245e939bc1001f3ad7fc7",
           "issue_codes": [],
           "warning_codes": []
@@ -20949,7 +20949,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -20959,7 +20959,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "c247733d9976b5b0c1d4fe80fbb8dd21e1deedcf6f0f639185da50dd68f182d8",
           "issue_codes": [],
           "warning_codes": []
@@ -24118,7 +24118,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -24128,7 +24128,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "ada66b466456cb1e74dd7982660701e2a556891d1d517ee29160fc6799b78c38",
           "issue_codes": [],
           "warning_codes": []
@@ -26754,7 +26754,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -26764,7 +26764,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "bba51dd5bf563d0eaa49de0b3dc3aa2a90b51c3526165b3cdbe3c833bf767d34",
           "issue_codes": [],
           "warning_codes": []
@@ -33613,7 +33613,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -33623,7 +33623,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "8cbb4311fa9f589f1203fc0556130f1bac19ee292dc31d40ae0f3addbfb850a9",
           "issue_codes": [],
           "warning_codes": []
@@ -34785,7 +34785,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T14:13:45.805Z"
+          "checked_at": "2026-09-05T14:23:17.291Z"
         },
         {
           "claim_id": "wt-19ad19be6d5e7cf2-claim-02",
@@ -34805,7 +34805,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T14:13:45.805Z"
+          "checked_at": "2026-09-05T14:23:17.291Z"
         }
       ],
       "content_hash": "431b68d714bece77a3332961f1fb4cdb377fd0c2fa8bc577945640612b5cc931",
@@ -34815,9 +34815,9 @@
       "quality_retry_count": 0,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T14:13:45.805Z",
+      "updated_at": "2026-09-05T14:23:17.291Z",
       "event_first_seen_at": "2026-09-05T07:21:32.324Z",
       "event_detected_at": "2026-09-05T07:21:32.324Z",
       "event_id": "event-47b63689127b7d9ed5dd",
@@ -34846,20 +34846,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 388.74675,
+        "source_age_minutes": 398.2715166666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 412.22468333333336,
+        "queue_age_minutes": 421.74945,
         "target_publication_minutes": 120,
-        "news_freshness_score": 19,
+        "news_freshness_score": 17,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T14:13:45.805Z",
+        "checked_at": "2026-09-05T14:23:17.291Z",
         "fingerprint": "d0b2bef0f574e1d61b24987360a3f7b385b265e250c41318ae4622a0ed9fba8a",
         "issue_codes": [],
         "warning_codes": []
@@ -36053,7 +36053,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -36063,7 +36063,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
           "issue_codes": [],
           "warning_codes": []
@@ -39707,7 +39707,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -39717,7 +39717,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "b77080fc28dc49ed22c2e6eed468704e8806d8a8351e880f83f2a31fb8696350",
           "issue_codes": [],
           "warning_codes": []
@@ -40714,7 +40714,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -40724,7 +40724,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "8b49fdd3757064b543977b787bfffd1334001d9fd714a026ae2123598cdc3e0b",
           "issue_codes": [],
           "warning_codes": []
@@ -41447,12 +41447,8 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 2,
         "reassessment": false,
         "fresh": true,
@@ -41461,7 +41457,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "0bb446e9fc53a58712bd9a980a6ef682e3f46ca2f315e0b8bb5aa5e6d407baa8",
           "issue_codes": [],
           "warning_codes": []
@@ -44761,11 +44757,8 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 6,
         "reassessment": false,
         "fresh": true,
@@ -44774,7 +44767,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "c58c795629c8e0cc8cd65ad7cc211920c354c2f21b270d8012e0ad5b2f35d6a6",
           "issue_codes": [],
           "warning_codes": [
@@ -47660,7 +47653,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -47670,7 +47663,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "a4a1aa47f4fa7294de838044190ad1cfc64cd840dd088522df173c63655c67a4",
           "issue_codes": [],
           "warning_codes": []
@@ -48769,7 +48762,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -48779,7 +48772,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "7b17a7b748d9ee3bc2092e861fd04826f6317aa440137c83e0ebcc60582ad091",
           "issue_codes": [],
           "warning_codes": []
@@ -50077,7 +50070,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -50087,7 +50080,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "0edf8a2f127cd5fce8d8135d95613f7005cd7732202d9b790ba4d8c009971279",
           "issue_codes": [],
           "warning_codes": []
@@ -51158,7 +51151,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -51168,7 +51161,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "3e525a90021fc16764fdd5de14d5975794e031b3860545e083397059c1ff87f4",
           "issue_codes": [],
           "warning_codes": []
@@ -52997,7 +52990,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -53007,7 +53000,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -53620,7 +53613,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -53630,7 +53623,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "7a4e3b4d3b023739dcb0220550584ff732a89bce1aebfdc7f2711100160c30f8",
           "issue_codes": [],
           "warning_codes": []
@@ -55761,7 +55754,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -55771,7 +55764,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "28a1e68de467ed557ab667e1b80a7a5584aac8211817c45e6f76a1c344f7628a",
           "issue_codes": [],
           "warning_codes": []
@@ -76357,7 +76350,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -76367,7 +76360,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "371951dda8885071e92902c04fd0deb7c36df7ae5adcfb2c65a7a1ebdc9e6256",
           "issue_codes": [],
           "warning_codes": []
@@ -80702,7 +80695,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -80712,7 +80705,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T14:13:45.805Z",
+          "checked_at": "2026-09-05T14:23:17.291Z",
           "fingerprint": "fc6394929dd9caf6a77ab1a8265c01d7c1fddece2fc2a73b24676eceaeed40eb",
           "issue_codes": [],
           "warning_codes": []

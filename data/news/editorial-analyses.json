@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-05T14:17:38.262Z",
+  "updated_at": "2026-09-05T14:23:20.689Z",
   "candidates": [
     {
       "story_id": "wt-3d901522efd87e2d",
@@ -70,8 +70,8 @@
         "reasons": []
       },
       "fingerprint": "5f3f1ea154a0a471ef080877764d397f3a7d07bb0b9cda59e9072552d9854a62",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
       "story_id": "wt-aabe8c0430bf8f84",
@@ -2057,6 +2057,963 @@
               "evidence_level": "medium",
               "data_status": "scenario",
               "uncertainty": "Abhängig von Umsetzung und Reaktion der Konfliktparteien; kein Beleg für eingetretene Veränderung.",
+              "date": "2026-09-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-1b3323ad407f",
+      "story_id": "wt-6c26e428b894e714",
+      "related_story_ids": [
+        "wt-6c26e428b894e714",
+        "wt-4fb94d2cebfca746",
+        "wt-60f4e4d7d43fad99",
+        "wt-33e396f2be1a3a1f",
+        "wt-7b385f58748f3d32",
+        "wt-f3d585eac14dec76",
+        "wt-f7d7115a53ff2c2f",
+        "wt-c053f94b1bbc57bd",
+        "wt-00fccb632042b492",
+        "wt-a5874ae28ed5533f",
+        "wt-03c6bacdda808696",
+        "wt-a6f6c9c60011b50c",
+        "wt-cb1584ee4d9e6a43",
+        "wt-1fbb056ccaaf351d",
+        "wt-5547189d2645384a",
+        "wt-7ae0b9f22404b684",
+        "wt-b9487671699d6c9b",
+        "wt-9812656e38b0d665"
+      ],
+      "related_case_id": "case-4dc00cde414b35",
+      "slug": "sprengsatze-an-stromtrassen-in-sachsen-was-der-fund-fur-netzschutz-und-resilienz-b-1b3323",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+      "method_version": "1.0",
+      "source_fingerprint": "5f3f1ea154a0a471ef080877764d397f3a7d07bb0b9cda59e9072552d9854a62",
+      "candidate_score": 77,
+      "analysis_gain_score": 53,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 13,
+        "primary_source_count": 0,
+        "cited_claim_count": 81,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T14:23:20.689Z",
+      "updated_at": "2026-09-05T14:23:20.689Z",
+      "version": 1,
+      "editorial_question": "Was bedeutet der Fund mehrerer Sprengsätze an Stromtrassen in Sachsen für die Resilienz kritischer Infrastruktur – und wo endet die belegte Wirkungslage?",
+      "analysis_type": "case_analysis",
+      "title": "Sprengsätze an Stromtrassen in Sachsen: Was der Fund für Netzschutz und Resilienz bedeutet",
+      "subtitle": "Zwölf Vorrichtungen, laufende Suche, offene Hintergründe: Die Lage ist sicherheitsrelevant, aber der Wirkungsbefund bleibt vorläufig.",
+      "teaser": "In Ostsachsen sucht die Polizei weiter nach Hinweisen, nachdem zwölf Sprengsätze an Stromtrassen entdeckt wurden. Was folgt daraus systemisch?",
+      "seo_description": "Zwölf Sprengsätze an Stromtrassen in Sachsen: Wie der Fund Netzschutz, Resilienz und öffentliche Sicherheit berührt – und was offen bleibt.",
+      "additional_value": "Die Analyse ordnet den Fall nicht nur als Sicherheitsmeldung ein, sondern als Belastungstest für kritische Energieinfrastruktur, staatliche Schutzfähigkeit und Vertrauen in die Versorgungssicherheit. Sie trennt dabei strikt zwischen belegtem Fund, laufender Fahndung und tatsächlicher Wirkung auf das System.",
+      "research_summary": "Die vorliegenden Meldungen berichten übereinstimmend, dass in Ostsachsen zwölf Sprengsätze beziehungsweise Sprengvorrichtungen an Stromtrassen gefunden wurden. Die Polizei setzt die Suche fort und bittet um Hinweise aus der Bevölkerung; nach einer Meldung konnten Spezialisten die Vorrichtungen entschärfen. Parallel liegen mehrere Berichte zu ähnlichen Vorfällen an Umspannwerken in Dormagen vor, darunter ein verdächtiger Gegenstand, eine polizeiliche Einordnung als Sabotagedelikt und eine Fahndung nach einem Mann aus Gevelsberg. Für Sachsen selbst nennen die Quellen weder Tatverdächtige noch Motiv oder einen bestätigten Zusammenhang mit anderen Fällen. Die Evidenz trägt deshalb eine Analyse von Wirkungsrisiken und Resilienzfolgen, aber keinen Nachweis einer bereits eingetretenen Versorgungsstörung.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Fund an Stromtrassen, Fahndung läuft weiter",
+          "paragraphs": [
+            "Die Nachricht ist zunächst schlicht: In Ostsachsen hat die Polizei zwölf Sprengsätze oder Sprengvorrichtungen an Stromtrassen gefunden. Die Suche in der Region läuft weiter, und die Ermittler bitten die Bevölkerung um Hinweise. Eine weitere Meldung ergänzt, dass Spezialisten die Vorrichtungen entschärfen konnten. Mehr belastbare Details liefern die Quellen für diesen Fall nicht.",
+            "Gerade diese Knappheit ist journalistisch relevant. Denn zwischen einem Fund an kritischer Infrastruktur und einer tatsächlich eingetretenen Störung liegt ein großer Unterschied. Die Quellen belegen einen sicherheitsrelevanten Vorfall und laufende Ermittlungsarbeit, aber keine ausgefallenen Leitungen, keine bestätigte Unterbrechung der Versorgung und keine gesicherten Täterangaben."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "System: Warum ein Fund an Leitungen mehr ist als ein Einzelfall",
+          "paragraphs": [
+            "Stromtrassen gehören zu jenen Infrastrukturen, bei denen ein lokaler Angriff über den unmittelbaren Ort hinaus wirken kann. Schon die bloße Gefährdung kann Schutzaufwand auslösen, Routinen verändern und zusätzliche Kräfte binden. In der Wirkungsökonomie wäre das zunächst kein Wirkungsnachweis, sondern ein Wirkungspotenzial: Ein materieller Angriff auf kritische Infrastruktur eröffnet Kaskaden, muss sie aber nicht bereits ausgelöst haben.",
+            "Der zusätzliche systemische Zusammenhang liegt deshalb in der Schutzfunktion des Staates und der Netzbetreiber. Wird an Leitungen oder Umspannwerken manipuliert, verschiebt sich Aufmerksamkeit von Betrieb und Wartung auf Abwehr, Spurensicherung und Fahndung. Das ist ein Zustand, der Resilienz nicht automatisch zerstört, aber kurzfristig unter Druck setzt."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Drei Perspektiven auf denselben Befund",
+          "paragraphs": [
+            "Für den Referenzrahmen Mensch ist der Fall vor allem relevant, weil kritische Strominfrastruktur viele Haushalte, Betriebe und Einsatzsysteme indirekt betrifft. Die Quellen nennen keine Versorgungsunterbrechung, also auch keinen belegten Schaden für Verbraucherinnen und Verbraucher. Dennoch ist die Nähe zum Alltagsleben groß: Wer Stromleitungen angreift, greift einen zentralen Versorgungspfad an, nicht nur ein technisches Objekt.",
+            "Für den Referenzrahmen Demokratie zählt die Schutzfähigkeit des Staates. Wenn Infrastrukturzielorte unter Druck geraten, ist das eine Prüfung für öffentliche Sicherheit, Ermittlungsfähigkeit und Krisenkommunikation. Für den Referenzrahmen Planet lässt sich aus dem Material nichts Direktes ableiten; es gibt keine Hinweise auf Klima-, Emissions- oder Umwelteffekte. Der Nachhaltigkeitsbezug bleibt damit abstrakt und systemisch, nicht faktisch-ökologisch."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Was hier Wirkung ist – und was noch nicht",
+          "paragraphs": [
+            "Die erste Ordnung ist der Fund selbst: eine sicherheitsrelevante Lage an Stromtrassen, bestätigt durch mehrere journalistische Meldungen. Die zweite Ordnung ist die Reaktion: Polizeisuche, Spurensicherung, Bitte um Hinweise, Entschärfung durch Spezialisten. Diese Reaktion ist belegte Folge des Vorfalls, aber noch keine gesellschaftliche Gesamtwirkung.",
+            "Eine dritte Ordnung wäre die strukturelle Veränderung: strengere Sicherungsroutinen, mehr Kontrollen, höhere Kosten, möglicherweise auch veränderte Zuständigkeiten. Genau hier liegt ein plausibles Wirkungspotenzial, aber kein Nachweis. Die Quellen lassen offen, ob es bereits zu dauerhaften Anpassungen gekommen ist. Deshalb wäre es zu stark, schon jetzt von Transformationswirkung zu sprechen."
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Kurzfristig belastet, langfristig möglicherweise geschärft",
+          "paragraphs": [
+            "Resilienz bedeutet nicht nur Widerstand gegen Störung, sondern auch Lern- und Anpassungsfähigkeit. Ein Fund von Sprengsätzen an Stromtrassen belastet die Resilienz kurzfristig, weil Schutz, Fahndung und Lagebewertung aufgerufen werden. Zugleich kann genau diese Reaktion zu besserer Absicherung führen. Beide Aussagen können nebeneinander stehen, ohne sich zu widersprechen.",
+            "Entscheidend ist die Trennung zwischen Belastung und Verbesserung. Belegt ist der Belastungsanlass: ein Fund an kritischer Infrastruktur. Nicht belegt ist, dass daraus bereits eine robustere Netzinfrastruktur geworden wäre. Die Analyse muss deshalb die mögliche Stärkung der Resilienz als Folgeoffenheit behandeln, nicht als eingetretene Wirkung."
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten: Der Preis liegt nicht nur am Fundort",
+          "paragraphs": [
+            "Bei kritischer Infrastruktur entstehen Externalitäten oft dort, wo der eigentliche Vorfall nicht stattfindet: in Polizeiarbeit, Bereitschaftsstrukturen, Sicherheitskonzepten und im Zeitaufwand von Betreibern. Ein solcher Vorfall bindet öffentliche Ressourcen, selbst wenn er am Ende ohne Versorgungsausfall bleibt. Das ist ein materieller Zusatzaufwand, der aus dem Vorfall heraus entsteht.",
+            "Die Quellen tragen aber keine Zahlen zu Einsatzstunden, Kosten oder Folgeschäden. Darum lässt sich die Belastung nur qualitativ beschreiben. Für eine belastbare Wirkungsbewertung wären Angaben zu Ausfällen, Sperrungen, Netzzustand oder Schutzmaßnahmen nötig. Ohne das bleibt es bei einem plausiblen, aber nicht quantifizierbaren Externalitätenrisiko."
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer trägt die Last, wenn Infrastruktur bedroht wird?",
+          "paragraphs": [
+            "Verteilungseffekte zeigen sich bei solcher Lage oft asymmetrisch. Direkt betroffen sind zunächst Polizei, Ermittler, Spezialisten und Betreiber. Indirekt können Haushalte, Beschäftigte und Unternehmen betroffen sein, falls Schutzmaßnahmen, Sperrungen oder Störungen folgen. Das Material nennt solche Folgen im Sachsen-Fall jedoch nicht ausdrücklich.",
+            "Gerade deshalb ist Vorsicht geboten: Reichweite ist nicht Wirkung. Auch ein weithin berichteter Fall ist noch keine nachgewiesene Belastung für alle. In der Analyse der Wirkungsökonomie zählt erst die tatsächliche Zustandsveränderung, nicht die bloße Möglichkeit."
+          ]
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Frame- und Diskurscheck: Sicherheit zuerst, Attribution offen",
+          "paragraphs": [
+            "Die Texte rahmen den Fall vor allem als Angriff oder Anschlagsversuch auf Stromleitungen und Stromtrassen. Das ist als Beschreibung der Lage zulässig, solange es auf den Fund und die polizeiliche Einordnung bezogen bleibt. Eine Absichtszuschreibung über das belegte Maß hinaus wäre nicht gedeckt. Ebenso ist ein möglicher Zusammenhang mit anderen Fällen zwar im Material angelegt, aber nicht bewiesen.",
+            "Für die journalistische Einordnung heißt das: Sachverhalt vor Frame. Zuerst steht der Fund, dann die polizeiliche Suche, dann erst die Deutung als Angriff auf kritische Infrastruktur. Ein Resonanzrisiko für Öffentlichkeit und Betreiber ist naheliegend, aber es ist nicht dasselbe wie eingetretene Wirkung."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was die Quellen nicht hergeben",
+          "paragraphs": [
+            "Die größte Unsicherheit betrifft Motiv, Täter, Zusammenhang zu anderen Fällen und das Ausmaß möglicher Gefährdung. Die Meldungen nennen keine gesicherten Hintergründe. Für Sachsen ist außerdem offen, ob außer dem Fund und der Entschärfung weitere unmittelbare Folgen vorliegen. Genau diese Lücken verhindern ein hartes Urteil über Schadenshöhe oder Kausalität.",
+            "Für die WÖK-Analyse ist das kein Mangel, sondern ein Befund: Wirkung lässt sich hier nur als Risiko- und Potenzialraum beschreiben. Wer mehr behauptet, als die Quellen tragen, würde aus einem Sicherheitsereignis vorschnell einen Wirkungsbeweis machen. Das wäre methodisch falsch."
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Lage weiter prüfen lässt",
+          "paragraphs": [
+            "Wichtig wären als Nächstes belastbare Angaben zu weiteren Funden, zu einer möglichen Tatserie, zu konkreten Schutzmaßnahmen und zu etwaigen Auswirkungen auf den Netzbetrieb. Auch offizielle Angaben zur Einordnung der Vorrichtungen wären relevant, falls sie die Lage präzisieren. Derzeit liegt das Material jedoch nur als journalistischer Zwischenstand vor.",
+            "Beobachtbar wäre eine Zustandsveränderung erst dann, wenn etwa Leitungen ausfallen, Schutzkonzepte dauerhaft verschärft werden oder Ermittlungen zu einem belastbaren Zusammenhang führen. Bis dahin bleibt die Bewertung bewusst vorsichtig."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Ein sicherheitsrelevanter Zwischenstand mit offenem Wirkpfad",
+          "paragraphs": [
+            "Der Fall zeigt vor allem eines: Kritische Energieinfrastruktur ist verwundbar genug, dass schon der Fund von Sprengsätzen einen sofortigen Sicherheits- und Ermittlungsmodus auslöst. Das ist systemisch bedeutsam, weil hier nicht nur ein Objekt betroffen ist, sondern ein zentraler Versorgungspfad, der für Alltag, Wirtschaft und staatliche Funktionsfähigkeit wichtig ist.",
+            "Der zusätzliche Nutzen der WÖK-Perspektive liegt darin, den Fall nicht mit Wirkung zu verwechseln. Belegt ist ein Vorfall mit hohem Schutz- und Aufmerksamkeitsbedarf. Belegt ist auch eine polizeiliche Reaktion. Nicht belegt ist eine Versorgungskrise, nicht belegt ist eine strukturelle Transformation, und nicht belegt ist ein gesicherter Täterhintergrund. Genau diese Trennung macht die Analyse belastbar: Die Lage ist ernst, der Wirkpfad ist plausibel, aber die eigentliche Wirkung auf das System bleibt vorerst offen."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "In Ostsachsen hat die Polizei zwölf Sprengsätze beziehungsweise Sprengvorrichtungen an Stromtrassen gefunden.",
+          "type": "fact",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+            "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die genaue technische Einordnung variiert in den Meldungen zwischen Sprengsätzen und Sprengvorrichtungen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Spezialisten konnten die gefundenen Vorrichtungen entschärfen.",
+          "type": "fact",
+          "source_ids": [
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Nur eine Quelle nennt die Entschärfung ausdrücklich.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Polizei setzt die Suche in der Region weiter fort und bittet um Hinweise aus der Bevölkerung.",
+          "type": "fact",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Der genaue räumliche Umfang der Suche ist in den Quellen nicht näher beschrieben.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Ein verdächtiger Gegenstand wurde an einem Umspannwerk in Dormagen gefunden.",
+          "type": "fact",
+          "source_ids": [
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Art des Gegenstands blieb zunächst offen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Polizei geht im Dormagen-Fall von einem Sabotagedelikt aus.",
+          "type": "fact",
+          "source_ids": [
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+            "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Einordnung ist polizeilich berichtet und nicht als rechtskräftige Feststellung zu verstehen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Ein Sprecher der Kölner Polizei verwies auf ein eingegangenes Bekennerschreiben als Grundlage der Einordnung im Dormagen-Fall.",
+          "type": "fact",
+          "source_ids": [
+            "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Inhalte und Authentizität des Schreibens werden in den Quellen nicht belegt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Polizei fahndet nach einem Mann aus Gevelsberg.",
+          "type": "fact",
+          "source_ids": [
+            "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Quelle nennt keinen Namen in der Zusammenfassung.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "In der Wohnung des 48-Jährigen wurden sprengstoffverdächtige Gegenstände gefunden.",
+          "type": "fact",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die genaue Bewertung der Gegenstände bleibt in der Meldung offen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Der Fall betrifft kritische Energieinfrastruktur und ist deshalb für Versorgungssicherheit und staatlichen Schutzauftrag systemisch relevant.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Systemrelevanz folgt aus der Art der betroffenen Infrastruktur, nicht aus einem belegten Ausfall.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Ein solcher Fund erzeugt Wirkungspotenzial für zusätzlichen Schutzaufwand, Ermittlungsdruck und mögliche Verunsicherung.",
+          "type": "impact_potential",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Potenzial ist kein Nachweis eingetretener Folgen; die Quellen nennen keine Kosten oder Betriebsstörungen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Kurzfristig belastet ein solcher Vorfall die Resilienz, weil Schutz, Spurensicherung und Fahndung Ressourcen binden.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die mittelbare Belastung ist plausibel, aber nicht quantifiziert und nicht als Schaden belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Es gibt in den vorliegenden Quellen keinen Beleg für eine bereits eingetretene Versorgungsstörung in Sachsen.",
+          "type": "observation",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Das ist eine Negativaussage aus der Quellenlage, kein Nachweis des sicheren Nicht-Eintritts außerhalb des Materials.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Für Motive, Täteridentität und Zusammenhang zu anderen Fällen bleibt die Quellenlage offen.",
+          "type": "observation",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d",
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Berichte nennen keine gesicherten Hintergründe oder belastbaren Konnexbeweise für Sachsen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Kommunikativ ist der Fall geeignet, Aufmerksamkeit und Resonanz auf das Thema Infrastrukturschutz zu erhöhen, ohne dass daraus bereits eine tatsächliche Wirkung folgt.",
+          "type": "impact_potential",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "evidence_level": "low",
+          "data_status": "inferred",
+          "uncertainty": "Resonanzpotenzial ist aus der Berichterstattung ableitbar, aber nicht als eingetretene öffentliche Wirkung belegt.",
+          "date": "2026-09-05"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellen nennen in Sachsen keinen bestätigten Tatverdächtigen, kein Motiv und keinen gesicherten Zusammenhang zu anderen Fällen.",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "effect_on_assessment": "Begrenzt jede harte Zurechnung, jede Serienannahme und jede Aussage über Absicht oder Steuerung."
+        },
+        {
+          "finding": "Für den Sachsen-Fall wird in den Meldungen keine Versorgungsstörung oder Netzausfall beschrieben.",
+          "source_ids": [
+            "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "effect_on_assessment": "Spricht gegen die Formulierung einer bereits eingetretenen materiellen Systemstörung."
+        },
+        {
+          "finding": "Eine Entschärfung der Vorrichtungen wird nur in einer Meldung ausdrücklich genannt.",
+          "source_ids": [
+            "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+          ],
+          "effect_on_assessment": "Die Lage ist sicherheitsrelevant, aber die Evidenz zur unmittelbaren Gefahrenbeendigung ist nur mittelstark."
+        },
+        {
+          "finding": "Die Meldungen zu Dormagen und weiteren Orten betreffen andere Fälle und belegen keinen Zusammenhang mit Sachsen.",
+          "source_ids": [
+            "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+            "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "effect_on_assessment": "Verhindert, dass aus parallelen Berichten ein gemeinsamer Wirkzusammenhang für Sachsen konstruiert wird."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Offizielle Angaben zu einer tatsächlichen Netzstörung, zu Schadensumfang oder zu längerfristigen Schutzmaßnahmen.",
+        "Belastbare Informationen zu Tatverdächtigen, Motiv und möglichem Zusammenhang mit anderen Vorfällen.",
+        "Bestätigungen der Betreiber oder Behörden, dass der Vorfall zu dauerhaften Änderungen der Sicherungsarchitektur geführt hat."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Sprengsätze an Stromtrassen in Sachsen: Was der Fund für Netzschutz und Resilienz bedeutet",
+        "recommended_summary": "Zwölf Sprengvorrichtungen an Stromtrassen, laufende Suche, offene Hintergründe: Die Lage ist sicherheitsrelevant, der Wirkpfad aber noch nicht ausgeschrieben.",
+        "recommended_meta_description": "Zwölf Sprengsätze an Stromtrassen in Sachsen: Wie der Fund Netzschutz, Resilienz und öffentliche Sicherheit berührt – und was offen bleibt."
+      },
+      "reading_time_minutes": 5,
+      "source_snapshot": [
+        {
+          "source_id": "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--angriffe-aufs-stromnetz--einsatz-in-sachsen-geht-weiter-38210826.html",
+          "published_at": "2026-09-05T07:36:46.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020817.html",
+          "published_at": "2026-09-05T07:38:13.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-38210826.html",
+          "published_at": "2026-09-05T13:26:55.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Nach Anschlägen in NRW und Brandenburg: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-16021488.html",
+          "published_at": "2026-09-05T13:58:18.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "published_at": "2026-09-04T13:58:04.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Sabotage-Versuch an Umspannwerk in Dormagen",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
+          "published_at": "2026-09-04T01:45:01.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "286bf0c30dea8a66a74bbd8d5dfedf5d68ede625df946d30e3855702488349f4",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Weiterer Sabotage-Versuch an Umspannwerk in Dormagen",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
+          "published_at": "2026-09-04T05:37:43.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weiterer Polizeieinsatz in Oldenburg",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
+          "published_at": "2026-09-04T06:00:49.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "d7801f4def8fdd306769ddd6bd105a09d7f0a59ffa7fd728d9710a75e1761bf6",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Offenbar erneut Sabotagedelikt an Umspannwerk - diesmal in Dormagen",
+          "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
+          "published_at": "2026-09-04T02:12:48.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Angriffe auf Stromnetz: Polizei geht von Sabotage an Umspannwerk in Dormagen aus",
+          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
+          "published_at": "2026-09-04T00:39:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ae86d702248f90992c1d48397e9a7358de693529723a21af96a6147addaada60",
+          "registry_source_id": "spiegel-schlagzeilen",
+          "publisher_id": "spiegel",
+          "publisher": "DER SPIEGEL",
+          "title": "Dormagen: Polizei geht von versuchter Sabotage an Umspannwerk aus",
+          "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
+          "published_at": "2026-09-04T01:06:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "0403695592095df852f15f84c5c6b5236b6d803d5df2eaa01d95a77d0e2a1a10",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Angriffe auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
+          "published_at": "2026-09-03T21:07:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ad7f30154775d46f2b50c48c7df7d7f964175ee53f6a73fe1daf6963a7acbe5d",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Nach Angriffen auf Stromnetz: Verdächtiger Gegenstand an Umspannwerk in Dormagen entdeckt",
+          "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
+          "published_at": "2026-09-03T21:03:08.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - weitere Polizeieinsätze in Oldenburg und Aachen",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weitere-polizeieinsaetze-in-oldenburg-und-aachen-100.html",
+          "published_at": "2026-09-04T09:17:32.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst",
+          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "8f21382ca206c2ac638a97b1107d2aa4aa20a26b3f02af32205330fa8c2ac1b5",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Polizei: Mögliche Sabotage an Umspannwerk in Dormagen",
+          "url": "https://www.zdfheute.de/politik/deutschland/umspannwerk-sabotage-dormagen-verdaechtiger-gegenstand-100.html",
+          "published_at": "2026-09-04T02:29:46.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "02e1209af9a34683c59bcc8c50426b8443647ab5cbfb2060694778258a4ece49",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Nachrichten für NRW: Sabotageversuch in Dormagen",
+          "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-umspannwerk-dormagen-sabotage-versuch-bundespraesident-buergerfest-spahn-klage-ski-aggu-100.html",
+          "published_at": "2026-09-04T04:50:24.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "05552d28b92ed39570221f63df0f2d7901c46aa4f7c18565373d448570e393b5",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Kritische Infrastruktur - Sabotageversuch an Umspannwerk in Dormagen - bundesweite Fahndung nach Tatverdächtigem",
+          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-bundesweite-fahndung-nach-tatverdaechtigem-100.html",
+          "published_at": "2026-09-04T10:29:27.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Stromnetz-Sabotage: Polizei fahndet weiter nach Verdächtigem",
+          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
+          "published_at": "2026-09-04T16:49:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Polizei fahndet weiter nach Verdächtigem",
+          "url": "https://www.tagesschau.de/inland/fahndung-sabotage-stromnetz-100.html",
+          "published_at": "2026-09-05T07:45:01.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "80c246f10722e36049de20d5ebd90360a95abbdc539be494b0302c4c0ceb129a",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
+          "published_at": "2026-09-04T18:13:49.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "34bc122b9bf74bebeafd71643d3d0ea7952826caa0d370a81e707a8b8fac1163",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
+          "published_at": "2026-09-04T18:15:11.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "641fb9a25b26f3aee7a02df887e0f1070210b4e401ec1e1147b35bbdfe15d256",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+          "published_at": "2026-09-05T09:21:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "7a90981849bb892e3da69556ce80d4355980593b98ee6c37d30011b10bfd1f4b",
+          "registry_source_id": "wiwo-schlagzeilen",
+          "publisher_id": "wirtschaftswoche",
+          "publisher": "WirtschaftsWoche",
+          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt – NRW-Verdächtiger flüchtig",
+          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
+          "published_at": "2026-09-04T18:30:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "7160b03b5718132dc117454643d3b54d80b051e9f3be8c840357c76b559f485d",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Innenminister Schuster: \"Sprengvorrichtungen\" auch in Sachsen entdeckt",
+          "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+          "published_at": "2026-09-04T18:27:06.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "36e6c54a7a64c95ec057ae0fe7d26e9a51c2972717fd7be63d6623bb5b74f5d6",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Fahndung nach Stromnetz-Sabotagen: Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-lausitz-100.html",
+          "published_at": "2026-09-05T07:02:53.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "bc9c53cb4afb763752eba8708477879213732db3db55260b87a31fc21a5c1d3f",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-sn-100.html",
+          "published_at": "2026-09-05T08:59:23.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "published_at": "2026-09-04T18:11:14.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "195138e3840809bf416a757a6d536b0c2bd9d84ed9fe4a85a3437fba9c8a8edf",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+          "published_at": "2026-09-03T16:21:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "a62afbc8f1549d06d1af899f7219ad906e90ac62bd8ebe24493b710cfa86cfc0",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Polizei prüft Bekennerschreiben nach Angriff auf Umspannwerk",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
+          "published_at": "2026-09-03T18:57:30.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+          "published_at": "2026-09-05T03:02:35.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ba04cc9fa8b43a5d575a67ceae7558fbed71cd69eff4143999cb6d804fe25ee6",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Angriffe auf Umspannwerke: Amprion-Chef will für Unternehmen mehr Befugnisse",
+          "url": "https://www.stern.de/news/angriffe-auf-umspannwerke--amprion-chef-will-fuer-unternehmen-mehr-befugnisse-38210948.html",
+          "published_at": "2026-09-05T08:57:36.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "6eb0d140544a4b87d72a5a018925c5b325dee21d75edc639c8c17175ea2bd2fc",
+          "registry_source_id": "dw-news",
+          "publisher_id": "deutsche-welle",
+          "publisher": "Deutsche Welle",
+          "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+          "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
+          "published_at": "2026-09-04T11:40:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Liveticker Strom-Sabotage: Polizei verlässt Hambacher Forst",
+          "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+          "published_at": "2026-09-04T20:58:25.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "e05aff12f1ae9294070d863f071d4eee080ab35d205d2b446a809ce34a38e841",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "Angriffe auf Umspannwerke: Polizei findet Truck von Verdächtigen am Hambacher Forst",
+          "url": "https://taz.de/Polizei-findet-Truck-des-Verdaechtigen-am-Hambacher-Forst/!6210358",
+          "published_at": "2026-09-04T16:34:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "87a85fd35481e91d473278dd554f5f37b5c88cd49634b34f46de0ec4575edb35",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
+          "url": "https://www.stern.de/news/stromversorgung--reul--polizei-stuermt-fahrzeug-von-sabotage-verdaechtigem-38210002.html",
+          "published_at": "2026-09-04T15:55:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
+          "published_at": "2026-09-04T15:44:10.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "3187d00b390be8458dae3f1af39e3bb4150df677410a9cfc22b754ccb8c28e51",
+          "registry_source_id": "hr-hessenschau",
+          "publisher_id": "hr",
+          "publisher": "hessenschau",
+          "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+          "published_at": "2026-09-03T09:36:10.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "b67de6bf0555b9eef7f2a302ab3134c970698b89af824a88c40f0c0f05737657",
+          "registry_source_id": "wdr-nachrichten",
+          "publisher_id": "wdr",
+          "publisher": "WDR",
+          "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
+          "url": "https://www1.wdr.de/nrw/bekennerschreiben-anschlag-umspannwerk-brandenburg-100.html",
+          "published_at": "2026-09-04T01:26:48.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "2e4a09c705f16510810b9505567dab853ce3a641b63549edaf04cb1a341f4869",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-sabotage-umspannwerk-stromnetz-jaenschwalde-sicherheitszentrum.html",
+          "published_at": "2026-09-03T16:30:00.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T14:23:20.689Z",
+          "source_fingerprint": "5f3f1ea154a0a471ef080877764d397f3a7d07bb0b9cda59e9072552d9854a62",
+          "title": "Sprengsätze an Stromtrassen in Sachsen: Was der Fund für Netzschutz und Resilienz bedeutet",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "In Ostsachsen hat die Polizei zwölf Sprengsätze beziehungsweise Sprengvorrichtungen an Stromtrassen gefunden.",
+              "type": "fact",
+              "source_ids": [
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+                "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+                "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5",
+                "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die genaue technische Einordnung variiert in den Meldungen zwischen Sprengsätzen und Sprengvorrichtungen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Spezialisten konnten die gefundenen Vorrichtungen entschärfen.",
+              "type": "fact",
+              "source_ids": [
+                "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Nur eine Quelle nennt die Entschärfung ausdrücklich.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Polizei setzt die Suche in der Region weiter fort und bittet um Hinweise aus der Bevölkerung.",
+              "type": "fact",
+              "source_ids": [
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+                "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+                "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Der genaue räumliche Umfang der Suche ist in den Quellen nicht näher beschrieben.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Ein verdächtiger Gegenstand wurde an einem Umspannwerk in Dormagen gefunden.",
+              "type": "fact",
+              "source_ids": [
+                "9ec4d28ed5264a0942034a682f690135b3881e2792fb5da86c5f5df7f64553a0",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Art des Gegenstands blieb zunächst offen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Polizei geht im Dormagen-Fall von einem Sabotagedelikt aus.",
+              "type": "fact",
+              "source_ids": [
+                "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9",
+                "3cb97485a73d33469391b55c671fa09c017fd4591ac18bd2c39b566b69ebcc2f"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Einordnung ist polizeilich berichtet und nicht als rechtskräftige Feststellung zu verstehen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Ein Sprecher der Kölner Polizei verwies auf ein eingegangenes Bekennerschreiben als Grundlage der Einordnung im Dormagen-Fall.",
+              "type": "fact",
+              "source_ids": [
+                "78d60db67932665fff8afb8776120b6dffc2e1f35a59bf04ddcee6b3677078b1",
+                "f9e0c79b7cbb5a72c0c88f809880a9a3185aa78af5133aad842915d68b18c8a9"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Inhalte und Authentizität des Schreibens werden in den Quellen nicht belegt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Polizei fahndet nach einem Mann aus Gevelsberg.",
+              "type": "fact",
+              "source_ids": [
+                "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Quelle nennt keinen Namen in der Zusammenfassung.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "In der Wohnung des 48-Jährigen wurden sprengstoffverdächtige Gegenstände gefunden.",
+              "type": "fact",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die genaue Bewertung der Gegenstände bleibt in der Meldung offen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Der Fall betrifft kritische Energieinfrastruktur und ist deshalb für Versorgungssicherheit und staatlichen Schutzauftrag systemisch relevant.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+                "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+                "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Systemrelevanz folgt aus der Art der betroffenen Infrastruktur, nicht aus einem belegten Ausfall.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Ein solcher Fund erzeugt Wirkungspotenzial für zusätzlichen Schutzaufwand, Ermittlungsdruck und mögliche Verunsicherung.",
+              "type": "impact_potential",
+              "source_ids": [
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+                "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Potenzial ist kein Nachweis eingetretener Folgen; die Quellen nennen keine Kosten oder Betriebsstörungen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Kurzfristig belastet ein solcher Vorfall die Resilienz, weil Schutz, Spurensicherung und Fahndung Ressourcen binden.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+                "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die mittelbare Belastung ist plausibel, aber nicht quantifiziert und nicht als Schaden belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Es gibt in den vorliegenden Quellen keinen Beleg für eine bereits eingetretene Versorgungsstörung in Sachsen.",
+              "type": "observation",
+              "source_ids": [
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+                "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+                "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Das ist eine Negativaussage aus der Quellenlage, kein Nachweis des sicheren Nicht-Eintritts außerhalb des Materials.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Für Motive, Täteridentität und Zusammenhang zu anderen Fällen bleibt die Quellenlage offen.",
+              "type": "observation",
+              "source_ids": [
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d",
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Berichte nennen keine gesicherten Hintergründe oder belastbaren Konnexbeweise für Sachsen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Kommunikativ ist der Fall geeignet, Aufmerksamkeit und Resonanz auf das Thema Infrastrukturschutz zu erhöhen, ohne dass daraus bereits eine tatsächliche Wirkung folgt.",
+              "type": "impact_potential",
+              "source_ids": [
+                "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+                "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+                "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854"
+              ],
+              "evidence_level": "low",
+              "data_status": "inferred",
+              "uncertainty": "Resonanzpotenzial ist aus der Berichterstattung ableitbar, aber nicht als eingetretene öffentliche Wirkung belegt.",
               "date": "2026-09-05"
             }
           ]
