@@ -1,7 +1,922 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T08:21:24.126Z",
+  "updated_at": "2026-09-05T08:36:15.992Z",
   "stories": [
+    {
+      "story_id": "wt-bba0a3bb9ff283b4",
+      "slug": "nach-cyberangriff-auf-berlins-verwaltung-stundenzettel-im-darknet-f283b4",
+      "title": "Nach Cyberangriff auf Berlins Verwaltung: Stundenzettel im Darknet",
+      "first_seen": "2026-09-05T08:20:00.000Z",
+      "last_updated": "2026-09-05T08:37:06.303Z",
+      "published_at": "2026-09-05T08:37:06.303Z",
+      "updated_at": "2026-09-05T08:37:06.303Z",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+          "title": "Nach Cyberangriff auf Berlins Verwaltung: Stundenzettel im Darknet",
+          "summary": "Das Ultimatum an den Berliner Senat ist abgelaufen. Nach ihrem erfolglosen Erpressungsversuch macht die Hackergruppe Rhysida die gekaperten Daten öffentlich zugänglich. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T08:20:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1a2d5697f505e5d95db84375e1c094a59b993208e3164724ba6663299f659b48",
+          "source_item_id": "b03a9314dcecada6d851049bcaaee0cef713a4a67032de662fd80b8a6cd39217",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T08:20:00.000Z",
+          "ingested_at": "2026-09-05T08:36:15.992Z",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-1",
+          "story_id": "wt-bba0a3bb9ff283b4",
+          "claim": "Das Ultimatum an den Berliner Senat ist abgelaufen, danach wurden die gekaperten Daten im Darknet öffentlich zugänglich gemacht.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "excerpt_hash": "ae6fcef72c088a592b68",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "excerpt_hash": "7bab0d04aed3b449c218",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "excerpt_hash": "9504c85e0441ce6aeaff",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T08:37:06.303Z"
+        },
+        {
+          "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-2",
+          "story_id": "wt-bba0a3bb9ff283b4",
+          "claim": "Der Berliner Senat hatte vorab erklärt, auf die Erpressung nicht einzugehen und kein Lösegeld zu zahlen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "excerpt_hash": "b2e20781ac901d78aa4f",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "excerpt_hash": "5de51b15fa8f7521d30f",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T08:37:06.303Z"
+        },
+        {
+          "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-3",
+          "story_id": "wt-bba0a3bb9ff283b4",
+          "claim": "In den veröffentlichten Daten sollen unter anderem Bauangelegenheiten, Notfallpläne, Bewerbungsverfahren, Stundenzettel und Betriebsratsunterlagen enthalten sein.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "excerpt_hash": "c2add5ff66ed9d0bfc26",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "excerpt_hash": "caaeacf0dbda9cabf6b3",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T08:37:06.303Z"
+        },
+        {
+          "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-4",
+          "story_id": "wt-bba0a3bb9ff283b4",
+          "claim": "Die Senatskanzlei teilte mit, dass die Daten von IT-Experten geprüft würden und betroffene Personen kontaktiert werden sollen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "excerpt_hash": "9c074143210898ea19fa",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T08:37:06.303Z"
+        },
+        {
+          "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-5",
+          "story_id": "wt-bba0a3bb9ff283b4",
+          "claim": "Die Erpresser forderten 30 Bitcoin, umgerechnet rund zwei Millionen Euro.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "excerpt_hash": "b2e20781ac901d78aa4f",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T08:37:06.303Z"
+        }
+      ],
+      "event_id": "event-d19b8d8749731496b454",
+      "event_first_seen_at": "2026-09-05T08:36:15.992Z",
+      "event_detected_at": "2026-09-05T08:36:15.992Z",
+      "verification_started_at": "2026-09-05T08:36:55.462Z",
+      "publish_ready_at": "2026-09-05T08:37:06.303Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-05T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Senat betroffene Personen und Unternehmen identifiziert und informiert hat.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Mitteilung oder bestätigte Benachrichtigungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-38f1d8923e28a376",
+          "announced_at": "2026-09-05T08:20:00.000Z",
+          "follow_up_date": "2026-09-12T08:37:06.303Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "e95bbf33d358896c7ba4c576dac3d69f29bdac2e5a36e4d24e6b567d0a34befa",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Quelle berichtet über den Berliner Cyberangriff und das Auslaufen eines Ultimatums an den Senat. Danach habe die Hackergruppe Rhysida die erbeuteten Daten im Darknet veröffentlicht; die Redaktion verweist auf eine laufende Prüfung durch die Senatskanzlei.\n\nGenannt werden als mögliche Inhalte unter anderem Bauangelegenheiten, Notfallpläne, Bewerbungsverfahren, Stundenzettel, Wiedereingliederungsmaßnahmen und Betriebsratsunterlagen. Außerdem heißt es, die Erpresser hätten 30 Bitcoin verlangt, und der Senat habe vorab erklärt, kein Lösegeld zu zahlen. Betroffene sollen nach Angaben der Senatskanzlei kontaktiert werden.",
+      "analysis": {
+        "story_id": "wt-bba0a3bb9ff283b4",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Nach dem Berliner Cyberangriff sollen gestohlene Daten im Darknet veröffentlicht worden sein. Der Senat lässt die Dateien prüfen und will betroffene Personen kontaktieren.",
+        "detail_summary": "Gesichert belegt ist nach der vorliegenden Quelle vor allem die Abfolge: Das Ultimatum an den Berliner Senat lief ab, danach wurden die Daten von der Hackergruppe Rhysida öffentlich zugänglich gemacht. Die Meldung nennt außerdem die zuvor geforderte Lösegeldsumme von 30 Bitcoin und verweist darauf, dass der Senat keine Zahlung leisten wollte. Inhaltlich sollen in den Dateien unter anderem Verwaltungsdokumente, Stundenzettel, Bewerbungsunterlagen und Notfallpläne liegen. Für die Betroffenen bedeutet das ein mögliches Risiko von Identitätsmissbrauch, zusätzlicher Informationsoffenlegung und administrativem Aufwand. Materiell relevant ist der Vorgang vor allem wegen der Sensibilität der veröffentlichten Verwaltungsdaten und möglicher Folgekaskaden für Beschäftigte und Verwaltung. Offen bleibt hier, wie groß der tatsächlich zugängliche Datensatz ist und welche betroffenen Personen oder Stellen bereits sicher identifiziert wurden.",
+        "why_relevant": "Der Vorgang betrifft sensible Verwaltungsdaten, mögliche Identitätsrisiken und die Reaktion einer Landesverwaltung auf Erpressung nach einem Cyberangriff.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "monitoring",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Veröffentlichung kann Beschäftigte und weitere Betroffene durch Offenlegung sensibler Verwaltungsdaten direkt betreffen."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus der Quelle ergibt sich kein direkter Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Vertraulichkeit, Verwaltungsfähigkeit und das Vertrauen in staatliche Informationssicherheit."
+        },
+        "importance": "hoch",
+        "impact_potential": "Mögliche Folgen reichen von Identitätsmissbrauch über Verwaltungsaufwand bis zu längerem Vertrauensverlust in den Schutz staatlicher Daten.",
+        "impact_risks": [
+          "Missbrauch persönlicher oder dienstlicher Daten",
+          "zusätzliche Belastung für Verwaltung und Betroffene",
+          "Vertrauensschaden bei sensiblen öffentlichen IT-Strukturen"
+        ],
+        "mechanisms": [
+          "Offenlegung interner Daten senkt die Hürde für Betrug und Identitätsdiebstahl",
+          "Prüfung und Benachrichtigung erzeugen unmittelbaren Verwaltungsaufwand",
+          "Öffentliche Kenntnis des Vorfalls kann Korrektur- und Schutzmaßnahmen beschleunigen"
+        ],
+        "first_order": [
+          "Daten werden im Darknet zugänglich",
+          "IT-Experten prüfen die veröffentlichten Dateien",
+          "Betroffene sollen kontaktiert werden"
+        ],
+        "second_order": [
+          "Möglicher Bedarf an Schutzmaßnahmen für Betroffene",
+          "Zusätzliche Arbeit für Verwaltung und Sicherheitsstellen",
+          "Anpassung interner Prozesse zur Schadensbegrenzung"
+        ],
+        "third_order": [
+          "Mögliche Verschärfung von Sicherheits- und Meldestandards",
+          "Langfristiger Vertrauensverlust oder -gewinn je nach Aufarbeitung",
+          "Signalwirkung für den Umgang mit Erpressung nach Cyberangriffen"
+        ],
+        "systemic_relevance": "Der Fall berührt die Resilienz öffentlicher IT und die Frage, wie verwundbar Verwaltungsdaten gegenüber Erpressung und Veröffentlichung sind.",
+        "transformation_potential": "Kurzfristig gering, mittelbar möglich durch strengere Sicherheits- und Reaktionsprozesse in Verwaltungen.",
+        "resilience": "Die Quelle deutet auf Reaktionsfähigkeit durch Prüfung und Benachrichtigung hin, lässt aber offen, ob dies ausreicht, um Folgen abzufedern.",
+        "side_effects": [
+          "Mehr Aufwand für interne Prüfung und Kommunikation",
+          "Potenzielle Verunsicherung bei Beschäftigten",
+          "Mögliche Fehlalarme oder unklare Zuordnungen bei der Datenprüfung"
+        ],
+        "uncertainties": [
+          "Der vollständige Umfang der veröffentlichten Daten ist offen",
+          "Die tatsächliche Verbreitung und Nutzung der Dateien ist noch unklar",
+          "Unabhängige Bestätigung aus weiteren Quellen liegt hier nicht vor"
+        ],
+        "evidence_level": "einzelquellenbasiert, aber mit mehreren Textstellen konsistent belegt",
+        "attribution": "Die Angaben stammen aus einer journalistischen Quelle; die Senatskanzlei-Aussage wird darin wiedergegeben, nicht im Originaldokument vorgelegt.",
+        "watch_next": [
+          "Offizielle Bestätigung zur Datenprüfung und Benachrichtigung",
+          "Angaben zum Umfang der betroffenen Datensätze",
+          "Mögliche Folgen für Betroffene und Verwaltungsprozesse"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Ein aktueller Cybervorfall mit Veröffentlichung sensibler Verwaltungsdaten hat unmittelbare Relevanz für Betroffene, Verwaltung und Datensicherheit."
+        },
+        "publication_recommendation": true,
+        "visuals": null
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T08:37:06.303Z",
+          "content_hash": "e95bbf33d358896c7ba4c576dac3d69f29bdac2e5a36e4d24e6b567d0a34befa",
+          "source_summary": "Die Quelle berichtet über den Berliner Cyberangriff und das Auslaufen eines Ultimatums an den Senat. Danach habe die Hackergruppe Rhysida die erbeuteten Daten im Darknet veröffentlicht; die Redaktion verweist auf eine laufende Prüfung durch die Senatskanzlei.\n\nGenannt werden als mögliche Inhalte unter anderem Bauangelegenheiten, Notfallpläne, Bewerbungsverfahren, Stundenzettel, Wiedereingliederungsmaßnahmen und Betriebsratsunterlagen. Außerdem heißt es, die Erpresser hätten 30 Bitcoin verlangt, und der Senat habe vorab erklärt, kein Lösegeld zu zahlen. Betroffene sollen nach Angaben der Senatskanzlei kontaktiert werden.",
+          "analysis": {
+            "story_id": "wt-bba0a3bb9ff283b4",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Nach dem Berliner Cyberangriff sollen gestohlene Daten im Darknet veröffentlicht worden sein. Der Senat lässt die Dateien prüfen und will betroffene Personen kontaktieren.",
+            "detail_summary": "Gesichert belegt ist nach der vorliegenden Quelle vor allem die Abfolge: Das Ultimatum an den Berliner Senat lief ab, danach wurden die Daten von der Hackergruppe Rhysida öffentlich zugänglich gemacht. Die Meldung nennt außerdem die zuvor geforderte Lösegeldsumme von 30 Bitcoin und verweist darauf, dass der Senat keine Zahlung leisten wollte. Inhaltlich sollen in den Dateien unter anderem Verwaltungsdokumente, Stundenzettel, Bewerbungsunterlagen und Notfallpläne liegen. Für die Betroffenen bedeutet das ein mögliches Risiko von Identitätsmissbrauch, zusätzlicher Informationsoffenlegung und administrativem Aufwand. Materiell relevant ist der Vorgang vor allem wegen der Sensibilität der veröffentlichten Verwaltungsdaten und möglicher Folgekaskaden für Beschäftigte und Verwaltung. Offen bleibt hier, wie groß der tatsächlich zugängliche Datensatz ist und welche betroffenen Personen oder Stellen bereits sicher identifiziert wurden.",
+            "why_relevant": "Der Vorgang betrifft sensible Verwaltungsdaten, mögliche Identitätsrisiken und die Reaktion einer Landesverwaltung auf Erpressung nach einem Cyberangriff.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die Veröffentlichung kann Beschäftigte und weitere Betroffene durch Offenlegung sensibler Verwaltungsdaten direkt betreffen."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Aus der Quelle ergibt sich kein direkter Umweltbezug."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind Vertraulichkeit, Verwaltungsfähigkeit und das Vertrauen in staatliche Informationssicherheit."
+            },
+            "importance": "hoch",
+            "impact_potential": "Mögliche Folgen reichen von Identitätsmissbrauch über Verwaltungsaufwand bis zu längerem Vertrauensverlust in den Schutz staatlicher Daten.",
+            "impact_risks": [
+              "Missbrauch persönlicher oder dienstlicher Daten",
+              "zusätzliche Belastung für Verwaltung und Betroffene",
+              "Vertrauensschaden bei sensiblen öffentlichen IT-Strukturen"
+            ],
+            "mechanisms": [
+              "Offenlegung interner Daten senkt die Hürde für Betrug und Identitätsdiebstahl",
+              "Prüfung und Benachrichtigung erzeugen unmittelbaren Verwaltungsaufwand",
+              "Öffentliche Kenntnis des Vorfalls kann Korrektur- und Schutzmaßnahmen beschleunigen"
+            ],
+            "first_order": [
+              "Daten werden im Darknet zugänglich",
+              "IT-Experten prüfen die veröffentlichten Dateien",
+              "Betroffene sollen kontaktiert werden"
+            ],
+            "second_order": [
+              "Möglicher Bedarf an Schutzmaßnahmen für Betroffene",
+              "Zusätzliche Arbeit für Verwaltung und Sicherheitsstellen",
+              "Anpassung interner Prozesse zur Schadensbegrenzung"
+            ],
+            "third_order": [
+              "Mögliche Verschärfung von Sicherheits- und Meldestandards",
+              "Langfristiger Vertrauensverlust oder -gewinn je nach Aufarbeitung",
+              "Signalwirkung für den Umgang mit Erpressung nach Cyberangriffen"
+            ],
+            "systemic_relevance": "Der Fall berührt die Resilienz öffentlicher IT und die Frage, wie verwundbar Verwaltungsdaten gegenüber Erpressung und Veröffentlichung sind.",
+            "transformation_potential": "Kurzfristig gering, mittelbar möglich durch strengere Sicherheits- und Reaktionsprozesse in Verwaltungen.",
+            "resilience": "Die Quelle deutet auf Reaktionsfähigkeit durch Prüfung und Benachrichtigung hin, lässt aber offen, ob dies ausreicht, um Folgen abzufedern.",
+            "side_effects": [
+              "Mehr Aufwand für interne Prüfung und Kommunikation",
+              "Potenzielle Verunsicherung bei Beschäftigten",
+              "Mögliche Fehlalarme oder unklare Zuordnungen bei der Datenprüfung"
+            ],
+            "uncertainties": [
+              "Der vollständige Umfang der veröffentlichten Daten ist offen",
+              "Die tatsächliche Verbreitung und Nutzung der Dateien ist noch unklar",
+              "Unabhängige Bestätigung aus weiteren Quellen liegt hier nicht vor"
+            ],
+            "evidence_level": "einzelquellenbasiert, aber mit mehreren Textstellen konsistent belegt",
+            "attribution": "Die Angaben stammen aus einer journalistischen Quelle; die Senatskanzlei-Aussage wird darin wiedergegeben, nicht im Originaldokument vorgelegt.",
+            "watch_next": [
+              "Offizielle Bestätigung zur Datenprüfung und Benachrichtigung",
+              "Angaben zum Umfang der betroffenen Datensätze",
+              "Mögliche Folgen für Betroffene und Verwaltungsprozesse"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Ein aktueller Cybervorfall mit Veröffentlichung sensibler Verwaltungsdaten hat unmittelbare Relevanz für Betroffene, Verwaltung und Datensicherheit."
+            },
+            "publication_recommendation": true,
+            "visuals": null
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-1",
+              "story_id": "wt-bba0a3bb9ff283b4",
+              "claim": "Das Ultimatum an den Berliner Senat ist abgelaufen, danach wurden die gekaperten Daten im Darknet öffentlich zugänglich gemacht.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+                  "excerpt_hash": "ae6fcef72c088a592b68",
+                  "checked_at": "2026-09-05T08:37:06.303Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+                  "excerpt_hash": "7bab0d04aed3b449c218",
+                  "checked_at": "2026-09-05T08:37:06.303Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+                  "excerpt_hash": "9504c85e0441ce6aeaff",
+                  "checked_at": "2026-09-05T08:37:06.303Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            },
+            {
+              "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-2",
+              "story_id": "wt-bba0a3bb9ff283b4",
+              "claim": "Der Berliner Senat hatte vorab erklärt, auf die Erpressung nicht einzugehen und kein Lösegeld zu zahlen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+                  "excerpt_hash": "b2e20781ac901d78aa4f",
+                  "checked_at": "2026-09-05T08:37:06.303Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+                  "excerpt_hash": "5de51b15fa8f7521d30f",
+                  "checked_at": "2026-09-05T08:37:06.303Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            },
+            {
+              "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-3",
+              "story_id": "wt-bba0a3bb9ff283b4",
+              "claim": "In den veröffentlichten Daten sollen unter anderem Bauangelegenheiten, Notfallpläne, Bewerbungsverfahren, Stundenzettel und Betriebsratsunterlagen enthalten sein.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+                  "excerpt_hash": "c2add5ff66ed9d0bfc26",
+                  "checked_at": "2026-09-05T08:37:06.303Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+                  "excerpt_hash": "caaeacf0dbda9cabf6b3",
+                  "checked_at": "2026-09-05T08:37:06.303Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            },
+            {
+              "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-4",
+              "story_id": "wt-bba0a3bb9ff283b4",
+              "claim": "Die Senatskanzlei teilte mit, dass die Daten von IT-Experten geprüft würden und betroffene Personen kontaktiert werden sollen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+                  "excerpt_hash": "9c074143210898ea19fa",
+                  "checked_at": "2026-09-05T08:37:06.303Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            },
+            {
+              "claim_id": "wt-bba0a3bb9ff283b4-v1-claim-5",
+              "story_id": "wt-bba0a3bb9ff283b4",
+              "claim": "Die Erpresser forderten 30 Bitcoin, umgerechnet rund zwei Millionen Euro.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+                  "excerpt_hash": "b2e20781ac901d78aa4f",
+                  "checked_at": "2026-09-05T08:37:06.303Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T08:37:06.303Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+              "content_hash": "1a2d5697f505e5d95db84375e1c094a59b993208e3164724ba6663299f659b48"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-05T08:37:06.303Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-d95e45b43d8ec572-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "d95e45b43d8ec5726676d5f308cbc7820ac552bbdf873b3e08120d4f81741f8c"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-1e9435421e5cf3d3-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "1e9435421e5cf3d3b1e21eb2941f537be9266ba33ec2df5cece5f69d394baee2"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-f023c92e0aa48540-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "f023c92e0aa485408195a5113f1dedb58835513ff355b90d65e24c52751ea846"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-9b3e11c83af49544-source.png",
+          "sha256": "9b3e11c83af4954413ec1c2606eb1f0d8b9094ad034436c475e7312f3c401714",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-05T08:37:24.131Z"
+        },
+        "fingerprint": "8554caf346f61f4101b814d565a80bc7b05dcbbd0e948cbee1f1a13b696d75ee",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-05T08:38:18.366Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-2d9b29e626c66bc1",
+      "slug": "unternehmenszukaufe-henkel-chef-stellt-weitere-zukaufe-in-aussicht-c66bc1",
+      "title": "Unternehmenszukäufe: Henkel-Chef stellt weitere Zukäufe in Aussicht",
+      "first_seen": "2026-09-05T08:19:57.000Z",
+      "last_updated": "2026-09-05T08:19:57.000Z",
+      "topic": [
+        "Energie",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/industrie/unternehmenszukaeufe-henkel-chef-stellt-weitere-zukaeufe-in-aussicht/100252248.html",
+          "title": "Unternehmenszukäufe: Henkel-Chef stellt weitere Zukäufe in Aussicht",
+          "summary": "Henkel prüft weitere Übernahmen für Adhesive Technologies und Consumer Brands. Hohe Energie- und Rohstoffkosten belasten zugleich.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T08:19:57.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "b01c28548b3d38a981cb2a7a26bd64aea6700058c02ef0bc38453007bee67e88",
+          "source_item_id": "cebc7f26d7fb122a1b52b20f5e7ef34fe8668daa2bb62bd84e06268ae6bdf028",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T08:19:57.000Z",
+          "ingested_at": "2026-09-05T08:36:15.992Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2d9b29e626c66bc1-claim-01",
+          "story_id": "wt-2d9b29e626c66bc1",
+          "claim": "Unternehmenszukäufe: Henkel-Chef stellt weitere Zukäufe in Aussicht: Henkel prüft weitere Übernahmen für Adhesive Technologies und Consumer Brands. Hohe Energie- und Rohstoffkosten belasten zugleich.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:36:15.992Z"
+        }
+      ],
+      "content_hash": "cb3577da912dcb19eddf2112e3ffe31c060549b8c575a5275c09aa671137e3c6",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T08:36:15.992Z",
+      "event_first_seen_at": "2026-09-05T08:36:15.992Z",
+      "event_detected_at": "2026-09-05T08:36:15.992Z",
+      "event_id": "event-f32bb2303735a2178c1a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.316533333333332,
+        "detection_delay_minutes": 16.316533333333332,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T08:36:15.992Z",
+      "rejection": {
+        "at": "2026-09-05T08:36:15.992Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-4363b4e75bff673a",
+      "slug": "ns-raubkunst-argentinisches-gericht-verfugt-ruckgabe-von-ceruti-gemalde-ff673a",
+      "title": "NS-Raubkunst - Argentinisches Gericht verfügt Rückgabe von Ceruti-Gemälde",
+      "first_seen": "2026-09-05T08:18:52.000Z",
+      "last_updated": "2026-09-05T08:18:52.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/argentinisches-gericht-verfuegt-rueckgabe-von-ceruti-gemaelde-102.html",
+          "title": "NS-Raubkunst - Argentinisches Gericht verfügt Rückgabe von Ceruti-Gemälde",
+          "summary": "Ein während des Zweiten Weltkriegs von den Nationalsozialisten geraubtes Gemälde soll an die Erbin seines einstigen jüdischen Besitzers zurückgegeben werden. Das Bild war im vergangenen Jahr in Argentinien im Haus der Tochter eines früheren NS-Funktionärs und ihres Ehemanns entdeckt worden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T08:18:52.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d338490ae269065179d96cc46ff8ae03e3247004c121da59e6cb18d0fb46698c",
+          "source_item_id": "e439c0852bef3392c1e2dfd1377fe1afbfb0fd684733d335ef9ed0c1cb4c951c",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T08:18:52.000Z",
+          "ingested_at": "2026-09-05T08:36:15.992Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4363b4e75bff673a-claim-01",
+          "story_id": "wt-4363b4e75bff673a",
+          "claim": "NS-Raubkunst - Argentinisches Gericht verfügt Rückgabe von Ceruti-Gemälde: Ein während des Zweiten Weltkriegs von den Nationalsozialisten geraubtes Gemälde soll an die Erbin seines einstigen jüdischen Besitzers zurückgegeben werden. Das Bild war im vergangenen Jahr in Argentinien im Haus der Tochter eines früheren NS-Funktionärs und ihres Ehemanns entdeckt worden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:36:15.992Z"
+        }
+      ],
+      "content_hash": "453a8b813724622dda8f48eff2d5281147d554e72de63e5eff0ca926b9381b89",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T08:36:15.992Z",
+      "event_first_seen_at": "2026-09-05T08:36:15.992Z",
+      "event_detected_at": "2026-09-05T08:36:15.992Z",
+      "event_id": "event-cd95299bdef63ed81de2",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.399866666666668,
+        "detection_delay_minutes": 17.399866666666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T08:36:15.992Z",
+      "rejection": {
+        "at": "2026-09-05T08:36:15.992Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-25060b2edeb8f1c3",
+      "slug": "basketball-mbc-holt-flood-fur-mindestens-drei-monate-b8f1c3",
+      "title": "Basketball: MBC holt Flood für mindestens drei Monate",
+      "first_seen": "2026-09-05T08:13:36.000Z",
+      "last_updated": "2026-09-05T08:13:36.000Z",
+      "topic": [
+        "Gesundheit",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen/basketball--mbc-holt-flood-fuer-mindestens-drei-monate-38210896.html",
+          "title": "Basketball: MBC holt Flood für mindestens drei Monate",
+          "summary": "Die Verletzungen zwingen den Syntainics MBC zum Handeln. Die Weißenfelser statten einen weiteren Spieler mit einem Zeitvertrag aus.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T08:13:36.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "64430ef03436440d585d22a48bd910fe68469bc1d48f717b6013da6268b06feb",
+          "source_item_id": "a4b84a8c2a2ac6e38e3acae5e5d71427492b74d7653ecc53daa6b710d2818861",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T08:13:36.000Z",
+          "ingested_at": "2026-09-05T08:36:15.992Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-25060b2edeb8f1c3-claim-01",
+          "story_id": "wt-25060b2edeb8f1c3",
+          "claim": "Basketball: MBC holt Flood für mindestens drei Monate: Die Verletzungen zwingen den Syntainics MBC zum Handeln. Die Weißenfelser statten einen weiteren Spieler mit einem Zeitvertrag aus.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T08:36:15.992Z"
+        }
+      ],
+      "content_hash": "e23ed70b6740cc01f93199594e91e850d429d51e7a78a0ae3738c569b260b01a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T08:36:15.992Z",
+      "event_first_seen_at": "2026-09-05T08:36:15.992Z",
+      "event_detected_at": "2026-09-05T08:36:15.992Z",
+      "event_id": "event-4d9558d97e83680e328d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesundheit",
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.666533333333334,
+        "detection_delay_minutes": 22.666533333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T08:36:15.992Z",
+      "rejection": {
+        "at": "2026-09-05T08:36:15.992Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-3a99a6b38ec7118a",
       "slug": "umspannwerk-suche-nach-verdachtigem-wegen-strom-sabotage-lauft-c7118a",
@@ -336,7 +1251,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T07:45:01.000Z",
-          "ingested_at": "2026-09-05T08:06:46.297Z",
+          "ingested_at": "2026-09-05T08:36:15.992Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -394,7 +1309,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T08:06:46.297Z"
+          "checked_at": "2026-09-05T08:36:15.992Z"
         },
         {
           "claim_id": "wt-19ad19be6d5e7cf2-claim-02",
@@ -414,7 +1329,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T08:06:46.297Z"
+          "checked_at": "2026-09-05T08:36:15.992Z"
         }
       ],
       "content_hash": "431b68d714bece77a3332961f1fb4cdb377fd0c2fa8bc577945640612b5cc931",
@@ -426,7 +1341,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-05T08:06:46.297Z",
+      "updated_at": "2026-09-05T08:36:15.992Z",
       "event_first_seen_at": "2026-09-05T07:21:32.324Z",
       "event_detected_at": "2026-09-05T07:21:32.324Z",
       "event_id": "event-47b63689127b7d9ed5dd",
@@ -455,20 +1370,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 21.75495,
+        "source_age_minutes": 51.24986666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.232883333333334,
+        "queue_age_minutes": 74.7278,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 89,
         "freshness_warning": null
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T08:06:46.297Z",
+      "rejected_at": "2026-09-05T08:36:15.992Z",
       "rejection": {
-        "at": "2026-09-05T08:06:46.297Z",
+        "at": "2026-09-05T08:36:15.992Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -5054,13 +5969,13 @@
           "publisher": "France 24",
           "url": "https://www.france24.com/en/europe/20260905-two-senior-reform-uk-officials-resign-as-farage-faces-fresh-foreign-donations-scandal",
           "title": "Two senior Reform UK officials resign as Farage faces fresh foreign donations scandal",
-          "summary": "Two senior officials from the hard-right Reform UK party stepped down Friday following a hidden-camera investigation that appeared to show them soliciting substantial foreign funding for party-commissioned opinion polls as well as a potential £500,000 donation from a US donor – banned under UK law.",
+          "summary": "Two senior officials from the hard-right Reform UK party stepped down Friday following a hidden-camera investigation that appeared to show them soliciting substantial foreign funding for party-commissioned opinion polls and a potential £500,000 donation from a US donor – banned under UK law.",
           "source_type": "media_rss",
           "published_at": "2026-09-05T06:30:29.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Geopolitik",
-          "content_hash": "2b2df4b6a13c37413d29d6f266073d61460a6383b1b5c46bdb17ecdef974885a",
+          "content_hash": "e05610b80b647a6ecaffec019ed48366ce5c4702744b0a5bb5cdd8b70aeaefe0",
           "source_item_id": "c43eb44d3d6c1c8896f283b8138667f43496fd685303308da2032b8e43cc9743",
           "publisher_id": "france24",
           "publisher_kind": "public_broadcasting",
@@ -5072,7 +5987,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T06:30:29.000Z",
-          "ingested_at": "2026-09-05T06:36:46.215Z",
+          "ingested_at": "2026-09-05T08:36:15.992Z",
           "provenance": {
             "origin": "publisher:france24",
             "basis": "publisher_only_origin_unverified",
@@ -5084,7 +5999,7 @@
         {
           "claim_id": "wt-2f9f6261dc82e8e8-claim-01",
           "story_id": "wt-2f9f6261dc82e8e8",
-          "claim": "Two senior Reform UK officials resign as Farage faces fresh foreign donations scandal: Two senior officials from the hard-right Reform UK party stepped down Friday following a hidden-camera investigation that appeared to show them soliciting substantial foreign funding for party-commissioned opinion polls as well as a potential £500,000 donation from a US donor – banned under UK law.",
+          "claim": "Two senior Reform UK officials resign as Farage faces fresh foreign donations scandal: Two senior officials from the hard-right Reform UK party stepped down Friday following a hidden-camera investigation that appeared to show them soliciting substantial foreign funding for party-commissioned opinion polls and a potential £500,000 donation from a US donor – banned under UK law.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "france24-en",
           "source_function": "journalistic_report",
@@ -5099,10 +6014,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:36:46.215Z"
+          "checked_at": "2026-09-05T08:36:15.992Z"
         }
       ],
-      "content_hash": "f7cbb1b5f8b547cd9c1934e905059331d16c33eb784e894dce5bba200ddd1867",
+      "content_hash": "b27339d021c0aa73c3efdb175b6082435dce92ccfca04edb741eb0f877133370",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
@@ -5111,7 +6026,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-05T06:36:46.215Z",
+      "updated_at": "2026-09-05T08:36:15.992Z",
       "event_first_seen_at": "2026-09-05T06:36:46.215Z",
       "event_detected_at": "2026-09-05T06:36:46.215Z",
       "event_id": "event-c1f41926b38ad26b480f",
@@ -5141,20 +6056,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6.2869166666666665,
+        "source_age_minutes": 125.7832,
         "detection_delay_minutes": 6.2869166666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 119.49628333333334,
         "target_publication_minutes": 60,
-        "news_freshness_score": 97,
-        "freshness_warning": null
+        "news_freshness_score": 48,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T06:36:46.215Z",
+      "rejected_at": "2026-09-05T08:36:15.992Z",
       "rejection": {
-        "at": "2026-09-05T06:36:46.215Z",
+        "at": "2026-09-05T08:36:15.992Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -11857,10 +12772,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "d373617f0947fab85573d4d37901454779e46d72245a1c705682ee26233e4f63",
-        "checked_at": "2026-09-05T05:31:58.551Z",
+        "fingerprint": "e3f4f8a813ab98f76e1705c4212a2a6631fd16dd19f8d8ea5728c33b5ce38ee1",
+        "checked_at": "2026-09-05T08:36:15.992Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T11:31:58.551Z",
+        "expires_at": "2026-09-05T14:36:15.992Z",
         "sources": [
           {
             "source_id": "tagesspiegel-home",
@@ -11886,9 +12801,40 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T03:02:35.000Z",
-            "ingested_at": "2026-09-05T05:21:05.955Z",
+            "ingested_at": "2026-09-05T08:36:15.992Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/wachsende-risiken-jedes-fuenfte-unternehmen-spuert-hybride-bedrohung/100252230.html",
+            "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
+            "summary": "Cyberangriffe, Desinformation, Spionage und Sabotage – Wirtschaftsforscher sehen wachsende Risiken. Beim Thema Schutzmaßnahmen werden sie deutlich.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T08:21:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "3653203dec206fd635cba13a04c524209e649ba57c82d05c794907d9a0073e80",
+            "source_item_id": "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T08:21:00.000Z",
+            "ingested_at": "2026-09-05T08:36:15.992Z",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
@@ -100506,5 +101452,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T08:06:46.297Z"
+  "public_updated_at": "2026-09-05T08:36:15.992Z"
 }
