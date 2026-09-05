@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T00:51:35.497Z",
+  "updated_at": "2026-09-05T01:06:42.380Z",
   "stories": [
     {
       "story_id": "wt-b6927bab34dd1c84",
@@ -3455,9 +3455,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-05T00:51:35.497Z",
-        "content_hash": "5210fa3a8e5779a1e4a94836cc65a9658e196b1b25fb3cc1a9dc2e5ea5e1d17d",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "41431d31d00fb06622d2f9cdac4ea784e8ad0a6568487d8e012273c4bf2c46e1",
+        "checked_at": "2026-09-05T01:06:42.380Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T07:06:42.380Z",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -3514,23 +3517,14 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T00:21:43.000Z",
-            "ingested_at": "2026-09-05T00:51:35.497Z",
+            "ingested_at": "2026-09-05T01:06:42.380Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-        ],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false
+        ]
       }
     },
     {
@@ -9778,7 +9772,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-05T00:51:35.497Z",
+          "ingested_at": "2026-09-05T01:06:42.380Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -9805,7 +9799,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T00:51:35.497Z"
+          "checked_at": "2026-09-05T01:06:42.380Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -9817,7 +9811,7 @@
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-05T00:51:35.497Z",
+      "updated_at": "2026-09-05T01:06:42.380Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -9847,20 +9841,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 306.57495,
+        "source_age_minutes": 321.68966666666665,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 360.1415666666667,
+        "queue_age_minutes": 375.25628333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 36,
+        "news_freshness_score": 33,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T00:51:35.497Z",
+      "rejected_at": "2026-09-05T01:06:42.380Z",
       "rejection": {
-        "at": "2026-09-05T00:51:35.497Z",
+        "at": "2026-09-05T01:06:42.380Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -50626,10 +50620,10 @@
       "deepening_checks": 2,
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "a4cc2b254dc2cb84661b86d6e475e606ca1283661be7e5f1158c7be125c5f940",
-        "checked_at": "2026-09-04T18:36:20.968Z",
+        "fingerprint": "ee18a9bd7bde03a373ba0d8fb0077775d07c461875a14d89fc56c1d3e1c9e46b",
+        "checked_at": "2026-09-05T01:06:42.380Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T00:36:20.968Z",
+        "expires_at": "2026-09-05T07:06:42.380Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -50718,6 +50712,37 @@
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T18:15:22.000Z",
             "ingested_at": "2026-09-04T18:21:48.041Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/milliardenwerte-in-europas-elektroschrott-bleiben-ungenutzt-100.html",
+            "title": "Studie - Milliardenwerte in Europas Elektroschrott bleiben ungenutzt",
+            "summary": "In Europas Elektroschrott finden sich einer Studie zufolge ungenutzte Rohstoffe im Wert von mehr als 65 Milliarden Euro.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T00:57:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1a6daca22cb5991bdddd81edfcc8d8c29021942883771ccce198c360d0e3b78d",
+            "source_item_id": "34711720363111ca98448f0e69b232048303e3f458dfc798b468f303f0d90d60",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T00:57:08.000Z",
+            "ingested_at": "2026-09-05T01:06:42.380Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
