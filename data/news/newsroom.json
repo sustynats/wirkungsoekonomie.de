@@ -334133,7 +334133,223 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die gelieferte taz-Meldung wiederholt den bereits erfassten Kern: Frist abgelaufen, Daten veröffentlicht, Senat prüft. Keine substanziell neue, materiell andere Information gegenüber der Vorgeschichte."
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-456d531f3d66c4032ebc",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-791815da9c1316d4332f",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-38011391daff71050742",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-4c478ed30911a06dbc6f",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-015e477e516f3f8b",
+      "event_id": "event-b5cad91fc7800c5ee413",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "euronews-en",
+          "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+          "code": "SOURCE_URL_INVALID",
+          "detail": "Die Quellen-URL ist nicht als öffentliche HTTPS-Adresse prüfbar."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-47a5ce1a57b5588c",
+      "event_id": "event-f351335aa873a1004e34",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur ein journalistischer Ursprung ohne unabhängige Bestätigung; die belastbaren Kernaussagen zu Tätern, Bezug und Fundlage bleiben dadurch nicht tragfähig genug."
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-b14b47324d087353",
+      "event_id": "event-72ae9f8aa4a7b9f609e9",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Der neue Bericht wiederholt im Kern bereits gemeldete Rettungen und die offene Suche nach Vermissten; gegenüber der vorhandenen Vorgeschichte ist keine materielle neue Information belegt."
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-d175d26e4635ba0a",
+      "event_id": "event-8b84ae4650626fa86f6f",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH"
+      ],
+      "rationale": "Die Teilöffnung ist bereits gemeldet, doch die Quelle ergänzt materielle Bau- und Zeitangaben zum Klima- und Quartierskonzept; keine unabhängige Bestätigung liegt vor."
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-743a635e023f5ff0",
+      "event_id": "event-e58efb35b527ea929251",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle bestätigt nur den bereits veröffentlichten Kern zu K714, Schulden und Defizit; gegenüber der bestehenden Akte ist keine substanziell neue, materiale Information belegt."
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-63b6c057c20a2143",
+      "event_id": "event-f10c5b35a0961de9aa6c",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Quelle wiederholt im Kern die bereits veröffentlichte Meldung zur Eröffnung; es kommt keine materiell neue, besser belegte Information hinzu."
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-00fccb632042b492",
+      "event_id": "event-e4876e29370bc0f63efa",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende DW-Meldung wiederholt im Kern bereits publizierte Angaben zur Fahndung und zu den Bekennerschreiben, ohne materiell neue, belastbar bestätigte Entwicklung."
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-6a7145e6dc679f95",
+      "event_id": "event-49e6ddd9913a3803a948",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Gegenüber der vorigen Kurzmeldung liefert die Quelle zusätzliche materielle Details zu Laufzeit, Fördersumme, Zielgruppe und politischer Kontroverse."
+    },
+    {
+      "at": "2026-09-05T17:21:20.943Z",
+      "story_id": "wt-d80fd849c477e2ad",
+      "event_id": "event-ef24781d9a226809238d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Quelle wiederholt im Kern die bereits veröffentlichte Meldung zu Thüringens Kostenübernahme; es fehlt eine neue materielle Entwicklung gegenüber dem bestehenden Stand."
     }
   ],
-  "updated_at": "2026-09-05T17:06:26.753Z"
+  "updated_at": "2026-09-05T17:21:20.943Z"
 }
