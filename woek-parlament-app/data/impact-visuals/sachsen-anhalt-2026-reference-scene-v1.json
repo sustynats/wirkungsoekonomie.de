@@ -1,6 +1,6 @@
 {
   "schema_version": "woek-parliament-reference-scene-1.0",
-  "contract_sha256": "b28842c505453ea134b0f960d4e559e6fecdadcfcc9949455802f7eb174c9557",
+  "contract_sha256": "b7ba77569067a039b1d2b9052cd83ce6bc75a3b84043ed8d327070f449838ab0",
   "set_id": "st-ltw-2026-shared-city-reference-v1",
   "jurisdiction": "Sachsen-Anhalt",
   "election": "Landtagswahl 2026",
@@ -38,6 +38,8 @@
   "base": {
     "item_id": "st-ltw-2026-shared-city-reference-v1-base",
     "prompt_version": "woek-parliament-shared-city-reference-1",
+    "output_filename": "sachsen-anhalt-shared-city-reference-v1.png",
+    "alt_text": "Neutrales, ausdrücklich fiktives Referenzbild einer mittelgroßen Stadt in Sachsen-Anhalt mit kommunalem Gebäude, leerem Gemeinschaftsraum, Bushaltestelle, Radweg, Stadtbäumen sowie Acker und Waldsaum am Horizont. Es bildet dieselbe Ausgangsszene für sechs visualisierte Wahlprogrammvarianten; es ist weder ein reales Ortsbild noch eine Prognose.",
     "approved_scene_instruction": "Eine glaubwürdige, fiktive mittelgroße Stadt in Sachsen-Anhalt am Übergang von kompakter Innenstadt zu ländlichem Rand: derselbe ruhige Straßenraum, ein neutrales kommunales Gebäude, ein kleiner leerer Laden- oder Gemeinschaftsraum, Bushaltestelle, Radweg, Stadtbäume sowie am Horizont Ackerfläche und Waldsaum. Sachliche Alltagsansicht auf Augenhöhe, keine erkennbare reale Stadt und kein Ereignisfoto.",
     "composition_lock": "Kameraposition, Brennweite, Perspektive, Straßen- und Gebäudegeometrie, Horizont, Tageszeit und Wetter müssen in allen sechs Varianten erkennbar identisch bleiben.",
     "negative_constraints": "Keine Personen, Gesichter, Parteifarben, Logos, Wahlplakate, Flaggen, Schrift, Zahlen, Karten, Diagramme, Katastrophen, Gewalt, Polizeiaktionen oder behauptete Messergebnisse. Keine utopische oder dystopische Überzeichnung."

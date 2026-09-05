@@ -64,6 +64,8 @@ test("reference-scene contract is hash-bound to all six current approved program
   assert.equal(validateReferenceSceneContract(contract), contract);
   assert.equal(validateContractAgainstDescriptor(contract, descriptor), true);
   assert.equal(contract.variants.length, 6);
+  assert.equal(contract.base.output_filename, "sachsen-anhalt-shared-city-reference-v1.png");
+  assert.match(contract.base.alt_text, /dieselbe Ausgangsszene/);
   assert.deepEqual(contract.variants.map((item) => item.source_key), ["ltw-2026-st-cdu", "ltw-2026-st-spd", "ltw-2026-st-gruene", "ltw-2026-st-linke", "ltw-2026-st-bsw", "ltw-2026-st-afd"]);
 });
 

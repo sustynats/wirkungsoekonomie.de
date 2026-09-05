@@ -6,6 +6,7 @@ const SHA256 = /^[a-f0-9]{64}$/;
 const COMMIT = /^[a-f0-9]{40}$/;
 const CONTRACT_PATH = /^woek-parlament-app\/data\/impact-visuals\/[a-z0-9-]+\.json$/;
 const OUTPUT = /^(?:cdu|spd|gruene|linke|bsw|afd)-program-reference-scenario-v3\.png$/;
+const BASE_OUTPUT = /^sachsen-anhalt-shared-city-reference-v1\.png$/;
 
 export const REFERENCE_SCENE_SCHEMA = "woek-parliament-reference-scene-1.0";
 export const REFERENCE_SCENE_PROMPT_VERSION = "woek-parliament-shared-city-reference-1";
@@ -51,6 +52,8 @@ export function validateReferenceSceneContract(contract, { verifyHash = true } =
   const generation = contract.generation || {};
   if (generation.provider !== "higgsfield" || generation.model !== "nano_banana_pro" || generation.aspect_ratio !== "16:9" || generation.resolution !== "2k" || generation.max_credits_per_image !== 2 || generation.max_new_images !== 7 || generation.serial_only !== true || generation.blind_retry_allowed !== false || generation.reference_mode !== "ONE_GENERATED_BASE_THEN_IMAGE_TO_IMAGE_VARIANTS") throw new Error("REFERENCE_SCENE_GENERATION_POLICY_INVALID");
   if (!ITEM_ID.test(contract.base?.item_id || "") || contract.base?.item_id !== `${contract.set_id}-base` || contract.base?.prompt_version !== REFERENCE_SCENE_PROMPT_VERSION) throw new Error("REFERENCE_SCENE_BASE_INVALID");
+  if (!BASE_OUTPUT.test(contract.base.output_filename || "")) throw new Error("REFERENCE_SCENE_BASE_OUTPUT_INVALID");
+  assertString(contract.base.alt_text, "BASE_ALT_TEXT", 500);
   for (const [name, value] of [["BASE_INSTRUCTION", contract.base.approved_scene_instruction], ["COMPOSITION_LOCK", contract.base.composition_lock], ["NEGATIVE_CONSTRAINTS", contract.base.negative_constraints]]) assertString(value, name);
   if (!Array.isArray(contract.variants) || contract.variants.length !== 6) throw new Error("REFERENCE_SCENE_VARIANTS_INVALID");
   const expected = ["ltw-2026-st-cdu", "ltw-2026-st-spd", "ltw-2026-st-gruene", "ltw-2026-st-linke", "ltw-2026-st-bsw", "ltw-2026-st-afd"];

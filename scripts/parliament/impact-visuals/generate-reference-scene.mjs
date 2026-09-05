@@ -98,7 +98,7 @@ export async function generateReferenceSceneSet({
     if (entry.kind === "BASE") baseSha256 = result.sha256;
     else if (!baseSha256 || result.reference_sha256 !== baseSha256) throw imageError("REFERENCE_SCENE_REFERENCE_BINDING_INVALID");
     const variant = contract.variants.find((item) => item.item_id === entry.item_id);
-    const filename = variant?.output_filename || "sachsen-anhalt-shared-city-reference-v1.png";
+    const filename = variant?.output_filename || contract.base.output_filename;
     fs.writeFileSync(path.join(output, filename), result.bytes);
     results.push({
       item_id: entry.item_id,
