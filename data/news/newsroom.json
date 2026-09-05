@@ -15468,7 +15468,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-73b1c53517b0e2f5118c",
+      "event_id": "event-53de10df4f68e93ec96a",
       "first_seen_at": "2026-09-03T22:21:17.010Z"
     },
     "4494a851cc549f6a58fd6ecdf93e30343d2fa21e88637bed81402a8760a32636": {
@@ -39810,7 +39810,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-73b1c53517b0e2f5118c",
+      "event_id": "event-6371f2b9c6843f8218bf",
       "first_seen_at": "2026-09-04T08:06:19.579Z"
     },
     "7e07d74b4013ded8aba7b184550800e2f34dea2483fc652761da5838e70560c1": {
@@ -129334,7 +129334,8 @@
         "internal_relevance_score": 34,
         "public_relevance": "mittel",
         "topics": [
-          "Gesellschaft"
+          "Gesellschaft",
+          "Politik"
         ],
         "dimensions": [],
         "status": "laufende Entwicklung",
@@ -148593,7 +148594,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-73b1c53517b0e2f5118c",
+      "event_id": "event-53de10df4f68e93ec96a",
       "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
       "source_id": "wdr-nachrichten",
       "role": "journalistic_report"
@@ -153021,7 +153022,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-73b1c53517b0e2f5118c",
+      "event_id": "event-6371f2b9c6843f8218bf",
       "source_item_id": "f47b735e38592e4f99de7221fe3f51b245ffe3e9e571c1083fcd38bce2e60f8c",
       "source_id": "taz-aktuell",
       "role": "journalistic_report"
@@ -247893,7 +247894,254 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die vorliegende Mitteilung wiederholt die bereits veröffentlichte Ankündigung zu 110 Millionen Euro und den Sanierungsschritten, ohne materiell neue Information gegenüber dem bestehenden Stand."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-d3313802dc7cf6a5",
+      "event_id": "event-aa375d0045cfb9322f87",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 28,
+        "public_relevance": "gering",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-bb2365f217251d06",
+      "event_id": "event-7ec2c017a36e31ab57dd",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-c45c4900b735611f",
+      "event_id": "event-19e58c4d55f01726a97a",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-b1028f40f5c0c89a",
+      "event_id": "event-b3f9d3105694862a32f5",
+      "decision": "local_relevance_below_threshold",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 20,
+        "public_relevance": "gering",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      }
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-d7a0af1afc831caf",
+      "event_id": "event-0fef8df3a32c15bcde8d",
+      "decision": "publish",
+      "errors": [],
+      "rationale": "Die Ankündigung eines neuen US-Vermittlungsversuchs ist eine aktuelle, materiale Entwicklung im Kriegsgeschehen; die Kernbehauptung ist jedoch nur als angekündigter Termin belegt."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-a5874ae28ed5533f",
+      "event_id": "event-53de10df4f68e93ec96a",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die neue WDR-Fassung wiederholt im Kern nur, dass der Einsatz am Hambacher Forst erfolglos war und der Tatverdächtige nicht gefunden wurde; gegenüber der Vorgeschichte fehlt eine materielle neue Entwicklung."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-c84116529aa2d23b",
+      "event_id": "event-e07f28d8aeff022b18e1",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegenden Quellen wiederholen denselben Studienbefund zu mehr als 65 Milliarden Euro ungenutzten Rohstoffen; gegenüber der bereits veröffentlichten Fassung fehlt eine materiell neue Entwicklung."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-7ae0b9f22404b684",
+      "event_id": "event-75bee49c92987065ab05",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle präzisiert nur bereits veröffentlichte Punkte zum erhöhten Schutz von Umspannwerken; gegenüber der vorhandenen Akte fehlt eine substanziell neue, materiale Entwicklung."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-76dd7f8508f81c11",
+      "event_id": "event-e9bf40aa8c08b1faf8ec",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die drei vorliegenden Meldungen wiederholen denselben Verfahrensstand ohne belastbar neue, materielle Entwicklung gegenüber dem bereits veröffentlichten Stand."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-0b6279d05f195d31",
+      "event_id": "event-8886cea1ae83e852bcec",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die beiden Quellen wiederholen denselben Arbeitsmarktkern ohne unabhängige Bestätigung oder neue belastbare Zusatzinfo; gegenüber der bereits veröffentlichten Erstmeldung liegt kein substanziell neuer Stand vor."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-61d3420f0dd76f70",
+      "event_id": "event-0059d4df349b8d2350cf",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quellen wiederholen nur den bereits gemeldeten Gang vor den Supreme Court; gegenüber der vorhandenen Tickerfassung fehlt eine neue materielle Entwicklung."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-3c6be5c124113650",
+      "event_id": "event-e36c0e80c02ea72f11c7",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "FOLLOWUP_DATE_UNSUPPORTED"
+      ],
+      "rationale": "Die Quelle liefert gegenüber der bisherigen Kurzmeldung neue, materielle Details zu Evakuierung, Rettung, Ermittlungen und möglicher Eigenverursachung; unabhängig bestätigt ist das jedoch nicht."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-edd4484465895b46",
+      "event_id": "event-4d4eabf7fc99346b711e",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegende Meldung wiederholt nur bereits publizierte Angaben zu Flucht, rund 900 Eingeschlossenen und 5.624 Vermissten; keine substanziell neue Information gegenüber der Vorgeschichte."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-87c42d6cf088c08e",
+      "event_id": "event-ae1b49037aaef952b5be",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die vorliegenden Quellen wiederholen nur die frühere Meldung zur Erasmus-Rückkehr ungarischer Hochschulen; es kommt keine neue belastbare Information hinzu."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-91d18230516d00b2",
+      "event_id": "event-9ff813e069f6534376e1",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die neue Quelle wiederholt den bereits veröffentlichten Stand zu geplanten Rückführungsabkommen bis Jahresende, ohne belastbar neue, materiell andere Information zu liefern."
+    },
+    {
+      "at": "2026-09-05T05:31:58.551Z",
+      "story_id": "wt-f7d7115a53ff2c2f",
+      "event_id": "event-f4d2465f230d13357c75",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Der neue Quellenauszug wiederholt nur den bereits publizierten Kern zu wachsenden hybriden Risiken; im gelieferten Material fehlt eine substanziell neue, belastbar belegte Entwicklung."
     }
   ],
-  "updated_at": "2026-09-05T05:21:05.955Z"
+  "updated_at": "2026-09-05T05:31:58.551Z"
 }
