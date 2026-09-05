@@ -4,16 +4,13 @@
     "images": {
       "firstSeen": "2026-09-04T10:20:20.169Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-05T07:05:18.056Z",
-      "active": true
-    },
-    "provider": {
-      "firstSeen": "2026-09-05T07:05:18.056Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "d758ded6ad1f309d751e9ceb",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-05T07:20:36.292Z"
+    }
+  ],
   "dailyDate": "2026-09-05"
 }
