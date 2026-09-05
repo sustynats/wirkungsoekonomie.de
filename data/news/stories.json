@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T17:51:35.693Z",
+  "updated_at": "2026-09-05T18:06:31.189Z",
   "stories": [
     {
       "story_id": "wt-ba90052729946ae3",
@@ -549,6 +549,58 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-05T17:54:21.658Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "e8791ab952453e52d6703e23d1d2dc97b6e9286997a30dbaf166b61a949c4ed3",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+            "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+            "summary": "In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:17:47.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987",
+            "source_item_id": "3b07aa287e50b1bbf027019a2483375c05efa7365a4acb4f008cee14ce106321",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:17:47.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "a983d6c3fbf2106a3a1d9f5de0dd20addd25782e704d208025279b7f0345a453",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -2590,6 +2642,58 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-05T16:52:57.128Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "77af0c70e4ee5ad9d95b6a4d9a8d82d53d7e87bd4ec3fc13a747723a529cbeb0",
+        "sources": [
+          {
+            "source_id": "rbb24-nachrichten",
+            "publisher": "rbb24",
+            "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
+            "title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
+            "summary": "Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus bitten um Mithilfe aus der Bevölkerung – gesucht wird nach einem 48-jährigem Tatverdächtigem. Der Mann soll Sabotageakte auf Umspannwerke in Brandenburg und NRW verübt haben.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T16:24:05.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "42ef51fdf99dcd2e18cd8255487700f023a1df737db60a7ad47db6a2b8a07180",
+            "source_item_id": "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
+            "publisher_id": "rbb",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin-Brandenburg"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T16:24:05.000Z",
+            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "provenance": {
+              "origin": "publisher:rbb",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "48283262f5d1a537152d48a72d316403c329a5e38c93e715b11044341ba0e9c6",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -4913,6 +5017,88 @@
             }
           }
         ]
+      },
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "19659e8e666e80a8094fc7fbb6eb3b5ef35f26e2e5482a35cfa64cfa74f8e9eb",
+        "sources": [
+          {
+            "source_id": "dw-news",
+            "publisher": "Deutsche Welle",
+            "url": "https://www.dw.com/de/putin-drei-tage-angriffspause-w%C3%A4hrend-ukraine-verhandlungen/a-79047412?maca=de-rss-de-news-1089-xml-mrss",
+            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+            "summary": "Die USA wollen ihre Vermittlung für ein Ende des Kriegs in der Ukraine wiederaufnehmen. Dazu sollen ihre Unterhändler in Moskau und Kyjiw Gespräche führen. Putins Ankündigung gilt allerdings nur für Kyjiw.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:01:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Geopolitik",
+            "content_hash": "2937cbc7832b70f800ca9e74dd1b483b1f3d65488d39858b60096081af35bfe1",
+            "source_item_id": "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "publisher_id": "deutsche-welle",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:01:00.000Z",
+            "ingested_at": "2026-09-05T14:13:45.805Z",
+            "provenance": {
+              "origin": "publisher:deutsche-welle",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-158.html",
+            "title": "Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew",
+            "summary": "Wegen des Besuchs von Unterhändlern aus den USA hat der russische Präsident Wladimir Putin angekündigt, drei Tage lang die ukrainische Hauptstadt Kiew nicht anzugreifen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:53:54.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "2c6eebea3ebcefab8713d9b1bb37b43fc0f7b7aa4abdefa6b18fa1c80ba55cc7",
+            "source_item_id": "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:53:54.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "9eb21fc79fb90c9c3d3a3626adc2eed4c4ac5b3faa5cc00767a54bf0e2fe63db",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -6339,6 +6525,151 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-05T14:17:20.033Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "8720cec8c5e80188937c37932d96ffa03bb1e69170a6dc83ab3c43e14324abb1",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--angriffe-aufs-stromnetz--einsatz-in-sachsen-geht-weiter-38210826.html",
+            "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+            "summary": "In Ostsachsen geht die Polizei weiter Hinweisen zu versuchten Angriffen aufs Stromnetz nach. Einsatzkräfte sichern Spuren, neue Details wurden nicht bekannt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T07:36:46.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "d561294661b0e0f397c7777a873d3acf73c2361f64264078362d74e9d6b5c028",
+            "source_item_id": "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T07:36:46.000Z",
+            "ingested_at": "2026-09-05T08:06:46.297Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020817.html",
+            "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
+            "summary": "Nach dem Fund mehrerer Sprengvorrichtungen an Stromleitungen in Ostsachsen setzt die Polizei ihre Suche fort. Die Ermittler hoffen auch auf Hinweise aus der Bevölkerung.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T07:38:13.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "f307fa3a57282625ca961ba650578b4ade4a035f539c4fa0dcddfd62d2d05cda",
+            "source_item_id": "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T07:38:13.000Z",
+            "ingested_at": "2026-09-05T14:13:45.805Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-38210826.html",
+            "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
+            "summary": "Nach dem Fund mehrerer Sprengvorrichtungen an Stromleitungen in Ostsachsen setzt die Polizei ihre Suche fort. Die Ermittler hoffen auch auf Hinweise aus der Bevölkerung.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:26:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "6567168e6a377eb09775c9b6535b185b258bcbe3512aba8e6dec328b86bff0d8",
+            "source_item_id": "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:26:55.000Z",
+            "ingested_at": "2026-09-05T14:13:45.805Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-16021488.html",
+            "title": "Nach Anschlägen in NRW und Brandenburg: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
+            "summary": "Spezialisten konnten die Sprengvorrichtungen entschärfen. Nach dem Fund suchen die Ermittler die elektrische Infrastruktur in der Region weiter ab – und bitten um Hinweise aus der Bevölkerung.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:58:18.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1c858ca06ea96cc5d529644dae8e8bc019a9a1e1cfe903b7264f202fedd48f1d",
+            "source_item_id": "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:58:18.000Z",
+            "ingested_at": "2026-09-05T14:13:45.805Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "149b7fa7ca0dcfd76e7a397555d5805e931a1468e471daf2147c018703d2105e",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -7265,7 +7596,60 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "ed247b17885d4dc50ce3324e36db38c26201a390c487d081b5c87da32bf6896f",
+        "sources": [
+          {
+            "source_id": "france24-en",
+            "publisher": "France 24",
+            "url": "https://www.france24.com/en/video/20260905-two-nepal-rescues-revive-hopes-10-days-after-flood",
+            "title": "Two Nepal rescues revive hopes 10 days after flood",
+            "summary": "Rescuers in Nepal pulled alive on Saturday a Chinese national from a tunnel and a local woman from her partially submerged home, as emergency response teams searched with renewed vigour for thousands missing since catastrophic flooding 10 days ago. Our correspondent Shahzaib Wahlah tells us more.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T12:47:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Geopolitik",
+            "content_hash": "124dc7cf8534006b9dc86ea0d73ddce5e98b6a99b1f1cfe051b4fc54760da71f",
+            "source_item_id": "3c56356eb3d34e342c77f1703d4bb0bbb8762f1d9c9f30f5ec13f0c4a417e6eb",
+            "publisher_id": "france24",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "en",
+            "geography": [
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T12:47:33.000Z",
+            "ingested_at": "2026-09-05T17:06:26.753Z",
+            "provenance": {
+              "origin": "publisher:france24",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "2c4c71dbe59e88f96ef78d752df90d3b56ae3903f2470c677efa89f452c75f56",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-7679a123e1941a2f",
@@ -9646,7 +10030,7 @@
       "verification_started_at": "2026-09-05T12:00:43.366Z",
       "publish_ready_at": "2026-09-05T12:01:00.915Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": "2026-09-06T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -10720,9 +11104,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "3e0de4bb76b896f3fc966f6a865a45a433d3f4054797113795a96716718f5dd5",
-        "checked_at": "2026-09-05T17:51:35.693Z",
+        "checked_at": "2026-09-05T18:06:31.189Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:51:35.693Z",
+        "expires_at": "2026-09-06T00:06:31.189Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -11163,7 +11547,7 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
@@ -13453,7 +13837,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:51:35.693Z",
+          "checked_at": "2026-09-05T18:06:31.189Z",
           "fingerprint": "48bad01993b1585a02bf4145fc83642d90c69e61d8ee25edebeb007ca5862f12",
           "issue_codes": [
             "SOURCE_URL_INVALID"
@@ -21199,7 +21583,59 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "13b7fa88b820f7b2db7da73ae9fa5e59b1a9fba4e2539f72fca91f828181002c",
+        "sources": [
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Krieg-in-der-Ukraine/!6210492",
+            "title": "Krieg in der Ukraine: Für Trumps Schwiegersohn macht Putin eine Ausnahme",
+            "summary": "Jared Kushner und Trumps Golfpartner Steve Witkoff sind auf Friedensmission in Moskau – und fliegen dann in die Ukraine. Russlands Präsident hat dafür 72 Stunden Pause für Angriffe auf Kyjiw angeordnet. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:18:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "fff085e52a98c593001ef851391b12d04634cebce7b635ec883a36a0e5afa902",
+            "source_item_id": "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:18:00.000Z",
+            "ingested_at": "2026-09-05T17:06:26.753Z",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-86783bc04f815007",
@@ -21654,7 +22090,59 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "4e538b6870bba573e71ebe4b674b6ff2dbc2fb46dd5f6b00de8440d532972b4e",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/us-gesandte-kushner-und-witkoff-zu-gespraechen-ueber-ukraine-krieg-in-moskau-38211250.html",
+            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
+            "summary": "Die US-Gesandten Jared Kushner und Steve Witkoff sind zu Gesprächen über eine Beendigung des Ukraine-Kriegs in der russischen Hauptstadt Moskau eingetroffen. Ihr Flugzeug landete am Samstagmittag auf dem Flughafen Wnukowo, wie die russischen Nachrichtenagenturen Ria Nowosti und Tass meldeten. In der Folge wollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:25:11.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "3df5cd824d6e715dc545dee0a6465e5528a0510cf96dfebd0addca1cce08269c",
+            "source_item_id": "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:25:11.000Z",
+            "ingested_at": "2026-09-05T11:31:43.777Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-eb6e7bfa7e906259",
@@ -21835,7 +22323,7 @@
       "verification_started_at": "2026-09-05T11:32:45.458Z",
       "publish_ready_at": "2026-09-05T11:33:01.821Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": "2026-09-06T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -22374,9 +22862,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "08de71ec46d53a2b4d710e4e666c451d55355841978f37d1b505bdb5e0fdfde4",
-        "checked_at": "2026-09-05T17:06:26.753Z",
+        "checked_at": "2026-09-05T18:06:31.189Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:06:26.753Z",
+        "expires_at": "2026-09-06T00:06:31.189Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -22535,7 +23023,7 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-1700556e998156c7",
@@ -22921,7 +23409,7 @@
       "verification_started_at": "2026-09-05T11:13:56.248Z",
       "publish_ready_at": "2026-09-05T11:14:11.056Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": "2026-09-06T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -23531,9 +24019,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "31731f89b0299a4a4911216c16ceea87f333256b1878441cbd4daf347f21d0d9",
-        "checked_at": "2026-09-05T17:06:26.753Z",
+        "checked_at": "2026-09-05T18:06:31.189Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:06:26.753Z",
+        "expires_at": "2026-09-06T00:06:31.189Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -23568,7 +24056,7 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-1633927424587a06",
@@ -24116,7 +24604,154 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "9eb97c03359c7b2da033ed03120077ee997c86fda8c8b9874db7ebbdc6ec4508",
+        "sources": [
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16021136.html",
+            "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
+            "summary": "Die USA nehmen ihre Vermittlung für ein Ende des Kriegs in der Ukraine wieder auf. Erste Station: Moskau. Dann soll erstmals Kiew folgen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:06:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "0d089872523a79cf0eadda52790e9734e9ffd9a9bcb08a7d87890ba326d3c6eb",
+            "source_item_id": "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:06:25.000Z",
+            "ingested_at": "2026-09-05T11:12:42.527Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-vermittlungsmission-16021136.html",
+            "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
+            "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:06:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "fb2063b12c54c8182ea3290e02b8d2c4f6fe3a1ec6223203a40b7a77d3dd2fed",
+            "source_item_id": "fe587cdcea84c8d97d7c81fea7485553d20c89a379bca2ab8c36e26e0fd99479",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:06:25.000Z",
+            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "publisher": "DER SPIEGEL",
+            "url": "https://www.spiegel.de/ausland/ukrainekrieg-us-unterhaendler-in-moskau-gelandet-treffen-mit-putin-geplant-a-f08bdbc5-e042-4d65-81ed-18267f45a0eb",
+            "title": "Ukraine: US-Unterhändler in Moskau gelandet – Treffen mit Putin geplant",
+            "summary": "Erst Moskau, dann Kyjiw: Die USA nehmen ihre Friedensbemühungen im Ukrainekrieg wieder auf. Im Rahmen der Besuche sollen laut Putin die russischen Angriffe auf Kyjiw wohl drei Tage lang ruhen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:11:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "6e2c097de2cead4242bb52058d09a03f259f8bff527cc37008a678b44c3a5226",
+            "source_item_id": "b3b61b9a82cdf7ec0e5c191c25db15e381b4219c0c673cb3d9c52543245fd1c6",
+            "publisher_id": "spiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:11:00.000Z",
+            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "provenance": {
+              "origin": "publisher:spiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
+            "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
+            "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T14:11:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "78cdc8faeafb7d55e851651f10b1529d8d2cd78d8bbe0a79f26168bf48618b82",
+            "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T14:11:00.000Z",
+            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "ee7cae8c34f5a4e888661d0baa4022786000f9f57884b3c1d8c59e28fdf12b30",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-1bd2afdf147b3ca5",
@@ -24408,7 +25043,7 @@
       "verification_started_at": "2026-09-05T10:59:24.907Z",
       "publish_ready_at": "2026-09-05T10:59:56.119Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": "2026-09-06T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -25721,9 +26356,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "84223798a3609746bf70b953e2e58d9be3555d7a1063f46c91927f0f804b41b4",
-        "checked_at": "2026-09-05T17:06:26.753Z",
+        "checked_at": "2026-09-05T18:06:31.189Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:06:26.753Z",
+        "expires_at": "2026-09-06T00:06:31.189Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -25789,7 +26424,7 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-4d45c64b930426e2",
@@ -28520,7 +29155,280 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 2,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "6b53017be690a622295501b6140a2beba23fbc2dc36a7d2a606669edb37ca00e",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
+            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+            "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T18:13:49.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "1ef044227fcb95d2a40c12a9431be268cc9c674ac56c69777ae35968925e5954",
+            "source_item_id": "80c246f10722e36049de20d5ebd90360a95abbdc539be494b0302c4c0ceb129a",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T18:13:49.000Z",
+            "ingested_at": "2026-09-04T18:21:48.041Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
+            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+            "summary": "Nach dem Angriff auf das Stromnetz bei Jänschwalde in Brandenburg und Vorfällen in NRW gibt es auch in Ostsachsen einen Polizeieinsatz. Das haben die Ermittler entdeckt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T18:15:11.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1e3bd273b937dff07ee4bad311922b81b5cce13b8642a227d2130f63fa9ec3c7",
+            "source_item_id": "34bc122b9bf74bebeafd71643d3d0ea7952826caa0d370a81e707a8b8fac1163",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T18:15:11.000Z",
+            "ingested_at": "2026-09-04T19:50:26.018Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
+            "title": "Angriffe auf Stromnetz: Polizei fahndet nach Verdächtigem",
+            "summary": "Nach mehreren Angriffen auf das Stromnetz haben Ermittler auch in Sachsen Sprengvorrichtungen entdeckt. Die Polizei fahndet nach einem Verdächtigen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:44:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "5dd64019aa2fc5200783adac7f8b66250c8926a0e80236ec4f42d3d6fe5ce3b8",
+            "source_item_id": "641fb9a25b26f3aee7a02df887e0f1070210b4e401ec1e1147b35bbdfe15d256",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:44:00.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
+            "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt – NRW-Verdächtiger flüchtig",
+            "summary": "Mithilfe eines Bekennerschreibens fand die Polizei Sprengsätze nahe Bautzen. Der Verdächtige in NRW konnte bislang nicht gefasst werden.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T18:30:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "3986fe87f717ee86326bbd074a005d005a54b9d8a267cf4e7cc78cab810f4dc4",
+            "source_item_id": "7a90981849bb892e3da69556ce80d4355980593b98ee6c37d30011b10bfd1f4b",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T18:30:00.000Z",
+            "ingested_at": "2026-09-05T07:06:05.017Z",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
+            "title": "Innenminister Schuster: \"Sprengvorrichtungen\" auch in Sachsen entdeckt",
+            "summary": "Seit Freitagnachmittag sind Polizisten im Wald bei Schleife und an der Landesgrenze zu Brandenburg und nördlich von Bautzen ab. Was ist da los?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T18:27:06.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "5533ce48d63e4f7d1b62c3eb80d504a16c366f92f6439e511111a50fee1729ad",
+            "source_item_id": "7160b03b5718132dc117454643d3b54d80b051e9f3be8c840357c76b559f485d",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T18:27:06.000Z",
+            "ingested_at": "2026-09-04T19:50:26.018Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-lausitz-100.html",
+            "title": "Fahndung nach Stromnetz-Sabotagen: Polizei entdeckt Sprengvorrichtungen in Sachsen",
+            "summary": "Nach Anschlägen auf das Stromnetz in Nordrhein-Westfalen ist die Polizei einem Verdächtigen auf der Spur. Unterdessen wurden auch in Sachsen Sprengvorrichtungen entdeckt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T07:02:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "b79f6a27d19f0d590edf9ef72d2374c907fbf01dec549f874bdd0fcada80ed71",
+            "source_item_id": "36e6c54a7a64c95ec057ae0fe7d26e9a51c2972717fd7be63d6623bb5b74f5d6",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T07:02:53.000Z",
+            "ingested_at": "2026-09-05T07:06:05.017Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-sn-100.html",
+            "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
+            "summary": "Nach Anschlägen auf das Stromnetz in Nordrhein-Westfalen ist die Polizei einem Verdächtigen auf der Spur. Unterdessen wurden auch in Sachsen Sprengvorrichtungen entdeckt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T08:59:23.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "faa6430f9c10e4ed19c3de7c6168f8999fe2137ec01e1d90e93e86004e658978",
+            "source_item_id": "bc9c53cb4afb763752eba8708477879213732db3db55260b87a31fc21a5c1d3f",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T08:59:23.000Z",
+            "ingested_at": "2026-09-05T14:51:17.850Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/deutschland/politik/zwoelf-12-sprengsaetze-sachsen-braunkohle-stromtrassen,anschlag-umspannwerk-sn-100.html",
+            "title": "Polizei entdeckt zwölf Sprengvorrichtungen in Sachsen",
+            "summary": "Nach Anschlägen auf das Stromnetz in Nordrhein-Westfalen sind auch in Sachsen Sprengvorrichtungen entdeckt worden. Unterdessen fahndet die Polizei weiter nach einem Verdächtigen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T15:27:15.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "71945b46f2ba7f533ce519f4469ab290a77336964a89c3e3fbfdbfc972eb4624",
+            "source_item_id": "f2b5429ae00917d8a0a808034d1559a3d10306daf03965cbbef70daac9741035",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T15:27:15.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
+          "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "80efb46bef3166853e894d790d5fe9b51642cde8c98aaba05c5f91bdaef7106f",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-6267bf5562aa70a6",
@@ -37880,7 +38788,59 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 2,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "f7e040c28e7aa25ce6d05a172dfbd75d53ea356bff9ca800ccb3a53d73fb40b1",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/angriffe-auf-umspannwerke--amprion-chef-will-fuer-unternehmen-mehr-befugnisse-38210948.html",
+            "title": "Angriffe auf Umspannwerke: Amprion-Chef will für Unternehmen mehr Befugnisse",
+            "summary": "Angesichts von Angriffen auf das Stromnetz in Deutschland hat der Chef des Netzbetreibers Amprion, Christoph Müller, die Lockerung mehrerer Vorschriften gefordert, damit Unternehmen sich besser schützen können. So sollte der Bund Drohnenüberflüge erlauben - „Drohnen sind eine Chance, die wir derzeit nur in sehr speziellen Fällen nutzen dürfen“, sagte Müller der „Rheinischen Post“ vom Samstag. Drohnen könnten regelmäßig Leitungen abfliegen und überwachen - „das dürfen wir bislang nicht“.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T08:57:36.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "d58d6add1b9617f4e8496a52a8d9d8c7c1cf82a9b2030d94f32c160e5aede873",
+            "source_item_id": "ba04cc9fa8b43a5d575a67ceae7558fbed71cd69eff4143999cb6d804fe25ee6",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T08:57:36.000Z",
+            "ingested_at": "2026-09-05T09:15:34.958Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "8cbb4311fa9f589f1203fc0556130f1bac19ee292dc31d40ae0f3addbfb850a9",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-beb8994d2ab1f12a",
@@ -40321,7 +41281,58 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "c8edbe03eae1fe3b48b26fd6cfeec12001c15d94a3286372a49b18e5321b17d9",
+        "sources": [
+          {
+            "source_id": "dw-news",
+            "publisher": "Deutsche Welle",
+            "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
+            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+            "summary": "Ermittler halten zwei Bekennerschreiben wegen detaillierten Täterwissens für authentisch. Darin nennt der Verfasser fossile Stromerzeugung und Deutschlands Rolle im Nahostkonflikt als Motive.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T11:40:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Geopolitik",
+            "content_hash": "5f8384a44e7c9fc167b0c37ecea23922bcb13d3d2d40177a683e1d72c05142e7",
+            "source_item_id": "6eb0d140544a4b87d72a5a018925c5b325dee21d75edc639c8c17175ea2bd2fc",
+            "publisher_id": "deutsche-welle",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T11:40:00.000Z",
+            "ingested_at": "2026-09-04T15:06:23.805Z",
+            "provenance": {
+              "origin": "publisher:deutsche-welle",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-8719fd142c6ac6b1",
@@ -43799,7 +44810,185 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 2,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "960f9fbf1823f5e1ce3f3a36b41b937fcab14afecd1d7e13697919d69195c3ec",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:21:16.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
+            "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:21:16.000Z",
+            "ingested_at": "2026-09-04T17:39:54.371Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:22:14.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
+            "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:22:14.000Z",
+            "ingested_at": "2026-09-05T05:21:05.955Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:46:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
+            "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:46:00.000Z",
+            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T20:13:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
+            "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T20:13:08.000Z",
+            "ingested_at": "2026-09-04T20:36:32.644Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:18:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "7a7f9a1bdaea2412f799dd9ad08b8440ee47057859b3cb170b2ca789a4373bcc",
+            "source_item_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:18:53.000Z",
+            "ingested_at": "2026-09-05T11:31:43.777Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "b77080fc28dc49ed22c2e6eed468704e8806d8a8351e880f83f2a31fb8696350",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-3b4e9709d1d57534",
@@ -44098,7 +45287,7 @@
       "verification_started_at": "2026-09-05T05:21:48.645Z",
       "publish_ready_at": "2026-09-05T05:22:03.506Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -44717,9 +45906,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "f1f534f0b781aa87b033305b4972aad18b23169acc732185a6ae1f271a3e3052",
-        "checked_at": "2026-09-05T17:21:20.943Z",
+        "checked_at": "2026-09-05T18:06:31.189Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:21:20.943Z",
+        "expires_at": "2026-09-06T00:06:31.189Z",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -44754,7 +45943,7 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-845027bd2675e417",
@@ -48829,7 +50018,95 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 2,
+      "pending_update": {
+        "detected_at": "2026-09-05T18:06:31.189Z",
+        "content_hash": "fdf831d014d106948b8fb801228db82f0b52399a85ae1f653845582802e5963a",
+        "sources": [
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T16:15:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89",
+            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:15:33.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+            "title": "Liveticker Strom-Sabotage: Weiter Suche nach Tatverdächtigem",
+            "summary": "Nach Sabotageversuchen an Umspannwerken ist der mutmaßliche Tatverdächtige immer noch auf der Flucht. Alle Infos im Ticker.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T04:55:43.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "2dae58db0d55e4c92e69ac92d5b1bd347727c6de411ef95a67105c56c1aa442c",
+            "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T04:55:43.000Z",
+            "ingested_at": "2026-09-05T05:21:05.955Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "MEDIA_IMPACT_REQUIRED",
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 1,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T18:06:31.189Z",
+          "fingerprint": "b1617fbc3184d18fa17d6eef44fde1c861cf9d67192f2884de62ebf4784dc961",
+          "issue_codes": [],
+          "warning_codes": [
+            "SOURCE_MUTABLE_URL_REUSED"
+          ]
+        }
+      }
     },
     {
       "story_id": "wt-9d9b1a5968a2d3b8",
@@ -50973,7 +52250,7 @@
       "verification_started_at": "2026-09-04T19:55:33.686Z",
       "publish_ready_at": "2026-09-04T19:55:49.121Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -51634,9 +52911,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "931e9b4750702352104b064b6ba173e56ffa57d215705d1ca4b3c317dbee14e4",
-        "checked_at": "2026-09-05T17:51:35.693Z",
+        "checked_at": "2026-09-05T18:06:31.189Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:51:35.693Z",
+        "expires_at": "2026-09-06T00:06:31.189Z",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
@@ -51671,7 +52948,7 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-d80fd849c477e2ad",
@@ -51818,7 +53095,7 @@
       "verification_started_at": "2026-09-04T19:55:15.125Z",
       "publish_ready_at": "2026-09-04T19:55:31.184Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -52691,9 +53968,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "ff1748ceed32fafa68db5df5c872327378828707502b7ad62ea4a1113608fa9d",
-        "checked_at": "2026-09-05T17:21:20.943Z",
+        "checked_at": "2026-09-05T18:06:31.189Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:21:20.943Z",
+        "expires_at": "2026-09-06T00:06:31.189Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -52728,7 +54005,7 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-169564c16bb23cb7",
@@ -56848,7 +58125,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:51:35.693Z",
+          "checked_at": "2026-09-05T18:06:31.189Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -57461,10 +58738,8 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
@@ -57473,7 +58748,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:51:35.693Z",
+          "checked_at": "2026-09-05T18:06:31.189Z",
           "fingerprint": "7a4e3b4d3b023739dcb0220550584ff732a89bce1aebfdc7f2711100160c30f8",
           "issue_codes": [],
           "warning_codes": []
@@ -79311,7 +80586,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:51:35.693Z",
+          "checked_at": "2026-09-05T18:06:31.189Z",
           "fingerprint": "371951dda8885071e92902c04fd0deb7c36df7ae5adcfb2c65a7a1ebdc9e6256",
           "issue_codes": [],
           "warning_codes": []
@@ -83656,7 +84931,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:51:35.693Z",
+          "checked_at": "2026-09-05T18:06:31.189Z",
           "fingerprint": "fc6394929dd9caf6a77ab1a8265c01d7c1fddece2fc2a73b24676eceaeed40eb",
           "issue_codes": [],
           "warning_codes": []
