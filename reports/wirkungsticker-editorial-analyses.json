@@ -2,25 +2,71 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-05T21:07:03.109Z",
+  "started_at": "2026-09-05T21:17:19.384Z",
   "scanned_stories": 89,
-  "scanned_subjects": 65,
-  "editorial_candidates": 9,
-  "ready_for_research": 2,
-  "research_pending": 5,
-  "editorial_research_sources_discovered": 2,
-  "selected": 2,
-  "editorial_research_started": 2,
-  "editorial_analyses_published": 2,
+  "scanned_subjects": 64,
+  "editorial_candidates": 10,
+  "ready_for_research": 0,
+  "research_pending": 6,
+  "retry_deferred": 0,
+  "editorial_research_sources_discovered": 6,
+  "selected": 0,
+  "editorial_research_started": 0,
+  "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 2,
-  "research_tokens": 7227,
-  "analysis_tokens": 8690,
-  "estimated_cost_usd": 0.040033,
+  "research_calls": 0,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
   "quality_retries": 0,
   "publication_deferred": false,
   "failed": [],
   "candidates": [
+    {
+      "story_id": "wt-6347f9739484a7d1",
+      "story_slug": "nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh-84a7d1",
+      "story_title": "Nach Sabotage: Mehr Polizei an kritischer Infrastruktur in SH",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 64,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 0,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 8,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "open",
+        "independent_origin_count": 14,
+        "primary_source_count": 0,
+        "cited_claim_count": 88,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "source_integrity_open",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "04a94ad7b4098e50269e588736f64ea6d81edbbab8d5b4555590861a56a8f91d",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-6a7145e6dc679f95",
       "story_slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
@@ -105,8 +151,8 @@
         "reasons": []
       },
       "fingerprint": "692ec37ba57b489213b36cd736b0fe8371be569f545a74b84d3936b0c4bfa18d",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-0bfd0f9a3434"
     },
     {
       "story_id": "wt-f2edeab46d126d83",
@@ -234,8 +280,8 @@
         "reasons": []
       },
       "fingerprint": "031e49918d0d6a49b8108f9f992be324d092a20c1f2c8f06e6b6b4d265653c07",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-852ebdd0a0aa"
     },
     {
       "story_id": "wt-79a8fce4900e254f",
@@ -413,6 +459,5 @@
       "status": "published",
       "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
-  ],
-  "completed_at": "2026-09-05T21:07:51.609Z"
+  ]
 }

@@ -1,8 +1,53 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-05T21:07:03.109Z",
+  "updated_at": "2026-09-05T21:17:19.384Z",
   "candidates": [
+    {
+      "story_id": "wt-6347f9739484a7d1",
+      "story_slug": "nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh-84a7d1",
+      "story_title": "Nach Sabotage: Mehr Polizei an kritischer Infrastruktur in SH",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 64,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 0,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 8,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "open",
+        "independent_origin_count": 14,
+        "primary_source_count": 0,
+        "cited_claim_count": 88,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "source_integrity_open",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "04a94ad7b4098e50269e588736f64ea6d81edbbab8d5b4555590861a56a8f91d",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-6a7145e6dc679f95",
       "story_slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
@@ -6283,5 +6328,6 @@
         }
       ]
     }
-  ]
+  ],
+  "retry_state": {}
 }

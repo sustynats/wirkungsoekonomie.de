@@ -1,7 +1,508 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T21:06:22.039Z",
+  "updated_at": "2026-09-05T21:15:13.080Z",
   "stories": [
+    {
+      "story_id": "wt-6347f9739484a7d1",
+      "slug": "nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh-84a7d1",
+      "title": "Nach Sabotage: Mehr Polizei an kritischer Infrastruktur in SH",
+      "first_seen": "2026-09-03T16:31:44.000Z",
+      "last_updated": "2026-09-05T21:16:03.083Z",
+      "published_at": "2026-09-05T21:16:03.083Z",
+      "updated_at": "2026-09-05T21:16:03.083Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+          "title": "Nach Sabotage: Mehr Polizei an kritischer Infrastruktur in SH",
+          "summary": "An kritischen Punkten, unter anderem bei größeren Kraftwerken und Umspannwerken, hat Innenministerin Finke die Polizeipräsenz erhöht.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:31:44.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "371ca3cabff6ec0535290ef25d77075ef57b8454b2265b651df5b131fd77baf1",
+          "source_item_id": "7f139a9cbc841143b75ff4d00eddac26460622c22d5fd24b37529e4c5b8cd28e",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-03T16:31:44.000Z",
+          "ingested_at": "2026-09-03T22:21:17.010Z",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6347f9739484a7d1-v1-claim-1",
+          "story_id": "wt-6347f9739484a7d1",
+          "claim": "Die Landespolizei hat nach den jüngsten Sabotagefällen ihre Präsenz an wichtigen Punkten der kritischen Infrastruktur in Schleswig-Holstein erhöht.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+              "excerpt_hash": "b300c35ad2fd8197b291",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+              "excerpt_hash": "fbe11e8f2dfa165b6d40",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T21:16:03.083Z"
+        },
+        {
+          "claim_id": "wt-6347f9739484a7d1-v1-claim-2",
+          "story_id": "wt-6347f9739484a7d1",
+          "claim": "Für Schleswig-Holstein liegen nach Angaben von Innenministerin Finke derzeit keine konkreten Gefährdungserkenntnisse vor.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+              "excerpt_hash": "10b85777b1f0f9c7bf31",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+              "excerpt_hash": "b95a3436035800225f0f",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T21:16:03.083Z"
+        },
+        {
+          "claim_id": "wt-6347f9739484a7d1-v1-claim-3",
+          "story_id": "wt-6347f9739484a7d1",
+          "claim": "Der Netzbetreiber SH Netz hat seine Sicherheitsmaßnahmen in den vergangenen Monaten verstärkt und bereitet sich mit eigenen Kräften sowie Notstromaggregaten auf Störungen vor.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+              "excerpt_hash": "663aea84fc1c7df9c689",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+              "excerpt_hash": "ba9a94b8e5fe35652d93",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+              "excerpt_hash": "903dd097b5de863f5d18",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T21:16:03.083Z"
+        }
+      ],
+      "event_id": "event-23907a5deeb34ee123ce",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-05T21:15:46.118Z",
+      "publish_ready_at": "2026-09-05T21:16:03.083Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T21:15:13.080Z",
+        "fingerprint": "803e9d483818b3a87a01057ea5cd98bcbac13d0194e7a527dbd8571650bf09fa",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die erhöhte Polizeipräsenz an den betroffenen Standorten beibehalten wird.",
+          "source_id": "ndr-info",
+          "expected_by": null,
+          "measurable_indicator": "Weitere offizielle Angaben zur Dauer oder zum Umfang der Präsenz",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3c35f317a3efbff1",
+          "announced_at": "2026-09-03T16:31:44.000Z",
+          "follow_up_date": "2026-09-12T21:16:03.083Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "be049d844cc16c26e11e82ef4c00d29bbad53380e23230f3c51b59a879919123",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Nach Angaben des NDR hat Schleswig-Holstein die Präsenz der Polizei an wichtigen Punkten kritischer Infrastruktur erhöht, darunter bei größeren Kraftwerken und Umspannwerken. Auslöser sind die jüngsten mutmaßlichen Sabotagefälle in Brandenburg und Nordrhein-Westfalen. Das Innenministerium betont zugleich, es gebe derzeit keine konkreten Gefährdungserkenntnisse für das Land.\n\nDer Bericht schildert außerdem, dass die Polizei auch das Heizkraftwerk Wedel überprüft habe, dies aber als Vorsichtsmaßnahme ohne konkrete Gefährdungserkenntnisse. Der Netzbetreiber SH Netz verweist auf bereits verstärkte Sicherheitsmaßnahmen, zusätzliche Kontrollen und Notstromaggregate für den Ernstfall. Zugleich heißt es, hundertprozentigen Schutz gegen Angriffe auf das Stromnetz gebe es nicht.",
+      "analysis": {
+        "story_id": "wt-6347f9739484a7d1",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Schleswig-Holstein hat nach den mutmaßlichen Sabotagefällen die Polizeipräsenz an kritischer Infrastruktur erhöht. Zugleich sagt das Innenministerium, konkrete Gefährdungserkenntnisse lägen derzeit nicht vor.",
+        "detail_summary": "Gesichert ist nach der Quelle, dass die Landespolizei in Schleswig-Holstein ihre Präsenz an wichtigen Punkten der kritischen Infrastruktur erhöht hat. Genannt werden unter anderem größere Kraftwerke und Umspannwerke; außerdem wurde das Heizkraftwerk Wedel überprüft. Das Innenministerium beschreibt den Schritt als Reaktion auf die jüngsten Sabotagefälle in anderen Bundesländern, betont aber zugleich, dass es aktuell keine konkreten Gefährdungserkenntnisse für Schleswig-Holstein gebe. Für SH Netz wird berichtet, das Unternehmen habe seine Schutzmaßnahmen bereits verstärkt und bereite sich mit Personal, Technik und Notstrom auf Störungen vor. Relevanz hat das vor allem über den Wirkpfad Versorgungssicherheit und Resilienz kritischer Infrastruktur. Mögliche Folgen sind engmaschigere Kontrollen, höhere Abwehrbereitschaft und kurzfristig mehr Schutz, aber auch laufende Zusatzkosten und organisatorischer Aufwand. Ob daraus tatsächlich eine nachhaltige Sicherheitsverbesserung oder nur eine Vorsichtsmaßnahme folgt, bleibt in der Quelle offen.",
+        "why_relevant": "Die Meldung betrifft kritische Infrastruktur, also potenziell systemrelevante Versorgungsknoten mit möglichen Folgen für Strom- und Gasversorgung sowie staatliche Schutzprioritäten.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Potenzielle Folgen für Versorgungssicherheit, Beschäftigte und Nutzer kritischer Infrastruktur sind vorhanden, aber die Quelle nennt keine konkrete Störung."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird nicht berichtet; nur indirekt könnte die Verfügbarkeit von Energieinfrastruktur berührt sein."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Staat reagiert auf mögliche Sabotagegefahren mit Schutzmaßnahmen; das betrifft Resilienz und Schutz öffentlicher Infrastruktur."
+        },
+        "importance": "mittel",
+        "impact_potential": "Mehr Polizeipräsenz und engere Kontrolle können die kurzfristige Resilienz kritischer Anlagen erhöhen und Störungsrisiken senken. Gleichzeitig zeigt die Meldung einen erhöhten Schutzbedarf, der auf eine angespannte Sicherheitslage hinweist.",
+        "impact_risks": [
+          "Zusätzliche Sicherheitsmaßnahmen binden Personal und Ressourcen.",
+          "Ein Vorsorge-Frame kann Unsicherheit verstärken, auch ohne konkrete Gefährdungserkenntnisse."
+        ],
+        "mechanisms": [
+          "Abschreckung durch sichtbare Polizeipräsenz",
+          "frühere Erkennung von Auffälligkeiten",
+          "bessere Koordination zwischen Polizei, Ministerium und Betreibern"
+        ],
+        "first_order": [
+          "Mehr Schutz und Kontrolle an Kraftwerken und Umspannwerken"
+        ],
+        "second_order": [
+          "Höhere betriebliche Sicherheitskosten und organisatorischer Aufwand"
+        ],
+        "third_order": [
+          "Mögliche Anpassung von Schutzkonzepten für weitere kritische Infrastrukturen"
+        ],
+        "systemic_relevance": "Kritische Infrastruktur ist ein systemrelevanter Knoten; Veränderungen am Schutzniveau können Versorgungsausfälle und Kaskadenrisiken beeinflussen.",
+        "transformation_potential": "Die Meldung beschreibt keine Transformation, sondern eine defensive Anpassung von Schutz- und Koordinationspraktiken.",
+        "resilience": "Kurzfristig kann die Resilienz steigen, sofern Präsenz und Kontrollen gezielt Schwachstellen abdecken; belastbar belegt ist das hier noch nicht.",
+        "side_effects": [
+          "Mehr Aufwand für Polizei und Betreiber",
+          "mögliche Verlagerung von Schutzbedarf auf weitere Standorte"
+        ],
+        "uncertainties": [
+          "Unklar bleibt, ob es in Schleswig-Holstein überhaupt eine konkrete Bedrohungslage gibt.",
+          "Offen ist, wie lange und in welchem Umfang die erhöhte Präsenz fortgeführt wird.",
+          "Die Quelle belegt keine tatsächliche Störung oder verhinderte Tat."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "NDR berichtet über Angaben des Innenministeriums und des Netzbetreibers; die Kernzitate sind als indirekte Wiedergabe bzw. Paraphrase markiert.",
+        "watch_next": [
+          "Offizielle Angaben zur Dauer der erhöhten Polizeipräsenz",
+          "Weitere Mitteilungen zu konkreten Schutzmaßnahmen an kritischer Infrastruktur"
+        ],
+        "reference_frameworks": [
+          "SDG 9",
+          "SDG 11",
+          "SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue Information ist die erhöhte Polizeipräsenz an kritischer Infrastruktur nach Sabotagefällen; das betrifft systemrelevante Versorgungsknoten und ist mehr als eine reine Routinemeldung."
+        },
+        "publication_recommendation": true,
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-05T21:15:13.080Z",
+        "media_trigger_fingerprint": "fc61cef54ace0825d203cd6b72f34f2c5200832798b656ce6dcc18324a8907ae",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "threat_or_fear_frame"
+          ],
+          "matched_terms": [
+            "bedrohungen",
+            "bedrohung",
+            "bedrohungslagen"
+          ],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "fc61cef54ace0825d203cd6b72f34f2c5200832798b656ce6dcc18324a8907ae",
+          "content_fingerprint": "a9a1837fb8bd848e0dd47f2d1a7d4a6b583e544c45721a4247e80e1423d12e56",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T21:16:03.083Z",
+          "content_hash": "be049d844cc16c26e11e82ef4c00d29bbad53380e23230f3c51b59a879919123",
+          "source_summary": "Nach Angaben des NDR hat Schleswig-Holstein die Präsenz der Polizei an wichtigen Punkten kritischer Infrastruktur erhöht, darunter bei größeren Kraftwerken und Umspannwerken. Auslöser sind die jüngsten mutmaßlichen Sabotagefälle in Brandenburg und Nordrhein-Westfalen. Das Innenministerium betont zugleich, es gebe derzeit keine konkreten Gefährdungserkenntnisse für das Land.\n\nDer Bericht schildert außerdem, dass die Polizei auch das Heizkraftwerk Wedel überprüft habe, dies aber als Vorsichtsmaßnahme ohne konkrete Gefährdungserkenntnisse. Der Netzbetreiber SH Netz verweist auf bereits verstärkte Sicherheitsmaßnahmen, zusätzliche Kontrollen und Notstromaggregate für den Ernstfall. Zugleich heißt es, hundertprozentigen Schutz gegen Angriffe auf das Stromnetz gebe es nicht.",
+          "analysis": {
+            "story_id": "wt-6347f9739484a7d1",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Schleswig-Holstein hat nach den mutmaßlichen Sabotagefällen die Polizeipräsenz an kritischer Infrastruktur erhöht. Zugleich sagt das Innenministerium, konkrete Gefährdungserkenntnisse lägen derzeit nicht vor.",
+            "detail_summary": "Gesichert ist nach der Quelle, dass die Landespolizei in Schleswig-Holstein ihre Präsenz an wichtigen Punkten der kritischen Infrastruktur erhöht hat. Genannt werden unter anderem größere Kraftwerke und Umspannwerke; außerdem wurde das Heizkraftwerk Wedel überprüft. Das Innenministerium beschreibt den Schritt als Reaktion auf die jüngsten Sabotagefälle in anderen Bundesländern, betont aber zugleich, dass es aktuell keine konkreten Gefährdungserkenntnisse für Schleswig-Holstein gebe. Für SH Netz wird berichtet, das Unternehmen habe seine Schutzmaßnahmen bereits verstärkt und bereite sich mit Personal, Technik und Notstrom auf Störungen vor. Relevanz hat das vor allem über den Wirkpfad Versorgungssicherheit und Resilienz kritischer Infrastruktur. Mögliche Folgen sind engmaschigere Kontrollen, höhere Abwehrbereitschaft und kurzfristig mehr Schutz, aber auch laufende Zusatzkosten und organisatorischer Aufwand. Ob daraus tatsächlich eine nachhaltige Sicherheitsverbesserung oder nur eine Vorsichtsmaßnahme folgt, bleibt in der Quelle offen.",
+            "why_relevant": "Die Meldung betrifft kritische Infrastruktur, also potenziell systemrelevante Versorgungsknoten mit möglichen Folgen für Strom- und Gasversorgung sowie staatliche Schutzprioritäten.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Potenzielle Folgen für Versorgungssicherheit, Beschäftigte und Nutzer kritischer Infrastruktur sind vorhanden, aber die Quelle nennt keine konkrete Störung."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein direkter Umweltbezug wird nicht berichtet; nur indirekt könnte die Verfügbarkeit von Energieinfrastruktur berührt sein."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Staat reagiert auf mögliche Sabotagegefahren mit Schutzmaßnahmen; das betrifft Resilienz und Schutz öffentlicher Infrastruktur."
+            },
+            "importance": "mittel",
+            "impact_potential": "Mehr Polizeipräsenz und engere Kontrolle können die kurzfristige Resilienz kritischer Anlagen erhöhen und Störungsrisiken senken. Gleichzeitig zeigt die Meldung einen erhöhten Schutzbedarf, der auf eine angespannte Sicherheitslage hinweist.",
+            "impact_risks": [
+              "Zusätzliche Sicherheitsmaßnahmen binden Personal und Ressourcen.",
+              "Ein Vorsorge-Frame kann Unsicherheit verstärken, auch ohne konkrete Gefährdungserkenntnisse."
+            ],
+            "mechanisms": [
+              "Abschreckung durch sichtbare Polizeipräsenz",
+              "frühere Erkennung von Auffälligkeiten",
+              "bessere Koordination zwischen Polizei, Ministerium und Betreibern"
+            ],
+            "first_order": [
+              "Mehr Schutz und Kontrolle an Kraftwerken und Umspannwerken"
+            ],
+            "second_order": [
+              "Höhere betriebliche Sicherheitskosten und organisatorischer Aufwand"
+            ],
+            "third_order": [
+              "Mögliche Anpassung von Schutzkonzepten für weitere kritische Infrastrukturen"
+            ],
+            "systemic_relevance": "Kritische Infrastruktur ist ein systemrelevanter Knoten; Veränderungen am Schutzniveau können Versorgungsausfälle und Kaskadenrisiken beeinflussen.",
+            "transformation_potential": "Die Meldung beschreibt keine Transformation, sondern eine defensive Anpassung von Schutz- und Koordinationspraktiken.",
+            "resilience": "Kurzfristig kann die Resilienz steigen, sofern Präsenz und Kontrollen gezielt Schwachstellen abdecken; belastbar belegt ist das hier noch nicht.",
+            "side_effects": [
+              "Mehr Aufwand für Polizei und Betreiber",
+              "mögliche Verlagerung von Schutzbedarf auf weitere Standorte"
+            ],
+            "uncertainties": [
+              "Unklar bleibt, ob es in Schleswig-Holstein überhaupt eine konkrete Bedrohungslage gibt.",
+              "Offen ist, wie lange und in welchem Umfang die erhöhte Präsenz fortgeführt wird.",
+              "Die Quelle belegt keine tatsächliche Störung oder verhinderte Tat."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "NDR berichtet über Angaben des Innenministeriums und des Netzbetreibers; die Kernzitate sind als indirekte Wiedergabe bzw. Paraphrase markiert.",
+            "watch_next": [
+              "Offizielle Angaben zur Dauer der erhöhten Polizeipräsenz",
+              "Weitere Mitteilungen zu konkreten Schutzmaßnahmen an kritischer Infrastruktur"
+            ],
+            "reference_frameworks": [
+              "SDG 9",
+              "SDG 11",
+              "SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue Information ist die erhöhte Polizeipräsenz an kritischer Infrastruktur nach Sabotagefällen; das betrifft systemrelevante Versorgungsknoten und ist mehr als eine reine Routinemeldung."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-05T21:15:13.080Z",
+            "media_trigger_fingerprint": "fc61cef54ace0825d203cd6b72f34f2c5200832798b656ce6dcc18324a8907ae",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "bedrohungen",
+                "bedrohung",
+                "bedrohungslagen"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "fc61cef54ace0825d203cd6b72f34f2c5200832798b656ce6dcc18324a8907ae",
+              "content_fingerprint": "a9a1837fb8bd848e0dd47f2d1a7d4a6b583e544c45721a4247e80e1423d12e56",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-6347f9739484a7d1-v1-claim-1",
+              "story_id": "wt-6347f9739484a7d1",
+              "claim": "Die Landespolizei hat nach den jüngsten Sabotagefällen ihre Präsenz an wichtigen Punkten der kritischen Infrastruktur in Schleswig-Holstein erhöht.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+                  "excerpt_hash": "b300c35ad2fd8197b291",
+                  "checked_at": "2026-09-05T21:16:03.083Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+                  "excerpt_hash": "fbe11e8f2dfa165b6d40",
+                  "checked_at": "2026-09-05T21:16:03.083Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            },
+            {
+              "claim_id": "wt-6347f9739484a7d1-v1-claim-2",
+              "story_id": "wt-6347f9739484a7d1",
+              "claim": "Für Schleswig-Holstein liegen nach Angaben von Innenministerin Finke derzeit keine konkreten Gefährdungserkenntnisse vor.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+                  "excerpt_hash": "10b85777b1f0f9c7bf31",
+                  "checked_at": "2026-09-05T21:16:03.083Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+                  "excerpt_hash": "b95a3436035800225f0f",
+                  "checked_at": "2026-09-05T21:16:03.083Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            },
+            {
+              "claim_id": "wt-6347f9739484a7d1-v1-claim-3",
+              "story_id": "wt-6347f9739484a7d1",
+              "claim": "Der Netzbetreiber SH Netz hat seine Sicherheitsmaßnahmen in den vergangenen Monaten verstärkt und bereitet sich mit eigenen Kräften sowie Notstromaggregaten auf Störungen vor.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+                  "excerpt_hash": "663aea84fc1c7df9c689",
+                  "checked_at": "2026-09-05T21:16:03.083Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+                  "excerpt_hash": "ba9a94b8e5fe35652d93",
+                  "checked_at": "2026-09-05T21:16:03.083Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+                  "excerpt_hash": "903dd097b5de863f5d18",
+                  "checked_at": "2026-09-05T21:16:03.083Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T21:16:03.083Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
+              "content_hash": "371ca3cabff6ec0535290ef25d77075ef57b8454b2265b651df5b131fd77baf1"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-05T21:16:03.083Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6347f9739484a7d1-416bd890db54462d-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "416bd890db54462d9d529f54ef05f86468cd17a95dc1e5143246f860d94c8a88"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6347f9739484a7d1-e229db676bb204f1-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "e229db676bb204f13717c4464796c56afeabec10d17faebaf00383aaa7366bf5"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6347f9739484a7d1-4242930fd87d1f3d-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "4242930fd87d1f3d66e6ac64d946c7547081e06d22285963d53fd2e07dca2e90"
+        },
+        "source_visual": null,
+        "fingerprint": "ebdc86d88a01c8ce1c0912d20659d0d660a05e1df5c46a6455d271e136de2db2",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-05T21:17:17.672Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-78b8df2827ab4527",
       "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
@@ -129,7 +630,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T21:06:22.039Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-02",
@@ -149,7 +650,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T21:06:22.039Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-03",
@@ -170,7 +671,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T21:06:22.039Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "f37ce3c8ea1b75752a0440f8eb45cb0f58aa01ec750dfcd385740d615c1408f1",
@@ -183,7 +684,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T21:06:22.039Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-05T18:21:18.289Z",
       "event_detected_at": "2026-09-05T18:21:18.289Z",
       "event_id": "event-33c99d9ec5432a4822d9",
@@ -212,20 +713,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6.233983333333334,
+        "source_age_minutes": 15.084666666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 165.0625,
+        "queue_age_minutes": 173.91318333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 97,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T21:06:22.039Z",
+        "checked_at": "2026-09-05T21:15:13.080Z",
         "fingerprint": "1b1bbfdddb20f1c6cd32ffbfe0e6275f4f751671f85126efc9c90d594f35a19d",
         "issue_codes": [],
         "warning_codes": []
@@ -477,7 +978,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T21:06:22.039Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         },
         {
           "claim_id": "wt-166e870242fc37e6-claim-02",
@@ -497,7 +998,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T21:06:22.039Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         },
         {
           "claim_id": "wt-166e870242fc37e6-claim-03",
@@ -517,7 +1018,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T21:06:22.039Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "d349ce975404f77382ab8400a897afcd739aa635581788f16062f33478935031",
@@ -530,7 +1031,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T21:06:22.039Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-05T17:36:24.715Z",
       "event_detected_at": "2026-09-05T17:36:24.715Z",
       "event_id": "event-165020cd14b0b8c7db2e",
@@ -558,20 +1059,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 26.483983333333335,
+        "source_age_minutes": 35.334666666666664,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 209.9554,
+        "queue_age_minutes": 218.80608333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 93,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T21:06:22.039Z",
+        "checked_at": "2026-09-05T21:15:13.080Z",
         "fingerprint": "a8701b3ca35d56bd4789e3a73b6b0f2b1b016df62768a4e7a9b8a06bf96e9a54",
         "issue_codes": [],
         "warning_codes": []
@@ -669,7 +1170,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T21:06:22.039Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         },
         {
           "claim_id": "wt-cc6813674a95cd84-claim-02",
@@ -689,7 +1190,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T21:06:22.039Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "a37620d5cb519089823f5f7893d2ab760eb93d40f258a1e81395135cb0e871db",
@@ -702,7 +1203,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T21:06:22.039Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-05T21:06:22.039Z",
       "event_detected_at": "2026-09-05T21:06:22.039Z",
       "event_id": "event-99d0bee0898a1a2949a1",
@@ -732,20 +1233,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 30.417316666666668,
+        "source_age_minutes": 39.268,
         "detection_delay_minutes": 30.417316666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 8.850683333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T21:06:22.039Z",
+        "checked_at": "2026-09-05T21:15:13.080Z",
         "fingerprint": "012f5b204ce7d0cf2d33b8977172eeab8c0aad0257465128b991d25f9437daa2",
         "issue_codes": [],
         "warning_codes": []
@@ -6897,7 +7398,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T21:06:22.039Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "5077504fba761724756585440bff06fc3606bde296cdd7d92e1ab67b5eeafabd",
@@ -6910,7 +7411,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T21:06:22.039Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-05T11:31:43.777Z",
       "event_detected_at": "2026-09-05T11:31:43.777Z",
       "event_id": "event-454194767a4d7ef00523",
@@ -6938,20 +7439,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 389.3673166666667,
+        "source_age_minutes": 398.218,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 574.6377,
+        "queue_age_minutes": 583.4883833333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 19,
+        "news_freshness_score": 17,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T21:06:22.039Z",
+        "checked_at": "2026-09-05T21:15:13.080Z",
         "fingerprint": "1c4421f45303671688dac2f2d2e352c04a184c96a7ca440b37089a865ea2a7ec",
         "issue_codes": [],
         "warning_codes": []
@@ -12715,9 +13216,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "2da7c25459ec73543e2843bf95d680ab117d4bca5f6c818a7807a17ce4324c32",
-        "checked_at": "2026-09-05T21:06:22.039Z",
+        "checked_at": "2026-09-05T21:15:13.080Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-06T03:06:22.039Z",
+        "expires_at": "2026-09-06T03:15:13.080Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -13800,7 +14301,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T21:06:22.039Z",
+          "checked_at": "2026-09-05T21:15:13.080Z",
           "fingerprint": "7ecba8663bb10dc419cbd7eed67d63eb5e01bdb65ab2292b000d53fd85f5789c",
           "issue_codes": [],
           "warning_codes": []
@@ -16018,39 +16519,8 @@
       ],
       "pending_update": {
         "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "0d6c8ba20e020fdbab08a171d922e9f94ceec1138baff2f702ebf252d66a500f",
+        "content_hash": "2a5174367a2d3b1bc8844130aa72848032e3bb4070edc5fe2b3c4591d13d7572",
         "sources": [
-          {
-            "source_id": "euronews-en",
-            "publisher": "Euronews",
-            "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
-            "title": "At least two killed and 81 injured after explosions at Bolivian army base",
-            "summary": "The Bolivian Defence Minister said the first explosion \"involved black powder from pyrotechnic material stored at the site,\" while the second, \"much larger\" blast was still being investigated.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T06:51:02.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Europa",
-            "content_hash": "3a362cedab86bae56dc37e159e1503119cc3e8f1286ae9529c2c7768f41fa8a9",
-            "source_item_id": "a5812bffb14cc989cab45455825d8efb61256f386f1845b6c1425391f592b52a",
-            "publisher_id": "euronews",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "EU",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T06:51:02.000Z",
-            "ingested_at": "2026-09-05T10:23:53.587Z",
-            "provenance": {
-              "origin": "publisher:euronews",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
           {
             "source_id": "euronews-en",
             "publisher": "Euronews",
@@ -16083,24 +16553,20 @@
             }
           }
         ],
-        "reason": "SOURCE_INTEGRITY_OPEN",
-        "quality_errors": [
-          "SOURCE_URL_INVALID"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
         "source_integrity": {
-          "status": "open",
-          "publication_status": "hold",
+          "status": "verified",
+          "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T21:06:22.039Z",
-          "fingerprint": "48bad01993b1585a02bf4145fc83642d90c69e61d8ee25edebeb007ca5862f12",
-          "issue_codes": [
-            "SOURCE_URL_INVALID"
-          ],
+          "checked_at": "2026-09-05T21:15:13.080Z",
+          "fingerprint": "24487ee7197ad0eb1b0dabd2efe09a7989c40310929eed16cb7eda32bc9ca43e",
+          "issue_codes": [],
           "warning_codes": []
         }
       }
@@ -22340,9 +22806,20 @@
         "quality_errors": [
           "CLAIM_NUMBER_NOT_IN_EVIDENCE"
         ],
-        "quality_retry_count": 4,
+        "quality_retry_count": 5,
+        "quality_retry_after": "2026-09-06T03:15:13.080Z",
         "reassessment": true,
-        "fresh": false
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T21:15:13.080Z",
+          "fingerprint": "b0f20c8b2973dab6e6df95a22820e118840999e090b56e20fffa0f93f689c98d",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       },
       "source_summary": "Die Europäische Kommission hat einen deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften genehmigt. Er soll ab 2031 Kapazitäten für Stromerzeugung, Speicherung und flexiblen Verbrauch verfügbar machen; die Kommission beziffert die erwarteten Kosten auf 15,6 bis 35,2 Milliarden Euro. Die Bundesregierung berichtet ergänzend, dass Bundestag und Bundesrat das Strom-Versorgungssicherheits- und Kapazitätengesetz verabschiedet haben.\n\nNach der Regierungsdarstellung sollen in den nächsten zwölf Monaten elf Gigawatt steuerbare Kapazität ausgeschrieben werden; weitere Ausschreibungen sind für 2027 und 2029 vorgesehen. Anbieter sollen bereits für die Bereithaltung von Leistung vergütet werden und müssen zugesagte Kapazität zu relevanten Zeitpunkten nachweisen. Für erste Langzeitkapazitäten ist ein Resilienzkriterium zur Fertigung wesentlicher Bauteile im Europäischen Wirtschaftsraum genannt. Der Mechanismus soll Dunkelflauten bei wachsendem Anteil erneuerbarer Energien absichern.",
       "title_image": {
@@ -22776,9 +23253,20 @@
           "NEWS_STATUS_REQUIRED",
           "EVENT_CLAIMS_REQUIRED"
         ],
-        "quality_retry_count": 1,
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-05T21:45:13.080Z",
         "reassessment": true,
-        "fresh": false
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T21:15:13.080Z",
+          "fingerprint": "e7aa694e927d436b9a8c797160a5b1d4e7504a7a48a80ae225ca0643ffcc32dc",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       },
       "source_summary": "Das Bundeskabinett hat einen Gesetzentwurf zur Änderung des Windenergie-auf-See-Gesetzes beschlossen. Die bisherigen Ausbauziele für Offshore-Windenergie sollen bestehen bleiben, während Ausschreibungen, Netzanbindung und Finanzierung verändert werden. Die Bundesregierung nennt Bezahlbarkeit, Kosteneffizienz, Versorgungssicherheit und die tatsächliche Realisierung vergebener Projekte als Ziele des Entwurfs.\n\nVorgesehen ist, Netzanbindungen zu optimieren und die Regellaufzeit von Offshore-Anlagen von 25 auf 35 Jahre zu verlängern. Außerdem sollen Differenzverträge eingeführt werden: Betreiber erhalten einen abgesicherten Mindeststrompreis; darüber hinausgehende Erlöse werden abgeschöpft. Im Zuge des europäischen Net-Zero Industry Acts sollen zusätzliche Kriterien unter anderem für Cybersicherheit und Widerstandsfähigkeit gelten. Der Meeresnaturschutz bleibt laut Quelle Bestandteil der Genehmigungsverfahren. Bundeswirtschaftsministerin Katherina Reiche erklärte, die Reform solle Investitionssicherheit, realistischere Auktionen und eine bessere Nutzung der Leitungen schaffen.",
       "title_image": {
@@ -32846,15 +33334,22 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED",
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": true,
-        "consolidation": false
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-05T21:15:13.080Z",
+          "fingerprint": "677f489384916d5a8bbf8a20da66c9ad5228f077a28a07c98965b3764ea80a8e",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -32918,21 +33413,24 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T10:23:53.587Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "f7e293ec049f4f43449a167e3f2e7e27c7ab25ced67c7243a0c9138002124be1",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_SOURCE_SUMMARY_LENGTH"
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 3,
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-06T00:15:13.080Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-05T10:23:53.587Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-05T09:31:48.966Z",
       "event_detected_at": "2026-09-05T09:31:48.966Z",
       "event_id": "event-0f294ab0856a024b8206",
@@ -32963,14 +33461,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 63.84311666666667,
+        "source_age_minutes": 715.168,
         "detection_delay_minutes": 11.7661,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 52.077016666666665,
+        "queue_age_minutes": 703.4019,
         "target_publication_minutes": 60,
-        "news_freshness_score": 73,
-        "freshness_warning": null
+        "news_freshness_score": 0,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T21:15:13.080Z",
+        "fingerprint": "1b314dbbf9e6337f87d9394d545e3563508e27232171db084763c75405eafe41",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -39458,7 +39965,7 @@
       ],
       "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
       "published": true,
-      "analysis_status": "veröffentlicht",
+      "analysis_status": "nach erneuter Relevanzprüfung nicht mehr in der laufenden Auswahl",
       "current_version": 2,
       "analysis": {
         "story_id": "wt-b2161abe6d0a2603",
@@ -39830,85 +40337,6 @@
           "change": "media_impact_added"
         }
       ],
-      "pending_update": {
-        "detected_at": "2026-09-04T06:21:36.915Z",
-        "content_hash": "b66fa200fda615ad6b86c4c2d9cc89aba3b949c0b33d589c75b37529cdbbb23d",
-        "sources": [
-          {
-            "source_id": "bundesregierung-presse",
-            "publisher": "Pressemitteilungen der Bundesregierung",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/neues-foerderprogramm-mit-zehn-millionen-euro-fuer-projekte-in-ns-und-sed-gedenkstaetten-staatsminister-weimer-gerade-jetzt-orte-der-erinnerung-staerken--2451324",
-            "title": "Neues Förderprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten – Staatsminister Weimer: „Gerade jetzt Orte der Erinnerung stärken“",
-            "summary": "Ab sofort können sich Gedenkstätten und Erinnerungsorte zur Aufarbeitung der NS-Terrorherrschaft und der SED-Diktatur um eine Projektförderung durch den Bund bewerben. Der Beauftragte der Bundesregierung für Kultur und Medien (BKM) stellt dafür im Rahmen der Umsetzung der neuen Gedenkstättenkonzeption insgesamt zehn Millionen Euro zur Verfügung. Zum Bewerbungsstart des neuen Förderprogramms sagte Wolfram Weimer, Staatsminister für Kultur und Medien: „In den Gedenkstätten schlägt das Herz unserer Erinnerungskultur. Deshalb verdienen sie jede Unterstützung. Mit der Projektförderung wollen wir Gedenkstätten und Erinnerungsorten dabei helfen, ihre historischen Orte zu bewahren, neue digitale Zugänge zu schaffen und zeitgemäße Bildungs- und Vermittlungsangebote zu entwickeln. Gerade angesichts der wachsenden Herausforderungen, vor denen Gedenkstätten stehen, ist es wichtig, dass innovative Ideen und nachhaltige Projekte die notwendige Stärkung erfahren.“ Gefördert werden Projekte in dr...",
-            "source_type": "official_rss",
-            "published_at": "2026-09-03T07:06:42.000Z",
-            "primary_source": true,
-            "source_priority": 88,
-            "source_topic": "Politik",
-            "content_hash": "16116dd2d59b78485f629f5bebf25268804ee270663de7b96bd1272d4b02246a",
-            "source_item_id": "b6fe3f959a0913dc50c0f9e197bb4c878231e5cbca3d94aa193973dbc377d9fd",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T07:06:42.000Z",
-            "ingested_at": "2026-09-04T06:21:36.915Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_REQUIRED_STRING:source_summary",
-          "AI_REQUIRED_STRING:summary",
-          "AI_REQUIRED_STRING:why_relevant",
-          "AI_REQUIRED_STRING:status",
-          "AI_REQUIRED_STRING:analysis_type",
-          "AI_REQUIRED_STRING:importance",
-          "AI_REQUIRED_STRING:impact_potential",
-          "AI_REQUIRED_STRING:systemic_relevance",
-          "AI_REQUIRED_STRING:transformation_potential",
-          "AI_REQUIRED_STRING:resilience",
-          "AI_REQUIRED_STRING:evidence_level",
-          "AI_REQUIRED_STRING:attribution",
-          "AI_REQUIRED_STRING:detail_summary",
-          "AI_STATUS_INVALID",
-          "AI_ANALYSIS_TYPE_INVALID",
-          "AI_IMPORTANCE_INVALID",
-          "AI_PUBLICATION_GATE_REQUIRED",
-          "AI_DIMENSION_INVALID:human",
-          "AI_DIMENSION_INVALID:planet",
-          "AI_DIMENSION_INVALID:democracy",
-          "AI_ARRAY_REQUIRED:impact_risks",
-          "AI_ARRAY_REQUIRED:mechanisms",
-          "AI_ARRAY_REQUIRED:first_order",
-          "AI_ARRAY_REQUIRED:second_order",
-          "AI_ARRAY_REQUIRED:third_order",
-          "AI_ARRAY_REQUIRED:side_effects",
-          "AI_ARRAY_REQUIRED:uncertainties",
-          "AI_ARRAY_REQUIRED:watch_next",
-          "AI_ARRAY_REQUIRED:reference_frameworks",
-          "AI_UNCERTAINTY_REQUIRED",
-          "AI_WATCH_NEXT_REQUIRED",
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "NEWS_STATUS_REQUIRED",
-          "EVENT_CLAIMS_REQUIRED"
-        ],
-        "quality_retry_count": 3,
-        "reassessment": true,
-        "fresh": false
-      },
       "source_summary": "Der Beauftragte der Bundesregierung für Kultur und Medien hat ein neues Förderprogramm für Gedenkstätten und Erinnerungsorte zur NS-Terrorherrschaft und zur SED-Diktatur gestartet. Dafür sind im Regierungsentwurf des Bundeshaushalts 2027 insgesamt zehn Millionen Euro vorgesehen. Anträge können seit Veröffentlichung der Meldung eingereicht werden; die Bewerbungsfrist endet am 1. Oktober 2026. Über die Auswahl soll eine unabhängige Jury beraten, der frühestmögliche Projektbeginn ist der 1. Juli 2027.\n\nGefördert werden Vorhaben in drei Bereichen: Erhalt historischer Orte, Digitalisierung und digitale Lebenswelten sowie Vermittlung und anwendungsbezogene Forschung. Das Programm setzt die im November 2025 beschlossene neue Gedenkstättenkonzeption um. Kulturstaatsminister Wolfram Weimer erklärte zum Start, historische Orte, digitale Zugänge und zeitgemäße Bildungsangebote sollten unterstützt werden. Die Meldung führt außerdem aus, dass die bisherige Projektförderung verdoppelt werde.",
       "title_image": {
         "mode": "impact_card",
@@ -39936,6 +40364,19 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-04T09:54:54.452Z",
         "status": "generated"
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-05T21:15:13.080Z",
+      "retirement": {
+        "at": "2026-09-05T21:15:13.080Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ],
+        "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
       }
     },
     {
@@ -49428,205 +49869,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "0f543810c8f70c2a8fb5a8d641d49b38c466c8fe4955ef1225ac6a4031f7901e",
-        "checked_at": "2026-09-05T18:36:52.497Z",
+        "fingerprint": "86ae46bd066261f299a1d6e95ff3d90b5c9ffacd9910d7d5130142f2b4a8ff8b",
+        "checked_at": "2026-09-05T21:15:13.080Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T00:36:52.497Z",
-        "sources": [
-          {
-            "source_id": "berlin-presseportal",
-            "publisher": "Presseportal des Landes Berlin",
-            "url": "https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1710705.php",
-            "title": "Aktuelle Lage nach dem IKT-Vorfall im Landesnetz Berlin und der Veröffentlichung der gestohlenen Daten",
-            "summary": "",
-            "source_type": "html_index",
-            "published_at": "2026-09-03T22:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "bb4830b5e58a34b19198374caa024a9e3b8ed4eb8d7f331a07fdcf9af621d2ab",
-            "source_item_id": "81eead2be88352de8152571737487018ba1b05eadb7382afca42d766ae04e00c",
-            "publisher_id": "land-berlin",
-            "publisher_kind": "institution",
-            "source_role": "official_statement",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T22:00:00.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
-            "provenance": {
-              "origin": "publisher:land-berlin",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "heise-security",
-            "publisher": "heise Security",
-            "url": "https://www.heise.de/news/Berliner-Senat-zahlt-nicht-sensible-Daten-jetzt-im-Darknet-11442286.html",
-            "title": "Berliner Senat zahlt nicht – sensible Daten jetzt im Darknet",
-            "summary": "Nach Ablauf eines Ultimatums hat die Hackergruppe Rhysida mehrere Terabyte an Daten aus dem Berliner Landesnetz im Darknet veröffentlicht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T15:37:00.000Z",
-            "primary_source": false,
-            "source_priority": 86,
-            "source_topic": "Digitalisierung",
-            "content_hash": "2df78ccc8e3b2b47f36cd0cea4f554d8cf84c6995ff51390b3ad239658062402",
-            "source_item_id": "d3a1850233bc7c01c99eaa1b27e703cac7e6072df605ebd7636b8fe0d9b6a252",
-            "publisher_id": "heise",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "blindspot",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T15:37:00.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
-            "provenance": {
-              "origin": "publisher:heise",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "rbb24-nachrichten",
-            "publisher": "rbb24",
-            "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-cyberangriff-hackerangriff-datendiebstahl-rhysida-darknet.html",
-            "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
-            "summary": "Nachdem sich Hacker Zugriff auf das Berliner Landesnetz verschafft haben, sind Daten zum Download veröffentlicht worden. Zuvor war ein gesetztes Ultimatum abgelaufen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T12:38:45.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "64bda75eb04aa82291c0f72198bd34871469c5e9ac0f1c1fd38c71fa549ac6be",
-            "source_item_id": "70b52c6eead06080786a3f31a6b8793e9a984c850fba9b1b093393ec1ffbcd11",
-            "publisher_id": "rbb",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin-Brandenburg"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T12:38:45.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
-            "provenance": {
-              "origin": "publisher:rbb",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-offenbar-auch-sicherheits-100.html",
-            "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet - offenbar auch sicherheitsrelevante Informationen",
-            "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T16:14:15.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "27a10c129ad67426b4443f2e18e9e6c4e59712a179a01b2bf2cb7d191d920cb9",
-            "source_item_id": "dc13d94eba54ea6191c1d23f33d92dd1e754da4aeee7469917b130fb99eac863",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T16:14:15.000Z",
-            "ingested_at": "2026-09-04T16:21:44.537Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
-            "title": "Cyberkriminalität - Hacker veröffentlichen nach Angriff Daten aus Berliner IT-Netz im Darknet",
-            "summary": "Nach einem Hackerangriff auf die Senatsverwaltung in Berlin haben die mutmaßlichen Täter gestohlene Daten veröffentlicht. Wie mehrere Medien übereinstimmend berichten, stellte die Hackergruppe Rhysida rund 1,4 Millionen Daten im Darknet bereit.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:11:33.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "4440c8f23589bad133f2f82bb08dc0fa0e976a5c4df2c8bb6ec3a96e48cd36ac",
-            "source_item_id": "4b388f5bd255ac527b57ddf41bbea1bb995154f2ee025fd2218e3c6df64bf251",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:11:33.000Z",
-            "ingested_at": "2026-09-04T17:21:09.783Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesschau-access",
-            "publisher": "tagesschau / ARD",
-            "url": "https://www.tagesschau.de/inland/bsi-hackerangriff-berlin-verwaltung-100.html",
-            "title": "Daten im Darknet veröffentlicht - BSI warnt vor Risiken",
-            "summary": "Personalakten, Stundenzettel, Telefonnummern - im Darknet haben Hacker etwa 1,4 Millionen Daten veröffentlicht, die von der Berliner Verwaltung gestohlen wurden. Das zuständige Bu…",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T14:15:01.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ad359fb0026b60f34b51aad5a790874a5dc8d6d4bc23e07ee2729c5b625de116",
-            "source_item_id": "426ada87cb347f786074fe3a7a2a9a3263b7fb0deeb4caca8e095ecaae8a0dbf",
-            "publisher_id": "tagesschau",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T14:15:01.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
-            "provenance": {
-              "origin": "publisher:tagesschau",
-              "basis": "publisher_resolved_from_registered_target_url",
-              "independence_established": false,
-              "collection_source_id": "swr-aktuell"
-            },
-            "collection_source_id": "swr-aktuell",
-            "collection_publisher_id": "swr"
-          }
-        ]
-      },
-      "pending_update": {
-        "detected_at": "2026-09-05T19:51:15.680Z",
-        "content_hash": "f5d29b7b53aab7d389a28feddcbad73651b701e4870d307b2c4fa9ce6bbbd65a",
+        "expires_at": "2026-09-06T03:15:13.080Z",
         "sources": [
           {
             "source_id": "berlin-presseportal",
@@ -49817,27 +50063,7 @@
             "collection_source_id": "ndr-info",
             "collection_publisher_id": "ndr"
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
-          "MEDIA_PUBLIC_EXPLANATION_LENGTH"
-        ],
-        "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-05T20:36:25.436Z",
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T20:06:25.436Z",
-          "fingerprint": "fbe092c89d8fe68f38f9c1573288a3d0f13d9381ac30dc09358e7a79cb085aff",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
       }
     },
     {
@@ -83241,21 +83467,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T13:36:20.834Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "88f9f75e9b977eb411285a1009f724f8bdf50ae43f800a4436cf773e03c61894",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 2,
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T13:36:20.834Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-04T13:21:25.210Z",
       "event_detected_at": "2026-09-04T13:21:25.210Z",
       "event_id": "event-dee7eaf221842b5eb806",
@@ -83285,14 +83510,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 31.34723333333333,
+        "source_age_minutes": 1930.218,
         "detection_delay_minutes": 16.420166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 14.927066666666667,
+        "queue_age_minutes": 1913.7978333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
-        "freshness_warning": null
+        "news_freshness_score": 0,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T21:15:13.080Z",
+        "fingerprint": "c4537b5e8eb723cbbe6fa201e3664ea9d4fbfbb6060aeff34ffe3168bf3e3c6c",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -90037,23 +90271,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T10:42:21.689Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "f69a9040291956f1035206b894236f5463981613981c97acaf24fb57d9a59acb",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
-        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T10:42:21.689Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-04T10:42:21.689Z",
       "event_detected_at": "2026-09-04T10:42:21.689Z",
       "event_id": "event-9ae33d5472490875b05f",
@@ -90083,14 +90314,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 17.111483333333332,
+        "source_age_minutes": 2089.968,
         "detection_delay_minutes": 17.111483333333332,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 2072.8565166666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": null
+        "news_freshness_score": 0,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T21:15:13.080Z",
+        "fingerprint": "babead12236dce24ec26f5b1481d35fd72251f5f8b5afb990a4277543450d5f1",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -110870,11 +111110,21 @@
       ],
       "content_hash": "8b5abed7254e40b28187fb5766943507ffa038f3fbac25770c2552fa1d527776",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-02T23:03:14.700Z"
+      "updated_at": "2026-09-02T23:03:14.700Z",
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T21:15:13.080Z",
+      "rejection": {
+        "at": "2026-09-05T21:15:13.080Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "LOCAL_RELEVANCE_BELOW_THRESHOLD"
+        ]
+      }
     },
     {
       "story_id": "wt-bb2365f217251d06",
@@ -110918,11 +111168,21 @@
       ],
       "content_hash": "d9c90d2f05e457e71f5a42f16323d30b0be039d47e05d98268f1d35f95135778",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-02T23:03:14.700Z"
+      "updated_at": "2026-09-02T23:03:14.700Z",
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T21:15:13.080Z",
+      "rejection": {
+        "at": "2026-09-05T21:15:13.080Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "LOCAL_RELEVANCE_BELOW_THRESHOLD"
+        ]
+      }
     },
     {
       "story_id": "wt-86b564d829882859",
@@ -111256,11 +111516,21 @@
       ],
       "content_hash": "182bd30be05af2d82033aadfca421683205c6d17126214d3f51f1f479f83bb66",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-02T23:03:14.700Z"
+      "updated_at": "2026-09-02T23:03:14.700Z",
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T21:15:13.080Z",
+      "rejection": {
+        "at": "2026-09-05T21:15:13.080Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "LOCAL_RELEVANCE_BELOW_THRESHOLD"
+        ]
+      }
     },
     {
       "story_id": "wt-b1028f40f5c0c89a",
@@ -111304,11 +111574,21 @@
       ],
       "content_hash": "37cace70dad8930d14e5c0a9f9336828bb5f2d0afd22e35bc39e9f36e93a4ff3",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [],
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-02T23:03:14.700Z"
+      "updated_at": "2026-09-02T23:03:14.700Z",
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T21:15:13.080Z",
+      "rejection": {
+        "at": "2026-09-05T21:15:13.080Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "LOCAL_RELEVANCE_BELOW_THRESHOLD"
+        ]
+      }
     },
     {
       "story_id": "wt-626f37857be657a9",
@@ -113588,21 +113868,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "02cc77c17049979f0e81e30abbd0c34e10afcc530f3207819c3bb8c950ead248",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 3,
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-5afeb135245d9a108fe2",
@@ -113632,14 +113911,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 492.15881666666667,
+        "source_age_minutes": 3095.8346666666666,
         "detection_delay_minutes": 281.9001666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 2813.9345,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T21:15:13.080Z",
+        "fingerprint": "f299fdea87b744d1bc89a7a02ac3cc1267d473b9fd7c1b3a6aad76678d251450",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -114435,119 +114723,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-6347f9739484a7d1",
-      "slug": "nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh-84a7d1",
-      "title": "Nach Sabotage: Mehr Polizei an kritischer Infrastruktur in SH",
-      "first_seen": "2026-09-03T16:31:44.000Z",
-      "last_updated": "2026-09-03T16:31:44.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
-          "title": "Nach Sabotage: Mehr Polizei an kritischer Infrastruktur in SH",
-          "summary": "An kritischen Punkten, unter anderem bei größeren Kraftwerken und Umspannwerken, hat Innenministerin Finke die Polizeipräsenz erhöht.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:31:44.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "371ca3cabff6ec0535290ef25d77075ef57b8454b2265b651df5b131fd77baf1",
-          "source_item_id": "7f139a9cbc841143b75ff4d00eddac26460622c22d5fd24b37529e4c5b8cd28e",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T16:31:44.000Z",
-          "ingested_at": "2026-09-03T22:21:17.010Z",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-6347f9739484a7d1-claim-01",
-          "story_id": "wt-6347f9739484a7d1",
-          "claim": "Nach Sabotage: Mehr Polizei an kritischer Infrastruktur in SH: An kritischen Punkten, unter anderem bei größeren Kraftwerken und Umspannwerken, hat Innenministerin Finke die Polizeipräsenz erhöht.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-03T22:21:17.010Z"
-        }
-      ],
-      "content_hash": "be049d844cc16c26e11e82ef4c00d29bbad53380e23230f3c51b59a879919123",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
-      ],
-      "quality_retry_count": 1,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-03T22:21:17.010Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-23907a5deeb34ee123ce",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 62,
-        "public_relevance": "hoch",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Infrastruktur oder Versorgungskapazität"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 349.55016666666666,
-        "detection_delay_minutes": 349.55016666666666,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 60,
-        "news_freshness_score": 0,
-        "freshness_warning": null
       }
     },
     {
@@ -118523,63 +118698,17 @@
         }
       ],
       "listed": false,
-      "relevance_filter_version": "3.0",
-      "retired_at": "2026-09-03T12:23:56.901Z",
+      "relevance_filter_version": "4.0",
+      "retired_at": "2026-09-05T21:15:13.080Z",
       "retirement": {
-        "at": "2026-09-03T12:23:56.901Z",
-        "filter_version": "3.0",
+        "at": "2026-09-05T21:15:13.080Z",
+        "filter_version": "4.0",
         "reason_code": "FILTER_REASSESSMENT_NOT_MATERIAL",
         "quality_errors": [
-          "AI_NEWS_VALUE_CONTEXT_ONLY",
-          "AI_MATERIALITY_GATE_FAILED",
-          "AI_DUPLICATE_WITHOUT_UPDATE",
-          "AI_PUBLICATION_NOT_RECOMMENDED"
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ],
         "note": "Die historische Veröffentlichung bleibt transparent erhalten, wird aber nicht mehr im aktuellen Ticker oder in dessen Feeds geführt."
-      },
-      "pending_update": {
-        "detected_at": "2026-09-04T06:21:36.915Z",
-        "content_hash": "4c74b2ffc11416fbcb0553c225a36389e3a17919679b5fc340aadacbbb24bcef",
-        "sources": [
-          {
-            "source_id": "bundesregierung-kompakt",
-            "publisher": "Bundesregierung kompakt",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/abschaffung-gasspeicherumlage-2375074",
-            "title": "Abschaffung der Gasspeicherumlage",
-            "summary": "Die Gasspeicherumlage ist seit dem 1. Januar 2026 abgeschafft. Damit entlastet die Bundesregierung die Verbraucherinnen und Verbraucher bei den Gaspreisen um mehr als drei Milliarden Euro. Das Wichtigste im Überblick.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-02T08:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 92,
-            "source_topic": "Politik",
-            "content_hash": "0c8b1c9c137ae5909954ab4b0d8fbbf85bb099215599778ff9f730776744de7f",
-            "source_item_id": "936b1c5b146044f34b1eb0843c81f1137da48a5a971f1b38a5b9966933596725",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-02T08:00:00.000Z",
-            "ingested_at": "2026-09-04T06:21:36.915Z",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_DETAIL_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 3,
-        "reassessment": true,
-        "fresh": false
       }
     },
     {
@@ -123781,21 +123910,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:51:32.529Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "2e8e68e350a380b603d567595582f115849ef3f3d2b1a34ef28ceb1c675670fe",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 3,
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:51:32.529Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-18e06fadbbed69b9214b",
@@ -123827,14 +123955,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2404.54215,
+        "source_age_minutes": 5008.218,
         "detection_delay_minutes": 2194.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.25865,
+        "queue_age_minutes": 2813.9345,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T21:15:13.080Z",
+        "fingerprint": "1df91de84cc41611131a84ab6f902d9ffe2ac4164dfb5454446436028a327d00",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -124901,21 +125038,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T06:21:36.915Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 3,
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T06:21:36.915Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -124944,14 +125080,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4341.61525,
+        "source_age_minutes": 6675.218,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 480.33175,
+        "queue_age_minutes": 2813.9345,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T21:15:13.080Z",
+        "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -124990,7 +125135,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T05:36:22.000Z",
-          "ingested_at": "2026-09-04T00:59:37.557Z",
+          "ingested_at": "2026-09-05T21:15:13.080Z",
           "provenance": {
             "origin": "publisher:klimareporter",
             "basis": "publisher_only_origin_unverified",
@@ -125017,21 +125162,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T01:26:36.485Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "a4e4c4a8abd15f0dda563e6ae2e80cceda5644f27ab757453621fc50c0bbf44a",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 3,
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T01:26:36.485Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3b24dabc10b485f8857d",
@@ -125063,14 +125207,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4070.2414166666667,
+        "source_age_minutes": 6698.851333333333,
         "detection_delay_minutes": 3884.916833333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 185.32458333333332,
+        "queue_age_minutes": 2813.9345,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T21:15:13.080Z",
+        "fingerprint": "322e43d7b940e1cdd6f5461c479867f7b33a854a65ce68757d914f296abd19fe",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -125388,21 +125541,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T06:21:36.915Z"
+          "checked_at": "2026-09-05T21:15:13.080Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 3,
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-04T06:21:36.915Z",
+      "updated_at": "2026-09-05T21:15:13.080Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -125434,14 +125586,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5421.61525,
+        "source_age_minutes": 7755.218,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 480.33175,
+        "queue_age_minutes": 2813.9345,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T21:15:13.080Z",
+        "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -126296,5 +126457,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T18:36:52.497Z"
+  "public_updated_at": "2026-09-05T21:15:13.080Z"
 }
