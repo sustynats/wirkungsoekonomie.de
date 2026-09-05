@@ -1,7 +1,608 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-05T14:02:11.302Z",
+  "updated_at": "2026-09-05T14:23:20.689Z",
   "stories": [
+    {
+      "story_id": "wt-3d901522efd87e2d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d901522efd87e2d-e50491b8c3247e2a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d901522efd87e2d-62ec50c29b896f43-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d901522efd87e2d-93906795f316f8e1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
+      "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+      "source_summary": "Die Quelle berichtet über eine neue diplomatische Phase im Ukraine-Krieg. Nach Angaben des Textes wollen die USA ihre Vermittlungsbemühungen wieder aufnehmen; dazu sollen ihre Unterhändler in Moskau und Kyjiw Gespräche führen.\n\nZugleich heißt es, Wladimir Putin habe wegen des Besuchs von Jared Kushner und Steve Witkoff einen dreitägigen Stopp der Luftangriffe auf Kyjiw angeordnet. Kremlsprecher Dmitri Peskow teilte demnach mit, die Pause beginne am Sonntag und hänge mit der Vorbereitung und Aufnahme von Kontakten zur erwarteten US-Delegation zusammen. Der Text nennt außerdem, dass Trump die beiden als „zwei großartige Verhandler“ bezeichnet habe.",
+      "summary": "Putin soll wegen des Besuchs von US-Unterhändlern eine dreitägige Angriffspause für Kyjiw angeordnet haben. Parallel nehmen die USA ihre Vermittlungsversuche im Ukraine-Krieg wieder auf.",
+      "detail_summary": "Der gesicherte Kern der Meldung ist eine angekündigte dreitägige Pause der Luftangriffe auf Kyjiw, die laut Quelle mit dem Besuch der US-Unterhändler Jared Kushner und Steve Witkoff zusammenhängt. Für die Nachricht ist das materiell, weil sie unmittelbar einen militärischen Wirkpfad, eine zeitlich befristete Veränderung von Angriffsdruck und einen neuen diplomatischen Kanal beschreibt. Relevant ist vor allem die Kombination aus konkreter Sicherheitslage in Kyjiw und der erneuten US-Vermittlung. Mögliche Folgen sind kurzfristig weniger Luftalarm und ein veränderter Gesprächsrahmen zwischen Russland, den USA und der Ukraine. Offen bleibt, wie belastbar die Pause tatsächlich ist, ob sie eingehalten wird und ob daraus weitergehende Zugeständnisse oder nur ein begrenztes Signal folgen. Wegen der nur einen vorliegenden journalistischen Quelle bleiben Reichweite und Folgewirkung vorläufig.",
+      "why_relevant": "Die Meldung verbindet eine konkrete militärische Unterbrechung mit einer neuen Gesprächsphase der USA im Ukraine-Krieg. Das betrifft Sicherheitslage, Verhandlungskanal und mögliche weitere diplomatische oder militärische Entscheidungen.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Angriffspause betrifft die unmittelbare Sicherheit von Menschen in Kyjiw und könnte kurzfristig die Gefährdungslage verändern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht angelegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung berührt internationale Verhandlungs- und Entscheidungskanäle zwischen Regierungen und kann die diplomatische Steuerung des Kriegs beeinflussen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-05T14:13:45.805Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-cf42f2c67306",
+        "slug": "dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2",
+        "title": "Dreitägige Angriffspause auf Kyjiw: Was die neue Vermittlungsphase wirklich verändert",
+        "teaser": "Putin soll eine dreitägige Pause der Luftangriffe auf Kyjiw angeordnet haben. Zugleich reisen US-Gesandte zu Gesprächen nach Moskau und Kyjiw.",
+        "published_at": "2026-09-05T14:17:38.262Z",
+        "updated_at": "2026-09-05T14:17:38.262Z"
+      },
+      "first_seen": "2026-09-05T13:01:00.000Z",
+      "last_updated": "2026-09-05T14:17:03.422Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-94e19028bc87c0dedc83",
+      "case_file": {
+        "case_id": "case-0e368539fdc9df",
+        "member_count": 6,
+        "publisher_count": 5,
+        "members": [
+          {
+            "story_id": "wt-3d901522efd87e2d",
+            "slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
+            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+            "summary": "Putin soll wegen des Besuchs von US-Unterhändlern eine dreitägige Angriffspause für Kyjiw angeordnet haben. Parallel nehmen die USA ihre Vermittlungsversuche im Ukraine-Krieg wieder auf.",
+            "updated_at": "2026-09-05T14:17:03.422Z",
+            "published_at": "2026-09-05T14:17:03.422Z",
+            "kind": "Neues Ereignis",
+            "current": true
+          },
+          {
+            "story_id": "wt-4eb46eab6c6d9511",
+            "slug": "krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511",
+            "title": "Krieg in der Ukraine: Trump schickt mal wieder seinen Schwiegersohn",
+            "summary": "Trump hat laut taz neue Gesandte für Ukraine-Gespräche auf den Weg geschickt. Der Bericht nennt mögliche Treffen in Moskau und Kyjiw sowie eine vorgeschlagene Feuerpause.",
+            "updated_at": "2026-09-05T11:33:36.533Z",
+            "published_at": "2026-09-05T11:33:36.533Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-86783bc04f815007",
+            "slug": "us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007",
+            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
+            "summary": "Kushner und Witkoff sind laut der Meldung in Moskau zu Gesprächen über den Ukraine-Krieg eingetroffen. Danach sollen weitere Gespräche in Kiew folgen.",
+            "updated_at": "2026-09-05T11:33:20.789Z",
+            "published_at": "2026-09-05T11:33:20.789Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-1633927424587a06",
+            "slug": "ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06",
+            "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
+            "summary": "US-Unterhändler sollen nach Moskau reisen, ein Treffen mit Putin ist laut Meldung geplant. Danach ist erstmals auch ein Besuch in Kiew vorgesehen.",
+            "updated_at": "2026-09-05T11:13:44.645Z",
+            "published_at": "2026-09-05T11:13:44.645Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-d7a0af1afc831caf",
+            "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Selenskyj kündigt einen Besuch der US-Vermittler Witkoff und Kushner in Kiew an. Trump bestätigt die Reise und spricht von einem Vorschlag zur Beendigung des Krieges.",
+            "updated_at": "2026-09-05T05:32:14.214Z",
+            "published_at": "2026-09-04T20:51:47.279Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-b076e0c16bf4a2e8",
+            "slug": "iran-krieg-us-dieselpreis-auf-hochststand-f4a2e8",
+            "title": "Iran-Krieg: US-Dieselpreis auf Höchststand",
+            "summary": "Der US-Dieselpreis hat laut der Meldung einen neuen Höchststand erreicht. Genannt werden 5,85 Dollar pro Gallone und ein Vorjahreswert von 3,71 Dollar.",
+            "updated_at": "2026-09-04T13:53:07.692Z",
+            "published_at": "2026-09-04T13:53:07.692Z",
+            "kind": "Kontext oder Einordnung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-05T13:01:00.000Z",
+      "published_at": "2026-09-05T14:17:03.422Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dw-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutsche Welle",
+          "url": "https://www.dw.com/de/putin-drei-tage-angriffspause-w%C3%A4hrend-ukraine-verhandlungen/a-79047412?maca=de-rss-de-news-1089-xml-mrss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T13:01:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-02fdc359b05b6427",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-02fdc359b05b6427-c8e9e8df933d5a13-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-02fdc359b05b6427-fb64f0e1f46251e2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-02fdc359b05b6427-9d908f4e1100eecc-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-news-putin-verkundet-dreitagigen-angriffsstopp-auf-kiew-5b6427",
+      "title": "Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew",
+      "source_summary": "Der MDR meldet, Wladimir Putin habe wegen des Besuchs von US-Unterhändlern einen dreitägigen Stopp der Luftangriffe auf Kiew angeordnet. Kremlsprecher Dmitri Peskow wird mit der Bestätigung zitiert, dass die Pause mit Tagesbeginn des Sonntags gelten solle.\n\nNach der Darstellung soll Putin am Samstag den US-Sondergesandten Steve Witkoff und Jared Kushner empfangen haben. Für den nächsten Tag seien Gespräche in Kiew vorgesehen. Der Text ordnet die Meldung in laufende Kriegsereignisse ein und verweist zugleich auf weitere Berichte über Angriffe und Schäden in der Ukraine.",
+      "summary": "Putin soll wegen des Besuchs von US-Unterhändlern einen dreitägigen Stopp der Luftangriffe auf Kiew angeordnet haben. Ob die Pause hält, ist aus der vorliegenden Meldung noch offen.",
+      "detail_summary": "Die bestbelegte neue Information ist die angekündigte dreitägige Angriffspause auf Kiew. Sie ist materiell, weil sie unmittelbar den militärischen Druck auf die Hauptstadt, die Sicherheit von Zivilisten und den Ablauf der laufenden Vermittlungsbemühungen betrifft. Der Wirkpfad wäre zunächst kurzfristig: weniger Luftangriffe könnten Schutz, Bewegung und Reparaturen erleichtern; zugleich bleibt offen, ob die Anordnung tatsächlich eingehalten wird. Mittelbar könnte die Meldung die Bedingungen für Gespräche mit den US-Unterhändlern verändern und damit den diplomatischen Spielraum beeinflussen. Eine dauerhafte Entspannung oder eine echte Feuerpause ist daraus aber nicht ableitbar. Die Evidenzlage ist vorläufig, weil hier nur eine sekundäre Quellenmeldung vorliegt und der tatsächliche Vollzug der Pause noch nicht belegt ist.",
+      "why_relevant": "Die Meldung beschreibt eine konkrete, zeitlich befristete Änderung im Kriegsverlauf mit möglicher Wirkung auf Zivilchutz, Luftlage und Diplomatie.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die angekündigte Pause betrifft direkt die Sicherheit von Menschen in Kiew und den Schutz vor Luftangriffen."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus der Meldung ergibt sich kein direkter Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Nachricht betrifft Verhandlungs- und Vermittlungsprozesse zwischen Kriegsparteien und den USA."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-05T14:13:45.805Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-05T13:53:54.000Z",
+      "last_updated": "2026-09-05T14:16:34.472Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-8da4db6ee40d665155b0",
+      "case_file": null,
+      "source_published_at": "2026-09-05T13:53:54.000Z",
+      "published_at": "2026-09-05T14:16:34.472Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die angekündigte Angriffspause tatsächlich eingehalten wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Berichte über ausbleibende oder erneute Luftangriffe auf Kiew während der genannten drei Tage",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6ecd52f90e8c6d57",
+          "announced_at": "2026-09-05T13:53:54.000Z",
+          "follow_up_date": "2026-09-12T14:16:34.472Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-158.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T13:53:54.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-6c26e428b894e714",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6c26e428b894e714-a91755a859716bae-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6c26e428b894e714-362cfbeac142980d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6c26e428b894e714-b61686aedd31fb48-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
+      "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+      "source_summary": "In zwei aktuellen Meldungen geht es um einen Polizeieinsatz in Ostsachsen. Nach den Titeln und Kurztexten wurden dort zwölf Sprengsätze oder Sprengvorrichtungen an Stromtrassen beziehungsweise Stromleitungen gefunden. Die Polizei setzt die Suche in der Region fort und bittet um Hinweise aus der Bevölkerung.\n\nEine der Meldungen ergänzt, dass Spezialisten die Sprengvorrichtungen entschärfen konnten. Neue Details zum Hintergrund, zu Verdächtigen oder zu einem möglichen Zusammenhang mit anderen Fällen werden in den vorliegenden Texten nicht genannt. Die Quellen verweisen nur auf laufende Ermittlungen und offene Fragen.",
+      "summary": "In Sachsen hat die Polizei zwölf Sprengsätze an Stromtrassen gefunden. Die Ermittlungen laufen weiter, weitere Hintergründe sind in den vorliegenden Texten offen.",
+      "detail_summary": "Gesichert ist bislang vor allem der Fund von zwölf Sprengsätzen beziehungsweise Sprengvorrichtungen an Stromtrassen in Sachsen. Die Polizei sucht in Ostsachsen weiter, und Spezialisten konnten die Vorrichtungen nach einer Meldung entschärfen. Für die Nachricht ist das materiell, weil ein Angriff auf kritische Energieinfrastruktur nicht nur einen Einzelfall markiert, sondern Sicherheitsaufwand, Netzschutz und Ermittlungsdruck erhöht. Ein möglicher Wirkpfad liegt in zusätzlicher Absicherung von Leitungen und einer länger andauernden Fahndung. Offen bleibt, ob es weitere Funde, Tatverdächtige oder einen bestätigten Zusammenhang zu anderen Fällen gibt. Die Evidenzbasis ist derzeit auf kurze Sekundärmeldungen begrenzt; mehr als einen belastbaren Zwischenstand tragen die Quellen noch nicht.",
+      "why_relevant": "Der Fund an Stromtrassen betrifft kritische Infrastruktur und kann Sicherheitsaufwand, Ermittlungen und Schutzmaßnahmen auslösen.",
+      "topic": [
+        "Energie",
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Kritische Infrastruktur und mögliche Versorgungsstörungen betreffen viele Haushalte und Beschäftigte indirekt."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Energieinfrastruktur ist relevant, aber die Quellen nennen keine direkten Klima- oder Umwelteffekte."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Sabotage an Infrastruktur berührt öffentliche Sicherheit und staatliche Schutzfähigkeit."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Gefundene Sprengsätze",
+            "value": "zwölf",
+            "unit": "Stück",
+            "context": "Anzahl der laut Meldungen gefundenen Vorrichtungen"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte",
+          "haushalte"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-05T14:13:45.805Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-1b3323ad407f",
+        "slug": "sprengsatze-an-stromtrassen-in-sachsen-was-der-fund-fur-netzschutz-und-resilienz-b-1b3323",
+        "title": "Sprengsätze an Stromtrassen in Sachsen: Was der Fund für Netzschutz und Resilienz bedeutet",
+        "teaser": "In Ostsachsen sucht die Polizei weiter nach Hinweisen, nachdem zwölf Sprengsätze an Stromtrassen entdeckt wurden. Was folgt daraus systemisch?",
+        "published_at": "2026-09-05T14:23:20.689Z",
+        "updated_at": "2026-09-05T14:23:20.689Z"
+      },
+      "first_seen": "2026-09-05T07:36:46.000Z",
+      "last_updated": "2026-09-05T14:15:41.958Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-b41cee1ee68fadae72f2",
+      "case_file": {
+        "case_id": "case-4dc00cde414b35",
+        "member_count": 18,
+        "publisher_count": 13,
+        "members": [
+          {
+            "story_id": "wt-6c26e428b894e714",
+            "slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
+            "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+            "summary": "In Sachsen hat die Polizei zwölf Sprengsätze an Stromtrassen gefunden. Die Ermittlungen laufen weiter, weitere Hintergründe sind in den vorliegenden Texten offen.",
+            "updated_at": "2026-09-05T14:15:41.958Z",
+            "published_at": "2026-09-05T14:15:41.958Z",
+            "kind": "Ermittlungsstand",
+            "current": true
+          },
+          {
+            "story_id": "wt-4fb94d2cebfca746",
+            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+            "summary": "In Dormagen wurde an einem Umspannwerk ein verdächtiger Gegenstand gefunden. Die Polizei stuft den Fall nach einem Bekennerschreiben als möglichen Sabotagefall ein und fahndet nach einem Mann aus Gevelsberg.",
+            "updated_at": "2026-09-05T12:28:41.779Z",
+            "published_at": "2026-09-04T01:53:14.028Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-60f4e4d7d43fad99",
+            "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+            "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+            "summary": "Die Polizei fahndet weiter nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Es gibt Hinweise auf sprengstoffverdächtige Gegenstände, aber die Ermittlungen sind nach den Quellen weiter offen.",
+            "updated_at": "2026-09-05T12:28:41.779Z",
+            "published_at": "2026-09-04T17:41:38.182Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-33e396f2be1a3a1f",
+            "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
+            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+            "summary": "In Sachsen haben Ermittler Sprengvorrichtungen entdeckt, der Einsatz dauert an. Ein möglicher Zusammenhang zu Angriffen auf das Stromnetz in Brandenburg und NRW ist weiter offen.",
+            "updated_at": "2026-09-05T09:32:24.269Z",
+            "published_at": "2026-09-04T19:51:20.503Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-7b385f58748f3d32",
+            "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+            "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+            "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
+            "updated_at": "2026-09-05T09:18:31.212Z",
+            "published_at": "2026-09-04T10:09:13.371Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-f3d585eac14dec76",
+            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+            "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
+            "updated_at": "2026-09-05T09:18:31.212Z",
+            "published_at": "2026-09-04T02:07:51.145Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-f7d7115a53ff2c2f",
+            "slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
+            "title": "Bericht nennt wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage für Unternehmen",
+            "summary": "Wirtschaftsforscher sehen laut Bericht wachsende hybride Risiken für Unternehmen. Genannt werden unter anderem mögliche Auswirkungen auf Strom- und Wasserversorgung.",
+            "updated_at": "2026-09-05T09:18:31.212Z",
+            "published_at": "2026-09-05T03:07:38.569Z",
+            "kind": "Entscheidung oder Reaktion",
+            "current": false
+          },
+          {
+            "story_id": "wt-c053f94b1bbc57bd",
+            "slug": "angriffe-auf-umspannwerke-amprion-chef-will-fur-unternehmen-mehr-befugnisse-bc57bd",
+            "title": "Angriffe auf Umspannwerke: Amprion-Chef will für Unternehmen mehr Befugnisse",
+            "summary": "Amprion-Chef Christoph Müller fordert nach Angriffen auf das Stromnetz mehr Befugnisse für Unternehmen. Konkret geht es um erlaubte Drohnenüberflüge zur Leitungsüberwachung.",
+            "updated_at": "2026-09-05T09:17:13.256Z",
+            "published_at": "2026-09-05T09:17:13.256Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-00fccb632042b492",
+            "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
+            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+            "summary": "Die Polizei fahndet nach einem Mann aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen gegen Stromanlagen. Laut Bericht halten Ermittler zwei Bekennerschreiben wegen ihres Täterwissens für authentisch, die Unterschrift ist aber noch nicht abschließend geklärt.",
+            "updated_at": "2026-09-05T06:39:06.202Z",
+            "published_at": "2026-09-04T12:08:21.972Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-a5874ae28ed5533f",
+            "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
+            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+            "summary": "Die Polizei hat den Hambacher Forst nach einer Suche ohne Treffer wieder verlassen. Der WDR ordnet den Einsatz den Ermittlungen zu Sabotage an Stromanlagen zu.",
+            "updated_at": "2026-09-04T21:36:31.936Z",
+            "published_at": "2026-09-04T17:37:24.324Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-03c6bacdda808696",
+            "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
+            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+            "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
+            "updated_at": "2026-09-04T18:22:40.051Z",
+            "published_at": "2026-09-04T18:22:40.051Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-a6f6c9c60011b50c",
+            "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
+            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+            "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
+            "updated_at": "2026-09-04T17:41:54.741Z",
+            "published_at": "2026-09-04T17:41:54.741Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-cb1584ee4d9e6a43",
+            "slug": "stromversorgung-reul-polizei-sturmt-fahrzeug-von-sabotage-verdachtigem-9e6a43",
+            "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
+            "summary": "Die Polizei hat laut NRW-Innenminister Reul das Fahrzeug eines Sabotage-Verdächtigen gestürmt. Der Zugriff soll in Niederzier erfolgt sein, der Mann sei nun vermutlich zu Fuß unterwegs.",
+            "updated_at": "2026-09-04T16:09:09.120Z",
+            "published_at": "2026-09-04T16:09:09.120Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-1fbb056ccaaf351d",
+            "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
+            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+            "summary": "Die Polizei sucht bundesweit nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotage an der Energieversorgung. Ein Deutschlandfunk-Bericht nennt Bekennerschreiben, die die Ermittler für authentisch halten.",
+            "updated_at": "2026-09-04T15:52:29.187Z",
+            "published_at": "2026-09-04T11:12:12.390Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-5547189d2645384a",
+            "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
+            "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+            "summary": "In Gevelsberg lief ein SEK-Einsatz im Zusammenhang mit den Ermittlungen zu den Angriffen auf Umspannwerke. Der gesuchte 48-Jährige wurde dort nicht angetroffen, in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe.",
+            "updated_at": "2026-09-04T15:29:14.683Z",
+            "published_at": "2026-09-04T13:23:17.993Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ae0b9f22404b684",
+            "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
+            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
+            "updated_at": "2026-09-04T14:13:53.288Z",
+            "published_at": "2026-09-03T23:06:38.718Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-b9487671699d6c9b",
+            "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
+            "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
+            "summary": "Der WDR meldet zwei Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke. Die Ermittlungen prüfen Echtheit und mögliche Zusammenhänge in NRW und Brandenburg.",
+            "updated_at": "2026-09-04T01:53:45.231Z",
+            "published_at": "2026-09-04T01:53:45.231Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-9812656e38b0d665",
+            "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
+            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+            "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
+            "updated_at": "2026-09-03T22:22:49.015Z",
+            "published_at": "2026-09-03T22:22:49.015Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-05T07:36:46.000Z",
+      "published_at": "2026-09-05T14:15:41.958Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Ermittler weitere Sprengvorrichtungen oder Tatverdächtige finden.",
+          "source_id": "tagesspiegel-home",
+          "expected_by": null,
+          "measurable_indicator": "Neue Polizeimeldungen oder belastbare Medienberichte zu Funden oder Festnahmen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-1d1626a9b306b01d",
+          "announced_at": "2026-09-05T07:38:13.000Z",
+          "follow_up_date": "2026-09-12T14:15:41.958Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--angriffe-aufs-stromnetz--einsatz-in-sachsen-geht-weiter-38210826.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:36:46.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020817.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:38:13.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-38210826.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T13:26:55.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-16021488.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T13:58:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b14b47324d087353",
       "title_image": {
@@ -644,489 +1245,6 @@
       ]
     },
     {
-      "story_id": "wt-4fb94d2cebfca746",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-36fdffe34926aa7d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-56a338ea84c84a50-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4fb94d2cebfca746-d5b4e2e6708d0457-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-      "source_summary": "Mehrere Medien berichten über einen verdächtigen Fund an einem Umspannwerk in Dormagen. Nach Darstellung der Polizei wird der Vorfall als möglicher Sabotageakt oder Sabotagedelikt eingeordnet; in den Meldungen ist von einem Bekennerschreiben die Rede, dessen Echtheit in den gelieferten Texten nicht unabhängig geprüft wird.\n\nDer WDR meldet zudem eine Fahndung nach einem Mann aus Gevelsberg. Weitere Berichte erwähnen, dass an anderen Umspannwerken bereits am Dienstag Vorfälle gewesen seien. Aus dem gelieferten Material geht nicht hervor, ob der Gegenstand tatsächlich Schaden ausgelöst hat oder wie belastbar die Zuschreibungen im Einzelnen sind.",
-      "summary": "In Dormagen wurde an einem Umspannwerk ein verdächtiger Gegenstand gefunden. Die Polizei stuft den Fall nach einem Bekennerschreiben als möglichen Sabotagefall ein und fahndet nach einem Mann aus Gevelsberg.",
-      "detail_summary": "Gesichert ist aus den gelieferten Quellen vor allem der Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen. Mehrere Redaktionen berichten anschließend, die Polizei gehe von Sabotage aus; ein Bekennerschreiben wird erwähnt, seine Echtheit bleibt in den Quellen aber nicht unabhängig belegt. Für die Berichterstattung ist das materiell relevant, weil es um kritische Infrastruktur und damit um mögliche Störungen der Stromversorgung geht. Der Wirkpfad läge im schlimmsten Fall über beschädigte Anlagen, Ausfälle oder zusätzliche Sicherheitsmaßnahmen. Ob tatsächlich ein Schaden drohte oder ein Zusammenhang zu weiteren Vorfällen besteht, bleibt offen. Deshalb ist die Lage derzeit eher eine belastbare Erstmeldung als eine abgeschlossene Einordnung.",
-      "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur und damit potenziell Versorgungssicherheit, Sicherheitsaufwand und öffentliche Risikoabwägung. Schon ein einzelner Vorfall kann wegen der Systemrelevanz über den Einzelfall hinaus Bedeutung haben.",
-      "topic": [
-        "Politik",
-        "Wirtschaft",
-        "Energie",
-        "Gesellschaft"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Mögliche Folgen für Stromversorgung, Sicherheitsgefühl und Schutzaufwand sind erkennbar, konkrete Schäden sind aber nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist aus den Quellen nicht ersichtlich; mögliche Folgewirkungen bleiben offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Fall berührt den Schutz kritischer Infrastruktur und staatliche Sicherheits- und Ermittlungsfähigkeit, ohne dass ein demokratischer Verfahrensbruch belegt wäre."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "beschaeftigte",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "editorial_analysis": {
-        "analysis_id": "woek-analysis-2557713b0904",
-        "slug": "dormagen-was-der-sabotageverdacht-an-einem-umspannwerk-systemisch-bedeutet-255771",
-        "title": "Dormagen: Was der Sabotageverdacht an einem Umspannwerk systemisch bedeutet",
-        "teaser": "In Dormagen steht ein Umspannwerk im Fokus der Ermittler. Der Fall zeigt, wie schnell ein Verdacht an kritischer Infrastruktur Schutzaufwand, Risikoerwartungen und öffentliche Aufmerksamkeit verschiebt.",
-        "published_at": "2026-09-05T14:02:11.302Z",
-        "updated_at": "2026-09-05T14:02:11.302Z"
-      },
-      "first_seen": "2026-09-03T21:14:14.000Z",
-      "last_updated": "2026-09-05T12:28:41.779Z",
-      "version": 5,
-      "news_status": "preliminary",
-      "event_id": "event-73b1c53517b0e2f5118c",
-      "case_file": {
-        "case_id": "case-4dc00cde414b35",
-        "member_count": 17,
-        "publisher_count": 13,
-        "members": [
-          {
-            "story_id": "wt-4fb94d2cebfca746",
-            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-            "summary": "In Dormagen wurde an einem Umspannwerk ein verdächtiger Gegenstand gefunden. Die Polizei stuft den Fall nach einem Bekennerschreiben als möglichen Sabotagefall ein und fahndet nach einem Mann aus Gevelsberg.",
-            "updated_at": "2026-09-05T12:28:41.779Z",
-            "published_at": "2026-09-04T01:53:14.028Z",
-            "kind": "Ermittlungsstand",
-            "current": true
-          },
-          {
-            "story_id": "wt-60f4e4d7d43fad99",
-            "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
-            "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
-            "summary": "Die Polizei fahndet weiter nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Es gibt Hinweise auf sprengstoffverdächtige Gegenstände, aber die Ermittlungen sind nach den Quellen weiter offen.",
-            "updated_at": "2026-09-05T12:28:41.779Z",
-            "published_at": "2026-09-04T17:41:38.182Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-33e396f2be1a3a1f",
-            "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
-            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-            "summary": "In Sachsen haben Ermittler Sprengvorrichtungen entdeckt, der Einsatz dauert an. Ein möglicher Zusammenhang zu Angriffen auf das Stromnetz in Brandenburg und NRW ist weiter offen.",
-            "updated_at": "2026-09-05T09:32:24.269Z",
-            "published_at": "2026-09-04T19:51:20.503Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-7b385f58748f3d32",
-            "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
-            "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
-            "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
-            "updated_at": "2026-09-05T09:18:31.212Z",
-            "published_at": "2026-09-04T10:09:13.371Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-f3d585eac14dec76",
-            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
-            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-            "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
-            "updated_at": "2026-09-05T09:18:31.212Z",
-            "published_at": "2026-09-04T02:07:51.145Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-f7d7115a53ff2c2f",
-            "slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
-            "title": "Bericht nennt wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage für Unternehmen",
-            "summary": "Wirtschaftsforscher sehen laut Bericht wachsende hybride Risiken für Unternehmen. Genannt werden unter anderem mögliche Auswirkungen auf Strom- und Wasserversorgung.",
-            "updated_at": "2026-09-05T09:18:31.212Z",
-            "published_at": "2026-09-05T03:07:38.569Z",
-            "kind": "Entscheidung oder Reaktion",
-            "current": false
-          },
-          {
-            "story_id": "wt-c053f94b1bbc57bd",
-            "slug": "angriffe-auf-umspannwerke-amprion-chef-will-fur-unternehmen-mehr-befugnisse-bc57bd",
-            "title": "Angriffe auf Umspannwerke: Amprion-Chef will für Unternehmen mehr Befugnisse",
-            "summary": "Amprion-Chef Christoph Müller fordert nach Angriffen auf das Stromnetz mehr Befugnisse für Unternehmen. Konkret geht es um erlaubte Drohnenüberflüge zur Leitungsüberwachung.",
-            "updated_at": "2026-09-05T09:17:13.256Z",
-            "published_at": "2026-09-05T09:17:13.256Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-00fccb632042b492",
-            "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
-            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
-            "summary": "Die Polizei fahndet nach einem Mann aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen gegen Stromanlagen. Laut Bericht halten Ermittler zwei Bekennerschreiben wegen ihres Täterwissens für authentisch, die Unterschrift ist aber noch nicht abschließend geklärt.",
-            "updated_at": "2026-09-05T06:39:06.202Z",
-            "published_at": "2026-09-04T12:08:21.972Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-a5874ae28ed5533f",
-            "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
-            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-            "summary": "Die Polizei hat den Hambacher Forst nach einer Suche ohne Treffer wieder verlassen. Der WDR ordnet den Einsatz den Ermittlungen zu Sabotage an Stromanlagen zu.",
-            "updated_at": "2026-09-04T21:36:31.936Z",
-            "published_at": "2026-09-04T17:37:24.324Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-03c6bacdda808696",
-            "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
-            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
-            "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
-            "updated_at": "2026-09-04T18:22:40.051Z",
-            "published_at": "2026-09-04T18:22:40.051Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-a6f6c9c60011b50c",
-            "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
-            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
-            "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
-            "updated_at": "2026-09-04T17:41:54.741Z",
-            "published_at": "2026-09-04T17:41:54.741Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-cb1584ee4d9e6a43",
-            "slug": "stromversorgung-reul-polizei-sturmt-fahrzeug-von-sabotage-verdachtigem-9e6a43",
-            "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
-            "summary": "Die Polizei hat laut NRW-Innenminister Reul das Fahrzeug eines Sabotage-Verdächtigen gestürmt. Der Zugriff soll in Niederzier erfolgt sein, der Mann sei nun vermutlich zu Fuß unterwegs.",
-            "updated_at": "2026-09-04T16:09:09.120Z",
-            "published_at": "2026-09-04T16:09:09.120Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-1fbb056ccaaf351d",
-            "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
-            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
-            "summary": "Die Polizei sucht bundesweit nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotage an der Energieversorgung. Ein Deutschlandfunk-Bericht nennt Bekennerschreiben, die die Ermittler für authentisch halten.",
-            "updated_at": "2026-09-04T15:52:29.187Z",
-            "published_at": "2026-09-04T11:12:12.390Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-5547189d2645384a",
-            "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
-            "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
-            "summary": "In Gevelsberg lief ein SEK-Einsatz im Zusammenhang mit den Ermittlungen zu den Angriffen auf Umspannwerke. Der gesuchte 48-Jährige wurde dort nicht angetroffen, in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe.",
-            "updated_at": "2026-09-04T15:29:14.683Z",
-            "published_at": "2026-09-04T13:23:17.993Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-7ae0b9f22404b684",
-            "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
-            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
-            "updated_at": "2026-09-04T14:13:53.288Z",
-            "published_at": "2026-09-03T23:06:38.718Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-b9487671699d6c9b",
-            "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
-            "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
-            "summary": "Der WDR meldet zwei Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke. Die Ermittlungen prüfen Echtheit und mögliche Zusammenhänge in NRW und Brandenburg.",
-            "updated_at": "2026-09-04T01:53:45.231Z",
-            "published_at": "2026-09-04T01:53:45.231Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-9812656e38b0d665",
-            "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
-            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
-            "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
-            "updated_at": "2026-09-03T22:22:49.015Z",
-            "published_at": "2026-09-03T22:22:49.015Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-03T21:03:08.000Z",
-      "published_at": "2026-09-04T01:53:14.028Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ],
-          [
-            "tagesschau-access"
-          ],
-          [
-            "dlf-nachrichten"
-          ],
-          [
-            "stern-schlagzeilen"
-          ],
-          [
-            "spiegel-schlagzeilen"
-          ],
-          [
-            "tagesspiegel-home"
-          ],
-          [
-            "taz-aktuell"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 8,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "tagesschau-access",
-              "tagesschau-access"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 6
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "wdr-nachrichten",
-              "wdr-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die Ermittler den Fund als bestätigten Sabotageakt einstufen oder nur als Verdacht behandeln.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Offizielle Einordnung der Polizei oder Staatsanwaltschaft",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-71fe7d0ca37bce7e",
-          "announced_at": "2026-09-04T06:00:49.000Z",
-          "follow_up_date": "2026-09-11T06:06:52.464Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ergebnis der Expertenprüfung des Gegenstands am Umspannwerk",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizei oder Betreiber nennt gesicherte Einordnung des Gegenstands.",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-6cdbe9e8f974e3ab",
-          "announced_at": "2026-09-04T02:12:48.000Z",
-          "follow_up_date": "2026-09-11T02:21:50.081Z",
-          "status": "scheduled",
-          "origin_story_id": "wt-4855e13df47f18ed"
-        },
-        {
-          "claim": "Ob die Polizei den Fund als Sabotageversuch, harmlosen Gegenstand oder etwas anderes einordnet.",
-          "source_id": "tagesschau-access",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Einordnung des Fundes oder konkrete Ermittlungsmitteilung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-cd5dd6963599eba1",
-          "announced_at": "2026-09-04T00:30:02.000Z",
-          "follow_up_date": "2026-09-11T01:00:23.705Z",
-          "status": "scheduled",
-          "origin_story_id": "wt-7d3fabe103b78ce3"
-        },
-        {
-          "claim": "Wird die Polizei den Gegenstand als funktionsfähige Abschussvorrichtung einstufen?",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Einordnung des Fundes und mögliche technische Beschreibung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-8b70c8da46e59258",
-          "announced_at": "2026-09-04T00:48:10.000Z",
-          "follow_up_date": "2026-09-11T01:27:12.242Z",
-          "status": "scheduled",
-          "origin_story_id": "wt-7d3fabe103b78ce3"
-        },
-        {
-          "claim": "Die Polizei teilt weitere Erkenntnisse zur Echtheit des Bekennerschreibens mit.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue bestätigte oder zurückgenommene Aussagen zur Echtheit",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-ce9d748a66e3df21",
-          "announced_at": "2026-09-04T06:00:49.000Z",
-          "follow_up_date": "2026-09-11T09:22:10.498Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T09:04:21.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/wdr-moeglicherweise-sabotage-versuch-sensible-gegenstaende-bei-umspannwerk-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:45:01.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/dormagen-sabotage-versuch-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:37:43.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weiterer-polizeieinsatz-in-oldenburg-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T06:00:49.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/offenbar-erneut-sabotagedelikt-an-umspannwerk-diesmal-in-dormagen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T02:12:48.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-geht-von-sabotage-aus-38205422.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T00:39:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/panorama/justiz/dormagen-polizei-geht-von-versuchter-sabotage-an-umspannwerk-aus-a-db938d81-30d9-4f87-8a98-c8a8f147795d",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T01:06:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/umspannwerk-in-dormagen--polizei-untersucht-verdaechtigen-gegenstand-38205422.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:07:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-nach-angriffen-auf-stromnetz-16015959.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:03:08.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-weitere-polizeieinsaetze-in-oldenburg-und-aachen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T09:17:32.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Wer-ist-der-Mann-der-Stromnetze-angreift/!6210358",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:59:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/umspannwerk-sabotage-dormagen-verdaechtiger-gegenstand-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T02:29:46.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-umspannwerk-dormagen-sabotage-versuch-bundespraesident-buergerfest-spahn-klage-ski-aggu-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T04:50:24.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/sabotageversuch-an-umspannwerk-in-dormagen-bundesweite-fahndung-nach-tatverdaechtigem-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T10:29:27.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-998e73bf202ee8d2",
       "title_image": {
         "mode": "editorial",
@@ -1553,155 +1671,6 @@
           "url": "https://www.euronews.com/2026/09/03/federal-judge-blocks-trumps-new-bid-to-abolish-birthright-citizenship-citing-supreme-court",
           "source_type": "media_rss",
           "published_at": "2026-09-03T04:22:45.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4eb46eab6c6d9511",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4eb46eab6c6d9511-b1304c6f9418a364-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4eb46eab6c6d9511-e9ed34298b1ebf31-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4eb46eab6c6d9511-7a73748100880b9a-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511",
-      "title": "Krieg in der Ukraine: Trump schickt mal wieder seinen Schwiegersohn",
-      "source_summary": "Die taz meldet einen neuen diplomatischen Vorstoß von US-Präsident Donald Trump zur Beendigung des russischen Angriffskriegs gegen die Ukraine. Genannt werden Jared Kushner und Steve Witkoff als Gesandte, die am Wochenende nach Moskau und Kyjiw reisen sollen; laut Text ist ein Treffen mit Wladimir Putin in Moskau und anschließend ein Gespräch mit Wolodymyr Selenskyj in Kyjiw vorgesehen.\n\nTrump bezeichnete beide als „zwei großartige Verhandler“ und sagte, er habe sie geschickt, um zu prüfen, ob sich etwas erreichen lasse. Selenskyj erklärte zugleich, er schlage für die Gespräche eine Feuerpause vor. Im Text werden außerdem weitere gegenseitige Angriffe auf beiden Seiten und tote sowie verletzte Menschen in der Ukraine erwähnt.",
-      "summary": "Trump hat laut taz neue Gesandte für Ukraine-Gespräche auf den Weg geschickt. Der Bericht nennt mögliche Treffen in Moskau und Kyjiw sowie eine vorgeschlagene Feuerpause.",
-      "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem, dass Trump einen neuen Vermittlungsversuch im Ukraine-Krieg angekündigt hat und Kushner sowie Witkoff dafür in Stellung bringt. Die Meldung ordnet dazu konkrete Reise- und Gesprächspläne ein, nennt aber zugleich nur einen berichteten Stand, keinen abgeschlossenen Ablauf. Für die Nachricht ist relevant, dass damit ein erneuter diplomatischer Kanal eröffnet wird, der den Kriegsverlauf, Verhandlungserwartungen und die öffentliche Positionierung der Beteiligten beeinflussen kann. Ein möglicher Wirkpfad liegt in zusätzlichem Druck auf die Konfliktparteien, in der Vorbereitung möglicher Gespräche und in Signalwirkungen an Verbündete und Gegner. Unklar bleibt, ob daraus tatsächlich belastbare Verhandlungen, eine Feuerpause oder ein Kurswechsel folgen. Die Evidenz stammt hier nur aus einer journalistischen Quelle; unabhängige Bestätigung der Reise und ihres Ergebnisses liegt in den gelieferten Daten nicht vor.",
-      "why_relevant": "Die Meldung beschreibt eine neue US-Vermittlungsinitiative im laufenden Ukraine-Krieg und damit eine potenziell relevante Veränderung im diplomatischen Prozess.",
-      "topic": [
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Ein möglicher Verhandlungsimpuls kann sich auf Kriegsgeschehen, Schutz von Zivilisten und künftige Sicherheitslage auswirken."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Direkte Umweltfolgen sind aus der Meldung nicht belegbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die außenpolitische Entscheidungsfindung der USA und die öffentliche Verhandlungslage zwischen Kriegsparteien sind demokratisch relevant."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "1.0",
-      "media_checked_at": "2026-09-05T11:31:43.777Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-05T11:18:00.000Z",
-      "last_updated": "2026-09-05T11:33:36.533Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-a7ae25b42edeb7d3ac70",
-      "case_file": {
-        "case_id": "case-0e368539fdc9df",
-        "member_count": 5,
-        "publisher_count": 4,
-        "members": [
-          {
-            "story_id": "wt-4eb46eab6c6d9511",
-            "slug": "krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511",
-            "title": "Krieg in der Ukraine: Trump schickt mal wieder seinen Schwiegersohn",
-            "summary": "Trump hat laut taz neue Gesandte für Ukraine-Gespräche auf den Weg geschickt. Der Bericht nennt mögliche Treffen in Moskau und Kyjiw sowie eine vorgeschlagene Feuerpause.",
-            "updated_at": "2026-09-05T11:33:36.533Z",
-            "published_at": "2026-09-05T11:33:36.533Z",
-            "kind": "Neues Ereignis",
-            "current": true
-          },
-          {
-            "story_id": "wt-86783bc04f815007",
-            "slug": "us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007",
-            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
-            "summary": "Kushner und Witkoff sind laut der Meldung in Moskau zu Gesprächen über den Ukraine-Krieg eingetroffen. Danach sollen weitere Gespräche in Kiew folgen.",
-            "updated_at": "2026-09-05T11:33:20.789Z",
-            "published_at": "2026-09-05T11:33:20.789Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-1633927424587a06",
-            "slug": "ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06",
-            "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
-            "summary": "US-Unterhändler sollen nach Moskau reisen, ein Treffen mit Putin ist laut Meldung geplant. Danach ist erstmals auch ein Besuch in Kiew vorgesehen.",
-            "updated_at": "2026-09-05T11:13:44.645Z",
-            "published_at": "2026-09-05T11:13:44.645Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-d7a0af1afc831caf",
-            "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
-            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Selenskyj kündigt einen Besuch der US-Vermittler Witkoff und Kushner in Kiew an. Trump bestätigt die Reise und spricht von einem Vorschlag zur Beendigung des Krieges.",
-            "updated_at": "2026-09-05T05:32:14.214Z",
-            "published_at": "2026-09-04T20:51:47.279Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-b076e0c16bf4a2e8",
-            "slug": "iran-krieg-us-dieselpreis-auf-hochststand-f4a2e8",
-            "title": "Iran-Krieg: US-Dieselpreis auf Höchststand",
-            "summary": "Der US-Dieselpreis hat laut der Meldung einen neuen Höchststand erreicht. Genannt werden 5,85 Dollar pro Gallone und ein Vorjahreswert von 3,71 Dollar.",
-            "updated_at": "2026-09-04T13:53:07.692Z",
-            "published_at": "2026-09-04T13:53:07.692Z",
-            "kind": "Kontext oder Einordnung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-05T11:18:00.000Z",
-      "published_at": "2026-09-05T11:33:36.533Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "taz-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob Kushner und Witkoff tatsächlich in Moskau und Kyjiw eintreffen und mit den genannten Gesprächspartnern sprechen",
-          "source_id": "taz-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Berichte über Ankunft, Terminbestätigungen oder Treffen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-caca6f3115d4482f",
-          "announced_at": "2026-09-05T11:18:00.000Z",
-          "follow_up_date": "2026-09-12T11:33:36.533Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Krieg-in-der-Ukraine/!6210492",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T11:18:00.000Z",
           "primary_source": false
         }
       ]
@@ -8721,6 +8690,28 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-1b3323ad407f",
+      "story_id": "wt-6c26e428b894e714",
+      "slug": "sprengsatze-an-stromtrassen-in-sachsen-was-der-fund-fur-netzschutz-und-resilienz-b-1b3323",
+      "title": "Sprengsätze an Stromtrassen in Sachsen: Was der Fund für Netzschutz und Resilienz bedeutet",
+      "subtitle": "Zwölf Vorrichtungen, laufende Suche, offene Hintergründe: Die Lage ist sicherheitsrelevant, aber der Wirkungsbefund bleibt vorläufig.",
+      "teaser": "In Ostsachsen sucht die Polizei weiter nach Hinweisen, nachdem zwölf Sprengsätze an Stromtrassen entdeckt wurden. Was folgt daraus systemisch?",
+      "published_at": "2026-09-05T14:23:20.689Z",
+      "updated_at": "2026-09-05T14:23:20.689Z",
+      "reading_time_minutes": 5
+    },
+    {
+      "analysis_id": "woek-analysis-cf42f2c67306",
+      "story_id": "wt-3d901522efd87e2d",
+      "slug": "dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2",
+      "title": "Dreitägige Angriffspause auf Kyjiw: Was die neue Vermittlungsphase wirklich verändert",
+      "subtitle": "Zwischen militärischer Unterbrechung und diplomatischem Signal bleibt die Reichweite der Wirkung vorläufig.",
+      "teaser": "Putin soll eine dreitägige Pause der Luftangriffe auf Kyjiw angeordnet haben. Zugleich reisen US-Gesandte zu Gesprächen nach Moskau und Kyjiw.",
+      "published_at": "2026-09-05T14:17:38.262Z",
+      "updated_at": "2026-09-05T14:17:38.262Z",
+      "reading_time_minutes": 5
+    },
     {
       "analysis_id": "woek-analysis-39ddf0b6cc39",
       "story_id": "wt-98ff7e403362fdf9",
