@@ -39,7 +39,6 @@ jobs:
       NO_NEW_VERCEL_BUILD: "true"
       WOEK_PARLIAMENT_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/parliament-impact-visual"
       WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
-      CANDIDATE_DIR: ${{ runner.temp }}/parliament-impact-visuals
     steps:
       - name: Validate exact commit input
         shell: bash
@@ -73,6 +72,7 @@ jobs:
         shell: bash
         env:
           COMMIT_SHA: ${{ inputs.commit_sha }}
+          CANDIDATE_DIR: ${{ runner.temp }}/parliament-impact-visuals
         run: node scripts/parliament/impact-visuals/generate-reference-scene.mjs --execute --commit "$COMMIT_SHA" --output "$CANDIDATE_DIR"
 
       - name: Upload fail-closed candidate artifact
