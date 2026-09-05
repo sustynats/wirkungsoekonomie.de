@@ -1,7 +1,556 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T17:36:24.715Z",
+  "updated_at": "2026-09-05T17:51:35.693Z",
   "stories": [
+    {
+      "story_id": "wt-ba90052729946ae3",
+      "slug": "gesprache-uber-friedensabkommen-us-sondergesandte-in-moskau-eingetroffen-946ae3",
+      "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+      "first_seen": "2026-09-05T17:17:47.000Z",
+      "last_updated": "2026-09-05T17:52:55.835Z",
+      "published_at": "2026-09-05T17:52:55.835Z",
+      "updated_at": "2026-09-05T17:52:55.835Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+          "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+          "summary": "In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T17:17:47.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987",
+          "source_item_id": "3b07aa287e50b1bbf027019a2483375c05efa7365a4acb4f008cee14ce106321",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T17:17:47.000Z",
+          "ingested_at": "2026-09-05T17:51:35.693Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ba90052729946ae3-v1-claim-1",
+          "story_id": "wt-ba90052729946ae3",
+          "claim": "In Moskau haben kurzfristig anberaumte neue Gespräche zwischen Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+              "excerpt_hash": "bbb0ef6df53fe1640f1f",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:52:55.835Z"
+        },
+        {
+          "claim_id": "wt-ba90052729946ae3-v1-claim-2",
+          "story_id": "wt-ba90052729946ae3",
+          "claim": "Putin hat die beiden Gesandten von US-Präsident Trump im Kreml empfangen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+              "excerpt_hash": "bbb0ef6df53fe1640f1f",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:52:55.835Z"
+        },
+        {
+          "claim_id": "wt-ba90052729946ae3-v1-claim-3",
+          "story_id": "wt-ba90052729946ae3",
+          "claim": "Nach dem Moskau-Besuch werden Kushner und Witkoff voraussichtlich weiter in die Ukraine reisen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+              "excerpt_hash": "1232a97e07d4b41a7fc1",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:52:55.835Z"
+        },
+        {
+          "claim_id": "wt-ba90052729946ae3-v1-claim-4",
+          "story_id": "wt-ba90052729946ae3",
+          "claim": "In Kiew werden nach der Meldung zwei ranghohe US-Vertreter erwartet.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+              "excerpt_hash": "1232a97e07d4b41a7fc1",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:52:55.835Z"
+        },
+        {
+          "claim_id": "wt-ba90052729946ae3-v1-claim-5",
+          "story_id": "wt-ba90052729946ae3",
+          "claim": "Der Kreml-Sprecher teilte mit, Putin habe für drei Tage weitere Angriffe auf Kiew untersagt.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+              "excerpt_hash": "224da4d45aff7a7de1bb",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:52:55.835Z"
+        },
+        {
+          "claim_id": "wt-ba90052729946ae3-v1-claim-6",
+          "story_id": "wt-ba90052729946ae3",
+          "claim": "Selenskyj sagte, die Ukraine sei bereit, ebenfalls bis Montag auf Luftangriffe auf Moskau zu verzichten, falls Russland sich daran halte.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+              "excerpt_hash": "224da4d45aff7a7de1bb",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-05T17:52:55.835Z"
+        }
+      ],
+      "event_id": "event-01e6cd4e390eda19a265",
+      "event_first_seen_at": "2026-09-05T17:36:24.715Z",
+      "event_detected_at": "2026-09-05T17:36:24.715Z",
+      "verification_started_at": "2026-09-05T17:52:36.037Z",
+      "publish_ready_at": "2026-09-05T17:52:55.835Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-05T17:51:35.693Z",
+        "fingerprint": "a983d6c3fbf2106a3a1d9f5de0dd20addd25782e704d208025279b7f0345a453",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob Kushner und Witkoff nach dem Moskau-Besuch tatsächlich in die Ukraine weiterreisen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Reiseberichte oder bestätigte Termine in Kiew",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e973b3fadf8627bc",
+          "announced_at": "2026-09-05T17:17:47.000Z",
+          "follow_up_date": "2026-09-12T17:52:55.835Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "e8791ab952453e52d6703e23d1d2dc97b6e9286997a30dbaf166b61a949c4ed3",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "In Moskau haben am Abend kurzfristig angesetzte neue Gespräche zum Ukraine-Krieg begonnen. Nach der Meldung empfing Kremlchef Wladimir Putin die US-Unterhändler Witkoff und Kushner im Kreml; beide werden als Gesandte von US-Präsident Trump beschrieben.\n\nDer Bericht nennt zudem die Aussicht, dass die beiden nach dem Moskau-Besuch weiter in die Ukraine reisen. In Kiew würden dann zwei ranghohe US-Vertreter erwartet. Außerdem wird auf eine dreitägige Pause weiterer Angriffe auf Kiew verwiesen, die Putin angeordnet haben soll; Selenskyj habe eine spiegelbildliche Zurückhaltung bis Montag angeboten, falls Russland daran festhalte.",
+      "analysis": {
+        "story_id": "wt-ba90052729946ae3",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Putin hat in Moskau US-Unterhändler empfangen, die über den Ukraine-Krieg sprechen. Weitere Termine in Kiew und eine dreitägige Angriffspause werden in der Meldung ebenfalls genannt.",
+        "detail_summary": "Gesichert ist zunächst, dass in Moskau neue Gespräche zum Ukraine-Krieg begonnen haben und Putin die US-Unterhändler Witkoff und Kushner im Kreml empfing. Die Meldung ordnet sie als Gesandte von Präsident Trump ein und stellt einen möglichen Anschlussbesuch in der Ukraine in Aussicht. Politisch relevant ist das, weil der Vorgang die diplomatischen Kontakte zwischen den USA, Russland und der Ukraine direkt betrifft. Ein möglicher Wirkpfad liegt darin, dass solche Kontakte die Verhandlungsoptionen, die militärische Lage rund um Kiew und die öffentliche Erwartung an eine Feuerpause verändern. Als mögliche Folge nennt die Quelle weitere Gespräche in Kiew sowie eine befristete Reduktion von Angriffen. Offen bleibt, ob daraus belastbare Schritte zu einem Friedensabkommen entstehen und wie verlässlich die angekündigten oder behaupteten Pausen tatsächlich greifen.",
+        "why_relevant": "Die Meldung beschreibt direkte hochrangige Kontakte zwischen den Konfliktparteien und mögliche kurzfristige Änderungen im militärisch-diplomatischen Ablauf. Das kann Anreize, Sicherheitslage und Verhandlungsdynamik beeinflussen.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind mittelbar viele Menschen in der Ukraine und in Russland durch mögliche Änderungen bei Angriffen, Verhandlungen und Sicherheit."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Die Quelle nennt keine unmittelbaren Umweltfolgen; ein indirekter Zusammenhang ist hier nicht belastbar belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Gespräche berühren Kriegsverhandlungen und diplomatische Entscheidungswege, also einen relevanten Teil politischer Steuerung."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Gespräche können den Wirkpfad für eine begrenzte Deeskalation, für neue Verhandlungsangebote oder für eine Verschiebung militärischer Erwartungen öffnen. Materiell ist das vor allem wegen der betroffenen Bevölkerung, der sicherheitspolitischen Lage und der möglichen Signalwirkung auf weitere Verhandlungen.",
+        "impact_risks": [
+          "Eine kurzfristig angekündigte Angriffspause könnte nicht eingehalten werden und die Lage weiter verschärfen.",
+          "Verhandlungsimpulse könnten propagandistisch genutzt werden, ohne substantielle Fortschritte zu erzeugen.",
+          "Scheitert die Kommunikation, kann das Vertrauen in Vermittlungsversuche sinken."
+        ],
+        "mechanisms": [
+          "Direkte Gespräche können neue diplomatische Optionen eröffnen.",
+          "Angekündigte Pausen können taktische Bewegungen beeinflussen.",
+          "Öffentliche Signale können Erwartung und Druck auf die Konfliktparteien verändern."
+        ],
+        "first_order": [
+          "Fortsetzung der Gespräche und mögliche Reise nach Kiew.",
+          "Kurzfristige Änderungen bei Angriffen oder Einsatzmustern."
+        ],
+        "second_order": [
+          "Veränderte Verhandlungsbereitschaft und neue Forderungen der Konfliktparteien.",
+          "Höherer politischer Druck auf Russland, Ukraine und USA, konkrete Zusagen zu machen."
+        ],
+        "third_order": [
+          "Mögliche Verschiebung der Kriegsdynamik, falls aus den Kontakten ein tragfähiger Verhandlungsprozess entsteht.",
+          "Oder zunehmende Ernüchterung, falls die Gespräche ohne überprüfbare Resultate bleiben."
+        ],
+        "systemic_relevance": "Der Vorgang ist systemrelevant, weil er in einen laufenden Krieg und in internationale Vermittlungsbemühungen hineinwirkt. Selbst befristete Pausen oder neue Gespräche können die Lage an der Front und die diplomatische Taktung spürbar verändern.",
+        "transformation_potential": "Transformativ wäre der Vorgang nur, wenn aus den Kontakten überprüfbare Vereinbarungen, dauerhafte Schutzregeln oder ein belastbarer Verhandlungsrahmen entstehen. Dafür liefert die Quelle noch keinen Beleg.",
+        "resilience": "Resilienz steigt nur dann, wenn kurzfristige Deeskalation tatsächlich eingehalten wird und weitere Gespräche folgen. Die Evidenz reicht dafür noch nicht über eine ex-ante Möglichkeit hinaus.",
+        "side_effects": [
+          "Kurzfristige Entspannung kann auch zur Neuordnung militärischer Positionen genutzt werden.",
+          "Eine unklare Kommunikation über Pausen kann Fehlinterpretationen und neue Eskalationsrisiken erzeugen."
+        ],
+        "uncertainties": [
+          "Ob die Reise nach Kiew tatsächlich stattfindet, ist noch offen.",
+          "Ob die genannte Angriffspause eingehalten wird, ist nicht belegt.",
+          "Ob die Gespräche zu konkreten Vereinbarungen führen, bleibt offen."
+        ],
+        "evidence_level": "medium",
+        "attribution": "Quelle: Deutschlandfunk; Sprecherzuordnung teils als Bericht über Kreml- und Selenskyj-Aussagen, nicht als unabhängige Verifikation. Die Meldung ist journalistisch vermittelt und beruht hier nur auf einer gelieferten Sekundärquelle.",
+        "watch_next": [
+          "Bestätigung der Weiterreise nach Kiew.",
+          "Weitere Angaben zu Gesprächsergebnissen oder Vereinbarungen.",
+          "Beobachtbare Einhaltung oder Verletzung der genannten Angriffspause."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Gegenüber der Vorstufe liegt der bestbelegte neue Kern darin, dass die Gespräche in Moskau begonnen haben und Putin die US-Unterhändler empfangen hat. Das ist für den laufenden Krieg und mögliche Deeskalation materiell relevant; die Beleglage bleibt jedoch journalistisch vermittelt und nicht unabhängig bestätigt."
+        },
+        "publication_recommendation": true,
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-05T17:51:35.693Z",
+        "media_trigger_fingerprint": "9a9701e868f203c7653c95993054813abf2870a1956e192724c6f0f7dbe8fd60",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "9a9701e868f203c7653c95993054813abf2870a1956e192724c6f0f7dbe8fd60",
+          "content_fingerprint": "e085dc987197ec8102cf5c73c60ea34f06f9ec7c78f68b8d0caf672338d56fca",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T17:52:55.835Z",
+          "content_hash": "e8791ab952453e52d6703e23d1d2dc97b6e9286997a30dbaf166b61a949c4ed3",
+          "source_summary": "In Moskau haben am Abend kurzfristig angesetzte neue Gespräche zum Ukraine-Krieg begonnen. Nach der Meldung empfing Kremlchef Wladimir Putin die US-Unterhändler Witkoff und Kushner im Kreml; beide werden als Gesandte von US-Präsident Trump beschrieben.\n\nDer Bericht nennt zudem die Aussicht, dass die beiden nach dem Moskau-Besuch weiter in die Ukraine reisen. In Kiew würden dann zwei ranghohe US-Vertreter erwartet. Außerdem wird auf eine dreitägige Pause weiterer Angriffe auf Kiew verwiesen, die Putin angeordnet haben soll; Selenskyj habe eine spiegelbildliche Zurückhaltung bis Montag angeboten, falls Russland daran festhalte.",
+          "analysis": {
+            "story_id": "wt-ba90052729946ae3",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Putin hat in Moskau US-Unterhändler empfangen, die über den Ukraine-Krieg sprechen. Weitere Termine in Kiew und eine dreitägige Angriffspause werden in der Meldung ebenfalls genannt.",
+            "detail_summary": "Gesichert ist zunächst, dass in Moskau neue Gespräche zum Ukraine-Krieg begonnen haben und Putin die US-Unterhändler Witkoff und Kushner im Kreml empfing. Die Meldung ordnet sie als Gesandte von Präsident Trump ein und stellt einen möglichen Anschlussbesuch in der Ukraine in Aussicht. Politisch relevant ist das, weil der Vorgang die diplomatischen Kontakte zwischen den USA, Russland und der Ukraine direkt betrifft. Ein möglicher Wirkpfad liegt darin, dass solche Kontakte die Verhandlungsoptionen, die militärische Lage rund um Kiew und die öffentliche Erwartung an eine Feuerpause verändern. Als mögliche Folge nennt die Quelle weitere Gespräche in Kiew sowie eine befristete Reduktion von Angriffen. Offen bleibt, ob daraus belastbare Schritte zu einem Friedensabkommen entstehen und wie verlässlich die angekündigten oder behaupteten Pausen tatsächlich greifen.",
+            "why_relevant": "Die Meldung beschreibt direkte hochrangige Kontakte zwischen den Konfliktparteien und mögliche kurzfristige Änderungen im militärisch-diplomatischen Ablauf. Das kann Anreize, Sicherheitslage und Verhandlungsdynamik beeinflussen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind mittelbar viele Menschen in der Ukraine und in Russland durch mögliche Änderungen bei Angriffen, Verhandlungen und Sicherheit."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Die Quelle nennt keine unmittelbaren Umweltfolgen; ein indirekter Zusammenhang ist hier nicht belastbar belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Gespräche berühren Kriegsverhandlungen und diplomatische Entscheidungswege, also einen relevanten Teil politischer Steuerung."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Gespräche können den Wirkpfad für eine begrenzte Deeskalation, für neue Verhandlungsangebote oder für eine Verschiebung militärischer Erwartungen öffnen. Materiell ist das vor allem wegen der betroffenen Bevölkerung, der sicherheitspolitischen Lage und der möglichen Signalwirkung auf weitere Verhandlungen.",
+            "impact_risks": [
+              "Eine kurzfristig angekündigte Angriffspause könnte nicht eingehalten werden und die Lage weiter verschärfen.",
+              "Verhandlungsimpulse könnten propagandistisch genutzt werden, ohne substantielle Fortschritte zu erzeugen.",
+              "Scheitert die Kommunikation, kann das Vertrauen in Vermittlungsversuche sinken."
+            ],
+            "mechanisms": [
+              "Direkte Gespräche können neue diplomatische Optionen eröffnen.",
+              "Angekündigte Pausen können taktische Bewegungen beeinflussen.",
+              "Öffentliche Signale können Erwartung und Druck auf die Konfliktparteien verändern."
+            ],
+            "first_order": [
+              "Fortsetzung der Gespräche und mögliche Reise nach Kiew.",
+              "Kurzfristige Änderungen bei Angriffen oder Einsatzmustern."
+            ],
+            "second_order": [
+              "Veränderte Verhandlungsbereitschaft und neue Forderungen der Konfliktparteien.",
+              "Höherer politischer Druck auf Russland, Ukraine und USA, konkrete Zusagen zu machen."
+            ],
+            "third_order": [
+              "Mögliche Verschiebung der Kriegsdynamik, falls aus den Kontakten ein tragfähiger Verhandlungsprozess entsteht.",
+              "Oder zunehmende Ernüchterung, falls die Gespräche ohne überprüfbare Resultate bleiben."
+            ],
+            "systemic_relevance": "Der Vorgang ist systemrelevant, weil er in einen laufenden Krieg und in internationale Vermittlungsbemühungen hineinwirkt. Selbst befristete Pausen oder neue Gespräche können die Lage an der Front und die diplomatische Taktung spürbar verändern.",
+            "transformation_potential": "Transformativ wäre der Vorgang nur, wenn aus den Kontakten überprüfbare Vereinbarungen, dauerhafte Schutzregeln oder ein belastbarer Verhandlungsrahmen entstehen. Dafür liefert die Quelle noch keinen Beleg.",
+            "resilience": "Resilienz steigt nur dann, wenn kurzfristige Deeskalation tatsächlich eingehalten wird und weitere Gespräche folgen. Die Evidenz reicht dafür noch nicht über eine ex-ante Möglichkeit hinaus.",
+            "side_effects": [
+              "Kurzfristige Entspannung kann auch zur Neuordnung militärischer Positionen genutzt werden.",
+              "Eine unklare Kommunikation über Pausen kann Fehlinterpretationen und neue Eskalationsrisiken erzeugen."
+            ],
+            "uncertainties": [
+              "Ob die Reise nach Kiew tatsächlich stattfindet, ist noch offen.",
+              "Ob die genannte Angriffspause eingehalten wird, ist nicht belegt.",
+              "Ob die Gespräche zu konkreten Vereinbarungen führen, bleibt offen."
+            ],
+            "evidence_level": "medium",
+            "attribution": "Quelle: Deutschlandfunk; Sprecherzuordnung teils als Bericht über Kreml- und Selenskyj-Aussagen, nicht als unabhängige Verifikation. Die Meldung ist journalistisch vermittelt und beruht hier nur auf einer gelieferten Sekundärquelle.",
+            "watch_next": [
+              "Bestätigung der Weiterreise nach Kiew.",
+              "Weitere Angaben zu Gesprächsergebnissen oder Vereinbarungen.",
+              "Beobachtbare Einhaltung oder Verletzung der genannten Angriffspause."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber der Vorstufe liegt der bestbelegte neue Kern darin, dass die Gespräche in Moskau begonnen haben und Putin die US-Unterhändler empfangen hat. Das ist für den laufenden Krieg und mögliche Deeskalation materiell relevant; die Beleglage bleibt jedoch journalistisch vermittelt und nicht unabhängig bestätigt."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-05T17:51:35.693Z",
+            "media_trigger_fingerprint": "9a9701e868f203c7653c95993054813abf2870a1956e192724c6f0f7dbe8fd60",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "9a9701e868f203c7653c95993054813abf2870a1956e192724c6f0f7dbe8fd60",
+              "content_fingerprint": "e085dc987197ec8102cf5c73c60ea34f06f9ec7c78f68b8d0caf672338d56fca",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-ba90052729946ae3-v1-claim-1",
+              "story_id": "wt-ba90052729946ae3",
+              "claim": "In Moskau haben kurzfristig anberaumte neue Gespräche zwischen Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+                  "excerpt_hash": "bbb0ef6df53fe1640f1f",
+                  "checked_at": "2026-09-05T17:52:55.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            },
+            {
+              "claim_id": "wt-ba90052729946ae3-v1-claim-2",
+              "story_id": "wt-ba90052729946ae3",
+              "claim": "Putin hat die beiden Gesandten von US-Präsident Trump im Kreml empfangen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+                  "excerpt_hash": "bbb0ef6df53fe1640f1f",
+                  "checked_at": "2026-09-05T17:52:55.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            },
+            {
+              "claim_id": "wt-ba90052729946ae3-v1-claim-3",
+              "story_id": "wt-ba90052729946ae3",
+              "claim": "Nach dem Moskau-Besuch werden Kushner und Witkoff voraussichtlich weiter in die Ukraine reisen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+                  "excerpt_hash": "1232a97e07d4b41a7fc1",
+                  "checked_at": "2026-09-05T17:52:55.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            },
+            {
+              "claim_id": "wt-ba90052729946ae3-v1-claim-4",
+              "story_id": "wt-ba90052729946ae3",
+              "claim": "In Kiew werden nach der Meldung zwei ranghohe US-Vertreter erwartet.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+                  "excerpt_hash": "1232a97e07d4b41a7fc1",
+                  "checked_at": "2026-09-05T17:52:55.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            },
+            {
+              "claim_id": "wt-ba90052729946ae3-v1-claim-5",
+              "story_id": "wt-ba90052729946ae3",
+              "claim": "Der Kreml-Sprecher teilte mit, Putin habe für drei Tage weitere Angriffe auf Kiew untersagt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+                  "excerpt_hash": "224da4d45aff7a7de1bb",
+                  "checked_at": "2026-09-05T17:52:55.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            },
+            {
+              "claim_id": "wt-ba90052729946ae3-v1-claim-6",
+              "story_id": "wt-ba90052729946ae3",
+              "claim": "Selenskyj sagte, die Ukraine sei bereit, ebenfalls bis Montag auf Luftangriffe auf Moskau zu verzichten, falls Russland sich daran halte.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+                  "excerpt_hash": "224da4d45aff7a7de1bb",
+                  "checked_at": "2026-09-05T17:52:55.835Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-05T17:52:55.835Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+              "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-05T17:52:55.835Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-b7731e34d04dd290-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "b7731e34d04dd290deef262b4bf0fca29e070b7fe4e12b90089a324b5a345e79"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-dfe61a8bbf389ad6-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "dfe61a8bbf389ad65c5aa3d93eab7150314f7956bd4e04221f98f41fcfe68b2a"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-ffb38514efffc00f-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "ffb38514efffc00fd19efd6fbdcb1ba129031edbb79aea0f09fdec198eac8f2d"
+        },
+        "source_visual": null,
+        "fingerprint": "88b1a9fe62a570beaaadd98623cdb68f1a06e01d727c0ca220c1ec3af6463b69",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-05T17:54:21.658Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-6a7145e6dc679f95",
       "slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
@@ -1172,126 +1721,6 @@
       "retirement_history": []
     },
     {
-      "story_id": "wt-ba90052729946ae3",
-      "slug": "gesprache-uber-friedensabkommen-us-sondergesandte-in-moskau-eingetroffen-946ae3",
-      "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
-      "first_seen": "2026-09-05T17:17:47.000Z",
-      "last_updated": "2026-09-05T17:17:47.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
-          "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
-          "summary": "In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T17:17:47.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987",
-          "source_item_id": "3b07aa287e50b1bbf027019a2483375c05efa7365a4acb4f008cee14ce106321",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T17:17:47.000Z",
-          "ingested_at": "2026-09-05T17:36:24.715Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-ba90052729946ae3-claim-01",
-          "story_id": "wt-ba90052729946ae3",
-          "claim": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen: In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T17:36:24.715Z"
-        }
-      ],
-      "content_hash": "e8791ab952453e52d6703e23d1d2dc97b6e9286997a30dbaf166b61a949c4ed3",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-05T17:36:24.715Z",
-      "event_first_seen_at": "2026-09-05T17:36:24.715Z",
-      "event_detected_at": "2026-09-05T17:36:24.715Z",
-      "event_id": "event-01e6cd4e390eda19a265",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 18.628583333333335,
-        "detection_delay_minutes": 18.628583333333335,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-05T17:36:24.715Z",
-        "fingerprint": "a983d6c3fbf2106a3a1d9f5de0dd20addd25782e704d208025279b7f0345a453",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
       "story_id": "wt-166e870242fc37e6",
       "slug": "verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6",
       "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
@@ -1325,7 +1754,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T17:11:39.000Z",
-          "ingested_at": "2026-09-05T17:36:24.715Z",
+          "ingested_at": "2026-09-05T17:51:35.693Z",
           "provenance": {
             "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
@@ -1356,7 +1785,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T11:06:25.000Z",
-          "ingested_at": "2026-09-05T17:36:24.715Z",
+          "ingested_at": "2026-09-05T17:51:35.693Z",
           "provenance": {
             "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
@@ -1383,7 +1812,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T17:36:24.715Z"
+          "checked_at": "2026-09-05T17:51:35.693Z"
         },
         {
           "claim_id": "wt-166e870242fc37e6-claim-02",
@@ -1403,19 +1832,19 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T17:36:24.715Z"
+          "checked_at": "2026-09-05T17:51:35.693Z"
         }
       ],
       "content_hash": "51c7a77ddf1291eb640acc3517b233a592ccab4939b2f5106a5c159b97438786",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-05T17:36:24.715Z",
+      "updated_at": "2026-09-05T17:51:35.693Z",
       "event_first_seen_at": "2026-09-05T17:36:24.715Z",
       "event_detected_at": "2026-09-05T17:36:24.715Z",
       "event_id": "event-165020cd14b0b8c7db2e",
@@ -1443,23 +1872,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 24.761916666666668,
+        "source_age_minutes": 39.94488333333334,
         "detection_delay_minutes": 24.761916666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.182966666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T17:36:24.715Z",
+        "checked_at": "2026-09-05T17:51:35.693Z",
         "fingerprint": "accbbda8b9e7d7b35a08bcd09d37bc0858c82e58ec63286fc55ecb4d72a1fb21",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T17:51:35.693Z",
+      "rejection": {
+        "at": "2026-09-05T17:51:35.693Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -4389,9 +4830,26 @@
         "generated_at": "2026-09-05T14:17:36.644Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-05T15:11:13.065Z",
-        "content_hash": "19659e8e666e80a8094fc7fbb6eb3b5ef35f26e2e5482a35cfa64cfa74f8e9eb",
+      "living_file": {
+        "merged_story_ids": [
+          "wt-02fdc359b05b6427"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-05T15:11:13.065Z",
+            "story_id": "wt-02fdc359b05b6427",
+            "slug": "ukraine-news-putin-verkundet-dreitagigen-angriffsstopp-auf-kiew-5b6427",
+            "title": "Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
+      },
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "0732e372b85a01037d47a178cc83634bc786c200f937c8ab7356faa6228d3bff",
+        "checked_at": "2026-09-05T17:51:35.693Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T23:51:35.693Z",
         "sources": [
           {
             "source_id": "dw-news",
@@ -4447,41 +4905,12 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T13:53:54.000Z",
-            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
-          }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": true,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
-          "fingerprint": "9eb21fc79fb90c9c3d3a3626adc2eed4c4ac5b3faa5cc00767a54bf0e2fe63db",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      },
-      "living_file": {
-        "merged_story_ids": [
-          "wt-02fdc359b05b6427"
-        ],
-        "consolidations": [
-          {
-            "at": "2026-09-05T15:11:13.065Z",
-            "story_id": "wt-02fdc359b05b6427",
-            "slug": "ukraine-news-putin-verkundet-dreitagigen-angriffsstopp-auf-kiew-5b6427",
-            "title": "Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew",
-            "reason": "specific_object_or_leading_document"
           }
         ]
       }
@@ -10290,10 +10719,10 @@
       ],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "fe128623dbfa45d7f3db8d2526e22c938c54e6de9e800b518a922832c022f2e9",
-        "checked_at": "2026-09-05T17:06:26.753Z",
+        "fingerprint": "3e0de4bb76b896f3fc966f6a865a45a433d3f4054797113795a96716718f5dd5",
+        "checked_at": "2026-09-05T17:51:35.693Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T23:06:26.753Z",
+        "expires_at": "2026-09-05T23:51:35.693Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -10350,7 +10779,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T05:30:02.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
             "provenance": {
               "origin": "publisher:tagesschau",
               "basis": "publisher_resolved_from_registered_target_url",
@@ -10508,7 +10937,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T13:33:07.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
             "provenance": {
               "origin": "publisher:swr",
               "basis": "publisher_only_origin_unverified",
@@ -10539,451 +10968,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T17:05:00.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
-            "provenance": {
-              "origin": "publisher:zdfheute",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
-            "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
-            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T19:34:28.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
-            "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T19:34:28.000Z",
-            "ingested_at": "2026-09-05T08:51:16.120Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
-            "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
-            "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magdeburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:54:53.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "fdf3059172229772727d508a76d7d49f5ab40351e811e9d93893b38a9225db0c",
-            "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:54:53.000Z",
-            "ingested_at": "2026-09-05T11:59:56.834Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/panorama/in-bitterfeld-wolfen-liegt-die-demokratiefoerderung-auf-eis-38121574.html",
-            "title": "Sachsen-Anhalt vor der Wahl: Ist Bitterfeld bald überall?",
-            "summary": "In Bitterfeld-Wolfen hat die AfD die Bedingungen für das größte Demokratieförderprogramm massiv verändert. Nun fließen gar keine Gelder mehr. Was das für die Stadt bedeutet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T07:41:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3dc55c55677f78a4eaf8236861b571b5ffa5c0b1e03a7614bfa0c572a173c429",
-            "source_item_id": "76a645c64c8f56c4bd49ee9b0dbb72c34b186507734c7a921433d8d29d9bea72",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T07:41:00.000Z",
-            "ingested_at": "2026-09-05T08:51:16.120Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-demokratie-veranstaltungen-100,demonstrationen-110.html",
-            "title": "Veranstaltungen und Demonstrationen vor der Wahl Sachsen-Anhalt – Aktuelle Entwicklungen",
-            "summary": "Einen Tag vor der Landtagswahl finden in ganz Sachsen-Anhalt Demonstrationen und Feste für Demokratie statt. Die aktuelle Lage – live im Ticker.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T13:08:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "7ef86881460778cf16a7074725e8d2283314b02c4e560be4fd25deb0c447ee60",
-            "source_item_id": "297b16c16b4e4ed43a455ef407b564000be2505ca4eda079f641c8bcfb365dff",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T13:08:14.000Z",
-            "ingested_at": "2026-09-05T13:54:59.667Z",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/mehrere-kundgebungen-vor-landtagswahl-parteien-schliessen-wahlkampf-ab-102.html",
-            "title": "Sachsen-Anhalt - Mehrere Kundgebungen vor Landtagswahl - Parteien schließen Wahlkampf ab",
-            "summary": "Einen Tag vor der Landtagswahl in Sachsen-Anhalt haben die Parteien ihren Wahlkampf abgeschlossen. An Veranstaltungen von AfD, Linke und SPD nahmen auch Bundespolitiker teil. CDU, Grüne, FDP und BSW beendeten ebenfalls ihren Wahlkampf.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T16:59:30.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "9dc8dda134bbd5a990a3bc89d6287eb507d4955f793142a83bf0f220ef4c9a7b",
-            "source_item_id": "0fc05a24b5b765bb48cdd02ccdf3b8afcbd3971e6d1c6c03a26e9310cf333ada",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T16:59:30.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/politik/deutschland/afd-maga-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
-            "title": "Vor Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
-            "summary": "„AFD über alles“ – mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T14:56:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "3945a9b29b190d3b3a725bb6b980ac39cec10dc15c8661960e89fe4b678e4b36",
-            "source_item_id": "93f9609fdaa127812d6085531b6225302a45705677d3b642070eb21a0eaa4e9f",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T14:56:00.000Z",
-            "ingested_at": "2026-09-05T17:06:26.753Z",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T17:36:24.715Z",
-        "content_hash": "fd87a3e938b001d8cf072e0ac98a8279fb63c41afccf26fb800b38f45606e5e5",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
-            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-            "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T07:02:30.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
-            "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T07:02:30.000Z",
-            "ingested_at": "2026-09-04T07:21:13.294Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesschau-access",
-            "publisher": "tagesschau / ARD",
-            "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
-            "title": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt",
-            "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T05:30:02.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "4ecffbf01167f40b3db26f6f52aaf0917fc5e9a7e0fa159589f2f79d534ff88e",
-            "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
-            "publisher_id": "tagesschau",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T05:30:02.000Z",
-            "ingested_at": "2026-09-05T17:36:24.715Z",
-            "provenance": {
-              "origin": "publisher:tagesschau",
-              "basis": "publisher_resolved_from_registered_target_url",
-              "independence_established": false,
-              "collection_source_id": "swr-aktuell"
-            },
-            "collection_source_id": "swr-aktuell",
-            "collection_publisher_id": "swr"
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
-            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
-            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T04:07:55.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
-            "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T04:07:55.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
-            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
-            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T04:09:22.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
-            "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T04:09:22.000Z",
-            "ingested_at": "2026-09-05T10:23:53.587Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
-            "title": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht",
-            "summary": "Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-01T14:38:55.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "a2e4d8b52b9340ac784ec86e650c17dec22acac070fb481dd92fed8839dea886",
-            "source_item_id": "deeaaefab10d8d6be35c1a4de80f7e4de81e1ca2e130057b3b623d0c4f6aa226",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-01T14:38:55.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "ndr-info",
-            "publisher": "NDR",
-            "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
-            "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
-            "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T07:06:15.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
-            "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
-            "publisher_id": "ndr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Norddeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T07:06:15.000Z",
-            "ingested_at": "2026-09-05T10:23:53.587Z",
-            "provenance": {
-              "origin": "publisher:ndr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
-            "title": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt",
-            "summary": "Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T13:33:07.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c520b2fed8cbae3e888aab84b15115b053449540cb1ce16bbc5d6381f5c75a14",
-            "source_item_id": "aeb6e86149e7357797f2d2695a41a092f687a2b4fb1497c4f3f5e23d68e6dba2",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T13:33:07.000Z",
-            "ingested_at": "2026-09-05T17:36:24.715Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "publisher": "ZDFheute",
-            "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
-            "title": "Tausende auf der Straße: Zeichen setzen \"für unser Land\"",
-            "summary": "Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T17:05:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "87d3607ab26afbcab60aed3b95084bfa76b310ff98df25c7114d021cc3071a4d",
-            "source_item_id": "ae0f97241727cfd71284debe9442dad606085a254b21cae8bed1253441ee63b0",
-            "publisher_id": "zdfheute",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T17:05:00.000Z",
-            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
@@ -11138,7 +11123,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T17:17:47.000Z",
-            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
@@ -11169,30 +11154,16 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T14:56:00.000Z",
-            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
             "provenance": {
               "origin": "publisher:wirtschaftswoche",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
-          "fingerprint": "f25d785a1e2b5bad5dae867afe8f435e019b05c39309b7ef00bd34c2d2b49f8b",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
@@ -13482,7 +13453,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
+          "checked_at": "2026-09-05T17:51:35.693Z",
           "fingerprint": "48bad01993b1585a02bf4145fc83642d90c69e61d8ee25edebeb007ca5862f12",
           "issue_codes": [
             "SOURCE_URL_INVALID"
@@ -20821,7 +20792,7 @@
       "verification_started_at": "2026-09-05T11:33:23.291Z",
       "publish_ready_at": "2026-09-05T11:33:36.533Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T14:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -21190,47 +21161,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "39eb4fc1eedf5072c45890acb46e26741a9b685a8d3f1390b29b85e6b09014db",
-        "checked_at": "2026-09-05T13:54:59.667Z",
+        "fingerprint": "df5068792b09e101b8b2f5ff24ab62f43c965eb07422fbee4961ea206fb1bbdd",
+        "checked_at": "2026-09-05T17:51:35.693Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T19:54:59.667Z",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Krieg-in-der-Ukraine/!6210492",
-            "title": "Krieg in der Ukraine: Für Trumps Schwiegersohn macht Putin eine Ausnahme",
-            "summary": "Jared Kushner und Trumps Golfpartner Steve Witkoff sind auf Friedensmission in Moskau – und fliegen dann in die Ukraine. Russlands Präsident hat dafür 72 Stunden Pause für Angriffe auf Kyjiw angeordnet. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:18:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "fff085e52a98c593001ef851391b12d04634cebce7b635ec883a36a0e5afa902",
-            "source_item_id": "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:18:00.000Z",
-            "ingested_at": "2026-09-05T13:54:59.667Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "pending_update": {
-        "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "13b7fa88b820f7b2db7da73ae9fa5e59b1a9fba4e2539f72fca91f828181002c",
+        "expires_at": "2026-09-05T23:51:35.693Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -21263,23 +21197,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
-          "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-86783bc04f815007",
@@ -21384,7 +21304,7 @@
       "verification_started_at": "2026-09-05T11:33:09.252Z",
       "publish_ready_at": "2026-09-05T11:33:20.789Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T14:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -21694,9 +21614,12 @@
         "generated_at": "2026-09-05T11:35:06.134Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "4e538b6870bba573e71ebe4b674b6ff2dbc2fb46dd5f6b00de8440d532972b4e",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "3bd73f7fc1e607cbf90a7d970312d5887aa85d96917e6fb661ae674564901055",
+        "checked_at": "2026-09-05T17:51:35.693Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-05T23:51:35.693Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -21729,23 +21652,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
-          "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-eb6e7bfa7e906259",
@@ -28356,10 +28265,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "7e19222189776ef5987c5253d8ffe4abdafe82be8115d572acb7599c59278422",
-        "checked_at": "2026-09-05T16:36:34.186Z",
+        "fingerprint": "ae76d486d2b0f62d8b58da167629bcc0a8907cf315b2e858cbae371a066d43ed",
+        "checked_at": "2026-09-05T17:51:35.693Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T22:36:34.186Z",
+        "expires_at": "2026-09-05T23:51:35.693Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -28427,14 +28336,14 @@
             "source_id": "zdfheute-nachrichten",
             "publisher": "ZDFheute",
             "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-            "title": "Polizei entdeckt Sprengvorrichtungen in Sachsen",
-            "summary": "Nach mehreren Angriffen auf das Stromnetz haben Ermittler nun auch in Sachsen Sprengvorrichtungen entdeckt. Die Polizei arbeite an der Entschärfung und der Sicherung von Spuren.",
+            "title": "Angriffe auf Stromnetz: Polizei fahndet nach Verdächtigem",
+            "summary": "Nach mehreren Angriffen auf das Stromnetz haben Ermittler auch in Sachsen Sprengvorrichtungen entdeckt. Die Polizei fahndet nach einem Verdächtigen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-05T09:21:00.000Z",
+            "published_at": "2026-09-05T17:44:00.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "77ccf76a8af878d8a574df89262e3bbf070f999f618fcea979658c67199d7fc3",
+            "content_hash": "5dd64019aa2fc5200783adac7f8b66250c8926a0e80236ec4f42d3d6fe5ce3b8",
             "source_item_id": "641fb9a25b26f3aee7a02df887e0f1070210b4e401ec1e1147b35bbdfe15d256",
             "publisher_id": "zdfheute",
             "publisher_kind": "public_broadcasting",
@@ -28446,8 +28355,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-05T09:21:00.000Z",
-            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "source_published_at": "2026-09-05T17:44:00.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
             "provenance": {
               "origin": "publisher:zdfheute",
               "basis": "publisher_only_origin_unverified",
@@ -28602,7 +28511,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T15:27:15.000Z",
-            "ingested_at": "2026-09-05T16:36:34.186Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
             "provenance": {
               "origin": "publisher:mdr",
               "basis": "publisher_only_origin_unverified",
@@ -37568,7 +37477,7 @@
       "verification_started_at": "2026-09-05T09:16:57.135Z",
       "publish_ready_at": "2026-09-05T09:17:13.256Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T14:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -37934,9 +37843,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "c4cc59eae7cb34fb1dc54224f23966e59153a602ebb732bef62deabd7a29a777",
-        "checked_at": "2026-09-05T11:31:43.777Z",
+        "checked_at": "2026-09-05T17:51:35.693Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T17:31:43.777Z",
+        "expires_at": "2026-09-05T23:51:35.693Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -37971,59 +37880,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "f7e040c28e7aa25ce6d05a172dfbd75d53ea356bff9ca800ccb3a53d73fb40b1",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/angriffe-auf-umspannwerke--amprion-chef-will-fuer-unternehmen-mehr-befugnisse-38210948.html",
-            "title": "Angriffe auf Umspannwerke: Amprion-Chef will für Unternehmen mehr Befugnisse",
-            "summary": "Angesichts von Angriffen auf das Stromnetz in Deutschland hat der Chef des Netzbetreibers Amprion, Christoph Müller, die Lockerung mehrerer Vorschriften gefordert, damit Unternehmen sich besser schützen können. So sollte der Bund Drohnenüberflüge erlauben - „Drohnen sind eine Chance, die wir derzeit nur in sehr speziellen Fällen nutzen dürfen“, sagte Müller der „Rheinischen Post“ vom Samstag. Drohnen könnten regelmäßig Leitungen abfliegen und überwachen - „das dürfen wir bislang nicht“.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T08:57:36.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "d58d6add1b9617f4e8496a52a8d9d8c7c1cf82a9b2030d94f32c160e5aede873",
-            "source_item_id": "ba04cc9fa8b43a5d575a67ceae7558fbed71cd69eff4143999cb6d804fe25ee6",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T08:57:36.000Z",
-            "ingested_at": "2026-09-05T09:15:34.958Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
-          "fingerprint": "8cbb4311fa9f589f1203fc0556130f1bac19ee292dc31d40ae0f3addbfb850a9",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-beb8994d2ab1f12a",
@@ -43202,7 +43059,7 @@
       "verification_started_at": "2026-09-05T05:31:59.419Z",
       "publish_ready_at": "2026-09-05T05:32:14.214Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T14:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -43780,10 +43637,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "f4d6501e9513db4298cf3e5add4dbc396b8aee5608068cb4528461f7b23514ee",
-        "checked_at": "2026-09-05T11:59:56.834Z",
+        "fingerprint": "3bc55a216616c88efca4e1f1888013bef6866dd63083674153e49b7721071794",
+        "checked_at": "2026-09-05T17:51:35.693Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T17:59:56.834Z",
+        "expires_at": "2026-09-05T23:51:35.693Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -43942,183 +43799,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "960f9fbf1823f5e1ce3f3a36b41b937fcab14afecd1d7e13697919d69195c3ec",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
-            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:21:16.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
-            "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:21:16.000Z",
-            "ingested_at": "2026-09-04T17:39:54.371Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
-            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:22:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
-            "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:22:14.000Z",
-            "ingested_at": "2026-09-05T05:21:05.955Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
-            "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
-            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:46:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
-            "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:46:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
-            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T20:13:08.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
-            "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T20:13:08.000Z",
-            "ingested_at": "2026-09-04T20:36:32.644Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
-            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:18:53.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "7a7f9a1bdaea2412f799dd9ad08b8440ee47057859b3cb170b2ca789a4373bcc",
-            "source_item_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:18:53.000Z",
-            "ingested_at": "2026-09-05T11:31:43.777Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
-          "fingerprint": "b77080fc28dc49ed22c2e6eed468704e8806d8a8351e880f83f2a31fb8696350",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-3b4e9709d1d57534",
@@ -51292,7 +50973,7 @@
       "verification_started_at": "2026-09-04T19:55:33.686Z",
       "publish_ready_at": "2026-09-04T19:55:49.121Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-05T10:00:00.000Z",
+      "deepening_due_at": "2026-09-05T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -51953,9 +51634,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "931e9b4750702352104b064b6ba173e56ffa57d215705d1ca4b3c317dbee14e4",
-        "checked_at": "2026-09-05T07:06:05.017Z",
+        "checked_at": "2026-09-05T17:51:35.693Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T13:06:05.017Z",
+        "expires_at": "2026-09-05T23:51:35.693Z",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
@@ -51990,59 +51671,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-05T10:23:53.587Z",
-        "content_hash": "52e074d91fcf41527b53208e1dc81753768a2947dec6b23e8215f9ff45d7254c",
-        "sources": [
-          {
-            "source_id": "rbb24-nachrichten",
-            "publisher": "rbb24",
-            "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-schulen-gewalt-bildungssenatorin-plan-regeln.html",
-            "title": "Schulen in Berlin: Bildungssenatorin stellt Plan gegen Gewalt vor",
-            "summary": "Mobbing, sexistische Sprüche und Prügeleien - an vielen Berliner Schulen gehört das zum Alltag. Die Bildungssenatorin will dagegen nun mit meheren Maßnahmen vorgehen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T13:49:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "8921859f494a514c97bc3026737da21b1f38cc05612e7f4a5eccabdee6f85370",
-            "source_item_id": "0d4ea5cef04656dec7b6b175b289cf525d89b70fa3685b1d6f52c1c5c1c61a61",
-            "publisher_id": "rbb",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin-Brandenburg"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T13:49:00.000Z",
-            "ingested_at": "2026-09-04T02:51:36.455Z",
-            "provenance": {
-              "origin": "publisher:rbb",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
-          "fingerprint": "a4a1aa47f4fa7294de838044190ad1cfc64cd840dd088522df173c63655c67a4",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-d80fd849c477e2ad",
@@ -54490,7 +54119,7 @@
       "verification_started_at": "2026-09-04T18:52:35.368Z",
       "publish_ready_at": "2026-09-04T18:52:45.973Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-05T14:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -55347,10 +54976,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "cb0cd618c400691576f8bfef5e73da98d89d64efb2751bd63b15757a72498c57",
-        "checked_at": "2026-09-05T11:31:43.777Z",
+        "fingerprint": "d4d3793c5294360509a4cbafda6b6c5beedc2033cf92de9ea0b15541a9069df1",
+        "checked_at": "2026-09-05T17:51:35.693Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T17:31:43.777Z",
+        "expires_at": "2026-09-05T23:51:35.693Z",
         "sources": [
           {
             "source_id": "hr-hessenschau",
@@ -55385,59 +55014,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-05T14:13:45.805Z",
-        "content_hash": "9b00079a3c84b7c5a5b0c6a484441ea5f7f06e5846e275e6e3615c7d702994d1",
-        "sources": [
-          {
-            "source_id": "hr-hessenschau",
-            "publisher": "hessenschau",
-            "url": "https://www.hessenschau.de/panorama/frankfurter-schoenhof-viertelpark-soll-klimawandel-trotzen-v1,frankfurt-schoenhofviertel-park-eingeweiht-100.html",
-            "title": "Frankfurter Schönhof-Viertelpark soll Klimawandel trotzen",
-            "summary": "Der neue Park im Schönhof-Viertel soll nicht nur Erholung bringen, sondern auch Regenwasser speichern und die Umgebung kühlen. Der Klimawandel wurde beim Bau der Anlage mitgedacht. Jetzt ist der erste Teil eröffnet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T15:27:13.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "19e7bb82233c9961e80521e83ad062f13ff68490693cc2201b1ad0541cc9ae57",
-            "source_item_id": "2e4ac948c5aab35a5693887e74b245b8883088437c3a921a27dc8cc310bd9132",
-            "publisher_id": "hr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Hessen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T15:27:13.000Z",
-            "ingested_at": "2026-09-04T05:06:21.635Z",
-            "provenance": {
-              "origin": "publisher:hr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 1,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
-          "fingerprint": "3e525a90021fc16764fdd5de14d5975794e031b3860545e083397059c1ff87f4",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-a15bc39ee69aa3e5",
@@ -57261,7 +56838,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -57271,7 +56848,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
+          "checked_at": "2026-09-05T17:51:35.693Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -57876,7 +57453,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:37:20.000Z",
-            "ingested_at": "2026-09-05T17:36:24.715Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -57884,9 +57461,11 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
+        ],
+        "quality_retry_count": 1,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -57894,7 +57473,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
+          "checked_at": "2026-09-05T17:51:35.693Z",
           "fingerprint": "7a4e3b4d3b023739dcb0220550584ff732a89bce1aebfdc7f2711100160c30f8",
           "issue_codes": [],
           "warning_codes": []
@@ -79722,7 +79301,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -79732,7 +79311,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
+          "checked_at": "2026-09-05T17:51:35.693Z",
           "fingerprint": "371951dda8885071e92902c04fd0deb7c36df7ae5adcfb2c65a7a1ebdc9e6256",
           "issue_codes": [],
           "warning_codes": []
@@ -84067,7 +83646,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "reassessment": false,
@@ -84077,7 +83656,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-05T17:36:24.715Z",
+          "checked_at": "2026-09-05T17:51:35.693Z",
           "fingerprint": "fc6394929dd9caf6a77ab1a8265c01d7c1fddece2fc2a73b24676eceaeed40eb",
           "issue_codes": [],
           "warning_codes": []
@@ -123689,5 +123268,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T17:21:20.943Z"
+  "public_updated_at": "2026-09-05T17:51:35.693Z"
 }
