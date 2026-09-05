@@ -26,6 +26,7 @@
     "news:build": "node scripts/news/build.mjs",
     "news:title-images:backfill": "node scripts/news/title-image/backfill.mjs",
     "news:backfill-source-summaries": "node scripts/news/backfill-source-summaries.mjs",
+    "news:media-impact:backfill": "node scripts/news/backfill-media-impact.mjs",
     "news:check-source-summaries": "node scripts/news/backfill-source-summaries.mjs --check",
     "news:test": "node --test tests/news/*.test.mjs",
     "news:validate": "node scripts/news/validate.mjs",

@@ -16,6 +16,8 @@ Die Übersicht zeigt zunächst höchstens zehn Karten und lädt weitere Ergebnis
 
 Jede Detailseite beginnt nach Titel und Metadaten mit „Worum geht es?“. Dort steht die serverseitig gerenderte `source_summary` in zwei bis drei kurzen Absätzen samt sichtbarem Link zur Originalquelle. Sie gibt ausschließlich den Quelleninhalt wieder; die wirkungsökonomische Interpretation beginnt erst nach dem Faktencheck. Danach folgt zusätzlich zur kurzen Zwei-Satz-Fassung der Übersicht eine eigenständige WÖk-Zusammenfassung mit fünf bis sieben Sätzen und 500 bis 1200 Zeichen. Nach dem Prinzip „Wahrheit zuerst“ beginnt der Faktencheck mit dem belastbar bestätigten Sachverhalt; erst danach folgen ausdrücklich markierte Behauptungen, offene Punkte und Prüfgrenzen. Der Faktencheck nennt außerdem Primärquellen- und Claim-Ledger-Basis sowie Evidenzgrad. Der Folgencheck setzt bei diesem gesicherten Ausgangspunkt an und formuliert Wirkmechanismus, mögliche Folgen erster bis dritter Ordnung sowie Risiken und Gegenläufe. Er bleibt als Analyse gekennzeichnet, nicht als Wirkungsnachweis.
 
+Bei einem lokalen sprachlichen Trigger folgt als eigener Analysegegenstand „Medien- & Sprachwirkung“. Ereignis, Akteursaussage und mediale Vermittlung bleiben dort getrennt. Der Bereich bewertet nur die konkrete kommunikative Handlung, nie Personen, politische Lager oder ein Medienhaus insgesamt. Einzelheiten zu Trigger, Schema, Evidenz, Self-Frame-Check, Kosten und selektivem Backfill stehen in `docs/ops/WIRKUNGSTICKER-MEDIEN-SPRACHWIRKUNG.md`.
+
 ## Visuelle Anker und KI-Visuals
 
 `scripts/news/visuals.mjs` liefert zwei Ebenen visueller Anker. Die erste ist deterministisch und gilt für jede Akte: Themen-Icon je Rubrik, Dimensionsmeter (vier Segmente für gering/mittel/hoch/sehr hoch, gestrichelt für „offen“) für Mensch, Planet und Demokratie, der Verfahrensstand als Spur (angekündigt → Entwurf → beschlossen → in Kraft → Umsetzung → erste Daten → evaluiert; „laufende Entwicklung“ und „offen“ als Chip), die Materialität, die Auf-einen-Blick-Leiste der Detailseite und der Wirkpfad als Grafik (Mechanismus → erste → zweite → dritte Ordnung, mit abnehmender Farbstärke als Zeichen wachsender Unsicherheit). Diese Anker brauchen keinen zusätzlichen KI-Aufruf.
@@ -61,6 +63,7 @@ npm run news:build
 npm run news:validate
 npm run news:health
 npm run news:check-source-summaries
+npm run news:media-impact:backfill -- --dry-run --limit=100
 ```
 
 Ein manueller GitHub-Actions-Lauf ist möglich. Die Pipeline schreibt nur die explizit gelisteten Ticker-, Sitemap-, Suchindex- und Laufreport-Dateien zurück nach `main`; dadurch startet der bestehende Pages-Release. Commits mit `[wirkungsticker]` verwenden dort den schlanken statischen Ticker-Build und erzeugen keine Vercel-Builds. Vor Änderungen am Hosting-Workflow ist weiterhin `npm run check:hosting-cost` auszuführen.
