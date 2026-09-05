@@ -3,7 +3,7 @@
 
   const main = document.querySelector("main[data-news-reader]");
   if (!main) return;
-  const isDetail = main.dataset.newsReader === "detail";
+  const isDetail = ["detail", "analysis"].includes(main.dataset.newsReader);
   const pendingKey = "woek:wirkungsticker:navigation:v1";
   const entryKey = "newsReader";
   const excluded = "a, button, input, textarea, select, label, summary, details, [contenteditable], [role='slider'], [role='button'], [data-no-swipe], nav, video, audio, iframe";
@@ -13,7 +13,9 @@
   function readerUrl(value) {
     try {
       const url = new URL(value, window.location.href);
-      if (url.origin !== window.location.origin || !/^\/wirkungsticker\/(?:[^/]+\/)?$/.test(url.pathname) || url.pathname === "/wirkungsticker/quellen/") return null;
+      if (url.origin !== window.location.origin
+        || !/^\/wirkungsticker\/(?:analyse\/[a-z0-9-]+\/|[a-z0-9-]+\/)?$/.test(url.pathname)
+        || url.pathname === "/wirkungsticker/quellen/") return null;
       return url;
     } catch { return null; }
   }

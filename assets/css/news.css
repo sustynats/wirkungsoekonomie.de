@@ -2161,7 +2161,7 @@
 }
 
 .news-editorial-card .hero-kicker { color: #e4b647; }
-.news-editorial-card h2 { margin: .35rem 0 .7rem; font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.04; }
+.news-editorial-card h2 { margin: .35rem 0 .7rem; color: #f1eee6; font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1.04; }
 .news-editorial-card h2 a { color: inherit; text-decoration: none; }
 .news-editorial-card h2 a:hover { text-decoration: underline; text-underline-offset: .16em; }
 .news-editorial-card__subtitle { max-width: 52rem; font-size: clamp(1.05rem, 2vw, 1.3rem); font-weight: 700; }
@@ -2198,6 +2198,16 @@
 .news-editorial-deck { font-family: var(--font-serif, Georgia, serif); font-size: clamp(1.3rem, 2.5vw, 1.75rem); line-height: 1.42; }
 .news-editorial-origin { display: grid; gap: .35rem; margin: 1.7rem 0 2.2rem; padding: 1.1rem 1.25rem; background: #eef7f3; border-left: .3rem solid #2f7d68; border-radius: .3rem .85rem .85rem .3rem; }
 .news-editorial-origin span { color: var(--color-text-muted, #58615d); font-size: .9rem; }
+.news-editorial-visuals { margin: 0 0 2.5rem; padding: clamp(1rem, 3vw, 1.6rem); border: 1px solid rgb(47 125 104 / 22%); border-radius: 1rem; background: linear-gradient(145deg, #f7fbf9, #f6f1e8); }
+.news-editorial-visuals > h2 { margin: .3rem 0 .65rem; font-size: clamp(1.55rem, 3vw, 2.15rem); }
+.news-editorial-visuals > .news-method-note { max-width: 46rem; margin: 0 0 1.2rem; }
+.news-editorial-visuals__source-data { display: grid; gap: .85rem; margin: 0 0 1.35rem; }
+.news-editorial-visuals__source-data > :first-child { margin-top: 0; }
+.news-editorial-visuals__dimensions,
+.news-editorial-visuals__path { padding-top: 1.15rem; border-top: 1px solid rgb(17 48 42 / 12%); }
+.news-editorial-visuals__path { margin-top: 1.35rem; }
+.news-editorial-visuals__dimensions > h3,
+.news-editorial-visuals__path > h3 { margin: 0 0 .8rem; font-size: 1.08rem; }
 .news-editorial-article__section { margin: 0 0 2.5rem; }
 .news-editorial-article__section h2 { margin-bottom: .8rem; font-size: clamp(1.6rem, 3vw, 2.25rem); }
 .news-editorial-article__section p { font-size: 1.06rem; line-height: 1.72; }

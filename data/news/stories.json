@@ -298,7 +298,20 @@
         "issue_codes": [],
         "warning_codes": []
       },
-      "followups": [],
+      "followups": [
+        {
+          "claim": "Ob die angekündigte Angriffspause tatsächlich eingehalten wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Berichte über ausbleibende oder erneute Luftangriffe auf Kiew während der genannten drei Tage",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6ecd52f90e8c6d57",
+          "announced_at": "2026-09-05T13:53:54.000Z",
+          "follow_up_date": "2026-09-12T14:16:34.472Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-02fdc359b05b6427"
+        }
+      ],
       "content_hash": "c97bc7d1b1788713bfb914acec92b4b98e08297488ab3ff6f5ab1e5943c957e9",
       "published": true,
       "listed": true,
@@ -650,6 +663,90 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-05T14:17:36.644Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-05T15:11:13.065Z",
+        "sources": [
+          {
+            "source_id": "dw-news",
+            "publisher": "Deutsche Welle",
+            "url": "https://www.dw.com/de/putin-drei-tage-angriffspause-w%C3%A4hrend-ukraine-verhandlungen/a-79047412?maca=de-rss-de-news-1089-xml-mrss",
+            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+            "summary": "Die USA wollen ihre Vermittlung für ein Ende des Kriegs in der Ukraine wiederaufnehmen. Dazu sollen ihre Unterhändler in Moskau und Kyjiw Gespräche führen. Putins Ankündigung gilt allerdings nur für Kyjiw.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:01:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Geopolitik",
+            "content_hash": "2937cbc7832b70f800ca9e74dd1b483b1f3d65488d39858b60096081af35bfe1",
+            "source_item_id": "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "publisher_id": "deutsche-welle",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:01:00.000Z",
+            "ingested_at": "2026-09-05T14:13:45.805Z",
+            "provenance": {
+              "origin": "publisher:deutsche-welle",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-158.html",
+            "title": "Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew",
+            "summary": "Wegen des Besuchs von Unterhändlern aus den USA hat der russische Präsident Wladimir Putin angekündigt, drei Tage lang die ukrainische Hauptstadt Kiew nicht anzugreifen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:53:54.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "2c6eebea3ebcefab8713d9b1bb37b43fc0f7b7aa4abdefa6b18fa1c80ba55cc7",
+            "source_item_id": "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:53:54.000Z",
+            "ingested_at": "2026-09-05T14:13:45.805Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "fresh": false,
+        "consolidation": true,
+        "quality_retry_count": 0
+      },
+      "living_file": {
+        "merged_story_ids": [
+          "wt-02fdc359b05b6427"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-05T15:11:13.065Z",
+            "story_id": "wt-02fdc359b05b6427",
+            "slug": "ukraine-news-putin-verkundet-dreitagigen-angriffsstopp-auf-kiew-5b6427",
+            "title": "Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
       }
     },
     {
@@ -796,8 +893,8 @@
       ],
       "content_hash": "65c5ae42b91fc90e40cfbb2ed0aa4ff41cfdc58b317f205a87a7547686b15256",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "Der MDR meldet, Wladimir Putin habe wegen des Besuchs von US-Unterhändlern einen dreitägigen Stopp der Luftangriffe auf Kiew angeordnet. Kremlsprecher Dmitri Peskow wird mit der Bestätigung zitiert, dass die Pause mit Tagesbeginn des Sonntags gelten solle.\n\nNach der Darstellung soll Putin am Samstag den US-Sondergesandten Steve Witkoff und Jared Kushner empfangen haben. Für den nächsten Tag seien Gespräche in Kiew vorgesehen. Der Text ordnet die Meldung in laufende Kriegsereignisse ein und verweist zugleich auf weitere Berichte über Angriffe und Schäden in der Ukraine.",
@@ -1107,6 +1204,22 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-05T14:17:28.520Z",
         "status": "generated"
+      },
+      "retired_at": "2026-09-05T15:11:13.065Z",
+      "retirement": {
+        "at": "2026-09-05T15:11:13.065Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-3d901522efd87e2d"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-3d901522efd87e2d",
+            "slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
+            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
       }
     },
     {
@@ -121623,5 +121736,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T14:13:45.805Z"
+  "public_updated_at": "2026-09-05T15:11:13.065Z"
 }

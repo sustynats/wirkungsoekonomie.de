@@ -44,6 +44,13 @@ test("event stages and real locations remain distinct; publisher coverage is not
   assert.equal(eventCompatibility(item, { ...item, url: "https://example.org/b", title: "Bund plant Klimagesetz zur Energieversorgung" }).same_event, false);
   assert.equal(eventCompatibility({ ...item, event_geography: ["DE"] }, { ...item, url: "https://example.org/c", event_geography: ["FR"] }).same_event, false);
 });
+test("structured event facts join headline synonyms without joining a broad recurring topic", () => {
+  const dw = { title: "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen", summary: "Die Ankündigung gilt nur für Kyjiw.", published_at: "2026-09-05T13:01:00Z" };
+  const mdr = { title: "Ukraine-News: Putin verkündet dreitägigen Angriffsstopp auf Kiew", summary: "Putin kündigte an, drei Tage lang Kiew nicht anzugreifen.", published_at: "2026-09-05T13:53:00Z" };
+  assert.deepEqual(eventCompatibility(dw, mdr), { same_event: true, related: true, reason: "structured_event_facts" });
+  assert.equal(eventCompatibility(dw, { ...mdr, title: "Selenskyj besucht Kiew für neue Gespräche", summary: "Neue Verhandlungen in Kiew.", url: "https://example.org/other" }).same_event, false);
+  assert.equal(eventCompatibility(dw, { ...mdr, title: "Putin verkündet zweitägigen Angriffsstopp auf Kiew", summary: "Zwei Tage Pause.", url: "https://example.org/two" }).same_event, false);
+});
 test("source health distinguishes stale content and missing publication dates from fetch failure", () => {
   assert.equal(sourceHealth(source, { source_status: { test: { last_success: now, latest_item: "2026-06-01" } } }, now).status, "stale_content");
   assert.equal(sourceHealth(source, { source_status: { test: { last_success: now } } }, now).content_warning, "NO_RELIABLE_PUBLICATION_DATE");
