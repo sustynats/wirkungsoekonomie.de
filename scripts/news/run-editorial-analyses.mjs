@@ -180,7 +180,9 @@ export async function runEditorialAnalyses({
   const usage = read(usageFile, { runs: [] });
   const store = read(analysesFile, { schema_version: "1.0", method_version: EDITORIAL_ANALYSIS_VERSION, updated_at: null, candidates: [], analyses: [] });
   const activeStories = (storyStore.stories || []).filter((story) => story.published && story.listed !== false && story.analysis);
-  const baseSubjects = editorialSubjects(activeStories);
+  const baseSubjects = editorialSubjects(activeStories).map(story => ({
+    ...story, source_integrity: sourceIntegrityForStory(story, newsRegistry, [], now),
+  }));
   const researchExpansion = execute ? enrichEditorialResearchSubjects(baseSubjects, newsroom, newsRegistry, now) : { subjects: baseSubjects, added: 0 };
   // Revalidate the final combined source set locally, including legacy records
   // without a stored integrity result. No paid analysis or article fetch required.

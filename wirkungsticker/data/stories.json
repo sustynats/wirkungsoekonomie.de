@@ -50,14 +50,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Angriffspause",
-            "value": "drei",
-            "unit": "Tage",
-            "context": "Angekündigte Dauer des Luftangriffsstoppes auf Kyjiw"
-          }
-        ],
         "affected_groups": [
           "staat",
           "beschaeftigte",
@@ -322,6 +314,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-ed9d6b837154562e-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6a7145e6dc679f95-6314664b366e4bfd-source.png"
         }
       },
       "slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
@@ -355,22 +350,11 @@
       "visuals": {
         "key_figures": [
           {
-            "label": "Fördervolumen",
-            "value": "zehn Millionen Euro",
-            "unit": "Euro",
-            "context": "Gesamtmittel für das Programm"
-          },
-          {
             "label": "Förderung pro Standort",
             "value": "5.000",
             "unit": "Euro",
-            "context": "Maximalbetrag je Standort"
-          },
-          {
-            "label": "Programmdauer",
-            "value": "drei Jahre",
-            "unit": "Jahre",
-            "context": "Laufzeit der Hitzehilfe"
+            "context": "Maximalbetrag je Standort",
+            "claim_id": "wt-6a7145e6dc679f95-v3-claim-3"
           }
         ],
         "affected_groups": [
@@ -480,14 +464,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Alter des Tatverdächtigen",
-            "value": "48",
-            "unit": "Jahre",
-            "context": "Von den Behörden gesuchte Person"
-          }
-        ],
         "affected_groups": [
           "staat",
           "unternehmen",
@@ -963,14 +939,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Teilnehmende",
-            "value": "tausende",
-            "unit": "Menschen",
-            "context": "Für Kundgebungen und Demonstrationen erwartet"
-          }
-        ],
         "affected_groups": [
           "staat",
           "beschaeftigte",
@@ -1220,6 +1188,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-36218563fde0a483-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3c8762489a80692b-677959792aa2303f-source.png"
         }
       },
       "slug": "regionalnachweisregister-soll-abgewickelt-werden-80692b",
@@ -1408,6 +1379,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-8ba6f3b37efdb0f3-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-998e73bf202ee8d2-5ee6597a143ba7dd-source.png"
         }
       },
       "slug": "verwaltungsgerichtsverfahren-sollen-schneller-werden-2ee8d2",
@@ -1438,14 +1412,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Inkrafttreten überwiegender Teil",
-            "value": "1. Januar 2027",
-            "unit": "Datum",
-            "context": "Geplanter Termin für den überwiegenden Teil des Gesetzes"
-          }
-        ],
         "affected_groups": [
           "staat",
           "beschaeftigte",
@@ -1455,7 +1421,8 @@
         "timeline": [
           {
             "date": "2027-01-01",
-            "label": "Überwiegender Teil soll in Kraft treten"
+            "label": "Überwiegender Teil soll in Kraft treten",
+            "claim_id": "wt-998e73bf202ee8d2-v1-claim-4"
           }
         ],
         "tendency": {
@@ -1528,6 +1495,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e4c93f4907aaa42-9e1f0964e7200996-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9e4c93f4907aaa42-e6068b1d872cd85b-source.png"
         }
       },
       "slug": "fur-bezahlbare-windenergie-auf-see-7aaa42",
@@ -1612,6 +1582,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-b6f5c67ee5b9bd05-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aabe8c0430bf8f84-e51789a5ada69339-source.png"
         }
       },
       "slug": "two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal-bf8f84",
@@ -1754,6 +1727,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-cfcbda26be19364a-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e01001c00cf12041-a729da9f41f34cf9-source.png"
         }
       },
       "slug": "federal-judge-blocks-trump-s-new-bid-to-abolish-birthright-citizenship-citing-supreme-co-f12041",
@@ -1882,7 +1858,8 @@
             "label": "Datenmenge",
             "value": "5,8",
             "unit": "Terabyte",
-            "context": "In einer Meldung genannte Menge der veröffentlichten Verwaltungsdaten"
+            "context": "In einer Meldung genannte Menge der veröffentlichten Verwaltungsdaten",
+            "claim_id": "wt-eb6e7bfa7e906259-v1-claim-2"
           }
         ],
         "affected_groups": [
@@ -2049,6 +2026,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-cae95d1d97126251-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-9b3e11c83af49544-source.png"
         }
       },
       "slug": "nach-cyberangriff-auf-berlins-verwaltung-stundenzettel-im-darknet-f283b4",
@@ -2078,14 +2058,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Lösegeldforderung",
-            "value": "30",
-            "unit": "Bitcoin",
-            "context": "Die in der Quelle genannte Forderung der Erpresser"
-          }
-        ],
         "affected_groups": [
           "staat"
         ],
@@ -2159,6 +2131,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-eacd2cd6006536ea-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-aaa7e98d9c993988-06841ebe422370b3-source.png"
         }
       },
       "slug": "anschlage-auf-umspannwerke-dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverda-993988",
@@ -2188,20 +2163,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "betroffene Bundesländer",
-            "value": "vier",
-            "unit": "Länder",
-            "context": "Nordrhein-Westfalen, Brandenburg, Sachsen und Niedersachsen werden genannt"
-          },
-          {
-            "label": "gesicherte Objekte in Sachsen",
-            "value": "vier",
-            "unit": "Objekte",
-            "context": "An zwei Fundorten wurden vier Objekte gesichert"
-          }
-        ],
         "affected_groups": [
           "staat",
           "unternehmen",
@@ -2339,6 +2300,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-35a0ab9208e91b5a-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-7c19d7b9cf12c8a1-source.png"
         }
       },
       "slug": "fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6",
@@ -2601,6 +2565,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-b15e04cac574461b-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-e6a4a2828a5fd334-source.png"
         }
       },
       "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
@@ -2634,14 +2601,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Stellenabbau",
-            "value": "50.000",
-            "unit": "Arbeitsplätze",
-            "context": "So viele weitere Stellen sollen wegfallen."
-          }
-        ],
         "affected_groups": [
           "beschaeftigte",
           "unternehmen",
@@ -3044,6 +3003,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-cca0258224ed71d6-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e18907861b9d9b1f-bcaef38b38fdc497-source.png"
         }
       },
       "slug": "brucken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-9d9b1f",
@@ -3159,6 +3121,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-743a635e023f5ff0-26d8ff3a30027700-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-743a635e023f5ff0-32d64b80ef9ca780-source.png"
         }
       },
       "slug": "monheim-vom-steuerparadies-zur-schuldenhochburg-3f5ff0",
@@ -3566,16 +3531,11 @@
       "visuals": {
         "key_figures": [
           {
-            "label": "Personal der Einheit",
-            "value": "130",
-            "unit": "Mitarbeiterinnen und Mit",
-            "context": "zunächst geplante Stärke der Drohnenabwehreinheit"
-          },
-          {
             "label": "Investition",
             "value": "100 Millionen",
             "unit": "Euro",
-            "context": "Gesamtinvestition für die Drohnenabwehreinheit"
+            "context": "Gesamtinvestition für die Drohnenabwehreinheit",
+            "claim_id": "wt-972d20af6da2b586-v2-claim-2"
           }
         ],
         "affected_groups": [
@@ -3587,11 +3547,13 @@
         "timeline": [
           {
             "date": "2025-12",
-            "label": "Drohnenabwehreinheit verfügbar"
+            "label": "Drohnenabwehreinheit verfügbar",
+            "claim_id": "wt-972d20af6da2b586-v2-claim-2"
           },
           {
             "date": "2026-03",
-            "label": "KRITIS-Dachgesetz in Kraft"
+            "label": "KRITIS-Dachgesetz in Kraft",
+            "claim_id": "wt-972d20af6da2b586-v2-claim-4"
           }
         ],
         "tendency": {
@@ -3652,6 +3614,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-fce6dc384616b493-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-293fa4edfc2b5a5d-5c08a7e2fa7867ae-source.png"
         }
       },
       "slug": "joachim-nagel-im-interview-mit-le-monde-inflation-zinsen-und-europas-zukunft-interview-m-2b5a5d",
@@ -3689,19 +3654,15 @@
             "label": "Inflation im Juli",
             "value": "2,9",
             "unit": "Prozent",
-            "context": "Inflation im Euroraum im Juli"
+            "context": "Inflation im Euroraum im Juli",
+            "claim_id": "wt-293fa4edfc2b5a5d-v3-claim-2"
           },
           {
             "label": "Inflation im August",
             "value": "3,3",
             "unit": "Prozent",
-            "context": "Inflation im Euroraum im August"
-          },
-          {
-            "label": "Wahrscheinlichkeit einer Zinserhöhung",
-            "value": "mehr als 95 Prozent",
-            "unit": "Prozent",
-            "context": "Markteinschätzung für die September-Sitzung"
+            "context": "Inflation im Euroraum im August",
+            "claim_id": "wt-293fa4edfc2b5a5d-v3-claim-2"
           }
         ],
         "affected_groups": [
@@ -3780,6 +3741,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-3bdd891143105f82-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9de543ac63864ad7-52897a6961f5d662-source.png"
         }
       },
       "slug": "schulen-in-berlin-bildungssenatorin-stellt-plan-gegen-gewalt-vor-864ad7",
@@ -3809,14 +3773,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Planpunkte",
-            "value": "13",
-            "unit": "Punkte",
-            "context": "Umfang des angekündigten Maßnahmenpakets"
-          }
-        ],
         "affected_groups": [
           "kinder_jugend",
           "beschaeftigte"
@@ -3891,6 +3847,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-18aa23a75be3c9b8-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d80fd849c477e2ad-a5db8d68318fe1f2-source.png"
         }
       },
       "slug": "gesundheitscheck-vor-ausbildung-thuringen-ubernimmt-kosten-fur-untersuchung-77e2ad",
@@ -3927,13 +3886,15 @@
             "label": "Gebührensatz alt",
             "value": "23,31",
             "unit": "Euro",
-            "context": "Seit 30 Jahren geltender Satz laut Bericht"
+            "context": "Seit 30 Jahren geltender Satz laut Bericht",
+            "claim_id": "wt-d80fd849c477e2ad-v3-claim-3"
           },
           {
             "label": "Gebührensatz neu",
             "value": "53,62",
             "unit": "Euro",
-            "context": "Abrechenbarer Satz je Untersuchung"
+            "context": "Abrechenbarer Satz je Untersuchung",
+            "claim_id": "wt-d80fd849c477e2ad-v3-claim-4"
           }
         ],
         "affected_groups": [
@@ -3944,11 +3905,13 @@
         "timeline": [
           {
             "date": "2026",
-            "label": "Land übernimmt höhere Gebühr"
+            "label": "Land übernimmt höhere Gebühr",
+            "claim_id": "wt-d80fd849c477e2ad-v3-claim-4"
           },
           {
             "date": "2027",
-            "label": "Land übernimmt höhere Gebühr"
+            "label": "Land übernimmt höhere Gebühr",
+            "claim_id": "wt-d80fd849c477e2ad-v3-claim-4"
           }
         ],
         "tendency": {
@@ -4032,6 +3995,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-d6cc75416937a383-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-63b6c057c20a2143-ba1fb7a9eda457b1-source.png"
         }
       },
       "slug": "ki-sicherheitsinstitut-eroffnet-0a2143",
@@ -4138,6 +4104,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-16463472520ec5ca-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d175d26e4635ba0a-fc16a6088f8d00aa-source.png"
         }
       },
       "slug": "frankfurter-schonhof-viertelpark-soll-klimawandel-trotzen-35ba0a",
@@ -4172,13 +4141,15 @@
             "label": "Östlicher Abschnitt",
             "value": "12.500",
             "unit": "Quadratmeter",
-            "context": "Fläche des nun geöffneten Parkteils"
+            "context": "Fläche des nun geöffneten Parkteils",
+            "claim_id": "wt-d175d26e4635ba0a-v3-claim-3"
           },
           {
             "label": "Endausbau",
             "value": "28.000",
             "unit": "Quadratmeter",
-            "context": "Geplante Gesamtgröße der Anlage"
+            "context": "Geplante Gesamtgröße der Anlage",
+            "claim_id": "wt-d175d26e4635ba0a-v3-claim-3"
           }
         ],
         "affected_groups": [
@@ -4189,7 +4160,8 @@
         "timeline": [
           {
             "date": "2027",
-            "label": "Westteil soll folgen"
+            "label": "Westteil soll folgen",
+            "claim_id": "wt-d175d26e4635ba0a-v3-claim-4"
           }
         ],
         "tendency": {
@@ -4262,6 +4234,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-74fb51047f3096d9-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31724816547fc87d-33e0e250569832b7-source.png"
         }
       },
       "slug": "spritpreise-auf-rekordhoch-ab-wann-lohnt-sich-e-auto-7fc87d",
@@ -4377,6 +4352,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1bc40229c938d48a-6e83fa43f1fb1043-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1bc40229c938d48a-cff3b64250fd0997-source.png"
         }
       },
       "slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
@@ -4409,22 +4387,18 @@
       "visuals": {
         "key_figures": [
           {
-            "label": "Teilnehmende",
-            "value": "1.737",
-            "unit": "Personen",
-            "context": "Umfang der Jurafuchs-Umfrage"
-          },
-          {
             "label": "Bewerbungsbereitschaft ohne AfD-Regierung",
             "value": "57,7",
             "unit": "Prozent",
-            "context": "Anteil mit grundsätzlicher Bewerbung in Sachsen-Anhalt"
+            "context": "Anteil mit grundsätzlicher Bewerbung in Sachsen-Anhalt",
+            "claim_id": "wt-1bc40229c938d48a-v1-claim-2"
           },
           {
             "label": "Bewerbungsbereitschaft bei AfD-Alleinregierung",
             "value": "17,7",
             "unit": "Prozent",
-            "context": "Anteil mit Bewerbung in Sachsen-Anhalt"
+            "context": "Anteil mit Bewerbung in Sachsen-Anhalt",
+            "claim_id": "wt-1bc40229c938d48a-v1-claim-2"
           }
         ],
         "affected_groups": [
@@ -4490,6 +4464,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-c61594c142230474-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-87c42d6cf088c08e-4c69d9387abacf46-source.png"
         }
       },
       "slug": "bildung-hochschulen-in-ungarn-nehmen-wieder-am-erasmus-programm-teil-88c08e",
@@ -4703,6 +4680,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-8406f9f7742611aa-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7122b10e5711a154-c60770b2eb642eba-source.png"
         }
       },
       "slug": "braucht-ki-eine-internationale-aufsichtsbehorde-11a154",
@@ -4827,14 +4807,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Beschäftigte außerhalb der Landwirtschaft",
-            "value": "162.000",
-            "unit": "Personen",
-            "context": "Zuwachs im August laut US-Arbeitsministerium"
-          }
-        ],
         "affected_groups": [
           "beschaeftigte",
           "unternehmen",
@@ -4950,7 +4922,8 @@
             "label": "Verbrannte Fläche",
             "value": "700.000",
             "unit": "Hektar",
-            "context": "fast so viel Fläche sei in der EU bereits verbrannt"
+            "context": "fast so viel Fläche sei in der EU bereits verbrannt",
+            "claim_id": "wt-b5e0a39f46388642-v2-claim-1"
           }
         ],
         "affected_groups": [
@@ -4958,12 +4931,6 @@
           "staat",
           "kommunen",
           "europa"
-        ],
-        "timeline": [
-          {
-            "date": "2026-09-01",
-            "label": "Rede der Kommissarin im Europaparlament"
-          }
         ],
         "tendency": {
           "human": "risiko",
@@ -5023,6 +4990,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a840cc8db943b070-c5f982d590ba3c0e-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a840cc8db943b070-56511b5f0ffedad4-source.png"
         }
       },
       "slug": "anhorung-zur-anderung-des-dungegesetzes-43b070",
@@ -5052,20 +5022,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Anhörungstermin",
-            "value": "8. September",
-            "unit": "Datum",
-            "context": "Geplanter Termin der öffentlichen Anhörung"
-          },
-          {
-            "label": "Sitzungszeit",
-            "value": "15 bis 17 Uhr",
-            "unit": "Uhrzeit",
-            "context": "Geplante Dauer der Anhörung"
-          }
-        ],
         "affected_groups": [
           "unternehmen",
           "beschaeftigte",
@@ -5540,6 +5496,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-79a8fce4900e254f-df782c24eeb9ac57-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-79a8fce4900e254f-60afa770a0a5dcde-source.png"
         }
       },
       "slug": "france-announces-1-billion-aid-for-farmers-after-climate-hit-summer-0e254f",
@@ -5573,22 +5532,18 @@
       "visuals": {
         "key_figures": [
           {
-            "label": "Hilfen für den Agrarsektor",
-            "value": "1",
-            "unit": "Mrd. EUR",
-            "context": "mehr als eine Milliarde Euro sollen freigesetzt werden"
-          },
-          {
             "label": "Départements auf Orange-Alarm",
             "value": "fünf",
             "unit": "Départements",
-            "context": "fünf Regionen standen mehrere Tage auf Orange-Alarm"
+            "context": "fünf Regionen standen mehrere Tage auf Orange-Alarm",
+            "claim_id": "wt-79a8fce4900e254f-v1-claim-2"
           },
           {
             "label": "Temperatur in einigen Gebieten",
             "value": "40",
             "unit": "Grad",
-            "context": "bis zu 40 Grad werden erwartet"
+            "context": "bis zu 40 Grad werden erwartet",
+            "claim_id": "wt-79a8fce4900e254f-v1-claim-2"
           }
         ],
         "affected_groups": [
@@ -5798,14 +5753,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Einsatzgebiet",
-            "value": "Ärmelkanal",
-            "unit": "Ort",
-            "context": "Ort des angekündigten Frontex-Einsatzes"
-          }
-        ],
         "affected_groups": [
           "unternehmen",
           "staat",
@@ -5869,6 +5816,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-91d18230516d00b2-f190b30bc8f9ef12-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-91d18230516d00b2-10e5a35492e55195-source.png"
         }
       },
       "slug": "return-hubs-eu-innenminister-wollen-bis-jahresende-erste-migrations-abkommen-mit-drittst-6d00b2",
@@ -5898,14 +5848,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Frist für erste Abkommen",
-            "value": "Jahresende",
-            "unit": "Zeitpunkt",
-            "context": "Zielzeitpunkt für erste Vereinbarungen"
-          }
-        ],
         "affected_groups": [
           "beschaeftigte",
           "staat",
@@ -6015,7 +5957,8 @@
             "label": "Festgenommener",
             "value": "37",
             "unit": "Jahre",
-            "context": "Alter des vorläufig Festgenommenen"
+            "context": "Alter des vorläufig Festgenommenen",
+            "claim_id": "wt-3c6be5c124113650-v3-claim-2"
           }
         ],
         "affected_groups": [
@@ -6140,14 +6083,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "abgeordnete",
-            "value": "Zehn",
-            "unit": "Personen",
-            "context": "So viele BSW-Landtagsabgeordnete verlassen die Partei laut Bericht."
-          }
-        ],
         "affected_groups": [
           "staat",
           "beschaeftigte",
@@ -6263,14 +6198,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "betroffene Gebäude",
-            "value": "drei",
-            "unit": "Gebäude",
-            "context": "Nach der Quelle brannten drei Gebäude vollständig aus."
-          }
-        ],
         "affected_groups": [
           "beschaeftigte",
           "kinder_jugend",
@@ -6347,6 +6274,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a39369745f4e5cef-039dd8bfaf567a1d-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a39369745f4e5cef-4924de1f5fdb157f-source.png"
         }
       },
       "slug": "110-millionen-euro-fur-schloss-friedenstein-staatsminister-weimer-und-ministerprasident--4e5cef",
@@ -6379,14 +6309,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Fördervolumen",
-            "value": "110",
-            "unit": "Millionen Euro",
-            "context": "Gesamtvolumen des Sanierungsprogramms"
-          }
-        ],
         "affected_groups": [
           "staat",
           "beschaeftigte",
@@ -6395,7 +6317,8 @@
         "timeline": [
           {
             "date": "2027",
-            "label": "Beginn der Arbeiten am Ostturm"
+            "label": "Beginn der Arbeiten am Ostturm",
+            "claim_id": "wt-a39369745f4e5cef-v1-claim-4"
           }
         ],
         "tendency": {
@@ -6456,6 +6379,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-68b6674db060e89b-99ffa9975e7bf9e2-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-68b6674db060e89b-8c40197a4a12aeb1-source.png"
         }
       },
       "slug": "spritpreise-am-bodensee-auf-rekordniveau-so-viel-sparen-autofahrer-in-osterreich-60e89b",
@@ -6485,20 +6411,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Super-Benzin Konstanz/Friedrichshafen",
-            "value": "2,45",
-            "unit": "Euro/Liter",
-            "context": "genannter Literpreis an mehreren Tankstellen"
-          },
-          {
-            "label": "E10 Konstanz/Friedrichshafen",
-            "value": "2,37 bis 2,40",
-            "unit": "Euro/Liter",
-            "context": "genannte Preisspanne für E10"
-          }
-        ],
         "affected_groups": [
           "haushalte",
           "beschaeftigte",
@@ -6563,6 +6475,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c84116529aa2d23b-9ea49652bb501198-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c84116529aa2d23b-555156f28f052e9d-source.png"
         }
       },
       "slug": "wertvolle-ressourcen-studie-milliardenwerte-in-europas-elektroschrott-ungenutzt-a2d23b",
@@ -6599,19 +6514,22 @@
             "label": "Ungenutzter Rohstoffwert",
             "value": "mehr als 65",
             "unit": "Milliarden Euro",
-            "context": "Wert ungenutzter Rohstoffe in EU-Geräten"
+            "context": "Wert ungenutzter Rohstoffe in EU-Geräten",
+            "claim_id": "wt-c84116529aa2d23b-v1-claim-1"
           },
           {
             "label": "Ungenutzte Smartphones",
             "value": "700",
             "unit": "Millionen",
-            "context": "Schätzung für Smartphones in Schubladen"
+            "context": "Schätzung für Smartphones in Schubladen",
+            "claim_id": "wt-c84116529aa2d23b-v1-claim-2"
           },
           {
             "label": "Elektroschrott pro Jahr",
             "value": "13",
             "unit": "Millionen Tonnen",
-            "context": "Jährlich anfallender Elektroschrott in Europa"
+            "context": "Jährlich anfallender Elektroschrott in Europa",
+            "claim_id": "wt-c84116529aa2d23b-v1-claim-3"
           }
         ],
         "affected_groups": [
@@ -6624,25 +6542,6 @@
           "human": "gemischt",
           "planet": "chance",
           "democracy": "offen"
-        },
-        "chart": {
-          "type": "bar",
-          "title": "Genannte Größen der Meldung",
-          "unit": "Einheit",
-          "points": [
-            {
-              "label": "Rohstoffwert",
-              "value": 65
-            },
-            {
-              "label": "Schubladen-Smartphones",
-              "value": 700
-            },
-            {
-              "label": "Elektroschrott",
-              "value": 13
-            }
-          ]
         }
       },
       "media_impact": null,
@@ -6735,6 +6634,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-b84747782d1de13b-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61d3420f0dd76f70-675e4221259f3ada-source.png"
         }
       },
       "slug": "kongresswahlen-trump-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-d76f70",
@@ -6764,14 +6666,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Wahltag",
-            "value": "3",
-            "unit": "November",
-            "context": "Termin der Midterms in den Berichten"
-          }
-        ],
         "affected_groups": [
           "verbraucherinnen",
           "staat",
@@ -6923,14 +6817,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "neu vertriebene Menschen",
-            "value": "75,000",
-            "unit": "Personen",
-            "context": "laut IOM die jüngste Zahl in der Lake Province"
-          }
-        ],
         "affected_groups": [
           "beschaeftigte",
           "kommunen",
@@ -6994,6 +6880,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8f76552549f6aa68-fba6d559c4ef221e-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8f76552549f6aa68-0d252e6c54a3b883-source.png"
         }
       },
       "slug": "nepal-two-flood-survivors-rescued-from-hydropower-tunnel-f6aa68",
@@ -7122,7 +7011,8 @@
             "label": "Wohnungen",
             "value": "215",
             "unit": "Wohnungen",
-            "context": "Bestand, um den der Streit kreist"
+            "context": "Bestand, um den der Streit kreist",
+            "claim_id": "wt-9c53ae7c184a9cf0-v1-claim-1"
           }
         ],
         "affected_groups": [
@@ -7222,31 +7112,21 @@
             "label": "Kosten 2025",
             "value": "9,04",
             "unit": "Mio. Euro",
-            "context": "Jährliche Kosten der Bundeswehr für Kinderbetreuungsplätze"
+            "context": "Jährliche Kosten der Bundeswehr für Kinderbetreuungsplätze",
+            "claim_id": "wt-2ae8fdd95aa5c1fa-v2-claim-1"
           },
           {
             "label": "Kosten 2022",
             "value": "5,83",
             "unit": "Mio. Euro",
-            "context": "Vergleichswert aus der Antwort der Bundesregierung"
-          },
-          {
-            "label": "Plätze im Inland",
-            "value": "580",
-            "unit": "Belegrechte",
-            "context": "Aktuell genannte Betreuungsplätze in Deutschland"
+            "context": "Vergleichswert aus der Antwort der Bundesregierung",
+            "claim_id": "wt-2ae8fdd95aa5c1fa-v2-claim-1"
           }
         ],
         "affected_groups": [
           "beschaeftigte",
           "haushalte",
           "staat"
-        ],
-        "timeline": [
-          {
-            "date": "2025",
-            "label": "Kostenstand 2025"
-          }
         ],
         "tendency": {
           "human": "gemischt",
@@ -7318,6 +7198,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9cca0ad92ad1a84a-ec1d67e86dbdc3ed-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9cca0ad92ad1a84a-78d63f40bb636f8c-source.png"
         }
       },
       "slug": "das-macht-die-bundesregierung-fur-entlastungen-bei-den-energiepreisen-d1a84a",
@@ -7354,19 +7237,15 @@
             "label": "Entlastung pro Jahr",
             "value": "10",
             "unit": "Milliarden Euro",
-            "context": "Von der Bundesregierung genannte jährliche Entlastung aller Verbraucherinnen und Verbraucher"
+            "context": "Von der Bundesregierung genannte jährliche Entlastung aller Verbraucherinnen und Verbraucher",
+            "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-2"
           },
           {
             "label": "Durchschnittliche Ersparnis 2026",
             "value": "160",
             "unit": "Euro",
-            "context": "Durchschnittliche Ersparnis für Haushalte mit Strom und Gas"
-          },
-          {
-            "label": "Begünstigte Unternehmen",
-            "value": "600.000",
-            "unit": "Unternehmen",
-            "context": "Für die die Stromsteuer dauerhaft gesenkt wurde"
+            "context": "Durchschnittliche Ersparnis für Haushalte mit Strom und Gas",
+            "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-3"
           }
         ],
         "affected_groups": [
@@ -7378,11 +7257,8 @@
         "timeline": [
           {
             "date": "2026-04-16",
-            "label": "EU-Kommission gibt grünes Licht"
-          },
-          {
-            "date": "2026-05-07",
-            "label": "Förderrichtlinie tritt in Kraft"
+            "label": "EU-Kommission gibt grünes Licht",
+            "claim_id": "wt-9cca0ad92ad1a84a-v3-claim-4"
           }
         ],
         "tendency": {
@@ -7477,7 +7353,8 @@
             "label": "Bundesmittel ab 2027",
             "value": "9,25",
             "unit": "Milliarden Euro",
-            "context": "Vom Bund angekündigte Summe über acht Jahre"
+            "context": "Vom Bund angekündigte Summe über acht Jahre",
+            "claim_id": "wt-9d87c7944980e87e-v1-claim-3"
           }
         ],
         "affected_groups": [
@@ -7488,7 +7365,8 @@
         "timeline": [
           {
             "date": "2027",
-            "label": "Beginn der Bundesmittel über acht Jahre"
+            "label": "Beginn der Bundesmittel über acht Jahre",
+            "claim_id": "wt-9d87c7944980e87e-v1-claim-3"
           }
         ],
         "tendency": {
@@ -7596,19 +7474,22 @@
             "label": "erste Erhöhung",
             "value": "3,0",
             "unit": "Prozent",
-            "context": "erste Besoldungsstufe ab Juli 2026"
+            "context": "erste Besoldungsstufe ab Juli 2026",
+            "claim_id": "wt-7743382a4712f9be-v1-claim-2"
           },
           {
             "label": "Mindestbetrag",
             "value": "110",
             "unit": "Euro pro Monat",
-            "context": "untere Grenze der ersten Erhöhung"
+            "context": "untere Grenze der ersten Erhöhung",
+            "claim_id": "wt-7743382a4712f9be-v1-claim-2"
           },
           {
             "label": "zweite Erhöhung",
             "value": "2,8",
             "unit": "Prozent",
-            "context": "zweite Stufe ab Oktober 2027"
+            "context": "zweite Stufe ab Oktober 2027",
+            "claim_id": "wt-7743382a4712f9be-v1-claim-2"
           }
         ],
         "affected_groups": [
@@ -7619,11 +7500,8 @@
         "timeline": [
           {
             "date": "2026-07",
-            "label": "erste Erhöhung rückwirkend ab Juli 2026"
-          },
-          {
-            "date": "2027-10",
-            "label": "zweites Plus zum 1. Oktober 2027"
+            "label": "erste Erhöhung rückwirkend ab Juli 2026",
+            "claim_id": "wt-7743382a4712f9be-v1-claim-1"
           }
         ],
         "tendency": {
@@ -7696,6 +7574,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-04681d81027fb10d-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-c87cfdddd07432e2-1d84ad5039a8f7b3-source.png"
         }
       },
       "slug": "sorte-e10-irankrieg-treibt-benzinpreis-auf-hochststand-7432e2",
@@ -7725,20 +7606,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "E10-Tagesdurchschnitt",
-            "value": "2,215",
-            "unit": "Euro pro Liter",
-            "context": "gemeldeter bundesweiter Durchschnitt am Mittwoch"
-          },
-          {
-            "label": "Bisheriger Rekord",
-            "value": "2,203",
-            "unit": "Euro pro Liter",
-            "context": "ADAC-Wert aus dem März 2022"
-          }
-        ],
         "affected_groups": [
           "haushalte",
           "unternehmen",
@@ -7748,7 +7615,8 @@
         "timeline": [
           {
             "date": "2022-03",
-            "label": "Bisheriger Rekord laut ADAC"
+            "label": "Bisheriger Rekord laut ADAC",
+            "claim_id": "wt-c87cfdddd07432e2-v1-claim-2"
           }
         ],
         "tendency": {
@@ -7821,6 +7689,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-34e360cdb996a299-a17278d71a039dc6-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-34e360cdb996a299-95430a83e10e2363-source.png"
         }
       },
       "slug": "france-agriculture-production-sees-economic-hit-from-heatwaves-96a299",
@@ -7851,31 +7722,11 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Rückgang sektoraler Wertschöpfung",
-            "value": "8%",
-            "unit": "Prozent",
-            "context": "Erwarteter Rückgang im laufenden Jahr laut Meldung"
-          },
-          {
-            "label": "Wachstumseffekt 2026",
-            "value": "0.1",
-            "unit": "Prozentpunkte",
-            "context": "Geschätzter Abzug vom französischen Wachstum"
-          }
-        ],
         "affected_groups": [
           "unternehmen",
           "beschaeftigte",
           "staat",
           "verbraucherinnen"
-        ],
-        "timeline": [
-          {
-            "date": "2026",
-            "label": "Erwarteter Wachstumseffekt"
-          }
         ],
         "tendency": {
           "human": "risiko",
@@ -7964,20 +7815,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Tote",
-            "value": "15",
-            "unit": "Menschen",
-            "context": "Von der DW genannte Mindestzahl nach den Angriffen"
-          },
-          {
-            "label": "Brent-Preis",
-            "value": "97,04",
-            "unit": "US-Dollar",
-            "context": "Zwischenzeitlicher Preis je Barrel laut Bericht"
-          }
-        ],
         "affected_groups": [
           "staat",
           "unternehmen",
@@ -8042,6 +7879,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-45c66ae271691215-24d366353c898ab0-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-45c66ae271691215-306c8543c1432a4e-source.png"
         }
       },
       "slug": "mehr-auszubildende-mehr-abbrecher-pflegefall-gesundheitsberufe-691215",
@@ -8073,35 +7913,11 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Auszubildende Brandenburg",
-            "value": "6.881",
-            "unit": "Personen",
-            "context": "Zuletzt gezählte Auszubildende in einer entsprechenden Ausbildung"
-          },
-          {
-            "label": "Auszubildende Berlin",
-            "value": "11.622",
-            "unit": "Personen",
-            "context": "Zuletzt gezählte Auszubildende in einer entsprechenden Ausbildung"
-          }
-        ],
         "affected_groups": [
           "beschaeftigte",
           "patientinnen",
           "kommunen",
           "staat"
-        ],
-        "timeline": [
-          {
-            "date": "2035",
-            "label": "Zusätzlicher Pflegebedarf in Berlin laut Beitrag"
-          },
-          {
-            "date": "2040",
-            "label": "Zusätzlicher Personalbedarf in Brandenburg laut Beitrag"
-          }
         ],
         "tendency": {
           "human": "gemischt",
@@ -8202,14 +8018,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Demonstrierende",
-            "value": "Hunderte",
-            "unit": "Personen",
-            "context": "Zahl der Menschen, die in Valletta demonstrierten"
-          }
-        ],
         "affected_groups": [
           "beschaeftigte",
           "staat",
@@ -8218,7 +8026,8 @@
         "timeline": [
           {
             "date": "2017",
-            "label": "Caruana Galizias Autobombenanschlag"
+            "label": "Caruana Galizias Autobombenanschlag",
+            "claim_id": "wt-9e8076042f86f06d-v1-claim-2"
           }
         ],
         "tendency": {
@@ -8291,6 +8100,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-58f9d6f04aa33250-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-872323e750684aa1-b4e4c0ec514b76fc-source.png"
         }
       },
       "slug": "demografie-und-familienplanung-auch-wegen-der-wohnungsnot-gibt-es-zu-wenig-kinder-684aa1",
@@ -8421,7 +8233,8 @@
             "label": "Prozessdauer",
             "value": "dreijähriger",
             "unit": "Prozess",
-            "context": "Die Quelle nennt einen dreijährigen Konsultationsprozess."
+            "context": "Die Quelle nennt einen dreijährigen Konsultationsprozess.",
+            "claim_id": "wt-67083aa272f98b15-v1-claim-2"
           }
         ],
         "affected_groups": [
@@ -8487,6 +8300,9 @@
           "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-73a0e83a0549bf13-square.png",
           "width": 1080,
           "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a77b5d9b2935de2a-f59ab2b0b581e724-source.png"
         }
       },
       "slug": "tv-im-seniorenheim-zimmer-in-dahn-keine-zusatzliche-gema-lizenz-notig-35de2a",
@@ -8516,14 +8332,6 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Ort des Falls",
-            "value": "Dahn",
-            "unit": "Ort",
-            "context": "Genannter Fallort des Seniorenheims"
-          }
-        ],
         "affected_groups": [
           "unternehmen",
           "beschaeftigte",
@@ -8631,41 +8439,11 @@
         }
       },
       "visuals": {
-        "key_figures": [
-          {
-            "label": "Inkrafttreten",
-            "value": "17.03.2026",
-            "unit": "Datum",
-            "context": "Seit diesem Datum gilt das Gesetz laut Quelle."
-          },
-          {
-            "label": "Evaluierung",
-            "value": "2",
-            "unit": "Jahre",
-            "context": "In 2 Jahren soll das Gesetz evaluiert werden."
-          },
-          {
-            "label": "Paragraf 14 Abs. 3-5",
-            "value": "2030",
-            "unit": "Jahr",
-            "context": "Für diese Teile nennt die Quelle einen späteren Stichtag."
-          }
-        ],
         "affected_groups": [
           "unternehmen",
           "staat",
           "verbraucherinnen",
           "kommunen"
-        ],
-        "timeline": [
-          {
-            "date": "2026-03-17",
-            "label": "Gesetz tritt in Kraft"
-          },
-          {
-            "date": "2030-01-01",
-            "label": "Paragraf 14 Abs. 3-5 tritt in Kraft"
-          }
         ],
         "tendency": {
           "human": "chance",
