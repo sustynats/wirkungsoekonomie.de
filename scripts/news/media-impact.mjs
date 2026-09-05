@@ -85,6 +85,23 @@ function paragraphs(value, max = 1400) {
     .trim();
 }
 
+function ensureTwoParagraphs(value) {
+  const text = paragraphs(value, 1400);
+  if (!text || text.includes("\n\n")) return text;
+  const sentences = text.split(/(?<=[.!?])\s+/).filter(Boolean);
+  if (sentences.length < 2) return text;
+  const totalWords = text.split(/\s+/).filter(Boolean).length;
+  if (totalWords < 100 || totalWords > 180) return text;
+  let words = 0;
+  let splitAt = 0;
+  for (let index = 0; index < sentences.length - 1; index += 1) {
+    words += sentences[index].split(/\s+/).filter(Boolean).length;
+    if (words >= totalWords / 2) { splitAt = index + 1; break; }
+  }
+  if (!splitAt) splitAt = Math.ceil(sentences.length / 2);
+  return `${sentences.slice(0, splitAt).join(" ")}\n\n${sentences.slice(splitAt).join(" ")}`;
+}
+
 function strings(value, maxItems = 4, max = 220) {
   return [...new Set((Array.isArray(value) ? value : []).map((item) => plain(item, max)).filter(Boolean))].slice(0, maxItems);
 }
@@ -95,7 +112,11 @@ function textForStory(story) {
 
 export function detectMediaImpactTrigger(story = {}) {
   const text = textForStory(story);
-  const signalText = text.replace(/\bgefahr(?:en)?gut\w*/gi, " ");
+  const signalText = text
+    .replace(/\bgefahr(?:en)?(?:gut|stoff)\w*/gi, " ")
+    .replace(/\bgef(?:ähr|aehr)lich\w*\s+stoff\w*/gi, " ")
+    .replace(/\b(?:keine|zu\s+keinem\s+zeitpunkt\s+eine)\s+gefahr\w*/gi, " ")
+    .replace(/\bdangerous[- ]+goods?\b/gi, " ");
   const title = plain(story.title || story.sources?.[0]?.title, 260);
   const summaries = (story.sources || []).map((source) => plain(source.summary, 900)).join(" ");
   const signals = [];
@@ -173,7 +194,7 @@ export function sanitizeMediaImpact(input, story = {}, trigger = detectMediaImpa
       what_is_inferred: plain(evidence.what_is_inferred, 400), what_is_open: plain(evidence.what_is_open, 400),
     },
     editorial_assessment: plain(input.editorial_assessment, 500),
-    fact_first_reframe: { title: plain(reframe.title, 220), source_summary: paragraphs(reframe.source_summary, 1400), summary: plain(reframe.summary, 420), detail_summary: plain(reframe.detail_summary, 1200) },
+    fact_first_reframe: { title: plain(reframe.title, 220), source_summary: ensureTwoParagraphs(reframe.source_summary), summary: plain(reframe.summary, 420), detail_summary: plain(reframe.detail_summary, 1200) },
     self_frame_warning: Boolean(input.self_frame_warning),
     source_comparison: { sufficient_basis: sufficientComparison, finding: sufficientComparison ? plain(comparison.finding, 500) : "" },
   };

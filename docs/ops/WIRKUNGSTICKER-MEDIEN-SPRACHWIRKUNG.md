@@ -79,7 +79,7 @@ Der Medienkostenanteil eines regulären kombinierten Aufrufs ist eine konservati
 4. bewahrt Quellen, Claims, Quellenzusammenfassung und bestehende Fakten;
 5. hängt eine neue Version an;
 6. stoppt am bestehenden Monatsbudget;
-7. fordert bei einer formal mangelhaften Modellausgabe höchstens eine gezielte Qualitätskorrektur an und hält den Fall danach weiterhin zurück;
+7. gliedert eine inhaltlich vollständige Ersatzfassung bei Bedarf deterministisch an einer Satzgrenze in zwei Absätze, fordert bei anderen formalen Mängeln höchstens eine gezielte Qualitätskorrektur an und hält den Fall danach weiterhin zurück;
 8. entfernt automatisch einen früher sichtbaren Mediencheck, wenn eine verschärfte lokale Triggerregel ihn nicht mehr als relevant einstuft;
 9. ist bei unverändertem Quellenstand idempotent.
 

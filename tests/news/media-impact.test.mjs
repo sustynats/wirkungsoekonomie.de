@@ -28,7 +28,7 @@ function validMedia(overrides = {}) {
 
 test("neutrales Ereignis löst keinen Mediencheck aus", () => {
   assert.equal(detectMediaImpactTrigger(story("Bund veröffentlicht Monatsbericht", "Der Bericht enthält neue Daten zur Verwaltung.")).relevant, false);
-  assert.equal(detectMediaImpactTrigger(story("Nach Gefahrengut-Alarm läuft der Flugverkehr wieder", "Die technische Prüfung ist abgeschlossen.")).relevant, false);
+  assert.equal(detectMediaImpactTrigger(story("Nach Gefahrengut-Alarm läuft der Flugverkehr wieder", "Eine Frau meldete einen gefährlichen Stoff; laut Polizei bestand zu keinem Zeitpunkt eine Gefahr.")).relevant, false);
 });
 
 test("englischsprachige politisch aufgeladene Meldungen nutzen dieselbe Vorprüfung", () => {
@@ -42,6 +42,14 @@ test("sauber attribuiertes politisches Zitat bleibt Akteursaussage", () => {
   const media = sanitizeMediaImpact(validMedia(), item, trigger).media_impact;
   assert.equal(media.speaker_statement.status, "interpretation");
   assert.equal(media.framing.attribution_quality, "eindeutig attribuiert");
+});
+
+test("inhaltlich vollständige Self-Frame-Fassung erhält deterministisch zwei Absätze", () => {
+  const item = story("Minister bezeichnet Sabotage als Klimaextremismus", "Der Minister verwendet den Begriff; die Ermittlungen dauern an.");
+  const media = validMedia();
+  media.fact_first_reframe.source_summary = media.fact_first_reframe.source_summary.replace(/\n\n/g, " ");
+  const sanitized = sanitizeMediaImpact(media, item).media_impact;
+  assert.equal(sanitized.fact_first_reframe.source_summary.split(/\n\s*\n/).length, 2);
 });
 
 test("politischer Begriff ohne Attribution erhält höhere Warnsignale", () => {
