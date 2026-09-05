@@ -7,6 +7,7 @@ import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, sourceEvi
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
 import { livingFileMatch, subjectConflict, matchingStories, isMerged } from "./living-files.mjs";
 import { compactEvidenceSegments, serializeEvidencePackets } from "./evidence-packets.mjs";
+import { MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, detectMediaImpactTrigger, mediaImpactValidationErrors } from "./media-impact.mjs";
 
 const STOPWORDS = new Set([
   "aber", "alle", "als", "auch", "auf", "aus", "bei", "bis", "das", "dass", "dem", "den", "der", "des", "die", "ein", "eine", "einer", "eines", "fuer", "für", "hat", "im", "in", "ist", "mit", "nach", "nicht", "oder", "sich", "sind", "und", "vom", "von", "vor", "werden", "wird", "zur", "zum",
@@ -721,6 +722,7 @@ export function buildAnalysisPrompt(stories) {
     evidence_groups: evidenceGroups(story.sources),
     verification_started_at: story.verification_started_at || null,
     currentness: story.currentness || null,
+    media_trigger: story.media_trigger || detectMediaImpactTrigger(story),
     claims: story.claims.map((claim) => ({
       claim_id: claim.claim_id,
       claim: cleanForPrompt(claim.claim, 720),
@@ -778,6 +780,7 @@ export function buildAnalysisPrompt(stories) {
     "Ausnahme für interne Belegfelder: event_claims.evidence und followups.source_id müssen die exakten gelieferten IDs und URLs enthalten. Sie gehören nicht in den journalistischen Fließtext. Rechne diese Belegfelder nicht in das Zeichenbudget der Lesertexte ein.",
     "Verbindliches Belegformat: Quellen enthalten evidence_segments mit unveränderlichem evidence_id und excerpt. In event_claims.evidence gib ausschließlich {evidence_id:...} mit einer tatsächlich gelieferten ID aus. Kein Zitat abschreiben, keine URLs oder IDs erfinden. Bei Bedarf mehrere Textstellen-IDs auswählen, die zusammen die konkrete Behauptung tragen. Der Server löst sie vor der Prüfung exakt auf. evidence_segments ersetzen article_excerpt als bereitgestellten Quellentext. Sämtliche Lesertexte einschließlich event_claims.claim auf Deutsch; fremdsprachige Originalbelege nicht übersetzen.",
     "evidence_selection.incomplete kennzeichnet eine begrenzte Textstellenauswahl, keinen vollständig gelesenen Artikel. Keine Vollständigkeit behaupten; fehlt Beleg oder Kontext für eine Kernbehauptung, insufficient_evidence statt Ergänzen aus Vermutung.",
+    ...MEDIA_PROMPT_RULES,
     ...VISUALS_PROMPT_RULES,
     "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar.",
     "Gib ausschließlich valides JSON ohne Markdown aus. Schema:",
@@ -823,6 +826,7 @@ export function buildAnalysisPrompt(stories) {
           rationale: "string",
         },
         visuals: VISUALS_SCHEMA,
+        media_impact: MEDIA_IMPACT_SCHEMA,
         publication_recommendation: true,
       }],
     }),
@@ -863,7 +867,7 @@ function aiRetryDelayMs(response, attempt) {
 
 export async function callWoekAi(stories, options = {}) {
   const apiUrl = options.apiUrl || "https://130.162.217.58.sslip.io/api/woek-ai";
-  const prompt = buildAnalysisPrompt(stories);
+  const prompt = options.prompt || buildAnalysisPrompt(stories);
   const attempts = Math.max(1, Math.min(3, Number(options.attempts || 3)));
   let response;
   let payload;
@@ -883,7 +887,7 @@ export async function callWoekAi(stories, options = {}) {
         },
         body: JSON.stringify({
           question: prompt,
-          context: "Wirkungsticker: eigenständige journalistische Ereignisrekonstruktion aus öffentlichen Quellen; Fakten- und Folgenprüfung",
+          context: options.context || "Wirkungsticker: eigenständige journalistische Ereignisrekonstruktion aus öffentlichen Quellen; Fakten-, Folgen- sowie selektive Medien- und Sprachwirkungsprüfung",
         }),
       });
       payload = await response.json().catch(() => null);
@@ -1049,6 +1053,7 @@ export function validateAnalysis(analysis, story, options = {}) {
     }
   }
   if (analysis?.publication_recommendation !== true) errors.push("AI_PUBLICATION_NOT_RECOMMENDED");
+  errors.push(...mediaImpactValidationErrors(analysis, story, story?.media_trigger || detectMediaImpactTrigger(story)));
   if (filterVersion >= 4 && options.persisted !== true) errors.push(...validateNewsroomAnalysis(analysis, story));
   else if (filterVersion < 4 && !story.sources.some((source) => source.primary_source)) errors.push("PRIMARY_SOURCE_REQUIRED");
   if (!story.claims.length || story.claims.some((claim) => !claim.source_id)) errors.push("CLAIM_LEDGER_INCOMPLETE");
@@ -1066,7 +1071,8 @@ export function validateAnalysis(analysis, story, options = {}) {
   const withoutPublisherNames = (value) => story.sources.reduce((text, source) => source.publisher ? text.split(source.publisher).join("Quelle") : text, value);
   // Visuals have their own source-bound sanitizer before this gate. Their
   // internal claim IDs and ISO date components are not journalistic numbers.
-  const textWithoutFrameworks = collectStrings({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null }).join(" ");
+  const mediaForNumbers = analysis?.media_impact ? { ...analysis.media_impact, framing: { ...analysis.media_impact.framing, political_history_evidence: [] } } : null;
+  const textWithoutFrameworks = collectStrings({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null, media_impact: mediaForNumbers, media_analysis_version: "", media_checked_at: "", media_trigger_fingerprint: "" }).join(" ");
   for (const token of numberTokens(withoutPublisherNames(textWithoutFrameworks))) if (!allowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_UNSUPPORTED_NUMBER:${token}`);
   if (options.validateSourceSummaryNumbers !== false) {
     for (const token of numberTokens(withoutPublisherNames(analysis?.source_summary || ""))) if (!rawAllowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);

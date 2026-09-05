@@ -30,6 +30,7 @@ import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
 import { IMAGE_CONFIG } from "./title-image/policy.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint } from "./evidence-packets.mjs";
+import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, estimateMediaUsage, sanitizeMediaImpact } from "./media-impact.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
@@ -59,6 +60,7 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_PUBLICATION_GATE_REQUIRED$/,
   /^AI_PUBLICATION_GATE_(?:NEWS_VALUE|FACTORS|EXCEPTION|EVIDENCE|DUPLICATE)_INVALID$/,
   /^AI_PUBLICATION_GATE_RATIONALE_REQUIRED$/,
+  /^MEDIA_(?:IMPACT|SPEAKER|FRAMING|FRAME|HISTORY|EVIDENCE|COMPARISON|SELF_FRAME|INTENT|OUTLET|EFFECT)/,
 ];
 const EDITORIAL_REJECTION_ERRORS = new Set([
   "AI_PUBLICATION_NOT_RECOMMENDED",
@@ -200,6 +202,7 @@ function createCandidate(cluster, now, reassessment = false, fresh = false) {
   candidate.preanalysis = preAnalyzeStory(candidate);
   candidate.topic = candidate.preanalysis.topics;
   candidate.content_hash = storyContentHash(candidate);
+  candidate.media_trigger = detectMediaImpactTrigger(candidate);
   return candidate;
 }
 
@@ -312,6 +315,23 @@ export function sanitizeAnalysisVisuals(analysis, candidate, report = {}) {
     report.visuals_dropped ||= [];
     report.visuals_dropped.push({ story_id: candidate.story_id, dropped });
   }
+  return analysis;
+}
+
+export function sanitizeAnalysisMediaImpact(analysis, candidate, report = {}, now = new Date().toISOString()) {
+  if (!analysis || typeof analysis !== "object" || Array.isArray(analysis)) return analysis;
+  const trigger = candidate.media_trigger || detectMediaImpactTrigger(candidate);
+  const { media_impact: mediaImpact, dropped } = sanitizeMediaImpact(analysis.media_impact, candidate, trigger);
+  analysis.media_impact = mediaImpact;
+  analysis.media_analysis_version = MEDIA_ANALYSIS_VERSION;
+  analysis.media_checked_at = now;
+  analysis.media_trigger_fingerprint = trigger.fingerprint;
+  if (dropped.length) {
+    report.media_impact_dropped ||= [];
+    report.media_impact_dropped.push({ story_id: candidate.story_id, dropped });
+  }
+  applySelfFrameRewrites(analysis, candidate, report);
+  analysis.media_trigger_fingerprint = detectMediaImpactTrigger(candidate).fingerprint;
   return analysis;
 }
 
@@ -513,6 +533,12 @@ export async function runWirkungsticker(options = {}) {
     article_excerpts_fetched: 0,
     article_excerpt_failures: 0,
     visuals_dropped: [],
+    media_impact_dropped: [],
+    media_checks_triggered: 0,
+    media_checks_skipped: 0,
+    media_check_tokens: 0,
+    media_check_cost_usd: 0,
+    self_frame_rewrites: 0,
     budget_stage: 0,
     completed_at: null,
     sources_scheduled: dueSources.length,
@@ -784,7 +810,9 @@ export async function runWirkungsticker(options = {}) {
             }
           }));
           const currentness = { ...candidate.currentness, ...freshnessFor(candidate, now) };
-          return { ...candidate, sources, currentness };
+          const enriched = { ...candidate, sources, currentness };
+          enriched.media_trigger = detectMediaImpactTrigger(enriched);
+          return enriched;
         }));
         const aiResult = await (options.callAiImpl || callWoekAi)(analysisBatch, {
           apiUrl: process.env.WOEK_NEWS_API_URL,
@@ -806,7 +834,15 @@ export async function runWirkungsticker(options = {}) {
         for (const candidate of batch) {
           const analysis = analyses.get(candidate.story_id);
           const analysisCandidate = analysisBatch.find((item) => item.story_id === candidate.story_id) || candidate;
+          if (analysisCandidate.media_trigger?.relevant) report.media_checks_triggered += 1;
+          else report.media_checks_skipped += 1;
           if (analysis) sanitizeAnalysisVisuals(analysis, analysisCandidate, report);
+          if (analysis) {
+            sanitizeAnalysisMediaImpact(analysis, analysisCandidate, report, now);
+            const mediaUsage = estimateMediaUsage(analysis.media_impact, modelRates(aiResult.model));
+            report.media_check_tokens += mediaUsage.input_tokens + mediaUsage.output_tokens;
+            report.media_check_cost_usd = Number((report.media_check_cost_usd + mediaUsage.estimated_cost_usd).toFixed(6));
+          }
           if (analysis) resolveEvidenceReferences(analysis, analysisCandidate);
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
           const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
@@ -970,6 +1006,10 @@ export async function runWirkungsticker(options = {}) {
       reviews_reused: report.reviews_reused,
       input_holds: report.input_holds.length,
       prompt_chars_sent: report.prompt_chars_sent,
+      media_checks_triggered: report.media_checks_triggered,
+      media_checks_skipped: report.media_checks_skipped,
+      media_check_tokens: report.media_check_tokens,
+      self_frame_rewrites: report.self_frame_rewrites,
       published_stories: report.published_stories,
       updated_stories: report.updated_stories,
     },
@@ -981,6 +1021,8 @@ export async function runWirkungsticker(options = {}) {
       output_tokens: report.output_tokens,
       estimated_cost_usd: report.estimated_cost_usd,
       token_source: report.token_source || "unavailable",
+      media_check_tokens: report.media_check_tokens,
+      media_check_cost_usd: report.media_check_cost_usd,
     } : null,
     source_failures: report.source_failures,
     quality_holds: report.quality_holds.length,

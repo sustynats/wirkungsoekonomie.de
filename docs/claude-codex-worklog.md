@@ -198,3 +198,12 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Geprüft:** `npm run lint`, `npm run typecheck`, `npm run build`; lokale Read-API und Security-Header getestet.
 - **Offen:** personalisierten DIP-Schlüssel, private Import-Worker/Supabase-Workbench mit RBAC+MFA, formelle Materialitäts- und Freigaberegeln, Hosting/DNS/TLS und Live-Gates.
 - **Nachtrag DIP:** Der offiziell veröffentlichte Schlüssel ist laut Hilfeseite bis Ende Mai 2027 gültig und funktionsgleich mit einem eigenen Schlüssel; einmaliger serverseitiger Lesetest `GET /api/v1/vorgang` am 2026-08-14: HTTP 200. Nutzung bis Ablauf nur als Hosting-Secret, mit 401-Rotationsalarm; personalisierter Schlüssel ist kein MVP-Gate.
+
+## 2026-09-05 — Codex: Wirkungsticker Medien- & Sprachwirkung
+
+- Bestehende Analysepipeline um einen lokalen, politisch symmetrischen Medien-/Sprachtrigger und das separate `analysis.media_impact`-Modell erweitert; keine zweite Datenbank und kein zweiter regulärer KI-Aufruf.
+- Ereignis, Akteursaussage und mediale Vermittlung werden getrennt; Attribution, Wissensstatus, Resonanzrisiko, Wirkungsordnungen, Herkunftsevidenz und Mehrquellenbasis haben serverseitige Sanitizer und Qualitätsgates.
+- Self-Frame-Check schützt Titel, Kurz-/Detailfassung sowie die daraus abgeleiteten SEO-, OG-, Feed-, Share- und Push-Texte nach „Sachverhalt vor Frame“. Keine Absichtszuschreibung, keine Personen-/Outlet-Scores, kein Wirkungsnachweis aus bloßem Potenzial.
+- Detailseite zeigt „Medien- & Sprachwirkung“ nur bei substanzieller Relevanz und verknüpft bestehende Glossarbegriffe. Die Übersicht erklärt die neue Ebene knapp.
+- Selektiver, budgetgebundener und idempotenter Backfill samt Workflow-Inputs sowie Usage-Feldern für Trigger, Skip, Token, Kostenanteil und Rewrites ergänzt.
+- Dokumentation: `docs/ops/WIRKUNGSTICKER-MEDIEN-SPRACHWIRKUNG.md`. Tests: `tests/news/media-impact.test.mjs` plus vollständige Wirkungsticker-Suite.

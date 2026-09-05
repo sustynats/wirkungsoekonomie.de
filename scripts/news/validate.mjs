@@ -85,6 +85,10 @@ for (const story of activeStories) {
   const analysisAt = detail.indexOf("news-story-summary");
   const consequenceAt = detail.indexOf("news-consequence-check");
   if (sourceSummaryAt < 0 || !detail.includes("Worum geht es?") || !detail.includes("Originalquelle ansehen") || !(sourceSummaryAt < factCheckAt && factCheckAt < analysisAt && analysisAt < consequenceAt)) fail(`NEWS_SOURCE_ANALYSIS_ORDER_INVALID:${story.story_id}`);
+  const mediaAt = detail.indexOf('id="medienwirkung"');
+  if (story.analysis.media_impact?.relevant) {
+    if (mediaAt < consequenceAt || !detail.includes("Medien- &amp; Sprachwirkung") || !detail.includes("Belegter Sachverhalt") || !detail.includes("Mögliches Resonanzrisiko") || !detail.includes('href="../../begriffe/frame/"') || !detail.includes('href="../../begriffe/wirkungspotenzial/"')) fail(`NEWS_MEDIA_IMPACT_UI_INVALID:${story.story_id}`);
+  } else if (mediaAt >= 0 || detail.includes('href="#medienwirkung"')) fail(`NEWS_MEDIA_IMPACT_UI_UNTRIGGERED:${story.story_id}`);
   const renderedSummary = detail.match(/news-story-summary[\s\S]*?<p class="news-analysis-copy">([\s\S]*?)<\/p>/)?.[1]
     ?.replace(/<[^>]*>/g, " ")
     .replace(/&(?:#\d+|#x[\da-f]+|\w+);/gi, " ")
