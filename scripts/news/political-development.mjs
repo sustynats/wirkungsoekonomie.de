@@ -5,6 +5,7 @@ const RULES = [
   ["candidacy_open", /\b(kandidatur|antreten|kandidieren|ministerprasident\w*)\b[^.!?]{0,130}\b(offen|ungewiss|nicht entschieden|erst nach der wahl|montag entscheiden)\b|\b(lasst|lassen|halt)\b[^.!?]{0,100}\boffen\b[^.!?]{0,100}\b(kandidatur|antreten|kandidieren|ministerprasident\w*)\b/],
   ["candidacy_withdrawal", /\b(zieht|ziehen)\b[^.!?]{0,65}\bkandidatur\b[^.!?]{0,35}\bzuruck\b|\b(verzichtet|verzichten)\b[^.!?]{0,60}\b(kandidatur|kandidieren)\b/],
   ["government_position", /\b(koalition\w*|regierungsbildung|regierungsanspruch|alleinregierung)\b[^.!?]{0,100}\b(offen|schliesst|ausgeschlossen|andert|relativiert|ruckt|knapp\w*)\b|\b(andert|relativiert|schliesst)\b[^.!?]{0,100}\b(koalition\w*|regierungsanspruch|regierung\w*)\b/],
+  ["government_commitment", /\b(regieren|regierungsbereit|kandidieren|antreten)\b[^.!?]{0,100}\b(auch|selbst)\b[^.!?]{0,80}\b(knapp\w* mehrheit|ein\w* stimme)\b|\b(auch|selbst)\b[^.!?]{0,80}\b(knapp\w* mehrheit|ein\w* stimme)\b[^.!?]{0,100}\b(regieren|regierungsbereit|kandidieren|antreten)\b/],
   ["resignation", /\b(ruecktritt|rucktritt|regierungsbruch|koalitionsbruch|resigns?|coalition collapse)\b/],
   ["election_result", /\b(wahlergebnis|hochrechnung|vorlaufiges endergebnis|election result)\b/],
 ];

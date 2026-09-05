@@ -8,7 +8,7 @@ import { duplicateGroups } from "../../scripts/news/living-files.mjs";
 
 const review = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/sachsen-anhalt-kandidatur-2026-09-05.json", import.meta.url)));
 const registry = loadNewsRegistry(new URL("../../", import.meta.url).pathname);
-const now = "2026-09-05T22:15:00Z";
+const now = "2026-09-05T23:00:00Z";
 
 test("reviewed election story passes production source, evidence, media and self-frame gates", () => {
   const result = prepareReviewedStory(review, registry, [], now);
@@ -16,17 +16,22 @@ test("reviewed election story passes production source, evidence, media and self
   assert.equal(result.record.analysis.media_impact.relevant, true);
   assert.equal(result.record.analysis.media_impact.observed_impact.present, false);
   assert.equal(result.record.analysis.planet.relevance, "offen");
-  assert.ok(result.record.source_summary.includes("nicht neu"));
+  assert.ok(result.record.source_summary.includes("bereits am Mittwoch"));
+  assert.ok(result.record.source_summary.includes("keinen erneuten Kurswechsel"));
   assert.ok(!result.record.title.includes("Kurswechsel"));
-  assert.equal(result.record.news_status, "preliminary");
+  assert.equal(result.record.news_status, "corrected");
   assert.equal(result.record.sources.some(source => "article_excerpt" in source), false);
-  assert.equal(result.record.sources[0].provenance.origin, result.record.sources[1].provenance.origin);
+  assert.equal(result.record.sources.find(source => source.source_id === "bild-access").provenance.origin, result.record.sources.find(source => source.source_id === "focus-case-research").provenance.origin);
+  assert.equal(result.record.sources.find(source => source.url.includes("31272045")).agency_origin, "afp");
   assert.equal(result.record.claims.some(claim => claim.status === "confirmed_claim"), false);
-  assert.equal(result.record.claims[0].status, "uncertain_claim");
+  assert.equal(result.record.claims.find(claim => claim.evidence.some(evidence => evidence.url.includes("31273399"))).status, "single_source_claim");
+  assert.ok(result.record.title.includes("Unterschiedliche Berichte"));
+  assert.equal(result.record.sources.find(source => source.url.includes("31273399")).provenance.independence_established, false);
+  assert.ok(result.record.claims.some(claim => claim.status === "uncertain_claim"));
 });
 test("reprinting a restricted-origin interview is not independent corroboration", () => {
   const overstated = structuredClone(review);
-  overstated.analysis.event_claims[0].status = "single_source_claim";
+  overstated.analysis.event_claims.find(claim => claim.evidence.some(evidence => evidence.source_id === "focus-case-research")).status = "single_source_claim";
   assert.ok(prepareReviewedStory(overstated, registry, [], now).errors.includes("CLAIM_CRITICAL_SOURCE_UNCORROBORATED"));
 });
 test("editorial intake is idempotent; subsequent changes preserve the original version", () => {
@@ -38,6 +43,24 @@ test("editorial intake is idempotent; subsequent changes preserve the original v
   assert.deepEqual(next.errors, []);
   assert.equal(next.record.current_version, 2);
   assert.deepEqual(next.record.versions[0], first.versions[0]);
+});
+test("later correction keeps the event and URL, preserves history and explains the change", () => {
+  const initial = structuredClone(review);
+  delete initial.correction_note;
+  initial.title = "Frühere Kandidaturaussage vor der Sachsen-Anhalt-Wahl";
+  initial.sources.reverse();
+  const first = prepareReviewedStory(initial, registry, [], now).record;
+  const next = prepareReviewedStory(review, registry, [first], now);
+  assert.deepEqual(next.errors, []);
+  assert.equal(next.record.current_version, 2);
+  assert.equal(next.record.event_id, first.event_id);
+  assert.equal(next.record.slug, first.slug);
+  assert.deepEqual(next.record.versions[0], first.versions[0]);
+  assert.equal(next.record.corrections.length, 1);
+  assert.equal(next.record.corrections[0].note, review.correction_note);
+  const repeated = prepareReviewedStory(review, registry, [next.record], now);
+  assert.equal(repeated.unchanged, true);
+  assert.equal(repeated.record.corrections.length, 1);
 });
 test("a wrong publisher URL blocks editorial intake too", () => {
   const wrong = structuredClone(review);
