@@ -20,14 +20,18 @@ Taktgeber-Deduplizierung bleibt bestehen.
 - Ein Ausfall wird nach zwei Beobachtungen im Abstand von mindestens fünf Minuten
   gemeldet. Ein einmaliger kurzer Verbindungsfehler erzeugt keine Direktnachricht.
 - Seit über 45 Minuten kein abgeschlossener Nachrichtenlauf: sofortige Meldung.
-- KI-Fehler, Quellenabrufprobleme, Budget-/Wechselkurssperre und eine seit über
-  45 Minuten im Live-Feed fehlende, bereits geprüfte Aktenversion werden erkannt.
+- Echte KI-Anbieterfehler, materiell gestörte Quellenabdeckung, Budget-/
+  Wechselkurssperre und eine seit über 45 Minuten im Live-Feed fehlende, bereits
+  geprüfte Aktenversion werden erkannt.
 - KI-Meldungen unterscheiden das lokale Eingabelimit (keine Anfrage für die
   betroffene Akte) von einer HTTP-Fehlerantwort der KI-Schnittstelle und nennen
   den Zeitpunkt des zugrunde liegenden Laufberichts. Ein unbekannter Fehler wird
   nicht pauschal als Anbieterausfall bezeichnet; rohe Fehlermeldungen bleiben intern.
 - Eine unveränderte Artikelzahl ist **kein** Ausfall. Zurückstellungen am
-  Evidenz-/Relevanzgate werden gezählt, nicht ungeprüft veröffentlicht.
+  Evidenz-, Relevanz- und Source-Integrity-Gate werden als redaktioneller Zustand
+  gezählt, nicht als Betriebsstörung gemeldet. Kapazitätswarteschlangen bleiben
+  sichtbar. Erst eine seit mindestens 90 Minuten technisch blockierte Queue wird
+  nach der üblichen Bestätigung als Störung gemeldet.
 - Titelbilder: fehlende Authentifizierung/Konfiguration, technische Erreichbarkeit
   und ausgeschöpfte bestätigte Anbieter-Wiederholungen werden separat überwacht.
   Absichtlich gewählte Wirkungskarten und eine erfolgreiche Sicherheitssperre
@@ -45,14 +49,18 @@ Push-Konfiguration ist nicht gleich nachgewiesene Zustellung auf jedem Smartphon
 Einmal pro Berliner Kalendertag ab 08:00 Uhr (Zeitzone Europe/Berlin, inklusive
 Sommer-/Winterzeit). GitHub kann den Start verzögern; der nächste Lauf holt den
 Bericht nach. Enthalten sind Erreichbarkeit der genannten Seiten/Dienste,
-Live-Aktenzahl, Erstveröffentlichungen gestern/heute, letzter Lauf, offene
-Prüfungen, Quellenstatus und geschätzte KI-Kosten gestern/heute/im Monat.
+Live-Aktenzahl, Erstveröffentlichungen gestern/heute, letzter Lauf, getrennte
+Queue-Zahlen (Kapazität/Technik/Redaktion), Quellenstatus, Quellen-Funnel von
+Abruf über Vorfilter und KI bis Veröffentlichung sowie geschätzte KI-Kosten
+gestern/heute/im Monat und je heutiger Veröffentlichung/Aktualisierung.
 
 USD-Werte stammen aus `data/news/usage.json`, dedupliziert nach Lauf-ID.
 Euro-Umrechnung erfolgt nur mit ausreichend aktuellem gespeichertem EZB-Kurs,
 einschließlich 19 % Steuerreserve. Die 25-EUR-Freigabe bleibt unverändert.
 Historische fehlende Nutzungswerte, Higgsfield-Abo/Bildcredits und Hostingkosten
 werden als fehlend/ausgeschlossen benannt. Es handelt sich nicht um eine Rechnung.
+
+Der Quellenfunnel und der automatisch fortgeschriebene Source-Utility-Report dienen ausschließlich der Betriebsoptimierung. Sie bewerten weder politische Ausrichtung noch die Gesamtqualität eines Medienhauses. Erwartbare Relevanz- und Evidenzablehnungen bleiben redaktionelle Zustände; sie lösen keine falsche Störungsmeldung aus.
 
 Besucher/Besuche, Installationen, tatsächliche aktive Push-Abonnements und
 RSS-Nutzung sind in diesem Betriebsbericht noch nicht integriert. Fehlende

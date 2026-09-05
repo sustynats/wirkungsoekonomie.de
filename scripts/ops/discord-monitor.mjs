@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { buildCaseFiles } from '../news/case-files.mjs';
 import { reportOperationallyHealthy, sourceCoverageDegraded } from '../news/check-run-health.mjs';
+import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const MINUTE = 60_000;
@@ -35,6 +36,7 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
   const period = prefix => rows.filter(r => r.started_at && berlinParts(r.started_at).date.startsWith(prefix));
   const costs = list => list.reduce((sum, r) => sum + (Number.isFinite(r.ai?.estimated_cost_usd) ? r.ai.estimated_cost_usd : 0), 0);
   const published = (date) => stories.filter(s => s.published_at && berlinParts(s.published_at).date === date).length;
+  const todayRuns = period(today);
   const monthRuns = period(today.slice(0, 7));
   const fx = report?.budget_policy?.fx;
   const fxValid = Number.isFinite(fx?.rate_usd_per_eur) && fx.rate_usd_per_eur > 0 && age(fx.rate_date, now) >= 0 && age(fx.rate_date, now) <= 7 * 1440;
@@ -54,12 +56,46 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     const url = `https://wirkungsoekonomie.de/wirkungsticker/${s.slug}/`;
     return !live.has(url) || Date.parse(live.get(url)) < Date.parse(modified);
   });
+  const updatesToday = todayRuns.reduce((n, r) => n + Number(r.counts?.updated_stories || 0), 0);
+  const newToday = published(today);
+  const usdToday = costs(todayRuns);
+  const newsActionsToday = newToday + updatesToday;
+  const pendingTotal = stories.filter(s => !merged(s) && (s.pending_update || (!s.published && s.listed !== false))).length;
+  const legacyHolds = report?.quality_holds || [];
+  const legacyCapacity = legacyHolds.filter(hold => /BUDGET|LIMIT|DISABLED|RUN_TIME/.test(hold.reason || '')).length;
+  const legacyTechnical = (report?.input_holds?.length || 0) + legacyHolds.filter(hold => /PROVIDER_UNAVAILABLE|OUTPUT_INVALID/.test(hold.reason || '')).length;
+  const legacyEditorial = legacyHolds.length - legacyCapacity - legacyHolds.filter(hold => /PROVIDER_UNAVAILABLE|OUTPUT_INVALID/.test(hold.reason || '')).length + (report?.source_integrity_holds?.length || 0);
+  const queue = report?.queue || {
+    status: legacyTechnical ? 'draining' : pendingTotal ? 'draining' : legacyEditorial ? 'editorial_holds' : 'clear',
+    total: pendingTotal,
+    capacity: legacyCapacity + Math.max(0, pendingTotal - legacyCapacity - legacyTechnical - legacyEditorial),
+    technical: legacyTechnical,
+    editorial: legacyEditorial,
+    oldest_minutes: null,
+    oldest_technical_minutes: null,
+  };
+  const dailySourceFunnel = summarizeSourceFunnel(todayRuns.flatMap(run => run.source_funnel || []));
+  const latestSourceFunnel = summarizeSourceFunnel(report?.source_funnel || []);
+  const dailyPipeline = todayRuns.reduce((total, run) => {
+    const counts = run.counts || {};
+    total.feedItems += Number(counts.feed_entries_fetched || 0);
+    total.changedItems += Number(counts.feed_entries_new || 0) + Number(counts.feed_entries_updated || 0) + Number(counts.feed_entries_backfilled || 0);
+    total.candidates += Number(counts.story_clusters || 0);
+    if (Number.isFinite(counts.eligible_stories)) {
+      total.eligibleKnown = true;
+      total.eligible += Number(counts.eligible_stories);
+    }
+    total.aiSelected += Number(counts.ai_stories || 0);
+    total.localRejections += Number(counts.locally_rejected || 0);
+    total.publicationActions += Number(counts.published_stories || 0) + Number(counts.updated_stories || 0);
+    return total;
+  }, { feedItems: 0, changedItems: 0, candidates: 0, eligible: 0, eligibleKnown: false, aiSelected: 0, localRejections: 0, publicationActions: 0 });
   return {
     today, yesterday, active: active.length, underlyingActive: underlyingActive.length,
     caseCount: caseState.cases.length, live: liveFeed?.items?.length ?? null,
-    newToday: published(today), newYesterday: published(yesterday),
-    updatesToday: period(today).reduce((n, r) => n + Number(r.counts?.updated_stories || 0), 0),
-    usdToday: costs(period(today)), usdYesterday: costs(period(yesterday)), usdMonth: costs(monthRuns),
+    newToday, newYesterday: published(yesterday), updatesToday, newsActionsToday,
+    usdToday, usdYesterday: costs(period(yesterday)), usdMonth: costs(monthRuns),
+    usdPerNewsAction: newsActionsToday ? usdToday / newsActionsToday : null,
     eurMonthWithTaxReserve: fxValid ? costs(monthRuns) / fx.rate_usd_per_eur * 1.19 : null,
     missingCostRuns: monthRuns.filter(r => Number(r.counts?.ai_requests ?? r.counts?.ai_stories ?? 0) > 0 && !Number.isFinite(r.ai?.estimated_cost_usd)).length,
     runCompleted: report?.completed_at || null, runAgeMinutes: age(report?.completed_at, now),
@@ -67,6 +103,10 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     pendingPublication: pendingPublication.length,
     sourceFailures: Number(report?.source_failures || 0),
     activeSources: (report?.source_health || []).filter(s => s.status === 'active').length,
+    queue,
+    dailyPipeline,
+    dailySourceFunnel,
+    latestSourceFunnel,
   };
 }
 
@@ -87,27 +127,37 @@ export function aiFailureReason(report = {}) {
 export function evaluateChecks(data, now) {
   const summary = summarizeNews(data, now);
   const checks = (data.probes || []).map(p => ({ id: p.id, name: p.name, ok: p.ok, reason: p.ok ? 'erreichbar' : p.error, immediate: false }));
-  checks.push({ id: 'run', name: 'Automatische Nachrichtenläufe', ok: summary.runAgeMinutes >= 0 && summary.runAgeMinutes <= 45 && reportOperationallyHealthy(data.report), reason: summary.runAgeMinutes > 45 ? 'Seit über 45 Minuten kein abgeschlossener Laufbericht.' : 'Letzter Lauf meldet einen Fehler oder einen ungültigen Zeitstempel.', immediate: true });
-  checks.push({ id: 'provider', name: 'KI-Verarbeitung', ok: !data.report?.ai_error, reason: aiFailureReason(data.report), immediate: false });
-  const inputHolds = data.report?.input_holds || [];
-  checks.push({ id: 'news-input', name: 'Nachrichten-Eingabeprüfung', ok: inputHolds.length === 0, reason: `${inputHolds.length} Akte(n) überschreiten das Eingabelimit. Diese Akten bleiben zur Prüfung erhalten; andere Nachrichten werden weiterverarbeitet. Kein Nachweis eines Anbieterausfalls.`, immediate: false });
+  const runOk = summary.runAgeMinutes >= 0 && summary.runAgeMinutes <= 45 && reportOperationallyHealthy(data.report);
+  checks.push({ id: 'run', name: 'Automatische Nachrichtenläufe', ok: runOk, reason: runOk ? 'letzter Lauf betrieblich gesund' : summary.runAgeMinutes > 45 ? 'Seit über 45 Minuten kein abgeschlossener Laufbericht.' : 'Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.', immediate: true });
+  const providerDegraded = Boolean(data.report?.ai_provider_degraded || data.report?.ai_error);
+  checks.push({ id: 'provider', name: 'KI-Verarbeitung', ok: !providerDegraded, reason: providerDegraded ? aiFailureReason(data.report) : 'kein Anbieterfehler im letzten Lauf', immediate: false });
+  const technicalQueueDelay = summary.queue.status === 'technical_delay';
+  checks.push({ id: 'queue', name: 'Nachrichten-Warteschlange', ok: !technicalQueueDelay, reason: technicalQueueDelay ? `${summary.queue.technical || 0} technisch blockierte Akte(n); älteste technische Blockade seit ${Math.round(summary.queue.oldest_technical_minutes || 0)} Minuten. Kapazitätswarteschlange: ${summary.queue.capacity || 0}; redaktionelle Ablehnungen: ${summary.queue.editorial || 0}.` : 'Queue läuft oder enthält nur erwartbare Kapazitäts-/Redaktionsfälle.', immediate: false });
   const imageErrors = new Set(['HIGGSFIELD_RETRY_EXHAUSTED', 'HIGGSFIELD_AUTH_UNAVAILABLE', 'HIGGSFIELD_NOT_CONFIGURED', 'HIGGSFIELD_PROVIDER_UNAVAILABLE']);
   const failedImages = data.stories.filter(s => s.published && s.listed !== false && imageErrors.has(s.title_image?.refresh_failure || s.title_image?.fallback_reason)).length;
   checks.push({ id: 'images', name: 'Titelbilder', ok: failedImages === 0, reason: `${failedImages} ${failedImages === 1 ? 'Symbolbild' : 'Symbolbilder'} mit technischem Fehler; vorhandene Bilder oder Wirkungskarten bleiben sichtbar. Nachrichten werden dadurch nicht zurückgehalten.`, immediate: false });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   checks.push({ id: 'publication', name: 'Veröffentlichung', ok: data.liveFeed !== null && summary.pendingPublication === 0, reason: data.liveFeed === null ? 'Live-Feed nicht lesbar.' : `${summary.pendingPublication} sichtbare Lagen oder Einzelakten seit über 45 Minuten nicht im Live-Feed.`, immediate: false });
-  checks.push({ id: 'budget', name: 'KI-Monatsbudget', ok: data.report?.budget_policy?.status === 'ok' && summary.usdMonth < Number(data.report?.monthly_budget_usd), reason: 'Monatslimit oder Wechselkurs-Sicherheitsgate hält die KI-Verarbeitung an.', immediate: true });
+  const budgetBlocked = Boolean(data.report?.budget_blocked || data.report?.budget_policy?.status !== 'ok' || summary.usdMonth >= Number(data.report?.monthly_budget_usd));
+  checks.push({ id: 'budget', name: 'KI-Monatsbudget', ok: !budgetBlocked, reason: budgetBlocked ? 'Monatslimit oder Wechselkurs-Sicherheitsgate hält neue KI-Anfragen an; die Warteschlange bleibt erhalten.' : 'innerhalb der technischen Budgetgrenze', immediate: false });
   return { checks, summary };
 }
 
 export function dailyReport(summary, checks) {
+  const funnel = summary.dailyPipeline || {};
+  const sourceTotals = summary.dailySourceFunnel?.totals || {};
+  const productive = (summary.latestSourceFunnel?.productive || []).map(source => source.name).join(', ') || 'keine im letzten Lauf';
   return [
     `WÖk Tagesbericht · ${summary.today} · Europe/Berlin`,
     ...checks.filter(c => TARGETS.some(t => t.id === c.id)).map(c => `${c.ok ? '✓' : '⚠'} ${c.name}: ${c.ok ? 'erreichbar' : c.reason}`),
     `Ticker: ${summary.live ?? 'nicht verfügbar'} live · ${summary.active} aktuelle Lagen und Einzelakten aus ${summary.underlyingActive} aktiven Wirkungsakten${summary.caseCount ? ` · ${summary.caseCount} ${summary.caseCount === 1 ? 'Lageakte' : 'Lageakten'}` : ''}.`,
     `Erstveröffentlichungen gestern (${summary.yesterday}): ${summary.newYesterday}; heute bisher: ${summary.newToday} (inkl. später archivierter/zusammengeführter Akten).`,
     `Letzter Lauf: ${summary.runCompleted || 'nicht verfügbar'}; ${summary.pendingCount} offene Prüfungen, ${summary.activeSources} aktive Quellen.`,
+    `Queue: ${summary.queue.total || 0} offen (${summary.queue.capacity || 0} Kapazität · ${summary.queue.technical || 0} technisch · ${summary.queue.editorial || 0} redaktionell); Status ${summary.queue.status || 'unbekannt'}.`,
+    `Quellen-Funnel heute: ${funnel.feedItems || 0} Feed-Einträge → ${funnel.changedItems || 0} neu/aktualisiert → ${funnel.candidates || 0} Story-Kandidaten → ${funnel.eligibleKnown ? funnel.eligible : 'noch nicht historisch erfasst'} geeignet → ${funnel.aiSelected || 0} KI → ${funnel.publicationActions || 0} Veröffentlichungen/Aktualisierungen. Lokal verworfen: ${funnel.localRejections || 0}; redaktionelle Quellenbeiträge: ${sourceTotals.editorial_rejections || 0}.`,
+    `Produktive Quellen im letzten Lauf: ${productive}.`,
     `KI-Schätzung: gestern $${money(summary.usdYesterday)} · heute $${money(summary.usdToday)} · Monat $${money(summary.usdMonth)}.`,
+    summary.usdPerNewsAction !== null ? `Geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung: $${summary.usdPerNewsAction.toFixed(3)}.` : 'Heute noch keine veröffentlichte oder aktualisierte Akte für eine Kostenquote.',
     summary.eurMonthWithTaxReserve !== null ? `Monat umgerechnet inkl. 19 % Steuerreserve: ca. €${money(summary.eurMonthWithTaxReserve)} (Limit €25).` : 'Euro-Umrechnung: kein ausreichend aktueller Kurs verfügbar.',
     `Kosten ohne Higgsfield-Abo/Bildcredits und Hosting; ${summary.missingCostRuns} KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.`,
     'Besucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.',

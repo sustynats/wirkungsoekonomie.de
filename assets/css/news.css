@@ -2186,12 +2186,14 @@
 .news-editorial-hero { background: linear-gradient(135deg, #07142b, #12384a 64%, #184e42); color: #fff; }
 .news-editorial-hero .breadcrumb a, .news-editorial-hero .breadcrumb span { color: rgb(255 255 255 / 82%); }
 .news-editorial-hero .hero-kicker { color: #e4b647; }
+.news-editorial-hero .hero-title { color: #f1eee6; }
 .news-editorial-hero .hero-subtitle { max-width: 58rem; color: rgb(255 255 255 / 88%); }
 .news-editorial-byline { display: flex; align-items: center; gap: 1rem; margin: 1.4rem 0 .75rem; }
 .news-editorial-byline img { width: 7rem; height: 7rem; border-radius: 50%; object-fit: cover; object-position: 50% 30%; border: 3px solid rgb(255 255 255 / 70%); }
 .news-editorial-byline div { display: grid; gap: .24rem; }
 .news-editorial-byline strong { font-size: 1.16rem; }
 .news-editorial-byline span, .news-editorial-transparency { color: rgb(255 255 255 / 76%); }
+.news-editorial-byline .text-link { color: #f1eee6; text-decoration-color: rgb(241 238 230 / 55%); }
 .news-editorial-transparency { max-width: 54rem; font-size: .92rem; }
 .news-editorial-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(17rem, .78fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
 .news-editorial-article__main { max-width: 52rem; }
