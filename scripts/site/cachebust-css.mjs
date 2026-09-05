@@ -7,6 +7,14 @@ import crypto from "node:crypto";
 // Defensiv: bricht den Build NICHT ab, wenn etwas fehlt.
 try {
   const SITE = path.join(process.cwd(), "_site");
+  const loaderPath = path.join(SITE, "assets/js/search-index-loader.js");
+  if (fs.existsSync(loaderPath)) {
+    const loaderHash = crypto.createHash("sha256").update(fs.readFileSync(loaderPath)).digest("hex").slice(0, 12);
+    for (const name of ["main.js", "search.js"]) {
+      const file = path.join(SITE, "assets/js", name);
+      if (fs.existsSync(file)) fs.writeFileSync(file, fs.readFileSync(file, "utf8").replace(/search-index-loader\.js(?:\?v=[a-zA-Z0-9-]+)?/g, `search-index-loader.js?v=${loaderHash}`));
+    }
+  }
   const cssPath = path.join(SITE, "assets", "css", "style.css");
   if (!fs.existsSync(cssPath)) {
     console.warn("cachebust-css: _site/assets/css/style.css fehlt - übersprungen.");
@@ -19,6 +27,10 @@ try {
   const mainHash = fs.existsSync(mainPath) ? crypto.createHash("sha256").update(fs.readFileSync(mainPath)).update(fs.existsSync(questionsPath) ? fs.readFileSync(questionsPath) : '').digest("hex").slice(0, 12) : null;
   const searchPath = path.join(SITE, "assets/js/search.js");
   const searchHash = fs.existsSync(searchPath) ? crypto.createHash("sha256").update(fs.readFileSync(searchPath)).digest("hex").slice(0, 12) : null;
+  const toolHashes = ["impact-calculations", "impact-controlling-rechner", "impact-investment-calculators"].map(name => {
+    const file=path.join(SITE, `assets/js/${name}.js`);
+    return [name,fs.existsSync(file)?crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex").slice(0,12):null];
+  });
   const re = /assets\/css\/style\.css(?:\?v=[^"'\s>]+)?/g;
   const replacement = `assets/css/style.css?v=${hash}`;
   let changed = 0, scanned = 0;
@@ -32,6 +44,7 @@ try {
         let out = s.replace(re, replacement);
         if (mainHash) out = out.replace(/assets\/js\/main\.js(?:\?v=[^"'\s>]+)?/g, `assets/js/main.js?v=${mainHash}`);
         if (searchHash) out = out.replace(/assets\/js\/search\.js(?:\?v=[^"'\s>]+)?/g, `assets/js/search.js?v=${searchHash}`);
+        for(const [name,toolHash] of toolHashes) if(toolHash) out=out.replace(new RegExp(`assets/js/${name}\\.js(?:\\?v=[^"'\\s>]+)?`,"g"),`assets/js/${name}.js?v=${toolHash}`);
         if (out !== s) { fs.writeFileSync(full, out); changed++; }
       }
     }

@@ -3,18 +3,92 @@
   "title": "Buch und Fachpapiere: Was gilt heute?",
   "description": "Transparente Aktualisierung der WÖk-Grundlagen: Buch und historische Publikationen, Begriffsleitfaden v1.7, Register v1.5, T-SROI v1.1 und staatliche Prüfarchitektur.",
   "references": [
-    {"title": "Buch: Die neue Ordnung des Wohlstands", "status": "Grundlagenwerk mit späteren Präzisierungen", "href": "/buch.html", "text": "Das Buch bleibt die zusammenhängende Darstellung des Gesamtsystems. Die Onlinefassung kennzeichnet fachliche Ergänzungen. Für einzelne Begriffe und Berechnungen gelten die neueren fachbezogenen Referenzen."},
-    {"title": "Begriffsleitfaden v1.7", "status": "Führende Begriffsgrundlage · 21.08.2026", "href": "/bibliothek/woek-begriffsleitfaden-fuehrend/", "text": "Maßgeblich für Wirkung, Wirkungspotenzial, Wirkungsrisiko, Nachhaltigkeit und die Einordnung staatlicher Prüfarchitekturen. Die WÖk-eigene Nachhaltigkeitsdefinition ist als solche zu lesen."},
-    {"title": "WÖk-Masterregister v1.5", "status": "Führende Registerfassung · 21.08.2026", "href": "/bibliothek/woek-master-items-register/", "text": "621 stabile WÖk-IDs. Die Fassung trennt MasterItems von operationalisierten Wirkindikatoren. Offene Schwellen, Benchmarks und fachliche Validierungen bleiben als offen ausgewiesen."},
-    {"title": "T-SROI-Rechenstandard v1.1", "status": "Führende Rechenregel · 02.08.2026", "href": "/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/", "text": "Diskontierte, kausal begrenzte monetäre Nutzen- und Schadensströme mit Schutz-Gate. Ältere freie Multiplikatorformeln begründen keine aktuellen Berechnungen."},
-    {"title": "WÖMM 2.0 und WÖMS 2.0", "status": "Management- und Methodengrundlagen", "href": "/methodenraum.html", "text": "Managementarchitektur und Fachmethoden verbinden Analyse mit Umsetzung und Lernen. Spätere fachliche Präzisierungen, insbesondere die T-SROI-Korrekturen, sind bei der Anwendung mitzulesen."},
-    {"title": "SDGs und SDG+", "status": "Globaler Referenzrahmen und WÖk-Ergänzung", "href": "/verstehen/sdgs-sdgplus/", "text": "Die Agenda 2030 mit 17 SDGs bleibt der globale Rahmen. SDG+ ist eine WÖk-eigene Erweiterung. Bei deutschen öffentlichen Fällen tritt die DNS als nationaler Referenzrahmen hinzu."}
+    {
+      "title": "Buch: Die neue Ordnung des Wohlstands",
+      "status": "Grundlagenwerk mit späteren Präzisierungen",
+      "href": "/buch.html",
+      "text": "Das Buch bleibt die zusammenhängende Darstellung des Gesamtsystems. Die Onlinefassung kennzeichnet fachliche Ergänzungen. Für einzelne Begriffe und Berechnungen gelten die neueren fachbezogenen Referenzen."
+    },
+    {
+      "title": "Begriffsleitfaden v1.7",
+      "status": "Führende Begriffsgrundlage · 21.08.2026",
+      "href": "/bibliothek/woek-begriffsleitfaden-fuehrend/",
+      "text": "Maßgeblich für Wirkung, Wirkungspotenzial, Wirkungsrisiko, Nachhaltigkeit und die Einordnung staatlicher Prüfarchitekturen. Die WÖk-eigene Nachhaltigkeitsdefinition ist als solche zu lesen."
+    },
+    {
+      "title": "WÖk-Masterregister v1.5",
+      "status": "Führende Registerfassung · 21.08.2026",
+      "href": "/bibliothek/woek-master-items-register/",
+      "text": "621 stabile WÖk-IDs. Die Fassung trennt MasterItems von operationalisierten Wirkindikatoren. Offene Schwellen, Benchmarks und fachliche Validierungen bleiben als offen ausgewiesen."
+    },
+    {
+      "title": "T-SROI-Rechenstandard v1.1",
+      "status": "Führende Rechenregel · 02.08.2026",
+      "href": "/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+      "text": "Diskontierte, kausal begrenzte monetäre Nutzen- und Schadensströme mit Schutz-Gate. Ältere freie Multiplikatorformeln begründen keine aktuellen Berechnungen."
+    },
+    {
+      "title": "WÖMM 2.0 und WÖMS 2.0",
+      "status": "Management- und Methodengrundlagen",
+      "href": "/methodenraum.html",
+      "text": "Managementarchitektur und Fachmethoden verbinden Analyse mit Umsetzung und Lernen. Spätere fachliche Präzisierungen, insbesondere die T-SROI-Korrekturen, sind bei der Anwendung mitzulesen."
+    },
+    {
+      "title": "SDGs und SDG+",
+      "status": "Globaler Referenzrahmen und WÖk-Ergänzung",
+      "href": "/verstehen/sdgs-sdgplus/",
+      "text": "Die Agenda 2030 mit 17 SDGs bleibt der globale Rahmen. SDG+ ist eine WÖk-eigene Erweiterung. Bei deutschen öffentlichen Fällen tritt die DNS als nationaler Referenzrahmen hinzu."
+    }
   ],
   "chapterUpdates": [
-    {"chapters": [6], "title": "Nachhaltigkeit und Systemresilienz", "text": "Die führende WÖk-Definition lautet: Nachhaltigkeit ist die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie. Das ist die Begriffsbestimmung innerhalb dieses Modells, keine Ablösung aller international gebräuchlichen Nachhaltigkeitsdefinitionen. Positive Netto-Wirkung, Resilienz und institutionelle Rückkopplung bleiben unterschiedliche Begriffe.", "source": "/bibliothek/woek-begriffsleitfaden-fuehrend/"},
-    {"chapters": [17, 61, 62, 65, 90], "title": "Bestehende Ansätze und staatliche Prüfung", "text": "Folgen-, Alternativen- und Ex-post-Prüfung bestehen bereits in staatlichen und fachlichen Verfahren. Für Bundesregelungsvorhaben sind GGO §§ 43/44, Nachhaltigkeitsprüfung und eNAP/eGFA relevant, für finanzwirksame Maßnahmen § 7 BHO und VV-BHO. Die WÖk bestimmt den Rahmen objektspezifisch und beschreibt ihren zusätzlichen Befund gegenüber der dokumentierten Prüfung. Ein systemischer Anspruch allein beweist weder Neuheit noch Überlegenheit.", "source": "/methodik/#staatliche-nachhaltigkeitsarchitektur"},
-    {"chapters": [30, 31, 32], "title": "Register, Indikatoren und Evidenz", "text": "Ein MasterItem im Register v1.5 ist ein adressierbarer Prüfgegenstand, nicht automatisch ein operationalisierter oder validierter Wirkindikator. Ein Indikator benötigt unter anderem Zustandsbezug, Einheit, Messregel, Datenquelle und Systemgrenze. Zielzuordnung, eine vorhandene ID oder ein Score beweisen keine Kausalität. Fehlende Daten bleiben unbewertet.", "source": "/bibliothek/woek-master-items-register/"},
-    {"chapters": [34, 44], "title": "Impact Controlling und T-SROI", "text": "Für aktuelle Berechnungen gilt T-SROI v1.1: monetarisierte direkte und transformative Nutzenreihen getrennt belegen, kausal begrenzen und diskontieren. Profilpunkte werden nicht zu Euro, Unsicherheit wird nicht durch freie Multiplikatoren beseitigt. Nichtkompensation und Reverse Merit Order sichern die Schutzgrenzen. Reporting wird erst durch eine dokumentierte Reaktion auf Befunde zur Rückkopplung.", "source": "/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/"},
-    {"chapters": [37, 38, 39], "title": "Gesetzesmodelle und Wirkungshaushalt", "text": "WStG und WUStG sind Vorschläge der WÖk, keine in Kraft befindlichen Steuergesetze. Haushaltsneutralität ist eine zu prüfende Modellannahme. Der Bund kennt bereits Wirtschaftlichkeitsuntersuchungen und Erfolgskontrolle nach BHO/VV-BHO und entwickelt die ziel- und wirkungsorientierte Haushaltsführung weiter. Der konkrete WÖk-Beitrag muss gegenüber diesem Bestand gezeigt werden.", "source": "/methodik/#staatliche-nachhaltigkeitsarchitektur"}
+    {
+      "chapters": [
+        6
+      ],
+      "title": "Nachhaltigkeit und Systemresilienz",
+      "text": "Die führende WÖk-Definition lautet: Nachhaltigkeit ist die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie. Das ist die Begriffsbestimmung innerhalb dieses Modells, keine Ablösung aller international gebräuchlichen Nachhaltigkeitsdefinitionen. Positive Netto-Wirkung, Resilienz und institutionelle Rückkopplung bleiben unterschiedliche Begriffe.",
+      "source": "/bibliothek/woek-begriffsleitfaden-fuehrend/"
+    },
+    {
+      "chapters": [
+        17,
+        61,
+        62,
+        65,
+        90
+      ],
+      "title": "Bestehende Ansätze und staatliche Prüfung",
+      "text": "Folgen-, Alternativen- und Ex-post-Prüfung bestehen bereits in staatlichen und fachlichen Verfahren. Für Bundesregelungsvorhaben sind GGO §§ 43/44, Nachhaltigkeitsprüfung und eNAP/eGFA relevant, für finanzwirksame Maßnahmen § 7 BHO und VV-BHO. Die WÖk bestimmt den Rahmen objektspezifisch und beschreibt ihren zusätzlichen Befund gegenüber der dokumentierten Prüfung. Ein systemischer Anspruch allein beweist weder Neuheit noch Überlegenheit.",
+      "source": "/methodik/#staatliche-nachhaltigkeitsarchitektur"
+    },
+    {
+      "chapters": [
+        30,
+        31,
+        32
+      ],
+      "title": "Register, Indikatoren und Evidenz",
+      "text": "Ein MasterItem im Register v1.5 ist ein adressierbarer Prüfgegenstand, nicht automatisch ein operationalisierter oder validierter Wirkindikator. Ein Indikator benötigt unter anderem Zustandsbezug, Einheit, Messregel, Datenquelle und Systemgrenze. Zielzuordnung, eine vorhandene ID oder ein Score beweisen keine Kausalität. Fehlende Daten bleiben unbewertet. Die WÖk-eigene Kennzahl heißt ausgeschrieben WÖk-Netto-Wirkungsindex; NWI ohne Zusatz bezeichnet den Nationalen Wohlfahrtsindex.",
+      "source": "/bibliothek/woek-master-items-register/"
+    },
+    {
+      "chapters": [
+        34,
+        44
+      ],
+      "title": "Impact Controlling und T-SROI",
+      "text": "Für aktuelle Berechnungen gilt T-SROI v1.1: monetarisierte direkte und transformative Nutzenreihen getrennt belegen, kausal begrenzen und diskontieren. Profilpunkte werden nicht zu Euro, Unsicherheit wird nicht durch freie Multiplikatoren beseitigt. Nichtkompensation und Reverse Merit Order sichern die Schutzgrenzen. Reporting wird erst durch eine dokumentierte Reaktion auf Befunde zur Rückkopplung.",
+      "source": "/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/"
+    },
+    {
+      "chapters": [
+        37,
+        38,
+        39
+      ],
+      "title": "Gesetzesmodelle und Wirkungshaushalt",
+      "text": "WStG und WUStG sind Vorschläge der WÖk, keine in Kraft befindlichen Steuergesetze. Haushaltsneutralität ist eine zu prüfende Modellannahme. Der Bund kennt bereits Wirtschaftlichkeitsuntersuchungen und Erfolgskontrolle nach BHO/VV-BHO und entwickelt die ziel- und wirkungsorientierte Haushaltsführung weiter. Der konkrete WÖk-Beitrag muss gegenüber diesem Bestand gezeigt werden.",
+      "source": "/methodik/#staatliche-nachhaltigkeitsarchitektur"
+    }
   ]
 }

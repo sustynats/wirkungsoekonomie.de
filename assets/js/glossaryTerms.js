@@ -43102,7 +43102,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wirksamkeitsnachweis",
       "Nachweis eingetretener Wirkung"
     ],
-    "definition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.",
+    "definition": "Ein Wirkungsnachweis begründet anhand von Evidenz, welche tatsächliche Zustandsveränderung eingetreten ist und inwieweit sie einer untersuchten Maßnahme zugerechnet werden kann.",
     "url": "/begriffe/wirkungsnachweis/",
     "priority": 1994,
     "autoLinkAllowed": true,
@@ -45756,7 +45756,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wirkungs-ID",
       "Indikator-ID der Wirkungsökonomie"
     ],
-    "definition": "Eine WÖk-ID identifiziert einen Wirkungsindikator eindeutig. Sie ist kein Score, sondern der Code für das, was gemessen und bewertet wird.",
+    "definition": "Eine WÖk-ID identifiziert einen Prüfgegenstand im WÖk-Register. Die Kennung allein ist weder ein Messwert noch ein validierter Wirkindikator.",
     "url": "/begriffe/woek-id/",
     "priority": 2110,
     "autoLinkAllowed": true,
@@ -45798,7 +45798,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "WÖk-IDs"
     ],
-    "definition": "WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.",
+    "definition": "WÖk-IDs sind eindeutige Kennungen für Prüfgegenstände im WÖk-Register. Sie ermöglichen Zuordnung und Verknüpfung, belegen aber noch keine Wirkung.",
     "url": "/begriffe/woek-ids/",
     "priority": 2112,
     "autoLinkAllowed": true,

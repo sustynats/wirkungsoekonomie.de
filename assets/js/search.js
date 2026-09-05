@@ -75,7 +75,7 @@
     "social taxonomy": ["/begriffe/social-taxonomy/", "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html", "/begriffe/eu-taxonomie/"],
     "social-taxonomy": ["/begriffe/social-taxonomy/", "/blog/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.html", "/begriffe/eu-taxonomie/"],
     "reverse merit order": ["/begriffe/reverse-merit-order/", "/werkzeuge/reverse-merit-order/", "/wirkungsfelder/produkte-konsum/"],
-    nwi: ["/begriffe/nwi/", "/werkzeuge/netto-wirkungs-index/", "/werkzeuge/impact-controlling/"],
+    nwi: ["/begriffe/nationaler-wohlfahrtsindex/", "/begriffe/nwi/", "/werkzeuge/netto-wirkungs-index/"],
     "t-sroi": ["/begriffe/t-sroi/", "/werkzeuge/t-sroi/", "/werkzeuge/impact-controlling/"],
     "impact controlling": ["/werkzeuge/impact-controlling/", "/erleben/impact-controlling-rechner/", "/werkzeuge/impact-controlling/dossier/"],
     "impact-controlling": ["/werkzeuge/impact-controlling/", "/erleben/impact-controlling-rechner/"],
@@ -170,13 +170,13 @@
     },
     "t sroi": {
       title: "Begriff: T-SROI",
-      description: "Der Begriff erklärt den transformierten Social Return on Investment als Wirkungs- und Transformationsmaß.",
+      description: "Der Begriff erklärt den Transformational Social Return on Investment mit kausal begrenzten und diskontierten Nutzen- und Kostenströmen.",
       url: "/begriffe/t-sroi/",
       tags: ["Begriff", "Impact Controlling"],
     },
     "t-sroi": {
       title: "Begriff: T-SROI",
-      description: "Der Begriff erklärt den transformierten Social Return on Investment als Wirkungs- und Transformationsmaß.",
+      description: "Der Begriff erklärt den Transformational Social Return on Investment mit kausal begrenzten und diskontierten Nutzen- und Kostenströmen.",
       url: "/begriffe/t-sroi/",
       tags: ["Begriff", "Impact Controlling"],
     },
@@ -427,7 +427,7 @@
     const route = canonicalResultRoute(entry.url);
     const routes = CURATED_QUERY_ROUTES[query] || [];
     const index = routes.indexOf(route);
-    return index >= 0 ? 2000 - index * 120 : 0;
+    return index >= 0 && !String(entry.url).includes("#") ? 2000 - index * 120 : 0;
   }
 
   function getGroupLabel(groupId) {
@@ -729,6 +729,9 @@
     const query = normalize(rawQuery);
     if (!query) return null;
     if (RECOMMENDED_QUERY_ENTRYPOINTS[query]) return RECOMMENDED_QUERY_ENTRYPOINTS[query];
+    const curatedRoute = CURATED_QUERY_ROUTES[query]?.[0];
+    const curated = curatedRoute && state.index.find(entry => !String(entry.url).includes("#") && canonicalResultRoute(entry.url) === curatedRoute);
+    if (curated) return {title:curated.title,description:curated.description,url:curated.url,tags:curated.tags};
     return state.entrypoints.find((entrypoint) =>
       asArray(entrypoint.match).some((match) => {
         const normalizedMatch = normalize(match);
@@ -793,7 +796,7 @@
   }
 
   function renderTagList(tags) {
-    const list = unique(asArray(tags).map((tag) => String(tag || "").trim()).filter(Boolean)).slice(0, 6);
+    const list = unique(asArray(tags).map((tag) => String(tag || "").trim()).filter(tag => tag && !/^(?:approved|draft|reviewed|published|generated|historical|woek-praezisierungsbegriff)$/i.test(tag))).slice(0, 6);
     if (!list.length) return "";
     return `<ul class="search-tag-list">${list
       .map((tag) => `<li><a href="${searchPageHref}?q=${encodeURIComponent(tag)}" aria-label="${escapeHtml(i18n(`Nach ${tag} suchen`, `Search for ${tag}`))}">${escapeHtml(tag)}</a></li>`)

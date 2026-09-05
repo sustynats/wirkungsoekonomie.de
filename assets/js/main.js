@@ -2070,7 +2070,7 @@ function initGo5WirtschaftDetailkonzepte() {
     [
       "Fachvertiefung",
       "Wirkungscontrolling im Unternehmen",
-      "KII, NWI, T-SROI, Scorecards, CapEx-Prüfung und Assurance als Steuerungskreislauf im Unternehmen.",
+      "KII, WÖk-Netto-Wirkungsindex, T-SROI, Scorecards, CapEx-Prüfung und Assurance als Steuerungskreislauf im Unternehmen.",
       "/wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/",
     ],
     [
@@ -2237,7 +2237,7 @@ const ToolExplanationLayer = (() => {
       purpose: "Impact Controlling erklärt, wie Wirkung von einer Beschreibung zu einer steuerungsrelevanten Größe wird.",
       question: "Welche Daten, Bewertungslogiken und Rückkopplungen braucht eine Entscheidung, damit sie positive Netto-Wirkung berücksichtigen kann?",
       blindSpot: "Klassisches Controlling sieht häufig Kosten, Umsatz, Output und Berichtspflichten. Es sieht seltener, ob Zustände für Mensch, Planet und Demokratie besser oder schlechter werden.",
-      difference: "Die Wirkungsökonomie verbindet WÖk-IDs, Scorecards, NWI, T-SROI, Datenqualität und Assurance zu einer prüfbaren Wirkungssprache.",
+      difference: "Die Wirkungsökonomie verbindet WÖk-IDs, Scorecards, WÖk-Netto-Wirkungsindex, T-SROI, Datenqualität und Assurance zu einer prüfbaren Wirkungssprache.",
       steps: ["Starte mit der Überblickslogik.", "Öffne danach passende Dossiers oder Methodenseiten.", "Nutze interaktive Rechner nur dort, wo eine echte Bedienoberfläche vorhanden ist."],
       values: "Kennzahlen sind nur aussagekräftig, wenn Quelle, Einheit, Schwelle, Unsicherheit und Datenqualität sichtbar bleiben.",
       interpretation: "Das Ergebnis ist keine Steuerungsautomatik. Es macht sichtbar, welche Kennzahl welche Frage beantwortet und welche Entscheidung dadurch besser vorbereitet wird.",
@@ -2418,7 +2418,7 @@ const ToolExplanationLayer = (() => {
   function ToolPurposeBox(config) {
     return `
       <section class="tool-purpose-box" aria-label="Problem verstehen">
-        <p class="hero-kicker">1. Problem verstehen</p>
+        <p class="hero-kicker">Problem verstehen</p>
         <h2>${config.title || "Warum dieses Tool?"}</h2>
         <p>${config.purpose || defaults.purpose}</p>
       </section>
@@ -2428,8 +2428,8 @@ const ToolExplanationLayer = (() => {
   function TodayVsWoekBox(config) {
     return `
       <div class="tool-explanation-grid tool-journey-grid">
-        ${card("2. Was sieht das heutige System nicht?", config.blindSpot || defaults.blindSpot)}
-        ${card("3. Was macht die Wirkungsökonomie anders?", config.difference || defaults.difference)}
+        ${card("Welche Folgen verdienen zusätzliche Prüfung?", config.blindSpot || defaults.blindSpot)}
+        ${card("Was trägt die Wirkungsökonomie bei?", config.difference || defaults.difference)}
       </div>
     `;
   }
@@ -2438,7 +2438,7 @@ const ToolExplanationLayer = (() => {
     const steps = (config.steps || defaults.steps).slice(0, 3).map((step) => `<li>${step}</li>`).join("");
     return `
       <article class="tool-explanation-card how-to-use-steps">
-        <h3>4. So nutzt du das Tool</h3>
+        <h3>So nutzt du das Tool</h3>
         <ol>${steps}</ol>
       </article>
     `;
@@ -2459,7 +2459,7 @@ const ToolExplanationLayer = (() => {
   }
 
   function ResultInterpretationCard(config) {
-    return card("6. Was bedeuten die Ergebniswerte?", config.values || defaults.values, "tool-result-interpretation");
+    return card("Was bedeuten die Ergebniswerte?", config.values || defaults.values, "tool-result-interpretation");
   }
 
   function MeaningCard(config) {
@@ -2467,7 +2467,7 @@ const ToolExplanationLayer = (() => {
   }
 
   function LimitsOfDemoBox(config) {
-    return card("8. Was diese Demo nicht leistet", config.limits || defaults.limits);
+    return card("Was diese Demo nicht leistet", config.limits || defaults.limits);
   }
 
   function FundingSourceBox(config) {
@@ -2486,7 +2486,7 @@ const ToolExplanationLayer = (() => {
     const links = (config.links || defaults.links).map(([label, href]) => `<a class="text-link" href="${absoluteHref(href)}">${label}</a>`).join("");
     return `
       <article class="tool-explanation-card related-learning-path">
-        <h3>9. Passende Vertiefungen</h3>
+        <h3>Passende Vertiefungen</h3>
         <div class="tool-explanation-links">${links}</div>
       </article>
     `;
@@ -2494,7 +2494,7 @@ const ToolExplanationLayer = (() => {
 
   function renderBefore(config) {
     return `
-      <aside class="tool-explanation-layer tool-explanation-before" aria-label="Werkzeugerklaerung">
+      <details class="tool-explanation-layer tool-explanation-before explanation-details"><summary>Zweck und Bedienung verstehen</summary>
         ${ToolPurposeBox(config)}
         ${TodayVsWoekBox(config)}
         <div class="tool-explanation-grid tool-journey-grid">
@@ -2503,22 +2503,22 @@ const ToolExplanationLayer = (() => {
           ${WhatHappensBehindTheScenes(config)}
         </div>
         ${WhyItMattersBox(config)}
-      </aside>
+      </details>
     `;
   }
 
   function renderAfter(config) {
     return `
-      <aside class="tool-explanation-layer tool-explanation-after" aria-label="Ergebnis einordnen">
+      <details class="tool-explanation-layer tool-explanation-after explanation-details"><summary>Ergebnis einordnen und weiterlernen</summary>
         <div class="tool-explanation-grid">
           ${ResultInterpretationCard(config)}
           ${MeaningCard(config)}
-          ${card("7. Was würde daraus folgen?", config.consequence || defaults.consequence)}
+          ${card("Was würde daraus folgen?", config.consequence || defaults.consequence)}
           ${FundingSourceBox(config)}
           ${LimitsOfDemoBox(config)}
           ${RelatedLearningPath(config)}
         </div>
-      </aside>
+      </details>
     `;
   }
 
@@ -2589,10 +2589,10 @@ const ResultInterpretationLayer = (() => {
     },
     {
       match: ["nwi", "netto-wirkungs-index"],
-      meaning: "Der NWI verdichtet positive und negative Wirkung modellhaft zu einer Netto-Sicht.",
+      meaning: "Der WÖk-Netto-Wirkungsindex verdichtet positive und negative Wirkung modellhaft zu einer Netto-Sicht.",
       relevance: "So wird sichtbar, ob eine Maßnahme unterm Strich stärkt, neutral bleibt oder Folgekosten erzeugt.",
       change: "Im WÖk-System könnten Budgets, Investitionen oder Korrekturen stärker an positiver Netto-Wirkung ausgerichtet werden.",
-      limit: "Der NWI ist nur so belastbar wie Daten, Gewichtung und Bewertungsrahmen."
+      limit: "Der WÖk-Netto-Wirkungsindex ist nur so belastbar wie Daten, Gewichtung und Bewertungsrahmen."
     },
     {
       match: ["t-sroi", "tsroi"],

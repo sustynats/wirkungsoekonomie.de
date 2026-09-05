@@ -1,0 +1,168 @@
+{
+  "thresholdBytes": 500000,
+  "scope": "Tracked files in fresh repository checkout; identical bytes only. No deletion or Dropbox transfer. Historical sources and generated deploy artifacts are not automatically waste.",
+  "groups": [
+    {
+      "bytesEach": 7040714,
+      "redundantBytes": 7040714,
+      "sha256": "e4ce0caf207396e5cf250926b681f20850fb3c9eb163b355954eaa2179a6fff6",
+      "paths": [
+        "assets/pdf/working-paper-wohnungsmarkt.pdf",
+        "public/downloads/originals/WP_Wohnungsmarkt.pdf"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1632626,
+      "redundantBytes": 3265252,
+      "sha256": "73713d8c87b7553b5d6d69f30aea92bd042850b84d538b1579304ba9416b5b0f",
+      "paths": [
+        "assets/img/generated/sdg-sdgplus-referenzrahmen.png",
+        "assets/img/generated/sdg_sdgplus_referenzrahmen_hero_v0_1.png",
+        "woek-parlament-app/public/visuals/woek/sdg-sdgplus-referenzrahmen.png"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 2880938,
+      "redundantBytes": 2880938,
+      "sha256": "8addf188707a4ab190da8199542217e47404ab2ae50d3cd998af4d734b361dfd",
+      "paths": [
+        "assets/pdf/whitepaper-wirkungseinkommen.pdf",
+        "public/downloads/originals/WP_Einkommen.pdf"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 2569263,
+      "redundantBytes": 2569263,
+      "sha256": "73cbe82a021fe35ece08212f352f136369eb8138991bb1ba9599df481960059e",
+      "paths": [
+        "assets/img/book/image10.png",
+        "public/assets/imported/woek-main-2026/image12.png"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 2093182,
+      "redundantBytes": 2093182,
+      "sha256": "9e1b57cab3c78363a4a1db0516c3e70f72e4aed2f3b02e440c6830e99b924b62",
+      "paths": [
+        "assets/pdf/wirkungssteuergesetz-wstg-oktober-2025.pdf",
+        "public/downloads/originals/WStG_Oktober2025.pdf"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 2002284,
+      "redundantBytes": 2002284,
+      "sha256": "ecaf4a4acbb6f960b44b887458f6a369b1824cdbc2b2b2eb2a89a745c73e3140",
+      "paths": [
+        "assets/img/book/image20.png",
+        "public/assets/imported/woek-main-2026/image26.png"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1967543,
+      "redundantBytes": 1967543,
+      "sha256": "286dcc5cb52090ddb90b3b2398e84f6f7bd99acb8c2e1b58577583d059290e0f",
+      "paths": [
+        "assets/img/book/image15.png",
+        "public/assets/imported/woek-main-2026/image18.png"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1887899,
+      "redundantBytes": 1887899,
+      "sha256": "8ce22b29edb210246d4d9554657e905b93e92008b028519cbc65488668a55874",
+      "paths": [
+        "assets/img/book/image16.png",
+        "public/assets/imported/woek-main-2026/image20.png"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1876783,
+      "redundantBytes": 1876783,
+      "sha256": "c3ed4e0ad210e3abfe433104722895148a689f464a1365b7809441a20c781e3b",
+      "paths": [
+        "assets/img/book/image12.png",
+        "public/assets/imported/woek-main-2026/image14.png"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1875343,
+      "redundantBytes": 1875343,
+      "sha256": "c8b7b37b04a83ec2e2d0ef0753ff0c644ddfb1da3492810011dd303df4138892",
+      "paths": [
+        "assets/img/book/image14.png",
+        "public/assets/imported/woek-main-2026/image17.png"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1854962,
+      "redundantBytes": 1854962,
+      "sha256": "151807c16aa30021fb9558518fe424118c72633a6b94542d376b9c7ac4408b2b",
+      "paths": [
+        "assets/img/book/image22.png",
+        "public/assets/imported/woek-main-2026/image28.png"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1620098,
+      "redundantBytes": 1620098,
+      "sha256": "9e555a7890a8550def79a106b040c05777b388468933cd6411607846b464be2d",
+      "paths": [
+        "assets/img/book/image23.png",
+        "public/assets/imported/woek-main-2026/image29.png"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1528189,
+      "redundantBytes": 1528189,
+      "sha256": "fa5f23afcfb01053717016365cfd05446ddf98c3a0b1321315e36150bd9d2202",
+      "paths": [
+        "api/v1/glossary.json",
+        "api/v1/glossary/index.json"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1262166,
+      "redundantBytes": 1262166,
+      "sha256": "6ac731ae2c1d20babacc7ab098671b794ac99403851f6b2f4efb258b887af18d",
+      "paths": [
+        "public/data/woek-ids.json",
+        "src/data/woek-ids.json"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 1153265,
+      "redundantBytes": 1153265,
+      "sha256": "f55c936c440247dbcaad5921e95494dd72312b712625320f0a5fe0d7eb6d8533",
+      "paths": [
+        "assets/data/glossary-reference-index.json",
+        "public/data/glossary-reference-index.json"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    },
+    {
+      "bytesEach": 840652,
+      "redundantBytes": 840652,
+      "sha256": "aefaaf4af5ab669e331e684e0126e0792165a05dd2c752014aada723df10f4fe",
+      "paths": [
+        "dokumente/wirkungsoekonomie-akademie-master-template.pptx",
+        "templates/presentations/wirkungsoekonomie-akademie-master-template.pptx"
+      ],
+      "status": "REVIEW_REFERENCES_BEFORE_ARCHIVING"
+    }
+  ],
+  "potentialDuplicateBytes": 35718533
+}

@@ -40,6 +40,7 @@ styles={
  'h2':ParagraphStyle('heading',fontName='WoekBold',fontSize=15,leading=20,textColor=GREEN,spaceBefore=15,spaceAfter=9,keepWithNext=True),
  'h3':ParagraphStyle('subheading',fontName='WoekBold',fontSize=11,leading=16,textColor=NAVY,spaceBefore=9,spaceAfter=6,keepWithNext=True),
  'li':ParagraphStyle('list',fontName='Woek',fontSize=9.4,leading=14.5,leftIndent=12,firstLineIndent=-8,spaceAfter=8),
+ 'kicker':ParagraphStyle('kicker',fontName='Woek',fontSize=8,leading=12,textColor=colors.HexColor('#4a4a44'),spaceAfter=7,keepWithNext=True),
  'fine':ParagraphStyle('fine',fontName='Woek',fontSize=8,leading=12,textColor=colors.HexColor('#4a4a44'),spaceAfter=7),
  'cell':ParagraphStyle('cell',fontName='Woek',fontSize=8.3,leading=12,textColor=NAVY,spaceAfter=3),
 }
@@ -87,7 +88,7 @@ class PrintContent(HTMLParser):
             if tag in {'th','td'}:self.cell=[]
             return
         if tag in {'h1','h2','h3','p','li','figcaption'}:
-            self.flush();self.block='fine' if tag=='figcaption' else tag
+            self.flush();self.block='fine' if tag=='figcaption' else ('kicker' if tag=='p' and any(c in a.get('class','').split() for c in ['card-kicker','hero-kicker']) else tag)
         if self.block:
             if tag in {'strong','b'}:self.buf.append('<b>')
             elif tag in {'em','i'}:self.buf.append('<i>')
@@ -177,7 +178,7 @@ def main():
       ('assets/downloads/grundlagen/woemm-2.0-referenzfassung.pdf','woemm-2-0-lesefassung-2026-09-05.pdf','WÖMM 2.0: ergänzte Lesefassung'),
       ('assets/downloads/grundlagen/woems-2.0-referenzfassung.pdf','woems-2-0-lesefassung-2026-09-05.pdf','WÖMS 2.0: ergänzte Lesefassung'),
       ('assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.pdf','woek-ids-indikatorenarchitektur-lesefassung-2026-09-05.pdf','WÖk-IDs und Indikatorenarchitektur: ergänzte Lesefassung'),
-      ('assets/downloads/22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0.pdf','scorecards-benchmarks-nwi-lesefassung-2026-09-05.pdf','Scorecards, Benchmarks und NWI: ergänzte Lesefassung'),
+      ('assets/downloads/22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0.pdf','scorecards-benchmarks-nwi-lesefassung-2026-09-05.pdf','Scorecards, Benchmarks und WÖk-Netto-Wirkungsindex: ergänzte Lesefassung'),
     ]
     update_reader=PdfReader(OUT/add);update_count=len(update_reader.pages)
     for source,filename,title in works:

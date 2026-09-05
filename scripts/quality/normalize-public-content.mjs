@@ -8,26 +8,27 @@ const esc=value=>String(value).replaceAll('&','&amp;').replaceAll('"','&quot;').
 const decode=value=>String(value).replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/&#x([0-9a-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&(amp|quot|lt|gt|nbsp|auml|ouml|uuml|szlig);/g,(_,name)=>({amp:'&',quot:'"',lt:'<',gt:'>',nbsp:' ',auml:'ä',ouml:'ö',uuml:'ü',szlig:'ß'})[name]);
 const visible=value=>decode(value.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,' ').replace(/<[^>]+>/g,' ')).replace(/\s+/g,' ').trim();
 const fold=value=>value.toLowerCase().replace(/ae/g,'a').replace(/oe/g,'o').replace(/ue/g,'u').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-const headingKey=value=>fold(value).replace(/^(?:dossier-)+(?:(?:dossier-)?\d+-)?/,'');
+const headingKey=value=>fold(value).replace(/^wgs-/,'').replace(/^(?:dossier-)+(?:(?:dossier-)?\d+-)?/,'');
+const headingSlug=value=>fold(visible(value)).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 function walk(directory){return fs.readdirSync(directory,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(path.join(directory,entry.name)):entry.name.endsWith('.html')?[path.join(directory,entry.name)]:[]);}
 function outsideRaw(html,transform){return html.split(/(<(?:script|style)\b[^>]*>[\s\S]*?<\/(?:script|style)>)/gi).map((part,i)=>i%2?part:transform(part)).join('');}
 
 export function uniqueContentIds(html) {
   const seen=new Set();const reserved=new Set();const replacements=[];
-  outsideRaw(html,part=>{for(const match of part.matchAll(/\bid=["']([^"']+)["']/g))reserved.add(match[1]);return part;});
-  const result=outsideRaw(html,part=>part.replace(/<([a-z][\w:-]*)\b[^>]*\bid=(["'])([^"']+)\2[^>]*>/gi,(tag,name,quote,id)=>{
+  outsideRaw(html,part=>{for(const match of part.matchAll(/\sid=["']([^"']+)["']/g))reserved.add(match[1]);return part;});
+  const result=outsideRaw(html,part=>part.replace(/<([a-z][\w:-]*)\b[^>]*\sid=(["'])([^"']+)\2[^>]*>/gi,(tag,name,quote,id)=>{
     if(!seen.has(id)){seen.add(id);return tag;}
     // A duplicated form control needs its label, script and form owner reviewed
     // together. Do not silently change an interactive contract here.
     if(!/^(?:h[1-6]|p|span|section|article|aside|div|figure|ul|ol|li|nav)$/i.test(name))return tag;
     let n=2;while(seen.has(`${id}--${n}`) || reserved.has(`${id}--${n}`))n++;
     const next=`${id}--${n}`;seen.add(next);replacements.push({id,next,tag:name});
-    return tag.replace(`id=${quote}${id}${quote}`,`id=${quote}${next}${quote}`);
+    return tag.replace(/(\s)id=(["'])([^"']+)\2/i,(_,space,q)=>`${space}id=${q}${next}${q}`);
   }));
   let output=result;
   for(const {id,next,tag} of replacements.filter(item=>/^h[1-6]$/i.test(item.tag))){
     const escaped=next.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-    output=output.replace(new RegExp(`(<${tag}\\b[^>]*\\bid=["']${escaped}["'][^>]*>)([\\s\\S]*?)(<\\/${tag}>)`,'i'),(_,start,body,end)=>start+body.replaceAll(`href="#${id}"`,`href="#${next}"`)+end);
+    output=output.replace(new RegExp(`(<${tag}\\b[^>]*\\sid=["']${escaped}["'][^>]*>)([\\s\\S]*?)(<\\/${tag}>)`,'i'),(_,start,body,end)=>start+body.replaceAll(`href="#${id}"`,`href="#${next}"`)+end);
   }
   return {html:output,changes:replacements};
 }
@@ -46,14 +47,14 @@ export function normalizePublicContent(root, options={}) {
         return start+body+end;
       });
     }
-    const ids=new Set();outsideRaw(html,part=>{for(const match of part.matchAll(/\bid=["']([^"']+)["']/g))ids.add(decode(match[1]));return part;});
+    const ids=new Set();outsideRaw(html,part=>{for(const match of part.matchAll(/\sid=["']([^"']+)["']/g))ids.add(decode(match[1]));return part;});
     pages.set(route,{file,route,rel,html,original,ids});
   }
   const aliases=options.aliases ?? JSON.parse(fs.readFileSync('content/site/fragment-aliases.json','utf8'));
   function addAlias(page,alias,target){
     if(!page || page.ids.has(alias) || !page.ids.has(target))return false;
     const escaped=target.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-    const pattern=new RegExp(`(<(?:h[1-6]|section|article|aside|div|p|figure)\\b[^>]*\\bid=["']${escaped}["'][^>]*>)`,'i');
+    const pattern=new RegExp(`(<(?:h[1-6]|section|article|aside|div|p|figure)\\b[^>]*\\sid=["']${escaped}["'][^>]*>)`,'i');
     if(!pattern.test(page.html))return false;
     page.html=page.html.replace(pattern,`<span id="${esc(alias)}" class="legacy-fragment-anchor" aria-hidden="true"></span>$1`);
     page.ids.add(alias);report.fragmentAliases.push({route:page.route,alias,target});return true;
@@ -65,7 +66,7 @@ export function normalizePublicContent(root, options={}) {
     ['/bibliothek/eintraege/journal-blog-wirkungspotenzial-warum-fakten-allein-nicht-wirken-html/','/blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html'],
     ['/bibliothek/eintraege/journal-blog-wirkstoff-narrative-rechte-frames-wirkungspotenzial-html/','/blog/wirkstoff-narrative-rechte-frames-wirkungspotenzial.html'],
   ]);
-  const pendingAliases=[];
+  const pendingAliases=[];const pendingHeadingIds=[];
   for(const page of pages.values())page.html=outsideRaw(page.html,part=>part.replace(/(<a\b[^>]*\bhref=)(["'])([^"']+)\2/gi,(tag,start,quote,href)=>{
     let url;try{url=new URL(decode(href),SITE+page.route);}catch{return tag;}
     if(![SITE,'https://www.wirkungsoekonomie.de'].includes(url.origin))return tag;
@@ -83,9 +84,16 @@ export function normalizePublicContent(root, options={}) {
       // No guessed destination and no removal of real content.
       const matches=[...destination.ids].filter(id=>fold(id)===fold(fragment) || headingKey(id)===headingKey(fragment));
       if(matches.length===1)pendingAliases.push([destination,fragment,matches[0]]);
+      if(matches.length===0){
+        const headings=[...destination.html.matchAll(/<h([1-6])\b([^>]*)>([\s\S]*?)<\/h\1>/gi)].filter(match=>!/(?:^|\s)id=/.test(match[2]) && headingKey(headingSlug(match[3]))===headingKey(fragment));
+        if(headings.length===1)pendingHeadingIds.push([destination,fragment,headings[0][0]]);
+      }
     }
     return tag;
   }));
+  for(const [page,id,heading] of pendingHeadingIds)if(!page.ids.has(id) && page.html.includes(heading)){
+    page.html=page.html.replace(heading,heading.replace(/<h([1-6])\b/,`<h$1 id="${esc(id)}"`));page.ids.add(id);report.fragmentAliases.push({route:page.route,alias:id,target:'matching heading without an ID'});
+  }
   for(const args of pendingAliases)addAlias(...args);
   const groups=new Map();
   for(const page of pages.values()){

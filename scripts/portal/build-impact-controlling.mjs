@@ -715,7 +715,7 @@ function overviewPage() {
   page({
     rel: "werkzeuge/impact-controlling/index.html",
     title: "Impact Controlling: Wirkung prüfen und Entscheidungen verbessern | Wirkungsökonomie",
-    description: "Impact Controlling verständlich erklärt: vom Schulungsbeispiel zur Entscheidung, mit Wirkpfad, Evidenz, Schutzgrenzen, NWI, IOI und T-SROI. Demo und aktuelle Methodenpapiere.",
+    description: "Impact Controlling verständlich erklärt: vom Schulungsbeispiel zur Entscheidung, mit Wirkpfad, Evidenz, Schutzgrenzen, WÖk-Netto-Wirkungsindex, IOI und T-SROI. Demo und aktuelle Methodenpapiere.",
     searchSection: "Werkzeuge",
     searchType: "Methodenübersicht",
     body: (base) => `${hero(base, {
@@ -739,7 +739,7 @@ function overviewPage() {
       <p>Die WÖk beginnt mit Problem- und Zielprüfung. Theory of Change und IOOI können Wirkungspfade als optionale Anschlussmethoden strukturieren. Sie sind keine Voraussetzung für jede WÖk-Analyse und keine automatische Evidenz für Kausalität.</p>
       <div class="table-wrap" role="region" aria-label="Kennzahlen unterscheiden" tabindex="0"><table class="data-table"><caption>Welche Frage beantwortet welches Instrument?</caption><thead><tr><th scope="col">Frage</th><th scope="col">Instrument</th><th scope="col">Grenze</th></tr></thead><tbody>
         <tr><th scope="row">Welche Aspekte müssen geprüft werden?</th><td>WÖk-IDs und Register</td><td>Eine ID adressiert einen Prüfgegenstand. Ein MasterItem ist nicht automatisch ein messbarer oder validierter Indikator.</td></tr>
-        <tr><th scope="row">Wie unterscheiden sich nichtmonetäre Folgen?</th><td>Scorecard und Netto-Wirkungs-Index (NWI)</td><td>Gewichte, Skalen und Datenqualität müssen begründet sein. Fehlende Daten sind kein neutraler Wert.</td></tr>
+        <tr><th scope="row">Wie unterscheiden sich nichtmonetäre Folgen?</th><td>Scorecard und WÖk-Netto-Wirkungsindex</td><td>Gewichte, Skalen und Datenqualität müssen begründet sein. Fehlende Daten sind kein neutraler Wert.</td></tr>
         <tr><th scope="row">Welcher direkte Nettonutzen entsteht je Kosteneuro?</th><td>Impact-of-Investment (IOI)</td><td>Nur belegte und kausal begrenzte monetäre Ströme innerhalb einer offengelegten Bilanzgrenze.</td></tr>
         <tr><th scope="row">Welcher zusätzliche transformative Nutzen ist belegbar?</th><td>T-SROI nach Rechenstandard v1.1</td><td>Direkte und transformative Nutzenreihen getrennt belegen und diskontieren. Keine freien Transformationsmultiplikatoren und keine Umrechnung von Profilpunkten in Euro.</td></tr>
       </tbody></table></div>

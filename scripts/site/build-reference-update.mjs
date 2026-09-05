@@ -58,7 +58,7 @@ for (const edition of currentPdfEditions().filter(item=>currentSurfaces.has(item
     const archiveUrl=releaseAssets[edition.source] || '/'+edition.source;
     const archiveMarker='publication-original-access-20260905';
     html=html.replace(new RegExp(`<!-- ${archiveMarker}:start -->[\\s\\S]*?<!-- ${archiveMarker}:end -->`, 'g'),'');
-    html=html.replace('</main>',`<!-- ${archiveMarker}:start --><section class="section"><h2>Historische Ausgangsfassung</h2><p>Für bestehende Zitate bleibt auch die Fassung ohne die Ergänzung vom 5. September 2026 zugänglich.</p><p><a href="${esc(archiveUrl)}">PDF der historischen Ausgangsfassung öffnen</a></p></section><!-- ${archiveMarker}:end --></main>`);
+    html=html.replace('</main>',`<!-- ${archiveMarker}:start --><section class="section"><h2>PDF-Lesefassungen</h2><p>${editionLink(edition.filename,'Aktualisierte Lesefassung vom 5. September 2026')}</p><p>Für bestehende Zitate bleibt auch die Fassung ohne die Ergänzung vom 5. September 2026 zugänglich.</p><p><a href="${esc(archiveUrl)}">PDF der historischen Ausgangsfassung öffnen</a></p></section><!-- ${archiveMarker}:end --></main>`);
     fs.writeFileSync(file,html);
     if(!file.startsWith('referenz/') && file!=='buch.html') updateNotice(file,'Die PDF-Lesefassung enthält jetzt die datierte fachliche Aktualisierung. Der zugrundeliegende Werktext behält seinen Publikationsstand.');
   }
