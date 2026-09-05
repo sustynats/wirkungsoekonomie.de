@@ -7,7 +7,7 @@ Eine Wirkungsakte beantwortet, was passiert ist, was belegt ist und welche Folge
 Öffentliche Kennzeichnung:
 
 > WÖK-ANALYSE · Natalie Weber  
-> Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.
+> Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie
 
 Das freigegebene Portrait liegt als `assets/img/people/natalie-weber-woek-analyse.jpg` vor. Übersicht und Detailseite verwenden dasselbe Bild mit dem Alt-Text „Natalie Weber“.
 

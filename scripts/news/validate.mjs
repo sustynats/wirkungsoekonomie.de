@@ -61,7 +61,8 @@ if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.in
 if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Einordnung aktualisiert") || !index.includes("data-news-refresh-button") || !index.includes("Push-Benachrichtigungen") || !index.includes("data-news-story-id")) fail("NEWS_APP_UI_INVALID");
 const activeStories = store.stories.filter((item) => item.published && item.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
 const grouping = buildCaseFiles(activeStories);
-const visibleStories = grouping.visibleStories;
+const readerOrder = [...index.matchAll(/data-news-href="\.\/([^"]+\/)"/g)].map((match) => match[1]);
+const detailReaderHref = (href) => href.startsWith("analyse/") ? `../${href}` : `../${href}`;
 for (const story of activeStories) {
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
   const caseFile = grouping.caseByStory.get(story.story_id);
@@ -72,14 +73,13 @@ for (const story of activeStories) {
     || expectedRelated.some(({ story: item }) => !relatedBlock.includes(`../${item.slug}/`)) || (relatedBlock && !relatedBlock.includes("data-search-exclude"))) fail(`NEWS_RELATED_UI_INVALID:${story.story_id}`);
   const shareUrl = `https://wirkungsoekonomie.de/wirkungsticker/${story.slug}/`;
   if ((detail.match(/data-news-share-button/g) || []).length < 2 || !detail.includes(`data-share-url="${shareUrl}"`) || !detail.includes("assets/js/news-share.js")) fail(`NEWS_SHARE_UI_INVALID:${story.story_id}`);
-  const representativeId = caseFile?.representative_id || story.story_id;
   const representativeSlug = caseFile?.representative_slug || story.slug;
   if (!detail.includes("data-news-return-to-list") || !detail.includes(`#story-${representativeSlug}`) || !detail.includes("Zur Übersicht und Leseposition")) fail(`NEWS_RETURN_NAVIGATION_INVALID:${story.story_id}`);
-  const indexPosition = visibleStories.findIndex((item) => item.story_id === representativeId);
-  const newerStory = visibleStories[indexPosition - 1];
-  const nextStory = visibleStories[indexPosition + 1];
-  if (newerStory && (!detail.includes("Neuere Meldung") || !detail.includes(`../${newerStory.slug}/`))) fail(`NEWS_NEWER_NAVIGATION_INVALID:${story.story_id}`);
-  if (nextStory && (!detail.includes("Nächste Meldung") || !detail.includes(`../${nextStory.slug}/`))) fail(`NEWS_NEXT_NAVIGATION_INVALID:${story.story_id}`);
+  const indexPosition = readerOrder.indexOf(`${representativeSlug}/`);
+  const newerHref = readerOrder[indexPosition - 1];
+  const nextHref = readerOrder[indexPosition + 1];
+  if (newerHref && (!detail.includes("Neuerer Beitrag") || !detail.includes(`href="${detailReaderHref(newerHref)}"`))) fail(`NEWS_NEWER_NAVIGATION_INVALID:${story.story_id}`);
+  if (nextHref && (!detail.includes("Nächster Beitrag") || !detail.includes(`href="${detailReaderHref(nextHref)}"`))) fail(`NEWS_NEXT_NAVIGATION_INVALID:${story.story_id}`);
   if (caseFile && (!detail.includes(`data-news-case-id="${caseFile.case_id}"`) || !detail.includes("Einzelereignisse, Belege und Analysen bleiben getrennt")
     || caseFile.members.some((member) => !detail.includes(`../${member.slug}/`) && member.story_id !== story.story_id))) fail(`NEWS_CASE_FILE_UI_INVALID:${story.story_id}`);
   const sourceSummaryAt = detail.indexOf("data-news-source-summary");
@@ -130,6 +130,10 @@ for (const analysis of editorialStore.analyses.filter((item) => item.status === 
   if (!fs.existsSync(analysisFile)) fail(`EDITORIAL_PAGE_MISSING:${analysis.analysis_id}`);
   const html = fs.readFileSync(analysisFile, "utf8");
   if (!html.includes("WÖK-Analyse") || !html.includes("Natalie Weber") || !html.includes("natalie-weber-woek-analyse.jpg") || !html.includes(analysis.transparency_note) || !html.includes(`wirkungsticker/analyse/${analysis.slug}/`) || !html.includes(`../../${story.slug}/`) || !html.includes('"@type":"Article"')) fail(`EDITORIAL_PAGE_INVALID:${analysis.analysis_id}`);
+  const readerIndex = readerOrder.indexOf(`analyse/${analysis.slug}/`);
+  const nextHref = readerOrder[readerIndex + 1];
+  const analysisNextHref = nextHref?.startsWith("analyse/") ? `../${nextHref.slice("analyse/".length)}` : nextHref ? `../../${nextHref}` : null;
+  if (readerIndex < 0 || !html.includes('data-news-reader="analysis"') || !html.includes("data-news-reader-back") || (nextHref && (!html.includes("Nächster Beitrag") || !html.includes(`href="${analysisNextHref}"`)))) fail(`EDITORIAL_READER_NAVIGATION_INVALID:${analysis.analysis_id}`);
   const storyHtml = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
   if (!storyHtml.includes(`../analyse/${analysis.slug}/`) || !rss.includes(`/wirkungsticker/analyse/${analysis.slug}/`)) fail(`EDITORIAL_BACKLINK_OR_FEED_INVALID:${analysis.analysis_id}`);
 }
