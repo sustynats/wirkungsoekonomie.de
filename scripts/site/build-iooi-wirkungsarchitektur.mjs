@@ -127,7 +127,7 @@ ${renderHeader(BASE)}
         <div class="section-header compact">
           <p class="hero-kicker">Die Kurzformel</p>
           <h2 id="kurzformel-title">Wirkung ist zuerst eine Zustandsveränderung.</h2>
-          <p><strong>Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein.</strong> Die Wirkungsökonomie bewertet Wirkung am Referenzrahmen der SDGs, der Agenda 2030 und SDG+ und richtet Wirtschaft, Politik, Kapital, Medien und Entscheidungen auf positive Netto-Wirkung für Mensch, Planet und Demokratie aus.</p>
+          <p><strong>Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ, neutral oder ambivalent bewertet werden. Reicht die Evidenz nicht aus, bleibt die Einordnung offen.</strong> Die Wirkungsökonomie bewertet Wirkung am Referenzrahmen der SDGs, der Agenda 2030 und SDG+ und richtet Wirtschaft, Politik, Kapital, Medien und Entscheidungen auf positive Netto-Wirkung für Mensch, Planet und Demokratie aus.</p>
           <p><strong>Nicht alles, was wirkt, ist erwünscht.</strong> Deshalb reicht es nicht, Wirkung zu messen. Man muss auch offenlegen, woran man sie misst.</p>
         </div>
       </section>
@@ -219,7 +219,7 @@ ${renderHeader(BASE)}
           <article class="impact-process__step"><span class="impact-process__index">5</span><h3>Gibt es Grenzen?</h3><p>Wirkungsgrenzen und Nichtkompensation schützen vor Schönrechnung.</p></article>
           <article class="impact-process__step"><span class="impact-process__index">6</span><h3>Was folgt?</h3><p>Transformationsprüfung und Rückkopplung in die nächste Entscheidung.</p></article>
         </div>
-        <p>Die SDGs sind ein außergewöhnlich breit international vereinbarter Zielrahmen. <a href="${BASE}begriffe/sdg-plus/">SDG+</a> ist die transparente WÖk-Erweiterung für systemische Voraussetzungen wie Demokratie, Rechtsstaatlichkeit, Informationsqualität, digitale Selbstbestimmung, institutionelles Vertrauen und Resilienz. Fachstandards wie ESRS, GRI, ISO, ILO, gesetzliche Grenzwerte und wissenschaftliche Schwellen liefern Daten, Messgrößen und operative Konkretisierung; sie sind nicht automatisch der normative Oberrahmen.</p>
+        <p>Die SDGs sind ein außergewöhnlich breit international vereinbarter Zielrahmen. <a href="${BASE}begriffe/sdg-plus/">SDG+</a> ist eine WÖk-eigene Erweiterung, keine offizielle UN-Kategorie. Sie konkretisiert systemische Voraussetzungen wie Demokratie, Rechtsstaatlichkeit, Informationsqualität, digitale Selbstbestimmung, institutionelles Vertrauen und Resilienz. Fachstandards wie ESRS, GRI, ISO, ILO, gesetzliche Grenzwerte und wissenschaftliche Schwellen liefern Daten, Messgrößen und operative Konkretisierung; sie sind nicht automatisch der normative Oberrahmen.</p>
       </section>
 
       <section class="section section-muted" aria-labelledby="schutz-title">

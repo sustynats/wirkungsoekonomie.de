@@ -1312,6 +1312,12 @@ function renderVerstehenPortal() {
             links: [["Begriff Wirkung", "begriffe/wirkung/"]],
           },
           {
+            kicker: "Referenzrahmen",
+            title: "SDG+ ist eine WÖk-eigene Erweiterung.",
+            text: "SDG+ ist eine WÖk-eigene Erweiterung des Referenzrahmens. Sie ist keine offizielle UN-Kategorie und macht insbesondere Demokratie, Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit und digitale Selbstbestimmung für die WÖk expliziter prüfbar.",
+            links: [["Referenzrahmen verstehen", "verstehen/sdgs-sdgplus/"]],
+          },
+          {
             kicker: "Zielgröße",
             title: "Positive Netto-Wirkung.",
             text: "Entscheidend ist, ob Mensch, Planet und Demokratie insgesamt gestärkt werden, ohne schwere Schäden zu verdecken.",
@@ -1320,7 +1326,7 @@ function renderVerstehenPortal() {
           {
             kicker: "Rückkopplung",
             title: "Wirkung muss Entscheidungen verändern.",
-            text: "Sichtbare Wirkung reicht nicht. Sie muss in Preise, Steuern, Kapital, Einkommen, Beschaffung und Regeln zurückfließen.",
+            text: "Die WÖk-Zielarchitektur soll geprüfte Erkenntnisse in Entscheidungen, Regeln und Anreize zurückführen. Daten allein ändern keine Preise oder Steuern.",
             links: [["Wirkungssteuerung", "wirkungssteuerung/"]],
           },
         ])}

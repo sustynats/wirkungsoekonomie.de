@@ -5,6 +5,8 @@ export const EDITORIAL_ANALYSIS_MIN_SCORE = 66;
 export const EDITORIAL_ANALYSIS_MIN_GAIN = 46;
 
 const LEVEL = { offen: 0, gering: 1, mittel: 2, hoch: 3, "sehr hoch": 4 };
+// media_impact uses an English enum; legacy German values remain compatible.
+const MEDIA_LEVEL = { ...LEVEL, open: 0, low: 1, medium: 2, high: 3, very_high: 4 };
 const CLAIM_TYPES = new Set(["fact", "observation", "woek_definition", "analytical_inference", "impact_potential", "impact_risk", "observed_impact", "attribution", "normative_assessment"]);
 const EVIDENCE_LEVELS = new Set(["high", "medium", "low", "open"]);
 const ANALYSIS_TYPES = new Set(["system_analysis", "macro_analysis", "case_analysis", "discourse_analysis", "resilience_analysis", "transformation_analysis"]);
@@ -57,10 +59,11 @@ export function editorialEvidenceGate(story) {
   const origins = uniqueOrigins(story);
   const primarySources = (story.sources || []).filter((source) => source.primary_source);
   const citedClaims = (story.claims || []).filter((claim) => (claim.evidence || []).length || claim.source_id);
-  const sourceIntegrity = story.source_integrity?.status || "passed";
+  const sourceIntegrity = story.source_integrity?.status || "open";
   const primaryExpected = /\b(gesetz|verordnung|urteil|gericht|behörde|ministerium|regierung|haushalt|statistik|studie|wahl(?:ergebnis)?|unternehmen meldet)\b/i.test(textOfStory(story));
   const primarySatisfied = primarySources.length > 0 || (!primaryExpected && origins.size >= 2);
-  const passed = sourceIntegrity !== "open" && origins.size >= 2 && citedClaims.length >= 1 && primarySatisfied;
+  const integrityVerified = sourceIntegrity === "verified";
+  const passed = integrityVerified && origins.size >= 2 && citedClaims.length >= 1 && primarySatisfied;
   return {
     passed,
     source_integrity: sourceIntegrity,
@@ -70,7 +73,7 @@ export function editorialEvidenceGate(story) {
     primary_source_expected: primaryExpected,
     primary_source_satisfied: primarySatisfied,
     reasons: [
-      ...(sourceIntegrity === "open" ? ["source_integrity_open"] : []),
+      ...(!integrityVerified ? ["source_integrity_open"] : []),
       ...(origins.size < 2 ? ["fewer_than_two_source_origins"] : []),
       ...(citedClaims.length < 1 ? ["no_source_bound_claim"] : []),
       ...(!primarySatisfied ? ["primary_source_missing"] : []),
@@ -88,25 +91,34 @@ export function editorialAnalysisAssessment(story) {
   const systemic = plain(analysis.systemic_relevance, 800);
   const resilienceText = plain(analysis.resilience, 800);
   const transformationText = plain(analysis.transformation_potential, 800);
-  const observedImpact = (story.claims || []).some((claim) => claim.type === "observed_impact" || /\b(eingetreten|bereits ausgefallen|veröffentlicht|gestohlen|zerstört|gesunken|gestiegen)\b/i.test(claim.claim || ""));
-  const mediaLevel = LEVEL[String(analysis.media_impact?.relevance_level || "offen").toLowerCase()] || 0;
+  // A publication, announcement or an isolated verb is not observed impact.
+  const observedImpact = (story.claims || []).some((claim) => claim.type === "observed_impact"
+    && (claim.source_id || claim.evidence?.length)
+    && !["open", "unconfirmed", "hypothesis", "disputed"].includes(claim.status));
+  const mediaLevel = analysis.media_impact?.relevant === true
+    ? MEDIA_LEVEL[String(analysis.media_impact.relevance_level || "open").trim().toLowerCase()] || 0
+    : 0;
   const cascade = termScore(text, [/kritische\w* infrastruktur/i, /system(?:isch|relevant)/i, /kaskad/i, /resilien/i, /versorgungssicherheit/i, /cyber|sabotage|angriff/i], 14);
   const macro = termScore(text, [/volkswirtschaft|makroökonom/i, /milliard|million|haushalt|fiskal/i, /preis|inflation|produktivität|beschäftigung/i, /kapital|investition|marktstruktur/i, /wettbewerbsfähigkeit/i], 12);
   const distribution = termScore(text, [/verteilung|betroffen|haushalt|einkommen|teilhabe/i, /wer trägt|kosten.*(?:staat|öffentlich|steuer)/i, /ungleich|armut|sozial/i], 8);
   const longTerm = termScore(text, [/langfrist|pfadabhängig|lock-in|irrevers|generation/i, /transform|standard|institution|regel|anreiz/i], 10);
-  const risk = importance >= 3 ? 8 : importance * 2;
-  const potential = Math.min(10, (dimensionLevels.reduce((sum, level) => sum + level, 0) + importance));
+  // Missing severity stays open; general news importance is editorial priority,
+  // never a substitute for a measured/assessed impact risk.
+  const risk = Math.min(8, (MEDIA_LEVEL[String(analysis.impact_risk_level || "open").toLowerCase()] || 0) * 2);
+  const editorialPriority = importance >= 3 ? 8 : importance * 2;
+  const potential = Math.min(10, (MEDIA_LEVEL[String(analysis.impact_potential_level || "open").toLowerCase()] || 0) * 2);
+  const mpdRelevance = Math.min(10, dimensionLevels.reduce((sum, level) => sum + level, 0) + importance);
   const systemicRelevance = Math.min(16, importance * 3 + cascade + Number(systemic.length > 80) * 2);
-  const thirdOrderRelevance = Math.min(10, Number(thirdOrder.length > 50) * 5 + termScore(thirdOrder, [/regel|markt|institution|anreiz|diskurs|kapital|standard/i], 5));
-  const transformation = Math.min(8, Number(transformationText.length > 60) * 3 + longTerm);
-  const resilience = Math.min(8, Number(resilienceText.length > 60) * 3 + Math.min(5, cascade));
+  const thirdOrderRelevance = termScore(thirdOrder, [/regel|institution|standard|markt|anreiz|kapital|diskurs|resilien|anpass|prioris|ökosystem|bip|vorbild|vertrauen|normen|pfad/i], 10);
+  const transformation = termScore(transformationText, [/pfad|lock-in|langfrist|investition|markt|standard|institution|regel|strukturwandel|anpassung|transformation/i], 8);
+  const resilience = termScore(resilienceText, [/prävention|redundanz|vorsorge|anpassung|dämpfung|rückstell|kaskad|resilien|schutz|verwundbar|versorgung/i], 8);
   const mpdInterdependence = Math.min(8, highDimensions * 2 + Number(highDimensions >= 2) * 2);
   const discourse = Math.min(8, mediaLevel * 2);
   const caseDepth = Math.min(8, Math.max(0, Number(story.case_file?.member_count || story.living_file?.consolidations?.length || 0) - 1) * 2);
   const analysisGain = Math.min(100, thirdOrderRelevance * 3 + mpdInterdependence * 2 + caseDepth * 2 + Math.min(18, cascade + macro + distribution + longTerm));
   const evidence = editorialEvidenceGate(story);
   const evidenceQuality = Math.min(8, evidence.independent_origin_count * 2 + evidence.primary_source_count * 2 + Number(evidence.cited_claim_count > 1));
-  const total = Math.min(100, Math.round(systemicRelevance + potential + risk + Number(observedImpact) * 5 + thirdOrderRelevance + transformation + resilience + macro + mpdInterdependence + distribution + discourse + caseDepth + evidenceQuality));
+  const total = Math.min(100, Math.round(systemicRelevance + mpdRelevance + potential + editorialPriority + risk + Number(observedImpact) * 5 + thirdOrderRelevance + transformation + resilience + macro + mpdInterdependence + distribution + discourse + caseDepth + evidenceQuality));
   const highDamageLowEvidence = (risk >= 8 || systemicRelevance >= 13) && !evidence.passed;
   const candidate = total >= EDITORIAL_ANALYSIS_MIN_SCORE && analysisGain >= EDITORIAL_ANALYSIS_MIN_GAIN;
   return {
@@ -117,13 +129,18 @@ export function editorialAnalysisAssessment(story) {
     status: candidate ? (evidence.passed ? "ready_for_research" : "research_pending") : "not_selected",
     high_damage_low_evidence: highDamageLowEvidence,
     factors: {
-      systemic_relevance: systemicRelevance, impact_potential: potential, impact_risk: risk,
+      systemic_relevance: systemicRelevance, impact_potential: potential, impact_risk: risk, editorial_priority: editorialPriority, mpd_relevance: mpdRelevance,
       observed_impact: Number(observedImpact) * 5, third_order_relevance: thirdOrderRelevance,
       transformation_relevance: transformation, resilience_relevance: resilience, macro_relevance: macro,
       MPD_interdependence: mpdInterdependence, distribution_relevance: distribution,
       discourse_relevance: discourse, case_depth: caseDepth, evidence_quality: evidenceQuality,
     },
     evidence_gate: evidence,
+    factor_status: {
+      impact_potential: potential ? "assessed" : "open",
+      impact_risk: risk ? "assessed" : "open",
+      observed_impact: observedImpact ? "source_bound_claim" : "not_established",
+    },
     fingerprint: crypto.createHash("sha256").update(JSON.stringify([story.content_hash, story.current_version, story.sources?.map((source) => [source.url, source.content_hash]), analysis.media_analysis_version])).digest("hex"),
   };
 }
