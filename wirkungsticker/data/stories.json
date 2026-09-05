@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-05T18:45:53.209Z",
+  "updated_at": "2026-09-05T20:51:40.373Z",
   "stories": [
     {
       "story_id": "wt-3d901522efd87e2d",
@@ -3392,7 +3392,14 @@
       "media_impact": null,
       "media_analysis_version": null,
       "media_checked_at": null,
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-061f61c466cf",
+        "slug": "veroffentlichte-daten-aus-dem-berliner-landesnetz-was-der-vorfall-fur-verwaltung-u-061f61",
+        "title": "Veröffentlichte Daten aus dem Berliner Landesnetz: Was der Vorfall für Verwaltung und Schutzlogik verändert",
+        "teaser": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein. Belegt sind Veröffentlichung und Prüfung – nicht der gesamte Inhalt oder ein Missbrauch.",
+        "published_at": "2026-09-05T20:51:40.373Z",
+        "updated_at": "2026-09-05T20:51:40.373Z"
+      },
       "first_seen": "2026-09-04T14:37:53.000Z",
       "last_updated": "2026-09-05T04:14:14.534Z",
       "version": 4,
@@ -8525,6 +8532,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-061f61c466cf",
+      "story_id": "wt-f2edeab46d126d83",
+      "slug": "veroffentlichte-daten-aus-dem-berliner-landesnetz-was-der-vorfall-fur-verwaltung-u-061f61",
+      "title": "Veröffentlichte Daten aus dem Berliner Landesnetz: Was der Vorfall für Verwaltung und Schutzlogik verändert",
+      "subtitle": "Der gesicherte Kern ist die Veröffentlichung mutmaßlich gestohlener Daten; der größere Zusammenhang liegt in Prüfungslasten, Vertrauensverlust und möglicher Verwundbarkeit sensibler Informationen.",
+      "teaser": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein. Belegt sind Veröffentlichung und Prüfung – nicht der gesamte Inhalt oder ein Missbrauch.",
+      "published_at": "2026-09-05T20:51:40.373Z",
+      "updated_at": "2026-09-05T20:51:40.373Z",
+      "reading_time_minutes": 6
+    },
     {
       "analysis_id": "woek-analysis-cf42f2c67306",
       "story_id": "wt-3d901522efd87e2d",
