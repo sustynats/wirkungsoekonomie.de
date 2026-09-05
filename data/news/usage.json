@@ -4537,6 +4537,70 @@
       },
       "source_failures": 0,
       "quality_holds": 2
+    },
+    {
+      "run_id": "news-run-4e959c068115",
+      "started_at": "2026-09-05T09:15:34.958Z",
+      "completed_at": "2026-09-05T09:18:29.881Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 968,
+        "feed_entries_new": 33,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 563,
+        "story_clusters": 40,
+        "locally_rejected": 38,
+        "ai_stories": 6,
+        "ai_requests": 6,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 181135,
+        "media_checks_triggered": 0,
+        "media_checks_skipped": 6,
+        "media_check_tokens": 0,
+        "self_frame_rewrites": 0,
+        "published_stories": 1,
+        "updated_stories": 1
+      },
+      "ai": {
+        "requests": 6,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 47663,
+        "output_tokens": 6593,
+        "estimated_cost_usd": 0.049001,
+        "token_source": "provider_reported_usage",
+        "media_check_tokens": 0,
+        "media_check_cost_usd": 0
+      },
+      "source_failures": 0,
+      "quality_holds": 4
+    },
+    {
+      "run_id": "media-backfill-442c8457cac8",
+      "started_at": "2026-09-05T09:18:31.212Z",
+      "completed_at": "2026-09-05T09:19:39.942Z",
+      "berlin_slot": "kontrollierter Medienwirkungs-Backfill",
+      "counts": {
+        "media_checks_triggered": 9,
+        "media_checks_skipped": 70,
+        "media_check_tokens": 31289,
+        "self_frame_rewrites": 1,
+        "updated_stories": 8
+      },
+      "ai": {
+        "requests": 9,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 31289,
+        "output_tokens": 0,
+        "estimated_cost_usd": 0.058435,
+        "media_check_tokens": 31289,
+        "media_check_cost_usd": 0.058435,
+        "token_source": "provider_or_conservative_media_backfill"
+      },
+      "source_failures": 0,
+      "quality_holds": 1
     }
   ]
 }

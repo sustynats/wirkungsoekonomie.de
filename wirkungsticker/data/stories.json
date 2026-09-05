@@ -1,7 +1,1091 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T08:36:15.992Z",
+  "updated_at": "2026-09-05T09:18:31.212Z",
   "stories": [
+    {
+      "story_id": "wt-60f4e4d7d43fad99",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-e731083fd0f9c981-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-4cb3f07fbcbef779-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-64c671dbff05938e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+      "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+      "source_summary": "Die Quelle berichtet über die laufenden Ermittlungen nach Angriffen auf das Stromnetz in Nordrhein-Westfalen und Brandenburg. Nach Angaben von Innenminister Reul wurde das Fahrzeug eines Verdächtigen in Niederzier gestürmt; in seiner Wohnung in Gevelsberg seien sprengstoffverdächtige Gegenstände gefunden worden. Die Polizei suche weiter nach dem Verdächtigen. \n\nBundesinnenminister Dobrindt ordnet die Lage als sehr wahrscheinlich Einzeltat ein und spricht nach aktuellem Stand von Klimaextremismus. Zugleich verweist er auf weiter laufende Ermittlungen und einen noch nicht abschließend geklärten Tathintergrund. Reul sagt, die vorliegenden Briefe würden derzeit als authentisch bewertet, prüfe aber weiter, ob der Mann allein gehandelt habe oder Bezüge zu anderen Vorfällen bestehen.",
+      "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. In dessen Umfeld wurden ein Fahrzeug gestürmt und sprengstoffverdächtige Gegenstände gefunden.",
+      "detail_summary": "Gesichert ist nach der Quelle, dass die Ermittlungen zu Angriffen auf das Stromnetz weiterlaufen und dass Polizei und Innenminister konkrete Maßnahmen gegen einen Verdächtigen beschreiben. Das ist relevant, weil sich daraus ein möglicher Wirkpfad auf die Sicherheit kritischer Infrastruktur ergibt, etwa über Fahndung, Gefahrenabwehr und Schutzmaßnahmen bei Betreibern. Politisch und operativ bedeutsam ist vor allem die Kombination aus laufender Fahndung, dem Fund verdächtiger Gegenstände und der öffentlichen Einordnung durch die Innenminister. Als mögliche Folge kommen verschärfte Schutzvorkehrungen und weitere Ermittlungsmaßnahmen in Betracht. Unklar bleibt aber, wie belastbar die Zuschreibungen zu Motiv, Täterzahl und Hintergründen im Moment schon sind; die Quelle selbst verweist auf laufende Prüfungen.",
+      "why_relevant": "Der Vorgang betrifft potenzielle Angriffe auf kritische Energieinfrastruktur und damit einen Bereich mit möglicher Systemrelevanz, Sicherheitsfolgen und politischem Handlungsdruck.",
+      "topic": [
+        "Energie",
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Versorgungssicherheit und Schutz kritischer Infrastruktur mit möglicher Auswirkung auf Bevölkerung und Einsatzkräfte."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht belegt; allenfalls indirekt über Energieinfrastruktur und Ausfallrisiken."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die öffentliche Einordnung durch Innenminister und laufende Ermittlungen berühren staatliche Sicherheits- und Schutzaufgaben."
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Trigger ist die politisch aufgeladene Bezeichnung \"Klimaextremismus\" im Kontext laufender Ermittlungen; sie kann die Deutung der Tat vorläufig rahmen, obwohl der Sachverhalt noch nicht abschließend geklärt ist.",
+        "factual_core": "Nach der Quelle laufen Ermittlungen zu Angriffen auf das Stromnetz in Nordrhein-Westfalen und Brandenburg. Die Polizei fahndet nach einem Verdächtigen; in seinem Umfeld wurden unter anderem ein gestürmtes Fahrzeug und sprengstoffverdächtige Gegenstände beschrieben.",
+        "speaker_statement": {
+          "present": true,
+          "speaker": "Bundesinnenminister Dobrindt",
+          "statement": "Nach aktuellem Stand ordnet er die Lage als sehr wahrscheinlich als Einzeltat ein und spricht von Klimaextremismus; zugleich verweist er auf weiter laufende Ermittlungen und einen noch nicht abschließend geklärten Tathintergrund.",
+          "status": "claim"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Klimaextremismus",
+          "origin_in_story": "Akteur",
+          "media_usage": "body",
+          "attribution_quality": "grundsätzlich attribuiert",
+          "factual_status": "Aussage eines Akteurs",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "resonance": {
+          "resonance_space": "Resonanzraum für sicherheits- und klimapolitische Deutungen, besonders bei Kritik oder Zustimmung zu einer frühen Einordnung durch Regierungsvertreter.",
+          "resonance_risk": "Die Bezeichnung kann als vorläufige Täter- und Motivzuschreibung im Publikum hängen bleiben, obwohl die Ermittlungen laut Quelle noch laufen.",
+          "normalization_potential": "Wiederholte Verwendung kann den Begriff als naheliegende Standardkategorie für ähnliche Fälle normalisieren, ohne dass dies den Sachstand bestätigt.",
+          "repetition_effect": "Repetition kann das Risiko eines Illusory-Truth-Effekts erhöhen, falls die frühe Einordnung häufiger zitiert wird als die offenen Ermittlungsfragen.",
+          "trust_effect": "Bei späterer Relativierung kann Vertrauensverlust entstehen, wenn die erste Deutung stärker präsent bleibt als der Vorbehalt.",
+          "polarization_potential": "Der Begriff kann politische Lagerungen um Klimaaktivismus, Sicherheit und Extremismus verstärken, ohne selbst Beleg für die Tat zu sein.",
+          "discourse_effect": "Der Diskurs kann sich von der Tatbeschreibung hin zur Motiv- und Lagerfrage verschieben; das ist eine mediale Wirkung, kein Ereignisbefund."
+        },
+        "impact_path": {
+          "first_order": "Die Einordnung lenkt die Aufmerksamkeit auf ein mögliches politisches Motiv und auf Sicherheitsfragen rund um kritische Infrastruktur.",
+          "second_order": "Das kann die öffentliche Diskussion über Extremismusbegriffe, Ermittlungsstand und Schutzmaßnahmen beeinflussen.",
+          "third_order": "Bei anhaltender Wiederholung kann sich ein dauerhaftes Deutungsmuster verfestigen, das spätere Differenzierungen erschwert."
+        },
+        "evidence": {
+          "status": "high",
+          "what_is_known": "Die Quelle berichtet über laufende Ermittlungen, die Fahndung nach einem Verdächtigen, einen Fund sprengstoffverdächtiger Gegenstände und die öffentliche Einordnung durch Dobrindt.",
+          "what_is_inferred": "Dass die Formulierung als politisch aufgeladener Frame wirkt und die Deutung vorläufig in Richtung Klimaextremismus verschiebt.",
+          "what_is_open": "Tatmotiv, Täterzahl, abschließende Einordnung und Belastbarkeit der Zuschreibung sind laut Quelle noch ungeklärt."
+        },
+        "editorial_assessment": "Die Formulierung sollte klar als vorläufige politische Einordnung eines Akteurs markiert werden; im Text sollte der Ermittlungsstand vorangestellt und der Begriff danach nur noch als diese Formulierung bezeichnet werden.",
+        "fact_first_reframe": {
+          "title": "Polizei fahndet nach Verdächtigem nach Angriffen auf Stromnetz",
+          "source_summary": "Nach Angaben der Quelle laufen die Ermittlungen zu Angriffen auf das Stromnetz in Nordrhein-Westfalen und Brandenburg weiter. Die Polizei sucht nach einem Verdächtigen; in seinem Umfeld wurden ein gestürmtes Fahrzeug und sprengstoffverdächtige Gegenstände beschrieben. Bundesinnenminister Dobrindt äußert eine vorläufige Einordnung, betont aber den laufenden Ermittlungsstand.",
+          "summary": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Die Ermittlungen dauern an, und eine politische Einordnung des Tatmotivs ist laut Quelle noch nicht abschließend geklärt.",
+          "detail_summary": "Gesichert berichtet die Quelle über laufende Ermittlungen zu Angriffen auf das Stromnetz sowie über konkrete Polizeimaßnahmen gegen einen Verdächtigen. Im Umfeld des Verdächtigen wurden ein gestürmtes Fahrzeug und sprengstoffverdächtige Gegenstände erwähnt. Bundesinnenminister Dobrindt äußert eine vorläufige Bewertung und spricht von Klimaextremismus, verweist aber zugleich auf den noch offenen Ermittlungsstand. Für die Medienwirkung ist deshalb entscheidend, dass der Begriff als politische Deutung eines Akteurs kenntlich bleibt und nicht wie ein abgeschlossener Sachverhalt erscheint."
+        },
+        "self_frame_warning": false,
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "1.0",
+      "media_checked_at": "2026-09-05T09:18:31.212Z",
+      "first_seen": "2026-09-04T15:15:00.000Z",
+      "last_updated": "2026-09-05T09:18:31.212Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-b1327260d95e2af32735",
+      "case_file": {
+        "case_id": "case-4dc00cde414b35",
+        "member_count": 17,
+        "publisher_count": 14,
+        "members": [
+          {
+            "story_id": "wt-60f4e4d7d43fad99",
+            "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+            "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+            "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. In dessen Umfeld wurden ein Fahrzeug gestürmt und sprengstoffverdächtige Gegenstände gefunden.",
+            "updated_at": "2026-09-05T09:18:31.212Z",
+            "published_at": "2026-09-04T17:41:38.182Z",
+            "kind": "Ermittlungsstand",
+            "current": true
+          },
+          {
+            "story_id": "wt-7b385f58748f3d32",
+            "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+            "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+            "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
+            "updated_at": "2026-09-05T09:18:31.212Z",
+            "published_at": "2026-09-04T10:09:13.371Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-f3d585eac14dec76",
+            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+            "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
+            "updated_at": "2026-09-05T09:18:31.212Z",
+            "published_at": "2026-09-04T02:07:51.145Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-f7d7115a53ff2c2f",
+            "slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
+            "title": "Bericht nennt wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage für Unternehmen",
+            "summary": "Wirtschaftsforscher sehen laut Bericht wachsende hybride Risiken für Unternehmen. Genannt werden unter anderem mögliche Auswirkungen auf Strom- und Wasserversorgung.",
+            "updated_at": "2026-09-05T09:18:31.212Z",
+            "published_at": "2026-09-05T03:07:38.569Z",
+            "kind": "Entscheidung oder Reaktion",
+            "current": false
+          },
+          {
+            "story_id": "wt-c053f94b1bbc57bd",
+            "slug": "angriffe-auf-umspannwerke-amprion-chef-will-fur-unternehmen-mehr-befugnisse-bc57bd",
+            "title": "Angriffe auf Umspannwerke: Amprion-Chef will für Unternehmen mehr Befugnisse",
+            "summary": "Amprion-Chef Christoph Müller fordert nach Angriffen auf das Stromnetz mehr Befugnisse für Unternehmen. Konkret geht es um erlaubte Drohnenüberflüge zur Leitungsüberwachung.",
+            "updated_at": "2026-09-05T09:17:13.256Z",
+            "published_at": "2026-09-05T09:17:13.256Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-33e396f2be1a3a1f",
+            "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
+            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+            "summary": "In Sachsen wurden Sprengvorrichtungen nahe zwei Umspannwerken gefunden. Parallel läuft die Fahndung nach einem 48-jährigen Verdächtigen weiter.",
+            "updated_at": "2026-09-05T09:16:39.625Z",
+            "published_at": "2026-09-04T19:51:20.503Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-00fccb632042b492",
+            "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
+            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
+            "summary": "Die Polizei fahndet nach einem Mann aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen gegen Stromanlagen. Laut Bericht halten Ermittler zwei Bekennerschreiben wegen ihres Täterwissens für authentisch, die Unterschrift ist aber noch nicht abschließend geklärt.",
+            "updated_at": "2026-09-05T06:39:06.202Z",
+            "published_at": "2026-09-04T12:08:21.972Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-a5874ae28ed5533f",
+            "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
+            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+            "summary": "Die Polizei hat den Hambacher Forst nach einer Suche ohne Treffer wieder verlassen. Der WDR ordnet den Einsatz den Ermittlungen zu Sabotage an Stromanlagen zu.",
+            "updated_at": "2026-09-04T21:36:31.936Z",
+            "published_at": "2026-09-04T17:37:24.324Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-03c6bacdda808696",
+            "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
+            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
+            "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
+            "updated_at": "2026-09-04T18:22:40.051Z",
+            "published_at": "2026-09-04T18:22:40.051Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-a6f6c9c60011b50c",
+            "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
+            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
+            "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
+            "updated_at": "2026-09-04T17:41:54.741Z",
+            "published_at": "2026-09-04T17:41:54.741Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-cb1584ee4d9e6a43",
+            "slug": "stromversorgung-reul-polizei-sturmt-fahrzeug-von-sabotage-verdachtigem-9e6a43",
+            "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
+            "summary": "Die Polizei hat laut NRW-Innenminister Reul das Fahrzeug eines Sabotage-Verdächtigen gestürmt. Der Zugriff soll in Niederzier erfolgt sein, der Mann sei nun vermutlich zu Fuß unterwegs.",
+            "updated_at": "2026-09-04T16:09:09.120Z",
+            "published_at": "2026-09-04T16:09:09.120Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-1fbb056ccaaf351d",
+            "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
+            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+            "summary": "Die Polizei sucht bundesweit nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotage an der Energieversorgung. Ein Deutschlandfunk-Bericht nennt Bekennerschreiben, die die Ermittler für authentisch halten.",
+            "updated_at": "2026-09-04T15:52:29.187Z",
+            "published_at": "2026-09-04T11:12:12.390Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-5547189d2645384a",
+            "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
+            "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
+            "summary": "In Gevelsberg lief ein SEK-Einsatz im Zusammenhang mit den Ermittlungen zu den Angriffen auf Umspannwerke. Der gesuchte 48-Jährige wurde dort nicht angetroffen, in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe.",
+            "updated_at": "2026-09-04T15:29:14.683Z",
+            "published_at": "2026-09-04T13:23:17.993Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ae0b9f22404b684",
+            "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
+            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
+            "updated_at": "2026-09-04T14:13:53.288Z",
+            "published_at": "2026-09-03T23:06:38.718Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-4fb94d2cebfca746",
+            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+            "summary": "In Dormagen wurde an einem Umspannwerk ein verdächtiger Gegenstand gefunden. Die Polizei stuft den Fall nach einem Bekennerschreiben als möglichen Sabotagefall ein und fahndet nach einem Mann aus Gevelsberg.",
+            "updated_at": "2026-09-04T11:11:50.847Z",
+            "published_at": "2026-09-04T01:53:14.028Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-b9487671699d6c9b",
+            "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
+            "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
+            "summary": "Der WDR meldet zwei Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke. Die Ermittlungen prüfen Echtheit und mögliche Zusammenhänge in NRW und Brandenburg.",
+            "updated_at": "2026-09-04T01:53:45.231Z",
+            "published_at": "2026-09-04T01:53:45.231Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-9812656e38b0d665",
+            "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
+            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+            "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
+            "updated_at": "2026-09-03T22:22:49.015Z",
+            "published_at": "2026-09-03T22:22:49.015Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-04T16:49:00.000Z",
+      "published_at": "2026-09-04T17:41:38.182Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Verdächtige tatsächlich allein gehandelt hat oder weitere Beteiligte identifiziert werden.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeiliche oder staatsanwaltschaftliche Bestätigung zusätzlicher Tatbeteiligter oder deren Ausschluss",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d2799f53d488671a",
+          "announced_at": "2026-09-04T16:49:00.000Z",
+          "follow_up_date": "2026-09-11T17:41:38.182Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:49:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-6267bf5562aa70a6",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-16d780429e3d8f24-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-72fc6926c6403e04-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-35a0ab9208e91b5a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6",
+      "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
+      "source_summary": "Am BER gab es am Donnerstagabend einen Gefahrgut-Alarm, nachdem eine Frau bei einer Service-Stelle angegeben hatte, sie habe einen gefährlichen Stoff dabei. Daraufhin räumte die Polizei den öffentlichen Bereich von Terminal 1. Der Flugbetrieb wurde nach Angaben des Flughafens nicht eingestellt, es kam aber zu Verzögerungen, einzelnen Ausfällen und einer Verlagerung der Abfertigung nach Terminal 2.\n\nSpäter am Abend gab es Entwarnung; das Terminal wurde gegen 20:45 Uhr wieder freigegeben. Am Freitagmorgen lief der Flugverkehr laut Bericht wieder regulär, nur wenige Flüge fielen aus. Auch der Zugverkehr zwischen Schönefeld und dem BER war zwischenzeitlich unterbrochen und danach wieder im Fahrplan. Die Polizei nannte keine Angaben zum untersuchten Stoff und sagte, nach bisherigen Erkenntnissen habe zu keinem Zeitpunkt eine Gefahr bestanden.",
+      "summary": "Am BER meldete eine Frau einen gefährlichen Stoff, worauf Terminal 1 zeitweise geräumt wurde. Danach lief der Flugverkehr wieder regulär, einzelne Ausfälle und eine kurze Unterbrechung des Zugverkehrs blieben aber berichtet.",
+      "detail_summary": "Gesichert ist zunächst der Ablauf: Eine Frau meldete am BER einen gefährlichen Stoff, die Polizei räumte daraufhin den öffentlichen Bereich von Terminal 1, und nach der Kontrolle wurde das Terminal wieder freigegeben. Der Flugbetrieb lief laut Bericht weiter, wurde aber vorübergehend gestört; für den Freitagmorgen wird wieder regulärer Betrieb mit wenigen Ausfällen beschrieben. Auch der Zugverkehr zwischen Schönefeld und dem Flughafen war zeitweise unterbrochen. Für die Einordnung ist wichtig, dass der berichtete Kern ein Sicherheits- und Betriebsereignis ist, kein dauerhafter Ausfall. Der mögliche Wirkpfad liegt vor allem in kurzfristigen Störungen von Abläufen, Personalbindung und Umleitungen von Passagieren. Eine weitergehende Wirkung auf Infrastruktur oder Verhalten bleibt offen, weil die Belege dazu nur den akuten Einsatz und seine unmittelbaren Folgen zeigen.",
+      "why_relevant": "Der Vorfall betrifft einen zentralen Verkehrsknoten mit kurzfristigen Störungen für Passagiere und Betriebsabläufe. Materiell relevant ist vor allem die Kombination aus Räumung, Flugfolgen und zeitweiser Unterbrechung des Bahnanschlusses.",
+      "topic": [
+        "Gesellschaft",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Kurzfristige Beeinträchtigung von Reisenden, Personal und Anschlussmobilität; keine Hinweise auf länger anhaltende Schäden."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen oder Materialflüsse mit relevanter Planetwirkung."
+        },
+        "democracy": {
+          "relevance": "offen",
+          "rationale": "Kein direkter Bezug zu demokratischer Willensbildung oder Korrekturfähigkeit erkennbar."
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Überschrift kombiniert ein Alarm-/Gefahr-Frame mit einer Entwarnung und stellt den akuten Sicherheitsvorfall als abgeschlossenen Betriebsablauf dar; das kann den Wahrnehmungsrahmen für das Ereignis prägen.",
+        "factual_core": "Am BER meldete eine Frau einen gefährlichen Stoff; daraufhin räumte die Polizei den öffentlichen Bereich von Terminal 1, kontrollierte den Bereich und gab Terminal 1 später wieder frei. Der Flugverkehr lief weiter, war aber zeitweise gestört; der Zugverkehr zwischen Schönefeld und dem BER war kurz unterbrochen.",
+        "speaker_statement": {
+          "present": true,
+          "speaker": "Bundespolizei laut Bericht",
+          "statement": "Nach bisherigen Erkenntnissen habe zu keinem Zeitpunkt eine Gefahr bestanden.",
+          "status": "claim"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Gefahrengut-Alarm",
+          "origin_in_story": "Medium",
+          "media_usage": "headline",
+          "attribution_quality": "erscheint wie redaktioneller Fakt",
+          "factual_status": "Aussage eines Akteurs",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "resonance": {
+          "resonance_space": "Reise-, Sicherheits- und Lokalberichterstattung; Publikum mit Bezug zu Flughafenbetrieb und öffentlicher Sicherheit.",
+          "resonance_risk": "Der Alarmbegriff kann die akute Gefahrenwahrnehmung verstärken, obwohl der Bericht später Entwarnung und fehlende Gefahr nennt.",
+          "normalization_potential": "Wiederholte Verwendung von Alarm- und Gefahrenvokabular kann im Resonanzraum routinierte Sicherheitsstörungen als bedrohlicher erscheinen lassen, als der Sachverhalt belegt.",
+          "repetition_effect": "Mehrfache Verbreitung derselben Formulierung kann ein Illusory-Truth-Risiko für den Alarmrahmen erzeugen, nicht für eine bestätigte Gefahr.",
+          "trust_effect": "Die spätere Entwarnung kann Vertrauen stützen, wenn klar bleibt, dass zwischen Meldung, Einsatz und bestätigter Lage unterschieden wird.",
+          "polarization_potential": "Gering; der Stoff betrifft primär Sicherheitswahrnehmung und Betriebsabläufe, nicht eine konfliktive politische Lagerbildung.",
+          "discourse_effect": "Der Bericht lenkt die Debatte auf Einsatzreaktion, Sicherheitskommunikation und Betriebsstabilität statt auf die Ursache des Vorfalls."
+        },
+        "impact_path": {
+          "first_order": "Kurzfristige Sicherheitsmaßnahme, Räumung und betriebliche Störung am Flughafen sowie kurzzeitige Unterbrechung des Zugverkehrs.",
+          "second_order": "Temporäre Umleitungen, Verzögerungen und zusätzlicher Koordinationsaufwand für Passagiere, Flughafen und Einsatzkräfte.",
+          "third_order": "Allenfalls begrenzte Lern- und Anpassungseffekte in Sicherheits- und Kommunikationsabläufen; darüber hinaus bleibt die Wirkung offen."
+        },
+        "evidence": {
+          "status": "high",
+          "what_is_known": "Meldung eines gefährlichen Stoffs, Räumung von Terminal 1, spätere Freigabe, weiterlaufender aber gestörter Flugbetrieb, kurzzeitige Unterbrechung des Zugverkehrs.",
+          "what_is_inferred": "Dass die alarmierende Wortwahl den Wahrnehmungsrahmen des Lesers stärker auf Gefahr als auf die spätere Entwarnung lenken kann.",
+          "what_is_open": "Ob und in welchem Ausmaß der verwendete Frame das Publikum tatsächlich beeinflusst hat; Angaben zum Stoff selbst und zu möglichen Folgewirkungen über den Akutbetrieb hinaus."
+        },
+        "editorial_assessment": "Die Darstellung verbindet die Einsatzmeldung mit einer alarmierenden Überschrift, ohne den Entwarnungsstatus schon im Titel präzise sichtbar zu machen; im Text wird die Lage später relativiert.",
+        "fact_first_reframe": {
+          "title": "BER-Terminal nach Meldung zu gefährlichem Stoff kurz geräumt, Betrieb läuft wieder",
+          "source_summary": "Am Flughafen BER meldete eine Frau einen gefährlichen Stoff. Die Polizei räumte daraufhin den öffentlichen Bereich von Terminal 1 und kontrollierte den Bereich. Später wurde das Terminal wieder freigegeben; der Flugverkehr lief danach wieder regulär, war zuvor aber zeitweise gestört.",
+          "summary": "Am BER führte eine Meldung über einen angeblich gefährlichen Stoff zu einer vorübergehenden Räumung von Terminal 1. Nach der Kontrolle wurde der Bereich wieder freigegeben; der Flugbetrieb lief weiter, war aber zwischenzeitlich beeinträchtigt.",
+          "detail_summary": "Nach den vorliegenden Berichten meldete eine Frau am BER einen gefährlichen Stoff. Die Polizei räumte daraufhin den öffentlichen Bereich von Terminal 1, kontrollierte den Bereich und gab ihn später wieder frei. Der Flugverkehr lief weiter, kam aber zeitweise zu Verzögerungen und einzelnen Ausfällen; auch der Zugverkehr zwischen Schönefeld und dem Flughafen war vorübergehend unterbrochen. Laut Polizei bestand nach bisherigen Erkenntnissen zu keinem Zeitpunkt eine Gefahr."
+        },
+        "self_frame_warning": false,
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "1.0",
+      "media_checked_at": "2026-09-05T09:18:31.212Z",
+      "first_seen": "2026-09-04T05:44:22.000Z",
+      "last_updated": "2026-09-05T09:18:31.212Z",
+      "version": 3,
+      "news_status": "updated",
+      "event_id": "event-993d57cff20b05016759",
+      "case_file": null,
+      "source_published_at": "2026-09-04T05:44:22.000Z",
+      "published_at": "2026-09-04T06:37:20.682Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication"
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Untersuchung des gemeldeten Stoffes neue Details ergibt.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Behörden- oder Flughafenangaben zu Art, Ergebnis und Ursache der Meldung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-160ba57b85cf83d5",
+          "announced_at": "2026-09-04T06:35:39.000Z",
+          "follow_up_date": "2026-09-11T06:37:20.682Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die angekündigten Ergebnisse der Untersuchung in den kommenden Tagen eine andere Einordnung des Vorfalls ergeben.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue behördliche Angaben zum untersuchten Stoff oder zur Gefahrenlage",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c2d7d1a1c3e7a8b0",
+          "announced_at": "2026-09-04T08:13:24.000Z",
+          "follow_up_date": "2026-09-11T11:13:05.344Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:44:22.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:45:34.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T08:13:24.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b2161abe6d0a2603",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "neues-forderprogramm-mit-zehn-millionen-euro-fur-projekte-in-ns-und-sed-gedenkstatten-st-0a2603",
+      "title": "Neues Förderprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten – Staatsminister Weimer: „Gerade jetzt Orte der Erinnerung stärken“",
+      "source_summary": "Der Beauftragte der Bundesregierung für Kultur und Medien hat ein neues Förderprogramm für Gedenkstätten und Erinnerungsorte zur NS-Terrorherrschaft und zur SED-Diktatur gestartet. Dafür sind im Regierungsentwurf des Bundeshaushalts 2027 insgesamt zehn Millionen Euro vorgesehen. Anträge können seit Veröffentlichung der Meldung eingereicht werden; die Bewerbungsfrist endet am 1. Oktober 2026. Über die Auswahl soll eine unabhängige Jury beraten, der frühestmögliche Projektbeginn ist der 1. Juli 2027.\n\nGefördert werden Vorhaben in drei Bereichen: Erhalt historischer Orte, Digitalisierung und digitale Lebenswelten sowie Vermittlung und anwendungsbezogene Forschung. Das Programm setzt die im November 2025 beschlossene neue Gedenkstättenkonzeption um. Kulturstaatsminister Wolfram Weimer erklärte zum Start, historische Orte, digitale Zugänge und zeitgemäße Bildungsangebote sollten unterstützt werden. Die Meldung führt außerdem aus, dass die bisherige Projektförderung verdoppelt werde.",
+      "summary": "Der Bund öffnet ein Förderprogramm für NS- und SED-Gedenkstätten. Veröffentlichbar ist eine Ex-ante-Einordnung zu Erinnerung, Bildung und demokratischer Resilienz.",
+      "detail_summary": "Fakt ist ein neues Bundesprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten. Bewerben können sich Gedenkstätten und Erinnerungsorte zur Aufarbeitung. Belegt sind Ziele wie Bewahrung historischer Orte und neue digitale Zugänge. Wirkungspotenzial liegt in Bildung, Teilhabe und demokratischer Erinnerungskultur. Eingetretene Wirkung, Reichweite und Qualität der Projekte sind noch offen.",
+      "why_relevant": "Gedenkstättenarbeit kann historisches Lernen, Betroffenenperspektiven, digitale Zugänge und demokratische Resilienz stärken.",
+      "topic": [
+        "Digitalisierung",
+        "Europa",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Menschen können über Bildungsangebote, Erinnerung und Zugänglichkeit profitieren; tatsächliche Nutzung ist noch nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein materieller Umweltbezug ist im Material nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Aufarbeitung von NS-Terrorherrschaft und SED-Diktatur berührt demokratische Bildung, Erinnerung und Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Titel nutzt mit „SED-Diktatur“ einen politisch aufgeladenen Begriff und stellt zugleich ein Akteurszitat prominent voran; dadurch entsteht ein deutlicher Framing-Impuls bei ansonsten klarer Förderprogramm-Meldung.",
+        "factual_core": "Der Bund startet ein neues Förderprogramm für Projekte in NS- und SED-Gedenkstätten. Dafür sind im Regierungsentwurf des Bundeshaushalts 2027 zehn Millionen Euro vorgesehen; Anträge können seit Veröffentlichung gestellt werden, die Frist endet am 1. Oktober 2026. Eine unabhängige Jury soll über die Auswahl beraten, der frühestmögliche Projektbeginn ist der 1. Juli 2027.",
+        "speaker_statement": {
+          "present": true,
+          "speaker": "Kulturstaatsminister Wolfram Weimer",
+          "statement": "„Gerade jetzt Orte der Erinnerung stärken“ sowie die Unterstützung historischer Orte, digitaler Zugänge und zeitgemäßer Bildungsangebote.",
+          "status": "claim"
+        },
+        "framing": {
+          "detected": true,
+          "term": "SED-Diktatur",
+          "origin_in_story": "Medium",
+          "media_usage": "headline",
+          "attribution_quality": "erscheint wie redaktioneller Fakt",
+          "factual_status": "Interpretation",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "resonance": {
+          "resonance_space": "Erinnerungspolitik, Demokratiedebatte, Bildungs- und Kulturberichterstattung",
+          "resonance_risk": "Der Begriff kann den Eindruck einer bereits feststehenden politischen Bewertung verstärken, bevor die sachliche Programminfo verarbeitet wird.",
+          "normalization_potential": "Wiederholte Verwendung kann den Frame als Standardbezeichnung im Thema Erinnerungskultur verankern.",
+          "repetition_effect": "Mehrfaches Auftreten desselben Labels kann ein Illusory-Truth-Risiko für die Rahmung erzeugen, nicht für den Fördertatbestand selbst.",
+          "trust_effect": "Bei klarer Attribution des Zitats und sauberer Trennung von Nachricht und Einordnung eher stabil; bei titularer Vorprägung kann Vertrauen in die Neutralität sinken.",
+          "polarization_potential": "Mittel, weil der Begriff unterschiedliche historische und politische Deutungen bündelt und konflikthaft lesen lassen kann.",
+          "discourse_effect": "Verschiebt den Fokus von der Fördermaßnahme auf die politische Bewertung des Gedenkgegenstands."
+        },
+        "impact_path": {
+          "first_order": "Leser:innen nehmen die Fördermeldung über die Erinnerungskultur zusammen mit einer politisch markierten Begriffsverwendung wahr.",
+          "second_order": "Die Rahmung kann die Deutung des Programms als parteipolitisch oder erinnerungspolitisch umkämpft verstärken, ohne den Förderinhalt selbst zu verändern.",
+          "third_order": "Bei häufiger medialer Nutzung kann sich eine standardisierte, politisch aufgeladene Bezeichnungsweise im öffentlichen Sprachgebrauch verfestigen."
+        },
+        "evidence": {
+          "status": "medium",
+          "what_is_known": "Es gibt ein neues Bundesförderprogramm mit zehn Millionen Euro für NS- und SED-Gedenkstätten; der Titel enthält den Begriff „SED-Diktatur“, und das Zitat von Weimer steht prominent im Text.",
+          "what_is_inferred": "Der Titel und die Platzierung des Zitats können die Wahrnehmung des Artikels rahmen und die politische Einordnung vorprägen.",
+          "what_is_open": "Offen bleibt, wie stark andere Darstellungsformen denselben Sachverhalt anders rahmen würden; es liegt nur eine journalistische Darstellung vor."
+        },
+        "editorial_assessment": "Der Text sollte den Förderbeschluss sachlich zuerst benennen und den historisch-politischen Begriff nach der Erstnennung klar als verwendete Bezeichnung kennzeichnen.",
+        "fact_first_reframe": {
+          "title": "Bund startet Förderprogramm für Projekte in NS- und SED-Gedenkstätten",
+          "source_summary": "Die Bundesregierung stellt im Rahmen der neuen Gedenkstättenkonzeption zehn Millionen Euro für Projekte an NS- und SED-Gedenkstätten bereit. Bewerbungen sind bis zum 1. Oktober 2026 möglich; eine unabhängige Jury soll die Auswahl treffen.",
+          "summary": "Der Bund hat ein neues Förderprogramm für Projekte in NS- und SED-Gedenkstätten gestartet. Gefördert werden Erhalt, digitale Zugänge sowie Bildungs- und Vermittlungsangebote.",
+          "detail_summary": "Der Beauftragte der Bundesregierung für Kultur und Medien hat ein Förderprogramm für Gedenkstätten und Erinnerungsorte zur NS-Terrorherrschaft und zur SED-Diktatur angekündigt. Vorgesehen sind zehn Millionen Euro im Regierungsentwurf für 2027. Anträge können bis zum 1. Oktober 2026 gestellt werden; über die Vergabe soll eine unabhängige Jury entscheiden. Das Programm soll historische Orte bewahren, digitale Zugänge verbessern und Bildungs- sowie Forschungsprojekte unterstützen."
+        },
+        "self_frame_warning": false,
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "1.0",
+      "media_checked_at": "2026-09-05T09:18:31.212Z",
+      "first_seen": "2026-09-03T07:06:42.000Z",
+      "last_updated": "2026-09-05T09:18:31.212Z",
+      "version": 2,
+      "news_status": null,
+      "event_id": null,
+      "case_file": null,
+      "source_published_at": "2026-09-03T07:06:42.000Z",
+      "published_at": "2026-09-03T07:58:18.398Z",
+      "evidence_groups": null,
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/neues-foerderprogramm-mit-zehn-millionen-euro-fuer-projekte-in-ns-und-sed-gedenkstaetten-staatsminister-weimer-gerade-jetzt-orte-der-erinnerung-staerken--2451324",
+          "source_type": "official_rss",
+          "published_at": "2026-09-03T07:06:42.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e976be74e6481ea2",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-e2fde31855d5b9a4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-4626eea793f6da87-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-b15e04cac574461b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
+      "title": "Volkswagen: Aufsichtsrat stimmt Sparpaket von CEO Oliver Blume zu",
+      "source_summary": "Mehrere Berichte melden eine Einigung im Volkswagen-Aufsichtsrat über ein Spar- und Sanierungspaket. Genannt werden der Abbau von rund 50.000 weiteren Stellen und eine offene Zukunft für vier Werke, darunter Zwickau, Hannover und Neckarsulm. Einige Texte schreiben die Entscheidung als einstimmig. Einzelne Quellen zitieren Unternehmensangaben, wonach für bestimmte Standorte aktuell keine wettbewerbsfähige Folgebelegung gewährleistet werden könne; für andere Standorte werden alternative Nutzungsmöglichkeiten geprüft.\n\nDie Quellen enthalten außerdem Einordnungen von Politik und Konzernvertretern. Dabei wird beschrieben, dass die Entscheidung als Einschnitt oder historischer Umbau gesehen wird. Offen bleibt in den gelieferten Ausschnitten, wie die Stellenzahlen auf Marken und Standorte verteilt sind, welche Werke genau betroffen sind und welche konkreten nächsten Umsetzungsschritte folgen.",
+      "summary": "Mehrere Quellen melden, dass der VW-Aufsichtsrat einem Spar- und Sanierungsplan zugestimmt hat. Im Zentrum stehen rund 50.000 zusätzliche Stellenstreichungen und die unklare Zukunft mehrerer Werke.",
+      "detail_summary": "Gesichert ist nach den gelieferten Berichten vor allem die Zustimmung des VW-Aufsichtsrats zu einem Spar- und Sanierungsplan sowie der darin genannte Abbau von rund 50.000 Arbeitsplätzen. Mehrere Quellen nennen zusätzlich vier Werke mit offener Zukunft; eine Quelle führt Zwickau, Hannover und Neckarsulm als Standorte ohne aktuell gesicherte wettbewerbsfähige Folgebelegung an. Das ist für Beschäftigte, Standorte und Zulieferketten materiell relevant, weil es auf Eingriffe in Beschäftigung, Produktionsstruktur und Standortverteilung hinausläuft. Der Wirkpfad reicht von internen Kostensenkungen über Standortentscheidungen bis zu möglichen Folgen für regionale Arbeitsmärkte und industrielle Kapazitäten. Offen bleibt, welche Teile des Pakets tatsächlich umgesetzt werden, wie die Verteilung der Einschnitte ausfällt und ob daraus Werksschließungen, Umnutzungen oder andere Folgen entstehen. Die Evidenz ist belastbar für die Erstmeldung, aber nur als aggregierte Sekundärberichterstattung; unabhängige Primärbelege zum vollständigen Beschluss liegen in den Ausschnitten nicht vor.",
+      "why_relevant": "Die Meldung betrifft einen konzernweiten Eingriff in Beschäftigung und Standorte eines der größten Industrieunternehmen Europas. Das kann auf Arbeitsmärkte, regionale Wertschöpfung, Lieferketten und die industrielle Struktur in Deutschland ausstrahlen.",
+      "topic": [
+        "Geopolitik",
+        "Politik",
+        "Arbeit",
+        "Wirtschaft",
+        "Gesellschaft"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Beschäftigte und Regionen an mehreren Standorten; möglich sind Stellenabbau, Versetzungen und Unsicherheit über Werksperspektiven."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus den gelieferten Quellen ergibt sich kein belastbarer direkter Umweltfaktor; mögliche Produktionsverlagerungen bleiben offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Ein großer Konzernumbau mit Folgen für Standorte und Beschäftigung kann politische Korrekturfähigkeit und Tarifkonflikte berühren, ist aber hier vor allem wirtschaftlich belegt."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Stellenabbau",
+            "value": "50.000",
+            "unit": "Arbeitsplätze",
+            "context": "So viele weitere Stellen sollen wegfallen."
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "unternehmen",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Berichterstattung nutzt teils wertende und zugespitzte Formulierungen wie „radikale Umbrüche“, „umstritten“ oder „auf der Kippe“ bei einem zugleich belegten Beschluss des VW-Aufsichtsrats. Dadurch entsteht ein Resonanzraum für Rahmung und Deutung, ohne dass die zugrunde liegenden Ereignisfakten ",
+        "factual_core": "Belegt ist in den gelieferten Quellen die Zustimmung des VW-Aufsichtsrats zu einem Spar- und Sanierungsplan sowie der genannte Abbau von rund 50.000 weiteren Stellen; zudem bleibt die Zukunft mehrerer Werke offen.",
+        "speaker_statement": {
+          "present": true,
+          "speaker": "VW-Aufsichtsrat / Konzernangaben / journalistische Einordnung",
+          "statement": "Der Aufsichtsrat habe dem Sanierungsplan zugestimmt; für bestimmte Werke könne aktuell keine wettbewerbsfähige Folgebelegung gewährleistet werden; einzelne Berichte bezeichnen das Paket als radikal, umstritten oder als historische Zäsur.",
+          "status": "claim"
+        },
+        "framing": {
+          "detected": true,
+          "term": "radikale Umbrüche",
+          "origin_in_story": "Medium",
+          "media_usage": "headline",
+          "attribution_quality": "grundsätzlich attribuiert",
+          "factual_status": "Interpretation",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "resonance": {
+          "resonance_space": "Arbeitsplatzabbau, Standortunsicherheit und industrielle Umstrukturierung sind anschlussfähig für starke Deutungen in Wirtschaft, Politik und Regionen.",
+          "resonance_risk": "Die Zuspitzung kann den Eindruck einer bereits vollzogenen, maximalen Zäsur verstärken, obwohl Teile der Folgen in den Quellen noch offen bleiben.",
+          "normalization_potential": "Wiederholte Benennungen als ‚Sparpaket‘ oder ‚Sanierungsplan‘ können harte Einschnitte als betriebswirtschaftliche Routine erscheinen lassen.",
+          "repetition_effect": "Mehrere parallele Meldungen erhöhen die Vertrautheit mit der Rahmung, ersetzen aber keinen zusätzlichen Wirkungsbeleg.",
+          "trust_effect": "Bei erkennbar wertender Wortwahl kann das Vertrauen in die Trennschärfe zwischen Nachricht und Kommentar sinken, sofern Attribution und Faktenteil nicht klar getrennt sind.",
+          "polarization_potential": "Die Kombination aus Stellenabbau, Werkunsicherheit und zugespitzter Sprache kann polarisierende Lesarten zwischen Beschäftigten-, Standort- und Managementperspektiven begünstigen.",
+          "discourse_effect": "Der Diskurs verschiebt sich leicht von der Frage des Beschlusses hin zur Bewertung von Härte, Dramatik und politischer Tragweite des Sanierungsplans."
+        },
+        "impact_path": {
+          "first_order": "Lesende nehmen den Beschluss und die Größenordnung des Stellenabbaus als harte wirtschaftliche Maßnahme wahr.",
+          "second_order": "Die sprachliche Zuspitzung kann die Deutung als Krise, Einschnitt oder Bedrohung von Standorten verstärken.",
+          "third_order": "In der öffentlichen Debatte kann sich der Fokus auf industrielle Transformation, Beschäftigungssicherung und Standortpolitik weiter verfestigen."
+        },
+        "evidence": {
+          "status": "high",
+          "what_is_known": "Die Quellen belegen den Beschluss, den Stellenabbau und die offene Werkperspektive; außerdem enthalten sie wertende Überschriften und Einordnungen.",
+          "what_is_inferred": "Dass die Wortwahl die Wahrnehmung dramatisiert und den Deutungsrahmen verschiebt.",
+          "what_is_open": "Welche konkrete Wirkung die Formulierungen auf einzelne Zielgruppen hatten und ob redaktionelle Zuspitzung gegenüber nüchterner Sprache tatsächlich mehr Resonanz erzeugte."
+        },
+        "editorial_assessment": "Die Berichterstattung trennt den Beschluss nicht immer sauber von zugespitzter Einordnung; sachlich wäre eine strengere Attribution wertender Begriffe und eine klarere Trennung von Fakt und Deutung.",
+        "fact_first_reframe": {
+          "title": "VW-Aufsichtsrat billigt Spar- und Sanierungsplan mit weiterem Stellenabbau",
+          "source_summary": "Mehrere Berichte melden, dass der VW-Aufsichtsrat einem Spar- und Sanierungsplan zugestimmt hat. Genannt wird ein Abbau von rund 50.000 weiteren Stellen. Für mehrere Werke bleibt die künftige Nutzung offen; in einzelnen Berichten werden Zwickau, Hannover und Neckarsulm genannt.",
+          "summary": "Der VW-Aufsichtsrat hat laut mehreren Berichten einem Spar- und Sanierungsplan zugestimmt. Vorgesehen ist ein weiterer Abbau von rund 50.000 Stellen. Die Zukunft mehrerer Werke ist offen.",
+          "detail_summary": "Nach den gelieferten Berichten hat der VW-Aufsichtsrat dem vom Management vorgeschlagenen Spar- und Sanierungsplan zugestimmt. Im Zusammenhang damit wird ein weiterer Abbau von rund 50.000 Arbeitsplätzen genannt. Mehrere Quellen berichten außerdem, dass die Zukunft von vier Werken offen sei; in einzelnen Angaben werden Zwickau, Hannover und Neckarsulm als Standorte ohne gesicherte Folgebelegung genannt. Die Berichte enthalten zudem wertende Formulierungen und politische Einordnungen, die als journalistische Deutung kenntlich bleiben sollten. Offen bleibt in den Ausschnitten, wie die Maßnahmen konkret umgesetzt werden und welche Standorte in welcher Form betroffen sind."
+        },
+        "self_frame_warning": false,
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "Es liegen mindestens zwei unterschiedliche journalistische Darstellungen vor, die den Beschluss und den Stellenabbau übereinstimmend berichten; die Vergleichsbasis reicht damit für einen Medien- und Sprachwirkungscheck."
+        }
+      },
+      "media_analysis_version": "1.0",
+      "media_checked_at": "2026-09-05T09:18:31.212Z",
+      "first_seen": "2026-09-03T19:08:00.000Z",
+      "last_updated": "2026-09-05T09:18:31.212Z",
+      "version": 6,
+      "news_status": "preliminary",
+      "event_id": "event-06fbdda38e40a97f5340",
+      "case_file": null,
+      "source_published_at": "2026-09-03T18:53:18.000Z",
+      "published_at": "2026-09-04T01:52:37.203Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "spiegel-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ],
+          [
+            "mdr-nachrichten",
+            "mdr-nachrichten"
+          ],
+          [
+            "swr-aktuell"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 8,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "mdr-nachrichten",
+              "mdr-nachrichten"
+            ],
+            "reason": "same_publisher"
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Wie viele Stellen werden tatsächlich sozialverträglich oder betriebsbedingt abgebaut?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Personalzahlen und Personalmaßnahmen je Standort",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-aaafd43ff7f2b06d",
+          "announced_at": "2026-09-04T01:33:27.000Z",
+          "follow_up_date": "2026-09-11T01:52:37.203Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob und wann die in den Berichten genannten vier Werke eine alternative Folgebelegung erhalten.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Benannte Standortentscheidungen oder neue Nutzungen für die vier Werke",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-61fad9a0b5152cd5",
+          "announced_at": "2026-09-03T23:24:43.000Z",
+          "follow_up_date": "2026-09-11T03:52:03.346Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "VW konkretisiert die Folgebelegung der vier betroffenen Werke.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Benennung neuer Nutzungen, Verlagerungen oder Schließungspläne für die Standorte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-000d17580dae3bc3",
+          "announced_at": "2026-09-04T04:27:36.000Z",
+          "follow_up_date": "2026-09-11T05:43:38.218Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob und wann die angekündigten Stellenabbaumaßnahmen konkret umgesetzt werden",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Umsetzungsbeschlüsse, Sozialplan-Schritte oder Kündigungszahlen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8e5c5bbe0cd8eace",
+          "announced_at": "2026-09-03T19:08:00.000Z",
+          "follow_up_date": "2026-09-11T10:56:05.208Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:08:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T19:58:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T09:23:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T20:55:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T18:53:18.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T20:34:25.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T06:01:51.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T05:31:08.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-produktion-zwickau-aufsichtsrat-stellenabbau-kretschmer-panter,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T10:03:38.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-edd4484465895b46",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
+      "title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
+      "source_summary": "France 24 beschreibt die Flucht eines nepalesischen Arbeiters aus einem Tunnel eines Wasserkraftprojekts nach einer schweren Überschwemmung. Der Bericht verbindet diese Schilderung mit der Angabe, dass in Nepal rund 900 Arbeiter in Tunneln an sechs Wasserkraftwerken feststecken sollen.\n\nZugleich nennt die Quelle eine steigende Zahl Vermisster im Zusammenhang mit dem Himalaya-Desaster. Die Zahl wird mit 5,624 angegeben und den zuständigen nepalesischen und chinesischen Behörden zugeschrieben. Weitere Details zur Lage der Eingeschlossenen oder zu Rettungserfolgen bleiben in den gelieferten Textstellen offen.",
+      "summary": "Ein Arbeiter schildert seine Flucht aus einem gefluteten Tunnel in Nepal. Parallel nennt der Bericht weiter rund 900 Eingeschlossene und 5,624 Vermisste.",
+      "detail_summary": "Gesichert aus der gelieferten Quelle ist zunächst die Schilderung eines Arbeiters, der nach einer schweren Überschwemmung aus einem Tunnel eines Wasserkraftprojekts entkam. Der Bericht nennt außerdem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken und verweist auf 5,624 Vermisste im Zusammenhang mit dem Himalaya-Desaster. Das ist für die Nachricht relevant, weil es auf eine fortdauernde Gefährdungslage für viele Beschäftigte und auf eine größere Katastrophe mit möglichem Rettungs- und Koordinationsbedarf hinweist. Der Wirkpfad liegt vor allem in akuter Gefahrenabwehr, Einsatzlogistik und möglichen Verzögerungen oder Ausfällen im Wasserkraftbetrieb. Als mögliche Folge kommen weitere Rettungsaktionen, längere Unterbrechungen und zusätzliche Belastungen für die betroffenen Regionen in Frage. Die Evidenz bleibt jedoch begrenzt, weil im Datensatz nur diese eine journalistische Quelle vorliegt und die genaue Lage der Eingeschlossenen offen bleibt.",
+      "why_relevant": "Die Meldung betrifft eine große Zahl potenziell akut gefährdeter Arbeiter und eine laufende Katastrophenlage mit Rettungs- und Infrastrukturbezug.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Viele Beschäftigte sollen eingeschlossen sein; für die Betroffenen geht es um unmittelbare Sicherheit und Rettung."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Überschwemmung betrifft Wasserkraftanlagen und damit Infrastruktur an einem Umwelt- und Klimarisiko-Knoten."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Direkte demokratische Folgen sind aus der Quelle nicht ersichtlich; relevant wären vor allem Behördenkommunikation und Krisensteuerung."
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Titel nutzt eine dramatisierende Formulierung, und ein Betroffenenbericht steht prominent im Vordergrund; dadurch entsteht ein Resonanzraum für Katastrophenrahmung, ohne dass der Trigger selbst ein Befund ist.",
+        "factual_core": "Ein nepalesischer Arbeiter berichtet von seiner Flucht aus einem überfluteten Tunnel eines Wasserkraftprojekts. Die Quelle nennt zudem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken und 5,624 Vermisste im Zusammenhang mit dem Himalaya-Desaster.",
+        "speaker_statement": {
+          "present": true,
+          "speaker": "ein nepalesischer Arbeiter",
+          "statement": "Er schildert seine Flucht aus dem gefluteten Tunnel nach der Überschwemmung.",
+          "status": "fact"
+        },
+        "framing": {
+          "detected": true,
+          "term": "‘Fight through darkness, water’ / flood-hit tunnel / devastating flood / disaster",
+          "origin_in_story": "Medium und zitierte Betroffenenperspektive",
+          "media_usage": "multiple",
+          "attribution_quality": "grundsätzlich attribuiert",
+          "factual_status": "Aussage eines Akteurs",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "resonance": {
+          "resonance_space": "Katastrophen- und Gefahrenberichterstattung, Arbeitsschutz, Rettungs- und Krisenlogistik",
+          "resonance_risk": "Die dramatische Wortwahl kann die akute Gefährdungslage verstärken und den Eindruck einer umfassenderen Krise verdichten; das ist ein Wirkpotenzial, kein Wirkbeleg.",
+          "normalization_potential": "Wiederholte Verwendung des Katastrophen- und Desaster-Vokabulars kann die Rahmung als außergewöhnliche Dauerkrise stabilisieren.",
+          "repetition_effect": "Bei häufiger Wiederholung kann sich die Formulierung als naheliegender Deutungsrahmen einprägen; ein Illusory-Truth-Risiko ist möglich.",
+          "trust_effect": "Die klare Zuschreibung an einen Betroffenen kann Glaubwürdigkeit stützen; die starke Dramatisierung kann zugleich Distanz oder Übererregung fördern.",
+          "polarization_potential": "Gering; der Text ist vor allem auf Gefahren- und Betroffenenperspektive ausgerichtet, nicht auf politische Konfliktzuschreibung.",
+          "discourse_effect": "Der Beitrag lenkt Aufmerksamkeit auf Rettung, Sicherheitslage und die Größe des Schadens; die mediale Verdichtung kann die Wahrnehmung der Lage zuspitzen."
+        },
+        "impact_path": {
+          "first_order": "Leser:innen nehmen die Fluchtgeschichte und die Zahl der Eingeschlossenen als Hinweis auf eine akute Gefahrenlage wahr.",
+          "second_order": "Das kann die Erwartung nach weiteren Rettungsmaßnahmen, Sicherheitsprüfungen und Behördenreaktionen erhöhen.",
+          "third_order": "Bei fortgesetzter Rahmung in ähnlicher Sprache kann sich die Katastrophenperspektive im öffentlichen Diskurs verfestigen; das bleibt ein Wirkungspotenzial."
+        },
+        "evidence": {
+          "status": "medium",
+          "what_is_known": "Der Artikel berichtet über einen geretteten Arbeiter, nennt eingeschlossene Arbeiter und verweist auf steigende Vermisstenzahlen.",
+          "what_is_inferred": "Die mediale Form kann die Wahrnehmung der Lage als besonders dramatisch und akut beeinflussen.",
+          "what_is_open": "Ob die Lage vor Ort tatsächlich so weitreichend und aktuell ist, wie die Formulierungen nahelegen, lässt sich aus nur einer journalistischen Quelle nicht verifizieren."
+        },
+        "editorial_assessment": "Dramatisierende Überschrift und Katastrophenvokabular setzen einen starken Gefahrenrahmen; die Betroffenenstimme ist klar attribuiert, aber die mediale Verdichtung ist hoch.",
+        "fact_first_reframe": {
+          "title": "Nepalesischer Arbeiter berichtet von Flucht aus überflutetem Tunnel",
+          "source_summary": "France 24 berichtet über einen nepalesischen Arbeiter, der nach einer schweren Überschwemmung aus einem Tunnel eines Wasserkraftprojekts entkam. Die Quelle nennt außerdem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken sowie 5,624 Vermisste nach Angaben nepalesischer und chinesischer Behörden.",
+          "summary": "Ein Arbeiter schildert seine Flucht aus einem gefluteten Tunnel in Nepal. Der Bericht erwähnt zugleich weitere eingeschlossene Arbeiter und steigende Vermisstenzahlen im Zusammenhang mit der Überschwemmung.",
+          "detail_summary": "Nach Angaben des Berichts entkam ein nepalesischer Arbeiter aus einem überfluteten Tunnel eines Wasserkraftprojekts. France 24 verweist außerdem auf rund 900 Arbeiter, die in Tunneln an sechs Wasserkraftwerken eingeschlossen sein sollen, sowie auf 5,624 Vermisste, die den zuständigen Behörden zugeschrieben werden. Die Nachricht ist vor allem eine Lage- und Betroffenenmeldung; die genaue Situation der Eingeschlossenen bleibt in den gelieferten Textstellen offen."
+        },
+        "self_frame_warning": false,
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "1.0",
+      "media_checked_at": "2026-09-05T09:18:31.212Z",
+      "first_seen": "2026-09-03T17:22:20.000Z",
+      "last_updated": "2026-09-05T09:18:31.212Z",
+      "version": 3,
+      "news_status": "preliminary",
+      "event_id": "event-4d4eabf7fc99346b711e",
+      "case_file": null,
+      "source_published_at": "2026-09-03T17:22:20.000Z",
+      "published_at": "2026-09-03T23:37:36.842Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Bleibt die Zahl der eingeschlossenen Arbeiter bei den betroffenen Anlagen bei rund 900 oder ändert sie sich durch Rettungen?",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Aktualisierte Angaben zu geretteten, eingeschlossenen oder vermissten Arbeitern",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ec940d1e5c0ccd65",
+          "announced_at": "2026-09-03T17:22:20.000Z",
+          "follow_up_date": "2026-09-10T23:37:36.842Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/asia-pacific/20260903-fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T17:22:20.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-bba0a3bb9ff283b4",
       "title_image": {
@@ -172,361 +1256,6 @@
           "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
           "source_type": "media_rss",
           "published_at": "2026-09-05T06:51:02.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-33e396f2be1a3a1f",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-aca6888da178b3ac-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-a7f4366a5d6a9fc2-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-e2c41fab14e0acf8-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
-      "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-      "source_summary": "Nach mehreren Angriffen auf das Stromnetz meldeten Medien am Freitag einen Polizeieinsatz in Sachsen. Innenminister Armin Schuster sagte, die Hinweise auf Sabotage hätten sich aus einem Bekennerschreiben ergeben; die Polizei habe daraufhin Suchmaßnahmen eingeleitet.\n\nIn den Berichten heißt es, die Polizeikräfte hätten an zwei Fundorten vier Objekte gesichert. Zugleich wurde auf einen großen Einsatz nördlich von Bautzen und auf eine Suche im Wald bei Schleife verwiesen. Mehrere Quellen berichten außerdem, dass weiter nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen gefahndet werde. Zu Art und Gefährlichkeit der Gegenstände blieben die Behörden zunächst zurückhaltend.",
-      "summary": "Ermittler haben in Sachsen vier gesicherte Objekte an zwei Fundorten gemeldet. Parallel läuft weiter die Fahndung nach einem 48-jährigen Verdächtigen aus Nordrhein-Westfalen.",
-      "detail_summary": "Bestbelegt ist derzeit, dass die Polizei in Sachsen an zwei Fundorten vier Objekte gesichert hat und der Einsatz im Umfeld der jüngsten Stromnetz-Sabotage steht. Innenminister Schuster ordnete die Ermittlungen über ein Bekennerschreiben und sofort eingeleitete Suchmaßnahmen ein. Mehrere Medien berichten außerdem von einer laufenden Fahndung nach einem 48-jährigen Tatverdächtigen aus Nordrhein-Westfalen. Für die Einordnung ist wichtig: Gesichert ist damit ein polizeilicher Einsatz mit möglichem Bezug zu den früheren Vorfällen, nicht abschließend die Gefährlichkeit oder genaue Herkunft der Objekte. Materiell relevant ist das, weil es um kritische Energieinfrastruktur, Sicherheitslage und mögliche Folgeeinsätze geht. Offen bleibt, ob und wie direkt die Funde mit den Sabotageakten verbunden sind.",
-      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Ermittlungen und mögliche Sicherheitsfolgen über Sachsen hinaus.",
-      "topic": [
-        "Energie",
-        "Arbeit",
-        "Wirtschaft",
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Der Vorgang betrifft öffentliche Sicherheit, mögliche Gefährdung an kritischer Infrastruktur und eine laufende Fahndung."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umwelt- oder Klimawirkpfad."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Relevant sind staatliche Schutzfähigkeit, Informationslage der Behörden und die Korrekturfähigkeit im Sicherheitsfall."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "gesicherte Objekte",
-            "value": "vier",
-            "unit": "Objekte",
-            "context": "An zwei Fundorten gesicherte Gegenstände"
-          },
-          {
-            "label": "Fundorte",
-            "value": "zwei",
-            "unit": "Fundorte",
-            "context": "Polizeikräfte sicherten an zwei Orten"
-          },
-          {
-            "label": "Tatverdächtiger",
-            "value": "48-jährigen",
-            "unit": "Jahre",
-            "context": "Fahndung nach dem Verdächtigen"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "haushalte"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "offen"
-        }
-      },
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "first_seen": "2026-09-04T18:13:49.000Z",
-      "last_updated": "2026-09-05T07:06:38.447Z",
-      "version": 3,
-      "news_status": "developing",
-      "event_id": "event-b3909a98d9ba9b7edf64",
-      "case_file": {
-        "case_id": "case-4dc00cde414b35",
-        "member_count": 15,
-        "publisher_count": 14,
-        "members": [
-          {
-            "story_id": "wt-33e396f2be1a3a1f",
-            "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
-            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-            "summary": "Ermittler haben in Sachsen vier gesicherte Objekte an zwei Fundorten gemeldet. Parallel läuft weiter die Fahndung nach einem 48-jährigen Verdächtigen aus Nordrhein-Westfalen.",
-            "updated_at": "2026-09-05T07:06:38.447Z",
-            "published_at": "2026-09-04T19:51:20.503Z",
-            "kind": "Ermittlungsstand",
-            "current": true
-          },
-          {
-            "story_id": "wt-00fccb632042b492",
-            "slug": "sabotage-an-umspannwerken-polizei-fahndet-nach-verdachtigem-42b492",
-            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
-            "summary": "Die Polizei fahndet nach einem Mann aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen gegen Stromanlagen. Laut Bericht halten Ermittler zwei Bekennerschreiben wegen ihres Täterwissens für authentisch, die Unterschrift ist aber noch nicht abschließend geklärt.",
-            "updated_at": "2026-09-05T06:39:06.202Z",
-            "published_at": "2026-09-04T12:08:21.972Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-a5874ae28ed5533f",
-            "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
-            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
-            "summary": "Die Polizei hat den Hambacher Forst nach einer Suche ohne Treffer wieder verlassen. Der WDR ordnet den Einsatz den Ermittlungen zu Sabotage an Stromanlagen zu.",
-            "updated_at": "2026-09-04T21:36:31.936Z",
-            "published_at": "2026-09-04T17:37:24.324Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-03c6bacdda808696",
-            "slug": "sabotage-am-stromnetz-sprengstoff-in-wohnung-von-verdachtigem-gefunden-808696",
-            "title": "Sabotage am Stromnetz: Sprengstoff in Wohnung von Verdächtigem gefunden",
-            "summary": "Die Polizei sucht einen 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden, während die Zuordnung der Bekennerschreiben weiter geprüft wird.",
-            "updated_at": "2026-09-04T18:22:40.051Z",
-            "published_at": "2026-09-04T18:22:40.051Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-a6f6c9c60011b50c",
-            "slug": "angriffe-auf-umspannwerke-polizei-sucht-verdachtigen-daniel-v-11b50c",
-            "title": "Angriffe auf Umspannwerke: Polizei sucht Verdächtigen Daniel V.",
-            "summary": "Die Polizei fahndet nach Daniel V.; sein Lkw wurde am Hambacher Forst gefunden. Ein Bekennerschreiben und weitere Polizeieinsätze verknüpfen den Fall mit Angriffen auf Umspannwerke.",
-            "updated_at": "2026-09-04T17:41:54.741Z",
-            "published_at": "2026-09-04T17:41:54.741Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-60f4e4d7d43fad99",
-            "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
-            "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
-            "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. In dessen Umfeld wurden ein Fahrzeug gestürmt und sprengstoffverdächtige Gegenstände gefunden.",
-            "updated_at": "2026-09-04T17:41:38.182Z",
-            "published_at": "2026-09-04T17:41:38.182Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-cb1584ee4d9e6a43",
-            "slug": "stromversorgung-reul-polizei-sturmt-fahrzeug-von-sabotage-verdachtigem-9e6a43",
-            "title": "Stromversorgung: Reul: Polizei stürmt Fahrzeug von Sabotage-Verdächtigem",
-            "summary": "Die Polizei hat laut NRW-Innenminister Reul das Fahrzeug eines Sabotage-Verdächtigen gestürmt. Der Zugriff soll in Niederzier erfolgt sein, der Mann sei nun vermutlich zu Fuß unterwegs.",
-            "updated_at": "2026-09-04T16:09:09.120Z",
-            "published_at": "2026-09-04T16:09:09.120Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-1fbb056ccaaf351d",
-            "slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
-            "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
-            "summary": "Die Polizei sucht bundesweit nach einem 48-jährigen Verdächtigen aus Gevelsberg im Zusammenhang mit Sabotage an der Energieversorgung. Ein Deutschlandfunk-Bericht nennt Bekennerschreiben, die die Ermittler für authentisch halten.",
-            "updated_at": "2026-09-04T15:52:29.187Z",
-            "published_at": "2026-09-04T11:12:12.390Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-5547189d2645384a",
-            "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
-            "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
-            "summary": "In Gevelsberg lief ein SEK-Einsatz im Zusammenhang mit den Ermittlungen zu den Angriffen auf Umspannwerke. Der gesuchte 48-Jährige wurde dort nicht angetroffen, in seiner Wohnung fanden Ermittler sprengstoffverdächtige Stoffe.",
-            "updated_at": "2026-09-04T15:29:14.683Z",
-            "published_at": "2026-09-04T13:23:17.993Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-7ae0b9f22404b684",
-            "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
-            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
-            "updated_at": "2026-09-04T14:13:53.288Z",
-            "published_at": "2026-09-03T23:06:38.718Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-4fb94d2cebfca746",
-            "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-            "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
-            "summary": "In Dormagen wurde an einem Umspannwerk ein verdächtiger Gegenstand gefunden. Die Polizei stuft den Fall nach einem Bekennerschreiben als möglichen Sabotagefall ein und fahndet nach einem Mann aus Gevelsberg.",
-            "updated_at": "2026-09-04T11:11:50.847Z",
-            "published_at": "2026-09-04T01:53:14.028Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-f3d585eac14dec76",
-            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
-            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-            "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
-            "updated_at": "2026-09-04T10:21:35.407Z",
-            "published_at": "2026-09-04T02:07:51.145Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-7b385f58748f3d32",
-            "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
-            "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
-            "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
-            "updated_at": "2026-09-04T10:09:13.371Z",
-            "published_at": "2026-09-04T10:09:13.371Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-b9487671699d6c9b",
-            "slug": "ermittler-untersuchen-bekennerschreiben-aus-nrw-9d6c9b",
-            "title": "Ermittler untersuchen Bekennerschreiben aus NRW",
-            "summary": "Der WDR meldet zwei Bekennerschreiben im Umfeld von Angriffen auf Umspannwerke. Die Ermittlungen prüfen Echtheit und mögliche Zusammenhänge in NRW und Brandenburg.",
-            "updated_at": "2026-09-04T01:53:45.231Z",
-            "published_at": "2026-09-04T01:53:45.231Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          },
-          {
-            "story_id": "wt-9812656e38b0d665",
-            "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
-            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
-            "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
-            "updated_at": "2026-09-03T22:22:49.015Z",
-            "published_at": "2026-09-03T22:22:49.015Z",
-            "kind": "Ermittlungsstand",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-04T18:13:49.000Z",
-      "published_at": "2026-09-04T19:51:20.503Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "wiwo-schlagzeilen"
-          ],
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 4,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "mdr-nachrichten",
-              "mdr-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die gesicherten Objekte tatsächlich entschärft werden und welche Sprengwirkung sie haben, soll die Polizei später präzisieren.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Bestätigung zu Entschärfung, Art und Gefährlichkeit der Objekte",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-596c5c287d66ce50",
-          "announced_at": "2026-09-04T19:28:00.000Z",
-          "follow_up_date": "2026-09-11T19:51:20.503Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Weitere Angaben der Polizei zu Art, Gefährlichkeit und Herkunft der gesicherten Objekte",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Benennung der Objekte oder offizielle Entschärfungs- bzw. Sicherungsdetails",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-7a8ae6d9fecdaefe",
-          "announced_at": "2026-09-04T18:27:06.000Z",
-          "follow_up_date": "2026-09-12T07:06:38.447Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:13:49.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:15:11.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:28:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:30:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:27:06.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-lausitz-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T07:02:53.000Z",
           "primary_source": false
         }
       ]
@@ -1270,90 +1999,6 @@
           "url": "https://www.deutschlandfunk.de/hacker-veroeffentlichen-nach-angriff-daten-aus-berliner-it-netz-im-darknet-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T17:11:33.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-f7d7115a53ff2c2f",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f7d7115a53ff2c2f-1f99eadcac2178e4-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f7d7115a53ff2c2f-6a2182179b8071cc-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f7d7115a53ff2c2f-abd30cef622acbbe-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
-      "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
-      "source_summary": "Der Tagesspiegel berichtet unter der Überschrift, dass jedes fünfte Unternehmen hybride Bedrohung spürt. Genannt werden Cyberangriffe, Desinformation, Spionage und Sabotage als Felder, in denen Wirtschaftsforscher wachsende Risiken sehen.\n\nDer Text nennt als Beispiele mögliche Folgen für die Versorgung mit Strom und Wasser. Außerdem heißt es, dass es beim Thema Schutzmaßnahmen deutliche Hinweise gebe. Weitere Details zu Methodik, Zeitraum oder betroffenen Branchen sind in dem vorliegenden Auszug nicht enthalten.",
-      "summary": "Wirtschaftsforscher sehen laut Bericht wachsende hybride Risiken für Unternehmen. Genannt werden unter anderem mögliche Auswirkungen auf Strom- und Wasserversorgung.",
-      "detail_summary": "Der gesicherte Kern ist ein Bericht über wachsende hybride Bedrohungen für Unternehmen, genannt werden Cyberangriffe, Desinformation, Spionage und Sabotage. Als betroffene Infrastruktur werden Strom und Wasser ausdrücklich erwähnt. Das ist materiell relevant, weil solche Risiken nicht nur einzelne Firmen, sondern potenziell Versorgungsketten und damit Resilienz betreffen können. Der Wirkpfad liegt in Störungen, Schutzaufwand und möglichen Ausfällen, die Kosten, Abläufe und Sicherheitsstandards verändern können. Offen bleibt, auf welcher Datengrundlage die Aussage „jedes fünfte Unternehmen“ beruht und wie breit die Befunde tatsächlich reichen. Mangels Originalstudie und unabhängiger Zweitquelle bleibt die Einordnung vorläufig.",
-      "why_relevant": "Die Meldung betrifft potenzielle Störungen kritischer Infrastruktur und damit Zustände, die für Wirtschaft und Versorgungssysteme relevant sind.",
-      "topic": [
-        "Klima",
-        "Energie",
-        "Digitalisierung",
-        "Wirtschaft",
-        "Demokratie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Mögliche Folgen für Betriebe, Arbeitsabläufe und Versorgungssicherheit werden angesprochen, aber im Auszug nicht quantifiziert."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug wird nicht belegt; nur indirekte Folgen über Infrastrukturstörungen sind möglich."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Desinformation und Sabotage berühren Informationsintegrität und Schutz der öffentlichen Infrastruktur, konkrete demokratische Effekte bleiben offen."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "first_seen": "2026-09-05T03:02:35.000Z",
-      "last_updated": "2026-09-05T03:07:38.569Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-f4d2465f230d13357c75",
-      "case_file": null,
-      "source_published_at": "2026-09-05T03:02:35.000Z",
-      "published_at": "2026-09-05T03:07:38.569Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "tagesspiegel-home"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T03:02:35.000Z",
           "primary_source": false
         }
       ]
@@ -4668,370 +5313,6 @@
       ]
     },
     {
-      "story_id": "wt-6267bf5562aa70a6",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-16d780429e3d8f24-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-72fc6926c6403e04-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6267bf5562aa70a6-35a0ab9208e91b5a-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "fluggaste-evakuiert-nach-gefahrengut-alarm-flugverkehr-lauft-wieder-regular-aa70a6",
-      "title": "Fluggäste evakuiert: Nach Gefahrengut-Alarm: Flugverkehr läuft wieder regulär",
-      "source_summary": "Am BER gab es am Donnerstagabend einen Gefahrgut-Alarm, nachdem eine Frau bei einer Service-Stelle angegeben hatte, sie habe einen gefährlichen Stoff dabei. Daraufhin räumte die Polizei den öffentlichen Bereich von Terminal 1. Der Flugbetrieb wurde nach Angaben des Flughafens nicht eingestellt, es kam aber zu Verzögerungen, einzelnen Ausfällen und einer Verlagerung der Abfertigung nach Terminal 2.\n\nSpäter am Abend gab es Entwarnung; das Terminal wurde gegen 20:45 Uhr wieder freigegeben. Am Freitagmorgen lief der Flugverkehr laut Bericht wieder regulär, nur wenige Flüge fielen aus. Auch der Zugverkehr zwischen Schönefeld und dem BER war zwischenzeitlich unterbrochen und danach wieder im Fahrplan. Die Polizei nannte keine Angaben zum untersuchten Stoff und sagte, nach bisherigen Erkenntnissen habe zu keinem Zeitpunkt eine Gefahr bestanden.",
-      "summary": "Am BER meldete eine Frau einen gefährlichen Stoff, worauf Terminal 1 zeitweise geräumt wurde. Danach lief der Flugverkehr wieder regulär, einzelne Ausfälle und eine kurze Unterbrechung des Zugverkehrs blieben aber berichtet.",
-      "detail_summary": "Gesichert ist zunächst der Ablauf: Eine Frau meldete am BER einen gefährlichen Stoff, die Polizei räumte daraufhin den öffentlichen Bereich von Terminal 1, und nach der Kontrolle wurde das Terminal wieder freigegeben. Der Flugbetrieb lief laut Bericht weiter, wurde aber vorübergehend gestört; für den Freitagmorgen wird wieder regulärer Betrieb mit wenigen Ausfällen beschrieben. Auch der Zugverkehr zwischen Schönefeld und dem Flughafen war zeitweise unterbrochen. Für die Einordnung ist wichtig, dass der berichtete Kern ein Sicherheits- und Betriebsereignis ist, kein dauerhafter Ausfall. Der mögliche Wirkpfad liegt vor allem in kurzfristigen Störungen von Abläufen, Personalbindung und Umleitungen von Passagieren. Eine weitergehende Wirkung auf Infrastruktur oder Verhalten bleibt offen, weil die Belege dazu nur den akuten Einsatz und seine unmittelbaren Folgen zeigen.",
-      "why_relevant": "Der Vorfall betrifft einen zentralen Verkehrsknoten mit kurzfristigen Störungen für Passagiere und Betriebsabläufe. Materiell relevant ist vor allem die Kombination aus Räumung, Flugfolgen und zeitweiser Unterbrechung des Bahnanschlusses.",
-      "topic": [
-        "Gesellschaft",
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Kurzfristige Beeinträchtigung von Reisenden, Personal und Anschlussmobilität; keine Hinweise auf länger anhaltende Schäden."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen oder Materialflüsse mit relevanter Planetwirkung."
-        },
-        "democracy": {
-          "relevance": "offen",
-          "rationale": "Kein direkter Bezug zu demokratischer Willensbildung oder Korrekturfähigkeit erkennbar."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "first_seen": "2026-09-04T05:44:22.000Z",
-      "last_updated": "2026-09-04T11:13:05.344Z",
-      "version": 2,
-      "news_status": "updated",
-      "event_id": "event-993d57cff20b05016759",
-      "case_file": null,
-      "source_published_at": "2026-09-04T05:44:22.000Z",
-      "published_at": "2026-09-04T06:37:20.682Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "stern-schlagzeilen"
-            ],
-            "reason": "shared_wording_possible_syndication"
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die Untersuchung des gemeldeten Stoffes neue Details ergibt.",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Behörden- oder Flughafenangaben zu Art, Ergebnis und Ursache der Meldung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-160ba57b85cf83d5",
-          "announced_at": "2026-09-04T06:35:39.000Z",
-          "follow_up_date": "2026-09-11T06:37:20.682Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob die angekündigten Ergebnisse der Untersuchung in den kommenden Tagen eine andere Einordnung des Vorfalls ergeben.",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue behördliche Angaben zum untersuchten Stoff oder zur Gefahrenlage",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-c2d7d1a1c3e7a8b0",
-          "announced_at": "2026-09-04T08:13:24.000Z",
-          "follow_up_date": "2026-09-11T11:13:05.344Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/fluggaeste-evakuiert--nach-gefahrengut-alarm--flugverkehr-laeuft-wieder-regulaer-38206360.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:44:22.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-fluggaste-evakuiert-16016273.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:45:34.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T08:13:24.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-e976be74e6481ea2",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-e2fde31855d5b9a4-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-4626eea793f6da87-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e976be74e6481ea2-b15e04cac574461b-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "volkswagen-aufsichtsrat-stimmt-sparpaket-von-ceo-oliver-blume-zu-481ea2",
-      "title": "Volkswagen: Aufsichtsrat stimmt Sparpaket von CEO Oliver Blume zu",
-      "source_summary": "Mehrere Berichte melden eine Einigung im Volkswagen-Aufsichtsrat über ein Spar- und Sanierungspaket. Genannt werden der Abbau von rund 50.000 weiteren Stellen und eine offene Zukunft für vier Werke, darunter Zwickau, Hannover und Neckarsulm. Einige Texte schreiben die Entscheidung als einstimmig. Einzelne Quellen zitieren Unternehmensangaben, wonach für bestimmte Standorte aktuell keine wettbewerbsfähige Folgebelegung gewährleistet werden könne; für andere Standorte werden alternative Nutzungsmöglichkeiten geprüft.\n\nDie Quellen enthalten außerdem Einordnungen von Politik und Konzernvertretern. Dabei wird beschrieben, dass die Entscheidung als Einschnitt oder historischer Umbau gesehen wird. Offen bleibt in den gelieferten Ausschnitten, wie die Stellenzahlen auf Marken und Standorte verteilt sind, welche Werke genau betroffen sind und welche konkreten nächsten Umsetzungsschritte folgen.",
-      "summary": "Mehrere Quellen melden, dass der VW-Aufsichtsrat einem Spar- und Sanierungsplan zugestimmt hat. Im Zentrum stehen rund 50.000 zusätzliche Stellenstreichungen und die unklare Zukunft mehrerer Werke.",
-      "detail_summary": "Gesichert ist nach den gelieferten Berichten vor allem die Zustimmung des VW-Aufsichtsrats zu einem Spar- und Sanierungsplan sowie der darin genannte Abbau von rund 50.000 Arbeitsplätzen. Mehrere Quellen nennen zusätzlich vier Werke mit offener Zukunft; eine Quelle führt Zwickau, Hannover und Neckarsulm als Standorte ohne aktuell gesicherte wettbewerbsfähige Folgebelegung an. Das ist für Beschäftigte, Standorte und Zulieferketten materiell relevant, weil es auf Eingriffe in Beschäftigung, Produktionsstruktur und Standortverteilung hinausläuft. Der Wirkpfad reicht von internen Kostensenkungen über Standortentscheidungen bis zu möglichen Folgen für regionale Arbeitsmärkte und industrielle Kapazitäten. Offen bleibt, welche Teile des Pakets tatsächlich umgesetzt werden, wie die Verteilung der Einschnitte ausfällt und ob daraus Werksschließungen, Umnutzungen oder andere Folgen entstehen. Die Evidenz ist belastbar für die Erstmeldung, aber nur als aggregierte Sekundärberichterstattung; unabhängige Primärbelege zum vollständigen Beschluss liegen in den Ausschnitten nicht vor.",
-      "why_relevant": "Die Meldung betrifft einen konzernweiten Eingriff in Beschäftigung und Standorte eines der größten Industrieunternehmen Europas. Das kann auf Arbeitsmärkte, regionale Wertschöpfung, Lieferketten und die industrielle Struktur in Deutschland ausstrahlen.",
-      "topic": [
-        "Geopolitik",
-        "Politik",
-        "Arbeit",
-        "Wirtschaft",
-        "Gesellschaft"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind Beschäftigte und Regionen an mehreren Standorten; möglich sind Stellenabbau, Versetzungen und Unsicherheit über Werksperspektiven."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus den gelieferten Quellen ergibt sich kein belastbarer direkter Umweltfaktor; mögliche Produktionsverlagerungen bleiben offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Ein großer Konzernumbau mit Folgen für Standorte und Beschäftigung kann politische Korrekturfähigkeit und Tarifkonflikte berühren, ist aber hier vor allem wirtschaftlich belegt."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Stellenabbau",
-            "value": "50.000",
-            "unit": "Arbeitsplätze",
-            "context": "So viele weitere Stellen sollen wegfallen."
-          }
-        ],
-        "affected_groups": [
-          "beschaeftigte",
-          "unternehmen",
-          "kommunen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "first_seen": "2026-09-03T19:08:00.000Z",
-      "last_updated": "2026-09-04T10:56:05.208Z",
-      "version": 5,
-      "news_status": "preliminary",
-      "event_id": "event-06fbdda38e40a97f5340",
-      "case_file": null,
-      "source_published_at": "2026-09-03T18:53:18.000Z",
-      "published_at": "2026-09-04T01:52:37.203Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "manager-magazin-news"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "wiwo-schlagzeilen"
-          ],
-          [
-            "spiegel-schlagzeilen"
-          ],
-          [
-            "tagesspiegel-home"
-          ],
-          [
-            "mdr-nachrichten",
-            "mdr-nachrichten"
-          ],
-          [
-            "swr-aktuell"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 8,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "mdr-nachrichten",
-              "mdr-nachrichten"
-            ],
-            "reason": "same_publisher"
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Wie viele Stellen werden tatsächlich sozialverträglich oder betriebsbedingt abgebaut?",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Offizielle Personalzahlen und Personalmaßnahmen je Standort",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-aaafd43ff7f2b06d",
-          "announced_at": "2026-09-04T01:33:27.000Z",
-          "follow_up_date": "2026-09-11T01:52:37.203Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob und wann die in den Berichten genannten vier Werke eine alternative Folgebelegung erhalten.",
-          "source_id": "swr-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Benannte Standortentscheidungen oder neue Nutzungen für die vier Werke",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-61fad9a0b5152cd5",
-          "announced_at": "2026-09-03T23:24:43.000Z",
-          "follow_up_date": "2026-09-11T03:52:03.346Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "VW konkretisiert die Folgebelegung der vier betroffenen Werke.",
-          "source_id": "swr-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Öffentliche Benennung neuer Nutzungen, Verlagerungen oder Schließungspläne für die Standorte",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-000d17580dae3bc3",
-          "announced_at": "2026-09-04T04:27:36.000Z",
-          "follow_up_date": "2026-09-11T05:43:38.218Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob und wann die angekündigten Stellenabbaumaßnahmen konkret umgesetzt werden",
-          "source_id": "manager-magazin-news",
-          "expected_by": null,
-          "measurable_indicator": "Veröffentlichte Umsetzungsbeschlüsse, Sozialplan-Schritte oder Kündigungszahlen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-8e5c5bbe0cd8eace",
-          "announced_at": "2026-09-03T19:08:00.000Z",
-          "follow_up_date": "2026-09-11T10:56:05.208Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "manager magazin",
-          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/volkswagen-aufsichtsrat-einigt-sich-auf-neue-sparmassnahmen-a-491660ee-eb72-4803-932c-b078f1a1cb97",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:08:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/wirtschaft/unternehmen/volkswagen-aufsichtsrat-sanierung-autobauer-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T19:58:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/auto/vw-aufsichtsrat-stimmt-sanierungsplan-zu-50.000-jobs-weg/100251906.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T09:23:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/wirtschaft/unternehmen/volkswagen-in-der-krise-aufsichtsrat-stimmt-sanierungsplan-zu-a-15d54295-2f6a-421c-b2f2-5c4aafbd8945",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T20:55:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/wirtschaft/uberraschende-einigung-in-wolfsburgvw-aufsichtsrat-stimmt-sanierungsplan-zu--weitere-50000-jobs-sollen-wegfallen-16015876.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T18:53:18.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-auslaufen-produktion-werk-zwickau-aufsichtsrat-termine-stellenabbau,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T20:34:25.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/heilbronn/vw-aufsichtsrat-stimmt-sanierungsplaenen-zu-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T06:01:51.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/volkswagen-aufsichtsrat-stimmt-sparpaket-und-stellenabbau-zu-108.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T05:31:08.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/deutschland/wirtschaft/volkswagen-produktion-zwickau-aufsichtsrat-stellenabbau-kretschmer-panter,vw-jobabbau-aufsichtsrat-werk-zwickau-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T10:03:38.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-c84116529aa2d23b",
       "title_image": {
         "mode": "editorial",
@@ -5356,99 +5637,6 @@
           "url": "https://www.deutschlandfunk.de/us-regierung-zieht-im-streit-um-briefwahl-erneut-vor-supreme-court-102.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T10:29:27.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-edd4484465895b46",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
-      "title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
-      "source_summary": "France 24 beschreibt die Flucht eines nepalesischen Arbeiters aus einem Tunnel eines Wasserkraftprojekts nach einer schweren Überschwemmung. Der Bericht verbindet diese Schilderung mit der Angabe, dass in Nepal rund 900 Arbeiter in Tunneln an sechs Wasserkraftwerken feststecken sollen.\n\nZugleich nennt die Quelle eine steigende Zahl Vermisster im Zusammenhang mit dem Himalaya-Desaster. Die Zahl wird mit 5,624 angegeben und den zuständigen nepalesischen und chinesischen Behörden zugeschrieben. Weitere Details zur Lage der Eingeschlossenen oder zu Rettungserfolgen bleiben in den gelieferten Textstellen offen.",
-      "summary": "Ein Arbeiter schildert seine Flucht aus einem gefluteten Tunnel in Nepal. Parallel nennt der Bericht weiter rund 900 Eingeschlossene und 5,624 Vermisste.",
-      "detail_summary": "Gesichert aus der gelieferten Quelle ist zunächst die Schilderung eines Arbeiters, der nach einer schweren Überschwemmung aus einem Tunnel eines Wasserkraftprojekts entkam. Der Bericht nennt außerdem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken und verweist auf 5,624 Vermisste im Zusammenhang mit dem Himalaya-Desaster. Das ist für die Nachricht relevant, weil es auf eine fortdauernde Gefährdungslage für viele Beschäftigte und auf eine größere Katastrophe mit möglichem Rettungs- und Koordinationsbedarf hinweist. Der Wirkpfad liegt vor allem in akuter Gefahrenabwehr, Einsatzlogistik und möglichen Verzögerungen oder Ausfällen im Wasserkraftbetrieb. Als mögliche Folge kommen weitere Rettungsaktionen, längere Unterbrechungen und zusätzliche Belastungen für die betroffenen Regionen in Frage. Die Evidenz bleibt jedoch begrenzt, weil im Datensatz nur diese eine journalistische Quelle vorliegt und die genaue Lage der Eingeschlossenen offen bleibt.",
-      "why_relevant": "Die Meldung betrifft eine große Zahl potenziell akut gefährdeter Arbeiter und eine laufende Katastrophenlage mit Rettungs- und Infrastrukturbezug.",
-      "topic": [
-        "Arbeit",
-        "Gesundheit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Viele Beschäftigte sollen eingeschlossen sein; für die Betroffenen geht es um unmittelbare Sicherheit und Rettung."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Die Überschwemmung betrifft Wasserkraftanlagen und damit Infrastruktur an einem Umwelt- und Klimarisiko-Knoten."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Direkte demokratische Folgen sind aus der Quelle nicht ersichtlich; relevant wären vor allem Behördenkommunikation und Krisensteuerung."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "first_seen": "2026-09-03T17:22:20.000Z",
-      "last_updated": "2026-09-04T10:22:39.505Z",
-      "version": 2,
-      "news_status": "preliminary",
-      "event_id": "event-4d4eabf7fc99346b711e",
-      "case_file": null,
-      "source_published_at": "2026-09-03T17:22:20.000Z",
-      "published_at": "2026-09-03T23:37:36.842Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "france24-en"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Bleibt die Zahl der eingeschlossenen Arbeiter bei den betroffenen Anlagen bei rund 900 oder ändert sie sich durch Rettungen?",
-          "source_id": "france24-en",
-          "expected_by": null,
-          "measurable_indicator": "Aktualisierte Angaben zu geretteten, eingeschlossenen oder vermissten Arbeitern",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-ec940d1e5c0ccd65",
-          "announced_at": "2026-09-03T17:22:20.000Z",
-          "follow_up_date": "2026-09-10T23:37:36.842Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "France 24",
-          "url": "https://www.france24.com/en/asia-pacific/20260903-fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T17:22:20.000Z",
           "primary_source": false
         }
       ]
@@ -7754,79 +7942,6 @@
           "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-windenergie-auf-see-gesetz-2451190",
           "source_type": "official_rss",
           "published_at": "2026-09-02T07:44:36.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-b2161abe6d0a2603",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b2161abe6d0a2603-d0fe0d59635be0c1-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "neues-forderprogramm-mit-zehn-millionen-euro-fur-projekte-in-ns-und-sed-gedenkstatten-st-0a2603",
-      "title": "Neues Förderprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten – Staatsminister Weimer: „Gerade jetzt Orte der Erinnerung stärken“",
-      "source_summary": "Der Beauftragte der Bundesregierung für Kultur und Medien hat ein neues Förderprogramm für Gedenkstätten und Erinnerungsorte zur NS-Terrorherrschaft und zur SED-Diktatur gestartet. Dafür sind im Regierungsentwurf des Bundeshaushalts 2027 insgesamt zehn Millionen Euro vorgesehen. Anträge können seit Veröffentlichung der Meldung eingereicht werden; die Bewerbungsfrist endet am 1. Oktober 2026. Über die Auswahl soll eine unabhängige Jury beraten, der frühestmögliche Projektbeginn ist der 1. Juli 2027.\n\nGefördert werden Vorhaben in drei Bereichen: Erhalt historischer Orte, Digitalisierung und digitale Lebenswelten sowie Vermittlung und anwendungsbezogene Forschung. Das Programm setzt die im November 2025 beschlossene neue Gedenkstättenkonzeption um. Kulturstaatsminister Wolfram Weimer erklärte zum Start, historische Orte, digitale Zugänge und zeitgemäße Bildungsangebote sollten unterstützt werden. Die Meldung führt außerdem aus, dass die bisherige Projektförderung verdoppelt werde.",
-      "summary": "Der Bund öffnet ein Förderprogramm für NS- und SED-Gedenkstätten. Veröffentlichbar ist eine Ex-ante-Einordnung zu Erinnerung, Bildung und demokratischer Resilienz.",
-      "detail_summary": "Fakt ist ein neues Bundesprogramm mit zehn Millionen Euro für Projekte in NS- und SED-Gedenkstätten. Bewerben können sich Gedenkstätten und Erinnerungsorte zur Aufarbeitung. Belegt sind Ziele wie Bewahrung historischer Orte und neue digitale Zugänge. Wirkungspotenzial liegt in Bildung, Teilhabe und demokratischer Erinnerungskultur. Eingetretene Wirkung, Reichweite und Qualität der Projekte sind noch offen.",
-      "why_relevant": "Gedenkstättenarbeit kann historisches Lernen, Betroffenenperspektiven, digitale Zugänge und demokratische Resilienz stärken.",
-      "topic": [
-        "Digitalisierung",
-        "Europa",
-        "Demokratie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Menschen können über Bildungsangebote, Erinnerung und Zugänglichkeit profitieren; tatsächliche Nutzung ist noch nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein materieller Umweltbezug ist im Material nicht erkennbar."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Aufarbeitung von NS-Terrorherrschaft und SED-Diktatur berührt demokratische Bildung, Erinnerung und Korrekturfähigkeit."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "first_seen": "2026-09-03T07:06:42.000Z",
-      "last_updated": "2026-09-03T07:58:18.398Z",
-      "version": 1,
-      "news_status": null,
-      "event_id": null,
-      "case_file": null,
-      "source_published_at": "2026-09-03T07:06:42.000Z",
-      "published_at": "2026-09-03T07:58:18.398Z",
-      "evidence_groups": null,
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/neues-foerderprogramm-mit-zehn-millionen-euro-fuer-projekte-in-ns-und-sed-gedenkstaetten-staatsminister-weimer-gerade-jetzt-orte-der-erinnerung-staerken--2451324",
-          "source_type": "official_rss",
-          "published_at": "2026-09-03T07:06:42.000Z",
           "primary_source": true
         }
       ]
