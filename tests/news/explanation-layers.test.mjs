@@ -14,10 +14,13 @@ test("Erklärungsebenen: unverändertes Ticker-Versprechen und kompakte Leselogi
   assert.ok(html.includes("Automatisch aktualisierte Nachrichten, quellengebunden geprüft"));
 });
 
-test("Erklärungsebenen: sechs Methodikfragen vor bestehender fachlicher Vertiefung", () => {
+test("Erklärungsebenen: konkretes Methodikbeispiel und sechs Prüfschritte vor fachlicher Vertiefung", () => {
   const html = read("methodik/index.html");
-  for (const text of ["Vorwirkung", "Wirkung ermitteln", "Evidenz &amp; Zurechnung", "Bewertung", "Schutz &amp; Systemprüfung", "Rückkopplung &amp; Lernen", "Fachlich vertieft", "staatliche-nachhaltigkeitsarchitektur", "materialitaet-statt-rechtsform"]) assert.ok(html.includes(text), text);
-  assert.ok(html.indexOf("Sechs Fragen") < html.indexOf("Fachlich vertieft"));
+  for (const text of ["Ein Bus mehr. Aber auch eine Verbesserung?", "Gedankenexperiment", "Wirkungspotenzial", "Wirkungsrisiko", "Problem prüfen", "Ziel prüfen", "Wirkpfade prüfen", "Blinde Stellen suchen", "Optionen unter gleichen Bedingungen vergleichen", "Entscheiden und nachprüfen", "Nichtkompensation", "Reverse Merit Order", "Beobachten → Annahmen prüfen → Entscheidung anpassen", "Vom Überblick zur Fachgrundlage", "staatliche-nachhaltigkeitsarchitektur", "materialitaet-statt-rechtsform"]) assert.ok(html.includes(text), text);
+  const steps = html.match(/<ol class="explanation-steps">(.*?)<\/ol>/s)?.[1] || "";
+  assert.equal((steps.match(/<li>/g) || []).length, 6);
+  assert.ok(html.indexOf('id="beispiel"') < html.indexOf('id="pruefweg"'));
+  assert.ok(html.indexOf('id="pruefweg"') < html.indexOf("Vom Überblick zur Fachgrundlage"));
   assert.doesNotMatch(html, /Wirkung neutral bestimmen/);
 });
 

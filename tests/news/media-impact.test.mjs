@@ -318,3 +318,36 @@ test("Detailseite zeigt den Check nur bei Relevanz und nach der Ereignisanalyse"
   delete item.analysis.media_impact;
   assert.ok(!storyPage(item).includes('id="medienwirkung"'));
 });
+
+test("Medienanzeige trennt redaktionelle Framequelle und Sprecher der Akteursaussage", () => {
+  const production = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url), "utf8"));
+  const item = structuredClone(production.stories.find((entry) => entry.slug.includes("klimaextremismus")));
+  const media = validMedia();
+  media.attribution = { ...media.attribution, speaker: "Redaktionelle Frage", frame_source: "Überschrift des Testmediums", usage_type: "editorial", attribution_quality: "editorial" };
+  media.speaker_statement = { present: true, speaker: "Sprecherin des Verbands", statement: "Die Entscheidung soll nach der Abstimmung fallen.", status: "claim" };
+  item.analysis.media_impact = media;
+  const rendered = () => storyPage(item).match(/<article class="news-story-section news-media-impact".*?<\/article>/s)[0];
+  const html = rendered();
+  assert.ok(html.includes("Quelle der Formulierung ist Überschrift des Testmediums"));
+  assert.ok(html.includes("<strong>Sprecherin des Verbands:</strong> Die Entscheidung soll nach der Abstimmung fallen."));
+  assert.ok(!html.includes("<strong>Redaktionelle Frage:</strong>"));
+  assert.ok(html.includes("Überschrift · Fließtext · redaktionelle Formulierung"));
+  assert.ok(html.includes("<strong>Normalisierung:</strong> mittel"));
+  media.speaker_statement.speaker = "";
+  assert.ok(rendered().includes("<strong>Akteur nicht eindeutig benannt:</strong>"));
+  media.speaker_statement.present = false;
+  assert.ok(!rendered().includes("<h3>Akteursaussage</h3>"));
+});
+
+test("Medienanzeige übersetzt Zuordnungscodes und zeigt keine unbekannten internen Kategorien", () => {
+  const production = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url), "utf8"));
+  const item = structuredClone(production.stories.find((entry) => entry.slug.includes("klimaextremismus")));
+  const media = validMedia();
+  item.analysis.media_impact = media;
+  for (const [code, label] of Object.entries({ clear: "klar zugeordnet", clear_but_prominent: "klar zugeordnet, aber stark hervorgehoben", late: "Zuordnung erst im weiteren Text erkennbar", unclear: "unklare Zuordnung", editorial: "redaktionelle Formulierung", unknown: "Zuordnung nicht ausreichend feststellbar", unsupported_internal_code: "Zuordnung nicht ausreichend feststellbar" })) {
+    media.attribution.attribution_quality = code;
+    const html = storyPage(item).match(/<article class="news-story-section news-media-impact".*?<\/article>/s)[0];
+    assert.ok(html.includes(`Überschrift · Fließtext · ${label}.`));
+    assert.ok(!html.includes(`· ${code}.`));
+  }
+});

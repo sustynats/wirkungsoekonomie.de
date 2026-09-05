@@ -35,6 +35,12 @@ test("new or changed source in known event gets material-update review; unchange
 test("withdrawal, coalition change and election result receive same generic review", () => {
   for (const title of ["Vor Landtagswahl: Kandidatin zieht Kandidatur zurück", "Partei ändert Koalitionsaussage vor Wahl", "Wahlergebnis: Koalition verliert Mehrheit"]) assert.ok(politicalDevelopmentFor({ ...item, title, summary: "" }, now).signals.length);
 });
+test("later readiness statement receives review instead of preserving an older open answer", () => {
+  const newer = { ...item, title: "Kurz vor der Wahl: Kandidatin will auch bei knapper Mehrheit regieren", summary: "Die Ministerpräsidenten-Kandidatin erklärt ihre Bereitschaft.", content_hash: "later-readiness", published_at: "2026-09-05T16:24:00Z" };
+  assert.ok(politicalDevelopmentFor(newer, now).signals.includes("government_commitment"));
+  assert.equal(materialDevelopmentReview([newer], [item], now).time_sensitive, true);
+  assert.ok(classifyItem(newer, {}, now).score >= 48);
+});
 test("urgent review raises queue priority without changing evidence or publication gate", () => {
   const candidate = { preanalysis: { internal_relevance_score: 60 }, fresh: true };
   const urgent = { ...candidate, preanalysis: { ...candidate.preanalysis, material_development_review: { time_sensitive: true } } };
