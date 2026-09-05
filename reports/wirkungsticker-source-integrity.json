@@ -1,14 +1,27 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-05T13:18:22.055Z",
+  "generated_at": "2026-09-05T14:04:45.418Z",
   "gate_version": "1.0",
-  "stories_checked": 84,
-  "sources_checked": 161,
-  "passed": 84,
+  "stories_checked": 85,
+  "sources_checked": 162,
+  "passed": 85,
   "held": 0,
   "warnings": 3,
   "findings": [],
   "warning_findings": [
+    {
+      "story_id": "wt-4fb94d2cebfca746",
+      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
+      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
+      "warnings": [
+        {
+          "source_id": "wdr-nachrichten",
+          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+          "code": "SOURCE_MUTABLE_URL_REUSED",
+          "detail": "Dieselbe veränderliche URL liegt in 1 fachlich abweichenden Akte(n); die aktuelle Inhaltsübereinstimmung ist beim Abruf erneut zu prüfen."
+        }
+      ]
+    },
     {
       "story_id": "wt-a5874ae28ed5533f",
       "slug": "liveticker-sek-zugriff-bei-hambacher-forst-d5533f",
@@ -26,19 +39,6 @@
       "story_id": "wt-5547189d2645384a",
       "slug": "umspannwerk-sabotage-sek-einsatz-in-gevelsberg-45384a",
       "title": "Umspannwerk-Sabotage: SEK-Einsatz in Gevelsberg",
-      "warnings": [
-        {
-          "source_id": "wdr-nachrichten",
-          "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
-          "code": "SOURCE_MUTABLE_URL_REUSED",
-          "detail": "Dieselbe veränderliche URL liegt in 1 fachlich abweichenden Akte(n); die aktuelle Inhaltsübereinstimmung ist beim Abruf erneut zu prüfen."
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4fb94d2cebfca746",
-      "slug": "mutmasslich-sabotage-versuch-an-umspannwerk-in-dormagen-fca746",
-      "title": "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen",
       "warnings": [
         {
           "source_id": "wdr-nachrichten",

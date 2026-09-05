@@ -1,7 +1,89 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-05T12:28:41.779Z",
+  "updated_at": "2026-09-05T14:02:11.302Z",
   "stories": [
+    {
+      "story_id": "wt-b14b47324d087353",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b14b47324d087353-899fdfd4d4c61cc5-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b14b47324d087353-a6a10db5e6f2a213-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b14b47324d087353-b5b199f66cf58071-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "two-nepal-rescues-revive-hopes-10-days-after-flood-087353",
+      "title": "Two Nepal rescues revive hopes 10 days after flood",
+      "source_summary": "Rettungskräfte in Nepal haben nach Angaben des Berichts am Samstag einen chinesischen Staatsbürger aus einem Tunnel und eine lokale Frau aus ihrem teilweise überfluteten Haus lebend geborgen. Der Bericht stellt diese Rettungen in den Zusammenhang schwerer Überschwemmungen vor zehn Tagen.\n\nZugleich heißt es, dass Einsatzteams mit neuer Kraft nach Tausenden Vermissten suchten. Weitere Angaben zu Zahl, Ort oder Umständen der beiden Rettungen enthält der Kurztext nicht; der Bericht verweist dafür auf eine Korrespondenten-Einordnung.",
+      "summary": "In Nepal wurden am Samstag zwei Menschen lebend gerettet, darunter ein chinesischer Staatsbürger und eine lokale Frau. Der Bericht ordnet die Rettung in die Suche nach Tausenden Vermissten nach schweren Fluten vor zehn Tagen ein.",
+      "detail_summary": "Gesichert ist zunächst, dass in Nepal zwei Menschen lebend gerettet wurden: ein chinesischer Staatsbürger aus einem Tunnel und eine lokale Frau aus einem teilweise überfluteten Haus. Der Bericht verknüpft diese Rettungen mit den schweren Überschwemmungen von vor zehn Tagen und mit einer erneuerten Suchphase nach Tausenden Vermissten. Das ist relevante Nachrichtenentwicklung, weil sie einen konkreten, belegten Erfolg in einer laufenden Katastrophenlage zeigt. Der Wirkpfad liegt vor allem in der unmittelbaren humanitären Lage: Jede Rettung verändert den Zustand der Betroffenen und kann Einsatzentscheidungen, Prioritäten und öffentliche Wahrnehmung der Lage beeinflussen. Mögliche Folge ist, dass die Such- und Rettungsarbeit weiter verstärkt oder neu fokussiert wird; ob sich daraus breitere Folgewirkungen für Infrastruktur, Politik oder Versorgung ergeben, bleibt offen. Die Evidenz ist jedoch begrenzt, weil hier nur ein journalistischer Kurzbericht vorliegt und keine unabhängige Zweitbestätigung im Material enthalten ist.",
+      "why_relevant": "Die Meldung dokumentiert eine konkrete Rettungslage nach einer Naturkatastrophe und damit eine tatsächliche Zustandsänderung mit humanitärer Relevanz. Sie betrifft nicht nur Einzelfälle, sondern steht im Kontext einer weiter offenen Suche nach Tausenden Vermissten.",
+      "topic": [
+        "Gesundheit",
+        "Demokratie"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Rettung betrifft unmittelbar Leben, Sicherheit und die Lage vieler potenziell Betroffener nach einer Flutkatastrophe."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Nachricht betrifft eine extreme Wetter- und Flutlage, liefert aber keine neuen Daten zu Ursachen, Schäden oder Umweltfolgen."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein direkter demokratischer Effekt ist aus dem vorliegenden Material nicht belegbar."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-05T13:54:59.667Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-05T12:47:33.000Z",
+      "last_updated": "2026-09-05T13:57:35.799Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-72ae9f8aa4a7b9f609e9",
+      "case_file": null,
+      "source_published_at": "2026-09-05T12:47:33.000Z",
+      "published_at": "2026-09-05T13:57:35.799Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260905-two-nepal-rescues-revive-hopes-10-days-after-flood",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T12:47:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-015e477e516f3f8b",
       "title_image": {
@@ -627,7 +709,14 @@
       "media_impact": null,
       "media_analysis_version": null,
       "media_checked_at": null,
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-2557713b0904",
+        "slug": "dormagen-was-der-sabotageverdacht-an-einem-umspannwerk-systemisch-bedeutet-255771",
+        "title": "Dormagen: Was der Sabotageverdacht an einem Umspannwerk systemisch bedeutet",
+        "teaser": "In Dormagen steht ein Umspannwerk im Fokus der Ermittler. Der Fall zeigt, wie schnell ein Verdacht an kritischer Infrastruktur Schutzaufwand, Risikoerwartungen und öffentliche Aufmerksamkeit verschiebt.",
+        "published_at": "2026-09-05T14:02:11.302Z",
+        "updated_at": "2026-09-05T14:02:11.302Z"
+      },
       "first_seen": "2026-09-03T21:14:14.000Z",
       "last_updated": "2026-09-05T12:28:41.779Z",
       "version": 5,
@@ -8561,7 +8650,14 @@
       "media_impact": null,
       "media_analysis_version": null,
       "media_checked_at": null,
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-39ddf0b6cc39",
+        "slug": "kritis-dachgesetz-einheitliche-mindeststandards-fur-kritische-infrastrukturen-und--39ddf0",
+        "title": "KRITIS-Dachgesetz: Einheitliche Mindeststandards für kritische Infrastrukturen und ihre Grenzen",
+        "teaser": "Das KRITIS-Dachgesetz setzt bundeseinheitliche Mindeststandards. Der zusätzliche Nutzen liegt im Systemzuschnitt – die Wirkung bleibt vom Vollzug abhängig.",
+        "published_at": "2026-09-05T14:02:11.302Z",
+        "updated_at": "2026-09-05T14:02:11.302Z"
+      },
       "first_seen": "2026-09-02T06:00:00.000Z",
       "last_updated": "2026-09-03T22:22:32.940Z",
       "version": 4,
@@ -8624,5 +8720,28 @@
       ]
     }
   ],
-  "editorial_analyses": []
+  "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-39ddf0b6cc39",
+      "story_id": "wt-98ff7e403362fdf9",
+      "slug": "kritis-dachgesetz-einheitliche-mindeststandards-fur-kritische-infrastrukturen-und--39ddf0",
+      "title": "KRITIS-Dachgesetz: Einheitliche Mindeststandards für kritische Infrastrukturen und ihre Grenzen",
+      "subtitle": "Das Gesetz ordnet Schutz, Zuständigkeiten und Evaluierung neu. Ob daraus mehr Resilienz wird, hängt am Vollzug.",
+      "teaser": "Das KRITIS-Dachgesetz setzt bundeseinheitliche Mindeststandards. Der zusätzliche Nutzen liegt im Systemzuschnitt – die Wirkung bleibt vom Vollzug abhängig.",
+      "published_at": "2026-09-05T14:02:11.302Z",
+      "updated_at": "2026-09-05T14:02:11.302Z",
+      "reading_time_minutes": 6
+    },
+    {
+      "analysis_id": "woek-analysis-2557713b0904",
+      "story_id": "wt-4fb94d2cebfca746",
+      "slug": "dormagen-was-der-sabotageverdacht-an-einem-umspannwerk-systemisch-bedeutet-255771",
+      "title": "Dormagen: Was der Sabotageverdacht an einem Umspannwerk systemisch bedeutet",
+      "subtitle": "Zwischen Verdachtslage, Fahndung und kritischer Infrastruktur ist der zusätzliche Zusammenhang wichtiger als die schnelle Zuschreibung.",
+      "teaser": "In Dormagen steht ein Umspannwerk im Fokus der Ermittler. Der Fall zeigt, wie schnell ein Verdacht an kritischer Infrastruktur Schutzaufwand, Risikoerwartungen und öffentliche Aufmerksamkeit verschiebt.",
+      "published_at": "2026-09-05T14:02:11.302Z",
+      "updated_at": "2026-09-05T14:02:11.302Z",
+      "reading_time_minutes": 5
+    }
+  ]
 }

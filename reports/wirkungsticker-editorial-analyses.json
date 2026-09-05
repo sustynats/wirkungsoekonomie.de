@@ -1,25 +1,30 @@
 {
   "schema_version": "1.0",
-  "execute": false,
-  "bootstrap": false,
-  "started_at": "2026-09-05T13:16:23.166Z",
-  "scanned_stories": 84,
-  "scanned_subjects": 63,
+  "execute": true,
+  "bootstrap": true,
+  "started_at": "2026-09-05T14:02:11.302Z",
+  "scanned_stories": 85,
+  "scanned_subjects": 64,
   "editorial_candidates": 5,
   "ready_for_research": 3,
   "research_pending": 2,
-  "editorial_research_sources_discovered": 0,
-  "selected": 0,
-  "editorial_research_started": 0,
-  "editorial_analyses_published": 0,
+  "editorial_research_sources_discovered": 6,
+  "selected": 3,
+  "editorial_research_started": 4,
+  "editorial_analyses_published": 2,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
-  "quality_retries": 0,
+  "research_calls": 4,
+  "research_tokens": 25331,
+  "analysis_tokens": 19988,
+  "estimated_cost_usd": 0.108945,
+  "quality_retries": 1,
   "publication_deferred": false,
-  "failed": [],
+  "failed": [
+    {
+      "story_id": "wt-aabe8c0430bf8f84",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG"
+    }
+  ],
   "candidates": [
     {
       "story_id": "wt-4fb94d2cebfca746",
@@ -133,7 +138,7 @@
       "story_id": "wt-1bc40229c938d48a",
       "story_slug": "szenario-einer-afd-regierung-wer-will-noch-rich-te-r-in-in-sachsen-anhalt-werden-38d48a",
       "story_title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
-      "editorial_analysis_score": 72,
+      "editorial_analysis_score": 76,
       "analysis_gain": 60,
       "factors": {
         "systemic_relevance": 16,
@@ -148,22 +153,21 @@
         "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 3
+        "evidence_quality": 7
       },
       "evidence_gate": {
         "passed": false,
         "source_integrity": "passed",
-        "independent_origin_count": 1,
+        "independent_origin_count": 3,
         "primary_source_count": 0,
         "cited_claim_count": 3,
         "primary_source_expected": true,
         "primary_source_satisfied": false,
         "reasons": [
-          "fewer_than_two_source_origins",
           "primary_source_missing"
         ]
       },
-      "fingerprint": "ed865a025149db7bef291a52ca2b28a0ae897554fcf8062de535286256117383",
+      "fingerprint": "0fefb027a302f4eeccbc0f6418d48bb0b24426777ea68ec010072cee8fd635dd",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -202,5 +206,6 @@
       "status": "ready_for_research",
       "analysis_id": null
     }
-  ]
+  ],
+  "completed_at": "2026-09-05T14:04:16.424Z"
 }
