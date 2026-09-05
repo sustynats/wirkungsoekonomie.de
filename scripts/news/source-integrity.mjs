@@ -112,6 +112,12 @@ export function sourceIntegrityForStory(story, registry, existingStories = [], n
     const registrySource = registryById.get(source.source_id);
     const urlHost = normalHost(source.url);
     const publishedAt = Date.parse(source.source_published_at || source.published_at || "");
+    const undatedReference = source.date_status === "undated_reference"
+      && !source.published_at && !source.source_published_at
+      && registrySource?.primary_source === true
+      && ["legal_context", "election_calendar"].includes(source.source_role)
+      && Number.isFinite(Date.parse(source.retrieved_at || ""))
+      && Date.parse(source.retrieved_at) <= nowMs + 10 * 60000;
     const check = { source_id: source.source_id, url: source.url, publisher: source.publisher, title: source.title, status: "verified", checks: [] };
     const add = (code, detail) => { issues.push({ source_id: source.source_id, url: source.url, code, detail }); check.status = "open"; };
     if (!urlHost || !String(source.url || "").startsWith("https://")) add("SOURCE_URL_INVALID", "Die Quellen-URL ist nicht als öffentliche HTTPS-Adresse prüfbar.");
@@ -122,7 +128,8 @@ export function sourceIntegrityForStory(story, registry, existingStories = [], n
       if (Boolean(source.primary_source) !== Boolean(registrySource.primary_source)) add("SOURCE_ROLE_MISMATCH", "Primär-/Sekundärquellenrolle widerspricht dem Register.");
     }
     if (!String(source.title || "").trim()) add("SOURCE_TITLE_MISSING", "Der extrahierte Quellentitel fehlt.");
-    if (!Number.isFinite(publishedAt) || (Number.isFinite(nowMs) && publishedAt > nowMs + 10 * 60000)) add("SOURCE_PUBLICATION_DATE_INVALID", "Das Veröffentlichungsdatum fehlt, ist ungültig oder liegt unplausibel in der Zukunft.");
+    if ((!Number.isFinite(publishedAt) && !undatedReference) || (Number.isFinite(nowMs) && publishedAt > nowMs + 10 * 60000)) add("SOURCE_PUBLICATION_DATE_INVALID", "Das Veröffentlichungsdatum fehlt, ist ungültig oder liegt unplausibel in der Zukunft.");
+    if (undatedReference) warnings.push({ source_id: source.source_id, url: source.url, code: "SOURCE_REFERENCE_UNDATED", detail: "Amtlicher Kontext ohne ausgewiesenes Veröffentlichungsdatum; Abrufdatum separat dokumentiert, kein Aktualitätssignal." });
     const conflict = highConfidenceSubjectConflict(source, story);
     if (conflict) add("SOURCE_STORY_SUBJECT_CONFLICT", conflict);
     const semantic = semanticSupport(source, story);
