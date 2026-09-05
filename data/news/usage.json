@@ -5365,6 +5365,73 @@
       },
       "source_failures": 0,
       "quality_holds": 1
+    },
+    {
+      "run_id": "news-run-c0e9967ab670",
+      "started_at": "2026-09-05T17:06:26.753Z",
+      "completed_at": "2026-09-05T17:08:47.983Z",
+      "berlin_slot": "Automatischer Lauf 19:00",
+      "counts": {
+        "feed_entries_fetched": 948,
+        "feed_entries_new": 17,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 572,
+        "story_clusters": 22,
+        "locally_rejected": 22,
+        "ai_stories": 12,
+        "ai_requests": 12,
+        "reviews_reused": 1,
+        "input_holds": 0,
+        "prompt_chars_sent": 381407,
+        "media_checks_triggered": 6,
+        "media_checks_skipped": 6,
+        "media_checks_ai_promoted": 0,
+        "media_check_tokens": 1979,
+        "self_frame_rewrites": 0,
+        "source_integrity_holds": 1,
+        "published_stories": 0,
+        "updated_stories": 0
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 99677,
+        "output_tokens": 6142,
+        "estimated_cost_usd": 0.063,
+        "token_source": "provider_reported_usage",
+        "media_check_tokens": 1979,
+        "media_check_cost_usd": 0.007331
+      },
+      "source_failures": 0,
+      "quality_holds": 28
+    },
+    {
+      "run_id": "editorial-9edd87d7b4ce",
+      "started_at": "2026-09-05T17:08:49.575Z",
+      "completed_at": "2026-09-05T17:09:58.700Z",
+      "berlin_slot": "automatische WÖK-Analyse",
+      "counts": {
+        "editorial_candidates": 6,
+        "editorial_research_started": 2,
+        "editorial_analyses_published": 0,
+        "editorial_analyses_updated": 0,
+        "editorial_research_sources_discovered": 6,
+        "research_calls": 2,
+        "research_tokens": 20061,
+        "analysis_tokens": 10910
+      },
+      "ai": {
+        "requests": 2,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 20061,
+        "output_tokens": 10910,
+        "estimated_cost_usd": 0.06414,
+        "token_source": "provider_or_conservative_editorial_analysis"
+      },
+      "source_failures": 0,
+      "quality_holds": 1
     }
   ]
 }
