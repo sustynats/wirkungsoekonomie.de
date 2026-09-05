@@ -662,7 +662,7 @@ export function fitAnalysisInput(input, budget) {
         }
       }
       for (const [rows, key, fields] of [
-        [story.sources, 'source_defaults', ['primary_source', 'role', 'requires_corroboration', 'research_metadata']],
+        [story.sources, 'source_defaults', ['source_id', 'publisher', 'primary_source', 'role', 'requires_corroboration', 'research_metadata']],
         [story.claims || [], 'claim_defaults', ['evidence_level', 'uncertainty']],
         [story.sources.map(source => source.provenance).filter(Boolean), 'provenance_defaults', ['basis', 'independence_established']],
       ]) {
