@@ -501,8 +501,17 @@ export function aiProviderCoverageDegraded(report = {}) {
   const failures = Math.max(0, Number(report.ai_provider_failures || 0));
   const successes = Math.max(0, Number(report.ai_provider_successes || 0));
   if (!failures) return false;
+  const providerErrors = Array.isArray(report.ai_provider_errors) ? report.ai_provider_errors : [];
+  const onlyCapacityThrottles = providerErrors.length >= failures
+    && providerErrors.slice(-failures).every((entry) => /AI_PROVIDER_ERROR:429/.test(String(entry?.error || "")));
+  // The shared Oracle route deliberately returns 429 when its rolling
+  // capacity is exhausted. This is an expected queue condition, not a
+  // provider outage, even when it happens on the first request of a run.
+  if (onlyCapacityThrottles) return false;
   if (!successes) return true;
-  return failures >= 3 || failures / (failures + successes) >= 0.2;
+  // A single late timeout after successful responses is observable but does
+  // not make the whole provider unavailable. Escalate repeated failures.
+  return failures >= 3 || (failures >= 2 && failures / (failures + successes) >= 0.2);
 }
 
 export function queueSnapshot(stories = [], now = new Date().toISOString(), before = 0) {
@@ -1064,7 +1073,8 @@ export async function runWirkungsticker(options = {}) {
           continue;
         }
         const budgetBlocked = reason === 'AI_BUDGET_EXHAUSTED';
-        const rateLimited = budgetBlocked || /AI_PROVIDER_ERROR:429/.test(reason);
+        const providerRateLimited = /AI_PROVIDER_ERROR:429/.test(reason);
+        const rateLimited = budgetBlocked || providerRateLimited;
         const deferred = rateLimited ? selected.slice(offset) : batch;
         if (budgetBlocked) report.budget_blocked = true;
         else {
@@ -1073,8 +1083,8 @@ export async function runWirkungsticker(options = {}) {
           report.failed_batch_offset = offset;
         }
         for (const candidate of deferred) {
-          const holdReason = budgetBlocked ? 'AI_BUDGET_BLOCKED' : 'AI_PROVIDER_UNAVAILABLE';
-          bumpCandidateFunnel(sourceFunnel, candidate, budgetBlocked ? "capacity_deferred" : "technical_retries");
+          const holdReason = budgetBlocked ? 'AI_BUDGET_BLOCKED' : providerRateLimited ? 'AI_HOURLY_CALL_LIMIT' : 'AI_PROVIDER_UNAVAILABLE';
+          bumpCandidateFunnel(sourceFunnel, candidate, rateLimited ? "capacity_deferred" : "technical_retries");
           byId.set(candidate.story_id, pendingRecord(candidate, holdReason, now, [reason]));
           report.quality_holds.push({ story_id: candidate.story_id, reason: holdReason });
         }

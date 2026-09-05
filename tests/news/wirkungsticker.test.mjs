@@ -733,7 +733,12 @@ test("Queue- und Providerstatus unterscheiden Kapazität, Redaktion und Betriebs
   assert.equal(snapshot.technical, 1);
   assert.equal(snapshot.status, "technical_delay");
   assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 8, ai_provider_failures: 1 }), false);
-  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 2, ai_provider_failures: 1 }), true);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 4, ai_provider_failures: 1 }), false);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 2, ai_provider_failures: 2 }), true);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1 }), true);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:429" }] }), false);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 2, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:429" }, { error: "AI_PROVIDER_ERROR:429" }] }), false);
+  assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:503" }] }), true);
 });
 
 test("Quellen-Funnel zählt Beiträge je Quelle und fasst sie prüfbar zusammen", () => {
