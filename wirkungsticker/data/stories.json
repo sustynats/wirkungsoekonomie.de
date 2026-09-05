@@ -1,7 +1,96 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T03:06:25.161Z",
+  "updated_at": "2026-09-05T04:36:15.220Z",
   "stories": [
+    {
+      "story_id": "wt-31287c4fdc740209",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31287c4fdc740209-f01af947539fdef2-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31287c4fdc740209-ac5fffae23e9e450-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-31287c4fdc740209-8a3d7badf6d40f40-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "briefwahl-fur-midterms-in-usa-beginnt-740209",
+      "title": "Briefwahl für Midterms in USA beginnt",
+      "source_summary": "In den USA hat nach Angaben der Quelle in North Carolina die Briefwahl für die Midterms wie geplant begonnen. Das mit Wahlen betraute Gremium teilte am Freitag auf X mit, erste Unterlagen würden verschickt; in den kommenden Tagen sollten weitere Bundesstaaten folgen.\n\nParallel läuft weiter ein Rechtsstreit über eine von Präsident Donald Trump verfügte Verschärfung der Briefwahlregeln. Die Regelung sieht laut Quelle vor, dass die US-Post USPS eine zentrale Rolle bei der Kontrolle übernimmt, unter anderem bei der Genehmigung von Umschlagdesigns und bei der Auslieferung der Unterlagen an bestimmte Wähler. Kritiker warnen vor Trumps Plänen; eine Richterin in Boston hatte zuvor erneut eine einstweilige Verfügung gegen sie erlassen.",
+      "summary": "In North Carolina hat die Briefwahl für die Midterms begonnen. Parallel läuft weiter der Rechtsstreit um Trumps verschärfte Briefwahlregeln.",
+      "detail_summary": "Gesichert ist vor allem der Start der Briefwahl in North Carolina und der fortdauernde Streit um neue Briefwahlregeln der Trump-Regierung. Die Quelle beschreibt damit einen laufenden Eingriff in das Wahlverfahren, nicht bloß eine politische Debatte. Materiell relevant ist das, weil die Regeln den Ablauf der Stimmabgabe, die Kontrolle durch die Post und damit potenziell die Organisation der Wahl betreffen. Ein möglicher Wirkpfad ist, dass geänderte Genehmigungs- und Auslieferungsregeln den Zugang zur Briefwahl erschweren oder verzögern. Offen bleibt, ob und in welchem Umfang Gerichte die Pläne am Ende billigen oder stoppen und wie viele Bundesstaaten betroffen sein werden. Die Beleglage bleibt auf diese eine journalistische Quelle begrenzt; unabhängige Bestätigung für die strittigen Motive oder die tatsächlichen Folgen liegt hier nicht vor.",
+      "why_relevant": "Die Meldung betrifft die konkrete Organisation der Stimmabgabe bei den US-Zwischenwahlen und damit einen Kernprozess demokratischer Teilhabe. Schon kleine Änderungen an Briefwahlregeln können Zugang, Fristen und Verwaltungskosten beeinflussen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen ist die praktische Wahlteilnahme von Briefwählern und damit ein zentraler demokratischer Zugangskanal."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Kein direkter Umweltbezug erkennbar."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "rationale": "Die Meldung betrifft Wahlverfahren, gerichtliche Kontrolle und mögliche Hürden für die Stimmabgabe."
+        }
+      },
+      "visuals": null,
+      "first_seen": "2026-09-05T04:19:00.000Z",
+      "last_updated": "2026-09-05T04:37:08.760Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-3060ac83d3e2e7e4d83e",
+      "case_file": null,
+      "source_published_at": "2026-09-05T04:19:00.000Z",
+      "published_at": "2026-09-05T04:37:08.760Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Weitere Bundesstaaten sollen mit dem Versand der Briefwahlunterlagen beginnen.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Meldungen oder Wahlbehördenangaben zu weiteren Versandstarts in anderen Bundesstaaten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bcce13dd4a7a01ac",
+          "announced_at": "2026-09-05T04:19:00.000Z",
+          "follow_up_date": "2026-09-12T04:37:08.760Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/briefwahl-usa-midterms-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T04:19:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-f7d7115a53ff2c2f",
       "title_image": {
