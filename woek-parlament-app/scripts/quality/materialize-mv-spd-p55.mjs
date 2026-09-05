@@ -11,6 +11,7 @@ const PREFIX = 'data/state-programmes/fach-reviews/';
 const LEDGER = `${PREFIX}mecklenburg-vorpommern-2026-spd-v1/`;
 export const OUTPUT = `${PREFIX}mecklenburg-vorpommern-2026-spd-p55-explicit-v1.json`;
 export const RESIDUAL = 'data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json';
+const P1_P54_ARCHIVE = 'data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json';
 const BASE = 5477877520;
 const REPAIR = 5525358185;
 const RNA = 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON';
@@ -188,31 +189,46 @@ export function buildP55() {
 
 export function buildSpdResidual(handoff) {
   const manifest = json(`${LEDGER}manifest.json`);
+  const predecessor = fs.existsSync(path.join(APP_ROOT, P1_P54_ARCHIVE)) ? json(P1_P54_ARCHIVE) : null;
   const terminal = new Set(handoff.coverage.terminal_pages);
   const protectedAuthored = new Set(handoff.protected_predecessor.physical_pages);
+  const recoverableTerminalPages = new Set();
+  if (predecessor) {
+    for (const page of handoff.protected_predecessor.physical_pages) {
+      const pageRecords = predecessor.source_records.filter(row => (row.source_pages ?? [row.source_page]).includes(page));
+      if (pageRecords.length > 0 && pageRecords.every(row => row.terminal_role !== null)) recoverableTerminalPages.add(page);
+    }
+  }
   const pages = manifest.ledger_metadata.pages.map(page => ({
     pdf_page: page.pdf_page,
     source_unit_count: page.source_unit_count,
-    status: terminal.has(page.pdf_page) ? 'MATERIALISED_EXACT_SOURCE_BOUND_TERMINAL' : protectedAuthored.has(page.pdf_page) ? 'PROTECTED_FACH_HANDOFF_TECHNICAL_MATERIALISATION_RECONCILIATION_REQUIRED' : 'NO_CURRENT_SOURCE_BOUND_TERMINAL_PROOF',
+    status: terminal.has(page.pdf_page) || recoverableTerminalPages.has(page.pdf_page) ? 'MATERIALISED_EXACT_SOURCE_BOUND_TERMINAL' : protectedAuthored.has(page.pdf_page) ? 'PROTECTED_AUTHORED_REFERENCE_UNRESOLVED' : 'NO_CURRENT_SOURCE_BOUND_TERMINAL_PROOF',
   }));
   const residual = {
     schema_version: 'woek-current-programme-residual-1.0',
     matrix_id: 'MV-SPD-CURRENT-FACH-RESIDUAL-2026-V1',
     artifact_id: handoff.artifact.artifact_id,
     artifact_sha256: handoff.artifact.sha256,
-    explicit_handoffs: [{path:`woek-parlament-app/${OUTPUT}`, descriptor_sha256:handoff.descriptor_sha256}],
+    explicit_handoffs: [
+      ...(predecessor ? [{path:`woek-parlament-app/${P1_P54_ARCHIVE}`,descriptor_sha256:predecessor.descriptor_sha256}] : []),
+      {path:`woek-parlament-app/${OUTPUT}`, descriptor_sha256:handoff.descriptor_sha256},
+    ],
     pages,
     summary: {
       source_page_count: pages.length,
       materialised_terminal_pages: pages.filter(row => row.status === 'MATERIALISED_EXACT_SOURCE_BOUND_TERMINAL').map(row => row.pdf_page),
-      protected_authored_pages_pending_technical_reconciliation: pages.filter(row => row.status === 'PROTECTED_FACH_HANDOFF_TECHNICAL_MATERIALISATION_RECONCILIATION_REQUIRED').map(row => row.pdf_page),
+      protected_authored_pages_pending_technical_reconciliation: pages.filter(row => row.status === 'PROTECTED_AUTHORED_REFERENCE_UNRESOLVED').map(row => row.pdf_page),
       pages_without_current_terminal_proof: pages.filter(row => row.status === 'NO_CURRENT_SOURCE_BOUND_TERMINAL_PROOF').map(row => row.pdf_page),
       remaining_technical_page_envelopes: pages.filter(row => row.status !== 'MATERIALISED_EXACT_SOURCE_BOUND_TERMINAL').map(row => row.pdf_page),
       p55_residual_source_object_ids: handoff.coverage.remaining_p55_source_object_ids,
+      protected_authored_unresolved_source_unit_ids: predecessor?.unresolved_source_unit_ids ?? handoff.protected_predecessor.physical_pages.map(page => `PHYSICAL_P${page}`),
+      protected_authored_role_binding_required_ids: predecessor?.source_records.filter(row => row.authority_resolution_status.endsWith('ROLE_BINDING_REQUIRED')).map(row => row.object_id) ?? [],
       exact_remaining_effect_object_count: null,
       programme_terminal: false,
       p56_authoring_authorised_by_this_matrix: false,
-      gate: 'FAIL_CLOSED_PREDECESSOR_MATERIALISATION_NOT_PROVEN',
+      gate: predecessor?.p1_p54_transaction_complete
+        ? 'PASS_P1_P55_SOURCE_BOUND_TERMINAL_P56_PLUS_NOT_AUTHORISED'
+        : predecessor ? 'FAIL_CLOSED_FINITE_PROTECTED_AUTHORITY_POINTER_GAP' : 'FAIL_CLOSED_PREDECESSOR_MATERIALISATION_NOT_PROVEN',
     },
     counting_rule: 'SET_DIFFERENCE_OF_FROZEN_SOURCE_PAGES_AND_VALIDATED_EXPLICIT_HANDOFF_PAGE_IDS_NOT_GENERIC_RNAA_COUNTS',
   };

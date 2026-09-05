@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "1db5d993bd7149c3c09993bf346f66d6c587a7ee",
+  "audited_main_commit": "3a999bd5a7e2428c28f1fe44f248a6470180fe69",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -64,10 +64,13 @@
       "source_unavailable_for_election_corpus": 6,
       "existing_theme_reviews": 8,
       "spd_current_residual": "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json",
-      "spd_materialised_terminal_pages": [55],
+      "spd_materialised_terminal_pages": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55],
       "spd_p55_remaining_source_objects": [],
       "spd_predecessor_fach_authority": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5476819703",
-      "spd_predecessor_technical_status": "P1-P54_AUTHORITATIVE_FACH_PROTECTED_BUT_CURRENT_OBJECT_MATRIX_NOT_MATERIALISED",
+      "spd_predecessor_technical_status": "P1_P54_MATERIALISED_ZERO_AUTHORITY_POINTER_GAP",
+      "spd_predecessor_authority_archive": "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json",
+      "spd_protected_unresolved_pages": [],
+      "spd_authority_pointer_gap_count": 0,
       "evidence": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
     },
     "official_state_source_adapters": {
@@ -444,12 +447,13 @@
       "id": "241-F-05-MV-SPD-AUTHORED-MATERIALISATION",
       "issue_241_refs": ["F/Mecklenburg-Vorpommern", "comment/5540520103"],
       "title": "Bereits autoritative MV-SPD-P1-P54-Handoffs technisch verlustfrei materialisieren",
-      "status": "APPROVED_FACH_NOT_PROJECTED",
+      "status": "DONE_ON_MAIN",
       "evidence": [
-        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5476819703",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5554389664",
+        "woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json",
         "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json"
       ],
-      "residual": "MV-SPD-PROTECTED-AUTHORED-P1-P54-MATERIALISATION"
+      "residual": null
     },
     {
       "id": "241-F-06-BE-SPD-P23-AUTHORED-MATERIALISATION",
@@ -654,19 +658,8 @@
   "finite_residuals": {
     "technical": [
       {
-        "id": "MV-SPD-PROTECTED-AUTHORED-P1-P54-MATERIALISATION",
-        "order": 1,
-        "jurisdiction": "mecklenburg-vorpommern",
-        "items": [
-          "Protected authored MV SPD P1-P54; reconcile every source-bound authoritative handoff against the unchanged historical scaffold"
-        ],
-        "authority": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5476819703",
-        "residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json",
-        "required_action": "Preserve the authored Fach; materialise it technically. The rejected generic RNAA ledger is not proof of this work. Do not request re-authoring of supplied Fach."
-      },
-      {
         "id": "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL",
-        "order": 2,
+        "order": 1,
         "jurisdiction": "combined",
         "items": [
           "superseding combined terminal GitHub descriptor"
@@ -704,10 +697,10 @@
         "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json",
         "preserved_existing_scope": "Eight cross-party materiality themes plus the explicit Bündnis-C batch; neither is a full programme-by-programme corpus review.",
         "current_spd_residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json",
-        "materialised_spd_page": 55,
+        "materialised_spd_pages": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55],
         "materialised_spd_p55_source_residual": 0,
-        "protected_spd_authored_scope": "P1-P54; technical materialisation pending, not missing Fach input",
-        "required_fach_action": "Reuse all already authoritative source-bound Fach. Only genuinely uncovered objects require new Fach. P55 is fully materialised; P1-P54 are protected authored stock requiring technical reconciliation. No generic ledger label proves programme completion."
+        "protected_spd_authored_scope": "P1-P55 materialised source-bound with zero authority-pointer gaps",
+        "required_fach_action": "Supply explicit object-level Fach for SPD P56+ only through a new authoritative handoff. Reuse all materialised P1-P55 source-bound Fach unchanged; no generic ledger label proves programme completion."
       },
       {
         "id": "BUND-7-DOCUMENT-EDITORIAL-RESIDUAL",
