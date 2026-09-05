@@ -1,7 +1,132 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T02:21:29.224Z",
+  "updated_at": "2026-09-05T02:36:38.507Z",
   "stories": [
+    {
+      "story_id": "wt-1ef3a88ea9148916",
+      "slug": "landwirtschaft-karpfensaison-in-bayern-eroffnet-148916",
+      "title": "Landwirtschaft: Karpfensaison in Bayern eröffnet",
+      "first_seen": "2026-09-05T02:30:08.000Z",
+      "last_updated": "2026-09-05T02:30:08.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/bayern/landwirtschaft--karpfensaison-in-bayern-eroeffnet-38210492.html",
+          "title": "Landwirtschaft: Karpfensaison in Bayern eröffnet",
+          "summary": "Auf vielen Tellern im Freistaat landet nun wieder fangfrischer Karpfen aus heimischen Teichen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T02:30:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4f202fca996fd85065666bffd9f023df2722e76f02f39e438248a7ecc05bd046",
+          "source_item_id": "5e523ffd174ccb3085cdad12501e0ed3c011b5dc94b4d0af0ebd68886adfe153",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T02:30:08.000Z",
+          "ingested_at": "2026-09-05T02:36:38.507Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-1ef3a88ea9148916-claim-01",
+          "story_id": "wt-1ef3a88ea9148916",
+          "claim": "Landwirtschaft: Karpfensaison in Bayern eröffnet: Auf vielen Tellern im Freistaat landet nun wieder fangfrischer Karpfen aus heimischen Teichen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-05T02:36:38.507Z"
+        }
+      ],
+      "content_hash": "f574754230a62a4294ccb2da1b3c9d26071d5fcd3c7c8e33e5f9f54ea6f83527",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-05T02:36:38.507Z",
+      "event_first_seen_at": "2026-09-05T02:36:38.507Z",
+      "event_detected_at": "2026-09-05T02:36:38.507Z",
+      "event_id": "event-2dc88c9fa5d686275ae7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "implementation"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.50845,
+        "detection_delay_minutes": 6.50845,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-05T02:36:38.507Z",
+      "rejection": {
+        "at": "2026-09-05T02:36:38.507Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-5072789df611867b",
       "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
@@ -9823,7 +9948,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T19:45:01.000Z",
-          "ingested_at": "2026-09-05T02:21:29.224Z",
+          "ingested_at": "2026-09-05T02:36:38.507Z",
           "provenance": {
             "origin": "publisher:swr",
             "basis": "publisher_only_origin_unverified",
@@ -9850,7 +9975,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T02:21:29.224Z"
+          "checked_at": "2026-09-05T02:36:38.507Z"
         }
       ],
       "content_hash": "118ba2e75006d7061e339047923ec9f4b1e31f8486a4c6ebb85918f7a72a49d3",
@@ -9858,11 +9983,11 @@
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-05T02:21:29.224Z",
+      "updated_at": "2026-09-05T02:36:38.507Z",
       "event_first_seen_at": "2026-09-04T18:51:27.003Z",
       "event_detected_at": "2026-09-04T18:51:27.003Z",
       "event_id": "event-2b3fe134ec524295323f",
@@ -9892,25 +10017,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 396.4704,
+        "source_age_minutes": 411.62511666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 450.03701666666666,
+        "queue_age_minutes": 465.19173333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 17,
+        "news_freshness_score": 14,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T02:21:29.224Z",
+      "rejected_at": "2026-09-05T02:36:38.507Z",
       "rejection": {
-        "at": "2026-09-05T02:21:29.224Z",
+        "at": "2026-09-05T02:36:38.507Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
+          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
