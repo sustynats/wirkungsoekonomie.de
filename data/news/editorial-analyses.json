@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-05T14:23:20.689Z",
+  "updated_at": "2026-09-05T14:51:51.466Z",
   "candidates": [
     {
       "story_id": "wt-3d901522efd87e2d",
@@ -105,8 +105,8 @@
         "reasons": []
       },
       "fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-94b29d766984"
     },
     {
       "story_id": "wt-edd4484465895b46",
@@ -3015,6 +3015,553 @@
               "data_status": "inferred",
               "uncertainty": "Resonanzpotenzial ist aus der Berichterstattung ableitbar, aber nicht als eingetretene öffentliche Wirkung belegt.",
               "date": "2026-09-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-94b29d766984",
+      "story_id": "wt-aabe8c0430bf8f84",
+      "related_story_ids": [
+        "wt-aabe8c0430bf8f84",
+        "wt-8f76552549f6aa68"
+      ],
+      "related_case_id": null,
+      "slug": "rettung-in-nepal-was-der-tunnel-fall-uber-infrastruktur-arbeitsschutz-und-krisenko-94b29d",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Automatisiert nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie erstellt.",
+      "method_version": "1.0",
+      "source_fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
+      "candidate_score": 69,
+      "analysis_gain_score": 51,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 7,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-05T14:51:51.466Z",
+      "updated_at": "2026-09-05T14:51:51.466Z",
+      "version": 1,
+      "editorial_question": "Was zeigt die Rettung zweier Wasserkraftarbeiter in Nepal über die Verwundbarkeit von Infrastruktur, Arbeitsschutz und Krisenkoordination in einer Flutlage – und was lässt sich daraus systemisch, aber quellengebunden, ableiten?",
+      "analysis_type": "case_analysis",
+      "title": "Rettung in Nepal: Was der Tunnel-Fall über Infrastruktur, Arbeitsschutz und Krisenkoordination zeigt",
+      "subtitle": "Zwei Arbeiter wurden lebend aus einem blockierten Wasserkrafttunnel geborgen; über die Zahl weiterer Betroffener gehen die Angaben auseinander.",
+      "teaser": "Die Rettung zweier Wasserkraftarbeiter in Nepal ist ein akutes Humanereignis. Systemisch wird sie dort relevant, wo Fluten, Tunnelbau, Notfalllogistik und unklare Lagebilder zusammenwirken.",
+      "seo_description": "Nepal: Zwei Wasserkraftarbeiter wurden gerettet. Die Analyse ordnet die Lage, die offene Zahl weiterer Betroffener und die systemischen Folgen ein.",
+      "additional_value": "Der zusätzliche journalistische Nutzen liegt nicht im Wiederholen der Rettungsmeldung, sondern in der Einordnung des Wirkpfads: Eine Einzelrettung ist noch keine Strukturänderung, verweist hier aber auf ein verletzliches Zusammenspiel aus Katastrophenlage, Arbeitsplätzen in sensibler Infrastruktur und unklarer Lageführung. Der Fall zeigt damit zugleich menschliche Sofortwirkung, planetare Auslöser und die Frage, wie belastbar Rettungs- und Informationsketten in einer Extremwetterlage sind.",
+      "research_summary": "Quellengebunden gesichert ist, dass zwei Wasserkraftarbeiter in Nepal aus einem durch Schlamm und Geröll blockierten Tunnel gerettet wurden. Die Rettung erfolgte neun Tage nach den Fluten. Mindestens eine Quelle berichtet, dass beide Männer nach Kathmandu in ein Krankenhaus geflogen wurden. Offen und widersprüchlich bleibt die Gesamtzahl weiterer Vermisster und im Tunnel Eingeschlossener: Ein Bericht spricht von etwa 900 Vermissten aus 12 Wasserkraftprojekten und rund 500 mutmaßlich in Tunneln Eingeschlossenen, ein anderer von über 5.000 Vermissten und 115 mutmaßlich im Tunnel Eingeschlossenen. Aus diesen Angaben folgt kein belastbarer Schluss auf das Gesamtausmaß, wohl aber auf eine laufende, dynamische Krisenlage mit begrenzter Evidenz.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Zwei Gerettete, aber ein offenes Gesamtbild",
+          "paragraphs": [
+            "Im Kern steht ein klar belegtens Ereignis: Zwei Wasserkraftarbeiter wurden in Nepal lebend aus einem Tunnel befreit, der nach massiven Überschwemmungen mit Schlamm und Geröll blockiert war. Die Rettung erfolgte neun Tage nach den Fluten. Eine Quelle ergänzt, dass beide Männer anschließend nach Kathmandu in ein Krankenhaus geflogen wurden. Das ist zunächst eine unmittelbare humanitäre Schadensbegrenzung und keine bloße Symbolmeldung.",
+            "Der systemische Haken liegt im Rest der Lage. Die Quellen beschreiben keine abgeschlossene Situation, sondern eine fortlaufende Suche nach weiteren Überlebenden. Dabei weichen die Angaben zur Zahl der Vermissten deutlich voneinander ab. Gerade diese Widersprüche sind für die Einordnung wichtiger als eine vorschnelle Gesamtzahl: Sie zeigen, dass das Lagebild noch nicht stabil ist und die Rettungs- und Informationsarbeit parallel laufen."
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusammenhang: Katastrophe trifft auf Energie- und Arbeitsinfrastruktur",
+          "paragraphs": [
+            "Der Fall ist nicht nur ein Unglücksbericht über zwei Menschen in einem Tunnel. Er zeigt, wie eng Naturgefahr, Bau- und Betriebsinfrastruktur und Arbeitsrisiken in einer Flutlage verschränkt sind. Wasserkraftprojekte sind auf funktionierende Zugänge, Tunnelsysteme und verlässliche Notfalllogik angewiesen. Wenn eine Flut diese Zugänge verschüttet, wird aus einer technischen Anlage ein Rettungsraum mit eigener Dynamik.",
+            "Wirkung im WOeK-Sinn ist hier die tatsächliche Zustandsveränderung: Die Rettung verschiebt den Zustand von „eingeschlossen und akut gefährdet“ zu „geborgen und medizinisch versorgt“. Alles Weitere ist zunächst Wirkungspotenzial oder Wirkungsrisiko. Dass Einsatzkräfte weiter nach Überlebenden suchen, deutet auf eine laufende Krisenreaktion hin, aber nicht automatisch auf zusätzliche eingetretene Wirkung."
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Drei Blickrichtungen auf denselben Vorfall",
+          "paragraphs": [
+            "Aus der Mensch-Perspektive steht die unmittelbare Rettung und medizinische Versorgung im Vordergrund. Die Quellen nennen lebend geborgene Arbeiter und in einer Meldung den Weitertransport ins Krankenhaus. Das ist die stärkste belegte Wirkung dieser Geschichte: Sie betrifft konkrete Menschen in akuter Gefahr. Über die Langzeitfolgen für Gesundheit oder Einkommen lässt sich aus dem Material nichts Belastbares ableiten.",
+            "Aus der Planet-Perspektive verweist der Fall auf die Fluten als Auslöser. Die Umweltlage ist nicht Kulisse, sondern kausaler Ausgangspunkt der Blockade. Allerdings ist ein Extremwetterereignis nicht automatisch ein Nachweis für Klimawirkung im engeren Sinn; dafür fehlen hier Referenzen. Für Demokratie und öffentliche Kontrolle ist der Fall nur indirekt relevant: Widersprüchliche Zahlen zeigen, wie wichtig belastbare Lagekommunikation ist. Eine demokratische Frage wird daraus erst dort, wo Behörden, Betreiber und Öffentlichkeit über Datenqualität, Schutzkonzepte und Rechenschaft sprechen."
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Von der Rettung zur möglichen Strukturfrage",
+          "paragraphs": [
+            "Die erste Ordnung ist die Rettung selbst. Sie beendet für zwei Personen eine akute Gefährdung und ist damit eine beobachtete Wirkung. Die zweite Ordnung betrifft den laufenden Einsatz: Suchteams, medizinische Versorgung und Bergung verändern das Krisenmanagement, aber die Wirkung ist hier noch situativ und offen.",
+            "Erst die dritte Ordnung berührt strukturelle Fragen: Wenn sich herausstellt, dass viele Menschen in Tunneln oder an anderen Projektstandorten eingeschlossen waren, kann das Druck auf Sicherheitsstandards, Evakuierungsroutinen und Notfallplanung ausüben. Das ist kein automatisch eingetretener Wandel, sondern ein mögliches Transformationsfenster. In der WOeK-Logik ist das Wirkungspotenzial, nicht bereits Wirkung."
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Die Rettung zeigt Handlungsfähigkeit, die Datenlage eher Begrenzung",
+          "paragraphs": [
+            "Die erfolgreiche Bergung spricht für operative Resilienz: Unter schwierigen Bedingungen war es möglich, den Zugang zu den beiden Arbeitern wiederherzustellen und sie lebend herauszubringen. Das ist ein reales Leistungszeichen von Einsatzkräften und Rettungsorganisationen.",
+            "Gleichzeitig zeigen die widersprüchlichen Angaben zur Zahl weiterer Betroffener eine Grenze der Lageübersicht. Resilienz ist nicht nur Rettungskraft, sondern auch Informations- und Koordinationsfähigkeit. Wenn die Zahlenlage auseinandergeht, kann das Priorisierung erschweren. Nichtkompensation und Reverse Merit Order sind hier keine Steuerungsvorschriften, aber als Denkhinweise relevant: Zuerst zählt die Sicherung akuter Schutzbedarfe, nicht die abstrakte Optimierung nach Reichweite oder Fernwirkung."
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externe Effekte: Der Tunnel-Fall strahlt auf Betrieb, Sicherheit und Vertrauen aus",
+          "paragraphs": [
+            "Die direkte externe Folge ist die Belastung von Such-, Rettungs- und Gesundheitskapazitäten. Das sind keine abstrakten Nebenwirkungen, sondern zusätzliche reale Einsätze in einer ohnehin katastrophischen Lage. Außerdem kann eine solche Situation auf den Betrieb betroffener Wasserkraftprojekte zurückwirken, etwa durch Unterbrechungen, Inspektionen oder spätere Sicherheitsprüfungen. Dafür gibt es im Material jedoch keine bestätigte operative Folgemeldung.",
+            "Auch Vertrauen ist ein externer Effekt, aber hier nur in einem engen Sinn: Nicht als Stimmung, sondern als Robustheit des Lagebilds. Unterschiedliche Zahlen in den Berichten zeigen, dass Öffentlichkeit und Einsatzkräfte mit einer Informationssituation arbeiten, die noch nicht harmonisiert ist. Das ist eine relevante Schwäche, aber noch keine nachgewiesene Fehlsteuerung."
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer trägt die Last, wer erhält die Rettung?",
+          "paragraphs": [
+            "Die Lasten treffen zunächst die eingeschlossenen Arbeiter, dann ihre Familien, die Rettungsteams und potenziell weitere Betroffene in den Projekten. Die begünstigte Gruppe ist unmittelbar sehr klein: zwei gerettete Personen. Das ist keine politische Wertung, sondern eine Beschreibung der asymmetrischen Betroffenheit.",
+            "Verteilungsfragen entstehen systemisch dort, wo die gleiche Infrastruktur einigen Beschäftigung und Energieversorgung bietet, anderen aber im Krisenfall besondere Verwundbarkeit auferlegt. Das Material erlaubt keine Aussage über Arbeitsverträge, Schutzstandards oder Entschädigungen. Es zeigt lediglich, dass Infrastrukturnutzen und infrastrukturelles Risiko im selben System verknüpft sein können."
+          ]
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Frame- und Diskurscheck: Sachverhalt vor Deutung",
+          "paragraphs": [
+            "Die Meldung lädt zu starken Bildern ein: Rettung, Hoffnung, Katastrophe. Für die Analyse ist aber wichtig, dass diese Bilder nicht an die Stelle des Sachverhalts treten. Belegt ist die Rettung zweier Arbeiter und die fortgesetzte Suche nach weiteren Überlebenden. Nicht belegt ist, dass daraus bereits eine umfassende politische oder technologische Lehre gezogen werden kann.",
+            "Attribution muss sichtbar bleiben. Die Fluten haben die Tunnel blockiert; das ist der Ausgangspunkt. Die Berichte unterscheiden sich dann stark in ihren Zahlen. Deshalb wäre es unseriös, eine einzelne Zahl als endgültige Wahrheit zu setzen oder aus Kommunikationsstärke automatisch Wirksamkeit abzuleiten. Kommunikatives Wirkungspotenzial ist vorhanden, weil der Fall Aufmerksamkeit auf Infrastrukturverwundbarkeit lenkt. Eingetretene Wirkung ist aber nur die Rettung selbst."
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was das Material nicht trägt",
+          "paragraphs": [
+            "Die größte Unsicherheit betrifft die Gesamtzahl der Vermissten und Eingeschlossenen. Die Quellen nennen sehr unterschiedliche Größenordnungen. Daraus folgt, dass keine belastbare Gesamtbilanz erstellt werden kann. Die Lage bleibt offen und potenziell dynamisch.",
+            "Ebenfalls offen sind Ausmaß und Verteilung möglicher Schäden an den betroffenen Projekten, die Frage nach der Dauer der Betriebsunterbrechung sowie mögliche Folgemaßnahmen zu Arbeitsschutz und Katastrophenvorsorge. Auch eine Einordnung als überregionale Transformationsgeschichte wäre derzeit zu stark. Das Material trägt eher eine Case- als eine Makroanalyse."
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Lage weiter messen lässt",
+          "paragraphs": [
+            "Entscheidend sind neue Behördenangaben zur Zahl der Vermissten, bestätigte weitere Rettungen oder Todesfälle und belastbare Angaben dazu, wie viele Menschen in welchen Projekten betroffen sind. Erst solche Informationen würden aus dem offenen Lagebild eine robustere Schadens- und Wirkungsbilanz machen.",
+            "Ebenso relevant wären Hinweise auf konkrete Anpassungen bei Rettungswegen, Sicherheitskonzepten oder Projektbetrieb. Ohne solche Belege bleibt die strukturelle Folge eine plausible, aber nicht bestätigte Erwartung. Die Analyse sollte deshalb zwischen aktueller Rettung, laufender Gefahrenlage und möglicher Reformwirkung sauber trennen."
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Eine kleine bestätigte Rettung in einer großen unklaren Katastrophe",
+          "paragraphs": [
+            "Die bestätigte Wirkung dieser Geschichte ist eng, aber wichtig: Zwei Menschen sind lebend aus einer lebensgefährlichen Lage geborgen worden. Das ist ein echter Zustandswechsel mit unmittelbarer humanitärer Bedeutung. Der Rest des Falls ist vor allem offene Krisenlage, kein abgeschlossener Befund.",
+            "Systemisch zeigt der Fall, wie Katastrophen, technische Infrastruktur und Arbeitsschutz ineinandergreifen. Er verweist auf ein mögliches Wirkungspotenzial für Sicherheits- und Rettungspraktiken, aber die Evidenz reicht nicht aus, um bereits von Transformationswirkung zu sprechen. Der journalistische Mehrwert liegt deshalb in der disziplinierten Trennung von Rettung, Risiko, Ungewissheit und möglicher Folgewirkung."
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Zwei Wasserkraftarbeiter wurden in Nepal aus einem durch Schlamm und Geröll blockierten Tunnel gerettet.",
+          "type": "fact",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Kernrettung ist mehrfach berichtet; die genaue Begleitumstände variieren in den Meldungen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Rettung erfolgte neun Tage nach den Überschwemmungen in Nepal.",
+          "type": "fact",
+          "source_ids": [
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die zeitliche Einordnung ist konsistent in den vorliegenden Berichten.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Mindestens eine Quelle berichtet, dass beide Männer nach Kathmandu in ein Krankenhaus geflogen wurden.",
+          "type": "observation",
+          "source_ids": [
+            "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Diese Information steht nur in einer der gelieferten Quellen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Zahl der weiteren Vermissten und Eingeschlossenen ist in den Quellen widersprüchlich.",
+          "type": "fact",
+          "source_ids": [
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Ein Bericht nennt etwa 900 Vermisste aus 12 Projekten und rund 500 mutmaßlich in Tunneln Eingeschlossene; ein anderer über 5.000 Vermisste und 115 im Tunnel Vermutete.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Wirkung im WOeK-Sinn ist eine tatsächliche Zustandsveränderung, nicht bloß Reichweite oder Aufmerksamkeit.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "open",
+          "data_status": "open",
+          "uncertainty": "Methodische Setzung aus dem Auftrag; kein Nachrichtenfakt.",
+          "date": null
+        },
+        {
+          "claim": "Die Rettung von zwei Arbeitern ist eine beobachtete Wirkung, weil sich ihr Zustand von eingeschlossen zu geborgen verändert hat.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+          ],
+          "evidence_level": "high",
+          "data_status": "inferred",
+          "uncertainty": "Die Zustandsveränderung ist aus der Rettungsmeldung klar ableitbar.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die laufende Suche nach weiteren Überlebenden zeigt Wirkungspotenzial, aber noch keine belegte zusätzliche Wirkung.",
+          "type": "impact_potential",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Es gibt Hinweise auf laufende Einsätze, aber keine belastbare Bestätigung weiterer Rettungen im Material.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Unklare Zahlen können Lagebild und Priorisierung der Rettung erschweren.",
+          "type": "impact_risk",
+          "source_ids": [
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Das folgt aus der widersprüchlichen Berichterstattung, ist aber nicht direkt belegt als eingetretene Fehlsteuerung.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Der Fall berührt kritische Energie- und Arbeitsinfrastruktur in einer Katastrophenlage.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Zuordnung zur Infrastruktur ergibt sich aus der Art der betroffenen Wasserkraftprojekte und Tunnel.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Rettung kann Druck auf Sicherheitsstandards, Notfallplanung und den Betrieb betroffener Wasserkraftprojekte ausüben.",
+          "type": "impact_potential",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "evidence_level": "low",
+          "data_status": "scenario",
+          "uncertainty": "Im Material nicht als Folge bestätigt; es handelt sich um ein plausibles Potenzial.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Der Bericht nennt mehr als 1.200 Todesopfer und über 5.000 Vermisste infolge der Fluten.",
+          "type": "fact",
+          "source_ids": [
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+            "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Diese Zahlen erscheinen nur in einzelnen Berichten und stehen im Spannungsverhältnis zu anderen Zahlenangaben.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Quellenlage erlaubt keine belastbare Gesamtbilanz des Katastrophenausmaßes.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+            "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+          ],
+          "evidence_level": "high",
+          "data_status": "inferred",
+          "uncertainty": "Die Berichte divergieren deutlich in zentralen Zahlen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Rettung zweier Arbeiter ist eine unmittelbare Schadensbegrenzung.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+          ],
+          "evidence_level": "high",
+          "data_status": "inferred",
+          "uncertainty": "Normative Einordnung auf Basis des belegten Zustandswechsels.",
+          "date": "2026-09-04"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die zentralen Zahlen zur Zahl weiterer Vermisster und Eingeschlossener widersprechen sich deutlich zwischen den Berichten.",
+          "source_ids": [
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "effect_on_assessment": "Verhindert eine harte Gesamtbilanz und begrenzt Zurechnung zu einem exakten Ausmaß der Katastrophe."
+        },
+        {
+          "finding": "Die Quellen sind journalistische Berichte und keine Primärdokumente; für zahlreiche Details liegt nur berichtete, nicht direkt verifizierte Information vor.",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+            "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc",
+            "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+          ],
+          "effect_on_assessment": "Erhöht die Unsicherheit bei Detailangaben wie Opferzahlen, Krankenhausverlegung und Gesamtzahl Betroffener."
+        },
+        {
+          "finding": "Es gibt keine bestätigten Angaben im Material zu konkreten Reformen, neuen Regeln oder tatsächlichen Änderungen an Sicherheitsstandards.",
+          "source_ids": [
+            "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+            "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+          ],
+          "effect_on_assessment": "Begrenzt Aussagen über Transformation, Wirkungslenkung oder strukturelle Folgewirkung auf Potenzial statt auf eingetretene Wirkung."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Bestätigung neuer, konsistenter Behördenzahlen zur Gesamtzahl der Vermissten und Eingeschlossenen.",
+        "Belastbare Angaben zu weiteren Rettungen, Todesfällen oder Verletzten.",
+        "Konkrete Hinweise auf Sicherheits- oder Betriebsanpassungen bei den betroffenen Wasserkraftprojekten.",
+        "Eine Primärquelle oder offizielle Lageübersicht, die die widersprüchlichen Zahlen auflöst."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Rettung in Nepal: Was der Tunnel-Fall über Infrastruktur, Arbeitsschutz und Krisenkoordination zeigt",
+        "recommended_summary": "Zwei Wasserkraftarbeiter wurden in Nepal lebend aus einem blockierten Tunnel gerettet. Die Zahl weiterer Betroffener bleibt widersprüchlich.",
+        "recommended_meta_description": "Nepal: Zwei Wasserkraftarbeiter wurden gerettet. Die Analyse ordnet die Lage, die offene Zahl weiterer Betroffener und die systemischen Folgen ein."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+          "registry_source_id": "france24-en",
+          "publisher_id": "france24",
+          "publisher": "France 24",
+          "title": "Two trapped hydropower workers rescued from mud-clogged tunnel in Nepal",
+          "url": "https://www.france24.com/en/asia-pacific/20260904-two-trapped-hydropower-workers-rescued-from-mud-clogged-tunnel-in-nepal",
+          "published_at": "2026-09-04T05:10:44.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+          "registry_source_id": "euronews-en",
+          "publisher_id": "euronews",
+          "publisher": "Euronews",
+          "title": "Two trapped workers rescued from hydropower tunnel nine days after Nepal floods",
+          "url": "https://www.euronews.com/2026/09/04/two-trapped-workers-rescued-from-hydropower-tunnel-nine-days-after-nepal-floods",
+          "published_at": "2026-09-04T05:25:08.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+          "registry_source_id": "france24-en",
+          "publisher_id": "france24",
+          "publisher": "France 24",
+          "title": "Two trapped workers rescued from mud-clogged tunnel 9 days after Nepal floods",
+          "url": "https://www.france24.com/en/video/20260904-two-trapped-workers-rescued-from-mud-clogged-tunnel-9-days-after-nepal-floods",
+          "published_at": "2026-09-04T10:12:49.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc",
+          "registry_source_id": "euronews-en",
+          "publisher_id": "euronews",
+          "publisher": "Euronews",
+          "title": "Two hydropower workers rescued alive after nine days trapped in Nepal tunnel",
+          "url": "https://www.euronews.com/video/2026/09/04/two-hydropower-workers-rescued-alive-after-nine-days-trapped-in-nepal-tunnel",
+          "published_at": "2026-09-04T06:12:37.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b",
+          "registry_source_id": "france24-en",
+          "publisher_id": "france24",
+          "publisher": "France 24",
+          "title": "#Nepal: Two flood survivors rescued from hydropower tunnel",
+          "url": "https://www.france24.com/en/video/20260904-nepal-two-flood-survivors-rescued-from-hydropower-tunnel",
+          "published_at": "2026-09-04T09:38:17.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-05T14:51:51.466Z",
+          "source_fingerprint": "a88be34711bf08e12227fa2bcddb0cd610e79abf7875534185e8a7931783dba4",
+          "title": "Rettung in Nepal: Was der Tunnel-Fall über Infrastruktur, Arbeitsschutz und Krisenkoordination zeigt",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Zwei Wasserkraftarbeiter wurden in Nepal aus einem durch Schlamm und Geröll blockierten Tunnel gerettet.",
+              "type": "fact",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Kernrettung ist mehrfach berichtet; die genaue Begleitumstände variieren in den Meldungen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Rettung erfolgte neun Tage nach den Überschwemmungen in Nepal.",
+              "type": "fact",
+              "source_ids": [
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+                "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die zeitliche Einordnung ist konsistent in den vorliegenden Berichten.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Mindestens eine Quelle berichtet, dass beide Männer nach Kathmandu in ein Krankenhaus geflogen wurden.",
+              "type": "observation",
+              "source_ids": [
+                "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Diese Information steht nur in einer der gelieferten Quellen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Zahl der weiteren Vermissten und Eingeschlossenen ist in den Quellen widersprüchlich.",
+              "type": "fact",
+              "source_ids": [
+                "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Ein Bericht nennt etwa 900 Vermisste aus 12 Projekten und rund 500 mutmaßlich in Tunneln Eingeschlossene; ein anderer über 5.000 Vermisste und 115 im Tunnel Vermutete.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Wirkung im WOeK-Sinn ist eine tatsächliche Zustandsveränderung, nicht bloß Reichweite oder Aufmerksamkeit.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "open",
+              "data_status": "open",
+              "uncertainty": "Methodische Setzung aus dem Auftrag; kein Nachrichtenfakt.",
+              "date": null
+            },
+            {
+              "claim": "Die Rettung von zwei Arbeitern ist eine beobachtete Wirkung, weil sich ihr Zustand von eingeschlossen zu geborgen verändert hat.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+              ],
+              "evidence_level": "high",
+              "data_status": "inferred",
+              "uncertainty": "Die Zustandsveränderung ist aus der Rettungsmeldung klar ableitbar.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die laufende Suche nach weiteren Überlebenden zeigt Wirkungspotenzial, aber noch keine belegte zusätzliche Wirkung.",
+              "type": "impact_potential",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Es gibt Hinweise auf laufende Einsätze, aber keine belastbare Bestätigung weiterer Rettungen im Material.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Unklare Zahlen können Lagebild und Priorisierung der Rettung erschweren.",
+              "type": "impact_risk",
+              "source_ids": [
+                "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Das folgt aus der widersprüchlichen Berichterstattung, ist aber nicht direkt belegt als eingetretene Fehlsteuerung.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Der Fall berührt kritische Energie- und Arbeitsinfrastruktur in einer Katastrophenlage.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Zuordnung zur Infrastruktur ergibt sich aus der Art der betroffenen Wasserkraftprojekte und Tunnel.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Rettung kann Druck auf Sicherheitsstandards, Notfallplanung und den Betrieb betroffener Wasserkraftprojekte ausüben.",
+              "type": "impact_potential",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0"
+              ],
+              "evidence_level": "low",
+              "data_status": "scenario",
+              "uncertainty": "Im Material nicht als Folge bestätigt; es handelt sich um ein plausibles Potenzial.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Der Bericht nennt mehr als 1.200 Todesopfer und über 5.000 Vermisste infolge der Fluten.",
+              "type": "fact",
+              "source_ids": [
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+                "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Diese Zahlen erscheinen nur in einzelnen Berichten und stehen im Spannungsverhältnis zu anderen Zahlenangaben.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Quellenlage erlaubt keine belastbare Gesamtbilanz des Katastrophenausmaßes.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "447cba7fa44e382ba9be3b5df031fe269dc5aba30582b08d70a376fafbdf19d8",
+                "395bdff0000d9e615cf694c5adf183aa326b14ed0d77745a47e173208144f0f0",
+                "4c0fb43a0f627fa1e07b0d70cf5b380eb7e5e089c22fad7053aeef9c76d34c4b"
+              ],
+              "evidence_level": "high",
+              "data_status": "inferred",
+              "uncertainty": "Die Berichte divergieren deutlich in zentralen Zahlen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Rettung zweier Arbeiter ist eine unmittelbare Schadensbegrenzung.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "20381ee92342e33800d5b376cc1ad3be0b2b7bdfa77b773f043f1299e7717051",
+                "897f88ca8e20307d02f84d9dfb54ef431b64ca578cbb2455c2613eb5711b93fc"
+              ],
+              "evidence_level": "high",
+              "data_status": "inferred",
+              "uncertainty": "Normative Einordnung auf Basis des belegten Zustandswechsels.",
+              "date": "2026-09-04"
             }
           ]
         }
