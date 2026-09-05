@@ -26,7 +26,8 @@ test("story merge rejects duplicate identities, malformed stores and divergent s
   const valid = store([{ story_id: "a" }]);
   assert.throws(() => mergeDisjointStoryStores(valid, store([{ story_id: "a" }, { story_id: "a" }]), valid), /STORY_IDENTITIES_INVALID/);
   assert.throws(() => mergeDisjointStoryStores(valid, { news: 1 }, valid), /STORY_STORE_INVALID/);
-  assert.throws(() => mergeDisjointStoryStores(valid, { ...valid, schema_version: "2" }, { ...valid, schema_version: "3" }), /STORY_RECORD_OVERLAP/);
+  assert.throws(() => mergeDisjointStoryStores(valid, { ...valid, schema_version: "2" }, { ...valid, schema_version: "3" }), /STORY_SCHEMA_CONFLICT/);
+  assert.throws(() => mergeDisjointStoryStores(valid, { ...valid, schema_version: "2" }, valid), /STORY_SCHEMA_CONFLICT/);
 });
 test("concurrent main advances are rebased before each bounded push retry", async () => {
   const calls=[];let pushes=0;

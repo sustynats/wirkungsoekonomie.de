@@ -23,6 +23,7 @@ export function mergeDisjointStoryStores(base, upstream, worker) {
     return rows;
   };
   const b = index(base), u = index(upstream), w = index(worker);
+  if (base.schema_version !== upstream.schema_version || base.schema_version !== worker.schema_version) throw new Error("STORY_SCHEMA_CONFLICT");
   const mergeValue = (old, left, right) => {
     if (isDeepStrictEqual(left, right)) return left;
     if (isDeepStrictEqual(left, old)) return right;
