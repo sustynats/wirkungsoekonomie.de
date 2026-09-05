@@ -33,8 +33,30 @@ export function uniqueContentIds(html) {
   return {html:output,changes:replacements};
 }
 
+export function normalizeStaticNavigation(html, ids) {
+  const removedToc=[];let duplicateButtons=0;
+  const result=outsideRaw(html,part=>part
+    .replace(/<li\b[^>]*\sclass=["'][^"']*\btoc-level-[1-6]\b[^"']*["'][^>]*>\s*<a\b[^>]*\shref=["']#([^"']+)["'][^>]*>([\s\S]*?)<\/a>\s*<\/li>/gi,(item,fragment,label)=>{
+      let id;try{id=decodeURIComponent(fragment);}catch{return item;}
+      const key=headingSlug(label);
+      // Existing publication cleanup deliberately removes this frontmatter.
+      // Only discard its now-empty generated navigation entries, never prose
+      // citations or unknown section labels that require editorial review.
+      if(!ids.has(id) && /^(?:(?:inhaltsverzeichnis|dokumentlogik|kurzfassung|wirkungsokonomie)$|wok-rang-\d+(?:-|$))/.test(key)){
+        removedToc.push({fragment:id,label:visible(label)});return '';
+      }
+      return item;
+    })
+    .replace(/(<a\b(?=[^>]*\sclass=["'][^"']*\bbtn\b)[^>]*>[\s\S]*?<\/a>)(?:\s*\1)+/gi,(repeated,anchor)=>{
+      if(/\s(?:on\w+|data-[\w-]+)=/i.test(anchor.slice(0,anchor.indexOf('>'))))return repeated;
+      duplicateButtons+=(repeated.match(/<a\b/gi)||[]).length-1;
+      return anchor;
+    }));
+  return {html:result,removedToc,duplicateButtons};
+}
+
 export function normalizePublicContent(root, options={}) {
-  const pages=new Map();const report={reviewedAt:'2026-09-05',linkRewrites:[],fragmentAliases:[],uniqueIds:[],duplicates:[],headings:[]};
+  const pages=new Map();const report={reviewedAt:'2026-09-06',linkRewrites:[],fragmentAliases:[],uniqueIds:[],duplicates:[],headings:[],staleTocEntries:[],duplicateDownloadButtons:[]};
   for(const file of walk(root)){
     const rel=path.relative(root,file).replaceAll(path.sep,'/');const route=rel==='index.html'?'/':'/'+(rel.endsWith('/index.html')?rel.slice(0,-10):rel);
     const original=fs.readFileSync(file,'utf8');let html=original;
@@ -95,6 +117,11 @@ export function normalizePublicContent(root, options={}) {
     page.html=page.html.replace(heading,heading.replace(/<h([1-6])\b/,`<h$1 id="${esc(id)}"`));page.ids.add(id);report.fragmentAliases.push({route:page.route,alias:id,target:'matching heading without an ID'});
   }
   for(const args of pendingAliases)addAlias(...args);
+  for(const page of pages.values()){
+    const normalized=normalizeStaticNavigation(page.html,page.ids);page.html=normalized.html;
+    for(const item of normalized.removedToc)report.staleTocEntries.push({route:page.route,...item});
+    if(normalized.duplicateButtons)report.duplicateDownloadButtons.push({route:page.route,count:normalized.duplicateButtons});
+  }
   const groups=new Map();
   for(const page of pages.values()){
     if(!/^(bibliothek\/|wirkungsradar\/)/.test(page.rel) || /noindex|http-equiv=["']refresh/i.test(page.html.slice(0,page.html.indexOf('</head>'))))continue;
