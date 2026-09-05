@@ -70,6 +70,7 @@ jobs:
       - name: Generate one base and six reference-bound candidates on Oracle
         if: inputs.execute == true
         shell: bash
+        # runner.temp is valid in the step context used here, not as job-level env.
         env:
           COMMIT_SHA: ${{ inputs.commit_sha }}
           CANDIDATE_DIR: ${{ runner.temp }}/parliament-impact-visuals
