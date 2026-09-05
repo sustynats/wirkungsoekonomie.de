@@ -1,7 +1,242 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-05T09:44:12.170Z",
+  "updated_at": "2026-09-05T11:12:42.527Z",
   "stories": [
+    {
+      "story_id": "wt-bba0a3bb9ff283b4",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-88e09a0e84d32a08-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-210b73e253db005a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-cae95d1d97126251-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nach-cyberangriff-auf-berlins-verwaltung-stundenzettel-im-darknet-f283b4",
+      "title": "Nach Cyberangriff auf Berlins Verwaltung: Stundenzettel im Darknet",
+      "source_summary": "Das Stück berichtet, dass das Ultimatum an den Berliner Senat nach einem Cyberangriff abgelaufen sei. Danach habe die Hackergruppe Rhysida die erbeuteten Daten im Darknet veröffentlicht; auf der Leak-Site sei von einer beendeten „Auktion“ und hochgeladenen Dateien die Rede.\n\nDer Text nennt als Beispiele für sichtbare Inhalte unter anderem Personalangelegenheiten, Arbeitszeugnisse, Bauangelegenheiten, Notfallpläne, Bewerbungsunterlagen, Stundenzettel und Betriebsratsunterlagen. Außerdem wird ein Lösegeld von 30 Bitcoin genannt. Die Senatskanzlei erklärt laut Bericht, die Daten würden von IT-Experten geprüft; betroffene Personen sollten kontaktiert werden.",
+      "summary": "Laut dem Bericht hat Rhysida nach Ablauf eines Ultimatums Daten aus dem Berliner Verwaltungsnetz veröffentlicht. Die Senatskanzlei prüft die Dateien und will Betroffene kontaktieren.",
+      "detail_summary": "Gesichert belegt ist in der Quelle vor allem die behauptete Veröffentlichung von Daten nach dem Berliner Cyberangriff sowie die angekündigte Prüfung durch die Senatskanzlei. Der Bericht nennt dazu konkrete Beispiele für angeblich einsehbare Dokumente und verweist auf eine Lösegeldforderung von 30 Bitcoin. Für die Nachricht relevant ist das, weil öffentlich zugänglich gewordene Verwaltungsdaten Identitätsmissbrauch, gezielte Täuschung und weitere Folgeschäden erleichtern können. Der Wirkpfad läuft hier über den Zugriff Unbefugter auf sensible Verwaltungsinformationen und die mögliche Weiterverwendung dieser Daten. Offen bleibt jedoch, welcher Teil des Datensatzes tatsächlich sichtbar ist, wie breit er verbreitet wurde und ob bereits konkrete Schäden eingetreten sind; dafür liegt in den gelieferten Quellen nur ein einzelner journalistischer Bericht vor.",
+      "why_relevant": "Die Veröffentlichung potenziell sensibler Verwaltungsdaten kann Verwaltungsabläufe, Datenschutz, Betroffenenrechte und das Vertrauen in digitale Behördeninfrastruktur berühren.",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sein können Beschäftigte und weitere Personen, deren Unterlagen in den Daten genannt werden; konkrete Schäden sind aber noch nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Vorfall betrifft die Integrität und Vertraulichkeit staatlicher Verwaltungsdaten und damit die Funktionsfähigkeit öffentlicher Institutionen."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Lösegeldforderung",
+            "value": "30",
+            "unit": "Bitcoin",
+            "context": "Die in der Quelle genannte Forderung der Erpresser"
+          }
+        ],
+        "affected_groups": [
+          "staat"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "risiko"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "1.0",
+      "media_checked_at": "2026-09-05T11:12:42.527Z",
+      "first_seen": "2026-09-05T08:20:00.000Z",
+      "last_updated": "2026-09-05T11:14:11.056Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-d19b8d8749731496b454",
+      "case_file": null,
+      "source_published_at": "2026-09-05T08:20:00.000Z",
+      "published_at": "2026-09-05T08:37:06.303Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Senat betroffene Personen und Unternehmen identifiziert und informiert hat.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Mitteilung oder bestätigte Benachrichtigungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-38f1d8923e28a376",
+          "announced_at": "2026-09-05T08:20:00.000Z",
+          "follow_up_date": "2026-09-12T08:37:06.303Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T08:20:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-1633927424587a06",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1633927424587a06-1857fe88dde26215-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1633927424587a06-8a779f6a87009026-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-1633927424587a06-80f1937f8c283d29-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06",
+      "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
+      "source_summary": "Der Tagesspiegel meldet, dass die USA ihre Vermittlungsbemühungen für ein Ende des Kriegs in der Ukraine wieder aufnehmen. Als erste Station wird Moskau genannt, danach solle erstmals Kiew folgen.\n\nIm Titel der Meldung heißt es zudem, US-Unterhändler seien in Moskau und ein Treffen mit Putin sei geplant. Weitere Details zum Ablauf, zu Ergebnissen oder zu einer formellen Bestätigung der Gespräche nennt der vorliegende Quellenauszug nicht.",
+      "summary": "US-Unterhändler sollen nach Moskau reisen, ein Treffen mit Putin ist laut Meldung geplant. Danach ist erstmals auch ein Besuch in Kiew vorgesehen.",
+      "detail_summary": "Gesichert aus der vorliegenden Meldung ist vor allem die behauptete Wiederaufnahme US-amerikanischer Vermittlungsbemühungen im Ukraine-Krieg und die geplante Reihenfolge Moskau vor Kiew. Materiell ist das, weil damit ein diplomatischer Wirkpfad zu möglichen Verhandlungsänderungen, Signalwirkungen für die Kriegsparteien und neue Erwartungslagen an Verbündete verbunden sein kann. Noch offen bleibt, ob das Treffen mit Putin tatsächlich stattfindet, in welchem Format die Gespräche laufen und ob daraus konkrete Zusagen entstehen. Ebenso unbelegt bleibt, ob die Reise bereits begonnen hat oder nur angekündigt wurde. Für eine belastbare Wirkungsaussage reicht die Quellenlage nicht; derzeit liegt nur eine einzelne journalistische Darstellung ohne unabhängige Bestätigung vor.",
+      "why_relevant": "Die Meldung beschreibt eine mögliche Wiederaufnahme direkter Vermittlung im Ukraine-Krieg und damit einen potenziell relevanten diplomatischen Kurswechsel mit Folgen für Verhandlungen, Signale und Erwartungen.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Diplomatie zu einem laufenden Krieg kann Verhandlungsspielräume, Sicherheitslage und Erwartungen von Zivilbevölkerung und Akteuren beeinflussen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist aus der Meldung nicht ersichtlich."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung betrifft außenpolitische Entscheidungs- und Vermittlungsprozesse mit möglicher Wirkung auf öffentliche Kontrolle und Kursbildung."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "europa"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "1.0",
+      "media_checked_at": "2026-09-05T11:12:42.527Z",
+      "first_seen": "2026-09-05T11:06:25.000Z",
+      "last_updated": "2026-09-05T11:13:44.645Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-71017bf01deb22c62170",
+      "case_file": {
+        "case_id": "case-0e368539fdc9df",
+        "member_count": 3,
+        "publisher_count": 3,
+        "members": [
+          {
+            "story_id": "wt-1633927424587a06",
+            "slug": "ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06",
+            "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
+            "summary": "US-Unterhändler sollen nach Moskau reisen, ein Treffen mit Putin ist laut Meldung geplant. Danach ist erstmals auch ein Besuch in Kiew vorgesehen.",
+            "updated_at": "2026-09-05T11:13:44.645Z",
+            "published_at": "2026-09-05T11:13:44.645Z",
+            "kind": "Weitere Entwicklung",
+            "current": true
+          },
+          {
+            "story_id": "wt-d7a0af1afc831caf",
+            "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Selenskyj kündigt einen Besuch der US-Vermittler Witkoff und Kushner in Kiew an. Trump bestätigt die Reise und spricht von einem Vorschlag zur Beendigung des Krieges.",
+            "updated_at": "2026-09-05T05:32:14.214Z",
+            "published_at": "2026-09-04T20:51:47.279Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-b076e0c16bf4a2e8",
+            "slug": "iran-krieg-us-dieselpreis-auf-hochststand-f4a2e8",
+            "title": "Iran-Krieg: US-Dieselpreis auf Höchststand",
+            "summary": "Der US-Dieselpreis hat laut der Meldung einen neuen Höchststand erreicht. Genannt werden 5,85 Dollar pro Gallone und ein Vorjahreswert von 3,71 Dollar.",
+            "updated_at": "2026-09-04T13:53:07.692Z",
+            "published_at": "2026-09-04T13:53:07.692Z",
+            "kind": "Kontext oder Einordnung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-05T11:06:25.000Z",
+      "published_at": "2026-09-05T11:13:44.645Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16021136.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:06:25.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-aaa7e98d9c993988",
       "title_image": {
@@ -25,10 +260,10 @@
       },
       "slug": "anschlage-auf-umspannwerke-dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverda-993988",
       "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
-      "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
-      "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
-      "detail_summary": "Gesichert ist nach dem vorliegenden Bericht vor allem die laufende Fahndung im Zusammenhang mit Sabotageversuchen an Umspannwerken und die politische Einordnung durch Bundesinnenminister Dobrindt. Der Vorgang ist relevant, weil Umspannwerke zur kritischen Infrastruktur gehören und Ausfälle Versorgung, Sicherheit und Resilienz direkt berühren können. Der mögliche Wirkpfad liegt weniger in der bloßen Meldung selbst als in den tatsächlichen Eingriffen an Stromanlagen und den daraus folgenden Risiken für Versorgung und öffentliche Sicherheit. Als mögliche Folge sind weitere Sicherheitsmaßnahmen, Ermittlungen und eine Verschärfung der Debatte über den Schutz kritischer Infrastruktur denkbar. Ob die Zuordnung zu einem Einzeltäter, die Motive oder die Reichweite der Vorfälle belastbar sind, bleibt in der vorliegenden Quellenlage offen. Eine unabhängige Bestätigung der zentralen Tatsachen liegt hier nicht vor; die Meldung bleibt deshalb quellengebunden und vorläufig.",
-      "why_relevant": "Die Meldung betrifft kritische Infrastruktur, Sicherheitslage und mögliche Versorgungsrisiken. Sie liefert zudem neue Angaben zu Umfang, Fahndung und politischer Einordnung des Vorgangs.",
+      "source_summary": "Die Quelle meldet eine laufende Fahndung im Zusammenhang mit Sabotagevorwürfen an Umspannwerken. Bundesinnenminister Dobrindt ordnet die Vorgänge als „Klimaextremismus“ ein und spricht von einem Einzeltäter. Zugleich berichtet die Quelle von einem SEK-Einsatz am Hambacher Forst, bei dem der Verdächtige nicht gefunden wurde.\n\nAußerdem nennt die Quelle mehrere weitere Vorfälle: In Brandenburg und Nordrhein-Westfalen sei die Stromversorgung am Dienstag gezielt gestört worden; später habe man bei Dormagen ähnliche Gegenstände gefunden. In Sachsen seien an zwei Umspannwerken Spreng- oder Brandvorrichtungen entdeckt und vier Objekte gesichert worden. Die Sicherheitsbehörden stünden nach Angaben der Quelle mit den betroffenen Ländern in engem Austausch.",
+      "summary": "Die Quelle beschreibt eine laufende Fahndung im Umfeld mehrerer Vorfälle an Umspannwerken. Dobrindt spricht von „Klimaextremismus“, während zugleich weitere Funde und Einsätze in mehreren Ländern genannt werden.",
+      "detail_summary": "Gesichert berichtet die Quelle von einer laufenden Fahndung im Zusammenhang mit Vorfällen an Umspannwerken sowie von mehreren Funden und Einsätzen in Nordrhein-Westfalen, Brandenburg, Sachsen und am Hambacher Forst. Die politische Zuschreibung stammt aus der Quelle selbst: Dobrindt nennt die Taten „Klimaextremismus“ und geht derzeit von einem Einzeltäter aus. Für die Lage ist das relevant, weil Umspannwerke als kritische Infrastruktur beschrieben werden und Störungen dort potenziell Versorgungsengpässe auslösen können. Ein möglicher Wirkpfad ist damit nicht die bloße Aufmerksamkeit, sondern ein realer Eingriff in die Energieversorgung und die Sicherheitslage. Offen bleibt, wie groß die tatsächlichen Schäden waren und ob die Motive der gesuchten Person unabhängig bestätigt werden. Wegen der bislang nur quellenintern belegten Zuschreibung bleibt die Einordnung vorläufig.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Fahndung und eine politisch aufgeladene Deutung eines möglichen Angriffs auf Versorgungssysteme.",
       "topic": [
         "Klima"
       ],
@@ -38,27 +273,53 @@
       "dimensions": {
         "human": {
           "relevance": "hoch",
-          "rationale": "Betroffen sind mögliche Störungen der Stromversorgung und Sicherheitsrisiken an kritischer Infrastruktur."
+          "rationale": "Betroffen sind potenziell Versorgungssicherheit und öffentliche Sicherheit; der Umfang der Schäden bleibt aber offen."
         },
         "planet": {
           "relevance": "mittel",
-          "rationale": "Der Bezug zur Klimadebatte ist politisch relevant, materielle Umweltfolgen werden in der Quelle aber nicht belegt."
+          "rationale": "Die Quelle verknüpft den Fall mit fossilen Brennstoffen und Energieinfrastruktur, konkrete Klimaauswirkungen sind jedoch nicht belegt."
         },
         "democracy": {
           "relevance": "mittel",
-          "rationale": "Der Vorgang berührt innere Sicherheit, staatliche Schutzfähigkeit und die öffentliche Debatte über Extremismus."
+          "rationale": "Die politische Rahmung als „Klimaextremismus“ kann den öffentlichen Diskurs über Protest, Sabotage und Sicherheitsmaßnahmen prägen."
         }
       },
-      "visuals": null,
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "betroffene Bundesländer",
+            "value": "vier",
+            "unit": "Länder",
+            "context": "Nordrhein-Westfalen, Brandenburg, Sachsen und Niedersachsen werden genannt"
+          },
+          {
+            "label": "gesicherte Objekte in Sachsen",
+            "value": "vier",
+            "unit": "Objekte",
+            "context": "An zwei Fundorten wurden vier Objekte gesichert"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "verbraucherinnen",
+          "beschaeftigte"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
       "media_impact": {
         "relevant": true,
-        "relevance_level": "medium",
-        "reason": "Der Trigger ist ein politisch aufgeladener Begriff in der Überschrift und im Text; er rahmt eine noch offene Ermittlungs- und Fahndungslage als Deutung eines Akteurs. Dadurch entsteht ein relevanter Resonanzraum für Attribution, Zuspitzung und mögliche Verwechslung von Aussage und Befund.",
-        "factual_core": "Belegt ist im vorliegenden Bericht die laufende Fahndung im Zusammenhang mit Vorfällen an Umspannwerken sowie die Einordnung durch Bundesinnenminister Dobrindt. Der Begriff „Klimaextremismus“ ist eine zugeschriebene politische Deutung, kein amtlich festgestellter Sachverhalt.",
+        "relevance_level": "high",
+        "reason": "Die Kombination aus Bedrohungsrahmen und politischer Zuschreibung kann den Deutungsrahmen stark prägen.",
+        "factual_core": "Es geht um Vorfälle an Umspannwerken, eine laufende Fahndung und die Bezeichnung als „Klimaextremismus“.",
         "speaker_statement": {
           "present": true,
-          "speaker": "Bundesinnenminister Dobrindt",
-          "statement": "Er ordnet die Sabotageversuche an deutschen Umspannwerken als „Klimaextremismus“ ein und geht derzeit von einem Einzeltäter aus.",
+          "speaker": "Dobrindt",
+          "statement": "„Klimaextremismus“",
           "status": "claim"
         },
         "framing": {
@@ -66,7 +327,7 @@
           "term": "Klimaextremismus",
           "origin_in_story": "Akteur",
           "media_usage": "headline",
-          "attribution_quality": "grundsätzlich attribuiert",
+          "attribution_quality": "eindeutig attribuiert",
           "factual_status": "Aussage eines Akteurs",
           "frame_type": [
             "Bedrohung"
@@ -76,44 +337,44 @@
           "political_history_evidence": []
         },
         "resonance": {
-          "resonance_space": "Die Formulierung kann in Debatten über Klimaaktivismus, Extremismus und Schutz kritischer Infrastruktur Anschluss finden.",
-          "resonance_risk": "Ohne klare Trennung von Aussage und Befund kann der Begriff als vorläufige Tatsachenbeschreibung gelesen werden.",
-          "normalization_potential": "Wiederholte Nutzung kann den Begriff im öffentlichen Sprachraum verfestigen, obwohl er hier nur als politische Einordnung vorliegt.",
-          "repetition_effect": "Mehrfaches Auftauchen in Überschrift und Text kann die Deutungsrahmung verstärken; das belegt keine inhaltliche Richtigkeit.",
-          "trust_effect": "Die Wahrnehmung journalistischer Distanz kann leiden, wenn die politische Einordnung nicht sofort als solche erkennbar ist.",
-          "polarization_potential": "Der Frame kann bestehende Konfliktlinien zwischen Klima-, Sicherheits- und Ordnungspolitik zuspitzen.",
-          "discourse_effect": "Der Diskurs verschiebt sich eher auf die Deutung der Tat als auf den gesicherten Stand der Ermittlungen."
+          "resonance_space": "Sicherheits- und Klimadiskurs",
+          "resonance_risk": "Der Begriff kann Protest, Sabotage und Klimapolitik in einen gemeinsamen Bedrohungsrahmen ziehen.",
+          "normalization_potential": "Die wiederholte Nutzung kann den Ausdruck als Standarddeutung etablieren.",
+          "repetition_effect": "Wiederholung erhöht das Risiko eines Illusory-Truth-Effekts.",
+          "trust_effect": "Die Zuschreibung kann Vertrauen in die Sachklärung schwächen, solange der Motivnachweis offen bleibt.",
+          "polarization_potential": "hoch",
+          "discourse_effect": "Die Debatte kann sich von der Tatklärung hin zur Kampfbegriff-Frage verschieben."
         },
         "impact_path": {
-          "first_order": "Die Überschrift setzt einen starken Deutungsrahmen, bevor der Ermittlungsstand vollständig geklärt ist.",
-          "second_order": "Lesende können die politische Einordnung mit einem amtlich gesicherten Befund verwechseln oder den Fall stärker politisieren.",
-          "third_order": "Bei Wiederholung kann sich ein allgemeiner Deutungsrahmen für ähnliche Vorfälle etablieren, der die Sprache der Berichterstattung prägt."
+          "first_order": "Der Begriff rahmt die Meldung als Sicherheits- und Extremismusfall.",
+          "second_order": "Er kann politische Anschlusskommunikation und Nachfrage nach schärferen Schutzmaßnahmen verstärken.",
+          "third_order": "Bei unkritischer Wiederholung kann sich eine vorläufige Deutung als gefühlte Gewissheit verfestigen."
         },
         "evidence": {
           "status": "medium",
-          "what_is_known": "Die Meldung nennt die laufende Fahndung, einen SEK-Einsatz und die politische Einordnung durch Dobrindt; sie verweist auf weitere Funde und Vorfälle an Umspannwerken.",
-          "what_is_inferred": "Dass der Begriff als politischer Frame Wirkung entfalten kann, folgt aus seiner Platzierung in Überschrift und Text, nicht aus einer belegten Absicht.",
-          "what_is_open": "Offen bleiben der belastbar gesicherte Tathergang, die Täterschaft, die Motivation und die Frage, ob die Einordnung als „Klimaextremismus“ durch Ermittlungen gestützt wird."
+          "what_is_known": "Dobrindt verwendet den Begriff im Zusammenhang mit den Vorfällen an Umspannwerken.",
+          "what_is_inferred": "Die Formulierung kann den Resonanzraum der Meldung stark verengen.",
+          "what_is_open": "Ob die Motivzuschreibung trägt, ist in der Quelle nicht unabhängig belegt."
         },
-        "editorial_assessment": "Die Formulierung sollte als Akteurszitat klar von den berichteten Ereignissen getrennt und im Titel oder Lead stärker als Einordnung kenntlich gemacht werden.",
+        "editorial_assessment": "Die Formulierung ist klar zu attribuieren und nicht als amtlich bestätigter Tatbestand zu übernehmen.",
         "fact_first_reframe": {
           "title": "Fahndung nach Verdächtigem nach Vorfällen an Umspannwerken läuft",
-          "source_summary": "Nach dem Bericht laufen Ermittlungen und Fahndung im Zusammenhang mit Vorfällen an deutschen Umspannwerken weiter. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Einordnung stammt aus der Aussage des Ministers und ist in der vorliegenden Quelle nicht als amtlich gesicherter Befund ausgewiesen.\n\nDer Bericht erwähnt zudem einen SEK-Einsatz am Hambacher Forst sowie weitere Funde in Brandenburg, Nordrhein-Westfalen und Sachsen. Umspannwerke werden als kritische Infrastruktur beschrieben. Die genauen Hintergründe, die Täterschaft und die Motivation bleiben in der Quelle offen.",
-          "summary": "Die Fahndung nach einem Verdächtigen im Zusammenhang mit Vorfällen an Umspannwerken läuft weiter. Dobrindt bezeichnete die Taten als „Klimaextremismus“.",
-          "detail_summary": "Im Bericht werden Vorfälle an deutschen Umspannwerken und eine laufende Fahndung beschrieben. Bundesinnenminister Dobrindt ordnete die Sabotageversuche als „Klimaextremismus“ ein. Diese Aussage ist als politische Deutung des Ministers erkennbar und nicht als amtlich festgestellter Sachverhalt belegt. Zusätzlich nennt die Quelle einen SEK-Einsatz am Hambacher Forst sowie weitere Funde und Vorfälle in Brandenburg, Nordrhein-Westfalen und Sachsen. Die Berichterstattung verweist auf kritische Infrastruktur und auf mögliche Sicherheitsfolgen. Die Tatmotivation, die Täterschaft und der endgültige Ermittlungsstand bleiben offen."
+          "source_summary": "Die Quelle meldet mehrere Vorfälle an Umspannwerken und eine laufende Fahndung. Dobrindt bezeichnet die Taten als „Klimaextremismus“, eine unabhängige Bestätigung des Motivs liegt in der Quelle nicht vor.",
+          "summary": "Mehrere Vorfälle an Umspannwerken sind Thema der Meldung. Die politische Deutung als „Klimaextremismus“ stammt von Dobrindt und bleibt vorläufig.",
+          "detail_summary": "Gesichert ist, dass die Quelle von Vorfällen an Umspannwerken, weiteren Funden und einer laufenden Fahndung berichtet. Die Bezeichnung als „Klimaextremismus“ ist eine Zuschreibung eines Akteurs, nicht ein unabhängig belegter Tatbefund. Für die Öffentlichkeit relevant ist vor allem der Bezug zu kritischer Infrastruktur und die mögliche Störung der Versorgungssicherheit. Der Wirkpfad verläuft über reale Sicherheitsfolgen und über die politische Rahmung des Geschehens. Offen bleibt, wie groß die Schäden waren und ob die Motivzuschreibung trägt."
         },
-        "self_frame_warning": true,
+        "self_frame_warning": false,
         "source_comparison": {
           "sufficient_basis": false,
           "finding": ""
         }
       },
       "media_analysis_version": "1.0",
-      "media_checked_at": "2026-09-05T09:44:12.170Z",
+      "media_checked_at": "2026-09-05T10:57:29.473Z",
       "first_seen": "2026-09-04T17:11:33.000Z",
-      "last_updated": "2026-09-05T09:32:59.604Z",
-      "version": 3,
-      "news_status": "developing",
+      "last_updated": "2026-09-05T10:59:56.119Z",
+      "version": 4,
+      "news_status": "preliminary",
       "event_id": "event-5f3d82645fd193edc18e",
       "case_file": null,
       "source_published_at": "2026-09-04T17:11:33.000Z",
@@ -1219,98 +1480,6 @@
       ]
     },
     {
-      "story_id": "wt-bba0a3bb9ff283b4",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-d95e45b43d8ec572-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-1e9435421e5cf3d3-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bba0a3bb9ff283b4-f023c92e0aa48540-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "nach-cyberangriff-auf-berlins-verwaltung-stundenzettel-im-darknet-f283b4",
-      "title": "Nach Cyberangriff auf Berlins Verwaltung: Stundenzettel im Darknet",
-      "source_summary": "Die Quelle berichtet über den Berliner Cyberangriff und das Auslaufen eines Ultimatums an den Senat. Danach habe die Hackergruppe Rhysida die erbeuteten Daten im Darknet veröffentlicht; die Redaktion verweist auf eine laufende Prüfung durch die Senatskanzlei.\n\nGenannt werden als mögliche Inhalte unter anderem Bauangelegenheiten, Notfallpläne, Bewerbungsverfahren, Stundenzettel, Wiedereingliederungsmaßnahmen und Betriebsratsunterlagen. Außerdem heißt es, die Erpresser hätten 30 Bitcoin verlangt, und der Senat habe vorab erklärt, kein Lösegeld zu zahlen. Betroffene sollen nach Angaben der Senatskanzlei kontaktiert werden.",
-      "summary": "Nach dem Berliner Cyberangriff sollen gestohlene Daten im Darknet veröffentlicht worden sein. Der Senat lässt die Dateien prüfen und will betroffene Personen kontaktieren.",
-      "detail_summary": "Gesichert belegt ist nach der vorliegenden Quelle vor allem die Abfolge: Das Ultimatum an den Berliner Senat lief ab, danach wurden die Daten von der Hackergruppe Rhysida öffentlich zugänglich gemacht. Die Meldung nennt außerdem die zuvor geforderte Lösegeldsumme von 30 Bitcoin und verweist darauf, dass der Senat keine Zahlung leisten wollte. Inhaltlich sollen in den Dateien unter anderem Verwaltungsdokumente, Stundenzettel, Bewerbungsunterlagen und Notfallpläne liegen. Für die Betroffenen bedeutet das ein mögliches Risiko von Identitätsmissbrauch, zusätzlicher Informationsoffenlegung und administrativem Aufwand. Materiell relevant ist der Vorgang vor allem wegen der Sensibilität der veröffentlichten Verwaltungsdaten und möglicher Folgekaskaden für Beschäftigte und Verwaltung. Offen bleibt hier, wie groß der tatsächlich zugängliche Datensatz ist und welche betroffenen Personen oder Stellen bereits sicher identifiziert wurden.",
-      "why_relevant": "Der Vorgang betrifft sensible Verwaltungsdaten, mögliche Identitätsrisiken und die Reaktion einer Landesverwaltung auf Erpressung nach einem Cyberangriff.",
-      "topic": [
-        "Digitalisierung"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Die Veröffentlichung kann Beschäftigte und weitere Betroffene durch Offenlegung sensibler Verwaltungsdaten direkt betreffen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus der Quelle ergibt sich kein direkter Umweltbezug."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind Vertraulichkeit, Verwaltungsfähigkeit und das Vertrauen in staatliche Informationssicherheit."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "first_seen": "2026-09-05T08:20:00.000Z",
-      "last_updated": "2026-09-05T08:37:06.303Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-d19b8d8749731496b454",
-      "case_file": null,
-      "source_published_at": "2026-09-05T08:20:00.000Z",
-      "published_at": "2026-09-05T08:37:06.303Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "taz-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob der Senat betroffene Personen und Unternehmen identifiziert und informiert hat.",
-          "source_id": "taz-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Offizielle Mitteilung oder bestätigte Benachrichtigungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-38f1d8923e28a376",
-          "announced_at": "2026-09-05T08:20:00.000Z",
-          "follow_up_date": "2026-09-12T08:37:06.303Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Nach-Cyberangriff-auf-Berlins-Verwaltung/!6210487",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T08:20:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-015e477e516f3f8b",
       "title_image": {
         "mode": "impact_card",
@@ -1502,166 +1671,6 @@
           "url": "https://www.hessenschau.de/wirtschaft/bruecken-neubau-im-marburger-norden-gestartet-wieder-bahnsperrungen-geplant-v3,bruecke-marburg-104.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T15:07:42.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-d7a0af1afc831caf",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7a0af1afc831caf-9d0d0d8e5e826b5b-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7a0af1afc831caf-b6e9fb81ee09adbc-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7a0af1afc831caf-a1202df6adf80d57-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
-      "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-      "source_summary": "Mehrere deutschsprachige Berichte greifen eine Ankündigung von Wolodymyr Selenskyj auf, wonach US-Vermittler am Sonntag nach Kiew reisen sollen. Genannt werden dabei Witkoff und Kushner; in einer Fassung heißt es auch, sie sollten zuvor nach Moskau reisen und die Ukraine garantiere die Sicherheit im russischen Luftraum.\n\nDeutschlandfunk ergänzt, Trump habe die Reisepläne bestätigt. Demnach sollen die beiden einen Vorschlag zur Beendigung des Krieges unterbreiten, ohne dass Trump ins Detail ging. Zugleich wird darauf verwiesen, dass die bisherigen US-Vermittlungsbemühungen weitgehend erfolglos gewesen seien.",
-      "summary": "Selenskyj kündigt einen Besuch der US-Vermittler Witkoff und Kushner in Kiew an. Trump bestätigt die Reise und spricht von einem Vorschlag zur Beendigung des Krieges.",
-      "detail_summary": "Gesichert ist vor allem die Ankündigung eines neuen Vermittlungsversuchs im Ukraine-Krieg: Nach den vorliegenden Berichten sollen Witkoff und Kushner am Sonntag in Kiew erwartet werden, Trump hat die Reisepläne bestätigt. Das ist journalistisch relevant, weil damit ein konkreter diplomatischer Kontaktpunkt benannt wird, der den Verhandlungsstand zwischen Kiew, Washington und indirekt Moskau verändern kann. Der Wirkpfad liegt in der Frage, ob aus dem Besuch ein belastbarer Vorschlag, neue Gesprächskanäle oder politische Zusagen entstehen. Kurzfristig möglich sind zusätzliche Verhandlungsdynamik, aber auch bloß symbolische Bewegung ohne Substanz. Die Evidenz bleibt begrenzt, weil die Quellen nur die Ankündigung und Trumps knappe Bestätigung wiedergeben, nicht aber den Inhalt des Vorschlags oder eine unabhängige Verifikation der Reise selbst.",
-      "why_relevant": "Die Meldung betrifft einen konkreten diplomatischen Schritt in einem laufenden Krieg und damit potenziell die Bedingungen für Verhandlungen, Kurswechsel und weitere politische Entscheidungen.",
-      "topic": [
-        "Geopolitik"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Der Vorgang kann mittelbar Sicherheitslage, Kriegsdauer und Verhandlungschancen betreffen, aber die unmittelbare Wirkung ist noch offen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Bezug zu Umwelt- oder Klimawirkungen ist in den Quellen nicht erkennbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Meldung betrifft staatliche Außenpolitik und die öffentliche Nachvollziehbarkeit von Vermittlungsversuchen, aber keine demokratische Entscheidung im engeren Sinn."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "first_seen": "2026-09-04T17:21:16.000Z",
-      "last_updated": "2026-09-05T05:32:14.214Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-0fef8df3a32c15bcde8d",
-      "case_file": null,
-      "source_published_at": "2026-09-04T17:21:16.000Z",
-      "published_at": "2026-09-04T20:51:47.279Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 2
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die US-Vermittler tatsächlich am Sonntag in Kiew eintreffen.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": "2026-09-06",
-          "measurable_indicator": "Berichte oder Bestätigungen zum tatsächlichen Eintreffen in Kiew",
-          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
-          "followup_id": "followup-cd96130eabd68579",
-          "announced_at": "2026-09-04T20:13:08.000Z",
-          "follow_up_date": "2026-09-06T00:00:00.000Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Die angekündigte Reise nach Kiew findet am Sonntag tatsächlich statt.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": "2026-09-06",
-          "measurable_indicator": "Berichte oder offizielle Bestätigungen zur Ankunft der beiden Gesandten in Kiew",
-          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
-          "followup_id": "followup-251b04897a03035a",
-          "announced_at": "2026-09-04T20:13:08.000Z",
-          "follow_up_date": "2026-09-06T05:32:14.214Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:21:16.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:22:14.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T17:46:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T20:13:08.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T04:32:04.000Z",
           "primary_source": false
         }
       ]
@@ -4695,87 +4704,6 @@
       ]
     },
     {
-      "story_id": "wt-b076e0c16bf4a2e8",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b076e0c16bf4a2e8-8e797a47103214ad-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b076e0c16bf4a2e8-0f099572a8a95c41-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b076e0c16bf4a2e8-2c6f7c1b71819455-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "iran-krieg-us-dieselpreis-auf-hochststand-f4a2e8",
-      "title": "Iran-Krieg: US-Dieselpreis auf Höchststand",
-      "source_summary": "Der Bericht meldet für die USA einen neuen Höchststand beim Dieselpreis. Als Quelle für den Durchschnittspreis nennt der Text den Automobilclub AAA und verweist auf den Freitag.\n\nGenannt werden 5,85 Dollar pro Gallone sowie der Vergleichswert von 3,71 Dollar pro Gallone vor einem Jahr. Außerdem heißt es, Diesel werde in den USA überwiegend in Nutzfahrzeugen getankt. Eine weitergehende Einordnung der Ursachen oder Folgen enthält der Quellentext nicht.",
-      "summary": "Der US-Dieselpreis hat laut der Meldung einen neuen Höchststand erreicht. Genannt werden 5,85 Dollar pro Gallone und ein Vorjahreswert von 3,71 Dollar.",
-      "detail_summary": "Gesichert ist nach der gelieferten Quelle vor allem ein neuer Höchststand beim US-Dieselpreis. Das ist für Transport, Landwirtschaft und Warenverkehr relevant, weil Diesel in den USA überwiegend in Nutzfahrzeugen genutzt wird. Der unmittelbare Wirkpfad läuft über höhere Betriebskosten bei Speditionen und landwirtschaftlichen Betrieben, die sich je nach Preissetzungskette auch auf Endpreise auswirken können. Als mögliche Folge kommen Belastungen für margenarme Unternehmen und indirekt für Verbraucherinnen und Verbraucher in Betracht. Die Evidenz bleibt vorläufig, weil hier nur ein journalistischer Bericht mit Verweis auf AAA vorliegt und keine unabhängige zweite Quelle oder Primärdaten im Material enthalten sind.",
-      "why_relevant": "Der Meldungskern betrifft einen neuen Preis-Höchststand bei einem zentralen Vorprodukt für Transport und Landwirtschaft. Das kann Kostenstrukturen und damit reale wirtschaftliche Zustände verändern.",
-      "topic": [
-        "Europa",
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Höhere Dieselpreise können Transport- und Lebenshaltungskosten in mehreren Sektoren beeinflussen, besonders bei Haushalten mit hoher Warenpreisexposition."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Aus dem Quellenmaterial ergibt sich keine direkte Umweltwirkung; höchstens indirekte Effekte über Verkehrs- und Kraftstoffkosten."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Es geht primär um Marktpreise und Kosten, nicht um institutionelle Entscheidungs- oder Beteiligungsprozesse."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "first_seen": "2026-09-04T13:42:24.000Z",
-      "last_updated": "2026-09-04T13:53:07.692Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-1c73422aa65b168ca042",
-      "case_file": null,
-      "source_published_at": "2026-09-04T13:42:24.000Z",
-      "published_at": "2026-09-04T13:53:07.692Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/iran-krieg--us-dieselpreis-auf-hoechststand-38209606.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T13:42:24.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-3c6be5c124113650",
       "title_image": {
         "mode": "impact_card",
@@ -4872,8 +4800,10 @@
           "expected_by_evidence_hash": "7084b04dc7f9a877497dbd411e5939594552730523f3df6399a68a942632da46",
           "followup_id": "followup-67de102d7468f78f",
           "announced_at": "2026-09-04T08:43:18.000Z",
-          "follow_up_date": "2026-09-11T09:47:23.735Z",
-          "status": "scheduled"
+          "follow_up_date": "2026-09-12T10:57:29.473Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-05T10:57:29.473Z",
+          "last_check_result": "no_verified_material_update"
         },
         {
           "claim": "Vorführung des Tatverdächtigen beim Haftrichter",
@@ -4883,8 +4813,10 @@
           "expected_by_evidence_hash": "51b24f1c3420462ba11f2c5a3df70788d32cfa16fb5f9c097f20e465dc06c015",
           "followup_id": "followup-556fded2c9f12ac2",
           "announced_at": "2026-09-04T08:43:18.000Z",
-          "follow_up_date": "2026-09-05T10:22:12.643Z",
-          "status": "scheduled"
+          "follow_up_date": "2026-09-12T10:57:29.473Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-05T10:57:29.473Z",
+          "last_check_result": "no_verified_material_update"
         }
       ],
       "sources": [

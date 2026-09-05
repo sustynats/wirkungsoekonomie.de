@@ -4827,6 +4827,82 @@
       },
       "source_failures": 0,
       "quality_holds": 42
+    },
+    {
+      "run_id": "news-run-aa7eada5418b",
+      "started_at": "2026-09-05T10:57:29.473Z",
+      "completed_at": "2026-09-05T11:00:15.553Z",
+      "berlin_slot": "Mittagsupdate",
+      "counts": {
+        "feed_entries_fetched": 946,
+        "feed_entries_new": 33,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 526,
+        "story_clusters": 44,
+        "locally_rejected": 41,
+        "ai_stories": 12,
+        "ai_requests": 12,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 372778,
+        "media_checks_triggered": 5,
+        "media_checks_skipped": 7,
+        "media_check_tokens": 2754,
+        "self_frame_rewrites": 0,
+        "published_stories": 0,
+        "updated_stories": 1
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 97737,
+        "output_tokens": 8636,
+        "estimated_cost_usd": 0.07605,
+        "token_source": "provider_reported_usage",
+        "media_check_tokens": 2754,
+        "media_check_cost_usd": 0.009243
+      },
+      "source_failures": 0,
+      "quality_holds": 36
+    },
+    {
+      "run_id": "news-run-5b6ff040dac0",
+      "started_at": "2026-09-05T11:12:42.527Z",
+      "completed_at": "2026-09-05T11:15:28.043Z",
+      "berlin_slot": "manueller Lauf",
+      "counts": {
+        "feed_entries_fetched": 872,
+        "feed_entries_new": 11,
+        "feed_entries_backfilled": 0,
+        "feed_entries_deduplicated": 504,
+        "story_clusters": 16,
+        "locally_rejected": 17,
+        "ai_stories": 12,
+        "ai_requests": 12,
+        "reviews_reused": 0,
+        "input_holds": 0,
+        "prompt_chars_sent": 384465,
+        "media_checks_triggered": 3,
+        "media_checks_skipped": 9,
+        "media_check_tokens": 1426,
+        "self_frame_rewrites": 0,
+        "published_stories": 1,
+        "updated_stories": 1
+      },
+      "ai": {
+        "requests": 12,
+        "provider": "Oracle WOeK-KI API",
+        "model": "gpt-5.4-mini",
+        "input_tokens": 99736,
+        "output_tokens": 12295,
+        "estimated_cost_usd": 0.094014,
+        "token_source": "provider_reported_usage",
+        "media_check_tokens": 1426,
+        "media_check_cost_usd": 0.004842
+      },
+      "source_failures": 0,
+      "quality_holds": 27
     }
   ]
 }
