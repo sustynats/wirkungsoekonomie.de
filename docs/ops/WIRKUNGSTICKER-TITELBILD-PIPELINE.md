@@ -78,6 +78,11 @@ im normalen Lauf wiederaufgenommen, fachlich gesperrte Motive nicht neu erzeugt.
 - OAuth-Konfiguration: `/home/ubuntu/.config/higgsfield/`, 0700; Dateien 0600.
   Offiziell erzeugte Credentials wurden über SSH übertragen, nicht in Git/CI.
 - Journal/Originale/Reservierungen: `/opt/faktencheck-bot/data/news-title-images/`.
+- Wirkungsticker und Parliament verwenden nach der Parliament-Erweiterung
+  denselben vorhandenen serverweiten Lock `data/news-title-images/generation.lock`
+  und dasselbe private Reservierungsjournal `data/news-title-images/credits.json`;
+  dadurch kann die eine Oracle-CLI nie parallel für beide Workloads
+  kostenpflichtig submitten.
 - Systemd-Drop-in: `oracle-higgsfield.conf`; die vorhandene `.env` bleibt erhalten.
 - Ubuntu 24.04: `tesseract-ocr=5.3.4-1build5`, `tesseract-ocr-eng=1:4.1.0-2`.
 - Backendänderung: `patches/oracle-title-images-20260904.patch`. Vor Anwendung
@@ -177,6 +182,11 @@ Dateinamen enthalten Story-ID, Hash/Fingerprint und Ausgabeformat. Keine Übersc
 bereits vorhandene Assets müssen Größe und SHA-256 bestätigen. Interne Prompts,
 Journalpfade und Providerantworten sind nicht im öffentlichen JSON enthalten.
 Große Bilder liegen nicht im Website-Git und nicht auf Vercel.
+
+Die verwandte Parliament-Referenzbildstrecke ist in
+`PARLAMENT-WIRKUNGSBILDER-ORACLE-HIGGSFIELD.md` dokumentiert. Sie läuft im
+gleichen Oracle-Dienst, akzeptiert keine freien Prompts oder rohen
+Wahlprogrammtexte und ändert den Nachrichten-Fallback nicht.
 
 ## Abnahme
 
