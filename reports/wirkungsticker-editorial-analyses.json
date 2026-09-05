@@ -2,25 +2,65 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-05T18:23:47.764Z",
+  "started_at": "2026-09-05T18:38:22.143Z",
   "scanned_stories": 89,
   "scanned_subjects": 65,
   "editorial_candidates": 7,
-  "ready_for_research": 0,
+  "ready_for_research": 1,
   "research_pending": 3,
   "editorial_research_sources_discovered": 6,
-  "selected": 0,
-  "editorial_research_started": 0,
+  "selected": 1,
+  "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
-  "quality_retries": 0,
+  "research_calls": 2,
+  "research_tokens": 15233,
+  "analysis_tokens": 9083,
+  "estimated_cost_usd": 0.052298,
+  "quality_retries": 1,
   "publication_deferred": false,
-  "failed": [],
+  "failed": [
+    {
+      "story_id": "wt-3d901522efd87e2d",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH"
+    }
+  ],
   "candidates": [
+    {
+      "story_id": "wt-3d901522efd87e2d",
+      "story_slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
+      "story_title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+      "editorial_analysis_score": 70,
+      "analysis_gain": 47,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 9,
+        "impact_risk": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 5,
+        "transformation_relevance": 3,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 8,
+        "evidence_quality": 8
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 6,
+        "primary_source_count": 0,
+        "cited_claim_count": 20,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "fdcacf32e79f464ef271fee2ad82843b3252958eb7d9531c9845fecd635ac781",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-cf42f2c67306"
+    },
     {
       "story_id": "wt-6a7145e6dc679f95",
       "story_slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
@@ -93,41 +133,6 @@
       "fingerprint": "009de1fc2b2d661492718cc8e0fd9446585289a1ba044ac23d5a7520a875a3d3",
       "status": "published",
       "analysis_id": "woek-analysis-166b13117cb1"
-    },
-    {
-      "story_id": "wt-3d901522efd87e2d",
-      "story_slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
-      "story_title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
-      "editorial_analysis_score": 72,
-      "analysis_gain": 46,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 9,
-        "impact_risk": 8,
-        "observed_impact": 0,
-        "third_order_relevance": 5,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 0,
-        "discourse_relevance": 0,
-        "case_depth": 8,
-        "evidence_quality": 8
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 5,
-        "primary_source_count": 0,
-        "cited_claim_count": 21,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "6050c749ed2800ac1c360d181c19b6115714eae2c6db9b871a0c8f0931f179f8",
-      "status": "published",
-      "analysis_id": "woek-analysis-cf42f2c67306"
     },
     {
       "story_id": "wt-aabe8c0430bf8f84",
@@ -274,5 +279,6 @@
       "status": "published",
       "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
-  ]
+  ],
+  "completed_at": "2026-09-05T18:39:18.808Z"
 }
