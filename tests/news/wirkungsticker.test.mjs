@@ -77,7 +77,7 @@ test("Growing living files retain all evidence identities, roles and claims with
     assert.equal(expanded.source_id,sources[n].source_id);
     assert.equal(expanded.primary_source,sources[n].primary_source);
     assert.deepEqual(expanded.provenance ? {...compact.provenance_defaults,...expanded.provenance} : null,sources[n].provenance||null);
-    assert.ok(expanded.evidence_segments.length>=2);
+    assert.ok(expanded.evidence_segments.length>=1);
     if(s.abstract_claim_id) assert.ok(compact.claims.some(c=>c.claim_id===s.abstract_claim_id&&c.claim.includes(sources[n].summary)));
   });
   assert.deepEqual(compact.claims.map(c=>{
@@ -86,6 +86,36 @@ test("Growing living files retain all evidence identities, roles and claims with
     return fields;
   }),story.claims);
   assert.deepEqual(story,before);
+});
+
+test("Large parliamentary hearings remain analyzable with one exact passage per source", () => {
+  const sources=Array.from({length:31},(_,n)=>({
+    source_id:"bundestag-hib",
+    url:`https://www.bundestag.de/presse/hib/kurzmeldungen-${1210250+n}`,
+    title:"Anhörung zur Änderung des Düngegesetzes",
+    summary:"Der Ausschuss dokumentiert eine eigenständige Stellungnahme aus der öffentlichen Anhörung zum Düngegesetz.",
+    article_excerpt:n<3?Array.from({length:80},(_,j)=>`Absatz ${j}: Stellungnahme ${n} nennt eine belegte Position, deren Kontext und fachliche Grenzen.`).join(" "):"",
+    published_at:`2026-09-04T15:${String(n).padStart(2,"0")}:00.000Z`,
+    primary_source:true,
+    source_role:"institutional_statement",
+  }));
+  const story={story_id:"wt-hearing",title:sources[0].title,sources,claims:sources.map((source,n)=>({
+    claim_id:`claim-${n}`,
+    claim:`${source.title}: ${source.summary}`,
+    source_id:source.source_id,
+    evidence_level:"Primärquelle",
+    uncertainty:"Die jeweilige Stellungnahme belegt die Position, nicht automatisch deren sachliche Richtigkeit.",
+  }))};
+  const prompt=buildAnalysisPrompt([story]);
+  assert.ok(prompt.length<=39000);
+  const [compact]=JSON.parse(prompt.split("UNTRUSTED_SOURCE_DATA_BEGIN\n")[1].split("\nUNTRUSTED_SOURCE_DATA_END")[0]).map(expandPacketTransport);
+  assert.equal(compact.sources.length,31);
+  assert.equal(compact.claims.length,31);
+  compact.sources.forEach((source,n)=>{
+    assert.equal(source.url,sources[n].url);
+    assert.ok(source.evidence_segments.length>=1);
+  });
+  assert.ok(compact.sources.some(source=>source.evidence_selection?.incomplete));
 });
 
 test("long feed claims factor exact source prefixes without dropping facts or provenance", () => {

@@ -682,7 +682,11 @@ export function fitAnalysisInput(input, budget) {
   const dense = serialized.length > budget;
   if (dense) serialized = serializeEvidencePackets(value, true);
   while (serialized.length > budget) {
-    const candidates = catalogs.filter(entry => entry.count > 2).sort((a,b) => b.count - a.count);
+    // One exact passage per source is the hard lower bound. Large hearings and
+    // evolving files can legitimately contain dozens of source documents; a
+    // two-passage minimum made those records permanently unprocessable even
+    // though every source identity, claim, URL and provenance still fit.
+    const candidates = catalogs.filter(entry => entry.count > 1).sort((a,b) => b.count - a.count);
     if (!candidates.length) {
       const error = new Error("AI_INPUT_TOO_LARGE"); error.requestAttempts = 0;
       error.inputChars = serialized.length; error.inputBudget = budget;
