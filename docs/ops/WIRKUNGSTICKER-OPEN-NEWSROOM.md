@@ -7,10 +7,10 @@ Stand: 5. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht 
 - Freigabe: höchstens **25 EUR monatlich für die Nachrichten-KI**. Das separate Vercel-Bruttobudget von 25 EUR bleibt unverändert. Kein Vercel-Build für dieses Paket; statische Veröffentlichung über GitHub Pages.
 - Nachrichten-Abos und bezahlte Nachrichten-/Agentur-APIs: **0 EUR**. Keine Login-/Paywall-Umgehung, keine Removepaywall-Anbindung. Öffentliche RSS-Metadaten sind keine Volltextlizenz.
 - `budget.mjs`: täglicher ECB-Kurs, höchstens sieben Tage alt; konservative USD-Grenze mit 19 % Steuer- und 10 % FX-Reserve, derzeit höchstens 18,90 USD. Ohne hinreichend frischen Kurs bleibt die KI zurückgestellt, Recherche läuft weiter.
-- Oracle: eigener authentifizierter `/api/news-analysis`-Zugang, `gpt-5.4-mini`, serielle Einzelanfragen, rollend höchstens 48 Anfragen in 60 Minuten, maximal 40.000 Zeichen Eingabe und 6.500 Ausgabetoken. Öffentliche KI-Ratenlimits werden nicht angehoben.
+- Oracle: eigener authentifizierter `/api/news-analysis`-Zugang, `gpt-5.4-mini`, serielle Einzelanfragen. Der Nachrichtenlauf nutzt rollend höchstens 40 der 48 verfügbaren Anfragen in 60 Minuten; acht Aufrufe bleiben für die unabhängigen Redaktions-/Mediengates und sichere Laufübergänge reserviert. Maximal 40.000 Zeichen Eingabe und 6.500 Ausgabetoken. Öffentliche KI-Ratenlimits werden nicht angehoben.
 - Nachrichtenmodus mit Reasoning `low` und eigenem JSON-Auftrag; kein angehängter allgemeiner Chat-Auftrag und keine sachfremden Website-Suchtreffer als Nachrichtenbeleg.
 - Dauerhaftes privates Oracle-Kostenjournal reserviert 0,25 USD vor einer Anfrage; fehlgeschlagene/unterbrochene Aufrufe behalten die Reserve. Erfolgreiche Aufrufe ohne technische Wiederholung werden mit gemeldeten Tokenzahlen abgerechnet. September-Altkosten wurden mit 3 USD einschließlich Sicherheitsreserve übernommen. Der übergeordnete bestehende API-Kostenschutz bleibt wirksam.
-- Ein festes Budget begrenzt die Zahl bearbeitbarer Kandidaten. 48 Anfragen in 60 Minuten sind technische Spitzenkapazität, keine Zusage dauerhafter Vollauslastung oder vollständiger Berichterstattung.
+- Ein festes Budget begrenzt die Zahl bearbeitbarer Kandidaten. 40 Nachrichtenaufrufe in 60 Minuten sind die reservierte Spitzenkapazität, keine Zusage dauerhafter Vollauslastung oder vollständiger Berichterstattung. HTTP 429 wird als erwartbare Kapazitätsdrosselung eingeordnet und in der dauerhaften Queue erneut versucht, nicht als KI-Anbieterausfall gemeldet.
 
 ## Umsetzung A–N
 

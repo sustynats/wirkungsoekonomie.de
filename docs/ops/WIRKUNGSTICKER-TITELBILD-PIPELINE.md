@@ -131,7 +131,7 @@ abgeholt werden. Normalläufe verarbeiten bis zu vier Bilder seriell innerhalb d
 bestehenden Vier-Minuten-Zeitfensters, neue Nachrichten zuerst. Das ist ein
 Laufzeitschutz, kein Tages- oder Monatsbudget. Das 25-EUR-Text-KI-Budget bleibt bestehen.
 
-Nachrichten: bis 12 KI-Kandidaten/Lauf und 48 Aufrufe/rollender Stunde, seriell und
+Nachrichten: bis 12 KI-Kandidaten/Lauf und 40 Aufrufe/rollender Stunde, seriell und
 mit unverändertem Monatsgate. KI-Zeitbudget 7 Minuten, Bilder 4 Minuten; Rest wird
 dauerhaft vertagt. Der Workflow hat eine äußere 35-Minuten-Sicherheitsgrenze.
 Ein rotes Quellen-/KI-Health-Gate bleibt sichtbar; Teilresultate werden vorher gesichert.
