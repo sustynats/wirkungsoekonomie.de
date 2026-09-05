@@ -41,3 +41,12 @@ test("technical evidence codes are translated on every public detail surface", (
   assert.equal(evidenceLevelLabel("single_source_claim mit bezifferten Angaben"), "einer Quelle zugeschrieben mit bezifferten Angaben");
   assert.equal(evidenceLevelLabel("attributed_single_source: mehrere Berichte"), "zugeschriebene Quellenlage: mehrere Berichte");
 });
+
+test("public ticker copy explains quality without infrastructure internals", () => {
+  const html = fs.readFileSync(new URL("../../wirkungsticker/index.html", import.meta.url), "utf8");
+  assert.doesNotMatch(html, /\b(?:Oracle|OCI|Higgsfield|OpenAI|Anthropic|GPT-\d)/i);
+  assert.doesNotMatch(html, /URL-\/Hash-Deduplizierung|Story-Clustering|Fail closed/i);
+  assert.match(html, /Vorprüfen und bündeln/);
+  assert.match(html, /Nur Belastbares veröffentlichen/);
+  assert.match(html, /Name und E-Mail-Adresse sind nicht erforderlich/);
+});
