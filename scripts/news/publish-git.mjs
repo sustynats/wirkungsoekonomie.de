@@ -1,10 +1,48 @@
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
+import { isDeepStrictEqual } from "node:util";
+import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 const exec = promisify(execFile);
 
 const GENERATED_PATHS = ["news", "wirkungsticker", "sitemap.xml", "assets/search/search-index.json", "public/data/woek-search-meta.json", "content/taxonomy/site-map.json", "umfragen", "admin/umfragen", "reports/wirkungsticker-source-integrity.json", "reports/wirkungsticker-source-portfolio.json", "data/wirkungsticker/source-audit-2026-09-05.json"];
+const STORY_STORE = "data/news/stories.json";
+
+// Merge whole story records, never prose, evidence, versions or source arrays.
+// Two different changes to the same record remain a real conflict, even when
+// one timestamp is newer. A newer editor must not silently lose their work.
+export function mergeDisjointStoryStores(base, upstream, worker) {
+  const index = store => {
+    if (!store || !Array.isArray(store.stories) || typeof store.schema_version !== "string" || !Number.isFinite(Date.parse(store.updated_at))) throw new Error("STORY_STORE_INVALID");
+    const rows = new Map();
+    for (const story of store.stories) {
+      if (!story || typeof story.story_id !== "string" || !story.story_id || rows.has(story.story_id)) throw new Error("STORY_IDENTITIES_INVALID");
+      rows.set(story.story_id, story);
+    }
+    return rows;
+  };
+  const b = index(base), u = index(upstream), w = index(worker);
+  const mergeValue = (old, left, right) => {
+    if (isDeepStrictEqual(left, right)) return left;
+    if (isDeepStrictEqual(left, old)) return right;
+    if (isDeepStrictEqual(right, old)) return left;
+    throw new Error("STORY_RECORD_OVERLAP");
+  };
+  const merged = {};
+  for (const key of new Set([...Object.keys(base), ...Object.keys(upstream), ...Object.keys(worker)])) {
+    if (key === "stories" || key === "updated_at") continue;
+    const value = mergeValue(base[key], upstream[key], worker[key]);
+    if (value !== undefined) merged[key] = value;
+  }
+  merged.updated_at = [upstream.updated_at, worker.updated_at].sort((a, b) => Date.parse(b) - Date.parse(a))[0];
+  merged.stories = [];
+  for (const id of new Set([...u.keys(), ...w.keys(), ...b.keys()])) {
+    const record = mergeValue(b.get(id), u.get(id), w.get(id));
+    if (record !== undefined) merged.stories.push(record);
+  }
+  return merged;
+}
 export function regeneratablePublicationPath(file) {
   if (file.includes("..") || file.startsWith("/")) return false;
   return GENERATED_PATHS.filter(base => base.includes(".")).includes(file)
@@ -14,7 +52,7 @@ export function regeneratablePublicationPath(file) {
 }
 const stdout = result => typeof result === "string" ? result : result?.stdout || "";
 async function git(args) {
-  return exec("git", args, { maxBuffer: 4 * 1024 * 1024, env: { ...process.env, GIT_EDITOR: "true" } });
+  return exec("git", args, { maxBuffer: 64 * 1024 * 1024, env: { ...process.env, GIT_EDITOR: "true" } });
 }
 async function rebuildPublication() {
   // No collection, image generation or paid analysis. Re-render the retained
@@ -25,7 +63,7 @@ async function rebuildPublication() {
   }
 }
 
-export async function publishGitUpdate({ run = git, rebuild = rebuildPublication, sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) } = {}) {
+export async function publishGitUpdate({ run = git, rebuild = rebuildPublication, writeStoryStore = store => fs.writeFileSync(STORY_STORE, `${JSON.stringify(store, null, 2)}\n`), sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) } = {}) {
   let regenerated = false;
   for (let attempt = 1; attempt <= 3; attempt++) {
     const before = stdout(await run(["rev-parse", "HEAD"])).trim();
@@ -35,14 +73,29 @@ export async function publishGitUpdate({ run = git, rebuild = rebuildPublication
     } catch (error) {
       const conflicts = stdout(await run(["diff", "--name-only", "--diff-filter=U", "-z"])).split("\0").filter(Boolean);
       if (!conflicts.length) throw error;
-      if (!conflicts.every(regeneratablePublicationPath)) {
+      let combinedStories;
+      if (conflicts.includes(STORY_STORE)) {
+        try {
+          // In a rebase: stage 1 = common base, 2 = upstream, 3 = worker.
+          const versions = await Promise.all([1, 2, 3].map(async stage => JSON.parse(stdout(await run(["show", `:${stage}:${STORY_STORE}`])))));
+          combinedStories = mergeDisjointStoryStores(...versions);
+        } catch { /* Malformed or overlapping records stay blocked. */ }
+      }
+      if (!conflicts.every(file => regeneratablePublicationPath(file) || (file === STORY_STORE && combinedStories))) {
         // Restore our own pre-rebase state; canonical data, source code and
         // history are never resolved by choosing a side or force-pushing.
         await run(["rebase", "--abort"]);
         throw new Error(`PUBLISH_CANONICAL_CONFLICT:${conflicts.join(",")}`, { cause: error });
       }
-      await run(["restore", "--source=HEAD", "--staged", "--worktree", "--", ...conflicts]);
-      try { await run(["-c", "core.editor=true", "rebase", "--continue"]); }
+      try {
+        if (combinedStories) {
+          await writeStoryStore(combinedStories);
+          await run(["add", "--", STORY_STORE]);
+        }
+        const generatedConflicts = conflicts.filter(regeneratablePublicationPath);
+        if (generatedConflicts.length) await run(["restore", "--source=HEAD", "--staged", "--worktree", "--", ...generatedConflicts]);
+        await run(["-c", "core.editor=true", "rebase", "--continue"]);
+      }
       catch (failure) { await run(["rebase", "--abort"]); throw failure; }
       recovered = true;
     }
