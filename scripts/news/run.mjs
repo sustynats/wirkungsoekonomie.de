@@ -492,6 +492,11 @@ export function partitionAiQueue(eligible, stage, maxStories) {
   return { selected, deferred: eligible.filter((candidate) => !selectedIds.has(candidate.story_id)) };
 }
 
+export function aiDeferralReason(candidate, stage, remainingCalls) {
+  if (stage.stage >= 3 || (!candidate.reassessment && candidate.preanalysis.internal_relevance_score < stage.threshold)) return "AI_BUDGET_BLOCKED";
+  return remainingCalls === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
+}
+
 export function retainUsageHistory(runs, now) {
   const month = String(now).slice(0, 7);
   // Frequent headless runs must not erase this month's spend after 400 runs.
@@ -934,8 +939,9 @@ export async function runWirkungsticker(options = {}) {
   report.ai_batch_size = aiBatchSize;
   report.ai_batches_planned = Math.ceil(selected.length / aiBatchSize);
 
-  const deferredReason = stage.stage >= 3 ? "AI_BUDGET_BLOCKED" : remainingAiCallsThisHour === 0 ? "AI_HOURLY_CALL_LIMIT" : "AI_BUDGET_OR_BATCH_LIMIT";
   for (const candidate of deferred) {
+    const deferredReason = aiDeferralReason(candidate, stage, remainingAiCallsThisHour);
+    if (deferredReason === "AI_BUDGET_BLOCKED") report.budget_deferred = Number(report.budget_deferred || 0) + 1;
     bumpCandidateFunnel(sourceFunnel, candidate, "capacity_deferred");
     byId.set(candidate.story_id, pendingRecord(candidate, deferredReason, now));
     report.quality_holds.push({ story_id: candidate.story_id, reason: deferredReason });
