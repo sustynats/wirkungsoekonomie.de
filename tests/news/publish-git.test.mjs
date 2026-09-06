@@ -49,7 +49,7 @@ test("persistent push failures stop after three attempts", async () => {
 });
 
 test("only reproducible publication outputs are eligible for conflict recovery",()=>{
-  for(const file of ['wirkungsticker/quellen/bild/index.html','wirkungsticker/data/stories.json','news/feed.xml','assets/search/search-index.json']) assert.equal(regeneratablePublicationPath(file),true,file);
+  for(const file of ['wirkungsticker/quellen/bild/index.html','wirkungsticker/data/stories.json','news/feed.xml','news/index.html','news/legacy-story/index.html','assets/search/search-index.json']) assert.equal(regeneratablePublicationPath(file),true,file);
   for(const file of ['data/news/stories.json','scripts/news/build.mjs','content/news/source-registry.json','wirkungsticker/manual.md','wirkungsticker/image.png','../wirkungsticker/index.html']) assert.equal(regeneratablePublicationPath(file),false,file);
 });
 test("real git race regenerates pages with new renderer and preserves news data", async t=>{

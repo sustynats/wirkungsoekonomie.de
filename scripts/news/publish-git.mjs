@@ -48,6 +48,7 @@ export function regeneratablePublicationPath(file) {
   if (file.includes("..") || file.startsWith("/")) return false;
   return GENERATED_PATHS.filter(base => base.includes(".")).includes(file)
     || /^news\/feed\.(?:xml|atom|json)$/.test(file)
+    || /^news\/(?:[a-z0-9-]+\/)*index\.html$/.test(file)
     || /^wirkungsticker\/(?:feed\.(?:xml|atom|json)|data\/stories\.json|(?:[a-z0-9-]+\/)*index\.html|(?:analyse\/|lage\/)?\.generated-[a-z-]+\.json)$/.test(file)
     || /^(?:admin\/)?umfragen\/(?:[a-z0-9-]+\/)*index\.html$/.test(file);
 }
