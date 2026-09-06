@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T07:16:30.989Z",
+  "updated_at": "2026-09-06T07:22:55.137Z",
   "stories": [
     {
       "publication_decision_review": {
@@ -21613,9 +21613,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "c601231694b343dabcfa5be2285f3420c48249d8e655a553f7d4c01bd0d1124c",
-        "checked_at": "2026-09-06T07:16:30.989Z",
+        "checked_at": "2026-09-06T07:22:55.137Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-06T13:16:30.989Z",
+        "expires_at": "2026-09-06T13:22:55.137Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -22982,7 +22982,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T07:16:30.989Z",
+          "checked_at": "2026-09-06T07:22:55.137Z",
           "fingerprint": "54b45b9fe0be67e87ad8dd3d3c9f95ee99b8ac46863a345cc68c03347c3ad0c6",
           "issue_codes": [],
           "warning_codes": []
@@ -50508,7 +50508,7 @@
       "verification_started_at": "2026-09-05T06:38:53.341Z",
       "publish_ready_at": "2026-09-05T06:39:06.202Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -51546,59 +51546,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "c8edbe03eae1fe3b48b26fd6cfeec12001c15d94a3286372a49b18e5321b17d9",
-        "sources": [
-          {
-            "source_id": "dw-news",
-            "publisher": "Deutsche Welle",
-            "url": "https://www.dw.com/de/sabotage-an-umspannwerken-polizei-fahndet-nach-verd%C3%A4chtigem/a-78901805?maca=de-rss-de-news-1089-xml-mrss",
-            "title": "Sabotage an Umspannwerken: Polizei fahndet nach Verdächtigem",
-            "summary": "Ermittler halten zwei Bekennerschreiben wegen detaillierten Täterwissens für authentisch. Darin nennt der Verfasser fossile Stromerzeugung und Deutschlands Rolle im Nahostkonflikt als Motive.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T11:40:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "5f8384a44e7c9fc167b0c37ecea23922bcb13d3d2d40177a683e1d72c05142e7",
-            "source_item_id": "6eb0d140544a4b87d72a5a018925c5b325dee21d75edc639c8c17175ea2bd2fc",
-            "publisher_id": "deutsche-welle",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T11:40:00.000Z",
-            "ingested_at": "2026-09-04T15:06:23.805Z",
-            "provenance": {
-              "origin": "publisher:deutsche-welle",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T07:16:30.989Z",
-          "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-8719fd142c6ac6b1",
@@ -67701,7 +67649,7 @@
       "verification_started_at": "2026-09-04T18:22:42.556Z",
       "publish_ready_at": "2026-09-04T18:22:57.645Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -68080,49 +68028,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "b2cc06c1ce7c2d3e3107fb2633c5326e89874ee9102a864e24c64a2fd4ad2288",
-        "checked_at": "2026-09-05T19:21:39.490Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "c9a521156da5a06f1a84fdc9b5ac624c58e4673d6b200422270b90b7ff7c5ad0",
+        "checked_at": "2026-09-06T07:22:55.137Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T01:21:39.490Z",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Wenn-die-AfD-an-die-Macht-kommt-Wer-will-dann-noch-Richterin-in-Sachsen-Anhalt-werden/!6209546",
-            "title": "Szenario einer AfD-Regierung: Wer will noch Rich­te­r:in in Sachsen-Anhalt werden?",
-            "summary": "Wenn die AfD in Sachsen-Anhalt regiert, wollen viele angehende Ju­ris­t:in­nen dort nicht arbeiten, zeigt eine Umfrage. Dabei braucht die Justiz dringend Nachwuchs. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:51:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "75cccd54e5c4189973c7a8d39b8436f33fec00ea78de889967bad5985cf5e3b3",
-            "source_item_id": "31f3ef4361f94420014fedeeccc37d589d89ca6c00959595665aea301ea62bcb",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:51:00.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "e1d10f1e3205f9bd0288812db38efd34491e5c0c02f672864119780a4e303310",
+        "expires_at": "2026-09-06T13:22:55.137Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -68157,24 +68067,9 @@
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown"
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T07:16:30.989Z",
-          "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-03c6bacdda808696",
@@ -124844,7 +124739,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:16:30.989Z"
+          "checked_at": "2026-09-06T07:22:55.137Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -124859,7 +124754,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T07:16:30.989Z",
+      "updated_at": "2026-09-06T07:22:55.137Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -124895,11 +124790,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3893.5164833333333,
+        "source_age_minutes": 3899.91895,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3415.2329833333333,
+        "queue_age_minutes": 3421.63545,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -124908,7 +124803,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T07:16:30.989Z",
+        "checked_at": "2026-09-06T07:22:55.137Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
@@ -133546,20 +133441,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:16:30.989Z"
+          "checked_at": "2026-09-06T07:22:55.137Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 3,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-06T10:22:55.137Z",
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T07:16:30.989Z",
+      "updated_at": "2026-09-06T07:22:55.137Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -133593,11 +133491,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7276.516483333334,
+        "source_age_minutes": 7282.91895,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3415.2329833333333,
+        "queue_age_minutes": 3421.63545,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -133606,7 +133504,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T07:16:30.989Z",
+        "checked_at": "2026-09-06T07:22:55.137Z",
         "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
         "issue_codes": [],
         "warning_codes": []
@@ -134075,20 +133973,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:16:30.989Z"
+          "checked_at": "2026-09-06T07:22:55.137Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 3,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_PUBLICATION_RECOMMENDATION_INVALID"
+      ],
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-06T10:22:55.137Z",
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T07:16:30.989Z",
+      "updated_at": "2026-09-06T07:22:55.137Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -134125,11 +134025,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8356.516483333333,
+        "source_age_minutes": 8362.91895,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3415.2329833333333,
+        "queue_age_minutes": 3421.63545,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -134138,7 +134038,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T07:16:30.989Z",
+        "checked_at": "2026-09-06T07:22:55.137Z",
         "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
         "issue_codes": [],
         "warning_codes": []

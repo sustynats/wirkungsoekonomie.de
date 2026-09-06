@@ -383895,7 +383895,72 @@
       "rejection_code": null,
       "errors": [],
       "rationale": "Die Erklärung setzt eine gemeinsame Position von sechs Staaten zu einem zentralen EU-Finanzrahmen und benennt konkrete Prioritäten sowie Kürzungsforderungen."
+    },
+    {
+      "at": "2026-09-06T07:22:55.137Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "mdr-nachrichten",
+          "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T07:22:55.137Z",
+      "story_id": "wt-00fccb632042b492",
+      "event_id": "event-e4876e29370bc0f63efa",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "insufficient_evidence",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine sekundäre Quelle ohne unabhängige Bestätigung; zentrale Zurechnung und Details der Bekennerschreiben bleiben teils offen."
+    },
+    {
+      "at": "2026-09-06T07:22:55.137Z",
+      "story_id": "wt-1bc40229c938d48a",
+      "event_id": "event-0d32d40861dc356e70e6",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt die bereits publizierte Umfrage und ergänzt keine neue materielle Entwicklung gegenüber der bestehenden Akte."
+    },
+    {
+      "at": "2026-09-06T07:22:55.137Z",
+      "story_id": "wt-e28250d4074683af",
+      "event_id": "event-31e248310551ae4377cf",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Neue amtliche Daten zu Einkommen und Armutsgefährdung einer großen Bevölkerungsgruppe sind materiell und nicht bloß wiederholend."
+    },
+    {
+      "at": "2026-09-06T07:22:55.137Z",
+      "story_id": "wt-46e5c503d6322ccb",
+      "event_id": "event-1f973d1f3c747fb944e6",
+      "decision": "held_or_rejected",
+      "publication_recommendation": null,
+      "rejection_code": null,
+      "errors": [
+        "AI_PUBLICATION_RECOMMENDATION_INVALID"
+      ],
+      "rationale": "Neue amtliche Monatszahl mit breiter Relevanz für Kaufkraft, Kosten und geldpolitische Einordnung; primäre Quelle liegt direkt vor."
     }
   ],
-  "updated_at": "2026-09-06T07:16:30.989Z"
+  "updated_at": "2026-09-06T07:22:55.137Z"
 }
