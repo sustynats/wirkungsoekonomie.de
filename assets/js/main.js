@@ -3,7 +3,7 @@ const siteNav = document.querySelector(".site-nav");
 const mainScriptUrl =
   document.currentScript?.src || document.querySelector('script[src*="assets/js/main.js"]')?.src || "";
 window.loadWoekSearchIndex = async () => {
-  const loaderUrl = new URL('search-index-loader.js?v=20260905', mainScriptUrl || window.location.href);
+  const loaderUrl = new URL('search-index-loader.js?v=20260906-progress', mainScriptUrl || window.location.href);
   const { loadBrowserSearchIndex } = await import(loaderUrl.href);
   return loadBrowserSearchIndex(new URL('../search/', mainScriptUrl || window.location.href).href);
 };

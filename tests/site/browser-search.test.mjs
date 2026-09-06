@@ -60,5 +60,54 @@ test('shared loader handles gzip, caching, interrupted data and older releases',
       await assert.rejects(loadBrowserSearchIndex('https://example.test/invalid/'),/Invalid/);
       assert.equal(count,1);
     });
+    const nextTurn = () => new Promise(resolve => setImmediate(resolve));
+    function delayedDownload(interval, parts, requests) {
+      const compressed=gzipSync(JSON.stringify(entries));
+      return async (url,{signal})=>{
+        requests.push(String(url));
+        if(String(url).endsWith('manifest.json')) return new Response(JSON.stringify(manifest));
+        assert.ok(String(url).endsWith('.gz'),'A timeout must not trigger the larger JSON fallback');
+        return new Response(new ReadableStream({start(controller){
+          let part=0,timer;
+          const abort=()=>{clearTimeout(timer);controller.error(signal.reason);};
+          signal.addEventListener('abort',abort,{once:true});
+          const send=()=>{
+            const start=Math.floor(compressed.length*part/parts);
+            const end=Math.floor(compressed.length*(part+1)/parts);
+            controller.enqueue(compressed.subarray(start,end));
+            if(++part===parts){signal.removeEventListener('abort',abort);controller.close();}
+            else timer=setTimeout(send,interval);
+          };
+          timer=setTimeout(send,interval);
+        }}));
+      };
+    }
+    await t.test('a healthy download can progress for more than thirty seconds',async t=>{
+      t.mock.timers.enable({apis:['setTimeout']});
+      const requests=[];
+      globalThis.fetch=delayedDownload(20000,3,requests);
+      const result=loadBrowserSearchIndex('https://example.test/slow-progress/');
+      await nextTurn();
+      for(let part=0;part<3;part++){t.mock.timers.tick(20000);await nextTurn();}
+      assert.deepEqual(await result,entries);
+      assert.equal(requests.length,2);
+    });
+    await t.test('a stalled download aborts without requesting the larger JSON file',async t=>{
+      t.mock.timers.enable({apis:['setTimeout']});
+      const requests=[];
+      globalThis.fetch=delayedDownload(40000,3,requests);
+      const rejected=assert.rejects(loadBrowserSearchIndex('https://example.test/stalled/'),{name:'AbortError'});
+      await nextTurn();t.mock.timers.tick(30001);await rejected;
+      assert.equal(requests.length,2);
+    });
+    await t.test('even a progressing download has an overall time bound',async t=>{
+      t.mock.timers.enable({apis:['setTimeout']});
+      const requests=[];
+      globalThis.fetch=delayedDownload(10000,20,requests);
+      const rejected=assert.rejects(loadBrowserSearchIndex('https://example.test/overall-bound/'),{name:'AbortError'});
+      await nextTurn();
+      for(let part=0;part<18;part++){t.mock.timers.tick(10000);await nextTurn();}
+      await rejected;assert.equal(requests.length,2);
+    });
   } finally {globalThis.fetch=realFetch;}
 });
