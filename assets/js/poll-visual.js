@@ -48,7 +48,7 @@ function startVisual() {
       panel.append(title,grid,proof);return panel;
     });
     const zooms=el('div',undefined,'poll-actions');
-    for(const [id,label] of [['energie','Energieanlagen im nördlichen Umland'],['energiesued','Energieanlagen am südöstlichen Standort']]){
+    for(const [id,label] of [['energie','Energieanlagen im nördlichen Umland'],['energiesued','Wärme- und Abwasserinfrastruktur im Südosten']]){
       if(focusAreas.some(a=>a.id===id))zooms.append(button(label,()=>{selectArea(id);stage.scrollIntoView({behavior:'auto',block:'center'});}));
     }
     target.replaceChildren(...panels,zooms);
