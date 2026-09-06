@@ -68674,7 +68674,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-26a7ab4a8df2078f792d",
+      "event_id": "event-d55562d813347a032496",
       "first_seen_at": "2026-09-04T17:21:09.783Z"
     },
     "4b9e044b88c5bf30f128efc949ba53dca33487a38becfe8fabdc922e1705486c": {
@@ -116194,7 +116194,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-ee7e6ace91150cd62bfd",
+      "event_id": "event-d55562d813347a032496",
       "first_seen_at": "2026-09-06T09:06:22.155Z"
     },
     "ea36dc3c260e6c39f2fd83ccbbb50089f896dc4715beb08d666ff2c2bec18f4c": {
@@ -119756,7 +119756,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-06T04:58:03.000Z",
-      "ingested_at": "2026-09-06T13:06:40.348Z",
+      "ingested_at": "2026-09-06T14:21:20.533Z",
       "agency_origin": "unknown",
       "agency_origin_confidence": "unknown",
       "provenance": {
@@ -288786,7 +288786,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-26a7ab4a8df2078f792d",
+      "event_id": "event-d55562d813347a032496",
       "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
       "source_id": "wdr-nachrichten",
       "role": "journalistic_report"
@@ -297156,7 +297156,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-ee7e6ace91150cd62bfd",
+      "event_id": "event-d55562d813347a032496",
       "source_item_id": "d5753e61faace50561146104316bb4978e16211fb6134b1576f696b2100c4f12",
       "source_id": "tagesspiegel-home",
       "role": "journalistic_report"
@@ -299369,14 +299369,14 @@
     {
       "id": "discovery-cd0ca192c86c05d147ca",
       "url": "https://www.stmi.bayern.de/",
-      "discovered_at": "2026-09-06T13:06:40.348Z",
+      "discovered_at": "2026-09-06T14:21:20.533Z",
       "status": "quarantined",
       "reason": "New publisher requires access, relevance and editorial review; never auto-enabled."
     },
     {
       "id": "discovery-8450f4772ff4cf17c677",
       "url": "https://www.bayern-innovativ.de/",
-      "discovered_at": "2026-09-06T13:06:40.348Z",
+      "discovered_at": "2026-09-06T14:21:20.533Z",
       "status": "quarantined",
       "reason": "New publisher requires access, relevance and editorial review; never auto-enabled."
     }
@@ -447457,7 +447457,149 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die gelieferte Quelle wiederholt im Kern nur die bereits veröffentlichte Lage: erhöhte Polizeipräsenz und keine konkreten Gefährdungserkenntnisse in SH."
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-06476c6e980f5f47",
+      "decision": "input_size_hold",
+      "reason": "AI_INPUT_TOO_LARGE"
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-5072789df611867b",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "ndr-info",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        },
+        {
+          "source_id": "swr-aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "mdr-nachrichten",
+          "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-b8204dba21ee4eea",
+      "event_id": "event-079280c3a232824df66a",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Neuer, materieller Zwischenstand: Die Evakuierung läuft nicht mehr nur an, sondern die Entschärfung wurde laut Quelle erfolgreich abgeschlossen."
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-ecf4b205df1ecac3",
+      "event_id": "event-c1061c18db8a491c241b",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Meldung wiederholt nur die laufende Kieler Bombenentschärfung ohne neue materielle Entwicklung gegenüber der bereits erfassten Erstmeldung."
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-b5ca8651ce7844db",
+      "event_id": "event-2863d76840aa042b6f5e",
+      "decision": "publish",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [],
+      "rationale": "Neue Fahndung am Hambacher Forst mit Bezug zu kritischer Strominfrastruktur ist zeitnah, neu gegenüber dem Vorlauf und materiell relevant."
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-55bd06a2965313bb",
+      "event_id": "event-d55562d813347a032496",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Meldung wiederholt im Kern den laufenden Polizeieinsatz und die Fahndung im Hambacher Forst; ein materiell neuer Sachverhalt gegenüber den bereits erfassten Vorberichten ist nicht belastbar belegt."
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-995822cc0b71a7f8",
+      "event_id": "event-387b5558f67e204de308",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferte Quelle wiederholt den bereits veröffentlichten Verhandlungsstandpunkt ohne neue materielle Entwicklung gegenüber der bestehenden Erstmeldung."
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-b1ce25efb18964e4",
+      "event_id": "event-d1a30590b6b3af4a3b8b",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die neuen Quellen wiederholen im Kern die Reise und Gespräche der US-Gesandten; ein materiell neuer Zustand oder belastbar neuer Verhandlungsdurchbruch ist nicht belegt."
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-3d901522efd87e2d",
+      "event_id": "event-94e19028bc87c0dedc83",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen bestätigen nur bereits veröffentlichte Punkte: Gespräche in Moskau begonnen und dreitägige Angriffspause angekündigt. Keine neue materielle Entwicklung gegenüber der Vorfassung."
+    },
+    {
+      "at": "2026-09-06T14:21:20.533Z",
+      "story_id": "wt-cf03acddb911d861",
+      "event_id": "event-bae82494ff50b6e4ca6a",
+      "decision": "held_or_rejected",
+      "publication_recommendation": null,
+      "rejection_code": null,
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "AI_PUBLICATION_RECOMMENDATION_INVALID"
+      ],
+      "rationale": "Neu sind konkrete Bundesmaßnahmen und Abwehrbefugnisse; die Nachricht ist für kritische Infrastruktur und Sicherheitsregulierung materiell."
     }
   ],
-  "updated_at": "2026-09-06T14:06:24.915Z"
+  "updated_at": "2026-09-06T14:21:20.533Z"
 }

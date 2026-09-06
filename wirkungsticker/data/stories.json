@@ -1,7 +1,111 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T13:36:20.439Z",
+  "updated_at": "2026-09-06T14:21:20.533Z",
   "stories": [
+    {
+      "story_id": "wt-b5ca8651ce7844db",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5ca8651ce7844db-f3b15b7c9de9675e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5ca8651ce7844db-ad24c75cd8211ecd-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5ca8651ce7844db-e21ebefaf9bff401-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "polizei-fahndet-nach-tatverdachtigem-am-hambacher-forst-7844db",
+      "title": "Polizei fahndet nach Tatverdächtigem am Hambacher Forst",
+      "source_summary": "Die ZDFheute-Meldung berichtet über eine laufende Fahndung der Polizei am Hambacher Forst bei Kerpen westlich von Köln. Gesucht werde ein 48-jähriger Tatverdächtiger, dem Sabotageaktionen auf das Stromnetz zugeschrieben würden. Ein Sprecher der Kölner Polizei habe bestätigt, dass der Einsatz auch dazu diene, den Mann selbst oder Spuren zu finden.\n\nAls weiteres Indiz nennt die Redaktion ein Fahrrad; nach dem Rad werde ebenfalls gefahndet. Die Meldung verweist zudem auf frühere Ermittlungen zu Sabotage-Angriffen in mehreren Bundesländern, hält aber offen, wie weit die Taten und der gesuchte Mann zusammenhängen. Die Quelle ist ein journalistischer Bericht mit dpa-Bezug, keine Primärquelle.",
+      "summary": "Die Polizei sucht am Hambacher Forst nach einem 48-jährigen Tatverdächtigen. Als mögliches Indiz nennt die Meldung auch ein Fahrrad.",
+      "detail_summary": "Gesichert ist nach der gelieferten Quelle eine laufende Fahndung am Hambacher Forst nach einem 48-jährigen Mann, den die Polizei mit Sabotageaktionen gegen das Stromnetz in Verbindung bringt. Die Meldung nennt außerdem ein Fahrrad als Suchhinweis und beschreibt, dass die Ermittler auch nach dem mutmaßlich benutzten Rad fahnden. Für die Einordnung wichtig ist weniger die Reichweite der Berichterstattung als der mögliche Eingriff in die Sicherheit kritischer Energieinfrastruktur. Daraus ergibt sich ein Wirkpfad über Ermittlungsdruck, mögliche Festnahme und Klärung von Tatzusammenhängen; falls sich der Verdacht erhärtet, könnten weitere Schutzmaßnahmen für Stromanlagen folgen. Offen bleibt nach der Quelle, wie belastbar die Zuordnung der Taten zu dem Gesuchten ist und ob es bereits weitere unabhängige Bestätigungen gibt.",
+      "why_relevant": "Die Meldung betrifft mögliche Sabotage an kritischer Energieinfrastruktur und eine laufende Fahndung; beides kann für Sicherheit, Betrieb und staatliche Reaktion relevant sein.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Gefährdung kritischer Versorgung und laufende Fahndung mit potenziell breiten Folgen für Sicherheit und Ermittlungen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Indirekter Bezug über Strominfrastruktur und Energiewende-Kontext; unmittelbare Umweltwirkung ist nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind staatliche Sicherheits- und Ermittlungsstrukturen sowie die öffentliche Kontrolle über Schutz kritischer Infrastruktur."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "natur"
+        ],
+        "tendency": {
+          "human": "offen",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T14:21:20.533Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T13:43:00.000Z",
+      "last_updated": "2026-09-06T14:22:15.107Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-2863d76840aa042b6f5e",
+      "case_file": null,
+      "source_published_at": "2026-09-06T13:43:00.000Z",
+      "published_at": "2026-09-06T14:22:15.107Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der gesuchte Mann gefasst wird oder weitere Tatorte bestätigt werden",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimeldung oder bestätigte Festnahme",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c9cffb5e592e4c60",
+          "announced_at": "2026-09-06T13:43:00.000Z",
+          "follow_up_date": "2026-09-13T14:22:15.107Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:43:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-06837a611e9459ce",
       "title_image": {
