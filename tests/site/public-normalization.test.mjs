@@ -3,7 +3,16 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import {uniqueContentIds,normalizeStaticNavigation,normalizePublicContent} from '../../scripts/quality/normalize-public-content.mjs';
+import {uniqueContentIds,normalizeStaticNavigation,normalizePublicContent,normalizeMachineMirror} from '../../scripts/quality/normalize-public-content.mjs';
+
+test('bare API mirrors retain exact escaped data and receive an idempotent noindex shell',()=>{
+ const input='<pre>{&quot;name&quot;:&quot;A &amp; B&quot;}</pre>';
+ const output=normalizeMachineMirror(input);
+ assert.ok(output.includes(input));
+ assert.match(output,/<head>.*<meta name="robots" content="noindex, follow">/);
+ assert.equal(normalizeMachineMirror(output),output);
+ assert.equal(normalizeMachineMirror('{"raw":"JSON response"}'),'{"raw":"JSON response"}');
+});
 
 test('only vanished frontmatter is removed from generated navigation',()=>{
   const item=(id,label)=>`<li class="toc-level-3"><a href="#${id}">${label}</a></li>`;

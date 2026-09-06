@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-06T08:42:33.459Z",
-  "scanned_stories": 93,
-  "scanned_subjects": 81,
+  "started_at": "2026-09-06T11:24:21.866Z",
+  "scanned_stories": 98,
+  "scanned_subjects": 84,
   "editorial_candidates": 15,
   "ready_for_research": 3,
-  "research_pending": 6,
+  "research_pending": 5,
   "retry_deferred": 3,
   "editorial_research_sources_discovered": 12,
   "selected": 0,
@@ -26,7 +26,7 @@
       "story_id": "wt-995822cc0b71a7f8",
       "story_slug": "statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannu-71a7f8",
       "story_title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
-      "editorial_analysis_score": 69,
+      "editorial_analysis_score": 72,
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 14,
@@ -43,7 +43,7 @@
         "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -51,20 +51,18 @@
         "observed_impact": "not_established"
       },
       "evidence_gate": {
-        "passed": false,
+        "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 1,
+        "independent_origin_count": 7,
         "primary_source_count": 1,
         "cited_claim_count": 5,
         "primary_source_expected": true,
         "primary_source_satisfied": true,
-        "reasons": [
-          "fewer_than_two_source_origins"
-        ]
+        "reasons": []
       },
-      "fingerprint": "f1546cd64907c76ede83c2afdf58bfa673a30b41b1e5dc42db0710ba8d9be4ed",
-      "status": "research_pending",
-      "analysis_id": null
+      "fingerprint": "edd6ae7dd4bc2116c0a32bc24deb9909a5131506c69f8c4adf231ad77911bc57",
+      "status": "published",
+      "analysis_id": "woek-analysis-2e9b2581831c"
     },
     {
       "story_id": "wt-6a7145e6dc679f95",

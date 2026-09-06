@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-06T08:06:40.303Z",
+  "updated_at": "2026-09-06T09:21:47.630Z",
   "candidates": [
     {
       "story_id": "wt-995822cc0b71a7f8",
       "story_slug": "statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannu-71a7f8",
       "story_title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
-      "editorial_analysis_score": 69,
+      "editorial_analysis_score": 72,
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 14,
@@ -24,7 +24,7 @@
         "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -32,20 +32,18 @@
         "observed_impact": "not_established"
       },
       "evidence_gate": {
-        "passed": false,
+        "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 1,
+        "independent_origin_count": 7,
         "primary_source_count": 1,
         "cited_claim_count": 5,
         "primary_source_expected": true,
         "primary_source_satisfied": true,
-        "reasons": [
-          "fewer_than_two_source_origins"
-        ]
+        "reasons": []
       },
-      "fingerprint": "f1546cd64907c76ede83c2afdf58bfa673a30b41b1e5dc42db0710ba8d9be4ed",
-      "status": "research_pending",
-      "analysis_id": null
+      "fingerprint": "edd6ae7dd4bc2116c0a32bc24deb9909a5131506c69f8c4adf231ad77911bc57",
+      "status": "published",
+      "analysis_id": "woek-analysis-2e9b2581831c"
     },
     {
       "story_id": "wt-6a7145e6dc679f95",
@@ -651,6 +649,701 @@
     }
   ],
   "analyses": [
+    {
+      "analysis_id": "woek-analysis-2e9b2581831c",
+      "story_id": "wt-995822cc0b71a7f8",
+      "related_story_ids": [
+        "wt-995822cc0b71a7f8"
+      ],
+      "related_case_id": null,
+      "slug": "eu-haushalt-2028-2034-was-neue-prioritaten-fur-klima-wohlstand-und-zusammenhalt-be-2e9b25",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "edd6ae7dd4bc2116c0a32bc24deb9909a5131506c69f8c4adf231ad77911bc57",
+      "candidate_score": 72,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 7,
+        "primary_source_count": 1,
+        "cited_claim_count": 5,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-06T09:21:47.630Z",
+      "updated_at": "2026-09-06T09:21:47.630Z",
+      "version": 1,
+      "editorial_question": "Welche Bedingungen entscheiden darüber, ob neue EU-Haushaltsprioritäten Klima, Wohlstand und Zusammenhalt stärken oder Risiken verlagern?",
+      "analysis_type": "system_analysis",
+      "title": "EU-Haushalt 2028-2034: Was neue Prioritäten für Klima, Wohlstand und Zusammenhalt bedeuten könnten",
+      "subtitle": "Sechs Staaten wollen weniger ausgeben als die Kommission vorschlägt. Entscheidend ist, welche Vorsorge, Investitionen und Schutzbedingungen im Haushalt Platz finden.",
+      "teaser": "Der Streit um Europas nächsten Finanzrahmen reicht bis zu Stromnetzen, Hochwasserschutz und regionalen Chancen. Die Analyse prüft Klima- und SDG-Bezüge, mögliche Folgekosten und demokratische Kontrolle. Ein größeres Budget ist dabei ebenso wenig ein Wirkungsnachweis wie ein kleineres schon ein Schaden.",
+      "seo_description": "EU-Haushalt 2028-2034 im Wirkungscheck: Klimaziele, SDGs, regionale Chancen, Folgekosten und die Bedingungen wirksamer Investitionen.",
+      "additional_value": "Die Analyse verbindet die aktuelle Verhandlungsposition mit dem Kommissionsentwurf, der Gegenposition des Parlaments, Klimarisiken und der Kritik an früherer Ausgabenmessung. Sie leitet prüfbare Wirkungspfade und Bedingungen ab, statt aus der Haushaltssumme einen Erfolg oder Schaden abzuleiten.",
+      "research_summary": "Fallbezogene Recherche in acht öffentlichen institutionellen Originaldokumenten: Bundesregierung, Kommission, Rat, Europäisches Parlament, Europäische Umweltagentur, Europäischer Rechnungshof und UN. Die beiden Kommissionsdokumente zählen als ein Ursprung. Hintergrundquellen bestätigen nicht die aktuelle Erklärung, sondern tragen Verfahrens-, Risiko-, Gegen- und Zielkontext. WÖk-Begriffe folgen dem führenden Leitfaden 1.7.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Noch kein fertiger Haushalt, sondern konkurrierende Vorschläge",
+          "paragraphs": [
+            "Eine Gemeinde plant Hochwasserschutz, ein Unternehmen den Umbau seiner Produktion, eine Region bessere Verkehrsverbindungen. Ob solche Vorhaben Unterstützung erhalten können, hängt auch von Europas nächstem langfristigen Haushalt ab. Der Mehrjährige Finanzrahmen, kurz MFR, setzt für 2028 bis 2034 die finanziellen Grenzen. Welche Veränderungen daraus tatsächlich entstehen, entscheidet sich jedoch erst über Programme und ihre Umsetzung.",
+            "Dänemark, Deutschland, die Niederlande, Österreich, Finnland und Schweden verlangen in ihrer Erklärung vom 27. August 2026, den Kommissionsvorschlag von nahezu zwei Billionen Euro um mehrere hundert Milliarden zu reduzieren. Alle Haushaltsrubriken sollen beitragen. Zugleich befürworten sie moderates Wachstum des Finanzrahmens. Kürzung gegenüber dem Vorschlag bedeutet deshalb nicht automatisch Kürzung gegenüber dem bisherigen Haushalt. Konkrete Programmbeträge legt die Erklärung nicht fest.",
+            "Die Gegenposition gehört dazu: Das Europäische Parlament fordert seit April 2026 eine Aufstockung gegenüber dem Kommissionsentwurf und Schutz für Zusammenhalt und Landwirtschaft. Einen endgültigen Haushalt gibt es damit noch nicht. Der Rat muss die MFR-Verordnung einstimmig nach Zustimmung des Parlaments verabschieden. Die Position von sechs Regierungen ist nicht die Entscheidung aller Mitgliedstaaten."
+          ],
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+            "b2bb80ed1c9d03272ad8",
+            "d919dd2a49efeb01e0c4",
+            "960ac89138a6c934dcfb"
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Die eigentliche Frage: Was soll sich durch das Geld verändern?",
+          "paragraphs": [
+            "Der zusätzliche Erkenntnisgewinn liegt nicht im Vergleich zweier großer Summen. Ein Haushalt verbindet Ziele mit Förderregeln, Anreizen und späteren Investitionen. Wer Mittel umverteilt, kann zugleich beeinflussen, welche Probleme bearbeitet werden und welche zunächst ungelöst bleiben. Ausgabenhöhe, Ausgabenzweck und tatsächliche Zustandsveränderung sind dabei drei verschiedene Dinge.",
+            "Am Beispiel eines Stromnetzes wird das anschaulich: Eine Förderzusage ist zunächst eine Finanzierungsentscheidung. Ein fertiggestellter Anschluss ist eine bereitgestellte Leistung. Ob Strom zuverlässiger verfügbar ist, Kosten sinken oder Emissionen vermieden werden, muss anschließend beobachtet werden. Auch dann bleibt zu prüfen, welchen Anteil die EU-Förderung gegenüber ohnehin geplanten Investitionen, nationalen Mitteln und anderen Veränderungen hatte. Diese Unterscheidung gilt für zusätzliche Mittel ebenso wie für Einsparungen."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "klima",
+          "title": "Eine Klimaquote ist ein Versprechen, noch kein Ergebnis",
+          "paragraphs": [
+            "Die Kommission schlägt vor, 35 Prozent des Finanzrahmens für Klima und Umwelt einzusetzen, nach ihrer Darstellung über 700 Milliarden Euro. Gemeint sind beide Bereiche zusammen, nicht ausschließlich Klimaschutz. Auch ein Vergleich mit früheren Quoten verlangt Vorsicht: Die von der Kommission genannten über 34 Prozent für 2021 bis 2027 betreffen Klimafinanzierung einschließlich NextGenerationEU. Gegenstand und Haushaltsumfang sind somit nicht identisch.",
+            "Die spätere Prüfung muss tiefer reichen: Welche Projekte senken Emissionen zusätzlich? Welche vermindern die Verwundbarkeit gegenüber Hitze, Dürre oder Überschwemmungen? Was bleibt für Wasser, Böden und Biodiversität? Eine gleichbleibende Quote schützt nicht automatisch jeden dieser Zwecke. Umgekehrt wäre ein geringerer nomineller Ansatz allein noch kein Nachweis schlechterer Ergebnisse, wenn Maßnahmen gezielter, zusätzlich und zuverlässig umgesetzt würden.",
+            "Ein historischer Gegenbefund unterstreicht das: Der Europäische Rechnungshof bewertete die ausgewiesenen Klimaausgaben 2014 bis 2020 als deutlich überhöht. Das ist kein Urteil über den noch offenen Haushalt ab 2028. Es zeigt aber, warum eine Ausgabenmarkierung nicht die Prüfung des tatsächlichen Beitrags ersetzen darf."
+          ],
+          "source_ids": [
+            "d9ff1f25c3942ae3f8cf",
+            "520ff4746f4fb686ad14"
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Klima, Lebensqualität und Handlungsfähigkeit hängen zusammen",
+          "paragraphs": [
+            "Die Europäische Umweltagentur beschreibt in ihrer europäischen Klimarisikobewertung Risiken unter anderem für Gesundheit, Wasser, Infrastruktur und finanzielle Stabilität. Damit ist Klimaanpassung nicht nur ein Umweltthema. Wenn kritische Versorgung ausfällt, können zugleich Haushalte, Betriebe und öffentliche Dienste betroffen sein. Der Forschungsstand begründet die Relevanz solcher Risiken; er beziffert nicht die Folgen einer bestimmten Haushaltskürzung.",
+            "Aus wirkungsökonomischer Sicht sind Mensch, Planet und Demokratie deshalb zusammen zu prüfen. Als plausibles Beispiel kann ein gut geplantes Wasserprojekt natürliche Rückhalteräume schützen und zugleich Siedlungen entlasten. Ob es gelingt, hängt von Standort, Planung, Wartung und örtlicher Beteiligung ab. Ein schlecht geplantes Projekt könnte dagegen Risiken flussabwärts verschieben. Das sind unterschiedliche mögliche Wirkungspfade, keine Befunde zu einem bereits ausgewählten Projekt.",
+            "Mögliche Kaskaden gehören ausdrücklich dazu: Eine Überschwemmung könnte Stromversorgung und Verkehr beeinträchtigen, dadurch Versorgung und Betriebe behindern und zusätzliche Ausgaben öffentlicher Haushalte auslösen. Eine solche Kette hängt von örtlicher Verwundbarkeit und vorhandenen Reserven ab; sie ist hier ein bedingtes Szenario. Öffentliche Kontrolle verbindet diese Ebenen: Menschen müssen nachvollziehen können, welche Risiken berücksichtigt werden und wie Fehlentwicklungen korrigiert werden."
+          ],
+          "source_ids": [
+            "2402ac651ee2beee3344",
+            "56971e99c08799ebde37"
+          ]
+        },
+        {
+          "id": "referenzen",
+          "title": "Wie die SDGs in die Prüfung eingehen",
+          "paragraphs": [
+            "Die Nachhaltigkeitsziele der UN, die SDGs, dienen hier als offengelegter Zielrahmen. Besonders relevant sind SDG 13.1 für Klimaanpassung und 13.2 für die Integration von Klimaschutz in Planung, SDG 9.1 und 9.4 für tragfähige Infrastruktur und ressourcenschonende Modernisierung sowie SDG 10.2 für Teilhabe. SDG 15 lenkt den Blick auf Ökosysteme, SDG 16.6 auf wirksame und transparente Institutionen und SDG 17.14 auf widerspruchsfreie Nachhaltigkeitspolitik.",
+            "Daraus wird keine Liste angeblich bereits erfüllter Ziele. Für ein konkretes Förderprogramm wäre zunächst zu fragen: Welcher Zustand soll sich bei wem verbessern, durch welchen Mechanismus und gegenüber welcher Ausgangslage? Erst danach helfen passende Daten bei der Prüfung. Ein SDG-Symbol an einem Budgetposten beantwortet diese Fragen nicht.",
+            "Auch die Zeiträume sind zu trennen. Der Finanzrahmen reicht über 2030 hinaus; Fristen einzelner SDG-Unterziele dürfen nicht still auf 2034 verschoben werden. Für Entscheidungen in der EU sind zudem die jeweils geltenden europäischen Rechts- und Prüfrahmen maßgeblich. Die deutsche Nachhaltigkeitsstrategie kann für deutsche Umsetzungsbeiträge relevant werden. Bundes-GGO und eNAP sind jedoch keine pauschalen Prüfpflichten für den EU-Haushalt."
+          ],
+          "source_ids": [
+            "56971e99c08799ebde37",
+            "d919dd2a49efeb01e0c4"
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Vom Förderbescheid zu langfristigen Entwicklungspfaden",
+          "paragraphs": [
+            "In erster Ordnung könnten andere Mittelansätze und Förderbedingungen verändern, welche Vorhaben starten können. Für die Erklärung der sechs Staaten ist eine solche Veränderung noch nicht festgestellt. Sie setzt zunächst eine Verhandlungsposition.",
+            "In zweiter Ordnung könnten sich daraus Anschlussentscheidungen ergeben: Unternehmen investieren mit, Kommunen stellen Personal bereit oder verschieben andere Aufgaben. Ebenso sind Verdrängungen möglich, wenn knappe Planungskapazität von einem Vorhaben zum anderen wandert. Ob zusätzliche öffentliche Förderung private Investitionen ermöglicht oder ohnehin Geplantes bezahlt, bleibt eine fallbezogene Frage.",
+            "In dritter Ordnung könnten wiederholte Förderentscheidungen technische Standards, regionale Wirtschaftsstrukturen und langfristige Abhängigkeiten prägen. Eine Infrastruktur kann Jahrzehnte genutzt werden. Deshalb muss der Vergleich auch Betrieb, Wartung, Anpassungsfähigkeit und spätere Umstellungskosten einbeziehen. Diese drei Ordnungen beschreiben mögliche Wege der Veränderung. Sie sind keine Prognose, dass die genannten Folgen zwangsläufig eintreten."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "makro",
+          "title": "Wohlstand, Folgekosten und die Frage, wer bezahlt",
+          "paragraphs": [
+            "Ein geringerer EU-Beitrag kann nationale Haushalte entlasten; weniger Förderung kann zugleich Projekte erschweren. Welche Seite überwiegt, lässt sich ohne konkrete Ausgestaltung nicht bestimmen. Für eine belastbare Einordnung sind reale Kaufkraft, Finanzierung, zusätzliche Investitionen und entgangene Alternativen zu betrachten. Auch mehr Geld kann wirkungslos gebunden bleiben, wenn Genehmigungen, Fachkräfte oder geeignete Projekte fehlen.",
+            "Verteilung ist mehr als der Saldo zwischen Staaten. Zu prüfen wäre, ob finanzschwächere Regionen Eigenanteile aufbringen können, kleine Träger Zugang haben und Haushalte mit niedrigen Einkommen profitieren oder zusätzliche Lasten tragen. Bei verschobener Vorsorge könnten spätere Reparaturkosten andere Haushalte treffen als die heutigen Einsparungen. Ob dies im Einzelfall geschieht, ist offen. Gerade deshalb braucht der Vergleich dieselben räumlichen Grenzen und einen ausreichend langen Zeitraum für alle Optionen."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Nicht Sicherheit gegen Klima ausspielen",
+          "paragraphs": [
+            "Die sechs Staaten betonen Sicherheit, Wettbewerbsfähigkeit, Migration und Souveränität. Sie nennen zugleich den ökologischen Wandel und Rechtsstaatlichkeit. Eine Darstellung, die nur die ersten Prioritäten herausgreift, ließe entscheidenden Kontext weg. Umgekehrt garantiert die Erwähnung des ökologischen Wandels nicht dessen Finanzierung.",
+            "Analytisch kann die Gegenüberstellung von Sicherheit und Klima den Blick auf gemeinsame Verwundbarkeiten verengen. Eine rein auf Einsparungen gerichtete Darstellung kann mögliche Folgekosten ausblenden; eine ausschließlich auf Investitionen gerichtete Darstellung kann Finanzierungs- und Umsetzungsprobleme verdecken. Das sind kommunikative Wirkungspotenziale. Eine tatsächliche Veränderung öffentlicher Einstellungen ist hier nicht belegt. Weder den Regierungen noch einem Medium wird eine Absicht zugeschrieben."
+          ],
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda"
+          ]
+        },
+        {
+          "id": "szenarien",
+          "title": "Drei mögliche Wege, keine Vorhersage",
+          "paragraphs": [
+            "Ein möglicher Weg wäre, wenig zusätzliche oder schlecht umsetzbare Ausgaben zu reduzieren und zugleich zentrale Vorsorgeprogramme abzusichern. Unter diesen Bedingungen könnte ein kleinerer Finanzrahmen tragfähige Leistungen erhalten. Dafür müsste der behauptete Effizienzgewinn konkret nachgewiesen werden; das Etikett Reform genügt nicht.",
+            "Ein zweiter Weg wären Kürzungen ohne ausreichende Prüfung von Folgekosten und regionalen Engpässen. Falls dadurch wirksame Vorsorge ausfiele und nicht anderweitig ersetzt würde, könnten spätere Schäden oder Ungleichheiten wahrscheinlicher werden. Ein dritter Weg wäre ein größerer Haushalt mit mehr Investitionsspielraum. Dessen positives Potenzial hinge ebenso an Zusätzlichkeit, Finanzierung, Umsetzung und Kontrolle. Die vorliegenden Dokumente erlauben keine robuste Rangfolge dieser Szenarien und keine seriöse Schadenssumme."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "schutz",
+          "title": "Priorisieren, ohne Schutzgrenzen wegzurechnen",
+          "paragraphs": [
+            "Die WÖk-Prüfung fragt zunächst nach dem belegten Problem und erst dann nach dem passenden Instrument. Ein Förderprogramm sollte nicht allein deshalb bestehen bleiben, weil es schon existiert. Ein neues Programm sollte nicht allein wegen seiner politischen Priorität Vorrang erhalten. Benötigt werden nachvollziehbare Alternativen, Schutzbedingungen und ein überprüfbarer Zusatznutzen.",
+            "Dabei gilt Nichtkompensation: Schwerwiegende Verletzungen vorab begründeter Rechte oder Schutzgrenzen dürfen nicht durch gute Ergebnisse anderswo verrechnet werden. Die WÖk-Bewertungslogik Reverse Merit Order lässt deshalb das kritischste zentrale Wirkungsfeld die Gesamtbewertung begrenzen. Sie ist keine amtliche Haushaltsregel und keine Rangliste der Staaten. Welche Grenze für ein konkretes Programm relevant ist, muss fachlich und rechtlich begründet werden; aus dem Gesamtbetrag lässt sie sich nicht ableiten.",
+            "Die EU beginnt bei Kontrolle und Ergebnisorientierung nicht bei null. Das Verfahren, die parlamentarische Zustimmung und die Prüfberichte des Rechnungshofs sind vorhandene institutionelle Bezugspunkte. Der WÖk-Zusatz ist die durchgängige Verbindung von Problem, Wirkmechanismus, Verteilung, Schutzgrenzen und späterer Korrektur."
+          ],
+          "source_ids": [
+            "d919dd2a49efeb01e0c4",
+            "520ff4746f4fb686ad14"
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Was diese Analyse noch nicht sagen kann",
+          "paragraphs": [
+            "Offen sind die endgültigen Beträge, ihre Verteilung, konkrete Förderbedingungen und die spätere Umsetzung. Die Analyse schätzt deshalb weder einen Beschäftigungseffekt noch zusätzliche Emissionen oder vermiedene Schäden. Dafür wären Programme, Ausgangsdaten, Vergleichsannahmen und geeignete Untersuchungen erforderlich.",
+            "Die Quellen erfüllen verschiedene Aufgaben: Regierungen und EU-Organe dokumentieren Positionen und Verfahren. Umweltagentur und Rechnungshof liefern Risiko- beziehungsweise Prüfkontext. Die UN-Ziele begründen Referenzen. Diese Dokumente sind nicht acht unabhängige Bestätigungen einer späteren Wirkung. Eine umfassende Evaluation aller vorgeschlagenen Einzelprogramme liegt dieser Analyse nicht zugrunde. Offen bedeutet hier unzureichend bestimmbar, nicht neutral oder folgenlos."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "beobachtung",
+          "title": "Welche Informationen die Einschätzung verändern würden",
+          "paragraphs": [
+            "Als Nächstes sind belastbare Verhandlungszahlen und Programmentwürfe entscheidend. Vergleichbar sind sie nur mit gleicher Preisbasis, gleichem Zeitraum und klarer Behandlung des Schuldendienstes sowie von Mitteln außerhalb der Obergrenzen. Hinzukommen die endgültige Klima- und Umweltquote, ihre Berechnung und gesonderte Angaben für Anpassung und Naturschutz.",
+            "Danach wird der Blick praktisch: Wer erhält tatsächlich Mittel, welche Projekte werden umgesetzt, wo bleiben Zugangs- oder Kapazitätsprobleme? Bei einem Netzprojekt könnten Versorgungsausfälle, bei Anpassungsmaßnahmen die Gefährdung und Verwundbarkeit, bei regionalen Programmen Zugang und Teilhabe relevante Beobachtungsgrößen sein. Veränderungen solcher Größen sind noch nicht automatisch der Förderung zurechenbar. Werden Annahmen widerlegt, müssen Förderbedingungen oder Prioritäten angepasst werden. Erst dieser Rückweg von Erkenntnis zur Entscheidung macht aus Berichterstattung eine Lernschleife."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "synthese",
+          "title": "Entscheidend ist die Qualität der Verbindung",
+          "paragraphs": [
+            "Der EU-Haushaltsstreit ist eine Frage möglicher Systemveränderungen: Welche Investitionen werden möglich, welche Risiken bleiben bestehen und wer trägt sie? Klima, Wohlstand und Zusammenhalt lassen sich dabei nicht allein über getrennte Ausgabentöpfe verstehen.",
+            "Die wirkungsökonomische Einordnung bleibt ex ante. Sie befürwortet weder pauschal das größere noch das kleinere Budget. Ihr Maßstab ist positive Netto-Wirkung für Mensch, Planet und Demokratie unter offengelegten Schutzgrenzen. Die SDGs helfen, relevante Ziele und Konflikte sichtbar zu machen. Ob sich Zustände tatsächlich verbessern, muss an Umsetzung, Ergebnissen, Verteilung und belastbarer Zurechnung geprüft werden."
+          ],
+          "source_ids": []
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Für 2028-2034 liegen unterschiedliche Haushaltspositionen vor; ein endgültiger MFR ist damit nicht beschlossen.",
+          "type": "fact",
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+            "d919dd2a49efeb01e0c4",
+            "960ac89138a6c934dcfb"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Quellenstand 6. September 2026; weitere Verhandlungen können die Positionen ändern.",
+          "date": "2026-09-06"
+        },
+        {
+          "claim": "Gezielte Förderung kann zusätzliche Vorsorge und langfristige Investitionen ermöglichen.",
+          "type": "impact_potential",
+          "source_ids": [],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Bedingt durch Zusätzlichkeit, geeignete Projekte und tatsächliche Umsetzung; keine beobachtete Wirkung.",
+          "date": null
+        },
+        {
+          "claim": "Entfällt wirksame Vorsorge ohne Ersatz, können Risiken und spätere Reparaturkosten verlagert werden.",
+          "type": "impact_risk",
+          "source_ids": [],
+          "evidence_level": "medium",
+          "data_status": "scenario",
+          "uncertainty": "Keine Aussage, dass eine konkrete MFR-Kürzung bereits solche Schäden ausgelöst hat.",
+          "date": null
+        },
+        {
+          "claim": "Die Kommission legte ihren Vorschlag im Juli 2025 vor. Der Rat beschreibt den Umfang als nahezu zwei Billionen Euro zu laufenden Preisen.",
+          "type": "fact",
+          "source_ids": [
+            "b2bb80ed1c9d03272ad8",
+            "d919dd2a49efeb01e0c4"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Vorschlag, kein final verabschiedeter Haushaltsbetrag.",
+          "date": "2025-07-16"
+        },
+        {
+          "claim": "Die sechs Staaten verlangen mehrere hundert Milliarden Euro weniger als im Kommissionsvorschlag, ohne konkrete Programmbeträge festzulegen.",
+          "type": "fact",
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Ihre Forderung ist keine schon beschlossene Kürzung einzelner Programme.",
+          "date": "2026-08-27"
+        },
+        {
+          "claim": "Das Parlament fordert eine Aufstockung gegenüber dem Kommissionsentwurf und Schutz für Kohäsion und Landwirtschaft.",
+          "type": "fact",
+          "source_ids": [
+            "960ac89138a6c934dcfb"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Verhandlungsposition des Parlaments, keine Haushaltseinigung.",
+          "date": "2026-04-28"
+        },
+        {
+          "claim": "Die vorgeschlagene Quote von 35 Prozent betrifft Klima und Umwelt gemeinsam; die ältere Vergleichsquote umfasst einen anderen Haushalts- und Zweckzuschnitt.",
+          "type": "fact",
+          "source_ids": [
+            "d9ff1f25c3942ae3f8cf"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Weder unmittelbarer Wirkungsvergleich noch Beleg tatsächlich erzielter Klimaverbesserungen.",
+          "date": "2025-10-09"
+        },
+        {
+          "claim": "Der Rechnungshof kritisierte die Verlässlichkeit ausgewiesener Klimaausgaben 2014-2020.",
+          "type": "fact",
+          "source_ids": [
+            "520ff4746f4fb686ad14"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Historischer Prüfgegenstand; kein Nachweis desselben Fehlers im MFR 2028-2034.",
+          "date": "2022-05-30"
+        },
+        {
+          "claim": "Die europäische Klimarisikobewertung beschreibt Risiken für Gesundheit, Wasser, Infrastruktur und finanzielle Stabilität.",
+          "type": "fact",
+          "source_ids": [
+            "2402ac651ee2beee3344"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Fachlicher Risikokontext, keine Zurechnung zu einer konkreten Haushaltsentscheidung.",
+          "date": "2024-03-11"
+        },
+        {
+          "claim": "SDG 9, 10, 13, 15, 16 und 17 liefern sachlich relevante Zielbezüge für diese Analyse.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "56971e99c08799ebde37"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Auswahl und Anwendung sind WÖk-Einordnung, keine UN-Bewertung des MFR.",
+          "date": null
+        },
+        {
+          "claim": "Wirkung ist tatsächliche Zustandsveränderung; ein Budgetansatz oder Zielbezug ist noch kein Wirkungsnachweis.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodischer Maßstab nach dem führenden WÖk-Begriffsleitfaden 1.7, keine zusätzliche empirische Feststellung.",
+          "date": "2026-08-21"
+        },
+        {
+          "claim": "Ein Vergleich der Haushaltsoptionen benötigt gleiche Preisbasis, Zeitraum und Abgrenzung sowie eine Prüfung von Zusätzlichkeit und Verteilung.",
+          "type": "analytical_inference",
+          "source_ids": [],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Ohne vollständige Programme und Gegenfaktum keine robuste Gesamtrangfolge.",
+          "date": null
+        },
+        {
+          "claim": "Nichtkompensation und Reverse Merit Order begrenzen eine positive Gesamtbewertung bei materiell verletzten Schutzgrenzen.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "WÖk-Bewertungslogik, keine amtliche EU-Haushaltsvorschrift; konkrete Grenzen sind gesondert zu begründen.",
+          "date": "2026-08-21"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Kürzungsforderung legt keine einzelnen Klimaprogramme fest.",
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda"
+          ],
+          "effect_on_assessment": "Aus ihr lässt sich kein bestimmter Klimaschaden ableiten."
+        },
+        {
+          "finding": "Das Parlament befürwortet zusätzliche Mittel und warnt vor schwächerer Kontrolle.",
+          "source_ids": [
+            "960ac89138a6c934dcfb"
+          ],
+          "effect_on_assessment": "Eine vollständige Einordnung umfasst auch diese Gegenposition, ohne ihre Wirkungsannahmen als bewiesen zu behandeln."
+        },
+        {
+          "finding": "Historische Klimaausgaben waren nach dem Rechnungshof nicht so belastbar ausgewiesen wie berichtet.",
+          "source_ids": [
+            "520ff4746f4fb686ad14"
+          ],
+          "effect_on_assessment": "Auch das größere Budget muss sich an Ergebnissen messen lassen. Der frühere Prüfbericht beweist keinen Fehler im neuen Entwurf."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Eine Haushaltseinigung mit vergleichbaren Beträgen, Preisbasis und klarer Behandlung des Schuldendienstes.",
+        "Verbindliche Programmregeln und nachvollziehbare Ansätze für Klimaschutz, Anpassung, Biodiversität und sozialen Zusammenhalt.",
+        "Belege, welche Vorhaben durch EU-Mittel zusätzlich möglich werden und welche auch ohne sie entstanden wären.",
+        "Daten zu tatsächlicher Mittelvergabe, regionalem Zugang und Umsetzungsengpässen.",
+        "Geeignete Evaluationen beobachteter Zustandsveränderungen und ihrer Zurechnung; bei widerlegten Annahmen erneute Einordnung."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "EU-Haushalt 2028-2034: Was neue Prioritäten für Klima, Wohlstand und Zusammenhalt bedeuten könnten",
+        "recommended_summary": "Der Finanzrahmen wird verhandelt. Ob neue Prioritäten Klima, Wohlstand und Zusammenhalt stärken, hängt von konkreten Programmen, Umsetzung und Kontrolle ab.",
+        "recommended_meta_description": "EU-Haushalt 2028-2034 im Wirkungscheck: Klimaziele, SDGs, regionale Chancen, Folgekosten und die Bedingungen wirksamer Investitionen."
+      },
+      "reading_time_minutes": 8,
+      "source_snapshot": [
+        {
+          "source_id": "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+          "registry_source_id": "bundesregierung-presse",
+          "publisher_id": "bundesregierung",
+          "publisher": "Bundesregierung - gemeinsame Erklärung der sechs Staaten",
+          "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+          "published_at": "2026-08-27T12:05:00.000Z",
+          "primary_source": true,
+          "source_function": "primary_evidence"
+        },
+        {
+          "publisher_id": "european-commission",
+          "publisher": "Europäische Kommission",
+          "title": "EU budget 2028-2034 for a stronger Europe",
+          "url": "https://commission.europa.eu/news-and-media/news/eu-budget-2028-2034-stronger-europe-2025-07-16_en",
+          "canonical_domain": "commission.europa.eu",
+          "published_at": "2025-07-16T00:00:00Z",
+          "source_function": "context",
+          "summary": "Die Kommission stellte am 16. Juli 2025 ihren Entwurf des MFR 2028-2034 vor. Sie will Programme vereinfachen, Investitionen ermöglichen und gemeinsame Prioritäten finanzieren. Der Vorschlag muss verhandelt werden.",
+          "source_id": "b2bb80ed1c9d03272ad8",
+          "source_item_id": "b2bb80ed1c9d03272ad8",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://commission.europa.eu/news-and-media/news/eu-budget-2028-2034-stronger-europe-2025-07-16_en",
+            "title": "EU budget 2028-2034 for a stronger Europe",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "effcb7b3c9d896dcfd7a90cf6dec967b3dd2264208cabe38d1cf6a1eba9c647e",
+            "relevance_note": "Originalentwurf zum selben Finanzrahmen, nicht weitere Bestätigung der Erklärung vom August 2026.",
+            "limitations": "Institutionelle Darstellung eigener Absichten, kein Nachweis tatsächlich erreichter Ergebnisse."
+          }
+        },
+        {
+          "publisher_id": "european-commission",
+          "publisher": "Europäische Kommission - Klimapolitik",
+          "title": "Supporting climate action through the EU budget",
+          "url": "https://climate.ec.europa.eu/areas-action/eu-funding-climate-action/supporting-climate-action-through-eu-budget_en",
+          "canonical_domain": "climate.ec.europa.eu",
+          "published_at": "2025-10-09T00:00:00Z",
+          "source_function": "context",
+          "summary": "Der Entwurf sieht 35 Prozent für Klima und Umwelt vor, laut Kommission über 700 Milliarden Euro. Die ältere Quote von über 34 Prozent betrifft Klimafinanzierung 2021-2027 einschließlich NextGenerationEU; die Abgrenzungen unterscheiden sich.",
+          "source_id": "d9ff1f25c3942ae3f8cf",
+          "source_item_id": "d9ff1f25c3942ae3f8cf",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://climate.ec.europa.eu/areas-action/eu-funding-climate-action/supporting-climate-action-through-eu-budget_en",
+            "title": "Supporting climate action through the EU budget",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "8fd2b6754132497f469221ce04e317ddcd4e8fbd595dd542be074b30cd114668",
+            "relevance_note": "Originalquelle zur Klima-/Umweltquote und zur Grenze eines Periodenvergleichs.",
+            "limitations": "Dokumentstand ist das ausgewiesene Aktualisierungsdatum. Beide Kommissionsseiten zählen als ein Ursprung; Ausgabenquote ist kein Wirkungsnachweis."
+          }
+        },
+        {
+          "publisher_id": "council-eu",
+          "publisher": "Rat der Europäischen Union",
+          "title": "The EU's long-term budget for 2028-2034",
+          "url": "https://www.consilium.europa.eu/en/policies/the-eu-s-long-term-budget-2028-2034/",
+          "canonical_domain": "consilium.europa.eu",
+          "published_at": "2026-07-15T00:00:00Z",
+          "source_function": "context",
+          "summary": "Der Rat erläutert den MFR-Entwurf und den Verhandlungsstand. Nahezu zwei Billionen Euro sind in laufenden Preisen angegeben. Die MFR-Verordnung erfordert Einstimmigkeit im Rat nach Zustimmung des Parlaments.",
+          "source_id": "d919dd2a49efeb01e0c4",
+          "source_item_id": "d919dd2a49efeb01e0c4",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://www.consilium.europa.eu/en/policies/the-eu-s-long-term-budget-2028-2034/",
+            "title": "The EU's long-term budget for 2028-2034",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "5ba4eb360b7539dcb4f27046c88915fb9f935829ad0f564b9ced84ac9875330e",
+            "relevance_note": "Verfahrens- und Abgrenzungsquelle zum selben Haushaltsgegenstand.",
+            "limitations": "Dokumentstand 15. Juli 2026, keine Bestätigung späterer Einigung und keine Anwendung deutscher GGO/eNAP auf EU-Verfahren."
+          }
+        },
+        {
+          "publisher_id": "european-parliament",
+          "publisher": "Europäisches Parlament",
+          "title": "EU-Haushalt 2028-2034: auf Erwartungen der Bürger und Herausforderungen reagieren",
+          "url": "https://www.europarl.europa.eu/news/de/press-room/20260423IPR41835/eu-long-term-budget-responding-to-citizens-expectations-and-major-challenges",
+          "canonical_domain": "europarl.europa.eu",
+          "published_at": "2026-04-28T11:01:00Z",
+          "source_function": "counter_source",
+          "summary": "Das Parlament beschloss eine Verhandlungsposition für mehr Mittel als im Kommissionsvorschlag. Es fordert Schutz für Kohäsion und Landwirtschaft sowie Transparenz und demokratische Kontrolle bei der Vereinfachung.",
+          "source_id": "960ac89138a6c934dcfb",
+          "source_item_id": "960ac89138a6c934dcfb",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://www.europarl.europa.eu/news/de/press-room/20260423IPR41835/eu-long-term-budget-responding-to-citizens-expectations-and-major-challenges",
+            "title": "EU-Haushalt 2028-2034: auf Erwartungen der Bürger und Herausforderungen reagieren",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "dd99d24d1978cad322846c15eaf693ded4a2066aefa2438b672d5f39061b37bb",
+            "relevance_note": "Eigenständige parlamentarische Gegenposition zur Reduzierung des MFR; kein Medienabdruck einer Regierungsaussage.",
+            "limitations": "Politische Position für denselben Finanzrahmen, keine verabschiedete Gesamteinigung und kein bewiesener Wirkungsgewinn."
+          }
+        },
+        {
+          "publisher_id": "european-environment-agency",
+          "publisher": "Europäische Umweltagentur",
+          "title": "European Climate Risk Assessment - EEA Report 01/2024",
+          "url": "https://www.eea.europa.eu/en/analysis/publications/european-climate-risk-assessment",
+          "canonical_domain": "eea.europa.eu",
+          "published_at": "2024-03-11T00:00:00Z",
+          "source_function": "research",
+          "summary": "Die europäische Bewertung beschreibt 36 Klimarisiken, unter anderem für Gesundheit, Wasser, Infrastruktur und finanzielle Stabilität. Zahlreiche Risiken haben nach dem Bericht kritische Niveaus erreicht.",
+          "source_id": "2402ac651ee2beee3344",
+          "source_item_id": "2402ac651ee2beee3344",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://www.eea.europa.eu/en/analysis/publications/european-climate-risk-assessment",
+            "title": "European Climate Risk Assessment - EEA Report 01/2024",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "9ba8aa875c88cabfd3e4edeb6ba8caee9acc7bb3535bdaff2b6c894c57697bba",
+            "relevance_note": "Fachlicher Risikokontext für die systemische Frage nach Vorsorge und Resilienz.",
+            "limitations": "Älterer Forschungsstand; weder Ereignisbericht zum Haushaltsstreit noch Quantifizierung der Folgen einer bestimmten Kürzung. Hier wurde die veröffentlichte Berichtszusammenfassung herangezogen, keine neue Vollauswertung des Berichts."
+          }
+        },
+        {
+          "publisher_id": "european-court-of-auditors",
+          "publisher": "Europäischer Rechnungshof",
+          "title": "Special report 09/2022: Climate spending in the 2014-2020 EU budget: Not as high as reported",
+          "url": "https://op.europa.eu/webpub/eca/special-reports/climate-mainstreaming-09-2022/en/",
+          "canonical_domain": "op.europa.eu",
+          "published_at": "2022-05-30T00:00:00Z",
+          "source_function": "counter_source",
+          "summary": "Der Rechnungshof kritisierte die Verlässlichkeit ausgewiesener Klimaausgaben 2014-2020. Die Erfassung potenzieller Beiträge ersetzte keine Prüfung des abschließenden Beitrags zu Klimazielen.",
+          "source_id": "520ff4746f4fb686ad14",
+          "source_item_id": "520ff4746f4fb686ad14",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://op.europa.eu/webpub/eca/special-reports/climate-mainstreaming-09-2022/en/",
+            "title": "Special report 09/2022: Climate spending in the 2014-2020 EU budget: Not as high as reported",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "bbc7d8f6a9c85f3d9bcaea51eb1c95f0c63da31cd1c247bae795689f4d4ba54e",
+            "relevance_note": "Historischer Prüfbericht als Gegenbefund zur Gleichsetzung von Ausgabenquote und Wirkungsnachweis.",
+            "limitations": "Autor ist der Rechnungshof; gehostet beim EU-Amt für Veröffentlichungen. Kein Beweis gleicher Mängel im Entwurf 2028-2034."
+          }
+        },
+        {
+          "publisher_id": "united-nations",
+          "publisher": "Vereinte Nationen",
+          "title": "Transforming our world: the 2030 Agenda for Sustainable Development",
+          "url": "https://sdgs.un.org/2030agenda",
+          "canonical_domain": "sdgs.un.org",
+          "published_at": "2015-09-25T00:00:00Z",
+          "source_function": "reference_framework",
+          "summary": "Die Agenda 2030 enthält Ziele zu Infrastruktur, Teilhabe, Klima, Ökosystemen, transparenten Institutionen und kohärenter Nachhaltigkeitspolitik. Die Analyse verwendet die einschlägigen Unterziele als Zielreferenzen.",
+          "source_id": "56971e99c08799ebde37",
+          "source_item_id": "56971e99c08799ebde37",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://sdgs.un.org/2030agenda",
+            "title": "Transforming our world: the 2030 Agenda for Sustainable Development",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "a01c0a65a7ed03ab965810ece48323074d0f2291415c1810f8835be7d65402af",
+            "relevance_note": "Originalquelle für SDG 9.1/9.4, 10.2, 13.1/13.2, 15, 16.6 und 17.14.",
+            "limitations": "Normativer Referenzrahmen, kein UN-Urteil über diesen MFR, keine Wirkungsevidenz. Unterschiedliche Zielfristen dürfen nicht pauschal auf 2034 verschoben werden."
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T09:21:47.630Z",
+          "source_fingerprint": "edd6ae7dd4bc2116c0a32bc24deb9909a5131506c69f8c4adf231ad77911bc57",
+          "title": "EU-Haushalt 2028-2034: Was neue Prioritäten für Klima, Wohlstand und Zusammenhalt bedeuten könnten",
+          "provider": "Codex editorial review",
+          "model": null,
+          "claim_ledger": [
+            {
+              "claim": "Für 2028-2034 liegen unterschiedliche Haushaltspositionen vor; ein endgültiger MFR ist damit nicht beschlossen.",
+              "type": "fact",
+              "source_ids": [
+                "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+                "d919dd2a49efeb01e0c4",
+                "960ac89138a6c934dcfb"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Quellenstand 6. September 2026; weitere Verhandlungen können die Positionen ändern.",
+              "date": "2026-09-06"
+            },
+            {
+              "claim": "Gezielte Förderung kann zusätzliche Vorsorge und langfristige Investitionen ermöglichen.",
+              "type": "impact_potential",
+              "source_ids": [],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Bedingt durch Zusätzlichkeit, geeignete Projekte und tatsächliche Umsetzung; keine beobachtete Wirkung.",
+              "date": null
+            },
+            {
+              "claim": "Entfällt wirksame Vorsorge ohne Ersatz, können Risiken und spätere Reparaturkosten verlagert werden.",
+              "type": "impact_risk",
+              "source_ids": [],
+              "evidence_level": "medium",
+              "data_status": "scenario",
+              "uncertainty": "Keine Aussage, dass eine konkrete MFR-Kürzung bereits solche Schäden ausgelöst hat.",
+              "date": null
+            },
+            {
+              "claim": "Die Kommission legte ihren Vorschlag im Juli 2025 vor. Der Rat beschreibt den Umfang als nahezu zwei Billionen Euro zu laufenden Preisen.",
+              "type": "fact",
+              "source_ids": [
+                "b2bb80ed1c9d03272ad8",
+                "d919dd2a49efeb01e0c4"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Vorschlag, kein final verabschiedeter Haushaltsbetrag.",
+              "date": "2025-07-16"
+            },
+            {
+              "claim": "Die sechs Staaten verlangen mehrere hundert Milliarden Euro weniger als im Kommissionsvorschlag, ohne konkrete Programmbeträge festzulegen.",
+              "type": "fact",
+              "source_ids": [
+                "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Ihre Forderung ist keine schon beschlossene Kürzung einzelner Programme.",
+              "date": "2026-08-27"
+            },
+            {
+              "claim": "Das Parlament fordert eine Aufstockung gegenüber dem Kommissionsentwurf und Schutz für Kohäsion und Landwirtschaft.",
+              "type": "fact",
+              "source_ids": [
+                "960ac89138a6c934dcfb"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Verhandlungsposition des Parlaments, keine Haushaltseinigung.",
+              "date": "2026-04-28"
+            },
+            {
+              "claim": "Die vorgeschlagene Quote von 35 Prozent betrifft Klima und Umwelt gemeinsam; die ältere Vergleichsquote umfasst einen anderen Haushalts- und Zweckzuschnitt.",
+              "type": "fact",
+              "source_ids": [
+                "d9ff1f25c3942ae3f8cf"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Weder unmittelbarer Wirkungsvergleich noch Beleg tatsächlich erzielter Klimaverbesserungen.",
+              "date": "2025-10-09"
+            },
+            {
+              "claim": "Der Rechnungshof kritisierte die Verlässlichkeit ausgewiesener Klimaausgaben 2014-2020.",
+              "type": "fact",
+              "source_ids": [
+                "520ff4746f4fb686ad14"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Historischer Prüfgegenstand; kein Nachweis desselben Fehlers im MFR 2028-2034.",
+              "date": "2022-05-30"
+            },
+            {
+              "claim": "Die europäische Klimarisikobewertung beschreibt Risiken für Gesundheit, Wasser, Infrastruktur und finanzielle Stabilität.",
+              "type": "fact",
+              "source_ids": [
+                "2402ac651ee2beee3344"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Fachlicher Risikokontext, keine Zurechnung zu einer konkreten Haushaltsentscheidung.",
+              "date": "2024-03-11"
+            },
+            {
+              "claim": "SDG 9, 10, 13, 15, 16 und 17 liefern sachlich relevante Zielbezüge für diese Analyse.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "56971e99c08799ebde37"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Auswahl und Anwendung sind WÖk-Einordnung, keine UN-Bewertung des MFR.",
+              "date": null
+            },
+            {
+              "claim": "Wirkung ist tatsächliche Zustandsveränderung; ein Budgetansatz oder Zielbezug ist noch kein Wirkungsnachweis.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodischer Maßstab nach dem führenden WÖk-Begriffsleitfaden 1.7, keine zusätzliche empirische Feststellung.",
+              "date": "2026-08-21"
+            },
+            {
+              "claim": "Ein Vergleich der Haushaltsoptionen benötigt gleiche Preisbasis, Zeitraum und Abgrenzung sowie eine Prüfung von Zusätzlichkeit und Verteilung.",
+              "type": "analytical_inference",
+              "source_ids": [],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Ohne vollständige Programme und Gegenfaktum keine robuste Gesamtrangfolge.",
+              "date": null
+            },
+            {
+              "claim": "Nichtkompensation und Reverse Merit Order begrenzen eine positive Gesamtbewertung bei materiell verletzten Schutzgrenzen.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "WÖk-Bewertungslogik, keine amtliche EU-Haushaltsvorschrift; konkrete Grenzen sind gesondert zu begründen.",
+              "date": "2026-08-21"
+            }
+          ]
+        }
+      ],
+      "editorial_review": {
+        "status": "verified",
+        "reviewed_at": "2026-09-06T09:21:47.630Z",
+        "terminology_version": "1.7",
+        "scope": "Commission proposal, government position, Parliament counter-position, EU procedure, SDG reference, climate risks and historical audit; conditional systemic paths. No full programme evaluation.",
+        "event_source_count": 1,
+        "research_source_count": 7,
+        "distinct_research_origins": 7,
+        "news_api_calls": 0,
+        "news_api_cost_usd": 0,
+        "empirical_effect_of_mfr_established": false
+      }
+    },
     {
       "analysis_id": "woek-analysis-39ddf0b6cc39",
       "story_id": "wt-98ff7e403362fdf9",
@@ -6804,9 +7497,9 @@
     "wt-1fbb056ccaaf351d": {
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-06T08:22:28.382Z",
-      "next_attempt_at": "2026-09-06T08:52:28.382Z",
+      "attempts": 4,
+      "last_attempt_at": "2026-09-06T10:23:03.749Z",
+      "next_attempt_at": "2026-09-06T12:23:03.749Z",
       "quality_errors": [
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
@@ -6815,9 +7508,9 @@
     "wt-7b385f58748f3d32": {
       "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-06T08:22:28.382Z",
-      "next_attempt_at": "2026-09-06T08:52:28.382Z",
+      "attempts": 4,
+      "last_attempt_at": "2026-09-06T10:23:03.749Z",
+      "next_attempt_at": "2026-09-06T12:23:03.749Z",
       "quality_errors": [
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
@@ -6826,9 +7519,9 @@
     "wt-60f4e4d7d43fad99": {
       "fingerprint": "6889f6dcfa62649dc22a1dff7bca65fabd75a0cebd636d80d9eb25f668e81671",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-06T08:22:28.382Z",
-      "next_attempt_at": "2026-09-06T08:52:28.382Z",
+      "attempts": 4,
+      "last_attempt_at": "2026-09-06T10:23:03.749Z",
+      "next_attempt_at": "2026-09-06T12:23:03.749Z",
       "quality_errors": [
         "EDITORIAL_SELF_FRAME_FAILED"
       ],

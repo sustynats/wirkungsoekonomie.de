@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
+import {normalizePublicationTypography} from '../lib/public-typography.mjs';
 
 const SITE='https://wirkungsoekonomie.de';
 const esc=value=>String(value).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
@@ -12,6 +13,15 @@ const headingKey=value=>fold(value).replace(/^wgs-/,'').replace(/^(?:dossier-)+(
 const headingSlug=value=>fold(visible(value)).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 function walk(directory){return fs.readdirSync(directory,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(path.join(directory,entry.name)):entry.name.endsWith('.html')?[path.join(directory,entry.name)]:[]);}
 function outsideRaw(html,transform){return html.split(/(<(?:script|style)\b[^>]*>[\s\S]*?<\/(?:script|style)>)/gi).map((part,i)=>i%2?part:transform(part)).join('');}
+
+export function normalizeMachineMirror(html) {
+  if(!/<pre>/.test(html) || /<meta\b[^>]*name=["']robots["']/i.test(html))return html;
+  const metadata='<meta name="robots" content="noindex, follow">';
+  if(/<\/head>/i.test(html))return html.replace(/<\/head>/i,metadata+'\n</head>');
+  // Some older API mirrors consist only of a pre element. Keep its escaped
+  // data intact while adding the document shell needed by search engines.
+  return '<!doctype html>\n<html lang="de"><head><meta charset="utf-8"><title>WÖk API - Datenansicht</title>'+metadata+'</head><body>'+html+'</body></html>\n';
+}
 
 export function uniqueContentIds(html) {
   const seen=new Set();const reserved=new Set();const replacements=[];
@@ -62,7 +72,7 @@ export function normalizePublicContent(root, options={}) {
     const rel=path.relative(root,file).replaceAll(path.sep,'/');const route=rel==='index.html'?'/':'/'+(rel.endsWith('/index.html')?rel.slice(0,-10):rel);
     const original=fs.readFileSync(file,'utf8');let html=original;
     // JSON mirrors are machine access points, not duplicate editorial pages.
-    if(rel.startsWith('api/') && /<pre>/.test(html) && !/<meta\b[^>]*name=[\"']robots[\"']/i.test(html))html=html.replace('</head>','<meta name="robots" content="noindex, follow">\n</head>');
+    if(rel.startsWith('api/'))html=normalizeMachineMirror(html);
     for(const [id,label] of Object.entries(headingAnchors[route] || {})){
       if(html.includes(`id="${id}"`))continue;
       html=html.replace(/<h([1-6])\b([^>]*)>([\s\S]*?)<\/h\1>/gi,(whole,level,attrs,body)=>!/(?:^|\s)id=/.test(attrs)&&visible(body)===label?`<h${level}${attrs} id="${id}">${body}</h${level}>`:whole);
@@ -144,7 +154,7 @@ export function normalizePublicContent(root, options={}) {
   for(const page of pages.values()){
     if(!/^(bibliothek\/|wirkungsradar\/)/.test(page.rel) || /noindex|http-equiv=["']refresh/i.test(page.html.slice(0,page.html.indexOf('</head>'))))continue;
     const main=page.html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1];if(!main || /<(input|form|textarea|canvas)\b/i.test(main))continue;
-    const text=visible(main);if(text.split(' ').length<100)continue;
+    const text=normalizePublicationTypography(visible(main));if(text.split(' ').length<100)continue;
     const key=crypto.createHash('sha256').update(text).digest('hex');const group=groups.get(key)||[];group.push(page);groups.set(key,group);
   }
   const excluded=new Set();

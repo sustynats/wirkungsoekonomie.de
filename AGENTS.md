@@ -52,6 +52,20 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Modellhafte Inhalte bleiben als Modell, Demo, Entwurf oder Arbeitspapier gekennzeichnet.
 - Seiten sollen auch fuer Menschen verstaendlich sein, die die Wirkungsökonomie noch nie gehoert haben.
 
+### Verbindlicher Kern: systemische statt isolierter Betrachtung
+
+- Jede Wirkungsanalyse betrachtet den Gegenstand im gekoppelten System: relevante Abhaengigkeiten, Wechselwirkungen, Rueckkopplungen, Kaskaden sowie Wirkungsordnungen 1 bis 3 gehoeren zum Pruefkern, nicht zu einem optionalen Zusatz.
+- Das gilt fuer neue Analysen, Folgenchecks, Medien-/Diskurschecks, WÖk-Analysen und rueckwirkende Neupruefungen. Kommunikations- und Ereigniswirkung bleiben dabei getrennt; thematische Verwandtschaft allein rechtfertigt keine gemeinsame Lageakte.
+- Systemgrenze, Betroffene, Zeitverzug, Verteilung, Resilienz, Lock-ins und moegliche raeumliche, soziale oder zeitliche Schadensverlagerungen explizit pruefen. Nur materielle Zusammenhaenge darstellen; fehlende Belege als offen kennzeichnen, keine Kaskaden erfinden.
+- Plausible Wirkpfade sind keine eingetretene Wirkung und kein Kausalitaetsnachweis. Erstmeldungen duerfen knapp bleiben, wenn die systemischen Fragen und Wissensgrenzen sichtbar sind; die Regel erzwingt weder lange Texte noch zusaetzliche kostenpflichtige Analysen.
+- Historische Inhalte nicht still umschreiben. Bei erneuter Pruefung die Regel anwenden und materielle Ergaenzungen versionieren.
+
+## Regionale Nachrichtenabdeckung
+
+- Ziel sind dauerhaft regelmaessig ueberwachte regionale Quellen fuer alle 16 Bundeslaender. Die Laenderzuordnung steht explizit in der bestehenden Source Registry; eine pauschale DE-Zuordnung zaehlt nicht als regionale Vollabdeckung.
+- Fehlende, deaktivierte, ueberfaellige und noch nicht erfolgreich abgerufene Zugaenge getrennt ausweisen. Amtliche Pressequellen koennen eine Grundabdeckung liefern, ersetzen aber keine unabhaengige Regionalberichterstattung. Regierungsangaben bleiben attribuiert.
+- Zugang, Robots/RSL und Nutzungsrahmen vor Aktivierung pruefen; Abdeckungsziele duerfen keine Sperren oder Rechtspruefung umgehen. Regionale Routine, Termine, Sport und Eigenwerbung vor der KI filtern; materielle neue Entwicklungen weiter zulassen.
+
 ## Staatliche Nachhaltigkeits- und Gesetzesfolgenarchitektur
 
 - Deutschland besitzt bereits eine institutionalisierte Gesetzesfolgen- und Nachhaltigkeitspruefungsarchitektur. Die WÖk ersetzt sie nicht und darf nicht behaupten, Folgen- oder Nachhaltigkeitspruefung erstmals einzufuehren.

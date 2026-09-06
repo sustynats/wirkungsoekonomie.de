@@ -11,6 +11,7 @@ import { NEWS_REQUEST_RESERVATION_USD, costFromUsage, modelRates, newsBudget } f
 import {
   EDITORIAL_ANALYSIS_VERSION, buildEditorialAnalysisPrompt, editorialAnalysisAssessment,
   editorialAnalysisValidationErrors, editorialSlug, editorialSourceRef, sanitizeEditorialAnalysis,
+  editorialSources, withEditorialResearch,
 } from "./editorial-analysis.mjs";
 
 const DEFAULT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -191,9 +192,9 @@ export async function runEditorialAnalyses({
   const researchExpansion = execute ? enrichEditorialResearchSubjects(baseSubjects, newsroom, newsRegistry, now) : { subjects: baseSubjects, added: 0 };
   // Revalidate the final combined source set locally, including legacy records
   // without a stored integrity result. No paid analysis or article fetch required.
-  const subjects = researchExpansion.subjects.map((story) => ({
+  const subjects = researchExpansion.subjects.map((story) => withEditorialResearch({
     ...story, source_integrity: sourceIntegrityForStory(story, newsRegistry, [], now),
-  }));
+  }, existingForStory(store, story.story_id)));
   const assessed = subjects.map((story) => ({ story, assessment: editorialAnalysisAssessment(story) }));
   const candidateRows = assessed.filter(({ assessment }) => assessment.candidate).map(({ story, assessment }) => publicCandidate(assessment, story, existingForStory(store, story.story_id)));
   const changedCandidateState = JSON.stringify(store.candidates || []) !== JSON.stringify(candidateRows);
@@ -277,7 +278,7 @@ export async function runEditorialAnalyses({
         evidence_gate: assessment.evidence_gate, published_at: publishedAt, updated_at: now, version,
         ...analysis,
         reading_time_minutes: Math.max(5, Math.ceil((analysis.sections || []).flatMap((section) => section.paragraphs || []).join(" ").split(/\s+/).filter(Boolean).length / 210)),
-        source_snapshot: (story.sources || []).map((source) => ({ source_id: editorialSourceRef(source), registry_source_id: source.source_id, publisher_id: source.publisher_id || null, publisher: source.publisher, title: source.title, url: source.url, published_at: source.published_at, primary_source: Boolean(source.primary_source) })),
+        source_snapshot: editorialSources(story).map((source) => ({ source_id: editorialSourceRef(source), registry_source_id: source.registry_source_id || source.source_id, publisher_id: source.publisher_id || null, publisher: source.publisher, title: source.title, url: source.url, published_at: source.published_at, primary_source: Boolean(source.primary_source), ...(source.editorial_review ? { source_item_id: editorialSourceRef(source), summary: source.summary, canonical_domain: source.canonical_domain, source_function: source.source_function, editorial_review: source.editorial_review } : {}) })),
         versions: [...(existing?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, provider: result.provider, model: result.model, claim_ledger: analysis.claim_ledger }],
       };
       const index = (store.analyses || []).findIndex((item) => item.analysis_id === analysisId);

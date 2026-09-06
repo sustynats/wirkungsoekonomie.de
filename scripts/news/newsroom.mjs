@@ -33,6 +33,7 @@ export function annotateSourceItem(item, source, now) {
     language: source.language || "de",
     geography: source.geography || ["DE"],
     research_lane: source.research_lane || (item.primary_source ? "primary" : "media"),
+    selection_profile: source.selection_profile || null,
     requires_corroboration: Boolean(source.requires_corroboration),
     source_published_at: item.published_at,
     ingested_at: now,

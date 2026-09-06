@@ -71,6 +71,9 @@
   };
 
   const form = root.querySelector(".calculator-form");
+  for (const name of ["investment", "annualDirectBenefit", "annualTransformativeBenefit", "annualHarm", "annualOperatingCost"]) {
+    form.elements[name].step = "0.01";
+  }
   const output = (key) => root.querySelector(`[data-impact-result="${key}"]`);
   const fields = ["mensch", "planet", "demokratie"];
   const money = new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });

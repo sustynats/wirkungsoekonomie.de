@@ -1,5 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import {renderInstituteProjects} from "../lib/institut-projects.mjs";
+import "./build-institut-projects.mjs";
 
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, "institut");
@@ -110,6 +112,8 @@ ${renderHeader(BASE)}
           <a class="btn btn-primary" href="${WIRKUNGSGESELLSCHAFT_URL}">Wirkungsgesellschaft verstehen</a>
         </div>
       </section>
+
+      ${renderInstituteProjects({base:BASE})}
 
       <section class="section home-video-section" id="institut-video" aria-labelledby="institut-video-title">
         <div>
