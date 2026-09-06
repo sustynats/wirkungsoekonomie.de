@@ -30,7 +30,7 @@ import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
 import { IMAGE_CONFIG } from "./title-image/policy.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint, sourceReviewFingerprint } from "./evidence-packets.mjs";
-import { numericEvidenceReceipt } from "./numeric-evidence.mjs";
+import { numberTokens, numericEvidenceReceipt } from "./numeric-evidence.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
 import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
 import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSourceFunnel } from "./source-funnel.mjs";
@@ -425,6 +425,20 @@ export function normalizeAnalysisParagraphs(analysis) {
   const middle = Math.ceil(sentences.length / 2);
   analysis.source_summary = `${sentences.slice(0,middle).join(' ')}\n\n${sentences.slice(middle).join(' ')}`;
   return analysis;
+}
+
+export function analysisValidationDiagnostics(analysis) {
+  if (!analysis) return null;
+  return {
+    publication_depth: analysis.publication_depth || null,
+    source_summary_words: String(analysis.source_summary || '').trim().split(/\s+/).filter(Boolean).length,
+    source_summary_paragraphs: String(analysis.source_summary || '').split(/\n\s*\n/).filter(s=>s.trim()).length,
+    missing_claim_numbers: (Array.isArray(analysis.event_claims) ? analysis.event_claims : []).flatMap((claim,index) => {
+      const cited = numberTokens((Array.isArray(claim?.evidence) ? claim.evidence : []).map(proof=>typeof proof?.excerpt === 'string' ? proof.excerpt : '').join('\n'));
+      const missing = [...numberTokens(typeof claim?.claim === 'string' ? claim.claim : '')].filter(n=>!cited.has(n));
+      return missing.length ? [{claim_index:index,missing,cited_numbers:[...cited]}] : [];
+    }),
+  };
 }
 
 export function sanitizeAnalysisMediaImpact(analysis, candidate, report = {}, now = new Date().toISOString()) {
@@ -1178,7 +1192,7 @@ export async function runWirkungsticker(options = {}) {
             nextPublished = publishedRecord(analysisCandidate, analysis, aiResult, options.now ? now : new Date().toISOString());
             errors.push(...validateAnalysis({ source_summary: nextPublished.source_summary, ...nextPublished.analysis }, nextPublished, { validateSourceSummaryNumbers: false, persisted: true }));
           }
-          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
+          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
             const noUpdate = errors.includes("AI_DUPLICATE_WITHOUT_UPDATE")
               && errors.every(error => ["AI_PUBLICATION_NOT_RECOMMENDED", "AI_DUPLICATE_WITHOUT_UPDATE"].includes(error));
