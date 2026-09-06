@@ -9,7 +9,9 @@ const inline = text => e(text).replace(/\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g,(_
 function markdown(text) {
   return text.replace(/\n(#{1,6} )/g,'\n\n$1').split(/\n\n+/).map(block=>{
     if(block.startsWith('# ')) return '';
-    if(block.startsWith('## ')) {const [title,...rest]=block.split('\n');return `<h3>${inline(title.slice(3))}</h3>${rest.length?`<p>${inline(rest.join(' '))}</p>`:''}`;}
+    const [first,...rest]=block.split('\n');
+    const heading=first.match(/^(#{2,5}) (.+)$/);
+    if(heading) {const level=heading[1].length+1;return `<h${level}>${inline(heading[2])}</h${level}>${rest.length?`<p>${inline(rest.join(' '))}</p>`:''}`;}
     if(block.startsWith('- ')) return `<ul>${block.split('\n').map(line=>`<li>${inline(line.replace(/^- /,''))}</li>`).join('')}</ul>`;
     return `<p>${inline(block).replaceAll('\n','<br>')}</p>`;
   }).join('\n');
