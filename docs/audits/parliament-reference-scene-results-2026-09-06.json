@@ -1,0 +1,200 @@
+{
+  "schema_version": "woek-parliament-reference-scene-results-1.0",
+  "set_id": "st-ltw-2026-shared-city-reference-v1",
+  "source_commit": "012254a89ff65bd8747bfdba5de43a5521263913",
+  "contract_path": "woek-parlament-app/data/impact-visuals/sachsen-anhalt-2026-reference-scene-v1.json",
+  "contract_sha256": "b7ba77569067a039b1d2b9052cd83ce6bc75a3b84043ed8d327070f449838ab0",
+  "source_descriptor_manifest_sha256": "326b3b1369225f5f5e6b34f9d364fcfca43ec1ae3350e3752300ddccace84b4b",
+  "common_reference_sha256": "9f72bcb9a3d3051b6b54fcfe0fd7bd0077904dfe7bd5eb4dfe13a8c2e00b179b",
+  "generation_count": 7,
+  "outputs": [
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-base",
+      "kind": "BASE",
+      "filename": "sachsen-anhalt-shared-city-reference-v1.png",
+      "sha256": "9f72bcb9a3d3051b6b54fcfe0fd7bd0077904dfe7bd5eb4dfe13a8c2e00b179b",
+      "byte_length": 8110756,
+      "width": 2752,
+      "height": 1536,
+      "mime": "image/png",
+      "reference_sha256": null,
+      "provider": "higgsfield",
+      "model": "nano_banana_pro",
+      "job_id": "5d12f632-54b9-4530-a46d-318b76e5c196",
+      "prompt_version": "woek-parliament-shared-city-reference-1",
+      "prompt_sha256": "b2f6c993952db48ab0f23a28caca1749f206c81b5cab4a26f12e292f0b96028f",
+      "generated_at": "2026-09-06T06:36:40.871Z",
+      "reused": false,
+      "source_key": null,
+      "selected_impact_path_ids": [],
+      "not_depicted_as_fact": []
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-cdu",
+      "kind": "PROGRAMME_VARIANT",
+      "filename": "cdu-program-reference-scenario-v3.png",
+      "sha256": "3f547f4e7d9126fe8c7b5fd0442e7fff54903555c5ea2a7d72744bc5694ab749",
+      "byte_length": 7720932,
+      "width": 2752,
+      "height": 1536,
+      "mime": "image/png",
+      "reference_sha256": "9f72bcb9a3d3051b6b54fcfe0fd7bd0077904dfe7bd5eb4dfe13a8c2e00b179b",
+      "provider": "higgsfield",
+      "model": "nano_banana_pro",
+      "job_id": "38296736-a1d8-4f5a-8811-7866a08c1ca4",
+      "prompt_version": "woek-parliament-shared-city-reference-1",
+      "prompt_sha256": "ec2406fbc3fd229cd454237fb58e8ba2407ade3fdb702617fe575335e8f50f65",
+      "generated_at": "2026-09-06T06:37:50.725Z",
+      "reused": false,
+      "source_key": "ltw-2026-st-cdu",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "not_depicted_as_fact": [
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol"
+      ]
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-spd",
+      "kind": "PROGRAMME_VARIANT",
+      "filename": "spd-program-reference-scenario-v3.png",
+      "sha256": "acd27b657d3c3d57e2356c56829a9585026c60d70b889e14ba6659419859d448",
+      "byte_length": 7780126,
+      "width": 2752,
+      "height": 1536,
+      "mime": "image/png",
+      "reference_sha256": "9f72bcb9a3d3051b6b54fcfe0fd7bd0077904dfe7bd5eb4dfe13a8c2e00b179b",
+      "provider": "higgsfield",
+      "model": "nano_banana_pro",
+      "job_id": "2b88d972-939b-424f-be13-4279952fe7c0",
+      "prompt_version": "woek-parliament-shared-city-reference-1",
+      "prompt_sha256": "86d904fd5794fade2fcb58b9eb88658ed3ff13d00d9827849ef6d35449090bd5",
+      "generated_at": "2026-09-06T06:38:37.667Z",
+      "reused": false,
+      "source_key": "ltw-2026-st-spd",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "not_depicted_as_fact": []
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-gruene",
+      "kind": "PROGRAMME_VARIANT",
+      "filename": "gruene-program-reference-scenario-v3.png",
+      "sha256": "bf2e1ab92b2beb72bb01a347ca8e5559ccd325de49162d8ec9fe978b562f2a81",
+      "byte_length": 6972254,
+      "width": 2752,
+      "height": 1536,
+      "mime": "image/png",
+      "reference_sha256": "9f72bcb9a3d3051b6b54fcfe0fd7bd0077904dfe7bd5eb4dfe13a8c2e00b179b",
+      "provider": "higgsfield",
+      "model": "nano_banana_pro",
+      "job_id": "1d507db6-ddb4-4ff5-b6d5-b3fc84762426",
+      "prompt_version": "woek-parliament-shared-city-reference-1",
+      "prompt_sha256": "dd1d6a3c6662e6522701ba348d34b40c0ac5d0f655bb4dffba0749b0c439651a",
+      "generated_at": "2026-09-06T06:39:19.706Z",
+      "reused": false,
+      "source_key": "ltw-2026-st-gruene",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "not_depicted_as_fact": []
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-linke",
+      "kind": "PROGRAMME_VARIANT",
+      "filename": "linke-program-reference-scenario-v3.png",
+      "sha256": "5115aab86abb66bc22993b49ff595d57b668a62c13a4e167e35b4424e615d6a5",
+      "byte_length": 7756343,
+      "width": 2752,
+      "height": 1536,
+      "mime": "image/png",
+      "reference_sha256": "9f72bcb9a3d3051b6b54fcfe0fd7bd0077904dfe7bd5eb4dfe13a8c2e00b179b",
+      "provider": "higgsfield",
+      "model": "nano_banana_pro",
+      "job_id": "4b48ef3c-696a-476d-8ca6-1a2930a2b93b",
+      "prompt_version": "woek-parliament-shared-city-reference-1",
+      "prompt_sha256": "e5027a95f3153e342c3ba7e163b4dbe9e5ca50e737454344d0360f4b650b595f",
+      "generated_at": "2026-09-06T06:40:17.303Z",
+      "reused": false,
+      "source_key": "ltw-2026-st-linke",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "not_depicted_as_fact": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ]
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-bsw",
+      "kind": "PROGRAMME_VARIANT",
+      "filename": "bsw-program-reference-scenario-v3.png",
+      "sha256": "7fbbb802c31151817223d8c794b8c827d91a6b5671024440820255e12d5940fc",
+      "byte_length": 7719625,
+      "width": 2752,
+      "height": 1536,
+      "mime": "image/png",
+      "reference_sha256": "9f72bcb9a3d3051b6b54fcfe0fd7bd0077904dfe7bd5eb4dfe13a8c2e00b179b",
+      "provider": "higgsfield",
+      "model": "nano_banana_pro",
+      "job_id": "b3f7f9f4-5b1e-442e-a833-1bc402e441c8",
+      "prompt_version": "woek-parliament-shared-city-reference-1",
+      "prompt_sha256": "bb0bd9264277b2946c1e5d4df4d56401a467a3df6ef0681767a39802bddef818",
+      "generated_at": "2026-09-06T06:41:11.893Z",
+      "reused": false,
+      "source_key": "ltw-2026-st-bsw",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "not_depicted_as_fact": [
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ]
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-afd",
+      "kind": "PROGRAMME_VARIANT",
+      "filename": "afd-program-reference-scenario-v3.png",
+      "sha256": "c78608d340a11d0ae8b52a8eff42523d6f53df6f2bcc359b5ffad053dfe691da",
+      "byte_length": 7085551,
+      "width": 2752,
+      "height": 1536,
+      "mime": "image/png",
+      "reference_sha256": "9f72bcb9a3d3051b6b54fcfe0fd7bd0077904dfe7bd5eb4dfe13a8c2e00b179b",
+      "provider": "higgsfield",
+      "model": "nano_banana_pro",
+      "job_id": "e258dd98-ce6b-422d-bbab-3611eaaa3415",
+      "prompt_version": "woek-parliament-shared-city-reference-1",
+      "prompt_sha256": "17200e1e43208e5e326c8f511805628724b57f5af553070603bf987e52e5cc4b",
+      "generated_at": "2026-09-06T06:41:59.833Z",
+      "reused": false,
+      "source_key": "ltw-2026-st-afd",
+      "selected_impact_path_ids": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "not_depicted_as_fact": [
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu"
+      ]
+    }
+  ],
+  "publication_status": "CANDIDATE_FAIL_CLOSED_PENDING_ASSET_SOURCE_FIDELITY_AND_VISUAL_QA"
+}

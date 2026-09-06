@@ -56,6 +56,11 @@ jobs:
       - name: Check Sachsen-Anhalt public count semantics
         run: node scripts/quality/check-sachsen-anhalt-public-count-semantics.mjs
 
+      - name: Keep rejected Parliament reference-scene candidates fail-closed (no generation)
+        run: |
+          node --test tests/news/parliament-reference-scene.test.mjs tests/news/parliament-reference-scene-qa.test.mjs
+          node scripts/parliament/impact-visuals/check-reference-scene-candidates.mjs --expect-rejected
+
       - name: Build search index
         run: npm run build:search
 
