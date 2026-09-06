@@ -8,9 +8,45 @@ import { evidenceGroups, eventFingerprint } from "./newsroom.mjs";
 import { sourceIntegrityForStory } from "./source-integrity.mjs";
 import { publishedRecord, sanitizeAnalysisMediaImpact } from "./run.mjs";
 import { sanitizeVisuals } from "./visuals.mjs";
+import { mediaTriggerRecord } from "./media-impact.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+// A reviewed media-only addendum must not rebuild claims, scores or event IDs.
+// The source fingerprint prevents applying a review to changed material.
+export function prepareReviewedMediaImpact(review, registry, stories, now) {
+  if (!review.review_basis || !review.research_checked_at || !review.correction_note) throw new Error("EDITORIAL_REVIEW_PROVENANCE_REQUIRED");
+  const existing = stories.find(story => story.story_id === review.story_id);
+  if (!existing?.published || !existing.analysis) throw new Error("EDITORIAL_MEDIA_STORY_REQUIRED");
+  const reviewId = sha256(JSON.stringify(review));
+  if (existing.versions?.some(version => version.review_id === reviewId)) return { errors: [], record: existing, unchanged: true };
+  if (review.expected_content_hash !== existing.content_hash) throw new Error("EDITORIAL_MEDIA_SOURCE_CHANGED");
+  const record = structuredClone(existing);
+  const report = {};
+  record.analysis.media_impact = structuredClone(review.media_impact);
+  sanitizeAnalysisMediaImpact(record.analysis, record, report, now);
+  record.analysis.media_trigger = mediaTriggerRecord(record.analysis.media_trigger, record);
+  const integrity = sourceIntegrityForStory(record, registry, stories, now);
+  const errors = [...integrity.issues.map(issue => issue.code), ...validateAnalysis({ source_summary: record.source_summary, ...record.analysis }, record, { validateSourceSummaryNumbers: false, persisted: true })];
+  if (errors.length) return { errors, candidate: { ...record, source_integrity: integrity } };
+  record.source_integrity = integrity;
+  record.current_version = Number(existing.current_version || 0) + 1;
+  record.updated_at = record.last_updated = now;
+  record.versions = [...(existing.versions || []), {
+    version: record.current_version, analyzed_at: now, content_hash: record.content_hash,
+    title: record.title, previous_title: existing.title, source_summary: record.source_summary,
+    analysis: structuredClone(record.analysis), claims: structuredClone(record.claims),
+    source_versions: record.sources.map(source => ({ source_id: source.source_id, url: source.url, content_hash: source.content_hash })),
+    provider: "editorial_review", model: "source_bound_review", mode: "media_impact_editorial_review",
+    review_id: reviewId, review_basis: review.review_basis, research_checked_at: review.research_checked_at,
+    method_sources: review.method_sources || [], self_frame_rewrites: report.self_frame_rewrites || 0,
+  }];
+  record.corrections = [...(existing.corrections || []), { at: now, note: review.correction_note }];
+  record.publication_history = [...(existing.publication_history || []), { version: record.current_version, published_at: now, source_count: record.sources.length, change: "media_impact_added" }];
+  return { errors: [], record, unchanged: false };
+}
+
 export function prepareReviewedStory(review, registry, stories, now) {
+  if (review.review_type === "media_impact") return prepareReviewedMediaImpact(review, registry, stories, now);
   if (!review.review_basis || !review.research_checked_at || !review.event_key) throw new Error("EDITORIAL_REVIEW_PROVENANCE_REQUIRED");
   const id = `wt-${sha256(review.event_key).slice(0, 16)}`;
   const existing = stories.find(story => story.story_id === id);
@@ -50,7 +86,9 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   if (result.errors.length) { console.error(JSON.stringify({ errors: result.errors, integrity: result.candidate.source_integrity.issues })); process.exitCode = 1; }
   else {
     if (process.argv.includes("--write") && !result.unchanged) {
-      store.stories = [...store.stories.filter(story => story.story_id !== result.record.story_id), result.record];
+      const index = store.stories.findIndex(story => story.story_id === result.record.story_id);
+      if (index < 0) store.stories.push(result.record);
+      else store.stories[index] = result.record;
       store.updated_at = now;
       fs.writeFileSync(`${file}.tmp`, `${JSON.stringify(store, null, 2)}\n`);
       fs.renameSync(`${file}.tmp`, file);
