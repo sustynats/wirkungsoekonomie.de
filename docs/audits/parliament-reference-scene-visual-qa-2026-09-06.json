@@ -1,0 +1,102 @@
+{
+  "schema_version": "woek-parliament-reference-scene-visual-qa-1.0",
+  "set_id": "st-ltw-2026-shared-city-reference-v1",
+  "source_commit": "012254a89ff65bd8747bfdba5de43a5521263913",
+  "contract_sha256": "b7ba77569067a039b1d2b9052cd83ce6bc75a3b84043ed8d327070f449838ab0",
+  "results_path": "docs/audits/parliament-reference-scene-results-2026-09-06.json",
+  "review": {
+    "date": "2026-09-06",
+    "reviewer": "CODEX_VISUAL_QA",
+    "human_individual_review_claimed": false,
+    "method": "ALL_SEVEN_ORIGINAL_IMAGES_INSPECTED",
+    "note": "Prüfung der Bildausführung, keine neue Fachentscheidung und keine Änderung an Wirkpfaden."
+  },
+  "artifact": {
+    "run_id": 34016903904,
+    "artifact_id": 9984280912,
+    "url": "https://github.com/sustynats/wirkungsoekonomie.de/actions/runs/34016903904/artifacts/9984280912",
+    "archive_bytes": 53127479,
+    "archive_sha256": "63a7510ec020073da82c77dddb7fb036568f7452e0137a16da9dd7ebb93ba413"
+  },
+  "outputs": [
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-base",
+      "sha256": "9f72bcb9a3d3051b6b54fcfe0fd7bd0077904dfe7bd5eb4dfe13a8c2e00b179b",
+      "text_free": "FAIL",
+      "same_scene": "NOT_APPLICABLE",
+      "no_people_or_campaign_symbols": "PASS",
+      "no_unapproved_outcome_depiction": "PASS",
+      "observation": "Das lesbare Vermietungsschild im Schaufenster (ca. x 26–29 %, y 57–62 %) verletzt die ausdrückliche Schriftfreiheit des Base-Briefs."
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-cdu",
+      "sha256": "3f547f4e7d9126fe8c7b5fd0442e7fff54903555c5ea2a7d72744bc5694ab749",
+      "text_free": "FAIL",
+      "same_scene": "PASS",
+      "no_people_or_campaign_symbols": "PASS",
+      "no_unapproved_outcome_depiction": "PASS",
+      "observation": "Fassadenschild über dem neuen Garagentor (ca. x 45–51 %, y 47–52 %) enthält Feuerwehr-Ausbildung/Katastrophenschutz; zusätzlich ein Schild im Schaufenster. Schrift ist im Vertrag ausgeschlossen."
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-spd",
+      "sha256": "acd27b657d3c3d57e2356c56829a9585026c60d70b889e14ba6659419859d448",
+      "text_free": "PASS",
+      "same_scene": "PASS",
+      "no_people_or_campaign_symbols": "PASS",
+      "no_unapproved_outcome_depiction": "PASS",
+      "observation": "Gleiche Straßen-, Gebäude- und Horizontgeometrie; menschenleere Werkbank mit Werkzeug und benachbarte Sitzgruppe. Keine sichtbare Ergebnisbehauptung oder lesbare Schrift festgestellt."
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-gruene",
+      "sha256": "bf2e1ab92b2beb72bb01a347ca8e5559ccd325de49162d8ec9fe978b562f2a81",
+      "text_free": "FAIL",
+      "same_scene": "PASS",
+      "no_people_or_campaign_symbols": "PASS",
+      "no_unapproved_outcome_depiction": "PASS",
+      "observation": "Schriftähnliches/teilweise lesbares Vermietungsschild im Schaufenster (ca. x 26–29 %, y 57–62 %) widerspricht dem Schriftverbot. Pflanzen im Straßenrand sind sichtbar; ökologische Bewirtschaftung oder eine konkrete Brandschutzleistung werden aus den Bildbytes nicht als bewiesen gewertet."
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-linke",
+      "sha256": "5115aab86abb66bc22993b49ff595d57b668a62c13a4e167e35b4424e615d6a5",
+      "text_free": "PASS",
+      "same_scene": "PASS",
+      "no_people_or_campaign_symbols": "PASS",
+      "no_unapproved_outcome_depiction": "PASS",
+      "observation": "Gleiche Ausgangsgeometrie; menschenleerer Gemeinschaftsraum mit Tischen, Stühlen und Materialregal. Kein Abstimmungsergebnis und keine sichtbare Outcome-Behauptung festgestellt."
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-bsw",
+      "sha256": "7fbbb802c31151817223d8c794b8c827d91a6b5671024440820255e12d5940fc",
+      "text_free": "PASS",
+      "same_scene": "PASS",
+      "no_people_or_campaign_symbols": "PASS",
+      "no_unapproved_outcome_depiction": "PASS",
+      "observation": "Gleiche Ausgangsgeometrie; menschenleerer Raum mit leeren Stellwänden und Tischen. Keine Siegerprojekte, Ergebniszahlen oder politische Symbole festgestellt."
+    },
+    {
+      "item_id": "st-ltw-2026-shared-city-reference-v1-afd",
+      "sha256": "c78608d340a11d0ae8b52a8eff42523d6f53df6f2bcc359b5ffad053dfe691da",
+      "text_free": "PASS",
+      "same_scene": "PASS",
+      "no_people_or_campaign_symbols": "PASS",
+      "no_unapproved_outcome_depiction": "PASS",
+      "observation": "Gleiche Ausgangsgeometrie; Beratungsbereich und Leseecke ohne Personen. Keine medizinische Szene, Abschaffungswirkung oder lesbare Buchtitel festgestellt."
+    }
+  ],
+  "publication_status": "REJECTED_SET_VISUAL_QA",
+  "reason": "Drei Bilder verletzen das Schriftverbot, darunter das gemeinsame Ausgangsbild. Deshalb ist kein Teilset zur öffentlichen Integration freigegeben. Der automatische OCR-Pass text-free-2 hat den sichtbaren Schriftbefund nicht erkannt und ist kein vollständiger Bild-Signoff.",
+  "credit_boundary": {
+    "new_jobs_observed": 7,
+    "max_authorized_new_images": 7,
+    "max_authorized_credits": 14,
+    "actual_billed_credits": null,
+    "note": "Sieben verschiedene abgeschlossene Provider-Jobs; Vorabkosten je Bild durch den bestehenden Adapter auf höchstens 2 Credits begrenzt. Exakte abgerechnete Credits sind im exportierten Ergebnis nicht enthalten. Kein zweiter Lauf, keine Änderung des Freigabevertrags."
+  },
+  "preservation": {
+    "current_approved_programme_v2_assets_unchanged": true,
+    "current_approved_case_v1_assets_unchanged": true,
+    "public_candidate_assets_added": 0,
+    "fachdata_mutated": false,
+    "no_new_vercel_build": true
+  }
+}
