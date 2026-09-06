@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { buildAnalysisPrompt, callWoekAi, claimLedgerFor, preAnalyzeStory, fitAnalysisInput, budgetStage } from '../../scripts/news/lib.mjs';
+import { analysisInputFor, buildAnalysisPrompt, callWoekAi, claimLedgerFor, preAnalyzeStory, fitAnalysisInput, budgetStage } from '../../scripts/news/lib.mjs';
 import { detectMediaImpactTrigger } from '../../scripts/news/media-impact.mjs';
 import { evidenceGroups } from '../../scripts/news/newsroom.mjs';
 import { serializeEvidencePackets, expandPacketTransport, expandEvidenceSegments } from '../../scripts/news/evidence-packets.mjs';
@@ -35,6 +35,21 @@ test('September 6 election packet fits with 20 sources, fresh excerpts and full 
     assert.ok(`${original.title} ${original.summary} ${original.article_excerpt || ''}`.includes(evidence.excerpt));
   }
   assert.deepEqual(fixture, before);
+});
+
+test('twenty-source packet retains reserve for further runtime comparison metadata', () => {
+  const fixture = JSON.parse(fs.readFileSync(new URL('./fixtures/input-limit-regression-20260906.json', import.meta.url)));
+  // The first production repair missed by eight characters. Do not test only
+  // the exact frozen boundary: leave over 600 characters in its data envelope.
+  const packed = JSON.parse(fitAnalysisInput(analysisInputFor([fixture]), 17000))[0];
+  const packet = expandPacketTransport(packed);
+  assert.deepEqual(packet.sources.map(source => source.url), fixture.sources.map(source => source.url));
+  assert.equal(packet.claims.length, fixture.claims.length);
+  fixture.currentness = { ...fixture.currentness, additional_comparison: 'Weitere Angaben sind noch offen. '.repeat(15) };
+  const prompt = buildAnalysisPrompt([fixture]);
+  assert.ok(prompt.length <= 39000);
+  const expanded = expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
+  assert.deepEqual(expanded.currentness, fixture.currentness);
 });
 
 test('dense cells preserve explicit null, absent fields, exact evidence ownership and legacy packets', () => {

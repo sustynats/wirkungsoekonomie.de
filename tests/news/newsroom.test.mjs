@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { sourceDue, annotateSourceItem, evidenceGroups, eventCompatibility, freshnessFor, sourceHealth, dueFollowups, validateNewsroomAnalysis, normalizeEvidenceExcerpts, nextDeepeningCheckpoint, sourceEvidenceSegments, resolveEvidenceReferences } from "../../scripts/news/newsroom.mjs";
+import { sourceDue, annotateSourceItem, evidenceGroups, eventCompatibility, freshnessFor, sourceHealth, dueFollowups, validateNewsroomAnalysis, normalizeEvidenceExcerpts, nextDeepeningCheckpoint, sourceEvidenceSegments, promptEvidenceSegments, resolveEvidenceReferences } from "../../scripts/news/newsroom.mjs";
 import { newsBudget, costFromUsage, refreshBudgetFx } from "../../scripts/news/budget.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex, datedSource } from "../../scripts/news/source-adapters.mjs";
 import { runWirkungsticker } from "../../scripts/news/run.mjs";
@@ -95,6 +95,33 @@ test("evidence IDs resolve only known exact source passages and only downgrade u
   a.event_claims[0].evidence = [{ evidence_id: "ev-invented" }];
   resolveEvidenceReferences(a, { sources: [media] });
   assert.ok(validateNewsroomAnalysis(a, { sources: [media] }).includes("CLAIM_EVIDENCE_NOT_IN_SOURCE"));
+});
+test("short request references retain exact document identity, contradictions and segment positions", () => {
+  const sources = [
+    { ...item, url: "https://example.org/one", summary: "Die Behörde bestätigt den bisherigen Sachverhalt." },
+    { ...item, url: "https://example.org/two", summary: "Die Behörde widerspricht dem bisherigen Sachverhalt." },
+  ];
+  const before = structuredClone(sources);
+  const a = structuredClone(analysis);
+  a.event_claims[0].evidence = sources.flatMap((source, sourceIndex) => promptEvidenceSegments(source, sourceIndex).map(({ evidence_id }) => ({ evidence_id })));
+  resolveEvidenceReferences(a, { sources });
+  assert.deepEqual(a.event_claims[0].evidence, sources.flatMap(source => sourceEvidenceSegments(source).map(({ excerpt }) => ({ source_id: source.source_id, url: source.url, excerpt }))));
+  assert.deepEqual(sources, before);
+  assert.match(sourceEvidenceSegments(sources[0])[0].evidence_id, /^ev-/);
+  // Selection may leave gaps: segment numbers must not be renumbered.
+  a.event_claims[0].evidence = [{ evidence_id: "e1_1" }];
+  resolveEvidenceReferences(a, { sources });
+  assert.equal(a.event_claims[0].evidence[0].excerpt, sources[1].summary);
+  assert.equal(a.event_claims[0].evidence[0].url, sources[1].url);
+});
+test("unknown short references and mixed evidence objects never manufacture a valid proof", () => {
+  for (const proof of [{ evidence_id: "e9_0" }, { evidence_id: "e0_999" }, { evidence_id: "e-1_0" }, { evidence_id: "e0_0", url: "https://wrong.example/" }]) {
+    const a = structuredClone(analysis);
+    a.event_claims[0].evidence = [proof];
+    resolveEvidenceReferences(a, { sources: [item] });
+    assert.deepEqual(a.event_claims[0].evidence, [proof]);
+    assert.ok(validateNewsroomAnalysis(a, { sources: [item] }).includes("CLAIM_EVIDENCE_NOT_IN_SOURCE"));
+  }
 });
 test("deepening uses the next Berlin checkpoint, never delays first publication", () => {
   assert.equal(nextDeepeningCheckpoint("2026-09-03T12:01:00Z"), "2026-09-03T14:00:00.000Z");

@@ -278,8 +278,17 @@ export function sourceEvidenceSegments(source) {
   return [...new Set(excerpts)].map((excerpt) => ({ evidence_id: `ev-${hash(`${source.source_id}:${source.url}:${excerpt}`)}`, excerpt }));
 }
 
+// Short references belong only to the exact request's source/segment order.
+// Persisted evidence always retains the full source identity and exact passage.
+export function promptEvidenceSegments(source, sourceIndex) {
+  return sourceEvidenceSegments(source).map(({ excerpt }, index) => ({ evidence_id: `e${sourceIndex}_${index}`, excerpt }));
+}
+
 export function resolveEvidenceReferences(analysis, story) {
-  const catalog = new Map(story.sources.flatMap((source) => sourceEvidenceSegments(source).map(({ evidence_id, excerpt }) => [evidence_id, { source_id: source.source_id, url: source.url, excerpt }])));
+  const catalog = new Map(story.sources.flatMap((source, sourceIndex) => sourceEvidenceSegments(source).flatMap(({ evidence_id, excerpt }, index) => {
+    const proof = { source_id: source.source_id, url: source.url, excerpt };
+    return [[evidence_id, proof], [`e${sourceIndex}_${index}`, proof]];
+  })));
   for (const claim of analysis?.event_claims || []) {
     if (!Array.isArray(claim.evidence)) continue;
     claim.evidence = claim.evidence.map((proof) => proof && Object.keys(proof).every((key) => key === "evidence_id") && catalog.has(proof.evidence_id) ? { ...catalog.get(proof.evidence_id) } : proof);

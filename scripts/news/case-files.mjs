@@ -16,7 +16,6 @@ attack attacks attacked angriff angriffe according report reports reported repor
 const ACUTE = /\b(?:anschl\w*|angriff\w*|attack\w*|sabotag\w*|fahnd\w*|ermittl\w*|verdacht\w*|bekenn\w*|durchsuch\w*|festnahm\w*|sek|prozess\w*|verfahren\w*|wahl\w*|verhandlung\w*|streik\w*|protest\w*|brand\w*|feuer\w*|hochwasser\w*|flut\w*|erdbeben\w*|ausbruch\w*|epidem\w*|krieg\w*|waffenstillstand\w*|insolven\w*|übernahme\w*|fusion\w*|rückruf\w*|störung\w*|ausfall\w*)\b/i;
 const UPDATE_KIND = [
   ["Ermittlungsstand", /\b(?:polizei|staatsanwaltschaft|ermittl\w*|fahnd\w*|verdächtig\w*|bekenn\w*|sek|durchsuch\w*|festnahm\w*|beweis\w*)\b/i],
-  ["Entscheidung oder Reaktion", /\b(?:beschliess\w*|beschließ\w*|gesetz\w*|verordnung\w*|genehmig\w*|schutzmassnahm\w*|schutzmaßnahm\w*|sicherheitszentrum|reagier\w*|verschärf\w*)\b/i],
   ["Neues Ereignis", /\b(?:anschl\w*|angriff\w*|attack\w*|sabotageversuch\w*|brand\w*|hochwasser\w*|flut\w*|erdbeben\w*|ausbruch\w*|ausfall\w*)\b/i],
   ["Kontext oder Einordnung", /\b(?:interview\w*|analyse\w*|kommentar\w*|hintergrund\w*|einordnung\w*)\b/i],
 ];
@@ -34,7 +33,45 @@ const topics = story => new Set((story.topic || []).map(normalize));
 const overlap = (left, right) => [...left].filter(value => right.has(value));
 const hash = value => createHash("sha256").update(value).digest("hex").slice(0, 14);
 
+// Theme relevance is not event identity. These rules use the editorial subject,
+// not the mere occurrence of attack/police/protection terms in the full text.
+const BACKGROUND_SUBJECT = /\b(?:studie\w*|umfrage\w*|befragung\w*|risikobericht\w*|lagebild\w*|hintergrund\w*|analyse\w*|gutachten\w*|wirtschaftsforscher\w*|forschungsbericht\w*|survey\w*|research|risk assessment)\b/i;
+const GENERAL_RISK = /\b(?:wachsende\w*|steigende\w*|allgemeine\w*|hybride\w*|systemische\w*|growing|rising|general|systemic)\s+(?:risik\w*|bedroh\w*|gefahr\w*|risks?|threats?)\b|\b(?:risiken|bedrohungen|gefahren)\b.{0,140}\b(?:unternehmen|wirtschaft|branchen|gesellschaft|bevolkerung)\w*\b/i;
+const SPECIFIC_FINDING = /\b(?:belegt|bestatigt|widerlegt|identifiziert|rekonstruiert|weist\b.{0,70}\bnach|confirms?|identifies|reconstructs?)\b/i;
+const DEMAND = /\b(?:fordert|fordern|verlangt|verlangen|fordert\w*|appelliert|demand\w*|calls? for)\b|\bwill\b.{0,85}\b(?:befugnisse|lockerung|reform|anderung|mehr schutz)\b/i;
+const PLANNED = /\b(?:plant|planen|kundigt\b.{0,90}\ban|angekundigt|will\b.{0,70}\b(?:einrichten|vorbereiten|aufbauen|andern)|plans?|announces?)\b/i;
+const MEASURE = /\b(?:beschlie(?:ss|ß)t|beschlossen|verabschiedet|genehmigt|erlasst|richtet\b.{0,70}\bein)\b|\b(?:erhoht|verstarkt|verscharft|increases?|strengthens?)\b.{0,70}\b(?:schutz|sicherheit\w*|kontrolle\w*|vorkehrung\w*|security|protection)\b/i;
+
+export function caseContribution(story) {
+  const headline = normalize(story.title);
+  const lead = normalize(String(story.source_summary || story.summary || "").split(/\n\s*\n/)[0].slice(0, 650));
+  const sourceHeadlines = (story.sources || []).map(source => normalize(source.title));
+  const concreteFinding = SPECIFIC_FINDING.test(headline) && ACUTE.test(headline);
+  const concreteReaction = DEMAND.test(headline) || PLANNED.test(headline) || MEASURE.test(headline);
+  const background = GENERAL_RISK.test(headline)
+    || (BACKGROUND_SUBJECT.test(headline) && !concreteFinding && !concreteReaction)
+    || (!ACUTE.test(headline) && !concreteReaction && sourceHeadlines.some(title => GENERAL_RISK.test(title) || BACKGROUND_SUBJECT.test(title)));
+  if (background) return { role: "background", kind: "Hintergrund oder systemische Einordnung", reason: "general_subject_not_case_development" };
+  // A concrete action verb is required. A noun such as Schutzmaßnahmen or
+  // Gesetz in an explanatory paragraph does not establish a new decision.
+  for (const value of [headline, lead]) {
+    if (DEMAND.test(value)) return { role: "reaction", kind: "Forderung oder Position", reason: "attributed_demand" };
+    if (PLANNED.test(value)) return { role: "reaction", kind: "Angekündigte Maßnahme", reason: "announced_not_implemented" };
+    if (MEASURE.test(value)) return { role: "reaction", kind: "Entscheidung oder Maßnahme", reason: "reported_concrete_action" };
+    // Prefer a clear headline investigation over unrelated background wording.
+    if (value === headline && UPDATE_KIND[0][1].test(story.title || "")) break;
+  }
+  return { role: "development", kind: UPDATE_KIND.find(([, pattern]) => pattern.test(text(story)))?.[0] || "Weitere Entwicklung", reason: "event_subject" };
+}
+
 function compatible(left, right, frequency, total) {
+  if (caseContribution(left).role === "background" || caseContribution(right).role === "background") return false;
+  const leftScope = conflictScope(left), rightScope = conflictScope(right);
+  // Named conflicts cannot be connected by broad words, a shared mediator or
+  // an unscoped bridge article. A cross-conflict comparison stays standalone.
+  if (leftScope.length || rightScope.length) {
+    if (leftScope.length !== 1 || rightScope.length !== 1 || leftScope[0] !== rightScope[0]) return false;
+  }
   if (!overlap(topics(left), topics(right)).length) return false;
   const shared = overlap(tokens(left), tokens(right));
   const rare = shared.filter(token => (frequency.get(token) || total) <= Math.max(4, Math.ceil(total * 0.2)));
@@ -49,9 +86,21 @@ function compatible(left, right, frequency, total) {
   return timely && acute && rare.length >= 2 && titleShared.length >= 1 && (shared.length >= 3 || titleShared.length >= 2);
 }
 
+function conflictScope(story) {
+  // Extract the named object from the text, without a country/party allowlist.
+  // Prefer the headline; explanatory later paragraphs are not event identity.
+  for (const value of [story.title, String(story.source_summary || "").split(/\n\s*\n/)[0].slice(0, 650)]) {
+    const input = normalize(value);
+    const named = [...input.matchAll(/\b([\p{L}]+)[-–‑]krieg(?:s|es)?\b/gu)].map(match => match[1]);
+    const located = [...input.matchAll(/(?<![-–‑\p{L}])\bkrieg(?:s|es)?\s+(?:in|gegen)\s+(?:(?:der|die|den|das|dem)\s+)?([\p{L}]+)\b/gu)].map(match => match[1]);
+    const scopes = [...new Set([...named, ...located])];
+    if (scopes.length) return scopes;
+  }
+  return [];
+}
+
 function kind(story) {
-  const value = text(story);
-  return UPDATE_KIND.find(([, pattern]) => pattern.test(value))?.[0] || "Weitere Entwicklung";
+  return caseContribution(story).kind;
 }
 
 function uniquePublishers(members) {

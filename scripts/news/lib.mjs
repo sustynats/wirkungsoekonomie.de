@@ -4,7 +4,7 @@ import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
-import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, sourceEvidenceSegments } from "./newsroom.mjs";
+import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
 import { livingFileMatch, subjectConflict, matchingStories, isMerged } from "./living-files.mjs";
 import { compactEvidenceSegments, serializeEvidencePackets } from "./evidence-packets.mjs";
@@ -795,12 +795,12 @@ export function analysisInputFor(stories) {
       evidence_level: claim.evidence_level,
       uncertainty: claim.uncertainty,
     })),
-    sources: story.sources.map((source) => ({
+    sources: story.sources.map((source, sourceIndex) => ({
       source_id: source.source_id,
       publisher: source.publisher,
       title: cleanForPrompt(source.title, 220),
       abstract: cleanForPrompt(source.summary, 720),
-      evidence_segments: sourceEvidenceSegments(source),
+      evidence_segments: promptEvidenceSegments(source, sourceIndex),
       published_at: source.published_at,
       primary_source: source.primary_source,
       role: source.source_role || (source.primary_source ? "institutional_statement" : "journalistic_report"),
