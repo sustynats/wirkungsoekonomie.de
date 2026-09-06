@@ -50,6 +50,8 @@ test("Large multi-source prompts retain identities and exact evidence under the 
   const sources=Array.from({length:12},(_,n)=>({source_id:`source-${n}`,url:`https://example.org/${n}`,title:`Originalbericht Nummer ${n}`,summary:"Eine neue Entscheidung wird anhand konkreter Quellen eingeordnet.",article_excerpt:Array.from({length:80},(_,j)=>`Absatz ${j}: Die Quelle ${n} berichtet über belegte Einzelheiten dieser Entscheidung und nennt ihre Grenzen.`).join(" ")}));
   const story={story_id:"wt-test",title:"Neue Entscheidung",sources,claims:[]};
   const prompt=buildAnalysisPrompt([story]);
+  assert.ok(prompt.includes('Ohne eigene Feldvorgabe: Strings maximal 220 Zeichen'));
+  assert.ok(!prompt.includes('Andere Zeichenketten: maximal 220 Zeichen'));
   assert.ok(prompt.length<=39000);
   const input=JSON.parse(prompt.split("UNTRUSTED_SOURCE_DATA_BEGIN\n")[1].split("\nUNTRUSTED_SOURCE_DATA_END")[0]).map(expandPacketTransport);
   assert.deepEqual(input[0].sources.map(x=>x.url),sources.map(x=>x.url));
@@ -807,6 +809,18 @@ test("Queue- und Providerstatus unterscheiden Kapazität, Redaktion und Betriebs
   assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:429" }] }), false);
   assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 2, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:429" }, { error: "AI_PROVIDER_ERROR:429" }] }), false);
   assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:503" }] }), true);
+});
+
+test('technical delay starts at the failed attempt, not the preceding capacity wait', () => {
+  const now='2026-09-06T19:00:00Z';
+  const row={published:false,first_seen:'2026-09-06T10:00:00Z',pending_reason:'QUALITY_GATE_FAILED',quality_errors:['AI_PUBLICATION_RECOMMENDATION_INVALID'],ai_retry:{first_failed_at:'2026-09-06T18:55:00Z',failed_at:'2026-09-06T18:55:00Z'}};
+  const recent=queueSnapshot([row],now,1);
+  assert.equal(recent.oldest_technical_minutes,5);
+  assert.equal(recent.oldest_minutes,540);
+  assert.equal(recent.status,'draining');
+  const repeated=queueSnapshot([{...row,ai_retry:{...row.ai_retry,first_failed_at:'2026-09-06T17:00:00Z'}}],now,1);
+  assert.equal(repeated.oldest_technical_minutes,120);
+  assert.equal(repeated.status,'technical_delay');
 });
 
 test("Quellen-Funnel zählt Beiträge je Quelle und fasst sie prüfbar zusammen", () => {
