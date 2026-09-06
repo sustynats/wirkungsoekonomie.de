@@ -460,18 +460,34 @@ function storyReferenceKeys(...values) {
   ].map((value) => value.toLowerCase().replace(/\s+/g, " ")));
 }
 
-function existingStoryMatch(item, entry, now) {
+export function anchoredSources(story) {
+  const leading = story.sources?.[0];
+  if (!leading) return [];
+  const anchor = { ...story, sources: [leading] };
+  return story.sources.filter(source => source === leading || (!subjectConflict(source, anchor)
+    && (livingFileMatch(source, anchor).score >= 0.98 || eventCompatibility(source, leading).same_event)));
+}
+
+export function existingStoryMatch(item, entry, now) {
   if (subjectConflict(item, entry.story)) return 0;
-  const identity = livingFileMatch(item, entry.story);
+  // A secondary/contextual source must never become a bridge into a different
+  // event. Every usable reference has to connect directly to the leading one.
+  const rooted = entry.anchored_story || { ...entry.story, sources: anchoredSources(entry.story) };
+  const identity = livingFileMatch(item, rooted);
   if (identity.score) return identity.score;
   const age = Math.abs(Date.parse(item.published_at || now) - Date.parse(entry.last_updated || now));
   if (age > 120 * 24 * 60 * 60 * 1000) return 0;
   const itemReferences = storyReferenceKeys(item.title, item.summary);
   // Do not let a contextual source merge another place or policy into this file.
-  const compatibleSources = (entry.story.sources || []).filter((source) => !subjectConflict(item, source));
+  const compatibleSources = rooted.sources.filter((source) => !subjectConflict(item, source));
   const storyReferences = storyReferenceKeys(entry.story.title, ...compatibleSources.flatMap((source) => [source.title, source.summary]));
   if ([...itemReferences].some((reference) => storyReferences.has(reference))) return 0.99;
-  return Math.max(0, ...compatibleSources.filter((source) => eventCompatibility(item, source).same_event).map((source) => storySimilarity(item.title, source.title)));
+  const anchors = [rooted.sources[0], { ...rooted.sources[0], title: entry.story.title }].filter(Boolean);
+  if (anchors.some(source => {
+    const match = eventCompatibility(item, source);
+    return match.same_event && match.reason === 'structured_event_facts';
+  })) return 0.98;
+  return Math.max(0, ...anchors.filter((source) => eventCompatibility(item, source).same_event).map((source) => storySimilarity(item.title, source.title)));
 }
 
 export function classifyItem(item, source = {}, now = new Date().toISOString()) {
@@ -545,6 +561,14 @@ export function classifyItem(item, source = {}, now = new Date().toISOString()) 
   }
   const newsValueSignals = NEWS_VALUE_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
   const contextFormats = CONTEXT_FORMAT_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
+  // Evergreen service/FAQ headlines are useful context, but not new events by
+  // themselves. A concrete new decision/evidence in the available text still
+  // overrides context_only through the existing news-value signals.
+  if (/\b(?:fragen\s+und\s+antworten|faq|was\s+passiert\s*,?\s*wenn|was\b[^.!?]{0,90}\bwissen\s+(?:muss|müssen|muessen))\b/i.test(item.title || '')) contextFormats.push('service_explainer');
+  if (contextFormats.includes('service_explainer') && !newsValueSignals.length && !politicalDevelopment.signals.length) {
+    score = Math.min(score, 24);
+    drivers.push('Service-Erklärung ohne neue Entscheidung, Evidenz oder politische Entwicklung');
+  }
   const topics = TOPIC_RULES.filter(([, pattern]) => pattern.test(text)).map(([topic]) => topic);
   if (!topics.length) topics.push(source.topic || item.source_topic || "Politik");
   const dimensions = [];
@@ -605,7 +629,7 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
   if (!mechanismHints.length) mechanismHints.push("Wirkmechanismus anhand der Primärquelle noch zu konkretisieren");
   return {
     filter_version: "4.0",
-    material_development_review: materialDevelopmentReview(story.sources, story.existing_story?.sources || [], now),
+    material_development_review: materialDevelopmentReview(story.sources, story.existing_story?.published ? story.existing_story.sources : [], now),
     internal_relevance_score: strongest.score,
     public_relevance: strongest.relevance,
     topics,
@@ -627,7 +651,8 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
 
 export function clusterItems(items, existingStories = [], now = new Date().toISOString()) {
   const clusters = [];
-  const existing = matchingStories(existingStories).map((story) => ({ story, title: story.title, last_updated: story.last_updated }));
+  const existing = matchingStories(existingStories).map((story) => ({ story, title: story.title, last_updated: story.last_updated,
+    anchored_story: { ...story, sources: anchoredSources(story) } }));
   const sorted = items.map((item) => ({ item, match: existing
       .filter((entry) => !isMerged(entry.story))
       .map((entry) => ({ ...entry, similarity: existingStoryMatch(item, entry, now) }))
@@ -644,8 +669,8 @@ export function clusterItems(items, existingStories = [], now = new Date().toISO
     }
     if (!target) target = clusters.find((cluster) => {
       const delta = Math.abs(timestamp - Date.parse(cluster.last_updated || now));
-      return delta <= 96 * 60 * 60 * 1000 && !subjectConflict(item, cluster)
-        && (livingFileMatch(item, cluster).score >= 0.98 || cluster.sources.some((source) => !subjectConflict(item, source) && eventCompatibility(item, source).same_event));
+      return delta <= 96 * 60 * 60 * 1000
+        && existingStoryMatch(item, { story: cluster, last_updated: cluster.last_updated }, now) >= 0.64;
     });
     if (!target) {
       const signature = [...titleTokens(item.title)].sort().slice(0, 10).join("-") || item.item_id;
@@ -849,7 +874,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     "Wirkung ist neutral und eine tatsächliche Zustandsveränderung. Ex ante nie behaupten, eine Maßnahme bewirke bereits etwas. Output ist keine Wirkung; Zielbezug ist kein Kausalitätsbeweis.",
     "Keine Personen-, Parteien- oder moralische Rangliste. Reichweite ist nicht Wirkung. Benenne Nichtkompensation und Reverse Merit Order nur, wenn Schutzgrenzen oder Priorisierung materiell relevant sind.",
     "source_summary: eigene neutrale Quellenzusammenfassung, 100 bis 180 Wörter, 2 bis 3 Absätze mit Leerzeile. Nur belegte Angaben zu Ereignis, Beteiligten, Anlass, Maßnahmen, Aussagen, Zahlen, Terminen, Kontext und offenen Punkten. Keine Bewertung oder Wirkungsannahme. Fehlendes weglassen/offenhalten, niemals ergänzen oder erfinden.",
-    "Die wirkungsökonomische Einordnung beginnt erst in den übrigen Feldern. Antworte dort zweistufig: summary genau 2 kurze Sätze und höchstens 360 Zeichen für die Übersicht; detail_summary 5 bis 7 gehaltvolle Sätze mit 500 bis 1200 Zeichen für die Detailseite. Die Detailfassung nennt den gesicherten Sachverhalt, Relevanz, Wirkpfad, mindestens eine mögliche Folge und die Evidenzgrenze. Jede andere Zeichenkette höchstens 220 Zeichen; jedes Array genau 1 kurzer Eintrag (höchstens 180 Zeichen); einschließlich optionaler Visuals insgesamt höchstens 6300 Zeichen je Analyse.",
+    "Die wirkungsökonomische Einordnung beginnt erst in den übrigen Feldern. Antworte dort zweistufig: summary genau 2 kurze Sätze und höchstens 360 Zeichen für die Übersicht; detail_summary 5 bis 7 gehaltvolle Sätze mit 500 bis 1200 Zeichen für die Detailseite. Die Detailfassung nennt den gesicherten Sachverhalt, Relevanz, Wirkpfad, mindestens eine mögliche Folge und die Evidenzgrenze. Ohne eigene Feldvorgabe: Strings maximal 220 Zeichen; Arrays je 1 Eintrag (maximal 180 Zeichen). Gesamtlimit inkl. Schema/Visuals: 10000 Zeichen mit relevantem Mediencheck, sonst 6300.",
     "Wiederhole in Analysefeldern keine URLs, technischen Quellen-IDs oder Dokumentnummern. Übernimm materielle Zahlen nur, wenn sie im Claim oder Quellentext stehen, und behalte ihre Schreibweise bei (Zahlwort bleibt Zahlwort). Keine Einleitung und keine Wiederholung des Schemas.",
     "Interne Belegfelder verwenden nur gelieferte IDs: event_claims.evidence enthält evidence_id, followups.source_id die Quellen-ID. Kein Fließtext; nicht auf dessen Zeichenbudget anrechnen.",
     "Verbindliches Belegformat: Quellen enthalten evidence_segments mit unveränderlichem evidence_id und excerpt. In event_claims.evidence gib ausschließlich {evidence_id:...} mit einer tatsächlich gelieferten ID aus. Kein Zitat abschreiben, keine URLs oder IDs erfinden. Bei Bedarf mehrere Textstellen-IDs auswählen, die zusammen die konkrete Behauptung tragen. Der Server löst sie vor der Prüfung exakt auf. evidence_segments ersetzen article_excerpt als bereitgestellten Quellentext. Sämtliche Lesertexte einschließlich event_claims.claim auf Deutsch; fremdsprachige Originalbelege nicht übersetzen.",
@@ -863,6 +888,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     JSON.stringify({
       analyses: [{
         story_id: "string",
+        publication_recommendation: true,
         news_status: "developing|preliminary|confirmed|disputed|corrected|updated",
         publication_depth: "initial|deepened",
         event_claims: [{ claim: "zentrale Tatsachenbehauptung, eigene deutsche Formulierung", status: "single_source_claim|confirmed_claim|disputed_claim|primary_source_claim|uncertain_claim", evidence: [{ evidence_id: "exakte ID einer passenden evidence_segments-Textstelle" }] }],
@@ -902,7 +928,6 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         },
         visuals: includeVisuals ? VISUALS_SCHEMA : null,
         media_impact: MEDIA_IMPACT_SCHEMA,
-        publication_recommendation: true,
       }],
     }),
     "UNTRUSTED_SOURCE_DATA_BEGIN",

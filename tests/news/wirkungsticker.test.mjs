@@ -50,6 +50,8 @@ test("Large multi-source prompts retain identities and exact evidence under the 
   const sources=Array.from({length:12},(_,n)=>({source_id:`source-${n}`,url:`https://example.org/${n}`,title:`Originalbericht Nummer ${n}`,summary:"Eine neue Entscheidung wird anhand konkreter Quellen eingeordnet.",article_excerpt:Array.from({length:80},(_,j)=>`Absatz ${j}: Die Quelle ${n} berichtet über belegte Einzelheiten dieser Entscheidung und nennt ihre Grenzen.`).join(" ")}));
   const story={story_id:"wt-test",title:"Neue Entscheidung",sources,claims:[]};
   const prompt=buildAnalysisPrompt([story]);
+  assert.ok(prompt.includes('Ohne eigene Feldvorgabe: Strings maximal 220 Zeichen'));
+  assert.ok(!prompt.includes('Andere Zeichenketten: maximal 220 Zeichen'));
   assert.ok(prompt.length<=39000);
   const input=JSON.parse(prompt.split("UNTRUSTED_SOURCE_DATA_BEGIN\n")[1].split("\nUNTRUSTED_SOURCE_DATA_END")[0]).map(expandPacketTransport);
   assert.deepEqual(input[0].sources.map(x=>x.url),sources.map(x=>x.url));
@@ -512,6 +514,16 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
   assert.ok(errors.some((error) => error.startsWith("AI_UNSUPPORTED_NUMBER")));
 });
 
+test('service explainers need a concrete new development before the paid news check', () => {
+  for (const title of ['Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?', 'Was Verbraucher über Stromtarife wissen müssen', 'Fragen und Antworten zur Pflegeversicherung']) {
+    assert.equal(classifyItem({title,summary:'Ein Überblick über bestehende Regeln.'},{}).context_only,true);
+    assert.ok(classifyItem({title,summary:'Ein Überblick über bestehende Regeln.'},{}).score<30, 'context marker must actually prevent a paid slot');
+    assert.equal(classifyItem({title,summary:'Der Bundestag hat heute eine bundesweite Reform beschlossen.'},{}).context_only,false);
+    assert.ok(classifyItem({title,summary:'Der Bundestag hat heute eine bundesweite Reform beschlossen.'},{}).score>=30);
+  }
+  assert.equal(classifyItem({title:'Warum das Gericht die neue Verordnung aufgehoben hat',summary:'Das Urteil ist heute ergangen.'},{}).context_only,false);
+});
+
 test("missing or malformed publication decisions retry; explicit rejection is never promoted", () => {
   for (const value of [undefined, null, "true", "false", 0, 1]) {
     const analysis = { ...validAnalysis(), publication_recommendation: value };
@@ -732,6 +744,18 @@ test("Dauerhafter Nachrichtenzufluss lässt ältere technische Queue-Einträge n
   assert.ok(result.selected.some(item => item.story_id === "queued-0"));
 });
 
+test('current unpublished evidence keeps freshness after a failed attempt and precedes generic reactions', () => {
+  const now='2026-09-06T19:00:00Z';
+  const base={...candidate(),sources:[{...candidate().sources[0],published_at:'2026-09-06T18:00:00Z'}],preanalysis:{internal_relevance_score:34},fresh:true};
+  const waiting={...base,fresh:false,existing_story:{published:false,updated_at:now},preanalysis:{...base.preanalysis,news_value_signals:['new_evidence']}};
+  assert.ok(queuePriority(waiting,now)>queuePriority(base,now));
+  assert.equal(queuePriority({...waiting,fresh:true},now),queuePriority(waiting,now));
+  const stale={...waiting,sources:[{...waiting.sources[0],published_at:'2026-09-05T18:00:00Z'}],fresh:true};
+  assert.ok(queuePriority(base,now)>queuePriority(stale,now));
+  const published={...waiting,existing_story:{published:true,updated_at:now}};
+  assert.ok(queuePriority(waiting,now)>queuePriority(published,now));
+});
+
 test("Monatskosten bleiben auch nach mehr als 400 automatischen Läufen erhalten", () => {
   const previous = Array.from({ length: 450 }, () => ({ started_at: "2026-08-31T12:00:00Z" }));
   const current = Array.from({ length: 600 }, () => ({ started_at: "2026-09-03T12:00:00Z", ai: { estimated_cost_usd: 0.01 } }));
@@ -787,6 +811,18 @@ test("Queue- und Providerstatus unterscheiden Kapazität, Redaktion und Betriebs
   assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:429" }] }), false);
   assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 2, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:429" }, { error: "AI_PROVIDER_ERROR:429" }] }), false);
   assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:503" }] }), true);
+});
+
+test('technical delay starts at the failed attempt, not the preceding capacity wait', () => {
+  const now='2026-09-06T19:00:00Z';
+  const row={published:false,first_seen:'2026-09-06T10:00:00Z',pending_reason:'QUALITY_GATE_FAILED',quality_errors:['AI_PUBLICATION_RECOMMENDATION_INVALID'],ai_retry:{first_failed_at:'2026-09-06T18:55:00Z',failed_at:'2026-09-06T18:55:00Z'}};
+  const recent=queueSnapshot([row],now,1);
+  assert.equal(recent.oldest_technical_minutes,5);
+  assert.equal(recent.oldest_minutes,540);
+  assert.equal(recent.status,'draining');
+  const repeated=queueSnapshot([{...row,ai_retry:{...row.ai_retry,first_failed_at:'2026-09-06T17:00:00Z'}}],now,1);
+  assert.equal(repeated.oldest_technical_minutes,120);
+  assert.equal(repeated.status,'technical_delay');
 });
 
 test("Quellen-Funnel zählt Beiträge je Quelle und fasst sie prüfbar zusammen", () => {

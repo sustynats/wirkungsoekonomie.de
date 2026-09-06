@@ -425,7 +425,9 @@ export function sanitizeMediaImpact(input, story = {}, trigger = detectMediaImpa
     },
     observed_impact: { present: observedPresent, description: observedPresent ? plain(observed.description, 500) : null, evidence: observedPresent ? observedEvidence : [] },
     public_explanation: publicExplanation,
-    editorial_assessment: plain(input.editorial_assessment, 500),
+    // The current schema names this reader explanation public_explanation.
+    // Keep the legacy field compatible; never invent a second assessment.
+    editorial_assessment: plain(input.editorial_assessment || input.public_explanation, 1400),
     fact_first_alternative: plain(input.fact_first_alternative || reframe.summary || factualCore, 500),
     fact_first_reframe: { title: plain(reframe.title, 220), source_summary: ensureTwoParagraphs(reframe.source_summary), summary: plain(reframe.summary, 420), detail_summary: plain(reframe.detail_summary, 1200) },
     self_frame_warning: selfProblem,

@@ -40,6 +40,13 @@ Markierungen sind mindestens 44 Pixel groß; Dropdown, Buttons und Slider sind
 tastaturbedienbar. „Gesamtansicht“ setzt den Fokus zurück. Die natürliche
 Browser-Vergrößerung wird nicht gesperrt.
 
+Seit 6. September 2026 schaltet erneutes Antippen desselben aktiven
+Ausschnitt-Buttons zurück zur Gesamtansicht (Vergleichsthemen, Markierungen
+und Bereichsbuttons). Ein anderes Vergleichsthema mit demselben Bildfokus
+bleibt vergrößert. Dropdown und „Gesamtansicht“ bleiben direkte Auswahlen;
+Szenario, Bildmodus und schriftliche Details bleiben beim Zurücksetzen erhalten.
+Die Hervorhebung der Vergleichsbuttons folgt dem tatsächlich aktiven Ausschnitt.
+
 ### Energieversorgung: Präzisierung vor Erstveröffentlichung
 
 Auf Nutzerhinweis wurden am 6. September die Energiepassagen der sieben

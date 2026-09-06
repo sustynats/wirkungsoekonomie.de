@@ -245,7 +245,7 @@ def main() -> int:
         if open_items:
             fh.write("\n### Open semantic-review signals\n\n")
             for item in open_items:
-                fh.write(f"- `{item.get('source_path')}` — {', '.join(item.get('matched_claims') or []) or 'no signal'} — {item.get('classification')}\n")
+                fh.write(f"- `{item.get('source_path')}` - {', '.join(item.get('matched_claims') or []) or 'no signal'} - {item.get('classification')}\n")
 
     print(json.dumps({"all_items": len(all_items), "review_open": len(open_items)}, ensure_ascii=False))
     return 0

@@ -276,10 +276,10 @@ def main() -> int:
         "|---|---|---|---|",
     ]
     for r in explicit:
-        lines.append(f"| {r['sitemap_url']} | `{r['file_path']}` | {', '.join(r['classification'])} | {', '.join(r['matched_claims']) or '—'} |")
+        lines.append(f"| {r['sitemap_url']} | `{r['file_path']}` | {', '.join(r['classification'])} | {', '.join(r['matched_claims']) or '-'} |")
     lines += ["", "## Claim-signal review", "", "Signals are review candidates, not automatic errors.", ""]
     for r in risk:
-        lines.append(f"- `{r['file_path']}` — {', '.join(r['matched_claims'])} — {r['required_action']}")
+        lines.append(f"- `{r['file_path']}` - {', '.join(r['matched_claims'])} - {r['required_action']}")
     if missing_sources:
         lines += ["", "## Sitemap routes with unresolved source mapping", ""]
         for item in missing_sources:

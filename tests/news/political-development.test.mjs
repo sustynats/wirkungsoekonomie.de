@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { politicalDevelopmentFor, materialDevelopmentReview } from "../../scripts/news/political-development.mjs";
-import { buildAnalysisPrompt, classifyItem, clusterItems } from "../../scripts/news/lib.mjs";
+import { buildAnalysisPrompt, classifyItem, clusterItems, preAnalyzeStory } from "../../scripts/news/lib.mjs";
 import { queuePriority } from "../../scripts/news/run.mjs";
 
 const now = "2026-09-05T21:45:00Z";
@@ -31,6 +31,12 @@ test("new or changed source in known event gets material-update review; unchange
   const clusters = clusterItems([item], [story], now);
   assert.equal(clusters[0].story_id, "existing");
   assert.equal(clusters[0].sources[0].content_hash, "a");
+});
+test('queued material developments are not mistaken for already published facts', () => {
+  const draft={sources:[item],existing_story:{published:false,sources:[item]}};
+  assert.equal(preAnalyzeStory(draft,now).material_development_review.required,true);
+  assert.equal(preAnalyzeStory(draft,now).material_development_review.time_sensitive,true);
+  assert.equal(preAnalyzeStory({...draft,existing_story:{...draft.existing_story,published:true}},now).material_development_review.required,false);
 });
 test("withdrawal, coalition change and election result receive same generic review", () => {
   for (const title of ["Vor Landtagswahl: Kandidatin zieht Kandidatur zurück", "Partei ändert Koalitionsaussage vor Wahl", "Wahlergebnis: Koalition verliert Mehrheit"]) assert.ok(politicalDevelopmentFor({ ...item, title, summary: "" }, now).signals.length);

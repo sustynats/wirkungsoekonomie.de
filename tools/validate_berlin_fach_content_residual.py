@@ -103,12 +103,12 @@ def validate_boundary(matrix: dict, register: dict) -> None:
         "programme_analysis_open": 8,
         "genuine_fach_programmes": 8,
         "genuine_fach_programme_parties": OPEN,
-        "remaining_genuine_fach_review_required": 1190,
-        "remaining_review_scope_count": 1190,
-        "remaining_page_review_envelopes": 1190,
+        "remaining_genuine_fach_review_required": 1189,
+        "remaining_review_scope_count": 1189,
+        "remaining_page_review_envelopes": 1189,
         "remaining_exact_effect_objects_identified": 0,
         "remaining_exact_effect_object_count": None,
-        "terminal_source_objects": 1680,
+        "terminal_source_objects": 1739,
         "known_segmentation_defects": 2,
         "berlin_completion_gate": "FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH",
     }
@@ -116,11 +116,11 @@ def validate_boundary(matrix: dict, register: dict) -> None:
         require(summary.get(key) == value, f"summary {key}: expected {value!r}, got {summary.get(key)!r}")
 
     spd = next(item for item in programmes if item["party"] == "SPD")
-    require(spd.get("terminal_object_count") == 238, "SPD P22-P25 terminal-object count drift")
-    require(spd.get("remaining_review_envelope_count") == 41, "SPD P26-P66 residual drift")
+    require(spd.get("terminal_object_count") == 297, "SPD P22-P26 terminal-object count drift")
+    require(spd.get("remaining_review_envelope_count") == 40, "SPD P27-P66 residual drift")
     require(
         spd.get("protected_fach_scope", {}).get("next_unreviewed_source_order_frontier")
-        == {"physical_page": 26, "source_unit_from": "BE-SPD-2026-SU-0303"},
+        == {"physical_page": 27, "source_unit_from": "BE-SPD-2026-SU-0319"},
         "SPD frontier drift",
     )
 
@@ -155,10 +155,10 @@ def main() -> None:
         "matrix_id": matrix["matrix_id"],
         "programmes_terminal": 4,
         "programmes_open": 8,
-        "terminal_source_objects": 1680,
-        "remaining_review_envelopes": 1190,
+        "terminal_source_objects": 1739,
+        "remaining_review_envelopes": 1189,
         "remaining_exact_objects": 0,
-        "remaining_review_scopes": 1190,
+        "remaining_review_scopes": 1189,
         "known_segmentation_defects": 2,
         "descriptor_sha256": matrix["descriptor_sha256"],
         "input_bound_reproduction": "PASS",

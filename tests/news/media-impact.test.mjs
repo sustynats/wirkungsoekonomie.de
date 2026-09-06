@@ -35,6 +35,18 @@ function validMedia(overrides = {}) {
   };
 }
 
+test("current public explanation satisfies the legacy assessment contract without inventing text", () => {
+  const item = story("Minister bezeichnet Protest als Klimaextremismus");
+  const input = validMedia();
+  delete input.editorial_assessment;
+  const media = sanitizeMediaImpact(input,item).media_impact;
+  assert.equal(media.editorial_assessment,input.public_explanation);
+  assert.ok(!mediaImpactValidationErrors({media_impact:media,media_analysis_version:MEDIA_ANALYSIS_VERSION},item).includes('MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment'));
+  delete input.public_explanation;
+  const missing = sanitizeMediaImpact(input,item).media_impact;
+  assert.ok(mediaImpactValidationErrors({media_impact:missing,media_analysis_version:MEDIA_ANALYSIS_VERSION},item).includes('MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment'));
+});
+
 test("neutrales Ereignis löst keinen Mediencheck aus", () => {
   assert.equal(detectMediaImpactTrigger(story("Bund veröffentlicht Monatsbericht", "Der Bericht enthält neue Daten zur Verwaltung.")).relevant, false);
   assert.equal(detectMediaImpactTrigger(story("Nach Gefahrengut-Alarm läuft der Flugverkehr wieder", "Eine Frau meldete einen gefährlichen Stoff; laut Polizei bestand zu keinem Zeitpunkt eine Gefahr.")).relevant, false);

@@ -9,7 +9,7 @@ import { prepareRestore } from '../../ops/polls/backend/restore.mjs';
 import { loadExperience,validateExperience } from '../../scripts/polls/visual.mjs';
 import { pollPage } from '../../scripts/polls/pages.mjs';
 import { minimiseSensitivePollHtml, assertPollScriptPolicy } from '../../scripts/polls/privacy.mjs';
-import { zoomTransform } from '../../assets/js/poll-visual.js';
+import { zoomTransform, nextAreaId } from '../../assets/js/poll-visual.js';
 const root=path.resolve(import.meta.dirname,'../..');
 const seed=JSON.parse(fs.readFileSync(path.join(root,'ops/polls/backend/city-poll.json')));
 const token=()=>randomBytes(32).toString('hex');
@@ -39,6 +39,15 @@ test('zoom is deterministic, centred and clamped without blank image edges',()=>
  for(const area of [...data.domains,...data.extraFocusAreas]){const z=zoomTransform(area),limit=50*(z.scale-1);assert.ok(Math.abs(z.x)<=limit);assert.ok(Math.abs(z.y)<=limit);assert.deepEqual(z,zoomTransform(area));}
  const wrong=structuredClone(data);wrong.extraFocusAreas[0].domainId='missing';assert.throws(()=>validateExperience(wrong),/extra focus/);
  assert.deepEqual(zoomTransform({x:0,y:100,zoom:3}),{scale:3,x:100,y:-100});
+});
+test('area buttons toggle off; different areas and explicit dropdown selections stay selected',()=>{
+ assert.equal(nextAreaId(undefined,'energie',true),'energie');
+ assert.equal(nextAreaId('energie','energie',true),'');
+ assert.equal(nextAreaId('energie','mobilitaet',true),'mobilitaet');
+ assert.equal(nextAreaId('energie','energie'),'energie');
+ assert.equal(nextAreaId('energie',''),'');
+ // A different comparison topic may intentionally share the same crop.
+ assert.equal(nextAreaId('mobilitaet','mobilitaet',false),'mobilitaet');
 });
 test('all everyday comparison dimensions cover every scenario with evidence and a shared focus',()=>{
  const data=loadExperience(root,seed.slug);

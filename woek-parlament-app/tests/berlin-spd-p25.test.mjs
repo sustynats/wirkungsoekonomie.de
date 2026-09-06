@@ -59,9 +59,9 @@ test('P25 keeps the batch assessment, lifecycle, distribution, falsification and
 test('P25 preserves protected P1–P24 and other programmes and derives the untouched candidate frontier', () => {
   const matrix = JSON.parse(fs.readFileSync(path.join(APP_ROOT, 'data/state-programmes/fach-content-residuals/berlin-2026-v3.json')));
   const spd = matrix.programmes.find(r => r.party === 'SPD');
-  assert.equal(sha256(JSON.stringify(spd.terminal_objects.filter(r => r.source_page !== 25))), 'eca48473c061f00e17322363bb9b55f82a9bec756ec01f41e613a56c792fbf0f');
+  assert.equal(sha256(JSON.stringify(spd.terminal_objects.filter(r => !r.source_page || r.source_page < 25))), 'eca48473c061f00e17322363bb9b55f82a9bec756ec01f41e613a56c792fbf0f');
   assert.equal(sha256(JSON.stringify(matrix.programmes.filter(r => r.party !== 'SPD'))), 'aebac94ba5b6fd510c65512fb49f5bc225d3e34e775a7ba55285643a7bd1842b');
-  assert.deepEqual(spd.protected_fach_scope.next_unreviewed_source_order_frontier, { physical_page: 26, source_unit_from: 'BE-SPD-2026-SU-0303' });
+  assert.deepEqual(spd.protected_fach_scope.next_unreviewed_source_order_frontier, { physical_page: 27, source_unit_from: 'BE-SPD-2026-SU-0319' });
   for (const [p, hash] of [[22, 'e5c8f9d3b18aa4f055239156fd711d7a2daf021b2d25dd97ed2be60afdebce9e'], [23, '95e2b0b205c53e80332652221de330d25e487e849b0e8f759b880a71f82a33a5'], [24, 'ae856310c8381fa2a5ba3cbfaee545616ce1deecfc47ab72c1a6043442bca5f5']]) assert.equal(sha256(fs.readFileSync(path.join(APP_ROOT, `data/state-programmes/fach-reviews/berlin-2026-spd-p${p}-explicit-v1.json`))), hash);
 });
 test('The supplement preserves the 59 existing prepared records and adds one exact object only', () => {

@@ -7,6 +7,8 @@ import {
   callWoekAi,
   claimLedgerFor,
   clusterItems,
+  anchoredSources,
+  existingStoryMatch,
   estimateUsage,
   fetchArticleExcerpt,
   fetchFeed,
@@ -30,7 +32,7 @@ import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
 import { IMAGE_CONFIG } from "./title-image/policy.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint, sourceReviewFingerprint } from "./evidence-packets.mjs";
-import { numericEvidenceReceipt } from "./numeric-evidence.mjs";
+import { numberTokens, numericEvidenceReceipt } from "./numeric-evidence.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
 import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
 import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSourceFunnel } from "./source-funnel.mjs";
@@ -41,7 +43,7 @@ import { regionalCoverage } from "./regional-coverage.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
 const RELEVANCE_BACKFILL_DAYS = 7;
-const AI_PROCESSING_VERSION = "2026-09-06-throughput-1";
+const AI_PROCESSING_VERSION = "2026-09-06-throughput-3";
 const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE"]);
 const CAPACITY_HOLD_REASONS = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
 const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
@@ -226,6 +228,52 @@ function createCandidate(cluster, now, reassessment = false, fresh = false) {
   return candidate;
 }
 
+export function repartitionOversizedSourceQueues(stories, now) {
+  const changes = [], requeued = new Map();
+  for (const story of stories) {
+    if (isMerged(story) || story.listed === false) continue;
+    const pending = story.pending_update || story;
+    const sources = pending.sources || [];
+    const reason = pending.reason || pending.pending_reason;
+    const queuedDraft = !story.published && (new Set([
+      'AI_BUDGET_OR_BATCH_LIMIT', 'AI_HOURLY_CALL_LIMIT', 'AI_PROVIDER_UNAVAILABLE',
+      'AI_DISABLED', 'AI_BUDGET_BLOCKED', 'AI_RUN_TIME_LIMIT', 'SOURCE_INTEGRITY_OPEN',
+    ]).has(reason) || shouldRetryQualityGate(reason, pending.quality_errors || [], 0));
+    // Old unpublished queues must obey the same direct-event rule as new
+    // arrivals, even below the input-size limit. Final editorial rejections and
+    // normal published files are not silently reopened or rewritten.
+    if (!queuedDraft && reason !== 'AI_INPUT_TOO_LARGE' && !(reason === 'SOURCE_INTEGRITY_OPEN' && sources.length > 12)) continue;
+    const originalLead = story.sources?.[0];
+    if (!originalLead || sources.length < 2) continue;
+    const leading = sources.find(source => source.url === originalLead.url);
+    if (!leading) continue; // Never guess the original subject.
+    const rooted = { ...story, sources: [leading, ...sources.filter(source => source !== leading)] };
+    const kept = anchoredSources(rooted), keptSet = new Set(kept);
+    const detached = sources.filter(source => !keptSet.has(source));
+    if (!detached.length) continue; // A genuinely large single event remains on hold.
+    // This changes only queued source ownership, never published text/claims.
+    // All detached metadata is retained and re-enters the normal local gates.
+    const record = { version: 1, at: now, retained_urls: kept.map(source => source.url),
+      detached_sources: detached.map(({article_excerpt, evidence_segments, ...source}) => source) };
+    story.queue_source_repartitions = [...(story.queue_source_repartitions || []), record];
+    delete story.review_checkpoint; // Its cached source set has been repartitioned.
+    for (const source of detached) {
+      const prior = requeued.get(source.url);
+      if (!prior || Date.parse(source.published_at || 0) >= Date.parse(prior.published_at || 0)) requeued.set(source.url, source);
+    }
+    pending.sources = kept;
+    if (story.pending_update) pending.reason = 'AI_BUDGET_OR_BATCH_LIMIT';
+    else {
+      pending.pending_reason = 'AI_BUDGET_OR_BATCH_LIMIT';
+      pending.claims = claimLedgerFor(kept, story.story_id, now);
+    }
+    pending.quality_errors = [];
+    pending.content_hash = storyContentHash({sources:kept});
+    changes.push({story_id:story.story_id, before:sources.length, retained:kept.length, requeued:detached.length});
+  }
+  return {changes, requeued_sources:[...requeued.values()]};
+}
+
 export function refreshUnpublishedDraftTitle(candidate) {
   // A never-published, single-document draft follows that document's current
   // observed title, not the headline seen during its first queue arrival.
@@ -255,6 +303,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
   const qualityRetryAfter = retryableOutput ? new Date(Date.parse(now) + retryDelayMinutes * 60000).toISOString() : null;
   const aiRetry = retryableOutput ? {
     version: AI_PROCESSING_VERSION, fingerprint: retryInputFingerprint(candidate),
+    first_failed_at: sameAttempt ? existing.ai_retry.first_failed_at || existing.ai_retry.failed_at || now : now,
     failed_at: now, retry_after: qualityRetryAfter, retry_count: consecutiveRetries,
   } : existing?.ai_retry;
   if (existing?.published) {
@@ -283,6 +332,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     title: candidate.title,
     ...(existing?.title_image ? { title_image: existing.title_image } : {}),
     ...(existing?.corrections ? { corrections: existing.corrections } : {}),
+    ...(existing?.queue_source_repartitions ? {queue_source_repartitions:existing.queue_source_repartitions} : {}),
     ...(existing?.living_file ? { living_file: existing.living_file } : {}),
     ...(existing?.review_checkpoint ? { review_checkpoint: existing.review_checkpoint } : {}),
     ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
@@ -427,6 +477,24 @@ export function normalizeAnalysisParagraphs(analysis) {
   return analysis;
 }
 
+export function analysisValidationDiagnostics(analysis) {
+  if (!analysis) return null;
+  return {
+    publication_depth: analysis.publication_depth || null,
+    publication_decision_type: typeof analysis.publication_recommendation,
+    publication_decision_value: ['string','boolean','number'].includes(typeof analysis.publication_recommendation)
+      ? String(analysis.publication_recommendation).slice(0,60) : null,
+    media_public_explanation_words: String(analysis.media_impact?.public_explanation || '').trim().split(/\s+/).filter(Boolean).length,
+    source_summary_words: String(analysis.source_summary || '').trim().split(/\s+/).filter(Boolean).length,
+    source_summary_paragraphs: String(analysis.source_summary || '').split(/\n\s*\n/).filter(s=>s.trim()).length,
+    missing_claim_numbers: (Array.isArray(analysis.event_claims) ? analysis.event_claims : []).flatMap((claim,index) => {
+      const cited = numberTokens((Array.isArray(claim?.evidence) ? claim.evidence : []).map(proof=>typeof proof?.excerpt === 'string' ? proof.excerpt : '').join('\n'));
+      const missing = [...numberTokens(typeof claim?.claim === 'string' ? claim.claim : '')].filter(n=>!cited.has(n));
+      return missing.length ? [{claim_index:index,missing,cited_numbers:[...cited]}] : [];
+    }),
+  };
+}
+
 export function sanitizeAnalysisMediaImpact(analysis, candidate, report = {}, now = new Date().toISOString()) {
   if (!analysis || typeof analysis !== "object" || Array.isArray(analysis)) return analysis;
   const localTrigger = candidate.media_trigger || detectMediaImpactTrigger(candidate);
@@ -469,6 +537,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     numeric_evidence: numericEvidenceReceipt(candidate, versionNumber, now),
   };
   return {
+    ...(existing?.queue_source_repartitions ? {queue_source_repartitions:existing.queue_source_repartitions} : {}),
     ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
     story_id: candidate.story_id,
     slug: candidate.slug,
@@ -531,7 +600,9 @@ function latestSourceDate(items) {
 export function queuePriority(candidate, now) {
   const existing = candidate.existing_story;
   const ageSinceEvidence = Math.max(0, Date.parse(now) - latestSourceDate(candidate.sources || []));
-  const fresh = candidate.fresh && ageSinceEvidence <= 3 * 60 * 60 * 1000;
+  // Ingestion is not publication: a current, unpublished fact must not lose
+  // its freshness merely because a previous provider attempt failed.
+  const fresh = (candidate.fresh || !existing?.published) && ageSinceEvidence <= 3 * 60 * 60 * 1000;
   const freshBonus = fresh ? 120 : 0;
   const publishedUpdateBonus = fresh && existing?.published && candidate.content_hash !== existing.content_hash ? 30 : 0;
   const firstPublicationBonus = !existing?.published ? 45 : 0;
@@ -540,7 +611,8 @@ export function queuePriority(candidate, now) {
   const ageHours = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / (60 * 60 * 1000)) : 0;
   const waitingBonus = Math.min(36, Math.floor(ageHours / 6));
   const urgentReviewBonus = candidate.preanalysis.material_development_review?.time_sensitive ? 72 : 0;
-  return candidate.preanalysis.internal_relevance_score + freshBonus + publishedUpdateBonus + firstPublicationBonus + reassessmentPenalty + waitingBonus + urgentReviewBonus;
+  const concreteNewsBonus = candidate.preanalysis.news_value_signals?.length ? 24 : 0;
+  return candidate.preanalysis.internal_relevance_score + freshBonus + publishedUpdateBonus + firstPublicationBonus + reassessmentPenalty + waitingBonus + urgentReviewBonus + concreteNewsBonus;
 }
 
 function retryInputFingerprint(candidate) {
@@ -650,7 +722,9 @@ export function queueSnapshot(stories = [], now = new Date().toISOString(), befo
     } else if (TECHNICAL_HOLD_REASONS.has(reason) || structuralRetry) {
       snapshot.technical += 1;
       snapshot.retryable += 1;
-      snapshot.oldest_technical_minutes = Math.max(snapshot.oldest_technical_minutes, ageMinutes);
+      const failedAt = Date.parse(story.ai_retry?.first_failed_at || story.ai_retry?.failed_at || '');
+      const technicalAge = Number.isFinite(failedAt) ? Math.max(0, (Date.parse(now) - failedAt) / 60000) : ageMinutes;
+      snapshot.oldest_technical_minutes = Math.max(snapshot.oldest_technical_minutes, technicalAge);
     } else {
       snapshot.editorial += 1;
     }
@@ -903,6 +977,10 @@ export async function runWirkungsticker(options = {}) {
   const pruneBefore = nowDate.getTime() - 120 * 24 * 60 * 60 * 1000;
   for (const [id, record] of Object.entries(state.seen_items)) if (Date.parse(record.last_seen || 0) < pruneBefore) delete state.seen_items[id];
 
+  const repartition = repartitionOversizedSourceQueues(storyStore.stories || [], now);
+  report.source_queue_repartitions = repartition.changes;
+  const freshUrls = new Set(changedItems.map(item => item.url));
+  changedItems.push(...repartition.requeued_sources.filter(item => !freshUrls.has(item.url)));
   report.living_file_merges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
   report.retired_stories += report.living_file_merges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
   const matchableStories = (storyStore.stories || [])
@@ -965,7 +1043,9 @@ export async function runWirkungsticker(options = {}) {
   for (const candidate of clusters) {
     candidate.followup_due = dueFollowupIds.has(candidate.story_id);
     candidate.deepening_due = dueDeepeningIds.has(candidate.story_id);
-    const alternativeItems = allItems.filter((item) => !subjectConflict(item, candidate) && (livingFileMatch(item, candidate).score > 0 || candidate.sources.some((source) => !subjectConflict(item, source) && eventCompatibility(item, source).same_event)));
+    const matchingEntry = {story:candidate,last_updated:candidate.last_updated,
+      anchored_story:{...candidate,sources:anchoredSources(candidate)}};
+    const alternativeItems = allItems.filter((item) => existingStoryMatch(item, matchingEntry, now) >= 0.64);
     const mergedSources = mergeSources(candidate.sources, alternativeItems);
     candidate.sources = reconcileKnownSourceAliases(mergedSources.map(source =>
       reconcileSourceIdentity(source, registry.sources.find(entry => entry.source_id === source.source_id), registry)));
@@ -1178,7 +1258,7 @@ export async function runWirkungsticker(options = {}) {
             nextPublished = publishedRecord(analysisCandidate, analysis, aiResult, options.now ? now : new Date().toISOString());
             errors.push(...validateAnalysis({ source_summary: nextPublished.source_summary, ...nextPublished.analysis }, nextPublished, { validateSourceSummaryNumbers: false, persisted: true }));
           }
-          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
+          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
             const noUpdate = errors.includes("AI_DUPLICATE_WITHOUT_UPDATE")
               && errors.every(error => ["AI_PUBLICATION_NOT_RECOMMENDED", "AI_DUPLICATE_WITHOUT_UPDATE"].includes(error));
