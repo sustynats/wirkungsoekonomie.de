@@ -34,6 +34,7 @@ import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigge
 import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
 import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSourceFunnel } from "./source-funnel.mjs";
 import { sourceCoverageDegraded } from "./check-run-health.mjs";
+import { operatingCostSummary } from "./operating-cost.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
@@ -472,7 +473,7 @@ export function aiRequestsInWindow(usage, now, windowMinutes = 60) {
 export function partitionAiQueue(eligible, stage, maxStories) {
   const allowed = stage.stage >= 3 ? [] : eligible
     .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold);
-  const limit = Math.max(0, maxStories);
+  const limit = Math.max(0, Math.min(maxStories, stage.max_stories_per_run ?? Infinity));
   let selected = allowed.slice(0, limit);
   // With the normal 12-slot run, reserve a quarter for older retryable work.
   // Fresh material keeps the majority, but a continuous news stream can no
@@ -613,6 +614,7 @@ export async function runWirkungsticker(options = {}) {
   const invalidRegistry = registryErrors(registry);
   if (invalidRegistry.length) throw new Error(invalidRegistry.join(","));
   const state = structuredClone(options.state || readJson(files.state));
+  state.cost_monitoring_started_at ||= now;
   const storyStore = structuredClone(options.storyStore || readJson(files.stories));
   const usage = structuredClone(options.usage || readJson(files.usage));
   const newsroom = options.newsroom || (fs.existsSync(files.newsroom) ? readJson(files.newsroom) : { schema_version: "1.0", source_items: {}, events: {}, event_sources: [], discovery_candidates: [] });
@@ -620,6 +622,7 @@ export async function runWirkungsticker(options = {}) {
   const dueSources = enabledSources.filter((source) => sourceDue(source, state.source_status[source.source_id], now));
   const previousSourceStatus = structuredClone(state.source_status);
   const pendingStoryCountBefore = (state.pending_story_ids || []).length;
+  const pendingStoryIdsBefore = new Set(state.pending_story_ids || []);
   const sourceFunnel = createSourceFunnel(enabledSources, dueSources);
   const report = {
     schema_version: "1.2",
@@ -874,6 +877,7 @@ export async function runWirkungsticker(options = {}) {
   const spendBefore = monthlyUsage(usage, month);
   const stage = budgetStage(spendBefore, budget);
   report.budget_stage = stage.stage;
+  report.budget_throttle = { policy_version: "2.0", relevance_threshold: stage.threshold, max_stories_per_run: stage.max_stories_per_run ?? null, mode: stage.stage >= 3 ? "budget_stop" : stage.stage ? "bounded_throughput" : "normal" };
   report.monthly_spend_before_usd = Number(spendBefore.toFixed(6));
   report.monthly_budget_usd = budget;
   const eligible = clusters
@@ -1188,6 +1192,8 @@ export async function runWirkungsticker(options = {}) {
   }
   state.pending_story_ids = [...byId.values()].filter((story) => !isMerged(story) && ((!story.published && story.listed !== false) || story.pending_update)).map((story) => story.story_id);
   report.pending_story_count = state.pending_story_ids.length;
+  const remainingPendingIds = new Set(state.pending_story_ids);
+  report.queue_completed = [...pendingStoryIdsBefore].filter(id => !remainingPendingIds.has(id)).length;
   report.queue = queueSnapshot([...byId.values()], now, pendingStoryCountBefore);
   report.queue_status = report.queue.status;
   report.source_funnel = finalizeSourceFunnel(sourceFunnel);
@@ -1239,6 +1245,7 @@ export async function runWirkungsticker(options = {}) {
       source_integrity_holds: report.source_integrity_holds.length,
       published_stories: report.published_stories,
       updated_stories: report.updated_stories,
+      queue_completed: report.queue_completed,
     },
     ai: report.ai_calls ? {
       requests: report.ai_calls,
@@ -1257,6 +1264,7 @@ export async function runWirkungsticker(options = {}) {
     source_funnel: report.source_funnel,
   });
   usage.runs = retainUsageHistory(usage.runs, now);
+  report.cost_monitoring = operatingCostSummary(usage, state.cost_monitoring_started_at, state.budget_fx, report.completed_at);
 
   if (!options.dryRun) {
     writeJson(files.state, state);

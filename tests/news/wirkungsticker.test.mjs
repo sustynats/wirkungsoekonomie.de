@@ -676,8 +676,8 @@ test("Budget- und Kapazitätsgrenzen vertagen alle nicht bearbeiteten Kandidaten
     assert.deepEqual(result.deferred, eligible);
   }
   const constrained = partitionAiQueue(eligible, budgetStage(3.6, 5), 2);
-  assert.deepEqual(constrained.selected.map((item) => item.story_id), ["high"]);
-  assert.deepEqual(constrained.deferred.map((item) => item.story_id), ["medium"]);
+  assert.deepEqual(constrained.selected.map((item) => item.story_id), ["high", "medium"]);
+  assert.deepEqual(constrained.deferred, []);
 });
 
 test("Dauerhafter Nachrichtenzufluss lässt ältere technische Queue-Einträge nicht verhungern", () => {

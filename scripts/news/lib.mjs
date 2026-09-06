@@ -1153,11 +1153,14 @@ export function monthlyUsage(usage, isoMonth) {
 }
 
 export function budgetStage(spend, budget) {
-  if (!Number.isFinite(budget) || budget <= 0) return { stage: 3, threshold: 100 };
+  if (!Number.isFinite(budget) || budget <= 0 || !Number.isFinite(spend) || spend < 0) return { stage: 3, threshold: 100, max_stories_per_run: 0 };
   const ratio = spend / budget;
-  if (ratio >= 0.95) return { stage: 3, threshold: 100 };
-  if (ratio >= 0.85) return { stage: 2, threshold: 64 };
-  if (ratio >= 0.7) return { stage: 1, threshold: 48 };
+  if (ratio >= 0.95) return { stage: 3, threshold: 100, max_stories_per_run: 0 };
+  // Spend controls throughput, not editorial eligibility. Raising the relevance
+  // threshold trapped admitted stories forever after the one-off setup spend.
+  // The unchanged monthly ceiling and per-request reservation remain binding.
+  if (ratio >= 0.85) return { stage: 2, threshold: 30, max_stories_per_run: 4 };
+  if (ratio >= 0.7) return { stage: 1, threshold: 30, max_stories_per_run: 8 };
   return { stage: 0, threshold: 30 };
 }
 
