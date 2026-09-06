@@ -1,7 +1,1280 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T06:45:32.071Z",
+  "updated_at": "2026-09-06T07:16:30.989Z",
   "stories": [
+    {
+      "publication_decision_review": {
+        "at": "2026-09-06T05:41:03.427Z",
+        "reason": "ambiguous_legacy_decision",
+        "version": "1.0"
+      },
+      "rejection_history": [
+        {
+          "at": "2026-09-03T12:23:56.901Z",
+          "filter_version": "3.0",
+          "reason_code": "FILTER_NOT_MATERIAL",
+          "quality_errors": [
+            "AI_PUBLICATION_NOT_RECOMMENDED"
+          ]
+        }
+      ],
+      "story_id": "wt-995822cc0b71a7f8",
+      "slug": "statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannu-71a7f8",
+      "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
+      "first_seen": "2026-08-27T12:05:00.000Z",
+      "last_updated": "2026-09-06T07:18:26.547Z",
+      "published_at": "2026-09-06T07:18:26.547Z",
+      "updated_at": "2026-09-06T07:18:26.547Z",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "bundesregierung-presse",
+          "publisher": "Pressemitteilungen der Bundesregierung",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+          "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
+          "summary": "The negotiations on the Multiannual Financial Framework (MFF) 2028-2034 have entered a decisive stage. Through the MFF, the EU determines how it will spend its common resources well into the next decade. In an increasingly uncertain world, the MFF provides the foundation for ensuring the EU's capacity to act as a strong and sovereign community, and to ensure security for Europeans. To deliver on this ambition, the MFF must be modernised and reformed, both in its architecture and in the way it allocates resources. Both should be guided by our shared priorities, which are set out, not least, in our Strategic Agenda: security and defence, competitiveness, migration and sovereignty. By endorsing the three core spending programmes, the Council has laid the foundation for an architecture that is fit for the challenges ahead. Based on an affordable and viable EU budget, we jointly support the ambition to conclude the negotiations in 2026. At a time when virtually all Member States are un...",
+          "source_type": "official_rss",
+          "published_at": "2026-08-27T12:05:00.000Z",
+          "primary_source": true,
+          "source_priority": 88,
+          "source_topic": "Politik",
+          "content_hash": "d67af2ea27ec2c599b84b9434724fb45993cc6c5c2b9d84220b4c2c4c8ee3feb",
+          "source_item_id": "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+          "publisher_id": "bundesregierung",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-08-27T12:05:00.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:bundesregierung",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-995822cc0b71a7f8-v1-claim-1",
+          "story_id": "wt-995822cc0b71a7f8",
+          "claim": "Dänemark, Deutschland, die Niederlande, Österreich, Finnland und Schweden erklären gemeinsam, dass die Verhandlungen zum Mehrjährigen Finanzrahmen 2028–2034 in eine entscheidende Phase eingetreten sind.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-presse",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "f60ecfb5636b1834e84e",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            },
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "c942bcc3199104d6ebcf",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T07:18:26.547Z"
+        },
+        {
+          "claim_id": "wt-995822cc0b71a7f8-v1-claim-2",
+          "story_id": "wt-995822cc0b71a7f8",
+          "claim": "Die sechs Staaten verlangen, den EU-Haushalt zu modernisieren und bei Architektur und Mittelverteilung zu reformieren.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-presse",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "e630b1007af7c9730ad9",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            },
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "6385189badd6f6427f2b",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T07:18:26.547Z"
+        },
+        {
+          "claim_id": "wt-995822cc0b71a7f8-v1-claim-3",
+          "story_id": "wt-995822cc0b71a7f8",
+          "claim": "Sie nennen Sicherheit und Verteidigung, Wettbewerbsfähigkeit, Migration und Souveränität als gemeinsame Prioritäten.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-presse",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "6385189badd6f6427f2b",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            },
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "146dc21500ac96e0df44",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T07:18:26.547Z"
+        },
+        {
+          "claim_id": "wt-995822cc0b71a7f8-v1-claim-4",
+          "story_id": "wt-995822cc0b71a7f8",
+          "claim": "Der Vorschlag der Kommission in Höhe von nahezu 2 Billionen Euro solle in ausgewogener Weise um mehrere hundert Milliarden Euro reduziert werden.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-presse",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "91b4a5a7035cc66b00a2",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            },
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "623a533837c86004d3c9",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T07:18:26.547Z"
+        },
+        {
+          "claim_id": "wt-995822cc0b71a7f8-v1-claim-5",
+          "story_id": "wt-995822cc0b71a7f8",
+          "claim": "Die Erklärung fordert, dass Zugang zu europäischer Finanzierung an die Achtung gemeinsamer Werte und der Rechtsstaatlichkeit gebunden bleibt.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-presse",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "aa2b1d6adbd9be42b18a",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            },
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "excerpt_hash": "05203a623b41d53c194e",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T07:18:26.547Z"
+        }
+      ],
+      "event_id": "event-387b5558f67e204de308",
+      "event_first_seen_at": "2026-08-27T12:05:00.000Z",
+      "event_detected_at": "2026-08-27T12:05:00.000Z",
+      "verification_started_at": "2026-09-06T07:18:12.568Z",
+      "publish_ready_at": "2026-09-06T07:18:26.547Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-presse"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:16:30.989Z",
+        "fingerprint": "6e342d5fd35d2293e28d3fbce951640b3384ddc6bf400910593ccb6dda8c0ecb",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "b1bae7b04df34bc6338acd68295c03bcc78f251e2a1fb3d3bb0005b5ad402ce7",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Bundesregierung veröffentlicht eine gemeinsame Erklärung von Dänemark, Deutschland, den Niederlanden, Österreich, Finnland und Schweden zum Mehrjährigen Finanzrahmen 2028–2034. Darin heißt es, die Verhandlungen seien in eine entscheidende Phase eingetreten. Die sechs Staaten wollen den EU-Haushalt modernisieren, Prioritäten neu setzen und die Mittelverteilung an Sicherheit und Verteidigung, Wettbewerbsfähigkeit, Migration und Souveränität ausrichten.\n\nZugleich wird gefordert, den Vorschlag der Kommission von nahezu 2 Billionen Euro in ausgewogener Weise um mehrere hundert Milliarden Euro zu reduzieren. Die Erklärung nennt außerdem eine ganzheitliche Betrachtung der Zahlungsströme, erwartet Arbeit mit bestehendem Personalbestand und macht Rechtsstaatlichkeit zur Bedingung für EU-Finanzierung. Ein Abschluss der Verhandlungen im Jahr 2026 wird unterstützt.",
+      "analysis": {
+        "story_id": "wt-995822cc0b71a7f8",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Sechs EU-Staaten legen eine gemeinsame Position zum MFR 2028–2034 vor. Sie verlangen Umbau, Priorisierung und Kürzungen bei einem Kommissionsvorschlag von nahezu 2 Billionen Euro.",
+        "detail_summary": "Die Quelle dokumentiert eine gemeinsame Erklärung von sechs Mitgliedstaaten zum EU-Mehrjahreshaushalt 2028–2034. Inhaltlich ist das zunächst eine politische Positionsbestimmung, keine beschlossene Haushaltsregel. Materiell relevant ist sie, weil sie die Verhandlungslogik für einen zentralen EU-Finanzrahmen skizziert und damit die Richtung möglicher Mittelverteilung beeinflussen kann. Besonders belastbar sind die Aussagen zu Prioritäten, Kürzungsforderung und Rechtsstaatskonditionalität. Mögliche Folgen sind Verschiebungen zugunsten von Sicherheit, Verteidigung und Wettbewerbsfähigkeit sowie Druck auf andere Ausgabenrubriken. Unklar bleibt, wie stark sich diese Linie im finalen Verhandlungsergebnis durchsetzt; die Quelle selbst belegt nur den gemeinsamen Vorstoß, nicht den späteren Ausgang.",
+        "why_relevant": "Die Erklärung betrifft den künftigen EU-Haushalt und damit potenziell Regeln, Prioritäten und Verteilung großer Finanzmittel.",
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Der MFR prägt EU-Finanzierungen, die mittelbar Unternehmen, Beschäftigte und Haushalte betreffen können."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Erklärung nennt die grüne Transformation, berührt aber noch keine konkrete Umweltentscheidung."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Rechtsstaatlichkeit als Förderbedingung und die Haushaltsprioritäten betreffen demokratische Steuerung auf EU-Ebene."
+        },
+        "importance": "hoch",
+        "impact_potential": "Kann die spätere Verteilung großer EU-Mittel, Förderbedingungen und Prioritäten in zentralen Politikfeldern mitprägen.",
+        "impact_risks": [
+          "Mögliche Verdrängung anderer Ausgabenbereiche durch Kürzungsdruck und Priorisierung",
+          "Konflikte um Netto-Positionen, Zahlungsflüsse und Rechtsstaatskonditionalität"
+        ],
+        "mechanisms": [
+          "Verhandlungsmacht in den MFR-Gesprächen",
+          "Priorisierung von Ausgabenrubriken",
+          "Konditionalität für EU-Finanzierung"
+        ],
+        "first_order": [
+          "Einfluss auf die Verhandlungsposition im EU-Haushalt",
+          "Signal für Kürzungen und Umpriorisierung"
+        ],
+        "second_order": [
+          "Mögliche Verschiebung von Förderströmen zwischen Politikfeldern",
+          "Änderungen der Anreize für Mitgliedstaaten und EU-Institutionen"
+        ],
+        "third_order": [
+          "Langfristige Wirkung auf Kohäsion, Investitionspfade und die politische Durchsetzbarkeit des EU-Haushalts"
+        ],
+        "systemic_relevance": "Der MFR ist ein zentraler Verteilungsmechanismus der EU; Änderungen dort können zahlreiche Politikbereiche zugleich berühren.",
+        "transformation_potential": "Die Erklärung zielt auf eine Reorganisation der Haushaltsarchitektur und der Prioritäten, nicht auf eine abgeschlossene Reform.",
+        "resilience": "Offen bleibt, ob die vorgeschlagene Neupriorisierung die finanzielle und politische Resilienz der EU erhöht oder Belastungen verlagert.",
+        "side_effects": [
+          "Streit über Kürzungen und Nettoausgleiche",
+          "Mögliche Spannungen zwischen Förderzielen und Konsolidierungsdruck"
+        ],
+        "uncertainties": [
+          "Die Erklärung ist ein Verhandlungsstandpunkt, kein Beschluss.",
+          "Der spätere Umfang tatsächlicher Haushaltsänderungen ist offen."
+        ],
+        "evidence_level": "hoch für die Positionen der sechs Staaten, offen für spätere Wirkungen",
+        "attribution": "Quelle: gemeinsame Erklärung der sechs Regierungen; Formulierungen sind als politische Positionen der Unterzeichner zu lesen.",
+        "watch_next": [
+          "Wie die Kommission und andere Mitgliedstaaten auf die Kürzungs- und Priorisierungsforderung reagieren",
+          "Ob im weiteren MFR-Verfahren konkrete Beträge oder Konditionalitäten geändert werden"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16, SDG 17"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "new_story",
+          "rationale": "Die Erklärung setzt eine gemeinsame Position von sechs Staaten zu einem zentralen EU-Finanzrahmen und benennt konkrete Prioritäten sowie Kürzungsforderungen."
+        },
+        "visuals": {
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "beschaeftigte",
+            "europa"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true,
+        "media_impact": null,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-06T07:16:30.989Z",
+        "media_trigger_fingerprint": "02f65494cb9f053fdfb77f219274a23488fcda90cb526c5dfccd9ae86dc4be68",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 0,
+          "fingerprint": "02f65494cb9f053fdfb77f219274a23488fcda90cb526c5dfccd9ae86dc4be68",
+          "content_fingerprint": "f2bde67387bcbeeca95f4465d6e78cef273a482932c0c33353534d5a7050294b",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T07:18:26.547Z",
+          "content_hash": "b1bae7b04df34bc6338acd68295c03bcc78f251e2a1fb3d3bb0005b5ad402ce7",
+          "source_summary": "Die Bundesregierung veröffentlicht eine gemeinsame Erklärung von Dänemark, Deutschland, den Niederlanden, Österreich, Finnland und Schweden zum Mehrjährigen Finanzrahmen 2028–2034. Darin heißt es, die Verhandlungen seien in eine entscheidende Phase eingetreten. Die sechs Staaten wollen den EU-Haushalt modernisieren, Prioritäten neu setzen und die Mittelverteilung an Sicherheit und Verteidigung, Wettbewerbsfähigkeit, Migration und Souveränität ausrichten.\n\nZugleich wird gefordert, den Vorschlag der Kommission von nahezu 2 Billionen Euro in ausgewogener Weise um mehrere hundert Milliarden Euro zu reduzieren. Die Erklärung nennt außerdem eine ganzheitliche Betrachtung der Zahlungsströme, erwartet Arbeit mit bestehendem Personalbestand und macht Rechtsstaatlichkeit zur Bedingung für EU-Finanzierung. Ein Abschluss der Verhandlungen im Jahr 2026 wird unterstützt.",
+          "analysis": {
+            "story_id": "wt-995822cc0b71a7f8",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Sechs EU-Staaten legen eine gemeinsame Position zum MFR 2028–2034 vor. Sie verlangen Umbau, Priorisierung und Kürzungen bei einem Kommissionsvorschlag von nahezu 2 Billionen Euro.",
+            "detail_summary": "Die Quelle dokumentiert eine gemeinsame Erklärung von sechs Mitgliedstaaten zum EU-Mehrjahreshaushalt 2028–2034. Inhaltlich ist das zunächst eine politische Positionsbestimmung, keine beschlossene Haushaltsregel. Materiell relevant ist sie, weil sie die Verhandlungslogik für einen zentralen EU-Finanzrahmen skizziert und damit die Richtung möglicher Mittelverteilung beeinflussen kann. Besonders belastbar sind die Aussagen zu Prioritäten, Kürzungsforderung und Rechtsstaatskonditionalität. Mögliche Folgen sind Verschiebungen zugunsten von Sicherheit, Verteidigung und Wettbewerbsfähigkeit sowie Druck auf andere Ausgabenrubriken. Unklar bleibt, wie stark sich diese Linie im finalen Verhandlungsergebnis durchsetzt; die Quelle selbst belegt nur den gemeinsamen Vorstoß, nicht den späteren Ausgang.",
+            "why_relevant": "Die Erklärung betrifft den künftigen EU-Haushalt und damit potenziell Regeln, Prioritäten und Verteilung großer Finanzmittel.",
+            "status": "angekündigt",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Der MFR prägt EU-Finanzierungen, die mittelbar Unternehmen, Beschäftigte und Haushalte betreffen können."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Die Erklärung nennt die grüne Transformation, berührt aber noch keine konkrete Umweltentscheidung."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "rationale": "Rechtsstaatlichkeit als Förderbedingung und die Haushaltsprioritäten betreffen demokratische Steuerung auf EU-Ebene."
+            },
+            "importance": "hoch",
+            "impact_potential": "Kann die spätere Verteilung großer EU-Mittel, Förderbedingungen und Prioritäten in zentralen Politikfeldern mitprägen.",
+            "impact_risks": [
+              "Mögliche Verdrängung anderer Ausgabenbereiche durch Kürzungsdruck und Priorisierung",
+              "Konflikte um Netto-Positionen, Zahlungsflüsse und Rechtsstaatskonditionalität"
+            ],
+            "mechanisms": [
+              "Verhandlungsmacht in den MFR-Gesprächen",
+              "Priorisierung von Ausgabenrubriken",
+              "Konditionalität für EU-Finanzierung"
+            ],
+            "first_order": [
+              "Einfluss auf die Verhandlungsposition im EU-Haushalt",
+              "Signal für Kürzungen und Umpriorisierung"
+            ],
+            "second_order": [
+              "Mögliche Verschiebung von Förderströmen zwischen Politikfeldern",
+              "Änderungen der Anreize für Mitgliedstaaten und EU-Institutionen"
+            ],
+            "third_order": [
+              "Langfristige Wirkung auf Kohäsion, Investitionspfade und die politische Durchsetzbarkeit des EU-Haushalts"
+            ],
+            "systemic_relevance": "Der MFR ist ein zentraler Verteilungsmechanismus der EU; Änderungen dort können zahlreiche Politikbereiche zugleich berühren.",
+            "transformation_potential": "Die Erklärung zielt auf eine Reorganisation der Haushaltsarchitektur und der Prioritäten, nicht auf eine abgeschlossene Reform.",
+            "resilience": "Offen bleibt, ob die vorgeschlagene Neupriorisierung die finanzielle und politische Resilienz der EU erhöht oder Belastungen verlagert.",
+            "side_effects": [
+              "Streit über Kürzungen und Nettoausgleiche",
+              "Mögliche Spannungen zwischen Förderzielen und Konsolidierungsdruck"
+            ],
+            "uncertainties": [
+              "Die Erklärung ist ein Verhandlungsstandpunkt, kein Beschluss.",
+              "Der spätere Umfang tatsächlicher Haushaltsänderungen ist offen."
+            ],
+            "evidence_level": "hoch für die Positionen der sechs Staaten, offen für spätere Wirkungen",
+            "attribution": "Quelle: gemeinsame Erklärung der sechs Regierungen; Formulierungen sind als politische Positionen der Unterzeichner zu lesen.",
+            "watch_next": [
+              "Wie die Kommission und andere Mitgliedstaaten auf die Kürzungs- und Priorisierungsforderung reagieren",
+              "Ob im weiteren MFR-Verfahren konkrete Beträge oder Konditionalitäten geändert werden"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16, SDG 17"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Die Erklärung setzt eine gemeinsame Position von sechs Staaten zu einem zentralen EU-Finanzrahmen und benennt konkrete Prioritäten sowie Kürzungsforderungen."
+            },
+            "visuals": {
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "beschaeftigte",
+                "europa"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true,
+            "media_impact": null,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-06T07:16:30.989Z",
+            "media_trigger_fingerprint": "02f65494cb9f053fdfb77f219274a23488fcda90cb526c5dfccd9ae86dc4be68",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 0,
+              "fingerprint": "02f65494cb9f053fdfb77f219274a23488fcda90cb526c5dfccd9ae86dc4be68",
+              "content_fingerprint": "f2bde67387bcbeeca95f4465d6e78cef273a482932c0c33353534d5a7050294b",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-995822cc0b71a7f8-v1-claim-1",
+              "story_id": "wt-995822cc0b71a7f8",
+              "claim": "Dänemark, Deutschland, die Niederlande, Österreich, Finnland und Schweden erklären gemeinsam, dass die Verhandlungen zum Mehrjährigen Finanzrahmen 2028–2034 in eine entscheidende Phase eingetreten sind.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-presse",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "f60ecfb5636b1834e84e",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                },
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "c942bcc3199104d6ebcf",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            },
+            {
+              "claim_id": "wt-995822cc0b71a7f8-v1-claim-2",
+              "story_id": "wt-995822cc0b71a7f8",
+              "claim": "Die sechs Staaten verlangen, den EU-Haushalt zu modernisieren und bei Architektur und Mittelverteilung zu reformieren.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-presse",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "e630b1007af7c9730ad9",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                },
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "6385189badd6f6427f2b",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            },
+            {
+              "claim_id": "wt-995822cc0b71a7f8-v1-claim-3",
+              "story_id": "wt-995822cc0b71a7f8",
+              "claim": "Sie nennen Sicherheit und Verteidigung, Wettbewerbsfähigkeit, Migration und Souveränität als gemeinsame Prioritäten.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-presse",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "6385189badd6f6427f2b",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                },
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "146dc21500ac96e0df44",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            },
+            {
+              "claim_id": "wt-995822cc0b71a7f8-v1-claim-4",
+              "story_id": "wt-995822cc0b71a7f8",
+              "claim": "Der Vorschlag der Kommission in Höhe von nahezu 2 Billionen Euro solle in ausgewogener Weise um mehrere hundert Milliarden Euro reduziert werden.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-presse",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "91b4a5a7035cc66b00a2",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                },
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "623a533837c86004d3c9",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            },
+            {
+              "claim_id": "wt-995822cc0b71a7f8-v1-claim-5",
+              "story_id": "wt-995822cc0b71a7f8",
+              "claim": "Die Erklärung fordert, dass Zugang zu europäischer Finanzierung an die Achtung gemeinsamer Werte und der Rechtsstaatlichkeit gebunden bleibt.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-presse",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "aa2b1d6adbd9be42b18a",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                },
+                {
+                  "source_id": "bundesregierung-presse",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+                  "excerpt_hash": "05203a623b41d53c194e",
+                  "checked_at": "2026-09-06T07:18:26.547Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T07:18:26.547Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundesregierung-presse",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+              "content_hash": "d67af2ea27ec2c599b84b9434724fb45993cc6c5c2b9d84220b4c2c4c8ee3feb"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T07:18:26.547Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-995822cc0b71a7f8-d84e948d9691ab42-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "d84e948d9691ab4254190a4c82c4925ab6a2c4e2b8ff764f22119093acf6d013"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-995822cc0b71a7f8-893cffa9af7346ed-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "893cffa9af7346ed55c274cffe0c4c7809d4fa78da1a85dbc4f4215755a3b82d"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-995822cc0b71a7f8-7cf3f148012a4182-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "7cf3f148012a4182a444c3b8fad819823493f5f9be6e351b4ccef9760e17813b"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-995822cc0b71a7f8-f0b5d0cd842e2051-source.png",
+          "sha256": "f0b5d0cd842e205149d1cb0360f632a3b3b52d8aea08ac34330e634cb0602db7",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-06T07:18:27.199Z"
+        },
+        "fingerprint": "455700a214b7132a8c94e98be7111f83a588d7da3df1f1dc240def0847ced1d7",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T07:19:32.124Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-812148f3635566a6",
+      "slug": "umstrittene-reformplane-100-tage-programm-wie-die-afd-in-sachsen-anhalt-das-bildungssyst-5566a6",
+      "title": "Umstrittene Reformpläne: 100-Tage-Programm: Wie die AfD in Sachsen-Anhalt das Bildungssystem ändern will",
+      "first_seen": "2026-09-06T07:10:00.000Z",
+      "last_updated": "2026-09-06T07:10:00.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/wahl-in-sachsen-anhalt-2026--wie-die-afd-das-bildungssystem-veraendern-will-38140406.html",
+          "title": "Umstrittene Reformpläne: 100-Tage-Programm: Wie die AfD in Sachsen-Anhalt das Bildungssystem ändern will",
+          "summary": "Weniger Inklusion, keine Regenbogenflaggen, das Aus der Schulpflicht – die AfD wirbt für radikale Bildungsreformen in Sachsen-Anhalt. Doch viele sehen die Pläne äußerst kritisch.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:10:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c4bffd82a2fc4c66ca69bd29d47cdba4d3ce716c3d5ad983b63becf3a08b6930",
+          "source_item_id": "a1d5ae0a5428313f8f9b017ecae181eb6fadf94eda317e062669567a9e84d8ca",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:10:00.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-812148f3635566a6-claim-01",
+          "story_id": "wt-812148f3635566a6",
+          "claim": "Umstrittene Reformpläne: 100-Tage-Programm: Wie die AfD in Sachsen-Anhalt das Bildungssystem ändern will: Weniger Inklusion, keine Regenbogenflaggen, das Aus der Schulpflicht – die AfD wirbt für radikale Bildungsreformen in Sachsen-Anhalt. Doch viele sehen die Pläne äußerst kritisch.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        }
+      ],
+      "content_hash": "958261de01171cb090292f53cc2fe218b4449712f8e31bba0a7ba1f282da7b08",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T07:31:30.989Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:16:30.989Z",
+      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
+      "event_detected_at": "2026-09-06T07:16:30.989Z",
+      "event_id": "event-1f28dd97362517bfd26b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.516483333333333,
+        "detection_delay_minutes": 6.516483333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:16:30.989Z",
+        "fingerprint": "58387114d18a11e44f3289081156c4d640c3b8ebdded57b1c2632dbd369b3326",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:16:30.989Z",
+      "rejection": {
+        "at": "2026-09-06T07:16:30.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-ecf4b205df1ecac3",
+      "slug": "kriegsfolgen-bombenentscharfung-tausende-kieler-mussen-aus-wohnungen-1ecac3",
+      "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
+      "first_seen": "2026-09-06T07:01:51.000Z",
+      "last_updated": "2026-09-06T07:01:51.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-muessen-aus-wohnungen-38212366.html",
+          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
+          "summary": "In Kiel ist eine 250-Kilo-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Sonntagnachmittag nicht zu Hause verbringen. Das sind die Vorkehrungen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:01:51.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "afa22bd14db3b7104db5a246ad2d33d1288a59f1ec64d0d422035cf4758ed4f0",
+          "source_item_id": "ece9a49829da72c11fef3a399f12cf12fdd576e742a8a144eda9c2bcab100c88",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:01:51.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ecf4b205df1ecac3-claim-01",
+          "story_id": "wt-ecf4b205df1ecac3",
+          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen: In Kiel ist eine 250-Kilo-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Sonntagnachmittag nicht zu Hause verbringen. Das sind die Vorkehrungen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        }
+      ],
+      "content_hash": "e833835558897d8dc632efac2b350d26b3f766b7b47cb5f3e1bfbd87596d69a8",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T07:31:30.989Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:16:30.989Z",
+      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
+      "event_detected_at": "2026-09-06T07:16:30.989Z",
+      "event_id": "event-c1061c18db8a491c241b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.666483333333334,
+        "detection_delay_minutes": 14.666483333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:16:30.989Z",
+        "fingerprint": "5ede5826e093c027e109a6bd0ad01ad90ade1ceefbd4fa40d595afe60b29c01d",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:16:30.989Z",
+      "rejection": {
+        "at": "2026-09-06T07:16:30.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-c73edcf9866f078d",
+      "slug": "radikales-regieren-das-sind-die-projekte-der-afd-in-sachsen-anhalt-6f078d",
+      "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+      "first_seen": "2026-09-04T14:25:00.000Z",
+      "last_updated": "2026-09-06T07:01:00.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--das-plant-die-partei-38154750.html",
+          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:25:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "2082ca9531ba29532f8c5a5ef3ca50a475a2412f2ce4b9ee04227279fa380f94",
+          "source_item_id": "71d58d845f32fa965e5cbc74915a41340d0f10de654e54729543f233c5ba4c3b",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:25:00.000Z",
+          "ingested_at": "2026-09-04T14:36:55.366Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--was-plant-die-partei--38154750.html",
+          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T10:20:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1eb77858a97af40626e73ef146ed5373b7e613b5844833e40182cc4e0ac97220",
+          "source_item_id": "3d4f926e1c6d2b8b853bd915faa842a64f4251c0bf645affae0e805c729c8fb5",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T10:20:00.000Z",
+          "ingested_at": "2026-09-05T10:57:29.473Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--was-plant-die-partei----uebersicht-38154750.html",
+          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:01:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "39d98b30b4d9669a8fd6591605ebd4629cb094621461289dd098b2ccc5d01b3f",
+          "source_item_id": "7a615eb592f8806727ecc7bbea6d84f0285c54a3e9eb03af87b75976657c2fd8",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:01:00.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c73edcf9866f078d-claim-01",
+          "story_id": "wt-c73edcf9866f078d",
+          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        },
+        {
+          "claim_id": "wt-c73edcf9866f078d-claim-02",
+          "story_id": "wt-c73edcf9866f078d",
+          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        },
+        {
+          "claim_id": "wt-c73edcf9866f078d-claim-03",
+          "story_id": "wt-c73edcf9866f078d",
+          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        }
+      ],
+      "content_hash": "472d8ad21727c42c8c09077a437e2de51b48bcba15b4e86926a37f26d49c97ea",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T07:31:30.989Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:16:30.989Z",
+      "event_first_seen_at": "2026-09-04T14:36:55.366Z",
+      "event_detected_at": "2026-09-04T14:36:55.366Z",
+      "event_id": "event-a1b8a516baff70dece5b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.516483333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 2439.5937166666668,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:16:30.989Z",
+        "fingerprint": "681c00c96b3728961722027a0984b81ab9c0d772f54b95bd56b34ec45ba3165b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:16:30.989Z",
+      "rejection": {
+        "at": "2026-09-06T07:16:30.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-abe8f1ad00728254",
+      "slug": "hammarskjold-kampf-fur-den-frieden-ein-polit-thriller-aus-dem-wahren-leben-728254",
+      "title": "\"Hammarskjöld – Kampf für den Frieden\": Ein Polit-Thriller aus dem wahren Leben",
+      "first_seen": "2026-09-06T07:00:10.000Z",
+      "last_updated": "2026-09-06T07:00:10.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/kultur/tv/ein-polit-thriller-aus-dem-wahren-leben-38212352.html",
+          "title": "\"Hammarskjöld – Kampf für den Frieden\": Ein Polit-Thriller aus dem wahren Leben",
+          "summary": "Ein hochrangiger Diplomat, dessen Ideale in den Wirren von Entkolonisierung und Kaltem Krieg auf eine harte Probe gestellt werden: 3sat zeigt das Biopic-Drama \"Hammarskjöld\" als Free-TV-Premiere.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:00:10.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "a24f6d11c7f166914ab85674e7b0fb596b316abfa64e6d17d9b44016b734497c",
+          "source_item_id": "bbd065153761162147f805bf3efa5da20fe51b256acb83985039d741d00f3dec",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:00:10.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-abe8f1ad00728254-claim-01",
+          "story_id": "wt-abe8f1ad00728254",
+          "claim": "\"Hammarskjöld – Kampf für den Frieden\": Ein Polit-Thriller aus dem wahren Leben: Ein hochrangiger Diplomat, dessen Ideale in den Wirren von Entkolonisierung und Kaltem Krieg auf eine harte Probe gestellt werden: 3sat zeigt das Biopic-Drama \"Hammarskjöld\" als Free-TV-Premiere.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        }
+      ],
+      "content_hash": "e10d558dd553f5f475e60588661cb606cf435a6c961c2b32701df009750bcffb",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T07:31:30.989Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:16:30.989Z",
+      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
+      "event_detected_at": "2026-09-06T07:16:30.989Z",
+      "event_id": "event-d8952447920a8241685b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.349816666666666,
+        "detection_delay_minutes": 16.349816666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:16:30.989Z",
+        "fingerprint": "ac5fc698103594c0b099fc732724fba6146f61e2f10f9a18aeba3d5bf4b2a0fe",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:16:30.989Z",
+      "rejection": {
+        "at": "2026-09-06T07:16:30.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-6951ba30f7175a2a",
       "slug": "sachsisches-gericht-stoppt-kiesabbau-bei-meissen-175a2a",
@@ -4941,7 +6214,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T22:33:21.000Z",
-          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -5007,11 +6280,44 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T04:59:50.000Z",
-          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
             "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
+          "title": "Vermittlungsmission: Putin trifft Trump-Gesandte – Kreml spricht von „konstruktiven“ Gesprächen",
+          "summary": "Putin verhandelt mit Trumps Gesandten über ein Ende des Ukraine-Kriegs. Vertreter des Weißen Hauses nennen die Gespräche „gehaltsvoll“.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:29:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "74013739ed4cedf44241149b2a30dc076843818e65cacdcdf73b756e1d3c51f5",
+          "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:29:00.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
@@ -5036,7 +6342,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-02",
@@ -5056,7 +6362,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-03",
@@ -5077,7 +6383,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-04",
@@ -5097,7 +6403,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-05",
@@ -5117,7 +6423,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-06",
@@ -5137,7 +6443,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-07",
@@ -5157,7 +6463,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-08",
@@ -5177,7 +6483,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-09",
@@ -5197,58 +6503,40 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-10",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Vermittlungsmission: Putin trifft Trump-Gesandte – Kreml spricht von „konstruktiven“ Gesprächen: Putin verhandelt mit Trumps Gesandten über ein Ende des Ukraine-Kriegs. Vertreter des Weißen Hauses nennen die Gespräche „gehaltsvoll“.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
         }
       ],
-      "content_hash": "2e64a906205a79b782ff029f6fce8bfe1ffcaf2ff9e7c92d56787ca98fd7d442",
+      "content_hash": "f078b683b1904b53e9da18406331538bd0b377651c480adcf9be4403b0be1781",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_REQUIRED_STRING:source_summary",
-        "AI_REQUIRED_STRING:summary",
-        "AI_REQUIRED_STRING:why_relevant",
-        "AI_REQUIRED_STRING:status",
-        "AI_REQUIRED_STRING:analysis_type",
-        "AI_REQUIRED_STRING:importance",
-        "AI_REQUIRED_STRING:impact_potential",
-        "AI_REQUIRED_STRING:systemic_relevance",
-        "AI_REQUIRED_STRING:transformation_potential",
-        "AI_REQUIRED_STRING:resilience",
-        "AI_REQUIRED_STRING:evidence_level",
-        "AI_REQUIRED_STRING:attribution",
-        "AI_REQUIRED_STRING:detail_summary",
-        "AI_STATUS_INVALID",
-        "AI_ANALYSIS_TYPE_INVALID",
-        "AI_IMPORTANCE_INVALID",
-        "AI_PUBLICATION_GATE_REQUIRED",
-        "AI_DIMENSION_INVALID:human",
-        "AI_DIMENSION_INVALID:planet",
-        "AI_DIMENSION_INVALID:democracy",
-        "AI_ARRAY_REQUIRED:impact_risks",
-        "AI_ARRAY_REQUIRED:mechanisms",
-        "AI_ARRAY_REQUIRED:first_order",
-        "AI_ARRAY_REQUIRED:second_order",
-        "AI_ARRAY_REQUIRED:third_order",
-        "AI_ARRAY_REQUIRED:side_effects",
-        "AI_ARRAY_REQUIRED:uncertainties",
-        "AI_ARRAY_REQUIRED:watch_next",
-        "AI_ARRAY_REQUIRED:reference_frameworks",
-        "AI_UNCERTAINTY_REQUIRED",
-        "AI_WATCH_NEXT_REQUIRED",
-        "AI_SUMMARY_SENTENCE_COUNT",
-        "AI_SOURCE_SUMMARY_LENGTH",
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "NEWS_STATUS_REQUIRED",
-        "EVENT_CLAIMS_REQUIRED"
+        "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-06T07:06:18.253Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-06T08:16:30.989Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T06:36:18.253Z",
+      "updated_at": "2026-09-06T07:16:30.989Z",
       "event_first_seen_at": "2026-09-05T18:21:18.289Z",
       "event_detected_at": "2026-09-05T18:21:18.289Z",
       "event_id": "event-33c99d9ec5432a4822d9",
@@ -5283,23 +6571,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 96.47088333333333,
+        "source_age_minutes": 47.51648333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 734.9994,
+        "queue_age_minutes": 775.2116666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 80,
+        "news_freshness_score": 90,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T06:36:18.253Z",
-        "fingerprint": "bd605fb94dcf5a6bec790ea76451cdbf342a2d3e0aceb53a1a6995c416f07e60",
+        "checked_at": "2026-09-06T07:16:30.989Z",
+        "fingerprint": "3f5c40ce44a289948d53ddd2e2a4ddde16ff407aaec72ef6c31af768727e1262",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:16:30.989Z",
+      "rejection": {
+        "at": "2026-09-06T07:16:30.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -20313,9 +21613,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "c601231694b343dabcfa5be2285f3420c48249d8e655a553f7d4c01bd0d1124c",
-        "checked_at": "2026-09-06T06:45:32.071Z",
+        "checked_at": "2026-09-06T07:16:30.989Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-06T12:45:32.071Z",
+        "expires_at": "2026-09-06T13:16:30.989Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -20782,7 +22082,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -20815,7 +22115,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T20:52:04.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -20881,7 +22181,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20947,7 +22247,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20980,7 +22280,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21461,7 +22761,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -21494,7 +22794,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T20:52:04.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -21560,7 +22860,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21626,7 +22926,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21659,7 +22959,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21682,7 +22982,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T06:45:32.071Z",
+          "checked_at": "2026-09-06T07:16:30.989Z",
           "fingerprint": "54b45b9fe0be67e87ad8dd3d3c9f95ee99b8ac46863a345cc68c03347c3ad0c6",
           "issue_codes": [],
           "warning_codes": []
@@ -31212,7 +32512,7 @@
       "verification_started_at": "2026-09-05T11:33:23.291Z",
       "publish_ready_at": "2026-09-05T11:33:36.533Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -31580,11 +32880,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "0544a79d360a98cf5518d0397150d17a1a45d1cd6ed1039b6186622b9ea83f4b",
-        "checked_at": "2026-09-05T19:21:39.490Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "9a943e7c9a1904d9b30315a31746d61e3faf89d21c3761c9b617ec5c80651559",
+        "checked_at": "2026-09-06T07:16:30.989Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T01:21:39.490Z",
+        "expires_at": "2026-09-06T13:16:30.989Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -31610,45 +32910,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T11:18:00.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "13b7fa88b820f7b2db7da73ae9fa5e59b1a9fba4e2539f72fca91f828181002c",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Krieg-in-der-Ukraine/!6210492",
-            "title": "Krieg in der Ukraine: Für Trumps Schwiegersohn macht Putin eine Ausnahme",
-            "summary": "Jared Kushner und Trumps Golfpartner Steve Witkoff sind auf Friedensmission in Moskau – und fliegen dann in die Ukraine. Russlands Präsident hat dafür 72 Stunden Pause für Angriffe auf Kyjiw angeordnet. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:18:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "fff085e52a98c593001ef851391b12d04634cebce7b635ec883a36a0e5afa902",
-            "source_item_id": "0e755ad0cc24f2fd604a676f0cdf1ef437a25694192f200057919b37a92c22f3",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:18:00.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
@@ -31657,62 +32919,9 @@
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown"
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_REQUIRED_STRING:source_summary",
-          "AI_REQUIRED_STRING:summary",
-          "AI_REQUIRED_STRING:why_relevant",
-          "AI_REQUIRED_STRING:status",
-          "AI_REQUIRED_STRING:analysis_type",
-          "AI_REQUIRED_STRING:importance",
-          "AI_REQUIRED_STRING:impact_potential",
-          "AI_REQUIRED_STRING:systemic_relevance",
-          "AI_REQUIRED_STRING:transformation_potential",
-          "AI_REQUIRED_STRING:resilience",
-          "AI_REQUIRED_STRING:evidence_level",
-          "AI_REQUIRED_STRING:attribution",
-          "AI_REQUIRED_STRING:detail_summary",
-          "AI_STATUS_INVALID",
-          "AI_ANALYSIS_TYPE_INVALID",
-          "AI_IMPORTANCE_INVALID",
-          "AI_PUBLICATION_GATE_REQUIRED",
-          "AI_DIMENSION_INVALID:human",
-          "AI_DIMENSION_INVALID:planet",
-          "AI_DIMENSION_INVALID:democracy",
-          "AI_ARRAY_REQUIRED:impact_risks",
-          "AI_ARRAY_REQUIRED:mechanisms",
-          "AI_ARRAY_REQUIRED:first_order",
-          "AI_ARRAY_REQUIRED:second_order",
-          "AI_ARRAY_REQUIRED:third_order",
-          "AI_ARRAY_REQUIRED:side_effects",
-          "AI_ARRAY_REQUIRED:uncertainties",
-          "AI_ARRAY_REQUIRED:watch_next",
-          "AI_ARRAY_REQUIRED:reference_frameworks",
-          "AI_UNCERTAINTY_REQUIRED",
-          "AI_WATCH_NEXT_REQUIRED",
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "NEWS_STATUS_REQUIRED",
-          "EVENT_CLAIMS_REQUIRED"
-        ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-06T07:00:32.071Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T06:45:32.071Z",
-          "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-86783bc04f815007",
@@ -36447,182 +37656,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-c73edcf9866f078d",
-      "slug": "radikales-regieren-das-sind-die-projekte-der-afd-in-sachsen-anhalt-6f078d",
-      "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
-      "first_seen": "2026-09-04T14:25:00.000Z",
-      "last_updated": "2026-09-05T10:20:00.000Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--das-plant-die-partei-38154750.html",
-          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
-          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T14:25:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "2082ca9531ba29532f8c5a5ef3ca50a475a2412f2ce4b9ee04227279fa380f94",
-          "source_item_id": "71d58d845f32fa965e5cbc74915a41340d0f10de654e54729543f233c5ba4c3b",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T14:25:00.000Z",
-          "ingested_at": "2026-09-04T14:36:55.366Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--was-plant-die-partei--38154750.html",
-          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
-          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T10:20:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "1eb77858a97af40626e73ef146ed5373b7e613b5844833e40182cc4e0ac97220",
-          "source_item_id": "3d4f926e1c6d2b8b853bd915faa842a64f4251c0bf645affae0e805c729c8fb5",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T10:20:00.000Z",
-          "ingested_at": "2026-09-05T10:57:29.473Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-c73edcf9866f078d-claim-01",
-          "story_id": "wt-c73edcf9866f078d",
-          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T10:57:29.473Z"
-        },
-        {
-          "claim_id": "wt-c73edcf9866f078d-claim-02",
-          "story_id": "wt-c73edcf9866f078d",
-          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T10:57:29.473Z"
-        }
-      ],
-      "content_hash": "9b07dbcd2c4965fda8b8083f1fe3f1aece7df8a22c02e6b1fa59d15ec649636d",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T10:57:29.473Z",
-      "event_first_seen_at": "2026-09-04T14:36:55.366Z",
-      "event_detected_at": "2026-09-04T14:36:55.366Z",
-      "event_id": "event-a1b8a516baff70dece5b",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesellschaft"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 37.491216666666666,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 1220.56845,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 92,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T10:57:29.473Z",
-      "rejection": {
-        "at": "2026-09-05T10:57:29.473Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -50560,7 +51593,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T06:45:32.071Z",
+          "checked_at": "2026-09-06T07:16:30.989Z",
           "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
           "issue_codes": [],
           "warning_codes": []
@@ -67115,7 +68148,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T17:51:00.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
@@ -67136,7 +68169,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T06:45:32.071Z",
+          "checked_at": "2026-09-06T07:16:30.989Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -123811,7 +124844,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:45:32.071Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -123826,7 +124859,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T06:45:32.071Z",
+      "updated_at": "2026-09-06T07:16:30.989Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -123862,11 +124895,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3862.5345166666666,
+        "source_age_minutes": 3893.5164833333333,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3384.2510166666666,
+        "queue_age_minutes": 3415.2329833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -123875,7 +124908,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T06:45:32.071Z",
+        "checked_at": "2026-09-06T07:16:30.989Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
@@ -132484,7 +133517,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-06T06:45:32.071Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -132513,7 +133546,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:45:32.071Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -132526,7 +133559,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T06:45:32.071Z",
+      "updated_at": "2026-09-06T07:16:30.989Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -132560,11 +133593,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7245.534516666667,
+        "source_age_minutes": 7276.516483333334,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3384.2510166666666,
+        "queue_age_minutes": 3415.2329833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -132573,7 +133606,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T06:45:32.071Z",
+        "checked_at": "2026-09-06T07:16:30.989Z",
         "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
         "issue_codes": [],
         "warning_codes": []
@@ -133013,7 +134046,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-06T06:45:32.071Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -133042,7 +134075,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:45:32.071Z"
+          "checked_at": "2026-09-06T07:16:30.989Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -133055,7 +134088,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T06:45:32.071Z",
+      "updated_at": "2026-09-06T07:16:30.989Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -133092,11 +134125,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8325.534516666667,
+        "source_age_minutes": 8356.516483333333,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3384.2510166666666,
+        "queue_age_minutes": 3415.2329833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -133105,7 +134138,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T06:45:32.071Z",
+        "checked_at": "2026-09-06T07:16:30.989Z",
         "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
         "issue_codes": [],
         "warning_codes": []
@@ -133901,155 +134934,7 @@
           "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:28,08"
         ]
       }
-    },
-    {
-      "story_id": "wt-995822cc0b71a7f8",
-      "slug": "statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannu-71a7f8",
-      "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
-      "publication_decision_review": {
-        "at": "2026-09-06T05:41:03.427Z",
-        "reason": "ambiguous_legacy_decision",
-        "version": "1.0"
-      },
-      "rejection_history": [
-        {
-          "at": "2026-09-03T12:23:56.901Z",
-          "filter_version": "3.0",
-          "reason_code": "FILTER_NOT_MATERIAL",
-          "quality_errors": [
-            "AI_PUBLICATION_NOT_RECOMMENDED"
-          ]
-        }
-      ],
-      "first_seen": "2026-08-27T12:05:00.000Z",
-      "last_updated": "2026-08-27T12:05:00.000Z",
-      "topic": [
-        "Europa",
-        "Geopolitik",
-        "Finanzen"
-      ],
-      "sources": [
-        {
-          "source_id": "bundesregierung-presse",
-          "publisher": "Pressemitteilungen der Bundesregierung",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
-          "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
-          "summary": "The negotiations on the Multiannual Financial Framework (MFF) 2028-2034 have entered a decisive stage. Through the MFF, the EU determines how it will spend its common resources well into the next decade. In an increasingly uncertain world, the MFF provides the foundation for ensuring the EU's capacity to act as a strong and sovereign community, and to ensure security for Europeans. To deliver on this ambition, the MFF must be modernised and reformed, both in its architecture and in the way it allocates resources. Both should be guided by our shared priorities, which are set out, not least, in our Strategic Agenda: security and defence, competitiveness, migration and sovereignty. By endorsing the three core spending programmes, the Council has laid the foundation for an architecture that is fit for the challenges ahead. Based on an affordable and viable EU budget, we jointly support the ambition to conclude the negotiations in 2026. At a time when virtually all Member States are un...",
-          "source_type": "official_rss",
-          "published_at": "2026-08-27T12:05:00.000Z",
-          "primary_source": true,
-          "source_priority": 88,
-          "source_topic": "Politik",
-          "content_hash": "d67af2ea27ec2c599b84b9434724fb45993cc6c5c2b9d84220b4c2c4c8ee3feb",
-          "source_item_id": "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
-          "publisher_id": "bundesregierung",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": "2026-08-27T12:05:00.000Z",
-          "ingested_at": "2026-09-06T06:45:32.071Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:bundesregierung",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-995822cc0b71a7f8-claim-01",
-          "story_id": "wt-995822cc0b71a7f8",
-          "claim": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034: The negotiations on the Multiannual Financial Framework (MFF) 2028-2034 have entered a decisive stage. Through the MFF, the EU determines how it will spend its common resources well into the next decade. In an increasingly uncertain world, the MFF provides the foundation for ensuring the EU's capacity to act as a strong and sovereign community, and to ensure security for Europeans. To deliver on this ambition, the MFF must be modernised and reformed, both in its architecture and in the way it allocates resources. Both should be guided by our shared priorities, which are set out, not least, in our Strategic Agenda: security and defence, competitiveness, migration and sovereignty. By endorsing the three core spending programmes, the Council has laid the foundation ",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "bundesregierung-presse",
-          "source_function": "institutional_statement",
-          "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:bundesregierung",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:45:32.071Z"
-        }
-      ],
-      "content_hash": "b1bae7b04df34bc6338acd68295c03bcc78f251e2a1fb3d3bb0005b5ad402ce7",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_PUBLICATION_RECOMMENDATION_INVALID"
-      ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-06T07:15:32.071Z",
-      "reassessment": false,
-      "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-06T06:45:32.071Z",
-      "event_first_seen_at": "2026-08-27T12:05:00.000Z",
-      "event_detected_at": "2026-08-27T12:05:00.000Z",
-      "event_id": "event-387b5558f67e204de308",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 40,
-        "public_relevance": "mittel",
-        "topics": [
-          "Europa",
-          "Geopolitik",
-          "Finanzen"
-        ],
-        "dimensions": [],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 14080.534516666667,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 14080.534516666667,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T06:45:32.071Z",
-        "fingerprint": "6e342d5fd35d2293e28d3fbce951640b3384ddc6bf400910593ccb6dda8c0ecb",
-        "issue_codes": [],
-        "warning_codes": []
-      }
     }
   ],
-  "public_updated_at": "2026-09-06T05:34:08.658Z"
+  "public_updated_at": "2026-09-06T07:16:30.989Z"
 }
