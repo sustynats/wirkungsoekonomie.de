@@ -65,13 +65,16 @@ function electionJurisdictions(text) {
 // ingestion guard and the presentation-only case files. No country/company
 // allowlist; an ambiguous comparison must not bridge two different subjects.
 export function namedSubjects(item) {
-  const input = `${item.title || ""} ${String(item.source_summary || item.summary || "").split(/\n\s*\n/)[0].slice(0, 650)}`;
+  // A sentence boundary prevents the final headline noun from becoming part
+  // of a company's name at the start of the lead.
+  const input = `${item.title || ""}. ${String(item.source_summary || item.summary || "").split(/\n\s*\n/)[0].slice(0, 650)}`;
   const normalized = normal(input);
   const conflicts = unique([
     ...[...normalized.matchAll(/\b([\p{L}]+)[-–‑]krieg(?:s|es)?\b/gu)].map(match => match[1]),
     ...[...normalized.matchAll(/(?<![-–‑\p{L}])\bkrieg(?:s|es)?\s+(?:in|gegen)\s+(?:(?:der|die|den|das|dem)\s+)?([\p{L}]+)\b/gu)].map(match => match[1]),
   ]);
-  const companies = unique([...input.matchAll(/\b([A-ZÄÖÜ][\p{L}\d-]+)\s+(GmbH|AG|SE|Ltd\.?|Inc\.?)\b/gu)].map(match => `${normal(match[1])}:${normal(match[2]).replace(/\./g, "")}`));
+  const companies = unique([...input.matchAll(/\b([A-ZÄÖÜ][\p{L}\d-]+(?:\s+[A-ZÄÖÜ][\p{L}\d-]+){0,5})\s+(GmbH|AG|SE|Ltd\.?|Inc\.?)\b/gu)]
+    .map(match => `${normal(match[1]).replace(/^(?:die|der|das|eine|ein)\s+/, "")}:${normal(match[2]).replace(/\./g, "")}`));
   return { conflicts, companies };
 }
 

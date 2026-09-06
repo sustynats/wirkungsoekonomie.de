@@ -47,4 +47,8 @@ Es wurden keine Artikeltexte, Quellen, Bewertungen oder Analyseversionen geände
 
 Der Betriebsmonitor verwendet dieselbe Lageaktenberechnung. Sein reduzierter Checkout enthält deshalb auch die drei neu benötigten lokalen Abhängigkeiten (`living-files`, `newsroom`, `access-policy`). Der bestehende rekursive Abhängigkeitstest sichert das ab. Hosting bleibt GitHub Pages/Oracle; es gibt keinen Vercel-Build und keine neue KI-Abhängigkeit.
 
+Zusätzlicher Namensschutz: Mehrteilige Firmennamen bleiben vollständig; „Nordstern Energie GmbH“ und „Südstern Energie GmbH“ werden nicht auf den gemeinsamen Branchenbestandteil reduziert. Die Grenze zwischen Überschrift und Nachrichtentext bleibt bei der Namenserkennung erhalten. „Auswahl“ löst keine Wahlgebietszuordnung aus.
+
+Abnahme des integrierten Standes: 386 Nachrichtentests und 20 Monitortests erfolgreich; Nachrichten-/Such-Build, Quellenintegritätsaudit (93 Meldungen, 186 Quellen, kein offener Befund), Registry-/Portfolioaudit, Publikationsvalidierung und Hosting-Kostengate erfolgreich.
+
 Grenze: Die Prüfung ist eine konservative lokale Heuristik, kein universeller semantischer Beweis. Nicht jedes Unternehmen und jeder Vorfall ist durch diese Textmuster vollständig erkennbar. Deshalb keine Zusage absoluter Fehlerfreiheit; nachgewiesene Fehlertypen werden als Regressionen gesichert. Ein offener Lageaktenbezug blockiert keine ansonsten geprüfte Einzelmeldung.

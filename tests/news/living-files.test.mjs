@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { documentKey, fileSubject, subjectConflict, livingFileMatch, duplicateGroups, mergeLivingFiles, relatedStories } from "../../scripts/news/living-files.mjs";
+import { documentKey, fileSubject, namedSubjects, subjectConflict, livingFileMatch, duplicateGroups, mergeLivingFiles, relatedStories } from "../../scripts/news/living-files.mjs";
 import { clusterItems } from "../../scripts/news/lib.mjs";
 import { renderRelatedStories } from "../../scripts/news/build.mjs";
 import { runWirkungsticker, publishedRecord } from "../../scripts/news/run.mjs";
@@ -52,6 +52,7 @@ test("different German election jurisdictions never become one event", () => {
 test("named company and conflict differences guard ingestion as well as stale merge plans", () => {
   for (const [a, b] of [
     ["Nordstern GmbH beantragt Insolvenzverfahren", "Südstern GmbH beantragt Insolvenzverfahren"],
+    ["Nordstern Energie GmbH beantragt Insolvenzverfahren", "Südstern Energie GmbH beantragt Insolvenzverfahren"],
     ["Nordland-Krieg: US-Unterhändler beraten über Verhandlungen", "Südland-Krieg: US-Unterhändler beraten über Verhandlungen"],
   ]) {
     const canonical = story("canonical", a), other = story("other", b);
@@ -63,6 +64,13 @@ test("named company and conflict differences guard ingestion as well as stale me
     assert.deepEqual(mergeLivingFiles(entries, [{ canonical_id: "canonical", duplicate_ids: ["other"], reason: "stale_plan" }], now), []);
     assert.deepEqual(entries, before);
   }
+});
+
+test("company identities retain the full compound name, not a common industry suffix", () => {
+  assert.deepEqual(namedSubjects({ title: "Die Nordstern Energie GmbH beantragt Insolvenzverfahren" }).companies, ["nordstern energie:gmbh"]);
+  assert.deepEqual(namedSubjects({ title: "Gericht bestellt Verwalter für Nordstern Energie GmbH" }).companies, ["nordstern energie:gmbh"]);
+  assert.deepEqual(fileSubject({ title: "Auswahl von Projekten in Sachsen" }).elections, []);
+  assert.deepEqual(fileSubject({ title: "Landtagswahl in Sachsen" }).elections, ["sachsen"]);
 });
 test("consolidation is idempotent, preserves histories, queues review and routes aliases", () => {
   const canonical = structuredClone(dormagen);

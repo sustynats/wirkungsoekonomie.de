@@ -181,6 +181,7 @@ test("acute bridge reports cannot join different incident objects, even with ide
 test("same case vocabulary cannot combine different companies or election jurisdictions", () => {
   for (const titles of [
     ["Nordstern GmbH: Insolvenzverfahren und Gläubigerversammlung", "Südstern GmbH: Insolvenzverfahren und Gläubigerversammlung"],
+    ["Nordstern Energie GmbH: Insolvenzverfahren und Gläubigerversammlung", "Südstern Energie GmbH: Insolvenzverfahren und Gläubigerversammlung"],
     ["Landtagswahl in Sachsen-Anhalt: Regierungsbildung und Verhandlungen", "Landtagswahl in Sachsen: Regierungsbildung und Verhandlungen"],
   ]) {
     const entries = titles.flatMap((title, index) => [0, 1, 2].map(i => story(`${index}-${i}`, title, title, { topic: ["Politik", "Wirtschaft"] })));
