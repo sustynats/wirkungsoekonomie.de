@@ -517,7 +517,9 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
 test('service explainers need a concrete new development before the paid news check', () => {
   for (const title of ['Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?', 'Was Verbraucher über Stromtarife wissen müssen', 'Fragen und Antworten zur Pflegeversicherung']) {
     assert.equal(classifyItem({title,summary:'Ein Überblick über bestehende Regeln.'},{}).context_only,true);
+    assert.ok(classifyItem({title,summary:'Ein Überblick über bestehende Regeln.'},{}).score<30, 'context marker must actually prevent a paid slot');
     assert.equal(classifyItem({title,summary:'Der Bundestag hat heute eine bundesweite Reform beschlossen.'},{}).context_only,false);
+    assert.ok(classifyItem({title,summary:'Der Bundestag hat heute eine bundesweite Reform beschlossen.'},{}).score>=30);
   }
   assert.equal(classifyItem({title:'Warum das Gericht die neue Verordnung aufgehoben hat',summary:'Das Urteil ist heute ergangen.'},{}).context_only,false);
 });
