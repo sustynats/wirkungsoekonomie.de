@@ -473,6 +473,9 @@ export function analysisValidationDiagnostics(analysis) {
   if (!analysis) return null;
   return {
     publication_depth: analysis.publication_depth || null,
+    publication_decision_type: typeof analysis.publication_recommendation,
+    publication_decision_value: ['string','boolean','number'].includes(typeof analysis.publication_recommendation)
+      ? String(analysis.publication_recommendation).slice(0,60) : null,
     source_summary_words: String(analysis.source_summary || '').trim().split(/\s+/).filter(Boolean).length,
     source_summary_paragraphs: String(analysis.source_summary || '').split(/\n\s*\n/).filter(s=>s.trim()).length,
     missing_claim_numbers: (Array.isArray(analysis.event_claims) ? analysis.event_claims : []).flatMap((claim,index) => {

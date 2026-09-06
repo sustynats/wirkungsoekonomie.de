@@ -17,6 +17,7 @@ test('September 6 election packet fits with 20 sources, fresh excerpts and full 
   const before = structuredClone(fixture);
   const prompt = buildAnalysisPrompt([fixture]);
   assert.ok(prompt.length <= 39000, `Prompt has ${prompt.length} characters`);
+  assert.match(prompt, /"analyses":\[\{"story_id":"string","publication_recommendation":true,/);
   const suppliedIds = suppliedEvidenceIds(prompt)[fixture.story_id];
   const packet = expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
   assert.equal(packet.sources.length, 20);
