@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { buildCaseFiles } from '../news/case-files.mjs';
 import { reportOperationallyHealthy, sourceCoverageDegraded } from '../news/check-run-health.mjs';
 import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
+import { operatingCostSummary } from '../news/operating-cost.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const MINUTE = 60_000;
@@ -28,6 +29,23 @@ const age = (value, now) => value && Number.isFinite(Date.parse(value)) ? (Date.
 const uniqueRuns = usage => [...new Map((usage?.runs || []).map(run => [run.run_id, run])).values()];
 const money = value => Number.isFinite(value) ? value.toFixed(2) : 'nicht verfügbar';
 const merged = story => story.retirement?.reason_code === 'MERGED_INTO_LIVING_FILE';
+
+export function publicationFlow(usage, report, now) {
+  const rows = uniqueRuns(usage).filter(run => age(run.started_at, now) >= 0
+    && age(run.started_at, now) <= 180 && age(run.completed_at, now) >= 0
+    && Number.isFinite(Date.parse(run.completed_at))).sort((a, b) => Date.parse(a.started_at) - Date.parse(b.started_at));
+  const observedMinutes = rows.length ? (Date.parse(rows.at(-1).completed_at) - Date.parse(rows[0].started_at)) / MINUTE : 0;
+  const actions = rows.reduce((sum, run) => sum + Number(run.counts?.published_stories || 0) + Number(run.counts?.updated_stories || 0), 0);
+  // Closing a queued candidate with a valid rejection/merge is progress too.
+  // Older reports have no per-ID completion count; a shrinking queue is evidence.
+  const completions = rows.reduce((sum, run) => sum + Math.max(Number(run.counts?.queue_completed || 0),
+    Math.max(0, Number(run.queue?.before || 0) - Number(run.queue?.after ?? run.queue?.before ?? 0))), 0);
+  const capacity = Number(report?.queue?.capacity || 0);
+  const oldest = Number(report?.queue?.oldest_minutes || 0);
+  const stalled = rows.length >= 3 && observedMinutes >= 120 && capacity > 0 && oldest >= 120
+    && actions === 0 && completions === 0;
+  return { stalled, observed_runs: rows.length, observed_minutes: observedMinutes, publication_actions: actions, queue_completed: completions, capacity };
+}
 
 export function summarizeNews({ report, usage, stories, liveFeed }, now) {
   const today = berlinParts(now).date;
@@ -104,6 +122,8 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     sourceFailures: Number(report?.source_failures || 0),
     activeSources: (report?.source_health || []).filter(s => s.status === 'active').length,
     queue,
+    publicationFlow: publicationFlow(usage, report, now),
+    operatingCosts: operatingCostSummary(usage, report?.cost_monitoring?.started_at, fx, now),
     dailyPipeline,
     dailySourceFunnel,
     latestSourceFunnel,
@@ -133,12 +153,16 @@ export function evaluateChecks(data, now) {
   checks.push({ id: 'provider', name: 'KI-Verarbeitung', ok: !providerDegraded, reason: providerDegraded ? aiFailureReason(data.report) : 'kein Anbieterfehler im letzten Lauf', immediate: false });
   const technicalQueueDelay = summary.queue.status === 'technical_delay';
   checks.push({ id: 'queue', name: 'Nachrichten-Warteschlange', ok: !technicalQueueDelay, reason: technicalQueueDelay ? `${summary.queue.technical || 0} technisch blockierte Akte(n); älteste technische Blockade seit ${Math.round(summary.queue.oldest_technical_minutes || 0)} Minuten. Kapazitätswarteschlange: ${summary.queue.capacity || 0}; redaktionelle Ablehnungen: ${summary.queue.editorial || 0}.` : 'Queue läuft oder enthält nur erwartbare Kapazitäts-/Redaktionsfälle.', immediate: false });
+  const flow = summary.publicationFlow;
+  checks.push({ id: 'publication-flow', name: 'Fortschritt der Nachrichtenverarbeitung', ok: !flow.stalled, reason: flow.stalled
+    ? `${flow.observed_runs} gespeicherte Läufe über mindestens zwei Stunden ohne Veröffentlichung, Aktualisierung oder abgeschlossene Warteschlangenprüfung; ${flow.capacity} Kandidaten warten auf Verarbeitung. Budget- und Auswahlsteuerung prüfen; dies belegt keinen Anbieterausfall.`
+    : 'Kein belegter Stillstand einer wartenden Nachrichtenverarbeitung.', immediate: false });
   const imageErrors = new Set(['HIGGSFIELD_RETRY_EXHAUSTED', 'HIGGSFIELD_AUTH_UNAVAILABLE', 'HIGGSFIELD_NOT_CONFIGURED', 'HIGGSFIELD_PROVIDER_UNAVAILABLE']);
   const failedImages = data.stories.filter(s => s.published && s.listed !== false && imageErrors.has(s.title_image?.refresh_failure || s.title_image?.fallback_reason)).length;
   checks.push({ id: 'images', name: 'Titelbilder', ok: failedImages === 0, reason: `${failedImages} ${failedImages === 1 ? 'Symbolbild' : 'Symbolbilder'} mit technischem Fehler; vorhandene Bilder oder Wirkungskarten bleiben sichtbar. Nachrichten werden dadurch nicht zurückgehalten.`, immediate: false });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   checks.push({ id: 'publication', name: 'Veröffentlichung', ok: data.liveFeed !== null && summary.pendingPublication === 0, reason: data.liveFeed === null ? 'Live-Feed nicht lesbar.' : `${summary.pendingPublication} sichtbare Lagen oder Einzelakten seit über 45 Minuten nicht im Live-Feed.`, immediate: false });
-  const budgetBlocked = Boolean(data.report?.budget_blocked || data.report?.budget_policy?.status !== 'ok' || summary.usdMonth >= Number(data.report?.monthly_budget_usd));
+  const budgetBlocked = Boolean(data.report?.budget_blocked || data.report?.budget_stage >= 3 || data.report?.budget_policy?.status !== 'ok' || summary.usdMonth >= Number(data.report?.monthly_budget_usd));
   checks.push({ id: 'budget', name: 'KI-Monatsbudget', ok: !budgetBlocked, reason: budgetBlocked ? 'Monatslimit oder Wechselkurs-Sicherheitsgate hält neue KI-Anfragen an; die Warteschlange bleibt erhalten.' : 'innerhalb der technischen Budgetgrenze', immediate: false });
   return { checks, summary };
 }
@@ -147,6 +171,8 @@ export function dailyReport(summary, checks) {
   const funnel = summary.dailyPipeline || {};
   const sourceTotals = summary.dailySourceFunnel?.totals || {};
   const productive = (summary.latestSourceFunnel?.productive || []).map(source => source.name).join(', ') || 'keine im letzten Lauf';
+  const operating = summary.operatingCosts;
+  const unit = operating?.news?.cost_per_first_publication_eur;
   return [
     `WÖk Tagesbericht · ${summary.today} · Europe/Berlin`,
     ...checks.filter(c => TARGETS.some(t => t.id === c.id)).map(c => `${c.ok ? '✓' : '⚠'} ${c.name}: ${c.ok ? 'erreichbar' : c.reason}`),
@@ -157,6 +183,11 @@ export function dailyReport(summary, checks) {
     `Quellen-Funnel heute: ${funnel.feedItems || 0} Feed-Einträge → ${funnel.changedItems || 0} neu/aktualisiert → ${funnel.candidates || 0} Story-Kandidaten → ${funnel.eligibleKnown ? funnel.eligible : 'noch nicht historisch erfasst'} geeignet → ${funnel.aiSelected || 0} KI → ${funnel.publicationActions || 0} Veröffentlichungen/Aktualisierungen. Lokal verworfen: ${funnel.localRejections || 0}; redaktionelle Quellenbeiträge: ${sourceTotals.editorial_rejections || 0}.`,
     `Produktive Quellen im letzten Lauf: ${productive}.`,
     `KI-Schätzung: gestern $${money(summary.usdYesterday)} · heute $${money(summary.usdToday)} · Monat $${money(summary.usdMonth)}.`,
+    ...(operating ? [
+      `Betriebsmessung seit ${operating.started_at}: ${operating.news.first_publications} Erstveröffentlichungen · ${operating.news.updates} Aktualisierungen · ${operating.news.ai_requests} KI-Anfragen, inklusive Ablehnungen und Wiederholungen.`,
+      unit !== null ? `KI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt ${(unit * 100).toFixed(2)} Cent inkl. Steuerreserve; Ziel unter 4 Cent. ${operating.news.fallback_estimate_runs} Läufe mit Ersatzschätzung.` : 'KI-Kosten je Erstveröffentlichung noch nicht bestimmbar: keine Erstveröffentlichung oder unvollständige Kostendaten.',
+      `WÖk-Analysen separat: ${operating.editorial.first_publications} neu · ${operating.editorial.updates} aktualisiert · $${money(operating.editorial.estimated_cost_usd)} geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.`,
+    ] : []),
     summary.usdPerNewsAction !== null ? `Geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung: $${summary.usdPerNewsAction.toFixed(3)}.` : 'Heute noch keine veröffentlichte oder aktualisierte Akte für eine Kostenquote.',
     summary.eurMonthWithTaxReserve !== null ? `Monat umgerechnet inkl. 19 % Steuerreserve: ca. €${money(summary.eurMonthWithTaxReserve)} (Limit €25).` : 'Euro-Umrechnung: kein ausreichend aktueller Kurs verfügbar.',
     `Kosten ohne Higgsfield-Abo/Bildcredits und Hosting; ${summary.missingCostRuns} KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.`,

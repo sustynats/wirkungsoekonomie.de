@@ -1,19 +1,20 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { buildAnalysisPrompt, callWoekAi, claimLedgerFor, preAnalyzeStory, fitAnalysisInput } from '../../scripts/news/lib.mjs';
+import { buildAnalysisPrompt, callWoekAi, claimLedgerFor, preAnalyzeStory, fitAnalysisInput, budgetStage } from '../../scripts/news/lib.mjs';
 import { detectMediaImpactTrigger } from '../../scripts/news/media-impact.mjs';
 import { evidenceGroups } from '../../scripts/news/newsroom.mjs';
 import { serializeEvidencePackets, expandPacketTransport, expandEvidenceSegments } from '../../scripts/news/evidence-packets.mjs';
 import { evaluateRunHealth } from '../../scripts/news/check-run-health.mjs';
 import { aiDeferralReason } from '../../scripts/news/run.mjs';
 
-test('early budget priority is not mislabeled as a temporary batch or hourly queue',()=>{
+test('soft budget throttling remains retryable; only a budget stop blocks eligible stories',()=>{
   const candidate={preanalysis:{internal_relevance_score:34},reassessment:false};
-  assert.equal(aiDeferralReason(candidate,{stage:1,threshold:48},25),'AI_BUDGET_BLOCKED');
+  assert.equal(aiDeferralReason(candidate,budgetStage(13.42,18.9),25),'AI_BUDGET_OR_BATCH_LIMIT');
+  assert.equal(aiDeferralReason(candidate,budgetStage(17.96,18.9),25),'AI_BUDGET_BLOCKED');
   assert.equal(aiDeferralReason(candidate,{stage:0,threshold:30},25),'AI_BUDGET_OR_BATCH_LIMIT');
   assert.equal(aiDeferralReason(candidate,{stage:0,threshold:30},0),'AI_HOURLY_CALL_LIMIT');
-  assert.equal(aiDeferralReason({...candidate,reassessment:true},{stage:1,threshold:48},25),'AI_BUDGET_OR_BATCH_LIMIT');
+  assert.equal(aiDeferralReason({...candidate,reassessment:true},budgetStage(13.42,18.9),25),'AI_BUDGET_OR_BATCH_LIMIT');
 });
 
 test('325 equal dependency records retain their multiplicity without quadratic prompt growth',()=>{

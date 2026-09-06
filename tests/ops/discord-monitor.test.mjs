@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord } from '../../scripts/ops/discord-monitor.mjs';
+import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord, publicationFlow } from '../../scripts/ops/discord-monitor.mjs';
 
 const now = '2026-09-04T06:00:00Z';
 const fixture = () => ({ report: { status: 'ok', operational_status: 'ok', completed_at: now, source_failures: 0, monthly_budget_usd: 18.9, budget_policy: { status: 'ok', fx: { rate_date: '2026-09-03', rate_usd_per_eur: 1.16 } }, source_health: [], queue: { status: 'clear', total: 0, capacity: 0, technical: 0, editorial: 0 }, source_funnel: [] }, usage: { runs: [] }, stories: [], liveFeed: { items: [] }, probes: [] });
@@ -39,6 +39,35 @@ test('transient outage stays quiet; confirmed outage and recovery each notify on
 });
 test('no new articles is not a pipeline failure', () => {
   assert.ok(evaluateChecks(fixture(), now).checks.every(c => c.ok));
+});
+test('green runs without queue progress trigger a distinct flow warning, not a provider failure', () => {
+  const data = fixture();
+  data.report.queue = { before: 27, after: 28, capacity: 26, oldest_minutes: 900, status: 'draining' };
+  data.usage.runs = [0, 60, 125].map((minutes, i) => ({ run_id: `r${i}`,
+    started_at: new Date(Date.parse(now) - minutes * 60000 - 1000).toISOString(), completed_at: new Date(Date.parse(now) - minutes * 60000).toISOString(),
+    queue: { before: 26, after: 27 }, counts: { published_stories: 0, updated_stories: 0 } }));
+  const checks = evaluateChecks(data, now).checks;
+  assert.equal(checks.find(c => c.id === 'publication-flow').ok, false);
+  assert.equal(checks.find(c => c.id === 'provider').ok, true);
+  assert.equal(checks.find(c => c.id === 'run').ok, true);
+  for (const counts of [{ queue_completed: 1 }, { published_stories: 1 }, { updated_stories: 1 }]) {
+    const progress = structuredClone(data);
+    progress.usage.runs[0].counts = counts;
+    assert.equal(publicationFlow(progress.usage, progress.report, now).stalled, false);
+  }
+  const shrinking = structuredClone(data);
+  shrinking.usage.runs[0].queue = { before: 28, after: 27 };
+  assert.equal(publicationFlow(shrinking.usage, shrinking.report, now).stalled, false);
+  const quiet = structuredClone(data);
+  quiet.report.queue.capacity = 0;
+  assert.equal(publicationFlow(quiet.usage, quiet.report, now).stalled, false);
+  assert.equal(publicationFlow({ runs: data.usage.runs.slice(0, 2) }, data.report, now).stalled, false);
+});
+test('the existing 95 percent budget reserve is observable as a budget stop', () => {
+  const data = fixture(); data.report.budget_stage = 3;
+  assert.equal(evaluateChecks(data, now).checks.find(c => c.id === 'budget').ok, false);
+  data.report.budget_stage = 1;
+  assert.equal(evaluateChecks(data, now).checks.find(c => c.id === 'budget').ok, true);
 });
 test('worker queue after-count is not misreported as zero in Discord',()=>{
   const data=fixture();
