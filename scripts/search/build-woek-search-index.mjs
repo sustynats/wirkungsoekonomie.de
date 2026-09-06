@@ -663,9 +663,10 @@ const merged = Array.from(byUrl.values())
       compareStableText(a.url, b.url),
   );
 
-const generatedAt = process.env.SOURCE_DATE_EPOCH
-  ? new Date(Number(process.env.SOURCE_DATE_EPOCH) * 1000).toISOString()
-  : "source-derived";
+// This committed index describes source contents, not the machine's build
+// clock. Keep local ticker runs and reproducible CI builds byte-identical;
+// per-entry content hashes already identify the underlying source revision.
+const generatedAt = "source-derived";
 
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
 const stableMeta = Object.fromEntries(

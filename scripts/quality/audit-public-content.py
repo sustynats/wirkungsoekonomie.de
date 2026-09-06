@@ -55,7 +55,7 @@ for rel,p in pages.items():
    broken.append({'from':rel,'href':h,'target':target,'main':link['main']});continue
   if target in pages:
    if link['main'] and target!=rel:incoming[target]+=1
-   if u.fragment and unquote(u.fragment) not in pages[target]['ids'] and not u.fragment.startswith(':~:text='):anchors.append({'from':rel,'href':h,'target':target,'main':link['main']})
+   if u.fragment and unquote(u.fragment).lower()!='top' and unquote(u.fragment) not in pages[target]['ids'] and not u.fragment.startswith(':~:text='):anchors.append({'from':rel,'href':h,'target':target,'main':link['main']})
    if target==rel and not u.fragment and link['main']:selflinks.append({'from':rel,'href':h})
 bytitle=collections.defaultdict(list);bybody=collections.defaultdict(list)
 for rel,p in pages.items():

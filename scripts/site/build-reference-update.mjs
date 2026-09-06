@@ -3,6 +3,7 @@ import path from 'node:path';
 import {writeContentPage} from '../lib/content-page.mjs';
 import {escapeHtml as esc} from '../lib/explainer-components.mjs';
 import {currentPdfEditions, editionLink} from '../lib/publication-editions.mjs';
+import {renderPublicationErratum, renderPublicationErratumDownload, applyPublicationErratumNotices} from '../lib/publication-erratum.mjs';
 
 const data = JSON.parse(fs.readFileSync('content/site/reference-update.json', 'utf8'));
 const chapters = fs.readdirSync('referenz').filter(name => /^kapitel-\d{3}-/.test(name));
@@ -13,7 +14,8 @@ let body = `<section class="hero compact-hero explanation-hero"><nav class="brea
 <section class="section" id="fachpapiere"><h2>Wie mit älteren Papieren umzugehen ist</h2><p>Historische Originaldateien behalten ihren Publikationsstand. Frühere T-SROI-Whitepaper mit freien Transformationsfaktoren werden für neue Rechnungen durch v1.1 abgelöst; vorhandene Errata sind mitzulesen. Ältere Register beschreiben den damaligen Aufbau, während aktuelle Prüfungen die Fassung v1.5 verwenden.</p><p>Eine Aussage in einem älteren Papier wird nicht dadurch aktuell, dass dieselbe Datei an mehreren Stellen heruntergeladen werden kann. Bibliotheksseite, Lesefassung und Download gehören als Zugänge zu derselben Veröffentlichung zusammen. Fachliche Korrekturen brauchen einen sichtbaren Standhinweis, ein Erratum oder eine neue Fassung.</p><p>Die Präzisierungen zu staatlichen Verfahren gelten bei der heutigen Anwendung auch für WÖk-Papiere zu Politik, Wirkungshaushalt, Nachhaltigkeit und Unternehmenssteuerung. Ob ein konkreter staatlicher Mechanismus bereits greift, wird anhand von Gegenstand, Zuständigkeit und Quellen geprüft. Eine fehlende öffentlich zugängliche eNAP-Datei beweist keine unterlassene Prüfung.</p></section>
 <section class="section section-soft"><h2>Was dieser Abgleich abdeckt</h2><p>Dieser Abgleich behandelt die genannten fachlichen Entwicklungslinien und ihre Referenzstände. Er ist keine vollständige Neuauflage, kein Peer Review jedes Kapitels und keine Validierung aller Modellannahmen oder Registerschwellen. Offene empirische Fragen bleiben offen. Für eine neue gedruckte Auflage sind die markierten Themen in den jeweiligen Text einzubauen und erneut fachlich zu prüfen.</p><p><a href="/methodik/">Den gemeinsamen Prüfweg verstehen</a> · <a href="/referenz/">Zum Buch</a> · <a href="/bibliothek/">Zur Bibliothek</a></p></section>`;
 const pdfSection = `<section class="section section-soft" id="aktualisierte-pdfs"><h2>Aktualisierte PDFs herunterladen</h2><p>Die neuen Lesefassungen enthalten die datierte fachliche Ergänzung. Gedruckte Seitenzahlen und zitierte Ausgangstexte bleiben nachvollziehbar; die Ergänzung erhält eigene Seitenlabels.</p><div class="card-grid three">${currentPdfEditions().map(item => `<article class="card"><h3 class="card-title">${esc(item.title)}</h3><p data-publication-abstract>${item.kind === 'reading-edition' ? `Ausgangswerk mit ${item.updatePages} vorgeschalteten Seiten zur fachlichen Aktualisierung. Die ursprünglichen ${item.originalPages} Seiten bleiben erhalten.` : item.kind === 'addendum' ? 'Eigenständige Erläuterung der fachlichen Änderungen und maßgeblichen Referenzen.' : 'Überarbeitete Erläuterung mit Beispielen, Prüfweg, Quellen und Grenzen.'}</p><p>${editionLink(item.filename,'PDF öffnen')}</p></article>`).join('')}</div></section>`;
-body = body.replace('<section class="section"><h2>Die passende Quelle', pdfSection+'<section class="section"><h2>Die passende Quelle');
+body = body.replace('<section class="section"><h2>Die passende Quelle', pdfSection.replace('</div></section>',renderPublicationErratumDownload()+'</div></section>')+'<section class="section"><h2>Die passende Quelle');
+body = body.replace('<section class="section section-soft"><h2>Was dieser Abgleich', renderPublicationErratum()+'<section class="section section-soft"><h2>Was dieser Abgleich');
 writeContentPage({file:'referenz/aktualisierung/index.html', title:data.title, description:data.description, section:'Referenz', type:'Addendum', body});
 
 const marker = 'publication-current-note-20260905';
@@ -63,3 +65,4 @@ for (const edition of currentPdfEditions().filter(item=>currentSurfaces.has(item
     if(!file.startsWith('referenz/') && file!=='buch.html') updateNotice(file,'Die PDF-Lesefassung enthält jetzt die datierte fachliche Aktualisierung. Der zugrundeliegende Werktext behält seinen Publikationsstand.');
   }
 }
+applyPublicationErratumNotices();

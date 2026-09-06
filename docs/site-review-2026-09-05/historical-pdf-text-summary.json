@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-09-06",
+  "assetPaths": 756,
+  "uniqueFileHashes": 748,
+  "uniquePagesRead": 11365,
+  "uniqueCharactersRead": 25751986,
+  "unreadableUniqueFiles": 0,
+  "uniquePagesWithLittleExtractableText": 16,
+  "signalsByRuleIncludingDuplicatePaths": {
+    "TRANSFORMATION_MULTIPLIER": 55,
+    "LANGUAGE_ACTIVE_INGREDIENT_LITERAL": 1,
+    "REACH_EFFECT_EQUATION": 5,
+    "ID_INDICATOR_EQUATION": 13
+  },
+  "uniqueFileSignals": 74,
+  "rules": {
+    "ID_INDICATOR_EQUATION": "W[Öo]k[- ]IDs?\\s+(?:sind|ist|bezeichnet|bezeichnen|bilden)\\s+[^.!?]{0,100}Indikator",
+    "EFFECT_ALWAYS_POSITIVE": "Wirkung\\s+(?:ist|bedeutet)\\s+(?:immer|grundsätzlich|ausschließlich|stets)\\s+(?:eine\\s+)?positiv",
+    "REACH_EFFECT_EQUATION": "Reichweite\\s+(?:ist|bedeutet|entspricht)\\s+(?:gleich\\s+)?Wirkung",
+    "NO_EXISTING_STATE_ASSESSMENT": "(?:bisher|bislang|heute)\\s+(?:gibt\\s+es|existiert|existieren)\\s+keine?\\s+[^.!?]{0,90}(?:Wirkungsprüf|Folgenabschätz|Nachhaltigkeitsprüf)",
+    "LANGUAGE_ACTIVE_INGREDIENT_LITERAL": "(?:Sprache|Narrative|Wörter)\\s+(?:ist|sind)\\s+(?:ein\\s+|ein[e]?\\s+)?Wirkstoff",
+    "TRANSFORMATION_MULTIPLIER": "(?:Transformations?(?:faktor|multiplikator)|T[- ]SROI[^.!?]{0,100}multipl|multipl[^.!?]{0,100}T[- ]SROI)",
+    "R_MEANS_FEEDBACK": "\\bR\\s*(?:=|steht\\s+für|bedeutet)\\s*Rückkopplung"
+  },
+  "limitations": [
+    "Signals may quote rejected claims, describe historical states, or be explicitly framed as analogies. Read surrounding context before making a correction.",
+    "Text extraction does not verify layout, images, formulas, evidence quality or scientific validity.",
+    "No signal does not mean that a publication is correct or current. This is a targeted terminology screen, not peer review.",
+    "Page numbers are one-based physical PDF pages. No original publication was modified."
+  ]
+}
