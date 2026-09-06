@@ -1,4 +1,5 @@
 import crypto from "node:crypto";
+import { hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
 import { SYSTEMIC_ANALYSIS_RULE } from "./analysis-principles.mjs";
 
 export const EDITORIAL_ANALYSIS_VERSION = "1.0";
@@ -233,6 +234,7 @@ export function buildEditorialAnalysisPrompt(story, assessment, qualityErrors = 
     "Bei staatlichen Regelungsvorhaben anerkenne bestehende staatliche GFA-/Nachhaltigkeitsarchitektur objektspezifisch. DNS-/SDG-Bezug ist kein Kausalbeweis. Nichtkompensation und Reverse Merit Order nur bei materieller Schutzgrenzen- oder Priorisierungsfrage.",
     "Frame-/Diskurscheck: Sachverhalt vor Frame, Attribution sichtbar, keine Gesinnungs- oder Medienhausbewertung, keine Absichtszuschreibung. Kommunikatives Wirkungspotenzial und Resonanzrisiko nicht als eingetretene Wirkung formulieren. Problematische Begriffe nicht unnötig wiederholen.",
     "Schreibe verständlichen journalistischen Fließtext nach dem Armin-Maiwald-Prinzip: konkret beginnen, Zusammenhang erklären, Fachbegriff erst danach. Keine Bullet-Wüste und keine Consulting-Sprache. 900 bis 1800 Wörter, 7 bis 13 Abschnitte, je 1 bis 3 Absätze. Keine technische Infrastruktur, KI-Anbieter, internen Variablen oder Pipelinebegriffe im öffentlichen Text.",
+    READER_COPY_RULE,
     "Der Self-Frame-Check prüft Titel, Teaser und Meta-Description. Titel beginnt mit dem Sachverhalt oder der Systemfrage, nicht mit einem politischen Kampfbegriff. SEO-Text ist sachlich und 110 bis 158 Zeichen lang.",
     "Gib ausschließlich valides JSON als {analyses:[{story_id,editorial_analysis}]} aus. Keine Einleitung, kein Markdown.",
     ...(qualityErrors.length ? [`QUALITÄTSKORREKTUR: ${qualityErrors.join(", ")}. Erzeuge die Analyse vollständig neu und behebe alle Punkte.`] : []),
@@ -308,6 +310,7 @@ export function editorialAnalysisValidationErrors(analysis, story, assessment = 
   if (!(analysis.what_changes_the_assessment || []).length) errors.push("EDITORIAL_WATCHLIST_REQUIRED");
   if (!analysis.self_frame_check?.passed || analysis.self_frame_check?.issues?.length) errors.push("EDITORIAL_SELF_FRAME_FAILED");
   const publicText = strings({ title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, seo: analysis.seo_description, sections: analysis.sections }).join(" ");
+  if (hasEditorialResidue([publicText, analysis.claim_ledger, analysis.counter_evidence, analysis.what_changes_the_assessment])) errors.push("EDITORIAL_PUBLIC_EDITORIAL_RESIDUE");
   if (/\b(?:Oracle|Higgsfield|API|JSON|Prompt|Pipeline|Variable|Token(?:s)?|LLM)\b/i.test(publicText)) errors.push("EDITORIAL_INTERNAL_LANGUAGE");
   if (/\b(?:will manipulieren|will täuschen|will spalten|bewusst eingesetzt,? um)\b/i.test(publicText)) errors.push("EDITORIAL_INTENT_ATTRIBUTION");
   if (/\b(?:führt dazu|bewirkt|schwächt die demokratie|verändert die gesellschaft)\b/i.test(publicText) && /\b(frame|überschrift|formulierung|begriff)\b/i.test(publicText)) errors.push("EDITORIAL_MEDIA_POTENTIAL_AS_EFFECT");
