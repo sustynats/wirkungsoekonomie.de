@@ -1,7 +1,99 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T09:21:47.630Z",
+  "updated_at": "2026-09-06T10:21:08.621Z",
   "stories": [
+    {
+      "story_id": "wt-7bd1d7f242af3f7b",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-eabd7afdad730244-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-57349140780a769d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-1929e578d1c32da2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "seelze-elektro-rollstuhl-lost-grossbrand-in-sonderpostenmarkt-aus-af3f7b",
+      "title": "Seelze: Elektro-Rollstuhl löst Großbrand in Sonderpostenmarkt aus",
+      "source_summary": "In Seelze (Region Hannover) ist am Samstag ein Sonderpostenmarkt in Brand geraten. Nach dem Bericht brannte der Laden laut Feuerwehrsprecher teilweise ein und wurde vollständig zerstört; die Löscharbeiten dauerten am Sonntagmorgen noch an. Eine schwarze Rauchwolke war kilometerweit zu sehen.\n\nDie Polizei geht nach dem Bericht davon aus, dass die Batterie eines elektrischen Rollstuhls eines Kunden Funken schlug und das Feuer in der Abteilung für Malbedarf auslöste. Der Schaden wird ersten Schätzungen zufolge auf etwa drei Millionen Euro beziffert. Der Rollstuhlfahrer wurde leicht verletzt, alle Kunden und Beschäftigten konnten rechtzeitig in Sicherheit gebracht werden.",
+      "summary": "In Seelze ist ein Sonderpostenmarkt bei einem Großbrand vollständig zerstört worden. Nach dem Bericht steht als Ursache eine funken schlagende Rollstuhl-Batterie im Raum.",
+      "detail_summary": "Gesichert ist nach dem vorliegenden Bericht ein Großbrand in einem Sonderpostenmarkt in Seelze, bei dem der Markt vollständig zerstört wurde und die Löscharbeiten bis Sonntagmorgen andauerten. Als mögliche Ursache nennt die Polizei die Batterie eines elektrischen Rollstuhls; sie soll Funken geschlagen und das Feuer in der Abteilung für Malbedarf ausgelöst haben. Der Schaden wird auf etwa drei Millionen Euro geschätzt, der Rollstuhlfahrer wurde leicht verletzt. Für die Einordnung ist vor allem relevant, dass hier ein einzelnes technisches Ereignis einen kompletten Betriebsverlust und damit einen klaren Sachschaden ausgelöst haben soll. Mögliche Folgen sind Betriebsunterbrechung, Versicherungs- und Wiederaufbaukosten sowie vorübergehende lokale Versorgungs- und Beschäftigungseffekte. Die Evidenz bleibt vorläufig, weil die Quelle ein journalistischer Bericht ist und die Ursache laut Formulierung noch auf Angaben der Polizei beruht.",
+      "why_relevant": "Der Brand zerstört einen Betrieb vollständig und verursacht laut Bericht einen Schaden in Millionenhöhe; das ist für lokale Versorgung, Beschäftigung und Versicherung relevant.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Ein Ladenbrand mit Vollzerstörung und Verletzung kann Beschäftigte, Kunden und lokale Versorgung kurzfristig beeinträchtigen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Es liegen nur Hinweise auf einen Brand vor; belastbare Umweltfolgen oder Folgeschäden sind in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Kein direkter demokratischer Wirkpfad ist aus der Quelle ersichtlich."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-06T10:21:08.621Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T10:03:10.000Z",
+      "last_updated": "2026-09-06T10:22:08.636Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-cddc4a44512169719de0",
+      "case_file": null,
+      "source_published_at": "2026-09-06T10:03:10.000Z",
+      "published_at": "2026-09-06T10:22:08.636Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:03:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b1ce25efb18964e4",
       "title_image": {
