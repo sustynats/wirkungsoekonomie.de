@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { documentKey, fileSubject, namedSubjects, subjectConflict, livingFileMatch, duplicateGroups, mergeLivingFiles, relatedStories } from "../../scripts/news/living-files.mjs";
+import { documentKey, fileSubject, namedSubjects, subjectConflict, livingFileMatch, duplicateGroups, mergeLivingFiles, relatedStories, diplomaticVisit } from "../../scripts/news/living-files.mjs";
 import { clusterItems } from "../../scripts/news/lib.mjs";
 import { renderRelatedStories } from "../../scripts/news/build.mjs";
 import { runWirkungsticker, publishedRecord } from "../../scripts/news/run.mjs";
@@ -9,6 +9,69 @@ const now = "2026-09-04T06:00:00Z";
 const source = (title, url = "https://example.org/a", more = {}) => ({ title, url, source_id: "test", publisher_id: "test", publisher: "Test", primary_source: true, published_at: now, ...more });
 const story = (id, title, more = {}) => ({ story_id: id, slug: id, title, source_summary: "", published: true, listed: true, published_at: now, last_updated: now, first_seen: now, sources: [source(title, `https://example.org/${id}`)], claims: [], analysis: { summary: title }, versions: [{ version: 1, analyzed_at: now }], current_version: 1, ...more });
 const dormagen = story("dormagen", "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen");
+
+const visit = (id, title, summary, more = {}) => story(id, title, {
+  source_summary: summary, topic: ["Geopolitik"],
+  sources: [source(title, `https://example.org/${id}`, { summary })], ...more,
+});
+
+test("same delegation and destination route spelling/headline variants before AI", () => {
+  const entries = [
+    visit("a", "Witkoff und Kushner erstmals in Kiew erwartet", "Die US-Gesandten Witkoff und Kushner kommen nach Gesprächen in Moskau nach Kiew."),
+    visit("b", "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen", "Die US-Sondergesandten Steve Witkoff und Jared Kushner sind in Kiew eingetroffen."),
+    visit("c", "Krieg in der Ukraine: US-Unterhändler in Kyjiw", "Die US-Unterhändler Jared Kushner und Steve Witkoff sind erstmals in Kyjiw eingetroffen."),
+  ];
+  for (const input of [entries, [...entries].reverse()]) {
+    const groups = duplicateGroups(input);
+    assert.equal(groups.length, 1);
+    assert.equal(groups[0].duplicate_ids.length, 2);
+    assert.equal(clusterItems(input.map(s => s.sources[0]), [], now).length, 1);
+  }
+  assert.equal(clusterItems([entries[1].sources[0]], [entries[0]], now)[0].story_id, "a");
+  assert.equal(diplomaticVisit(entries[2]).destination, "kyjiw");
+});
+
+test("visit identity is generic, while one shared actor or a new city is insufficient", () => {
+  const base = visit("base", "Unterhändler Anna Sommer und Tom Winter in Nordstadt erwartet", "Die Unterhändler Anna Sommer und Tom Winter besuchen Nordstadt.");
+  const same = visit("same", "Gesandte Sommer und Winter in Nordstadt angekommen", "Die Gesandten Sommer und Winter führen Gespräche.");
+  assert.equal(duplicateGroups([base, same]).length, 1);
+  for (const [title, summary] of [
+    ["Gesandte Sommer und Winter in Südstadt", "Die Gesandten Sommer und Winter sind in Südstadt."],
+    ["Gesandte Sommer und Herbst in Nordstadt", "Die Gesandten Sommer und Herbst treffen ein."],
+    ["Gesandte Sommer in Nordstadt erwartet", "Die Gesandte Anna Sommer reist in die Stadt."],
+    ["Angriff in Nordstadt während Besuch der Gesandten", "Die Gesandten Sommer und Winter führen dort Gespräche."],
+    ["Neuer Besuch: Gesandte Sommer und Winter in Nordstadt", "Die Gesandten Sommer und Winter kommen zurück."],
+  ]) {
+    const separate = visit("separate", title, summary);
+    assert.equal(duplicateGroups([base, separate]).length, 0, title);
+    assert.notEqual(clusterItems([separate.sources[0]], [base], now)[0].story_id, "base", title);
+  }
+});
+
+test("visit windows use original event dates and cannot grow through pairwise chains", () => {
+  const make = (id, date) => visit(id, "Gesandte Sommer und Winter in Nordstadt erwartet", "Die Gesandten Sommer und Winter führen Gespräche.", { first_seen: date, published_at: date, last_updated: date });
+  assert.equal(duplicateGroups([make("a", "2026-09-01"), make("b", "2026-09-10")]).length, 0);
+  assert.equal(duplicateGroups([make("a", "invalid"), make("b", "invalid")]).length, 0);
+  const entries = [make("middle", "2026-09-05"), make("early", "2026-09-01"), make("late", "2026-09-09")];
+  entries[0].living_file = { consolidations: [{ at: now }] };
+  assert.equal(duplicateGroups(entries)[0].duplicate_ids.length, 1);
+  mergeLivingFiles(entries, [{ canonical_id: "middle", duplicate_ids: ["early", "late"], reason: "stale-plan" }], now);
+  assert.equal(entries.filter(s => s.listed === false).length, 1);
+});
+
+test("visit consolidation retains all checked texts and queues new source combinations", () => {
+  const a = visit("a", "US-Vermittler Sommer und Winter in Nordstadt empfangen", "Die US-Vermittler Sommer und Winter sind eingetroffen.");
+  const b = visit("b", "Gesandte Sommer und Winter erstmals in Nordstadt erwartet", "Die Gesandten Sommer und Winter reisen nach Nordstadt.");
+  b.pending_update = { sources: [source("Neue Stellungnahme", "https://example.org/update")] };
+  const entries = [a, b], before = structuredClone(entries);
+  const groups = duplicateGroups(entries);
+  assert.equal(mergeLivingFiles(entries, groups, now).length, 1);
+  assert.deepEqual(duplicateGroups(entries), []);
+  for (let i = 0; i < entries.length; i++) for (const field of ["title", "source_summary", "analysis", "claims", "sources", "versions", "published_at", "last_updated", "current_version"])
+    assert.deepEqual(entries[i][field], before[i][field]);
+  assert.equal(a.pending_update.sources.length, 3);
+  assert.equal(clusterItems([b.sources[0]], entries, now)[0].story_id, "a");
+});
 
 test("article identity follows changed publisher slugs, not arbitrary IDs or query resources", () => {
   assert.equal(documentKey("https://www.stern.de/alt-38205422.html?utm_source=x#top"), documentKey("https://www.stern.de/neu-38205422.html"));

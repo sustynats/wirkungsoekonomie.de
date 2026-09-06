@@ -213,3 +213,38 @@ test("publication membership assertion rejects unknown, duplicate and incompatib
   assert.ok(caseIntegrityErrors({ ...valid, members: [...valid.members, valid.members[0]] }, entries).includes("CASE_MEMBERSHIP_INVALID"));
   assert.ok(caseIntegrityErrors({ ...valid, members: [{ story_id: "missing" }] }, entries).includes("CASE_MEMBER_UNKNOWN:missing"));
 });
+
+test("delegation visits qualify without the literal word war in every headline", () => {
+  const entries = [
+    story("arrival", "US-Vermittler Sommer und Winter in Nordstadt eingetroffen", "Die US-Gesandten Sommer und Winter führen in Nordstadt Gespräche zum Westland-Krieg.", { topic: ["Geopolitik"] }),
+    story("planned", "Sommer und Winter erstmals in Nordstadt erwartet", "Die US-Gesandten Sommer und Winter verhandeln über den Krieg in Westland in Nordstadt.", { topic: ["Geopolitik"] }),
+    story("meeting", "Westland-Krieg: US-Unterhändler in Nordstadt", "Die US-Unterhändler Sommer und Winter führen in Nordstadt Gespräche über ein Ende des Westland-Kriegs.", { topic: ["Geopolitik"] }),
+  ];
+  const grouped = buildCaseFiles(entries);
+  assert.equal(grouped.cases.length, 1);
+  assert.equal(grouped.visibleStories.length, 1);
+  assert.deepEqual(caseIntegrityErrors(grouped.cases[0], entries), []);
+});
+
+test("sector-wide protection demands stay visible, independent of the politician's name", () => {
+  for (const name of ["Özdemir", "Sommer", "Winter"]) {
+    const policy = story("policy", `${name} fordert Hochdruck beim Schutz sicherheitsrelevanter Infrastruktur`, "Nach Angriffen auf Umspannwerke und einen Flughafen fordert die Landesregierung länderübergreifenden Schutz. Kritische Infrastruktur umfasst auch Verkehr, Wasser, Gesundheit und digitale Netze.");
+    const localReaction = story("protection", "Sabotage an Umspannwerken: Landesregierung beschließt stärkeren Schutz", "Nach dem Angriff in Jänschwalde soll der Schutz für alle Umspannwerke des Landes verstärkt werden.");
+    const grouped = buildCaseFiles([...caseStories(), policy, localReaction]);
+    assert.equal(grouped.caseByStory.has("policy"), false);
+    assert.equal(grouped.caseByStory.has("protection"), false);
+    assert.ok(grouped.visibleStories.some(s => s.story_id === "policy"));
+    assert.equal(grouped.cases[0].member_count, 3);
+  }
+});
+
+test("a checked short headline can take an omitted conflict name from its leading source only", () => {
+  const entries = [
+    story("a", "Gesandte Sommer und Winter in Nordstadt eingetroffen", "Die Gesandten Sommer und Winter führen in Nordstadt Gespräche.", { topic: ["Geopolitik"], sources: [{ title: "Gesandte Sommer und Winter in Nordstadt", summary: "Die Gespräche betreffen den Westland-Krieg." }] }),
+    story("b", "Westland-Krieg: Gesandte Sommer und Winter in Nordstadt erwartet", "", { topic: ["Geopolitik"] }),
+    story("c", "Krieg in Westland: Gesandte Sommer und Winter in Nordstadt", "", { topic: ["Geopolitik"] }),
+  ];
+  assert.equal(buildCaseFiles(entries).cases[0].member_count, 3);
+  entries[0].sources.unshift({ title: "Bericht ohne Konfliktzuordnung" });
+  assert.equal(buildCaseFiles(entries).caseByStory.has("a"), false);
+});

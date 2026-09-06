@@ -5,6 +5,45 @@ const time = (value) => Date.parse(value || "") || 0;
 const normal = (value) => String(value || "").normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
 const unique = (values) => [...new Set(values)];
 const intersects = (a, b) => a.some((value) => b.includes(value));
+const canonicalPlace = value => normal(value).replace(/^(?:kiew|kyiv)$/, "kyjiw");
+
+// A named delegation, its destination and a short time window identify a
+// visit. A war, an actor or a publication URL alone does not. Extract only
+// the factual headline/lead, never an impact analysis or related-story text.
+const DELEGATION = /\b(?:[A-Z]{2,4}[- ])?(?:Sondergesandt\w*|Gesandt\w*|Vermittler\w*|Unterhändler\w*|Unterhaendler\w*|Delegation)\b/i;
+const VISIT = /\b(?:besuch\w*|gesprach\w*|gesandt\w*|vermittler\w*|unterhandler\w*|delegation|erwartet|eingetroffen|empfang\w*|empfangen|treffen|reisen?|kommen|angekommen)\b/;
+const VISIT_OTHER_SUBJECT = /\b(?:angriff\w*|angriffspause\w*|angriffsstopp\w*|drohne\w*|waffenruhe|waffenstillstand|sanktion\w*|rucktritt\w*|abkommen|vereinbarung\w*|ergebnis\w*)\b/;
+const REPEAT_VISIT = /\b(?:neu\w*|erneut\w*|weiter\w*|nachst\w*|zweite\w*)\s+(?:besuch|reise|treffen)\b/;
+
+export function delegationNames(item) {
+  const input = `${item.title || ""}. ${String(item.source_summary || item.summary || item.sources?.[0]?.summary || "").split(/\n\s*\n/)[0].slice(0, 650)}`;
+  const names = input.match(/(?:Sondergesandt\w*|Gesandt\w*|Vermittler\w*|Unterhändler\w*|Unterhaendler\w*)\s+([A-ZÄÖÜ][\p{L}-]+(?:\s+[A-ZÄÖÜ][\p{L}-]+){0,2})\s+und\s+([A-ZÄÖÜ][\p{L}-]+(?:\s+[A-ZÄÖÜ][\p{L}-]+){0,2})/u)
+    || input.match(/([A-ZÄÖÜ][\p{L}-]+(?:\s+[A-ZÄÖÜ][\p{L}-]+){0,2})\s+und\s+([A-ZÄÖÜ][\p{L}-]+(?:\s+[A-ZÄÖÜ][\p{L}-]+){0,2})\s+als\s+(?:Sondergesandt\w*|Gesandt\w*|Vermittler\w*|Unterhändler\w*|Unterhaendler\w*)/u);
+  return names ? unique(names.slice(1).map(name => normal(name.split(/\s+/).at(-1)))).sort() : [];
+}
+
+export function diplomaticVisit(item) {
+  const title = String(item.title || "");
+  const lead = String(item.source_summary || item.summary || item.sources?.[0]?.summary || "").split(/\n\s*\n/)[0].slice(0, 650);
+  const input = `${title}. ${lead}`;
+  if (!DELEGATION.test(input) || !VISIT.test(normal(title)) || VISIT_OTHER_SUBJECT.test(normal(title))) return null;
+  if (REPEAT_VISIT.test(normal(title))) return null;
+  const people = delegationNames(item);
+  if (people.length !== 2) return null;
+  // Read the destination from the headline. A prior stop mentioned only in
+  // the lead must not turn the Kyiv visit into the earlier Moscow meeting.
+  const destinations = unique([...title.matchAll(/\b(?:in|nach)\s+([A-ZÄÖÜ][\p{L}-]+)\b/gu)]
+    .map(match => canonicalPlace(match[1])).filter(place => !["gesprachen", "verhandlungen", "treffen", "der", "die", "dem", "den"].includes(place)));
+  if (destinations.length !== 1) return null;
+  return { people, destination: destinations[0], key: `${people.join("+")}:${destinations[0]}` };
+}
+
+export function sameDiplomaticVisit(a, b) {
+  const left = diplomaticVisit(a), right = diplomaticVisit(b);
+  const dated = item => time(item.first_seen || item.published_at || item.sources?.[0]?.published_at);
+  return Boolean(left && right && left.key === right.key && !namedSubjectConflict(a, b)
+    && dated(a) && dated(b) && Math.abs(dated(a) - dated(b)) <= 4 * DAY);
+}
 
 export function documentKey(value) {
   try {
@@ -26,7 +65,7 @@ const PLACE_EXCLUSIONS = new Set("der die das dem den einem einer im am an auf a
 function placesIn(text) {
   // Only locative phrases, never publisher coverage or the origin of a letter ("aus NRW").
   const matches = String(text || "").matchAll(/\b(?:in|bei|nahe)\s+(?:der\s+Stadt\s+)?([A-ZÄÖÜ][\p{L}-]+(?:\s+(?:am|an der|im|ob der)\s+[A-ZÄÖÜ][\p{L}-]+)?)/gu);
-  return unique([...matches].map((match) => normal(match[1])).filter((place) => !PLACE_EXCLUSIONS.has(place)));
+  return unique([...matches].map((match) => canonicalPlace(match[1])).filter((place) => !PLACE_EXCLUSIONS.has(place)));
 }
 const COUNTRY_RULES = [
   ["DE", /\b(deutsch\w*|germany|german|bundesregierung|bundestag|bundesrat)\b/],
@@ -69,10 +108,15 @@ export function namedSubjects(item) {
   // of a company's name at the start of the lead.
   const input = `${item.title || ""}. ${String(item.source_summary || item.summary || "").split(/\n\s*\n/)[0].slice(0, 650)}`;
   const normalized = normal(input);
-  const conflicts = unique([
-    ...[...normalized.matchAll(/\b([\p{L}]+)[-–‑]krieg(?:s|es)?\b/gu)].map(match => match[1]),
-    ...[...normalized.matchAll(/(?<![-–‑\p{L}])\bkrieg(?:s|es)?\s+(?:in|gegen)\s+(?:(?:der|die|den|das|dem)\s+)?([\p{L}]+)\b/gu)].map(match => match[1]),
+  const conflictNames = value => unique([
+    ...[...value.matchAll(/\b([\p{L}]+)[-–‑]krieg(?:s|es)?\b/gu)].map(match => match[1]),
+    ...[...value.matchAll(/(?<![-–‑\p{L}])\b(?:angriffs)?krieg(?:s|es)?\s+(?:in|gegen)\s+(?:(?:der|die|den|das|dem)\s+)?([\p{L}]+)\b/gu)].map(match => match[1]),
   ]);
+  const directConflicts = conflictNames(normalized);
+  // If a short checked summary omits the conflict name, the leading source
+  // may supply it. Never infer it from arbitrary context/related sources or
+  // overwrite a subject already established by the story itself.
+  const conflicts = directConflicts.length ? directConflicts : conflictNames(normal(`${item.sources?.[0]?.title || ""}. ${String(item.sources?.[0]?.summary || "").slice(0, 350)}`));
   const companies = unique([...input.matchAll(/\b([A-ZÄÖÜ][\p{L}\d-]+(?:\s+[A-ZÄÖÜ][\p{L}\d-]+){0,5})\s+(GmbH|AG|SE|Ltd\.?|Inc\.?)\b/gu)]
     .map(match => `${normal(match[1]).replace(/^(?:die|der|das|eine|ein)\s+/, "")}:${normal(match[2]).replace(/\./g, "")}`));
   return { conflicts, companies };
@@ -133,6 +177,12 @@ export function fileSubject(item) {
 
 export function subjectConflict(a, b) {
   if (namedSubjectConflict(a, b)) return true;
+  const visitA = diplomaticVisit(a), visitB = diplomaticVisit(b);
+  if (visitA && visitB && visitA.key !== visitB.key) return true;
+  if ((visitA && DELEGATION.test(b.title || "") && delegationNames(b).length !== 2)
+    || (visitB && DELEGATION.test(a.title || "") && delegationNames(a).length !== 2)) return true;
+  if ((visitA && (VISIT_OTHER_SUBJECT.test(normal(b.title)) || REPEAT_VISIT.test(normal(b.title))))
+    || (visitB && (VISIT_OTHER_SUBJECT.test(normal(a.title)) || REPEAT_VISIT.test(normal(a.title))))) return true;
   const left = fileSubject(a), right = fileSubject(b);
   if (left.recurrence !== right.recurrence && left.kind === "grid_incident" && right.kind === "grid_incident") return true;
   // A report about several attacks cannot become the update of just one site,
@@ -148,6 +198,7 @@ export function subjectConflict(a, b) {
 export function livingFileMatch(item, story) {
   const left = fileSubject(item), right = fileSubject(story);
   if (subjectConflict(item, story)) return { score: 0, reason: "different_object_or_place" };
+  if (sameDiplomaticVisit(item, story)) return { score: 0.98, reason: "same_delegation_destination_window" };
   const dates = (story.sources || []).map((source) => time(source.published_at)).filter(Boolean);
   const gap = Math.min(...[...dates, time(story.last_updated || story.published_at)].filter(Boolean).map((date) => Math.abs(time(item.published_at) - date)));
   if (left.key && left.key === right.key && gap <= 7 * DAY) return { score: 0.98, reason: "same_incident_object_place_window" };
@@ -188,7 +239,8 @@ export function mergeLivingFiles(stories, groups, now) {
       // Defense in depth: even a stale/precomputed merge plan may not bypass
       // the current subject guard or create a conflict with retained members.
       const retained = (canonical.living_file?.merged_story_ids || []).map(memberId => byId.get(memberId)).filter(Boolean);
-      if ([canonical, ...retained].some(member => subjectConflict(member, duplicate))) continue;
+      if ([canonical, ...retained].some(member => subjectConflict(member, duplicate)
+        || (diplomaticVisit(member) && diplomaticVisit(duplicate) && !sameDiplomaticVisit(member, duplicate)))) continue;
       const sources = mergeSourceVersions([...(canonical.pending_update?.sources || canonical.sources || []), ...(duplicate.sources || []), ...(duplicate.pending_update?.sources || [])]);
       // No claim/analysis/source is silently reinterpreted as already checked.
       canonical.pending_update = { detected_at: now, sources, reason: "AI_BUDGET_OR_BATCH_LIMIT", fresh: false, consolidation: true, quality_retry_count: 0 };
@@ -227,9 +279,12 @@ export function duplicateGroups(stories) {
   const used = new Set(), groups = [];
   for (const canonical of active) {
     if (!canonical.published || used.has(canonical.story_id)) continue;
-    const matches = active.filter((other) => {
+    const matches = [];
+    for (const other of active) {
+      const matchesCanonical = (() => {
       if (other === canonical || used.has(other.story_id) || subjectConflict(canonical, other)) return false;
       const a = fileSubject(canonical), b = fileSubject(other);
+      if (sameDiplomaticVisit(canonical, other)) return true;
       if (a.key && a.key === b.key && Math.abs(time(canonical.first_seen || canonical.published_at) - time(other.first_seen || other.published_at)) <= 7 * DAY) return true;
       const event = eventCompatibility(canonical.sources?.[0] || canonical, other.sources?.[0] || other);
       if (event.same_event && event.reason === "structured_event_facts") return true;
@@ -239,7 +294,10 @@ export function duplicateGroups(stories) {
       return Boolean(doc && doc === documentKey(other.sources?.[0]?.url) && a.places.length <= 1 && b.places.length <= 1
         && shared >= 3 && shared / Math.max(1, Math.min(leftTerms.length, rightTerms.length)) >= 0.75
         && Math.abs(time(canonical.first_seen || canonical.published_at) - time(other.first_seen || other.published_at)) <= 4 * DAY);
-    });
+      })();
+      if (matchesCanonical && matches.every(member => !subjectConflict(member, other)
+        && !(diplomaticVisit(member) && diplomaticVisit(other) && !sameDiplomaticVisit(member, other)))) matches.push(other);
+    }
     if (matches.length) {
       matches.forEach((story) => used.add(story.story_id));
       groups.push({ canonical_id: canonical.story_id, duplicate_ids: matches.map((story) => story.story_id), reason: "specific_object_or_leading_document" });
