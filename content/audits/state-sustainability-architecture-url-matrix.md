@@ -19,7 +19,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/kompass.html | `kompass.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | nachhaltigkeitspruefung |
 | https://wirkungsoekonomie.de/fuer/politik.html | `fuer/politik.html` | REWRITE_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_DNS_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/evidenz/ | `evidenz/index.html` | ADD_SOURCE_LINKS | — |
-| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/datenbasis.html | `methodik/datenbasis.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/daten-standards-regularien.html | `methodik/daten-standards-regularien.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/externe-quellen.html | `methodik/externe-quellen.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
@@ -105,6 +105,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
 | https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
 | https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/referenz/aktualisierung/ | `referenz/aktualisierung/index.html` | REVIEW_REQUIRED, ADD_DNS_REFERENCE | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/ | `begriffe/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/7-bundeshaushaltsordnung/ | `begriffe/7-bundeshaushaltsordnung/index.html` | ADD_GLOSSARY_CROSSLINKS | nachhaltigkeitspruefung, enap, dns |
 | https://wirkungsoekonomie.de/begriffe/fuenftes-p-planet/ | `begriffe/fuenftes-p-planet/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
@@ -3601,7 +3602,6 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9048/ | `quellenarchiv/wok-q-9048/index.html` | ADD_SOURCE_LINKS | enap, dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9049/ | `quellenarchiv/wok-q-9049/index.html` | ADD_SOURCE_LINKS | dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9050/ | `quellenarchiv/wok-q-9050/index.html` | ADD_SOURCE_LINKS | dns, evaluation |
-| https://wirkungsoekonomie.de/referenz/aktualisierung/ | `referenz/aktualisierung/index.html` | REVIEW_REQUIRED, ADD_DNS_REFERENCE | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 
 ## Claim-signal review
 
@@ -3677,6 +3677,13 @@ Signals are review candidates, not automatic errors.
 - `wirkungsfelder/gesundheit-pflege/dossiers/index.html` — evaluation, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` — wirkungsblind, evaluation — No material #253 change identified by path rule; semantic scan still applies.
 - `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/iran-krieg-us-dieselpreis-auf-hochststand-f4a2e8/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `begriffe/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/affektheuristik/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/algorithmische-fairness/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3849,13 +3856,6 @@ Signals are review candidates, not automatic errors.
 - `quellenarchiv/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0465/index.html` — novelty_or_absence — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0843/index.html` — wirkungsblind — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
-- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/iran-krieg-us-dieselpreis-auf-hochststand-f4a2e8/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 
 ## Recursive non-HTML publication/support surfaces
 
