@@ -1270,7 +1270,7 @@
     if (state.loading) return state.loading;
     state.loading = (async () => {
       const [index, dictionary, associations, entrypoints] = await Promise.all([
-        import(new URL('search-index-loader.js?v=20260905', searchScriptUrl).href).then(({ loadBrowserSearchIndex }) => loadBrowserSearchIndex(new URL('../search/', searchScriptUrl).href)),
+        import(new URL('search-index-loader.js?v=20260906-progress', searchScriptUrl).href).then(({ loadBrowserSearchIndex }) => loadBrowserSearchIndex(new URL('../search/', searchScriptUrl).href)),
         fetch(dataUrl("search-dictionary.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('dictionary'); return response.json(); }),
         fetch(dataUrl("search-associations.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('associations'); return response.json(); }),
         fetch(dataUrl("search-curated-entrypoints.json"), { cache: "no-cache" }).then((response) => { if (!response.ok) throw new Error('entrypoints'); return response.json(); }),
