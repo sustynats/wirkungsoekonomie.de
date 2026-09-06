@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-06T14:21:20.533Z",
+  "public_updated_at": "2026-09-06T15:39:17.299Z",
   "updated_at": "2026-09-06T15:33:52.069Z",
   "stories": [
     {
@@ -3848,7 +3848,36 @@
         "issue_codes": [],
         "warning_codes": []
       },
-      "followups": [],
+      "followups": [
+        {
+          "claim": "Ob die US-Vermittler tatsächlich am Sonntag in Kiew eintreffen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder Bestätigungen zum tatsächlichen Eintreffen in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-cd96130eabd68579",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-13T05:29:46.602Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-06T05:29:46.602Z",
+          "last_check_result": "no_verified_material_update",
+          "origin_story_id": "wt-d7a0af1afc831caf"
+        },
+        {
+          "claim": "Die angekündigte Reise nach Kiew findet am Sonntag tatsächlich statt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder offizielle Bestätigungen zur Ankunft der beiden Gesandten in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-251b04897a03035a",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-13T05:29:46.602Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-06T05:29:46.602Z",
+          "last_check_result": "no_verified_material_update",
+          "origin_story_id": "wt-d7a0af1afc831caf"
+        }
+      ],
       "content_hash": "f2555281f53c4ec1d712e566528c5f63acd1cfe7eb2812b659ab54ea769163f5",
       "published": true,
       "listed": true,
@@ -4231,7 +4260,570 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-06T15:39:17.299Z",
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+            "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T11:05:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "424dbd5070971105161045cf7613a29930ba6acb14a1a3e0fc00ef53032a4b9e",
+            "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T11:05:30.000Z",
+            "ingested_at": "2026-09-06T11:51:43.074Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+            "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T12:56:45.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "b37dc0f2a85bb05f2368e0c3b99aab5c59d5e955280157f3552fef7686d747fd",
+            "source_item_id": "af75b6323e78549a2abcaa2a01049a838569ff8727ae93504700c98cf302b7cb",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T12:56:45.000Z",
+            "ingested_at": "2026-09-06T13:21:40.973Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
+            "summary": "Die US-Unterhändler Witkoff und Kushner werden heute zu einem Treffen mit dem ukrainischen Präsidenten Präsident Selenskyj in Kiew erwartet. Russland hat angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen. Gestern hatten die US-Gesandten in Moskau mit dem russischen Präsidenten Putin gesprochen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T08:45:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "0c62fd1262be41262586474bd1654083562adfb27c12da24e4bb5a9cba174074",
+            "source_item_id": "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T08:45:20.000Z",
+            "ingested_at": "2026-09-06T09:06:22.155Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-in-kiew-eingetroffen-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte in Kiew eingetroffen",
+            "summary": "Die US-Unterhändler Witkoff und Kushner sind zu einem Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew eingetroffen. Dabei sollen neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert werden. Selenskyj erklärte, sein Land wolle den Krieg mit Russland beenden. Dafür seien aber umfassende Sicherheitsgarantien nötig.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T12:30:49.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1f0f4ce79a8fc1bde60fdd5de126c899583beaa99eebdb955fe97b2225545da1",
+            "source_item_id": "bca2c955b228fac40e30e565c9a4d04a0b3cf538db8fb06c8ff0df97364fe1be",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T12:30:49.000Z",
+            "ingested_at": "2026-09-06T12:38:11.963Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/us-gesandte-witkoff-und-kushner-per-zug-in-kiew-eingetroffen-38212840.html",
+            "title": "US-Gesandte Witkoff und Kushner per Zug in Kiew eingetroffen",
+            "summary": "Die US-Gesandten Steve Witkoff und Jared Kushner sind am Sonntag zu Gesprächen über ein Ende des Ukraine-Kriegs in Kiew eingetroffen. Die beiden Gesandten von US-Präsident Donald Trump kamen per Zug aus Polen in der ukrainischen Hauptstadt an, wie ein AFP-Fotograf berichtete. Witkoff und Kushner waren zuvor in Moskau, wo sie mit dem russischen Präsidenten Wladimir Putin gesprochen hatten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:38:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "f683691c38a70bc08ccf8bf96c213907993945466a4eb4f7335f810eb300832b",
+            "source_item_id": "dae71c9c90bd0f60524643e0b031a88431feb09b9589394a12a9ad844c0d0e2f",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:38:33.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "afp",
+            "agency_origin_confidence": "high",
+            "provenance": {
+              "origin": "agency:afp",
+              "basis": "agency_attribution_in_available_text",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-witkoff-und-kushner-erstmals-in-kiew-38212846.html",
+            "title": "Ukraine-Krieg: US-Vermittler Witkoff und Kushner in Kiew eingetroffen",
+            "summary": "Die US-Unterhändler Witkoff und Kushner sind nach mehreren Besuchen in Russland während des Ukraine-Krieges erstmals in die Ukraine gereist. Bringt das die Wende im Krieg?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T12:14:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "86cf5a092bcbde7bd284a74728a811f8a949ee6a349239ad69280633260f0664",
+            "source_item_id": "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T12:14:00.000Z",
+            "ingested_at": "2026-09-06T12:38:11.963Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-vermittlungsversuch-100.html",
+            "title": "US-Gesandte in Kiew eingetroffen: Neuer Anlauf für Friedensgespräche",
+            "summary": "Nach ihrem Treffen mit Kremlchef Putin in Moskau sind die US-Sondergesandten Kushner und Witkoff in Kiew eingetroffen, um mit Präsident Selenskyj zu reden.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:53:40.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "e89cc40be98abdbdafcc725251a3d142820bd439e36db19478d483cf038cb290",
+            "source_item_id": "1ec910d22017fae8cd13bf62dce8d08cda37f6e3e2e1593f731ed6704f167b69",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:53:40.000Z",
+            "ingested_at": "2026-09-06T12:38:11.963Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "ndr-info"
+            },
+            "collection_source_id": "ndr-info",
+            "collection_publisher_id": "ndr"
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:21:16.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
+            "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:21:16.000Z",
+            "ingested_at": "2026-09-04T17:39:54.371Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:22:14.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
+            "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:22:14.000Z",
+            "ingested_at": "2026-09-05T05:21:05.955Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:46:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
+            "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:46:00.000Z",
+            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T20:13:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
+            "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T20:13:08.000Z",
+            "ingested_at": "2026-09-04T20:36:32.644Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:18:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "7a7f9a1bdaea2412f799dd9ad08b8440ee47057859b3cb170b2ca789a4373bcc",
+            "source_item_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:18:53.000Z",
+            "ingested_at": "2026-09-05T11:31:43.777Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/ausland/us-vermittler-putin-moskau-kiew-ukraine-krieg-russland-100.html",
+            "title": "US-Vermittler: Erste Gesprächsrunde \"ermutigend\"",
+            "summary": "Nach einem Treffen mit Kremlchef Putin in Moskau sind die US-Vermittler Kushner und Witkoff weiter in die Ukraine gereist. Dort wurden sie von Präsident Selenskyj empfangen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T15:18:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "b52a8dc65fcc1ad21b558cb629eae2fae63cb2671565b9aed194364b708882f5",
+            "source_item_id": "9ad001726f59c5ef3ff4bc395560f9438257b4d897d29a3ba3b09a9738ec9a58",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T15:18:00.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-102.html",
+            "title": "Witkoff und Kushner erstmals in Kiew erwartet",
+            "summary": "In Moskau hatten sie sich mit Kremlchef Putin getroffen und mit ihm über ein Ende des Ukraine-Kriegs verhandelt. Nun kommen die US-Gesandten Witkoff und Kushner nach Kiew - auf ei…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T03:15:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "8cfaaa864e14c5d17952e1a7016f37f46876ec6f8f3e75ba9ae99e92837e6617",
+            "source_item_id": "a3d74c05d2e65b2bce41a169eeb0ea68452733a4312efa79e87eb5c083eacb9e",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T03:15:04.000Z",
+            "ingested_at": "2026-09-06T05:41:03.427Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/ukraine-krieg--us-unterhaendler-witkoff-und-kushner-erstmals-in-kiew-38212818.html",
+            "title": "Ukraine-Krieg: US-Unterhändler Witkoff und Kushner erstmals in Kiew",
+            "summary": "Im Ringen um ein Ende des Ukraine-Kriegs sind die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen. Das berichteten mehrere Kiewer Medien; die Nachrichtenagentur Unian zeigte ein Video der Ankunft der beiden Männer in der ukrainischen Hauptstadt mit dem Zug. Video der Ankunft (Ukr.)",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:33:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "71203ece550f0c66e9b3ac45f69ca1b14352aac97b24d653b2cc04911216520a",
+            "source_item_id": "1d3e1d8b7ff7feef140430d18a007d3135f9394f54818d974f9cb76ef4a3126e",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:33:04.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-diplomatie-16022706.html",
+            "title": "Diplomatie: US-Vermittler Witkoff und Kushner erstmals in Kiew",
+            "summary": "Mehrfach waren sie für Gespräche in Moskau, nun sind sie erstmals für ihre Vermittlungsbemühungen in Kiew: Bringt der Besuch der US-Unterhändler Witkoff und Kushner ein Ende des Ukraine-Kriegs näher?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:50:59.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "e56731fa8d40c1b88dd3bc21de6847c2d45d2f39d4059c162edc39cc5c3fcacb",
+            "source_item_id": "faa3b6b7c93c425b48481114e869b48653581cfef6f97233431fbc69a74d2457",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:50:59.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "fresh": false,
+        "consolidation": true,
+        "quality_retry_count": 0
+      },
+      "living_file": {
+        "merged_story_ids": [
+          "wt-b1ce25efb18964e4",
+          "wt-d7a0af1afc831caf",
+          "wt-5469869109614acf"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-b1ce25efb18964e4",
+            "slug": "ukraine-krieg-us-gesandte-werden-nach-gesprachen-im-kreml-in-kiew-erwartet-8964e4",
+            "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
+            "reason": "specific_object_or_leading_document"
+          },
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-d7a0af1afc831caf",
+            "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "reason": "specific_object_or_leading_document"
+          },
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-5469869109614acf",
+            "slug": "witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf",
+            "title": "Witkoff und Kushner erstmals in Kiew erwartet",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
+      }
     },
     {
       "story_id": "wt-d1170e1bdc308cbc",
@@ -6923,8 +7515,8 @@
         "generated_at": "2026-09-06T12:40:43.867Z",
         "status": "generated"
       },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 3,
       "source_summary": "Die vorliegenden Meldungen berichten übereinstimmend, dass die US-Gesandten Steve Witkoff und Jared Kushner in Kiew eingetroffen sind und dort mit Präsident Selenskyj zusammenkommen sollen. Mehrere Quellen verweisen zudem darauf, dass die beiden zuvor in Moskau mit Präsident Putin gesprochen hatten. Eine der Meldungen nennt außerdem, dass in Kiew neue US-Vorschläge für ein Ende des Ukraine-Kriegs erörtert werden sollen.\n\nZu den konkreten Inhalten der Gespräche in Moskau werden keine Details genannt. Offen bleibt vor allem, was in Kiew tatsächlich vereinbart oder nur ausgelotet wird und ob daraus kurzfristig belastbare nächste Schritte folgen.",
@@ -7842,7 +8434,23 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-06837a611e9459ce"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-06837a611e9459ce",
+            "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-9e3a2e21408b5561",
@@ -12916,8 +13524,8 @@
         "generated_at": "2026-09-06T11:24:19.479Z",
         "status": "generated"
       },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 3,
       "source_summary": "Mehrere der gelieferten Beiträge berichten über die Reise der US-Vermittler Steve Witkoff und Jared Kushner im Zusammenhang mit Gesprächen über ein mögliches Ende des Ukraine-Kriegs. In den Quellen heißt es, die Gesandten seien nach einem Treffen mit Kremlchef Putin in Moskau weiter in die Ukraine gereist; in Kiew empfange sie Präsident Selenskyj. Zuvor hatte Selenskyj ihren Besuch angekündigt, und US-Präsident Trump bestätigte die Reisepläne und sprach von einem Vorschlag zur Beendigung des Krieges.\n\nDie Quellen nennen keine belastbar belegten Ergebnisse der Gespräche. Mehrfach wird darauf hingewiesen, dass frühere US-Vermittlungsbemühungen bislang keinen Durchbruch gebracht hätten und die Erwartungen an neue Gespräche gering seien.",
@@ -13887,6 +14495,22 @@
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-06837a611e9459ce"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-06837a611e9459ce",
+            "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
       }
     },
     {
@@ -14899,6 +15523,18 @@
           "announced_at": "2026-09-05T18:15:04.000Z",
           "follow_up_date": "2026-09-13T10:53:50.820Z",
           "status": "scheduled"
+        },
+        {
+          "claim": "Ob Kushner und Witkoff nach dem Moskau-Besuch tatsächlich in die Ukraine weiterreisen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Reiseberichte oder bestätigte Termine in Kiew",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e973b3fadf8627bc",
+          "announced_at": "2026-09-05T17:17:47.000Z",
+          "follow_up_date": "2026-09-12T17:52:55.835Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-ba90052729946ae3"
         }
       ],
       "content_hash": "fe73af96d6717ba323684fdf0d2da3f372583b39a365c378383c3a1f1b549155",
@@ -15320,8 +15956,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "fe73af96d6717ba323684fdf0d2da3f372583b39a365c378383c3a1f1b549155",
+        "detected_at": "2026-09-06T15:39:17.299Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -15651,24 +16286,129 @@
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+            "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+            "summary": "In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:17:47.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987",
+            "source_item_id": "3b07aa287e50b1bbf027019a2483375c05efa7365a4acb4f008cee14ce106321",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:17:47.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/us-gesandte-kushner-und-witkoff-zu-gespraechen-ueber-ukraine-krieg-in-moskau-38211250.html",
+            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
+            "summary": "Die US-Gesandten Jared Kushner und Steve Witkoff sind zu Gesprächen über eine Beendigung des Ukraine-Kriegs in der russischen Hauptstadt Moskau eingetroffen. Ihr Flugzeug landete am Samstagmittag auf dem Flughafen Wnukowo, wie die russischen Nachrichtenagenturen Ria Nowosti und Tass meldeten. In der Folge wollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:25:11.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "3df5cd824d6e715dc545dee0a6465e5528a0510cf96dfebd0addca1cce08269c",
+            "source_item_id": "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:25:11.000Z",
+            "ingested_at": "2026-09-05T11:31:43.777Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-sprechen-nach-kiew-besuch-von-substanziellen-gespraechen-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte Witkoff und Kushner sprechen nach Kiew-Besuch von substanziellen Gesprächen",
+            "summary": "Der US-Gesandte Steve Witkoff hat die Gespräche mit der ukrainischen Seite über ein Ende des russischen Angriffskriegs als \"substanziell\" bezeichnet. Der Schwiegersohn von US-Präsident Trump, Kushner, der ebenfalls in der ukrainischen Hauptstadt Kiew war, erklärte, er hoffe, dass die Gespräche neue Wege zu einem Frieden eröffnen würden.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T15:29:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "f3e203da40f80c38ca8904961b19c69007d86e0d9ce95a86a55f698124fd963b",
+            "source_item_id": "e350cc0bf5b02b700a25ab17b92eb7b1eea9620c20352303d8f43e63c122b6a5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T15:29:01.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
         ],
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
         "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T15:33:52.069Z",
-          "fingerprint": "1fc91e9d7e838095b8ac1a35749ca3e650f17e7a2d8f68f24d1752f3a5606811",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        "consolidation": true,
+        "quality_retry_count": 0
+      },
+      "living_file": {
+        "merged_story_ids": [
+          "wt-ba90052729946ae3",
+          "wt-86783bc04f815007"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-ba90052729946ae3",
+            "slug": "gesprache-uber-friedensabkommen-us-sondergesandte-in-moskau-eingetroffen-946ae3",
+            "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+            "reason": "specific_object_or_leading_document"
+          },
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-86783bc04f815007",
+            "slug": "us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007",
+            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
       }
     },
     {
@@ -15876,8 +16616,8 @@
       "followups": [],
       "content_hash": "1752c0fee835bfa81b6aefc1cd04ac3aac0b9bd700f6a5da606f46ce926b628f",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "Mehrere deutschsprachige Medien berichten übereinstimmend, dass die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen sind. Der Stern schreibt, die beiden seien im Ringen um ein Ende des Ukraine-Kriegs angekommen; der Tagesspiegel berichtet ebenfalls von ihrem ersten Besuch in Kiew für Vermittlungsgespräche.\n\nTagesschau ergänzt, dass sich beide zuvor in Moskau mit Kremlchef Putin getroffen hätten. Die Berichte nennen keinen detaillierten Gesprächsverlauf, sondern zunächst nur die Ankunft und den diplomatischen Kontext. Ein unabhängiger Originalbeleg aus Kiew oder von den Beteiligten selbst ist in den gelieferten Quellen nicht enthalten.",
@@ -16360,7 +17100,23 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-06837a611e9459ce"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-06837a611e9459ce",
+            "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-b7e4ce6b5b76b0e3",
@@ -32666,8 +33422,8 @@
       ],
       "content_hash": "e8791ab952453e52d6703e23d1d2dc97b6e9286997a30dbaf166b61a949c4ed3",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "In Moskau haben am Abend kurzfristig angesetzte neue Gespräche zum Ukraine-Krieg begonnen. Nach der Meldung empfing Kremlchef Wladimir Putin die US-Unterhändler Witkoff und Kushner im Kreml; beide werden als Gesandte von US-Präsident Trump beschrieben.\n\nDer Bericht nennt zudem die Aussicht, dass die beiden nach dem Moskau-Besuch weiter in die Ukraine reisen. In Kiew würden dann zwei ranghohe US-Vertreter erwartet. Außerdem wird auf eine dreitägige Pause weiterer Angriffe auf Kiew verwiesen, die Putin angeordnet haben soll; Selenskyj habe eine spiegelbildliche Zurückhaltung bis Montag angeboten, falls Russland daran festhalte.",
@@ -33065,7 +33821,23 @@
           }
         ]
       },
-      "deepening_checks": 3
+      "deepening_checks": 3,
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-78b8df2827ab4527"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-78b8df2827ab4527",
+            "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-6a7145e6dc679f95",
@@ -53991,8 +54763,8 @@
       "followups": [],
       "content_hash": "4e538b6870bba573e71ebe4b674b6ff2dbc2fb46dd5f6b00de8440d532972b4e",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "Die Quelle meldet, dass die US-Gesandten Jared Kushner und Steve Witkoff in Moskau eingetroffen sind. Es geht nach der Darstellung um Gespräche über eine Beendigung des Ukraine-Kriegs.\n\nAls Ankunftsort nennt die Quelle den Flughafen Wnukowo; das Flugzeug sei dort am Samstagmittag gelandet. Im Anschluss, so heißt es weiter, sollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen. Weitere Details zu Inhalt, Teilnehmerkreis oder Ergebnissen der Gespräche nennt die Meldung nicht.",
@@ -54416,6 +55188,22 @@
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-78b8df2827ab4527"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-78b8df2827ab4527",
+            "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
       }
     },
     {
