@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { compactEvidenceSegments, expandEvidenceSegments, serializeEvidencePackets, reviewFingerprint, reviewCheckpoint, canReuseReview, articleSourceOrder } from '../../scripts/news/evidence-packets.mjs';
-import { runWirkungsticker, recoverAmbiguousPublicationDecisions, normalizeEditorialDecision, retryCoolingDown } from '../../scripts/news/run.mjs';
+import { runWirkungsticker, recoverAmbiguousPublicationDecisions, normalizeEditorialDecision, normalizeAnalysisParagraphs, refreshUnpublishedDraftTitle, retryCoolingDown } from '../../scripts/news/run.mjs';
 import { validateAnalysis } from '../../scripts/news/lib.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { evaluateRunHealth } from '../../scripts/news/check-run-health.mjs';
@@ -140,6 +140,28 @@ test('duplicate enum in a rejection is a terminal editorial decision, never a pu
   assert.deepEqual(validateAnalysis(draft, c), ['AI_PUBLICATION_NOT_RECOMMENDED', 'AI_DUPLICATE_WITHOUT_UPDATE']);
   draft.rejection.reason = 'kurz';
   assert.ok(validateAnalysis(draft, c).some(e => e.startsWith('AI_REQUIRED_STRING:')));
+});
+
+test('changed source headline refreshes only an unpublished single-document draft', () => {
+  const c = { ...candidate(), title:'Alter Entdeckungstitel', existing_story:{published:false,sources:[item]} };
+  refreshUnpublishedDraftTitle(c);
+  assert.equal(c.title,item.title);
+  assert.equal(c.previous_draft_title,'Alter Entdeckungstitel');
+  for (const mutate of [c=>c.existing_story.published=true,c=>c.sources.push({...item,url:'https://example.org/b'}),c=>c.existing_story.sources[0]={...item,url:'https://example.org/other'}]) {
+    const other = structuredClone(c); other.title='Unverändert'; mutate(other);
+    refreshUnpublishedDraftTitle(other); assert.equal(other.title,'Unverändert');
+  }
+});
+
+test('paragraph repair changes only whitespace, never pads or shortens factual copy', () => {
+  const text = Array.from({length:8},()=> 'Die Quelle nennt einen belegten Beschluss und hält weitere Einzelheiten ausdrücklich noch offen.').join(' ');
+  const a = { source_summary:text };
+  normalizeAnalysisParagraphs(a);
+  assert.equal(a.source_summary.split(/\n\s*\n/).length,2);
+  assert.equal(a.source_summary.replace(/\s+/g,' '),text);
+  const short = {source_summary:'Der Beschluss ist belegt. Weitere Angaben fehlen.'};
+  normalizeAnalysisParagraphs(short);
+  assert.equal(short.source_summary,'Der Beschluss ist belegt. Weitere Angaben fehlen.');
 });
 
 test('legacy exhausted records retry, but malformed rejection is never published or retired', async()=>{

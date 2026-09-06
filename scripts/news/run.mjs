@@ -226,6 +226,23 @@ function createCandidate(cluster, now, reassessment = false, fresh = false) {
   return candidate;
 }
 
+export function refreshUnpublishedDraftTitle(candidate) {
+  // A never-published, single-document draft follows that document's current
+  // observed title, not the headline seen during its first queue arrival.
+  // Do not relabel published stories or infer a title for a multi-source file.
+  if (candidate.existing_story?.published || !candidate.sources?.length) return candidate;
+  const urls = new Set(candidate.sources.map(source => source.url));
+  const source = candidate.sources[0];
+  const previous = candidate.existing_story;
+  if (urls.size !== 1 || !source.title?.trim() || !previous
+      || !(previous.sources || []).some(old => old.url === source.url)) return candidate;
+  if (candidate.title !== source.title) {
+    candidate.previous_draft_title = candidate.title;
+    candidate.title = source.title;
+  }
+  return candidate;
+}
+
 function pendingRecord(candidate, reason, now, qualityErrors = []) {
   const existing = candidate.existing_story;
   const sameAttempt = existing?.ai_retry?.fingerprint === retryInputFingerprint(candidate)
@@ -395,6 +412,18 @@ export function normalizeEditorialDecision(analysis) {
     analysis.rejection.original_code = analysis.rejection.code;
     analysis.rejection.code = "no_new_information";
   }
+  return analysis;
+}
+
+export function normalizeAnalysisParagraphs(analysis) {
+  const value = analysis?.source_summary;
+  if (typeof value !== 'string' || /\n\s*\n/.test(value)) return analysis;
+  const words = value.trim().split(/\s+/).length;
+  if (words < (analysis.publication_depth === 'initial' ? 60 : 100) || words > 180) return analysis;
+  const sentences = value.trim().split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ„“"])/u);
+  if (sentences.length < 2) return analysis;
+  const middle = Math.ceil(sentences.length / 2);
+  analysis.source_summary = `${sentences.slice(0,middle).join(' ')}\n\n${sentences.slice(middle).join(' ')}`;
   return analysis;
 }
 
@@ -940,6 +969,9 @@ export async function runWirkungsticker(options = {}) {
     const mergedSources = mergeSources(candidate.sources, alternativeItems);
     candidate.sources = reconcileKnownSourceAliases(mergedSources.map(source =>
       reconcileSourceIdentity(source, registry.sources.find(entry => entry.source_id === source.source_id), registry)));
+    refreshUnpublishedDraftTitle(candidate);
+    candidate.preanalysis = preAnalyzeStory(candidate, now);
+    candidate.topic = candidate.preanalysis.topics;
     report.source_aliases_reconciled = Number(report.source_aliases_reconciled || 0) + mergedSources.length - candidate.sources.length;
     candidate.claims = claimLedgerFor(candidate.sources, candidate.story_id, now);
     candidate.evidence_groups = evidenceGroups(candidate.sources);
@@ -1124,6 +1156,7 @@ export async function runWirkungsticker(options = {}) {
         for (const candidate of batch) {
           const analysis = analyses.get(candidate.story_id);
           if (analysis) normalizeEditorialDecision(analysis);
+          if (analysis) normalizeAnalysisParagraphs(analysis);
           const analysisCandidate = analysisBatch.find((item) => item.story_id === candidate.story_id) || candidate;
           if (analysis) sanitizeAnalysisVisuals(analysis, analysisCandidate, report);
           if (analysis) {
