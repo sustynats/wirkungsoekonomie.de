@@ -4011,6 +4011,11 @@
       "beforeSha256": "3040407d73422420133b556d95bd38907c3b5518217f7e9c17c371140f48d61a",
       "afterSha256": "adc3df0dc5582fb77d04cd20f678c1ca40eea9bbfeb85b1c402c64d787d2e8d6",
       "reason": "Kurze Bindestriche in sichtbaren Erläuterungen und centgenaue Eingabe-Schrittweite für Geldbeträge; Rechenfunktionen und PDF-Beispielwerte unverändert."
+    },
+    "docs/audits/parliament-reference-scene-visual-qa-2026-09-06.json": {
+      "beforeSha256": "f47ab63cada474cbd97b83ae24c1178cead329cee4e9d4b39fdc57e6142804af",
+      "afterSha256": "87f6564029ac898cc6a4320862cc3a4da4ba38959bdb3044e485927df88cf3eb",
+      "reason": "Sechs Bereichsstriche in drei Bildbeobachtungen auf kurze Bindestriche vereinheitlicht. Bildbytes, Freigabestatus, Begründungen und sämtliche Quellenbindungen bleiben erhalten."
     }
   },
   "releaseFiles": [
