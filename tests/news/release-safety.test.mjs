@@ -19,7 +19,7 @@ test("Sprachnormalisierung verändert weder ausführbaren Code noch HTML-Skripte
 });
 
 test("Source Integrity besteht nicht bei fehlendem oder unbekanntem Status", () => {
-  const story = { sources: [{ publisher: "A", primary_source: true }, { publisher: "B" }], claims: [{ source_id: "A" }] };
+  const story = { sources: [{ publisher: "A", url: "https://a.example/article", primary_source: true }, { publisher: "B", url: "https://b.example/article" }], claims: [{ source_id: "A" }] };
   for (const status of [undefined, "open", "passed", "failed", "unknown"]) {
     story.source_integrity = { status };
     assert.equal(editorialEvidenceGate(story).passed, false, status);
