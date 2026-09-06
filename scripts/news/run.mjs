@@ -43,7 +43,7 @@ import { regionalCoverage } from "./regional-coverage.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
 const RELEVANCE_BACKFILL_DAYS = 7;
-const AI_PROCESSING_VERSION = "2026-09-06-throughput-2";
+const AI_PROCESSING_VERSION = "2026-09-06-throughput-3";
 const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE"]);
 const CAPACITY_HOLD_REASONS = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
 const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
@@ -303,6 +303,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
   const qualityRetryAfter = retryableOutput ? new Date(Date.parse(now) + retryDelayMinutes * 60000).toISOString() : null;
   const aiRetry = retryableOutput ? {
     version: AI_PROCESSING_VERSION, fingerprint: retryInputFingerprint(candidate),
+    first_failed_at: sameAttempt ? existing.ai_retry.first_failed_at || existing.ai_retry.failed_at || now : now,
     failed_at: now, retry_after: qualityRetryAfter, retry_count: consecutiveRetries,
   } : existing?.ai_retry;
   if (existing?.published) {
@@ -483,6 +484,7 @@ export function analysisValidationDiagnostics(analysis) {
     publication_decision_type: typeof analysis.publication_recommendation,
     publication_decision_value: ['string','boolean','number'].includes(typeof analysis.publication_recommendation)
       ? String(analysis.publication_recommendation).slice(0,60) : null,
+    media_public_explanation_words: String(analysis.media_impact?.public_explanation || '').trim().split(/\s+/).filter(Boolean).length,
     source_summary_words: String(analysis.source_summary || '').trim().split(/\s+/).filter(Boolean).length,
     source_summary_paragraphs: String(analysis.source_summary || '').split(/\n\s*\n/).filter(s=>s.trim()).length,
     missing_claim_numbers: (Array.isArray(analysis.event_claims) ? analysis.event_claims : []).flatMap((claim,index) => {
@@ -720,7 +722,9 @@ export function queueSnapshot(stories = [], now = new Date().toISOString(), befo
     } else if (TECHNICAL_HOLD_REASONS.has(reason) || structuralRetry) {
       snapshot.technical += 1;
       snapshot.retryable += 1;
-      snapshot.oldest_technical_minutes = Math.max(snapshot.oldest_technical_minutes, ageMinutes);
+      const failedAt = Date.parse(story.ai_retry?.first_failed_at || story.ai_retry?.failed_at || '');
+      const technicalAge = Number.isFinite(failedAt) ? Math.max(0, (Date.parse(now) - failedAt) / 60000) : ageMinutes;
+      snapshot.oldest_technical_minutes = Math.max(snapshot.oldest_technical_minutes, technicalAge);
     } else {
       snapshot.editorial += 1;
     }
