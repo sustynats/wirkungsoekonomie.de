@@ -139,8 +139,32 @@ export function initSharing(container, title, url, {compact=false}={}) {
   if(!compact)container.append(el('h2','Andere einladen'));
   container.append(actions,input,status);
 }
+export function renderIndexStatuses(cards, polls) {
+  const labels={active:'Aktiv',scheduled:'Geplant',paused:'Pausiert',ended:'Beendet',archived:'Archiviert'};
+  const current=new Map((polls||[]).map(p=>[p.slug,p]));
+  for(const card of cards){
+    const status=card.querySelector('[data-poll-list-status]');if(!status)continue;
+    const poll=current.get(card.dataset.pollListSlug);
+    status.textContent=polls===null?'Status auf der Umfrageseite prüfen':labels[poll?.effective_status||poll?.status]||'Nicht mehr verfügbar';
+  }
+}
+async function startIndex() {
+  const cards=document.querySelectorAll('[data-poll-list-slug]');if(!cards.length)return;
+  let loading=false;
+  async function refresh(){
+    if(loading)return;loading=true;
+    try{
+      const data=await request('/api/polls');
+      if(data.ok!==true||!Array.isArray(data.polls))throw new Error('Invalid public poll catalog');
+      renderIndexStatuses(cards,data.polls);
+    }catch{renderIndexStatuses(cards,null);}finally{loading=false;}
+  }
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
+  window.addEventListener('pageshow',event=>{if(event.persisted)refresh();});
+  await refresh();
+}
 async function start() {
-  const page=document.querySelector('[data-poll-slug]');if(!page)return;
+  const page=document.querySelector('[data-poll-slug]');if(!page){await startIndex();return;}
   const slug=page.dataset.pollSlug, id=page.dataset.pollId, mount=document.getElementById('poll-ui');
   // Sharing never needs a vote, an anonymous identifier or a working API.
   for(const share of document.querySelectorAll('#poll-share, [data-poll-share]'))initSharing(share,document.title,`https://wirkungsoekonomie.de/umfragen/${slug}/`,{compact:share.dataset.pollShare==='compact'});
