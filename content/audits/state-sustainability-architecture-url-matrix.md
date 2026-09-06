@@ -1,10 +1,10 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4387**
+- Sitemap routes: **4399**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **12204**
+- Extra tracked source HTML not in sitemap: **12211**
 - Routes with non-default #253 action: **3590**
-- Routes with Wirkungsblindheit/novelty/absence claim signals: **250**
+- Routes with Wirkungsblindheit/novelty/absence claim signals: **253**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
 
@@ -3676,14 +3676,17 @@ Signals are review candidates, not automatic errors.
 - `wirkungsfelder/gesundheit-pflege/dossiers/index.html` — evaluation, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` — wirkungsblind, evaluation — No material #253 change identified by path rule; semantic scan still applies.
 - `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/iran-krieg-us-militar-angegriffener-iranischer-oltanker-versenkt-e08f8f/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/index.html` — evaluation, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/inflationsrate-im-august-2026-voraussichtlich-2-9-322ccb/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-us-gesandte-werden-nach-gesprachen-im-kreml-in-kiew-erwartet-8964e4/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/iran-krieg-us-dieselpreis-auf-hochststand-f4a2e8/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `begriffe/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/affektheuristik/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3860,8 +3863,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1145**
-- Combined matrix items (routes + extra HTML + support): **17736**
+- Tracked support text files inventoried: **1148**
+- Combined matrix items (routes + extra HTML + support): **17758**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3947,7 +3950,7 @@ Signals are review candidates, not automatic errors.
 | `content/methodik/data-sources.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/methods/woems-canvas.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, alternativen, evaluation |
 | `content/methods/woems-methoden.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, alternativen, evaluation |
-| `content/news/media-registry.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/news/media-registry.json` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/news/reviews/sachsen-anhalt-kandidatur-2026-09-05.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/podcast/wie-misst-man-etwas-das-man-nicht-sieht.txt` | support_text | CORRECT_OVERCLAIM | novelty_or_absence |
 | `content/podcast/wirkung-ist-nicht-absicht.txt` | support_text | NO_CHANGE_REQUIRED | evaluation |
@@ -3990,48 +3993,63 @@ Signals are review candidates, not automatic errors.
 | `content/studienskripte/multiplikatoren-mv6.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/studienskripte/multiplikatoren-mv7.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json` | support_text | ADD_SOURCE_LINKS | enap, egfa, dns, evaluation |
+| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-01-rechte-regeln-korrekturfaehigkeit.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-02-wirkungsraeume-schutzgueter-vertrauen.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen |
 | `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-04-narrative-deutungsrahmen.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
-| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-05-framing-wiederholung-korrektur.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
-| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-01-grundlage-wirkung-demokratie-referenzen.md` | support_text | ADD_SOURCE_LINKS | dns |
-| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-02-oeffentlichkeit-demokratische-infrastruktur.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-05-framing-wiederholung-korrektur.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-06-emotion-reaktanz-identitaet.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-07-plattformen-desinformation-synthetische-medien.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-08-antworten-grenzen-sicherheit.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-09-gespraeche-unter-konflikt.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-10-zivilcourage-teilhabe.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/angebote/demokratie-buerger/db-v4-11-persoenlicher-resilienz-reality-check-plan.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-01-grundlage-wirkung-demokratie-referenzen.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns, alternativen, evaluation |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-02-oeffentlichkeit-demokratische-infrastruktur.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-03-reichweite-wiederholung-verteilung.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
-| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-06-frames-reframes-optionen.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
-| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-12-redaktionsprotokoll-reality-check.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `content/studienskripte/v4/angebote/grundlagen/g-v4-01-wirkung-statt-nur-aktivitaet.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns, evaluation |
-| `content/studienskripte/v4/angebote/grundlagen/g-v4-02-problem-ziel-wirkpfad.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `content/studienskripte/v4/angebote/grundlagen/g-v4-03-referenzrahmen.md` | support_text | ADD_SOURCE_LINKS | dns |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-04-moderation-live-druck.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-05-kommunikationsmuster-ohne-personenrating.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-06-frames-reframes-optionen.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-07-hart-fragen-verifizieren-verstaerkung.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-08-bild-ton-schnitt-ki-provenienz.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-09-wuerde-minderheitenschutz-grenzen.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-10-quellenklarheit-versionierung-korrektur.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-11-krisenkommunikation-desinformation-hybride-lagen.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/angebote/demokratie-medien/dm-v4-12-redaktionsprotokoll-reality-check.md` | support_text | CORRECT_OVERCLAIM | alternativen, evaluation, novelty_or_absence |
+| `content/studienskripte/v4/angebote/grundlagen/g-v4-01-wirkung-statt-nur-aktivitaet.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/angebote/grundlagen/g-v4-02-problem-ziel-wirkpfad.md` | support_text | CORRECT_OVERCLAIM | alternativen, evaluation, novelty_or_absence |
+| `content/studienskripte/v4/angebote/grundlagen/g-v4-03-referenzrahmen.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/grundlagen/g-v4-04-evidenz-indikatoren-zurechnung.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/grundlagen/g-v4-05-nettowirkung-schutzgrenzen.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
-| `content/studienskripte/v4/angebote/grundlagen/g-v4-06-optionen-steuerung-instrumente.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/studienskripte/v4/angebote/grundlagen/g-v4-06-optionen-steuerung-instrumente.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/grundlagen/g-v4-07-reality-check-grenzen.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
-| `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-01-woek-in-20-sekunden-ohne-strohmann.md` | support_text | CORRECT_OVERCLAIM | folgenabschaetzung, dns, evaluation, novelty_or_absence |
+| `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-01-woek-in-20-sekunden-ohne-strohmann.md` | support_text | CORRECT_OVERCLAIM | folgenabschaetzung, nachhaltigkeitspruefung, dns, evaluation, novelty_or_absence |
 | `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-02-wirkungsvokabular-sicher-erklaeren.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
 | `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-03-vom-problem-zur-entscheidung.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen, evaluation |
-| `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-04-didaktik-20-sekunden-2-minuten-tiefe.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
+| `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-04-didaktik-20-sekunden-2-minuten-tiefe.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-05-ehrliche-wirkungskommunikation.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
 | `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-06-medien-narrative-demokratische-resilienz.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
 | `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-07-rolle-ethik-autorisierung.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
 | `content/studienskripte/v4/angebote/multiplikatoren/mult-v4-08-integrierte-fallarbeit-und-pruefung.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/wirkungscontrolling/01-vom-kpi-zur-wirkungsbeobachtung.md` | support_text | CORRECT_OVERCLAIM | alternativen, evaluation, novelty_or_absence |
-| `content/studienskripte/v4/angebote/wirkungscontrolling/02-datenwelten-und-quellenfunktionen.md` | support_text | ADD_SOURCE_LINKS | enap, egfa, dns, evaluation |
+| `content/studienskripte/v4/angebote/wirkungscontrolling/02-datenwelten-und-quellenfunktionen.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/wirkungscontrolling/03-masterregister-wirkindikatorenregister-provenienz.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/studienskripte/v4/angebote/wirkungscontrolling/04-scorecards-als-wirkungsprofile.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/studienskripte/v4/angebote/wirkungscontrolling/05-nichtkompensation-schutzgrenzen-rmo.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/studienskripte/v4/angebote/wirkungscontrolling/06-monitoring-gegenfaktum-attribution-reality-check.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/v4/angebote/wirkungscontrolling/07-nettowirkung-transformation-investitionseffizienz.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
-| `content/studienskripte/v4/angebote/wirkungscontrolling/08-controlling-in-capex-opex-portfolio-einkauf.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/angebote/wirkungscontrolling/08-controlling-in-capex-opex-portfolio-einkauf.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/wirkungscontrolling/09-audit-assurance-und-gaming-schutz.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
-| `content/studienskripte/v4/angebote/wirkungscontrolling/10-integrierter-abschlussfall-und-lernschleife.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-01-systemkontext.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/angebote/wirkungscontrolling/10-integrierter-abschlussfall-und-lernschleife.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-01-systemkontext.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-02-problem-baseline-empfaenger.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-03-ziele-referenzen.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen |
+| `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-03-ziele-referenzen.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-04-wirkpfade-kausalannahmen.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-05-materialitaet-potenziale-risiken.md` | support_text | CORRECT_OVERCLAIM | evaluation, novelty_or_absence |
 | `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-06-schutzgrenzen-nichtkompensation.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
-| `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-07-optionen-delivery-coherence.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-07-optionen-delivery-coherence.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-08-strategie-entscheidungsarchitektur.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-09-wirkungskommunikation.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-10-reality-check-90-tage.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/angebote/wirkungsmanagement/wm-v4-10-reality-check-90-tage.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v01-die-massstabskrise.md` | support_text | CORRECT_OVERCLAIM | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation, novelty_or_absence |
 | `content/studienskripte/v4/grundstudium/base/v02-wirkung-statt-kapital.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v03-anschluss-und-steuerungsarchitektur.md` | support_text | CORRECT_OVERCLAIM | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
@@ -4040,7 +4058,8 @@ Signals are review candidates, not automatic errors.
 | `content/studienskripte/v4/grundstudium/base/v06-zukunftsfaehigkeit-risiko-resilienz.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v07-mensch-als-wirkungsdimension.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/studienskripte/v4/grundstudium/base/v08-planet-als-wirkungsdimension.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
-| `content/studienskripte/v4/grundstudium/base/v10-wirkung-ist-nicht-absicht.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/grundstudium/base/v09-demokratie-als-wirkungsdimension.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/base/v10-wirkung-ist-nicht-absicht.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v100-praxisprojekt-indikatoren-datenquellen-ids.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v101-praxisprojekt-scorecard-und-optionsvergleich.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/studienskripte/v4/grundstudium/base/v102-praxisprojekt-risiko-resilienz-transformation.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
@@ -4055,13 +4074,14 @@ Signals are review candidates, not automatic errors.
 | `content/studienskripte/v4/grundstudium/base/v14-goal-review.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen |
 | `content/studienskripte/v4/grundstudium/base/v15-wirkpfad-evidenz-attribution.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v16-maerkte-produkte-lieferketten-wirkungsraeume.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
-| `content/studienskripte/v4/grundstudium/base/v17-medien-sprache-oeffentlichkeit-wirkungsraeume.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
-| `content/studienskripte/v4/grundstudium/base/v18-zeit-generationen-unsichtbare-betroffene.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/grundstudium/base/v17-medien-sprache-oeffentlichkeit-wirkungsraeume.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/base/v18-zeit-generationen-unsichtbare-betroffene.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v19-wirkstoff-analogie-mechanismus-potenzial.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/studienskripte/v4/grundstudium/base/v20-gesellschaftliche-resonanzfaktoren.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `content/studienskripte/v4/grundstudium/base/v21-produkte-technologien-institutionen-als-ausloeser.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
-| `content/studienskripte/v4/grundstudium/base/v22-wirkungssprache-und-quellenklarheit.md` | support_text | CORRECT_OVERCLAIM | enap, dns, evaluation, novelty_or_absence |
+| `content/studienskripte/v4/grundstudium/base/v21-produkte-technologien-institutionen-als-ausloeser.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/base/v22-wirkungssprache-und-quellenklarheit.md` | support_text | CORRECT_OVERCLAIM | nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
 | `content/studienskripte/v4/grundstudium/base/v23-unsicherheit-ambivalenz-transparente-bewertung.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
+| `content/studienskripte/v4/grundstudium/base/v24-deeskalierende-demokratiestaerkende-kommunikation.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v25-agenda2030-und-sdgs.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen |
 | `content/studienskripte/v4/grundstudium/base/v27-referenzebenen-recht-schutzgrenzen.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen |
 | `content/studienskripte/v4/grundstudium/base/v28-datenwelten-reporting-staat-indikatoren.md` | support_text | ADD_SOURCE_LINKS | enap, dns, alternativen, evaluation |
@@ -4078,14 +4098,14 @@ Signals are review candidates, not automatic errors.
 | `content/studienskripte/v4/grundstudium/base/v40-wirkungssteuergesetz-als-policy-modell.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v41-wirkungssteuer-rate-design.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/studienskripte/v4/grundstudium/base/v42-lieferketten-importwirkung-und-grenzausgleich.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung |
-| `content/studienskripte/v4/grundstudium/base/v43-oeffentliche-haushalte-wirkungsorientiert-lesen.md` | support_text | NO_CHANGE_REQUIRED | wirkungsblind, alternativen, evaluation |
-| `content/studienskripte/v4/grundstudium/base/v44-oeffentliche-beschaffung-transformationshebel.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `content/studienskripte/v4/grundstudium/base/v45-wirkungsberichte-evaluation-reality-check.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns, evaluation |
+| `content/studienskripte/v4/grundstudium/base/v43-oeffentliche-haushalte-wirkungsorientiert-lesen.md` | support_text | ADD_SOURCE_LINKS | wirkungsblind, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/base/v44-oeffentliche-beschaffung-transformationshebel.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/base/v45-wirkungsberichte-evaluation-reality-check.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v47-t-sroi-investitionscontrolling.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/studienskripte/v4/grundstudium/base/v49-wirkungswohlstand.md` | support_text | CORRECT_OVERCLAIM | dns, novelty_or_absence |
 | `content/studienskripte/v4/grundstudium/base/v52-wirkungseinkommen-policy-modell.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/studienskripte/v4/grundstudium/base/v53-wirkungsrente-generationengerechte-sicherung.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
-| `content/studienskripte/v4/grundstudium/base/v55-wirkungsfinanzpolitik-policy-architektur.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/base/v55-wirkungsfinanzpolitik-policy-architektur.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v57-wirkungsindikatoren-volkswirtschaften.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v58-wachstum-suffizienz-wohlstand.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/studienskripte/v4/grundstudium/base/v59-verteilungsgerechtigkeit-soziale-tragfaehigkeit.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
@@ -4120,20 +4140,20 @@ Signals are review candidates, not automatic errors.
 | `content/studienskripte/v4/grundstudium/base/v94-lange-wellen-kondratieff-hypothese.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/studienskripte/v4/grundstudium/base/v95-piloten-sandboxes-lernregulierung.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/studienskripte/v4/grundstudium/base/v96-wirkungsarchitektur-entwerfen.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen, evaluation |
-| `content/studienskripte/v4/grundstudium/base/v97-praxisprojekt-wirkungsfeld-und-gegenstand.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns, evaluation |
-| `content/studienskripte/v4/grundstudium/base/v98-praxisprojekt-problem-review-baseline.md` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/studienskripte/v4/grundstudium/base/v97-praxisprojekt-wirkungsfeld-und-gegenstand.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/base/v98-praxisprojekt-problem-review-baseline.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/base/v99-praxisprojekt-wirkungsfrage-wirkpfad.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns, alternativen |
-| `content/studienskripte/v4/grundstudium/gov-01-von-brundtland-zu-rio.md` | support_text | NO_CHANGE_REQUIRED | evaluation |
-| `content/studienskripte/v4/grundstudium/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen, evaluation |
-| `content/studienskripte/v4/grundstudium/gov-03-agenda2030-zur-dns-2025.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
-| `content/studienskripte/v4/grundstudium/gov-04-dns-als-managementsystem.md` | support_text | ADD_SOURCE_LINKS | dns, evaluation |
-| `content/studienskripte/v4/grundstudium/gov-05-institutionen-und-verantwortlichkeiten.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
-| `content/studienskripte/v4/grundstudium/gov-06-dns-indikatoren-und-monitoring.md` | support_text | ADD_SOURCE_LINKS | dns, alternativen, evaluation |
-| `content/studienskripte/v4/grundstudium/gov-07-ggo-gesetzesfolgen.md` | support_text | CORRECT_OVERCLAIM | folgenabschaetzung, nachhaltigkeitspruefung, enap, alternativen, evaluation, novelty_or_absence |
+| `content/studienskripte/v4/grundstudium/gov-01-von-brundtland-zu-rio.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/gov-03-agenda2030-zur-dns-2025.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/gov-04-dns-als-managementsystem.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/gov-05-institutionen-und-verantwortlichkeiten.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/gov-06-dns-indikatoren-und-monitoring.md` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/gov-07-ggo-gesetzesfolgen.md` | support_text | CORRECT_OVERCLAIM | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
 | `content/studienskripte/v4/grundstudium/gov-08-nachhaltigkeitspruefung-und-enap.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| `content/studienskripte/v4/grundstudium/gov-09-egfa-und-e-gesetzgebung.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, alternativen, evaluation |
-| `content/studienskripte/v4/grundstudium/gov-10-parlamentarische-nachhaltigkeitspruefung.md` | support_text | CORRECT_OVERCLAIM | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation, novelty_or_absence |
-| `content/studienskripte/v4/grundstudium/gov-11-aktionsplan-nachhaltigkeit-2026.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
+| `content/studienskripte/v4/grundstudium/gov-09-egfa-und-e-gesetzgebung.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/studienskripte/v4/grundstudium/gov-10-parlamentarische-nachhaltigkeitspruefung.md` | support_text | CORRECT_OVERCLAIM | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
+| `content/studienskripte/v4/grundstudium/gov-11-aktionsplan-nachhaltigkeit-2026.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/v4/grundstudium/gov-12-enap-woek-benchmarklabor.md` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/studienskripte/wirkungscontrolling-wc-v1.md` | support_text | CORRECT_OVERCLAIM | evaluation, novelty_or_absence |
 | `content/studienskripte/wirkungscontrolling-wc-v10.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
@@ -4278,7 +4298,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/natalie/build-natalie-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/backfill-source-summaries.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | novelty_or_absence |
 | `scripts/news/build.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `scripts/news/editorial-analysis.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns |
+| `scripts/news/editorial-analysis.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap, dns |
 | `scripts/news/lib.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns, evaluation |
 | `scripts/news/media-impact.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/newsroom.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
@@ -4350,7 +4370,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/wirkungsradar/import-corona-debattenkarte.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/wirkungswissenschaften/build-wirkungswissenschaften-hub.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `scripts/wirkungswissenschaften/build-wiwi-publications.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `sitemap.xml` | sitemap | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns, alternativen, evaluation |
+| `sitemap.xml` | sitemap | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns, alternativen, evaluation, novelty_or_absence |
 | `tools/apply_state_sustainability_architecture.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `tools/apply_state_sustainability_precision.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `tools/apply_state_sustainability_public_precision.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
@@ -4382,7 +4402,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17737**
+- Combined reviewed items: **17759**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
