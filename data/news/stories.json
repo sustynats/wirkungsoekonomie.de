@@ -1,14 +1,359 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-06T15:39:17.299Z",
-  "updated_at": "2026-09-06T16:06:19.365Z",
+  "updated_at": "2026-09-06T16:21:31.903Z",
   "stories": [
+    {
+      "story_id": "wt-70af3712c46a0bde",
+      "slug": "siegmund-haben-in-diesem-land-geschichte-geschrieben-6a0bde",
+      "title": "Siegmund: \"Haben in diesem Land Geschichte geschrieben\"",
+      "first_seen": "2026-09-06T16:16:31.000Z",
+      "last_updated": "2026-09-06T16:16:31.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/video-1643776.html",
+          "title": "Siegmund: \"Haben in diesem Land Geschichte geschrieben\"",
+          "summary": "Die AfD jubelt über ihr vorläufiges Wahlergebnis. Spitzenkandidat Ulrich Siegmund spricht von einer grundlegenden Wende im Land.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T16:16:31.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "0c476994005d6e18698c11244f14039ab7a990b58227dfcc8e1f5ad750e403eb",
+          "source_item_id": "a48668cc3981fbf162eb32752978d5673402fc609e51c07f4e7dc3b70c07adea",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T16:16:31.000Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-70af3712c46a0bde-claim-01",
+          "story_id": "wt-70af3712c46a0bde",
+          "claim": "Siegmund: \"Haben in diesem Land Geschichte geschrieben\": Die AfD jubelt über ihr vorläufiges Wahlergebnis. Spitzenkandidat Ulrich Siegmund spricht von einer grundlegenden Wende im Land.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T16:21:31.903Z"
+        }
+      ],
+      "content_hash": "096b205b3ce37b9178d1e9731397fc74f4912e564afe6cfb68a74629fe270af8",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T16:36:31.903Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T16:21:31.903Z",
+      "event_first_seen_at": "2026-09-06T16:21:31.903Z",
+      "event_detected_at": "2026-09-06T16:21:31.903Z",
+      "event_id": "event-6fd36f797b76ae73ab6d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/video-1643776.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.01505,
+        "detection_delay_minutes": 5.01505,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T16:21:31.903Z",
+        "fingerprint": "ea9cb56d580fc334658b322769748648dd8bebcd5a543ade79a9862f1777fadb",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T16:21:31.903Z",
+      "rejection": {
+        "at": "2026-09-06T16:21:31.903Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-cb1ef4e11861f849",
+      "slug": "wahl-sachsen-anhalt-im-liveticker-warten-auf-prognose-hochrechnung-und-ergebnisse-61f849",
+      "title": "Wahl Sachsen-Anhalt im Liveticker: Warten auf Prognose, Hochrechnung und Ergebnisse",
+      "first_seen": "2026-09-06T15:32:05.000Z",
+      "last_updated": "2026-09-06T16:15:31.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-128,wahl-560.html",
+          "title": "Wahl Sachsen-Anhalt im Liveticker: Warten auf Prognose, Hochrechnung und Ergebnisse",
+          "summary": "Noch bis 18 Uhr läuft die Wahl in Sachsen-Anhalt. Im Liveticker berichten wir über den Wahltag, Prognose, Ergebnisse und Reaktionen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T15:32:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "71c5614adeb9537660b2b02b11f3b301547373278c83768f89b7c8dd9165b18f",
+          "source_item_id": "bc476e7b67dedc24f2d695d07f96e95e54fe651eba6c2e0c2512ea745a7ad7e9",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T15:32:05.000Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-130,wahl-560.html",
+          "title": "Wahl Sachsen-Anhalt im Liveticker: AfD bei 44,5 Prozent – erste Hochrechnung folgt",
+          "summary": "Die Wahllokale in Sachsen-Anhalt haben geschlossen. Im Liveticker berichten wir über die erste Prognose, Hochrechnung, Ergebnisse und Reaktionen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T16:15:31.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "06b3312d88d619b982269049e623fcb7072202074577b80a1a342cd284272cf1",
+          "source_item_id": "21904b0eaa17b21ea72fb89eea3bfdac0628cb7ae033d3161bcf52e54c154ebb",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T16:15:31.000Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-cb1ef4e11861f849-claim-01",
+          "story_id": "wt-cb1ef4e11861f849",
+          "claim": "Wahl Sachsen-Anhalt im Liveticker: Warten auf Prognose, Hochrechnung und Ergebnisse: Noch bis 18 Uhr läuft die Wahl in Sachsen-Anhalt. Im Liveticker berichten wir über den Wahltag, Prognose, Ergebnisse und Reaktionen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T16:21:31.903Z"
+        },
+        {
+          "claim_id": "wt-cb1ef4e11861f849-claim-02",
+          "story_id": "wt-cb1ef4e11861f849",
+          "claim": "Wahl Sachsen-Anhalt im Liveticker: AfD bei 44,5 Prozent – erste Hochrechnung folgt: Die Wahllokale in Sachsen-Anhalt haben geschlossen. Im Liveticker berichten wir über die erste Prognose, Hochrechnung, Ergebnisse und Reaktionen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T16:21:31.903Z"
+        }
+      ],
+      "content_hash": "4911f535a9646c6aaa6ceee4b2d4d06a27e6d4f59a1908d8dab1e318d3892ffe",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T16:21:31.903Z",
+      "event_first_seen_at": "2026-09-06T15:33:52.069Z",
+      "event_detected_at": "2026-09-06T15:33:52.069Z",
+      "event_id": "event-0a8e28dc904ae1fd6c86",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-130,wahl-560.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.01505,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 47.6639,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T16:21:31.903Z",
+        "fingerprint": "6ca8e40127539190c573232888679758bb9c9ea8279ba9458b2a45503eb4dfcf",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-5072789df611867b",
       "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
       "title": "Sachsen-Anhalt und die Tücken der Umfragen",
       "first_seen": "2026-09-04T06:45:02.000Z",
-      "last_updated": "2026-09-06T16:02:01.000Z",
+      "last_updated": "2026-09-06T16:15:03.000Z",
       "topic": [
         "Demokratie",
         "Wirtschaft",
@@ -538,7 +883,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T15:41:00.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -604,7 +949,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T18:32:23.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -637,7 +982,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:57:00.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -670,7 +1015,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:36:00.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -703,7 +1048,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T13:35:00.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -717,13 +1062,13 @@
           "publisher": "taz",
           "url": "https://taz.de/Landtagswahl-live-Wie-braun-wird-Sachsen-Anhalt/!6210219",
           "title": "Wahl in Sachsen-Anhalt: Erste Prognosen: AfD holt mindestens 44 Prozent",
-          "summary": "Rechtsextreme gewinnen Wahl in Sachsen-Anhalt haushoch. CDU weit abgeschlagen. Linke mit schwachem Ergebnis. SPD und Grüne schaffen es in den Landtag. BSW wackelt, FDP draußen. mehr...",
+          "summary": "Rechtsextreme gewinnen Wahl in Sachsen-Anhalt haushoch. CDU weit abgeschlagen. Linke, SPD und Grüne schaffen es in den Landtag. Das BSW könnte Königsmacherin werden. mehr...",
           "source_type": "media_rss",
           "published_at": "2026-09-06T06:14:00.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Gesellschaft",
-          "content_hash": "0cff8b61bd6f8e813c9bdaa901d6ac73e6a191a284be92ec9dccd95f916762bf",
+          "content_hash": "fdb29ed8a3be8635f65616ada913b0a5f8e430abcdb83aeb981bb05de5a0695c",
           "source_item_id": "fa6c1227bc62f221d9b090337bed0f42c594866c250bbbadd2b963413fb900df",
           "publisher_id": "taz",
           "publisher_kind": "journalism",
@@ -736,7 +1081,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:14:00.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -749,14 +1094,14 @@
           "source_id": "tagesschau-access",
           "publisher": "tagesschau / ARD",
           "url": "https://www.tagesschau.de/newsticker/liveblog-landtagswahl-sachsen-anhalt-100.html",
-          "title": "++ Bereits höhere Wahlbeteiligung als vor fünf Jahren ++",
-          "summary": "Bereits um 16 Uhr haben mehr Menschen in Sachsen-Anhalt ihre Stimmen abgegeben als bei der vergangenen Landtagswahl. Die Wahlbeteiligung lag bis zu diesem Zeitpunkt bei 65,3 Proze…",
+          "title": "++ BSW muss laut ARD-Prognose um Einzug bangen ++",
+          "summary": "Es könnte eng werden für das BSW. Die Partei von Sahra Wagenknecht liegt laut ARD-Prognose bei 5,0 Prozent. Für Linke, SPD und Grüne wird es wahrscheinlich zum Einzug in den Landt…",
           "source_type": "media_rss",
-          "published_at": "2026-09-06T16:00:04.000Z",
+          "published_at": "2026-09-06T16:15:03.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "60cf15a6951e56b673ac568505dcf97d4a8a1c435fb17f794b22eff28d450515",
+          "content_hash": "b161651444f012c9526fc9ff7ea15e3b25c4b978ca59e00e460dc4e654a8b334",
           "source_item_id": "776cc3745c8f775fdb9aede20712df3e986cdece71d29d4af6e217db1a5e512e",
           "publisher_id": "tagesschau",
           "publisher_kind": "public_broadcasting",
@@ -768,8 +1113,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-06T16:00:04.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "source_published_at": "2026-09-06T16:15:03.000Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -852,13 +1197,13 @@
           "publisher": "tagesschau / ARD",
           "url": "https://www.tagesschau.de/",
           "title": "Wahl in Sachsen-Anhalt: AfD mit großem Abstand vor CDU",
-          "summary": "Laut ARD-Prognose um 18 Uhr kommt die AfD auf 44,5 Prozent, die CDU liegt bei 18,5 Prozent. Alle Ergebnisse finden Sie bei tagesschau.de.",
+          "summary": "Die AfD jubelt: Laut ARD-Prognose um 18 Uhr kommt die Partei auf 44,5 Prozent, die CDU liegt bei 18,5 Prozent. Alle Ergebnisse finden Sie bei tagesschau.de.",
           "source_type": "media_rss",
           "published_at": "2026-09-06T07:50:34.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "a16143f8052afea44bf68dc8b1336f55c6b8f34bb2752f4d430091b66f6bfa62",
+          "content_hash": "9abd8348a470940dd687b7000f2e92d1d8d2b75c981fb2ad3840a6a87150658e",
           "source_item_id": "b0b622887918d5c95fc242ab821b190d1fa06731049154d7026f5d18ddeb0e28",
           "publisher_id": "tagesschau",
           "publisher_kind": "public_broadcasting",
@@ -871,7 +1216,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T07:50:34.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -882,6 +1227,105 @@
           },
           "collection_source_id": "ndr-info",
           "collection_publisher_id": "ndr"
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/wahl-sachsen-anhalt-liveticker--afd-weit-vor-cdu---absolute-mehrheit-unklar-38185592.html",
+          "title": "Landtagswahl im Liveticker: AfD in Sachsen-Anhalt weit vor CDU – absolute Mehrheit unklar",
+          "summary": "Sachsen-Anhalt hat gewählt – mit hoher Beteiligung. Die AfD und ihr Spitzenkandidat Ulrich Siegmund verzeichnen einen deutlichen Sieg. Das Wichtigste im stern-Liveblog.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T16:10:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "bed9705c92a00b43420519fe7732920ccd8393d5696bbe8f08dd6e5a2088c906",
+          "source_item_id": "f8f77ecc5d32129042af1c87a1215cf783e674c552c78f7e3b179f8c081a9cf9",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T16:10:00.000Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/erste-prognose-zur-wahl-in-sachsen-anhalt-16023968.html",
+          "title": "Erste Prognose zur Wahl in Sachsen-Anhalt: AfD holt 44 Prozent, CDU halbiert",
+          "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt. Jetzt sind die ersten Prognosen da. Die AfD hat die Wahl mit großem Vorsprung gewonnen. Die CDU wurde deutlich abgestraft.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T16:00:19.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6d7f99842ba28d816e3f7b7656f59d7e50e03db4ac38cbccca35df5f42f49403",
+          "source_item_id": "009daf138ba55fc147644f178943b62c64a1936ee7ed8c86240ee138a7f9acb7",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T16:00:19.000Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16021843.html",
+          "title": "Landtagswahl: AfD bei Wahl in Sachsen-Anhalt klar vor CDU",
+          "summary": "Die AfD distanziert die CDU. Die SPD bleibt stabil, die Linke büßt Stimmen ein. Die Grünen schaffen es in den Landtag, das BSW kann hoffen. Die FDP fliegt raus. Die Regierungsbildung wird schwierig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T02:32:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3504878af1f5c520029f928d9dff603c6af914a53a16590405facbf10de7e2c5",
+          "source_item_id": "77f15d60bd47bf3284082d5ce72892d6c2a3a787d2ec80a63514d47c6e3e1601",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T02:32:15.000Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
         }
       ],
       "claims": [
@@ -903,7 +1347,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -923,7 +1367,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -943,7 +1387,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -963,7 +1407,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -983,7 +1427,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -1003,7 +1447,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -1023,7 +1467,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -1043,7 +1487,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -1063,7 +1507,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -1083,7 +1527,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -1103,7 +1547,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -1123,7 +1567,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -1143,7 +1587,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -1163,7 +1607,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -1183,7 +1627,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -1203,7 +1647,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -1223,7 +1667,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -1243,7 +1687,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -1263,7 +1707,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -1283,7 +1727,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -1303,7 +1747,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-22",
@@ -1323,12 +1767,12 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-23",
           "story_id": "wt-5072789df611867b",
-          "claim": "Wahl in Sachsen-Anhalt: Erste Prognosen: AfD holt mindestens 44 Prozent: Rechtsextreme gewinnen Wahl in Sachsen-Anhalt haushoch. CDU weit abgeschlagen. Linke mit schwachem Ergebnis. SPD und Grüne schaffen es in den Landtag. BSW wackelt, FDP draußen. mehr...",
+          "claim": "Wahl in Sachsen-Anhalt: Erste Prognosen: AfD holt mindestens 44 Prozent: Rechtsextreme gewinnen Wahl in Sachsen-Anhalt haushoch. CDU weit abgeschlagen. Linke, SPD und Grüne schaffen es in den Landtag. Das BSW könnte Königsmacherin werden. mehr...",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "taz-aktuell",
           "source_function": "journalistic_report",
@@ -1343,12 +1787,12 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-24",
           "story_id": "wt-5072789df611867b",
-          "claim": "++ Bereits höhere Wahlbeteiligung als vor fünf Jahren ++: Bereits um 16 Uhr haben mehr Menschen in Sachsen-Anhalt ihre Stimmen abgegeben als bei der vergangenen Landtagswahl. Die Wahlbeteiligung lag bis zu diesem Zeitpunkt bei 65,3 Proze…",
+          "claim": "++ BSW muss laut ARD-Prognose um Einzug bangen ++: Es könnte eng werden für das BSW. Die Partei von Sahra Wagenknecht liegt laut ARD-Prognose bei 5,0 Prozent. Für Linke, SPD und Grüne wird es wahrscheinlich zum Einzug in den Landt…",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesschau-access",
           "source_function": "journalistic_report",
@@ -1364,7 +1808,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-25",
@@ -1384,7 +1828,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-26",
@@ -1404,12 +1848,12 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-27",
           "story_id": "wt-5072789df611867b",
-          "claim": "Wahl in Sachsen-Anhalt: AfD mit großem Abstand vor CDU: Laut ARD-Prognose um 18 Uhr kommt die AfD auf 44,5 Prozent, die CDU liegt bei 18,5 Prozent. Alle Ergebnisse finden Sie bei tagesschau.de.",
+          "claim": "Wahl in Sachsen-Anhalt: AfD mit großem Abstand vor CDU: Die AfD jubelt: Laut ARD-Prognose um 18 Uhr kommt die Partei auf 44,5 Prozent, die CDU liegt bei 18,5 Prozent. Alle Ergebnisse finden Sie bei tagesschau.de.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesschau-access",
           "source_function": "journalistic_report",
@@ -1425,10 +1869,70 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-28",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Landtagswahl im Liveticker: AfD in Sachsen-Anhalt weit vor CDU – absolute Mehrheit unklar: Sachsen-Anhalt hat gewählt – mit hoher Beteiligung. Die AfD und ihr Spitzenkandidat Ulrich Siegmund verzeichnen einen deutlichen Sieg. Das Wichtigste im stern-Liveblog.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T16:21:31.903Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-29",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Erste Prognose zur Wahl in Sachsen-Anhalt: AfD holt 44 Prozent, CDU halbiert: Sachsen-Anhalt hat einen neuen Landtag gewählt. Jetzt sind die ersten Prognosen da. Die AfD hat die Wahl mit großem Vorsprung gewonnen. Die CDU wurde deutlich abgestraft.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T16:21:31.903Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-30",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Landtagswahl: AfD bei Wahl in Sachsen-Anhalt klar vor CDU: Die AfD distanziert die CDU. Die SPD bleibt stabil, die Linke büßt Stimmen ein. Die Grünen schaffen es in den Landtag, das BSW kann hoffen. Die FDP fliegt raus. Die Regierungsbildung wird schwierig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
-      "content_hash": "556554436fabd295352d32bf03c124d994f2324eb51a356a40aeb54dfead8bd1",
+      "content_hash": "fb9ffd72f545ba6730af26f70ed4f12dc91fd0e4d8b40ec60d77b20ad8f8c55a",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
@@ -1441,7 +1945,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -1484,21 +1988,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1.32275,
+        "source_age_minutes": 6.481716666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3434.603433333333,
+        "queue_age_minutes": 3449.8124,
         "target_publication_minutes": 120,
-        "news_freshness_score": 100,
+        "news_freshness_score": 99,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
-        "fingerprint": "c9691439229512ebfd461cee5055a9217215933943ce2e9c362fee1c22eea1e4",
+        "checked_at": "2026-09-06T16:21:31.903Z",
+        "fingerprint": "69c75627280f7521c7925a2b46911c00d85b562bac759086febe57252c55ff57",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
         ],
@@ -1506,77 +2010,46 @@
       }
     },
     {
-      "story_id": "wt-cb1ef4e11861f849",
-      "slug": "wahl-sachsen-anhalt-im-liveticker-warten-auf-prognose-hochrechnung-und-ergebnisse-61f849",
-      "title": "Wahl Sachsen-Anhalt im Liveticker: Warten auf Prognose, Hochrechnung und Ergebnisse",
-      "first_seen": "2026-09-06T15:32:05.000Z",
-      "last_updated": "2026-09-06T16:00:00.000Z",
+      "story_id": "wt-38da82063049519f",
+      "slug": "iran-der-krieg-und-die-sanktionen-366-quadratmeter-funf-schlafzimmer-ein-dubioser-bankie-49519f",
+      "title": "Iran, der Krieg und die Sanktionen: 366 Quadratmeter, fünf Schlafzimmer, ein dubioser Bankier",
+      "first_seen": "2026-09-06T16:06:00.000Z",
+      "last_updated": "2026-09-06T16:06:00.000Z",
       "topic": [
-        "Demokratie"
+        "Europa",
+        "Geopolitik",
+        "Finanzen"
       ],
       "sources": [
         {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-128,wahl-560.html",
-          "title": "Wahl Sachsen-Anhalt im Liveticker: Warten auf Prognose, Hochrechnung und Ergebnisse",
-          "summary": "Noch bis 18 Uhr läuft die Wahl in Sachsen-Anhalt. Im Liveticker berichten wir über den Wahltag, Prognose, Ergebnisse und Reaktionen.",
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Iran-der-Krieg-und-die-Sanktionen/!6210685",
+          "title": "Iran, der Krieg und die Sanktionen: 366 Quadratmeter, fünf Schlafzimmer, ein dubioser Bankier",
+          "summary": "Immobilien im dreistelligen Millionenbereich soll Irans oberster Führer Chamenei über einen Strohmann in Europa besitzen. Nun werden zwei Apartments verkauft. mehr...",
           "source_type": "media_rss",
-          "published_at": "2026-09-06T15:32:05.000Z",
+          "published_at": "2026-09-06T16:06:00.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Gesellschaft",
-          "content_hash": "71c5614adeb9537660b2b02b11f3b301547373278c83768f89b7c8dd9165b18f",
-          "source_item_id": "bc476e7b67dedc24f2d695d07f96e95e54fe651eba6c2e0c2512ea745a7ad7e9",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
+          "content_hash": "0a9786fc7704d3927b6557cfc5ec568f666dcad6fc8bac502087cb6173e3538e",
+          "source_item_id": "303d7e7e7e62d3e32a7e803ccdb76af45efc69f3f642397d1f8504330243a7de",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
           "source_role": "journalistic_report",
           "language": "de",
           "geography": [
             "DE",
-            "Mitteldeutschland"
+            "international"
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-06T15:32:05.000Z",
-          "ingested_at": "2026-09-06T15:33:52.069Z",
+          "source_published_at": "2026-09-06T16:06:00.000Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-130,wahl-560.html",
-          "title": "Wahl Sachsen-Anhalt im Liveticker: Erste Prognose, Hochrechnung für Ergebnisse folgt",
-          "summary": "Die Wahllokale in Sachsen-Anhalt haben geschlossen. Im Liveticker berichten wir über die erste Prognose, Hochrechnung, Ergebnisse und Reaktionen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T16:00:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "89e2d900e4afe47aa052536da140223c40a4392c74e9c5776c6faa3d20441b5b",
-          "source_item_id": "21904b0eaa17b21ea72fb89eea3bfdac0628cb7ae033d3161bcf52e54c154ebb",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T16:00:00.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
+            "origin": "publisher:taz",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
@@ -1584,15 +2057,15 @@
       ],
       "claims": [
         {
-          "claim_id": "wt-cb1ef4e11861f849-claim-01",
-          "story_id": "wt-cb1ef4e11861f849",
-          "claim": "Wahl Sachsen-Anhalt im Liveticker: Warten auf Prognose, Hochrechnung und Ergebnisse: Noch bis 18 Uhr läuft die Wahl in Sachsen-Anhalt. Im Liveticker berichten wir über den Wahltag, Prognose, Ergebnisse und Reaktionen.",
+          "claim_id": "wt-38da82063049519f-claim-01",
+          "story_id": "wt-38da82063049519f",
+          "claim": "Iran, der Krieg und die Sanktionen: 366 Quadratmeter, fünf Schlafzimmer, ein dubioser Bankier: Immobilien im dreistelligen Millionenbereich soll Irans oberster Führer Chamenei über einen Strohmann in Europa besitzen. Nun werden zwei Apartments verkauft. mehr...",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
+          "source_id": "taz-aktuell",
           "source_function": "journalistic_report",
           "status": "single_source_claim",
           "provenance": {
-            "origin": "publisher:mdr",
+            "origin": "publisher:taz",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           },
@@ -1601,75 +2074,45 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
-        },
-        {
-          "claim_id": "wt-cb1ef4e11861f849-claim-02",
-          "story_id": "wt-cb1ef4e11861f849",
-          "claim": "Wahl Sachsen-Anhalt im Liveticker: Erste Prognose, Hochrechnung für Ergebnisse folgt: Die Wahllokale in Sachsen-Anhalt haben geschlossen. Im Liveticker berichten wir über die erste Prognose, Hochrechnung, Ergebnisse und Reaktionen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
-      "content_hash": "eb1a2f9b70a15254b90834b5eb90b542ee73c5f6f02ea3b13da8284dc57834c2",
+      "content_hash": "b6ce80816e1a9a9eb5b747a838bb37c73a994a72fe6e0026efa985c8482a1749",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T16:36:31.903Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
-      "event_first_seen_at": "2026-09-06T15:33:52.069Z",
-      "event_detected_at": "2026-09-06T15:33:52.069Z",
-      "event_id": "event-0a8e28dc904ae1fd6c86",
+      "updated_at": "2026-09-06T16:21:31.903Z",
+      "event_first_seen_at": "2026-09-06T16:21:31.903Z",
+      "event_detected_at": "2026-09-06T16:21:31.903Z",
+      "event_id": "event-6a87448dabe87975d3de",
       "preanalysis": {
         "filter_version": "4.0",
         "material_development_review": {
-          "required": true,
+          "required": false,
           "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-130,wahl-560.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
+          "findings": []
         },
-        "internal_relevance_score": 32,
+        "internal_relevance_score": 46,
         "public_relevance": "mittel",
         "topics": [
-          "Demokratie"
+          "Europa",
+          "Geopolitik",
+          "Finanzen"
         ],
-        "dimensions": [
-          "Demokratie"
-        ],
+        "dimensions": [],
         "status": "laufende Entwicklung",
         "analysis_type": "ex_ante",
         "news_value_signals": [],
         "context_formats": [],
         "context_only": false,
         "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
         ],
         "materiality_factors": [
           "Zahl und Art möglicher Wirkungsempfänger",
@@ -1679,23 +2122,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6.32275,
-        "detection_delay_minutes": 0,
+        "source_age_minutes": 15.531716666666666,
+        "detection_delay_minutes": 15.531716666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 32.45493333333334,
+        "queue_age_minutes": 0,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 97,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
-        "fingerprint": "82574fdd43d6e6b1d367dcd7c70ae8ab30cb4cc37de12e03524ef721e65b35d4",
+        "checked_at": "2026-09-06T16:21:31.903Z",
+        "fingerprint": "c214f46070a23990501e4f1763952da9bc02317c2b7fa28247238e0c3c78de08",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T16:21:31.903Z",
+      "rejection": {
+        "at": "2026-09-06T16:21:31.903Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -2068,7 +2523,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T15:32:00.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2097,7 +2552,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-02",
@@ -2117,7 +2572,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-03",
@@ -2137,7 +2592,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-04",
@@ -2157,7 +2612,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-05",
@@ -2177,7 +2632,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-06",
@@ -2197,7 +2652,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-07",
@@ -2217,7 +2672,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
       "content_hash": "ae0839a773c669f6f8accfbf05a5dcbef605db4f50d99f9e39fc69d935d07f66",
@@ -2230,7 +2685,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-04T14:36:55.366Z",
       "event_detected_at": "2026-09-04T14:36:55.366Z",
       "event_id": "event-a1b8a516baff70dece5b",
@@ -2265,20 +2720,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 34.32275,
+        "source_age_minutes": 49.53171666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2969.3999833333332,
+        "queue_age_minutes": 2984.60895,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 90,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "fingerprint": "1f6680fe044e98661b18e590c8282a3d523518c8b2ea75d125b8be719c6e5ec7",
         "issue_codes": [],
         "warning_codes": []
@@ -2593,7 +3048,7 @@
           "title": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland",
           "summary": "In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft. Die gegen Moskau erhobenen Anschuldigungen, für den versuchten Anschlag verantwortlich zu sein, stellten letztlich den Beginn eines echten Krieges dar, sagte Lawrow.",
           "source_type": "media_rss",
-          "published_at": "2026-09-06T16:01:35.000Z",
+          "published_at": "2026-09-06T16:19:03.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -2609,8 +3064,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-06T16:01:35.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "source_published_at": "2026-09-06T16:19:03.000Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2639,20 +3094,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
       "content_hash": "a5f331adc0579d9913128df317ed6dda7930e8f327d18161bf6b453a1cf8c20e",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T16:36:31.903Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-06T14:06:24.915Z",
       "event_detected_at": "2026-09-06T14:06:24.915Z",
       "event_id": "event-062951d95ceb8b44030c",
@@ -2685,23 +3140,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4.739416666666667,
+        "source_age_minutes": 2.481716666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.9075,
+        "queue_age_minutes": 135.11646666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 99,
-        "freshness_warning": null
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "fingerprint": "e7570628a377ec388e818683e7fad8e33a50e3dc326f58d0e590ec7d7a3a7ffd",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T16:21:31.903Z",
+      "rejection": {
+        "at": "2026-09-06T16:21:31.903Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -2740,7 +3207,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T15:00:51.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2769,7 +3236,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
       "content_hash": "35ec6bbd8f24be6e487e30fd266ed55448363ba1b7c90b71718b9f4e36e8637b",
@@ -2782,7 +3249,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-06T15:06:13.347Z",
       "event_detected_at": "2026-09-06T15:06:13.347Z",
       "event_id": "event-69ea064495300a0db8f4",
@@ -2817,20 +3284,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 65.47275,
+        "source_age_minutes": 80.68171666666667,
         "detection_delay_minutes": 5.37245,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 60.1003,
+        "queue_age_minutes": 75.30926666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 86,
+        "news_freshness_score": 83,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "fingerprint": "19cf4de30a37b93852d6b635d5b1d21076670a240ff018335f3aa5438f18fe8b",
         "issue_codes": [],
         "warning_codes": []
@@ -2965,7 +3432,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-ecf4b205df1ecac3-claim-02",
@@ -2985,7 +3452,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         },
         {
           "claim_id": "wt-ecf4b205df1ecac3-claim-03",
@@ -3005,7 +3472,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
       "content_hash": "85b8238e18977d0792c22bdb93d9d367c44f554c39ee36e2a1d2e757cf4bdc70",
@@ -3018,7 +3485,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-06T07:16:30.989Z",
       "event_detected_at": "2026-09-06T07:16:30.989Z",
       "event_id": "event-c1061c18db8a491c241b",
@@ -3051,20 +3518,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 70.73941666666667,
+        "source_age_minutes": 85.94838333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 529.8062666666667,
+        "queue_age_minutes": 545.0152333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 85,
+        "news_freshness_score": 82,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "fingerprint": "1d352f85432f0def429be00f2b9333e9c20529b523690bf84824e3f38be457f6",
         "issue_codes": [],
         "warning_codes": []
@@ -3674,7 +4141,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T14:44:02.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3703,7 +4170,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
       "content_hash": "a05e370211cfb9f234faaa5589ce6c1a21ff45d72cc5eb75b266a9eaa79e1cda",
@@ -3716,7 +4183,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-06T15:06:13.347Z",
       "event_detected_at": "2026-09-06T15:06:13.347Z",
       "event_id": "event-4af2e5042adafe6a0fb7",
@@ -3753,20 +4220,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 82.28941666666667,
+        "source_age_minutes": 97.49838333333334,
         "detection_delay_minutes": 22.189116666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 60.1003,
+        "queue_age_minutes": 75.30926666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 83,
+        "news_freshness_score": 80,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "fingerprint": "31f7be568cae499c5b54f36709a0329498ab8f59f9a1f9f530cbb4a9752c8a52",
         "issue_codes": [],
         "warning_codes": []
@@ -4451,7 +4918,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
       "content_hash": "dbe5789dda08508c44aa95097826812c745ef9bec542537f2b6056ddea0508e4",
@@ -4464,7 +4931,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-06T15:06:13.347Z",
       "event_detected_at": "2026-09-06T15:06:13.347Z",
       "event_id": "event-ebe6c86d6ed509757bfc",
@@ -4497,20 +4964,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 113.32275,
+        "source_age_minutes": 128.53171666666665,
         "detection_delay_minutes": 53.22245,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 60.1003,
+        "queue_age_minutes": 75.30926666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 76,
+        "news_freshness_score": 73,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "fingerprint": "92ca19f6a98833287fa2fc457d0ac0ec625381fb799a70784a4a467da3a9cf0b",
         "issue_codes": [],
         "warning_codes": []
@@ -5131,7 +5598,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T13:42:00.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -5160,7 +5627,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
       "content_hash": "ea6802364fb7b1f7afeec0eba4ccf6ec06b4d7794891e41d6f8bf377b500230f",
@@ -5173,7 +5640,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-06T15:06:13.347Z",
       "event_detected_at": "2026-09-06T15:06:13.347Z",
       "event_id": "event-64852789bb2f6fedc4eb",
@@ -5206,20 +5673,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 144.32275,
+        "source_age_minutes": 159.53171666666665,
         "detection_delay_minutes": 84.22245,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 60.1003,
+        "queue_age_minutes": 75.30926666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 70,
+        "news_freshness_score": 67,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "fingerprint": "3f3e84f99c8bac0dbaa9be18b61ca55690fee9b8a69ca4390eaa96db693bebf2",
         "issue_codes": [],
         "warning_codes": []
@@ -6015,7 +6482,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T15:55:24.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6180,7 +6647,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:53:40.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6473,7 +6940,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T10:50:59.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6489,7 +6956,7 @@
             "title": "Beratungen über Ende des Ukraine-Kriegs - US-Sondergesandte: Erste Gesprächsrunde in Kiew ermutigend",
             "summary": "Nach ihrem Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew haben die US-Sondergesandten Witkoff und Kushner von einer ermutigenden Diskussion gesprochen. Es seien neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert worden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T16:01:35.000Z",
+            "published_at": "2026-09-06T16:19:03.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -6505,8 +6972,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T16:01:35.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "source_published_at": "2026-09-06T16:19:03.000Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6539,7 +7006,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T12:54:00.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6572,7 +7039,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T12:39:00.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6584,10 +7051,10 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+          "MEDIA_IMPACT_UNTRIGGERED"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-06T16:21:19.365Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-06T16:51:31.903Z",
         "reassessment": false,
         "fresh": true,
         "consolidation": true,
@@ -6595,7 +7062,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T16:06:19.365Z",
+          "checked_at": "2026-09-06T16:21:31.903Z",
           "fingerprint": "9c24eac9e21e66aa38f6428a01677e160662c9f88291064c1ce727233e47b0b9",
           "issue_codes": [],
           "warning_codes": []
@@ -8960,10 +9427,48 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-06T16:36:31.903Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -8971,7 +9476,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T16:06:19.365Z",
+          "checked_at": "2026-09-06T16:21:31.903Z",
           "fingerprint": "1b8d9b174df22264a08c74cf10b778040acd7881d73cc50c14da2a7e4c0b1724",
           "issue_codes": [],
           "warning_codes": []
@@ -11220,7 +11725,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T14:33:40.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -11235,8 +11740,8 @@
           "AI_SOURCE_SUMMARY_LENGTH",
           "CLAIM_NUMBER_NOT_IN_EVIDENCE"
         ],
-        "quality_retry_count": 8,
-        "quality_retry_after": "2026-09-07T04:06:19.365Z",
+        "quality_retry_count": 9,
+        "quality_retry_after": "2026-09-07T04:21:31.903Z",
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -11244,7 +11749,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T16:06:19.365Z",
+          "checked_at": "2026-09-06T16:21:31.903Z",
           "fingerprint": "31ee4fd4bf82ecdb017b8703375bd4da9b112f12c110d712ff10a2cf3f91f65d",
           "issue_codes": [],
           "warning_codes": []
@@ -18201,7 +18706,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T16:06:19.365Z",
+          "checked_at": "2026-09-06T16:21:31.903Z",
           "fingerprint": "b8f89e692bec3c2a8afc7439766919b51d5fc4c50e965af2d4c7c3be258737f6",
           "issue_codes": [],
           "warning_codes": []
@@ -19818,7 +20323,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T12:00:00.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -19839,7 +20344,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T16:06:19.365Z",
+          "checked_at": "2026-09-06T16:21:31.903Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -23083,7 +23588,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T07:26:00.000Z",
-          "ingested_at": "2026-09-06T16:06:19.365Z",
+          "ingested_at": "2026-09-06T16:21:31.903Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -23112,7 +23617,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
       "content_hash": "6053b67e9ffac032cba08882212d53589f16348f34635926cbe026e8baa69eff",
@@ -23125,7 +23630,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-06T07:36:23.375Z",
       "event_detected_at": "2026-09-06T07:36:23.375Z",
       "event_id": "event-1edde11a4c0d2dd94112",
@@ -23158,11 +23663,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 520.32275,
+        "source_age_minutes": 535.5317166666666,
         "detection_delay_minutes": 10.389583333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 509.9331666666667,
+        "queue_age_minutes": 525.1421333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -23171,7 +23676,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "fingerprint": "5e5a71ac0064f6ca08857a8e518df5c906c5de14b029751936ea956ced50f7d3",
         "issue_codes": [],
         "warning_codes": []
@@ -25768,7 +26273,7 @@
       "verification_started_at": "2026-09-06T05:34:40.715Z",
       "publish_ready_at": "2026-09-06T05:34:49.981Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "deepening_due_at": "2026-09-06T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -26105,10 +26610,13 @@
         "generated_at": "2026-09-06T05:36:07.920Z",
         "status": "generated"
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "3e51fcb126f1d83e96da4160567679f6ec66ff39a27961077e9afa224f5c9e2e",
+      "deepening_checks": 2,
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "5ef8447c73efd53f91e54cf76f2854020d16465eab3dead72934191f1e1bef45",
+        "checked_at": "2026-09-06T16:21:31.903Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T22:21:31.903Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -26143,23 +26651,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T16:06:19.365Z",
-          "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
       }
     },
     {
@@ -27069,7 +27561,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T16:06:19.365Z",
+          "checked_at": "2026-09-06T16:21:31.903Z",
           "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
           "issue_codes": [],
           "warning_codes": []
@@ -43389,10 +43881,10 @@
       ],
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "4eb0307688109647a90ec2c6da9505717aca0ddeeea77695e113de34f53ca724",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "fingerprint": "6bda624412f2678fa32e26c6b18f48737af42f50ae792ca0ae11cce1ca9c827f",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-06T22:06:19.365Z",
+        "expires_at": "2026-09-06T22:21:31.903Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -43859,7 +44351,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -43958,7 +44450,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44057,7 +44549,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44090,7 +44582,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T13:35:00.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44169,14 +44661,14 @@
             "source_id": "tagesspiegel-home",
             "publisher": "Der Tagesspiegel",
             "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16021843.html",
-            "title": "Landtagswahl: Sachsen-Anhalt-Wahl: Mehr als jeder Zweite hat abgestimmt",
-            "summary": "In den Umfragen hat die AfD stets mit Abstand vor der CDU gelegen. Heute fällt die Entscheidung über die Politik der kommenden fünf Jahre. Die Wahllokale sind sehr gut besucht.",
+            "title": "Landtagswahl: AfD bei Wahl in Sachsen-Anhalt klar vor CDU",
+            "summary": "Die AfD distanziert die CDU. Die SPD bleibt stabil, die Linke büßt Stimmen ein. Die Grünen schaffen es in den Landtag, das BSW kann hoffen. Die FDP fliegt raus. Die Regierungsbildung wird schwierig.",
             "source_type": "media_rss",
             "published_at": "2026-09-06T02:32:15.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "cf2cc943c8a37fd8564c27cb955380218da42746ac5e0ee7c93cc7318fbf6efd",
+            "content_hash": "3504878af1f5c520029f928d9dff603c6af914a53a16590405facbf10de7e2c5",
             "source_item_id": "77f15d60bd47bf3284082d5ce72892d6c2a3a787d2ec80a63514d47c6e3e1601",
             "publisher_id": "tagesspiegel",
             "publisher_kind": "journalism",
@@ -44189,7 +44681,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T02:32:15.000Z",
-            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44202,14 +44694,14 @@
             "source_id": "tagesschau-access",
             "publisher": "tagesschau / ARD",
             "url": "https://www.tagesschau.de/newsticker/liveblog-landtagswahl-sachsen-anhalt-100.html",
-            "title": "++ Bereits höhere Wahlbeteiligung als vor fünf Jahren ++",
-            "summary": "Bereits um 16 Uhr haben mehr Menschen in Sachsen-Anhalt ihre Stimmen abgegeben als bei der vergangenen Landtagswahl. Die Wahlbeteiligung lag bis zu diesem Zeitpunkt bei 65,3 Proze…",
+            "title": "++ BSW muss laut ARD-Prognose um Einzug bangen ++",
+            "summary": "Es könnte eng werden für das BSW. Die Partei von Sahra Wagenknecht liegt laut ARD-Prognose bei 5,0 Prozent. Für Linke, SPD und Grüne wird es wahrscheinlich zum Einzug in den Landt…",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T16:00:04.000Z",
+            "published_at": "2026-09-06T16:15:03.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "60cf15a6951e56b673ac568505dcf97d4a8a1c435fb17f794b22eff28d450515",
+            "content_hash": "b161651444f012c9526fc9ff7ea15e3b25c4b978ca59e00e460dc4e654a8b334",
             "source_item_id": "776cc3745c8f775fdb9aede20712df3e986cdece71d29d4af6e217db1a5e512e",
             "publisher_id": "tagesschau",
             "publisher_kind": "public_broadcasting",
@@ -44221,8 +44713,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T16:00:04.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "source_published_at": "2026-09-06T16:15:03.000Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44272,13 +44764,13 @@
             "publisher": "tagesschau / ARD",
             "url": "https://www.tagesschau.de/",
             "title": "Wahl in Sachsen-Anhalt: AfD mit großem Abstand vor CDU",
-            "summary": "Laut ARD-Prognose um 18 Uhr kommt die AfD auf 44,5 Prozent, die CDU liegt bei 18,5 Prozent. Alle Ergebnisse finden Sie bei tagesschau.de.",
+            "summary": "Die AfD jubelt: Laut ARD-Prognose um 18 Uhr kommt die Partei auf 44,5 Prozent, die CDU liegt bei 18,5 Prozent. Alle Ergebnisse finden Sie bei tagesschau.de.",
             "source_type": "media_rss",
             "published_at": "2026-09-06T07:50:34.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "a16143f8052afea44bf68dc8b1336f55c6b8f34bb2752f4d430091b66f6bfa62",
+            "content_hash": "9abd8348a470940dd687b7000f2e92d1d8d2b75c981fb2ad3840a6a87150658e",
             "source_item_id": "b0b622887918d5c95fc242ab821b190d1fa06731049154d7026f5d18ddeb0e28",
             "publisher_id": "tagesschau",
             "publisher_kind": "public_broadcasting",
@@ -44291,7 +44783,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T07:50:34.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44328,6 +44820,72 @@
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T02:32:15.000Z",
             "ingested_at": "2026-09-06T16:06:19.365Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/wahl-sachsen-anhalt-liveticker--afd-weit-vor-cdu---absolute-mehrheit-unklar-38185592.html",
+            "title": "Landtagswahl im Liveticker: AfD in Sachsen-Anhalt weit vor CDU – absolute Mehrheit unklar",
+            "summary": "Sachsen-Anhalt hat gewählt – mit hoher Beteiligung. Die AfD und ihr Spitzenkandidat Ulrich Siegmund verzeichnen einen deutlichen Sieg. Das Wichtigste im stern-Liveblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T16:10:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "bed9705c92a00b43420519fe7732920ccd8393d5696bbe8f08dd6e5a2088c906",
+            "source_item_id": "f8f77ecc5d32129042af1c87a1215cf783e674c552c78f7e3b179f8c081a9cf9",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T16:10:00.000Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/liveblog/landtagswahl-in-sachsen-anhaltbeteiligung-schon-um-16-uhr-hoher-als-die-gesamtwahlbeteiligung-2021-16008484.html",
+            "title": "Die Landtagswahl im Blog: Wahlbeteiligung bricht mit 80 Prozent Rekord – Weidel sieht „Regierungsauftrag“",
+            "summary": "Erste Prognosen sehen Wahlkrimi voraus – absolute Mehrheit der AfD unklar + Wirtschaftsweise warnt vor wirtschaftlichen Folgen eines AfD-Sieges + Der Newsblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:56:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "61f90350e98f7567d5919ed6a4dbb0862fe898744a31973abcf923db9c640ac2",
+            "source_item_id": "e8e790b41f879084e830f23c68874bbd18a58e23ffd7075ac0aa3f1b9d7f3d23",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:56:20.000Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44341,7 +44899,7 @@
       "deepening_checks": 3,
       "pending_update": {
         "detected_at": "2026-09-06T13:51:15.545Z",
-        "content_hash": "b9b70aedef13ddb422de9bacc53c82b9fedb0ecfe15311c9111b1d6558c50890",
+        "content_hash": "b79df93f26743344945b34fc863a5a6d63a50fe76e923a74ddbb8a6f7f3d34c8",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -44808,7 +45366,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -44907,7 +45465,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45006,7 +45564,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45039,7 +45597,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T13:35:00.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45118,14 +45676,14 @@
             "source_id": "tagesspiegel-home",
             "publisher": "Der Tagesspiegel",
             "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16021843.html",
-            "title": "Landtagswahl: Sachsen-Anhalt-Wahl: Mehr als jeder Zweite hat abgestimmt",
-            "summary": "In den Umfragen hat die AfD stets mit Abstand vor der CDU gelegen. Heute fällt die Entscheidung über die Politik der kommenden fünf Jahre. Die Wahllokale sind sehr gut besucht.",
+            "title": "Landtagswahl: AfD bei Wahl in Sachsen-Anhalt klar vor CDU",
+            "summary": "Die AfD distanziert die CDU. Die SPD bleibt stabil, die Linke büßt Stimmen ein. Die Grünen schaffen es in den Landtag, das BSW kann hoffen. Die FDP fliegt raus. Die Regierungsbildung wird schwierig.",
             "source_type": "media_rss",
             "published_at": "2026-09-06T02:32:15.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "cf2cc943c8a37fd8564c27cb955380218da42746ac5e0ee7c93cc7318fbf6efd",
+            "content_hash": "3504878af1f5c520029f928d9dff603c6af914a53a16590405facbf10de7e2c5",
             "source_item_id": "77f15d60bd47bf3284082d5ce72892d6c2a3a787d2ec80a63514d47c6e3e1601",
             "publisher_id": "tagesspiegel",
             "publisher_kind": "journalism",
@@ -45138,7 +45696,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T02:32:15.000Z",
-            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45151,14 +45709,14 @@
             "source_id": "tagesschau-access",
             "publisher": "tagesschau / ARD",
             "url": "https://www.tagesschau.de/newsticker/liveblog-landtagswahl-sachsen-anhalt-100.html",
-            "title": "++ Bereits höhere Wahlbeteiligung als vor fünf Jahren ++",
-            "summary": "Bereits um 16 Uhr haben mehr Menschen in Sachsen-Anhalt ihre Stimmen abgegeben als bei der vergangenen Landtagswahl. Die Wahlbeteiligung lag bis zu diesem Zeitpunkt bei 65,3 Proze…",
+            "title": "++ BSW muss laut ARD-Prognose um Einzug bangen ++",
+            "summary": "Es könnte eng werden für das BSW. Die Partei von Sahra Wagenknecht liegt laut ARD-Prognose bei 5,0 Prozent. Für Linke, SPD und Grüne wird es wahrscheinlich zum Einzug in den Landt…",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T16:00:04.000Z",
+            "published_at": "2026-09-06T16:15:03.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "60cf15a6951e56b673ac568505dcf97d4a8a1c435fb17f794b22eff28d450515",
+            "content_hash": "b161651444f012c9526fc9ff7ea15e3b25c4b978ca59e00e460dc4e654a8b334",
             "source_item_id": "776cc3745c8f775fdb9aede20712df3e986cdece71d29d4af6e217db1a5e512e",
             "publisher_id": "tagesschau",
             "publisher_kind": "public_broadcasting",
@@ -45170,8 +45728,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T16:00:04.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "source_published_at": "2026-09-06T16:15:03.000Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45221,13 +45779,13 @@
             "publisher": "tagesschau / ARD",
             "url": "https://www.tagesschau.de/",
             "title": "Wahl in Sachsen-Anhalt: AfD mit großem Abstand vor CDU",
-            "summary": "Laut ARD-Prognose um 18 Uhr kommt die AfD auf 44,5 Prozent, die CDU liegt bei 18,5 Prozent. Alle Ergebnisse finden Sie bei tagesschau.de.",
+            "summary": "Die AfD jubelt: Laut ARD-Prognose um 18 Uhr kommt die Partei auf 44,5 Prozent, die CDU liegt bei 18,5 Prozent. Alle Ergebnisse finden Sie bei tagesschau.de.",
             "source_type": "media_rss",
             "published_at": "2026-09-06T07:50:34.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "a16143f8052afea44bf68dc8b1336f55c6b8f34bb2752f4d430091b66f6bfa62",
+            "content_hash": "9abd8348a470940dd687b7000f2e92d1d8d2b75c981fb2ad3840a6a87150658e",
             "source_item_id": "b0b622887918d5c95fc242ab821b190d1fa06731049154d7026f5d18ddeb0e28",
             "publisher_id": "tagesschau",
             "publisher_kind": "public_broadcasting",
@@ -45240,7 +45798,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T07:50:34.000Z",
-            "ingested_at": "2026-09-06T16:06:19.365Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45277,6 +45835,72 @@
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T02:32:15.000Z",
             "ingested_at": "2026-09-06T16:06:19.365Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/wahl-sachsen-anhalt-liveticker--afd-weit-vor-cdu---absolute-mehrheit-unklar-38185592.html",
+            "title": "Landtagswahl im Liveticker: AfD in Sachsen-Anhalt weit vor CDU – absolute Mehrheit unklar",
+            "summary": "Sachsen-Anhalt hat gewählt – mit hoher Beteiligung. Die AfD und ihr Spitzenkandidat Ulrich Siegmund verzeichnen einen deutlichen Sieg. Das Wichtigste im stern-Liveblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T16:10:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "bed9705c92a00b43420519fe7732920ccd8393d5696bbe8f08dd6e5a2088c906",
+            "source_item_id": "f8f77ecc5d32129042af1c87a1215cf783e674c552c78f7e3b179f8c081a9cf9",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T16:10:00.000Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/liveblog/landtagswahl-in-sachsen-anhaltbeteiligung-schon-um-16-uhr-hoher-als-die-gesamtwahlbeteiligung-2021-16008484.html",
+            "title": "Die Landtagswahl im Blog: Wahlbeteiligung bricht mit 80 Prozent Rekord – Weidel sieht „Regierungsauftrag“",
+            "summary": "Erste Prognosen sehen Wahlkrimi voraus – absolute Mehrheit der AfD unklar + Wirtschaftsweise warnt vor wirtschaftlichen Folgen eines AfD-Sieges + Der Newsblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:56:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "61f90350e98f7567d5919ed6a4dbb0862fe898744a31973abcf923db9c640ac2",
+            "source_item_id": "e8e790b41f879084e830f23c68874bbd18a58e23ffd7075ac0aa3f1b9d7f3d23",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:56:20.000Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45299,8 +45923,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T16:06:19.365Z",
-          "fingerprint": "e38b0e42299fc7e4882b2ad97bc9a08ff2593de99051719f3e8d20e008039a20",
+          "checked_at": "2026-09-06T16:21:31.903Z",
+          "fingerprint": "ba06d65c5ca416b35a6462e64166931ea2421b676506a8c9178fed8588e9aab4",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -80518,7 +81142,134 @@
           }
         ]
       },
-      "deepening_checks": 3
+      "deepening_checks": 3,
+      "pending_update": {
+        "detected_at": "2026-09-06T16:21:31.903Z",
+        "content_hash": "faa602b8d7bca3b9decd8257c3d20985d9038253e49976068834fb08e7e8efbe",
+        "sources": [
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/moeglicherweise-sabotage-versuch-an-umspannwerk-in-dormagen-100.html",
+            "title": "Liveticker - SEK-Zugriff bei Hambacher Forst",
+            "summary": "Nach dem Sabotageversuch am Umspannwerk in Dormagen gibt es einen SEK-Einsatz beim Hambacher Forst. Reul und Dobrindt gaben eine PK.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T16:15:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "52f95659a93fb22ccad16dcd7efdf829e878e4b53e26b05cf3208571f3cd4c89",
+            "source_item_id": "0f1a0f26bfe8dfe8c2434130b5770b0478d1b158e01d2175fa3f1501bd213148",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T16:15:33.000Z",
+            "ingested_at": "2026-09-04T16:51:42.103Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+            "title": "Strom-Sabotage: Polizei fahndet nach Tatverdächtigem",
+            "summary": "Zahlreiche Einsatzkräfte haben am Sonntag den Hambacher Forst durchsucht. Die Fahndung nach Daniel V. läuft weiter. Alle Infos im Ticker.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T16:14:37.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "f19d12ef600ac580eeadaeb0828ef4137320298c7fb861172e09a60fa42ac84b",
+            "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T16:14:37.000Z",
+            "ingested_at": "2026-09-06T16:21:31.903Z",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "MEDIA_IMPACT_REQUIRED",
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-06T16:36:31.903Z",
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T16:21:31.903Z",
+          "fingerprint": "be288c4a818b5c612918dbe540207fc98635fede306d278b667f66d82f9b7e58",
+          "issue_codes": [],
+          "warning_codes": [
+            "SOURCE_MUTABLE_URL_REUSED"
+          ]
+        }
+      }
     },
     {
       "story_id": "wt-9d9b1a5968a2d3b8",
@@ -145162,7 +145913,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T16:06:19.365Z"
+          "checked_at": "2026-09-06T16:21:31.903Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -145177,7 +145928,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T16:06:19.365Z",
+      "updated_at": "2026-09-06T16:21:31.903Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -145213,11 +145964,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4423.32275,
+        "source_age_minutes": 4438.531716666666,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3945.03925,
+        "queue_age_minutes": 3960.248216666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -145226,7 +145977,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T16:06:19.365Z",
+        "checked_at": "2026-09-06T16:21:31.903Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
