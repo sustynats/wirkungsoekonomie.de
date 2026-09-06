@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { compactEvidenceSegments, expandEvidenceSegments, serializeEvidencePackets, reviewFingerprint, reviewCheckpoint, canReuseReview, articleSourceOrder } from '../../scripts/news/evidence-packets.mjs';
-import { runWirkungsticker, recoverAmbiguousPublicationDecisions } from '../../scripts/news/run.mjs';
+import { runWirkungsticker, recoverAmbiguousPublicationDecisions, normalizeEditorialDecision, retryCoolingDown } from '../../scripts/news/run.mjs';
+import { validateAnalysis } from '../../scripts/news/lib.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { evaluateRunHealth } from '../../scripts/news/check-run-health.mjs';
 
@@ -69,6 +70,23 @@ test('headless no-update review persists its evidence and skips the same input w
   await runWirkungsticker({...opts,...captured}); assert.equal(calls,2);
 });
 
+test('no new information during reassessment never retires the published original or its deep dive', async () => {
+  let captured;
+  const previous = storedStory();
+  previous.pending_update.reassessment = true;
+  await runWirkungsticker(options(previous,{captureState:value=>captured=value,callAiImpl:async stories=>({
+    analyses:stories.map(s=>({story_id:s.story_id,publication_recommendation:false,rejection:{code:'no_new_information',reason:'Keine neuen materiellen Informationen gegenüber der bereits veröffentlichten Fassung.'}})),
+    model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50},
+  })}));
+  const saved = captured.storyStore.stories[0];
+  assert.equal(saved.listed,true);
+  assert.equal(saved.retirement,undefined);
+  assert.equal(saved.pending_update,undefined);
+  assert.equal(saved.review_checkpoint.outcome,'no_material_update');
+  assert.deepEqual(saved.analysis,previous.analysis);
+  assert.deepEqual(saved.versions,previous.versions);
+});
+
 test('oversize preflight preserves a queue item and leaves the paid slot to another article', async () => {
   let captured, calls=[];
   const blocked=storedStory(); blocked.pending_update.sources=[{...item,url:'https://example.org/'+ 'x'.repeat(40000)}];
@@ -98,6 +116,12 @@ test('malformed AI output is retained and retried automatically after backoff', 
   assert.equal(pending.reason,'AI_OUTPUT_INVALID');
   assert.equal(pending.quality_retry_count,1);
   assert.equal(pending.quality_retry_after,'2026-09-04T12:15:00.000Z');
+  const waitingCandidate = { ...captured.storyStore.stories[0], sources: pending.sources, existing_story: captured.storyStore.stories[0], fresh: true, deepening_due: true, followup_due: true };
+  assert.equal(retryCoolingDown(waitingCandidate, '2026-09-04T12:10:00Z'), true);
+  const newEvidence = structuredClone(waitingCandidate);
+  newEvidence.sources[0].summary += ' Eine neue verbindliche Entscheidung liegt vor.';
+  assert.equal(retryCoolingDown(newEvidence, '2026-09-04T12:10:00Z'), false);
+  captured.storyStore.stories[0].deepening_due_at = now;
   await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T12:10:00.000Z',callAiImpl,captureState:value=>captured=value});
   assert.equal(calls,1);
   fail=false;
@@ -105,6 +129,17 @@ test('malformed AI output is retained and retried automatically after backoff', 
   assert.equal(calls,2);
   assert.equal(third.ai_batches_completed,1);
   assert.equal(captured.storyStore.stories[0].pending_update,undefined);
+});
+
+test('duplicate enum in a rejection is a terminal editorial decision, never a publication', () => {
+  const c = { ...candidate(), preanalysis: { filter_version: '4.0' } };
+  const draft = { story_id: c.story_id, publication_recommendation: false,
+    rejection: { code: 'duplicate_without_new_information', reason: 'Die Quellen wiederholen den bereits belegten Sachverhalt ohne neue materielle Information.' } };
+  normalizeEditorialDecision(draft);
+  assert.equal(draft.rejection.original_code, 'duplicate_without_new_information');
+  assert.deepEqual(validateAnalysis(draft, c), ['AI_PUBLICATION_NOT_RECOMMENDED', 'AI_DUPLICATE_WITHOUT_UPDATE']);
+  draft.rejection.reason = 'kurz';
+  assert.ok(validateAnalysis(draft, c).some(e => e.startsWith('AI_REQUIRED_STRING:')));
 });
 
 test('legacy exhausted records retry, but malformed rejection is never published or retired', async()=>{

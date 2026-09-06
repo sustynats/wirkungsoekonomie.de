@@ -102,12 +102,8 @@ function escapeHtml(value = "") {
     .replace(/'/g, "&#039;");
 }
 
-// Spiegelt die Zahlen-Erkennung des Qualitätsgates in lib.mjs (bewusst identisch gehalten).
-export function numberTokens(value) {
-  return new Set((String(value).match(/\b\d+(?:[.,]\d+)?(?:\s?%|\s?(?:Millionen|Milliarden|Euro|EUR|USD))?\b/gi) || [])
-    .map((token) => token.match(/\d+(?:[.,]\d+)?/)?.[0].replace(".", ","))
-    .filter(Boolean));
-}
+import { numberTokens } from "./numeric-evidence.mjs";
+export { numberTokens } from "./numeric-evidence.mjs";
 
 function cleanText(value, maxLength) {
   const text = String(value ?? "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();

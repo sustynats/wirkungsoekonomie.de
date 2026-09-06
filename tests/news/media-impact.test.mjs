@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { buildAnalysisPrompt } from "../../scripts/news/lib.mjs";
+import { buildAnalysisPrompt, validateAnalysis } from "../../scripts/news/lib.mjs";
 import { backfillMediaImpact } from "../../scripts/news/backfill-media-impact.mjs";
 import { MEDIA_ANALYSIS_VERSION, MEDIA_PROMPT_RULES, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis, mediaTriggerRecord, sanitizeMediaImpact } from "../../scripts/news/media-impact.mjs";
 import { sanitizeAnalysisMediaImpact } from "../../scripts/news/run.mjs";
@@ -115,6 +115,10 @@ test("vollständiger KI-Befund darf einen zu engen lokalen Trigger abgesichert e
   sanitizeAnalysisMediaImpact(analysis, { ...item, media_trigger: local }, report, "2026-09-05T11:00:00Z");
   assert.equal(analysis.media_trigger.basis, "analysis_finding");
   assert.equal(report.media_checks_ai_promoted, 1);
+  const candidate = { ...item, media_trigger: local };
+  assert.ok(!validateAnalysis(analysis, candidate).includes("MEDIA_IMPACT_UNTRIGGERED"));
+  candidate.content_hash = "changed-evidence";
+  assert.ok(validateAnalysis(analysis, candidate).includes("MEDIA_IMPACT_UNTRIGGERED"));
 });
 
 test("Trigger aus kontrolliertem Artikeltext bleibt nach flüchtigem Abruf prüfbar", () => {

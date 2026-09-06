@@ -78,6 +78,14 @@ jobs:
       - name: Unit and security tests
         if: steps.slot.outputs.should_run == 'true'
         run: npm run news:test
+      - name: Recover usage from failed atomic publications
+        if: steps.slot.outputs.should_run == 'true'
+        # Provider-side accounting remains authoritative if GitHub logs are
+        # temporarily unavailable; do not disable that independent cost gate.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/news/recover-failed-usage.mjs
       - name: Import, analyze and build
         if: steps.slot.outputs.should_run == 'true'
         env:
@@ -198,3 +206,18 @@ jobs:
       - name: Verify ticker run health
         if: always() && steps.slot.outputs.should_run == 'true'
         run: npm run news:health -- --started-after="$WOEK_NEWS_EXPECTED_AFTER"
+      - name: Preserve failed-run work and usage for recovery
+        if: failure() && steps.slot.outputs.should_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-recovery-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 3
+          compression-level: 6
+          if-no-files-found: warn
+          path: |
+            data/news/stories.json
+            data/news/state.json
+            data/news/usage.json
+            data/news/editorial-analyses.json
+            reports/wirkungsticker-latest-run.json
+            reports/wirkungsticker-editorial-analyses.json
