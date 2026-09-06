@@ -19,7 +19,7 @@ Der Lehrgang endet nicht mit einem Maßnahmenplan, sondern mit einer **Lernschle
 
 ## 1. Phase 1: Gegenstand, Problem, Baseline
 
-Woche 1–2:
+Woche 1-2:
 
 - Primärgegenstand und Version sichern,
 - Problem Review,
@@ -31,19 +31,19 @@ Kein Start mit „welche Kennzahl wollen wir verbessern?“ ohne Problemkontext.
 
 ## 2. Phase 2: Ziel, Optionen und Wirkpfade
 
-Woche 3–4:
+Woche 3-4:
 
 - Goal Review,
 - mehrere echte Optionen,
 - je Option `A→M→ΔZ→R`,
-- Wirkung 1.–3. Ordnung,
+- Wirkung 1.-3. Ordnung,
 - Rebound/Spillover/Leakage,
 - Verteilung und Generationen,
 - Rechte/Schutzgrenzen.
 
 ## 3. Phase 3: Evidenz, Delivery und Entscheidung
 
-Woche 5–6:
+Woche 5-6:
 
 - Datenquellen und Datenfunktionen,
 - Evidenzgrad,
@@ -57,7 +57,7 @@ Die finale Managemententscheidung wird separat dokumentiert.
 
 ## 4. Phase 4: Umsetzung und Monitoring
 
-Woche 7–10:
+Woche 7-10:
 
 Monitoring unterscheidet:
 
@@ -73,7 +73,7 @@ Ein Indikator darf mehrere Funktionen haben, aber die Funktion wird im konkreten
 
 ## 5. Phase 5: Reality Check
 
-Woche 11–13:
+Woche 11-13:
 
 - Was wurde tatsächlich umgesetzt?
 - Welche Outcomes wurden beobachtet?
@@ -120,11 +120,11 @@ Der Pilot wählt nicht nach einem einzigen Score. Er prüft technische Wirkung, 
 
 ## Typische Fehlinterpretationen
 
-- 90-Tage-Plan = nur Projektplan. – Nein, er enthält Wirkungs-/Evidenz-/Rechecklogik.
-- Monitoring = Reality Check. – Nein.
-- Ein positiver Outcome macht Attribution überflüssig. – Nein.
-- Ein Score ersetzt Managemententscheidung. – Nein.
-- Eine frühere Recommendation darf nach neuen Daten nicht geändert werden. – Falsch; Lernfähigkeit verlangt Revision.
+- 90-Tage-Plan = nur Projektplan. - Nein, er enthält Wirkungs-/Evidenz-/Rechecklogik.
+- Monitoring = Reality Check. - Nein.
+- Ein positiver Outcome macht Attribution überflüssig. - Nein.
+- Ein Score ersetzt Managemententscheidung. - Nein.
+- Eine frühere Recommendation darf nach neuen Daten nicht geändert werden. - Falsch; Lernfähigkeit verlangt Revision.
 
 ## WÖk-Abgrenzung
 

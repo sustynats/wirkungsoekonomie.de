@@ -83,10 +83,10 @@ Ein hoher Wasserverbrauch ist nicht automatisch eine harte Grenze. Wenn der Stan
 
 ## Typische Fehlinterpretationen
 
-- Jeder Zielkonflikt ist nichtkompensierbar. – Nein.
-- Jede negative Wirkung lässt sich mit positiver Wirkung ausgleichen. – Nein.
-- RMO = universelle Minimumformel. – Nein.
-- Eine rote Linie darf ohne Quellen-/Boundary-Begründung gesetzt werden. – Nein.
+- Jeder Zielkonflikt ist nichtkompensierbar. - Nein.
+- Jede negative Wirkung lässt sich mit positiver Wirkung ausgleichen. - Nein.
+- RMO = universelle Minimumformel. - Nein.
+- Eine rote Linie darf ohne Quellen-/Boundary-Begründung gesetzt werden. - Nein.
 
 ## WÖk-Abgrenzung
 

@@ -36,7 +36,7 @@ const png = await rasterize(result.svg, { width: result.width, height: result.he
 
 ## Rendering-Technologie und Entscheidung
 
-- **SVG aus Template-Literalen in reinem Node** – derselbe Stil wie `scripts/news/build.mjs`. Das Projekt hat keine npm-Abhängigkeiten; das bleibt so.
+- **SVG aus Template-Literalen in reinem Node** - derselbe Stil wie `scripts/news/build.mjs`. Das Projekt hat keine npm-Abhängigkeiten; das bleibt so.
 - **Deterministischer Zeilenumbruch ohne Browser**: `text.mjs` misst Text über gemessene Glyphenbreiten der Markenfonts (`font-metrics.json`, 6 Schnitte, 190 Zeichen inkl. Umlauten, Gedankenstrichen, Anführungszeichen, plus Kerningpaare, 3 % Reserve). Dadurch sind Zeilenzahl, Schriftgröße und Kürzung reproduzierbar und testbar.
 - **Fonts eingebettet**: Standard `fonts: "embed"` bettet die vorhandenen WOFF2-Dateien aus `assets/fonts/` als Data-URI in das SVG ein (ca. 0,8 MB pro SVG, nur Zwischenformat). `fonts: "link"` verlinkt sie relativ (für die Galerie), `fonts: "none"` nutzt Systemfallbacks.
 - **PNG über `rasterize.mjs`**, Reihenfolge: `@resvg/resvg-js` (falls installiert), `rsvg-convert`, Chrome/Chromium headless. Auf dem Mac ist Chrome vorhanden (`/Applications/Google Chrome.app`); die Vorschauen entstanden damit. Für GitHub Actions empfiehlt sich `@resvg/resvg-js` als einzelne Dev-Abhängigkeit **oder** Chromium im Runner (`sudo apt-get install chromium-browser`, Variable `WT_CHROME_BIN`). resvg rendert keine WOFF2 aus `@font-face`; dafür einmalig TTF-Kopien der beiden Fonts ablegen (`fontDirs`) oder Chromium verwenden. Beides ist Teil des Codex-Folgeschritts.
@@ -135,7 +135,7 @@ Eingabe: `headline`, `category`, `source`, `date`, `dimensions`, `status`, `anal
 
 Darstellung (landscape): rechts ein Panel (x ab 60 % Breite) mit Titel „WIRKUNG AUF“, drei Zeilen Mensch / Planet / Demokratie (Icon, Label, Stufe als Text, 4-Segment-Meter in Dimensionsfarbe) und darunter zwei Chips: Verfahrensstand (Haken bei Verfahrensspur, Uhr bei „laufende Entwicklung“/„offen“) und Analyseart (Ex ante, Monitoring, Ex post). Square: dasselbe Panel quer über die Bildbreite mit drei Spalten, Text darunter.
 
-Informationsmenge ist bewusst begrenzt: drei Meter, zwei Chips, Rubrik, Überschrift, Herausgeber, Datum. Keine Zahlen, keine Begründungstexte, keine Materialitätsfaktoren – das bleibt der Detailseite vorbehalten.
+Informationsmenge ist bewusst begrenzt: drei Meter, zwei Chips, Rubrik, Überschrift, Herausgeber, Datum. Keine Zahlen, keine Begründungstexte, keine Materialitätsfaktoren - das bleibt der Detailseite vorbehalten.
 
 Verhalten bei fehlenden Werten:
 
@@ -161,7 +161,7 @@ node scripts/news/title-image/preview.mjs            # schreibt scripts/news/tit
 open scripts/news/title-image/previews/index.html
 ```
 
-Fälle: Referenz „Stärkerer Schutz kritischer Infrastrukturen“, lange Überschrift (2–3 Zeilen), sehr kurze Überschrift, sehr lange deutsche Überschrift (Kürzung), fehlende Kategorie, fehlende Quelle und Datum, fehlende Wirkungswerte, nur eine relevante Dimension, mehrere sehr relevante Dimensionen mit unbekannter Rubrik – jeweils in beiden Modi und allen drei Größen, dazu die Smartphone-Darstellung (360 px) und der Fallback „Editorial ohne Motiv“. `report.json` listet pro Rendering Schriftgröße, Zeilenzahl, Kürzung und Warnungen.
+Fälle: Referenz „Stärkerer Schutz kritischer Infrastrukturen“, lange Überschrift (2-3 Zeilen), sehr kurze Überschrift, sehr lange deutsche Überschrift (Kürzung), fehlende Kategorie, fehlende Quelle und Datum, fehlende Wirkungswerte, nur eine relevante Dimension, mehrere sehr relevante Dimensionen mit unbekannter Rubrik - jeweils in beiden Modi und allen drei Größen, dazu die Smartphone-Darstellung (360 px) und der Fallback „Editorial ohne Motiv“. `report.json` listet pro Rendering Schriftgröße, Zeilenzahl, Kürzung und Warnungen.
 
 Die Platzhaltermotive sind abstrakte, textfreie Systemgrafiken (`placeholders.mjs`) und stehen nur stellvertretend für spätere Symbolbilder.
 

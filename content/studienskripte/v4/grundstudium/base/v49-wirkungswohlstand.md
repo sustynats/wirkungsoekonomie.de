@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v49-wirkungswohlstand.md curriculum=4.0 sanitized=true -->
-# V49 · Vom BIP zum Wirkungswohlstand – Wohlstand als mehrdimensionaler Zustand
+# V49 · Vom BIP zum Wirkungswohlstand - Wohlstand als mehrdimensionaler Zustand
 
 **lecture_id:** `WOEK-G-BASE-049`  
 **display_code:** `V49`  
@@ -57,7 +57,7 @@ WÖk erfindet mehrdimensionale Wohlstandsmessung nicht.
 
 Wirkungswohlstand fragt:
 
-> Welche Zustände ermöglichen heute und künftig ein gutes, sicheres, freies und ökologisch tragfähiges Leben – und welche Entscheidungen stärken oder schwächen diese Zustände?
+> Welche Zustände ermöglichen heute und künftig ein gutes, sicheres, freies und ökologisch tragfähiges Leben - und welche Entscheidungen stärken oder schwächen diese Zustände?
 
 Dimensionen können sein:
 
@@ -244,7 +244,7 @@ Dafür gibt es längst Beyond-GDP-Ansätze.
 
 Die WÖk nennt ihre integrierte Sicht Wirkungswohlstand.
 
-Wir schauen auf Einkommen – aber auch auf Gesundheit, Bildung, Infrastruktur, Natur, Verteilung und Resilienz.
+Wir schauen auf Einkommen - aber auch auf Gesundheit, Bildung, Infrastruktur, Natur, Verteilung und Resilienz.
 
 Und wir unterscheiden Flüsse und Bestände.
 
@@ -254,4 +254,4 @@ Dann lebt es teilweise von der Zukunft.
 
 Der Merksatz lautet:
 
-**Wohlstand ist nicht die eine bessere Zahl. Wohlstand ist ein tragfähiger Zustand aus materiellen Möglichkeiten, Lebensqualität, Freiheit, Natur und Resilienz – heute und morgen.**
+**Wohlstand ist nicht die eine bessere Zahl. Wohlstand ist ein tragfähiger Zustand aus materiellen Möglichkeiten, Lebensqualität, Freiheit, Natur und Resilienz - heute und morgen.**

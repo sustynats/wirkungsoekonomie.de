@@ -1,4 +1,4 @@
-# Vollständige Fachakte – btw-2025-ssw
+# Vollständige Fachakte - btw-2025-ssw
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -19,7 +19,7 @@
 
 **review_status:** COMPLETE
 
-**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Deine Stimme für den Norden – Wahlprogramm zur Bundestagswahl 2025. Alle 283 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
+**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Deine Stimme für den Norden - Wahlprogramm zur Bundestagswahl 2025. Alle 283 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
 
 ### source_summary
 
@@ -9536,7 +9536,7 @@ _Leere Liste._
 
 **source_location:** durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung
 
-**intended_change:** Vorgesehene Veränderung: Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern – durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
+**intended_change:** Vorgesehene Veränderung: Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern - durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
 
 **measure:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern …
 
@@ -9731,7 +9731,7 @@ _Leere Liste._
 
 **page:** 14
 
-**text:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern – durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
+**text:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern - durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
 
 **match_score:** 100.0
 
@@ -9754,7 +9754,7 @@ _Leere Liste._
 
 **source_page:** 14
 
-**source_text:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern – durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
+**source_text:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern - durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
 
 **topic:** HEALTH_CARE
 
@@ -9769,7 +9769,7 @@ _Leere Liste._
 
 **measure:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern …
 
-**intended_change:** Vorgesehene Veränderung: Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern – durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
+**intended_change:** Vorgesehene Veränderung: Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern - durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
 
 
 ##### component_topics
@@ -10519,7 +10519,7 @@ _Leere Liste._
 
 **source_location:** eine Einrichtung der öffentlichen Hand übertragen, die anders als Berufsstands-
 
-**intended_change:** Vorgesehene Veränderung: Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern – durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
+**intended_change:** Vorgesehene Veränderung: Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern - durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
 
 **measure:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern …
 
@@ -10722,7 +10722,7 @@ _Leere Liste._
 
 **page:** 14
 
-**text:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern – durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
+**text:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern - durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
 
 **match_score:** 100.0
 
@@ -10745,7 +10745,7 @@ _Leere Liste._
 
 **source_page:** 14
 
-**source_text:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern – durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
+**source_text:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern - durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
 
 **topic:** HEALTH_CARE
 
@@ -10760,7 +10760,7 @@ _Leere Liste._
 
 **measure:** Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern …
 
-**intended_change:** Vorgesehene Veränderung: Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern – durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
+**intended_change:** Vorgesehene Veränderung: Es sollen nicht nur die derzeit Sozialversicherungspflichtigen in unser Gesundheitssystem einzahlen, sondern alle Menschen in Deutschland an einer gerechten, solidarischen Finanzierung mitwirken. • Wir wollen einen Systemwechsel in der Pflegeversicherung hin zu einer gerechten, solidarischen und nachhaltigen Bürger:innenvollversicherung, die alle Pflegekosten ohne Zuzahlung abdeckt, damit alle Menschen, die pflegebedürftig werden, eine menschenwürdige und passgenaue Pflege erhalten. • Wir wollen, dass der Bund die Kommunen weiterhin tatkräftig bei der Kliniksanierung und bei Neubauten unterstützt und setzen uns für eine deutliche Aufstockung der Investitionsmittel für Krankenhäuser ein. • Wir wollen Arbeitszeiten, die Rücksicht auf die Bedürfnisse von Pflegekräften nehmen. • Wir wollen die gegenseitige Anerkennung von Pflegeausbildungen innerhalb der EU. • Wir wollen eine bedarfsgerechte medizinische Versorgung auf dem Land sichern - durch stärkere Anreize für die Ansiedlung von Ärzt:innen, die Schaffung durchlässiger Versorgungsstrukturen zwischen ambulantem und stationärem Sektor, erweiterte Kompetenzen für professionelle Pflegekräfte und den verstärkten Einsatz innovativer Techniken wie der Telemedizin. • Wir wollen die Hospiz- und Palliativversorgung weiter verbessern, indem wir die „Charta zur Betreuung schwerstkranker und sterbender Menschen“ umsetzen.
 
 
 ##### component_topics
@@ -18840,7 +18840,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0058-wir-wollen-eine-gerechte-finanzierung-des-klimaschutzes-welche-unternehm
 
-**source_location:** Klimaschutz endlich ernst nehmen – global denken, regional handeln
+**source_location:** Klimaschutz endlich ernst nehmen - global denken, regional handeln
 
 **intended_change:** Vorgesehene Veränderung: Der österreichische Klimabonus kann hier als Lösungsansatz dienen. • Wir wollen eine gerechte Finanzierung des Klimaschutzes, welche Unternehmen, die besonders hohe CO2-Emissionen verursachen, stärker in die Verantwortung nimmt.
 
@@ -19183,7 +19183,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0059-wir-wollen-klimaschadliche-subventionen-beenden
 
-**source_location:** Klimaschutz endlich ernst nehmen – global denken, regional handeln
+**source_location:** Klimaschutz endlich ernst nehmen - global denken, regional handeln
 
 **intended_change:** Vorgesehene Veränderung: Solche Einnahmen sollen gezielt in soziale und ökologische Maßnahmen investiert werden. • Wir wollen klimaschädliche Subventionen beenden.
 
@@ -19509,7 +19509,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0060-wir-wollen-nationale-und-flachendeckende-hitzeschutzplane-schaffung-von
 
-**source_location:** Klimaschutz endlich ernst nehmen – global denken, regional handeln
+**source_location:** Klimaschutz endlich ernst nehmen - global denken, regional handeln
 
 **intended_change:** Vorgesehene Veränderung: Dieses Vorhaben gefährdet nicht nur das UNESCO-Welterbe Wattenmeer, sondern ebnet auch den Weg für weitere fossile Investitionen. • Wir wollen nationale und flächendeckende Hitzeschutzpläne, Schaffung von Grünflächen in Städten zur Reduzierung der Hitzebelastung und die Entwicklung hitzeresistenter Infrastruktur fördern. • Wir wollen das deutsche Lieferkettengesetz weiterhin so unbürokratisch wie möglich gestalten.
 
@@ -19835,7 +19835,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0061-wir-wollen-starkere-investitionen-in-aus-und-weiterbildungsprogramme-um
 
-**source_location:** Klimaschutz endlich ernst nehmen – global denken, regional handeln
+**source_location:** Klimaschutz endlich ernst nehmen - global denken, regional handeln
 
 **intended_change:** Vorgesehene Veränderung: Sie wissen am besten, wie die Transformation gelingen kann. • Wir wollen stärkere Investitionen in Aus- und Weiterbildungsprogramme, um Beschäftigte für die Anforderungen einer klimaneutralen Wirtschaft zu qualifizieren.
 
@@ -20177,7 +20177,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0062-wir-wollen-dass-deutschland-bereits-deutlich-vor-2045-klimaneutral-wird-
 
-**source_location:** Klimaschutz endlich ernst nehmen – global denken, regional handeln
+**source_location:** Klimaschutz endlich ernst nehmen - global denken, regional handeln
 
 **intended_change:** Vorgesehene Veränderung: 23 • Wir wollen, dass Deutschland bereits deutlich vor 2045 klimaneutral wird; idealerweise schon bis 2035, wenn dies technisch und sozialverträglich möglich ist. • Wir wollen den Kohleausstieg sozialverträglich und schneller als bisher beabsichtigt umsetzen, idealerweise bis 2030. • Wir wollen kein neues Gasfeld vor Borkum.
 
@@ -20503,11 +20503,11 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0063-wir-wollen-erneuerbare-energien-uberall-dort-fordern-wo-es-sinnvoll-ist
 
-**source_location:** Klimaschutz endlich ernst nehmen – global denken, regional handeln
+**source_location:** Klimaschutz endlich ernst nehmen - global denken, regional handeln
 
-**intended_change:** Vorgesehene Veränderung: Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen – das geht nur über eine sozialverträgliche Umsetzung. • Wir wollen Erneuerbare Energien überall dort fördern, wo es sinnvoll ist.
+**intended_change:** Vorgesehene Veränderung: Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen - das geht nur über eine sozialverträgliche Umsetzung. • Wir wollen Erneuerbare Energien überall dort fördern, wo es sinnvoll ist.
 
-**measure:** Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen – das geht …
+**measure:** Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen - das geht …
 
 ##### decision_readiness
 
@@ -20699,7 +20699,7 @@ _Leere Liste._
 
 **page:** 57
 
-**text:** Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen – das geht nur über eine sozialverträgliche Umsetzung. • Wir wollen Erneuerbare Energien überall dort fördern, wo es sinnvoll ist.
+**text:** Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen - das geht nur über eine sozialverträgliche Umsetzung. • Wir wollen Erneuerbare Energien überall dort fördern, wo es sinnvoll ist.
 
 **match_score:** 100.0
 
@@ -20722,7 +20722,7 @@ _Leere Liste._
 
 **source_page:** 57
 
-**source_text:** Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen – das geht nur über eine sozialverträgliche Umsetzung. • Wir wollen Erneuerbare Energien überall dort fördern, wo es sinnvoll ist.
+**source_text:** Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen - das geht nur über eine sozialverträgliche Umsetzung. • Wir wollen Erneuerbare Energien überall dort fördern, wo es sinnvoll ist.
 
 **topic:** ENERGY_CLIMATE
 
@@ -20734,9 +20734,9 @@ _Leere Liste._
 
 - Finanzierungsumfang und Förderkriterien
 
-**measure:** Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen – das geht …
+**measure:** Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen - das geht …
 
-**intended_change:** Vorgesehene Veränderung: Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen – das geht nur über eine sozialverträgliche Umsetzung. • Wir wollen Erneuerbare Energien überall dort fördern, wo es sinnvoll ist.
+**intended_change:** Vorgesehene Veränderung: Wir stehen dafür, beim Umwelt- und Klimaschutz alle mitzunehmen - das geht nur über eine sozialverträgliche Umsetzung. • Wir wollen Erneuerbare Energien überall dort fördern, wo es sinnvoll ist.
 
 
 ##### component_topics
@@ -28110,7 +28110,7 @@ _Leere Liste._
 
 **source_location:** Grenzüberschreitenden Verkehr entwickeln
 
-**intended_change:** Vorgesehene Veränderung: Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste. • Wir wollen den Ausbau der Westküstenmagistrale – A23 und B5 – weiter voranbringen.
+**intended_change:** Vorgesehene Veränderung: Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste. • Wir wollen den Ausbau der Westküstenmagistrale - A23 und B5 - weiter voranbringen.
 
 **measure:** Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste
 
@@ -28312,7 +28312,7 @@ _Leere Liste._
 
 **page:** 30
 
-**text:** Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste. • Wir wollen den Ausbau der Westküstenmagistrale – A23 und B5 – weiter voranbringen.
+**text:** Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste. • Wir wollen den Ausbau der Westküstenmagistrale - A23 und B5 - weiter voranbringen.
 
 **match_score:** 100.0
 
@@ -28325,7 +28325,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen den Ausbau der Westküstenmagistrale – A23 und B5 – weiter
+**input_register_text:** Wir wollen den Ausbau der Westküstenmagistrale - A23 und B5 - weiter
 
 ##### source_components
 
@@ -28335,7 +28335,7 @@ _Leere Liste._
 
 **source_page:** 30
 
-**source_text:** Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste. • Wir wollen den Ausbau der Westküstenmagistrale – A23 und B5 – weiter voranbringen.
+**source_text:** Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste. • Wir wollen den Ausbau der Westküstenmagistrale - A23 und B5 - weiter voranbringen.
 
 **topic:** NATURE_WATER_RESOURCES
 
@@ -28349,7 +28349,7 @@ _Leere Liste._
 
 **measure:** Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste
 
-**intended_change:** Vorgesehene Veränderung: Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste. • Wir wollen den Ausbau der Westküstenmagistrale – A23 und B5 – weiter voranbringen.
+**intended_change:** Vorgesehene Veränderung: Damit entlasten wir das Nadelöhr Hamburg und stärken die Westküste. • Wir wollen den Ausbau der Westküstenmagistrale - A23 und B5 - weiter voranbringen.
 
 
 ##### component_topics
@@ -44592,9 +44592,9 @@ _Leere Liste._
 
 **source_location:** Produktion Erneuerbarer Energien, Energiespeicherung, Energieeffizienz, regionale
 
-**intended_change:** Vorgesehene Veränderung: Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen – Produktion Erneuerbarer Energien, Energiespeicherung, Energieeffizienz, regionale Lebensmittelproduktion oder Ökolandwirtschaft – bieten sich viele Möglichkeiten der wirtschaftlichen Zusammenarbeit. • Wir wollen, dass die Wirtschaftspolitik wieder zuverlässig wird.
+**intended_change:** Vorgesehene Veränderung: Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen - Produktion Erneuerbarer Energien, Energiespeicherung, Energieeffizienz, regionale Lebensmittelproduktion oder Ökolandwirtschaft - bieten sich viele Möglichkeiten der wirtschaftlichen Zusammenarbeit. • Wir wollen, dass die Wirtschaftspolitik wieder zuverlässig wird.
 
-**measure:** Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen – Produktion Erneuerbarer …
+**measure:** Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen - Produktion Erneuerbarer …
 
 ##### decision_readiness
 
@@ -44794,7 +44794,7 @@ _Leere Liste._
 
 **page:** 43
 
-**text:** Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen – Produktion Erneuerbarer Energien, Energiespeicherung, Energieeffizienz, regionale Lebensmittelproduktion oder Ökolandwirtschaft – bieten sich viele Möglichkeiten der wirtschaftlichen Zusammenarbeit. • Wir wollen, dass die Wirtschaftspolitik wieder zuverlässig wird.
+**text:** Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen - Produktion Erneuerbarer Energien, Energiespeicherung, Energieeffizienz, regionale Lebensmittelproduktion oder Ökolandwirtschaft - bieten sich viele Möglichkeiten der wirtschaftlichen Zusammenarbeit. • Wir wollen, dass die Wirtschaftspolitik wieder zuverlässig wird.
 
 **match_score:** 100.0
 
@@ -44817,7 +44817,7 @@ _Leere Liste._
 
 **source_page:** 43
 
-**source_text:** Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen – Produktion Erneuerbarer Energien, Energiespeicherung, Energieeffizienz, regionale Lebensmittelproduktion oder Ökolandwirtschaft – bieten sich viele Möglichkeiten der wirtschaftlichen Zusammenarbeit. • Wir wollen, dass die Wirtschaftspolitik wieder zuverlässig wird.
+**source_text:** Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen - Produktion Erneuerbarer Energien, Energiespeicherung, Energieeffizienz, regionale Lebensmittelproduktion oder Ökolandwirtschaft - bieten sich viele Möglichkeiten der wirtschaftlichen Zusammenarbeit. • Wir wollen, dass die Wirtschaftspolitik wieder zuverlässig wird.
 
 **topic:** ENERGY_CLIMATE
 
@@ -44829,9 +44829,9 @@ _Leere Liste._
 
 - Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz
 
-**measure:** Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen – Produktion Erneuerbarer …
+**measure:** Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen - Produktion Erneuerbarer …
 
-**intended_change:** Vorgesehene Veränderung: Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen – Produktion Erneuerbarer Energien, Energiespeicherung, Energieeffizienz, regionale Lebensmittelproduktion oder Ökolandwirtschaft – bieten sich viele Möglichkeiten der wirtschaftlichen Zusammenarbeit. • Wir wollen, dass die Wirtschaftspolitik wieder zuverlässig wird.
+**intended_change:** Vorgesehene Veränderung: Gerade in Bereichen, die beim Klimaschutz eine Rolle spielen - Produktion Erneuerbarer Energien, Energiespeicherung, Energieeffizienz, regionale Lebensmittelproduktion oder Ökolandwirtschaft - bieten sich viele Möglichkeiten der wirtschaftlichen Zusammenarbeit. • Wir wollen, dass die Wirtschaftspolitik wieder zuverlässig wird.
 
 
 ##### component_topics
@@ -48568,7 +48568,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0148-wir-wollen-forschung-und-entwicklung-starker-fordern-um-notwendige
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Der Bund darf sich bei der regionalen Strukturhilfe nicht allein auf die EU-Fonds verlassen. • Wir wollen, dass die bestehenden strukturpolitischen Handlungsmöglichkeiten auch nach dem Auslauf der kommenden EU-Programme im Jahr 2027 erhalten bleiben. • Wir wollen Forschung und Entwicklung stärker fördern, um notwendige Restrukturierungen zu durchdenken, planen und umzusetzen, z.
 
@@ -48902,7 +48902,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0149-wir-wollen-die-innovationsberatung-starken-mehr-beratungsangebote-fur
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Eine konsistente Gesetzgebung und transparente Entscheidungsprozesse sind notwendig, um Investitionen in grüne Technologien und nachhaltige Praktiken zu fördern. • Wir wollen die wirtschafts- und strukturpolitischen Rahmenbedingungen so setzen, dass kleinere und mittlere Unternehmen faire Wettbewerbsbedingungen erhalten. • Wir wollen eine nachhaltige Wirtschaftstransformation, die nicht nur ökonomisches Wachstum fördert, sondern auch soziale Gerechtigkeit und ökologische Nachhaltigkeit gewährleistet. • Wir wollen eine Wirtschaftspolitik, die sowohl quantitative als auch qualitative Nachhaltigkeitsstandards integriert. • Wir wollen unsere Unternehmen bei der Digitalisierung der Wirtschaft und auf dem Weg zu mehr Klimaschutz begleiten und unterstützen. • Wir wollen, dass Unternehmen Anreize erhalten, ihre Produkte und Dienstleistungen sozial gerecht und umweltfreundlich zu gestalten. • Wir wollen eine nachhaltige Industriepolitik und setzen uns dafür ein, die Industrie als maßgebliche Kraft in Forschung und Entwicklung auszubauen. • Wir wollen die Innovationsberatung stärken, mehr Beratungsangebote für Unternehmen zu Forschung und Entwicklung schaffen und Kooperationen mit der Wissenschaft erleichtern.
 
@@ -49237,7 +49237,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0150-wir-wollen-die-wirtschafts-und-strukturpolitischen-rahmenbedingungen-so-
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Eine konsistente Gesetzgebung und transparente Entscheidungsprozesse sind notwendig, um Investitionen in grüne Technologien und nachhaltige Praktiken zu fördern. • Wir wollen die wirtschafts- und strukturpolitischen Rahmenbedingungen so setzen, dass kleinere und mittlere Unternehmen faire Wettbewerbsbedingungen erhalten. • Wir wollen eine nachhaltige Wirtschaftstransformation, die nicht nur ökonomisches Wachstum fördert, sondern auch soziale Gerechtigkeit und ökologische Nachhaltigkeit gewährleistet. • Wir wollen eine Wirtschaftspolitik, die sowohl quantitative als auch qualitative Nachhaltigkeitsstandards integriert. • Wir wollen unsere Unternehmen bei der Digitalisierung der Wirtschaft und auf dem Weg zu mehr Klimaschutz begleiten und unterstützen. • Wir wollen, dass Unternehmen Anreize erhalten, ihre Produkte und Dienstleistungen sozial gerecht und umweltfreundlich zu gestalten. • Wir wollen eine nachhaltige Industriepolitik und setzen uns dafür ein, die Industrie als maßgebliche Kraft in Forschung und Entwicklung auszubauen. • Wir wollen die Innovationsberatung stärken, mehr Beratungsangebote für Unternehmen zu Forschung und Entwicklung schaffen und Kooperationen mit der Wissenschaft erleichtern.
 
@@ -49573,7 +49573,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0151-wir-wollen-eine-nachhaltige-industriepolitik-und-setzen-uns-dafur-ein-di
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Eine konsistente Gesetzgebung und transparente Entscheidungsprozesse sind notwendig, um Investitionen in grüne Technologien und nachhaltige Praktiken zu fördern. • Wir wollen die wirtschafts- und strukturpolitischen Rahmenbedingungen so setzen, dass kleinere und mittlere Unternehmen faire Wettbewerbsbedingungen erhalten. • Wir wollen eine nachhaltige Wirtschaftstransformation, die nicht nur ökonomisches Wachstum fördert, sondern auch soziale Gerechtigkeit und ökologische Nachhaltigkeit gewährleistet. • Wir wollen eine Wirtschaftspolitik, die sowohl quantitative als auch qualitative Nachhaltigkeitsstandards integriert. • Wir wollen unsere Unternehmen bei der Digitalisierung der Wirtschaft und auf dem Weg zu mehr Klimaschutz begleiten und unterstützen. • Wir wollen, dass Unternehmen Anreize erhalten, ihre Produkte und Dienstleistungen sozial gerecht und umweltfreundlich zu gestalten. • Wir wollen eine nachhaltige Industriepolitik und setzen uns dafür ein, die Industrie als maßgebliche Kraft in Forschung und Entwicklung auszubauen. • Wir wollen die Innovationsberatung stärken, mehr Beratungsangebote für Unternehmen zu Forschung und Entwicklung schaffen und Kooperationen mit der Wissenschaft erleichtern.
 
@@ -49901,7 +49901,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0152-wir-wollen-unsere-unternehmen-bei-der-digitalisierung-der-wirtschaft-und
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Eine konsistente Gesetzgebung und transparente Entscheidungsprozesse sind notwendig, um Investitionen in grüne Technologien und nachhaltige Praktiken zu fördern. • Wir wollen die wirtschafts- und strukturpolitischen Rahmenbedingungen so setzen, dass kleinere und mittlere Unternehmen faire Wettbewerbsbedingungen erhalten. • Wir wollen eine nachhaltige Wirtschaftstransformation, die nicht nur ökonomisches Wachstum fördert, sondern auch soziale Gerechtigkeit und ökologische Nachhaltigkeit gewährleistet. • Wir wollen eine Wirtschaftspolitik, die sowohl quantitative als auch qualitative Nachhaltigkeitsstandards integriert. • Wir wollen unsere Unternehmen bei der Digitalisierung der Wirtschaft und auf dem Weg zu mehr Klimaschutz begleiten und unterstützen. • Wir wollen, dass Unternehmen Anreize erhalten, ihre Produkte und Dienstleistungen sozial gerecht und umweltfreundlich zu gestalten. • Wir wollen eine nachhaltige Industriepolitik und setzen uns dafür ein, die Industrie als maßgebliche Kraft in Forschung und Entwicklung auszubauen. • Wir wollen die Innovationsberatung stärken, mehr Beratungsangebote für Unternehmen zu Forschung und Entwicklung schaffen und Kooperationen mit der Wissenschaft erleichtern.
 
@@ -50253,7 +50253,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0153-wir-wollen-dass-unternehmen-anreize-erhalten-ihre-produkte-und-dienstlei
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Eine konsistente Gesetzgebung und transparente Entscheidungsprozesse sind notwendig, um Investitionen in grüne Technologien und nachhaltige Praktiken zu fördern. • Wir wollen die wirtschafts- und strukturpolitischen Rahmenbedingungen so setzen, dass kleinere und mittlere Unternehmen faire Wettbewerbsbedingungen erhalten. • Wir wollen eine nachhaltige Wirtschaftstransformation, die nicht nur ökonomisches Wachstum fördert, sondern auch soziale Gerechtigkeit und ökologische Nachhaltigkeit gewährleistet. • Wir wollen eine Wirtschaftspolitik, die sowohl quantitative als auch qualitative Nachhaltigkeitsstandards integriert. • Wir wollen unsere Unternehmen bei der Digitalisierung der Wirtschaft und auf dem Weg zu mehr Klimaschutz begleiten und unterstützen. • Wir wollen, dass Unternehmen Anreize erhalten, ihre Produkte und Dienstleistungen sozial gerecht und umweltfreundlich zu gestalten. • Wir wollen eine nachhaltige Industriepolitik und setzen uns dafür ein, die Industrie als maßgebliche Kraft in Forschung und Entwicklung auszubauen. • Wir wollen die Innovationsberatung stärken, mehr Beratungsangebote für Unternehmen zu Forschung und Entwicklung schaffen und Kooperationen mit der Wissenschaft erleichtern.
 
@@ -50582,7 +50582,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0154-genau-diese-dynamik-wollen-wir-fordern-und-damit-nicht-zuletzt-auch-unse
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Genau diese Dynamik wollen wir fördern und damit nicht zuletzt auch unsere Wettbewerbsposition weiter verbessern. • Wir wollen das Sonderförderprogramm Tourismus auch über das Jahr 2025 hinaus verstetigen.
 
@@ -50908,7 +50908,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0155-wir-unterstutzen-initiativen-welche-die-arbeitsbelastung-begrenzen-und-d
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir unterstützen Initiativen, welche die Arbeitsbelastung begrenzen und die Vereinbarkeit von Familie und Beruf erleichtern.
 
@@ -51249,7 +51249,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0156-wir-wollen-die-grenzuberschreitende-vernetzung-im-tourismus-unterstutzen
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Damit können wir langfristig die touristische Infrastruktur, einzelbetriebliche Vorhaben, nichtinvestive Vorhaben und den Tourismus im ländlichen Raum stärken und den Fachkräften eine echte Perspektive bieten. • Wir wollen eine Förderpolitik, welche die energetische Optimierung touristischer Infrastruktur und die nachhaltige Nutzung unserer Ressourcen im Blick hat. • Wir wollen einen nachhaltigen Tourismus fördern, der ökologische, soziale und ökonomische Aspekte in Einklang bringt. • Wir wollen die grenzüberschreitende Vernetzung im Tourismus unterstützen. • Wir wollen die Sprachenvielfalt und die Vielfalt der Kulturen in Schleswig-Holstein als Alleinstellungsmerkmal unseres Landes sichtbarer machen. • Wir wollen den Stellenwert der schleswig-holsteinischen Welterbestätten (Weltkulturerbe Hansestadt Lübeck und Weltnaturerbe Wattenmeer) festigen, um sie als außergewöhnliche touristische Regionen weiterzuentwickeln.
 
@@ -51583,7 +51583,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0157-wir-wollen-einen-nachhaltigen-tourismus-fordern-der-okologische-soziale-
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Damit können wir langfristig die touristische Infrastruktur, einzelbetriebliche Vorhaben, nichtinvestive Vorhaben und den Tourismus im ländlichen Raum stärken und den Fachkräften eine echte Perspektive bieten. • Wir wollen eine Förderpolitik, welche die energetische Optimierung touristischer Infrastruktur und die nachhaltige Nutzung unserer Ressourcen im Blick hat. • Wir wollen einen nachhaltigen Tourismus fördern, der ökologische, soziale und ökonomische Aspekte in Einklang bringt. • Wir wollen die grenzüberschreitende Vernetzung im Tourismus unterstützen. • Wir wollen die Sprachenvielfalt und die Vielfalt der Kulturen in Schleswig-Holstein als Alleinstellungsmerkmal unseres Landes sichtbarer machen. • Wir wollen den Stellenwert der schleswig-holsteinischen Welterbestätten (Weltkulturerbe Hansestadt Lübeck und Weltnaturerbe Wattenmeer) festigen, um sie als außergewöhnliche touristische Regionen weiterzuentwickeln.
 
@@ -51909,7 +51909,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0158-wir-wollen-dass-die-wirtschaftsforderung-kunftig-auch-die-kriterien-des-
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Alle unabhängig ihres Geschlechts sollen mit ihrer Arbeit gleich viel verdienen. • Wir wollen, dass es zusätzlich zum Recht auf Teilzeitarbeit ebenso das Recht gibt, reduzierte Arbeitszeiten wieder in Vollzeit umzuwandeln. • Wir wollen, dass die Wirtschaftsförderung künftig auch die Kriterien des Konzepts der „Guten Arbeit“ berücksichtigt.
 
@@ -52243,7 +52243,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0159-wir-wollen-dass-es-zusatzlich-zum-recht-auf-teilzeitarbeit-ebenso-das-re
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Das Entgelttransparenzgesetz muss durch verpflichtende Prüfungen der betrieblichen Gehaltsstrukturen mit zertifizierten Prüfverfahren und niedrigeren Hürden für die Durchsetzung des individuellen Auskunftsanspruches effektiver gestaltet werden. • Wir wollen, dass es zusätzlich zum Recht auf Teilzeitarbeit ebenso das Recht gibt, reduzierte Arbeitszeiten wieder in Vollzeit umzuwandeln.
 
@@ -52577,7 +52577,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0160-wir-wollen-innovation-fordern-und-infrastruktur-fur-neue-netzwerke-wie-l
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Dezentrale Beratungsangebote sind wichtig, um Start-Ups und Co-Working-Modelle vor allem in ländlichen Räumen zu sichern. • Wir wollen die Finanzierung und Fördermöglichkeiten für Kultur- und Kreativschaffende ausbauen. • Wir wollen Innovation fördern und Infrastruktur für neue Netzwerke wie Long Range Wide Area Network (LoRaWAN) auf öffentlichen Gebäuden zu Verfügung stellen.
 
@@ -52911,7 +52911,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0161-wir-wollen-investitionen-in-bildung-und-qualifizierungsprogramme-um-die
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Gewerkschaftsbeitritt geschaffen werden. • Wir wollen Investitionen in Bildung und Qualifizierungsprogramme, um die Arbeitskräfte auf die Anforderungen einer klimaneutralen Wirtschaft vorzubereiten. • Wir wollen eine ressortübergreifende Innovations-, Forschungs- und Transferstrategie. • Wir wollen kleinere und mittlere Unternehmen mit verlässlichen digitalen Strukturen versorgen.
 
@@ -53255,7 +53255,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0162-wir-wollen-die-kreislaufwirtschaft-fordern-um-abfall-zu-reduzieren-und-r
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Diese Netzwerke sind ein wichtiger Faktor bei der Entwicklung von neuen Technologien für moderne Fabriken (Industrie 4.0) und Smart Homes. • Wir wollen die Kreislaufwirtschaft fördern, um Abfall zu reduzieren und Rohstoffe effizient zu nutzen.
 
@@ -53600,7 +53600,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0163-digitale-spaltung-verhindern-digitale-infrastruktur-flachendeckend-ausba
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Digitale Spaltung verhindern, digitale Infrastruktur flächendeckend ausbauen Die Digitalisierung prägt wie kaum eine andere Entwicklung das Leben im 21.
 
@@ -53946,7 +53946,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0164-wir-wollen-die-hafenstrategie-der-bundesregierung-weiterentwickeln-und
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Nur wenn wir diese Potenziale gezielt nutzen, können wir die maritime Wirtschaft im Norden als wirtschaftlichen Standortfaktor stärken und unseren Häfen eine langfristige Perspektive bieten. • Wir wollen die Hafenstrategie der Bundesregierung weiterentwickeln und konsequent umsetzen.
 
@@ -54274,7 +54274,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0165-wir-wollen-kritische-werftkapazitaten-fur-unser-land-sichern
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Angesichts der nationalen Bedeutung dieser Projekte müssen wir auch die Rolle kleinerer Häfen, insbesondere in Schleswig-Holstein, stärker berücksichtigen. • Wir wollen kritische Werftkapazitäten für unser Land sichern.
 
@@ -54600,11 +54600,11 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0166-wir-wollen-dass-unsere-regionale-wirtschaft-vom-staatlich-geforderten-au
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
-**intended_change:** Vorgesehene Veränderung: Es darf keine Einzelentscheidungen mehr geben – die Zukunft der Branche muss strategisch angegangen werden. • Wir wollen, dass unsere regionale Wirtschaft vom staatlich geförderten Ausbau der Offshore-Windkraft profitiert und dadurch Industriearbeitsplätze im Norden erhalten und geschaffen werden.
+**intended_change:** Vorgesehene Veränderung: Es darf keine Einzelentscheidungen mehr geben - die Zukunft der Branche muss strategisch angegangen werden. • Wir wollen, dass unsere regionale Wirtschaft vom staatlich geförderten Ausbau der Offshore-Windkraft profitiert und dadurch Industriearbeitsplätze im Norden erhalten und geschaffen werden.
 
-**measure:** Es darf keine Einzelentscheidungen mehr geben – die Zukunft der Branche muss …
+**measure:** Es darf keine Einzelentscheidungen mehr geben - die Zukunft der Branche muss …
 
 ##### decision_readiness
 
@@ -54828,7 +54828,7 @@ _Leere Liste._
 
 **page:** 50
 
-**text:** Es darf keine Einzelentscheidungen mehr geben – die Zukunft der Branche muss strategisch angegangen werden. • Wir wollen, dass unsere regionale Wirtschaft vom staatlich geförderten Ausbau der Offshore-Windkraft profitiert und dadurch Industriearbeitsplätze im Norden erhalten und geschaffen werden.
+**text:** Es darf keine Einzelentscheidungen mehr geben - die Zukunft der Branche muss strategisch angegangen werden. • Wir wollen, dass unsere regionale Wirtschaft vom staatlich geförderten Ausbau der Offshore-Windkraft profitiert und dadurch Industriearbeitsplätze im Norden erhalten und geschaffen werden.
 
 **match_score:** 100.0
 
@@ -54851,7 +54851,7 @@ _Leere Liste._
 
 **source_page:** 50
 
-**source_text:** Es darf keine Einzelentscheidungen mehr geben – die Zukunft der Branche muss strategisch angegangen werden. • Wir wollen, dass unsere regionale Wirtschaft vom staatlich geförderten Ausbau der Offshore-Windkraft profitiert und dadurch Industriearbeitsplätze im Norden erhalten und geschaffen werden.
+**source_text:** Es darf keine Einzelentscheidungen mehr geben - die Zukunft der Branche muss strategisch angegangen werden. • Wir wollen, dass unsere regionale Wirtschaft vom staatlich geförderten Ausbau der Offshore-Windkraft profitiert und dadurch Industriearbeitsplätze im Norden erhalten und geschaffen werden.
 
 **topic:** ECONOMY_INDUSTRY_TRADE
 
@@ -54863,9 +54863,9 @@ _Leere Liste._
 
 - Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz
 
-**measure:** Es darf keine Einzelentscheidungen mehr geben – die Zukunft der Branche muss …
+**measure:** Es darf keine Einzelentscheidungen mehr geben - die Zukunft der Branche muss …
 
-**intended_change:** Vorgesehene Veränderung: Es darf keine Einzelentscheidungen mehr geben – die Zukunft der Branche muss strategisch angegangen werden. • Wir wollen, dass unsere regionale Wirtschaft vom staatlich geförderten Ausbau der Offshore-Windkraft profitiert und dadurch Industriearbeitsplätze im Norden erhalten und geschaffen werden.
+**intended_change:** Vorgesehene Veränderung: Es darf keine Einzelentscheidungen mehr geben - die Zukunft der Branche muss strategisch angegangen werden. • Wir wollen, dass unsere regionale Wirtschaft vom staatlich geförderten Ausbau der Offshore-Windkraft profitiert und dadurch Industriearbeitsplätze im Norden erhalten und geschaffen werden.
 
 
 ##### component_topics
@@ -54958,7 +54958,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0167-wir-wollen-den-ausbau-von-wlan-zugangen-im-offentlichen-raum-uberall-wo-
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Diese Orte spielen für uns eine besondere Rolle, weil sie Kompetenzen im Umgang mit neuen Medien vermitteln. • Wir wollen den Ausbau von WLAN-Zugängen im öffentlichen Raum überall, wo es sinnvoll ist, fördern.
 
@@ -55284,7 +55284,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0168-wir-wollen-eine-weitgehende-digitalisierung-von-verwaltungsprozessen-auf
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Vor allem an Schulen und in Bibliotheken muss es einen freien WLAN-Zugang geben. • Wir wollen eine weitgehende Digitalisierung von Verwaltungsprozessen auf allen staatlichen Ebenen, um einen besseren Service zu leisten und mehr Transparenz herzustellen.
 
@@ -55633,7 +55633,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0169-wir-wollen-dass-der-bund-den-ausbau-des-schnellen-internets-in-den-nachs
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: 51 • Wir wollen, dass der Bund den Ausbau des schnellen Internets in den nächsten Jahren weiter voranbringt und die Kommunen dabei unterstützt, Lösungen vor Ort zu erarbeiten.
 
@@ -55959,7 +55959,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0170-wir-wollen-das-grund-und-oberflachenwasser-besser-schutzen-und
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Diese Maßnahmen sind ein wichtiger Schritt, bei dem aber auch klar sein muss: Die Stärkung des Tierwohl wird entsprechende Hilfen für unsere Landwirt:innen benötigen, um eine zukunftsfähige Landwirtschaft zu sichern. • Wir wollen, dass die bäuerliche Landwirtschaft ein wichtiger Teil unserer Gesellschaft in Schleswig-Holstein bleibt. • Wir wollen das Grund- und Oberflächenwasser besser schützen und Düngeeinträge minimieren.
 
@@ -56293,7 +56293,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0171-wir-wollen-eine-regionalere-und-nachhaltigere-landwirtschaftspolitik-abe
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir wollen eine regionalere und nachhaltigere Landwirtschaftspolitik, aber die Landwirtschaft muss so aufgestellt sein, dass die Landwirt:innen in Schleswig-Holstein eine Zukunft haben.
 
@@ -56651,7 +56651,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0172-wir-wollen-so-schnell-wie-moglich-eine-bauerlich-gepragte-landwirtschaft
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir wollen so schnell wie möglich eine bäuerlich geprägte Landwirtschaft, die ressourcenschonend und nachhaltig arbeitet, Aspekte des Tierwohls, der Biodiversität, des Gewässerund des Bodenschutzes stärker berücksichtigt und es mit den Herausforderungen des Klimawandels und der Wetterextreme aufnehmen kann.
 
@@ -57017,7 +57017,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0173-wir-wollen-das-grunland-weiter-starken-auch-weil-es-als-biologische-co2-
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: 53 • Wir wollen den Vertragsnaturschutz stärken, um Anreize für landschaftspflegerische Maßnahmen zu schaffen und naturnahe Kulturlandschaften besser zu schützen. • Wir wollen, dass Maßnahmen des Natur- und Umweltschutzes finanziell kompensiert werden, um einen Anreiz für die Landwirt:innen zu schaffen, diese umzusetzen. • Wir wollen das Grünland weiter stärken, auch weil es als biologische CO2-Senke einen wichtigen Beitrag zum Klimaschutz leistet. • Wir wollen die Nutzung von Niederungen und Moorflächen anpassen und sie wieder in einen Zustand versetzen, in dem sie ihre Funktion als CO2-Speicher besser wahrnehmen können.
 
@@ -57343,7 +57343,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0174-wir-wollen-den-verbraucherschutz-starken
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Bioprodukte sowie nachhaltig und regional produzierte Nahrungsmittel müssen auch für Menschen mit geringen Einkommen erschwinglich sein. • Wir wollen den Verbraucherschutz stärken.
 
@@ -57651,7 +57651,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0175-wir-wollen-den-vertragsnaturschutz-starken-um-anreize-fur-landschafts
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: 53 • Wir wollen den Vertragsnaturschutz stärken, um Anreize für landschaftspflegerische Maßnahmen zu schaffen und naturnahe Kulturlandschaften besser zu schützen. • Wir wollen, dass Maßnahmen des Natur- und Umweltschutzes finanziell kompensiert werden, um einen Anreiz für die Landwirt:innen zu schaffen, diese umzusetzen. • Wir wollen das Grünland weiter stärken, auch weil es als biologische CO2-Senke einen wichtigen Beitrag zum Klimaschutz leistet. • Wir wollen die Nutzung von Niederungen und Moorflächen anpassen und sie wieder in einen Zustand versetzen, in dem sie ihre Funktion als CO2-Speicher besser wahrnehmen können.
 
@@ -57984,7 +57984,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0176-wir-wollen-die-nutzung-von-niederungen-und-moorflachen-anpassen-und-sie
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: 53 • Wir wollen den Vertragsnaturschutz stärken, um Anreize für landschaftspflegerische Maßnahmen zu schaffen und naturnahe Kulturlandschaften besser zu schützen. • Wir wollen, dass Maßnahmen des Natur- und Umweltschutzes finanziell kompensiert werden, um einen Anreiz für die Landwirt:innen zu schaffen, diese umzusetzen. • Wir wollen das Grünland weiter stärken, auch weil es als biologische CO2-Senke einen wichtigen Beitrag zum Klimaschutz leistet. • Wir wollen die Nutzung von Niederungen und Moorflächen anpassen und sie wieder in einen Zustand versetzen, in dem sie ihre Funktion als CO2-Speicher besser wahrnehmen können.
 
@@ -58310,7 +58310,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0177-wir-wollen-die-veredlung-landwirtschaftlicher-produkte-in-den-regionen-f
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: In Vermarktungsstrategien müssen Regionalität, Nachhaltigkeit und fairer Handel berücksichtigt werden. • Wir wollen die Veredlung landwirtschaftlicher Produkte in den Regionen fördern.
 
@@ -58659,7 +58659,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0178-wir-wollen-einen-besseren-insektenschutz
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Dafür muss das Thema auch in der landwirtschaftlichen Ausbildung gestärkt werden. • Wir wollen einen besseren Insektenschutz.
 
@@ -58985,7 +58985,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0179-wir-wollen-sowohl-konventionelle-als-auch-okologische-landwirtschaft-unt
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Dafür brauchen wir eine Reform der EU-Agrarzahlungen. • Wir wollen sowohl konventionelle als auch ökologische Landwirtschaft unterstützen; beide haben ihre Berechtigung.
 
@@ -59332,7 +59332,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0180-wir-wollen-dass-biodiversitat-in-der-landwirtschaft-starker-berucksichti
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Zum Erhalt dieser Flächen brauchen wir Klimaschutz- und Flächenprogramme. • Wir wollen, dass Biodiversität in der Landwirtschaft stärker berücksichtigt wird.
 
@@ -59682,7 +59682,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0181-wir-wollen-dass-manahmen-des-natur-und-umweltschutzes-finanziell
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: 53 • Wir wollen den Vertragsnaturschutz stärken, um Anreize für landschaftspflegerische Maßnahmen zu schaffen und naturnahe Kulturlandschaften besser zu schützen. • Wir wollen, dass Maßnahmen des Natur- und Umweltschutzes finanziell kompensiert werden, um einen Anreiz für die Landwirt:innen zu schaffen, diese umzusetzen. • Wir wollen das Grünland weiter stärken, auch weil es als biologische CO2-Senke einen wichtigen Beitrag zum Klimaschutz leistet. • Wir wollen die Nutzung von Niederungen und Moorflächen anpassen und sie wieder in einen Zustand versetzen, in dem sie ihre Funktion als CO2-Speicher besser wahrnehmen können.
 
@@ -60008,7 +60008,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0182-wir-wollen-dass-die-eu-agrarforderung-sich-starker-an-sozialen-und-okolo
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Mechanische und ökologische Bewirtschaftungsformen müssen stärker in Betracht gezogen werden. • Wir wollen, dass der Einsatz von Antibiotika, Hormonen und Medikamenten in der Tierproduktion auf ein verantwortliches Maß reduziert wird, denn wir benötigen lebensrettende Reserveantibiotika für die Humanmedizin, um die weitere Zunahme von Resistenzen zu vermeiden. • Wir wollen, dass die EU-Agrarförderung sich stärker an sozialen und ökologischen Standards orientiert.
 
@@ -60343,7 +60343,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0183-wir-setzen-uns-weiterhin-fur-den-erhalt-der-traditionellen-und-nachhalti
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir setzen uns weiterhin für den Erhalt der traditionellen und nachhaltigen Fischerei ein.
 
@@ -60677,7 +60677,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0184-wir-werden-uns-im-bundestag-fur-eine-anderung-der-eu-fischereipolitik-ei
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir werden uns im Bundestag für eine Änderung der EU-Fischereipolitik einsetzen. • Wir wollen die handwerkliche und traditionelle Fischerei sichern und fördern; ihre wirtschaftliche Existenz darf nicht gefährdet werden.
 
@@ -61022,7 +61022,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0185-wir-wollen-die-fischereikomponente-des-windenergie-auf-see-gesetzes-sich
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Das erhöht die Wertschöpfung auch für die handwerkliche Fischerei. • Wir wollen die kontrollierte und nachhaltige Aufzucht von Fischen, Muscheln, Krebsen oder Algen durch Aquakultur weiter stärken. • Wir wollen ein bundesweites und im europäischen Kontext abgestimmtes Kormoranmanagement, um den Schutz von Artenvielfalt und Fischereibeständen zu gewährleisten. • Wir wollen die Fischereikomponente des Windenergie-auf-See-Gesetzes sichern.
 
@@ -61364,7 +61364,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0186-wir-wollen-die-handwerkliche-und-traditionelle-fischerei-sichern-und-for
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir werden uns im Bundestag für eine Änderung der EU-Fischereipolitik einsetzen. • Wir wollen die handwerkliche und traditionelle Fischerei sichern und fördern; ihre wirtschaftliche Existenz darf nicht gefährdet werden.
 
@@ -61708,7 +61708,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0187-wir-wollen-die-nachhaltige-fischerei-in-deutschen-gewassern-starken
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Dafür benötigen wir auf einer wissenschaftlichen Grundlage festgelegte Fangquoten, deren Einhaltung besser überwacht wird. • Wir wollen gemeinsam mit den Fischereibetrieben und Fischereigenossenschaften tragfähige Lösungen erarbeiten, um wirtschaftliche Herausforderungen zu überstehen. • Wir wollen keine Schleppnetzfischerei oder anderes schweres Geschirr in ökologisch sensiblen Gebieten. • Wir wollen, dass die erfolgreiche freiwillige Vereinbarung zum Schutz von Schweinswalen und Meeresenten fortgesetzt wird. • Wir wollen die nachhaltige Fischerei in deutschen Gewässern stärken.
 
@@ -62042,7 +62042,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0188-wir-wollen-die-regionale-vermarktung-von-fischereiprodukten-starken
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Das bestehende MSC-Siegel (Marine Stewardship Council) für eine zertifizierte und nachhaltige Fischerei muss weiterentwickelt werden. • Wir wollen die regionale Vermarktung von Fischereiprodukten stärken.
 
@@ -62391,7 +62391,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0189-wir-wollen-dass-die-erfolgreiche-freiwillige-vereinbarung-zum-schutz-von
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Dafür benötigen wir auf einer wissenschaftlichen Grundlage festgelegte Fangquoten, deren Einhaltung besser überwacht wird. • Wir wollen gemeinsam mit den Fischereibetrieben und Fischereigenossenschaften tragfähige Lösungen erarbeiten, um wirtschaftliche Herausforderungen zu überstehen. • Wir wollen keine Schleppnetzfischerei oder anderes schweres Geschirr in ökologisch sensiblen Gebieten. • Wir wollen, dass die erfolgreiche freiwillige Vereinbarung zum Schutz von Schweinswalen und Meeresenten fortgesetzt wird. • Wir wollen die nachhaltige Fischerei in deutschen Gewässern stärken.
 
@@ -62717,7 +62717,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0190-wir-wollen-den-mehrwertsteuersatz-fur-babyprodukte-auf-7-senken-um-elter
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Auch die unteren Einkommen leiden unter Sozialbeiträgen, die nahezu ohne Freibeträge direkt greifen und das Einkommen reduzieren. • Wir wollen den Mehrwertsteuersatz für Babyprodukte auf 7 % senken, um Eltern und Familien zu entlasten.
 
@@ -63043,7 +63043,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0191-wir-wollen-eine-deutliche-erhohung-der-jahrlichen-fordermittel-des-lande
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir wollen eine deutliche Erhöhung der jährlichen Fördermittel des Landes nach dem Krankenhausfinanzierungsgesetz, damit notwendige Investitionen getätigt werden können. • Wir wollen die noch vorhandenen Krankenhäuser der Kreise in öffentlicher Hand behalten, um die medizinische Versorgung im ländlichen Raum zu sichern.
 
@@ -63385,7 +63385,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0192-wir-wollen-eine-konsequente-umsetzung-des-konnexitatsprinzips
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir wollen und brauchen einen handlungsstarken Staat, der mit Steuergeldern sorgsam umgeht, in Kooperation mit den Kommunen die Daseinsvorsorge vor Ort sicherstellt, Investitionen zum Gemeinwohl tätigt und für die Bedürftigen soziale Sicherungssysteme bereitstellt. • Wir wollen eine konsequente Umsetzung des Konnexitätsprinzips.
 
@@ -63711,7 +63711,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0193-wir-wollen-und-brauchen-einen-handlungsstarken-staat-der-mit-steuergelde
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir wollen und brauchen einen handlungsstarken Staat, der mit Steuergeldern sorgsam umgeht, in Kooperation mit den Kommunen die Daseinsvorsorge vor Ort sicherstellt, Investitionen zum Gemeinwohl tätigt und für die Bedürftigen soziale Sicherungssysteme bereitstellt. • Wir wollen eine konsequente Umsetzung des Konnexitätsprinzips.
 
@@ -64061,7 +64061,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0194-wir-wollen-dass-aufgaben-der-daseinsvorsorge-nicht-weiter-privatisiert-w
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Zur Daseinsvorsorge gehören auch Sparkassen oder Genossenschaftsbanken, welche die Grundversorgung mit Bankdienstleistungen sichern und wichtige Partner:innen von Wirtschaft, Gesellschaft und Politik der Region sind. • Wir wollen, dass Aufgaben der Daseinsvorsorge nicht weiter privatisiert werden.
 
@@ -64387,7 +64387,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0195-wir-wollen-das-steuerrecht-endlich-vereinfachen-und-gerechter-gestalten
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Wir wollen das Steuerrecht endlich vereinfachen und gerechter gestalten.
 
@@ -64721,7 +64721,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0196-wir-wollen-die-staatseinnahmen-durch-einfuhrung-einer-vermogensteuer-erh
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Aber die Steuersätze für diese Kategorie sollen auf ein angemessenes Niveau angehoben werden, weil starke Schultern mehr tragen können als schwache. • Wir wollen die Staatseinnahmen durch Einführung einer Vermögensteuer erhöhen.
 
@@ -65052,7 +65052,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0197-wir-wollen-die-offentlich-rechtliche-sparkassenstruktur-erhalten
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: 56 • Wir wollen, dass die Energieversorgung überall dort, wo es möglich ist, in öffentliche Hände zurückgebracht wird. • Wir wollen die öffentlich-rechtliche Sparkassenstruktur erhalten.
 
@@ -65386,7 +65386,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0198-wir-wollen-eine-erbschaftsteuerreform-welche-die-steuerbelastung-durch-d
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Hier muss es angemessene Freibeträge geben. • Wir wollen eine Erbschaftsteuerreform, welche die Steuerbelastung durch die Erbschaftsteuer gerechter gestaltet.
 
@@ -65719,7 +65719,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0199-wir-wollen-eine-reform-des-ehegatt-innensplittings-hin-zu-einem-familien
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Es gilt, insgesamt ein ausgewogenes System zu schaffen, um das Gemeinwesen, das allen gehört, für alle da ist und von allen gemeinschaftlich finanziert wird, als einen solidarischen Verbund zu stärken und zu erhalten. • Wir wollen einen armutsfesten Mindestlohn in Höhe von mindestens 15 Euro pro Stunde. • Wir wollen niedrige Einkommen bei den Sozialbeträgen entlasten. • Wir wollen zusätzlich zu der Entlastung von den Sozialbeiträgen den Grundfreibetrag erhöhen, um niedrige Einkommen auch bei der Einkommensteuer zu entlasten. • Wir wollen eine Reform des Ehegatt:innensplittings hin zu einem Familiensplitting.
 
@@ -66045,7 +66045,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0200-wir-wollen-niedrige-einkommen-bei-den-sozialbetragen-entlasten
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Es gilt, insgesamt ein ausgewogenes System zu schaffen, um das Gemeinwesen, das allen gehört, für alle da ist und von allen gemeinschaftlich finanziert wird, als einen solidarischen Verbund zu stärken und zu erhalten. • Wir wollen einen armutsfesten Mindestlohn in Höhe von mindestens 15 Euro pro Stunde. • Wir wollen niedrige Einkommen bei den Sozialbeträgen entlasten. • Wir wollen zusätzlich zu der Entlastung von den Sozialbeiträgen den Grundfreibetrag erhöhen, um niedrige Einkommen auch bei der Einkommensteuer zu entlasten. • Wir wollen eine Reform des Ehegatt:innensplittings hin zu einem Familiensplitting.
 
@@ -66371,7 +66371,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0201-wir-wollen-zusatzlich-zu-der-entlastung-von-den-sozialbeitragen-den
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Es gilt, insgesamt ein ausgewogenes System zu schaffen, um das Gemeinwesen, das allen gehört, für alle da ist und von allen gemeinschaftlich finanziert wird, als einen solidarischen Verbund zu stärken und zu erhalten. • Wir wollen einen armutsfesten Mindestlohn in Höhe von mindestens 15 Euro pro Stunde. • Wir wollen niedrige Einkommen bei den Sozialbeträgen entlasten. • Wir wollen zusätzlich zu der Entlastung von den Sozialbeiträgen den Grundfreibetrag erhöhen, um niedrige Einkommen auch bei der Einkommensteuer zu entlasten. • Wir wollen eine Reform des Ehegatt:innensplittings hin zu einem Familiensplitting.
 
@@ -66697,7 +66697,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-ssw-0202-wir-wollen-dass-mindestens-in-der-eu-eine-finanztransaktionssteuer-fur-s
 
-**source_location:** durch Nachhaltigkeit geprägt ist – bei der Förderung sollen die 17 UN-
+**source_location:** durch Nachhaltigkeit geprägt ist - bei der Förderung sollen die 17 UN-
 
 **intended_change:** Vorgesehene Veränderung: Die Privilegierung großer Erbschaften wollen wir beseitigen und gleichzeitig vor allem kleine und mittlere Unternehmen durch großzügige Freibeträge schützen. • Wir wollen, dass mindestens in der EU eine Finanztransaktionssteuer für sämtliche Umsätze am Wertpapiermarkt erhoben wird.
 
@@ -68646,7 +68646,7 @@ _Leere Liste._
 
 **source_location:** durch Transparenz und Dialoge auf Augenhöhe Akzeptanz herstellen, z. B. bei
 
-**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 **measure:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und …
 
@@ -68841,7 +68841,7 @@ _Leere Liste._
 
 **page:** 58
 
-**text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 **match_score:** 100.0
 
@@ -68864,7 +68864,7 @@ _Leere Liste._
 
 **source_page:** 58
 
-**source_text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**source_text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -68879,7 +68879,7 @@ _Leere Liste._
 
 **measure:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und …
 
-**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 
 ##### component_topics
@@ -68974,7 +68974,7 @@ _Leere Liste._
 
 **source_location:** durch Transparenz und Dialoge auf Augenhöhe Akzeptanz herstellen, z. B. bei
 
-**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 **measure:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und …
 
@@ -69169,7 +69169,7 @@ _Leere Liste._
 
 **page:** 58
 
-**text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 **match_score:** 100.0
 
@@ -69192,7 +69192,7 @@ _Leere Liste._
 
 **source_page:** 58
 
-**source_text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**source_text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -69207,7 +69207,7 @@ _Leere Liste._
 
 **measure:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und …
 
-**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 
 ##### component_topics
@@ -69636,7 +69636,7 @@ _Leere Liste._
 
 **source_location:** durch Transparenz und Dialoge auf Augenhöhe Akzeptanz herstellen, z. B. bei
 
-**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 **measure:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und …
 
@@ -69831,7 +69831,7 @@ _Leere Liste._
 
 **page:** 58
 
-**text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 **match_score:** 100.0
 
@@ -69854,7 +69854,7 @@ _Leere Liste._
 
 **source_page:** 58
 
-**source_text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**source_text:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -69869,7 +69869,7 @@ _Leere Liste._
 
 **measure:** Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und …
 
-**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal – und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
+**intended_change:** Vorgesehene Veränderung: Auch der öffentliche Dienst in Schleswig-Holstein steht im Wettbewerb um gutes und gut ausgebildetes Personal - und zwar nicht nur mit der Privatwirtschaft, sondern auch mit der Bundesverwaltung und anderen Landesverwaltungen. • Wir wollen, dass das Weihnachtsgeld für Beamt:innen weiterhin gezahlt wird und der Bund sich dafür einsetzt, dass auch in den Ländern das Weihnachtsgeld oder eine entsprechende Sonderzahlung weiterhin gezahlt bzw. wieder eingeführt wird. • Wir wollen eine weitere Flexibilisierung der Arbeitszeit zur besseren Vereinbarkeit von Familie und Beruf umsetzen, die sich an den Bedürfnissen unterschiedlicher Lebensphasen orientiert. • Wir wollen dafür sorgen, dass der öffentliche Dienst gerade auch für Berufseinsteiger:innen attraktiv bleibt. • Wir wollen eine höhere Durchlässigkeit zwischen den Laufbahngruppen umsetzen. • Wir wollen eine weitere Verbesserung der Gesundheitsprävention. • Wir wollen, dass die Kommunen im Sinne der Beschäftigten eine größere Flexibilität im Personalmanagement erhalten.
 
 
 ##### component_topics
@@ -76526,7 +76526,7 @@ _Leere Liste._
 
 **source_location:** unabhängig von individuellen Fähigkeiten, ethnischer oder sozialer Herkunft, Geschlecht
 
-**intended_change:** Vorgesehene Veränderung: Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch die Länder zu solchen motivieren. • Wir wollen außergerichtliche Formen der Beilegung von Rechtsstreitigkeiten – von der Mediation bei der:dem Güterichter:in bis hin zum Täter:in-Opfer Ausgleich – als wichtige Ergänzungen unseres Rechtssystems weiter stärken. • Wir wollen Abmahnungen als Geschäftsmodell verhindern.
+**intended_change:** Vorgesehene Veränderung: Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch die Länder zu solchen motivieren. • Wir wollen außergerichtliche Formen der Beilegung von Rechtsstreitigkeiten - von der Mediation bei der:dem Güterichter:in bis hin zum Täter:in-Opfer Ausgleich - als wichtige Ergänzungen unseres Rechtssystems weiter stärken. • Wir wollen Abmahnungen als Geschäftsmodell verhindern.
 
 **measure:** Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch …
 
@@ -76720,7 +76720,7 @@ _Leere Liste._
 
 **page:** 69
 
-**text:** Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch die Länder zu solchen motivieren. • Wir wollen außergerichtliche Formen der Beilegung von Rechtsstreitigkeiten – von der Mediation bei der:dem Güterichter:in bis hin zum Täter:in-Opfer Ausgleich – als wichtige Ergänzungen unseres Rechtssystems weiter stärken. • Wir wollen Abmahnungen als Geschäftsmodell verhindern.
+**text:** Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch die Länder zu solchen motivieren. • Wir wollen außergerichtliche Formen der Beilegung von Rechtsstreitigkeiten - von der Mediation bei der:dem Güterichter:in bis hin zum Täter:in-Opfer Ausgleich - als wichtige Ergänzungen unseres Rechtssystems weiter stärken. • Wir wollen Abmahnungen als Geschäftsmodell verhindern.
 
 **match_score:** 100.0
 
@@ -76743,7 +76743,7 @@ _Leere Liste._
 
 **source_page:** 69
 
-**source_text:** Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch die Länder zu solchen motivieren. • Wir wollen außergerichtliche Formen der Beilegung von Rechtsstreitigkeiten – von der Mediation bei der:dem Güterichter:in bis hin zum Täter:in-Opfer Ausgleich – als wichtige Ergänzungen unseres Rechtssystems weiter stärken. • Wir wollen Abmahnungen als Geschäftsmodell verhindern.
+**source_text:** Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch die Länder zu solchen motivieren. • Wir wollen außergerichtliche Formen der Beilegung von Rechtsstreitigkeiten - von der Mediation bei der:dem Güterichter:in bis hin zum Täter:in-Opfer Ausgleich - als wichtige Ergänzungen unseres Rechtssystems weiter stärken. • Wir wollen Abmahnungen als Geschäftsmodell verhindern.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -76757,7 +76757,7 @@ _Leere Liste._
 
 **measure:** Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch …
 
-**intended_change:** Vorgesehene Veränderung: Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch die Länder zu solchen motivieren. • Wir wollen außergerichtliche Formen der Beilegung von Rechtsstreitigkeiten – von der Mediation bei der:dem Güterichter:in bis hin zum Täter:in-Opfer Ausgleich – als wichtige Ergänzungen unseres Rechtssystems weiter stärken. • Wir wollen Abmahnungen als Geschäftsmodell verhindern.
+**intended_change:** Vorgesehene Veränderung: Hier kann der Bund durch Änderungen des Bundesbesoldungsgesetzes Veränderungen herbeiführen und auch die Länder zu solchen motivieren. • Wir wollen außergerichtliche Formen der Beilegung von Rechtsstreitigkeiten - von der Mediation bei der:dem Güterichter:in bis hin zum Täter:in-Opfer Ausgleich - als wichtige Ergänzungen unseres Rechtssystems weiter stärken. • Wir wollen Abmahnungen als Geschäftsmodell verhindern.
 
 
 ##### component_topics
@@ -78196,9 +78196,9 @@ _Leere Liste._
 
 **source_location:** unabhängig von individuellen Fähigkeiten, ethnischer oder sozialer Herkunft, Geschlecht
 
-**intended_change:** Vorgesehene Veränderung: Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
+**intended_change:** Vorgesehene Veränderung: Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
 
-**measure:** Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von …
+**measure:** Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von …
 
 ##### decision_readiness
 
@@ -78389,7 +78389,7 @@ _Leere Liste._
 
 **page:** 71
 
-**text:** Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
+**text:** Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
 
 **match_score:** 92.3
 
@@ -78412,7 +78412,7 @@ _Leere Liste._
 
 **source_page:** 71
 
-**source_text:** Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
+**source_text:** Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
 
 **topic:** HEALTH_CARE
 
@@ -78424,9 +78424,9 @@ _Leere Liste._
 
 _Leere Liste._
 
-**measure:** Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von …
+**measure:** Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von …
 
-**intended_change:** Vorgesehene Veränderung: Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
+**intended_change:** Vorgesehene Veränderung: Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
 
 
 ##### component_topics
@@ -78521,9 +78521,9 @@ _Leere Liste._
 
 **source_location:** unabhängig von individuellen Fähigkeiten, ethnischer oder sozialer Herkunft, Geschlecht
 
-**intended_change:** Vorgesehene Veränderung: Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
+**intended_change:** Vorgesehene Veränderung: Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
 
-**measure:** Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von …
+**measure:** Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von …
 
 ##### decision_readiness
 
@@ -78714,7 +78714,7 @@ _Leere Liste._
 
 **page:** 71
 
-**text:** Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
+**text:** Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
 
 **match_score:** 100.0
 
@@ -78737,7 +78737,7 @@ _Leere Liste._
 
 **source_page:** 71
 
-**source_text:** Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
+**source_text:** Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
 
 **topic:** HEALTH_CARE
 
@@ -78749,9 +78749,9 @@ _Leere Liste._
 
 _Leere Liste._
 
-**measure:** Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von …
+**measure:** Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von …
 
-**intended_change:** Vorgesehene Veränderung: Härtere Strafen lösen keine Probleme – stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
+**intended_change:** Vorgesehene Veränderung: Härtere Strafen lösen keine Probleme - stattdessen brauchen wir den Ausbau von Präventionsangeboten, Beratungsstellen und Hilfsprogrammen für Drogenkonsument:innen und ihre Angehörigen. • Wir wollen, dass Angebote der Beratung und Drogenprävention, besonders an Schulen, weiter ausgebaut werden. • Wir wollen die Gesundheitsversorgung und Hilfsangebote für Drogenabhängige ausbauen. • Wir wollen den Ausbau von Hilfs- und Betreuungsangeboten für Familienangehörige von Konsument:innen vorantreiben. • Wir wollen einen Ausbau der Ersatzangebote. • Wir wollen, dass der Bund gesetzliche Rahmenbedingungen schafft, um DrugChecking-Angebote in ganz Deutschland zu legalisieren und auszuweiten.
 
 
 ##### component_topics
@@ -79193,7 +79193,7 @@ _Leere Liste._
 
 **source_location:** unabhängig von individuellen Fähigkeiten, ethnischer oder sozialer Herkunft, Geschlecht
 
-**intended_change:** Vorgesehene Veränderung: Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft werden. • Wir wollen die Einführung einer elektronischen Fußfessel für Täter – sie sollen in ihrer Bewegungsfreiheit eingeschränkt werden, nicht die Opfer von psychischer und physischer Gewalt. • Wir wollen eine verpflichtende Aus- und Fortbildung aller Polizeikräfte, insbesondere der Bundespolizei. • Wir wollen eine bessere Ausstattung der Fachberatungsstellen, damit Opfer von digitaler Gewalt Technikberatung und Hilfeleistungen erhalten können. • Wir wollen, dass bundesweit ein Hochrisiko-Bewertungsinstrument eingeführt wird, und so Fälle häuslicher oder partnerschaftlicher Gewalt erkennen, bevor sie in schwersten Gewalteskalationen oder Femiziden enden.
+**intended_change:** Vorgesehene Veränderung: Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft werden. • Wir wollen die Einführung einer elektronischen Fußfessel für Täter - sie sollen in ihrer Bewegungsfreiheit eingeschränkt werden, nicht die Opfer von psychischer und physischer Gewalt. • Wir wollen eine verpflichtende Aus- und Fortbildung aller Polizeikräfte, insbesondere der Bundespolizei. • Wir wollen eine bessere Ausstattung der Fachberatungsstellen, damit Opfer von digitaler Gewalt Technikberatung und Hilfeleistungen erhalten können. • Wir wollen, dass bundesweit ein Hochrisiko-Bewertungsinstrument eingeführt wird, und so Fälle häuslicher oder partnerschaftlicher Gewalt erkennen, bevor sie in schwersten Gewalteskalationen oder Femiziden enden.
 
 **measure:** Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft …
 
@@ -79387,7 +79387,7 @@ _Leere Liste._
 
 **page:** 72
 
-**text:** Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft werden. • Wir wollen die Einführung einer elektronischen Fußfessel für Täter – sie sollen in ihrer Bewegungsfreiheit eingeschränkt werden, nicht die Opfer von psychischer und physischer Gewalt. • Wir wollen eine verpflichtende Aus- und Fortbildung aller Polizeikräfte, insbesondere der Bundespolizei. • Wir wollen eine bessere Ausstattung der Fachberatungsstellen, damit Opfer von digitaler Gewalt Technikberatung und Hilfeleistungen erhalten können. • Wir wollen, dass bundesweit ein Hochrisiko-Bewertungsinstrument eingeführt wird, und so Fälle häuslicher oder partnerschaftlicher Gewalt erkennen, bevor sie in schwersten Gewalteskalationen oder Femiziden enden.
+**text:** Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft werden. • Wir wollen die Einführung einer elektronischen Fußfessel für Täter - sie sollen in ihrer Bewegungsfreiheit eingeschränkt werden, nicht die Opfer von psychischer und physischer Gewalt. • Wir wollen eine verpflichtende Aus- und Fortbildung aller Polizeikräfte, insbesondere der Bundespolizei. • Wir wollen eine bessere Ausstattung der Fachberatungsstellen, damit Opfer von digitaler Gewalt Technikberatung und Hilfeleistungen erhalten können. • Wir wollen, dass bundesweit ein Hochrisiko-Bewertungsinstrument eingeführt wird, und so Fälle häuslicher oder partnerschaftlicher Gewalt erkennen, bevor sie in schwersten Gewalteskalationen oder Femiziden enden.
 
 **match_score:** 100.0
 
@@ -79400,7 +79400,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen die Einführung einer elektronischen Fußfessel für Täter – sie sollen in
+**input_register_text:** Wir wollen die Einführung einer elektronischen Fußfessel für Täter - sie sollen in
 
 ##### source_components
 
@@ -79410,7 +79410,7 @@ _Leere Liste._
 
 **source_page:** 72
 
-**source_text:** Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft werden. • Wir wollen die Einführung einer elektronischen Fußfessel für Täter – sie sollen in ihrer Bewegungsfreiheit eingeschränkt werden, nicht die Opfer von psychischer und physischer Gewalt. • Wir wollen eine verpflichtende Aus- und Fortbildung aller Polizeikräfte, insbesondere der Bundespolizei. • Wir wollen eine bessere Ausstattung der Fachberatungsstellen, damit Opfer von digitaler Gewalt Technikberatung und Hilfeleistungen erhalten können. • Wir wollen, dass bundesweit ein Hochrisiko-Bewertungsinstrument eingeführt wird, und so Fälle häuslicher oder partnerschaftlicher Gewalt erkennen, bevor sie in schwersten Gewalteskalationen oder Femiziden enden.
+**source_text:** Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft werden. • Wir wollen die Einführung einer elektronischen Fußfessel für Täter - sie sollen in ihrer Bewegungsfreiheit eingeschränkt werden, nicht die Opfer von psychischer und physischer Gewalt. • Wir wollen eine verpflichtende Aus- und Fortbildung aller Polizeikräfte, insbesondere der Bundespolizei. • Wir wollen eine bessere Ausstattung der Fachberatungsstellen, damit Opfer von digitaler Gewalt Technikberatung und Hilfeleistungen erhalten können. • Wir wollen, dass bundesweit ein Hochrisiko-Bewertungsinstrument eingeführt wird, und so Fälle häuslicher oder partnerschaftlicher Gewalt erkennen, bevor sie in schwersten Gewalteskalationen oder Femiziden enden.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -79424,7 +79424,7 @@ _Leere Liste._
 
 **measure:** Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft …
 
-**intended_change:** Vorgesehene Veränderung: Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft werden. • Wir wollen die Einführung einer elektronischen Fußfessel für Täter – sie sollen in ihrer Bewegungsfreiheit eingeschränkt werden, nicht die Opfer von psychischer und physischer Gewalt. • Wir wollen eine verpflichtende Aus- und Fortbildung aller Polizeikräfte, insbesondere der Bundespolizei. • Wir wollen eine bessere Ausstattung der Fachberatungsstellen, damit Opfer von digitaler Gewalt Technikberatung und Hilfeleistungen erhalten können. • Wir wollen, dass bundesweit ein Hochrisiko-Bewertungsinstrument eingeführt wird, und so Fälle häuslicher oder partnerschaftlicher Gewalt erkennen, bevor sie in schwersten Gewalteskalationen oder Femiziden enden.
+**intended_change:** Vorgesehene Veränderung: Durch Präventionsmaßnahmen und ein gesellschaftliches Umdenken muss die Kernursache des Problems bekämpft werden. • Wir wollen die Einführung einer elektronischen Fußfessel für Täter - sie sollen in ihrer Bewegungsfreiheit eingeschränkt werden, nicht die Opfer von psychischer und physischer Gewalt. • Wir wollen eine verpflichtende Aus- und Fortbildung aller Polizeikräfte, insbesondere der Bundespolizei. • Wir wollen eine bessere Ausstattung der Fachberatungsstellen, damit Opfer von digitaler Gewalt Technikberatung und Hilfeleistungen erhalten können. • Wir wollen, dass bundesweit ein Hochrisiko-Bewertungsinstrument eingeführt wird, und so Fälle häuslicher oder partnerschaftlicher Gewalt erkennen, bevor sie in schwersten Gewalteskalationen oder Femiziden enden.
 
 
 ##### component_topics
@@ -88605,7 +88605,7 @@ _Leere Liste._
 
 **source_location:** Schwangerschaftswoche eine Regenerationszeit nach einer Fehlgeburt innerhalb
 
-**intended_change:** Vorgesehene Veränderung: Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben – unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
+**intended_change:** Vorgesehene Veränderung: Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben - unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
 
 **measure:** Hierbei muss der Bund eine ausreichende Finanzierung sichern
 
@@ -88806,7 +88806,7 @@ _Leere Liste._
 
 **page:** 84
 
-**text:** Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben – unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
+**text:** Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben - unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
 
 **match_score:** 100.0
 
@@ -88829,7 +88829,7 @@ _Leere Liste._
 
 **source_page:** 84
 
-**source_text:** Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben – unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
+**source_text:** Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben - unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
 
 **topic:** EDUCATION
 
@@ -88843,7 +88843,7 @@ _Leere Liste._
 
 **measure:** Hierbei muss der Bund eine ausreichende Finanzierung sichern
 
-**intended_change:** Vorgesehene Veränderung: Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben – unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
+**intended_change:** Vorgesehene Veränderung: Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben - unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
 
 
 ##### component_topics
@@ -88938,7 +88938,7 @@ _Leere Liste._
 
 **source_location:** Schwangerschaftswoche eine Regenerationszeit nach einer Fehlgeburt innerhalb
 
-**intended_change:** Vorgesehene Veränderung: Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben – unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
+**intended_change:** Vorgesehene Veränderung: Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben - unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
 
 **measure:** Hierbei muss der Bund eine ausreichende Finanzierung sichern
 
@@ -89132,7 +89132,7 @@ _Leere Liste._
 
 **page:** 84
 
-**text:** Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben – unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
+**text:** Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben - unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
 
 **match_score:** 100.0
 
@@ -89155,7 +89155,7 @@ _Leere Liste._
 
 **source_page:** 84
 
-**source_text:** Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben – unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
+**source_text:** Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben - unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
 
 **topic:** EDUCATION
 
@@ -89169,7 +89169,7 @@ _Leere Liste._
 
 **measure:** Hierbei muss der Bund eine ausreichende Finanzierung sichern
 
-**intended_change:** Vorgesehene Veränderung: Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben – unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
+**intended_change:** Vorgesehene Veränderung: Hierbei muss der Bund eine ausreichende Finanzierung sichern. • Wir wollen verbindliche Mindeststandards für Lehrpläne, digitale Infrastruktur und Lehrkräfteausbildung, um Bildungsungleichheiten zwischen den Bundesländern zu reduzieren. • Wir wollen, dass alle Jugendlichen einen Ausbildungsplatz erhalten, und fordern die Bundesfinanzierung eines Programms zur Sicherstellung von Ausbildungsplätzen, damit alle Jugendliche eine berufliche Perspektive haben - unabhängig von der wirtschaftlichen Lage des jeweiligen Bundeslandes. • Wir wollen, dass Bildung von der Krippe bis zur Hochschule bundesweit kostenfrei ist.
 
 
 ##### component_topics

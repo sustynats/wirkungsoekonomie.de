@@ -1,4 +1,4 @@
-# Nachrichtenfluss und Betriebskosten – 6. September 2026
+# Nachrichtenfluss und Betriebskosten - 6. September 2026
 
 ## Befund und Freigabe
 

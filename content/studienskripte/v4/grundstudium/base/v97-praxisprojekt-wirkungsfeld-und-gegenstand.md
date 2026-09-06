@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein gutes Praxisprojekt beginnt nicht mit „Ich möchte Klima untersuchen“. Das ist zu groß. Du brauchst einen **konkreten Wirkungsgegenstand**: ein Produkt, eine Entscheidung, ein Gesetz, ein Programm, eine Investition oder eine Institution – mit Quelle, Version, Zeitraum und Systemgrenze. Erst wenn klar ist, *was* du wirklich analysierst, kannst du Problem, Ziel und Wirkung sauber prüfen.
+Ein gutes Praxisprojekt beginnt nicht mit „Ich möchte Klima untersuchen“. Das ist zu groß. Du brauchst einen **konkreten Wirkungsgegenstand**: ein Produkt, eine Entscheidung, ein Gesetz, ein Programm, eine Investition oder eine Institution - mit Quelle, Version, Zeitraum und Systemgrenze. Erst wenn klar ist, *was* du wirklich analysierst, kannst du Problem, Ziel und Wirkung sauber prüfen.
 
 ## Lernziele
 
@@ -105,7 +105,7 @@ Fragen:
 - welche Bevölkerungs-/Nutzergruppe?
 - direkte und indirekte Wirkung?
 
-Die Systemgrenze wird begründet – und später in der Sensitivitätsanalyse geprüft.
+Die Systemgrenze wird begründet - und später in der Sensitivitätsanalyse geprüft.
 
 ## 6. Stakeholder vs. Wirkungsempfänger
 
@@ -246,7 +246,7 @@ Und „die Wirkung eines Gesetzes“ ist noch zu unscharf, wenn wir nicht wissen
 
 Darum bauen wir zuerst einen Project Charter.
 
-Was ist das konkrete Objekt? Welche Primärquelle? Welche Version? Welcher Zeitraum? Wer ist betroffen? Was gehört zum Systemrand – und was ausdrücklich nicht?
+Was ist das konkrete Objekt? Welche Primärquelle? Welche Version? Welcher Zeitraum? Wer ist betroffen? Was gehört zum Systemrand - und was ausdrücklich nicht?
 
 Bei Politik kommt noch Lifecycle dazu.
 

@@ -37,13 +37,13 @@
       "shortDefinition": "Ein Key Impact Indicator ist eine steuerbare Beobachtungsgröße für Zustandsveränderungen, Wirkungsrisiken oder Wirkungspotenziale.",
       "longDefinition": "Ein Key Impact Indicator (KII) ist eine zentrale Wirkungskennzahl für eine konkrete Steuerungsfrage. Er beschreibt nicht bloß, wie viel geleistet wurde, sondern welche Zustandsveränderung innerhalb einer definierten Bilanzgrenze beobachtet oder belastbar geschätzt wird. Ein KII kann gemessen oder berechnet sein; es gibt jedoch keine allgemeingültige Formel für alle KII.",
       "woekRelation": "KII verbinden Wirkpfad, Datenqualität, Scorecard und Entscheidung. Sie ergänzen KPI: Ein KPI kann Leistung oder Effizienz zeigen; ein KII muss den Bezug zur tatsächlichen Wirkung, zu Nebenwirkungen und zur Rückkopplung offenlegen.",
-      "usageNote": "Jeden KII mit Einheit, Zähler und Nenner – soweit vorhanden –, Bezugsgröße, Ausgangswert, Zielzustand, Zeitraum, Systemgrenze, Datenquelle, Unsicherheit und Entscheidungsregel dokumentieren.",
+      "usageNote": "Jeden KII mit Einheit, Zähler und Nenner - soweit vorhanden -, Bezugsgröße, Ausgangswert, Zielzustand, Zeitraum, Systemgrenze, Datenquelle, Unsicherheit und Entscheidungsregel dokumentieren.",
       "calculationModel": {
         "title": "Kennzahlenblatt statt Scheingenauigkeit",
         "explanation": "Ein KII erhält seine Formel aus der konkret definierten Zustandsveränderung; eine pauschale KII-Formel wäre fachlich irreführend.",
         "steps": [
           "Wirkpfad und zu verändernden Zustand bestimmen.",
-          "Messgröße, Einheit und – bei Verhältniskennzahlen – Zähler, Nenner und Bezugsgröße festlegen.",
+          "Messgröße, Einheit und - bei Verhältniskennzahlen - Zähler, Nenner und Bezugsgröße festlegen.",
           "Ausgangswert, Zielwert, Zeitraum und Systemgrenze dokumentieren.",
           "Datenqualität, Schätzanteil, Unsicherheit und relevante Nebenwirkungen ausweisen.",
           "Schwelle und konkrete Steuerungsfolge festlegen; bei Grenzverletzungen eskalieren statt wegmitteln."
@@ -152,8 +152,8 @@
       "canonicalLabel": "WÖk-Netto-Wirkungsindex",
       "formula": {
         "title": "Grundformel des WÖk-Netto-Wirkungsindex",
-        "expression": "WÖk-Netto-Wirkungsindex = Summe gewichteter positiver Wirkungen − Summe gewichteter negativer Wirkungen; positive Ausweisung nur bei G = 1",
-        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mtext>WÖk-Netto-Wirkungsindex</mtext><mo>=</mo><munderover><mo>∑</mo><mi>i</mi><mi>n</mi></munderover><msubsup><mi>w</mi><mi>i</mi><mo>+</mo></msubsup><msubsup><mi>ΔZ</mi><mi>i</mi><mo>+</mo></msubsup><mo>−</mo><munderover><mo>∑</mo><mi>j</mi><mi>m</mi></munderover><msubsup><mi>w</mi><mi>j</mi><mo>−</mo></msubsup><msubsup><mi>ΔZ</mi><mi>j</mi><mo>−</mo></msubsup></mrow></math>",
+        "expression": "WÖk-Netto-Wirkungsindex = Summe gewichteter positiver Wirkungen - Summe gewichteter negativer Wirkungen; positive Ausweisung nur bei G = 1",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mtext>WÖk-Netto-Wirkungsindex</mtext><mo>=</mo><munderover><mo>∑</mo><mi>i</mi><mi>n</mi></munderover><msubsup><mi>w</mi><mi>i</mi><mo>+</mo></msubsup><msubsup><mi>ΔZ</mi><mi>i</mi><mo>+</mo></msubsup><mo>-</mo><munderover><mo>∑</mo><mi>j</mi><mi>m</mi></munderover><msubsup><mi>w</mi><mi>j</mi><mo>-</mo></msubsup><msubsup><mi>ΔZ</mi><mi>j</mi><mo>-</mo></msubsup></mrow></math>",
         "explanation": "Die Summen beziehen sich nur auf Wirkungen innerhalb der offengelegten Systemgrenze, des Zeitraums und der Bewertungslogik. Gewichte machen Relevanz, Verteilung und Zeitbezug nachvollziehbar. Datenqualität und Unsicherheit sind Prüfmerkmale; sie multiplizieren weder positive noch negative Wirkungen.",
         "variables": ["Positive und negative Wirkungen müssen auf derselben dokumentierten Skala bewertet werden.", "Gewichte, Zurechnung, Systemgrenze und Unsicherheit sind offen zu legen.", "G ist das Schutz-Gate: Bei G = 0 darf kein positiver WÖk-Netto-Wirkungsindex ausgewiesen werden."],
         "note": "Die Formel ist eine Grundstruktur, keine Lizenz zum Wegrechnen: Wirkungsgrenzen, Nichtkompensation und Reverse Merit Order begrenzen den Index."
@@ -174,11 +174,11 @@
       "id": "t-sroi",
       "termId": "t-sroi",
       "slug": "t-sroi",
-      "canonicalLabel": "T-SROI – Transformational Social Return on Investment",
+      "canonicalLabel": "T-SROI - Transformational Social Return on Investment",
       "formula": {
         "title": "T-SROI-Grundformel und konservative Gate-Untergrenze",
-        "expression": "T-SROI = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ) / (1 + r)ᵗ] ÷ Σ(t=0…T)[(Iₜ + Kₜ) / (1 + rₖ)ᵗ]; PV_N^L = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) · (1 − uₜ) − Sₜ) / (1 + r)ᵗ]",
-        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>T-SROI</mi><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><mfrac><mrow><mo>(</mo><mo>(</mo><msub><mi>B</mi><mtext>direkt,t</mtext></msub><mo>+</mo><msub><mi>B</mi><mtext>transformativ,t</mtext></msub><mo>)</mo><mo>·</mo><msub><mi>a</mi><mi>t</mi></msub><mo>·</mo><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>d</mi><mi>t</mi></msub><mo>)</mo><mo>·</mo><mo>(</mo><mn>1</mn><mo>−</mo><msub><mi>v</mi><mi>t</mi></msub><mo>)</mo><mo>−</mo><msub><mi>S</mi><mi>t</mi></msub><mo>)</mo></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo>)</mo></mrow><mi>t</mi></msup></mfrac></mrow><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><mrow><msub><mi>I</mi><mi>t</mi></msub><mo>+</mo><msub><mi>K</mi><mi>t</mi></msub></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>k</mi></msub><mo>)</mo></mrow><mi>t</mi></msup></mfrac></mrow></mfrac></mrow></math>",
+        "expression": "T-SROI = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 - dₜ) · (1 - vₜ) - Sₜ) / (1 + r)ᵗ] ÷ Σ(t=0…T)[(Iₜ + Kₜ) / (1 + rₖ)ᵗ]; PV_N^L = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 - dₜ) · (1 - vₜ) · (1 - uₜ) - Sₜ) / (1 + r)ᵗ]",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>T-SROI</mi><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><mfrac><mrow><mo>(</mo><mo>(</mo><msub><mi>B</mi><mtext>direkt,t</mtext></msub><mo>+</mo><msub><mi>B</mi><mtext>transformativ,t</mtext></msub><mo>)</mo><mo>·</mo><msub><mi>a</mi><mi>t</mi></msub><mo>·</mo><mo>(</mo><mn>1</mn><mo>-</mo><msub><mi>d</mi><mi>t</mi></msub><mo>)</mo><mo>·</mo><mo>(</mo><mn>1</mn><mo>-</mo><msub><mi>v</mi><mi>t</mi></msub><mo>)</mo><mo>-</mo><msub><mi>S</mi><mi>t</mi></msub><mo>)</mo></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo>)</mo></mrow><mi>t</mi></msup></mfrac></mrow><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><mfrac><mrow><msub><mi>I</mi><mi>t</mi></msub><mo>+</mo><msub><mi>K</mi><mi>t</mi></msub></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mi>k</mi></msub><mo>)</mo></mrow><mi>t</mi></msup></mfrac></mrow></mfrac></mrow></math>",
         "explanation": "Bdirekt und Btransformativ sind getrennt belegte jährliche Nutzenströme in Euro derselben Preisbasis; S sind konservativ angesetzte jährliche Schäden innerhalb derselben Systemgrenze. a steht für Attribution, d für Counterfactual/Deadweight und v für Verdrängung des beanspruchten Nutzens. I und K sind Investition und inkrementelle Kosten; die heute anfallende Investition I₀ steht im Nenner bei t = 0 und wird deshalb nicht abgezinst. PV_N^L ist ausschließlich die Gate-Untergrenze: Der dokumentierte Szenarioabschlag u reduziert pro Jahr nur den bereits kausal begrenzten Nutzen, nicht S.",
         "variables": ["Alle Terme im Zähler und Nenner sind Euro derselben Preisbasis; Punkte, Reichweite und Datenqualität gehören nicht in die Bruchrechnung.", "T ist eine ganze Zahl von Jahren mit T ≥ 1. Der Nutzenzeitraum beginnt bei t = 1; Ressourcen werden von t = 0 bis T erfasst, damit eine Anfangsinvestition I₀ eindeutig enthalten ist.", "Btransformativ ist ein separat belegter zukünftiger Nutzenstrom, kein frei wählbarer Hebel oder Multiplikator.", "S wird im Grundmodell nicht mit dem Nutzenfaktor oder mit u reduziert. Eine niedrigere Schaden-Zurechnung verlangt eine gesondert belegte Gegenfaktik und darf nicht einfach angenommen werden.", "u liegt zwischen 0 und 1 und ist ein dokumentierter konservativer Szenarioabschlag auf den beanspruchten Nutzen; PV_N^L ist keine statistische Konfidenzgrenze.", "r und rₖ, Zeitraum, Attribution, Counterfactual, Verdrängung, Systemgrenze, Unsicherheit und Sensitivitäten sind offen zu legen."],
         "note": "T-SROI darf nur bei offenem Schutz-Gate G = 1 positiv ausgewiesen werden. Das Gate verlangt auch PV_N^L > 0. Bei roter Linie, negativem Kernprofil, unzureichender Datenqualität oder nicht positiver konservativer Untergrenze lautet das Ergebnis: blockiert oder nicht bewertbar."
@@ -192,7 +192,7 @@
       "source": "WÖk-Begriffsleitfaden · T-SROI-Rechenstandard",
       "officialSources": [
         {"label": "OECD: Measure, Manage and Maximise Your Impact", "url": "https://www.oecd.org/en/publications/measure-manage-and-maximise-your-impact_2238c1f1-en/full-report/component-8.html", "sourceType": "Methodische Einordnung zu Attribution und Counterfactual"},
-        {"label": "Social Value International: Principle 5 – Do not overclaim", "url": "https://www.socialvalueint.org/principle-5-do-not-overclaim", "sourceType": "Methodische Schutzregel gegen Überzuschreibung"}
+        {"label": "Social Value International: Principle 5 - Do not overclaim", "url": "https://www.socialvalueint.org/principle-5-do-not-overclaim", "sourceType": "Methodische Schutzregel gegen Überzuschreibung"}
       ],
       "status": "approved",
       "version": "2.0",
@@ -255,7 +255,7 @@
       "formula": {
         "title": "Grundformel der Netto-Wirkungsrendite",
         "expression": "Netto-Wirkungsrendite = Barwert des kausal zugerechneten direkten Nettonutzens in EUR / Barwert des eingesetzten Kapitals in EUR",
-        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>r</mi><mtext>Wirkung</mtext></msub><mo>=</mo><mfrac><mrow><mi>PV</mi><mo>(</mo><msub><mi>B</mi><mi>direkt</mi></msub><mo>−</mo><mi>S</mi><mo>)</mo></mrow><mrow><mi>PV</mi><mo>(</mo><mi>K</mi><mo>)</mo></mrow></mfrac></mrow></math>",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>r</mi><mtext>Wirkung</mtext></msub><mo>=</mo><mfrac><mrow><mi>PV</mi><mo>(</mo><msub><mi>B</mi><mi>direkt</mi></msub><mo>-</mo><mi>S</mi><mo>)</mo></mrow><mrow><mi>PV</mi><mo>(</mo><mi>K</mi><mo>)</mo></mrow></mfrac></mrow></math>",
         "explanation": "Die Formel beschreibt eine kapitalbezogene Euro-zu-Euro-Kennzahl. NWI ist ein vorgelagertes Wirkungsprofil und Schutz-Gate; T-SROI schließt separat belegte transformative Nutzenströme ein. Keiner dieser Werte darf ohne eigene Monetarisierung als austauschbarer Zähler eingesetzt werden.",
         "note": "Finanzrendite und Wirkungsrendite sind getrennt auszuweisen. Die Kennzahl ist keine Anlageempfehlung und kein Garantieversprechen."
       },
@@ -279,7 +279,7 @@
       "formula": {
         "title": "Verhältnis öffentlicher Wirkung und Mitteleinsatz",
         "expression": "Wirkungsrendite öffentlicher Ausgaben = Barwert des kausal zugerechneten direkten Nettonutzens in EUR / Barwert klar abgegrenzter öffentlicher Ausgaben in EUR",
-        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>r</mi><mtext>öffentlich</mtext></msub><mo>=</mo><mfrac><mrow><mi>PV</mi><mo>(</mo><msub><mi>B</mi><mi>direkt</mi></msub><mo>−</mo><mi>S</mi><mo>)</mo></mrow><mrow><mi>PV</mi><mo>(</mo><msub><mi>A</mi><mtext>öffentlich</mtext></msub><mo>)</mo></mrow></mfrac></mrow></math>",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>r</mi><mtext>öffentlich</mtext></msub><mo>=</mo><mfrac><mrow><mi>PV</mi><mo>(</mo><msub><mi>B</mi><mi>direkt</mi></msub><mo>-</mo><mi>S</mi><mo>)</mo></mrow><mrow><mi>PV</mi><mo>(</mo><msub><mi>A</mi><mtext>öffentlich</mtext></msub><mo>)</mo></mrow></mfrac></mrow></math>",
         "explanation": "Die Kennzahl vergleicht ausschließlich Eurogrößen derselben Preisbasis. Gesellschaftliche, ökologische und demokratische Wirkungsprofile bleiben zusätzlich sichtbar; sie werden nicht ohne eigene Monetarisierung zum Euro-Zähler.",
         "note": "Sie ersetzt weder eine demokratische Haushaltsentscheidung noch die Prüfung nicht kompensierbarer Schäden."
       },

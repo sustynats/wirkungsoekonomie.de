@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v54-arbeit-wirkleistung-und-verteilung.md curriculum=4.0 sanitized=true -->
-# V54 · Arbeit, Wirkleistung und Verteilung – Wertschöpfung, Wirkung und Entlohnung auseinanderhalten
+# V54 · Arbeit, Wirkleistung und Verteilung - Wertschöpfung, Wirkung und Entlohnung auseinanderhalten
 
 **lecture_id:** `WOEK-G-BASE-054`  
 **display_code:** `V54`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Arbeit kann wirtschaftlichen Wert schaffen, gesellschaftlich wichtige Wirkung erzeugen – oder beides. Aber Lohn, Produktivität und Wirkung sind nicht dasselbe. Eine Pflegekraft kann große gesellschaftliche Wirkung haben, ohne hohen Marktlohn. Eine sehr profitable Tätigkeit kann zugleich externe Schäden erzeugen. WÖk nutzt **Wirkleistung** als Analysebegriff für den Beitrag einer Tätigkeit zu relevanten Zustandsänderungen – nicht als moralische Rangliste von Menschen.
+Arbeit kann wirtschaftlichen Wert schaffen, gesellschaftlich wichtige Wirkung erzeugen - oder beides. Aber Lohn, Produktivität und Wirkung sind nicht dasselbe. Eine Pflegekraft kann große gesellschaftliche Wirkung haben, ohne hohen Marktlohn. Eine sehr profitable Tätigkeit kann zugleich externe Schäden erzeugen. WÖk nutzt **Wirkleistung** als Analysebegriff für den Beitrag einer Tätigkeit zu relevanten Zustandsänderungen - nicht als moralische Rangliste von Menschen.
 
 ## Lernziele
 
@@ -98,7 +98,7 @@ Wenn Technologie Produktivität erhöht, können Gewinne fließen an:
 
 WÖk fragt:
 
-> Wer erhält welchen Anteil – und wie verändern sich Arbeitsbedingungen/Chancen?
+> Wer erhält welchen Anteil - und wie verändern sich Arbeitsbedingungen/Chancen?
 
 ## 6. Automatisierung und KI
 
@@ -221,7 +221,7 @@ Wir analysieren Tätigkeiten, Prozesse und Systeme.
 
 Und wir schauen auf Arbeitsqualität. Ein neuer Job ist nicht automatisch ein guter Job.
 
-Bei KI wird das besonders spannend: Produktivität kann steigen – aber wer bekommt die Gewinne? Werden gefährliche Routinen reduziert oder Menschen stärker überwacht?
+Bei KI wird das besonders spannend: Produktivität kann steigen - aber wer bekommt die Gewinne? Werden gefährliche Routinen reduziert oder Menschen stärker überwacht?
 
 Der Merksatz lautet:
 

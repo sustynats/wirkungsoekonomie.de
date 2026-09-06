@@ -1,4 +1,4 @@
-# ltw-2026-st-bsw – commitment-register – vollständige Darstellung
+# ltw-2026-st-bsw - commitment-register - vollständige Darstellung
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -81,9 +81,9 @@
 
 **commitment_key:** ltw-2026-st-bsw-0003-wir-lehnen-jede-weitere-militaerische-erweiterung-von-trup
 
-**title:** jede weitere militärische Erweiterung von Truppenübungsplätzen in Sachsen-Anhalt ab – insbesondere in …
+**title:** jede weitere militärische Erweiterung von Truppenübungsplätzen in Sachsen-Anhalt ab - insbesondere in …
 
-**commitment_text:** Wir lehnen jede weitere militärische Erweiterung von Truppenübungsplätzen in Sachsen-Anhalt ab – insbesondere in der Letzlinger Heide und im Zeitzer Forst.
+**commitment_text:** Wir lehnen jede weitere militärische Erweiterung von Truppenübungsplätzen in Sachsen-Anhalt ab - insbesondere in der Letzlinger Heide und im Zeitzer Forst.
 
 ##### source_location
 
@@ -435,7 +435,7 @@ _Leere Liste._
 
 **title:** In SachsenAnhalt wollen wir mit allen Menschen ins Gespräch kommen, gemeinsam nach …
 
-**commitment_text:** In SachsenAnhalt wollen wir mit allen Menschen ins Gespräch kommen, gemeinsam nach Lösungen suchen und den gesellschaftlichen Zusammenhalt stärken – auf der Grundlage von Respekt, Toleranz und Meinungsfreiheit.
+**commitment_text:** In SachsenAnhalt wollen wir mit allen Menschen ins Gespräch kommen, gemeinsam nach Lösungen suchen und den gesellschaftlichen Zusammenhalt stärken - auf der Grundlage von Respekt, Toleranz und Meinungsfreiheit.
 
 ##### source_location
 
@@ -753,9 +753,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0024-foerderstrukturen-wie-demokratie-leben-partnerschaften-fue
 
-**title:** Förderstrukturen wie „Demokratie leben! – Partnerschaften für Demokratie“ müssen kritisch überprüft werden, …
+**title:** Förderstrukturen wie „Demokratie leben! - Partnerschaften für Demokratie“ müssen kritisch überprüft werden, …
 
-**commitment_text:** Förderstrukturen wie „Demokratie leben! – Partnerschaften für Demokratie“ müssen kritisch überprüft werden, wenn sie nicht der offenen Zivilgesellschaft dienen, sondern politische Einseitigkeit verstärken.
+**commitment_text:** Förderstrukturen wie „Demokratie leben! - Partnerschaften für Demokratie“ müssen kritisch überprüft werden, wenn sie nicht der offenen Zivilgesellschaft dienen, sondern politische Einseitigkeit verstärken.
 
 ##### source_location
 
@@ -1043,7 +1043,7 @@ _Leere Liste._
 
 **title:** Die öffentliche Hand muss dabei die Rahmenbedingungen für eine verlässliche und bezahlbare …
 
-**commitment_text:** Die öffentliche Hand muss dabei die Rahmenbedingungen für eine verlässliche und bezahlbare Energieversorgung sicherstellen – als Voraussetzung für Investitionen, Wettbewerbsfähigkeit und gute Arbeitsplätze.
+**commitment_text:** Die öffentliche Hand muss dabei die Rahmenbedingungen für eine verlässliche und bezahlbare Energieversorgung sicherstellen - als Voraussetzung für Investitionen, Wettbewerbsfähigkeit und gute Arbeitsplätze.
 
 ##### source_location
 
@@ -1107,7 +1107,7 @@ _Leere Liste._
 
 **title:** Unser Land muss sich vom Sparzwang befreien
 
-**commitment_text:** Unser Land muss sich vom Sparzwang befreien: Öffentliche Investitionen stärken Infrastruktur, Kommunen und Kaufkraft – und schaffen erst die Nachfrage, die private Investitionen auslöst.
+**commitment_text:** Unser Land muss sich vom Sparzwang befreien: Öffentliche Investitionen stärken Infrastruktur, Kommunen und Kaufkraft - und schaffen erst die Nachfrage, die private Investitionen auslöst.
 
 ##### source_location
 
@@ -1265,9 +1265,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0040-produktivitaetsgewinne-gerecht-verteilen-industrie-landwir
 
-**title:** Produktivitätsgewinne gerecht verteilen Industrie & Landwirtschaft – Wohlstand vor Ort Das BSW …
+**title:** Produktivitätsgewinne gerecht verteilen Industrie & Landwirtschaft - Wohlstand vor Ort Das BSW …
 
-**commitment_text:** Produktivitätsgewinne gerecht verteilen Industrie & Landwirtschaft – Wohlstand vor Ort Das BSW bekennt sich klar zum Industriestandort Sachsen-Anhalt. Industrie sichert Arbeitsplätze, schafft Wohlstand und gibt vielen Familien Perspektiven. Wir wollen, dass Industrie in SachsenAnhalt bleibt: stark, innovativ und zukunftsfähig. Dafür fordern wir eine aktive Industriepolitik, die nicht zuschaut, sondern handelt. Einen ebensolchen Stellenwert haben für das BSW die landwirtschaftlichen Betriebe, welche für eine funktionierende Volkswirtschaft als systemrelevant unabdingbar und speziell für unser Bundesland prägend sind. Bei der Gestaltung der gesellschaftlichen Zukunft sind landwirtschaftliche Belange endlich wieder als existenzstiftender Teil in das Bewusstsein der Bürger aufzunehmen. Zur Sicherung der einheimischen Landwirtschaft setzt sich das BSW für Abnahmegarantien für landwirtschaftliche Produkte aus regionaler Erzeugung ein. Öffentliche Einrichtungen sollen vorrangig regional einkaufen. Damit werden Wertschöpfung im Land gehalten, faire Preise ermöglicht und ein wirksamer Gegenpol zu internationalen Freihandelsabkommen wie Mercosur geschaffen,
+**commitment_text:** Produktivitätsgewinne gerecht verteilen Industrie & Landwirtschaft - Wohlstand vor Ort Das BSW bekennt sich klar zum Industriestandort Sachsen-Anhalt. Industrie sichert Arbeitsplätze, schafft Wohlstand und gibt vielen Familien Perspektiven. Wir wollen, dass Industrie in SachsenAnhalt bleibt: stark, innovativ und zukunftsfähig. Dafür fordern wir eine aktive Industriepolitik, die nicht zuschaut, sondern handelt. Einen ebensolchen Stellenwert haben für das BSW die landwirtschaftlichen Betriebe, welche für eine funktionierende Volkswirtschaft als systemrelevant unabdingbar und speziell für unser Bundesland prägend sind. Bei der Gestaltung der gesellschaftlichen Zukunft sind landwirtschaftliche Belange endlich wieder als existenzstiftender Teil in das Bewusstsein der Bürger aufzunehmen. Zur Sicherung der einheimischen Landwirtschaft setzt sich das BSW für Abnahmegarantien für landwirtschaftliche Produkte aus regionaler Erzeugung ein. Öffentliche Einrichtungen sollen vorrangig regional einkaufen. Damit werden Wertschöpfung im Land gehalten, faire Preise ermöglicht und ein wirksamer Gegenpol zu internationalen Freihandelsabkommen wie Mercosur geschaffen,
 
 ##### source_location
 
@@ -1330,9 +1330,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0042-wir-machen-uns-stark-fuer-einen-schnelleren-ausbau-intelli
 
-**title:** Wir machen uns stark für einen schnelleren Ausbau intelligenter Stromzähler – damit …
+**title:** Wir machen uns stark für einen schnelleren Ausbau intelligenter Stromzähler - damit …
 
-**commitment_text:** Wir machen uns stark für einen schnelleren Ausbau intelligenter Stromzähler – damit Einsparungen schneller bei allen ankommen.
+**commitment_text:** Wir machen uns stark für einen schnelleren Ausbau intelligenter Stromzähler - damit Einsparungen schneller bei allen ankommen.
 
 ##### source_location
 
@@ -1650,9 +1650,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0052-ausbildungsinhalte-muessen-regelmaessig-an-technologische
 
-**title:** Ausbildungsinhalte müssen regelmäßig an technologische Entwicklungen angepasst werden – digitale Kompetenzen, IT-Sicherheit …
+**title:** Ausbildungsinhalte müssen regelmäßig an technologische Entwicklungen angepasst werden - digitale Kompetenzen, IT-Sicherheit …
 
-**commitment_text:** Ausbildungsinhalte müssen regelmäßig an technologische Entwicklungen angepasst werden – digitale Kompetenzen, IT-Sicherheit und Datenschutz gehören in jede Ausbildung, ebenso wie eine stärkere Aufwertung handwerklicher Berufe.
+**commitment_text:** Ausbildungsinhalte müssen regelmäßig an technologische Entwicklungen angepasst werden - digitale Kompetenzen, IT-Sicherheit und Datenschutz gehören in jede Ausbildung, ebenso wie eine stärkere Aufwertung handwerklicher Berufe.
 
 ##### source_location
 
@@ -2005,7 +2005,7 @@ _Leere Liste._
 
 **title:** Errichtung von grundlastfähigen Kleinwasserkraftwerken, als Flusskraftwerke entlang von Elbe / Saale / …
 
-**commitment_text:** Errichtung von grundlastfähigen Kleinwasserkraftwerken, als Flusskraftwerke entlang von Elbe / Saale / Mulde Netze ausbauen – Wärmewende voranbringen Der Ausbau der erneuerbaren Energien muss mit dem Netzausbau und der Speicherinfrastruktur abgestimmt sein.
+**commitment_text:** Errichtung von grundlastfähigen Kleinwasserkraftwerken, als Flusskraftwerke entlang von Elbe / Saale / Mulde Netze ausbauen - Wärmewende voranbringen Der Ausbau der erneuerbaren Energien muss mit dem Netzausbau und der Speicherinfrastruktur abgestimmt sein.
 
 ##### source_location
 
@@ -2485,9 +2485,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0078-sie-muessen-als-wohn-arbeits-und-versorgungsstandorte-gest
 
-**title:** Sie müssen als Wohn-, Arbeits- und Versorgungsstandorte gestärkt werden – durch gezielte …
+**title:** Sie müssen als Wohn-, Arbeits- und Versorgungsstandorte gestärkt werden - durch gezielte …
 
-**commitment_text:** Sie müssen als Wohn-, Arbeits- und Versorgungsstandorte gestärkt werden – durch gezielte Förderung des Wohnungsbaus, die Ansiedlung von Unternehmen und durch deutlich bessere ÖPNV-Anbindungen an die Oberzentren.
+**commitment_text:** Sie müssen als Wohn-, Arbeits- und Versorgungsstandorte gestärkt werden - durch gezielte Förderung des Wohnungsbaus, die Ansiedlung von Unternehmen und durch deutlich bessere ÖPNV-Anbindungen an die Oberzentren.
 
 ##### source_location
 
@@ -3000,9 +3000,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0094-fuer-schulkinder-und-auszubildende-fordern-wir-einen-koste
 
-**title:** Für Schulkinder und Auszubildende fordern wir einen kostenfreien Zugang zum Nahverkehr – …
+**title:** Für Schulkinder und Auszubildende fordern wir einen kostenfreien Zugang zum Nahverkehr - …
 
-**commitment_text:** Für Schulkinder und Auszubildende fordern wir einen kostenfreien Zugang zum Nahverkehr – unabhängig vom Wohnort und ohne bürokratische Hürden.
+**commitment_text:** Für Schulkinder und Auszubildende fordern wir einen kostenfreien Zugang zum Nahverkehr - unabhängig vom Wohnort und ohne bürokratische Hürden.
 
 ##### source_location
 
@@ -3098,7 +3098,7 @@ _Leere Liste._
 
 **title:** Intermodale Mobilität im ländlichen Raum fördern Regionen gerecht entwickeln Größere Städte haben …
 
-**commitment_text:** Intermodale Mobilität im ländlichen Raum fördern Regionen gerecht entwickeln Größere Städte haben aufgrund des heutigen Verteilschlüssels des Zentrale-Orte-Prinzips einen deutlichen finanziellen Vorteil gegenüber Mittelstädten und ländlichen Gemeinden. Da Finanzzuweisungen stark an Einwohnerzahlen gekoppelt sind, hat dies eine Welle von Eingemeindungen ausgelöst. Die Probleme der eingemeindeten Orte wurden dadurch jedoch nicht gelöst – im Gegenteil: Viele kleinere Gemeinden sind heute finanziell und administrativ handlungsunfähig. Die bestehende Verteilungshierarchie zugunsten großer Städte hat die regionalen Disparitäten in Sachsen-Anhalt weiter verschärft. Das BSW fordert daher eine Abkehr von dieser Hierarchie. Die sozialen Wirkungen des Zentrale-Orte-Prinzips müssen grundlegend überprüft und neu ausgerichtet werden.
+**commitment_text:** Intermodale Mobilität im ländlichen Raum fördern Regionen gerecht entwickeln Größere Städte haben aufgrund des heutigen Verteilschlüssels des Zentrale-Orte-Prinzips einen deutlichen finanziellen Vorteil gegenüber Mittelstädten und ländlichen Gemeinden. Da Finanzzuweisungen stark an Einwohnerzahlen gekoppelt sind, hat dies eine Welle von Eingemeindungen ausgelöst. Die Probleme der eingemeindeten Orte wurden dadurch jedoch nicht gelöst - im Gegenteil: Viele kleinere Gemeinden sind heute finanziell und administrativ handlungsunfähig. Die bestehende Verteilungshierarchie zugunsten großer Städte hat die regionalen Disparitäten in Sachsen-Anhalt weiter verschärft. Das BSW fordert daher eine Abkehr von dieser Hierarchie. Die sozialen Wirkungen des Zentrale-Orte-Prinzips müssen grundlegend überprüft und neu ausgerichtet werden.
 
 ##### source_location
 
@@ -3577,9 +3577,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0112-wir-wollen-muettern-und-vaetern-echte-wahlfreiheit-ermoegl
 
-**title:** Müttern und Vätern echte Wahlfreiheit ermöglichen – ohne finanziellen oder gesellschaftlichen Druck, …
+**title:** Müttern und Vätern echte Wahlfreiheit ermöglichen - ohne finanziellen oder gesellschaftlichen Druck, …
 
-**commitment_text:** Wir wollen Müttern und Vätern echte Wahlfreiheit ermöglichen – ohne finanziellen oder gesellschaftlichen Druck, sich zwischen Erwerbsarbeit und Familienarbeit entscheiden zu müssen.
+**commitment_text:** Wir wollen Müttern und Vätern echte Wahlfreiheit ermöglichen - ohne finanziellen oder gesellschaftlichen Druck, sich zwischen Erwerbsarbeit und Familienarbeit entscheiden zu müssen.
 
 ##### source_location
 
@@ -3899,7 +3899,7 @@ _Leere Liste._
 
 **title:** Als Partei der Vernunft und der Gerechtigkeit für Sachsen-Anhalt setzen wir uns …
 
-**commitment_text:** Als Partei der Vernunft und der Gerechtigkeit für Sachsen-Anhalt setzen wir uns für die Rechte aller Bürger ein – unabhängig von Geschlecht, sexueller Orientierung oder Geschlechtsidentität.
+**commitment_text:** Als Partei der Vernunft und der Gerechtigkeit für Sachsen-Anhalt setzen wir uns für die Rechte aller Bürger ein - unabhängig von Geschlecht, sexueller Orientierung oder Geschlechtsidentität.
 
 ##### source_location
 
@@ -3929,9 +3929,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0123-diskriminierung-verhindern-und-gleiche-rechte-fuer-alle-bu
 
-**title:** Diskriminierung verhindern und gleiche Rechte für alle Bürger sichern Kultur fördern – …
+**title:** Diskriminierung verhindern und gleiche Rechte für alle Bürger sichern Kultur fördern - …
 
-**commitment_text:** Diskriminierung verhindern und gleiche Rechte für alle Bürger sichern Kultur fördern – Vielfalt erhalten Kultur ist die Grundlage für ein gelingendes und erfülltes Leben, für Freiheit, Zusammenhalt und eine demokratische Gesellschaft. Auch in Sachsen-Anhalt ist Kultur Ausdruck gesellschaftlicher Verantwortung und Teil öffentlicher Daseinsvorsorge. Wir stehen für den Erhalt der kulturellen Vielfalt im Land und für einen barriere- und voraussetzungsfreien Zugang zu Kulturangeboten – für alle Menschen, in allen Regionen und in allen Lebenslagen. Sachsen-Anhalt ist ein kulturell reiches Land mit einer hohen Dichte an UNESCO-Welterbestätten, Theatern, Museen, Orchestern, Orten der Industriekultur und kulturellen Bildungseinrichtungen. Der Kulturbegriff muss dabei weit gefasst werden. Kunst, kulturelle Bildung und kulturelle Praxis fördern soziale Kompetenzen, demokratische Teilhabe und gesellschaftlichen Zusammenhalt. Gerade in einem Flächenland wie
+**commitment_text:** Diskriminierung verhindern und gleiche Rechte für alle Bürger sichern Kultur fördern - Vielfalt erhalten Kultur ist die Grundlage für ein gelingendes und erfülltes Leben, für Freiheit, Zusammenhalt und eine demokratische Gesellschaft. Auch in Sachsen-Anhalt ist Kultur Ausdruck gesellschaftlicher Verantwortung und Teil öffentlicher Daseinsvorsorge. Wir stehen für den Erhalt der kulturellen Vielfalt im Land und für einen barriere- und voraussetzungsfreien Zugang zu Kulturangeboten - für alle Menschen, in allen Regionen und in allen Lebenslagen. Sachsen-Anhalt ist ein kulturell reiches Land mit einer hohen Dichte an UNESCO-Welterbestätten, Theatern, Museen, Orchestern, Orten der Industriekultur und kulturellen Bildungseinrichtungen. Der Kulturbegriff muss dabei weit gefasst werden. Kunst, kulturelle Bildung und kulturelle Praxis fördern soziale Kompetenzen, demokratische Teilhabe und gesellschaftlichen Zusammenhalt. Gerade in einem Flächenland wie
 
 ##### source_location
 
@@ -3996,7 +3996,7 @@ _Leere Liste._
 
 **title:** UNESCO-Welterbestätten, Theater, Museen, Orte der Industriekultur, kulturelle Bildungseinrichtungen und soziokulturelle Zentren sollen …
 
-**commitment_text:** UNESCO-Welterbestätten, Theater, Museen, Orte der Industriekultur, kulturelle Bildungseinrichtungen und soziokulturelle Zentren sollen so dauerhaft gesichert und finanziell stabilisiert werden – mit einem besonderen Schwerpunkt auf der Stärkung ländlicher Kulturorte.
+**commitment_text:** UNESCO-Welterbestätten, Theater, Museen, Orte der Industriekultur, kulturelle Bildungseinrichtungen und soziokulturelle Zentren sollen so dauerhaft gesichert und finanziell stabilisiert werden - mit einem besonderen Schwerpunkt auf der Stärkung ländlicher Kulturorte.
 
 ##### source_location
 
@@ -4028,7 +4028,7 @@ _Leere Liste._
 
 **title:** Ein zentraler Bestandteil muss die Ausweitung und Verstetigung der institutionellen Förderung sein …
 
-**commitment_text:** Ein zentraler Bestandteil muss die Ausweitung und Verstetigung der institutionellen Förderung sein – insbesondere für kleine und mittlere Einrichtungen im ländlichen Raum.
+**commitment_text:** Ein zentraler Bestandteil muss die Ausweitung und Verstetigung der institutionellen Förderung sein - insbesondere für kleine und mittlere Einrichtungen im ländlichen Raum.
 
 ##### source_location
 
@@ -4346,9 +4346,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0136-wir-wollen-die-gesamte-bandbreite-gesellschaftlichen-engag
 
-**title:** die gesamte Bandbreite gesellschaftlichen Engagements stärken – von Nachbarschaftsinitiativen, Gartenprojekten und Sportvereinen …
+**title:** die gesamte Bandbreite gesellschaftlichen Engagements stärken - von Nachbarschaftsinitiativen, Gartenprojekten und Sportvereinen …
 
-**commitment_text:** Wir wollen die gesamte Bandbreite gesellschaftlichen Engagements stärken – von Nachbarschaftsinitiativen, Gartenprojekten und Sportvereinen bis zu Kultur- und Bildungsinitiativen.
+**commitment_text:** Wir wollen die gesamte Bandbreite gesellschaftlichen Engagements stärken - von Nachbarschaftsinitiativen, Gartenprojekten und Sportvereinen bis zu Kultur- und Bildungsinitiativen.
 
 ##### source_location
 
@@ -4506,9 +4506,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0141-schule-soll-befaehigen-informierte-und-verantwortungsbewus
 
-**title:** Schule soll befähigen, informierte und verantwortungsbewusste Entscheidungen zu treffen – nicht nur …
+**title:** Schule soll befähigen, informierte und verantwortungsbewusste Entscheidungen zu treffen - nicht nur …
 
-**commitment_text:** Schule soll befähigen, informierte und verantwortungsbewusste Entscheidungen zu treffen – nicht nur Prüfungen zu bestehen.
+**commitment_text:** Schule soll befähigen, informierte und verantwortungsbewusste Entscheidungen zu treffen - nicht nur Prüfungen zu bestehen.
 
 ##### source_location
 
@@ -4538,9 +4538,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0142-sie-muss-wissen-urteilskraft-und-verantwortung-foerdern-al
 
-**title:** Sie muss Wissen, Urteilskraft und Verantwortung fördern – als Grundlage für ein …
+**title:** Sie muss Wissen, Urteilskraft und Verantwortung fördern - als Grundlage für ein …
 
-**commitment_text:** Sie muss Wissen, Urteilskraft und Verantwortung fördern – als Grundlage für ein selbstbestimmtes Leben und eine demokratische Gesellschaft.
+**commitment_text:** Sie muss Wissen, Urteilskraft und Verantwortung fördern - als Grundlage für ein selbstbestimmtes Leben und eine demokratische Gesellschaft.
 
 ##### source_location
 
@@ -4699,9 +4699,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0147-neue-pruefungsformate-muessen-verstaendnis-anwendung-und-r
 
-**title:** Neue Prüfungsformate müssen Verständnis, Anwendung und Reflexion prüfen – nicht die Nutzung …
+**title:** Neue Prüfungsformate müssen Verständnis, Anwendung und Reflexion prüfen - nicht die Nutzung …
 
-**commitment_text:** Neue Prüfungsformate müssen Verständnis, Anwendung und Reflexion prüfen – nicht die Nutzung von Algorithmen.
+**commitment_text:** Neue Prüfungsformate müssen Verständnis, Anwendung und Reflexion prüfen - nicht die Nutzung von Algorithmen.
 
 ##### source_location
 
@@ -5117,7 +5117,7 @@ _Leere Liste._
 
 **title:** Lehrkräfte müssen dadurch Aufgaben übernehmen, für die sie weder ausgebildet noch vorgesehen …
 
-**commitment_text:** Lehrkräfte müssen dadurch Aufgaben übernehmen, für die sie weder ausgebildet noch vorgesehen sind – und füllen so notdürftig die Lücken eines unterfinanzierten Systems.
+**commitment_text:** Lehrkräfte müssen dadurch Aufgaben übernehmen, für die sie weder ausgebildet noch vorgesehen sind - und füllen so notdürftig die Lücken eines unterfinanzierten Systems.
 
 ##### source_location
 
@@ -5984,7 +5984,7 @@ _Leere Liste._
 
 **title:** Hochschulgovernance modernisieren 4
 
-**commitment_text:** Hochschulgovernance modernisieren 4.4 Gesundheit – Gemeinwohl statt Profitlogik In Sachsen-Anhalt zeigt sich besonders deutlich, wie soziale Spaltung, Privatisierung und politische Fehlsteuerungen im Gesundheitswesen zusammenwirken. Jahrzehntelange Sparpolitik, akuter Personalmangel und eine zunehmende Ökonomisierung haben ein System hervorgebracht, das vielerorts an seine Grenzen stößt. Krankenhäuser stehen unter massivem wirtschaftlichem Druck oder werden geschlossen, Pflegeeinrichtungen kämpfen ums Überleben, und in vielen Regionen fehlen Haus- und Fachärzte. Überlastete Notaufnahmen, lange Wartezeiten und nicht mehr bezahlbare Eigenanteile in der Pflege sind für viele Menschen längst Alltag. Gleichzeitig nehmen psychische Belastungen, Einsamkeit im Alter und die Überforderung von Familien spürbar zu. Während enorme Mittel für militärische Aufrüstung bereitgestellt werden, wird bei der sozialen Daseinsvorsorge gespart. Auch das Gesundheitswesen wird zunehmend in sicherheits- und militärpolitische Planungen einbezogen. Die Vorstellung, im Krisenfall zivile Gesundheitsversorgung militärischen Prioritäten unterzuordnen, lehnen wir entschieden ab. Das
+**commitment_text:** Hochschulgovernance modernisieren 4.4 Gesundheit - Gemeinwohl statt Profitlogik In Sachsen-Anhalt zeigt sich besonders deutlich, wie soziale Spaltung, Privatisierung und politische Fehlsteuerungen im Gesundheitswesen zusammenwirken. Jahrzehntelange Sparpolitik, akuter Personalmangel und eine zunehmende Ökonomisierung haben ein System hervorgebracht, das vielerorts an seine Grenzen stößt. Krankenhäuser stehen unter massivem wirtschaftlichem Druck oder werden geschlossen, Pflegeeinrichtungen kämpfen ums Überleben, und in vielen Regionen fehlen Haus- und Fachärzte. Überlastete Notaufnahmen, lange Wartezeiten und nicht mehr bezahlbare Eigenanteile in der Pflege sind für viele Menschen längst Alltag. Gleichzeitig nehmen psychische Belastungen, Einsamkeit im Alter und die Überforderung von Familien spürbar zu. Während enorme Mittel für militärische Aufrüstung bereitgestellt werden, wird bei der sozialen Daseinsvorsorge gespart. Auch das Gesundheitswesen wird zunehmend in sicherheits- und militärpolitische Planungen einbezogen. Die Vorstellung, im Krisenfall zivile Gesundheitsversorgung militärischen Prioritäten unterzuordnen, lehnen wir entschieden ab. Das
 
 ##### source_location
 
@@ -6114,7 +6114,7 @@ _Leere Liste._
 
 **title:** Der Staat muss sich stärker an der Finanzierung beteiligen, um Pflege bezahlbar …
 
-**commitment_text:** Der Staat muss sich stärker an der Finanzierung beteiligen, um Pflege bezahlbar zu halten – für Pflegebedürftige und ihre Angehörigen.
+**commitment_text:** Der Staat muss sich stärker an der Finanzierung beteiligen, um Pflege bezahlbar zu halten - für Pflegebedürftige und ihre Angehörigen.
 
 ##### source_location
 
@@ -6784,9 +6784,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0212-telemedizin-und-moderne-versorgungsformen-sinnvoll-staerke
 
-**title:** Telemedizin und moderne Versorgungsformen sinnvoll stärken Hebammen – Gesunder Start ins Leben …
+**title:** Telemedizin und moderne Versorgungsformen sinnvoll stärken Hebammen - Gesunder Start ins Leben …
 
-**commitment_text:** Telemedizin und moderne Versorgungsformen sinnvoll stärken Hebammen – Gesunder Start ins Leben Auf Bundesebene muss aus Sicht des BSW der aktuelle Hebammenhilfevertrag dringend nachgebessert werden, da die reduzierte Vergütung bei zunehmender Menge von Parallelbetreuungen die wirtschaftliche Existenz freiberuflicher Hebammen zerstört – wir fordern die volle Vergütung für jede betreute Frau, da die medizinische Haftung niemals gestaffelt ist.
+**commitment_text:** Telemedizin und moderne Versorgungsformen sinnvoll stärken Hebammen - Gesunder Start ins Leben Auf Bundesebene muss aus Sicht des BSW der aktuelle Hebammenhilfevertrag dringend nachgebessert werden, da die reduzierte Vergütung bei zunehmender Menge von Parallelbetreuungen die wirtschaftliche Existenz freiberuflicher Hebammen zerstört - wir fordern die volle Vergütung für jede betreute Frau, da die medizinische Haftung niemals gestaffelt ist.
 
 ##### source_location
 
@@ -7557,7 +7557,7 @@ _Leere Liste._
 
 **title:** Landesbeamtenrecht und Beförderungen reformieren Schutz beginnt vor der Katastrophe Der Katastrophen- und …
 
-**commitment_text:** Landesbeamtenrecht und Beförderungen reformieren Schutz beginnt vor der Katastrophe Der Katastrophen- und Zivilschutz in Sachsen-Anhalt ist derzeit nicht ausreichend aufgestellt. Es fehlt an klaren Zuständigkeiten, einer einheitlichen Führungsstruktur und einem modernen, integrierten Zivilschutzsystem. Das geltende Katastrophenschutzgesetz des Landes Sachsen-Anhalt wird den heutigen Gefahrenlagen – von Extremwetterereignissen über langanhaltende Strom- und Infrastrukturausfälle bis hin zu Pandemien oder hybriden Bedrohungen – nicht mehr gerecht und muss dringend überarbeitet werden. Im Rahmen einer Novellierung des Katastrophenschutzgesetzes müssen die Zuständigkeiten, besonderen Befugnisse und Aufgaben der kommunalen Spitzen klar geregelt werden. Oberbürgermeister, Landräte und Hauptverwaltungsbeamte der Kreisverwaltungen tragen im Ernstfall zentrale Verantwortung: Dies ist bislang jedoch im Landesrecht nicht eindeutig verankert. Ebenso notwendig ist die klare Festschreibung der politischen Gesamtverantwortung im Katastrophenfall:
+**commitment_text:** Landesbeamtenrecht und Beförderungen reformieren Schutz beginnt vor der Katastrophe Der Katastrophen- und Zivilschutz in Sachsen-Anhalt ist derzeit nicht ausreichend aufgestellt. Es fehlt an klaren Zuständigkeiten, einer einheitlichen Führungsstruktur und einem modernen, integrierten Zivilschutzsystem. Das geltende Katastrophenschutzgesetz des Landes Sachsen-Anhalt wird den heutigen Gefahrenlagen - von Extremwetterereignissen über langanhaltende Strom- und Infrastrukturausfälle bis hin zu Pandemien oder hybriden Bedrohungen - nicht mehr gerecht und muss dringend überarbeitet werden. Im Rahmen einer Novellierung des Katastrophenschutzgesetzes müssen die Zuständigkeiten, besonderen Befugnisse und Aufgaben der kommunalen Spitzen klar geregelt werden. Oberbürgermeister, Landräte und Hauptverwaltungsbeamte der Kreisverwaltungen tragen im Ernstfall zentrale Verantwortung: Dies ist bislang jedoch im Landesrecht nicht eindeutig verankert. Ebenso notwendig ist die klare Festschreibung der politischen Gesamtverantwortung im Katastrophenfall:
 
 ##### source_location
 
@@ -8107,7 +8107,7 @@ _Leere Liste._
 
 **page:** 71
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8139,7 +8139,7 @@ _Leere Liste._
 
 **page:** 71
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8171,7 +8171,7 @@ _Leere Liste._
 
 **page:** 71
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8203,7 +8203,7 @@ _Leere Liste._
 
 **page:** 71
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8235,7 +8235,7 @@ _Leere Liste._
 
 **page:** 71
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8267,7 +8267,7 @@ _Leere Liste._
 
 **page:** 71
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8300,7 +8300,7 @@ _Leere Liste._
 
 **page:** 72
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8324,15 +8324,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0260-eine-privatisierung-von-sicherheitsdiensten-in-gerichten-o
 
-**title:** Eine Privatisierung von Sicherheitsdiensten in Gerichten oder Haftanstalten lehnen wir ab – …
+**title:** Eine Privatisierung von Sicherheitsdiensten in Gerichten oder Haftanstalten lehnen wir ab - …
 
-**commitment_text:** Eine Privatisierung von Sicherheitsdiensten in Gerichten oder Haftanstalten lehnen wir ab – Strafvollzug ist hoheitliche Aufgabe des Staates.
+**commitment_text:** Eine Privatisierung von Sicherheitsdiensten in Gerichten oder Haftanstalten lehnen wir ab - Strafvollzug ist hoheitliche Aufgabe des Staates.
 
 ##### source_location
 
 **page:** 72
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8364,7 +8364,7 @@ _Leere Liste._
 
 **page:** 72
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8396,7 +8396,7 @@ _Leere Liste._
 
 **page:** 73
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8428,7 +8428,7 @@ _Leere Liste._
 
 **page:** 73
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8460,7 +8460,7 @@ _Leere Liste._
 
 **page:** 73
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8492,7 +8492,7 @@ _Leere Liste._
 
 **page:** 73
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8524,7 +8524,7 @@ _Leere Liste._
 
 **page:** 73
 
-**section:** 5.3 Justiz stärken – Verfahren beschleunigen
+**section:** 5.3 Justiz stärken - Verfahren beschleunigen
 
 ##### source_context
 
@@ -8556,7 +8556,7 @@ _Leere Liste._
 
 **page:** 74
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -8588,7 +8588,7 @@ _Leere Liste._
 
 **page:** 75
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -8620,7 +8620,7 @@ _Leere Liste._
 
 **page:** 75
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -8652,7 +8652,7 @@ _Leere Liste._
 
 **page:** 76
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -8684,7 +8684,7 @@ _Leere Liste._
 
 **page:** 76
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -8708,15 +8708,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0272-digitalisierung-muss-entlasten-nicht-zusaetzliche-huerden
 
-**title:** Digitalisierung muss entlasten – nicht zusätzliche Hürden schaffen
+**title:** Digitalisierung muss entlasten - nicht zusätzliche Hürden schaffen
 
-**commitment_text:** Digitalisierung muss entlasten – nicht zusätzliche Hürden schaffen.
+**commitment_text:** Digitalisierung muss entlasten - nicht zusätzliche Hürden schaffen.
 
 ##### source_location
 
 **page:** 76
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -8748,7 +8748,7 @@ _Leere Liste._
 
 **page:** 76
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -8780,7 +8780,7 @@ _Leere Liste._
 
 **page:** 76
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -8812,7 +8812,7 @@ _Leere Liste._
 
 **page:** 76
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -8844,7 +8844,7 @@ _Leere Liste._
 
 **page:** 78
 
-**section:** 5.5 Handlungsfähige Kommunen – bürgernah
+**section:** 5.5 Handlungsfähige Kommunen - bürgernah
 
 ##### source_context
 
@@ -9028,9 +9028,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0282-erholungs-und-schutzfunktion-des-waldes-als-daseinsvorsorg
 
-**title:** Erholungs- und Schutzfunktion des Waldes als Daseinsvorsorge sichern Artenvielfalt – Lebensgrundlagen sind …
+**title:** Erholungs- und Schutzfunktion des Waldes als Daseinsvorsorge sichern Artenvielfalt - Lebensgrundlagen sind …
 
-**commitment_text:** Erholungs- und Schutzfunktion des Waldes als Daseinsvorsorge sichern Artenvielfalt – Lebensgrundlagen sind unverhandelbar Der Erhalt intakter Umwelt und Landschaften ist eine zentrale Aufgabe. Renaturierungen von Mooren und Auen stärken den natürlichen Hochwasserschutz und wirken als CO₂-Speicher. Biotopvernetzung ermöglicht die Erholung von Tier- und Pflanzenbeständen. Dem Schutz bedrohter Arten muss durch sichere Lebensräume, mehr Blühflächen und die Reduzierung von Lichtverschmutzung Rechnung getragen werden. Wälder sind unverzichtbare Ökosysteme.
+**commitment_text:** Erholungs- und Schutzfunktion des Waldes als Daseinsvorsorge sichern Artenvielfalt - Lebensgrundlagen sind unverhandelbar Der Erhalt intakter Umwelt und Landschaften ist eine zentrale Aufgabe. Renaturierungen von Mooren und Auen stärken den natürlichen Hochwasserschutz und wirken als CO₂-Speicher. Biotopvernetzung ermöglicht die Erholung von Tier- und Pflanzenbeständen. Dem Schutz bedrohter Arten muss durch sichere Lebensräume, mehr Blühflächen und die Reduzierung von Lichtverschmutzung Rechnung getragen werden. Wälder sind unverzichtbare Ökosysteme.
 
 ##### source_location
 
@@ -9348,9 +9348,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0292-keine-neuen-staustufen-stattdessen-oekologische-wasserloes
 
-**title:** Keine neuen Staustufen, stattdessen ökologische Wasserlösungen fördern CCS – Kein Endlager in …
+**title:** Keine neuen Staustufen, stattdessen ökologische Wasserlösungen fördern CCS - Kein Endlager in …
 
-**commitment_text:** Keine neuen Staustufen, stattdessen ökologische Wasserlösungen fördern CCS – Kein Endlager in der Altmark Die unterirdische CO₂-Verpressung (CCS) lehnen wir für Sachsen-Anhalt ab.
+**commitment_text:** Keine neuen Staustufen, stattdessen ökologische Wasserlösungen fördern CCS - Kein Endlager in der Altmark Die unterirdische CO₂-Verpressung (CCS) lehnen wir für Sachsen-Anhalt ab.
 
 ##### source_location
 
@@ -9412,9 +9412,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0294-regionale-wertschoepfung-durch-nachhaltige-energiepolitik
 
-**title:** Regionale Wertschöpfung durch nachhaltige Energiepolitik sichern Giftgrube Brüchau – Altlasten beseitigen Die …
+**title:** Regionale Wertschöpfung durch nachhaltige Energiepolitik sichern Giftgrube Brüchau - Altlasten beseitigen Die …
 
-**commitment_text:** Regionale Wertschöpfung durch nachhaltige Energiepolitik sichern Giftgrube Brüchau – Altlasten beseitigen Die Giftschlammgrube Brüchau muss vollständig ausgekoffert werden. Eine bloße Einkapselung, nur um Kosten zu sparen, ist keine verantwortbare Lösung. Der Landtag von Sachsen-Anhalt hat im Juni 2020 mit dem Beschluss Drucksache 7/6177 eindeutig festgelegt, dass die Grube als ernsthafte Altlast nicht einfach abgedeckt oder versiegelt werden darf. Stattdessen soll ein genehmigungsfähiger Plan für die zügige und sichere Beseitigung der gesamten Giftmassen
+**commitment_text:** Regionale Wertschöpfung durch nachhaltige Energiepolitik sichern Giftgrube Brüchau - Altlasten beseitigen Die Giftschlammgrube Brüchau muss vollständig ausgekoffert werden. Eine bloße Einkapselung, nur um Kosten zu sparen, ist keine verantwortbare Lösung. Der Landtag von Sachsen-Anhalt hat im Juni 2020 mit dem Beschluss Drucksache 7/6177 eindeutig festgelegt, dass die Grube als ernsthafte Altlast nicht einfach abgedeckt oder versiegelt werden darf. Stattdessen soll ein genehmigungsfähiger Plan für die zügige und sichere Beseitigung der gesamten Giftmassen
 
 ##### source_location
 
@@ -9861,9 +9861,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-bsw-0308-lokalpolitisches-engagement-wollen-wir-durch-aufwandsentsc
 
-**title:** Lokalpolitisches Engagement wollen wir durch Aufwandsentschädigung und Rentenpunkte fördern – wer sich …
+**title:** Lokalpolitisches Engagement wollen wir durch Aufwandsentschädigung und Rentenpunkte fördern - wer sich …
 
-**commitment_text:** Lokalpolitisches Engagement wollen wir durch Aufwandsentschädigung und Rentenpunkte fördern – wer sich für seine Gemeinschaft engagiert, soll honoriert werden.
+**commitment_text:** Lokalpolitisches Engagement wollen wir durch Aufwandsentschädigung und Rentenpunkte fördern - wer sich für seine Gemeinschaft engagiert, soll honoriert werden.
 
 ##### source_location
 

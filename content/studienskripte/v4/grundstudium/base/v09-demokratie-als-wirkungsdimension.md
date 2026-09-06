@@ -46,7 +46,7 @@ Ein Gesetz kann institutionell sinnvoll wirken und gleichzeitig kommunikativ Ver
 
 ## 4. Beispiel: digitales Beteiligungsportal
 
-Output: Portal geht online. Mögliche Outcomes: mehr Teilnahme, breitere Repräsentation, bessere Information – oder neue digitale Ausschlüsse. Zu prüfen sind Zugang, Nutzung, Einfluss auf Entscheidungen, Missbrauchsschutz und Datenschutz.
+Output: Portal geht online. Mögliche Outcomes: mehr Teilnahme, breitere Repräsentation, bessere Information - oder neue digitale Ausschlüsse. Zu prüfen sind Zugang, Nutzung, Einfluss auf Entscheidungen, Missbrauchsschutz und Datenschutz.
 
 ## 5. Rechte als Boundary
 
@@ -68,10 +68,10 @@ Demokratische Resilienz zeigt sich nicht darin, nie Fehler zu machen, sondern Fe
 
 ## Typische Fehlinterpretationen
 
-- „Demokratiewirkung = Zustimmung.“ – Falsch.
-- Politische Kontroverse ist automatisch negative Wirkung. – Falsch.
-- Eine gute Sachmaßnahme kann kommunikativ nicht schaden. – Doch.
-- Mehrheitsnutzen kann Grundrechte frei kompensieren. – Nein.
+- „Demokratiewirkung = Zustimmung.“ - Falsch.
+- Politische Kontroverse ist automatisch negative Wirkung. - Falsch.
+- Eine gute Sachmaßnahme kann kommunikativ nicht schaden. - Doch.
+- Mehrheitsnutzen kann Grundrechte frei kompensieren. - Nein.
 
 ## WÖk-Abgrenzung
 

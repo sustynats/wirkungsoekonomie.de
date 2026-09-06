@@ -43,7 +43,7 @@ Regelt vertrauensvollen, standardisierten Datenaustausch zwischen mehreren Akteu
 
 Speichert konkrete Daten technisch.
 
-WÖk braucht alle Funktionen teilweise – aber nicht zwingend in einem einzigen System.
+WÖk braucht alle Funktionen teilweise - aber nicht zwingend in einem einzigen System.
 
 ## 2. Föderation statt Datenmonopol
 

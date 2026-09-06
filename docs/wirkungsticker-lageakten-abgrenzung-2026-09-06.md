@@ -31,7 +31,7 @@ Lokaler Abnahmenachweis: 369 Nachrichtentests, 20 Monitortests, Nachrichten- und
 
 ## Nachtrag: Schutz vor künftigen Verkettungen
 
-Die erste Korrektur beseitigte die beobachteten Hintergrund- und Konflikt-Fehlzuordnungen. Die zusätzliche Prüfung zeigte aber eine strukturelle Schwäche: Der Generator verwendete weiterhin zusammenhängende Graphkomponenten. Eine passende Verbindung A–B und B–C genügte, obwohl A und C nicht zusammenpassten.
+Die erste Korrektur beseitigte die beobachteten Hintergrund- und Konflikt-Fehlzuordnungen. Die zusätzliche Prüfung zeigte aber eine strukturelle Schwäche: Der Generator verwendete weiterhin zusammenhängende Graphkomponenten. Eine passende Verbindung A-B und B-C genügte, obwohl A und C nicht zusammenpassten.
 
 Ab Darstellungsrevision `20260906-case-integrity2` gilt deshalb:
 

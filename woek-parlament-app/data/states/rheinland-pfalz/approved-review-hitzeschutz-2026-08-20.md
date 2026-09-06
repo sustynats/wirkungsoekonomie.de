@@ -10,7 +10,7 @@ Amtliche Primärquellen:
 - https://www.umweltbundesamt.de/daten/umweltzustand-trends/umwelt-gesundheit/gesundheitsrisiken-durch-hitze
 - https://www.rki.de/DE/Themen/Gesundheit-und-Gesellschaft/Gesundheitliche-Einflussfaktoren-A-Z/H/Hitze/Hitzefolgekrankheiten_inhalt.html
 
-`attribution_status`: `CURRENT_GOVERNMENT_CONTRIBUTION_TO_INHERITED_POLICY_PATH` — Planbestand geerbt; nur aktuelle Verstetigung, Koordination und Umsetzung werden dem neuen Term zugerechnet.
+`attribution_status`: `CURRENT_GOVERNMENT_CONTRIBUTION_TO_INHERITED_POLICY_PATH` - Planbestand geerbt; nur aktuelle Verstetigung, Koordination und Umsetzung werden dem neuen Term zugerechnet.
 
 ## Executive Public Summary
 
@@ -44,21 +44,21 @@ Plan- und Netzwerkexistenz darf nicht als Endziel behandelt werden.
 
 ## Tatsächliche WÖk-Wirkungsprüfung A → M → ΔZ → R
 
-### Pfad A — ressortübergreifende Koordination
+### Pfad A - ressortübergreifende Koordination
 
 - `A`: Ministerrat stärkt ressortübergreifende Zusammenarbeit und bestehenden Handlungsrahmen
 - `M`: Gesundheits-, Pflege-, Sozial-, Bildungs-, Arbeits-, Klima-, Bau- und kommunale Akteure koordinieren Warnung, Prävention und Umsetzung besser
 - `ΔZ`: weniger Lücken und Doppelarbeit, schnellere Schutzaktivierung, höhere Erreichung vulnerabler Gruppen
-- `R`: Mensch — Gesundheit und Sicherheit; Demokratie — staatliche Handlungsfähigkeit; Planet — Klimaanpassung als Kontext.
+- `R`: Mensch - Gesundheit und Sicherheit; Demokratie - staatliche Handlungsfähigkeit; Planet - Klimaanpassung als Kontext.
 
-### Pfad B — kommunale Umsetzung
+### Pfad B - kommunale Umsetzung
 
 - `A`: Netzwerke, Klimakompetenzzentrum und Unterstützung kommunaler Akteure
 - `M`: lokale Einrichtungen können passgenaue Maßnahmen für Gebäude, Pflege, öffentliche Räume und vulnerable Gruppen operationalisieren
 - `ΔZ`: Exposition und Vulnerabilität können sinken
 - `Risiko`: starke räumliche Ungleichheit, wenn kommunale Kapazität und Finanzkraft stark differiert.
 
-### Pfad C — Information und Frühwarnung
+### Pfad C - Information und Frühwarnung
 
 - `A`: Sensibilisierung, Warn- und Informationsketten
 - `M`: Verhalten und organisatorische Schutzmaßnahmen werden vor und bei Hitze früher ausgelöst
@@ -72,7 +72,7 @@ Plan- und Netzwerkexistenz darf nicht als Endziel behandelt werden.
 - Fehlanpassung ist möglich, zum Beispiel energieintensive Kühlung ohne Effizienz-, Netz- und Emissionsdesign;
 - wiederholte ungleiche lokale Schutzfähigkeit kann Gesundheits- und Regionalungleichheit verstärken.
 
-## DNS und Common Targets — getrennte Referenzschicht
+## DNS und Common Targets - getrennte Referenzschicht
 
 Keine Kausalitätsbehauptung aus Zielbezug. Relevante Referenzräume sind mindestens Gesundheit, klimaresiliente Städte und Kommunen sowie Klimaanpassung; UN-seitig insbesondere SDG 3, 11 und 13. **Exakte DNS-Indicator-IDs werden nicht aus Schlagworten abgeleitet**: Vor öffentlicher Zuordnung ist ein Crosswalk gegen das kanonische 82er-DNS-Indikatorenregister erforderlich; je Indikator ist die Datenfunktion auszuweisen (`BASELINE`, `OUTCOME`, `DISTRIBUTION`, `CONTEXT`, `REALITY_CHECK`).
 
@@ -80,7 +80,7 @@ Keine Kausalitätsbehauptung aus Zielbezug. Relevante Referenzräume sind mindes
 
 **Materielle Auslassungen:** Auf Ebene der Regierungsdarstellung vom 24.06. fehlen öffentlich noch belastbare landesweite Outcome-Zielwerte, Auslöseschwellen und eine standardisierte Abdeckungs- und Qualitätsmetrik für kommunale Hitzeaktionsfähigkeit. Das ist eine Transparenz- und Steuerungslücke, nicht der Beweis, dass intern nichts existiert.
 
-**Politikkohärenz:** Hohe Relevanz besteht zwischen Gesundheit, Pflege, Arbeitsschutz, Bildung, Bau und Wohnen, Stadt- und Grünplanung, Katastrophen- und Bevölkerungsschutz sowie Klimaanpassung. Kohärenz ist erst belastbar, wenn widersprüchliche Signale — etwa Hitzeschutz gegenüber Flächen-, Gebäude- und Energieentscheidungen — im Gesamtportfolio geprüft sind.
+**Politikkohärenz:** Hohe Relevanz besteht zwischen Gesundheit, Pflege, Arbeitsschutz, Bildung, Bau und Wohnen, Stadt- und Grünplanung, Katastrophen- und Bevölkerungsschutz sowie Klimaanpassung. Kohärenz ist erst belastbar, wenn widersprüchliche Signale - etwa Hitzeschutz gegenüber Flächen-, Gebäude- und Energieentscheidungen - im Gesamtportfolio geprüft sind.
 
 **Delivery und Umsetzbarkeit:** Dies ist das Schlüsselrisiko. Kommunen sind Hauptumsetzungsebene; deshalb sind Personal, Finanzierung, Datenzugang, Warnketten, Pflege- und Gesundheitsnetzwerke, Gebäudebestand und Zuständigkeitsklarheit separat zu messen. Landesrahmen ist nicht lokale Umsetzung.
 

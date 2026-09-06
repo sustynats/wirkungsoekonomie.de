@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v108-transferplan-persoenliche-wirkungskompetenz.md curriculum=4.0 sanitized=true -->
-# V108 · Transferplan und persönliche Wirkungskompetenz – professionell, revisionsfähig, lernend
+# V108 · Transferplan und persönliche Wirkungskompetenz - professionell, revisionsfähig, lernend
 
 **lecture_id:** `WOEK-G-BASE-108`  
 **display_code:** `V108`  
@@ -110,7 +110,7 @@ Darum führt jede:r Absolvent:in einen persönlichen `RECHECK_CALENDAR` für die
 Dein Transferplan enthält:
 
 1. Anwendungskontext.
-2. 2–3 konkrete Prozesse, in denen WÖk integriert wird.
+2. 2-3 konkrete Prozesse, in denen WÖk integriert wird.
 3. bestehende Systeme, an die du anschließt.
 4. Daten-/Quellenbasis.
 5. Rollen/Verantwortlichkeiten.
@@ -267,4 +267,4 @@ Und noch etwas: Die Akademiequalifikation ist eine interne Qualifikation. Kein s
 
 Der Merksatz zum Abschluss lautet:
 
-**Wirkungskompetenz bedeutet nicht, immer recht zu haben. Sie bedeutet, so zu arbeiten, dass andere prüfen können, warum du zu einem Urteil gekommen bist – und dass du es änderst, wenn die Realität bessere Evidenz liefert.**
+**Wirkungskompetenz bedeutet nicht, immer recht zu haben. Sie bedeutet, so zu arbeiten, dass andere prüfen können, warum du zu einem Urteil gekommen bist - und dass du es änderst, wenn die Realität bessere Evidenz liefert.**

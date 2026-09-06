@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V2 – freiwilliges WÖk-Instrumentenmodul
+# Wirkungscheck Bundestag V2 - freiwilliges WÖk-Instrumentenmodul
 
 **Status:** Entwurf zur fachlichen Abnahme.  
 **Position im Produkt:** Erst nach dem vollständigen Kurzreport, freiwillig,
@@ -71,7 +71,7 @@ Er verbindet Mittel, erwartete Veränderung, Risiken und einen Zeitpunkt für di
 Überprüfung.
 
 **Prüffrage:** Welche Veränderung soll mit den eingesetzten Mitteln bei welchen
-Menschen eintreten – und welche Beobachtung würde zeigen, dass die Annahme
+Menschen eintreten - und welche Beobachtung würde zeigen, dass die Annahme
 nicht trägt?
 
 **Grenze:** Eine Haushaltslogik darf nicht dazu führen, dass schwer messbare,
@@ -158,8 +158,8 @@ vorbehaltlich einer abschließenden redaktionellen Prüfung vorgesehen:
 
 | Instrument | Ziel |
 | --- | --- |
-| Gesetzliche Wirkungsrückkopplung | `/wirkungssteuerung/wstg/` – Wirkungssteuergesetz |
-| Nichtkompensation | `/begriffe/wirkungsrisiko/` – Wirkungsrisiko und Grenzen |
+| Gesetzliche Wirkungsrückkopplung | `/wirkungssteuerung/wstg/` - Wirkungssteuergesetz |
+| Nichtkompensation | `/begriffe/wirkungsrisiko/` - Wirkungsrisiko und Grenzen |
 | Wirkungshaushalt | `/wirkungssteuerung/wirkungshaushalt/` |
 | Fördermittelrückkopplung | `/wirkungssteuerung/beschaffung-foerderung/` |
 | Wirkungsdaten | `/wirkungssteuerung/woek-ids/` und `/begriffe/wirkungsdaten/` |

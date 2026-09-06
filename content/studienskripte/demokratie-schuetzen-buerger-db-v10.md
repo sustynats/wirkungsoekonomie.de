@@ -3,7 +3,7 @@
 **Reihe:** Demokratie schützen · Bürger:innen · DB10
 **Status:** vollständiger Master · Modellfall Rosenfeld
 **Empfohlene Lernzeit:** 75 Minuten
-**Voraussetzung:** DB1–DB9
+**Voraussetzung:** DB1-DB9
 **Reader-/Seed-Spiegel:** `woek-akademie-app/content/lehrgaenge/demokratie-schuetzen-buerger-db-v10.md`
 
 **Modellhinweis:** Rosenfeld, die Gesamtschule, der Elternabend und alle beteiligten Personen sind erfunden. Der Fall macht sichtbar, wie sich Schutz, Zugehörigkeit und Gesprächsfähigkeit in einem kleinen öffentlichen Raum verändern können. Er bewertet weder politische Haltungen noch den Wert von Personen. Diese Lektion ist keine Rechtsberatung, keine Aufforderung zur Selbstgefährdung und kein System zur Bewertung von Bürger:innen.
@@ -40,7 +40,7 @@ Mira ist nicht sicher, wie sie reagieren soll. Sie kennt den Vater aus dem Sport
 
 Der Fall hat drei Räume. Im Elternabend geht es um eine unmittelbare Grenze. Im Sportverein geht es um eine Beziehung, die nach dem Konflikt weiterbesteht. Im Klassenraum geht es um eine Entscheidung, an der die betroffenen Kinder beteiligt sein sollten. Wer nur auf den Satz am Tisch schaut, übersieht diese drei verschiedenen Aufgaben.
 
-## Was Zivilcourage hier bedeutet – und was nicht
+## Was Zivilcourage hier bedeutet - und was nicht
 
 Zivilcourage heißt, in einer Situation Verantwortung für die Bedingungen des gemeinsamen Raums zu übernehmen. Sie richtet sich auf eine Handlung, ein Muster oder eine Grenzverletzung, nicht auf die Abwertung einer Person. Mira muss den Vater nicht diagnostizieren, bloßstellen oder von einer politischen Haltung „heilen“. Sie kann den Satz begrenzen und die Sache wieder an eine faire, bearbeitbare Frage binden.
 
@@ -136,7 +136,7 @@ Ein alltagstauglicher Dreischritt lautet:
 
 1. **Quelle:** Wer behauptet das? Ist der Ursprung erkennbar oder zirkuliert nur ein Screenshot?
 2. **Kontext:** Fehlen Zeitpunkt, Ort, Vergleichsmaßstab oder Gegeninformation?
-3. **Folge:** Was verstärke ich, wenn ich es weiterleite oder empört zitiere – Klärung, Angst, ein Feindbild oder eine überprüfbare Frage?
+3. **Folge:** Was verstärke ich, wenn ich es weiterleite oder empört zitiere - Klärung, Angst, ein Feindbild oder eine überprüfbare Frage?
 
 Der dritte Schritt ist besonders wichtig. Selbst eine gut gemeinte Widerlegung kann einen irreführenden Beitrag verstärken, wenn sie nur dessen Aufregungsrahmen wiederholt. Die OECD-Empfehlung zur Informationsintegrität ordnet verlässliche Informationsräume als demokratische Aufgabe ein. Sie ersetzt keine individuelle Prüfung, macht aber deutlich, dass Regeln, Medienkompetenz und transparente Verfahren zusammengehören. [OECD-Empfehlung zur Informationsintegrität](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/)
 
@@ -215,11 +215,11 @@ Wenn du eine Frage mit „nein“ beantwortest, ist das kein Urteil über dich. 
 
 ## Quellen und Vertiefung
 
-- [Grundgesetz](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0157/) – verfassungsrechtlicher Rahmen von Würde, Grundrechten und demokratischer Ordnung.
-- [Bundeszentrale für politische Bildung: Demokratie](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0476/) – verständlicher Einstieg in Formen demokratischer Beteiligung.
-- [International IDEA: Global State of Democracy](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0297/) – Daten und Analysen zu Demokratiequalität und Teilhabe.
-- [OECD-Empfehlung zur Informationsintegrität](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) – Referenz für verlässliche Informationsräume.
-- [UN SDG 16](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0545/) – internationaler Referenzrahmen für Frieden, Recht, Teilhabe und starke Institutionen.
+- [Grundgesetz](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0157/) - verfassungsrechtlicher Rahmen von Würde, Grundrechten und demokratischer Ordnung.
+- [Bundeszentrale für politische Bildung: Demokratie](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0476/) - verständlicher Einstieg in Formen demokratischer Beteiligung.
+- [International IDEA: Global State of Democracy](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0297/) - Daten und Analysen zu Demokratiequalität und Teilhabe.
+- [OECD-Empfehlung zur Informationsintegrität](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) - Referenz für verlässliche Informationsräume.
+- [UN SDG 16](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0545/) - internationaler Referenzrahmen für Frieden, Recht, Teilhabe und starke Institutionen.
 
 ## Kerngedanke
 

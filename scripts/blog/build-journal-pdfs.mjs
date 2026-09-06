@@ -17,6 +17,7 @@ import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
+import {normalizePublicationTypography} from '../lib/public-typography.mjs';
 
 const root = process.cwd();
 const indexPath = path.join(root, "assets", "data", "blog-index.json");
@@ -27,6 +28,9 @@ const onlyArgs = process.argv
   .filter((argument, index, all) => all[index - 1] === "--only")
   .map((value) => normalizeJournalUrl(value));
 const force = process.argv.includes("--force");
+const verifyOnly = process.env.WOEK_PDF_BUILD_MODE === 'verify';
+const captureHygiene = process.argv.includes('--capture-publication-hygiene');
+const publicationHygiene = JSON.parse(fs.readFileSync(path.join(root,'assets/data/publication-hygiene-2026-09-06.json'),'utf8'));
 
 function normalizeJournalUrl(value = "") {
   const clean = String(value).trim().replace(/^https?:\/\/wirkungsoekonomie\.de/i, "");
@@ -304,10 +308,22 @@ for (const entry of entries) {
   if (legacyIndexUrl !== entry.url) delete nextEntries[legacyIndexUrl];
   const previous = nextEntries[entry.url];
 
+  if(captureHygiene && publicationHygiene.localFiles[relativePdfPath]){
+    const approved=publicationHygiene.localFiles[relativePdfPath];
+    if(hash(fs.readFileSync(outputPath))!==approved.afterSha256)throw new Error(`Unverified publication correction: ${relativePdfPath}`);
+    const oldHtml=execFileSync('git',['show',`HEAD:${path.relative(root,sourceFile)}`],{encoding:'utf8',maxBuffer:8*1024*1024});
+    const visible=html=>normalizePublicationTypography(stripTags(cleanArticleMarkup(extractMain(html)))).replaceAll('Claude Shannon','C. Shannon').replaceAll('Shannon, Claude E.','Shannon, C. E.').replaceAll('Wirkungsportal Parlament öffnen','Zur Übersicht').replace(/\s+/g,' ').trim();
+    if(visible(oldHtml)!==visible(sourceHtml))throw new Error(`Non-typographic journal source change requires a separate review: ${entry.url}`);
+    nextEntries[entry.url]={...previous,sourceHash,bytes:fs.statSync(outputPath).size,technicalCorrection:{date:'2026-09-06',previousSourceHash:previous?.sourceHash,pdfSha256:approved.afterSha256}};
+    skipped+=1;continue;
+  }
+
   if (!force && previous?.generatorVersion === generatorVersion && previous?.sourceHash === sourceHash && previous?.pdfPath === `/${relativePdfPath}` && fs.existsSync(outputPath)) {
     skipped += 1;
     continue;
   }
+
+  if(verifyOnly)throw new Error(`Journal PDF source changed: ${entry.url}. Update and review the dated PDF before publishing.`);
 
   browser ||= chromeExecutable();
   renderPdf(browser, renderPdfHtml(entry, sourceHtml), outputPath, entry.title || entry.url);

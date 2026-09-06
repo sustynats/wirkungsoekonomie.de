@@ -23,7 +23,7 @@ In der Wirkungsökonomie ist Demokratie keine dekorative dritte Säule neben Men
 ## 2. Video-/Audio-Vorlesung
 
 1. **Der schöne Satz im Rathaus:** Warum eine Abstimmung noch kein Beleg für gute demokratische Wirkung ist.
-2. **Vom Plan zur Zustandsveränderung:** Welche Wirkungen ein Bahnhofsvorplatz haben kann – und was bloß Absicht, Leistung oder Reichweite ist.
+2. **Vom Plan zur Zustandsveränderung:** Welche Wirkungen ein Bahnhofsvorplatz haben kann - und was bloß Absicht, Leistung oder Reichweite ist.
 3. **Mehrheit mit Grenzen:** Weshalb Rechte, Zugänglichkeit und Rechtsschutz nicht gegen Zustimmung aufgerechnet werden dürfen.
 4. **Die fehlende Schleife:** Wie aus einem Beteiligungsformat eine demokratische Rückkopplung wird.
 5. **Messen ohne Demokratie-Ranking:** Welche Beobachtungen hilfreich sind und warum sie keine Note für Einwohner:innen, Quartiere oder politische Lager ergeben.
@@ -78,7 +78,7 @@ Dieser Satz ist weniger glänzend als „Platz für alle“. Dafür macht er Geg
 
 ### Warum Daten nicht neutral durch den Raum schweben
 
-Jetzt hängt im Rathaus eine neue Liste: abgegebene Stimmen, Zahl der Ortstermine, Wegezeiten, Rückmeldungen zu Barrieren, Lieferfahrten, Aufenthaltsdauer im Schatten. Die Liste ist hilfreich – aber keine automatische Wahrheit. Jede Kennzahl braucht eine Frage, eine Quelle, einen Zeitraum und eine Grenze.
+Jetzt hängt im Rathaus eine neue Liste: abgegebene Stimmen, Zahl der Ortstermine, Wegezeiten, Rückmeldungen zu Barrieren, Lieferfahrten, Aufenthaltsdauer im Schatten. Die Liste ist hilfreich - aber keine automatische Wahrheit. Jede Kennzahl braucht eine Frage, eine Quelle, einen Zeitraum und eine Grenze.
 
 Nehmen wir die Zahl „90 Prozent Zustimmung“. Wurde die Frage verständlich gestellt? Konnten Menschen ohne Smartphone teilnehmen? Waren Alternativen gleich gut erklärt? Sind Mehrfachabstimmungen ausgeschlossen? Wer wurde gar nicht erreicht? Die Zahl kann eine relevante Information sein. Ohne diese Fragen darf sie jedoch nicht als Beweis dafür dienen, dass „die Stadt“ etwas will.
 
@@ -98,7 +98,7 @@ Damit ist Streit nicht das Scheitern von Demokratie. Er ist Material für eine E
 
 Für die Wirkungsökonomie folgt daraus eine besondere Vorsicht bei Sprache. Statt zu sagen, „die Anwohner blockieren Fortschritt“, kann die Verwaltung schreiben: „Für Lieferverkehr, Zugänglichkeit und Aufenthaltsnutzung liegen widersprüchliche Hinweise vor; wir prüfen Varianten und veröffentlichen die Kriterien.“ Damit werden Menschen nicht zu einem Hindernis etikettiert. Die Streitfrage bleibt offen und prüfbar.
 
-## 4. Skript / Folien – fachliche Sicherung
+## 4. Skript / Folien - fachliche Sicherung
 
 ### Die Entscheidungslandkarte von Lindenau
 
@@ -148,7 +148,7 @@ Eine mögliche Arbeitsfassung lautet: „Lindenau gestaltet den Bahnhofsvorplatz
 
 ## 6. Verständnisfragen
 
-1. Welche Aussage tragen 613 abgegebene Stimmen – und welche Aussage tragen sie nicht?
+1. Welche Aussage tragen 613 abgegebene Stimmen - und welche Aussage tragen sie nicht?
 2. Worin unterscheiden sich am Bahnhofsvorplatz Handlung, Wirkungspotenzial, Reichweite und eingetretene Wirkung?
 3. Warum kann eine Mehrheit eine relevante Zugangshürde nicht einfach überstimmen?
 4. Was bedeutet Nichtkompensation im Fall des niveaugleichen Zugangs?
@@ -184,4 +184,4 @@ Eine starke Bearbeitung nennt nicht einfach „mehr Beteiligung“ als Lösung. 
 
 ## 9. Abschlussstatus im Lernraum
 
-Nach D1 kannst du eine demokratische Frage als Wirkungsfrage formulieren, ohne Demokratie auf ein Stimmungsbild zu verkürzen. Du kannst Handlung, Wirkungspotenzial, Reichweite und beobachtete Veränderung unterscheiden. Du weißt, warum Rechte und relevante Zugangshürden nicht gegen Mehrheiten oder andere Vorteile verrechnet werden dürfen, und wie Nichtkompensation sowie Reverse Merit Order die Reihenfolge der Arbeit verändern. Du kannst eine Entscheidung mit Zuständigkeit, Begründung, Schutzgrenze und Rückkopplung beschreiben – ohne Menschen zu bewerten und ohne eine Messung zur Ersatzregierung zu machen.
+Nach D1 kannst du eine demokratische Frage als Wirkungsfrage formulieren, ohne Demokratie auf ein Stimmungsbild zu verkürzen. Du kannst Handlung, Wirkungspotenzial, Reichweite und beobachtete Veränderung unterscheiden. Du weißt, warum Rechte und relevante Zugangshürden nicht gegen Mehrheiten oder andere Vorteile verrechnet werden dürfen, und wie Nichtkompensation sowie Reverse Merit Order die Reihenfolge der Arbeit verändern. Du kannst eine Entscheidung mit Zuständigkeit, Begründung, Schutzgrenze und Rückkopplung beschreiben - ohne Menschen zu bewerten und ohne eine Messung zur Ersatzregierung zu machen.

@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine Wirkungsdatenarchitektur kann nur funktionieren, wenn Menschen und Organisationen ihr vertrauen können. Dafür braucht sie **Datenschutz**, **Cybersicherheit** und **digitale Handlungsfähigkeit**. Datenschutz schützt Personen und Grundrechte. Cyberresilienz schützt Funktionen und Daten vor Ausfall/Angriff. Digitale Souveränität bedeutet, kritische digitale Fähigkeiten und Wahlmöglichkeiten zu erhalten – nicht, jede Technologie im eigenen Land selbst zu bauen.
+Eine Wirkungsdatenarchitektur kann nur funktionieren, wenn Menschen und Organisationen ihr vertrauen können. Dafür braucht sie **Datenschutz**, **Cybersicherheit** und **digitale Handlungsfähigkeit**. Datenschutz schützt Personen und Grundrechte. Cyberresilienz schützt Funktionen und Daten vor Ausfall/Angriff. Digitale Souveränität bedeutet, kritische digitale Fähigkeiten und Wahlmöglichkeiten zu erhalten - nicht, jede Technologie im eigenen Land selbst zu bauen.
 
 ## Lernziele
 
@@ -79,9 +79,9 @@ Darum wird Datenbedarf wie jede andere Intervention geprüft:
 
 Klassische Schutzziele:
 
-- **Confidentiality** – nur Berechtigte sehen Daten.
-- **Integrity** – Daten/Software bleiben unverfälscht.
-- **Availability** – Systeme/Daten sind verfügbar.
+- **Confidentiality** - nur Berechtigte sehen Daten.
+- **Integrity** - Daten/Software bleiben unverfälscht.
+- **Availability** - Systeme/Daten sind verfügbar.
 
 Für Wirkungssysteme kommen hinzu:
 
@@ -175,7 +175,7 @@ WÖk-Vergleich:
 - Exit-Fähigkeit,
 - Kosten.
 
-Oft ist Föderation robuster – aber nicht immer. Der konkrete Use Case entscheidet.
+Oft ist Föderation robuster - aber nicht immer. Der konkrete Use Case entscheidet.
 
 ## 10. Security vs. Accessibility
 
@@ -238,7 +238,7 @@ Datenschutz, Informationssicherheit und digitale Souveränität sind etablierte 
 
 Entwirf die Datenarchitektur eines Wirkungsportals.
 
-Bewerte zwei Optionen – zentral vs. föderiert – nach:
+Bewerte zwei Optionen - zentral vs. föderiert - nach:
 
 - Datenminimierung,
 - Analysebedarf,
@@ -288,4 +288,4 @@ Und manchmal ist ein föderiertes System robuster als eine zentrale Riesendatenb
 
 Der Merksatz lautet:
 
-**Eine gute Wirkungsdatenarchitektur sammelt nicht maximal viele Daten. Sie sammelt die richtigen – und bleibt sicher, korrigierbar und verlassbar.**
+**Eine gute Wirkungsdatenarchitektur sammelt nicht maximal viele Daten. Sie sammelt die richtigen - und bleibt sicher, korrigierbar und verlassbar.**

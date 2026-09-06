@@ -135,7 +135,7 @@
         if (!saved) throw new Error("Storage unavailable");
         current = { ...current, id: saved.id };
         status.textContent = automatic
-          ? t("Automatisch in Mein Wirkungsraum gespeichert – lokal in diesem Browser.", "Automatically saved to My Impact Space - locally in this browser.")
+          ? t("Automatisch in Mein Wirkungsraum gespeichert - lokal in diesem Browser.", "Automatically saved to My Impact Space - locally in this browser.")
           : t("In Mein Wirkungsraum gespeichert. Antwort und Quellen sind in diesem Browser wieder abrufbar.", "Saved to My Impact Space. This answer and its sources can be reopened in this browser.");
         document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
       } catch {
@@ -196,7 +196,7 @@
         if (sharedId) shareUrl = `https://wirkungsoekonomie.de${pagePath}?share=${encodeURIComponent(sharedId)}`;
         status.textContent = sharedId
           ? t("Öffentlich geteilter Antwort-Snapshot. Nicht automatisch in Deinem Wirkungsraum gespeichert. KI-Antworten können Fehler enthalten; Quellen und Stand prüfen.", "Public answer snapshot. Not automatically saved to your Impact Space. AI answers can contain errors; check sources and date.")
-          : t("Gespeicherte Antwort geöffnet – keine neue KI-Abfrage.", "Saved answer opened - no new AI request.");
+          : t("Gespeicherte Antwort geöffnet - keine neue KI-Abfrage.", "Saved answer opened - no new AI request.");
       } catch {
         if (token !== revision) return;
         const warning = document.querySelector("#woek-ai-warning");

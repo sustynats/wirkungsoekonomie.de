@@ -1,4 +1,4 @@
-# ltw-2026-st-afd – commitment-register – vollständige Darstellung
+# ltw-2026-st-afd - commitment-register - vollständige Darstellung
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -1137,15 +1137,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0036-kirchenasyl-in-sachsen-anhalt-unterbinden-kirchen-finanzie
 
-**title:** Kirchenasyl in Sachsen-Anhalt unterbinden – Kirchen finanziell zur Rechenschaft ziehen!
+**title:** Kirchenasyl in Sachsen-Anhalt unterbinden - Kirchen finanziell zur Rechenschaft ziehen!
 
-**commitment_text:** Kirchenasyl in Sachsen-Anhalt unterbinden – Kirchen finanziell zur Rechenschaft ziehen!
+**commitment_text:** Kirchenasyl in Sachsen-Anhalt unterbinden - Kirchen finanziell zur Rechenschaft ziehen!
 
 ##### source_location
 
-**page:** Webabschnitt 23: 4 Kirchenasyl in Sachsen-Anhalt unterbinden – Kirchen finanziell zur Rechenschaft ziehen!
+**page:** Webabschnitt 23: 4 Kirchenasyl in Sachsen-Anhalt unterbinden - Kirchen finanziell zur Rechenschaft ziehen!
 
-**section:** 4 Kirchenasyl in Sachsen-Anhalt unterbinden – Kirchen finanziell zur Rechenschaft ziehen!
+**section:** 4 Kirchenasyl in Sachsen-Anhalt unterbinden - Kirchen finanziell zur Rechenschaft ziehen!
 
 ##### source_context
 
@@ -1303,9 +1303,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 33: 13 Asylanten und Flüchtlinge an Versorgungskosten beteiligen – Vermögensüberprüfungen durchführen!
+**page:** Webabschnitt 33: 13 Asylanten und Flüchtlinge an Versorgungskosten beteiligen - Vermögensüberprüfungen durchführen!
 
-**section:** 13 Asylanten und Flüchtlinge an Versorgungskosten beteiligen – Vermögensüberprüfungen durchführen!
+**section:** 13 Asylanten und Flüchtlinge an Versorgungskosten beteiligen - Vermögensüberprüfungen durchführen!
 
 ##### source_context
 
@@ -1591,9 +1591,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 43: 23 Einbürgerung braucht hohe Hürden – Kein deutscher Pass für kriminelle Ausländer!
+**page:** Webabschnitt 43: 23 Einbürgerung braucht hohe Hürden - Kein deutscher Pass für kriminelle Ausländer!
 
-**section:** 23 Einbürgerung braucht hohe Hürden – Kein deutscher Pass für kriminelle Ausländer!
+**section:** 23 Einbürgerung braucht hohe Hürden - Kein deutscher Pass für kriminelle Ausländer!
 
 ##### source_context
 
@@ -1719,9 +1719,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 51: 30 Ausreisepflichtige konsequent abschieben – Abschiebeoffensive einleiten!
+**page:** Webabschnitt 51: 30 Ausreisepflichtige konsequent abschieben - Abschiebeoffensive einleiten!
 
-**section:** 30 Ausreisepflichtige konsequent abschieben – Abschiebeoffensive einleiten!
+**section:** 30 Ausreisepflichtige konsequent abschieben - Abschiebeoffensive einleiten!
 
 ##### source_context
 
@@ -1751,9 +1751,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 52: 31 Verhinderung von Abschiebungen – Fördergelder entziehen, Täter bestrafen!
+**page:** Webabschnitt 52: 31 Verhinderung von Abschiebungen - Fördergelder entziehen, Täter bestrafen!
 
-**section:** 31 Verhinderung von Abschiebungen – Fördergelder entziehen, Täter bestrafen!
+**section:** 31 Verhinderung von Abschiebungen - Fördergelder entziehen, Täter bestrafen!
 
 ##### source_context
 
@@ -2583,9 +2583,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 73: 7 Patriotismus fördern – Kein Staatsgeld für antideutsche Kunst und Kultur!
+**page:** Webabschnitt 73: 7 Patriotismus fördern - Kein Staatsgeld für antideutsche Kunst und Kultur!
 
-**section:** 7 Patriotismus fördern – Kein Staatsgeld für antideutsche Kunst und Kultur!
+**section:** 7 Patriotismus fördern - Kein Staatsgeld für antideutsche Kunst und Kultur!
 
 ##### source_context
 
@@ -3249,15 +3249,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0102-christentum-foerdern-kleine-kirchen-foerdern
 
-**title:** Christentum fördern – Kleine Kirchen fördern!
+**title:** Christentum fördern - Kleine Kirchen fördern!
 
-**commitment_text:** Christentum fördern – Kleine Kirchen fördern!
+**commitment_text:** Christentum fördern - Kleine Kirchen fördern!
 
 ##### source_location
 
-**page:** Webabschnitt 86: 20 Christentum fördern – Kleine Kirchen fördern!
+**page:** Webabschnitt 86: 20 Christentum fördern - Kleine Kirchen fördern!
 
-**section:** 20 Christentum fördern – Kleine Kirchen fördern!
+**section:** 20 Christentum fördern - Kleine Kirchen fördern!
 
 ##### source_context
 
@@ -3443,13 +3443,13 @@ _Leere Liste._
 
 **title:** Wir setzen uns dafür ein, handwerkliche Bildung stärker in den Schulalltag zu …
 
-**commitment_text:** Wir setzen uns dafür ein, handwerkliche Bildung stärker in den Schulalltag zu integrieren – in Theorie und vor allem in der Praxis.
+**commitment_text:** Wir setzen uns dafür ein, handwerkliche Bildung stärker in den Schulalltag zu integrieren - in Theorie und vor allem in der Praxis.
 
 ##### source_location
 
-**page:** Webabschnitt 89: 2 Handwerk stärken – Talente früh entdecken!
+**page:** Webabschnitt 89: 2 Handwerk stärken - Talente früh entdecken!
 
-**section:** 2 Handwerk stärken – Talente früh entdecken!
+**section:** 2 Handwerk stärken - Talente früh entdecken!
 
 ##### source_context
 
@@ -3479,9 +3479,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 89: 2 Handwerk stärken – Talente früh entdecken!
+**page:** Webabschnitt 89: 2 Handwerk stärken - Talente früh entdecken!
 
-**section:** 2 Handwerk stärken – Talente früh entdecken!
+**section:** 2 Handwerk stärken - Talente früh entdecken!
 
 ##### source_context
 
@@ -3511,9 +3511,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 89: 2 Handwerk stärken – Talente früh entdecken!
+**page:** Webabschnitt 89: 2 Handwerk stärken - Talente früh entdecken!
 
-**section:** 2 Handwerk stärken – Talente früh entdecken!
+**section:** 2 Handwerk stärken - Talente früh entdecken!
 
 ##### source_context
 
@@ -3799,9 +3799,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 94: 7 Heimatkunde – Schulbildung nah am echten Leben!
+**page:** Webabschnitt 94: 7 Heimatkunde - Schulbildung nah am echten Leben!
 
-**section:** 7 Heimatkunde – Schulbildung nah am echten Leben!
+**section:** 7 Heimatkunde - Schulbildung nah am echten Leben!
 
 ##### source_context
 
@@ -3831,9 +3831,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 94: 7 Heimatkunde – Schulbildung nah am echten Leben!
+**page:** Webabschnitt 94: 7 Heimatkunde - Schulbildung nah am echten Leben!
 
-**section:** 7 Heimatkunde – Schulbildung nah am echten Leben!
+**section:** 7 Heimatkunde - Schulbildung nah am echten Leben!
 
 ##### source_context
 
@@ -3863,9 +3863,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 95: 8 Mehr 1813 und 1871 – Geschichtslehrpläne überarbeiten!
+**page:** Webabschnitt 95: 8 Mehr 1813 und 1871 - Geschichtslehrpläne überarbeiten!
 
-**section:** 8 Mehr 1813 und 1871 – Geschichtslehrpläne überarbeiten!
+**section:** 8 Mehr 1813 und 1871 - Geschichtslehrpläne überarbeiten!
 
 ##### source_context
 
@@ -4407,9 +4407,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 110: 23 Lehrerberuf attraktiver machen – Lehrer gezielt anwerben!
+**page:** Webabschnitt 110: 23 Lehrerberuf attraktiver machen - Lehrer gezielt anwerben!
 
-**section:** 23 Lehrerberuf attraktiver machen – Lehrer gezielt anwerben!
+**section:** 23 Lehrerberuf attraktiver machen - Lehrer gezielt anwerben!
 
 ##### source_context
 
@@ -5650,15 +5650,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0177-qualifikation-statt-quote-auch-bei-der-polizei
 
-**title:** Qualifikation statt Quote – auch bei der Polizei!
+**title:** Qualifikation statt Quote - auch bei der Polizei!
 
-**commitment_text:** Qualifikation statt Quote – auch bei der Polizei!
+**commitment_text:** Qualifikation statt Quote - auch bei der Polizei!
 
 ##### source_location
 
-**page:** Webabschnitt 140: 7 Qualifikation statt Quote – auch bei der Polizei!
+**page:** Webabschnitt 140: 7 Qualifikation statt Quote - auch bei der Polizei!
 
-**section:** 7 Qualifikation statt Quote – auch bei der Polizei!
+**section:** 7 Qualifikation statt Quote - auch bei der Polizei!
 
 ##### source_context
 
@@ -6292,7 +6292,7 @@ _Leere Liste._
 
 **title:** Diese landesrechtliche Fahrberechtigung ermöglicht es allen Angehörigen von Feuerwehr, Rettungsdienst und Katastrophenschutz, …
 
-**commitment_text:** Diese landesrechtliche Fahrberechtigung ermöglicht es allen Angehörigen von Feuerwehr, Rettungsdienst und Katastrophenschutz, mit einem normalen PKW-Führerschein (Klasse B) auch größere Einsatzfahrzeuge bis 7,5 t zu fahren – ohne den teuren Lkw-Führerschein Klasse C1 machen zu müssen.
+**commitment_text:** Diese landesrechtliche Fahrberechtigung ermöglicht es allen Angehörigen von Feuerwehr, Rettungsdienst und Katastrophenschutz, mit einem normalen PKW-Führerschein (Klasse B) auch größere Einsatzfahrzeuge bis 7,5 t zu fahren - ohne den teuren Lkw-Führerschein Klasse C1 machen zu müssen.
 
 ##### source_location
 
@@ -6520,9 +6520,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
+**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
 
-**section:** 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
+**section:** 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
 
 ##### source_context
 
@@ -6553,9 +6553,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
+**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
 
-**section:** 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
+**section:** 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
 
 ##### source_context
 
@@ -6585,9 +6585,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
+**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
 
-**section:** 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
+**section:** 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
 
 ##### source_context
 
@@ -6713,9 +6713,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 165: 8 Sogenannte „Hassverbrechen" hinterfragen – Meinungsfreiheit verteidigen!
+**page:** Webabschnitt 165: 8 Sogenannte „Hassverbrechen" hinterfragen - Meinungsfreiheit verteidigen!
 
-**section:** 8 Sogenannte „Hassverbrechen" hinterfragen – Meinungsfreiheit verteidigen!
+**section:** 8 Sogenannte „Hassverbrechen" hinterfragen - Meinungsfreiheit verteidigen!
 
 ##### source_context
 
@@ -6771,15 +6771,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0212-justizwachtmeister-aufwerten-einfachen-dienst-abschaffen
 
-**title:** Justizwachtmeister aufwerten – einfachen Dienst abschaffen!
+**title:** Justizwachtmeister aufwerten - einfachen Dienst abschaffen!
 
-**commitment_text:** Justizwachtmeister aufwerten – einfachen Dienst abschaffen!
+**commitment_text:** Justizwachtmeister aufwerten - einfachen Dienst abschaffen!
 
 ##### source_location
 
-**page:** Webabschnitt 170: 12 Justizwachtmeister aufwerten – einfachen Dienst abschaffen!
+**page:** Webabschnitt 170: 12 Justizwachtmeister aufwerten - einfachen Dienst abschaffen!
 
-**section:** 12 Justizwachtmeister aufwerten – einfachen Dienst abschaffen!
+**section:** 12 Justizwachtmeister aufwerten - einfachen Dienst abschaffen!
 
 ##### source_context
 
@@ -7001,9 +7001,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
+**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
 
-**section:** 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
+**section:** 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
 
 ##### source_context
 
@@ -7033,9 +7033,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
+**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
 
-**section:** 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
+**section:** 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
 
 ##### source_context
 
@@ -7065,9 +7065,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
+**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
 
-**section:** 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
+**section:** 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
 
 ##### source_context
 
@@ -7097,9 +7097,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
+**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
 
-**section:** 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
+**section:** 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
 
 ##### source_context
 
@@ -7225,9 +7225,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 178: 5 Gegendemonstrationen ja – Verhinderung angemeldeter Demonstrationen nein!
+**page:** Webabschnitt 178: 5 Gegendemonstrationen ja - Verhinderung angemeldeter Demonstrationen nein!
 
-**section:** 5 Gegendemonstrationen ja – Verhinderung angemeldeter Demonstrationen nein!
+**section:** 5 Gegendemonstrationen ja - Verhinderung angemeldeter Demonstrationen nein!
 
 ##### source_context
 
@@ -8564,15 +8564,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0268-vorsicht-energiewende-blackout-vorsorge-fuer-sachsen-anhal
 
-**title:** Vorsicht Energiewende – Blackout-Vorsorge für Sachsen-Anhalt treffen!
+**title:** Vorsicht Energiewende - Blackout-Vorsorge für Sachsen-Anhalt treffen!
 
-**commitment_text:** Vorsicht Energiewende – Blackout-Vorsorge für Sachsen-Anhalt treffen!
+**commitment_text:** Vorsicht Energiewende - Blackout-Vorsorge für Sachsen-Anhalt treffen!
 
 ##### source_location
 
-**page:** Webabschnitt 213: 10 Vorsicht Energiewende – Blackout-Vorsorge für Sachsen-Anhalt treffen!
+**page:** Webabschnitt 213: 10 Vorsicht Energiewende - Blackout-Vorsorge für Sachsen-Anhalt treffen!
 
-**section:** 10 Vorsicht Energiewende – Blackout-Vorsorge für Sachsen-Anhalt treffen!
+**section:** 10 Vorsicht Energiewende - Blackout-Vorsorge für Sachsen-Anhalt treffen!
 
 ##### source_context
 
@@ -8660,15 +8660,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0271-heimat-umwelt-und-bevoelkerung-schuetzen-kein-fracking-in
 
-**title:** Heimat, Umwelt und Bevölkerung schützen – Kein Fracking in Sachsen-Anhalt!
+**title:** Heimat, Umwelt und Bevölkerung schützen - Kein Fracking in Sachsen-Anhalt!
 
-**commitment_text:** Heimat, Umwelt und Bevölkerung schützen – Kein Fracking in Sachsen-Anhalt!
+**commitment_text:** Heimat, Umwelt und Bevölkerung schützen - Kein Fracking in Sachsen-Anhalt!
 
 ##### source_location
 
-**page:** Webabschnitt 216: 13 Heimat, Umwelt und Bevölkerung schützen – Kein Fracking in Sachsen-Anhalt!
+**page:** Webabschnitt 216: 13 Heimat, Umwelt und Bevölkerung schützen - Kein Fracking in Sachsen-Anhalt!
 
-**section:** 13 Heimat, Umwelt und Bevölkerung schützen – Kein Fracking in Sachsen-Anhalt!
+**section:** 13 Heimat, Umwelt und Bevölkerung schützen - Kein Fracking in Sachsen-Anhalt!
 
 ##### source_context
 
@@ -8724,15 +8724,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0273-kohleausstieg-stoppen-kohlestandort-sachsen-anhalt-erhalte
 
-**title:** Kohleausstieg stoppen – Kohlestandort Sachsen-Anhalt erhalten!
+**title:** Kohleausstieg stoppen - Kohlestandort Sachsen-Anhalt erhalten!
 
-**commitment_text:** Kohleausstieg stoppen – Kohlestandort Sachsen-Anhalt erhalten!
+**commitment_text:** Kohleausstieg stoppen - Kohlestandort Sachsen-Anhalt erhalten!
 
 ##### source_location
 
-**page:** Webabschnitt 218: 15 Kohleausstieg stoppen – Kohlestandort Sachsen-Anhalt erhalten!
+**page:** Webabschnitt 218: 15 Kohleausstieg stoppen - Kohlestandort Sachsen-Anhalt erhalten!
 
-**section:** 15 Kohleausstieg stoppen – Kohlestandort Sachsen-Anhalt erhalten!
+**section:** 15 Kohleausstieg stoppen - Kohlestandort Sachsen-Anhalt erhalten!
 
 ##### source_context
 
@@ -8762,9 +8762,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 219: 16 Neustart vornehmen – Wiedereinstieg in die Kernenergie einleiten!
+**page:** Webabschnitt 219: 16 Neustart vornehmen - Wiedereinstieg in die Kernenergie einleiten!
 
-**section:** 16 Neustart vornehmen – Wiedereinstieg in die Kernenergie einleiten!
+**section:** 16 Neustart vornehmen - Wiedereinstieg in die Kernenergie einleiten!
 
 ##### source_context
 
@@ -8788,15 +8788,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0275-steuergeldvergeudung-beenden-e-auto-subventionen-streichen
 
-**title:** Steuergeldvergeudung beenden – E-Auto-Subventionen streichen!
+**title:** Steuergeldvergeudung beenden - E-Auto-Subventionen streichen!
 
-**commitment_text:** Steuergeldvergeudung beenden – E-Auto-Subventionen streichen!
+**commitment_text:** Steuergeldvergeudung beenden - E-Auto-Subventionen streichen!
 
 ##### source_location
 
-**page:** Webabschnitt 220: 17 Steuergeldvergeudung beenden – E-Auto-Subventionen streichen!
+**page:** Webabschnitt 220: 17 Steuergeldvergeudung beenden - E-Auto-Subventionen streichen!
 
-**section:** 17 Steuergeldvergeudung beenden – E-Auto-Subventionen streichen!
+**section:** 17 Steuergeldvergeudung beenden - E-Auto-Subventionen streichen!
 
 ##### source_context
 
@@ -8820,15 +8820,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0276-energie-und-verkehrswendeirrsinn-beenden-verbrenner-verbot
 
-**title:** Energie- und Verkehrswendeirrsinn beenden – Verbrenner-Verbot stoppen!
+**title:** Energie- und Verkehrswendeirrsinn beenden - Verbrenner-Verbot stoppen!
 
-**commitment_text:** Energie- und Verkehrswendeirrsinn beenden – Verbrenner-Verbot stoppen!
+**commitment_text:** Energie- und Verkehrswendeirrsinn beenden - Verbrenner-Verbot stoppen!
 
 ##### source_location
 
-**page:** Webabschnitt 221: 18 Energie- und Verkehrswendeirrsinn beenden – Verbrenner-Verbot stoppen!
+**page:** Webabschnitt 221: 18 Energie- und Verkehrswendeirrsinn beenden - Verbrenner-Verbot stoppen!
 
-**section:** 18 Energie- und Verkehrswendeirrsinn beenden – Verbrenner-Verbot stoppen!
+**section:** 18 Energie- und Verkehrswendeirrsinn beenden - Verbrenner-Verbot stoppen!
 
 ##### source_context
 
@@ -8852,15 +8852,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0277-autofahrer-entlasten-kraftstoffpreise-senken
 
-**title:** Autofahrer entlasten – Kraftstoffpreise senken!
+**title:** Autofahrer entlasten - Kraftstoffpreise senken!
 
-**commitment_text:** Autofahrer entlasten – Kraftstoffpreise senken!
+**commitment_text:** Autofahrer entlasten - Kraftstoffpreise senken!
 
 ##### source_location
 
-**page:** Webabschnitt 222: 19 Autofahrer entlasten – Kraftstoffpreise senken!
+**page:** Webabschnitt 222: 19 Autofahrer entlasten - Kraftstoffpreise senken!
 
-**section:** 19 Autofahrer entlasten – Kraftstoffpreise senken!
+**section:** 19 Autofahrer entlasten - Kraftstoffpreise senken!
 
 ##### source_context
 
@@ -8916,15 +8916,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0279-mikroklima-schuetzen-energiewende-stoppen
 
-**title:** Mikroklima schützen – Energiewende stoppen!
+**title:** Mikroklima schützen - Energiewende stoppen!
 
-**commitment_text:** Mikroklima schützen – Energiewende stoppen!
+**commitment_text:** Mikroklima schützen - Energiewende stoppen!
 
 ##### source_location
 
-**page:** Webabschnitt 224: 21 Mikroklima schützen – Energiewende stoppen!
+**page:** Webabschnitt 224: 21 Mikroklima schützen - Energiewende stoppen!
 
-**section:** 21 Mikroklima schützen – Energiewende stoppen!
+**section:** 21 Mikroklima schützen - Energiewende stoppen!
 
 ##### source_context
 
@@ -8980,15 +8980,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0281-pariser-klimaabkommen-und-green-deal-aufkuendigen-bundeskl
 
-**title:** Pariser Klimaabkommen und Green Deal aufkündigen – Bundesklimaschutzgesetz abschaffen!
+**title:** Pariser Klimaabkommen und Green Deal aufkündigen - Bundesklimaschutzgesetz abschaffen!
 
-**commitment_text:** Pariser Klimaabkommen und Green Deal aufkündigen – Bundesklimaschutzgesetz abschaffen!
+**commitment_text:** Pariser Klimaabkommen und Green Deal aufkündigen - Bundesklimaschutzgesetz abschaffen!
 
 ##### source_location
 
-**page:** Webabschnitt 227: 24 Pariser Klimaabkommen und Green Deal aufkündigen – Bundesklimaschutzgesetz abschaffen!
+**page:** Webabschnitt 227: 24 Pariser Klimaabkommen und Green Deal aufkündigen - Bundesklimaschutzgesetz abschaffen!
 
-**section:** 24 Pariser Klimaabkommen und Green Deal aufkündigen – Bundesklimaschutzgesetz abschaffen!
+**section:** 24 Pariser Klimaabkommen und Green Deal aufkündigen - Bundesklimaschutzgesetz abschaffen!
 
 ##### source_context
 
@@ -9012,15 +9012,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0282-emissionshandel-beenden-heimische-unternehmen-retten
 
-**title:** Emissionshandel beenden – Heimische Unternehmen retten!
+**title:** Emissionshandel beenden - Heimische Unternehmen retten!
 
-**commitment_text:** Emissionshandel beenden – Heimische Unternehmen retten!
+**commitment_text:** Emissionshandel beenden - Heimische Unternehmen retten!
 
 ##### source_location
 
-**page:** Webabschnitt 228: 25 Emissionshandel beenden – Heimische Unternehmen retten!
+**page:** Webabschnitt 228: 25 Emissionshandel beenden - Heimische Unternehmen retten!
 
-**section:** 25 Emissionshandel beenden – Heimische Unternehmen retten!
+**section:** 25 Emissionshandel beenden - Heimische Unternehmen retten!
 
 ##### source_context
 
@@ -9044,15 +9044,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0283-verbraucher-entlasten-co-steuer-abschaffen
 
-**title:** Verbraucher entlasten – CO₂-Steuer abschaffen!
+**title:** Verbraucher entlasten - CO₂-Steuer abschaffen!
 
-**commitment_text:** Verbraucher entlasten – CO₂-Steuer abschaffen!
+**commitment_text:** Verbraucher entlasten - CO₂-Steuer abschaffen!
 
 ##### source_location
 
-**page:** Webabschnitt 229: 26 Verbraucher entlasten – CO₂-Steuer abschaffen!
+**page:** Webabschnitt 229: 26 Verbraucher entlasten - CO₂-Steuer abschaffen!
 
-**section:** 26 Verbraucher entlasten – CO₂-Steuer abschaffen!
+**section:** 26 Verbraucher entlasten - CO₂-Steuer abschaffen!
 
 ##### source_context
 
@@ -9206,7 +9206,7 @@ _Leere Liste._
 
 **title:** Angesichts der schwierigen wirtschaftlichen Lage wollen wir die Bauern innerhalb der bestehenden …
 
-**commitment_text:** Angesichts der schwierigen wirtschaftlichen Lage wollen wir die Bauern innerhalb der bestehenden agrarpolitischen Förderinstrumente entlasten und ihnen mehr Planungssicherheit geben – etwa dadurch, dass wir auf zusätzliche, strengere nationale Auslegungen von EU-Vorgaben verzichten.
+**commitment_text:** Angesichts der schwierigen wirtschaftlichen Lage wollen wir die Bauern innerhalb der bestehenden agrarpolitischen Förderinstrumente entlasten und ihnen mehr Planungssicherheit geben - etwa dadurch, dass wir auf zusätzliche, strengere nationale Auslegungen von EU-Vorgaben verzichten.
 
 ##### source_location
 
@@ -9403,9 +9403,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 238: 5 Ackerland in Bauernhand – Agrarstruktur stärken!
+**page:** Webabschnitt 238: 5 Ackerland in Bauernhand - Agrarstruktur stärken!
 
-**section:** 5 Ackerland in Bauernhand – Agrarstruktur stärken!
+**section:** 5 Ackerland in Bauernhand - Agrarstruktur stärken!
 
 ##### source_context
 
@@ -9431,13 +9431,13 @@ _Leere Liste._
 
 **title:** Deshalb fordern wir ein neues Agrarstrukturgesetz
 
-**commitment_text:** Deshalb fordern wir ein neues Agrarstrukturgesetz: Es soll den Zugang zu Land für ortsansässige bäuerliche Betriebe sichern, die Konzentration großer Flächen in wenigen Händen verhindern und Pacht- oder Kaufgeschäfte so regeln, dass regionale Familienbetriebe geschützt werden. Damit stellen wir sicher, dass Landwirtschaft, Heimat und Gemeinschaft erhalten bleiben – zugunsten einer lebendigen und nachhaltigen Agrarstruktur.
+**commitment_text:** Deshalb fordern wir ein neues Agrarstrukturgesetz: Es soll den Zugang zu Land für ortsansässige bäuerliche Betriebe sichern, die Konzentration großer Flächen in wenigen Händen verhindern und Pacht- oder Kaufgeschäfte so regeln, dass regionale Familienbetriebe geschützt werden. Damit stellen wir sicher, dass Landwirtschaft, Heimat und Gemeinschaft erhalten bleiben - zugunsten einer lebendigen und nachhaltigen Agrarstruktur.
 
 ##### source_location
 
-**page:** Webabschnitt 238: 5 Ackerland in Bauernhand – Agrarstruktur stärken!
+**page:** Webabschnitt 238: 5 Ackerland in Bauernhand - Agrarstruktur stärken!
 
-**section:** 5 Ackerland in Bauernhand – Agrarstruktur stärken!
+**section:** 5 Ackerland in Bauernhand - Agrarstruktur stärken!
 
 ##### source_context
 
@@ -9467,9 +9467,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 238: 5 Ackerland in Bauernhand – Agrarstruktur stärken!
+**page:** Webabschnitt 238: 5 Ackerland in Bauernhand - Agrarstruktur stärken!
 
-**section:** 5 Ackerland in Bauernhand – Agrarstruktur stärken!
+**section:** 5 Ackerland in Bauernhand - Agrarstruktur stärken!
 
 ##### source_context
 
@@ -9499,9 +9499,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 239: 6 Düngung nach Fachwissen – Gülle regional nutzen!
+**page:** Webabschnitt 239: 6 Düngung nach Fachwissen - Gülle regional nutzen!
 
-**section:** 6 Düngung nach Fachwissen – Gülle regional nutzen!
+**section:** 6 Düngung nach Fachwissen - Gülle regional nutzen!
 
 ##### source_context
 
@@ -9531,9 +9531,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 239: 6 Düngung nach Fachwissen – Gülle regional nutzen!
+**page:** Webabschnitt 239: 6 Düngung nach Fachwissen - Gülle regional nutzen!
 
-**section:** 6 Düngung nach Fachwissen – Gülle regional nutzen!
+**section:** 6 Düngung nach Fachwissen - Gülle regional nutzen!
 
 ##### source_context
 
@@ -9563,9 +9563,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 239: 6 Düngung nach Fachwissen – Gülle regional nutzen!
+**page:** Webabschnitt 239: 6 Düngung nach Fachwissen - Gülle regional nutzen!
 
-**section:** 6 Düngung nach Fachwissen – Gülle regional nutzen!
+**section:** 6 Düngung nach Fachwissen - Gülle regional nutzen!
 
 ##### source_context
 
@@ -9623,7 +9623,7 @@ _Leere Liste._
 
 **title:** Selbst das Land Sachsen-Anhalt ist seit Jahren nicht in der Lage, einen …
 
-**commitment_text:** Selbst das Land Sachsen-Anhalt ist seit Jahren nicht in der Lage, einen Versuchsstall nach aktuellen Vorschriften zu errichten – wie soll das der Landwirt schaffen?
+**commitment_text:** Selbst das Land Sachsen-Anhalt ist seit Jahren nicht in der Lage, einen Versuchsstall nach aktuellen Vorschriften zu errichten - wie soll das der Landwirt schaffen?
 
 ##### source_location
 
@@ -9788,9 +9788,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 246: 13 Saatgutgewinnung sichern – Landesdarre stärken!
+**page:** Webabschnitt 246: 13 Saatgutgewinnung sichern - Landesdarre stärken!
 
-**section:** 13 Saatgutgewinnung sichern – Landesdarre stärken!
+**section:** 13 Saatgutgewinnung sichern - Landesdarre stärken!
 
 ##### source_context
 
@@ -9820,9 +9820,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 246: 13 Saatgutgewinnung sichern – Landesdarre stärken!
+**page:** Webabschnitt 246: 13 Saatgutgewinnung sichern - Landesdarre stärken!
 
-**section:** 13 Saatgutgewinnung sichern – Landesdarre stärken!
+**section:** 13 Saatgutgewinnung sichern - Landesdarre stärken!
 
 ##### source_context
 
@@ -10012,9 +10012,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 250: 17 Vor Ort produziert – Vor Ort konsumiert!
+**page:** Webabschnitt 250: 17 Vor Ort produziert - Vor Ort konsumiert!
 
-**section:** 17 Vor Ort produziert – Vor Ort konsumiert!
+**section:** 17 Vor Ort produziert - Vor Ort konsumiert!
 
 ##### source_context
 
@@ -10044,9 +10044,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 250: 17 Vor Ort produziert – Vor Ort konsumiert!
+**page:** Webabschnitt 250: 17 Vor Ort produziert - Vor Ort konsumiert!
 
-**section:** 17 Vor Ort produziert – Vor Ort konsumiert!
+**section:** 17 Vor Ort produziert - Vor Ort konsumiert!
 
 ##### source_context
 
@@ -10076,9 +10076,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 250: 17 Vor Ort produziert – Vor Ort konsumiert!
+**page:** Webabschnitt 250: 17 Vor Ort produziert - Vor Ort konsumiert!
 
-**section:** 17 Vor Ort produziert – Vor Ort konsumiert!
+**section:** 17 Vor Ort produziert - Vor Ort konsumiert!
 
 ##### source_context
 
@@ -10454,9 +10454,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0327-jedes-gemeindehaus-und-jeder-kindergarten-muss-sanierbar-s
 
-**title:** Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein – das garantieren wir …
+**title:** Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein - das garantieren wir …
 
-**commitment_text:** Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein – das garantieren wir durch bedarfsgerechte Mittel des Landes und einen echten Finanzausgleich.
+**commitment_text:** Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein - das garantieren wir durch bedarfsgerechte Mittel des Landes und einen echten Finanzausgleich.
 
 ##### source_location
 
@@ -10680,7 +10680,7 @@ _Leere Liste._
 
 **title:** Unser Maßstab
 
-**commitment_text:** Unser Maßstab: Die Infrastruktur der Stadt darf nicht zur Maxime werden – kein Dorf wird zurückgelassen.
+**commitment_text:** Unser Maßstab: Die Infrastruktur der Stadt darf nicht zur Maxime werden - kein Dorf wird zurückgelassen.
 
 ##### source_location
 
@@ -10774,9 +10774,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0337-gleichzeitig-werden-wir-den-kommunalen-finanzausgleich-neu
 
-**title:** Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune – …
+**title:** Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune - …
 
-**commitment_text:** Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune – ob Dorf oder Stadt – ihre Pflichtaufgaben erfüllen kann. Es darf nicht sein, dass Städte auf Kosten der Dörfer profitieren, während die Landbevölkerung mit dem leeren Versprechen gleichwertiger Lebensverhältnisse abgespeist wird.
+**commitment_text:** Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune - ob Dorf oder Stadt - ihre Pflichtaufgaben erfüllen kann. Es darf nicht sein, dass Städte auf Kosten der Dörfer profitieren, während die Landbevölkerung mit dem leeren Versprechen gleichwertiger Lebensverhältnisse abgespeist wird.
 
 ##### source_location
 
@@ -10838,9 +10838,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0339-stattdessen-soll-foerdergeld-einzig-und-allein-nach-sinnvo
 
-**title:** Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden – …
+**title:** Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden - …
 
-**commitment_text:** Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden – etwa, ob es dem tatsächlichen Bedarf dient.
+**commitment_text:** Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden - etwa, ob es dem tatsächlichen Bedarf dient.
 
 ##### source_location
 
@@ -11775,9 +11775,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 279: 14 Wasserstraßen-Tourismus entdecken – Wasserstraßen ausbauen!
+**page:** Webabschnitt 279: 14 Wasserstraßen-Tourismus entdecken - Wasserstraßen ausbauen!
 
-**section:** 14 Wasserstraßen-Tourismus entdecken – Wasserstraßen ausbauen!
+**section:** 14 Wasserstraßen-Tourismus entdecken - Wasserstraßen ausbauen!
 
 ##### source_context
 
@@ -11807,9 +11807,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 279: 14 Wasserstraßen-Tourismus entdecken – Wasserstraßen ausbauen!
+**page:** Webabschnitt 279: 14 Wasserstraßen-Tourismus entdecken - Wasserstraßen ausbauen!
 
-**section:** 14 Wasserstraßen-Tourismus entdecken – Wasserstraßen ausbauen!
+**section:** 14 Wasserstraßen-Tourismus entdecken - Wasserstraßen ausbauen!
 
 ##### source_context
 
@@ -11929,15 +11929,15 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0373-in-die-zukunft-investieren-digitale-infrastruktur-ausbauen
 
-**title:** In die Zukunft investieren – Digitale Infrastruktur ausbauen!
+**title:** In die Zukunft investieren - Digitale Infrastruktur ausbauen!
 
-**commitment_text:** In die Zukunft investieren – Digitale Infrastruktur ausbauen!
+**commitment_text:** In die Zukunft investieren - Digitale Infrastruktur ausbauen!
 
 ##### source_location
 
-**page:** Webabschnitt 281: 16 In die Zukunft investieren – Digitale Infrastruktur ausbauen!
+**page:** Webabschnitt 281: 16 In die Zukunft investieren - Digitale Infrastruktur ausbauen!
 
-**section:** 16 In die Zukunft investieren – Digitale Infrastruktur ausbauen!
+**section:** 16 In die Zukunft investieren - Digitale Infrastruktur ausbauen!
 
 ##### source_context
 
@@ -11967,9 +11967,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 282: 17 Zukunftstechnologien fördern – Rechenzentren ansiedeln!
+**page:** Webabschnitt 282: 17 Zukunftstechnologien fördern - Rechenzentren ansiedeln!
 
-**section:** 17 Zukunftstechnologien fördern – Rechenzentren ansiedeln!
+**section:** 17 Zukunftstechnologien fördern - Rechenzentren ansiedeln!
 
 ##### source_context
 
@@ -11999,9 +11999,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 282: 17 Zukunftstechnologien fördern – Rechenzentren ansiedeln!
+**page:** Webabschnitt 282: 17 Zukunftstechnologien fördern - Rechenzentren ansiedeln!
 
-**section:** 17 Zukunftstechnologien fördern – Rechenzentren ansiedeln!
+**section:** 17 Zukunftstechnologien fördern - Rechenzentren ansiedeln!
 
 ##### source_context
 
@@ -12121,9 +12121,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0379-der-staat-ist-kein-ersatzkonzern-wir-werden-ueberfluessige
 
-**title:** Der Staat ist kein Ersatzkonzern – wir werden überflüssige Landesgesellschaften auflösen
+**title:** Der Staat ist kein Ersatzkonzern - wir werden überflüssige Landesgesellschaften auflösen
 
-**commitment_text:** Der Staat ist kein Ersatzkonzern – wir werden überflüssige Landesgesellschaften auflösen.
+**commitment_text:** Der Staat ist kein Ersatzkonzern - wir werden überflüssige Landesgesellschaften auflösen.
 
 ##### source_location
 
@@ -12441,9 +12441,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-afd-0389-foerdermittel-sollen-dort-ankommen-wo-sie-wirklich-gebrauc
 
-**title:** Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden – ohne bürokratische …
+**title:** Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden - ohne bürokratische …
 
-**commitment_text:** Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden – ohne bürokratische Labyrinthe und ohne ideologische Gängelung.
+**commitment_text:** Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden - ohne bürokratische Labyrinthe und ohne ideologische Gängelung.
 
 ##### source_location
 
@@ -12735,9 +12735,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 300: 4 Genug GEZahlt – Zwangsabgabe abschaffen, Grundfunk einführen!
+**page:** Webabschnitt 300: 4 Genug GEZahlt - Zwangsabgabe abschaffen, Grundfunk einführen!
 
-**section:** 4 Genug GEZahlt – Zwangsabgabe abschaffen, Grundfunk einführen!
+**section:** 4 Genug GEZahlt - Zwangsabgabe abschaffen, Grundfunk einführen!
 
 ##### source_context
 
@@ -12767,9 +12767,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 300: 4 Genug GEZahlt – Zwangsabgabe abschaffen, Grundfunk einführen!
+**page:** Webabschnitt 300: 4 Genug GEZahlt - Zwangsabgabe abschaffen, Grundfunk einführen!
 
-**section:** 4 Genug GEZahlt – Zwangsabgabe abschaffen, Grundfunk einführen!
+**section:** 4 Genug GEZahlt - Zwangsabgabe abschaffen, Grundfunk einführen!
 
 ##### source_context
 
@@ -13372,7 +13372,7 @@ _Leere Liste._
 
 **title:** Außerdem werden wir uns auch auf Bundesebene für die generelle Senkung der …
 
-**commitment_text:** Außerdem werden wir uns auch auf Bundesebene für die generelle Senkung der Steuer- und Abgabenlast einsetzen – zum Wohle der hart arbeitenden Mitte der Bevölkerung und als Impuls für den heimischen Mittelstand.
+**commitment_text:** Außerdem werden wir uns auch auf Bundesebene für die generelle Senkung der Steuer- und Abgabenlast einsetzen - zum Wohle der hart arbeitenden Mitte der Bevölkerung und als Impuls für den heimischen Mittelstand.
 
 ##### source_location
 
@@ -13632,9 +13632,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 314: 9 Haushaltsklarheit per Gesetz – Ehrliche und transparente Budgets!
+**page:** Webabschnitt 314: 9 Haushaltsklarheit per Gesetz - Ehrliche und transparente Budgets!
 
-**section:** 9 Haushaltsklarheit per Gesetz – Ehrliche und transparente Budgets!
+**section:** 9 Haushaltsklarheit per Gesetz - Ehrliche und transparente Budgets!
 
 ##### source_context
 
@@ -13664,9 +13664,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 314: 9 Haushaltsklarheit per Gesetz – Ehrliche und transparente Budgets!
+**page:** Webabschnitt 314: 9 Haushaltsklarheit per Gesetz - Ehrliche und transparente Budgets!
 
-**section:** 9 Haushaltsklarheit per Gesetz – Ehrliche und transparente Budgets!
+**section:** 9 Haushaltsklarheit per Gesetz - Ehrliche und transparente Budgets!
 
 ##### source_context
 
@@ -13980,7 +13980,7 @@ _Leere Liste._
 
 **title:** dafür sorgen, dass die Einführung von Leistungsgruppen nicht starr nach bundesweiten Maßstäben …
 
-**commitment_text:** Wir werden dafür sorgen, dass die Einführung von Leistungsgruppen nicht starr nach bundesweiten Maßstäben erfolgt, sondern an die besonderen Gegebenheiten unseres Landes angepasst wird – mit großen Entfernungen, dünner Besiedlung und einer ohnehin angespannten Krankenhauslandschaft.
+**commitment_text:** Wir werden dafür sorgen, dass die Einführung von Leistungsgruppen nicht starr nach bundesweiten Maßstäben erfolgt, sondern an die besonderen Gegebenheiten unseres Landes angepasst wird - mit großen Entfernungen, dünner Besiedlung und einer ohnehin angespannten Krankenhauslandschaft.
 
 ##### source_location
 
@@ -14593,9 +14593,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 327: 12 Pflegeberufe aufwerten – Pflegenotstand beheben!
+**page:** Webabschnitt 327: 12 Pflegeberufe aufwerten - Pflegenotstand beheben!
 
-**section:** 12 Pflegeberufe aufwerten – Pflegenotstand beheben!
+**section:** 12 Pflegeberufe aufwerten - Pflegenotstand beheben!
 
 ##### source_context
 
@@ -14625,9 +14625,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 327: 12 Pflegeberufe aufwerten – Pflegenotstand beheben!
+**page:** Webabschnitt 327: 12 Pflegeberufe aufwerten - Pflegenotstand beheben!
 
-**section:** 12 Pflegeberufe aufwerten – Pflegenotstand beheben!
+**section:** 12 Pflegeberufe aufwerten - Pflegenotstand beheben!
 
 ##### source_context
 
@@ -14721,9 +14721,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 330: 15 Pflege zuhause fördern – Familienzusammenhalt stärken!
+**page:** Webabschnitt 330: 15 Pflege zuhause fördern - Familienzusammenhalt stärken!
 
-**section:** 15 Pflege zuhause fördern – Familienzusammenhalt stärken!
+**section:** 15 Pflege zuhause fördern - Familienzusammenhalt stärken!
 
 ##### source_context
 
@@ -14753,9 +14753,9 @@ _Leere Liste._
 
 ##### source_location
 
-**page:** Webabschnitt 330: 15 Pflege zuhause fördern – Familienzusammenhalt stärken!
+**page:** Webabschnitt 330: 15 Pflege zuhause fördern - Familienzusammenhalt stärken!
 
-**section:** 15 Pflege zuhause fördern – Familienzusammenhalt stärken!
+**section:** 15 Pflege zuhause fördern - Familienzusammenhalt stärken!
 
 ##### source_context
 

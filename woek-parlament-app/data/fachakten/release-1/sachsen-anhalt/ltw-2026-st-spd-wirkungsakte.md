@@ -1,4 +1,4 @@
-# ltw-2026-st-spd – programme-review – vollständige Darstellung
+# ltw-2026-st-spd - programme-review - vollständige Darstellung
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -13,7 +13,7 @@
 
 **review_status:** COMPLETE
 
-**plain_language_summary:** Die Wirkungsakte prüft 174 quellengebundene programmatische Zusagen aus dem Dokument. Bewertet werden nicht Partei oder Personen, sondern mögliche Zustandsveränderungen, Risiken, Bedingungen, Schutzgrenzen, Datenbedarf und – wo materiell – kommunikative Vorwirkungen.
+**plain_language_summary:** Die Wirkungsakte prüft 174 quellengebundene programmatische Zusagen aus dem Dokument. Bewertet werden nicht Partei oder Personen, sondern mögliche Zustandsveränderungen, Risiken, Bedingungen, Schutzgrenzen, Datenbedarf und - wo materiell - kommunikative Vorwirkungen.
 
 ### programme_profile
 
@@ -5664,12 +5664,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Dieses Engagement wollen wir gezielt unterstützen – durch Förderung, Beratung und Zertifizierungen.
+**source_text:** Dieses Engagement wollen wir gezielt unterstützen - durch Förderung, Beratung und Zertifizierungen.
 
 
-**decision_or_measure:** Dieses Engagement wollen wir gezielt unterstützen – durch Förderung, Beratung und Zertifizierungen
+**decision_or_measure:** Dieses Engagement wollen wir gezielt unterstützen - durch Förderung, Beratung und Zertifizierungen
 
-**intended_change:** Vorgesehene Veränderung: Dieses Engagement wollen wir gezielt unterstützen – durch Förderung, Beratung und Zertifizierungen.
+**intended_change:** Vorgesehene Veränderung: Dieses Engagement wollen wir gezielt unterstützen - durch Förderung, Beratung und Zertifizierungen.
 
 ##### decision_readiness
 
@@ -8572,12 +8572,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden – insbesondere durch das Budget für Arbeit und Ausbildung.
+**source_text:** Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden - insbesondere durch das Budget für Arbeit und Ausbildung.
 
 
-**decision_or_measure:** Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden – …
+**decision_or_measure:** Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden - …
 
-**intended_change:** Vorgesehene Veränderung: Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden – insbesondere durch das Budget für Arbeit und Ausbildung.
+**intended_change:** Vorgesehene Veränderung: Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden - insbesondere durch das Budget für Arbeit und Ausbildung.
 
 ##### decision_readiness
 
@@ -11852,12 +11852,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Der Pakt für den Öffentlichen Gesundheitsdienst muss auf Bundesebene fortgesetzt werden, das Land beteiligt 4. 16 17 Wie soziale Sicherheit, gute Gesundheitsversorgung und verlässliche Unterstützung im Alltag zusammengehören – in Stadt und Land, für alle Lebenslagen.
+**source_text:** Der Pakt für den Öffentlichen Gesundheitsdienst muss auf Bundesebene fortgesetzt werden, das Land beteiligt 4. 16 17 Wie soziale Sicherheit, gute Gesundheitsversorgung und verlässliche Unterstützung im Alltag zusammengehören - in Stadt und Land, für alle Lebenslagen.
 
 
 **decision_or_measure:** Der Pakt für den Öffentlichen Gesundheitsdienst muss auf Bundesebene fortgesetzt werden, das …
 
-**intended_change:** Vorgesehene Veränderung: Der Pakt für den Öffentlichen Gesundheitsdienst muss auf Bundesebene fortgesetzt werden, das Land beteiligt 4. 16 17 Wie soziale Sicherheit, gute Gesundheitsversorgung und verlässliche Unterstützung im Alltag zusammengehören – in Stadt und Land, für alle Lebenslagen.
+**intended_change:** Vorgesehene Veränderung: Der Pakt für den Öffentlichen Gesundheitsdienst muss auf Bundesebene fortgesetzt werden, das Land beteiligt 4. 16 17 Wie soziale Sicherheit, gute Gesundheitsversorgung und verlässliche Unterstützung im Alltag zusammengehören - in Stadt und Land, für alle Lebenslagen.
 
 ##### decision_readiness
 
@@ -12459,12 +12459,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Wir unterstützen, dass Gesundheitsberufe künftig mehr Verantwortung u. a. durch Aufgabenverlagerung in der medizinischen Versorgung übernehmen – auch zur Entlastung von Ärztinnen und Ärzten.
+**source_text:** Wir unterstützen, dass Gesundheitsberufe künftig mehr Verantwortung u. a. durch Aufgabenverlagerung in der medizinischen Versorgung übernehmen - auch zur Entlastung von Ärztinnen und Ärzten.
 
 
 **decision_or_measure:** Wir unterstützen, dass Gesundheitsberufe künftig mehr Verantwortung u
 
-**intended_change:** Vorgesehene Veränderung: Wir unterstützen, dass Gesundheitsberufe künftig mehr Verantwortung u. a. durch Aufgabenverlagerung in der medizinischen Versorgung übernehmen – auch zur Entlastung von Ärztinnen und Ärzten.
+**intended_change:** Vorgesehene Veränderung: Wir unterstützen, dass Gesundheitsberufe künftig mehr Verantwortung u. a. durch Aufgabenverlagerung in der medizinischen Versorgung übernehmen - auch zur Entlastung von Ärztinnen und Ärzten.
 
 ##### decision_readiness
 
@@ -22562,12 +22562,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Wir wollen die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig – beginnend mit der Grundschule – ermitteln und vergleichen.
+**source_text:** Wir wollen die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig - beginnend mit der Grundschule - ermitteln und vergleichen.
 
 
-**decision_or_measure:** die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig – beginnend …
+**decision_or_measure:** die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig - beginnend …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig – beginnend mit der Grundschule – ermitteln und vergleichen.
+**intended_change:** Vorgesehene Veränderung: Wir wollen die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig - beginnend mit der Grundschule - ermitteln und vergleichen.
 
 ##### decision_readiness
 
@@ -24075,12 +24075,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Zur Finanzierung von Anpassungsmaßnahmen setzen wir uns dafür ein, schrittweise einen Klimafonds aufzubauen. 6. 28 29 Wie Klimaschutz, Naturschutz und Lebensqualität zusammengehören – sozial gerecht, wirtschaftlich vernünftig und demokratisch getragen.
+**source_text:** Zur Finanzierung von Anpassungsmaßnahmen setzen wir uns dafür ein, schrittweise einen Klimafonds aufzubauen. 6. 28 29 Wie Klimaschutz, Naturschutz und Lebensqualität zusammengehören - sozial gerecht, wirtschaftlich vernünftig und demokratisch getragen.
 
 
 **decision_or_measure:** Zur Finanzierung von Anpassungsmaßnahmen setzen wir uns dafür ein, schrittweise einen Klimafonds …
 
-**intended_change:** Vorgesehene Veränderung: Zur Finanzierung von Anpassungsmaßnahmen setzen wir uns dafür ein, schrittweise einen Klimafonds aufzubauen. 6. 28 29 Wie Klimaschutz, Naturschutz und Lebensqualität zusammengehören – sozial gerecht, wirtschaftlich vernünftig und demokratisch getragen.
+**intended_change:** Vorgesehene Veränderung: Zur Finanzierung von Anpassungsmaßnahmen setzen wir uns dafür ein, schrittweise einen Klimafonds aufzubauen. 6. 28 29 Wie Klimaschutz, Naturschutz und Lebensqualität zusammengehören - sozial gerecht, wirtschaftlich vernünftig und demokratisch getragen.
 
 ##### decision_readiness
 
@@ -27972,12 +27972,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Diese Stärke soll erhalten bleiben – auch bei sinkenden Kinderzahlen.
+**source_text:** Diese Stärke soll erhalten bleiben - auch bei sinkenden Kinderzahlen.
 
 
-**decision_or_measure:** Diese Stärke soll erhalten bleiben – auch bei sinkenden Kinderzahlen
+**decision_or_measure:** Diese Stärke soll erhalten bleiben - auch bei sinkenden Kinderzahlen
 
-**intended_change:** Vorgesehene Veränderung: Diese Stärke soll erhalten bleiben – auch bei sinkenden Kinderzahlen.
+**intended_change:** Vorgesehene Veränderung: Diese Stärke soll erhalten bleiben - auch bei sinkenden Kinderzahlen.
 
 ##### decision_readiness
 
@@ -30265,12 +30265,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden – überall im Land.
+**source_text:** Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden - überall im Land.
 
 
-**decision_or_measure:** Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden – überall …
+**decision_or_measure:** Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden - überall …
 
-**intended_change:** Vorgesehene Veränderung: Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden – überall im Land.
+**intended_change:** Vorgesehene Veränderung: Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden - überall im Land.
 
 ##### decision_readiness
 
@@ -38269,12 +38269,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Mobilität sichern – Bus und Bahn für das ganze Land Mobilität darf nicht vom Wohnort abhängen.
+**source_text:** Mobilität sichern - Bus und Bahn für das ganze Land Mobilität darf nicht vom Wohnort abhängen.
 
 
-**decision_or_measure:** Mobilität sichern – Bus und Bahn für das ganze Land Mobilität darf …
+**decision_or_measure:** Mobilität sichern - Bus und Bahn für das ganze Land Mobilität darf …
 
-**intended_change:** Vorgesehene Veränderung: Mobilität sichern – Bus und Bahn für das ganze Land Mobilität darf nicht vom Wohnort abhängen.
+**intended_change:** Vorgesehene Veränderung: Mobilität sichern - Bus und Bahn für das ganze Land Mobilität darf nicht vom Wohnort abhängen.
 
 ##### decision_readiness
 
@@ -43622,12 +43622,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Städte und Gemeinden sollen pro Einwohnerin und Einwohner Mittel erhalten, über deren Verwendung die Menschen vor Ort gemeinsam entscheiden – zur Finanzierung freiwilliger Aufgaben und zur Stärkung demokratischer Teilhabe. 13. 58 59 Wie Städte, Gemeinden und Landkreise handlungsfähig bleiben.
+**source_text:** Städte und Gemeinden sollen pro Einwohnerin und Einwohner Mittel erhalten, über deren Verwendung die Menschen vor Ort gemeinsam entscheiden - zur Finanzierung freiwilliger Aufgaben und zur Stärkung demokratischer Teilhabe. 13. 58 59 Wie Städte, Gemeinden und Landkreise handlungsfähig bleiben.
 
 
 **decision_or_measure:** Städte und Gemeinden sollen pro Einwohnerin und Einwohner Mittel erhalten, über deren …
 
-**intended_change:** Vorgesehene Veränderung: Städte und Gemeinden sollen pro Einwohnerin und Einwohner Mittel erhalten, über deren Verwendung die Menschen vor Ort gemeinsam entscheiden – zur Finanzierung freiwilliger Aufgaben und zur Stärkung demokratischer Teilhabe. 13. 58 59 Wie Städte, Gemeinden und Landkreise handlungsfähig bleiben.
+**intended_change:** Vorgesehene Veränderung: Städte und Gemeinden sollen pro Einwohnerin und Einwohner Mittel erhalten, über deren Verwendung die Menschen vor Ort gemeinsam entscheiden - zur Finanzierung freiwilliger Aufgaben und zur Stärkung demokratischer Teilhabe. 13. 58 59 Wie Städte, Gemeinden und Landkreise handlungsfähig bleiben.
 
 ##### decision_readiness
 
@@ -45774,12 +45774,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden – ohne nationale Draufsattlungen, die Bürokratie erhöhen und Praxis erschweren.
+**source_text:** EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden - ohne nationale Draufsattlungen, die Bürokratie erhöhen und Praxis erschweren.
 
 
-**decision_or_measure:** EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden – ohne nationale Draufsattlungen, die …
+**decision_or_measure:** EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden - ohne nationale Draufsattlungen, die …
 
-**intended_change:** Vorgesehene Veränderung: EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden – ohne nationale Draufsattlungen, die Bürokratie erhöhen und Praxis erschweren.
+**intended_change:** Vorgesehene Veränderung: EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden - ohne nationale Draufsattlungen, die Bürokratie erhöhen und Praxis erschweren.
 
 ##### decision_readiness
 
@@ -50831,12 +50831,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** Bundeszuweisungen dürfen nicht angerechnet werden – sie sind zusätzliche Hilfen und kein Ersatz für eine solide Finanzausstattung.
+**source_text:** Bundeszuweisungen dürfen nicht angerechnet werden - sie sind zusätzliche Hilfen und kein Ersatz für eine solide Finanzausstattung.
 
 
-**decision_or_measure:** Bundeszuweisungen dürfen nicht angerechnet werden – sie sind zusätzliche Hilfen und kein …
+**decision_or_measure:** Bundeszuweisungen dürfen nicht angerechnet werden - sie sind zusätzliche Hilfen und kein …
 
-**intended_change:** Vorgesehene Veränderung: Bundeszuweisungen dürfen nicht angerechnet werden – sie sind zusätzliche Hilfen und kein Ersatz für eine solide Finanzausstattung.
+**intended_change:** Vorgesehene Veränderung: Bundeszuweisungen dürfen nicht angerechnet werden - sie sind zusätzliche Hilfen und kein Ersatz für eine solide Finanzausstattung.
 
 ##### decision_readiness
 
@@ -51446,12 +51446,12 @@ _Leere Liste._
 
 **section:** `null`
 
-**source_text:** eine gerechte Reform der Erbschaftsteuer, die die Länder stärkt und damit auch den Kommunen zugutekommt. Verlässlichkeit bei Aufgabenübertragung Neue Aufgaben dürfen Kommunen nur übertragen werden, wenn sie vollständig finanziert sind. Das Prinzip „Wer bestellt, bezahlt“ gilt uneingeschränkt. Zusätzliche Pflichten ohne ausreichende Finanzierung untergraben die kommunale Selbstverwaltung und gefährden die Erfüllung bestehender Aufgaben. Schwankungen abfedern, Investitionen sichern Krisen wie Wirtschaftseinbrüche oder Pandemien treffen Kommunen besonders hart. Um Einnahmeschwankungen abzufedern, setzt sich die SPD Sachsen-Anhalt für einen kommunalen Steuerschwankungsfonds ein. Er soll helfen, kurzfristige Einbrüche auszugleichen und Planungssicherheit zu schaffen. Darüber hinaus fordern wir ein dauerhaftes kommunales Infrastruktur- und Investitionsprogramm. Es soll unabhängig von akuten Krisen bestehen und Investitionen in Schulen, Kitas, Straßen und öffentliche Einrichtungen ermöglichen. So werden Arbeitsplätze vor Ort gesichert und die langfristige Handlungsfähigkeit der Kommunen gestärkt. Sachsen-Anhalt kann es besser – und SachsenAnhalt muss es besser machen.
+**source_text:** eine gerechte Reform der Erbschaftsteuer, die die Länder stärkt und damit auch den Kommunen zugutekommt. Verlässlichkeit bei Aufgabenübertragung Neue Aufgaben dürfen Kommunen nur übertragen werden, wenn sie vollständig finanziert sind. Das Prinzip „Wer bestellt, bezahlt“ gilt uneingeschränkt. Zusätzliche Pflichten ohne ausreichende Finanzierung untergraben die kommunale Selbstverwaltung und gefährden die Erfüllung bestehender Aufgaben. Schwankungen abfedern, Investitionen sichern Krisen wie Wirtschaftseinbrüche oder Pandemien treffen Kommunen besonders hart. Um Einnahmeschwankungen abzufedern, setzt sich die SPD Sachsen-Anhalt für einen kommunalen Steuerschwankungsfonds ein. Er soll helfen, kurzfristige Einbrüche auszugleichen und Planungssicherheit zu schaffen. Darüber hinaus fordern wir ein dauerhaftes kommunales Infrastruktur- und Investitionsprogramm. Es soll unabhängig von akuten Krisen bestehen und Investitionen in Schulen, Kitas, Straßen und öffentliche Einrichtungen ermöglichen. So werden Arbeitsplätze vor Ort gesichert und die langfristige Handlungsfähigkeit der Kommunen gestärkt. Sachsen-Anhalt kann es besser - und SachsenAnhalt muss es besser machen.
 
 
 **decision_or_measure:** eine gerechte Reform der Erbschaftsteuer, die die Länder stärkt und damit auch …
 
-**intended_change:** Vorgesehene Veränderung: eine gerechte Reform der Erbschaftsteuer, die die Länder stärkt und damit auch den Kommunen zugutekommt. Verlässlichkeit bei Aufgabenübertragung Neue Aufgaben dürfen Kommunen nur übertragen werden, wenn sie vollständig finanziert sind. Das Prinzip „Wer bestellt, bezahlt“ gilt uneingeschränkt. Zusätzliche Pflichten ohne ausreichende Finanzierung untergraben die kommunale Selbstverwaltung und gefährden die Erfüllung bestehender Aufgaben. Schwankungen abfedern, Investitionen sichern Krisen wie Wirtschaftseinbrüche oder Pandemien treffen Kommunen besonders hart. Um Einnahmeschwankungen abzufedern, setzt sich die SPD Sachsen-Anhalt für einen kommunalen Steuerschwankungsfonds ein. Er soll helfen, kurzfristige Einbrüche auszugleichen und Planungssicherheit zu schaffen. Darüber hinaus fordern wir ein dauerhaftes kommunales Infrastruktur- und Investitionsprogramm. Es soll unabhängig von akuten Krisen bestehen und Investitionen in Schulen, Kitas, Straßen und öffentliche Einrichtungen ermöglichen. So werden Arbeitsplätze vor Ort gesichert und die langfristige Handlungsfähigkeit der Kommunen gestärkt. Sachsen-Anhalt kann es besser – und SachsenAnhalt muss es besser machen.
+**intended_change:** Vorgesehene Veränderung: eine gerechte Reform der Erbschaftsteuer, die die Länder stärkt und damit auch den Kommunen zugutekommt. Verlässlichkeit bei Aufgabenübertragung Neue Aufgaben dürfen Kommunen nur übertragen werden, wenn sie vollständig finanziert sind. Das Prinzip „Wer bestellt, bezahlt“ gilt uneingeschränkt. Zusätzliche Pflichten ohne ausreichende Finanzierung untergraben die kommunale Selbstverwaltung und gefährden die Erfüllung bestehender Aufgaben. Schwankungen abfedern, Investitionen sichern Krisen wie Wirtschaftseinbrüche oder Pandemien treffen Kommunen besonders hart. Um Einnahmeschwankungen abzufedern, setzt sich die SPD Sachsen-Anhalt für einen kommunalen Steuerschwankungsfonds ein. Er soll helfen, kurzfristige Einbrüche auszugleichen und Planungssicherheit zu schaffen. Darüber hinaus fordern wir ein dauerhaftes kommunales Infrastruktur- und Investitionsprogramm. Es soll unabhängig von akuten Krisen bestehen und Investitionen in Schulen, Kitas, Straßen und öffentliche Einrichtungen ermöglichen. So werden Arbeitsplätze vor Ort gesichert und die langfristige Handlungsfähigkeit der Kommunen gestärkt. Sachsen-Anhalt kann es besser - und SachsenAnhalt muss es besser machen.
 
 ##### decision_readiness
 

@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Deutschland hat bereits viele Institutionen, die Ziele setzen, Daten erzeugen, Gesetze prüfen, evaluieren und kontrollieren: Bundesregierung/Bundeskanzleramt, Ressorts, StA NEZ, Destatis, PBnEZ, RNE, Rechnungshöfe, Gerichte, Fachbehörden und viele mehr. Ein **WÖk-Wirkungsrat** wäre deshalb keine „erste Wirkungsinstitution“, sondern ein WÖk-eigener Governance-Vorschlag. Bevor eine neue Institution erfunden wird, muss geprüft werden: Welche Funktion fehlt wirklich – und kann sie durch bessere Verknüpfung bestehender Institutionen erfüllt werden?
+Deutschland hat bereits viele Institutionen, die Ziele setzen, Daten erzeugen, Gesetze prüfen, evaluieren und kontrollieren: Bundesregierung/Bundeskanzleramt, Ressorts, StA NEZ, Destatis, PBnEZ, RNE, Rechnungshöfe, Gerichte, Fachbehörden und viele mehr. Ein **WÖk-Wirkungsrat** wäre deshalb keine „erste Wirkungsinstitution“, sondern ein WÖk-eigener Governance-Vorschlag. Bevor eine neue Institution erfunden wird, muss geprüft werden: Welche Funktion fehlt wirklich - und kann sie durch bessere Verknüpfung bestehender Institutionen erfüllt werden?
 
 ## Lernziele
 
@@ -29,7 +29,7 @@ Nach dieser Vorlesung kannst du:
 
 Ein häufiger Reformreflex lautet:
 
-> Es fehlt Wirkung – also brauchen wir eine neue Behörde.
+> Es fehlt Wirkung - also brauchen wir eine neue Behörde.
 
 Das ist keine ausreichende Problemprüfung.
 
@@ -128,7 +128,7 @@ Ein „Expertenrat“ ist nicht automatisch neutral.
 
 WÖk sollte für neue Governance dieselbe Additionalitätsfrage stellen wie für Förderprogramme:
 
-> Welche Funktion entsteht wirklich zusätzlich – und was würde ohne neue Institution durch bestehende Akteure ohnehin geleistet?
+> Welche Funktion entsteht wirklich zusätzlich - und was würde ohne neue Institution durch bestehende Akteure ohnehin geleistet?
 
 Wenn der Zusatz nur ein neues Logo ist, ist die institutionelle Wirkung gering.
 

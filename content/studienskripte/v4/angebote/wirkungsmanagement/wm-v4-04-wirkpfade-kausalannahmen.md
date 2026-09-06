@@ -21,10 +21,10 @@ Zwischen einer Managementmaßnahme und einem Outcome liegt kein Zauberpfeil. Der
 
 `A -> M -> ΔZ -> R`
 
-- **A:** Auslöser – Entscheidung, Produkt, Regel, Investition, Kommunikation oder Unterlassen.
-- **M:** Mechanismus – begründete Kausalhypothese.
-- **ΔZ:** Zustandsänderung – was soll sich bei wem/was verändern?
-- **R:** Referenz – Baseline, Zielwert, Schutzgrenze oder Vergleich.
+- **A:** Auslöser - Entscheidung, Produkt, Regel, Investition, Kommunikation oder Unterlassen.
+- **M:** Mechanismus - begründete Kausalhypothese.
+- **ΔZ:** Zustandsänderung - was soll sich bei wem/was verändern?
+- **R:** Referenz - Baseline, Zielwert, Schutzgrenze oder Vergleich.
 
 Ein Mechanismus ist kein Beweis. Er ist eine prüfbare Erklärung.
 
@@ -84,10 +84,10 @@ Zusatzpfade:
 
 ## Typische Fehlinterpretationen
 
-- Ein Pfeil im Wirkdiagramm beweist Kausalität. – Nein.
-- Zweite Ordnung bedeutet „weniger wichtig“. – Nein.
-- Jede Kette muss linear bleiben. – Nein; bei Rückkopplungen Wirkungsnetz verwenden.
-- Ein plausibler Pfad macht Gegenfaktum entbehrlich. – Nein.
+- Ein Pfeil im Wirkdiagramm beweist Kausalität. - Nein.
+- Zweite Ordnung bedeutet „weniger wichtig“. - Nein.
+- Jede Kette muss linear bleiben. - Nein; bei Rückkopplungen Wirkungsnetz verwenden.
+- Ein plausibler Pfad macht Gegenfaktum entbehrlich. - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -104,7 +104,7 @@ Modelliere für eine reale Managemententscheidung einen Kernpfad sowie je einen 
 
 ## Prüfungsrelevanz
 
-A→M→ΔZ→R, Annahmen, Wirkung 1.–3. Ordnung, Kaskaden, Rebound, Spillover, Leakage, Lock-in.
+A→M→ΔZ→R, Annahmen, Wirkung 1.-3. Ordnung, Kaskaden, Rebound, Spillover, Leakage, Lock-in.
 
 ## Sprechertext
 

@@ -1,4 +1,4 @@
-# Berlin BSW P22 — authoritative WÖk Fach handoff snapshot
+# Berlin BSW P22 - authoritative WÖk Fach handoff snapshot
 
 This repository snapshot preserves the complete authoritative GitHub issue-comment bodies consumed by the deterministic materializer. The Fach text below is not paraphrased or regenerated.
 
@@ -13,9 +13,9 @@ This repository snapshot preserves the complete authoritative GitHub issue-comme
 - Updated: 2026-08-28T13:07:12Z
 - Author: sustynats
 
-## WÖk FACH BATCH — Berlin BSW physical PDF page 22, part 1: ambulante Versorgung / Arztsitze / Terminzugang (U01–U04)
+## WÖk FACH BATCH - Berlin BSW physical PDF page 22, part 1: ambulante Versorgung / Arztsitze / Terminzugang (U01-U04)
 
-Fresh continuation after merged PR #319. Authoritative current `main=130d94a7b4f1ab8d7c6addcd4783123d5d43fdec`. Frozen source artefact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. Physical P1–P21 stay protected terminal. This review supersedes the generic delegated RNAA template only for the exact P22 objects below. No DNS mapping, Recommendation, score or programme-wide judgment.
+Fresh continuation after merged PR #319. Authoritative current `main=130d94a7b4f1ab8d7c6addcd4783123d5d43fdec`. Frozen source artefact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. Physical P1-P21 stay protected terminal. This review supersedes the generic delegated RNAA template only for the exact P22 objects below. No DNS mapping, Recommendation, score or programme-wide judgment.
 
 Current external baselines used only to test competence/mechanism/Additionality, never as party-derived proof:
 - G-BA Bedarfsplanungs-Richtlinie: bundesweiter Rahmen; regional deviations and planning levels are explicit parts of the system.
@@ -23,27 +23,27 @@ Current external baselines used only to test competence/mechanism/Additionality,
 - §95 SGB V: municipalities may found MVZ, including in public-law form; admission remains part of contract-physician regulation.
 - 116117 is already a KBV/KV telephone/online/app service; 2025 statistics show high timeliness among booked/eligible requests but materially lower coverage across all incoming search requests. Channel choice is therefore not the same as creating care capacity.
 
-### U01 — structural heading
+### U01 - structural heading
 
-`BE-BSW-P22-U01-a4d6359e0f28` — `Ärzte vor Ort und schnelle Terminvergabe`
+`BE-BSW-P22-U01-a4d6359e0f28` - `Ärzte vor Ort und schnelle Terminvergabe`
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 - `context_kind = STRUCTURAL_HEADING`
 
-### U02 — local GP/pediatric supply
+### U02 - local GP/pediatric supply
 
-`BE-BSW-P22-U02-A01-c99a7b50029f` — `Gesundheit darf nicht von der Postleitzahl abhängen.`
+`BE-BSW-P22-U02-A01-c99a7b50029f` - `Gesundheit darf nicht von der Postleitzahl abhängen.`
 - `terminal_fach_state = NON_EFFECT_ACCESS_EQUITY_GOAL_REVIEWED`
 - Exact reason: distributional target/guard, no independent intervention. Preserve postcode/district inequality as an evaluation dimension for the following capacity measures.
 
-`BE-BSW-P22-U02-A02-2addf961c9d6` — claim that GP/pediatric basic supply in some districts is `überaus kritisch`.
+`BE-BSW-P22-U02-A02-2addf961c9d6` - claim that GP/pediatric basic supply in some districts is `überaus kritisch`.
 - `terminal_fach_state = NON_EFFECT_PROBLEM_BASELINE_CLAIM_REVIEWED`
 - Exact reason: this is a problem assertion, not a policy action. Current KV planning/opening data support that regional capacity differences and additional supply opportunities exist; the source’s exact severity wording is not independently proven and must not be rendered as established outcome evidence.
 
-`BE-BSW-P22-U02-A03-70a17f93bf74` — sufficient number of GPs/pediatricians in every Kiez.
+`BE-BSW-P22-U02-A03-70a17f93bf74` - sufficient number of GPs/pediatricians in every Kiez.
 - `terminal_fach_state = NON_EFFECT_ACCESS_CAPACITY_GOAL_REVIEWED`
 - Exact reason: target state without a separate implementation instrument. `Kiez` is also finer than current formal planning areas, so do not equate achievement with plan-level coverage alone.
 
-`BE-BSW-P22-U02-A04-8ebf4ba58b7a` — `Arztsitze ... umverteilt` + new municipal/public primary-care centres.
+`BE-BSW-P22-U02-A04-8ebf4ba58b7a` - `Arztsitze ... umverteilt` + new municipal/public primary-care centres.
 - `terminal_fach_state = SOURCE_UNIT_RECLASSIFIED_VERSIONED`
 - `counts_as_effect_object = false`
 - Exact reason: two non-saldierbare mechanisms are overmerged. Preserve parent source ID/text and materialise two deterministic children from the exact clauses below; child stable IDs may be generated mechanically using the existing child-ID convention.
@@ -68,7 +68,7 @@ Child `C02 / PUBLIC_PRIMARY_CARE_CENTRES`, exact clause: `neue kommunale beziehu
 - Noncompensation: public ownership/centre count cannot compensate for missing qualified staff, poor quality or inaccessible services.
 - Reality check: net additional clinical FTE/appointments, opening/access time, wait/travel, continuity/quality, workforce origin and lifecycle cost.
 
-`BE-BSW-P22-U02-A05-873288cc541d` — `Hausarztquote bei Studienplätzen`.
+`BE-BSW-P22-U02-A05-873288cc541d` - `Hausarztquote bei Studienplätzen`.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_LONG_HORIZON_PRIMARY_CARE_WORKFORCE_PIPELINE_POTENTIAL / SELECTION_BINDING_TRAINING_AND_RETENTION_DESIGN_DEPENDENT`
 - `evidence_level = MEDIUM_LOW`
@@ -77,19 +77,19 @@ Child `C02 / PUBLIC_PRIMARY_CARE_CENTRES`, exact clause: `neue kommunale beziehu
 - Risks/trade-offs: long time lag, selection fairness/equality, opportunity cost of study places, specialty switching, migration after training, bottlenecks in training practices and no guarantee of Kiez-level retention.
 - Reality check: entrants → completed training → specialty choice → actual Berlin primary-care FTE → retention/location after 2/5 years. Study-place quota alone is input.
 
-`BE-BSW-P22-U02-A06-3cbf6b56ceec` — reliable entry into care after studying general medicine/pediatrics.
+`BE-BSW-P22-U02-A06-3cbf6b56ceec` - reliable entry into care after studying general medicine/pediatrics.
 - `terminal_fach_state = NON_EFFECT_WORKFORCE_OUTCOME_GOAL_REVIEWED`
 - Exact reason: desired transition/outcome without a separate lever. Use as a pipeline/retention criterion for A05 and later workforce measures; do not double-count.
 
-`BE-BSW-P22-U02-A07-0cd49822c754` — new land-owned primary-care centres in social hotspots/areas threatened by undersupply.
+`BE-BSW-P22-U02-A07-0cd49822c754` - new land-owned primary-care centres in social hotspots/areas threatened by undersupply.
 - `terminal_fach_state = SOURCE_UNIT_RECLASSIFIED_VERSIONED`
 - `role = RESTATEMENT_WITH_TARGETING_REFINEMENT_OF_U02_A04_C02`
 - `counts_as_effect_object = false`
 - Exact reason: same core public-centre mechanism as A04-C02, refined by land ownership and targeting social hotspots/undersupply risk. Preserve those targeting qualifiers on the active C02 child; no second centre effect count.
 
-### U03 — appointment access / opening hours
+### U03 - appointment access / opening hours
 
-`BE-BSW-P22-U03-A01-67b757f3933b` — appointment allocation through 116117 instead of commercial platforms.
+`BE-BSW-P22-U03-A01-67b757f3933b` - appointment allocation through 116117 instead of commercial platforms.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_PUBLIC_ACCESS_CHANNEL_AND_EQUITY_POTENTIAL / CAPACITY_NEUTRAL_AND_SELF_GOVERNANCE_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_CHANNEL_MECHANISM / NET_ACCESS_OUTCOME_PENDING`
@@ -98,11 +98,11 @@ Child `C02 / PUBLIC_PRIMARY_CARE_CENTRES`, exact clause: `neue kommunale beziehu
 - Risks/trade-offs: reduced channel diversity, call/digital bottlenecks, accessibility issues, displacement rather than added capacity, provider participation constraints.
 - Reality check: successful mediation share, wait time, failed searches, phone/digital accessibility, socioeconomic distribution and actual specialist capacity; traffic to 116117 is not outcome.
 
-`BE-BSW-P22-U03-A02-db47aecfbce7` — `telefonische Erreichbarkeit der Arztpraxen muss gewährleistet werden`.
+`BE-BSW-P22-U03-A02-db47aecfbce7` - `telefonische Erreichbarkeit der Arztpraxen muss gewährleistet werden`.
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: service-quality target but no actor, enforceable standard, minimum hours/response threshold, staffing/financing instrument, complaint/enforcement path or relation to existing practice/KV rules is specified. Those fields are necessary before an effect-bearing implementation can be judged; no direction/evidence is inferred from the word `gewährleistet`.
 
-`BE-BSW-P22-U03-A03-aa9709718601` — flexible practice hours to speed specialist access and relieve emergency departments.
+`BE-BSW-P22-U03-A03-aa9709718601` - flexible practice hours to speed specialist access and relieve emergency departments.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_ACCESS_AND_EMERGENCY_DIVERSION_POTENTIAL / STAFFING_WORKLOAD_DEMAND_STEERING_AND_SELF_GOVERNANCE_DEPENDENT`
 - `evidence_level = LOW_TO_MEDIUM`
@@ -110,9 +110,9 @@ Child `C02 / PUBLIC_PRIMARY_CARE_CENTRES`, exact clause: `neue kommunale beziehu
 - Risks: staff workload/burnout, higher operating cost, empty off-peak capacity, reduced daytime access, inappropriate diversion or no effect where total physician capacity is the binding constraint.
 - Reality check: appointment availability by time of day, total clinical hours/FTE, wait time, appropriate ED utilisation with attribution guard, staff workload and patient access distribution.
 
-### U04 — rejection of new/acute patients
+### U04 - rejection of new/acute patients
 
-`BE-BSW-P22-U04-A01-5702b36422c3` — KV Berlin rule to prevent practice rejection of new patients/especially acute cases.
+`BE-BSW-P22-U04-A01-5702b36422c3` - KV Berlin rule to prevent practice rejection of new patients/especially acute cases.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_ACCESS_PROTECTION_POTENTIAL / CAPACITY_TRIAGE_CONTINUITY_AND_RULE_DESIGN_DEPENDENT`
 - `evidence_level = LOW_TO_MEDIUM`
@@ -126,7 +126,7 @@ Child `C02 / PUBLIC_PRIMARY_CARE_CENTRES`, exact clause: `neue kommunale beziehu
 
 `BE_BSW_P22_U01_U04_FACH_COMPLETE = PASS_SOURCE_BOUND`
 
-Do not close P22 yet. U05–U09 remain for the disjoint continuation. Generic delegated RNAA for these exact U01–U04 records is superseded by this handoff. All directions are ex-ante potential assessments, not endorsements or recommendations.
+Do not close P22 yet. U05-U09 remain for the disjoint continuation. Generic delegated RNAA for these exact U01-U04 records is superseded by this handoff. All directions are ex-ante potential assessments, not endorsements or recommendations.
 
 ---
 
@@ -137,23 +137,23 @@ Do not close P22 yet. U05–U09 remain for the disjoint continuation. Generic de
 - Updated: 2026-08-28T13:07:54Z
 - Author: sustynats
 
-## WÖk FACH BATCH — Berlin BSW P22, part 2: Praxisteams / MFA / Fallmanagement (U05–U07)
+## WÖk FACH BATCH - Berlin BSW P22, part 2: Praxisteams / MFA / Fallmanagement (U05-U07)
 
-Disjoint continuation of P22 part 1 `5452887573`. Same frozen artefact and current main. This batch reviews only U05–U07. Existing generic delegated RNAA is superseded only for the exact objects below. No DNS mapping, Recommendation, score or party-wide judgment.
+Disjoint continuation of P22 part 1 `5452887573`. Same frozen artefact and current main. This batch reviews only U05-U07. Existing generic delegated RNAA is superseded only for the exact objects below. No DNS mapping, Recommendation, score or party-wide judgment.
 
-### U05 — structural heading
+### U05 - structural heading
 
-`BE-BSW-P22-U05-77bd253d8b1d` — `Starke Praxisteams bilden`
+`BE-BSW-P22-U05-77bd253d8b1d` - `Starke Praxisteams bilden`
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 - `context_kind = STRUCTURAL_HEADING`
 
-### U06 — multiprofessional primary-care teams
+### U06 - multiprofessional primary-care teams
 
-`BE-BSW-P22-U06-A01-e042977c45a1` — `Die Hausarztpraxis der Zukunft ist ein Teamprojekt.`
+`BE-BSW-P22-U06-A01-e042977c45a1` - `Die Hausarztpraxis der Zukunft ist ein Teamprojekt.`
 - `terminal_fach_state = NON_EFFECT_SYSTEM_DESIGN_FRAME_REVIEWED`
 - Exact reason: design frame/rationale for the following team instruments, not an independent intervention.
 
-`BE-BSW-P22-U06-A02-e49235cab409` — multiprofessional structures intended to relieve GPs and create more patient time.
+`BE-BSW-P22-U06-A02-e49235cab409` - multiprofessional structures intended to relieve GPs and create more patient time.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_TEAM_BASED_CARE_AND_PHYSICIAN_TIME_CAPACITY_POTENTIAL / ROLE_REIMBURSEMENT_WORKFORCE_AND_INTEGRATION_DEPENDENT`
 - `evidence_level = MEDIUM`
@@ -164,7 +164,7 @@ Disjoint continuation of P22 part 1 `5452887573`. Same frozen artefact and curre
 - Distribution: complex/chronic patients, older people, homebound patients, practices in underserved areas, staff groups.
 - Reality check: physician time allocation, team FTE, appointment access, continuity, patient-reported coordination, safety/quality and staff retention; number of professions in the team is output.
 
-`BE-BSW-P22-U06-A03-4d1881f7bf2b` — qualified non-physician staff independently conduct home visits or accompany chronically ill/highly aged people.
+`BE-BSW-P22-U06-A03-4d1881f7bf2b` - qualified non-physician staff independently conduct home visits or accompany chronically ill/highly aged people.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_HOME_BASED_ACCESS_CONTINUITY_AND_PHYSICIAN_RELIEF_POTENTIAL / SCOPE_TRAINING_SUPERVISION_LIABILITY_AND_REIMBURSEMENT_DEPENDENT`
 - `evidence_level = MEDIUM`
@@ -174,13 +174,13 @@ Disjoint continuation of P22 part 1 `5452887573`. Same frozen artefact and curre
 - Distribution: homebound, older, chronic/multimorbid people, carers, peripheral/underserved areas.
 - Reality check: completed appropriate home visits, escalation quality, avoidable care gaps/crises with attribution guard, patient/carer burden, physician capacity and adverse events.
 
-### U07 — MFA career/role architecture and case management
+### U07 - MFA career/role architecture and case management
 
-`BE-BSW-P22-U07-A01-ac6e7aa6dd52` — `Für medizinische Fachangestellte brauchen wir eine Karriereoffensive.`
+`BE-BSW-P22-U07-A01-ac6e7aa6dd52` - `Für medizinische Fachangestellte brauchen wir eine Karriereoffensive.`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: `Karriereoffensive` is a programme label without an independently specified instrument, funding rule, training pathway, legal change or employer/tariff action. The concrete components in A02 are reviewed separately; A01 must not receive a duplicate effect direction.
 
-`BE-BSW-P22-U07-A02-18b00148d452` — better pay + clear advancement + more responsibility + reliable legal framework.
+`BE-BSW-P22-U07-A02-18b00148d452` - better pay + clear advancement + more responsibility + reliable legal framework.
 - `terminal_fach_state = SOURCE_UNIT_RECLASSIFIED_VERSIONED`
 - `counts_as_effect_object = false`
 - Exact reason: four materially different levers are overmerged. The source’s causal wording `Nur durch ... werden diese Berufe attraktiv` is not accepted as a proven exclusive causal claim. Preserve parent and materialise four deterministic children from the exact component phrases:
@@ -216,7 +216,7 @@ Child `C04 / LEGAL_FRAMEWORK`, exact phrase `verlässliche rechtliche Rahmenbedi
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: no legal norm, competence level, scope change, liability rule, delegation/substitution boundary or proposed statutory wording is identified. `Legal certainty` is a goal/design condition until the concrete rule delta exists.
 
-`BE-BSW-P22-U07-A03-736a81fe58bc` — professional case management with fixed contacts for very old/chronic/care-dependent patients.
+`BE-BSW-P22-U07-A03-736a81fe58bc` - professional case management with fixed contacts for very old/chronic/care-dependent patients.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_CARE_COORDINATION_CONTINUITY_AND_NAVIGATION_POTENTIAL / STAFFING_DATA_SHARING_AND_SYSTEM_INTEGRATION_DEPENDENT`
 - `evidence_level = MEDIUM`
@@ -225,15 +225,15 @@ Child `C04 / LEGAL_FRAMEWORK`, exact phrase `verlässliche rechtliche Rahmenbedi
 - Distribution: highly aged, multimorbid/chronic/care-dependent people and carers; language/disability/digital-access needs.
 - Reality check: continuity/follow-up, completed referrals, avoidable interface failures/crises with attribution guard, patient/carer burden, access equity and staff caseload.
 
-`BE-BSW-P22-U07-A04-ad8d751e13b5` — expand existing `successful model projects` Berlin-wide.
+`BE-BSW-P22-U07-A04-ad8d751e13b5` - expand existing `successful model projects` Berlin-wide.
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: the model projects are not named or source-bound in this object, their intervention bundle, target population, evaluation design and claimed `success` are unspecified. Without identifying what is scaled, no robust effect object exists. Do not infer the missing programme from neighbouring text or metadata.
 
-`BE-BSW-P22-U07-A05-9e07c982e98a` — other European countries allegedly show such teams work well.
+`BE-BSW-P22-U07-A05-9e07c982e98a` - other European countries allegedly show such teams work well.
 - `terminal_fach_state = NON_EFFECT_BENCHMARK_CLAIM_REVIEWED`
 - Exact reason: comparative programme claim, not an intervention and not accepted as evidence without identified comparator/design/outcomes. It may trigger later evidence research but carries no effect count.
 
-`BE-BSW-P22-U07-A06-c73c41d01af5` — `Berlin darf hier nicht länger zurückliegen.`
+`BE-BSW-P22-U07-A06-c73c41d01af5` - `Berlin darf hier nicht länger zurückliegen.`
 - `terminal_fach_state = NON_EFFECT_COMPARATIVE_GOAL_FRAME_REVIEWED`
 - Exact reason: comparative rhetoric/goal frame, no independent lever or measured outcome.
 
@@ -241,7 +241,7 @@ Child `C04 / LEGAL_FRAMEWORK`, exact phrase `verlässliche rechtliche Rahmenbedi
 
 `BE_BSW_P22_U05_U07_FACH_COMPLETE = PASS_SOURCE_BOUND`
 
-Together with part 1, U01–U07 are now terminal. Do not close P22 yet: U08–U09 remain for the final disjoint emergency-care batch. Parent/child roles above are non-saldierbar; CodeX must preserve parents at zero count and count only terminal children/effect leaves.
+Together with part 1, U01-U07 are now terminal. Do not close P22 yet: U08-U09 remain for the final disjoint emergency-care batch. Parent/child roles above are non-saldierbar; CodeX must preserve parents at zero count and count only terminal children/effect leaves.
 
 ---
 
@@ -252,23 +252,23 @@ Together with part 1, U01–U07 are now terminal. Do not close P22 yet: U08–U0
 - Updated: 2026-08-28T13:08:43Z
 - Author: sustynats
 
-## WÖk FACH BATCH — Berlin BSW P22, part 3: Notfallversorgung / INZ / Rettungsdienst / AED / Erste Hilfe (U08–U09) + page closure
+## WÖk FACH BATCH - Berlin BSW P22, part 3: Notfallversorgung / INZ / Rettungsdienst / AED / Erste Hilfe (U08-U09) + page closure
 
 Final disjoint P22 continuation after parts 1 `5452887573` and 2 `5452894797`. Same frozen artefact and `main=130d94a7b4f1ab8d7c6addcd4783123d5d43fdec`. Current federal baseline matters materially: the 22.04.2026 federal Notfallreform bill already proposes a stronger 116117 acute-care role, digitally networked Integrierte Notfallzentren and a national public-AED registry. Therefore source proposals in the same direction are assessed against this inherited/current reform path rather than against a zero baseline. No DNS mapping, Recommendation, score or party-wide judgment.
 
-### U08 — structural heading
+### U08 - structural heading
 
-`BE-BSW-P22-U08-671844fbb707` — `Notfallversorgung entlasten`
+`BE-BSW-P22-U08-671844fbb707` - `Notfallversorgung entlasten`
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 - `context_kind = STRUCTURAL_HEADING`
 
-### U09 — emergency-care objects
+### U09 - emergency-care objects
 
-`BE-BSW-P22-U09-A01-e7164757ad75` — claim that last winter showed Berlin emergency departments rapidly reaching overload.
+`BE-BSW-P22-U09-A01-e7164757ad75` - claim that last winter showed Berlin emergency departments rapidly reaching overload.
 - `terminal_fach_state = NON_EFFECT_PROBLEM_BASELINE_CLAIM_REVIEWED`
 - Exact reason: problem assertion/context, not an intervention. Do not promote the source wording into an independently proven system baseline without separate utilisation/capacity evidence.
 
-`BE-BSW-P22-U09-A02-8b6105da4cc3` — longer opening hours for Notdienstpraxen/INZ + alternative employment solutions for self-employed pool doctors.
+`BE-BSW-P22-U09-A02-8b6105da4cc3` - longer opening hours for Notdienstpraxen/INZ + alternative employment solutions for self-employed pool doctors.
 - `terminal_fach_state = SOURCE_UNIT_RECLASSIFIED_VERSIONED`
 - `counts_as_effect_object = false`
 - Exact reason: two different mechanisms/competence paths are overmerged. Preserve parent and materialise two deterministic children:
@@ -287,14 +287,14 @@ Child `C02 / POOL_DOCTOR_EMPLOYMENT_MODEL`, exact clause: `und uns für alternat
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: `alternative Lösungen` does not identify the employment/contract model, legal status, remuneration, social-insurance/tax treatment, liability, working-time arrangement, responsible actor or relation to existing/federal notdienst structures. No effect direction is robust before that design exists.
 
-`BE-BSW-P22-U09-A03-6047e0632e39` — more protection for emergency staff + enough training places.
+`BE-BSW-P22-U09-A03-6047e0632e39` - more protection for emergency staff + enough training places.
 - `terminal_fach_state = SOURCE_UNIT_RECLASSIFIED_VERSIONED`
 - `counts_as_effect_object = false`
 - Exact reason: occupational safety/protection and training-capacity expansion are distinct mechanisms. Preserve parent and split:
 
 Child `C01 / STAFF_PROTECTION`, exact clause: `Rettungskräfte und Personal in den Rettungsstellen brauchen mehr Schutz im Einsatz.`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
-- Exact reason: no protection instrument is specified — e.g. staffing/security, police cooperation, physical design, de-escalation training, alarms/equipment, reporting/prosecution support or occupational-safety standard. Without a mechanism and incident baseline, `mehr Schutz` is a goal only.
+- Exact reason: no protection instrument is specified - e.g. staffing/security, police cooperation, physical design, de-escalation training, alarms/equipment, reporting/prosecution support or occupational-safety standard. Without a mechanism and incident baseline, `mehr Schutz` is a goal only.
 
 Child `C02 / TRAINING_PLACES`, exact clause: `Rettungskräfte und Personal in den Rettungsstellen brauchen ausreichend Ausbildungsplätze.`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -305,7 +305,7 @@ Child `C02 / TRAINING_PLACES`, exact clause: `Rettungskräfte und Personal in de
 - Risks: instructor/practice bottlenecks, attrition, training-quality dilution, graduates leaving Berlin/sector, places not filled.
 - Reality check: funded/offered/filled places, completion, licensure, Berlin retention, vacancy/shift coverage and safety/quality; training-place count alone is pipeline input.
 
-`BE-BSW-P22-U09-A04-f002601dc899` — Berliner Notfallverfügung documenting patient wishes clearly in emergencies.
+`BE-BSW-P22-U09-A04-f002601dc899` - Berliner Notfallverfügung documenting patient wishes clearly in emergencies.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_WITH_POSITIVE_PATIENT_AUTONOMY_AND_EMERGENCY_INFORMATION_POTENTIAL / LEGAL_VALIDITY_AUTHENTICITY_ACCESS_AND_UPDATE_DEPENDENT`
 - `evidence_level = LOW_TO_MEDIUM`
@@ -315,7 +315,7 @@ Child `C02 / TRAINING_PLACES`, exact clause: `Rettungskräfte und Personal in de
 - Noncompensation: documentation convenience cannot substitute for valid consent, clinical assessment or current patient will.
 - Reality check: availability at point of care, validity/currentness, concordance with verified wishes, errors/conflicts, clinician/patient usability and privacy incidents.
 
-`BE-BSW-P22-U09-A05-4b51e67cc6ee` — citywide AED availability + broad training programmes.
+`BE-BSW-P22-U09-A05-4b51e67cc6ee` - citywide AED availability + broad training programmes.
 - `terminal_fach_state = SOURCE_UNIT_RECLASSIFIED_VERSIONED`
 - `counts_as_effect_object = false`
 - Exact reason: device accessibility/maintenance and training/capability are complementary but distinct causal levers. Preserve parent and split:
@@ -337,7 +337,7 @@ Child `C02 / AED_TRAINING`, exact clause: `und breit angelegte Schulungsprogramm
 - Risks: one-off training decay, inequitable reach, overemphasis on device versus CPR/emergency call, low practice refresh.
 - Reality check: representative training reach, retained practical skill, bystander CPR/AED use, time to intervention and safety/outcomes.
 
-`BE-BSW-P22-U09-A06-627706c6a880` — first-aid capability already in primary school.
+`BE-BSW-P22-U09-A06-627706c6a880` - first-aid capability already in primary school.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_EARLY_LIFE_EMERGENCY_CAPABILITY_AND_BYSTANDER_RESPONSE_POTENTIAL / AGE_APPROPRIATE_CURRICULUM_TEACHER_CAPACITY_AND_SKILL_RETENTION_DEPENDENT`
 - `evidence_level = MEDIUM`
@@ -359,7 +359,7 @@ Expected role-domain after deterministic child materialisation (validate SET-WIS
 
 `BE_BSW_P22_FACH_COMPLETE = PASS_SOURCE_BOUND`
 
-After lossless materialisation, protected BSW physical scope becomes **P1–P22**. The next untouched physical review envelope begins at **P23** and runs through P66 unless a newer exact #240 handoff closes a subset before write time.
+After lossless materialisation, protected BSW physical scope becomes **P1-P22**. The next untouched physical review envelope begins at **P23** and runs through P66 unless a newer exact #240 handoff closes a subset before write time.
 
 Berlin overall must still remain `3/12` programme-terminal / `9/12` programme-open. Recompute residual SET-WISE; expected page-envelope reduction is exactly P22 removal, but do not create authoritative totals by historical-plus-child arithmetic.
 

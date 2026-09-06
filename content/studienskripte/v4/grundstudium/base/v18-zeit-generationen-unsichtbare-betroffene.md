@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Manche Maßnahmen wirken sofort, andere erst in Jahren. Manche Kosten fallen heute an und Nutzen später – oder umgekehrt. WÖk macht diese Zeitverteilung sichtbar, statt Zukunftsfolgen in einer Gegenwartszahl verschwinden zu lassen.
+Manche Maßnahmen wirken sofort, andere erst in Jahren. Manche Kosten fallen heute an und Nutzen später - oder umgekehrt. WÖk macht diese Zeitverteilung sichtbar, statt Zukunftsfolgen in einer Gegenwartszahl verschwinden zu lassen.
 
 ## Lernziele
 
@@ -60,10 +60,10 @@ Spätere Bewertung darf nicht so tun, als seien damals unbekannte Informationen 
 
 ## Typische Fehlinterpretationen
 
-- „Später = unwichtig.“ – Falsch.
-- „Keine frühe Wirkung = Maßnahme wirkungslos.“ – Nicht bei langen Lags.
-- „Diskontsatz ist rein technisch.“ – Nein; Annahmen sind entscheidungsrelevant.
-- „Spätere Erkenntnis darf in die alte Ex-ante-Bewertung hineingeschrieben werden.“ – Nein.
+- „Später = unwichtig.“ - Falsch.
+- „Keine frühe Wirkung = Maßnahme wirkungslos.“ - Nicht bei langen Lags.
+- „Diskontsatz ist rein technisch.“ - Nein; Annahmen sind entscheidungsrelevant.
+- „Spätere Erkenntnis darf in die alte Ex-ante-Bewertung hineingeschrieben werden.“ - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -77,7 +77,7 @@ WÖk ersetzt Kosten-Nutzen-Analyse, demografische Projektionen oder Zukunftsfors
 
 ## Transferaufgabe
 
-Erstelle für eine Infrastrukturmaßnahme ein Zeitprofil: 0–2, 3–10 und >10 Jahre. Nenne Kosten/Nutzen, Betroffene, Lock-in und passenden Reality-Check-Zeitpunkt.
+Erstelle für eine Infrastrukturmaßnahme ein Zeitprofil: 0-2, 3-10 und >10 Jahre. Nenne Kosten/Nutzen, Betroffene, Lock-in und passenden Reality-Check-Zeitpunkt.
 
 ## Prüfungsrelevanz
 
@@ -85,4 +85,4 @@ Prüfungsfähig sind Lag, Zeitprofil, Generationenverteilung, Diskontierungsanna
 
 ## Sprechertext
 
-Zeit ist eine unsichtbare Wirkungsdimension. Eine Maßnahme kann heute teuer und morgen wertvoll sein. Oder heute bequem und in zehn Jahren ein Lock-in. Darum legen wir Wirkungen auf eine Zeitachse. Wir fragen, wer heute zahlt, wer später profitiert und wann ein Outcome überhaupt beobachtbar sein kann. Und wir speichern den damaligen Wissensstand. So können wir später fair prüfen, was die Analyse wissen konnte – und was erst danach sichtbar wurde.
+Zeit ist eine unsichtbare Wirkungsdimension. Eine Maßnahme kann heute teuer und morgen wertvoll sein. Oder heute bequem und in zehn Jahren ein Lock-in. Darum legen wir Wirkungen auf eine Zeitachse. Wir fragen, wer heute zahlt, wer später profitiert und wann ein Outcome überhaupt beobachtbar sein kann. Und wir speichern den damaligen Wissensstand. So können wir später fair prüfen, was die Analyse wissen konnte - und was erst danach sichtbar wurde.

@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Bei Medien und Plattformen gibt es mindestens **zwei verschiedene Wirkungsfragen**. Erstens: Was bewirkt ein konkreter Text, Frame, Video oder Narrativ? Zweitens: Was bewirkt die Struktur des Mediums oder der Plattform – Ranking, Reichweite, Moderation, Geschäftsmodell, Eigentum, Nutzerkontrolle? Diese Ebenen dürfen nicht vermischt werden. WÖk-Scorecards zeigen deshalb Quellen, Mechanismen, Richtung, Evidenz, Reichweite und offene Punkte – **keine Gesinnungsnoten für Medien oder Parteien**.
+Bei Medien und Plattformen gibt es mindestens **zwei verschiedene Wirkungsfragen**. Erstens: Was bewirkt ein konkreter Text, Frame, Video oder Narrativ? Zweitens: Was bewirkt die Struktur des Mediums oder der Plattform - Ranking, Reichweite, Moderation, Geschäftsmodell, Eigentum, Nutzerkontrolle? Diese Ebenen dürfen nicht vermischt werden. WÖk-Scorecards zeigen deshalb Quellen, Mechanismen, Richtung, Evidenz, Reichweite und offene Punkte - **keine Gesinnungsnoten für Medien oder Parteien**.
 
 ## Lernziele
 
@@ -180,7 +180,7 @@ Aber auch hier gilt:
 
 ## 9. Beispiel: polarisierender Kurzclip
 
-Ebene A – Clip:
+Ebene A - Clip:
 
 - Originaltext sichern,
 - Frame analysieren,
@@ -189,7 +189,7 @@ Ebene A – Clip:
 - Reichweite,
 - Wiederholung.
 
-Ebene B – Plattform:
+Ebene B - Plattform:
 
 - wurde Clip aktiv empfohlen?
 - welcher Recommender-/Interaktionsmechanismus?
@@ -305,7 +305,7 @@ Eine für Content: Fakten, Frame, Ingroup/Outgroup, Normalisierung, Reichweite, 
 
 Und eine für die Struktur: Empfehlungssystem, Geschäftsmodell, Nutzerkontrolle, Moderation, Transparenz, Datenzugang, Medienpluralität.
 
-Dabei ist Reichweite wichtig – aber Reichweite ist noch keine Wirkung.
+Dabei ist Reichweite wichtig - aber Reichweite ist noch keine Wirkung.
 
 Und Moderation ist nicht automatisch gut oder schlecht. Sie kann Menschen vor Belästigung schützen und gleichzeitig legitime Rede fälschlich treffen.
 

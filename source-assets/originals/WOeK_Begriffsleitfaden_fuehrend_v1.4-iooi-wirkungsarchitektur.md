@@ -47,7 +47,7 @@ IOOI erklärt die Reihenfolge von Ressourcen, Leistung und Veränderung. Die Wir
 ### Drei Phasen der Wirkungsökonomie
 
 1. **Wirkung feststellen:** Was verändert sich tatsächlich? Welche Daten, Baselines, Vergleichsfälle und Attributionen tragen die Aussage?
-2. **Wirkung bewerten:** Für wen ist die Veränderung positiv, neutral oder negativ – und an welchem transparenten Referenzrahmen wird das begründet?
+2. **Wirkung bewerten:** Für wen ist die Veränderung positiv, neutral oder negativ - und an welchem transparenten Referenzrahmen wird das begründet?
 3. **Wirkung rückkoppeln:** Was ändert sich daraufhin in Preis, Steuer, Kapital, Beschaffung, Management, Recht oder Regulation?
 
 Nicht alles, was wirkt, ist erwünscht. Deshalb reicht es nicht, Wirkung zu messen. Man muss auch offenlegen, woran man sie misst.

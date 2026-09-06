@@ -1,4 +1,4 @@
-## WÖk FACH BATCH — Berlin BSW physical PDF page 27: Sportinfrastruktur, SEZ/Jahnsportpark, Vereins-/Schulsport — source-bound closure + deterministic child repairs
+## WÖk FACH BATCH - Berlin BSW physical PDF page 27: Sportinfrastruktur, SEZ/Jahnsportpark, Vereins-/Schulsport - source-bound closure + deterministic child repairs
 
 Disjoint Fach continuation after P26 `5453271486`. Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P27/66. Generic #313 RNAA is superseded for the exact source objects decided here. No DNS mapping, Recommendation, score or party-wide judgement.
 
@@ -10,7 +10,7 @@ Disjoint Fach continuation after P26 `5453271486`. Frozen artifact unchanged: `B
 4. **Jahnsportpark is already under active redevelopment.** Senate 17.02.2026 and 28.07.2026 documents show active inclusive redevelopment/financing; current construction continued in August. Sources: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1644082.php and https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1697924.php . Thus `fit für die Zukunft` is not a zero-baseline intervention for that site.
 5. **BERLIN+ Olympic application is active and already has a participation path.** Senate adopted the concept 05.05.2026; a first participation phase concluded in July. Sources: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1667778.php and https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1691962.php . The programme may propose stronger participation/budget safeguards, but current activity must not be erased.
 
-### A. U01 — SEZ preservation narrative + action
+### A. U01 - SEZ preservation narrative + action
 
 #### `BE-BSW-P27-U01-A01-aabb9a7429c2`
 Text: `Es ist noch nicht zu spät, wichtige Sportstätten wie das SEZ (Sport- und Erholungszentrum) zu retten!`
@@ -19,7 +19,7 @@ Text: `Es ist noch nicht zu spät, wichtige Sportstätten wie das SEZ (Sport- un
 
 Exact reason: target/campaign framing only; no independent land-use, ownership, budget, planning or renovation instrument is specified in this atom.
 
-#### `BE-BSW-P27-U01-A02-1e138f61d190` — versioned split required
+#### `BE-BSW-P27-U01-A02-1e138f61d190` - versioned split required
 Current atom conflates a factual/current-status claim with an intervention. Reclassify original as:
 `SOURCE_UNIT_RECLASSIFIED_VERSIONED / COMPOUND_PARENT_ZERO_COUNT`.
 
@@ -42,15 +42,15 @@ Text: `Es lohnt sich, dafür zu kämpfen!`
 
 `terminal_fach_state = NON_EFFECT_MOBILISATION_RHETORIC_REVIEWED`.
 
-### B. U02 — housing vs sport-space trade-off
+### B. U02 - housing vs sport-space trade-off
 
 #### `BE-BSW-P27-U02-A01-fcb4ddad28e3`
-`NON_EFFECT_HOUSING_NEED_CONTEXT_REVIEWED` — acknowledges housing need; no action in this atom.
+`NON_EFFECT_HOUSING_NEED_CONTEXT_REVIEWED` - acknowledges housing need; no action in this atom.
 
 #### `BE-BSW-P27-U02-A02-a15dca3cdb1f`
-`NON_EFFECT_SPORT_AND_LEISURE_NEED_CONTEXT_REVIEWED` — target/need statement, no independent action.
+`NON_EFFECT_SPORT_AND_LEISURE_NEED_CONTEXT_REVIEWED` - target/need statement, no independent action.
 
-#### `BE-BSW-P27-U02-A03-fab61eeacfe8` — housing construction not at the expense of established sport/leisure sites
+#### `BE-BSW-P27-U02-A03-fab61eeacfe8` - housing construction not at the expense of established sport/leisure sites
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_SPORT_SPACE_PRESERVATION_VS_HOUSING_SUPPLY_TRADEOFF / SITE_SPECIFIC_NEED_AND_ALTERNATIVES_REQUIRED`
@@ -68,9 +68,9 @@ Text: `Diese müssen saniert, modernisiert und weiter genutzt werden.`
 
 Exact reason: repeats preservation/renovation target already carried by U01 repaired action and concrete U03 measures; no second independent lever. Preserve as a design/continuity requirement, do not double-count.
 
-### C. U03 — concrete sport-facility measures
+### C. U03 - concrete sport-facility measures
 
-#### `BE-BSW-P27-U03-A01-a16907bc144d` — stop cuts and double renovation funding
+#### `BE-BSW-P27-U03-A01-a16907bc144d` - stop cuts and double renovation funding
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_FACILITY_CONDITION_SAFETY_AND_ACCESS_POTENTIAL / BASELINE_DEFINITION_PRIORITISATION_AND_FISCAL_OPPORTUNITY_COST_DEPENDENT`
@@ -80,7 +80,7 @@ Exact reason: repeats preservation/renovation target already carried by U01 repa
 - Risks: inflation/construction capacity, poor prioritisation, cost escalation, operating-cost lock-in, displacement of other capital/social needs.
 - Reality check: completed high-need projects, condition/safety/accessibility, closure hours, participant capacity, lifecycle cost; expenditure alone is input.
 
-#### `BE-BSW-P27-U03-A02-0bc0bd33b589` — prioritise maintenance, conversion and barrier-free modernisation
+#### `BE-BSW-P27-U03-A02-0bc0bd33b589` - prioritise maintenance, conversion and barrier-free modernisation
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_ASSET_LIFECYCLE_ACCESSIBILITY_AND_ADAPTIVE_REUSE_POTENTIAL / PROJECT_SELECTION_DEPENDENT`
@@ -89,7 +89,7 @@ Exact reason: repeats preservation/renovation target already carried by U01 repa
 - Current-baseline guard: barrier-free modernisation is already present in current federal/Land sport-facility programmes; Fach approval concerns the stated prioritisation, not novelty.
 - Distribution/guards: disability/accessibility, district need, sport type, school/club/free use; lifecycle carbon/resource/cost and temporary construction closures.
 
-#### `BE-BSW-P27-U03-A03-bafc00bac797` — versioned split required
+#### `BE-BSW-P27-U03-A03-bafc00bac797` - versioned split required
 Reclassify parent `SOURCE_UNIT_RECLASSIFIED_VERSIONED / COMPOUND_PARENT_ZERO_COUNT` and create two exact children:
 
 1. `Kein Abriss ohne gleichwertigen Ersatz`
@@ -102,7 +102,7 @@ Reclassify parent `SOURCE_UNIT_RECLASSIFIED_VERSIONED / COMPOUND_PARENT_ZERO_COU
    - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
    - Exact reason: heterogeneous named/unnamed sites are in different current lifecycle states (Jahnsportpark already under active redevelopment; SEZ is a contested housing/preservation process), while `fit für die Zukunft` specifies no common intervention, condition target, cost envelope or counterfactual. A single direction would collapse materially different site decisions. Review site-specific projects/actions separately.
 
-#### `BE-BSW-P27-U03-A04-e9a23c367344` — new halls/places where urgently needed
+#### `BE-BSW-P27-U03-A04-e9a23c367344` - new halls/places where urgently needed
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_SPATIAL_SPORT_CAPACITY_AND_ACCESS_POTENTIAL / DEMAND_SITE_AND_OPERATING_CAPACITY_DEPENDENT`
@@ -111,9 +111,9 @@ Reclassify parent `SOURCE_UNIT_RECLASSIFIED_VERSIONED / COMPOUND_PARENT_ZERO_COU
 - Omissions: need metric, sites/land, school/club/free-use mix, construction and recurring staff/operating budgets, pool-specific lifeguard constraints, environmental/lifecycle impacts.
 - Reality check: local utilisation/waitlists/travel, participant-hours, access distribution, operating viability and alternatives.
 
-### D. U04 — club access, workforce/inclusion, school sport, affordability
+### D. U04 - club access, workforce/inclusion, school sport, affordability
 
-#### `BE-BSW-P27-U04-A01-72b7c58c6e51` — free/highly discounted municipal facility use for clubs
+#### `BE-BSW-P27-U04-A01-72b7c58c6e51` - free/highly discounted municipal facility use for clubs
 
 `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 
@@ -126,7 +126,7 @@ Text: `Freier Zugang für Kinder und Jugendliche.`
 
 Exact reason: target/distribution guard without a defined access mechanism (club membership, open facility use, fees, pool access, programme voucher etc.). Bind it as a Reality-Check criterion to concrete access/price measures rather than count an unspecified second action.
 
-#### `BE-BSW-P27-U04-A03-b200716ba75f` — deterministic 3-child split required
+#### `BE-BSW-P27-U04-A03-b200716ba75f` - deterministic 3-child split required
 Parent text `Gezielte Unterstützung für Trainer, Ehrenamtliche und Inklusionsprojekte.` → `SOURCE_UNIT_RECLASSIFIED_VERSIONED / COMPOUND_PARENT_ZERO_COUNT`.
 
 Create three exact children, each `EXPLICIT_FACH_APPROVED`:
@@ -150,7 +150,7 @@ Create three exact children, each `EXPLICIT_FACH_APPROVED`:
 
 For all three: `evidence_level = MEDIUM_LOW_TO_MEDIUM_FOR_CAPACITY_MECHANISM / OUTCOME_PENDING`; exact funding/support instrument is an Omissions/Delivery field, not fabricated.
 
-#### `BE-BSW-P27-U04-A04-60bb5ffe2012` — deterministic 3-child split required
+#### `BE-BSW-P27-U04-A04-60bb5ffe2012` - deterministic 3-child split required
 Parent `Schulsport ausbauen: Mehr Stunden, bessere Ausstattung und vollständige Sanierung aller Schulsportstätten.` → zero-count versioned parent.
 
 1. `Mehr Stunden`
@@ -172,9 +172,9 @@ Parent `Schulsport ausbauen: Mehr Stunden, bessere Ausstattung und vollständige
    - `alle` must not erase prioritisation: condition/safety/accessibility/closure urgency, lifecycle/operating costs and construction capacity determine sequence.
 
 #### `BE-BSW-P27-U04-A05-40f38063152f`
-`NON_EFFECT_CHILD_ACCESS_AND_SERVICE_CONTINUITY_GOAL_REVIEWED` — no child should lose sport because of dilapidated halls; target/Reality-Check for school-facility measures, not independent action.
+`NON_EFFECT_CHILD_ACCESS_AND_SERVICE_CONTINUITY_GOAL_REVIEWED` - no child should lose sport because of dilapidated halls; target/Reality-Check for school-facility measures, not independent action.
 
-#### `BE-BSW-P27-U04-A06-c9a3e5788b4e` — cheap/free offers in every district
+#### `BE-BSW-P27-U04-A06-c9a3e5788b4e` - cheap/free offers in every district
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_AFFORDABILITY_AND_SPATIAL_ACCESS_POTENTIAL / FUNDING_CAPACITY_AND_UPTAKE_DEPENDENT`
@@ -184,7 +184,7 @@ Parent `Schulsport ausbauen: Mehr Stunden, bessere Ausstattung und vollständige
 - Risks: zero price without capacity creates queues rather than access; displacement of club revenue; blanket district symmetry may misallocate resources relative to population/need.
 - Reality: effective out-of-pocket cost, slots/waitlists, travel, participation/retention and income/district distribution.
 
-#### `BE-BSW-P27-U04-A07-2231ff564c70` — deterministic 3-child split required
+#### `BE-BSW-P27-U04-A07-2231ff564c70` - deterministic 3-child split required
 Parent `Besondere Förderung für Frauen- und Mädchensport, Seniorensport sowie Integrationsprojekte.` → zero-count versioned parent.
 
 Create:
@@ -219,7 +219,7 @@ Expected deterministic children = **13**, bound to the exact text spans above. C
 After exact child materialisation:
 `BE_BSW_P27_FACH_COMPLETE = PASS_SOURCE_BOUND_AFTER_VERSIONED_SEGMENTATION`.
 
-Protected BSW physical scope can advance through P27 only after P22–P26 pending handoffs/repairs and these P27 children are losslessly materialised. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
+Protected BSW physical scope can advance through P27 only after P22-P26 pending handoffs/repairs and these P27 children are losslessly materialised. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
 
 ### CodeX handoff
 

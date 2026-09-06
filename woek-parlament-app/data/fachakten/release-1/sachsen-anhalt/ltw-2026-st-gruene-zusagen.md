@@ -1,4 +1,4 @@
-# ltw-2026-st-gruene – commitment-register – vollständige Darstellung
+# ltw-2026-st-gruene - commitment-register - vollständige Darstellung
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -1271,7 +1271,7 @@
 
 **title:** Die bürokratischen Hürden für den Bau und Betrieb von Stauanlagen für die …
 
-**commitment_text:** Die bürokratischen Hürden für den Bau und Betrieb von Stauanlagen für die Wasserrückhaltung in Entwässerungsgräben der Landwirtschaft müssen reduziert werden, denn hier muss Eigeninitiative unbedingt honoriert und nicht behindert werden. 1.4 Gesunde Wälder und nachhaltige Forstwirtschaft Stabile, klimaresiliente und artenreiche Wälder in Sachsen-Anhalt sind unser Ziel – ökologisch wie wirtschaftlich nachhaltig.
+**commitment_text:** Die bürokratischen Hürden für den Bau und Betrieb von Stauanlagen für die Wasserrückhaltung in Entwässerungsgräben der Landwirtschaft müssen reduziert werden, denn hier muss Eigeninitiative unbedingt honoriert und nicht behindert werden. 1.4 Gesunde Wälder und nachhaltige Forstwirtschaft Stabile, klimaresiliente und artenreiche Wälder in Sachsen-Anhalt sind unser Ziel - ökologisch wie wirtschaftlich nachhaltig.
 
 ##### source_location
 
@@ -1722,7 +1722,7 @@
 
 **title:** Der ökologische Landbau und die mit ihm verbundenen Wertschöpfungsketten sollen besser unterstützt …
 
-**commitment_text:** Der ökologische Landbau und die mit ihm verbundenen Wertschöpfungsketten sollen besser unterstützt und sein Flächenanteil soll deutlich erhöht werden – insbesondere durch verlässli1 che Ökoprämien und einen stärkeren Fokus auf den Ökolandbau in der Ausbildung, in der Fachschule, bei der Umstellung, bei der Beratung, in den landwirtschaftlichen Lehr- und Versuchseinrichtungen des Landes sowie in der Forschung und Lehre an den Hochschulen.
+**commitment_text:** Der ökologische Landbau und die mit ihm verbundenen Wertschöpfungsketten sollen besser unterstützt und sein Flächenanteil soll deutlich erhöht werden - insbesondere durch verlässli1 che Ökoprämien und einen stärkeren Fokus auf den Ökolandbau in der Ausbildung, in der Fachschule, bei der Umstellung, bei der Beratung, in den landwirtschaftlichen Lehr- und Versuchseinrichtungen des Landes sowie in der Forschung und Lehre an den Hochschulen.
 
 ##### source_location
 
@@ -3550,7 +3550,7 @@ _Leere Liste._
 
 **title:** Die Strompreise wollen wir senken durch eine Verringerung der Stromsteuer auf das …
 
-**commitment_text:** Die Strompreise wollen wir senken durch eine Verringerung der Stromsteuer auf das europarechtlich zulässige Minimum, eine Strompreiszonenaufteilung Deutschland sowie regionale und dynamische Netzentgelte, sogenannte modale Preise. 1 Akzeptanz- und Beteiligung – Energiewende in Bürgerhand Wir setzen uns für die Stärkung von Bürgerenergiegenossenschaften ein, indem wir deren Gründung unterstützen.
+**commitment_text:** Die Strompreise wollen wir senken durch eine Verringerung der Stromsteuer auf das europarechtlich zulässige Minimum, eine Strompreiszonenaufteilung Deutschland sowie regionale und dynamische Netzentgelte, sogenannte modale Preise. 1 Akzeptanz- und Beteiligung - Energiewende in Bürgerhand Wir setzen uns für die Stärkung von Bürgerenergiegenossenschaften ein, indem wir deren Gründung unterstützen.
 
 ##### source_location
 
@@ -3902,7 +3902,7 @@ _Leere Liste._
 
 **title:** Wir sichern einheitliche hohe Standards, damit Rückbauprozesse umweltgerecht und nachhaltig erfolgen
 
-**commitment_text:** Wir sichern einheitliche hohe Standards, damit Rückbauprozesse umweltgerecht und nachhaltig erfolgen. 1 Mehr Sonnenkraft für Sachsen-Anhalt – vor allem auf versiegelten Flächen Wir setzen uns dafür ein, eine Pﬂicht zur Nutzung von Solarenergie auf Neubauten und umfänglichen Dachsanierungen in Industrie, Gewerbe und Infrastruktur anzuwenden.
+**commitment_text:** Wir sichern einheitliche hohe Standards, damit Rückbauprozesse umweltgerecht und nachhaltig erfolgen. 1 Mehr Sonnenkraft für Sachsen-Anhalt - vor allem auf versiegelten Flächen Wir setzen uns dafür ein, eine Pﬂicht zur Nutzung von Solarenergie auf Neubauten und umfänglichen Dachsanierungen in Industrie, Gewerbe und Infrastruktur anzuwenden.
 
 ##### source_location
 
@@ -4350,7 +4350,7 @@ _Leere Liste._
 
 **title:** Wir setzen uns dafür ein, unsere Stromnetze zu sanieren, zu optimieren und …
 
-**commitment_text:** Wir setzen uns dafür ein, unsere Stromnetze zu sanieren, zu optimieren und – wo notwendig – auszubauen, damit der weitere Ausbau der erneuerbaren Energien, von Speicherinfrastruktur und die gesamte Elektriﬁzierung von Industrie, Wärme und Mobilität gelingt.
+**commitment_text:** Wir setzen uns dafür ein, unsere Stromnetze zu sanieren, zu optimieren und - wo notwendig - auszubauen, damit der weitere Ausbau der erneuerbaren Energien, von Speicherinfrastruktur und die gesamte Elektriﬁzierung von Industrie, Wärme und Mobilität gelingt.
 
 ##### source_location
 
@@ -5374,9 +5374,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0168-wir-wollen-den-nahverkehr-ausbauen-mit-dichterer-taktung-d
 
-**title:** den Nahverkehr ausbauen – mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren …
+**title:** den Nahverkehr ausbauen - mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren …
 
-**commitment_text:** Wir wollen den Nahverkehr ausbauen – mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren Anschlüssen und einem einfachen, solidarisch ﬁnanzierten Tarifsystem, das Mobilität für alle möglich macht.
+**commitment_text:** Wir wollen den Nahverkehr ausbauen - mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren Anschlüssen und einem einfachen, solidarisch ﬁnanzierten Tarifsystem, das Mobilität für alle möglich macht.
 
 ##### source_location
 
@@ -5984,7 +5984,7 @@ _Leere Liste._
 
 **title:** Darüber hinaus setzen wir uns ein für ein ambitioniertes Landesfußverkehrskonzept, das durch …
 
-**commitment_text:** Darüber hinaus setzen wir uns ein für ein ambitioniertes Landesfußverkehrskonzept, das durch klare Strategien und Maßnahmen die Infrastruktur für Fußgänger*innen verbessert und nachhaltige Mobilität unterstützt. 2 Auto, Carsharing und Elektromobilität Das Auto prägt nach wie vor den Alltag vieler Menschen – gerade in einem Flächenland wie Sachsen-Anhalt.
+**commitment_text:** Darüber hinaus setzen wir uns ein für ein ambitioniertes Landesfußverkehrskonzept, das durch klare Strategien und Maßnahmen die Infrastruktur für Fußgänger*innen verbessert und nachhaltige Mobilität unterstützt. 2 Auto, Carsharing und Elektromobilität Das Auto prägt nach wie vor den Alltag vieler Menschen - gerade in einem Flächenland wie Sachsen-Anhalt.
 
 ##### source_location
 
@@ -6337,7 +6337,7 @@ _Leere Liste._
 
 **title:** Für uns muss dieses Ziel oberste Priorität in der Verkehrsplanung erhalten und …
 
-**commitment_text:** Für uns muss dieses Ziel oberste Priorität in der Verkehrsplanung erhalten und es müssen konsequente Maßnahmen ergriffen werden. 2 Wir stärken Sicherheit und Lebensqualität mit Tempo 30 als innerörtliche Regelgeschwindigkeit – und geben den Kommunen Entscheidungsmöglichkeit für passende Ausnahmen.
+**commitment_text:** Für uns muss dieses Ziel oberste Priorität in der Verkehrsplanung erhalten und es müssen konsequente Maßnahmen ergriffen werden. 2 Wir stärken Sicherheit und Lebensqualität mit Tempo 30 als innerörtliche Regelgeschwindigkeit - und geben den Kommunen Entscheidungsmöglichkeit für passende Ausnahmen.
 
 ##### source_location
 
@@ -7329,7 +7329,7 @@ _Leere Liste._
 
 **title:** Wahlrecht für alle Wir setzen uns auf Bundesebene für ein aktives und …
 
-**commitment_text:** Wahlrecht für alle Wir setzen uns auf Bundesebene für ein aktives und passives Wahlrecht für alle ein, die dauerhaft in einer Kommune leben – unabhängig von der Staatsangehörigkeit.
+**commitment_text:** Wahlrecht für alle Wir setzen uns auf Bundesebene für ein aktives und passives Wahlrecht für alle ein, die dauerhaft in einer Kommune leben - unabhängig von der Staatsangehörigkeit.
 
 ##### source_location
 
@@ -8898,7 +8898,7 @@ _Leere Liste._
 
 **title:** Unabhängige*r Polizeibeauftragte*r Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und …
 
-**commitment_text:** Unabhängige*r Polizeibeauftragte*r Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht – und das transparent, niedrigschwellig und mit umfassenden Rechten.
+**commitment_text:** Unabhängige*r Polizeibeauftragte*r Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht - und das transparent, niedrigschwellig und mit umfassenden Rechten.
 
 ##### source_location
 
@@ -9250,7 +9250,7 @@ _Leere Liste._
 
 **title:** Informations- und Beratungsangebote müssen dabei mehrsprachig, niedrigschwellig und inklusiv zugänglich sein, damit …
 
-**commitment_text:** Informations- und Beratungsangebote müssen dabei mehrsprachig, niedrigschwellig und inklusiv zugänglich sein, damit alle von Gewalt betroffenen Frauen – unabhängig von Sprachkenntnissen, Aufenthaltsstatus oder Behinderung – Schutz und Unterstützung ﬁnden.
+**commitment_text:** Informations- und Beratungsangebote müssen dabei mehrsprachig, niedrigschwellig und inklusiv zugänglich sein, damit alle von Gewalt betroffenen Frauen - unabhängig von Sprachkenntnissen, Aufenthaltsstatus oder Behinderung - Schutz und Unterstützung ﬁnden.
 
 ##### source_location
 
@@ -10691,7 +10691,7 @@ _Leere Liste._
 
 **title:** Behindert wird man
 
-**commitment_text:** Behindert wird man.“ Wir setzen uns für den Ausbau der Barrierefreiheit im öffentlichen Raum und in staatlichen Einrichtungen ein – und zwar nicht nur physisch, sondern auch durch die Bereitstellung von Informationen in Leichter Sprache.
+**commitment_text:** Behindert wird man.“ Wir setzen uns für den Ausbau der Barrierefreiheit im öffentlichen Raum und in staatlichen Einrichtungen ein - und zwar nicht nur physisch, sondern auch durch die Bereitstellung von Informationen in Leichter Sprache.
 
 ##### source_location
 
@@ -11169,9 +11169,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0349-gleichzeitig-muss-der-mdr-weiter-modernisiert-werden-mit-s
 
-**title:** Gleichzeitig muss der MDR weiter modernisiert werden – mit stärkeren Online- und …
+**title:** Gleichzeitig muss der MDR weiter modernisiert werden - mit stärkeren Online- und …
 
-**commitment_text:** Gleichzeitig muss der MDR weiter modernisiert werden – mit stärkeren Online- und Social-Media-Angeboten.
+**commitment_text:** Gleichzeitig muss der MDR weiter modernisiert werden - mit stärkeren Online- und Social-Media-Angeboten.
 
 ##### source_location
 
@@ -11523,7 +11523,7 @@ _Leere Liste._
 
 **title:** Die Forderungen des Netzwerks gegen Kinderarmut und der Landesarmutskonferenz wollen wir aufgreifen …
 
-**commitment_text:** Die Forderungen des Netzwerks gegen Kinderarmut und der Landesarmutskonferenz wollen wir aufgreifen und zu Beginn der neuen Legislatur in einen Landesaktionsplan überführen – mit konsequenter Armuts- und Reichtumsberichterstattung, verlässlicher Finanzierung der Kita- und Schulsozialarbeit, der Ju9
+**commitment_text:** Die Forderungen des Netzwerks gegen Kinderarmut und der Landesarmutskonferenz wollen wir aufgreifen und zu Beginn der neuen Legislatur in einen Landesaktionsplan überführen - mit konsequenter Armuts- und Reichtumsberichterstattung, verlässlicher Finanzierung der Kita- und Schulsozialarbeit, der Ju9
 
 ##### source_location
 
@@ -13958,9 +13958,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0436-vielfalt-foerdern-integration-und-demokratiebildung-staerk
 
-**title:** Vielfalt fördern – Integration und Demokratiebildung stärken Wir setzen uns dafür ein, …
+**title:** Vielfalt fördern - Integration und Demokratiebildung stärken Wir setzen uns dafür ein, …
 
-**commitment_text:** Vielfalt fördern – Integration und Demokratiebildung stärken Wir setzen uns dafür ein, dass alle Kinder mit Migrationshintergrund in Sachsen-Anhalt umgehend schulpﬂichtig werden und so schnell wie möglich in Regelklassen integriert werden.
+**commitment_text:** Vielfalt fördern - Integration und Demokratiebildung stärken Wir setzen uns dafür ein, dass alle Kinder mit Migrationshintergrund in Sachsen-Anhalt umgehend schulpﬂichtig werden und so schnell wie möglich in Regelklassen integriert werden.
 
 ##### source_location
 
@@ -14311,9 +14311,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0447-deshalb-wollen-wir-die-kooperation-zwischen-kultur-und-bil
 
-**title:** Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen – insbesondere Kitas …
+**title:** Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen - insbesondere Kitas …
 
-**commitment_text:** Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen – insbesondere Kitas und Schulen – strukturell und ﬁnanziell stärken und mittels des etablierten LISA9
+**commitment_text:** Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen - insbesondere Kitas und Schulen - strukturell und ﬁnanziell stärken und mittels des etablierten LISA9
 
 ##### source_location
 
@@ -14345,7 +14345,7 @@ _Leere Liste._
 
 **title:** die Entstehung von Schulgärten und grünen Klassenzimmern im Freien fördern
 
-**commitment_text:** Wir wollen die Entstehung von Schulgärten und grünen Klassenzimmern im Freien fördern. Dazu gehören auch das Errichten von Schulküchen in den Schulen und die Bildung zur gesunden Ernährung für alle Kinder. 3.4 Faire Ausbildung und lebenslanges Lernen Eine gute Ausbildung ist der Schlüssel für ein selbstbestimmtes Arbeitsleben – und für die wirtschaftliche Zukunft unseres Landes.
+**commitment_text:** Wir wollen die Entstehung von Schulgärten und grünen Klassenzimmern im Freien fördern. Dazu gehören auch das Errichten von Schulküchen in den Schulen und die Bildung zur gesunden Ernährung für alle Kinder. 3.4 Faire Ausbildung und lebenslanges Lernen Eine gute Ausbildung ist der Schlüssel für ein selbstbestimmtes Arbeitsleben - und für die wirtschaftliche Zukunft unseres Landes.
 
 ##### source_location
 
@@ -14375,9 +14375,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0449-wir-setzen-uns-fuer-faire-bedingungen-verlaessliche-unters
 
-**title:** faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein – vom Start in …
+**title:** faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein - vom Start in …
 
-**commitment_text:** Wir setzen uns für faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein – vom Start in die Ausbildung über eine faire Bezahlung bis hin zum lebenslangen Lernen.
+**commitment_text:** Wir setzen uns für faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein - vom Start in die Ausbildung über eine faire Bezahlung bis hin zum lebenslangen Lernen.
 
 ##### source_location
 
@@ -16746,9 +16746,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0523-wir-fordern-die-gezielte-foerderung-von-kunstprojekten-lit
 
-**title:** die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs‑Tafel“ an Schulen, um …
+**title:** die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs-Tafel“ an Schulen, um …
 
-**commitment_text:** Wir fordern die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs‑Tafel“ an Schulen, um kulturelle Bildung zu stärken und kreative Ausdrucksformen für alle Schüler*innen zugänglich zu machen.
+**commitment_text:** Wir fordern die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs-Tafel“ an Schulen, um kulturelle Bildung zu stärken und kreative Ausdrucksformen für alle Schüler*innen zugänglich zu machen.
 
 ##### source_location
 
@@ -17195,9 +17195,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0537-diese-aspekte-werden-wir-auch-in-die-reform-des-jugendmedi
 
-**title:** Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz‑Staatsvertrags einbringen
+**title:** Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz-Staatsvertrags einbringen
 
-**commitment_text:** Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz‑Staatsvertrags einbringen. 3.8 Zivilgesellschaft fördern: Engagement verdient Rückhalt Eine lebendige Demokratie lebt von weit mehr als Parlamenten oder Regierungen.
+**commitment_text:** Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz-Staatsvertrags einbringen. 3.8 Zivilgesellschaft fördern: Engagement verdient Rückhalt Eine lebendige Demokratie lebt von weit mehr als Parlamenten oder Regierungen.
 
 ##### source_location
 
@@ -19505,9 +19505,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0609-die-foerderung-der-schwangerschaftsberatungsstellen-werden
 
-**title:** Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern – ohne Eigenbeteiligung der …
+**title:** Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern - ohne Eigenbeteiligung der …
 
-**commitment_text:** Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern – ohne Eigenbeteiligung der Träger.
+**commitment_text:** Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern - ohne Eigenbeteiligung der Träger.
 
 ##### source_location
 
@@ -21561,7 +21561,7 @@ _Leere Liste._
 
 **title:** Nachfolge, Gründungen und Digitalisierung fördern Wir unterstützen Unternehmensnachfolgen im Handwerk und Mittelstand …
 
-**commitment_text:** Nachfolge, Gründungen und Digitalisierung fördern Wir unterstützen Unternehmensnachfolgen im Handwerk und Mittelstand – besonders im ländlichen Raum – durch Beratung, Förderung und Genossenschaftsmodelle.
+**commitment_text:** Nachfolge, Gründungen und Digitalisierung fördern Wir unterstützen Unternehmensnachfolgen im Handwerk und Mittelstand - besonders im ländlichen Raum - durch Beratung, Förderung und Genossenschaftsmodelle.
 
 ##### source_location
 
@@ -21624,9 +21624,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0675-wir-wollen-ihre-chancen-verbessern-durch-die-gezielte-foer
 
-**title:** ihre Chancen verbessern – durch die gezielte Förderung selbstständiger Frauen im Handwerk, …
+**title:** ihre Chancen verbessern - durch die gezielte Förderung selbstständiger Frauen im Handwerk, …
 
-**commitment_text:** Wir wollen ihre Chancen verbessern – durch die gezielte Förderung selbstständiger Frauen im Handwerk, Mutterschutz auch für Selbstständige, Unterstützung bei Unternehmensnachfolgen sowie Programme für Einstieg und Wiedereinstieg und verkürzte Ausbildungswege.
+**commitment_text:** Wir wollen ihre Chancen verbessern - durch die gezielte Förderung selbstständiger Frauen im Handwerk, Mutterschutz auch für Selbstständige, Unterstützung bei Unternehmensnachfolgen sowie Programme für Einstieg und Wiedereinstieg und verkürzte Ausbildungswege.
 
 ##### source_location
 
@@ -23616,9 +23616,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-gruene-0737-kommunen-sollen-wirksamere-abgestufte-instrumente-gegen-la
 
-**title:** Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- …
+**title:** Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten - etwa Nutzungs- …
 
-**commitment_text:** Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpﬂichtende Zwischennutzung.
+**commitment_text:** Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten - etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpﬂichtende Zwischennutzung.
 
 ##### source_location
 

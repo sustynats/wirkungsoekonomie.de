@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine Option kann im Basisszenario gut aussehen und unter Stress versagen. Deshalb prüfst du vor jeder Empfehlung: **Welche Risiken sind material? Wie resilient ist die Option? Welche Lock-ins erzeugt sie? Und verändert sie nur Symptome – oder einen strukturellen Engpass?** Eine robuste Option muss nicht in jedem Szenario optimal sein. Sie sollte aber unter plausiblen Belastungen tragfähig bleiben oder rechtzeitig korrigierbar sein.
+Eine Option kann im Basisszenario gut aussehen und unter Stress versagen. Deshalb prüfst du vor jeder Empfehlung: **Welche Risiken sind material? Wie resilient ist die Option? Welche Lock-ins erzeugt sie? Und verändert sie nur Symptome - oder einen strukturellen Engpass?** Eine robuste Option muss nicht in jedem Szenario optimal sein. Sie sollte aber unter plausiblen Belastungen tragfähig bleiben oder rechtzeitig korrigierbar sein.
 
 ## Lernziele
 
@@ -249,4 +249,4 @@ Transformativ wird eine Maßnahme, wenn sie einen Engpass löst, neue Kapazität
 
 Der Merksatz lautet:
 
-**Eine gute Option ist nicht nur heute attraktiv. Sie bleibt unter Stress tragfähig – oder lässt sich korrigieren, bevor der Schaden groß wird.**
+**Eine gute Option ist nicht nur heute attraktiv. Sie bleibt unter Stress tragfähig - oder lässt sich korrigieren, bevor der Schaden groß wird.**

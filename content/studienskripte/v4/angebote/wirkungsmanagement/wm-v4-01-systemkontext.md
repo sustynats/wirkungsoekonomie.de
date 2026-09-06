@@ -76,17 +76,17 @@ WÖk verbindet die Fragen:
 - Welche Zielhierarchie gilt?
 - Welche Auswirkungen auf Lieferfähigkeit, Arbeit, Klima, Ressourcen und Abhängigkeit sind materiell?
 - Welche Daten sind belegt?
-- Welche Alternativen gibt es – Nachverhandlung, Dual Sourcing, Produktdesignänderung?
+- Welche Alternativen gibt es - Nachverhandlung, Dual Sourcing, Produktdesignänderung?
 - Welche Schutzgrenzen gelten?
 - Welcher Reality Check folgt nach sechs oder zwölf Monaten?
 
 ## Typische Fehlinterpretationen
 
-- „ESG ist nur Berichterstattung.“ – Zu pauschal.
-- „Wirkungsmanagement ersetzt Risikomanagement.“ – Nein.
-- „Ein Nachhaltigkeits-KPI ist automatisch Wirkung.“ – Nein.
-- „WÖk braucht für jede Entscheidung einen Gesamtscore.“ – Nein.
-- „Positive Netto-Wirkung lässt sich einfach am höchsten Score ablesen.“ – Nein.
+- „ESG ist nur Berichterstattung.“ - Zu pauschal.
+- „Wirkungsmanagement ersetzt Risikomanagement.“ - Nein.
+- „Ein Nachhaltigkeits-KPI ist automatisch Wirkung.“ - Nein.
+- „WÖk braucht für jede Entscheidung einen Gesamtscore.“ - Nein.
+- „Positive Netto-Wirkung lässt sich einfach am höchsten Score ablesen.“ - Nein.
 
 ## WÖk-Abgrenzung
 

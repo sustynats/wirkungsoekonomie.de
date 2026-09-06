@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Wirkungsetikett kann helfen – aber nur, wenn Menschen es verstehen, vertrauen und **überhaupt eine realistische Alternative haben**. Wer wenig Einkommen, Zeit oder Auswahl hat, kann nicht jede negative Wirkung „wegkaufen“. Deshalb verbindet v4.0 Verbraucherinformation mit Produktstandards, Preis-/Anreizdesign, Zugänglichkeit und sozialer Abfederung. Ziel ist Wahlfähigkeit, nicht moralische Überforderung.
+Ein Wirkungsetikett kann helfen - aber nur, wenn Menschen es verstehen, vertrauen und **überhaupt eine realistische Alternative haben**. Wer wenig Einkommen, Zeit oder Auswahl hat, kann nicht jede negative Wirkung „wegkaufen“. Deshalb verbindet v4.0 Verbraucherinformation mit Produktstandards, Preis-/Anreizdesign, Zugänglichkeit und sozialer Abfederung. Ziel ist Wahlfähigkeit, nicht moralische Überforderung.
 
 ## Lernziele
 
@@ -234,7 +234,7 @@ Definiere:
 
 Ein Wirkungsetikett klingt verführerisch.
 
-Wir zeigen einfach, welches Produkt besser ist – und dann kaufen die Menschen richtig.
+Wir zeigen einfach, welches Produkt besser ist - und dann kaufen die Menschen richtig.
 
 So einfach ist es nicht.
 
@@ -256,4 +256,4 @@ Manchmal braucht es Zugang zur besseren Technologie.
 
 Der Merksatz lautet:
 
-**Gute Verbraucherinformation sagt nicht: Du bist verantwortlich. Sie sorgt dafür, dass Wirkung sichtbar wird – und dass reale bessere Optionen überhaupt wählbar sind.**
+**Gute Verbraucherinformation sagt nicht: Du bist verantwortlich. Sie sorgt dafür, dass Wirkung sichtbar wird - und dass reale bessere Optionen überhaupt wählbar sind.**

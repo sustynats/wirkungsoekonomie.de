@@ -24,7 +24,7 @@ Eine Quelle kann einen Fakt belegen. Sie beweist damit noch nicht, was dieser Fa
 Ein Screenshot kann echt sein und trotzdem Kontext fehlen. Ein amtlicher Datensatz kann korrekt sein und trotzdem keine Ursache erklären. Quellenprüfung und Wirkungsprüfung sind verwandte, aber unterschiedliche Aufgaben.
 
 ## Fachliche Vertiefung
-1. Quellen werden nach Herkunft, Originalität, Aktualität, Methodik, Belegen, Korrekturpraxis und Interessenlage geprüft – nicht nur nach Markenvertrauen.
+1. Quellen werden nach Herkunft, Originalität, Aktualität, Methodik, Belegen, Korrekturpraxis und Interessenlage geprüft - nicht nur nach Markenvertrauen.
 2. Fakt ist ein überprüfbarer Sachverhalt; Observation ist ein dokumentierter Mess-/Beobachtungswert; Inferenz ist eine Schlussfolgerung; Wirkung ist Zustandsänderung; Attribution ordnet Ursache/Beitrag zu.
 3. Reichweite, Likes, Kommentare und geteilte Posts sind Expositions-/Resonanzdaten. Sie können Kontext liefern, aber nicht ohne weiteres demokratische Wirkung beweisen.
 4. Wenn Daten oder Vergleich fehlen, bleibt die Wirkungseinordnung OPEN. Neutral ist ein anderer Befund.
@@ -66,7 +66,7 @@ Prüfe einen viralen Beitrag: Primärquelle, Kontext, bestätigte Fakten, Beobac
 Quellenkriterien, Aussageklassen, Reichweite != Wirkung, OPEN.
 
 ## Zusammenfassung
-Quellenkompetenz ist die Basis – Wirkungsbehauptungen brauchen darüber hinaus eigene Evidenz.
+Quellenkompetenz ist die Basis - Wirkungsbehauptungen brauchen darüber hinaus eigene Evidenz.
 
 ## Sprechertext
 Eine gute Quelle beantwortet: Was ist passiert? Eine Wirkungsanalyse fragt danach weiter: Was hat sich dadurch verändert? Und Attribution fragt noch einmal: Wodurch? Diese drei Fragen sollte man nie in einen Satz zusammenschieben.

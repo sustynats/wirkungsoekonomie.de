@@ -1,4 +1,4 @@
-# Wahlkreis-Wirkungscheck — Screens und Zustände
+# Wahlkreis-Wirkungscheck - Screens und Zustände
 
 Version 1.0 · Stand 2026-08-13 · Lane: Claude (Design/UX) · Umsetzung: Codex
 
@@ -495,7 +495,7 @@ dokumentiert in `DESIGN_SYSTEM.md` 2.6b.
 Verbotsliste über den gerenderten Text geprüft. Treffer ausschliesslich in
 Verneinungen: „Keine Personenbewertung. Keine Wahlempfehlung. Keine Rangliste
 von Abgeordneten oder Parteien."
-Gedankenstriche `–` oder `—`: 0. Ausrufezeichen: 0.
+Gedankenstriche `-` oder `-`: 0. Ausrufezeichen: 0.
 
 ### Tastatur
 

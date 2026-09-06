@@ -126,7 +126,7 @@ Möglicher Wirkpfad:
 
 `Bedrohung -> wahrgenommenes persönliches Risiko -> Rückzug/Selbstzensur -> geringere Perspektivenvielfalt/Kontrolle -> schwächere Öffentlichkeit`.
 
-Das ist ein messbarer Wirkungsraum – etwa über Bedrohungsdaten, Rückzug, Umfragen oder institutionelle Fallstatistiken.
+Das ist ein messbarer Wirkungsraum - etwa über Bedrohungsdaten, Rückzug, Umfragen oder institutionelle Fallstatistiken.
 
 ## 8. Daten- und Beweismanipulation
 
@@ -225,7 +225,7 @@ WÖk übernimmt Konzepte aus Kommunikations-, Sozialpsychologie-, Demokratie- un
 - Reichweite/Kontext,
 - State Variables,
 - Evidenz,
-- 1.–3. Ordnung,
+- 1.-3. Ordnung,
 - Reality Check.
 
 Die Methode bewertet Wirkung, nicht Gesinnung.
@@ -274,7 +274,7 @@ Und genau diese Rückkopplung kann beschädigt werden.
 
 Zum Beispiel durch Desinformation.
 
-Aber schon beim Begriff müssen wir sauber sein: Nicht jede falsche Aussage ist Desinformation. Für Desinformation gehört Täuschungsabsicht dazu – und die müssen wir belegen.
+Aber schon beim Begriff müssen wir sauber sein: Nicht jede falsche Aussage ist Desinformation. Für Desinformation gehört Täuschungsabsicht dazu - und die müssen wir belegen.
 
 Oder nehmen wir Institutionskritik.
 

@@ -1,4 +1,4 @@
-## WÖk FACH BATCH — Berlin BSW P31: demokratischer ÖRR, Rundfunkrat/Publikumsbeteiligung, Unabhängigkeit, Transparenz, Berliner Register, EU-Sanktionen — source-bound review + P30→P31 repair
+## WÖk FACH BATCH - Berlin BSW P31: demokratischer ÖRR, Rundfunkrat/Publikumsbeteiligung, Unabhängigkeit, Transparenz, Berliner Register, EU-Sanktionen - source-bound review + P30→P31 repair
 
 Fresh continuation after P30 `5454047551`. Frozen source artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. Scope is **physical PDF page 31**, except that its first atom is already structurally consumed by the authoritative P30→P31 continuation repair. Generic #313 RNAA is superseded for this exact scope. No DNS mapping, Recommendation, score or programme-wide judgment.
 
@@ -22,7 +22,7 @@ For Hüseyin Doğru, the relevant EU restrictive measures are real and remain an
 `https://eur-lex.europa.eu/eli/dec/2025/2019/oj/eng`
 `https://eur-lex.europa.eu/eli/C/2025/4627/oj/eng`
 
-### 2. P31 U01 — already consumed by P30 cross-page repair
+### 2. P31 U01 - already consumed by P30 cross-page repair
 
 `BE-BSW-P31-U01-A01-56f788d33d29`
 
@@ -31,32 +31,32 @@ This fragment is already paired with P30 `BE-BSW-P30-U11-A04-0fe6b1f98458` by th
 
 Do not count or review it twice.
 
-### 3. U02 — heading
+### 3. U02 - heading
 
 `BE-BSW-P31-U02-966158ffefa9` (`Für einen demokratischen ÖRR`)
 - `terminal_fach_state = NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`
 - `counts_as_effect_object = false`
 
-### 4. U03 — freie Mitarbeit / Beschäftigungsschutz
+### 4. U03 - freie Mitarbeit / Beschäftigungsschutz
 
-`BE-BSW-P31-U03-A01-7b4680d168df` — existence of freelance work for flexibility/personal development
+`BE-BSW-P31-U03-A01-7b4680d168df` - existence of freelance work for flexibility/personal development
 - `terminal_fach_state = NON_EFFECT_WORKFORCE_MODEL_GOAL_AND_RATIONALE_REVIEWED`
 - Reason: desired workforce mix/rationale, not an independently specified change from a current baseline.
 
-`BE-BSW-P31-U03-A02-4d9a1d012250` — `kein Beamtenapparat`
+`BE-BSW-P31-U03-A02-4d9a1d012250` - `kein Beamtenapparat`
 - `terminal_fach_state = NON_EFFECT_NORMATIVE_ORGANISATIONAL_FRAME_REVIEWED`
 
-`BE-BSW-P31-U03-A03-d2b482772d81` — freelance work should be voluntary and not the rule
+`BE-BSW-P31-U03-A03-d2b482772d81` - freelance work should be voluntary and not the rule
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: no definition of `freiwillig`, target share/threshold for `Regelfall`, current freelance-employment baseline, employment/tariff instrument, status-classification rule, transition or effect on staffing flexibility/programme capacity is specified. The worker-protection intent is identifiable, but a net labour/service effect cannot be assigned from the sentence alone.
 - `exact_reason_code = FREELANCE_WORK_VOLUNTARINESS_SHARE_TARIFF_AND_TRANSITION_DESIGN_MISSING`
 
-`BE-BSW-P31-U03-A04-20933360b450` — strengthen rights and political independence of freelancers
+`BE-BSW-P31-U03-A04-20933360b450` - strengthen rights and political independence of freelancers
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: the source identifies neither the rights to be created/changed, legal/tariff/employer instrument, complaint/enforcement path, current protection gap nor an operational definition of `politische Unabhängigkeit` compatible with editorial/broadcasting independence.
 - `exact_reason_code = FREELANCER_RIGHTS_AND_INDEPENDENCE_LEGAL_DELTA_AND_ENFORCEMENT_MISSING`
 
-### 5. U04 — Rundfunkrat / contributor representation; split alternative designs
+### 5. U04 - Rundfunkrat / contributor representation; split alternative designs
 
 `BE-BSW-P31-U04-A01-dd25fd4df8e4`
 - `NON_EFFECT_DEMOCRATIC_GOVERNANCE_GOAL_REVIEWED`
@@ -71,7 +71,7 @@ Do not count or review it twice.
 
 Parent `BE-BSW-P31-U04-A04-07ba3d1c5e77` contains **two mutually alternative governance designs**. Version parent to zero-count and create two deterministic children from exact clauses:
 
-#### A04-C1 — representative lottery for Rundfunkrat members
+#### A04-C1 - representative lottery for Rundfunkrat members
 Exact clause: `die Mitglieder stattdessen repräsentativ gelost ... würden, um die Breite der Bevölkerung abzubilden`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_DESCRIPTIVE_REPRESENTATION_AND_ANTI_CAPTURE_POTENTIAL / SAMPLING_EXPERTISE_CONTINUITY_AND_MEDIA_INDEPENDENCE_DEPENDENT`
@@ -82,7 +82,7 @@ Exact clause: `die Mitglieder stattdessen repräsentativ gelost ... würden, um 
 - Noncompensation: descriptive representativeness cannot compensate for loss of institutional independence, competence, due process or minority/pluralism safeguards.
 - Reality check: sampling/acceptance bias, actual composition, participation/attendance, oversight quality, independence, minority representation and public trust.
 
-#### A04-C2 — election of Rundfunkrat members by contribution payers
+#### A04-C2 - election of Rundfunkrat members by contribution payers
 Exact clause: `... oder von den Beitragszahlern gewählt würden, um die Breite der Bevölkerung abzubilden`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_DIRECT_ELECTORAL_LEGITIMACY_AND_ACCOUNTABILITY_POTENTIAL / TURNOUT_CAMPAIGN_CAPTURE_MAJORITARIANISM_AND_MEDIA_INDEPENDENCE_DEPENDENT`
@@ -93,29 +93,29 @@ Exact clause: `... oder von den Beitragszahlern gewählt würden, um die Breite 
 
 Do not combine C1+C2 as if both are simultaneously implemented.
 
-### 6. U05 — programme complaints / programme initiatives / regular feedback
+### 6. U05 - programme complaints / programme initiatives / regular feedback
 
-`BE-BSW-P31-U05-A01-1d8e392ad8a4` — make programme complaints `more binding`
+`BE-BSW-P31-U05-A01-1d8e392ad8a4` - make programme complaints `more binding`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: a formal §13 complaint process and binding decisions already exist; the programme does not specify the proposed legal delta, remedy/consequence, appeal/review, who would be bound, or safeguards against political/content control. Additionality and net independence/accountability effect are therefore unknown.
 - `exact_reason_code = PROGRAMME_COMPLAINT_BINDINGNESS_LEGAL_DELTA_REMEDY_AND_INDEPENDENCE_GUARD_MISSING`
 
-`BE-BSW-P31-U05-A02-a4a233daf320` — opportunities for programme initiatives from the population
+`BE-BSW-P31-U05-A02-a4a233daf320` - opportunities for programme initiatives from the population
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = CONDITIONAL_POSITIVE_AUDIENCE_AGENDA_INPUT_AND_PARTICIPATION_POTENTIAL / EDITORIAL_INDEPENDENCE_REPRESENTATIVENESS_AND_ABUSE_GUARDS_REQUIRED`
 - `evidence_level = MEDIUM_FOR_INPUT_CHANNEL_TO_AGENDA_INFORMATION_MECHANISM / LOW_FOR_PROGRAMME_AND_DEMOCRATIC_OUTCOME`
 - Mechanism: structured public initiative channel can surface underserved issues/perspectives; editorial decision remains independent.
 - Missing/guards: eligibility/signature threshold, transparency, response duty, anti-spam/harassment, coordinated campaigns, minority protection, no entitlement to editorial adoption.
-- Reality check: diversity of initiatives/participants, response/consideration transparency, incremental topic coverage and abuse/capture indicators — initiative count alone is output.
+- Reality check: diversity of initiatives/participants, response/consideration transparency, incremental topic coverage and abuse/capture indicators - initiative count alone is output.
 
-`BE-BSW-P31-U05-A03-fafa9e91c442` — binding, regular, broad feedback format
+`BE-BSW-P31-U05-A03-fafa9e91c442` - binding, regular, broad feedback format
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = CONDITIONAL_POSITIVE_AUDIENCE_FEEDBACK_RESPONSIVENESS_AND_LEARNING_POTENTIAL / REPRESENTATIVE_DESIGN_AND_EDITORIAL_INDEPENDENCE_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_FEEDBACK_TO_INFORMATION_MECHANISM / LOW_FOR_TRUST_PLURALISM_OUTCOME`
 - Missing: method/sample/channel, meaning of `verbindlich`, publication/response duties, demographic weighting, moderation/abuse and data protection.
 - Reality check: representativeness, substantive response/revision traceability, participation burden, coordinated manipulation and independent editorial quality.
 
-### 7. U06 — revolving door / leadership-government incompatibility
+### 7. U06 - revolving door / leadership-government incompatibility
 
 `BE-BSW-P31-U06-A01-7a96b3420fae`
 - `NON_EFFECT_CONFLICT_OF_INTEREST_AND_STATE_DISTANCE_GOAL_REVIEWED`
@@ -128,7 +128,7 @@ Do not combine C1+C2 as if both are simultaneously implemented.
 `BE-BSW-P31-U06-A03-416f75afc5c0`
 - `NON_EFFECT_RBB_TREATY_IMPLEMENTATION_RESTATEMENT_REVIEWED`
 
-### 8. U07 — transparency over editorial leadership and appointment rationale
+### 8. U07 - transparency over editorial leadership and appointment rationale
 
 `BE-BSW-P31-U07-A01-60c9c636a46e`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -139,22 +139,22 @@ Do not combine C1+C2 as if both are simultaneously implemented.
 - Missing: exact positions, disclosure fields, appointment-reason standard, selection/oversight actor, privacy/confidentiality exceptions and complaint/correction path.
 - Reality check: disclosure completeness/usefulness, privacy incidents, recruitment effects, conflicts-of-interest transparency and evidence of improved governance scrutiny.
 
-### 9. U08 — international-understanding mission clause
+### 9. U08 - international-understanding mission clause
 
 `BE-BSW-P31-U08-A01-2ab516fe392a`
 - `NON_EFFECT_PUBLIC_SERVICE_MISSION_AND_EDITORIAL_GOAL_REVIEWED`
 
-`BE-BSW-P31-U08-A02-cff3e0bfa399` — put `Völkerverständigung / keine Feindbilder` in next rbb treaty preamble
+`BE-BSW-P31-U08-A02-cff3e0bfa399` - put `Völkerverständigung / keine Feindbilder` in next rbb treaty preamble
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: while a treaty preamble is a definable legal-text change, the source provides no operational definition of `Feindbild`, legal effect, adjudication/complaint rule or safeguard against content steering/chilling effects. Net contribution to peace/pluralism versus editorial freedom cannot be determined from the slogan.
 - `exact_reason_code = EDITORIAL_MISSION_CLAUSE_STANDARD_EFFECT_AND_INDEPENDENCE_GUARD_MISSING`
 
-### 10. U09 — heading
+### 10. U09 - heading
 
 `BE-BSW-P31-U09-63302dbbf663` (`Meinungsfreiheit schützen`)
 - `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`
 
-### 11. U10 — abolish reporting portals for non-criminal expressions / Berliner Register
+### 11. U10 - abolish reporting portals for non-criminal expressions / Berliner Register
 
 `BE-BSW-P31-U10-A01-b3c1879f0c75`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
@@ -165,14 +165,14 @@ Do not combine C1+C2 as if both are simultaneously implemented.
 - `NON_EFFECT_STIGMATISATION_CAUSAL_SOURCE_CLAIM_REVIEWED`
 - Programme assertion; not adopted as an empirical finding.
 
-### 12. U11 — reject alleged constitutional-protection ideological vetting
+### 12. U11 - reject alleged constitutional-protection ideological vetting
 
 `BE-BSW-P31-U11-A01-b6cdb149e2f1`
 - `terminal_fach_state = NON_EFFECT_OPPOSITION_TO_UNSPECIFIED_OTHER_PARTY_PROPOSAL_REVIEWED`
 - `counts_as_effect_object = false`
 - Exact reason: the sentence rejects a characterised proposal attributed to another party but does not identify a current enacted Berlin screening process or specify a replacement/change to existing public-service suitability/security rules. The phrase `Gesinnungsprüfung` and attribution remain programme framing, not WÖk fact.
 
-### 13. U12 — demand withdrawal of EU sanctions against Hüseyin Doğru
+### 13. U12 - demand withdrawal of EU sanctions against Hüseyin Doğru
 
 `BE-BSW-P31-U12-A01-277f343c1077`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
@@ -181,7 +181,7 @@ Do not combine C1+C2 as if both are simultaneously implemented.
 
 ### 14. P31 terminality
 
-After lossless materialisation of the P30→P31 initial continuation plus sections 3–13:
+After lossless materialisation of the P30→P31 initial continuation plus sections 3-13:
 
 `BE_BSW_P31_FACH_COMPLETE = PASS_SOURCE_BOUND`
 

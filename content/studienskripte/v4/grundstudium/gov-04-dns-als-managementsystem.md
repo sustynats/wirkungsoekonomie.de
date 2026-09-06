@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die Deutsche Nachhaltigkeitsstrategie ist mehr als ein Zielpapier. Sie verbindet politische Leitprinzipien, Ziele und Indikatoren mit Zuständigkeiten, ressortübergreifender Steuerung, Monitoring und regelmäßiger Weiterentwicklung. Die DNS 2025 bündelt den besonderen Handlungsbedarf in sechs Transformationsbereichen und arbeitet mit fünf Hebeln. Für die Wirkungsökonomie ist sie deshalb eine wichtige staatliche Ziel-, Kontext- und Monitoringarchitektur – aber kein automatischer Kausalitätsbeweis für einzelne Maßnahmen.
+Die Deutsche Nachhaltigkeitsstrategie ist mehr als ein Zielpapier. Sie verbindet politische Leitprinzipien, Ziele und Indikatoren mit Zuständigkeiten, ressortübergreifender Steuerung, Monitoring und regelmäßiger Weiterentwicklung. Die DNS 2025 bündelt den besonderen Handlungsbedarf in sechs Transformationsbereichen und arbeitet mit fünf Hebeln. Für die Wirkungsökonomie ist sie deshalb eine wichtige staatliche Ziel-, Kontext- und Monitoringarchitektur - aber kein automatischer Kausalitätsbeweis für einzelne Maßnahmen.
 
 ## Lernziele
 
@@ -221,16 +221,16 @@ WÖk ergänzt:
 
 ### Primär-/amtliche Quellen
 
-1. **Bundesregierung – Steuerung der Deutschen Nachhaltigkeitsstrategie**  
+1. **Bundesregierung - Steuerung der Deutschen Nachhaltigkeitsstrategie**  
    https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776
 
-2. **Bundesregierung – Deutsche Nachhaltigkeitsstrategie 2025**  
+2. **Bundesregierung - Deutsche Nachhaltigkeitsstrategie 2025**  
    https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/deutsche-nachhaltigkeitsstrategie-2025-2332540
 
-3. **Statistisches Bundesamt – Nachhaltigkeitsindikatoren**  
+3. **Statistisches Bundesamt - Nachhaltigkeitsindikatoren**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html
 
-4. **Statistisches Bundesamt – Deutsche Nachhaltigkeitsstrategie / Monitoring**  
+4. **Statistisches Bundesamt - Deutsche Nachhaltigkeitsstrategie / Monitoring**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/_inhalt.html
 
 ### Quellenfunktion

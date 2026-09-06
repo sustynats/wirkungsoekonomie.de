@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V1  
 **Modul/Abschnitt:** WM  
 **Titel:** Was ist Wirkungsmanagement?  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v1-was-ist-wirkungsmanagement.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v1.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v1.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Was ist Wirkungsmanagement?** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,30 +42,29 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** Grundlagenlehrgang abgeschlossen (GRUND-V1…V7)
 **Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§6.2 Präzisierungsbegriffe) · `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` (Unternehmen, Wirkungskompetenz) · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Baut auf den Grundlagen auf – Wirkung, Bewertungsrahmen und Kennzahlen werden vorausgesetzt.
 
 ## 1. Einstieg / Wirkungsfrage
 
-Deine Organisation *hat* Wirkung – ob geplant oder nicht. Die Frage ist: **Wird diese Wirkung bewusst gestaltet, oder passiert sie einfach?** Wirkungsmanagement ist der Unterschied zwischen „wir meinen es gut" und „wir steuern es gezielt".
+Deine Organisation *hat* Wirkung - ob geplant oder nicht. Die Frage ist: **Wird diese Wirkung bewusst gestaltet, oder passiert sie einfach?** Wirkungsmanagement ist der Unterschied zwischen „wir meinen es gut" und „wir steuern es gezielt".
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Wirkungsmanagement – Wirkung planen, steuern, verbessern, verankern
+- **Titel:** Wirkungsmanagement - Wirkung planen, steuern, verbessern, verankern
 - **Länge:** ~14 Min
-- **Kernaussage in einem Satz:** Wirkungsmanagement macht positive Netto-Wirkung zur bewusst gesteuerten Aufgabe von Organisationen – über Ziele, Strukturen, Kultur und Rückkopplung.
+- **Kernaussage in einem Satz:** Wirkungsmanagement macht positive Netto-Wirkung zur bewusst gesteuerten Aufgabe von Organisationen - über Ziele, Strukturen, Kultur und Rückkopplung.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Von der Absicht zur Steuerung.** Viele Organisationen haben gute Absichten, aber keine Steuerung. Wirkungsmanagement schließt diese Lücke: Es plant, steuert, verbessert und verankert Wirkung in der Organisation.
+**Abschnitt A - Von der Absicht zur Steuerung.** Viele Organisationen haben gute Absichten, aber keine Steuerung. Wirkungsmanagement schließt diese Lücke: Es plant, steuert, verbessert und verankert Wirkung in der Organisation.
 
-**Abschnitt B – Die vier Aufgaben.** *Planen* (Wirkungsziele, Wirkungslogik), *Steuern* (Priorisierung, Entscheidungen), *Verbessern* (Rückkopplung, Lernen), *Verankern* (Strategie, Kultur, Führung). Diese vier ziehen sich durch den ganzen Lehrgang.
+**Abschnitt B - Die vier Aufgaben.** *Planen* (Wirkungsziele, Wirkungslogik), *Steuern* (Priorisierung, Entscheidungen), *Verbessern* (Rückkopplung, Lernen), *Verankern* (Strategie, Kultur, Führung). Diese vier ziehen sich durch den ganzen Lehrgang.
 
-**Abschnitt C – Abgrenzung.** Wirkungsmanagement ist nicht dasselbe wie Nachhaltigkeits- oder ESG-Management. ESG/CSRD sind stark auf Berichtspflichten ausgerichtet. Wirkungsmanagement fragt zuerst nach der tatsächlichen Netto-Wirkung und nach Steuerung – Reporting ist Folge, nicht Ausgangspunkt.
+**Abschnitt C - Abgrenzung.** Wirkungsmanagement ist nicht dasselbe wie Nachhaltigkeits- oder ESG-Management. ESG/CSRD sind stark auf Berichtspflichten ausgerichtet. Wirkungsmanagement fragt zuerst nach der tatsächlichen Netto-Wirkung und nach Steuerung - Reporting ist Folge, nicht Ausgangspunkt.
 
-**Abschnitt D – Zielgröße bleibt konstant.** Auch im Management gilt: Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie – nicht „irgendeine" Wirkung und nicht Reichweite.
+**Abschnitt D - Zielgröße bleibt konstant.** Auch im Management gilt: Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie - nicht „irgendeine" Wirkung und nicht Reichweite.
 
-**Abschnitt E – Der rote Faden.** Dieser Lehrgang führt von Wirkungsempfängern und Wirkpfaden (V2) über Ziele (V3), Priorisierung (V4), Analyse (V5), Risiken (V6), Kultur (V7) und Strategie (V8) bis Kommunikation (V9) und Umsetzung (V10).
+**Abschnitt E - Der rote Faden.** Dieser Lehrgang führt von Wirkungsempfängern und Wirkpfaden (V2) über Ziele (V3), Priorisierung (V4), Analyse (V5), Risiken (V6), Kultur (V7) und Strategie (V8) bis Kommunikation (V9) und Umsetzung (V10).
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -78,14 +74,14 @@ Deine Organisation *hat* Wirkung – ob geplant oder nicht. Die Frage ist: **Wir
 
 | Aufgabe | Frage | Behandelt in |
 |---|---|---|
-| Planen | Welche positive Netto-Wirkung wollen wir – und über welchen Wirkpfad? | V2–V3 |
-| Steuern | Welche Wirkungsfelder sind kritisch, was hat Vorrang? | V4–V5 |
+| Planen | Welche positive Netto-Wirkung wollen wir - und über welchen Wirkpfad? | V2-V3 |
+| Steuern | Welche Wirkungsfelder sind kritisch, was hat Vorrang? | V4-V5 |
 | Verbessern | Wie erkennen und behandeln wir Nebenwirkungen und Zielkonflikte? | V6 |
-| Verankern | Wie werden Wirkung, Führung, Kultur und Strategie zusammengeführt? | V7–V10 |
+| Verankern | Wie werden Wirkung, Führung, Kultur und Strategie zusammengeführt? | V7-V10 |
 
 **Abgrenzung zu Nachhaltigkeits-/ESG-Management.** ESG, CSRD und GRI sind wichtige Anschlussrahmen (sie liefern Daten und Berichtspflichten). Wirkungsmanagement geht aber von der **Wirkung** aus, nicht vom Bericht: Es fragt, welche tatsächliche Veränderung von Zuständen entsteht, ordnet sie am Referenzrahmen ein (Grundlagen V3) und richtet Entscheidungen an positiver Netto-Wirkung aus. So wird verhindert, dass Reporting zum Selbstzweck wird (Reporting ≠ Rückkopplung, Grundlagen V5).
 
-**Warum das eine Managementaufgabe ist.** Wirkung entsteht nicht in einer Stabsabteilung, sondern in Entscheidungen: Einkauf, Produkt, Investition, Personal, Kommunikation. Deshalb braucht Wirkung **Wirkungskompetenz** in Führung und Kultur – nicht nur ein Reporting-Team. Das ist der Kern von Wirkungsmanagement.
+**Warum das eine Managementaufgabe ist.** Wirkung entsteht nicht in einer Stabsabteilung, sondern in Entscheidungen: Einkauf, Produkt, Investition, Personal, Kommunikation. Deshalb braucht Wirkung **Wirkungskompetenz** in Führung und Kultur - nicht nur ein Reporting-Team. Das ist der Kern von Wirkungsmanagement.
 
 ## 5. Glossar der Kernbegriffe
 
@@ -133,7 +129,6 @@ Beschreibe für deine Organisation in je einem Satz, wie die vier Kernaufgaben h
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -299,13 +294,12 @@ Die folgende Runde verdichtet WM-V1 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V1. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §6.2
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Unternehmen, Wirkungskompetenz
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §6.2
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Unternehmen, Wirkungskompetenz
 - Glossar: `begriffe/wirkungsmanagement`, `begriffe/wirkungskompetenz`
 
 ## 4. Wirkungsökonomische Vertiefung
@@ -397,7 +391,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -749,7 +742,7 @@ Zitation
 
 Zitierfähige Kurzform
 
-Weber, Natalie / Wirkungsökonomie (2026): Wirkungscontrolling – Detailkonzept-Dossier. Planung, Messung, Bewertung, Steuerung und Rückkopplung von Wirkung für Mensch, Planet und Demokratie. Version 1.0, 01. Juni 2026.
+Weber, Natalie / Wirkungsökonomie (2026): Wirkungscontrolling - Detailkonzept-Dossier. Planung, Messung, Bewertung, Steuerung und Rückkopplung von Wirkung für Mensch, Planet und Demokratie. Version 1.0, 01. Juni 2026.
 
 Online: wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/
 
@@ -803,8 +796,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v1-was-ist-wirkungsmanagement.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

@@ -1,4 +1,4 @@
-## WÖk FACH SOURCE-INVENTORY SUPPLEMENT — Berlin BSW P64/P65 two omitted structural headings terminal
+## WÖk FACH SOURCE-INVENTORY SUPPLEMENT - Berlin BSW P64/P65 two omitted structural headings terminal
 
 Fresh controller reconciliation after merged PR #334 (`main=eae257d29311c1b104ec0a77c2a071af01bd7a87`) found that the original P64/P65 Fach comments described an incomplete page inventory: CodeX correctly kept two frozen source units fail-closed because they were not explicitly named in the authoritative handoffs. This supplement closes only those two exact source records. It does **not** reopen any P64/P65 effect object or alter any existing Fach decision.
 
@@ -30,6 +30,6 @@ These two exact role decisions are now authoritative WÖk Fach and supersede the
 
 ### Technical closure instruction
 
-CodeX may now consume P64 `5458967059`, P65 `5458972339`, P66/full-programme `5458979583` **plus this supplement** losslessly on a fresh successor of current main. Preserve all P1–P63 stock and all existing P64–P66 decisions. Recompute the BSW residual SET-WISE. If no other source-parity gap exists, the P64–P66 envelope should close to true zero and only then may `BSW programme-terminal = PASS` and Berlin advance `3/12 -> 4/12`.
+CodeX may now consume P64 `5458967059`, P65 `5458972339`, P66/full-programme `5458979583` **plus this supplement** losslessly on a fresh successor of current main. Preserve all P1-P63 stock and all existing P64-P66 decisions. Recompute the BSW residual SET-WISE. If no other source-parity gap exists, the P64-P66 envelope should close to true zero and only then may `BSW programme-terminal = PASS` and Berlin advance `3/12 -> 4/12`.
 
 No DNS mapping, Recommendation, score, direction/evidence synthesis or party-wide judgement. GitHub-only. `NO_NEW_VERCEL_BUILD=true`; `PARLIAMENT_RELEASE_APPROVAL=NOT_GRANTED`; no Vercel action.

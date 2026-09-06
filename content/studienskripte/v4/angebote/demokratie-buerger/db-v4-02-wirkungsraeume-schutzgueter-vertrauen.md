@@ -8,7 +8,7 @@
 **legacy_source:** `content/lehrgaenge/demokratie-buerger-v02.md`  
 **reviewed_at:** 2026-08-21
 
-## Vertrauen als Variable – nicht als Gehorsamsziel
+## Vertrauen als Variable - nicht als Gehorsamsziel
 
 ## Lernziele
 - demokratische Schutzgüter benennen
@@ -18,7 +18,7 @@
 - soziale Verteilung demokratischer Teilhabe berücksichtigen
 
 ## 20-Sekunden-Erklärung
-Demokratie braucht nicht möglichst viel Vertrauen in alles. Sie braucht begründbares Vertrauen dort, wo Institutionen verlässlich arbeiten – und die Freiheit, zu kritisieren, zu prüfen und zu widersprechen.
+Demokratie braucht nicht möglichst viel Vertrauen in alles. Sie braucht begründbares Vertrauen dort, wo Institutionen verlässlich arbeiten - und die Freiheit, zu kritisieren, zu prüfen und zu widersprechen.
 
 ## Einfache Einführung
 Vertrauen kann Kooperation erleichtern. Aber blindes Vertrauen wäre kein demokratisches Ideal. Gute Institutionen sollen prüfbar sein. Bürger:innen dürfen skeptisch sein, Quellen verlangen, widersprechen und Rechtsschutz nutzen.
@@ -65,7 +65,7 @@ Formuliere zwei Fälle: einen, in dem Kritik Korrekturfähigkeit stärkt, und ei
 Schutzgüter, Vertrauen, Kritik, Verteilung und Attribution.
 
 ## Zusammenfassung
-Vertrauen ist wichtig, aber Demokratie lebt von prüfbarer Legitimität und Korrektur – nicht von Loyalität um jeden Preis.
+Vertrauen ist wichtig, aber Demokratie lebt von prüfbarer Legitimität und Korrektur - nicht von Loyalität um jeden Preis.
 
 ## Sprechertext
 Wenn eine Institution Vertrauen verliert, ist die erste Frage nicht: Wer ist schuld? Sondern: Was ist passiert? Was wurde beobachtet? Welche Leistung, welcher Skandal, welche Kommunikation oder welcher Kontext könnte beigetragen haben? Genau diese Trennung schützt vor einfachen Erzählungen.

@@ -37,18 +37,18 @@ Sondern:
 
 > Unter den angenommenen Nutzungs- und Strommixbedingungen ist die Lebenszyklus-Klimawirkung gegenüber der Referenz voraussichtlich positiv; die Richtung ist durch vergleichende LCA-Evidenz mittel bis hoch gestützt, die Höhe bleibt wegen Nutzungs- und Herstellungsannahmen unsicher.
 
-Der Satz ist länger – aber jetzt wissen wir, **was** bewertet wurde.
+Der Satz ist länger - aber jetzt wissen wir, **was** bewertet wurde.
 
 ## 2. Die Sechs-Fragen-Regel
 
 Zu jedem materiellen Feld muss ein:e Wirkungsökonom:in sechs Fragen beantworten können:
 
-1. **Was verändert sich?** – State Variable.
-2. **Bei wem/wo/wann?** – Wirkungsempfänger, Raum, Zeit.
-3. **Gegen was?** – Baseline/Benchmark/Gegenfaktum.
-4. **Warum?** – Wirkmechanismus.
-5. **Wie sicher?** – Evidenz/Unsicherheit.
-6. **Welche Grenze/offene Frage?** – Boundary/Open Point.
+1. **Was verändert sich?** - State Variable.
+2. **Bei wem/wo/wann?** - Wirkungsempfänger, Raum, Zeit.
+3. **Gegen was?** - Baseline/Benchmark/Gegenfaktum.
+4. **Warum?** - Wirkmechanismus.
+5. **Wie sicher?** - Evidenz/Unsicherheit.
+6. **Welche Grenze/offene Frage?** - Boundary/Open Point.
 
 Wenn eine dieser Fragen nicht beantwortbar ist, muss das sichtbar werden.
 
@@ -104,7 +104,7 @@ Fragen:
 - Was passiert bei anderer Verteilung?
 - Was passiert, wenn ein unsicherer Mechanismus nicht eintritt?
 
-Eine robuste Entscheidung sollte nicht an einer einzigen fragilen Annahme hängen – oder diese Abhängigkeit muss explizit als Bedingung formuliert werden.
+Eine robuste Entscheidung sollte nicht an einer einzigen fragilen Annahme hängen - oder diese Abhängigkeit muss explizit als Bedingung formuliert werden.
 
 ## 7. Boundary schlägt Durchschnitt
 
@@ -206,7 +206,7 @@ Falsch. Materielle Unsicherheit ist entscheidungsrelevant.
 
 ## 13. WÖk-Abgrenzung
 
-WÖk ist dann besser, wenn sie **mehr prüfbare Information mit weniger Scheinsicherheit** liefert – nicht wenn sie möglichst viele Scores produziert.
+WÖk ist dann besser, wenn sie **mehr prüfbare Information mit weniger Scheinsicherheit** liefert - nicht wenn sie möglichst viele Scores produziert.
 
 Darum sind zulässige Endzustände auch:
 

@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die 17 SDGs decken sehr viel ab – aber die Wirkungsökonomie will bestimmte demokratische, mediale, digitale und epistemische Voraussetzungen noch expliziter beobachten. Dafür gibt es **SDG+**. Ganz wichtig: SDG+ ist **kein offizielles UN-Ziel und kein deutsches Staatsziel**. Es ist eine WÖk-eigene Ergänzung, die unter anderem Rechtsstaatlichkeit, Medien-/Informationsqualität, Diskursstabilität, digitale Selbstbestimmung und gesellschaftliche Korrekturfähigkeit sichtbarer machen soll.
+Die 17 SDGs decken sehr viel ab - aber die Wirkungsökonomie will bestimmte demokratische, mediale, digitale und epistemische Voraussetzungen noch expliziter beobachten. Dafür gibt es **SDG+**. Ganz wichtig: SDG+ ist **kein offizielles UN-Ziel und kein deutsches Staatsziel**. Es ist eine WÖk-eigene Ergänzung, die unter anderem Rechtsstaatlichkeit, Medien-/Informationsqualität, Diskursstabilität, digitale Selbstbestimmung und gesellschaftliche Korrekturfähigkeit sichtbarer machen soll.
 
 ## Lernziele
 
@@ -44,7 +44,7 @@ Beispiele:
 
 Diese Themen sind teilweise bereits in SDGs, Menschenrechten und Verfassungsrecht enthalten. SDG+ behauptet nicht, sie seien dort „vergessen“. WÖk macht sie nur **operativ expliziter**.
 
-## 2. Was SDG+ ist – und was nicht
+## 2. Was SDG+ ist - und was nicht
 
 ### SDG+ ist
 
@@ -148,7 +148,7 @@ Deshalb gilt:
 - Richtung und Evidenz trennen,
 - Unsicherheit sichtbar machen.
 
-SDG+ ist ein Schutz gegen blinde Flecken – kein Lizenzschein für moralische Etikettierung.
+SDG+ ist ein Schutz gegen blinde Flecken - kein Lizenzschein für moralische Etikettierung.
 
 ## 7. Beispiel: Plattformdesign
 

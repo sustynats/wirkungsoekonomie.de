@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v38-preis-als-wirkungssignal.md curriculum=4.0 sanitized=true -->
-# V38 · Preis als Wirkungssignal – wann Preissignale wirken und wann nicht
+# V38 · Preis als Wirkungssignal - wann Preissignale wirken und wann nicht
 
 **lecture_id:** `WOEK-G-BASE-038`  
 **display_code:** `V38`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Preis kann Verhalten verändern – aber nicht immer. Wenn Strom teurer wird, spart ein Haushalt vielleicht Energie. Wenn er aber in einer schlecht gedämmten Mietwohnung ohne Alternative lebt, steigt vor allem die Belastung. **Preissignal ist Wirkmechanismus, kein Automatismus.** WÖk prüft deshalb: Wer sieht den Preis? Wer kann reagieren? Welche Alternative existiert? Wie schnell? Und welche Verteilungseffekte entstehen?
+Ein Preis kann Verhalten verändern - aber nicht immer. Wenn Strom teurer wird, spart ein Haushalt vielleicht Energie. Wenn er aber in einer schlecht gedämmten Mietwohnung ohne Alternative lebt, steigt vor allem die Belastung. **Preissignal ist Wirkmechanismus, kein Automatismus.** WÖk prüft deshalb: Wer sieht den Preis? Wer kann reagieren? Welche Alternative existiert? Wie schnell? Und welche Verteilungseffekte entstehen?
 
 ## Lernziele
 
@@ -61,7 +61,7 @@ Langfristig vielleicht durch:
 - Wohn-/Arbeitsort,
 - Lieferantenwechsel.
 
-Preissignal kann deshalb langfristig stärker wirken – wenn Investitions-/Alternativoptionen verfügbar sind.
+Preissignal kann deshalb langfristig stärker wirken - wenn Investitions-/Alternativoptionen verfügbar sind.
 
 ## 4. Salienz
 
@@ -243,4 +243,4 @@ Ein gefährliches Produkt wird nicht dadurch okay, dass es teurer wird.
 
 Der Merksatz lautet:
 
-**Preis kann Wirkung steuern – aber nur dort, wo Menschen und Märkte tatsächlich reagieren können.**
+**Preis kann Wirkung steuern - aber nur dort, wo Menschen und Märkte tatsächlich reagieren können.**

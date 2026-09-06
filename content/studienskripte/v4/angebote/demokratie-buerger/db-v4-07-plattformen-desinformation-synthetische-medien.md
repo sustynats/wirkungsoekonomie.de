@@ -69,7 +69,7 @@ Plattformlogik, DSA, Misinformation/Desinformation, Bots/Deepfakes, Attribution.
 Digitale Risiken werden ernst genommen, ohne Algorithmen, Bots oder falsche Inhalte monokausal zu erklären.
 
 ## Sprechertext
-Wenn etwas viral geht, wissen wir zuerst nur: Viele Menschen konnten es sehen. Das ist wichtig – aber es ist noch nicht die Wirkung. Und wenn etwas falsch ist, wissen wir noch nicht automatisch, wer es absichtlich verbreitet hat. Genau diese Zwischenräume sind der Unterschied zwischen Analyse und Verdacht.
+Wenn etwas viral geht, wissen wir zuerst nur: Viele Menschen konnten es sehen. Das ist wichtig - aber es ist noch nicht die Wirkung. Und wenn etwas falsch ist, wissen wir noch nicht automatisch, wer es absichtlich verbreitet hat. Genau diese Zwischenräume sind der Unterschied zwischen Analyse und Verdacht.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Vollständige Neufassung nach Legacy-Reaudit B05; deterministische Psychologie-, Intent-, Reichweiten- und Wirkungsclaims wurden durch evidenzgebundene Potenzial-/Observation-/Attributionslogik ersetzt.

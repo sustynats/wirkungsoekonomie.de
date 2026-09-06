@@ -18,7 +18,7 @@
 - Wirkungspotenziale und Gegenbelege formulieren
 
 ## 20-Sekunden-Erklärung
-Ein Narrativ verbindet Ereignisse zu einer Geschichte. Ein Frame lenkt Aufmerksamkeit auf bestimmte Aspekte. Beides kann Interpretation beeinflussen – aber weder beweist es Lüge noch Absicht noch tatsächliche gesellschaftliche Wirkung.
+Ein Narrativ verbindet Ereignisse zu einer Geschichte. Ein Frame lenkt Aufmerksamkeit auf bestimmte Aspekte. Beides kann Interpretation beeinflussen - aber weder beweist es Lüge noch Absicht noch tatsächliche gesellschaftliche Wirkung.
 
 ## Einfache Einführung
 Menschen verstehen komplexe Welt oft über Geschichten und Deutungsrahmen. Das ist nicht per se manipulativ. Auch seriöser Journalismus und politische Bildung nutzen Frames, weil jede Darstellung auswählt. Entscheidend ist, ob Fakten, Auslassungen und Wirkungsrisiken prüfbar bleiben.
@@ -68,7 +68,7 @@ Narrativ/Frame/Fakt, keine Intent-Inferenz, Wirkungspotenzial vs. Wirkung.
 Narrative werden analysiert, nicht etikettiert: Struktur, Kontext, Mechanismus und Evidenz bleiben sichtbar.
 
 ## Sprechertext
-Ein Frame ist wie ein Bildausschnitt. Er zeigt etwas – und lässt anderes weg. Das ist zunächst normal. Die wichtige Frage ist: Was sehen wir, was fehlt, ist es faktisch korrekt und welche möglichen Folgen hat diese Auswahl? Das ist Analyse statt Gedankenlesen.
+Ein Frame ist wie ein Bildausschnitt. Er zeigt etwas - und lässt anderes weg. Das ist zunächst normal. Die wichtige Frage ist: Was sehen wir, was fehlt, ist es faktisch korrekt und welche möglichen Folgen hat diese Auswahl? Das ist Analyse statt Gedankenlesen.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Vollständige Neufassung nach Legacy-Reaudit B05; deterministische Psychologie-, Intent-, Reichweiten- und Wirkungsclaims wurden durch evidenzgebundene Potenzial-/Observation-/Attributionslogik ersetzt.

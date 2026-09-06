@@ -47,7 +47,7 @@ Mara muss nicht entscheiden, ob der Vater „recht hat“ oder ob er strategisch
 
 Damit wird der Konflikt nicht gelöst. Aber die Sendung verschiebt sich von einer vermuteten Absicht zu einer prüfbaren Aufgabe. Genau diese Wiederherstellung von Unterscheidbarkeit ist der tragende Alltagsfall dieser Lektion.
 
-## Was ein Frame leistet – und wo seine Grenze liegt
+## Was ein Frame leistet - und wo seine Grenze liegt
 
 Ein Frame bringt Informationen in eine Ordnung. Das ist unvermeidbar: Eine Redaktion kann nicht jedes Detail gleichzeitig in die erste Überschrift schreiben. Auch eine Moderation entscheidet, welche Frage zuerst kommt. Die Frage ist daher nicht, ob gerahmt wird. Die Frage ist, ob die gewählte Rahmung die Sache zugänglicher und korrigierbarer macht oder ob sie eine Geschichte erzeugt, in der Gegenbelege nur noch als weiterer Beweis für die eigene Behauptung gelten.
 
@@ -173,7 +173,7 @@ Ein Vergleich macht den Unterschied sichtbar:
 | Schwacher Teaser | Warum er schadet | Prüfbarer Teaser |
 | --- | --- | --- |
 | „Stadt erklärt Eltern zu Störern“ | Er übernimmt eine unbelegte Rollenverteilung und belohnt die Zuspitzung. | „Schulstraße: Wie bleiben Ausnahmen für Familien erreichbar?“ |
-| „Chaos um die Sperre“ | Er behauptet eine Gesamtlage, ohne den Konflikt zu erklären. | „Was der Verkehrsversuch regelt – und was noch offen ist“ |
+| „Chaos um die Sperre“ | Er behauptet eine Gesamtlage, ohne den Konflikt zu erklären. | „Was der Verkehrsversuch regelt - und was noch offen ist“ |
 | „Eltern revoltieren“ | Er macht heterogene Anliegen zu einer Front. | „Eltern fordern klare Regeln für Barrierefreiheit und Lieferungen“ |
 
 Der prüfbare Teaser ist nicht unpolitisch. Er setzt einen Rahmen zugunsten von Zugänglichkeit, Informationen und Verantwortlichkeit. Er bleibt aber angreifbar und korrigierbar: Wenn die Regeln klar sind oder eine andere Belastung entscheidend wird, muss sich die Überschrift ändern können.

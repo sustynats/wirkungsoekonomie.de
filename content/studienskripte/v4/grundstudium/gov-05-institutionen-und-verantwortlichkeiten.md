@@ -31,7 +31,7 @@ Eine Strategie kann gute Ziele haben und trotzdem wirkungslos bleiben, wenn niem
 
 Darum gehört zur Wirkungsanalyse auch eine institutionelle Frage:
 
-> Wer hat welchen Hebel – und wer kann welche Entscheidung tatsächlich verändern?
+> Wer hat welchen Hebel - und wer kann welche Entscheidung tatsächlich verändern?
 
 Für die Deutsche Nachhaltigkeitsstrategie ist die Antwort bewusst verteilt.
 
@@ -74,7 +74,7 @@ In jedem Ressort gibt es außerdem Nachhaltigkeitskoordinatorinnen und -koordina
 
 ## 4. Ressorts: fachliche Verantwortung bleibt dezentral
 
-Nachhaltigkeit ist ressortübergreifend – aber Politik wird fachlich in Ressorts vorbereitet und umgesetzt.
+Nachhaltigkeit ist ressortübergreifend - aber Politik wird fachlich in Ressorts vorbereitet und umgesetzt.
 
 Das erzeugt eine typische Governance-Spannung:
 
@@ -220,22 +220,22 @@ Damit lässt sich vermeiden, Empfehlungen an Institutionen zu richten, die den e
 
 ### Amtliche / Primärquellen
 
-1. **Bundesregierung – Steuerung der Deutschen Nachhaltigkeitsstrategie**  
+1. **Bundesregierung - Steuerung der Deutschen Nachhaltigkeitsstrategie**  
    https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776
 
-2. **Bundesregierung – Staatssekretärsausschuss für nachhaltige Entwicklung und Zukunftsfragen, 28.07.2026**  
+2. **Bundesregierung - Staatssekretärsausschuss für nachhaltige Entwicklung und Zukunftsfragen, 28.07.2026**  
    https://www.bundesregierung.de/breg-de/aktuelles/staatssekretaersausschuss-426412
 
-3. **Bundesregierung – Beschlüsse / Arbeit des Staatssekretärsausschusses**  
+3. **Bundesregierung - Beschlüsse / Arbeit des Staatssekretärsausschusses**  
    https://www.bundesregierung.de/breg-de/schwerpunkte/sts-ausschuss-nachhaltigkeit-418846
 
-4. **Rat für Nachhaltige Entwicklung – Über den Rat**  
+4. **Rat für Nachhaltige Entwicklung - Über den Rat**  
    https://www.nachhaltigkeitsrat.de/ueber-den-rat/
 
-5. **Statistisches Bundesamt – DNS-Monitoring**  
+5. **Statistisches Bundesamt - DNS-Monitoring**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/_inhalt.html
 
-6. **Deutscher Bundestag – PBnEZ, 21. Wahlperiode**  
+6. **Deutscher Bundestag - PBnEZ, 21. Wahlperiode**  
    https://www.bundestag.de/ausschuesse/weitere_gremien/parlamentarischer-beirat-nachhaltige-entwicklung-zukunftsfragen
 
 ### Quellenfunktion
@@ -282,7 +282,7 @@ Das Kanzleramt baut also nicht selbst Windräder, macht keine Krankenhausplanung
 
 Es koordiniert die Strategie.
 
-Für die ressortübergreifende Steuerung gibt es 2026 den Staatssekretärsausschuss für nachhaltige Entwicklung und Zukunftsfragen – kurz StA NEZ. Dort sind alle Bundesministerien vertreten. Das ist das zentrale hochrangige Regierungsgremium für die Nachhaltigkeitsstrategie.
+Für die ressortübergreifende Steuerung gibt es 2026 den Staatssekretärsausschuss für nachhaltige Entwicklung und Zukunftsfragen - kurz StA NEZ. Dort sind alle Bundesministerien vertreten. Das ist das zentrale hochrangige Regierungsgremium für die Nachhaltigkeitsstrategie.
 
 Dann gibt es den Rat für Nachhaltige Entwicklung. Der ist etwas ganz anderes. Er berät die Bundesregierung unabhängig, setzt Impulse und führt eigene Projekte durch. Er ist weder Ministerium noch Bundestagsausschuss.
 

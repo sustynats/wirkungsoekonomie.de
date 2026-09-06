@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V2 – Report-Spezifikation
+# Wirkungscheck Bundestag V2 - Report-Spezifikation
 
 **Status:** Entwurf zur fachlichen und UX-seitigen Abnahme.  
 **Ausgangspunkt:** Der Report erscheint unmittelbar nach maximal sieben Fragen.
@@ -30,7 +30,7 @@ nachvollziehbaren parlamentarischen Prüfauftrag.
 **Hinweis:** Dies ist ein Prüfauftrag aus Ihren Angaben. Er beschreibt eine
 plausible Annahme, keine Vorhersage und keine Bewertung Ihrer Person.
 
-## Abschnitt 1 – Ihr Ziel
+## Abschnitt 1 - Ihr Ziel
 
 **Überschrift:** Was soll sich verändern?
 
@@ -45,7 +45,7 @@ finden.“
 **Beispiel Gesundheit und Pflege:** „Menschen sollen rechtzeitig die
 gesundheitliche oder pflegerische Hilfe erhalten, die sie benötigen.“
 
-## Abschnitt 2 – möglicher Bundeshebel
+## Abschnitt 2 - möglicher Bundeshebel
 
 **Überschrift:** Wo zuerst bundespolitisch prüfen?
 
@@ -68,7 +68,7 @@ gesundheitliche oder pflegerische Hilfe erhalten, die sie benötigen.“
 Der Report sagt nie: „Sie haben {Antwort} ausgewählt.“ Er erklärt die
 fachliche Ableitung in einer verständlichen Konsequenzform.
 
-## Abschnitt 3 – mögliche Wirkungskette
+## Abschnitt 3 - mögliche Wirkungskette
 
 **Überschrift:** Über welchen Weg könnte das wirken?
 
@@ -104,18 +104,18 @@ vortäuschen, die der Check nicht besitzt.
 5. Nicht übersehen werden darf, ob Haushalte mit niedrigem Einkommen oder
    bestehende Mieter:innen dadurch schlechter gestellt werden.
 
-## Abschnitt 4 – Drei Dinge beobachten
+## Abschnitt 4 - Drei Dinge beobachten
 
 **Überschrift:** Woran Erfolg sichtbar wäre
 
 Der Abschnitt zeigt genau drei Beobachtungspunkte, priorisiert aus den
 gewählten Erfolgssignalen und der roten Linie. Jeder Punkt hat einen Status:
 
-- **Geeignete Daten erforderlich** – Die Messfrage ist klar, aber der
+- **Geeignete Daten erforderlich** - Die Messfrage ist klar, aber der
   aktuelle Datensatz reicht nicht aus.
-- **Datenlücke** – Für diese Frage liegt im aktuellen Wahlkreisdatensatz keine
+- **Datenlücke** - Für diese Frage liegt im aktuellen Wahlkreisdatensatz keine
   ausreichend passende Kennzahl vor.
-- **Amtlicher Indikator vorhanden** – Nur wenn Quelle, Einheit, Bezugszeit,
+- **Amtlicher Indikator vorhanden** - Nur wenn Quelle, Einheit, Bezugszeit,
   räumliche Ebene und fachliche Passung im Daten-Audit freigegeben sind.
 
 **Kartenstruktur:**
@@ -128,14 +128,14 @@ gewählten Erfolgssignalen und der roten Linie. Jeder Punkt hat einen Status:
 **Beispiel Wohnen:**
 
 1. „Ob die gesamte Wohnkostenbelastung der adressierten Haushalte sinkt.“
-   – Geeignete Daten erforderlich.
+   - Geeignete Daten erforderlich.
 2. „Ob geförderter Wohnraum tatsächlich die vorgesehene Zielgruppe erreicht.“
-   – Ergänzungsdaten aus Fördervollzug und Haushaltsbezug erforderlich.
+   - Ergänzungsdaten aus Fördervollzug und Haushaltsbezug erforderlich.
 3. „Ob Verdrängung aus bestehenden Quartieren zunimmt.“
-   – Datenlücke im aktuellen Wahlkreisdatensatz; Rückmeldung aus Beratung,
+   - Datenlücke im aktuellen Wahlkreisdatensatz; Rückmeldung aus Beratung,
    Kommunen und Forschung ergänzen.
 
-## Abschnitt 5 – regionale Rückkopplung
+## Abschnitt 5 - regionale Rückkopplung
 
 **Überschrift mit Wahlkreis:** Wie sich die Bundeswirkung in {Wahlkreis} prüfen
 ließe
@@ -153,7 +153,7 @@ bundespolitische Beurteilung wäre besonders hilfreich: {regional_feedback}.
 
 Wenn kein zulässiger Wert vorliegt, wird keine Zahl und keine Kurve gerendert.
 
-## Abschnitt 6 – parlamentarische Prüffrage
+## Abschnitt 6 - parlamentarische Prüffrage
 
 **Überschrift:** Prüffrage für die parlamentarische Arbeit
 
@@ -173,7 +173,7 @@ oder personenbezogenen Angaben bestehen.
 > verhältnismäßig, rechtssicher und ohne unnötige Mehrbelastung erhoben oder
 > zusammengeführt werden?
 
-## Abschnitt 7 – Risiko und Nachsteuerung
+## Abschnitt 7 - Risiko und Nachsteuerung
 
 **Überschrift:** Was nicht übersehen werden darf
 
@@ -208,7 +208,7 @@ Der Drawer enthält fünf klar getrennte Teile:
    Zustandsmerkmal?
 4. **Verwendete Daten**  
    Quelle, Bezugszeit, Einheit, räumliche Ebene, Transformation und
-   Nutzungsgrenze – nur bei tatsächlich verwendeten Daten.
+   Nutzungsgrenze - nur bei tatsächlich verwendeten Daten.
 5. **Evidenzgrenze**  
    Was aus dem Report nicht folgt: keine Kausalitätsbehauptung, kein Vergleich,
    keine Bewertung und keine Vorhersage.

@@ -48,7 +48,7 @@ Darum wäre die Aussage falsch, Demokratie oder Rechtsstaatlichkeit kämen in de
 
 ## 3. WÖk-SDG+
 
-SDG+ ist **keine offizielle UN-Kategorie**. Die WÖk nutzt den Begriff, um bestimmte Voraussetzungen demokratischer Korrekturfähigkeit – etwa Medienqualität, Diskursfähigkeit, institutionelles Vertrauen und digitale Selbstbestimmung – expliziter zu operationalisieren.
+SDG+ ist **keine offizielle UN-Kategorie**. Die WÖk nutzt den Begriff, um bestimmte Voraussetzungen demokratischer Korrekturfähigkeit - etwa Medienqualität, Diskursfähigkeit, institutionelles Vertrauen und digitale Selbstbestimmung - expliziter zu operationalisieren.
 
 Das ist eine WÖk-Erweiterung, keine Behauptung, die UN habe diese Themen übersehen.
 
@@ -78,11 +78,11 @@ Ein Verkehrsprojekt wird mit SDG 3, SDG 11 und einem DNS-Ziel verknüpft. Das ze
 
 ## Typische Fehlinterpretationen
 
-- „SDGs enthalten keine Demokratie.“ – Falsch; insbesondere SDG 16 ist relevant.
-- „SDG+ ist eine UN-Erweiterung.“ – Falsch; WÖk-eigene Kategorie.
-- „DNS-Indikator = Wirkung.“ – Falsch; Indikator ist Beobachtungsgröße.
-- „SDG-Bezug beweist positive Wirkung.“ – Falsch.
-- „Art. 20a gehört in SDG+.“ – Nein, eigene Rechts-/Staatszielebene.
+- „SDGs enthalten keine Demokratie.“ - Falsch; insbesondere SDG 16 ist relevant.
+- „SDG+ ist eine UN-Erweiterung.“ - Falsch; WÖk-eigene Kategorie.
+- „DNS-Indikator = Wirkung.“ - Falsch; Indikator ist Beobachtungsgröße.
+- „SDG-Bezug beweist positive Wirkung.“ - Falsch.
+- „Art. 20a gehört in SDG+.“ - Nein, eigene Rechts-/Staatszielebene.
 
 ## Was bestehende Systeme bereits können
 

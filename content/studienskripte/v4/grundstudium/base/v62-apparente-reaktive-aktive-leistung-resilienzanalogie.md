@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v62-apparente-reaktive-aktive-leistung-resilienzanalogie.md curriculum=4.0 sanitized=true -->
-# V62 · Apparente, reaktive und aktive Leistung – eine Resilienz-Analogie mit klaren Grenzen
+# V62 · Apparente, reaktive und aktive Leistung - eine Resilienz-Analogie mit klaren Grenzen
 
 **lecture_id:** `WOEK-G-BASE-062`  
 **display_code:** `V62`  
@@ -218,4 +218,4 @@ Danach brauchen wir echte Größen: Bearbeitungszeit, Fehlerquote, Gesundheitsou
 
 Der Merksatz lautet:
 
-**Eine gute Analogie öffnet die Augen. Eine schlechte Analogie ersetzt die Analyse. WÖk nutzt Physik als Denkbild – nicht als Beweis.**
+**Eine gute Analogie öffnet die Augen. Eine schlechte Analogie ersetzt die Analyse. WÖk nutzt Physik als Denkbild - nicht als Beweis.**

@@ -85,7 +85,7 @@ Die Arbeitslogik des T-SROI beginnt mit dem Wirkungspfad. Danach werden relevant
 
 Die monetäre Rechenformel lautet:
 
-T-SROI = Σₜ[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ) / (1 + r)ᵗ] ÷ Σₜ[(Iₜ + Kₜ) / (1 + rₖ)ᵗ].
+T-SROI = Σₜ[((Bdirekt,t + Btransformativ,t) · aₜ · (1 - dₜ) · (1 - vₜ) - Sₜ) / (1 + r)ᵗ] ÷ Σₜ[(Iₜ + Kₜ) / (1 + rₖ)ᵗ].
 
 Bdirekt und Btransformativ sind jährliche Nutzenströme in Euro derselben Preisbasis; S sind konservativ angesetzte jährliche Schäden innerhalb derselben Systemgrenze. a ist Attribution, d Counterfactual/Deadweight, v Verdrängung des beanspruchten Nutzens, I Investition und K inkrementelle Kosten. r und rₖ sind die offengelegten Diskontsätze. Der Nutzen wird vor der Abzinsung kausal reduziert; Schäden werden im Grundmodell nicht pauschal mit demselben Faktor verkleinert. Eine niedrigere Schaden-Zurechnung verlangt eine eigene belegte Gegenfaktik. Die Formel ist nur dann als positive Kennzahl ausweisbar, wenn das Schutz-Gate offen ist: keine rote Linie, kein negatives Kernprofil, ausreichende Datenqualität, dokumentierte Systemgrenze und Zurechnung sowie eine positive konservative Untergrenze des Nettonutzens.
 
@@ -155,7 +155,7 @@ Whitepaper T-SROI: Grundlage für Transformational Social Return on Investment u
 
 OECD: Measure, Manage and Maximise Your Impact. Einordnung von Attribution, Counterfactual und Wirkungsmanagement. https://www.oecd.org/en/publications/measure-manage-and-maximise-your-impact_2238c1f1-en/full-report/component-8.html
 
-Social Value International: Principle 5 – Do not overclaim. Schutzregel gegen Überzuschreibung von Wirkung. https://www.socialvalueint.org/principle-5-do-not-overclaim
+Social Value International: Principle 5 - Do not overclaim. Schutzregel gegen Überzuschreibung von Wirkung. https://www.socialvalueint.org/principle-5-do-not-overclaim
 
 Europäische Kommission - CSRD: Nachhaltigkeitsberichterstattung und ESRS-Anschluss. https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en
 

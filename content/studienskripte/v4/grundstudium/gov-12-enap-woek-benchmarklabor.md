@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die faire Frage ist nicht „eNAP oder WÖk – wer gewinnt?“. Sie lautet: **Was dokumentiert die staatliche Folgen- und Nachhaltigkeitsprüfung bereits, und was ergänzt die WÖk?** Fünf reale Bundesvorhaben zeigen häufig Konvergenz bei der Grundrichtung. Der WÖk-Zusatz liegt vor allem in expliziten Kausalpfaden, Bedingungen, Gegenfaktum, Verteilung, Delivery, Rebound, Lock-in und späterem Reality Check. Ein Benchmark darf ausdrücklich zum Ergebnis kommen: **Die staatliche Prüfung war an dieser Stelle bereits gut.**
+Die faire Frage ist nicht „eNAP oder WÖk - wer gewinnt?“. Sie lautet: **Was dokumentiert die staatliche Folgen- und Nachhaltigkeitsprüfung bereits, und was ergänzt die WÖk?** Fünf reale Bundesvorhaben zeigen häufig Konvergenz bei der Grundrichtung. Der WÖk-Zusatz liegt vor allem in expliziten Kausalpfaden, Bedingungen, Gegenfaktum, Verteilung, Delivery, Rebound, Lock-in und späterem Reality Check. Ein Benchmark darf ausdrücklich zum Ergebnis kommen: **Die staatliche Prüfung war an dieser Stelle bereits gut.**
 
 ## Lernziele
 
@@ -86,7 +86,7 @@ source_refs
 
 **Harte Regel:** `public_enap_summary_available = false` bedeutet nur **keine öffentliche Zusammenfassung nachgewiesen**. Es bedeutet weder `NOT_ASSESSED` noch automatisch `eNAP not used`.
 
-## 3. Was verglichen wird – und was nicht
+## 3. Was verglichen wird - und was nicht
 
 Die staatliche Einschätzung bleibt ein eigenes Quellobjekt. WÖk kopiert sie nicht in das eigene Urteil.
 
@@ -110,12 +110,12 @@ Bei derselben abgegrenzten Frage ergeben sich unterschiedliche Ergebnisse. Dann 
 3. Separate öffentliche eNAP-Dokumentation suchen.
 4. Dokumentationsstatus und eNAP-Nutzungsstatus getrennt codieren.
 5. Staatliche Problem-, Ziel- und Wirkungsaussagen extrahieren.
-6. DNS-/SDG-Bezüge als Ziel-/Referenzbezug behandeln – nicht als Kausalitätsbeweis.
+6. DNS-/SDG-Bezüge als Ziel-/Referenzbezug behandeln - nicht als Kausalitätsbeweis.
 7. WÖk unabhängig durchführen:
-   `Problem Review -> Goal Review -> A→M→ΔZ→R -> 1.–3. Ordnung/Kaskaden -> Verteilung/Resilienz -> Gegenfaktum/Attribution -> Omissions/Delivery/Policy Coherence -> Optionsvergleich -> Reality Check`.
+   `Problem Review -> Goal Review -> A→M→ΔZ→R -> 1.-3. Ordnung/Kaskaden -> Verteilung/Resilienz -> Gegenfaktum/Attribution -> Omissions/Delivery/Policy Coherence -> Optionsvergleich -> Reality Check`.
 8. Konvergenz, Zusatzbefund und Widerspruch getrennt dokumentieren.
 
-## 5. Fall 1 – StromVKG, BT-Drs 21/6279
+## 5. Fall 1 - StromVKG, BT-Drs 21/6279
 
 **Öffentliche staatliche Dokumentation:** Regierungsentwurf/Begründung mit Nachhaltigkeitsdarstellung ist öffentlich.  
 **Öffentliche eNAP-Zusammenfassung:** sofern nicht separat als objektbezogene Primärquelle nachgewiesen, `NOT_PUBLICLY_ESTABLISHED`.  
@@ -138,7 +138,7 @@ Ein geeigneter Kapazitätsmechanismus kann Investitionsanreize für gesicherte L
 
 **Lernpunkt:** Versorgungssicherheitslogik kann konvergieren; Klimawirkung bleibt konditional und falsifizierbar.
 
-## 6. Fall 2 – IVSG, BT-Drs 21/2999
+## 6. Fall 2 - IVSG, BT-Drs 21/2999
 
 **Öffentliche staatliche Dokumentation:** öffentliches Regelungsvorhaben mit Nachhaltigkeitsdarstellung.  
 **Öffentliche eNAP-Zusammenfassung:** nur `true`, wenn separat objektbezogen belegt; sonst `NOT_PUBLICLY_ESTABLISHED`.  
@@ -159,7 +159,7 @@ Bessere Daten können Verkehrssteuerung und multimodale Dienste verbessern.
 
 **Lernpunkt:** staatlicher Wirkpfad kann bereits kausal formuliert sein; WÖk zerlegt Bedingungen und Zwischenschritte.
 
-## 7. Fall 3 – BRUBEG, BT-Drs 21/3058
+## 7. Fall 3 - BRUBEG, BT-Drs 21/3058
 
 **Öffentliche staatliche Dokumentation:** öffentlich; europarechtlicher Umsetzungskontext und Nachhaltigkeitsdarstellung sind Teil der Primärunterlagen.  
 **Öffentliche eNAP-Zusammenfassung:** separat prüfen; ohne Beleg `NOT_PUBLICLY_ESTABLISHED`.  
@@ -174,7 +174,7 @@ Besseres Risikomanagement und Aufsicht können die Resilienz des Finanzsystems s
 ### WÖk-Zusatz
 Lange Ketten wie `Bankenresilienz -> Finanzierung -> Wachstum -> Armutsminderung` werden nicht als ein gesicherter Effekt behandelt. Zwischenmechanismen, Alternativerklärungen und Attribution werden getrennt. Begrenzter nationaler Spielraum wird als `COMPETENCE/OPTION_SPACE` geführt.
 
-## 8. Fall 4 – Pflege, BT-Drs 21/1511
+## 8. Fall 4 - Pflege, BT-Drs 21/1511
 
 **Öffentliche staatliche Dokumentation:** öffentlich.  
 **Öffentliche eNAP-Zusammenfassung:** separat prüfen; ohne Beleg `NOT_PUBLICLY_ESTABLISHED`.  
@@ -196,7 +196,7 @@ Hohe plausible Konvergenz bei besserer Kompetenznutzung, Prävention und weniger
 
 **Lernpunkt:** Zusatznutzen kann in Systemtiefe und Monitoring liegen, auch wenn die staatliche Richtung überzeugt.
 
-## 9. Fall 5 – UWG, BT-Drs 21/1855
+## 9. Fall 5 - UWG, BT-Drs 21/1855
 
 **Öffentliche staatliche Dokumentation:** öffentlich.  
 **Öffentliche eNAP-Zusammenfassung:** separat prüfen; ohne Beleg `NOT_PUBLICLY_ESTABLISHED`.  
@@ -243,7 +243,7 @@ WÖk ist am stärksten, wenn sie nicht behauptet, Folgenprüfung erfunden zu hab
 - Problem Review
 - Goal Review
 - explizite Mechanismen
-- Wirkungen 1.–3. Ordnung/Kaskaden
+- Wirkungen 1.-3. Ordnung/Kaskaden
 - Verteilung/Resilienz
 - Gegenfaktum/Attribution
 - Omissions/Delivery/Policy Coherence
@@ -268,26 +268,26 @@ Wenn ein staatliches Verfahren diese Funktionen im Einzelfall bereits gut erfül
 
 ## 14. Typische Fehlinterpretationen
 
-**„Kein öffentliches eNAP-PDF = keine Nachhaltigkeitsprüfung.“** – Falsch.
+**„Kein öffentliches eNAP-PDF = keine Nachhaltigkeitsprüfung.“** - Falsch.
 
-**„GFA und eNAP sind dasselbe.“** – Falsch. eNAP ist ein Werkzeug innerhalb der Nachhaltigkeitsprüfung/GFA-Architektur.
+**„GFA und eNAP sind dasselbe.“** - Falsch. eNAP ist ein Werkzeug innerhalb der Nachhaltigkeitsprüfung/GFA-Architektur.
 
-**„Wenn DNS/SDGs passen, ist die Wirkung bewiesen.“** – Falsch. `Target Alignment != Causality`.
+**„Wenn DNS/SDGs passen, ist die Wirkung bewiesen.“** - Falsch. `Target Alignment != Causality`.
 
-**„WÖk muss im Benchmark anders urteilen.“** – Falsch. Konvergenz ist ein valides Ergebnis.
+**„WÖk muss im Benchmark anders urteilen.“** - Falsch. Konvergenz ist ein valides Ergebnis.
 
-**„Nur der Nachhaltigkeitsabschnitt ist staatliche Folgenprüfung.“** – Falsch. Die GFA umfasst weitere Folgen- und Prüffelder.
+**„Nur der Nachhaltigkeitsabschnitt ist staatliche Folgenprüfung.“** - Falsch. Die GFA umfasst weitere Folgen- und Prüffelder.
 
 ## 15. Primärquellen / Fallquellen
 
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
-- BMJV – Nachhaltige Gesetzgebung: https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- BMJV - Nachhaltige Gesetzgebung: https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html
 - E-Gesetzgebung/eGFA/eNAP: https://plattform.egesetzgebung.bund.de/cockpit/#/egfa
-- Bundestag Drucksache 21/6279 – StromVKG
-- Bundestag Drucksache 21/2999 – IVSG
-- Bundestag Drucksache 21/3058 – BRUBEG
-- Bundestag Drucksache 21/1511 – Pflege
-- Bundestag Drucksache 21/1855 – UWG
+- Bundestag Drucksache 21/6279 - StromVKG
+- Bundestag Drucksache 21/2999 - IVSG
+- Bundestag Drucksache 21/3058 - BRUBEG
+- Bundestag Drucksache 21/1511 - Pflege
+- Bundestag Drucksache 21/1855 - UWG
 
 **Freshness/Provenienz:** Für jede Fallmatrix müssen die konkrete Drucksache, der öffentliche Dokumentationsstatus und ein objektbezogener eNAP-Nutzungsbeleg separat versioniert werden. Keine Verfahrensvermutung darf als Objektbeweis erscheinen.
 
@@ -312,6 +312,6 @@ Ein fairer Vergleich beginnt mit einer überraschend einfachen Regel: Wir dürfe
 
 Erst danach beginnt der interessante Teil. Was erkennt die staatliche Prüfung bereits? Welche Wirkungsrichtung, Zielkonflikte oder Langfristfolgen nennt sie? Und was ergänzt die WÖk durch Problemprüfung, Zielprüfung, explizite Mechanismen, Gegenfaktum, Verteilung, Delivery oder Reality Check?
 
-Bei unseren fünf Bundesfällen sehen wir etwas Wichtiges: Oft ist die Grundrichtung gar nicht strittig. Bei Pflege, intelligenter Mobilität oder Verbraucherschutz gibt es viel Konvergenz. Das ist kein Problem für die WÖk – im Gegenteil. Es zwingt uns, ihren Zusatznutzen präzise zu benennen, statt den Staat künstlich kleinzureden.
+Bei unseren fünf Bundesfällen sehen wir etwas Wichtiges: Oft ist die Grundrichtung gar nicht strittig. Bei Pflege, intelligenter Mobilität oder Verbraucherschutz gibt es viel Konvergenz. Das ist kein Problem für die WÖk - im Gegenteil. Es zwingt uns, ihren Zusatznutzen präzise zu benennen, statt den Staat künstlich kleinzureden.
 
 Der Benchmark ist deshalb nicht nur eine Prüfung staatlicher Verfahren. Er ist eine Selbstprüfung der Wirkungsökonomie. Und genau so sollte Wissenschaft funktionieren.

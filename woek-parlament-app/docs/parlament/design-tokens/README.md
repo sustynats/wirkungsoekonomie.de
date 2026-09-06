@@ -1,4 +1,4 @@
-# Design-Tokens – Wirkungsportal Parlament
+# Design-Tokens - Wirkungsportal Parlament
 
 **Version:** 1.0.0  
 **Stand:** 15. August 2026  

@@ -91,4 +91,4 @@ Version 4.0 · Stand 21.08.2026. Legacy-Strohmann „Rahmen liefern vor allem Da
 
 ## Sprechertext
 
-Stell dir eine Werkzeugkiste vor. Ein Zollstock ist hervorragend zum Messen. Aber niemand würde mit ihm eine Schraube eindrehen. Genau so sollten wir Datenquellen behandeln. ESRS, GRI, Taxonomie, NACE, Produktpass, Statistik und amtliche Prüfungen sind starke Werkzeuge – nur eben für unterschiedliche Aufgaben. Wirkungscontrolling wird professionell, wenn wir diese Rollen nicht vermischen.
+Stell dir eine Werkzeugkiste vor. Ein Zollstock ist hervorragend zum Messen. Aber niemand würde mit ihm eine Schraube eindrehen. Genau so sollten wir Datenquellen behandeln. ESRS, GRI, Taxonomie, NACE, Produktpass, Statistik und amtliche Prüfungen sind starke Werkzeuge - nur eben für unterschiedliche Aufgaben. Wirkungscontrolling wird professionell, wenn wir diese Rollen nicht vermischen.

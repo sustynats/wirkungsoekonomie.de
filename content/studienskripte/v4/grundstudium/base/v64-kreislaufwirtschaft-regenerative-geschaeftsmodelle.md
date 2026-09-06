@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v64-kreislaufwirtschaft-regenerative-geschaeftsmodelle.md curriculum=4.0 sanitized=true -->
-# V64 · Kreislaufwirtschaft und regenerative Geschäftsmodelle – vom Materialkreislauf zur Systemwirkung
+# V64 · Kreislaufwirtschaft und regenerative Geschäftsmodelle - vom Materialkreislauf zur Systemwirkung
 
 **lecture_id:** `WOEK-G-BASE-064`  
 **display_code:** `V64`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Kreislaufwirtschaft heißt nicht: „Am Ende wird recycelt.“ Die stärkeren Hebel liegen oft vorher: **weniger Materialbedarf, längere Nutzung, Reparatur, Wiederverwendung, Remanufacturing und erst dann hochwertiges Recycling**. Ein regeneratives Geschäftsmodell geht noch weiter und fragt, ob der Betrieb ökologische und soziale Systeme aktiv stabilisiert oder verbessert. WÖk prüft diese Behauptungen über Lebenszyklus, Rebound, Verteilung und tatsächliche Zustandsänderung – nicht über ein Kreislauf-Label.
+Kreislaufwirtschaft heißt nicht: „Am Ende wird recycelt.“ Die stärkeren Hebel liegen oft vorher: **weniger Materialbedarf, längere Nutzung, Reparatur, Wiederverwendung, Remanufacturing und erst dann hochwertiges Recycling**. Ein regeneratives Geschäftsmodell geht noch weiter und fragt, ob der Betrieb ökologische und soziale Systeme aktiv stabilisiert oder verbessert. WÖk prüft diese Behauptungen über Lebenszyklus, Rebound, Verteilung und tatsächliche Zustandsänderung - nicht über ein Kreislauf-Label.
 
 ## Lernziele
 
@@ -40,7 +40,7 @@ Aber ein geschlossener Materialstrom kann trotzdem:
 
 ## 2. Hierarchie der Hebel
 
-Typisch wirksam – je Produkt kontextspezifisch:
+Typisch wirksam - je Produkt kontextspezifisch:
 
 - Bedarf/Material vermeiden,
 - Produkt langlebig gestalten,
@@ -73,7 +73,7 @@ Wenn Produkte billiger/leichter verfügbar werden, kann Gesamtverbrauch steigen.
 
 Beispiel Sharing:
 
-Mehr Nutzung vorhandener Fahrzeuge kann Fahrzeugbestand senken – oder zusätzliche Fahrten erzeugen.
+Mehr Nutzung vorhandener Fahrzeuge kann Fahrzeugbestand senken - oder zusätzliche Fahrten erzeugen.
 
 Darum zählt Outcome, nicht Geschäftsmodell-Label.
 
@@ -90,7 +90,7 @@ Mögliche Modelle:
 
 Wirkung entsteht nur, wenn Anreize tatsächlich auf Langlebigkeit/Ressourcenschonung ausgerichtet sind.
 
-## 6. Regenerativ – hoher Anspruch
+## 6. Regenerativ - hoher Anspruch
 
 „Regenerativ“ sollte nicht einfach „weniger schlecht“ bedeuten.
 
@@ -212,9 +212,9 @@ Viel stärker kann sein, weniger Material zu brauchen, Produkte länger zu nutze
 
 Und selbst dann müssen wir aufpassen.
 
-Ein Sharing-Angebot kann Autos sparen – oder zusätzliche Fahrten erzeugen.
+Ein Sharing-Angebot kann Autos sparen - oder zusätzliche Fahrten erzeugen.
 
-Ein Leasingmodell kann Langlebigkeit fördern – oder häufigeren Austausch.
+Ein Leasingmodell kann Langlebigkeit fördern - oder häufigeren Austausch.
 
 Darum fragen wir nach der realen Zustandsänderung.
 

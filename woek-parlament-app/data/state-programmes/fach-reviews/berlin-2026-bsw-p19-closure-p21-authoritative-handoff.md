@@ -1,4 +1,4 @@
-# Berlin BSW Fach handoff — P19 child closure and physical PDF pages 20–21
+# Berlin BSW Fach handoff - P19 child closure and physical PDF pages 20-21
 
 This file is a repository snapshot of the four authoritative issue #240 Fach comments consumed by the deterministic residual materialization. Source artifact: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`.
 
@@ -10,15 +10,15 @@ No comment body below is inferred, paraphrased, or edited.
 
 Source: https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451527622
 
-## WÖk FACH BATCH — Berlin BSW P19 compound-child closure (8/8 source-bound terminal)
+## WÖk FACH BATCH - Berlin BSW P19 compound-child closure (8/8 source-bound terminal)
 
 Authoritative basis: frozen artefact `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`; deterministic child IDs/texts materialized from the two compound parents in #240 comment `5451044705`. This batch supplies the previously withheld object-level Fach only. No DNS mapping, Recommendation, score or programme-wide judgment.
 
-### A. Rücknahme von Kürzungen — six distinct named funding programmes
+### A. Rücknahme von Kürzungen - six distinct named funding programmes
 
 All six are concrete fiscal-policy levers. Missing exact euro amounts/baselines do **not** make the objects non-assessable; those remain `RESOURCE_FINANCING` / Additionality / Reality-Check gaps.
 
-1. `BE-BSW-P19-U01-A02-C01-992a21f6297f` — restore funding cuts: **Projektfonds Kulturelle Bildung**.
+1. `BE-BSW-P19-U01-A02-C01-992a21f6297f` - restore funding cuts: **Projektfonds Kulturelle Bildung**.
    - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
    - `impact_direction = POSITIVE_CULTURAL_EDUCATION_AND_PARTICIPATION_POTENTIAL / ADDITIONALITY_AND_TARGETING_DEPENDENT`
    - `evidence_level = MEDIUM_FOR_FUNDING_TO_CAPACITY_MECHANISM / OUTCOME_PENDING`
@@ -27,7 +27,7 @@ All six are concrete fiscal-policy levers. Missing exact euro amounts/baselines 
    - Distribution: children/young people, schools/youth/cultural providers, district and socioeconomic access.
    - Reality check: additional projects/capacity **plus** participation/reach/continuity/quality; funding volume alone is input.
 
-2. `BE-BSW-P19-U01-A02-C02-31ad0fd27481` — restore funding cuts: **Jugendkulturinitiative**.
+2. `BE-BSW-P19-U01-A02-C02-31ad0fd27481` - restore funding cuts: **Jugendkulturinitiative**.
    - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
    - `impact_direction = POSITIVE_YOUTH_CULTURAL_PARTICIPATION_POTENTIAL / ACCESS_AND_DELIVERY_DEPENDENT`
    - `evidence_level = MEDIUM_LOW / PROGRAMME_OUTCOME_PENDING`
@@ -36,7 +36,7 @@ All six are concrete fiscal-policy levers. Missing exact euro amounts/baselines 
    - Distribution: age, district, income, disability/accessibility, migration/language where relevant.
    - Reality check: reach of underrepresented youth, repeat participation, created/maintained offers and participant outcomes rather than grant count alone.
 
-3. `BE-BSW-P19-U01-A02-C03-54c77aef7b53` — restore funding cuts: **Fonds für Ausstellungsvergütung Bildender Künstler**.
+3. `BE-BSW-P19-U01-A02-C03-54c77aef7b53` - restore funding cuts: **Fonds für Ausstellungsvergütung Bildender Künstler**.
    - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
    - `impact_direction = POSITIVE_FAIR_REMUNERATION_AND_ARTISTIC_WORK_CAPACITY_POTENTIAL / ELIGIBILITY_AND_ADDITIONALITY_DEPENDENT`
    - `evidence_level = MEDIUM_FOR_DIRECT_INCOME_MECHANISM / LONGER_TERM_OUTCOME_PENDING`
@@ -45,7 +45,7 @@ All six are concrete fiscal-policy levers. Missing exact euro amounts/baselines 
    - Distribution: lower-income/emerging artists, art forms/venues, gender and other structural access dimensions where data exist.
    - Reality check: paid exhibitions/rates, artist income share and access distribution; number of funded events alone insufficient.
 
-4. `BE-BSW-P19-U01-A02-C04-616958496a0d` — restore funding cuts: **Berliner Projektfonds Urbane Praxis**.
+4. `BE-BSW-P19-U01-A02-C04-616958496a0d` - restore funding cuts: **Berliner Projektfonds Urbane Praxis**.
    - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
    - `impact_direction = POSITIVE_PUBLIC_SPACE_AND_CO_PRODUCTION_POTENTIAL / LOCAL_EXTERNALITY_AND_SELECTION_DEPENDENT`
    - `evidence_level = MEDIUM_LOW / PLACE_SPECIFIC_OUTCOMES_REQUIRED`
@@ -54,7 +54,7 @@ All six are concrete fiscal-policy levers. Missing exact euro amounts/baselines 
    - Distribution: neighbourhoods, low-access groups, public-space users/non-users and local organisations.
    - Reality check: access/use diversity, continuity, local participation and documented externalities; project/funding count is not outcome.
 
-5. `BE-BSW-P19-U01-A02-C05-7088dc49b909` — restore funding cuts: **Arbeitsraumprogramm für Künstlerateliers**.
+5. `BE-BSW-P19-U01-A02-C05-7088dc49b909` - restore funding cuts: **Arbeitsraumprogramm für Künstlerateliers**.
    - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
    - `impact_direction = POSITIVE_AFFORDABLE_ARTISTIC_WORKSPACE_AND_PRODUCTION_CAPACITY_POTENTIAL / SPACE_ALLOCATION_AND_OPPORTUNITY_COST_DEPENDENT`
    - `evidence_level = MEDIUM_FOR_SPACE_COST_MECHANISM / OUTCOME_PENDING`
@@ -63,7 +63,7 @@ All six are concrete fiscal-policy levers. Missing exact euro amounts/baselines 
    - Distribution: income/career stage, artistic discipline, district, accessibility.
    - Reality check: affordable workspace-years, retention/continuity, applicant/access distribution and real production use; square metres/funding alone are inputs.
 
-6. `BE-BSW-P19-U01-A02-C06-6796c889eec8` — restore funding cuts: **Draußen & Umsonst / Initiative Draußenstadt**.
+6. `BE-BSW-P19-U01-A02-C06-6796c889eec8` - restore funding cuts: **Draußen & Umsonst / Initiative Draußenstadt**.
    - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
    - `impact_direction = POSITIVE_LOW_BARRIER_CULTURAL_ACCESS_POTENTIAL / PUBLIC_SPACE_AND_EVENT_EXTERNALITY_DEPENDENT`
    - `evidence_level = MEDIUM_LOW / PARTICIPATION_OUTCOME_PENDING`
@@ -76,7 +76,7 @@ For all six funding-restoration children: `competence = LAND_BERLIN_FUNDING_BUDG
 
 ### B. Cultural infrastructure
 
-7. `BE-BSW-P19-U02-A01-C01-389fbaff19ac` — preserve and renovate **Berliner Stadtbibliothek + Amerika-Gedenkbibliothek**.
+7. `BE-BSW-P19-U02-A01-C01-389fbaff19ac` - preserve and renovate **Berliner Stadtbibliothek + Amerika-Gedenkbibliothek**.
    - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
    - `impact_direction = POSITIVE_PUBLIC_CULTURAL_LEARNING_AND_ACCESS_INFRASTRUCTURE_POTENTIAL / CAPITAL_DELIVERY_DEPENDENT`
    - `evidence_level = MEDIUM_FOR_BUILDING_FUNCTION_AND_ACCESS_MECHANISM / USER_OUTCOME_PENDING`
@@ -86,7 +86,7 @@ For all six funding-restoration children: `competence = LAND_BERLIN_FUNDING_BUDG
    - Distribution: users by district/income/age/disability/language; digital/non-digital access.
    - Reality check: opening/usable capacity, accessibility, indoor quality, service continuity, visitor/use diversity and lifecycle cost/energy; construction spend/m² are inputs.
 
-8. `BE-BSW-P19-U02-A01-C02-cc9e28e20af3` — rapid renovation of **Komische Oper** with guard `without burdening its artistic budget`.
+8. `BE-BSW-P19-U02-A01-C02-cc9e28e20af3` - rapid renovation of **Komische Oper** with guard `without burdening its artistic budget`.
    - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
    - `impact_direction = POSITIVE_CULTURAL_INFRASTRUCTURE_CONTINUITY_POTENTIAL / HIGH_CAPITAL_COST_AND_DELIVERY_DEPENDENCE`
    - `evidence_level = MEDIUM_FOR_BUILDING_CONTINUITY_MECHANISM / CULTURAL_OUTCOME_PENDING`
@@ -103,8 +103,8 @@ After lossless materialisation of this batch:
 `BE_BSW_P19_FACH_COMPLETE = PASS_SOURCE_BOUND_AFTER_EIGHT_CHILD_CLOSURE`
 
 Protected exact residual for BSW becomes:
-- P1–P19 terminal;
-- P20–P66 remain fail-closed page review envelopes unless newer explicit Fach closes exact objects.
+- P1-P19 terminal;
+- P20-P66 remain fail-closed page review envelopes unless newer explicit Fach closes exact objects.
 
 Recompute the Berlin residual **SET-WISE**, never by subtracting stale counts. Keep Berlin programme terminality at `3/12` until the whole BSW programme and the other eight open programmes are genuinely closed.
 
@@ -118,27 +118,27 @@ Update current PR #318 (or an exact-current-main successor if #318 has already m
 
 Source: https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451533796
 
-## WÖk FACH BATCH — Berlin BSW physical PDF page 20 complete source-bound review
+## WÖk FACH BATCH - Berlin BSW physical PDF page 20 complete source-bound review
 
 Fresh disjoint Fach continuation after P19 child closure `5451527622`. Same frozen artefact `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. Source basis is the exact P20 ledger already frozen in `woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-v1.json`. Generic delegated RNAA fields are not accepted as Fach proof and are superseded for the exact objects below. No DNS mapping, Recommendation, score or programme-wide judgment.
 
 ### A. Structural/non-counting records
 
-- `BE-BSW-P20-U01-389150595ae3` — heading `Neue Impulse für die Berliner Kulturpolitik`.
+- `BE-BSW-P20-U01-389150595ae3` - heading `Neue Impulse für die Berliner Kulturpolitik`.
   - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
   - `context_kind = STRUCTURAL_HEADING`
 
-- `BE-BSW-P20-U02-A02-3a5f681eb2bd` — `Städte wie Leipzig oder Hamburg haben solche Stadtkuratoren bereits erfolgreich eingesetzt.`
+- `BE-BSW-P20-U02-A02-3a5f681eb2bd` - `Städte wie Leipzig oder Hamburg haben solche Stadtkuratoren bereits erfolgreich eingesetzt.`
   - `terminal_fach_state = NON_EFFECT_EVIDENTIARY_OR_BENCHMARK_CLAIM_REVIEWED`
   - Exact reason: this is a programme-authored benchmark/success claim, not a Berlin policy instrument. It may motivate the following proposal but must not be rendered as independent effect or as proven evidence without separate verification.
 
-- `BE-BSW-P20-U02-A03-edfe7a25adc3` — `Die Stadt Berlin eröffnet für diese Rolle ein noch viel weiter gefasstes Feld für die kuratorische Nutzung.`
+- `BE-BSW-P20-U02-A03-edfe7a25adc3` - `Die Stadt Berlin eröffnet für diese Rolle ein noch viel weiter gefasstes Feld für die kuratorische Nutzung.`
   - `terminal_fach_state = NON_EFFECT_SCOPE_OR_RATIONALE_CLAIM_REVIEWED`
   - Exact reason: this sentence asserts a broader opportunity/scope for the Stadtkurator role but specifies no additional independent intervention beyond the curator instrument in A01. Preserve it as rationale/claimed potential child of A01; do not double-count.
 
 ### B. Explicit Fach-approved effect objects
 
-#### 1. `BE-BSW-P20-U02-A01-de357d5d33c6` — Stadtkurator + temporary urban-space access for independent artists/groups
+#### 1. `BE-BSW-P20-U02-A01-de357d5d33c6` - Stadtkurator + temporary urban-space access for independent artists/groups
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_ARTISTIC_SPACE_ACCESS_AND_TEMPORARY_URBAN_ACTIVATION_POTENTIAL / GOVERNANCE_AND_DISTRIBUTION_DEPENDENT`
@@ -152,7 +152,7 @@ Fresh disjoint Fach continuation after P19 child closure `5451527622`. Same froz
 - Boundary/noncompensation: number of temporary projects/spaces is output; it cannot compensate for opaque allocation, exclusion, unsafe use or displacement of other needed functions.
 - Reality check: applicant/selection diversity, additional accessible space-time, realised projects, artist cost relief/continuity, public reach, conflicts/complaints/safety and repeat/durable pathways.
 
-#### 2. `BE-BSW-P20-U03-A01-ee7f0a51385c` — cultural project funding prioritising projects that examine constructive/destructive AI influence on art/society
+#### 2. `BE-BSW-P20-U03-A01-ee7f0a51385c` - cultural project funding prioritising projects that examine constructive/destructive AI influence on art/society
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_CRITICAL_CULTURAL_DISCOURSE_AND_EXPERIMENTATION_POTENTIAL / SELECTION_AND_ARTISTIC_FREEDOM_DEPENDENT`
@@ -165,7 +165,7 @@ Fresh disjoint Fach continuation after P19 child closure `5451527622`. Same froz
 - Boundary/noncompensation: thematic relevance to AI does not itself prove cultural/social benefit; artistic freedom and pluralism are hard guards.
 - Reality check: additional projects and reach/diversity plus independent quality/participation signals; grant count or use of the term AI alone is not outcome.
 
-#### 3. `BE-BSW-P20-U04-A01-4c41a7968338` — open foyers/entrance areas of opera, concert and exhibition venues outside event times for creative/community/dialogue use
+#### 3. `BE-BSW-P20-U04-A01-4c41a7968338` - open foyers/entrance areas of opera, concert and exhibition venues outside event times for creative/community/dialogue use
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_PUBLIC_CULTURAL_SPACE_AND_LOW_BARRIER_ACCESS_POTENTIAL / OPERATING_CAPACITY_AND_SAFETY_DEPENDENT`
@@ -178,12 +178,12 @@ Fresh disjoint Fach continuation after P19 child closure `5451527622`. Same froz
 - Boundary/noncompensation: longer opening hours are output; not sufficient if spaces remain socially inaccessible, unsafe or unused.
 - Reality check: actual use by diverse groups, accessibility, operating cost/staff effects, incidents/conflicts, repeat/community use and incremental reach beyond event audiences.
 
-#### 4. `BE-BSW-P20-U05-A01-f34fa33aa2af` — secure as many remaining non-commercial spaces as possible for artistic creation and art experience
+#### 4. `BE-BSW-P20-U05-A01-f34fa33aa2af` - secure as many remaining non-commercial spaces as possible for artistic creation and art experience
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_NONCOMMERCIAL_CULTURAL_SPACE_PRESERVATION_POTENTIAL / VERY_HIGH_MECHANISM_AND_COMPETENCE_UNCERTAINTY`
 - `evidence_level = LOW / TARGET_STATE_ASSESSABLE / INSTRUMENT_NOT_SPECIFIED`
-- Why assessable despite missing instrument: the object specifies an effect-bearing target state — preservation of non-commercial spaces for artistic production/experience. Missing legal/funding/planning instruments are an Omissions/Delivery gap, not automatically `NO_ASSESSABLE_EFFECT_OBJECT`.
+- Why assessable despite missing instrument: the object specifies an effect-bearing target state - preservation of non-commercial spaces for artistic production/experience. Missing legal/funding/planning instruments are an Omissions/Delivery gap, not automatically `NO_ASSESSABLE_EFFECT_OBJECT`.
 - Mechanism envelope: if Berlin uses effective land/property/lease/funding/planning tools to prevent loss of such spaces, cost/availability barriers for non-commercial cultural production/access can fall.
 - Material omissions: definition/inventory of `non-commercial space`, baseline loss rate, specific instruments, ownership/competence, costs, selection/access, duration, maintenance and counterfactual uses.
 - Trade-offs: scarce space and fiscal opportunity cost; preservation of underused spaces versus housing/social/economic uses; potential insider capture; temporary versus durable protection.
@@ -194,17 +194,17 @@ Fresh disjoint Fach continuation after P19 child closure `5451527622`. Same froz
 
 ### C. P20 terminality
 
-After lossless materialisation of A–B:
+After lossless materialisation of A-B:
 
 `BE_BSW_P20_FACH_COMPLETE = PASS_SOURCE_BOUND`
 
-BSW protected terminal scope becomes P1–P20. The next untouched physical review envelope begins at **P21** and continues through P66 unless a newer explicit #240 handoff closes exact objects before write time.
+BSW protected terminal scope becomes P1-P20. The next untouched physical review envelope begins at **P21** and continues through P66 unless a newer explicit #240 handoff closes exact objects before write time.
 
 Recompute the Berlin residual **SET-WISE**. Do not reuse or credit the old generic delegated RNAA from #313 as Fach proof. Berlin remains `3/12` programme-terminal / `9/12` programme-open until all genuine programme residuals reach zero.
 
 ### CodeX handoff
 
-First consume `5451527622` (P19 eight children) into PR #318 if still open; then materialise this P20 batch on a fresh exact-current-main successor (or the same branch only if it remains conflict-free and CI is rerun from the new exact head). Preserve source text, SHA, parent/rationale links and all previous P1–P19 terminal decisions. Run Berlin residual integrity, BSW full-programme truth, #241 residual, Source-vs-View, SamePage navigation, tests/typecheck/lint/build. GitHub-only; no Vercel.
+First consume `5451527622` (P19 eight children) into PR #318 if still open; then materialise this P20 batch on a fresh exact-current-main successor (or the same branch only if it remains conflict-free and CI is rerun from the new exact head). Preserve source text, SHA, parent/rationale links and all previous P1-P19 terminal decisions. Run Berlin residual integrity, BSW full-programme truth, #241 residual, Source-vs-View, SamePage navigation, tests/typecheck/lint/build. GitHub-only; no Vercel.
 
 ---
 
@@ -212,43 +212,43 @@ First consume `5451527622` (P19 eight children) into PR #318 if still open; then
 
 Source: https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451555353
 
-## WÖk FACH BATCH — Berlin BSW P21 part 1: Gesundheitsziele + Krankenversicherung (U01–U05) source-bound terminal
+## WÖk FACH BATCH - Berlin BSW P21 part 1: Gesundheitsziele + Krankenversicherung (U01-U05) source-bound terminal
 
-Disjoint continuation after P20 (`5451533796`). Same frozen artefact `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. This batch reviews only physical PDF P21 source units U01–U05 as frozen in `berlin-2026-bsw-v1.json`. U06–U08 hospital content remains OPEN for the next disjoint batch. Generic delegated #313 RNAA is superseded for the exact IDs below. No DNS mapping, Recommendation, score or programme-wide judgment.
+Disjoint continuation after P20 (`5451533796`). Same frozen artefact `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. This batch reviews only physical PDF P21 source units U01-U05 as frozen in `berlin-2026-bsw-v1.json`. U06-U08 hospital content remains OPEN for the next disjoint batch. Generic delegated #313 RNAA is superseded for the exact IDs below. No DNS mapping, Recommendation, score or programme-wide judgment.
 
 ### A. Reviewed non-counting goals / framing
 
-1. `BE-BSW-P21-U01-A01-94dbd608a8ca` — “solidarisches Gesundheitswesen stärken / nicht kaputtsparen”.
+1. `BE-BSW-P21-U01-A01-94dbd608a8ca` - “solidarisches Gesundheitswesen stärken / nicht kaputtsparen”.
    - `terminal_fach_state = NON_EFFECT_POLICY_GOAL_AND_FRAME_REVIEWED`
    - Reason: broad system goal/frame; no independently specified intervention in this atom. It may contextualise the concrete insurance/hospital measures that follow but must not be counted as a separate effect.
 
-2. `BE-BSW-P21-U01-A02-367ca8842a6f` — “Zwei-Klassen-Medizin beenden”.
+2. `BE-BSW-P21-U01-A02-367ca8842a6f` - “Zwei-Klassen-Medizin beenden”.
    - `terminal_fach_state = NON_EFFECT_SYSTEM_GOAL_REVIEWED`
    - Reason: normative/equity target without a separate instrument; assess concrete measures separately.
 
-3. `BE-BSW-P21-U01-A03-1cdb03a3d8cd` — equal access to high-quality care regardless of income/origin/insurance status.
+3. `BE-BSW-P21-U01-A03-1cdb03a3d8cd` - equal access to high-quality care regardless of income/origin/insurance status.
    - `terminal_fach_state = NON_EFFECT_ACCESS_AND_QUALITY_GOAL_REVIEWED`
    - Reason: target state and distribution/quality guard, not an independent intervention. Preserve as evaluation criterion for later effect objects.
 
-4. `BE-BSW-P21-U02-A03-43a26d029820` — claimed relief for low/middle incomes.
+4. `BE-BSW-P21-U02-A03-43a26d029820` - claimed relief for low/middle incomes.
    - `terminal_fach_state = NON_EFFECT_EXPECTED_DISTRIBUTIONAL_OUTCOME_CLAIM_REVIEWED`
    - Reason: claimed consequence of the financing reforms in U02, not a separate action and not treated as proven.
 
-5. `BE-BSW-P21-U04-A01-ac1eec664748` — health system should follow need rather than profit interests.
+5. `BE-BSW-P21-U04-A01-ac1eec664748` - health system should follow need rather than profit interests.
    - `terminal_fach_state = NON_EFFECT_GOVERNANCE_GOAL_REVIEWED`
    - Reason: normative decision criterion; concrete governance/financing/planning changes must carry the effect assessment.
 
-6. `BE-BSW-P21-U04-A02-d6a0af7c56be` — “Dafür werden wir uns im Berliner Abgeordnetenhaus einsetzen.”
+6. `BE-BSW-P21-U04-A02-d6a0af7c56be` - “Dafür werden wir uns im Berliner Abgeordnetenhaus einsetzen.”
    - `terminal_fach_state = NON_EFFECT_GENERIC_ADVOCACY_RESTATEMENT_REVIEWED`
    - Reason: procedural statement tied to A01 without a separate legal/budget/administrative lever; do not double-count.
 
-7. `BE-BSW-P21-U05-003361897d7b` — heading `Krankenhäuser planvoll nutzen`.
+7. `BE-BSW-P21-U05-003361897d7b` - heading `Krankenhäuser planvoll nutzen`.
    - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
    - `context_kind = STRUCTURAL_HEADING`
 
 ### B. Explicit source-bound Fach-approved effect objects
 
-#### `BE-BSW-P21-U02-A01-457e26fdf6b5` — Bürgerversicherung / all citizens including civil servants and higher earners contribute
+#### `BE-BSW-P21-U02-A01-457e26fdf6b5` - Bürgerversicherung / all citizens including civil servants and higher earners contribute
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_SOLIDARITY_RISK_POOL_AND_FINANCING_REFORM_POTENTIAL / FEDERAL_DESIGN_DEPENDENT`
@@ -261,7 +261,7 @@ Disjoint continuation after P20 (`5451533796`). Same frozen artefact `BE-AGH-202
 - Boundary/noncompensation: a more unified financing structure is not itself proof of equal access or better care; access, quality, waiting time, financial protection and system capacity remain separate outcome guards.
 - Reality check: contribution incidence, coverage/migration between systems, administrative cost, provider financing, access/waiting/quality and financial protection.
 
-#### `BE-BSW-P21-U02-A02-003a34945f58` — raise contribution-assessment and compulsory-insurance thresholds
+#### `BE-BSW-P21-U02-A02-003a34945f58` - raise contribution-assessment and compulsory-insurance thresholds
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_REVENUE_RISK_POOL_AND_DISTRIBUTIONAL_EFFECT / FEDERAL_PARAMETER_DESIGN_DEPENDENT`
@@ -274,7 +274,7 @@ Disjoint continuation after P20 (`5451533796`). Same frozen artefact `BE-AGH-202
 - Boundary: revenue increase is input/financing capacity, not care outcome.
 - Reality check: net revenue, contributor distribution, switching, contribution burden, employment/compensation responses and downstream access/quality capacity.
 
-#### `BE-BSW-P21-U03-A01-c5fa2277a3a8` — fixed employer subsidy for GKV for newly appointed Berlin civil servants instead of individual Beihilfe
+#### `BE-BSW-P21-U03-A01-c5fa2277a3a8` - fixed employer subsidy for GKV for newly appointed Berlin civil servants instead of individual Beihilfe
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_EMPLOYER_FINANCING_AND_INSURANCE_CHOICE_EFFECT / LAND_DESIGN_DEPENDENT`
@@ -287,7 +287,7 @@ Disjoint continuation after P20 (`5451533796`). Same frozen artefact `BE-AGH-202
 - Noncompensation: fiscal savings/costs cannot substitute for adequate insurance access/coverage; individual protection and long-run affordability are guards.
 - Reality check: take-up/insurance choices, employer expenditure per cohort, household net burden, recruitment/retention and coverage/access outcomes.
 
-#### `BE-BSW-P21-U03-A02-3f6559c4ef79` — align PKV eligibility conditions for civil servants with employees/self-employed
+#### `BE-BSW-P21-U03-A02-3f6559c4ef79` - align PKV eligibility conditions for civil servants with employees/self-employed
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_INSURANCE_ACCESS_AND_RISK_POOL_EFFECT / COMPETENCE_AND_RULE_DESIGN_UNCLEAR`
@@ -303,11 +303,11 @@ Disjoint continuation after P20 (`5451533796`). Same frozen artefact `BE-AGH-202
 
 `BE_BSW_P21_U01_U05_FACH_COMPLETE = PASS_SOURCE_BOUND`
 
-Do **not** mark P21 complete yet. Remaining P21 genuine Fach scope is exactly the hospital units `U06`, `U07`, `U08` (13 source atoms total), subject to semantic segmentation check before effect-leaf closure. P1–P20 and P21-U01–U05 are protected terminal after lossless materialisation.
+Do **not** mark P21 complete yet. Remaining P21 genuine Fach scope is exactly the hospital units `U06`, `U07`, `U08` (13 source atoms total), subject to semantic segmentation check before effect-leaf closure. P1-P20 and P21-U01-U05 are protected terminal after lossless materialisation.
 
 ### CodeX handoff
 
-After current P19/P20 handoffs are materialized, consume this U01–U05 batch losslessly. Preserve the exact federal-vs-Land competence guards and goal/non-effect relationships. Recompute BSW/Berlin residual SET-WISE; no stale subtraction. Keep Berlin `3/12` programme-terminal / `9/12` open. Run residual integrity, Source-vs-View, SamePage, tests/typecheck/lint/build. GitHub-only; no Vercel. Next Fach batch is P21 U06–U08 hospital planning/ownership/financing.
+After current P19/P20 handoffs are materialized, consume this U01-U05 batch losslessly. Preserve the exact federal-vs-Land competence guards and goal/non-effect relationships. Recompute BSW/Berlin residual SET-WISE; no stale subtraction. Keep Berlin `3/12` programme-terminal / `9/12` open. Run residual integrity, Source-vs-View, SamePage, tests/typecheck/lint/build. GitHub-only; no Vercel. Next Fach batch is P21 U06-U08 hospital planning/ownership/financing.
 
 ---
 
@@ -315,13 +315,13 @@ After current P19/P20 handoffs are materialized, consume this U01–U05 batch lo
 
 Source: https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451565159
 
-## WÖk FACH BATCH — Berlin BSW P21 part 2: hospital planning / ownership / financing (U06–U08) + page closure
+## WÖk FACH BATCH - Berlin BSW P21 part 2: hospital planning / ownership / financing (U06-U08) + page closure
 
-Continuation of P21 part 1 `5451555353`. Same frozen artefact `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. This batch reviews the remaining P21 U06–U08 exact atoms. Generic delegated #313 RNAA is superseded for these IDs. The programme’s factual/causal assertions (e.g. DRG “has not worked”, precise investment-backlog magnitude, politically motivated closures) are **not** accepted as independently proven merely because they appear in the source. No DNS mapping, Recommendation, score or party-wide judgment.
+Continuation of P21 part 1 `5451555353`. Same frozen artefact `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. This batch reviews the remaining P21 U06-U08 exact atoms. Generic delegated #313 RNAA is superseded for these IDs. The programme’s factual/causal assertions (e.g. DRG “has not worked”, precise investment-backlog magnitude, politically motivated closures) are **not** accepted as independently proven merely because they appear in the source. No DNS mapping, Recommendation, score or party-wide judgment.
 
-### A. U06 — hospital ownership, planning, state support and investment
+### A. U06 - hospital ownership, planning, state support and investment
 
-#### `BE-BSW-P21-U06-A01-aabc35796bd0` — hospital provision as public service; public/non-profit ownership preference
+#### `BE-BSW-P21-U06-A01-aabc35796bd0` - hospital provision as public service; public/non-profit ownership preference
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_OWNERSHIP_AND_GOVERNANCE_REFORM_POTENTIAL / PERFORMANCE_NOT_DETERMINED_BY_OWNERSHIP_LABEL`
 - `evidence_level = MEDIUM_FOR_GOVERNANCE_INCENTIVE_MECHANISM / LOW_FOR_NET_CARE_OUTCOME_WITHOUT_IMPLEMENTATION_DESIGN`
@@ -331,11 +331,11 @@ Continuation of P21 part 1 `5451555353`. Same frozen artefact `BE-AGH-2026-BSW-W
 - Noncompensation: ownership form cannot compensate for unsafe care, inadequate staffing, poor accessibility or unsustainable financing.
 - Reality check: service continuity, staffing, access/wait time, quality/safety, investment and lifecycle cost before/after any ownership/governance change.
 
-`BE-BSW-P21-U06-A02-076a00782c7d` — “Krankenhäuser sind keine Unternehmen, sondern Orte der Heilung und Pflege.”
+`BE-BSW-P21-U06-A02-076a00782c7d` - “Krankenhäuser sind keine Unternehmen, sondern Orte der Heilung und Pflege.”
 - `terminal_fach_state = NON_EFFECT_NORMATIVE_FRAMING_REVIEWED`
 - Reason: normative frame/rationale for A01/A03/A05/A06, not an independent intervention or empirical result.
 
-#### `BE-BSW-P21-U06-A03-ec847e41061d` — common-good-oriented hospital planning with citizen participation
+#### `BE-BSW-P21-U06-A03-ec847e41061d` - common-good-oriented hospital planning with citizen participation
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_NEED_ORIENTED_AND_PARTICIPATORY_PLANNING_POTENTIAL / DECISION_QUALITY_AND_DELIVERY_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_PLANNING_INFORMATION_AND_LEGITIMACY_MECHANISM / CARE_OUTCOME_PENDING`
@@ -345,11 +345,11 @@ Continuation of P21 part 1 `5451555353`. Same frozen artefact `BE-AGH-2026-BSW-W
 - Competence: `LAND_BERLIN_HOSPITAL_PLANNING_WITH_FEDERAL_FINANCING_AND_PROVIDER_DEPENDENCIES`.
 - Reality check: planning decisions’ evidence traceability, participation diversity, regional access, quality/safety and capacity outcomes; number of consultations is output.
 
-`BE-BSW-P21-U06-A04-bf32baa4052f` — wohnortnah / ÖPNV-accessible / high-quality inpatient care.
+`BE-BSW-P21-U06-A04-bf32baa4052f` - wohnortnah / ÖPNV-accessible / high-quality inpatient care.
 - `terminal_fach_state = NON_EFFECT_ACCESS_AND_QUALITY_GOAL_REVIEWED`
 - Reason: explicit target state/guard for hospital planning; no separate instrument in this atom. Preserve geography, transport accessibility and clinical quality as hard evaluation dimensions.
 
-#### `BE-BSW-P21-U06-A05-45ae64385c65` — targeted Land funding for hospitals strengthening social support, transition management and outpatient/inpatient integration
+#### `BE-BSW-P21-U06-A05-45ae64385c65` - targeted Land funding for hospitals strengthening social support, transition management and outpatient/inpatient integration
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_CARE_CONTINUITY_AND_TRANSITION_SUPPORT_POTENTIAL / CAPACITY_AND_PAYMENT_DESIGN_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_TRANSITION_COORDINATION_MECHANISM / OUTCOME_PENDING`
@@ -359,7 +359,7 @@ Continuation of P21 part 1 `5451555353`. Same frozen artefact `BE-AGH-2026-BSW-W
 - Distribution: people with complex/chronic/social needs, disability, language/access barriers, older patients and caregivers; district/community capacity.
 - Reality check: completed handoffs, follow-up continuity, avoidable readmissions/crises, patient/caregiver burden and equity; funded posts/projects alone are input.
 
-#### `BE-BSW-P21-U06-A06-7e0b8be0a7a8` — close hospital investment backlog / Berlin fulfil investment-financing responsibility
+#### `BE-BSW-P21-U06-A06-7e0b8be0a7a8` - close hospital investment backlog / Berlin fulfil investment-financing responsibility
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_INFRASTRUCTURE_SAFETY_AND_CAPACITY_POTENTIAL / PRIORITISATION_AND_LIFECYCLE_COST_DEPENDENT`
 - `evidence_level = HIGH_FOR_CAPITAL_TO_ASSET_CONDITION_MECHANISM / OUTCOME_AND_BACKLOG_MAGNITUDE_REQUIRE_VERIFICATION`
@@ -369,9 +369,9 @@ Continuation of P21 part 1 `5451555353`. Same frozen artefact `BE-AGH-2026-BSW-W
 - Noncompensation: spend/new buildings cannot compensate for missing staff, poor clinical processes or unnecessary capacity; safety/quality and real need are guards.
 - Reality check: asset condition/safety, downtime/capacity, accessibility, operating/lifecycle cost, delivery time/budget and care outcomes; capital expenditure alone is input.
 
-### B. U07 — federal hospital-reform advocacy and safeguards
+### B. U07 - federal hospital-reform advocacy and safeguards
 
-#### `BE-BSW-P21-U07-A01-25d92203af45` — Berlin federal-level advocacy for hospital reform to improve local care and avoid unplanned/politically motivated closures
+#### `BE-BSW-P21-U07-A01-25d92203af45` - Berlin federal-level advocacy for hospital reform to improve local care and avoid unplanned/politically motivated closures
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = CONDITIONAL_POSITIVE_FEDERAL_ADVOCACY_FOR_NEED_AND_QUALITY_ORIENTED_REFORM / HIGH_POLICY_DESIGN_DEPENDENCE`
 - `evidence_level = LOW_TO_MEDIUM / ADVOCACY_TO_POLICY_CAUSALITY_AND_FINAL_REFORM_DESIGN_UNCERTAIN`
@@ -381,21 +381,21 @@ Continuation of P21 part 1 `5451555353`. Same frozen artefact `BE-AGH-2026-BSW-W
 - Risks/trade-offs: over-preservation of low-quality/duplicative capacity versus harmful loss of local access; reform delay; financing burdens shifted across levels.
 - Reality check: actual federal rule delta, Berlin contribution, subsequent capacity/access/quality/staffing outcomes; advocacy activity is not outcome.
 
-`BE-BSW-P21-U07-A02-8ed59b29f494` — focus on universal supply security and patient-oriented quality improvement.
+`BE-BSW-P21-U07-A02-8ed59b29f494` - focus on universal supply security and patient-oriented quality improvement.
 - `terminal_fach_state = NON_EFFECT_ACCESS_QUALITY_SAFEGUARD_REVIEWED`
 - Reason: target/guard for A01 and later planning, not separate intervention.
 
-`BE-BSW-P21-U07-A03-9d1c63d8232d` — structural adjustments must include job protection.
+`BE-BSW-P21-U07-A03-9d1c63d8232d` - structural adjustments must include job protection.
 - `terminal_fach_state = NON_EFFECT_TRANSITION_AND_WORKFORCE_SAFEGUARD_REVIEWED`
 - Reason: design condition without a specified employment instrument in this atom. Preserve as a material trade-off guard: continuity/retention versus necessary restructuring must be measured, not assumed.
 
-`BE-BSW-P21-U07-A04-78804d00c6e3` — counter loss of medical professionals.
+`BE-BSW-P21-U07-A04-78804d00c6e3` - counter loss of medical professionals.
 - `terminal_fach_state = NON_EFFECT_WORKFORCE_GOAL_REVIEWED`
 - Reason: workforce retention goal without an independent instrument here; subsequent staffing/working-condition actions must carry effect assessment.
 
-### C. U08 — financing / planning discretion / integration
+### C. U08 - financing / planning discretion / integration
 
-#### `BE-BSW-P21-U08-A01-76d8806af83c` — restructure hospital financing; source criticises DRG model
+#### `BE-BSW-P21-U08-A01-76d8806af83c` - restructure hospital financing; source criticises DRG model
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_FINANCING_INCENTIVE_REFORM_POTENTIAL / FEDERAL_MODEL_DESIGN_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_PAYMENT_INCENTIVE_MECHANISM / NET_EFFECT_NOT_DETERMINABLE_WITHOUT_REPLACEMENT_MODEL`
@@ -406,7 +406,7 @@ Continuation of P21 part 1 `5451555353`. Same frozen artefact `BE-AGH-2026-BSW-W
 - Risks: new gaming incentives, under/overprovision, transition shocks, complexity and cost shifting.
 - Reality check: service mix, necessary capacity, quality/safety, staffing, cost, access and provider solvency under the actual rule delta.
 
-#### `BE-BSW-P21-U08-A02-51b3a97e4f48` — preserve Berlin planning discretion for regional needs
+#### `BE-BSW-P21-U08-A02-51b3a97e4f48` - preserve Berlin planning discretion for regional needs
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_ADAPTIVE_REGIONAL_PLANNING_POTENTIAL / ACCOUNTABILITY_AND_EVIDENCE_GUARD_REQUIRED`
 - `evidence_level = MEDIUM_FOR_LOCAL_INFORMATION_MECHANISM / OUTCOME_DEPENDENT_ON_PLANNING_QUALITY`
@@ -415,7 +415,7 @@ Continuation of P21 part 1 `5451555353`. Same frozen artefact `BE-AGH-2026-BSW-W
 - Noncompensation: “regional specificity” cannot justify unsafe/low-quality or redundant capacity; quality/safety and transparent need evidence are hard guards.
 - Reality check: explicit need/capacity criteria, access/travel times, quality/safety, utilisation and cross-border patient flows.
 
-`BE-BSW-P21-U08-A03-be0c6865e1fe` — Berlin as “health metropolis” through care/training/research integration.
+`BE-BSW-P21-U08-A03-be0c6865e1fe` - Berlin as “health metropolis” through care/training/research integration.
 - `terminal_fach_state = NON_EFFECT_SYSTEM_INTEGRATION_GOAL_REVIEWED`
 - Reason: broad desired positioning/system state; no independent instrument or resource shift in this atom. Preserve integration of care/training/research as a coherence criterion, not an outcome claim.
 
@@ -425,7 +425,7 @@ Together with P21 part 1 `5451555353`, every physical P21 source unit/atom is no
 
 `BE_BSW_P21_FACH_COMPLETE = PASS_SOURCE_BOUND`
 
-After lossless materialisation, BSW protected terminal physical scope is **P1–P21**. The next untouched physical review envelope begins at **P22** and continues through P66 unless newer explicit #240 Fach closes exact objects.
+After lossless materialisation, BSW protected terminal physical scope is **P1-P21**. The next untouched physical review envelope begins at **P22** and continues through P66 unless newer explicit #240 Fach closes exact objects.
 
 Recompute Berlin residual SET-WISE. BSW is still programme-open; Berlin remains `3/12` programme-terminal / `9/12` programme-open.
 

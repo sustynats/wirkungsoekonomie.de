@@ -35,7 +35,7 @@ def link(label,url):return Paragraph('<a href="'+escape(url,{'"':'&quot;'})+'" c
 def footer(canvas,doc):
  canvas.saveState();canvas.setStrokeColor(colors.HexColor('#d0d9cc'));canvas.line(48,44,A4[0]-48,44);canvas.setFont('Learn',7.5);canvas.setFillColor(NAVY);canvas.drawString(48,29,'Wirkungsökonomie | Einführung v1.1 | 06.09.2026 | Modellbeispiele');canvas.drawRightString(A4[0]-48,29,str(doc.page));canvas.restoreState()
 def build(filename,title,story):
- SimpleDocTemplate(str(OUT/filename),pagesize=A4,topMargin=48,leftMargin=48,rightMargin=48,bottomMargin=60,title=title,author='Wirkungsökonomie',subject='Verständlicher Lernweg mit offen ausgewiesenen Modellannahmen',invariant=1).build(story,onFirstPage=footer,onLaterPages=footer)
+ SimpleDocTemplate(str(OUT/filename),pagesize=A4,topMargin=48,leftMargin=48,rightMargin=48,bottomMargin=60,title=title,author='Natalie Weber',creator='Natalie Weber',subject='Verständlicher Lernweg mit offen ausgewiesenen Modellannahmen',invariant=1).build(story,onFirstPage=footer,onLaterPages=footer)
 def chart():
  d=Drawing(490,154)
  for label,value,y,color in [('Vorher',100,114,NAVY),('Ohne Umstellung geschätzt',90,70,GOLD),('Nachher beobachtet',60,26,GREEN)]:

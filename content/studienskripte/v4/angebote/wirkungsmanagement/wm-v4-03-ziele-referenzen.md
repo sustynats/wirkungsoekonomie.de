@@ -89,11 +89,11 @@ Eine reine Zielvorgabe „mehr regionale Beschaffung“ wäre schon ein Instrume
 
 ## Typische Fehlinterpretationen
 
-- Ziel vor Problem definieren. – Falsch.
-- SDG-Zuordnung beweist Wirkung. – Falsch.
-- Art. 20a ist ein SDG. – Falsch.
-- Ein Outputziel ist automatisch Outcomeziel. – Falsch.
-- WÖk-SDG+ ist UN-Standard. – Falsch.
+- Ziel vor Problem definieren. - Falsch.
+- SDG-Zuordnung beweist Wirkung. - Falsch.
+- Art. 20a ist ein SDG. - Falsch.
+- Ein Outputziel ist automatisch Outcomeziel. - Falsch.
+- WÖk-SDG+ ist UN-Standard. - Falsch.
 
 ## WÖk-Abgrenzung
 

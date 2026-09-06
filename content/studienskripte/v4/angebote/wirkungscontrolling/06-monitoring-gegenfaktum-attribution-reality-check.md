@@ -20,7 +20,7 @@
 
 ## 20-Sekunden-Erklärung
 
-Monitoring sagt, was sich verändert. Es sagt nicht automatisch, warum. Der Reality Check fragt deshalb zusätzlich: Was wäre ohne unsere Maßnahme passiert? Welche anderen Ursachen gab es? Was können wir plausibel zurechnen – und welche Annahme müssen wir revidieren?
+Monitoring sagt, was sich verändert. Es sagt nicht automatisch, warum. Der Reality Check fragt deshalb zusätzlich: Was wäre ohne unsere Maßnahme passiert? Welche anderen Ursachen gab es? Was können wir plausibel zurechnen - und welche Annahme müssen wir revidieren?
 
 ## Einfach erklärt
 
@@ -43,7 +43,7 @@ Je nach Gegenstand reichen Designs von Zeitreihen und Vergleichsgruppen bis zu p
 
 Ein Reality Check dokumentiert mindestens: erwarteter Mechanismus, beobachtete Outputs/Outcomes, alternative Erklärungen, Datenqualität, Attribution, Nebenwirkungen und nächste Revision.
 
-Der Hindsight Guard rekonstruiert die damalige Informationslage. Eine Entscheidung kann ex ante vernünftig und ex post erfolglos sein – oder umgekehrt.
+Der Hindsight Guard rekonstruiert die damalige Informationslage. Eine Entscheidung kann ex ante vernünftig und ex post erfolglos sein - oder umgekehrt.
 
 ## Konkretes Beispiel
 

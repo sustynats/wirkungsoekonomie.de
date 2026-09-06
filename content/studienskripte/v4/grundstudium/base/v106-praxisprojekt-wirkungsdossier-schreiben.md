@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v106-praxisprojekt-wirkungsdossier-schreiben.md curriculum=4.0 sanitized=true -->
-# V106 · Praxisprojekt: Das Wirkungsdossier schreiben – reproduzierbar, prüfbar, versioniert
+# V106 · Praxisprojekt: Das Wirkungsdossier schreiben - reproduzierbar, prüfbar, versioniert
 
 **lecture_id:** `WOEK-G-BASE-106`  
 **display_code:** `V106`  
@@ -31,7 +31,7 @@ Ein gutes Dossier dient zwei Gruppen:
 
 ### Entscheidungsebene
 
-Braucht in 1–3 Minuten:
+Braucht in 1-3 Minuten:
 
 - Gegenstand,
 - Gesamtbefund,
@@ -261,7 +261,7 @@ Dein Wirkungsdossier ist kein Aufsatz, den man einmal abgibt und dann vergisst.
 
 Es ist eine Fachakte.
 
-Vorne muss jemand in zwei Minuten verstehen: Worum geht es? Was wirkt wahrscheinlich wie? Was ist das größte Risiko? Wie sicher ist das? Was empfehlen wir – oder eben nicht?
+Vorne muss jemand in zwei Minuten verstehen: Worum geht es? Was wirkt wahrscheinlich wie? Was ist das größte Risiko? Wie sicher ist das? Was empfehlen wir - oder eben nicht?
 
 Und hinten muss eine andere Person alles nachprüfen können.
 

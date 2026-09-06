@@ -85,7 +85,7 @@ Markiere Evidenzgrad je Kausalannahme.
 
 Pflicht im v4-Projekt:
 
-Mindestens drei plausible Alternativerklärungen oder konkurrierende Mechanismen suchen – auch wenn sie die eigene Ausgangsthese schwächen.
+Mindestens drei plausible Alternativerklärungen oder konkurrierende Mechanismen suchen - auch wenn sie die eigene Ausgangsthese schwächen.
 
 Das schützt vor Confirmation Bias.
 
@@ -227,7 +227,7 @@ Erstelle für dein Projekt:
 
 Jetzt kommt die Stelle, an der viele Projekte zu früh zur Lösung springen.
 
-Du hast eine Maßnahme ausgewählt – und plötzlich suchst du nur noch Gründe, warum sie sinnvoll ist.
+Du hast eine Maßnahme ausgewählt - und plötzlich suchst du nur noch Gründe, warum sie sinnvoll ist.
 
 Stopp.
 

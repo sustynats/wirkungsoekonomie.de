@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Bei einer normalen Merit Order gewinnt oft das günstigste Angebot zuerst. Die WÖk dreht die Frage um: **Welche Option fällt wegen der schlechtesten materiellen Wirkung oder einer harten Grenze zuerst heraus?** Das ist die Reverse Merit Order. Sie hilft, kritische Schwachstellen sichtbar zu machen – aber nur bei vergleichbaren Optionen und transparenten Regeln. Sie ist kein automatisches Ranking für Parteien, Regierungen oder ganze Gesellschaften.
+Bei einer normalen Merit Order gewinnt oft das günstigste Angebot zuerst. Die WÖk dreht die Frage um: **Welche Option fällt wegen der schlechtesten materiellen Wirkung oder einer harten Grenze zuerst heraus?** Das ist die Reverse Merit Order. Sie hilft, kritische Schwachstellen sichtbar zu machen - aber nur bei vergleichbaren Optionen und transparenten Regeln. Sie ist kein automatisches Ranking für Parteien, Regierungen oder ganze Gesellschaften.
 
 ## Lernziele
 
@@ -33,7 +33,7 @@ Das kann gefährlich sein, wenn eine Option in einem kritischen Feld sehr schlec
 
 Reverse Merit Order fragt deshalb:
 
-> Welche Option hat im **relevanten schwächsten Feld** den größten materiellen Nachteil – und ist dieser Nachteil tolerierbar oder ausschließend?
+> Welche Option hat im **relevanten schwächsten Feld** den größten materiellen Nachteil - und ist dieser Nachteil tolerierbar oder ausschließend?
 
 Das ist eine Priorisierungslogik für robuste Entscheidungen.
 
@@ -238,4 +238,4 @@ Die Reverse Merit Order ist also keine Weltrangliste.
 
 Sie ist eine robuste Entscheidungsfrage:
 
-**Welche Schwäche kann ich nicht ignorieren – und kann ich die Option so verbessern, dass sie verschwindet?**
+**Welche Schwäche kann ich nicht ignorieren - und kann ich die Option so verbessern, dass sie verschwindet?**

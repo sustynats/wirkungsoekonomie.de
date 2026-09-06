@@ -88,7 +88,7 @@ Aber WÖk präzisiert die Reihenfolge noch stärker:
 
 `Problem Review -> Goal Review -> Optionen -> Wirkmechanismus -> Bewertung`
 
-## 5. eNAP ist stark – aber nicht magisch
+## 5. eNAP ist stark - aber nicht magisch
 
 Ein staatlicher Erfahrungsbericht zur Einbeziehung von Nachhaltigkeitszielen nennt sowohl Stärken als auch Grenzen.
 
@@ -128,7 +128,7 @@ Das ist ein wissenschaftliches Beweisprinzip:
 
 **Abwesenheit eines öffentlich gefundenen Dokuments ist kein Beweis für Abwesenheit des Vorgangs.**
 
-## 7. Was eNAP-Zielbezug bedeutet – und was nicht
+## 7. Was eNAP-Zielbezug bedeutet - und was nicht
 
 Wenn eNAP ein Vorhaben SDG 9, SDG 13 oder einem DNS-Indikator zuordnet, ist das zunächst ein strukturierter Ziel-/Referenzbezug.
 
@@ -181,7 +181,7 @@ Die staatliche Prüfung ist damit nicht „falsch“. Die WÖk macht aus der Zie
 | DNS-Ziel/Indikator | Nationale deutsche Ziel-/Monitoringreferenz. |
 | Zielkonflikt | Situation, in der die Förderung eines Ziels ein anderes Ziel beeinträchtigen kann. |
 | Spillover | Wirkung außerhalb des direkt betrachteten Systems/Raums. |
-| Public documentation status | Aussage darüber, ob öffentliche Dokumentation nachweisbar ist – nicht darüber, ob intern geprüft wurde. |
+| Public documentation status | Aussage darüber, ob öffentliche Dokumentation nachweisbar ist - nicht darüber, ob intern geprüft wurde. |
 
 ## 10. Typische Fehlinterpretationen
 
@@ -214,7 +214,7 @@ WÖk ergänzt systematisch:
 - Problem Review,
 - Goal Review,
 - expliziten `A→M→ΔZ→R`-Wirkpfad,
-- 1.–3. Ordnung/Kaskaden,
+- 1.-3. Ordnung/Kaskaden,
 - Verteilung/Resilienz,
 - Gegenfaktum/Attribution,
 - Omissions/Delivery/Policy Coherence,
@@ -233,13 +233,13 @@ Die führende Formulierung lautet:
 1. **GGO § 44**  
    https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm#%C2%A7_44
 
-2. **BMJV – Nachhaltige Gesetzgebung**  
+2. **BMJV - Nachhaltige Gesetzgebung**  
    https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html
 
-3. **BMJV/Bundeskanzleramt – Ressortübergreifende Empfehlungen zur Prüfung von Nachhaltigkeitszielen**  
+3. **BMJV/Bundeskanzleramt - Ressortübergreifende Empfehlungen zur Prüfung von Nachhaltigkeitszielen**  
    https://www.bmj.de/SharedDocs/Pressemitteilungen/DE/2023/0103_Nachhaltigkeitsziele_und_Rechtsetzung.html
 
-4. **Bundesregierung – Steuerung der Deutschen Nachhaltigkeitsstrategie**  
+4. **Bundesregierung - Steuerung der Deutschen Nachhaltigkeitsstrategie**  
    https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776
 
 5. **E-Gesetzgebung / eGFA / eNAP**  

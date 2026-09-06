@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v52-wirkungseinkommen-policy-modell.md curriculum=4.0 sanitized=true -->
-# V52 · Wirkungseinkommen – WÖk-Policy-Modell für gesellschaftlich relevante Leistung
+# V52 · Wirkungseinkommen - WÖk-Policy-Modell für gesellschaftlich relevante Leistung
 
 **lecture_id:** `WOEK-G-BASE-052`  
 **display_code:** `V52`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Viele gesellschaftlich wichtige Tätigkeiten werden schlecht oder gar nicht bezahlt – Pflege in Familien, Sorgearbeit, Ehrenamt, Prävention. Andere Tätigkeiten können hohe Einkommen erzeugen, obwohl Teile ihrer Kosten ausgelagert werden. Das WÖk-**Wirkungseinkommen** ist deshalb ein Policy-Designgedanke: Wie könnten Einkommen, Transfers oder Anerkennung stärker mit gesellschaftlich relevanter Leistung verbunden werden? Es ist **kein bestehender Rechtsanspruch** und darf niemals Menschenwürde oder Existenzsicherung von einem Wirkungsscore abhängig machen.
+Viele gesellschaftlich wichtige Tätigkeiten werden schlecht oder gar nicht bezahlt - Pflege in Familien, Sorgearbeit, Ehrenamt, Prävention. Andere Tätigkeiten können hohe Einkommen erzeugen, obwohl Teile ihrer Kosten ausgelagert werden. Das WÖk-**Wirkungseinkommen** ist deshalb ein Policy-Designgedanke: Wie könnten Einkommen, Transfers oder Anerkennung stärker mit gesellschaftlich relevanter Leistung verbunden werden? Es ist **kein bestehender Rechtsanspruch** und darf niemals Menschenwürde oder Existenzsicherung von einem Wirkungsscore abhängig machen.
 
 ## Lernziele
 

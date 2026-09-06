@@ -1,11 +1,11 @@
-# Wahlkreis-Wirkungscheck — Texte
+# Wahlkreis-Wirkungscheck - Texte
 
 Version 1.0 · Stand 2026-08-13 · Lane: Claude (Design/UX) · Umsetzung: Codex
 
 Alle sichtbaren Texte. Schlüssel sind stabil und für eine spätere Lokalisierung
 (`/en/`) vorbereitet. Platzhalter in geschweiften Klammern.
 
-**Formale Regeln:** Siezen. Keine Gedankenstriche `–` oder `—` (Brand Guide §4).
+**Formale Regeln:** Siezen. Keine Gedankenstriche `-` oder `-` (Brand Guide §4).
 Keine Ausrufezeichen. Keine Emojis. Datum `TT.MM.JJJJ`. Zahlen mit Punkt als
 Tausendertrennzeichen. Prozent mit geschütztem Leerzeichen.
 
@@ -688,7 +688,7 @@ vorrangig · nachrangig · begrenzend · nach Ihren Angaben · aus Regel {id} fo
 | Prüfpunkt | Regel |
 |---|---|
 | Anrede | Sie, durchgehend |
-| Gedankenstriche | keine `–` und keine `—`, stattdessen Punkt, Komma, Doppelpunkt oder `·` |
+| Gedankenstriche | keine `-` und keine `-`, stattdessen Punkt, Komma, Doppelpunkt oder `·` |
 | Ausrufezeichen | keine |
 | Emojis | keine |
 | Fragezeichen | nur in echten Fragen an die Nutzerin |

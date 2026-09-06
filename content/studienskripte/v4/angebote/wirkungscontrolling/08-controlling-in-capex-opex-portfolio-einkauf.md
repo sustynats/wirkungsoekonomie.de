@@ -5,7 +5,7 @@
 **offering_id:** `WOEK-WB-WC`  
 **curriculum_version:** `4.0`  
 **status:** `FACH_ENDCONTENT_REVIEWED`  
-**subtitle:** Wirkungsprofile in echte Entscheidungstore integrieren – ohne Score-Automatismus  
+**subtitle:** Wirkungsprofile in echte Entscheidungstore integrieren - ohne Score-Automatismus  
 **legacy_source:** `content/lehrgaenge/wirkungscontrolling-wc-v8.md`  
 **migration_class:** `REWRITE_REQUIRED`  
 **reviewed_at:** 2026-08-21
@@ -79,7 +79,7 @@ Decision Gates, Delivery/Resources, Score nicht als Automat, Lieferantenreaktion
 
 ## Zusammenfassung
 
-Wirkungscontrolling ist dann entscheidungsrelevant, wenn es in bestehende Gates integriert wird – ohne deren fachliche Vielfalt auf einen Score zu reduzieren.
+Wirkungscontrolling ist dann entscheidungsrelevant, wenn es in bestehende Gates integriert wird - ohne deren fachliche Vielfalt auf einen Score zu reduzieren.
 
 ## Weiterführende Links
 

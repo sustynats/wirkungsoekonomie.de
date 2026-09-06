@@ -8,7 +8,7 @@
 **legacy_sources:** `content/lehrgaenge/demokratie-schuetzen-grundlagen.md`; `demokratie-schuetzen-medien-moderation-dm-v*.md`; `demokratie-medien-v*.md`  
 **reviewed_at:** 2026-08-21
 
-## Orientierung unter Unsicherheit – ohne vorschnelle Urheberschaft
+## Orientierung unter Unsicherheit - ohne vorschnelle Urheberschaft
 
 ## Lernziele
 - Eilmeldung und Evidenzstatus trennen
@@ -18,7 +18,7 @@
 - Recheck- und Falsifikationspunkte festlegen
 
 ## 20-Sekunden-Erklärung
-In einer Krise zählt Geschwindigkeit – aber auch der Satz „Das wissen wir noch nicht“. Gute Krisenkommunikation zeigt Quelle, Zeitstempel und Evidenzstatus. Urheberschaft oder „hybrider Angriff“ wird erst behauptet, wenn die Evidenz dafür trägt.
+In einer Krise zählt Geschwindigkeit - aber auch der Satz „Das wissen wir noch nicht“. Gute Krisenkommunikation zeigt Quelle, Zeitstempel und Evidenzstatus. Urheberschaft oder „hybrider Angriff“ wird erst behauptet, wenn die Evidenz dafür trägt.
 
 ## Einfache Einführung
 Krisen schaffen Zeitdruck und Informationslücken. Gerade dann entstehen leicht falsche Gewissheiten. Ein robustes Protokoll priorisiert Schutzinformation und macht Unsicherheit sichtbar.
@@ -26,7 +26,7 @@ Krisen schaffen Zeitdruck und Informationslücken. Gerade dann entstehen leicht 
 ## Fachliche Vertiefung
 1. Eilstatus kann getrennt werden in bestätigt, plausibel, unbestätigt, widersprüchlich und zurückgezogen.
 2. Amtliche Quellen sind häufig primär und handlungsrelevant, aber auch amtliche Informationen können aktualisiert oder korrigiert werden.
-3. Desinformation und hybride Einflussnahme brauchen belastbare Evidenz zu Falschheit/Manipulation, Intent, Akteur oder Koordination – je nach Begriff.
+3. Desinformation und hybride Einflussnahme brauchen belastbare Evidenz zu Falschheit/Manipulation, Intent, Akteur oder Koordination - je nach Begriff.
 4. Jede wichtige Krisenaussage erhält einen Recheck-Zeitpunkt oder Trigger: Welche neue Information würde die Einordnung ändern?
 
 ## Begriffe / Glossarbox
@@ -67,7 +67,7 @@ Krisen-Evidenzstatus, Attribution, Misinformation/Desinformation, Recheck.
 Krisenkommunikation verbindet Tempo mit Quellenklarheit und expliziter Revisionsfähigkeit.
 
 ## Sprechertext
-In einer Krise ist „wir wissen es noch nicht“ manchmal die professionellste Information. Sie verhindert nicht Handlung – sie zeigt, welcher Teil gesichert ist und welcher noch geprüft wird.
+In einer Krise ist „wir wissen es noch nicht“ manchmal die professionellste Information. Sie verhindert nicht Handlung - sie zeigt, welcher Teil gesichert ist und welcher noch geprüft wird.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst nach Legacy-Reaudit B06; Medien-/Moderationsentscheidungen werden als evidenzgebundene Interventionen ohne Personen-/Intent-Score behandelt.

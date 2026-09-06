@@ -94,7 +94,7 @@ Policy Coherence fragt, ob Maßnahmen, Ressorts und Ebenen in dieselbe Richtung 
 ## 6. Instrumente korrekt einordnen
 
 ### Scorecard
-Ein strukturiertes Wirkungsprofil – kein Empfehlungsautomat.
+Ein strukturiertes Wirkungsprofil - kein Empfehlungsautomat.
 
 ### WÖk-ID / Register
 WÖk-eigene Ordnungs- und Mappinginstrumente. Eine ID macht einen Wert nicht wahr.
@@ -142,11 +142,11 @@ Eine Scorecard kann Wirkungen strukturieren. Die Entscheidung muss zusätzlich F
 
 ## Typische Fehlinterpretationen
 
-- „Der höchste Score ist automatisch die beste Option.“ – Falsch.
-- „Ein WÖk-ID-Eintrag beweist Wirkung.“ – Falsch.
-- „Das Wirkungssteuergesetz gilt bereits.“ – Falsch; WÖk-Modell/Entwurf.
-- „Keine robuste Präferenz = schlechte Analyse.“ – Falsch.
-- „Delivery ist nur Projektmanagement und hat mit Wirkung nichts zu tun.“ – Falsch; ohne Umsetzung kein Outcome.
+- „Der höchste Score ist automatisch die beste Option.“ - Falsch.
+- „Ein WÖk-ID-Eintrag beweist Wirkung.“ - Falsch.
+- „Das Wirkungssteuergesetz gilt bereits.“ - Falsch; WÖk-Modell/Entwurf.
+- „Keine robuste Präferenz = schlechte Analyse.“ - Falsch.
+- „Delivery ist nur Projektmanagement und hat mit Wirkung nichts zu tun.“ - Falsch; ohne Umsetzung kein Outcome.
 
 ## WÖk-Abgrenzung
 

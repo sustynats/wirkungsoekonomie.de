@@ -8,7 +8,7 @@
 **legacy_sources:** `content/lehrgaenge/demokratie-schuetzen-grundlagen.md`; `demokratie-schuetzen-medien-moderation-dm-v*.md`; `demokratie-medien-v*.md`  
 **reviewed_at:** 2026-08-21
 
-## Gestaltung als Wirkpfadbestandteil – nicht als Wirkungsbeweis
+## Gestaltung als Wirkpfadbestandteil - nicht als Wirkungsbeweis
 
 ## Lernziele
 - Inhalt und Gestaltung getrennt analysieren
@@ -18,7 +18,7 @@
 - positive Zugänglichkeitswirkungen ebenso prüfen wie Manipulationsrisiken
 
 ## 20-Sekunden-Erklärung
-Nicht nur Worte rahmen. Bildausschnitt, Schnitt, Musik, Untertitel und KI-Bearbeitung verändern, was wahrgenommen wird. Deshalb dokumentieren wir Ursprung und Bearbeitung – und behaupten Wirkung erst, wenn sie beobachtet wurde.
+Nicht nur Worte rahmen. Bildausschnitt, Schnitt, Musik, Untertitel und KI-Bearbeitung verändern, was wahrgenommen wird. Deshalb dokumentieren wir Ursprung und Bearbeitung - und behaupten Wirkung erst, wenn sie beobachtet wurde.
 
 ## Einfache Einführung
 Ein kurzer Schnitt kann Kontext verdichten oder verzerren. Untertitel können Barrieren abbauen. Musik kann Emotionalität verstärken. Diese Gestaltungselemente sind mögliche Mechanismen, keine automatische Wirkungsrichtung.
@@ -64,7 +64,7 @@ Dokumentiere für einen Clip Originalquelle, Bearbeitungskette, mögliche positi
 multimodale Provenienz, KI/Synthese, Potenzial vs. Wirkung.
 
 ## Zusammenfassung
-Gestaltung wird transparent gemacht und wirkungsbezogen geprüft – ohne Stilmerkmale zu überkausalisieren.
+Gestaltung wird transparent gemacht und wirkungsbezogen geprüft - ohne Stilmerkmale zu überkausalisieren.
 
 ## Sprechertext
 Ein Bild kann echt sein und trotzdem irreführen, wenn Ausschnitt oder Schnitt Kontext verändern. Darum gehört zur Medienwirkung immer die Frage: Woher kommt das Material und was wurde damit gemacht?

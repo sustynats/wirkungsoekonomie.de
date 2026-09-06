@@ -18,7 +18,7 @@
 - Reality Check und Lernschleife etablieren
 
 ## 20-Sekunden-Erklärung
-Ein Protokoll soll nicht Menschen bewerten. Es dokumentiert die Entscheidung: Was war das Problem? Was war das Ziel? Welche Option haben wir gewählt? Was erwarteten wir – und was ist später tatsächlich passiert?
+Ein Protokoll soll nicht Menschen bewerten. Es dokumentiert die Entscheidung: Was war das Problem? Was war das Ziel? Welche Option haben wir gewählt? Was erwarteten wir - und was ist später tatsächlich passiert?
 
 ## Einfache Einführung
 Selbstbindung ist wertvoll, wenn sie Reflexion ermöglicht. Ein Moderationsprotokoll darf aber nicht zum Personenprofil oder automatischen Sanktionsscore werden.

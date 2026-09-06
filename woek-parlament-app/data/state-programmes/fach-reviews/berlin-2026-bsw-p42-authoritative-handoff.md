@@ -1,6 +1,6 @@
-## WÖk FACH BATCH — Berlin BSW P42: Kleine Unternehmen / Vergabe / Once-Only / Genehmigungsfiktion / Ausbildungsumlage / Übergänge — source-bound review + finite U10 repair
+## WÖk FACH BATCH - Berlin BSW P42: Kleine Unternehmen / Vergabe / Once-Only / Genehmigungsfiktion / Ausbildungsumlage / Übergänge - source-bound review + finite U10 repair
 
-Authoritative continuation after P41 `5455310139`. Frozen artefact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P42/66. Current exact materialised main remains `b0209e26bbc93d89070bc89e0c83df7d4ab0269f` (P1–P22 terminal); P23–P41 are already in the authoritative source-order Fach queue and must be consumed idempotently before/with this batch. Generic delegated/#313 RNAA is not Fach authority. No DNS mapping, Recommendation, score or programme-wide judgement.
+Authoritative continuation after P41 `5455310139`. Frozen artefact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P42/66. Current exact materialised main remains `b0209e26bbc93d89070bc89e0c83df7d4ab0269f` (P1-P22 terminal); P23-P41 are already in the authoritative source-order Fach queue and must be consumed idempotently before/with this batch. Generic delegated/#313 RNAA is not Fach authority. No DNS mapping, Recommendation, score or programme-wide judgement.
 
 ### 1. Current-law / additionality baseline
 
@@ -17,7 +17,7 @@ This page cannot be assessed against a zero baseline:
 
 Hard boundary for the whole page: **administrative simplification, a grant/levy, a larger number of internships or an expenditure allocation is Output/Input, not itself employment, productivity, innovation, training quality or welfare outcome.** Competition, transparency, data protection, legal protection, quality/safety and fiscal additionality are non-compensable guards where material.
 
-### 2. U01 / U02 / U06 / U09 — frame/headings
+### 2. U01 / U02 / U06 / U09 - frame/headings
 
 #### `BE-BSW-P42-U01-A01-ab72e0549e3e`
 Target-group framing: family businesses, self-employed and freelancers/small enterprises placed at centre of economic policy.
@@ -29,7 +29,7 @@ Target-group framing: family businesses, self-employed and freelancers/small ent
 Umbrella list: deregulation, digital administration, training support.
 
 - `terminal_fach_state = NON_EFFECT_UMBRELLA_INSTRUMENT_LIST_REVIEWED`
-- Reason: it announces the instrument families that are specified in subsequent P42 objects. Counting it separately would double-count U03–U08.
+- Reason: it announces the instrument families that are specified in subsequent P42 objects. Counting it separately would double-count U03-U08.
 
 #### `BE-BSW-P42-U02-48d8cd64f9e3`
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
@@ -43,7 +43,7 @@ Umbrella list: deregulation, digital administration, training support.
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 - `context_kind = STRUCTURAL_HEADING`
 
-### 3. U01-A03 — Mutterschutz für Selbständige
+### 3. U01-A03 - Mutterschutz für Selbständige
 
 #### `BE-BSW-P42-U01-A03-0556500bd692`
 
@@ -58,7 +58,7 @@ Umbrella list: deregulation, digital administration, training support.
 - Noncompensation: a nominal entitlement cannot compensate for inadequate actual income/health coverage or inaccessible administration.
 - Reality check: protected income replacement, take-up/coverage, work interruption, health/protection outcomes, administrative burden and business-continuity effects.
 
-### 4. U03 — public procurement threshold / SME access
+### 4. U03 - public procurement threshold / SME access
 
 #### `BE-BSW-P42-U03-A01-007555a3f475`
 
@@ -73,7 +73,7 @@ Umbrella list: deregulation, digital administration, training support.
 - Distribution: small firms/new entrants vs established suppliers; public budget/taxpayers; sector-specific supplier markets.
 - Reality check: bidder diversity/new entrants, SME award share, procurement duration/admin cost, prices/quality, single-bid rates, complaints/audit findings and contract splitting.
 
-### 5. U04 — Once-Only + transparency database
+### 5. U04 - Once-Only + transparency database
 
 #### `BE-BSW-P42-U04-A01-4a90ff8c78eb`
 
@@ -87,7 +87,7 @@ Umbrella list: deregulation, digital administration, training support.
 - Noncompensation: fewer forms cannot compensate for unlawful data use, weak information security or uncorrectable wrong records.
 - Reality check: data re-entry events, processing time, user/admin hours, error/correction rate, successful automated retrieval, security/privacy incidents and end-to-end completion.
 
-#### `BE-BSW-P42-U04-A02-2f078055a2e9` — **compound parent; deterministic split required**
+#### `BE-BSW-P42-U04-A02-2f078055a2e9` - **compound parent; deterministic split required**
 
 The current atom combines two materially different actions/mechanisms and must not remain one effect object. Parent becomes:
 
@@ -97,7 +97,7 @@ The current atom combines two materially different actions/mechanisms and must n
 
 CodeX shall create deterministic children from these exact clauses/spans and preserve parent lineage:
 
-**Child A — exact clause:** `Hierdurch lässt sich auch die bislang freiwillig unterhaltene Transparenzdatenbank des Landes Berlin abschaffen`
+**Child A - exact clause:** `Hierdurch lässt sich auch die bislang freiwillig unterhaltene Transparenzdatenbank des Landes Berlin abschaffen`
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = NEGATIVE_TRANSPARENCY_AND_GRANT_ACCOUNTABILITY_RISK / FUNCTIONALLY_EQUIVALENT_SUBSTITUTE_DEPENDENT`
@@ -108,7 +108,7 @@ CodeX shall create deterministic children from these exact clauses/spans and pre
 - Noncompensation: staff/time savings do not compensate for loss of grant accountability, auditability or public transparency.
 - Reality check: functional replacement coverage, public data availability, grant eligibility checks, audit traceability, duplicate-data workload and error/correction burden.
 
-**Child B — exact clause:** `die freigesetzten Mitarbeiter an sinnvollerer Stelle einsetzen.`
+**Child B - exact clause:** `die freigesetzten Mitarbeiter an sinnvollerer Stelle einsetzen.`
 
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: the source specifies neither the number/qualification/current workload of genuinely freed staff nor the destination function, vacancy/capacity baseline, transition cost or measurable service outcome. A generic reallocation promise therefore has no source-bound direction/evidence assessment without inventing the receiving mechanism.
@@ -116,7 +116,7 @@ CodeX shall create deterministic children from these exact clauses/spans and pre
 
 CodeX may generate stable child IDs/hashes mechanically and directly attach the decisions above because Fach is bound to the exact child clause texts, not to invented semantics.
 
-### 6. U05 — permit delays / approval fiction / no-extra-burden guard
+### 6. U05 - permit delays / approval fiction / no-extra-burden guard
 
 #### `BE-BSW-P42-U05-A01-32af5af87323`
 - `terminal_fach_state = NON_EFFECT_PROBLEM_CLAIM_REVIEWED`
@@ -137,7 +137,7 @@ CodeX may generate stable child IDs/hashes mechanically and directly attach the 
 - `terminal_fach_state = NON_EFFECT_NO_ADDITIONAL_BURDEN_SAFEGUARD_REVIEWED`
 - Reason: `kein Zusatzaufwand` is a target/guard for digitalisation, not an independent mechanism. Preserve as falsifiable delivery criterion: user/admin time, duplicate work, errors and process steps must not rise.
 
-### 7. U07 — Berlin Ausbildungsplatzumlage: current-law parameter delta, exemptions, support
+### 7. U07 - Berlin Ausbildungsplatzumlage: current-law parameter delta, exemptions, support
 
 #### `BE-BSW-P42-U07-A01-750f4f56897e`
 
@@ -147,7 +147,7 @@ CodeX may generate stable child IDs/hashes mechanically and directly attach the 
 - Baseline: Berlin has already enacted the levy framework with a general threshold of **10** socially insured employees. The BSW proposal `ab 20 Mitarbeitern` is therefore a concrete parameter modification, not creation of the levy.
 - Mechanism: raising the threshold exempts more small employers → lower levy burden/admin exposure for those firms, but narrows the contribution base and may reduce Ausbildungskasse revenue/incentive reach unless offset elsewhere.
 - Omissions: exact employee definition, interaction with 4.6% training quota, revenue delta, number/sector of newly exempt firms, compensation rules and funding balance.
-- Distribution: employers 10–19 employees, apprentices, training firms/non-training firms, Ausbildungskasse/fiscal backstop.
+- Distribution: employers 10-19 employees, apprentices, training firms/non-training firms, Ausbildungskasse/fiscal backstop.
 - Noncompensation: lower SME levy cannot compensate for an underfunded training-support system if additional training places then fall; conversely fund revenue alone cannot justify disproportionate burden without training additionality.
 - Reality check: levy base/revenue, exemptions, training-place additionality, applicants/unfilled places, conversion to training firms, admin burden and sectoral incidence.
 
@@ -170,7 +170,7 @@ CodeX may generate stable child IDs/hashes mechanically and directly attach the 
 - Omissions: support instrument/budget, qualification/AEVO/sector barriers, time to readiness, retention/quality, deadweight and coordination with chambers/Ausbildungskasse.
 - Reality check: firms becoming eligible, additional high-quality training places, completion/retention, costs per additional place and sector distribution.
 
-### 8. U08 — research collaboration / internships / study orientation / transitions
+### 8. U08 - research collaboration / internships / study orientation / transitions
 
 #### `BE-BSW-P42-U08-A01-3581533dc231`
 
@@ -218,7 +218,7 @@ CodeX may generate stable child IDs/hashes mechanically and directly attach the 
 - Noncompensation: staffing quantity cannot compensate for qualification, research-integrity, teaching-quality or labour-rights failure.
 - Reality check: additional qualified entrants, role performance/retention, qualification bridging, quality/safety indicators and displacement/additionality.
 
-### 9. U10 — energy-policy framing + SVIK allocation: **do not falsely close compound atom**
+### 9. U10 - energy-policy framing + SVIK allocation: **do not falsely close compound atom**
 
 `BE-BSW-P42-U10-A01-1de4b6990a33` contains at least two materially different clauses separated by the semicolon: (1) a political/causal framing about sanctions/CO2 pricing and energy policy; (2) a subsequent allocation/use proposition concerning federal `Sondervermögen Infrastruktur und Klimaneutralität` funds. The current frozen review ledger exposes the single compound parent and a deliberately truncated excerpt rather than the complete second clause. Fach will not infer the missing wording.
 
@@ -248,7 +248,7 @@ Therefore:
 
 `BE_BSW_P42_FACH_CLEAN_OBJECTS = PASS_SOURCE_BOUND`
 
-but **do not** set `BE_BSW_P42_FACH_COMPLETE` yet. After materialisation, replace the opaque P42 page envelope only with the finite exact U10 child residual(s) until the follow-up Fach closure. P1–P41/earlier queue remains protected; BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
+but **do not** set `BE_BSW_P42_FACH_COMPLETE` yet. After materialisation, replace the opaque P42 page envelope only with the finite exact U10 child residual(s) until the follow-up Fach closure. P1-P41/earlier queue remains protected; BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
 
 ### 11. CodeX handoff
 

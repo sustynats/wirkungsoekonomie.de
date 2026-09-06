@@ -51,7 +51,7 @@ Welche Primärdaten oder belastbaren Studien zeigen, dass der behauptete Zustand
 
 ### 2.2 Wie sieht die Baseline aus?
 
-Welcher Ausgangszustand liegt vor – zu welchem Zeitpunkt, in welchem Raum, für welche Gruppe?
+Welcher Ausgangszustand liegt vor - zu welchem Zeitpunkt, in welchem Raum, für welche Gruppe?
 
 ### 2.3 Wie entwickelt sich der Trend?
 
@@ -71,7 +71,7 @@ Ein sichtbarer Zustand kann Ergebnis tieferer Mechanismen sein.
 
 ### 2.7 Was ist der bindende Engpass?
 
-Von mehreren Ursachen kann eine diejenige sein, die Veränderung tatsächlich begrenzt. WÖk nennt sie – sofern belegt – `binding bottleneck`.
+Von mehreren Ursachen kann eine diejenige sein, die Veränderung tatsächlich begrenzt. WÖk nennt sie - sofern belegt - `binding bottleneck`.
 
 ### 2.8 Was passiert ohne Eingriff?
 
@@ -173,7 +173,7 @@ Erst danach kann ein sinnvolles Ziel entstehen.
 
 Vielleicht lautet das Ziel nicht einfach „mehr Pflegekräfte“, sondern beispielsweise „mehr tatsächlich verfügbare qualifizierte Pflegezeit je pflegebedürftiger Person bei gesicherter Qualität“.
 
-Das ist bereits Goal Review – und zeigt, warum die Reihenfolge wichtig ist.
+Das ist bereits Goal Review - und zeigt, warum die Reihenfolge wichtig ist.
 
 ## 8. Problem Review und staatliche Verfahren
 
@@ -224,7 +224,7 @@ Zu stark. Komplexe Systeme können mehrere Ursachen und Rückkopplungen haben.
 Falsch. Der Gegenfaktum-Pfad kann sich auch ohne Eingriff verändern.
 
 ### „Problem Review soll die politische Zielsetzung widerlegen.“
-Falsch. Es soll sie empirisch prüfen – Bestätigung ist ein valides Ergebnis.
+Falsch. Es soll sie empirisch prüfen - Bestätigung ist ein valides Ergebnis.
 
 ## 11. Quellen
 
@@ -283,7 +283,7 @@ Und was passiert, wenn wir nichts ändern? Wird die Lage automatisch schlimmer? 
 
 Genau das ist Problem Review.
 
-Wir nehmen die politische oder wirtschaftliche Problembeschreibung nicht einfach als Wahrheit – aber wir wollen sie auch nicht zwanghaft widerlegen.
+Wir nehmen die politische oder wirtschaftliche Problembeschreibung nicht einfach als Wahrheit - aber wir wollen sie auch nicht zwanghaft widerlegen.
 
 Wir fragen: Gibt es das Problem? Wie groß ist es? Wer ist betroffen? Was ist der Trend? Was ist Symptom, was Ursache? Gibt es mehrere plausible Erklärungen? Was ist vielleicht der bindende Engpass?
 

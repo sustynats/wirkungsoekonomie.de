@@ -50,7 +50,7 @@ Zwei Maschinenvarianten unterscheiden sich in Energie, Arbeitssicherheit, Wartba
 
 ## Gegenbeispiel / typische Fehlinterpretation
 
-„Variante A hat 71,4 Punkte und B 70,9 – also muss A gewählt werden.“ Ohne Sensitivität, Unsicherheit und Schutzprüfung ist diese Aussage nicht tragfähig.
+„Variante A hat 71,4 Punkte und B 70,9 - also muss A gewählt werden.“ Ohne Sensitivität, Unsicherheit und Schutzprüfung ist diese Aussage nicht tragfähig.
 
 ## Was bestehende Methoden bereits leisten
 

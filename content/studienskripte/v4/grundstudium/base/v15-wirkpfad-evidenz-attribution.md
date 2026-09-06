@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Jetzt wissen wir, welches Problem wir haben und welchen Zielzustand wir wollen. Erst jetzt fragen wir: **Wie soll die konkrete Maßnahme diesen Zustand verändern?** Ein Wirkpfad verbindet Auslöser, Mechanismus, Zustandsänderung und Referenz. Er ist eine Hypothese – keine Wahrheit. Deshalb müssen wir für jeden Schritt Evidenz, Bedingungen, Nebenwirkungen, Gegenfaktum und spätere Falsifikationsmöglichkeiten mitdenken.
+Jetzt wissen wir, welches Problem wir haben und welchen Zielzustand wir wollen. Erst jetzt fragen wir: **Wie soll die konkrete Maßnahme diesen Zustand verändern?** Ein Wirkpfad verbindet Auslöser, Mechanismus, Zustandsänderung und Referenz. Er ist eine Hypothese - keine Wahrheit. Deshalb müssen wir für jeden Schritt Evidenz, Bedingungen, Nebenwirkungen, Gegenfaktum und spätere Falsifikationsmöglichkeiten mitdenken.
 
 ## Lernziele
 
@@ -30,7 +30,7 @@ Nach dieser Vorlesung kannst du:
 
 Die Wirkungsforschung kennt seit langem Logiken wie:
 
-- Input–Activity–Output–Outcome–Impact,
+- Input-Activity-Output-Outcome-Impact,
 - Logic Models,
 - Theory of Change,
 - Wirkungsketten und Wirkungstreppen.
@@ -79,19 +79,19 @@ und
 
 ## 3. Die WÖk-Arbeitsnotation A→M→ΔZ→R
 
-### A – Auslöser / Action
+### A - Auslöser / Action
 
 Was wird konkret getan, entschieden, produziert oder kommuniziert?
 
-### M – Mechanismus
+### M - Mechanismus
 
 Über welchen kausalen Zusammenhang verändert A Verhalten, Ressourcen, Anreize, Rechte, Belastungen oder Systembedingungen?
 
-### ΔZ – Zustandsänderung
+### ΔZ - Zustandsänderung
 
-Welcher relevante Zustand verändert sich – bei wem, wo, wann, wie stark?
+Welcher relevante Zustand verändert sich - bei wem, wo, wann, wie stark?
 
-### R – Referenz
+### R - Referenz
 
 Woran wird diese Zustandsänderung fachlich bewertet?
 
@@ -217,7 +217,7 @@ Attribution ist die begründete Zurechnung eines Anteils der beobachteten Zustan
 
 Formell als Denkstütze:
 
-`Wirkungsbeitrag ≈ beobachteter Zustand mit Intervention – erwarteter Zustand ohne Intervention`
+`Wirkungsbeitrag ≈ beobachteter Zustand mit Intervention - erwarteter Zustand ohne Intervention`
 
 Das ist kein allgemeines Rechenrezept. Es erinnert nur daran, dass der Vergleichsmaßstab kausal sein muss.
 
@@ -343,7 +343,7 @@ Prüfungsfähig:
 - IOOI,
 - A→M→ΔZ→R,
 - Bedingungen/Annahmen,
-- 1.–3. Ordnung,
+- 1.-3. Ordnung,
 - Rebound/Spillover/Leakage,
 - Evidenz vs. Richtung,
 - Gegenfaktum/Attribution,
@@ -366,7 +366,7 @@ Die WÖk erfindet das nicht neu.
 
 Sie baut eine eigene kurze Arbeitsnotation dazu: A, M, Delta Z, R.
 
-A ist der Auslöser – also die konkrete Maßnahme.
+A ist der Auslöser - also die konkrete Maßnahme.
 
 M ist der Mechanismus. Was passiert dazwischen?
 
@@ -388,7 +388,7 @@ Das ist unser Gegenfaktum.
 
 Denn wenn etwas nach einem Gesetz besser wird, heißt das noch nicht automatisch, dass es wegen des Gesetzes besser wurde.
 
-Wir brauchen Attribution – oder wenigstens eine sauber begründete Contribution.
+Wir brauchen Attribution - oder wenigstens eine sauber begründete Contribution.
 
 Und eine gute Wirkungshypothese hat noch einen letzten Baustein: Sie kann falsch sein.
 

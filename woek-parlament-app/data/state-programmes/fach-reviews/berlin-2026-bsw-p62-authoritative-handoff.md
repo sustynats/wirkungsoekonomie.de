@@ -1,4 +1,4 @@
-## WÖk FACH BATCH — Berlin BSW physical PDF page 62 complete source-bound review + P62→P63 fax fragment repair
+## WÖk FACH BATCH - Berlin BSW physical PDF page 62 complete source-bound review + P62→P63 fax fragment repair
 
 Continuation after P61 `5458936303`. Frozen artefact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P62/66. Exact frozen P62 inventory: 10 source units, 23 old atom IDs. Generic delegated/#313 RNAA is not Fach authority. No DNS mapping, Recommendation, score or programme-wide judgement.
 
@@ -21,18 +21,18 @@ U02:
 - `A02-7a17a8d148c5` shortage of planners/gardeners/engineers → `NON_EFFECT_WORKFORCE_DIAGNOSIS_REVIEWED`; source claim requires occupation-specific vacancy/turnover data.
 - `A03-d8f51ba03955` is a compound policy list and must become a zero-count versioned parent. Deterministically split the exact clauses after shared frame `Die Leitlinie des BSW ist es`:
   1. `den öffentlichen Dienst für diese Berufsgruppen attraktiver zu machen` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; no pay/work-condition/recruitment/tenure instrument is specified.
-  2. `Ausbildungen zu fördern` → `EXPLICIT_FACH_APPROVED`; `impact_direction = POSITIVE_PUBLIC_SERVICE_SKILL_PIPELINE_POTENTIAL / TRAINING_CAPACITY_TARGETING_AND_RETENTION_DEPENDENT`; `evidence_level = MEDIUM_FOR_TRAINING_TO_QUALIFIED_LABOUR_SUPPLY_MECHANISM / RETENTION_AND_SERVICE_OUTCOME_PENDING`. Reality check: additional completed relevant qualifications, successful hiring/retention in shortage occupations, time-to-fill and service capacity — training places alone are input.
+  2. `Ausbildungen zu fördern` → `EXPLICIT_FACH_APPROVED`; `impact_direction = POSITIVE_PUBLIC_SERVICE_SKILL_PIPELINE_POTENTIAL / TRAINING_CAPACITY_TARGETING_AND_RETENTION_DEPENDENT`; `evidence_level = MEDIUM_FOR_TRAINING_TO_QUALIFIED_LABOUR_SUPPLY_MECHANISM / RETENTION_AND_SERVICE_OUTCOME_PENDING`. Reality check: additional completed relevant qualifications, successful hiring/retention in shortage occupations, time-to-fill and service capacity - training places alone are input.
   3. `die Konkurrenzen zur freien Wirtschaft und der Bundeswehr zu reduzieren` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; no wage, career, working-time, recruitment or retention lever is specified, so the counterfactual cannot be evaluated.
 Generate child IDs mechanically from exact clause text; retain old A03 as versioned/non-counting parent.
 
-## B. U04 — hiring-process speed
+## B. U04 - hiring-process speed
 
 - `A01-82ff66313faa`, `A02-a42d80cb3f0f`, `A03-6c547bec53c1`, `A04-3e895f013df8` → `NON_EFFECT_DIAGNOSIS_OR_CAUSAL_CLAIM_REVIEWED`. The programme's months-long-duration and causal attribution to rules/participation require process-stage data; do not treat them as measured baseline.
-- `A05-17a5a4a53b80` — reduce bureaucratic rules and participation requirements by law `auf ein Minimum` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`. Exact reason: no rules, statutes, approval steps or participation safeguards to be removed are identified. Speed gains cannot be weighed against merit selection, equal opportunity, personal-council participation, legal protection or error/reversal risk without inventing the rule delta.
-- `A06-9ce5b69175cc` — one-month completion/contract target → `NON_EFFECT_SERVICE_TIME_TARGET_REVIEWED`; target metric, not its own mechanism. Preserve as later falsification threshold only if a concrete process reform is specified.
-- `A07-9d5bba59fff2` — increased AI use at unspecified steps → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`. Exact reason: use case text is insufficiently precise (`z.B. ...`), with no decision boundary, human review, model/data provenance, error/bias testing, data-protection, staff-co-determination or procurement/vendor design. Do not infer that AI itself shortens hiring without a process delta.
+- `A05-17a5a4a53b80` - reduce bureaucratic rules and participation requirements by law `auf ein Minimum` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`. Exact reason: no rules, statutes, approval steps or participation safeguards to be removed are identified. Speed gains cannot be weighed against merit selection, equal opportunity, personal-council participation, legal protection or error/reversal risk without inventing the rule delta.
+- `A06-9ce5b69175cc` - one-month completion/contract target → `NON_EFFECT_SERVICE_TIME_TARGET_REVIEWED`; target metric, not its own mechanism. Preserve as later falsification threshold only if a concrete process reform is specified.
+- `A07-9d5bba59fff2` - increased AI use at unspecified steps → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`. Exact reason: use case text is insufficiently precise (`z.B. ...`), with no decision boundary, human review, model/data provenance, error/bias testing, data-protection, staff-co-determination or procurement/vendor design. Do not infer that AI itself shortens hiring without a process delta.
 
-## C. U06 — employment safeguards, staff councils, health
+## C. U06 - employment safeguards, staff councils, health
 
 - `A01-dd400d35d473` labour-law security advantage → `NON_EFFECT_EMPLOYMENT_CONTEXT_REVIEWED`.
 - `A02-e2eff4a107be` current role of staff councils → `NON_EFFECT_CURRENT_GOVERNANCE_CONTEXT_REVIEWED`.
@@ -45,23 +45,23 @@ Generate child IDs mechanically from exact clause text; retain old A03 as versio
 - `A04-6c6ff52d2f36` promote workplace health programmes in authorities → `EXPLICIT_FACH_APPROVED`.
   - `impact_direction = POSITIVE_OCCUPATIONAL_HEALTH_AND_RETENTION_POTENTIAL / PROGRAMME_QUALITY_WORK_ORGANISATION_AND_ADDITIONALITY_DEPENDENT`
   - `evidence_level = MEDIUM / CONTENT_AND_OUTCOME_DEPENDENT`
-  - Guard: health programmes must not individualise structural workload/staffing problems. Outcomes: wellbeing/work ability, sickness duration/frequency, retention and workload — programme participation alone is output.
+  - Guard: health programmes must not individualise structural workload/staffing problems. Outcomes: wellbeing/work ability, sickness duration/frequency, retention and workload - programme participation alone is output.
 - `A05-da40dde93400` psychotherapy must not be a blanket hiring exclusion → `NON_EFFECT_INDIVIDUAL_ASSESSMENT_AND_ANTI_STIGMA_GUARD_REVIEWED`. Current Berlin beamtenrecht already requires an individual health-suitability assessment; preserve this as a hard non-discrimination/individual-assessment guard rather than pretending a new universal legal ban is fully specified.
 
-## D. U08 — performance incentives / promotion
+## D. U08 - performance incentives / promotion
 
 - `A01-00cb47d54a20`, `A02-e7dc1112e1cd` → `NON_EFFECT_CAREER_AND_PAY_DIAGNOSIS_REVIEWED`.
 - `A03-033bbce1ee86` → `NON_EFFECT_GENERIC_CHANGE_COMMITMENT_REVIEWED`.
 - `A04-7a5f5c71525a` more performance bonuses → `EXPLICIT_FACH_APPROVED`.
   - `impact_direction = AMBIVALENT_PERFORMANCE_INCENTIVE_AND_PAY_DIFFERENTIATION_EFFECT / METRIC_GAMING_FAIRNESS_AND_BUDGET_DEPENDENT`
   - `evidence_level = HIGH_FOR_DIRECT_PAY_INCENTIVE_MECHANISM / SERVICE_QUALITY_EFFECT_UNCERTAIN`
-  - Potential: reward scarce/high performance and retention. Risks: gaming/easily measured output bias, teamwork erosion, favouritism, inequity, recurring fiscal cost. Reality check: transparent criteria, distribution, retention/recruitment, quality/error metrics and employee trust — bonus count is input.
+  - Potential: reward scarce/high performance and retention. Risks: gaming/easily measured output bias, teamwork erosion, favouritism, inequity, recurring fiscal cost. Reality check: transparent criteria, distribution, retention/recruitment, quality/error metrics and employee trust - bonus count is input.
 - `A05-347df71a4f42` promotions for continuous performance as `Regelfall` → `EXPLICIT_FACH_APPROVED` with guard.
   - `impact_direction = AMBIVALENT_CAREER_PROGRESSION_AND_RETENTION_POTENTIAL / MERIT_POSITION_BUDGET_AND_EQUAL_OPPORTUNITY_GUARDED`
   - `evidence_level = MEDIUM_FOR_CAREER_INCENTIVE_MECHANISM / NET_ORGANISATIONAL_OUTCOME_DEPENDENT`
   - Competence boundary: Beamten promotion remains subject to legal merit/position requirements; do not render an automatic entitlement. Reality check: promotion access by performance and demographic group, vacancy/status-post availability, retention, pay bill and service quality.
 
-## E. U10 — digital administration + P62→P63 repair
+## E. U10 - digital administration + P62→P63 repair
 
 - `A01-5db5f0cca864` → `NON_EFFECT_SERVICE_ORIENTATION_FRAME_REVIEWED`.
 - `A02-508b4843a227` replace paper files with digitally managed files → `EXPLICIT_FACH_APPROVED`.
@@ -86,7 +86,7 @@ After the U02-A03 deterministic 3-child split and P62→P63 fax-fragment repair 
 
 `BE_BSW_P62_FACH_COMPLETE = PASS_SOURCE_BOUND_OBJECT_LEVEL`
 
-Protected BSW physical Fach scope becomes P1–P62 **for P62-owned content**, with only the P63 first fragment consumed as cross-page continuation. The next full untouched Fach page is P63; its remaining objects stay open. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
+Protected BSW physical Fach scope becomes P1-P62 **for P62-owned content**, with only the P63 first fragment consumed as cross-page continuation. The next full untouched Fach page is P63; its remaining objects stay open. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
 
 ### CodeX boundary
 

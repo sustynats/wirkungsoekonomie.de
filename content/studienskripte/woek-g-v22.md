@@ -5,9 +5,7 @@
 **Vorlesungscode:** V22  
 **Modul/Abschnitt:** G2.4  
 **Titel:** Wirkungssprache und Quellenklarheit  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v22-wirkungssprache-und-quellenklarheit.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v22.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v22.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungssprache und Quellenklarheit** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V21 „Produkte, Technologien und Institutionen als Auslöser"
 **Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Wie sprechen wir über Wirkung, ohne mehr zu behaupten, als wir wissen? Wirkungs
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Wirkung sauber formulieren – Begriffe, Quellen, Grenzen
+- **Titel:** Wirkung sauber formulieren - Begriffe, Quellen, Grenzen
 - **Länge:** ~14 Min
 - **Kernaussage in einem Satz:** Gute Wirkungssprache unterscheidet Wirkung, Wirkungspotenzial und Wirkungsrisiko und macht Quellen sowie Unsicherheiten sichtbar.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Sprache steuert Aufmerksamkeit.** Wer „wir wirken" sagt, setzt eine Behauptung. Wer „wir haben Wirkungspotenzial" sagt, markiert eine Möglichkeit. Dieser Unterschied ist fachlich entscheidend.
+**Abschnitt A - Sprache steuert Aufmerksamkeit.** Wer „wir wirken" sagt, setzt eine Behauptung. Wer „wir haben Wirkungspotenzial" sagt, markiert eine Möglichkeit. Dieser Unterschied ist fachlich entscheidend.
 
-**Abschnitt B – Drei Begriffe trennen.** Wirkung ist Zustandsveränderung. Wirkungspotenzial ist Möglichkeit. Wirkungsrisiko ist mögliche negative Veränderung oder Fehlwirkung.
+**Abschnitt B - Drei Begriffe trennen.** Wirkung ist Zustandsveränderung. Wirkungspotenzial ist Möglichkeit. Wirkungsrisiko ist mögliche negative Veränderung oder Fehlwirkung.
 
-**Abschnitt C – Quellenklarheit.** Jede Wirkungsbehauptung braucht eine Quelle: Daten, Studie, Beobachtung, Modell, Erfahrungswissen oder begründete Annahme. Die Quelle bestimmt die Stärke der Aussage.
+**Abschnitt C - Quellenklarheit.** Jede Wirkungsbehauptung braucht eine Quelle: Daten, Studie, Beobachtung, Modell, Erfahrungswissen oder begründete Annahme. Die Quelle bestimmt die Stärke der Aussage.
 
-**Abschnitt D – Sprache gegen Impact-Washing.** Unklare Begriffe erzeugen Scheinsicherheit. Klare Begriffe schützen vor Übertreibung.
+**Abschnitt D - Sprache gegen Impact-Washing.** Unklare Begriffe erzeugen Scheinsicherheit. Klare Begriffe schützen vor Übertreibung.
 
-**Abschnitt E – Praktische Formulierungen.** Statt „wir lösen das Problem" besser: „Diese Maßnahme kann unter diesen Bedingungen zu X beitragen; die Datenlage zeigt Y; offen bleibt Z."
+**Abschnitt E - Praktische Formulierungen.** Statt „wir lösen das Problem" besser: „Diese Maßnahme kann unter diesen Bedingungen zu X beitragen; die Datenlage zeigt Y; offen bleibt Z."
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -128,7 +124,6 @@ Formuliere eine übertriebene Wirkungsbehauptung aus Werbung, Politik oder Organ
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -242,7 +237,6 @@ Die folgende Runde verdichtet V22 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V22. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
@@ -340,7 +334,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 2
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -823,8 +816,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v22-wirkungssprache-und-quellenklarheit.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

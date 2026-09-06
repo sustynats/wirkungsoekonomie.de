@@ -121,11 +121,11 @@ Eine seriöse Bewertung zeigt diese Pfade getrennt und prüft, ob eine konkrete 
 
 ## Typische Fehlinterpretationen
 
-- „Netto-Wirkung = Summe aller Punkte.“ – Falsch.
-- „Nichtkompensation und RMO sind dasselbe.“ – Falsch.
-- „Der schlechteste Mikroindikator blockiert immer alles.“ – Falsch.
-- „Ein positiver Durchschnitt beweist faire Wirkung.“ – Falsch.
-- „Rebound bedeutet, Effizienz sei sinnlos.“ – Falsch; er ist ein möglicher Folgeeffekt.
+- „Netto-Wirkung = Summe aller Punkte.“ - Falsch.
+- „Nichtkompensation und RMO sind dasselbe.“ - Falsch.
+- „Der schlechteste Mikroindikator blockiert immer alles.“ - Falsch.
+- „Ein positiver Durchschnitt beweist faire Wirkung.“ - Falsch.
+- „Rebound bedeutet, Effizienz sei sinnlos.“ - Falsch; er ist ein möglicher Folgeeffekt.
 
 ## WÖk-Abgrenzung
 
@@ -139,7 +139,7 @@ Nichtkompensation hat Anschluss an Rechte, Do-No-Significant-Harm-, Sicherheits-
 
 ## Transferfrage
 
-Welche negative Wirkung würdest du in deinem Fall als „Trade-off“ behandeln – und welche nur bei einer klaren Schutzgrenze als nichtkompensierbar?
+Welche negative Wirkung würdest du in deinem Fall als „Trade-off“ behandeln - und welche nur bei einer klaren Schutzgrenze als nichtkompensierbar?
 
 ## Praxisaufgabe
 

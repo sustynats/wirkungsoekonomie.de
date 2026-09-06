@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Schema für Themenmodule
+# Wirkungscheck Bundestag V3 - Schema für Themenmodule
 
 ## Ziel
 

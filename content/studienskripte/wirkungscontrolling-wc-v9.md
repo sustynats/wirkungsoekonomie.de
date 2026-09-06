@@ -5,9 +5,7 @@
 **Vorlesungscode:** WC-V9  
 **Modul/Abschnitt:** WC  
 **Titel:** Wirkungsaudit, Datenqualität, Assurance und Missbrauchsschutz  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v9-audit-datenqualitaet-assurance.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v9.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v9.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungsaudit, Datenqualität, Assurance und Missbrauchsschutz** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,36 +44,36 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-Wirkungsdaten laden zum Schönen ein. **Wie stellt man sicher, dass Bewertungen belastbar, prüfbar und missbrauchssicher sind – ohne die Datenlage zu überfordern?**
+Wirkungsdaten laden zum Schönen ein. **Wie stellt man sicher, dass Bewertungen belastbar, prüfbar und missbrauchssicher sind - ohne die Datenlage zu überfordern?**
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Belastbar statt geschönt – Audit, Datenqualität und Assurance
+- **Titel:** Belastbar statt geschönt - Audit, Datenqualität und Assurance
 - **Länge:** ~15 Min
-- **Kernaussage in einem Satz:** Wirkungscontrolling braucht dokumentierte Datenqualität, unabhängige Prüfbarkeit (Assurance) und Schutz gegen Manipulation – Unsicherheit wird ausgewiesen, nicht versteckt.
+- **Kernaussage in einem Satz:** Wirkungscontrolling braucht dokumentierte Datenqualität, unabhängige Prüfbarkeit (Assurance) und Schutz gegen Manipulation - Unsicherheit wird ausgewiesen, nicht versteckt.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Datenqualität ausweisen.** Jeder Wert trägt eine Qualitätsangabe: Quelle, Bezugsjahr, Schätzung vs. Messung, Scope.
+**Abschnitt A - Datenqualität ausweisen.** Jeder Wert trägt eine Qualitätsangabe: Quelle, Bezugsjahr, Schätzung vs. Messung, Scope.
 
-**Abschnitt B – Unsicherheit transparent.** Unsicherheit wird benannt, nicht kaschiert; Scheingenauigkeit ist ein Fehler.
+**Abschnitt B - Unsicherheit transparent.** Unsicherheit wird benannt, nicht kaschiert; Scheingenauigkeit ist ein Fehler.
 
-**Abschnitt C – Auditierbarkeit & Assurance.** Nachvollziehbare Herkunft (WÖk-IDs) macht Bewertungen prüfbar; Assurance ist die unabhängige Prüfung.
+**Abschnitt C - Auditierbarkeit & Assurance.** Nachvollziehbare Herkunft (WÖk-IDs) macht Bewertungen prüfbar; Assurance ist die unabhängige Prüfung.
 
-**Abschnitt D – Missbrauchsschutz.** Typische Manipulationen (Scope-Tricks, Cherry-Picking, Kompensation) erkennen und verhindern.
+**Abschnitt D - Missbrauchsschutz.** Typische Manipulationen (Scope-Tricks, Cherry-Picking, Kompensation) erkennen und verhindern.
 
-**Abschnitt E – Governance.** Wirkungsrat, Rechtsschutz und Versionierung halten das System lernfähig und anfechtbar.
+**Abschnitt E - Governance.** Wirkungsrat, Rechtsschutz und Versionierung halten das System lernfähig und anfechtbar.
 
 ## 4. Skript / Folien (Lernseite)
 
 **Datenqualität ist Teil der Bewertung, nicht Beiwerk.** Jeder Scorecard-Wert trägt eine **Qualitätsangabe**: Quelle, Bezugsjahr, Messung vs. Schätzung, Scope-Grenzen. Ein hoher Wert mit schwacher Datenqualität ist weniger wert als ein belegter mittlerer. So verhindert Wirkungscontrolling, dass Bewertung Sicherheit vortäuscht, die die Daten nicht hergeben.
 
-**Unsicherheit gehört ausgewiesen.** Die Wirkungsökonomie verlangt **Zurechnung ohne Scheingenauigkeit**: Unsicherheiten, Annahmen und Bandbreiten werden benannt. „Wirkungswahrheit" meint Datenklarheit und Transparenz über Folgen – **kein** Wahrheitsmonopol (Grundlagen V7). Ehrlich ausgewiesene Unsicherheit ist ein Qualitätsmerkmal, kein Makel.
+**Unsicherheit gehört ausgewiesen.** Die Wirkungsökonomie verlangt **Zurechnung ohne Scheingenauigkeit**: Unsicherheiten, Annahmen und Bandbreiten werden benannt. „Wirkungswahrheit" meint Datenklarheit und Transparenz über Folgen - **kein** Wahrheitsmonopol (Grundlagen V7). Ehrlich ausgewiesene Unsicherheit ist ein Qualitätsmerkmal, kein Makel.
 
-**Auditierbarkeit und Assurance.** Weil Daten über **WÖk-IDs** (V3) nachvollziehbar zugeordnet sind, werden Bewertungen **auditierbar** – Herkunft und Bewertungslogik sind rückverfolgbar. **Assurance** ist die unabhängige Prüfung dieser Bewertungen. Auditierbarkeit ist Voraussetzung für Vertrauen und für spätere verifizierte Prüfungen (`docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md`).
+**Auditierbarkeit und Assurance.** Weil Daten über **WÖk-IDs** (V3) nachvollziehbar zugeordnet sind, werden Bewertungen **auditierbar** - Herkunft und Bewertungslogik sind rückverfolgbar. **Assurance** ist die unabhängige Prüfung dieser Bewertungen. Auditierbarkeit ist Voraussetzung für Vertrauen und für spätere verifizierte Prüfungen (`docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md`).
 
-**Missbrauchsschutz und Governance.** Typische Manipulationen: selektive **Scope-Grenzen**, **Cherry-Picking** günstiger Indikatoren, **Kompensation** kritischer Felder. Wirkungscontrolling erkennt diese Muster (Anschluss an V5). Governance-Instrumente – **Wirkungsrat**, Rechtsschutz, Versionierung – halten das System lernfähig, anfechtbar und korrigierbar. Bewertung ist damit kein Endurteil, sondern ein überprüfbarer, revidierbarer Prozess.
+**Missbrauchsschutz und Governance.** Typische Manipulationen: selektive **Scope-Grenzen**, **Cherry-Picking** günstiger Indikatoren, **Kompensation** kritischer Felder. Wirkungscontrolling erkennt diese Muster (Anschluss an V5). Governance-Instrumente - **Wirkungsrat**, Rechtsschutz, Versionierung - halten das System lernfähig, anfechtbar und korrigierbar. Bewertung ist damit kein Endurteil, sondern ein überprüfbarer, revidierbarer Prozess.
 
 ## 5. Glossar der Kernbegriffe
 
@@ -84,7 +81,7 @@ Wirkungsdaten laden zum Schönen ein. **Wie stellt man sicher, dass Bewertungen 
 |---|---|---|
 | Datenqualität | Belastbarkeit eines Werts (Quelle, Messung, Scope) | `begriffe/datenqualitaet` |
 | Assurance | unabhängige Prüfung der Bewertung | `begriffe/assurance` |
-| Auditierbarkeit | Nachvollziehbarkeit von Herkunft/Logik | _(noch keine Seite – WUStG-Leitlinien)_ |
+| Auditierbarkeit | Nachvollziehbarkeit von Herkunft/Logik | _(noch keine Seite - WUStG-Leitlinien)_ |
 | Wirkungswahrheit | Datenklarheit/Transparenz, kein Wahrheitsmonopol | `begriffe/wirkungswahrheit` |
 
 ## 6. Verständnisfragen (Mini-Quiz)
@@ -119,12 +116,11 @@ Nimm einen Wert aus deiner Scorecard (V4) und ergänze eine ehrliche **Datenqual
 
 ## 8. Praxisbeispiel
 
-**Der Scope-Trick.** Ein Unternehmen meldet niedrige Emissionen – aber nur für Scope 1, während Scope 3 (Lieferkette) ausgeblendet ist. Ein Wirkungsaudit deckt die selektive Scope-Grenze auf; die Datenqualität und Auditierbarkeit machen den blinden Fleck sichtbar. Ohne diese Prüfung wäre die Bewertung geschönt.
+**Der Scope-Trick.** Ein Unternehmen meldet niedrige Emissionen - aber nur für Scope 1, während Scope 3 (Lieferkette) ausgeblendet ist. Ein Wirkungsaudit deckt die selektive Scope-Grenze auf; die Datenqualität und Auditierbarkeit machen den blinden Fleck sichtbar. Ohne diese Prüfung wäre die Bewertung geschönt.
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -322,12 +318,11 @@ Die folgende Runde verdichtet WC-V9 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V9. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` – Auditierbarkeit, Missbrauchsschutz
+- `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` - Auditierbarkeit, Missbrauchsschutz
 - `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md`
 - Glossar: `begriffe/datenqualitaet`, `begriffe/assurance`, `begriffe/wirkungswahrheit`
 
@@ -415,12 +410,11 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 |---|---|---|
 | Datenqualität | Belastbarkeit eines Werts (Quelle, Messung, Scope) | `begriffe/datenqualitaet` |
 | Assurance | unabhängige Prüfung der Bewertung | `begriffe/assurance` |
-| Auditierbarkeit | Nachvollziehbarkeit von Herkunft/Logik | _(noch keine Seite – WUStG-Leitlinien)_ |
+| Auditierbarkeit | Nachvollziehbarkeit von Herkunft/Logik | _(noch keine Seite - WUStG-Leitlinien)_ |
 | Wirkungswahrheit | Datenklarheit/Transparenz, kein Wahrheitsmonopol | `begriffe/wirkungswahrheit` |
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -1060,8 +1054,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v9-audit-datenqualitaet-assurance.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

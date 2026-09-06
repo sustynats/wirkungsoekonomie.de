@@ -65,10 +65,10 @@ Vor Umsetzung wird formuliert, welche Beobachtung die Annahme schwächen würde.
 
 ## Typische Fehlinterpretationen
 
-- „Unsicherheit = negative Wirkung.“ – Nein.
-- „Ambivalent = wir wissen nichts.“ – Nein.
-- „OPEN = 0.“ – Nein.
-- „Eine Recommendation muss immer eindeutig sein.“ – Nein.
+- „Unsicherheit = negative Wirkung.“ - Nein.
+- „Ambivalent = wir wissen nichts.“ - Nein.
+- „OPEN = 0.“ - Nein.
+- „Eine Recommendation muss immer eindeutig sein.“ - Nein.
 
 ## WÖk-Abgrenzung
 

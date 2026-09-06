@@ -13,11 +13,11 @@
       {"id": 5374157612, "marker": "ST-GRUENE-A07.2", "updated_at": "2026-08-21T19:10:45Z", "body_sha256": "1ef75890c34411f4e3226a565cc4e230d154ee6e904c1fcfd96521ac81c2e99c"}
     ],
     "required_facts": {
-      "ST-GRUENE-PSP-R21": ["historical working window: **0344–0353**", "source-v2/restore records reused: **5**", "`ST_GRUENE_PSP_R21_LOCAL_PARITY = PASS`"],
-      "ST-GRUENE-PSP-R22": ["historical working window: **0354–0360**", "`ST_GRUENE_PSP_R22_LOCAL_PARITY = PASS`"],
-      "ST-GRUENE-PSP-R22.1": ["historical scope is **`0354–0362`**, not `0354–0360`", "historical rows in R22 = **9 (`0354–0362`)**", "`ST_GRUENE_PSP_R22_LOCAL_PARITY = PASS_CORRECTED_BOUNDARY`"],
-      "ST-GRUENE-PSP-R23": ["corrected historical working window: **0363–0381**", "`0366/0367/0374/0379` are provenance parents only after split", "`ST_GRUENE_PSP_R23_LOCAL_PARITY = PASS`"],
-      "ST-GRUENE RETRO-PARITY R24": ["historisches Working-Fenster **0382–0390**", "**23 einmalig gezählte aktive Effect-Leaves**", "`ST_GRUENE_PSP_R24_LOCAL_PARITY = PASS`"]
+      "ST-GRUENE-PSP-R21": ["historical working window: **0344-0353**", "source-v2/restore records reused: **5**", "`ST_GRUENE_PSP_R21_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R22": ["historical working window: **0354-0360**", "`ST_GRUENE_PSP_R22_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R22.1": ["historical scope is **`0354-0362`**, not `0354-0360`", "historical rows in R22 = **9 (`0354-0362`)**", "`ST_GRUENE_PSP_R22_LOCAL_PARITY = PASS_CORRECTED_BOUNDARY`"],
+      "ST-GRUENE-PSP-R23": ["corrected historical working window: **0363-0381**", "`0366/0367/0374/0379` are provenance parents only after split", "`ST_GRUENE_PSP_R23_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE RETRO-PARITY R24": ["historisches Working-Fenster **0382-0390**", "**23 einmalig gezählte aktive Effect-Leaves**", "`ST_GRUENE_PSP_R24_LOCAL_PARITY = PASS`"]
     },
     "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C11"
   },

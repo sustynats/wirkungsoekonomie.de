@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-06-emotion-reaktanz-identitaet.md curriculum=4.0 sanitized=true -->
-# DB-V4-06 · Emotion, Reaktanz und Identität – was Forschung tatsächlich trägt
+# DB-V4-06 · Emotion, Reaktanz und Identität - was Forschung tatsächlich trägt
 
 **lecture_id:** `WOEK-WB-DB-V4-006`  
 **offering_id:** `WOEK-WB-DB`  
@@ -21,10 +21,10 @@
 Emotionen beeinflussen Aufmerksamkeit und Entscheidungen, aber nicht nach einer einfachen Formel. Ein aufgeregter Mensch ist nicht „unfähig für Fakten“, und Ruhe garantiert keine Vernunft. Wir nutzen Forschung als Hinweis auf Wahrscheinlichkeiten, nicht als Fernpsychologie.
 
 ## Einfache Einführung
-Sätze wie „Druck erzeugt Gegendruck“ sind eingängig – und zu sicher. Reaktanz, motiviertes Denken oder kognitive Dissonanz sind reale Forschungsfelder, aber Effekte hängen von Situation, Person, Botschaft und sozialen Bedingungen ab.
+Sätze wie „Druck erzeugt Gegendruck“ sind eingängig - und zu sicher. Reaktanz, motiviertes Denken oder kognitive Dissonanz sind reale Forschungsfelder, aber Effekte hängen von Situation, Person, Botschaft und sozialen Bedingungen ab.
 
 ## Fachliche Vertiefung
-1. Emotion kann Aufmerksamkeit fokussieren oder verengen, Motivation erhöhen oder Reflexion erschweren – je nach Kontext.
+1. Emotion kann Aufmerksamkeit fokussieren oder verengen, Motivation erhöhen oder Reflexion erschweren - je nach Kontext.
 2. Reaktanz beschreibt mögliche Gegenreaktionen auf wahrgenommenen Freiheitsverlust; sie tritt nicht automatisch auf.
 3. Kognitive Dissonanz beschreibt Spannungen zwischen Kognitionen; wie Menschen damit umgehen, variiert.
 4. Praktisch gilt: eigene Aktivierung erkennen, Gesprächsoptionen wählen, Grenzen setzen und bei Bedrohung Sicherheit priorisieren.
@@ -65,10 +65,10 @@ Nimm eine Konfliktsituation und formuliere drei mögliche Mechanismen statt eine
 Probabilistische Psychologie, keine Intent-/Personendiagnose, Sicherheitsgrenzen.
 
 ## Zusammenfassung
-Psychologische Konzepte helfen, Möglichkeiten zu verstehen – nicht Menschen aus der Distanz zu erklären.
+Psychologische Konzepte helfen, Möglichkeiten zu verstehen - nicht Menschen aus der Distanz zu erklären.
 
 ## Sprechertext
-Psychologie ist kein Gedankenlesegerät. Sie sagt uns, dass bestimmte Reaktionen wahrscheinlicher werden können. Mehr nicht. Genau deshalb sprechen wir von Mechanismen und Bedingungen – und nicht davon, was „in dem Menschen gerade passiert“.
+Psychologie ist kein Gedankenlesegerät. Sie sagt uns, dass bestimmte Reaktionen wahrscheinlicher werden können. Mehr nicht. Genau deshalb sprechen wir von Mechanismen und Bedingungen - und nicht davon, was „in dem Menschen gerade passiert“.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Vollständige Neufassung nach Legacy-Reaudit B05; deterministische Psychologie-, Intent-, Reichweiten- und Wirkungsclaims wurden durch evidenzgebundene Potenzial-/Observation-/Attributionslogik ersetzt.

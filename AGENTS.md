@@ -25,6 +25,13 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Ueber alle Projekte zusammen sind hoechstens vier Vercel-Builds je Abrechnungszeitraum zulaessig. Pro Aenderungspaket wird genau ein Release Candidate gebaut; Production promotet dieses bereits gepruefte Artefakt ohne Rebuild.
 - Vercel Spend Management wird zum Beginn des naechsten Abrechnungszeitraums auf 0 USD zusaetzlichen Verbrauch gesetzt, soweit Vercel 0 USD akzeptiert, sonst maximal 1 USD, jeweils mit der harten Aktion `Pause all projects`.
 
+## Veröffentlichungsqualität
+
+- Veröffentlichte Texte, Downloads und Metadaten verwenden ausschließlich kurze ASCII-Bindestriche.
+- Dokument-Erstellerin und Autorin der eigenen WÖk-Publikationen ist Natalie Weber.
+- Interne Produktionsnotizen und lokale Dateipfade gehören nicht in veröffentlichte Inhalte oder Metadaten.
+- Vor Veröffentlichung sind Texte, PDF-Inhalte, Office-Dateien, Metadaten und Download-Fassungen zu prüfen. Technische Bereinigungen historischer Publikationen werden mit Datum und Prüfsummen dokumentiert; Originale bleiben im privaten Archiv erhalten.
+
 ## Inhaltliche Leitlinie Wirkungsökonomie
 
 - Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Wirtschaft, Staat, Institutionen und gesellschaftliches Zusammenleben gehören zu ihrem Gegenstandsbereich; einzelne Instrumente bilden nur Ausschnitte ab.
@@ -50,7 +57,7 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Deutschland besitzt bereits eine institutionalisierte Gesetzesfolgen- und Nachhaltigkeitspruefungsarchitektur. Die WÖk ersetzt sie nicht und darf nicht behaupten, Folgen- oder Nachhaltigkeitspruefung erstmals einzufuehren.
 - Fuer Bundesregelungsvorhaben sind insbesondere die Deutsche Nachhaltigkeitsstrategie (DNS), die Gesetzesfolgenabschaetzung nach GGO, die Nachhaltigkeitspruefung, eNAP/eGFA/E-Gesetzgebung und das DNS-Indikatoren-Monitoring als bestehende staatliche Referenzarchitektur anzuerkennen, soweit sachlich anwendbar.
 - § 43 GGO umfasst bereits Ziel/Notwendigkeit, Sachverhalt und alternative Loesungen. § 44 GGO umfasst beabsichtigte Wirkungen, unbeabsichtigte Nebenwirkungen und Nachhaltigkeitsbezug; § 44 Abs. 7 sieht auch Angaben zur spaeteren Ueberpruefung vor. WÖk darf daher weder Alternativenpruefung noch Ex-post-Ueberpruefung als eigene Erfindung darstellen.
-- WÖk-Zusatznutzen ist additiv und objektspezifisch zu beschreiben: Problem Review -> Goal Review -> A→M→ΔZ→R -> Wirkungen 1.–3. Ordnung/Kaskaden -> Verteilung/Resilienz -> Gegenfaktum/Attribution -> Material Omissions/Delivery/Policy Coherence -> Optionsvergleich -> Reality Check/Lernschleife -> Nichtkompensation harter Schutzgrenzen.
+- WÖk-Zusatznutzen ist additiv und objektspezifisch zu beschreiben: Problem Review -> Goal Review -> A→M→ΔZ→R -> Wirkungen 1.-3. Ordnung/Kaskaden -> Verteilung/Resilienz -> Gegenfaktum/Attribution -> Material Omissions/Delivery/Policy Coherence -> Optionsvergleich -> Reality Check/Lernschleife -> Nichtkompensation harter Schutzgrenzen.
 - DNS-/SDG-Zielbezug ist kein Kausalitaetsbeweis. Indikator ist nicht Wirkung. Output ist nicht Outcome. Beobachtung ist nicht Attribution.
 - Eine veroeffentlichte Nachhaltigkeitsdarstellung/GFA ist nicht automatisch ein veroeffentlichter eNAP-Rohexport. Fehlt eine oeffentlich auffindbare eNAP-Dokumentation, lautet der Status `NOT_PUBLICLY_ESTABLISHED`, niemals automatisch `NOT_ASSESSED`.
 - Bei geeigneten Bundesregelungsvorhaben ist der Layer `STATE_GFA_ENAP_BENCHMARK` getrennt vom unabhaengigen WÖk-Urteil zu fuehren. Konvergenz zwischen staatlicher Pruefung und WÖk ist ein valides Ergebnis; WÖk muss nicht kuenstlich anders urteilen.

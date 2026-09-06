@@ -1,4 +1,4 @@
-## WÖk FACH CLOSURE — Berlin BSW P25 deterministic children, part 1: digital health + civil/defence-health boundary
+## WÖk FACH CLOSURE - Berlin BSW P25 deterministic children, part 1: digital health + civil/defence-health boundary
 
 Continuation after #323 and P24 child closure. Same frozen artifact/SHA. Exact child IDs/texts are deterministic #323 source-bound objects. This supplies only withheld child Fach; no DNS, Recommendation, score, party-wide judgement or voter-facing recommendation.
 
@@ -6,7 +6,7 @@ Current-system guard: civil-military health preparedness is not a zero baseline.
 
 ### A. Digital health
 
-1. `BE-BSW-P25-U01-A02-C01-abe5ae8b6912` — digital appointment scheduling/allocation
+1. `BE-BSW-P25-U01-A02-C01-abe5ae8b6912` - digital appointment scheduling/allocation
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = CONDITIONAL_POSITIVE_APPOINTMENT_ACCESS_AND_ADMINISTRATIVE_EFFICIENCY_POTENTIAL / CAPACITY_NEUTRALITY_INTEROPERABILITY_AND_DIGITAL_INCLUSION_GUARD`
 - `evidence_level = MEDIUM_HIGH_FOR_SCHEDULING_FRICTION_MECHANISM / CARE_OUTCOME_PENDING`
@@ -15,7 +15,7 @@ Current-system guard: civil-military health preparedness is not a zero baseline.
 - Risks: digital exclusion, stale/partial availability data, queue gaming, fragmented portals, inappropriate triage and added staff work.
 - Reality check: time to appropriate appointment, failed/no-show/duplicate booking, staff time, non-digital accessibility, utilisation and equity.
 
-2. `BE-BSW-P25-U01-A02-C02-c2ec0b49f5bf` — digital documentation
+2. `BE-BSW-P25-U01-A02-C02-c2ec0b49f5bf` - digital documentation
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = CONDITIONAL_POSITIVE_DOCUMENTATION_CONTINUITY_AND_ADMINISTRATIVE_RELIEF_POTENTIAL / USABILITY_INTEROPERABILITY_PRIVACY_AND_SAFETY_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_INFORMATION_WORKFLOW_MECHANISM / NET_TIME_AND_QUALITY_OUTCOME_PENDING`
@@ -24,14 +24,14 @@ Current-system guard: civil-military health preparedness is not a zero baseline.
 - Noncompensation: time savings cannot compensate for unsafe, inaccurate or unlawfully processed clinical data.
 - Reality check: net documentation time, duplicate entry, error/correction rate, information availability at handoffs, user burden, privacy/security incidents and clinical safety.
 
-3. `BE-BSW-P25-U01-A02-C03-40401b1e96f5` — `nicht neue Abhängigkeiten von privaten Plattformen schaffen`
+3. `BE-BSW-P25-U01-A02-C03-40401b1e96f5` - `nicht neue Abhängigkeiten von privaten Plattformen schaffen`
 - `terminal_fach_state = NON_EFFECT_DIGITAL_SOVEREIGNTY_INTEROPERABILITY_AND_PROCUREMENT_GUARD_REVIEWED`
 - `counts_as_effect_object = false`
 - Exact reason: this clause is a design/procurement/reversibility guard for digital-health measures, not an independent intervention with its own state change. Preserve it as a hard evaluation condition: portability, open interfaces, exitability, competition, privacy/security and lifecycle cost must be tested for concrete systems. It must not be counted as a separate positive effect merely because dependency avoidance is desirable.
 
 ### B. Health / military-preparedness boundary
 
-4. `BE-BSW-P25-U03-A03-C01-faaf7c8c658e` — reject/stop Bundeswehr exercises in hospitals
+4. `BE-BSW-P25-U03-A03-C01-faaf7c8c658e` - reject/stop Bundeswehr exercises in hospitals
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_CIVILIAN_OPERATIONAL_INDEPENDENCE_VS_DEFENCE_HEALTH_PREPAREDNESS_EFFECT / EXERCISE_SCOPE_DISRUPTION_AND_REALISM_DEPENDENT`
 - `evidence_level = HIGH_FOR_DIRECT_EXERCISE_REMOVAL_MECHANISM / NET_RESILIENCE_AND_CARE_EFFECT_UNCERTAIN`
@@ -41,11 +41,11 @@ Current-system guard: civil-military health preparedness is not a zero baseline.
 - Noncompensation: preparedness cannot justify unsafe disruption to current patients; conversely uninterrupted routine operations cannot by itself establish adequate crisis readiness.
 - Reality check: exercise disruption/incidents, staff/bed impact, preparedness/interoperability test results, response performance in real events and alternative exercise designs.
 
-5. `BE-BSW-P25-U03-A03-C02-f239a96bb802` — reject `militärisch geprägte Zivilverteidigung`
+5. `BE-BSW-P25-U03-A03-C02-f239a96bb802` - reject `militärisch geprägte Zivilverteidigung`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: the source clause does not operationally define which civil-protection institutions, authorities, plans, exercises, infrastructure, command relations or resource transfers are meant by `militärisch geprägt`. Without that concrete delta, competence, preparedness benefit, rights/health trade-offs and counterfactual cannot be attributed source-bound. This remains terminal RNAA, not neutral/no-effect.
 
-6. `BE-BSW-P25-U03-A03-C03-c4efe285562a` — reject additional Bundeswehr-linked study places
+6. `BE-BSW-P25-U03-A03-C03-c4efe285562a` - reject additional Bundeswehr-linked study places
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_MEDICAL_TRAINING_CAPACITY_ALLOCATION_EFFECT / ADDITIONALITY_CONTRACT_AND_WORKFORCE_DESTINATION_DEPENDENT`
 - `evidence_level = HIGH_FOR_TRAINING_SLOT_ALLOCATION_MECHANISM / NET_CIVILIAN_AND_DEFENCE_WORKFORCE_EFFECT_UNCERTAIN`

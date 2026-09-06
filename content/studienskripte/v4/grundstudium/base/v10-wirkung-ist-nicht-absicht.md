@@ -53,11 +53,11 @@ Mögliche Outcomes: Kompetenzzuwachs, Beschäftigung, Einkommen, Selbstwirksamke
 
 ## 5. Nebenwirkungen
 
-Eine Maßnahme kann das Hauptziel erreichen und dennoch Nebenwirkungen erzeugen. Wirkungsanalyse endet deshalb nicht beim intendierten Pfad, sondern prüft 1.–3. Ordnung, Rebound, Verteilung und Schutzgrenzen soweit materiell.
+Eine Maßnahme kann das Hauptziel erreichen und dennoch Nebenwirkungen erzeugen. Wirkungsanalyse endet deshalb nicht beim intendierten Pfad, sondern prüft 1.-3. Ordnung, Rebound, Verteilung und Schutzgrenzen soweit materiell.
 
 ## 6. Lernen
 
-Später wird die ex-ante Annahme gegen Beobachtungen geprüft. Wenn der Mechanismus nicht trägt, wird das Modell geändert – nicht die Realität passend erklärt.
+Später wird die ex-ante Annahme gegen Beobachtungen geprüft. Wenn der Mechanismus nicht trägt, wird das Modell geändert - nicht die Realität passend erklärt.
 
 ## Begriffsbox
 
@@ -71,14 +71,14 @@ Später wird die ex-ante Annahme gegen Beobachtungen geprüft. Wenn der Mechanis
 
 ## Typische Fehlinterpretationen
 
-- „Gute Absicht = gute Wirkung.“ – Nein.
-- „Umgesetzt = gewirkt.“ – Nein.
-- „Outcome nach Maßnahme = verursacht durch Maßnahme.“ – Nicht automatisch.
-- „Keine Daten = keine Wirkung.“ – Nein; der Kausalstatus bleibt offen.
+- „Gute Absicht = gute Wirkung.“ - Nein.
+- „Umgesetzt = gewirkt.“ - Nein.
+- „Outcome nach Maßnahme = verursacht durch Maßnahme.“ - Nicht automatisch.
+- „Keine Daten = keine Wirkung.“ - Nein; der Kausalstatus bleibt offen.
 
 ## WÖk-Abgrenzung
 
-WÖk übernimmt die zentrale Trennung aus Evaluation, Theory of Change und IOOI und macht sie zu einem verbindlichen Teil der gesamten Steuerungsarchitektur. Der Zusatz liegt in der Kopplung mit Problem/Goal Review, Schutzgrenzen, Verteilung, Optionsvergleich und Reality Check – nicht in der Erfindung des Wirkungsbegriffs.
+WÖk übernimmt die zentrale Trennung aus Evaluation, Theory of Change und IOOI und macht sie zu einem verbindlichen Teil der gesamten Steuerungsarchitektur. Der Zusatz liegt in der Kopplung mit Problem/Goal Review, Schutzgrenzen, Verteilung, Optionsvergleich und Reality Check - nicht in der Erfindung des Wirkungsbegriffs.
 
 ## Quellen
 
@@ -96,4 +96,4 @@ Prüfungsfähig sind Absicht/Output/Outcome, Wirkungspotenzial, A→M→ΔZ→R,
 
 ## Sprechertext
 
-Wir meinen es gut – und trotzdem kann etwas anders wirken als gedacht. Genau deshalb ist Absicht nicht Wirkung. Ein Programm kann gestartet, Geld ausgegeben und eine Leistung erbracht sein. Das alles kann wichtig sein. Aber die Wirkungsfrage beginnt erst beim Zustand: Hat sich Gesundheit, Einkommen, Emission oder Teilhabe verändert? Und wenn ja: War unsere Maßnahme die Ursache? Diese Trennung klingt streng. Sie ist aber freundlich zur Realität, weil sie uns erlaubt zu lernen, ohne gute Absichten schlechtreden zu müssen.
+Wir meinen es gut - und trotzdem kann etwas anders wirken als gedacht. Genau deshalb ist Absicht nicht Wirkung. Ein Programm kann gestartet, Geld ausgegeben und eine Leistung erbracht sein. Das alles kann wichtig sein. Aber die Wirkungsfrage beginnt erst beim Zustand: Hat sich Gesundheit, Einkommen, Emission oder Teilhabe verändert? Und wenn ja: War unsere Maßnahme die Ursache? Diese Trennung klingt streng. Sie ist aber freundlich zur Realität, weil sie uns erlaubt zu lernen, ohne gute Absichten schlechtreden zu müssen.

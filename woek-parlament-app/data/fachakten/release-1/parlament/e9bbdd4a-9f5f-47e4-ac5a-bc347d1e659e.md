@@ -1,8 +1,8 @@
-# Vollständige Fachakte – Gesetz zur Anpassung des GAP-Integriertes Verwaltungs- und Kontrollsystem-Gesetzes und des GAP-Konditionalitäten-Gesetzes an die Vorgaben der Verordnung (EU) 2025/2649 sowie zur Verbesserung des behördlichen Informationsaustauschs
+# Vollständige Fachakte - Gesetz zur Anpassung des GAP-Integriertes Verwaltungs- und Kontrollsystem-Gesetzes und des GAP-Konditionalitäten-Gesetzes an die Vorgaben der Verordnung (EU) 2025/2649 sowie zur Verbesserung des behördlichen Informationsaustauschs
 
 > Die ursprüngliche Review-Datei bleibt unverändert. Das nachträgliche Entscheidungsreife-/Abstimmungssupplement wird ergänzend vollständig dargestellt. Keine Verdichtung.
 
-## A. Ursprünglicher Review – vollständig
+## A. Ursprünglicher Review - vollständig
 
 **analysis_version:** 1.1.0
 
@@ -2391,7 +2391,7 @@ _Leere Liste._
 
 ###### Eintrag 1
 
-**institution:** Deutscher Bundestag – DIP
+**institution:** Deutscher Bundestag - DIP
 
 ###### relevant_locations
 
@@ -2407,7 +2407,7 @@ _Leere Liste._
 
 ###### Eintrag 2
 
-**institution:** Deutscher Bundestag – DIP
+**institution:** Deutscher Bundestag - DIP
 
 ###### relevant_locations
 
@@ -2431,7 +2431,7 @@ _Leere Liste._
 
 **source_id:** CAND-EC-CAP-GERMANY
 
-**title:** Germany – CAP Strategic Plan
+**title:** Germany - CAP Strategic Plan
 
 **institution:** Europäische Kommission
 
@@ -2459,7 +2459,7 @@ _Leere Liste._
 
 **source_id:** CAND-EC-CAP-MONITORING
 
-**title:** CAP Strategic Plans – monitoring and annual performance reports
+**title:** CAP Strategic Plans - monitoring and annual performance reports
 
 **institution:** Europäische Kommission
 
@@ -2796,7 +2796,7 @@ _Leere Liste._
 
 **evidence_boundary:** Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung.
 
-## B. Entscheidungsreife und Abstimmungsverhalten – vollständige Ergänzung
+## B. Entscheidungsreife und Abstimmungsverhalten - vollständige Ergänzung
 
 **schema_version:** 1.0.0
 

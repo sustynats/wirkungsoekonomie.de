@@ -1,4 +1,4 @@
-# Berlin BSW Fach handoff — physical PDF pages 15–19
+# Berlin BSW Fach handoff - physical PDF pages 15-19
 
 This file is a byte-for-byte repository snapshot of the five authoritative issue #240 Fach comments consumed by the deterministic residual materialization. Source artifact: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`.
 
@@ -10,25 +10,25 @@ No text below is inferred, paraphrased, or edited.
 
 Source: https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5449855264
 
-## WÖk FACH BATCH — Berlin BSW physical PDF page 15 + P15/P16 cross-page repair
+## WÖk FACH BATCH - Berlin BSW physical PDF page 15 + P15/P16 cross-page repair
 
-Fresh controller basis: current `main=1a0757682e8d2365eb28218816484c2e1e13d83e` after merged #317. Authoritative BSW artifact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. P1–14 are protected terminal. This batch reviews only physical P15 and the one sentence broken across the P15/P16 page boundary. It does not validate any other P16 content.
+Fresh controller basis: current `main=1a0757682e8d2365eb28218816484c2e1e13d83e` after merged #317. Authoritative BSW artifact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. P1-14 are protected terminal. This batch reviews only physical P15 and the one sentence broken across the P15/P16 page boundary. It does not validate any other P16 content.
 
 Source basis: exact P15 source units/atom texts already frozen in `woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-v1.json`. The generic #313 RNAA decisions are not Fach proof and are superseded for the IDs below. No DNS mapping, Recommendation, score or party-wide judgement.
 
-### A. Non-counting context / diagnosis / rationale / parent strategy — terminal reviewed
+### A. Non-counting context / diagnosis / rationale / parent strategy - terminal reviewed
 
 Preserve as reviewed non-counting records; do not render or count them as independent effects:
 
-- `BE-BSW-P15-U01-A01-14066cdf71df` — high-level strategy/claimed mechanism “längeres gemeinsames Lernen”; non-counting parent to the concrete Gemeinschaftsschul-capacity object below.
-- `BE-BSW-P15-U01-A02-2759b7744c49` — claimed segregation/potential-assessment mechanism, rationale child.
-- `BE-BSW-P15-U01-A03-5291a9a6808e` — evidentiary/rationale claim about international comparison studies, not an instrument.
-- `BE-BSW-P15-U03-A01-650d3fc50eb4` — broad reform goal.
-- `BE-BSW-P15-U03-A02-e37f4e77aa7d` — diagnosis of overloaded/unclear curricula.
-- `BE-BSW-P15-U05-A02-93574e7a8989` — desired function of assessment as support rather than selection; no concrete process change specified in this atom.
-- `BE-BSW-P15-U08-A02-06d1de6ced9c` — Thüringen comparison/benchmark, not an additional Berlin measure.
-- `BE-BSW-P15-U11-A01-6526630d78da` — diagnosis about adequacy of mainstream-school support for some SEN pupils.
-- `BE-BSW-P15-U11-A02-f771a4dc0ebe` — needs/design rationale for small groups, specialist pedagogy and therapeutic support; not yet the institutional action.
+- `BE-BSW-P15-U01-A01-14066cdf71df` - high-level strategy/claimed mechanism “längeres gemeinsames Lernen”; non-counting parent to the concrete Gemeinschaftsschul-capacity object below.
+- `BE-BSW-P15-U01-A02-2759b7744c49` - claimed segregation/potential-assessment mechanism, rationale child.
+- `BE-BSW-P15-U01-A03-5291a9a6808e` - evidentiary/rationale claim about international comparison studies, not an instrument.
+- `BE-BSW-P15-U03-A01-650d3fc50eb4` - broad reform goal.
+- `BE-BSW-P15-U03-A02-e37f4e77aa7d` - diagnosis of overloaded/unclear curricula.
+- `BE-BSW-P15-U05-A02-93574e7a8989` - desired function of assessment as support rather than selection; no concrete process change specified in this atom.
+- `BE-BSW-P15-U08-A02-06d1de6ced9c` - Thüringen comparison/benchmark, not an additional Berlin measure.
+- `BE-BSW-P15-U11-A01-6526630d78da` - diagnosis about adequacy of mainstream-school support for some SEN pupils.
+- `BE-BSW-P15-U11-A02-f771a4dc0ebe` - needs/design rationale for small groups, specialist pedagogy and therapeutic support; not yet the institutional action.
 
 Schema-equivalent terminal status: `NON_EFFECT_CONTEXT_OR_NONCOUNTING_PARENT_REVIEWED`, retaining parent/child/rationale relations.
 
@@ -112,7 +112,7 @@ Policy: give internship performance stronger weight on the annual school report.
 - Risks: non-comparable firms/tasks/supervisors, employer bias, unequal access to high-quality placements and consequences for pupils facing disability, care or transport constraints.
 - Reality check: scoring reliability, moderation/appeal, subgroup gaps, placement-quality interaction and whether weighting improves transitions rather than merely grades.
 
-### C. P15/P16 segmentation P0 — one sentence must be repaired before terminalisation
+### C. P15/P16 segmentation P0 - one sentence must be repaired before terminalisation
 
 Current source atomisation is semantically broken:
 - P15 fragment `BE-BSW-P15-U11-A03-5debf719c8ef`: `Wir fordern deshalb den dauerhaften Erhalt der Förderzentren als`
@@ -134,7 +134,7 @@ This cross-page repair consumes only P16-U01-A01. P16-U01-A02/A03/A04 and all la
 
 ### D. Page-15 terminality
 
-After lossless materialisation of A–C, every P15 source unit/atom is either explicitly Fach-approved, reviewed non-counting, or consumed by the exact cross-page replacement object.
+After lossless materialisation of A-C, every P15 source unit/atom is either explicitly Fach-approved, reviewed non-counting, or consumed by the exact cross-page replacement object.
 
 `BE_BSW_P15_FACH_COMPLETE = PASS_SOURCE_BOUND_WITH_CROSS_PAGE_SEGMENTATION_REPAIR`
 
@@ -150,25 +150,25 @@ Create a fresh exact-current-main successor from `1a0757682e8d2365eb28218816484c
 
 Source: https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5449881459
 
-## WÖk FACH BATCH — Berlin BSW physical PDF page 16 + two deterministic segmentation repairs
+## WÖk FACH BATCH - Berlin BSW physical PDF page 16 + two deterministic segmentation repairs
 
-Continuation after Fach batch `5449855264`. Same frozen artifact: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. P1–15 are protected terminal after lossless materialisation of the preceding batch. This batch reviews the remaining P16 source objects and consumes only one P17 fragment required to repair a sentence split at the page boundary. It does **not** validate any other P17 object.
+Continuation after Fach batch `5449855264`. Same frozen artifact: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. P1-15 are protected terminal after lossless materialisation of the preceding batch. This batch reviews the remaining P16 source objects and consumes only one P17 fragment required to repair a sentence split at the page boundary. It does **not** validate any other P17 object.
 
 Source basis is the exact P16 source-unit/atom inventory already frozen in `woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-v1.json`. Generic delegated RNAA is rejected as Fach proof and is superseded for the exact IDs below. No DNS mapping, Recommendation, aggregate score or party-wide judgement.
 
-### A. Reviewed non-counting diagnosis / goal / framing — terminal
+### A. Reviewed non-counting diagnosis / goal / framing - terminal
 
 Use schema-equivalent `NON_EFFECT_CONTEXT_OR_NONCOUNTING_PARENT_REVIEWED`, preserving source and relations:
 
-- `BE-BSW-P16-U01-A02-24515642db66` — claimed equality/choice/best-support outcome of the Förderzentrum/inclusion architecture; this is a goal/quality claim, not a separate instrument from the preserved/merged setting architecture.
-- `BE-BSW-P16-U02-A01-081594df0016` — diagnosis: delays, duplicate structures and unclear responsibilities in split Schulassistenz governance.
-- `BE-BSW-P16-U02-A03-c396781c317b` — desired procedural end-state (“einfach, gerecht, planbar”), child goal of U02-A02.
-- `BE-BSW-P16-U04-A01-90e3b745ba1d` — rationale about school quality depending on multiprofessional cooperation.
-- `BE-BSW-P16-U08-A01-0ee7b0be25da` — educational/digitalisation framing (“Werkzeug, kein Ersatz”), not an instrument.
-- `BE-BSW-P16-U08-A03-7a69003dffca` — desired school-quality state (concentration/haptics/social interaction), child rationale for the following digital-use designs.
-- `BE-BSW-P16-U08-A04-8674f135ba78` — broad “digital devices must not dominate” guard; no independently specified threshold/instrument in this atom. Keep as non-counting design principle linked to U08-A02/U09.
-- `BE-BSW-P16-U12-A01-ccc36f2de4b5` — diagnosis of poor school-building condition.
-- `BE-BSW-P16-U12-A02-08ea8a9e41ca` — political/rhetorical attribution (“Verachtung ...”), not an effect-bearing policy object and not evidence of causal responsibility.
+- `BE-BSW-P16-U01-A02-24515642db66` - claimed equality/choice/best-support outcome of the Förderzentrum/inclusion architecture; this is a goal/quality claim, not a separate instrument from the preserved/merged setting architecture.
+- `BE-BSW-P16-U02-A01-081594df0016` - diagnosis: delays, duplicate structures and unclear responsibilities in split Schulassistenz governance.
+- `BE-BSW-P16-U02-A03-c396781c317b` - desired procedural end-state (“einfach, gerecht, planbar”), child goal of U02-A02.
+- `BE-BSW-P16-U04-A01-90e3b745ba1d` - rationale about school quality depending on multiprofessional cooperation.
+- `BE-BSW-P16-U08-A01-0ee7b0be25da` - educational/digitalisation framing (“Werkzeug, kein Ersatz”), not an instrument.
+- `BE-BSW-P16-U08-A03-7a69003dffca` - desired school-quality state (concentration/haptics/social interaction), child rationale for the following digital-use designs.
+- `BE-BSW-P16-U08-A04-8674f135ba78` - broad “digital devices must not dominate” guard; no independently specified threshold/instrument in this atom. Keep as non-counting design principle linked to U08-A02/U09.
+- `BE-BSW-P16-U12-A01-ccc36f2de4b5` - diagnosis of poor school-building condition.
+- `BE-BSW-P16-U12-A02-08ea8a9e41ca` - political/rhetorical attribution (“Verachtung ...”), not an effect-bearing policy object and not evidence of causal responsibility.
 
 Already source-classified structural headings remain terminal non-effect and must be preserved: `BE-BSW-P16-U03-acca43d7c40c`, `BE-BSW-P16-U07-c753fc8553c4`, `BE-BSW-P16-U11-d1a0bb6a69b8`.
 
@@ -269,7 +269,7 @@ Policy: smartphones generally not used during lessons and stored away before cla
 - Risks: enforcement conflict, emergency/access needs, loss of legitimate assistive/pedagogical use and burden of secure storage/responsibility.
 - Reality check: on-task behaviour, disruptions, learning/wellbeing, incidents/enforcement burden, exceptions and subgroup effects.
 
-### C. P16-U10 segmentation P0 — decimal/grade punctuation split
+### C. P16-U10 segmentation P0 - decimal/grade punctuation split
 
 Current parser wrongly split one sentence at `10.`:
 - `BE-BSW-P16-U10-A01-5748704ca6ed`: `Wir fordern, dass alle Schülerinnen und Schüler am Ende der 10.`
@@ -286,7 +286,7 @@ Fach decision for repaired object:
 - Guard: certificate acquisition is output, not proof of durable safe/critical digital behaviour.
 - Reality check: validated competency performance, retention/transfer, subgroup/accessibility gaps, remediation/support after non-passage and assessment reliability.
 
-### D. P16/P17 segmentation P0 — school-renovation sentence
+### D. P16/P17 segmentation P0 - school-renovation sentence
 
 Current parser split one sentence across the page boundary:
 - P16 `BE-BSW-P16-U12-A03-90387e1e4833`: `Deshalb fordern wir ein zentrales Programm zur Instandsetzung und ästhetischen Aufwertung von Schulen, das Nachhaltigkeit,`
@@ -308,7 +308,7 @@ This consumes **only** P17-U01-A01. P17-U01-A02/A03 and all later P17 objects re
 
 ### E. Page-16 terminality
 
-After lossless materialisation of A–D, every P16 source unit/atom is explicitly Fach-approved, reviewed non-counting, or superseded by deterministic repaired objects.
+After lossless materialisation of A-D, every P16 source unit/atom is explicitly Fach-approved, reviewed non-counting, or superseded by deterministic repaired objects.
 
 `BE_BSW_P16_FACH_COMPLETE = PASS_SOURCE_BOUND_WITH_TWO_SEGMENTATION_REPAIRS`
 
@@ -324,25 +324,25 @@ Materialise only the explicit P15 batch `5449855264` and this P16 batch lossless
 
 Source: https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5449901373
 
-## WÖk FACH BATCH — Berlin BSW physical PDF page 17 + compound-atom repair
+## WÖk FACH BATCH - Berlin BSW physical PDF page 17 + compound-atom repair
 
 Continuation after batches `5449855264` (P15) and `5449881459` (P16). Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. P17-U01-A01 is already consumed/superseded by the P16/P17 school-renovation repair and is not reopened here.
 
 Source basis: exact P17 source units/atoms frozen in `woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-v1.json`. Generic RNAA is not Fach proof and is superseded for exact IDs below. No DNS mapping, Recommendation, aggregate score or party-wide judgement.
 
-### A. Reviewed non-counting diagnosis / rationale / broad goal — terminal
+### A. Reviewed non-counting diagnosis / rationale / broad goal - terminal
 
 Use schema-equivalent `NON_EFFECT_CONTEXT_OR_NONCOUNTING_PARENT_REVIEWED` and preserve relations:
-- `BE-BSW-P17-U04-A01-029dcb7651d6` — broad university mission/goal.
-- `BE-BSW-P17-U04-A02-e188219c816d` — diagnosis of structural underfunding.
-- `BE-BSW-P17-U04-A04-89d7b8e889cc` — claimed mechanism/rationale (less third-party dependence/more academic freedom) child to U04-A03.
-- `BE-BSW-P17-U04-A05-fcd69cd674b0` — contested diagnosis about graduate share, not an instrument.
-- `BE-BSW-P17-U04-A06-02f9eb2d1288` — diagnosis about skilled-worker shortages in vocational occupations.
-- `BE-BSW-P17-U04-A08-a69f96a8e466` — arithmetic/resource rationale for reduced student numbers, child to access-capacity choices; not an independent measure.
-- `BE-BSW-P17-U06-A01-68d75e94fa9f` and `BE-BSW-P17-U06-A02-1c1f49560446` — social-access goals, not independent instruments.
-- `BE-BSW-P17-U08-A02-8d62fdc9960f` — stated social-mobility/financial-barrier outcome rationale child to scholarship option.
+- `BE-BSW-P17-U04-A01-029dcb7651d6` - broad university mission/goal.
+- `BE-BSW-P17-U04-A02-e188219c816d` - diagnosis of structural underfunding.
+- `BE-BSW-P17-U04-A04-89d7b8e889cc` - claimed mechanism/rationale (less third-party dependence/more academic freedom) child to U04-A03.
+- `BE-BSW-P17-U04-A05-fcd69cd674b0` - contested diagnosis about graduate share, not an instrument.
+- `BE-BSW-P17-U04-A06-02f9eb2d1288` - diagnosis about skilled-worker shortages in vocational occupations.
+- `BE-BSW-P17-U04-A08-a69f96a8e466` - arithmetic/resource rationale for reduced student numbers, child to access-capacity choices; not an independent measure.
+- `BE-BSW-P17-U06-A01-68d75e94fa9f` and `BE-BSW-P17-U06-A02-1c1f49560446` - social-access goals, not independent instruments.
+- `BE-BSW-P17-U08-A02-8d62fdc9960f` - stated social-mobility/financial-barrier outcome rationale child to scholarship option.
 
-Protected/non-effect source units remain terminal: `BE-BSW-P17-U03-6a244b353a67` heading, `BE-BSW-P17-U05-2f97cb32fbc0` heading, `BE-BSW-P17-U09-66245e12f99d` heading. `BE-BSW-P17-U10-9757a32b37a7` remains a reviewed duplicate/non-counting restatement of protected `BE-BSW-FRIEDEN-005` from the P1–5 terminal stock; do not double-count or re-review the Zivilklausel here.
+Protected/non-effect source units remain terminal: `BE-BSW-P17-U03-6a244b353a67` heading, `BE-BSW-P17-U05-2f97cb32fbc0` heading, `BE-BSW-P17-U09-66245e12f99d` heading. `BE-BSW-P17-U10-9757a32b37a7` remains a reviewed duplicate/non-counting restatement of protected `BE-BSW-FRIEDEN-005` from the P1-5 terminal stock; do not double-count or re-review the Zivilklausel here.
 
 ### B. Explicit source-bound Fach-approved effect objects
 
@@ -424,7 +424,7 @@ Policy stage: examine creation of a Land scholarship for students from low-incom
 #### `BE-BSW-P17-U06-A03-1d2947073fc5`
 `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`: “landesweiter Sozialpakt Studium” is a named umbrella instrument without source-bound contents, eligibility, financing, mechanism or implementation architecture in this atom. Its social-access goal is visible via U06-A01/A02, but an effect direction for the unspecified pact itself would be invented. Reassess only when exact component measures are bound (e.g. U07/U08 or other explicit objects).
 
-### C. Compound atom P0 — `BE-BSW-P17-U04-A07-4b5b81391b68`
+### C. Compound atom P0 - `BE-BSW-P17-U04-A07-4b5b81391b68`
 
 The source atom combines **two materially independent actions** and must not remain a single effect object:
 `Daher sollten die Mittel eher gezielt in die sogenannten MINT-Fächer fließen, bei denen ein Bedarf an Absolventen besteht, und der Zugang in andere Studienrichtungen limitiert werden.`
@@ -453,10 +453,10 @@ P17-U01-A01 is consumed by prior cross-page repair; P17-U01-A02/A03 are approved
 
 `BE_BSW_P17_FACH_COMPLETE = PASS_SOURCE_BOUND_WITH_COMPOUND_OBJECT_REPAIR`
 
-After lossless materialisation of P15/P16/P17 batches, recompute residual SET-WISE. BSW physical review envelope advances to **P18–66**. Do not infer that all later page units are effect-bearing.
+After lossless materialisation of P15/P16/P17 batches, recompute residual SET-WISE. BSW physical review envelope advances to **P18-66**. Do not infer that all later page units are effect-bearing.
 
 ### CodeX handoff
-Consume `5449855264`, `5449881459`, and this batch losslessly on exact-current-main, preserve protected P1–14 and all supersession/parent-child links, rerun Berlin residual integrity + Source-vs-View + SamePage + tests/typecheck/lint/build, and publish exact set-wise residual in #240/#241. Keep combined Golden State fail-closed. GitHub-only; no Vercel.
+Consume `5449855264`, `5449881459`, and this batch losslessly on exact-current-main, preserve protected P1-14 and all supersession/parent-child links, rerun Berlin residual integrity + Source-vs-View + SamePage + tests/typecheck/lint/build, and publish exact set-wise residual in #240/#241. Keep combined Golden State fail-closed. GitHub-only; no Vercel.
 
 ---
 
@@ -464,7 +464,7 @@ Consume `5449855264`, `5449881459`, and this batch losslessly on exact-current-m
 
 Source: https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5450371661
 
-## WÖk FACH BATCH — Berlin BSW physical PDF page 18 / Kultur
+## WÖk FACH BATCH - Berlin BSW physical PDF page 18 / Kultur
 
 Authoritative continuation after `5449855264` (P15), `5449881459` (P16), `5449901373` (P17). Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`.
 
@@ -472,28 +472,28 @@ This is an explicit source-bound WÖk Fach review of the exact P18 objects curre
 
 ### Source-unit reclassification / exact terminal decisions
 
-`BE-BSW-P18-U02-A01-42653aa09816` — source: “Kunst muss frei sein … politisch beeinflusste Preisvergaben und Förderentscheidungen …”  
+`BE-BSW-P18-U02-A01-42653aa09816` - source: “Kunst muss frei sein … politisch beeinflusste Preisvergaben und Förderentscheidungen …”  
 **Terminal:** `NON_EFFECT_NORMATIVE_GUARD_REVIEWED`. This sentence states a freedom/selection guard and criticism of a perceived selection practice, but does not itself specify an independent legal, budgetary, administrative or funding action. It is retained as a design/rights guard for later concrete funding-law objects, not as an effect object.
 
-`BE-BSW-P18-U02-A02-3a3cbad0cccd` — rejection of “staatliche Gesinnungsprüfungen” for scientists/artists/cultural workers.  
+`BE-BSW-P18-U02-A02-3a3cbad0cccd` - rejection of “staatliche Gesinnungsprüfungen” for scientists/artists/cultural workers.  
 **Terminal:** `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`. The intended prohibition/withdrawal is directionally recognisable, but the source does not define the present Berlin rule/practice to be changed, the legal/administrative instrument, operative criterion, decision procedure, affected funding/employment contexts or remedy. Without that object boundary a defensible A→M→ΔZ path cannot be assigned. This is not a neutral/no-effect judgement.
 
-`BE-BSW-P18-U03-A01-a82be89be529` — “Kunst muss offen sein … unabhängig von Status und Vermögenslage.”  
+`BE-BSW-P18-U03-A01-a82be89be529` - “Kunst muss offen sein … unabhängig von Status und Vermögenslage.”  
 **Terminal:** `NON_EFFECT_GOAL_CONTEXT_REVIEWED`. Normative target/distribution guard, no independent policy instrument.
 
-`BE-BSW-P18-U03-A02-41106017d0e6` — “möglichst niedrigschwelliger Zugang zu hochkulturellen Angeboten.”  
+`BE-BSW-P18-U03-A02-41106017d0e6` - “möglichst niedrigschwelliger Zugang zu hochkulturellen Angeboten.”  
 **Terminal:** `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`. Assessable target, but no specific access instrument is stated here (price rule, entitlement, outreach, transport/accessibility, opening hours, funding condition etc.). Preserve as goal context; no direction/score inferred.
 
-`BE-BSW-P18-U03-A03-1995bd0f471a` — financial/social barriers should not obstruct encounters with art, understanding of art or early discovery of artistic ability.  
+`BE-BSW-P18-U03-A03-1995bd0f471a` - financial/social barriers should not obstruct encounters with art, understanding of art or early discovery of artistic ability.  
 **Terminal:** `NON_EFFECT_PROBLEM_AND_GOAL_CONTEXT_REVIEWED`. This identifies a distribution/access problem and desired state, not an independent intervention.
 
-`BE-BSW-P18-U06-A01-ad4989a33ffc` — “Berliner Kulturszene … berühmtesten Attraktionen Deutschlands.”  
+`BE-BSW-P18-U06-A01-ad4989a33ffc` - “Berliner Kulturszene … berühmtesten Attraktionen Deutschlands.”  
 **Terminal:** `NON_EFFECT_BASELINE_CLAIM_REVIEWED`. Descriptive justification, not a policy action.
 
-`BE-BSW-P18-U06-A02-61f04b5859b6` — cultural diversity/tourism allegedly enriches life and the Land budget.  
+`BE-BSW-P18-U06-A02-61f04b5859b6` - cultural diversity/tourism allegedly enriches life and the Land budget.  
 **Terminal:** `NON_EFFECT_CAUSAL_CONTEXT_CLAIM_REVIEWED`. This is an asserted rationale/baseline claim requiring separate evidence if used publicly; it is not itself an intervention and must not be treated as proven fiscal outcome.
 
-`BE-BSW-P18-U06-A03-c08b9272f6ca` — demand for a Berlin Kulturfördergesetz creating a long-term reliable funding framework.  
+`BE-BSW-P18-U06-A03-c08b9272f6ca` - demand for a Berlin Kulturfördergesetz creating a long-term reliable funding framework.  
 **Terminal:** `EXPLICIT_FACH_APPROVED`.  
 **WÖk direction:** `POSITIVE_GOVERNANCE_POTENTIAL / HIGH_DESIGN_AND_FINANCING_DEPENDENCE`.  
 **A→M→ΔZ:** statutory funding framework → more durable/transparent rules and planning horizon for cultural institutions/projects → potentially less stop-go uncertainty and better planning/retention/investment conditions.  
@@ -501,14 +501,14 @@ This is an explicit source-bound WÖk Fach review of the exact P18 objects curre
 **Evidence/maturity:** `EX_ANTE_MECHANISM_PLAUSIBLE / IMPLEMENTATION_AND_OUTCOME_PENDING`.  
 **Reality check:** publication/stability of rules, actual funding predictability, access/distribution across institution size/scene/district, administrative burden, additionality and observable continuity/participation outcomes; spending volume alone is not outcome.
 
-`BE-BSW-P18-U07-A01-6328aee1a635` — binding cooperation structures between politics, administration and cultural scene to secure transparency, planning certainty and democratic participation.  
+`BE-BSW-P18-U07-A01-6328aee1a635` - binding cooperation structures between politics, administration and cultural scene to secure transparency, planning certainty and democratic participation.  
 **Terminal:** `EXPLICIT_FACH_APPROVED_CHILD_DESIGN`. Treat as a **design child** of `BE-BSW-P18-U06-A03-c08b9272f6ca`, not a duplicate independent parent programme.  
 **WÖk direction:** `POSITIVE_GOVERNANCE_POTENTIAL / REPRESENTATION_AND_PROCESS_GUARDS_REQUIRED`.  
 **Mechanism:** codified roles/processes → clearer decision paths and participation → potentially higher procedural transparency/predictability/voice.  
 **Risks:** representation capture, formal participation without influence, slower processes, unclear accountability or conflicts between arm's-length artistic independence and political/administrative steering.  
 **Reality check:** who participates, selection/representation rules, publication of decisions/criteria, processing times, dispute/review routes and evidence that participation changes decision quality rather than merely adding meetings.
 
-`BE-BSW-P18-U07-A02-675c32deb8d6` — reference to Niedersachsen/Sachsen/Sachsen-Anhalt as examples.  
+`BE-BSW-P18-U07-A02-675c32deb8d6` - reference to Niedersachsen/Sachsen/Sachsen-Anhalt as examples.  
 **Terminal:** `NON_EFFECT_COMPARATOR_CONTEXT_REVIEWED`. Comparative justification only; no Berlin action beyond the parent Kulturfördergesetz demand.
 
 ### Page-level result
@@ -517,17 +517,17 @@ This is an explicit source-bound WÖk Fach review of the exact P18 objects curre
 
 P18 is Fach-terminal after the exact reclassifications above. Generic auto-RNAA for these IDs must not survive as the authoritative Fach layer.
 
-**Accepted Fach residual after this batch:** BSW physical PDF pages **19–66** only. Pages 1–18 are now explicit/protected Fach terminal **at the issue/handoff layer**. This does not claim current `main` has already materialised P15–P18; that is a separate technical state.
+**Accepted Fach residual after this batch:** BSW physical PDF pages **19-66** only. Pages 1-18 are now explicit/protected Fach terminal **at the issue/handoff layer**. This does not claim current `main` has already materialised P15-P18; that is a separate technical state.
 
 ### CodeX handoff
 
 Losslessly materialise the full explicit chain on a fresh exact-current-main successor:
-- `5449855264` — P15 + P15/P16 repair
-- `5449881459` — P16 + parser/cross-page repair
-- `5449901373` — P17 + compound-object repair
-- **this comment** — P18 explicit Fach review/reclassification
+- `5449855264` - P15 + P15/P16 repair
+- `5449881459` - P16 + parser/cross-page repair
+- `5449901373` - P17 + compound-object repair
+- **this comment** - P18 explicit Fach review/reclassification
 
-Then recompute `BE_FACH_CONTENT_RESIDUAL` **SET-WISE** from exact terminal IDs/scopes. Do not use stale arithmetic. Expected BSW Fach residual after successful materialisation is P19–P66 unless a newer explicit #240 handoff closes additional scopes before write time. Preserve #317 truthful fail-closed semantics, SamePage navigation, Source-vs-View and all GitHub-first gates. No Vercel action.
+Then recompute `BE_FACH_CONTENT_RESIDUAL` **SET-WISE** from exact terminal IDs/scopes. Do not use stale arithmetic. Expected BSW Fach residual after successful materialisation is P19-P66 unless a newer explicit #240 handoff closes additional scopes before write time. Preserve #317 truthful fail-closed semantics, SamePage navigation, Source-vs-View and all GitHub-first gates. No Vercel action.
 
 ---
 
@@ -535,20 +535,20 @@ Then recompute `BE_FACH_CONTENT_RESIDUAL` **SET-WISE** from exact terminal IDs/s
 
 Source: https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5451044705
 
-## WÖk FACH BATCH — Berlin BSW physical PDF page 19 / Kultur — partial terminal + two deterministic compound-split repairs
+## WÖk FACH BATCH - Berlin BSW physical PDF page 19 / Kultur - partial terminal + two deterministic compound-split repairs
 
-Fresh basis: `main=1a0757682e8d2365eb28218816484c2e1e13d83e` after merged #317. Leading artifact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. Explicit P15–P18 handoffs (`5449855264`, `5449881459`, `5449901373`, `5450371661`) remain protected. This batch reviews only the exact P19 ledger objects on current main. Generic delegated auto-RNAA fields in the JSON are **not** Fach proof and are superseded for the IDs below.
+Fresh basis: `main=1a0757682e8d2365eb28218816484c2e1e13d83e` after merged #317. Leading artifact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. Explicit P15-P18 handoffs (`5449855264`, `5449881459`, `5449901373`, `5450371661`) remain protected. This batch reviews only the exact P19 ledger objects on current main. Generic delegated auto-RNAA fields in the JSON are **not** Fach proof and are superseded for the IDs below.
 
 No DNS mapping, Recommendation, score or programme-wide judgment is created.
 
 ### A. Two compound objects require deterministic technical child splits before Fach closure
 
-1. `BE-BSW-P19-U01-A02-811d08843ce4` — rollback of cuts across multiple named culture-funding programmes.
+1. `BE-BSW-P19-U01-A02-811d08843ce4` - rollback of cuts across multiple named culture-funding programmes.
    - **Terminal status of old atom:** `SOURCE_UNIT_RECLASSIFIED_VERSIONED / COMPOUND_EFFECT_PARENT_NONCOUNTING`
    - Reason: the sentence binds multiple distinct funds/programmes, recipient systems and likely budget/delivery paths. Under the standing atomicity rule they must not remain one effect leaf.
    - CodeX may split the exact full frozen source text deterministically into named child objects only. It may not assign direction/evidence/DNS/Recommendation. Each child remains `GENUINE_FACH_REVIEW_REQUIRED` until a later explicit WÖk handoff.
 
-2. `BE-BSW-P19-U02-A01-7630428800e8` — preservation/sanitation of Stadtbibliothek + Amerika-Gedenkbibliothek and sanitation of Komische Oper with artistic-budget guard.
+2. `BE-BSW-P19-U02-A01-7630428800e8` - preservation/sanitation of Stadtbibliothek + Amerika-Gedenkbibliothek and sanitation of Komische Oper with artistic-budget guard.
    - **Terminal status of old atom:** `SOURCE_UNIT_RECLASSIFIED_VERSIONED / COMPOUND_EFFECT_PARENT_NONCOUNTING`
    - Required child structure at minimum separates the library/infrastructure object from the Komische-Oper object because asset, delivery path, budget boundary and protected-interest profile differ. CodeX performs only exact-text deterministic segmentation; Fach remains pending on the resulting children.
 
@@ -556,7 +556,7 @@ These two repairs mean **P19 is not yet page-terminal** after this comment. All 
 
 ### B. Explicit effect-object Fach approvals
 
-#### `BE-BSW-P19-U01-A01-a64deb3a9124` — free Museum Sunday
+#### `BE-BSW-P19-U01-A01-a64deb3a9124` - free Museum Sunday
 `terminal_status = EXPLICIT_FACH_APPROVED`
 
 - `impact_direction = POSITIVE_ACCESS_POTENTIAL_WITH_ADDITIONALITY_CAPACITY_AND_DEADWEIGHT_GUARDS`
@@ -566,7 +566,7 @@ These two repairs mean **P19 is not yet page-terminal** after this comment. All 
 - Evidence/maturity: `EX_ANTE_MECHANISM_PLAUSIBLE / OUTCOME_PENDING`.
 - Falsification/reality check: incremental attendance versus comparable paid periods, visitor composition/income-age-access proxies where lawfully measurable, repeat participation, crowding/service quality and cost per additional visit. Visitor count alone is insufficient.
 
-#### `BE-BSW-P19-U04-A03-99e46737fd14` — CityTax revenue earmarked/reinvested in cultural offers
+#### `BE-BSW-P19-U04-A03-99e46737fd14` - CityTax revenue earmarked/reinvested in cultural offers
 `terminal_status = EXPLICIT_FACH_APPROVED`
 
 - `impact_direction = AMBIVALENT_POSITIVE_CULTURE_FUNDING_POTENTIAL_WITH_FISCAL_EARMARKING_AND_OPPORTUNITY_COST_GUARDS`
@@ -575,7 +575,7 @@ These two repairs mean **P19 is not yet page-terminal** after this comment. All 
 - Required baseline: current CityTax revenue treatment, current culture-budget baseline, Additionalität and allocation rules.
 - Reality check: additional rather than substituted culture spending, stability through tourism cycles, distribution across institutions/free scene/districts, access/participation outcomes and opportunity costs elsewhere in the Land budget.
 
-#### `BE-BSW-P19-U07-A04-660a05a7bd9b` — fixed culture credit for all 15–18-year-olds each school half-year
+#### `BE-BSW-P19-U07-A04-660a05a7bd9b` - fixed culture credit for all 15-18-year-olds each school half-year
 `terminal_status = EXPLICIT_FACH_APPROVED`
 
 - `impact_direction = POSITIVE_YOUTH_ACCESS_POTENTIAL_WITH_UNIVERSALITY_UPTAKE_SUPPLY_AND_BUDGET_GUARDS`
@@ -585,15 +585,15 @@ These two repairs mean **P19 is not yet page-terminal** after this comment. All 
 - Evidence/maturity: `EX_ANTE_MECHANISM_PLAUSIBLE / OUTCOME_PENDING`.
 - Reality check: additional cultural participation and breadth of use, uptake gaps, provider geography, cost per additional participation and displacement/substitution from existing schemes.
 
-#### `BE-BSW-P19-U09-A03-7f92be3363e4` — transparent criteria/processes for culture-funding decisions
+#### `BE-BSW-P19-U09-A03-7f92be3363e4` - transparent criteria/processes for culture-funding decisions
 `terminal_status = EXPLICIT_FACH_APPROVED`
 
 - `impact_direction = POSITIVE_GOVERNANCE_POTENTIAL_WITH_BUREAUCRACY_GAMING_AND_ARTISTIC_INDEPENDENCE_GUARDS`
 - Mechanism: published, intelligible criteria/reasons can reduce information asymmetry and improve procedural accountability/predictability.
 - Material risks: rigid criteria can privilege easily measurable projects, increase administrative load, induce strategic gaming or create political steering risks if independence/recusal/review rules are weak.
-- Reality check: applicant understanding/predictability, appeal/review patterns, processing burden/time, access for new/small actors, diversity of funded forms and documented independence — not the number of written criteria.
+- Reality check: applicant understanding/predictability, appeal/review patterns, processing burden/time, access for new/small actors, diversity of funded forms and documented independence - not the number of written criteria.
 
-#### `BE-BSW-P19-U10-A01-2ba3bd6716b3` — public, parity-composed juries co-deciding funding
+#### `BE-BSW-P19-U10-A01-2ba3bd6716b3` - public, parity-composed juries co-deciding funding
 `terminal_status = EXPLICIT_FACH_APPROVED`
 
 - `impact_direction = AMBIVALENT_GOVERNANCE_POTENTIAL / HIGH_DESIGN_DEPENDENCE`
@@ -606,35 +606,35 @@ These two repairs mean **P19 is not yet page-terminal** after this comment. All 
 
 Preserve these as terminal reviewed **non-effect/non-counting** records; they must not create separate impact leaves:
 
-- `BE-BSW-P19-U03-cf9498f48d5e` — `NON_EFFECT_HEADING_REVIEWED`
-- `BE-BSW-P19-U04-A01-c2cf99fe4210` — `NON_EFFECT_BASELINE_CLAIM_REVIEWED`; programme assertion about current revenue treatment, not an action/outcome proof.
-- `BE-BSW-P19-U04-A02-aace18c550a6` — `NONCOUNTING_INTENT_PARENT_REVIEWED`; backward-referencing intent, child/canonical action is the earmarking object A03.
-- `BE-BSW-P19-U04-A04-1e41e13f0a66` — `NON_EFFECT_COMPARATOR_CLAIM_REVIEWED`; city comparison must not be treated as independent Berlin effect or as externally verified merely because it appears in the programme.
-- `BE-BSW-P19-U04-A05-276d9b7be893` — `RESTATEMENT_NONCOUNTING_REVIEWED`; restates adoption of the CityTax rule; bind to A03, no duplicate effect.
-- `BE-BSW-P19-U05-bca35fafb601` — `NON_EFFECT_HEADING_REVIEWED`
-- `BE-BSW-P19-U06-fabf700b54c4` — `NON_EFFECT_PROBLEM_RATIONALE_REVIEWED`; diagnosis/rationale only, not independent intervention or proof.
-- `BE-BSW-P19-U07-A01-518c25356844` — `NON_EFFECT_EVIDENCE_CLAIM_REVIEWED`; claim about prior federal Kulturpass success is not an independent Berlin action and needs external evidence before being used as outcome proof.
-- `BE-BSW-P19-U07-A02-7c5450bb6eee` — `NON_EFFECT_POLITICAL_RATIONALE_REVIEWED`; federal-priority comparison, no Berlin action.
-- `BE-BSW-P19-U07-A03-7c0307cd0481` — `NONCOUNTING_INTENT_PARENT_REVIEWED`; parent intent to concrete credit object A04.
-- `BE-BSW-P19-U07-A05-104e1b3c93e9` — `NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED`; claimed access/diversity outcome hypothesis tied to A04, not separate effect.
-- `BE-BSW-P19-U08-66572ff92aa6` — `NON_EFFECT_HEADING_REVIEWED`
-- `BE-BSW-P19-U09-A01-afe96fd95c41` — `NON_EFFECT_GOVERNANCE_GOAL_REVIEWED`; normative target/guard, concrete action is A03.
-- `BE-BSW-P19-U09-A02-9c1bb424d484` — `NON_EFFECT_DIAGNOSIS_CAUSAL_CLAIM_REVIEWED`; do not render the asserted causal effect as proven.
-- `BE-BSW-P19-U10-A02-cd30a1275170` — `NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED`; expected fairness/access result of A01, not separate intervention.
+- `BE-BSW-P19-U03-cf9498f48d5e` - `NON_EFFECT_HEADING_REVIEWED`
+- `BE-BSW-P19-U04-A01-c2cf99fe4210` - `NON_EFFECT_BASELINE_CLAIM_REVIEWED`; programme assertion about current revenue treatment, not an action/outcome proof.
+- `BE-BSW-P19-U04-A02-aace18c550a6` - `NONCOUNTING_INTENT_PARENT_REVIEWED`; backward-referencing intent, child/canonical action is the earmarking object A03.
+- `BE-BSW-P19-U04-A04-1e41e13f0a66` - `NON_EFFECT_COMPARATOR_CLAIM_REVIEWED`; city comparison must not be treated as independent Berlin effect or as externally verified merely because it appears in the programme.
+- `BE-BSW-P19-U04-A05-276d9b7be893` - `RESTATEMENT_NONCOUNTING_REVIEWED`; restates adoption of the CityTax rule; bind to A03, no duplicate effect.
+- `BE-BSW-P19-U05-bca35fafb601` - `NON_EFFECT_HEADING_REVIEWED`
+- `BE-BSW-P19-U06-fabf700b54c4` - `NON_EFFECT_PROBLEM_RATIONALE_REVIEWED`; diagnosis/rationale only, not independent intervention or proof.
+- `BE-BSW-P19-U07-A01-518c25356844` - `NON_EFFECT_EVIDENCE_CLAIM_REVIEWED`; claim about prior federal Kulturpass success is not an independent Berlin action and needs external evidence before being used as outcome proof.
+- `BE-BSW-P19-U07-A02-7c5450bb6eee` - `NON_EFFECT_POLITICAL_RATIONALE_REVIEWED`; federal-priority comparison, no Berlin action.
+- `BE-BSW-P19-U07-A03-7c0307cd0481` - `NONCOUNTING_INTENT_PARENT_REVIEWED`; parent intent to concrete credit object A04.
+- `BE-BSW-P19-U07-A05-104e1b3c93e9` - `NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED`; claimed access/diversity outcome hypothesis tied to A04, not separate effect.
+- `BE-BSW-P19-U08-66572ff92aa6` - `NON_EFFECT_HEADING_REVIEWED`
+- `BE-BSW-P19-U09-A01-afe96fd95c41` - `NON_EFFECT_GOVERNANCE_GOAL_REVIEWED`; normative target/guard, concrete action is A03.
+- `BE-BSW-P19-U09-A02-9c1bb424d484` - `NON_EFFECT_DIAGNOSIS_CAUSAL_CLAIM_REVIEWED`; do not render the asserted causal effect as proven.
+- `BE-BSW-P19-U10-A02-cd30a1275170` - `NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED`; expected fairness/access result of A01, not separate intervention.
 
 ### D. P19 status and exact next residual
 
 `BE_BSW_P19_FACH_STATUS = PARTIAL_TERMINAL_PENDING_TWO_COMPOUND_CHILD_SETS`
 
-After materialising P15–P18 plus this P19 batch, recompute the Berlin residual **SET-WISE**. For BSW:
-- P1–P18 remain protected terminal.
+After materialising P15-P18 plus this P19 batch, recompute the Berlin residual **SET-WISE**. For BSW:
+- P1-P18 remain protected terminal.
 - P19 has only the child objects produced from `U01-A02` and `U02-A01` as genuine Fach residual.
-- P20–P66 remain fail-closed unless a newer explicit #240 handoff closes additional exact objects before write time.
+- P20-P66 remain fail-closed unless a newer explicit #240 handoff closes additional exact objects before write time.
 
 ### CodeX handoff
 
 On a fresh exact-current-main successor:
-1. first materialise explicit P15–P18 handoffs losslessly;
+1. first materialise explicit P15-P18 handoffs losslessly;
 2. materialise this P19 review exactly;
 3. deterministically split only the two compound parents above using the full frozen source text and stable child IDs/Parent→Child links; do **not** assign Fach to new children;
 4. recompute `BE_FACH_CONTENT_RESIDUAL` set-wise, never by stale subtraction;

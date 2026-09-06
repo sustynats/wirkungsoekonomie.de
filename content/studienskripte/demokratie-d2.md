@@ -24,12 +24,12 @@ Die Wirkungsökonomie behandelt Öffentlichkeit nicht als bloßen Kanal. [Öffen
 2. **Fünf Ebenen statt eines Aufregers:** Beobachtung, Behauptung, Quelle, Entscheidung und offene Frage sauber trennen.
 3. **Korrigieren ohne abzustempeln:** Weshalb eine sachliche Richtigstellung keine Gesinnungsprüfung ist.
 4. **Moderieren ohne Debatten zu steuern:** Welche Regeln schützen Diskurs, und wo eine Einrichtung ihre Rolle begrenzen muss.
-5. **Reichweite, Resonanz und Wirkung:** Was Klicks zeigen können – und was sie über demokratische Qualität nicht beweisen.
+5. **Reichweite, Resonanz und Wirkung:** Was Klicks zeigen können - und was sie über demokratische Qualität nicht beweisen.
 6. **Vom Post zur Rückkopplung:** Wie Eichenfeld aus der Verwirrung einen prüfbaren nächsten Beschluss macht.
 
 ## 3. Transkript / Erklärgerüst
 
-### Das Bild sagt etwas – aber nicht alles
+### Das Bild sagt etwas - aber nicht alles
 
 Der erste Fehler im Eichenfelder Chat wäre, das Bild entweder als eindeutigen Beweis oder als bloßes Gerücht abzutun. Beides verkürzt. Es zeigt einen Bauzaun und einen Plan. Es kann ein verständliches Bedürfnis nach Information auslösen. Es enthält zugleich eine Behauptung über Schließung, Geld und Entscheidungsverfahren, die aus dem Bild nicht folgt. Wer die Aussage teilt, muss dafür nicht als absichtlich täuschend bezeichnet werden. Entscheidend ist zunächst der Inhalt: Was ist beobachtbar, was wird behauptet und was fehlt?
 
@@ -49,7 +49,7 @@ Diese Trennung ist keine Sprachübung. Sie schafft einen Weg aus dem falschen En
 
 ### Eine öffentliche Korrektur braucht Quelle, Grenze und Adresse
 
-Am Vormittag schlägt ein Kollege vor: „Wir posten einfach: Fake News. Alles Quatsch.“ Das wäre schnell, aber schwach. Der Satz beantwortet keine Frage, bietet keine Quelle und kann berechtigte Sorgen unsichtbar machen. Eine andere Kollegin möchte den gesamten Chat abschalten. Auch das ist nicht automatisch falsch – bei akuter Bedrohung oder massiven Übergriffen können Schutz und Moderation nötig sein. Als Standardantwort auf Kritik würde es jedoch einen Korrekturweg schließen, den die Einrichtung gerade braucht.
+Am Vormittag schlägt ein Kollege vor: „Wir posten einfach: Fake News. Alles Quatsch.“ Das wäre schnell, aber schwach. Der Satz beantwortet keine Frage, bietet keine Quelle und kann berechtigte Sorgen unsichtbar machen. Eine andere Kollegin möchte den gesamten Chat abschalten. Auch das ist nicht automatisch falsch - bei akuter Bedrohung oder massiven Übergriffen können Schutz und Moderation nötig sein. Als Standardantwort auf Kritik würde es jedoch einen Korrekturweg schließen, den die Einrichtung gerade braucht.
 
 Aylin veröffentlicht stattdessen eine kurze Erstinformation in drei Teilen:
 
@@ -117,7 +117,7 @@ Das heißt nicht, dass jede Rückmeldung oder jede Belastung eine automatische V
 
 ### Aus einem Post wird eine Rückkopplung
 
-Am Freitag steht der vorläufige Ablauf fest. Das Jugendhaus veröffentlicht eine aktualisierte Seite mit Zeitplan, Quelle, Ansprechpartner:innen, Wegbeschreibung und einer Tabelle: „Frage – aktuelle Antwort – zuständige Stelle – nächster Prüftermin“. Der Vater erhält nicht einfach eine freundliche Antwort im Chat; die Frage nach dem Abendweg wird in diese Tabelle aufgenommen. Die Stadt sagt zu, den Busanschluss drei Wochen lang zu beobachten und nach der ersten Woche über spätere Öffnungszeiten zu entscheiden. Die Bibliothek öffnet den Seiteneingang für die Zeiten des Jugendhauses. Der Proberaum bekommt ein Buchungssystem mit Telefonoption.
+Am Freitag steht der vorläufige Ablauf fest. Das Jugendhaus veröffentlicht eine aktualisierte Seite mit Zeitplan, Quelle, Ansprechpartner:innen, Wegbeschreibung und einer Tabelle: „Frage - aktuelle Antwort - zuständige Stelle - nächster Prüftermin“. Der Vater erhält nicht einfach eine freundliche Antwort im Chat; die Frage nach dem Abendweg wird in diese Tabelle aufgenommen. Die Stadt sagt zu, den Busanschluss drei Wochen lang zu beobachten und nach der ersten Woche über spätere Öffnungszeiten zu entscheiden. Die Bibliothek öffnet den Seiteneingang für die Zeiten des Jugendhauses. Der Proberaum bekommt ein Buchungssystem mit Telefonoption.
 
 Das ist noch kein Beweis für positive Netto-Wirkung. Die Maßnahme kann neue Probleme schaffen, Termine können ausfallen, manche Jugendliche können weiterhin fehlen. Es gibt aber einen belastbaren Unterschied zum Montagmorgen: Eine Behauptung wurde nicht durch Beschämung beantwortet, sondern durch Quellen, offene Fragen und eine zuständige Entscheidung. Eine konkrete Hürde wurde nicht gegen Reichweite aufgerechnet, sondern als Priorität behandelt. Und Beobachtungen haben einen Weg in die nächste Entscheidung erhalten.
 
@@ -125,7 +125,7 @@ Genau das ist [Wirkungsrückkopplung](https://wirkungsoekonomie.de/begriffe/wirk
 
 Eine gute Schlussformulierung von Aylin könnte lauten: „Die Sanierung ist befristet beschlossen. Wir haben eine Zugangsfrage aus den Rückmeldungen aufgenommen und passen den Ausweichort an. Die verlinkten Unterlagen zeigen, was entschieden ist; in der Antworttabelle steht, was noch offen ist und wann die nächste Prüfung erfolgt.“ Der Satz ist weniger spektakulär als „Wir haben die Gerüchte besiegt“. Er macht aber sichtbar, was eine öffentliche Institution tatsächlich leisten kann: begründen, schützen, lernen und verantwortlich entscheiden.
 
-## 4. Skript / Folien – fachliche Sicherung
+## 4. Skript / Folien - fachliche Sicherung
 
 ### Die fünf Karten der öffentlichen Klärung
 
@@ -135,7 +135,7 @@ Eine gute Schlussformulierung von Aylin könnte lauten: „Die Sanierung ist bef
 | „Das ist nur ein Gerücht.“ | Welche reale Frage oder Informationslücke steckt darin? | Sachfrage prüfen, ohne Absichten zu unterstellen. |
 | „Alles ist geklärt.“ | Was ist entschieden, was bleibt offen? | Quelle, Zuständigkeit und Prüftermin veröffentlichen. |
 | „Kritik stört den Ablauf.“ | Welche Rückmeldung könnte eine Folge sichtbar machen? | Kritik in den Korrekturweg aufnehmen. |
-| „Viele Reaktionen zeigen Zustimmung.“ | Was misst die Zahl genau – und was nicht? | Reichweite als Reichweite, nicht als Wirkung behandeln. |
+| „Viele Reaktionen zeigen Zustimmung.“ | Was misst die Zahl genau - und was nicht? | Reichweite als Reichweite, nicht als Wirkung behandeln. |
 
 ### Ein kleiner Prüfweg für öffentliche Antworten
 

@@ -1,4 +1,4 @@
-# ltw-2026-st-cdu – commitment-register – vollständige Darstellung
+# ltw-2026-st-cdu - commitment-register - vollständige Darstellung
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -81,9 +81,9 @@
 
 **commitment_key:** ltw-2026-st-cdu-0003-weiter-in-die-landespolizei-investieren-fuer-eine-moderne
 
-**title:** Weiter in die Landespolizei investieren – für eine moderne, bürgernahe Polizei und …
+**title:** Weiter in die Landespolizei investieren - für eine moderne, bürgernahe Polizei und …
 
-**commitment_text:** Weiter in die Landespolizei investieren – für eine moderne, bürgernahe Polizei und einen starken Rechtsstaat: Die Gewährleistung der inneren Sicherheit ist eine der zentralen Aufgaben des Staates. Sie beginnt bei einer für die Bürgerinnen und Bürger sichtbaren und handlungsfähigen Polizei. Deshalb setzen wir seit Jahren konsequent auf den personellen Aufwuchs der Landespolizei Sachsen-Anhalt. Angesichts steigender Anforderungen an die innere Sicherheit, zunehmender Einsatzlagen und wachsender Aufgabenbereiche werden wir den Personalaufwuchs im Polizeivollzugsdienst weiter fortsetzen. Es bedarf weit mehr als 7.000 Polizeivollzugsbeamtinnen und -beamten in der Landespolizei und mindestens 1.100 Beschäftigter in der Polizeiverwaltung. Wir wollen die Sichtbarkeit der Landespolizei in den Revieren vor Ort für die Bürgerinnen und Bürger erhöhen und aktuelle Herausforderungen der inneren Sicherheit angehen. Der Schutz des
+**commitment_text:** Weiter in die Landespolizei investieren - für eine moderne, bürgernahe Polizei und einen starken Rechtsstaat: Die Gewährleistung der inneren Sicherheit ist eine der zentralen Aufgaben des Staates. Sie beginnt bei einer für die Bürgerinnen und Bürger sichtbaren und handlungsfähigen Polizei. Deshalb setzen wir seit Jahren konsequent auf den personellen Aufwuchs der Landespolizei Sachsen-Anhalt. Angesichts steigender Anforderungen an die innere Sicherheit, zunehmender Einsatzlagen und wachsender Aufgabenbereiche werden wir den Personalaufwuchs im Polizeivollzugsdienst weiter fortsetzen. Es bedarf weit mehr als 7.000 Polizeivollzugsbeamtinnen und -beamten in der Landespolizei und mindestens 1.100 Beschäftigter in der Polizeiverwaltung. Wir wollen die Sichtbarkeit der Landespolizei in den Revieren vor Ort für die Bürgerinnen und Bürger erhöhen und aktuelle Herausforderungen der inneren Sicherheit angehen. Der Schutz des
 
 ##### source_location
 
@@ -533,7 +533,7 @@
 
 **title:** Die Sicherheit derjenigen erhöhen, die für unsere Sicherheit sorgen
 
-**commitment_text:** Die Sicherheit derjenigen erhöhen, die für unsere Sicherheit sorgen: Die Sicherheit der Bürgerinnen und Bürger beginnt vor Ort – in den Kommunen. Die Kommunen sollen konsequenter gegen Verschmutzungen im öffentlichen Raum vorgehen. Kommunale Vollzugsbeamtinnen und -beamte leisten täglich einen wichtigen Beitrag für ein geordnetes und sicheres Zusammenleben. Dieser Einsatz ist nicht ohne Risiko. Deshalb wollen wir den Einsatz von polizeilichem Pfefferspray in einzelnen Kommunen erproben, um die Eigensicherung der kommunalen Vollzugsbediensteten in bedrohlichen Situationen zu verbessern.
+**commitment_text:** Die Sicherheit derjenigen erhöhen, die für unsere Sicherheit sorgen: Die Sicherheit der Bürgerinnen und Bürger beginnt vor Ort - in den Kommunen. Die Kommunen sollen konsequenter gegen Verschmutzungen im öffentlichen Raum vorgehen. Kommunale Vollzugsbeamtinnen und -beamte leisten täglich einen wichtigen Beitrag für ein geordnetes und sicheres Zusammenleben. Dieser Einsatz ist nicht ohne Risiko. Deshalb wollen wir den Einsatz von polizeilichem Pfefferspray in einzelnen Kommunen erproben, um die Eigensicherung der kommunalen Vollzugsbediensteten in bedrohlichen Situationen zu verbessern.
 
 ##### source_location
 
@@ -852,9 +852,9 @@
 
 **commitment_key:** ltw-2026-st-cdu-0027-deutschland-muss-wieder-nach-vorne-kommen-durch-steuerlich
 
-**title:** Deutschland muss wieder nach vorne kommen – durch steuerliche Entlastungen, planbare und …
+**title:** Deutschland muss wieder nach vorne kommen - durch steuerliche Entlastungen, planbare und …
 
-**commitment_text:** Deutschland muss wieder nach vorne kommen – durch steuerliche Entlastungen, planbare und bezahlbare Energiepreise, technologieoffene Innovationen und einen Staat, der ermöglicht statt verhindert.
+**commitment_text:** Deutschland muss wieder nach vorne kommen - durch steuerliche Entlastungen, planbare und bezahlbare Energiepreise, technologieoffene Innovationen und einen Staat, der ermöglicht statt verhindert.
 
 ##### source_location
 
@@ -1111,7 +1111,7 @@
 
 **title:** Den Mittelstand als Rückgrat der Wirtschaft in Sachsen-Anhalt nachhaltig stärken
 
-**commitment_text:** Den Mittelstand als Rückgrat der Wirtschaft in Sachsen-Anhalt nachhaltig stärken: Unternehmerinnen und Unternehmer schaffen Arbeitsplätze und sichern regionale Strukturen. Wir fördern unternehmerisches Denken und würdigen Gründerkultur – mit noch besseren Rahmenbedingungen für die Nachfolge, mehr Anerkennung und gezielter Unterstützung von Jungunternehmern. Unternehmerinnen und Unternehmer verdienen Vertrauen und Wertschätzung, statt sie unter Generalverdacht zu stellen.
+**commitment_text:** Den Mittelstand als Rückgrat der Wirtschaft in Sachsen-Anhalt nachhaltig stärken: Unternehmerinnen und Unternehmer schaffen Arbeitsplätze und sichern regionale Strukturen. Wir fördern unternehmerisches Denken und würdigen Gründerkultur - mit noch besseren Rahmenbedingungen für die Nachfolge, mehr Anerkennung und gezielter Unterstützung von Jungunternehmern. Unternehmerinnen und Unternehmer verdienen Vertrauen und Wertschätzung, statt sie unter Generalverdacht zu stellen.
 
 ##### source_location
 
@@ -1145,7 +1145,7 @@
 
 **title:** Uns für einen Nebenkostenstopp für Unternehmen einsetzen und werden dort, wo es …
 
-**commitment_text:** Uns für einen Nebenkostenstopp für Unternehmen einsetzen und werden dort, wo es möglich ist, in den kommenden fünf Jahren weitere Erhöhungen von Abgaben und Gebühren für Unternehmen – etwa bei Rundfunk, Berufsgenossenschaften oder anderen berufsständischen Abgaben – vermeiden. Zugleich werden wir ein Belastungsmoratorium für die Wirtschaft durchsetzen. Angesichts der Vielzahl bürokratischer Hemmnisse und umfangreicher Berichtspflichten braucht unsere Wirtschaft wieder Luft zum Atmen. Wir begrüßen daher die aktuellen Anstrengungen der Länder und der unionsgeführten Bundesregierung, Berichtspflichten bundesweit auf ein Mindestmaß zurückzuführen. Sachsen-Anhalt wird hierbei vorangehen und wird echten Abbau vorantreiben und neue Belastungen vermeiden. In den kommenden fünf Jahren wollen wir als Land keine neuen Auflagen und keine unnötigen zusätzlichen Berichtspflichten zulassen. Zudem setzen wir auf Landesebene das „One-in-One-out“- Prinzip um: Für jede zwingend erforderliche neue Belastung soll mindestens eine bestehende Regelung entfallen. Darüber hinaus werden wir den Vorsitz Sachsen-Anhalts
+**commitment_text:** Uns für einen Nebenkostenstopp für Unternehmen einsetzen und werden dort, wo es möglich ist, in den kommenden fünf Jahren weitere Erhöhungen von Abgaben und Gebühren für Unternehmen - etwa bei Rundfunk, Berufsgenossenschaften oder anderen berufsständischen Abgaben - vermeiden. Zugleich werden wir ein Belastungsmoratorium für die Wirtschaft durchsetzen. Angesichts der Vielzahl bürokratischer Hemmnisse und umfangreicher Berichtspflichten braucht unsere Wirtschaft wieder Luft zum Atmen. Wir begrüßen daher die aktuellen Anstrengungen der Länder und der unionsgeführten Bundesregierung, Berichtspflichten bundesweit auf ein Mindestmaß zurückzuführen. Sachsen-Anhalt wird hierbei vorangehen und wird echten Abbau vorantreiben und neue Belastungen vermeiden. In den kommenden fünf Jahren wollen wir als Land keine neuen Auflagen und keine unnötigen zusätzlichen Berichtspflichten zulassen. Zudem setzen wir auf Landesebene das „One-in-One-out“- Prinzip um: Für jede zwingend erforderliche neue Belastung soll mindestens eine bestehende Regelung entfallen. Darüber hinaus werden wir den Vorsitz Sachsen-Anhalts
 
 ##### source_location
 
@@ -1273,7 +1273,7 @@
 
 **title:** Sachsen-Anhalt zu einem der attraktivsten Ansiedlungsstandorte in Europa machen
 
-**commitment_text:** Sachsen-Anhalt zu einem der attraktivsten Ansiedlungsstandorte in Europa machen: Die vergangenen fünf Jahre haben gezeigt, dass Sachsen-Anhalt ein äußerst attraktiver Standort für internationale Unternehmensansiedlungen mitten in Europa ist. Zahlreiche Investitionsentscheidungen belegen die Wettbewerbsfähigkeit des Landes und die Qualität der Standortbedingungen. Jüngste Ansiedlungen – etwa von Daimler Truck in Halberstadt oder Avnet in Bernburg – stehen exemplarisch für eine erfolgreiche, aktive und verlässliche Ansiedlungspolitik. Sachsen-Anhalt nutzt seine industriellen Kerne, seine Energiekompetenz und verfügbaren Flächen gezielt für neue Ansiedlungen. Durch sofort verfügbare Industriestandorte, beschleunigte und verlässliche Genehmigungsverfahren sowie eine aktive Fachkräftepolitik schaffen wir die Voraussetzungen für nachhaltiges Wachstum und neue Wertschöpfung im Land. Dabei setzen wir mit der Investitions- und Marketinggesellschaft Sachsen-Anhalt (IMG) auf eine
+**commitment_text:** Sachsen-Anhalt zu einem der attraktivsten Ansiedlungsstandorte in Europa machen: Die vergangenen fünf Jahre haben gezeigt, dass Sachsen-Anhalt ein äußerst attraktiver Standort für internationale Unternehmensansiedlungen mitten in Europa ist. Zahlreiche Investitionsentscheidungen belegen die Wettbewerbsfähigkeit des Landes und die Qualität der Standortbedingungen. Jüngste Ansiedlungen - etwa von Daimler Truck in Halberstadt oder Avnet in Bernburg - stehen exemplarisch für eine erfolgreiche, aktive und verlässliche Ansiedlungspolitik. Sachsen-Anhalt nutzt seine industriellen Kerne, seine Energiekompetenz und verfügbaren Flächen gezielt für neue Ansiedlungen. Durch sofort verfügbare Industriestandorte, beschleunigte und verlässliche Genehmigungsverfahren sowie eine aktive Fachkräftepolitik schaffen wir die Voraussetzungen für nachhaltiges Wachstum und neue Wertschöpfung im Land. Dabei setzen wir mit der Investitions- und Marketinggesellschaft Sachsen-Anhalt (IMG) auf eine
 
 ##### source_location
 
@@ -1335,9 +1335,9 @@
 
 **commitment_key:** ltw-2026-st-cdu-0042-gleichzeitig-sichern-wir-investoren-die-notwendige-planung
 
-**title:** Gleichzeitig sichern wir Investoren die notwendige Planungssicherheit – durch klare Rahmenbedingungen und …
+**title:** Gleichzeitig sichern wir Investoren die notwendige Planungssicherheit - durch klare Rahmenbedingungen und …
 
-**commitment_text:** Gleichzeitig sichern wir Investoren die notwendige Planungssicherheit – durch klare Rahmenbedingungen und politische Kontinuität, die eine verlässliche und langfristig ausgerichtete Wirtschaftspolitik gewährleistet.
+**commitment_text:** Gleichzeitig sichern wir Investoren die notwendige Planungssicherheit - durch klare Rahmenbedingungen und politische Kontinuität, die eine verlässliche und langfristig ausgerichtete Wirtschaftspolitik gewährleistet.
 
 ##### source_location
 
@@ -1466,7 +1466,7 @@
 
 **title:** Unter Nutzung der durch den Bund und die EU bereitgestellten Fördermittel, vor …
 
-**commitment_text:** Unter Nutzung der durch den Bund und die EU bereitgestellten Fördermittel, vor allem aber durch ein entschiedenes und koordiniertes Engagement auf allen politischen Ebenen – von der Europäischen Union über den Bund bis hin zum Land – werden wir die chemische Industrie in Sachsen-Anhalt halten und sie beim Übergang zu Technologien, Produkten und Märkten der Zukunft verlässlich unterstützen.
+**commitment_text:** Unter Nutzung der durch den Bund und die EU bereitgestellten Fördermittel, vor allem aber durch ein entschiedenes und koordiniertes Engagement auf allen politischen Ebenen - von der Europäischen Union über den Bund bis hin zum Land - werden wir die chemische Industrie in Sachsen-Anhalt halten und sie beim Übergang zu Technologien, Produkten und Märkten der Zukunft verlässlich unterstützen.
 
 ##### source_location
 
@@ -1692,7 +1692,7 @@
 
 **title:** Bürokratie weiter abbauen und Vergaben erleichtern
 
-**commitment_text:** Bürokratie weiter abbauen und Vergaben erleichtern: Nicht nur für die Industrie, sondern für alle Unternehmen in unserem Land wollen wir wirtschaftliches Handeln deutlich erleichtern und sie von unnötigem Verwaltungsaufwand entlasten. Durch vereinfachte, beschleunigte und digitalisierte Vergabeverfahren schaffen wir mehr Transparenz, Effizienz und Planungssicherheit. Insbesondere kleine und mittlere Unternehmen sollen einen erleichterten Zugang zu öffentlichen Aufträgen erhalten. Bürokratieabbau verstehen wir dabei als dauerhafte Aufgabe, um unternehmerische Kräfte freizusetzen. Ergänzend dazu haben wir bereits das Landesvergabegesetz im Herbst 2025 unter großer Zustimmung der Unternehmensverbände deutlich gelockert. Ziel war es, Vergabeverfahren zu vereinfachen und die schnelle Umsetzung von Investitionen – insbesondere im Rahmen des Zukunftsinvestitionsgesetzes – zu erleichtern. Davon profitieren nicht nur zahlreiche, häufig kleine und mittlere Unternehmen, sondern auch die umsetzenden, meist kommunalen Stellen, die Projekte schneller, flexibler und rechtssicher realisieren können.
+**commitment_text:** Bürokratie weiter abbauen und Vergaben erleichtern: Nicht nur für die Industrie, sondern für alle Unternehmen in unserem Land wollen wir wirtschaftliches Handeln deutlich erleichtern und sie von unnötigem Verwaltungsaufwand entlasten. Durch vereinfachte, beschleunigte und digitalisierte Vergabeverfahren schaffen wir mehr Transparenz, Effizienz und Planungssicherheit. Insbesondere kleine und mittlere Unternehmen sollen einen erleichterten Zugang zu öffentlichen Aufträgen erhalten. Bürokratieabbau verstehen wir dabei als dauerhafte Aufgabe, um unternehmerische Kräfte freizusetzen. Ergänzend dazu haben wir bereits das Landesvergabegesetz im Herbst 2025 unter großer Zustimmung der Unternehmensverbände deutlich gelockert. Ziel war es, Vergabeverfahren zu vereinfachen und die schnelle Umsetzung von Investitionen - insbesondere im Rahmen des Zukunftsinvestitionsgesetzes - zu erleichtern. Davon profitieren nicht nur zahlreiche, häufig kleine und mittlere Unternehmen, sondern auch die umsetzenden, meist kommunalen Stellen, die Projekte schneller, flexibler und rechtssicher realisieren können.
 
 ##### source_location
 
@@ -1725,7 +1725,7 @@
 
 **title:** Vom Bund eine verantwortungsvolle Wirtschafts- und Sozialpolitik einfordern
 
-**commitment_text:** Vom Bund eine verantwortungsvolle Wirtschafts- und Sozialpolitik einfordern: Auf Bundesebene setzen wir uns dafür ein, Handwerk und Mittelstand von Steuern zu entlasten sowie die Sozialabgaben zu deckeln. Die Arbeitskosten müssen international konkurrenzfähig bleiben – ein entscheidender Standortfaktor für Industrie und Handwerk. Darüber hinaus weisen wir gezielt auf Reformbedarf in den Sozialsystemen hin. So wollen wir u.a. das Prinzip Fördern und Fordern in der Grundsicherung wieder stärken, Missbrauch der sozialen Sicherung konsequent sanktionieren und Mindestlöhne
+**commitment_text:** Vom Bund eine verantwortungsvolle Wirtschafts- und Sozialpolitik einfordern: Auf Bundesebene setzen wir uns dafür ein, Handwerk und Mittelstand von Steuern zu entlasten sowie die Sozialabgaben zu deckeln. Die Arbeitskosten müssen international konkurrenzfähig bleiben - ein entscheidender Standortfaktor für Industrie und Handwerk. Darüber hinaus weisen wir gezielt auf Reformbedarf in den Sozialsystemen hin. So wollen wir u.a. das Prinzip Fördern und Fordern in der Grundsicherung wieder stärken, Missbrauch der sozialen Sicherung konsequent sanktionieren und Mindestlöhne
 
 ##### source_location
 
@@ -1758,7 +1758,7 @@
 
 **title:** Zudem streben wir gezielte Erleichterungen für eine unbürokratische und klar geregelte Zuwanderung …
 
-**commitment_text:** Zudem streben wir gezielte Erleichterungen für eine unbürokratische und klar geregelte Zuwanderung qualifizierter Fachkräfte an und wollen bessere Anreize für Mehrarbeit und Arbeit im Rentenalter schaffen – sozialversicherungsfrei und unbürokratisch.
+**commitment_text:** Zudem streben wir gezielte Erleichterungen für eine unbürokratische und klar geregelte Zuwanderung qualifizierter Fachkräfte an und wollen bessere Anreize für Mehrarbeit und Arbeit im Rentenalter schaffen - sozialversicherungsfrei und unbürokratisch.
 
 ##### source_location
 
@@ -2496,7 +2496,7 @@
 
 **title:** Lehramtsausbildung reformieren
 
-**commitment_text:** Lehramtsausbildung reformieren: Zur besseren Bedarfssteuerung prüfen wir Instrumente, die schulformspezifische und fachbezogene Engpässe gezielt adressieren – etwa durch Anreize, Verpflichtungen oder Auswahlverfahren. Gleichzeitig prüfen wir die Einrichtung einer Grundschullehramtsausbildung in Magdeburg, um regionale Ausbildungsangebote zu erweitern und damit auch neue Bewerbergruppen zu erschließen. Künftig müssen sich Zielvereinbarungen mit den Hochschulen am tatsächlichen Studienerfolg orientieren und stärker bedarfsorientiert ausgerichtet werden. Der Maßstab soll die Zahl der Absolventinnen und Absolventen in den Lehrämtern und Fächern sein – nicht die Zahl der Studienanfänger. Damit nehmen wir die Hochschulen stärker in die Verantwortung für den Bildungserfolg und die Nachwuchssicherung an den Schulen. Der Modellstudiengang „Duales Studium für das Lehramt an Sekundarschulen“ wird fortgeführt, verstetigt und nach Möglichkeit zum Standard ausgebaut. Wir prüfen eine Ausweitung für das Lehramt an Grund- und Förderschulen.
+**commitment_text:** Lehramtsausbildung reformieren: Zur besseren Bedarfssteuerung prüfen wir Instrumente, die schulformspezifische und fachbezogene Engpässe gezielt adressieren - etwa durch Anreize, Verpflichtungen oder Auswahlverfahren. Gleichzeitig prüfen wir die Einrichtung einer Grundschullehramtsausbildung in Magdeburg, um regionale Ausbildungsangebote zu erweitern und damit auch neue Bewerbergruppen zu erschließen. Künftig müssen sich Zielvereinbarungen mit den Hochschulen am tatsächlichen Studienerfolg orientieren und stärker bedarfsorientiert ausgerichtet werden. Der Maßstab soll die Zahl der Absolventinnen und Absolventen in den Lehrämtern und Fächern sein - nicht die Zahl der Studienanfänger. Damit nehmen wir die Hochschulen stärker in die Verantwortung für den Bildungserfolg und die Nachwuchssicherung an den Schulen. Der Modellstudiengang „Duales Studium für das Lehramt an Sekundarschulen“ wird fortgeführt, verstetigt und nach Möglichkeit zum Standard ausgebaut. Wir prüfen eine Ausweitung für das Lehramt an Grund- und Förderschulen.
 
 ##### source_location
 
@@ -2625,9 +2625,9 @@
 
 **commitment_key:** ltw-2026-st-cdu-0082-darauf-bauen-wir-auf-und-gehen-den-naechsten-schritt
 
-**title:** Darauf bauen wir auf – und gehen den nächsten Schritt
+**title:** Darauf bauen wir auf - und gehen den nächsten Schritt
 
-**commitment_text:** Darauf bauen wir auf – und gehen den nächsten Schritt.
+**commitment_text:** Darauf bauen wir auf - und gehen den nächsten Schritt.
 
 ##### source_location
 
@@ -2689,9 +2689,9 @@
 
 **commitment_key:** ltw-2026-st-cdu-0084-eine-wohnortnahe-hochwertige-medizinische-und-pflegerische
 
-**title:** Eine wohnortnahe, hochwertige medizinische und pflegerische Versorgung – digital unterstützt, sektorenübergreifend vernetzt …
+**title:** Eine wohnortnahe, hochwertige medizinische und pflegerische Versorgung - digital unterstützt, sektorenübergreifend vernetzt …
 
-**commitment_text:** Eine wohnortnahe, hochwertige medizinische und pflegerische Versorgung – digital unterstützt, sektorenübergreifend vernetzt und konsequent am Menschen ausgerichtet. Junge Ärztinnen und Ärzte, Pflegekräfte sowie Fachkräfte der Gesundheitsberufe finden hier attraktive Arbeitsbedingungen, verlässliche Entwicklungsperspektiven und ein Umfeld, in dem sie gern leben und wirken.
+**commitment_text:** Eine wohnortnahe, hochwertige medizinische und pflegerische Versorgung - digital unterstützt, sektorenübergreifend vernetzt und konsequent am Menschen ausgerichtet. Junge Ärztinnen und Ärzte, Pflegekräfte sowie Fachkräfte der Gesundheitsberufe finden hier attraktive Arbeitsbedingungen, verlässliche Entwicklungsperspektiven und ein Umfeld, in dem sie gern leben und wirken.
 
 ##### source_location
 
@@ -2817,9 +2817,9 @@
 
 **commitment_key:** ltw-2026-st-cdu-0088-versorgung-sichern-ueberall-im-land-wir-sichern-eine-flaec
 
-**title:** Versorgung sichern – überall im Land
+**title:** Versorgung sichern - überall im Land
 
-**commitment_text:** Versorgung sichern – überall im Land: Wir sichern eine flächendeckende medizinische Versorgung als Kern der Daseinsvorsorge. Die Gewinnung und Bindung von Fachkräften aller Gesundheitsberufe ist dabei entscheidend. Deshalb werden wir zusätzliche Studienplätze für Human- und Zahnmedizin sowie für Pharmazie schaffen. SachsenAnhalt positionieren wir bis 2030 als attraktiven Lebens- und Arbeitsort – mit verlässlichen Rahmenbedingungen, familienfreundlichen Angeboten und echten Perspektiven, insbesondere im ländlichen Raum. Die Apotheke vor Ort wollen wir als wichtigen Teil der medizinischen Daseinsvorsorge stärken und uns auf Bundesebene für gute Rahmenbedingungen einsetzen.
+**commitment_text:** Versorgung sichern - überall im Land: Wir sichern eine flächendeckende medizinische Versorgung als Kern der Daseinsvorsorge. Die Gewinnung und Bindung von Fachkräften aller Gesundheitsberufe ist dabei entscheidend. Deshalb werden wir zusätzliche Studienplätze für Human- und Zahnmedizin sowie für Pharmazie schaffen. SachsenAnhalt positionieren wir bis 2030 als attraktiven Lebens- und Arbeitsort - mit verlässlichen Rahmenbedingungen, familienfreundlichen Angeboten und echten Perspektiven, insbesondere im ländlichen Raum. Die Apotheke vor Ort wollen wir als wichtigen Teil der medizinischen Daseinsvorsorge stärken und uns auf Bundesebene für gute Rahmenbedingungen einsetzen.
 
 ##### source_location
 
@@ -2885,7 +2885,7 @@
 
 **title:** Krankenhäuser zu starken Knotenpunkten entwickeln
 
-**commitment_text:** Krankenhäuser zu starken Knotenpunkten entwickeln: Bis 2030 entwickeln wir die Krankenhausstandorte zu klar profilierten Zentren innerhalb regionaler Versorgungsnetzwerke. Spezialisierung und Qualität gehen Hand in Hand mit wohnortnaher Grund- und Notfallversorgung. Ambulante und stationäre Leistungen werden konsequent verzahnt. Die Trägervielfalt bleibt erhalten – öffentlich-rechtliche,
+**commitment_text:** Krankenhäuser zu starken Knotenpunkten entwickeln: Bis 2030 entwickeln wir die Krankenhausstandorte zu klar profilierten Zentren innerhalb regionaler Versorgungsnetzwerke. Spezialisierung und Qualität gehen Hand in Hand mit wohnortnaher Grund- und Notfallversorgung. Ambulante und stationäre Leistungen werden konsequent verzahnt. Die Trägervielfalt bleibt erhalten - öffentlich-rechtliche,
 
 ##### source_location
 
@@ -2915,9 +2915,9 @@
 
 **commitment_key:** ltw-2026-st-cdu-0091-sektorengrenzen-ueberwinden-versorgung-vernetzen-wir-beend
 
-**title:** Sektorengrenzen überwinden – Versorgung vernetzen
+**title:** Sektorengrenzen überwinden - Versorgung vernetzen
 
-**commitment_text:** Sektorengrenzen überwinden – Versorgung vernetzen: Wir beenden das Denken in starren Sektoren. Integrierte Versorgungszentren, sektorenübergreifende Planung und länderübergreifende Kooperationen sorgen bis 2030 für effizientere Abläufe, bessere Qualität und kürzere Wege für Patientinnen und Patienten. Komplexe Leistungen bündeln wir gezielt, um Expertise und Ressourcen optimal zu nutzen. Wir sprechen uns klar für ein zukunftsfähiges Primärversorgungsmodell aus.
+**commitment_text:** Sektorengrenzen überwinden - Versorgung vernetzen: Wir beenden das Denken in starren Sektoren. Integrierte Versorgungszentren, sektorenübergreifende Planung und länderübergreifende Kooperationen sorgen bis 2030 für effizientere Abläufe, bessere Qualität und kürzere Wege für Patientinnen und Patienten. Komplexe Leistungen bündeln wir gezielt, um Expertise und Ressourcen optimal zu nutzen. Wir sprechen uns klar für ein zukunftsfähiges Primärversorgungsmodell aus.
 
 ##### source_location
 
@@ -3176,7 +3176,7 @@
 
 **title:** Forschung, Innovation und Produktion stärken
 
-**commitment_text:** Forschung, Innovation und Produktion stärken: Unsere Universitätskliniken entwickeln wir zu Innovationsmotoren weiter und vernetzen sie stärker mit regionalen Versorgern. Digitale Medizin, Telemonitoring und vernetzte Notfallstrukturen machen Sachsen-Anhalt zur Modellregion. Die Herstellung medizinischer Produkte und Arzneimittel im Land sichern und bauen wir aus – für mehr Unabhängigkeit und Versorgungssicherheit.
+**commitment_text:** Forschung, Innovation und Produktion stärken: Unsere Universitätskliniken entwickeln wir zu Innovationsmotoren weiter und vernetzen sie stärker mit regionalen Versorgern. Digitale Medizin, Telemonitoring und vernetzte Notfallstrukturen machen Sachsen-Anhalt zur Modellregion. Die Herstellung medizinischer Produkte und Arzneimittel im Land sichern und bauen wir aus - für mehr Unabhängigkeit und Versorgungssicherheit.
 
 ##### source_location
 
@@ -3206,9 +3206,9 @@
 
 **commitment_key:** ltw-2026-st-cdu-0100-soziale-gerechtigkeit-und-familie-buergerarbeit-fuer-arbei
 
-**title:** Soziale Gerechtigkeit und Familie − Bürgerarbeit für arbeitsfähige Leistungsempfänger − Verpflichtung zu …
+**title:** Soziale Gerechtigkeit und Familie - Bürgerarbeit für arbeitsfähige Leistungsempfänger - Verpflichtung zu …
 
-**commitment_text:** Soziale Gerechtigkeit und Familie − Bürgerarbeit für arbeitsfähige Leistungsempfänger − Verpflichtung zu gemeinnütziger Arbeit als wichtige Reform des deutschen Sozialstaats − Familie als Kern unserer Gesellschaft − Alleinerziehende entlasten In einer Zeit individueller Lebensentwürfe, gesellschaftlicher Umbrüche und demografischer Herausforderungen wollen wir als CDU Sachsen-Anhalt den gesellschaftlichen Zusammenhalt auf Basis unseres christlich-abendländischen Wertefundaments sichern.
+**commitment_text:** Soziale Gerechtigkeit und Familie - Bürgerarbeit für arbeitsfähige Leistungsempfänger - Verpflichtung zu gemeinnütziger Arbeit als wichtige Reform des deutschen Sozialstaats - Familie als Kern unserer Gesellschaft - Alleinerziehende entlasten In einer Zeit individueller Lebensentwürfe, gesellschaftlicher Umbrüche und demografischer Herausforderungen wollen wir als CDU Sachsen-Anhalt den gesellschaftlichen Zusammenhalt auf Basis unseres christlich-abendländischen Wertefundaments sichern.
 
 ##### source_location
 
@@ -3334,9 +3334,9 @@
 
 **commitment_key:** ltw-2026-st-cdu-0104-buergerarbeit-einfuehren-und-durchsetzen-das-ist-eine-wich
 
-**title:** Bürgerarbeit einführen und durchsetzen – das ist eine wichtige Aufgabe zur Sicherung …
+**title:** Bürgerarbeit einführen und durchsetzen - das ist eine wichtige Aufgabe zur Sicherung …
 
-**commitment_text:** Bürgerarbeit einführen und durchsetzen – das ist eine wichtige Aufgabe zur Sicherung der sozialen Gerechtigkeit. Daher werden wir dieses Konzept der Bürgerarbeit als erweiterte Verpflichtung zu gemeinnütziger Arbeit als wichtige Reform des Sozialstaats auf Bundesebene erneut einbringen und vorantreiben.
+**commitment_text:** Bürgerarbeit einführen und durchsetzen - das ist eine wichtige Aufgabe zur Sicherung der sozialen Gerechtigkeit. Daher werden wir dieses Konzept der Bürgerarbeit als erweiterte Verpflichtung zu gemeinnütziger Arbeit als wichtige Reform des Sozialstaats auf Bundesebene erneut einbringen und vorantreiben.
 
 ##### source_location
 
@@ -3368,7 +3368,7 @@
 
 **title:** Familien stärken
 
-**commitment_text:** Familien stärken: Familie ist dort, wo Menschen dauerhaft Verantwortung füreinander übernehmen – zwischen Eltern und Kindern ebenso wie zwischen den Generationen. Wir setzen uns für eine Politik ein, die Familien stärkt, unabhängig davon, in welcher Form sie gelebt wird. Eltern sollen frei entscheiden können, wie sie ihr Familienleben gestalten, und dabei auf verlässliche Unterstützung zählen können. Wir wollen auf Landesebene die Rahmenbedingungen so gestalten, dass junge Menschen sich für Kinder entscheiden können und Eltern Familie und Beruf verlässlich miteinander vereinbaren können. Die flächendeckende, qualitativ hochwertige und bezahlbare Kinderbetreuung bleibt dabei ein zentrales Anliegen. Auch Paare mit unerfülltem Kinderwunsch wollen wir weiter finanziell unterstützen.
+**commitment_text:** Familien stärken: Familie ist dort, wo Menschen dauerhaft Verantwortung füreinander übernehmen - zwischen Eltern und Kindern ebenso wie zwischen den Generationen. Wir setzen uns für eine Politik ein, die Familien stärkt, unabhängig davon, in welcher Form sie gelebt wird. Eltern sollen frei entscheiden können, wie sie ihr Familienleben gestalten, und dabei auf verlässliche Unterstützung zählen können. Wir wollen auf Landesebene die Rahmenbedingungen so gestalten, dass junge Menschen sich für Kinder entscheiden können und Eltern Familie und Beruf verlässlich miteinander vereinbaren können. Die flächendeckende, qualitativ hochwertige und bezahlbare Kinderbetreuung bleibt dabei ein zentrales Anliegen. Auch Paare mit unerfülltem Kinderwunsch wollen wir weiter finanziell unterstützen.
 
 ##### source_location
 
@@ -3595,7 +3595,7 @@ _Leere Liste._
 
 **title:** Die Belange älterer Menschen in den Mittelpunkt rücken
 
-**commitment_text:** Die Belange älterer Menschen in den Mittelpunkt rücken: Mehr als ein Drittel der Menschen in Sachsen-Anhalt ist älter als 60 Jahre. Ihre Lebensleistung verdient Respekt – ihre Erfahrung ist ein Gewinn für unsere Gesellschaft. Wir wollen Orte der Begegnung wie Mehrgenerationenhäuser oder Seniorentreffs stärken, Vereinsamung entgegenwirken und alternative Wohnformen fördern. Gemeinsam mit den Kommunen wollen wir die Seniorenmitwirkung stärken und generationenverbindende Projekte vorantreiben. Darüber hinaus werden wir jegliche Art von vorhandener Altersdiskriminierung entgegentreten. Dazu gehören u. a. Aufklärungs- und Bildungsmaßnahmen, altersfreundliche Arbeitsmodelle, klare Regelungen gegen Diskriminierung im Berufsalltag und im täglichen Leben. Auch im digitalen Bereich muss der Zugang für Seniorinnen und Senioren durch benutzerfreundliche und altersgerechte Angebote verbessert werden. Auch analoge Kontaktmöglichkeiten müssen weiterhin vorgehalten werden. Wir wollen ein Deutschland, in dem alle Generationen gleichberechtigt und respektvoll zusammenleben.
+**commitment_text:** Die Belange älterer Menschen in den Mittelpunkt rücken: Mehr als ein Drittel der Menschen in Sachsen-Anhalt ist älter als 60 Jahre. Ihre Lebensleistung verdient Respekt - ihre Erfahrung ist ein Gewinn für unsere Gesellschaft. Wir wollen Orte der Begegnung wie Mehrgenerationenhäuser oder Seniorentreffs stärken, Vereinsamung entgegenwirken und alternative Wohnformen fördern. Gemeinsam mit den Kommunen wollen wir die Seniorenmitwirkung stärken und generationenverbindende Projekte vorantreiben. Darüber hinaus werden wir jegliche Art von vorhandener Altersdiskriminierung entgegentreten. Dazu gehören u. a. Aufklärungs- und Bildungsmaßnahmen, altersfreundliche Arbeitsmodelle, klare Regelungen gegen Diskriminierung im Berufsalltag und im täglichen Leben. Auch im digitalen Bereich muss der Zugang für Seniorinnen und Senioren durch benutzerfreundliche und altersgerechte Angebote verbessert werden. Auch analoge Kontaktmöglichkeiten müssen weiterhin vorgehalten werden. Wir wollen ein Deutschland, in dem alle Generationen gleichberechtigt und respektvoll zusammenleben.
 
 ##### source_location
 
@@ -3627,7 +3627,7 @@ _Leere Liste._
 
 **title:** Menschen mit Behinderung echte Teilhabe ermöglichen
 
-**commitment_text:** Menschen mit Behinderung echte Teilhabe ermöglichen: Wir bekennen uns zur Umsetzung der UN-Behindertenrechtskonvention und zum Grundsatz: „Keine Entscheidung über uns – ohne uns“. Inklusion bedeutet für uns individuelle Förderung statt Gleichmacherei. Barrierefreiheit umfasst nicht nur bauliche, sondern auch sprachliche und digitale Hürden. Wir wollen Werkstätten und Inklusionsbetriebe stärken, den Ausbau kommunaler Behindertenbeiräte begleiten und die gesundheitliche Versorgung von Menschen mit Behinderungen in den Blick nehmen. Die Sensibilisierung der Gesellschaft für ein Miteinander auf Augenhöhe bleibt unser Ziel. Die Strukturen der Eingliederungshilfe in Sachsen-Anhalt müssen überarbeitet werden. Wir setzen uns dafür ein, dass Stellen für kommunale Behindertenbeauftragte bei den Landkreisen und kreisfreien Städten geschaffen werden.
+**commitment_text:** Menschen mit Behinderung echte Teilhabe ermöglichen: Wir bekennen uns zur Umsetzung der UN-Behindertenrechtskonvention und zum Grundsatz: „Keine Entscheidung über uns - ohne uns“. Inklusion bedeutet für uns individuelle Förderung statt Gleichmacherei. Barrierefreiheit umfasst nicht nur bauliche, sondern auch sprachliche und digitale Hürden. Wir wollen Werkstätten und Inklusionsbetriebe stärken, den Ausbau kommunaler Behindertenbeiräte begleiten und die gesundheitliche Versorgung von Menschen mit Behinderungen in den Blick nehmen. Die Sensibilisierung der Gesellschaft für ein Miteinander auf Augenhöhe bleibt unser Ziel. Die Strukturen der Eingliederungshilfe in Sachsen-Anhalt müssen überarbeitet werden. Wir setzen uns dafür ein, dass Stellen für kommunale Behindertenbeauftragte bei den Landkreisen und kreisfreien Städten geschaffen werden.
 
 ##### source_location
 
@@ -4502,7 +4502,7 @@ _Leere Liste._
 
 **title:** Landwirtschaftliche Nutzflächen wirksam schützen
 
-**commitment_text:** Landwirtschaftliche Nutzflächen wirksam schützen: Die Inanspruchnahme landwirtschaftlicher Nutzflächen für andere Zwecke – etwa Versiegelung, Industrieansiedlungen auf der „grünen Wiese“, Zersiedelung oder Ausgleichsmaßnahmen – wollen wir deutlich begrenzen. Insbesondere Böden mit hoher Bonität sind als Grundlage für eine leistungsfähige und nachhaltige Landwirtschaft vorrangig zu sichern.
+**commitment_text:** Landwirtschaftliche Nutzflächen wirksam schützen: Die Inanspruchnahme landwirtschaftlicher Nutzflächen für andere Zwecke - etwa Versiegelung, Industrieansiedlungen auf der „grünen Wiese“, Zersiedelung oder Ausgleichsmaßnahmen - wollen wir deutlich begrenzen. Insbesondere Böden mit hoher Bonität sind als Grundlage für eine leistungsfähige und nachhaltige Landwirtschaft vorrangig zu sichern.
 
 ##### source_location
 
@@ -4826,7 +4826,7 @@ _Leere Liste._
 
 **title:** Auf Innovationen in der Land- und Forstwirtschaft setzen
 
-**commitment_text:** Auf Innovationen in der Land- und Forstwirtschaft setzen: Wir wollen den Einsatz Künstlicher Intelligenz und die Digitalisierung in der Land- und Forstwirtschaft stärken und fördern. Start-ups und innovative Ideen sollen ebenfalls gefördert werden. Wir setzen auf eine gezielte Förderung und praktische Anwendung der neuen Züchtungsmethoden (Genom – Editing), um die Schaffung von an den Klimawandel angepasster Sorten zu beschleunigen. Dies schließt die weitere Unterstützung entsprechender Vorlaufforschungen, insbesondere im IPK Gatersleben, ein. Das Land bündelt die notwendigen Informationen auf einer Plattform für Land- und Forstwirtschaft. Die im Landesbesitz befindlichen Daten (z.B. Katasterdaten) werden auf Antrag regionsbezogen den wirtschaftenden Betrieben kostenlos zur Verfügung gestellt.
+**commitment_text:** Auf Innovationen in der Land- und Forstwirtschaft setzen: Wir wollen den Einsatz Künstlicher Intelligenz und die Digitalisierung in der Land- und Forstwirtschaft stärken und fördern. Start-ups und innovative Ideen sollen ebenfalls gefördert werden. Wir setzen auf eine gezielte Förderung und praktische Anwendung der neuen Züchtungsmethoden (Genom - Editing), um die Schaffung von an den Klimawandel angepasster Sorten zu beschleunigen. Dies schließt die weitere Unterstützung entsprechender Vorlaufforschungen, insbesondere im IPK Gatersleben, ein. Das Land bündelt die notwendigen Informationen auf einer Plattform für Land- und Forstwirtschaft. Die im Landesbesitz befindlichen Daten (z.B. Katasterdaten) werden auf Antrag regionsbezogen den wirtschaftenden Betrieben kostenlos zur Verfügung gestellt.
 
 ##### source_location
 
@@ -5443,9 +5443,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-cdu-0169-energie-sicher-und-bezahlbar-die-bundeseinheitliche-stromp
 
-**title:** Energie – sicher und bezahlbar − Die bundeseinheitliche Strompreiszone teilen − Wasserstofftechnologie …
+**title:** Energie - sicher und bezahlbar - Die bundeseinheitliche Strompreiszone teilen - Wasserstofftechnologie …
 
-**commitment_text:** Energie – sicher und bezahlbar − Die bundeseinheitliche Strompreiszone teilen − Wasserstofftechnologie für die Industrie fördern − Erneuerbare Energien technologieoffen nutzen − Vorreiter bei Solar auf dem Dach werden Wir sind die Kraft für eine bezahlbare, verlässliche und nachhaltige Energiepolitik.
+**commitment_text:** Energie - sicher und bezahlbar - Die bundeseinheitliche Strompreiszone teilen - Wasserstofftechnologie für die Industrie fördern - Erneuerbare Energien technologieoffen nutzen - Vorreiter bei Solar auf dem Dach werden Wir sind die Kraft für eine bezahlbare, verlässliche und nachhaltige Energiepolitik.
 
 ##### source_location
 
@@ -5510,7 +5510,7 @@ _Leere Liste._
 
 **title:** Die Versorgung mit verlässlicher Energie sicherstellen
 
-**commitment_text:** Die Versorgung mit verlässlicher Energie sicherstellen: Vor dem Rückbau grundlastfähiger Kraftwerke braucht es konkrete Lösungen bei Speichern, Netzen und Ersatzkraftwerken. Versorgungssicherheit und Bezahlbarkeit haben für uns oberste Priorität – das ist die Grundlage für attraktive Standorte und sichere Arbeitsplätze. Dabei muss die Unabhängigkeit unserer Energieversorgung im Sinne einer Energieresilienzstrategie als Standortfaktor mitgedacht werden.
+**commitment_text:** Die Versorgung mit verlässlicher Energie sicherstellen: Vor dem Rückbau grundlastfähiger Kraftwerke braucht es konkrete Lösungen bei Speichern, Netzen und Ersatzkraftwerken. Versorgungssicherheit und Bezahlbarkeit haben für uns oberste Priorität - das ist die Grundlage für attraktive Standorte und sichere Arbeitsplätze. Dabei muss die Unabhängigkeit unserer Energieversorgung im Sinne einer Energieresilienzstrategie als Standortfaktor mitgedacht werden.
 
 ##### source_location
 
@@ -5542,7 +5542,7 @@ _Leere Liste._
 
 **title:** Das Akzeptanz- und Beteiligungsgesetzes auf seine Wirksamkeit hin überprüfen, damit die Akzeptanz …
 
-**commitment_text:** Das Akzeptanz- und Beteiligungsgesetzes auf seine Wirksamkeit hin überprüfen, damit die Akzeptanz vor Ort und damit auch die Investitionen in die Energiezukunft unseres Landes weiter steigen. Die Einführung war ein wichtiger Schritt: Kommunen und mittelbar Unternehmen und Bürger profitieren künftig stärker vom zukunftsfähigen Ausbau der Erneuerbaren Energien – durch gesetzlich verankerte Beteiligungsmodelle. Wir werden
+**commitment_text:** Das Akzeptanz- und Beteiligungsgesetzes auf seine Wirksamkeit hin überprüfen, damit die Akzeptanz vor Ort und damit auch die Investitionen in die Energiezukunft unseres Landes weiter steigen. Die Einführung war ein wichtiger Schritt: Kommunen und mittelbar Unternehmen und Bürger profitieren künftig stärker vom zukunftsfähigen Ausbau der Erneuerbaren Energien - durch gesetzlich verankerte Beteiligungsmodelle. Wir werden
 
 ##### source_location
 
@@ -5926,9 +5926,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-cdu-0184-eine-verlaessliche-hochwertige-und-kindgerechte-fruehkindl
 
-**title:** Eine verlässliche, hochwertige und kindgerechte frühkindliche Bildung, die allen Kindern – unabhängig …
+**title:** Eine verlässliche, hochwertige und kindgerechte frühkindliche Bildung, die allen Kindern - unabhängig …
 
-**commitment_text:** Eine verlässliche, hochwertige und kindgerechte frühkindliche Bildung, die allen Kindern – unabhängig von Herkunft, Wohnort oder Einkommen – offensteht. Unsere Kitas sind Bildungsorte. Die Bedeutung der Kindertagesbetreuung wächst stetig, ebenso wie die Herausforderungen: Sinkende Kinderzahlen, zunehmende soziale Heterogenität, Sprachdefizite sowie steigende Erwartungen an Erzieherinnen und Erzieher machen deutlich, dass Qualität, Verlässlichkeit und Ausstattung kontinuierlich weiterentwickelt werden müssen. Wir werden
+**commitment_text:** Eine verlässliche, hochwertige und kindgerechte frühkindliche Bildung, die allen Kindern - unabhängig von Herkunft, Wohnort oder Einkommen - offensteht. Unsere Kitas sind Bildungsorte. Die Bedeutung der Kindertagesbetreuung wächst stetig, ebenso wie die Herausforderungen: Sinkende Kinderzahlen, zunehmende soziale Heterogenität, Sprachdefizite sowie steigende Erwartungen an Erzieherinnen und Erzieher machen deutlich, dass Qualität, Verlässlichkeit und Ausstattung kontinuierlich weiterentwickelt werden müssen. Wir werden
 
 ##### source_location
 
@@ -6701,7 +6701,7 @@ _Leere Liste._
 
 **title:** Verwaltung konsequent am Bürger ausrichten
 
-**commitment_text:** Verwaltung konsequent am Bürger ausrichten: Wir machen die Verwaltung in SachsenAnhalt verständlich, erreichbar und serviceorientiert. Leistungen werden aus Sicht der Bürgerinnen und Bürger gedacht – digital wie vor Ort. Klare Zuständigkeiten und transparente Verfahren sorgen dafür, dass Anliegen schnell, nachvollziehbar und zuverlässig bearbeitet werden.
+**commitment_text:** Verwaltung konsequent am Bürger ausrichten: Wir machen die Verwaltung in SachsenAnhalt verständlich, erreichbar und serviceorientiert. Leistungen werden aus Sicht der Bürgerinnen und Bürger gedacht - digital wie vor Ort. Klare Zuständigkeiten und transparente Verfahren sorgen dafür, dass Anliegen schnell, nachvollziehbar und zuverlässig bearbeitet werden.
 
 ##### source_location
 
@@ -6926,7 +6926,7 @@ _Leere Liste._
 
 **title:** In Sachsen-Anhalt setzen wir auf gutes Recht, das verständlich, verlässlich und durchsetzbar …
 
-**commitment_text:** In Sachsen-Anhalt setzen wir auf gutes Recht, das verständlich, verlässlich und durchsetzbar ist – und auf schnelle Verfahren, die den Menschen und Unternehmen zeitnah Recht verschaffen.
+**commitment_text:** In Sachsen-Anhalt setzen wir auf gutes Recht, das verständlich, verlässlich und durchsetzbar ist - und auf schnelle Verfahren, die den Menschen und Unternehmen zeitnah Recht verschaffen.
 
 ##### source_location
 
@@ -7022,7 +7022,7 @@ _Leere Liste._
 
 **title:** Einen entschlossenen Rechtsstaat und eine schnelle Justiz gewährleisten
 
-**commitment_text:** Einen entschlossenen Rechtsstaat und eine schnelle Justiz gewährleisten: Ein starker und funktionierender Rechtsstaat ist keine Verhandlungssache. Wir stehen für eine unabhängige, handlungsfähige und leistungsstarke Justiz. Verfahren müssen zügig, fair und rechtsstaatlich einwandfrei geführt werden. Durch beschleunigte Verfahren soll eine unmittelbare Ahndung von Straftaten erfolgen. Hierfür werden wir Zielzeiten für zentrale Verfahrensarten definieren und eine digitale Infrastruktur einführen, die Verfahren beschleunigt. Dabei gilt: Der Zugang zum Recht darf nicht vom Wohnort abhängen. Wir halten an den bestehenden Standorten unserer Gerichte und Staatsanwaltschaften fest – in der Stadt ebenso wie im ländlichen Raum und schaffen Möglichkeiten für die digitale Kommunikation.
+**commitment_text:** Einen entschlossenen Rechtsstaat und eine schnelle Justiz gewährleisten: Ein starker und funktionierender Rechtsstaat ist keine Verhandlungssache. Wir stehen für eine unabhängige, handlungsfähige und leistungsstarke Justiz. Verfahren müssen zügig, fair und rechtsstaatlich einwandfrei geführt werden. Durch beschleunigte Verfahren soll eine unmittelbare Ahndung von Straftaten erfolgen. Hierfür werden wir Zielzeiten für zentrale Verfahrensarten definieren und eine digitale Infrastruktur einführen, die Verfahren beschleunigt. Dabei gilt: Der Zugang zum Recht darf nicht vom Wohnort abhängen. Wir halten an den bestehenden Standorten unserer Gerichte und Staatsanwaltschaften fest - in der Stadt ebenso wie im ländlichen Raum und schaffen Möglichkeiten für die digitale Kommunikation.
 
 ##### source_location
 
@@ -7472,7 +7472,7 @@ _Leere Liste._
 
 **title:** Mobilitätsvielfalt ermöglichen und Technologieoffenheit stärken
 
-**commitment_text:** Mobilitätsvielfalt ermöglichen und Technologieoffenheit stärken: Wir lehnen ideologische Verbotsdebatten ab. Technologieoffenheit bleibt Grundprinzip unserer Politik. Wir setzen auf kluge Anreize, um umweltfreundliche Alternativen zu fördern – vom emissionsarmen Diesel über E-Mobilität bis hin zu Wasserstoff- und Biokraftstoffantrieben.
+**commitment_text:** Mobilitätsvielfalt ermöglichen und Technologieoffenheit stärken: Wir lehnen ideologische Verbotsdebatten ab. Technologieoffenheit bleibt Grundprinzip unserer Politik. Wir setzen auf kluge Anreize, um umweltfreundliche Alternativen zu fördern - vom emissionsarmen Diesel über E-Mobilität bis hin zu Wasserstoff- und Biokraftstoffantrieben.
 
 ##### source_location
 
@@ -8221,7 +8221,7 @@ _Leere Liste._
 
 **title:** Unsere Schutzgebiete stärken
 
-**commitment_text:** Unsere Schutzgebiete stärken: Nationalparke, Biosphärenreservate und Naturparke – bleiben wichtige Schutzgebiete, die erlebbar bleiben sollen. Sie werden weiterhin unterstützt und in ihrer Entwicklung aktiv begleitet. Für die Stilllegung von bereits nachhaltig bewirtschafteten Flächen wollen wir kein Steuergeld einsetzen. Das Grüne Band soll im Sinne einer Erinnerungskultur und unter entsprechender Nutzung erhalten bleiben.
+**commitment_text:** Unsere Schutzgebiete stärken: Nationalparke, Biosphärenreservate und Naturparke - bleiben wichtige Schutzgebiete, die erlebbar bleiben sollen. Sie werden weiterhin unterstützt und in ihrer Entwicklung aktiv begleitet. Für die Stilllegung von bereits nachhaltig bewirtschafteten Flächen wollen wir kein Steuergeld einsetzen. Das Grüne Band soll im Sinne einer Erinnerungskultur und unter entsprechender Nutzung erhalten bleiben.
 
 ##### source_location
 
@@ -8641,7 +8641,7 @@ _Leere Liste._
 
 **title:** Vielfalt und Gemeinschaft im Ehrenamt und im Sport sichtbar machen
 
-**commitment_text:** Vielfalt und Gemeinschaft im Ehrenamt und im Sport sichtbar machen: Das Ehrenamt verdient Wertschätzung, nicht nur in Worten, sondern durch verlässliche Unterstützung, weniger Bürokratie und öffentliche Anerkennung. Wir stärken Auszeichnungen und öffentliche Anerkennung des Ehrenamts, besonders auf kommunaler Ebene. Gleichzeitig setzen wir auf ein starkes Miteinander der Generationen, Kulturen und Regionen im Sport und Ehrenamt. Sachsen-Anhalt ist vielfältig – das soll man im Stadion, im Dorfgemeinschaftshaus und auf dem Vereinsfest erleben können.
+**commitment_text:** Vielfalt und Gemeinschaft im Ehrenamt und im Sport sichtbar machen: Das Ehrenamt verdient Wertschätzung, nicht nur in Worten, sondern durch verlässliche Unterstützung, weniger Bürokratie und öffentliche Anerkennung. Wir stärken Auszeichnungen und öffentliche Anerkennung des Ehrenamts, besonders auf kommunaler Ebene. Gleichzeitig setzen wir auf ein starkes Miteinander der Generationen, Kulturen und Regionen im Sport und Ehrenamt. Sachsen-Anhalt ist vielfältig - das soll man im Stadion, im Dorfgemeinschaftshaus und auf dem Vereinsfest erleben können.
 
 ##### source_location
 
@@ -8802,7 +8802,7 @@ _Leere Liste._
 
 **title:** Jüdisches Leben schützen und fördern
 
-**commitment_text:** Jüdisches Leben schützen und fördern: Nach Jahrzehnten der Stagnation wächst wieder jüdisches Leben in Sachsen-Anhalt. Wir unterstützen diese Entwicklung – mit dem Neubau von Synagogen, mit Bildungsarbeit, mit Schutzmaßnahmen und durch den entschlossenen Kampf gegen Antisemitismus.
+**commitment_text:** Jüdisches Leben schützen und fördern: Nach Jahrzehnten der Stagnation wächst wieder jüdisches Leben in Sachsen-Anhalt. Wir unterstützen diese Entwicklung - mit dem Neubau von Synagogen, mit Bildungsarbeit, mit Schutzmaßnahmen und durch den entschlossenen Kampf gegen Antisemitismus.
 
 ##### source_location
 
@@ -8867,7 +8867,7 @@ _Leere Liste._
 
 **title:** Kirchliche Gebäude erhalten und kulturelles Erbe schützen
 
-**commitment_text:** Kirchliche Gebäude erhalten und kulturelles Erbe schützen: Kirchen prägen unsere Städte und Dörfer – architektonisch, historisch und als Orte der Begegnung. Wir setzen uns für den Erhalt dieser Gebäude ein, auch wenn sie nicht mehr regelmäßig religiös genutzt werden. Damit bewahren wir ein Stück Identität und Heimat.
+**commitment_text:** Kirchliche Gebäude erhalten und kulturelles Erbe schützen: Kirchen prägen unsere Städte und Dörfer - architektonisch, historisch und als Orte der Begegnung. Wir setzen uns für den Erhalt dieser Gebäude ein, auch wenn sie nicht mehr regelmäßig religiös genutzt werden. Damit bewahren wir ein Stück Identität und Heimat.
 
 ##### source_location
 
@@ -9125,7 +9125,7 @@ _Leere Liste._
 
 **title:** Innovation aus einem Guss fördern
 
-**commitment_text:** Innovation aus einem Guss fördern: Wir wollen die gesamte Innovationskette – von der Grundlagenforschung über die angewandte Wissenschaft bis hin zur wirtschaftlichen Umsetzung – möglichst kohärent entwickeln. Dazu gehört insbesondere eine
+**commitment_text:** Innovation aus einem Guss fördern: Wir wollen die gesamte Innovationskette - von der Grundlagenforschung über die angewandte Wissenschaft bis hin zur wirtschaftlichen Umsetzung - möglichst kohärent entwickeln. Dazu gehört insbesondere eine
 
 ##### source_location
 
@@ -9190,7 +9190,7 @@ _Leere Liste._
 
 **title:** Forschung an internationalen Standards ausrichten
 
-**commitment_text:** Forschung an internationalen Standards ausrichten: Wissenschaft und Forschung wollen wir stärker an international anerkannten Leistungs- und Exzellenzkriterien orientieren – unter Einbeziehung der Anwendungsforschung. Diese werden ergänzt durch strategische Zielvereinbarungen mit regelmäßiger Leistungsevaluierung.
+**commitment_text:** Forschung an internationalen Standards ausrichten: Wissenschaft und Forschung wollen wir stärker an international anerkannten Leistungs- und Exzellenzkriterien orientieren - unter Einbeziehung der Anwendungsforschung. Diese werden ergänzt durch strategische Zielvereinbarungen mit regelmäßiger Leistungsevaluierung.
 
 ##### source_location
 
@@ -9286,7 +9286,7 @@ _Leere Liste._
 
 **title:** Ein innovationsfreundliches Politikklima beibehalten und ausbauen
 
-**commitment_text:** Ein innovationsfreundliches Politikklima beibehalten und ausbauen: Sachsen-Anhalt soll seine innovationsfreundliche Politik weiterentwickeln – eine Politik, die wissenschaftlich-technischen Fortschritt ebenso ermöglicht wie den verantwortungsvollen, nachhaltigen Umgang mit Ressourcen. Dabei gilt es, Risiken sorgfältig abzuwägen, aber vor allem auch die Chancen neuer technologischer Entwicklungen aktiv zu nutzen.
+**commitment_text:** Ein innovationsfreundliches Politikklima beibehalten und ausbauen: Sachsen-Anhalt soll seine innovationsfreundliche Politik weiterentwickeln - eine Politik, die wissenschaftlich-technischen Fortschritt ebenso ermöglicht wie den verantwortungsvollen, nachhaltigen Umgang mit Ressourcen. Dabei gilt es, Risiken sorgfältig abzuwägen, aber vor allem auch die Chancen neuer technologischer Entwicklungen aktiv zu nutzen.
 
 ##### source_location
 
@@ -9380,9 +9380,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-cdu-0291-stabilitaet-sichern-vertrauen-schaffen-wir-stehen-fuer-ein
 
-**title:** Stabilität sichern – Vertrauen schaffen
+**title:** Stabilität sichern - Vertrauen schaffen
 
-**commitment_text:** Stabilität sichern – Vertrauen schaffen: Wir stehen für eine Haushaltspolitik, die Maß hält und Prioritäten setzt. Steuererhöhungen lehnen wir ab. Sie belasten Familien, Arbeitnehmer und den Mittelstand und schwächen Wachstum und Investitionen. Stattdessen setzen wir auf wirtschaftliche Stärke, solide Einnahmen und eine Politik, die Planungssicherheit gibt. Die Schuldenbremse bleibt für uns ein zentrales Versprechen an
+**commitment_text:** Stabilität sichern - Vertrauen schaffen: Wir stehen für eine Haushaltspolitik, die Maß hält und Prioritäten setzt. Steuererhöhungen lehnen wir ab. Sie belasten Familien, Arbeitnehmer und den Mittelstand und schwächen Wachstum und Investitionen. Stattdessen setzen wir auf wirtschaftliche Stärke, solide Einnahmen und eine Politik, die Planungssicherheit gibt. Die Schuldenbremse bleibt für uns ein zentrales Versprechen an
 
 ##### source_location
 
@@ -9447,7 +9447,7 @@ _Leere Liste._
 
 **title:** Investitionen mit Weitblick tätigen
 
-**commitment_text:** Investitionen mit Weitblick tätigen: Wir investieren gezielt in das, was Sachsen-Anhalt stark macht: leistungsfähige Verkehrs- und Digitalinfrastruktur, sichere Energieversorgung, Innovation, Forschung, Bildung, Sicherheit und Unternehmensgründungen. Unser Anspruch bleibt eine dauerhaft hohe Investitionsquote. Zukunftsausgaben haben Vorrang vor konsumtiven Ausgaben. Die Investitionsbank Sachsen- Anhalt entwickeln wir konsequent weiter als starke Förderbank des Landes. Sie bleibt Motor für regionale Entwicklung, Innovation und private Investitionen – in Städten wie im ländlichen Raum.
+**commitment_text:** Investitionen mit Weitblick tätigen: Wir investieren gezielt in das, was Sachsen-Anhalt stark macht: leistungsfähige Verkehrs- und Digitalinfrastruktur, sichere Energieversorgung, Innovation, Forschung, Bildung, Sicherheit und Unternehmensgründungen. Unser Anspruch bleibt eine dauerhaft hohe Investitionsquote. Zukunftsausgaben haben Vorrang vor konsumtiven Ausgaben. Die Investitionsbank Sachsen- Anhalt entwickeln wir konsequent weiter als starke Förderbank des Landes. Sie bleibt Motor für regionale Entwicklung, Innovation und private Investitionen - in Städten wie im ländlichen Raum.
 
 ##### source_location
 
@@ -9513,7 +9513,7 @@ _Leere Liste._
 
 **title:** Einen modernen Staat schaffen
 
-**commitment_text:** Einen modernen Staat schaffen: Die Verwaltung in Sachsen-Anhalt soll digital, effizient und bürgernah arbeiten. Wir beschleunigen Genehmigungen, automatisieren Verfahren und bauen Bürokratie ab. Aufgaben und Strukturen werden regelmäßig überprüft. So soll z.B. der Bestand an institutionellen Förderungen auf Zielerreichung, Notwendigkeit und finanzielle Tragfähigkeit überprüft werden. Unser Ziel ist eine Verwaltung, die nicht bremst, sondern ermöglicht. Digitalisierung ist für uns ein zentrales Investitionsprojekt der kommenden Dekade – für mehr Transparenz, bessere Dienstleistungen und einen verantwortungsvollen Umgang mit Steuermitteln.
+**commitment_text:** Einen modernen Staat schaffen: Die Verwaltung in Sachsen-Anhalt soll digital, effizient und bürgernah arbeiten. Wir beschleunigen Genehmigungen, automatisieren Verfahren und bauen Bürokratie ab. Aufgaben und Strukturen werden regelmäßig überprüft. So soll z.B. der Bestand an institutionellen Förderungen auf Zielerreichung, Notwendigkeit und finanzielle Tragfähigkeit überprüft werden. Unser Ziel ist eine Verwaltung, die nicht bremst, sondern ermöglicht. Digitalisierung ist für uns ein zentrales Investitionsprojekt der kommenden Dekade - für mehr Transparenz, bessere Dienstleistungen und einen verantwortungsvollen Umgang mit Steuermitteln.
 
 ##### source_location
 
@@ -9577,7 +9577,7 @@ _Leere Liste._
 
 **title:** Strukturwandel als Chance nutzen
 
-**commitment_text:** Strukturwandel als Chance nutzen: Der Strukturwandel entscheidet über die Zukunft ganzer Regionen. Wir sorgen dafür, dass Mittel aus Bundes-, EU- und Landesprogrammen effizient, transparent und zielgerichtet eingesetzt werden. Unser Maßstab sind nachhaltige Arbeitsplätze, regionale Wertschöpfung und langfristige Perspektiven. Gerade im ländlichen Raum schaffen wir so neue Möglichkeiten. Sachsen-Anhalt soll 2035 ein Land sein, das den Wandel nicht verwaltet, sondern gestaltet – mit Mut, Verantwortung und einer Finanzpolitik, die Zukunft möglich macht
+**commitment_text:** Strukturwandel als Chance nutzen: Der Strukturwandel entscheidet über die Zukunft ganzer Regionen. Wir sorgen dafür, dass Mittel aus Bundes-, EU- und Landesprogrammen effizient, transparent und zielgerichtet eingesetzt werden. Unser Maßstab sind nachhaltige Arbeitsplätze, regionale Wertschöpfung und langfristige Perspektiven. Gerade im ländlichen Raum schaffen wir so neue Möglichkeiten. Sachsen-Anhalt soll 2035 ein Land sein, das den Wandel nicht verwaltet, sondern gestaltet - mit Mut, Verantwortung und einer Finanzpolitik, die Zukunft möglich macht
 
 ##### source_location
 
@@ -9994,7 +9994,7 @@ _Leere Liste._
 
 **title:** Kulturelles Ehrenamt anerkennen und unterstützen
 
-**commitment_text:** Kulturelles Ehrenamt anerkennen und unterstützen: Kultur lebt vom Engagement. Wir setzen uns für bessere Rahmenbedingungen für Vereine, Chöre, Initiativen und Förderkreise ein – mit Förderzugängen, Beratung und öffentlicher Wertschätzung.
+**commitment_text:** Kulturelles Ehrenamt anerkennen und unterstützen: Kultur lebt vom Engagement. Wir setzen uns für bessere Rahmenbedingungen für Vereine, Chöre, Initiativen und Förderkreise ein - mit Förderzugängen, Beratung und öffentlicher Wertschätzung.
 
 ##### source_location
 
@@ -10766,9 +10766,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-cdu-0334-diese-chancen-wollen-wir-erhalten-und-ausbauen-durch-eine
 
-**title:** Diese Chancen wollen wir erhalten und ausbauen – durch eine Politik, die …
+**title:** Diese Chancen wollen wir erhalten und ausbauen - durch eine Politik, die …
 
-**commitment_text:** Diese Chancen wollen wir erhalten und ausbauen – durch eine Politik, die europäische Verantwortung mit klarer Vertretung sachsenanhaltischer Interessen verbindet.
+**commitment_text:** Diese Chancen wollen wir erhalten und ausbauen - durch eine Politik, die europäische Verantwortung mit klarer Vertretung sachsenanhaltischer Interessen verbindet.
 
 ##### source_location
 

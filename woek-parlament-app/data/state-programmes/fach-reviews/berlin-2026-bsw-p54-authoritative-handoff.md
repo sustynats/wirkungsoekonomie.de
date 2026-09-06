@@ -1,4 +1,4 @@
-## WÖk FACH BATCH — Berlin BSW physical PDF page 54 complete source-bound review
+## WÖk FACH BATCH - Berlin BSW physical PDF page 54 complete source-bound review
 
 Continuation after P53 `5457941024`. Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P54/66. `BE-BSW-P54-U01-a226a5a2869e` is **already structurally consumed** by the P53→P54 exact fragment repair and must remain zero-count. Remaining P54 frozen inventory: section/context units plus 7 atomised records (`U03`, `U04`, `U05`, `U08`). No DNS mapping, Recommendation, score or party-wide judgement.
 
@@ -11,12 +11,12 @@ Continuation after P53 `5457941024`. Frozen artifact unchanged: `BE-AGH-2026-BSW
 5. **Inheritance/wealth-tax revenue competence is distinct from legislative competence.** Erbschaft-/Schenkungsteuer revenue belongs to Länder, while federal competing legislation governs the tax under current constitutional doctrine: https://www.bundestag.de/resource/blob/1134488/WD-4-047-25.pdf . `Revenue accrues to Länder` does not mean Berlin can unilaterally set federal inheritance/wealth-tax parameters.
 6. **Berlin tax-administration capacity claims have some current evidence, but remain evidence/context rather than separate interventions here.** Berlin Rechnungshof found personnel/organisation deficits and material potential in Betriebsprüfung: https://www.berlin.de/rechnungshof/presse/pressemitteilungen/pressemitteilung.1620524.php . Exact U04 reform/enforcement effects still require bounded legal/administrative measures.
 
-### A. P54-U01/P54-U02 — prior repair + heading
+### A. P54-U01/P54-U02 - prior repair + heading
 
 - `BE-BSW-P54-U01-a226a5a2869e` → `SOURCE_UNIT_RECLASSIFIED_VERSIONED / CROSS_PAGE_FRAGMENT_CONSUMED_BY_P53_U10_REPAIR / ZERO_COUNT`. Do not reopen.
-- `BE-BSW-P54-U02-71a04ffac2cb` — heading `Eine gerechte Steuerpolitik für Berlin` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
+- `BE-BSW-P54-U02-71a04ffac2cb` - heading `Eine gerechte Steuerpolitik für Berlin` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
-### B. U03 — broad fair-tax system goal
+### B. U03 - broad fair-tax system goal
 
 #### `BE-BSW-P54-U03-A01-dc6129e709d1`
 Broad demand that large corporations, large heirs and very wealthy persons lose privileges and contribute according to ability.
@@ -24,7 +24,7 @@ Broad demand that large corporations, large heirs and very wealthy persons lose 
 - `terminal_fach_state = NON_EFFECT_DISTRIBUTIONAL_TAX_POLICY_GOAL_AND_FRAME_REVIEWED`
 - Exact reason: this is a distributional/normative tax-system objective spanning multiple tax bases and legal competences, not one bounded tax parameter. Preserve `Leistungsfähigkeit` / incidence / distribution as evaluation criteria for later concrete tax objects; do not create a score or synthetic direction from the labels `Privilegien`, `gerecht` or `angemessen`.
 
-### C. U04 — loopholes/avoidance/evasion + Rechnungshof claim
+### C. U04 - loopholes/avoidance/evasion + Rechnungshof claim
 
 #### `BE-BSW-P54-U04-A01-86fc9687ba01`
 Close lobby-created tax loopholes and actively fight tax avoidance/evasion.
@@ -38,7 +38,7 @@ Claim that federal/Land audit courts document high lost revenue from insufficien
 - `terminal_fach_state = NON_EFFECT_EVIDENTIARY_AND_CAUSAL_SOURCE_CLAIM_REVIEWED_WITH_PARTIAL_CURRENT_SUPPORT`
 - Guard: Berlin Rechnungshof does support a Berlin-specific staffing/organisation/audit-yield problem, but the source atom's broader `Bundes- und Landesrechnungshof` generalisation and implied counterfactual revenue are not automatically proven. Bind as context/evidence claim for later exact staffing/audit measures; do not double-count.
 
-### D. U05 — competence framing
+### D. U05 - competence framing
 
 #### `BE-BSW-P54-U05-A01-0b1e67cac6d5`
 Many taxes are federal law; Berlin can initiate changes via Bundesrat.
@@ -52,14 +52,14 @@ Claim that only Gewerbesteuer offers own Land-law scope for major additional rev
 - `terminal_fach_state = NON_EFFECT_OVERBROAD_COMPETENCE_AND_EXPECTED_REVENUE_CLAIM_REVIEWED`
 - Exact guard: the exclusivity claim is not a safe legal statement. Berlin has other constitutionally/statutorily defined Land/local tax powers. Preserve only as programme-authored rationale leading into the concrete Gewerbesteuer rate proposal; do not render it as verified law.
 
-### E. U06/U07 — Gewerbesteuer heading and comparison context
+### E. U06/U07 - Gewerbesteuer heading and comparison context
 
-- `BE-BSW-P54-U06-f6154a193610` — heading `Gewerbesteuer dem Niveau anderer Großstädte anpassen` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
-- `BE-BSW-P54-U07-a80f189afb0e` — current Berlin 410% plus comparator-city rates/claims → `NON_EFFECT_TAX_RATE_BASELINE_AND_COMPARATOR_SOURCE_CONTEXT_REVIEWED`.
+- `BE-BSW-P54-U06-f6154a193610` - heading `Gewerbesteuer dem Niveau anderer Großstädte anpassen` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
+- `BE-BSW-P54-U07-a80f189afb0e` - current Berlin 410% plus comparator-city rates/claims → `NON_EFFECT_TAX_RATE_BASELINE_AND_COMPARATOR_SOURCE_CONTEXT_REVIEWED`.
   - Berlin 410% is current and independently verified.
   - Comparator values must be versioned against the respective current city rules before public numeric comparison; cross-city Hebesatz alone also does not establish equal effective burden, tax base, firm mix or location elasticity.
 
-### F. U08 — raise Berlin Gewerbesteuer to max 460% + claimed revenue/use effect
+### F. U08 - raise Berlin Gewerbesteuer to max 460% + claimed revenue/use effect
 
 #### `BE-BSW-P54-U08-A01-b87a16d8da71`
 Raise/adapt Berlin Gewerbesteuer-Hebesatz from current 410%, capped at 460%.
@@ -82,12 +82,12 @@ Claim: ~€400m annual extra revenue, then infrastructure/education spending rai
 - `terminal_fach_state = NON_EFFECT_STATIC_REVENUE_SCENARIO_AND_SECOND_ORDER_OUTCOME_CLAIM_REVIEWED`
 - Exact guard: 2025 gross Gewerbesteuer and the proposed +50 points make roughly €400m a plausible **static** magnitude, but this is not a net forecast and the second-stage `spend → attractiveness → settlements` chain is not independently specified or proven. Bind this atom as an expected outcome/scenario of U08-A01, not a second effect object.
 
-### G. U09/U10/U11 — inheritance/wealth-tax heading and source context
+### G. U09/U10/U11 - inheritance/wealth-tax heading and source context
 
-- `BE-BSW-P54-U09-ec438404117f` — heading `Reiche Erben und Multimillionäre stärker besteuern` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
-- `BE-BSW-P54-U10-670bb94d551b` — statement that inheritance/gift/wealth-tax revenue accrues to Länder + `enorme Mehreinnahmen` from fair reforms → `NON_EFFECT_TAX_REVENUE_COMPETENCE_AND_EXPECTED_YIELD_CONTEXT_REVIEWED`.
+- `BE-BSW-P54-U09-ec438404117f` - heading `Reiche Erben und Multimillionäre stärker besteuern` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
+- `BE-BSW-P54-U10-670bb94d551b` - statement that inheritance/gift/wealth-tax revenue accrues to Länder + `enorme Mehreinnahmen` from fair reforms → `NON_EFFECT_TAX_REVENUE_COMPETENCE_AND_EXPECTED_YIELD_CONTEXT_REVIEWED`.
   - Revenue assignment and legislative competence must remain separate; no Berlin-unilateral rate/design inference.
-- `BE-BSW-P54-U11-ba784252aeff` — claims about inheritance-tax privileges, relative burden and very large business-asset exemptions → `NON_EFFECT_DISTRIBUTIONAL_AND_TAX_EXPENDITURE_DIAGNOSIS_SOURCE_CLAIM_REVIEWED`.
+- `BE-BSW-P54-U11-ba784252aeff` - claims about inheritance-tax privileges, relative burden and very large business-asset exemptions → `NON_EFFECT_DISTRIBUTIONAL_AND_TAX_EXPENDITURE_DIAGNOSIS_SOURCE_CLAIM_REVIEWED`.
   - Do not accept comparative burden/exemption magnitudes as Fach evidence without current ErbStG rule, valuation, case-distribution and revenue analysis. Concrete reform actions continue on P55 and must be reviewed there independently.
 
 ### H. P54 terminality
@@ -102,7 +102,7 @@ After honoring the prior P53→P54 cross-page repair:
 
 `BE_BSW_P54_FACH_COMPLETE = PASS_SOURCE_BOUND_AFTER_PRIOR_P53_FRAGMENT_CONSUMPTION`
 
-After lossless materialisation, untouched physical BSW Fach envelope begins **P55–P66 = 12 pages** unless newer explicit #240 Fach closes a subset. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
+After lossless materialisation, untouched physical BSW Fach envelope begins **P55-P66 = 12 pages** unless newer explicit #240 Fach closes a subset. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
 
 ### CodeX boundary
 

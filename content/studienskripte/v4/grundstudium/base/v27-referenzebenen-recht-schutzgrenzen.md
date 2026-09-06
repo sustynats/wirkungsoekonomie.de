@@ -88,7 +88,7 @@ Je nach Fall können betroffen sein:
 
 WÖk ersetzt keine juristische Prüfung. Sie muss aber erkennen, wenn ein Wirkungsobjekt grundrechtsrelevant ist und eine fachjuristische Prüfung erforderlich wird.
 
-## 6. Referenzebene 5: Staatsziele – Beispiel Art. 20a GG
+## 6. Referenzebene 5: Staatsziele - Beispiel Art. 20a GG
 
 Art. 20a GG verpflichtet den Staat, auch in Verantwortung für künftige Generationen die natürlichen Lebensgrundlagen und die Tiere im Rahmen der verfassungsmäßigen Ordnung zu schützen.
 
@@ -291,7 +291,7 @@ SDGs und DNS geben Zielbezüge.
 
 Grundrechte und Fachrecht setzen rechtliche Grenzen.
 
-Art. 20a ist ein Staatsziel im Grundgesetz – kein SDG und nicht SDG+.
+Art. 20a ist ein Staatsziel im Grundgesetz - kein SDG und nicht SDG+.
 
 Wissenschaft kann zusätzliche Schwellen zeigen.
 
@@ -299,7 +299,7 @@ Und SDG+ hilft uns, demokratische und epistemische Wirkungsräume sichtbarer zu 
 
 Wenn wir diese Ebenen sauber trennen, können wir echte Zielkonflikte viel besser sehen.
 
-Und wir erkennen, wann wir abwägen dürfen – und wann nicht.
+Und wir erkennen, wann wir abwägen dürfen - und wann nicht.
 
 Der Merksatz lautet:
 

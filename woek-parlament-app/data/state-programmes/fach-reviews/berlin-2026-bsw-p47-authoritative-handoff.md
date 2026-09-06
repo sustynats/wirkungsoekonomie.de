@@ -1,4 +1,4 @@
-## WÖk FACH BATCH — Berlin BSW P47: Wärmepumpen/Netzwärme · Wirkungspriorisierung · Technologieoffenheit · CCS · Speicher · Geothermie · Hitzeschutz · Wind/Repowering — source-bound review + mandatory segmentation repairs
+## WÖk FACH BATCH - Berlin BSW P47: Wärmepumpen/Netzwärme · Wirkungspriorisierung · Technologieoffenheit · CCS · Speicher · Geothermie · Hitzeschutz · Wind/Repowering - source-bound review + mandatory segmentation repairs
 
 Authoritative continuation after P46 `5458773627`. Fresh complete #240 re-read immediately before authoring found **no existing P47 Fach handoff**. Frozen artefact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P47/66. Exact source IDs/text below are bound to `berlin-2026-bsw-v1.json`. Generic delegated/#313 RNAA is not Fach authority and is superseded only for this exact P47 scope. No DNS mapping, Recommendation, score or party-wide judgement.
 
@@ -8,13 +8,13 @@ Authoritative continuation after P46 `5458773627`. Fresh complete #240 re-read i
 
 **Deep-geothermal potential is promising but not yet a citywide proven commercial resource.** Berlin reported positive 2D pilot results on 30.01.2026; a citywide 3D seismic campaign is planned from Q1 2027, with data processing expected through summer 2028. Preserve the programme's geothermal-potential sentence as a prospect/baseline claim, not as established usable capacity. Source: `https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2026/pressemitteilung.1639132.php`.
 
-**CCS is legally and technically developing, but no blanket climate-benefit label is justified.** In a Bundestag expert hearing on 18.03.2026, views ranged from broad use to restriction to unavoidable residual emissions. The federal government stated on 13.05.2026 that Germany currently has no domestic CO₂ storage and estimates 8–10 years for storage development. Sources: `https://www.bundestag.de/ausschuesse/umwelt/sitzungen/1151870-1151870`, `https://www.bundestag.de/presse/hib/kurzmeldungen-1178324`.
+**CCS is legally and technically developing, but no blanket climate-benefit label is justified.** In a Bundestag expert hearing on 18.03.2026, views ranged from broad use to restriction to unavoidable residual emissions. The federal government stated on 13.05.2026 that Germany currently has no domestic CO₂ storage and estimates 8-10 years for storage development. Sources: `https://www.bundestag.de/ausschuesse/umwelt/sitzungen/1151870-1151870`, `https://www.bundestag.de/presse/hib/kurzmeldungen-1178324`.
 
 **Berlin's wind-area obligation remains current federal law.** WindBG requires Berlin to reach 0.25% of land by 31.12.2027 and 0.50% by 31.12.2032; Berlin's planning process states this corresponds to about 446 ha and aims at designation by end-2027. Sources: `https://www.gesetze-im-internet.de/windbg/anlage.html`, `https://mein.berlin.de/vorhaben/2025-01196/`.
 
 **Heat adaptation is a real current health/resilience need.** Berlin's health administration warned on 25.06.2026 of acute heat health risks and specifically advised use of cool rooms; current district practice also uses drinking fountains/cool places as heat-protection infrastructure. Sources: `https://www.berlin.de/sen/wgp/presse/2026/pressemitteilung.1685884.php`, `https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1701633.php`.
 
-### 2. U01 — malformed Wärmepumpe/Netzwärme sentence; one deterministic semantic object
+### 2. U01 - malformed Wärmepumpe/Netzwärme sentence; one deterministic semantic object
 
 Stored atoms:
 - `BE-BSW-P47-U01-A01-6a2348e8be71` = `Wir wollen Bedingungen schaffen, bei denen die Nutzung von Wärmepumpen wirtschaftlich und technisch sinnvoll ist, d. h.`
@@ -37,35 +37,35 @@ Semantic child:
 - Noncompensation: low operating emissions cannot compensate for poor full cost/reliability/site fit; cheap short-term operation cannot compensate for fossil-heavy electricity/heat-source or lock-in.
 - Reality check: seasonal COP, source availability, storage round-trip/standing losses, network losses/temperature, electricity peak effects, €/MWh lifecycle cost, customer tariff, reliability and lifecycle emissions against decentralised counterfactuals.
 
-### 3. U02 — effect prioritisation + anti-target rhetoric are design/frame, not independent effects
+### 3. U02 - effect prioritisation + anti-target rhetoric are design/frame, not independent effects
 
-`BE-BSW-P47-U02-A01-465b845ac6cc` — invest in emission-reducing installations where they achieve the greatest effect:
+`BE-BSW-P47-U02-A01-465b845ac6cc` - invest in emission-reducing installations where they achieve the greatest effect:
 - `terminal_fach_state = NON_EFFECT_MARGINAL_IMPACT_AND_COST_EFFECTIVENESS_DESIGN_GUARD_REVIEWED`
 - `counts_as_effect_object = false`
-- Reason: this is an allocation/evaluation principle, but the source defines neither metric, budget, actor nor comparison boundary. Preserve the useful guard: compare additional lifecycle emissions avoided, full system cost, delivery probability, distribution and lock-in — not technology labels or nominal capacity.
+- Reason: this is an allocation/evaluation principle, but the source defines neither metric, budget, actor nor comparison boundary. Preserve the useful guard: compare additional lifecycle emissions avoided, full system cost, delivery probability, distribution and lock-in - not technology labels or nominal capacity.
 
-`BE-BSW-P47-U02-A02-4164ec1a74e2` — `Aktivismus ... Zielmarken`:
+`BE-BSW-P47-U02-A02-4164ec1a74e2` - `Aktivismus ... Zielmarken`:
 - `terminal_fach_state = NON_EFFECT_NORMATIVE_POLICY_PRIORITY_FRAME_REVIEWED`
 - `counts_as_effect_object = false`
 - Reason: rhetorical/normative position, no intervention. Do not infer that statutory climate targets are irrelevant; conversely do not treat target compliance alone as proof of welfare/effectiveness.
 
-### 4. U03 — technology research/openess + H₂/e-fuel examples
+### 4. U03 - technology research/openess + H₂/e-fuel examples
 
-`BE-BSW-P47-U03-A01-dc1476d3a42d` — `Technologieforschung und Technologieoffenheit`:
+`BE-BSW-P47-U03-A01-dc1476d3a42d` - `Technologieforschung und Technologieoffenheit`:
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: no R&D/funding/procurement/sandbox programme, budget, selection rule, technology-readiness stage, actor or success criterion is specified. A broad commitment to research/openess does not identify a source-bound resource shift whose net effect can be assessed.
 
-`BE-BSW-P47-U03-A02-2f013f7c0efb` — hydrogen and synthetic-fuel production as examples:
+`BE-BSW-P47-U03-A02-2f013f7c0efb` - hydrogen and synthetic-fuel production as examples:
 - `terminal_fach_state = NON_EFFECT_TECHNOLOGY_EXAMPLE_SCOPE_REVIEWED`
 - zero-count; these are examples under A01, not independent deployment mandates.
 
-`BE-BSW-P47-U03-A03-b46bd2264eb0` — both have pros/cons in production/distribution:
+`BE-BSW-P47-U03-A03-b46bd2264eb0` - both have pros/cons in production/distribution:
 - `terminal_fach_state = NON_EFFECT_TECHNOLOGY_COMPARISON_RATIONALE_REVIEWED`
 - zero-count; correct guard is disaggregated lifecycle efficiency, electricity demand, feedstock/carbon source, infrastructure, cost and use-case suitability. `Technologieoffenheit` never means equal WÖk performance.
 
-### 5. U04 — CCS/CCU endorsement
+### 5. U04 - CCS/CCU endorsement
 
-#### `BE-BSW-P47-U04-A01-48550be8d573` — support capture, storage and use of CO₂ from power/industrial combustion
+#### `BE-BSW-P47-U04-A01-48550be8d573` - support capture, storage and use of CO₂ from power/industrial combustion
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_CAPTURED_EMISSIONS_REDUCTION_POTENTIAL / CAPTURE_RATE_ENERGY_PENALTY_PERMANENCE_USE_CASE_AND_FOSSIL_LOCKIN_DEPENDENT`
@@ -77,7 +77,7 @@ Semantic child:
 - Noncompensation: captured tonnes cannot compensate for avoidable upstream/uncaptured emissions or unsafe storage; direct-abatement purity cannot ignore genuinely hard-to-abate residuals.
 - Reality check: counterfactual direct-abatement option, capture rate, net lifecycle tCO₂e, energy input, permanence/leakage, full €/tCO₂ avoided, infrastructure utilisation, liability/monitoring and lock-in.
 
-### 6. U05 — mandatory malformed storage sentence repair
+### 6. U05 - mandatory malformed storage sentence repair
 
 Stored:
 - `BE-BSW-P47-U05-A01-90ab03ddb969` = `Die Entwicklung bzw.`
@@ -99,14 +99,14 @@ Semantic child:
 - Guard: electricity and thermal storage are distinct technology families; public UI may preserve the combined mandate but must not imply equal economics/uses.
 - Reality check: incremental performance/cost/durability, deployed useful capacity, cycles/thermal losses, curtailment/system-value contribution, lifecycle resources/emissions and support additionality.
 
-### 7. U06 — geothermal potential claim + demonstration/research action
+### 7. U06 - geothermal potential claim + demonstration/research action
 
-`BE-BSW-P47-U06-A01-28befc44f29e` — Berlin has usable geothermal potential that can make building heat greener:
+`BE-BSW-P47-U06-A01-28befc44f29e` - Berlin has usable geothermal potential that can make building heat greener:
 - `terminal_fach_state = NON_EFFECT_RESOURCE_POTENTIAL_AND_EXPECTED_OUTCOME_CLAIM_REVIEWED`
 - zero-count.
-- Current-source guard: official 2D measurements are promising, but citywide 3D characterisation is still pending through 2027–2028. Do not promote `nutzbares Potential` to proven commercial capacity or a quantified climate effect.
+- Current-source guard: official 2D measurements are promising, but citywide 3D characterisation is still pending through 2027-2028. Do not promote `nutzbares Potential` to proven commercial capacity or a quantified climate effect.
 
-#### `BE-BSW-P47-U06-A02-df55264bada6` — support demonstration plants and accompanying research
+#### `BE-BSW-P47-U06-A02-df55264bada6` - support demonstration plants and accompanying research
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_OPTION_VALUE_LEARNING_AND_GEOTHERMAL_DEMONSTRATION_POTENTIAL / GEOLOGICAL_SITE_FINANCING_AND_SCALABILITY_DEPENDENT`
@@ -116,7 +116,7 @@ Semantic child:
 - Competence: Berlin funding/public-utility/research/site levers plus applicable mining/environmental/safety law.
 - Reality check: successful drilling/flow/temperature, availability, heat yield, €/MWh lifecycle, environmental/seismic outcomes, network compatibility, learnings transferred to later projects and avoided sunk-cost replication.
 
-### 8. U07 — six materially different urban heat/adaptation interventions hidden in one list
+### 8. U07 - six materially different urban heat/adaptation interventions hidden in one list
 
 `BE-BSW-P47-U07-A01-ac033f6b604f` currently combines: `Baumpflanzungen, Fassaden- und Dachbegrünung, offene Wasserflächen, Trinkwasserbrunnen und Kühlräume ...`.
 
@@ -164,7 +164,7 @@ Child decisions:
 
 Cross-child noncompensation: visible greening/water/cooling infrastructure cannot compensate for poor access, tree/green failure, unsafe design or displacement of higher-priority functions; health benefit cannot erase water/energy/resource externalities. Site-level portfolio selection is required.
 
-### 9. U08 — mandatory split: Berlin wind ban vs federal WindBG repeal; repowering + rationale
+### 9. U08 - mandatory split: Berlin wind ban vs federal WindBG repeal; repowering + rationale
 
 #### Parent `BE-BSW-P47-U08-A01-7cb685beaad5`
 Source combines two distinct actions: `(a) Verzicht auf die Errichtung von Windrädern in Berlin` and `(b) Initiative zur Veränderung des Wind-an-Land-Gesetzes, um die Flächenvorgaben ... abzuschaffen`.
@@ -173,7 +173,7 @@ Source combines two distinct actions: `(a) Verzicht auf die Errichtung von Windr
 - zero-count.
 - Generate two deterministic exact semantic children from those clauses.
 
-**Child A — no new wind turbines in Berlin**
+**Child A - no new wind turbines in Berlin**
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_LOCAL_LAND_USE_CONFLICT_AVOIDANCE_VS_FOREGONE_LOCAL_RENEWABLE_GENERATION_AND_SPATIAL_EXTERNALISATION / SITE_COUNTERFACTUAL_DEPENDENT`
 - `evidence_level = HIGH_FOR_FOREGONE_LOCAL_GENERATION_MECHANISM / NET_WELFARE_SITE_AND_SYSTEM_DEPENDENT`
@@ -182,7 +182,7 @@ Source combines two distinct actions: `(a) Verzicht auf die Errichtung von Windr
 - Costs/risks: foregone local low-carbon generation, less local supply diversification, possible need for more generation/import/infrastructure elsewhere and spatial externalisation to other regions.
 - Reality check: site-level expected net MWh, capacity factor/grid value, biodiversity/recreation/noise constraints, alternative land use, cost, external generation/grid requirement and emissions.
 
-**Child B — federal initiative to abolish WindBG area targets**
+**Child B - federal initiative to abolish WindBG area targets**
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_PLANNING_FLEXIBILITY_VS_LOWER_RENEWABLE_DEPLOYMENT_CERTAINTY_AND_INTERREGIONAL_BURDEN_SHIFT / REPLACEMENT_FRAMEWORK_DEPENDENT`
 - `evidence_level = HIGH_FOR_PLANNING_CONSTRAINT_CHANGE / NET_DEPLOYMENT_SYSTEM_EFFECT_DEPENDS_ON_REPLACEMENT_RULE`
@@ -191,7 +191,7 @@ Source combines two distinct actions: `(a) Verzicht auf die Errichtung von Windr
 - Noncompensation: local flexibility cannot erase climate/system contribution and burden-shifting effects; national deployment targets cannot erase genuinely disproportionate local conflicts.
 - Reality check: replacement rule, designated/usable areas, project pipeline/build rates, regional burden allocation, network/system effects and actual conflict reduction.
 
-#### `BE-BSW-P47-U08-A02-1862cc9fddf1` — repowering old wind turbines
+#### `BE-BSW-P47-U08-A02-1862cc9fddf1` - repowering old wind turbines
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_EXISTING_SITE_GENERATION_AND_ASSET_EFFICIENCY_POTENTIAL / SITE_PERMIT_GRID_ECOLOGY_AND_LIFECYCLE_DEPENDENT`
 - `evidence_level = HIGH_FOR_REPOWERING_OUTPUT_MECHANISM / SITE_NET_EFFECT_PENDING`
@@ -199,11 +199,11 @@ Source combines two distinct actions: `(a) Verzicht auf die Errichtung von Windr
 - Risks: new height/footprint/ecological/noise impacts, permitting, grid constraints, premature retirement/material waste, community acceptance.
 - Reality check: incremental net MWh/capacity factor, downtime, grid value/curtailment, lifecycle material/recycling/emissions, biodiversity/noise and full cost.
 
-`BE-BSW-P47-U08-A03-db77b10e4e82` — definition of repowering:
+`BE-BSW-P47-U08-A03-db77b10e4e82` - definition of repowering:
 - `terminal_fach_state = NON_EFFECT_DEFINITION_REVIEWED`
 - zero-count; child/rationale of A02.
 
-`BE-BSW-P47-U08-A04-82f503052981` — claim that repowering brings more green power/efficiency:
+`BE-BSW-P47-U08-A04-82f503052981` - claim that repowering brings more green power/efficiency:
 - `terminal_fach_state = NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED`
 - zero-count; plausible direction but not treated as observed fact for every site. Reality Check belongs to A02.
 

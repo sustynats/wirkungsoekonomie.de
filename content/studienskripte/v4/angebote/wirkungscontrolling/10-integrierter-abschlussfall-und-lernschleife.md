@@ -5,7 +5,7 @@
 **offering_id:** `WOEK-WB-WC`  
 **curriculum_version:** `4.0`  
 **status:** `FACH_ENDCONTENT_REVIEWED`  
-**subtitle:** Vom Sachgegenstand zur Recommendation – oder bewusst zu keiner robusten Empfehlung  
+**subtitle:** Vom Sachgegenstand zur Recommendation - oder bewusst zu keiner robusten Empfehlung  
 **legacy_source:** `content/lehrgaenge/wirkungscontrolling-wc-v10.md`  
 **migration_class:** `REWRITE_REQUIRED`  
 **reviewed_at:** 2026-08-21
@@ -20,7 +20,7 @@
 
 ## 20-Sekunden-Erklärung
 
-Am Ende zählt nicht, ob du einen schönen Score gebaut hast. Du musst zeigen können, welches Problem vorliegt, welche Optionen bestehen, welche Wirkmechanismen und Daten tragen, welche Grenzen gelten – und was später beobachtet werden muss. Manchmal ist die beste fachliche Antwort: Noch keine robuste Empfehlung.
+Am Ende zählt nicht, ob du einen schönen Score gebaut hast. Du musst zeigen können, welches Problem vorliegt, welche Optionen bestehen, welche Wirkmechanismen und Daten tragen, welche Grenzen gelten - und was später beobachtet werden muss. Manchmal ist die beste fachliche Antwort: Noch keine robuste Empfehlung.
 
 ## Einfach erklärt
 
@@ -82,7 +82,7 @@ Vollständiger v4-Pflichtpfad, Optionsvergleich, Recommendation Record, NO_ROBUS
 
 ## Zusammenfassung
 
-Gutes Wirkungscontrolling endet nicht beim Dashboard. Es endet vorläufig bei einer begründeten Entscheidung – und beginnt mit dem nächsten Reality Check wieder von vorn.
+Gutes Wirkungscontrolling endet nicht beim Dashboard. Es endet vorläufig bei einer begründeten Entscheidung - und beginnt mit dem nächsten Reality Check wieder von vorn.
 
 ## Weiterführende Links
 

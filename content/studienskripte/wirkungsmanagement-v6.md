@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V6  
 **Modul/Abschnitt:** WM  
 **Titel:** Nebenwirkungen, Rebound, Zielkonflikte und Wirkungsgrenzen  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v6-nebenwirkungen-zielkonflikte.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v6.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v6.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Nebenwirkungen, Rebound, Zielkonflikte und Wirkungsgrenzen** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,32 +44,32 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-Gute Maßnahmen haben oft unerwünschte Nebenfolgen – und manchmal widersprechen sich zwei gute Ziele. **Wie geht Wirkungsmanagement mit Nebenwirkungen und Zielkonflikten um, ohne sie schönzureden?**
+Gute Maßnahmen haben oft unerwünschte Nebenfolgen - und manchmal widersprechen sich zwei gute Ziele. **Wie geht Wirkungsmanagement mit Nebenwirkungen und Zielkonflikten um, ohne sie schönzureden?**
 
 ## 2. Video-/Audio-Vorlesung
 
 - **Titel:** Nebenwirkungen und Zielkonflikte ehrlich behandeln
 - **Länge:** ~15 Min
-- **Kernaussage in einem Satz:** Wirkungsmanagement macht Nebenwirkungen, Rebound und Zielkonflikte sichtbar und behandelt sie unter Wirkungsgrenzen – rote Linien werden nicht wegoptimiert.
+- **Kernaussage in einem Satz:** Wirkungsmanagement macht Nebenwirkungen, Rebound und Zielkonflikte sichtbar und behandelt sie unter Wirkungsgrenzen - rote Linien werden nicht wegoptimiert.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Nebenwirkung und Wechselwirkung.** Jede Maßnahme kann indirekte oder gegenseitige Folgen haben. Sie gehören ins Management, nicht in die Fußnote.
+**Abschnitt A - Nebenwirkung und Wechselwirkung.** Jede Maßnahme kann indirekte oder gegenseitige Folgen haben. Sie gehören ins Management, nicht in die Fußnote.
 
-**Abschnitt B – Rebound.** Effizienzgewinne können durch Mehrnutzung teilweise oder ganz aufgezehrt werden. Wer Rebound ignoriert, überschätzt die Netto-Wirkung.
+**Abschnitt B - Rebound.** Effizienzgewinne können durch Mehrnutzung teilweise oder ganz aufgezehrt werden. Wer Rebound ignoriert, überschätzt die Netto-Wirkung.
 
-**Abschnitt C – Zielkonflikte.** Zwei positive Ziele können kollidieren (z. B. Naturschutz vs. Ausbau). Leichte Konflikte sind abwägbar; Konflikte an Wirkungsgrenzen nicht.
+**Abschnitt C - Zielkonflikte.** Zwei positive Ziele können kollidieren (z. B. Naturschutz vs. Ausbau). Leichte Konflikte sind abwägbar; Konflikte an Wirkungsgrenzen nicht.
 
-**Abschnitt D – Wirkungsgrenzen.** Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Biodiversität, Rechtsstaatlichkeit, demokratische Stabilität sind rote Linien – nicht verhandelbar durch Kompensation.
+**Abschnitt D - Wirkungsgrenzen.** Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Biodiversität, Rechtsstaatlichkeit, demokratische Stabilität sind rote Linien - nicht verhandelbar durch Kompensation.
 
-**Abschnitt E – Umgang.** Sichtbar machen, priorisieren (V4), mitigieren, transparent kommunizieren (V9) – und dokumentieren, was bewusst offenbleibt.
+**Abschnitt E - Umgang.** Sichtbar machen, priorisieren (V4), mitigieren, transparent kommunizieren (V9) - und dokumentieren, was bewusst offenbleibt.
 
 ## 4. Skript / Folien (Lernseite)
 
-**Nebenwirkungen sind Teil der Wirkung, nicht ihr Störfall.** Neben der beabsichtigten Hauptwirkung entstehen fast immer **Nebenwirkungen, Wechselwirkungen und Rebound-Effekte** (Grundlagen V2, Stufe 7). Wirkungsmanagement plant sie ein, statt sie erst nachträglich zu entdecken. Besonders der **Rebound** – wenn Effizienzgewinne durch Mehrnutzung aufgezehrt werden – ist ein häufiger Grund für überschätzte Netto-Wirkung.
+**Nebenwirkungen sind Teil der Wirkung, nicht ihr Störfall.** Neben der beabsichtigten Hauptwirkung entstehen fast immer **Nebenwirkungen, Wechselwirkungen und Rebound-Effekte** (Grundlagen V2, Stufe 7). Wirkungsmanagement plant sie ein, statt sie erst nachträglich zu entdecken. Besonders der **Rebound** - wenn Effizienzgewinne durch Mehrnutzung aufgezehrt werden - ist ein häufiger Grund für überschätzte Netto-Wirkung.
 
-**Zielkonflikte offen behandeln.** Zwei positive Ziele können in Spannung stehen. Die Wirkungsökonomie unterscheidet: **leichte Zielkonflikte** sind abwägbar und dokumentierbar; **Konflikte an Wirkungsgrenzen** sind es nicht. Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Biodiversität, Rechtsstaatlichkeit und demokratische Stabilität sind rote Linien (Nichtkompensation, Grundlagen V4) – sie dürfen nicht gegen andere Ziele „eingetauscht" werden.
+**Zielkonflikte offen behandeln.** Zwei positive Ziele können in Spannung stehen. Die Wirkungsökonomie unterscheidet: **leichte Zielkonflikte** sind abwägbar und dokumentierbar; **Konflikte an Wirkungsgrenzen** sind es nicht. Menschenwürde, Kinderrechte, ökologische Lebensgrundlagen, Biodiversität, Rechtsstaatlichkeit und demokratische Stabilität sind rote Linien (Nichtkompensation, Grundlagen V4) - sie dürfen nicht gegen andere Ziele „eingetauscht" werden.
 
 **Ein Behandlungspfad für den Management-Alltag:**
 
@@ -82,7 +79,7 @@ Gute Maßnahmen haben oft unerwünschte Nebenfolgen – und manchmal widersprech
 | 2 | Kritikalität prüfen: berührt es eine Wirkungsgrenze? |
 | 3 | Kritische zuerst sichern (Reverse Merit Order, V4) |
 | 4 | Leichte Konflikte transparent abwägen und dokumentieren |
-| 5 | Rest offen ausweisen – keine Scheinlösung |
+| 5 | Rest offen ausweisen - keine Scheinlösung |
 
 **Ehrlichkeit schlägt Perfektion.** Ziel ist nicht, jede Nebenwirkung zu eliminieren, sondern sie transparent zu behandeln und rote Linien zu wahren. Das schützt Glaubwürdigkeit und bereitet die impact-washing-freie Kommunikation (V9) vor.
 
@@ -92,7 +89,7 @@ Gute Maßnahmen haben oft unerwünschte Nebenfolgen – und manchmal widersprech
 |---|---|---|
 | Nebenwirkung / Wechselwirkung | indirekte, gegenseitige Folgen | `begriffe/nebenwirkung`, `begriffe/wechselwirkung` |
 | Rebound | zurückschlagender Effekt, der Wirkung mindert | `begriffe/rebound-effekt` |
-| Wirkungsgrenzen | nicht verrechenbare rote Linien | _(noch keine Seite – Begriffsleitfaden §4)_ |
+| Wirkungsgrenzen | nicht verrechenbare rote Linien | _(noch keine Seite - Begriffsleitfaden §4)_ |
 | Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
 
 ## 6. Verständnisfragen (Mini-Quiz)
@@ -102,7 +99,7 @@ Gute Maßnahmen haben oft unerwünschte Nebenfolgen – und manchmal widersprech
    - ✅ **Richtig: B**
 
 2. **Wie behandelt man Zielkonflikte an Wirkungsgrenzen?**
-   - A) Man rechnet sie gegen andere Ziele auf  B) Gar nicht abwägbar – rote Linien werden gewahrt  C) Man ignoriert sie  D) Man kompensiert sie
+   - A) Man rechnet sie gegen andere Ziele auf  B) Gar nicht abwägbar - rote Linien werden gewahrt  C) Man ignoriert sie  D) Man kompensiert sie
    - ✅ **Richtig: B**
 
 3. **Gehören Nebenwirkungen ins Management?**
@@ -114,7 +111,7 @@ Gute Maßnahmen haben oft unerwünschte Nebenfolgen – und manchmal widersprech
    - ✅ **Richtig: B**
 
 5. **Sind alle Zielkonflikte gleich zu behandeln?**
-   - A) Ja  B) Nein – leichte sind abwägbar, solche an roten Linien nicht  C) Alle sind verboten  D) Alle sind erlaubt
+   - A) Ja  B) Nein - leichte sind abwägbar, solche an roten Linien nicht  C) Alle sind verboten  D) Alle sind erlaubt
    - ✅ **Richtig: B**
 
 6. **Was ist das Ziel im Umgang mit Nebenwirkungen?**
@@ -127,12 +124,11 @@ Nimm eine geplante Maßnahme und benenne: eine **Nebenwirkung**, einen mögliche
 
 ## 8. Praxisbeispiel
 
-**Ausbau vs. Naturschutz.** Der Ausbau erneuerbarer Energie (positives Ziel) kann mit Biodiversität (positives Ziel, teils rote Linie) kollidieren. Wirkungsmanagement wägt leichte Konflikte transparent ab, wahrt aber kritische Biodiversitätsgrenzen – statt sie mit dem Klimaziel wegzurechnen.
+**Ausbau vs. Naturschutz.** Der Ausbau erneuerbarer Energie (positives Ziel) kann mit Biodiversität (positives Ziel, teils rote Linie) kollidieren. Wirkungsmanagement wägt leichte Konflikte transparent ab, wahrt aber kritische Biodiversitätsgrenzen - statt sie mit dem Klimaziel wegzurechnen.
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -330,13 +326,12 @@ Die folgende Runde verdichtet WM-V6 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V6. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §4/§5
-- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` – „Schutzlogik"
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §4/§5
+- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` - „Schutzlogik"
 - Glossar: `begriffe/nebenwirkung`, `begriffe/rebound-effekt`, `begriffe/nichtkompensationsprinzip`
 
 ## 4. Wirkungsökonomische Vertiefung
@@ -398,7 +393,7 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
    - ✅ **Richtig: B**
 
 2. **Wie behandelt man Zielkonflikte an Wirkungsgrenzen?**
-   - A) Man rechnet sie gegen andere Ziele auf  B) Gar nicht abwägbar – rote Linien werden gewahrt  C) Man ignoriert sie  D) Man kompensiert sie
+   - A) Man rechnet sie gegen andere Ziele auf  B) Gar nicht abwägbar - rote Linien werden gewahrt  C) Man ignoriert sie  D) Man kompensiert sie
    - ✅ **Richtig: B**
 
 3. **Gehören Nebenwirkungen ins Management?**
@@ -410,7 +405,7 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
    - ✅ **Richtig: B**
 
 5. **Sind alle Zielkonflikte gleich zu behandeln?**
-   - A) Ja  B) Nein – leichte sind abwägbar, solche an roten Linien nicht  C) Alle sind verboten  D) Alle sind erlaubt
+   - A) Ja  B) Nein - leichte sind abwägbar, solche an roten Linien nicht  C) Alle sind verboten  D) Alle sind erlaubt
    - ✅ **Richtig: B**
 
 6. **Was ist das Ziel im Umgang mit Nebenwirkungen?**
@@ -423,12 +418,11 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 |---|---|---|
 | Nebenwirkung / Wechselwirkung | indirekte, gegenseitige Folgen | `begriffe/nebenwirkung`, `begriffe/wechselwirkung` |
 | Rebound | zurückschlagender Effekt, der Wirkung mindert | `begriffe/rebound-effekt` |
-| Wirkungsgrenzen | nicht verrechenbare rote Linien | _(noch keine Seite – Begriffsleitfaden §4)_ |
+| Wirkungsgrenzen | nicht verrechenbare rote Linien | _(noch keine Seite - Begriffsleitfaden §4)_ |
 | Nichtkompensationsprinzip | schwere Negativwirkung nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -834,8 +828,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v6-nebenwirkungen-zielkonflikte.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

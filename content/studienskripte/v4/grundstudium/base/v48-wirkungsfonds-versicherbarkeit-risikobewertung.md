@@ -252,7 +252,7 @@ Aber auch hier müssen wir sauber bleiben.
 
 Eine Garantie ist noch keine Wirkung.
 
-Sie wirkt nur, wenn sie tatsächlich zusätzliche Finanzierung ermöglicht – und wenn daraus ein zusätzlicher guter Outcome entsteht.
+Sie wirkt nur, wenn sie tatsächlich zusätzliche Finanzierung ermöglicht - und wenn daraus ein zusätzlicher guter Outcome entsteht.
 
 Und eine Garantie ist für den Staat nicht kostenlos. Wenn der Schaden eintritt, zahlt jemand.
 

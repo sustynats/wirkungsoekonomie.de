@@ -1,4 +1,4 @@
-# MV SPD P55 — lossless corrected materialisation
+# MV SPD P55 - lossless corrected materialisation
 
 Fresh branch base: `840ea0ce58a573f491b17ee3dd5c9bc160811cc0`.
 Before merge, the candidate incorporated fresh current main `a587d7611b1e6770e4d15e40bc85813db102dbd6` and revalidated the exact source sets and shared readiness. The original handoff's creation-base provenance remains unchanged.
@@ -9,7 +9,7 @@ The source is `MV-LTW-2026-SPD-REGIERUNGSPROGRAMM`, SHA-256 `b2ed331e3bd89b93379
 
 ## Exact materialisation
 
-- All 13 source units `SU00510–SU00522` and all 8 original atoms have bound terminal roles.
+- All 13 source units `SU00510-SU00522` and all 8 original atoms have bound terminal roles.
 - Eight deterministic children use the existing `parent-Cnn-sha256prefix12` convention, with exact contiguous source spans and parent lineage.
 - Nine active leaves are `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`, exactly as handed off. None is converted into a neutral, positive or negative assessment.
 - Twenty source-container, fragment, structural, rationale, context and version records count zero. The Housing-First source unit keeps its former role in the immutable ledger and has an explicitly authorised active RNAA child.
@@ -21,19 +21,19 @@ Machine-readable results:
 - `woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p55-explicit-v1.json`
 - `woek-parlament-app/data/state-programmes/fach-content-residuals/mecklenburg-vorpommern-2026-spd-current-v1.json`
 
-## Set-wise residual — authoring is not technical materialisation
+## Set-wise residual - authoring is not technical materialisation
 
 P55 has zero unbound source objects. Its terminal marker is `MV_SPD_P55_FACH_COMPLETE = PASS_SOURCE_BOUND_AFTER_BINDING_REPAIR`.
 
-However, the current main only contained the rejected generic MV ledger, not the accepted P1–P54 object-level materialisation. [The P54 authority](https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5476819703) explicitly states that its terminal declaration is **Fach-authoring terminality**, not technical materialisation. That protected Fach must not be reopened or requested again.
+However, the current main only contained the rejected generic MV ledger, not the accepted P1-P54 object-level materialisation. [The P54 authority](https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5476819703) explicitly states that its terminal declaration is **Fach-authoring terminality**, not technical materialisation. That protected Fach must not be reopened or requested again.
 
 The current SPD matrix therefore distinguishes:
 
 | Exact page set | Current technical classification |
 |---|---|
 | P55 | Exact source-bound materialisation complete |
-| P1–P54 | Protected authored Fach; technical materialisation/reconciliation still required |
-| P56–P95 | No current object-bound terminal proof in the materialised matrix |
+| P1-P54 | Protected authored Fach; technical materialisation/reconciliation still required |
+| P56-P95 | No current object-bound terminal proof in the materialised matrix |
 
 The set-wise technical residual is 94 page envelopes. It is **not** 94 missing Fach decisions, nor a count of missing effect objects. The exact remaining effect-object count stays null. P56 is not authorised from stale page subtraction. MV SPD and MV overall remain programme-open.
 

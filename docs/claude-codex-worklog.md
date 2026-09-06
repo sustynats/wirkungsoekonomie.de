@@ -165,41 +165,41 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 ### 2026-07-08 · Claude · Presse-/Öffentlichkeitsbereich Natalie Weber strategisch umgebaut
 - **Was:** `/w/natalie-weber/` Presse-Bereich weg von „Person buchen" hin zu institutioneller Kommunikation. Presse-Unterseite komplett neu (Öffentliche Kommunikation / Keine personenbezogene Auftrittslogik · Kurzprofil · Institutionelle Kommunikation · Zitate & Statements zur Verwendung · Materialien für Medien · Multiplikator:innen statt Personenkult · Akademie für Multiplikator:innen mit 10-Modul-Raster). Hauptseite: Kontaktsektion → „Öffentliche Kommunikation" + „Presse & Anfragen" (souverän, nicht defensiv, keine privaten Gründe). FAQ +3 (Interviews/Vorträge, Medienanfragen, Multiplikator:innen).
 - **Pfad/Quelle:** `scripts/natalie/build-natalie-pages.mjs` (einzige Quelle; neue CSS-Bausteine `.quote/.notice/.modules`), regeneriert 8 `w/natalie-weber/*`-Seiten. Konzept: `docs/akademie-multiplikatoren-konzept.md`.
-- **Geprüft:** voller `npm run build` EXIT 0; alle 7 Presse-Sektionen + neue FAQ vorhanden; alte Auftrittsformeln (`Vorträge & Panels`, `Interviews & Gespräche`, `Für Interviews, Vorträge…`) = 0 Treffer; Browser-Sichtprüfung aller Blöcke (Zitate, Materialien, dunkles Vertretungs-Band, 01–10-Modulraster) sauber.
+- **Geprüft:** voller `npm run build` EXIT 0; alle 7 Presse-Sektionen + neue FAQ vorhanden; alte Auftrittsformeln (`Vorträge & Panels`, `Interviews & Gespräche`, `Für Interviews, Vorträge…`) = 0 Treffer; Browser-Sichtprüfung aller Blöcke (Zitate, Materialien, dunkles Vertretungs-Band, 01-10-Modulraster) sauber.
 - **Offen für Codex/Kern:** Akademie-App-Integration „Multiplikator:innen für Wirkungsökonomie" (Rollen multiplikator/trainer/fachpartner, Zertifikatsausgabe, Personenverzeichnis über Akademie-API); Rollen-/Rechteverwaltung von Discord auf Plattform holen (Snowflake-ID-Fehler). Claude-Folge-PR: öffentliche Landingpage `/akademie/multiplikatoren/` im Akademie-Farbraum nach Abnahme des Konzepts.
 
-## 2026-08-14 — Claude: Phase 0 „WÖk Knowledge Bootstrap" — Wissensbasis docs/woek-knowledge/ angelegt
+## 2026-08-14 - Claude: Phase 0 „WÖk Knowledge Bootstrap" - Wissensbasis docs/woek-knowledge/ angelegt
 
-- Vollinventur über Website-Repo (origin/main a88d2941), Akademie-App-Repo (`woek-akademie-app`) und Wirkungscheck-Stände; Live-Check der drei Domains (alle 200; parlament.* existiert noch nicht). 28 Dateien unter `docs/woek-knowledge/` (README, SOURCE_HIERARCHY + reference-manifest.yaml, TERMINOLOGY(+yaml, Basis Begriffsleitfaden **v1.3**), NORMATIVE_FRAMEWORK (SDG/SDG+-Referenzrahmen v0.3), INDICATOR_REGISTRY (Master Items **v1.3**, 621 IDs/28 Regeln), TOOLS(+yaml), PORTALS(+yaml, Rang 0–24), INTEGRATIONS(+yaml), REGIONAL_DATA, WOEK_AI, INSTITUTE, ACADEMY, CONTENT_REGISTRY, SYSTEM_ARCHITECTURE, CAPABILITY_GRAPH(+json), CAPABILITY_MATRIX, DUPLICATION_AND_TECH_DEBT, KNOWLEDGE_GAPS, PARLIAMENT_REUSE_MAP, UX_ECOSYSTEM_MAP, CHANGELOG, CROSSCHECK, TECHNICAL_CAPABILITY_MAP-Rahmen).
+- Vollinventur über Website-Repo (origin/main a88d2941), Akademie-App-Repo (`woek-akademie-app`) und Wirkungscheck-Stände; Live-Check der drei Domains (alle 200; parlament.* existiert noch nicht). 28 Dateien unter `docs/woek-knowledge/` (README, SOURCE_HIERARCHY + reference-manifest.yaml, TERMINOLOGY(+yaml, Basis Begriffsleitfaden **v1.3**), NORMATIVE_FRAMEWORK (SDG/SDG+-Referenzrahmen v0.3), INDICATOR_REGISTRY (Master Items **v1.3**, 621 IDs/28 Regeln), TOOLS(+yaml), PORTALS(+yaml, Rang 0-24), INTEGRATIONS(+yaml), REGIONAL_DATA, WOEK_AI, INSTITUTE, ACADEMY, CONTENT_REGISTRY, SYSTEM_ARCHITECTURE, CAPABILITY_GRAPH(+json), CAPABILITY_MATRIX, DUPLICATION_AND_TECH_DEBT, KNOWLEDGE_GAPS, PARLIAMENT_REUSE_MAP, UX_ECOSYSTEM_MAP, CHANGELOG, CROSSCHECK, TECHNICAL_CAPABILITY_MAP-Rahmen).
 - Versionssicherheit verbindlich verankert: Bibliotheks-Statusregister (`assets/data/library-version-registry.json`, 11× führend) schlägt lokale Dateien; v1.2-Master-Items/v1.0-Begriffsleitfaden/T-SROI-Whitepaper als ersetzt/archiviert geführt.
-- **Offen für Codex** (Details `docs/woek-knowledge/CROSSCHECK.md`): A) Endpoint-Verifikationen (Oracle, Akademie-KWI vermutl. broken — SDG-Portal seit 30.06. abgeschaltet; Zertifikats-API der Prüfseite existiert im Akademie-Repo nicht!), B) 6 Registry-Metadaten-Fixes (u.a. v1.0-Archivhinweis „gilt v1.2"→v1.3, llms.txt Master-Items-Link v1.2→v1.3), C) Architekturentscheidungen (kanonischer WoekAiService, Analytics-Kanonisierung, KWI-Quellen-Migration, DIP-Ingestion, territoriale Zuordnungsschicht), D) TECHNICAL_CAPABILITY_MAP füllen. Kontextdossier v1.0 liegt nur im ungemergten Codex-Arbeitsbaum.
-- Kein Release/Deployment über die Docs hinaus; Branch `claude/woek-knowledge-bootstrap`, PR folgt. Nächster Claude-Block: Wirkungsportal Parlament — UX/CD-Aufbau auf Basis PARLIAMENT_REUSE_MAP.
+- **Offen für Codex** (Details `docs/woek-knowledge/CROSSCHECK.md`): A) Endpoint-Verifikationen (Oracle, Akademie-KWI vermutl. broken - SDG-Portal seit 30.06. abgeschaltet; Zertifikats-API der Prüfseite existiert im Akademie-Repo nicht!), B) 6 Registry-Metadaten-Fixes (u.a. v1.0-Archivhinweis „gilt v1.2"→v1.3, llms.txt Master-Items-Link v1.2→v1.3), C) Architekturentscheidungen (kanonischer WoekAiService, Analytics-Kanonisierung, KWI-Quellen-Migration, DIP-Ingestion, territoriale Zuordnungsschicht), D) TECHNICAL_CAPABILITY_MAP füllen. Kontextdossier v1.0 liegt nur im ungemergten Codex-Arbeitsbaum.
+- Kein Release/Deployment über die Docs hinaus; Branch `claude/woek-knowledge-bootstrap`, PR folgt. Nächster Claude-Block: Wirkungsportal Parlament - UX/CD-Aufbau auf Basis PARLIAMENT_REUSE_MAP.
 
-## 2026-08-14 — Claude: Wirkungsportal Parlament — UX-Fundament + klickbarer Prototyp (Stand 1)
+## 2026-08-14 - Claude: Wirkungsportal Parlament - UX-Fundament + klickbarer Prototyp (Stand 1)
 
 - `docs/parlament/ux/`: PRODUCT_EXPERIENCE.md, INFORMATION_ARCHITECTURE.md, DESIGN_SYSTEM.md, UX_HANDOFF_TO_CODEX.md (Stand 1) + Prototyp `prototype/` (Portalstart + vollständige Entscheidungsseite, WÖk-CD Navy/Ivory/Gold, Source Serif 4/Inter, responsive, A11y-Grundausstattung). Alle Fallinhalte synthetisch und als Demonstrationsfall gekennzeichnet; redaktionelle Platzhalter als CONTENT_REQUIRED markiert.
 - Komponenten implementiert: Trust-Band, Decision Card, Verfahrens-Stepper (inkl. STATUS_UNVERIFIED), 60-Sekunden-Block, Wirkpfad mit Evidenz-Badges/Bruchstellen + Linearfassung, Ebenen-Marken (Sachverhalt/Analyse/Bewertung), Claim+Quellen-Drawer, Nichtkompensations-Kasten, Empfehlungs-Block mit Falsifizierbarkeit, Szenario-Sofortreaktionen (deterministisch, Registry-Prinzip), Regional-DATA_GAP-Zustand, kontextueller Werkzeugkasten (Bestands-Links), KI-Opt-in-Box, Versions-Timeline, Trust-Card, Modus-Schalter Public/Parlament.
 - Desktop + Mobile im Browser verifiziert (Erste-Viewport-Regel §56 erfüllt). Offen für Stand 2: Historie/Monitor/Dialog/Methodik-Screens, Parlament-Modus-Zusatzblöcke, Wirkungsnetz.
 - Branch `claude/parlament-ux` (baut auf `claude/woek-knowledge-bootstrap`/PR #219 auf), PR folgt. Codex bitte erst `docs/parlament/CODEX_AUFTRAG_2026-08-14.md` + `docs/woek-knowledge/CROSSCHECK.md`, vor Frontend-Implementierung dieses Handoff.
 
-## 2026-08-14 — Claude: Parlament-Prototyp Stand 2 + Antwort auf Codex-Rückfragen
+## 2026-08-14 - Claude: Parlament-Prototyp Stand 2 + Antwort auf Codex-Rückfragen
 
 - Neue Prototypseiten: `rueckblick-beispiel.html` (Route /monitor/ mit Erwartung→Indikator→Beobachtung→Einordnung inkl. Status-Set NOT_YET_OBSERVABLE/ON_TRACK/MIXED/OFF_TRACK/BOUNDARY_RISK/DATA_GAP und Korrekturtrigger; Route /historie/ mit strikt getrennten Wissensständen damals/heute + Lernpunkt) und `dialog-beispiel.html` (Trennungskasten „was Umfragen dürfen/nicht dürfen", zwei Fragerunden, Ergebnisbalken mit Pflicht-Metazeile n/Zeitraum/Auswahlverfahren/Mindestkohorte n≥10, Prozesskette). Desktop+Mobile geprüft.
 - UX_HANDOFF auf Stand 2: 24 Komponenten mit Datenfeldern/Zuständen, ausführliche Responsive-Regeln (Breakpoint 640/760, Erste-Viewport-Regel, Touch) und WCAG-2.2-AA-Anforderungen inkl. Testpflicht. Rückschaufehler-Schutz (Quellenfilterung nach Entscheidungsdatum) als Datenmodell-Anforderung markiert.
-- Antwort an Codex: `docs/parlament/CLAUDE_ANTWORT_AN_CODEX_2026-08-14.md` — Import-Status je führender Referenz (WÖMS 2.0/Master Items v1.3/SDG v0.3 = FULL; Begriffsleitfaden v1.3, T-SROI v1.1, WÖMM 2.0 = nur TEXT mit benannten Lücken), Auflösung der „zwei fehlenden" führenden Referenzen (11 Registry-Einträge = 8 Werke, registry_id_map ergänzt), Korrektur /api/v1/methods = 152 statt 84 Methoden.
-- Neue Codex-Punkte A12–A14 in CROSSCHECK (Build-Kette WÖMS, fehlende WÖMM-Registry, T-SROI-Parametrisierung). Keine Backend-/DB-Arbeit in der Claude-Lane; woek-parlament-app bleibt unberührt.
+- Antwort an Codex: `docs/parlament/CLAUDE_ANTWORT_AN_CODEX_2026-08-14.md` - Import-Status je führender Referenz (WÖMS 2.0/Master Items v1.3/SDG v0.3 = FULL; Begriffsleitfaden v1.3, T-SROI v1.1, WÖMM 2.0 = nur TEXT mit benannten Lücken), Auflösung der „zwei fehlenden" führenden Referenzen (11 Registry-Einträge = 8 Werke, registry_id_map ergänzt), Korrektur /api/v1/methods = 152 statt 84 Methoden.
+- Neue Codex-Punkte A12-A14 in CROSSCHECK (Build-Kette WÖMS, fehlende WÖMM-Registry, T-SROI-Parametrisierung). Keine Backend-/DB-Arbeit in der Claude-Lane; woek-parlament-app bleibt unberührt.
 
-## 2026-08-14 — Codex: Wirkungsportal Parlament — Tech-MVP und Importvorbereitung
+## 2026-08-14 - Codex: Wirkungsportal Parlament - Tech-MVP und Importvorbereitung
 
 - **Was:** Eigenständige Next.js-Anwendung unter `woek-parlament-app/` angelegt; UX-Handoff Stand 2 umgesetzt (Start, Karten, Entscheidungsseite, Monitor, Historie, Dialog, Trust-/Versionszustände). Alle sichtbaren Falldaten sind explizit synthetisch bzw. `CONTENT_REQUIRED`/`DATA_GAP`.
 - **Daten/Sicherheit:** Öffentliche Read-API, CSP/HSTS/Frame-Policy, Opt-in-KI ohne Votumsänderung, Supabase-Migration mit `ParliamentaryCase ≠ DecisionUnit`, Dokumenthash/Fassung und serverseitig erzwungener Damals/Heute-Grenze für Retrospektiven.
-- **DIP:** Adapter und Importfenster implementiert: laufendes Jahr als Bootstrap, Radar heute + 10 Tage (konfigurierbar 7–14), Importstatus immer `IMPORTED_UNREVIEWED`. Keine automatische Veröffentlichung oder Fachbewertung.
+- **DIP:** Adapter und Importfenster implementiert: laufendes Jahr als Bootstrap, Radar heute + 10 Tage (konfigurierbar 7-14), Importstatus immer `IMPORTED_UNREVIEWED`. Keine automatische Veröffentlichung oder Fachbewertung.
 - **Dokumentation:** Architektur- und Launch-Dokumente unter `docs/parlament/tech/`; führende WÖk-Referenzen und Reuse-Map übernommen.
 - **Geprüft:** `npm run lint`, `npm run typecheck`, `npm run build`; lokale Read-API und Security-Header getestet.
 - **Offen:** personalisierten DIP-Schlüssel, private Import-Worker/Supabase-Workbench mit RBAC+MFA, formelle Materialitäts- und Freigaberegeln, Hosting/DNS/TLS und Live-Gates.
 - **Nachtrag DIP:** Der offiziell veröffentlichte Schlüssel ist laut Hilfeseite bis Ende Mai 2027 gültig und funktionsgleich mit einem eigenen Schlüssel; einmaliger serverseitiger Lesetest `GET /api/v1/vorgang` am 2026-08-14: HTTP 200. Nutzung bis Ablauf nur als Hosting-Secret, mit 401-Rotationsalarm; personalisierter Schlüssel ist kein MVP-Gate.
 
-## 2026-09-05 — Codex: Wirkungsticker Medien- & Sprachwirkung
+## 2026-09-05 - Codex: Wirkungsticker Medien- & Sprachwirkung
 
 - Bestehende Analysepipeline um einen lokalen, politisch symmetrischen Medien-/Sprachtrigger und das separate `analysis.media_impact`-Modell erweitert; keine zweite Datenbank und kein zweiter regulärer KI-Aufruf.
 - Ereignis, Akteursaussage und mediale Vermittlung werden getrennt; Attribution, Wissensstatus, Resonanzrisiko, Wirkungsordnungen, Herkunftsevidenz und Mehrquellenbasis haben serverseitige Sanitizer und Qualitätsgates.
@@ -207,7 +207,7 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - Detailseite zeigt „Medien- & Sprachwirkung“ nur bei substanzieller Relevanz und verknüpft bestehende Glossarbegriffe. Die Übersicht erklärt die neue Ebene knapp.
 - Selektiver, budgetgebundener und idempotenter Backfill samt Workflow-Inputs sowie Usage-Feldern für Trigger, Skip, Token, Kostenanteil und Rewrites ergänzt.
 - Dokumentation: `docs/ops/WIRKUNGSTICKER-MEDIEN-SPRACHWIRKUNG.md`. Tests: `tests/news/media-impact.test.mjs` plus vollständige Wirkungsticker-Suite.
-# 2026-09-05 – Codex: Quellenintegrität, Frame-/Diskurscheck v2 und WÖK-Analysen
+# 2026-09-05 - Codex: Quellenintegrität, Frame-/Diskurscheck v2 und WÖK-Analysen
 
 - Falsche Berliner Wahlquelle in der Sachsen-Anhalt-Akte entfernt; Root Cause als fehlende Wahljurisdiktionsgrenze identifiziert und generisch behoben.
 - Dauerhaftes Source-Integrity-Gate vor KI und strikter Vollbestandsaudit vor Veröffentlichung ergänzt.
@@ -216,7 +216,7 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - Rückwirkende Scans sind idempotent; technische Batchgrößen sind keine redaktionellen Stückquoten.
 - Offene Analyse-Kandidaten werden gegen den registrierten stündlichen Recherchepool nachrecherchiert; Legal Tribune Online und die öffentliche Jurafuchs-Presse-/Primärquelle ergänzen die kostenlose Rechts- und Justizrecherche. Nahezu identische Meldungen erzeugen nur einen Deep Dive.
 
-## 2026-09-05 — Codex: Nachrichtenbetrieb, Queue und Quellen-Funnel finalisiert
+## 2026-09-05 - Codex: Nachrichtenbetrieb, Queue und Quellen-Funnel finalisiert
 
 - Warteschlange in Kapazitäts-, technische und redaktionelle Fälle getrennt; ältere technische Wiederholungen erhalten bei normaler Kapazität reservierte Slots, ohne frische Meldungen zu verdrängen.
 - Formell fehlerhafte KI-Ausgaben werden als `AI_OUTPUT_INVALID` verlustfrei gespeichert und mit gestaffeltem Backoff erneut verarbeitet. Erwartbare Relevanz-, Evidenz- und Source-Integrity-Ablehnungen machen den Workflow nicht mehr fälschlich rot.

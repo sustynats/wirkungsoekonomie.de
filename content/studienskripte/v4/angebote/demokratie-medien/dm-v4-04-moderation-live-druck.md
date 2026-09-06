@@ -18,7 +18,7 @@
 - proportionale Mindestintervention begründen
 
 ## 20-Sekunden-Erklärung
-Moderation ist selbst eine Intervention. Unterbrechen, nachfragen, Quellenstatus markieren oder Redezeit steuern kann sinnvoll sein – aber nicht automatisch positiv. Ziel, Nebenwirkungen und Schutz müssen vor der Intervention klar sein.
+Moderation ist selbst eine Intervention. Unterbrechen, nachfragen, Quellenstatus markieren oder Redezeit steuern kann sinnvoll sein - aber nicht automatisch positiv. Ziel, Nebenwirkungen und Schutz müssen vor der Intervention klar sein.
 
 ## Einfache Einführung
 Live-Situationen verlangen schnelle Entscheidungen. Deshalb hilft ein kleines Schema: Was ist gerade das Problem? Welches Ziel hat die Intervention? Welche kleinste Maßnahme kann dieses Ziel erreichen, ohne unnötig andere legitime Funktionen zu beschädigen?
@@ -27,7 +27,7 @@ Live-Situationen verlangen schnelle Entscheidungen. Deshalb hilft ein kleines Sc
 1. Problem kann sein: unbelegte Tatsachenbehauptung, persönliche Abwertung, Redezeitdominanz, Sicherheitsrisiko oder unklare Quelle. Diese Fälle brauchen unterschiedliche Interventionen.
 2. Optionen: Nachfrage, Quellenanforderung, Statushinweis, Redezeitbegrenzung, Unterbrechung, Themenrückführung, Pause oder Abbruch.
 3. Moderationserfolg darf nicht an „Ruhe“ allein gemessen werden. Eine konfliktreiche, aber faktenklare Debatte kann demokratisch wertvoll sein.
-4. Bei Schutzgrenzen – etwa konkreter Bedrohung oder entwürdigender Kommunikation – können strengere Maßnahmen nötig sein; RMO ist kein universeller Moderationsalgorithmus.
+4. Bei Schutzgrenzen - etwa konkreter Bedrohung oder entwürdigender Kommunikation - können strengere Maßnahmen nötig sein; RMO ist kein universeller Moderationsalgorithmus.
 
 ## Begriffe / Glossarbox
 - **Moderationsintervention**
@@ -67,7 +67,7 @@ Moderationsoptionen, Schutzgrenzen, proportionale Intervention und keine Outcome
 Gute Moderation ist begründete Intervention, nicht reflexhafte Kontrolle.
 
 ## Sprechertext
-Unter Live-Druck hilft kein perfekter Score. Hilfreich ist eine kleine Frage: Was ist gerade das Problem – und was ist die kleinste Intervention, die es adressiert? Das hält Moderation wirksam und verhältnismäßig.
+Unter Live-Druck hilft kein perfekter Score. Hilfreich ist eine kleine Frage: Was ist gerade das Problem - und was ist die kleinste Intervention, die es adressiert? Das hält Moderation wirksam und verhältnismäßig.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst nach Legacy-Reaudit B06; Medien-/Moderationsentscheidungen werden als evidenzgebundene Interventionen ohne Personen-/Intent-Score behandelt.

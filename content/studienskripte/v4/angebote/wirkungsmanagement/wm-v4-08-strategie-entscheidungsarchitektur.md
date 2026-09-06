@@ -65,7 +65,7 @@ Beispiel:
 
 ## 5. Recommendation vs. Entscheidung
 
-Eine fachliche Recommendation ist ein begründeter Analyseoutput. Die tatsächliche Entscheidung kann weitere legitime Faktoren enthalten – Recht, Zuständigkeit, Budget, demokratische oder unternehmerische Entscheidungshoheit.
+Eine fachliche Recommendation ist ein begründeter Analyseoutput. Die tatsächliche Entscheidung kann weitere legitime Faktoren enthalten - Recht, Zuständigkeit, Budget, demokratische oder unternehmerische Entscheidungshoheit.
 
 Die Differenz wird dokumentiert, nicht versteckt.
 
@@ -96,10 +96,10 @@ Statt nur „CO₂ bis X senken“:
 
 ## Typische Fehlinterpretationen
 
-- Strategie = Scoreziel. – Nein.
-- Ein „schwacher Wert“ blockiert automatisch jede Investition. – Nur bei begründeter materialitäts-/boundary-bezogener Regel.
-- Recommendation = Managemententscheidung. – Nicht identisch.
-- Daten sind nur Reporting. – Nein, Strategie definiert Rückkopplung.
+- Strategie = Scoreziel. - Nein.
+- Ein „schwacher Wert“ blockiert automatisch jede Investition. - Nur bei begründeter materialitäts-/boundary-bezogener Regel.
+- Recommendation = Managemententscheidung. - Nicht identisch.
+- Daten sind nur Reporting. - Nein, Strategie definiert Rückkopplung.
 
 ## WÖk-Abgrenzung
 

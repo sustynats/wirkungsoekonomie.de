@@ -27,7 +27,7 @@ Befund / Beleg: Die neue Hauptnavigation ist auf der Startseite vollständig. Di
 Codex-Auftrag: Eine einzige Header-/Footer-Komponente für alle Routen einsetzen. Alle statischen HTML-Seiten, Referenzseiten, Dokumentdetailseiten, Blog/Journalseiten und Redirect-Stubs müssen dieselbe Navigation verwenden. Alte Seiten 301-redirecten oder noindex setzen.
 Abnahmekriterien: Snapshot-Test: Header-Linkliste ist auf allen geprüften Routengruppen identisch bis auf aktiven Zustand. Keine Seite zeigt altes Menü, alte IONOS-/Cookie-Texte oder alte „Startseite/Funktionsweise/Über die WÖk“-Navigation.
 P0-02 · P0 · Online-Dokumente haben page-only oder fehlerhafte Inhaltsverzeichnisse
-Befund / Beleg: Mehrere Onlinefassungen zeigen nur „Seite 1, Seite 2 …“ statt semantischer Kapitel/Abschnitte. Beim WStG ist dies besonders kritisch: Die Bibliothek nennt 146 Seiten, die Onlinefassung zeigt oben nur Seite 1–12. Dokumente wie Grundlagenpapier, Technische Leitlinien, Lieferkette und Systemmodell bieten aktuell nur PDF ohne Onlinefassung.
+Befund / Beleg: Mehrere Onlinefassungen zeigen nur „Seite 1, Seite 2 …“ statt semantischer Kapitel/Abschnitte. Beim WStG ist dies besonders kritisch: Die Bibliothek nennt 146 Seiten, die Onlinefassung zeigt oben nur Seite 1-12. Dokumente wie Grundlagenpapier, Technische Leitlinien, Lieferkette und Systemmodell bieten aktuell nur PDF ohne Onlinefassung.
 Codex-Auftrag: Dokumentenrenderer umbauen: Überschriften, §§, Kapitel, Unterkapitel und Tabellen semantisch erkennen und eigene Anker erzeugen. PDF-Seitenanker dürfen nur sekundär als „PDF-Seitenmapping“ erscheinen. Bei fehlender Onlinefassung klar „Onlinefassung in Vorbereitung“ anzeigen.
 Abnahmekriterien: Für jedes aktuelle Dokument existiert entweder Onlinefassung+PDF oder ein sichtbarer Status. TOC enthält semantische Überschriften, nicht nur Seiten. Alle H2/H3/§ besitzen stabile IDs und sind per Link erreichbar.
 P0-03 · P0 · Encoding-, Umlaut- und Extraktionsfehler in sichtbarem Text
@@ -410,8 +410,8 @@ Daten bleiben nicht im Bericht, sondern verändern Preise, Steuern, Kapitalzugan
 4. Quellenbibliothek
 Verwendung: Die Karten nennen Quellen-IDs. Codex soll diese IDs in echte Quellenmodule, Fußnoten, Hover-Quellen oder Quellenkarten übersetzen. Externe Quellen sind vor Deployment auf Aktualität zu prüfen.
 I-BEG - WOeK_Begriffsleitfaden_fuehrend_v1.0.md: Führender Begriffsrahmen: Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkpfad, positive Netto-Wirkung, politische Sprache/Medien.
-I-WOHL - Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf: Grundmodell der Wirkungsökonomie, Mensch–Planet–Demokratie, Wirkungsrad, Rückkopplung, Medien- und Demokratiekapitel.
-I-SYS - Systemmodell-der-Wirkungsoekonomie.pdf: Systemische Ordnungskarte Mensch–Planet–Demokratie; Staat, Wirtschaft, Medien, Gesundheit, Kultur, Wissen als gekoppelte Wirkungsräume.
+I-WOHL - Natalie-Weber_Die neue Ordnung des Wohlstands_2026.pdf: Grundmodell der Wirkungsökonomie, Mensch-Planet-Demokratie, Wirkungsrad, Rückkopplung, Medien- und Demokratiekapitel.
+I-SYS - Systemmodell-der-Wirkungsoekonomie.pdf: Systemische Ordnungskarte Mensch-Planet-Demokratie; Staat, Wirtschaft, Medien, Gesundheit, Kultur, Wissen als gekoppelte Wirkungsräume.
 I-NACH - Nachhaltigkeit-Systemarchitektur.pdf: Nachhaltigkeit als interdependente Systemarchitektur statt additiver Strategie; Nichtlinearität, Rückkopplung, Systemhebel.
 I-WSTG - WStG_Oktober2025.pdf: Wirkungssteuergesetz als Rahmenlogik für steuerliche Rückkopplung nach Wirkung auf Mensch, Planet und Demokratie.
 I-WUSTG - Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf: Technische Logik: WÖk-IDs, Archetypen, Benchmarks, Scorecards, Assurance, Reverse Merit Order.
@@ -943,7 +943,7 @@ Leitprinzip
 Nicht weniger Inhalt, sondern bessere öffentliche Form: Begriffe bleiben erhalten; falsche Template-Blöcke, leere Felder, interne Status, Rohdatenlabels, ungeprüfte Quellen und generische Wiederholungstexte verschwinden aus der öffentlichen Ausgabe.
 1.1 Was nach der Korrektur verstanden werden muss
 Was bedeutet der Begriff in einfacher, präziser Sprache?
-Warum ist der Begriff im Kontext der Wirkungsökonomie relevant – falls er wirklich relevant ist?
+Warum ist der Begriff im Kontext der Wirkungsökonomie relevant - falls er wirklich relevant ist?
 Womit darf der Begriff nicht verwechselt werden?
 Wie wird der Begriff in WÖk-Texten, Debatten, Methoden, Werkzeugen oder Online-Kapiteln verwendet?
 Welche Quellen definieren, vertiefen, kontextualisieren oder nur erwähnen den Begriff?
@@ -960,7 +960,7 @@ Korrekturanweisung
 Öffentlich sichtbarer Publikationsstatus
 Im Hero bzw. Metabereich erscheint „published“. Das ist ein internes Statusfeld und darf öffentlich nicht sichtbar sein.
 Unpassender Debattenblock
-Der oberste Block „Vom Begriff zur Debatte – Wie diese Logik in öffentlichen Debatten wirkt“ hat auf normalen Glossarbegriffen nichts verloren. Er gehört nicht in das Standard-Glossar-Template.
+Der oberste Block „Vom Begriff zur Debatte - Wie diese Logik in öffentlichen Debatten wirkt“ hat auf normalen Glossarbegriffen nichts verloren. Er gehört nicht in das Standard-Glossar-Template.
 Generischer WÖk-Text ohne Begriffsbezug
 Der Block „Warum ist das wichtig?“ enthält beim Begriff „Staat“ offenbar Text zu Wirkung, Wirkungspotenzial, Wirkungsrisiko usw. Das erklärt nicht den Begriff Staat und wirkt wie ein falscher Template-Fill.
 Generischer Verwendungsblock

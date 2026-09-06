@@ -2,7 +2,7 @@
 
 > Deterministic read-only inventory. The inspected source worktree was not changed.
 
-- Old worktree: `/Users/hagen/Documents/New project`
+- Old worktree: `[lokales Arbeitsverzeichnis]/Documents/New project`
 - HEAD: `7e38fcb248c756fa6021cfdc87b3ef1eeb58b093`
 - Branch: `codex/live-clean-20260628`
 - Compared main: `b3477bb387978c11cee3bf866f7dc3a15516cb50`

@@ -95,10 +95,10 @@ Verglichen werden nicht nur CO₂-Werte, sondern Funktion, Hygiene, Logistik, R�
 
 ## Typische Fehlinterpretationen
 
-- Delivery kommt erst nach der Wirkungsentscheidung. – Zu spät.
-- Finanzierung = nur Investitionsbudget. – Nein.
-- Mehr Optionen machen Entscheidung schlechter. – Nein; sie verhindern Instrumentfixierung.
-- Kohärenz bedeutet, dass alle Ziele gleich gewichtet werden. – Nein; es geht um widersprüchliche Steuerung.
+- Delivery kommt erst nach der Wirkungsentscheidung. - Zu spät.
+- Finanzierung = nur Investitionsbudget. - Nein.
+- Mehr Optionen machen Entscheidung schlechter. - Nein; sie verhindern Instrumentfixierung.
+- Kohärenz bedeutet, dass alle Ziele gleich gewichtet werden. - Nein; es geht um widersprüchliche Steuerung.
 
 ## WÖk-Abgrenzung
 

@@ -20,5 +20,6 @@ export function editionFor(filename) {
 }
 export function editionLink(filename,label='Aktualisierte PDF-Lesefassung') {
   const item=editionFor(filename);
-  return `<a class="text-link" href="${escapeHtml(item.url)}">${escapeHtml(label)}</a> <span class="meta-line">(PDF, ${item.pages} Seiten, ${(item.bytes/1024/1024).toLocaleString('de-DE',{maximumFractionDigits:1})} MB)</span>`;
+  const size=item.bytes<1024*1024?`${Math.ceil(item.bytes/1024).toLocaleString('de-DE')} KB`:`${(item.bytes/1024/1024).toLocaleString('de-DE',{maximumFractionDigits:1})} MB`;
+  return `<a class="text-link" href="${escapeHtml(item.url)}">${escapeHtml(label)}</a> <span class="meta-line">(PDF, ${item.pages} Seiten, ${size})</span>`;
 }

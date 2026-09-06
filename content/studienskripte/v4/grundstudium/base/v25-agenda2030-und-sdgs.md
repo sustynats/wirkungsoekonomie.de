@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die 17 SDGs sind **globale Ziele der Agenda 2030**, keine WÖk-Erfindung und kein deutsches Gesetz. Sie helfen, Wirkungen in einen international vereinbarten Zielraum einzuordnen. Aber sie sagen noch nicht, ob eine konkrete Maßnahme tatsächlich wirkt. Für deutsche staatliche Fälle kommt außerdem die Deutsche Nachhaltigkeitsstrategie als nationaler Governance-, Ziel- und Monitoringrahmen hinzu. WÖk nutzt diese Referenzen – und hält Zielbezug, Recht und Kausalität strikt getrennt.
+Die 17 SDGs sind **globale Ziele der Agenda 2030**, keine WÖk-Erfindung und kein deutsches Gesetz. Sie helfen, Wirkungen in einen international vereinbarten Zielraum einzuordnen. Aber sie sagen noch nicht, ob eine konkrete Maßnahme tatsächlich wirkt. Für deutsche staatliche Fälle kommt außerdem die Deutsche Nachhaltigkeitsstrategie als nationaler Governance-, Ziel- und Monitoringrahmen hinzu. WÖk nutzt diese Referenzen - und hält Zielbezug, Recht und Kausalität strikt getrennt.
 
 ## Lernziele
 
@@ -249,7 +249,7 @@ Denn ein SDG-Bezug beweist keine Wirkung.
 
 Wenn ein Digitalprogramm zu SDG 4 Bildung passt, wissen wir noch nicht, ob Kinder dadurch tatsächlich besser lernen.
 
-Geräte können verteilt sein – das ist Output. Der Lernerfolg kann trotzdem ausbleiben.
+Geräte können verteilt sein - das ist Output. Der Lernerfolg kann trotzdem ausbleiben.
 
 Darum verwenden wir SDGs als Referenzrahmen und Vollständigkeitscheck.
 

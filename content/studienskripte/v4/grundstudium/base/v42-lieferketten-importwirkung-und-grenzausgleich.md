@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v42-lieferketten-importwirkung-und-grenzausgleich.md curriculum=4.0 sanitized=true -->
-# V42 · Lieferketten, Vorleistungen und Importwirkung – Datenweitergabe statt Herkunftspauschale
+# V42 · Lieferketten, Vorleistungen und Importwirkung - Datenweitergabe statt Herkunftspauschale
 
 **lecture_id:** `WOEK-G-BASE-042`  
 **display_code:** `V42`  
@@ -52,7 +52,7 @@ Das stimmt nicht.
 
 Steuerrecht, Produktrecht, Umwelt-/Sozialrecht und Wirkungsdaten sind getrennte Ebenen.
 
-## 3. Vorsteuerlogik als Analogie – nicht fertige Rechtslösung
+## 3. Vorsteuerlogik als Analogie - nicht fertige Rechtslösung
 
 Das Umsatzsteuersystem gibt Steuerinformationen entlang von Leistungsbeziehungen weiter.
 
@@ -249,7 +249,7 @@ Die WÖk kann daran anschließen.
 
 Aber wir müssen sauber trennen: Einfuhrumsatzsteuer ist keine Nachhaltigkeitsprüfung. CBAM ist kein allgemeiner MPD-Grenzausgleich. Und ein DPP enthält nicht automatisch alle Wirkungsdaten.
 
-Unsere Vorsteueridee ist deshalb eine Analogie: Könnten Wirkungsmetadaten entlang von Vorleistungen weitergegeben werden – ähnlich wie andere Rechnungsinformationen?
+Unsere Vorsteueridee ist deshalb eine Analogie: Könnten Wirkungsmetadaten entlang von Vorleistungen weitergegeben werden - ähnlich wie andere Rechnungsinformationen?
 
 Das müssen wir testen.
 
@@ -257,4 +257,4 @@ Mit Daten, Recht, Handelsregeln, Gaming und Doppelzählung.
 
 Der Merksatz lautet:
 
-**Bewerte die Wirkung des Prozesses und Produkts – nicht den Pass des Herkunftslandes.**
+**Bewerte die Wirkung des Prozesses und Produkts - nicht den Pass des Herkunftslandes.**

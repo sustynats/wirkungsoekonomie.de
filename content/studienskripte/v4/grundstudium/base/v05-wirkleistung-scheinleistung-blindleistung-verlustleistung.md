@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine Organisation kann sehr beschäftigt sein und trotzdem wenig vom gewünschten Zustand verändern. Um solche Fälle zu besprechen, nutzt WÖk vier **didaktische** Begriffe: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung. Sie sind kein amtlicher Standard und keine mathematisch exakten Klassen – sie helfen, Aktivität, nachgewiesenen Outcome, unbeachtete Folgen und vermeidbare Schäden auseinanderzuhalten.
+Eine Organisation kann sehr beschäftigt sein und trotzdem wenig vom gewünschten Zustand verändern. Um solche Fälle zu besprechen, nutzt WÖk vier **didaktische** Begriffe: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung. Sie sind kein amtlicher Standard und keine mathematisch exakten Klassen - sie helfen, Aktivität, nachgewiesenen Outcome, unbeachtete Folgen und vermeidbare Schäden auseinanderzuhalten.
 
 ## Lernziele
 
@@ -28,7 +28,7 @@ Nach dieser Vorlesung kannst du:
 
 ## 1. Wirkleistung
 
-**Wirkleistung** nennen wir eine Aktivität, bei der ein relevanter Beitrag zu einer gewünschten Zustandsänderung fachlich plausibel und – soweit möglich – beobachtbar ist.
+**Wirkleistung** nennen wir eine Aktivität, bei der ein relevanter Beitrag zu einer gewünschten Zustandsänderung fachlich plausibel und - soweit möglich - beobachtbar ist.
 
 Wirkleistung braucht:
 
@@ -94,13 +94,13 @@ Sie sind Fragen an die Analyse:
 
 ## 8. Typische Fehlinterpretationen
 
-**„Keine Daten = Scheinleistung.“** – Falsch. Zunächst Datenlücke.
+**„Keine Daten = Scheinleistung.“** - Falsch. Zunächst Datenlücke.
 
-**„Blindleistung heißt, der Staat misst nichts.“** – Falsch.
+**„Blindleistung heißt, der Staat misst nichts.“** - Falsch.
 
-**„Verlustleistung ist alles, was Geld kostet.“** – Falsch.
+**„Verlustleistung ist alles, was Geld kostet.“** - Falsch.
 
-**„Die vier Kategorien ergeben automatisch einen Score.“** – Falsch.
+**„Die vier Kategorien ergeben automatisch einen Score.“** - Falsch.
 
 ## 9. WÖk-Abgrenzung
 
@@ -108,7 +108,7 @@ Die Begriffe sind eine WÖk-eigene didaktische Heuristik. Sie ersetzen weder Kos
 
 ## 10. Quellen
 
-- GGO §§43–44, Folgen/Alternativen/Überprüfung: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44, Folgen/Alternativen/Überprüfung: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - OECD, Policy Evaluation: https://www.oecd.org/gov/regulatory-policy/
 - WÖk Referenz: https://wirkungsoekonomie.de/referenz/
 

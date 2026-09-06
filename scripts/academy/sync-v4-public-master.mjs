@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, relative, resolve } from 'node:path';
 import process from 'node:process';
+import {normalizePublicationTypography} from '../lib/public-typography.mjs';
 
 const repoRoot = resolve(process.cwd());
 const lockPath = join(repoRoot, 'content/studienskripte/v4/SOURCE_LOCK.json');
@@ -181,7 +182,7 @@ async function buildRecord(entry, { publicPath, offeringId, requiredReviewStatus
     throw new Error(`Offering-ID mismatch in ${entry.path}: ${declaredOfferingId} != ${offeringId}.`);
   }
 
-  const publicContent = sanitizePublicMarkdown(source, entry.path, lock.source_sha);
+  const publicContent = normalizePublicationTypography(sanitizePublicMarkdown(source, entry.path, lock.source_sha));
   return {
     lecture_id: lectureId,
     display_code: displayCode,

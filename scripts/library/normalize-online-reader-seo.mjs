@@ -454,6 +454,7 @@ let redactedPages = 0;
 for (const file of readerFiles(LIBRARY_ROOT)) {
   if (isReaderAliasFile(file)) continue;
   let html = fs.readFileSync(file, "utf8");
+  if (/data-reader-node-redirect/.test(html)) continue;
   const before = html;
   const readerRoot = readerRootFor(file);
   const overview = path.join(readerRoot, "index.html");

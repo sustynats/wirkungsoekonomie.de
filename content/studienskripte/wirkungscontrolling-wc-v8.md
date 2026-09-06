@@ -5,9 +5,7 @@
 **Vorlesungscode:** WC-V8  
 **Modul/Abschnitt:** WC  
 **Titel:** Wirkung in CAPEX, OPEX, Portfolio und Einkauf  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v8-capex-opex-portfolio-einkauf.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v8.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v8.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkung in CAPEX, OPEX, Portfolio und Einkauf** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -53,26 +50,26 @@ Wirkungscontrolling nützt nichts, wenn es neben den echten Finanzentscheidungen
 
 - **Titel:** Wirkung in die Finanz- und Einkaufsentscheidung bringen
 - **Länge:** ~16 Min
-- **Kernaussage in einem Satz:** Netto-Wirkung (NWI/IoI) wird zum festen Kriterium in CAPEX-, OPEX-, Portfolio- und Beschaffungsentscheidungen – als Freigabe- und Priorisierungslogik, nicht als Anhang.
+- **Kernaussage in einem Satz:** Netto-Wirkung (NWI/IoI) wird zum festen Kriterium in CAPEX-, OPEX-, Portfolio- und Beschaffungsentscheidungen - als Freigabe- und Priorisierungslogik, nicht als Anhang.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Wo Wirkung entsteht.** In Investitionen (CAPEX), im Betrieb (OPEX), im Portfolio und im Einkauf – dort werden Weichen gestellt.
+**Abschnitt A - Wo Wirkung entsteht.** In Investitionen (CAPEX), im Betrieb (OPEX), im Portfolio und im Einkauf - dort werden Weichen gestellt.
 
-**Abschnitt B – Wirkung als Kriterium.** Netto-Wirkung wird ein Freigabe-/Priorisierungskriterium neben Kosten und Risiko – nicht ein nachgelagerter Bericht.
+**Abschnitt B - Wirkung als Kriterium.** Netto-Wirkung wird ein Freigabe-/Priorisierungskriterium neben Kosten und Risiko - nicht ein nachgelagerter Bericht.
 
-**Abschnitt C – IoI für Priorisierung.** IoI vergleicht Vorhaben nach Wirkung pro Euro; Reverse Merit Order sichert kritische Felder.
+**Abschnitt C - IoI für Priorisierung.** IoI vergleicht Vorhaben nach Wirkung pro Euro; Reverse Merit Order sichert kritische Felder.
 
-**Abschnitt D – Einkauf/Lieferkette.** Lieferantenbewertung nach Scorecard; kritisches Wirkungsfeld kann Ausschlusskriterium sein.
+**Abschnitt D - Einkauf/Lieferkette.** Lieferantenbewertung nach Scorecard; kritisches Wirkungsfeld kann Ausschlusskriterium sein.
 
-**Abschnitt E – Verankerung.** Wirkungskriterien in Richtlinien, Templates und Gremien – sonst bleibt es folgenlos.
+**Abschnitt E - Verankerung.** Wirkungskriterien in Richtlinien, Templates und Gremien - sonst bleibt es folgenlos.
 
 ## 4. Skript / Folien (Lernseite)
 
-**Entscheidungen, nicht Berichte, erzeugen Wirkung.** Die zentralen Weichen stehen in **CAPEX** (Investitionen), **OPEX** (Betrieb), **Portfolio** (Beteiligungen/Produkte) und **Einkauf/Beschaffung**. Wirkungscontrolling ist erst dann wirksam, wenn **Netto-Wirkung dort zum Kriterium** wird – als Freigabe- und Priorisierungslogik, nicht als nachgelagerter Anhang (Reporting ≠ Rückkopplung).
+**Entscheidungen, nicht Berichte, erzeugen Wirkung.** Die zentralen Weichen stehen in **CAPEX** (Investitionen), **OPEX** (Betrieb), **Portfolio** (Beteiligungen/Produkte) und **Einkauf/Beschaffung**. Wirkungscontrolling ist erst dann wirksam, wenn **Netto-Wirkung dort zum Kriterium** wird - als Freigabe- und Priorisierungslogik, nicht als nachgelagerter Anhang (Reporting ≠ Rückkopplung).
 
-**IoI und NWI als Entscheidungskriterien.** Für die **Priorisierung** knapper Mittel eignet sich der **IoI** (Wirkung pro Euro): Vorhaben werden vergleichbar. Für die **Bewertung** dient der **NWI** samt Scorecard-Profil. Über allem steht die **Reverse Merit Order**: Ein Vorhaben mit kritisch schwachem Wirkungsfeld wird nicht durch guten IoI „hochgekauft" – kritische Felder sind Freigabe-relevant.
+**IoI und NWI als Entscheidungskriterien.** Für die **Priorisierung** knapper Mittel eignet sich der **IoI** (Wirkung pro Euro): Vorhaben werden vergleichbar. Für die **Bewertung** dient der **NWI** samt Scorecard-Profil. Über allem steht die **Reverse Merit Order**: Ein Vorhaben mit kritisch schwachem Wirkungsfeld wird nicht durch guten IoI „hochgekauft" - kritische Felder sind Freigabe-relevant.
 
 **Einkauf und Lieferkette konkret.** Lieferantenentscheidungen laufen über die Scorecard (V4): Ein kritisch schwaches Wirkungsfeld (z. B. Arbeitsrechte) kann **Ausschlusskriterium** sein, nicht nur ein Minuspunkt. So wird Beschaffung zum stärksten Hebel für Netto-Wirkung entlang der Wertschöpfung (`docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md`).
 
@@ -119,12 +116,11 @@ Wähle eine reale Entscheidung (Investition oder Lieferant) und beschreibe: Wie 
 
 ## 8. Praxisbeispiel
 
-**Investitionsrichtlinie mit Wirkungs-Gate.** Ein Unternehmen ergänzt seine CAPEX-Freigabe: Jeder Antrag braucht ein Scorecard-Profil; ein kritisch schwaches Wirkungsfeld blockiert die Freigabe (Reverse Merit Order), und bei mehreren Anträgen priorisiert der IoI. Wirkung ist damit Teil der Finanzentscheidung – nicht daneben.
+**Investitionsrichtlinie mit Wirkungs-Gate.** Ein Unternehmen ergänzt seine CAPEX-Freigabe: Jeder Antrag braucht ein Scorecard-Profil; ein kritisch schwaches Wirkungsfeld blockiert die Freigabe (Reverse Merit Order), und bei mehreren Anträgen priorisiert der IoI. Wirkung ist damit Teil der Finanzentscheidung - nicht daneben.
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -236,7 +232,6 @@ Die folgende Runde verdichtet WC-V8 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V8. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
@@ -334,7 +329,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -1052,8 +1046,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v8-capex-opex-portfolio-einkauf.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

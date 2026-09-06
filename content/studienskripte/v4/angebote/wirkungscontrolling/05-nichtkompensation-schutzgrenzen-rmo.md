@@ -5,7 +5,7 @@
 **offering_id:** `WOEK-WB-WC`  
 **curriculum_version:** `4.0`  
 **status:** `FACH_ENDCONTENT_REVIEWED`  
-**subtitle:** Harte Grenzen schützen – ohne mechanische Minimumformel  
+**subtitle:** Harte Grenzen schützen - ohne mechanische Minimumformel  
 **legacy_source:** `content/lehrgaenge/wirkungscontrolling-wc-v5.md`  
 **migration_class:** `REWRITE_REQUIRED`  
 **reviewed_at:** 2026-08-21
@@ -19,7 +19,7 @@
 
 ## 20-Sekunden-Erklärung
 
-Nicht jedes schwächste Feld entscheidet. Entscheidend wird ein Feld dann, wenn eine materielle Schutzgrenze betroffen ist oder ein schwerer Schaden nicht verantwortbar kompensiert werden darf. Reverse Merit Order kann solche Felder priorisieren – sie ist keine Formel „nimm immer den kleinsten Score“.
+Nicht jedes schwächste Feld entscheidet. Entscheidend wird ein Feld dann, wenn eine materielle Schutzgrenze betroffen ist oder ein schwerer Schaden nicht verantwortbar kompensiert werden darf. Reverse Merit Order kann solche Felder priorisieren - sie ist keine Formel „nimm immer den kleinsten Score“.
 
 ## Einfach erklärt
 
@@ -93,4 +93,4 @@ Version 4.0 · Stand 21.08.2026. Legacy Minimumformel korrigiert; Nichtkompensat
 
 ## Sprechertext
 
-Der Satz „das schwächste Feld entscheidet“ klingt griffig – und ist zu grob. v4 fragt genauer: Ist dieses Feld materiell? Berührt es eine harte Grenze? Ist der Schaden reversibel? Wie sicher ist der Befund? Erst dann entscheidet sich, ob eine Grenze greift, ob Mitigation reicht oder ob eine Option ausscheidet. So verhindert man gleichzeitig Schönrechnen und mechanische Score-Logik.
+Der Satz „das schwächste Feld entscheidet“ klingt griffig - und ist zu grob. v4 fragt genauer: Ist dieses Feld materiell? Berührt es eine harte Grenze? Ist der Schaden reversibel? Wie sicher ist der Befund? Erst dann entscheidet sich, ob eine Grenze greift, ob Mitigation reicht oder ob eine Option ausscheidet. So verhindert man gleichzeitig Schönrechnen und mechanische Score-Logik.

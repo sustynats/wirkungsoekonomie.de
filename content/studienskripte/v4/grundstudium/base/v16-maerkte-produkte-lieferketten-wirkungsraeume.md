@@ -60,10 +60,10 @@ Effizienz kann Nutzung verbilligen und dadurch Nachfrage erhöhen. Strenge Regel
 
 ## Typische Fehlinterpretationen
 
-- „Markt = Ursache aller Schäden.“ – Zu pauschal.
-- „Preis enthält alle gesellschaftlichen Kosten.“ – Nicht automatisch.
-- „Lieferkettenwirkung ist vollständig dem Käufer zurechenbar.“ – Nicht ohne Attribution.
-- „Effizienz senkt immer den Gesamtverbrauch.“ – Nicht zwingend.
+- „Markt = Ursache aller Schäden.“ - Zu pauschal.
+- „Preis enthält alle gesellschaftlichen Kosten.“ - Nicht automatisch.
+- „Lieferkettenwirkung ist vollständig dem Käufer zurechenbar.“ - Nicht ohne Attribution.
+- „Effizienz senkt immer den Gesamtverbrauch.“ - Nicht zwingend.
 
 ## WÖk-Abgrenzung
 

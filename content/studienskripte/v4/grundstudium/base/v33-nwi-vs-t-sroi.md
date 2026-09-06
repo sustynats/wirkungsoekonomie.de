@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v33-nwi-vs-t-sroi.md curriculum=4.0 sanitized=true -->
-# V33 · NWI und T-SROI unterscheiden – Einsatzbereich und Grenzen
+# V33 · NWI und T-SROI unterscheiden - Einsatzbereich und Grenzen
 
 **lecture_id:** `WOEK-G-BASE-033`  
 **display_code:** `V33`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-**NWI** und **T-SROI** sind WÖk-eigene Modelle – keine amtlichen Standards. Der NWI versucht, Wirkungsinformationen in einem definierten Anwendungsfall zu einem verdichteten Profil oder Teilindex zusammenzuführen. T-SROI baut auf der Idee des etablierten **Social Return on Investment (SROI)** auf, erweitert sie in der WÖk aber um Transformations-, System- und Resilienzfragen. Beide sind nur sinnvoll, wenn die zugrunde liegenden Wirkpfade, Daten, Gegenfakten, Verteilung und Schutzgrenzen transparent bleiben.
+**NWI** und **T-SROI** sind WÖk-eigene Modelle - keine amtlichen Standards. Der NWI versucht, Wirkungsinformationen in einem definierten Anwendungsfall zu einem verdichteten Profil oder Teilindex zusammenzuführen. T-SROI baut auf der Idee des etablierten **Social Return on Investment (SROI)** auf, erweitert sie in der WÖk aber um Transformations-, System- und Resilienzfragen. Beide sind nur sinnvoll, wenn die zugrunde liegenden Wirkpfade, Daten, Gegenfakten, Verteilung und Schutzgrenzen transparent bleiben.
 
 ## Lernziele
 
@@ -28,7 +28,7 @@ Nach dieser Vorlesung kannst du:
 
 ## 1. Erst die Herkunft klären
 
-Social Return on Investment – **SROI** – existiert unabhängig von der Wirkungsökonomie.
+Social Return on Investment - **SROI** - existiert unabhängig von der Wirkungsökonomie.
 
 Social Value International beschreibt SROI als Rahmen zur Messung, Steuerung und bilanziellen Darstellung von sozialem Wert und Wirkung. Der verbreitete Guide wurde ursprünglich 2009 im Umfeld des britischen Cabinet Office erstellt und 2012 aktualisiert. Die Methode arbeitet mit Stakeholdern, Outcomes, Evidenz, Bewertung und Prinzipien des Social Value Accounting.
 
@@ -46,7 +46,7 @@ Diese Provenienz muss in Lehre und Publikation sichtbar sein.
 
 Der **Netto-Wirkungs-Index (NWI)** ist eine WÖk-Modellfamilie für die Frage:
 
-> Wie lässt sich die mehrdimensionale Wirkung eines klar abgegrenzten Objekts in einem transparenten Bewertungsprofil und – soweit fachlich legitim – in einer verdichteten Kennzahl darstellen?
+> Wie lässt sich die mehrdimensionale Wirkung eines klar abgegrenzten Objekts in einem transparenten Bewertungsprofil und - soweit fachlich legitim - in einer verdichteten Kennzahl darstellen?
 
 NWI braucht:
 
@@ -64,7 +64,7 @@ Der NWI ist **kein universeller Gesamtscore für Parteien, Staaten oder Menschen
 
 T-SROI fragt stärker:
 
-> Welche langfristige und strukturelle Zustandsveränderung entsteht im Verhältnis zu eingesetzten Ressourcen – und wie robust ist dieser Transformationsbeitrag?
+> Welche langfristige und strukturelle Zustandsveränderung entsteht im Verhältnis zu eingesetzten Ressourcen - und wie robust ist dieser Transformationsbeitrag?
 
 Dabei interessieren zusätzlich:
 
@@ -272,7 +272,7 @@ Dann skizziere eine T-SROI-Analyse:
 - Transformationshebel,
 - nicht monetarisierbare Schutzgrenzen.
 
-Schreibe danach: Welche Information bringt T-SROI zusätzlich – und welche Scheingenauigkeit droht?
+Schreibe danach: Welche Information bringt T-SROI zusätzlich - und welche Scheingenauigkeit droht?
 
 ## 16. Prüfungsrelevanz
 
@@ -290,13 +290,13 @@ NWI und T-SROI klingen beide nach Kennzahlen.
 
 Aber sie stellen unterschiedliche Fragen.
 
-Der NWI fragt: Wie sieht die Netto-Wirkung in einem definierten Wirkungsprofil aus – und lässt sich davon vielleicht ein Teil sinnvoll verdichten?
+Der NWI fragt: Wie sieht die Netto-Wirkung in einem definierten Wirkungsprofil aus - und lässt sich davon vielleicht ein Teil sinnvoll verdichten?
 
 T-SROI fragt stärker: Welche langfristige Transformationswirkung entsteht im Verhältnis zu den eingesetzten Ressourcen?
 
 Und jetzt kommt eine wichtige historische Korrektur.
 
-SROI – Social Return on Investment – haben wir nicht erfunden. Es ist ein etablierter Ansatz. Und seriöser SROI kennt schon Dinge wie Deadweight, Attribution oder Displacement.
+SROI - Social Return on Investment - haben wir nicht erfunden. Es ist ein etablierter Ansatz. Und seriöser SROI kennt schon Dinge wie Deadweight, Attribution oder Displacement.
 
 Also: Was wäre ohnehin passiert? Welchen Anteil haben andere Akteure? Wird Wirkung nur verlagert?
 
@@ -314,4 +314,4 @@ Menschenwürde, Grundrechte oder irreversible ökologische Verluste werden nicht
 
 Darum lautet der Merksatz:
 
-**NWI und T-SROI sind Entscheidungsmodelle – keine Wahrheitsmaschinen. Ihre Qualität hängt an Wirkpfad, Gegenfaktum, Daten, Transparenz und Schutzgrenzen.**
+**NWI und T-SROI sind Entscheidungsmodelle - keine Wahrheitsmaschinen. Ihre Qualität hängt an Wirkpfad, Gegenfaktum, Daten, Transparenz und Schutzgrenzen.**

@@ -1,6 +1,6 @@
-## WÖk FACH BATCH — Berlin BSW physical PDF page 66 complete source-bound review + full-programme Fach-handoff closure
+## WÖk FACH BATCH - Berlin BSW physical PDF page 66 complete source-bound review + full-programme Fach-handoff closure
 
-Continuation after P65 `5458972339`. Frozen artefact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P66/66. Exact frozen page: U01, U03–U08 effect-labelled; U02 structural lead-in; U09 closing political/context letter. Generic delegated/#313 RNAA is not Fach authority. No DNS mapping, Recommendation, party score or party-wide impact judgement is created.
+Continuation after P65 `5458972339`. Frozen artefact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P66/66. Exact frozen page: U01, U03-U08 effect-labelled; U02 structural lead-in; U09 closing political/context letter. Generic delegated/#313 RNAA is not Fach authority. No DNS mapping, Recommendation, party score or party-wide impact judgement is created.
 
 ### Current-path / competence baselines
 
@@ -9,9 +9,9 @@ Continuation after P65 `5458972339`. Frozen artefact unchanged: `BE-AGH-2026-BSW
 - §202c StGB is federal criminal law and currently criminalises preparation of §§202a/202b offences through specified access codes or computer programmes intended for such offences. `https://www.gesetze-im-internet.de/stgb/__202c.html`. Current 2026 professional debate still identifies legal uncertainty for legitimate IT-security research, so a Bundesrat initiative is a real federal advocacy path, not direct Berlin criminal-law implementation.
 - Berlin courts already have secure electronic filing paths (beA, beBPo, eBO, MJP); current Berlin court guidance explicitly says **simple e-mail is not a valid filing route** for pleadings/applications. `https://www.berlin.de/gerichte/sozialgericht/erv/`, `https://www.berlin.de/gerichte/arbeitsgericht/service/elektronischer-rechtsverkehr-erv/`. A pilot allowing simple e-mail therefore cannot be represented as a mere local UX change; procedural-law, authenticity/integrity and competence requirements are binding.
 
-## A. U01 — IT recruitment through pay-classification criteria
+## A. U01 - IT recruitment through pay-classification criteria
 
-### `BE-BSW-P66-U01-A01-f3ddea2b02c2` — loosen current classification criteria so public-sector IT pay can be more competitive
+### `BE-BSW-P66-U01-A01-f3ddea2b02c2` - loosen current classification criteria so public-sector IT pay can be more competitive
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_DIGITAL_SKILLS_RECRUITMENT_AND_PAY_FLEXIBILITY_POTENTIAL / CLASSIFICATION_FAIRNESS_FISCAL_AND_RETENTION_DEPENDENT`
 - `evidence_level = HIGH_FOR_PAY_CLASSIFICATION_TO_COMPENSATION_AND_RECRUITMENT_MECHANISM / NET_STAFFING_AND_DIGITAL_DELIVERY_OUTCOME_PENDING`
@@ -22,7 +22,7 @@ Continuation after P65 `5458972339`. Frozen artefact unchanged: `BE-AGH-2026-BSW
 
 - `BE-BSW-P66-U02-e22e98dadab5` (`Das BSW unterstützt:`) → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_LEAD_IN`.
 
-## B. U03 — adaptive/digital traffic-signal pilot
+## B. U03 - adaptive/digital traffic-signal pilot
 
 ### `BE-BSW-P66-U03-A01-54d8796721c2`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -34,7 +34,7 @@ Continuation after P65 `5458972339`. Frozen artefact unchanged: `BE-AGH-2026-BSW
 - Risks: optimisation of the wrong mode/metric, rebound/induced car traffic, model/data bias, failure modes/cybersecurity, vendor lock-in and opaque operational responsibility.
 - Reality check: person-delay by mode, public-transport priority/reliability, safety/conflicts, pedestrian/cycle waits, emissions/energy/noise, queue spillback and system failures versus controlled baseline.
 
-## C. U04 — digital/AI construction management
+## C. U04 - digital/AI construction management
 
 ### `BE-BSW-P66-U04-A01-1f93125a3d8e`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -44,7 +44,7 @@ Continuation after P65 `5458972339`. Frozen artefact unchanged: `BE-AGH-2026-BSW
 - Risks: duplicate tooling, bad/stale project data, optimisation for traffic instead of construction/public-space outcomes, vendor lock-in, administrative data burden.
 - Reality check: overlapping/conflicting closures, disruption days/person-delay by mode, unplanned changes, construction duration/cost, information freshness and complaints; software/AI use is output.
 
-## D. U05 — BVG demand-responsive bus pilot using AI
+## D. U05 - BVG demand-responsive bus pilot using AI
 
 ### `BE-BSW-P66-U05-A01-d33670e9d257`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -55,7 +55,7 @@ Continuation after P65 `5458972339`. Frozen artefact unchanged: `BE-AGH-2026-BSW
 - Noncompensation: utilisation efficiency cannot compensate for loss of minimum public-service accessibility/reliability.
 - Reality check: passenger wait/crowding/reliability, missed/denied trips, service by district/time/vulnerable group, vehicle-km/passenger-km, energy/emissions, labour effects and operating cost versus fixed-schedule baseline.
 
-## E. U06 — Bundesratsinitiative §202c StGB / security research
+## E. U06 - Bundesratsinitiative §202c StGB / security research
 
 ### `BE-BSW-P66-U06-A01-3e80da64cbb4`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -67,25 +67,25 @@ Continuation after P65 `5458972339`. Frozen artefact unchanged: `BE-AGH-2026-BSW
 - Omissions: exact statutory text, intent/authorisation criteria, responsible-disclosure conditions, malicious-use evidentiary boundary.
 - Reality check: legal clarity/case outcomes, research/disclosure activity, vulnerability remediation and abuse/enforcement patterns after actual federal rule delta.
 
-## F. U07 — federal initiative for a seal for human creative work
+## F. U07 - federal initiative for a seal for human creative work
 
 ### `BE-BSW-P66-U07-A01-e77ec060a053`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: a `staatliches Gütesiegel` is an identifiable signalling concept but the source supplies no definition of `menschlich kreativ`, covered works/markets, verification/provenance method, AI-assistance threshold, issuer/audit process, fraud sanctions, cost or voluntary/mandatory status. Without these, consumer-information/authenticity benefits cannot be weighed against false certification, bureaucratic cost, creative-process exclusion or market distortion.
 - Competence: federal-policy proposal via Bundesrat is explicit; substantive effect remains not assessable until scheme design exists.
 
-## G. U08 — simple-email court-filing pilot
+## G. U08 - simple-email court-filing pilot
 
 Old `U08-A01-856d33cfc15e` contains the proposal plus benchmark reference; `U08-A02-64a6149d0f69` contains the Vienna factual/success claim.
 
-### `U08-A01-856d33cfc15e` — pilot at a Berlin court inspired by Vienna
+### `U08-A01-856d33cfc15e` - pilot at a Berlin court inspired by Vienna
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: current Berlin ERV requires secure legally recognised transmission paths and explicitly excludes simple e-mail for filings. The source does not identify affected procedure/court, federal procedural-law/ERVV change or experimental authority, authentication/signature requirements, time-of-receipt proof, integrity/malware/spoofing protection, confidentiality, accessibility or fallback. A Berlin pilot cannot be treated as legally implementable merely from the programme sentence.
 - Preserve potential test hypothesis: simpler channel could reduce filing friction/cost if legal validity, identity/integrity and equal access are protected.
 
 - `U08-A02-64a6149d0f69` (Vienna has years of simple-email submissions without manipulation attempts) → `NON_EFFECT_FOREIGN_BENCHMARK_AND_SUCCESS_CLAIM_REVIEWED`; not accepted as independently proven and not evidence that Berlin's procedural/security/legal context is equivalent.
 
-## H. U09 — closing letter / political argument
+## H. U09 - closing letter / political argument
 
 `BE-BSW-P66-U09-865953508ba9` remains `NON_EFFECT_CONTEXT_REVIEWED / CLOSING_POLITICAL_NARRATIVE_AND_FISCAL_CLAIMS`. Do not turn NATO/federal-budget/political contrast statements into Berlin programme effect objects; their factual claims require separate sources if ever displayed as facts.
 
@@ -113,4 +113,4 @@ The other Berlin eight genuine programmes remain open and must not be affected: 
 
 ### CodeX boundary
 
-Re-read exact current main/newest #240/#241 before writing. Technical main last observed before this handoff: `57151e7529233f2a159f44e1b323b4cecf88cc09`, frontier P37. Consume P38→P66 authoritative queue in source order; preserve P1–P37. Recompute all residuals SET-WISE; run Berlin residual integrity, BSW full-programme truth, #241 residual, Golden-readiness, Source-vs-View, SamePage navigation, tests/typecheck/lint/local production build/privacy/link/accessibility/responsive gates. Merge only green exact head; post exact merge SHA + new residual to #240/#241 and immediately continue the next Berlin genuine programme lane. **GitHub only: `NO_NEW_VERCEL_BUILD=true`; no Vercel Preview/build/deploy/promotion and no owner-RC request.**
+Re-read exact current main/newest #240/#241 before writing. Technical main last observed before this handoff: `57151e7529233f2a159f44e1b323b4cecf88cc09`, frontier P37. Consume P38→P66 authoritative queue in source order; preserve P1-P37. Recompute all residuals SET-WISE; run Berlin residual integrity, BSW full-programme truth, #241 residual, Golden-readiness, Source-vs-View, SamePage navigation, tests/typecheck/lint/local production build/privacy/link/accessibility/responsive gates. Merge only green exact head; post exact merge SHA + new residual to #240/#241 and immediately continue the next Berlin genuine programme lane. **GitHub only: `NO_NEW_VERCEL_BUILD=true`; no Vercel Preview/build/deploy/promotion and no owner-RC request.**

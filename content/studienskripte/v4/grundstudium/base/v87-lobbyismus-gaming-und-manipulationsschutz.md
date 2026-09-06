@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Sobald ein Score Geld, Reputation oder Regulierung beeinflusst, lernen Menschen, den Score zu optimieren. Das ist nicht automatisch Betrug – es ist ein normaler Anreizeffekt. Problematisch wird es, wenn **die Kennzahl besser wird, ohne dass der reale Zustand besser wird**. WÖk muss deshalb Goodhart-Risiken, Lobbyeinfluss, selektive Daten, Benchmark-Manipulation und Modell-Gaming von Anfang an mitdenken.
+Sobald ein Score Geld, Reputation oder Regulierung beeinflusst, lernen Menschen, den Score zu optimieren. Das ist nicht automatisch Betrug - es ist ein normaler Anreizeffekt. Problematisch wird es, wenn **die Kennzahl besser wird, ohne dass der reale Zustand besser wird**. WÖk muss deshalb Goodhart-Risiken, Lobbyeinfluss, selektive Daten, Benchmark-Manipulation und Modell-Gaming von Anfang an mitdenken.
 
 ## Lernziele
 
@@ -98,7 +98,7 @@ Mögliche Gegenmittel:
 - Datenprovenienz,
 - Whistleblower-/Beschwerdekanäle.
 
-Nicht jede Selbstauskunft ist wertlos – aber ihre Anreizlage muss bekannt sein.
+Nicht jede Selbstauskunft ist wertlos - aber ihre Anreizlage muss bekannt sein.
 
 ## 5. Benchmark-Governance
 

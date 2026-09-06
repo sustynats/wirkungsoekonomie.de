@@ -1,4 +1,4 @@
-## WÖk FACH BATCH — Berlin BSW P33: Ansprechperson Queeres Berlin / Mittelumschichtung gegen homophobe Gewalt — source-bound terminal review
+## WÖk FACH BATCH - Berlin BSW P33: Ansprechperson Queeres Berlin / Mittelumschichtung gegen homophobe Gewalt - source-bound terminal review
 
 Fresh continuation after authoritative P32 `5454152920`. Frozen source artifact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P33/66. Exact frozen source unit is `BE-BSW-P33-U01-c783eef87c6e` with exactly two atoms. Generic delegated/#313 RNAA is superseded for this exact scope. No DNS mapping, Recommendation, score or programme-wide judgement.
 
@@ -6,7 +6,7 @@ Fresh continuation after authoritative P32 `5454152920`. Frozen source artifact 
 
 The programme is **not** evaluated against a zero-policy or zero-function baseline.
 
-The Berlin Senate appointed Alfonso Pantisano in July 2023 as the `Ansprechperson der Landesregierung Berlin für die Akzeptanz sexueller und geschlechtlicher Vielfalt / Ansprechperson Queeres Berlin`. The official current Berlin page still lists the function and states that its tasks include cooperation with district queer contact persons, development/steering/implementation of politically relevant projects, representation at Land/Federal level, and specific work including the Round Table on queer-hostile hate crime. The official page says the appointment initially runs through the 2023–2026 legislative period:
+The Berlin Senate appointed Alfonso Pantisano in July 2023 as the `Ansprechperson der Landesregierung Berlin für die Akzeptanz sexueller und geschlechtlicher Vielfalt / Ansprechperson Queeres Berlin`. The official current Berlin page still lists the function and states that its tasks include cooperation with district queer contact persons, development/steering/implementation of politically relevant projects, representation at Land/Federal level, and specific work including the Round Table on queer-hostile hate crime. The official page says the appointment initially runs through the 2023-2026 legislative period:
 - https://www.berlin.de/sen/lads/schwerpunkte/lsbti/artikel.1418301.php
 - appointment source: https://www.berlin.de/sen/asgiva/presse/pressemitteilungen/2023/pressemitteilung.1344322.php
 
@@ -16,7 +16,7 @@ The Round Table contributed to the `Landesstrategie für queere Sicherheit und g
 After the July 2026 attack on Berlin CSD, the competent Senate administration convened a special Round Table session for the end of August, again explicitly involving queer community organisations and security actors. This confirms that violence prevention is a live current policy field and that coordination/community participation are active implementation components:
 - https://www.berlin.de/sen/asgiva/presse/pressemitteilungen/2026/pressemitteilung.1698540.php
 
-### 2. Atom A01 — programme claim that the current function “has not worked”
+### 2. Atom A01 - programme claim that the current function “has not worked”
 
 `BE-BSW-P33-U01-A01-a661a20f41e1`
 
@@ -28,7 +28,7 @@ Source text: `Die Stelle der „Ansprechperson der Landesregierung Berlin für d
 - `source_claim_guard = PROGRAMME_NEGATIVE_PERFORMANCE_CLAIM_NOT_INDEPENDENTLY_ESTABLISHED`
 - Relation: preserve A01 as rationale/source claim for the following budget-reallocation proposal A02; do not count it as a separate effect.
 
-### 3. Atom A02 — redirect funds into projects against homophobic violence
+### 3. Atom A02 - redirect funds into projects against homophobic violence
 
 `BE-BSW-P33-U01-A02-f1e125bd511b`
 

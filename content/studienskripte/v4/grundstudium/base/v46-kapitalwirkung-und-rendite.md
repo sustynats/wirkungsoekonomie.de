@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Kapitalrendite beantwortet eine wichtige Frage: **Was verdient das eingesetzte Kapital?** Sie beantwortet aber nicht vollständig: **Was verändert dieses Kapital in der Welt?** Ein Investment kann hohe Rendite und negative externe Wirkung haben – oder positive Wirkung ohne tragfähiges Geschäftsmodell. WÖk ersetzt Rendite deshalb nicht, sondern ergänzt sie um Wirkungs-, Risiko-, Additionalitäts- und Resilienzfragen.
+Kapitalrendite beantwortet eine wichtige Frage: **Was verdient das eingesetzte Kapital?** Sie beantwortet aber nicht vollständig: **Was verändert dieses Kapital in der Welt?** Ein Investment kann hohe Rendite und negative externe Wirkung haben - oder positive Wirkung ohne tragfähiges Geschäftsmodell. WÖk ersetzt Rendite deshalb nicht, sondern ergänzt sie um Wirkungs-, Risiko-, Additionalitäts- und Resilienzfragen.
 
 ## Lernziele
 
@@ -250,8 +250,8 @@ Bei einer Projektfinanzierung kann der Zusammenhang viel direkter sein.
 
 Deshalb trennen wir Unternehmenswirkung und Investor Contribution.
 
-Und ESG ist wieder etwas anderes. ESG-Daten können sehr nützlich sein – aber ein gutes ESG-Rating beweist keine zusätzliche Wirkung.
+Und ESG ist wieder etwas anderes. ESG-Daten können sehr nützlich sein - aber ein gutes ESG-Rating beweist keine zusätzliche Wirkung.
 
 Der Merksatz lautet:
 
-**Kapital muss finanziell funktionieren. Wirkungsökonomie ergänzt die zweite Bilanz: Welche Zustände verändert die Kapitalallokation – und was davon ist dem Investor wirklich zurechenbar?**
+**Kapital muss finanziell funktionieren. Wirkungsökonomie ergänzt die zweite Bilanz: Welche Zustände verändert die Kapitalallokation - und was davon ist dem Investor wirklich zurechenbar?**

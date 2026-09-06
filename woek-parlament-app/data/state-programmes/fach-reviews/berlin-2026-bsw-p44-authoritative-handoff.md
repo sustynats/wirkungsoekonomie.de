@@ -1,8 +1,8 @@
-## WÖk FACH BATCH — Berlin BSW P44: Rüstungsansiedlung / Beschäftigtenwechsel / Wirtschafts- und Haushaltsclaims — source-bound terminal review
+## WÖk FACH BATCH - Berlin BSW P44: Rüstungsansiedlung / Beschäftigtenwechsel / Wirtschafts- und Haushaltsclaims - source-bound terminal review
 
 Disjoint continuation after P43 `5458636824`. Frozen artefact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P44/66. This page contains unusually many political/causal assertions. **Programme claims are preserved as source text but are not promoted to empirical fact merely by appearing in the programme.** No DNS mapping, Recommendation, score or programme-wide judgement.
 
-### 1. U01 — compound opposition to defence-industry siting + worker-sector mobility
+### 1. U01 - compound opposition to defence-industry siting + worker-sector mobility
 
 `BE-BSW-P44-U01-A01-9fa687778f7d` combines two distinct mechanisms and must be versioned/split. Parent:
 
@@ -26,7 +26,7 @@ Create deterministic children from these exact clauses:
 
 CodeX may generate stable child IDs/hashes mechanically and attach these exact Fach decisions because the decisions are bound to the exact child clauses.
 
-### 2. U02 / U03 — heading and programme-authored factual background
+### 2. U02 / U03 - heading and programme-authored factual background
 
 #### `BE-BSW-P44-U02-493cbc0941cb`
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
@@ -36,7 +36,7 @@ CodeX may generate stable child IDs/hashes mechanically and attach these exact F
 - `terminal_fach_state = NON_EFFECT_PROGRAMME_BACKGROUND_CLAIMS_REVIEWED`
 - Exact guard: the paragraph’s company/site/conversion/employment assertions are programme-authored background claims. Preserve source/provenance, but do not make them independent effects or verified reality events unless separately checked against primary company/public records. Any later reality display must distinguish `SOURCE_CLAIM` from `VERIFIED_FACT`.
 
-### 3. U04 — economic/industrial-policy assertions are not independent measures
+### 3. U04 - economic/industrial-policy assertions are not independent measures
 
 #### `BE-BSW-P44-U04-A01-d74e723833aa`
 Source claim: increasing defence production would not counter deindustrialisation.
@@ -56,7 +56,7 @@ Source statement: need for civilian production/investment such as bridges, rail,
 - `terminal_fach_state = NON_EFFECT_CIVIL_INFRASTRUCTURE_PRIORITY_GOAL_REVIEWED`
 - Reason: broad target/priority list without an independent budget, procurement, production or project lever on this page. Concrete infrastructure investment was already assessed on P43; do not double-count this restatement.
 
-### 4. U05 / U06 — heading and Operationsplan-related source claims
+### 4. U05 / U06 - heading and Operationsplan-related source claims
 
 #### `BE-BSW-P44-U05-21465599ff1c`
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
@@ -73,7 +73,7 @@ After deterministic U01 child materialisation:
 - U01 parent: zero-count/versioned; **2 exact children, both terminal RNAA**;
 - U02/U05: structural headings terminal non-effect;
 - U03/U06: programme background/source-claim contexts terminal non-effect;
-- U04 A01–A03: causal/normative/priority claims terminal non-effect.
+- U04 A01-A03: causal/normative/priority claims terminal non-effect.
 
 No genuine P44 Fach residual remains after the two deterministic U01 children are generated and bound to the decisions above.
 

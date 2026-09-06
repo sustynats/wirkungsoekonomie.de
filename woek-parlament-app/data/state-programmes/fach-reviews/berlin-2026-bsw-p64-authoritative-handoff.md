@@ -1,4 +1,4 @@
-## WÖk FACH BATCH — Berlin BSW physical PDF page 64 complete source-bound review: digitale Souveränität, Open Source/Open Data, Repair/Lifecycle, digitale Teilhabe
+## WÖk FACH BATCH - Berlin BSW physical PDF page 64 complete source-bound review: digitale Souveränität, Open Source/Open Data, Repair/Lifecycle, digitale Teilhabe
 
 Continuation after P63 `5458958905`. Frozen artefact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P64/66. Exact frozen page inventory: 11 source units, with U01/U02/U04/U06/U08/U10 structural headings and effect-labelled units U03/U05/U07/U09/U11. Generic delegated/#313 RNAA is not Fach authority. No DNS mapping, Recommendation, score or programme-wide judgement.
 
@@ -21,11 +21,11 @@ Exact terminal non-counting headings:
 - `U08-5e95584016f1` → same
 - `U10-8b774263a676` → same
 
-## B. U03 — digitale Souveränität / FOSS / offene Standards
+## B. U03 - digitale Souveränität / FOSS / offene Standards
 
 - `A01-e31aafd557af` (`digitale Zukunft ... Menschen / Wirtschaft`) → `NON_EFFECT_DIGITAL_POLICY_GOAL_REVIEWED`.
 
-### `A02-d744b0f0c7bd` — open/standardised interfaces + formats + FOSS for technical independence
+### `A02-d744b0f0c7bd` - open/standardised interfaces + formats + FOSS for technical independence
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_DIGITAL_SOVEREIGNTY_INTEROPERABILITY_AND_VENDOR_LOCKIN_REDUCTION_POTENTIAL / MIGRATION_SECURITY_SKILLS_AND_LIFECYCLE_COST_DEPENDENT`
 - `evidence_level = HIGH_FOR_OPEN_INTERFACES_AND_PORTABILITY_TO_SWITCHING_CONTROL_MECHANISM / NET_OPERATIONAL_OUTCOME_PENDING`
@@ -36,7 +36,7 @@ Exact terminal non-counting headings:
 
 - `A03-8e5159c9ff28` (`Offene Systeme ermöglichen ... Selbstbestimmung/Transparenz/Wettbewerb/Innovation`) → `NON_EFFECT_EXPECTED_BENEFIT_CLAIM_REVIEWED`; preserve as hypothesis, not proven outcome.
 
-### `A04-e81644f6ffe2` — public funds go to systems with open source code
+### `A04-e81644f6ffe2` - public funds go to systems with open source code
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_OPEN_SOURCE_PUBLIC_PROCUREMENT_RULE / SCOPE_SUITABILITY_SECURITY_AND_COMPETITION_DEPENDENT`
 - `evidence_level = HIGH_FOR_PROCUREMENT_ELIGIBILITY_TO_MARKET_AND_CODE_ACCESS_MECHANISM / NET_VALUE_AND_SECURITY_OUTCOME_DESIGN_DEPENDENT`
@@ -45,7 +45,7 @@ Exact terminal non-counting headings:
 - Noncompensation: open code cannot compensate for insecure, inaccessible, unreliable or lifecycle-expensive systems.
 - Reality check: competition/eligible suppliers, lifecycle cost, maintainability, security, interoperability, switching ability and service quality.
 
-## C. U05 — privacy, encryption, research, transparent systems
+## C. U05 - privacy, encryption, research, transparent systems
 
 - `A01-76911b5d4f09` → `NON_EFFECT_RIGHTS_AND_ECONOMIC_OPPORTUNITY_PRINCIPLE_REVIEWED`.
 - `A02-f0ef4de552f8` → `NON_EFFECT_CAUSAL_OR_EXPECTED_OUTCOME_CLAIM_REVIEWED`; responsible protection/encryption may support trust, but the programme sentence itself is not proof of innovation/trust effects.
@@ -72,13 +72,13 @@ Generate stable child IDs mechanically from exact clause text; retain old A03 as
 
 - `A04-8c8851239a50` (`Überwachung ohne Anlass lehnen wir ab`) → `NON_EFFECT_PRIVACY_AND_PROPORTIONALITY_SAFEGUARD_REVIEWED`; no concrete surveillance law/system repeal/delta identified, but preserve as hard rights guard.
 
-## D. U07 — public/open data and funding condition
+## D. U07 - public/open data and funding condition
 
 - `A01-dc69a247dbaa` (`Daten aus öffentlicher Hand müssen allen zugutekommen`) → `NON_EFFECT_OPEN_DATA_GOAL_REVIEWED`.
 - `A02-b593e7fe130d` (`Mit Open Data schaffen wir Transparenz...`) → `NON_EFFECT_CURRENT_PATH_AND_EXPECTED_OUTCOME_CLAIM_REVIEWED`. Berlin already has statutory/Open-Data strategy infrastructure; no dataset, quality, licensing or release delta is stated here.
 - `A03-ebb364e654d0` → `NON_EFFECT_EXPECTED_USER_AND_MARKET_OUTCOME_CLAIM_REVIEWED`.
 
-### `A04-ca0e0f167505` — support public funding of digital infrastructure only if access is open to all
+### `A04-ca0e0f167505` - support public funding of digital infrastructure only if access is open to all
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_OPEN_ACCESS_AND_COMPETITION_SAFEGUARD_POTENTIAL / ACCESS_DEFINITION_CAPACITY_SECURITY_AND_FUNDING_DESIGN_DEPENDENT`
 - `evidence_level = HIGH_FOR_ELIGIBILITY_CONDITION_TO_ACCESS_RULE_MECHANISM / PARTICIPATION_AND_MARKET_OUTCOME_PENDING`
@@ -86,13 +86,13 @@ Generate stable child IDs mechanically from exact clause text; retain old A03 as
 - Omissions: infrastructure class, `offen` definition, price/technical conditions, capacity allocation, security/privacy, state-aid/procurement interaction and enforcement.
 - Reality check: eligible users/providers, access price/terms, utilisation/distribution, competition, quality/security and subsidy additionality.
 
-## E. U09 — lifecycle / repairability
+## E. U09 - lifecycle / repairability
 
 - `A01-29de93aec54e` → `NON_EFFECT_SUSTAINABILITY_REPAIRABILITY_TECH_CONTROL_PRINCIPLE_REVIEWED`.
 - `A02-e7dc6a8e11bf` (devices remain usable after support end to reduce e-waste) → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`. Current federal/EU repair obligations form a live baseline; the atom provides no product scope, security-update obligation, unlock/bootloader/firmware rule, spare-part horizon, public-procurement requirement or legal actor. Continued use after security support may also increase cyber risk; a safe delta is necessary.
 - `A03-57cf2aa45d44` → `NON_EFFECT_EXPECTED_REPAIR_MARKET_OUTCOME_CLAIM_REVIEWED`; manufacturer information/updates/open systems may enable repair markets, but no mandate/delta is stated in this atom.
 
-### `A04-d5704ee883d2` — public funds go to systems that are long-term secure, maintainable and economically efficient
+### `A04-d5704ee883d2` - public funds go to systems that are long-term secure, maintainable and economically efficient
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_LIFECYCLE_PROCUREMENT_AND_MAINTAINABILITY_POTENTIAL / METRICS_TRADEOFFS_AND_TOTAL_COST_BOUNDARY_DEPENDENT`
 - `evidence_level = HIGH_FOR_PROCUREMENT_CRITERIA_TO_ASSET_SELECTION_MECHANISM / LIFECYCLE_OUTCOME_PENDING`
@@ -100,12 +100,12 @@ Generate stable child IDs mechanically from exact clause text; retain old A03 as
 - Risks: vague scoring, vendor self-declarations, overlong legacy lock-in or higher upfront cost without use; security and maintainability can conflict with indefinite device lifetime.
 - Reality check: total cost per service-year, supported lifetime, repair/upgrade time, vulnerability exposure, downtime and replacement/e-waste.
 
-## F. U11 — digital inclusion / analogue fallback
+## F. U11 - digital inclusion / analogue fallback
 
 - `A01-89debb18e46f` → `NON_EFFECT_INCLUSIVE_DIGITALISATION_GOAL_REVIEWED`.
 - `A02-10b0d0d82062` → `NON_EFFECT_DIGITAL_ACCESS_GOAL_REVIEWED`.
 
-### `A03-14594f79efbb` — create support/access opportunities through Bürgerämter/Bürgerdienste for people without smartphone/computer
+### `A03-14594f79efbb` - create support/access opportunities through Bürgerämter/Bürgerdienste for people without smartphone/computer
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_DIGITAL_INCLUSION_AND_ASSISTED_SERVICE_ACCESS_POTENTIAL / STAFFING_PRIVACY_ACCESSIBILITY_AND_SCOPE_DEPENDENT`
 - `evidence_level = HIGH_FOR_ASSISTED_ACCESS_TO_DIGITAL_SERVICE_USE_MECHANISM / USER_OUTCOME_PENDING`
@@ -123,7 +123,7 @@ Deterministic repair required only for compound `U05-A03-26464f3bea35` into 3 ex
 
 `BE_BSW_P64_FACH_COMPLETE = PASS_SOURCE_BOUND_OBJECT_LEVEL`
 
-After lossless materialisation, protected BSW physical Fach scope becomes **P1–P64** and the untouched full-page Fach envelope becomes **P65–P66 = 2 pages**, unless newer authoritative #240 handoffs already close a subset. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open` until true residual zero.
+After lossless materialisation, protected BSW physical Fach scope becomes **P1-P64** and the untouched full-page Fach envelope becomes **P65-P66 = 2 pages**, unless newer authoritative #240 handoffs already close a subset. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open` until true residual zero.
 
 ### CodeX boundary
 

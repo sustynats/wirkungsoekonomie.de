@@ -69,10 +69,10 @@ Ein gutes Ziel ist problemadäquat und prüfbar.
 
 Erst jetzt folgt die Wirkungslogik:
 
-- **A – Auslöser:** Was wird getan oder verändert?
-- **M – Mechanismus:** Warum sollte das etwas verändern?
-- **ΔZ – Zustandsänderung:** Welcher Zustand soll sich ändern?
-- **R – Referenz:** Gegen welchen Ausgangs- oder Zielzustand wird eingeordnet?
+- **A - Auslöser:** Was wird getan oder verändert?
+- **M - Mechanismus:** Warum sollte das etwas verändern?
+- **ΔZ - Zustandsänderung:** Welcher Zustand soll sich ändern?
+- **R - Referenz:** Gegen welchen Ausgangs- oder Zielzustand wird eingeordnet?
 
 Beispiel Wärmedämmung:
 
@@ -95,7 +95,7 @@ IOOI, Results Chain oder Theory of Change können einzelne Pfadfragen gut strukt
 ## Beispiel: Weiterbildungsprogramm
 
 **Problembehauptung:** Fachkräftemangel.  
-**Problem Review:** Fehlen tatsächlich Qualifikationen – oder sind Lohn, Arbeitsbedingungen oder regionale Mobilität der Engpass?  
+**Problem Review:** Fehlen tatsächlich Qualifikationen - oder sind Lohn, Arbeitsbedingungen oder regionale Mobilität der Engpass?  
 **Goal Review:** Welche Kompetenzen bzw. Besetzungsquoten sollen sich verändern?  
 **A:** Weiterbildung.  
 **M:** Kompetenzzuwachs erhöht Passung zwischen Bewerber:innen und Stellen.  
@@ -106,10 +106,10 @@ Schon dieses einfache Beispiel zeigt: Eine Maßnahme kann sinnvoll klingen, aber
 
 ## Typische Fehlinterpretationen
 
-- „Ein politisch genanntes Problem ist damit empirisch bewiesen.“ – Nein.
-- „Ein Ziel beweist, dass die gewählte Maßnahme richtig ist.“ – Nein.
-- „Ein plausibler Mechanismus ist Kausalitätsnachweis.“ – Nein.
-- „IOOI ist die WÖk-Grundarchitektur.“ – Nein, optionale Anschlussmethode.
+- „Ein politisch genanntes Problem ist damit empirisch bewiesen.“ - Nein.
+- „Ein Ziel beweist, dass die gewählte Maßnahme richtig ist.“ - Nein.
+- „Ein plausibler Mechanismus ist Kausalitätsnachweis.“ - Nein.
+- „IOOI ist die WÖk-Grundarchitektur.“ - Nein, optionale Anschlussmethode.
 
 ## WÖk-Abgrenzung
 
@@ -117,7 +117,7 @@ Problemdefinition, Theory of Change, Evaluation und Regulatory Impact Assessment
 
 ## Quellen
 
-- GGO §§ 43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§ 43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - OECD Regulatory Policy: https://www.oecd.org/gov/regulatory-policy/
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
 

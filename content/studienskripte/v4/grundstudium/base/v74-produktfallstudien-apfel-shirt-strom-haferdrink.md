@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-„Apfel oder Banane? Baumwollshirt oder Polyester? Strom A oder B? Milch oder Hafer?“ Solche Vergleiche wirken simpel, sind es aber selten. **Die richtige Antwort hängt am Scope.** Ein regionaler Lagerapfel im Frühjahr kann anders abschneiden als ein frischer Apfel im Herbst. Strom hat je nach Erzeugungsmix andere Profile. Haferdrink und Milch unterscheiden sich je nach Rezeptur, Landwirtschaft, Ernährungskontext und funktionaler Einheit. V74 zeigt, wie man Produktvergleiche sauber baut – nicht welches Produkt immer gewinnt.
+„Apfel oder Banane? Baumwollshirt oder Polyester? Strom A oder B? Milch oder Hafer?“ Solche Vergleiche wirken simpel, sind es aber selten. **Die richtige Antwort hängt am Scope.** Ein regionaler Lagerapfel im Frühjahr kann anders abschneiden als ein frischer Apfel im Herbst. Strom hat je nach Erzeugungsmix andere Profile. Haferdrink und Milch unterscheiden sich je nach Rezeptur, Landwirtschaft, Ernährungskontext und funktionaler Einheit. V74 zeigt, wie man Produktvergleiche sauber baut - nicht welches Produkt immer gewinnt.
 
 ## Lernziele
 
@@ -172,7 +172,7 @@ Dann:
 
 Nicht:
 
-> „Haferdrink 8,7 – Milch 3,1.“
+> „Haferdrink 8,7 - Milch 3,1.“
 
 Besser:
 
@@ -234,11 +234,11 @@ Wähle einen der vier Fälle. Definiere funktionale Einheit, Archetypdaten, zwei
 
 Diese vier Beispiele sind perfekt, weil sie zeigen, wie schnell einfache Nachhaltigkeitsfragen kompliziert werden.
 
-Ist der regionale Apfel besser? Vielleicht – aber was ist mit Lagerung und Saison?
+Ist der regionale Apfel besser? Vielleicht - aber was ist mit Lagerung und Saison?
 
 Ist Baumwolle besser als Polyester? Hängt an Wasser, Chemikalien, Lebensdauer und Nutzung.
 
-Ist eine Kilowattstunde erneuerbar besser? Für viele Wirkungen oft ja – aber ein Stromsystem braucht zusätzlich Netz, Flexibilität und Versorgungssicherheit.
+Ist eine Kilowattstunde erneuerbar besser? Für viele Wirkungen oft ja - aber ein Stromsystem braucht zusätzlich Netz, Flexibilität und Versorgungssicherheit.
 
 Und Milch gegen Haferdrink? Klima und Land sind nur ein Teil; Nährstofffunktion und Rezeptur können für bestimmte Fragen wichtig sein.
 

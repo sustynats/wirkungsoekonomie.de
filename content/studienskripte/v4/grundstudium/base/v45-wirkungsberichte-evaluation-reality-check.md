@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v45-wirkungsberichte-evaluation-reality-check.md curriculum=4.0 sanitized=true -->
-# V45 · Wirkungsberichte, Evaluation und Reality Check – Rückkopplung ohne Scheinkausalität
+# V45 · Wirkungsberichte, Evaluation und Reality Check - Rückkopplung ohne Scheinkausalität
 
 **lecture_id:** `WOEK-G-BASE-045`  
 **display_code:** `V45`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Bericht zeigt, **was dokumentiert wurde**. Monitoring zeigt, **wie sich Indikatoren entwickeln**. Evaluation untersucht systematisch, **ob und warum** ein Programm seine Ziele erreicht. Der WÖk-Reality-Check verbindet die ursprüngliche Wirkannahme mit späteren Beobachtungen und fragt: Was ist eingetreten, was ist zurechenbar, welche Annahme war falsch – und was ändern wir jetzt? Wichtig: Ex-post-Wissen darf die ursprüngliche Ex-ante-Bewertung nicht heimlich überschreiben.
+Ein Bericht zeigt, **was dokumentiert wurde**. Monitoring zeigt, **wie sich Indikatoren entwickeln**. Evaluation untersucht systematisch, **ob und warum** ein Programm seine Ziele erreicht. Der WÖk-Reality-Check verbindet die ursprüngliche Wirkannahme mit späteren Beobachtungen und fragt: Was ist eingetreten, was ist zurechenbar, welche Annahme war falsch - und was ändern wir jetzt? Wichtig: Ex-post-Wissen darf die ursprüngliche Ex-ante-Bewertung nicht heimlich überschreiben.
 
 ## Lernziele
 
@@ -42,7 +42,7 @@ Unterstützt Steuerung durch Soll-Ist-Vergleiche, Kennzahlen und Abweichungsanal
 
 ### Evaluation
 
-Untersucht systematisch Relevanz, Umsetzung, Zielerreichung und – je nach Design – Kausalität/Wirkung.
+Untersucht systematisch Relevanz, Umsetzung, Zielerreichung und - je nach Design - Kausalität/Wirkung.
 
 ### Reality Check
 
@@ -292,7 +292,7 @@ Reporting sagt: Das haben wir gemacht und dokumentiert.
 
 Monitoring sagt: So entwickeln sich unsere Indikatoren.
 
-Evaluation fragt: Haben wir unsere Ziele erreicht – und soweit möglich: warum?
+Evaluation fragt: Haben wir unsere Ziele erreicht - und soweit möglich: warum?
 
 Und der WÖk-Reality-Check verbindet das alles mit der ursprünglichen Wirkannahme.
 
@@ -322,4 +322,4 @@ Er ist institutionelles Lernen.
 
 Und die vielleicht wichtigste Regel lautet:
 
-**Wenn neue Evidenz unsere WÖk-Annahme widerlegt, ändern wir die WÖk – nicht die Realität.**
+**Wenn neue Evidenz unsere WÖk-Annahme widerlegt, ändern wir die WÖk - nicht die Realität.**

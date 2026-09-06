@@ -1,4 +1,4 @@
-# Berlin SPD P23 — lossless source-bound materialisation
+# Berlin SPD P23 - lossless source-bound materialisation
 
 Fresh clean branch base: `1db5d993bd7149c3c09993bf346f66d6c587a7ee`, the merged MV SPD P55 transaction (#368). No old dirty-worktree changes were imported. This lane follows #241/5540520103 and the P55 closeout #241/5541530345.
 
@@ -18,7 +18,7 @@ The materialiser enumerates only the supplied clauses and role decisions, withou
 
 | Set | Cardinality |
 | --- | ---: |
-| Source units SU0266–SU0280 | 15 |
+| Source units SU0266-SU0280 | 15 |
 | Original atoms | 39 |
 | Exact deterministic children | 20 |
 | All terminal records including containers/version parents | 74 |
@@ -35,7 +35,7 @@ Reasons are the exact supplied prose or the explicitly supplied object-specific 
 
 ## Set-wise residual and preservation
 
-P1–P22 protection is unchanged. The source-order set difference removes P23 and consumes cross-page `SU0280` exactly once. The first remaining canonical source unit is `BE-SPD-2026-SU-0281` on physical P24, not a guessed page increment. The remaining SPD page-envelope set is P24–P66 (43). No SU0281+ Fach was authored or materialised.
+P1-P22 protection is unchanged. The source-order set difference removes P23 and consumes cross-page `SU0280` exactly once. The first remaining canonical source unit is `BE-SPD-2026-SU-0281` on physical P24, not a guessed page increment. The remaining SPD page-envelope set is P24-P66 (43). No SU0281+ Fach was authored or materialised.
 
 Berlin remains 4/12 programme-terminal: BSW, DKP, Die PARTEI, SGP. Its residual is 1,192 page review envelopes; the total number of still-unsegmented effect objects remains unknown, not zero. SPD and Berlin are not programme-terminal.
 

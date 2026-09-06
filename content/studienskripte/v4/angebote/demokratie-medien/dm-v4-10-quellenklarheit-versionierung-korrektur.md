@@ -65,7 +65,7 @@ Baue für einen korrigierten Artikel eine Versionstabelle mit Quelle, Stand, Än
 Source Trail, Version Delta, Korrekturarten, Hindsight Guard.
 
 ## Zusammenfassung
-Korrekturfähigkeit ist Medienqualität – und ihre Wirkung bleibt prüfbar statt behauptet.
+Korrekturfähigkeit ist Medienqualität - und ihre Wirkung bleibt prüfbar statt behauptet.
 
 ## Sprechertext
 Vertrauen entsteht nicht dadurch, nie Fehler zuzugeben. Im Gegenteil: Ein sichtbarer Korrekturweg zeigt, dass ein System lernen kann. Genau deshalb gehört Versionierung zur Wirkungskompetenz.

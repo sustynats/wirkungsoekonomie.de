@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v44-oeffentliche-beschaffung-transformationshebel.md curriculum=4.0 sanitized=true -->
-# V44 · Öffentliche Beschaffung als Transformationshebel – Recht, Wirkung und Lebenszyklus
+# V44 · Öffentliche Beschaffung als Transformationshebel - Recht, Wirkung und Lebenszyklus
 
 **lecture_id:** `WOEK-G-BASE-044`  
 **display_code:** `V44`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Der Staat kauft jedes Jahr riesige Mengen an Bauleistungen, Fahrzeugen, IT, Lebensmitteln und Dienstleistungen. Vergaberecht erlaubt ausdrücklich, soziale und umweltbezogene Aspekte zu berücksichtigen. Nachhaltige Beschaffung ist also keine WÖk-Erfindung. Die WÖk ergänzt: **Welche Beschaffungsanforderung verändert über welchen Marktmechanismus welchen Zustand – und welche Nebenwirkungen, Lieferkettenrisiken, Lebenszykluskosten und Verteilungseffekte entstehen?**
+Der Staat kauft jedes Jahr riesige Mengen an Bauleistungen, Fahrzeugen, IT, Lebensmitteln und Dienstleistungen. Vergaberecht erlaubt ausdrücklich, soziale und umweltbezogene Aspekte zu berücksichtigen. Nachhaltige Beschaffung ist also keine WÖk-Erfindung. Die WÖk ergänzt: **Welche Beschaffungsanforderung verändert über welchen Marktmechanismus welchen Zustand - und welche Nebenwirkungen, Lieferkettenrisiken, Lebenszykluskosten und Verteilungseffekte entstehen?**
 
 ## Lernziele
 
@@ -183,7 +183,7 @@ WÖk prüft:
 - Restwert,
 - Netz-/Betriebsresilienz.
 
-Zuschlagskriterien sollten die tatsächlich relevanten State Variables abbilden – nicht bloß „grün“ heißen.
+Zuschlagskriterien sollten die tatsächlich relevanten State Variables abbilden - nicht bloß „grün“ heißen.
 
 ## 9. Reality Check nach Zuschlag
 

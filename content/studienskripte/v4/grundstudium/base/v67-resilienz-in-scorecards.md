@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v67-resilienz-in-scorecards.md curriculum=4.0 sanitized=true -->
-# V67 · Resilienz in Scorecards integrieren – Kapazitäten, Schwellen und Erholungsfähigkeit
+# V67 · Resilienz in Scorecards integrieren - Kapazitäten, Schwellen und Erholungsfähigkeit
 
 **lecture_id:** `WOEK-G-BASE-067`  
 **display_code:** `V67`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein System kann heute effizient aussehen und morgen beim ersten Schock ausfallen. **Resilienz** fragt deshalb nicht nur nach Durchschnittsleistung, sondern nach Robustheit, Redundanz, Diversität, Anpassungs- und Erholungsfähigkeit. In WÖk wird Resilienz nicht als mystische Bonuszahl vergeben. Wir definieren konkrete State Variables – zum Beispiel Reservekapazität, Konzentration, Wiederherstellungszeit oder Anpassungsfähigkeit – und beobachten sie mit passenden Indikatoren.
+Ein System kann heute effizient aussehen und morgen beim ersten Schock ausfallen. **Resilienz** fragt deshalb nicht nur nach Durchschnittsleistung, sondern nach Robustheit, Redundanz, Diversität, Anpassungs- und Erholungsfähigkeit. In WÖk wird Resilienz nicht als mystische Bonuszahl vergeben. Wir definieren konkrete State Variables - zum Beispiel Reservekapazität, Konzentration, Wiederherstellungszeit oder Anpassungsfähigkeit - und beobachten sie mit passenden Indikatoren.
 
 ## Lernziele
 
@@ -105,7 +105,7 @@ Darum braucht Resilienz mindestens:
 
 Resilienz kann nicht linear sein.
 
-Bis zu einer Belastung funktioniert ein System fast normal – dann bricht es abrupt ein.
+Bis zu einer Belastung funktioniert ein System fast normal - dann bricht es abrupt ein.
 
 Beispiele:
 
@@ -131,7 +131,7 @@ Aber Redundanz ist nicht kostenlos.
 
 WÖk prüft:
 
-> Welche zusätzliche Reserve reduziert welches Risiko – und zu welchen laufenden Kosten/Wirkungen?
+> Welche zusätzliche Reserve reduziert welches Risiko - und zu welchen laufenden Kosten/Wirkungen?
 
 Resilienz ist also kein Freibrief für ineffiziente Überkapazität.
 
@@ -214,7 +214,7 @@ Resilienzforschung und Katastrophenrisikomanagement existieren lange. WÖk ergä
 
 ## 13. Quellen
 
-- UNDRR Terminology – Resilience: https://www.undrr.org/terminology/resilience
+- UNDRR Terminology - Resilience: https://www.undrr.org/terminology/resilience
 - OECD resilience / strategic foresight context: https://www.oecd.org/strategic-foresight/
 - WÖk Referenz: https://wirkungsoekonomie.de/referenz/
 - WÖk Resilienz-Dossier: https://wirkungsoekonomie.de/wissen/systemresilienz-statt-nachhaltigkeit/
@@ -243,7 +243,7 @@ Definiere fünf Resilienz-State-Variables und dazu:
 
 ## 17. Sprechertext
 
-Ein System kann heute perfekt effizient sein – und morgen beim ersten Schock zusammenbrechen.
+Ein System kann heute perfekt effizient sein - und morgen beim ersten Schock zusammenbrechen.
 
 Genau dafür brauchen wir Resilienz.
 
@@ -259,7 +259,7 @@ Und Zeit ist entscheidend.
 
 Ein Stromausfall von zehn Minuten ist etwas anderes als drei Wochen.
 
-Genauso wichtig sind Schwellen. Manche Systeme wirken lange stabil – und kippen dann plötzlich.
+Genauso wichtig sind Schwellen. Manche Systeme wirken lange stabil - und kippen dann plötzlich.
 
 Aber auch Resilienz ist nicht automatisch gut.
 
@@ -269,4 +269,4 @@ Darum kombinieren wir Resilienzprofil und Wirkungsprofil.
 
 Die Frage lautet nicht: Wie viel Reserve können wir maximal bauen?
 
-Sondern: **Welche Kapazität brauchen wir, damit das System unter realistischen Störungen funktioniert – ohne an anderer Stelle unnötig neue Schäden zu erzeugen?**
+Sondern: **Welche Kapazität brauchen wir, damit das System unter realistischen Störungen funktioniert - ohne an anderer Stelle unnötig neue Schäden zu erzeugen?**

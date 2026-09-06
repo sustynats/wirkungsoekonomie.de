@@ -26,7 +26,7 @@ story.append(P('Quellenstand: 6. September 2026. Links in dieser PDF sind anklic
 def footer(c,d):
  c.setFont('Base',8);c.setFillColor(colors.HexColor('#215e45'));c.drawString(48,29,'Wirkungsökonomie | Fachhinweis 06.09.2026');c.drawRightString(A4[0]-48,29,str(d.page))
 name='woek-staatliche-wirkungspruefung-fachhinweis-2026-09-06.pdf';file=OUT/name
-SimpleDocTemplate(str(file),pagesize=A4,topMargin=48,bottomMargin=57,leftMargin=48,rightMargin=48,title=data['title'],author='Wirkungsökonomie',invariant=1).build(story,onFirstPage=footer,onLaterPages=footer)
+SimpleDocTemplate(str(file),pagesize=A4,topMargin=48,bottomMargin=57,leftMargin=48,rightMargin=48,title=data['title'],author='Natalie Weber',creator='Natalie Weber',invariant=1).build(story,onFirstPage=footer,onLaterPages=footer)
 hash=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 manifest={'date':data['date'],'releaseTag':'woek-fachhinweis-staatliche-pruefung-2026-09-06','sourceHashes':{s:hash(ROOT/s) for s in [source,'scripts/publications/build-state-benchmark-update.py']},'files':[{'filename':name,'title':data['title'],'kind':'addendum','url':'https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-fachhinweis-staatliche-pruefung-2026-09-06/'+name,'sha256':hash(file),'bytes':file.stat().st_size,'pages':len(PdfReader(file).pages)}]}
 (ROOT/'assets/data/state-benchmark-edition-2026-09-06.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');print(manifest['files'][0])

@@ -1,4 +1,4 @@
-# Vollständige Fachakte – coalition-2025-cdu-csu-spd
+# Vollständige Fachakte - coalition-2025-cdu-csu-spd
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -19,7 +19,7 @@
 
 **review_status:** COMPLETE
 
-**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Verantwortung für Deutschland – Koalitionsvertrag für die 21. Legislaturperiode. Alle 347 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
+**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Verantwortung für Deutschland - Koalitionsvertrag für die 21. Legislaturperiode. Alle 347 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
 
 ### source_summary
 
@@ -31,7 +31,7 @@
 - Beispiel: mit Investitionen 56 in die Infrastruktur dafür sorgen, dass die Bahn wieder … / In diesem Geiste wollen wir Stabilität 81 garantieren, neue Zuversicht stiften und …
 - Beispiel: einen funktionierenden, 55 handlungsfähigen Staat, der digitaler und effizienter als bisher arbeitet / Das ist auch jetzt unser Anspruch
 - Beispiel: einen Deutschlandfonds 111 einrichten / Industrienation und 87 Mittelstandsland bleiben, KI- und Gründer-Nation werden und die Weichen …
-- Beispiel: Die konkreten Investmententscheidungen werden in einer 118 unternehmerischen Governance getroffen, der Investmentfokus … / Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken – 90 kreative …
+- Beispiel: Die konkreten Investmententscheidungen werden in einer 118 unternehmerischen Governance getroffen, der Investmentfokus … / Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken - 90 kreative …
 
 #### material_policy_domains
 
@@ -1555,7 +1555,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Die konkreten Investmententscheidungen werden in einer 118 unternehmerischen Governance getroffen, der Investmentfokus … / Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken – 90 kreative …
+**measure:** Die konkreten Investmententscheidungen werden in einer 118 unternehmerischen Governance getroffen, der Investmentfokus … / Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken - 90 kreative …
 
 ##### decision_readiness
 
@@ -1887,7 +1887,7 @@ _Leere Liste._
 
 **page:** 6
 
-**text:** Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken – 90 kreative Unternehmerinnen und Unternehmer sowie engagierte Arbeitnehmerinnen und 91 Arbeitnehmer – werden wir den Standort Deutschland nach vorne bringen, durch strukturelle 92 Reformen Wachstumskräfte freisetzen und den Wohlstand für alle mehren. 93 Hierzu werden wir unter anderem Investitionen, Innovationen und Wettbewerb fördern, Steuern, 94 Abgaben und Energiepreise senken, Arbeitsanreize verbessern, die Dekarbonisierung unterstützen, 95 Bürokratie zurückbauen und eine aktive Handelspolitik betreiben.
+**text:** Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken - 90 kreative Unternehmerinnen und Unternehmer sowie engagierte Arbeitnehmerinnen und 91 Arbeitnehmer - werden wir den Standort Deutschland nach vorne bringen, durch strukturelle 92 Reformen Wachstumskräfte freisetzen und den Wohlstand für alle mehren. 93 Hierzu werden wir unter anderem Investitionen, Innovationen und Wettbewerb fördern, Steuern, 94 Abgaben und Energiepreise senken, Arbeitsanreize verbessern, die Dekarbonisierung unterstützen, 95 Bürokratie zurückbauen und eine aktive Handelspolitik betreiben.
 
 **match_score:** 70.1
 
@@ -1932,7 +1932,7 @@ _Leere Liste._
 
 **source_page:** 6
 
-**source_text:** Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken – 90 kreative Unternehmerinnen und Unternehmer sowie engagierte Arbeitnehmerinnen und 91 Arbeitnehmer – werden wir den Standort Deutschland nach vorne bringen, durch strukturelle 92 Reformen Wachstumskräfte freisetzen und den Wohlstand für alle mehren. 93 Hierzu werden wir unter anderem Investitionen, Innovationen und Wettbewerb fördern, Steuern, 94 Abgaben und Energiepreise senken, Arbeitsanreize verbessern, die Dekarbonisierung unterstützen, 95 Bürokratie zurückbauen und eine aktive Handelspolitik betreiben.
+**source_text:** Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken - 90 kreative Unternehmerinnen und Unternehmer sowie engagierte Arbeitnehmerinnen und 91 Arbeitnehmer - werden wir den Standort Deutschland nach vorne bringen, durch strukturelle 92 Reformen Wachstumskräfte freisetzen und den Wohlstand für alle mehren. 93 Hierzu werden wir unter anderem Investitionen, Innovationen und Wettbewerb fördern, Steuern, 94 Abgaben und Energiepreise senken, Arbeitsanreize verbessern, die Dekarbonisierung unterstützen, 95 Bürokratie zurückbauen und eine aktive Handelspolitik betreiben.
 
 **topic:** ECONOMY_INDUSTRY_TRADE
 
@@ -1945,9 +1945,9 @@ _Leere Liste._
 - Umfang/Schwellenwert der Maßnahme
 - Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz
 
-**measure:** Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken – 90 kreative …
+**measure:** Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken - 90 kreative …
 
-**intended_change:** Vorgesehene Veränderung: Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken – 90 kreative Unternehmerinnen und Unternehmer sowie engagierte Arbeitnehmerinnen und 91 Arbeitnehmer – werden wir den Standort Deutschland nach vorne bringen, durch strukturelle 92 Reformen Wachstumskräfte freisetzen und den Wohlstand für alle mehren. 93 Hierzu werden wir unter anderem Investitionen, Innovationen und Wettbewerb fördern, Steuern, 94 Abgaben und Energiepreise senken, Arbeitsanreize verbessern, die Dekarbonisierung unterstützen, 95 Bürokratie zurückbauen und eine aktive Handelspolitik betreiben.
+**intended_change:** Vorgesehene Veränderung: Mit den Prinzipien der Sozialen Marktwirtschaft und unseren Stärken - 90 kreative Unternehmerinnen und Unternehmer sowie engagierte Arbeitnehmerinnen und 91 Arbeitnehmer - werden wir den Standort Deutschland nach vorne bringen, durch strukturelle 92 Reformen Wachstumskräfte freisetzen und den Wohlstand für alle mehren. 93 Hierzu werden wir unter anderem Investitionen, Innovationen und Wettbewerb fördern, Steuern, 94 Abgaben und Energiepreise senken, Arbeitsanreize verbessern, die Dekarbonisierung unterstützen, 95 Bürokratie zurückbauen und eine aktive Handelspolitik betreiben.
 
 
 ##### component_topics
@@ -13078,7 +13078,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Die 319 Weiterentwicklung des Wettbewerbs- und Kartellrechts ist maßgeblich für die internationale … / Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten – insbesondere mit …
+**measure:** Die 319 Weiterentwicklung des Wettbewerbs- und Kartellrechts ist maßgeblich für die internationale … / Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten - insbesondere mit …
 
 ##### decision_readiness
 
@@ -13441,7 +13441,7 @@ _Leere Liste._
 
 **page:** 60
 
-**text:** Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten – insbesondere mit Künstlicher 1861 Intelligenz.
+**text:** Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten - insbesondere mit Künstlicher 1861 Intelligenz.
 
 **match_score:** 72.1
 
@@ -13486,7 +13486,7 @@ _Leere Liste._
 
 **source_page:** 60
 
-**source_text:** Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten – insbesondere mit Künstlicher 1861 Intelligenz.
+**source_text:** Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten - insbesondere mit Künstlicher 1861 Intelligenz.
 
 **topic:** MOBILITY_INFRASTRUCTURE
 
@@ -13498,9 +13498,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten – insbesondere mit …
+**measure:** Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten - insbesondere mit …
 
-**intended_change:** Vorgesehene Veränderung: Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten – insbesondere mit Künstlicher 1861 Intelligenz.
+**intended_change:** Vorgesehene Veränderung: Verwaltungsprozesse 1860 werden wir automatisieren, beschleunigen und effizienter gestalten - insbesondere mit Künstlicher 1861 Intelligenz.
 
 
 ##### component_topics
@@ -16200,7 +16200,7 @@ _Leere Liste._
 
 **top_score:** 69.0
 
-**input_register_text:** Wir wollen mern – auch aus Drittländern – eingehalten werden Investitionsstau in den Bildungsstätten mit den müssen.
+**input_register_text:** Wir wollen mern - auch aus Drittländern - eingehalten werden Investitionsstau in den Bildungsstätten mit den müssen.
 
 ##### source_components
 
@@ -16321,7 +16321,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Aussagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Fachkräfteeinwanderung – „Work-and-stay-Agentur“ – mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für … / die Insolvenzabsicherung von Pauschalreisen durch den Reisesicherungsfonds unter Wahrung des
+**measure:** Fachkräfteeinwanderung - „Work-and-stay-Agentur“ - mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für … / die Insolvenzabsicherung von Pauschalreisen durch den Reisesicherungsfonds unter Wahrung des
 
 ##### decision_readiness
 
@@ -16622,7 +16622,7 @@ _Leere Liste._
 
 **page:** 16
 
-**text:** Fachkräfteeinwanderung – „Work-and-stay-Agentur“ – mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für ausländische Fachkräfte. Die Agentur bündelt und beschleunigt unter anderem
+**text:** Fachkräfteeinwanderung - „Work-and-stay-Agentur“ - mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für ausländische Fachkräfte. Die Agentur bündelt und beschleunigt unter anderem
 
 **match_score:** 67.6
 
@@ -16653,7 +16653,7 @@ _Leere Liste._
 
 **source_page:** 16
 
-**source_text:** Fachkräfteeinwanderung – „Work-and-stay-Agentur“ – mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für ausländische Fachkräfte. Die Agentur bündelt und beschleunigt unter anderem
+**source_text:** Fachkräfteeinwanderung - „Work-and-stay-Agentur“ - mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für ausländische Fachkräfte. Die Agentur bündelt und beschleunigt unter anderem
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -16665,9 +16665,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Fachkräfteeinwanderung – „Work-and-stay-Agentur“ – mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für …
+**measure:** Fachkräfteeinwanderung - „Work-and-stay-Agentur“ - mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für …
 
-**intended_change:** Vorgesehene Veränderung: Fachkräfteeinwanderung – „Work-and-stay-Agentur“ – mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für ausländische Fachkräfte. Die Agentur bündelt und beschleunigt unter anderem
+**intended_change:** Vorgesehene Veränderung: Fachkräfteeinwanderung - „Work-and-stay-Agentur“ - mit einer zentralen IT-Plattform als einheitliche Ansprechpartnerin für ausländische Fachkräfte. Die Agentur bündelt und beschleunigt unter anderem
 
 ###### Eintrag 2
 
@@ -24060,7 +24060,7 @@ _Leere Liste._
 
 **page:** 20
 
-**text:** Beschäftigte und Unternehmen wünschen sich mehr Flexibilität. 557 Deshalb wollen wir im Einklang mit der europäischen Arbeitszeitrichtlinie die Möglichkeit einer 558 wöchentlichen anstatt einer täglichen Höchstarbeitszeit schaffen – auch und gerade im Sinne einer 559 besseren Vereinbarkeit von Familie und Beruf.
+**text:** Beschäftigte und Unternehmen wünschen sich mehr Flexibilität. 557 Deshalb wollen wir im Einklang mit der europäischen Arbeitszeitrichtlinie die Möglichkeit einer 558 wöchentlichen anstatt einer täglichen Höchstarbeitszeit schaffen - auch und gerade im Sinne einer 559 besseren Vereinbarkeit von Familie und Beruf.
 
 **match_score:** 70.1
 
@@ -24105,7 +24105,7 @@ _Leere Liste._
 
 **source_page:** 20
 
-**source_text:** Beschäftigte und Unternehmen wünschen sich mehr Flexibilität. 557 Deshalb wollen wir im Einklang mit der europäischen Arbeitszeitrichtlinie die Möglichkeit einer 558 wöchentlichen anstatt einer täglichen Höchstarbeitszeit schaffen – auch und gerade im Sinne einer 559 besseren Vereinbarkeit von Familie und Beruf.
+**source_text:** Beschäftigte und Unternehmen wünschen sich mehr Flexibilität. 557 Deshalb wollen wir im Einklang mit der europäischen Arbeitszeitrichtlinie die Möglichkeit einer 558 wöchentlichen anstatt einer täglichen Höchstarbeitszeit schaffen - auch und gerade im Sinne einer 559 besseren Vereinbarkeit von Familie und Beruf.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -24119,7 +24119,7 @@ _Leere Liste._
 
 **measure:** Beschäftigte und Unternehmen wünschen sich mehr Flexibilität
 
-**intended_change:** Vorgesehene Veränderung: Beschäftigte und Unternehmen wünschen sich mehr Flexibilität. 557 Deshalb wollen wir im Einklang mit der europäischen Arbeitszeitrichtlinie die Möglichkeit einer 558 wöchentlichen anstatt einer täglichen Höchstarbeitszeit schaffen – auch und gerade im Sinne einer 559 besseren Vereinbarkeit von Familie und Beruf.
+**intended_change:** Vorgesehene Veränderung: Beschäftigte und Unternehmen wünschen sich mehr Flexibilität. 557 Deshalb wollen wir im Einklang mit der europäischen Arbeitszeitrichtlinie die Möglichkeit einer 558 wöchentlichen anstatt einer täglichen Höchstarbeitszeit schaffen - auch und gerade im Sinne einer 559 besseren Vereinbarkeit von Familie und Beruf.
 
 
 ##### component_topics
@@ -30760,7 +30760,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Wir 661 werden den Berufsbildungsbereich stärker auf den Arbeitsmarkt ausrichten, den Nachteilsausgleich … / die Mütterrente mit 635 drei Rentenpunkten für alle vollenden – unabhängig vom …
+**measure:** Wir 661 werden den Berufsbildungsbereich stärker auf den Arbeitsmarkt ausrichten, den Nachteilsausgleich … / die Mütterrente mit 635 drei Rentenpunkten für alle vollenden - unabhängig vom …
 
 ##### decision_readiness
 
@@ -31075,7 +31075,7 @@ _Leere Liste._
 
 **page:** 22
 
-**text:** Wir werden die Mütterrente mit 635 drei Rentenpunkten für alle vollenden – unabhängig vom Geburtsjahr der Kinder –, um gleiche 636 Wertschätzung und Anerkennung für alle Mütter zu gewährleisten.
+**text:** Wir werden die Mütterrente mit 635 drei Rentenpunkten für alle vollenden - unabhängig vom Geburtsjahr der Kinder -, um gleiche 636 Wertschätzung und Anerkennung für alle Mütter zu gewährleisten.
 
 **match_score:** 71.8
 
@@ -31088,7 +31088,7 @@ _Leere Liste._
 
 **top_score:** 80.4
 
-**input_register_text:** Wir werden die auf den Arbeitsmarkt ausrichten, den Nachteils- Mütterrente mit drei Rentenpunkten für alle voll- ausgleich auch bei Übergängen erhalten und das enden – unabhängig vom Geburtsjahr der Kinder Budget für Arbeit attraktiver machen.
+**input_register_text:** Wir werden die auf den Arbeitsmarkt ausrichten, den Nachteils- Mütterrente mit drei Rentenpunkten für alle voll- ausgleich auch bei Übergängen erhalten und das enden - unabhängig vom Geburtsjahr der Kinder Budget für Arbeit attraktiver machen.
 
 ##### source_components
 
@@ -31120,7 +31120,7 @@ _Leere Liste._
 
 **source_page:** 22
 
-**source_text:** Wir werden die Mütterrente mit 635 drei Rentenpunkten für alle vollenden – unabhängig vom Geburtsjahr der Kinder –, um gleiche 636 Wertschätzung und Anerkennung für alle Mütter zu gewährleisten.
+**source_text:** Wir werden die Mütterrente mit 635 drei Rentenpunkten für alle vollenden - unabhängig vom Geburtsjahr der Kinder -, um gleiche 636 Wertschätzung und Anerkennung für alle Mütter zu gewährleisten.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -31132,9 +31132,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** die Mütterrente mit 635 drei Rentenpunkten für alle vollenden – unabhängig vom …
+**measure:** die Mütterrente mit 635 drei Rentenpunkten für alle vollenden - unabhängig vom …
 
-**intended_change:** Vorgesehene Veränderung: Wir werden die Mütterrente mit 635 drei Rentenpunkten für alle vollenden – unabhängig vom Geburtsjahr der Kinder –, um gleiche 636 Wertschätzung und Anerkennung für alle Mütter zu gewährleisten.
+**intended_change:** Vorgesehene Veränderung: Wir werden die Mütterrente mit 635 drei Rentenpunkten für alle vollenden - unabhängig vom Geburtsjahr der Kinder -, um gleiche 636 Wertschätzung und Anerkennung für alle Mütter zu gewährleisten.
 
 
 ##### component_topics
@@ -62185,7 +62185,7 @@ _Leere Liste._
 
 **top_score:** 75.6
 
-**input_register_text:** Wir setzen uns für die Weiterentwicklung der europäischen Spar- und Investitionsunion be- Grundsätze der Haushaltspolitik – Solide Hausziehungsweise Banken- und Kapitalmarktunion haltspolitik und allgemeiner Haushaltsvorbehalt ein, um die Wachstumsfinanzierung in Europa zu für den gesamten Koalitionsvertrag stärken und einen einheitlichen Finanzmarkt zu schaffen.
+**input_register_text:** Wir setzen uns für die Weiterentwicklung der europäischen Spar- und Investitionsunion be- Grundsätze der Haushaltspolitik - Solide Hausziehungsweise Banken- und Kapitalmarktunion haltspolitik und allgemeiner Haushaltsvorbehalt ein, um die Wachstumsfinanzierung in Europa zu für den gesamten Koalitionsvertrag stärken und einen einheitlichen Finanzmarkt zu schaffen.
 
 ##### source_components
 
@@ -75481,7 +75481,7 @@ _Leere Liste._
 
 **source_location:** Wirkungsvolle Entlastungen, stabile Finanzen, leistungsfähiger Staat
 
-**intended_change:** Vorgesehene Veränderung: Wir werden die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel gegen Entscheidungen der Vergabekammern zu den 2085 Oberlandesgerichten entfällt. 2086 Once-Only – keine Mehrfacherhebung von Daten 2087 Für uns gilt der „Once-Only“-Grundsatz.
+**intended_change:** Vorgesehene Veränderung: Wir werden die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel gegen Entscheidungen der Vergabekammern zu den 2085 Oberlandesgerichten entfällt. 2086 Once-Only - keine Mehrfacherhebung von Daten 2087 Für uns gilt der „Once-Only“-Grundsatz.
 
 **measure:** die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel …
 
@@ -75709,7 +75709,7 @@ _Leere Liste._
 
 **page:** 67
 
-**text:** Wir werden die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel gegen Entscheidungen der Vergabekammern zu den 2085 Oberlandesgerichten entfällt. 2086 Once-Only – keine Mehrfacherhebung von Daten 2087 Für uns gilt der „Once-Only“-Grundsatz.
+**text:** Wir werden die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel gegen Entscheidungen der Vergabekammern zu den 2085 Oberlandesgerichten entfällt. 2086 Once-Only - keine Mehrfacherhebung von Daten 2087 Für uns gilt der „Once-Only“-Grundsatz.
 
 **match_score:** 92.5
 
@@ -75722,7 +75722,7 @@ _Leere Liste._
 
 **top_score:** 92.5
 
-**input_register_text:** Wir werden die Vergabe strategisches Beschaffungsmanagement öffentlicher Aufträge beschleunigen, indem die aufschiebende Wirkung der Rechtsmittel gegen Wir werden uns dafür einsetzen, das Vergaberecht Entscheidungen der Vergabekammern zu den auf nationaler und europäischer Ebene für Liefe- Oberlandesgerichten entfällt. rungen und Leistungen aller Art für Bund, Länder und Kommunen zu vereinfachen, zu beschleunigen Once-Only – keine Mehrfacherhebung von Daten und zu digitalisieren.
+**input_register_text:** Wir werden die Vergabe strategisches Beschaffungsmanagement öffentlicher Aufträge beschleunigen, indem die aufschiebende Wirkung der Rechtsmittel gegen Wir werden uns dafür einsetzen, das Vergaberecht Entscheidungen der Vergabekammern zu den auf nationaler und europäischer Ebene für Liefe- Oberlandesgerichten entfällt. rungen und Leistungen aller Art für Bund, Länder und Kommunen zu vereinfachen, zu beschleunigen Once-Only - keine Mehrfacherhebung von Daten und zu digitalisieren.
 
 ##### source_components
 
@@ -75732,7 +75732,7 @@ _Leere Liste._
 
 **source_page:** 67
 
-**source_text:** Wir werden die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel gegen Entscheidungen der Vergabekammern zu den 2085 Oberlandesgerichten entfällt. 2086 Once-Only – keine Mehrfacherhebung von Daten 2087 Für uns gilt der „Once-Only“-Grundsatz.
+**source_text:** Wir werden die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel gegen Entscheidungen der Vergabekammern zu den 2085 Oberlandesgerichten entfällt. 2086 Once-Only - keine Mehrfacherhebung von Daten 2087 Für uns gilt der „Once-Only“-Grundsatz.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -75746,7 +75746,7 @@ _Leere Liste._
 
 **measure:** die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel …
 
-**intended_change:** Vorgesehene Veränderung: Wir werden die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel gegen Entscheidungen der Vergabekammern zu den 2085 Oberlandesgerichten entfällt. 2086 Once-Only – keine Mehrfacherhebung von Daten 2087 Für uns gilt der „Once-Only“-Grundsatz.
+**intended_change:** Vorgesehene Veränderung: Wir werden die Vergabe öffentlicher Aufträge beschleunigen, indem die 2084 aufschiebende Wirkung der Rechtsmittel gegen Entscheidungen der Vergabekammern zu den 2085 Oberlandesgerichten entfällt. 2086 Once-Only - keine Mehrfacherhebung von Daten 2087 Für uns gilt der „Once-Only“-Grundsatz.
 
 
 ##### component_topics
@@ -79622,7 +79622,7 @@ _Leere Liste._
 
 **source_location:** Wirkungsvolle Entlastungen, stabile Finanzen, leistungsfähiger Staat
 
-**intended_change:** Vorgesehene Veränderung: Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene für eine Berücksichtigung aller berechtigten Interessen ein. 2223 Gesellschaft – digital kompetent, selbstbestimmt und inklusiv 2224 Der souveräne, sichere und kritische Umgang mit digitalen Tools und Medien steigert die Resilienz 2225 unserer Gesellschaft, die Wehrhaftigkeit unserer Demokratie und die Wettbewerbsfähigkeit unserer 2226 Wirtschaft.
+**intended_change:** Vorgesehene Veränderung: Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene für eine Berücksichtigung aller berechtigten Interessen ein. 2223 Gesellschaft - digital kompetent, selbstbestimmt und inklusiv 2224 Der souveräne, sichere und kritische Umgang mit digitalen Tools und Medien steigert die Resilienz 2225 unserer Gesellschaft, die Wehrhaftigkeit unserer Demokratie und die Wettbewerbsfähigkeit unserer 2226 Wirtschaft.
 
 **measure:** Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene …
 
@@ -79816,7 +79816,7 @@ _Leere Liste._
 
 **page:** 71
 
-**text:** Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene für eine Berücksichtigung aller berechtigten Interessen ein. 2223 Gesellschaft – digital kompetent, selbstbestimmt und inklusiv 2224 Der souveräne, sichere und kritische Umgang mit digitalen Tools und Medien steigert die Resilienz 2225 unserer Gesellschaft, die Wehrhaftigkeit unserer Demokratie und die Wettbewerbsfähigkeit unserer 2226 Wirtschaft.
+**text:** Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene für eine Berücksichtigung aller berechtigten Interessen ein. 2223 Gesellschaft - digital kompetent, selbstbestimmt und inklusiv 2224 Der souveräne, sichere und kritische Umgang mit digitalen Tools und Medien steigert die Resilienz 2225 unserer Gesellschaft, die Wehrhaftigkeit unserer Demokratie und die Wettbewerbsfähigkeit unserer 2226 Wirtschaft.
 
 **match_score:** 76.6
 
@@ -79839,7 +79839,7 @@ _Leere Liste._
 
 **source_page:** 71
 
-**source_text:** Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene für eine Berücksichtigung aller berechtigten Interessen ein. 2223 Gesellschaft – digital kompetent, selbstbestimmt und inklusiv 2224 Der souveräne, sichere und kritische Umgang mit digitalen Tools und Medien steigert die Resilienz 2225 unserer Gesellschaft, die Wehrhaftigkeit unserer Demokratie und die Wettbewerbsfähigkeit unserer 2226 Wirtschaft.
+**source_text:** Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene für eine Berücksichtigung aller berechtigten Interessen ein. 2223 Gesellschaft - digital kompetent, selbstbestimmt und inklusiv 2224 Der souveräne, sichere und kritische Umgang mit digitalen Tools und Medien steigert die Resilienz 2225 unserer Gesellschaft, die Wehrhaftigkeit unserer Demokratie und die Wettbewerbsfähigkeit unserer 2226 Wirtschaft.
 
 **topic:** ECONOMY_INDUSTRY_TRADE
 
@@ -79853,7 +79853,7 @@ _Leere Liste._
 
 **measure:** Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene …
 
-**intended_change:** Vorgesehene Veränderung: Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene für eine Berücksichtigung aller berechtigten Interessen ein. 2223 Gesellschaft – digital kompetent, selbstbestimmt und inklusiv 2224 Der souveräne, sichere und kritische Umgang mit digitalen Tools und Medien steigert die Resilienz 2225 unserer Gesellschaft, die Wehrhaftigkeit unserer Demokratie und die Wettbewerbsfähigkeit unserer 2226 Wirtschaft.
+**intended_change:** Vorgesehene Veränderung: Bei der Vergabe der UHF-Frequenzen setzen wir uns auf 2222 europäischer Ebene für eine Berücksichtigung aller berechtigten Interessen ein. 2223 Gesellschaft - digital kompetent, selbstbestimmt und inklusiv 2224 Der souveräne, sichere und kritische Umgang mit digitalen Tools und Medien steigert die Resilienz 2225 unserer Gesellschaft, die Wehrhaftigkeit unserer Demokratie und die Wettbewerbsfähigkeit unserer 2226 Wirtschaft.
 
 
 ##### component_topics
@@ -81129,7 +81129,7 @@ _Leere Liste._
 
 **page:** 71
 
-**text:** Grundsätzlich 2231 sichern wir die Vertraulichkeit privater Kommunikation und Anonymität im Netz. 2232 Wirtschaft – Wachstum von Morgen mit Daten und Künstlicher Intelligenz 2233 Wir wollen Deutschland zu einem starken Digitalstandort mit starkem digitalen Ökosystem entwickeln 2234 – vom Start-up über den Mittelstand bis hin zum Tech-Giganten.
+**text:** Grundsätzlich 2231 sichern wir die Vertraulichkeit privater Kommunikation und Anonymität im Netz. 2232 Wirtschaft - Wachstum von Morgen mit Daten und Künstlicher Intelligenz 2233 Wir wollen Deutschland zu einem starken Digitalstandort mit starkem digitalen Ökosystem entwickeln 2234 - vom Start-up über den Mittelstand bis hin zum Tech-Giganten.
 
 **match_score:** 78.5
 
@@ -81142,7 +81142,7 @@ _Leere Liste._
 
 **top_score:** 94.2
 
-**input_register_text:** prüfen, wie wir die bei der MIG aufgebaute Kom- Wirtschaft – Wachstum von Morgen mit Daten petenz und Expertise langfristig dafür einsetzen, und Künstlicher Intelligenz den flächendeckenden Mobilfunkausbau in bisher nicht beziehungsweise unterversorgten ländlichen Wir wollen Deutschland zu einem starken Digital- Gebieten voranzubringen. standort mit starkem digitalen Ökosystem entwickeln – vom Start-up über den Mittelstand bis hin Bei der Gigabitförderung schaffen wir eine aus- zum Tech-Giganten.
+**input_register_text:** prüfen, wie wir die bei der MIG aufgebaute Kom- Wirtschaft - Wachstum von Morgen mit Daten petenz und Expertise langfristig dafür einsetzen, und Künstlicher Intelligenz den flächendeckenden Mobilfunkausbau in bisher nicht beziehungsweise unterversorgten ländlichen Wir wollen Deutschland zu einem starken Digital- Gebieten voranzubringen. standort mit starkem digitalen Ökosystem entwickeln - vom Start-up über den Mittelstand bis hin Bei der Gigabitförderung schaffen wir eine aus- zum Tech-Giganten.
 
 ##### source_components
 
@@ -81174,7 +81174,7 @@ _Leere Liste._
 
 **source_page:** 71
 
-**source_text:** Grundsätzlich 2231 sichern wir die Vertraulichkeit privater Kommunikation und Anonymität im Netz. 2232 Wirtschaft – Wachstum von Morgen mit Daten und Künstlicher Intelligenz 2233 Wir wollen Deutschland zu einem starken Digitalstandort mit starkem digitalen Ökosystem entwickeln 2234 – vom Start-up über den Mittelstand bis hin zum Tech-Giganten.
+**source_text:** Grundsätzlich 2231 sichern wir die Vertraulichkeit privater Kommunikation und Anonymität im Netz. 2232 Wirtschaft - Wachstum von Morgen mit Daten und Künstlicher Intelligenz 2233 Wir wollen Deutschland zu einem starken Digitalstandort mit starkem digitalen Ökosystem entwickeln 2234 - vom Start-up über den Mittelstand bis hin zum Tech-Giganten.
 
 **topic:** ECONOMY_INDUSTRY_TRADE
 
@@ -81188,7 +81188,7 @@ _Leere Liste._
 
 **measure:** Grundsätzlich 2231 sichern wir die Vertraulichkeit privater Kommunikation und Anonymität im Netz
 
-**intended_change:** Vorgesehene Veränderung: Grundsätzlich 2231 sichern wir die Vertraulichkeit privater Kommunikation und Anonymität im Netz. 2232 Wirtschaft – Wachstum von Morgen mit Daten und Künstlicher Intelligenz 2233 Wir wollen Deutschland zu einem starken Digitalstandort mit starkem digitalen Ökosystem entwickeln 2234 – vom Start-up über den Mittelstand bis hin zum Tech-Giganten.
+**intended_change:** Vorgesehene Veränderung: Grundsätzlich 2231 sichern wir die Vertraulichkeit privater Kommunikation und Anonymität im Netz. 2232 Wirtschaft - Wachstum von Morgen mit Daten und Künstlicher Intelligenz 2233 Wir wollen Deutschland zu einem starken Digitalstandort mit starkem digitalen Ökosystem entwickeln 2234 - vom Start-up über den Mittelstand bis hin zum Tech-Giganten.
 
 
 ##### component_topics
@@ -83353,7 +83353,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** 75 - Grundbildung 2409 Aufbauend auf der AlphaDekade stärken wir mit den … / den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen – wir …
+**measure:** 75 - Grundbildung 2409 Aufbauend auf der AlphaDekade stärken wir mit den … / den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen - wir …
 
 ##### decision_readiness
 
@@ -83694,7 +83694,7 @@ _Leere Liste._
 
 **page:** 77
 
-**text:** Wir wollen den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen – wir unterstützen das Kaskadenmodell und verstärken das Professorinnenprogramm. 2435 Wir gestalten die Regelungen zur Arbeitszeiterfassung an Hochschulen rechtssicher und praktikabel. 2436 Wir schaffen eine Regelung im Teilzeit- und Befristungsgesetz (TzBfG), die Arbeitsverhältnisse während 2437 eines Studiums vom Anschlussverbot ausnimmt. 2438 Wissenschaftskommunikation und -verbreitung 2439 Wissenschaftskommunikation muss fester Bestandteil von Wissenschaft und Forschungsförderung 2440 sein.
+**text:** Wir wollen den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen - wir unterstützen das Kaskadenmodell und verstärken das Professorinnenprogramm. 2435 Wir gestalten die Regelungen zur Arbeitszeiterfassung an Hochschulen rechtssicher und praktikabel. 2436 Wir schaffen eine Regelung im Teilzeit- und Befristungsgesetz (TzBfG), die Arbeitsverhältnisse während 2437 eines Studiums vom Anschlussverbot ausnimmt. 2438 Wissenschaftskommunikation und -verbreitung 2439 Wissenschaftskommunikation muss fester Bestandteil von Wissenschaft und Forschungsförderung 2440 sein.
 
 **match_score:** 78.3
 
@@ -83707,7 +83707,7 @@ _Leere Liste._
 
 **top_score:** 89.4
 
-**input_register_text:** Wir wollen den Anteil von Frauen an wissenschaftlichen Führungspositionen weiter Aufbauend auf der AlphaDekade stärken wir mit erhöhen – wir unterstützen das Kaskadenmodell den Ländern die Strukturen und Netzwerke.
+**input_register_text:** Wir wollen den Anteil von Frauen an wissenschaftlichen Führungspositionen weiter Aufbauend auf der AlphaDekade stärken wir mit erhöhen - wir unterstützen das Kaskadenmodell den Ländern die Strukturen und Netzwerke.
 
 ##### source_components
 
@@ -83739,7 +83739,7 @@ _Leere Liste._
 
 **source_page:** 77
 
-**source_text:** Wir wollen den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen – wir unterstützen das Kaskadenmodell und verstärken das Professorinnenprogramm. 2435 Wir gestalten die Regelungen zur Arbeitszeiterfassung an Hochschulen rechtssicher und praktikabel. 2436 Wir schaffen eine Regelung im Teilzeit- und Befristungsgesetz (TzBfG), die Arbeitsverhältnisse während 2437 eines Studiums vom Anschlussverbot ausnimmt. 2438 Wissenschaftskommunikation und -verbreitung 2439 Wissenschaftskommunikation muss fester Bestandteil von Wissenschaft und Forschungsförderung 2440 sein.
+**source_text:** Wir wollen den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen - wir unterstützen das Kaskadenmodell und verstärken das Professorinnenprogramm. 2435 Wir gestalten die Regelungen zur Arbeitszeiterfassung an Hochschulen rechtssicher und praktikabel. 2436 Wir schaffen eine Regelung im Teilzeit- und Befristungsgesetz (TzBfG), die Arbeitsverhältnisse während 2437 eines Studiums vom Anschlussverbot ausnimmt. 2438 Wissenschaftskommunikation und -verbreitung 2439 Wissenschaftskommunikation muss fester Bestandteil von Wissenschaft und Forschungsförderung 2440 sein.
 
 **topic:** SCIENCE_RESEARCH
 
@@ -83751,9 +83751,9 @@ _Leere Liste._
 
 - Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz
 
-**measure:** den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen – wir …
+**measure:** den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen - wir …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen – wir unterstützen das Kaskadenmodell und verstärken das Professorinnenprogramm. 2435 Wir gestalten die Regelungen zur Arbeitszeiterfassung an Hochschulen rechtssicher und praktikabel. 2436 Wir schaffen eine Regelung im Teilzeit- und Befristungsgesetz (TzBfG), die Arbeitsverhältnisse während 2437 eines Studiums vom Anschlussverbot ausnimmt. 2438 Wissenschaftskommunikation und -verbreitung 2439 Wissenschaftskommunikation muss fester Bestandteil von Wissenschaft und Forschungsförderung 2440 sein.
+**intended_change:** Vorgesehene Veränderung: Wir wollen den Anteil von Frauen an wissenschaftlichen Führungspositionen 2434 weiter erhöhen - wir unterstützen das Kaskadenmodell und verstärken das Professorinnenprogramm. 2435 Wir gestalten die Regelungen zur Arbeitszeiterfassung an Hochschulen rechtssicher und praktikabel. 2436 Wir schaffen eine Regelung im Teilzeit- und Befristungsgesetz (TzBfG), die Arbeitsverhältnisse während 2437 eines Studiums vom Anschlussverbot ausnimmt. 2438 Wissenschaftskommunikation und -verbreitung 2439 Wissenschaftskommunikation muss fester Bestandteil von Wissenschaft und Forschungsförderung 2440 sein.
 
 
 ##### component_topics
@@ -88967,7 +88967,7 @@ _Leere Liste._
 
 **top_score:** 68.7
 
-**input_register_text:** Wir fördern die Vielfalt des jüdischen Lebens in Deutschland und stellen sicher, dass keine Organi- Wir treten allen verfassungsfeindlichen Bestrebun- sationen und Projekte finanziell gefördert werden, gen und jedweder Gewalt mit derselben Entschlos- die Antisemitismus verbreiten oder das Existenzsenheit und Konsequenz entgegen – ob Rechts- recht Israels in Frage stellen. extremismus, Islamismus, auslandsbezogenem Extremismus oder Linksextremismus.
+**input_register_text:** Wir fördern die Vielfalt des jüdischen Lebens in Deutschland und stellen sicher, dass keine Organi- Wir treten allen verfassungsfeindlichen Bestrebun- sationen und Projekte finanziell gefördert werden, gen und jedweder Gewalt mit derselben Entschlos- die Antisemitismus verbreiten oder das Existenzsenheit und Konsequenz entgegen - ob Rechts- recht Israels in Frage stellen. extremismus, Islamismus, auslandsbezogenem Extremismus oder Linksextremismus.
 
 ##### source_components
 
@@ -90953,7 +90953,7 @@ _Leere Liste._
 
 **source_location:** Sicheres Zusammenleben, Migration und Integration
 
-**intended_change:** Vorgesehene Veränderung: Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick. 2774 Smart Contracts 2775 Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll – wenn die relevanten Daten 2776 auf Grund von Buchung über eine App oder online dem Anbieter bereits vorliegen – digital über 2777
+**intended_change:** Vorgesehene Veränderung: Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick. 2774 Smart Contracts 2775 Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll - wenn die relevanten Daten 2776 auf Grund von Buchung über eine App oder online dem Anbieter bereits vorliegen - digital über 2777
 
 **measure:** Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick
 
@@ -91170,7 +91170,7 @@ _Leere Liste._
 
 **page:** 88
 
-**text:** Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick. 2774 Smart Contracts 2775 Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll – wenn die relevanten Daten 2776 auf Grund von Buchung über eine App oder online dem Anbieter bereits vorliegen – digital über 2777
+**text:** Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick. 2774 Smart Contracts 2775 Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll - wenn die relevanten Daten 2776 auf Grund von Buchung über eine App oder online dem Anbieter bereits vorliegen - digital über 2777
 
 **match_score:** 83.3
 
@@ -91183,7 +91183,7 @@ _Leere Liste._
 
 **top_score:** 83.3
 
-**input_register_text:** Smart Contracts Verbraucherschutz Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll – wenn die relevanten Wir schützen Verbraucherinnen und Verbraucher Daten auf Grund von Buchung über eine App oder umfassend und führen deshalb eine allgemeine online dem Anbieter bereits vorliegen – digital Bestätigungslösung für telefonisch angebahnte über weitestgehend vorausgefüllte Formulare Dauerschuldverhältnisse ein.
+**input_register_text:** Smart Contracts Verbraucherschutz Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll - wenn die relevanten Wir schützen Verbraucherinnen und Verbraucher Daten auf Grund von Buchung über eine App oder umfassend und führen deshalb eine allgemeine online dem Anbieter bereits vorliegen - digital Bestätigungslösung für telefonisch angebahnte über weitestgehend vorausgefüllte Formulare Dauerschuldverhältnisse ein.
 
 ##### source_components
 
@@ -91193,7 +91193,7 @@ _Leere Liste._
 
 **source_page:** 88
 
-**source_text:** Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick. 2774 Smart Contracts 2775 Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll – wenn die relevanten Daten 2776 auf Grund von Buchung über eine App oder online dem Anbieter bereits vorliegen – digital über 2777
+**source_text:** Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick. 2774 Smart Contracts 2775 Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll - wenn die relevanten Daten 2776 auf Grund von Buchung über eine App oder online dem Anbieter bereits vorliegen - digital über 2777
 
 **topic:** HOUSING
 
@@ -91207,7 +91207,7 @@ _Leere Liste._
 
 **measure:** Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick
 
-**intended_change:** Vorgesehene Veränderung: Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick. 2774 Smart Contracts 2775 Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll – wenn die relevanten Daten 2776 auf Grund von Buchung über eine App oder online dem Anbieter bereits vorliegen – digital über 2777
+**intended_change:** Vorgesehene Veränderung: Die Belange der Mieterinnen und Mieter haben wir dabei im 2773 Blick. 2774 Smart Contracts 2775 Die Geltendmachung von Entschädigungs- oder Ausgleichszahlungen soll - wenn die relevanten Daten 2776 auf Grund von Buchung über eine App oder online dem Anbieter bereits vorliegen - digital über 2777
 
 
 ##### component_topics
@@ -92854,7 +92854,7 @@ _Leere Liste._
 
 **source_location:** Beschlussmängelrecht Ermittlungsbefugnisse (§§ 100a ff. StPO)
 
-**intended_change:** Vorgesehene Veränderung: Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach mitgliedschaftlicher Logik ohne steuerliche 2818 Privilegierungen oder Diskriminierungen. 2819 Umsetzung der SLAPP-Richtlinie 2820 Wir setzen die SLAPP-Richtlinie zeitnah um, um zu verhindern, dass unser Rechtsstaat und unsere Justiz 2821 zur Einschüchterung, zum Beispiel von Journalisten sowie zivilgesellschaftlich Engagierten, missbraucht 2822 werden. 2823 Urheberrecht 2824 Im Urheberrecht sorgen wir für einen fairen Ausgleich der Interessen aller Akteure – Kreative, 2825 Wirtschaft, und Nutzer.
+**intended_change:** Vorgesehene Veränderung: Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach mitgliedschaftlicher Logik ohne steuerliche 2818 Privilegierungen oder Diskriminierungen. 2819 Umsetzung der SLAPP-Richtlinie 2820 Wir setzen die SLAPP-Richtlinie zeitnah um, um zu verhindern, dass unser Rechtsstaat und unsere Justiz 2821 zur Einschüchterung, zum Beispiel von Journalisten sowie zivilgesellschaftlich Engagierten, missbraucht 2822 werden. 2823 Urheberrecht 2824 Im Urheberrecht sorgen wir für einen fairen Ausgleich der Interessen aller Akteure - Kreative, 2825 Wirtschaft, und Nutzer.
 
 **measure:** Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach …
 
@@ -93087,7 +93087,7 @@ _Leere Liste._
 
 **page:** 90
 
-**text:** Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach mitgliedschaftlicher Logik ohne steuerliche 2818 Privilegierungen oder Diskriminierungen. 2819 Umsetzung der SLAPP-Richtlinie 2820 Wir setzen die SLAPP-Richtlinie zeitnah um, um zu verhindern, dass unser Rechtsstaat und unsere Justiz 2821 zur Einschüchterung, zum Beispiel von Journalisten sowie zivilgesellschaftlich Engagierten, missbraucht 2822 werden. 2823 Urheberrecht 2824 Im Urheberrecht sorgen wir für einen fairen Ausgleich der Interessen aller Akteure – Kreative, 2825 Wirtschaft, und Nutzer.
+**text:** Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach mitgliedschaftlicher Logik ohne steuerliche 2818 Privilegierungen oder Diskriminierungen. 2819 Umsetzung der SLAPP-Richtlinie 2820 Wir setzen die SLAPP-Richtlinie zeitnah um, um zu verhindern, dass unser Rechtsstaat und unsere Justiz 2821 zur Einschüchterung, zum Beispiel von Journalisten sowie zivilgesellschaftlich Engagierten, missbraucht 2822 werden. 2823 Urheberrecht 2824 Im Urheberrecht sorgen wir für einen fairen Ausgleich der Interessen aller Akteure - Kreative, 2825 Wirtschaft, und Nutzer.
 
 **match_score:** 82.1
 
@@ -93110,7 +93110,7 @@ _Leere Liste._
 
 **source_page:** 90
 
-**source_text:** Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach mitgliedschaftlicher Logik ohne steuerliche 2818 Privilegierungen oder Diskriminierungen. 2819 Umsetzung der SLAPP-Richtlinie 2820 Wir setzen die SLAPP-Richtlinie zeitnah um, um zu verhindern, dass unser Rechtsstaat und unsere Justiz 2821 zur Einschüchterung, zum Beispiel von Journalisten sowie zivilgesellschaftlich Engagierten, missbraucht 2822 werden. 2823 Urheberrecht 2824 Im Urheberrecht sorgen wir für einen fairen Ausgleich der Interessen aller Akteure – Kreative, 2825 Wirtschaft, und Nutzer.
+**source_text:** Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach mitgliedschaftlicher Logik ohne steuerliche 2818 Privilegierungen oder Diskriminierungen. 2819 Umsetzung der SLAPP-Richtlinie 2820 Wir setzen die SLAPP-Richtlinie zeitnah um, um zu verhindern, dass unser Rechtsstaat und unsere Justiz 2821 zur Einschüchterung, zum Beispiel von Journalisten sowie zivilgesellschaftlich Engagierten, missbraucht 2822 werden. 2823 Urheberrecht 2824 Im Urheberrecht sorgen wir für einen fairen Ausgleich der Interessen aller Akteure - Kreative, 2825 Wirtschaft, und Nutzer.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -93124,7 +93124,7 @@ _Leere Liste._
 
 **measure:** Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach …
 
-**intended_change:** Vorgesehene Veränderung: Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach mitgliedschaftlicher Logik ohne steuerliche 2818 Privilegierungen oder Diskriminierungen. 2819 Umsetzung der SLAPP-Richtlinie 2820 Wir setzen die SLAPP-Richtlinie zeitnah um, um zu verhindern, dass unser Rechtsstaat und unsere Justiz 2821 zur Einschüchterung, zum Beispiel von Journalisten sowie zivilgesellschaftlich Engagierten, missbraucht 2822 werden. 2823 Urheberrecht 2824 Im Urheberrecht sorgen wir für einen fairen Ausgleich der Interessen aller Akteure – Kreative, 2825 Wirtschaft, und Nutzer.
+**intended_change:** Vorgesehene Veränderung: Merkmale dieser Rechtsform sind die 2817 unabänderliche Vermögensbindung und die Teilhabe nach mitgliedschaftlicher Logik ohne steuerliche 2818 Privilegierungen oder Diskriminierungen. 2819 Umsetzung der SLAPP-Richtlinie 2820 Wir setzen die SLAPP-Richtlinie zeitnah um, um zu verhindern, dass unser Rechtsstaat und unsere Justiz 2821 zur Einschüchterung, zum Beispiel von Journalisten sowie zivilgesellschaftlich Engagierten, missbraucht 2822 werden. 2823 Urheberrecht 2824 Im Urheberrecht sorgen wir für einen fairen Ausgleich der Interessen aller Akteure - Kreative, 2825 Wirtschaft, und Nutzer.
 
 
 ##### component_topics
@@ -103024,7 +103024,7 @@ _Leere Liste._
 
 **page:** 103
 
-**text:** Unser Ziel ist eine Gesellschaft, in 3224 der Frauen und Männer gleichberechtigt und respektvoll miteinander leben – im Beruf, in der Familie 3225 und in der Politik.
+**text:** Unser Ziel ist eine Gesellschaft, in 3224 der Frauen und Männer gleichberechtigt und respektvoll miteinander leben - im Beruf, in der Familie 3225 und in der Politik.
 
 **match_score:** 83.6
 
@@ -103049,7 +103049,7 @@ _Leere Liste._
 
 **top_score:** 83.6
 
-**input_register_text:** Unser Ziel ist eine Gesell- Wir wollen einen Mutterschutz für Selbstständige schaft, in der Frauen und Männer gleichberechtigt analog zu den Mutterschutzfristen für Beschäftigte und respektvoll miteinander leben – im Beruf, in einführen.
+**input_register_text:** Unser Ziel ist eine Gesell- Wir wollen einen Mutterschutz für Selbstständige schaft, in der Frauen und Männer gleichberechtigt analog zu den Mutterschutzfristen für Beschäftigte und respektvoll miteinander leben - im Beruf, in einführen.
 
 ##### source_components
 
@@ -103059,7 +103059,7 @@ _Leere Liste._
 
 **source_page:** 103
 
-**source_text:** Unser Ziel ist eine Gesellschaft, in 3224 der Frauen und Männer gleichberechtigt und respektvoll miteinander leben – im Beruf, in der Familie 3225 und in der Politik.
+**source_text:** Unser Ziel ist eine Gesellschaft, in 3224 der Frauen und Männer gleichberechtigt und respektvoll miteinander leben - im Beruf, in der Familie 3225 und in der Politik.
 
 **topic:** FAMILY_EQUALITY
 
@@ -103073,7 +103073,7 @@ _Leere Liste._
 
 **measure:** Unser Ziel ist eine Gesellschaft, in 3224 der Frauen und Männer gleichberechtigt …
 
-**intended_change:** Vorgesehene Veränderung: Unser Ziel ist eine Gesellschaft, in 3224 der Frauen und Männer gleichberechtigt und respektvoll miteinander leben – im Beruf, in der Familie 3225 und in der Politik.
+**intended_change:** Vorgesehene Veränderung: Unser Ziel ist eine Gesellschaft, in 3224 der Frauen und Männer gleichberechtigt und respektvoll miteinander leben - im Beruf, in der Familie 3225 und in der Politik.
 
 ###### Eintrag 2
 
@@ -103413,7 +103413,7 @@ _Leere Liste._
 
 **top_score:** 69.6
 
-**input_register_text:** Wir werden Das Ziel der inklusiven Kinder- und Jugendhilfe sicherstellen, dass Verstöße gegen die Vorgaben zu durch Reduzierung der Schnittstellen soll weiter- Zielgrößen – sei es durch das Fehlen von Zielgröverfolgt werden, um den betroffenen Familien ßen oder Fristen oder durch unzureichende Beden Zugang zu Leistungen zu erleichtern und die gründungen bei einer Zielgröße von Null – künftig Behörden zu entlasten.
+**input_register_text:** Wir werden Das Ziel der inklusiven Kinder- und Jugendhilfe sicherstellen, dass Verstöße gegen die Vorgaben zu durch Reduzierung der Schnittstellen soll weiter- Zielgrößen - sei es durch das Fehlen von Zielgröverfolgt werden, um den betroffenen Familien ßen oder Fristen oder durch unzureichende Beden Zugang zu Leistungen zu erleichtern und die gründungen bei einer Zielgröße von Null - künftig Behörden zu entlasten.
 
 ##### source_components
 
@@ -103532,9 +103532,9 @@ _Leere Liste._
 
 **source_location:** Starker Zusammenhalt, standfeste Demokratie
 
-**intended_change:** Vorgesehene Veränderung: Wir werden sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 – sei es durch das Fehlen von Zielgrößen oder Fristen oder durch unzureichende Begründungen bei 3239 einer Zielgröße von Null – künftig konsequent und spürbar sanktioniert werden. 3240 Wir wollen die Repräsentation Ostdeutscher in Führungspositionen und Entscheidungsgremien in allen 3241 Bereichen weiter verbessern.
+**intended_change:** Vorgesehene Veränderung: Wir werden sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 - sei es durch das Fehlen von Zielgrößen oder Fristen oder durch unzureichende Begründungen bei 3239 einer Zielgröße von Null - künftig konsequent und spürbar sanktioniert werden. 3240 Wir wollen die Repräsentation Ostdeutscher in Führungspositionen und Entscheidungsgremien in allen 3241 Bereichen weiter verbessern.
 
-**measure:** sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 – sei es …
+**measure:** sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 - sei es …
 
 ##### decision_readiness
 
@@ -103736,7 +103736,7 @@ _Leere Liste._
 
 **page:** 104
 
-**text:** Wir werden sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 – sei es durch das Fehlen von Zielgrößen oder Fristen oder durch unzureichende Begründungen bei 3239 einer Zielgröße von Null – künftig konsequent und spürbar sanktioniert werden. 3240 Wir wollen die Repräsentation Ostdeutscher in Führungspositionen und Entscheidungsgremien in allen 3241 Bereichen weiter verbessern.
+**text:** Wir werden sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 - sei es durch das Fehlen von Zielgrößen oder Fristen oder durch unzureichende Begründungen bei 3239 einer Zielgröße von Null - künftig konsequent und spürbar sanktioniert werden. 3240 Wir wollen die Repräsentation Ostdeutscher in Führungspositionen und Entscheidungsgremien in allen 3241 Bereichen weiter verbessern.
 
 **match_score:** 71.9
 
@@ -103759,7 +103759,7 @@ _Leere Liste._
 
 **source_page:** 104
 
-**source_text:** Wir werden sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 – sei es durch das Fehlen von Zielgrößen oder Fristen oder durch unzureichende Begründungen bei 3239 einer Zielgröße von Null – künftig konsequent und spürbar sanktioniert werden. 3240 Wir wollen die Repräsentation Ostdeutscher in Führungspositionen und Entscheidungsgremien in allen 3241 Bereichen weiter verbessern.
+**source_text:** Wir werden sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 - sei es durch das Fehlen von Zielgrößen oder Fristen oder durch unzureichende Begründungen bei 3239 einer Zielgröße von Null - künftig konsequent und spürbar sanktioniert werden. 3240 Wir wollen die Repräsentation Ostdeutscher in Führungspositionen und Entscheidungsgremien in allen 3241 Bereichen weiter verbessern.
 
 **topic:** ECONOMY_INDUSTRY_TRADE
 
@@ -103771,9 +103771,9 @@ _Leere Liste._
 
 - Umfang/Schwellenwert der Maßnahme
 
-**measure:** sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 – sei es …
+**measure:** sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 - sei es …
 
-**intended_change:** Vorgesehene Veränderung: Wir werden sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 – sei es durch das Fehlen von Zielgrößen oder Fristen oder durch unzureichende Begründungen bei 3239 einer Zielgröße von Null – künftig konsequent und spürbar sanktioniert werden. 3240 Wir wollen die Repräsentation Ostdeutscher in Führungspositionen und Entscheidungsgremien in allen 3241 Bereichen weiter verbessern.
+**intended_change:** Vorgesehene Veränderung: Wir werden sicherstellen, dass Verstöße gegen die Vorgaben zu Zielgrößen 3238 - sei es durch das Fehlen von Zielgrößen oder Fristen oder durch unzureichende Begründungen bei 3239 einer Zielgröße von Null - künftig konsequent und spürbar sanktioniert werden. 3240 Wir wollen die Repräsentation Ostdeutscher in Führungspositionen und Entscheidungsgremien in allen 3241 Bereichen weiter verbessern.
 
 
 ##### component_topics
@@ -119367,7 +119367,7 @@ _Leere Liste._
 
 **top_score:** 92.3
 
-**input_register_text:** Wir werden durchsetzen, dass Online-Plattformen ihren Medienvielfalt stärken – Meinungsfreiheit sichern Pflichten hinsichtlich Transparenz und Mitwirkung gegenüber der Aufsicht nachkommen, sowie eine Unabhängige und vielfältige Medien sichern verschärfte Haftung für Inhalte prüfen.
+**input_register_text:** Wir werden durchsetzen, dass Online-Plattformen ihren Medienvielfalt stärken - Meinungsfreiheit sichern Pflichten hinsichtlich Transparenz und Mitwirkung gegenüber der Aufsicht nachkommen, sowie eine Unabhängige und vielfältige Medien sichern verschärfte Haftung für Inhalte prüfen.
 
 ##### source_components
 

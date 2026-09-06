@@ -149,6 +149,18 @@ for (const file of libraryFiles) {
 for (const file of libraryFiles) {
   const html = fs.readFileSync(file, "utf8");
   const route = routeFor(file);
+  if (/data-reader-node-redirect/.test(html)) {
+    const canonical=getCanonical(html);
+    const target=canonical.startsWith(SITE_URL+'/bibliothek/eintraege/') ? canonical.slice(SITE_URL.length) : '';
+    const sameBook=target.startsWith(route.split('/lesen/')[0]+'/lesen/');
+    if(!target || !sameBook || target===route || !localNavigationTargetExists(file,target))fail(errors,file,'Zusammengeführter Gliederungspunkt braucht ein vorhandenes Ziel im selben Reader.');
+    if(!hasNoindexFollow(html) || !redirectsTo(html,target))fail(errors,file,'Gliederungs-Weiterleitung braucht noindex,follow und das richtige Ziel.');
+    if(target && localNavigationTargetExists(file,target)) {
+      const targetHtml=fs.readFileSync(readerFileForRoute(ROOT,target),'utf8');
+      if(isRedirect(targetHtml) || /<p>Inhalt wird ergänzt\.<\/p>/.test(targetHtml))fail(errors,file,'Gliederungs-Weiterleitung muss unmittelbar auf vorhandenen Text oder die Übersicht führen.');
+    }
+    continue;
+  }
   const alias = aliasBySourceRoute.get(route);
   if (alias) {
     const targetFile = readerFileForRoute(ROOT, alias.to);

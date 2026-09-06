@@ -21,7 +21,7 @@ Nach dieser Einheit kannst du:
 
 ## 20-Sekunden-Erklärung
 
-Eine Bäckerei kann viele Brote verkaufen, Gewinn machen und trotzdem Folgen erzeugen, die in diesen Zahlen nicht vollständig auftauchen. Umgekehrt können Gewinn und Absatz völlig legitime und wichtige Informationen sein. Die Wirkungsfrage lautet zusätzlich: **Was verändert sich tatsächlich – bei Menschen, natürlichen Lebensgrundlagen oder demokratischen Bedingungen?**
+Eine Bäckerei kann viele Brote verkaufen, Gewinn machen und trotzdem Folgen erzeugen, die in diesen Zahlen nicht vollständig auftauchen. Umgekehrt können Gewinn und Absatz völlig legitime und wichtige Informationen sein. Die Wirkungsfrage lautet zusätzlich: **Was verändert sich tatsächlich - bei Menschen, natürlichen Lebensgrundlagen oder demokratischen Bedingungen?**
 
 ## Einfach erklärt
 
@@ -68,7 +68,7 @@ Umgekehrt darf man aus einem einzelnen Nachhaltigkeitsindikator auch nicht schli
 - Rechnungswesen zeigt finanzielle Tragfähigkeit und Ressourcenflüsse.
 - ESG/CSRD/ESRS strukturieren wichtige Nachhaltigkeits-, Risiko- und Governanceinformationen.
 - LCA untersucht Umweltwirkungen über Lebenszyklen.
-- Evaluation untersucht Ergebnisse und – je nach Design – kausale Beiträge.
+- Evaluation untersucht Ergebnisse und - je nach Design - kausale Beiträge.
 - Staatliche GFA/Nachhaltigkeitsprüfung untersucht Folgen und Nachhaltigkeitsbezüge von Regelungsvorhaben.
 
 ## Was WÖk ergänzt
@@ -92,13 +92,13 @@ Der Neuheitsanspruch liegt nicht darin, Wirkungsmessung erfunden zu haben.
 ## Primär- und Anschlussquellen
 
 - Bundesregierung, Steuerung der Deutschen Nachhaltigkeitsstrategie: https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776
-- GGO §§ 43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§ 43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - Destatis, Nachhaltigkeitsindikatoren: https://dns-indikatoren.de/
 - WÖk Referenz: https://wirkungsoekonomie.de/referenz/
 
 ## Transferfrage
 
-Welche Kennzahl gilt in deinem Arbeits- oder Alltagsumfeld als „Erfolg“? Was sagt sie zuverlässig – und welche Zustandsänderungen lässt sie offen?
+Welche Kennzahl gilt in deinem Arbeits- oder Alltagsumfeld als „Erfolg“? Was sagt sie zuverlässig - und welche Zustandsänderungen lässt sie offen?
 
 ## Praxisaufgabe
 
@@ -131,4 +131,4 @@ Und wichtig: Wir starten nicht auf einer leeren Wiese. Unternehmen erfassen Nach
 
 Sie stellt eine zusätzliche Frage: Wie verbinden wir Problem, Ziel, Wirkmechanismus, Daten, Schutzgrenzen, Optionen und spätere Beobachtungen so, dass wir wirklich lernen können?
 
-Darum heißt die erste Lektion nicht: Alles bisher war blind. Sie heißt: Eine Teilgröße ist noch kein Gesamturteil. Wir lassen jede Kennzahl das tun, was sie kann – und ergänzen die offenen Wirkungsfragen.
+Darum heißt die erste Lektion nicht: Alles bisher war blind. Sie heißt: Eine Teilgröße ist noch kein Gesamturteil. Wir lassen jede Kennzahl das tun, was sie kann - und ergänzen die offenen Wirkungsfragen.

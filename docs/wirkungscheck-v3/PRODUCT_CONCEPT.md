@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Produktkonzept
+# Wirkungscheck Bundestag V3 - Produktkonzept
 
 **Status:** Fach- und UX-Spezifikation vor der Implementierung.
 **Stand:** 13. August 2026.
@@ -37,7 +37,7 @@ Die Anwendung beantwortet für einen einzelnen Fall:
 
 1. Was soll Bundespolitik tatsächlich verändern?
 2. Welcher politische Ansatz wird zunächst betrachtet?
-3. Welche unmittelbare Folge hat dieser Ansatz – und was folgt daraus noch
+3. Welche unmittelbare Folge hat dieser Ansatz - und was folgt daraus noch
    nicht automatisch?
 4. Wo kann der Wirkpfad abbrechen?
 5. Welche Verschlechterung darf nicht gegen andere Fortschritte aufgerechnet

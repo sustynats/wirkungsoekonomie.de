@@ -59,16 +59,16 @@ Ein demokratischer Befund wird nicht aus Zustimmung zur WÖk oder zu einer Sachp
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
 
 ## Transferfrage / Praxisaufgabe
-Ordne fünf Akteure – Bundesregierung, Bundestag, Bundesverfassungsgericht, Bundesverwaltung, Bürger:innen – ihren Rollen zu. Nenne je einen Korrekturmechanismus.
+Ordne fünf Akteure - Bundesregierung, Bundestag, Bundesverfassungsgericht, Bundesverwaltung, Bürger:innen - ihren Rollen zu. Nenne je einen Korrekturmechanismus.
 
 ## Prüfungsrelevante Kernaussagen
 Institutionelle Rollen, Mehrheits-/Grundrechtsverhältnis, Korrekturfähigkeit und Kritik vs. Delegitimierung.
 
 ## Zusammenfassung
-Demokratie lebt von Regeln, Rechten, Machtbegrenzung und Korrektur – nicht von konfliktfreier Zustimmung.
+Demokratie lebt von Regeln, Rechten, Machtbegrenzung und Korrektur - nicht von konfliktfreier Zustimmung.
 
 ## Sprechertext
-Demokratie ist nicht das System, in dem niemand streitet. Sie ist das System, das Streit aushalten und Fehler korrigieren kann. Deshalb gehören Wahlen, Rechte, Gerichte, Parlament, Opposition, Medien und Bürgerinnen zusammen – aber mit unterschiedlichen Rollen.
+Demokratie ist nicht das System, in dem niemand streitet. Sie ist das System, das Streit aushalten und Fehler korrigieren kann. Deshalb gehören Wahlen, Rechte, Gerichte, Parlament, Opposition, Medien und Bürgerinnen zusammen - aber mit unterschiedlichen Rollen.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Vollständige Neufassung nach Legacy-Reaudit B05; deterministische Psychologie-, Intent-, Reichweiten- und Wirkungsclaims wurden durch evidenzgebundene Potenzial-/Observation-/Attributionslogik ersetzt.

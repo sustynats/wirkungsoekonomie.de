@@ -702,7 +702,7 @@ Pfad: `Wirkungsoekonomie_Glossar_Korrektur_Codex.docx`
 - Ältere interne Dateien können frühere, ungenauere Begriffsverwendungen enthalten und dürfen nicht ungeprüft als öffentliche Glossarlogik durchgereicht werden.
 - Live-Befund: Fehlerklassen auf Glossar-Seiten Das Beispiel https://wirkungsoekonomie.de/begriffe/staat/ zeigt mehrere grundsätzliche Template- und Datenfehler, die vermutlich nicht nur diesen Begriff betreffen.
 - CodeX muss deshalb nicht nur die Seite „Staat“, sondern alle Glossar-Detailseiten und die Glossar-Indexlogik prüfen.
-- Unpassender Debattenblock Der oberste Block „Vom Begriff zur Debatte – Wie diese Logik in öffentlichen Debatten wirkt“ hat auf normalen Glossarbegriffen nichts verloren.
+- Unpassender Debattenblock Der oberste Block „Vom Begriff zur Debatte - Wie diese Logik in öffentlichen Debatten wirkt“ hat auf normalen Glossarbegriffen nichts verloren.
 - Er gehört nicht in das Standard-Glossar-Template.
 - Das erklärt nicht den Begriff Staat und wirkt wie ein falscher Template-Fill.
 - Verwendung muss konkret erklären, wie genau dieser Begriff auf der Website genutzt wird.
@@ -872,7 +872,7 @@ Pfad: `Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx`
 - Abnahmekriterien: Snapshot-Test: Header-Linkliste ist auf allen geprüften Routengruppen identisch bis auf aktiven Zustand.
 - Keine Seite zeigt altes Menü, alte IONOS-/Cookie-Texte oder alte „Startseite/Funktionsweise/Über die WÖk“-Navigation.
 - P0-02 · P0 · Online-Dokumente haben page-only oder fehlerhafte Inhaltsverzeichnisse Befund / Beleg: Mehrere Onlinefassungen zeigen nur „Seite 1, Seite 2 …“ statt semantischer Kapitel/Abschnitte.
-- Beim WStG ist dies besonders kritisch: Die Bibliothek nennt 146 Seiten, die Onlinefassung zeigt oben nur Seite 1–12.
+- Beim WStG ist dies besonders kritisch: Die Bibliothek nennt 146 Seiten, die Onlinefassung zeigt oben nur Seite 1-12.
 - Codex-Auftrag: Dokumentenrenderer umbauen: Überschriften, §§, Kapitel, Unterkapitel und Tabellen semantisch erkennen und eigene Anker erzeugen.
 - PDF-Seitenanker dürfen nur sekundär als „PDF-Seitenmapping“ erscheinen.
 - TOC enthält semantische Überschriften, nicht nur Seiten.
@@ -923,7 +923,7 @@ Pfad: `Wirkungsoekonomie_Webseitenanalyse_Codex_Report_2026-06-04.docx`
 - Korrektur / Umsetzung: Ein zentrales Document-Schema einführen und alle Detailseiten daraus rendern.
 - 5.11 Onlinefassungen von Dokumenten Kurzurteil: Der größte strukturelle Dokumentationsfehler: Onlinefassungen sind oft nur PDF-Seitenimport statt navigierbare Webversion.
 - Befunde: Minifest, Leitbild, WStG und weitere Onlinefassungen zeigen Inhaltsverzeichnisse nach Seiten statt nach Kapiteln/Überschriften.
-- Teil XV und Teil XVII zeigen auf Teilseiten „0 Kapitel“, obwohl Kapitel 91–96 und 101–106 im Kapitelnavigator vorhanden sind.
+- Teil XV und Teil XVII zeigen auf Teilseiten „0 Kapitel“, obwohl Kapitel 91-96 und 101-106 im Kapitelnavigator vorhanden sind.
 - Referenzkapitelseiten verwenden eine andere Hauptnavigation als die Startseite.
 - Korrektur / Umsetzung: Part-/Chapter-Mapping aus einer einzigen Quelle generieren; keine getrennte Zählungslogik.
 - Referenzportal in dieselbe Site-Shell überführen wie Hauptseiten.

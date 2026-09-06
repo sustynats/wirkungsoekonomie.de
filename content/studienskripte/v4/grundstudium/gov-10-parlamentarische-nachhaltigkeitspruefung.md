@@ -99,7 +99,7 @@ Das Parlament hat eine andere institutionelle Rolle:
 
 Eine externe parlamentarische Bewertung kann deshalb blinde Flecken oder unzureichende Begründungen sichtbar machen.
 
-Das ist noch keine unabhängige wissenschaftliche Evaluation – aber eine eigene Governance-Schicht.
+Das ist noch keine unabhängige wissenschaftliche Evaluation - aber eine eigene Governance-Schicht.
 
 ## 6. WÖk und parlamentarische Voten
 
@@ -127,7 +127,7 @@ Das Beispiel zeigt:
 
 - Nachhaltigkeitsprüfungen können substanziell konkrete Targets nennen,
 - der Beirat prüft diese Darstellung,
-- ein „nicht zu beanstanden“ ist ein parlamentarisches Prüfurteil zur vorgelegten Nachhaltigkeitsdarstellung – nicht automatisch ein Nachweis tatsächlicher späterer Wirkung.
+- ein „nicht zu beanstanden“ ist ein parlamentarisches Prüfurteil zur vorgelegten Nachhaltigkeitsdarstellung - nicht automatisch ein Nachweis tatsächlicher späterer Wirkung.
 
 ## 8. Typische Fehlinterpretationen
 
@@ -178,16 +178,16 @@ Die beiden Ebenen können sich sinnvoll ergänzen.
 
 ### Amtliche Quellen
 
-1. **Deutscher Bundestag – Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen**  
+1. **Deutscher Bundestag - Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen**  
    https://www.bundestag.de/ausschuesse/weitere_gremien/pbnez
 
-2. **PBnEZ – Tagesordnung 17. Sitzung, 22.04.2026 mit Nachhaltigkeitsprüfungsbewertung**  
+2. **PBnEZ - Tagesordnung 17. Sitzung, 22.04.2026 mit Nachhaltigkeitsprüfungsbewertung**  
    https://www.bundestag.de/resource/blob/1166386/to017.pdf
 
-3. **PBnEZ – konkrete Nachhaltigkeitsprüfungsbewertung vom 14.01.2026**  
+3. **PBnEZ - konkrete Nachhaltigkeitsprüfungsbewertung vom 14.01.2026**  
    https://www.bundestag.de/resource/blob/1146238/21-26-15-5_PBnEZ.pdf
 
-4. **PBnEZ – Beschlussvorschlag zu Art und Umfang der Prüfkompetenz, 21. Wahlperiode**  
+4. **PBnEZ - Beschlussvorschlag zu Art und Umfang der Prüfkompetenz, 21. Wahlperiode**  
    https://www.bundestag.de/resource/blob/1165714/Anlagen-zum-Protokoll.pdf
 
 ### Quellenfunktion
@@ -221,7 +221,7 @@ Prüfungsfähig:
 
 ## 14. Sprechertext
 
-Ein Gesetz wird von der Bundesregierung vorbereitet. Also könnte man denken: Die Regierung prüft ihre Nachhaltigkeitsfolgen – und damit ist das Thema erledigt.
+Ein Gesetz wird von der Bundesregierung vorbereitet. Also könnte man denken: Die Regierung prüft ihre Nachhaltigkeitsfolgen - und damit ist das Thema erledigt.
 
 Aber danach kommt das Parlament.
 
@@ -253,4 +253,4 @@ Was sagt die Bundesregierung? Was sagt das Parlament? Und was ergibt unsere unab
 
 Drei Ebenen. Drei Rollen.
 
-Erst wenn wir sie nicht vermischen, können wir wirklich sehen, wo Übereinstimmung besteht – und wo zusätzliche Fragen offen bleiben.
+Erst wenn wir sie nicht vermischen, können wir wirklich sehen, wo Übereinstimmung besteht - und wo zusätzliche Fragen offen bleiben.

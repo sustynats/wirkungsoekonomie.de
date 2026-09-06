@@ -1,6 +1,6 @@
-# System Architecture — Ist-Architektur des WÖk-Ökosystems
+# System Architecture - Ist-Architektur des WÖk-Ökosystems
 
-Stand: 2026-08-14. Grundprinzip (WÖk-Kern/E10, in `api/v1/capabilities/` selbst dokumentiert): **ein Kern (Daten+Logik), dünne Frontends** — mit klaren Datenklassen: `public-read` = GitHub/Pages, `personal-write` = Supabase, `dynamic-logic` = WÖk-Kern-API (Oracle).
+Stand: 2026-08-14. Grundprinzip (WÖk-Kern/E10, in `api/v1/capabilities/` selbst dokumentiert): **ein Kern (Daten+Logik), dünne Frontends** - mit klaren Datenklassen: `public-read` = GitHub/Pages, `personal-write` = Supabase, `dynamic-logic` = WÖk-Kern-API (Oracle).
 
 ```
                         ┌──────────────────────────────────────────────┐
@@ -10,7 +10,7 @@ Stand: 2026-08-14. Grundprinzip (WÖk-Kern/E10, in `api/v1/capabilities/` selbst
               deploy.yml (Pages │ Workflow, _site nur in CI) │ Releases woek-public-assets-v2
                                 ▼                           ▼
    ┌────────────────────  wirkungsoekonomie.de  ─────────────────────┐   große Medien/PDF/XLSX
-   │ Portale (Rang 0–24) · Wirkungsradar · Werkzeuge · Erleben ·     │   (CDN via GitHub Releases)
+   │ Portale (Rang 0-24) · Wirkungsradar · Werkzeuge · Erleben ·     │   (CDN via GitHub Releases)
    │ Bibliothek/Referenz/Quellenarchiv-Spiegel · begriffe (2281) ·   │
    │ statische API /api/v1/ · PWA /app/ · /en/ (7 Seiten)            │
    └───┬──────────────┬───────────────┬───────────────┬──────────────┘
@@ -36,7 +36,7 @@ Stand: 2026-08-14. Grundprinzip (WÖk-Kern/E10, in `api/v1/capabilities/` selbst
 
 | Baustein | Technik | Verantwortung | Anmerkungen |
 |---|---|---|---|
-| Website | statisches HTML + Build-Pipeline (Node 22/Python 3.12) | öffentliches Wissen, Portale, Tools (client-only), statische API | SITE-INVENTORY.md (Mai) ist überholt — Realität: große Pipeline |
+| Website | statisches HTML + Build-Pipeline (Node 22/Python 3.12) | öffentliches Wissen, Portale, Tools (client-only), statische API | SITE-INVENTORY.md (Mai) ist überholt - Realität: große Pipeline |
 | Oracle-VM | WÖk-Kern-API | dynamische Logik/KI | Server-Repo nicht lokal; Codex-Lane |
 | Akademie-App | Next.js App Router, Vercel | Lernplattform, Konto („Mein Wirkungsraum"-Backend), Moderation, 2. KI, 2. Analytics-Ingest, KWI-Live | Seed-vs-DB-Drift! (`ACADEMY_CAPABILITIES.md`) |
 | Institut | eigenes Deployment | Quellen-Kuratierung (SoR), Herausgeberrolle | Repo unbekannt → Gap |
@@ -56,7 +56,7 @@ Stand: 2026-08-14. Grundprinzip (WÖk-Kern/E10, in `api/v1/capabilities/` selbst
 
 ## Architektur-Regeln für neue Produkte (aus Ist-Stand + Plattform-Policy)
 
-1. Pages bleibt statisch; personenbezogene Daten nur Supabase; dynamische Logik in den WÖk-Kern (Oracle) oder die zuständige App — nie in die statische Site.
+1. Pages bleibt statisch; personenbezogene Daten nur Supabase; dynamische Logik in den WÖk-Kern (Oracle) oder die zuständige App - nie in die statische Site.
 2. Große öffentliche Medien immer über GitHub Releases (nie Vercel/Supabase-Storage).
 3. Neue Seiten über `navigation.json` + Normalisierungs-/Suchindex-Skripte anbinden (`tools/sync_layout.py` bzw. npm-Build), sonst reißen Suche/Nav/PR-Gate.
 4. Redaktions-/Login-Funktionen gehören in eine App (Akademie-Muster), nicht als „noindex-Admin" auf die statische Site.

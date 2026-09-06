@@ -14,12 +14,12 @@
       {"id": 5373764817, "marker": "ST-GRUENE-A06", "updated_at": "2026-08-21T18:31:54Z", "body_sha256": "3ad0cd074f03044b46b17ffcbf00680485e9a5c87e3819a4205648ac30d8fd84"}
     ],
     "required_facts": {
-      "ST-GRUENE-PSP-R15": ["historical working window: **0271–0279**", "**12** records = **11 `ABSENT` repairs + 1 `PARTIAL_PARENT(0278)` child**", "`ST_GRUENE_PSP_R15_LOCAL_PARITY = PASS`"],
-      "ST-GRUENE-PSP-R16": ["historical working window: **0280–0297**", "**8** = **6 `ABSENT` repairs + 1 `PARTIAL_PARENT` child + 1 `TRUNCATED` restore**", "`ST_GRUENE_PSP_R16_LOCAL_PARITY = PASS`"],
-      "ST-GRUENE-PSP-R17": ["historical working window: **0298–0311**", "pre-existing source-v2 records reused: **12**", "non-effect rows: `0298`, `0309`", "`ST_GRUENE_PSP_R17_LOCAL_PARITY = PASS`"],
-      "ST-GRUENE-PSP-R18": ["historical working window: **0312–0321**", "pre-existing A06 source-v2 records reused: **6**", "`ST_GRUENE_PSP_R18_LOCAL_PARITY = PASS`"],
-      "ST-GRUENE-PSP-R19": ["historical working window: **0322–0330**", "pre-existing A06 source-v2 records reused: **7**", "`0329/0330` are reconciled as one semantic service-access mechanism", "`ST_GRUENE_PSP_R19_LOCAL_PARITY = PASS`"],
-      "ST-GRUENE-PSP-R20": ["historical working window: **0331–0343**", "pre-existing A06 source-v2 records reused: **7**", "marked non-effect for local denominator accounting", "`ST_GRUENE_PSP_R20_LOCAL_PARITY = PASS`"]
+      "ST-GRUENE-PSP-R15": ["historical working window: **0271-0279**", "**12** records = **11 `ABSENT` repairs + 1 `PARTIAL_PARENT(0278)` child**", "`ST_GRUENE_PSP_R15_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R16": ["historical working window: **0280-0297**", "**8** = **6 `ABSENT` repairs + 1 `PARTIAL_PARENT` child + 1 `TRUNCATED` restore**", "`ST_GRUENE_PSP_R16_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R17": ["historical working window: **0298-0311**", "pre-existing source-v2 records reused: **12**", "non-effect rows: `0298`, `0309`", "`ST_GRUENE_PSP_R17_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R18": ["historical working window: **0312-0321**", "pre-existing A06 source-v2 records reused: **6**", "`ST_GRUENE_PSP_R18_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R19": ["historical working window: **0322-0330**", "pre-existing A06 source-v2 records reused: **7**", "`0329/0330` are reconciled as one semantic service-access mechanism", "`ST_GRUENE_PSP_R19_LOCAL_PARITY = PASS`"],
+      "ST-GRUENE-PSP-R20": ["historical working window: **0331-0343**", "pre-existing A06 source-v2 records reused: **7**", "marked non-effect for local denominator accounting", "`ST_GRUENE_PSP_R20_LOCAL_PARITY = PASS`"]
     },
     "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C10"
   },

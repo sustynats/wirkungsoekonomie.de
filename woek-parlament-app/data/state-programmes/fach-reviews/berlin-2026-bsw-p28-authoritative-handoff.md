@@ -1,10 +1,10 @@
-## WÖk FACH BATCH — Berlin BSW P28: Corona-Aufarbeitung / Untersuchungsausschuss — source-bound review + tokenizer/cross-page repair
+## WÖk FACH BATCH - Berlin BSW P28: Corona-Aufarbeitung / Untersuchungsausschuss - source-bound review + tokenizer/cross-page repair
 
 Authoritative continuation after the already posted P22→P27 Fach queue. Frozen source artifact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. This batch reviews **physical PDF page 28** only, except for the one mechanically necessary continuation fragment into P29 stated below. Generic delegated #313 RNAA is not Fach proof and is superseded for this exact scope. No DNS mapping, Recommendation, score or programme-wide judgment.
 
 ### 1. Fresh source/competence baseline
 
-The programme's central instrument on P28 — a Berlin parliamentary Corona investigation committee — is **not inherently non-assessable**. Berlin's Abgeordnetenhaus currently uses investigation committees under Art. 48 of the Berlin Constitution. The 2nd committee of the 19th term (`Fördergeld`) was established on 18.12.2025 pursuant to Art. 48 to investigate a defined subject and report its findings to the plenary:
+The programme's central instrument on P28 - a Berlin parliamentary Corona investigation committee - is **not inherently non-assessable**. Berlin's Abgeordnetenhaus currently uses investigation committees under Art. 48 of the Berlin Constitution. The 2nd committee of the 19th term (`Fördergeld`) was established on 18.12.2025 pursuant to Art. 48 to investigate a defined subject and report its findings to the plenary:
 `https://www.parlament-berlin.de/Ausschuesse/19-2-untersuchungsausschuss-fordergeld`
 
 This establishes a real Berlin parliamentary oversight/fact-finding mechanism. It does **not** establish that the BSW's factual or causal Corona allegations are true.
@@ -14,7 +14,7 @@ For the Messe/Jafféstraße treatment centre, the contemporaneous Berlin Senate 
 
 Therefore the programme's characterisations and aggregate cost claim (e.g. `rund 90 Mio. Euro`) remain **programme source claims requiring evidentiary reconciliation**. They must not be silently promoted to WÖk facts.
 
-### 2. U01 — contextual/rationale unit
+### 2. U01 - contextual/rationale unit
 
 `BE-BSW-P28-U01-156093ba66d9`
 
@@ -22,7 +22,7 @@ Therefore the programme's characterisations and aggregate cost claim (e.g. `rund
 - `counts_as_effect_object = false`
 - Exact reason: the unit supplies historical/partisan framing, diagnoses, references to prior written questions and rationale for an investigation. It does not specify an additional independent policy lever beyond the investigation-committee instrument in U02. Assertions about earlier parties, lessons and findings remain source claims, not WÖk-established facts.
 
-### 3. U02 must be version-repaired — one real instrument, many claims/questions
+### 3. U02 must be version-repaired - one real instrument, many claims/questions
 
 Current source unit:
 `BE-BSW-P28-U02-813956b62325`
@@ -36,7 +36,7 @@ Set the original U02 to:
 
 CodeX may generate only deterministic child/merge IDs from the exact clauses below. Fach semantics come only from this handoff.
 
-### 4. Canonical active effect child — Corona-Untersuchungsausschuss
+### 4. Canonical active effect child - Corona-Untersuchungsausschuss
 
 From the exact source clause in current A01:
 `Das wollen wir in einem Corona-Untersuchungsausschuss aufarbeiten:`
@@ -57,7 +57,7 @@ Create one canonical source-bound effect child (stable deterministic child ID ge
 
 Any later phrases that merely demand that another listed topic be `geklärt` in the same committee are restatements/scope additions, not additional independent committees/effects.
 
-### 5. Exact source repair A01+A02 — abbreviation split
+### 5. Exact source repair A01+A02 - abbreviation split
 
 Current tokenizer incorrectly split `90 Mio. Euro.`:
 - `BE-BSW-P28-U02-A01-4ae32a01eb0f`
@@ -65,17 +65,17 @@ Current tokenizer incorrectly split `90 Mio. Euro.`:
 
 Version both parents to zero-count and deterministically materialise two semantic children from the combined text:
 
-**Child GOV** — exact clause already defined above:
+**Child GOV** - exact clause already defined above:
 `Das wollen wir in einem Corona-Untersuchungsausschuss aufarbeiten:`
 → canonical `EXPLICIT_FACH_APPROVED` effect child from section 4.
 
-**Child SCOPE-CBZJ** — exact source span:
+**Child SCOPE-CBZJ** - exact source span:
 `Auf- und Abbau der Phantomklinik in der Berliner Messe, Kostenpunkt: rund 90 Mio. Euro.`
 - `terminal_fach_state = NON_EFFECT_INVESTIGATION_SCOPE_AND_PROGRAMME_SOURCE_CLAIM_REVIEWED`
 - `counts_as_effect_object = false`
 - Source-claim guard: the centre's reserve purpose is independently documented by the 11.05.2020 Senate source; the programme's wording and aggregate `~90 Mio.` figure are not adopted as WÖk facts by this review.
 
-### 6. Remaining P28 U02 objects — all reviewed, zero-counting scope/claim/rationale objects
+### 6. Remaining P28 U02 objects - all reviewed, zero-counting scope/claim/rationale objects
 
 Unless explicitly repaired below, preserve current source text/hash and classify as zero-count terminal review objects. They do **not** receive impact direction or evidence level as independent measures.
 
@@ -133,7 +133,7 @@ The statements are legitimate investigation topics/claims, not independently acc
 
 A30 asks what should be learned for future targeted support but specifies no independent support instrument here.
 
-### 7. Exact source repair A31+A32 — `4 Mio. Euro` split
+### 7. Exact source repair A31+A32 - `4 Mio. Euro` split
 
 Current malformed fragments:
 - `BE-BSW-P28-U02-A31-3a41ef0dc93a` = `In Berlin wurden in 75.000 Verfahren über 4 Mio.`
@@ -170,7 +170,7 @@ These are one physical-page continuation sentence. Version both fragments to zer
 
 ### 9. P28 terminality / residual contract
 
-After lossless materialisation of sections 2–8 and only after the P28→P29 continuation repair is represented:
+After lossless materialisation of sections 2-8 and only after the P28→P29 continuation repair is represented:
 
 `BE_BSW_P28_FACH_COMPLETE = PASS_SOURCE_BOUND`
 
@@ -182,6 +182,6 @@ Recompute Berlin/BSW residual **SET-WISE only** from exact current main + all au
 
 ### 10. CodeX handoff
 
-On the existing pending GitHub-only source-order lane, extend the authoritative queue from P22→P27 to **P22→P28**. Preserve P1–P21 terminal. Materialise Fach losslessly, generate only the deterministic child/merge/cross-page IDs/hashes described above, and post the generated IDs/exact text spans + SET-WISE residual back to #240/#241. Do not synthesize any Fach, DNS, Recommendation or score. Do not credit generic #313 RNAA where explicit handoffs supersede it.
+On the existing pending GitHub-only source-order lane, extend the authoritative queue from P22→P27 to **P22→P28**. Preserve P1-P21 terminal. Materialise Fach losslessly, generate only the deterministic child/merge/cross-page IDs/hashes described above, and post the generated IDs/exact text spans + SET-WISE residual back to #240/#241. Do not synthesize any Fach, DNS, Recommendation or score. Do not credit generic #313 RNAA where explicit handoffs supersede it.
 
 No Vercel Preview/build/deployment/promotion. No owner RC request.

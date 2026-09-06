@@ -1,6 +1,6 @@
-# Parliament Reuse Map — Was das Wirkungsportal Parlament wiederverwendet
+# Parliament Reuse Map - Was das Wirkungsportal Parlament wiederverwendet
 
-Stand: 2026-08-14. Verbindliche Vorprüfung nach Bootstrap §45/§46: Für jede Parlament-Funktion gilt REUSE_EXISTING > EXTEND_EXISTING > WRAP_EXISTING > BUILD_NEW — mit Begründung.
+Stand: 2026-08-14. Verbindliche Vorprüfung nach Bootstrap §45/§46: Für jede Parlament-Funktion gilt REUSE_EXISTING > EXTEND_EXISTING > WRAP_EXISTING > BUILD_NEW - mit Begründung.
 
 | Parlament-Funktion | Entscheidung | Vorhandene WÖk-Fähigkeit | Begründung/Auflagen |
 |---|---|---|---|
@@ -14,7 +14,7 @@ Stand: 2026-08-14. Verbindliche Vorprüfung nach Bootstrap §45/§46: Für jede 
 | Monitoring/Indikatoren | **REUSE** | Master Items v1.3 (WÖk-IDs, Schwellen, Prüfstatus) + Wirkungscontrolling-Methodik | Indikatorwahl je Case aus Register, mit WOK_ID zitieren |
 | T-SROI-Vertiefung | **REUSE** | Rechenstandard v1.1 + Rechner | nur wo soziale Langzeitwirkung modellierbar; Schutz-Gate |
 | Claim-/Gegenargument-/Framing-Prüfung | **REUSE** | Wirkungsradar-Systematik (Faktenlage→Narrativ→Folgen→Antwort; 127 Debattenkarten; Truth-Sandwich/Folgen-vor-Fakten) | Wirkungsgegenprobe (§27) auf dieser Methodik aufbauen |
-| Regionale Rückkopplung (Wahlkreis) | **REUSE + BUILD_NEW** | 299-Wahlkreis-Datensatz (Bundeswahlleiterin, Lizenz DL-DE 2.0) | vorhanden: Kontext-Indikatoren; NEU nötig: territoriale Zuordnungsschicht (AGS, Kommune↔Wahlkreis, `is_exact/is_proxy`) — KWI-Quelle erst migrieren |
+| Regionale Rückkopplung (Wahlkreis) | **REUSE + BUILD_NEW** | 299-Wahlkreis-Datensatz (Bundeswahlleiterin, Lizenz DL-DE 2.0) | vorhanden: Kontext-Indikatoren; NEU nötig: territoriale Zuordnungsschicht (AGS, Kommune↔Wahlkreis, `is_exact/is_proxy`) - KWI-Quelle erst migrieren |
 | Vertiefung WÖk-KI | **WRAP** | Oracle `/api/woek-ai` + Privacy-Muster V3 (Opt-in, Kontext-Sperrliste: keine Partei/Fraktion/E-Mail/IDs) | KI nie votumsfähig; EDITORIAL_REVIEW_REQUIRED-Pfad; vorher Shared-Service-Entscheidung (2 Backends) |
 | Lernen/Vertiefung | **REUSE** | Akademie-Kurse (WÖk-G), Studienskripte, Methodenraum | Verlinken statt Erklärwelten nachbauen |
 | Wissenschaftliche Veröffentlichung | **REUSE** | Institut (Herausgeberrolle, Quellen-SoR) + Onlinefassungs-System (zitierfähige Kapitel) | Trust-Architektur: „Herausgegeben vom Institut für Wirkungsökonomie" |
@@ -26,7 +26,7 @@ Stand: 2026-08-14. Verbindliche Vorprüfung nach Bootstrap §45/§46: Für jede 
 | Auth/Rollen Redaktion | **REUSE** | Supabase+Discord-Rollen-Muster der Akademie (Guards, Overrides, Audit) | RBAC serverseitig; MFA-Frage an Codex |
 | Analytics | **REUSE (Muster)** | anonymisierte Ingest-Muster (SHA-256, CORS-Whitelist, ohne politische Profile) | vorher Kanonisierung der zwei Ingests |
 | **Parlamentarischer Radar (DIP-Ingestion)** | **BUILD_NEW** | nur vorbereiteter Registry-Eintrag (`external-data-sources.json#bundestag-bundesrat`) | keine vergleichbare Fähigkeit; DIP-API-Doku aktuell prüfen; Vorgangs-Lebenszyklen nicht hart verdrahten |
-| Dokumentversionierung parlamentarischer Vorgänge | **BUILD_NEW** (Muster reuse) | — | DocumentVersion/Diff + Wirkungsänderungs-Status (NO/MINOR/MATERIAL/VERDICT_REVIEW) |
+| Dokumentversionierung parlamentarischer Vorgänge | **BUILD_NEW** (Muster reuse) | - | DocumentVersion/Diff + Wirkungsänderungs-Status (NO/MINOR/MATERIAL/VERDICT_REVIEW) |
 | Materialitäts-/Wirkungsrelevanz-Engine | **BUILD_NEW** | Kriterienrohstoff: Wirkungsrelevanz-Logik aus V3-Doku + Bootstrap §11 | veröffentlichter Standard „Warum prüfen wir das?" |
 | Recommendation-Engine (regelbasiert, votumsfähig) | **BUILD_NEW** | Muster: deterministische V3-Regeln | nie LLM-generiert; Neutralitätstest same_case+different_party=identical_verdict in CI |
 
@@ -36,4 +36,4 @@ Stand: 2026-08-14. Verbindliche Vorprüfung nach Bootstrap §45/§46: Für jede 
 2. **Determinismus-Regel**: „Dieselben Angaben führen immer zum selben Ergebnis"; sichtbare Texte aus Registries, nicht aus freier Frontend-Logik.
 3. **Datenlücken ausweisen, nicht überbrücken** (Site-weite Grundregel).
 4. **Keine Personen-/Parteibewertung** (api/v1/capabilities-Grenzen + AGENTS.md).
-5. **Institutionelle Herausgeberschaft** (Institut) mit Korrekturkultur — Trust-Anforderungen aus dem Master-Prompt-Ergänzungsblock.
+5. **Institutionelle Herausgeberschaft** (Institut) mit Korrekturkultur - Trust-Anforderungen aus dem Master-Prompt-Ergänzungsblock.

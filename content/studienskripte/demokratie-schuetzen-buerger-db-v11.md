@@ -3,7 +3,7 @@
 **Reihe:** Demokratie schützen · Bürger:innen · DB11
 **Status:** vollständiger Master · Modellfall Neustadt
 **Empfohlene Lernzeit:** 80 Minuten
-**Voraussetzung:** DB1–DB10
+**Voraussetzung:** DB1-DB10
 **Reader-/Seed-Spiegel:** `woek-akademie-app/content/lehrgaenge/demokratie-schuetzen-buerger-db-v11.md`
 
 **Modellhinweis:** Neustadt, der Nachbarschaftsrat, die Chatgruppe und alle Personen dieser Lektion sind erfunden. Der Fall zeigt Bedingungen, unter denen Information, Zugehörigkeit und Korrektur im Alltag gestärkt oder geschwächt werden können. Er bewertet keine politischen Haltungen und keinen Wert von Personen. Dieses Skript ist weder Rechtsberatung noch Sicherheitsanweisung. Es ist keine Sprachpolizei, keine Planwirtschaft und kein Social-Credit-System.
@@ -39,7 +39,7 @@ Mara liest die Nachrichten nach einem langen Arbeitstag. Sie ärgert sich, denn 
 
 Der Fall hat kein märchenhaftes Ende. Die Umleitung bleibt für manche Menschen umständlich. Die Stadt hat schlecht kommuniziert. Und Mara hat weder die Gruppe bekehrt noch die Sanierung entschieden. Sichtbar geworden sind aber drei Dinge: Die Ausgangsbehauptung war unvollständig; die praktischen Hürden waren real; und es entstand ein Weg, auf dem Informationen und Folgen zurück in eine zuständige Entscheidung gelangen konnten.
 
-## Was ein Schutzplan leisten kann – und was nicht
+## Was ein Schutzplan leisten kann - und was nicht
 
 Ein Schutzplan ersetzt keine Redaktion, keine Verwaltung, kein Gericht und keine politische Organisation. Er verspricht auch nicht, dass man Desinformation, Streit oder Diskriminierung durch das richtige Verhalten verschwinden lassen kann. Die Verantwortung für einen vertrauenswürdigen Informationsraum liegt bei Plattformen, Medien, Institutionen und Politik ebenso wie bei Individuen. Die OECD beschreibt Informationsintegrität entsprechend als Aufgabe, die Regeln, Bildung, Transparenz und demokratische Verfahren verbindet. [OECD-Empfehlung zur Informationsintegrität](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/)
 
@@ -216,7 +216,7 @@ Eine einzelne Person ersetzt weder Plattformregeln noch Pressefreiheit, Bildung 
 
 ### „Wenn ich nicht sofort teile, mache ich mich doch unsichtbar.“
 
-Nicht jedes schnelle Teilen ist Teilhabe. Es kann auch eine ungeklärte Behauptung verbreiten. Sichtbarkeit kann wichtig sein, etwa wenn ein reales Problem sonst übersehen wird. Dann ist die bessere Frage: Was muss sichtbar werden – die Empörung, die Quelle, die konkrete Barriere oder die zuständige Entscheidung? Ein vollständiger Link und eine präzise Frage können wirksamer sein als ein alarmierender Ausschnitt.
+Nicht jedes schnelle Teilen ist Teilhabe. Es kann auch eine ungeklärte Behauptung verbreiten. Sichtbarkeit kann wichtig sein, etwa wenn ein reales Problem sonst übersehen wird. Dann ist die bessere Frage: Was muss sichtbar werden - die Empörung, die Quelle, die konkrete Barriere oder die zuständige Entscheidung? Ein vollständiger Link und eine präzise Frage können wirksamer sein als ein alarmierender Ausschnitt.
 
 ### „Das klingt nach Selbstoptimierung statt Politik.“
 
@@ -239,7 +239,7 @@ Nein. Sie entscheiden über Ihre eigene Weitergabe und Ihre eigene Beteiligung. 
 5. Warum ist Reichweite nicht dasselbe wie Wirkung?
 6. Wie wird aus „Niemand hört uns zu“ eine bearbeitbare Frage?
 7. Was verlangt Nichtkompensation, wenn eine Diskussion zugleich viel Aufmerksamkeit erzeugt und Menschen abwertet?
-8. Woran würden Sie erkennen, dass Ihr Plan angepasst werden sollte – ohne sich selbst als Person abzuwerten?
+8. Woran würden Sie erkennen, dass Ihr Plan angepasst werden sollte - ohne sich selbst als Person abzuwerten?
 
 ## Kurzfazit
 

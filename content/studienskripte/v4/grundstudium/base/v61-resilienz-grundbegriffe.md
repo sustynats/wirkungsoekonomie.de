@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein effizientes System kann fragil sein. Ein resilientes System kann Störungen aufnehmen, wesentliche Funktionen erhalten, sich anpassen und sich erholen. Dafür gibt es unterschiedliche Fähigkeiten: **Robustheit** hält aus, **Redundanz** schafft Alternativen, **Diversität** vermeidet gemeinsame Ausfallursachen, **Anpassungsfähigkeit** verändert Verhalten und **Recovery** stellt Funktionen wieder her. WÖk integriert diese Fähigkeiten in Wirkungsentscheidungen – sie hat Resilienz nicht erfunden.
+Ein effizientes System kann fragil sein. Ein resilientes System kann Störungen aufnehmen, wesentliche Funktionen erhalten, sich anpassen und sich erholen. Dafür gibt es unterschiedliche Fähigkeiten: **Robustheit** hält aus, **Redundanz** schafft Alternativen, **Diversität** vermeidet gemeinsame Ausfallursachen, **Anpassungsfähigkeit** verändert Verhalten und **Recovery** stellt Funktionen wieder her. WÖk integriert diese Fähigkeiten in Wirkungsentscheidungen - sie hat Resilienz nicht erfunden.
 
 ## Lernziele
 
@@ -180,7 +180,7 @@ UNDRR, Resilience Engineering, Supply-Chain-/Infrastructure-Resilience und viele
 
 ## 14. Quellen
 
-- UNDRR Terminology – Resilience: https://www.undrr.org/terminology/resilience
+- UNDRR Terminology - Resilience: https://www.undrr.org/terminology/resilience
 - OECD Strategic Foresight: https://www.oecd.org/strategic-foresight/
 - WÖk Resilienz-Dossier: https://wirkungsoekonomie.de/wissen/systemresilienz-statt-nachhaltigkeit/
 
@@ -201,7 +201,7 @@ Wähle ein System und definiere kritische Funktion, fünf Resilienzkapazitäten,
 
 Resilienz heißt nicht, dass nie etwas kaputtgeht.
 
-Es heißt: Wenn etwas passiert, bleibt das Wichtige funktionsfähig – oder kommt schnell zurück.
+Es heißt: Wenn etwas passiert, bleibt das Wichtige funktionsfähig - oder kommt schnell zurück.
 
 Dafür brauchen Systeme unterschiedliche Fähigkeiten.
 

@@ -1,4 +1,4 @@
-# ltw-2026-st-gruene – programme-review – vollständige Darstellung
+# ltw-2026-st-gruene - programme-review - vollständige Darstellung
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -13,7 +13,7 @@
 
 **review_status:** COMPLETE
 
-**plain_language_summary:** Die Wirkungsakte prüft 740 quellengebundene programmatische Zusagen aus dem Dokument. Bewertet werden nicht Partei oder Personen, sondern mögliche Zustandsveränderungen, Risiken, Bedingungen, Schutzgrenzen, Datenbedarf und – wo materiell – kommunikative Vorwirkungen.
+**plain_language_summary:** Die Wirkungsakte prüft 740 quellengebundene programmatische Zusagen aus dem Dokument. Bewertet werden nicht Partei oder Personen, sondern mögliche Zustandsveränderungen, Risiken, Bedingungen, Schutzgrenzen, Datenbedarf und - wo materiell - kommunikative Vorwirkungen.
 
 ### programme_profile
 
@@ -11874,12 +11874,12 @@ _Leere Liste._
 
 **section:** 1. FÜR NATUR, KLIMA UND
 
-**source_text:** Die bürokratischen Hürden für den Bau und Betrieb von Stauanlagen für die Wasserrückhaltung in Entwässerungsgräben der Landwirtschaft müssen reduziert werden, denn hier muss Eigeninitiative unbedingt honoriert und nicht behindert werden. 1.4 Gesunde Wälder und nachhaltige Forstwirtschaft Stabile, klimaresiliente und artenreiche Wälder in Sachsen-Anhalt sind unser Ziel – ökologisch wie wirtschaftlich nachhaltig.
+**source_text:** Die bürokratischen Hürden für den Bau und Betrieb von Stauanlagen für die Wasserrückhaltung in Entwässerungsgräben der Landwirtschaft müssen reduziert werden, denn hier muss Eigeninitiative unbedingt honoriert und nicht behindert werden. 1.4 Gesunde Wälder und nachhaltige Forstwirtschaft Stabile, klimaresiliente und artenreiche Wälder in Sachsen-Anhalt sind unser Ziel - ökologisch wie wirtschaftlich nachhaltig.
 
 
 **decision_or_measure:** Die bürokratischen Hürden für den Bau und Betrieb von Stauanlagen für die …
 
-**intended_change:** Vorgesehene Veränderung: Die bürokratischen Hürden für den Bau und Betrieb von Stauanlagen für die Wasserrückhaltung in Entwässerungsgräben der Landwirtschaft müssen reduziert werden, denn hier muss Eigeninitiative unbedingt honoriert und nicht behindert werden. 1.4 Gesunde Wälder und nachhaltige Forstwirtschaft Stabile, klimaresiliente und artenreiche Wälder in Sachsen-Anhalt sind unser Ziel – ökologisch wie wirtschaftlich nachhaltig.
+**intended_change:** Vorgesehene Veränderung: Die bürokratischen Hürden für den Bau und Betrieb von Stauanlagen für die Wasserrückhaltung in Entwässerungsgräben der Landwirtschaft müssen reduziert werden, denn hier muss Eigeninitiative unbedingt honoriert und nicht behindert werden. 1.4 Gesunde Wälder und nachhaltige Forstwirtschaft Stabile, klimaresiliente und artenreiche Wälder in Sachsen-Anhalt sind unser Ziel - ökologisch wie wirtschaftlich nachhaltig.
 
 ##### decision_readiness
 
@@ -16219,12 +16219,12 @@ _Leere Liste._
 
 **section:** 1. FÜR NATUR, KLIMA UND
 
-**source_text:** Der ökologische Landbau und die mit ihm verbundenen Wertschöpfungsketten sollen besser unterstützt und sein Flächenanteil soll deutlich erhöht werden – insbesondere durch verlässli1 che Ökoprämien und einen stärkeren Fokus auf den Ökolandbau in der Ausbildung, in der Fachschule, bei der Umstellung, bei der Beratung, in den landwirtschaftlichen Lehr- und Versuchseinrichtungen des Landes sowie in der Forschung und Lehre an den Hochschulen.
+**source_text:** Der ökologische Landbau und die mit ihm verbundenen Wertschöpfungsketten sollen besser unterstützt und sein Flächenanteil soll deutlich erhöht werden - insbesondere durch verlässli1 che Ökoprämien und einen stärkeren Fokus auf den Ökolandbau in der Ausbildung, in der Fachschule, bei der Umstellung, bei der Beratung, in den landwirtschaftlichen Lehr- und Versuchseinrichtungen des Landes sowie in der Forschung und Lehre an den Hochschulen.
 
 
 **decision_or_measure:** Der ökologische Landbau und die mit ihm verbundenen Wertschöpfungsketten sollen besser unterstützt …
 
-**intended_change:** Vorgesehene Veränderung: Der ökologische Landbau und die mit ihm verbundenen Wertschöpfungsketten sollen besser unterstützt und sein Flächenanteil soll deutlich erhöht werden – insbesondere durch verlässli1 che Ökoprämien und einen stärkeren Fokus auf den Ökolandbau in der Ausbildung, in der Fachschule, bei der Umstellung, bei der Beratung, in den landwirtschaftlichen Lehr- und Versuchseinrichtungen des Landes sowie in der Forschung und Lehre an den Hochschulen.
+**intended_change:** Vorgesehene Veränderung: Der ökologische Landbau und die mit ihm verbundenen Wertschöpfungsketten sollen besser unterstützt und sein Flächenanteil soll deutlich erhöht werden - insbesondere durch verlässli1 che Ökoprämien und einen stärkeren Fokus auf den Ökolandbau in der Ausbildung, in der Fachschule, bei der Umstellung, bei der Beratung, in den landwirtschaftlichen Lehr- und Versuchseinrichtungen des Landes sowie in der Forschung und Lehre an den Hochschulen.
 
 ##### decision_readiness
 
@@ -33401,12 +33401,12 @@ _Leere Liste._
 
 **section:** 1. FÜR NATUR, KLIMA UND
 
-**source_text:** Die Strompreise wollen wir senken durch eine Verringerung der Stromsteuer auf das europarechtlich zulässige Minimum, eine Strompreiszonenaufteilung Deutschland sowie regionale und dynamische Netzentgelte, sogenannte modale Preise. 1 Akzeptanz- und Beteiligung – Energiewende in Bürgerhand Wir setzen uns für die Stärkung von Bürgerenergiegenossenschaften ein, indem wir deren Gründung unterstützen.
+**source_text:** Die Strompreise wollen wir senken durch eine Verringerung der Stromsteuer auf das europarechtlich zulässige Minimum, eine Strompreiszonenaufteilung Deutschland sowie regionale und dynamische Netzentgelte, sogenannte modale Preise. 1 Akzeptanz- und Beteiligung - Energiewende in Bürgerhand Wir setzen uns für die Stärkung von Bürgerenergiegenossenschaften ein, indem wir deren Gründung unterstützen.
 
 
 **decision_or_measure:** Die Strompreise wollen wir senken durch eine Verringerung der Stromsteuer auf das …
 
-**intended_change:** Vorgesehene Veränderung: Die Strompreise wollen wir senken durch eine Verringerung der Stromsteuer auf das europarechtlich zulässige Minimum, eine Strompreiszonenaufteilung Deutschland sowie regionale und dynamische Netzentgelte, sogenannte modale Preise. 1 Akzeptanz- und Beteiligung – Energiewende in Bürgerhand Wir setzen uns für die Stärkung von Bürgerenergiegenossenschaften ein, indem wir deren Gründung unterstützen.
+**intended_change:** Vorgesehene Veränderung: Die Strompreise wollen wir senken durch eine Verringerung der Stromsteuer auf das europarechtlich zulässige Minimum, eine Strompreiszonenaufteilung Deutschland sowie regionale und dynamische Netzentgelte, sogenannte modale Preise. 1 Akzeptanz- und Beteiligung - Energiewende in Bürgerhand Wir setzen uns für die Stärkung von Bürgerenergiegenossenschaften ein, indem wir deren Gründung unterstützen.
 
 ##### decision_readiness
 
@@ -36670,12 +36670,12 @@ _Leere Liste._
 
 **section:** 1. FÜR NATUR, KLIMA UND
 
-**source_text:** Wir sichern einheitliche hohe Standards, damit Rückbauprozesse umweltgerecht und nachhaltig erfolgen. 1 Mehr Sonnenkraft für Sachsen-Anhalt – vor allem auf versiegelten Flächen Wir setzen uns dafür ein, eine Pﬂicht zur Nutzung von Solarenergie auf Neubauten und umfänglichen Dachsanierungen in Industrie, Gewerbe und Infrastruktur anzuwenden.
+**source_text:** Wir sichern einheitliche hohe Standards, damit Rückbauprozesse umweltgerecht und nachhaltig erfolgen. 1 Mehr Sonnenkraft für Sachsen-Anhalt - vor allem auf versiegelten Flächen Wir setzen uns dafür ein, eine Pﬂicht zur Nutzung von Solarenergie auf Neubauten und umfänglichen Dachsanierungen in Industrie, Gewerbe und Infrastruktur anzuwenden.
 
 
 **decision_or_measure:** Wir sichern einheitliche hohe Standards, damit Rückbauprozesse umweltgerecht und nachhaltig erfolgen
 
-**intended_change:** Vorgesehene Veränderung: Wir sichern einheitliche hohe Standards, damit Rückbauprozesse umweltgerecht und nachhaltig erfolgen. 1 Mehr Sonnenkraft für Sachsen-Anhalt – vor allem auf versiegelten Flächen Wir setzen uns dafür ein, eine Pﬂicht zur Nutzung von Solarenergie auf Neubauten und umfänglichen Dachsanierungen in Industrie, Gewerbe und Infrastruktur anzuwenden.
+**intended_change:** Vorgesehene Veränderung: Wir sichern einheitliche hohe Standards, damit Rückbauprozesse umweltgerecht und nachhaltig erfolgen. 1 Mehr Sonnenkraft für Sachsen-Anhalt - vor allem auf versiegelten Flächen Wir setzen uns dafür ein, eine Pﬂicht zur Nutzung von Solarenergie auf Neubauten und umfänglichen Dachsanierungen in Industrie, Gewerbe und Infrastruktur anzuwenden.
 
 ##### decision_readiness
 
@@ -40858,12 +40858,12 @@ _Leere Liste._
 
 **section:** 1. FÜR NATUR, KLIMA UND
 
-**source_text:** Wir setzen uns dafür ein, unsere Stromnetze zu sanieren, zu optimieren und – wo notwendig – auszubauen, damit der weitere Ausbau der erneuerbaren Energien, von Speicherinfrastruktur und die gesamte Elektriﬁzierung von Industrie, Wärme und Mobilität gelingt.
+**source_text:** Wir setzen uns dafür ein, unsere Stromnetze zu sanieren, zu optimieren und - wo notwendig - auszubauen, damit der weitere Ausbau der erneuerbaren Energien, von Speicherinfrastruktur und die gesamte Elektriﬁzierung von Industrie, Wärme und Mobilität gelingt.
 
 
 **decision_or_measure:** Wir setzen uns dafür ein, unsere Stromnetze zu sanieren, zu optimieren und …
 
-**intended_change:** Vorgesehene Veränderung: Wir setzen uns dafür ein, unsere Stromnetze zu sanieren, zu optimieren und – wo notwendig – auszubauen, damit der weitere Ausbau der erneuerbaren Energien, von Speicherinfrastruktur und die gesamte Elektriﬁzierung von Industrie, Wärme und Mobilität gelingt.
+**intended_change:** Vorgesehene Veränderung: Wir setzen uns dafür ein, unsere Stromnetze zu sanieren, zu optimieren und - wo notwendig - auszubauen, damit der weitere Ausbau der erneuerbaren Energien, von Speicherinfrastruktur und die gesamte Elektriﬁzierung von Industrie, Wärme und Mobilität gelingt.
 
 ##### decision_readiness
 
@@ -50465,12 +50465,12 @@ _Leere Liste._
 
 **section:** 1. FÜR NATUR, KLIMA UND
 
-**source_text:** Wir wollen den Nahverkehr ausbauen – mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren Anschlüssen und einem einfachen, solidarisch ﬁnanzierten Tarifsystem, das Mobilität für alle möglich macht.
+**source_text:** Wir wollen den Nahverkehr ausbauen - mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren Anschlüssen und einem einfachen, solidarisch ﬁnanzierten Tarifsystem, das Mobilität für alle möglich macht.
 
 
-**decision_or_measure:** den Nahverkehr ausbauen – mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren …
+**decision_or_measure:** den Nahverkehr ausbauen - mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen den Nahverkehr ausbauen – mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren Anschlüssen und einem einfachen, solidarisch ﬁnanzierten Tarifsystem, das Mobilität für alle möglich macht.
+**intended_change:** Vorgesehene Veränderung: Wir wollen den Nahverkehr ausbauen - mit dichterer Taktung, dem Ausbau von Busverbindungen, besseren Anschlüssen und einem einfachen, solidarisch ﬁnanzierten Tarifsystem, das Mobilität für alle möglich macht.
 
 ##### decision_readiness
 
@@ -56225,12 +56225,12 @@ _Leere Liste._
 
 **section:** 1. FÜR NATUR, KLIMA UND
 
-**source_text:** Darüber hinaus setzen wir uns ein für ein ambitioniertes Landesfußverkehrskonzept, das durch klare Strategien und Maßnahmen die Infrastruktur für Fußgänger*innen verbessert und nachhaltige Mobilität unterstützt. 2 Auto, Carsharing und Elektromobilität Das Auto prägt nach wie vor den Alltag vieler Menschen – gerade in einem Flächenland wie Sachsen-Anhalt.
+**source_text:** Darüber hinaus setzen wir uns ein für ein ambitioniertes Landesfußverkehrskonzept, das durch klare Strategien und Maßnahmen die Infrastruktur für Fußgänger*innen verbessert und nachhaltige Mobilität unterstützt. 2 Auto, Carsharing und Elektromobilität Das Auto prägt nach wie vor den Alltag vieler Menschen - gerade in einem Flächenland wie Sachsen-Anhalt.
 
 
 **decision_or_measure:** Darüber hinaus setzen wir uns ein für ein ambitioniertes Landesfußverkehrskonzept, das durch …
 
-**intended_change:** Vorgesehene Veränderung: Darüber hinaus setzen wir uns ein für ein ambitioniertes Landesfußverkehrskonzept, das durch klare Strategien und Maßnahmen die Infrastruktur für Fußgänger*innen verbessert und nachhaltige Mobilität unterstützt. 2 Auto, Carsharing und Elektromobilität Das Auto prägt nach wie vor den Alltag vieler Menschen – gerade in einem Flächenland wie Sachsen-Anhalt.
+**intended_change:** Vorgesehene Veränderung: Darüber hinaus setzen wir uns ein für ein ambitioniertes Landesfußverkehrskonzept, das durch klare Strategien und Maßnahmen die Infrastruktur für Fußgänger*innen verbessert und nachhaltige Mobilität unterstützt. 2 Auto, Carsharing und Elektromobilität Das Auto prägt nach wie vor den Alltag vieler Menschen - gerade in einem Flächenland wie Sachsen-Anhalt.
 
 ##### decision_readiness
 
@@ -59542,12 +59542,12 @@ _Leere Liste._
 
 **section:** 1. FÜR NATUR, KLIMA UND
 
-**source_text:** Für uns muss dieses Ziel oberste Priorität in der Verkehrsplanung erhalten und es müssen konsequente Maßnahmen ergriffen werden. 2 Wir stärken Sicherheit und Lebensqualität mit Tempo 30 als innerörtliche Regelgeschwindigkeit – und geben den Kommunen Entscheidungsmöglichkeit für passende Ausnahmen.
+**source_text:** Für uns muss dieses Ziel oberste Priorität in der Verkehrsplanung erhalten und es müssen konsequente Maßnahmen ergriffen werden. 2 Wir stärken Sicherheit und Lebensqualität mit Tempo 30 als innerörtliche Regelgeschwindigkeit - und geben den Kommunen Entscheidungsmöglichkeit für passende Ausnahmen.
 
 
 **decision_or_measure:** Für uns muss dieses Ziel oberste Priorität in der Verkehrsplanung erhalten und …
 
-**intended_change:** Vorgesehene Veränderung: Für uns muss dieses Ziel oberste Priorität in der Verkehrsplanung erhalten und es müssen konsequente Maßnahmen ergriffen werden. 2 Wir stärken Sicherheit und Lebensqualität mit Tempo 30 als innerörtliche Regelgeschwindigkeit – und geben den Kommunen Entscheidungsmöglichkeit für passende Ausnahmen.
+**intended_change:** Vorgesehene Veränderung: Für uns muss dieses Ziel oberste Priorität in der Verkehrsplanung erhalten und es müssen konsequente Maßnahmen ergriffen werden. 2 Wir stärken Sicherheit und Lebensqualität mit Tempo 30 als innerörtliche Regelgeschwindigkeit - und geben den Kommunen Entscheidungsmöglichkeit für passende Ausnahmen.
 
 ##### decision_readiness
 
@@ -68738,12 +68738,12 @@ _Leere Liste._
 
 **section:** 2. FÜR ZUSAMMENHALT,
 
-**source_text:** Wahlrecht für alle Wir setzen uns auf Bundesebene für ein aktives und passives Wahlrecht für alle ein, die dauerhaft in einer Kommune leben – unabhängig von der Staatsangehörigkeit.
+**source_text:** Wahlrecht für alle Wir setzen uns auf Bundesebene für ein aktives und passives Wahlrecht für alle ein, die dauerhaft in einer Kommune leben - unabhängig von der Staatsangehörigkeit.
 
 
 **decision_or_measure:** Wahlrecht für alle Wir setzen uns auf Bundesebene für ein aktives und …
 
-**intended_change:** Vorgesehene Veränderung: Wahlrecht für alle Wir setzen uns auf Bundesebene für ein aktives und passives Wahlrecht für alle ein, die dauerhaft in einer Kommune leben – unabhängig von der Staatsangehörigkeit.
+**intended_change:** Vorgesehene Veränderung: Wahlrecht für alle Wir setzen uns auf Bundesebene für ein aktives und passives Wahlrecht für alle ein, die dauerhaft in einer Kommune leben - unabhängig von der Staatsangehörigkeit.
 
 ##### decision_readiness
 
@@ -83171,12 +83171,12 @@ _Leere Liste._
 
 **section:** 2. FÜR ZUSAMMENHALT,
 
-**source_text:** Unabhängige*r Polizeibeauftragte*r Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht – und das transparent, niedrigschwellig und mit umfassenden Rechten.
+**source_text:** Unabhängige*r Polizeibeauftragte*r Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht - und das transparent, niedrigschwellig und mit umfassenden Rechten.
 
 
 **decision_or_measure:** Unabhängige*r Polizeibeauftragte*r Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und …
 
-**intended_change:** Vorgesehene Veränderung: Unabhängige*r Polizeibeauftragte*r Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht – und das transparent, niedrigschwellig und mit umfassenden Rechten.
+**intended_change:** Vorgesehene Veränderung: Unabhängige*r Polizeibeauftragte*r Wir wollen eine unabhängige Stelle schaffen, die Beschwerden, Hinweise und Fehlverhalten in der Polizei untersucht - und das transparent, niedrigschwellig und mit umfassenden Rechten.
 
 ##### decision_readiness
 
@@ -86353,12 +86353,12 @@ _Leere Liste._
 
 **section:** 2. FÜR ZUSAMMENHALT,
 
-**source_text:** Informations- und Beratungsangebote müssen dabei mehrsprachig, niedrigschwellig und inklusiv zugänglich sein, damit alle von Gewalt betroffenen Frauen – unabhängig von Sprachkenntnissen, Aufenthaltsstatus oder Behinderung – Schutz und Unterstützung ﬁnden.
+**source_text:** Informations- und Beratungsangebote müssen dabei mehrsprachig, niedrigschwellig und inklusiv zugänglich sein, damit alle von Gewalt betroffenen Frauen - unabhängig von Sprachkenntnissen, Aufenthaltsstatus oder Behinderung - Schutz und Unterstützung ﬁnden.
 
 
 **decision_or_measure:** Informations- und Beratungsangebote müssen dabei mehrsprachig, niedrigschwellig und inklusiv zugänglich sein, damit …
 
-**intended_change:** Vorgesehene Veränderung: Informations- und Beratungsangebote müssen dabei mehrsprachig, niedrigschwellig und inklusiv zugänglich sein, damit alle von Gewalt betroffenen Frauen – unabhängig von Sprachkenntnissen, Aufenthaltsstatus oder Behinderung – Schutz und Unterstützung ﬁnden.
+**intended_change:** Vorgesehene Veränderung: Informations- und Beratungsangebote müssen dabei mehrsprachig, niedrigschwellig und inklusiv zugänglich sein, damit alle von Gewalt betroffenen Frauen - unabhängig von Sprachkenntnissen, Aufenthaltsstatus oder Behinderung - Schutz und Unterstützung ﬁnden.
 
 ##### decision_readiness
 
@@ -99797,12 +99797,12 @@ _Leere Liste._
 
 **section:** 2.7 Katastrophenschutz ist
 
-**source_text:** Behindert wird man.“ Wir setzen uns für den Ausbau der Barrierefreiheit im öffentlichen Raum und in staatlichen Einrichtungen ein – und zwar nicht nur physisch, sondern auch durch die Bereitstellung von Informationen in Leichter Sprache.
+**source_text:** Behindert wird man.“ Wir setzen uns für den Ausbau der Barrierefreiheit im öffentlichen Raum und in staatlichen Einrichtungen ein - und zwar nicht nur physisch, sondern auch durch die Bereitstellung von Informationen in Leichter Sprache.
 
 
 **decision_or_measure:** Behindert wird man
 
-**intended_change:** Vorgesehene Veränderung: Behindert wird man.“ Wir setzen uns für den Ausbau der Barrierefreiheit im öffentlichen Raum und in staatlichen Einrichtungen ein – und zwar nicht nur physisch, sondern auch durch die Bereitstellung von Informationen in Leichter Sprache.
+**intended_change:** Vorgesehene Veränderung: Behindert wird man.“ Wir setzen uns für den Ausbau der Barrierefreiheit im öffentlichen Raum und in staatlichen Einrichtungen ein - und zwar nicht nur physisch, sondern auch durch die Bereitstellung von Informationen in Leichter Sprache.
 
 ##### decision_readiness
 
@@ -104270,12 +104270,12 @@ _Leere Liste._
 
 **section:** 2.7 Katastrophenschutz ist
 
-**source_text:** Gleichzeitig muss der MDR weiter modernisiert werden – mit stärkeren Online- und Social-Media-Angeboten.
+**source_text:** Gleichzeitig muss der MDR weiter modernisiert werden - mit stärkeren Online- und Social-Media-Angeboten.
 
 
-**decision_or_measure:** Gleichzeitig muss der MDR weiter modernisiert werden – mit stärkeren Online- und …
+**decision_or_measure:** Gleichzeitig muss der MDR weiter modernisiert werden - mit stärkeren Online- und …
 
-**intended_change:** Vorgesehene Veränderung: Gleichzeitig muss der MDR weiter modernisiert werden – mit stärkeren Online- und Social-Media-Angeboten.
+**intended_change:** Vorgesehene Veränderung: Gleichzeitig muss der MDR weiter modernisiert werden - mit stärkeren Online- und Social-Media-Angeboten.
 
 ##### decision_readiness
 
@@ -107532,12 +107532,12 @@ _Leere Liste._
 
 **section:** 3. FÜR BESTE
 
-**source_text:** Die Forderungen des Netzwerks gegen Kinderarmut und der Landesarmutskonferenz wollen wir aufgreifen und zu Beginn der neuen Legislatur in einen Landesaktionsplan überführen – mit konsequenter Armuts- und Reichtumsberichterstattung, verlässlicher Finanzierung der Kita- und Schulsozialarbeit, der Ju9
+**source_text:** Die Forderungen des Netzwerks gegen Kinderarmut und der Landesarmutskonferenz wollen wir aufgreifen und zu Beginn der neuen Legislatur in einen Landesaktionsplan überführen - mit konsequenter Armuts- und Reichtumsberichterstattung, verlässlicher Finanzierung der Kita- und Schulsozialarbeit, der Ju9
 
 
 **decision_or_measure:** Die Forderungen des Netzwerks gegen Kinderarmut und der Landesarmutskonferenz wollen wir aufgreifen …
 
-**intended_change:** Vorgesehene Veränderung: Die Forderungen des Netzwerks gegen Kinderarmut und der Landesarmutskonferenz wollen wir aufgreifen und zu Beginn der neuen Legislatur in einen Landesaktionsplan überführen – mit konsequenter Armuts- und Reichtumsberichterstattung, verlässlicher Finanzierung der Kita- und Schulsozialarbeit, der Ju9
+**intended_change:** Vorgesehene Veränderung: Die Forderungen des Netzwerks gegen Kinderarmut und der Landesarmutskonferenz wollen wir aufgreifen und zu Beginn der neuen Legislatur in einen Landesaktionsplan überführen - mit konsequenter Armuts- und Reichtumsberichterstattung, verlässlicher Finanzierung der Kita- und Schulsozialarbeit, der Ju9
 
 ##### decision_readiness
 
@@ -130144,12 +130144,12 @@ _Leere Liste._
 
 **section:** 3.2 Bestmögliche frühkindliche
 
-**source_text:** Vielfalt fördern – Integration und Demokratiebildung stärken Wir setzen uns dafür ein, dass alle Kinder mit Migrationshintergrund in Sachsen-Anhalt umgehend schulpﬂichtig werden und so schnell wie möglich in Regelklassen integriert werden.
+**source_text:** Vielfalt fördern - Integration und Demokratiebildung stärken Wir setzen uns dafür ein, dass alle Kinder mit Migrationshintergrund in Sachsen-Anhalt umgehend schulpﬂichtig werden und so schnell wie möglich in Regelklassen integriert werden.
 
 
-**decision_or_measure:** Vielfalt fördern – Integration und Demokratiebildung stärken Wir setzen uns dafür ein, …
+**decision_or_measure:** Vielfalt fördern - Integration und Demokratiebildung stärken Wir setzen uns dafür ein, …
 
-**intended_change:** Vorgesehene Veränderung: Vielfalt fördern – Integration und Demokratiebildung stärken Wir setzen uns dafür ein, dass alle Kinder mit Migrationshintergrund in Sachsen-Anhalt umgehend schulpﬂichtig werden und so schnell wie möglich in Regelklassen integriert werden.
+**intended_change:** Vorgesehene Veränderung: Vielfalt fördern - Integration und Demokratiebildung stärken Wir setzen uns dafür ein, dass alle Kinder mit Migrationshintergrund in Sachsen-Anhalt umgehend schulpﬂichtig werden und so schnell wie möglich in Regelklassen integriert werden.
 
 ##### decision_readiness
 
@@ -133475,12 +133475,12 @@ _Leere Liste._
 
 **section:** 3.2 Bestmögliche frühkindliche
 
-**source_text:** Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen – insbesondere Kitas und Schulen – strukturell und ﬁnanziell stärken und mittels des etablierten LISA9
+**source_text:** Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen - insbesondere Kitas und Schulen - strukturell und ﬁnanziell stärken und mittels des etablierten LISA9
 
 
-**decision_or_measure:** Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen – insbesondere Kitas …
+**decision_or_measure:** Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen - insbesondere Kitas …
 
-**intended_change:** Vorgesehene Veränderung: Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen – insbesondere Kitas und Schulen – strukturell und ﬁnanziell stärken und mittels des etablierten LISA9
+**intended_change:** Vorgesehene Veränderung: Deshalb wollen wir die Kooperation zwischen Kultur- und Bildungseinrichtungen - insbesondere Kitas und Schulen - strukturell und ﬁnanziell stärken und mittels des etablierten LISA9
 
 ##### decision_readiness
 
@@ -133778,12 +133778,12 @@ _Leere Liste._
 
 **section:** 3.4 Faire Ausbildung und
 
-**source_text:** Wir wollen die Entstehung von Schulgärten und grünen Klassenzimmern im Freien fördern. Dazu gehören auch das Errichten von Schulküchen in den Schulen und die Bildung zur gesunden Ernährung für alle Kinder. 3.4 Faire Ausbildung und lebenslanges Lernen Eine gute Ausbildung ist der Schlüssel für ein selbstbestimmtes Arbeitsleben – und für die wirtschaftliche Zukunft unseres Landes.
+**source_text:** Wir wollen die Entstehung von Schulgärten und grünen Klassenzimmern im Freien fördern. Dazu gehören auch das Errichten von Schulküchen in den Schulen und die Bildung zur gesunden Ernährung für alle Kinder. 3.4 Faire Ausbildung und lebenslanges Lernen Eine gute Ausbildung ist der Schlüssel für ein selbstbestimmtes Arbeitsleben - und für die wirtschaftliche Zukunft unseres Landes.
 
 
 **decision_or_measure:** die Entstehung von Schulgärten und grünen Klassenzimmern im Freien fördern
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen die Entstehung von Schulgärten und grünen Klassenzimmern im Freien fördern. Dazu gehören auch das Errichten von Schulküchen in den Schulen und die Bildung zur gesunden Ernährung für alle Kinder. 3.4 Faire Ausbildung und lebenslanges Lernen Eine gute Ausbildung ist der Schlüssel für ein selbstbestimmtes Arbeitsleben – und für die wirtschaftliche Zukunft unseres Landes.
+**intended_change:** Vorgesehene Veränderung: Wir wollen die Entstehung von Schulgärten und grünen Klassenzimmern im Freien fördern. Dazu gehören auch das Errichten von Schulküchen in den Schulen und die Bildung zur gesunden Ernährung für alle Kinder. 3.4 Faire Ausbildung und lebenslanges Lernen Eine gute Ausbildung ist der Schlüssel für ein selbstbestimmtes Arbeitsleben - und für die wirtschaftliche Zukunft unseres Landes.
 
 ##### decision_readiness
 
@@ -134082,12 +134082,12 @@ _Leere Liste._
 
 **section:** 3.4 Faire Ausbildung und
 
-**source_text:** Wir setzen uns für faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein – vom Start in die Ausbildung über eine faire Bezahlung bis hin zum lebenslangen Lernen.
+**source_text:** Wir setzen uns für faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein - vom Start in die Ausbildung über eine faire Bezahlung bis hin zum lebenslangen Lernen.
 
 
-**decision_or_measure:** faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein – vom Start in …
+**decision_or_measure:** faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein - vom Start in …
 
-**intended_change:** Vorgesehene Veränderung: Wir setzen uns für faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein – vom Start in die Ausbildung über eine faire Bezahlung bis hin zum lebenslangen Lernen.
+**intended_change:** Vorgesehene Veränderung: Wir setzen uns für faire Bedingungen, verlässliche Unterstützung und echte Perspektiven ein - vom Start in die Ausbildung über eine faire Bezahlung bis hin zum lebenslangen Lernen.
 
 ##### decision_readiness
 
@@ -156273,12 +156273,12 @@ _Leere Liste._
 
 **section:** 3.6 Lebendige Kultur als Grundstein
 
-**source_text:** Wir fordern die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs‑Tafel“ an Schulen, um kulturelle Bildung zu stärken und kreative Ausdrucksformen für alle Schüler*innen zugänglich zu machen.
+**source_text:** Wir fordern die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs-Tafel“ an Schulen, um kulturelle Bildung zu stärken und kreative Ausdrucksformen für alle Schüler*innen zugänglich zu machen.
 
 
-**decision_or_measure:** die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs‑Tafel“ an Schulen, um …
+**decision_or_measure:** die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs-Tafel“ an Schulen, um …
 
-**intended_change:** Vorgesehene Veränderung: Wir fordern die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs‑Tafel“ an Schulen, um kulturelle Bildung zu stärken und kreative Ausdrucksformen für alle Schüler*innen zugänglich zu machen.
+**intended_change:** Vorgesehene Veränderung: Wir fordern die gezielte Förderung von Kunstprojekten, Literaturaktionen und einer „Bildungs-Tafel“ an Schulen, um kulturelle Bildung zu stärken und kreative Ausdrucksformen für alle Schüler*innen zugänglich zu machen.
 
 ##### decision_readiness
 
@@ -160508,12 +160508,12 @@ _Leere Liste._
 
 **section:** 3.6 Lebendige Kultur als Grundstein
 
-**source_text:** Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz‑Staatsvertrags einbringen. 3.8 Zivilgesellschaft fördern: Engagement verdient Rückhalt Eine lebendige Demokratie lebt von weit mehr als Parlamenten oder Regierungen.
+**source_text:** Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz-Staatsvertrags einbringen. 3.8 Zivilgesellschaft fördern: Engagement verdient Rückhalt Eine lebendige Demokratie lebt von weit mehr als Parlamenten oder Regierungen.
 
 
-**decision_or_measure:** Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz‑Staatsvertrags einbringen
+**decision_or_measure:** Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz-Staatsvertrags einbringen
 
-**intended_change:** Vorgesehene Veränderung: Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz‑Staatsvertrags einbringen. 3.8 Zivilgesellschaft fördern: Engagement verdient Rückhalt Eine lebendige Demokratie lebt von weit mehr als Parlamenten oder Regierungen.
+**intended_change:** Vorgesehene Veränderung: Diese Aspekte werden wir auch in die Reform des Jugendmedienschutz-Staatsvertrags einbringen. 3.8 Zivilgesellschaft fördern: Engagement verdient Rückhalt Eine lebendige Demokratie lebt von weit mehr als Parlamenten oder Regierungen.
 
 ##### decision_readiness
 
@@ -181750,12 +181750,12 @@ _Leere Liste._
 
 **section:** 4.2 Integration ermöglichen:
 
-**source_text:** Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern – ohne Eigenbeteiligung der Träger.
+**source_text:** Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern - ohne Eigenbeteiligung der Träger.
 
 
-**decision_or_measure:** Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern – ohne Eigenbeteiligung der …
+**decision_or_measure:** Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern - ohne Eigenbeteiligung der …
 
-**intended_change:** Vorgesehene Veränderung: Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern – ohne Eigenbeteiligung der Träger.
+**intended_change:** Vorgesehene Veränderung: Die Förderung der Schwangerschaftsberatungsstellen werden wir vollumfänglich sichern - ohne Eigenbeteiligung der Träger.
 
 ##### decision_readiness
 
@@ -200498,12 +200498,12 @@ _Leere Liste._
 
 **section:** 5. FÜR EINE STARKE,
 
-**source_text:** Nachfolge, Gründungen und Digitalisierung fördern Wir unterstützen Unternehmensnachfolgen im Handwerk und Mittelstand – besonders im ländlichen Raum – durch Beratung, Förderung und Genossenschaftsmodelle.
+**source_text:** Nachfolge, Gründungen und Digitalisierung fördern Wir unterstützen Unternehmensnachfolgen im Handwerk und Mittelstand - besonders im ländlichen Raum - durch Beratung, Förderung und Genossenschaftsmodelle.
 
 
 **decision_or_measure:** Nachfolge, Gründungen und Digitalisierung fördern Wir unterstützen Unternehmensnachfolgen im Handwerk und Mittelstand …
 
-**intended_change:** Vorgesehene Veränderung: Nachfolge, Gründungen und Digitalisierung fördern Wir unterstützen Unternehmensnachfolgen im Handwerk und Mittelstand – besonders im ländlichen Raum – durch Beratung, Förderung und Genossenschaftsmodelle.
+**intended_change:** Vorgesehene Veränderung: Nachfolge, Gründungen und Digitalisierung fördern Wir unterstützen Unternehmensnachfolgen im Handwerk und Mittelstand - besonders im ländlichen Raum - durch Beratung, Förderung und Genossenschaftsmodelle.
 
 ##### decision_readiness
 
@@ -201100,12 +201100,12 @@ _Leere Liste._
 
 **section:** 5. FÜR EINE STARKE,
 
-**source_text:** Wir wollen ihre Chancen verbessern – durch die gezielte Förderung selbstständiger Frauen im Handwerk, Mutterschutz auch für Selbstständige, Unterstützung bei Unternehmensnachfolgen sowie Programme für Einstieg und Wiedereinstieg und verkürzte Ausbildungswege.
+**source_text:** Wir wollen ihre Chancen verbessern - durch die gezielte Förderung selbstständiger Frauen im Handwerk, Mutterschutz auch für Selbstständige, Unterstützung bei Unternehmensnachfolgen sowie Programme für Einstieg und Wiedereinstieg und verkürzte Ausbildungswege.
 
 
-**decision_or_measure:** ihre Chancen verbessern – durch die gezielte Förderung selbstständiger Frauen im Handwerk, …
+**decision_or_measure:** ihre Chancen verbessern - durch die gezielte Förderung selbstständiger Frauen im Handwerk, …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen ihre Chancen verbessern – durch die gezielte Förderung selbstständiger Frauen im Handwerk, Mutterschutz auch für Selbstständige, Unterstützung bei Unternehmensnachfolgen sowie Programme für Einstieg und Wiedereinstieg und verkürzte Ausbildungswege.
+**intended_change:** Vorgesehene Veränderung: Wir wollen ihre Chancen verbessern - durch die gezielte Förderung selbstständiger Frauen im Handwerk, Mutterschutz auch für Selbstständige, Unterstützung bei Unternehmensnachfolgen sowie Programme für Einstieg und Wiedereinstieg und verkürzte Ausbildungswege.
 
 ##### decision_readiness
 
@@ -219559,12 +219559,12 @@ _Leere Liste._
 
 **section:** 5. FÜR EINE STARKE,
 
-**source_text:** Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpﬂichtende Zwischennutzung.
+**source_text:** Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten - etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpﬂichtende Zwischennutzung.
 
 
-**decision_or_measure:** Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- …
+**decision_or_measure:** Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten - etwa Nutzungs- …
 
-**intended_change:** Vorgesehene Veränderung: Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten – etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpﬂichtende Zwischennutzung.
+**intended_change:** Vorgesehene Veränderung: Kommunen sollen wirksamere, abgestufte Instrumente gegen langfristigen Leerstand erhalten - etwa Nutzungs- oder Sanierungsfristen, höhere Abgaben oder verpﬂichtende Zwischennutzung.
 
 ##### decision_readiness
 

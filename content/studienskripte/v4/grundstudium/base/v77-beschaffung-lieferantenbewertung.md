@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v77-beschaffung-lieferantenbewertung.md curriculum=4.0 sanitized=true -->
-# V77 · Beschaffung und Lieferantenbewertung – Wirkung in Vergabe und Einkauf anschlussfähig machen
+# V77 · Beschaffung und Lieferantenbewertung - Wirkung in Vergabe und Einkauf anschlussfähig machen
 
 **lecture_id:** `WOEK-G-BASE-077`  
 **display_code:** `V77`  
@@ -43,7 +43,7 @@ Ein Lieferant kann mehrere Produkte mit unterschiedlichen Profilen haben.
 
 ### Mindest-/Ausschlusskriterium
 
-muss erfüllt sein, sonst keine Zulässigkeit/Teilnahme – rechtlich/vertraglich zu prüfen.
+muss erfüllt sein, sonst keine Zulässigkeit/Teilnahme - rechtlich/vertraglich zu prüfen.
 
 ### Zuschlags-/Auswahlkriterium
 
@@ -234,4 +234,4 @@ Länder- oder Branchenrisiken können sagen: Hier genauer hinschauen. Sie beweis
 
 Der Merksatz lautet:
 
-**Gute wirkungsorientierte Beschaffung bewertet den konkreten Gegenstand mit passenden Nachweisen – und nutzt Einkaufsmacht, um reale Verbesserungen zu ermöglichen, nicht nur Labels zu sortieren.**
+**Gute wirkungsorientierte Beschaffung bewertet den konkreten Gegenstand mit passenden Nachweisen - und nutzt Einkaufsmacht, um reale Verbesserungen zu ermöglichen, nicht nur Labels zu sortieren.**

@@ -1,4 +1,4 @@
-## WÖk FACH BATCH — Berlin BSW P32: AfD-Verbotsposition, direkte Demokratie, Gendersprache/Verwaltungssprache, öffentlicher Dienst, Schutz sexueller Minderheiten — source-bound terminal review
+## WÖk FACH BATCH - Berlin BSW P32: AfD-Verbotsposition, direkte Demokratie, Gendersprache/Verwaltungssprache, öffentlicher Dienst, Schutz sexueller Minderheiten - source-bound terminal review
 
 Fresh continuation after P31 `5454095617`. Frozen source artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. Physical P32 was visually cross-checked against the frozen PDF. Generic #313 RNAA is superseded for this exact scope. No DNS mapping, Recommendation, score or programme-wide judgment.
 
@@ -16,14 +16,14 @@ Berlin also has a current, adopted **Landesstrategie für queere Sicherheit und 
 `https://www.berlin.de/sen/lads/schwerpunkte/lsbti/artikel.1430848.php`
 `https://www.berlin.de/sen/asgiva/presse/pressemitteilungen/2026/pressemitteilung.1707319.php`
 
-### 2. U01 — AfD-ban debate position
+### 2. U01 - AfD-ban debate position
 
 `BE-BSW-P32-U01-A01-44b5ec8ae3d1`
 - `terminal_fach_state = NON_EFFECT_PARTY_STRATEGY_AND_OPPOSITION_FRAME_REVIEWED`
 - `counts_as_effect_object = false`
 - Exact reason: the sentence rejects other parties' discussions about a party-ban procedure and advocates competing through arguments/policy. It specifies no Berlin legal, budget or administrative intervention. The programme adjective `antidemokratisch` is party framing and is not promoted to a WÖk factual/legal classification.
 
-### 3. U02/U03 — direct-democracy heading, diagnosis and broad goal
+### 3. U02/U03 - direct-democracy heading, diagnosis and broad goal
 
 `BE-BSW-P32-U02-cdec33c6a9c0` → `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
 
@@ -33,13 +33,13 @@ Berlin also has a current, adopted **Landesstrategie für queere Sicherheit und 
 `BE-BSW-P32-U03-A02-a59b4e24a18b` → `NON_EFFECT_DIRECT_DEMOCRACY_GOAL_REVIEWED`.
 - Concrete institutional changes follow in U04-U08.
 
-### 4. U04 — Senate/Abgeordnetenhaus-initiated regular Volksbefragungen
+### 4. U04 - Senate/Abgeordnetenhaus-initiated regular Volksbefragungen
 
 `BE-BSW-P32-U04-A01-128cba46b443` → `NON_EFFECT_PARTICIPATION_GOAL_REVIEWED`.
 
 `BE-BSW-P32-U04-A02-bebe856b60ab` → `NON_EFFECT_SIMPLIFICATION_AND_EXPANSION_GOAL_REVIEWED`.
 
-`BE-BSW-P32-U04-A03-48996b5d0c57` — constitutional possibility for regular popular consultations initiated by Senate or Abgeordnetenhaus:
+`BE-BSW-P32-U04-A03-48996b5d0c57` - constitutional possibility for regular popular consultations initiated by Senate or Abgeordnetenhaus:
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_PARTICIPATION_AGENDA_SIGNAL_AND_LEGITIMACY_POTENTIAL / QUESTION_DESIGN_TURNOUT_INFORMATION_MAJORITARIANISM_AND_LEGAL_EFFECT_DEPENDENT`
 - `evidence_level = HIGH_FOR_INSTITUTIONAL_RULE_TO_PARTICIPATION_OPPORTUNITY / LOW_FOR_DECISION_QUALITY_TRUST_OR_POLICY_OUTCOME`
@@ -49,7 +49,7 @@ Berlin also has a current, adopted **Landesstrategie für queere Sicherheit und 
 - Risks: agenda-setting by incumbents, plebiscitary campaigning, low-turnout selection, binary compression of complex issues, majority pressure on protected rights, referendum fatigue.
 - Reality check: use/frequency, participation/distribution, question neutrality, information quality, campaign concentration, decision follow-through and independent evidence of legitimacy/decision quality; number of votes is output.
 
-### 5. U05 — mandatory popular vote for every Berlin constitutional amendment
+### 5. U05 - mandatory popular vote for every Berlin constitutional amendment
 
 `BE-BSW-P32-U05-A01-bd484269b9a4`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -62,7 +62,7 @@ Berlin also has a current, adopted **Landesstrategie für queere Sicherheit und 
 - Noncompensation: referendum approval cannot legitimise violations of binding fundamental/higher-law protections.
 - Reality check: turnout/representation, campaign/information equality, rejected/accepted amendment quality, delay/cost and rights/judicial outcomes.
 
-### 6. U06 — 20,000 signatures within 100 days to trigger referendum on enacted laws
+### 6. U06 - 20,000 signatures within 100 days to trigger referendum on enacted laws
 
 `BE-BSW-P32-U06-A01-8953bb477a4a`
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -74,9 +74,9 @@ Berlin also has a current, adopted **Landesstrategie für queere Sicherheit und 
 - Risks: systematic delay, organised-interest advantage, uncertainty for implementation/investment, overload/referendum fatigue, minority-rights pressure.
 - Reality check: trigger frequency, who mobilises, participation/distribution, delays/costs, invalid/admissibility cases, law quality and downstream outcomes.
 
-### 7. U07 — entrench laws adopted by Volksentscheid
+### 7. U07 - entrench laws adopted by Volksentscheid
 
-`BE-BSW-P32-U07-A01-3ed4b2bacab1` — laws adopted by popular vote may only be amended through another population vote:
+`BE-BSW-P32-U07-A01-3ed4b2bacab1` - laws adopted by popular vote may only be amended through another population vote:
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_PROTECTION_OF_POPULAR_MANDATE_VS_POLICY_LOCKIN_AND_ADAPTIVE_CAPACITY / SCOPE_SUNSET_EMERGENCY_AND_HIGHER_LAW_GUARDS_DEPENDENT`
 - `evidence_level = HIGH_FOR_ENTRENCHMENT_RULE_MECHANISM / LOW_FOR_LONG_TERM_POLICY_OUTCOME`
@@ -87,7 +87,7 @@ Berlin also has a current, adopted **Landesstrategie für queere Sicherheit und 
 
 `BE-BSW-P32-U07-A02-2c75d0376296` (Tempelhofer-Feld example) → `NON_EFFECT_EXAMPLE_AND_SCOPE_ILLUSTRATION_REVIEWED`; do not double-count.
 
-### 8. U08 — government/parliament referral of important current questions
+### 8. U08 - government/parliament referral of important current questions
 
 `BE-BSW-P32-U08-A01-9f01b5490fbf`
 - `terminal_fach_state = NON_EFFECT_RESTATEMENT_OR_SCOPE_REFINEMENT_REVIEWED`
@@ -95,7 +95,7 @@ Berlin also has a current, adopted **Landesstrategie für queere Sicherheit und 
 
 `BE-BSW-P32-U08-A02-448d6700cb20` (Olympic/Paralympic bid example) → `NON_EFFECT_EXAMPLE_AND_SCOPE_ILLUSTRATION_REVIEWED`.
 
-### 9. U09 — Gendersprache / administrative language
+### 9. U09 - Gendersprache / administrative language
 
 The current seven sentence-atoms must **not** be treated as seven independent policy effects.
 
@@ -106,7 +106,7 @@ The current seven sentence-atoms must **not** be treated as seven independent po
 - `BE-BSW-P32-U09-A05-d6b7441c6a72` (`Wer gendern möchte ... Pflicht lehnen wir ab`) → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` because the source does not identify which binding duty, institution, employee/student group, legal basis, exception or enforcement rule is to be abolished; voluntary private expression and public/institutional communication are also not distinguished. `exact_reason_code = GENDER_LANGUAGE_DUTY_TARGET_RULE_SCOPE_AND_ENFORCEMENT_UNSPECIFIED`.
 - `BE-BSW-P32-U09-A06-d5873dd30143` → `NON_EFFECT_OPPOSITION_TO_UNSPECIFIED_UNIVERSITY_STUDENT_BODY_PRACTICE_REVIEWED`; `De-facto-Gendersprachzwang` remains programme characterisation absent an exact current rule/institution.
 
-`BE-BSW-P32-U09-A07-c1f1cc4561f0` — administrations/authorities should use language accessible and understandable to everyone:
+`BE-BSW-P32-U09-A07-c1f1cc4561f0` - administrations/authorities should use language accessible and understandable to everyone:
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_PUBLIC_COMMUNICATION_ACCESSIBILITY_AND_COMPREHENSION_POTENTIAL / OPERATIONAL_STANDARD_INCLUSION_AND_USER_TESTING_DEPENDENT`
 - `evidence_level = HIGH_FOR_CLARITY_ACCESSIBILITY_TO_INFORMATION_ACCESS_MECHANISM / OUTCOME_DEPENDENT_ON_IMPLEMENTATION`
@@ -116,24 +116,24 @@ The current seven sentence-atoms must **not** be treated as seven independent po
 - Missing: operational standard, channels/documents covered, Easy/Plain Language and accessibility interfaces, legal terminology exceptions, user testing and quality control.
 - Reality check: comprehension/task completion, error/rework rate, accessibility audits, user-group differences and complaint/help demand.
 
-### 10. U10 — heading
+### 10. U10 - heading
 
 `BE-BSW-P32-U10-91d2b90469c0` (`Echter Diskriminierungsschutz statt Quoten`) → `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
 
-### 11. U11 — hiring/promotions only by aptitude, never by sex/origin/other characteristics
+### 11. U11 - hiring/promotions only by aptitude, never by sex/origin/other characteristics
 
 `BE-BSW-P32-U11-A01-2c6520a85f9e`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: merit-based access to public office is already a constitutional baseline (Art. 33(2) GG). The source does not identify which Berlin quota/equality/positive-action rule would be repealed or changed, how `Eignung` is operationalised, how structurally discriminatory selection criteria are handled, or how the proposal interacts with equality/anti-discrimination law and tie-breaking/underrepresentation measures. Therefore no additional effect beyond the existing merit principle can be assigned from this sentence.
 - `exact_reason_code = PUBLIC_SERVICE_MERIT_CURRENT_BASELINE_AND_ANTI_QUOTA_LEGAL_DELTA_UNSPECIFIED`
 
-### 12. U12 — protection of sexual minorities / data-based violence prevention
+### 12. U12 - protection of sexual minorities / data-based violence prevention
 
 `BE-BSW-P32-U12-A01-9fdff5a78930`
 - `terminal_fach_state = NON_EFFECT_QUEER_SAFETY_AND_ANTI_DISCRIMINATION_GOAL_REVIEWED`
 - Current baseline: Berlin already adopted a 2026 queer-safety strategy; concrete additional instruments must be assessed separately.
 
-`BE-BSW-P32-U12-A02-30a57c566cd0` — identify from which person groups violence originates and align violence prevention accordingly:
+`BE-BSW-P32-U12-A02-30a57c566cd0` - identify from which person groups violence originates and align violence prevention accordingly:
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_EVIDENCE_TARGETED_VIOLENCE_PREVENTION_POTENTIAL / CAUSAL_DATA_INDIVIDUAL_RESPONSIBILITY_NON_STIGMATISATION_AND_RIGHTS_GUARDS_REQUIRED`
 - `evidence_level = MEDIUM_FOR_RISK_PATTERN_TO_TARGETED_PREVENTION_MECHANISM / HIGH_UNCERTAINTY_FOR_GROUP_LEVEL_ATTRIBUTION`
@@ -146,7 +146,7 @@ The current seven sentence-atoms must **not** be treated as seven independent po
 
 ### 13. P32 terminality
 
-After lossless materialisation of sections 2–12:
+After lossless materialisation of sections 2-12:
 
 `BE_BSW_P32_FACH_COMPLETE = PASS_SOURCE_BOUND`
 

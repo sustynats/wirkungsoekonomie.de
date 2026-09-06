@@ -38,7 +38,7 @@ Deeskalation ist kein Gebot, jeden Raum offen zu halten. Bürger:innen dürfen b
 - **Wirkungshypothese**
 
 ## Konkretes Beispiel
-Ein aggressiver Kommentar enthält eine konkrete Drohung. Priorität sind Dokumentation, Plattform-/Sicherheitswege und ggf. Behörden – nicht ein deeskalierendes Gespräch.
+Ein aggressiver Kommentar enthält eine konkrete Drohung. Priorität sind Dokumentation, Plattform-/Sicherheitswege und ggf. Behörden - nicht ein deeskalierendes Gespräch.
 
 ## Gegenbeispiel / typische Fehlinterpretation
 „Demokratische Bürger:innen müssen mit allen weiterreden.“ Nein. Sicherheit und persönliche Grenzen sind legitim.
@@ -47,7 +47,7 @@ Ein aggressiver Kommentar enthält eine konkrete Drohung. Priorität sind Dokume
 Plattformregeln, Straf-/Zivilrecht und Beratungsstellen definieren konkrete Schutzwege. Aktuelle Rechtsfragen werden bei Bedarf fachlich geprüft.
 
 ## WÖk-spezifische Einordnung
-Die Option wird nach Risiko, möglichem Nutzen, Schutzgrenzen und Reversibilität gewählt – nicht aus einem moralischen Kommunikationsideal.
+Die Option wird nach Risiko, möglichem Nutzen, Schutzgrenzen und Reversibilität gewählt - nicht aus einem moralischen Kommunikationsideal.
 
 ## Primär- und Anschlussquellen
 - Grundgesetz: https://www.gesetze-im-internet.de/gg/

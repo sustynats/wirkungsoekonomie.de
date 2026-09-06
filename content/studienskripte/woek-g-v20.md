@@ -4,9 +4,9 @@
 **Kurscode:** woek-g  
 **Vorlesungscode:** V20  
 **Titel:** Gesellschaftliche Resonanzfaktoren  
-**Voraussetzungen:** V01–V19, insbesondere V18 „Zeit, Generationen und unsichtbare Betroffene" und V19 „Wirkstoff, Wirkmechanismus und Wirkungspotenzial"  
-**Lesezeit:** ca. 90–120 Minuten  
-**Status:** Tiefenskript-Sprint 7 · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen
+**Voraussetzungen:** V01-V19, insbesondere V18 „Zeit, Generationen und unsichtbare Betroffene" und V19 „Wirkstoff, Wirkmechanismus und Wirkungspotenzial"  
+**Lesezeit:** ca. 90-120 Minuten  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus, Journal/Blog, Akademie-Quelltexte und externe Literatur
 
 ## Lernziele
@@ -562,7 +562,6 @@ WÖk. Es geht um die Bedingungen, unter denen Wirkungspotenzial verantwortbar in
 ### Interne Quellen
 
 - `docs/lehrgaenge/woek-g-v20-gesellschaftliche-resonanzfaktoren.md` - Quell-Dokument für diese Vorlesung.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Format- und Produktionsvorgabe für ausführliche Studienskripte.
 - `docs/unternehmenslehrgaenge-konzept.md` - didaktischer Rahmen der WÖk-Akademie.
 - `docs/lehrgaenge/sprechertexte/woek-g-v19.md` - Anschluss an Wirkstoff, Wirkmechanismus und Wirkungspotenzial.
 - Website-Root `../buch.html` und `../assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - aktuelles Grundlagenwerk der Wirkungsökonomie.
@@ -596,7 +595,6 @@ Für die WÖk ist diese Einsicht zentral: Sie schützt vor der Verwechslung von 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -660,7 +658,6 @@ Die folgende Runde verdichtet V20 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V20. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## Rückfluss in den WÖk-Korpus
@@ -674,7 +671,6 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V20. Offen bleibt
 
 ## 7. Tiefenskript-Erweiterung Sprint 7
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 

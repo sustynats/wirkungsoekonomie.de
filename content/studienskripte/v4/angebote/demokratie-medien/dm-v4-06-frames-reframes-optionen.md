@@ -18,7 +18,7 @@
 - positive und negative Potenziale beider Darstellungen vergleichen
 
 ## 20-Sekunden-Erklärung
-Jede Darstellung setzt einen Rahmen. Ein Reframe ist nur eine andere Auswahl – nicht automatisch die Wahrheit. Deshalb prüfen wir Originalframe und Reframe gegen Fakten, Auslassungen, Schutzgüter und mögliche Folgen.
+Jede Darstellung setzt einen Rahmen. Ein Reframe ist nur eine andere Auswahl - nicht automatisch die Wahrheit. Deshalb prüfen wir Originalframe und Reframe gegen Fakten, Auslassungen, Schutzgüter und mögliche Folgen.
 
 ## Einfache Einführung
 „Framing“ ist kein Synonym für Manipulation. Schon die Entscheidung, welche Zahl in der Überschrift steht, rahmt eine Geschichte. Qualität entsteht durch Transparenz, Quellen und faire Kontextualisierung.
@@ -67,7 +67,7 @@ Frame/Reframe, Auslassung, Faktenbasis, Potenzial vs. Wirkung.
 Reframing ist eine redaktionelle Option, kein Wahrheitsstempel.
 
 ## Sprechertext
-Ein Reframe ist nicht automatisch ehrlicher. Er kann klären – oder nur anders verzerren. Darum behandeln wir beide Seiten gleich: Was ist belegt? Was wird betont? Was fehlt? Und welche möglichen Folgen hat diese Auswahl?
+Ein Reframe ist nicht automatisch ehrlicher. Er kann klären - oder nur anders verzerren. Darum behandeln wir beide Seiten gleich: Was ist belegt? Was wird betont? Was fehlt? Und welche möglichen Folgen hat diese Auswahl?
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst nach Legacy-Reaudit B06; Medien-/Moderationsentscheidungen werden als evidenzgebundene Interventionen ohne Personen-/Intent-Score behandelt.

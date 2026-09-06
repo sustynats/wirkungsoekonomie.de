@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v55-wirkungsfinanzpolitik-policy-architektur.md curriculum=4.0 sanitized=true -->
-# V55 · Wirkungsfinanzpolitik – Haushalt, Fiskalregeln und Outcome gemeinsam denken
+# V55 · Wirkungsfinanzpolitik - Haushalt, Fiskalregeln und Outcome gemeinsam denken
 
 **lecture_id:** `WOEK-G-BASE-055`  
 **display_code:** `V55`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Staatliche Ausgaben sind nicht automatisch gut, weil ihr Ziel gut klingt – und Sparen ist nicht automatisch solide, wenn dadurch teure Schäden oder Infrastrukturverfall entstehen. **Wirkungsfinanzpolitik** fragt deshalb: Welche realen Zustände verändern Einnahmen, Ausgaben, Garantien und Investitionen – und wie tragfähig ist die Finanzierung? Sie ersetzt Haushaltsrecht und Fiskalregeln nicht. Sie ergänzt sie um Problem, Outcome, Präventionswert, Verteilung und langfristige Resilienz.
+Staatliche Ausgaben sind nicht automatisch gut, weil ihr Ziel gut klingt - und Sparen ist nicht automatisch solide, wenn dadurch teure Schäden oder Infrastrukturverfall entstehen. **Wirkungsfinanzpolitik** fragt deshalb: Welche realen Zustände verändern Einnahmen, Ausgaben, Garantien und Investitionen - und wie tragfähig ist die Finanzierung? Sie ersetzt Haushaltsrecht und Fiskalregeln nicht. Sie ergänzt sie um Problem, Outcome, Präventionswert, Verteilung und langfristige Resilienz.
 
 ## Lernziele
 
@@ -73,7 +73,7 @@ WÖk bewertet Zustandsänderung und Lebenszyklus, nicht nur Buchungskategorie.
 
 ## 5. Opportunitätskosten
 
-Öffentliche Ressourcen sind knapp – nicht nur Geld:
+Öffentliche Ressourcen sind knapp - nicht nur Geld:
 
 - Fachkräfte,
 - Baukapazität,
@@ -153,7 +153,7 @@ Prüfen:
 - Finanzierung,
 - Restwert.
 
-Kurzfristig niedrigste Ausgabe kann langfristig teuer sein – aber das muss belegt werden.
+Kurzfristig niedrigste Ausgabe kann langfristig teuer sein - aber das muss belegt werden.
 
 ## 10. Fiskalische Wirkungsakte
 
@@ -246,4 +246,4 @@ Wirkungsfinanzpolitik verbindet deshalb Haushalt und Realität.
 
 Der Merksatz lautet:
 
-**Nicht wenig oder viel Geld ist der Maßstab. Der Maßstab ist, welche realen Zustände wir mit knappen Ressourcen dauerhaft verbessern – und welche Risiken wir dafür eingehen.**
+**Nicht wenig oder viel Geld ist der Maßstab. Der Maßstab ist, welche realen Zustände wir mit knappen Ressourcen dauerhaft verbessern - und welche Risiken wir dafür eingehen.**

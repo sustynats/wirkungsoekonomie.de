@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V7  
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungskompetenz, Führung und Organisationskultur  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v7-wirkungskompetenz-fuehrung-kultur.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v7.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v7.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungskompetenz, Führung und Organisationskultur** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,43 +44,43 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-Die beste Wirkungslogik nützt nichts, wenn niemand sie im Alltag anwendet. **Wie wird Wirkung von einer Methode zu einer Haltung – in Führung und Kultur?**
+Die beste Wirkungslogik nützt nichts, wenn niemand sie im Alltag anwendet. **Wie wird Wirkung von einer Methode zu einer Haltung - in Führung und Kultur?**
 
 ## 2. Video-/Audio-Vorlesung
 
 - **Titel:** Wirkungskompetenz als Führungs- und Kulturaufgabe
 - **Länge:** ~14 Min
-- **Kernaussage in einem Satz:** Wirkung wird erst dann steuerbar, wenn Wirkungskompetenz in Führung, Entscheidungsroutinen und Kultur verankert ist – nicht nur in einer Methode.
+- **Kernaussage in einem Satz:** Wirkung wird erst dann steuerbar, wenn Wirkungskompetenz in Führung, Entscheidungsroutinen und Kultur verankert ist - nicht nur in einer Methode.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Wirkungskompetenz.** Die Fähigkeit, Wirkung zu verstehen, sauber zu benennen, zu bewerten und in Entscheidungen einzubeziehen. Sie ist erlernbar – dafür gibt es diese Akademie.
+**Abschnitt A - Wirkungskompetenz.** Die Fähigkeit, Wirkung zu verstehen, sauber zu benennen, zu bewerten und in Entscheidungen einzubeziehen. Sie ist erlernbar - dafür gibt es diese Akademie.
 
-**Abschnitt B – Führung.** Führungskräfte entscheiden über Prioritäten und Ressourcen. Wenn sie Wirkung nicht mitdenken, bleibt Wirkungsmanagement folgenlos.
+**Abschnitt B - Führung.** Führungskräfte entscheiden über Prioritäten und Ressourcen. Wenn sie Wirkung nicht mitdenken, bleibt Wirkungsmanagement folgenlos.
 
-**Abschnitt C – Kultur.** Kultur entscheidet, ob unangenehme Wirkungswahrheiten ausgesprochen werden dürfen. Ohne psychologische Sicherheit werden Risiken verschwiegen.
+**Abschnitt C - Kultur.** Kultur entscheidet, ob unangenehme Wirkungswahrheiten ausgesprochen werden dürfen. Ohne psychologische Sicherheit werden Risiken verschwiegen.
 
-**Abschnitt D – Routinen.** Wirkung gehört in bestehende Routinen: Entscheidungsvorlagen, Investitionsprüfung, Lieferantenwahl, Zielvereinbarungen.
+**Abschnitt D - Routinen.** Wirkung gehört in bestehende Routinen: Entscheidungsvorlagen, Investitionsprüfung, Lieferantenwahl, Zielvereinbarungen.
 
-**Abschnitt E – Reifegrad.** Von „einzelne Vorreiter" bis „Wirkung in allen Entscheidungen verankert". Der Reifegrad zeigt, wo anzusetzen ist.
+**Abschnitt E - Reifegrad.** Von „einzelne Vorreiter" bis „Wirkung in allen Entscheidungen verankert". Der Reifegrad zeigt, wo anzusetzen ist.
 
 ## 4. Skript / Folien (Lernseite)
 
-**Wirkungskompetenz ist die Schlüsselfähigkeit.** Sie umfasst: Wirkung von Reichweite unterscheiden, Wirkungspotenzial von Wirkung trennen, Netto-Wirkung unter Nichtkompensation denken und daraus Entscheidungen ableiten. Wirkungskompetenz ist **erlernbar** – ihr Aufbau ist ein zentrales Ziel dieses Lehrgangs *(Grundlagenwerk „Die neue Ordnung des Wohlstands", Kapitel zu Wirkungskompetenz)*.
+**Wirkungskompetenz ist die Schlüsselfähigkeit.** Sie umfasst: Wirkung von Reichweite unterscheiden, Wirkungspotenzial von Wirkung trennen, Netto-Wirkung unter Nichtkompensation denken und daraus Entscheidungen ableiten. Wirkungskompetenz ist **erlernbar** - ihr Aufbau ist ein zentrales Ziel dieses Lehrgangs *(Grundlagenwerk „Die neue Ordnung des Wohlstands", Kapitel zu Wirkungskompetenz)*.
 
-**Führung entscheidet über Wirksamkeit.** Wirkungsmanagement scheitert, wenn Führung Wirkung nur delegiert. Führungskräfte setzen Prioritäten, verteilen Ressourcen und geben vor, welche Kennzahlen zählen. Wenn Wirkung dort nicht vorkommt, bleibt sie Fassade. Deshalb ist Wirkung Chef:innensache – nicht nur Aufgabe eines Nachhaltigkeitsteams.
+**Führung entscheidet über Wirksamkeit.** Wirkungsmanagement scheitert, wenn Führung Wirkung nur delegiert. Führungskräfte setzen Prioritäten, verteilen Ressourcen und geben vor, welche Kennzahlen zählen. Wenn Wirkung dort nicht vorkommt, bleibt sie Fassade. Deshalb ist Wirkung Chef:innensache - nicht nur Aufgabe eines Nachhaltigkeitsteams.
 
-**Kultur entscheidet über Ehrlichkeit.** Reverse Merit Order und Nichtkompensation funktionieren nur, wenn kritische Wirkungswahrheiten ausgesprochen werden dürfen. Eine Kultur, die schlechte Nachrichten bestraft, erzeugt Schönfärberei – das Gegenteil von Wirkungssteuerung. Psychologische Sicherheit ist damit eine Wirkungsbedingung.
+**Kultur entscheidet über Ehrlichkeit.** Reverse Merit Order und Nichtkompensation funktionieren nur, wenn kritische Wirkungswahrheiten ausgesprochen werden dürfen. Eine Kultur, die schlechte Nachrichten bestraft, erzeugt Schönfärberei - das Gegenteil von Wirkungssteuerung. Psychologische Sicherheit ist damit eine Wirkungsbedingung.
 
-**Verankerung in Routinen.** Wirkung wird real, wenn sie in bestehende Abläufe eingebaut ist: Entscheidungsvorlagen mit Wirkungsabschnitt, Investitionsprüfung mit Wirkungsfrage, Lieferantenauswahl mit kritischem Wirkungsfeld, Zielvereinbarungen mit Wirkungszielen (V3). Ein kurzer **Reifegrad-Check** hilft, den nächsten sinnvollen Schritt zu finden – vom Pilotbereich bis zur durchgängigen Verankerung.
+**Verankerung in Routinen.** Wirkung wird real, wenn sie in bestehende Abläufe eingebaut ist: Entscheidungsvorlagen mit Wirkungsabschnitt, Investitionsprüfung mit Wirkungsfrage, Lieferantenauswahl mit kritischem Wirkungsfeld, Zielvereinbarungen mit Wirkungszielen (V3). Ein kurzer **Reifegrad-Check** hilft, den nächsten sinnvollen Schritt zu finden - vom Pilotbereich bis zur durchgängigen Verankerung.
 
 ## 5. Glossar der Kernbegriffe
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | `begriffe/wirkungskompetenz` |
-| Organisationskultur | geteilte Normen, die Wirkungsehrlichkeit ermöglichen oder verhindern | _(noch keine Seite – ggf. anlegen)_ |
+| Organisationskultur | geteilte Normen, die Wirkungsehrlichkeit ermöglichen oder verhindern | _(noch keine Seite - ggf. anlegen)_ |
 | Wirkungsmanagement | plant, steuert, verbessert, verankert Wirkung | `begriffe/wirkungsmanagement` |
 
 ## 6. Verständnisfragen (Mini-Quiz)
@@ -123,7 +120,6 @@ Schätze den **Reifegrad** deiner Organisation ein (einzelne Vorreiter / einzeln
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -257,13 +253,12 @@ Die folgende Runde verdichtet WM-V7 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V7. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §6.2
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Wirkungskompetenz
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §6.2
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Wirkungskompetenz
 - Glossar: `begriffe/wirkungskompetenz`, `begriffe/wirkungsmanagement`
 
 ## 4. Wirkungsökonomische Vertiefung
@@ -349,12 +344,11 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Wirkungskompetenz | Fähigkeit, Wirkung zu verstehen, zu bewerten und zu steuern | `begriffe/wirkungskompetenz` |
-| Organisationskultur | geteilte Normen, die Wirkungsehrlichkeit ermöglichen oder verhindern | _(noch keine Seite – ggf. anlegen)_ |
+| Organisationskultur | geteilte Normen, die Wirkungsehrlichkeit ermöglichen oder verhindern | _(noch keine Seite - ggf. anlegen)_ |
 | Wirkungsmanagement | plant, steuert, verbessert, verankert Wirkung | `begriffe/wirkungsmanagement` |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -760,8 +754,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v7-wirkungskompetenz-fuehrung-kultur.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

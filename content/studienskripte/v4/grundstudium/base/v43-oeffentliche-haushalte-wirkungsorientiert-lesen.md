@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v43-oeffentliche-haushalte-wirkungsorientiert-lesen.md curriculum=4.0 sanitized=true -->
-# V43 · Öffentliche Haushalte nach Wirkung lesen – bestehende Haushaltslogik und WÖk-Zusatz
+# V43 · Öffentliche Haushalte nach Wirkung lesen - bestehende Haushaltslogik und WÖk-Zusatz
 
 **lecture_id:** `WOEK-G-BASE-043`  
 **display_code:** `V43`  
@@ -25,7 +25,7 @@ Nach dieser Vorlesung kannst du:
 5. Additionalität, Opportunitätskosten, Folgekosten und Verteilung prüfen.
 6. Wirkungsbudgetierung von einer pauschalen „Wirkung pro Euro“-Kennzahl unterscheiden.
 
-## 1. Geld ist Input – nicht Wirkung
+## 1. Geld ist Input - nicht Wirkung
 
 Der Satz „Wir investieren 10 Milliarden Euro in X“ beschreibt zunächst einen Ressourceneinsatz.
 
@@ -230,8 +230,8 @@ Sie ersetzt weder Haushaltsrecht noch Rechnungshöfe oder Evaluation.
 
 - Bundeshaushaltsordnung § 7: https://www.gesetze-im-internet.de/bho/__7.html
 - Bundeshaushaltsordnung § 44: https://www.gesetze-im-internet.de/bho/__44.html
-- Bundesrechnungshof – Bundeshaushaltsrecht: https://www.bundesrechnungshof.de/SharedDocs/Downloads/DE/Berichte/2025/ergaenzungsband-2025/bundesbeauftragter-bundeshaushalt-vorschriften.html
-- Bundesregierung – Aktionsplan Nachhaltigkeit, Beteiligungsfassung 16.07.2026: https://www.bundesregierung.de/resource/blob/975228/2447318/ce245dd460c58c39c04a87878f68608a/2026-07-16-aktionsplan-nachhaltigkeit-data.pdf?download=1
+- Bundesrechnungshof - Bundeshaushaltsrecht: https://www.bundesrechnungshof.de/SharedDocs/Downloads/DE/Berichte/2025/ergaenzungsband-2025/bundesbeauftragter-bundeshaushalt-vorschriften.html
+- Bundesregierung - Aktionsplan Nachhaltigkeit, Beteiligungsfassung 16.07.2026: https://www.bundesregierung.de/resource/blob/975228/2447318/ce245dd460c58c39c04a87878f68608a/2026-07-16-aktionsplan-nachhaltigkeit-data.pdf?download=1
 
 ## 14. Transferaufgabe
 
@@ -290,7 +290,7 @@ Nehmen wir Hitzeschutz.
 
 Das ist Output.
 
-Die Wirkung ist erst die veränderte Hitzebelastung – und vielleicht weniger gesundheitliche Notfälle.
+Die Wirkung ist erst die veränderte Hitzebelastung - und vielleicht weniger gesundheitliche Notfälle.
 
 Und dann fragen wir: Erreichen wir die Viertel, in denen besonders gefährdete Menschen wohnen? Welche Maßnahmen wirken schnell? Was kostet Pflege? Was wäre ohne Programm passiert?
 

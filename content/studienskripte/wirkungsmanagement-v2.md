@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V2  
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v2-wirkungsempfaenger-wirkpfade.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v2.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v2.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungsräume, Wirkungsempfänger, Stakeholder und Wirkpfade** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,7 +44,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-Bevor man Wirkung steuern kann, muss man wissen: **Auf wen oder was wirkt die Organisation überhaupt – und über welche Wege?** Wer die Wirkungsempfänger nicht kennt, steuert blind.
+Bevor man Wirkung steuern kann, muss man wissen: **Auf wen oder was wirkt die Organisation überhaupt - und über welche Wege?** Wer die Wirkungsempfänger nicht kennt, steuert blind.
 
 ## 2. Video-/Audio-Vorlesung
 
@@ -58,21 +55,21 @@ Bevor man Wirkung steuern kann, muss man wissen: **Auf wen oder was wirkt die Or
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Wirkungsräume.** Jede Organisation wirkt in mehreren Räumen: Produkt, Lieferkette, Belegschaft, Umfeld, öffentlicher/gesellschaftlicher Raum. Wirkungsräume helfen zu ordnen, wo überall Wirkung entsteht.
+**Abschnitt A - Wirkungsräume.** Jede Organisation wirkt in mehreren Räumen: Produkt, Lieferkette, Belegschaft, Umfeld, öffentlicher/gesellschaftlicher Raum. Wirkungsräume helfen zu ordnen, wo überall Wirkung entsteht.
 
-**Abschnitt B – Wirkungsempfänger vs. Stakeholder.** Stakeholder sind Anspruchsgruppen (haben Interessen). **Wirkungsempfänger** sind diejenigen, bei denen tatsächlich Zustandsveränderung eintritt – auch wenn sie keine Stimme haben (z. B. künftige Generationen, Ökosysteme). Beide Perspektiven sind nötig; die WÖk betont die Wirkungsempfänger.
+**Abschnitt B - Wirkungsempfänger vs. Stakeholder.** Stakeholder sind Anspruchsgruppen (haben Interessen). **Wirkungsempfänger** sind diejenigen, bei denen tatsächlich Zustandsveränderung eintritt - auch wenn sie keine Stimme haben (z. B. künftige Generationen, Ökosysteme). Beide Perspektiven sind nötig; die WÖk betont die Wirkungsempfänger.
 
-**Abschnitt C – Wirkpfade.** Ein Wirkpfad macht die Kette sichtbar: Aktivität → Mechanismus → Veränderung beim Empfänger. Er trennt sauber Wirkungspotenzial (Möglichkeit) von tatsächlicher Wirkung.
+**Abschnitt C - Wirkpfade.** Ein Wirkpfad macht die Kette sichtbar: Aktivität → Mechanismus → Veränderung beim Empfänger. Er trennt sauber Wirkungspotenzial (Möglichkeit) von tatsächlicher Wirkung.
 
-**Abschnitt D – Vorsicht bei Sprache/Medien.** Wo Wirkung schwer nachweisbar ist (Kommunikation, Kultur), spricht man vorsichtiger von Wirkungspotenzialen und Resonanzräumen.
+**Abschnitt D - Vorsicht bei Sprache/Medien.** Wo Wirkung schwer nachweisbar ist (Kommunikation, Kultur), spricht man vorsichtiger von Wirkungspotenzialen und Resonanzräumen.
 
-**Abschnitt E – Nutzen fürs Management.** Wirkungsempfänger + Wirkpfade sind die Landkarte für alle folgenden Schritte: Ziele, Priorisierung, Risiken, Strategie.
+**Abschnitt E - Nutzen fürs Management.** Wirkungsempfänger + Wirkpfade sind die Landkarte für alle folgenden Schritte: Ziele, Priorisierung, Risiken, Strategie.
 
 ## 4. Skript / Folien (Lernseite)
 
 **Wirkungsräume ordnen, wo Wirkung entsteht.** Typische Räume: Produkt/Dienstleistung, Lieferkette, Belegschaft, direktes Umfeld, gesellschaftlicher/öffentlicher Raum. Diese Ordnung verhindert Tunnelblick auf nur einen Bereich.
 
-**Wirkungsempfänger sind das Zentrum.** Stakeholder-Analysen fragen: „Wer hat Interesse/Einfluss?" Die Wirkungsökonomie fragt zusätzlich und vorrangig: „**Bei wem tritt tatsächlich eine Veränderung ein?**" – auch bei stimmlosen Empfängern wie Ökosystemen, Biodiversität oder künftigen Generationen. Wirkungsempfänger und Stakeholder überschneiden sich, sind aber nicht identisch. Für positive Netto-Wirkung zählt die Veränderung beim Empfänger.
+**Wirkungsempfänger sind das Zentrum.** Stakeholder-Analysen fragen: „Wer hat Interesse/Einfluss?" Die Wirkungsökonomie fragt zusätzlich und vorrangig: „**Bei wem tritt tatsächlich eine Veränderung ein?**" - auch bei stimmlosen Empfängern wie Ökosystemen, Biodiversität oder künftigen Generationen. Wirkungsempfänger und Stakeholder überschneiden sich, sind aber nicht identisch. Für positive Netto-Wirkung zählt die Veränderung beim Empfänger.
 
 **Wirkpfade machen Wirkung nachvollziehbar.** Ein Wirkpfad ist die Kette *Aktivität → Wirkmechanismus → Veränderung beim Wirkungsempfänger* (Grundlagen V2/V5). Er zwingt zur Ehrlichkeit: Was ist nur **Wirkungspotenzial**, was ist tatsächliche **Wirkung**? Bei Kommunikation, Sprache und Kultur bleibt man vorsichtig und spricht von **Resonanzräumen** und Potenzialen, nicht von nachgewiesener Wirkung.
 
@@ -83,7 +80,7 @@ Bevor man Wirkung steuern kann, muss man wissen: **Auf wen oder was wirkt die Or
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Wirkungsempfänger | diejenigen, bei denen Zustandsveränderung eintritt | `begriffe/wirkungsempfaenger` |
-| Stakeholder | Anspruchs-/Interessengruppen | _(noch keine Seite – ggf. anlegen)_ |
+| Stakeholder | Anspruchs-/Interessengruppen | _(noch keine Seite - ggf. anlegen)_ |
 | Wirkpfad | Kette Aktivität → Mechanismus → Veränderung | `begriffe/wirkpfad` |
 | Resonanzraum | Raum für Wirkungspotenziale (Sprache/Medien) | `begriffe/resonanzraum` |
 | Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
@@ -91,7 +88,7 @@ Bevor man Wirkung steuern kann, muss man wissen: **Auf wen oder was wirkt die Or
 ## 6. Verständnisfragen (Mini-Quiz)
 
 1. **Was unterscheidet Wirkungsempfänger von Stakeholdern?**
-   - A) Nichts  B) Wirkungsempfänger sind, bei denen tatsächlich Veränderung eintritt – auch ohne Stimme  C) Stakeholder haben nie Interesse  D) Wirkungsempfänger sind immer Kunden
+   - A) Nichts  B) Wirkungsempfänger sind, bei denen tatsächlich Veränderung eintritt - auch ohne Stimme  C) Stakeholder haben nie Interesse  D) Wirkungsempfänger sind immer Kunden
    - ✅ **Richtig: B**
 
 2. **Was zeigt ein Wirkpfad?**
@@ -118,7 +115,7 @@ Bevor man Wirkung steuern kann, muss man wissen: **Auf wen oder was wirkt die Or
 
 Erstelle für deine Organisation eine kleine Landkarte:
 1. Nenne 3 **Wirkungsräume**.
-2. Benenne je Raum 1–2 **Wirkungsempfänger** (auch stimmlose).
+2. Benenne je Raum 1-2 **Wirkungsempfänger** (auch stimmlose).
 3. Zeichne für einen Empfänger einen **Wirkpfad** (Aktivität → Mechanismus → Veränderung) und markiere, was nur Potenzial ist.
 
 ## 8. Praxisbeispiel
@@ -128,7 +125,6 @@ Erstelle für deine Organisation eine kleine Landkarte:
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -290,12 +286,11 @@ Die folgende Runde verdichtet WM-V2 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V2. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §5
 - `docs/praxis/Lieferkette_Wirkungsoekonomie_v1.1.md`
 - Glossar: `begriffe/wirkungsempfaenger`, `begriffe/wirkpfad`, `begriffe/resonanzraum`
 
@@ -354,7 +349,7 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 ## 5. Verständnisfragen (Mini-Quiz)
 
 1. **Was unterscheidet Wirkungsempfänger von Stakeholdern?**
-   - A) Nichts  B) Wirkungsempfänger sind, bei denen tatsächlich Veränderung eintritt – auch ohne Stimme  C) Stakeholder haben nie Interesse  D) Wirkungsempfänger sind immer Kunden
+   - A) Nichts  B) Wirkungsempfänger sind, bei denen tatsächlich Veränderung eintritt - auch ohne Stimme  C) Stakeholder haben nie Interesse  D) Wirkungsempfänger sind immer Kunden
    - ✅ **Richtig: B**
 
 2. **Was zeigt ein Wirkpfad?**
@@ -382,14 +377,13 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
 | Wirkungsempfänger | diejenigen, bei denen Zustandsveränderung eintritt | `begriffe/wirkungsempfaenger` |
-| Stakeholder | Anspruchs-/Interessengruppen | _(noch keine Seite – ggf. anlegen)_ |
+| Stakeholder | Anspruchs-/Interessengruppen | _(noch keine Seite - ggf. anlegen)_ |
 | Wirkpfad | Kette Aktivität → Mechanismus → Veränderung | `begriffe/wirkpfad` |
 | Resonanzraum | Raum für Wirkungspotenziale (Sprache/Medien) | `begriffe/resonanzraum` |
 | Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -795,8 +789,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v2-wirkungsempfaenger-wirkpfade.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

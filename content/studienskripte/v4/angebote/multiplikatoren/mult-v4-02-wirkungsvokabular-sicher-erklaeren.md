@@ -19,7 +19,7 @@
 - Observation und Attribution auseinanderhalten
 
 ## 20-Sekunden-Erklärung
-Ein Output ist das, was wir tun oder bereitstellen. Wirkung ist das, was sich dadurch tatsächlich verändert. Vorher sprechen wir von Potenzialen, Risiken und Mechanismen. Wenn Daten fehlen, ist das Ergebnis OPEN – nicht neutral.
+Ein Output ist das, was wir tun oder bereitstellen. Wirkung ist das, was sich dadurch tatsächlich verändert. Vorher sprechen wir von Potenzialen, Risiken und Mechanismen. Wenn Daten fehlen, ist das Ergebnis OPEN - nicht neutral.
 
 ## Einfache Einführung
 Viele Missverständnisse entstehen nicht aus komplizierter Mathematik, sondern aus zu schnellen Wörtern. „Wir haben 1.000 Menschen erreicht“ ist ein Output- oder Reichweitenbefund. Was sich bei ihnen verändert hat, ist eine andere Frage. Und ob diese Veränderung durch das Angebot verursacht wurde, ist noch einmal eine dritte.
@@ -59,7 +59,7 @@ Der WÖk-Wirkungspfad kann IOOI-Elemente enthalten, ist aber nicht durch IOOI de
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
 - UN Agenda 2030 / SDGs: https://sdgs.un.org/2030agenda
 - Deutsche Nachhaltigkeitsstrategie: https://www.bundesregierung.de/breg-de/schwerpunkte/nachhaltigkeitspolitik
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - OECD Evaluation: https://www.oecd.org/dac/evaluation/
 - Digital Services Act: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
 

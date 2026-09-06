@@ -90,7 +90,7 @@ Sie sollen:
 - wo möglich eine Wirksamkeitsmessung erhalten,
 - mittelbar zur Erreichung der DNS-2025-Ziele beitragen.
 
-Das klingt wirkungsorientiert – und ist für WÖk interessant.
+Das klingt wirkungsorientiert - und ist für WÖk interessant.
 
 Aber auch hier gilt:
 
@@ -100,7 +100,7 @@ Eine Mission formuliert einen politisch gewünschten Veränderungsauftrag. Sie m
 
 ## 5. Ein bemerkenswerter WÖk-Anschluss: Wirksamkeitsmessung
 
-Die Beteiligungsfassung spricht ausdrücklich davon, Missionen – wo möglich – mit Wirksamkeitsmessung zu versehen und bis zum Ende der Legislatur konkrete messbare Ergebnisse umzusetzen.
+Die Beteiligungsfassung spricht ausdrücklich davon, Missionen - wo möglich - mit Wirksamkeitsmessung zu versehen und bis zum Ende der Legislatur konkrete messbare Ergebnisse umzusetzen.
 
 Das zeigt: Die staatliche Architektur bewegt sich selbst stärker in Richtung wirkungsorientierter Steuerung.
 
@@ -260,13 +260,13 @@ Nicht jede Mission muss zu einem anderen WÖk-Urteil führen. Konvergenz ist mö
 
 ### Amtliche Quellen
 
-1. **Bundesregierung – Aktionsplan Nachhaltigkeit, öffentliche Seite vom 16.07.2026**  
+1. **Bundesregierung - Aktionsplan Nachhaltigkeit, öffentliche Seite vom 16.07.2026**  
    https://www.bundesregierung.de/breg-de/aktuelles/aktionsplan-nachhaltigkeit-2392096
 
-2. **Bundesregierung – Aktionsplan Nachhaltigkeit, Beteiligungsfassung Stand 16.07.2026**  
+2. **Bundesregierung - Aktionsplan Nachhaltigkeit, Beteiligungsfassung Stand 16.07.2026**  
    https://www.bundesregierung.de/resource/blob/975228/2447318/ce245dd460c58c39c04a87878f68608a/2026-07-16-aktionsplan-nachhaltigkeit-data.pdf?download=1
 
-3. **Bundesregierung – DNS 2025 / Übergang zum Aktionsplan**  
+3. **Bundesregierung - DNS 2025 / Übergang zum Aktionsplan**  
    https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/deutsche-nachhaltigkeitsstrategie-2025-2332540
 
 ### Quellenfunktion
@@ -330,7 +330,7 @@ Und zweitens saubere Versionierung.
 
 Der Aktionsplan enthält 19 Missionen in fünf Handlungsfeldern. Die Idee ist: Aus der sehr breiten Deutschen Nachhaltigkeitsstrategie sollen ausgewählte, ressortübergreifende Veränderungsaufträge stärker in konkrete Umsetzung kommen.
 
-Die Missionen sollen Zielstellungen haben, später mit Maßnahmenpaketen und Meilensteinen ergänzt werden und – wo möglich – Wirksamkeitsmessung bekommen.
+Die Missionen sollen Zielstellungen haben, später mit Maßnahmenpaketen und Meilensteinen ergänzt werden und - wo möglich - Wirksamkeitsmessung bekommen.
 
 Das ist bemerkenswert, weil die Bundesregierung selbst die Nachhaltigkeitspolitik stärker in Richtung Wirkung und messbare Ergebnisse entwickeln will.
 

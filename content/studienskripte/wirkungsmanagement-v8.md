@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V8  
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungsstrategie im Unternehmen  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v8-wirkungsstrategie.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v8.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v8.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungsstrategie im Unternehmen** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -43,7 +40,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WM-V8
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WM-V7
-**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§5 Stufen 11–13) · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/`
+**Führende Quellen (Repo):** `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` (§5 Stufen 11-13) · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/`
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -58,23 +55,23 @@ Einzelmaßnahmen ergeben noch keine Wirkung. **Wie wird aus Zielen, Priorisierun
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Was Strategie hier bedeutet.** Nicht ein Dokument, sondern ein kohärenter Kurs: Welche positive Netto-Wirkung, über welche Wirkpfade, mit welcher Priorisierung, verankert in welchen Entscheidungen?
+**Abschnitt A - Was Strategie hier bedeutet.** Nicht ein Dokument, sondern ein kohärenter Kurs: Welche positive Netto-Wirkung, über welche Wirkpfade, mit welcher Priorisierung, verankert in welchen Entscheidungen?
 
-**Abschnitt B – Zusammenführung.** Die Strategie integriert V2–V7: Empfänger/Wirkpfade, Ziele/Logik, Priorisierung, Potenzial/Risiko, Kultur.
+**Abschnitt B - Zusammenführung.** Die Strategie integriert V2-V7: Empfänger/Wirkpfade, Ziele/Logik, Priorisierung, Potenzial/Risiko, Kultur.
 
-**Abschnitt C – Rückkopplung.** Ohne Wirkungslenkung (Rückführung in Preise, Investitionen, Beschaffung, Ziele) bleibt Strategie Papier. Reporting ≠ Rückkopplung gilt auch hier.
+**Abschnitt C - Rückkopplung.** Ohne Wirkungslenkung (Rückführung in Preise, Investitionen, Beschaffung, Ziele) bleibt Strategie Papier. Reporting ≠ Rückkopplung gilt auch hier.
 
-**Abschnitt D – Wirkungsarchitektur.** Die Strategie braucht ein Gerüst aus Rollen, Regeln, Daten und Lernschleifen – die Wirkungsarchitektur der Organisation.
+**Abschnitt D - Wirkungsarchitektur.** Die Strategie braucht ein Gerüst aus Rollen, Regeln, Daten und Lernschleifen - die Wirkungsarchitektur der Organisation.
 
-**Abschnitt E – Ergebnis.** Ein Wirkungs-Canvas fasst die Strategie zusammen und leitet in Kommunikation (V9) und Umsetzung (V10) über.
+**Abschnitt E - Ergebnis.** Ein Wirkungs-Canvas fasst die Strategie zusammen und leitet in Kommunikation (V9) und Umsetzung (V10) über.
 
 ## 4. Skript / Folien (Lernseite)
 
-**Wirkungsstrategie ist ein kohärenter Kurs, kein Dokument.** Sie beantwortet zusammenhängend: Welche **positive Netto-Wirkung** streben wir an (V3), bei welchen **Wirkungsempfängern** über welche **Wirkpfade** (V2), was hat **Vorrang** (V4), welche **Potenziale/Risiken** steuern wir (V5–V6), und wie ist das in **Führung/Kultur** verankert (V7)?
+**Wirkungsstrategie ist ein kohärenter Kurs, kein Dokument.** Sie beantwortet zusammenhängend: Welche **positive Netto-Wirkung** streben wir an (V3), bei welchen **Wirkungsempfängern** über welche **Wirkpfade** (V2), was hat **Vorrang** (V4), welche **Potenziale/Risiken** steuern wir (V5-V6), und wie ist das in **Führung/Kultur** verankert (V7)?
 
 **Verankerung durch Wirkungslenkung.** Eine Strategie wird erst wirksam, wenn Bewertung in Entscheidungen zurückfließt: in Investitionslogik, Beschaffung, Produktentscheidungen und Zielvereinbarungen (**Wirkungslenkung**, Grundlagen V5). Ohne diese Rückkopplung ist die Strategie folgenloses Reporting.
 
-**Wirkungsarchitektur als Gerüst.** Damit die Strategie trägt, braucht die Organisation ein Gerüst: Rollen (wer entscheidet über kritische Wirkungsfelder?), Regeln (welche Entscheidungen brauchen eine Wirkungsprüfung?), Daten (woher kommen Wirkungsdaten – Anschluss an Lehrgang 2) und Lernschleifen (wie wird nachgesteuert?). Das ist die **Wirkungsarchitektur** der Organisation (Grundlagen V5, Stufe 13).
+**Wirkungsarchitektur als Gerüst.** Damit die Strategie trägt, braucht die Organisation ein Gerüst: Rollen (wer entscheidet über kritische Wirkungsfelder?), Regeln (welche Entscheidungen brauchen eine Wirkungsprüfung?), Daten (woher kommen Wirkungsdaten - Anschluss an Lehrgang 2) und Lernschleifen (wie wird nachgesteuert?). Das ist die **Wirkungsarchitektur** der Organisation (Grundlagen V5, Stufe 13).
 
 **Der Wirkungs-Canvas** bündelt die Strategie auf einer Seite: Zielwirkung · Wirkungsempfänger/-pfade · kritische Felder/Priorität · zentrale Potenziale/Risiken · Verankerung (Führung/Kultur/Routinen) · Rückkopplungspunkte. Er ist die Brücke zur Kommunikation (V9) und zum 90-Tage-Plan (V10).
 
@@ -82,7 +79,7 @@ Einzelmaßnahmen ergeben noch keine Wirkung. **Wie wird aus Zielen, Priorisierun
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsstrategie | kohärenter Kurs auf positive Netto-Wirkung | _(noch keine Seite – ggf. anlegen)_ |
+| Wirkungsstrategie | kohärenter Kurs auf positive Netto-Wirkung | _(noch keine Seite - ggf. anlegen)_ |
 | Wirkungslenkung | Rückführung der Bewertung in Entscheidungen | `begriffe/wirkungslenkung` |
 | Wirkungsarchitektur | Gerüst aus Rollen, Regeln, Daten, Lernschleifen | `begriffe/wirkungsarchitektur` |
 | positive Netto-Wirkung | Zielgröße | `begriffe/positive-netto-wirkung` |
@@ -94,7 +91,7 @@ Einzelmaßnahmen ergeben noch keine Wirkung. **Wie wird aus Zielen, Priorisierun
    - ✅ **Richtig: B**
 
 2. **Wodurch wird eine Strategie wirksam?**
-   - A) Durch Veröffentlichung  B) Durch Wirkungslenkung – Rückführung der Bewertung in Entscheidungen  C) Durch mehr Reichweite  D) Durch mehr Berichte
+   - A) Durch Veröffentlichung  B) Durch Wirkungslenkung - Rückführung der Bewertung in Entscheidungen  C) Durch mehr Reichweite  D) Durch mehr Berichte
    - ✅ **Richtig: B**
 
 3. **Was gehört zur Wirkungsarchitektur?**
@@ -106,7 +103,7 @@ Einzelmaßnahmen ergeben noch keine Wirkung. **Wie wird aus Zielen, Priorisierun
    - ✅ **Richtig: B**
 
 5. **Gilt „Reporting ≠ Rückkopplung" auch für die Strategie?**
-   - A) Nein  B) Ja – ohne Rückkopplung bleibt Strategie folgenlos  C) Nur im Controlling  D) Nur bei großen Firmen
+   - A) Nein  B) Ja - ohne Rückkopplung bleibt Strategie folgenlos  C) Nur im Controlling  D) Nur bei großen Firmen
    - ✅ **Richtig: B**
 
 6. **Wozu dient der Wirkungs-Canvas?**
@@ -119,12 +116,11 @@ Fülle einen **Wirkungs-Canvas** für deine Organisation: Zielwirkung · Wirkung
 
 ## 8. Praxisbeispiel
 
-**Strategie mit Rückkopplung.** Ein Mittelständler verankert in der Investitionsrichtlinie: Kein Investitionsantrag ohne Prüfung des kritischen Wirkungsfelds; ein sehr schwacher Wert blockiert die Freigabe (Reverse Merit Order). Damit ist die Wirkungsstrategie in einer echten Entscheidungsroutine verankert – nicht nur im Bericht.
+**Strategie mit Rückkopplung.** Ein Mittelständler verankert in der Investitionsrichtlinie: Kein Investitionsantrag ohne Prüfung des kritischen Wirkungsfelds; ein sehr schwacher Wert blockiert die Freigabe (Reverse Merit Order). Damit ist die Wirkungsstrategie in einer echten Entscheidungsroutine verankert - nicht nur im Bericht.
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -272,12 +268,11 @@ Die folgende Runde verdichtet WM-V8 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V8. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5 Stufen 11–13
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §5 Stufen 11-13
 - `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md`
 - Glossar: `begriffe/wirkungslenkung`, `begriffe/wirkungsarchitektur`
 
@@ -340,7 +335,7 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
    - ✅ **Richtig: B**
 
 2. **Wodurch wird eine Strategie wirksam?**
-   - A) Durch Veröffentlichung  B) Durch Wirkungslenkung – Rückführung der Bewertung in Entscheidungen  C) Durch mehr Reichweite  D) Durch mehr Berichte
+   - A) Durch Veröffentlichung  B) Durch Wirkungslenkung - Rückführung der Bewertung in Entscheidungen  C) Durch mehr Reichweite  D) Durch mehr Berichte
    - ✅ **Richtig: B**
 
 3. **Was gehört zur Wirkungsarchitektur?**
@@ -352,7 +347,7 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
    - ✅ **Richtig: B**
 
 5. **Gilt „Reporting ≠ Rückkopplung" auch für die Strategie?**
-   - A) Nein  B) Ja – ohne Rückkopplung bleibt Strategie folgenlos  C) Nur im Controlling  D) Nur bei großen Firmen
+   - A) Nein  B) Ja - ohne Rückkopplung bleibt Strategie folgenlos  C) Nur im Controlling  D) Nur bei großen Firmen
    - ✅ **Richtig: B**
 
 6. **Wozu dient der Wirkungs-Canvas?**
@@ -363,14 +358,13 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsstrategie | kohärenter Kurs auf positive Netto-Wirkung | _(noch keine Seite – ggf. anlegen)_ |
+| Wirkungsstrategie | kohärenter Kurs auf positive Netto-Wirkung | _(noch keine Seite - ggf. anlegen)_ |
 | Wirkungslenkung | Rückführung der Bewertung in Entscheidungen | `begriffe/wirkungslenkung` |
 | Wirkungsarchitektur | Gerüst aus Rollen, Regeln, Daten, Lernschleifen | `begriffe/wirkungsarchitektur` |
 | positive Netto-Wirkung | Zielgröße | `begriffe/positive-netto-wirkung` |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -776,8 +770,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v8-wirkungsstrategie.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

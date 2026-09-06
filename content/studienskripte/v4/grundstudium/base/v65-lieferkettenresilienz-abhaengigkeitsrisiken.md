@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine Lieferkette ist nicht resilient, nur weil sie lang oder kurz ist. Entscheidend ist: **Welche kritische Funktion hängt von welchem Engpass ab – und welche Alternativen existieren, wenn dieser Engpass ausfällt?** Ein einziger Lieferant kann hochriskant sein, muss es aber nicht; zehn Lieferanten aus derselben Region können trotzdem gemeinsam ausfallen. Resilienz bedeutet also nicht Autarkie, sondern robuste, diversifizierte und anpassungsfähige Versorgung.
+Eine Lieferkette ist nicht resilient, nur weil sie lang oder kurz ist. Entscheidend ist: **Welche kritische Funktion hängt von welchem Engpass ab - und welche Alternativen existieren, wenn dieser Engpass ausfällt?** Ein einziger Lieferant kann hochriskant sein, muss es aber nicht; zehn Lieferanten aus derselben Region können trotzdem gemeinsam ausfallen. Resilienz bedeutet also nicht Autarkie, sondern robuste, diversifizierte und anpassungsfähige Versorgung.
 
 ## Lernziele
 
@@ -53,7 +53,7 @@ Mögliche Ebenen:
 - Hafen,
 - Cloud-/Softwareprovider.
 
-Ein Konzentrationsindikator ist Kontext – keine vollständige Resilienzmessung.
+Ein Konzentrationsindikator ist Kontext - keine vollständige Resilienzmessung.
 
 ## 3. Gemeinsame Ausfallursachen
 

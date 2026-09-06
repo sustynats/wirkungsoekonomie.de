@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Manche Systeme reagieren graduell: ein bisschen mehr Belastung, ein bisschen mehr Schaden. Andere können an **Schwellen** abrupt ihr Verhalten ändern. Und manche Schäden sind nur schwer oder gar nicht rückgängig zu machen. Das verändert Entscheidungen: Wenn eine mögliche Zustandsänderung irreversibel und sehr schwer ist, reicht ein Durchschnittsnutzen nicht. WÖk behandelt solche Boundaries separat – aber nur, wenn die jeweilige Schwelle wissenschaftlich oder rechtlich tatsächlich begründet ist.
+Manche Systeme reagieren graduell: ein bisschen mehr Belastung, ein bisschen mehr Schaden. Andere können an **Schwellen** abrupt ihr Verhalten ändern. Und manche Schäden sind nur schwer oder gar nicht rückgängig zu machen. Das verändert Entscheidungen: Wenn eine mögliche Zustandsänderung irreversibel und sehr schwer ist, reicht ein Durchschnittsnutzen nicht. WÖk behandelt solche Boundaries separat - aber nur, wenn die jeweilige Schwelle wissenschaftlich oder rechtlich tatsächlich begründet ist.
 
 ## Lernziele
 
@@ -197,7 +197,7 @@ Manche Systeme werden langsam schlechter.
 
 Andere können plötzlich kippen.
 
-Deshalb ist der Begriff Kipppunkt wichtig – und gefährlich, wenn wir ihn zu locker benutzen.
+Deshalb ist der Begriff Kipppunkt wichtig - und gefährlich, wenn wir ihn zu locker benutzen.
 
 Nicht jedes große Risiko hat einen exakten kritischen Wert.
 
@@ -213,4 +213,4 @@ Ein Grundrecht oder eine klare Sicherheitsgrenze kann nicht einfach mit guten Kl
 
 Der Merksatz lautet:
 
-**Je schwerer und irreversibler ein möglicher Schaden, desto wichtiger werden belastbare Schwellen, Vorsorge und reversible Alternativen – nicht größere rhetorische Alarmwörter.**
+**Je schwerer und irreversibler ein möglicher Schaden, desto wichtiger werden belastbare Schwellen, Vorsorge und reversible Alternativen - nicht größere rhetorische Alarmwörter.**

@@ -56,7 +56,7 @@ Positive Kommunikationswirkung gehört ebenso in die Analyse: Quellenklarheit, D
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
 - UN Agenda 2030 / SDGs: https://sdgs.un.org/2030agenda
 - Deutsche Nachhaltigkeitsstrategie: https://www.bundesregierung.de/breg-de/schwerpunkte/nachhaltigkeitspolitik
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - OECD Evaluation: https://www.oecd.org/dac/evaluation/
 - Digital Services Act: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
 

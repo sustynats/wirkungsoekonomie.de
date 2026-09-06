@@ -1,4 +1,4 @@
-# Vollständige Fachakte – btw-2025-spd
+# Vollständige Fachakte - btw-2025-spd
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -19,7 +19,7 @@
 
 **review_status:** COMPLETE
 
-**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Mehr für Dich. Besser für Deutschland. – Regierungsprogramm 2025. Alle 200 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
+**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Mehr für Dich. Besser für Deutschland. - Regierungsprogramm 2025. Alle 200 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
 
 ### source_summary
 
@@ -3366,7 +3366,7 @@ _Leere Liste._
 
 **source_location:** mit günstigen Energiepreisen und einem „Made in Germany“-Investitionsbonus für
 
-**intended_change:** Vorgesehene Veränderung: Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können – etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
+**intended_change:** Vorgesehene Veränderung: Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können - etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
 
 **measure:** einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe …
 
@@ -3592,7 +3592,7 @@ _Leere Liste._
 
 **page:** 8
 
-**text:** Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können – etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
+**text:** Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können - etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
 
 **match_score:** 100.0
 
@@ -3605,7 +3605,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können – etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
+**input_register_text:** Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können - etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
 
 ##### source_components
 
@@ -3615,7 +3615,7 @@ _Leere Liste._
 
 **source_page:** 8
 
-**source_text:** Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können – etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
+**source_text:** Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können - etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
 
 **topic:** ENERGY_CLIMATE
 
@@ -3629,7 +3629,7 @@ _Leere Liste._
 
 **measure:** einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe …
 
-**intended_change:** Vorgesehene Veränderung: Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können – etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
+**intended_change:** Vorgesehene Veränderung: Wir schaffen einen Deutschlandfonds, der öffentliches und privates Kapital mobilisiert, um die wichtigen Investitionsbedarfe erfüllen zu können - etwa bei Strom- und Wärmenetzen, beim Wasserstoffnetz, bei den E-Ladesäulen oder beim Wohnungsbau.
 
 
 ##### component_topics
@@ -30646,7 +30646,7 @@ _Leere Liste._
 
 **source_location:** mit günstigen Energiepreisen und einem „Made in Germany“-Investitionsbonus für
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern – mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
+**intended_change:** Vorgesehene Veränderung: Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern - mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
 
 **measure:** allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern …
 
@@ -30863,7 +30863,7 @@ _Leere Liste._
 
 **page:** 27
 
-**text:** Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern – mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
+**text:** Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern - mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
 
 **match_score:** 100.0
 
@@ -30876,7 +30876,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern – mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
+**input_register_text:** Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern - mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
 
 ##### source_components
 
@@ -30886,7 +30886,7 @@ _Leere Liste._
 
 **source_page:** 27
 
-**source_text:** Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern – mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
+**source_text:** Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern - mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -30900,7 +30900,7 @@ _Leere Liste._
 
 **measure:** allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern – mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
+**intended_change:** Vorgesehene Veränderung: Wir wollen allen Kindern von Anfang an beste Chancen für ein gutes Aufwachsen sichern - mit einer Infrastruktur für soziale Teilhabe und armutsfesten, unbürokratischen Geldleistungen.
 
 
 ##### component_topics
@@ -33309,7 +33309,7 @@ _Leere Liste._
 
 **source_location:** mit günstigen Energiepreisen und einem „Made in Germany“-Investitionsbonus für
 
-**intended_change:** Vorgesehene Veränderung: Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld – analog zum Elterngeld – einsetzen.
+**intended_change:** Vorgesehene Veränderung: Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld - analog zum Elterngeld - einsetzen.
 
 **measure:** uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch …
 
@@ -33510,7 +33510,7 @@ _Leere Liste._
 
 **page:** 31
 
-**text:** Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld – analog zum Elterngeld – einsetzen.
+**text:** Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld - analog zum Elterngeld - einsetzen.
 
 **match_score:** 100.0
 
@@ -33523,7 +33523,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld – analog zum Elterngeld – einsetzen.
+**input_register_text:** Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld - analog zum Elterngeld - einsetzen.
 
 ##### source_components
 
@@ -33533,7 +33533,7 @@ _Leere Liste._
 
 **source_page:** 31
 
-**source_text:** Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld – analog zum Elterngeld – einsetzen.
+**source_text:** Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld - analog zum Elterngeld - einsetzen.
 
 **topic:** FAMILY_EQUALITY
 
@@ -33547,7 +33547,7 @@ _Leere Liste._
 
 **measure:** uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch …
 
-**intended_change:** Vorgesehene Veränderung: Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld – analog zum Elterngeld – einsetzen.
+**intended_change:** Vorgesehene Veränderung: Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld - analog zum Elterngeld - einsetzen.
 
 
 ##### component_topics
@@ -42147,9 +42147,9 @@ _Leere Liste._
 
 **source_location:** mit günstigen Energiepreisen und einem „Made in Germany“-Investitionsbonus für
 
-**intended_change:** Vorgesehene Veränderung: Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder – wo dies nicht möglich ist – angemessene Vorkehrungen zu ergreifen.
+**intended_change:** Vorgesehene Veränderung: Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder - wo dies nicht möglich ist - angemessene Vorkehrungen zu ergreifen.
 
-**measure:** private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder – wo …
+**measure:** private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder - wo …
 
 ##### decision_readiness
 
@@ -42349,7 +42349,7 @@ _Leere Liste._
 
 **page:** 39
 
-**text:** Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder – wo dies nicht möglich ist – angemessene Vorkehrungen zu ergreifen.
+**text:** Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder - wo dies nicht möglich ist - angemessene Vorkehrungen zu ergreifen.
 
 **match_score:** 100.0
 
@@ -42362,7 +42362,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder – wo dies nicht möglich ist – angemessene Vorkehrungen zu ergreifen.
+**input_register_text:** Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder - wo dies nicht möglich ist - angemessene Vorkehrungen zu ergreifen.
 
 ##### source_components
 
@@ -42372,7 +42372,7 @@ _Leere Liste._
 
 **source_page:** 39
 
-**source_text:** Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder – wo dies nicht möglich ist – angemessene Vorkehrungen zu ergreifen.
+**source_text:** Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder - wo dies nicht möglich ist - angemessene Vorkehrungen zu ergreifen.
 
 **topic:** HOUSING
 
@@ -42384,9 +42384,9 @@ _Leere Liste._
 
 - Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz
 
-**measure:** private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder – wo …
+**measure:** private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder - wo …
 
-**intended_change:** Vorgesehene Veränderung: Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder – wo dies nicht möglich ist – angemessene Vorkehrungen zu ergreifen.
+**intended_change:** Vorgesehene Veränderung: Wir werden private Anbieter von Waren und Dienstleistungen verpflichten, Barrieren abzubauen oder - wo dies nicht möglich ist - angemessene Vorkehrungen zu ergreifen.
 
 
 ##### component_topics
@@ -42807,7 +42807,7 @@ _Leere Liste._
 
 **source_location:** mit günstigen Energiepreisen und einem „Made in Germany“-Investitionsbonus für
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen – ob sie darauf angewiesen sind oder nicht.
+**intended_change:** Vorgesehene Veränderung: Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen - ob sie darauf angewiesen sind oder nicht.
 
 **measure:** die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser …
 
@@ -43001,7 +43001,7 @@ _Leere Liste._
 
 **page:** 39
 
-**text:** Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen – ob sie darauf angewiesen sind oder nicht.
+**text:** Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen - ob sie darauf angewiesen sind oder nicht.
 
 **match_score:** 100.0
 
@@ -43014,7 +43014,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen – ob sie darauf angewiesen sind oder nicht.
+**input_register_text:** Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen - ob sie darauf angewiesen sind oder nicht.
 
 ##### source_components
 
@@ -43024,7 +43024,7 @@ _Leere Liste._
 
 **source_page:** 39
 
-**source_text:** Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen – ob sie darauf angewiesen sind oder nicht.
+**source_text:** Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen - ob sie darauf angewiesen sind oder nicht.
 
 **topic:** MEDIA_COMMUNICATION
 
@@ -43038,7 +43038,7 @@ _Leere Liste._
 
 **measure:** die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen – ob sie darauf angewiesen sind oder nicht.
+**intended_change:** Vorgesehene Veränderung: Wir wollen die Deutsche Gebärdensprache bundesweit fördern und möglichst viele Menschen beim Erlernen dieser Sprache unterstützen - ob sie darauf angewiesen sind oder nicht.
 
 
 ##### component_topics
@@ -48499,9 +48499,9 @@ _Leere Liste._
 
 **source_location:** mit günstigen Energiepreisen und einem „Made in Germany“-Investitionsbonus für
 
-**intended_change:** Vorgesehene Veränderung: Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln – außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
+**intended_change:** Vorgesehene Veränderung: Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln - außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
 
-**measure:** Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln – außer wenn sie gegen …
+**measure:** Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln - außer wenn sie gegen …
 
 ##### decision_readiness
 
@@ -48700,7 +48700,7 @@ _Leere Liste._
 
 **page:** 48
 
-**text:** Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln – außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
+**text:** Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln - außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
 
 **match_score:** 100.0
 
@@ -48713,7 +48713,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln – außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
+**input_register_text:** Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln - außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
 
 ##### source_components
 
@@ -48723,7 +48723,7 @@ _Leere Liste._
 
 **source_page:** 48
 
-**source_text:** Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln – außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
+**source_text:** Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln - außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -48735,9 +48735,9 @@ _Leere Liste._
 
 - Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz
 
-**measure:** Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln – außer wenn sie gegen …
+**measure:** Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln - außer wenn sie gegen …
 
-**intended_change:** Vorgesehene Veränderung: Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln – außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
+**intended_change:** Vorgesehene Veränderung: Wir werden Schwangerschaftsabbrüche entkriminalisieren und außerhalb des Strafrechts regeln - außer wenn sie gegen oder ohne den Willen der Schwangeren erfolgen.
 
 
 ##### component_topics
@@ -58609,7 +58609,7 @@ _Leere Liste._
 
 **source_location:** mit günstigen Energiepreisen und einem „Made in Germany“-Investitionsbonus für
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen – von Bildung und Arbeit bis hin zu politischer Mitbestimmung – erreicht werden.
+**intended_change:** Vorgesehene Veränderung: Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen - von Bildung und Arbeit bis hin zu politischer Mitbestimmung - erreicht werden.
 
 **measure:** ein Partizipationsgesetz auf den Weg bringen
 
@@ -58842,7 +58842,7 @@ _Leere Liste._
 
 **page:** 54
 
-**text:** Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen – von Bildung und Arbeit bis hin zu politischer Mitbestimmung – erreicht werden.
+**text:** Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen - von Bildung und Arbeit bis hin zu politischer Mitbestimmung - erreicht werden.
 
 **match_score:** 100.0
 
@@ -58855,7 +58855,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen – von Bildung und Arbeit bis hin zu politischer Mitbestimmung – erreicht werden.
+**input_register_text:** Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen - von Bildung und Arbeit bis hin zu politischer Mitbestimmung - erreicht werden.
 
 ##### source_components
 
@@ -58865,7 +58865,7 @@ _Leere Liste._
 
 **source_page:** 54
 
-**source_text:** Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen – von Bildung und Arbeit bis hin zu politischer Mitbestimmung – erreicht werden.
+**source_text:** Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen - von Bildung und Arbeit bis hin zu politischer Mitbestimmung - erreicht werden.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -58879,7 +58879,7 @@ _Leere Liste._
 
 **measure:** ein Partizipationsgesetz auf den Weg bringen
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen – von Bildung und Arbeit bis hin zu politischer Mitbestimmung – erreicht werden.
+**intended_change:** Vorgesehene Veränderung: Wir wollen ein Partizipationsgesetz auf den Weg bringen: Durch verbindliche Regelungen soll gleichberechtigte Teilhabe in allen relevanten Bereichen - von Bildung und Arbeit bis hin zu politischer Mitbestimmung - erreicht werden.
 
 
 ##### component_topics

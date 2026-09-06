@@ -48,35 +48,35 @@ Wirkungsarchitektur fragt nach dem **Systemdesign**.
 
 ## 2. Der Designprozess
 
-### Schritt 1 – Problem Review
+### Schritt 1 - Problem Review
 
 Was ist der belegte Zustand? Wo liegt der Engpass?
 
-### Schritt 2 – Goal Review
+### Schritt 2 - Goal Review
 
 Welcher Zustand soll sich ändern? Welche Schutzbedingungen?
 
-### Schritt 3 – Systemgrenze
+### Schritt 3 - Systemgrenze
 
 Welche Akteure, Räume, Zeithorizonte und Märkte müssen berücksichtigt werden?
 
-### Schritt 4 – Mechanismen
+### Schritt 4 - Mechanismen
 
 Welche Hebel beeinflussen Verhalten/Zustände?
 
-### Schritt 5 – Optionen/Portfolios
+### Schritt 5 - Optionen/Portfolios
 
 Welche Kombinationen sind realistisch?
 
-### Schritt 6 – Delivery
+### Schritt 6 - Delivery
 
 Wer setzt was mit welchen Ressourcen um?
 
-### Schritt 7 – Daten/Monitoring
+### Schritt 7 - Daten/Monitoring
 
 Welche State Variables zeigen Fortschritt/Fehlentwicklung?
 
-### Schritt 8 – Trigger/Revision
+### Schritt 8 - Trigger/Revision
 
 Wann wird nachgesteuert oder gestoppt?
 

@@ -30,9 +30,9 @@
   if(!r.valid){result.textContent=r.error;return;}
   const a=r.additional;
   const observedText=r.observed<0?`${fmt(-r.observed)} kg mehr Abfall pro Tag`:`${fmt(r.observed)} kg weniger Abfall pro Tag`;
-  if(step===0){result.textContent=`${fmt(r.before)} − ${fmt(r.after)} = ${fmt(r.observed)} kg: ${observedText}. Das ist die beobachtete Veränderung. Welcher Teil auf die Umstellung zurückgeht, ist damit noch offen.`;return;}
+  if(step===0){result.textContent=`${fmt(r.before)} - ${fmt(r.after)} = ${fmt(r.observed)} kg: ${observedText}. Das ist die beobachtete Veränderung. Welcher Teil auf die Umstellung zurückgeht, ist damit noch offen.`;return;}
   const interpretation=a>0?`${fmt(a)} kg zusätzlich vermiedener Abfall pro Tag`:a<0?`${fmt(-a)} kg mehr Abfall pro Tag gegenüber der geschätzten Entwicklung ohne Umstellung`:'kein zusätzlicher Unterschied gegenüber der geschätzten Entwicklung ohne Umstellung';
-  result.textContent=`(${fmt(r.before)} − ${fmt(r.after)}) − (${fmt(r.comparisonBefore)} − ${fmt(r.comparisonAfter)}) = ${fmt(a)} kg: ${interpretation}. `+(step===2?`${fmt(a)} × ${fmt(r.days)} = ${fmt(r.annual)} kg im Rechenjahr. Das ist eine Hochrechnung unter stabilen Bedingungen, keine gemessene Jahreswirkung. `:'')+'Die kausale Interpretation hängt von der Vergleichbarkeit ab; die Rechnung allein beweist sie nicht.';
+  result.textContent=`(${fmt(r.before)} - ${fmt(r.after)}) - (${fmt(r.comparisonBefore)} - ${fmt(r.comparisonAfter)}) = ${fmt(a)} kg: ${interpretation}. `+(step===2?`${fmt(a)} × ${fmt(r.days)} = ${fmt(r.annual)} kg im Rechenjahr. Das ist eine Hochrechnung unter stabilen Bedingungen, keine gemessene Jahreswirkung. `:'')+'Die kausale Interpretation hängt von der Vergleichbarkeit ab; die Rechnung allein beweist sie nicht.';
  }
  function show(focus=false){steps.forEach((el,i)=>{el.hidden=i!==step;});container.querySelector('.course-controls').hidden=false;back.hidden=step===0;next.hidden=step===2;next.textContent=step===0?'Weiter zum Vergleich':'Weiter zur Jahresplanung';container.querySelector('[data-course-progress]').textContent=`Schritt ${step+1} von 3: ${['Beobachtung','Vergleich','Jahresplanung'][step]}`;render();if(focus){const legend=steps[step].querySelector('legend');legend.tabIndex=-1;legend.focus();}}
  next.addEventListener('click',()=>{if(validStep()){step=Math.min(2,step+1);show(true);}});
