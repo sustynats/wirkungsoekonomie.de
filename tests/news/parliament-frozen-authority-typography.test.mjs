@@ -4,6 +4,12 @@ import fs from 'node:fs';
 import { createHash } from 'node:crypto';
 import { isFrozenPublicationSource } from '../../scripts/lib/public-typography.mjs';
 
+test('The pre-rebuild area text baseline retains its independently pinned original bytes', () => {
+  const file = 'docs/parlament/ux/p6-text-baseline-2026-09-04.json';
+  assert.equal(isFrozenPublicationSource(file), true);
+  assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'), 'b9d3f89b64e0142a4deb019a35f6c27fd32cd49f9183292b0366f468a009142d');
+});
+
 test('Publication formatting must preserve the entire hash-bound Parliament authority archive', () => {
   const archive = JSON.parse(fs.readFileSync('woek-parlament-app/data/state-programmes/fach-reviews/mecklenburg-vorpommern-2026-spd-p1-p54-authority-index-v1.json'));
   for (const comment of archive.comments) {

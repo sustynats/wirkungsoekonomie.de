@@ -20,6 +20,7 @@ export function isFrozenPublicationSource(relativePath) {
     'docs/parlament/audits/mv-spd-p1-p54-reference-inventory-2026-09-04.json',
     'docs/parlament/audits/mv-spd-p53-handoff-5474946653.md',
     'docs/parlament/audits/mv-spd-p53-binding-delta-5543580667.md',
+    'docs/parlament/ux/p6-text-baseline-2026-09-04.json',
   ].includes(normalizedPath)) return true;
   // News summaries and snapshots carry editorial/content hashes. Normalize
   // their rendered pages, never the source bytes those reviews approved.

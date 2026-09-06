@@ -62,6 +62,13 @@ data exemptions remain.
 Regression tests retain the original hashes, rather than weakening gates.
 MV P1-P55 decisions and frozen source ledger remain unchanged.
 
+The browser gate exposed the same typography damage in the frozen P6
+area-text fixture. Its original bytes were restored from the accepted P25
+merge after proving normalization-only damage. The original browser pin
+`b9d3f89b64e0142a4deb019a35f6c27fd32cd49f9183292b0366f468a009142d`
+is unchanged. This fixture is now protected from formatting and checked
+by a separate regression. No browser text-preservation assertion is relaxed.
+
 ## Verification and release boundary
 
 The build also exposed a stale public-PDF safety manifest after the earlier
