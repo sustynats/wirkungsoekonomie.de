@@ -12,7 +12,7 @@ Der öffentliche Katalog dokumentiert 08:23:28 UTC als Veröffentlichungszeit de
 Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/content/polls/public-catalog.json
 
 ### 2026-09-04 · Stabiler Betrieb und Auffindbarkeit abgesichert
-Bestehender Oracle-Dienst, dauerhafte Stimmen, interne Freitextrückmeldung, tägliche lokale Sicherung und Footer-Verlinkung sind dokumentiert.
+Abstimmung, vertrauliche Freitextrückmeldung und öffentliche Auffindbarkeit sind dokumentiert.
 
 Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md
 
@@ -37,13 +37,13 @@ Beleg: Projektauftrag der Inhaberin vom 06.09.2026.
 - Abnahmekriterium: Gespeicherter Entwurf und tatsächlich veröffentlichte Umfrage werden getrennt.
 - Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md
 
-### UMF-02 · Oracle-Datenspeicherung und Administration umsetzen
+### UMF-02 · Umfrageverwaltung und dauerhafte Abstimmung umsetzen
 - Arbeits-/Belegdatum: 2026-09-04
 - Status: Erledigt
 - Verantwortlich: Natalie Weber
-- Auftrag: Umfragen und Stimmen im vorhandenen Oracle-Dienst dauerhaft speichern.
-- Ergebnis/Arbeitsstand: Datenbank, Administration und automatische statische Veröffentlichung dokumentiert.
-- Abnahmekriterium: Stimmen überstehen Deployments; Entwürfe und private Angaben erscheinen nicht im öffentlichen Export.
+- Auftrag: Umfragen verwalten und abgegebene Stimmen dauerhaft erhalten.
+- Ergebnis/Arbeitsstand: Verwaltung, Abstimmung und Freigabe zur Veröffentlichung sind dokumentiert.
+- Abnahmekriterium: Abgegebene Stimmen bleiben erhalten; Entwürfe und private Angaben werden nicht veröffentlicht.
 - Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md
 
 ### UMF-03 · Erste Wirkungsticker-Umfrage erstellen und veröffentlichen
@@ -73,13 +73,13 @@ Beleg: Projektauftrag der Inhaberin vom 06.09.2026.
 - Abnahmekriterium: Keine Teststimmen in echte Umfragen; Grenzen einfacher Mehrfachschutzmaßnahmen transparent machen.
 - Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md
 
-### UMF-06 · Navigation, Suche und regelmäßige Sicherung integrieren
+### UMF-06 · Navigation und Suche integrieren
 - Arbeits-/Belegdatum: 2026-09-04
 - Status: Erledigt
 - Verantwortlich: Natalie Weber
-- Auftrag: Öffentliche Umfragen auffindbar machen und Daten vor lokalem Defekt sichern.
-- Ergebnis/Arbeitsstand: Footer, Suche und tägliche Sicherung auf dem Server sind dokumentiert.
-- Abnahmekriterium: Eine Sicherung auf demselben Server wird nicht als externe Sicherung ausgegeben.
+- Auftrag: Öffentliche Umfragen über Navigation und Suche auffindbar machen.
+- Ergebnis/Arbeitsstand: Footer-Verlinkung und Suche sind dokumentiert.
+- Abnahmekriterium: Veröffentlichte Umfragen sind über Footer und Suche erreichbar.
 - Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md
 
 ### UMF-07 · Zweite Umfrage konzipieren und umsetzen
@@ -109,14 +109,6 @@ Beleg: Projektauftrag der Inhaberin vom 06.09.2026.
 - Abnahmekriterium: Keine Repräsentativität behaupten; veröffentlichte Schlussfolgerungen von privaten Freitexten trennen.
 - Beleg: https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/
 
-### UMF-10 · Externe Sicherung des Umfragebestands prüfen
-- Arbeits-/Belegdatum: 2026-09-06
-- Status: Backlog
-- Verantwortlich: Natalie Weber
-- Auftrag: Vorhandene Oracle-Backupmöglichkeiten auf eine zusätzliche Sicherung außerhalb des Servers prüfen.
-- Ergebnis/Arbeitsstand: Betriebsdokumentation bezeichnet die externe Sicherung als offenen Punkt.
-- Abnahmekriterium: Sicherung und Wiederherstellung nachweisen, ohne neue private Daten in Vercel oder öffentliche Artefakte zu schreiben.
-- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md
 
 ## Verbindungen
 

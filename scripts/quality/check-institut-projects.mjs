@@ -3,6 +3,12 @@ import path from 'node:path';
 
 const root = process.argv.includes('--artifact') ? '_site' : '.';
 const data = JSON.parse(fs.readFileSync('content/institut/projects.json', 'utf8'));
+// Der Institutsdiskurs führt Fachprojekte; private Betriebsaufträge dürfen
+// weder über die Datenquelle noch über einen separat eingefügten Teaser zurückkehren.
+const operational = /oracle|vercel|hosting|kostengate|serverumzug|produktivserver|externe sicherung/i;
+if (operational.test(JSON.stringify(data))) throw new Error('Private operational content in public institute project data.');
+const overview = fs.readFileSync(path.join(root, 'institut/projekte/index.html'), 'utf8');
+if (/oracle-always-free|Umzug des Instituts/.test(overview)) throw new Error('Private operational project linked in institute overview.');
 const text = value => value.replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 let documents = 0, tasks = 0;
 for (const project of data.projects) {

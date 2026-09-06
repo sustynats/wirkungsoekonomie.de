@@ -12,14 +12,14 @@ Der öffentliche Nachtrag vom 06.09.2026 dokumentiert Parlament, Wirkungsticker 
 
 ## Fortschreibung
 
-Neue Arbeitsschritte zuerst im Institut erfassen: eindeutiger Auftrag, Verantwortliche, Status, Arbeits-/Belegdatum, Ergebnis oder nächster Schritt und Abnahmekriterium. Historische Daten und tatsächliche Erfassung getrennt halten. Ohne Prüfung keinen Livegang und keine unabhängige Abnahme behaupten.
+Neue fachliche Arbeitsschritte zuerst im Institut erfassen: eindeutiger Auftrag, Verantwortliche, Status, Arbeits-/Belegdatum, Ergebnis oder nächster Schritt und Abnahmekriterium. Historische Daten und tatsächliche Erfassung getrennt halten. Ohne Prüfung keinen Livegang und keine unabhängige Abnahme behaupten.
 
 Bei einer neuen öffentlichen Zusammenfassung den Snapshot mit neuem Standdatum und nachvollziehbaren Quellen fortschreiben oder eine ergänzende Chronik anlegen. Die öffentliche Chronik vom 06.09.2026 ist kein automatisch synchronisiertes Abbild des aktuellen Boards. Private Daten, Rückmeldungen und geschützte Dokumente werden nicht exportiert.
 
 Generatoren: `npm run build:parlament-info`, `npm run updates:build`, `npm run polls:build`, `npm run news:build`. Der reguläre Gesamtbuild und das Auslieferungsartefakt enthalten die einschlägigen Qualitäts-, Such- und Datenschutzprüfungen.
 
-## Institutsdaten und Hosting
+## Fachlicher Umfang
 
-Der vorherige Institutsbestand wurde vor der Ergänzung geschützt exportiert. Die migrationsartigen, wiederholbar geschützten Datennachträge liegen im separaten Repository `sustynats/woek-institut-app` unter `institut_0020` bis `institut_0022`. Sie verändern keine Schema- oder Auth-Strukturen.
+Im Institut finden ausschließlich fachliche Diskussionen statt. Fachliche Projektaufträge, Konzepte, Arbeitsstände und Ergebnisse gehören in die Projektakten.
 
-Der Oracle-Always-Free-Umzug ist ein eigener offener Arbeitsauftrag im Institut. Er ist mit diesem Inhaltsrelease nicht abgeschlossen. Kontotarif, Restkapazität, Zugang, vollständiges Backup/Restore, gemeinsame Auth-/Datenabhängigkeiten und der tatsächliche Livewechsel müssen separat geprüft werden. Für dieses Inhaltsrelease wird kein Vercel-Build benötigt.
+Operative Angelegenheiten betreffen ausschließlich die Inhaberin. Sie werden weder im Diskurs noch in öffentlich oder für Institutsmitglieder sichtbaren Projekten, Aufgaben, Dokumenten oder Startseitenhinweisen geführt. Die Sichtbarkeit „intern“ ist ohne nachgewiesene Beschränkung auf die Inhaberin dafür nicht ausreichend.

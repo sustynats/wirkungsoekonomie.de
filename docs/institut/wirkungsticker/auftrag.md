@@ -14,7 +14,7 @@ Eine überschaubare Auswahl quellengebundener Wirkungsnachrichten, stabile und f
 Neue Entwicklung, materielle mögliche Zustandsveränderung und hinreichende Quellenbasis müssen gemeinsam vorliegen. Eine Meldung, Reichweite oder Zustimmung ist für sich genommen keine Wirkung. Es gibt keine Rangliste von Personen, Parteien oder Medienhäusern. Unbelegte Zahlen und ungestützte Kausalität sind keine zulässige Verdichtung.
 
 ## Betrieb und Übergabe
-Die Veröffentlichung am 03.09.2026 beendet das Projekt nicht. Natalie Weber führt Quellenpflege, Qualitätskontrolle, Korrekturen und die Rückkopplung aus Nutzerhinweisen weiter. Der Ticker nutzt die vorhandene Oracle-KI und GitHub-Pages-Auslieferung. Kostenbegrenzung und verlustfreie Zurückstellung gehen vor zusätzlichem Verbrauch.
+Die Veröffentlichung am 03.09.2026 beendet das Projekt nicht. Natalie Weber führt Quellenpflege, Qualitätskontrolle, Korrekturen und die Rückkopplung aus Nutzerhinweisen weiter.
 ## Quellen und Ergebniszugänge
 
 - [Erste Implementierung, lokal 03.09.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b)

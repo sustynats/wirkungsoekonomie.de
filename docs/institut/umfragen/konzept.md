@@ -8,7 +8,7 @@ Rückblickend dokumentiert am 6. September 2026. Die genannten historischen Date
 Idee und Forschungsfrage → verständliche Frage und Antwortoptionen → Entwurf in der Administration → fachliche und technische Prüfung → Freigabe → tatsächliche Veröffentlichung prüfen → Rückmeldungen auswerten → begründete Änderungen nachverfolgen. Neue inhaltliche Fragen erhalten eine eigene Fassung; abgegebene Stimmen dürfen nicht rückwirkend umgedeutet werden.
 
 ## Technische Grundlage
-Öffentliche Seiten werden mit den vorhandenen Website-Templates statisch auf GitHub Pages veröffentlicht. Die API und dauerhaften Umfragedaten liegen auf der vorhandenen Oracle-Infrastruktur. Der öffentliche Katalog enthält freigegebene Umfragemetadaten, keine Einzelstimmen. Die Verwaltung unterscheidet Speichern und tatsächliche Veröffentlichung.
+Der öffentliche Katalog enthält freigegebene Umfragemetadaten, keine Einzelstimmen. Die Verwaltung unterscheidet Speichern und tatsächliche Veröffentlichung.
 
 ## Schutz der Teilnehmenden
 Keine Anmeldung für die Abstimmung. Die pro Umfrage erzeugte Browserkennung begrenzt einfache Mehrfachabstimmungen, bietet aber keine Garantie gegen Manipulation. Ergebnisse folgen der eingestellten Sichtbarkeit. Freitextfeedback und Einzelantworten gehören nicht in öffentliche Projektchroniken. Der Nachtrag veröffentlicht ausschließlich Projektarbeit, keine Rückmeldungen einzelner Menschen.
@@ -17,7 +17,7 @@ Keine Anmeldung für die Abstimmung. Die pro Umfrage erzeugte Browserkennung beg
 Die Online-Umfrage ist nicht repräsentativ. Teilnahmezahl, Prozentwerte und Zustimmung sind keine Wirkung. Die Auswertung fragt nach nachvollziehbaren Hinweisen auf Verständlichkeit und Verbesserungsbedarf. Erst dokumentierte Änderungen und spätere Prüfung schaffen eine Lernschleife; Reporting allein genügt nicht. Nichtkompensation schützt Datenschutz und andere harte Grenzen, Reverse Merit Order priorisiert kritische Probleme vor Komfortverbesserungen.
 
 ## Offene Pflege
-Die zweite Umfrage braucht ihre eigene dokumentierte Freigabe. Die bestehende Sicherung auf dem Produktivserver ersetzt keine nachgewiesene externe Sicherung. Diese Punkte bleiben als Aufgaben Natalie Weber zugeordnet.
+Die zweite Umfrage braucht ihre eigene dokumentierte fachliche Freigabe. Diese Aufgabe bleibt Natalie Weber zugeordnet.
 ## Quellen und Ergebniszugänge
 
 - [Architektur, Betrieb und dokumentierte Live-Abnahme](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md)

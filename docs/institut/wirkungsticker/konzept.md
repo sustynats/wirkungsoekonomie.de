@@ -17,7 +17,7 @@ Wirkung ist eine tatsächliche Zustandsveränderung. Potenzial und Risiko sind E
 Neue Evidenz kann eine begründete Korrektur auslösen. Nutzerfeedback hilft, Darstellungen und Prüfbedarf zu verbessern. Es ersetzt weder Fachprüfung noch repräsentative Forschung. Reporting zeigt Veröffentlichungen und Betriebszustände; Rückkopplung bedeutet eine daraus abgeleitete, dokumentierte Änderung. Die erste Umfrage ist deshalb mit dem Tickerprojekt verbunden.
 
 ## Technische Grenzen
-Statische öffentliche Inhalte liegen in GitHub Pages und unveränderliche große Artefakte in GitHub Releases. Laufende Verarbeitung erfolgt auf vorhandener Oracle-Infrastruktur. Personenbezogene Umfrageantworten und Freitexte gehören nicht in öffentliche Projektakten. Dieser Nachtrag enthält ausschließlich öffentlich freigegebene Projektdokumentation.
+Personenbezogene Umfrageantworten und Freitexte gehören nicht in öffentliche Projektakten. Dieser Nachtrag enthält ausschließlich öffentlich freigegebene Projektdokumentation.
 ## Quellen und Ergebniszugänge
 
 - [Erste Implementierung, lokal 03.09.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b)
