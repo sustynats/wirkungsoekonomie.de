@@ -1,7 +1,104 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T10:21:08.621Z",
+  "updated_at": "2026-09-06T10:36:30.507Z",
   "stories": [
+    {
+      "story_id": "wt-46e5c503d6322ccb",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-5cd5e226c2522829-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-6c296c5154d6b8c4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-a21db6575e67f29f-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-38c18c9de1ba27d2-source.png"
+        }
+      },
+      "slug": "inflationsrate-im-august-2026-voraussichtlich-2-9-322ccb",
+      "title": "Inflationsrate im August 2026 voraussichtlich +2,9 %",
+      "source_summary": "Das Statistische Bundesamt meldet vorläufige Ergebnisse zur Inflation in Deutschland für August 2026. Danach wird die Inflationsrate voraussichtlich bei +2,9 % liegen; gegenüber Juli 2026 steigen die Verbraucherpreise um 0,2 %. Ohne Nahrungsmittel und Energie liegt die Kerninflation voraussichtlich bei +2,4 %. Für Energie wird ein Anstieg von 10,5 % gegenüber dem Vorjahresmonat genannt, nach +8,3 % im Juli.\n\nDie Mitteilung verweist außerdem auf den Verbraucherpreisindex und den harmonisierten Verbraucherpreisindex als Messgrößen. Die endgültigen Ergebnisse für August 2026 sollen am 10. September 2026 veröffentlicht werden.",
+      "summary": "Destatis meldet für August 2026 vorläufig eine Inflationsrate von 2,9 Prozent. Auffällig ist der erneut starke Anstieg der Energiepreise gegenüber dem Vorjahr.",
+      "detail_summary": "Gesichert ist aus der amtlichen Vorabmitteilung: Für August 2026 wird in Deutschland eine Inflationsrate von +2,9 % erwartet, die Verbraucherpreise sollen gegenüber Juli um 0,2 % steigen. Gleichzeitig nennt Destatis eine Kerninflation von +2,4 % und einen Energiepreisanstieg von +10,5 % gegenüber dem Vorjahresmonat. Für die Einordnung ist das relevant, weil Preisentwicklung Kaufkraft, Kostenpositionen von Unternehmen und geldpolitische Erwartungen beeinflussen kann. Ein möglicher Wirkpfad führt über höhere Ausgabenbelastung bei Haushalten und Preisdruck in energieintensiven Branchen. Offen bleibt aber, wie stark und wie dauerhaft sich die vorläufigen Werte nach der endgültigen Veröffentlichung am 10. September bestätigen. Die Meldung belegt Preisbewegungen, nicht bereits deren wirtschaftliche oder soziale Folgewirkungen.",
+      "why_relevant": "Die Meldung liefert eine aktuelle, amtliche Zustandsinformation zu Inflation und Energiepreisen. Sie ist für Haushalte, Unternehmen und wirtschaftspolitische Einordnung materiell relevant, weil sie Preisniveaustendenzen und Kostenentwicklung sichtbar macht.",
+      "topic": [
+        "Energie",
+        "Finanzen"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die vorläufige Teuerung betrifft Kaufkraft, laufende Ausgaben und Preisplanung im Alltag."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der starke Energiepreisanstieg ist für den Ressourcen- und Klimakontext relevant, die Meldung zeigt aber nur Preise, keine Emissionen oder Verhaltensänderungen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Inflationsdaten sind eine wichtige Grundlage für wirtschaftspolitische Debatten und geldpolitische Erwartungen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-06T10:36:30.507Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-08-31T12:00:00.000Z",
+      "last_updated": "2026-09-06T10:39:49.245Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-1f973d1f3c747fb944e6",
+      "case_file": null,
+      "source_published_at": "2026-08-31T12:00:00.000Z",
+      "published_at": "2026-09-06T10:39:49.245Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "destatis-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die endgültigen Ergebnisse für August 2026 werden veröffentlicht.",
+          "source_id": "destatis-aktuell",
+          "expected_by": "2026-09-10",
+          "measurable_indicator": "Veröffentlichung der endgültigen August-Zahlen",
+          "expected_by_evidence_hash": "d1d861d77a7f91c99e8974968916e62eb89657b54190c268e56c51e664ebacec",
+          "followup_id": "followup-7dc94bb7c2b2476d",
+          "announced_at": "2026-08-31T12:00:00.000Z",
+          "follow_up_date": "2026-09-10T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+          "source_type": "official_rss",
+          "published_at": "2026-08-31T12:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-7bd1d7f242af3f7b",
       "title_image": {
