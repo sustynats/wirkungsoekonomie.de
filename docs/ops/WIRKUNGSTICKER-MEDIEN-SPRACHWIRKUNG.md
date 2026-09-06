@@ -25,6 +25,10 @@ Der lokale Trigger ist ein Recherche- und Kostengate, kein abschließendes Urtei
 - prominente Akteursaussagen und Zitate;
 - fehlende Attribution in der Überschrift;
 - einen erkennbaren Unterschied zwischen Überschrift und geliefertem Kurztext.
+- seit Version 2.1 nahe Merkmals-/Schadensverknüpfungen in derselben Überschrift, etwa elektrische oder verbrennungsbasierte Technik neben einem Brand oder Unfall;
+- bestimmte Kausalbehauptungen in einer Quellenüberschrift bei zugleich qualifizierter oder offener Angabe im zugehörigen Quellentext.
+
+Neutrale Technikmerkmale erhöhen nicht zusätzlich die Warnstufe für politische Kampfbegriffe. Verschiedene Überschriften und Sätze werden für Assoziationssignale nicht zusammengeschoben; Brandschutz-/Feuerwehrbegriffe sind allein kein Schadensereignis. Auch nach einer sachlicheren Ticker-Überschrift bleibt die Originalüberschrift Prüfgrundlage. Der Trigger stellt weder Unwahrheit noch Manipulation noch tatsächlich aktivierte Vorstellungen fest.
 
 Die Regeln enthalten keine ideologische Blacklist. Links, rechts, Regierung, Opposition, Wirtschaft, Verbände, NGOs, Gewerkschaften, Behörden und Medien werden mit derselben Signallogik behandelt. Ein Treffer aktiviert die Prüfung; die vertiefte Analyse darf anschließend `relevant:false` feststellen. Umgekehrt darf ein konkreter, vollständig ausgefüllter und anschließend durch alle Qualitätsregeln geprüfter Befund einen zu engen lokalen Nichttreffer ergänzen. Diese Eskalation wird als `analysis_finding` protokolliert und verändert weder Fakten- noch Ereigniswirkung.
 
@@ -53,6 +57,20 @@ Ein korrekt wiedergegebenes Zitat kann kommunikatives Wirkungspotenzial besitzen
 ## Evidenzregeln
 
 Fakt, Akteursaussage, Medienhandlung, Inferenz, Wirkungspotenzial, Wirkungsrisiko und eingetretene Wirkung werden getrennt ausgewiesen. Politische Begriffsgeschichte darf nur erscheinen, wenn eine Referenz auf eine tatsächlich gelieferte Quelle besteht. Andernfalls wird lediglich von einer politisch aufgeladenen oder umkämpften Bezeichnung gesprochen. Absichten werden nicht unterstellt.
+
+### Implizite Assoziationen, Narrative und Wiederholung
+
+Die Prüfung ist nicht auf politische Schlagwörter begrenzt. Sie unterscheidet:
+
+1. Beobachtbare Hervorhebung: Welches Merkmal steht neben welchem Ereignis? Ist die Angabe sachlich erforderlich und klar attribuiert?
+2. Analytische Hypothese: An welche Vorstellungen könnte die Darstellung anschließen? Wird möglicherweise vom konkreten Objekt auf eine ganze Technik oder Gruppe übertragen? Ein Einzelfall belegt keine vergleichende Häufigkeit oder allgemeine Gefährlichkeit.
+3. Narrativanschluss: Ist ein wiederkehrendes Deutungsmuster tatsächlich belegt oder nur eine plausible Rezeptionshypothese? Kein erfundener Mythos, keine politische Herkunft aus Modellgedächtnis.
+4. Wiederholung: Welche Aussage wird wo wiederholt? Feed, Cache und Artikel derselben Quelle sowie Agenturabdrucke sind keine unabhängigen Bestätigungen. Bloße Wortnähe ist noch keine Wiederholungsserie.
+5. Illusory Truth: Ein mögliches verändertes Wahrheitsurteil durch Vertrautheit/Wiederholung ist nicht mit einer spontanen Assoziation gleichzusetzen. Ohne fallbezogene Basis bleibt `repetition_risk:open`; eine Publikumswirkung wird nicht behauptet.
+
+Die bestehende Struktur reicht dafür aus: `frame_analysis`, `evidence.observations/inferences/limitations`, `discourse_effect`, `resonance.repetition_effect` und `impact_path`. Keine zweite Analyse oder zusätzliche Datenbank. Die Darstellung nennt Wiederholungsrisiken nicht automatisch Illusory-Truth-Befunde und zeigt verfügbare Erläuterungen statt bloßer Stufen. Das Gate weist unbelegte Behauptungen eines eingetretenen Illusory-Truth-Effekts zurück. Ein widersprüchliches `impact_status:observed` ohne Beobachtungsbeleg wird normalisiert.
+
+Methodischer Forschungshinweis: [Fazio et al. (2015), Knowledge does not protect against illusory truth](https://pubmed.ncbi.nlm.nih.gov/26301795/) untersucht Wahrheitsurteile zu wiederholten Aussagen. Das ist keine Evidenz für die Wirkung einer konkreten Ticker-Meldung und wird nicht als Ereignisquelle angefügt.
 
 ## Self-Frame-Check
 
@@ -90,6 +108,10 @@ Der Medienkostenanteil eines regulären kombinierten Aufrufs ist eine konservati
 10. ist bei unverändertem Quellenstand idempotent.
 
 Der GitHub-Workflow bietet dafür die manuellen Eingaben `media_impact_backfill` und `media_impact_limit`. Nach einer Methodenversion wird der Vollbestand lokal neu gescannt; nur tatsächliche Trigger-Treffer werden KI-gestützt ergänzt. Der Prozess ist idempotent und verändert keine Fakten- oder Quellenakte.
+
+Für eine bereits redaktionell geprüfte Ergänzung unterstützt der vorhandene Intake `publish-reviewed.mjs` auch `review_type:media_impact`. Er prüft Quellenfingerabdruck, Source Integrity und die Publikationsgates, bewahrt Quellen, Claims, Ereignis-ID, URL, Erstpublikation, Scores und historische Versionen und ergänzt eine Version mit öffentlichem Korrekturhinweis. Der Review-Fingerabdruck verhindert Doppelanwendung. Das ist keine erneute KI-API-Analyse; es wird keine fiktive Tokenabrechnung erzeugt.
+
+Regression Seelze, 6. September 2026: Originalüberschrift und bereits geprüfte Ereignisangaben bleiben erhalten; eigener Titel sachverhaltszentriert. Technische Relevanz bleibt ausdrücklich möglich. Keine Gleichsetzung Rollstuhl/Elektroauto, keine vergleichende Brandstatistik, keine behauptete Manipulation oder beobachtete Rezeption. Der lokale Vergleich am Bestand mit 98 veröffentlichten, gelisteten Akten ergibt 8 → 9 Trigger-Treffer, also einen zusätzlichen Prüffall. Kein kostenpflichtiger Gesamtbackfill.
 
 ## Testabdeckung
 
