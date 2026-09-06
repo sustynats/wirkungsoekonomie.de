@@ -1,3 +1,4 @@
+import {resolveReaderAliases} from './resolve-reader-aliases.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { readerFileForRoute, readerRouteAliases, routeSlug } from "./reader-route-aliases.mjs";
@@ -185,27 +186,12 @@ function writeReaderRedirectStubs() {
 }
 
 function repairKnownReaderNavigation(file, html) {
-  const route = routeFor(file);
-  for (const alias of readerRouteAliases) {
-    const oldRelative = `../${routeSlug(alias.from)}/`;
-    const newRelative = `../${routeSlug(alias.to)}/`;
-    if (alias.mode === "retire" && route === alias.to && alias.predecessor) {
-      html = replaceChapterLink(
-        html,
-        oldRelative,
-        `../${routeSlug(alias.predecessor)}/`,
-        "← Social Media"
-      );
-      html = replaceHref(html, alias.from, alias.predecessor);
-    } else {
-      html = replaceHref(html, oldRelative, newRelative);
-      html = replaceHref(html, alias.from, alias.to);
-    }
-    if (alias.mode === "retire" && route === alias.predecessor) {
-      html = replaceChapterLink(html, newRelative, newRelative, `${alias.title} →`);
-    }
+  let result=resolveReaderAliases(html, routeFor(file), readerRouteAliases);
+  for(const alias of readerRouteAliases.filter(a=>a.mode==='rename')){
+    const pattern=new RegExp(`(<a\\b[^>]*href=["']${escapeRegExp(alias.to)}["'][^>]*>)([^<]*)(</a>)`,'giu');
+    result=result.replace(pattern,(_,start,label,end)=>/Redaktioneller Hinweis|Codex/i.test(label)?start+escapeHtml(alias.title)+(label.includes('→')?' →':label.includes('←')?' ←':'')+end:start+label+end);
   }
-  return html;
+  return result;
 }
 
 function repairLeadingGlossaryReaderNavigation(file, html) {

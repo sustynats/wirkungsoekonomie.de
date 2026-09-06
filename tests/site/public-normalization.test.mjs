@@ -67,3 +67,10 @@ test('publication normalization preserves routes, self-linked fragments and dist
     assert.equal(again.fragmentAliases.length+again.duplicates.length+again.uniqueIds.length,0);
   } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
+
+test('reader aliases resolve the full route before replacing a relative chapter link',async()=>{
+ const {resolveReaderAliases}=await import('../../scripts/library/resolve-reader-aliases.mjs');
+ const aliases=[{from:'/book-a/01-wirkung/',to:'/field/dossier/',mode:'retire'}];
+ assert.equal(resolveReaderAliases('<a href="../01-wirkung/">Next</a>','/book-b/00-intro/',aliases),'<a href="../01-wirkung/">Next</a>');
+ assert.equal(resolveReaderAliases('<a href="../01-wirkung/">Next</a>','/book-a/00-intro/',aliases),'<a href="/field/dossier/">Next</a>');
+});

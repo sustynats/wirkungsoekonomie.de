@@ -1,3 +1,4 @@
+import {hasPublicationAccess} from '../lib/publication-access.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -784,7 +785,7 @@ export function buildCrossDocumentFindings() {
   return docs.map(([label, route]) => {
     const file = path.join(route.slice(1), "index.html");
     const html = fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
-    const hasOriginal = /Original(?:datei|-XLSX|-PDF)? öffnen/.test(html);
+    const hasOriginal = hasPublicationAccess(html, route);
     return {
       documentId: route.split("/").filter(Boolean).at(-1),
       route,

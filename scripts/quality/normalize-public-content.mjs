@@ -56,10 +56,15 @@ export function normalizeStaticNavigation(html, ids) {
 }
 
 export function normalizePublicContent(root, options={}) {
+  const headingAnchors=options.headingAnchors ?? JSON.parse(fs.readFileSync('content/site/heading-anchors.json','utf8'));
   const pages=new Map();const report={reviewedAt:'2026-09-06',linkRewrites:[],fragmentAliases:[],uniqueIds:[],duplicates:[],headings:[],staleTocEntries:[],duplicateDownloadButtons:[]};
   for(const file of walk(root)){
     const rel=path.relative(root,file).replaceAll(path.sep,'/');const route=rel==='index.html'?'/':'/'+(rel.endsWith('/index.html')?rel.slice(0,-10):rel);
     const original=fs.readFileSync(file,'utf8');let html=original;
+    for(const [id,label] of Object.entries(headingAnchors[route] || {})){
+      if(html.includes(`id="${id}"`))continue;
+      html=html.replace(/<h([1-6])\b([^>]*)>([\s\S]*?)<\/h\1>/gi,(whole,level,attrs,body)=>!/(?:^|\s)id=/.test(attrs)&&visible(body)===label?`<h${level}${attrs} id="${id}">${body}</h${level}>`:whole);
+    }
     if(!rel.startsWith('api/') && !/name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)) {
       const normalized=uniqueContentIds(html);html=normalized.html;
       if(normalized.changes.length)report.uniqueIds.push({route,changes:normalized.changes});
@@ -95,7 +100,18 @@ export function normalizePublicContent(root, options={}) {
     let target,fragment;try{target=decodeURIComponent(url.pathname);fragment=decodeURIComponent(url.hash.slice(1));}catch{return tag;}
     if(target.endsWith('/index.html'))target=target.slice(0,-10);
     let replacement;
-    if(target==='/glossar.html' && fragment.startsWith('begriff-'))replacement=terms.get(fragment.slice(8));
+    if(target==='/glossar.html' && fragment){
+      const legacy={
+        'wirkungspfad':'wirkpfad', 'kausalitaet-zurechnung':'kausalitaet-und-zurechnung',
+        'nicht-kompensation':'nichtkompensationsprinzip', 'medikamenten-analogie':'wirkstoff',
+        'transitionsrisiko':'transition-risk', 'physisches-klimarisiko':'klimarisiko',
+      };
+      const key=fragment.replace(/^begriff-/, '');
+      replacement=terms.get(legacy[key] || key);
+      if(['externe-quellen-glossar','daten-standards-glossar'].includes(fragment))replacement='/quellen/';
+    }
+    if(target==='/wirkungsradar/muster/' && fragment==='verantwortungsdiffusion')replacement='/begriffe/verantwortungsdiffusion/';
+    if(target==='/erleben/wirkungssteuer-beispiele/' && ['apfel','t-shirt'].includes(fragment))replacement=fragment==='apfel'?'/bibliothek/beispiel-apfel-wirkungssteuer/':'/bibliothek/apfel-t-shirt-wirkung-im-preis/';
     if(renamed.has(target))replacement=renamed.get(target);
     if(replacement && pages.has(replacement)){
       report.linkRewrites.push({from:page.route,previous:href,target:replacement});return `${start}${quote}${esc(replacement)}${quote}`;

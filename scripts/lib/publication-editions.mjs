@@ -4,7 +4,9 @@ import {escapeHtml} from './explainer-components.mjs';
 function allPdfEditions() {
   const historical = JSON.parse(fs.readFileSync('assets/data/site-review-pdf-editions.json', 'utf8')).files;
   const learning = JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-09-06.json', 'utf8')).files;
-  return [...historical, ...learning];
+  const state=JSON.parse(fs.readFileSync('assets/data/state-benchmark-edition-2026-09-06.json','utf8')).files;
+  const model=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-1.json','utf8')).files;
+  return [...historical, ...learning, ...state, ...model];
 }
 export function currentPdfEditions() {
   const all = allPdfEditions();

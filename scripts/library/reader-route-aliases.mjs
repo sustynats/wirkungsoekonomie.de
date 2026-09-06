@@ -25,6 +25,9 @@ function retiredReaderRoutes({ id, root, successor, title, routes }) {
  * in Navigation, Sitemap oder Suchindex.
  */
 export const readerRouteAliases = Object.freeze([
+{"id": "glossary-mini-definitions-v1-1", "mode": "rename", "from": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-1-pdf/lesen/14-14-fuhrende-mini-definitionen-fur-hover-glossar-und-codex/", "to": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-1-pdf/lesen/14-14-mini-definitionen-fuer-die-oeffentliche-begriffsverwendung/", "title": "14. Mini-Definitionen für die öffentliche Begriffsverwendung"},
+{"id": "glossary-mini-definitions-v1-2", "mode": "rename", "from": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-2-pdf/lesen/14-14-fuhrende-mini-definitionen-fur-hover-glossar-und-codex/", "to": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-2-pdf/lesen/14-14-mini-definitionen-fuer-die-oeffentliche-begriffsverwendung/", "title": "14. Mini-Definitionen für die öffentliche Begriffsverwendung"},
+{"id": "system-resilience-reading-note", "mode": "rename", "from": "/bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-als-systemresilienz-definition-un/lesen/10-redaktioneller-hinweis/", "to": "/bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-als-systemresilienz-definition-un/lesen/10-hinweis-zur-verwendung/", "title": "Hinweis zur Verwendung"},
   {
     id: "political-standard-public-content-requirements",
     mode: "rename",

@@ -27,6 +27,8 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 
 ## Inhaltliche Leitlinie Wirkungsökonomie
 
+- Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Wirtschaft, Staat, Institutionen und gesellschaftliches Zusammenleben gehören zu ihrem Gegenstandsbereich; einzelne Instrumente bilden nur Ausschnitte ab.
+
 - Wirkung ist neutral und relational.
 - Wirkung bedeutet tatsächliche Veränderung von Zuständen.
 - Wirkung, Wirkungspotenzial und Wirkungsrisiko werden klar unterschieden.

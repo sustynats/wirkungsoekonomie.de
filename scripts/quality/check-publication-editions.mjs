@@ -5,7 +5,13 @@ const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).diges
 if(manifest.files.length!==8 || !manifest.sourceHashes)throw new Error('Incomplete dated PDF release manifest');
 const learning=JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-09-06.json','utf8'));
 if(learning.files.length!==2 || Object.keys(learning.sourceHashes).length<6) throw new Error('Learning editions incomplete');
+const model=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-1.json','utf8'));
+for(const [source,expected] of Object.entries(model.sourceHashes))if(hash(source)!==expected)throw new Error(`Model explainer PDF source changed: ${source}`);
+for(const source of model.supersedesSources)if(!learning.sourceHashes[source]||!model.sourceHashes[source])throw new Error(`Invalid model source succession: ${source}`);
+for(const edition of model.files)if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${model.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1 || !learning.files.some(item=>item.filename===edition.supersedes))throw new Error('Invalid model edition metadata');
+console.log('Model introduction v1.1: explicit source succession, prior edition preserved.');
 for(const [source,expected] of Object.entries(learning.sourceHashes)) {
+ if(model.supersedesSources.includes(source))continue;
  if(hash(source)!==expected) throw new Error(`Learning PDF source changed: ${source}. Publish a new dated edition.`);
 }
 for(const source of learning.supersedesSources) {
@@ -33,3 +39,8 @@ for(const [source,expected] of Object.entries({...erratum.sourceHashes,...erratu
 }
 if(!erratum.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${erratum.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(erratum.sha256) || erratum.pages<1)throw new Error('Invalid publication erratum metadata');
 console.log('Additional historical-paper erratum: source contents and original PDF hashes consistent.');
+
+const state=JSON.parse(fs.readFileSync('assets/data/state-benchmark-edition-2026-09-06.json','utf8'));
+for(const [source,expected] of Object.entries(state.sourceHashes))if(hash(source)!==expected)throw new Error(`State benchmark PDF source changed: ${source}`);
+for(const edition of state.files)if(!edition.url.includes(`/releases/download/${state.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1)throw new Error('Invalid state benchmark edition');
+console.log('State benchmark PDF: immutable metadata and shared website content consistent.');
