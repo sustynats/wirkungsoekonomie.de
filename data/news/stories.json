@@ -1,7 +1,563 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T00:36:18.664Z",
+  "updated_at": "2026-09-06T00:51:29.462Z",
   "stories": [
+    {
+      "story_id": "wt-78b8df2827ab4527",
+      "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+      "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+      "first_seen": "2026-09-05T18:15:04.000Z",
+      "last_updated": "2026-09-06T00:29:42.000Z",
+      "topic": [
+        "Geopolitik",
+        "Politik",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
+          "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+          "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:15:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ada3b25d5f1d2f6395fdb01c2694dc1c91caad6028096c51398f529688341224",
+          "source_item_id": "caa7462337f456f714632a73839e9496507b2c89174f6f0116345ae1d1cdd47d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T18:15:04.000Z",
+          "ingested_at": "2026-09-05T18:21:18.289Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-100.html",
+          "title": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
+          "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T20:57:48.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ba6b5336cbefd5ab70cccb0ef8cbf8e0aa12442ee33c3304eb8af8705fc795b2",
+          "source_item_id": "88ed0dc883a49659c74146dce5d751ea22310c09eefc2d2a9aabbbbe22ae7017",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T20:57:48.000Z",
+          "ingested_at": "2026-09-05T22:06:43.441Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/ausland/europa/witkoff-kushner-treffen-putin-100.html",
+          "title": "Kreml spricht von nützlichen Gesprächen",
+          "summary": "Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Ein Kreml-Berater spricht von…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T23:00:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "68cc5596cfa13153dcbdecd3e5503f01c3bd01f7039b0fc64ce485c07bafc4a5",
+          "source_item_id": "94e3ce8628219fad670ec251de9fd4161e140178b0ec05449ed0a8ab76a74bc6",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T23:00:04.000Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown"
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-102.html",
+          "title": "Gespräche über Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
+          "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Jetzt werden die Gesandten von Präsident Trump in Kiew erwartet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T23:10:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4366d035e754dab47a94244de00e70f6bc063f150ee84fe83a67b893671b1127",
+          "source_item_id": "9a0ca262de20d1c36c88339951571de63ee0f66468c2c9a41e6d97cd2ba9c277",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T23:10:33.000Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown"
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/verhandlungen--kreml-spricht-von-konstruktiven-gespraechen-mit-us-gesandten-38211922.html",
+          "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
+          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:32:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "2f6188f33f2744517fcce426e9b430520b23c489f294e87e772e8df74ebfb5d7",
+          "source_item_id": "97a589ea5e92a1c950dcc83b25867e955df33026edf37d66dec8bd86d010a06a",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T22:32:05.000Z",
+          "ingested_at": "2026-09-05T23:51:06.780Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021831.html",
+          "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
+          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:33:21.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9d73f3f185741b614c12381252743de2e98099de9b22127fd0d8a8e4c9dafd83",
+          "source_item_id": "ae1314fd3ad3115996c32022559adb37fa3c7e0ef25bcb686a0eada07dec0219",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T22:33:21.000Z",
+          "ingested_at": "2026-09-05T23:51:06.780Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-lage-im-uberblick-16021831.html",
+          "title": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
+          "summary": "Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:33:21.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1cd0d7f972bc99aa4fde22511d1164550b5bcdaa59a94ca4bedc57e5a8d23c7d",
+          "source_item_id": "88f82b8bbe2dcf995cc59d16a42521526282daa54a210f0db14a1fc5be39d1ad",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T22:33:21.000Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/lage-im-ueberblick--us-gesandte-nach-treffen-mit-putin-unterwegs-nach-kiew-38211922.html",
+          "title": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
+          "summary": "Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T00:18:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "e8797cb14ba76c632e4846dad974ec4de14526601f412e92380bdb855f4ce6e4",
+          "source_item_id": "589f28eeaf7513d13eb7463446c468070d74b137243fa82a5cf296fc309ae7ae",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T00:18:16.000Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+          "title": "Ukraine-News: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
+          "summary": "Der Kreml hat die nach langer Pause wieder aufgenommenen Gespräche von Präsident Wladimir Putin mit den US-Vermittlern Steve Witkoff und Jared Kushner als konstruktiv, inhaltsreich und vertrauensvoll bezeichnet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T00:29:42.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f8da5cb0dc06c630d2b9db3781ffc4d22387d073e22031e988791c34b1d04b22",
+          "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T00:29:42.000Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-01",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen: Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T00:51:29.462Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-02",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen: Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T00:51:29.462Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-03",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Kreml spricht von nützlichen Gesprächen: Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Ein Kreml-Berater spricht von…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T00:51:29.462Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-04",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Gespräche über Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen: In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Jetzt werden die Gesandten von Präsident Trump in Kiew erwartet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T00:51:29.462Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-05",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten: Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T00:51:29.462Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-06",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten: Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T00:51:29.462Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-07",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew: Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T00:51:29.462Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-08",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew: Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T00:51:29.462Z"
+        },
+        {
+          "claim_id": "wt-78b8df2827ab4527-claim-09",
+          "story_id": "wt-78b8df2827ab4527",
+          "claim": "Ukraine-News: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten: Der Kreml hat die nach langer Pause wieder aufgenommenen Gespräche von Präsident Wladimir Putin mit den US-Vermittlern Steve Witkoff und Jared Kushner als konstruktiv, inhaltsreich und vertrauensvoll bezeichnet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T00:51:29.462Z"
+        }
+      ],
+      "content_hash": "2e64a906205a79b782ff029f6fce8bfe1ffcaf2ff9e7c92d56787ca98fd7d442",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_BLOCKED",
+      "versions": [],
+      "updated_at": "2026-09-06T00:51:29.462Z",
+      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
+      "event_detected_at": "2026-09-05T18:21:18.289Z",
+      "event_id": "event-33c99d9ec5432a4822d9",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Politik",
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.791033333333335,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 390.18621666666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T00:51:29.462Z",
+        "fingerprint": "bd605fb94dcf5a6bec790ea76451cdbf342a2d3e0aceb53a1a6995c416f07e60",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-7ebecf5b3f91d490",
       "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
@@ -1857,456 +2413,6 @@
       }
     },
     {
-      "story_id": "wt-78b8df2827ab4527",
-      "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
-      "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
-      "first_seen": "2026-09-05T18:15:04.000Z",
-      "last_updated": "2026-09-05T23:00:04.000Z",
-      "topic": [
-        "Geopolitik",
-        "Politik",
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
-          "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
-          "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T18:15:04.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "ada3b25d5f1d2f6395fdb01c2694dc1c91caad6028096c51398f529688341224",
-          "source_item_id": "caa7462337f456f714632a73839e9496507b2c89174f6f0116345ae1d1cdd47d",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T18:15:04.000Z",
-          "ingested_at": "2026-09-05T18:21:18.289Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-100.html",
-          "title": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
-          "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T20:57:48.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "ba6b5336cbefd5ab70cccb0ef8cbf8e0aa12442ee33c3304eb8af8705fc795b2",
-          "source_item_id": "88ed0dc883a49659c74146dce5d751ea22310c09eefc2d2a9aabbbbe22ae7017",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T20:57:48.000Z",
-          "ingested_at": "2026-09-05T22:06:43.441Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesschau-access",
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/ausland/europa/witkoff-kushner-treffen-putin-100.html",
-          "title": "Kreml spricht von nützlichen Gesprächen",
-          "summary": "Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Ein Kreml-Berater spricht von…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T23:00:04.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "68cc5596cfa13153dcbdecd3e5503f01c3bd01f7039b0fc64ce485c07bafc4a5",
-          "source_item_id": "94e3ce8628219fad670ec251de9fd4161e140178b0ec05449ed0a8ab76a74bc6",
-          "publisher_id": "tagesschau",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T23:00:04.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "collection_source_id": "swr-aktuell",
-          "collection_publisher_id": "swr",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown"
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-102.html",
-          "title": "Gespräche über Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
-          "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Jetzt werden die Gesandten von Präsident Trump in Kiew erwartet.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T23:10:33.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "4366d035e754dab47a94244de00e70f6bc063f150ee84fe83a67b893671b1127",
-          "source_item_id": "9a0ca262de20d1c36c88339951571de63ee0f66468c2c9a41e6d97cd2ba9c277",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T23:10:33.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown"
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/verhandlungen--kreml-spricht-von-konstruktiven-gespraechen-mit-us-gesandten-38211922.html",
-          "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
-          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T22:32:05.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "2f6188f33f2744517fcce426e9b430520b23c489f294e87e772e8df74ebfb5d7",
-          "source_item_id": "97a589ea5e92a1c950dcc83b25867e955df33026edf37d66dec8bd86d010a06a",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T22:32:05.000Z",
-          "ingested_at": "2026-09-05T23:51:06.780Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021831.html",
-          "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
-          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T22:33:21.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "9d73f3f185741b614c12381252743de2e98099de9b22127fd0d8a8e4c9dafd83",
-          "source_item_id": "ae1314fd3ad3115996c32022559adb37fa3c7e0ef25bcb686a0eada07dec0219",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T22:33:21.000Z",
-          "ingested_at": "2026-09-05T23:51:06.780Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-lage-im-uberblick-16021831.html",
-          "title": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
-          "summary": "Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T22:33:21.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "1cd0d7f972bc99aa4fde22511d1164550b5bcdaa59a94ca4bedc57e5a8d23c7d",
-          "source_item_id": "88f82b8bbe2dcf995cc59d16a42521526282daa54a210f0db14a1fc5be39d1ad",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T22:33:21.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-01",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen: Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
-        },
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-02",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen: Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
-        },
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-03",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Kreml spricht von nützlichen Gesprächen: Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Ein Kreml-Berater spricht von…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesschau-access",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
-        },
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-04",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Gespräche über Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen: In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Jetzt werden die Gesandten von Präsident Trump in Kiew erwartet.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
-        },
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-05",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten: Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
-        },
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-06",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten: Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
-        },
-        {
-          "claim_id": "wt-78b8df2827ab4527-claim-07",
-          "story_id": "wt-78b8df2827ab4527",
-          "claim": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew: Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
-        }
-      ],
-      "content_hash": "792afac5bad48107d66d4d5574319736043923b19d6a0c944d2c41680d253d54",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_BLOCKED",
-      "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
-      "event_first_seen_at": "2026-09-05T18:21:18.289Z",
-      "event_detected_at": "2026-09-05T18:21:18.289Z",
-      "event_id": "event-33c99d9ec5432a4822d9",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik",
-          "Politik",
-          "Gesellschaft"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 85.76106666666666,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 375.00625,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 82,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
-        "fingerprint": "095210e517a7c6bbd47bc3d7940af73a86c87c47d398cd67fe413053c99208b8",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
       "story_id": "wt-cf03acddb911d861",
       "slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
       "title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
@@ -2656,7 +2762,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T22:11:14.000Z",
-          "ingested_at": "2026-09-05T23:51:06.780Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
           "provenance": {
             "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
@@ -2685,7 +2791,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         },
         {
           "claim_id": "wt-58cac49b38f415db-claim-02",
@@ -2705,7 +2811,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "3f0ed37b30304fe29dcca7b6cd4ac8076e37777deb0667a015026c76c5aeb95a",
@@ -2718,7 +2824,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-05T16:36:34.186Z",
       "event_detected_at": "2026-09-05T16:36:34.186Z",
       "event_id": "event-201da883bf8004ddde01",
@@ -2752,20 +2858,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 145.07773333333333,
+        "source_age_minutes": 160.2577,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 479.7413,
+        "queue_age_minutes": 494.92126666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 70,
+        "news_freshness_score": 67,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "27778afca13942aaba1af50846dc46589c13bc35657b8d285e46536282fbf33f",
         "issue_codes": [],
         "warning_codes": []
@@ -2836,7 +2942,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T23:10:33.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
           "provenance": {
             "origin": "publisher:deutschlandfunk",
             "basis": "publisher_only_origin_unverified",
@@ -2865,7 +2971,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         },
         {
           "claim_id": "wt-ee07be9df8bc0aea-claim-02",
@@ -2885,7 +2991,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "471b1464745dbdbd241b23858c2aaafc3c2124f340b1b92a990b58c28ce160b5",
@@ -2898,7 +3004,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-05T18:21:18.289Z",
       "event_detected_at": "2026-09-05T18:21:18.289Z",
       "event_id": "event-7fdfd0a829751fedc836",
@@ -2931,20 +3037,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 85.76106666666666,
+        "source_age_minutes": 100.94103333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 375.00625,
+        "queue_age_minutes": 390.18621666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 82,
+        "news_freshness_score": 79,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "eb41a4e1276b21f332f0926f92a92bebd49731d7b861a8d9601d9f796086d2e1",
         "issue_codes": [],
         "warning_codes": []
@@ -3649,7 +3755,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T11:06:25.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
           "provenance": {
             "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
@@ -3682,7 +3788,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T21:17:10.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
           "provenance": {
             "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
@@ -3711,7 +3817,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         },
         {
           "claim_id": "wt-166e870242fc37e6-claim-02",
@@ -3731,7 +3837,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         },
         {
           "claim_id": "wt-166e870242fc37e6-claim-03",
@@ -3751,7 +3857,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "d349ce975404f77382ab8400a897afcd739aa635581788f16062f33478935031",
@@ -3764,7 +3870,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-05T17:36:24.715Z",
       "event_detected_at": "2026-09-05T17:36:24.715Z",
       "event_id": "event-165020cd14b0b8c7db2e",
@@ -3797,20 +3903,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 199.1444,
+        "source_age_minutes": 214.32436666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 419.89915,
+        "queue_age_minutes": 435.07911666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 59,
+        "news_freshness_score": 55,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "a8701b3ca35d56bd4789e3a73b6b0f2b1b016df62768a4e7a9b8a06bf96e9a54",
         "issue_codes": [],
         "warning_codes": []
@@ -3850,7 +3956,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T20:35:57.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
           "provenance": {
             "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
@@ -3883,7 +3989,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T20:35:44.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
           "provenance": {
             "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
@@ -3912,7 +4018,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         },
         {
           "claim_id": "wt-cc6813674a95cd84-claim-02",
@@ -3932,7 +4038,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "a37620d5cb519089823f5f7893d2ab760eb93d40f258a1e81395135cb0e871db",
@@ -3945,7 +4051,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-05T21:06:22.039Z",
       "event_detected_at": "2026-09-05T21:06:22.039Z",
       "event_id": "event-99d0bee0898a1a2949a1",
@@ -3980,20 +4086,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 240.36106666666666,
+        "source_age_minutes": 255.54103333333333,
         "detection_delay_minutes": 30.417316666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 209.94375,
+        "queue_age_minutes": 225.12371666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 50,
+        "news_freshness_score": 47,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "012f5b204ce7d0cf2d33b8977172eeab8c0aad0257465128b991d25f9437daa2",
         "issue_codes": [],
         "warning_codes": []
@@ -9854,7 +9960,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T14:37:00.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
           "provenance": {
             "origin": "publisher:zdfheute",
             "basis": "publisher_only_origin_unverified",
@@ -9883,7 +9989,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "5077504fba761724756585440bff06fc3606bde296cdd7d92e1ab67b5eeafabd",
@@ -9896,7 +10002,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-05T11:31:43.777Z",
       "event_detected_at": "2026-09-05T11:31:43.777Z",
       "event_id": "event-454194767a4d7ef00523",
@@ -9929,11 +10035,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 599.3110666666666,
+        "source_age_minutes": 614.4910333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 784.58145,
+        "queue_age_minutes": 799.7614166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -9942,7 +10048,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "1c4421f45303671688dac2f2d2e352c04a184c96a7ca440b37089a865ea2a7ec",
         "issue_codes": [],
         "warning_codes": []
@@ -16677,7 +16783,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T14:56:00.000Z",
-            "ingested_at": "2026-09-06T00:21:47.142Z",
+            "ingested_at": "2026-09-06T00:51:29.462Z",
             "provenance": {
               "origin": "publisher:wirtschaftswoche",
               "basis": "publisher_only_origin_unverified",
@@ -16710,7 +16816,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T00:21:47.142Z",
+            "ingested_at": "2026-09-06T00:51:29.462Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -16743,7 +16849,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T20:52:04.000Z",
-            "ingested_at": "2026-09-06T00:21:47.142Z",
+            "ingested_at": "2026-09-06T00:51:29.462Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -16776,7 +16882,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T00:21:47.142Z",
+            "ingested_at": "2026-09-06T00:51:29.462Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -16797,7 +16903,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T00:36:18.664Z",
+          "checked_at": "2026-09-06T00:51:29.462Z",
           "fingerprint": "bf416bc95e588925b00fbdce5325170097ce6b8c2321165a4c93fa80cb7a3c6f",
           "issue_codes": [],
           "warning_codes": []
@@ -19060,7 +19166,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T00:36:18.664Z",
+          "checked_at": "2026-09-06T00:51:29.462Z",
           "fingerprint": "24487ee7197ad0eb1b0dabd2efe09a7989c40310929eed16cb7eda32bc9ca43e",
           "issue_codes": [],
           "warning_codes": []
@@ -35764,7 +35870,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T00:36:18.664Z",
+          "checked_at": "2026-09-06T00:51:29.462Z",
           "fingerprint": "677f489384916d5a8bbf8a20da66c9ad5228f077a28a07c98965b3764ea80a8e",
           "issue_codes": [],
           "warning_codes": []
@@ -49428,7 +49534,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T00:36:18.664Z",
+          "checked_at": "2026-09-06T00:51:29.462Z",
           "fingerprint": "b77080fc28dc49ed22c2e6eed468704e8806d8a8351e880f83f2a31fb8696350",
           "issue_codes": [],
           "warning_codes": []
@@ -86078,7 +86184,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "88f9f75e9b977eb411285a1009f724f8bdf50ae43f800a4436cf773e03c61894",
@@ -86091,7 +86197,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-04T13:21:25.210Z",
       "event_detected_at": "2026-09-04T13:21:25.210Z",
       "event_id": "event-dee7eaf221842b5eb806",
@@ -86126,11 +86232,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2131.3110666666666,
+        "source_age_minutes": 2146.4910333333332,
         "detection_delay_minutes": 16.420166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2114.8909,
+        "queue_age_minutes": 2130.0708666666665,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -86139,7 +86245,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "c4537b5e8eb723cbbe6fa201e3664ea9d4fbfbb6060aeff34ffe3168bf3e3c6c",
         "issue_codes": [],
         "warning_codes": []
@@ -92887,7 +92993,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "f69a9040291956f1035206b894236f5463981613981c97acaf24fb57d9a59acb",
@@ -92900,7 +93006,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-04T10:42:21.689Z",
       "event_detected_at": "2026-09-04T10:42:21.689Z",
       "event_id": "event-9ae33d5472490875b05f",
@@ -92935,11 +93041,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2291.0610666666666,
+        "source_age_minutes": 2306.2410333333332,
         "detection_delay_minutes": 17.111483333333332,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2273.9495833333335,
+        "queue_age_minutes": 2289.12955,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -92948,7 +93054,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "babead12236dce24ec26f5b1481d35fd72251f5f8b5afb990a4277543450d5f1",
         "issue_codes": [],
         "warning_codes": []
@@ -116489,7 +116595,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "02cc77c17049979f0e81e30abbd0c34e10afcc530f3207819c3bb8c950ead248",
@@ -116502,7 +116608,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-5afeb135245d9a108fe2",
@@ -116537,11 +116643,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3296.9277333333334,
+        "source_age_minutes": 3312.1077,
         "detection_delay_minutes": 281.9001666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3015.0275666666666,
+        "queue_age_minutes": 3030.2075333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -116550,7 +116656,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "f299fdea87b744d1bc89a7a02ac3cc1267d473b9fd7c1b3a6aad76678d251450",
         "issue_codes": [],
         "warning_codes": []
@@ -126536,7 +126642,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "2e8e68e350a380b603d567595582f115849ef3f3d2b1a34ef28ceb1c675670fe",
@@ -126549,7 +126655,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-18e06fadbbed69b9214b",
@@ -126586,11 +126692,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5209.311066666667,
+        "source_age_minutes": 5224.491033333334,
         "detection_delay_minutes": 2194.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3015.0275666666666,
+        "queue_age_minutes": 3030.2075333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -126599,7 +126705,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "1df91de84cc41611131a84ab6f902d9ffe2ac4164dfb5454446436028a327d00",
         "issue_codes": [],
         "warning_codes": []
@@ -127642,7 +127748,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -127671,7 +127777,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -127684,7 +127790,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -127718,11 +127824,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6876.311066666667,
+        "source_age_minutes": 6891.491033333334,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3015.0275666666666,
+        "queue_age_minutes": 3030.2075333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -127731,7 +127837,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
         "issue_codes": [],
         "warning_codes": []
@@ -127802,7 +127908,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "a4e4c4a8abd15f0dda563e6ae2e80cceda5644f27ab757453621fc50c0bbf44a",
@@ -127815,7 +127921,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-3b24dabc10b485f8857d",
@@ -127852,11 +127958,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6899.9444,
+        "source_age_minutes": 6915.124366666667,
         "detection_delay_minutes": 3884.916833333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3015.0275666666666,
+        "queue_age_minutes": 3030.2075333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -127865,7 +127971,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "322e43d7b940e1cdd6f5461c479867f7b33a854a65ce68757d914f296abd19fe",
         "issue_codes": [],
         "warning_codes": []
@@ -128159,7 +128265,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-06T00:21:47.142Z",
+          "ingested_at": "2026-09-06T00:51:29.462Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -128188,7 +128294,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T00:36:18.664Z"
+          "checked_at": "2026-09-06T00:51:29.462Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -128201,7 +128307,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-06T00:36:18.664Z",
+      "updated_at": "2026-09-06T00:51:29.462Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -128238,11 +128344,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7956.311066666667,
+        "source_age_minutes": 7971.491033333334,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3015.0275666666666,
+        "queue_age_minutes": 3030.2075333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -128251,7 +128357,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T00:36:18.664Z",
+        "checked_at": "2026-09-06T00:51:29.462Z",
         "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
         "issue_codes": [],
         "warning_codes": []
