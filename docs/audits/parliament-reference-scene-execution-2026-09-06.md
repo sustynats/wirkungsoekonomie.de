@@ -65,3 +65,14 @@ The seven-image authorization is consumed. A replacement revision needs an
 explicitly bounded image-generation authorization; this implementation does not
 silently change the contract, reset journals, buy replacements or reuse the
 rejected base. This is an image-execution defect, not missing political Fach.
+
+## Scoped CI isolation
+
+The unrelated state-sustainability audit appended bot commit
+`422935e051efe2f1d0f9f4b93b4b134127b090a8` to the first QA head, changing its
+sitemap and two #253 matrices. The exact commit is preserved on
+`audit/reference-qa-253-autocommit-20260906`, not merged into this image lane.
+The existing ordered path-filter convention now excludes only
+`scripts/parliament/impact-visuals/**` from that branch-writing audit. Relevant
+state-sustainability changes still trigger it, including mixed-scope PRs.
+The image tests and normal website/privacy/link gates continue to run.

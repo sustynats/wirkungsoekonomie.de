@@ -12,6 +12,13 @@ const contract = read(results.contract_path);
 const descriptor = read(contract.source_descriptor_path);
 const input = () => structuredClone({ contract, descriptor, results, audit });
 
+test("pure image QA does not trigger unrelated branch-writing #253 projections", () => {
+  const workflow = fs.readFileSync(new URL("../../.github/workflows/state-sustainability-audit.yml", import.meta.url), "utf8");
+  assert.ok(workflow.indexOf("- '!scripts/parliament/impact-visuals/**'") > workflow.indexOf("- 'scripts/**'"));
+  assert.ok(workflow.includes("- 'tools/check_state_sustainability_architecture.py'"));
+  assert.ok(workflow.includes("- 'sitemap.xml'"));
+});
+
 test("original generation manifest and visual review remain immutable versioned evidence", () => {
   for (const [file, sha] of [
     [audit.results_path, "3bcbc24d45369dee6d4697791d5da948f0f419daddb6f71d1187b8228b4d650c"],
