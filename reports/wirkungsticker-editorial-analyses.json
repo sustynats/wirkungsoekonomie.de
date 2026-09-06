@@ -2,26 +2,74 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-06T17:38:09.743Z",
+  "started_at": "2026-09-06T17:53:42.092Z",
   "scanned_stories": 99,
   "scanned_subjects": 89,
   "editorial_candidates": 16,
-  "ready_for_research": 1,
+  "ready_for_research": 2,
   "research_pending": 5,
   "retry_deferred": 1,
   "editorial_research_sources_discovered": 12,
-  "selected": 0,
-  "editorial_research_started": 0,
+  "selected": 1,
+  "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
-  "quality_retries": 0,
+  "research_calls": 2,
+  "research_tokens": 8828,
+  "analysis_tokens": 9354,
+  "estimated_cost_usd": 0.048714,
+  "quality_retries": 1,
   "publication_deferred": false,
-  "failed": [],
+  "failed": [
+    {
+      "story_id": "wt-4b5d0962d323432a",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-06T18:08:42.092Z"
+    }
+  ],
   "candidates": [
+    {
+      "story_id": "wt-4b5d0962d323432a",
+      "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+      "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+      "editorial_analysis_score": 82,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 2,
+        "cited_claim_count": 2,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "e1a3695100cfd89742bbb0067654fbaff5ab9e303d9a8f14e8a6ce5f29111790",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-0bfd0f9a3434"
+    },
     {
       "story_id": "wt-cf03acddb911d861",
       "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
@@ -192,48 +240,6 @@
       "fingerprint": "95b8bb2184beba0a6312d8a9020be9a349ab589a6db4d6c57531f6e5e956bbcb",
       "status": "published",
       "analysis_id": "woek-analysis-1b3323ad407f"
-    },
-    {
-      "story_id": "wt-4b5d0962d323432a",
-      "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
-      "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
-      "editorial_analysis_score": 79,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 0,
-        "resilience_relevance": 8,
-        "macro_relevance": 9,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 8,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 8
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 2,
-        "cited_claim_count": 2,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "692ec37ba57b489213b36cd736b0fe8371be569f545a74b84d3936b0c4bfa18d",
-      "status": "published",
-      "analysis_id": "woek-analysis-0bfd0f9a3434"
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
@@ -708,5 +714,6 @@
       "status": "published",
       "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
-  ]
+  ],
+  "completed_at": "2026-09-06T17:54:32.657Z"
 }
