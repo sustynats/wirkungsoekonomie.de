@@ -9,3 +9,9 @@ export function normalizePublicationTypography(text) {
 export function hasNonstandardDash(text) {
   return normalizePublicationTypography(text) !== String(text);
 }
+
+// Preserve cryptographically bound input records; public artifacts are always formatted.
+export function isFrozenPublicationSource(relativePath) {
+  return ['audit-manifests/', 'content/audits/sachsen-anhalt/', 'woek-parlament-app/data/']
+    .some(prefix => String(relativePath).replaceAll('\\', '/').startsWith(prefix));
+}

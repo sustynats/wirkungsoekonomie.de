@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
-import {normalizePublicationTypography} from '../lib/public-typography.mjs';
+import {normalizePublicationTypography, isFrozenPublicationSource} from '../lib/public-typography.mjs';
 
 const args=process.argv.slice(2);
 const root=path.resolve(args.find(a=>!a.startsWith('--')) || '.');
@@ -15,7 +15,7 @@ for(const file of files){
   if(!extensions.has(path.extname(file)) || !fs.existsSync(file))continue;
   // Frozen source/audit records retain their signed bytes. Formatting belongs
   // to their public projection; the artifact pass below has no such exemption.
-  if(source && ['audit-manifests/','content/audits/sachsen-anhalt/','woek-parlament-app/data/'].some(prefix=>path.relative(root,file).startsWith(prefix)))continue;
+  if(source && isFrozenPublicationSource(path.relative(root,file)))continue;
   if(source && ['.mjs','.js','.py'].includes(path.extname(file)) && !path.relative(root,file).startsWith('assets/js/'))continue;
   // Test fixtures and the normalizer encode the very characters being tested.
   if(source && /(?:^|\/)(?:tests|test)\//.test(path.relative(root,file)))continue;
