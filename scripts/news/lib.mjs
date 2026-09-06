@@ -460,18 +460,34 @@ function storyReferenceKeys(...values) {
   ].map((value) => value.toLowerCase().replace(/\s+/g, " ")));
 }
 
-function existingStoryMatch(item, entry, now) {
+export function anchoredSources(story) {
+  const leading = story.sources?.[0];
+  if (!leading) return [];
+  const anchor = { ...story, sources: [leading] };
+  return story.sources.filter(source => source === leading || (!subjectConflict(source, anchor)
+    && (livingFileMatch(source, anchor).score >= 0.98 || eventCompatibility(source, leading).same_event)));
+}
+
+export function existingStoryMatch(item, entry, now) {
   if (subjectConflict(item, entry.story)) return 0;
-  const identity = livingFileMatch(item, entry.story);
+  // A secondary/contextual source must never become a bridge into a different
+  // event. Every usable reference has to connect directly to the leading one.
+  const rooted = entry.anchored_story || { ...entry.story, sources: anchoredSources(entry.story) };
+  const identity = livingFileMatch(item, rooted);
   if (identity.score) return identity.score;
   const age = Math.abs(Date.parse(item.published_at || now) - Date.parse(entry.last_updated || now));
   if (age > 120 * 24 * 60 * 60 * 1000) return 0;
   const itemReferences = storyReferenceKeys(item.title, item.summary);
   // Do not let a contextual source merge another place or policy into this file.
-  const compatibleSources = (entry.story.sources || []).filter((source) => !subjectConflict(item, source));
+  const compatibleSources = rooted.sources.filter((source) => !subjectConflict(item, source));
   const storyReferences = storyReferenceKeys(entry.story.title, ...compatibleSources.flatMap((source) => [source.title, source.summary]));
   if ([...itemReferences].some((reference) => storyReferences.has(reference))) return 0.99;
-  return Math.max(0, ...compatibleSources.filter((source) => eventCompatibility(item, source).same_event).map((source) => storySimilarity(item.title, source.title)));
+  const anchors = [rooted.sources[0], { ...rooted.sources[0], title: entry.story.title }].filter(Boolean);
+  if (anchors.some(source => {
+    const match = eventCompatibility(item, source);
+    return match.same_event && match.reason === 'structured_event_facts';
+  })) return 0.98;
+  return Math.max(0, ...anchors.filter((source) => eventCompatibility(item, source).same_event).map((source) => storySimilarity(item.title, source.title)));
 }
 
 export function classifyItem(item, source = {}, now = new Date().toISOString()) {
@@ -627,7 +643,8 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
 
 export function clusterItems(items, existingStories = [], now = new Date().toISOString()) {
   const clusters = [];
-  const existing = matchingStories(existingStories).map((story) => ({ story, title: story.title, last_updated: story.last_updated }));
+  const existing = matchingStories(existingStories).map((story) => ({ story, title: story.title, last_updated: story.last_updated,
+    anchored_story: { ...story, sources: anchoredSources(story) } }));
   const sorted = items.map((item) => ({ item, match: existing
       .filter((entry) => !isMerged(entry.story))
       .map((entry) => ({ ...entry, similarity: existingStoryMatch(item, entry, now) }))
@@ -644,8 +661,8 @@ export function clusterItems(items, existingStories = [], now = new Date().toISO
     }
     if (!target) target = clusters.find((cluster) => {
       const delta = Math.abs(timestamp - Date.parse(cluster.last_updated || now));
-      return delta <= 96 * 60 * 60 * 1000 && !subjectConflict(item, cluster)
-        && (livingFileMatch(item, cluster).score >= 0.98 || cluster.sources.some((source) => !subjectConflict(item, source) && eventCompatibility(item, source).same_event));
+      return delta <= 96 * 60 * 60 * 1000
+        && existingStoryMatch(item, { story: cluster, last_updated: cluster.last_updated }, now) >= 0.64;
     });
     if (!target) {
       const signature = [...titleTokens(item.title)].sort().slice(0, 10).join("-") || item.item_id;
@@ -863,6 +880,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     JSON.stringify({
       analyses: [{
         story_id: "string",
+        publication_recommendation: true,
         news_status: "developing|preliminary|confirmed|disputed|corrected|updated",
         publication_depth: "initial|deepened",
         event_claims: [{ claim: "zentrale Tatsachenbehauptung, eigene deutsche Formulierung", status: "single_source_claim|confirmed_claim|disputed_claim|primary_source_claim|uncertain_claim", evidence: [{ evidence_id: "exakte ID einer passenden evidence_segments-Textstelle" }] }],
@@ -902,7 +920,6 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         },
         visuals: includeVisuals ? VISUALS_SCHEMA : null,
         media_impact: MEDIA_IMPACT_SCHEMA,
-        publication_recommendation: true,
       }],
     }),
     "UNTRUSTED_SOURCE_DATA_BEGIN",

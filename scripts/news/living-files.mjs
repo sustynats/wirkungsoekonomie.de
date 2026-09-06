@@ -164,6 +164,8 @@ export function fileSubject(item) {
   const places = titlePlaces.length ? titlePlaces : placesIn(lead);
   const countries = unique([...(item.event_geography || []), ...COUNTRY_RULES.filter(([, pattern]) => pattern.test(text)).map(([code]) => code)]);
   const elections = unique(electionJurisdictions(`${title} ${lead}`));
+  const election_stage = elections.length && /\b(?:umfrag\w*|wahlabsicht\w*)\b/.test(normal(title)) ? 'polling'
+    : elections.length && /\b(?:hochrechnung\w*|wahlergebnis\w*|wahlsieg\w*|wahlniederlage\w*)\b/.test(normal(title)) ? 'result' : null;
   // Explicit object/place/date, not a general "energy" or "infrastructure" key.
   const kind = response ? "response" : incident ? "grid_incident" : networkPlace ? "cyber_incident" : "other";
   const directPlace = title.match(/\bUmspannwerk\s+([A-ZÄÖÜ][\p{L}-]+)/u)?.[1];
@@ -172,7 +174,7 @@ export function fileSubject(item) {
   const multipleEvents = eventPlaces.length > 1 || /\b(anschlage|anschlagen|angriffe|angriffen|sabotageakte|sabotageakten|mehrere\w* tatorte)\b/.test(text);
   const key = !recurrence && !multipleEvents && eventPlaces.length === 1 && ["grid_incident", "cyber_incident"].includes(kind)
     ? `${kind}:${eventPlaces[0]}` : null;
-  return { kind, places: eventPlaces, countries, elections, recurrence, multipleEvents, key };
+  return { kind, places: eventPlaces, countries, elections, election_stage, recurrence, multipleEvents, key };
 }
 
 export function subjectConflict(a, b) {
@@ -191,6 +193,7 @@ export function subjectConflict(a, b) {
   if (left.kind !== "other" && right.kind !== "other" && left.kind !== right.kind) return true;
   if (left.countries.length && right.countries.length && !intersects(left.countries, right.countries)) return true;
   if (left.elections.length && right.elections.length && !intersects(left.elections, right.elections)) return true;
+  if (left.election_stage && right.election_stage && left.election_stage !== right.election_stage) return true;
   if (left.places.length && right.places.length && !intersects(left.places, right.places)) return true;
   return false;
 }

@@ -6,6 +6,8 @@ import fs from "node:fs";
 import path from "node:path";
 
 const publisher = "Institut für Wirkungsökonomie";
+// Root AGENTS: publisher and canonical document authorship are distinct.
+const documentAuthor = "Natalie Weber";
 const publicDirectory = path.resolve("public");
 const deep = process.argv.includes("--deep");
 const documentExtensions = new Set([".pdf", ".docx", ".xlsx", ".pptx", ".zip"]);
@@ -58,7 +60,7 @@ function deepCheckPdf(file, entry) {
   const info = readPdfInfo(file);
   for (const [field, expected] of [["Author", entry.author], ["Creator", entry.creator], ["Producer", entry.producer]]) {
     const value = metadataValue(info, field);
-    if (value !== expected || value !== publisher) {
+    if (value !== expected || value !== documentAuthor) {
       throw new Error(`${publicPath(file)} has invalid ${field} metadata.`);
     }
     assertClean(value, `${publicPath(file)} ${field}`);
@@ -84,7 +86,7 @@ for (const file of files) {
   const key = publicPath(file);
   const entry = entries.get(key);
   if (!entry) throw new Error(`Missing publication-manifest entry: ${key}.`);
-  if (entry.author !== publisher || entry.creator !== publisher || entry.producer !== publisher) {
+  if (entry.author !== documentAuthor || entry.creator !== documentAuthor || entry.producer !== documentAuthor) {
     throw new Error(`Invalid publication ownership metadata: ${key}.`);
   }
   if (entry.sha256 !== sha256(file)) throw new Error(`Document hash changed without renewed safety verification: ${key}.`);

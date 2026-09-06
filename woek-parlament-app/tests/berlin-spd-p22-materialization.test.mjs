@@ -11,7 +11,7 @@ const handoff = JSON.parse(readFileSync(
   'utf8',
 ));
 
-test('Berlin SPD P22 stays canonical-source-bound under the subsequent P23/P24/P25 overlays', () => {
+test('Berlin SPD P22 stays canonical-source-bound under the subsequent P23/P24/P25/P26 overlays', () => {
   const spd = residual.programmes.find((programme) => programme.party === 'SPD');
   assert.ok(spd);
   assert.equal(spd.programme_analysis_complete, false);
@@ -24,14 +24,14 @@ test('Berlin SPD P22 stays canonical-source-bound under the subsequent P23/P24/P
     NON_EFFECT_CONTEXT_REVIEWED: 14,
     SOURCE_UNIT_RECLASSIFIED_VERSIONED: 4,
   });
-  assert.equal(spd.remaining_review_envelope_count, 41);
+  assert.equal(spd.remaining_review_envelope_count, 40);
   assert.deepEqual(
     spd.remaining_review_envelopes.map((item) => Number(item.source_locator.match(/PDF page (\d+)/)?.[1])),
-    Array.from({ length: 41 }, (_, index) => index + 26),
+    Array.from({ length: 40 }, (_, index) => index + 27),
   );
   assert.deepEqual(spd.protected_fach_scope.next_unreviewed_source_order_frontier, {
-    physical_page: 26,
-    source_unit_from: 'BE-SPD-2026-SU-0303',
+    physical_page: 27,
+    source_unit_from: 'BE-SPD-2026-SU-0319',
   });
 });
 
