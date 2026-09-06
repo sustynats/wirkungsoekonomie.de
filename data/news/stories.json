@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T09:06:22.155Z",
+  "updated_at": "2026-09-06T09:21:21.365Z",
   "stories": [
     {
       "story_id": "wt-b1ce25efb18964e4",
@@ -1816,7 +1816,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-b7c356fdc686f6f2-claim-02",
@@ -1836,7 +1836,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-b7c356fdc686f6f2-claim-03",
@@ -1856,20 +1856,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         }
       ],
       "content_hash": "9d9492a7e685a78a56f4c1273c108bdded7321299cc9b24f5d693cbda7f0f3e5",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-06T09:51:21.365Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T09:06:22.155Z",
+      "updated_at": "2026-09-06T09:21:21.365Z",
       "event_first_seen_at": "2026-09-06T08:36:36.761Z",
       "event_detected_at": "2026-09-06T08:36:36.761Z",
       "event_id": "event-e43611c7b733caf8ee2c",
@@ -1893,7 +1895,7 @@
         "context_formats": [],
         "context_only": false,
         "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
         ],
         "materiality_factors": [
           "Zahl und Art möglicher Wirkungsempfänger",
@@ -1903,20 +1905,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 45.602583333333335,
+        "source_age_minutes": 60.589416666666665,
         "detection_delay_minutes": 15.846016666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.756566666666668,
+        "queue_age_minutes": 44.7434,
         "target_publication_minutes": 120,
-        "news_freshness_score": 90,
+        "news_freshness_score": 87,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T09:06:22.155Z",
+        "checked_at": "2026-09-06T09:21:21.365Z",
         "fingerprint": "e454098e631eb35a5ca30c43bc16941c37fa77e144950179ba12dd53e734f482",
         "issue_codes": [],
         "warning_codes": []
@@ -4705,7 +4707,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -4725,7 +4727,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -4745,7 +4747,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -4765,7 +4767,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -4785,7 +4787,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -4805,7 +4807,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -4825,7 +4827,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -4845,7 +4847,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -4865,7 +4867,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -4885,7 +4887,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -4905,7 +4907,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -4925,7 +4927,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -4945,7 +4947,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -4965,7 +4967,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -4985,7 +4987,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -5005,7 +5007,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -5025,7 +5027,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -5045,7 +5047,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -5065,7 +5067,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -5085,7 +5087,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -5105,7 +5107,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         }
       ],
       "content_hash": "7d76672bcb27aaf77e2849949310f833c46b9022fde6cc538f22ff0ead56a4b3",
@@ -5121,7 +5123,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T09:06:22.155Z",
+      "updated_at": "2026-09-06T09:21:21.365Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -5164,20 +5166,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 108.36925,
+        "source_age_minutes": 123.35608333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3014.649933333333,
+        "queue_age_minutes": 3029.6367666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 77,
+        "news_freshness_score": 74,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T09:06:22.155Z",
+        "checked_at": "2026-09-06T09:21:21.365Z",
         "fingerprint": "c0666f4f3b1c5b3bc5aa2f6a4e52eb5f4b33eb4b0b9f4718c139c795c4d4179b",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
@@ -62340,7 +62342,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-06T09:06:22.155Z",
+          "checked_at": "2026-09-06T09:21:21.365Z",
           "fingerprint": "4859907217abb38878f583104d44f9a91d08c8eed99ba2c5d063d5e14f7f4603",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -126993,7 +126995,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:06:22.155Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -127008,7 +127010,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T09:06:22.155Z",
+      "updated_at": "2026-09-06T09:21:21.365Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -127044,11 +127046,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4003.36925,
+        "source_age_minutes": 4018.356083333333,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3525.08575,
+        "queue_age_minutes": 3540.072583333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -127057,7 +127059,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T09:06:22.155Z",
+        "checked_at": "2026-09-06T09:21:21.365Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
