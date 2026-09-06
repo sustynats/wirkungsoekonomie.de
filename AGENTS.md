@@ -59,6 +59,7 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Systemgrenze, Betroffene, Zeitverzug, Verteilung, Resilienz, Lock-ins und moegliche raeumliche, soziale oder zeitliche Schadensverlagerungen explizit pruefen. Nur materielle Zusammenhaenge darstellen; fehlende Belege als offen kennzeichnen, keine Kaskaden erfinden.
 - Plausible Wirkpfade sind keine eingetretene Wirkung und kein Kausalitaetsnachweis. Erstmeldungen duerfen knapp bleiben, wenn die systemischen Fragen und Wissensgrenzen sichtbar sind; die Regel erzwingt weder lange Texte noch zusaetzliche kostenpflichtige Analysen.
 - Historische Inhalte nicht still umschreiben. Bei erneuter Pruefung die Regel anwenden und materielle Ergaenzungen versionieren.
+- Konkrete Folgen vor Zielnummern: Handlung/Unterlassung -> betroffene Funktion -> Zustandsveraenderung -> Folgen fuer Menschen und Systeme -> Bedingungen, Zeithorizont und Unsicherheit -> passender SDG-/SDG+-/Rechtsbezug. Ein blosser Zielkonflikt ersetzt keine Erklaerung und ist kein festgestellter Rechtsverstoss. Bei materieller Relevanz Sicherheit von Kindern und Frauen, Gewaltschutz, Gleichberechtigung, Barrierefreiheit und erreichbare Hilfe ausdruecklich pruefen; keine Betroffenheit oder Kausalitaet erfinden.
 
 ## Regionale Nachrichtenabdeckung
 
