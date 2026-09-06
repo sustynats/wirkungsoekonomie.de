@@ -1,7 +1,324 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T10:36:30.507Z",
+  "updated_at": "2026-09-06T10:51:35.145Z",
   "stories": [
+    {
+      "story_id": "wt-78b8df2827ab4527",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-78b8df2827ab4527-4a8d9e0bc52f8564-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-78b8df2827ab4527-330a6cc75c7ba183-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-78b8df2827ab4527-05028e25da2d990a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+      "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+      "source_summary": "Mehrere deutschsprachige Berichte melden, dass die Gespräche von Wladimir Putin mit den US-Gesandten Steve Witkoff und Jared Kushner in Moskau beendet sind. Deutschlandfunk schreibt, die Unterhändler würden am Morgen nach Kiew weiterreisen; Stern und weitere Meldungen sprechen ebenfalls davon, dass sie nach dem Treffen in Kiew erwartet werden.\n\nDie Berichte nennen rund drei Stunden Gesprächsdauer und halten fest, dass über die Inhalte bislang nur wenige Details bekannt sind. Der Kreml wird mit der Bewertung zitiert, die Gespräche seien konstruktiv, inhaltsreich und vertrauensvoll gewesen. Ein Sprecher oder die US-Seite nennt in den gelieferten Auszügen keine belastbar belegten Einzelheiten zu Ergebnissen oder Vereinbarungen.",
+      "summary": "Die Gespräche in Moskau sind beendet, und die US-Gesandten sollen nach Kiew weiterreisen. Über konkrete Ergebnisse ist in den gelieferten Quellen noch wenig belastbar belegt.",
+      "detail_summary": "Gesichert ist vor allem der Ablauf: Putin hat in Moskau mit den US-Gesandten Witkoff und Kushner gesprochen, und mehrere Berichte melden, dass dieses Treffen beendet ist. Anschließend sollen die Gesandten nach Kiew weiterreisen oder dort erwartet werden. Der Kreml bewertet die Gespräche positiv, doch die Auszüge nennen keine überprüfbaren Details zu Vereinbarungen, Fristen oder einem greifbaren Ergebnis. Für die Einordnung ist das relevant, weil der Vorgang einen laufenden diplomatischen Prozess über den Ukraine-Krieg markiert. Der mögliche Wirkpfad führt über weitere Gespräche in Kiew zu veränderten Verhandlungspositionen; eine tatsächliche Wirkung auf Kriegshandlungen, Regeln oder Machtverhältnisse ist daraus aber noch nicht ableitbar. Die Evidenzgrenze bleibt hoch, weil die vorliegenden Texte vor allem Ablauf, Bewertungen und Ankündigungen liefern, nicht aber einen bestätigten Beschluss oder messbare Folgen.",
+      "why_relevant": "Die Meldung dokumentiert eine laufende diplomatische Kontaktaufnahme mit möglicher Bedeutung für den Ukraine-Krieg und die weitere Verhandlungsdynamik.",
+      "topic": [
+        "Geopolitik",
+        "Politik",
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Gespräche betreffen den Krieg in der Ukraine und damit potenziell Sicherheit, Schutz und Verhandlungsperspektiven für viele Menschen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; mögliche indirekte Folgen bleiben offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Gesprächskette berührt internationale Entscheidungsprozesse und die Transparenz politischer Verständigung, ohne dass bereits ein belastbares Ergebnis vorliegt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "europa",
+          "unternehmen"
+        ],
+        "tendency": {
+          "human": "offen",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-06T10:51:35.145Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-05T18:15:04.000Z",
+      "last_updated": "2026-09-06T10:53:50.820Z",
+      "version": 1,
+      "news_status": "updated",
+      "event_id": "event-33c99d9ec5432a4822d9",
+      "case_file": null,
+      "source_published_at": "2026-09-05T18:15:04.000Z",
+      "published_at": "2026-09-06T10:53:50.820Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "tagesschau-access"
+          ],
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "mdr-nachrichten"
+          ],
+          [
+            "wiwo-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 5,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 2
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Die US-Gesandten werden in Kiew zu weiteren Gesprächen eintreffen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung ihrer Ankunft in Kiew in einer Folgemeldung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-df852f739987decf",
+          "announced_at": "2026-09-05T18:15:04.000Z",
+          "follow_up_date": "2026-09-13T10:53:50.820Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:15:04.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T20:57:48.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/ausland/europa/witkoff-kushner-treffen-putin-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T23:00:04.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T23:10:33.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/verhandlungen--kreml-spricht-von-konstruktiven-gespraechen-mit-us-gesandten-38211922.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:32:05.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021831.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:33:21.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-lage-im-uberblick-16021831.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:33:21.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/lage-im-ueberblick--us-gesandte-nach-treffen-mit-putin-unterwegs-nach-kiew-38211922.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T00:18:16.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:33:10.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:35:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-5469869109614acf",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5469869109614acf-dd28c2bc53abfa78-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5469869109614acf-d126bf52c1a895aa-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5469869109614acf-9283191c29868459-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf",
+      "title": "Witkoff und Kushner erstmals in Kiew erwartet",
+      "source_summary": "Mehrere deutschsprachige Medien berichten übereinstimmend, dass die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen sind. Der Stern schreibt, die beiden seien im Ringen um ein Ende des Ukraine-Kriegs angekommen; der Tagesspiegel berichtet ebenfalls von ihrem ersten Besuch in Kiew für Vermittlungsgespräche.\n\nTagesschau ergänzt, dass sich beide zuvor in Moskau mit Kremlchef Putin getroffen hätten. Die Berichte nennen keinen detaillierten Gesprächsverlauf, sondern zunächst nur die Ankunft und den diplomatischen Kontext. Ein unabhängiger Originalbeleg aus Kiew oder von den Beteiligten selbst ist in den gelieferten Quellen nicht enthalten.",
+      "summary": "Witkoff und Kushner sind nach übereinstimmenden Medienberichten erstmals in Kiew angekommen. Die Quellen nennen den Besuch als Fortsetzung ihrer Gespräche im Ukraine-Krieg.",
+      "detail_summary": "Gesichert ist bislang vor allem die Ankunft der US-Unterhändler Steve Witkoff und Jared Kushner in Kiew. Mehrere voneinander getrennte redaktionelle Berichte nennen den Besuch als erstmals erfolgte Station ihrer Vermittlungsreise und ordnen ihn den Gesprächen über ein Ende des Ukraine-Kriegs zu. Für die Einordnung ist das relevant, weil damit aus einer angekündigten oder erwarteten Reise ein konkreter diplomatischer Kontakt vor Ort wird. Ein möglicher Wirkpfad liegt in veränderten Verhandlungsgrundlagen zwischen den Kriegsparteien und ihren Unterstützern. Offen bleibt aber, ob der Besuch zu einer belastbaren Annäherung, zu einer bloßen Fortsetzung der Gespräche oder zu keiner materiellen Veränderung führt. Die Evidenz reicht für die Ankunft, nicht für belastbare Aussagen über Ergebnis, Wirkung oder Verbindlichkeit der Gespräche.",
+      "why_relevant": "Der Besuch markiert eine tatsächliche Veränderung im diplomatischen Prozess rund um den Ukraine-Krieg und kann Verhandlungs- und Entscheidungsspielräume beeinflussen.",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind potenziell Kriegsverlauf, Verhandlungen und politische Entscheidungen; direkte Folgen sind aber noch offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein unmittelbarer Bezug zu Umwelt- oder Klimawirkungen ist aus den Quellen belegbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Diplomatische Vermittlung kann Informations-, Verhandlungs- und Entscheidungsgrundlagen staatlicher Akteure verändern."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-06T10:51:35.145Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T03:15:04.000Z",
+      "last_updated": "2026-09-06T10:52:57.126Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-e4a2cdfba2db5d200069",
+      "case_file": null,
+      "source_published_at": "2026-09-06T03:15:04.000Z",
+      "published_at": "2026-09-06T10:52:57.126Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesschau-access"
+          ],
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T03:15:04.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/ukraine-krieg--us-unterhaendler-witkoff-und-kushner-erstmals-in-kiew-38212818.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:33:04.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-diplomatie-16022706.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:50:59.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-46e5c503d6322ccb",
       "title_image": {
