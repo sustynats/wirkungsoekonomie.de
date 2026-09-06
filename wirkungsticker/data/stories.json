@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T14:21:20.533Z",
+  "updated_at": "2026-09-06T15:39:17.299Z",
   "stories": [
     {
       "story_id": "wt-b5ca8651ce7844db",
@@ -163,7 +163,73 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-dfe7a7d9629460af52db",
-      "case_file": null,
+      "case_file": {
+        "case_id": "case-d42b2aebe63f3c",
+        "member_count": 6,
+        "publisher_count": 8,
+        "members": [
+          {
+            "story_id": "wt-06837a611e9459ce",
+            "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+            "summary": "Witkoff und Kushner sind nach Angaben des MDR in Kiew eingetroffen und führen dort Gespräche über den Ukraine-Krieg. Selenskyj kündigte zudem Beratungen mit europäischen Sicherheitsberatern an.",
+            "updated_at": "2026-09-06T13:36:54.881Z",
+            "published_at": "2026-09-06T13:36:54.881Z",
+            "kind": "Weitere Entwicklung",
+            "current": true
+          },
+          {
+            "story_id": "wt-78b8df2827ab4527",
+            "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+            "summary": "Die Gespräche in Moskau sind beendet, und die US-Gesandten sollen nach Kiew weiterreisen. Über konkrete Ergebnisse ist in den gelieferten Quellen noch wenig belastbar belegt.",
+            "updated_at": "2026-09-06T10:53:50.820Z",
+            "published_at": "2026-09-06T10:53:50.820Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-166e870242fc37e6",
+            "slug": "verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6",
+            "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+            "summary": "Putin hat in Moskau mit den US-Gesandten Witkoff und Kushner gesprochen, die Gespräche sind laut Deutschlandfunk beendet. Parallel steht eine dreitägige Angriffspause auf Kyjiw im Raum.",
+            "updated_at": "2026-09-06T05:34:25.362Z",
+            "published_at": "2026-09-06T05:34:25.362Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-3d901522efd87e2d",
+            "slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
+            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+            "summary": "In Moskau haben Gespräche zwischen Putin und den US-Unterhändlern begonnen. Zugleich wurde eine dreitägige Angriffspause auf Kyjiw angekündigt.",
+            "updated_at": "2026-09-05T18:38:03.533Z",
+            "published_at": "2026-09-05T14:17:03.422Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-4eb46eab6c6d9511",
+            "slug": "krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511",
+            "title": "Krieg in der Ukraine: Trump schickt mal wieder seinen Schwiegersohn",
+            "summary": "Trump hat laut taz neue Gesandte für Ukraine-Gespräche auf den Weg geschickt. Der Bericht nennt mögliche Treffen in Moskau und Kyjiw sowie eine vorgeschlagene Feuerpause.",
+            "updated_at": "2026-09-05T11:33:36.533Z",
+            "published_at": "2026-09-05T11:33:36.533Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-1633927424587a06",
+            "slug": "ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06",
+            "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
+            "summary": "US-Unterhändler sollen nach Moskau reisen, ein Treffen mit Putin ist laut Meldung geplant. Danach ist erstmals auch ein Besuch in Kiew vorgesehen.",
+            "updated_at": "2026-09-05T11:13:44.645Z",
+            "published_at": "2026-09-05T11:13:44.645Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          }
+        ]
+      },
       "source_published_at": "2026-09-06T11:05:30.000Z",
       "published_at": "2026-09-06T13:36:54.881Z",
       "evidence_groups": {
@@ -185,7 +251,36 @@
           }
         ]
       },
-      "followups": [],
+      "followups": [
+        {
+          "claim": "Ob die US-Vermittler tatsächlich am Sonntag in Kiew eintreffen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder Bestätigungen zum tatsächlichen Eintreffen in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-cd96130eabd68579",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-13T05:29:46.602Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-06T05:29:46.602Z",
+          "last_check_result": "no_verified_material_update",
+          "origin_story_id": "wt-d7a0af1afc831caf"
+        },
+        {
+          "claim": "Die angekündigte Reise nach Kiew findet am Sonntag tatsächlich statt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder offizielle Bestätigungen zur Ankunft der beiden Gesandten in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-251b04897a03035a",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-13T05:29:46.602Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-06T05:29:46.602Z",
+          "last_check_result": "no_verified_material_update",
+          "origin_story_id": "wt-d7a0af1afc831caf"
+        }
+      ],
       "sources": [
         {
           "publisher": "MDR",
@@ -280,215 +375,6 @@
           "url": "https://taz.de/US-Vermittler-in-der-Ukraine/!6210651",
           "source_type": "media_rss",
           "published_at": "2026-09-06T11:48:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-b1ce25efb18964e4",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b1ce25efb18964e4-1ff30d1bea2c9d06-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b1ce25efb18964e4-68d76a187e4e2306-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b1ce25efb18964e4-8966e7f49fe9dd34-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "ukraine-krieg-us-gesandte-werden-nach-gesprachen-im-kreml-in-kiew-erwartet-8964e4",
-      "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
-      "source_summary": "Die vorliegenden Meldungen berichten übereinstimmend, dass die US-Gesandten Steve Witkoff und Jared Kushner in Kiew eingetroffen sind und dort mit Präsident Selenskyj zusammenkommen sollen. Mehrere Quellen verweisen zudem darauf, dass die beiden zuvor in Moskau mit Präsident Putin gesprochen hatten. Eine der Meldungen nennt außerdem, dass in Kiew neue US-Vorschläge für ein Ende des Ukraine-Kriegs erörtert werden sollen.\n\nZu den konkreten Inhalten der Gespräche in Moskau werden keine Details genannt. Offen bleibt vor allem, was in Kiew tatsächlich vereinbart oder nur ausgelotet wird und ob daraus kurzfristig belastbare nächste Schritte folgen.",
-      "summary": "US-Gesandte sind in Kiew eingetroffen und setzen ihre Gespräche nach dem Treffen mit Putin in Moskau fort. Offen bleibt, ob daraus schon konkrete Vereinbarungen oder nur weitere Sondierungen entstehen.",
-      "detail_summary": "Gesichert ist, dass Witkoff und Kushner in Kiew angekommen sind und dort Selenskyj treffen sollen; mehrere Quellen nennen zuvor auch ein Gespräch mit Putin in Moskau. Die Berichte deuten damit auf einen fortlaufenden diplomatischen Vermittlungsprozess im Ukraine-Krieg. Für die Nachrichtenlage ist das relevant, weil sich damit der Wirkpfad von bloßer Kontaktaufnahme zu konkreten Verhandlungen über mögliche nächste Schritte verdichtet. Mögliche Folgen wären neue Gesprächskanäle, veränderte Verhandlungserwartungen oder ein kurzfristiger Einfluss auf militärische und politische Entscheidungen. Die Evidenz bleibt aber begrenzt: Die Inhalte der Moskauer Gespräche sind nicht ausgeleuchtet, und die Meldungen nennen keine belastbar bestätigten Ergebnisse.",
-      "why_relevant": "Die Reise verbindet Gespräche in Moskau und Kiew und kann die Verhandlungsgrundlage im Krieg zwischen Russland, der Ukraine und den USA verändern.",
-      "topic": [
-        "Geopolitik",
-        "Politik"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Der Vorgang betrifft Krieg, Verhandlungen und mögliche Sicherheitsgarantien; das kann Lage und Entscheidungen für viele Menschen direkt beeinflussen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Umwelt- oder Klimabezug ist in den Quellen nicht erkennbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Diplomatische Kontakte zwischen Kriegsteilnehmern und Vermittlern können Entscheidungsräume, Informationslage und politische Kontrolle beeinflussen."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-06T12:38:11.963Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-06T08:45:20.000Z",
-      "last_updated": "2026-09-06T12:39:39.313Z",
-      "version": 3,
-      "news_status": "developing",
-      "event_id": "event-d1a30590b6b3af4a3b8b",
-      "case_file": {
-        "case_id": "case-7da001c5b23955",
-        "member_count": 7,
-        "publisher_count": 8,
-        "members": [
-          {
-            "story_id": "wt-b1ce25efb18964e4",
-            "slug": "ukraine-krieg-us-gesandte-werden-nach-gesprachen-im-kreml-in-kiew-erwartet-8964e4",
-            "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
-            "summary": "US-Gesandte sind in Kiew eingetroffen und setzen ihre Gespräche nach dem Treffen mit Putin in Moskau fort. Offen bleibt, ob daraus schon konkrete Vereinbarungen oder nur weitere Sondierungen entstehen.",
-            "updated_at": "2026-09-06T12:39:39.313Z",
-            "published_at": "2026-09-06T09:07:44.090Z",
-            "kind": "Weitere Entwicklung",
-            "current": true
-          },
-          {
-            "story_id": "wt-d7a0af1afc831caf",
-            "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
-            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "US-Vermittler Witkoff und Kushner sind nach Moskau-Gesprächen in die Ukraine weitergereist. In Kiew werden sie von Selenskyj erwartet.",
-            "updated_at": "2026-09-06T11:22:53.913Z",
-            "published_at": "2026-09-04T20:51:47.279Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-166e870242fc37e6",
-            "slug": "verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6",
-            "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
-            "summary": "Putin hat in Moskau mit den US-Gesandten Witkoff und Kushner gesprochen, die Gespräche sind laut Deutschlandfunk beendet. Parallel steht eine dreitägige Angriffspause auf Kyjiw im Raum.",
-            "updated_at": "2026-09-06T05:34:25.362Z",
-            "published_at": "2026-09-06T05:34:25.362Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-3d901522efd87e2d",
-            "slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
-            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
-            "summary": "In Moskau haben Gespräche zwischen Putin und den US-Unterhändlern begonnen. Zugleich wurde eine dreitägige Angriffspause auf Kyjiw angekündigt.",
-            "updated_at": "2026-09-05T18:38:03.533Z",
-            "published_at": "2026-09-05T14:17:03.422Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-4eb46eab6c6d9511",
-            "slug": "krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511",
-            "title": "Krieg in der Ukraine: Trump schickt mal wieder seinen Schwiegersohn",
-            "summary": "Trump hat laut taz neue Gesandte für Ukraine-Gespräche auf den Weg geschickt. Der Bericht nennt mögliche Treffen in Moskau und Kyjiw sowie eine vorgeschlagene Feuerpause.",
-            "updated_at": "2026-09-05T11:33:36.533Z",
-            "published_at": "2026-09-05T11:33:36.533Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-86783bc04f815007",
-            "slug": "us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007",
-            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
-            "summary": "Kushner und Witkoff sind laut der Meldung in Moskau zu Gesprächen über den Ukraine-Krieg eingetroffen. Danach sollen weitere Gespräche in Kiew folgen.",
-            "updated_at": "2026-09-05T11:33:20.789Z",
-            "published_at": "2026-09-05T11:33:20.789Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-1633927424587a06",
-            "slug": "ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06",
-            "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
-            "summary": "US-Unterhändler sollen nach Moskau reisen, ein Treffen mit Putin ist laut Meldung geplant. Danach ist erstmals auch ein Besuch in Kiew vorgesehen.",
-            "updated_at": "2026-09-05T11:13:44.645Z",
-            "published_at": "2026-09-05T11:13:44.645Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-06T06:53:40.000Z",
-      "published_at": "2026-09-06T09:07:44.090Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ],
-          [
-            "stern-schlagzeilen"
-          ],
-          [
-            "tagesschau-access"
-          ]
-        ],
-        "possible_independent_origins": 3,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T08:45:20.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-in-kiew-eingetroffen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:30:49.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/us-gesandte-witkoff-und-kushner-per-zug-in-kiew-eingetroffen-38212840.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T10:38:33.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-witkoff-und-kushner-erstmals-in-kiew-38212846.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:14:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-vermittlungsversuch-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T06:53:40.000Z",
           "primary_source": false
         }
       ]
@@ -1037,323 +923,6 @@
           "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
           "source_type": "media_rss",
           "published_at": "2026-09-06T10:03:10.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-78b8df2827ab4527",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-78b8df2827ab4527-4a8d9e0bc52f8564-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-78b8df2827ab4527-330a6cc75c7ba183-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-78b8df2827ab4527-05028e25da2d990a-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
-      "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
-      "source_summary": "Mehrere deutschsprachige Berichte melden, dass die Gespräche von Wladimir Putin mit den US-Gesandten Steve Witkoff und Jared Kushner in Moskau beendet sind. Deutschlandfunk schreibt, die Unterhändler würden am Morgen nach Kiew weiterreisen; Stern und weitere Meldungen sprechen ebenfalls davon, dass sie nach dem Treffen in Kiew erwartet werden.\n\nDie Berichte nennen rund drei Stunden Gesprächsdauer und halten fest, dass über die Inhalte bislang nur wenige Details bekannt sind. Der Kreml wird mit der Bewertung zitiert, die Gespräche seien konstruktiv, inhaltsreich und vertrauensvoll gewesen. Ein Sprecher oder die US-Seite nennt in den gelieferten Auszügen keine belastbar belegten Einzelheiten zu Ergebnissen oder Vereinbarungen.",
-      "summary": "Die Gespräche in Moskau sind beendet, und die US-Gesandten sollen nach Kiew weiterreisen. Über konkrete Ergebnisse ist in den gelieferten Quellen noch wenig belastbar belegt.",
-      "detail_summary": "Gesichert ist vor allem der Ablauf: Putin hat in Moskau mit den US-Gesandten Witkoff und Kushner gesprochen, und mehrere Berichte melden, dass dieses Treffen beendet ist. Anschließend sollen die Gesandten nach Kiew weiterreisen oder dort erwartet werden. Der Kreml bewertet die Gespräche positiv, doch die Auszüge nennen keine überprüfbaren Details zu Vereinbarungen, Fristen oder einem greifbaren Ergebnis. Für die Einordnung ist das relevant, weil der Vorgang einen laufenden diplomatischen Prozess über den Ukraine-Krieg markiert. Der mögliche Wirkpfad führt über weitere Gespräche in Kiew zu veränderten Verhandlungspositionen; eine tatsächliche Wirkung auf Kriegshandlungen, Regeln oder Machtverhältnisse ist daraus aber noch nicht ableitbar. Die Evidenzgrenze bleibt hoch, weil die vorliegenden Texte vor allem Ablauf, Bewertungen und Ankündigungen liefern, nicht aber einen bestätigten Beschluss oder messbare Folgen.",
-      "why_relevant": "Die Meldung dokumentiert eine laufende diplomatische Kontaktaufnahme mit möglicher Bedeutung für den Ukraine-Krieg und die weitere Verhandlungsdynamik.",
-      "topic": [
-        "Geopolitik",
-        "Politik",
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Die Gespräche betreffen den Krieg in der Ukraine und damit potenziell Sicherheit, Schutz und Verhandlungsperspektiven für viele Menschen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; mögliche indirekte Folgen bleiben offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Gesprächskette berührt internationale Entscheidungsprozesse und die Transparenz politischer Verständigung, ohne dass bereits ein belastbares Ergebnis vorliegt."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "europa",
-          "unternehmen"
-        ],
-        "tendency": {
-          "human": "offen",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.0",
-      "media_checked_at": "2026-09-06T10:51:35.145Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-05T18:15:04.000Z",
-      "last_updated": "2026-09-06T10:53:50.820Z",
-      "version": 1,
-      "news_status": "updated",
-      "event_id": "event-33c99d9ec5432a4822d9",
-      "case_file": null,
-      "source_published_at": "2026-09-05T18:15:04.000Z",
-      "published_at": "2026-09-06T10:53:50.820Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ],
-          [
-            "tagesschau-access"
-          ],
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "mdr-nachrichten"
-          ],
-          [
-            "wiwo-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 5,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 3
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 2
-          },
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "tagesspiegel-home"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Die US-Gesandten werden in Kiew zu weiteren Gesprächen eintreffen.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Bestätigung ihrer Ankunft in Kiew in einer Folgemeldung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-df852f739987decf",
-          "announced_at": "2026-09-05T18:15:04.000Z",
-          "follow_up_date": "2026-09-13T10:53:50.820Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T18:15:04.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T20:57:48.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/ausland/europa/witkoff-kushner-treffen-putin-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T23:00:04.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T23:10:33.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/verhandlungen--kreml-spricht-von-konstruktiven-gespraechen-mit-us-gesandten-38211922.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T22:32:05.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021831.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T22:33:21.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-lage-im-uberblick-16021831.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T22:33:21.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/lage-im-ueberblick--us-gesandte-nach-treffen-mit-putin-unterwegs-nach-kiew-38211922.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T00:18:16.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T10:33:10.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T10:35:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-5469869109614acf",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5469869109614acf-dd28c2bc53abfa78-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5469869109614acf-d126bf52c1a895aa-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-5469869109614acf-9283191c29868459-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf",
-      "title": "Witkoff und Kushner erstmals in Kiew erwartet",
-      "source_summary": "Mehrere deutschsprachige Medien berichten übereinstimmend, dass die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen sind. Der Stern schreibt, die beiden seien im Ringen um ein Ende des Ukraine-Kriegs angekommen; der Tagesspiegel berichtet ebenfalls von ihrem ersten Besuch in Kiew für Vermittlungsgespräche.\n\nTagesschau ergänzt, dass sich beide zuvor in Moskau mit Kremlchef Putin getroffen hätten. Die Berichte nennen keinen detaillierten Gesprächsverlauf, sondern zunächst nur die Ankunft und den diplomatischen Kontext. Ein unabhängiger Originalbeleg aus Kiew oder von den Beteiligten selbst ist in den gelieferten Quellen nicht enthalten.",
-      "summary": "Witkoff und Kushner sind nach übereinstimmenden Medienberichten erstmals in Kiew angekommen. Die Quellen nennen den Besuch als Fortsetzung ihrer Gespräche im Ukraine-Krieg.",
-      "detail_summary": "Gesichert ist bislang vor allem die Ankunft der US-Unterhändler Steve Witkoff und Jared Kushner in Kiew. Mehrere voneinander getrennte redaktionelle Berichte nennen den Besuch als erstmals erfolgte Station ihrer Vermittlungsreise und ordnen ihn den Gesprächen über ein Ende des Ukraine-Kriegs zu. Für die Einordnung ist das relevant, weil damit aus einer angekündigten oder erwarteten Reise ein konkreter diplomatischer Kontakt vor Ort wird. Ein möglicher Wirkpfad liegt in veränderten Verhandlungsgrundlagen zwischen den Kriegsparteien und ihren Unterstützern. Offen bleibt aber, ob der Besuch zu einer belastbaren Annäherung, zu einer bloßen Fortsetzung der Gespräche oder zu keiner materiellen Veränderung führt. Die Evidenz reicht für die Ankunft, nicht für belastbare Aussagen über Ergebnis, Wirkung oder Verbindlichkeit der Gespräche.",
-      "why_relevant": "Der Besuch markiert eine tatsächliche Veränderung im diplomatischen Prozess rund um den Ukraine-Krieg und kann Verhandlungs- und Entscheidungsspielräume beeinflussen.",
-      "topic": [
-        "Geopolitik",
-        "Demokratie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind potenziell Kriegsverlauf, Verhandlungen und politische Entscheidungen; direkte Folgen sind aber noch offen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Kein unmittelbarer Bezug zu Umwelt- oder Klimawirkungen ist aus den Quellen belegbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Diplomatische Vermittlung kann Informations-, Verhandlungs- und Entscheidungsgrundlagen staatlicher Akteure verändern."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.0",
-      "media_checked_at": "2026-09-06T10:51:35.145Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-06T03:15:04.000Z",
-      "last_updated": "2026-09-06T10:52:57.126Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-e4a2cdfba2db5d200069",
-      "case_file": null,
-      "source_published_at": "2026-09-06T03:15:04.000Z",
-      "published_at": "2026-09-06T10:52:57.126Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "tagesschau-access"
-          ],
-          [
-            "stern-schlagzeilen"
-          ],
-          [
-            "tagesspiegel-home"
-          ]
-        ],
-        "possible_independent_origins": 3,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T03:15:04.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/ukraine-krieg--us-unterhaendler-witkoff-und-kushner-erstmals-in-kiew-38212818.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T10:33:04.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-diplomatie-16022706.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T10:50:59.000Z",
           "primary_source": false
         }
       ]
@@ -2143,99 +1712,6 @@
           "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T16:31:44.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-ba90052729946ae3",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-b7731e34d04dd290-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-dfe61a8bbf389ad6-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-ffb38514efffc00f-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "gesprache-uber-friedensabkommen-us-sondergesandte-in-moskau-eingetroffen-946ae3",
-      "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
-      "source_summary": "In Moskau haben am Abend kurzfristig angesetzte neue Gespräche zum Ukraine-Krieg begonnen. Nach der Meldung empfing Kremlchef Wladimir Putin die US-Unterhändler Witkoff und Kushner im Kreml; beide werden als Gesandte von US-Präsident Trump beschrieben.\n\nDer Bericht nennt zudem die Aussicht, dass die beiden nach dem Moskau-Besuch weiter in die Ukraine reisen. In Kiew würden dann zwei ranghohe US-Vertreter erwartet. Außerdem wird auf eine dreitägige Pause weiterer Angriffe auf Kiew verwiesen, die Putin angeordnet haben soll; Selenskyj habe eine spiegelbildliche Zurückhaltung bis Montag angeboten, falls Russland daran festhalte.",
-      "summary": "Putin hat in Moskau US-Unterhändler empfangen, die über den Ukraine-Krieg sprechen. Weitere Termine in Kiew und eine dreitägige Angriffspause werden in der Meldung ebenfalls genannt.",
-      "detail_summary": "Gesichert ist zunächst, dass in Moskau neue Gespräche zum Ukraine-Krieg begonnen haben und Putin die US-Unterhändler Witkoff und Kushner im Kreml empfing. Die Meldung ordnet sie als Gesandte von Präsident Trump ein und stellt einen möglichen Anschlussbesuch in der Ukraine in Aussicht. Politisch relevant ist das, weil der Vorgang die diplomatischen Kontakte zwischen den USA, Russland und der Ukraine direkt betrifft. Ein möglicher Wirkpfad liegt darin, dass solche Kontakte die Verhandlungsoptionen, die militärische Lage rund um Kiew und die öffentliche Erwartung an eine Feuerpause verändern. Als mögliche Folge nennt die Quelle weitere Gespräche in Kiew sowie eine befristete Reduktion von Angriffen. Offen bleibt, ob daraus belastbare Schritte zu einem Friedensabkommen entstehen und wie verlässlich die angekündigten oder behaupteten Pausen tatsächlich greifen.",
-      "why_relevant": "Die Meldung beschreibt direkte hochrangige Kontakte zwischen den Konfliktparteien und mögliche kurzfristige Änderungen im militärisch-diplomatischen Ablauf. Das kann Anreize, Sicherheitslage und Verhandlungsdynamik beeinflussen.",
-      "topic": [
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind mittelbar viele Menschen in der Ukraine und in Russland durch mögliche Änderungen bei Angriffen, Verhandlungen und Sicherheit."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Die Quelle nennt keine unmittelbaren Umweltfolgen; ein indirekter Zusammenhang ist hier nicht belastbar belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Gespräche berühren Kriegsverhandlungen und diplomatische Entscheidungswege, also einen relevanten Teil politischer Steuerung."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.0",
-      "media_checked_at": "2026-09-05T17:51:35.693Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-05T17:17:47.000Z",
-      "last_updated": "2026-09-05T17:52:55.835Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-01e6cd4e390eda19a265",
-      "case_file": null,
-      "source_published_at": "2026-09-05T17:17:47.000Z",
-      "published_at": "2026-09-05T17:52:55.835Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob Kushner und Witkoff nach dem Moskau-Besuch tatsächlich in die Ukraine weiterreisen.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Reiseberichte oder bestätigte Termine in Kiew",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-e973b3fadf8627bc",
-          "announced_at": "2026-09-05T17:17:47.000Z",
-          "follow_up_date": "2026-09-12T17:52:55.835Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T17:17:47.000Z",
           "primary_source": false
         }
       ]
@@ -5575,8 +5051,7 @@
       "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur und mögliche weitere Angriffe; davon hängen Sicherheitslage, Ermittlungsrichtung und Schutzmaßnahmen ab.",
       "topic": [
         "Energie",
-        "Gesellschaft",
-        "Geopolitik"
+        "Gesellschaft"
       ],
       "status": "laufende Entwicklung",
       "analysis_type": "ex_ante",
@@ -5662,43 +5137,7 @@
       "version": 3,
       "news_status": "updated",
       "event_id": "event-f0b1482b8ce86ec1fab2",
-      "case_file": {
-        "case_id": "case-4dc00cde414b35",
-        "member_count": 3,
-        "publisher_count": 3,
-        "members": [
-          {
-            "story_id": "wt-f3d585eac14dec76",
-            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
-            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-            "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
-            "updated_at": "2026-09-05T09:18:31.212Z",
-            "published_at": "2026-09-04T02:07:51.145Z",
-            "kind": "Ermittlungsstand",
-            "current": true
-          },
-          {
-            "story_id": "wt-7ae0b9f22404b684",
-            "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
-            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
-            "updated_at": "2026-09-04T14:13:53.288Z",
-            "published_at": "2026-09-03T23:06:38.718Z",
-            "kind": "Entscheidung oder Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-9812656e38b0d665",
-            "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
-            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
-            "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
-            "updated_at": "2026-09-03T22:22:49.015Z",
-            "published_at": "2026-09-03T22:22:49.015Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          }
-        ]
-      },
+      "case_file": null,
       "source_published_at": "2026-09-03T16:21:00.000Z",
       "published_at": "2026-09-04T02:07:51.145Z",
       "evidence_groups": {
@@ -9388,6 +8827,103 @@
       ]
     },
     {
+      "story_id": "wt-7ae0b9f22404b684",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-3c99358aab8c11c0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-610a15ea7a976974-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-d04bfff4674d4459-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-7a234ce31ca8915b-source.png"
+        }
+      },
+      "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
+      "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+      "source_summary": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln sagt Hessens Innenminister Roman Poseck, es gebe keine Hinweise auf vergleichbare Taten in Hessen. Dennoch würden die Sicherheitsvorkehrungen erhöht. Die Quelle nennt als Beispiel den Main-Kinzig-Kreis, wo der Schutz wichtiger Anlagen derzeit verstärkt werde.\n\nGenannt werden drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Das Innenministerium will sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten, einzelnen Vorkehrungen oder möglichen Szenarien äußern. Die Quelle verweist außerdem auf eine angespannte Sicherheitslage und auf weitere Vorfälle an kritischer Infrastruktur in Deutschland.",
+      "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
+      "detail_summary": "Gesichert ist nach der Quelle vor allem, dass Hessen seine Schutzvorkehrungen für kritische Infrastruktur hochfährt, obwohl es laut Innenminister Poseck keine Hinweise auf vergleichbare Taten im Land gibt. Als konkretes Beispiel nennt die Meldung den Main-Kinzig-Kreis mit drei Umspannwerken. Der Vorgang ist für Energieversorgung und Krisenfestigkeit relevant, weil zusätzliche Sicherung die Verwundbarkeit einzelner Anlagen senken kann und zugleich auf erhöhte Gefahrenwahrnehmung in der Infrastruktursteuerung hinweist. Ein möglicher Folgeeffekt ist mehr personeller, organisatorischer und technischer Aufwand für Betreiber und Behörden. Ob dadurch tatsächlich Anschläge verhindert oder nur Risiken verlagert werden, bleibt offen; die Quelle nennt keine überprüfbaren Wirkungen oder belastbaren Details zu den Maßnahmen.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, also einen potenziell systemrelevanten Bereich mit möglichen Kaskaden für Versorgungssicherheit, Schutzpflichten und staatliche Sicherheitsarchitektur.",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Es geht um Schutz kritischer Infrastruktur, die bei Ausfällen Versorgung und Sicherheit vieler Menschen betreffen kann."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle stellt den Schutz staatlich und gesellschaftlich relevanter Infrastruktur sowie die Reaktion der Behörden in den Mittelpunkt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": null,
+      "media_checked_at": null,
+      "editorial_analysis": null,
+      "first_seen": "2026-09-03T09:36:10.000Z",
+      "last_updated": "2026-09-04T14:13:53.288Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-75bee49c92987065ab05",
+      "case_file": null,
+      "source_published_at": "2026-09-03T09:36:10.000Z",
+      "published_at": "2026-09-03T23:06:38.718Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T09:36:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
       "story_id": "wt-91d18230516d00b2",
       "title_image": {
         "mode": "editorial",
@@ -12160,6 +11696,115 @@
           "url": "https://www.swr.de/swraktuell/rheinland-pfalz/kaiserslautern/bgh-gericht-beendet-streit-um-gema-gebuehren-in-suedwestpfalz-seniorenheim-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T16:33:02.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-9812656e38b0d665",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-d48bad746eead60a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-a2d45df5cf096c04-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-e60ffe161fe2bf90-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-ef5cfaf8b2ac8157-source.png"
+        }
+      },
+      "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
+      "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+      "source_summary": "Brandenburg reagiert laut Bericht auf eine Stromnetz-Sabotage nahe dem Kraftwerk Jänschwalde mit neuen Sicherheitsplänen. Innenminister Jan Redmann kündigt ein „360-Grad-Sicherheitszentrum“ an, in dem Erkenntnisse aus Verfassungsschutz, Polizei sowie Brand- und Katastrophenschutz gebündelt werden sollen.\n\nZugleich soll ein Beleihungsgesetz vorbereitet werden. Damit könnten Betreiber kritischer Infrastruktur den Schutz ihrer Anlagen selbst organisieren; bislang dürfen das laut Bericht nur Landes-, Bundespolizei und Bundeswehr. Außerdem nennt das Innenministerium weitere geplante Änderungen bei mehreren Sicherheitsgesetzen. Offene Fragen bleiben Zeitpunkt, genauer Inhalt und parlamentarischer Verlauf.",
+      "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
+      "detail_summary": "Gesichert ist zunächst die politische Reaktion auf die Sabotage an kritischer Infrastruktur: Brandenburg kündigt ein neues Sicherheitszentrum und weitere Gesetzesvorhaben an. Materiell relevant ist das, weil damit Zuständigkeiten, Schutzlogiken und mögliche Eingriffe in die Sicherung von Energieinfrastruktur verändert werden können. Der Wirkpfad läuft über zentralere Lagebilder, schnellere Koordination und neue rechtliche Befugnisse für Betreiber. Möglich sind dadurch höhere Resilienz und weniger Angriffsflächen, zugleich aber neue Abgrenzungsfragen zwischen Staat, Betreibern und Sicherheitsbehörden. Unklar bleibt, wie weit die Vorhaben tatsächlich gehen, ob sie beschlossen werden und welche Ressourcen sie binden. Belegt ist bisher nur die Ankündigung in einer einzelnen journalistischen Quelle; unabhängige Bestätigung oder amtliche Primärdokumente liegen hier nicht vor.",
+      "why_relevant": "Die Meldung betrifft den Schutz kritischer Infrastruktur und damit Regeln, Zuständigkeiten und Sicherheitsarchitektur mit möglicher Wirkung auf Versorgungssicherheit und staatliche Resilienz.",
+      "topic": [
+        "Energie",
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Potenzielle Folgen für Versorgungssicherheit, Polizeiorganisation und den Schutz von Anlagen betreffen viele Haushalte und Betriebe indirekt."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Über den Schutz des Stromnetzes und der Energieinfrastruktur können Ausfälle, Störungen und Folgeschäden begrenzt oder verschärft werden."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Neue Befugnisse und Gesetzesänderungen berühren demokratische Korrekturfähigkeit, Zuständigkeiten und staatliche Kontrolle."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "haushalte"
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": null,
+      "media_checked_at": null,
+      "editorial_analysis": null,
+      "first_seen": "2026-09-03T16:30:00.000Z",
+      "last_updated": "2026-09-03T22:22:49.015Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-f27aeef64f1f2b4c573e",
+      "case_file": null,
+      "source_published_at": "2026-09-03T16:30:00.000Z",
+      "published_at": "2026-09-03T22:22:49.015Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das angekündigte Sicherheitszentrum und das Beleihungsgesetz formell beschlossen werden",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Kabinetts-, Landtags- oder Gesetzesbeschluss mit Text des Vorhabens",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-11656929adb12c06",
+          "announced_at": "2026-09-03T16:30:00.000Z",
+          "follow_up_date": "2026-09-10T22:22:49.015Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-sabotage-umspannwerk-stromnetz-jaenschwalde-sicherheitszentrum.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:30:00.000Z",
           "primary_source": false
         }
       ]

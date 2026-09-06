@@ -2,6 +2,65 @@
 
 Stand: 4. September 2026. Betriebsregel für die automatische Aktenzuordnung.
 
+## Korrektur vom 6. September: Delegationsbesuche und eigenständige Schutzpolitik
+
+Die drei sichtbaren Kyjiw-Besuchskarten hatten zwei Ursachen: Die strenge
+Dokument-/Ereignisidentität erkannte unterschiedliche Überschriften desselben
+Besuchs nicht sicher. Zusätzlich setzte die Lageaktenansicht ein akutes
+Schlüsselwort wie `Krieg` in jeder Überschrift voraus. `Witkoff und Kushner
+erstmals in Kiew erwartet` fiel dadurch trotz passendem Vorgang aus der Akte.
+
+Die lokale Vorprüfung erkennt nun einen Besuch über zwei ausdrücklich als
+Delegierte benannte Personen, denselben Zielort und höchstens vier Tage Abstand
+der ursprünglichen Ereigniserfassung. Vor- und Nachnamen sowie Kiew/Kyjiw/Kyiv
+werden für die Zuordnung vereinheitlicht, nicht in Quellen umgeschrieben.
+Andere Delegationen, andere Zielorte, ausdrücklich neue Besuche, fehlende
+Ereignisdaten und eigenständige Angriffe bleiben getrennt. Ein einzelner
+gemeinsamer Name reicht nicht; reine Titelähnlichkeit darf diese Grenze nicht
+umgehen. Ketten dürfen das Zeitfenster nicht durch Zwischenmeldungen ausweiten.
+
+Die konservative Regel benötigt zwei belegte Delegationsnamen. Sie ist kein
+allgemeines Personen-Erkennungsmodell; nicht ausreichend identifizierte Fälle
+werden nicht auf Verdacht zusammengeführt. Die gleiche Prüfung läuft bei
+Feed-Zuordnung, Bestandskonsolidierung und vor einer gespeicherten Merge-Planung.
+
+Eine Nachrichtenlage darf mehrere belegte Stationen derselben Verhandlungsreise
+darstellen. Das ist keine Fusion der Treffen: Moskau und Kyjiw bleiben getrennte
+Vorgänge mit eigenen Belegen. Ein expliziter Konfliktbezug, konkrete gemeinsame
+Anker und paarweise Verträglichkeit bleiben erforderlich. Eine kurze überprüfte
+Zusammenfassung darf einen fehlenden Konfliktnamen aus ihrer führenden Quelle
+beziehen, nicht aus beliebigen Kontextquellen. Delegationsbesuche benötigen im
+Titel nicht zusätzlich das Wort `Krieg`. Die Methode gilt genauso für andere
+Orte und Namen; die Ukraine-Beispiele stehen nur in Regressionstests.
+
+Sektorweite politische Schutzforderungen und Maßnahmen bleiben eigenständige
+Gegenstände, statt unter einer einzelnen Tatortmeldung zu verschwinden.
+Systemische Verbindungen können über Themenverweise erklärt werden. Die von
+der Nutzerin erwähnte Özdemir-Meldung `wt-cf03acddb911d861` war bereits korrekt
+eigenständig; die vermeintliche Entfernung wurde nach Browserprüfung als
+Feed-Position hinter den Ukraine-Dubletten geklärt. Ihr Inhalt wird nicht geändert.
+
+Rückwirkender geprüfter Bestand: drei Doppelakten zum Kyjiw-Besuch werden unter
+`wt-06837a611e9459ce` fortgeführt, zwei zum Moskau-Besuch unter
+`wt-78b8df2827ab4527`. Die bisherigen URLs zeigen den Hinweis zur Fortführung;
+Quellen, Texte und Versionen bleiben erhalten. Die Quellenvereinigung landet
+in `pending_update`, nicht ungeprüft in veröffentlichten Aussagen. Keine
+zusätzliche direkte KI-Neuanalyse, keine Datumsverschiebung und kein neuer Push
+allein wegen der Zusammenführung. Die Migration ist bei Wiederholung leer.
+
+Regressionen prüfen insbesondere Feed-Zuordnung vor der KI, Namens-/Ortsvarianten,
+anderer Zielort, nur ein gemeinsamer Name, eigener Angriff, wiederholter Besuch,
+fehlende Daten, Zeitfenster-Ketten, Erhalt von Versionen und Quellen sowie
+eigenständige sektorweite Schutzpolitik.
+
+Beim Release wurde zusätzlich ein Build-Abhängigkeitsfehler im schnellen
+Nachrichtenpfad behoben: Die gemeinsame PDF-Publikationsprüfung benötigt
+PyMuPDF, pypdf und reportlab auch bei `ticker_only`. Ihre Installation darf
+nicht vom Vollbuild abhängen. Der schnelle Release führt nun auch `news:test`
+aus; eine Regression prüft die Abhängigkeitsinstallation vor dem Artefaktbau.
+Es werden keine Qualitätsprüfungen übersprungen und keine neuen Hostingdienste
+verwendet.
+
 Der atomare Git-Publisher integriert zwischenzeitliche `main`-Änderungen vor jedem
 von höchstens drei Push-Versuchen erneut. Rebase-Konflikte bleiben ein Fehler;
 kein Force-Push und keine automatische Wahl einer Konfliktseite. So wird ein

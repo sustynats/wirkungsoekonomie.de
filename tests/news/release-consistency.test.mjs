@@ -16,3 +16,17 @@ test("frequent news cannot cancel an active Pages publication", () => {
   const workflow = fs.readFileSync(new URL("../../.github/workflows/deploy.yml", import.meta.url), "utf8");
   assert.match(workflow, /concurrency:\s*\n\s+group: pages\s*\n(?:\s*#.*\n)*\s+cancel-in-progress: false/);
 });
+
+test("fast and full releases install the dependencies of shared artifact checks", () => {
+  const workflow = fs.readFileSync(new URL("../../.github/workflows/deploy.yml", import.meta.url), "utf8");
+  const steps = workflow.split(/\n\s{6}- name: /);
+  const install = steps.find(step => step.startsWith("Install Python build dependencies\n"));
+  const artifact = steps.find(step => step.startsWith("Build public deploy artifact\n"));
+  assert.ok(install && artifact);
+  assert.doesNotMatch(install, /\n\s+if:/, "PDF checks also run in ticker-only mode");
+  for (const dependency of ["pymupdf", "pypdf", "reportlab"]) assert.ok(install.includes(dependency), dependency);
+  assert.ok(workflow.indexOf(install) < workflow.indexOf(artifact));
+  assert.match(artifact, /npm run build:artifact/);
+  const fast = steps.find(step => step.startsWith("Build ticker and search for fast update\n"));
+  assert.match(fast, /npm run news:test/);
+});

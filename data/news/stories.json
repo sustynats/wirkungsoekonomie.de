@@ -1,8 +1,568 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-06T14:21:20.533Z",
-  "updated_at": "2026-09-06T15:21:12.149Z",
+  "public_updated_at": "2026-09-06T15:39:17.299Z",
+  "updated_at": "2026-09-06T15:33:52.069Z",
   "stories": [
+    {
+      "story_id": "wt-cb1ef4e11861f849",
+      "slug": "wahl-sachsen-anhalt-im-liveticker-warten-auf-prognose-hochrechnung-und-ergebnisse-61f849",
+      "title": "Wahl Sachsen-Anhalt im Liveticker: Warten auf Prognose, Hochrechnung und Ergebnisse",
+      "first_seen": "2026-09-06T15:32:05.000Z",
+      "last_updated": "2026-09-06T15:32:05.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-128,wahl-560.html",
+          "title": "Wahl Sachsen-Anhalt im Liveticker: Warten auf Prognose, Hochrechnung und Ergebnisse",
+          "summary": "Noch bis 18 Uhr läuft die Wahl in Sachsen-Anhalt. Im Liveticker berichten wir über den Wahltag, Prognose, Ergebnisse und Reaktionen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T15:32:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "71c5614adeb9537660b2b02b11f3b301547373278c83768f89b7c8dd9165b18f",
+          "source_item_id": "bc476e7b67dedc24f2d695d07f96e95e54fe651eba6c2e0c2512ea745a7ad7e9",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T15:32:05.000Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-cb1ef4e11861f849-claim-01",
+          "story_id": "wt-cb1ef4e11861f849",
+          "claim": "Wahl Sachsen-Anhalt im Liveticker: Warten auf Prognose, Hochrechnung und Ergebnisse: Noch bis 18 Uhr läuft die Wahl in Sachsen-Anhalt. Im Liveticker berichten wir über den Wahltag, Prognose, Ergebnisse und Reaktionen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:33:52.069Z"
+        }
+      ],
+      "content_hash": "938369a86d74284c6a3df044e2975ac1cc6ad634f728e9602da78a0579178184",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T15:48:52.069Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T15:33:52.069Z",
+      "event_first_seen_at": "2026-09-06T15:33:52.069Z",
+      "event_detected_at": "2026-09-06T15:33:52.069Z",
+      "event_id": "event-0a8e28dc904ae1fd6c86",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": true,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-128,wahl-560.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": true,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 1.7844833333333334,
+        "detection_delay_minutes": 1.7844833333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 100,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:33:52.069Z",
+        "fingerprint": "1d36d38814a2c9f3560570bc25d08f617066d02ef0f8e07d655df7c73aa7b42e",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T15:33:52.069Z",
+      "rejection": {
+        "at": "2026-09-06T15:33:52.069Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-a00267df5fcd914d",
+      "slug": "wahlabend-lage-in-magdeburg-bisher-entspannt-cd914d",
+      "title": "Wahlabend: Lage in Magdeburg bisher entspannt",
+      "first_seen": "2026-09-06T15:30:36.000Z",
+      "last_updated": "2026-09-06T15:30:36.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/video-1643730.html",
+          "title": "Wahlabend: Lage in Magdeburg bisher entspannt",
+          "summary": "In Magdeburg gab es trotz mehrerer Kundgebungen bislang keine größeren Vorkommnisse. Das könnte sich laut Polizei je nach Wahlergebnis noch ändern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T15:30:36.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "7f48afd61dc279a822f9fa22e3cbd668234d67b5076a7cef92d5fa816b07cb62",
+          "source_item_id": "70c3f148e91c375113cfff02ee6b74af1e7a87a0446d1f6fc5e46bbd28c2b572",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T15:30:36.000Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a00267df5fcd914d-claim-01",
+          "story_id": "wt-a00267df5fcd914d",
+          "claim": "Wahlabend: Lage in Magdeburg bisher entspannt: In Magdeburg gab es trotz mehrerer Kundgebungen bislang keine größeren Vorkommnisse. Das könnte sich laut Polizei je nach Wahlergebnis noch ändern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:33:52.069Z"
+        }
+      ],
+      "content_hash": "fe519914f0233d1c87e1cb4a99ef148eebd641004217c512b8360e02fc8e6ec8",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T15:48:52.069Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T15:33:52.069Z",
+      "event_first_seen_at": "2026-09-06T15:33:52.069Z",
+      "event_detected_at": "2026-09-06T15:33:52.069Z",
+      "event_id": "event-86c0df725bd01077bce6",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": true,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/video-1643730.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": true,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 50,
+        "public_relevance": "hoch",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.2678166666666666,
+        "detection_delay_minutes": 3.2678166666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:33:52.069Z",
+        "fingerprint": "106fb641706c8d3f4cc1fbdf0a50587231b7f58755dc9a6fc1305619d19a6bd2",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T15:33:52.069Z",
+      "rejection": {
+        "at": "2026-09-06T15:33:52.069Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-87e02cddc38aeda5",
+      "slug": "wiso-dokumentation-zeitenwende-hightech-aus-deutschland-hightech-made-in-germany-unabhan-8aeda5",
+      "title": "\"WISO-Dokumentation: Zeitenwende: Hightech aus Deutschland\": Hightech made in Germany: Unabhängigkeit dank Technik?",
+      "first_seen": "2026-09-06T15:30:04.000Z",
+      "last_updated": "2026-09-06T15:30:04.000Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/kultur/tv/hightech-made-in-germany--unabhaengigkeit-dank-technik--38213300.html",
+          "title": "\"WISO-Dokumentation: Zeitenwende: Hightech aus Deutschland\": Hightech made in Germany: Unabhängigkeit dank Technik?",
+          "summary": "Wie kann die deutsche Wirtschaft angesichts globaler Krisen unabhängig bleiben – vor allem, wenn es um Rohstoffe geht? Eine neue \"WISO\"-Dokumentation begleitet drei Unternehmen, die zur Souveränität beitragen wollen. Können ihre Projekte wirklich etwas verändern?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T15:30:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "6ec7212355b2d5207c0c5d6d9442620225ba8bb500f49afdfe8e3f791af5a824",
+          "source_item_id": "0458467d2825dd3185da42773364ac0b6a54e73be175173b3065373065c2a81e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T15:30:04.000Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-87e02cddc38aeda5-claim-01",
+          "story_id": "wt-87e02cddc38aeda5",
+          "claim": "\"WISO-Dokumentation: Zeitenwende: Hightech aus Deutschland\": Hightech made in Germany: Unabhängigkeit dank Technik?: Wie kann die deutsche Wirtschaft angesichts globaler Krisen unabhängig bleiben – vor allem, wenn es um Rohstoffe geht? Eine neue \"WISO\"-Dokumentation begleitet drei Unternehmen, die zur Souveränität beitragen wollen. Können ihre Projekte wirklich etwas verändern?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:33:52.069Z"
+        }
+      ],
+      "content_hash": "86f5150d0ee140cec6a72f4e0aa1fa52590d81bc3a1bec2c69817196eeb8ca0e",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:33:52.069Z",
+      "event_first_seen_at": "2026-09-06T15:33:52.069Z",
+      "event_detected_at": "2026-09-06T15:33:52.069Z",
+      "event_id": "event-d58e9597e17aafdbdba3",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.80115,
+        "detection_delay_minutes": 3.80115,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:33:52.069Z",
+        "fingerprint": "1427bf882d6d58ae661bf92d575dc0f9854bf1045f6426d08983d1f8799df314",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-bb2bc9604b13b293",
+      "slug": "wegen-drohnen-vorwurfen-zu-leipzig-russlands-aussenminister-lawrow-sieht-beginn-eines-ec-13b293",
+      "title": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland",
+      "first_seen": "2026-09-06T13:55:12.000Z",
+      "last_updated": "2026-09-06T15:29:01.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/russlands-aussenminister-lawrow-sieht-beginn-eines-echten-krieges-mit-deutschland-100.html",
+          "title": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland",
+          "summary": "In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft. Die gegen Moskau erhobenen Anschuldigungen, für den versuchten Anschlag verantwortlich zu sein, stellten letztlich den Beginn eines echten Krieges dar, sagte Lawrow.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T15:29:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "b2a5fa946a7a7df1899003eea064fa6be04bb7f7ed4ee58d94d1e4a732b6f905",
+          "source_item_id": "d732fdd73b39fcaf8acd1d02c0a66ab162c272fca831d71886044acb586776bd",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T15:29:01.000Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-bb2bc9604b13b293-claim-01",
+          "story_id": "wt-bb2bc9604b13b293",
+          "claim": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland: In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft. Die gegen Moskau erhobenen Anschuldigungen, für den versuchten Anschlag verantwortlich zu sein, stellten letztlich den Beginn eines echten Krieges dar, sagte Lawrow.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:33:52.069Z"
+        }
+      ],
+      "content_hash": "a5f331adc0579d9913128df317ed6dda7930e8f327d18161bf6b453a1cf8c20e",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:33:52.069Z",
+      "event_first_seen_at": "2026-09-06T14:06:24.915Z",
+      "event_detected_at": "2026-09-06T14:06:24.915Z",
+      "event_id": "event-062951d95ceb8b44030c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 4.85115,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 87.45256666666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:33:52.069Z",
+        "fingerprint": "e7570628a377ec388e818683e7fad8e33a50e3dc326f58d0e590ec7d7a3a7ffd",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-2b6f795594997352",
       "slug": "wohnungsbrand-in-hoyerswerda-akku-von-bohrschrauber-moglicherweise-brandursache-997352",
@@ -39,7 +599,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T15:00:51.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -68,7 +628,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         }
       ],
       "content_hash": "35ec6bbd8f24be6e487e30fd266ed55448363ba1b7c90b71718b9f4e36e8637b",
@@ -81,7 +641,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T15:21:12.149Z",
+      "updated_at": "2026-09-06T15:33:52.069Z",
       "event_first_seen_at": "2026-09-06T15:06:13.347Z",
       "event_detected_at": "2026-09-06T15:06:13.347Z",
       "event_id": "event-69ea064495300a0db8f4",
@@ -116,20 +676,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 20.352483333333332,
+        "source_age_minutes": 33.01781666666667,
         "detection_delay_minutes": 5.37245,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 14.980033333333333,
+        "queue_age_minutes": 27.645366666666668,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T15:21:12.149Z",
+        "checked_at": "2026-09-06T15:33:52.069Z",
         "fingerprint": "19cf4de30a37b93852d6b635d5b1d21076670a240ff018335f3aa5438f18fe8b",
         "issue_codes": [],
         "warning_codes": []
@@ -680,6 +1240,268 @@
       }
     },
     {
+      "story_id": "wt-f64f31247bfc1aa1",
+      "slug": "wahl-sachsen-anhalt-was-passiert-wenn-ich-nicht-wahlen-gehe-fc1aa1",
+      "title": "Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?",
+      "first_seen": "2026-09-06T14:31:09.000Z",
+      "last_updated": "2026-09-06T14:47:45.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/folgen-konsequenzen-110,nicht-waehlen-100.html",
+          "title": "Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?",
+          "summary": "Nicht wählen zu gehen ist erlaubt, beeinflusst das Wahlergebnis aber trotzdem. Das sind die Folgen für die Landtagswahl in Sachsen-Anhalt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:31:09.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "75f771918ccbff6fec30536a1f54aaa12b6fb0e01f4e407054fa902cdf2de6ed",
+          "source_item_id": "8d98ae413ab6232b9a97efabd2ccd8b81913f715ac247fbc7e6ebb355dba5708",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:31:09.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-fragen-antworten-100.html",
+          "title": "Was zur Wahl in Sachsen-Anhalt wichtig ist",
+          "summary": "Wer wird in Sachsen-Anhalt künftig regieren? Das Land wird seit mehr als 20 Jahren von der CDU geführt. Doch nun liegt die AfD in Umfragen mit großem Vorsprung vorne. Sie möchte d…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T03:15:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "79b59b669d9b9db4f5c7cb51b10c69a5b703ead598802e81697ccf28402d8630",
+          "source_item_id": "4bdb99248ca4ae43fca010fae65546489ea59d04cf112d39bcc7cbf314ba3e29",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T03:15:02.000Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahl-umfrage-ergebnisse-termin-briefwahl-112,landtagswahl-fragen-antworten-114.html",
+          "title": "Wahl Sachsen-Anhalt 2026: Was Wähler am Wahltag wissen müssen",
+          "summary": "Am 6. September 2026 wählt Sachsen-Anhalt einen neuen Landtag. Der Überblick beantwortet die wichtigsten Fragen zu Umfragen, Prognose, Hochrechnung, Wahlbeteiligung, Mehrheiten und Parteien.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:47:45.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "9320b146847247ebebdaefe928843601fa3f3dcf4ec59926a051fdaf847d026f",
+          "source_item_id": "173b8e42ff480084c2d57ee7cb65a9c6826b4ab673ea4868c64302dbce7d0c72",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:47:45.000Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f64f31247bfc1aa1-claim-01",
+          "story_id": "wt-f64f31247bfc1aa1",
+          "claim": "Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?: Nicht wählen zu gehen ist erlaubt, beeinflusst das Wahlergebnis aber trotzdem. Das sind die Folgen für die Landtagswahl in Sachsen-Anhalt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:33:52.069Z"
+        },
+        {
+          "claim_id": "wt-f64f31247bfc1aa1-claim-02",
+          "story_id": "wt-f64f31247bfc1aa1",
+          "claim": "Was zur Wahl in Sachsen-Anhalt wichtig ist: Wer wird in Sachsen-Anhalt künftig regieren? Das Land wird seit mehr als 20 Jahren von der CDU geführt. Doch nun liegt die AfD in Umfragen mit großem Vorsprung vorne. Sie möchte d…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:33:52.069Z"
+        },
+        {
+          "claim_id": "wt-f64f31247bfc1aa1-claim-03",
+          "story_id": "wt-f64f31247bfc1aa1",
+          "claim": "Wahl Sachsen-Anhalt 2026: Was Wähler am Wahltag wissen müssen: Am 6. September 2026 wählt Sachsen-Anhalt einen neuen Landtag. Der Überblick beantwortet die wichtigsten Fragen zu Umfragen, Prognose, Hochrechnung, Wahlbeteiligung, Mehrheiten und Parteien.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:33:52.069Z"
+        }
+      ],
+      "content_hash": "47d91faa2efb4dd49699e3d3a938d398d2e9e91f9009166df8e907c640ae3ee1",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T15:48:52.069Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T15:33:52.069Z",
+      "event_first_seen_at": "2026-09-06T15:06:13.347Z",
+      "event_detected_at": "2026-09-06T15:06:13.347Z",
+      "event_id": "event-046c7c0934d7305129df",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": true,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahl-umfrage-ergebnisse-termin-briefwahl-112,landtagswahl-fragen-antworten-114.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": true,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 46.11781666666667,
+        "detection_delay_minutes": 18.47245,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 27.645366666666668,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 90,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:33:52.069Z",
+        "fingerprint": "a1b2353a8553000703d115f7eed4156509cecf6761fe9d50b2b5e5b219f07a9c",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T15:33:52.069Z",
+      "rejection": {
+        "at": "2026-09-06T15:33:52.069Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
       "story_id": "wt-289bcd0083d5984c",
       "slug": "germany-what-could-change-in-saxony-anhalt-if-the-afd-wins-d5984c",
       "title": "Germany: What could change in Saxony-Anhalt if the AfD wins?",
@@ -713,7 +1535,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T14:44:02.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -742,7 +1564,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         }
       ],
       "content_hash": "a05e370211cfb9f234faaa5589ce6c1a21ff45d72cc5eb75b266a9eaa79e1cda",
@@ -755,7 +1577,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T15:21:12.149Z",
+      "updated_at": "2026-09-06T15:33:52.069Z",
       "event_first_seen_at": "2026-09-06T15:06:13.347Z",
       "event_detected_at": "2026-09-06T15:06:13.347Z",
       "event_id": "event-4af2e5042adafe6a0fb7",
@@ -792,20 +1614,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 37.16915,
+        "source_age_minutes": 49.83448333333333,
         "detection_delay_minutes": 22.189116666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 14.980033333333333,
+        "queue_age_minutes": 27.645366666666668,
         "target_publication_minutes": 120,
-        "news_freshness_score": 92,
+        "news_freshness_score": 90,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T15:21:12.149Z",
+        "checked_at": "2026-09-06T15:33:52.069Z",
         "fingerprint": "31f7be568cae499c5b54f36709a0329498ab8f59f9a1f9f530cbb4a9752c8a52",
         "issue_codes": [],
         "warning_codes": []
@@ -1035,7 +1857,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-02",
@@ -1055,7 +1877,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-03",
@@ -1075,7 +1897,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-04",
@@ -1095,7 +1917,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-05",
@@ -1115,7 +1937,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-c73edcf9866f078d-claim-06",
@@ -1135,7 +1957,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         }
       ],
       "content_hash": "cfe478438cf8be43e88d7e5769ee089911b963002b395c6a9fc019d008237dd4",
@@ -1148,7 +1970,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T15:21:12.149Z",
+      "updated_at": "2026-09-06T15:33:52.069Z",
       "event_first_seen_at": "2026-09-04T14:36:55.366Z",
       "event_detected_at": "2026-09-04T14:36:55.366Z",
       "event_id": "event-a1b8a516baff70dece5b",
@@ -1183,222 +2005,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 42.20248333333333,
+        "source_age_minutes": 54.86781666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2924.2797166666664,
+        "queue_age_minutes": 2936.94505,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 89,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T15:21:12.149Z",
+        "checked_at": "2026-09-06T15:33:52.069Z",
         "fingerprint": "56272d759419f76055bcad32bd8016b7bfb0aa86b5baf314317436fa1973a4c7",
         "issue_codes": [],
         "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-f64f31247bfc1aa1",
-      "slug": "wahl-sachsen-anhalt-was-passiert-wenn-ich-nicht-wahlen-gehe-fc1aa1",
-      "title": "Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?",
-      "first_seen": "2026-09-06T14:31:09.000Z",
-      "last_updated": "2026-09-06T14:31:09.000Z",
-      "topic": [
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/folgen-konsequenzen-110,nicht-waehlen-100.html",
-          "title": "Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?",
-          "summary": "Nicht wählen zu gehen ist erlaubt, beeinflusst das Wahlergebnis aber trotzdem. Das sind die Folgen für die Landtagswahl in Sachsen-Anhalt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T14:31:09.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "75f771918ccbff6fec30536a1f54aaa12b6fb0e01f4e407054fa902cdf2de6ed",
-          "source_item_id": "8d98ae413ab6232b9a97efabd2ccd8b81913f715ac247fbc7e6ebb355dba5708",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T14:31:09.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesschau-access",
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-fragen-antworten-100.html",
-          "title": "Was zur Wahl in Sachsen-Anhalt wichtig ist",
-          "summary": "Wer wird in Sachsen-Anhalt künftig regieren? Das Land wird seit mehr als 20 Jahren von der CDU geführt. Doch nun liegt die AfD in Umfragen mit großem Vorsprung vorne. Sie möchte d…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T03:15:02.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "79b59b669d9b9db4f5c7cb51b10c69a5b703ead598802e81697ccf28402d8630",
-          "source_item_id": "4bdb99248ca4ae43fca010fae65546489ea59d04cf112d39bcc7cbf314ba3e29",
-          "publisher_id": "tagesschau",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T03:15:02.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "collection_source_id": "swr-aktuell",
-          "collection_publisher_id": "swr"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-f64f31247bfc1aa1-claim-01",
-          "story_id": "wt-f64f31247bfc1aa1",
-          "claim": "Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?: Nicht wählen zu gehen ist erlaubt, beeinflusst das Wahlergebnis aber trotzdem. Das sind die Folgen für die Landtagswahl in Sachsen-Anhalt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
-        },
-        {
-          "claim_id": "wt-f64f31247bfc1aa1-claim-02",
-          "story_id": "wt-f64f31247bfc1aa1",
-          "claim": "Was zur Wahl in Sachsen-Anhalt wichtig ist: Wer wird in Sachsen-Anhalt künftig regieren? Das Land wird seit mehr als 20 Jahren von der CDU geführt. Doch nun liegt die AfD in Umfragen mit großem Vorsprung vorne. Sie möchte d…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesschau-access",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
-        }
-      ],
-      "content_hash": "d3d2a912fb0c8674480733d721008a35c3b9f8a1b19a847367368de6f4f519f8",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-06T15:36:12.149Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T15:21:12.149Z",
-      "event_first_seen_at": "2026-09-06T15:06:13.347Z",
-      "event_detected_at": "2026-09-06T15:06:13.347Z",
-      "event_id": "event-046c7c0934d7305129df",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 50.052483333333335,
-        "detection_delay_minutes": 35.07245,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 14.980033333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 90,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T15:21:12.149Z",
-        "fingerprint": "22849e89c9b7903e13e267072b127111cfcfb3f265ad5b49bc6c38ed4cd94e81",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T15:21:12.149Z",
-      "rejection": {
-        "at": "2026-09-06T15:21:12.149Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
       }
     },
     {
@@ -1874,6 +2497,61 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T14:23:31.959Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T15:33:52.069Z",
+        "content_hash": "14d131fe3e70d47a137bb4bae2dd1b321ee01b185f04c9e79de75f10d2e3584c",
+        "sources": [
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+            "title": "Zurück im Hambacher Forst: Polizei fahndet nach Verdächtigem",
+            "summary": "Mit einem Großaufgebot sucht die Polizei am Hambacher Forst nach einem Tatverdächtigen. Er soll die Sabotage-Aktionen aufs Stromnetz durchgeführt haben. Ein Indiz: sein Fahrrad.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T13:43:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "42268a5c17460519b1204f172734b3846ad56d43105238575efb6d2fa4821365",
+            "source_item_id": "1e4be773f43481f8bf81c438e093fb41bb450bf5ed005840d53079ecedaf819c",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T13:43:00.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T15:33:52.069Z",
+          "fingerprint": "d136b935347cc0726d46e9e847572336b4c63cf13997eb14195c4430bfe35000",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -2080,7 +2758,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         }
       ],
       "content_hash": "dbe5789dda08508c44aa95097826812c745ef9bec542537f2b6056ddea0508e4",
@@ -2093,7 +2771,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T15:21:12.149Z",
+      "updated_at": "2026-09-06T15:33:52.069Z",
       "event_first_seen_at": "2026-09-06T15:06:13.347Z",
       "event_detected_at": "2026-09-06T15:06:13.347Z",
       "event_id": "event-ebe6c86d6ed509757bfc",
@@ -2126,20 +2804,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 68.20248333333333,
+        "source_age_minutes": 80.86781666666667,
         "detection_delay_minutes": 53.22245,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 14.980033333333333,
+        "queue_age_minutes": 27.645366666666668,
         "target_publication_minutes": 120,
-        "news_freshness_score": 86,
+        "news_freshness_score": 83,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T15:21:12.149Z",
+        "checked_at": "2026-09-06T15:33:52.069Z",
         "fingerprint": "92ca19f6a98833287fa2fc457d0ac0ec625381fb799a70784a4a467da3a9cf0b",
         "issue_codes": [],
         "warning_codes": []
@@ -2587,146 +3265,6 @@
       }
     },
     {
-      "story_id": "wt-bb2bc9604b13b293",
-      "slug": "wegen-drohnen-vorwurfen-zu-leipzig-russlands-aussenminister-lawrow-sieht-beginn-eines-ec-13b293",
-      "title": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland",
-      "first_seen": "2026-09-06T13:55:12.000Z",
-      "last_updated": "2026-09-06T13:55:12.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/russlands-aussenminister-lawrow-sieht-beginn-eines-echten-krieges-mit-deutschland-100.html",
-          "title": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland",
-          "summary": "In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft. Die gegen Moskau erhobenen Anschuldigungen, für den versuchten Anschlag mit einer Drohne verantwortlich zu sein, stellten letztlich den Beginn eines echten Krieges dar, sagte Lawrow laut der staatlichen Nachrichtenagentur Tass.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T13:55:12.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "2ed694fe33e89993ea15ebb452ab4ce261dff869cda39825b6218e70c52ddffc",
-          "source_item_id": "d732fdd73b39fcaf8acd1d02c0a66ab162c272fca831d71886044acb586776bd",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:55:12.000Z",
-          "ingested_at": "2026-09-06T14:06:24.915Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-bb2bc9604b13b293-claim-01",
-          "story_id": "wt-bb2bc9604b13b293",
-          "claim": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland: In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft. Die gegen Moskau erhobenen Anschuldigungen, für den versuchten Anschlag mit einer Drohne verantwortlich zu sein, stellten letztlich den Beginn eines echten Krieges dar, sagte Lawrow laut der staatlichen Nachrichtenagentur Tass.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
-        }
-      ],
-      "content_hash": "3ece215dc06fe98bf4af022879492347ddbbd121b2ad3bf01328022cabbbaea9",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-06T14:21:24.915Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T14:06:24.915Z",
-      "event_first_seen_at": "2026-09-06T14:06:24.915Z",
-      "event_detected_at": "2026-09-06T14:06:24.915Z",
-      "event_id": "event-062951d95ceb8b44030c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 11.21525,
-        "detection_delay_minutes": 11.21525,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T14:06:24.915Z",
-        "fingerprint": "2b4af218fed2fbde3eba1acdd3e1cb608f39ddf34bff6884080bd95637888b3b",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T14:06:24.915Z",
-      "rejection": {
-        "at": "2026-09-06T14:06:24.915Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
       "story_id": "wt-7cb93f0c5bd31262",
       "slug": "nach-versuchtem-drohnen-anschlag-in-leipzig-lawrow-nennt-anschuldigungen-gegen-russland--d31262",
       "title": "Nach versuchtem Drohnen-Anschlag in Leipzig: Lawrow nennt Anschuldigungen gegen Russland „Beginn eines echten Krieges“",
@@ -2900,7 +3438,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T13:42:00.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2929,7 +3467,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         }
       ],
       "content_hash": "ea6802364fb7b1f7afeec0eba4ccf6ec06b4d7794891e41d6f8bf377b500230f",
@@ -2942,7 +3480,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T15:21:12.149Z",
+      "updated_at": "2026-09-06T15:33:52.069Z",
       "event_first_seen_at": "2026-09-06T15:06:13.347Z",
       "event_detected_at": "2026-09-06T15:06:13.347Z",
       "event_id": "event-64852789bb2f6fedc4eb",
@@ -2975,20 +3513,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 99.20248333333333,
+        "source_age_minutes": 111.86781666666667,
         "detection_delay_minutes": 84.22245,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 14.980033333333333,
+        "queue_age_minutes": 27.645366666666668,
         "target_publication_minutes": 120,
-        "news_freshness_score": 79,
+        "news_freshness_score": 77,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T15:21:12.149Z",
+        "checked_at": "2026-09-06T15:33:52.069Z",
         "fingerprint": "3f3e84f99c8bac0dbaa9be18b61ca55690fee9b8a69ca4390eaa96db693bebf2",
         "issue_codes": [],
         "warning_codes": []
@@ -3310,7 +3848,36 @@
         "issue_codes": [],
         "warning_codes": []
       },
-      "followups": [],
+      "followups": [
+        {
+          "claim": "Ob die US-Vermittler tatsächlich am Sonntag in Kiew eintreffen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder Bestätigungen zum tatsächlichen Eintreffen in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-cd96130eabd68579",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-13T05:29:46.602Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-06T05:29:46.602Z",
+          "last_check_result": "no_verified_material_update",
+          "origin_story_id": "wt-d7a0af1afc831caf"
+        },
+        {
+          "claim": "Die angekündigte Reise nach Kiew findet am Sonntag tatsächlich statt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder offizielle Bestätigungen zur Ankunft der beiden Gesandten in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-251b04897a03035a",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-13T05:29:46.602Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-06T05:29:46.602Z",
+          "last_check_result": "no_verified_material_update",
+          "origin_story_id": "wt-d7a0af1afc831caf"
+        }
+      ],
       "content_hash": "f2555281f53c4ec1d712e566528c5f63acd1cfe7eb2812b659ab54ea769163f5",
       "published": true,
       "listed": true,
@@ -3693,7 +4260,570 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-06T15:39:17.299Z",
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+            "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T11:05:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "424dbd5070971105161045cf7613a29930ba6acb14a1a3e0fc00ef53032a4b9e",
+            "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T11:05:30.000Z",
+            "ingested_at": "2026-09-06T11:51:43.074Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+            "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T12:56:45.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "b37dc0f2a85bb05f2368e0c3b99aab5c59d5e955280157f3552fef7686d747fd",
+            "source_item_id": "af75b6323e78549a2abcaa2a01049a838569ff8727ae93504700c98cf302b7cb",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T12:56:45.000Z",
+            "ingested_at": "2026-09-06T13:21:40.973Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
+            "summary": "Die US-Unterhändler Witkoff und Kushner werden heute zu einem Treffen mit dem ukrainischen Präsidenten Präsident Selenskyj in Kiew erwartet. Russland hat angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen. Gestern hatten die US-Gesandten in Moskau mit dem russischen Präsidenten Putin gesprochen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T08:45:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "0c62fd1262be41262586474bd1654083562adfb27c12da24e4bb5a9cba174074",
+            "source_item_id": "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T08:45:20.000Z",
+            "ingested_at": "2026-09-06T09:06:22.155Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-in-kiew-eingetroffen-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte in Kiew eingetroffen",
+            "summary": "Die US-Unterhändler Witkoff und Kushner sind zu einem Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew eingetroffen. Dabei sollen neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert werden. Selenskyj erklärte, sein Land wolle den Krieg mit Russland beenden. Dafür seien aber umfassende Sicherheitsgarantien nötig.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T12:30:49.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1f0f4ce79a8fc1bde60fdd5de126c899583beaa99eebdb955fe97b2225545da1",
+            "source_item_id": "bca2c955b228fac40e30e565c9a4d04a0b3cf538db8fb06c8ff0df97364fe1be",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T12:30:49.000Z",
+            "ingested_at": "2026-09-06T12:38:11.963Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/us-gesandte-witkoff-und-kushner-per-zug-in-kiew-eingetroffen-38212840.html",
+            "title": "US-Gesandte Witkoff und Kushner per Zug in Kiew eingetroffen",
+            "summary": "Die US-Gesandten Steve Witkoff und Jared Kushner sind am Sonntag zu Gesprächen über ein Ende des Ukraine-Kriegs in Kiew eingetroffen. Die beiden Gesandten von US-Präsident Donald Trump kamen per Zug aus Polen in der ukrainischen Hauptstadt an, wie ein AFP-Fotograf berichtete. Witkoff und Kushner waren zuvor in Moskau, wo sie mit dem russischen Präsidenten Wladimir Putin gesprochen hatten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:38:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "f683691c38a70bc08ccf8bf96c213907993945466a4eb4f7335f810eb300832b",
+            "source_item_id": "dae71c9c90bd0f60524643e0b031a88431feb09b9589394a12a9ad844c0d0e2f",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:38:33.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "afp",
+            "agency_origin_confidence": "high",
+            "provenance": {
+              "origin": "agency:afp",
+              "basis": "agency_attribution_in_available_text",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-witkoff-und-kushner-erstmals-in-kiew-38212846.html",
+            "title": "Ukraine-Krieg: US-Vermittler Witkoff und Kushner in Kiew eingetroffen",
+            "summary": "Die US-Unterhändler Witkoff und Kushner sind nach mehreren Besuchen in Russland während des Ukraine-Krieges erstmals in die Ukraine gereist. Bringt das die Wende im Krieg?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T12:14:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "86cf5a092bcbde7bd284a74728a811f8a949ee6a349239ad69280633260f0664",
+            "source_item_id": "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T12:14:00.000Z",
+            "ingested_at": "2026-09-06T12:38:11.963Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-vermittlungsversuch-100.html",
+            "title": "US-Gesandte in Kiew eingetroffen: Neuer Anlauf für Friedensgespräche",
+            "summary": "Nach ihrem Treffen mit Kremlchef Putin in Moskau sind die US-Sondergesandten Kushner und Witkoff in Kiew eingetroffen, um mit Präsident Selenskyj zu reden.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:53:40.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "e89cc40be98abdbdafcc725251a3d142820bd439e36db19478d483cf038cb290",
+            "source_item_id": "1ec910d22017fae8cd13bf62dce8d08cda37f6e3e2e1593f731ed6704f167b69",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:53:40.000Z",
+            "ingested_at": "2026-09-06T12:38:11.963Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "ndr-info"
+            },
+            "collection_source_id": "ndr-info",
+            "collection_publisher_id": "ndr"
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:21:16.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
+            "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:21:16.000Z",
+            "ingested_at": "2026-09-04T17:39:54.371Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:22:14.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
+            "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:22:14.000Z",
+            "ingested_at": "2026-09-05T05:21:05.955Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:46:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
+            "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:46:00.000Z",
+            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T20:13:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
+            "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T20:13:08.000Z",
+            "ingested_at": "2026-09-04T20:36:32.644Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:18:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "7a7f9a1bdaea2412f799dd9ad08b8440ee47057859b3cb170b2ca789a4373bcc",
+            "source_item_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:18:53.000Z",
+            "ingested_at": "2026-09-05T11:31:43.777Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/ausland/us-vermittler-putin-moskau-kiew-ukraine-krieg-russland-100.html",
+            "title": "US-Vermittler: Erste Gesprächsrunde \"ermutigend\"",
+            "summary": "Nach einem Treffen mit Kremlchef Putin in Moskau sind die US-Vermittler Kushner und Witkoff weiter in die Ukraine gereist. Dort wurden sie von Präsident Selenskyj empfangen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T15:18:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "b52a8dc65fcc1ad21b558cb629eae2fae63cb2671565b9aed194364b708882f5",
+            "source_item_id": "9ad001726f59c5ef3ff4bc395560f9438257b4d897d29a3ba3b09a9738ec9a58",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T15:18:00.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-102.html",
+            "title": "Witkoff und Kushner erstmals in Kiew erwartet",
+            "summary": "In Moskau hatten sie sich mit Kremlchef Putin getroffen und mit ihm über ein Ende des Ukraine-Kriegs verhandelt. Nun kommen die US-Gesandten Witkoff und Kushner nach Kiew - auf ei…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T03:15:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "8cfaaa864e14c5d17952e1a7016f37f46876ec6f8f3e75ba9ae99e92837e6617",
+            "source_item_id": "a3d74c05d2e65b2bce41a169eeb0ea68452733a4312efa79e87eb5c083eacb9e",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T03:15:04.000Z",
+            "ingested_at": "2026-09-06T05:41:03.427Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/ukraine-krieg--us-unterhaendler-witkoff-und-kushner-erstmals-in-kiew-38212818.html",
+            "title": "Ukraine-Krieg: US-Unterhändler Witkoff und Kushner erstmals in Kiew",
+            "summary": "Im Ringen um ein Ende des Ukraine-Kriegs sind die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen. Das berichteten mehrere Kiewer Medien; die Nachrichtenagentur Unian zeigte ein Video der Ankunft der beiden Männer in der ukrainischen Hauptstadt mit dem Zug. Video der Ankunft (Ukr.)",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:33:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "71203ece550f0c66e9b3ac45f69ca1b14352aac97b24d653b2cc04911216520a",
+            "source_item_id": "1d3e1d8b7ff7feef140430d18a007d3135f9394f54818d974f9cb76ef4a3126e",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:33:04.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-diplomatie-16022706.html",
+            "title": "Diplomatie: US-Vermittler Witkoff und Kushner erstmals in Kiew",
+            "summary": "Mehrfach waren sie für Gespräche in Moskau, nun sind sie erstmals für ihre Vermittlungsbemühungen in Kiew: Bringt der Besuch der US-Unterhändler Witkoff und Kushner ein Ende des Ukraine-Kriegs näher?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:50:59.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "e56731fa8d40c1b88dd3bc21de6847c2d45d2f39d4059c162edc39cc5c3fcacb",
+            "source_item_id": "faa3b6b7c93c425b48481114e869b48653581cfef6f97233431fbc69a74d2457",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:50:59.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "fresh": false,
+        "consolidation": true,
+        "quality_retry_count": 0
+      },
+      "living_file": {
+        "merged_story_ids": [
+          "wt-b1ce25efb18964e4",
+          "wt-d7a0af1afc831caf",
+          "wt-5469869109614acf"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-b1ce25efb18964e4",
+            "slug": "ukraine-krieg-us-gesandte-werden-nach-gesprachen-im-kreml-in-kiew-erwartet-8964e4",
+            "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
+            "reason": "specific_object_or_leading_document"
+          },
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-d7a0af1afc831caf",
+            "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "reason": "specific_object_or_leading_document"
+          },
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-5469869109614acf",
+            "slug": "witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf",
+            "title": "Witkoff und Kushner erstmals in Kiew erwartet",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
+      }
     },
     {
       "story_id": "wt-d1170e1bdc308cbc",
@@ -6034,7 +7164,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
+          "checked_at": "2026-09-06T15:33:52.069Z",
           "fingerprint": "1b8d9b174df22264a08c74cf10b778040acd7881d73cc50c14da2a7e4c0b1724",
           "issue_codes": [],
           "warning_codes": []
@@ -6385,8 +7515,8 @@
         "generated_at": "2026-09-06T12:40:43.867Z",
         "status": "generated"
       },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 3,
       "source_summary": "Die vorliegenden Meldungen berichten übereinstimmend, dass die US-Gesandten Steve Witkoff und Jared Kushner in Kiew eingetroffen sind und dort mit Präsident Selenskyj zusammenkommen sollen. Mehrere Quellen verweisen zudem darauf, dass die beiden zuvor in Moskau mit Präsident Putin gesprochen hatten. Eine der Meldungen nennt außerdem, dass in Kiew neue US-Vorschläge für ein Ende des Ukraine-Kriegs erörtert werden sollen.\n\nZu den konkreten Inhalten der Gespräche in Moskau werden keine Details genannt. Offen bleibt vor allem, was in Kiew tatsächlich vereinbart oder nur ausgelotet wird und ob daraus kurzfristig belastbare nächste Schritte folgen.",
@@ -7304,7 +8434,23 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-06837a611e9459ce"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-06837a611e9459ce",
+            "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-9e3a2e21408b5561",
@@ -8267,7 +9413,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T14:33:40.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -8280,10 +9426,11 @@
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
           "AI_SOURCE_SUMMARY_LENGTH",
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
         ],
-        "quality_retry_count": 6,
-        "quality_retry_after": "2026-09-07T03:21:12.149Z",
+        "quality_retry_count": 7,
+        "quality_retry_after": "2026-09-07T03:33:52.069Z",
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -8291,7 +9438,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
+          "checked_at": "2026-09-06T15:33:52.069Z",
           "fingerprint": "31ee4fd4bf82ecdb017b8703375bd4da9b112f12c110d712ff10a2cf3f91f65d",
           "issue_codes": [],
           "warning_codes": []
@@ -9639,7 +10786,7 @@
       "verification_started_at": "2026-09-06T11:52:20.794Z",
       "publish_ready_at": "2026-09-06T11:52:32.250Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "deepening_due_at": "2026-09-06T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -10073,9 +11220,12 @@
         "generated_at": "2026-09-06T11:53:30.299Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "f16becd4b60051791dc12a54685bbf7e36d9e2d554e5302f7edd410215d1eb9d",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "6d82afeede8d69dd2771677ae3070bbdd288211caca401e2bf3169aec27b6c8e",
+        "checked_at": "2026-09-06T15:33:52.069Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T21:33:52.069Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -10134,7 +11284,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T11:48:46.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -10143,26 +11293,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 3,
-        "quality_retry_after": "2026-09-06T16:21:12.149Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
-          "fingerprint": "de6fc3991d4fea8798415a759023dac4333248ae76dc8fa2a384d50054b77515",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-669077e2c11b7054",
@@ -10878,7 +12011,7 @@
       "verification_started_at": "2026-09-06T10:21:55.310Z",
       "publish_ready_at": "2026-09-06T10:22:08.636Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "deepening_due_at": "2026-09-06T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -11807,9 +12940,12 @@
           "note": "Die eigene Überschrift stellt nun den Brand und den betroffenen Markt vor die technische Ursachenangabe. Ein Medien- und Sprachcheck erläutert mögliche Assoziationen und die Grenzen einer Verallgemeinerung. Originalquelle, bisherige Sachverhaltsprüfung und Ereignisbewertungen bleiben erhalten."
         }
       ],
-      "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "4c029ed44a766bc13aba9632b1809eee1b7242303ccc17bd52c9f32cc4b727c1",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "1a3d1ff3d7f19ec8c26e57d2369ff6d392b53fea0642b3fab2eb75f9df5b773e",
+        "checked_at": "2026-09-06T15:33:52.069Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T21:33:52.069Z",
         "sources": [
           {
             "source_id": "ndr-info",
@@ -11844,26 +12980,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
-        ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-06T15:36:12.149Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
-          "fingerprint": "249f18fd4be1f1cc4705514dcda46b786b53e92f94f2d94531e96c099cb8580d",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-2c3f96a91e1a0fb0",
@@ -12405,8 +13524,8 @@
         "generated_at": "2026-09-06T11:24:19.479Z",
         "status": "generated"
       },
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 3,
       "source_summary": "Mehrere der gelieferten Beiträge berichten über die Reise der US-Vermittler Steve Witkoff und Jared Kushner im Zusammenhang mit Gesprächen über ein mögliches Ende des Ukraine-Kriegs. In den Quellen heißt es, die Gesandten seien nach einem Treffen mit Kremlchef Putin in Moskau weiter in die Ukraine gereist; in Kiew empfange sie Präsident Selenskyj. Zuvor hatte Selenskyj ihren Besuch angekündigt, und US-Präsident Trump bestätigte die Reisepläne und sprach von einem Vorschlag zur Beendigung des Krieges.\n\nDie Quellen nennen keine belastbar belegten Ergebnisse der Gespräche. Mehrfach wird darauf hingewiesen, dass frühere US-Vermittlungsbemühungen bislang keinen Durchbruch gebracht hätten und die Erwartungen an neue Gespräche gering seien.",
@@ -13166,7 +14285,7 @@
       "retirement_history": [],
       "pending_update": {
         "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "4fb25ea1f5c3110a39cbfb336362d65003e21e294e80f2ecf64478c48278309f",
+        "content_hash": "33f34a9977caa3455c6816900d104ebe227258fd15272a3a9148a0c38ad35052",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -13327,14 +14446,14 @@
             "source_id": "zdfheute-nachrichten",
             "publisher": "ZDFheute",
             "url": "https://www.zdfheute.de/politik/ausland/us-vermittler-putin-moskau-kiew-ukraine-krieg-russland-100.html",
-            "title": "US-Vermittler treffen Selenskyj in Kiew",
+            "title": "US-Vermittler: Erste Gesprächsrunde \"ermutigend\"",
             "summary": "Nach einem Treffen mit Kremlchef Putin in Moskau sind die US-Vermittler Kushner und Witkoff weiter in die Ukraine gereist. Dort wurden sie von Präsident Selenskyj empfangen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T14:34:00.000Z",
+            "published_at": "2026-09-06T15:18:00.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "2384f05d896464d882222a71532cc252c30d552176e15f07965f1bc7ff31c081",
+            "content_hash": "b52a8dc65fcc1ad21b558cb629eae2fae63cb2671565b9aed194364b708882f5",
             "source_item_id": "9ad001726f59c5ef3ff4bc395560f9438257b4d897d29a3ba3b09a9738ec9a58",
             "publisher_id": "zdfheute",
             "publisher_kind": "public_broadcasting",
@@ -13346,8 +14465,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T14:34:00.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "source_published_at": "2026-09-06T15:18:00.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -13359,10 +14478,11 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
           "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
         ],
-        "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-06T15:51:12.149Z",
+        "quality_retry_count": 3,
+        "quality_retry_after": "2026-09-06T16:33:52.069Z",
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -13370,11 +14490,27 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
-          "fingerprint": "6d6d3d07ddc52bda0c2ae1ca2bdb7fdfd3bffb8e14004ae9622aac85022cba9c",
+          "checked_at": "2026-09-06T15:33:52.069Z",
+          "fingerprint": "644d96c31a1f04accfecd750b3189daa064355a28c2da6c728af40cbf69cf50e",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-06837a611e9459ce"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-06837a611e9459ce",
+            "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
       }
     },
     {
@@ -14387,6 +15523,18 @@
           "announced_at": "2026-09-05T18:15:04.000Z",
           "follow_up_date": "2026-09-13T10:53:50.820Z",
           "status": "scheduled"
+        },
+        {
+          "claim": "Ob Kushner und Witkoff nach dem Moskau-Besuch tatsächlich in die Ukraine weiterreisen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Reiseberichte oder bestätigte Termine in Kiew",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e973b3fadf8627bc",
+          "announced_at": "2026-09-05T17:17:47.000Z",
+          "follow_up_date": "2026-09-12T17:52:55.835Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-ba90052729946ae3"
         }
       ],
       "content_hash": "fe73af96d6717ba323684fdf0d2da3f372583b39a365c378383c3a1f1b549155",
@@ -14808,8 +15956,7 @@
         "status": "generated"
       },
       "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "fe73af96d6717ba323684fdf0d2da3f372583b39a365c378383c3a1f1b549155",
+        "detected_at": "2026-09-06T15:39:17.299Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -15139,24 +16286,129 @@
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+            "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+            "summary": "In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:17:47.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987",
+            "source_item_id": "3b07aa287e50b1bbf027019a2483375c05efa7365a4acb4f008cee14ce106321",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:17:47.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/us-gesandte-kushner-und-witkoff-zu-gespraechen-ueber-ukraine-krieg-in-moskau-38211250.html",
+            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
+            "summary": "Die US-Gesandten Jared Kushner und Steve Witkoff sind zu Gesprächen über eine Beendigung des Ukraine-Kriegs in der russischen Hauptstadt Moskau eingetroffen. Ihr Flugzeug landete am Samstagmittag auf dem Flughafen Wnukowo, wie die russischen Nachrichtenagenturen Ria Nowosti und Tass meldeten. In der Folge wollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:25:11.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "3df5cd824d6e715dc545dee0a6465e5528a0510cf96dfebd0addca1cce08269c",
+            "source_item_id": "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:25:11.000Z",
+            "ingested_at": "2026-09-05T11:31:43.777Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-sprechen-nach-kiew-besuch-von-substanziellen-gespraechen-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte Witkoff und Kushner sprechen nach Kiew-Besuch von substanziellen Gesprächen",
+            "summary": "Der US-Gesandte Steve Witkoff hat die Gespräche mit der ukrainischen Seite über ein Ende des russischen Angriffskriegs als \"substanziell\" bezeichnet. Der Schwiegersohn von US-Präsident Trump, Kushner, der ebenfalls in der ukrainischen Hauptstadt Kiew war, erklärte, er hoffe, dass die Gespräche neue Wege zu einem Frieden eröffnen würden.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T15:29:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "f3e203da40f80c38ca8904961b19c69007d86e0d9ce95a86a55f698124fd963b",
+            "source_item_id": "e350cc0bf5b02b700a25ab17b92eb7b1eea9620c20352303d8f43e63c122b6a5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T15:29:01.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
         ],
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
         "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
-          "fingerprint": "1fc91e9d7e838095b8ac1a35749ca3e650f17e7a2d8f68f24d1752f3a5606811",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        "consolidation": true,
+        "quality_retry_count": 0
+      },
+      "living_file": {
+        "merged_story_ids": [
+          "wt-ba90052729946ae3",
+          "wt-86783bc04f815007"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-ba90052729946ae3",
+            "slug": "gesprache-uber-friedensabkommen-us-sondergesandte-in-moskau-eingetroffen-946ae3",
+            "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+            "reason": "specific_object_or_leading_document"
+          },
+          {
+            "at": "2026-09-06T15:39:17.299Z",
+            "story_id": "wt-86783bc04f815007",
+            "slug": "us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007",
+            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
       }
     },
     {
@@ -15364,8 +16616,8 @@
       "followups": [],
       "content_hash": "1752c0fee835bfa81b6aefc1cd04ac3aac0b9bd700f6a5da606f46ce926b628f",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "Mehrere deutschsprachige Medien berichten übereinstimmend, dass die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen sind. Der Stern schreibt, die beiden seien im Ringen um ein Ende des Ukraine-Kriegs angekommen; der Tagesspiegel berichtet ebenfalls von ihrem ersten Besuch in Kiew für Vermittlungsgespräche.\n\nTagesschau ergänzt, dass sich beide zuvor in Moskau mit Kremlchef Putin getroffen hätten. Die Berichte nennen keinen detaillierten Gesprächsverlauf, sondern zunächst nur die Ankunft und den diplomatischen Kontext. Ein unabhängiger Originalbeleg aus Kiew oder von den Beteiligten selbst ist in den gelieferten Quellen nicht enthalten.",
@@ -15848,7 +17100,23 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-06837a611e9459ce"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-06837a611e9459ce",
+            "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-b7e4ce6b5b76b0e3",
@@ -16731,7 +17999,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T12:00:00.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -16752,7 +18020,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
+          "checked_at": "2026-09-06T15:33:52.069Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -18706,7 +19974,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T08:39:00.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -18722,7 +19990,7 @@
             "title": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt",
             "summary": "Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T15:04:56.000Z",
+            "published_at": "2026-09-06T15:29:01.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -18738,8 +20006,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T15:04:56.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "source_published_at": "2026-09-06T15:29:01.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -18760,7 +20028,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
+          "checked_at": "2026-09-06T15:33:52.069Z",
           "fingerprint": "98c998135335d0968bf5e0087414a452d3f9d6caf5770dc3e95471769288eee4",
           "issue_codes": [],
           "warning_codes": []
@@ -20064,14 +21332,14 @@
           "source_id": "spiegel-schlagzeilen",
           "publisher": "DER SPIEGEL",
           "url": "https://www.spiegel.de/ausland/israel-baut-barriere-im-jordantal-krieg-gegen-die-felder-die-baeume-und-die-menschen-a-4edbb938-801b-4bb8-8ddb-13e7f1017e1c",
-          "title": "Israel baut Barriere im Jordantal: Krieg gegen die Felder, die Bäume und die Menschen",
+          "title": "Israel baut Wall im Jordantal: Krieg gegen die Felder, die Bäume und die Menschen",
           "summary": "Israelische Soldaten errichten nahe der Grenze zu Jordanien eine Barriere, die palästinensische Bauern von ihrem Land abschneidet. Vor Ort wird klar: Der Wall soll offenbar auch dazu dienen, das Jordantal komplett zu besiedeln.",
           "source_type": "media_rss",
           "published_at": "2026-09-06T07:26:00.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "61e30f95609346e1daf0f2e307774cd782d48bfc01d081ea26436bb54306d626",
+          "content_hash": "0026b276e30822365a5ce8689672298928cab5a8fe3aced293d79663119d885b",
           "source_item_id": "bccaefdf16c05597ccebaea144401e1252e556244e161c7876876b04a4998de0",
           "publisher_id": "spiegel",
           "publisher_kind": "journalism",
@@ -20084,7 +21352,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T07:26:00.000Z",
-          "ingested_at": "2026-09-06T07:36:23.375Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -20098,7 +21366,7 @@
         {
           "claim_id": "wt-39a3ae40381778f1-claim-01",
           "story_id": "wt-39a3ae40381778f1",
-          "claim": "Israel baut Barriere im Jordantal: Krieg gegen die Felder, die Bäume und die Menschen: Israelische Soldaten errichten nahe der Grenze zu Jordanien eine Barriere, die palästinensische Bauern von ihrem Land abschneidet. Vor Ort wird klar: Der Wall soll offenbar auch dazu dienen, das Jordantal komplett zu besiedeln.",
+          "claim": "Israel baut Wall im Jordantal: Krieg gegen die Felder, die Bäume und die Menschen: Israelische Soldaten errichten nahe der Grenze zu Jordanien eine Barriere, die palästinensische Bauern von ihrem Land abschneidet. Vor Ort wird klar: Der Wall soll offenbar auch dazu dienen, das Jordantal komplett zu besiedeln.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "spiegel-schlagzeilen",
           "source_function": "journalistic_report",
@@ -20113,20 +21381,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:36:23.375Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         }
       ],
-      "content_hash": "d5cedd715e7446417556fd77fa1c3c7971bee495542b7efef78f3449c7d744a8",
+      "content_hash": "6053b67e9ffac032cba08882212d53589f16348f34635926cbe026e8baa69eff",
       "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-06T07:51:23.375Z",
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
       "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T07:36:23.375Z",
+      "updated_at": "2026-09-06T15:33:52.069Z",
       "event_first_seen_at": "2026-09-06T07:36:23.375Z",
       "event_detected_at": "2026-09-06T07:36:23.375Z",
       "event_id": "event-1edde11a4c0d2dd94112",
@@ -20159,35 +21427,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 10.389583333333333,
+        "source_age_minutes": 487.86781666666667,
         "detection_delay_minutes": 10.389583333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 477.4782333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
+        "news_freshness_score": 0,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T07:36:23.375Z",
-        "fingerprint": "9fe9f12e9ac1d697d11e19922e0f29c87a25e2f3cc80df2c3c6a73195b1a3fc9",
+        "checked_at": "2026-09-06T15:33:52.069Z",
+        "fingerprint": "5e5a71ac0064f6ca08857a8e518df5c906c5de14b029751936ea956ced50f7d3",
         "issue_codes": [],
         "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T07:36:23.375Z",
-      "rejection": {
-        "at": "2026-09-06T07:36:23.375Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
       }
     },
     {
@@ -21862,7 +23118,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T18:32:23.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -21895,7 +23151,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:57:00.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -21928,7 +23184,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:36:00.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -21961,7 +23217,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T13:35:00.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -21994,7 +23250,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:14:00.000Z",
-          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -22002,6 +23258,42 @@
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
+        },
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/newsticker/liveblog-landtagswahl-sachsen-anhalt-100.html",
+          "title": "Landtagswahl in Sachsen-Anhalt: ++ Liveticker zur Sachsen-Anhalt-Wahl: Entscheidung fiel 2021 bei einem Drittel erst kurz vor der Wahl ++",
+          "summary": "Bereits um 16 Uhr haben mehr Menschen in Sachsen-Anhalt ihre Stimmen abgegeben als bei der vergangenen Landtagswahl. Die Wahlbeteiligung lag bis zu diesem Zeitpunkt bei 65,3 Prozent - zum Vergleich: 2021 lag sie nach dem Schließen der Wahllokale bei 60,3 Prozent.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T15:20:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1be7220f2bf853006f13bf0db25d35fe3a7337115264834a89b5e19836e81205",
+          "source_item_id": "776cc3745c8f775fdb9aede20712df3e986cdece71d29d4af6e217db1a5e512e",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T15:20:05.000Z",
+          "ingested_at": "2026-09-06T15:33:52.069Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "wdr-nachrichten"
+          },
+          "collection_source_id": "wdr-nachrichten",
+          "collection_publisher_id": "wdr"
         }
       ],
       "claims": [
@@ -22023,7 +23315,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -22043,7 +23335,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -22063,7 +23355,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -22083,7 +23375,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -22103,7 +23395,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -22123,7 +23415,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -22143,7 +23435,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -22163,7 +23455,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -22183,7 +23475,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -22203,7 +23495,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -22223,7 +23515,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -22243,7 +23535,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -22263,7 +23555,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -22283,7 +23575,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -22303,7 +23595,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -22323,7 +23615,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -22343,7 +23635,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -22363,7 +23655,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -22383,7 +23675,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -22403,7 +23695,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -22423,7 +23715,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-22",
@@ -22443,7 +23735,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-23",
@@ -22463,10 +23755,31 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-24",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Landtagswahl in Sachsen-Anhalt: ++ Liveticker zur Sachsen-Anhalt-Wahl: Entscheidung fiel 2021 bei einem Drittel erst kurz vor der Wahl ++: Bereits um 16 Uhr haben mehr Menschen in Sachsen-Anhalt ihre Stimmen abgegeben als bei der vergangenen Landtagswahl. Die Wahlbeteiligung lag bis zu diesem Zeitpunkt bei 65,3 Prozent - zum Vergleich: 2021 lag sie nach dem Schließen der Wahllokale bei 60,3 Prozent.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "wdr-nachrichten"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:33:52.069Z"
         }
       ],
-      "content_hash": "cf13afcc8330c319ee59c6352a7453c89727c7e6def34bae69e4abe09f9ff745",
+      "content_hash": "bd0ebd1d1ec10851dbd762365c2ca17a54dc941626632c13dde1d77ab93dd6e3",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
@@ -22479,7 +23792,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T15:21:12.149Z",
+      "updated_at": "2026-09-06T15:33:52.069Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -22522,21 +23835,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 106.20248333333333,
+        "source_age_minutes": 13.784483333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3389.483166666667,
+        "queue_age_minutes": 3402.1485,
         "target_publication_minutes": 120,
-        "news_freshness_score": 78,
+        "news_freshness_score": 97,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T15:21:12.149Z",
-        "fingerprint": "3c0c97e8059c98cc47d39390060a0c85d0463048d4f0648ab40c5452ded6cf42",
+        "checked_at": "2026-09-06T15:33:52.069Z",
+        "fingerprint": "3beb7880cadc8839e15b4551f5a36f2fce34893634f9e22b73f59f1b39cb5e64",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
         ],
@@ -24450,7 +25763,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
+          "checked_at": "2026-09-06T15:33:52.069Z",
           "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
           "issue_codes": [],
           "warning_codes": []
@@ -25364,7 +26677,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
+          "checked_at": "2026-09-06T15:33:52.069Z",
           "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
           "issue_codes": [],
           "warning_codes": []
@@ -32109,8 +33422,8 @@
       ],
       "content_hash": "e8791ab952453e52d6703e23d1d2dc97b6e9286997a30dbaf166b61a949c4ed3",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "In Moskau haben am Abend kurzfristig angesetzte neue Gespräche zum Ukraine-Krieg begonnen. Nach der Meldung empfing Kremlchef Wladimir Putin die US-Unterhändler Witkoff und Kushner im Kreml; beide werden als Gesandte von US-Präsident Trump beschrieben.\n\nDer Bericht nennt zudem die Aussicht, dass die beiden nach dem Moskau-Besuch weiter in die Ukraine reisen. In Kiew würden dann zwei ranghohe US-Vertreter erwartet. Außerdem wird auf eine dreitägige Pause weiterer Angriffe auf Kiew verwiesen, die Putin angeordnet haben soll; Selenskyj habe eine spiegelbildliche Zurückhaltung bis Montag angeboten, falls Russland daran festhalte.",
@@ -32508,7 +33821,23 @@
           }
         ]
       },
-      "deepening_checks": 3
+      "deepening_checks": 3,
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-78b8df2827ab4527"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-78b8df2827ab4527",
+            "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-6a7145e6dc679f95",
@@ -41668,10 +42997,10 @@
       ],
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "a4b6667ccf2d50c81ce9c934137a1a2acae8b3a8f6cfcaf17ce6c6587f2fb6dd",
-        "checked_at": "2026-09-06T15:21:12.149Z",
+        "fingerprint": "0607c2af4c435e42320512abd055a2d23467022753d974dda35f57fe18cef68c",
+        "checked_at": "2026-09-06T15:33:52.069Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-06T21:21:12.149Z",
+        "expires_at": "2026-09-06T21:33:52.069Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -42138,7 +43467,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -42237,7 +43566,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42336,7 +43665,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42369,7 +43698,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T13:35:00.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42468,7 +43797,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T02:32:15.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42476,13 +43805,49 @@
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/newsticker/liveblog-landtagswahl-sachsen-anhalt-100.html",
+            "title": "++ Bereits höhere Wahlbeteiligung als vor fünf Jahren ++",
+            "summary": "Bereits um 16 Uhr haben mehr Menschen in Sachsen-Anhalt ihre Stimmen abgegeben als bei der vergangenen Landtagswahl. Die Wahlbeteiligung lag bis zu diesem Zeitpunkt bei 65,3 Proze…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T15:30:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "60cf15a6951e56b673ac568505dcf97d4a8a1c435fb17f794b22eff28d450515",
+            "source_item_id": "776cc3745c8f775fdb9aede20712df3e986cdece71d29d4af6e217db1a5e512e",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T15:30:01.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
           }
         ]
       },
       "deepening_checks": 3,
       "pending_update": {
         "detected_at": "2026-09-06T13:51:15.545Z",
-        "content_hash": "c90a611a58c488e3d2049b8d7b02339605f6f88bb74bd7ec6b9dfe8fef5516bc",
+        "content_hash": "cb562c50f245e65894c7218e0aec6259104f1050189b4b0821e29542e1dcfd0d",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -42949,7 +44314,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -43048,7 +44413,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -43147,7 +44512,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -43180,7 +44545,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T13:35:00.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -43279,7 +44644,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T02:32:15.000Z",
-            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -43287,6 +44652,42 @@
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/newsticker/liveblog-landtagswahl-sachsen-anhalt-100.html",
+            "title": "++ Bereits höhere Wahlbeteiligung als vor fünf Jahren ++",
+            "summary": "Bereits um 16 Uhr haben mehr Menschen in Sachsen-Anhalt ihre Stimmen abgegeben als bei der vergangenen Landtagswahl. Die Wahlbeteiligung lag bis zu diesem Zeitpunkt bei 65,3 Proze…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T15:30:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "60cf15a6951e56b673ac568505dcf97d4a8a1c435fb17f794b22eff28d450515",
+            "source_item_id": "776cc3745c8f775fdb9aede20712df3e986cdece71d29d4af6e217db1a5e512e",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T15:30:01.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
           }
         ],
         "reason": "AI_INPUT_TOO_LARGE",
@@ -43302,8 +44703,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T15:21:12.149Z",
-          "fingerprint": "09835ef7b16fcbf396ab8fc410cdc72ad0d33ac7a5161cbf63eb97880d13ddb3",
+          "checked_at": "2026-09-06T15:33:52.069Z",
+          "fingerprint": "9f9773bb03f384961b388716c2923553e6c2673b087d3651683f389e8b01d51a",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -53362,8 +54763,8 @@
       "followups": [],
       "content_hash": "4e538b6870bba573e71ebe4b674b6ff2dbc2fb46dd5f6b00de8440d532972b4e",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "source_summary": "Die Quelle meldet, dass die US-Gesandten Jared Kushner und Steve Witkoff in Moskau eingetroffen sind. Es geht nach der Darstellung um Gespräche über eine Beendigung des Ukraine-Kriegs.\n\nAls Ankunftsort nennt die Quelle den Flughafen Wnukowo; das Flugzeug sei dort am Samstagmittag gelandet. Im Anschluss, so heißt es weiter, sollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen. Weitere Details zu Inhalt, Teilnehmerkreis oder Ergebnissen der Gespräche nennt die Meldung nicht.",
@@ -53698,7 +55099,112 @@
           }
         ]
       },
-      "deepening_checks": 3
+      "deepening_checks": 3,
+      "pending_update": {
+        "detected_at": "2026-09-06T15:33:52.069Z",
+        "content_hash": "f378e4a9f6bc172ce12942dc0fe7a6148c68059ced499b48648ba47af15796a2",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/us-gesandte-kushner-und-witkoff-zu-gespraechen-ueber-ukraine-krieg-in-moskau-38211250.html",
+            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
+            "summary": "Die US-Gesandten Jared Kushner und Steve Witkoff sind zu Gesprächen über eine Beendigung des Ukraine-Kriegs in der russischen Hauptstadt Moskau eingetroffen. Ihr Flugzeug landete am Samstagmittag auf dem Flughafen Wnukowo, wie die russischen Nachrichtenagenturen Ria Nowosti und Tass meldeten. In der Folge wollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:25:11.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "3df5cd824d6e715dc545dee0a6465e5528a0510cf96dfebd0addca1cce08269c",
+            "source_item_id": "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:25:11.000Z",
+            "ingested_at": "2026-09-05T11:31:43.777Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-sprechen-nach-kiew-besuch-von-substanziellen-gespraechen-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte Witkoff und Kushner sprechen nach Kiew-Besuch von substanziellen Gesprächen",
+            "summary": "Der US-Gesandte Steve Witkoff hat die Gespräche mit der ukrainischen Seite über ein Ende des russischen Angriffskriegs als \"substanziell\" bezeichnet. Der Schwiegersohn von US-Präsident Trump, Kushner, der ebenfalls in der ukrainischen Hauptstadt Kiew war, erklärte, er hoffe, dass die Gespräche neue Wege zu einem Frieden eröffnen würden.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T15:29:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "f3e203da40f80c38ca8904961b19c69007d86e0d9ce95a86a55f698124fd963b",
+            "source_item_id": "e350cc0bf5b02b700a25ab17b92eb7b1eea9620c20352303d8f43e63c122b6a5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T15:29:01.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_PUBLICATION_RECOMMENDATION_INVALID",
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-06T15:48:52.069Z",
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T15:33:52.069Z",
+          "fingerprint": "db757ce2733772fada9b8167885f13750475937cc9c632cd05e45c6f69daea67",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      },
+      "retired_at": "2026-09-06T15:39:17.299Z",
+      "retirement": {
+        "at": "2026-09-06T15:39:17.299Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-78b8df2827ab4527"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-78b8df2827ab4527",
+            "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-eb6e7bfa7e906259",
@@ -143060,7 +144566,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T15:21:12.149Z"
+          "checked_at": "2026-09-06T15:33:52.069Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -143075,7 +144581,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T15:21:12.149Z",
+      "updated_at": "2026-09-06T15:33:52.069Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -143111,11 +144617,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4378.2024833333335,
+        "source_age_minutes": 4390.867816666667,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3899.9189833333335,
+        "queue_age_minutes": 3912.584316666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -143124,7 +144630,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T15:21:12.149Z",
+        "checked_at": "2026-09-06T15:33:52.069Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
