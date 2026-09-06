@@ -4,6 +4,9 @@ Verantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.
 
 Rückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.
 
+
+**Aktueller Stand, 06.09.2026:** Beide Umfragen sind live. Die Stadtumfrage wurde um 17:41:56 Uhr MESZ freigegeben. Aussagen zur ausstehenden Freigabe unten dokumentieren den vorherigen Prüfstand; der bestätigte Livegang ist im Nachtrag festgehalten.
+
 ## Belegter Verlauf
 
 ### 2026-09-04 · Umfragemodul und erste Umfrage veröffentlicht
@@ -27,6 +30,11 @@ Beleg: Projektauftrag der Inhaberin vom 06.09.2026.
 Auftrag, Konzept, Chronik und Aufgaben sind der Projektinhaberin Natalie Weber zugeordnet. Die erste und die zweite Umfrage erhalten getrennte Arbeitsstände.
 
 Beleg: Projektauftrag der Inhaberin vom 06.09.2026.
+
+### 2026-09-06 · 17:41:56 Uhr MESZ · Stadtumfrage freigegeben und live
+Die Stadtumfrage „In welcher Stadt möchtest Du leben?“ ist seit dem 06.09.2026 um 17:41:56 Uhr MESZ (15:41:56 UTC) zur Abstimmung freigegeben. Sie zeigt sieben illustrative Stadt- und Umlandszenarien auf Grundlage ausgewählter Vorhaben aus den Bundestagswahlprogrammen 2025. Acht Antwortmöglichkeiten schließen „Keines dieser Szenarien“ ein. Die Bilder sind illustrative Modelle, keine berechneten Zukunftsprognosen und keine Wahlempfehlung. Die Umfrage ist nicht repräsentativ. Konzeption und Umsetzungsprüfung sind abgeschlossen; die Auswertung bleibt offen.
+
+Beleg: https://wirkungsoekonomie.de/umfragen/stadtvergleich-bundestagswahl-2025/
 
 ## Aufgaben und Arbeitsstände
 
@@ -86,21 +94,21 @@ Beleg: Projektauftrag der Inhaberin vom 06.09.2026.
 
 ### UMF-07 · Zweite Umfrage konzipieren und umsetzen
 - Arbeits-/Belegdatum: 2026-09-06
-- Status: In Arbeit
+- Status: Erledigt
 - Verantwortlich: Natalie Weber
 - Auftrag: Fragestellung, Zielgruppe, Antwortoptionen, Erläuterung und Ergebnisregeln für die zweite Umfrage ausarbeiten.
-- Ergebnis/Arbeitsstand: Laufende Umsetzung durch die Projektinhaberin bestätigt; Veröffentlichung noch offen.
+- Ergebnis/Arbeitsstand: Abgeschlossen am 06.09.2026: sieben illustrative Stadt- und Umlandszenarien, acht Antwortmöglichkeiten, schriftliche Erläuterungen, Quellenzuordnung und verständlicher Einstieg umgesetzt. Die geprüfte Fassung ist veröffentlicht.
 - Abnahmekriterium: Frage und Optionen sind verständlich, nicht suggestiv und vor Livegang geprüft.
-- Beleg: Projektauftrag vom 06.09.2026; Fertigstellung offen.
+- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/4090d95b338dd1ccb2738d0f0db39ff3d6ac38fa
 
 ### UMF-08 · Zweite Umfrage prüfen und freigeben
 - Arbeits-/Belegdatum: 2026-09-06
-- Status: Backlog
+- Status: Erledigt
 - Verantwortlich: Natalie Weber
 - Auftrag: Die konkrete zweite Umfrage nach Fertigstellung fachlich und technisch prüfen.
-- Ergebnis/Arbeitsstand: Offener Folgeschritt, abhängig von UMF-07.
+- Ergebnis/Arbeitsstand: Abgeschlossen am 06.09.2026: veröffentlichte Fassung geprüft und Abstimmung um 17:41:56 Uhr MESZ (15:41:56 UTC) aktiviert. Öffentliche Seite und aktiver Status bestätigt. Die Einordnung als illustrativ und nicht repräsentativ bleibt sichtbar.
 - Abnahmekriterium: Live-Link, Status, Mobilansicht, Ergebnisregeln und Datenschutz prüfen; reales Veröffentlichungsdatum erst danach eintragen.
-- Beleg: Projektauftrag vom 06.09.2026; Fertigstellung offen.
+- Beleg: https://wirkungsoekonomie.de/umfragen/stadtvergleich-bundestagswahl-2025/
 
 ### UMF-09 · Erste Umfrage auswerten und Rückkopplung dokumentieren
 - Arbeits-/Belegdatum: 2026-09-06
@@ -118,9 +126,24 @@ Beleg: Projektauftrag der Inhaberin vom 06.09.2026.
 - Institutsprojekt: https://institut.wirkungsoekonomie.de/projekte/umfragen
 - Projektwerkstatt mit Aufgaben: https://institut.wirkungsoekonomie.de/werkstatt/umfragen
 
+## Nachtrag: bestätigter Livegang am 06.09.2026
+
+Die Stadtumfrage „In welcher Stadt möchtest Du leben?“ ist seit dem 06.09.2026 um 17:41:56 Uhr MESZ (15:41:56 UTC) zur Abstimmung freigegeben. Sie zeigt sieben illustrative Stadt- und Umlandszenarien auf Grundlage ausgewählter Vorhaben aus den Bundestagswahlprogrammen 2025. Acht Antwortmöglichkeiten schließen „Keines dieser Szenarien“ ein. Die Bilder sind illustrative Modelle, keine berechneten Zukunftsprognosen und keine Wahlempfehlung. Die Umfrage ist nicht repräsentativ.
+
+Der zuvor dokumentierte pausierte Prüfstand bleibt als historischer Arbeitsstand erhalten. UMF-07 (Konzeption und Umsetzung) und UMF-08 (Prüfung und Freigabe) sind abgeschlossen. Die Auswertung und die nachvollziehbare Rückführung in Verbesserungen bleiben Aufgabe von Natalie Weber.
+
+Öffentliche Umfrage: https://wirkungsoekonomie.de/umfragen/stadtvergleich-bundestagswahl-2025/
+
+Geprüfte veröffentlichte Fassung: https://github.com/sustynats/wirkungsoekonomie.de/commit/4090d95b338dd1ccb2738d0f0db39ff3d6ac38fa
+
+Veröffentlichungsnachweis: https://github.com/sustynats/wirkungsoekonomie.de/actions/runs/34041952544
+
 ## Quellen und Ergebniszugänge
 
 - [Architektur, Betrieb und dokumentierte Live-Abnahme](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md)
 - [Erste Umfrage](https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/)
 - [Erstes vollständiges Pages-Release](https://github.com/sustynats/wirkungsoekonomie.de/commit/caa7701c0b15ea6985bc17f577d68728463b8980)
 - [Öffentlicher Umfragekatalog](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/content/polls/public-catalog.json)
+
+- [Stadtumfrage: In welcher Stadt möchtest Du leben?](https://wirkungsoekonomie.de/umfragen/stadtvergleich-bundestagswahl-2025/)
+- [Geprüfte Fassung der Stadtumfrage vom 06.09.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/4090d95b338dd1ccb2738d0f0db39ff3d6ac38fa)
