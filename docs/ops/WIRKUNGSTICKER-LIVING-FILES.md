@@ -53,6 +53,14 @@ anderer Zielort, nur ein gemeinsamer Name, eigener Angriff, wiederholter Besuch,
 fehlende Daten, Zeitfenster-Ketten, Erhalt von Versionen und Quellen sowie
 eigenständige sektorweite Schutzpolitik.
 
+Beim Release wurde zusätzlich ein Build-Abhängigkeitsfehler im schnellen
+Nachrichtenpfad behoben: Die gemeinsame PDF-Publikationsprüfung benötigt
+PyMuPDF, pypdf und reportlab auch bei `ticker_only`. Ihre Installation darf
+nicht vom Vollbuild abhängen. Der schnelle Release führt nun auch `news:test`
+aus; eine Regression prüft die Abhängigkeitsinstallation vor dem Artefaktbau.
+Es werden keine Qualitätsprüfungen übersprungen und keine neuen Hostingdienste
+verwendet.
+
 Der atomare Git-Publisher integriert zwischenzeitliche `main`-Änderungen vor jedem
 von höchstens drei Push-Versuchen erneut. Rebase-Konflikte bleiben ein Fehler;
 kein Force-Push und keine automatische Wahl einer Konfliktseite. So wird ein

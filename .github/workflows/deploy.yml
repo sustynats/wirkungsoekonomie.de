@@ -55,7 +55,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Python build dependencies
-        if: steps.release-mode.outputs.ticker_only != 'true'
+        # Shared artifact checks import PDF libraries on both release paths.
         run: python -m pip install --upgrade pip openpyxl pymupdf pypdf python-docx reportlab
       - name: Verify committed #253 Wirkungswissenschaften generator source
         if: steps.release-mode.outputs.ticker_only != 'true'
@@ -85,6 +85,7 @@ jobs:
       - name: Build ticker and search for fast update
         if: steps.release-mode.outputs.ticker_only == 'true'
         run: |
+          npm run news:test
           npm run polls:test
           npm run polls:build
           npm run news:build
