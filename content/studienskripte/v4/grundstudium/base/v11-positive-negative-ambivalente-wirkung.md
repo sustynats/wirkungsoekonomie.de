@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine Wirkung ist zunächst eine Zustandsänderung. Ob sie positiv oder negativ ist, hängt von einem expliziten Referenzrahmen ab. Dieselbe Maßnahme kann gleichzeitig positive und negative Pfade haben. „Neutral“ bedeutet nicht „wir wissen es nicht“ – dafür gibt es OPEN.
+Eine Wirkung ist zunächst eine Zustandsänderung. Ob sie positiv oder negativ ist, hängt von einem expliziten Referenzrahmen ab. Dieselbe Maßnahme kann gleichzeitig positive und negative Pfade haben. „Neutral“ bedeutet nicht „wir wissen es nicht“ - dafür gibt es OPEN.
 
 ## Lernziele
 
@@ -69,10 +69,10 @@ Wo Rechte oder harte Schutzgrenzen betroffen sind, ist arithmetische Verrechnung
 
 ## Typische Fehlinterpretationen
 
-- „OPEN = neutral.“ – Falsch.
-- „Hohe Evidenz = positive Wirkung.“ – Kategorienfehler.
-- „Ein positiver Nettoeffekt löscht Verteilungsverluste.“ – Nein.
-- „Ambivalent heißt unentschieden ohne Analyse.“ – Nein; es benennt konkret gegenläufige Pfade/Bedingungen.
+- „OPEN = neutral.“ - Falsch.
+- „Hohe Evidenz = positive Wirkung.“ - Kategorienfehler.
+- „Ein positiver Nettoeffekt löscht Verteilungsverluste.“ - Nein.
+- „Ambivalent heißt unentschieden ohne Analyse.“ - Nein; es benennt konkret gegenläufige Pfade/Bedingungen.
 
 ## WÖk-Abgrenzung
 

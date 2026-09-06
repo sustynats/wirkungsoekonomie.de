@@ -48,7 +48,7 @@ Diese Ebenen überlappen, sind aber nicht austauschbar.
 
 ## 3. Verteilung ist Teil des Befunds
 
-Ein positiver Durchschnitt kann einen Verlust einzelner Gruppen verdecken. Deshalb wird soweit materiell geprüft nach Einkommen, Alter/Generation, Region, Geschlecht oder anderen sachlich relevanten Expositionsmerkmalen – ohne Menschen in politische oder soziale Scores einzuteilen.
+Ein positiver Durchschnitt kann einen Verlust einzelner Gruppen verdecken. Deshalb wird soweit materiell geprüft nach Einkommen, Alter/Generation, Region, Geschlecht oder anderen sachlich relevanten Expositionsmerkmalen - ohne Menschen in politische oder soziale Scores einzuteilen.
 
 `GOOD_AVERAGE != GOOD_DISTRIBUTION`.
 
@@ -76,10 +76,10 @@ Wenn sich Gesundheit nach einer Maßnahme verbessert, reicht zeitliche Reihenfol
 
 ## Typische Fehlinterpretationen
 
-- „Mensch“ ist ein einheitlicher Score. – Nein.
-- Durchschnittlicher Nutzen bedeutet faire Wirkung. – Nein.
-- Ein sozialpolitisches Ziel beweist soziale Wirkung. – Nein.
-- Rechte können mit genügend positiven Punkten verrechnet werden. – Nein.
+- „Mensch“ ist ein einheitlicher Score. - Nein.
+- Durchschnittlicher Nutzen bedeutet faire Wirkung. - Nein.
+- Ein sozialpolitisches Ziel beweist soziale Wirkung. - Nein.
+- Rechte können mit genügend positiven Punkten verrechnet werden. - Nein.
 
 ## WÖk-Abgrenzung
 

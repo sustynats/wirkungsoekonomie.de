@@ -132,7 +132,7 @@ Darum ist `VERSION_DELTA` ein eigenes WÖk-Qualitätsfeld.
 
 Eine amtliche Arbeitshilfe zur gleichstellungsorientierten Gesetzesfolgenabschätzung ist als eigenes Modul in der E-Gesetzgebung vorgesehen.
 
-Sie führt zunächst durch eine Relevanzprüfung und danach – wenn nötig – eine vertiefte Prüfung unterschiedlicher Wirkungen auf Lebensbereiche und Personengruppen.
+Sie führt zunächst durch eine Relevanzprüfung und danach - wenn nötig - eine vertiefte Prüfung unterschiedlicher Wirkungen auf Lebensbereiche und Personengruppen.
 
 Das zeigt zwei Dinge:
 
@@ -216,13 +216,13 @@ Die Architektur kann deshalb technisch anschlussfähig gedacht werden: WÖk muss
 1. **E-Gesetzgebung / Cockpit**  
    https://plattform.egesetzgebung.bund.de/cockpit/
 
-2. **Bundeskanzleramt/BMJV – Empfehlungen zur Einbeziehung von Nachhaltigkeitszielen; eNAP als Teil der Plattform E-Gesetzgebung**  
+2. **Bundeskanzleramt/BMJV - Empfehlungen zur Einbeziehung von Nachhaltigkeitszielen; eNAP als Teil der Plattform E-Gesetzgebung**  
    https://plattform.egesetzgebung.bund.de/egesetzgebung-platform-backend/arbeitshilfen/download/37
 
-3. **BMBFSFJ – Arbeitshilfe gleichstellungsorientierte Gesetzesfolgenabschätzung; Einbettung in E-Gesetzgebung/eGFA**  
+3. **BMBFSFJ - Arbeitshilfe gleichstellungsorientierte Gesetzesfolgenabschätzung; Einbettung in E-Gesetzgebung/eGFA**  
    https://www.bmbfsfj.bund.de/resource/blob/186980/e5528c0b2ce90cdc9bc8aa54c6e198c2/arbeitshilfe-gleichstellungsorientierte-gesetzesfolgenabschaetzung-nach-2-ggo-data.pdf
 
-4. **Nationaler Normenkontrollrat – E-Gesetzgebung**  
+4. **Nationaler Normenkontrollrat - E-Gesetzgebung**  
    https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Pressemitteilungen/DE/2024/2024-10-16-e-gesetzgebung.html
 
 ### Quellenfunktion
@@ -260,7 +260,7 @@ Das wäre aber so, als würden wir bei einem Auto nur das Navigationsgerät erkl
 
 eNAP steckt heute in einem größeren digitalen Rechtsetzungsprozess.
 
-Die Plattform heißt E-Gesetzgebung. Und darin gibt es die elektronische Gesetzesfolgenabschätzung – eGFA.
+Die Plattform heißt E-Gesetzgebung. Und darin gibt es die elektronische Gesetzesfolgenabschätzung - eGFA.
 
 Die eGFA ist der Rahmen für verschiedene Prüfanforderungen. Nachhaltigkeit ist also ein wichtiger Baustein, aber nicht der einzige.
 
@@ -308,6 +308,6 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

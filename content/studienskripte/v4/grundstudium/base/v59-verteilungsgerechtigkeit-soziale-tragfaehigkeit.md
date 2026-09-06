@@ -8,11 +8,11 @@
 **migration_class:** `MATERIAL_REWRITE_REQUIRED`  
 **status:** `FACH_ENDCONTENT_REVIEWED`  
 **reviewed_at:** 2026-08-21  
-**change_reason:** v4.0 trennt empirische Verteilungsanalyse von normativer Gerechtigkeitsentscheidung. Soziale Tragfähigkeit wird als Kombination aus Belastungsverteilung, Zugang, Anpassungsfähigkeit, Verfahren und Rechten gelehrt – nicht als bloße Mehrheitsakzeptanz.
+**change_reason:** v4.0 trennt empirische Verteilungsanalyse von normativer Gerechtigkeitsentscheidung. Soziale Tragfähigkeit wird als Kombination aus Belastungsverteilung, Zugang, Anpassungsfähigkeit, Verfahren und Rechten gelehrt - nicht als bloße Mehrheitsakzeptanz.
 
 ## 20-Sekunden-Einstieg
 
-Eine Maßnahme kann insgesamt Nutzen erzeugen und trotzdem unfair verteilt sein. Deshalb braucht Wirkungsökonomie zwei Ebenen: **Wer gewinnt/verliert tatsächlich?** – das ist empirische Verteilungsanalyse. **Welche Verteilung ist gerecht oder politisch akzeptabel?** – das ist eine normative/demokratische Entscheidung innerhalb von Recht und Schutzgrenzen. WÖk darf beides nicht heimlich in einem Score vermischen.
+Eine Maßnahme kann insgesamt Nutzen erzeugen und trotzdem unfair verteilt sein. Deshalb braucht Wirkungsökonomie zwei Ebenen: **Wer gewinnt/verliert tatsächlich?** - das ist empirische Verteilungsanalyse. **Welche Verteilung ist gerecht oder politisch akzeptabel?** - das ist eine normative/demokratische Entscheidung innerhalb von Recht und Schutzgrenzen. WÖk darf beides nicht heimlich in einem Score vermischen.
 
 ## Lernziele
 
@@ -234,7 +234,7 @@ Das ist wichtig.
 
 Wenn einkommensarme Haushalte stärker belastet werden, ist das ein empirischer Befund.
 
-Wie wir darauf reagieren – Rückverteilung, Grundbedarfsschutz, Übergangsfristen – ist eine normative und politische Entscheidung innerhalb von Recht und Schutzgrenzen.
+Wie wir darauf reagieren - Rückverteilung, Grundbedarfsschutz, Übergangsfristen - ist eine normative und politische Entscheidung innerhalb von Recht und Schutzgrenzen.
 
 WÖk soll diese Entscheidung besser informieren, nicht verstecken.
 
@@ -246,7 +246,7 @@ Eine unpopuläre Maßnahme kann tragfähig sein, wenn Lasten fair verteilt, Alte
 
 Der Merksatz lautet:
 
-**Daten zeigen, wie Wirkung verteilt ist. Demokratie und Recht entscheiden, welche Verteilung wir als gerecht akzeptieren – und WÖk macht beides transparent.**
+**Daten zeigen, wie Wirkung verteilt ist. Demokratie und Recht entscheiden, welche Verteilung wir als gerecht akzeptieren - und WÖk macht beides transparent.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

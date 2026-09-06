@@ -18,7 +18,7 @@
 - positive und negative Potenziale beider Darstellungen vergleichen
 
 ## 20-Sekunden-Erklärung
-Jede Darstellung setzt einen Rahmen. Ein Reframe ist nur eine andere Auswahl – nicht automatisch die Wahrheit. Deshalb prüfen wir Originalframe und Reframe gegen Fakten, Auslassungen, Schutzgüter und mögliche Folgen.
+Jede Darstellung setzt einen Rahmen. Ein Reframe ist nur eine andere Auswahl - nicht automatisch die Wahrheit. Deshalb prüfen wir Originalframe und Reframe gegen Fakten, Auslassungen, Schutzgüter und mögliche Folgen.
 
 ## Einfache Einführung
 „Framing“ ist kein Synonym für Manipulation. Schon die Entscheidung, welche Zahl in der Überschrift steht, rahmt eine Geschichte. Qualität entsteht durch Transparenz, Quellen und faire Kontextualisierung.
@@ -67,7 +67,7 @@ Frame/Reframe, Auslassung, Faktenbasis, Potenzial vs. Wirkung.
 Reframing ist eine redaktionelle Option, kein Wahrheitsstempel.
 
 ## Sprechertext
-Ein Reframe ist nicht automatisch ehrlicher. Er kann klären – oder nur anders verzerren. Darum behandeln wir beide Seiten gleich: Was ist belegt? Was wird betont? Was fehlt? Und welche möglichen Folgen hat diese Auswahl?
+Ein Reframe ist nicht automatisch ehrlicher. Er kann klären - oder nur anders verzerren. Darum behandeln wir beide Seiten gleich: Was ist belegt? Was wird betont? Was fehlt? Und welche möglichen Folgen hat diese Auswahl?
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst nach Legacy-Reaudit B06; Medien-/Moderationsentscheidungen werden als evidenzgebundene Interventionen ohne Personen-/Intent-Score behandelt.
@@ -93,7 +93,7 @@ Der Optionsvergleich beginnt mit dem Informationsbedarf des Publikums. Welche En
 
 Eine fiktive Region muss ihr Busangebot überprüfen. Variante A heißt „Busse zu teuer“. Variante B heißt „Wie bleiben Orte bei knappen Mitteln erreichbar?“ A richtet Aufmerksamkeit auf Kosten und kann die Frage nach Alternativen verengen. B öffnet einen Vergleich von Versorgung und Ressourcen, beantwortet ihn aber noch nicht. Beide Titel müssen am Inhalt gemessen werden: Enthält der Beitrag tatsächlich Kosten, betroffene Verbindungen, Erreichbarkeit und realistische Optionen?
 
-Eine dritte Variante könnte lauten: „Welche Buslinien entfallen sollen – und welche Alternativen geprüft werden“. Sie ist konkret und verspricht überprüfbare Information. Ihre Stärke ist keine garantierte positive Wirkung. Wenn die angekündigten Alternativen im Beitrag nur beiläufig erwähnt werden, entsteht ein Widerspruch zwischen Titel und Inhalt.
+Eine dritte Variante könnte lauten: „Welche Buslinien entfallen sollen - und welche Alternativen geprüft werden“. Sie ist konkret und verspricht überprüfbare Information. Ihre Stärke ist keine garantierte positive Wirkung. Wenn die angekündigten Alternativen im Beitrag nur beiläufig erwähnt werden, entsteht ein Widerspruch zwischen Titel und Inhalt.
 
 Für die Prüfung werden zwei Varianten mit gleichbleibender Tatsachenbasis ausgearbeitet. Die Redaktion markiert, welche Informationen jeweils in den ersten Absatz gelangen und welche erst später erscheinen. Danach prüft sie, ob ein Leser die vorliegenden Optionen korrekt wiedergeben kann. Eine höhere Zustimmung zur bevorzugten Redaktionsthese wäre dagegen ein ungeeignetes alleiniges Erfolgskriterium.
 

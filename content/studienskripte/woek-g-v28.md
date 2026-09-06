@@ -5,9 +5,7 @@
 **Vorlesungscode:** V28  
 **Modul/Abschnitt:** G3.2  
 **Titel:** CSRD, ESRS, GRI, EU-Taxonomie, NACE und DPP  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v28-csrd-esrs-gri-eu-taxonomie-nace-dpp.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v28.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v28.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **CSRD, ESRS, GRI, EU-Taxonomie, NACE und DPP** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V27 „Kernfelder, Wirkungsgrenzen und rote Linien"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Viele Daten, die die WÖk braucht, entstehen nicht bei null. CSRD, ESRS, GRI, EU
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Vom Reporting zur Wirkung – vorhandene Rahmen richtig nutzen
+- **Titel:** Vom Reporting zur Wirkung - vorhandene Rahmen richtig nutzen
 - **Länge:** ~16 Min
 - **Kernaussage in einem Satz:** Bestehende Reporting- und Klassifikationsrahmen liefern Datenbausteine, aber die WÖk übersetzt sie erst durch Wirkungslogik in Bewertung und Steuerung.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Warum Rahmenwerke wichtig sind.** Sie schaffen Vergleichbarkeit, Datenpflichten und Anschlussfähigkeit.
+**Abschnitt A - Warum Rahmenwerke wichtig sind.** Sie schaffen Vergleichbarkeit, Datenpflichten und Anschlussfähigkeit.
 
-**Abschnitt B – CSRD/ESRS/GRI.** Diese Rahmen strukturieren Nachhaltigkeitsberichterstattung und doppelte Wesentlichkeit.
+**Abschnitt B - CSRD/ESRS/GRI.** Diese Rahmen strukturieren Nachhaltigkeitsberichterstattung und doppelte Wesentlichkeit.
 
-**Abschnitt C – EU-Taxonomie und NACE.** Taxonomie ordnet nachhaltige Wirtschaftstätigkeiten; NACE klassifiziert Branchen.
+**Abschnitt C - EU-Taxonomie und NACE.** Taxonomie ordnet nachhaltige Wirtschaftstätigkeiten; NACE klassifiziert Branchen.
 
-**Abschnitt D – Digitaler Produktpass.** DPP kann produktbezogene Daten über Lebenszyklus und Lieferkette bündeln.
+**Abschnitt D - Digitaler Produktpass.** DPP kann produktbezogene Daten über Lebenszyklus und Lieferkette bündeln.
 
-**Abschnitt E – WÖk-Übersetzung.** Reportingdaten werden erst durch Wirkpfad, Scorecard, Datenqualität und Nichtkompensation steuerungsfähig.
+**Abschnitt E - WÖk-Übersetzung.** Reportingdaten werden erst durch Wirkpfad, Scorecard, Datenqualität und Nichtkompensation steuerungsfähig.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -128,7 +124,6 @@ Wähle eine Branche. Notiere, welche Daten aus CSRD/ESRS/GRI oder DPP für eine 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -250,12 +245,11 @@ Die folgende Runde verdichtet V28 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V28. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Daten, Produktpässe, Wirkungsmessung
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Daten, Produktpässe, Wirkungsmessung
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/csrd`, `begriffe/esrs`, `begriffe/eu-taxonomie`, `begriffe/digitaler-produktpass`
 
@@ -348,7 +342,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 3
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -841,8 +834,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v28-csrd-esrs-gri-eu-taxonomie-nace-dpp.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

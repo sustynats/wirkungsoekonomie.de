@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V3  
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungsziele und Wirkungslogik in Organisationen  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v3-wirkungsziele-wirkungslogik.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v3.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v3.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungsziele und Wirkungslogik in Organisationen** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,43 +44,43 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-„Wir wollen nachhaltiger werden" ist kein Wirkungsziel – es ist ein Wunsch. **Wie wird aus einem Wunsch ein prüfbares Wirkungsziel mit nachvollziehbarer Logik?**
+„Wir wollen nachhaltiger werden" ist kein Wirkungsziel - es ist ein Wunsch. **Wie wird aus einem Wunsch ein prüfbares Wirkungsziel mit nachvollziehbarer Logik?**
 
 ## 2. Video-/Audio-Vorlesung
 
 - **Titel:** Von der Absicht zum prüfbaren Wirkungsziel
 - **Länge:** ~15 Min
-- **Kernaussage in einem Satz:** Ein Wirkungsziel benennt eine angestrebte, am Referenzrahmen bewertbare Veränderung bei konkreten Wirkungsempfängern – verbunden durch eine explizite Wirkungslogik.
+- **Kernaussage in einem Satz:** Ein Wirkungsziel benennt eine angestrebte, am Referenzrahmen bewertbare Veränderung bei konkreten Wirkungsempfängern - verbunden durch eine explizite Wirkungslogik.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Was ein Wirkungsziel ausmacht.** Ein gutes Wirkungsziel benennt: welche Veränderung, bei welchem Wirkungsempfänger, in welchem Wirkungsraum, gemessen woran, bezogen auf den Referenzrahmen (SDGs/SDG+).
+**Abschnitt A - Was ein Wirkungsziel ausmacht.** Ein gutes Wirkungsziel benennt: welche Veränderung, bei welchem Wirkungsempfänger, in welchem Wirkungsraum, gemessen woran, bezogen auf den Referenzrahmen (SDGs/SDG+).
 
-**Abschnitt B – Wirkungslogik.** Die Wirkungslogik verbindet Ressourcen/Aktivitäten über Wirkmechanismen mit der Zielveränderung – und macht Annahmen explizit. Sie ähnelt einer Theory of Change, bleibt aber an die WÖk-Begriffe gebunden (Wirkungspotenzial ≠ Wirkung).
+**Abschnitt B - Wirkungslogik.** Die Wirkungslogik verbindet Ressourcen/Aktivitäten über Wirkmechanismen mit der Zielveränderung - und macht Annahmen explizit. Sie ähnelt einer Theory of Change, bleibt aber an die WÖk-Begriffe gebunden (Wirkungspotenzial ≠ Wirkung).
 
-**Abschnitt C – Zielhierarchie.** Von Organisationsleitbild über Wirkungsziele bis zu operativen Maßnahmen. Wichtig: Ziele nicht auf Reichweite/Aktivität verkürzen.
+**Abschnitt C - Zielhierarchie.** Von Organisationsleitbild über Wirkungsziele bis zu operativen Maßnahmen. Wichtig: Ziele nicht auf Reichweite/Aktivität verkürzen.
 
-**Abschnitt D – Ehrlichkeit der Annahmen.** Jede Wirkungslogik enthält Annahmen, die falsch sein können. Sie zu benennen ist Voraussetzung für Rückkopplung und Verbesserung.
+**Abschnitt D - Ehrlichkeit der Annahmen.** Jede Wirkungslogik enthält Annahmen, die falsch sein können. Sie zu benennen ist Voraussetzung für Rückkopplung und Verbesserung.
 
-**Abschnitt E – Anschluss.** Aus Wirkungszielen und -logik folgt die Priorisierung (V4) und die Analyse von Potenzialen/Risiken (V5).
+**Abschnitt E - Anschluss.** Aus Wirkungszielen und -logik folgt die Priorisierung (V4) und die Analyse von Potenzialen/Risiken (V5).
 
 ## 4. Skript / Folien (Lernseite)
 
-**Ein Wirkungsziel ist eine angestrebte, bewertbare Veränderung.** Es beschreibt nicht die Aktivität („wir schulen 100 Personen"), sondern die angestrebte **Veränderung beim Wirkungsempfänger** („X verbessert sich bei Y") – bezogen auf den Referenzrahmen (Grundlagen V3). Reichweite/Aktivität ist ausdrücklich **kein** Wirkungsziel.
+**Ein Wirkungsziel ist eine angestrebte, bewertbare Veränderung.** Es beschreibt nicht die Aktivität („wir schulen 100 Personen"), sondern die angestrebte **Veränderung beim Wirkungsempfänger** („X verbessert sich bei Y") - bezogen auf den Referenzrahmen (Grundlagen V3). Reichweite/Aktivität ist ausdrücklich **kein** Wirkungsziel.
 
-**Die Wirkungslogik macht den Weg explizit.** Sie verbindet: *Ressourcen/Aktivitäten → Wirkmechanismus → angestrebte Veränderung (Wirkungsziel)* – und benennt die **Annahmen**, unter denen dieser Weg trägt. Damit ist sie prüfbar und rückkopplungsfähig. Anschluss an bekannte Modelle (Theory of Change, Logikmodell) ist bewusst; die WÖk hält aber die Begriffe sauber: Was nur möglich ist, ist Wirkungspotenzial, nicht Wirkung.
+**Die Wirkungslogik macht den Weg explizit.** Sie verbindet: *Ressourcen/Aktivitäten → Wirkmechanismus → angestrebte Veränderung (Wirkungsziel)* - und benennt die **Annahmen**, unter denen dieser Weg trägt. Damit ist sie prüfbar und rückkopplungsfähig. Anschluss an bekannte Modelle (Theory of Change, Logikmodell) ist bewusst; die WÖk hält aber die Begriffe sauber: Was nur möglich ist, ist Wirkungspotenzial, nicht Wirkung.
 
 **Zielhierarchie ohne Verkürzung.** Vom Leitbild über Wirkungsziele bis zu Maßnahmen sollte die Kette durchgängig sein. Der häufigste Fehler: Aktivitätsziele (Reichweite, Outputs) als Wirkungsziele auszugeben. Wirkungsmanagement hält die Unterscheidung durch.
 
-**Annahmen sind der Hebel fürs Lernen.** Weil jede Wirkungslogik auf Annahmen beruht, ist ihre transparente Benennung entscheidend: Nur so lässt sich später über Rückkopplung (Grundlagen V5) erkennen, ob die Logik trägt – und gegensteuern.
+**Annahmen sind der Hebel fürs Lernen.** Weil jede Wirkungslogik auf Annahmen beruht, ist ihre transparente Benennung entscheidend: Nur so lässt sich später über Rückkopplung (Grundlagen V5) erkennen, ob die Logik trägt - und gegensteuern.
 
 ## 5. Glossar der Kernbegriffe
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsziel | angestrebte, am Referenzrahmen bewertbare Veränderung beim Empfänger | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkungslogik | explizite Verbindung von Aktivität, Mechanismus, Zielveränderung und Annahmen | _(noch keine Seite – ggf. anlegen)_ |
+| Wirkungsziel | angestrebte, am Referenzrahmen bewertbare Veränderung beim Empfänger | _(noch keine Seite - ggf. anlegen)_ |
+| Wirkungslogik | explizite Verbindung von Aktivität, Mechanismus, Zielveränderung und Annahmen | _(noch keine Seite - ggf. anlegen)_ |
 | Wirkmechanismus | wie Wirkung entstehen soll oder kann | `begriffe/wirkmechanismus` |
 | Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
 | Wirkungsempfänger | diejenigen, bei denen Veränderung eintritt | `begriffe/wirkungsempfaenger` |
@@ -120,12 +117,11 @@ Formuliere ein **Wirkungsziel** für deine Organisation nach dem Muster „[Ver�
 
 ## 8. Praxisbeispiel
 
-**Vom Output zum Wirkungsziel.** Ein Bildungsanbieter setzt sich zunächst „10.000 Kursteilnahmen" (Output). Als Wirkungsziel formuliert: „messbar höhere Wirkungskompetenz bei Entscheider:innen in Organisationen" – mit expliziter Logik und Annahme (Transfer in die Praxis gelingt nur bei Führungsunterstützung). Erst so wird Steuerung möglich.
+**Vom Output zum Wirkungsziel.** Ein Bildungsanbieter setzt sich zunächst „10.000 Kursteilnahmen" (Output). Als Wirkungsziel formuliert: „messbar höhere Wirkungskompetenz bei Entscheider:innen in Organisationen" - mit expliziter Logik und Annahme (Transfer in die Praxis gelingt nur bei Führungsunterstützung). Erst so wird Steuerung möglich.
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -295,12 +291,11 @@ Die folgende Runde verdichtet WM-V3 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V3. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5/§6
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §5/§6
 - `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md`
 - Glossar: `begriffe/wirkmechanismus`, `begriffe/wirkungsempfaenger`
 
@@ -386,15 +381,14 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wirkungsziel | angestrebte, am Referenzrahmen bewertbare Veränderung beim Empfänger | _(noch keine Seite – ggf. anlegen)_ |
-| Wirkungslogik | explizite Verbindung von Aktivität, Mechanismus, Zielveränderung und Annahmen | _(noch keine Seite – ggf. anlegen)_ |
+| Wirkungsziel | angestrebte, am Referenzrahmen bewertbare Veränderung beim Empfänger | _(noch keine Seite - ggf. anlegen)_ |
+| Wirkungslogik | explizite Verbindung von Aktivität, Mechanismus, Zielveränderung und Annahmen | _(noch keine Seite - ggf. anlegen)_ |
 | Wirkmechanismus | wie Wirkung entstehen soll oder kann | `begriffe/wirkmechanismus` |
 | Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
 | Wirkungsempfänger | diejenigen, bei denen Veränderung eintritt | `begriffe/wirkungsempfaenger` |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -800,8 +794,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v3-wirkungsziele-wirkungslogik.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

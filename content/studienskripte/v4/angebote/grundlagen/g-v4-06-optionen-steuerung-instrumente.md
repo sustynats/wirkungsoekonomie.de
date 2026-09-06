@@ -94,7 +94,7 @@ Policy Coherence fragt, ob Maßnahmen, Ressorts und Ebenen in dieselbe Richtung 
 ## 6. Instrumente korrekt einordnen
 
 ### Scorecard
-Ein strukturiertes Wirkungsprofil – kein Empfehlungsautomat.
+Ein strukturiertes Wirkungsprofil - kein Empfehlungsautomat.
 
 ### WÖk-ID / Register
 WÖk-eigene Ordnungs- und Mappinginstrumente. Eine ID macht einen Wert nicht wahr.
@@ -142,11 +142,11 @@ Eine Scorecard kann Wirkungen strukturieren. Die Entscheidung muss zusätzlich F
 
 ## Typische Fehlinterpretationen
 
-- „Der höchste Score ist automatisch die beste Option.“ – Falsch.
-- „Ein WÖk-ID-Eintrag beweist Wirkung.“ – Falsch.
-- „Das Wirkungssteuergesetz gilt bereits.“ – Falsch; WÖk-Modell/Entwurf.
-- „Keine robuste Präferenz = schlechte Analyse.“ – Falsch.
-- „Delivery ist nur Projektmanagement und hat mit Wirkung nichts zu tun.“ – Falsch; ohne Umsetzung kein Outcome.
+- „Der höchste Score ist automatisch die beste Option.“ - Falsch.
+- „Ein WÖk-ID-Eintrag beweist Wirkung.“ - Falsch.
+- „Das Wirkungssteuergesetz gilt bereits.“ - Falsch; WÖk-Modell/Entwurf.
+- „Keine robuste Präferenz = schlechte Analyse.“ - Falsch.
+- „Delivery ist nur Projektmanagement und hat mit Wirkung nichts zu tun.“ - Falsch; ohne Umsetzung kein Outcome.
 
 ## WÖk-Abgrenzung
 
@@ -207,6 +207,6 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

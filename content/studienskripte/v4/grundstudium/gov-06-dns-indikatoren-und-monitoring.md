@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Destatis weist aktuell **82 Indikatoren der Deutschen Nachhaltigkeitsstrategie** aus. Sie zeigen, wie sich ausgewählte Zustände entwickeln und ob Deutschland politischen Zielwerten näherkommt. Das ist wertvoll – aber ein Indikator ist keine Wirkung und ein Trend ist kein Beweis für die Wirkung einer konkreten Maßnahme. WÖk ordnet amtliche Indikatoren deshalb mit einer expliziten Datenfunktion in eine Kausal- und Lernarchitektur ein.
+Destatis weist aktuell **82 Indikatoren der Deutschen Nachhaltigkeitsstrategie** aus. Sie zeigen, wie sich ausgewählte Zustände entwickeln und ob Deutschland politischen Zielwerten näherkommt. Das ist wertvoll - aber ein Indikator ist keine Wirkung und ein Trend ist kein Beweis für die Wirkung einer konkreten Maßnahme. WÖk ordnet amtliche Indikatoren deshalb mit einer expliziten Datenfunktion in eine Kausal- und Lernarchitektur ein.
 
 ## Lernziele
 
@@ -128,7 +128,7 @@ Die saubere Reihenfolge lautet:
 `-> Reality Check`
 `-> Revision`
 
-Dazu kommen Wirkungen 1.–3. Ordnung, Kaskaden, Verteilung, Resilienz, Rebound, Spillover, Delivery, Policy Coherence und Schutzgrenzen.
+Dazu kommen Wirkungen 1.-3. Ordnung, Kaskaden, Verteilung, Resilienz, Rebound, Spillover, Delivery, Policy Coherence und Schutzgrenzen.
 
 ## 8. Trendbewertung ist nicht Maßnahmenbewertung
 
@@ -178,27 +178,27 @@ Deshalb dokumentiert WÖk Definition, Einheit, Quelle, Aktualität, Zeitreihe, r
 
 ## 11. Typische Fehlinterpretationen
 
-**„82 DNS-Indikatoren bedeuten 82 Wirkungen.“** – Falsch. Es sind Beobachtungsgrößen.
+**„82 DNS-Indikatoren bedeuten 82 Wirkungen.“** - Falsch. Es sind Beobachtungsgrößen.
 
-**„Ein positiver Trend beweist Regierungserfolg.“** – Falsch. Ein Trend ist noch keine Attribution.
+**„Ein positiver Trend beweist Regierungserfolg.“** - Falsch. Ein Trend ist noch keine Attribution.
 
-**„Baseline = Counterfactual.“** – Falsch. Das Gegenfaktum ist eine Schätzung des Verlaufs ohne Intervention.
+**„Baseline = Counterfactual.“** - Falsch. Das Gegenfaktum ist eine Schätzung des Verlaufs ohne Intervention.
 
-**„Output = Outcome.“** – Falsch. Aktivität ist nicht automatisch Zustandsänderung.
+**„Output = Outcome.“** - Falsch. Aktivität ist nicht automatisch Zustandsänderung.
 
-**„Wenn ein Indikator im DNS-Set steht, passt er automatisch zu jedem WÖk-Fall.“** – Falsch. Relevanz hängt von StateVariable, Mechanismus und Datenfunktion ab.
+**„Wenn ein Indikator im DNS-Set steht, passt er automatisch zu jedem WÖk-Fall.“** - Falsch. Relevanz hängt von StateVariable, Mechanismus und Datenfunktion ab.
 
 ## 12. WÖk-Abgrenzung
 
-WÖk ersetzt amtliche Statistik nicht. Der Zusatz ist die Einordnung vorhandener Daten in eine explizite Problem-, Ziel-, Kausal-, Options-, Attributions- und Lernarchitektur. Amtliche DNS-Daten können dabei sehr wertvoll sein – aber ihre Funktion muss für jeden Fall benannt werden.
+WÖk ersetzt amtliche Statistik nicht. Der Zusatz ist die Einordnung vorhandener Daten in eine explizite Problem-, Ziel-, Kausal-, Options-, Attributions- und Lernarchitektur. Amtliche DNS-Daten können dabei sehr wertvoll sein - aber ihre Funktion muss für jeden Fall benannt werden.
 
 ## 13. Primärquellen und Provenienz
 
-1. **Statistisches Bundesamt – Nachhaltigkeitsindikatoren**  
+1. **Statistisches Bundesamt - Nachhaltigkeitsindikatoren**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html
-2. **Statistisches Bundesamt – Deutsche Nachhaltigkeitsstrategie / Monitoring**  
+2. **Statistisches Bundesamt - Deutsche Nachhaltigkeitsstrategie / Monitoring**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/_inhalt.html
-3. **Bundesregierung – Steuerung der Deutschen Nachhaltigkeitsstrategie**  
+3. **Bundesregierung - Steuerung der Deutschen Nachhaltigkeitsstrategie**  
    https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776
 
 **Quellenfunktion:** Destatis = `PRIMARY_STATISTICAL_SOURCE`; Bundesregierung = `GOVERNANCE/TARGET_CONTEXT`. Keine Quelle erhält automatisch `ATTRIBUTION_PROOF`.
@@ -233,7 +233,7 @@ Deshalb trennen wir in der WÖk sehr sauber: Was betrachten wir? Welcher Zustand
 
 Ein weiterer häufiger Fehler ist Baseline gleich Gegenfaktum. Die Baseline ist der beobachtete Ausgangspunkt. Das Gegenfaktum ist die geschätzte Entwicklung ohne Intervention. Wenn sich ein Trend ohnehin verändert hätte, reicht der Vorher-Wert nicht.
 
-Genau hier ist die DNS sehr wertvoll. Sie liefert Ziele, Indikatoren und amtliches Monitoring. Die WÖk ersetzt das nicht. Sie ergänzt die Frage: Welche Datenfunktion hat dieser Indikator im konkreten Fall – Baseline, Target, Outcome, Kontext, Verteilung, Reality Check oder Input für das Gegenfaktum? Und was fehlt noch, bevor wir eine Kausalbehauptung machen dürfen?
+Genau hier ist die DNS sehr wertvoll. Sie liefert Ziele, Indikatoren und amtliches Monitoring. Die WÖk ersetzt das nicht. Sie ergänzt die Frage: Welche Datenfunktion hat dieser Indikator im konkreten Fall - Baseline, Target, Outcome, Kontext, Verteilung, Reality Check oder Input für das Gegenfaktum? Und was fehlt noch, bevor wir eine Kausalbehauptung machen dürfen?
 
 So wird aus einer Zahl keine vorschnelle Wirkungsgeschichte, sondern eine überprüfbare Lernarchitektur.
 
@@ -249,6 +249,6 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

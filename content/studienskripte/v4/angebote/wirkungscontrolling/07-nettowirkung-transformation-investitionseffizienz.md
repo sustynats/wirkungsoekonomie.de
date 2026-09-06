@@ -5,7 +5,7 @@
 **offering_id:** `WOEK-WB-WC`  
 **curriculum_version:** `4.0`  
 **status:** `FACH_ENDCONTENT_REVIEWED`  
-**subtitle:** SROI fair einordnen – WÖk-Instrumente transparent begrenzen  
+**subtitle:** SROI fair einordnen - WÖk-Instrumente transparent begrenzen  
 **legacy_source:** `content/lehrgaenge/wirkungscontrolling-wc-v7.md`  
 **migration_class:** `REWRITE_REQUIRED`  
 **reviewed_at:** 2026-08-21

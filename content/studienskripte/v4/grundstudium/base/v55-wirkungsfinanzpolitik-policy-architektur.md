@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v55-wirkungsfinanzpolitik-policy-architektur.md curriculum=4.0 sanitized=true -->
-# V55 · Wirkungsfinanzpolitik – Haushalt, Fiskalregeln und Outcome gemeinsam denken
+# V55 · Wirkungsfinanzpolitik - Haushalt, Fiskalregeln und Outcome gemeinsam denken
 
 **lecture_id:** `WOEK-G-BASE-055`  
 **display_code:** `V55`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Staatliche Ausgaben sind nicht automatisch gut, weil ihr Ziel gut klingt – und Sparen ist nicht automatisch solide, wenn dadurch teure Schäden oder Infrastrukturverfall entstehen. **Wirkungsfinanzpolitik** fragt deshalb: Welche realen Zustände verändern Einnahmen, Ausgaben, Garantien und Investitionen – und wie tragfähig ist die Finanzierung? Sie ersetzt Haushaltsrecht und Fiskalregeln nicht. Sie ergänzt sie um Problem, Outcome, Präventionswert, Verteilung und langfristige Resilienz.
+Staatliche Ausgaben sind nicht automatisch gut, weil ihr Ziel gut klingt - und Sparen ist nicht automatisch solide, wenn dadurch teure Schäden oder Infrastrukturverfall entstehen. **Wirkungsfinanzpolitik** fragt deshalb: Welche realen Zustände verändern Einnahmen, Ausgaben, Garantien und Investitionen - und wie tragfähig ist die Finanzierung? Sie ersetzt Haushaltsrecht und Fiskalregeln nicht. Sie ergänzt sie um Problem, Outcome, Präventionswert, Verteilung und langfristige Resilienz.
 
 ## Lernziele
 
@@ -73,7 +73,7 @@ WÖk bewertet Zustandsänderung und Lebenszyklus, nicht nur Buchungskategorie.
 
 ## 5. Opportunitätskosten
 
-Öffentliche Ressourcen sind knapp – nicht nur Geld:
+Öffentliche Ressourcen sind knapp - nicht nur Geld:
 
 - Fachkräfte,
 - Baukapazität,
@@ -153,7 +153,7 @@ Prüfen:
 - Finanzierung,
 - Restwert.
 
-Kurzfristig niedrigste Ausgabe kann langfristig teuer sein – aber das muss belegt werden.
+Kurzfristig niedrigste Ausgabe kann langfristig teuer sein - aber das muss belegt werden.
 
 ## 10. Fiskalische Wirkungsakte
 
@@ -246,7 +246,7 @@ Wirkungsfinanzpolitik verbindet deshalb Haushalt und Realität.
 
 Der Merksatz lautet:
 
-**Nicht wenig oder viel Geld ist der Maßstab. Der Maßstab ist, welche realen Zustände wir mit knappen Ressourcen dauerhaft verbessern – und welche Risiken wir dafür eingehen.**
+**Nicht wenig oder viel Geld ist der Maßstab. Der Maßstab ist, welche realen Zustände wir mit knappen Ressourcen dauerhaft verbessern - und welche Risiken wir dafür eingehen.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
@@ -260,9 +260,9 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
 
 ### Drei Arten der Erfolgskontrolle
 

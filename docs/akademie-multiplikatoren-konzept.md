@@ -39,9 +39,9 @@ Wirkungsmanagement/Impact-Controlling) und das Glossar an - Modul 5 z. B. an
 
 ## Rollen / Zertifizierungsstufen (Vorschlag)
 
-- **WÖk-Multiplikator:in** - Grundzertifikat (Module 1–4 + Prüfung): darf die
+- **WÖk-Multiplikator:in** - Grundzertifikat (Module 1-4 + Prüfung): darf die
   Wirkungsökonomie erklären und in Bildungs-/Beratungskontexten einsetzen.
-- **WÖk-Trainer:in / Coach** - Aufbaustufe (Module 5–9 + Lehrprobe): darf Schulungen
+- **WÖk-Trainer:in / Coach** - Aufbaustufe (Module 5-9 + Lehrprobe): darf Schulungen
   und Workshops im Namen der Methode geben.
 - **Wissenschaftliche:r / Fachpartner:in** - für Einordnung, Fachgespräche und
   Medienformate als autorisierte:r Ansprechpartner:in (Bezug zum Wirkungsinstitut).

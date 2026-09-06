@@ -1,4 +1,4 @@
-# Wahlkreis-Wirkungscheck — „Warum wird mir das vorgeschlagen?"
+# Wahlkreis-Wirkungscheck - „Warum wird mir das vorgeschlagen?"
 
 Version 1.0 · Stand 2026-08-13 · Lane: Claude (Design/UX) · Umsetzung: Codex
 
@@ -33,7 +33,7 @@ Drei Zusagen, die das Interface einlösen muss:
 | 2 · Herleitungs-Drawer | Overlay | sechs Abschnitte | Button „Warum wird mir das vorgeschlagen?" |
 | 3 · Pfad-Detailseite | eigene Route | vollständig, zitierbar, druckbar | „Wirkungspfad ansehen" oder Link im Drawer |
 
-### Ebene 1 — die Bezugszeile
+### Ebene 1 - die Bezugszeile
 
 Auf jeder Empfehlungskarte, direkt unter der Kurzbeschreibung:
 

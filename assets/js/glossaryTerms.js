@@ -748,11 +748,11 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "amartya-sen",
-    "label": "Amartya Sen / Martha Nussbaum – Fähigkeitenansatz",
+    "label": "Amartya Sen / Martha Nussbaum - Fähigkeitenansatz",
     "aliases": [
-      "Amartya Sen / Martha Nussbaum – Fähigkeitenansatz",
+      "Amartya Sen / Martha Nussbaum - Fähigkeitenansatz",
       "Amartya Sen",
-      "Martha Nussbaum – Fähigkeitenansatz"
+      "Martha Nussbaum - Fähigkeitenansatz"
     ],
     "definition": "Der Fähigkeitenansatz fragt danach, welche realen Möglichkeiten Menschen haben, ein gutes, würdiges und selbstbestimmtes Leben zu führen.",
     "url": "/begriffe/amartya-sen/",
@@ -1372,9 +1372,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "art-2-euv-werte-der-europaeischen-union",
-    "label": "Art. 2 EUV – Werte der Europäischen Union",
+    "label": "Art. 2 EUV - Werte der Europäischen Union",
     "aliases": [
-      "Art. 2 EUV – Werte der Europäischen Union"
+      "Art. 2 EUV - Werte der Europäischen Union"
     ],
     "definition": "Art. 2 EUV benennt die Werte der Union: Menschenwürde, Freiheit, Demokratie, Gleichheit, Rechtsstaatlichkeit und Menschenrechte sowie Pluralismus, Nichtdiskriminierung, Toleranz, Gerechtigkeit, Solidarität und Gleichheit.",
     "url": "/begriffe/art-2-euv-werte-der-europaeischen-union/",
@@ -1393,9 +1393,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "art-3-euv-nachhaltige-entwicklung-europas",
-    "label": "Art. 3 EUV – nachhaltige Entwicklung Europas",
+    "label": "Art. 3 EUV - nachhaltige Entwicklung Europas",
     "aliases": [
-      "Art. 3 EUV – nachhaltige Entwicklung Europas"
+      "Art. 3 EUV - nachhaltige Entwicklung Europas"
     ],
     "definition": "Art. 3 EUV verbindet Binnenmarkt, nachhaltige Entwicklung, soziale Marktwirtschaft, sozialen Fortschritt, hohen Umweltschutz, wissenschaftlich-technischen Fortschritt, Gleichstellung und Solidarität zwischen Generationen.",
     "url": "/begriffe/art-3-euv-nachhaltige-entwicklung-europas/",
@@ -1414,9 +1414,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "art-11-aeuv-umweltintegrationsprinzip",
-    "label": "Art. 11 AEUV – Umweltintegrationsprinzip",
+    "label": "Art. 11 AEUV - Umweltintegrationsprinzip",
     "aliases": [
-      "Art. 11 AEUV – Umweltintegrationsprinzip"
+      "Art. 11 AEUV - Umweltintegrationsprinzip"
     ],
     "definition": "Art. 11 AEUV verlangt, dass Umweltschutzanforderungen in die Festlegung und Durchführung der Unionspolitiken und -maßnahmen einbezogen werden, insbesondere zur Förderung nachhaltiger Entwicklung.",
     "url": "/begriffe/art-11-aeuv-umweltintegrationsprinzip/",
@@ -1456,9 +1456,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "art-37-eu-grundrechtecharta-umweltschutz",
-    "label": "Art. 37 EU-Grundrechtecharta – Umweltschutz",
+    "label": "Art. 37 EU-Grundrechtecharta - Umweltschutz",
     "aliases": [
-      "Art. 37 EU-Grundrechtecharta – Umweltschutz"
+      "Art. 37 EU-Grundrechtecharta - Umweltschutz"
     ],
     "definition": "Art. 37 der EU-Grundrechtecharta verlangt ein hohes Umweltschutzniveau und die Verbesserung der Umweltqualität in den Politiken der Union nach dem Grundsatz nachhaltiger Entwicklung.",
     "url": "/begriffe/art-37-eu-grundrechtecharta-umweltschutz/",
@@ -1477,9 +1477,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip",
-    "label": "Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip",
+    "label": "Art. 191 AEUV - Vorsorge-, Präventions- und Verursacherprinzip",
     "aliases": [
-      "Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip"
+      "Art. 191 AEUV - Vorsorge-, Präventions- und Verursacherprinzip"
     ],
     "definition": "Art. 191 AEUV beschreibt die Ziele und Grundsätze der EU-Umweltpolitik: Erhalt und Verbesserung der Umweltqualität, Schutz der Gesundheit, rationelle Ressourcennutzung, Bekämpfung des Klimawandels sowie Vorsorge-, Präventions-, Ursprungs- und Verursacherprinzip.",
     "url": "/begriffe/art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip/",
@@ -4334,9 +4334,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "cbam-co2-grenzausgleichssystem",
-    "label": "CBAM – CO2-Grenzausgleichssystem",
+    "label": "CBAM - CO2-Grenzausgleichssystem",
     "aliases": [
-      "CBAM – CO2-Grenzausgleichssystem"
+      "CBAM - CO2-Grenzausgleichssystem"
     ],
     "definition": "CBAM ist der EU-Mechanismus für einen CO2-Grenzausgleich auf bestimmte importierte Waren, um Carbon Leakage zu vermeiden und Dekarbonisierung auch außerhalb der EU anzureizen.",
     "url": "/begriffe/cbam-co2-grenzausgleichssystem/",
@@ -5096,9 +5096,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "csddd-corporate-sustainability-due-diligence-directive",
-    "label": "CSDDD – Corporate Sustainability Due Diligence Directive",
+    "label": "CSDDD - Corporate Sustainability Due Diligence Directive",
     "aliases": [
-      "CSDDD – Corporate Sustainability Due Diligence Directive"
+      "CSDDD - Corporate Sustainability Due Diligence Directive"
     ],
     "definition": "Die CSDDD verpflichtet große Unternehmen, tatsächliche und potenzielle negative Menschenrechts- und Umweltwirkungen in eigenen Tätigkeiten, Tochterunternehmen und Geschäftspartnerketten zu adressieren.",
     "url": "/begriffe/csddd-corporate-sustainability-due-diligence-directive/",
@@ -5547,7 +5547,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Debiasing",
       "Entzerrung kognitiver Verzerrungen"
     ],
-    "definition": "Debiasing räumt Denkfehler nicht weg wie Krümel vom Tisch. Es trennt Behauptung, Beleg und Unsicherheit – und prüft dann noch einmal.",
+    "definition": "Debiasing räumt Denkfehler nicht weg wie Krümel vom Tisch. Es trennt Behauptung, Beleg und Unsicherheit - und prüft dann noch einmal.",
     "url": "/begriffe/debiasing/",
     "priority": 258,
     "autoLinkAllowed": true,
@@ -6611,9 +6611,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "discovery-delivery-wirkungslernloop",
-    "label": "Discovery–Delivery–Wirkungslernloop",
+    "label": "Discovery-Delivery-Wirkungslernloop",
     "aliases": [
-      "Discovery–Delivery–Wirkungslernloop"
+      "Discovery-Delivery-Wirkungslernloop"
     ],
     "definition": "Kontinuierliche Problemexploration, Lösungsentdeckung, sichere Lieferung, Betrieb und Wirkungslernen verbinden.",
     "url": "/begriffe/discovery-delivery-wirkungslernloop/",
@@ -6810,9 +6810,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "dnsh-do-no-significant-harm",
-    "label": "DNSH – Do No Significant Harm",
+    "label": "DNSH - Do No Significant Harm",
     "aliases": [
-      "DNSH – Do No Significant Harm",
+      "DNSH - Do No Significant Harm",
       "DNSH / Do No Significant Harm",
       "DNSH",
       "Do No Significant Harm",
@@ -7090,9 +7090,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "dsa-digital-services-act",
-    "label": "DSA – Digital Services Act",
+    "label": "DSA - Digital Services Act",
     "aliases": [
-      "DSA – Digital Services Act"
+      "DSA - Digital Services Act"
     ],
     "definition": "Der Digital Services Act regelt digitale Vermittlungsdienste und Plattformen. Er enthält besondere Pflichten für sehr große Online-Plattformen und Suchmaschinen, insbesondere zum Umgang mit systemischen Risiken.",
     "url": "/begriffe/dsa-digital-services-act/",
@@ -11094,7 +11094,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Framekontrolle",
       "Deutungsrahmen prüfen"
     ],
-    "definition": "Ein Frame ist die Brille einer Aussage. Framekontrolle heißt: erst merken, welche Brille aufgesetzt wurde – dann durch eine passende ersetzen.",
+    "definition": "Ein Frame ist die Brille einer Aussage. Framekontrolle heißt: erst merken, welche Brille aufgesetzt wurde - dann durch eine passende ersetzen.",
     "url": "/begriffe/framekontrolle/",
     "priority": 518,
     "autoLinkAllowed": true,
@@ -15326,7 +15326,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wirkungscontrolling",
       "Wirkungssteuerung im Controlling"
     ],
-    "definition": "Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.",
+    "definition": "Impact-Controlling prüft, was eine Maßnahme tatsächlich verändert, wodurch die Veränderung entsteht und wie die Entscheidung danach verbessert werden kann. Es verbindet Planung, Messung, Bewertung und Rückkopplung.",
     "url": "/begriffe/impact-controlling/",
     "priority": 709,
     "autoLinkAllowed": true,
@@ -17279,9 +17279,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "kii-design-key-impact-indicators",
-    "label": "KII-Design – Key Impact Indicators",
+    "label": "KII-Design - Key Impact Indicators",
     "aliases": [
-      "KII-Design – Key Impact Indicators"
+      "KII-Design - Key Impact Indicators"
     ],
     "definition": "Wenige führende Wirkungskennzahlen auswählen, die Managemententscheidungen direkt steuern und nicht nur berichten.",
     "url": "/begriffe/kii-design-key-impact-indicators/",
@@ -21954,7 +21954,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Standards der Inhaltsmoderation",
       "Moderationsregeln"
     ],
-    "definition": "Gute Moderationsstandards erklären Kriterien, Entscheidungen und Beschwerdewege – sie sortieren keine politischen Meinungen nach Gefallen.",
+    "definition": "Gute Moderationsstandards erklären Kriterien, Entscheidungen und Beschwerdewege - sie sortieren keine politischen Meinungen nach Gefallen.",
     "url": "/begriffe/moderationsstandards/",
     "priority": 1018,
     "autoLinkAllowed": true,
@@ -23962,7 +23962,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Mehrebenen-Referenzrahmen",
       "normativer Referenzrahmen"
     ],
-    "definition": "Eine Wirkung, ein Messwert, ein FinalScore – aber mehrere normative Anker. Rechtliche Quellen begründen und begrenzen die Bewertung, erzeugen aber keine Zusatzpunkte.",
+    "definition": "Eine Wirkung, ein Messwert, ein FinalScore - aber mehrere normative Anker. Rechtliche Quellen begründen und begrenzen die Bewertung, erzeugen aber keine Zusatzpunkte.",
     "url": "/begriffe/normative-wirkungsarchitektur/",
     "priority": 1114,
     "autoLinkAllowed": true,
@@ -27242,9 +27242,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "problem-wirkungs-system-markt-fit",
-    "label": "Problem–Wirkungs–System–Markt-Fit",
+    "label": "Problem-Wirkungs-System-Markt-Fit",
     "aliases": [
-      "Problem–Wirkungs–System–Markt-Fit"
+      "Problem-Wirkungs-System-Markt-Fit"
     ],
     "definition": "Prüfen, ob Problemrelevanz, Wirkungsmechanismus, Systemverträglichkeit, Markt-/Finanzierungslogik und organisatorische Fähigkeit gleichzeitig ausreichend passen.",
     "url": "/begriffe/problem-wirkungs-system-markt-fit/",
@@ -27861,7 +27861,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Psychologischer Wirkungscheck",
       "psychologischer Folgencheck"
     ],
-    "definition": "Der Check fragt nicht: „Was ist mit Menschen los?“ Sondern: „Was kann diese Aussage hier auslösen – und woran würden wir es erkennen?“",
+    "definition": "Der Check fragt nicht: „Was ist mit Menschen los?“ Sondern: „Was kann diese Aussage hier auslösen - und woran würden wir es erkennen?“",
     "url": "/begriffe/psychologischer-wirkungscheck/",
     "priority": 1295,
     "autoLinkAllowed": true,
@@ -32096,7 +32096,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wirkungs-Scorecards",
       "Impact Scorecard"
     ],
-    "definition": "Eine Wirkungsscorecard macht sichtbar, was nach welchen Indikatoren, Daten und Grenzen bewertet wird – damit Wirkungsentscheidungen nachvollziehbar, vergleichbar und prüfbar bleiben.",
+    "definition": "Eine Wirkungsscorecard macht sichtbar, was nach welchen Indikatoren, Daten und Grenzen bewertet wird - damit Wirkungsentscheidungen nachvollziehbar, vergleichbar und prüfbar bleiben.",
     "url": "/begriffe/scorecard/",
     "priority": 1489,
     "autoLinkAllowed": true,
@@ -35702,9 +35702,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "t-sroi",
-    "label": "T-SROI – Transformational Social Return on Investment",
+    "label": "T-SROI - Transformational Social Return on Investment",
     "aliases": [
-      "T-SROI – Transformational Social Return on Investment",
+      "T-SROI - Transformational Social Return on Investment",
       "T-SROI",
       "Transformational Social Return on Investment",
       "Transformational SROI"
@@ -40148,7 +40148,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wertebrücke",
       "gemeinsame Werte als Gesprächsbrücke"
     ],
-    "definition": "Eine Wertebrücke ist kein Trick. Sie sagt: „Der gemeinsame Wert zählt – jetzt schauen wir gemeinsam, was ihn tatsächlich schützt.“",
+    "definition": "Eine Wertebrücke ist kein Trick. Sie sagt: „Der gemeinsame Wert zählt - jetzt schauen wir gemeinsam, was ihn tatsächlich schützt.“",
     "url": "/begriffe/wertebruecke/",
     "priority": 1865,
     "autoLinkAllowed": true,
@@ -43217,7 +43217,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "Wirkungsökonomie"
     ],
-    "definition": "Die Wirkungsökonomie ist ein Ordnungsmodell, das Wirtschaft, Staat, Kapital, Medien und gesellschaftliche Entscheidungen nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie ausrichtet. Kapital bleibt Werkzeug, Wirkung wird Kompass.",
+    "definition": "Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Es richtet wirtschaftliche, staatliche und gesellschaftliche Entscheidungen an ihren tatsächlichen Folgen für Menschen, Umwelt und Demokratie aus. Angestrebt wird positive Netto-Wirkung.",
     "url": "/begriffe/wirkungsoekonomie/",
     "priority": 1999,
     "autoLinkAllowed": true,
@@ -43898,9 +43898,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "wirkungsproblem-loesungs-fit",
-    "label": "Wirkungsproblem–Lösungs-Fit",
+    "label": "Wirkungsproblem-Lösungs-Fit",
     "aliases": [
-      "Wirkungsproblem–Lösungs-Fit"
+      "Wirkungsproblem-Lösungs-Fit"
     ],
     "definition": "Prüfen, ob eine relevante Zustandsveränderung verstanden ist und eine Lösung einen plausiblen Mechanismus adressiert, bevor Geschäftsmodell oder Skalierung optimiert werden.",
     "url": "/begriffe/wirkungsproblem-loesungs-fit/",
@@ -45433,7 +45433,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wissenschaftsablehnung",
       "Feindlichkeit gegenüber Wissenschaft"
     ],
-    "definition": "Wissenschaftsfeindlichkeit richtet sich gegen nachvollziehbares Prüfen und Korrigieren – nicht gegen berechtigte Kritik an einzelnen Studien.",
+    "definition": "Wissenschaftsfeindlichkeit richtet sich gegen nachvollziehbares Prüfen und Korrigieren - nicht gegen berechtigte Kritik an einzelnen Studien.",
     "url": "/begriffe/wissenschaftsfeindlichkeit/",
     "priority": 2096,
     "autoLinkAllowed": true,
@@ -46134,9 +46134,9 @@ window.WIRKUNG_GLOSSARY_TERMS = [
   },
   {
     "key": "wu-wei-wirksames-nicht-erzwingen",
-    "label": "Wu wei – wirksames Nicht-Erzwingen",
+    "label": "Wu wei - wirksames Nicht-Erzwingen",
     "aliases": [
-      "Wu wei – wirksames Nicht-Erzwingen"
+      "Wu wei - wirksames Nicht-Erzwingen"
     ],
     "definition": "Wu wei wird häufig als Nicht-Erzwingen oder nicht-verkrampftes Handeln übersetzt. Es bezeichnet nicht bloße Passivität, sondern ein Handeln, das mit dem System arbeitet statt gegen seine Eigenlogik.",
     "url": "/begriffe/wu-wei-wirksames-nicht-erzwingen/",

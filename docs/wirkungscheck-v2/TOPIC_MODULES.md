@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V2 – Themenmodule
+# Wirkungscheck Bundestag V2 - Themenmodule
 
 **Status:** Entwurf zur fachlichen Abnahme.  
 **Phase 1:** Wohnen sowie Gesundheit und Pflege.

@@ -1,4 +1,4 @@
-# 33 – ESG-Ratings, Börsen und Impact Exchange
+# 33 - ESG-Ratings, Börsen und Impact Exchange
 
 **Untertitel:** Von Nachhaltigkeitsratings zu Kapitalwirkung, Markttransparenz und wirkungsorientierten Handelsplätzen
 

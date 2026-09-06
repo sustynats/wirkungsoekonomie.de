@@ -1,4 +1,4 @@
-# Automatische Titelbilder – Betrieb und Grenzen
+# Automatische Titelbilder - Betrieb und Grenzen
 
 Stand: 4. September 2026. Ergänzt Claudes Designvertrag in
 `WIRKUNGSTICKER-TITELBILD.md`; dessen Renderer, Safe Areas und beide Modi bleiben

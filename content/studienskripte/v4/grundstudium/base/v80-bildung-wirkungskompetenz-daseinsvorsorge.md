@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Bildung ist mehr als Unterrichtsstunden und Abschlüsse. Entscheidend ist, **welche Fähigkeiten entstehen**: lesen, rechnen, fachlich urteilen, Informationen prüfen, demokratisch handeln, Probleme lösen. WÖk nennt die Fähigkeit, Quellen, Ursachen, Folgen und Unsicherheit zu prüfen, „Wirkungskompetenz“. Das ist ein WÖk-Kompetenzrahmen – kein bestehender staatlicher Bildungsstandard. Er soll vorhandene Fach-, Medien-, Demokratie- und Systemkompetenzen verbinden.
+Bildung ist mehr als Unterrichtsstunden und Abschlüsse. Entscheidend ist, **welche Fähigkeiten entstehen**: lesen, rechnen, fachlich urteilen, Informationen prüfen, demokratisch handeln, Probleme lösen. WÖk nennt die Fähigkeit, Quellen, Ursachen, Folgen und Unsicherheit zu prüfen, „Wirkungskompetenz“. Das ist ein WÖk-Kompetenzrahmen - kein bestehender staatlicher Bildungsstandard. Er soll vorhandene Fach-, Medien-, Demokratie- und Systemkompetenzen verbinden.
 
 ## Lernziele
 
@@ -48,7 +48,7 @@ Outcomes:
 - Gesundheit,
 - demokratische/gesellschaftliche Fähigkeiten.
 
-`DEGREE != COMPETENCE` – auch wenn Abschlüsse wichtige Signale/Rechte eröffnen.
+`DEGREE != COMPETENCE` - auch wenn Abschlüsse wichtige Signale/Rechte eröffnen.
 
 ## 2. Lernzuwachs
 
@@ -217,7 +217,7 @@ Entwirf eine 90-Minuten-Lerneinheit „Korrelation ist nicht Kausalität“. Def
 
 Bildung wird oft in Stunden, Klassen und Abschlüssen gemessen.
 
-Das ist wichtig – aber noch nicht die ganze Wirkung.
+Das ist wichtig - aber noch nicht die ganze Wirkung.
 
 Am Ende zählt, was Menschen können.
 
@@ -233,7 +233,7 @@ Und auch die müssen wir selbst als Outcome messen.
 
 Der Merksatz lautet:
 
-**Bildung wirkt nicht, weil Unterricht stattfindet. Sie wirkt, wenn Fähigkeiten wachsen – und Menschen sie in neuen Situationen selbstständig anwenden können.**
+**Bildung wirkt nicht, weil Unterricht stattfindet. Sie wirkt, wenn Fähigkeiten wachsen - und Menschen sie in neuen Situationen selbstständig anwenden können.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

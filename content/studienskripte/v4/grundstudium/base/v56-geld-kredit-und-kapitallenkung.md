@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v56-geld-kredit-und-kapitallenkung.md curriculum=4.0 sanitized=true -->
-# V56 · Geld, Kredit und Kapitallenkung – Mandate, Risiko und reale Investitionswirkung
+# V56 · Geld, Kredit und Kapitallenkung - Mandate, Risiko und reale Investitionswirkung
 
 **lecture_id:** `WOEK-G-BASE-056`  
 **display_code:** `V56`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Geldpolitik, Banken und Kapitalmärkte beeinflussen, welche Investitionen finanzierbar sind. Aber eine Zentralbank entscheidet nicht einfach, welche Projekte „gute Wirkung“ haben sollen. Die EZB hat ein rechtlich definiertes Mandat, Banken steuern Kredit nach Risiko, Kapital und Regulierung, und Sustainable-Finance-Regeln adressieren Nachhaltigkeitsrisiken und Transparenz. WÖk ergänzt die Frage: **Welche realen Wirkungen ermöglicht oder verhindert Kapitalallokation – und was davon ist tatsächlich additional?**
+Geldpolitik, Banken und Kapitalmärkte beeinflussen, welche Investitionen finanzierbar sind. Aber eine Zentralbank entscheidet nicht einfach, welche Projekte „gute Wirkung“ haben sollen. Die EZB hat ein rechtlich definiertes Mandat, Banken steuern Kredit nach Risiko, Kapital und Regulierung, und Sustainable-Finance-Regeln adressieren Nachhaltigkeitsrisiken und Transparenz. WÖk ergänzt die Frage: **Welche realen Wirkungen ermöglicht oder verhindert Kapitalallokation - und was davon ist tatsächlich additional?**
 
 ## Lernziele
 
@@ -47,7 +47,7 @@ WÖk-Wirkungsanalyse ist eine weitere Ebene.
 
 ## 2. Zentralbankmandat nicht umschreiben
 
-Die EZB verfolgt im Euroraum primär Preisstabilität und unterstützt – ohne Beeinträchtigung dieses Ziels – allgemeine Wirtschaftspolitiken der EU im Rahmen ihres Mandats.
+Die EZB verfolgt im Euroraum primär Preisstabilität und unterstützt - ohne Beeinträchtigung dieses Ziels - allgemeine Wirtschaftspolitiken der EU im Rahmen ihres Mandats.
 
 Klimarisiken können für Geldpolitik/Finanzstabilität relevant sein.
 

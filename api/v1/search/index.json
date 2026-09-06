@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-21T14:46:36.244Z",
+  "generatedAt": "2026-09-06T11:51:25.422Z",
   "version": "v1",
   "source": "assets/search/search-index.json",
   "publicIndexUrl": "/assets/search/search-index.json",
-  "count": 31987,
+  "count": 45409,
   "sections": [
     "Akademie",
     "Anwendungen",
@@ -14,11 +14,9 @@
     "Evidenz",
     "Für wen",
     "Grundlagen",
+    "Institut",
     "Journal",
     "Kompass",
-    "Lernen",
-    "Medien / Demokratie",
-    "Methodik",
     "Mitmachen",
     "Öffentlicher Wirkungsraum",
     "Ordnung",
@@ -28,16 +26,19 @@
     "SDG+",
     "Seite",
     "Suche",
+    "Umfragen",
     "Verstehen",
     "Website 1.0",
     "Werkzeuge",
     "Wirkungsfelder",
+    "Wirkungsportal Parlament",
     "Wirkungsradar",
     "Wirkungssteuerung",
     "Wirtschaft & Unternehmen",
     "Wissen",
     "Wissenskarten",
     "Wohnen & Stadt",
+    "WÖk-Masterregister",
     "Workflow"
   ],
   "types": [
@@ -70,7 +71,9 @@
     "Einwände",
     "Einzeldossier",
     "Einzeldossiers / Onlinefassung",
+    "Erklärseite",
     "Evidenz-Hub",
+    "Fachvertiefung",
     "Fachvertiefung / Onlinefassung",
     "Fallstudie",
     "Gesamtdossier / Onlinefassung",
@@ -89,21 +92,23 @@
     "Methodik",
     "Migration & Vielfalt",
     "Modell",
-    "Narrativanalyse",
     "Narrativbibliothek",
     "Onlinefassung",
     "Ordnungsseite",
-    "Portal",
     "Präsentation",
+    "Projektakte",
+    "Projektübersicht",
     "Psychologie",
     "Redaktion",
     "Referenz",
+    "Register",
     "Seite",
     "Sicherheit, Resilienz und globale Kooperation",
     "Themenbereich",
     "Tool / Demo",
     "Transformation, Übergänge und Implementierung",
     "Übersicht",
+    "Umfrage",
     "Unterbereich",
     "Vergleichsseite",
     "Vertrauensseite",
@@ -147,10 +152,10 @@
     "Einwände",
     "Einzeldossier",
     "Einzeldossiers / Onlinefassung",
+    "Erklärseite",
     "Evidenz-Hub",
     "Fachvertiefung",
     "Fachvertiefung / Onlinefassung",
-    "Fallbeispiel",
     "Fallstudie",
     "Gesamtdossier / Onlinefassung",
     "Glossarbegriff",
@@ -161,6 +166,7 @@
     "Klima & Energie",
     "Konzeptpapier / Onlinefassung",
     "Kritik, Missverständnisse und Schutzarchitektur",
+    "Lernmodul",
     "Lernpfad",
     "Masterbibliothek",
     "Methode",
@@ -171,22 +177,24 @@
     "Narrativbibliothek",
     "Onlinefassung",
     "Ordnungsseite",
-    "Portal",
     "Präsentation",
+    "Projektakte",
+    "Projektübersicht",
     "Psychologie",
     "Redaktion",
     "Referenz",
+    "Register",
     "Seite",
     "Sicherheit, Resilienz und globale Kooperation",
     "Themenbereich",
     "Tool / Demo",
     "Transformation, Übergänge und Implementierung",
     "Übersicht",
+    "Umfrage",
     "Unterbereich",
     "Vergleichsseite",
     "Vertrauensseite",
     "Volltext",
-    "Website",
     "Werkstatt",
     "Werkzeug",
     "Wirkungsakademie, Fachbibliothek und Wirkungskompetenz",
@@ -200,70 +208,6 @@
     "Zukunftsbilder, Wirkungswohlstand und zivilisatorische Perspektive"
   ],
   "sample": [
-    {
-      "id": "wirkungsfeld-wirkungsfinanzpolitik-2026-06-11",
-      "title": "Wirkungsfinanzpolitik",
-      "url": "/wirkungsfelder/wirkungsfinanzpolitik/",
-      "section": "Wirkungsfelder",
-      "type": "Bereich",
-      "format": "Website",
-      "tags": [
-        "Wirkungsfinanzpolitik",
-        "öffentliche Finanzen",
-        "Staat",
-        "Demokratie",
-        "Wirkungshaushalt",
-        "IOI",
-        "Impact of Investment",
-        "T-SROI",
-        "Haushaltsblindleistung",
-        "MMT",
-        "Public Purpose",
-        "Public Purpose Finance"
-      ]
-    },
-    {
-      "id": "go5-wirtschaft-06",
-      "title": "Unternehmen als Wirkungssysteme",
-      "url": "/wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/",
-      "section": "Wirkungsfelder",
-      "type": "Detailkonzept",
-      "format": "Onlinefassung",
-      "tags": [
-        "Wirtschaft & Unternehmen",
-        "Go 5",
-        "Detailkonzept",
-        "v1.0"
-      ]
-    },
-    {
-      "id": "go5-wirtschaft-07",
-      "title": "Wirkungsorientierte Unternehmensführung inkl. Mitarbeiterführung",
-      "url": "/wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/",
-      "section": "Wirkungsfelder",
-      "type": "Detailkonzept",
-      "format": "Onlinefassung",
-      "tags": [
-        "Wirtschaft & Unternehmen",
-        "Go 5",
-        "Detailkonzept",
-        "v1.0"
-      ]
-    },
-    {
-      "id": "go5-wirtschaft-08",
-      "title": "Wirkungsorientiertes Risikomanagement, Resilienz und Finanzmarktanforderungen",
-      "url": "/wirkungsfelder/wirtschaft-unternehmen/risikomanagement-resilienz-finanzmarkt/",
-      "section": "Wirkungsfelder",
-      "type": "Detailkonzept",
-      "format": "Onlinefassung",
-      "tags": [
-        "Wirtschaft & Unternehmen",
-        "Go 5",
-        "Detailkonzept",
-        "v1.0"
-      ]
-    },
     {
       "id": "woek-term-algorithmische-fairness",
       "title": "Algorithmische Fairness und digitale Rechte",
@@ -525,6 +469,65 @@
         "Folgenprüfung",
         "Ex-ante-Folgenprüfung",
         "Wirkungsfolgencheck"
+      ]
+    },
+    {
+      "id": "woek-term-fraunhofersche-linien",
+      "title": "Fraunhofersche Linien",
+      "url": "/begriffe/fraunhofersche-linien/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "Fraunhofersche Linien",
+        "Fraunhofer-Linien",
+        "Fraunhofersche Linien der Preise",
+        "Fraunhofersche Linien der Wirtschaft",
+        "Fraunhofersche Linien der Kommunikation",
+        "kommunikative Fraunhofer-Linien",
+        "institutionalisierte Fraunhofer-Linien",
+        "indoktrinierte Fraunhofer-Linien"
+      ]
+    },
+    {
+      "id": "woek-term-gesundheit",
+      "title": "Gesundheit",
+      "url": "/begriffe/gesundheit/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "Gesundheit"
+      ]
+    },
+    {
+      "id": "woek-term-gesundheitsdividende",
+      "title": "Gesundheitsdividende",
+      "url": "/begriffe/gesundheitsdividende/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "Gesundheitsdividende",
+        "Präventionsdividende",
+        "Health Dividend"
+      ]
+    },
+    {
+      "id": "woek-term-gesundheitskasse",
+      "title": "Gesundheitskasse",
+      "url": "/begriffe/gesundheitskasse/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "Gesundheitskasse",
+        "Präventionskasse",
+        "Health Impact Fund im Kassensystem"
       ]
     }
   ]

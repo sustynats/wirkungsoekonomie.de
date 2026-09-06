@@ -56,7 +56,7 @@ Wenn keine robuste Präferenz möglich ist, ist `NO_ROBUST_RECOMMENDATION` ein f
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
 - UN Agenda 2030 / SDGs: https://sdgs.un.org/2030agenda
 - Deutsche Nachhaltigkeitsstrategie: https://www.bundesregierung.de/breg-de/schwerpunkte/nachhaltigkeitspolitik
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - OECD Evaluation: https://www.oecd.org/dac/evaluation/
 - Digital Services Act: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
 
@@ -70,7 +70,7 @@ Problem/Goal/Options-Sequenz, A→M→ΔZ→R, Nichtkompensation/RMO und Recomme
 Wirkungssteuerung beginnt mit Problem und Optionen, nicht mit einer fertigen Maßnahme oder einem Score.
 
 ## Sprechertext
-Stell dir vor, jemand sagt: Wir brauchen mehr Parkplätze. WÖk fragt zuerst: Welches Problem soll eigentlich gelöst werden? Erreichbarkeit? Stau? Handel? Barrierefreiheit? Erst wenn das klar ist, können Parkplätze eine Option sein – neben anderen. Genau deshalb kommt Problem Review vor Goal Review und die Recommendation ganz zum Schluss.
+Stell dir vor, jemand sagt: Wir brauchen mehr Parkplätze. WÖk fragt zuerst: Welches Problem soll eigentlich gelöst werden? Erreichbarkeit? Stau? Handel? Barrierefreiheit? Erst wenn das klar ist, können Parkplätze eine Option sein - neben anderen. Genau deshalb kommt Problem Review vor Goal Review und die Recommendation ganz zum Schluss.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst auf Basis des vollständigen Legacy-Reaudits B04 und des WÖk-Begriffs-/Methodenstands v1.5.

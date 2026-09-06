@@ -1,4 +1,4 @@
-# P1 — Navigation und Routen
+# P1 - Navigation und Routen
 
 Basis: `4d57b24dab20fa1daf63a661cdcd69dd04cc195c` (frisches, isoliertes main-Worktree).
 
@@ -38,4 +38,4 @@ Die öffentliche Abstimmungsbilanz zeigt bei ausdrücklich fehlender Datenbank-K
 
 ## Preview und Release
 
-Der Workflow `Parliament structure preview` baut exakt den PR-Head in GitHub, prüft ihn im Browser und liefert Screenshots, einen HTML-Index, JSON-Prüfergebnisse, Textinventar und `commit.txt` als gemeinsames Artefakt. Keine Vercel-Preview, kein automatisches Git-Deployment, keine Änderung an Hosting- oder Budgetgates. Die abschließende Veröffentlichung folgt erst nach P1–P6 und den geltenden Release-/Kostengates.
+Der Workflow `Parliament structure preview` baut exakt den PR-Head in GitHub, prüft ihn im Browser und liefert Screenshots, einen HTML-Index, JSON-Prüfergebnisse, Textinventar und `commit.txt` als gemeinsames Artefakt. Keine Vercel-Preview, kein automatisches Git-Deployment, keine Änderung an Hosting- oder Budgetgates. Die abschließende Veröffentlichung folgt erst nach P1-P6 und den geltenden Release-/Kostengates.

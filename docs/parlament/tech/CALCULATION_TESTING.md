@@ -14,4 +14,4 @@ Die Testbasis prüft mindestens:
 `lib/calculation/formula-engine.test.ts` enthält die ersten ausführbaren Tests.
 Goldstandard-Fälle werden unter `gold-standard-cases/` um Rohdaten,
 Calculation Inputs, erwartete Berechnungen, Aggregation und normative Zuordnung
-erweitert. Ziel ist gleiche relevante Berechnung – nicht gleiche Prosa.
+erweitert. Ziel ist gleiche relevante Berechnung - nicht gleiche Prosa.

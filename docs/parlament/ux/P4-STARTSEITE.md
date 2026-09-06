@@ -1,4 +1,4 @@
-# P4 – Portalstart, berechneter Bestand und verlustfreier Umzug
+# P4 - Portalstart, berechneter Bestand und verlustfreier Umzug
 
 Ausgangsstand: `fc194b2053f68800c300ecf7974be715ece177ee` (P3 #366 gemergt).
 Frischer, sauberer Branch: `codex/parliament-p4-home-20260904`.
@@ -39,7 +39,7 @@ Die Bausteine in `HomeContentSections.tsx` wurden mechanisch aus dem vorherigen 
 
 ## Prüfungen
 
-Die bestehende Exact-Head-Preview führt alle P1–P3-Gates weiter und ergänzt P4 bei 320/360/375/390/428/1440 px: sechs Blöcke in Reihenfolge, ≤500 Wörter, source-gebundene Zähler, alle Länder genau einmal, offene Kategorien, echte SVG-Geometrie unter unverändertem CSP, kein horizontaler Überlauf, WCAG-A/AA-Prüfung und Tastaturbedienung der umgezogenen Aufklapper.
+Die bestehende Exact-Head-Preview führt alle P1-P3-Gates weiter und ergänzt P4 bei 320/360/375/390/428/1440 px: sechs Blöcke in Reihenfolge, ≤500 Wörter, source-gebundene Zähler, alle Länder genau einmal, offene Kategorien, echte SVG-Geometrie unter unverändertem CSP, kein horizontaler Überlauf, WCAG-A/AA-Prüfung und Tastaturbedienung der umgezogenen Aufklapper.
 
 Weitere Gates: alle Tests, Typecheck, Lint, vollständiger Production-Build inklusive bestehender Source-vs-View-/Fach-/Golden-Prüfungen und Root-Website-/Such-/Privatsphäre-/Linkgates in GitHub. GitHub-Artefakt ist die commitgebundene Preview. Kein Vercel-Build, keine Production-Promotion. Konkrete Ergebnisse werden mit dem exakten getesteten Head im PR belegt.
 

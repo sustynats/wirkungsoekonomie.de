@@ -509,7 +509,7 @@
           {
             "source_id": "bayern-landesregierung-presse",
             "publisher_id": "bayerische-staatsregierung",
-            "name": "Bayerische Staatsregierung – Pressemitteilungen",
+            "name": "Bayerische Staatsregierung - Pressemitteilungen",
             "scope": "official_statements",
             "trial_mode": true,
             "status": "active",
@@ -593,7 +593,7 @@
           {
             "source_id": "bremen-senat-presse",
             "publisher_id": "bremen-senat",
-            "name": "Bremen – Pressestelle des Senats",
+            "name": "Bremen - Pressestelle des Senats",
             "scope": "official_statements",
             "trial_mode": true,
             "status": "active",
@@ -776,7 +776,7 @@
           {
             "source_id": "saarland-landesregierung-access",
             "publisher_id": "saarland-landesregierung",
-            "name": "Saarland – Landesregierung"
+            "name": "Saarland - Landesregierung"
           }
         ]
       },
@@ -909,7 +909,7 @@
       "confidence": "high"
     },
     {
-      "source": "Bremen – Pressestelle des Senats",
+      "source": "Bremen - Pressestelle des Senats",
       "source_id": "bremen-senat-presse",
       "old_role": "E",
       "new_role": "A",
@@ -930,7 +930,7 @@
       "confidence": "high"
     },
     {
-      "source": "heise online – Wirtschaft",
+      "source": "heise online - Wirtschaft",
       "source_id": "heise-wirtschaft",
       "old_role": "E",
       "new_role": "A",
@@ -952,7 +952,7 @@
       "confidence": "high"
     },
     {
-      "source": "heise online – Netzpolitik",
+      "source": "heise online - Netzpolitik",
       "source_id": "heise-netzpolitik",
       "old_role": "E",
       "new_role": "A",
@@ -1113,7 +1113,7 @@
       "covered_by": "Bayerische Staatsregierung als amtliche Grundabdeckung, überregionale Medien ergänzend."
     },
     {
-      "source": "Saarland – Landesregierung",
+      "source": "Saarland - Landesregierung",
       "role": "D",
       "reason": "RSS-Übersicht und direkter Zugang bei Prüfung gesperrt; kein verifizierter automatisierter Feed.",
       "covered_by": "Überregionale Quellen ergänzend; eigene regionale Abdeckung bleibt offen."
@@ -1256,21 +1256,21 @@
     },
     {
       "source_id": "bundestag-hib",
-      "name": "Deutscher Bundestag – Heute im Bundestag",
+      "name": "Deutscher Bundestag - Heute im Bundestag",
       "role": "A",
       "cadence": "high_frequency",
       "trial_mode": false
     },
     {
       "source_id": "bundestag-umwelt",
-      "name": "Deutscher Bundestag – Umwelt und Klimaschutz",
+      "name": "Deutscher Bundestag - Umwelt und Klimaschutz",
       "role": "A",
       "cadence": "high_frequency",
       "trial_mode": false
     },
     {
       "source_id": "bundestag-wirtschaft",
-      "name": "Deutscher Bundestag – Wirtschaft und Energie",
+      "name": "Deutscher Bundestag - Wirtschaft und Energie",
       "role": "A",
       "cadence": "high_frequency",
       "trial_mode": false
@@ -1298,28 +1298,28 @@
     },
     {
       "source_id": "bundesnetzagentur-presse",
-      "name": "Bundesnetzagentur – Pressemitteilungen",
+      "name": "Bundesnetzagentur - Pressemitteilungen",
       "role": "A",
       "cadence": "high_frequency",
       "trial_mode": false
     },
     {
       "source_id": "umweltbundesamt-presse",
-      "name": "Umweltbundesamt – Pressemitteilungen",
+      "name": "Umweltbundesamt - Pressemitteilungen",
       "role": "A",
       "cadence": "regular",
       "trial_mode": false
     },
     {
       "source_id": "eu-kommission-presse",
-      "name": "Europäische Kommission – Press Corner",
+      "name": "Europäische Kommission - Press Corner",
       "role": "A",
       "cadence": "high_frequency",
       "trial_mode": false
     },
     {
       "source_id": "bundesverwaltungsgericht-presse",
-      "name": "Bundesverwaltungsgericht – Pressemitteilungen",
+      "name": "Bundesverwaltungsgericht - Pressemitteilungen",
       "role": "A",
       "cadence": "high_frequency",
       "trial_mode": false
@@ -1333,14 +1333,14 @@
     },
     {
       "source_id": "woek-parlament-bewertungen",
-      "name": "Wirkungsportal Parlament – veröffentlichte WÖk-Bewertungen",
+      "name": "Wirkungsportal Parlament - veröffentlichte WÖk-Bewertungen",
       "role": "A",
       "cadence": "high_frequency",
       "trial_mode": false
     },
     {
       "source_id": "jurafuchs-presse",
-      "name": "Jurafuchs – Presse",
+      "name": "Jurafuchs - Presse",
       "role": "A",
       "cadence": "regular",
       "trial_mode": false
@@ -1480,7 +1480,7 @@
     },
     {
       "source_id": "dlf-wirtschaft",
-      "name": "Deutschlandfunk – Wirtschaft",
+      "name": "Deutschlandfunk - Wirtschaft",
       "role": "A",
       "cadence": "high_frequency",
       "trial_mode": false
@@ -1489,14 +1489,14 @@
   "blindspot_network": [
     {
       "source_id": "bayern-landesregierung-presse",
-      "name": "Bayerische Staatsregierung – Pressemitteilungen",
+      "name": "Bayerische Staatsregierung - Pressemitteilungen",
       "role": "A",
       "cadence": "regular",
       "trial_mode": true
     },
     {
       "source_id": "bremen-senat-presse",
-      "name": "Bremen – Pressestelle des Senats",
+      "name": "Bremen - Pressestelle des Senats",
       "role": "A",
       "cadence": "regular",
       "trial_mode": true
@@ -1510,7 +1510,7 @@
     },
     {
       "source_id": "europepmc-impact-research",
-      "name": "Europe PMC – offene Wirkungsforschung",
+      "name": "Europe PMC - offene Wirkungsforschung",
       "role": "A",
       "cadence": "slow_monitoring",
       "trial_mode": false
@@ -1531,14 +1531,14 @@
     },
     {
       "source_id": "heise-wirtschaft",
-      "name": "heise online – Wirtschaft",
+      "name": "heise online - Wirtschaft",
       "role": "A",
       "cadence": "regular",
       "trial_mode": true
     },
     {
       "source_id": "heise-netzpolitik",
-      "name": "heise online – Netzpolitik",
+      "name": "heise online - Netzpolitik",
       "role": "A",
       "cadence": "regular",
       "trial_mode": true
@@ -1566,14 +1566,14 @@
     },
     {
       "source_id": "dlf-wissen",
-      "name": "Deutschlandfunk – Wissen",
+      "name": "Deutschlandfunk - Wissen",
       "role": "A",
       "cadence": "regular",
       "trial_mode": false
     },
     {
       "source_id": "dlf-gesellschaft",
-      "name": "Deutschlandfunk – Gesellschaft",
+      "name": "Deutschlandfunk - Gesellschaft",
       "role": "A",
       "cadence": "regular",
       "trial_mode": false
@@ -1589,7 +1589,7 @@
   "case_research_sources": [
     {
       "source_id": "bundesrat-mitteilungen",
-      "name": "Bundesrat – Mitteilungen",
+      "name": "Bundesrat - Mitteilungen",
       "role": "D",
       "cadence": "high_frequency",
       "trial_mode": false
@@ -1603,7 +1603,7 @@
     },
     {
       "source_id": "saarland-landesregierung-access",
-      "name": "Saarland – Landesregierung",
+      "name": "Saarland - Landesregierung",
       "role": "D",
       "cadence": "high_frequency",
       "trial_mode": false

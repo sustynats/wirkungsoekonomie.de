@@ -5,9 +5,7 @@
 **Vorlesungscode:** V24  
 **Modul/Abschnitt:** G2.4  
 **Titel:** Deeskalierende und demokratiestärkende Kommunikation  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v24-deeskalierende-demokratiestaerkende-kommunikation.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v24.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v24.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Deeskalierende und demokratiestärkende Kommunikation** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V23 „Unsicherheit, Ambivalenz und transparente Bewertung"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Wie können wir über Wirkung sprechen, ohne Menschen zu beschämen, Lager zu ve
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Kommunikation, die klärt – deeskalierend und demokratiestärkend
+- **Titel:** Kommunikation, die klärt - deeskalierend und demokratiestärkend
 - **Länge:** ~14 Min
 - **Kernaussage in einem Satz:** Demokratiestärkende Wirkungskommunikation trennt Sache und Person, benennt Quellen und Grenzen und öffnet Räume für begründete Entscheidung.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Sprache hat Nebenwirkungen.** Auch richtige Inhalte können schaden, wenn sie beschämen, Feindbilder verstärken oder Menschen aus dem Gespräch drängen.
+**Abschnitt A - Sprache hat Nebenwirkungen.** Auch richtige Inhalte können schaden, wenn sie beschämen, Feindbilder verstärken oder Menschen aus dem Gespräch drängen.
 
-**Abschnitt B – Keine Personenbewertung.** Die WÖk bewertet Wirkungen von Handlungen, Produkten, Regeln und Strukturen – nicht den Wert einzelner Menschen.
+**Abschnitt B - Keine Personenbewertung.** Die WÖk bewertet Wirkungen von Handlungen, Produkten, Regeln und Strukturen - nicht den Wert einzelner Menschen.
 
-**Abschnitt C – Deeskalierende Muster.** Beschreiben statt beschuldigen; Quellen nennen; Unsicherheit markieren; Alternativen zeigen; Betroffene ernst nehmen.
+**Abschnitt C - Deeskalierende Muster.** Beschreiben statt beschuldigen; Quellen nennen; Unsicherheit markieren; Alternativen zeigen; Betroffene ernst nehmen.
 
-**Abschnitt D – Demokratie stärken.** Gute Kommunikation erhöht Orientierungsfähigkeit, Beteiligung und Konfliktfähigkeit.
+**Abschnitt D - Demokratie stärken.** Gute Kommunikation erhöht Orientierungsfähigkeit, Beteiligung und Konfliktfähigkeit.
 
-**Abschnitt E – Grenze.** Deeskalation heißt nicht Verharmlosung. Schädliche Wirkung muss klar benannt werden, aber ohne Entmenschlichung.
+**Abschnitt E - Grenze.** Deeskalation heißt nicht Verharmlosung. Schädliche Wirkung muss klar benannt werden, aber ohne Entmenschlichung.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -128,7 +124,6 @@ Nimm eine zugespitzte Aussage aus einem Konflikt. Formuliere sie so um, dass Wir
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -202,12 +197,11 @@ Die folgende Runde verdichtet V24 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V24. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Demokratie, Öffentlichkeit, Wirkungssprache
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Demokratie, Öffentlichkeit, Wirkungssprache
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/demokratie-als-wirkungsdimension`, `begriffe/social-credit`, `begriffe/wirkungskommunikation`
 
@@ -300,7 +294,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 2
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -861,8 +854,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v24-deeskalierende-demokratiestaerkende-kommunikation.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

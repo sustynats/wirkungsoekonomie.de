@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein richtig beschriebenes Problem garantiert noch kein gutes Ziel. „Mehr bauen“, „mehr Wachstum“, „weniger Bürokratie“ oder „mehr Sicherheit“ können Ziele sein – oft sind sie aber schon Instrumente, Zwischenziele oder zu unscharfe Richtungswünsche. Goal Review fragt: **Welcher Zustand soll sich für wen verändern – und passt dieser Zielzustand wirklich zum Problem, zu Rechten, Schutzgrenzen, Zielkonflikten und langfristiger Resilienz?**
+Ein richtig beschriebenes Problem garantiert noch kein gutes Ziel. „Mehr bauen“, „mehr Wachstum“, „weniger Bürokratie“ oder „mehr Sicherheit“ können Ziele sein - oft sind sie aber schon Instrumente, Zwischenziele oder zu unscharfe Richtungswünsche. Goal Review fragt: **Welcher Zustand soll sich für wen verändern - und passt dieser Zielzustand wirklich zum Problem, zu Rechten, Schutzgrenzen, Zielkonflikten und langfristiger Resilienz?**
 
 ## Lernziele
 
@@ -199,7 +199,7 @@ Weil eine Berichtspflicht zugleich wichtige Schutzinformation liefern kann.
 
 > Notwendige Schutz-, Transparenz- und Vollzugsinformationen werden mit deutlich geringerem Erfüllungsaufwand erhoben, ohne materielle Schutzwirkung oder Kontrollfähigkeit zu verlieren.
 
-Jetzt ist der Zielkonflikt bereits sichtbar – und bessere Optionen werden möglich.
+Jetzt ist der Zielkonflikt bereits sichtbar - und bessere Optionen werden möglich.
 
 ## 9. Goal Review und Optionen
 
@@ -300,7 +300,7 @@ Wenn unser eigentliches Problem lautet, dass pflegebedürftige Menschen nicht zu
 
 Vielleicht fehlen nicht Ausbildungsplätze, sondern Menschen verlassen den Beruf. Vielleicht ist Teilzeit der Engpass. Vielleicht Bürokratie. Vielleicht regionale Verteilung.
 
-Darum fragt Goal Review: Welcher Zustand soll am Ende wirklich besser sein – für wen, wo und wann?
+Darum fragt Goal Review: Welcher Zustand soll am Ende wirklich besser sein - für wen, wo und wann?
 
 Und dann kommen Schutzbedingungen dazu.
 
@@ -314,7 +314,7 @@ Und genau das ist der Sinn.
 
 Ein gutes Goal Review öffnet den Lösungsraum, statt ihn zu früh zu schließen.
 
-Noch etwas ist wichtig: Bei öffentlichen Entscheidungen gibt es schon Ziele und Referenzen – Grundrechte, Fachrecht, die Deutsche Nachhaltigkeitsstrategie, SDGs.
+Noch etwas ist wichtig: Bei öffentlichen Entscheidungen gibt es schon Ziele und Referenzen - Grundrechte, Fachrecht, die Deutsche Nachhaltigkeitsstrategie, SDGs.
 
 Die nutzen wir. Aber wir werfen sie nicht in einen Topf.
 

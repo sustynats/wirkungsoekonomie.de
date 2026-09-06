@@ -83,7 +83,7 @@ Ein guter Gegencheck ist der **Kontextsatz**: Kann die Redaktion in einem Satz s
 
 „Noch mehr Geld für leere Regale?“ ist nicht nur eine Frage. Die Form unterstellt bereits, dass Geld verschwendet werde und Regale leer seien. Sie drängt die Diskussion in eine Ja-oder-Nein-Verteidigung. Eine Gegenüberschrift wie „Bibliothek vor dem Aus?“ wäre nicht besser; sie übernimmt dieselbe Alarmarchitektur.
 
-Eine tragfähige Zuspitzung kann den Konflikt zeigen, ohne seine Lösung zu fälschen: „Längere Öffnung: Wer erhält Zugang – und was kostet sie?“ Sie lässt offen, wie die Finanzierung beurteilt wird, macht die Zielgruppe sichtbar und zeigt, dass es um eine begründbare Entscheidung geht. Tonalität ist damit nicht nett oder hart. Sie entscheidet, ob eine Frage noch prüfbar bleibt.
+Eine tragfähige Zuspitzung kann den Konflikt zeigen, ohne seine Lösung zu fälschen: „Längere Öffnung: Wer erhält Zugang - und was kostet sie?“ Sie lässt offen, wie die Finanzierung beurteilt wird, macht die Zielgruppe sichtbar und zeigt, dass es um eine begründbare Entscheidung geht. Tonalität ist damit nicht nett oder hart. Sie entscheidet, ob eine Frage noch prüfbar bleibt.
 
 ## Der Redaktionscheck vor Veröffentlichung
 
@@ -155,7 +155,7 @@ Das ist keine Garantie für Vertrauen. Es macht aber Fehler und Folgefragen sich
 Vor dem Export kann ein Team nicht jedes Mal eine vollständige Wirkungsstudie durchführen. Es kann aber eine kurze, konkrete Unterbrechung einbauen. Eine Person, die nicht am Schnitt beteiligt war, beantwortet diese vier Fragen:
 
 1. Was würde jemand nach den ersten zehn Sekunden als gesicherte Tatsache wiedergeben?
-2. Welche Einstellung, Musik oder Überschrift lenkt diese Antwort – und passt sie zum Beleg?
+2. Welche Einstellung, Musik oder Überschrift lenkt diese Antwort - und passt sie zum Beleg?
 3. Wird eine Person, Gruppe oder Institution durch ein Bild zur Abkürzung für ein komplexes Problem?
 4. Wo findet das Publikum den Kontext oder die Korrektur, wenn der Beitrag eine Lücke enthält?
 
@@ -194,4 +194,4 @@ Viele Wirkungen lassen sich nur begrenzt zurechnen. Daraus folgt weder Untätigk
 - [WÖk-Begriff: Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order)
 - [OECD: Recommendation on Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/)
 - [European Digital Media Observatory: Fact-checking](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0535/)
-- [Digital Services Act – Verordnung (EU) 2022/2065](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0139/)
+- [Digital Services Act - Verordnung (EU) 2022/2065](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0139/)

@@ -2,8 +2,8 @@ import fs from "node:fs";
 
 const glossary = JSON.parse(fs.readFileSync("public/data/glossary.terms.json", "utf8"));
 const formulaTerms = [
-  ["nwi", "WÖk-Netto-Wirkungsindex = Summe gewichteter positiver Wirkungen − Summe gewichteter negativer Wirkungen; positive Ausweisung nur bei G = 1"],
-  ["t-sroi", "T-SROI = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ) / (1 + r)ᵗ] ÷ Σ(t=0…T)[(Iₜ + Kₜ) / (1 + rₖ)ᵗ]; PV_N^L = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) · (1 − uₜ) − Sₜ) / (1 + r)ᵗ]"],
+  ["nwi", "WÖk-Netto-Wirkungsindex = Summe gewichteter positiver Wirkungen - Summe gewichteter negativer Wirkungen; positive Ausweisung nur bei G = 1"],
+  ["t-sroi", "T-SROI = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 - dₜ) · (1 - vₜ) - Sₜ) / (1 + r)ᵗ] ÷ Σ(t=0…T)[(Iₜ + Kₜ) / (1 + rₖ)ᵗ]; PV_N^L = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 - dₜ) · (1 - vₜ) · (1 - uₜ) - Sₜ) / (1 + r)ᵗ]"],
   ["oeffentlicher-t-sroi", "Öffentlicher T-SROI = diskontierter, kausal zugerechneter Netto-Nutzen / diskontierter klar abgegrenzter öffentlicher Mitteleinsatz"],
   ["wirkungseffizienz", "Wirkungsintensität_U = dokumentierte Netto-Wirkungsgröße ΔZ_U / klar benannter Ressourceneinsatz R"],
   ["wirkungsrendite", "Netto-Wirkungsrendite = Barwert des kausal zugerechneten direkten Nettonutzens in EUR / Barwert des eingesetzten Kapitals in EUR"],
@@ -23,7 +23,7 @@ for (const [slug, expression] of formulaTerms) {
 }
 
 const ioi = glossary.terms.find((entry) => entry.slug === "impact-of-investment");
-if (!ioi?.formula?.expression?.includes("Bdirekt,t · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ")
+if (!ioi?.formula?.expression?.includes("Bdirekt,t · aₜ · (1 - dₜ) · (1 - vₜ) - Sₜ")
   || !ioi.formula.expression.includes("Σ(t=1…T)")
   || !ioi.formula.expression.includes("Σ(t=0…T)")) {
   errors.push("impact-of-investment: kausale Faktoren oder explizite Zeitgrenzen fehlen in der IOI-Formel");
@@ -31,7 +31,7 @@ if (!ioi?.formula?.expression?.includes("Bdirekt,t · aₜ · (1 − dₜ) · (1
 
 const tsroi = glossary.terms.find((entry) => entry.slug === "t-sroi");
 if (!tsroi?.formula?.expression?.includes("PV_N^L")
-  || !tsroi.formula.expression.includes("(1 − uₜ) − Sₜ")
+  || !tsroi.formula.expression.includes("(1 - uₜ) - Sₜ")
   || !tsroi.formula.variables?.some((entry) => String(entry).includes("T ist eine ganze Zahl"))
   || !tsroi.formula.variables?.some((entry) => String(entry).includes("nicht mit dem Nutzenfaktor oder mit u reduziert"))) {
   errors.push("t-sroi: konservative Untergrenze, ganzzahliger Zeitraum oder unveränderte Schäden sind nicht vollständig dokumentiert");

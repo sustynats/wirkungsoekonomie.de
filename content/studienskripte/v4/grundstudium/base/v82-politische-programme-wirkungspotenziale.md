@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v82-politische-programme-wirkungspotenziale.md curriculum=4.0 sanitized=true -->
-# V82 · Politische Programme als Wirkungspotenziale – Mandat ist nicht Maßnahme
+# V82 · Politische Programme als Wirkungspotenziale - Mandat ist nicht Maßnahme
 
 **lecture_id:** `WOEK-G-BASE-082`  
 **display_code:** `V82`  
@@ -82,7 +82,7 @@ Ein Programm kann eine plausible Maßnahme anbieten und trotzdem das Problem zu 
 
 ## 4. Goal Review
 
-Politische Ziele sind legitim politisch gesetzt – aber analytisch prüfbar.
+Politische Ziele sind legitim politisch gesetzt - aber analytisch prüfbar.
 
 Fragen:
 
@@ -219,7 +219,7 @@ Delivery:
 - Rechtsänderung,
 - föderale Schnittstellen.
 
-Das ist eine Wirkungsanalyse – keine Parteibewertung.
+Das ist eine Wirkungsanalyse - keine Parteibewertung.
 
 ## 11. Lifecycle-Traceability nach der Wahl
 
@@ -312,7 +312,7 @@ Keine Parteigesamtnote.
 
 Ein Wahlprogramm ist eine seltsame Wirkungsquelle.
 
-Es enthält sehr konkrete Versprechen – und gleichzeitig Dinge, die noch lange nicht umgesetzt sind.
+Es enthält sehr konkrete Versprechen - und gleichzeitig Dinge, die noch lange nicht umgesetzt sind.
 
 Darum dürfen wir nicht so tun, als wäre ein Programmsatz schon Gesetz.
 
@@ -332,7 +332,7 @@ Nach der Wahl können wir verfolgen: Ist die Zusage im Koalitionsvertrag? Gibt e
 
 Das ist Lifecycle Traceability.
 
-Und damit vermeiden wir einen typischen politischen Trick – oder einen typischen Analysefehler: Versprechen und Realität durcheinanderzuwerfen.
+Und damit vermeiden wir einen typischen politischen Trick - oder einen typischen Analysefehler: Versprechen und Realität durcheinanderzuwerfen.
 
 Noch etwas: Wir machen daraus keinen Parteiscore.
 

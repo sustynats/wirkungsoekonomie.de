@@ -1,4 +1,4 @@
-# Wahlkreis-Wirkungscheck — Komponenten
+# Wahlkreis-Wirkungscheck - Komponenten
 
 Version 1.0 · Stand 2026-08-13 · Lane: Claude (Design/UX) · Umsetzung: Codex
 
@@ -24,9 +24,9 @@ Konventionen für alle Komponenten:
 | `variant` | `primary \| secondary \| quiet \| link \| danger` | `secondary` | siehe `DESIGN_SYSTEM.md` 6.2 |
 | `size` | `md \| sm` | `md` | `md` = 48px, `sm` = 44px. Keine kleinere Grösse |
 | `fullWidth` | boolean | `false` | unter 48rem für Primary/Secondary immer `true` |
-| `iconStart` / `iconEnd` | Icon | — | dekorativ, `aria-hidden` |
-| `disabledReason` | string | — | setzt `aria-disabled="true"` und liefert den Grund bei Aktivierung |
-| `onActivate` | fn | — | reagiert auf Klick, Enter und Leertaste |
+| `iconStart` / `iconEnd` | Icon | - | dekorativ, `aria-hidden` |
+| `disabledReason` | string | - | setzt `aria-disabled="true"` und liefert den Grund bei Aktivierung |
+| `onActivate` | fn | - | reagiert auf Klick, Enter und Leertaste |
 
 Regeln: genau ein `primary` pro Screen. `danger` ausschliesslich für
 „Alle lokalen Daten löschen". `link` nur inline im Fliesstext.
@@ -79,7 +79,7 @@ mit `aria-hidden`.
 
 ## 2. Antwortkomponenten
 
-### 2.1 `OptionTile` — Grundform aller Auswahlflächen
+### 2.1 `OptionTile` - Grundform aller Auswahlflächen
 
 | Prop | Typ | Beschreibung |
 |---|---|---|
@@ -127,7 +127,7 @@ Bei Erreichen von `max` werden nicht gewählte Kacheln `disabled` mit `disabledH
 Ein Zähler `3 von 5 gewählt` steht über der Gruppe und ist `aria-live="polite"`.
 Die Kacheln verschwinden nie und springen nie um.
 
-### 2.4 `PriorityRanker` — Top 3
+### 2.4 `PriorityRanker` - Top 3
 
 | Prop | Typ | Beschreibung |
 |---|---|---|
@@ -235,7 +235,7 @@ Gewählter Zustand: Eingabe wird durch eine Bestätigungskarte ersetzt
 Zurückhaltend gestaltet: `--wc-ink-muted`, keine Fläche, kein Rahmen,
 kleines Dreieck als `::marker`-Ersatz. Öffnungszustand gilt sitzungsweit.
 
-### 3.2 `ExplainDrawer` — „Warum wird mir das vorgeschlagen?"
+### 3.2 `ExplainDrawer` - „Warum wird mir das vorgeschlagen?"
 
 Kernkomponente. Vollständige Inhaltsdefinition in `RESULT_EXPLAINABILITY.md`.
 
@@ -333,7 +333,7 @@ Regeln:
 - `matchReason` ist Pflicht. Eine Karte ohne sichtbaren Bezug zur Eingabe darf
   nicht gerendert werden.
 
-### 4.2 `LeverList` — Wirkungshebel
+### 4.2 `LeverList` - Wirkungshebel
 
 | Prop | Typ |
 |---|---|
@@ -352,7 +352,7 @@ wie weit ein Faktor adressiert ist. Deshalb ist das Segmentzeichen hier
 Wort daneben. Ein Hebel darf nie mit „Belegbarkeit: mittel" beschriftet werden;
 das würde Abdeckung und Belegbarkeit verwechseln.
 
-### 4.3 `ImpactPath` — Wirkpfad
+### 4.3 `ImpactPath` - Wirkpfad
 
 | Prop | Typ |
 |---|---|
@@ -368,7 +368,7 @@ Listenfassung. Unter 64rem, bei `prefers-reduced-motion` und im Druck ist
 Risiken stehen in einem eigenen Block „Risiken und Gegenwirkungen", neutral
 gestaltet, nicht rot, nicht als Warnung.
 
-### 4.4 `ImpactSpaces` — Mensch · Planet · Demokratie
+### 4.4 `ImpactSpaces` - Mensch · Planet · Demokratie
 
 | Prop | Typ |
 |---|---|
@@ -394,7 +394,7 @@ sich nichts ändern würde. Button „Zurücksetzen" immer sichtbar, sobald ein 
 aktiv ist. Hinweis „Ihre ursprünglichen Angaben bleiben unverändert." steht
 dauerhaft im Panel.
 
-### 4.6 `ToolkitCard` — Politik-Kit
+### 4.6 `ToolkitCard` - Politik-Kit
 
 | Prop | Typ |
 |---|---|
@@ -472,7 +472,7 @@ Betreiber, Impressum, Datenschutz, Methodik, Kontakt, Stand der Daten,
 Methoden-Version. Zusätzlich der Neutralitätssatz. Keine Social-Media-Symbole,
 keine Newsletter-Anmeldung, kein Spendenaufruf.
 
-### 5.4 `Drawer` / `Sheet` — Grundverhalten
+### 5.4 `Drawer` / `Sheet` - Grundverhalten
 
 Gemeinsame Basis für `ExplainDrawer`, `TrustDrawer`, `SourcePopover` (mobil),
 `ImpactPath` (mobil).
@@ -502,20 +502,20 @@ Kein Stacktrace, keine Schuldzuweisung, kein „Ups".
 
 | Komponente | Ruhe | Hover | Fokus | Gewählt | Gesperrt | Fehler | Leer |
 |---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| Button | ✓ | ✓ | ✓ | — | ✓ | — | — |
-| OptionTile | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — |
-| MultiSelect | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | — |
+| Button | ✓ | ✓ | ✓ | - | ✓ | - | - |
+| OptionTile | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| MultiSelect | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | PriorityRanker | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| LikertGrid | ✓ | ✓ | ✓ | ✓ | — | ✓ | — |
-| TimeAxis | ✓ | ✓ | ✓ | ✓ | — | ✓ | — |
-| Combobox | ✓ | ✓ | ✓ | ✓ | — | ✓ | ✓ |
-| FreeText | ✓ | ✓ | ✓ | — | — | ✓ | ✓ |
-| ExplainDrawer | ✓ | — | ✓ | — | — | ✓ | ✓ |
-| SourcePopover | ✓ | ✓ | ✓ | — | — | ✓ | ✓ |
-| RecommendationCard | ✓ | ✓ | ✓ | — | — | — | — |
-| SensitivityPanel | ✓ | ✓ | ✓ | ✓ | ✓ | — | ✓ |
-| ConsentChoice | ✓ | ✓ | ✓ | ✓ | — | — | — |
-| LoadingSteps | ✓ | — | — | — | — | ✓ | — |
+| LikertGrid | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
+| TimeAxis | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
+| Combobox | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| FreeText | ✓ | ✓ | ✓ | - | - | ✓ | ✓ |
+| ExplainDrawer | ✓ | - | ✓ | - | - | ✓ | ✓ |
+| SourcePopover | ✓ | ✓ | ✓ | - | - | ✓ | ✓ |
+| RecommendationCard | ✓ | ✓ | ✓ | - | - | - | - |
+| SensitivityPanel | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| ConsentChoice | ✓ | ✓ | ✓ | ✓ | - | - | - |
+| LoadingSteps | ✓ | - | - | - | - | ✓ | - |
 
 „Leer" bei `ExplainDrawer` bedeutet: Regel ohne hinterlegte Alternative. Dann
 entfällt Abschnitt 6 und der Grund steht dort ausdrücklich.

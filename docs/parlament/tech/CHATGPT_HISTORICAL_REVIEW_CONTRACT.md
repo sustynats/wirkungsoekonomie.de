@@ -29,7 +29,7 @@ Der maschinenlesbare Vertrag wird in `woek-parlament-app/lib/editorial/external-
 - strikt getrennte Ex-ante- und Ex-post-Perspektive;
 - Wirkpfade erster, zweiter und dritter Ordnung sowie die betroffenen Wirkungsfelder;
 - Gegenfaktum, Berechnungsanforderungen, Risiken und Datenlücken;
-- WÖk-ID-, SDG-/SDG+- und Mensch–Planet–Demokratie-Kandidaten;
+- WÖk-ID-, SDG-/SDG+- und Mensch-Planet-Demokratie-Kandidaten;
 - Querverweise auf ähnliche Fälle;
 - ausschließlich `AI_SUGGESTION`-Kandidaten für eine ex-ante- bzw. ex-post-vorzugswürdige Option;
 - Referenzsnapshot, Zeitstempel und verwendete Quellen.
@@ -42,7 +42,7 @@ Die `DecisionUnit` darf auf die amtliche namentliche Abstimmung und deren Origin
 
 ## Chargen und Qualität
 
-- Normal: 10–15 Fälle pro Charge; große Haushalts- oder Systementscheidungen kleiner.
+- Normal: 10-15 Fälle pro Charge; große Haushalts- oder Systementscheidungen kleiner.
 - Eingangstest zuerst: Entscheidung, finale Fassung, Beschlussstatus, Quellen, Ex-ante-/Ex-post-Evidenz und Referenzsnapshot prüfen.
 - Bei Lücken: `SOURCE_INCOMPLETE` oder `DATA_GAP`; kein Ersatz durch Modellprosa.
 - `batch-summary.md` enthält nur Fortschritt, Datenlücken, Quellenkonflikte, Muster und Methodenfragen.

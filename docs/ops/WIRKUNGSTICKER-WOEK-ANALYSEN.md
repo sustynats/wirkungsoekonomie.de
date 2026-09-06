@@ -54,7 +54,7 @@ Beim unveränderten Quellenfingerabdruck ist der Prozess idempotent. Substanziel
 
 ## Darstellung, Feed und Reihenfolge
 
-WÖK-Analysen werden als breite, zurückhaltend hervorgehobene Karten gleichmäßig zwischen die Meldungen gestreut – auch wenn mehr als drei gleichzeitig relevant sind. Die Streuung verändert kein Veröffentlichungsdatum. Im Feed stehen Meldungen und Analysen nach ihrem tatsächlichen Veröffentlichungs- beziehungsweise Aktualisierungszeitpunkt. Ursprungsgeschichte und Deep Dive verlinken gegenseitig. Seiten sind indexierbar, canonicalisiert, als `Article` strukturiert und WebApp-/RSS-kompatibel.
+WÖK-Analysen werden als breite, zurückhaltend hervorgehobene Karten gleichmäßig zwischen die Meldungen gestreut - auch wenn mehr als drei gleichzeitig relevant sind. Die Streuung verändert kein Veröffentlichungsdatum. Im Feed stehen Meldungen und Analysen nach ihrem tatsächlichen Veröffentlichungs- beziehungsweise Aktualisierungszeitpunkt. Ursprungsgeschichte und Deep Dive verlinken gegenseitig. Seiten sind indexierbar, canonicalisiert, als `Article` strukturiert und WebApp-/RSS-kompatibel.
 
 ## Automatik und Kosten
 

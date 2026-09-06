@@ -1,6 +1,6 @@
 # WÖk-KI Capabilities
 
-Stand: 2026-08-14. Die „WÖK-KI" ist **kein** generischer Chatbot, sondern ein quellengebundenes, WÖk-methodisches System — und sie existiert derzeit in **zwei getrennten Implementierungen** plus mehreren Frontends.
+Stand: 2026-08-14. Die „WÖK-KI" ist **kein** generischer Chatbot, sondern ein quellengebundenes, WÖk-methodisches System - und sie existiert derzeit in **zwei getrennten Implementierungen** plus mehreren Frontends.
 
 ## Implementierung 1: WÖk-Kern-API auf Oracle (führend für die Website)
 
@@ -20,7 +20,7 @@ Regelbasierte **lokale** Auswertung zuerst; KI nur als **freiwillige Vertiefung*
 
 ## Grenzen (dokumentiert in `api/v1/capabilities/`)
 
-„Keine Personenbewertung, kein Social-Credit"; KI schreibt keine offiziellen Voten/Empfehlungen — redaktionelle Freigabe bleibt menschlich (für das Parlament-Portal zwingend: `EDITORIAL_REVIEW_REQUIRED` statt Auto-Änderung).
+„Keine Personenbewertung, kein Social-Credit"; KI schreibt keine offiziellen Voten/Empfehlungen - redaktionelle Freigabe bleibt menschlich (für das Parlament-Portal zwingend: `EDITORIAL_REVIEW_REQUIRED` statt Auto-Änderung).
 
 ## Shared-Service-Befund (§22 Bootstrap)
 

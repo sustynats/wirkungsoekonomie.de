@@ -1,4 +1,4 @@
-# Interaktiver Stadtvergleich – Bundestagswahl 2025
+# Interaktiver Stadtvergleich - Bundestagswahl 2025
 
 Stand: 6. September 2026. Implementiert und lokal geprüft. Das produktive
 Backend ist aktualisiert; die Umfrage bleibt bis zur Website-Abnahme pausiert.

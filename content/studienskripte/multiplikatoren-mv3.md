@@ -3,7 +3,7 @@
 **Track / Kurscode:** Multiplikator:innen für Wirkungsökonomie · `multiplikatoren`
 **Vorlesungscode:** MV3
 **Empfohlene Lernzeit:** 65 Minuten · **Videolänge:** etwa 20 Minuten
-**Voraussetzung:** MV1 – Maßstabskrise und Wirkung statt Kapital; MV2 – Das Wirkungsvokabular sicher erklären
+**Voraussetzung:** MV1 - Maßstabskrise und Wirkung statt Kapital; MV2 - Das Wirkungsvokabular sicher erklären
 **Status:** fachlicher Master in Ausarbeitung · vor Veröffentlichung redaktionell prüfen
 **Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-buch-html/) · [WÖk-Referenz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-index-html/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-glossar-html/) · [WÖMS 2.0](https://wirkungsoekonomie.de/bibliothek/eintraege/woems-2-0/)
 
@@ -20,12 +20,12 @@ Diese Vorlesung verbindet drei Schritte: Wirkung sichtbar machen, Folgen bewerte
 - **Kernaussage:** Wirkungsmessung wird erst dann zur Wirkungslenkung, wenn Befunde Entscheidungen verändern. Positive Netto-Wirkung verlangt, gute und negative Folgen offen zusammenzuführen; Nichtkompensation und Reverse Merit Order verhindern, dass schwere Schäden durch Vorteile an anderer Stelle schöngerechnet werden.
 - **Medienstatus:** Dieses Master-Skript ist die verbindliche Grundlage für Sprechertext, Folien, Grafiken und Video. Ein fehlendes Medium sperrt den Lernweg nicht.
 - **Verbindliche Dramaturgie für Folien, TTS und Video:**
-  1. **0:00–3:00 – Zwei Angebote für den Bauhof:** Der niedrigste Preis ist nicht automatisch die günstigste Entscheidung.
-  2. **3:00–6:00 – Vom Befund zur Entscheidung:** Reporting beschreibt; Rückkopplung verändert die nächste Wahl.
-  3. **6:00–10:00 – Netto-Wirkung ohne Ablassrechnung:** Das ganze Bild gehört auf den Tisch, aber schwere Schäden verschwinden nicht im Durchschnitt.
-  4. **10:00–13:30 – Das schwächste Feld entscheidet:** Nichtkompensation und Reverse Merit Order als Schutz vor falschen Anreizen.
-  5. **13:30–17:00 – Ehrliche Preise und gerechte Übergänge:** Preise, Regeln und Beschaffung lenken; soziale Härten gehören in die Gestaltung.
-  6. **17:00–20:00 – Die ruhige Erklärung:** Ein Gesprächsleitfaden für Einwände, ohne Planwirtschafts- oder Moralvokabular.
+  1. **0:00-3:00 - Zwei Angebote für den Bauhof:** Der niedrigste Preis ist nicht automatisch die günstigste Entscheidung.
+  2. **3:00-6:00 - Vom Befund zur Entscheidung:** Reporting beschreibt; Rückkopplung verändert die nächste Wahl.
+  3. **6:00-10:00 - Netto-Wirkung ohne Ablassrechnung:** Das ganze Bild gehört auf den Tisch, aber schwere Schäden verschwinden nicht im Durchschnitt.
+  4. **10:00-13:30 - Das schwächste Feld entscheidet:** Nichtkompensation und Reverse Merit Order als Schutz vor falschen Anreizen.
+  5. **13:30-17:00 - Ehrliche Preise und gerechte Übergänge:** Preise, Regeln und Beschaffung lenken; soziale Härten gehören in die Gestaltung.
+  6. **17:00-20:00 - Die ruhige Erklärung:** Ein Gesprächsleitfaden für Einwände, ohne Planwirtschafts- oder Moralvokabular.
 
 ## 3. Transkript / Erklärgerüst
 
@@ -124,7 +124,7 @@ Positive Netto-Wirkung verlangt ein vollständigeres Bild, aber keine Ablassrech
 
 In MV4 geht es darum, wie du solche Zusammenhänge so vermittelst, dass Menschen nicht nur zustimmen oder widersprechen, sondern selbst prüfen und weiterdenken können: Didaktik der Wirkung.
 
-## 4. Skript / Folien – fachliche Sicherung
+## 4. Skript / Folien - fachliche Sicherung
 
 ### Der Lernkreis: von der Beobachtung zur Änderung
 

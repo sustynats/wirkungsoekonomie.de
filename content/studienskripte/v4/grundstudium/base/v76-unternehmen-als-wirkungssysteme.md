@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v76-unternehmen-als-wirkungssysteme.md curriculum=4.0 sanitized=true -->
-# V76 · Unternehmen als Wirkungssysteme – Geschäftsmodell, Betrieb und Wertschöpfungskette
+# V76 · Unternehmen als Wirkungssysteme - Geschäftsmodell, Betrieb und Wertschöpfungskette
 
 **lecture_id:** `WOEK-G-BASE-076`  
 **display_code:** `V76`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Unternehmen wirkt nicht nur durch seinen eigenen Stromverbrauch. Entscheidend sind **Produkte und Dienstleistungen, Geschäftsmodell, Lieferkette, Beschäftigung, Kapitalallokation, Steuern, Innovation und Marktverhalten**. ESG-Berichte liefern dafür viele wichtige Daten, sind aber nicht automatisch eine Wirkungsbewertung des Geschäftsmodells. WÖk liest das Unternehmen als System: Wo entstehen reale Zustandsänderungen – und welche Entscheidungen können sie verbessern?
+Ein Unternehmen wirkt nicht nur durch seinen eigenen Stromverbrauch. Entscheidend sind **Produkte und Dienstleistungen, Geschäftsmodell, Lieferkette, Beschäftigung, Kapitalallokation, Steuern, Innovation und Marktverhalten**. ESG-Berichte liefern dafür viele wichtige Daten, sind aber nicht automatisch eine Wirkungsbewertung des Geschäftsmodells. WÖk liest das Unternehmen als System: Wo entstehen reale Zustandsänderungen - und welche Entscheidungen können sie verbessern?
 
 ## Lernziele
 
@@ -100,7 +100,7 @@ Besser:
 - Data Gaps,
 - Transitionpfad.
 
-## 6. Scope 1–3 und darüber hinaus
+## 6. Scope 1-3 und darüber hinaus
 
 Treibhausgas-Scopes sind wichtig, aber nur Klimadatenlogik.
 
@@ -111,7 +111,7 @@ Andere Wirkungen brauchen andere Systemgrenzen:
 - Ressourcen,
 - Demokratie/Informationssysteme.
 
-Keine Scope-1–3-Analogie unkritisch auf alle Wirkungen übertragen.
+Keine Scope-1-3-Analogie unkritisch auf alle Wirkungen übertragen.
 
 ## 7. Governance und Anreize
 
@@ -177,7 +177,7 @@ Falsch.
 ### „Grünes Büro = nachhaltiges Geschäftsmodell.“
 Falsch.
 
-### „Scope 1–3 deckt alle Wirkung ab.“
+### „Scope 1-3 deckt alle Wirkung ab.“
 Falsch.
 
 ### „Unternehmen braucht eine einzige Gesamtnote.“
@@ -217,7 +217,7 @@ Ein Unternehmen ist kein Gebäude mit Stromzähler.
 
 Seine größte Wirkung kann im Produkt stecken, in der Lieferkette oder im Geschäftsmodell.
 
-Deshalb ist ein guter Nachhaltigkeitsbericht wichtig – aber nicht das Ende der Analyse.
+Deshalb ist ein guter Nachhaltigkeitsbericht wichtig - aber nicht das Ende der Analyse.
 
 Wir fragen: Welche Entscheidungen erzeugen welche Zustandsänderung?
 
@@ -229,7 +229,7 @@ Und große Unternehmen brauchen Segmentprofile statt einer schönen Gesamtnote.
 
 Der Merksatz lautet:
 
-**Unternehmenswirkung entsteht dort, wo Geschäftsmodell, Produkte, Wertschöpfung und Entscheidungen reale Zustände verändern – nicht dort, wo der Bericht besonders dick ist.**
+**Unternehmenswirkung entsteht dort, wo Geschäftsmodell, Produkte, Wertschöpfung und Entscheidungen reale Zustände verändern - nicht dort, wo der Bericht besonders dick ist.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

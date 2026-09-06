@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Dein Alltag hat Wirkung. Aber du bist nicht allein verantwortlich für globale Lieferketten, Stromnetze, Stadtplanung oder Produktstandards. **Wirkungskompetenz im Alltag** heißt deshalb: relevante Entscheidungen erkennen, gute Informationen nutzen, realistische Alternativen wählen – und dort politisch oder organisatorisch ansetzen, wo systemische Hebel größer sind. Nicht Perfektion, sondern wirksame Prioritäten.
+Dein Alltag hat Wirkung. Aber du bist nicht allein verantwortlich für globale Lieferketten, Stromnetze, Stadtplanung oder Produktstandards. **Wirkungskompetenz im Alltag** heißt deshalb: relevante Entscheidungen erkennen, gute Informationen nutzen, realistische Alternativen wählen - und dort politisch oder organisatorisch ansetzen, wo systemische Hebel größer sind. Nicht Perfektion, sondern wirksame Prioritäten.
 
 ## Lernziele
 
@@ -132,7 +132,7 @@ Je Hebel:
 - Zielzustand,
 - Mechanismus,
 - realistische Hürde,
-- Recheck nach 3–6 Monaten.
+- Recheck nach 3-6 Monaten.
 
 ## 9. Perfektion ist kein Ziel
 
@@ -235,7 +235,7 @@ Individuen entscheiden. Unternehmen gestalten Produkte. Politik baut Infrastrukt
 
 Der Merksatz lautet:
 
-**Du musst nicht perfekt leben. Du solltest die wenigen großen Hebel kennen – und Systeme unterstützen, die gute Optionen einfacher, bezahlbarer und normaler machen.**
+**Du musst nicht perfekt leben. Du solltest die wenigen großen Hebel kennen - und Systeme unterstützen, die gute Optionen einfacher, bezahlbarer und normaler machen.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

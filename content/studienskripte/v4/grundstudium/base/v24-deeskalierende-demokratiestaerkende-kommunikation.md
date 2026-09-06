@@ -71,10 +71,10 @@ Je nach Kontext: Verständnis, Vertrauen, Korrektur von Fehlannahmen, Beteiligun
 
 ## Typische Fehlinterpretationen
 
-- „Deeskalierend = weich.“ – Falsch.
-- „Demokratiestärkend = regierungsfreundlich.“ – Falsch.
-- „Kritik delegitimiert automatisch.“ – Nein.
-- „Likes messen demokratische Wirkung.“ – Nein.
+- „Deeskalierend = weich.“ - Falsch.
+- „Demokratiestärkend = regierungsfreundlich.“ - Falsch.
+- „Kritik delegitimiert automatisch.“ - Nein.
+- „Likes messen demokratische Wirkung.“ - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -96,7 +96,7 @@ Prüfungsfähig sind Konflikttypen, Deeskalation, Revisionsoffenheit, Kommunikat
 
 ## Sprechertext
 
-Demokratie braucht Streit. Deshalb ist deeskalierende Kommunikation nicht die Kunst, alles freundlich zu verpacken. Sie ist die Kunst, den Streit so zu führen, dass Fakten prüfbar, Werte sichtbar und Menschen weiterhin als legitime Mitglieder des Gemeinwesens behandelt werden. Man kann sehr klar sagen, dass etwas falsch oder rechtswidrig ist. Aber wir vermeiden Mechanismen, die unnötig entmenschlichen oder jede Korrektur unmöglich machen. Gute Kommunikation hält die Gesellschaft streitfähig – nicht streitfrei.
+Demokratie braucht Streit. Deshalb ist deeskalierende Kommunikation nicht die Kunst, alles freundlich zu verpacken. Sie ist die Kunst, den Streit so zu führen, dass Fakten prüfbar, Werte sichtbar und Menschen weiterhin als legitime Mitglieder des Gemeinwesens behandelt werden. Man kann sehr klar sagen, dass etwas falsch oder rechtswidrig ist. Aber wir vermeiden Mechanismen, die unnötig entmenschlichen oder jede Korrektur unmöglich machen. Gute Kommunikation hält die Gesellschaft streitfähig - nicht streitfrei.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

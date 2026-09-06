@@ -1,0 +1,31 @@
+{
+  "reviewedAt": "2026-09-06",
+  "version": "1.1",
+  "releaseTag": "woek-gesamtmodell-2026-09-06-v1-1",
+  "supersedesSources": [
+    "content/site/home-explainer.json",
+    "scripts/site/build-home-explainer.mjs"
+  ],
+  "sourceHashes": {
+    "content/site/home-explainer.json": "544db0316d7b19305d744ba75cc39b691b7c7bb440794e9b803d2ce83bd19c8a",
+    "scripts/site/build-home-explainer.mjs": "99a4018153b9948226025af8ecd36daa7b4d9c0324a703f2fdbb9d6ed5fe6122",
+    "scripts/publications/build-model-explainer-v1-1.py": "95d4887003aa095422dc6b99c5dc71dcc54a7262f557a698cf5d1a0823843684",
+    "scripts/lib/model-definition-update.mjs": "3f315239d4cef822dba93c48f045ae4c5b309f21a93d55790fbfe5d4e62bd453"
+  },
+  "files": [
+    {
+      "filename": "woek-einfach-erklaert-2026-09-06-v1-1.pdf",
+      "title": "Wirkungsökonomie einfach erklärt: Wirtschafts- und Gesellschaftsmodell (v1.1)",
+      "kind": "explainer",
+      "supersedes": "woek-einfach-erklaert-2026-09-06.pdf",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-gesamtmodell-2026-09-06-v1-1/woek-einfach-erklaert-2026-09-06-v1-1.pdf",
+      "sha256": "6c34cba13e6641aeb7e62e10ae128864abe347981eb041f7bd7d3bb253059e1c",
+      "bytes": 48547,
+      "pages": 3,
+      "technicalCorrection": {
+        "date": "2026-09-06",
+        "previousSha256": "5324fadeb4804796b587d2e00ef09e2c6cca4bb4e783e6c89479784bbd2369fc"
+      }
+    }
+  ]
+}

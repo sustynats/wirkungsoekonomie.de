@@ -24,7 +24,7 @@ Bis die Sanierung abgeschlossen ist:
 - Keine weiteren kurzen Detailkonzepte als „Detailkonzept“ ausgeben.
 - Keine weiteren 2-Seiten-Dossiers als „Dossier“ ausgeben.
 - Keine Webseiten veröffentlichen, die nur Teaser oder Stichpunkte enthalten, wenn dazu bereits umfangreiche Konzepte/Dossiers vorgesehen sind.
-- Bestehende kurze Dokumente umbenennen in `kurzueberblick`, `notiz`, `intro` oder `platzhalter` – oder aus den öffentlichen Downloadbereichen entfernen.
+- Bestehende kurze Dokumente umbenennen in `kurzueberblick`, `notiz`, `intro` oder `platzhalter` - oder aus den öffentlichen Downloadbereichen entfernen.
 - Bereits veröffentlichte Unterseiten mit schwachem Inhalt vorläufig als `Entwurf / Ausbau folgt` kennzeichnen, sofern keine vollständige Fassung vorliegt.
 
 ## Neuer Mindeststandard für Detailkonzepte

@@ -21,9 +21,13 @@
       "kind": "explainer",
       "supersedes": null,
       "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-lernweg-2026-09-06/woek-einfach-erklaert-2026-09-06.pdf",
-      "sha256": "39d5ab681db53553022c6ab1acd79be678b62eca69a3f7d6de5bc6d8435b0542",
+      "sha256": "d0c70e8ebe7ec96197819b0bbe58291bfb3bc3462b84931087573bd66a36201e",
       "pages": 2,
-      "bytes": 46882
+      "bytes": 46391,
+      "technicalCorrection": {
+        "date": "2026-09-06",
+        "previousSha256": "39d5ab681db53553022c6ab1acd79be678b62eca69a3f7d6de5bc6d8435b0542"
+      }
     },
     {
       "filename": "woek-impact-controlling-lernweg-2026-09-06.pdf",
@@ -31,9 +35,13 @@
       "kind": "explainer",
       "supersedes": "woek-impact-controlling-erklaerung-2026-09-05.pdf",
       "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-lernweg-2026-09-06/woek-impact-controlling-lernweg-2026-09-06.pdf",
-      "sha256": "40f1e480a6eb667038aad55302d0a6ea77e62411af4560c585954ec78a77d477",
+      "sha256": "57eccc098ebb341c9c2a112f9bc6e8391d03f8044b3d31c543c883dd65fa8851",
       "pages": 21,
-      "bytes": 80742
+      "bytes": 78337,
+      "technicalCorrection": {
+        "date": "2026-09-06",
+        "previousSha256": "40f1e480a6eb667038aad55302d0a6ea77e62411af4560c585954ec78a77d477"
+      }
     }
   ]
 }

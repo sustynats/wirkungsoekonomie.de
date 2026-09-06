@@ -1,4 +1,4 @@
-# Berlin SPD P25 — canonical lossless materialisation
+# Berlin SPD P25 - canonical lossless materialisation
 
 ## Scope and authority
 
@@ -22,7 +22,7 @@ The 59 previously prepared records are unchanged except for adding this child to
 
 | Set | P25 count |
 | --- | ---: |
-| Full source units SU0291–SU0302 | 12 |
+| Full source units SU0291-SU0302 | 12 |
 | Preserved original atoms | 29 |
 | Deterministic authorized children | 19 |
 | Total terminal records | 60 |
@@ -37,11 +37,11 @@ Strict gate: `BE_SPD_2026_P25_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_LOSSLESS_MAT
 
 The shared materializer admits P25 only after strict validation, then subtracts the validated physical-page set from the frozen page envelopes and subtracts consumed source IDs in source order. Berlin has **1,190 physical-page review envelopes**, 0 already-segmented open objects, and 1,680 terminal source records. The total number of remaining effect objects is still unknown; envelopes are not effect counts.
 
-SPD has 238 terminal records in the current P22–P25 projection (59 explicit, 65 exact RNAA, 97 context, 17 versioned), protected physical scope P1–P25, and 41 remaining physical envelopes P26–P66. Cross-page SU0280, SU0290 and SU0302 are each consumed once. The candidate unconsumed frontier is P26 / `BE-SPD-2026-SU-0303`. It becomes the accepted frontier only after exact-head merge, full merged-main gates and fresh set-wise proof. **P26 Fach is not authorized by this work.**
+SPD has 238 terminal records in the current P22-P25 projection (59 explicit, 65 exact RNAA, 97 context, 17 versioned), protected physical scope P1-P25, and 41 remaining physical envelopes P26-P66. Cross-page SU0280, SU0290 and SU0302 are each consumed once. The candidate unconsumed frontier is P26 / `BE-SPD-2026-SU-0303`. It becomes the accepted frontier only after exact-head merge, full merged-main gates and fresh set-wise proof. **P26 Fach is not authorized by this work.**
 
 Berlin remains **4/12** programme-terminal (BSW, DKP, Die PARTEI, SGP); SPD and Berlin are not programme-terminal. MV remains unchanged. Current Golden readiness remains `FACH_RESIDUAL_OPEN`, not a new release approval.
 
-Protected SPD P1–P24 projected-record hash: `eca48473c061f00e17322363bb9b55f82a9bec756ec01f41e613a56c792fbf0f`. All other Berlin programme records hash: `aebac94ba5b6fd510c65512fb49f5bc225d3e34e775a7ba55285643a7bd1842b`. Both are enforced in tests. BSW P1–P66 and MV SPD P1–P55 source/Fach files are untouched.
+Protected SPD P1-P24 projected-record hash: `eca48473c061f00e17322363bb9b55f82a9bec756ec01f41e613a56c792fbf0f`. All other Berlin programme records hash: `aebac94ba5b6fd510c65512fb49f5bc225d3e34e775a7ba55285643a7bd1842b`. Both are enforced in tests. BSW P1-P66 and MV SPD P1-P55 source/Fach files are untouched.
 
 The #241 metadata now tracks the actual materialized page/cross-page sets (including already-merged P24, previously missing from two display metadata fields). New cross-checks bind these fields directly to the canonical residual and reject stale frontier metadata.
 

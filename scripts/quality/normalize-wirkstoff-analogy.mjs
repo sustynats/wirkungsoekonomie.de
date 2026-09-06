@@ -17,6 +17,8 @@ const preservedScopes = new Set([
   "api",
   "assets",
   "bibliothek",
+  "blog",
+  "journal",
   "begriffe",
   "dokumente",
   "quellenarchiv",

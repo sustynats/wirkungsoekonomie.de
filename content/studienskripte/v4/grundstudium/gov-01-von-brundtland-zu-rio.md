@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Nachhaltigkeit ist nicht erst mit den SDGs entstanden – und schon gar nicht mit der Wirkungsökonomie. Spätestens mit dem Brundtland-Bericht von 1987 und dem Erdgipfel von Rio 1992 wurde daraus ein internationales Governance-Prinzip: Entwicklung sollte wirtschaftliche, soziale und ökologische Folgen zusammen denken und Regierungen sollten dafür konkrete Programme, Institutionen und Berichtswege schaffen. Wer WÖk seriös einordnen will, muss diese Vorgeschichte kennen.
+Nachhaltigkeit ist nicht erst mit den SDGs entstanden - und schon gar nicht mit der Wirkungsökonomie. Spätestens mit dem Brundtland-Bericht von 1987 und dem Erdgipfel von Rio 1992 wurde daraus ein internationales Governance-Prinzip: Entwicklung sollte wirtschaftliche, soziale und ökologische Folgen zusammen denken und Regierungen sollten dafür konkrete Programme, Institutionen und Berichtswege schaffen. Wer WÖk seriös einordnen will, muss diese Vorgeschichte kennen.
 
 ## Lernziele
 
@@ -148,7 +148,7 @@ Historische Nachhaltigkeits-Governance fragt unter anderem:
 
 Die heutige WÖk ergänzt systematisch:
 
-`FACT/SOURCE -> PROBLEM REVIEW -> GOAL REVIEW -> A→M→ΔZ→R -> 1.–3. Ordnung/Kaskaden -> Verteilung/Resilienz -> Evidenz -> Gegenfaktum/Attribution -> Optionen -> Reality Check -> Lernen`
+`FACT/SOURCE -> PROBLEM REVIEW -> GOAL REVIEW -> A→M→ΔZ→R -> 1.-3. Ordnung/Kaskaden -> Verteilung/Resilienz -> Evidenz -> Gegenfaktum/Attribution -> Optionen -> Reality Check -> Lernen`
 
 Der Unterschied ist also **Anschluss plus Vertiefung**, nicht „vorher blind, jetzt sehend“.
 
@@ -156,19 +156,19 @@ Der Unterschied ist also **Anschluss plus Vertiefung**, nicht „vorher blind, j
 
 ### Primärquellen
 
-1. **United Nations Digital Library – Report of the World Commission on Environment and Development, A/42/427 (1987)**  
+1. **United Nations Digital Library - Report of the World Commission on Environment and Development, A/42/427 (1987)**  
    https://digitallibrary.un.org/record/139811
 
-2. **UN General Assembly – Resolution A/RES/42/187 zum Bericht der Weltkommission (1987)**  
+2. **UN General Assembly - Resolution A/RES/42/187 zum Bericht der Weltkommission (1987)**  
    https://digitallibrary.un.org/record/153026
 
-3. **United Nations – Agenda 21, UNCED 1992**  
+3. **United Nations - Agenda 21, UNCED 1992**  
    https://sdgs.un.org/publications/agenda21
 
-4. **United Nations – United Nations Conference on Environment and Development, Rio de Janeiro 1992**  
+4. **United Nations - United Nations Conference on Environment and Development, Rio de Janeiro 1992**  
    https://www.un.org/en/node/89028
 
-5. **UN General Assembly – A/RES/47/190, Follow-up zu UNCED/Rio (1992)**  
+5. **UN General Assembly - A/RES/47/190, Follow-up zu UNCED/Rio (1992)**  
    https://digitallibrary.un.org/record/159179
 
 ### Quellenfunktion
@@ -197,9 +197,9 @@ Prüfungsfähig sind insbesondere:
 
 Wenn wir heute über Nachhaltigkeit reden, wirkt es manchmal, als wäre das irgendwann mit den 17 bunten SDG-Kacheln angefangen. Aber so war es nicht.
 
-Die Geschichte ist älter – und für die Wirkungsökonomie ziemlich wichtig.
+Die Geschichte ist älter - und für die Wirkungsökonomie ziemlich wichtig.
 
-1987 legt eine UN-Kommission einen Bericht vor. Der Titel: „Our Common Future“ – unsere gemeinsame Zukunft. Die zentrale Idee ist eigentlich erstaunlich einfach: Wir können Entwicklung nicht so betreiben, dass wir dabei die Lebensgrundlagen und die Möglichkeiten der Menschen von morgen aufbrauchen.
+1987 legt eine UN-Kommission einen Bericht vor. Der Titel: „Our Common Future“ - unsere gemeinsame Zukunft. Die zentrale Idee ist eigentlich erstaunlich einfach: Wir können Entwicklung nicht so betreiben, dass wir dabei die Lebensgrundlagen und die Möglichkeiten der Menschen von morgen aufbrauchen.
 
 Das klingt heute selbstverständlich. Damals war es politisch ein ziemlich großer Schritt, weil Umwelt und wirtschaftliche Entwicklung oft noch wie Gegenspieler behandelt wurden.
 
@@ -211,7 +211,7 @@ Und genau deshalb muss die Wirkungsökonomie hier sauber bleiben. Wir dürfen ni
 
 Das wäre historisch einfach falsch.
 
-Die spannendere Frage ist: Was können diese bestehenden Systeme – und was fehlt noch?
+Die spannendere Frage ist: Was können diese bestehenden Systeme - und was fehlt noch?
 
 Ein Nachhaltigkeitsziel sagt mir zum Beispiel, wohin ich will. Es sagt mir noch nicht automatisch, ob meine konkrete Maßnahme mich wirklich dorthin bringt.
 
@@ -235,6 +235,6 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

@@ -67,7 +67,7 @@ Die Baseline beantwortet: **Wo starten wir?**
 
 Das Gegenfaktum fragt: **Was wäre wahrscheinlich ohne die Maßnahme passiert?**
 
-Vielleicht wäre der Energieverbrauch auch ohne Sanierung gefallen – etwa wegen milden Wetters oder geänderter Nutzung. Erst der Vergleich mit einer plausiblen Ohne-Maßnahme-Entwicklung erlaubt bessere Attribution.
+Vielleicht wäre der Energieverbrauch auch ohne Sanierung gefallen - etwa wegen milden Wetters oder geänderter Nutzung. Erst der Vergleich mit einer plausiblen Ohne-Maßnahme-Entwicklung erlaubt bessere Attribution.
 
 `BASELINE != COUNTERFACTUAL`
 
@@ -116,11 +116,11 @@ Ob die Kampagne die Ursache war, braucht einen Gegenfaktums- und Attributionsans
 
 ## Typische Fehlinterpretationen
 
-- „Indikator = Wirkung.“ – Falsch.
-- „Nachher besser als vorher = Maßnahme wirkt.“ – Nicht automatisch.
-- „Baseline ist Gegenfaktum.“ – Falsch.
-- „OPEN ist neutral.“ – Falsch.
-- „Ein DNS-Indikator beweist die Wirkung eines Gesetzes.“ – Falsch.
+- „Indikator = Wirkung.“ - Falsch.
+- „Nachher besser als vorher = Maßnahme wirkt.“ - Nicht automatisch.
+- „Baseline ist Gegenfaktum.“ - Falsch.
+- „OPEN ist neutral.“ - Falsch.
+- „Ein DNS-Indikator beweist die Wirkung eines Gesetzes.“ - Falsch.
 
 ## WÖk-Abgrenzung
 
@@ -165,7 +165,7 @@ Wenn sich nach einer Maßnahme etwas verändert, ist das spannend. Aber der näc
 
 Dafür trennen wir die Ebenen. Zuerst den relevanten Zustand. Dann den Indikator. Dann die Beobachtung. Danach fragen wir nach dem Gegenfaktum: Was wäre ohne die Maßnahme passiert? Welche anderen Erklärungen gibt es?
 
-Und wir trennen noch etwas: Richtung und Sicherheit. Etwas kann wahrscheinlich positiv wirken, obwohl die Evidenz noch schwach ist. Oder wir wissen schlicht zu wenig. Dann lautet der Befund OPEN – nicht null, nicht neutral.
+Und wir trennen noch etwas: Richtung und Sicherheit. Etwas kann wahrscheinlich positiv wirken, obwohl die Evidenz noch schwach ist. Oder wir wissen schlicht zu wenig. Dann lautet der Befund OPEN - nicht null, nicht neutral.
 
 Diese Trennung ist ein Kern der Wirkungskompetenz. Sie schützt uns davor, aus guten Zahlen vorschnell gute Geschichten zu machen.
 
@@ -186,7 +186,7 @@ Indikatoren zeigen beobachtbare Ausschnitte eines Zustands. Ihre Auswahl muss zu
 
 ### Durchgearbeiteter Rechenfall: zwei Vergleichsgruppen
 
-Eine fiktive Einrichtung führt eine neue Terminorganisation ein. Ihre durchschnittliche Wartezeit sinkt von zwölf auf acht Tage. In einer geeigneten Vergleichseinrichtung ohne diese Änderung sinkt sie im selben Zeitraum von zehn auf acht Tage. Die einfache Veränderung beträgt in der ersten Einrichtung minus vier Tage. Die Differenz der Veränderungen beträgt minus zwei Tage: (8−12)−(8−10)=−2.
+Eine fiktive Einrichtung führt eine neue Terminorganisation ein. Ihre durchschnittliche Wartezeit sinkt von zwölf auf acht Tage. In einer geeigneten Vergleichseinrichtung ohne diese Änderung sinkt sie im selben Zeitraum von zehn auf acht Tage. Die einfache Veränderung beträgt in der ersten Einrichtung minus vier Tage. Die Differenz der Veränderungen beträgt minus zwei Tage: (8-12)-(8-10)=-2.
 
 Diese Differenz ist nicht automatisch ein gesicherter kausaler Effekt. Ein Difference-in-Differences-Ansatz benötigt unter anderem eine begründete Annahme über die vergleichbare Entwicklung ohne Maßnahme. Wenn sich Fallarten, Personal oder andere Bedingungen unterschiedlich ändern, kann die Zuschreibung verzerrt sein. Das Beispiel illustriert die Rechenlogik, keine tatsächliche Evaluation.
 

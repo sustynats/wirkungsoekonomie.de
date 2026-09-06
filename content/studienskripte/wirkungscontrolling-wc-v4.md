@@ -5,9 +5,7 @@
 **Vorlesungscode:** WC-V4  
 **Modul/Abschnitt:** WC  
 **Titel:** Scorecards, Benchmarks und Bewertungslogik  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v4-scorecards-benchmarks-bewertungslogik.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v4.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v4.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Scorecards, Benchmarks und Bewertungslogik** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,7 +44,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-Wie wird aus vielen Einzeldaten ein bewertbares Gesamtbild – ohne dass gute Werte schlechte verdecken? **Die Scorecard ist das Herzstück der Wirkungsbewertung.**
+Wie wird aus vielen Einzeldaten ein bewertbares Gesamtbild - ohne dass gute Werte schlechte verdecken? **Die Scorecard ist das Herzstück der Wirkungsbewertung.**
 
 ## 2. Video-/Audio-Vorlesung
 
@@ -58,23 +55,23 @@ Wie wird aus vielen Einzeldaten ein bewertbares Gesamtbild – ohne dass gute We
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Was eine Scorecard ist.** Ein strukturiertes Bewertungsprofil je Wirkungsfeld, inklusive Datenqualität.
+**Abschnitt A - Was eine Scorecard ist.** Ein strukturiertes Bewertungsprofil je Wirkungsfeld, inklusive Datenqualität.
 
-**Abschnitt B – Benchmarks und Archetypen.** Bewertung braucht Vergleichsmaßstäbe (Benchmarks) und typisierte Vorlagen (Archetypen).
+**Abschnitt B - Benchmarks und Archetypen.** Bewertung braucht Vergleichsmaßstäbe (Benchmarks) und typisierte Vorlagen (Archetypen).
 
-**Abschnitt C – Von der Scorecard zur Wirkungsklasse.** Aus den Feldwerten entsteht – unter Reverse Merit Order – eine Netto-Wirkung und Wirkungsklasse.
+**Abschnitt C - Von der Scorecard zur Wirkungsklasse.** Aus den Feldwerten entsteht - unter Reverse Merit Order - eine Netto-Wirkung und Wirkungsklasse.
 
-**Abschnitt D – Profil statt Einzelzahl.** Eine Scorecard zeigt ein Profil (wo stark, wo kritisch), nicht eine einzige Punktzahl ohne Kontext.
+**Abschnitt D - Profil statt Einzelzahl.** Eine Scorecard zeigt ein Profil (wo stark, wo kritisch), nicht eine einzige Punktzahl ohne Kontext.
 
-**Abschnitt E – Lesen üben.** Das schwächste kritische Feld erkennen ist die wichtigste Lesekompetenz (V5).
+**Abschnitt E - Lesen üben.** Das schwächste kritische Feld erkennen ist die wichtigste Lesekompetenz (V5).
 
 ## 4. Skript / Folien (Lernseite)
 
-**Die Scorecard ordnet Wirkungsfelder, Datenqualität und Bewertung** (Grundlagen V6). Sie ist der Ort, an dem aus strukturierten Daten (V2–V3) ein bewertbares **Profil** wird: je Wirkungsfeld ein Wert, ergänzt um die **Datenqualität** (wie belastbar ist der Wert?).
+**Die Scorecard ordnet Wirkungsfelder, Datenqualität und Bewertung** (Grundlagen V6). Sie ist der Ort, an dem aus strukturierten Daten (V2-V3) ein bewertbares **Profil** wird: je Wirkungsfeld ein Wert, ergänzt um die **Datenqualität** (wie belastbar ist der Wert?).
 
 **Benchmarks und Regeln geben den Maßstab.** Ein Feldwert ist ohne Vergleich bedeutungslos. **Benchmarks** liefern den Vergleichsmaßstab, wenn sie aktiv validiert sind; Regeln beschreiben den zulässigen Eingabemodus und die Schwellenlogik. Ohne Daten, Nachweis und Assurance bleibt ein Feld unbewertet (`assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx`).
 
-**Von der Scorecard zur Wirkungsklasse.** Aus den Feldwerten entsteht – **unter Reverse Merit Order** – die **Netto-Wirkung** und eine **Wirkungsklasse**. Entscheidend: Die Verdichtung (FinalScore) darf schlechte kritische Werte nicht durch gute Teilwerte überdecken (V5). Erst danach lassen sich Steuerungsentscheidungen ableiten.
+**Von der Scorecard zur Wirkungsklasse.** Aus den Feldwerten entsteht - **unter Reverse Merit Order** - die **Netto-Wirkung** und eine **Wirkungsklasse**. Entscheidend: Die Verdichtung (FinalScore) darf schlechte kritische Werte nicht durch gute Teilwerte überdecken (V5). Erst danach lassen sich Steuerungsentscheidungen ableiten.
 
 **Eine Scorecard ist ein Profil, keine einzelne Note.** Sie zeigt, **wo** eine Organisation stark und **wo** sie kritisch schwach ist. Diese Profil-Lesart ist der Schutz vor Scheingenauigkeit: Eine einzige „Gesamtnote" ohne das Profil dahinter wäre irreführend. Die Kernkompetenz im Wirkungscontrolling ist, das Profil zu lesen und das schwächste kritische Feld zu erkennen.
 
@@ -103,7 +100,7 @@ Wie wird aus vielen Einzeldaten ein bewertbares Gesamtbild – ohne dass gute We
    - ✅ **Richtig: B**
 
 4. **Warum „Profil statt Einzelzahl"?**
-   - A) Aus Bequemlichkeit  B) Weil das Profil zeigt, wo stark und wo kritisch schwach – Schutz vor Scheingenauigkeit  C) Weil Zahlen verboten sind  D) Weil Reichweite zählt
+   - A) Aus Bequemlichkeit  B) Weil das Profil zeigt, wo stark und wo kritisch schwach - Schutz vor Scheingenauigkeit  C) Weil Zahlen verboten sind  D) Weil Reichweite zählt
    - ✅ **Richtig: B**
 
 5. **Was gehört zur Datenqualität in der Scorecard?**
@@ -116,7 +113,7 @@ Wie wird aus vielen Einzeldaten ein bewertbares Gesamtbild – ohne dass gute We
 
 ## 7. Transferaufgabe
 
-Skizziere eine einfache **Scorecard** für ein Vorhaben deiner Organisation: 4–5 Wirkungsfelder mit grober Bewertung (stark/mittel/kritisch) und je einer Einschätzung der **Datenqualität**. Markiere das **schwächste kritische Feld**.
+Skizziere eine einfache **Scorecard** für ein Vorhaben deiner Organisation: 4-5 Wirkungsfelder mit grober Bewertung (stark/mittel/kritisch) und je einer Einschätzung der **Datenqualität**. Markiere das **schwächste kritische Feld**.
 
 ## 8. Praxisbeispiel
 
@@ -125,7 +122,6 @@ Skizziere eine einfache **Scorecard** für ein Vorhaben deiner Organisation: 4�
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -261,13 +257,12 @@ Die folgende Runde verdichtet WC-V4 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V4. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` – Kennzahlenordnung
-- `assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx` – Regeln, Benchmarkstatus und Assurance
+- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` - Kennzahlenordnung
+- `assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx` - Regeln, Benchmarkstatus und Assurance
 - Glossar: `begriffe/scorecard`, `begriffe/benchmark`, `begriffe/finalscore`
 
 ## 4. Wirkungsökonomische Vertiefung
@@ -337,7 +332,7 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
    - ✅ **Richtig: B**
 
 4. **Warum „Profil statt Einzelzahl"?**
-   - A) Aus Bequemlichkeit  B) Weil das Profil zeigt, wo stark und wo kritisch schwach – Schutz vor Scheingenauigkeit  C) Weil Zahlen verboten sind  D) Weil Reichweite zählt
+   - A) Aus Bequemlichkeit  B) Weil das Profil zeigt, wo stark und wo kritisch schwach - Schutz vor Scheingenauigkeit  C) Weil Zahlen verboten sind  D) Weil Reichweite zählt
    - ✅ **Richtig: B**
 
 5. **Was gehört zur Datenqualität in der Scorecard?**
@@ -360,7 +355,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -1000,8 +994,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v4-scorecards-benchmarks-bewertungslogik.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

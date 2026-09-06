@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Audit der Wahlkreisdaten
+# Wirkungscheck Bundestag V3 - Audit der Wahlkreisdaten
 
 **Auditstatus:** Für die V3-Pilotmodule Wohnen sowie Gesundheit und Pflege sind
 alle vorhandenen Kennzahlen `DATA_UNVERIFIED` für die öffentliche
@@ -34,11 +34,11 @@ Prüfung über alle 299 Wahlkreise am 13.08.2026:
 
 | Kennzahl | Wertebereich | Auffälligkeit | Konsequenz |
 | --- | --- | --- | --- |
-| housing_completion | 0,2–11,6 | 69 unterschiedliche Werte; keine fachliche Wirkungskennzahl | nicht anzeigen |
-| under3_care | 76,5–121,2 % | 6 Werte über 100 % | ohne Quellenerklärung missverständlich; nicht anzeigen |
-| household_income | 22.787–119.496 Euro | Beobachtungsjahr 2021 | nicht als aktuelle Kaufkraft- oder Wohnkostenmessung verwenden |
-| employment | 249,1–838,5 je 1.000 | Arbeitsortbezug | nicht als Pflege- oder Wohnindikator verwenden |
-| unemployment | 2,5–14,8 % | fachfremd für Pilot | nicht anzeigen |
+| housing_completion | 0,2-11,6 | 69 unterschiedliche Werte; keine fachliche Wirkungskennzahl | nicht anzeigen |
+| under3_care | 76,5-121,2 % | 6 Werte über 100 % | ohne Quellenerklärung missverständlich; nicht anzeigen |
+| household_income | 22.787-119.496 Euro | Beobachtungsjahr 2021 | nicht als aktuelle Kaufkraft- oder Wohnkostenmessung verwenden |
+| employment | 249,1-838,5 je 1.000 | Arbeitsortbezug | nicht als Pflege- oder Wohnindikator verwenden |
+| unemployment | 2,5-14,8 % | fachfremd für Pilot | nicht anzeigen |
 
 Die Prüfung festigt die Datenentscheidung: Ein amtlicher Wert wird nicht
 automatisch zu einem passenden Wirkungsindikator.

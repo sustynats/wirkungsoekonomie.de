@@ -264,7 +264,7 @@ Alltagsrassismus beschreibt rassistische Abwertung, Ausschlüsse oder Normalisie
 
 Er beschädigt Sicherheit, Zugehörigkeit, Vertrauen und Teilhabe.
 
-## Amartya Sen / Martha Nussbaum – Fähigkeitenansatz
+## Amartya Sen / Martha Nussbaum - Fähigkeitenansatz
 
 Der Fähigkeitenansatz fragt danach, welche realen Möglichkeiten Menschen haben, ein gutes, würdiges und selbstbestimmtes Leben zu führen.
 
@@ -496,7 +496,7 @@ Dauerhafte Leitplanken für dezentrale Architekturentscheidungen festlegen und A
 
 J08 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Katalog von Wirkungs-, Daten-, Technologie-, Sicherheits- und Interoperabilitätsprinzipien plus Architecture Decision Records.
 
-## Art. 2 EUV – Werte der Europäischen Union
+## Art. 2 EUV - Werte der Europäischen Union
 
 Art. 2 EUV benennt die Werte der Union: Menschenwürde, Freiheit, Demokratie, Gleichheit, Rechtsstaatlichkeit und Menschenrechte sowie Pluralismus, Nichtdiskriminierung, Toleranz, Gerechtigkeit, Solidarität und Gleichheit.
 
@@ -504,7 +504,7 @@ Art. 2 EUV benennt die Werte der Union: Menschenwürde, Freiheit, Demokratie, Gl
 
 Der Artikel ist ein Kernanker für SDG+ und für die demokratische Dimension der Wirkungsökonomie. Wirkung für Demokratie ist nicht Zusatz, sondern Voraussetzung für legitime, korrigierbare und rechtsstaatliche Wirkungslenkung.
 
-## Art. 3 EUV – nachhaltige Entwicklung Europas
+## Art. 3 EUV - nachhaltige Entwicklung Europas
 
 Art. 3 EUV verbindet Binnenmarkt, nachhaltige Entwicklung, soziale Marktwirtschaft, sozialen Fortschritt, hohen Umweltschutz, wissenschaftlich-technischen Fortschritt, Gleichstellung und Solidarität zwischen Generationen.
 
@@ -512,7 +512,7 @@ Art. 3 EUV verbindet Binnenmarkt, nachhaltige Entwicklung, soziale Marktwirtscha
 
 Für die Wirkungsökonomie ist Art. 3 EUV der europäische Zielkorridor: Markt, Innovation und soziale Ordnung stehen nicht isoliert, sondern unter dem Maßstab nachhaltiger Entwicklung und Generationenverantwortung.
 
-## Art. 11 AEUV – Umweltintegrationsprinzip
+## Art. 11 AEUV - Umweltintegrationsprinzip
 
 Art. 11 AEUV verlangt, dass Umweltschutzanforderungen in die Festlegung und Durchführung der Unionspolitiken und -maßnahmen einbezogen werden, insbesondere zur Förderung nachhaltiger Entwicklung.
 
@@ -528,7 +528,7 @@ Art. 20a GG verpflichtet den Staat, natürliche Lebensgrundlagen und Tiere auch 
 
 Zentrale Anschlusslinie der WÖk, aber kein Freibrief für beliebige Steuerung. Wirkung muss im Rahmen von Grundrechten, Demokratie, Rechtsstaatlichkeit, Verhältnismäßigkeit und parlamentarischer Verantwortung entwickelt werden.
 
-## Art. 37 EU-Grundrechtecharta – Umweltschutz
+## Art. 37 EU-Grundrechtecharta - Umweltschutz
 
 Art. 37 der EU-Grundrechtecharta verlangt ein hohes Umweltschutzniveau und die Verbesserung der Umweltqualität in den Politiken der Union nach dem Grundsatz nachhaltiger Entwicklung.
 
@@ -536,7 +536,7 @@ Art. 37 der EU-Grundrechtecharta verlangt ein hohes Umweltschutzniveau und die V
 
 Für die WÖk ist Art. 37 ein Grundrechtecharta-Anker für Planet als Schutzdimension. Er stärkt die Idee, dass Umweltschutz nicht bloß Fachpolitik ist, sondern Teil der europäischen Grundordnung.
 
-## Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip
+## Art. 191 AEUV - Vorsorge-, Präventions- und Verursacherprinzip
 
 Art. 191 AEUV beschreibt die Ziele und Grundsätze der EU-Umweltpolitik: Erhalt und Verbesserung der Umweltqualität, Schutz der Gesundheit, rationelle Ressourcennutzung, Bekämpfung des Klimawandels sowie Vorsorge-, Präventions-, Ursprungs- und Verursacherprinzip.
 
@@ -1422,7 +1422,7 @@ Der Begriff beschreibt reale Phänomene: öffentliche Empörung, Boykott, Plattf
 
 Cancel-Dynamiken sind Prozesse, in denen öffentliche Kritik, Boykottaufrufe, Distanzierung und Ausschluss einander verstärken können.
 
-Nicht jede Kritik, jedes Boykottverhalten und jede Rechenschaftsforderung ist eine Cancel-Dynamik. Für eine faire Analyse sind Ausgangshandlung, Belege, Machtasymmetrie, Verfahren, Verhältnismäßigkeit, Gegenrede, Schutz Beteiligter und tatsächliche Folgen getrennt zu prüfen. Der Begriff darf nicht genutzt werden, um berechtigte Kritik zum Schweigen zu bringen – und auch nicht, um unverhältnismäßige Ausschlüsse zu verharmlosen.
+Nicht jede Kritik, jedes Boykottverhalten und jede Rechenschaftsforderung ist eine Cancel-Dynamik. Für eine faire Analyse sind Ausgangshandlung, Belege, Machtasymmetrie, Verfahren, Verhältnismäßigkeit, Gegenrede, Schutz Beteiligter und tatsächliche Folgen getrennt zu prüfen. Der Begriff darf nicht genutzt werden, um berechtigte Kritik zum Schweigen zu bringen - und auch nicht, um unverhältnismäßige Ausschlüsse zu verharmlosen.
 
 ## Canvas-Mindeststandard
 
@@ -1524,7 +1524,7 @@ Care-Ökonomie beschreibt Sorge-, Pflege-, Erziehungs-, Beziehungs- und Reproduk
 
 Care umfasst bezahlte und unbezahlte Arbeit, die Menschen versorgt, stabilisiert, begleitet, schützt und soziale Systeme reproduziert.
 
-## CBAM – CO2-Grenzausgleichssystem
+## CBAM - CO2-Grenzausgleichssystem
 
 CBAM ist der EU-Mechanismus für einen CO2-Grenzausgleich auf bestimmte importierte Waren, um Carbon Leakage zu vermeiden und Dekarbonisierung auch außerhalb der EU anzureizen.
 
@@ -1772,7 +1772,7 @@ Die CSDDD ist die EU-Richtlinie zur unternehmerischen Nachhaltigkeits-Sorgfaltsp
 
 Sie liefert rechtliche Anknüpfungspunkte für menschenrechtliche und ökologische Risiken. Die WÖk übersetzt diese Daten in Wirkung, Schutzgrenzen und Rückkopplung.
 
-## CSDDD – Corporate Sustainability Due Diligence Directive
+## CSDDD - Corporate Sustainability Due Diligence Directive
 
 Die CSDDD verpflichtet große Unternehmen, tatsächliche und potenzielle negative Menschenrechts- und Umweltwirkungen in eigenen Tätigkeiten, Tochterunternehmen und Geschäftspartnerketten zu adressieren.
 
@@ -2292,7 +2292,7 @@ Direktstrom ist die allgemein verständliche Bezeichnung für Energieflussstrom.
 
 Direktstrom ist die allgemein verständliche Bezeichnung für Energieflussstrom. Im Glossar wird Energieflussstrom als fachlich führender Begriff verwendet; Direktstrom bleibt als Such- und Kommunikationsbegriff erhalten.
 
-## Discovery–Delivery–Wirkungslernloop
+## Discovery-Delivery-Wirkungslernloop
 
 Kontinuierliche Problemexploration, Lösungsentdeckung, sichere Lieferung, Betrieb und Wirkungslernen verbinden.
 
@@ -2358,7 +2358,7 @@ Die Bundesregierung ordnet der Deutschen Nachhaltigkeitsstrategie Ziele und Indi
 
 Aus der Bewegung eines Indikators folgt aber nicht automatisch, dass ein bestimmtes Gesetz, Programm oder Budget diese Veränderung verursacht hat. Dafür braucht es eine eigenständige Kausal- und Zurechnungsprüfung.
 
-## DNSH – Do No Significant Harm
+## DNSH - Do No Significant Harm
 
 DNSH bedeutet, dass eine Aktivität nicht zu einer erheblichen Beeinträchtigung anderer Umweltziele führen darf, auch wenn sie zu einem Ziel positiv beiträgt.
 
@@ -2454,7 +2454,7 @@ DSA steht für Digital Services Act. Der Begriff bezeichnet den EU-Rechtsrahmen 
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
 
-## DSA – Digital Services Act
+## DSA - Digital Services Act
 
 Der Digital Services Act regelt digitale Vermittlungsdienste und Plattformen. Er enthält besondere Pflichten für sehr große Online-Plattformen und Suchmaschinen, insbesondere zum Umgang mit systemischen Risiken.
 
@@ -3362,7 +3362,7 @@ Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrenn
 
 Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrennt dokumentieren und über den Prozess fortschreiben.
 
-A06 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Versioniertes Register mit Aussage, Typ, Evidenzstufe E0–E5, Quelle, Unsicherheit, Verantwortlichen und Prüfdatum.
+A06 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Versioniertes Register mit Aussage, Typ, Evidenzstufe E0-E5, Quelle, Unsicherheit, Verantwortlichen und Prüfdatum.
 
 ## Evolutionstheorie / evolutorische Ökonomik
 
@@ -3798,7 +3798,7 @@ Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens. Es s
 
 Framekontrolle bedeutet, die Deutungsannahme einer Aussage zu erkennen, nicht unbemerkt zu übernehmen und die Sachfrage unter einem passenden, offenen Rahmen zu klären.
 
-Framekontrolle ist ein Arbeitsbegriff für den bewussten Umgang mit Deutungsrahmen in Sprache und Diskussionen. Sie macht sichtbar, welche Voraussetzung, Auswahl oder Wertung eine Formulierung mitliefert, und trennt diese von der überprüfbaren Sachfrage. Ihr Ziel ist nicht eine rahmenfreie Sprache – die gibt es kaum –, sondern ein transparenter Rahmen, in dem Begriffe, Belege, Alternativen und Folgen prüfbar bleiben. Sie kann etwa eine falsche Voraussetzung ausdrücklich zurückweisen, eine Frage präzisieren oder ein Reframing begründen. Ob diese Schritte Verständnis, Urteil oder Handeln verändern, ist eine gesonderte empirische Frage.
+Framekontrolle ist ein Arbeitsbegriff für den bewussten Umgang mit Deutungsrahmen in Sprache und Diskussionen. Sie macht sichtbar, welche Voraussetzung, Auswahl oder Wertung eine Formulierung mitliefert, und trennt diese von der überprüfbaren Sachfrage. Ihr Ziel ist nicht eine rahmenfreie Sprache - die gibt es kaum -, sondern ein transparenter Rahmen, in dem Begriffe, Belege, Alternativen und Folgen prüfbar bleiben. Sie kann etwa eine falsche Voraussetzung ausdrücklich zurückweisen, eine Frage präzisieren oder ein Reframing begründen. Ob diese Schritte Verständnis, Urteil oder Handeln verändern, ist eine gesonderte empirische Frage.
 
 ## Framing / Sprache / Tonalität
 
@@ -4990,7 +4990,7 @@ Hunger ist nicht nur ein Mangel an Kalorien. Er hängt mit Armut, Konflikten, La
 
 Hybride Einflussnahme und Kriegsführung bezeichnet die koordinierte Nutzung verschiedener Mittel, um Sicherheit, Entscheidungsfähigkeit oder Vertrauen zu beeinflussen oder zu destabilisieren.
 
-Hybride Einflussnahme und Kriegsführung bezeichnet die koordinierte Nutzung verschiedener Mittel – etwa Desinformation, Cyberangriffe, wirtschaftlichen Druck, verdeckte Einflussnahme und gegebenenfalls militärische Mittel –, um Sicherheit, Entscheidungsfähigkeit oder Vertrauen zu beeinflussen oder zu destabilisieren. Der Begriff ist kein Synonym für Kritik, Protest, einen Irrtum, harte politische Auseinandersetzung oder internationale Zusammenarbeit. In der Fach- und Politikpraxis gibt es keine für alle Kontexte einheitliche abschließende Definition; deshalb müssen Akteure, Mittel, Belege, Rechtsrahmen und konkrete Schadensannahmen getrennt beschrieben werden.
+Hybride Einflussnahme und Kriegsführung bezeichnet die koordinierte Nutzung verschiedener Mittel - etwa Desinformation, Cyberangriffe, wirtschaftlichen Druck, verdeckte Einflussnahme und gegebenenfalls militärische Mittel -, um Sicherheit, Entscheidungsfähigkeit oder Vertrauen zu beeinflussen oder zu destabilisieren. Der Begriff ist kein Synonym für Kritik, Protest, einen Irrtum, harte politische Auseinandersetzung oder internationale Zusammenarbeit. In der Fach- und Politikpraxis gibt es keine für alle Kontexte einheitliche abschließende Definition; deshalb müssen Akteure, Mittel, Belege, Rechtsrahmen und konkrete Schadensannahmen getrennt beschrieben werden.
 
 ## Hybridregime
 
@@ -5654,7 +5654,7 @@ Wichtig im biologischen Kreislauf, etwa bei Biomasse, Holz oder Fasern.
 
 Katechon bezeichnet ein politisch-theologisches Motiv des Aufhaltens: Eine Kraft, Institution oder Person soll einen drohenden Zusammenbruch, das Chaos oder den Untergang zurückhalten. Der Begriff ist ein externer Anschlussbegriff und kein Wirkmechanismus der Wirkungsökonomie.
 
-Katechon geht auf die griechischen Ausdrücke κατέχον beziehungsweise κατέχων in 2 Thessalonicher 2,6–7 zurück. Sie bezeichnen dort das Aufhaltende beziehungsweise den Aufhaltenden, der das Offenbarwerden des Gesetzlosen zunächst zurückhält. Der Text benennt nicht eindeutig, wer oder was damit gemeint ist. Gerade diese Offenheit ermöglichte später unterschiedliche theologische, geschichtsphilosophische und politische Deutungen.
+Katechon geht auf die griechischen Ausdrücke κατέχον beziehungsweise κατέχων in 2 Thessalonicher 2,6-7 zurück. Sie bezeichnen dort das Aufhaltende beziehungsweise den Aufhaltenden, der das Offenbarwerden des Gesetzlosen zunächst zurückhält. Der Text benennt nicht eindeutig, wer oder was damit gemeint ist. Gerade diese Offenheit ermöglichte später unterschiedliche theologische, geschichtsphilosophische und politische Deutungen.
 
 Im 20. Jahrhundert erhielt das Motiv besonders durch Carl Schmitt politische Bedeutung. Es konnte nun für eine Macht, Institution oder Person stehen, die einen als existenziell beschriebenen Zerfall noch aufhalte. In heutigen Debatten begegnet das Motiv unter anderem dort, wo gesellschaftlicher Niedergang, Chaos oder Untergang behauptet und ein Akteur als letzte verbleibende Schutz- oder Ordnungskraft dargestellt wird. Volker Weiß hat diese gegenwärtige Wiederkehr 2026 in seiner Schrift „Katechon“ ideengeschichtlich eingeordnet.
 
@@ -5754,7 +5754,7 @@ KII steht für Key Impact Indicator: eine zentrale Wirkungskennzahl, die Zustand
 
 KII ist die gebräuchliche Abkürzung für Key Impact Indicator. Ein KII macht eine konkrete, für Steuerung relevante Zustandsveränderung oder ein Wirkungsrisiko mess- oder berechenbar. Seine Formel folgt aus dem jeweiligen Messkonzept; deshalb braucht jeder KII ein transparentes Kennzahlenblatt statt einer bloßen Zahl.
 
-## KII-Design – Key Impact Indicators
+## KII-Design - Key Impact Indicators
 
 Wenige führende Wirkungskennzahlen auswählen, die Managemententscheidungen direkt steuern und nicht nur berichten.
 
@@ -7403,7 +7403,7 @@ Moderner Patriotismus ist eine offene, demokratische Form von Zugehörigkeit: Me
 
 Moderner Patriotismus ist eine offene, demokratische Form von Zugehörigkeit: Menschen bekennen sich zu Verfassung, Rechtsstaat, Freiheit, Solidarität, öffentlicher Verantwortung und der gemeinsamen Aufgabe, die Lebensbedingungen des Gemeinwesens zu schützen.
 
-Aus WÖk-Sicht ist Patriotismus kein Wert an sich. Entscheidend ist seine Wirkung: Stärkt er Vertrauen, Teilhabe, Verantwortung, Demokratie, Gemeinwohl und internationale Kooperationsfähigkeit – oder erzeugt er Ausschluss, Feindbilder, Überhöhung und Polarisierung?
+Aus WÖk-Sicht ist Patriotismus kein Wert an sich. Entscheidend ist seine Wirkung: Stärkt er Vertrauen, Teilhabe, Verantwortung, Demokratie, Gemeinwohl und internationale Kooperationsfähigkeit - oder erzeugt er Ausschluss, Feindbilder, Überhöhung und Polarisierung?
 
 ## Modularität
 
@@ -8113,7 +8113,7 @@ Normative Konformität erklärt, warum Menschen öffentlich Positionen vertreten
 
 ## WÖk-Mehrebenen-Normen- und Zielrahmen
 
-Der WÖk-Mehrebenen-Normen- und Zielrahmen verbindet globale Ziele, einschlägiges Völkerrecht, europäische Menschenrechtsordnung, EU-Recht, Verfassungsrecht und SDG+ – ohne diese Ebenen zu vermischen oder Wirkungen doppelt zu zählen.
+Der WÖk-Mehrebenen-Normen- und Zielrahmen verbindet globale Ziele, einschlägiges Völkerrecht, europäische Menschenrechtsordnung, EU-Recht, Verfassungsrecht und SDG+ - ohne diese Ebenen zu vermischen oder Wirkungen doppelt zu zählen.
 
 Die Wirkungsökonomie misst eine reale Veränderung in einem führenden Wirkungsfeld und einer eindeutigen Indikatorfamilie. SDGs, Völkerrecht, EMRK, EU-Recht, Grundgesetz, Landesverfassungen und Fachrecht werden als unterschiedliche Referenzquellen hinterlegt. SDG+ ist dabei die wirkungsökonomische Übersetzungs- und Ergänzungsebene für systemische Voraussetzungen und Lücken. Die Ebenen sind nicht als einfache Rechtspyramide zu behandeln; ihre jeweilige Bindungswirkung und Anwendbarkeit muss getrennt geprüft werden. Die zentrale Rechenregel lautet: einmal messen, mehrfach verankern, einmal bewerten. Eine hohe normative Verankerungsdichte kann Mindeststandards, rote Linien oder Prüfintensität beeinflussen, ist aber kein Wirkungsbonus und kein automatischer Rechtsverstoßsnachweis.
 
@@ -9229,7 +9229,7 @@ Ursachen, Kernproblem und Folgewirkungen in einer ersten gerichteten Struktur or
 
 B03 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Problembaum mit Wurzelursachen, vermittelnden Ursachen, Kernzustand und Wirkungsfolgen.
 
-## Problem–Wirkungs–System–Markt-Fit
+## Problem-Wirkungs-System-Markt-Fit
 
 Prüfen, ob Problemrelevanz, Wirkungsmechanismus, Systemverträglichkeit, Markt-/Finanzierungslogik und organisatorische Fähigkeit gleichzeitig ausreichend passen.
 
@@ -11133,7 +11133,7 @@ Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise,
 
 Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität oder Loyalität umfassend bewerten oder einordnen. Sie sind kein Instrument der Wirkungsökonomie.
 
-Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen – nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.
+Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen - nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.
 
 ## Social Economy / Solidarity Economy
 
@@ -12076,7 +12076,7 @@ Systemverzerrender Lobbyismus beeinflusst politische Entscheidungen durch Intran
 
 Wirkungsrisiko für Demokratie, Vertrauen, Rechtsstaatlichkeit und faire Marktregeln.
 
-## T-SROI – Transformational Social Return on Investment
+## T-SROI - Transformational Social Return on Investment
 
 T-SROI ist ein modellhaftes Euro-zu-Euro-Verhältnis: diskontierter, kausal zugerechneter direkter und transformativ belegter Nettonutzen je diskontiertem Ressourceneuro.
 
@@ -12517,7 +12517,7 @@ Transformationswellen entstehen nicht durch einen einzelnen Auslöser, sondern d
 
 ## Transformationswirkung
 
-Transformationswirkung ist eine eingetretene Zustandsveränderung, die die Bedingungen künftiger Entscheidungen – etwa Regeln, Standards, Anreize, Infrastrukturen oder Pfade – verändert.
+Transformationswirkung ist eine eingetretene Zustandsveränderung, die die Bedingungen künftiger Entscheidungen - etwa Regeln, Standards, Anreize, Infrastrukturen oder Pfade - verändert.
 
 Transformationswirkung bezeichnet eine tatsächliche Zustandsveränderung, die über einen Einzelfall hinaus die Struktur eines Systems verändert: etwa Regeln, Standards, Anreize, Infrastrukturen, Marktbedingungen oder institutionelle Routinen. Ob eine solche Veränderung eingetreten ist, muss mit Wirkpfad, Systemgrenze, Zeitraum, Vergleichsmaßstab, Daten und Gegenhypothesen begründet werden. Eine erwartete strukturelle Veränderung ist zunächst Transformationspotenzial oder eine Szenarioannahme. Sie darf nicht als eingetretene Wirkung ausgegeben werden.
 
@@ -13631,7 +13631,7 @@ Werte geben Richtung, aber sie ersetzen keine Prüfung tatsächlicher Zustandsve
 
 Eine Wertebrücke macht einen gemeinsamen, legitimen Wert sichtbar und verbindet ihn mit einer prüfbaren Sach- und Wirkungsfrage. Sie ersetzt weder Belege noch die Klärung echter Zielkonflikte.
 
-Wertebrücke ist ein WÖk-Praxisbegriff für einen Gesprächsschritt: Ein gemeinsamer oder zumindest anerkennenswerter Wert – etwa Freiheit, Sicherheit, Würde oder Verlässlichkeit – wird ausdrücklich benannt. Anschließend wird die strittige Behauptung mit Belegen, Alternativen und Folgen geprüft. Die Technik kann einen Gesprächszugang eröffnen, beweist aber nicht, dass Menschen ihre Einschätzung ändern oder ein Zielkonflikt verschwindet. Eine tragfähige Wertebrücke darf keine falsche Behauptung bestätigen, keine Schutzgrenze relativieren und keinen Konsens vortäuschen. Sie macht nur den gemeinsamen Prüfpunkt sichtbar.
+Wertebrücke ist ein WÖk-Praxisbegriff für einen Gesprächsschritt: Ein gemeinsamer oder zumindest anerkennenswerter Wert - etwa Freiheit, Sicherheit, Würde oder Verlässlichkeit - wird ausdrücklich benannt. Anschließend wird die strittige Behauptung mit Belegen, Alternativen und Folgen geprüft. Die Technik kann einen Gesprächszugang eröffnen, beweist aber nicht, dass Menschen ihre Einschätzung ändern oder ein Zielkonflikt verschwindet. Eine tragfähige Wertebrücke darf keine falsche Behauptung bestätigen, keine Schutzgrenze relativieren und keinen Konsens vortäuschen. Sie macht nur den gemeinsamen Prüfpunkt sichtbar.
 
 ## Wertekonflikt
 
@@ -14525,7 +14525,7 @@ Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditi
 
 Wirkungslenkung ist die legitimierte Entscheidung über Ziele, Schutzgrenzen, Prioritäten und Instrumente, mit denen eine positive Netto-Wirkung angestrebt wird.
 
-Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder – nur mit Rechtsgrundlage – Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.
+Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder - nur mit Rechtsgrundlage - Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.
 
 ## Wirkungslücke
 
@@ -14767,7 +14767,7 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## Wirkungspfad
 
-Wirkpfade oder Wirkungspfade beschreiben nachvollziehbare Hypothesen darüber, wie eine Handlung, Entscheidung, ein Produkt oder eine Kommunikation unter bestimmten Bedingungen Zustände verändert – einschließlich Wirkmechanismen, Betroffener, Nebenwirkungen und Rückkopplungen.
+Wirkpfade oder Wirkungspfade beschreiben nachvollziehbare Hypothesen darüber, wie eine Handlung, Entscheidung, ein Produkt oder eine Kommunikation unter bestimmten Bedingungen Zustände verändert - einschließlich Wirkmechanismen, Betroffener, Nebenwirkungen und Rückkopplungen.
 
 Wirkpfade machen sichtbar, über welche Schritte eine Intervention zu Veränderungen führen könnte: von einer Entscheidung oder Aktivität über Ressourcen, Leistungen und Verhaltens- oder Strukturveränderungen bis zu direkten, indirekten und längerfristigen Wirkungen. Ein belastbarer Wirkpfad hält zugleich fest, für wen diese Veränderungen gelten, unter welchen Bedingungen sie eintreten, welche anderen Ursachen mitwirken, wo Schäden oder Kosten anfallen können und wie Beobachtungen die Annahmen verändern. Gerade in komplexen sozialen, ökologischen und demokratischen Systemen verlaufen Wirkpfade nicht nur vorwärts, sondern über Verzögerungen, Rückkopplungen, Wechselwirkungen und mögliche Externalisierung.
 
@@ -14831,7 +14831,7 @@ Ein Problem als unerwünschte Zustandsveränderung mit Betroffenen, Ursachen, au
 
 B02 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Präzise Problemdefinition statt lösungsnaher oder moralischer Problembehauptung.
 
-## Wirkungsproblem–Lösungs-Fit
+## Wirkungsproblem-Lösungs-Fit
 
 Prüfen, ob eine relevante Zustandsveränderung verstanden ist und eine Lösung einen plausiblen Mechanismus adressiert, bevor Geschäftsmodell oder Skalierung optimiert werden.
 
@@ -15025,7 +15025,7 @@ E09 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlich
 
 Wirkungsrückkopplung ist der Lernmechanismus, der beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurückführt.
 
-Wirkungsrückkopplung ist ein Lernmechanismus: Nach einer Maßnahme werden beobachtete Zustandsveränderungen, Wirkungsrisiken, Datenqualität und Unsicherheit gegen eine zuvor definierte Referenz geprüft. Die Ergebnisse fließen in spätere Entscheidungen zurück – etwa durch Anpassung, Aussetzung oder Beendigung einer Regel. Sie ist keine automatische Übertragung eines Scores in Preis, Steuer oder Förderung; solche Instrumentregeln gehören zur Wirkungslenkung. Rückkopplung braucht nachvollziehbare Daten, Verhältnismäßigkeit, Einspruch, Datenschutz und die Möglichkeit, Fehlannahmen zu korrigieren.
+Wirkungsrückkopplung ist ein Lernmechanismus: Nach einer Maßnahme werden beobachtete Zustandsveränderungen, Wirkungsrisiken, Datenqualität und Unsicherheit gegen eine zuvor definierte Referenz geprüft. Die Ergebnisse fließen in spätere Entscheidungen zurück - etwa durch Anpassung, Aussetzung oder Beendigung einer Regel. Sie ist keine automatische Übertragung eines Scores in Preis, Steuer oder Förderung; solche Instrumentregeln gehören zur Wirkungslenkung. Rückkopplung braucht nachvollziehbare Daten, Verhältnismäßigkeit, Einspruch, Datenschutz und die Möglichkeit, Fehlannahmen zu korrigieren.
 
 ## Wirkungsschule
 
@@ -15265,7 +15265,7 @@ Ein attraktives, konkretes und überprüfbares Bild des angestrebten Systemzusta
 
 Ein attraktives, konkretes und überprüfbares Bild des angestrebten Systemzustands entwickeln, ohne es mit Maßnahmen zu verwechseln.
 
-E01 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Zielbild 3–10 Jahre mit Zuständen, Empfängern, Grenzen, Indikatoren und Nicht-Zielen.
+E01 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Zielbild 3-10 Jahre mit Zuständen, Empfängern, Grenzen, Indikatoren und Nicht-Zielen.
 
 ## Wirkungsziele und Impact-OKR
 
@@ -15521,7 +15521,7 @@ Bewerten, wie weit Wirkung von Berichterstattung zu integrierter, rückgekoppelt
 
 Bewerten, wie weit Wirkung von Berichterstattung zu integrierter, rückgekoppelter und transformativer Steuerung entwickelt ist.
 
-E12 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Reifegradprofil 0–5 je Dimension mit Evidenz, Lücken, Zielniveau und Entwicklungsplan.
+E12 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Reifegradprofil 0-5 je Dimension mit Evidenz, Lücken, Zielniveau und Entwicklungsplan.
 
 ## WÖMS-Workshop-Journey
 
@@ -15555,7 +15555,7 @@ Die WÖk kann Wu Wei als Denkbild für Wirkungslenkung nutzen: Nicht jedes Syste
 
 Relevant als Gegenbild zu technokratischer Steuerungsillusion. Die WÖk setzt auf Rückkopplung, Resonanz und Selbstorganisation.
 
-## Wu wei – wirksames Nicht-Erzwingen
+## Wu wei - wirksames Nicht-Erzwingen
 
 Wu wei wird häufig als Nicht-Erzwingen oder nicht-verkrampftes Handeln übersetzt. Es bezeichnet nicht bloße Passivität, sondern ein Handeln, das mit dem System arbeitet statt gegen seine Eigenlogik.
 

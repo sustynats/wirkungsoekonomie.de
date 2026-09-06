@@ -1,4 +1,4 @@
-# Regionale Quellenabdeckung – 6. September 2026
+# Regionale Quellenabdeckung - 6. September 2026
 
 ## Ergebnis und Grenzen
 

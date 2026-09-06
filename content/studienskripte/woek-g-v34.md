@@ -5,9 +5,7 @@
 **Vorlesungscode:** V34  
 **Modul/Abschnitt:** G3.4  
 **Titel:** Reverse Merit Order  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v34-reverse-merit-order.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v34.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v34.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Reverse Merit Order** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V33 „NWI und T-SROI unterscheiden"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -60,15 +56,15 @@ Warum entscheidet in der WÖk oft nicht der beste Wert, sondern der schlechteste
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Klassische Merit Order.** In Märkten zählt oft die Reihenfolge nach Kosten oder Vorteil.
+**Abschnitt A - Klassische Merit Order.** In Märkten zählt oft die Reihenfolge nach Kosten oder Vorteil.
 
-**Abschnitt B – Umkehrung.** Reverse Merit Order schaut zuerst auf das schwächste kritische Wirkungsfeld.
+**Abschnitt B - Umkehrung.** Reverse Merit Order schaut zuerst auf das schwächste kritische Wirkungsfeld.
 
-**Abschnitt C – Kettenbild.** Eine Kette ist nur so stark wie ihr schwächstes Glied.
+**Abschnitt C - Kettenbild.** Eine Kette ist nur so stark wie ihr schwächstes Glied.
 
-**Abschnitt D – Bewertungsfolge.** Ein schwer negativer Feldwert begrenzt FinalScore, Steuerklasse oder Freigabe.
+**Abschnitt D - Bewertungsfolge.** Ein schwer negativer Feldwert begrenzt FinalScore, Steuerklasse oder Freigabe.
 
-**Abschnitt E – Zweck.** Die Logik schützt vor Greenwashing, Durchschnittstricks und blinden positiven Teilwerten.
+**Abschnitt E - Zweck.** Die Logik schützt vor Greenwashing, Durchschnittstricks und blinden positiven Teilwerten.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -128,7 +124,6 @@ Bewerte eine Vier-Felder-Scorecard. Markiere das schwächste kritische Feld und 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -274,12 +269,11 @@ Die folgende Runde verdichtet V34 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V34. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Reverse Merit Order, Wirkungssteuer, Scorecards
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Reverse Merit Order, Wirkungssteuer, Scorecards
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/reverse-merit-order`, `begriffe/kritisches-wirkungsfeld`, `begriffe/finalscore`
 
@@ -372,7 +366,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 5
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -933,8 +926,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v34-reverse-merit-order.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

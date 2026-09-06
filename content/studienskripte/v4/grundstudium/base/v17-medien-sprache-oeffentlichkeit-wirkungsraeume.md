@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Worte sind keine Wirkung nur weil sie gesagt wurden. Aber Sprache kann Aufmerksamkeit, Deutung, Gruppengrenzen, Vertrauen und Verhalten verändern. WÖk behandelt Kommunikation deshalb als eigenen Wirkungsraum – getrennt von der Wirkung der Sachmaßnahme.
+Worte sind keine Wirkung nur weil sie gesagt wurden. Aber Sprache kann Aufmerksamkeit, Deutung, Gruppengrenzen, Vertrauen und Verhalten verändern. WÖk behandelt Kommunikation deshalb als eigenen Wirkungsraum - getrennt von der Wirkung der Sachmaßnahme.
 
 ## Lernziele
 
@@ -70,14 +70,14 @@ Algorithmische Empfehlung kann Reichweite und Wiederholung verändern. Aber „d
 
 ## Typische Fehlinterpretationen
 
-- „Ein problematisches Wort beweist gesellschaftliche Wirkung.“ – Nein.
-- „Reichweite = Wirkung.“ – Nein.
-- „Kommunikationswirkung ist immer negativ.“ – Nein.
-- „Plattformalgorithmus erklärt alles.“ – Zu stark.
+- „Ein problematisches Wort beweist gesellschaftliche Wirkung.“ - Nein.
+- „Reichweite = Wirkung.“ - Nein.
+- „Kommunikationswirkung ist immer negativ.“ - Nein.
+- „Plattformalgorithmus erklärt alles.“ - Zu stark.
 
 ## WÖk-Abgrenzung
 
-WÖk ersetzt Kommunikationswissenschaft, Medienwirkungsforschung oder Plattformforschung nicht. Sie nutzt deren Mechanismen quellengebunden und verbindet sie mit konkretem Text/Context, Wirkungsempfängern, Evidenz, 1.–3. Ordnung und Reality Check. Keine Partei-/Personenbewertung aus Schlagworten.
+WÖk ersetzt Kommunikationswissenschaft, Medienwirkungsforschung oder Plattformforschung nicht. Sie nutzt deren Mechanismen quellengebunden und verbindet sie mit konkretem Text/Context, Wirkungsempfängern, Evidenz, 1.-3. Ordnung und Reality Check. Keine Partei-/Personenbewertung aus Schlagworten.
 
 ## Quellen
 
@@ -95,7 +95,7 @@ Prüfungsfähig sind Zwei-Ebenen-Trennung, Kommunikationswirkpfad, Frame/Narrati
 
 ## Sprechertext
 
-Eine politische Botschaft kann Millionen Menschen erreichen. Das ist erst einmal Reichweite. Ob sie informiert, verunsichert, Vertrauen stärkt oder Gruppen gegeneinander stellt, ist eine weitere Frage. Deshalb zerlegen wir Kommunikation in einen Wirkpfad. Und wir machen noch etwas Wichtiges: Wir bewerten die Kommunikation getrennt von der Sachmaßnahme. Ein Gesetz kann gut wirken und schlecht erklärt werden – oder umgekehrt. So vermeiden wir, dass rhetorische Analyse heimlich zur Politikbewertung wird.
+Eine politische Botschaft kann Millionen Menschen erreichen. Das ist erst einmal Reichweite. Ob sie informiert, verunsichert, Vertrauen stärkt oder Gruppen gegeneinander stellt, ist eine weitere Frage. Deshalb zerlegen wir Kommunikation in einen Wirkpfad. Und wir machen noch etwas Wichtiges: Wir bewerten die Kommunikation getrennt von der Sachmaßnahme. Ein Gesetz kann gut wirken und schlecht erklärt werden - oder umgekehrt. So vermeiden wir, dass rhetorische Analyse heimlich zur Politikbewertung wird.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

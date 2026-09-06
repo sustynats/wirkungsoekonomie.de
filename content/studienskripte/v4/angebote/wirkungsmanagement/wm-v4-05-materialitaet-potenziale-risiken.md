@@ -15,7 +15,7 @@ Du kannst Materialität nach Tragweite statt nach Scorehöhe priorisieren, Wirku
 
 ## 20-Sekunden-Erklärung
 
-Nicht jede mögliche Wirkung verdient dieselbe Aufmerksamkeit. Materialität fragt: **Welche potenziellen oder beobachteten Veränderungen sind für die Entscheidung wirklich wesentlich – wegen Größe, Betroffenen, Dauer, Irreversibilität, Wahrscheinlichkeit oder Schutzgrenze?**
+Nicht jede mögliche Wirkung verdient dieselbe Aufmerksamkeit. Materialität fragt: **Welche potenziellen oder beobachteten Veränderungen sind für die Entscheidung wirklich wesentlich - wegen Größe, Betroffenen, Dauer, Irreversibilität, Wahrscheinlichkeit oder Schutzgrenze?**
 
 ## 1. Materialität ist Kontext
 
@@ -87,10 +87,10 @@ Materialität hängt nicht davon ab, welcher Punkt den höchsten Score hat, sond
 
 ## Typische Fehlinterpretationen
 
-- „Material = höchster absoluter Score.“ – Zu eng.
-- „Hohes Potenzial = eingetretene Wirkung.“ – Nein.
-- „Unsicheres Risiko kann ignoriert werden.“ – Nein, Tragweite zählt mit.
-- „Was nicht im Scope ist, existiert nicht.“ – Falsch; Omissions dokumentieren.
+- „Material = höchster absoluter Score.“ - Zu eng.
+- „Hohes Potenzial = eingetretene Wirkung.“ - Nein.
+- „Unsicheres Risiko kann ignoriert werden.“ - Nein, Tragweite zählt mit.
+- „Was nicht im Scope ist, existiert nicht.“ - Falsch; Omissions dokumentieren.
 
 ## WÖk-Abgrenzung
 

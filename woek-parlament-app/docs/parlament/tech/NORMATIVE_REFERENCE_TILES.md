@@ -9,9 +9,9 @@ Eine Referenzkachel macht sichtbar, welche Ziele, Schutzgüter oder normativen A
 
 Die öffentliche Darstellung trennt drei Gruppen:
 
-1. **SDGs** – die 17 global vereinbarten Ziele der Agenda 2030;
-2. **SDG+** – die sieben transparent ausgewiesenen WÖk-Ergänzungen: Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung;
-3. **Staatsziele, Grundrechte und Schutzaufträge** – der jeweils einschlägige Rechts- und Schutzrahmen. Für Bundesfälle umfasst das unter anderem Grundrechte, die Staatsstrukturprinzipien, tatsächliche Gleichberechtigung, natürliche Lebensgrundlagen, Tierschutz, europäische Einigung und gesamtwirtschaftliches Gleichgewicht.
+1. **SDGs** - die 17 global vereinbarten Ziele der Agenda 2030;
+2. **SDG+** - die sieben transparent ausgewiesenen WÖk-Ergänzungen: Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung;
+3. **Staatsziele, Grundrechte und Schutzaufträge** - der jeweils einschlägige Rechts- und Schutzrahmen. Für Bundesfälle umfasst das unter anderem Grundrechte, die Staatsstrukturprinzipien, tatsächliche Gleichberechtigung, natürliche Lebensgrundlagen, Tierschutz, europäische Einigung und gesamtwirtschaftliches Gleichgewicht.
 
 Die dritte Gruppe wird nicht als „SDG+“ umetikettiert. Sie ist ein eigenständiger normativer Anker. Eine negative Zuordnung ist weder ein Rechtsurteil noch ein zusätzlicher negativer Score.
 

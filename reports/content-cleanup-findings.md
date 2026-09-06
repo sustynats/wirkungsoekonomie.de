@@ -61,7 +61,7 @@ Grundlagen: `docs/woek-umbau-programm.md` (WS3), `AGENTS.md`, `reports/url-basel
    Quelle `content/documents/online/beispiel-apfel-wirkungssteuer.inc`. In „Quellen und Referenzen"
    verwiesen 3 Zitationen auf **nicht erreichbare interne Quellen** („siehe interne Dokumentation",
    „interner Entwurf 2025").
-   - **Fix:** Verweise entfernt, **Entwurf-Kennzeichnung erhalten** → „WUStG – konzeptioneller Entwurf,
+   - **Fix:** Verweise entfernt, **Entwurf-Kennzeichnung erhalten** → „WUStG - konzeptioneller Entwurf,
      Kapitel Reverse Merit Order" usw. Quelle **und** beide Ausgabeseiten konsistent bereinigt.
 
 ## Behoben - `… 2.html`-Duplikate dedupliziert (17 URLs, verlustfrei & URL-erhaltend)
@@ -78,7 +78,7 @@ Inventar (kanonisches Geschwister `*.html` existiert überall):
 | Release-Downloads `assets/downloads/website-1-0-release/WOeK_Rang24_* 2.html` | 4 | **identisch** - reine Dubletten |
 | `referenz/version-1-1/index 2.html` | 1 | **identisch** - bereits Redirect-Stub (von `enhance-reference-ux.mjs` erzeugt) |
 | `referenz/teil-15…/`, `teil-17…/index 2.html` | 2 | ~52 Zeilen (nur älteres Layout/„Live-Reference-Hinweis") |
-| `wirkungsfelder/arbeit-einkommen/*/dossier/index 2.html` | 10 | ältere Vollseiten-Fassung (~30–47 Zeilen mehr) |
+| `wirkungsfelder/arbeit-einkommen/*/dossier/index 2.html` | 10 | ältere Vollseiten-Fassung (~30-47 Zeilen mehr) |
 
 **Fassungsentscheidung (je Feld geprüft, alle 10 Dossiers + 2 Referenzteile):** Die kanonische
 `…/dossier/index.html` (Generator `scripts/portal/build-work-income-automation.mjs`) ist die **gepflegte,

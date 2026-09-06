@@ -26,7 +26,7 @@ integrations:
 
   - integration_id: woek-kern-api-oracle
     system: WÖk-Kern-API auf Oracle-Cloud-VM
-    purpose: Dynamische Logik – KI, Faktencheck, Produktcheck, Feedback, Share-Links, Community-Auth
+    purpose: Dynamische Logik - KI, Faktencheck, Produktcheck, Feedback, Share-Links, Community-Auth
     base_url: https://130.162.217.58.sslip.io
     base_url_override: window.WOEK_API_BASE / window.WOEK_FACTCHECK_API_URL
     authentication: keine Pflicht-Auth; optional Bearer (Discord-OAuth-Token), anonyme X-WOEK-Client-ID
@@ -125,7 +125,7 @@ integrations:
     system: DIP / Bundestag Open Data
     purpose: Parlamentarische Vorgänge, Drucksachen, Plenarprotokolle, Abstimmungen
     base_url: https://dip.bundestag.de/
-    current_status: PLANNED  # NICHT implementiert – nur Registry-Eintrag content/data/external-data-sources.json (id bundestag-bundesrat, quality_level_default C)
+    current_status: PLANNED  # NICHT implementiert - nur Registry-Eintrag content/data/external-data-sources.json (id bundestag-bundesrat, quality_level_default C)
     gap: Kern-Lücke für das Wirkungsportal Parlament; API-Doku vor Implementierung neu prüfen
     privacy_class: PUBLIC
     last_verified: "2026-08-14 (Negativbefund per Code-Suche)"
@@ -140,14 +140,14 @@ integrations:
 
   - integration_id: smtp-newsletter
     system: E-Mail/Newsletter
-    purpose: (noch) nicht vorhanden – Kontakt via mailto:, IONOS-SMTP nur als Zukunftsnotiz in ops/wahlkreis-wirkungscheck/README.md
+    purpose: (noch) nicht vorhanden - Kontakt via mailto:, IONOS-SMTP nur als Zukunftsnotiz in ops/wahlkreis-wirkungscheck/README.md
     current_status: PLANNED
     privacy_class: PERSONAL_DATA (bei Betrieb)
     last_verified: "2026-08-14 (Negativbefund)"
 
   # ── Akademie-App-seitige Integrationen (Repo woek-akademie-app) ──────────
   - integration_id: akademie-supabase
-    system: Supabase (Projekt fganranxrdyewbjpvubx) — geteilt mit Institut
+    system: Supabase (Projekt fganranxrdyewbjpvubx) - geteilt mit Institut
     purpose: System of Record der Akademie (Nutzer, Rollen, Fortschritt, Prüfungen, Einreichungen, Analytics)
     authentication: Supabase Auth (Provider NUR Discord; LinkedIn nicht implementiert) + Service-Role serverseitig
     data_contract: 19 Migrationen, Tabellen siehe ACADEMY_CAPABILITIES.md; keine Edge Functions in diesem Repo
@@ -162,7 +162,7 @@ integrations:
     current_status: PRODUCTION
     last_verified: "2026-08-14"
   - integration_id: akademie-hosted-llm
-    system: Together AI (Default) / OpenRouter / Fireworks — OpenAI-kompatibel
+    system: Together AI (Default) / OpenRouter / Fireworks - OpenAI-kompatibel
     purpose: WÖk-KI-Beta (/api/ki-beta): RAG über gespiegelten Website-Suchindex + Hosted-LLM mit Modell-Fallback
     repository_adapter: lib/woek-ai/hostedProvider.ts + lib/woek-ai/retrieval.ts
     privacy_class: INTERNAL (Anfrageinhalte an LLM-Anbieter)
@@ -170,7 +170,7 @@ integrations:
     last_verified: "2026-08-14"
   - integration_id: akademie-kwi-live
     system: sdg-portal.de (Live-Scraping)
-    purpose: GET /api/kwi — KWI-Berechnung on demand (CORS für Hauptwebsite)
+    purpose: GET /api/kwi - KWI-Berechnung on demand (CORS für Hauptwebsite)
     repository_adapter: lib/kwi/collector.ts
     current_status: BROKEN_SUSPECTED  # Quelle lt. docs/kwi-live-api.md zum 30.06.2026 abgeschaltet → Codex verifizieren; Migration auf "Portal Nachhaltige Kommunen" nötig
     privacy_class: PUBLIC
@@ -184,8 +184,8 @@ integrations:
     last_verified: "2026-08-14"
   - integration_id: akademie-analytics-ingest
     system: Akademie-App /api/site-event + /api/academy-event + /api/discord-analytics/ingest
-    purpose: Zweiter Analytics-Ingest (neben Supabase-Edge-Function der Website!) — anonymisiert (SHA-256), CORS-Whitelist, Vercel-Geo; Discord-Bot („Oracle") pusht Server-Metriken mit Bearer-Token
+    purpose: Zweiter Analytics-Ingest (neben Supabase-Edge-Function der Website!) - anonymisiert (SHA-256), CORS-Whitelist, Vercel-Geo; Discord-Bot („Oracle") pusht Server-Metriken mit Bearer-Token
     privacy_class: INTERNAL
     current_status: PRODUCTION
-    conflict: "Zwei parallele site-event-Ingests (Supabase-Edge-Fn vs. Next-API-Route) — welcher ist kanonisch? → CROSSCHECK"
+    conflict: "Zwei parallele site-event-Ingests (Supabase-Edge-Fn vs. Next-API-Route) - welcher ist kanonisch? → CROSSCHECK"
     last_verified: "2026-08-14"

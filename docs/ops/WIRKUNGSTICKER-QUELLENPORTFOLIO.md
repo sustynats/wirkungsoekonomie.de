@@ -4,7 +4,7 @@ Stand: 5. September 2026
 
 ## Ziel
 
-Das Portfolio bleibt so klein wie möglich und so vollständig wie nötig. Maßgeblich sind materieller Informationsgewinn, Aktualität, Quellenfunktion, technische und rechtliche Nutzbarkeit, Dublettenrisiko, Rauschen und Kosten — nicht politische Nähe oder Markenbekanntheit.
+Das Portfolio bleibt so klein wie möglich und so vollständig wie nötig. Maßgeblich sind materieller Informationsgewinn, Aktualität, Quellenfunktion, technische und rechtliche Nutzbarkeit, Dublettenrisiko, Rauschen und Kosten - nicht politische Nähe oder Markenbekanntheit.
 
 ## Rollen
 

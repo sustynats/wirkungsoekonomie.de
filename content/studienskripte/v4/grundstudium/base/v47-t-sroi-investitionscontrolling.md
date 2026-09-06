@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v47-t-sroi-investitionscontrolling.md curriculum=4.0 sanitized=true -->
-# V47 · T-SROI im Investitionscontrolling – WÖk-Erweiterung eines etablierten SROI-Ansatzes
+# V47 · T-SROI im Investitionscontrolling - WÖk-Erweiterung eines etablierten SROI-Ansatzes
 
 **lecture_id:** `WOEK-G-BASE-047`  
 **display_code:** `V47`  
@@ -257,7 +257,7 @@ Was wäre ohne Projekt passiert? Wie viel Wirkung haben andere erzeugt? Wie lang
 
 Die WÖk ergänzt mit T-SROI noch Transformation und Resilienz.
 
-Das kann nützlich sein – macht die Methode aber nicht automatisch genauer.
+Das kann nützlich sein - macht die Methode aber nicht automatisch genauer.
 
 Im Gegenteil: Je mehr wir ergänzen, desto wichtiger werden Transparenz und Sensitivität.
 
@@ -267,7 +267,7 @@ Ein Grundrecht oder eine harte ökologische Grenze wird nicht dadurch verhandelb
 
 Der Merksatz lautet:
 
-**T-SROI ist kein Zauberrechner für den gesellschaftlichen Wert. Es ist ein transparentes Modell – und seine Aussage ist nur so stark wie Gegenfaktum, Attribution und Proxies.**
+**T-SROI ist kein Zauberrechner für den gesellschaftlichen Wert. Es ist ein transparentes Modell - und seine Aussage ist nur so stark wie Gegenfaktum, Attribution und Proxies.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

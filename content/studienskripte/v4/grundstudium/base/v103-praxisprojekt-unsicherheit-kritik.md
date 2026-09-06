@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine gute Wirkungsanalyse versucht nicht, Recht zu behalten. Sie versucht herauszufinden, **wo sie falsch sein könnte**. Deshalb suchst du jetzt aktiv Gegenpositionen, Gegenevidenz und alternative Mechanismen. Du dokumentierst, welche Kritik dein Ergebnis verändert, welche nicht – und warum. Das Ziel ist nicht Ausgewogenheit um jeden Preis, sondern robuste Evidenz.
+Eine gute Wirkungsanalyse versucht nicht, Recht zu behalten. Sie versucht herauszufinden, **wo sie falsch sein könnte**. Deshalb suchst du jetzt aktiv Gegenpositionen, Gegenevidenz und alternative Mechanismen. Du dokumentierst, welche Kritik dein Ergebnis verändert, welche nicht - und warum. Das Ziel ist nicht Ausgewogenheit um jeden Preis, sondern robuste Evidenz.
 
 ## Lernziele
 
@@ -69,14 +69,14 @@ So werden echte Dissense sichtbar.
 
 ## 4. Kritiktypen
 
-- **Fact Error** – Tatsache/Quelle falsch.
-- **Scope Error** – Systemgrenze falsch.
-- **Mechanism Challenge** – Kausalpfad fraglich.
-- **Counterfactual Challenge** – Alternative Entwicklung plausibler.
-- **Distribution Challenge** – Durchschnitt verdeckt Betroffene.
-- **Legal/Boundary Challenge** – Grenze übersehen.
-- **Delivery Challenge** – Umsetzung unrealistisch.
-- **Normative Challenge** – andere legitime Zielgewichtung.
+- **Fact Error** - Tatsache/Quelle falsch.
+- **Scope Error** - Systemgrenze falsch.
+- **Mechanism Challenge** - Kausalpfad fraglich.
+- **Counterfactual Challenge** - Alternative Entwicklung plausibler.
+- **Distribution Challenge** - Durchschnitt verdeckt Betroffene.
+- **Legal/Boundary Challenge** - Grenze übersehen.
+- **Delivery Challenge** - Umsetzung unrealistisch.
+- **Normative Challenge** - andere legitime Zielgewichtung.
 
 Nicht jede Kritik verlangt dieselbe Reaktion.
 
@@ -187,7 +187,7 @@ Nicht für materielle Fachkritik.
 
 ## WÖk-Abgrenzung · Unsicherheit ist kein Fehlerrest
 
-WÖk beansprucht keine Sicherheit, die Daten und Kausalwissen nicht tragen. Unsicherheit, alternative Hypothesen und Gegenevidenz werden als Teil des Ergebnisses dokumentiert. Ein OPEN-Befund ist weder neutral noch null; er markiert fehlende Tragfähigkeit für eine stärkere Aussage. Der WÖk-Zusatz ist die versionierte Revisions- und Falsifikationslogik – nicht die Behauptung, andere Evaluationsmethoden zu ersetzen.
+WÖk beansprucht keine Sicherheit, die Daten und Kausalwissen nicht tragen. Unsicherheit, alternative Hypothesen und Gegenevidenz werden als Teil des Ergebnisses dokumentiert. Ein OPEN-Befund ist weder neutral noch null; er markiert fehlende Tragfähigkeit für eine stärkere Aussage. Der WÖk-Zusatz ist die versionierte Revisions- und Falsifikationslogik - nicht die Behauptung, andere Evaluationsmethoden zu ersetzen.
 
 ## 13. Quellen
 

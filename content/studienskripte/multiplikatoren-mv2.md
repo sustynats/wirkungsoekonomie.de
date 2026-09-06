@@ -3,13 +3,13 @@
 **Track / Kurscode:** Multiplikator:innen für Wirkungsökonomie · `multiplikatoren`
 **Vorlesungscode:** MV2
 **Empfohlene Lernzeit:** 60 Minuten · **Videolänge:** etwa 20 Minuten
-**Voraussetzung:** MV1 – Maßstabskrise und Wirkung statt Kapital
+**Voraussetzung:** MV1 - Maßstabskrise und Wirkung statt Kapital
 **Status:** fachlicher Master in Ausarbeitung · vor Veröffentlichung redaktionell prüfen
 **Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-buch-html/) · [WÖk-Referenz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-index-html/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-glossar-html/) · [WÖMS 2.0](https://wirkungsoekonomie.de/bibliothek/eintraege/woems-2-0/)
 
 ## 1. Einstieg / Wirkungsfrage
 
-Warum ist der Satz „Wir haben 500 Becher verteilt“ keine Wirkungsbehauptung – und welche wenigen Fragen machen aus ihm eine prüfbare Aussage? Diese Vorlesung macht die wichtigsten Begriffe der Wirkungsökonomie zu Werkzeugen für echte Gespräche. Du lernst nicht, Fachwörter aufzusagen. Du lernst, mit ihnen freundlich und genau zu fragen: Was hat sich verändert? Für wen? Wodurch? Woran ist das erkennbar? Und welche Nachteile gehören ebenso auf den Tisch?
+Warum ist der Satz „Wir haben 500 Becher verteilt“ keine Wirkungsbehauptung - und welche wenigen Fragen machen aus ihm eine prüfbare Aussage? Diese Vorlesung macht die wichtigsten Begriffe der Wirkungsökonomie zu Werkzeugen für echte Gespräche. Du lernst nicht, Fachwörter aufzusagen. Du lernst, mit ihnen freundlich und genau zu fragen: Was hat sich verändert? Für wen? Wodurch? Woran ist das erkennbar? Und welche Nachteile gehören ebenso auf den Tisch?
 
 ## 2. Video-/Audio-Vorlesung
 
@@ -18,12 +18,12 @@ Warum ist der Satz „Wir haben 500 Becher verteilt“ keine Wirkungsbehauptung 
 - **Kernaussage:** Wirkung beschreibt eine tatsächliche Zustandsveränderung. Leistung, Reichweite und Wirkungspotenzial können dafür Hinweise sein, sind aber nicht dasselbe wie ein Nachweis.
 - **Medienstatus:** Dieses Master-Skript ist die verbindliche Grundlage für Sprechertext, Folien, Grafiken und Video. Ein fehlendes Medium sperrt den Lernweg nicht.
 - **Verbindliche Dramaturgie für Folien, TTS und Video:**
-  1. **0:00–2:30 – Der Pfandbecher am Bahnhof:** Eine gute Idee ist noch kein belegter Erfolg.
-  2. **2:30–5:30 – Output, Outcome, Wirkung:** Was wurde getan, was veränderte sich, was lässt sich belegen?
-  3. **5:30–9:30 – Wirkstoff, Wirkungsträger und Wirkungspfad:** Die Kette wird sichtbar, einschließlich ihrer schwächsten Stelle.
-  4. **9:30–13:00 – Potenzial, Risiko, Empfänger und Raum:** Für wen kann etwas nützen oder schaden – und unter welchen Bedingungen?
-  5. **13:00–16:30 – Netto-Wirkung und Nichtkompensation:** Das Ganze Bild zählt; schwere Schäden verschwinden nicht durch gute Nebenleistungen.
-  6. **16:30–20:00 – Sprache für die Praxis:** Ein Gesprächsleitfaden, der präzise macht, ohne belehrend zu werden.
+  1. **0:00-2:30 - Der Pfandbecher am Bahnhof:** Eine gute Idee ist noch kein belegter Erfolg.
+  2. **2:30-5:30 - Output, Outcome, Wirkung:** Was wurde getan, was veränderte sich, was lässt sich belegen?
+  3. **5:30-9:30 - Wirkstoff, Wirkungsträger und Wirkungspfad:** Die Kette wird sichtbar, einschließlich ihrer schwächsten Stelle.
+  4. **9:30-13:00 - Potenzial, Risiko, Empfänger und Raum:** Für wen kann etwas nützen oder schaden - und unter welchen Bedingungen?
+  5. **13:00-16:30 - Netto-Wirkung und Nichtkompensation:** Das Ganze Bild zählt; schwere Schäden verschwinden nicht durch gute Nebenleistungen.
+  6. **16:30-20:00 - Sprache für die Praxis:** Ein Gesprächsleitfaden, der präzise macht, ohne belehrend zu werden.
 
 ## 3. Transkript / Erklärgerüst
 
@@ -39,7 +39,7 @@ Diese Fragen machen die Idee nicht klein. Sie nehmen sie ernst. Genau das ist di
 
 Die 500 ausgegebenen Mehrwegbecher sind zunächst eine **Leistung**, in der Fachsprache ein Output. Output beschreibt, was eine Organisation, ein Projekt oder eine Person getan, produziert oder angeboten hat: Becher ausgegeben, Workshops durchgeführt, Bäume gepflanzt, Beratungen angeboten, Reichweite erzielt. Outputs sind wichtig. Ohne sie gibt es oft keine weitere Veränderung. Aber sie beantworten nur die Frage: „Was wurde gemacht?“
 
-Wirkung beantwortet eine andere Frage: „Was hat sich im Zustand von Menschen, Ökosystemen oder Institutionen tatsächlich verändert?“ Beim Kiosk wäre das zum Beispiel: Die Zahl der verbrauchten Einwegbecher im Bahnhof sinkt dauerhaft. Der Abfall auf den Bahnsteigen wird weniger. Materialverbrauch und Treibhausgasemissionen gehen, über den gesamten Lebensweg betrachtet, zurück. Oder die Mehrwegregel führt dazu, dass bestimmte Kund:innen seltener Kaffee kaufen, weil sie Pfand nicht vorstrecken können. Auch das wäre eine Zustandsveränderung und damit Wirkung – nur keine erwünschte.
+Wirkung beantwortet eine andere Frage: „Was hat sich im Zustand von Menschen, Ökosystemen oder Institutionen tatsächlich verändert?“ Beim Kiosk wäre das zum Beispiel: Die Zahl der verbrauchten Einwegbecher im Bahnhof sinkt dauerhaft. Der Abfall auf den Bahnsteigen wird weniger. Materialverbrauch und Treibhausgasemissionen gehen, über den gesamten Lebensweg betrachtet, zurück. Oder die Mehrwegregel führt dazu, dass bestimmte Kund:innen seltener Kaffee kaufen, weil sie Pfand nicht vorstrecken können. Auch das wäre eine Zustandsveränderung und damit Wirkung - nur keine erwünschte.
 
 Dieser Unterschied ist kein akademisches Haarspalten. Er schützt vor einem alltäglichen Denkfehler. Zehn Fortbildungen sind nicht automatisch bessere Zusammenarbeit. Eine Million Videoaufrufe sind nicht automatisch mehr Wissen. Tausend gepflanzte Bäume sind nicht automatisch ein stabiler Wald. Reichweite, Aktivität und gute Absicht können den Anfang eines Wirkungspfads markieren. Einen Beleg für die Veränderung ersetzen sie nicht.
 
@@ -65,7 +65,7 @@ Ein einfaches Bild: Ein Samenkorn hat das Potenzial, ein Baum zu werden. Aber oh
 
 ### Wirkstoff und Wirkungsträger: Was stößt an, worüber läuft es?
 
-Zwei Begriffe helfen, Verantwortlichkeit nicht verschwimmen zu lassen. Ein **Wirkstoff** ist – als Analogie zur Medizin – das Element, von dem eine Wirkung ausgeht. Das kann ein Produkt, eine Entscheidung, eine Regel, eine Technologie oder ein Medieninhalt sein. Beim Kiosk ist die Pfand- und Mehrwegregel ein möglicher Wirkstoff: Sie verändert die Situation, in der Menschen ihren Kaffee kaufen.
+Zwei Begriffe helfen, Verantwortlichkeit nicht verschwimmen zu lassen. Ein **Wirkstoff** ist - als Analogie zur Medizin - das Element, von dem eine Wirkung ausgeht. Das kann ein Produkt, eine Entscheidung, eine Regel, eine Technologie oder ein Medieninhalt sein. Beim Kiosk ist die Pfand- und Mehrwegregel ein möglicher Wirkstoff: Sie verändert die Situation, in der Menschen ihren Kaffee kaufen.
 
 Der **Wirkungsträger** ist das konkrete Element oder System, über das sich die Wirkung vermittelt und an dem eine Veränderung ansetzen kann. Beim Beispiel sind das nicht nur die Becher. Es gehören auch das Ausgabesystem, die Rückgabestellen, die Reinigung, die Preisgestaltung, die Information am Tresen und die Verantwortung des Betreibers dazu. Der Becher allein macht noch keine Veränderung. Erst das zusammenspielende System trägt den möglichen Effekt.
 
@@ -127,9 +127,9 @@ Falls das Gegenüber tiefer einsteigen will, kannst du die Begriffe nachreichen.
 
 Nimm aus dieser Vorlesung vor allem vier Dinge mit. Erstens: Output zeigt eine Leistung, Wirkung eine tatsächliche Veränderung. Zweitens: Potenzial und Risiko sind Möglichkeiten; sie müssen als solche bezeichnet werden. Drittens: Wirkstoff, Wirkungsträger, Empfänger und Wirkungsraum machen Verantwortung und Kontext sichtbar. Viertens: Ein Wirkungspfad ist nur dann hilfreich, wenn er auch seine Bruchstellen und Nebenfolgen zeigt.
 
-Der Pfandbecher ist damit nicht nur ein Becher. Er ist ein kleines Trainingsfeld für eine große Gewohnheit: Nicht bei der guten Absicht und nicht bei der Anzahl der Aktivitäten stehen bleiben, sondern nach der Veränderung fragen. In MV3 geht es deshalb um die nächste Frage: Wie werden aus dieser Prüfung Entscheidungen – und warum schützt Nichtkompensation davor, große Schäden kleinzurechnen?
+Der Pfandbecher ist damit nicht nur ein Becher. Er ist ein kleines Trainingsfeld für eine große Gewohnheit: Nicht bei der guten Absicht und nicht bei der Anzahl der Aktivitäten stehen bleiben, sondern nach der Veränderung fragen. In MV3 geht es deshalb um die nächste Frage: Wie werden aus dieser Prüfung Entscheidungen - und warum schützt Nichtkompensation davor, große Schäden kleinzurechnen?
 
-## 4. Skript / Folien – fachliche Sicherung
+## 4. Skript / Folien - fachliche Sicherung
 
 ### Begriffe im Pfandbecher-Fall
 
@@ -210,7 +210,7 @@ Bei vielen gesellschaftlichen Veränderungen wirken mehrere Akteur:innen zugleic
 
 Die Wirkungsökonomie braucht deshalb eine Sprache für Beiträge. Eine Organisation kann Verantwortung für ihren eigenen Wirkungsträger übernehmen, ihren Beitrag belegen und gleichzeitig anerkennen, dass andere mitwirken. Die Aussage „Unser System hat zu einem Rückgang beigetragen“ kann fachlich stärker sein als „Wir haben das Problem gelöst“, weil sie den Wirkungsraum realistisch beschreibt.
 
-Das ist auch ethisch wichtig. Wirkung wird nicht zu einem Wettbewerb, bei dem die lauteste Organisation die meiste Anerkennung bekommt. Im Mittelpunkt stehen Empfänger, Zustände und Verbesserungen – nicht die Selbstdarstellung der Beteiligten. Verantwortung heißt in diesem Sinn: den eigenen Einflussbereich erkennen, Folgen nicht abwälzen und bei erkennbaren Schäden handeln. Es heißt nicht, einzelne Menschen moralisch zu bewerten oder sie mit Punktesystemen zu sortieren.
+Das ist auch ethisch wichtig. Wirkung wird nicht zu einem Wettbewerb, bei dem die lauteste Organisation die meiste Anerkennung bekommt. Im Mittelpunkt stehen Empfänger, Zustände und Verbesserungen - nicht die Selbstdarstellung der Beteiligten. Verantwortung heißt in diesem Sinn: den eigenen Einflussbereich erkennen, Folgen nicht abwälzen und bei erkennbaren Schäden handeln. Es heißt nicht, einzelne Menschen moralisch zu bewerten oder sie mit Punktesystemen zu sortieren.
 
 ### Vertiefung: Rückschläge, Rebound und unerwartete Folgen
 

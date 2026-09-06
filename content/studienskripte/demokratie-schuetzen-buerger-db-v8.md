@@ -118,7 +118,7 @@ Ob Lea öffentlich oder privat antwortet, ist eine Wirkungsfrage. Eine private N
 | Korrekturmaterial | Noch unklar; erst recherchieren. | Beleg, zuständige Stelle und Korrekturweg liegen vor. |
 | Gesprächslage | Gegenüber ist grundsätzlich an Klärung interessiert. | Raum braucht sichtbare Regel oder Moderation. |
 
-Die [OECD-Empfehlung zu Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) behandelt die Stärkung von Resilienz, Transparenz und Verantwortlichkeit in Informationsräumen. Für den Alltag folgt daraus keine Pflicht zu professioneller Faktenprüfung. Sie erinnert aber daran, dass Zugänge zu verlässlicher Information und nachvollziehbare Regeln eine öffentliche Infrastrukturaufgabe sind – nicht allein eine Last einzelner Personen im Chat.
+Die [OECD-Empfehlung zu Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) behandelt die Stärkung von Resilienz, Transparenz und Verantwortlichkeit in Informationsräumen. Für den Alltag folgt daraus keine Pflicht zu professioneller Faktenprüfung. Sie erinnert aber daran, dass Zugänge zu verlässlicher Information und nachvollziehbare Regeln eine öffentliche Infrastrukturaufgabe sind - nicht allein eine Last einzelner Personen im Chat.
 
 ## Dokumentieren, ohne Menschen zu überwachen
 
@@ -136,7 +136,7 @@ Eine Korrekturkultur muss zwei Dinge gleichzeitig können: Fehler benennen und e
 
 Lea könnte dem ursprünglichen Poster zunächst privat schreiben: „Ich glaube, Foto und Text passen nicht zusammen. Die Schule hat bestätigt, dass die Schlange zur Mensa gehörte. Magst du den Beitrag ergänzen oder löschen? Ich poste sonst im Chat die Raumplanung, damit alle dieselbe Information haben.“ Reagiert die Person nicht und die Behauptung bleibt sichtbar, ist eine öffentliche Korrektur angemessen. In beiden Fällen wird nicht über Charakter oder Motive spekuliert.
 
-Fehlerfreundlichkeit heißt nicht folgenlos. Wird wiederholt mit privaten Bildern gearbeitet oder werden Menschen bedroht, braucht der Raum klare Regeln und gegebenenfalls Ausschluss- oder Meldeverfahren. Der Unterschied liegt darin, dass Regeln Verhalten und Risiken adressieren, nicht die Würde oder den Wert einer Person. Diese Unterscheidung hält demokratische Räume korrigierbar – auch für diejenigen, die einen Fehler gemacht haben.
+Fehlerfreundlichkeit heißt nicht folgenlos. Wird wiederholt mit privaten Bildern gearbeitet oder werden Menschen bedroht, braucht der Raum klare Regeln und gegebenenfalls Ausschluss- oder Meldeverfahren. Der Unterschied liegt darin, dass Regeln Verhalten und Risiken adressieren, nicht die Würde oder den Wert einer Person. Diese Unterscheidung hält demokratische Räume korrigierbar - auch für diejenigen, die einen Fehler gemacht haben.
 
 ## Die Rolle der still Mitlesenden
 
@@ -206,15 +206,15 @@ Die vollständige Analyse ist umfangreich, weil reale Situationen verschieden si
 
 ## Quellen und Vertiefung
 
-- [WÖk-Referenz: Öffentlichkeit als Wirkungsraum](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-074-oeffentlichkeit-als-wirkungsraum-index-html/) – Sichtbarkeit, Schutz und Korrektur als Bedingungen öffentlicher Räume.
-- [WÖk-Referenz: Diskurskultur](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-079-diskurskultur-index-html/) – Kritik und Korrekturfähigkeit verbinden.
-- [WÖk-Referenz: Handlung, Unterlassen und Rückkopplung](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-012-handlung-unterlassen-und-rueckkopplung-index-html/) – Von Information zu Anpassung und erneuter Prüfung.
-- [WÖk-Begriff: Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) – Schutzverletzungen nicht verrechnen.
-- [WÖk-Begriff: Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) – Schwere Risiken zuerst bearbeiten.
-- [WÖk: SDG+ Demokratie](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-verstehen-sdgs-sdgplus-sdgplus-demokratie-index-html/) – Demokratie als Referenzdimension positiver Netto-Wirkung.
-- [OECD: Recommendation on Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) – Resilienz und Verantwortlichkeit im Informationsraum.
-- [European Commission: Digital Services Act](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0414/) – Regelungsrahmen für Vermittlungsdienste und Plattformen.
-- [European Digital Media Observatory: Fact-checking](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0535/) – Überblick zu Faktenprüfung und Forschung.
+- [WÖk-Referenz: Öffentlichkeit als Wirkungsraum](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-074-oeffentlichkeit-als-wirkungsraum-index-html/) - Sichtbarkeit, Schutz und Korrektur als Bedingungen öffentlicher Räume.
+- [WÖk-Referenz: Diskurskultur](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-079-diskurskultur-index-html/) - Kritik und Korrekturfähigkeit verbinden.
+- [WÖk-Referenz: Handlung, Unterlassen und Rückkopplung](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-012-handlung-unterlassen-und-rueckkopplung-index-html/) - Von Information zu Anpassung und erneuter Prüfung.
+- [WÖk-Begriff: Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) - Schutzverletzungen nicht verrechnen.
+- [WÖk-Begriff: Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) - Schwere Risiken zuerst bearbeiten.
+- [WÖk: SDG+ Demokratie](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-verstehen-sdgs-sdgplus-sdgplus-demokratie-index-html/) - Demokratie als Referenzdimension positiver Netto-Wirkung.
+- [OECD: Recommendation on Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) - Resilienz und Verantwortlichkeit im Informationsraum.
+- [European Commission: Digital Services Act](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0414/) - Regelungsrahmen für Vermittlungsdienste und Plattformen.
+- [European Digital Media Observatory: Fact-checking](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0535/) - Überblick zu Faktenprüfung und Forschung.
 
 ## Schlussgedanke
 

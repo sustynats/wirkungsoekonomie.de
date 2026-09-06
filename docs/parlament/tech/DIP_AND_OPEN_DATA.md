@@ -11,6 +11,6 @@ Bis zum veröffentlichten Ablauf darf dieser Schlüssel als serverseitiges Über
 
 Der Adapter in `lib/dip.ts` hardcodiert keine Vorgangslebenszyklen und keine ungeprüften OpenAPI-Filter. Die Produktionskonfiguration muss die aktuell verifizierten Endpoint-/Filterfelder mit Abrufdatum dokumentieren.
 
-Bei jedem Import: Rohantwort separat speichern, Originaldokument nicht verändern, URL/Hash/Abrufzeit erfassen, Quelle als „Deutscher Bundestag/Bundesrat – DIP“ attribuieren. DIP-PDFs bleiben unverändert; eigene Einordnungen werden klar getrennt und als solche markiert.
+Bei jedem Import: Rohantwort separat speichern, Originaldokument nicht verändern, URL/Hash/Abrufzeit erfassen, Quelle als „Deutscher Bundestag/Bundesrat - DIP“ attribuieren. DIP-PDFs bleiben unverändert; eigene Einordnungen werden klar getrennt und als solche markiert.
 
 Die produktive Adapterlogik fragt `vorgangsposition` ab: Für den Jahresbestand werden nur Positionen mit dokumentierter Beschlussfassung in den retrospektiven Prüfbestand übernommen. Für den Radar werden ausschließlich `gang: true`-Schritte mit amtlich datiertem Zukunftstermin gespeichert. Es entsteht ein `SOURCE_REQUIRED`-Screening mit Quellen- und Methodiklücken, keine automatische Wirkungsaussage oder Empfehlung.

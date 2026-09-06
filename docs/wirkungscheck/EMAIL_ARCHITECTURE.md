@@ -56,7 +56,7 @@ ausdrücklichen Wunsch nach weiterem Austausch.
 ## Komponenten und Betriebsstand
 
 Die operative Grundumgebung liegt in
-[`ops/wahlkreis-wirkungscheck`](/Users/hagen/Documents/New%20project/ops/wahlkreis-wirkungscheck/README.md).
+[`ops/wahlkreis-wirkungscheck`]([lokales Arbeitsverzeichnis]/Documents/New%20project/ops/wahlkreis-wirkungscheck/README.md).
 Sie enthält:
 
 - CiviCRM mit separater MySQL-Datenbank für Kontakt- und Dialogverwaltung;

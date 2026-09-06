@@ -1,4 +1,4 @@
-# Handoff Claude → Codex: Wirkungsticker – visuelle Anker, KI-Visuals und Titelbilder
+# Handoff Claude → Codex: Wirkungsticker - visuelle Anker, KI-Visuals und Titelbilder
 
 Stand: 2026-09-03 · Branch `claude/wirkungsticker-visual-ux` · Lane: Claude = Templates, CSS, Icons, Titelbildsystem; Codex = Pipeline (`lib.mjs`, `run.mjs`), Qualitätsgate, Workflows, Higgsfield-Anbindung.
 
@@ -14,13 +14,13 @@ Status 2026-09-03: Auftrag A ist im Codex-Folgepaket umgesetzt und getestet. Auf
 | Tests | `tests/news/visuals.test.mjs`, `tests/news/title-image.test.mjs` | laufen in `npm run news:test` mit |
 | Titelbildsystem | `scripts/news/title-image/*`, `docs/ops/WIRKUNGSTICKER-TITELBILD.md`, `scripts/news/title-image/previews/` | zwei Modi, SVG-Renderer, Rasterizer-Adapter, Vorschauen, Doku |
 
-Alle Marker, die `scripts/news/validate.mjs` prüft, sind erhalten („Methodik und Qualitätsgate“, „Fakten- &amp; Folgencheck öffnen“, „Ausgangsmeldung vom“, „WÖk-Analyse aktualisiert“, „Worum geht es?“, „Originalquelle ansehen“, Reihenfolge Quelle → Faktencheck → Analyse → Folgencheck, „Erste Ordnung – unmittelbar“, „Risiken, Gegenläufe und Prüfgrenzen“). `npm run news:test`, `news:build`, `news:validate` sind grün.
+Alle Marker, die `scripts/news/validate.mjs` prüft, sind erhalten („Methodik und Qualitätsgate“, „Fakten- &amp; Folgencheck öffnen“, „Ausgangsmeldung vom“, „WÖk-Analyse aktualisiert“, „Worum geht es?“, „Originalquelle ansehen“, Reihenfolge Quelle → Faktencheck → Analyse → Folgencheck, „Erste Ordnung - unmittelbar“, „Risiken, Gegenläufe und Prüfgrenzen“). `npm run news:test`, `news:build`, `news:validate` sind grün.
 
 Hinweis zur Entscheidung „Titelbilder“: keine generischen KI-Fotos als Artikelbilder. Das Titelbildsystem trennt bewusst ein gekennzeichnetes, symbolisches Editorial-Motiv von der Wirkungskarte aus Analysedaten; beides ist Darstellung, nie Beleg.
 
 ## 2. Auftrag A: KI-Visuals in der Pipeline aktivieren
 
-Ziel: Sobald eine neue oder materiell aktualisierte Akte analysiert wird, liefert die WÖk-KI optional strukturierte Visual-Daten, die Claude-seitig bereits gerendert werden (Kennzahlen-Kacheln, Balkendiagramm, Termine, Betroffenengruppen, Tendenz je Dimension). Ohne diese Daten rendert die Seite die deterministischen Anker (Meter, Verfahrensstand, Wirkpfad) – also nichts blockiert.
+Ziel: Sobald eine neue oder materiell aktualisierte Akte analysiert wird, liefert die WÖk-KI optional strukturierte Visual-Daten, die Claude-seitig bereits gerendert werden (Kennzahlen-Kacheln, Balkendiagramm, Termine, Betroffenengruppen, Tendenz je Dimension). Ohne diese Daten rendert die Seite die deterministischen Anker (Meter, Verfahrensstand, Wirkpfad) - also nichts blockiert.
 
 ### A1 Prompt erweitern (`scripts/news/lib.mjs`, `buildAnalysisPrompt`)
 
@@ -56,7 +56,7 @@ Wichtig: Der Sanitizer muss **vor** `validateAnalysis` laufen, weil `collectStri
 | Visual | Bedingung | Nie |
 |---|---|---|
 | `key_figures` (≤ 3) | mindestens eine materielle Zahl steht wörtlich im Claim/Quelltext (Betrag, Anzahl, Quote, Jahr) | umgerechnete, summierte, geschätzte Zahlen; Zahlen aus Kontextwissen |
-| `chart` (Balken, 3–8 Punkte) | Quelle nennt ≥ 3 vergleichbare Zahlen derselben Einheit (Zeitreihe, Kategorien) | gemischte Einheiten, Prognosen der KI |
+| `chart` (Balken, 3-8 Punkte) | Quelle nennt ≥ 3 vergleichbare Zahlen derselben Einheit (Zeitreihe, Kategorien) | gemischte Einheiten, Prognosen der KI |
 | `timeline` (≤ 4) | Quelle nennt konkrete Termine/Fristen (Inkrafttreten, Frist, Laufzeit) | erschlossene Termine |
 | `affected_groups` (≤ 4) | Betroffene sind aus dem Sachverhalt erkennbar; feste Liste | freie Gruppenbezeichnungen |
 | `tendency` je Dimension | immer, wenn eine analytische Tendenz begründbar ist; sonst `offen` | „eingetretene Wirkung“ bei ex ante |

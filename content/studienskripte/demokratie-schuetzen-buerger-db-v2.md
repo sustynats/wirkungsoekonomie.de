@@ -1,4 +1,4 @@
-# Demokratie schützen als Bürgerin und Bürger – Wie demokratische Räume kaputtgehen
+# Demokratie schützen als Bürgerin und Bürger - Wie demokratische Räume kaputtgehen
 
 **Reihe:** Demokratie schützen · Bürger:innen · DB2
 **Arbeitsstand:** fachlicher Master für die redaktionelle Prüfung
@@ -8,7 +8,7 @@
 
 Demokratische Räume gehen selten von einem Tag auf den anderen verloren. Häufig verändert sich zuerst, wie Menschen über andere sprechen, welche Behauptungen als selbstverständlich gelten und wer sich noch traut, eine abweichende Erfahrung einzubringen. Das kann im Familienchat beginnen, auf dem Schulhof, im Sportverein, in einer lokalen Kommentarspalte oder im Gemeinderat. Nicht jede Zuspitzung ist bereits demokratiefeindlich. Streit, Kritik und auch Wut gehören zur Demokratie. Gefährlich wird es, wenn Menschen zu Feindbildern gemacht, Fragen durch Gewissheiten ersetzt und Korrekturwege absichtlich unbrauchbar gemacht werden.
 
-Diese Lektion beschreibt solche Muster, ohne Menschen zu etikettieren. Sie erklärt nicht, wer ein „guter“ oder „schlechter“ Bürger ist. Sie fragt stattdessen: Welche Kommunikationsweise verändert einen Raum so, dass Information, Widerspruch und Schutz schwächer werden? Welche kleine Handlung hält diesen Raum offen? Das ist eine Wirkungsfrage. Nicht die Lautstärke eines Beitrags und nicht seine Reichweite sind der Maßstab, sondern die tatsächliche Veränderung von Zuständen: Können Menschen weiterhin sicher widersprechen? Werden Fehler überprüft? Bleiben Betroffene als Personen sichtbar? Entsteht Lernfähigkeit – oder nur Einschüchterung und Lagerdenken?
+Diese Lektion beschreibt solche Muster, ohne Menschen zu etikettieren. Sie erklärt nicht, wer ein „guter“ oder „schlechter“ Bürger ist. Sie fragt stattdessen: Welche Kommunikationsweise verändert einen Raum so, dass Information, Widerspruch und Schutz schwächer werden? Welche kleine Handlung hält diesen Raum offen? Das ist eine Wirkungsfrage. Nicht die Lautstärke eines Beitrags und nicht seine Reichweite sind der Maßstab, sondern die tatsächliche Veränderung von Zuständen: Können Menschen weiterhin sicher widersprechen? Werden Fehler überprüft? Bleiben Betroffene als Personen sichtbar? Entsteht Lernfähigkeit - oder nur Einschüchterung und Lagerdenken?
 
 ## Lernziele
 
@@ -27,7 +27,7 @@ In Wiesenfeld soll eine alte Durchgangsstraße für acht Wochen teilweise gesper
 
 Am ersten Abend schreibt jemand in die lokale Nachbarschaftsgruppe: „Die wollen unser Viertel absichtlich kaputtmachen. Für bestimmte Leute ist immer Geld da, für uns nie.“ Dem Beitrag ist ein Foto von zwei Baustellenfahrzeugen beigefügt. Darunter erscheint ein Kommentar: „Diese Planer sind keine normalen Menschen, die genießen das doch.“ Ein anderer fordert, die Namen der Verwaltungsmitarbeitenden zu veröffentlichen. Mehrere Personen reagieren mit zustimmenden Symbolen. Eine Mutter schreibt, dass ihr Kind wegen der Umleitung später zur Therapie komme. Ihr Hinweis geht fast unter. Als jemand auf den veröffentlichten Bauzeitenplan verlinkt, heißt es: „Glaubst du wirklich deren Propaganda?“
 
-Zwei Tage später sagt die Leiterin der Kita, dass Eltern sie auf dem Weg zur Arbeit ansprechen und beschimpfen. Ein Bauleiter bittet darum, an der Baustelle nicht fotografiert zu werden. Die sachliche Frage – wie die morgendliche Anlieferung und der sichere Kitaweg während der Sperrung organisiert werden – ist noch ungelöst. Aber sie wird kaum noch verhandelt. Im Raum steht jetzt eine andere Frage: Wer gehört angeblich zu „uns“, und wer soll als Gegner gelten?
+Zwei Tage später sagt die Leiterin der Kita, dass Eltern sie auf dem Weg zur Arbeit ansprechen und beschimpfen. Ein Bauleiter bittet darum, an der Baustelle nicht fotografiert zu werden. Die sachliche Frage - wie die morgendliche Anlieferung und der sichere Kitaweg während der Sperrung organisiert werden - ist noch ungelöst. Aber sie wird kaum noch verhandelt. Im Raum steht jetzt eine andere Frage: Wer gehört angeblich zu „uns“, und wer soll als Gegner gelten?
 
 Der Fall ist modellhaft. Die Belastung durch die Baustelle ist real. Der Plan kann fehlerhaft sein. Die Verwaltung kann zu spät oder unverständlich informiert haben. Protest, eine Anfrage, eine Demonstration oder eine Beschwerde wären legitime Wege. Der Schaden beginnt nicht mit dem Konflikt, sondern mit drei Verschiebungen: Aus einer prüfbaren Entscheidung wird ein unterstellter Vernichtungsplan; aus zuständigen Personen werden Zielscheiben; und aus einer Quelle, die überprüft werden könnte, wird ein Beweis dafür, dass jede Prüfung sinnlos sei.
 
@@ -47,7 +47,7 @@ Auch scharfe Kritik kann demokratisch sein. „Die Verwaltung hat die Anwohner:i
 
 Nicht demokratisch wird Kritik erst, wenn sie die Person an die Stelle der Sache setzt: „Die sind keine normalen Menschen“, „Man sollte sie aus dem Viertel jagen“, „Wer widerspricht, gehört zu denen.“ Dann wird nicht mehr über Planung, Verantwortung oder Folgen gestritten. Der Zugang zum Gespräch wird selbst bestritten. Das kann dazu führen, dass Betroffene, Fachleute oder stille Mitlesende sich zurückziehen. Der Raum verliert gerade jene Informationen, die einen Fehler sichtbar machen könnten.
 
-Eine brauchbare Unterscheidung lautet deshalb nicht „freundlich gegen unfreundlich“, sondern: Ist der Satz auf eine Handlung, eine Entscheidung oder eine Begründung bezogen? Kann er durch Informationen begrenzt werden? Lässt er dem Gegenüber den Status einer Person mit Rechten? Und welche Reaktion macht er für Dritte wahrscheinlicher – Nachfrage und Prüfung oder Einschüchterung und Abbruch?
+Eine brauchbare Unterscheidung lautet deshalb nicht „freundlich gegen unfreundlich“, sondern: Ist der Satz auf eine Handlung, eine Entscheidung oder eine Begründung bezogen? Kann er durch Informationen begrenzt werden? Lässt er dem Gegenüber den Status einer Person mit Rechten? Und welche Reaktion macht er für Dritte wahrscheinlicher - Nachfrage und Prüfung oder Einschüchterung und Abbruch?
 
 ## Drei Muster, die Konflikte kippen lassen
 
@@ -63,7 +63,7 @@ Eine sinnvolle Gegenhandlung ist konkret und ruhig: „Die Umleitung belastet un
 
 Der Kanal ist undicht, der Baubeginn fiel in eine ungünstige Zeit, die Kommunikation war lückenhaft und die Umleitung trifft Haushalte unterschiedlich. Das ist ein komplexes Bündel von Ursachen. Sündenbocklogik macht daraus eine einfache Geschichte: Eine klar umrissene Gruppe ist schuld und müsse nur entfernt werden, dann wäre das Problem gelöst.
 
-Solche Geschichten sind attraktiv, weil sie Ohnmacht in Klarheit verwandeln. Sie sparen die Zumutung, mehrere Ursachen, Zuständigkeiten und Zielkonflikte auszuhalten. Sie liefern zugleich eine Zugehörigkeit: Wer die Schuldigen erkennt, gehört angeblich zur Gruppe der Durchblickenden. Die Klarheit ist jedoch meist teuer erkauft. Sie kann zu Diskriminierung führen und lenkt Aufmerksamkeit von realen Hebeln ab – etwa sicheren Übergängen, einem Shuttle, geänderten Lieferfenstern oder einer besseren Planung.
+Solche Geschichten sind attraktiv, weil sie Ohnmacht in Klarheit verwandeln. Sie sparen die Zumutung, mehrere Ursachen, Zuständigkeiten und Zielkonflikte auszuhalten. Sie liefern zugleich eine Zugehörigkeit: Wer die Schuldigen erkennt, gehört angeblich zur Gruppe der Durchblickenden. Die Klarheit ist jedoch meist teuer erkauft. Sie kann zu Diskriminierung führen und lenkt Aufmerksamkeit von realen Hebeln ab - etwa sicheren Übergängen, einem Shuttle, geänderten Lieferfenstern oder einer besseren Planung.
 
 Ein Sündenbock kann eine ethnische oder religiöse Gruppe sein. Er kann auch aus „den Medien“, „den Bürokraten“, „den Alten“, „den Jungen“ oder „den Zugezogenen“ bestehen. Die Kategorie ist verschieden, die Logik gleich: Eine vielfältige Ursache wird zur moralisch minderwertigen Gruppe verdichtet. Diese Lektion bewertet nicht die Menschen, die sich einer solchen Erzählung anschließen. Sie analysiert eine Kommunikationsform und ihre Folgen für das Zusammenleben.
 
@@ -127,15 +127,15 @@ Auch ein Rückzug kann sinnvoll sein. Wer bedroht oder dauerhaft angegriffen wir
 
 ## Positive Netto-Wirkung auf Demokratie
 
-Wenn die Lektion von einem Ziel spricht, meint sie positive Netto-Wirkung auf Demokratie – nicht „Wirkung“ im Allgemeinen. Positiv wäre eine Veränderung, bei der Informationen zugänglicher und prüfbarer werden, Betroffene ohne Einschüchterung sprechen können und relevante Fehler tatsächlich in Entscheidungen zurückfließen. Negative Nebenwirkungen bleiben Teil der Betrachtung: Eine gut gemeinte Moderation kann etwa Menschen ohne digitale Zugänge ausschließen; eine schnelle Richtigstellung kann eine betroffene Person bloßstellen; eine Sicherheitsmaßnahme kann unverhältnismäßig in Rechte eingreifen.
+Wenn die Lektion von einem Ziel spricht, meint sie positive Netto-Wirkung auf Demokratie - nicht „Wirkung“ im Allgemeinen. Positiv wäre eine Veränderung, bei der Informationen zugänglicher und prüfbarer werden, Betroffene ohne Einschüchterung sprechen können und relevante Fehler tatsächlich in Entscheidungen zurückfließen. Negative Nebenwirkungen bleiben Teil der Betrachtung: Eine gut gemeinte Moderation kann etwa Menschen ohne digitale Zugänge ausschließen; eine schnelle Richtigstellung kann eine betroffene Person bloßstellen; eine Sicherheitsmaßnahme kann unverhältnismäßig in Rechte eingreifen.
 
 Der normative Referenzrahmen sind die SDGs und die [Agenda 2030](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0025/), insbesondere die Voraussetzungen friedlicher, gerechter und inklusiver Institutionen. SDG+ erweitert diesen Bezug in der WÖk transparent um Wirkungsräume wie Demokratie, Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit und digitale Selbstbestimmung. Das ist ein Modellrahmen, keine Personenbewertung und keine automatische Entscheidungsmaschine.
 
 Im Fall Wiesenfeld kommt der WÖk-Mehrebenen-Normen- und Zielrahmen nicht als zweiter Maßstab hinterher, sondern erst **nach** der Wirkpfadprüfung. Die mögliche Einschüchterung einer Mitarbeiterin, der Verlust einer prüfbaren lokalen Debatte und die spätere Scheu anderer, sich zu äußern, sind verschiedene reale Folgen. Sie brauchen je eigene Beobachtung: etwa dokumentierte Bedrohungen, Zugang zu Gegenrede oder die tatsächliche Beteiligung an der öffentlichen Sitzung. Erst dann können dieselben Folgen an SDG 16, Grundrechte, [EMRK](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0342/), [EU-Grundrechtecharta](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0306/) und [Grundgesetz](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0157/) angeschlossen werden.
 
-Die Regel schützt vor zwei Kurzschlüssen: Eine wirkliche Folge wird nicht mehrfach bewertet, nur weil sie mehrere normative Anker hat. Und ein ungünstiger Befund ist kein fertiges Rechtsurteil über eine Person, einen Post oder eine Behörde. Er macht sichtbar, was genauer geprüft, begründet und – wenn nötig – rechtlich beurteilt werden muss.
+Die Regel schützt vor zwei Kurzschlüssen: Eine wirkliche Folge wird nicht mehrfach bewertet, nur weil sie mehrere normative Anker hat. Und ein ungünstiger Befund ist kein fertiges Rechtsurteil über eine Person, einen Post oder eine Behörde. Er macht sichtbar, was genauer geprüft, begründet und - wenn nötig - rechtlich beurteilt werden muss.
 
-Zwei Regeln verhindern falsche Abkürzungen. **Nichtkompensation** heißt: Ein schwerer demokratischer Schaden – etwa Gewalt, systematische Einschüchterung oder Ausschluss – wird nicht durch hohe Reichweite, wirtschaftlichen Nutzen oder viele Zustimmungsreaktionen ausgeglichen. Die [Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) setzt die Reihenfolge: Zuerst wird die kritischste Schutzlücke bearbeitet, erst danach werden zusätzliche Vorteile optimiert. Im Wiesenfelder Fall bedeutet das: Der sichere Kitaweg und der Schutz vor Doxxing stehen vor einer möglichst erfolgreichen Kommunikationskampagne. Erst wenn diese Bedingungen tragfähig sind, ist es sinnvoll, über Reichweite, Tempo oder Imagegewinn zu sprechen.
+Zwei Regeln verhindern falsche Abkürzungen. **Nichtkompensation** heißt: Ein schwerer demokratischer Schaden - etwa Gewalt, systematische Einschüchterung oder Ausschluss - wird nicht durch hohe Reichweite, wirtschaftlichen Nutzen oder viele Zustimmungsreaktionen ausgeglichen. Die [Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) setzt die Reihenfolge: Zuerst wird die kritischste Schutzlücke bearbeitet, erst danach werden zusätzliche Vorteile optimiert. Im Wiesenfelder Fall bedeutet das: Der sichere Kitaweg und der Schutz vor Doxxing stehen vor einer möglichst erfolgreichen Kommunikationskampagne. Erst wenn diese Bedingungen tragfähig sind, ist es sinnvoll, über Reichweite, Tempo oder Imagegewinn zu sprechen.
 
 Das ist keine Planwirtschaft und keine Anleitung, Debatten zentral zu steuern. Es ist eine Priorisierungslogik für Folgen. Eine offene, pluralistische Gesellschaft braucht mehr als gute Absichten: Sie braucht Räume, in denen Konflikte sichtbar werden, ohne Menschen rechtlos zu machen.
 
@@ -163,7 +163,7 @@ Wählen Sie einen öffentlichen oder privaten Beitrag zu einem lokalen, politisc
 
 1. Was ist die überprüfbare Sachbehauptung in einem Satz?
 2. Welche Erfahrung oder welches Interesse könnte hinter der Zuspitzung stehen?
-3. Welche Formulierung richtet sich gegen eine Handlung – und welche gegen Personen oder Gruppen?
+3. Welche Formulierung richtet sich gegen eine Handlung - und welche gegen Personen oder Gruppen?
 4. Welche Information würde die Behauptung stärken, einschränken oder widerlegen?
 5. Welches Wirkungspotenzial hat eine Weiterleitung? Welches Wirkungsrisiko könnte entstehen?
 6. Welche kleinste Handlung hält einen Korrekturweg offen und schützt zugleich Betroffene?
@@ -177,7 +177,7 @@ Eine mögliche Antwort im Wiesenfelder Fall lautet: „Die Umleitung macht den K
 2. Woran erkennen Sie den Unterschied zwischen Kritik an einer Entscheidung und Entmenschlichung?
 3. Weshalb ist es wichtig, Falschinformation nicht automatisch als absichtliche Täuschung zu bezeichnen?
 4. Was macht aus einem Resonanzraum einen problematischen geschlossenen Raum?
-5. Welche Aussage trägt die Zahl von 500 zustimmenden Reaktionen – und welche nicht?
+5. Welche Aussage trägt die Zahl von 500 zustimmenden Reaktionen - und welche nicht?
 6. Wie unterscheiden sich Wirkungspotenzial, eingetretene Wirkung und Wirkungsrisiko beim Teilen eines aufwühlenden Posts?
 7. Was bedeutet Nichtkompensation im Zusammenhang mit Einschüchterung oder Doxxing?
 8. Warum ersetzt Reporting über beantwortete Kommentare keine demokratische Rückkopplung?

@@ -1,4 +1,4 @@
-# Source Hierarchy — Quellenhierarchie der Wirkungsökonomie
+# Source Hierarchy - Quellenhierarchie der Wirkungsökonomie
 
 Stand: 2026-08-15 · Maschinenlesbar: [`reference-manifest.yaml`](reference-manifest.yaml)
 
@@ -9,12 +9,12 @@ Statusquelle (Single Source of Truth): `assets/data/library-version-registry.jso
 
 Statushierarchie (absteigend):
 
-1. **führend** — aktuell kanonische Referenz für ihren Geltungsbereich (derzeit 11 Einträge)
-2. **aktuell** — verwendbar, soweit keiner führenden Referenz widersprechend (2625)
-3. **Arbeitsfassung** — nicht abschließend freigegeben, nur mit sichtbarem Hinweis (277)
-4. **ältere Fassung / historisch** — für Entwicklungsgeschichte (261)
-5. **archiviert** — nur Historie/zitierfähige alte Fundstellen (1)
-6. **ersetzt** — **nie** für neue Berechnungen, Regeln, Glossare, UX-Texte, KI-Systemkontext oder Produktentscheidungen (21)
+1. **führend** - aktuell kanonische Referenz für ihren Geltungsbereich (derzeit 11 Einträge)
+2. **aktuell** - verwendbar, soweit keiner führenden Referenz widersprechend (2625)
+3. **Arbeitsfassung** - nicht abschließend freigegeben, nur mit sichtbarem Hinweis (277)
+4. **ältere Fassung / historisch** - für Entwicklungsgeschichte (261)
+5. **archiviert** - nur Historie/zitierfähige alte Fundstellen (1)
+6. **ersetzt** - **nie** für neue Berechnungen, Regeln, Glossare, UX-Texte, KI-Systemkontext oder Produktentscheidungen (21)
 
 Lokale/hochgeladene Dateien, die älter sind als die führende Website-Referenz: `SOURCE_STALE`. Widersprüchliche Website-Metadaten: `REFERENCE_METADATA_CONFLICT` dokumentieren (→ `KNOWLEDGE_GAPS.md`), nicht still harmonisieren. Höhere Versionsnummern schlagen **nicht** den Registerstatus (Beispiel: T-SROI „v2.0"-Entwurf ist älter und nicht führend gegenüber Rechenstandard v1.1).
 
@@ -33,30 +33,30 @@ Lokale/hochgeladene Dateien, die älter sind als die führende Website-Referenz:
 
 ## Wichtige ersetzte/historische Quellen (nicht mehr als Ausgangsquellen verwenden)
 
-- `WOeK_Master_Items_final_v1.2.xlsx` / `woek-master-items-v1-2.pdf` — ersetzt durch v1.3 (622-Item-Zahl nicht mehr kanonisch; jetzt 621 WÖk-IDs, 28 Regeln). Inkonsistenz: `public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf` steht noch auf „aktuell" statt „ersetzt".
-- `WOeK_Begriffsleitfaden_fuehrend_v1.0.md/.pdf` bis v1.4 — historische, zitierfähige Fassungen. Für neue Inhalte gilt v1.5.
-- `Whitepaper-T-SROI.pdf` (multiplikative Logik) + Methodenpapier v1.0 — ersetzt durch Rechenstandard v1.1.
-- Ältere Fassungen (WStG Oktober 2025, ältere WP_*-Papiere, „Wenn Maschinen arbeiten" u.a.) — Status „aktuell"/„ältere Fassung" je Registereintrag prüfen; für Entwicklungsgeschichte verwendbar, nicht ungeprüft als aktuelle WÖk-Position.
+- `WOeK_Master_Items_final_v1.2.xlsx` / `woek-master-items-v1-2.pdf` - ersetzt durch v1.3 (622-Item-Zahl nicht mehr kanonisch; jetzt 621 WÖk-IDs, 28 Regeln). Inkonsistenz: `public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf` steht noch auf „aktuell" statt „ersetzt".
+- `WOeK_Begriffsleitfaden_fuehrend_v1.0.md/.pdf` bis v1.4 - historische, zitierfähige Fassungen. Für neue Inhalte gilt v1.5.
+- `Whitepaper-T-SROI.pdf` (multiplikative Logik) + Methodenpapier v1.0 - ersetzt durch Rechenstandard v1.1.
+- Ältere Fassungen (WStG Oktober 2025, ältere WP_*-Papiere, „Wenn Maschinen arbeiten" u.a.) - Status „aktuell"/„ältere Fassung" je Registereintrag prüfen; für Entwicklungsgeschichte verwendbar, nicht ungeprüft als aktuelle WÖk-Position.
 
 ## Weitere relevante Quellstränge (außerhalb des führend-Registers)
 
-- **Rechts-/Methodikentwürfe** unter `docs/gesetze/`: `WUStG_Technische_Leitlinien_v2.1_Entwurf.md` (aktuellster Methodenstand Scoring/Nichtkompensation/RMO) und `WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md` — bewusst **nicht** in der kuratierten Bibliothek; als Arbeitsstände behandeln.
-- **Studienskripte** `content/studienskripte/*.md` — Akademie-Lehrtexte, enthalten die formalisierte RMO-Formel `FinalScore = min(Kernfeldscores)`.
+- **Rechts-/Methodikentwürfe** unter `docs/gesetze/`: `WUStG_Technische_Leitlinien_v2.1_Entwurf.md` (aktuellster Methodenstand Scoring/Nichtkompensation/RMO) und `WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.md` - bewusst **nicht** in der kuratierten Bibliothek; als Arbeitsstände behandeln.
+- **Studienskripte** `content/studienskripte/*.md` - Akademie-Lehrtexte, enthalten die formalisierte RMO-Formel `FinalScore = min(Kernfeldscores)`.
 - **Gesetzes-Volltexte** öffentlich: `werkstatt/gesetze/` (WStG-Volltext), Kurzfassungen `wirkungssteuerung/{wstg,westg,wustg}`.
-- **llms.txt** (Root) — KI-Einstiegsdatei; verlinkt derzeit noch Master Items **v1.2** → veraltet, siehe `KNOWLEDGE_GAPS.md`.
-- **`docs/LIVE_REFERENCE_SOURCE_HIERARCHY.md`** — ältere, dokumentbezogene Hierarchie (Stand 13.08.2026), nennt in Ebene 2 noch Begriffsleitfaden v1.0; durch das Bibliotheks-Statusregister überholt. Diese Datei hier (`docs/woek-knowledge/SOURCE_HIERARCHY.md`) folgt dem Register.
+- **llms.txt** (Root) - KI-Einstiegsdatei; verlinkt derzeit noch Master Items **v1.2** → veraltet, siehe `KNOWLEDGE_GAPS.md`.
+- **`docs/LIVE_REFERENCE_SOURCE_HIERARCHY.md`** - ältere, dokumentbezogene Hierarchie (Stand 13.08.2026), nennt in Ebene 2 noch Begriffsleitfaden v1.0; durch das Bibliotheks-Statusregister überholt. Diese Datei hier (`docs/woek-knowledge/SOURCE_HIERARCHY.md`) folgt dem Register.
 
 ## Bekannte SOURCE_CONFLICTs
 
-1. **Skalensysteme** — dokumentiert und im Repo selbst aufgelöst:
-   - Quelle A (führend/Primärlogik): Skala **−3…+3** je Indikator — `content/methodik/scoring-rules.json` (rule `score-scale-minus3-plus3`), Master Items v1.3 (Schwellen→WÖk-Klassen), WUStG-Leitlinien v2.1 §2.8/§6.1, WStG-2.0-Entwurf („−3/+3 … bleibt die methodische Primärebene").
-   - Quelle B (Einzelanwendung): Skala **−100…+100** mit GWV-Gewichtung 0,35 Mensch / 0,35 Planet / 0,30 Demokratie — Use Case Kommunale Wirkungsgewerbesteuer (`assets/pdf/use-case-kommunale-wirkungsgewerbesteuer.pdf` + Lesefassung) und älterer WStG-Entwurf Okt. 2025.
-   - Redaktionsstand: WStG-2.0-Entwurf erklärt −100/+100 zur „höchstens optionalen Darstellungs-/Verwaltungsskala"; `docs/migration/WOeK_Migrationsmatrix_v1.1.md` führt die saubere Verbindung als offene Entscheidung.
-2. **Master-Items v1.2-Doppelstrang** — ein v1.2-PDF „ersetzt", das andere „aktuell" (s.o.).
-3. **Begriffsleitfaden-Archivhinweis** — v1.0-Eintrag verweist auf v1.2 statt v1.3 (bestätigt in `library-version-registry.json`).
-4. **Snapshot-Drifts** — `docs/stage-9-library-versioning.md` (führend=10) hinter JSON (führend=11); `api/v1/glossary.json` (2092) hinter `glossary-lookup.json` (2121).
+1. **Skalensysteme** - dokumentiert und im Repo selbst aufgelöst:
+   - Quelle A (führend/Primärlogik): Skala **-3…+3** je Indikator - `content/methodik/scoring-rules.json` (rule `score-scale-minus3-plus3`), Master Items v1.3 (Schwellen→WÖk-Klassen), WUStG-Leitlinien v2.1 §2.8/§6.1, WStG-2.0-Entwurf („-3/+3 … bleibt die methodische Primärebene").
+   - Quelle B (Einzelanwendung): Skala **-100…+100** mit GWV-Gewichtung 0,35 Mensch / 0,35 Planet / 0,30 Demokratie - Use Case Kommunale Wirkungsgewerbesteuer (`assets/pdf/use-case-kommunale-wirkungsgewerbesteuer.pdf` + Lesefassung) und älterer WStG-Entwurf Okt. 2025.
+   - Redaktionsstand: WStG-2.0-Entwurf erklärt -100/+100 zur „höchstens optionalen Darstellungs-/Verwaltungsskala"; `docs/migration/WOeK_Migrationsmatrix_v1.1.md` führt die saubere Verbindung als offene Entscheidung.
+2. **Master-Items v1.2-Doppelstrang** - ein v1.2-PDF „ersetzt", das andere „aktuell" (s.o.).
+3. **Begriffsleitfaden-Archivhinweis** - v1.0-Eintrag verweist auf v1.2 statt v1.3 (bestätigt in `library-version-registry.json`).
+4. **Snapshot-Drifts** - `docs/stage-9-library-versioning.md` (führend=10) hinter JSON (führend=11); `api/v1/glossary.json` (2092) hinter `glossary-lookup.json` (2121).
 
 ## Nicht auffindbare referenzierte Quellen
 
-- `Wirkungsoekonomie_Kontextdossier_fuer_Drittsysteme_v1.0.md` — auf `origin/main` nicht vorhanden; existiert nur im ungemergten Codex-Arbeitsbaum (`New project`-Checkout, Branch `codex/live-clean-20260628`). → `KNOWLEDGE_GAPS.md`.
+- `Wirkungsoekonomie_Kontextdossier_fuer_Drittsysteme_v1.0.md` - auf `origin/main` nicht vorhanden; existiert nur im ungemergten Codex-Arbeitsbaum (`New project`-Checkout, Branch `codex/live-clean-20260628`). → `KNOWLEDGE_GAPS.md`.
 - Kein Quell-Markdown für SDG-/SDG+-Referenzrahmen v0.3 (nur PDF + Glossarseite).

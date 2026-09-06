@@ -1,4 +1,4 @@
-# WÖk Tool Registry (maschinenlesbar) — interaktive Werkzeuge + Cluster
+# WÖk Tool Registry (maschinenlesbar) - interaktive Werkzeuge + Cluster
 # Stand: 2026-08-14 · Erhebung: Code-Inventur origin/main (Formular-/fetch-Prüfung je Seite)
 # implementation: CONTENT_ONLY | FRONTEND_ONLY | BACKEND_AVAILABLE | API_AVAILABLE | FULLY_REUSABLE
 # Bestehende Site-Registries (nicht duplizieren, referenzieren): assets/data/tool-registry.json (9 Einträge),
@@ -45,7 +45,7 @@ tools:
     implementation: API_AVAILABLE
     backend: "GET akademie.wirkungsoekonomie.de/api/certificates/{id}"
     status: PRODUCTION
-    notes: "⚠️ Akademie stellt derzeit keine Zertifikate aus (keine INSERT-Logik) — Endpoint-Existenz von Codex prüfen"
+    notes: "⚠️ Akademie stellt derzeit keine Zertifikate aus (keine INSERT-Logik) - Endpoint-Existenz von Codex prüfen"
   - tool_id: mein-wirkungsraum
     name: Mein Wirkungsraum
     route: /mein-wirkungsraum/

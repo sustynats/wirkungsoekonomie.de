@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v43-oeffentliche-haushalte-wirkungsorientiert-lesen.md curriculum=4.0 sanitized=true -->
-# V43 · Öffentliche Haushalte nach Wirkung lesen – bestehende Haushaltslogik und WÖk-Zusatz
+# V43 · Öffentliche Haushalte nach Wirkung lesen - bestehende Haushaltslogik und WÖk-Zusatz
 
 **lecture_id:** `WOEK-G-BASE-043`  
 **display_code:** `V43`  
@@ -25,7 +25,7 @@ Nach dieser Vorlesung kannst du:
 5. Additionalität, Opportunitätskosten, Folgekosten und Verteilung prüfen.
 6. Wirkungsbudgetierung von einer pauschalen „Wirkung pro Euro“-Kennzahl unterscheiden.
 
-## 1. Geld ist Input – nicht Wirkung
+## 1. Geld ist Input - nicht Wirkung
 
 Der Satz „Wir investieren 10 Milliarden Euro in X“ beschreibt zunächst einen Ressourceneinsatz.
 
@@ -230,8 +230,8 @@ Sie ersetzt weder Haushaltsrecht noch Rechnungshöfe oder Evaluation.
 
 - Bundeshaushaltsordnung § 7: https://www.gesetze-im-internet.de/bho/__7.html
 - Bundeshaushaltsordnung § 44: https://www.gesetze-im-internet.de/bho/__44.html
-- Bundesrechnungshof – Bundeshaushaltsrecht: https://www.bundesrechnungshof.de/SharedDocs/Downloads/DE/Berichte/2025/ergaenzungsband-2025/bundesbeauftragter-bundeshaushalt-vorschriften.html
-- Bundesregierung – Aktionsplan Nachhaltigkeit, Beteiligungsfassung 16.07.2026: https://www.bundesregierung.de/resource/blob/975228/2447318/ce245dd460c58c39c04a87878f68608a/2026-07-16-aktionsplan-nachhaltigkeit-data.pdf?download=1
+- Bundesrechnungshof - Bundeshaushaltsrecht: https://www.bundesrechnungshof.de/SharedDocs/Downloads/DE/Berichte/2025/ergaenzungsband-2025/bundesbeauftragter-bundeshaushalt-vorschriften.html
+- Bundesregierung - Aktionsplan Nachhaltigkeit, Beteiligungsfassung 16.07.2026: https://www.bundesregierung.de/resource/blob/975228/2447318/ce245dd460c58c39c04a87878f68608a/2026-07-16-aktionsplan-nachhaltigkeit-data.pdf?download=1
 
 ## 14. Transferaufgabe
 
@@ -290,7 +290,7 @@ Nehmen wir Hitzeschutz.
 
 Das ist Output.
 
-Die Wirkung ist erst die veränderte Hitzebelastung – und vielleicht weniger gesundheitliche Notfälle.
+Die Wirkung ist erst die veränderte Hitzebelastung - und vielleicht weniger gesundheitliche Notfälle.
 
 Und dann fragen wir: Erreichen wir die Viertel, in denen besonders gefährdete Menschen wohnen? Welche Maßnahmen wirken schnell? Was kostet Pflege? Was wäre ohne Programm passiert?
 
@@ -312,9 +312,9 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
 
 ### Drei Arten der Erfolgskontrolle
 

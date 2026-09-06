@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Nur weil etwas wichtig ist, lässt es sich nicht automatisch gut messen. Und nur weil wir etwas messen können, lässt es sich nicht sinnvoll in Euro umrechnen. **Messbarkeit, Monetarisierbarkeit und Kausalität sind drei verschiedene Fragen.** Wirkungsökonomie darf Unsichtbares nicht ignorieren – aber sie darf auch keine präzisen Geldwerte erfinden, wo nur unsichere Proxies existieren.
+Nur weil etwas wichtig ist, lässt es sich nicht automatisch gut messen. Und nur weil wir etwas messen können, lässt es sich nicht sinnvoll in Euro umrechnen. **Messbarkeit, Monetarisierbarkeit und Kausalität sind drei verschiedene Fragen.** Wirkungsökonomie darf Unsichtbares nicht ignorieren - aber sie darf auch keine präzisen Geldwerte erfinden, wo nur unsichere Proxies existieren.
 
 ## Lernziele
 
@@ -96,7 +96,7 @@ Darum gilt:
 
 ## 4. Einkommen verzerrt Zahlungsbereitschaft
 
-Wenn Zahlungsbereitschaft zur Bewertung genutzt wird, können wohlhabendere Gruppen höhere Geldwerte ausdrücken als ärmere – selbst bei gleicher Belastung.
+Wenn Zahlungsbereitschaft zur Bewertung genutzt wird, können wohlhabendere Gruppen höhere Geldwerte ausdrücken als ärmere - selbst bei gleicher Belastung.
 
 Das ist kein rein technisches Problem.
 

@@ -1,6 +1,6 @@
 ### 6.5 Resilienzsystematik
 
-**Nachhaltigkeit ist Systemresilienz.** Genauer: **Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie. Sie verbindet die Resilienz eines tragfähigen Zustandsraums mit Anpassungs-, Lern- und Transformationsfähigkeit.**
+**Nachhaltigkeit ist Systemresilienz.** Genauer: **Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie. Sie verbindet die Resilienz eines tragfähigen Zustandsraums mit Anpassungs-, Lern- und Transformationsfähigkeit.**
 
 **Resilienz im engeren systemökologischen Sinn** bezeichnet die Fähigkeit eines Systems, Störungen aufzunehmen und sich während Veränderung so zu reorganisieren, dass seine wesentlichen Funktionen, Strukturen, Identität und Rückkopplungen innerhalb desselben Attraktionsraums erhalten bleiben oder wiederhergestellt werden. Sie ist beschreibend und wertneutral: Auch fossile, autoritäre oder anderweitig schädliche Zustände können resilient sein.
 

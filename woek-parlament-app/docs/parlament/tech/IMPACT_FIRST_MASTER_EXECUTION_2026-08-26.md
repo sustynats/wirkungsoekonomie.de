@@ -46,7 +46,7 @@ Parteiname, Schlagwort, Template, Score oder Quelltext technisch bewertet.
 | --- | --- | --- |
 | Vollständiges Route-zu-Impact-Audit | PASS | 18 öffentliche Route-Familien: 6 `PASS`, 6 korrekt `NOT_APPLICABLE`, 6 mit endlichem `EXTERNAL_BLOCKER`. |
 | Kernaussage und Relevanz vor Prozessdaten | PASS | Gemeinsame Executive-Ansicht und route-spezifisch korrekte fail-closed Zustände. |
-| Sachsen-Anhalt Überblick 6/6 | PASS | Zwei-Spalten-Vergleich; Karte je 378–396 px bei 1.440 px; Gesamtbefund, MPD, höchstens drei SDG/SDG+, höchstens drei materielle Pfade, Evidenz und Schutzgrenze. |
+| Sachsen-Anhalt Überblick 6/6 | PASS | Zwei-Spalten-Vergleich; Karte je 378-396 px bei 1.440 px; Gesamtbefund, MPD, höchstens drei SDG/SDG+, höchstens drei materielle Pfade, Evidenz und Schutzgrenze. |
 | Stärkster AfD-Befund | PASS | Materielle negative Systemrisiken für Demokratie, Gleichbehandlung und Zugehörigkeit stehen vor Einzelmaßnahmen und Prozessdaten. |
 | Mensch / Planet / Demokratie | PASS_FAIL_CLOSED | Nur explizit freigegebene Richtung, Materialität und Evidenz; fehlende Evidenz ist nie neutral. |
 | SDG / SDG+ | PASS_FAIL_CLOSED | Nur explizite Referenzen und Richtungen; `SDG+` bleibt als WÖk-Erweiterung bezeichnet. |

@@ -61,7 +61,7 @@ Damit gilt:
 
 Ein freigegebener Record benötigt gleichzeitig:
 
-1. ausdrücklich ausgewählte freigegebene Wirkpfade (Programm 3–5, Case 1),
+1. ausdrücklich ausgewählte freigegebene Wirkpfade (Programm 3-5, Case 1),
 2. einen geprüften versionierten Visual Brief,
 3. für jeden verwendeten Marker eine vollständige Marker-zu-Wirkpfad-Zuordnung;
    nicht eindeutig bindbare sichtbare Motive werden dokumentiert und erhalten

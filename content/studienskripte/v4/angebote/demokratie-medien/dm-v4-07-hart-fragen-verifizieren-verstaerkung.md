@@ -58,7 +58,7 @@ WÖk ergänzt die Frage nach möglicher Verstärkung und späterer Korrekturwirk
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
 
 ## Transferfrage / Praxisaufgabe
-Formuliere drei harte, aber evidenzbezogene Fragen zu einer unbelegten Behauptung – ohne Motivdiagnose und mit minimaler Wiederholung.
+Formuliere drei harte, aber evidenzbezogene Fragen zu einer unbelegten Behauptung - ohne Motivdiagnose und mit minimaler Wiederholung.
 
 ## Prüfungsrelevante Kernaussagen
 Prüffrage, False Balance, Evidenz vs. Reichweite, Amplification Guard.

@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Instrumentenfluss
+# Wirkungscheck Bundestag V3 - Instrumentenfluss
 
 ## Grundsatz
 
@@ -35,7 +35,7 @@ Danach kann optional gefragt werden, welche Voraussetzung besonders wichtig
 wäre. Diese Antwort bleibt lokal, wird nicht analytisch als politische Position
 gespeichert und verändert den Regelreport nicht.
 
-## Produktwirkungssteuer – sichtbare Erklärung
+## Produktwirkungssteuer - sichtbare Erklärung
 
 Zwei Produkte können heute steuerlich gleich behandelt werden, obwohl ihre
 Herstellung sehr unterschiedliche Folgen für Klima, Ressourcen,

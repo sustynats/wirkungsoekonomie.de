@@ -4,8 +4,6 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const TARGETS = [
-  "blog",
-  "dokumente",
   "erleben",
   "anwendungen",
   "werkzeuge",
@@ -16,9 +14,6 @@ const TARGETS = [
   "wissen",
   "akademie",
   "portale",
-  "referenz",
-  "downloads",
-  "assets/downloads",
 ];
 const ROOT_HTML_FILES = ["index.html", "erleben.html", "suche.html", "akademie.html", "downloads.html", "kompass.html", "modell.html", "glossar.html", "anwendungen.html", "workflow.html", "vergleich.html", "wirkungsoekonomie.html", "verstehen.html"];
 
@@ -31,8 +26,6 @@ const replacements = [
   [/Tool-Spezifikation:/g, "Methodik:"],
   [/Tool-Spezifikation/g, "Methodik"],
   [/Spezifikation online/g, "Methodik"],
-  [/\bInputs\b/g, "Eingaben"],
-  [/\bOutputs\b/g, "Ergebnisse"],
   [/Inputsteigerung/g, "Steigerung eingesetzter Mittel"],
   [/Website-Integration/g, "Einordnung auf der Website"],
   [/Nächster Entwicklungsschritt/g, "Methodik und Grenzen"],
@@ -48,9 +41,8 @@ const replacements = [
   [/Audio verfügbar\. Transkript in Bearbeitung\./g, "Audio verfügbar."],
   [/Methodendokumentation folgt/g, "Methodik und Annahmen"],
   [/Datenquellen vorbereitet/g, "Datenquellen und Grenzen"],
-  [/Version v0\.1/g, "Modellhafte Fassung"],
-  [/Version: v0\.1/g, "Modellhafte Fassung"],
-  [/\bv0\.1\b/gi, "Modellfassung"],
+  [/Version v0\.1/g, "Modellhafte Fassung v0.1"],
+  [/Version: v0\.1/g, "Modellhafte Fassung v0.1"],
   [/Toolseite öffnen/g, "Methodik lesen"],
   [/Publikationszugang/g, "Vertiefung"],
   [/Portal öffnen/g, "Zur Übersicht"],
@@ -147,8 +139,15 @@ function normalizeToolLanguage(html, rules = replacements) {
   const maxPasses = rules.length + 2;
 
   for (let pass = 0; pass < maxPasses; pass += 1) {
-    const replaced = rules.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), current);
-    const next = sanitizeCtaText(replaced);
+    const next=current.split(/(<(?:script|style|pre|code|textarea)\b[^>]*>[\s\S]*?<\/(?:script|style|pre|code|textarea)>)/gi).map((part,index)=>{
+      if(index%2)return part;
+      const replaced=part.replace(/<[^>]*>|[^<]+/g,piece=>{
+        if(piece.startsWith('<'))return piece;
+        const text=piece.replace(/^(\s*)Inputs(\s*)$/,'$1Eingaben$2').replace(/^(\s*)Outputs(\s*)$/,'$1Ergebnisse$2');
+        return rules.reduce((value,[pattern,replacement])=>value.replace(pattern,replacement),text);
+      });
+      return sanitizeCtaText(replaced);
+    }).join('');
     if (next === current) return next;
     current = next;
   }
@@ -193,6 +192,10 @@ function runIdempotenceSelfTest() {
   if (compassCta !== '<a href="wirkungswahl-kompass/">Wirkungswahl-Kompass öffnen</a>') {
     throw new Error("Self-test failed: the Wirkungswahl-Kompass CTA was not preserved.");
   }
+
+  const protectedContent='<p>Die Qualität des Inputs und die Prüfung wirkungsloser Outputs.</p><a href="/v0.1/Inputs.html">Quelle v0.1</a><script>const label="Inputs";</script><h2>Inputs</h2>';
+  const expected=protectedContent.replace('<h2>Inputs</h2>','<h2>Eingaben</h2>');
+  if(normalizeToolLanguage(protectedContent)!==expected)throw new Error('Tool labels must preserve prose grammar, source versions, URLs and executable code.');
 
   console.log("Public tool-language fixed-point self-test passed.");
 }

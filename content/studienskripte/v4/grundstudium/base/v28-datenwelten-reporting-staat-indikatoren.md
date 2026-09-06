@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-„Datenstandard“ ist kein einheitliches Ding. **ESRS** regeln Nachhaltigkeitsberichterstattung, **GRI** ist ein Berichtsstandard, **EU-Taxonomie** klassifiziert nachhaltigkeitsbezogene wirtschaftliche Aktivitäten, **NACE** klassifiziert Wirtschaftstätigkeiten, der **Digital Product Passport** strukturiert Produktinformationen, und **DNS-/Destatis-Indikatoren** beobachten nationale Nachhaltigkeitsentwicklung. Die WÖk darf diese Welten verbinden – aber nicht so tun, als hätten alle dieselbe Funktion oder als sei Reporting bereits Kausalitätsbeweis.
+„Datenstandard“ ist kein einheitliches Ding. **ESRS** regeln Nachhaltigkeitsberichterstattung, **GRI** ist ein Berichtsstandard, **EU-Taxonomie** klassifiziert nachhaltigkeitsbezogene wirtschaftliche Aktivitäten, **NACE** klassifiziert Wirtschaftstätigkeiten, der **Digital Product Passport** strukturiert Produktinformationen, und **DNS-/Destatis-Indikatoren** beobachten nationale Nachhaltigkeitsentwicklung. Die WÖk darf diese Welten verbinden - aber nicht so tun, als hätten alle dieselbe Funktion oder als sei Reporting bereits Kausalitätsbeweis.
 
 ## Lernziele
 
@@ -119,7 +119,7 @@ Aktuell wichtig: Die Europäische Kommission hat am **20. Juli 2026** das DPP-Re
 
 Für WÖk ist das ein möglicher Datenkanal.
 
-Ein DPP kann beispielsweise Material-, Reparatur-, Herkunfts- oder Nachhaltigkeitsinformationen transportieren – je nach produktspezifischen Vorgaben.
+Ein DPP kann beispielsweise Material-, Reparatur-, Herkunfts- oder Nachhaltigkeitsinformationen transportieren - je nach produktspezifischen Vorgaben.
 
 Aber:
 
@@ -221,7 +221,7 @@ Zu pauschal. Sie können makro-/kontextbezogene Referenzen liefern; Datenfunktio
 
 ## 11b. WÖk-Abgrenzung
 
-WÖk ersetzt weder ESRS/GRI noch amtliche Statistik, Taxonomie, NACE, DPP oder die staatliche GFA/eNAP. Der Zusatz besteht darin, quellengebundene Daten **fallbezogen** mit State Variables, Datenfunktionen, Wirkmechanismen, Gegenfaktum, Attribution, Schutzgrenzen und Reality Check zu verbinden. Offenlegung, Klassifikation oder Zielbezug bleiben dabei jeweils das, was sie sind – sie werden nicht still zu Kausalitätsbelegen umgedeutet.
+WÖk ersetzt weder ESRS/GRI noch amtliche Statistik, Taxonomie, NACE, DPP oder die staatliche GFA/eNAP. Der Zusatz besteht darin, quellengebundene Daten **fallbezogen** mit State Variables, Datenfunktionen, Wirkmechanismen, Gegenfaktum, Attribution, Schutzgrenzen und Reality Check zu verbinden. Offenlegung, Klassifikation oder Zielbezug bleiben dabei jeweils das, was sie sind - sie werden nicht still zu Kausalitätsbelegen umgedeutet.
 
 ## 12. Quellen
 
@@ -240,7 +240,7 @@ WÖk ersetzt weder ESRS/GRI noch amtliche Statistik, Taxonomie, NACE, DPP oder d
 ### Staatliche Nachhaltigkeitsdaten
 
 - Destatis DNS-Indikatoren: https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - BMJV Nachhaltige Gesetzgebung: https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html
 
 ## 13. Transferaufgabe
@@ -310,7 +310,7 @@ Gerade 2026 sind die ESRS ein gutes Beispiel. Die Kommission hat am 3. Juli revi
 
 Datenkompetenz heißt also nicht nur: viele Quellen kennen.
 
-Sie heißt: wissen, **welche Funktion** eine Quelle hat – und **welche Version** wirklich gilt.
+Sie heißt: wissen, **welche Funktion** eine Quelle hat - und **welche Version** wirklich gilt.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v107-praxisprojekt-praesentation-verteidigung.md curriculum=4.0 sanitized=true -->
-# V107 · Praxisprojekt: Präsentation und Verteidigung – Quellen, Methode und Unsicherheit vertreten
+# V107 · Praxisprojekt: Präsentation und Verteidigung - Quellen, Methode und Unsicherheit vertreten
 
 **lecture_id:** `WOEK-G-BASE-107`  
 **display_code:** `V107`  
@@ -18,7 +18,7 @@ Bei der Verteidigung musst du nicht beweisen, dass du immer recht hast. Du musst
 
 Nach dieser Vorlesung kannst du:
 
-1. ein Wirkungsdossier in 10–15 Minuten entscheidungsorientiert präsentieren.
+1. ein Wirkungsdossier in 10-15 Minuten entscheidungsorientiert präsentieren.
 2. Quellen-/Methodenentscheidungen nachvollziehbar verteidigen.
 3. Unsicherheit und Open Points ohne defensive Sprache erklären.
 4. Gegenfragen und alternative Hypothesen fachlich bearbeiten.
@@ -253,7 +253,7 @@ Dann zeigst du genau diesen Zusatz.
 
 Der Merksatz lautet:
 
-**Stärke in der Verteidigung bedeutet nicht, unerschütterlich zu sein. Stärke bedeutet, genau zu wissen, welche Evidenz dein Urteil trägt – und welche Evidenz es ändern würde.**
+**Stärke in der Verteidigung bedeutet nicht, unerschütterlich zu sein. Stärke bedeutet, genau zu wissen, welche Evidenz dein Urteil trägt - und welche Evidenz es ändern würde.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

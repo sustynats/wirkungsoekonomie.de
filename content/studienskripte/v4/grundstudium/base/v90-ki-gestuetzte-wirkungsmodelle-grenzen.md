@@ -8,11 +8,11 @@
 **migration_class:** `MATERIAL_REWRITE_REQUIRED`  
 **status:** `FACH_ENDCONTENT_REVIEWED_VERSION_SENSITIVE`  
 **reviewed_at:** 2026-08-21  
-**change_reason:** v3.2 hatte nur den geplanten Titel. v4.0 behandelt KI als Werkzeug für Suche, Extraktion, Strukturierung, Simulation und Hypothesengenerierung – nicht als autonome Quelle fachlicher Wahrheit. Aktuelle AI-Act-/Governancepflichten werden versionssensitiv behandelt.
+**change_reason:** v3.2 hatte nur den geplanten Titel. v4.0 behandelt KI als Werkzeug für Suche, Extraktion, Strukturierung, Simulation und Hypothesengenerierung - nicht als autonome Quelle fachlicher Wahrheit. Aktuelle AI-Act-/Governancepflichten werden versionssensitiv behandelt.
 
 ## 20-Sekunden-Einstieg
 
-KI kann tausende Seiten durchsuchen, Quellen strukturieren, Wirkpfade vorschlagen und Szenarien simulieren. Das macht sie für Wirkungsanalyse extrem nützlich. Aber ein Sprachmodell kann überzeugend falsch liegen, Quellen verwechseln oder Unsicherheit verstecken. Deshalb gilt in v4.0: **KI darf Wirkungsanalyse beschleunigen – sie darf Primärquellen, fachliche Evidenz, rechtliche Prüfung und verantwortete WÖk-Urteile nicht ersetzen.**
+KI kann tausende Seiten durchsuchen, Quellen strukturieren, Wirkpfade vorschlagen und Szenarien simulieren. Das macht sie für Wirkungsanalyse extrem nützlich. Aber ein Sprachmodell kann überzeugend falsch liegen, Quellen verwechseln oder Unsicherheit verstecken. Deshalb gilt in v4.0: **KI darf Wirkungsanalyse beschleunigen - sie darf Primärquellen, fachliche Evidenz, rechtliche Prüfung und verantwortete WÖk-Urteile nicht ersetzen.**
 
 ## Lernziele
 
@@ -25,7 +25,7 @@ Nach dieser Vorlesung kannst du:
 5. KI-Ergebnisse mit Provenienz, Version, Modellstand und Unsicherheit dokumentieren.
 6. aktuelle regulatorische AI-Act-Anforderungen als externe Governance-Schicht berücksichtigen.
 
-## 1. KI ist Werkzeug – kein Beweis
+## 1. KI ist Werkzeug - kein Beweis
 
 Eine KI-Ausgabe kann enthalten:
 

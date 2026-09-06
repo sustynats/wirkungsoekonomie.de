@@ -57,7 +57,7 @@ freigegebene Quelle sperren vor dem kostenpflichtigen Create.
 - Base muss gespeichert, hashgleich und durch das Textfreiheitsgate gegangen
   sein, bevor eine Variante erzeugt werden kann.
 
-Die sieben Candidate-Bilder — das neutrale Referenzbild und sechs Varianten — gehen zunächst ausschließlich in ein GitHub-Actions-
+Die sieben Candidate-Bilder - das neutrale Referenzbild und sechs Varianten - gehen zunächst ausschließlich in ein GitHub-Actions-
 Artefakt. Sie verändern weder Parliament-Fachdata noch den öffentlichen
 Descriptor und lösen keinen Vercel-Build aus. Erst ein separater Source-Fidelity-
 und Visual-QA-Commit darf die sechs bisherigen Programm-v2-Assets durch

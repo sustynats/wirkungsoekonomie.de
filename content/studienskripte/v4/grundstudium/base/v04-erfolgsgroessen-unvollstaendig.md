@@ -50,7 +50,7 @@ Wachstum erneuerbarer Kapazität, Wachstum von Materialverbrauch und Wachstum vo
 
 ## 3. Reichweite misst Kontakt, nicht Ergebnis
 
-Eine Million Aufrufe sind eine Million potenzielle Kontakte – keine Million positive Wirkungen.
+Eine Million Aufrufe sind eine Million potenzielle Kontakte - keine Million positive Wirkungen.
 
 Kommunikationsanalyse trennt:
 
@@ -66,7 +66,7 @@ Video B verbreitet eine falsche Behauptung, die Misstrauen verstärkt.
 
 Beide können dieselbe Reichweite haben. Das sagt nichts über Richtung, Evidenz oder gesellschaftliche Folge aus.
 
-WÖk analysiert zusätzlich Mechanismus, Zielgruppen, Resonanz, 1.–3. Ordnung und spätere Beobachtungen.
+WÖk analysiert zusätzlich Mechanismus, Zielgruppen, Resonanz, 1.-3. Ordnung und spätere Beobachtungen.
 
 ## 5. Keine universelle Nettoformel
 
@@ -111,15 +111,15 @@ Ein gutes Profil kann enthalten:
 
 ## 8. Typische Fehlinterpretationen
 
-**„Gewinn ist schlecht.“** – Falsch.
+**„Gewinn ist schlecht.“** - Falsch.
 
-**„Wachstum ist immer gut.“** – Falsch.
+**„Wachstum ist immer gut.“** - Falsch.
 
-**„Wachstum ist immer schlecht.“** – Ebenfalls falsch.
+**„Wachstum ist immer schlecht.“** - Ebenfalls falsch.
 
-**„Reichweite ist Wirkung.“** – Falsch.
+**„Reichweite ist Wirkung.“** - Falsch.
 
-**„Am Ende muss alles in eine Zahl.“** – Falsch.
+**„Am Ende muss alles in eine Zahl.“** - Falsch.
 
 ## 9. WÖk-Abgrenzung
 

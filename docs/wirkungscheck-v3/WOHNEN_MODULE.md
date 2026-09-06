@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Themenmodul Wohnen
+# Wirkungscheck Bundestag V3 - Themenmodul Wohnen
 
 **Version:** 1.0.0 · **Status:** Entwurf zur fachlichen Freigabe.
 

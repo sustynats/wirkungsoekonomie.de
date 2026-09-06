@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V2 – Produktkonzept
+# Wirkungscheck Bundestag V2 - Produktkonzept
 
 ## Status und Abgrenzung
 
@@ -27,7 +27,7 @@ Der Check beantwortet nach wenigen Angaben:
 1. Welcher Zustand soll sich durch Bundespolitik konkret verändern?
 2. Was begrenzt diese Veränderung vermutlich?
 3. Welcher Bundeshebel ist deshalb ein plausibler erster Prüfauftrag?
-4. Woran wäre Erfolg bundesweit und – freiwillig – vor Ort erkennbar?
+4. Woran wäre Erfolg bundesweit und - freiwillig - vor Ort erkennbar?
 5. Welches Risiko darf dabei nicht übersehen werden und wann ist
    nachzusteuern?
 

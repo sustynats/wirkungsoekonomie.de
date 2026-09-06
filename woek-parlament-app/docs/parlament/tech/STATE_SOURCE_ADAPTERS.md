@@ -47,8 +47,8 @@ der Wahlprogramm-Workflow:
 
 Es werden vor der Wahl keine fiktiven Landtagsentscheidungen oder
 Abstimmungsdaten gezeigt. Erst danach schaltet derselbe Landtagsadapter auf
-Drucksachen, Ausschuss- und Plenarverfahren, Beschlüsse und – soweit amtlich
-verfügbar – namentliche Abstimmungen um.
+Drucksachen, Ausschuss- und Plenarverfahren, Beschlüsse und - soweit amtlich
+verfügbar - namentliche Abstimmungen um.
 
 ## Weitere Wahlen 2026
 

@@ -62,7 +62,7 @@
   }
 
   function formatValue(item) {
-    if (item?.value === null || item?.value === undefined || item?.value === "") return "–";
+    if (item?.value === null || item?.value === undefined || item?.value === "") return "-";
     return `${nf.format(item.value)}${item.unit ? ` ${item.unit}` : ""}`;
   }
 
@@ -115,7 +115,7 @@
   function timeRange(indicator) {
     const years = (indicator.timeseries || []).map((point) => Number(point.year)).filter(Number.isFinite).sort((left, right) => left - right);
     if (!years.length) return "keine Zeitreihe im Snapshot";
-    return years.length === 1 ? `Zeitreihe: ${years[0]}` : `Zeitreihe: ${years[0]}–${years[years.length - 1]}`;
+    return years.length === 1 ? `Zeitreihe: ${years[0]}` : `Zeitreihe: ${years[0]}-${years[years.length - 1]}`;
   }
 
   function democracyDataIncomplete(snapshot) {
@@ -132,7 +132,7 @@
   }
 
   function sourceWarning(snapshot) {
-    return `Die bereitgestellten Snapshots stammen vom ${sourceName(snapshot)} und haben den Stand ${dateText(snapshot?.generatedAt)}. Die frühere 0–100-Aggregation, die MPD-Linie und der Zielpfad sind auf dieser Seite deaktiviert: Normierung, Gewichtung, Mindestabdeckung und Quellenfortschreibung sind noch nicht kanonisch genug. Sichtbar bleiben die Rohwerte mit Einheit, Jahr, Quelle und Datenqualität.`;
+    return `Die bereitgestellten Snapshots stammen vom ${sourceName(snapshot)} und haben den Stand ${dateText(snapshot?.generatedAt)}. Die frühere 0-100-Aggregation, die MPD-Linie und der Zielpfad sind auf dieser Seite deaktiviert: Normierung, Gewichtung, Mindestabdeckung und Quellenfortschreibung sind noch nicht kanonisch genug. Sichtbar bleiben die Rohwerte mit Einheit, Jahr, Quelle und Datenqualität.`;
   }
 
   function renderDimensionControls(snapshot) {
@@ -174,7 +174,7 @@
         <div class="kwi-score kwi-muted">
           <span>Gesamt-KWI</span>
           <strong>nicht ausgewiesen</strong>
-          <small>kein 0–100-Wert</small>
+          <small>kein 0-100-Wert</small>
         </div>
       </section>
       <aside class="kwi-guardrail-box" role="note" aria-label="Methodischer Hinweis">
@@ -185,7 +185,7 @@
       <section class="kwi-dimensions" aria-label="Rohdaten nach Dimensionen">
         ${facts.map(([dimension, fact]) => {
           const proxyBadge = dimension === "Demokratie" ? '<span class="kwi-proxy-badge">unvollständig</span>' : "";
-          const timeText = fact.firstYear && fact.lastYear ? `${fact.firstYear}${fact.lastYear !== fact.firstYear ? `–${fact.lastYear}` : ""}` : "Jahre nicht einheitlich ausgewiesen";
+          const timeText = fact.firstYear && fact.lastYear ? `${fact.firstYear}${fact.lastYear !== fact.firstYear ? `-${fact.lastYear}` : ""}` : "Jahre nicht einheitlich ausgewiesen";
           const qualityText = Object.entries(fact.qualities).map(([quality, count]) => `${quality}: ${count}`).join(" · ");
           const note = dimension === "Demokratie" ? `<p class="kwi-dimension-note">${escapeHtml(democracyIncompleteNotice(snapshot) || "Die Auswahl bildet keinen vollständigen Demokratiebegriff ab.")}</p>` : "";
           return `
@@ -246,9 +246,9 @@
       <tr>
         <td><strong>${escapeHtml(indicator.title)}</strong><span>${escapeHtml(indicator.source || "Quelle nicht ausgewiesen")}</span></td>
         <td>${escapeHtml(dimensionName(indicator.dimension))}</td>
-        <td>SDG ${escapeHtml(indicator.sdg || "–")}</td>
+        <td>SDG ${escapeHtml(indicator.sdg || "-")}</td>
         <td>${escapeHtml(formatValue(indicator))}</td>
-        <td>${escapeHtml(indicator.year || "–")}</td>
+        <td>${escapeHtml(indicator.year || "-")}</td>
         <td>${escapeHtml(directionText(indicator.direction))}<br><small>${escapeHtml(timeRange(indicator))}</small></td>
         <td>${escapeHtml(indicator.quality || "nicht ausgewiesen")}</td>
       </tr>
