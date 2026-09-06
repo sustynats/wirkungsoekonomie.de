@@ -34,6 +34,7 @@ import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigge
 import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
 import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSourceFunnel } from "./source-funnel.mjs";
 import { sourceCoverageDegraded } from "./check-run-health.mjs";
+import { operatingCostSummary } from "./operating-cost.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
@@ -65,6 +66,8 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_UNSUPPORTED_NUMBER:/,
   /^AI_UNSUPPORTED_FRAMEWORK_NUMBER:/,
   /^AI_PUBLICATION_GATE_REQUIRED$/,
+  /^AI_PUBLICATION_RECOMMENDATION_INVALID$/,
+  /^AI_PUBLICATION_DECISION_UNRECORDED$/,
   /^AI_PUBLICATION_GATE_(?:NEWS_VALUE|FACTORS|EXCEPTION|EVIDENCE|DUPLICATE)_INVALID$/,
   /^AI_PUBLICATION_GATE_RATIONALE_REQUIRED$/,
   /^MEDIA_(?:IMPACT|SPEAKER|FRAMING|FRAME|HISTORY|EVIDENCE|COMPARISON|SELF_FRAME|INTENT|OUTLET|EFFECT|EPISTEMIC|ATTRIBUTION|POLITICAL|DISCOURSE|OBSERVED|PUBLIC|FACT_FIRST)/,
@@ -252,6 +255,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     ...(existing?.corrections ? { corrections: existing.corrections } : {}),
     ...(existing?.living_file ? { living_file: existing.living_file } : {}),
     ...(existing?.review_checkpoint ? { review_checkpoint: existing.review_checkpoint } : {}),
+    ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
     first_seen: candidate.first_seen,
     last_updated: candidate.last_updated,
     topic: candidate.topic,
@@ -298,6 +302,31 @@ function rejectedRecord(record, now, qualityErrors) {
       quality_errors: qualityErrors,
     },
   };
+}
+
+export function recoverAmbiguousPublicationDecisions(stories, decisions, now) {
+  const latest = new Map((decisions || []).map(decision => [decision.story_id, decision]));
+  const recovered = [];
+  for (const story of stories || []) {
+    const errors = story.rejection?.quality_errors;
+    const decision = latest.get(story.story_id);
+    // Old NOT_RECOMMENDED conflated explicit false with an absent/non-boolean
+    // field. Review only this ambiguous, never-published class once; preserve
+    // every explicit decision and never infer permission to publish.
+    if (story.published || story.listed !== false || story.publication_decision_review
+      || errors?.length !== 1 || errors[0] !== 'AI_PUBLICATION_NOT_RECOMMENDED'
+      || typeof decision?.publication_recommendation === 'boolean' || decision?.rejection_code) continue;
+    story.rejection_history = [...(story.rejection_history || []), structuredClone(story.rejection)];
+    story.publication_decision_review = { at: now, reason: 'ambiguous_legacy_decision', version: '1.0' };
+    story.listed = true;
+    story.pending_reason = 'QUALITY_GATE_FAILED';
+    story.quality_errors = ['AI_PUBLICATION_DECISION_UNRECORDED'];
+    story.quality_retry_count = 0;
+    story.quality_retry_after = null;
+    story.analysis_status = 'Veröffentlichungsentscheidung wird erneut geprüft';
+    recovered.push(story.story_id);
+  }
+  return recovered;
 }
 
 function retiredRecord(candidate, now, qualityErrors) {
@@ -385,6 +414,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     source_versions: candidate.sources.map((source) => ({ source_id: source.source_id, url: source.url, content_hash: source.content_hash })),
   };
   return {
+    ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
     story_id: candidate.story_id,
     slug: candidate.slug,
     title: candidate.title,
@@ -472,7 +502,7 @@ export function aiRequestsInWindow(usage, now, windowMinutes = 60) {
 export function partitionAiQueue(eligible, stage, maxStories) {
   const allowed = stage.stage >= 3 ? [] : eligible
     .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold);
-  const limit = Math.max(0, maxStories);
+  const limit = Math.max(0, Math.min(maxStories, stage.max_stories_per_run ?? Infinity));
   let selected = allowed.slice(0, limit);
   // With the normal 12-slot run, reserve a quarter for older retryable work.
   // Fresh material keeps the majority, but a continuous news stream can no
@@ -613,6 +643,7 @@ export async function runWirkungsticker(options = {}) {
   const invalidRegistry = registryErrors(registry);
   if (invalidRegistry.length) throw new Error(invalidRegistry.join(","));
   const state = structuredClone(options.state || readJson(files.state));
+  state.cost_monitoring_started_at ||= now;
   const storyStore = structuredClone(options.storyStore || readJson(files.stories));
   const usage = structuredClone(options.usage || readJson(files.usage));
   const newsroom = options.newsroom || (fs.existsSync(files.newsroom) ? readJson(files.newsroom) : { schema_version: "1.0", source_items: {}, events: {}, event_sources: [], discovery_candidates: [] });
@@ -620,6 +651,7 @@ export async function runWirkungsticker(options = {}) {
   const dueSources = enabledSources.filter((source) => sourceDue(source, state.source_status[source.source_id], now));
   const previousSourceStatus = structuredClone(state.source_status);
   const pendingStoryCountBefore = (state.pending_story_ids || []).length;
+  const pendingStoryIdsBefore = new Set(state.pending_story_ids || []);
   const sourceFunnel = createSourceFunnel(enabledSources, dueSources);
   const report = {
     schema_version: "1.2",
@@ -684,6 +716,12 @@ export async function runWirkungsticker(options = {}) {
     operational_status: "running",
     editorial_status: "running",
   };
+
+  report.ambiguous_decisions_requeued = [];
+  if (!state.publication_decision_review_v1_at) {
+    report.ambiguous_decisions_requeued = recoverAmbiguousPublicationDecisions(storyStore.stories, newsroom.decisions, now);
+    state.publication_decision_review_v1_at = now;
+  }
 
   const fetchResults = await mapLimit(dueSources, Number(process.env.WOEK_NEWS_FETCH_CONCURRENCY || 3), async (source) => {
     const fetchResult = await fetchFeedWithRetry(
@@ -874,6 +912,7 @@ export async function runWirkungsticker(options = {}) {
   const spendBefore = monthlyUsage(usage, month);
   const stage = budgetStage(spendBefore, budget);
   report.budget_stage = stage.stage;
+  report.budget_throttle = { policy_version: "2.0", relevance_threshold: stage.threshold, max_stories_per_run: stage.max_stories_per_run ?? null, mode: stage.stage >= 3 ? "budget_stop" : stage.stage ? "bounded_throughput" : "normal" };
   report.monthly_spend_before_usd = Number(spendBefore.toFixed(6));
   report.monthly_budget_usd = budget;
   const eligible = clusters
@@ -1041,7 +1080,7 @@ export async function runWirkungsticker(options = {}) {
           if (analysis) resolveEvidenceReferences(analysis, analysisCandidate);
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
           const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
-          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
+          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
             if (candidate.existing_story?.published && !candidate.reassessment && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error))) {
               bumpCandidateFunnel(sourceFunnel, candidate, "editorial_rejections");
@@ -1188,6 +1227,8 @@ export async function runWirkungsticker(options = {}) {
   }
   state.pending_story_ids = [...byId.values()].filter((story) => !isMerged(story) && ((!story.published && story.listed !== false) || story.pending_update)).map((story) => story.story_id);
   report.pending_story_count = state.pending_story_ids.length;
+  const remainingPendingIds = new Set(state.pending_story_ids);
+  report.queue_completed = [...pendingStoryIdsBefore].filter(id => !remainingPendingIds.has(id)).length;
   report.queue = queueSnapshot([...byId.values()], now, pendingStoryCountBefore);
   report.queue_status = report.queue.status;
   report.source_funnel = finalizeSourceFunnel(sourceFunnel);
@@ -1239,6 +1280,7 @@ export async function runWirkungsticker(options = {}) {
       source_integrity_holds: report.source_integrity_holds.length,
       published_stories: report.published_stories,
       updated_stories: report.updated_stories,
+      queue_completed: report.queue_completed,
     },
     ai: report.ai_calls ? {
       requests: report.ai_calls,
@@ -1257,6 +1299,7 @@ export async function runWirkungsticker(options = {}) {
     source_funnel: report.source_funnel,
   });
   usage.runs = retainUsageHistory(usage.runs, now);
+  report.cost_monitoring = operatingCostSummary(usage, state.cost_monitoring_started_at, state.budget_fx, report.completed_at);
 
   if (!options.dryRun) {
     writeJson(files.state, state);
