@@ -5,7 +5,7 @@ import { validateAnalysis } from "./lib.mjs";
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { isMerged, relatedStories } from "./living-files.mjs";
 import { buildCaseFiles, caseIntegrityErrors } from "./case-files.mjs";
-import { editorialAnalysisValidationErrors } from "./editorial-analysis.mjs";
+import { editorialAnalysisValidationErrors, editorialResearchSourceErrors } from "./editorial-analysis.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
@@ -128,6 +128,11 @@ for (const analysis of editorialStore.analyses.filter((item) => item.status === 
   const errors = editorialAnalysisValidationErrors(analysis, story, { candidate: true, evidence_gate: { passed: Boolean(analysis.evidence_gate?.passed) } });
   if (errors.length) fail(`EDITORIAL_ANALYSIS_QUALITY_INVALID:${analysis.analysis_id}:${errors.join(",")}`);
   const sourceIds = new Set((analysis.source_snapshot || []).map((source) => source.source_id));
+  for (const source of (analysis.source_snapshot || []).filter(source => source.editorial_review)) {
+    const researchErrors = editorialResearchSourceErrors(source, story.story_id);
+    if (researchErrors.length) fail(`EDITORIAL_RESEARCH_INVALID:${analysis.analysis_id}:${researchErrors.join(",")}`);
+  }
+  if ((analysis.sections || []).some(section => (section.source_ids || []).some(id => !sourceIds.has(id)))) fail(`EDITORIAL_SECTION_SOURCE_INVALID:${analysis.analysis_id}`);
   if (sourceIds.size < 2 || (analysis.claim_ledger || []).some((claim) => (claim.source_ids || []).some((sourceId) => !sourceIds.has(sourceId)))) fail(`EDITORIAL_SOURCE_LEDGER_INVALID:${analysis.analysis_id}`);
   const analysisFile = path.join(ROOT, "wirkungsticker/analyse", analysis.slug, "index.html");
   if (!fs.existsSync(analysisFile)) fail(`EDITORIAL_PAGE_MISSING:${analysis.analysis_id}`);
