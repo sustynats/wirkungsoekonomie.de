@@ -1,7 +1,927 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T10:21:08.621Z",
+  "updated_at": "2026-09-06T10:36:30.507Z",
   "stories": [
+    {
+      "story_id": "wt-46e5c503d6322ccb",
+      "slug": "inflationsrate-im-august-2026-voraussichtlich-2-9-322ccb",
+      "title": "Inflationsrate im August 2026 voraussichtlich +2,9 %",
+      "first_seen": "2026-08-31T12:00:00.000Z",
+      "last_updated": "2026-09-06T10:39:49.245Z",
+      "published_at": "2026-09-06T10:39:49.245Z",
+      "updated_at": "2026-09-06T10:39:49.245Z",
+      "topic": [
+        "Energie",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "destatis-aktuell",
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+          "title": "Inflationsrate im August 2026 voraussichtlich +2,9 %",
+          "summary": "Die Inflationsrate in Deutschland wird im August 2026 voraussichtlich +2,9 % betragen. Gemessen wird sie als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat. Wie das Statistische Bundesamt (Destatis) nach bisher vorliegenden Ergebnissen weiter mitteilt, steigen die Verbraucherpreise gegenüber Juli 2026 um 0,2 %. Die Inflationsrate ohne Nahrungsmittel und Energie, oftmals auch als Kerninflation bezeichnet, beträgt im August 2026 voraussichtlich +2,4 %. Die Preise für Energie steigen gegenüber dem Vorjahresmonat voraussichtlich um 10,5 %. Damit nimmt die Teuerung für Energie im August weiter zu (Juli 2026: +8,3 % gegenüber Juli 2025; Juni 2026: +3,4 % gegenüber Juni 2025).",
+          "source_type": "official_rss",
+          "published_at": "2026-08-31T12:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 95,
+          "source_topic": "Wirtschaft",
+          "content_hash": "8f08144f5eaee266485a9544ddff459202fc61c120da84d9fa185bb269374348",
+          "source_item_id": "047798272027efb1f0975e1e961e7d479178183f1b870dd1306cf8b242cc4efc",
+          "publisher_id": "destatis-aktuell",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-08-31T12:00:00.000Z",
+          "ingested_at": "2026-09-06T10:36:30.507Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:destatis-aktuell",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-46e5c503d6322ccb-v1-claim-1",
+          "story_id": "wt-46e5c503d6322ccb",
+          "claim": "Destatis erwartet für August 2026 eine Inflationsrate von +2,9 % in Deutschland.",
+          "status": "primary_source_claim",
+          "source_id": "destatis-aktuell",
+          "evidence": [
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "415237da3387ae732360",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "1ea8460b26ba8f867547",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "fa87c28b91177e57904c",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T10:39:49.245Z"
+        },
+        {
+          "claim_id": "wt-46e5c503d6322ccb-v1-claim-2",
+          "story_id": "wt-46e5c503d6322ccb",
+          "claim": "Die Verbraucherpreise steigen gegenüber Juli 2026 voraussichtlich um 0,2 %.",
+          "status": "primary_source_claim",
+          "source_id": "destatis-aktuell",
+          "evidence": [
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "1ea8460b26ba8f867547",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "fa87c28b91177e57904c",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T10:39:49.245Z"
+        },
+        {
+          "claim_id": "wt-46e5c503d6322ccb-v1-claim-3",
+          "story_id": "wt-46e5c503d6322ccb",
+          "claim": "Die Energiepreise liegen im August 2026 voraussichtlich 10,5 % über dem Vorjahresmonat; im Juli waren es +8,3 %.",
+          "status": "primary_source_claim",
+          "source_id": "destatis-aktuell",
+          "evidence": [
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "754db1b8ceeb46b59fd1",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "5de6b764949752b8c03a",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "4e25525767bf30970df7",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T10:39:49.245Z"
+        },
+        {
+          "claim_id": "wt-46e5c503d6322ccb-v1-claim-4",
+          "story_id": "wt-46e5c503d6322ccb",
+          "claim": "Die Kerninflation ohne Nahrungsmittel und Energie beträgt im August 2026 voraussichtlich +2,4 %.",
+          "status": "primary_source_claim",
+          "source_id": "destatis-aktuell",
+          "evidence": [
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "415237da3387ae732360",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "30f7d38e5f0834134c11",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "excerpt_hash": "5de6b764949752b8c03a",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T10:39:49.245Z"
+        }
+      ],
+      "event_id": "event-1f973d1f3c747fb944e6",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "verification_started_at": "2026-09-06T10:39:23.781Z",
+      "publish_ready_at": "2026-09-06T10:39:49.245Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "destatis-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:36:30.507Z",
+        "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Die endgültigen Ergebnisse für August 2026 werden veröffentlicht.",
+          "source_id": "destatis-aktuell",
+          "expected_by": "2026-09-10",
+          "measurable_indicator": "Veröffentlichung der endgültigen August-Zahlen",
+          "expected_by_evidence_hash": "d1d861d77a7f91c99e8974968916e62eb89657b54190c268e56c51e664ebacec",
+          "followup_id": "followup-7dc94bb7c2b2476d",
+          "announced_at": "2026-08-31T12:00:00.000Z",
+          "follow_up_date": "2026-09-10T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Das Statistische Bundesamt meldet vorläufige Ergebnisse zur Inflation in Deutschland für August 2026. Danach wird die Inflationsrate voraussichtlich bei +2,9 % liegen; gegenüber Juli 2026 steigen die Verbraucherpreise um 0,2 %. Ohne Nahrungsmittel und Energie liegt die Kerninflation voraussichtlich bei +2,4 %. Für Energie wird ein Anstieg von 10,5 % gegenüber dem Vorjahresmonat genannt, nach +8,3 % im Juli.\n\nDie Mitteilung verweist außerdem auf den Verbraucherpreisindex und den harmonisierten Verbraucherpreisindex als Messgrößen. Die endgültigen Ergebnisse für August 2026 sollen am 10. September 2026 veröffentlicht werden.",
+      "analysis": {
+        "story_id": "wt-46e5c503d6322ccb",
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Destatis meldet für August 2026 vorläufig eine Inflationsrate von 2,9 Prozent. Auffällig ist der erneut starke Anstieg der Energiepreise gegenüber dem Vorjahr.",
+        "detail_summary": "Gesichert ist aus der amtlichen Vorabmitteilung: Für August 2026 wird in Deutschland eine Inflationsrate von +2,9 % erwartet, die Verbraucherpreise sollen gegenüber Juli um 0,2 % steigen. Gleichzeitig nennt Destatis eine Kerninflation von +2,4 % und einen Energiepreisanstieg von +10,5 % gegenüber dem Vorjahresmonat. Für die Einordnung ist das relevant, weil Preisentwicklung Kaufkraft, Kostenpositionen von Unternehmen und geldpolitische Erwartungen beeinflussen kann. Ein möglicher Wirkpfad führt über höhere Ausgabenbelastung bei Haushalten und Preisdruck in energieintensiven Branchen. Offen bleibt aber, wie stark und wie dauerhaft sich die vorläufigen Werte nach der endgültigen Veröffentlichung am 10. September bestätigen. Die Meldung belegt Preisbewegungen, nicht bereits deren wirtschaftliche oder soziale Folgewirkungen.",
+        "why_relevant": "Die Meldung liefert eine aktuelle, amtliche Zustandsinformation zu Inflation und Energiepreisen. Sie ist für Haushalte, Unternehmen und wirtschaftspolitische Einordnung materiell relevant, weil sie Preisniveaustendenzen und Kostenentwicklung sichtbar macht.",
+        "status": "erste Daten",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die vorläufige Teuerung betrifft Kaufkraft, laufende Ausgaben und Preisplanung im Alltag."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der starke Energiepreisanstieg ist für den Ressourcen- und Klimakontext relevant, die Meldung zeigt aber nur Preise, keine Emissionen oder Verhaltensänderungen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Inflationsdaten sind eine wichtige Grundlage für wirtschaftspolitische Debatten und geldpolitische Erwartungen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die neue Teuerungszahl kann Erwartungen zu Löhnen, Preisen, Konsum und Zinserwartungen beeinflussen. Materiell ist vor allem der Energiepreisanstieg, weil er Kosten in mehreren Sektoren verteuern und sich auf Haushalte unterschiedlich auswirken kann.",
+        "impact_risks": [
+          "Höhere Preisbelastung bei energieintensiven Haushalten und Betrieben",
+          "Verstärkte Verteilungswirkungen durch unterschiedliche Ausgabenanteile",
+          "Möglicher zusätzlicher Druck auf Preis- und Lohnverhandlungen"
+        ],
+        "mechanisms": [
+          "Preisniveaueffekt über den Verbraucherpreisindex",
+          "Kostenweitergabe bei Unternehmen",
+          "Erwartungsbildung in Geld- und Tarifpolitik"
+        ],
+        "first_order": [
+          "Kaufkraft sinkt relativ, wenn Einkommen nicht im gleichen Maß steigen",
+          "Unternehmen sehen höhere Vorleistungs- und Energiekosten"
+        ],
+        "second_order": [
+          "Preis- und Lohnanpassungen können sich gegenseitig verstärken",
+          "Erwartungen an die weitere Inflationsentwicklung verschieben sich"
+        ],
+        "third_order": [
+          "Dauerhaft erhöhte Preisniveaueffekte können Verteilungskonflikte und politische Steuerungsbedarfe verschärfen"
+        ],
+        "systemic_relevance": "Die Meldung ist systemisch relevant, weil Inflation ein Knotenpunkt zwischen Haushalten, Energiepreisen, Unternehmenskosten, Geldpolitik und Verteilungsfragen ist. Sie zeigt eine Zustandsänderung im Preisniveau, nicht bereits eine gesellschaftliche Wirkung.",
+        "transformation_potential": "Direkte Transformationswirkung ist gering; mittelbar kann die Preisentwicklung Anreize im Energieverbrauch und in der Kostenstruktur setzen. Dafür reicht die vorliegende Zahl allein noch nicht als Beleg für tatsächliche Strukturverschiebungen.",
+        "resilience": "Resilienzrelevant ist die Information, weil sie zeigt, wo Haushalte und Betriebe unter Preisdruck stehen könnten. Welche Gruppen das wie stark trifft, bleibt in der Meldung offen.",
+        "side_effects": [
+          "Ungleich verteilte Belastung nach Energie- und Konsumprofil",
+          "Mögliche Verstärkung kurzfristiger Preissensibilität",
+          "Unsicherheit bis zur endgültigen Veröffentlichung"
+        ],
+        "uncertainties": [
+          "Die Zahl ist vorläufig und kann sich mit den endgültigen August-Daten ändern",
+          "Die Meldung enthält keine Aufschlüsselung nach Einkommen, Regionen oder Branchen",
+          "Aus der Zahl allein folgt noch keine belastbare Wirkungsbilanz"
+        ],
+        "evidence_level": "high",
+        "attribution": "Amtliche Vorabmitteilung des Statistischen Bundesamts; die Zahlen werden als vorläufige Ergebnisse des Verbraucherpreisindex genannt.",
+        "watch_next": [
+          "Endgültige August-Zahlen am 10. September 2026",
+          "Abgleich mit späteren Monats- und Jahreswerten"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 8, SDG 10, SDG 12 und SDG 13 nur als sachlich naheliegende Bezugspunkte"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "new_story",
+          "rationale": "Eine amtliche neue Preisstatistik mit Folgen für Kaufkraft, Kosten und Erwartungen ist materiell relevant und nicht bloß Routine ohne Wirkpfad."
+        },
+        "publication_recommendation": true,
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-06T10:36:30.507Z",
+        "media_trigger_fingerprint": "5c88f3ca766e69962abb08f9c811ed0d3850800ea66ff8e762d92e5df74d0175",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 0,
+          "fingerprint": "5c88f3ca766e69962abb08f9c811ed0d3850800ea66ff8e762d92e5df74d0175",
+          "content_fingerprint": "42551f2ba88384751d2ea67391067a0d9a61ae42f43d384e249931c9f7e9be31",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T10:39:49.245Z",
+          "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
+          "source_summary": "Das Statistische Bundesamt meldet vorläufige Ergebnisse zur Inflation in Deutschland für August 2026. Danach wird die Inflationsrate voraussichtlich bei +2,9 % liegen; gegenüber Juli 2026 steigen die Verbraucherpreise um 0,2 %. Ohne Nahrungsmittel und Energie liegt die Kerninflation voraussichtlich bei +2,4 %. Für Energie wird ein Anstieg von 10,5 % gegenüber dem Vorjahresmonat genannt, nach +8,3 % im Juli.\n\nDie Mitteilung verweist außerdem auf den Verbraucherpreisindex und den harmonisierten Verbraucherpreisindex als Messgrößen. Die endgültigen Ergebnisse für August 2026 sollen am 10. September 2026 veröffentlicht werden.",
+          "analysis": {
+            "story_id": "wt-46e5c503d6322ccb",
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Destatis meldet für August 2026 vorläufig eine Inflationsrate von 2,9 Prozent. Auffällig ist der erneut starke Anstieg der Energiepreise gegenüber dem Vorjahr.",
+            "detail_summary": "Gesichert ist aus der amtlichen Vorabmitteilung: Für August 2026 wird in Deutschland eine Inflationsrate von +2,9 % erwartet, die Verbraucherpreise sollen gegenüber Juli um 0,2 % steigen. Gleichzeitig nennt Destatis eine Kerninflation von +2,4 % und einen Energiepreisanstieg von +10,5 % gegenüber dem Vorjahresmonat. Für die Einordnung ist das relevant, weil Preisentwicklung Kaufkraft, Kostenpositionen von Unternehmen und geldpolitische Erwartungen beeinflussen kann. Ein möglicher Wirkpfad führt über höhere Ausgabenbelastung bei Haushalten und Preisdruck in energieintensiven Branchen. Offen bleibt aber, wie stark und wie dauerhaft sich die vorläufigen Werte nach der endgültigen Veröffentlichung am 10. September bestätigen. Die Meldung belegt Preisbewegungen, nicht bereits deren wirtschaftliche oder soziale Folgewirkungen.",
+            "why_relevant": "Die Meldung liefert eine aktuelle, amtliche Zustandsinformation zu Inflation und Energiepreisen. Sie ist für Haushalte, Unternehmen und wirtschaftspolitische Einordnung materiell relevant, weil sie Preisniveaustendenzen und Kostenentwicklung sichtbar macht.",
+            "status": "erste Daten",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die vorläufige Teuerung betrifft Kaufkraft, laufende Ausgaben und Preisplanung im Alltag."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Der starke Energiepreisanstieg ist für den Ressourcen- und Klimakontext relevant, die Meldung zeigt aber nur Preise, keine Emissionen oder Verhaltensänderungen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Inflationsdaten sind eine wichtige Grundlage für wirtschaftspolitische Debatten und geldpolitische Erwartungen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die neue Teuerungszahl kann Erwartungen zu Löhnen, Preisen, Konsum und Zinserwartungen beeinflussen. Materiell ist vor allem der Energiepreisanstieg, weil er Kosten in mehreren Sektoren verteuern und sich auf Haushalte unterschiedlich auswirken kann.",
+            "impact_risks": [
+              "Höhere Preisbelastung bei energieintensiven Haushalten und Betrieben",
+              "Verstärkte Verteilungswirkungen durch unterschiedliche Ausgabenanteile",
+              "Möglicher zusätzlicher Druck auf Preis- und Lohnverhandlungen"
+            ],
+            "mechanisms": [
+              "Preisniveaueffekt über den Verbraucherpreisindex",
+              "Kostenweitergabe bei Unternehmen",
+              "Erwartungsbildung in Geld- und Tarifpolitik"
+            ],
+            "first_order": [
+              "Kaufkraft sinkt relativ, wenn Einkommen nicht im gleichen Maß steigen",
+              "Unternehmen sehen höhere Vorleistungs- und Energiekosten"
+            ],
+            "second_order": [
+              "Preis- und Lohnanpassungen können sich gegenseitig verstärken",
+              "Erwartungen an die weitere Inflationsentwicklung verschieben sich"
+            ],
+            "third_order": [
+              "Dauerhaft erhöhte Preisniveaueffekte können Verteilungskonflikte und politische Steuerungsbedarfe verschärfen"
+            ],
+            "systemic_relevance": "Die Meldung ist systemisch relevant, weil Inflation ein Knotenpunkt zwischen Haushalten, Energiepreisen, Unternehmenskosten, Geldpolitik und Verteilungsfragen ist. Sie zeigt eine Zustandsänderung im Preisniveau, nicht bereits eine gesellschaftliche Wirkung.",
+            "transformation_potential": "Direkte Transformationswirkung ist gering; mittelbar kann die Preisentwicklung Anreize im Energieverbrauch und in der Kostenstruktur setzen. Dafür reicht die vorliegende Zahl allein noch nicht als Beleg für tatsächliche Strukturverschiebungen.",
+            "resilience": "Resilienzrelevant ist die Information, weil sie zeigt, wo Haushalte und Betriebe unter Preisdruck stehen könnten. Welche Gruppen das wie stark trifft, bleibt in der Meldung offen.",
+            "side_effects": [
+              "Ungleich verteilte Belastung nach Energie- und Konsumprofil",
+              "Mögliche Verstärkung kurzfristiger Preissensibilität",
+              "Unsicherheit bis zur endgültigen Veröffentlichung"
+            ],
+            "uncertainties": [
+              "Die Zahl ist vorläufig und kann sich mit den endgültigen August-Daten ändern",
+              "Die Meldung enthält keine Aufschlüsselung nach Einkommen, Regionen oder Branchen",
+              "Aus der Zahl allein folgt noch keine belastbare Wirkungsbilanz"
+            ],
+            "evidence_level": "high",
+            "attribution": "Amtliche Vorabmitteilung des Statistischen Bundesamts; die Zahlen werden als vorläufige Ergebnisse des Verbraucherpreisindex genannt.",
+            "watch_next": [
+              "Endgültige August-Zahlen am 10. September 2026",
+              "Abgleich mit späteren Monats- und Jahreswerten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8, SDG 10, SDG 12 und SDG 13 nur als sachlich naheliegende Bezugspunkte"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Eine amtliche neue Preisstatistik mit Folgen für Kaufkraft, Kosten und Erwartungen ist materiell relevant und nicht bloß Routine ohne Wirkpfad."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-06T10:36:30.507Z",
+            "media_trigger_fingerprint": "5c88f3ca766e69962abb08f9c811ed0d3850800ea66ff8e762d92e5df74d0175",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 0,
+              "fingerprint": "5c88f3ca766e69962abb08f9c811ed0d3850800ea66ff8e762d92e5df74d0175",
+              "content_fingerprint": "42551f2ba88384751d2ea67391067a0d9a61ae42f43d384e249931c9f7e9be31",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-46e5c503d6322ccb-v1-claim-1",
+              "story_id": "wt-46e5c503d6322ccb",
+              "claim": "Destatis erwartet für August 2026 eine Inflationsrate von +2,9 % in Deutschland.",
+              "status": "primary_source_claim",
+              "source_id": "destatis-aktuell",
+              "evidence": [
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "415237da3387ae732360",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "1ea8460b26ba8f867547",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "fa87c28b91177e57904c",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "claim_id": "wt-46e5c503d6322ccb-v1-claim-2",
+              "story_id": "wt-46e5c503d6322ccb",
+              "claim": "Die Verbraucherpreise steigen gegenüber Juli 2026 voraussichtlich um 0,2 %.",
+              "status": "primary_source_claim",
+              "source_id": "destatis-aktuell",
+              "evidence": [
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "1ea8460b26ba8f867547",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "fa87c28b91177e57904c",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "claim_id": "wt-46e5c503d6322ccb-v1-claim-3",
+              "story_id": "wt-46e5c503d6322ccb",
+              "claim": "Die Energiepreise liegen im August 2026 voraussichtlich 10,5 % über dem Vorjahresmonat; im Juli waren es +8,3 %.",
+              "status": "primary_source_claim",
+              "source_id": "destatis-aktuell",
+              "evidence": [
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "754db1b8ceeb46b59fd1",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "5de6b764949752b8c03a",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "4e25525767bf30970df7",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            },
+            {
+              "claim_id": "wt-46e5c503d6322ccb-v1-claim-4",
+              "story_id": "wt-46e5c503d6322ccb",
+              "claim": "Die Kerninflation ohne Nahrungsmittel und Energie beträgt im August 2026 voraussichtlich +2,4 %.",
+              "status": "primary_source_claim",
+              "source_id": "destatis-aktuell",
+              "evidence": [
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "415237da3387ae732360",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "30f7d38e5f0834134c11",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+                  "excerpt_hash": "5de6b764949752b8c03a",
+                  "checked_at": "2026-09-06T10:39:49.245Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T10:39:49.245Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+              "content_hash": "8f08144f5eaee266485a9544ddff459202fc61c120da84d9fa185bb269374348"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T10:39:49.245Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-5cd5e226c2522829-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "5cd5e226c2522829949f48f788e027107175146da67dad46f5ec730f7e3f2285"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-6c296c5154d6b8c4-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "6c296c5154d6b8c4742928355025c9aa8d75a10d6c393bbf03a6df0c16f4dbdd"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-a21db6575e67f29f-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "a21db6575e67f29f92ef5fec35ce545c7d4c717704af55c191619d9f2d478320"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-38c18c9de1ba27d2-source.png",
+          "sha256": "38c18c9de1ba27d2b7a8f41d75a6917fdaa6d4266aec31ce2aa41c0f3db963d4",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-06T10:39:50.567Z"
+        },
+        "fingerprint": "c4d30fc28d41577722bfd367f9d8c901bd72a1286079b42d04e92e243a992e09",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T10:40:59.565Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-5469869109614acf",
+      "slug": "witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf",
+      "title": "Witkoff und Kushner erstmals in Kiew erwartet",
+      "first_seen": "2026-09-06T03:15:04.000Z",
+      "last_updated": "2026-09-06T10:33:04.000Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-102.html",
+          "title": "Witkoff und Kushner erstmals in Kiew erwartet",
+          "summary": "In Moskau hatten sie sich mit Kremlchef Putin getroffen und mit ihm über ein Ende des Ukraine-Kriegs verhandelt. Nun kommen die US-Gesandten Witkoff und Kushner nach Kiew - auf ei…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T03:15:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "8cfaaa864e14c5d17952e1a7016f37f46876ec6f8f3e75ba9ae99e92837e6617",
+          "source_item_id": "a3d74c05d2e65b2bce41a169eeb0ea68452733a4312efa79e87eb5c083eacb9e",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T03:15:04.000Z",
+          "ingested_at": "2026-09-06T05:41:03.427Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/ukraine-krieg--us-unterhaendler-witkoff-und-kushner-erstmals-in-kiew-38212818.html",
+          "title": "Ukraine-Krieg: US-Unterhändler Witkoff und Kushner erstmals in Kiew",
+          "summary": "Im Ringen um ein Ende des Ukraine-Kriegs sind die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen. Das berichteten mehrere Kiewer Medien; die Nachrichtenagentur Unian zeigte ein Video der Ankunft der beiden Männer in der ukrainischen Hauptstadt mit dem Zug. Video der Ankunft (Ukr.)",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:33:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "71203ece550f0c66e9b3ac45f69ca1b14352aac97b24d653b2cc04911216520a",
+          "source_item_id": "1d3e1d8b7ff7feef140430d18a007d3135f9394f54818d974f9cb76ef4a3126e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T10:33:04.000Z",
+          "ingested_at": "2026-09-06T10:36:30.507Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5469869109614acf-claim-01",
+          "story_id": "wt-5469869109614acf",
+          "claim": "Witkoff und Kushner erstmals in Kiew erwartet: In Moskau hatten sie sich mit Kremlchef Putin getroffen und mit ihm über ein Ende des Ukraine-Kriegs verhandelt. Nun kommen die US-Gesandten Witkoff und Kushner nach Kiew - auf ei…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:36:30.507Z"
+        },
+        {
+          "claim_id": "wt-5469869109614acf-claim-02",
+          "story_id": "wt-5469869109614acf",
+          "claim": "Ukraine-Krieg: US-Unterhändler Witkoff und Kushner erstmals in Kiew: Im Ringen um ein Ende des Ukraine-Kriegs sind die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen. Das berichteten mehrere Kiewer Medien; die Nachrichtenagentur Unian zeigte ein Video der Ankunft der beiden Männer in der ukrainischen Hauptstadt mit dem Zug. Video der Ankunft (Ukr.)",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:36:30.507Z"
+        }
+      ],
+      "content_hash": "e8731173ece20b565adaff50cee907c61a41b560d2e08055ea8b89bbbf808cd1",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T10:51:30.507Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T10:36:30.507Z",
+      "event_first_seen_at": "2026-09-06T03:36:18.728Z",
+      "event_detected_at": "2026-09-06T03:36:18.728Z",
+      "event_id": "event-e4a2cdfba2db5d200069",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.4417833333333334,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 420.1963166666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:36:30.507Z",
+        "fingerprint": "3cfea1c41dcdfe589ad66b31509951631cec5c4d163db8c0370639cd6a4d4e4a",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T10:36:30.507Z",
+      "rejection": {
+        "at": "2026-09-06T10:36:30.507Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-82aeeabb456af040",
+      "slug": "angriffe-auf-umspannwerke-ozdemir-fordert-mehr-tempo-bei-schutz-fur-energieanlagen-6af040",
+      "title": "Angriffe auf Umspannwerke: Özdemir fordert mehr Tempo bei Schutz für Energieanlagen",
+      "first_seen": "2026-09-06T10:31:05.000Z",
+      "last_updated": "2026-09-06T10:31:05.000Z",
+      "topic": [
+        "Energie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/angriffe-auf-umspannwerke--oezdemir-fordert-mehr-tempo-bei-schutz-fuer-energieanlagen-38212814.html",
+          "title": "Angriffe auf Umspannwerke: Özdemir fordert mehr Tempo bei Schutz für Energieanlagen",
+          "summary": "Ein Brand in Reutlingen, Angriffe in weiteren Bundesländern: Baden-Württembergs Regierungschef Cem Özdemir sieht beim Schutz der Infrastruktur dringenden Handlungsbedarf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:31:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "087ee73e1b562422895c6e4cddc32d3226d848df6e34cf43bde150eb795f3c66",
+          "source_item_id": "d0f9c1e2902a988d89d6dd096fd8d42bc965bb20d3abbd11061d5f92c8d6ffbe",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T10:31:05.000Z",
+          "ingested_at": "2026-09-06T10:36:30.507Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-82aeeabb456af040-claim-01",
+          "story_id": "wt-82aeeabb456af040",
+          "claim": "Angriffe auf Umspannwerke: Özdemir fordert mehr Tempo bei Schutz für Energieanlagen: Ein Brand in Reutlingen, Angriffe in weiteren Bundesländern: Baden-Württembergs Regierungschef Cem Özdemir sieht beim Schutz der Infrastruktur dringenden Handlungsbedarf.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:36:30.507Z"
+        }
+      ],
+      "content_hash": "0f25bf96437b695c18a094645fb03915e5b767521af2562ae0d95c5525fdff6d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T10:51:30.507Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T10:36:30.507Z",
+      "event_first_seen_at": "2026-09-06T10:36:30.507Z",
+      "event_detected_at": "2026-09-06T10:36:30.507Z",
+      "event_id": "event-3febea9d2f4a62e3d61d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 54,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.425116666666667,
+        "detection_delay_minutes": 5.425116666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:36:30.507Z",
+        "fingerprint": "264c4aca8b7d7121d1b74268b05a2edbf01479b7c8274448a0826839f6d1e59a",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T10:36:30.507Z",
+      "rejection": {
+        "at": "2026-09-06T10:36:30.507Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-7bd1d7f242af3f7b",
       "slug": "seelze-elektro-rollstuhl-lost-grossbrand-in-sonderpostenmarkt-aus-af3f7b",
@@ -735,7 +1655,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T10:03:08.000Z",
-          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "ingested_at": "2026-09-06T10:36:30.507Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -764,7 +1684,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         }
       ],
       "content_hash": "f103e81aad6c78a2c7e6c626b3899c61d4092d0971eed2cea596b9a17644d947",
@@ -773,13 +1693,13 @@
       "quality_errors": [
         "AI_SOURCE_SUMMARY_PARAGRAPHS"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-06T10:36:08.621Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-06T11:06:30.507Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T10:21:08.621Z",
+      "updated_at": "2026-09-06T10:36:30.507Z",
       "event_first_seen_at": "2026-09-06T10:21:08.621Z",
       "event_detected_at": "2026-09-06T10:21:08.621Z",
       "event_id": "event-e0c46d015bac0e2a41fa",
@@ -815,23 +1735,170 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 18.01035,
+        "source_age_minutes": 33.37511666666666,
         "detection_delay_minutes": 18.01035,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.364766666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T10:21:08.621Z",
+        "checked_at": "2026-09-06T10:36:30.507Z",
         "fingerprint": "ac644e55b8cdaae9df9dad207c370c2b63de475a265569e0e4c343e241838df4",
         "issue_codes": [],
         "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-157fabfa7984f94e",
+      "slug": "spionage-vor-den-wahlen-digitaler-angriff-auf-serbiens-opposition-84f94e",
+      "title": "Spionage vor den Wahlen: Digitaler Angriff auf Serbiens Opposition",
+      "first_seen": "2026-09-06T10:03:00.000Z",
+      "last_updated": "2026-09-06T10:03:00.000Z",
+      "topic": [
+        "Digitalisierung",
+        "Europa",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "heise-netzpolitik",
+          "publisher": "heise online – Netzpolitik",
+          "url": "https://www.heise.de/news/Spionage-vor-den-Wahlen-Digitaler-Angriff-auf-Serbiens-Opposition-11442770.html?wt_mc=rss.red.unbekannt.unbekannt.atom.beitrag.beitrag",
+          "title": "Spionage vor den Wahlen: Digitaler Angriff auf Serbiens Opposition",
+          "summary": "Forensiker von Bürgerrechtsorganisationen weisen den Einsatz von Pegasus und NoviSpy gegen serbische Aktivisten und Politiker nach. Die EU gerät in Zugzwang.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:03:00.000Z",
+          "primary_source": false,
+          "source_priority": 84,
+          "source_topic": "Digitalisierung",
+          "content_hash": "402d00ae2bde353055099cc1f82b808a8d1c5b09ea7ecafdab4ad440e89d450a",
+          "source_item_id": "7ea2e923e4e8125a5c464accaf58701a89793129be976a238e7353e692c2e5d8",
+          "publisher_id": "heise",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "EU",
+            "international"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T10:03:00.000Z",
+          "ingested_at": "2026-09-06T10:36:30.507Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-157fabfa7984f94e-claim-01",
+          "story_id": "wt-157fabfa7984f94e",
+          "claim": "Spionage vor den Wahlen: Digitaler Angriff auf Serbiens Opposition: Forensiker von Bürgerrechtsorganisationen weisen den Einsatz von Pegasus und NoviSpy gegen serbische Aktivisten und Politiker nach. Die EU gerät in Zugzwang.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "heise-netzpolitik",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:36:30.507Z"
+        }
+      ],
+      "content_hash": "b555881179e8ba05affb1b05f25b994278126e07540cdaaf65139b2c221c9c99",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T10:51:30.507Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T10:36:30.507Z",
+      "event_first_seen_at": "2026-09-06T10:36:30.507Z",
+      "event_detected_at": "2026-09-06T10:36:30.507Z",
+      "event_id": "event-5e331b2ae8c4e54eb59f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 64,
+        "public_relevance": "hoch",
+        "topics": [
+          "Digitalisierung",
+          "Europa",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 33.50845,
+        "detection_delay_minutes": 33.50845,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 86,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:36:30.507Z",
+        "fingerprint": "2ae40dbbf68378e26523a83dc84ba5f9c7ca890927a1c4d178605936052b05b6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T10:36:30.507Z",
+      "rejection": {
+        "at": "2026-09-06T10:36:30.507Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -6881,7 +7948,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T18:32:23.000Z",
-          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "ingested_at": "2026-09-06T10:36:30.507Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6914,7 +7981,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:57:00.000Z",
-          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "ingested_at": "2026-09-06T10:36:30.507Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6947,7 +8014,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:36:00.000Z",
-          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "ingested_at": "2026-09-06T10:36:30.507Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6976,7 +8043,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -6996,7 +8063,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -7016,7 +8083,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -7036,7 +8103,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -7056,7 +8123,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -7076,7 +8143,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -7096,7 +8163,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -7116,7 +8183,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -7136,7 +8203,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -7156,7 +8223,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -7176,7 +8243,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -7196,7 +8263,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -7216,7 +8283,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -7236,7 +8303,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -7256,7 +8323,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -7276,7 +8343,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -7296,7 +8363,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -7316,7 +8383,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -7336,7 +8403,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -7356,7 +8423,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -7376,7 +8443,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         }
       ],
       "content_hash": "cb6a0074639070a3b26a2c8d84b3750ff2738e2702588a972c7e7f6b6197a703",
@@ -7392,7 +8459,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T10:21:08.621Z",
+      "updated_at": "2026-09-06T10:36:30.507Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -7435,20 +8502,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 183.14368333333334,
+        "source_age_minutes": 198.50845,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3089.4243666666666,
+        "queue_age_minutes": 3104.789133333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 62,
+        "news_freshness_score": 59,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T10:21:08.621Z",
+        "checked_at": "2026-09-06T10:36:30.507Z",
         "fingerprint": "da5957a2d5973bb8347f2121d629188a6bad353f609cac3220931cba0eb170de",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
@@ -8976,7 +10043,7 @@
       "verification_started_at": "2026-09-06T05:34:40.715Z",
       "publish_ready_at": "2026-09-06T05:34:49.981Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -9313,61 +10380,7 @@
         "generated_at": "2026-09-06T05:36:07.920Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-06T10:06:13.084Z",
-        "content_hash": "3e51fcb126f1d83e96da4160567679f6ec66ff39a27961077e9afa224f5c9e2e",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
-            "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
-            "summary": "Im Zusammenhang mit der Sabotage an Umspannwerken in Brandenburg, Nordrhein-Westfalen und Sachsen sucht die Polizei jetzt per Foto nach einem Tatverdächtigen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T05:18:36.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "40f2801787ac23e93e4c5c1ca8948c061fdba6ea06b581a49d1964de0e5cbc3c",
-            "source_item_id": "c0e45982664063a0ef87ad4f64c49db32a28f2f2dece681deea54c80331369b7",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T05:18:36.000Z",
-            "ingested_at": "2026-09-06T05:21:43.058Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T10:21:08.621Z",
-          "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-166e870242fc37e6",
@@ -9583,7 +10596,7 @@
       "verification_started_at": "2026-09-06T05:34:10.384Z",
       "publish_ready_at": "2026-09-06T05:34:25.362Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -9990,9 +11003,12 @@
         "generated_at": "2026-09-06T05:35:52.364Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-06T10:06:13.084Z",
-        "content_hash": "136542df2271394d165df493436d0ac2e1dc301582134daa2de96c6d83e1cfd7",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "e7f30d084d4368e79b6ad055f9fc5b97d241042119cc8aff21d764bee361422c",
+        "checked_at": "2026-09-06T10:36:30.507Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T16:36:30.507Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -10124,24 +11140,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T10:21:08.621Z",
-          "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-aea544c06f230a5e",
@@ -11111,150 +12112,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-5469869109614acf",
-      "slug": "witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf",
-      "title": "Witkoff und Kushner erstmals in Kiew erwartet",
-      "first_seen": "2026-09-06T03:15:04.000Z",
-      "last_updated": "2026-09-06T03:15:04.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesschau-access",
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-102.html",
-          "title": "Witkoff und Kushner erstmals in Kiew erwartet",
-          "summary": "In Moskau hatten sie sich mit Kremlchef Putin getroffen und mit ihm über ein Ende des Ukraine-Kriegs verhandelt. Nun kommen die US-Gesandten Witkoff und Kushner nach Kiew - auf ei…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T03:15:04.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "8cfaaa864e14c5d17952e1a7016f37f46876ec6f8f3e75ba9ae99e92837e6617",
-          "source_item_id": "a3d74c05d2e65b2bce41a169eeb0ea68452733a4312efa79e87eb5c083eacb9e",
-          "publisher_id": "tagesschau",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T03:15:04.000Z",
-          "ingested_at": "2026-09-06T05:41:03.427Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "collection_source_id": "swr-aktuell",
-          "collection_publisher_id": "swr"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-5469869109614acf-claim-01",
-          "story_id": "wt-5469869109614acf",
-          "claim": "Witkoff und Kushner erstmals in Kiew erwartet: In Moskau hatten sie sich mit Kremlchef Putin getroffen und mit ihm über ein Ende des Ukraine-Kriegs verhandelt. Nun kommen die US-Gesandten Witkoff und Kushner nach Kiew - auf ei…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesschau-access",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
-        }
-      ],
-      "content_hash": "7c12333d8b9dbf86ac02ad49999796af0784a14d0e0667cdf06f664fc6bb5d1b",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-06T05:56:03.427Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
-      "event_first_seen_at": "2026-09-06T03:36:18.728Z",
-      "event_detected_at": "2026-09-06T03:36:18.728Z",
-      "event_id": "event-e4a2cdfba2db5d200069",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 145.99045,
-        "detection_delay_minutes": 21.245466666666665,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 124.74498333333334,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 70,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
-        "fingerprint": "74149a77b6220c5224f70a6792024907ff476318ae2cae47bd89b318a9205449",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T05:41:03.427Z",
-      "rejection": {
-        "at": "2026-09-06T05:41:03.427Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -64375,7 +65232,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T08:56:13.000Z",
-            "ingested_at": "2026-09-06T10:21:08.621Z",
+            "ingested_at": "2026-09-06T10:36:30.507Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -64398,7 +65255,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-06T10:21:08.621Z",
+          "checked_at": "2026-09-06T10:36:30.507Z",
           "fingerprint": "4859907217abb38878f583104d44f9a91d08c8eed99ba2c5d063d5e14f7f4603",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -129051,7 +129908,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:21:08.621Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -129066,7 +129923,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T10:21:08.621Z",
+      "updated_at": "2026-09-06T10:36:30.507Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -129102,11 +129959,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4078.1436833333332,
+        "source_age_minutes": 4093.50845,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3599.860183333333,
+        "queue_age_minutes": 3615.22495,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -129115,7 +129972,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T10:21:08.621Z",
+        "checked_at": "2026-09-06T10:36:30.507Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
@@ -137724,7 +138581,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "ingested_at": "2026-09-06T10:36:30.507Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -137753,23 +138610,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:22:55.137Z"
+          "checked_at": "2026-09-06T10:36:30.507Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        "AI_SOURCE_SUMMARY_PARAGRAPHS"
       ],
-      "quality_retry_count": 4,
-      "quality_retry_after": "2026-09-06T10:22:55.137Z",
+      "quality_retry_count": 5,
+      "quality_retry_after": "2026-09-06T16:36:30.507Z",
       "reassessment": false,
       "fresh": false,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T07:22:55.137Z",
+      "updated_at": "2026-09-06T10:36:30.507Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -137803,11 +138659,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7282.91895,
+        "source_age_minutes": 7476.50845,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3421.63545,
+        "queue_age_minutes": 3615.22495,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -137816,7 +138672,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T07:22:55.137Z",
+        "checked_at": "2026-09-06T10:36:30.507Z",
         "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
         "issue_codes": [],
         "warning_codes": []
@@ -138220,140 +139076,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_MATERIALITY_TOO_LOW"
         ]
-      }
-    },
-    {
-      "story_id": "wt-46e5c503d6322ccb",
-      "slug": "inflationsrate-im-august-2026-voraussichtlich-2-9-322ccb",
-      "title": "Inflationsrate im August 2026 voraussichtlich +2,9 %",
-      "first_seen": "2026-08-31T12:00:00.000Z",
-      "last_updated": "2026-08-31T12:00:00.000Z",
-      "topic": [
-        "Energie",
-        "Finanzen"
-      ],
-      "sources": [
-        {
-          "source_id": "destatis-aktuell",
-          "publisher": "Statistisches Bundesamt",
-          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
-          "title": "Inflationsrate im August 2026 voraussichtlich +2,9 %",
-          "summary": "Die Inflationsrate in Deutschland wird im August 2026 voraussichtlich +2,9 % betragen. Gemessen wird sie als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat. Wie das Statistische Bundesamt (Destatis) nach bisher vorliegenden Ergebnissen weiter mitteilt, steigen die Verbraucherpreise gegenüber Juli 2026 um 0,2 %. Die Inflationsrate ohne Nahrungsmittel und Energie, oftmals auch als Kerninflation bezeichnet, beträgt im August 2026 voraussichtlich +2,4 %. Die Preise für Energie steigen gegenüber dem Vorjahresmonat voraussichtlich um 10,5 %. Damit nimmt die Teuerung für Energie im August weiter zu (Juli 2026: +8,3 % gegenüber Juli 2025; Juni 2026: +3,4 % gegenüber Juni 2025).",
-          "source_type": "official_rss",
-          "published_at": "2026-08-31T12:00:00.000Z",
-          "primary_source": true,
-          "source_priority": 95,
-          "source_topic": "Wirtschaft",
-          "content_hash": "8f08144f5eaee266485a9544ddff459202fc61c120da84d9fa185bb269374348",
-          "source_item_id": "047798272027efb1f0975e1e961e7d479178183f1b870dd1306cf8b242cc4efc",
-          "publisher_id": "destatis-aktuell",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-06T07:16:30.989Z",
-          "provenance": {
-            "origin": "publisher:destatis-aktuell",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-46e5c503d6322ccb-claim-01",
-          "story_id": "wt-46e5c503d6322ccb",
-          "claim": "Inflationsrate im August 2026 voraussichtlich +2,9 %: Die Inflationsrate in Deutschland wird im August 2026 voraussichtlich +2,9 % betragen. Gemessen wird sie als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat. Wie das Statistische Bundesamt (Destatis) nach bisher vorliegenden Ergebnissen weiter mitteilt, steigen die Verbraucherpreise gegenüber Juli 2026 um 0,2 %. Die Inflationsrate ohne Nahrungsmittel und Energie, oftmals auch als Kerninflation bezeichnet, beträgt im August 2026 voraussichtlich +2,4 %. Die Preise für Energie steigen gegenüber dem Vorjahresmonat voraussichtlich um 10,5 %. Damit nimmt die Teuerung für Energie im August weiter zu (Juli 2026: +8,3 % gegenüber Juli 2025; Juni 2026: +3,4 % gegenüber Juni 2025).",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "destatis-aktuell",
-          "source_function": "institutional_statement",
-          "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:destatis-aktuell",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:22:55.137Z"
-        }
-      ],
-      "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_PUBLICATION_RECOMMENDATION_INVALID"
-      ],
-      "quality_retry_count": 4,
-      "quality_retry_after": "2026-09-06T10:22:55.137Z",
-      "reassessment": false,
-      "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-06T07:22:55.137Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-1f973d1f3c747fb944e6",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie",
-          "Finanzen"
-        ],
-        "dimensions": [
-          "Mensch",
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung finanzieller Anreize und Kapitalflüsse"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 8362.91895,
-        "detection_delay_minutes": 4941.2835,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 3421.63545,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 0,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T07:22:55.137Z",
-        "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -139148,5 +139870,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-06T10:21:08.621Z"
+  "public_updated_at": "2026-09-06T10:36:30.507Z"
 }
