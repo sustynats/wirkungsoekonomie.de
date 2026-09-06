@@ -57,6 +57,27 @@ test('a genuinely large single event is not split merely to fit the provider req
   assert.deepEqual(s,before);
 });
 
+test('small legacy draft queues are repaired before another paid attempt without reopening editorial rejections', () => {
+  const title = 'Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?';
+  const other = source('Was zur Wahl in Sachsen-Anhalt wichtig ist', 'https://example.org/faq');
+  for (const reason of ['AI_BUDGET_OR_BATCH_LIMIT','QUALITY_GATE_FAILED']) {
+    const s = story('legacy',title,{published:false,pending_reason:reason,quality_errors:['AI_PUBLICATION_RECOMMENDATION_INVALID']});
+    s.sources.push(other);
+    const result = repartitionOversizedSourceQueues([s],now);
+    assert.deepEqual(result.requeued_sources,[other]);
+    assert.equal(s.sources.length,1);
+    assert.equal(clusterItems([other],[s],now)[0].existing_story,null);
+    assert.deepEqual(repartitionOversizedSourceQueues([s],now),{changes:[],requeued_sources:[]});
+  }
+  for (const published of [true,false]) {
+    const s = story('untouched',title,{published,pending_reason:'QUALITY_GATE_FAILED',quality_errors:['AI_PUBLICATION_NOT_RECOMMENDED']});
+    s.sources.push(other);
+    const before=structuredClone(s);
+    assert.deepEqual(repartitionOversizedSourceQueues([s],now),{changes:[],requeued_sources:[]});
+    assert.deepEqual(s,before);
+  }
+});
+
 const visit = (id, title, summary, more = {}) => story(id, title, {
   source_summary: summary, topic: ["Geopolitik"],
   sources: [source(title, `https://example.org/${id}`, { summary })], ...more,
