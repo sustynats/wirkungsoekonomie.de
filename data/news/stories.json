@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T05:41:03.427Z",
+  "updated_at": "2026-09-06T05:44:56.956Z",
   "stories": [
     {
       "story_id": "wt-85bd6954b5bc23ad",
@@ -68,20 +68,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T05:44:56.956Z"
         }
       ],
       "content_hash": "99fd20782444ff38697d0b7b64bda4c82fb879344d832975c4121585a83ecf58",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T05:59:56.956Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
+      "updated_at": "2026-09-06T05:44:56.956Z",
       "event_first_seen_at": "2026-09-06T05:41:03.427Z",
       "event_detected_at": "2026-09-06T05:41:03.427Z",
       "event_id": "event-e5a64fe8bcf8eded37b7",
@@ -121,23 +121,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5.69045,
+        "source_age_minutes": 9.5826,
         "detection_delay_minutes": 5.69045,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 3.89215,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 98,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
+        "checked_at": "2026-09-06T05:44:56.956Z",
         "fingerprint": "f81894d6b50f886043a2da1d7e030af93de5000bd4a91dce0ffe231afcb3a37f",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T05:44:56.956Z",
+      "rejection": {
+        "at": "2026-09-06T05:44:56.956Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -1857,7 +1869,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T05:44:56.956Z"
         }
       ],
       "content_hash": "dea12df3333d634d0437b5419abdc9a893feee3a0685a8076a61fc86617b9b34",
@@ -1870,7 +1882,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
+      "updated_at": "2026-09-06T05:44:56.956Z",
       "event_first_seen_at": "2026-09-06T05:41:03.427Z",
       "event_detected_at": "2026-09-06T05:41:03.427Z",
       "event_id": "event-5c32834238cf73e016df",
@@ -1907,20 +1919,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 20.407116666666667,
+        "source_age_minutes": 24.299266666666668,
         "detection_delay_minutes": 20.407116666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 3.89215,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
+        "checked_at": "2026-09-06T05:44:56.956Z",
         "fingerprint": "b270a2c94b46efd86ff64458b8aca2fec56ae4999b91673066b517cbafe2ea93",
         "issue_codes": [],
         "warning_codes": []
@@ -6061,7 +6073,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T05:44:56.956Z"
         },
         {
           "claim_id": "wt-58cac49b38f415db-claim-02",
@@ -6081,20 +6093,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T05:44:56.956Z"
         }
       ],
       "content_hash": "3f0ed37b30304fe29dcca7b6cd4ac8076e37777deb0667a015026c76c5aeb95a",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T05:59:56.956Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
+      "updated_at": "2026-09-06T05:44:56.956Z",
       "event_first_seen_at": "2026-09-05T16:36:34.186Z",
       "event_detected_at": "2026-09-05T16:36:34.186Z",
       "event_id": "event-201da883bf8004ddde01",
@@ -6128,23 +6140,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 449.8237833333333,
+        "source_age_minutes": 453.71593333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 784.48735,
+        "queue_age_minutes": 788.3795,
         "target_publication_minutes": 120,
-        "news_freshness_score": 6,
+        "news_freshness_score": 5,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
+        "checked_at": "2026-09-06T05:44:56.956Z",
         "fingerprint": "27778afca13942aaba1af50846dc46589c13bc35657b8d285e46536282fbf33f",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T05:44:56.956Z",
+      "rejection": {
+        "at": "2026-09-06T05:44:56.956Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -9542,7 +9566,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:41:03.427Z",
+          "checked_at": "2026-09-06T05:44:56.956Z",
           "fingerprint": "a983d6c3fbf2106a3a1d9f5de0dd20addd25782e704d208025279b7f0345a453",
           "issue_codes": [],
           "warning_codes": []
@@ -11496,7 +11520,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:41:03.427Z",
+          "checked_at": "2026-09-06T05:44:56.956Z",
           "fingerprint": "48283262f5d1a537152d48a72d316403c329a5e38c93e715b11044341ba0e9c6",
           "issue_codes": [],
           "warning_codes": []
@@ -13271,20 +13295,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T05:44:56.956Z"
         }
       ],
       "content_hash": "5077504fba761724756585440bff06fc3606bde296cdd7d92e1ab67b5eeafabd",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T05:59:56.956Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
+      "updated_at": "2026-09-06T05:44:56.956Z",
       "event_first_seen_at": "2026-09-05T11:31:43.777Z",
       "event_detected_at": "2026-09-05T11:31:43.777Z",
       "event_id": "event-454194767a4d7ef00523",
@@ -13317,11 +13341,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 904.0571166666666,
+        "source_age_minutes": 907.9492666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1089.3275,
+        "queue_age_minutes": 1093.21965,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -13330,10 +13354,22 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
+        "checked_at": "2026-09-06T05:44:56.956Z",
         "fingerprint": "1c4421f45303671688dac2f2d2e352c04a184c96a7ca440b37089a865ea2a7ec",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T05:44:56.956Z",
+      "rejection": {
+        "at": "2026-09-06T05:44:56.956Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -15035,7 +15071,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:41:03.427Z",
+          "checked_at": "2026-09-06T05:44:56.956Z",
           "fingerprint": "149b7fa7ca0dcfd76e7a397555d5805e931a1468e471daf2147c018703d2105e",
           "issue_codes": [],
           "warning_codes": []
@@ -29768,7 +29804,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:41:03.427Z",
+          "checked_at": "2026-09-06T05:44:56.956Z",
           "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
           "issue_codes": [],
           "warning_codes": []
@@ -30276,7 +30312,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:41:03.427Z",
+          "checked_at": "2026-09-06T05:44:56.956Z",
           "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
           "issue_codes": [],
           "warning_codes": []
@@ -32177,7 +32213,7 @@
       "verification_started_at": "2026-09-05T11:13:31.131Z",
       "publish_ready_at": "2026-09-05T11:13:44.645Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -32489,203 +32525,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "aeada8f71440f25e328a12f4ff41e1e56641623927ec4af8909c790a1f1692ff",
-        "checked_at": "2026-09-05T18:53:27.610Z",
+        "fingerprint": "44a6019660c77f7b812799e55e86b6b811f34ed8c47004dc02cb493e7d64f518",
+        "checked_at": "2026-09-06T05:44:56.956Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T00:53:27.610Z",
-        "sources": [
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16021136.html",
-            "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
-            "summary": "Die USA nehmen ihre Vermittlung für ein Ende des Kriegs in der Ukraine wieder auf. Erste Station: Moskau. Dann soll erstmals Kiew folgen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:06:25.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "0d089872523a79cf0eadda52790e9734e9ffd9a9bcb08a7d87890ba326d3c6eb",
-            "source_item_id": "3ae1b35a115d9d156de39c9389eda350a87b529abedcb51fbdb103d807131bfb",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:06:25.000Z",
-            "ingested_at": "2026-09-05T11:12:42.527Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-vermittlungsmission-16021136.html",
-            "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
-            "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:06:25.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "fb2063b12c54c8182ea3290e02b8d2c4f6fe3a1ec6223203a40b7a77d3dd2fed",
-            "source_item_id": "fe587cdcea84c8d97d7c81fea7485553d20c89a379bca2ab8c36e26e0fd99479",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:06:25.000Z",
-            "ingested_at": "2026-09-05T16:36:34.186Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "spiegel-schlagzeilen",
-            "publisher": "DER SPIEGEL",
-            "url": "https://www.spiegel.de/ausland/ukrainekrieg-us-unterhaendler-in-moskau-gelandet-treffen-mit-putin-geplant-a-f08bdbc5-e042-4d65-81ed-18267f45a0eb",
-            "title": "Ukraine: US-Unterhändler in Moskau gelandet – Treffen mit Putin geplant",
-            "summary": "Erst Moskau, dann Kyjiw: Die USA nehmen ihre Friedensbemühungen im Ukrainekrieg wieder auf. Im Rahmen der Besuche sollen laut Putin die russischen Angriffe auf Kyjiw wohl drei Tage lang ruhen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T13:11:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "6e2c097de2cead4242bb52058d09a03f259f8bff527cc37008a678b44c3a5226",
-            "source_item_id": "b3b61b9a82cdf7ec0e5c191c25db15e381b4219c0c673cb3d9c52543245fd1c6",
-            "publisher_id": "spiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T13:11:00.000Z",
-            "ingested_at": "2026-09-05T18:53:27.610Z",
-            "provenance": {
-              "origin": "publisher:spiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
-            "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
-            "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T14:11:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "78cdc8faeafb7d55e851651f10b1529d8d2cd78d8bbe0a79f26168bf48618b82",
-            "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T14:11:00.000Z",
-            "ingested_at": "2026-09-05T18:53:27.610Z",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
-            "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
-            "summary": "Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:06:25.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "55ac0e89fb24cb1849e6be703510e37169b9489553772ae7d395df5445226bdc",
-            "source_item_id": "235b4021196e08f1d60c8a911f608ba014fa851de581b8c9f4817f0dc07b9c51",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:06:25.000Z",
-            "ingested_at": "2026-09-05T18:53:27.610Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--putin-beginnt-gespraeche-mit-us-unterhaendlern-38211192.html",
-            "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
-            "summary": "Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T18:12:28.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "d7e7db6b0e4741b35f75d0f6546135afa8de2d7da7c0a187961b74c464406a54",
-            "source_item_id": "05fe1f4448cc7b34a37a0108ec8885ac629e512648e2357735d9c024aa0bfe6f",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T18:12:28.000Z",
-            "ingested_at": "2026-09-05T18:53:27.610Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "29a7838c2b12898df4f4ba5b84f0d81bb269dcc76d48e2a54aab4e8cd2f84dfb",
+        "expires_at": "2026-09-06T11:44:56.956Z",
         "sources": [
           {
             "source_id": "tagesspiegel-home",
@@ -32910,24 +32753,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T05:41:03.427Z",
-          "fingerprint": "14269c54afa3fbc7a1087baed6084df25501986c7b012334ff3fe990b6f2e855",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-1bd2afdf147b3ca5",
@@ -49134,7 +48962,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:41:03.427Z",
+          "checked_at": "2026-09-06T05:44:56.956Z",
           "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
           "issue_codes": [],
           "warning_codes": []
@@ -65708,7 +65536,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:41:03.427Z",
+          "checked_at": "2026-09-06T05:44:56.956Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -122366,7 +122194,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T05:44:56.956Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -122381,7 +122209,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
+      "updated_at": "2026-09-06T05:44:56.956Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -122417,11 +122245,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3798.057116666667,
+        "source_age_minutes": 3801.9492666666665,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3319.773616666667,
+        "queue_age_minutes": 3323.6657666666665,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -122430,7 +122258,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
+        "checked_at": "2026-09-06T05:44:56.956Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
@@ -131068,7 +130896,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T05:44:56.956Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -131081,7 +130909,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
+      "updated_at": "2026-09-06T05:44:56.956Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -131115,11 +130943,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7181.057116666667,
+        "source_age_minutes": 7184.9492666666665,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3319.773616666667,
+        "queue_age_minutes": 3323.6657666666665,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -131128,7 +130956,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
+        "checked_at": "2026-09-06T05:44:56.956Z",
         "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
         "issue_codes": [],
         "warning_codes": []
@@ -131597,7 +131425,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T05:44:56.956Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -131610,7 +131438,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
+      "updated_at": "2026-09-06T05:44:56.956Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -131647,11 +131475,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8261.057116666667,
+        "source_age_minutes": 8264.949266666667,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3319.773616666667,
+        "queue_age_minutes": 3323.6657666666665,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -131660,7 +131488,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
+        "checked_at": "2026-09-06T05:44:56.956Z",
         "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
         "issue_codes": [],
         "warning_codes": []

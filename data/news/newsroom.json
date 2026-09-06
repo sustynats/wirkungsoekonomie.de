@@ -371652,7 +371652,73 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die gelieferte Quelle wiederholt im Kern nur die bereits veröffentlichte Meldung zur Darknet-Veröffentlichung; eine neue materielle Entwicklung oder belastbar neue Evidenz ist nicht belegt."
+    },
+    {
+      "at": "2026-09-06T05:44:56.956Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "mdr-nachrichten",
+          "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T05:44:56.956Z",
+      "story_id": "wt-58cac49b38f415db",
+      "event_id": "event-201da883bf8004ddde01",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "insufficient_evidence",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Die zentrale Meldung stützt sich nur auf zwei Abdrucke desselben Publishers; unabhängige Bestätigung, genauer Kontext und belastbare Einordnung fehlen."
+    },
+    {
+      "at": "2026-09-06T05:44:56.956Z",
+      "story_id": "wt-55de5608e03a0d06",
+      "event_id": "event-454194767a4d7ef00523",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Kernmeldung wiederholt bereits veröffentlichte Angaben zu Moskau-Treffen und geplanter Weiterreise nach Kiew ohne neue materielle Information."
+    },
+    {
+      "at": "2026-09-06T05:44:56.956Z",
+      "story_id": "wt-85bd6954b5bc23ad",
+      "event_id": "event-e5a64fe8bcf8eded37b7",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "insufficient_evidence",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur ein journalistischer Bericht liegt vor; der geplante Sicherheitsplan und seine Details sind nicht unabhängig oder aus einer Primärquelle belegt."
+    },
+    {
+      "at": "2026-09-06T05:44:56.956Z",
+      "story_id": "wt-1633927424587a06",
+      "event_id": "event-71017bf01deb22c62170",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quellen wiederholen im Kern die bereits gemeldeten Gespräche, Moskau/Kiew-Stationen und die angekündigte Pause; ein materiell neuer, belastbar belegter Sachverhalt ist nicht erkennbar."
     }
   ],
-  "updated_at": "2026-09-06T05:41:03.427Z"
+  "updated_at": "2026-09-06T05:44:56.956Z"
 }
