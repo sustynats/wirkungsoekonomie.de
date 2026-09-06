@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import { buildAnalysisPrompt } from "../../scripts/news/lib.mjs";
 import { backfillMediaImpact } from "../../scripts/news/backfill-media-impact.mjs";
-import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis, mediaTriggerRecord, sanitizeMediaImpact } from "../../scripts/news/media-impact.mjs";
+import { MEDIA_ANALYSIS_VERSION, MEDIA_PROMPT_RULES, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis, mediaTriggerRecord, sanitizeMediaImpact } from "../../scripts/news/media-impact.mjs";
 import { sanitizeAnalysisMediaImpact } from "../../scripts/news/run.mjs";
 import { storyPage } from "../../scripts/news/build.mjs";
 
@@ -38,6 +38,67 @@ function validMedia(overrides = {}) {
 test("neutrales Ereignis löst keinen Mediencheck aus", () => {
   assert.equal(detectMediaImpactTrigger(story("Bund veröffentlicht Monatsbericht", "Der Bericht enthält neue Daten zur Verwaltung.")).relevant, false);
   assert.equal(detectMediaImpactTrigger(story("Nach Gefahrengut-Alarm läuft der Flugverkehr wieder", "Eine Frau meldete einen gefährlichen Stoff; laut Polizei bestand zu keinem Zeitpunkt eine Gefahr.")).relevant, false);
+});
+
+for (const title of [
+  "Seelze: Elektro-Rollstuhl löst Großbrand in Sonderpostenmarkt aus",
+  "Dieselbus brennt in Betriebshof", "Benzinauto brennt auf Parkplatz",
+  "Wasserstoffbus nach Unfall zerstört", "Impfstoff verursacht Erkrankungen",
+  "Electric wheelchair causes fire in shop",
+]) test(`implizite Technik-Schaden-Verknüpfung wird geprüft: ${title}`, () => {
+  const item = story(title);
+  const trigger = detectMediaImpactTrigger(item);
+  assert.equal(trigger.relevant, true);
+  assert.ok(trigger.reasons.includes("technology_harm_association_review"));
+  assert.ok(!trigger.reasons.includes("loaded_headline_without_clear_attribution"));
+  assert.equal(sanitizeMediaImpact({ relevant: false }, item, trigger).media_impact.relevant, false);
+  assert.equal(detectMediaImpactTrigger(item).fingerprint, trigger.fingerprint);
+});
+
+test("bloße Elektrik, Brandschutz und getrennte Texte sind kein Assoziationsnachweis", () => {
+  for (const title of ["Elektro-Rollstuhl erhält neue Steuerung", "Elektrogeschäft öffnet nach Großbrand", "Feuerwehr übt Brandschutz", "Elektrische Prüfung des Brandschutzes", "Elektroauto neu zugelassen. Brand im Nachbarort", "Dieselpreise im Monatsbericht"]) {
+    assert.equal(detectMediaImpactTrigger(story(title)).relevant, false, title);
+  }
+  const item = story("Elektroauto erhält Zulassung", "Neue Daten zur Zulassung.", [source("Elektroauto erhält Zulassung"), source("Großbrand in Lagerhalle", "Eine Lagerhalle brennt.", { url: "https://example.org/b" })]);
+  assert.equal(detectMediaImpactTrigger(item).relevant, false);
+});
+
+test("abgesicherte Ursachenangabe bleibt Prüfhinweis, nicht automatisch Manipulation", () => {
+  const trigger = detectMediaImpactTrigger(story("Laut Polizei: Dieselbus verursacht Brand", "Die technische Ursache ist geprüft."));
+  assert.ok(trigger.reasons.includes("technology_harm_association_review"));
+  assert.ok(!trigger.reasons.includes("causal_certainty_gap_review"));
+});
+
+test("Kausalverkürzung funktioniert unabhängig von Technik und Medium", () => {
+  const item = story("Reform verursacht Betriebsschließung", "Die Ursache ist laut Bericht noch unklar.");
+  assert.ok(detectMediaImpactTrigger(item).reasons.includes("causal_certainty_gap_review"));
+  item.title = "Betrieb schließt nach Reform";
+  assert.ok(detectMediaImpactTrigger(item).reasons.includes("causal_certainty_gap_review"), "Originaltitel bleibt auch nach eigener Umformulierung Prüfgrundlage");
+  assert.ok(!detectMediaImpactTrigger(story("Reform könnte Betriebsschließung verursachen", "Die Ursache bleibt unklar.")).reasons.includes("causal_certainty_gap_review"));
+});
+
+test("Prompt trennt Assoziation, Narrative, Wiederholung und Wahrheitsurteil", () => {
+  const prompt = MEDIA_PROMPT_RULES.join(" ");
+  for (const pattern of [/implizite Assoziationen und Narrative/, /Wortkombination allein/, /Illusory Truth/, /repetition_risk:open/, /Agenturkopien/, /Einzelfall belegt keine vergleichende Häufigkeit/]) assert.match(prompt, pattern);
+});
+
+test("beobachtet ohne Wirkungsbeleg wird auch ohne present-Flag zurückgestuft", () => {
+  const item = story("Minister bezeichnet Protest als Klimaextremismus");
+  const media = validMedia({ discourse_effect: { ...validMedia().discourse_effect, impact_status: "observed" }, observed_impact: { present: false, evidence: [] } });
+  const result = sanitizeMediaImpact(media, item);
+  assert.equal(result.media_impact.discourse_effect.impact_status, "potential");
+  assert.equal(result.media_impact.observed_impact.present, false);
+  assert.ok(result.dropped.includes("MEDIA_OBSERVED_IMPACT_EVIDENCE_INSUFFICIENT"));
+});
+
+test("Illusory-Truth-Effekt darf nicht ohne Beobachtungsbeleg behauptet werden", () => {
+  const item = story("Nach Sabotage laufen Ermittlungen", "Der Minister spricht von Klimaextremismus.");
+  const media = sanitizeMediaImpact(validMedia(), item).media_impact;
+  const analysis = { ...item.analysis, media_impact: media, media_analysis_version: MEDIA_ANALYSIS_VERSION };
+  media.editorial_assessment = "Ein Illusory-Truth-Effekt ist hier nachgewiesen.";
+  assert.ok(mediaImpactValidationErrors(analysis, item).includes("MEDIA_REPETITION_EFFECT_OVERCLAIM"));
+  media.editorial_assessment = "Ein Illusory-Truth-Effekt ist hier nicht nachgewiesen.";
+  assert.ok(!mediaImpactValidationErrors(analysis, item).includes("MEDIA_REPETITION_EFFECT_OVERCLAIM"));
 });
 
 test("vollständiger KI-Befund darf einen zu engen lokalen Trigger abgesichert ergänzen", () => {
@@ -332,7 +393,9 @@ test("Medienanzeige trennt redaktionelle Framequelle und Sprecher der Akteursaus
   assert.ok(html.includes("<strong>Sprecherin des Verbands:</strong> Die Entscheidung soll nach der Abstimmung fallen."));
   assert.ok(!html.includes("<strong>Redaktionelle Frage:</strong>"));
   assert.ok(html.includes("Überschrift · Fließtext · redaktionelle Formulierung"));
-  assert.ok(html.includes("<strong>Normalisierung:</strong> mittel"));
+  assert.ok(html.includes("<strong>Normalisierungspotenzial:</strong> mittel"));
+  assert.ok(html.includes("<strong>Wiederholungsrisiko:</strong>"));
+  assert.ok(!html.includes("Wiederholung / Illusory-Truth-Risiko"));
   media.speaker_statement.speaker = "";
   assert.ok(rendered().includes("<strong>Akteur nicht eindeutig benannt:</strong>"));
   media.speaker_statement.present = false;

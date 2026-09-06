@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-01-woek-in-20-sekunden-ohne-strohmann.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-01-woek-in-20-sekunden-ohne-strohmann.md curriculum=4.0 sanitized=true -->
 # MULT-V4-01 · WÖk in 20 Sekunden – ohne Strohmann
 
 **lecture_id:** `WOEK-MP-V4-001`  
@@ -73,3 +73,34 @@ Wenn du Wirkungsökonomie erklärst, musst du nicht erst alles andere kleinmache
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst auf Basis des vollständigen Legacy-Reaudits B04 und des WÖk-Begriffs-/Methodenstands v1.5.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Vom verständlichen Einstieg zur überprüfbaren Aussage
+
+Eine kurze Erklärung braucht einen klaren Gegenstand. Die Wirkungsökonomie untersucht tatsächliche Zustandsveränderungen und fragt, wie Entscheidungen unter Berücksichtigung ihrer Folgen gestaltet werden können. Geld, Wachstum und Aktivitätszahlen liefern dafür wichtige Informationen, beschreiben aber nicht jede relevante Veränderung. Diese Feststellung verlangt keine pauschale Abwertung vorhandener Wirtschaftsdaten oder Institutionen. Sie benennt deren Aussagegrenzen in einer konkreten Entscheidung.
+
+Für eine erste Erklärung eignet sich ein Beispiel: Eine Weiterbildung kann viele Teilnahmen erreichen. Ob sich anschließend die Anwendungskompetenz verbessert, ist eine andere Frage. Ob die Weiterbildung diese Verbesserung verursacht oder dazu beigetragen hat, verlangt zusätzliche Evidenz. Wer diese drei Ebenen sauber unterscheidet, vermittelt mehr als mit einer großen Behauptung über die vollständige Überwindung bestehender Systeme.
+
+Die Erklärung darf vorhandene staatliche Prüfungen nicht unterschlagen. Für Bundesregelungsvorhaben bestehen unter anderem Gesetzesfolgenabschätzung und Nachhaltigkeitsprüfung. Die WÖk möchte solche Prüfungen objektspezifisch ergänzen und deren Befunde ernst nehmen. Ein möglicher Zusatznutzen liegt in expliziteren Wirkmechanismen, Gegenfakten, Verteilung und Lernschleifen. Welche Ergänzung im Einzelfall tatsächlich fehlt, wird geprüft und nicht vorausgesetzt.
+
+### Durchgearbeiteter Fall: drei Fassungen derselben Erklärung
+
+Eine fiktive Referentin soll die WÖk in einer Veranstaltung vorstellen. Ihre Kurzfassung lautet: „Wir betrachten neben Aufwand und Leistung die tatsächlichen Veränderungen für Betroffene und Umwelt und prüfen, welcher Anteil einer Entscheidung zugerechnet werden kann.“ Das ist ein Einstieg, noch keine vollständige Methodenbeschreibung.
+
+In zwei Minuten ergänzt sie das Weiterbildungsbeispiel: Teilnahme ist ein Output, beobachtete Kompetenzveränderung ein möglicher Outcome, der kausale Beitrag des Kurses eine weitere Prüfaufgabe. Sie erklärt außerdem, dass Verbesserungen für eine Gruppe mit Belastungen einer anderen einhergehen können. Deshalb ist ein positiver Summenwert allein keine ausreichende Rechtfertigung.
+
+In der Vertiefung nennt sie Referenzräume, Evidenzunsicherheit und nicht kompensierbare Schutzgrenzen. SDGs und DNS können Maßstäbe liefern; die WÖk-eigene Erweiterung SDG+ bleibt als solche bezeichnet. Ein Modell zur Bewertung wird nicht als bereits geltendes Recht oder wissenschaftlich abschließend bewiesene Gesamttheorie präsentiert. Auf eine Frage nach staatlichen Prüfungen verweist sie auf die vorhandene Architektur und erläutert den additiven Anspruch.
+
+### Lernarbeit mit Erwartungshorizont
+
+Formuliere eine Kurzfassung, eine zweiminütige Erklärung und eine vertiefende Antwort auf den Einwand „Das wird doch bereits geprüft“. Alle drei Fassungen müssen fachlich miteinander vereinbar sein. Eine gute Lösung vereinfacht die Sprache, ohne aus einem Wirkungspotenzial eine nachgewiesene Wirkung zu machen. Sie räumt vorhandenen Verfahren ihren sachlichen Platz ein und benennt einen konkreten zusätzlichen Prüfschritt.
+
+Prüfe abschließend, was ein Zuhörer wahrscheinlich behalten würde. Entsteht die falsche Vorstellung, WÖk verteile moralische Punkte an Menschen oder führe Folgenprüfung erstmals ein, muss die Erklärung korrigiert werden. Verständlichkeit wird an einer nachvollziehbaren Unterscheidung geprüft, nicht an Zustimmung zur Organisation.
