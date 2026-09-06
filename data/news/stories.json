@@ -1,7 +1,289 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T09:36:13.326Z",
+  "updated_at": "2026-09-06T09:51:17.221Z",
   "stories": [
+    {
+      "story_id": "wt-2c2124e52b676caa",
+      "slug": "filmfestspiele-in-venedig-verruckte-gibt-es-hier-nicht-676caa",
+      "title": "Filmfestspiele in Venedig: Verrückte gibt es hier nicht",
+      "first_seen": "2026-09-06T09:46:00.000Z",
+      "last_updated": "2026-09-06T09:46:00.000Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Filmfestspiele-in-Venedig/!6210510",
+          "title": "Filmfestspiele in Venedig: Verrückte gibt es hier nicht",
+          "summary": "Die Filmfestspiele von Venedig bieten: Pädophilie, die Arbeit in einer Jugendpsychiatrie, Grundlagen der Philosophie und Abgründe von Reality-TV. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T09:46:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "7db842fb0c00f8978d980145d2b2c55367d3eb087d7e28db4be5a5b47a2600bb",
+          "source_item_id": "c9757d2fe0ecf3520e2db11b8a9a912dd1f36cab388ef3a75ff2daf01721a7ad",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T09:46:00.000Z",
+          "ingested_at": "2026-09-06T09:51:17.221Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2c2124e52b676caa-claim-01",
+          "story_id": "wt-2c2124e52b676caa",
+          "claim": "Filmfestspiele in Venedig: Verrückte gibt es hier nicht: Die Filmfestspiele von Venedig bieten: Pädophilie, die Arbeit in einer Jugendpsychiatrie, Grundlagen der Philosophie und Abgründe von Reality-TV. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T09:51:17.221Z"
+        }
+      ],
+      "content_hash": "04d859d1819cd99f95736546e7d59fa91d2181e82cca262d61955a2941f6c4c5",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T10:06:17.221Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T09:51:17.221Z",
+      "event_first_seen_at": "2026-09-06T09:51:17.221Z",
+      "event_detected_at": "2026-09-06T09:51:17.221Z",
+      "event_id": "event-bf48d672badaeaf9c854",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.287016666666666,
+        "detection_delay_minutes": 5.287016666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T09:51:17.221Z",
+        "fingerprint": "871ba84dd0239fcb5a1f076a35dffbb5da72c198c17b5f3d1d10b68947c5fe4c",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T09:51:17.221Z",
+      "rejection": {
+        "at": "2026-09-06T09:51:17.221Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-58e1e307c839bfe5",
+      "slug": "judoka-vom-jc-leipzig-verprugelt-gegner-nach-bundesliga-kampf-39bfe5",
+      "title": "Judoka vom JC Leipzig verprügelt Gegner nach Bundesliga-Kampf",
+      "first_seen": "2026-09-06T09:44:11.000Z",
+      "last_updated": "2026-09-06T09:44:11.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/sport/andere_sportarten/judo-pruegelattacke-leipzig-100.html",
+          "title": "Judoka vom JC Leipzig verprügelt Gegner nach Bundesliga-Kampf",
+          "summary": "Unglaubliche Szenen haben sich am Samstagabend in Leipzig abgespielt. Nach dem verlorenen Kampf schlug der Leipziger Judoka Akaki Japaridze seinen Gegner krankenhausreif. Der Verein verurteilte den Angriff scharf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T09:44:11.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "7b5fcb0c27e73468c041668fedfeeb03797ef6b6845dac69c183e1b30bf12598",
+          "source_item_id": "ae3b1db00b6dfc82cc8e6294929cdb5ddddcce198bbd0ee0efbbae4268964463",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T09:44:11.000Z",
+          "ingested_at": "2026-09-06T09:51:17.221Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-58e1e307c839bfe5-claim-01",
+          "story_id": "wt-58e1e307c839bfe5",
+          "claim": "Judoka vom JC Leipzig verprügelt Gegner nach Bundesliga-Kampf: Unglaubliche Szenen haben sich am Samstagabend in Leipzig abgespielt. Nach dem verlorenen Kampf schlug der Leipziger Judoka Akaki Japaridze seinen Gegner krankenhausreif. Der Verein verurteilte den Angriff scharf.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T09:51:17.221Z"
+        }
+      ],
+      "content_hash": "df55a1b41293fd03d3c4c7d3ca6976a82a3d243faf24f1effa8320bb01578614",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T10:06:17.221Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T09:51:17.221Z",
+      "event_first_seen_at": "2026-09-06T09:51:17.221Z",
+      "event_detected_at": "2026-09-06T09:51:17.221Z",
+      "event_id": "event-d5d0edf28788f3c0eab1",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 7.103683333333334,
+        "detection_delay_minutes": 7.103683333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T09:51:17.221Z",
+        "fingerprint": "3313ce2c2518aca998064037b62e336ddeb37101b760f69a75d40b6f492384b5",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T09:51:17.221Z",
+      "rejection": {
+        "at": "2026-09-06T09:51:17.221Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-fbe110331124b8b1",
       "slug": "fahndungsaufruf-sabotage-am-stromnetz-polizei-sucht-48-jahrigen-verdachtigen-24b8b1",
@@ -4752,7 +5034,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T18:32:23.000Z",
-          "ingested_at": "2026-09-06T09:36:13.326Z",
+          "ingested_at": "2026-09-06T09:51:17.221Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4785,7 +5067,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:57:00.000Z",
-          "ingested_at": "2026-09-06T09:36:13.326Z",
+          "ingested_at": "2026-09-06T09:51:17.221Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4818,7 +5100,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:36:00.000Z",
-          "ingested_at": "2026-09-06T09:36:13.326Z",
+          "ingested_at": "2026-09-06T09:51:17.221Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4847,7 +5129,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -4867,7 +5149,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -4887,7 +5169,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -4907,7 +5189,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -4927,7 +5209,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -4947,7 +5229,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -4967,7 +5249,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -4987,7 +5269,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -5007,7 +5289,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -5027,7 +5309,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -5047,7 +5329,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -5067,7 +5349,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -5087,7 +5369,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -5107,7 +5389,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -5127,7 +5409,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -5147,7 +5429,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -5167,7 +5449,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -5187,7 +5469,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -5207,7 +5489,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -5227,7 +5509,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -5247,7 +5529,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         }
       ],
       "content_hash": "7d76672bcb27aaf77e2849949310f833c46b9022fde6cc538f22ff0ead56a4b3",
@@ -5263,7 +5545,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T09:36:13.326Z",
+      "updated_at": "2026-09-06T09:51:17.221Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -5306,20 +5588,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 138.2221,
+        "source_age_minutes": 153.28701666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3044.5027833333334,
+        "queue_age_minutes": 3059.5677,
         "target_publication_minutes": 120,
-        "news_freshness_score": 71,
+        "news_freshness_score": 68,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T09:36:13.326Z",
+        "checked_at": "2026-09-06T09:51:17.221Z",
         "fingerprint": "c0666f4f3b1c5b3bc5aa2f6a4e52eb5f4b33eb4b0b9f4718c139c795c4d4179b",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
@@ -62459,7 +62741,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T08:56:13.000Z",
-            "ingested_at": "2026-09-06T09:36:13.326Z",
+            "ingested_at": "2026-09-06T09:51:17.221Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -62482,7 +62764,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-06T09:36:13.326Z",
+          "checked_at": "2026-09-06T09:51:17.221Z",
           "fingerprint": "4859907217abb38878f583104d44f9a91d08c8eed99ba2c5d063d5e14f7f4603",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -127135,7 +127417,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:36:13.326Z"
+          "checked_at": "2026-09-06T09:51:17.221Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -127150,7 +127432,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T09:36:13.326Z",
+      "updated_at": "2026-09-06T09:51:17.221Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -127186,11 +127468,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4033.2221,
+        "source_age_minutes": 4048.2870166666667,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3554.9386,
+        "queue_age_minutes": 3570.0035166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -127199,7 +127481,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T09:36:13.326Z",
+        "checked_at": "2026-09-06T09:51:17.221Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
