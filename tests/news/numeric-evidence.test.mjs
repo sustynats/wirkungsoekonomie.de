@@ -40,3 +40,14 @@ test('claim numbers remain bound to the actual cited excerpt', () => {
   analysis.event_claims[0].claim = 'Rund 52000 Menschen mussten das Gebiet verlassen.';
   assert.ok(validateNewsroomAnalysis(analysis,{sources:[source]}).includes('CLAIM_NUMBER_NOT_IN_EVIDENCE'));
 });
+
+test('media diagnostics distinguish model output from normalization without retaining prose', () => {
+  const original = 'Ein kurzer Anfang.\n\nEine wichtige Evidenzgrenze bleibt erhalten.';
+  const result = analysisValidationDiagnostics({media_impact:{public_explanation:'Ein kurzer Anfang.'}}, original);
+  assert.equal(result.media_public_explanation_input_words, 8);
+  assert.equal(result.media_public_explanation_input_paragraphs, 2);
+  assert.equal(result.media_public_explanation_words, 3);
+  assert.equal(result.media_public_explanation_paragraphs, 1);
+  assert.ok(!JSON.stringify(result).includes('Anfang'));
+  assert.equal(analysisValidationDiagnostics({}).media_public_explanation_input_words, undefined, 'unknown raw length is not reported as zero');
+});

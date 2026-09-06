@@ -477,7 +477,7 @@ export function normalizeAnalysisParagraphs(analysis) {
   return analysis;
 }
 
-export function analysisValidationDiagnostics(analysis) {
+export function analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing) {
   if (!analysis) return null;
   return {
     publication_depth: analysis.publication_depth || null,
@@ -485,6 +485,11 @@ export function analysisValidationDiagnostics(analysis) {
     publication_decision_value: ['string','boolean','number'].includes(typeof analysis.publication_recommendation)
       ? String(analysis.publication_recommendation).slice(0,60) : null,
     media_public_explanation_words: String(analysis.media_impact?.public_explanation || '').trim().split(/\s+/).filter(Boolean).length,
+    media_public_explanation_paragraphs: String(analysis.media_impact?.public_explanation || '').split(/\n\s*\n/).filter(s=>s.trim()).length,
+    ...(mediaExplanationBeforeSanitizing === undefined ? {} : {
+      media_public_explanation_input_words: String(mediaExplanationBeforeSanitizing || '').trim().split(/\s+/).filter(Boolean).length,
+      media_public_explanation_input_paragraphs: String(mediaExplanationBeforeSanitizing || '').split(/\n\s*\n/).filter(s=>s.trim()).length,
+    }),
     source_summary_words: String(analysis.source_summary || '').trim().split(/\s+/).filter(Boolean).length,
     source_summary_paragraphs: String(analysis.source_summary || '').split(/\n\s*\n/).filter(s=>s.trim()).length,
     missing_claim_numbers: (Array.isArray(analysis.event_claims) ? analysis.event_claims : []).flatMap((claim,index) => {
@@ -1293,6 +1298,7 @@ export async function runWirkungsticker(options = {}) {
         const analyses = new Map(aiResult.analyses.map((analysis) => [analysis.story_id, analysis]));
         for (const candidate of batch) {
           const analysis = analyses.get(candidate.story_id);
+          const mediaExplanationBeforeSanitizing = analysis?.media_impact?.public_explanation || analysis?.media_impact?.editorial_assessment || '';
           if (analysis) normalizeEditorialDecision(analysis);
           if (analysis) normalizeAnalysisParagraphs(analysis);
           const analysisCandidate = analysisBatch.find((item) => item.story_id === candidate.story_id) || candidate;
@@ -1316,7 +1322,7 @@ export async function runWirkungsticker(options = {}) {
             nextPublished = publishedRecord(analysisCandidate, analysis, aiResult, options.now ? now : new Date().toISOString());
             errors.push(...validateAnalysis({ source_summary: nextPublished.source_summary, ...nextPublished.analysis }, nextPublished, { validateSourceSummaryNumbers: false, persisted: true }));
           }
-          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
+          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
             const noUpdate = errors.includes("AI_DUPLICATE_WITHOUT_UPDATE")
               && errors.every(error => ["AI_PUBLICATION_NOT_RECOMMENDED", "AI_DUPLICATE_WITHOUT_UPDATE"].includes(error));

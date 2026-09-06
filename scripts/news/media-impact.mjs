@@ -106,14 +106,14 @@ function plain(value, max = 500) {
   return String(value || "").replace(/<[^>]+>/g, " ").replace(/[\u0000-\u001f\u007f]/g, " ").replace(/\s+/g, " ").trim().slice(0, max);
 }
 
-function paragraphs(value, max = 1400) {
+function paragraphs(value, max = 1400, maxParagraphs = 3) {
   return String(value || "")
     .replace(/<[^>]+>/g, " ")
     .replace(/[\u0000-\u0009\u000b-\u001f\u007f]/g, " ")
     .split(/\n\s*\n/)
     .map((part) => part.replace(/\s+/g, " ").trim())
     .filter(Boolean)
-    .slice(0, 3)
+    .slice(0, maxParagraphs)
     .join("\n\n")
     .slice(0, max)
     .trim();
@@ -350,7 +350,10 @@ export function sanitizeMediaImpact(input, story = {}, trigger = detectMediaImpa
   const selfProblems = strings(selfCheck.problems, 8, 220);
   const repetitionCount = termOccurrences(frameTerm, [story.title, story.source_summary, story.analysis?.summary, story.analysis?.detail_summary]);
   const selfProblem = Boolean(selfCheck.problem_detected || input.self_frame_warning || [story.title, story.source_summary, story.analysis?.summary, story.analysis?.detail_summary].some((value) => unsafeFrameLead(value, frameTerm)));
-  const publicExplanation = paragraphs(input.public_explanation || input.editorial_assessment, 1400);
+  // This field has a word-based contract, unlike the short source summary.
+  // Do not remove later paragraphs (often the evidence limitation) or truncate
+  // German compound words before validating the complete explanation.
+  const publicExplanation = paragraphs(input.public_explanation || input.editorial_assessment, Infinity, Infinity);
   const mediaImpact = {
     relevant,
     relevance_level: enumValue(input.relevance_level, LEVELS, trigger.level),
@@ -427,7 +430,7 @@ export function sanitizeMediaImpact(input, story = {}, trigger = detectMediaImpa
     public_explanation: publicExplanation,
     // The current schema names this reader explanation public_explanation.
     // Keep the legacy field compatible; never invent a second assessment.
-    editorial_assessment: plain(input.editorial_assessment || input.public_explanation, 1400),
+    editorial_assessment: plain(input.editorial_assessment || publicExplanation, Infinity),
     fact_first_alternative: plain(input.fact_first_alternative || reframe.summary || factualCore, 500),
     fact_first_reframe: { title: plain(reframe.title, 220), source_summary: ensureTwoParagraphs(reframe.source_summary), summary: plain(reframe.summary, 420), detail_summary: plain(reframe.detail_summary, 1200) },
     self_frame_warning: selfProblem,
@@ -537,7 +540,7 @@ export function mediaImpactValidationErrors(analysis, story = {}, trigger = medi
   if (!media.evidence || !EVIDENCE_STATUS.has(media.evidence.status) || !EVIDENCE_STATUS.has(media.evidence.level) || !plain(media.evidence.what_is_known) || !plain(media.evidence.what_is_inferred) || !plain(media.evidence.what_is_open)
     || ["facts", "observations", "inferences", "impact_potentials", "impact_risks", "observed_impacts", "limitations"].some((key) => !Array.isArray(media.evidence[key]))) errors.push("MEDIA_EVIDENCE_SEPARATION_INVALID");
   if (!media.observed_impact || typeof media.observed_impact.present !== "boolean" || (media.observed_impact.present && (media.discourse_effect.impact_status !== "observed" || !plain(media.observed_impact.description) || (media.observed_impact.evidence || []).length < 2))) errors.push("MEDIA_OBSERVED_IMPACT_INVALID");
-  const publicWords = plain(media.public_explanation, 1800).split(/\s+/).filter(Boolean).length;
+  const publicWords = plain(media.public_explanation, Infinity).split(/\s+/).filter(Boolean).length;
   if (publicWords < 80 || publicWords > 200) errors.push("MEDIA_PUBLIC_EXPLANATION_LENGTH");
   if (!plain(media.fact_first_alternative)) errors.push("MEDIA_FACT_FIRST_ALTERNATIVE_REQUIRED");
   if (!media.self_frame_check || typeof media.self_frame_check.problem_detected !== "boolean" || !Array.isArray(media.self_frame_check.problems) || !Number.isInteger(media.self_frame_check.frame_repetition_count) || typeof media.self_frame_check.rewrite_required !== "boolean") errors.push("MEDIA_SELF_FRAME_CHECK_INVALID");
