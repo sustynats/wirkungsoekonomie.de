@@ -297,6 +297,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
 function shouldRetireAfterReassessment(candidate, errors) {
   return Boolean(candidate.reassessment)
     && errors.length > 0
+    && errors.some(error => ["AI_MATERIALITY_TOO_LOW", "AI_NEWS_VALUE_CONTEXT_ONLY", "AI_MATERIALITY_GATE_FAILED"].includes(error))
     && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error));
 }
 
@@ -698,6 +699,9 @@ export async function runWirkungsticker(options = {}) {
   const report = {
     schema_version: "1.2",
     processing_version: AI_PROCESSING_VERSION,
+    usage_recovery: usage.failed_run_recovery ? { status: usage.failed_run_recovery.status,
+      checked_at: usage.failed_run_recovery.checked_at,
+      unresolved_run_ids: usage.failed_run_recovery.unresolved_run_ids || [] } : null,
     status: "running",
     started_at: now,
     berlin_slot: runSchedule.slot || (isAutomatedRun ? `Automatischer Lauf ${String(runSchedule.hourNumber).padStart(2, "0")}:00` : "manueller Lauf"),
@@ -1143,7 +1147,9 @@ export async function runWirkungsticker(options = {}) {
           }
           newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
-            if (candidate.existing_story?.published && !candidate.reassessment && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error))) {
+            const noUpdate = errors.includes("AI_DUPLICATE_WITHOUT_UPDATE")
+              && errors.every(error => ["AI_PUBLICATION_NOT_RECOMMENDED", "AI_DUPLICATE_WITHOUT_UPDATE"].includes(error));
+            if (candidate.existing_story?.published && (!candidate.reassessment || noUpdate) && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error))) {
               bumpCandidateFunnel(sourceFunnel, candidate, "editorial_rejections");
               const { pending_update: _pendingUpdate, ...preserved } = candidate.existing_story;
               // Cache only a well-formed editorial no-update decision, never a

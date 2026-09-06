@@ -78,6 +78,14 @@ jobs:
       - name: Unit and security tests
         if: steps.slot.outputs.should_run == 'true'
         run: npm run news:test
+      - name: Recover usage from failed atomic publications
+        if: steps.slot.outputs.should_run == 'true'
+        # Provider-side accounting remains authoritative if GitHub logs are
+        # temporarily unavailable; do not disable that independent cost gate.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/news/recover-failed-usage.mjs
       - name: Import, analyze and build
         if: steps.slot.outputs.should_run == 'true'
         env:

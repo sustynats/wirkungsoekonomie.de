@@ -70,6 +70,23 @@ test('headless no-update review persists its evidence and skips the same input w
   await runWirkungsticker({...opts,...captured}); assert.equal(calls,2);
 });
 
+test('no new information during reassessment never retires the published original or its deep dive', async () => {
+  let captured;
+  const previous = storedStory();
+  previous.pending_update.reassessment = true;
+  await runWirkungsticker(options(previous,{captureState:value=>captured=value,callAiImpl:async stories=>({
+    analyses:stories.map(s=>({story_id:s.story_id,publication_recommendation:false,rejection:{code:'no_new_information',reason:'Keine neuen materiellen Informationen gegenüber der bereits veröffentlichten Fassung.'}})),
+    model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50},
+  })}));
+  const saved = captured.storyStore.stories[0];
+  assert.equal(saved.listed,true);
+  assert.equal(saved.retirement,undefined);
+  assert.equal(saved.pending_update,undefined);
+  assert.equal(saved.review_checkpoint.outcome,'no_material_update');
+  assert.deepEqual(saved.analysis,previous.analysis);
+  assert.deepEqual(saved.versions,previous.versions);
+});
+
 test('oversize preflight preserves a queue item and leaves the paid slot to another article', async () => {
   let captured, calls=[];
   const blocked=storedStory(); blocked.pending_update.sources=[{...item,url:'https://example.org/'+ 'x'.repeat(40000)}];
