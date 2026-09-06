@@ -12,6 +12,8 @@ export function hasNonstandardDash(text) {
 
 // Preserve cryptographically bound input records; public artifacts are always formatted.
 export function isFrozenPublicationSource(relativePath) {
-  return ['audit-manifests/', 'content/audits/sachsen-anhalt/', 'woek-parlament-app/data/']
+  // News summaries and snapshots carry editorial/content hashes. Normalize
+  // their rendered pages, never the source bytes those reviews approved.
+  return ['audit-manifests/', 'content/audits/sachsen-anhalt/', 'woek-parlament-app/data/', 'data/news/']
     .some(prefix => String(relativePath).replaceAll('\\', '/').startsWith(prefix));
 }
