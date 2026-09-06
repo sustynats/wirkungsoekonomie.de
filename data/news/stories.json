@@ -1,7 +1,1541 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T08:42:28.684Z",
+  "updated_at": "2026-09-06T09:21:21.365Z",
   "stories": [
+    {
+      "story_id": "wt-b1ce25efb18964e4",
+      "slug": "ukraine-krieg-us-gesandte-werden-nach-gesprachen-im-kreml-in-kiew-erwartet-8964e4",
+      "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
+      "first_seen": "2026-09-06T08:45:20.000Z",
+      "last_updated": "2026-09-06T09:07:44.090Z",
+      "published_at": "2026-09-06T09:07:44.090Z",
+      "updated_at": "2026-09-06T09:07:44.090Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+          "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
+          "summary": "Die US-Unterhändler Witkoff und Kushner werden heute zu einem Treffen mit dem ukrainischen Präsidenten Präsident Selenskyj in Kiew erwartet. Russland hat angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen. Gestern hatten die US-Gesandten in Moskau mit dem russischen Präsidenten Putin gesprochen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:45:20.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "0c62fd1262be41262586474bd1654083562adfb27c12da24e4bb5a9cba174074",
+          "source_item_id": "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T08:45:20.000Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b1ce25efb18964e4-v1-claim-1",
+          "story_id": "wt-b1ce25efb18964e4",
+          "claim": "Die US-Gesandten Witkoff und Kushner werden in Kiew zu einem Treffen mit Präsident Selenskyj erwartet.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+              "excerpt_hash": "2a2d12caaa6c499c12a7",
+              "checked_at": "2026-09-06T09:07:44.090Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T09:07:44.090Z"
+        },
+        {
+          "claim_id": "wt-b1ce25efb18964e4-v1-claim-2",
+          "story_id": "wt-b1ce25efb18964e4",
+          "claim": "Russland hat angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+              "excerpt_hash": "ba7d5e17ad55e680315a",
+              "checked_at": "2026-09-06T09:07:44.090Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T09:07:44.090Z"
+        },
+        {
+          "claim_id": "wt-b1ce25efb18964e4-v1-claim-3",
+          "story_id": "wt-b1ce25efb18964e4",
+          "claim": "Die US-Gesandten hatten am Vortag in Moskau Gespräche mit Präsident Putin über den Ukraine-Krieg.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+              "excerpt_hash": "2a2d12caaa6c499c12a7",
+              "checked_at": "2026-09-06T09:07:44.090Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+              "excerpt_hash": "a8ae81c8d715a38e2f26",
+              "checked_at": "2026-09-06T09:07:44.090Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+              "excerpt_hash": "160e365caddcd91658f6",
+              "checked_at": "2026-09-06T09:07:44.090Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T09:07:44.090Z"
+        }
+      ],
+      "event_id": "event-d1a30590b6b3af4a3b8b",
+      "event_first_seen_at": "2026-09-06T09:06:22.155Z",
+      "event_detected_at": "2026-09-06T09:06:22.155Z",
+      "verification_started_at": "2026-09-06T09:07:30.239Z",
+      "publish_ready_at": "2026-09-06T09:07:44.090Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T09:06:22.155Z",
+        "fingerprint": "dfc1918a696c432452b381cf1f966e2fb22f8615f58dba0fb47ba514ebeba016",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "8f654287f229da9fa4e4ad70e3bc038ad1f0f845a4063d11c82c18dec297ef0c",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Deutschlandfunk meldet, dass die US-Unterhändler Witkoff und Kushner heute in Kiew zu einem Treffen mit Präsident Selenskyj erwartet werden. Die Redaktion verbindet das mit der Nachricht, dass Russland die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einstellen wolle.\n\nZugleich verweist der Beitrag auf das Treffen der beiden Gesandten mit Präsident Putin am Vortag in Moskau. Zu den Einzelheiten der rund dreistündigen Gespräche im Kreml seien bisher keine Details bekannt; nach Angaben aus dem Weißen Haus seien aber konkrete nächste Schritte besprochen worden.",
+      "analysis": {
+        "story_id": "wt-b1ce25efb18964e4",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "US-Gesandte werden nach Gesprächen in Moskau in Kiew erwartet. Zugleich steht eine dreitägige Pause der Luftangriffe auf die ukrainische Hauptstadt im Raum.",
+        "detail_summary": "Gesichert ist nach der vorliegenden Meldung vor allem der Gesprächsverlauf: Witkoff und Kushner trafen Putin in Moskau, und für heute wird ein Termin in Kiew mit Selenskyj erwartet. Zusätzlich nennt die Quelle eine von Russland angekündigte dreitägige Unterbrechung der Luftangriffe auf die ukrainische Hauptstadt. Das ist materiell relevant, weil es mögliche Folgen für militärische Lage, Schutz von Zivilbevölkerung und den politischen Verhandlungsspielraum haben kann. Der Wirkpfad wäre kurzfristig vor allem über die tatsächliche Einhaltung der angekündigten Pause und über weitere Gesprächsschritte. Offen bleibt, was genau in Moskau vereinbart wurde und ob die Ankündigung praktisch umgesetzt wird. Die Beleglage stammt bislang nur aus einem journalistischen Bericht; weitere unabhängige Bestätigungen fehlen.",
+        "why_relevant": "Die Meldung beschreibt laufende diplomatische Kontakte im Ukraine-Krieg und eine angekündigte Pause von Luftangriffen mit unmittelbarer Relevanz für Sicherheit und Verhandlungen.",
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Zivilbevölkerung, Schutz vor Angriffen und mögliche Folgen für weitere Kampfhandlungen."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Kein direkter Umweltbezug belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Verhandlungskanäle zwischen Kriegsparteien und Vermittlern können politische Entscheidungen beeinflussen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Eine tatsächlich eingehaltene Angriffspause könnte kurzfristig Schutzwirkung entfalten und neue Verhandlungsspielräume öffnen.",
+        "impact_risks": [
+          "Die Ankündigung könnte symbolisch bleiben oder rasch gebrochen werden.",
+          "Unklare Vereinbarungen können Erwartungen erzeugen, ohne den Kriegslauf zu ändern."
+        ],
+        "mechanisms": [
+          "Zeitweilige Reduktion militärischer Luftangriffe",
+          "Diplomatische Folgekontakte nach dem Moskauer Treffen",
+          "Mögliche Signale an Bevölkerung und Verhandlungspartner"
+        ],
+        "first_order": [
+          "Weniger Luftangriffe auf Kyiv, falls die Pause umgesetzt wird.",
+          "Öffentliche Erwartung eines weiteren Gesprächszyklus."
+        ],
+        "second_order": [
+          "Vorübergehende Entlastung für Schutzsysteme und Zivilbevölkerung.",
+          "Erhöhter Druck, Verhandlungsergebnisse transparent zu machen."
+        ],
+        "third_order": [
+          "Falls wiederholt, könnte die Pause als Muster künftiger Verhandlungsschritte dienen.",
+          "Bei Scheitern könnte das Vertrauen in Gesprächskanäle sinken."
+        ],
+        "systemic_relevance": "Der Vorgang berührt einen kriegsbezogenen Verhandlungskanal mit potenziellen Auswirkungen auf Sicherheitslage, diplomatische Dynamik und Schutz von Zivilisten.",
+        "transformation_potential": "Niedrig bis mittel: Erst eine bestätigte und eingehaltene Vereinbarung würde den Zustand der Gewaltanwendung messbar verändern.",
+        "resilience": "Die öffentliche Wirkung hängt stark von Einhaltung, Dauer und Überprüfbarkeit der angekündigten Pause ab.",
+        "side_effects": [
+          "Verunsicherung durch unklare nächste Schritte",
+          "Kommunikative Aufladung ohne belastbare Umsetzung"
+        ],
+        "uncertainties": [
+          "Die Einzelheiten des Moskauer Gesprächs sind laut Quelle nicht bekannt.",
+          "Unklar ist, ob und wie lange die angekündigte Pause tatsächlich gilt."
+        ],
+        "evidence_level": "low",
+        "attribution": "Quelle: Deutschlandfunk; berichtet wird über erwartete Termine, eine russische Ankündigung und den Hinweis auf Gespräche in Moskau.",
+        "watch_next": [
+          "Ob das Treffen in Kiew tatsächlich stattfindet.",
+          "Ob die angekündigte dreitägige Pause praktisch eingehalten wird."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "none",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Neuer Zwischenstand eines laufenden diplomatischen Vorgangs mit potenzieller Sicherheitsrelevanz; bislang nur eine belastete Sekundärquelle."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "publication_recommendation": true,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-06T09:06:22.155Z",
+        "media_trigger_fingerprint": "b3e9ce35623aab813201a8d27033869a876a22243a3d1c141da1683903a21fc2",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "b3e9ce35623aab813201a8d27033869a876a22243a3d1c141da1683903a21fc2",
+          "content_fingerprint": "6a5133ea7a9afeafa7bed713fc8a597fad4e34ffa3d575243e320910078ff2b7",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T09:07:44.090Z",
+          "content_hash": "8f654287f229da9fa4e4ad70e3bc038ad1f0f845a4063d11c82c18dec297ef0c",
+          "source_summary": "Deutschlandfunk meldet, dass die US-Unterhändler Witkoff und Kushner heute in Kiew zu einem Treffen mit Präsident Selenskyj erwartet werden. Die Redaktion verbindet das mit der Nachricht, dass Russland die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einstellen wolle.\n\nZugleich verweist der Beitrag auf das Treffen der beiden Gesandten mit Präsident Putin am Vortag in Moskau. Zu den Einzelheiten der rund dreistündigen Gespräche im Kreml seien bisher keine Details bekannt; nach Angaben aus dem Weißen Haus seien aber konkrete nächste Schritte besprochen worden.",
+          "analysis": {
+            "story_id": "wt-b1ce25efb18964e4",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "US-Gesandte werden nach Gesprächen in Moskau in Kiew erwartet. Zugleich steht eine dreitägige Pause der Luftangriffe auf die ukrainische Hauptstadt im Raum.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Meldung vor allem der Gesprächsverlauf: Witkoff und Kushner trafen Putin in Moskau, und für heute wird ein Termin in Kiew mit Selenskyj erwartet. Zusätzlich nennt die Quelle eine von Russland angekündigte dreitägige Unterbrechung der Luftangriffe auf die ukrainische Hauptstadt. Das ist materiell relevant, weil es mögliche Folgen für militärische Lage, Schutz von Zivilbevölkerung und den politischen Verhandlungsspielraum haben kann. Der Wirkpfad wäre kurzfristig vor allem über die tatsächliche Einhaltung der angekündigten Pause und über weitere Gesprächsschritte. Offen bleibt, was genau in Moskau vereinbart wurde und ob die Ankündigung praktisch umgesetzt wird. Die Beleglage stammt bislang nur aus einem journalistischen Bericht; weitere unabhängige Bestätigungen fehlen.",
+            "why_relevant": "Die Meldung beschreibt laufende diplomatische Kontakte im Ukraine-Krieg und eine angekündigte Pause von Luftangriffen mit unmittelbarer Relevanz für Sicherheit und Verhandlungen.",
+            "status": "angekündigt",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind Zivilbevölkerung, Schutz vor Angriffen und mögliche Folgen für weitere Kampfhandlungen."
+            },
+            "planet": {
+              "relevance": "offen",
+              "rationale": "Kein direkter Umweltbezug belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Verhandlungskanäle zwischen Kriegsparteien und Vermittlern können politische Entscheidungen beeinflussen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Eine tatsächlich eingehaltene Angriffspause könnte kurzfristig Schutzwirkung entfalten und neue Verhandlungsspielräume öffnen.",
+            "impact_risks": [
+              "Die Ankündigung könnte symbolisch bleiben oder rasch gebrochen werden.",
+              "Unklare Vereinbarungen können Erwartungen erzeugen, ohne den Kriegslauf zu ändern."
+            ],
+            "mechanisms": [
+              "Zeitweilige Reduktion militärischer Luftangriffe",
+              "Diplomatische Folgekontakte nach dem Moskauer Treffen",
+              "Mögliche Signale an Bevölkerung und Verhandlungspartner"
+            ],
+            "first_order": [
+              "Weniger Luftangriffe auf Kyiv, falls die Pause umgesetzt wird.",
+              "Öffentliche Erwartung eines weiteren Gesprächszyklus."
+            ],
+            "second_order": [
+              "Vorübergehende Entlastung für Schutzsysteme und Zivilbevölkerung.",
+              "Erhöhter Druck, Verhandlungsergebnisse transparent zu machen."
+            ],
+            "third_order": [
+              "Falls wiederholt, könnte die Pause als Muster künftiger Verhandlungsschritte dienen.",
+              "Bei Scheitern könnte das Vertrauen in Gesprächskanäle sinken."
+            ],
+            "systemic_relevance": "Der Vorgang berührt einen kriegsbezogenen Verhandlungskanal mit potenziellen Auswirkungen auf Sicherheitslage, diplomatische Dynamik und Schutz von Zivilisten.",
+            "transformation_potential": "Niedrig bis mittel: Erst eine bestätigte und eingehaltene Vereinbarung würde den Zustand der Gewaltanwendung messbar verändern.",
+            "resilience": "Die öffentliche Wirkung hängt stark von Einhaltung, Dauer und Überprüfbarkeit der angekündigten Pause ab.",
+            "side_effects": [
+              "Verunsicherung durch unklare nächste Schritte",
+              "Kommunikative Aufladung ohne belastbare Umsetzung"
+            ],
+            "uncertainties": [
+              "Die Einzelheiten des Moskauer Gesprächs sind laut Quelle nicht bekannt.",
+              "Unklar ist, ob und wie lange die angekündigte Pause tatsächlich gilt."
+            ],
+            "evidence_level": "low",
+            "attribution": "Quelle: Deutschlandfunk; berichtet wird über erwartete Termine, eine russische Ankündigung und den Hinweis auf Gespräche in Moskau.",
+            "watch_next": [
+              "Ob das Treffen in Kiew tatsächlich stattfindet.",
+              "Ob die angekündigte dreitägige Pause praktisch eingehalten wird."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "none",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neuer Zwischenstand eines laufenden diplomatischen Vorgangs mit potenzieller Sicherheitsrelevanz; bislang nur eine belastete Sekundärquelle."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "publication_recommendation": true,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-06T09:06:22.155Z",
+            "media_trigger_fingerprint": "b3e9ce35623aab813201a8d27033869a876a22243a3d1c141da1683903a21fc2",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "b3e9ce35623aab813201a8d27033869a876a22243a3d1c141da1683903a21fc2",
+              "content_fingerprint": "6a5133ea7a9afeafa7bed713fc8a597fad4e34ffa3d575243e320910078ff2b7",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-b1ce25efb18964e4-v1-claim-1",
+              "story_id": "wt-b1ce25efb18964e4",
+              "claim": "Die US-Gesandten Witkoff und Kushner werden in Kiew zu einem Treffen mit Präsident Selenskyj erwartet.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+                  "excerpt_hash": "2a2d12caaa6c499c12a7",
+                  "checked_at": "2026-09-06T09:07:44.090Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T09:07:44.090Z"
+            },
+            {
+              "claim_id": "wt-b1ce25efb18964e4-v1-claim-2",
+              "story_id": "wt-b1ce25efb18964e4",
+              "claim": "Russland hat angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+                  "excerpt_hash": "ba7d5e17ad55e680315a",
+                  "checked_at": "2026-09-06T09:07:44.090Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T09:07:44.090Z"
+            },
+            {
+              "claim_id": "wt-b1ce25efb18964e4-v1-claim-3",
+              "story_id": "wt-b1ce25efb18964e4",
+              "claim": "Die US-Gesandten hatten am Vortag in Moskau Gespräche mit Präsident Putin über den Ukraine-Krieg.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+                  "excerpt_hash": "2a2d12caaa6c499c12a7",
+                  "checked_at": "2026-09-06T09:07:44.090Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+                  "excerpt_hash": "a8ae81c8d715a38e2f26",
+                  "checked_at": "2026-09-06T09:07:44.090Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+                  "excerpt_hash": "160e365caddcd91658f6",
+                  "checked_at": "2026-09-06T09:07:44.090Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T09:07:44.090Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+              "content_hash": "0c62fd1262be41262586474bd1654083562adfb27c12da24e4bb5a9cba174074"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T09:07:44.090Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b1ce25efb18964e4-9d40ee6cbe1710f1-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "9d40ee6cbe1710f1e876755ad471144fd714a20d954841e51372c88273886934"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b1ce25efb18964e4-c758a8a5378bda0e-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "c758a8a5378bda0e9d322bfc54e5714d0ba85842b2bf49344e01ee039c77ee57"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b1ce25efb18964e4-5e6d43305144119f-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "5e6d43305144119f3e01a85a8c4e87cfa6b5b77d2389a650bf640bec8886a894"
+        },
+        "source_visual": null,
+        "fingerprint": "697a0a868a4a7c8e26f2270ddaec53f2649028f1ccf8c29df3286cc0d1fe0fdd",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T09:08:13.561Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-3d9354235ee08f8f",
+      "slug": "iran-usa-krieg-us-militar-angegriffener-iranischer-oltanker-versenkt-e08f8f",
+      "title": "Iran-USA-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
+      "first_seen": "2026-09-06T08:39:00.000Z",
+      "last_updated": "2026-09-06T09:07:27.736Z",
+      "published_at": "2026-09-06T09:07:27.736Z",
+      "updated_at": "2026-09-06T09:07:27.736Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+          "title": "Iran-USA-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
+          "summary": "Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Einer soll nun am Meeresgrund liegen. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:39:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "182b6964af639f02d716a0ce57953d8e5d32eb21adb6a70f52f2397129ba708f",
+          "source_item_id": "7f9426ee7e989f0d9269075b901bb81b7d980dc22b3105d57ac9a21b51a0c6c6",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T08:39:00.000Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+          "title": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt",
+          "summary": "Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:45:20.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d26727e526551155230658acd1ce4e459ba4dc8cfdec6606a86a9a5fff1ef8a5",
+          "source_item_id": "f19b81892466964d367fd54c83b09b5d653ff4644a3889ab4ae56e74bd623ca1",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T08:45:20.000Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3d9354235ee08f8f-v1-claim-1",
+          "story_id": "wt-3d9354235ee08f8f",
+          "claim": "Das US-Militär sagt, ein angegriffener iranischer Öltanker sei im Golf von Oman gesunken.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+              "excerpt_hash": "238c9c4f7bd8e007b4b2",
+              "checked_at": "2026-09-06T09:07:27.736Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "excerpt_hash": "c85c9447fe4766542eee",
+              "checked_at": "2026-09-06T09:07:27.736Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T09:07:27.736Z"
+        },
+        {
+          "claim_id": "wt-3d9354235ee08f8f-v1-claim-2",
+          "story_id": "wt-3d9354235ee08f8f",
+          "claim": "Nach US-Angaben war der Tanker zum Zeitpunkt des Angriffs nicht mit Öl beladen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+              "excerpt_hash": "89d58b0b0071fef857df",
+              "checked_at": "2026-09-06T09:07:27.736Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "excerpt_hash": "e81ec854cdff558842aa",
+              "checked_at": "2026-09-06T09:07:27.736Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T09:07:27.736Z"
+        },
+        {
+          "claim_id": "wt-3d9354235ee08f8f-v1-claim-3",
+          "story_id": "wt-3d9354235ee08f8f",
+          "claim": "Die USA stellen den Angriff auf den Tanker als Reaktion auf iranische Angriffe auf US-Kriegsschiffe dar.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+              "excerpt_hash": "a867a73181f5075b46ad",
+              "checked_at": "2026-09-06T09:07:27.736Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "excerpt_hash": "1d64bf51d713b7bbd419",
+              "checked_at": "2026-09-06T09:07:27.736Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T09:07:27.736Z"
+        }
+      ],
+      "event_id": "event-61ab7264eb7b5f04a941",
+      "event_first_seen_at": "2026-09-06T09:06:22.155Z",
+      "event_detected_at": "2026-09-06T09:06:22.155Z",
+      "verification_started_at": "2026-09-06T09:07:17.006Z",
+      "publish_ready_at": "2026-09-06T09:07:27.736Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T09:06:22.155Z",
+        "fingerprint": "98c998135335d0968bf5e0087414a452d3f9d6caf5770dc3e95471769288eee4",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Tanker tatsächlich gesunken ist und welche Schäden entstanden sind, muss unabhängig bestätigt werden.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Bestätigung des Sinkens oder belastbare Gegendarstellung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9550395c35f25491",
+          "announced_at": "2026-09-06T08:39:00.000Z",
+          "follow_up_date": "2026-09-13T09:07:27.736Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "de72a3602cddc05ae004bde29b692b6de76e2eca8352787e1f813c2372cb8dc5",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die beiden vorliegenden Berichte melden übereinstimmend, dass das US-Militär einen iranischen Öltanker im Golf von Oman angegriffen habe und das Schiff danach gesunken sei. Nach Angaben des zuständigen Regionalkommandos Centcom sei der Tanker zum Zeitpunkt des Angriffs nicht mit Öl beladen gewesen. Beide Texte ordnen den Angriff als Reaktion auf iranische Angriffe auf US-Kriegsschiffe ein. Zugleich verweisen sie darauf, dass die Angaben des Militärs zunächst nicht unabhängig überprüft werden konnten. \n\nDie Berichte nennen außerdem, dass insgesamt drei iranische Öltanker angegriffen worden seien und dass die US-Seite die Maßnahme mit wirtschaftlichem Druck begründe. Einzelheiten zu Schäden, Lage und Folgen bleiben in der gelieferten Quellenlage offen.",
+      "analysis": {
+        "story_id": "wt-3d9354235ee08f8f",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "US-Militärangaben zufolge ist ein angegriffener iranischer Öltanker im Golf von Oman gesunken. Die Berichte stützen sich dabei auf dieselbe militärische Quelle und lassen mehrere Punkte offen.",
+        "detail_summary": "Gesichert ist nach den gelieferten Quellen vor allem die US-Darstellung, dass ein iranischer Öltanker im Golf von Oman nach einem Angriff gesunken sei. Beide Berichte nennen Centcom als Quelle und halten zugleich fest, dass die Angaben zunächst nicht unabhängig überprüfbar waren. Für die Einordnung ist das wichtig, weil der Kern des Ereignisses zwar berichtet, aber noch nicht durch eine zweite, unabhängige Primärbestätigung abgesichert ist. Materiell relevant ist die Meldung, weil sie in einen bereits eskalierenden Konflikt um Schiffe, Öltransporte und wirtschaftlichen Druck passt. Ein möglicher Wirkpfad führt über höhere Sicherheits- und Versicherungskosten, weitere maritime Risiken und zusätzliche Belastungen für den Ölhandel in der Region. Offen bleibt, ob die geschilderten Schäden, die Zuordnung der Angriffe und die behauptete Reaktion tatsächlich so eingetreten sind.",
+        "why_relevant": "Die Meldung betrifft militärische Gewalt, maritime Sicherheit und potenzielle Folgen für Öltransporte im Golf von Oman.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen reichen von Schiffsverkehrsrisiken bis zu wirtschaftlichem Druck, betreffen aber zunächst einen einzelnen Vorfall."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Wenn Schifffahrt und Öltransporte gestört werden, kann das regionale Umwelt- und Energiesystem mittelbar belastet werden."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt staatliche Gewaltanwendung, Kriegsberichterstattung und die Nachprüfbarkeit offizieller Kriegsangaben."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Meldung kann zusätzliche Sicherheitsreaktionen, Preis- und Risikoprämien sowie weitere Eskalationsschritte im Seegebiet anstoßen.",
+        "impact_risks": [
+          "Weitere Angriffe auf Schiffe und steigende Risiken für die Schifffahrt in der Region."
+        ],
+        "mechanisms": [
+          "Militärische Eskalation verändert Sicherheitslage und Kosten im maritimen Verkehr.",
+          "Offizielle Gegendarstellungen oder Bestätigungen können diplomatische und mediale Folgeschritte auslösen."
+        ],
+        "first_order": [
+          "Einzelnes Schiff wird nach US-Angaben versenkt."
+        ],
+        "second_order": [
+          "Höhere Vorsicht, mögliche Umwege und Kosten im Seeverkehr."
+        ],
+        "third_order": [
+          "Bei weiterer Eskalation können Handels- und Energieflüsse regional stärker gestört werden."
+        ],
+        "systemic_relevance": "Die Nachricht ist Teil eines Konflikts, der Seewege, Energieexporte und militärische Risikokalküle in einer strategisch wichtigen Region berührt.",
+        "transformation_potential": "Kein Transformationssignal, aber ein möglicher Verstärker laufender Konflikt- und Abschreckungsdynamiken.",
+        "resilience": "Die Lage ist wegen der offenen Beleglage und der Abhängigkeit von wenigen Quellen noch wenig robust einordenbar.",
+        "side_effects": [
+          "Mehr Unsicherheit für Schifffahrt und Versicherer.",
+          "Mögliche weitere Vergeltungsschritte."
+        ],
+        "uncertainties": [
+          "Unabhängige Bestätigung des Sinkens fehlt.",
+          "Schäden, genaue Lage und Folgen sind offen.",
+          "Die Gegenseite bestreitet oder bestätigt in den gelieferten Texten nichts unabhängig."
+        ],
+        "evidence_level": "low",
+        "attribution": "Quelle: Centcom, vermittelt über taz und Deutschlandfunk; Originalformulierung ist eine US-Angabe, die Berichte geben sie indirekt wieder.",
+        "watch_next": [
+          "Unabhängige Bestätigung des Schiffsstatus.",
+          "Weitere offizielle Stellungnahmen von USA und Iran."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16, SDG 7, SDG 14"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue, zeitnahe Meldung über militärische Eskalation mit möglicher Relevanz für Schifffahrt und Öltransporte; Beleglage aber nur attributiv und nicht unabhängig bestätigt."
+        },
+        "publication_recommendation": true,
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-06T09:06:22.155Z",
+        "media_trigger_fingerprint": "5277f6dd071cae70953bf7b6ff49aeecf26aee606499a1adfea74afd6b724a3a",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 2,
+          "comparable_source_count": 2,
+          "fingerprint": "5277f6dd071cae70953bf7b6ff49aeecf26aee606499a1adfea74afd6b724a3a",
+          "content_fingerprint": "6b6730d35d662576d636ea279c8fd1f960506ec6cf39ed3faae586700134113d",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T09:07:27.736Z",
+          "content_hash": "de72a3602cddc05ae004bde29b692b6de76e2eca8352787e1f813c2372cb8dc5",
+          "source_summary": "Die beiden vorliegenden Berichte melden übereinstimmend, dass das US-Militär einen iranischen Öltanker im Golf von Oman angegriffen habe und das Schiff danach gesunken sei. Nach Angaben des zuständigen Regionalkommandos Centcom sei der Tanker zum Zeitpunkt des Angriffs nicht mit Öl beladen gewesen. Beide Texte ordnen den Angriff als Reaktion auf iranische Angriffe auf US-Kriegsschiffe ein. Zugleich verweisen sie darauf, dass die Angaben des Militärs zunächst nicht unabhängig überprüft werden konnten. \n\nDie Berichte nennen außerdem, dass insgesamt drei iranische Öltanker angegriffen worden seien und dass die US-Seite die Maßnahme mit wirtschaftlichem Druck begründe. Einzelheiten zu Schäden, Lage und Folgen bleiben in der gelieferten Quellenlage offen.",
+          "analysis": {
+            "story_id": "wt-3d9354235ee08f8f",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "US-Militärangaben zufolge ist ein angegriffener iranischer Öltanker im Golf von Oman gesunken. Die Berichte stützen sich dabei auf dieselbe militärische Quelle und lassen mehrere Punkte offen.",
+            "detail_summary": "Gesichert ist nach den gelieferten Quellen vor allem die US-Darstellung, dass ein iranischer Öltanker im Golf von Oman nach einem Angriff gesunken sei. Beide Berichte nennen Centcom als Quelle und halten zugleich fest, dass die Angaben zunächst nicht unabhängig überprüfbar waren. Für die Einordnung ist das wichtig, weil der Kern des Ereignisses zwar berichtet, aber noch nicht durch eine zweite, unabhängige Primärbestätigung abgesichert ist. Materiell relevant ist die Meldung, weil sie in einen bereits eskalierenden Konflikt um Schiffe, Öltransporte und wirtschaftlichen Druck passt. Ein möglicher Wirkpfad führt über höhere Sicherheits- und Versicherungskosten, weitere maritime Risiken und zusätzliche Belastungen für den Ölhandel in der Region. Offen bleibt, ob die geschilderten Schäden, die Zuordnung der Angriffe und die behauptete Reaktion tatsächlich so eingetreten sind.",
+            "why_relevant": "Die Meldung betrifft militärische Gewalt, maritime Sicherheit und potenzielle Folgen für Öltransporte im Golf von Oman.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Mögliche Folgen reichen von Schiffsverkehrsrisiken bis zu wirtschaftlichem Druck, betreffen aber zunächst einen einzelnen Vorfall."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Wenn Schifffahrt und Öltransporte gestört werden, kann das regionale Umwelt- und Energiesystem mittelbar belastet werden."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Fall berührt staatliche Gewaltanwendung, Kriegsberichterstattung und die Nachprüfbarkeit offizieller Kriegsangaben."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Meldung kann zusätzliche Sicherheitsreaktionen, Preis- und Risikoprämien sowie weitere Eskalationsschritte im Seegebiet anstoßen.",
+            "impact_risks": [
+              "Weitere Angriffe auf Schiffe und steigende Risiken für die Schifffahrt in der Region."
+            ],
+            "mechanisms": [
+              "Militärische Eskalation verändert Sicherheitslage und Kosten im maritimen Verkehr.",
+              "Offizielle Gegendarstellungen oder Bestätigungen können diplomatische und mediale Folgeschritte auslösen."
+            ],
+            "first_order": [
+              "Einzelnes Schiff wird nach US-Angaben versenkt."
+            ],
+            "second_order": [
+              "Höhere Vorsicht, mögliche Umwege und Kosten im Seeverkehr."
+            ],
+            "third_order": [
+              "Bei weiterer Eskalation können Handels- und Energieflüsse regional stärker gestört werden."
+            ],
+            "systemic_relevance": "Die Nachricht ist Teil eines Konflikts, der Seewege, Energieexporte und militärische Risikokalküle in einer strategisch wichtigen Region berührt.",
+            "transformation_potential": "Kein Transformationssignal, aber ein möglicher Verstärker laufender Konflikt- und Abschreckungsdynamiken.",
+            "resilience": "Die Lage ist wegen der offenen Beleglage und der Abhängigkeit von wenigen Quellen noch wenig robust einordenbar.",
+            "side_effects": [
+              "Mehr Unsicherheit für Schifffahrt und Versicherer.",
+              "Mögliche weitere Vergeltungsschritte."
+            ],
+            "uncertainties": [
+              "Unabhängige Bestätigung des Sinkens fehlt.",
+              "Schäden, genaue Lage und Folgen sind offen.",
+              "Die Gegenseite bestreitet oder bestätigt in den gelieferten Texten nichts unabhängig."
+            ],
+            "evidence_level": "low",
+            "attribution": "Quelle: Centcom, vermittelt über taz und Deutschlandfunk; Originalformulierung ist eine US-Angabe, die Berichte geben sie indirekt wieder.",
+            "watch_next": [
+              "Unabhängige Bestätigung des Schiffsstatus.",
+              "Weitere offizielle Stellungnahmen von USA und Iran."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16, SDG 7, SDG 14"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, zeitnahe Meldung über militärische Eskalation mit möglicher Relevanz für Schifffahrt und Öltransporte; Beleglage aber nur attributiv und nicht unabhängig bestätigt."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-06T09:06:22.155Z",
+            "media_trigger_fingerprint": "5277f6dd071cae70953bf7b6ff49aeecf26aee606499a1adfea74afd6b724a3a",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 2,
+              "comparable_source_count": 2,
+              "fingerprint": "5277f6dd071cae70953bf7b6ff49aeecf26aee606499a1adfea74afd6b724a3a",
+              "content_fingerprint": "6b6730d35d662576d636ea279c8fd1f960506ec6cf39ed3faae586700134113d",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-3d9354235ee08f8f-v1-claim-1",
+              "story_id": "wt-3d9354235ee08f8f",
+              "claim": "Das US-Militär sagt, ein angegriffener iranischer Öltanker sei im Golf von Oman gesunken.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+                  "excerpt_hash": "238c9c4f7bd8e007b4b2",
+                  "checked_at": "2026-09-06T09:07:27.736Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+                  "excerpt_hash": "c85c9447fe4766542eee",
+                  "checked_at": "2026-09-06T09:07:27.736Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T09:07:27.736Z"
+            },
+            {
+              "claim_id": "wt-3d9354235ee08f8f-v1-claim-2",
+              "story_id": "wt-3d9354235ee08f8f",
+              "claim": "Nach US-Angaben war der Tanker zum Zeitpunkt des Angriffs nicht mit Öl beladen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+                  "excerpt_hash": "89d58b0b0071fef857df",
+                  "checked_at": "2026-09-06T09:07:27.736Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+                  "excerpt_hash": "e81ec854cdff558842aa",
+                  "checked_at": "2026-09-06T09:07:27.736Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T09:07:27.736Z"
+            },
+            {
+              "claim_id": "wt-3d9354235ee08f8f-v1-claim-3",
+              "story_id": "wt-3d9354235ee08f8f",
+              "claim": "Die USA stellen den Angriff auf den Tanker als Reaktion auf iranische Angriffe auf US-Kriegsschiffe dar.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+                  "excerpt_hash": "a867a73181f5075b46ad",
+                  "checked_at": "2026-09-06T09:07:27.736Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+                  "excerpt_hash": "1d64bf51d713b7bbd419",
+                  "checked_at": "2026-09-06T09:07:27.736Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T09:07:27.736Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+              "content_hash": "182b6964af639f02d716a0ce57953d8e5d32eb21adb6a70f52f2397129ba708f"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "content_hash": "d26727e526551155230658acd1ce4e459ba4dc8cfdec6606a86a9a5fff1ef8a5"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T09:07:27.736Z",
+          "source_count": 2
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-2d716d9225718651-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "2d716d9225718651563356be897ac950697796e61bd2482f4dd3cbcfddb7e679"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-2bdd6b3d75cb191f-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "2bdd6b3d75cb191f2de24aea8a65bf868461acd0be9a563d0e39f4734d16f968"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-ac53acbe6d95edd4-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "ac53acbe6d95edd4241282717dfe1b415d03f9d48f5b404d4453753bc11eec6d"
+        },
+        "source_visual": null,
+        "fingerprint": "9d2bfc40111303afc8738785083dc1e62a84cbc491ce2102f22e537824c28d8d",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T09:08:05.546Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-da5c012392ca5f89",
+      "slug": "israelische-wirtschaft-wir-sollten-uns-von-der-amerikanischen-militarhilfe-losen-ca5f89",
+      "title": "Israelische Wirtschaft: „Wir sollten uns von der amerikanischen Militärhilfe lösen“",
+      "first_seen": "2026-09-06T08:57:21.000Z",
+      "last_updated": "2026-09-06T08:57:21.000Z",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/ausland/israel-ex-netanjahu-berater-ueber-wirtschaftswachstum-waehrend-des-krieges/100251437.html",
+          "title": "Israelische Wirtschaft: „Wir sollten uns von der amerikanischen Militärhilfe lösen“",
+          "summary": "Der anhaltende Iran-Krieg belastet die Weltwirtschaft. Doch ausgerechnet in Israel ist davon wenig zu spüren. Ex-Netanjahu-Berater Eugene Kandel erklärt den Boom.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:57:21.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "dfa02a2298b98dafab432f6e7ef5bbc333f45e731bbfa29347a51e6b0489bca4",
+          "source_item_id": "4cda996aeec6f79167fec19bbf09c856d1de50d5e3a2159d7299956712985a42",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T08:57:21.000Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-da5c012392ca5f89-claim-01",
+          "story_id": "wt-da5c012392ca5f89",
+          "claim": "Israelische Wirtschaft: „Wir sollten uns von der amerikanischen Militärhilfe lösen“: Der anhaltende Iran-Krieg belastet die Weltwirtschaft. Doch ausgerechnet in Israel ist davon wenig zu spüren. Ex-Netanjahu-Berater Eugene Kandel erklärt den Boom.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T09:06:22.155Z"
+        }
+      ],
+      "content_hash": "bf55cc1e1bb7e2047a47df7ca1e02ca4aa176163a1c85faa2c80d3772ff05343",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T09:21:22.155Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T09:06:22.155Z",
+      "event_first_seen_at": "2026-09-06T09:06:22.155Z",
+      "event_detected_at": "2026-09-06T09:06:22.155Z",
+      "event_id": "event-c2e6787b92d348290b34",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Geopolitik",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.01925,
+        "detection_delay_minutes": 9.01925,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T09:06:22.155Z",
+        "fingerprint": "0a0a15f892aae6c777493e02f6c4e6291edb255c0636ed8f15586f0198d97b3b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T09:06:22.155Z",
+      "rejection": {
+        "at": "2026-09-06T09:06:22.155Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-d7f00335de9334ae",
+      "slug": "israeli-strikes-kill-four-in-lebanon-after-alleged-hezbollah-drone-launch-9334ae",
+      "title": "Israeli strikes kill four in Lebanon after alleged Hezbollah drone launch",
+      "first_seen": "2026-09-06T08:49:41.000Z",
+      "last_updated": "2026-09-06T08:49:41.000Z",
+      "topic": [
+        "Gesundheit",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260906-israeli-strikes-kill-four-in-lebanon-after-alleged-hezbollah-drone-launch",
+          "title": "Israeli strikes kill four in Lebanon after alleged Hezbollah drone launch",
+          "summary": "Israeli air strikes on southern Lebanon Sunday killed four people, two of them women, the country's health ministry said. Israel's military said that the strikes were a response to an alleged Hezbollah drone launch targeting troops in the Israeli-occupied \"security zone\" in the country's south.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:49:41.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "979b9520e9cf8a8cb3fb5ee5e3aa471d3e07471da18df5c79e2b17d254e40ae0",
+          "source_item_id": "d3c0c1b9e0a9dbaf12bd76568c7ed7b765b01e8502f2224f04d905a2c7d92c5b",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T08:49:41.000Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d7f00335de9334ae-claim-01",
+          "story_id": "wt-d7f00335de9334ae",
+          "claim": "Israeli strikes kill four in Lebanon after alleged Hezbollah drone launch: Israeli air strikes on southern Lebanon Sunday killed four people, two of them women, the country's health ministry said. Israel's military said that the strikes were a response to an alleged Hezbollah drone launch targeting troops in the Israeli-occupied \"security zone\" in the country's south.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T09:06:22.155Z"
+        }
+      ],
+      "content_hash": "f6155bbe538e1cc18b3f7da4c829902176cc5479da954b5403a9b051576ac152",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T09:21:22.155Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T09:06:22.155Z",
+      "event_first_seen_at": "2026-09-06T09:06:22.155Z",
+      "event_detected_at": "2026-09-06T09:06:22.155Z",
+      "event_id": "event-bfcb43201da5809574f7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 52,
+        "public_relevance": "hoch",
+        "topics": [
+          "Gesundheit",
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.685916666666667,
+        "detection_delay_minutes": 16.685916666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T09:06:22.155Z",
+        "fingerprint": "7ad4ee71757cee7e90b1e3c7bfddf5edc914fcec288daaf57001358177e4e067",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T09:06:22.155Z",
+      "rejection": {
+        "at": "2026-09-06T09:06:22.155Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-d4ef566cadf69d20",
+      "slug": "attacken-auf-stromversorgung-suche-nach-mutmasslichem-strom-saboteur-geht-weiter-f69d20",
+      "title": "Attacken auf Stromversorgung: Suche nach mutmaßlichem Strom-Saboteur geht weiter",
+      "first_seen": "2026-09-06T08:40:45.000Z",
+      "last_updated": "2026-09-06T08:40:45.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/attacken-auf-stromversorgung--suche-nach-mutmasslichem-strom-saboteur-geht-weiter-38212570.html",
+          "title": "Attacken auf Stromversorgung: Suche nach mutmaßlichem Strom-Saboteur geht weiter",
+          "summary": "Seit Tagen sucht die Polizei mit Hochdruck nach einem 48-Jährigen aus NRW. Er soll für versuchte Sabotageakte gegen das deutsche Stromnetz verantwortlich sein. Die Ermittler gehen nun Hinweisen nach.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:40:45.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b1a4acc53f0a63a6970174da14ac219bf6a5c8166982c36ed5d18a4f2dd6d019",
+          "source_item_id": "96b01997fb85aba98cdfd794e2e24679d8071b0c1c70493936e8abe6e7a2b344",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T08:40:45.000Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d4ef566cadf69d20-claim-01",
+          "story_id": "wt-d4ef566cadf69d20",
+          "claim": "Attacken auf Stromversorgung: Suche nach mutmaßlichem Strom-Saboteur geht weiter: Seit Tagen sucht die Polizei mit Hochdruck nach einem 48-Jährigen aus NRW. Er soll für versuchte Sabotageakte gegen das deutsche Stromnetz verantwortlich sein. Die Ermittler gehen nun Hinweisen nach.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T09:06:22.155Z"
+        }
+      ],
+      "content_hash": "de8d2690b9c27fbc80ce9c98dd9cee4922c45941640ad217bdb7c9aba6994ca0",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T09:21:22.155Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T09:06:22.155Z",
+      "event_first_seen_at": "2026-09-06T09:06:22.155Z",
+      "event_detected_at": "2026-09-06T09:06:22.155Z",
+      "event_id": "event-e2c30687b74ae830b296",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 25.61925,
+        "detection_delay_minutes": 25.61925,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T09:06:22.155Z",
+        "fingerprint": "c4924a5155812dd310782b37214686913975d66de49c3b791e625136357389e3",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T09:06:22.155Z",
+      "rejection": {
+        "at": "2026-09-06T09:06:22.155Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-1c83bf2079dd578d",
+      "slug": "steidl-verlag-mitarbeiter-kriegen-kein-gehalt-auftrage-brechen-weg-und-mittendrin-dieser-dd578d",
+      "title": "Steidl Verlag: Mitarbeiter kriegen kein Gehalt, Aufträge brechen weg. Und mittendrin dieser Buch-Besessene",
+      "first_seen": "2026-09-06T08:38:00.000Z",
+      "last_updated": "2026-09-06T08:38:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/kultur/literatur/steidl-verlag-warum-gerhard-steidl-um-sein-lebenswerk-kaempft-a-81f847b5-6db1-4c1c-8243-7d071e1a3258",
+          "title": "Steidl Verlag: Mitarbeiter kriegen kein Gehalt, Aufträge brechen weg. Und mittendrin dieser Buch-Besessene",
+          "summary": "Verleger Gerhard Steidl gilt als detailverliebter Hohepriester des Buchdrucks. Doch mit Lagerfeld und Grass starben auch wichtige Aufträge. Und die Verlagsmitarbeiter erheben ernste Vorwürfe.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:38:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "acc1f0bf524e37893e0890993a3ede1a31d4d007fd98b0842c73358a52d59d85",
+          "source_item_id": "5b3cb97290fa18dbe5d50fe43be14755aac272b48fa8497d912979246a2f3bfc",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T08:38:00.000Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-1c83bf2079dd578d-claim-01",
+          "story_id": "wt-1c83bf2079dd578d",
+          "claim": "Steidl Verlag: Mitarbeiter kriegen kein Gehalt, Aufträge brechen weg. Und mittendrin dieser Buch-Besessene: Verleger Gerhard Steidl gilt als detailverliebter Hohepriester des Buchdrucks. Doch mit Lagerfeld und Grass starben auch wichtige Aufträge. Und die Verlagsmitarbeiter erheben ernste Vorwürfe.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T09:06:22.155Z"
+        }
+      ],
+      "content_hash": "345d2db25db68e8af08dcc5db05f6b409bafb1d9ea429d771bdfe8794444d4a2",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T09:21:22.155Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T09:06:22.155Z",
+      "event_first_seen_at": "2026-09-06T09:06:22.155Z",
+      "event_detected_at": "2026-09-06T09:06:22.155Z",
+      "event_id": "event-3cfcf2f76f3f6e7a608d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 28.36925,
+        "detection_delay_minutes": 28.36925,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T09:06:22.155Z",
+        "fingerprint": "fb6641565b50ebf9570c571d31fbc1bec8a711fd5f8f3d126e734d2fa347d3d0",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T09:06:22.155Z",
+      "rejection": {
+        "at": "2026-09-06T09:06:22.155Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-49e8ae6b958b21d6",
       "slug": "attacken-aus-dem-ausland-jedes-funfte-unternehmen-fuhlt-sich-bedroht-8b21d6",
@@ -159,21 +1693,22 @@
       "first_seen": "2026-09-06T08:20:46.000Z",
       "last_updated": "2026-09-06T08:20:46.000Z",
       "topic": [
-        "Gesellschaft"
+        "Gesellschaft",
+        "Wirtschaft"
       ],
       "sources": [
         {
           "source_id": "mdr-nachrichten",
           "publisher": "MDR",
           "url": "https://www.mdr.de/nachrichten/deutschland/politik/drohnenabwehr-158.html",
-          "title": "Drohnen-Vorfall am Flughafen Leipzig/Halle: Bundesregierung will Drohnenabwehr ausbauen",
+          "title": "Nach Drohnen-Vorfall: Bundesregierung will Drohnenabwehr ausbauen",
           "summary": "Bundesinnenminister Alexander Dobrindt will nach dem gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle einen umfassenden Schutzschirm gegen Drohnen-Angriffe aufstellen.",
           "source_type": "media_rss",
           "published_at": "2026-09-06T08:20:46.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Gesellschaft",
-          "content_hash": "2ed7d703fb67a9a9d0d28e1628007442c4c788bb507d640d65bbc23e16c5da86",
+          "content_hash": "b0ba3666e8d2ba9c11e94c26cc94572e6dbef9db89f3e7422c246ea6c1a84824",
           "source_item_id": "18b415c492c3d3b55c24d5e4d7ea66b6bcdd3bfbb741d637ff6fada8c458323a",
           "publisher_id": "mdr",
           "publisher_kind": "public_broadcasting",
@@ -186,7 +1721,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T08:20:46.000Z",
-          "ingested_at": "2026-09-06T08:36:36.761Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -219,11 +1754,44 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T07:57:26.000Z",
-          "ingested_at": "2026-09-06T08:36:36.761Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
             "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/nach-gescheitertem-anschlag-in-leipzig-bundesregierung-will-die-drohnenabwehr-ausbauen-16021896.html",
+          "title": "Nach gescheitertem Anschlag in Leipzig: Bundesregierung will die Drohnenabwehr ausbauen",
+          "summary": "Innenminister Dobrindt erwartet zunehmende hybride Angriffe und will ihre Abwehr etwa durch einen Schutzschirm ausbauen. Die Abwehr soll auch durch Unternehmen der kritischen Infrastruktur erfolgen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T05:56:51.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a4362b752945369ab0ca49eaf3c182186e81ac351c130fa920bf6081a2c8e24e",
+          "source_item_id": "0824ebb8f7d90ef45ea4fbf2939b5bb3020ebfb0a6367c2b08cb66a2d293f695",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T05:56:51.000Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
@@ -233,7 +1801,7 @@
         {
           "claim_id": "wt-b7c356fdc686f6f2-claim-01",
           "story_id": "wt-b7c356fdc686f6f2",
-          "claim": "Drohnen-Vorfall am Flughafen Leipzig/Halle: Bundesregierung will Drohnenabwehr ausbauen: Bundesinnenminister Alexander Dobrindt will nach dem gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle einen umfassenden Schutzschirm gegen Drohnen-Angriffe aufstellen.",
+          "claim": "Nach Drohnen-Vorfall: Bundesregierung will Drohnenabwehr ausbauen: Bundesinnenminister Alexander Dobrindt will nach dem gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle einen umfassenden Schutzschirm gegen Drohnen-Angriffe aufstellen.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "mdr-nachrichten",
           "source_function": "journalistic_report",
@@ -248,7 +1816,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:36:36.761Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-b7c356fdc686f6f2-claim-02",
@@ -268,24 +1836,42 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:36:36.761Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
+        },
+        {
+          "claim_id": "wt-b7c356fdc686f6f2-claim-03",
+          "story_id": "wt-b7c356fdc686f6f2",
+          "claim": "Nach gescheitertem Anschlag in Leipzig: Bundesregierung will die Drohnenabwehr ausbauen: Innenminister Dobrindt erwartet zunehmende hybride Angriffe und will ihre Abwehr etwa durch einen Schutzschirm ausbauen. Die Abwehr soll auch durch Unternehmen der kritischen Infrastruktur erfolgen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T09:21:21.365Z"
         }
       ],
-      "content_hash": "dad29161e43b5d19ab341c3a9397dccac981c2757a20ab271e9ca1d4179fd1a6",
+      "content_hash": "9d9492a7e685a78a56f4c1273c108bdded7321299cc9b24f5d693cbda7f0f3e5",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_PUBLICATION_RECOMMENDATION_INVALID",
-        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment",
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-06T08:51:36.761Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-06T09:51:21.365Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T08:36:36.761Z",
+      "updated_at": "2026-09-06T09:21:21.365Z",
       "event_first_seen_at": "2026-09-06T08:36:36.761Z",
       "event_detected_at": "2026-09-06T08:36:36.761Z",
       "event_id": "event-e43611c7b733caf8ee2c",
@@ -299,7 +1885,8 @@
         "internal_relevance_score": 32,
         "public_relevance": "mittel",
         "topics": [
-          "Gesellschaft"
+          "Gesellschaft",
+          "Wirtschaft"
         ],
         "dimensions": [],
         "status": "angekündigt",
@@ -308,7 +1895,7 @@
         "context_formats": [],
         "context_only": false,
         "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
         ],
         "materiality_factors": [
           "Zahl und Art möglicher Wirkungsempfänger",
@@ -318,21 +1905,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 15.846016666666667,
+        "source_age_minutes": 60.589416666666665,
         "detection_delay_minutes": 15.846016666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 44.7434,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 87,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T08:36:36.761Z",
-        "fingerprint": "0606a7d7f31987d508cd7ce6759c2f1cee36543bac54133821b9f03ee5c29720",
+        "checked_at": "2026-09-06T09:21:21.365Z",
+        "fingerprint": "e454098e631eb35a5ca30c43bc16941c37fa77e144950179ba12dd53e734f482",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -3025,7 +4612,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T18:32:23.000Z",
-          "ingested_at": "2026-09-06T08:36:36.761Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3058,7 +4645,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:57:00.000Z",
-          "ingested_at": "2026-09-06T08:36:36.761Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3091,7 +4678,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:36:00.000Z",
-          "ingested_at": "2026-09-06T08:36:36.761Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3120,7 +4707,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -3140,7 +4727,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -3160,7 +4747,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -3180,7 +4767,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -3200,7 +4787,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -3220,7 +4807,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -3240,7 +4827,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -3260,7 +4847,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -3280,7 +4867,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -3300,7 +4887,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -3320,7 +4907,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -3340,7 +4927,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -3360,7 +4947,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -3380,7 +4967,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -3400,7 +4987,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -3420,7 +5007,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -3440,7 +5027,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -3460,7 +5047,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -3480,7 +5067,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -3500,7 +5087,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -3520,7 +5107,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         }
       ],
       "content_hash": "7d76672bcb27aaf77e2849949310f833c46b9022fde6cc538f22ff0ead56a4b3",
@@ -3536,7 +5123,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T08:42:28.684Z",
+      "updated_at": "2026-09-06T09:21:21.365Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -3579,20 +5166,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 84.47806666666666,
+        "source_age_minutes": 123.35608333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2990.75875,
+        "queue_age_minutes": 3029.6367666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 82,
+        "news_freshness_score": 74,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T08:42:28.684Z",
+        "checked_at": "2026-09-06T09:21:21.365Z",
         "fingerprint": "c0666f4f3b1c5b3bc5aa2f6a4e52eb5f4b33eb4b0b9f4718c139c795c4d4179b",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
@@ -5877,581 +7464,6 @@
         "template_version": "woek-title-3-glass",
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T05:36:07.920Z",
-        "status": "generated"
-      }
-    },
-    {
-      "story_id": "wt-3d9354235ee08f8f",
-      "slug": "iran-krieg-us-militar-angegriffener-iranischer-oltanker-versenkt-e08f8f",
-      "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
-      "first_seen": "2026-09-06T02:15:41.000Z",
-      "last_updated": "2026-09-06T05:34:38.212Z",
-      "published_at": "2026-09-06T05:34:38.212Z",
-      "updated_at": "2026-09-06T05:34:38.212Z",
-      "topic": [
-        "Geopolitik",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16021839.html",
-          "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
-          "summary": "Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Eines der Schiffe liegt laut US-Militär nun am Meeresgrund.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T02:15:41.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "4022f4b5104538b3b63c71e37f84b40dc490555943f2f112dfcae6603cee9fca",
-          "source_item_id": "aa5780b0091a0763bd208685cf7993b4304ed2a7ac3620b0e5eb087bca30b21d",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T02:15:41.000Z",
-          "ingested_at": "2026-09-06T05:21:43.058Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/iran-krieg--us-militaer--angegriffener-iranischer-oeltanker-versenkt-38212054.html",
-          "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
-          "summary": "Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Eines der Schiffe liegt laut US-Militär nun am Meeresgrund.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T02:14:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "38c242edd9850880679d3cb8d500e2a1b2d7b98da2206460daabe9190fb27222",
-          "source_item_id": "b4d04a17938030f20b32d5275d89f6c2c708eed1025d008026d54aeb473539a4",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T02:14:28.000Z",
-          "ingested_at": "2026-09-06T03:06:22.960Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-          "title": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt",
-          "summary": "Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T05:18:36.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "d26727e526551155230658acd1ce4e459ba4dc8cfdec6606a86a9a5fff1ef8a5",
-          "source_item_id": "f19b81892466964d367fd54c83b09b5d653ff4644a3889ab4ae56e74bd623ca1",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T05:18:36.000Z",
-          "ingested_at": "2026-09-06T05:21:43.058Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-3d9354235ee08f8f-v1-claim-1",
-          "story_id": "wt-3d9354235ee08f8f",
-          "claim": "Nach amerikanischen Angaben hat das US-Militär im Golf von Oman einen angegriffenen iranischen Öltanker versenkt.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-              "excerpt_hash": "ffc8b1bc51c5eac129c0",
-              "checked_at": "2026-09-06T05:34:38.212Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-              "excerpt_hash": "c85c9447fe4766542eee",
-              "checked_at": "2026-09-06T05:34:38.212Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-              "excerpt_hash": "ba27a8279d0e8315016b",
-              "checked_at": "2026-09-06T05:34:38.212Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-06T05:34:38.212Z"
-        },
-        {
-          "claim_id": "wt-3d9354235ee08f8f-v1-claim-2",
-          "story_id": "wt-3d9354235ee08f8f",
-          "claim": "Das US-Militär stellt die Aktion als Reaktion auf einen iranischen Angriff dar und nennt insgesamt drei angegriffene iranische Tanker.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-              "excerpt_hash": "e81ec854cdff558842aa",
-              "checked_at": "2026-09-06T05:34:38.212Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-              "excerpt_hash": "1d64bf51d713b7bbd419",
-              "checked_at": "2026-09-06T05:34:38.212Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-06T05:34:38.212Z"
-        },
-        {
-          "claim_id": "wt-3d9354235ee08f8f-v1-claim-3",
-          "story_id": "wt-3d9354235ee08f8f",
-          "claim": "Der Tanker soll zum Zeitpunkt der Attacke kein Öl geladen gehabt haben.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-              "excerpt_hash": "e81ec854cdff558842aa",
-              "checked_at": "2026-09-06T05:34:38.212Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-06T05:34:38.212Z"
-        }
-      ],
-      "event_id": "event-1b58b224158d7561b786",
-      "event_first_seen_at": "2026-09-06T02:36:16.895Z",
-      "event_detected_at": "2026-09-06T02:36:16.895Z",
-      "verification_started_at": "2026-09-06T05:34:27.865Z",
-      "publish_ready_at": "2026-09-06T05:34:38.212Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "tagesspiegel-home",
-            "stern-schlagzeilen"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T05:34:08.658Z",
-        "fingerprint": "b2825facb99f37da3a612cad7477a4a9996e765d5c693defa699d312ab754322",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "followups": [
-        {
-          "claim": "Ob weitere US- oder iranische Militärangaben den Vorfall bestätigen oder präzisieren.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue belastbare Angaben zu Ort, Zeit, Ziel und Folgen des Angriffs",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-ad86726168c48a73",
-          "announced_at": "2026-09-06T05:18:36.000Z",
-          "follow_up_date": "2026-09-13T05:34:38.212Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "4199140a84fab7a045994245c09e8690da69589d4d9b8086798f3fcce2bd4fcd",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "source_summary": "Mehrere Medien melden übereinstimmend, dass das US-Militär einen iranischen Öltanker im Golf von Oman angegriffen und versenkt haben soll. Deutschlandfunk verweist dabei auf Angaben des zuständigen Regionalkommandos Centcom auf X und ergänzt, der Tanker sei zum Zeitpunkt der Attacke nicht mit Öl beladen gewesen.\n\nDie Berichte ordnen den Angriff als Reaktion auf einen iranischen Angriff ein. Zugleich heißt es, das US-Militär habe bereits zuvor mitgeteilt, insgesamt drei iranische Öltanker angegriffen zu haben; iranische Medien stellten dagegen dar, die US-Schiffe seien zur Flucht gezwungen worden. Unklar bleibt in den gelieferten Texten, wie der Vorfall unabhängig verifiziert werden kann und welche unmittelbaren Folgen er hat.",
-      "analysis": {
-        "story_id": "wt-3d9354235ee08f8f",
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "US-Militärangaben zufolge ist im Golf von Oman ein iranischer Öltanker nach einem Angriff gesunken. Die Berichte lassen offen, wie unabhängig der Vorfall bestätigt ist und wie sich die Lage weiter entwickelt.",
-        "detail_summary": "Gesichert aus den gelieferten Quellen ist vor allem die militärische Behauptung, ein angegriffener iranischer Öltanker sei im Golf von Oman gesunken. Die Meldung ist relevant, weil sie einen direkten militärischen Eingriff im Seegebiet und damit einen möglichen Eskalationsschritt im Iran-Konflikt beschreibt. Der Wirkpfad liegt weniger in einer unmittelbaren Binnenwirkung als in möglichen Folgen für Schifffahrt, Sicherheitslage, Versicherungsrisiken und weitere militärische Reaktionen. Als mögliche Folge kommen zusätzliche Zwischenfälle oder eine verschärfte Lage im Seeverkehr in Betracht. Die Evidenz bleibt aber begrenzt: In den gelieferten Texten dominieren sekundäre Berichte und die US-Darstellung; eine unabhängige Bestätigung des Vorfalls selbst fehlt hier.",
-        "why_relevant": "Die Meldung beschreibt einen militärischen Angriff auf ein ziviles oder zivil nutzbares Schiff in einer strategisch wichtigen Seeroute. Das kann Sicherheitslage, Risikoprämien und weitere Reaktionen beeinflussen.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "monitoring",
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell Schifffahrt, Besatzungen und Sicherheitslage in einer strategischen Route; mögliche Eskalationsfolgen reichen über den Einzelfall hinaus."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Ein Tankerangriff kann Umwelt- und Havarierisiken erhöhen; im gelieferten Material ist aber kein Ölaustritt oder Schaden an der Umwelt belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Vorfall betrifft sicherheits- und außenpolitische Entscheidungen, aber in den Quellen ist keine direkte demokratische Entscheidungsänderung belegt."
-        },
-        "importance": "hoch",
-        "impact_potential": "Ein bestätigter Angriff auf einen Tanker kann militärische Gegenschritte, höhere Sicherheitskosten und Störungen im Seeverkehr auslösen.",
-        "impact_risks": [
-          "Weitere Eskalation zwischen den Konfliktparteien",
-          "Erhöhte Risiken für Handelsschiffe und Versicherungen",
-          "Mögliche Verunsicherung an Rohstoff- und Transportmärkten"
-        ],
-        "mechanisms": [
-          "Direkter militärischer Zwang gegen Schifffahrt",
-          "Signalwirkung für weitere Angriffe oder Abschreckung",
-          "Erhöhte wahrgenommene Unsicherheit in einer strategischen Seeroute"
-        ],
-        "first_order": [
-          "Beschädigung oder Versenkung eines einzelnen Schiffes",
-          "Unmittelbare Gefährdung von Besatzung und Fahrtbetrieb"
-        ],
-        "second_order": [
-          "Veränderte Sicherheitsmaßnahmen für Schifffahrt",
-          "Steigende Prämien und Umwege im maritimen Verkehr"
-        ],
-        "third_order": [
-          "Mögliche Verschiebung regionaler Eskalationsmuster",
-          "Dauerhafte Risikoneubewertung für die Route"
-        ],
-        "systemic_relevance": "Die Meldung hat Systemrelevanz, weil der Golf von Oman eine wichtige Route für Energie- und Güterverkehr ist und militärische Vorfälle dort über den Einzelfall hinaus wirken können.",
-        "transformation_potential": "Kein Transformationsereignis, aber ein möglicher Katalysator für veränderte Sicherheits- und Routenentscheidungen im Seeverkehr.",
-        "resilience": "Die Widerstandsfähigkeit hängt davon ab, ob Schifffahrt, Staaten und Versicherer kurzfristig auf die Lage reagieren; die Quellenlage reicht für eine Bewertung nur begrenzt.",
-        "side_effects": [
-          "Mögliche Verstärkung von Misstrauen und Gegendarstellungen",
-          "Mehr Nachrichten- und Marktvolatilität rund um die Route"
-        ],
-        "uncertainties": [
-          "Unabhängige Bestätigung des Angriffs fehlt in den gelieferten Quellen",
-          "Unklar bleibt der tatsächliche Schaden am Schiff und die Lage der Besatzung",
-          "Die Gegendarstellung iranischer Medien wird nicht aufgelöst"
-        ],
-        "evidence_level": "medium",
-        "attribution": "Die Formulierung stammt aus Berichten, die US-Militärangaben wiedergeben; der Originalton des Militärs ist in den Auszügen nur indirekt belegt.",
-        "watch_next": [
-          "Weitere amtliche oder unabhängige Bestätigungen des Vorfalls",
-          "Angaben zu Schaden, Ladung und Besatzung",
-          "Mögliche Reaktionen der betroffenen Staaten"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 16, SDG 14"
-        ],
-        "publication_gate": {
-          "news_value": "new_evidence",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "primary_source_with_caveats",
-          "duplicate_status": "new_story",
-          "rationale": "Neue militärische Angabe zu einem Tankerangriff mit möglicher Bedeutung für regionale Sicherheit, Handel und Eskalationsdynamik; die Meldung ist nicht bloß Routine."
-        },
-        "publication_recommendation": true,
-        "visuals": null,
-        "media_impact": null,
-        "media_analysis_version": "2.0",
-        "media_checked_at": "2026-09-06T05:34:08.658Z",
-        "media_trigger_fingerprint": "dbfa4def7be084dfd6bbf16ddc73fc81f24bca5a7c3996c38762987184f8be67",
-        "media_trigger": {
-          "relevant": false,
-          "level": "low",
-          "score": 0,
-          "reasons": [],
-          "matched_terms": [],
-          "source_count": 3,
-          "comparable_source_count": 3,
-          "fingerprint": "dbfa4def7be084dfd6bbf16ddc73fc81f24bca5a7c3996c38762987184f8be67",
-          "content_fingerprint": "4b8ac35a1950b9b296f734357ab85dbc04e71dcb45f42635b4083c4f707a4402",
-          "basis": "controlled_source_text",
-          "version": "2.0"
-        }
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-06T05:34:38.212Z",
-          "content_hash": "4199140a84fab7a045994245c09e8690da69589d4d9b8086798f3fcce2bd4fcd",
-          "source_summary": "Mehrere Medien melden übereinstimmend, dass das US-Militär einen iranischen Öltanker im Golf von Oman angegriffen und versenkt haben soll. Deutschlandfunk verweist dabei auf Angaben des zuständigen Regionalkommandos Centcom auf X und ergänzt, der Tanker sei zum Zeitpunkt der Attacke nicht mit Öl beladen gewesen.\n\nDie Berichte ordnen den Angriff als Reaktion auf einen iranischen Angriff ein. Zugleich heißt es, das US-Militär habe bereits zuvor mitgeteilt, insgesamt drei iranische Öltanker angegriffen zu haben; iranische Medien stellten dagegen dar, die US-Schiffe seien zur Flucht gezwungen worden. Unklar bleibt in den gelieferten Texten, wie der Vorfall unabhängig verifiziert werden kann und welche unmittelbaren Folgen er hat.",
-          "analysis": {
-            "story_id": "wt-3d9354235ee08f8f",
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "US-Militärangaben zufolge ist im Golf von Oman ein iranischer Öltanker nach einem Angriff gesunken. Die Berichte lassen offen, wie unabhängig der Vorfall bestätigt ist und wie sich die Lage weiter entwickelt.",
-            "detail_summary": "Gesichert aus den gelieferten Quellen ist vor allem die militärische Behauptung, ein angegriffener iranischer Öltanker sei im Golf von Oman gesunken. Die Meldung ist relevant, weil sie einen direkten militärischen Eingriff im Seegebiet und damit einen möglichen Eskalationsschritt im Iran-Konflikt beschreibt. Der Wirkpfad liegt weniger in einer unmittelbaren Binnenwirkung als in möglichen Folgen für Schifffahrt, Sicherheitslage, Versicherungsrisiken und weitere militärische Reaktionen. Als mögliche Folge kommen zusätzliche Zwischenfälle oder eine verschärfte Lage im Seeverkehr in Betracht. Die Evidenz bleibt aber begrenzt: In den gelieferten Texten dominieren sekundäre Berichte und die US-Darstellung; eine unabhängige Bestätigung des Vorfalls selbst fehlt hier.",
-            "why_relevant": "Die Meldung beschreibt einen militärischen Angriff auf ein ziviles oder zivil nutzbares Schiff in einer strategisch wichtigen Seeroute. Das kann Sicherheitslage, Risikoprämien und weitere Reaktionen beeinflussen.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "monitoring",
-            "human": {
-              "relevance": "hoch",
-              "rationale": "Betroffen sind potenziell Schifffahrt, Besatzungen und Sicherheitslage in einer strategischen Route; mögliche Eskalationsfolgen reichen über den Einzelfall hinaus."
-            },
-            "planet": {
-              "relevance": "mittel",
-              "rationale": "Ein Tankerangriff kann Umwelt- und Havarierisiken erhöhen; im gelieferten Material ist aber kein Ölaustritt oder Schaden an der Umwelt belegt."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "rationale": "Der Vorfall betrifft sicherheits- und außenpolitische Entscheidungen, aber in den Quellen ist keine direkte demokratische Entscheidungsänderung belegt."
-            },
-            "importance": "hoch",
-            "impact_potential": "Ein bestätigter Angriff auf einen Tanker kann militärische Gegenschritte, höhere Sicherheitskosten und Störungen im Seeverkehr auslösen.",
-            "impact_risks": [
-              "Weitere Eskalation zwischen den Konfliktparteien",
-              "Erhöhte Risiken für Handelsschiffe und Versicherungen",
-              "Mögliche Verunsicherung an Rohstoff- und Transportmärkten"
-            ],
-            "mechanisms": [
-              "Direkter militärischer Zwang gegen Schifffahrt",
-              "Signalwirkung für weitere Angriffe oder Abschreckung",
-              "Erhöhte wahrgenommene Unsicherheit in einer strategischen Seeroute"
-            ],
-            "first_order": [
-              "Beschädigung oder Versenkung eines einzelnen Schiffes",
-              "Unmittelbare Gefährdung von Besatzung und Fahrtbetrieb"
-            ],
-            "second_order": [
-              "Veränderte Sicherheitsmaßnahmen für Schifffahrt",
-              "Steigende Prämien und Umwege im maritimen Verkehr"
-            ],
-            "third_order": [
-              "Mögliche Verschiebung regionaler Eskalationsmuster",
-              "Dauerhafte Risikoneubewertung für die Route"
-            ],
-            "systemic_relevance": "Die Meldung hat Systemrelevanz, weil der Golf von Oman eine wichtige Route für Energie- und Güterverkehr ist und militärische Vorfälle dort über den Einzelfall hinaus wirken können.",
-            "transformation_potential": "Kein Transformationsereignis, aber ein möglicher Katalysator für veränderte Sicherheits- und Routenentscheidungen im Seeverkehr.",
-            "resilience": "Die Widerstandsfähigkeit hängt davon ab, ob Schifffahrt, Staaten und Versicherer kurzfristig auf die Lage reagieren; die Quellenlage reicht für eine Bewertung nur begrenzt.",
-            "side_effects": [
-              "Mögliche Verstärkung von Misstrauen und Gegendarstellungen",
-              "Mehr Nachrichten- und Marktvolatilität rund um die Route"
-            ],
-            "uncertainties": [
-              "Unabhängige Bestätigung des Angriffs fehlt in den gelieferten Quellen",
-              "Unklar bleibt der tatsächliche Schaden am Schiff und die Lage der Besatzung",
-              "Die Gegendarstellung iranischer Medien wird nicht aufgelöst"
-            ],
-            "evidence_level": "medium",
-            "attribution": "Die Formulierung stammt aus Berichten, die US-Militärangaben wiedergeben; der Originalton des Militärs ist in den Auszügen nur indirekt belegt.",
-            "watch_next": [
-              "Weitere amtliche oder unabhängige Bestätigungen des Vorfalls",
-              "Angaben zu Schaden, Ladung und Besatzung",
-              "Mögliche Reaktionen der betroffenen Staaten"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 16, SDG 14"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "primary_source_with_caveats",
-              "duplicate_status": "new_story",
-              "rationale": "Neue militärische Angabe zu einem Tankerangriff mit möglicher Bedeutung für regionale Sicherheit, Handel und Eskalationsdynamik; die Meldung ist nicht bloß Routine."
-            },
-            "publication_recommendation": true,
-            "visuals": null,
-            "media_impact": null,
-            "media_analysis_version": "2.0",
-            "media_checked_at": "2026-09-06T05:34:08.658Z",
-            "media_trigger_fingerprint": "dbfa4def7be084dfd6bbf16ddc73fc81f24bca5a7c3996c38762987184f8be67",
-            "media_trigger": {
-              "relevant": false,
-              "level": "low",
-              "score": 0,
-              "reasons": [],
-              "matched_terms": [],
-              "source_count": 3,
-              "comparable_source_count": 3,
-              "fingerprint": "dbfa4def7be084dfd6bbf16ddc73fc81f24bca5a7c3996c38762987184f8be67",
-              "content_fingerprint": "4b8ac35a1950b9b296f734357ab85dbc04e71dcb45f42635b4083c4f707a4402",
-              "basis": "controlled_source_text",
-              "version": "2.0"
-            }
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-3d9354235ee08f8f-v1-claim-1",
-              "story_id": "wt-3d9354235ee08f8f",
-              "claim": "Nach amerikanischen Angaben hat das US-Militär im Golf von Oman einen angegriffenen iranischen Öltanker versenkt.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-                  "excerpt_hash": "ffc8b1bc51c5eac129c0",
-                  "checked_at": "2026-09-06T05:34:38.212Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-                  "excerpt_hash": "c85c9447fe4766542eee",
-                  "checked_at": "2026-09-06T05:34:38.212Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-                  "excerpt_hash": "ba27a8279d0e8315016b",
-                  "checked_at": "2026-09-06T05:34:38.212Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-06T05:34:38.212Z"
-            },
-            {
-              "claim_id": "wt-3d9354235ee08f8f-v1-claim-2",
-              "story_id": "wt-3d9354235ee08f8f",
-              "claim": "Das US-Militär stellt die Aktion als Reaktion auf einen iranischen Angriff dar und nennt insgesamt drei angegriffene iranische Tanker.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-                  "excerpt_hash": "e81ec854cdff558842aa",
-                  "checked_at": "2026-09-06T05:34:38.212Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-                  "excerpt_hash": "1d64bf51d713b7bbd419",
-                  "checked_at": "2026-09-06T05:34:38.212Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-06T05:34:38.212Z"
-            },
-            {
-              "claim_id": "wt-3d9354235ee08f8f-v1-claim-3",
-              "story_id": "wt-3d9354235ee08f8f",
-              "claim": "Der Tanker soll zum Zeitpunkt der Attacke kein Öl geladen gehabt haben.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-                  "excerpt_hash": "e81ec854cdff558842aa",
-                  "checked_at": "2026-09-06T05:34:38.212Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-06T05:34:38.212Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "tagesspiegel-home",
-              "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16021839.html",
-              "content_hash": "4022f4b5104538b3b63c71e37f84b40dc490555943f2f112dfcae6603cee9fca"
-            },
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/politik/ausland/iran-krieg--us-militaer--angegriffener-iranischer-oeltanker-versenkt-38212054.html",
-              "content_hash": "38c242edd9850880679d3cb8d500e2a1b2d7b98da2206460daabe9190fb27222"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-              "content_hash": "d26727e526551155230658acd1ce4e459ba4dc8cfdec6606a86a9a5fff1ef8a5"
-            }
-          ]
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-06T05:34:38.212Z",
-          "source_count": 3
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-82f3c286735c51a4-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "82f3c286735c51a4d4a9c9151288a3350e78784d1f6274d8debfcc650cc684cc"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-093aa6e5083e4866-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "093aa6e5083e4866c9aec6040694b5c8555ef12da83c7404bf6b69068704e7f7"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-97e4b4696d568490-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "97e4b4696d568490db9e7aeaa3a46579433a5a6e774e753b995eb7fd5cf0bd09"
-        },
-        "source_visual": null,
-        "fingerprint": "7ccb900006691b16c93888467cd2e6e3d84787db3d749301c5a2a580816b6640",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-06T05:36:00.002Z",
         "status": "generated"
       }
     },
@@ -61290,7 +62302,7 @@
             "title": "Liveblog Strom-Sabotage: Suche nach Tatverdächtigem",
             "summary": "Die Polizei hat Fotos des Tatverdächtigen um die Sabotageversuche an der Stromversorgung veröffentlicht. Alle Infos im Blog.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T08:19:02.000Z",
+            "published_at": "2026-09-06T08:56:13.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
@@ -61306,8 +62318,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T08:19:02.000Z",
-            "ingested_at": "2026-09-06T08:36:36.761Z",
+            "source_published_at": "2026-09-06T08:56:13.000Z",
+            "ingested_at": "2026-09-06T09:06:22.155Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -61330,7 +62342,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-06T08:42:28.684Z",
+          "checked_at": "2026-09-06T09:21:21.365Z",
           "fingerprint": "4859907217abb38878f583104d44f9a91d08c8eed99ba2c5d063d5e14f7f4603",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -125983,7 +126995,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T08:42:28.684Z"
+          "checked_at": "2026-09-06T09:21:21.365Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -125998,7 +127010,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T08:42:28.684Z",
+      "updated_at": "2026-09-06T09:21:21.365Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -126034,11 +127046,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3979.4780666666666,
+        "source_age_minutes": 4018.356083333333,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3501.1945666666666,
+        "queue_age_minutes": 3540.072583333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -126047,7 +127059,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T08:42:28.684Z",
+        "checked_at": "2026-09-06T09:21:21.365Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
@@ -136080,5 +137092,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-06T07:16:30.989Z"
+  "public_updated_at": "2026-09-06T09:06:22.155Z"
 }
