@@ -3,6 +3,8 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
+// Optional prefixes let partial content builds use the shared navigation rules.
+const prefixes = process.argv.slice(2).filter(arg => arg.startsWith("--prefix=")).map(arg => arg.slice(9));
 const navigation = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
 const footerTemplate = fs.readFileSync(path.join(ROOT, "templates/footer.html"), "utf8");
 
@@ -66,6 +68,7 @@ function footerFiles() {
 
   return output
     .split("\n")
+    .filter((file) => !prefixes.length || prefixes.some(prefix => file.startsWith(prefix)))
     .map((file) => path.join(ROOT, file))
     .filter((file) => {
       const relative = toPosixRelative(file);

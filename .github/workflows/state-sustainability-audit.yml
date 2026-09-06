@@ -77,6 +77,13 @@ jobs:
           node scripts/quellenarchiv/build-quellenarchiv-pages.mjs
           node scripts/quellenarchiv/check-quellenarchiv-quality.mjs
           python tools/apply_nwi_disambiguation.py
+          # Finish partial projections with the same current content/navigation rules as the full build.
+          node scripts/site/build-methodik-explainer.mjs
+          node scripts/site/apply-state-benchmark-update.mjs
+          node scripts/site/apply-model-definition-update.mjs
+          node scripts/site/normalize-site-header.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html
+          node scripts/site/normalize-site-footer.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html
+          node scripts/quality/normalize-publication-typography.mjs . --tracked
           node scripts/quality/sync-sitemap-indexability.mjs
           npm run build:search
           npm run taxonomy:build
@@ -125,6 +132,13 @@ jobs:
           node scripts/quellenarchiv/build-quellenarchiv-pages.mjs
           node scripts/quellenarchiv/check-quellenarchiv-quality.mjs
           python tools/apply_nwi_disambiguation.py
+          # Finish partial projections with the same current content/navigation rules as the full build.
+          node scripts/site/build-methodik-explainer.mjs
+          node scripts/site/apply-state-benchmark-update.mjs
+          node scripts/site/apply-model-definition-update.mjs
+          node scripts/site/normalize-site-header.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html
+          node scripts/site/normalize-site-footer.mjs --prefix=begriffe/ --prefix=quellenarchiv/ --prefix=methodik/index.html
+          node scripts/quality/normalize-publication-typography.mjs . --tracked
           node scripts/quality/sync-sitemap-indexability.mjs
           npm run build:search
           npm run taxonomy:build
