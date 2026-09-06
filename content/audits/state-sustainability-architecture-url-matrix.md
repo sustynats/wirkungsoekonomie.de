@@ -3685,6 +3685,9 @@ Signals are review candidates, not automatic errors.
 - `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/inflationsrate-im-august-2026-voraussichtlich-2-9-322ccb/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `begriffe/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/affektheuristik/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/algorithmische-fairness/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3857,9 +3860,6 @@ Signals are review candidates, not automatic errors.
 - `quellenarchiv/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0465/index.html` — novelty_or_absence — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0843/index.html` — wirkungsblind — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
-- `wirkungsticker/inflationsrate-im-august-2026-voraussichtlich-2-9-322ccb/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 
 ## Recursive non-HTML publication/support surfaces
 
