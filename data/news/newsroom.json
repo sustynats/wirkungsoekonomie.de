@@ -297442,7 +297442,7 @@
           "time_sensitive": false,
           "findings": []
         },
-        "internal_relevance_score": 36,
+        "internal_relevance_score": 30,
         "public_relevance": "mittel",
         "topics": [
           "Geopolitik",
@@ -509015,7 +509015,152 @@
         "missing_claim_numbers": []
       },
       "rationale": "Die Meldung ist durch die spätere, bereits veröffentlichte Entwarnung zur gleichen Bombenräumung überholt."
+    },
+    {
+      "at": "2026-09-06T20:36:04.093Z",
+      "story_id": "wt-4508f36323f93362",
+      "event_id": "event-87a4afb9eaf3c9eabc61",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "tagesschau-access",
+          "url": "https://www.tagesschau.de/newsticker/liveblog-landtagswahl-sachsen-anhalt-100.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T20:36:04.093Z",
+      "story_id": "wt-d27dd752894cda57",
+      "event_id": "event-b2f17e282fe9266795c0",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "not_material",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "diagnostics": {
+        "publication_depth": null,
+        "publication_decision_type": "boolean",
+        "publication_decision_value": "false",
+        "media_public_explanation_words": 0,
+        "source_summary_words": 0,
+        "source_summary_paragraphs": 0,
+        "missing_claim_numbers": []
+      },
+      "rationale": "Die Quelle berichtet vor allem eine zugeschriebene Kompromissforderung und Selenskyjs pessimistische Einschätzung, aber keine verifizierte Entscheidung, Maßnahme oder materielle Zustandsänderung."
+    },
+    {
+      "at": "2026-09-06T20:36:04.093Z",
+      "story_id": "wt-12efa7314252df32",
+      "event_id": "event-ad5cdce3760999850643",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "insufficient_evidence",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "diagnostics": {
+        "publication_depth": null,
+        "publication_decision_type": "boolean",
+        "publication_decision_value": "false",
+        "media_public_explanation_words": 0,
+        "source_summary_words": 0,
+        "source_summary_paragraphs": 0,
+        "missing_claim_numbers": []
+      },
+      "rationale": "Nur eine sekundäre Quelle ohne unabhängige Bestätigung; zentrale Tatsachen zum Hackerangriff und zu Folgen sind im gelieferten Material nicht tragfähig belegt."
+    },
+    {
+      "at": "2026-09-06T20:36:04.093Z",
+      "story_id": "wt-91da7c9941f7f856",
+      "event_id": "event-82bf346adb8a24e55ef4",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "not_material",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "diagnostics": {
+        "publication_depth": null,
+        "publication_decision_type": "boolean",
+        "publication_decision_value": "false",
+        "media_public_explanation_words": 0,
+        "source_summary_words": 0,
+        "source_summary_paragraphs": 0,
+        "missing_claim_numbers": []
+      },
+      "rationale": "Die Quelle enthält nur eine allgemeine politische Einordnung von Bärbel Bas ohne belastbare neue Zustandsänderung, Entscheidung oder materielle Folge."
+    },
+    {
+      "at": "2026-09-06T20:36:04.093Z",
+      "story_id": "wt-87ebe1e0fe25f708",
+      "event_id": "event-0127bc0ce640ab8ee7c2",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "diagnostics": {
+        "publication_depth": null,
+        "publication_decision_type": "boolean",
+        "publication_decision_value": "false",
+        "media_public_explanation_words": 0,
+        "source_summary_words": 0,
+        "source_summary_paragraphs": 0,
+        "missing_claim_numbers": []
+      },
+      "rationale": "Die Meldung wiederholt den bereits erfassten Stand: Die Suche am Hambacher Forst blieb erfolglos; keine neue materielle Entwicklung oder neue belastbare Evidenz gegenüber der Vorgeschichte."
+    },
+    {
+      "at": "2026-09-06T20:36:04.093Z",
+      "story_id": "wt-39a3ae40381778f1",
+      "event_id": "event-1edde11a4c0d2dd94112",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "insufficient_evidence",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "diagnostics": {
+        "publication_depth": null,
+        "publication_decision_type": "boolean",
+        "publication_decision_value": "false",
+        "media_public_explanation_words": 0,
+        "source_summary_words": 0,
+        "source_summary_paragraphs": 0,
+        "missing_claim_numbers": []
+      },
+      "rationale": "Nur eine journalistische Sekundärquelle ohne unabhängige Bestätigung; die zentrale Behauptung zur Zwecksetzung der Barriere bleibt im gelieferten Material nicht tragfähig belegt."
+    },
+    {
+      "at": "2026-09-06T20:36:04.093Z",
+      "story_id": "wt-b7c356fdc686f6f2",
+      "event_id": "event-e43611c7b733caf8ee2c",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "diagnostics": {
+        "publication_depth": "initial",
+        "publication_decision_type": "boolean",
+        "publication_decision_value": "true",
+        "media_public_explanation_words": 63,
+        "source_summary_words": 85,
+        "source_summary_paragraphs": 2,
+        "missing_claim_numbers": []
+      },
+      "rationale": "Neue Ankündigung zu Sicherheits- und Zuständigkeitsregeln für kritische Infrastruktur; materiell relevant wegen möglicher Strukturänderungen im Infrastrukturschutz."
     }
   ],
-  "updated_at": "2026-09-06T20:21:36.327Z"
+  "updated_at": "2026-09-06T20:36:04.093Z"
 }
