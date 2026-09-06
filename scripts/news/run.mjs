@@ -235,7 +235,14 @@ export function repartitionOversizedSourceQueues(stories, now) {
     const pending = story.pending_update || story;
     const sources = pending.sources || [];
     const reason = pending.reason || pending.pending_reason;
-    if (reason !== 'AI_INPUT_TOO_LARGE' && !(reason === 'SOURCE_INTEGRITY_OPEN' && sources.length > 12)) continue;
+    const queuedDraft = !story.published && (new Set([
+      'AI_BUDGET_OR_BATCH_LIMIT', 'AI_HOURLY_CALL_LIMIT', 'AI_PROVIDER_UNAVAILABLE',
+      'AI_DISABLED', 'AI_BUDGET_BLOCKED', 'AI_RUN_TIME_LIMIT', 'SOURCE_INTEGRITY_OPEN',
+    ]).has(reason) || shouldRetryQualityGate(reason, pending.quality_errors || [], 0));
+    // Old unpublished queues must obey the same direct-event rule as new
+    // arrivals, even below the input-size limit. Final editorial rejections and
+    // normal published files are not silently reopened or rewritten.
+    if (!queuedDraft && reason !== 'AI_INPUT_TOO_LARGE' && !(reason === 'SOURCE_INTEGRITY_OPEN' && sources.length > 12)) continue;
     const originalLead = story.sources?.[0];
     if (!originalLead || sources.length < 2) continue;
     const leading = sources.find(source => source.url === originalLead.url);

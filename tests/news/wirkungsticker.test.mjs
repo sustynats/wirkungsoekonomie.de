@@ -512,6 +512,14 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
   assert.ok(errors.some((error) => error.startsWith("AI_UNSUPPORTED_NUMBER")));
 });
 
+test('service explainers need a concrete new development before the paid news check', () => {
+  for (const title of ['Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?', 'Was Verbraucher über Stromtarife wissen müssen', 'Fragen und Antworten zur Pflegeversicherung']) {
+    assert.equal(classifyItem({title,summary:'Ein Überblick über bestehende Regeln.'},{}).context_only,true);
+    assert.equal(classifyItem({title,summary:'Der Bundestag hat heute eine bundesweite Reform beschlossen.'},{}).context_only,false);
+  }
+  assert.equal(classifyItem({title:'Warum das Gericht die neue Verordnung aufgehoben hat',summary:'Das Urteil ist heute ergangen.'},{}).context_only,false);
+});
+
 test("missing or malformed publication decisions retry; explicit rejection is never promoted", () => {
   for (const value of [undefined, null, "true", "false", 0, 1]) {
     const analysis = { ...validAnalysis(), publication_recommendation: value };
