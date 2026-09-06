@@ -1,7 +1,8 @@
 # Interaktiver Stadtvergleich – Bundestagswahl 2025
 
-Stand: 6. September 2026. Implementiert und lokal geprüft; die produktive
-Freischaltung ist noch nicht erfolgt. Keine Vercel-Ressourcen oder -Builds.
+Stand: 6. September 2026. Implementiert und lokal geprüft. Das produktive
+Backend ist aktualisiert; die Umfrage bleibt bis zur Website-Abnahme pausiert.
+Keine Vercel-Ressourcen oder -Builds.
 
 ## Architektur und Inhalt
 
@@ -113,9 +114,25 @@ Schema-2-Abstimmung für diese politische Experience freigeben.
   anschließend eigene Stimme gelöscht und Ergebnis wieder verborgen.
 - Produktive Umfragen wurden für diese Tests nicht verändert.
 
-Noch ausstehend: produktive Schema-Migration, neue Poll-ID, vollständiger
-Website-/Artefakt-Build, Such-/Portal-Synchronisierung, GitHub-Pages-Deployment
-und Live-Abnahme. Der lokale Testserver ist **kein** Veröffentlichungsnachweis.
+## Produktiver Backend-Prüfstand
+
+Am 6. September 2026: bestehendes Schema 2 konsistent gesichert, Poll-Modul
+separat unter `deploy-backups/wirkstadt-20260906/` aufbewahrt und Schema 3
+additiv migriert. 21 Store-/HTTP-/Feedback-Tests unter Node 22.23.1 sowie
+47 bestehende Backend-Tests, TypeScript-Lint und Build bestanden. Ein
+abgestimmter Dienstneustart; öffentlicher Health-Endpunkt und bestehende
+Feedback-Umfrage antworten mit HTTP 200, unauthentifizierter Adminzugriff mit
+403. Anzahl und Prüfsumme der vorhandenen echten Stimme blieben unverändert.
+Backup-Timer erfolgreich; zusätzliche konsistente Sicherung nach Migration.
+SSH-Regel, andere Anwendungen, Caddy und ENV blieben unverändert.
+
+Neue Poll-ID: `7f0dc2a0-05bb-4376-8b93-0e02febc2fb2`, stabiler Slug
+`stadtvergleich-bundestagswahl-2025`, Einwilligung erforderlich, keine
+Test-/Startstimmen, bis zur Frontend-Abnahme pausiert.
+
+Noch ausstehend: vollständiger Website-/Artefakt-Build, GitHub-Pages-Deployment,
+Aktivierung und Live-Abnahme. Der lokale Testserver ist **kein**
+Veröffentlichungsnachweis.
 
 Lokaler Teststart:
 
