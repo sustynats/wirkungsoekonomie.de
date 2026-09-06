@@ -33,7 +33,7 @@ test('schema-1 migration preserves votes while adding optional feedback and meta
   t.after(()=>rmSync(dir,{recursive:true}));
   let store=new PollStore({path:file,pepper}),p=store.create(seed),token=randomBytes(32).toString('hex');store.vote(p.slug,p.options[0].id,token);store.close();
   const old=new DatabaseSync(file);
-  old.exec('DROP TABLE poll_feedback; DROP INDEX votes_poll_identity; ALTER TABLE polls DROP COLUMN social_description; ALTER TABLE polls DROP COLUMN feedback_enabled; ALTER TABLE polls ADD COLUMN feedback_enabled INTEGER NOT NULL DEFAULT 0 CHECK(feedback_enabled=0); PRAGMA user_version=1;');old.close();
+  old.exec('DROP TABLE vote_withdrawals; ALTER TABLE votes DROP COLUMN consent_version; ALTER TABLE polls DROP COLUMN consent_required; DROP TABLE poll_feedback; DROP INDEX votes_poll_identity; ALTER TABLE polls DROP COLUMN social_description; ALTER TABLE polls DROP COLUMN feedback_enabled; ALTER TABLE polls ADD COLUMN feedback_enabled INTEGER NOT NULL DEFAULT 0 CHECK(feedback_enabled=0); PRAGMA user_version=1;');old.close();
   store=new PollStore({path:file,pepper});
-  try{assert.equal(store.results(store.get(p.id)).total,1);assert.equal(store.view(p.slug,token).voted,true);assert.equal(store.get(p.id).feedback_enabled,0);assert.equal(store.db.prepare('PRAGMA user_version').get().user_version,2);}finally{store.close();}
+  try{assert.equal(store.results(store.get(p.id)).total,1);assert.equal(store.view(p.slug,token).voted,true);assert.equal(store.get(p.id).feedback_enabled,0);assert.equal(store.get(p.id).consent_required,0);assert.equal(store.db.prepare('PRAGMA user_version').get().user_version,3);}finally{store.close();}
 });

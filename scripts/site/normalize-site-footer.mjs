@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { minimiseSensitivePollHtml } from '../polls/privacy.mjs';
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 
@@ -81,10 +82,10 @@ let changed = 0;
 
 for (const filePath of footerFiles()) {
   const before = fs.readFileSync(filePath, "utf8");
-  const after = before.replace(
+  const after = minimiseSensitivePollHtml(before.replace(
     /<footer class="footer"[\s\S]*?<\/footer>(?:\s*>?\s*<script defer src="[^"]*assets\/js\/newsletter\.js[^"]*"><\/script>)*\n*/,
     `${renderFooter(prefixFor(filePath)).trimEnd()}\n`,
-  );
+  ));
 
   if (after !== before) {
     fs.writeFileSync(filePath, after);

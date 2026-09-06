@@ -54,6 +54,8 @@ function openEditor(p){
   const source=p||{title:'',slug:'',intro:'',question:'',status:'draft',results_visibility:'after_vote',image:'',cta_text:'',cta_url:'',further_url:'',feedback_note:''};
   for(const name of ['title','slug','intro','question','status','results_visibility','image','cta_text','cta_url','further_url','feedback_note','social_description'])field(name).value=source[name]||'';
   field('feedback_enabled').checked=Boolean(source.feedback_enabled);
+  field('consent_required').checked=Boolean(source.consent_required);
+  field('consent_required').disabled=Boolean(p?.results?.total);
   field('starts_at').value=localDate(p?.starts_at);field('ends_at').value=localDate(p?.ends_at);
   field('slug').readOnly=Boolean(p?.published_at);
   const voted=Boolean(p?.results?.total);
@@ -84,7 +86,7 @@ function drawOptions(){
 document.getElementById('poll-add-option').addEventListener('click',()=>{if(options.length<8){options.push({label:''});dirty=true;drawOptions();}});
 form.addEventListener('input',()=>{dirty=true;});
 function draft(status){
-  return {...Object.fromEntries(['title','slug','intro','question','results_visibility','image','cta_text','cta_url','further_url','feedback_note','social_description'].map(k=>[k,field(k).value])),feedback_enabled:field('feedback_enabled').checked,status:status||field('status').value,starts_at:isoDate(field('starts_at').value),ends_at:isoDate(field('ends_at').value),options:options.map(o=>({...o})),...(selected?{revision:selected.revision}:{})};
+  return {...Object.fromEntries(['title','slug','intro','question','results_visibility','image','cta_text','cta_url','further_url','feedback_note','social_description'].map(k=>[k,field(k).value])),feedback_enabled:field('feedback_enabled').checked,consent_required:field('consent_required').checked,status:status||field('status').value,starts_at:isoDate(field('starts_at').value),ends_at:isoDate(field('ends_at').value),options:options.map(o=>({...o})),...(selected?{revision:selected.revision}:{})};
 }
 async function save(status){
   if(!form.reportValidity())return;

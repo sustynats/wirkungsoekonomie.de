@@ -113,11 +113,14 @@ export function createPollHandler({ store, abuse, authorize, origins = PRODUCTIO
         abuse.consume(address,'feedback-minute',5,60000);
         abuse.consume(address,'feedback-hour',20,3600000);
         json(response,200,{ok:true,...store.feedback(slug,token,await body(request))});
+      } else if(action==='vote'&&request.method==='DELETE'){
+        abuse.consume(address,'withdraw-minute',12,60000);
+        json(response,200,{ok:true,...store.withdraw(slug,token,await body(request))});
       } else if (action === 'vote' && request.method === 'POST') {
         abuse.consume(address, 'votes-minute', 12, 60_000);
         abuse.consume(address, 'votes-hour', 60, 3_600_000);
         const input = await body(request);
-        try { json(response, 201, { ok: true, ...store.vote(slug, input.option_id, token) }); }
+        try { json(response, 201, { ok: true, ...store.vote(slug, input.option_id, token, input.consent_version) }); }
         catch (error) {
           if (error.code !== 'ALREADY_VOTED') throw error;
           json(response, 409, { ok: false, code: error.code, error: error.message, ...store.view(slug, token) });

@@ -66,6 +66,19 @@ test('proxy headers cannot override a direct remote address',()=>{
   assert.equal(clientAddress({socket:{remoteAddress:'127.0.0.1'},headers:{'x-real-ip':'198.51.100.20'}},true),'198.51.100.20');
   assert.equal(clientAddress({socket:{remoteAddress:'127.0.0.1'},headers:{'x-forwarded-for':'forged'}},true),'127.0.0.1');
 });
+test('HTTP explicit consent and own withdrawal preserve other voters and enforce origin',async t=>{
+  const {store,call}=await fixture(t),p=store.create({...seed,slug:'sensitive',consent_required:true}),token=randomBytes(32).toString('hex');
+  const headers={'Content-Type':'application/json','X-Poll-Vote-Token':token};
+  const route=`/api/polls/${p.slug}/vote`;
+  assert.equal((await call(route,{method:'POST',headers,body:JSON.stringify({option_id:p.options[0].id})})).data.code,'CONSENT_REQUIRED');
+  assert.equal((await call(route,{method:'POST',headers,body:JSON.stringify({option_id:p.options[0].id,consent_version:'sensitive-choice-v1'})})).status,201);
+  const body=JSON.stringify({confirmation:'EIGENE STIMME LÖSCHEN'});
+  assert.equal((await call(route,{method:'DELETE',headers:{...headers,Origin:'https://evil.test'},body})).status,403);
+  assert.equal(store.results(p).total,1);
+  assert.equal((await call(route,{method:'DELETE',headers,body})).status,200);
+  assert.equal(store.results(p).total,0);
+  assert.equal((await call(`/api/polls/${p.slug}`,{headers})).data.results,null);
+});
 test('optional private feedback: vote remains independent; text is admin-only, deduplicated and removable',async t=>{
   const {store,call}=await fixture(t),p=store.create(seed),token=randomBytes(32).toString('hex');
   const headers={'Content-Type':'application/json','X-Poll-Vote-Token':token};
