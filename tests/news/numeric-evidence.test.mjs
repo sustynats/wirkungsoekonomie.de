@@ -23,6 +23,7 @@ test('failed output diagnostics preserve numeric proof gaps, never foreign excer
   assert.equal(result.source_summary_words, 4);
   assert.equal(result.source_summary_paragraphs, 2);
   assert.equal(result.publication_decision_type,'undefined');
+  assert.equal(analysisValidationDiagnostics({media_impact:{public_explanation:'Ein kurzer Erklärungstext.'}}).media_public_explanation_words,3);
   assert.equal(analysisValidationDiagnostics({publication_recommendation:'true'}).publication_decision_value,'true');
   assert.deepEqual(result.missing_claim_numbers, [{claim_index:1,missing:['250'],cited_numbers:['5200']}]);
   assert.ok(!JSON.stringify(result).includes(excerpt));
