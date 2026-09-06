@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-08-nachhaltigkeitspruefung-und-enap.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-08-nachhaltigkeitspruefung-und-enap.md curriculum=4.0 sanitized=true -->
 # GOV-08 · Nachhaltigkeitsprüfung und eNAP: Was der Bund bereits systematisch prüft
 
 **lecture_id:** `WOEK-G-GOV-ENAP-01`  

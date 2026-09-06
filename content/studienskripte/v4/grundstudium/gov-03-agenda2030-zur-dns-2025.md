@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-03-agenda2030-zur-dns-2025.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-03-agenda2030-zur-dns-2025.md curriculum=4.0 sanitized=true -->
 # GOV-03 · Von Agenda 2030 zur DNS 2025: Kontinuität und Neuaufstellung
 
 **lecture_id:** `WOEK-G-GOV-HIST-03`  

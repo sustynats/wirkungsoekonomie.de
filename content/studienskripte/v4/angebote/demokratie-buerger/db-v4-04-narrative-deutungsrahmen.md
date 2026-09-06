@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-04-narrative-deutungsrahmen.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-04-narrative-deutungsrahmen.md curriculum=4.0 sanitized=true -->
 # DB-V4-04 · Narrative und Deutungsrahmen
 
 **lecture_id:** `WOEK-WB-DB-V4-004`  

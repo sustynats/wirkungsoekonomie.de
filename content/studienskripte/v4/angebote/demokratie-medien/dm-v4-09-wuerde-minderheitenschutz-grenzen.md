@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-09-wuerde-minderheitenschutz-grenzen.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-09-wuerde-minderheitenschutz-grenzen.md curriculum=4.0 sanitized=true -->
 # DM-V4-09 · Würde, Minderheitenschutz und nicht kompensierbare Grenzen
 
 **lecture_id:** `WOEK-WB-DM-V4-009`  

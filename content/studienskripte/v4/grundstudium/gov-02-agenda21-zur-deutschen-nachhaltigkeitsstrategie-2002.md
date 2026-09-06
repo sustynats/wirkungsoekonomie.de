@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md curriculum=4.0 sanitized=true -->
 # GOV-02 · Von Agenda 21 zur deutschen Nachhaltigkeitsstrategie 2002
 
 **lecture_id:** `WOEK-G-GOV-HIST-02`  
