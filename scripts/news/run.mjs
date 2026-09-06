@@ -66,6 +66,8 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_UNSUPPORTED_NUMBER:/,
   /^AI_UNSUPPORTED_FRAMEWORK_NUMBER:/,
   /^AI_PUBLICATION_GATE_REQUIRED$/,
+  /^AI_PUBLICATION_RECOMMENDATION_INVALID$/,
+  /^AI_PUBLICATION_DECISION_UNRECORDED$/,
   /^AI_PUBLICATION_GATE_(?:NEWS_VALUE|FACTORS|EXCEPTION|EVIDENCE|DUPLICATE)_INVALID$/,
   /^AI_PUBLICATION_GATE_RATIONALE_REQUIRED$/,
   /^MEDIA_(?:IMPACT|SPEAKER|FRAMING|FRAME|HISTORY|EVIDENCE|COMPARISON|SELF_FRAME|INTENT|OUTLET|EFFECT|EPISTEMIC|ATTRIBUTION|POLITICAL|DISCOURSE|OBSERVED|PUBLIC|FACT_FIRST)/,
@@ -253,6 +255,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     ...(existing?.corrections ? { corrections: existing.corrections } : {}),
     ...(existing?.living_file ? { living_file: existing.living_file } : {}),
     ...(existing?.review_checkpoint ? { review_checkpoint: existing.review_checkpoint } : {}),
+    ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
     first_seen: candidate.first_seen,
     last_updated: candidate.last_updated,
     topic: candidate.topic,
@@ -299,6 +302,31 @@ function rejectedRecord(record, now, qualityErrors) {
       quality_errors: qualityErrors,
     },
   };
+}
+
+export function recoverAmbiguousPublicationDecisions(stories, decisions, now) {
+  const latest = new Map((decisions || []).map(decision => [decision.story_id, decision]));
+  const recovered = [];
+  for (const story of stories || []) {
+    const errors = story.rejection?.quality_errors;
+    const decision = latest.get(story.story_id);
+    // Old NOT_RECOMMENDED conflated explicit false with an absent/non-boolean
+    // field. Review only this ambiguous, never-published class once; preserve
+    // every explicit decision and never infer permission to publish.
+    if (story.published || story.listed !== false || story.publication_decision_review
+      || errors?.length !== 1 || errors[0] !== 'AI_PUBLICATION_NOT_RECOMMENDED'
+      || typeof decision?.publication_recommendation === 'boolean' || decision?.rejection_code) continue;
+    story.rejection_history = [...(story.rejection_history || []), structuredClone(story.rejection)];
+    story.publication_decision_review = { at: now, reason: 'ambiguous_legacy_decision', version: '1.0' };
+    story.listed = true;
+    story.pending_reason = 'QUALITY_GATE_FAILED';
+    story.quality_errors = ['AI_PUBLICATION_DECISION_UNRECORDED'];
+    story.quality_retry_count = 0;
+    story.quality_retry_after = null;
+    story.analysis_status = 'Veröffentlichungsentscheidung wird erneut geprüft';
+    recovered.push(story.story_id);
+  }
+  return recovered;
 }
 
 function retiredRecord(candidate, now, qualityErrors) {
@@ -386,6 +414,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     source_versions: candidate.sources.map((source) => ({ source_id: source.source_id, url: source.url, content_hash: source.content_hash })),
   };
   return {
+    ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
     story_id: candidate.story_id,
     slug: candidate.slug,
     title: candidate.title,
@@ -687,6 +716,12 @@ export async function runWirkungsticker(options = {}) {
     operational_status: "running",
     editorial_status: "running",
   };
+
+  report.ambiguous_decisions_requeued = [];
+  if (!state.publication_decision_review_v1_at) {
+    report.ambiguous_decisions_requeued = recoverAmbiguousPublicationDecisions(storyStore.stories, newsroom.decisions, now);
+    state.publication_decision_review_v1_at = now;
+  }
 
   const fetchResults = await mapLimit(dueSources, Number(process.env.WOEK_NEWS_FETCH_CONCURRENCY || 3), async (source) => {
     const fetchResult = await fetchFeedWithRetry(
@@ -1045,7 +1080,7 @@ export async function runWirkungsticker(options = {}) {
           if (analysis) resolveEvidenceReferences(analysis, analysisCandidate);
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
           const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
-          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
+          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
             if (candidate.existing_story?.published && !candidate.reassessment && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error))) {
               bumpCandidateFunnel(sourceFunnel, candidate, "editorial_rejections");

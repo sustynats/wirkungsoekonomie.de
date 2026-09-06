@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { compactEvidenceSegments, expandEvidenceSegments, serializeEvidencePackets, reviewFingerprint, reviewCheckpoint, canReuseReview, articleSourceOrder } from '../../scripts/news/evidence-packets.mjs';
-import { runWirkungsticker } from '../../scripts/news/run.mjs';
+import { runWirkungsticker, recoverAmbiguousPublicationDecisions } from '../../scripts/news/run.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { evaluateRunHealth } from '../../scripts/news/check-run-health.mjs';
 
@@ -138,4 +138,31 @@ test('local relevance rejection settles stale capacity entries without a paid ca
   assert.equal(calls,0);assert.equal(report.local_queue_completed,1);assert.equal(report.queue.after,0);
   assert.equal(captured.storyStore.stories[0].listed,false);
   assert.deepEqual(captured.storyStore.stories[0].rejection.quality_errors,['LOCAL_RELEVANCE_BELOW_THRESHOLD']);
+});
+
+test('one-time legacy decision review preserves rejections and never republishes or reopens explicit false', async () => {
+  const ambiguous = { ...storedStory(), published: false, listed: false, rejection: { at: now, quality_errors: ['AI_PUBLICATION_NOT_RECOMMENDED'] } };
+  delete ambiguous.pending_update;
+  const explicit = { ...structuredClone(ambiguous), story_id: 'explicit' };
+  const immaterial = { ...structuredClone(ambiguous), story_id: 'immaterial', rejection: { quality_errors: ['AI_PUBLICATION_NOT_RECOMMENDED', 'AI_MATERIALITY_TOO_LOW'] } };
+  const published = { ...structuredClone(ambiguous), story_id: 'historical', published: true };
+  const rows = [ambiguous, explicit, immaterial, published];
+  const decisions = [{ story_id: 'explicit', publication_recommendation: false }];
+  assert.deepEqual(recoverAmbiguousPublicationDecisions(rows, decisions, now), ['wt-test']);
+  assert.deepEqual(recoverAmbiguousPublicationDecisions(rows, decisions, now), []);
+  assert.equal(ambiguous.published, false);
+  assert.equal(ambiguous.rejection_history[0].quality_errors[0], 'AI_PUBLICATION_NOT_RECOMMENDED');
+  assert.equal(explicit.listed, false); assert.equal(immaterial.listed, false); assert.equal(published.listed, false);
+  let captured;
+  const report = await runWirkungsticker(options(ambiguous, {
+    callAiImpl: async stories => ({ analyses: stories.map(s => ({ story_id: s.story_id, publication_recommendation: false, rejection: { code: 'insufficient_evidence', reason: 'Die vorliegenden Quellen reichen für eine eigenständige Veröffentlichung nicht aus.' } })), model: 'gpt-5.4-mini', reported_usage: { input_tokens: 100, output_tokens: 50 } }),
+    captureState: value => captured = value,
+  }));
+  assert.equal(report.ai_calls, 1); assert.equal(report.published_stories, 0);
+  const result = captured.storyStore.stories[0];
+  assert.equal(result.listed, false);
+  assert.equal(result.rejection_history.length, 1);
+  assert.ok(result.publication_decision_review);
+  assert.equal(captured.newsroom.decisions.at(-1).publication_recommendation, false);
+  assert.equal(captured.newsroom.decisions.at(-1).rejection_code, 'insufficient_evidence');
 });
