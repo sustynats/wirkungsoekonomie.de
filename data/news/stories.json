@@ -1,7 +1,391 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T06:36:18.253Z",
+  "updated_at": "2026-09-06T06:45:32.071Z",
   "stories": [
+    {
+      "story_id": "wt-6951ba30f7175a2a",
+      "slug": "sachsisches-gericht-stoppt-kiesabbau-bei-meissen-175a2a",
+      "title": "Sächsisches Gericht stoppt Kiesabbau bei Meißen",
+      "first_seen": "2026-09-06T06:30:00.000Z",
+      "last_updated": "2026-09-06T06:30:00.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/dresden/meissen/news-urteil-olg-verbot,kies-abbau-zeithain-100.html",
+          "title": "Sächsisches Gericht stoppt Kiesabbau bei Meißen",
+          "summary": "Eine international tätige Baustofffirma darf vorerst keinen Kies in Zeithain abbauen. Das ordnet das Oberverwaltungsgericht in Bautzen an.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:30:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "da2fd1a0f1d2e82d656aa4039143fcbd1ee64096bbc661d4ac200c94516c582d",
+          "source_item_id": "c1a90eafb051571ce1150050d7b82408d7912d6ff3663d5dcfaf04cbc02e7871",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:30:00.000Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6951ba30f7175a2a-claim-01",
+          "story_id": "wt-6951ba30f7175a2a",
+          "claim": "Sächsisches Gericht stoppt Kiesabbau bei Meißen: Eine international tätige Baustofffirma darf vorerst keinen Kies in Zeithain abbauen. Das ordnet das Oberverwaltungsgericht in Bautzen an.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:45:32.071Z"
+        }
+      ],
+      "content_hash": "21f740a477d9a9df81b73f9e6e4092f1fcf7a1291ed8d23b062e9faf0c1b6399",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T07:00:32.071Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:45:32.071Z",
+      "event_first_seen_at": "2026-09-06T06:45:32.071Z",
+      "event_detected_at": "2026-09-06T06:45:32.071Z",
+      "event_id": "event-2f23e0fd6be2523e74bb",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.534516666666667,
+        "detection_delay_minutes": 15.534516666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:45:32.071Z",
+        "fingerprint": "03f4ce655f885673755897be42bf9e586bf9977ccf5c602288f45c706a7ca6bc",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:45:32.071Z",
+      "rejection": {
+        "at": "2026-09-06T06:45:32.071Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-a1d32125e25a690c",
+      "slug": "vermittlungsmission-us-unterhandler-fur-gesprache-uber-ukraine-krieg-in-moskau-5a690c",
+      "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
+      "first_seen": "2026-09-05T14:11:00.000Z",
+      "last_updated": "2026-09-06T06:29:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
+          "title": "Vermittlungsmission: Putin trifft Trump-Gesandte – Kreml spricht von „konstruktiven“ Gesprächen",
+          "summary": "Putin verhandelt mit Trumps Gesandten über ein Ende des Ukraine-Kriegs. Vertreter des Weißen Hauses nennen die Gespräche „gehaltsvoll“.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:29:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "74013739ed4cedf44241149b2a30dc076843818e65cacdcdf73b756e1d3c51f5",
+          "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:29:00.000Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown"
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-vermittlungsmission-16021136.html",
+          "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
+          "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:06:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "fb2063b12c54c8182ea3290e02b8d2c4f6fe3a1ec6223203a40b7a77d3dd2fed",
+          "source_item_id": "fe587cdcea84c8d97d7c81fea7485553d20c89a379bca2ab8c36e26e0fd99479",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T11:06:25.000Z",
+          "ingested_at": "2026-09-05T16:36:34.186Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
+          "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
+          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:06:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "aa8002fb305244364b5dc556e7ac4c2b7ec7cccda58eecf09e84b72da02ab154",
+          "source_item_id": "235b4021196e08f1d60c8a911f608ba014fa851de581b8c9f4817f0dc07b9c51",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T11:06:25.000Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a1d32125e25a690c-claim-01",
+          "story_id": "wt-a1d32125e25a690c",
+          "claim": "Vermittlungsmission: Putin trifft Trump-Gesandte – Kreml spricht von „konstruktiven“ Gesprächen: Putin verhandelt mit Trumps Gesandten über ein Ende des Ukraine-Kriegs. Vertreter des Weißen Hauses nennen die Gespräche „gehaltsvoll“.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:45:32.071Z"
+        },
+        {
+          "claim_id": "wt-a1d32125e25a690c-claim-02",
+          "story_id": "wt-a1d32125e25a690c",
+          "claim": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau: Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:45:32.071Z"
+        },
+        {
+          "claim_id": "wt-a1d32125e25a690c-claim-03",
+          "story_id": "wt-a1d32125e25a690c",
+          "claim": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet: Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:45:32.071Z"
+        }
+      ],
+      "content_hash": "1e17504f91d9d10a4905a6bb060c651109a376dd6acf6dd1130b209fe63b9ecf",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T07:00:32.071Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:45:32.071Z",
+      "event_first_seen_at": "2026-09-05T14:51:17.850Z",
+      "event_detected_at": "2026-09-05T14:51:17.850Z",
+      "event_id": "event-503f6ca19ad2a3cf9a88",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.534516666666665,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 954.2370166666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:45:32.071Z",
+        "fingerprint": "c3d8f30a00a1dacd98e907649c9557c2d1325c1b04de8b47f14ed121a049254e",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:45:32.071Z",
+      "rejection": {
+        "at": "2026-09-06T06:45:32.071Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-1bd2afdf147b3ca5",
       "slug": "krisenkommunikation-wie-unternehmen-auf-plotzliche-angriffe-reagieren-sollten-7b3ca5",
@@ -2709,7 +3093,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:20:39.000Z",
-          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2738,20 +3122,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "dea12df3333d634d0437b5419abdc9a893feee3a0685a8076a61fc86617b9b34",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T07:00:32.071Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T06:36:18.253Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-06T05:41:03.427Z",
       "event_detected_at": "2026-09-06T05:41:03.427Z",
       "event_id": "event-5c32834238cf73e016df",
@@ -2788,23 +3172,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 75.65421666666667,
+        "source_age_minutes": 84.88451666666667,
         "detection_delay_minutes": 20.407116666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 55.2471,
+        "queue_age_minutes": 64.4774,
         "target_publication_minutes": 120,
-        "news_freshness_score": 84,
+        "news_freshness_score": 82,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T06:36:18.253Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "b270a2c94b46efd86ff64458b8aca2fec56ae4999b91673066b517cbafe2ea93",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:45:32.071Z",
+      "rejection": {
+        "at": "2026-09-06T06:45:32.071Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -15306,7 +15702,7 @@
       "verification_started_at": "2026-09-05T14:15:24.286Z",
       "publish_ready_at": "2026-09-05T14:15:41.958Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -15758,11 +16154,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "1dab9d972969df251d66a6e02bba9ed6affe052ab90ec295720e678e9f8a9768",
-        "checked_at": "2026-09-05T19:21:39.490Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "50b25b6a8b538ca1382339906b0d266573b1ec68acbe97b7ea0fbca47c25095f",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T01:21:39.490Z",
+        "expires_at": "2026-09-06T12:45:32.071Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -15890,336 +16286,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "8720cec8c5e80188937c37932d96ffa03bb1e69170a6dc83ab3c43e14324abb1",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--angriffe-aufs-stromnetz--einsatz-in-sachsen-geht-weiter-38210826.html",
-            "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
-            "summary": "In Ostsachsen geht die Polizei weiter Hinweisen zu versuchten Angriffen aufs Stromnetz nach. Einsatzkräfte sichern Spuren, neue Details wurden nicht bekannt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T07:36:46.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "d561294661b0e0f397c7777a873d3acf73c2361f64264078362d74e9d6b5c028",
-            "source_item_id": "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T07:36:46.000Z",
-            "ingested_at": "2026-09-05T08:06:46.297Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020817.html",
-            "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
-            "summary": "Nach dem Fund mehrerer Sprengvorrichtungen an Stromleitungen in Ostsachsen setzt die Polizei ihre Suche fort. Die Ermittler hoffen auch auf Hinweise aus der Bevölkerung.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T07:38:13.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "f307fa3a57282625ca961ba650578b4ade4a035f539c4fa0dcddfd62d2d05cda",
-            "source_item_id": "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T07:38:13.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-38210826.html",
-            "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
-            "summary": "Nach dem Fund mehrerer Sprengvorrichtungen an Stromleitungen in Ostsachsen setzt die Polizei ihre Suche fort. Die Ermittler hoffen auch auf Hinweise aus der Bevölkerung.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T13:26:55.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "6567168e6a377eb09775c9b6535b185b258bcbe3512aba8e6dec328b86bff0d8",
-            "source_item_id": "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T13:26:55.000Z",
-            "ingested_at": "2026-09-05T14:13:45.805Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-16021488.html",
-            "title": "Nach Anschlägen in NRW und Brandenburg: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
-            "summary": "Spezialisten konnten die Sprengvorrichtungen entschärfen. Nach dem Fund suchen die Ermittler die elektrische Infrastruktur in der Region weiter ab – und bitten um Hinweise aus der Bevölkerung.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T13:58:18.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "1c858ca06ea96cc5d529644dae8e8bc019a9a1e1cfe903b7264f202fedd48f1d",
-            "source_item_id": "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T13:58:18.000Z",
-            "ingested_at": "2026-09-05T19:21:39.490Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T06:36:18.253Z",
-          "fingerprint": "149b7fa7ca0dcfd76e7a397555d5805e931a1468e471daf2147c018703d2105e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
-    },
-    {
-      "story_id": "wt-a1d32125e25a690c",
-      "slug": "vermittlungsmission-us-unterhandler-fur-gesprache-uber-ukraine-krieg-in-moskau-5a690c",
-      "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
-      "first_seen": "2026-09-05T14:11:00.000Z",
-      "last_updated": "2026-09-05T14:11:00.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
-          "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
-          "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T14:11:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "78cdc8faeafb7d55e851651f10b1529d8d2cd78d8bbe0a79f26168bf48618b82",
-          "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T14:11:00.000Z",
-          "ingested_at": "2026-09-05T16:36:34.186Z",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-vermittlungsmission-16021136.html",
-          "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
-          "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T11:06:25.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "fb2063b12c54c8182ea3290e02b8d2c4f6fe3a1ec6223203a40b7a77d3dd2fed",
-          "source_item_id": "fe587cdcea84c8d97d7c81fea7485553d20c89a379bca2ab8c36e26e0fd99479",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T11:06:25.000Z",
-          "ingested_at": "2026-09-05T16:36:34.186Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-a1d32125e25a690c-claim-01",
-          "story_id": "wt-a1d32125e25a690c",
-          "claim": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau: Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:51:14.960Z"
-        },
-        {
-          "claim_id": "wt-a1d32125e25a690c-claim-02",
-          "story_id": "wt-a1d32125e25a690c",
-          "claim": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau: Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:51:14.960Z"
-        }
-      ],
-      "content_hash": "a8750e0bb981f9f92bd27f4a352cca27e4b8f18d060149058114d4148e9be9a8",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T16:51:14.960Z",
-      "event_first_seen_at": "2026-09-05T14:51:17.850Z",
-      "event_detected_at": "2026-09-05T14:51:17.850Z",
-      "event_id": "event-503f6ca19ad2a3cf9a88",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 160.24933333333334,
-        "detection_delay_minutes": 40.2975,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 119.95183333333334,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 67,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-05T16:51:14.960Z",
-        "fingerprint": "1bed52aae020ff7a71bdd5ec023cf4cf5acd367025827feca20e02a70b7aa928",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T16:51:14.960Z",
-      "rejection": {
-        "at": "2026-09-05T16:51:14.960Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-cc110770aabd8a39",
@@ -20244,11 +20311,11 @@
         }
       ],
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "8acdcbf0f82d1eb6217284cf5e103c1187c2615c19a03cb661aadf4e4eb56dc2",
-        "checked_at": "2026-09-06T06:36:18.253Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "c601231694b343dabcfa5be2285f3420c48249d8e655a553f7d4c01bd0d1124c",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-06T12:36:18.253Z",
+        "expires_at": "2026-09-06T12:45:32.071Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -20305,7 +20372,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T05:58:02.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:tagesschau",
               "basis": "publisher_resolved_from_registered_target_url",
@@ -20715,7 +20782,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -20748,7 +20815,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T20:52:04.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -20814,7 +20881,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20847,7 +20914,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:08:00.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20880,11 +20947,44 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
               "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Sachsen-Anhalt/!6210514",
+            "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
+            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: Das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:36:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "4bf0ae8999a493eb38a43523468d423c918dbf51763f69537bad330ddb2a6a66",
+            "source_item_id": "f363844a39f1eb4c8196fcc3e09e309040f6e7b42f9942bb90cf76341686c882",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:36:00.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
@@ -20894,7 +20994,7 @@
       "deepening_checks": 3,
       "pending_update": {
         "detected_at": "2026-09-06T06:06:35.353Z",
-        "content_hash": "97d7e9376da71577085c03bca0ae4582177f4db960d6b794db48e7062552f638",
+        "content_hash": "dd6a64998c504a95f72d1fd87d834d185010de503bf820ee86b783737e2fa661",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -20951,7 +21051,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T05:58:02.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:tagesschau",
               "basis": "publisher_resolved_from_registered_target_url",
@@ -21361,7 +21461,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -21394,7 +21494,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T20:52:04.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -21460,7 +21560,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21493,7 +21593,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:08:00.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21526,11 +21626,44 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
               "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Sachsen-Anhalt/!6210514",
+            "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
+            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: Das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:36:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "4bf0ae8999a493eb38a43523468d423c918dbf51763f69537bad330ddb2a6a66",
+            "source_item_id": "f363844a39f1eb4c8196fcc3e09e309040f6e7b42f9942bb90cf76341686c882",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:36:00.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
@@ -21549,8 +21682,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T06:36:18.253Z",
-          "fingerprint": "8f4791d4a41ebea13dec29f228a11a0637e88e38b05f981baffd167890b802a3",
+          "checked_at": "2026-09-06T06:45:32.071Z",
+          "fingerprint": "54b45b9fe0be67e87ad8dd3d3c9f95ee99b8ac46863a345cc68c03347c3ad0c6",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -31515,7 +31648,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T11:18:00.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
@@ -31525,10 +31658,48 @@
             "agency_origin_confidence": "unknown"
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-06T07:00:32.071Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -31536,7 +31707,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T06:36:18.253Z",
+          "checked_at": "2026-09-06T06:45:32.071Z",
           "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
           "issue_codes": [],
           "warning_codes": []
@@ -31646,7 +31817,7 @@
       "verification_started_at": "2026-09-05T11:33:09.252Z",
       "publish_ready_at": "2026-09-05T11:33:20.789Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -31957,11 +32128,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "382976f7c5f087c492c30938dc8493657ea1760854cbde5b0372b60dc8442515",
-        "checked_at": "2026-09-05T19:21:39.490Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "75cd1f7bb7eaf961c84783c1315a1cd53e2370eab6af2623667b42d972aea50f",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T01:21:39.490Z",
+        "expires_at": "2026-09-06T12:45:32.071Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -31996,60 +32167,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "4e538b6870bba573e71ebe4b674b6ff2dbc2fb46dd5f6b00de8440d532972b4e",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/us-gesandte-kushner-und-witkoff-zu-gespraechen-ueber-ukraine-krieg-in-moskau-38211250.html",
-            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
-            "summary": "Die US-Gesandten Jared Kushner und Steve Witkoff sind zu Gesprächen über eine Beendigung des Ukraine-Kriegs in der russischen Hauptstadt Moskau eingetroffen. Ihr Flugzeug landete am Samstagmittag auf dem Flughafen Wnukowo, wie die russischen Nachrichtenagenturen Ria Nowosti und Tass meldeten. In der Folge wollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:25:11.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3df5cd824d6e715dc545dee0a6465e5528a0510cf96dfebd0addca1cce08269c",
-            "source_item_id": "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:25:11.000Z",
-            "ingested_at": "2026-09-05T11:31:43.777Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T06:36:18.253Z",
-          "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-eb6e7bfa7e906259",
@@ -50442,7 +50560,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T06:36:18.253Z",
+          "checked_at": "2026-09-06T06:45:32.071Z",
           "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
           "issue_codes": [],
           "warning_codes": []
@@ -66997,7 +67115,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T17:51:00.000Z",
-            "ingested_at": "2026-09-06T06:21:40.343Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
@@ -67018,7 +67136,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T06:36:18.253Z",
+          "checked_at": "2026-09-06T06:45:32.071Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -93333,14 +93451,14 @@
           "source_id": "tagesspiegel-home",
           "publisher": "Der Tagesspiegel",
           "url": "https://www.tagesspiegel.de/sport/handball-prasident-im-bsw-wahlkampf-ich-weiss-nicht-ob-man-das-so-trennen-kann-16018794.html",
-          "title": "Handball-Präsident macht BSW-Wahlkampf: „Ich weiß nicht, ob man das so trennen kann“",
+          "title": "Mit Friedenstaube auf Wagenknecht-Kurs: Der deutsche Handball-Präsident kämpft für das BSW",
           "summary": "Andreas Michelmann spricht in sozialen Medien von „Kriegstreibern“ und einer verfehlten Russlandpolitik. Der Handballbund sieht darin keinen Widerspruch zu seinem Ehrenamt. Andere im Verband sind skeptischer.",
           "source_type": "media_rss",
           "published_at": "2026-09-04T11:43:21.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "d232611ef99d9b02c3aa0de2b541015a98f46da8cf26470a01251eb48b982677",
+          "content_hash": "ed2d5fde3df34221b4fa1871744a62f78475f8b79b3e9852d6e4cdae0c33ef1f",
           "source_item_id": "6aefedd2b8be1f22afb3b71b00de34d881a39fc9c6c53de8354f4a7acd6612da",
           "publisher_id": "tagesspiegel",
           "publisher_kind": "journalism",
@@ -93353,19 +93471,21 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T11:43:21.000Z",
-          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "provenance": {
             "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
-          }
+          },
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown"
         }
       ],
       "claims": [
         {
           "claim_id": "wt-05a85d44e21491c4-claim-01",
           "story_id": "wt-05a85d44e21491c4",
-          "claim": "Handball-Präsident macht BSW-Wahlkampf: „Ich weiß nicht, ob man das so trennen kann“: Andreas Michelmann spricht in sozialen Medien von „Kriegstreibern“ und einer verfehlten Russlandpolitik. Der Handballbund sieht darin keinen Widerspruch zu seinem Ehrenamt. Andere im Verband sind skeptischer.",
+          "claim": "Mit Friedenstaube auf Wagenknecht-Kurs: Der deutsche Handball-Präsident kämpft für das BSW: Andreas Michelmann spricht in sozialen Medien von „Kriegstreibern“ und einer verfehlten Russlandpolitik. Der Handballbund sieht darin keinen Widerspruch zu seinem Ehrenamt. Andere im Verband sind skeptischer.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesspiegel-home",
           "source_function": "journalistic_report",
@@ -93380,24 +93500,30 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
-      "content_hash": "0054ee0086a078438af0144efeb9928747879cb71977641a4acf3cb205c7b190",
+      "content_hash": "39018d16daf9aad9a847e0a80e089f607adf89a211d3b5fb495452c2ad5eeb20",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
+        "AI_MATERIALITY_TOO_LOW"
       ],
+      "quality_retry_after": "2026-09-06T07:00:32.071Z",
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T12:51:34.068Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-04T12:06:38.422Z",
       "event_detected_at": "2026-09-04T12:06:38.422Z",
       "event_id": "event-72e073be247cfa5d7570",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 40,
         "public_relevance": "mittel",
         "topics": [
@@ -93425,25 +93551,34 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 68.2178,
+        "source_age_minutes": 2582.1845166666667,
         "detection_delay_minutes": 23.290366666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.92743333333333,
+        "queue_age_minutes": 2558.89415,
         "target_publication_minutes": 120,
-        "news_freshness_score": 86,
-        "freshness_warning": null
+        "news_freshness_score": 0,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:45:32.071Z",
+        "fingerprint": "34dffa23645d8f454fd67a1d0dedaeb51c55a2fed6888184f110dbbaee148a81",
+        "issue_codes": [],
+        "warning_codes": []
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T12:51:34.068Z",
+      "rejected_at": "2026-09-06T06:45:32.071Z",
       "rejection": {
-        "at": "2026-09-04T12:51:34.068Z",
+        "at": "2026-09-06T06:45:32.071Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
+          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -123676,7 +123811,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -123691,7 +123826,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T06:36:18.253Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -123727,11 +123862,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3853.304216666667,
+        "source_age_minutes": 3862.5345166666666,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3375.020716666667,
+        "queue_age_minutes": 3384.2510166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -123740,7 +123875,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T06:36:18.253Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
@@ -132349,7 +132484,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -132378,7 +132513,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -132391,7 +132526,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T06:36:18.253Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -132425,11 +132560,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7236.304216666666,
+        "source_age_minutes": 7245.534516666667,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3375.020716666667,
+        "queue_age_minutes": 3384.2510166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -132438,7 +132573,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T06:36:18.253Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
         "issue_codes": [],
         "warning_codes": []
@@ -132878,7 +133013,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -132907,7 +133042,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -132920,7 +133055,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T06:36:18.253Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -132957,11 +133092,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8316.304216666667,
+        "source_age_minutes": 8325.534516666667,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3375.020716666667,
+        "queue_age_minutes": 3384.2510166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -132970,7 +133105,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T06:36:18.253Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
         "issue_codes": [],
         "warning_codes": []
@@ -133817,7 +133952,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-27T12:05:00.000Z",
-          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -133846,20 +133981,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T06:36:18.253Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "b1bae7b04df34bc6338acd68295c03bcc78f251e2a1fb3d3bb0005b5ad402ce7",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_PUBLICATION_RECOMMENDATION_INVALID"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-06T07:15:32.071Z",
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T06:36:18.253Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-08-27T12:05:00.000Z",
       "event_detected_at": "2026-08-27T12:05:00.000Z",
       "event_id": "event-387b5558f67e204de308",
@@ -133894,11 +134031,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 14071.304216666667,
+        "source_age_minutes": 14080.534516666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 14071.304216666667,
+        "queue_age_minutes": 14080.534516666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -133907,7 +134044,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T06:36:18.253Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "6e342d5fd35d2293e28d3fbce951640b3384ddc6bf400910593ccb6dda8c0ecb",
         "issue_codes": [],
         "warning_codes": []
