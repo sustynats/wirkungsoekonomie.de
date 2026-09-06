@@ -39,6 +39,6 @@
  back.addEventListener('click',()=>{error.textContent='';step=Math.max(0,step-1);show(true);});
  form.addEventListener('submit',event=>{event.preventDefault();if(validStep()&&step<2){step++;show(true);}});
  form.addEventListener('input',()=>{error.textContent='';render();});
- form.addEventListener('reset',()=>queueMicrotask(()=>{step=0;error.textContent='';show(true);}));
+ form.addEventListener('reset',()=>setTimeout(()=>{step=0;error.textContent='';show(true);},0));
  show();
 })(typeof globalThis!=='undefined'?globalThis:this);
