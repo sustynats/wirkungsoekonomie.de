@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import {renderInstituteProjects} from "../lib/institut-projects.mjs";
 
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, "parlament");
@@ -130,6 +131,7 @@ ${renderHeader(BASE)}
         <h1>Was verändert Politik wirklich?</h1>
         <p class="hero-subtitle">Das Wirkungsportal Parlament zeigt nicht nur, was angekündigt, beraten oder beschlossen wurde. Es untersucht, welche Zustände eine Maßnahme verändern kann, wer davon betroffen ist, welche Risiken bestehen und was sich nach der Umsetzung tatsächlich beobachten lässt.</p>
         <p class="hero-subtitle">Quelle, politischer Lebenslauf, Wirkungspotenzial, Evidenz und spätere Beobachtung bleiben getrennt sichtbar. So muss eine Bewertung nicht einfach geglaubt werden. Sie kann geprüft werden.</p>
+        <p>Ein Projekt des Wirkungsinstituts: <a href="../institut/projekte/wirkungsportal-parlament/">Vom Projektauftrag zum Livegang: Chronik, Konzept und Aufgaben</a>.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="${PORTAL_URL}">Wirkungsportal öffnen</a>
           <a class="btn btn-secondary" href="${PORTAL_URL}wirkungsfaelle">Wirkungsfälle ansehen</a>
@@ -257,6 +259,7 @@ ${renderFooter(BASE)}
 `;
 
 const homeTeaser = `      <!-- parlament-info:start -->
+      ${renderInstituteProjects({base:""})}
       <section class="section" aria-labelledby="parlament-info-home-title">
         <div class="card">
           <p class="hero-kicker">Wirkungsportal Parlament</p>
