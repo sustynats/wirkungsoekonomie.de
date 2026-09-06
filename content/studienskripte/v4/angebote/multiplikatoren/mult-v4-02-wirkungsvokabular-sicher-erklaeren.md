@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-02-wirkungsvokabular-sicher-erklaeren.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-02-wirkungsvokabular-sicher-erklaeren.md curriculum=4.0 sanitized=true -->
 # MULT-V4-02 · Das Wirkungsvokabular sicher erklären
 
 **lecture_id:** `WOEK-MP-V4-002`  
@@ -77,3 +77,34 @@ Ein kleiner Trick hilft: Frage bei jedem Satz, ob er über Tun, Veränderung ode
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst auf Basis des vollständigen Legacy-Reaudits B04 und des WÖk-Begriffs-/Methodenstands v1.5.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Begriffe über ihre Prüfaufgabe lernen
+
+Ein Begriff ist dann didaktisch nützlich, wenn er eine Frage genauer macht. Wirkung fragt nach tatsächlicher Zustandsveränderung. Wirkungspotenzial fragt nach plausiblen, noch nicht realisierten Veränderungen unter bestimmten Bedingungen. Wirkungsrisiko bezeichnet mögliche nachteilige Veränderungen und deren Unsicherheit. Netto-Wirkung verlangt eine begründete Betrachtung relevanter positiver und negativer Beiträge innerhalb eines offengelegten Rahmens. Diese Begriffe lassen sich nicht durch die gemeinsame Formel „etwas Gutes tun“ ersetzen.
+
+Neutral bedeutet dabei nicht gleichgültig. Die Analyse beginnt ohne vorweggenommenes Werturteil und begründet eine Bewertung anschließend über die Veränderung, die betroffenen Referenz- und Schutzräume und die Evidenz. Eine Zustandsveränderung kann für verschiedene Gruppen unterschiedlich ausfallen. „Ambivalent“ ist dann eine nachvollziehbare Beschreibung, keine Ausrede für eine unterlassene Prüfung.
+
+Auch Baseline und Gegenfaktum leisten Verschiedenes. Die Baseline beschreibt einen Ausgangszustand. Das Gegenfaktum betrifft den Zustand, der ohne die untersuchte Maßnahme plausibel eingetreten wäre. Ein Vorher-nachher-Unterschied kann daher nicht ohne weitere Annahmen als kausaler Maßnahmenbeitrag ausgegeben werden.
+
+### Durchgearbeiteter Fall: mehr Beratung, weniger Wartezeit
+
+Eine fiktive Beratungsstelle führt ein neues Buchungssystem ein. Sie berichtet 600 Buchungen und einen Rückgang der mittleren Wartezeit von zwölf auf acht Tage. Die Buchungszahl ist eine Aktivitäts- beziehungsweise Nutzungsgröße. Die veränderte Wartezeit beschreibt eine beobachtete Zustandsveränderung im gewählten Zeitraum. Der Satz „Das System senkte die Wartezeit um vier Tage“ geht weiter: Er schreibt die Veränderung kausal dem System zu.
+
+Für diese Zuschreibung müssen weitere Veränderungen geprüft werden. Vielleicht wurde gleichzeitig Personal aufgestockt oder die Nachfrage sank saisonal. Eine Vergleichsstelle ohne neues System könnte zusätzliche Evidenz liefern, sofern die Vergleichbarkeit begründet wird. Fehlen solche Informationen, bleibt der kausale Anteil offen. Der Status OPEN bezeichnet dann eine konkrete Evidenzlücke, keine generelle Unprüfbarkeit.
+
+Zudem kann die mittlere Wartezeit sinken, während Menschen ohne digitalen Zugang länger warten. Eine positive Netto-Wirkung ist deshalb nicht bereits mit dem Durchschnittswert nachgewiesen. Die Verteilung und gegebenenfalls harte Zugangsschutzgrenzen müssen geprüft werden. Ein vermuteter Ausschlussmechanismus ist zunächst ein Wirkungsrisiko; dokumentierte zusätzliche Wartezeit einer betroffenen Gruppe wäre eine beobachtete Veränderung.
+
+### Lernarbeit mit Erwartungshorizont
+
+Ordne fünf Aussagen zum Fall den Kategorien Output, beobachtete Veränderung, kausale Zuschreibung, Potenzial und Risiko zu. Formuliere anschließend eine zulässige Kurzmeldung. Sie könnte lauten: „Die gemessene Wartezeit sank im Zeitraum um vier Tage. Der Anteil des neuen Systems und mögliche Zugangsnachteile werden noch geprüft.“
+
+Eine gute Erklärung benennt nicht nur Unsicherheit, sondern auch den nächsten Erkenntnisschritt: Welche Daten, Vergleichsannahmen oder Befragungen würden welche Frage klären? Sie erfindet keinen präzisen Wirkungsscore, um die Lücke zu verdecken. Der Lernerfolg besteht in der begründeten Verwendung der Begriffe an einem Fall.

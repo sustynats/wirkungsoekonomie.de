@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v52-wirkungseinkommen-policy-modell.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v52-wirkungseinkommen-policy-modell.md curriculum=4.0 sanitized=true -->
 # V52 · Wirkungseinkommen – WÖk-Policy-Modell für gesellschaftlich relevante Leistung
 
 **lecture_id:** `WOEK-G-BASE-052`  
@@ -241,3 +241,7 @@ Und jede Variante hat Nebenwirkungen: Bürokratie, Gaming, Datenschutz, Genderve
 Der Merksatz lautet:
 
 **Wirkung kann Anerkennung und Finanzierung besser ausrichten. Sie darf niemals den Wert eines Menschen berechnen.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

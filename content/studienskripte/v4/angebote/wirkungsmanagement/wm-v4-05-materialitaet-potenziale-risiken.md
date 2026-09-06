@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-05-materialitaet-potenziale-risiken.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-05-materialitaet-potenziale-risiken.md curriculum=4.0 sanitized=true -->
 # WM-V4-05 · Materialität, Potenziale und Risiken
 
 **lecture_id:** `WOEK-WB-WM-V4-005`  
@@ -119,3 +119,32 @@ Dabei zählt nicht nur, ob ein Effekt groß aussieht. Wer ist betroffen? Wie lan
 Außerdem schreiben wir auf, was wir nicht geprüft haben. Das klingt banal, ist aber entscheidend. Ein ausgelassenes Wirkungsfeld darf nicht unsichtbar zu „neutral“ werden.
 
 Materialität ist deshalb keine Rangliste schöner Scores. Sie ist eine begründete Entscheidung darüber, welche Wirkpfade für diesen konkreten Fall wirklich zählen.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Materialität folgt der Tragweite des möglichen Befunds
+
+Eine lange Liste möglicher Wirkungen ist noch keine sinnvolle Priorisierung. Materialität fragt, welche Veränderungen die Beurteilung oder Entscheidung wesentlich beeinflussen können. Dazu gehören Umfang, Schwere, Dauer, Verteilung, Irreversibilität und die berührten Schutzräume. Auch eine geringe Eintrittswahrscheinlichkeit kann bei schwerwiegenden irreversiblen Folgen relevant sein. Umgekehrt rechtfertigt eine leicht messbare Kleinigkeit nicht automatisch den größten Prüfaufwand.
+
+Evidenzstärke und Wirkungsrichtung werden getrennt beurteilt. Ein gut belegter kleiner Vorteil ist nicht allein wegen der guten Datenlage wichtiger als ein plausibles erhebliches Risiko. Das Risiko wird dadurch aber auch nicht zu einem bereits nachgewiesenen Schaden. Die Entscheidung muss die unterschiedliche Sicherheit ausdrücklich berücksichtigen.
+
+### Durchgearbeiteter Fall: Auswahl eines Lieferverfahrens
+
+Eine fiktive Organisation vergleicht zwei Lieferverfahren. Für Variante A liegen genaue Kosten- und Zeitdaten vor. Für eine mögliche Belastung benachbarter Wohnbereiche gibt es zunächst nur begründete Hinweise. Variante B ist etwas teurer, vermeidet jedoch den vermuteten Engpass. Ein reines Tabellenranking könnte A bevorzugen, weil nur ihre Vorteile präzise quantifiziert sind.
+
+Eine materialitätsorientierte Prüfung fragt stattdessen, ob die offene Belastung die Entscheidung ändern könnte. Dafür werden Exposition, Dauer, besonders betroffene Gruppen und mögliche Schutzgrenzen untersucht. Eine fehlende Messung wird als Datenlücke gekennzeichnet und nicht als Nullbelastung eingetragen. Eine kurzfristige Erhebung oder eine anders gestaltete Erprobung kann die Unsicherheit verringern.
+
+Gleichzeitig werden die Ressourcen des Prüfens berücksichtigt. Nicht jede theoretisch denkbare Folge verlangt dieselbe Untersuchungstiefe. Die Begründung lautet, warum ein Feld entscheidungsrelevant ist und welches zusätzliche Wissen verhältnismäßig gewonnen werden kann. Ergibt die Prüfung eine harte Grenze, wird sie nicht durch kleine Kostenvorteile kompensiert.
+
+### Lernarbeit mit Erwartungshorizont
+
+Erstelle für den Fall eine Prioritätenliste mit drei Feldern. Begründe für jedes Feld Tragweite, Datenstatus und den nächsten Prüfschritt. Eine gute Lösung setzt weder den schlechtesten Zahlenwert noch die unsicherste Aussage automatisch an die erste Stelle. Sie erklärt den Zusammenhang zwischen möglicher Veränderung und Entscheidung.
+
+Formuliere abschließend zwei Szenarien: Unter welcher neuen Evidenz würde A vertretbar, unter welcher müsste sie umgestaltet oder ausgeschlossen werden? Diese Bedingungen machen die Empfehlung lernfähig. Ein Verweis auf „hohe Materialität“ ohne Beschreibung der möglichen Folgen und Schutzräume reicht als Begründung nicht aus.

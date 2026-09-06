@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-05-ehrliche-wirkungskommunikation.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-05-ehrliche-wirkungskommunikation.md curriculum=4.0 sanitized=true -->
 # MULT-V4-05 · Ehrliche Wirkungskommunikation
 
 **lecture_id:** `WOEK-MP-V4-005`  
@@ -73,3 +73,34 @@ Wenn du einen guten Wirkungsclaim schreiben willst, stell dir vor, jemand dürft
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst auf Basis des vollständigen Legacy-Reaudits B04 und des WÖk-Begriffs-/Methodenstands v1.5.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Aussagen nach Gegenstand, Zeitraum und Evidenz begrenzen
+
+Wirkungskommunikation beginnt mit einer prüfbaren Aussage. Sie benennt, was sich für wen, wo und wann verändert hat, welche Rolle die berichtende Organisation spielte und worauf die Aussage beruht. Wenn nur eine geplante Veränderung beschrieben werden kann, wird sie als Wirkungspotenzial bezeichnet. Wenn lediglich eine Aktivität dokumentiert ist, bleibt die Kommunikation auf dieser Ebene.
+
+Vermeidung, Minderung, Kompensation und Finanzierung sind unterschiedliche Vorgänge. Eine vermiedene Belastung wird gegenüber einem begründeten Gegenfaktum bestimmt. Eine Minderung reduziert eine bestehende oder erwartete Belastung. Eine Kompensation beansprucht einen Ausgleich, der eigene Voraussetzungen und Grenzen hat. Finanzierung stellt Mittel bereit und ist ohne zusätzliche Evidenz noch keine nachgewiesene Wirkung der finanzierten Aktivität.
+
+Der Bezug auf ein SDG oder einen DNS-Indikator erklärt die normative oder strategische Einordnung. Er beweist keine Kausalität. Auch ein Prüfzeichen, eine Zertifizierung oder ein ansprechendes Diagramm erweitert den Aussagegehalt nur in dem Umfang, den der jeweilige Prüfauftrag tatsächlich abdeckt.
+
+### Durchgearbeiteter Fall: eine Aussage über vermiedene Emissionen
+
+Eine fiktive Organisation finanziert einen Austausch alter Geräte. Sie möchte melden: „Unsere Spende hat 100 Tonnen Emissionen vermieden.“ Vor einer solchen Aussage müssen unter anderem Lebensdauer, Nutzung, Vergleichsgeräte, Strommix, Herstellung und tatsächlicher Austausch betrachtet werden. Wären die Geräte ohnehin ersetzt worden, kann der zusätzliche Beitrag der Finanzierung geringer sein als die gesamte technische Differenz.
+
+Eine vorläufige Modellrechnung kann trotzdem nützlich sein. Sie wird mit Zeitraum, Systemgrenze und Annahmen veröffentlicht: „Das Modell schätzt unter den genannten Nutzungsannahmen ein Minderungspotenzial.“ Bereits beobachtete Betriebsdaten werden davon getrennt. Unsicherheit wird möglichst dort benannt, wo sie den Befund beeinflusst, statt in einem kaum auffindbaren allgemeinen Hinweis.
+
+Stellt sich später heraus, dass ein Teil der alten Geräte weitergenutzt wird, verändert dies die Bewertung. Die Organisation dokumentiert die Korrektur und erklärt ihre Bedeutung. Eine transparente Präzisierung ist fachlich besser als das stille Austauschen einer Zahl ohne Standhinweis. Harte Schutzgrenzen können unabhängig von einer günstigen Klimabilanz weitere Anforderungen begründen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Überarbeite drei fiktive Werbeaussagen in prüfbare Aussagen. Verwende jeweils Gegenstand, Zeitraum, Evidenz, Zurechnungsgrenze und offene Frage. Eine gute Lösung bleibt verständlich und vermeidet sowohl Übertreibung als auch einen pauschalen Rückzug auf „alles ist unsicher“.
+
+Entwirf zusätzlich eine Korrekturmeldung für eine später veränderte Annahme. Sie nennt die frühere Aussage, den neuen Befund und die Konsequenz. Der Reality Check prüft, ob die veröffentlichte Kurzfassung denselben Aussagecharakter hat wie die zugrunde liegende Analyse. Eine Fußnote darf keine zentrale Einschränkung verstecken, die die Überschrift inhaltlich umkehrt.

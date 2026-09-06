@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-11-persoenlicher-resilienz-reality-check-plan.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-11-persoenlicher-resilienz-reality-check-plan.md curriculum=4.0 sanitized=true -->
 # DB-V4-11 · Persönlicher Resilienz- und Reality-Check-Plan
 
 **lecture_id:** `WOEK-WB-DB-V4-011`  
@@ -72,3 +72,34 @@ Resilient heißt nicht: Mich bringt nichts aus der Ruhe. Resilient heißt eher: 
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Vollständige Neufassung nach Legacy-Reaudit B05; deterministische Psychologie-, Intent-, Reichweiten- und Wirkungsclaims wurden durch evidenzgebundene Potenzial-/Observation-/Attributionslogik ersetzt.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Einen Plan auf konkrete Situationen begrenzen
+
+Ein persönlicher Resilienzplan soll die eigene Handlungsfähigkeit erhalten. Er ist kein Selbstoptimierungsranking und keine Bewertung anderer Menschen. Ausgangspunkt sind Situationen, in denen man regelmäßig überfordert reagiert, unkritisch weiterleitet oder länger diskutiert, als es dem eigenen Anliegen dient. Der Plan wählt wenige veränderbare Handlungen aus, statt eine allgemeine Verpflichtung zu ständiger Aufmerksamkeit zu schaffen.
+
+Drei Bereiche lassen sich verbinden: Informationsprüfung, Gesprächsgrenzen und Erholung. Für die Informationsprüfung kann eine kurze Herkunfts- und Datumsprüfung genügen. Für Gespräche kann eine vorher formulierte Grenze helfen. Für Erholung kann ein selbst gewähltes Zeitfenster ohne Nachrichten nützlich sein. Diese Beispiele sind Möglichkeiten; ihre Eignung muss zur eigenen Situation passen. Der Kurs behauptet keine therapeutische Wirkung.
+
+Ein Reality Check unterscheidet Vorsatz, Umsetzung und beobachtete Veränderung. „Ich will vor dem Weiterleiten prüfen“ ist eine Absicht. „Ich habe diese Woche bei drei Beiträgen die Originalquelle gesucht“ ist eine dokumentierte Handlung. Ob dadurch Fehlvorstellungen, Belastung oder Konflikte abgenommen haben, ist eine weitergehende Frage. Auch persönliche Selbstbeobachtung hat Grenzen, etwa Erinnerungslücken und wechselnde Alltagssituationen.
+
+### Durchgearbeiteter Fall: ein zweiwöchiger Lernversuch
+
+Eine fiktive Teilnehmerin nimmt sich vor, abends keine ungeprüften Meldungen weiterzuleiten und Diskussionen bei persönlichen Angriffen zu unterbrechen. Sie dokumentiert zwei Wochen lang nur wenige Angaben: Situation, gewählter Schritt, unmittelbare Folge und offene Frage. Sie sammelt keine Listen über die politischen Positionen oder vermeintlichen Charaktereigenschaften anderer Menschen.
+
+Nach der ersten Woche stellt sie fest, dass eine allgemeine Regel „nie abends diskutieren“ für sie nicht passt. Ein wichtiges sachliches Gespräch war gerade am Abend möglich. Sie präzisiert deshalb die Regel auf Situationen, in denen sie müde ist und die Quellen nicht prüfen kann. Diese Änderung ist ein Lernschritt, kein Beweis mangelnder Disziplin.
+
+Am Ende berichtet sie weniger Zeitdruck beim Antworten. Gleichzeitig sind Konflikte nicht vollständig verschwunden. Die Auswertung hält beides fest. Eine positive Selbstbeobachtung erlaubt keine allgemeine Aussage über die Wirksamkeit des Plans für andere Personen. Sie kann aber eine begründete persönliche Entscheidung stützen, welche Gewohnheit fortgeführt und welche angepasst wird.
+
+### Lernarbeit mit Erwartungshorizont
+
+Erstelle einen Plan mit höchstens drei konkreten Regeln. Jede Regel erhält einen Anlass, eine machbare Handlung, eine Ausnahme und einen Termin zur Überprüfung. Eine gute Formulierung lautet beispielsweise: „Wenn ich Ort und Datum eines Ereignisbildes nicht prüfen kann, teile ich es vorerst nicht als aktuellen Beleg.“ Eine zu unbestimmte Formulierung wäre: „Ich lasse mich nie mehr manipulieren.“
+
+Bewerte nach einem gedachten Testlauf nicht deine Person, sondern die Regeln. Welche war praktikabel, welche erzeugte neue Belastung, welche brauchte eine Ausnahme? Der abschließende Lernnachweis verbindet Tatsachenprüfung, Gesprächsführung, Schutzgrenzen und begrenzte Wirkungsaussagen. Er bescheinigt Grundlagen- und Unterscheidungskompetenz im Kursrahmen, keine Garantie zukünftiger Krisenfestigkeit und keine allgemeine psychologische Diagnose.

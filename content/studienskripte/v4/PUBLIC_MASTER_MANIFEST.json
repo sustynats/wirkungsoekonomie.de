@@ -2,9 +2,23 @@
   "schema_version": "1.2",
   "status": "PRE_CUTOVER_PUBLIC_MASTER",
   "source_repo": "sustynats/woek-akademie-app",
-  "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
+  "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+  "terminology_baseline": "1.7",
+  "generated_from": {
+    "repo": "sustynats/woek-akademie-app",
+    "sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+    "curriculum_manifest_path": "content/lehrgaenge/akademie/curriculum-v4/CURRICULUM_V4_MANIFEST.json",
+    "curriculum_manifest_git_blob_sha": "f31ee16492b245b59c345b5c08b74ec8e0659f72",
+    "state_sustainability_manifest_git_blob_sha": "7c418bfa4e94d911b956bfc6f483cd67680f12ec",
+    "terminology_baseline": {
+      "name": "Führender Begriffsleitfaden der Wirkungsökonomie",
+      "version": "1.7",
+      "main_repo": "sustynats/wirkungsoekonomie.de",
+      "main_sha_at_lock": "6d63927847c21ac90dac59617990e2840baa8617"
+    }
+  },
   "curriculum_version": "4.0",
-  "terminology_baseline": "1.6",
+  "activation": "FAIL_CLOSED_UNTIL_CROSS_REPO_PARITY_AND_RUNTIME_GATES_PASS",
   "counts": {
     "study_lectures": 120,
     "base": 108,
@@ -24,6 +38,7 @@
   "security": {
     "assessment_secrets_included": false,
     "quiz_and_solution_sections_removed": true,
+    "protected_sections_removed": true,
     "fail_closed_patterns": [
       "\\*\\*Lösung(?:en)?:\\*\\*",
       "\\bCorrectAnswer\\b",
@@ -34,6 +49,14 @@
       "\\binstructor[_ -]?(?:answer|solution|rubric)\\b",
       "\\bpassing[_ -]?score[_ -]?key\\b"
     ]
+  },
+  "gates": {
+    "ACADEMY_SCRIPT_MASTER_MIRROR_PARITY": "SOURCE_HASH_READY_RUNTIME_PENDING",
+    "NO_APP_ONLY_PUBLIC_SCRIPT_PARALLEL_TRUTH": "PENDING_CROSS_REPO_RELEASE_GATE",
+    "PUBLIC_MASTER_SOURCE_PROVENANCE_PRESENT": "PENDING_CROSS_REPO_RELEASE_GATE",
+    "NO_ASSESSMENT_SECRET_LEAK": "PENDING_CROSS_REPO_RELEASE_GATE",
+    "ACADEMY_WEB_APP_CONTENT_PARITY": "PENDING_CROSS_REPO_RELEASE_GATE",
+    "ACADEMY_OFFERING_CATALOG_WEB_APP_PARITY": "PENDING_CROSS_REPO_RELEASE_GATE"
   },
   "lectures": [
     {
@@ -47,10 +70,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v01-die-massstabskrise.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "5d433f22ae2864db701082e1362b73916bcb4a29abcc6cad17b7526524482285",
+      "source_blob_sha": "afc41824b2b4234b12bd1f1ad17ac01826afd8e8",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "2515310f3ee332cc46ac8c414e7786f11caa38b817094274e47efd2479076f2f",
       "public_path": "grundstudium/base/v01-die-massstabskrise.md",
-      "public_sha256": "e55eb503ab93586b0194014e12ccdefab4408f56ae869b76e46e5044f5de8d55"
+      "public_sha256": "98ba02deff31e109e37e06c74ca74151ea3390cbda5392c52ede4bfe8e3fa16f"
     },
     {
       "lecture_id": "WOEK-G-BASE-002",
@@ -63,10 +87,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v02-wirkung-statt-kapital.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a7b485db18c4ca03dd357d86e6d06b29b6934784c02d934cda5324587463808e",
+      "source_blob_sha": "92137e01fdbc8430f5659b2c63871296950f4423",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "46d69253856ba190b93eb3ccb98089baccfbd8bc00a874ce79d699cb75d30c62",
       "public_path": "grundstudium/base/v02-wirkung-statt-kapital.md",
-      "public_sha256": "35477c17fafc209d0c29b2fadd034676cf3f2d2d5b6615879edbfdf2db9bc559"
+      "public_sha256": "c38261fbfebed3dffa46ad0a55a9a4ea74be0c188d433f11c3e0e6de7f54970b"
     },
     {
       "lecture_id": "WOEK-G-BASE-003",
@@ -79,10 +104,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v03-anschluss-und-steuerungsarchitektur.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "5b04fe481eb6628c3104e56196788b0d46b1474f94855718582954c0da99b2dd",
+      "source_blob_sha": "cdaf64afdaed3588018cc92eb2b85b56d4f7217b",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "2087e3cf2c87722f8dab42482c804a3a4fbc51df2b41ee8d772d4c9b50047149",
       "public_path": "grundstudium/base/v03-anschluss-und-steuerungsarchitektur.md",
-      "public_sha256": "78ac3ab6b71c4fdf9b1aec2b3f00330f6520b78b1e225ddd73210247caf5528e"
+      "public_sha256": "b263157d5947c470076562024ebdb21d51e234b40126e8b7519f5e7a74a9ad4f"
     },
     {
       "lecture_id": "WOEK-G-BASE-004",
@@ -95,10 +121,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v04-erfolgsgroessen-unvollstaendig.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "72acc43301d778d6b8972b498fdc0a9e1cb080311156c3ccbfa09201806bb0f0",
+      "source_blob_sha": "873bfe3492bb7e864edc1b7cef937d0ae2d52130",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "6dc19909e63bf946adbc392c84b18db751d0c0c64684d7f4b900dd18f45e17bf",
       "public_path": "grundstudium/base/v04-erfolgsgroessen-unvollstaendig.md",
-      "public_sha256": "99b428f503a6dd8466454f6579d73620a2c84fee1cae5592d9cdca1f1904fc3b"
+      "public_sha256": "aa79946f85380c83047b287fc7e866a88119ee28eb3dff062d04d880dca333a4"
     },
     {
       "lecture_id": "WOEK-G-BASE-005",
@@ -111,10 +138,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v05-wirkleistung-scheinleistung-blindleistung-verlustleistung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "0936274796e0d1adf29ef58a25f7119e7563e3327355c2a9b521b28f56e853ce",
+      "source_blob_sha": "55c5766cfdcd064edd809ff9ecc873bd9cf36b26",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "badfc560edc75f0bd6d9420ce2347f0f3aca61c6090eb30043a8e0c9c4563a8f",
       "public_path": "grundstudium/base/v05-wirkleistung-scheinleistung-blindleistung-verlustleistung.md",
-      "public_sha256": "c565e2213ad14b56a0ef71b76c114b828a92e3771cb5c1f3bf885af6923d2e26"
+      "public_sha256": "d39f9902562060853d09f1173b0f2d12043fe69374423856b98f6438816dc90a"
     },
     {
       "lecture_id": "WOEK-G-BASE-006",
@@ -127,10 +155,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v06-zukunftsfaehigkeit-risiko-resilienz.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "82d07c63d49f5023093111c2e4cbb0d47bab3f4f680bae3f77d738dded43ade1",
+      "source_blob_sha": "582d6c9c6110a11ee2f5f102acb8bb4d0a21f566",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "36a4e3385c0693c452cad3acd53d5265b0700a203188d1b4e229918ff93926ab",
       "public_path": "grundstudium/base/v06-zukunftsfaehigkeit-risiko-resilienz.md",
-      "public_sha256": "97f2998fb2138d98f9b0b07b5073e532d49823197a247da390294437b28cc530"
+      "public_sha256": "aca3322c9f3a92788e312165207e4e7d25405ace473cfe7a75e2b539f24b410a"
     },
     {
       "lecture_id": "WOEK-G-BASE-007",
@@ -143,10 +172,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v07-mensch-als-wirkungsdimension.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "124b6135ce0993fe133221d094c0d16849af96796b3ceb2aeecbfbd465777982",
+      "source_blob_sha": "989da93352469ec97247393ec6164ba35c0e4991",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "4960a3a988c97ffe01e3059e7fb59bd28dc982e4099cbc6e1427132972f9060f",
       "public_path": "grundstudium/base/v07-mensch-als-wirkungsdimension.md",
-      "public_sha256": "ae275018bcefc05e358ca4aef28092eafa827e48bad3abfdaea862c6ebdc3944"
+      "public_sha256": "277872372851e78965c845e01f5a84ea38cab65bfdc685fdc6af7915aa46a1d4"
     },
     {
       "lecture_id": "WOEK-G-BASE-008",
@@ -159,10 +189,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v08-planet-als-wirkungsdimension.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "bf862a6255b4305c6f5b9002d61a96cc0433c6075ba1a45ef6f1e2211b6ab83c",
+      "source_blob_sha": "c8c844aa51cd3e7f848d4967eebd408a25e72db7",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "b2f6d291b3a49515d1c48330deb58a8d310eae6510c2fba71b4848ac72894e02",
       "public_path": "grundstudium/base/v08-planet-als-wirkungsdimension.md",
-      "public_sha256": "b223d48118d744dfebdf1b8a86cefdc5b89414a1dd7e5dc0336aa97b9a981d4c"
+      "public_sha256": "24c01ba2b69dba4beb954f95338d724499f7a9c4563371b3345a110c2b1ffef1"
     },
     {
       "lecture_id": "WOEK-G-BASE-009",
@@ -175,10 +206,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v09-demokratie-als-wirkungsdimension.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "2f96bb178ac0ab64374166023f5c2fc3664bf7c6ee8b9ff40d8bd3bb2b823592",
+      "source_blob_sha": "58da8d23d60e2577128110f3a7e2892a5a61b3b8",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "3e7ad89dadbc2de91f565d793e0b587950701d4edfc7ff9f5b6e3a0b94ed61fd",
       "public_path": "grundstudium/base/v09-demokratie-als-wirkungsdimension.md",
-      "public_sha256": "7ee623d98ebbb5eccfe5ce4ad1d3887b918ae48e263fcf101c27d3177e531b5a"
+      "public_sha256": "a8090c9dcf22857c9dc4f426486da72f864414bfa33e7d77672ea6a777e520e0"
     },
     {
       "lecture_id": "WOEK-G-BASE-010",
@@ -191,10 +223,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v10-wirkung-ist-nicht-absicht.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "aef5dea6726dfbc93b25a0429a58056aa80c8ad0ba2a026b1dd5faa727383c0a",
+      "source_blob_sha": "47732ae50fa9d296b9605d285d1dd483e86763ce",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "7b44c2f6fccc152ac32f3dccbff47580dce4363c448f1362905edcd312086c3f",
       "public_path": "grundstudium/base/v10-wirkung-ist-nicht-absicht.md",
-      "public_sha256": "59f57f2f86b80de88e202ede32250183db1a86dbbe5d6c1637325b3ca1be5942"
+      "public_sha256": "34a9aa678f55fd5df9ee2dcd8d5e54c1a7c1f66ac2b472692962bab3edb925e5"
     },
     {
       "lecture_id": "WOEK-G-BASE-100",
@@ -207,10 +240,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v100-praxisprojekt-indikatoren-datenquellen-ids.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "46008771e9d02e4a122bd72f931adc6403f5a979964227eb77a48d4011550eab",
+      "source_blob_sha": "d285e7e8621cd3465c54f3bc57c1b06bcbea52f7",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "4f63f0165350979c986d59fb1e6ab5255c680819f5731b4d361ad528772e9935",
       "public_path": "grundstudium/base/v100-praxisprojekt-indikatoren-datenquellen-ids.md",
-      "public_sha256": "4357e5f2d5a36b90858b5758ccd499121291b693909acb180dd0364fb9eadb37"
+      "public_sha256": "a5f6924136fe3291f92722f5d465465df8a63d4d7f93d88b3ee9f78500f2cdd0"
     },
     {
       "lecture_id": "WOEK-G-BASE-101",
@@ -223,10 +257,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v101-praxisprojekt-scorecard-und-optionsvergleich.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "28df56dda40bc053f873e3f1bed8622dc7483902001ef0af952544c3a641634e",
+      "source_blob_sha": "c9e914647a8ea3bcb01f2e1cd0b771cda186d632",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "c6d3e0f2c09e2ac910ad737a36baf8269d4ec1256b1819cb54536661f94fb1d5",
       "public_path": "grundstudium/base/v101-praxisprojekt-scorecard-und-optionsvergleich.md",
-      "public_sha256": "1eb0126e941b0bb5f8622b31152a8e4abeea587b39ed3205ebb31ed9b4b83685"
+      "public_sha256": "95094a422552eafaf382f441050f99b1c4e5e29a087949f63535adf5dda7d171"
     },
     {
       "lecture_id": "WOEK-G-BASE-102",
@@ -239,10 +274,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v102-praxisprojekt-risiko-resilienz-transformation.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "3cb6cca9add1a93c1c3609c5dbc905d2bc388cdad1b0576b0df2f88a3e332f1e",
+      "source_blob_sha": "6cb804d10bcf2fb39fc0ce94ff6ebd1341fd2596",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a4b9049b315c7d979c749adfbd6f7f536c7e2ca690258ca7354979005bba3b7b",
       "public_path": "grundstudium/base/v102-praxisprojekt-risiko-resilienz-transformation.md",
-      "public_sha256": "7fefd4cad0c0bd76a4faca4ba8335bc92d9a2be98c8a2674d1e786d86bdc3fcd"
+      "public_sha256": "9e915e0fbb07482ba52fe728a1b7d6e7e36cf4739d243aceee8698ebd8fbfca3"
     },
     {
       "lecture_id": "WOEK-G-BASE-103",
@@ -255,10 +291,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v103-praxisprojekt-unsicherheit-kritik.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f2459895441dc8119f8c8c9d28c0c8798006564ee4cf9a493cace4937d199d3a",
+      "source_blob_sha": "96cde07b6bc7a5ad98b49986c57bf62583f79257",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "fd6f282b1580d86296f9fa50740746693f5980eb2a94eff383d53aea88df2c01",
       "public_path": "grundstudium/base/v103-praxisprojekt-unsicherheit-kritik.md",
-      "public_sha256": "857b634c157a1cfa9fa580095d1cb19aaf097bbfcb8f52a33e20d2504fed662c"
+      "public_sha256": "1418df93ed5a544523c206000743c4f20fd36cf4504af520ef22ac7b118931b4"
     },
     {
       "lecture_id": "WOEK-G-BASE-104",
@@ -271,10 +308,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v104-praxisprojekt-soziale-tragfaehigkeit-missbrauchsschutz.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "45b8c4bb10c143525c5b6fb0b9d323a315608a354eb02d3530b9782d10b3c55a",
+      "source_blob_sha": "a2e7379fbf10d57c4506907873b7440406995231",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "d9aa257774cc80d5925b8aa21878e42808126aac2b3397673c07b7270ed76df0",
       "public_path": "grundstudium/base/v104-praxisprojekt-soziale-tragfaehigkeit-missbrauchsschutz.md",
-      "public_sha256": "2791e6b63fa4753eb972cf035afa00737f96f058a6a2235a7d947a46d8607399"
+      "public_sha256": "6d40c68396b0f9d12608df52c5d814b7476af9f119f12143ffa76e7e6b70ad75"
     },
     {
       "lecture_id": "WOEK-G-BASE-105",
@@ -287,10 +325,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v105-praxisprojekt-iteration-umsetzungsplan.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "284a60ed1de26de67a44680c9a2d069516cd2b53eb5a1fe157e0607613efa822",
+      "source_blob_sha": "f8c0df9f1c6f10eab3655e7b02e42f8d0f250251",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "25433c5360e698ac9135e88168f7db395650283ce766166f17a8bbaf6510f53b",
       "public_path": "grundstudium/base/v105-praxisprojekt-iteration-umsetzungsplan.md",
-      "public_sha256": "136ee8a69f4b1142a1e1047b573e166691abbd05aa91c1d1c6cc8d8861fb0398"
+      "public_sha256": "8d202fc19df39dd1a7ff56dbe968885c7b15585b9b4f835b2147c6cd9766622d"
     },
     {
       "lecture_id": "WOEK-G-BASE-106",
@@ -303,10 +342,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v106-praxisprojekt-wirkungsdossier-schreiben.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "71f8341202c0e0835a5f1642c6bd70f55157e4e48986eb60809013e469a830d4",
+      "source_blob_sha": "bb396f0e26501941f30964ba84cf510e2b7bca55",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "871eb8bb62c7ea19e7ccf2d7eb086941cefd10c5f240753cc9a86d7a0e67dfd1",
       "public_path": "grundstudium/base/v106-praxisprojekt-wirkungsdossier-schreiben.md",
-      "public_sha256": "ae41fc40790bdb5714e34613cf58f7e083a5a9ab527c05afd2823f62a7ed54d0"
+      "public_sha256": "a2977404143301cc3ab4e70ee157c5b3972952ffa2abb1d8cdb77d5072c0b974"
     },
     {
       "lecture_id": "WOEK-G-BASE-107",
@@ -319,10 +359,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v107-praxisprojekt-praesentation-verteidigung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ceec93b7cb5fc0d4f87a4248893e3ddef433ce8f0beb1e720246c4a64bfb8b4e",
+      "source_blob_sha": "e187326dcda73ab05416b5805ea8d63fc1c663dc",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "991674a50e77652a499f82250539123c7118bacbe2339c552da31b13ecb4a127",
       "public_path": "grundstudium/base/v107-praxisprojekt-praesentation-verteidigung.md",
-      "public_sha256": "a0ee54b3d6da9f93f9d0bd5473ce30745527381a2860cb9dcdb532d875c0bf7f"
+      "public_sha256": "bb28fe402352f6bf98c692c156e3ea3bb1eba43bc0123b6587296c4fca0eac5e"
     },
     {
       "lecture_id": "WOEK-G-BASE-108",
@@ -335,10 +376,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v108-transferplan-persoenliche-wirkungskompetenz.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "c864e53c2f2a0084abe16537b9f6f21360c11ae19169737f41a505f7f07693a3",
+      "source_blob_sha": "2b0687631d602ec8d1bae83da7ef97461203e562",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "09d87399cbaf1791bc3ba735f6624ae4d5f71b1183088d46e9ed4834d025719f",
       "public_path": "grundstudium/base/v108-transferplan-persoenliche-wirkungskompetenz.md",
-      "public_sha256": "c2c533fd0a9a33737be6b1aff2d7db8ae9c423f5e3823b2eb91cd49ac5596bd2"
+      "public_sha256": "7be37db646a220d9dff419ac047a6ce410348f06d5e33a3262d00fd53880bf5c"
     },
     {
       "lecture_id": "WOEK-G-BASE-011",
@@ -351,10 +393,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v11-positive-negative-ambivalente-wirkung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "84831bfd2a5f508436e97b6f825696bf0681e8120f5a9f1d43b51af5bd29bdd8",
+      "source_blob_sha": "1e04847a2d2ce1b7058bbe471175059f4b147872",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "248f20bf515ee6ab4218aa807587b665b8a230e15f3fd636d731471afe5a87e1",
       "public_path": "grundstudium/base/v11-positive-negative-ambivalente-wirkung.md",
-      "public_sha256": "6f0f023724cf6499c0d9c8608b3a37b0191d4537996d2cf06fc8063974b77e68"
+      "public_sha256": "fc8df5a8c395b865e092577bf0922b639c90ea714a0efa084bbadd18cd5b4015"
     },
     {
       "lecture_id": "WOEK-G-BASE-012",
@@ -367,10 +410,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v12-wirkungsempfaenger-und-wirkungsraeume.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "0cdb0aea56f5dce000ce57eefb7326a1517aa9dc62c5529eafe644e058ac4399",
+      "source_blob_sha": "7f3ccbf6a1f1a5330533c3410048480065382483",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "0eaae2e9c6ba9f3c803de799a1811988563ce991ff766b600331d5835e2500b2",
       "public_path": "grundstudium/base/v12-wirkungsempfaenger-und-wirkungsraeume.md",
-      "public_sha256": "938d8bd6227dd8a89ab8f4680d98c3d9186c08cf66e6d209af896c3eebfd2300"
+      "public_sha256": "b113ec037bd01a6e61841b044dd4bc689f92bdeaf0bd86b42853c3b90dc4d9ba"
     },
     {
       "lecture_id": "WOEK-G-BASE-013",
@@ -383,10 +427,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v13-problem-review.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "8661f4807a64e2c687605a8cb93ea2136352679aa172a17b89912bc417223b1c",
+      "source_blob_sha": "78c1f0b615b1c85210b692250c34d00a995e397c",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "789dc21b924d52e0ccf14e1854b6fbfe62967a30b028ca70728d79a063736db0",
       "public_path": "grundstudium/base/v13-problem-review.md",
-      "public_sha256": "750ccae19d89cdf6419eb1cf8ab4183c4faf61fa908e2c57c3e3d84c511d1963"
+      "public_sha256": "baf17d62994d6b8353b226fb1284a89232d156e257da4b4c1b91df7e39420c39"
     },
     {
       "lecture_id": "WOEK-G-BASE-014",
@@ -399,10 +444,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v14-goal-review.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "3588dfe04c59bf7eef850f29bbe9a22aa862086e47322171543fed0953b1ae40",
+      "source_blob_sha": "defb2f08bce2c22353c18b7f4ab580c39d360ee1",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "8187ae81df3ce054c45bdab63dcb3e1483cbf9ec0a8a7292eb6c71ccd0f90e79",
       "public_path": "grundstudium/base/v14-goal-review.md",
-      "public_sha256": "17a83663ede65a6f3daa83c51e3468fa73e2b139fdf314a16f5679e6ef9e6c5b"
+      "public_sha256": "efcb22eedc6f156d1c13f568a83d6a2c983424544951c6dde95fc9e7076c2a94"
     },
     {
       "lecture_id": "WOEK-G-BASE-015",
@@ -415,10 +461,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v15-wirkpfad-evidenz-attribution.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "2230a58c8009969de6410681c469ac7e56cf87d231e8279d90ed16080a4ec0cf",
+      "source_blob_sha": "9eaa4fca45023c57c2b155753a26099dd0453a58",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "77960fa9566cdee483aa707101dc4b18b18cdc5391e95f8982933cff06cc6914",
       "public_path": "grundstudium/base/v15-wirkpfad-evidenz-attribution.md",
-      "public_sha256": "25d6e9a0cd1aa6a81cad88d08ecffeb8de783f7d6db5541d698a14881a6adb30"
+      "public_sha256": "8fed5b277f8e9bde80685920ebe075e602c540152dd4f84bac573f7499c9cf33"
     },
     {
       "lecture_id": "WOEK-G-BASE-016",
@@ -431,10 +478,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v16-maerkte-produkte-lieferketten-wirkungsraeume.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ae2319382c929b21c523675a6b73bfde40f300a48f28472e6ffaec8b0cf055c1",
+      "source_blob_sha": "7ac3da5d96caf8f626829ca12b6e2a47c0172ac7",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "7b2b71530bca6d8439c497c607bc6dd6515fed1474f8205cc74f15038140ffdc",
       "public_path": "grundstudium/base/v16-maerkte-produkte-lieferketten-wirkungsraeume.md",
-      "public_sha256": "d89856452400322795694554880949759d0613b13afb108d385a5e3504a15783"
+      "public_sha256": "e2924f45db85e34ea84c3217e9a27a14c4c66671c713ebef8893fe4a880ee018"
     },
     {
       "lecture_id": "WOEK-G-BASE-017",
@@ -447,10 +495,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v17-medien-sprache-oeffentlichkeit-wirkungsraeume.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "7272e34ace479519ca5c5674a5839591a16139301b78c119cad38ea268745bd0",
+      "source_blob_sha": "c7d3292a89afcd239880ad2a99f1389293b23da3",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "06183baca2683f883247c6f34788228dbf20ef588c1383eef90313cd0798d42b",
       "public_path": "grundstudium/base/v17-medien-sprache-oeffentlichkeit-wirkungsraeume.md",
-      "public_sha256": "48523b7d57ed57538a153247d21e92047390a4232a76fc3035b3975da5727809"
+      "public_sha256": "eae4237de75c2ddedcdac28d6f046f3e8162025501b455c78c5f443eefb9d92d"
     },
     {
       "lecture_id": "WOEK-G-BASE-018",
@@ -463,10 +512,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v18-zeit-generationen-unsichtbare-betroffene.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "4ed2c3164dc89b367a1b106ae9cc71d98a05c2c88cdbcf3301d69a8d890f4fa3",
+      "source_blob_sha": "52676e543bae49868e7a65bc47846984c6e2d47e",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "15a607b3da326c5c5ddd4f6a231600e5a97f392719ed96cd6349de96e4f6fa89",
       "public_path": "grundstudium/base/v18-zeit-generationen-unsichtbare-betroffene.md",
-      "public_sha256": "4e731d8ba151d1872f0aa43ea1aebe1fb9d92afc8b8d774309253c81c62da3d1"
+      "public_sha256": "156fc222f0c9303e9fd611f3ab3fe5f8d6b16f8c97adf599a4409f6ef17a9a5f"
     },
     {
       "lecture_id": "WOEK-G-BASE-019",
@@ -479,10 +529,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v19-wirkstoff-analogie-mechanismus-potenzial.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "fa273578a660cd4497368dd942df564683b22d863b025ad9279203b29f3c4a20",
+      "source_blob_sha": "7c84609ae26f8401fdda602d48615b2d186f89d8",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "ca8b98610aeabf8d481d67148cc69c0e3a452359a975a382cf5a6da583b78f45",
       "public_path": "grundstudium/base/v19-wirkstoff-analogie-mechanismus-potenzial.md",
-      "public_sha256": "1d157f26a4c0711fa00ddb430001302bde778873682e78817957e8b020a26ba6"
+      "public_sha256": "3450491d809c11b283a2a613c7bea0f2249f39439863dd4b77b82345b5e2e138"
     },
     {
       "lecture_id": "WOEK-G-BASE-020",
@@ -495,10 +546,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v20-gesellschaftliche-resonanzfaktoren.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "906ab2d0e3517e82c1b12efa6359b7cd1fc308a94c58129a8af78d65c2dc39d6",
+      "source_blob_sha": "78526acae8c476679bf248283575eda848a7405b",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "ba21917b4242288fa8c613addcf8e63d69fb1e1866bee621587d4e4094ddfff6",
       "public_path": "grundstudium/base/v20-gesellschaftliche-resonanzfaktoren.md",
-      "public_sha256": "2bff1951535c120f8bfe6917f776b029dc15c2a2f3e1e3c8402eb2f1db11aefe"
+      "public_sha256": "c81ec872a84b0c83d1399bd4527ddb5a4c5731c470404e72ba90ccacf680fddc"
     },
     {
       "lecture_id": "WOEK-G-BASE-021",
@@ -511,10 +563,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v21-produkte-technologien-institutionen-als-ausloeser.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "253ec2c731b2d756f962c47f6bd34343761154fd1267c364cc9766a9175ea2fc",
+      "source_blob_sha": "ebe40c9fb1a66e25cf0b87ca8639b6c0a5b541db",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "45d7add635c7c86a4e8a19e826704b56f2bcc11937dd78fc10f0d2049d05b32d",
       "public_path": "grundstudium/base/v21-produkte-technologien-institutionen-als-ausloeser.md",
-      "public_sha256": "79fa666382eda220d0721e5f88ceea6134071cdcd3ebf0a06b3b2a0dfca4287e"
+      "public_sha256": "157817de899f3e39a85b94a33ec84947b433da312ef9d18cf318d32d5cb9b233"
     },
     {
       "lecture_id": "WOEK-G-BASE-022",
@@ -527,10 +580,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v22-wirkungssprache-und-quellenklarheit.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a9fd31716387282f79911589cba0c7be698f452d9ae427565cf184182203df59",
+      "source_blob_sha": "2e07fd71a7fcdf40038eca15c4c6c81f3823ef12",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "e7809d5243b317ddf80b5b9b0e253188304f8ec799a36a81291374783c0d2f84",
       "public_path": "grundstudium/base/v22-wirkungssprache-und-quellenklarheit.md",
-      "public_sha256": "45edc7037b128c179389b059418627f5304226f65fa7887a04b8957a6dbe2f7b"
+      "public_sha256": "6a5d45fd7b50dae28ec61d1d91929f1ca2d33e51d0d10c0fa72adc2ea0ca7634"
     },
     {
       "lecture_id": "WOEK-G-BASE-023",
@@ -543,10 +597,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v23-unsicherheit-ambivalenz-transparente-bewertung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "48a5fea544d33f5f948d727a91172e40452c6d9d4893bc17123f273ad85497f7",
+      "source_blob_sha": "71573c39e977c1672a2cddfd93b4daee93ae8155",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "6106721ace203101d9b8c07dc9ee3d081f2940365594a6c85569be0626d830b9",
       "public_path": "grundstudium/base/v23-unsicherheit-ambivalenz-transparente-bewertung.md",
-      "public_sha256": "06041852113e7359fc9fd421d5d4151ea0440cb9c61175573e864eef88b5a51c"
+      "public_sha256": "a9254abb443f6d68c8bf745058e06a1661d00c2ede1dcc47d1632c1abbeee9f4"
     },
     {
       "lecture_id": "WOEK-G-BASE-024",
@@ -559,10 +614,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v24-deeskalierende-demokratiestaerkende-kommunikation.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f64bf5f4555ef618de6da933669902b2b93a1e039702033f8930d277e1d48600",
+      "source_blob_sha": "112fb0e46adbe2ec54020f1629e00130685337e5",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "6cee418563f6d3f1c2b1111c6039c8b441d640b768dfe727d26f3ddb36cd436a",
       "public_path": "grundstudium/base/v24-deeskalierende-demokratiestaerkende-kommunikation.md",
-      "public_sha256": "b47c274214c8a9df0d2c1e42d449e04f4003e1532cddcd0ece1fa97d5f691e1b"
+      "public_sha256": "dcfd85ed6f8e358d4806cbfb0f1b064b058884e9054f1dea57d8c10c4f2843a0"
     },
     {
       "lecture_id": "WOEK-G-BASE-025",
@@ -575,10 +631,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v25-agenda2030-und-sdgs.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f3f53a23ae24bdff3f523ee62ef38bb56aabfaf329901d24b5341a2a76887934",
+      "source_blob_sha": "c9fe2303a6da2a16653443263dc6d1e9a31377bf",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "ec5bf221d5561d8f5fc6732de34e5b4a7f316bc8577306f447cf7699a6f52fe4",
       "public_path": "grundstudium/base/v25-agenda2030-und-sdgs.md",
-      "public_sha256": "f66baec4ff7f208290377be558e72a416c542ba504913f0e952c783f76a388b4"
+      "public_sha256": "98d89c068add53762c2c89a0e977a30ab83b46ffa1f160d265a6c5fd1beeb3c7"
     },
     {
       "lecture_id": "WOEK-G-BASE-026",
@@ -591,10 +648,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v26-sdg-plus-woek-referenzrahmen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f2420d0d45b4c3c4539e1f0dc35da52dcba0eed835804f0a9796619f0bf2488e",
+      "source_blob_sha": "8ead17953372097d68e8bb8d467f81a73431eadd",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "003e9c08d33b740b0d894e0cdb2a58bb2896f2c73cf4c89dc608dcaa95e443de",
       "public_path": "grundstudium/base/v26-sdg-plus-woek-referenzrahmen.md",
-      "public_sha256": "ac9225ded67e6ca9474d6674826687ef1a1c17418101f13afd21bb994b643f25"
+      "public_sha256": "591999950712eaca20e24a3c7645bdc377cf26d18abfe498aa0db283fbae53f4"
     },
     {
       "lecture_id": "WOEK-G-BASE-027",
@@ -607,10 +665,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v27-referenzebenen-recht-schutzgrenzen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "de66d027752f2c52dce956603a7f60cc1fb3308b91211686be5bd24ebbb4139e",
+      "source_blob_sha": "b4ae55cb105d948308cccd37f98ba61f732d2fc7",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "b5e486a2977a42bbf3f5323127cef17e6e60b0b5683fbadf93a78fdc34ba3553",
       "public_path": "grundstudium/base/v27-referenzebenen-recht-schutzgrenzen.md",
-      "public_sha256": "c3687d8655d8c931ed674a05dfaad312f7da394f7398704eb83b90fec2f51d02"
+      "public_sha256": "a13ddbe92e19fa7c599f2bf8240d2f1d733fde41e0a1fbbba81538a2e93e7c44"
     },
     {
       "lecture_id": "WOEK-G-BASE-028",
@@ -623,10 +682,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v28-datenwelten-reporting-staat-indikatoren.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "7d2395ed09d3cb794b0fcb2b0b18350473cee81adaa98a6228a170bb3eb8cbde",
+      "source_blob_sha": "157416e30a3cc2acf3d7a50a60f238728590dfd7",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "bd2be843560f3bb430330f8c2fb6432ff1a46250298245378aa39422df8525cf",
       "public_path": "grundstudium/base/v28-datenwelten-reporting-staat-indikatoren.md",
-      "public_sha256": "100a1c1e4f5aa58a62068e3fad7e3c3ae86da08a3cb38753397f1f783f07a27a"
+      "public_sha256": "7a4bf94e8b9b18b2e046241efe57261fab010b8fa1f698cdf618e4c7f5f8faac"
     },
     {
       "lecture_id": "WOEK-G-BASE-029",
@@ -639,10 +699,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v29-masterregister-wirkindikatorenregister.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a9d10c9abd67228b7d123815f65b9855b6e39b8447f1c40e96f17bf7cfeb42ba",
+      "source_blob_sha": "9f2673dea5396e4dbefcd852738cc34123de60ee",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "94c0b513e714df42ca652310549a8427a74bd86d0f62902abe6d7af5270832c7",
       "public_path": "grundstudium/base/v29-masterregister-wirkindikatorenregister.md",
-      "public_sha256": "96e731cfba78ac651ba5ee69d3e6c9f665256baa1ef521f4dfdb4375a8491e62"
+      "public_sha256": "c3749648fc47e3ea909f6d7887dcfde6aa24c6c917dc7c5c33eaaa2549351888"
     },
     {
       "lecture_id": "WOEK-G-BASE-030",
@@ -655,10 +716,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v30-datenqualitaet-provenienz-unsicherheit.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f45145336bbbb9bb89c6060bb9d8f059012d199a9f35de1a65bf0556dbcc6fa7",
+      "source_blob_sha": "acfed2560b30a9971874e500581e346be35496f5",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "42b58b55d4e4624035895533f7a434ca6785036c60c2ca426b9f6a64ba90df28",
       "public_path": "grundstudium/base/v30-datenqualitaet-provenienz-unsicherheit.md",
-      "public_sha256": "62b4b87726fbb1fe1946868c8a6299b1abbaddff5e1e9d79c181692b5ec09cd5"
+      "public_sha256": "6140567705b33a4d17ee98b8bdfe91248bcd604dba87e863a86b18d622b01d1d"
     },
     {
       "lecture_id": "WOEK-G-BASE-031",
@@ -671,10 +733,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v31-aggregation-und-nettowirkung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "84832155594ba84cc29aba22aa2914e20dbe1f7d14ba690e2e4944bd3da827f1",
+      "source_blob_sha": "dea40a8971e9650fd1a9dcbb2995bd7566a0bf83",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "87de711bfad4661a3e3734e2e0df7be97fc0bbbd55ef2242ebb71879646a8417",
       "public_path": "grundstudium/base/v31-aggregation-und-nettowirkung.md",
-      "public_sha256": "26d612ef75d28d67fb8fa934a8b4937b6484899313018d078ec62cbda70f08f3"
+      "public_sha256": "7f51e4cc36a55d05ff70d5e1dd6974c191ead4cc96afcd62c790a2e4dc99e826"
     },
     {
       "lecture_id": "WOEK-G-BASE-032",
@@ -687,10 +750,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v32-scorecards-bewertungsprofile.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "dd1b8a7f6508fd50b3143856da397a2cdffbc0ac9c1b848e5439e139a6e4638d",
+      "source_blob_sha": "0ce8c5f67906f091aea471d42a972c9fd93646f1",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "5f0901579a9b83aa6eec50568b3332124993f9fa229ca2a93098bc3d500bc8b6",
       "public_path": "grundstudium/base/v32-scorecards-bewertungsprofile.md",
-      "public_sha256": "d4457fef37dc45cf4fe7859460a0060a33498ef7c86b03bd0c736391009127b7"
+      "public_sha256": "7de95a251db7ecbc2d23c4f5efff34c796a4192ca8a0e6d85eaeb1ae04d2ad20"
     },
     {
       "lecture_id": "WOEK-G-BASE-033",
@@ -703,10 +767,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v33-nwi-vs-t-sroi.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f9bb10daa72060c466a97c24e644ccd7a0ef2a3c44345d6385c3f8243ebd4307",
+      "source_blob_sha": "949763780361fd82390ed0d4b79ccd23de62c0c5",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "173517478f5885b1d5e40ba670c3653525c4a0212c61898d36dd5f88b12fcc8e",
       "public_path": "grundstudium/base/v33-nwi-vs-t-sroi.md",
-      "public_sha256": "7e8392b230c8d54c6b28dff6cc7409124e913a1b37819deffaf4bddf56be75ed"
+      "public_sha256": "d8c35c985a07d482fcda7307bdab9d325f569607bd9de909b6f3fad2898963e5"
     },
     {
       "lecture_id": "WOEK-G-BASE-034",
@@ -719,10 +784,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v34-reverse-merit-order.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "758f4d4f1f8a1bbe882e30f1a10ce7cbdd9a093fa9bc3c15867a4ab99fdf3833",
+      "source_blob_sha": "898b3dcebbf5a3e6ad75cba9b48ec5e3c52b03f1",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "14f93a23de156623f9c37f47e324e98b8aaeba4141d767515ce60565570babf9",
       "public_path": "grundstudium/base/v34-reverse-merit-order.md",
-      "public_sha256": "e09c0e2699579e009b6afded54e9904db82d002104e5aba0ea7fbf91302fae34"
+      "public_sha256": "737b8d3165f37a42eab8a7a84b382c2e36545a43ba2398c6a5d043457f05084e"
     },
     {
       "lecture_id": "WOEK-G-BASE-035",
@@ -735,10 +801,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v35-nichtkompensation.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "168c73b1c5e07413c88db21b5a6f2ab3f3c742e918022b6e532867591d3b1c25",
+      "source_blob_sha": "2dd11e34e4fa35b938631080655d6b5b0950da4f",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "b57b149f1a0091296bfafde3f70eebdb1110bad7092b50e31d665b0e98d5f229",
       "public_path": "grundstudium/base/v35-nichtkompensation.md",
-      "public_sha256": "c0033bbe2b705b38b1d5f1d50e9657f74afe53930939baf86f07f648f32eee28"
+      "public_sha256": "fa3ff3faeb9661eda550f92be68e76de2164f8c91251d764b3c53f563e6982f8"
     },
     {
       "lecture_id": "WOEK-G-BASE-036",
@@ -751,10 +818,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v36-profile-lesen-begruenden.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "de041e876651332c30b72e62fc9f502f4b89a91b5e0f97f5b1674a7adc710bb4",
+      "source_blob_sha": "f218652b8b8a3c4249b110bc1c5869c539b420c2",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "f4cab15477f738ae7b0578fb050a3154657771d2d32137ae8c3e225e9f8d541a",
       "public_path": "grundstudium/base/v36-profile-lesen-begruenden.md",
-      "public_sha256": "630e9dcf897f80a374e1668e43845aa75a1fec017fd677d18f6ae19c06903be9"
+      "public_sha256": "813098db1d24bcd4372f8367f85c324dba19f3854422ba5bae52d4557fe54195"
     },
     {
       "lecture_id": "WOEK-G-BASE-037",
@@ -767,10 +835,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v37-externalitaeten-und-versteckte-folgekosten.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "93132a29bf7829ac0ae1d02608e1cd76b701e33c350325f52e88214458504e37",
+      "source_blob_sha": "0fdf30285251b2a8d40518f727addad1a714c86f",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "4c2d611bb8544280b3f25a8d5ea826b3b9652095a90c25a8acb6a6241909e187",
       "public_path": "grundstudium/base/v37-externalitaeten-und-versteckte-folgekosten.md",
-      "public_sha256": "202290501243bb1772a8139f7e5979bbae6a59f3da2fcf11805f195930f0dbe7"
+      "public_sha256": "99461f746fa34bcf1ad53a0b5b8bf13fc315892223bc46d33e0914ed317fa551"
     },
     {
       "lecture_id": "WOEK-G-BASE-038",
@@ -783,10 +852,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v38-preis-als-wirkungssignal.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "26a2e58866dcc7a1c911ea6d70e8dd8e13fe56603e742b5a53de3b7ba5c06777",
+      "source_blob_sha": "71837a9afd5203bd81f7a9984a537316f2b489d7",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "65b7dd10cc2aef055c33a3f4ff23246e9c46026ff80f37043cd3fe0ca62e1c78",
       "public_path": "grundstudium/base/v38-preis-als-wirkungssignal.md",
-      "public_sha256": "fae2b7e136ec7fad34627ea28b03875b25263590d2e53f07d3cc6564509c1edb"
+      "public_sha256": "5cb460a0ba06ad7b77fe555ee9ea1fcc8285766dedc14d08e3902f17c4f40929"
     },
     {
       "lecture_id": "WOEK-G-BASE-039",
@@ -799,10 +869,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v39-verbraucherinformation-soziale-abfederung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "6d44dca996c83adcf04028142a2098013ff6843096fa988d330cf486264bd9ee",
+      "source_blob_sha": "2187c967bd7afea82db8357caa40bfe1e34c66c0",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "621cd0642680122fb1240cf78e8fc065802d81871d42bd3f3f504eaf9d042ca8",
       "public_path": "grundstudium/base/v39-verbraucherinformation-soziale-abfederung.md",
-      "public_sha256": "68450a15d778ad129a22f81651ead59b026fb1a5c482d8abc116bfa5d4982cf1"
+      "public_sha256": "c08f1c60161b54b3c2051df6c3cdfe5a15bb89e249622cae319f9daa7a20c562"
     },
     {
       "lecture_id": "WOEK-G-BASE-040",
@@ -815,10 +886,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v40-wirkungssteuergesetz-als-policy-modell.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "5d49e3dd4232e84745441f8c0bbe90bdd59d3b701b7b3032bdb72dce4ff62dab",
+      "source_blob_sha": "d01b0fa8e7bff7653493087a483518d5db1c56f1",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "dc76d41e9e1904ecec6b81320b0067d44db1fa3cdb3bfe45fbf37338d2ebec54",
       "public_path": "grundstudium/base/v40-wirkungssteuergesetz-als-policy-modell.md",
-      "public_sha256": "6740ad767d7203430238b6ad6078fb919d48600fd6d746a14e1629d604be37cc"
+      "public_sha256": "27205801e3cbdc0cd6bd935e2c5b074d94c22e61f1bec0e4b76052303ad90c8e"
     },
     {
       "lecture_id": "WOEK-G-BASE-041",
@@ -831,10 +903,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v41-wirkungssteuer-rate-design.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "99f41072c770a10d2e812fa13b31b72f93f194b37851d74d78383ebbf2590110",
+      "source_blob_sha": "118b6e505b381fe4fe5f0263d6858d2836172246",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a7faec2054b04bb21e607387db2377846c55cd67a809381f4357687de4f6a1f8",
       "public_path": "grundstudium/base/v41-wirkungssteuer-rate-design.md",
-      "public_sha256": "49c4b44fbc508df40aeab1dfdf029f3e05c35a3df4de53075d0a9ae9bf801b15"
+      "public_sha256": "30f8c745ed284af6b70ce42a693546ff7e4386582340adf6af3a532d522cb646"
     },
     {
       "lecture_id": "WOEK-G-BASE-042",
@@ -847,10 +920,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v42-lieferketten-importwirkung-und-grenzausgleich.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "4a46ed90c43fc9a82dbd34bd6d209642909700ef9d3043345639adcff0aa0fd8",
+      "source_blob_sha": "9bb931b3f43f56020b925f6629392d5849d6b20f",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "07d4d8f91d54a746e89882dd94f13c4f8cfb22eb1fb234fcf78749f96ff2f2b3",
       "public_path": "grundstudium/base/v42-lieferketten-importwirkung-und-grenzausgleich.md",
-      "public_sha256": "f542980eee11167989634afecf3e4ce653bdd55d0684240184b0bc0d5b829da2"
+      "public_sha256": "3cb62621521e50c948a56071c5b3d85f9b183cdd8a313116f3d98ed348178011"
     },
     {
       "lecture_id": "WOEK-G-BASE-043",
@@ -863,10 +937,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v43-oeffentliche-haushalte-wirkungsorientiert-lesen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "daf65a2c35cda6ef2417bb8c0ed61d5de9f6cc189e4ac7f701194950fe0a7466",
+      "source_blob_sha": "c01e7a14acd6aa17891930ee3de4300f2b048635",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "479e0c21f37badfe7335e690452354018cb60bc1c5bf9136be5c2b2b3405f463",
       "public_path": "grundstudium/base/v43-oeffentliche-haushalte-wirkungsorientiert-lesen.md",
-      "public_sha256": "6c4ef16bed550cab0e4f63a5619e18f2603bec36c9de9ba2451678b8b0fdda09"
+      "public_sha256": "f6e9dadec48efbd8c884f018cddeda85d56286fd3ae743df02cc3557ebb3e4bd"
     },
     {
       "lecture_id": "WOEK-G-BASE-044",
@@ -879,10 +954,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v44-oeffentliche-beschaffung-transformationshebel.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "3960fbf8660214ae4dd497f283709ec5a440abd39287de646d82daf0d2e47d90",
+      "source_blob_sha": "0b0c7f489672085ceb01cfe9457f27149caf3a15",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a5fa4d295927bc3a91bf73aa39e4537caae37709c1cd8ec02c0ef0254df3f14d",
       "public_path": "grundstudium/base/v44-oeffentliche-beschaffung-transformationshebel.md",
-      "public_sha256": "259c634987b590bba7cc7c9ca2431bb99b63d18657ddca9f495a10001f573c0a"
+      "public_sha256": "7bd36f315c2ec942d50c3ab6ece8b07bd5c71146da5a697349470beff47b512e"
     },
     {
       "lecture_id": "WOEK-G-BASE-045",
@@ -895,10 +971,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v45-wirkungsberichte-evaluation-reality-check.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "8bfbe74a5cd40ae699071515aac6fd78accc774d21ed84fb2dd09406a606fc97",
+      "source_blob_sha": "0dab28599b26ae9f7fcf0d35095761c7acf56c05",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "d49bbe180f3faa7173bc6fa0a8271e4813c3f644434207f794c5e3b2698f9b31",
       "public_path": "grundstudium/base/v45-wirkungsberichte-evaluation-reality-check.md",
-      "public_sha256": "e2133bdf7c5085d952ccc938baaffaa8c7b952ffaf6789c7980e8ab760638849"
+      "public_sha256": "87c36b2ea83cc4af56c59092f7afc5c2499b515b0011667d967e4ddcadb9254e"
     },
     {
       "lecture_id": "WOEK-G-BASE-046",
@@ -911,10 +988,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v46-kapitalwirkung-und-rendite.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f0f7fc5b369a9fcf174685e192f5c359d855503b86c8797c5f4661943a2edd7b",
+      "source_blob_sha": "440a77f1c3942b483ea3f32bb3d04eede216b27d",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a0440d9344a2632682082354fbdcc633b9e32472fc510255f2378fec86ed8645",
       "public_path": "grundstudium/base/v46-kapitalwirkung-und-rendite.md",
-      "public_sha256": "1811d0e8243fb38285f4a499587b8eef42f85e7101675bf68457e1a5a8117d0b"
+      "public_sha256": "55c453b42067becbbcdb2bafb384e57c7d71528745e4bb6f90ea43df7f18aecc"
     },
     {
       "lecture_id": "WOEK-G-BASE-047",
@@ -927,10 +1005,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v47-t-sroi-investitionscontrolling.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "28173d266f88020397638181fc290c4adb70d9bcbc624edfc262240b752d1821",
+      "source_blob_sha": "c8d9279261fc6916e70245b821fd41a84750af86",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "c643e5d6346eee4da58acd6c6a786759967d9d1f7ebcc41c6f8e4ab34a5eef1b",
       "public_path": "grundstudium/base/v47-t-sroi-investitionscontrolling.md",
-      "public_sha256": "46a1b924d68fb019008f611ed4890420d03d5c03800e342a62f4d0669129742d"
+      "public_sha256": "55d986e319f11893d08c77e5adf1eed1fc02a1a6cb14fc1df6803ace550212e7"
     },
     {
       "lecture_id": "WOEK-G-BASE-048",
@@ -943,10 +1022,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v48-wirkungsfonds-versicherbarkeit-risikobewertung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ea69605c56cd13bf69302f17a4aeb8ae17ad29c4a841436384a5651adb6c6819",
+      "source_blob_sha": "ccd7e28c4786a578dc9ba70629574a8602c6c4ba",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "501221920e4548be0f007a2b9167c6bcfb5bdc9af879ace6e900d7e709dcc43a",
       "public_path": "grundstudium/base/v48-wirkungsfonds-versicherbarkeit-risikobewertung.md",
-      "public_sha256": "4888fbd450b02c84d2ccb37105b3360ce092a96f8cf9f6a09a0d305a905f0e36"
+      "public_sha256": "0bbda6516cb5469f10b6adca7dd51742dbcff53a3ca9167155fc1a129070d2e7"
     },
     {
       "lecture_id": "WOEK-G-BASE-049",
@@ -959,10 +1039,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v49-wirkungswohlstand.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "aee90fd642ea8ebc0cbfc17851f329df1b7a9ae18747c5356ecc73f412ccd5ff",
+      "source_blob_sha": "194df7a4814defc074fced5416caf92fbd778d75",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a22be6985792778058345511b805f4d566b16756d6732f0c44c655edfd15925d",
       "public_path": "grundstudium/base/v49-wirkungswohlstand.md",
-      "public_sha256": "452ed2b73b073c5a885d5d2551227b0f90358f5759533ea8892ab4adbc94b77f"
+      "public_sha256": "5822d29d81af6fc4070a9ff79d7f6575bb56fcd069bd6d3128d2a6958b21a9aa"
     },
     {
       "lecture_id": "WOEK-G-BASE-050",
@@ -975,10 +1056,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v50-wirkungs-bip-modell-und-grenzen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "08c8bc7d1bccf3ec6ecc35dc552cb7e06c741a6cb9e561387f37a36d579f3cf6",
+      "source_blob_sha": "4ff1c08a782749b5e3855dbc449975283c20e451",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "0019cef9ce8f87837394b6d39b21bccfe17ae5521ca314d27a34cb1fcc87a8f0",
       "public_path": "grundstudium/base/v50-wirkungs-bip-modell-und-grenzen.md",
-      "public_sha256": "19ec96d1f26007e7d8a5e03f7574ad2d43cb2e1617bbd67d60e44c8da0133ac7"
+      "public_sha256": "d85350683cca9f434f1771f84dd358f6913cfc4eee54f9c43e52d53e663714e7"
     },
     {
       "lecture_id": "WOEK-G-BASE-051",
@@ -991,10 +1073,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v51-krisen-bip-und-schadensvermeidung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "4961117716dda74a5def63330822c46ee0ccca94dde2f32683aa8ad4a5572eee",
+      "source_blob_sha": "dddc6ce3ebad441574c81b12f52b25909ed45c74",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "269bfbe782e321802cddafba344e721cb522ccc04ee1c49b0d758f546df5ffee",
       "public_path": "grundstudium/base/v51-krisen-bip-und-schadensvermeidung.md",
-      "public_sha256": "c683f85083f26a2cdc0d79364cacb8c88ece0bc2b5d90d9eb833dc4b59fc9120"
+      "public_sha256": "fe062e3fe5d7874c9656a5197f1f930f65bbd4664899570040a76c65f598fe5d"
     },
     {
       "lecture_id": "WOEK-G-BASE-052",
@@ -1007,10 +1090,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v52-wirkungseinkommen-policy-modell.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "e9e973387683ae18eb03712a1bed7a5d710d7e25cbdc5a0e6ddc503a0cdbafe3",
+      "source_blob_sha": "fb9f37597ec48e5b0cc596dca22ba29c3f2efa9a",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "8ef121f947b2ae10ca804b56fe0e19f199531ef5949b7c28da9e6a9ba058c870",
       "public_path": "grundstudium/base/v52-wirkungseinkommen-policy-modell.md",
-      "public_sha256": "6c3e070a05e84dd000606d7c1d3b3c83d8681ee4d1ec9a057e81aaf9cfa5062e"
+      "public_sha256": "b19258fe2ecf5adba7ec832e5be3251e2a49a24489a144d509b25ba6142af15c"
     },
     {
       "lecture_id": "WOEK-G-BASE-053",
@@ -1023,10 +1107,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v53-wirkungsrente-generationengerechte-sicherung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "46445f251151e0b934d4fd5eb7d7fa4bf339d868b9f8c85565270eb56259acc4",
+      "source_blob_sha": "1c3f8dd2c15621bbe4c98396d173bd955748c798",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "6b2ae3961aed7f96809651cf2bc0de357d73dd59f5fb614f40a538ffc751b455",
       "public_path": "grundstudium/base/v53-wirkungsrente-generationengerechte-sicherung.md",
-      "public_sha256": "f86131bafc10781100f3527de85c107c86f30f365cbdf0473b634b8d417ebf91"
+      "public_sha256": "217ac43bcafd92d13342a3223a5a466c04e7b4cd16233bc5b250c737f7dc6050"
     },
     {
       "lecture_id": "WOEK-G-BASE-054",
@@ -1039,10 +1124,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v54-arbeit-wirkleistung-und-verteilung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f90825a550a024b7a67ae1d2ef29d583df32c078c40f7a12a9a72e02341ff9b7",
+      "source_blob_sha": "9a97351759716c534f841e95cb606408c5b46b98",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "7a83c11ab68b3bef8e5545b20b78b929d3899f5febed5ec32fa69569191f41c1",
       "public_path": "grundstudium/base/v54-arbeit-wirkleistung-und-verteilung.md",
-      "public_sha256": "203d4ee35f3a52fe090b1257d5fe295261c9d88a8a42c1c7ee7d525b11f85aaa"
+      "public_sha256": "5e834c0f50958b9458823554243d4bda37765bf5fd845fe2c96d56f54dc7879c"
     },
     {
       "lecture_id": "WOEK-G-BASE-055",
@@ -1055,10 +1141,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v55-wirkungsfinanzpolitik-policy-architektur.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ce33c98003f969ed5af0ecd2447d3f389081d01775245a9a077447d22601ce4a",
+      "source_blob_sha": "78720e491d58ac3c4417ff8d051d58a8949f93c0",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "ecf82c69d40687d96e28f42e1d5a3f4bf20ef2b39f4944ecdd5b8761543bffae",
       "public_path": "grundstudium/base/v55-wirkungsfinanzpolitik-policy-architektur.md",
-      "public_sha256": "cc9846d6feaadc031ee160648fbdf7ce489a920d2c647d6dd3aa099166330105"
+      "public_sha256": "6fb5a31e2dc10aef242d78f9f24f2860051ee5cdbedd0cb974497cce39066c45"
     },
     {
       "lecture_id": "WOEK-G-BASE-056",
@@ -1071,10 +1158,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v56-geld-kredit-und-kapitallenkung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "615f4dc18ef773b2c31a895df6ffee7d59dda3c1d0aec84ce2d2b689a9d35011",
+      "source_blob_sha": "8a9639654f866c1256ad7697ca48862cc1095613",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "ae030a2e9becd6cdec3d8b6ea10cfdb49befa91f9b475bd2eeb098707ec5b11a",
       "public_path": "grundstudium/base/v56-geld-kredit-und-kapitallenkung.md",
-      "public_sha256": "f11d4d1170c3e2807942ca77a22580e1457f4b7c3c0b313a8eefb7389fb86cf9"
+      "public_sha256": "e857ce5decf7fcf58960e2cd92c65025c0fa36292bbc8d12fc5085a7dc91e509"
     },
     {
       "lecture_id": "WOEK-G-BASE-057",
@@ -1087,10 +1175,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v57-wirkungsindikatoren-volkswirtschaften.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "3e7ee6268998dc2d84eb71c8c28aa780d6ef07b2328eac6ce83d9cdc36c80f33",
+      "source_blob_sha": "2a8a46482b9fe987acb289191e591c45b1edbf5c",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a7b1ca59094392d4dce731337559fc98ab7ad4d98b2e7196b5e2d918bf7c386e",
       "public_path": "grundstudium/base/v57-wirkungsindikatoren-volkswirtschaften.md",
-      "public_sha256": "72bdba9522e54884fe8555fe80ad36f3e15c6a8aaf12089ba2b00214911f3738"
+      "public_sha256": "98a188aa20fa34651a51676e713ba152a73ca45eef8a9c7d9fd71b1ae5a91030"
     },
     {
       "lecture_id": "WOEK-G-BASE-058",
@@ -1103,10 +1192,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v58-wachstum-suffizienz-wohlstand.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "d9b3d5d460e58255843ce49fd8632db17bf9cfd17742c76ba16308a0adfb459d",
+      "source_blob_sha": "bcacc5f38f7f4a81fde7573276ae437a9f68b27f",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "54945c6f410707c0bd63e2b10aec1cd97d6a9aa6674a2aeca337c86dfffbed2e",
       "public_path": "grundstudium/base/v58-wachstum-suffizienz-wohlstand.md",
-      "public_sha256": "9787766be784aa52d1a2f37f4e48468ceebb2033e58a027a2af484a9af96f522"
+      "public_sha256": "dfdfe28a82c9334b40333946fd66cc1d3ca59280c948ad715b81b89785ac3aeb"
     },
     {
       "lecture_id": "WOEK-G-BASE-059",
@@ -1119,10 +1209,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v59-verteilungsgerechtigkeit-soziale-tragfaehigkeit.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f57dd01572aafd2deb80f50cb3141ac197662391b7b442391844b1c81f836a8d",
+      "source_blob_sha": "9e34088796b1c827252792e62726cb2b4a03bc92",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "de346769d970d5eaa540f49b2748da11de854d76c8abb079064dfb89097cff86",
       "public_path": "grundstudium/base/v59-verteilungsgerechtigkeit-soziale-tragfaehigkeit.md",
-      "public_sha256": "996f97e136fd242f39eefa861b2c73a560cea57d6c63bffb935c3a50eae2c0e4"
+      "public_sha256": "51193717d6d56e46c4b1399adca2d8b5aa808114f25d6f8239ccad2b366e0073"
     },
     {
       "lecture_id": "WOEK-G-BASE-060",
@@ -1135,10 +1226,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v60-messgrenzen-und-monetarisierung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "cf93afe2c37f4ca70913ae393e290a97e0d78d1fc4173c2f85f722734b9289ed",
+      "source_blob_sha": "3d1b0a945908065912efd0174708c3f8f5fa8736",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "40bade62e5b72f04180e72ca020113efa07d53ad79397a99790e0847bb2ad6a7",
       "public_path": "grundstudium/base/v60-messgrenzen-und-monetarisierung.md",
-      "public_sha256": "7b9ecfe75671b01f74a7f665f41dfe25b5892a803a1f9ca976a039ff6127c124"
+      "public_sha256": "01b8f57c7476023c1545ca255b8435f66432a1871f8bc53a594cba3dd4a3f89f"
     },
     {
       "lecture_id": "WOEK-G-BASE-061",
@@ -1151,10 +1243,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v61-resilienz-grundbegriffe.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "7ccb343b226e021dcd212f731de88d7441cd883381204a895d180fc062d60981",
+      "source_blob_sha": "4f5fa8e06deb88a706238d111c7c8d878f746353",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "23ddfd46c5403a19172718a9866eae31f272368270837ebabdff2b2321193c62",
       "public_path": "grundstudium/base/v61-resilienz-grundbegriffe.md",
-      "public_sha256": "8ae436732384dd6c49972e3bdbd5374b33310881589b2b772583456f35f07adc"
+      "public_sha256": "edce750f3dc1b3cd896111d964ce1c5b02c22949bc3f9f37593490b99d74144f"
     },
     {
       "lecture_id": "WOEK-G-BASE-062",
@@ -1167,10 +1260,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v62-apparente-reaktive-aktive-leistung-resilienzanalogie.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a7a84ab688086cc7e7db8fc171b60642391317bfafab4f596d26e57d92aff3cf",
+      "source_blob_sha": "cf6627b561bdde9fbe0b63951bf4d117b56cfa95",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a06f1995df2aaf4b1f8a768e5b0994d73f7bd5009e8ac489238e55b04db87a1c",
       "public_path": "grundstudium/base/v62-apparente-reaktive-aktive-leistung-resilienzanalogie.md",
-      "public_sha256": "82246c48e51394d924ab6c3c12d516a6596bba6079f8548c7b8fc48c88ca3e1a"
+      "public_sha256": "56d71acfe7de8db18225dd48952ce29c9cd06dd4f4008cfb6a72bb67322ae5eb"
     },
     {
       "lecture_id": "WOEK-G-BASE-063",
@@ -1183,10 +1277,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v63-kipppunkte-schwellen-irreversible-schaeden.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "09cc17762a2bbf7e5fdb7644e56827b1cde196722ae756b405fc0fc5611c9358",
+      "source_blob_sha": "fd4d8ce75bb54ae23efd0e062060f61ea98cda92",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "4df0d2ae005bacb63488f9795e0729c737ef4d4c9112693b608964ba0b01b025",
       "public_path": "grundstudium/base/v63-kipppunkte-schwellen-irreversible-schaeden.md",
-      "public_sha256": "aa5d7ecadca50d559934896b87e52eaeecea144587d513f4be5af5b52e2001b8"
+      "public_sha256": "72bea4bd1019bb3f172f3a97d16a21bd8275a4eb6ad4fed3500f8f274efc6464"
     },
     {
       "lecture_id": "WOEK-G-BASE-064",
@@ -1199,10 +1294,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v64-kreislaufwirtschaft-regenerative-geschaeftsmodelle.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f74d8d01453d12e242575edc2d8ee041dbbc76eacdab55ee6533940af3164fb3",
+      "source_blob_sha": "572918a00f2e8b12cc8eea09d7ede17c201b3e82",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "ad1201a83b7b9d5e0804e779166c0fea5efd67569fed95acd84cfec21f794a57",
       "public_path": "grundstudium/base/v64-kreislaufwirtschaft-regenerative-geschaeftsmodelle.md",
-      "public_sha256": "7d28d544bcf602c34ce71411e477944fe7d807a9f41b646496f374859523d7b2"
+      "public_sha256": "b65acc20609c551638a0539a12c387827a9e80292e717f4673298b10010c9942"
     },
     {
       "lecture_id": "WOEK-G-BASE-065",
@@ -1215,10 +1311,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v65-lieferkettenresilienz-abhaengigkeitsrisiken.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "e9a252ae9355b735e96a77d08562b577480d29432a61a6e02d2f35c8aea50393",
+      "source_blob_sha": "fb1a2f01fe417c69a572617baab68667459f92e1",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "ca445bc42cc8d9b45f16e433949b94e737348603a9f284837f46ec80491fa056",
       "public_path": "grundstudium/base/v65-lieferkettenresilienz-abhaengigkeitsrisiken.md",
-      "public_sha256": "83644a57f9dc84f0bcdbe7cdc034263c0a05a66bd50d2d93af9df668adb66252"
+      "public_sha256": "828fb01a38518b64aec3b7e7ed7c107c930c331f0163167b08c3ef02e47717c7"
     },
     {
       "lecture_id": "WOEK-G-BASE-066",
@@ -1231,10 +1328,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v66-versorgungssicherheit-als-wirkungswert.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ff7c3b5eb944b290c67348d3d787b6aee1f55a63795559ecfa93118faf090d12",
+      "source_blob_sha": "c740af545cb6464c3addfbdc61f966e6445a4405",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "61448d9eb98ac2421ee38809fee6af9d5d065afccf0b79ef26842d767343997d",
       "public_path": "grundstudium/base/v66-versorgungssicherheit-als-wirkungswert.md",
-      "public_sha256": "c9cad939a97f6ce87a2b7d9da93ebe627a9e3f6bc60ba6f570325addc4d78af3"
+      "public_sha256": "1f793819b3d6586691044cf249fa796d38e08baf4b7c5541fec16cab7bfee7aa"
     },
     {
       "lecture_id": "WOEK-G-BASE-067",
@@ -1247,10 +1345,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v67-resilienz-in-scorecards.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "d7938172626bf8b6f0e7fd93a1000b7c4a6e3f15ba0e65c87ce2cca2e95903e6",
+      "source_blob_sha": "fce8acad981318edf46ce956da665446fc702fd6",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "e24ec7ceb0ba180548105f7a2a062088f943f2a3fc2240cdab6968536c18f976",
       "public_path": "grundstudium/base/v67-resilienz-in-scorecards.md",
-      "public_sha256": "c52d73a1c956dc96a0eebfdc5bb0b1b78524d666f2f12bc54b88b04d3c5b23c3"
+      "public_sha256": "1e1f36ca845b7901e7743e9619b09bdeb70369c652392a3d5e3a98d1427256b6"
     },
     {
       "lecture_id": "WOEK-G-BASE-068",
@@ -1263,10 +1362,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v68-praeventionswert-und-krisen-bip.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f21f466e814b2904a63840b2a6859b2867cff89f4690ab11f3793fe8e264a4e6",
+      "source_blob_sha": "57ffaa6ac5ae553d5bebd09c17e0731fe9459aab",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "0e6245b5f1bdf17c8a31a3beb5935e754300337cd7bac525acfdea9a99e7bb3e",
       "public_path": "grundstudium/base/v68-praeventionswert-und-krisen-bip.md",
-      "public_sha256": "e286f7735f835b94bb7bedb2fe14e22efa390ed2c13cff93fb2ca352260aa1cf"
+      "public_sha256": "e25dc4cd19946adea580bcbb34472421d1af33fba7410f10504be18bbf9bca60"
     },
     {
       "lecture_id": "WOEK-G-BASE-069",
@@ -1279,10 +1379,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v69-stresstests-fruehwarnung-wirkungsradar.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "693d9134ed2424bceed41400f3dab5febc4d8b3c032dd00540a3a8527f064c07",
+      "source_blob_sha": "111531d376a9ce74ea71dce16f9ca73d75259f76",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "7184c454a43d9d1872d9279eca266279cceb75baef6669ceea6ef4b6ffb7e0d2",
       "public_path": "grundstudium/base/v69-stresstests-fruehwarnung-wirkungsradar.md",
-      "public_sha256": "418b6a30d70057419bd666507f19ce57e4ef42809f9f1743f15d3100694c8703"
+      "public_sha256": "9feff52a5052254f1144c65016d149bd5b3a94bc2f28fd20afe417abc99bade6"
     },
     {
       "lecture_id": "WOEK-G-BASE-070",
@@ -1295,10 +1396,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v70-oeffentlichkeit-als-infrastruktur.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a9905f409251c20e59f6d32c1cbfa4e545df5c926c3240a109acbb573d7c2896",
+      "source_blob_sha": "70a1b93f28d275ab4caed8b8ef413ca6e62c40b8",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "5c6dc12d3f83ec483e185050abecad97aa128281a964b6f534ed68c6c838a347",
       "public_path": "grundstudium/base/v70-oeffentlichkeit-als-infrastruktur.md",
-      "public_sha256": "124a8a6455fd8e84ac87149ccdea8ace94c8a476e6464c45e83e7da2a11a6573"
+      "public_sha256": "d80cac9855fcecd22e5edf2715f150f5b77a28e221f71aec0ce9734803622b46"
     },
     {
       "lecture_id": "WOEK-G-BASE-071",
@@ -1311,10 +1413,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v71-angriffe-auf-rueckkopplung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "cab9541d5e4f982d8fc592c39df836c38de58faf5f3f7b19d7734a36b59489e2",
+      "source_blob_sha": "dd6d52c4177cbe927bbb90a9ef5d0cfc1249a426",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "f6863469e1c84d2b7afe4a58a0d29ccf96d0ff942acf2b417b0bcb2619153e74",
       "public_path": "grundstudium/base/v71-angriffe-auf-rueckkopplung.md",
-      "public_sha256": "d67463343f5cbcc1f28933d74795ad7b65b1e6e93e3dbf762cf0216b28f1278a"
+      "public_sha256": "0b469ba139f2e7e1881be3be64042b17c7ecdf5d1f16d15308e6ff0b3e3c3ca3"
     },
     {
       "lecture_id": "WOEK-G-BASE-072",
@@ -1327,10 +1430,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v72-civic-shield-resilienzdesign.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "b5200c5e725a2f04a0c51c87a01f3c90e60e91ecf642807f3228d3770d9e1bb2",
+      "source_blob_sha": "2e203485add751d9cf266067d30d16445f6eeb5d",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "9c27bbfc22ea1ec73deef58cdc54efa6c7ef8120231e923bb80a7e4c8bbec017",
       "public_path": "grundstudium/base/v72-civic-shield-resilienzdesign.md",
-      "public_sha256": "ffa22190d5605852a85382a8d8517f7e4addab299bd47f34acb572134e60fee3"
+      "public_sha256": "0edd627f7bcc50cda3c582668f12d49535098fba3fd38a70d34bde973dca6acd"
     },
     {
       "lecture_id": "WOEK-G-BASE-073",
@@ -1343,10 +1447,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v73-produkte-als-wirkungstraeger.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "c4465fd37d5092c25fa4e8c9e72a26ee18b95e29cbbc1bbe19b3bd147a598632",
+      "source_blob_sha": "6b78ea7489215fcafcf004c4bd92790032782525",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "dd88349011a49ff6a09d016441ce36a55ebbd3ad86766acd568815c3c9140bf5",
       "public_path": "grundstudium/base/v73-produkte-als-wirkungstraeger.md",
-      "public_sha256": "c1387358e9bb1acb3b83561eca1390df2dd3826f3adeb3e8de5348b06a9d1175"
+      "public_sha256": "d663c4761660be29a762f4966036bc1c7c1b2876a6eea3e44f8eb9d3dd12f682"
     },
     {
       "lecture_id": "WOEK-G-BASE-074",
@@ -1359,10 +1464,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v74-produktfallstudien-apfel-shirt-strom-haferdrink.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "cbb70cbdafff0be857718cf6373458aeda56dd598a2a8348d7f8a579d23c077a",
+      "source_blob_sha": "e4522d4ce89505cfc4ad96a2ab7fe5b19e86f958",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "76fdf6eec8d4d1eecf1a95d285cd0e9f3de06a27e59a0345a4b93c99b9f03647",
       "public_path": "grundstudium/base/v74-produktfallstudien-apfel-shirt-strom-haferdrink.md",
-      "public_sha256": "bd3a6169ccb5e41745ddaf4c508d12e9efe638fef879a6d7f1d69811ffc0a08f"
+      "public_sha256": "b8cb7907a6bfcb47f279d69447e3914e3e931095dc160e46bab81af53c4bd0e0"
     },
     {
       "lecture_id": "WOEK-G-BASE-075",
@@ -1375,10 +1481,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v75-digitale-produktpaesse-wirkung-am-regal.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "222383388fdd27cc585e8f859f772b8c8fff9b45a3b4b54f2675c1543c399fb3",
+      "source_blob_sha": "6425c727ceccbc5931f5e03241703655a34a47ec",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "169d91121405b0e9c92fe3fca70be0bbead0e42d7dd004e8193776747c2cde60",
       "public_path": "grundstudium/base/v75-digitale-produktpaesse-wirkung-am-regal.md",
-      "public_sha256": "ab320a043e414dda13a7b4d9fcc8e110a7a214eb650e872fff779c158f8b31a8"
+      "public_sha256": "d9f93b49574a22e852e9e1871275cc78fe9ceafc01ae9d4b59f5bf08a4766354"
     },
     {
       "lecture_id": "WOEK-G-BASE-076",
@@ -1391,10 +1498,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v76-unternehmen-als-wirkungssysteme.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "fdb220594d9bc0066b896c9a123e596cef204d0d26dc101240b089a099d093e2",
+      "source_blob_sha": "5cb7e38fdde065cbbf218ccb5763f3e8a4ec3857",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "3d252e2b582793c9cfc6ba9689dc2e3f4cb75a2bff7d425fe1f68aef2edd92b5",
       "public_path": "grundstudium/base/v76-unternehmen-als-wirkungssysteme.md",
-      "public_sha256": "9539d83a068fd0a1ffd0faf2d0b80afb91a7905ce0102daf0a9a2e56a19026eb"
+      "public_sha256": "70f8ce72e3b70069915348d7e99fd39b9e316b5e2d29fdc763c6a678f1428df4"
     },
     {
       "lecture_id": "WOEK-G-BASE-077",
@@ -1407,10 +1515,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v77-beschaffung-lieferantenbewertung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "794100dd93363a364762e310a695e720c8b8bedd381725449af11162a9990acf",
+      "source_blob_sha": "2c07558ff08bb5a13b19a4e812ed830948455f49",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "0bc8ecc342a6bde5afb1d471a135391f0ee243dbf13b0e61650642dd66c61536",
       "public_path": "grundstudium/base/v77-beschaffung-lieferantenbewertung.md",
-      "public_sha256": "0d8d4ad4a6aa704eba2841ffb6db28af9068e1b876fd6847e4c0b5e25bc60cb8"
+      "public_sha256": "488c4146478b094c045162c758f2e001cb44f43e2b288ff159f37f99713d8301"
     },
     {
       "lecture_id": "WOEK-G-BASE-078",
@@ -1423,10 +1532,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v78-wirkungscontrolling-erm-boni.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "37d1929ecaa75a4791c877de4de096a2d7995f2a8d29dd73b0c71277685909f7",
+      "source_blob_sha": "842ebe371b1425cc68481cbf50f4d329a6eea369",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "b407cc6029803d3c3a5e55a47a4324d62aca2570d0969094f07e65998fdc8883",
       "public_path": "grundstudium/base/v78-wirkungscontrolling-erm-boni.md",
-      "public_sha256": "06ff301f90e53088a91b6da4e4f4e0b27e8703ab99f2a5ca16f2bab1a59e7e0e"
+      "public_sha256": "4ec96d90a4ed55d68376e21ba198296dd2befe37db4bc7687a7cfb94e41591ea"
     },
     {
       "lecture_id": "WOEK-G-BASE-079",
@@ -1439,10 +1549,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v79-gesundheit-pflege-praevention-wirkungsraeume.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "e634e3f0626608a627fbab988c513c8a92d87cd25a6193932bdaba7b80ebcdc8",
+      "source_blob_sha": "95cdcff5c6daf049bbb3f1054996cad464bc8f7c",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "3d15e87863f8b090a59efc9466448f61eb03388667fa6f8593d2828bd3ccc90e",
       "public_path": "grundstudium/base/v79-gesundheit-pflege-praevention-wirkungsraeume.md",
-      "public_sha256": "5bb7d7f27ad758bdc0ad4b5192b740c0b0db3b768c053102d2c6a4de9fe59900"
+      "public_sha256": "064d4ba41923e9dfa840ee5eb07ebaf05358b93588f6cc1fafcecd0663e1bc73"
     },
     {
       "lecture_id": "WOEK-G-BASE-080",
@@ -1455,10 +1566,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v80-bildung-wirkungskompetenz-daseinsvorsorge.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ddb432b090870dd5043b3eb6490a7ab5eea045d80e0e0f2b696b74f15a93fb35",
+      "source_blob_sha": "0567216918e7b89771080ba43ec9a90588325e62",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "295277cc9fffaa55fbc91a12264e60ec180af72c5547c20ed9b9ce67af48254d",
       "public_path": "grundstudium/base/v80-bildung-wirkungskompetenz-daseinsvorsorge.md",
-      "public_sha256": "28ee62bb177d19b41c5279b678ba1bf8ea774b1017203637a5bf327cf3286b9c"
+      "public_sha256": "905eb0398d3c85f5fa387eeaec8420079e3c836b98dc448ff04c8fcf51012dc4"
     },
     {
       "lecture_id": "WOEK-G-BASE-081",
@@ -1471,10 +1583,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v81-wohnen-landwirtschaft-regionale-wertschoepfung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "0c56d0938877cd6337c49fb1c63b966d01549adc82c756fc8fd05982f3fdf244",
+      "source_blob_sha": "2411987b8555a8e73827e8dd8702db8cb62022f4",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "d67baa88ef2c9c272635a3504058857e8860a2c66cbcf0066892e45383268295",
       "public_path": "grundstudium/base/v81-wohnen-landwirtschaft-regionale-wertschoepfung.md",
-      "public_sha256": "67cd87ec12faac027a9b5773733a71ccea18e102036742238e47c64074afc99b"
+      "public_sha256": "c2d83fe288db63321f7b5b66374f8d614dd98f184a733131980e167ca7c3c24d"
     },
     {
       "lecture_id": "WOEK-G-BASE-082",
@@ -1487,10 +1600,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v82-politische-programme-wirkungspotenziale.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "4d5728ae008cd31c79beb758238a12914c21024abc331bbb77b8cd6d4ec7d47a",
+      "source_blob_sha": "7ea099e866571fe86e5839ac7a1b28b8ed982c8e",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "92dea4e2350314e78ce9ad1e0409ae141206f89fc3d79b073e399df9a4cc01bc",
       "public_path": "grundstudium/base/v82-politische-programme-wirkungspotenziale.md",
-      "public_sha256": "aab11e623f2b806235be49ae4bda87612974473462d5de879621deeb9b24f1af"
+      "public_sha256": "acba8930b298d199567adf0fd5b31fc0c0bb1e70b01ee7b0e25a0eadf17e2f82"
     },
     {
       "lecture_id": "WOEK-G-BASE-083",
@@ -1503,10 +1617,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v83-medien-plattform-scorecards.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "5729aa8e632f2f36b152b59aa6c3ddd1646d22055b5955e8d97674cfc36c87b3",
+      "source_blob_sha": "a729febf201b87e2ccccffd4f187d6e7909278d5",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "8bb649b73905dfd323a5cc29dcb77b2babbd1bf4a2ca10f8cdfdab1d2650cf8b",
       "public_path": "grundstudium/base/v83-medien-plattform-scorecards.md",
-      "public_sha256": "287eac11cdbf187da40dae0eeabafb6f2e8c7bff2288dcb2b7d427cb00ed6fa5"
+      "public_sha256": "83e3f71d5ca92d2b6799dda8af92ed7b53190d7734325d0a451864f12f6b7d40"
     },
     {
       "lecture_id": "WOEK-G-BASE-084",
@@ -1519,10 +1634,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v84-wirkung-im-alltag-ohne-moralische-ueberforderung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "23c1c0775410232c16d218ed2028b8d4101fb2b828f20d98531915f3cbf0e730",
+      "source_blob_sha": "89f2680e549438c8a83c7c73293eafeeceafed84",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "e9fad8130300b26255c2ecd07f46483cd551ede77e030f896897c7994cfac7c9",
       "public_path": "grundstudium/base/v84-wirkung-im-alltag-ohne-moralische-ueberforderung.md",
-      "public_sha256": "53bc28415a5d5843cc724c3362921f54b17dccf9e1c5d318e68da3f357fba724"
+      "public_sha256": "0044e3da004aea933da2104770b9299e7f51dfe1346cf57c739d532c509f29bf"
     },
     {
       "lecture_id": "WOEK-G-BASE-085",
@@ -1535,10 +1651,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v85-institutionen-und-woek-governance-vorschlaege.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "cd875c6a5674ef79185fe9c5e88c051d0cb7cf80df4f30d0db5a4bb18db38f3c",
+      "source_blob_sha": "1b3cf97fc45a19e9a6b7c39e269d5cf36950aeff",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "5a871a9e20101b8c54bc457d626e1699f4fee60c0eff2dccd0cbe86197a68fbd",
       "public_path": "grundstudium/base/v85-institutionen-und-woek-governance-vorschlaege.md",
-      "public_sha256": "6c5362fd5f63b6662be4736980db948a429f92e97283390cfeed85ecfb56acf2"
+      "public_sha256": "b087c5499eae2b548efabb976a54428940991c297af5f7c9c7b0541b86f93be6"
     },
     {
       "lecture_id": "WOEK-G-BASE-086",
@@ -1551,10 +1668,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v86-rechtsschutz-transparenz-legitimation.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "0668c9fb7f4c2741c9faad264a7b89f668031b465216b821b8f360d67f769847",
+      "source_blob_sha": "942462a191e89d0433042f3b7451035d372dee5a",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "58b615dfe45f89aa65555b32efea5a7061028db7f37939242c2d08407cacc1c5",
       "public_path": "grundstudium/base/v86-rechtsschutz-transparenz-legitimation.md",
-      "public_sha256": "daaca014065998812b461d28becc8e3f96dd59c250d8806825bdadf3aacb589f"
+      "public_sha256": "ea9aa7968c1f4542bf5a882ab678552ac278e7f75631b70a7610f37300473c35"
     },
     {
       "lecture_id": "WOEK-G-BASE-087",
@@ -1567,10 +1685,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v87-lobbyismus-gaming-und-manipulationsschutz.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "600697f3d8309bf3cf9f919a61c5dfe295597610841c1e730b0f064405b17e70",
+      "source_blob_sha": "e40df45e34a16db31e245be85439266c80ff03b3",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "63b7f38ac71b81e4bbbaa8d9577e1d41f018b8c014d45150ed4932eee3f397fa",
       "public_path": "grundstudium/base/v87-lobbyismus-gaming-und-manipulationsschutz.md",
-      "public_sha256": "ce67296eafb854ac6d227de297faa59c43a082b568722f826dd83ddc273a27e7"
+      "public_sha256": "2431c21f3956925e8665c26d7f9f623f5ec4b77393bc80e130ec994027ecb533"
     },
     {
       "lecture_id": "WOEK-G-BASE-088",
@@ -1583,10 +1702,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v88-wirkungsdatenraeume-register.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "24da1c94aa928bcff9d42ce4306bcde155dfe42e9c8425471d5f40b5d4cd62b5",
+      "source_blob_sha": "c85ee0ec0f32407ca68324d09f27a6fbc40fc022",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "d4a41e7814f553b94a4f7acd144ea773c4c5d2e545d7d37de596cf977a9f577c",
       "public_path": "grundstudium/base/v88-wirkungsdatenraeume-register.md",
-      "public_sha256": "e096296ebe62734434d87bcaadd239ea528a1fc42f6cb7afe150cb3a4b4808e6"
+      "public_sha256": "0e0da170b827b672ab63d7fe4ac753884f6288d8c87578dbca7cab63b6bc4b77"
     },
     {
       "lecture_id": "WOEK-G-BASE-089",
@@ -1599,10 +1719,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v89-datenschutz-cyberresilienz-digitale-souveraenitaet.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "5c30445d516bb7dcacc348f915b9e408b7a3611eea1b5bcdbdd2cb00ab7fbcc5",
+      "source_blob_sha": "0a0c716ca44dcc28b31962038582c17a43ada140",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "cd8b0a079d341dfcda2a4c1afd4d609502a40771d46d2dd78dcddd84dd38d288",
       "public_path": "grundstudium/base/v89-datenschutz-cyberresilienz-digitale-souveraenitaet.md",
-      "public_sha256": "e19e702e26e5a4ca377c5e3059cdf274aace84080e22cdb1685d8f3326355f83"
+      "public_sha256": "cad49ffb16cf463a94bbf910423ae95756dd41a2722cb05fdf89d98001f81092"
     },
     {
       "lecture_id": "WOEK-G-BASE-090",
@@ -1615,10 +1736,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v90-ki-gestuetzte-wirkungsmodelle-grenzen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "0564ec5ca6465d3e5cf3fbde855b7cc8ba1074c5a148f139073e342ec82963ed",
+      "source_blob_sha": "cb9ddb45a2481396f0471aacb5e5e0ecba40c88b",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "c2da183fd32937c1073ef53b5cf3c781e63c29558dd6cc0934eb99385a2294f2",
       "public_path": "grundstudium/base/v90-ki-gestuetzte-wirkungsmodelle-grenzen.md",
-      "public_sha256": "f19f32e2600e3e6b2c6739e8670dc346e12b93f8032a3d4262e39c7744b55611"
+      "public_sha256": "1efca0353558e3b7ecd79124feede1cbf0e7e13346c82bfa1bf3ff1bc550c74e"
     },
     {
       "lecture_id": "WOEK-G-BASE-091",
@@ -1631,10 +1753,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v91-importwirkung-grenzausgleich-cbam.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "fc57a0665c2fd657ab8e1160f3ed14de2a91466fd1a84096200768e389937b31",
+      "source_blob_sha": "0d3c84f28d19b0bfd9173a5fed3f6774776b1ed4",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "d449b976fed336deab9c5395dd2547ae2711c0c5fa3598f622fcdc8c38f76444",
       "public_path": "grundstudium/base/v91-importwirkung-grenzausgleich-cbam.md",
-      "public_sha256": "89bdd7d1ee6a35020fa988354ef0203b122308e69944f6a515dca7064a712a44"
+      "public_sha256": "994c1d5d3bc79871639a2c3cfb34934ef176b8919866807ff7c76feab875f2c7"
     },
     {
       "lecture_id": "WOEK-G-BASE-092",
@@ -1647,10 +1770,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v92-globale-fairness-statt-wirkungsimperialismus.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "684134eb0dec57526a5450be947faf75bc677cf2007566c6c93a437c3b411762",
+      "source_blob_sha": "6bf57c3fd11ca41dcc1a7bd1813c37b37e0aaafb",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "3121b4c47a4b4ce32f863d658a52f0299d6b5b44d3e3bd99eca7381bae4f712c",
       "public_path": "grundstudium/base/v92-globale-fairness-statt-wirkungsimperialismus.md",
-      "public_sha256": "f56cc7169d96aac54f05b5d1ea2920fc99c4f035a63f07f0ee512aa3fcff2aef"
+      "public_sha256": "ecae519e01c33557f15da1e2935d983787b43aad4eae142b0943fcd404ef94ca"
     },
     {
       "lecture_id": "WOEK-G-BASE-093",
@@ -1663,10 +1787,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v93-wirkungsklauseln-handel-kapital-entwicklung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "1f284b73559cf03057cd439d705e79d50e7e52a5d57d1a371ec7e5e01055df56",
+      "source_blob_sha": "4306dcfa8e11a86e3163e4c8c897fbebd5bb3dda",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "95aa0e95e57c1275ce7cd3fea4a67dc87682fe64a1f9f3d7e316b02d3b6cd39b",
       "public_path": "grundstudium/base/v93-wirkungsklauseln-handel-kapital-entwicklung.md",
-      "public_sha256": "c79d49c1fe800fd903eb2d6a31ff7be0d2df6b917746d29d64c1ea965af6ada6"
+      "public_sha256": "dadd9c1add83dd5db736d6302ab19b9b8eb33d8a310dae4712cf3812631cb51d"
     },
     {
       "lecture_id": "WOEK-G-BASE-094",
@@ -1679,10 +1804,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v94-lange-wellen-kondratieff-hypothese.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "b091138639181a33c5012a6f695f8b23e32a7d587bd0b2ff551892ff10e7b71f",
+      "source_blob_sha": "5a370e8426ce678d00e83a898e1d458c1a3c1ae6",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "c9235b535632bc077018d8dc0b4c91d03fd13c78d01f1fbc0235f286f5601488",
       "public_path": "grundstudium/base/v94-lange-wellen-kondratieff-hypothese.md",
-      "public_sha256": "ad1afc6fd2a0b4e88297c4835873ece4b93fbceede4fa628c7ddd0c6dcfaa5bf"
+      "public_sha256": "4a37c9c605484b0dd5fee4fd72d3a26ba5455bb29ce06cbf85729c2bfd1ab77e"
     },
     {
       "lecture_id": "WOEK-G-BASE-095",
@@ -1695,10 +1821,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v95-piloten-sandboxes-lernregulierung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "6913dca26ea6c3a1ccb1406884d6ad82dd7394ff5eae64567b4efc9a616895fc",
+      "source_blob_sha": "3ea833e3ca3fc41bdf47d186637db9ae107c9b7e",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "0cb17f20f9b01551f4e1919c816a4caa3d605f40ec4e9cab992cbd2c14542cf6",
       "public_path": "grundstudium/base/v95-piloten-sandboxes-lernregulierung.md",
-      "public_sha256": "66f93dafb634d7da62a7b7ba5c6c482a1bb342772d44f702249d7fe61e3b2558"
+      "public_sha256": "4f947d10ae19e0a53588e7afee6072ea14ed5124290e3d3ffda03e82728d04c4"
     },
     {
       "lecture_id": "WOEK-G-BASE-096",
@@ -1711,10 +1838,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v96-wirkungsarchitektur-entwerfen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f17c732a42e07441ef0c186e967f11cafc989c4499d176511985eeba2e45c94b",
+      "source_blob_sha": "114173258f67ff60f2e317ce5a436d2270db1f2f",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "1c524a59dc784cf6d7d1af2d8995b10a69da6f23ce7559af96ff06ece1da52d1",
       "public_path": "grundstudium/base/v96-wirkungsarchitektur-entwerfen.md",
-      "public_sha256": "64b5711582ac06d3d123815426116066bceb64ce867d5b4d15725fe0c780aa53"
+      "public_sha256": "d7aa04a1356c5dcc41cadf023db7d9b7aa662c165c35a1d0a20ed9fd8db540e1"
     },
     {
       "lecture_id": "WOEK-G-BASE-097",
@@ -1727,10 +1855,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v97-praxisprojekt-wirkungsfeld-und-gegenstand.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "30a8f83515f97bbf41e8c2307daf51c4d6bc196ef4ee8b764f9ac6328556cf67",
+      "source_blob_sha": "1f4632020fcc196dbc94359a71ee8079e2c47b5f",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "af799fcce44761ecb5110b3a3a85406013a9e07c9dc21005bfc8c63a853b3375",
       "public_path": "grundstudium/base/v97-praxisprojekt-wirkungsfeld-und-gegenstand.md",
-      "public_sha256": "df82c74d12a0f8434e2eaf7e2c19efbd589545c9a0a3ee236595a341ab5878ad"
+      "public_sha256": "cefe184fdbb83058c247a3122171e0e38b78099ac5df7aa96fc3645fa19f452a"
     },
     {
       "lecture_id": "WOEK-G-BASE-098",
@@ -1743,10 +1872,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v98-praxisprojekt-problem-review-baseline.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "7d3977fd65bd2fb459614da4bbf4ca3489f07e1337d5891bf82e4b57f9d01904",
+      "source_blob_sha": "e5211e9b43d2d26b4c554513d21ec79e50d4a32e",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a2eae25896a03358dafbfb1d489a0dd15d5030000696fd610435bc0f52f925ab",
       "public_path": "grundstudium/base/v98-praxisprojekt-problem-review-baseline.md",
-      "public_sha256": "34b174b0ade1fbd323cbaba5eb1e5735739dfa7099caf6c6d9afa96a01d9c957"
+      "public_sha256": "240a9273f5dc1cc81f248d6ab077612351ebac55a818f0285fb6cc9845ab2aee"
     },
     {
       "lecture_id": "WOEK-G-BASE-099",
@@ -1759,10 +1889,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/base/v99-praxisprojekt-wirkungsfrage-wirkpfad.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "4a5f6c78efcc7b041db6876b6c1255430b647796f5130276df832e7c6176b2e0",
+      "source_blob_sha": "1e195fcd23fbd49025225c42afb895fe7edf6e05",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "e32c9b4f22ad7f296579f69ecf3aca47f6cae4ec9fe8106aa272702356b77645",
       "public_path": "grundstudium/base/v99-praxisprojekt-wirkungsfrage-wirkpfad.md",
-      "public_sha256": "43da0e852237350a35432cef98efdc1f9df31460171b2c529dd9f5a778e96296"
+      "public_sha256": "b00f99ced4b6ffade54dafaa6dd57dec956d20b87055ac92da0ef9b379485302"
     },
     {
       "lecture_id": "WOEK-G-GOV-HIST-01",
@@ -1775,10 +1906,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-01-von-brundtland-zu-rio.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "317f6a404175ad63b1dfdd7a416c74eb768db4639b101a943b2215c4fb20b8c9",
+      "source_blob_sha": "f6eed0b6190f6abe64663db3dd5a1836c0d22d6b",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "b3f8513843b66c44b62eff978ef85ebf3f98a9a35cc8e0255ec12a1d10552906",
       "public_path": "grundstudium/gov-01-von-brundtland-zu-rio.md",
-      "public_sha256": "b17e281d81edeac7476f779142175596164e9c26c6d1c9b91c0183a038c0e4c4"
+      "public_sha256": "faa6160717443968f9df0760c49ec641c3990205bced12771b90633d9d092d76"
     },
     {
       "lecture_id": "WOEK-G-GOV-HIST-02",
@@ -1791,10 +1923,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "d3506ebbaa2a6b3391bb87253508520744c61b98a850398b698095c842785183",
+      "source_blob_sha": "af50e9b94f2bcf92c300a9a62f9ed2ab86fe8df1",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "20f34efe5ed799ff898e09719580be1c38b8818099797bed60438109e8902fc0",
       "public_path": "grundstudium/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md",
-      "public_sha256": "53dc3a118475234331ef30920f22cbe69be1c8072a6ce87263451c537a3e637d"
+      "public_sha256": "448d233f219b8513e760b414a5e8dcde68441be7b367efaaf865ec13631c73d3"
     },
     {
       "lecture_id": "WOEK-G-GOV-HIST-03",
@@ -1807,10 +1940,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-03-agenda2030-zur-dns-2025.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "99afe8c053602e0c92d7f16df257da85ceeb28df8199ec48bf782d6eeae12d77",
+      "source_blob_sha": "f5bbee8c2a7af3de572e859a4647c9c805327ccc",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "76be162410dd8136fc338a0b0ca5869fb2bc37faa8a88b5dbf4997f20c13a45f",
       "public_path": "grundstudium/gov-03-agenda2030-zur-dns-2025.md",
-      "public_sha256": "909ab3b90814b7e1e32de03192010524f556c73ef20c7f7e9475b857bd2d790f"
+      "public_sha256": "55eb02737993213ce99bf4d9616f9ec2d0de60bc11ccecb827eaf8662513f308"
     },
     {
       "lecture_id": "WOEK-G-GOV-DNS-01",
@@ -1823,10 +1957,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-04-dns-als-managementsystem.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f457e81f63c382d19526e2dd7a52519dec085462936c4850d1d70ae5e30e3149",
+      "source_blob_sha": "16d1207887d1762a9eb4bc494ea9d2d4145fc51f",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "eacad1ea898b51ef3252c4aceaf3d1089ea4cc6bea7b4b134299b962abf70eaf",
       "public_path": "grundstudium/gov-04-dns-als-managementsystem.md",
-      "public_sha256": "a7962b36ac1a78e1f1cc11d37dcd179724225c6a5c17ace6643c2cc983493669"
+      "public_sha256": "ab22398ea2dfbf69f4cc49a95971f48dccb4fa82089ffd2edc8e254ae72daf1e"
     },
     {
       "lecture_id": "WOEK-G-GOV-INST-01",
@@ -1839,10 +1974,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-05-institutionen-und-verantwortlichkeiten.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "c1cfec2d1a6278562fe97585d9f8846ba97579825091f9ccd384b8ed265a5c40",
+      "source_blob_sha": "262b3d0d3f8c9ed1ce578fcdc3024fe35081c355",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "e9ea05384da58c6b290fc938f4537c775fe90840f6944b43c24bb166926c8328",
       "public_path": "grundstudium/gov-05-institutionen-und-verantwortlichkeiten.md",
-      "public_sha256": "a39f9d3c5119a0f3444575dd591a11c31a3ce0dd1a7afbe2bbe97b3ceffa05be"
+      "public_sha256": "e4b0d039c792948124c65ed0aa84933e21d92572e821096f958df3f5069a2f0f"
     },
     {
       "lecture_id": "WOEK-G-GOV-IND-01",
@@ -1855,10 +1991,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-06-dns-indikatoren-und-monitoring.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "05b33293c560cb1eeb755792bf729c672e6bbdc5f475a653be0f89319369adc9",
+      "source_blob_sha": "5b9ed417a4de63bc64c95a8c5a8b5f22f06434a5",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "30b8332dae0c54b33a8042e006d96fc1e41e6d2b2e08c19fe34930a459ac2208",
       "public_path": "grundstudium/gov-06-dns-indikatoren-und-monitoring.md",
-      "public_sha256": "25c555b21e060a545723beb5ca779b98970a12b4bc03c31ac2710c3fe2d67d66"
+      "public_sha256": "e76c0a0c583f4f04c790a638f5a164618669610864485edb0c081dfcf6835a4a"
     },
     {
       "lecture_id": "WOEK-G-GOV-GFA-01",
@@ -1871,10 +2008,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-07-ggo-gesetzesfolgen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a07d3535da59f622887b48665f3c7358dd0c690c693a8341fe89746a543bb69f",
+      "source_blob_sha": "40ccf79616787b2f9e8276fbd8177d11389deb41",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "933c21bf14bf3a4f85ff0470e45e576907c4dc15383edabeb524a87886a667ce",
       "public_path": "grundstudium/gov-07-ggo-gesetzesfolgen.md",
-      "public_sha256": "ac5c1c38d6bda74fb922de31b838606a5c04420b7f743f203acddadfab8f3c4d"
+      "public_sha256": "57c54de34fe96795924698543206e0f8c6a3719b71341cca51c4164010ca9544"
     },
     {
       "lecture_id": "WOEK-G-GOV-ENAP-01",
@@ -1887,10 +2025,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-08-nachhaltigkeitspruefung-und-enap.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "75d993103ef947115cbaa4071e41776f93b4899b20237d2370e7023f5f9a76e7",
+      "source_blob_sha": "d14d392804aaef6f44314e51cc41f3b1975e2028",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "306ddccf5852e9adb03a72d80e752ddbae968ffe2a837a78f2c13637e0d1461c",
       "public_path": "grundstudium/gov-08-nachhaltigkeitspruefung-und-enap.md",
-      "public_sha256": "34288faaae7c61a4623c7da9682d1f2b65c6e9ce57f9b0f8d0d3f0c43f00fa0b"
+      "public_sha256": "9d5d4ce6ee5e0a0e1b66d66f7fc6ee6b5869c1a581697649daea71691fa551ac"
     },
     {
       "lecture_id": "WOEK-G-GOV-EGFA-01",
@@ -1903,10 +2042,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-09-egfa-und-e-gesetzgebung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "160225436d36741b123b7bf80a8bdf1bb09a0a48b8a1c91127644cd9f7ccf398",
+      "source_blob_sha": "921acd1e57c700edffd766fcb9f780d6e8f6d480",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "27590598491e0fa1d2bd6feca12c323f7209d84ce11ff7af66af681eaae0d3c1",
       "public_path": "grundstudium/gov-09-egfa-und-e-gesetzgebung.md",
-      "public_sha256": "af5bf8772a6c2633b5a90410335839c570eb44ee7dc934e26592f04664bc0bf8"
+      "public_sha256": "b2620e0b32c6125237919c8c774033cef0b0d42f61f9df1567a8ea7fe0f729c7"
     },
     {
       "lecture_id": "WOEK-G-GOV-PARL-01",
@@ -1919,10 +2059,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-10-parlamentarische-nachhaltigkeitspruefung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "f8bac2db8645b2b42ba0fe647bad4e882ceb904f742f684f7d89197c496b37db",
+      "source_blob_sha": "a1f8452a2a42a4b9e3db358c0cd4e0580ff3ea0b",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "f749e444afb0077ec27c4e5a3c8f726e0739ef07f870a245a4e5800621993f74",
       "public_path": "grundstudium/gov-10-parlamentarische-nachhaltigkeitspruefung.md",
-      "public_sha256": "83459d620a7efd7a9452837cedf9995dd13c94f8ab8ad6e5ccfa6af2b97b5c90"
+      "public_sha256": "4c34bb9fe388d16befb3ead7e7bb4842ae8d8738e5e3eab46c2fd38c292326b1"
     },
     {
       "lecture_id": "WOEK-G-GOV-AP26-01",
@@ -1935,10 +2076,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-11-aktionsplan-nachhaltigkeit-2026.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "265312c593b7f2ee101d947bbaf69b38141e9f01d49513be1a11abfcf553cb26",
+      "source_blob_sha": "7fe85ec763ac02ec8f953cba0489599f65b035c4",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "95c9735f340f337655cebce8932c6a2912465328c11905db1ebfffc6531126d6",
       "public_path": "grundstudium/gov-11-aktionsplan-nachhaltigkeit-2026.md",
-      "public_sha256": "051094547b9f1b593bc9ad8392506ad1e347e18b99e4a1f2b5ef3dadcd2a6760"
+      "public_sha256": "1f4e1c6b8ff45ce213d75fe3af3a4f2c31bf48b0a232809c343e7b9ddc2055bc"
     },
     {
       "lecture_id": "WOEK-G-GOV-COMPARE-01",
@@ -1951,10 +2093,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures/gov-12-enap-woek-benchmarklabor.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "7473146633592bfdcc05b10e4a2d564d073279ef039b2745f9743673414fb6a7",
+      "source_blob_sha": "0ccd12ce8ae4ccc0a9aba056cd7e31b1210d510a",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "3bc97db912d23975410feb80565c4e3b601634ca59dd40078de4936218a8cd1e",
       "public_path": "grundstudium/gov-12-enap-woek-benchmarklabor.md",
-      "public_sha256": "a8cdc88ad7c0fa1095d56a6ae5bca4fbfbbdc16dbd800f0f87fc03e7fc98397d"
+      "public_sha256": "e300c46cd55ea56e7a9265eca5dcee3787e5c6a04c1bd4e0d7d2107ca417e7b6"
     },
     {
       "lecture_id": "WOEK-WB-G-V4-001",
@@ -1967,10 +2110,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-01-wirkung-statt-nur-aktivitaet.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "57817e657be28afb32c41580936757635a306587c94004217e4c400fafb966e7",
+      "source_blob_sha": "fb459abc87f713e78ad8da96bdb59b1c92145565",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "3423ef1dbe276ffa735e335ae18216cc936f19f25aa8e651ceb2cd61e455b2c3",
       "public_path": "angebote/grundlagen/g-v4-01-wirkung-statt-nur-aktivitaet.md",
-      "public_sha256": "b8d14ebdeabbe9acaf8555903092fe3044eb7db8f502ea44d996243869e41020"
+      "public_sha256": "746aa7a776239bd42caaeec9abb286e94475d401e7382866e3d8aa704c5f2c20"
     },
     {
       "lecture_id": "WOEK-WB-G-V4-002",
@@ -1983,10 +2127,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-02-problem-ziel-wirkpfad.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "8e80ba2e34ba9c3e96ae207f54d1627fee9ff83af28194c427cc904a231235ab",
+      "source_blob_sha": "25570d215e2bc085537da870df6ba225414c7f5d",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "70ec9d7617c78e6cbccca345ed1914674d03a3a196dd3c9fc42d1be0d2eba1f8",
       "public_path": "angebote/grundlagen/g-v4-02-problem-ziel-wirkpfad.md",
-      "public_sha256": "de1e0621ea1912b6af3a011cdd7df0a1bb11434552f7077a4f6f32627fd52540"
+      "public_sha256": "4f14b6d520c6117c3d73c6dbae1838263eeb4d5489e3fbc7cd780b954bbc46db"
     },
     {
       "lecture_id": "WOEK-WB-G-V4-003",
@@ -1999,10 +2144,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-03-referenzrahmen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ffd8fb4f500c7ec28e3d3ac4831d17ba86d9737b900100f2b1a9ba1461e8ae13",
+      "source_blob_sha": "8d304263db14aef439114a6dbdca0b90b6834c38",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "ee4c0c8f851ad88a4d2ac0f31a76cf3c1120f83925ade04473c33654fd673c08",
       "public_path": "angebote/grundlagen/g-v4-03-referenzrahmen.md",
-      "public_sha256": "d05fcb1605c19e111d5957c18d146f7f79fe80afd41137630fa8ada280ce1db0"
+      "public_sha256": "3e0454383df47283038825ebc5a3d03d06da9d78359744dcdb5eced16d419cf3"
     },
     {
       "lecture_id": "WOEK-WB-G-V4-004",
@@ -2015,10 +2161,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-04-evidenz-indikatoren-zurechnung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "e51566703b77c82ba31d82ee5b316ab4a406d798887812890ca68026ff5aa057",
+      "source_blob_sha": "16809a977356ea81b6a7a7f0c7de4fe4c9cab6a2",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "af5fbc6bc8b14a9884624173ea506175616208fa583166ff3339c4a12e3c2b55",
       "public_path": "angebote/grundlagen/g-v4-04-evidenz-indikatoren-zurechnung.md",
-      "public_sha256": "7f510916bcef5f01d8f8eddff4a2185a08ee8dd2754023128273b2b424d43649"
+      "public_sha256": "9884a1fd554bc69cfcb94cb993dbb8974c74cd8bac99e50a79962550647061c0"
     },
     {
       "lecture_id": "WOEK-WB-G-V4-005",
@@ -2031,10 +2178,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-05-nettowirkung-schutzgrenzen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "88ab400af2dc2f6fd043cf35887fdebff7b130aa3853cb652c078ed78894e0fa",
+      "source_blob_sha": "d0eeab7c33e9288437a1b8626b9d736ed3d5a27a",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "6c956744f2b80e50c852292b9fcf12a01786d573f89de0f1c5f3f55c836b537b",
       "public_path": "angebote/grundlagen/g-v4-05-nettowirkung-schutzgrenzen.md",
-      "public_sha256": "280a2211c252e3fdbb0dc56a391b412ab3e5bbed4562eff7e0b287bbe2a100f9"
+      "public_sha256": "fd2b444271088981fb2467c7bcf4f61235e17c09dbff4fe63b75d12226f758a8"
     },
     {
       "lecture_id": "WOEK-WB-G-V4-006",
@@ -2047,10 +2195,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-06-optionen-steuerung-instrumente.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "980bbf36903b41dd050ad0629d02738c423302da21a0a99832bc863ff26edb51",
+      "source_blob_sha": "716f962cfe015fccb38428c212ae6ca2db04a3a5",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "7dbccca620eea028127f1c84d52f509f789318b97da7befe9542dfe005bc761b",
       "public_path": "angebote/grundlagen/g-v4-06-optionen-steuerung-instrumente.md",
-      "public_sha256": "ca0d4cd115547b00c41277493023025e2193baa6e80744f3655418352bb0acaa"
+      "public_sha256": "6b47ea0a7abaa61b545977140b83cacbeab9f5a7c905248b69d589705d7da3d5"
     },
     {
       "lecture_id": "WOEK-WB-G-V4-007",
@@ -2063,10 +2212,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-07-reality-check-grenzen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "83588758f2b999505dede608ca12773dbce8bfb58f0289388ccbeefab4947bac",
+      "source_blob_sha": "aa4221f6d94f91d9d58cac504a4b6cc1ed66b3f1",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "18e7ed14702c7bc5ef47c6334dab5d141b888bae8377a9b52408fd1901270d3c",
       "public_path": "angebote/grundlagen/g-v4-07-reality-check-grenzen.md",
-      "public_sha256": "96485777a3fd29bfdc4d7021cbd2163afef0346b1bcf5590f8c8762ff974a209"
+      "public_sha256": "48a31f8e6f7b8714c3f0b7a7e2886ce1c74824758167c4844499a949a73b4d26"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-001",
@@ -2079,10 +2229,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-01-systemkontext.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "68c7b813367de6a9c955ffecfcb6f5629b63993ffb2f3fe772f93e97f4d021ca",
+      "source_blob_sha": "475581c7a28b094b1a1d7167f2e41c3a9d859d2d",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "eecb7bc4d5804f0ae60fc246bb6d20fb24c7cfdc7d8a40585fce1563d34883f6",
       "public_path": "angebote/wirkungsmanagement/wm-v4-01-systemkontext.md",
-      "public_sha256": "8c9d46c18a5c7e8020afd5a978f7e14a66d4ebd355febf26c56a11ab23f1beeb"
+      "public_sha256": "b60f7eeb03e1354dac4296d6878224c8ad0c143a7d26683cf892e1f5c734106e"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-002",
@@ -2095,10 +2246,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-02-problem-baseline-empfaenger.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "3e62b64859ec7a3d82ce0150facf5b0987cb3134cf80525e4ca338926af7136f",
+      "source_blob_sha": "337521889214f60807f0dec219aaf27a9f16a3b8",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "41509e0c32e340821aec531225697fa92b89bdf651f65b07baf49b6f6667c954",
       "public_path": "angebote/wirkungsmanagement/wm-v4-02-problem-baseline-empfaenger.md",
-      "public_sha256": "0df80949b14a08dfa836254e362a07db585efb3899a47b8fa27e9c9d82fab67f"
+      "public_sha256": "ad90f5a79639446d03f730c83632078e8f2841754e76454f0ab4957548703b29"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-003",
@@ -2111,10 +2263,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-03-ziele-referenzen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "14fa2b614234c37149f700dfe8ba4fcbbe15bb3ec7f711c434bf234c454f87fe",
+      "source_blob_sha": "ca0e4d62ccc452348e96f6f6766f55a802d32a28",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "cba01e9977e6c3d3f5856f2a8a090da4dcf6a99d0117498fdb95f4716fc0dc75",
       "public_path": "angebote/wirkungsmanagement/wm-v4-03-ziele-referenzen.md",
-      "public_sha256": "a061ecc992286fb9b63aecdccd958561f8c7fafa15806726d09b2bf6f6a375da"
+      "public_sha256": "1f19b3c9b3049251b018d38d643bb6f8f39f981044b33b5af66812bfab232909"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-004",
@@ -2127,10 +2280,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-04-wirkpfade-kausalannahmen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "e16601763c6a180b0a7fda575e39bbe731b024412534575070fb56e0975c11a7",
+      "source_blob_sha": "0bf151a26880185e7e95a1206d2b512133cac79e",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a2abad0a37e296c5a7efc74e4273bacd9f879097695e2a919cf15500ddd099f2",
       "public_path": "angebote/wirkungsmanagement/wm-v4-04-wirkpfade-kausalannahmen.md",
-      "public_sha256": "c43b8e1e35ddf41aa2bf3dd870b48631000b78221f179c560d5d076859bc8d6b"
+      "public_sha256": "b7944fb9d2d6a927f2428a7f02b1c1941c56fb448f7bf758d500394ee86a3b13"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-005",
@@ -2143,10 +2297,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-05-materialitaet-potenziale-risiken.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "451ca8a602957e2796f699aa92fb3d6f60907fe12f405506c047d6486f7c8479",
+      "source_blob_sha": "baa399b29487c112e814fd61b3e1195883bea4cd",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "2a6d5bb38e593649a573e804197558e621db90d21ae3a5bd3cf620efc9c52acb",
       "public_path": "angebote/wirkungsmanagement/wm-v4-05-materialitaet-potenziale-risiken.md",
-      "public_sha256": "6fd226190e23798d08ffba2261eeae304733dfd43588a13c009e6fc02eea565b"
+      "public_sha256": "3990209f538709bdcc9763bbf002413dc4566143179f57078527010c88ac51aa"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-006",
@@ -2159,10 +2314,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-06-schutzgrenzen-nichtkompensation.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "84091641f3780ff0d59ed31f241a8ad0eca9e9322536d1df1f4d4319cb2e111a",
+      "source_blob_sha": "7b0fd39c444231ca1051023b86b06d3ed4ea44d8",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "4f6101be673a6b67de012a6db783970aed89cb95d515baf371917d0365e0ba18",
       "public_path": "angebote/wirkungsmanagement/wm-v4-06-schutzgrenzen-nichtkompensation.md",
-      "public_sha256": "99f1205a6d5e9d97adfec894437dda6f015ad1e98d7ef4457a5dfb2267b35636"
+      "public_sha256": "0f30a97adcedbe0dc26a72eb3e3e8b2d58993371ab131a655302fd0cc691e783"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-007",
@@ -2175,10 +2331,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-07-optionen-delivery-coherence.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "d649661225d487033bc6bf713cba0510edea6e8155db5e1ffbe76c532a818d05",
+      "source_blob_sha": "dbcde5c9cbd87d198339f2bf132fcdc1e655aa69",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "fade5f5b600e2caca5bb631b265f3d3f49cacd197258555f43fb654c1f42f26f",
       "public_path": "angebote/wirkungsmanagement/wm-v4-07-optionen-delivery-coherence.md",
-      "public_sha256": "f91507361a53af0ab15e34778289630cc343bec40ceb0bb05acff8841c9bce8f"
+      "public_sha256": "284e35fb06f77159aab2d7a3dd3622f4ef1e839950501ef65acf3dd694c5e3b9"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-008",
@@ -2191,10 +2348,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-08-strategie-entscheidungsarchitektur.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "708d0ac9afed4b7b28ab0bc56b8733afac673372e1571bae9240bce4ff751007",
+      "source_blob_sha": "caba6fd20643706e04fa40b0126248a2628d01b6",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "8cfa7ef9613887594ad0b01c153592d8bbeefcf021ee3805f3e88a66c3cebc41",
       "public_path": "angebote/wirkungsmanagement/wm-v4-08-strategie-entscheidungsarchitektur.md",
-      "public_sha256": "c13000ddaa6a26a68c5600dc15291b3e2529203cc7de520eb3f43dd3703fbc88"
+      "public_sha256": "c380fc81a36d53f27ee77091456cccdcf3b5bffcc46833693249b675ca521082"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-009",
@@ -2207,10 +2365,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-09-wirkungskommunikation.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "d30fde1a2f502684cdc5a5c0c8bd4ea8e5e5eef59732c7cb40d409afd28fb62d",
+      "source_blob_sha": "477abcdb907f88572f7522929cf1777089280876",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "86bf46d65c03974175ede742328f1f7ae081236cf5edc6eaf0c21811885811dc",
       "public_path": "angebote/wirkungsmanagement/wm-v4-09-wirkungskommunikation.md",
-      "public_sha256": "22d95c5da3ab44172fa475fbd36231a58c242fb02732dd6efec82519820b5d05"
+      "public_sha256": "a1b70ff311e1698eb5615e1089666e24f797645d286351dcb7a6f4b3e30353bd"
     },
     {
       "lecture_id": "WOEK-WB-WM-V4-010",
@@ -2223,10 +2382,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-10-reality-check-90-tage.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a9ae890a7678a09ec9329ef421493e3f94dc0da3732d146bd107f7c38eb2e19d",
+      "source_blob_sha": "7b6d7c37782896a9fec567510a96c45157a083dc",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "284ccbdad5611e8b7c86125d4949e6b7f3d82ed186a6fad24e5d52f3a6d5ae45",
       "public_path": "angebote/wirkungsmanagement/wm-v4-10-reality-check-90-tage.md",
-      "public_sha256": "aea2ca060746c1abe9905cf655d8c7ec2319e9910e51ed3bbbbd2a9828b804de"
+      "public_sha256": "52325e03faa302f1f5525e8e2bb2ef50cda7060d5f51718de168ccf6cf486bfc"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-001",
@@ -2239,10 +2399,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/01-vom-kpi-zur-wirkungsbeobachtung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "fdf470f403c76c5dab28916969f20f881a172b3d9d47b786e122c11c0e85e97a",
+      "source_blob_sha": "0865cded42447172f0678a8c8ff9fbedfcf07094",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "c63d24d8572d149aa52b18267cf4d2f86ab32ce1c6387292e54291e368fee4d2",
       "public_path": "angebote/wirkungscontrolling/01-vom-kpi-zur-wirkungsbeobachtung.md",
-      "public_sha256": "a9764f3d0d717aa710a740bbeec5e78307824dbe091aee1ef3872231e3e1087c"
+      "public_sha256": "4c701168704ae6484878445ca72976d00818d65896865340788f949f0998b50d"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-002",
@@ -2255,10 +2416,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/02-datenwelten-und-quellenfunktionen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a53fee0205e8fcdcaf5f0ce9130b99e5ec1bd11a4cb2964632eef119e7953a80",
+      "source_blob_sha": "6129eec73a6685a9ca997d4d4c7ec05ccb112c28",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "3885019cb954e17439fefac84d2e893b9b07640194d2f5e20853ad1bf0064464",
       "public_path": "angebote/wirkungscontrolling/02-datenwelten-und-quellenfunktionen.md",
-      "public_sha256": "86bdca9e8e8a8bc77d87dcf51c81f5e4b3ce36c18d33c4d563e80630b2334033"
+      "public_sha256": "e11c2bb8d60ef9a4f8414777b5fb279061b8decd7b7bcb6f073774a058f8ef84"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-003",
@@ -2271,10 +2433,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/03-masterregister-wirkindikatorenregister-provenienz.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "84f788b8e7da88e2bf11c25cd20d9eeb688e14ef7ac25448e71cba891ca25b3a",
+      "source_blob_sha": "a29c3b38866a78ea97bb4e53aac31c2bd3f4d271",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a60cffc1469a29643ab9fcbb8e63d3bc5411d14a72f33a31b7824d918be65c82",
       "public_path": "angebote/wirkungscontrolling/03-masterregister-wirkindikatorenregister-provenienz.md",
-      "public_sha256": "d3bc96ed3247da91fd8e0cb564b78f0b2a4915b0490b4299c6afe2a81ae32079"
+      "public_sha256": "19f4eaa2a391bb5bcd8ff7b139f07d47f60e820bcf87b7df489aee5d2c07747e"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-004",
@@ -2287,10 +2450,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/04-scorecards-als-wirkungsprofile.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "1281e282a1e0e9f203398170c36ddf36ad670b5a51a59ccc92b85713cb9e09e5",
+      "source_blob_sha": "093508a867a5c94e7a2e181bae953e499314f6e6",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "d86ccc9f593ce2d4da871dcd4a6554d95e09c72de3f4cc480a3b2ccb55848a32",
       "public_path": "angebote/wirkungscontrolling/04-scorecards-als-wirkungsprofile.md",
-      "public_sha256": "244552d09798a9a6f087e53dd74014b4226cda246b457993ac83a8a4cf0ab9e1"
+      "public_sha256": "1d9ee268290fbd7afeaabdbfb58be4bcded1dadae8f8f22086099ccd031297fe"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-005",
@@ -2303,10 +2467,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/05-nichtkompensation-schutzgrenzen-rmo.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "3b2fe522b1eba0265daec740fda930ff33eda27b62cb5cd2b91fc103fdc36edb",
+      "source_blob_sha": "4cc4b4cd545ecd11803feac79d7bc96aed788d06",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "2f5cd54cd8fb42288cee63c0bef8b42668f081391417536cd38055fa755b2b7c",
       "public_path": "angebote/wirkungscontrolling/05-nichtkompensation-schutzgrenzen-rmo.md",
-      "public_sha256": "9b3259b9e3dcafc94592aedb6b03a91d1c5ff8c33e5d62198b2b5757748710f6"
+      "public_sha256": "6b39c200775f5f4e5518cfa495ca17dfe177601c66fcc4a5193ec8b980177395"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-006",
@@ -2319,10 +2484,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/06-monitoring-gegenfaktum-attribution-reality-check.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "bf0073355e3ca935c68310b91fe1bbf7d2fc66e58447400ee42bc4560b782bf3",
+      "source_blob_sha": "8fb2231f2ac809e1a5b8b194993ee55c53f54425",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "be0b2f1d2c2a45d6d5fe9566ae292e5e3062640d011b55d77d3193dcdeb73619",
       "public_path": "angebote/wirkungscontrolling/06-monitoring-gegenfaktum-attribution-reality-check.md",
-      "public_sha256": "f375fa206e1c5a3198d8a3f91e2169c460d7a88a5e716c8e7f54f9643fd33733"
+      "public_sha256": "a97b1b1dcc3756a6507b18e312fd700389650a8028c41f337e47dde0c62a5aee"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-007",
@@ -2335,10 +2501,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/07-nettowirkung-transformation-investitionseffizienz.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "e85d282d419d0b049bfe79ba4ec364cee5bdf232db4b62fe28658ff4e7d49905",
+      "source_blob_sha": "b29e8de59ad7ed731dbf87b9bede0798c94d4ff3",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "0caf416716fbb464f4a41966c26f0fcaf2fca73451b924ef810a9a61aa635d6f",
       "public_path": "angebote/wirkungscontrolling/07-nettowirkung-transformation-investitionseffizienz.md",
-      "public_sha256": "29870ad95d82a80235102cb96c6823083fbb34eccbbae1fe46f69b4c74474b6f"
+      "public_sha256": "1d344c70737facd6a75e69136a697e99b99a4255fac30c49dad182e172019141"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-008",
@@ -2351,10 +2518,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/08-controlling-in-capex-opex-portfolio-einkauf.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ea9056048f903a0348ec31bb8e09022e90247698b00a928591f31252645d62c6",
+      "source_blob_sha": "ff20d08433f7c9189dce7b2734ae16d09cb84e65",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a782592c656880efa3d1f321f1ed251a5c523dc8e12f5ef5819ea81d6db0b9cb",
       "public_path": "angebote/wirkungscontrolling/08-controlling-in-capex-opex-portfolio-einkauf.md",
-      "public_sha256": "037c3abc5c3b2d2493ae84b4464a7c2b9eaaca61cf292aa8427ca297a78669f5"
+      "public_sha256": "415a93f75c83d1085dd5d62b52240c15d9ea7f4e35edf6dad74f3f7022a00559"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-009",
@@ -2367,10 +2535,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/09-audit-assurance-und-gaming-schutz.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "d2392b28c474b4128aa39a9994d42f56acb9f4cf5922253b9d9efed507506f91",
+      "source_blob_sha": "b7bd04209203f96cd1b9a095b2d36cdaba73100b",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "7ce5ac202b1c950416d5f5ebc7c7f43d0a8b41bd24466c3b134d414e11012e04",
       "public_path": "angebote/wirkungscontrolling/09-audit-assurance-und-gaming-schutz.md",
-      "public_sha256": "09adb50d36896edda7aefbf19a4371c40eccb723e368132115167086393a8a9e"
+      "public_sha256": "4feaa0bcdb9527d35752d721d64c6abf8573a256d32e51342f5961bf1bfbeb9b"
     },
     {
       "lecture_id": "WOEK-WB-WC-V4-010",
@@ -2383,10 +2552,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/10-integrierter-abschlussfall-und-lernschleife.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a3ea6a2b8a3fb9e3fbec47da510268bd73c9ba5baa883f5eefc543b3b233231e",
+      "source_blob_sha": "c6a108039e8df9adb0592ad3e7893637af243a50",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "8db4a8878f2c4831f89dc6e32117da188f765b4cf1d72ffff05fa13357d825cf",
       "public_path": "angebote/wirkungscontrolling/10-integrierter-abschlussfall-und-lernschleife.md",
-      "public_sha256": "7c8a591ed9fd14df2d9f4f3589b6fb3da7a9329f7cbdea2936fc15b74ab96a6b"
+      "public_sha256": "bd6678e9ca4d65de6e3115fa556b0c09703879f66b243d46638a714794395ff3"
     },
     {
       "lecture_id": "WOEK-MP-V4-001",
@@ -2399,10 +2569,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-01-woek-in-20-sekunden-ohne-strohmann.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "1a76bba01878961eb85f98dafae5c37559e4b24b590a37ed131a11c4fdbf1818",
+      "source_blob_sha": "9ea0efbf33d16fcbd8ac070da42e926e64aa8b9f",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "5c57c8ad86bb7ca47a461f9f44cb51ec1c91ff54b96d3e44dd10139b55da20c0",
       "public_path": "angebote/multiplikatoren/mult-v4-01-woek-in-20-sekunden-ohne-strohmann.md",
-      "public_sha256": "17d1018f590c07fe29a5081dc0443afff281693df75d36d07ed7294530b566fb"
+      "public_sha256": "10c7a5936488e8e3ef3536ee93b8d2809baf6608d87f1ae1b911336416737c0b"
     },
     {
       "lecture_id": "WOEK-MP-V4-002",
@@ -2415,10 +2586,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-02-wirkungsvokabular-sicher-erklaeren.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "36d7150857db5d84f5f88652382e1492b77a4dd2a53d0d2b54c4b1dc970934b1",
+      "source_blob_sha": "7d95d8ef9669d88eba2708bcfbc16757df251114",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "f98291f002d413c468dd7a62dff4fb7423f5418ee43247e5f52291aac360a51e",
       "public_path": "angebote/multiplikatoren/mult-v4-02-wirkungsvokabular-sicher-erklaeren.md",
-      "public_sha256": "a0e3c26a299aaf2e620f87bedf736da52e841fc6bd7f962051bb6d8cb38e1e97"
+      "public_sha256": "a3830485b77d4c3e3ad267eee2e57686d6ee6266dcda426cac425854f4842d72"
     },
     {
       "lecture_id": "WOEK-MP-V4-003",
@@ -2431,10 +2603,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-03-vom-problem-zur-entscheidung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "242ac22a525ebbd425084e0b4a978206fa8369dd073853db012337377476752d",
+      "source_blob_sha": "3fd47d4092ef188c24599626d45b0fefa36b85d3",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "0d26fdbc06baf719af7e6d206d5081328553bdde1f8aec089940e5c320b3c8e1",
       "public_path": "angebote/multiplikatoren/mult-v4-03-vom-problem-zur-entscheidung.md",
-      "public_sha256": "b695531978f75665c9f9f122a5b4d7e23b5334fd8ccb6ad50948a9e25398f583"
+      "public_sha256": "c84b6890b122cff54598cf45db0a7e5652fe1a77c3a5b6fefcbc246d0bcff1db"
     },
     {
       "lecture_id": "WOEK-MP-V4-004",
@@ -2447,10 +2620,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-04-didaktik-20-sekunden-2-minuten-tiefe.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "7db2d0b170170a3912618310cd60aef924184b11eee417cf5764bc3839eb227c",
+      "source_blob_sha": "bf8f5c1adce444dd7e234ac65e5ff9dd2c4755ac",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "df7a4057389be314f844707599f4c0e8b074463db96905a715b1c73ce4e78b87",
       "public_path": "angebote/multiplikatoren/mult-v4-04-didaktik-20-sekunden-2-minuten-tiefe.md",
-      "public_sha256": "6a23acd17369f08e5be39a1527a89f73c8b345e0f744b8366e22067ca0547544"
+      "public_sha256": "fdcfb8efd503f9c630c878ec1fab03f77ed2026babb5f663d377349e7e337389"
     },
     {
       "lecture_id": "WOEK-MP-V4-005",
@@ -2463,10 +2637,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-05-ehrliche-wirkungskommunikation.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "cc2cf7f2c84c9c4466d5b1106ab48c4ca0a96a9e60b1fccb337cf8fb79e37d2a",
+      "source_blob_sha": "d74d2f8234713cb5bdc8d027cc6118bb8408f080",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "2a86843ae4fb568d523b8ea773c6f28e191c726f3c2c1b1a00dc5a70d1897203",
       "public_path": "angebote/multiplikatoren/mult-v4-05-ehrliche-wirkungskommunikation.md",
-      "public_sha256": "6562df8e8e554cf96ad43ce891b60cb6ddaa7a1f09a2c10de42e3820ec1ad0e4"
+      "public_sha256": "bba076dfb01d1eed3776a298271c52c4d5a0e48356e6d60f01ebb4c819b8245a"
     },
     {
       "lecture_id": "WOEK-MP-V4-006",
@@ -2479,10 +2654,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-06-medien-narrative-demokratische-resilienz.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "60a1d0719e1b7d1086b7e460d5cde609062bc6982814fc9686805578fd09953f",
+      "source_blob_sha": "1fa18394b5ba4504f5e486a09845d1908f61819e",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "2b2952713577172e45fd325ebe952e2c7b3a02ae43a793943d7f84a64e51a792",
       "public_path": "angebote/multiplikatoren/mult-v4-06-medien-narrative-demokratische-resilienz.md",
-      "public_sha256": "e36430e6aad16245310c73b7f1354e7ba4cd709792a6a0c6b225b0871fb2124d"
+      "public_sha256": "2063a82780217ee69a215e065afd5dbd41d926ca9c15a3649f52e9c0c8d9f62b"
     },
     {
       "lecture_id": "WOEK-MP-V4-007",
@@ -2495,10 +2671,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-07-rolle-ethik-autorisierung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "aad4fcb9f3e11a95aaacf45d1ff6644d2f6260f805764b6a5136cc9fbe9030c4",
+      "source_blob_sha": "db6e0b885b202b76dffd51ed928fa9444527d927",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "dc97b044cff8a253037311ec94f853250ddaea3295fd842b4fe1150725de2c20",
       "public_path": "angebote/multiplikatoren/mult-v4-07-rolle-ethik-autorisierung.md",
-      "public_sha256": "cdba5ee371a0d3afc5df72dca6003f3b77561d39fd43ce904ececedfe2f5c016"
+      "public_sha256": "b5c5bf1c7568314062440d3d9d4e057ee96031bd4216447391086670397e40e6"
     },
     {
       "lecture_id": "WOEK-MP-V4-008",
@@ -2511,10 +2688,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-08-integrierte-fallarbeit-und-pruefung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "b557891813b1146a35520656987a332269fa69a23da6d3acfaa3d31c41ad7c83",
+      "source_blob_sha": "b55157ec351371126d25752be2915187d9c339aa",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "260046f0140cb23bd300b3d06e9f5bf5d4d50059603bb53bd3d90de21592c251",
       "public_path": "angebote/multiplikatoren/mult-v4-08-integrierte-fallarbeit-und-pruefung.md",
-      "public_sha256": "836ef6aa31bfabd8adc985c47f2d7c4fb5b3d5a95e24a0a2307138b37b086e47"
+      "public_sha256": "5fb0224eafebcc6fb833b6a7cb10a0200432332f591bda206e4254df30c9011d"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-001",
@@ -2527,10 +2705,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-01-rechte-regeln-korrekturfaehigkeit.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ab604244dbe41b64d13d47b25c16ba3c7eb7749c49883fb5c0afd37707912e51",
+      "source_blob_sha": "b6a50cd0ae3c7f49280da9d7e0dc62f297c56a95",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "1affbdbac3ac47b95326b6f1fcaf114acaa4c992e62c9be53bf798c093342a81",
       "public_path": "angebote/demokratie-buerger/db-v4-01-rechte-regeln-korrekturfaehigkeit.md",
-      "public_sha256": "7c73a5806b39091b255cad0ad33350d7f0572e806366dfd5198bc57e06193751"
+      "public_sha256": "f6eff20f6a41e8df9e202b8005eda8e7f1deeae5fde16a5a77708c28d6a79a0c"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-002",
@@ -2543,10 +2722,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-02-wirkungsraeume-schutzgueter-vertrauen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "4d7b3f227c420c9b48e2f0bfe8beda54c4d5b3a4e4ccc49d7a072632311a243a",
+      "source_blob_sha": "c3a19c61aed90a83b9225421ac17fa97b0139cc4",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "037c8fb28dca3606caa74e530eb96eab50036473f7c61300c6de7a24f1f335a4",
       "public_path": "angebote/demokratie-buerger/db-v4-02-wirkungsraeume-schutzgueter-vertrauen.md",
-      "public_sha256": "78f7af6c43b9987b71a814d98a4061d00b0d5f9e16ea0af72e788101bc815b3e"
+      "public_sha256": "ee3617a2cb31383a4abed30f695ff592fe1f9b3143dc6c32f30642c826b73d3d"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-003",
@@ -2559,10 +2739,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-03-fakt-quelle-beobachtung-wirkung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "6fcc1b3a586a95b705a93c5f90f339659b0f7d02c2ff4351d35d73d8781629a4",
+      "source_blob_sha": "8542bfcf4d0986df52c26a25ea0b7e011aa37be3",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "e3881e914cce434c2b89becf82c823e239442a89bd8fee23a8ef8789d00ce766",
       "public_path": "angebote/demokratie-buerger/db-v4-03-fakt-quelle-beobachtung-wirkung.md",
-      "public_sha256": "b50a1403601b876a14cbe619eb9583b8449d27f594f3f8d6b16eabc0db168f2f"
+      "public_sha256": "c41756c45158b253ebdd6737033b3741666d2a4843ff8b03c4d45ca4e2d53199"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-004",
@@ -2575,10 +2756,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-04-narrative-deutungsrahmen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "173391067894c925af795f0780a457c479e95a31378f6a5d3a0fce78f8c51b1f",
+      "source_blob_sha": "34b1e66df375cf540a7d3ad1c47110ce40d776b2",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "2a30a661e9560f834332018b0ee921291ccef8b96b10a9ed8d4aa2f866e7b29c",
       "public_path": "angebote/demokratie-buerger/db-v4-04-narrative-deutungsrahmen.md",
-      "public_sha256": "ef089a1631d868cde55225131c8924f133cffd42cca1fbe434d84472711ec6fc"
+      "public_sha256": "9a2807aa093ca0da15eaa9397038946578a150e116378a34efb2e84ebe7535ea"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-005",
@@ -2591,10 +2773,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-05-framing-wiederholung-korrektur.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ceef3de6bbbb7ecf9e3c52dcd4ef6f40abadc1331ff5104fcfcaaefc80e023e7",
+      "source_blob_sha": "60814a65176e076d062bf11f3a09b9eda569f1ae",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "d1f362d3e2a233ec657b057f60908bbcbdb9d5e837e7b2ca2ee7c3283ccb31a7",
       "public_path": "angebote/demokratie-buerger/db-v4-05-framing-wiederholung-korrektur.md",
-      "public_sha256": "202a7bd43a02fb02568b9e342887112cf5bb5f1a784c0ff9214aada18a79cbb1"
+      "public_sha256": "a3ec047a6f8bcb5d0012f111f85b38393f625358eb14179002b0cef297ea391e"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-006",
@@ -2607,10 +2790,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-06-emotion-reaktanz-identitaet.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "7b972f63dcf002a0728d31b49cbbdabce8c7dac968650318d58b27d6cd622303",
+      "source_blob_sha": "60767cb1dadf9a79aaf82a0e7eab759068d50897",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "3ec803d7462c9329bc5d46ee56b5e156b4a95ea78c349a126513a456b1245209",
       "public_path": "angebote/demokratie-buerger/db-v4-06-emotion-reaktanz-identitaet.md",
-      "public_sha256": "69038bda40afa8f789517f068b7c21bae16c294d7bf78effd7a63ce651cf8955"
+      "public_sha256": "f88810c659211d2a2ddbacdef2037f4cb36341ba0f1c2b60cd6cb925505eec8e"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-007",
@@ -2623,10 +2807,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-07-plattformen-desinformation-synthetische-medien.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "5c7fda51ce949b175d5ed86c4f1bc357c8184e690f1de81383c8b1c7a52ccddf",
+      "source_blob_sha": "2a343795b01e6d11a9acc8517071ba6faf9c641c",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "10c681c014e8de373cbf913ef6de8c27b2b6cf4070b4d0516519f4df6d43f47f",
       "public_path": "angebote/demokratie-buerger/db-v4-07-plattformen-desinformation-synthetische-medien.md",
-      "public_sha256": "22bdb483774b8003ddcf8403a5ac574719bdc1dacee96add5e60b7b3c1988fa4"
+      "public_sha256": "60ce35d6efb56e873ec25103d9d4057bc93a65ea0e4e215a584a9e1da4702d4a"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-008",
@@ -2639,10 +2824,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-08-antworten-grenzen-sicherheit.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "a0491f13f0373859f7e46229485956b2711369ae49c9f9e66334968c14e6429d",
+      "source_blob_sha": "de52243de17bb2189ef6c0947e3502c3cb2c5b84",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "def608498c95ca5eb401bc640a19b8daf6c732dcd289cac6b8e6e454c0590dde",
       "public_path": "angebote/demokratie-buerger/db-v4-08-antworten-grenzen-sicherheit.md",
-      "public_sha256": "30e9e2f480572df0febde7da471ed374666742ecf58b3fc263c8a0fe9602113a"
+      "public_sha256": "70e6a9a223ff377d3b284ca704348c9fc9e7813e8220dde47be5d51e2e264635"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-009",
@@ -2655,10 +2841,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-09-gespraeche-unter-konflikt.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ff6ffc893e7017faedb74d7a4a72f8f970bb4d15f9cf48fb2e31aef0f6d8bdd9",
+      "source_blob_sha": "3f479c3249b7e7ade61ffaa69e594c2ce0d64a07",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "d5379e9bb8c394bc84d260f1b11a7fa2276587b9f9b97dba194accb49fa35f89",
       "public_path": "angebote/demokratie-buerger/db-v4-09-gespraeche-unter-konflikt.md",
-      "public_sha256": "498c2c2264a4395ee4697c3c8d7f0695eb28d87105004a8a58b86579a580ec4f"
+      "public_sha256": "7c6f1d90673b403e9c6b0431f6c2e5f0dda196c6b9c808a3106ab530b8a64ef1"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-010",
@@ -2671,10 +2858,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-10-zivilcourage-teilhabe.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "ce94d436b864d56d4ed88d0306239457cc5216af212a447f7069742ab52ecbba",
+      "source_blob_sha": "217d1474c23b801aca983c1dd32c365011ec8611",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a22fc6c4d735da340bc86d1e2510867f9c3f8e8eadec75fe0edc64d32724f34c",
       "public_path": "angebote/demokratie-buerger/db-v4-10-zivilcourage-teilhabe.md",
-      "public_sha256": "e354f6e5f86a00f078856defcbbff23b9f295d00770df034244e7ea3fa79bda5"
+      "public_sha256": "84f254a6a4e78d514c15ff36b304513c714f6fdf62725c120b340a5f35d5613e"
     },
     {
       "lecture_id": "WOEK-WB-DB-V4-011",
@@ -2687,10 +2875,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-11-persoenlicher-resilienz-reality-check-plan.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "3d80a16f45277efe73dd2ee884c50c7e81a72913232aa66efaddf3a3d0cba922",
+      "source_blob_sha": "423c133591bb04973dd8e046f14ebbad98fc9b1f",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "87e7415a3d65c6635c6cc28e037c5f06d08f6ccdc8c3d200d0afd8507bd44fa9",
       "public_path": "angebote/demokratie-buerger/db-v4-11-persoenlicher-resilienz-reality-check-plan.md",
-      "public_sha256": "e98354ba6ed870dc1c39918998b4180ca2d1053432a8c0584014c31188c3df08"
+      "public_sha256": "7940ce36dd208feda1d2d4d20d0f47e0abd1e477380ca0593a61a2bdd08d1ed4"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-001",
@@ -2703,10 +2892,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-01-grundlage-wirkung-demokratie-referenzen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "3068b12b71585bc25e7cf3a60d80451a8f4b595c66ca3727ba9d3d9b46f4e1d9",
+      "source_blob_sha": "de6933c6dc3e1c76d116c0e4225e442aea882d77",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "adbc6d5e3ef5147a4bc944ac9eab568df670ed0eeb259d31f85c55f8b1053b82",
       "public_path": "angebote/demokratie-medien/dm-v4-01-grundlage-wirkung-demokratie-referenzen.md",
-      "public_sha256": "96ee8526d49f23d4b4d120306b157df691436fca64d75a2f8bc655744d25c212"
+      "public_sha256": "6421f116cb0f34b6e73d919b174bcc7ea3e995aca009ae61bca995645e093864"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-002",
@@ -2719,10 +2909,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-02-oeffentlichkeit-demokratische-infrastruktur.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "27a9c734fb67e31fba9157585ff8cc248eed8c221aec2820c86dce6c55772f10",
+      "source_blob_sha": "ce3e3bd95e2cadb29190c0d1ba7cb17b4cd8691a",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "f71413766a64cec8b9ea925e09b3a88f8a8e570af78e8bba6e6689fbb0236985",
       "public_path": "angebote/demokratie-medien/dm-v4-02-oeffentlichkeit-demokratische-infrastruktur.md",
-      "public_sha256": "b5049543a43cb1f1011d26d486f12fc730a32e0b5dba8dd37309fcd47890647a"
+      "public_sha256": "e98ae1e6fde871e116a6f373cfe65d3683d10915838c9d0eb8556e5ec0cd57dd"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-003",
@@ -2735,10 +2926,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-03-reichweite-wiederholung-verteilung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "fce10f6d150f15bfa5478a8c62e91ecf8c0cc8bdb21b0618a05da89a10484606",
+      "source_blob_sha": "16419623dbe9288ef2519c4e04ad25076806faa2",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "4921d3ffe6e18f5a99c272037ad9817fd2f9bccaea0e251e2f252b96291e4a89",
       "public_path": "angebote/demokratie-medien/dm-v4-03-reichweite-wiederholung-verteilung.md",
-      "public_sha256": "8c1f5b45a2c62ee5678c162ef0597620bb2bc48a30a93e36a8c2aa26723a38e1"
+      "public_sha256": "44e3b0a2da916b6584c0cf320522d79b2e2dfea7a7ff553c289a23bd8cba5e18"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-004",
@@ -2751,10 +2943,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-04-moderation-live-druck.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "5f22f30fb736f42520a653fd71c018d01a0e334f207521205f2f3cdeaaccd69b",
+      "source_blob_sha": "68e0592a72b96906697fd39313ad44fd9b9d7c8e",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "e2a064dd42ac5fa8d9eaa9799cdd857d4a7139f13cea126ac113dfdc19e03977",
       "public_path": "angebote/demokratie-medien/dm-v4-04-moderation-live-druck.md",
-      "public_sha256": "508670f7efbcba89ee4c7992b7672a13074b9eb936fda6480bc977bf903ab77c"
+      "public_sha256": "c8cf3b13ec1f59e961d6e2a766c7db17d51a0a09e40e9df466e4aaaaf69ac408"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-005",
@@ -2767,10 +2960,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-05-kommunikationsmuster-ohne-personenrating.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "5f6508ae42506cbc94ce8d4b6091550e9f693777f33ddb59c3803ccda7d2d220",
+      "source_blob_sha": "cdbd4d9e0a49d790bfc78704a2e92d41d572f443",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "6f18b6616303a13ff9228f00be9486e553d4fed60742ba34ebf3146280912045",
       "public_path": "angebote/demokratie-medien/dm-v4-05-kommunikationsmuster-ohne-personenrating.md",
-      "public_sha256": "f820e7f9434cddb9290941a27eebfb5a566ebba692593815a3711931abb27b1b"
+      "public_sha256": "ac1a416a9d455424e77b757b2164eaf21bfa271dee172d9caf4db0c570d0d1be"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-006",
@@ -2783,10 +2977,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-06-frames-reframes-optionen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "95e5ac90c58dfd38399a5c3544f26f1770d4adfc383a980cf8e5848b4920b6e0",
+      "source_blob_sha": "a4b4c3b59f393d0f9d9fdf40113b28eb4e6df1a9",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "81c18b89c888d236081aef36f8517d8030f6e76efc41efe90eb9e2bc328f532d",
       "public_path": "angebote/demokratie-medien/dm-v4-06-frames-reframes-optionen.md",
-      "public_sha256": "1d33d31141644aa36dd98e5915a19298e1f464d73b99ffc74a92c4f85a225e91"
+      "public_sha256": "69940519b68abaabd29d1933dfbf3d4d84378ab5e4a10117224fccb3b8e6d32c"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-007",
@@ -2799,10 +2994,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-07-hart-fragen-verifizieren-verstaerkung.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "6b79d78f368f609c8e6bf57e5cd5acae17566666a3c366d53abbbe0def4330b9",
+      "source_blob_sha": "abea3ee7f8ea87b79c468edc0ed0eeac07fc15b7",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "7afcb5c8e0fa85ec5a2af0ab44f004db0888f2cd96b0a93b0d147c104ecc2f4f",
       "public_path": "angebote/demokratie-medien/dm-v4-07-hart-fragen-verifizieren-verstaerkung.md",
-      "public_sha256": "531e6f99dfb6a3fd60602375d2281154bf76a859f4213b09a5fa7f44c2b21f11"
+      "public_sha256": "03be00c3c839682eb806c02230b8fe436b862102589a64f60f298c2945a7f261"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-008",
@@ -2815,10 +3011,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-08-bild-ton-schnitt-ki-provenienz.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "0176c50d09c9c08a065682afe1403fb1c3f3859ee3cfe779711f79fcba1ab286",
+      "source_blob_sha": "d6db78032ea3d7e0b1b02606aa02526db7145696",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "895ae08b6d50729bebf216702a617efe2942fe7bd2aef448e1071db1fe28b806",
       "public_path": "angebote/demokratie-medien/dm-v4-08-bild-ton-schnitt-ki-provenienz.md",
-      "public_sha256": "3052d03d1774db91cb9db22b63d34031cd031fe9e8a1c66d0870fbf51a3836a0"
+      "public_sha256": "e65ebeedec64b6e5c0b88e711cd2d8733801c87df35b1a2f46c58d1fbde4996e"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-009",
@@ -2831,10 +3028,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-09-wuerde-minderheitenschutz-grenzen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "d80448102a248031a28d42903a8752b27b121add259aa20b7e2778d558cbf140",
+      "source_blob_sha": "90bb7f4528a2f606e95538a78d869baaa6aa5805",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "6847a2e53f46380c985e97355de6d621c68ec0611eb0fc7f2e5116cca22f0cf9",
       "public_path": "angebote/demokratie-medien/dm-v4-09-wuerde-minderheitenschutz-grenzen.md",
-      "public_sha256": "fb25cccaf340271a6ff2f9edea797827b3bcd37c8d9159a0c9b3f7410458c28b"
+      "public_sha256": "ba3684b42f9e0742338290255e0b7070a03ccfbf69ff6d1848720f8a20e918bd"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-010",
@@ -2847,10 +3045,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-10-quellenklarheit-versionierung-korrektur.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "b38dd28b51d77006d1987bdc363390d3cd499e6cb34478e5cf4ba3b70e654857",
+      "source_blob_sha": "153fef95b209cde8db805a416e7eb8f08c132b4e",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "2c10748cd49554e02a97b3ae2c445444db8b35d2e615a270855081e534ad3ff9",
       "public_path": "angebote/demokratie-medien/dm-v4-10-quellenklarheit-versionierung-korrektur.md",
-      "public_sha256": "3999c9c3586cda520efe3763e361c98cb324bf0b60fb15a210daefa5d3a1edab"
+      "public_sha256": "2b984b2fe637d58a5d288d29c6029f5a5c29909c32cf9a25f2b28d93458cd77d"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-011",
@@ -2863,10 +3062,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-11-krisenkommunikation-desinformation-hybride-lagen.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "93950df48a6bfa3335659db48e0c7870ef65dd391cb39217e224376553138ca7",
+      "source_blob_sha": "7febfab85de5164a2a94648fae84d228b76f5174",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "a629980678ab60d62c8bafaf49eb3719f049e3986a2f387a0004691bf33952ac",
       "public_path": "angebote/demokratie-medien/dm-v4-11-krisenkommunikation-desinformation-hybride-lagen.md",
-      "public_sha256": "05fe601af3ee0e6c49ba95b0a47330577178ad1479c6a0021cb235109e208ec0"
+      "public_sha256": "58bafef6e2608f44322a2cfbc25faaf065f79f99a2a3ab9d2af2f7d3db645a94"
     },
     {
       "lecture_id": "WOEK-WB-DM-V4-012",
@@ -2879,10 +3079,11 @@
       "version_sensitive": null,
       "recheck_status": null,
       "source_path": "content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-12-redaktionsprotokoll-reality-check.md",
-      "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
-      "source_sha256": "664e7c7dc2f094388947a57070b43780bad22135b6626f9a4ba7fcdb122484f8",
+      "source_blob_sha": "810519259042ab0cc86540ee3f277df8cfd86953",
+      "source_sha": "aa10de6b5a5c26badb3747fd3e4a97b540e327a7",
+      "source_sha256": "42c970efc353fb04afc1f382ac91d599965ca59e8668d4880bc59965ba21cfa0",
       "public_path": "angebote/demokratie-medien/dm-v4-12-redaktionsprotokoll-reality-check.md",
-      "public_sha256": "b46637be714528b4781e12e06e26bfc3214b9e95e8edbe2dabf85dbb69b8370b"
+      "public_sha256": "f80c4778dbf401cb42273a46a96d457d6831a3ad987c0f321ce9069b9edf3af4"
     }
   ]
 }

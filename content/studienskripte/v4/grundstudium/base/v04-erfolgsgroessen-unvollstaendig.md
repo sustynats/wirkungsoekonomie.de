@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v04-erfolgsgroessen-unvollstaendig.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v04-erfolgsgroessen-unvollstaendig.md curriculum=4.0 sanitized=true -->
 # V04 · Gewinn, Wachstum und Reichweite als unvollständige Erfolgsgrößen
 
 **lecture_id:** `WOEK-G-BASE-004`  
@@ -146,3 +146,7 @@ Gewinn, Wachstum und Reichweite sind nicht unsere Gegner. Sie sind Messgeräte. 
 Gewinn sagt etwas über finanzielle Tragfähigkeit. Wachstum sagt, ob eine Größe zunimmt. Reichweite sagt, wie viele Menschen erreicht wurden. Keine dieser Größen sagt allein, ob Menschen gesünder werden, Ökosysteme stabiler, Institutionen belastbarer oder Schäden auf andere Gruppen verschoben werden.
 
 Darum stellen wir die Wirkungsfrage daneben. Nicht um die alten Zahlen zu löschen, sondern um ihre Grenzen sichtbar zu machen. Und wir zwingen am Ende auch nicht alles wieder in eine neue Wunderzahl. Wo harte Grenzen, Rechte oder sehr unterschiedliche Wirkungen betroffen sind, bleibt ein transparentes Profil ehrlicher.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

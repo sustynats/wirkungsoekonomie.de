@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-01-grundlage-wirkung-demokratie-referenzen.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-01-grundlage-wirkung-demokratie-referenzen.md curriculum=4.0 sanitized=true -->
 # DM-V4-01 · Gemeinsame Grundlage: Wirkung, Demokratie und Referenzebenen
 
 **lecture_id:** `WOEK-WB-DM-V4-001`  
@@ -72,3 +72,34 @@ Ein Beitrag kann Millionen Menschen erreichen und trotzdem wissen wir noch nicht
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst nach Legacy-Reaudit B06; Medien-/Moderationsentscheidungen werden als evidenzgebundene Interventionen ohne Personen-/Intent-Score behandelt.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Vom Thema zur überprüfbaren redaktionellen Entscheidung
+
+Eine Redaktion kann nicht die Wirkung „der Medien“ als Ganzes steuern. Sie entscheidet über ein bestimmtes Angebot: eine Überschrift, eine Sendung, einen Kommentarbereich oder eine Korrektur. Die Untersuchung beginnt deshalb mit einem abgegrenzten Entscheidungsobjekt. Ein Beitrag ist die Intervention; die Zuschauerinnen und Zuschauer sowie die im Beitrag betroffenen Menschen sind mögliche Wirkungsempfänger. Eine beabsichtigte Veränderung könnte sein, dass Leser eine Sachfrage genauer beurteilen können. Ob dies geschieht, ist zunächst offen.
+
+Drei Ebenen sind auseinanderzuhalten. Auf der Tatsachenebene steht, was veröffentlicht und belegt wurde. Auf der Erklärungsebene steht die Hypothese, wie die Darstellung Aufmerksamkeit, Verständnis oder Handeln beeinflussen könnte. Auf der Bewertungsebene steht, warum eine belegte Veränderung im jeweiligen Referenzraum erwünscht, problematisch oder ambivalent wäre. Eine redaktionelle Haltung kann die Auswahl einer Fragestellung begründen. Sie ersetzt keine Prüfung der Tatsachen und keine Untersuchung des Wirkpfades.
+
+Ein demokratischer Referenzraum umfasst dabei auch die Möglichkeit, der Redaktion zu widersprechen. Eine Zustimmungsquote zur eigenen Position ist kein hinreichendes Qualitätsziel. Verständliche Alternativen, zugängliche Quellen, erkennbare Unsicherheit und eine wirksame Korrekturmöglichkeit können angemessenere Gestaltungsziele sein. Ihre tatsächlichen Folgen müssen wiederum beobachtet werden.
+
+### Durchgearbeiteter Fall: Beitrag über eine neue Bundesregelung
+
+Eine Redaktion plant den Titel „Endlich werden Folgen von Gesetzen geprüft“. Die Quellenprüfung zeigt: Für Bundesregelungsvorhaben bestehen bereits GGO, Nachhaltigkeitsprüfung und die DNS als Bezug. Der Titel wäre deshalb fachlich irreführend. Eine tragfähige Leitfrage lautet: „Welche Folgenprüfung liegt vor, welche Ergebnisse sind öffentlich und wo bleiben Lücken?“
+
+Die Arbeitsakte führt vier getrennte Einträge. Erstens das Vorhaben und seinen Verfahrensstand. Zweitens die konkret zugängliche Gesetzesbegründung mit Datum und Fundstelle. Drittens die darin behandelten Folgen einschließlich Unsicherheiten. Viertens die zusätzliche WÖk-Frage, etwa nach Verteilung, Gegenfaktum oder ausgelassenen Wirkpfaden. Ein nicht auffindbarer eNAP-Rohexport wird als nicht öffentlich belegt erfasst. Daraus folgt kein Beweis, dass überhaupt keine Prüfung stattfand.
+
+Der vorgeschlagene Beitrag zeigt ein vorhandenes staatliches Verfahren und einen begründeten Ergänzungsbedarf. Er darf auch zum Ergebnis kommen, dass staatliche Bewertung und WÖk-Einordnung übereinstimmen. Künstlicher Widerspruch schafft keine Additionalität. Ebenso wenig darf eine große Zahl von Quellen als Ersatz für die Prüfung dienen, ob diese Quellen tatsächlich die jeweilige Aussage tragen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Erstelle für den Modellfall eine vierzeilige Tabelle: Tatsachenbehauptung, Quelle, offene Kausalfrage, normative Bewertung. Schreibe anschließend einen Vorspann mit höchstens 90 Wörtern. Eine gute Lösung benennt die vorhandene Prüfung, begrenzt ihren Geltungsbereich auf das untersuchte Vorhaben und macht mindestens eine materiell relevante offene Frage sichtbar. Eine unzureichende Lösung schreibt „Wirkung bewiesen“, weil ein DNS-Indikator erwähnt wird.
+
+Prüfe zum Abschluss, ob eine Person mit anderer politischer Präferenz deine Tatsachengrundlage nachvollziehen kann. Diese Nachvollziehbarkeit ist ein überprüfbares Produktmerkmal. Sie garantiert weder Zustimmung noch eine demokratiestärkende Wirkung. Für einen späteren Reality Check wären beispielsweise Verständnisfragen zu zwei alternativen Handlungsoptionen geeigneter als Likes allein.

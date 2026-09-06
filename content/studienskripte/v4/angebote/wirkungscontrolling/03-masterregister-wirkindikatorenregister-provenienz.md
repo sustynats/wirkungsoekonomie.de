@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/03-masterregister-wirkindikatorenregister-provenienz.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/03-masterregister-wirkindikatorenregister-provenienz.md curriculum=4.0 sanitized=true -->
 # WC-V4-03 · Masterregister, Wirkindikatorenregister und Provenienz
 
 **lecture_id:** `WOEK-WB-WC-V4-003`  
@@ -95,3 +95,32 @@ Version 4.0 · Stand 21.08.2026. Zwei-Ebenen-Architektur verbindlich gemacht; W�
 ## Sprechertext
 
 Beim Wirkungscontrolling braucht man zwei Dinge: eine Landkarte und Messgeräte. Das Masterregister ist die Landkarte. Es sagt, welche Wirkungsaspekte wir überhaupt im Blick haben. Das Wirkindikatorenregister liefert die Messgeräte. Es sagt, womit wir Zustände beobachten. Wer beides verwechselt, macht aus einem Datenfeld schnell eine Wahrheit. Wer es trennt, kann sauber prüfen.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Registereintrag, Messung und Urteil getrennt versionieren
+
+Ein Masterregister beschreibt Gegenstände und ihre stabilen Identitäten. Ein Wirkindikatorenregister beschreibt Zustandsvariablen, Indikatoren und deren fachliche Definitionen. Einzelne Beobachtungen erhalten eigene Angaben zu Messung und Herkunft. Die Analyse verknüpft diese Ebenen, ohne sie in einem einzigen überschreibbaren Feld zusammenzuziehen.
+
+Eine WÖk-ID kann diese Verknüpfung erleichtern. Sie ist kein Qualitätssiegel und enthält nicht automatisch ein positives Wirkungsurteil. Auch ein sauber identifizierter Datensatz kann methodisch ungeeignet, veraltet oder für den konkreten Gegenstand nicht übertragbar sein. Identität, Qualität und Interpretation müssen daher getrennt geprüft werden.
+
+### Durchgearbeiteter Fall: eine Definition ändert sich
+
+Ein fiktives Controlling erfasst jährlich die Wartezeit einer Dienstleistung. In Version 1 beginnt die Messung mit Eingang der ersten Anfrage. In Version 2 beginnt sie erst mit Vorliegen vollständiger Unterlagen. Beide Größen heißen im Alltag „Bearbeitungszeit“, messen jedoch unterschiedliche Abschnitte. Ein unkommentierter Zeitvergleich könnte eine Verbesserung anzeigen, die nur durch die neue Definition entstanden ist.
+
+Das Indikatorenregister erhält deshalb eine neue Definitionsversion. Alte Beobachtungen behalten ihre ursprüngliche Zuordnung. Für einen Vergleich wird entweder eine methodisch begründete Umrechnung vorgenommen, eine gemeinsame Teilperiode neu ausgewertet oder die Nichtvergleichbarkeit ausdrücklich benannt. Die historische Definition wird nicht still durch die neue ersetzt.
+
+Ein verwendeter Benchmark benötigt dieselben Angaben: Population, Region, Zeitraum, Definition und Validierungsstatus. Ein nationaler Durchschnitt ist nicht automatisch ein geeigneter Zielwert für eine spezielle Einrichtung. Er kann Kontext liefern, ohne die Entscheidung allein zu bestimmen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Lege für den Fall fünf verknüpfte Karten an: Gegenstand, Zustandsvariable, Indikatorversion, Beobachtung und Analyse. Jede Karte erhält nur die Angaben, die zu ihrer Funktion gehören. Eine gute Lösung kann die veröffentlichte Aussage bis zur ursprünglichen Messdefinition zurückverfolgen.
+
+Ergänze eine Korrekturregel: Was geschieht bei einem fehlerhaften Messwert, was bei einer veränderten Definition und was bei einer neuen Interpretation? Diese Fälle brauchen unterschiedliche Änderungen. Die Provenienzprüfung ist bestanden, wenn eine zweite Person nachvollziehen kann, welche Fassung zu welchem Zeitpunkt Grundlage der Entscheidung war.

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/01-vom-kpi-zur-wirkungsbeobachtung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/01-vom-kpi-zur-wirkungsbeobachtung.md curriculum=4.0 sanitized=true -->
 # WC-V4-01 · Vom KPI zur Wirkungsbeobachtung
 
 **lecture_id:** `WOEK-WB-WC-V4-001`  
@@ -96,3 +96,32 @@ Version 4.0 · Stand 21.08.2026. Legacy-Definition „KII misst tatsächliche Wi
 ## Sprechertext
 
 Eine Kennzahl ist wie ein Messgerät. Sie kann sehr wichtig sein, aber sie ist nicht das Phänomen selbst. Genau deshalb beginnt gutes Wirkungscontrolling nicht mit einem Score. Es beginnt mit einer einfachen Frage: Welchen Zustand beobachten wir eigentlich? Dann legen wir fest, womit wir ihn beobachten, was wir tatsächlich gesehen haben und erst danach, was wir daraus schließen dürfen. Das klingt nach mehr Arbeit. In Wirklichkeit verhindert es den teuersten Controllingfehler: eine präzise Zahl mit einer präzisen Ursache zu verwechseln.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Eine Kennzahl von ihrer Interpretation trennen
+
+Eine Zustandsvariable bezeichnet den fachlich interessierenden Zustand, etwa Zugänglichkeit einer Leistung. Ein Indikator operationalisiert einen beobachtbaren Ausschnitt davon, etwa die Wartezeit bis zu einem geeigneten Termin. Eine Beobachtung ist ein konkreter Messwert mit Zeitraum, Population und Methode. Erst die Analyse verbindet mehrere Beobachtungen und beurteilt, welche Zustandsveränderung sie tragen und welche Grenzen bestehen.
+
+KPI und KII sind Bezeichnungen für die Verwendung einer Kennzahl. Die Umbenennung von KPI in KII verwandelt eine Aktivitätszahl nicht in einen Wirkungsnachweis. Das Controlling muss vielmehr erklären, welchen Teil des Wirkpfads die Größe abbildet und welche zusätzlichen Informationen für die Entscheidung nötig sind.
+
+### Durchgearbeiteter Rechenfall: Mittelwert und Verteilung
+
+Eine fiktive Einrichtung bearbeitet in zwei Zeiträumen jeweils 100 gleichartig abgegrenzte Fälle. Zunächst warten 80 Fälle je fünf Tage und 20 Fälle je zwanzig Tage. Der Mittelwert beträgt acht Tage. Im zweiten Zeitraum warten 90 Fälle je vier Tage und zehn Fälle je dreißig Tage. Der Mittelwert beträgt nun 6,6 Tage.
+
+Der Durchschnitt ist um 1,4 Tage gesunken. Gleichzeitig ist die Wartezeit der langsamsten Fallgruppe gestiegen. Ob dieselben Menschen betroffen sind, lässt sich aus dieser aggregierten Darstellung nicht bestimmen. Die Analyse muss deshalb genauer prüfen, welche Falltypen oder Zugangshürden hinter der Verteilung stehen. Ein günstiger Mittelwert allein belegt keinen verbesserten Zugang für jede relevante Gruppe.
+
+Auch die Kausalität bleibt gesondert. Eine geänderte Fallzusammensetzung oder Personalverfügbarkeit könnte die Verteilung beeinflusst haben. Der Bericht darf die beobachteten Werte klar benennen, ohne sie bereits vollständig einer neuen Maßnahme zuzurechnen. Fehlende Vergleichsdaten werden als offene Attribution ausgewiesen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Berechne beide Mittelwerte und formuliere drei zulässige Aussagen: über den Durchschnitt, über die Verteilung und über die offene Zurechnung. Eine gute Lösung nennt die Bezugspopulation und behauptet keine individuelle Verschlechterung, solange die Personen nicht über die Zeit verfolgt wurden.
+
+Schlage anschließend zwei ergänzende Auswertungen vor, die für die Entscheidung materiell wären. Geeignet sind beispielsweise Wartezeiten nach Falltyp und der Anteil oberhalb einer begründeten Frist. Die Frist braucht eine eigene fachliche oder rechtliche Grundlage; sie wird nicht allein aus dem vorhandenen Datensatz zur vermeintlichen Schutzgrenze erklärt.

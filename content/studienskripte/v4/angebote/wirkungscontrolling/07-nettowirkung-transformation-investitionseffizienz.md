@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/07-nettowirkung-transformation-investitionseffizienz.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/07-nettowirkung-transformation-investitionseffizienz.md curriculum=4.0 sanitized=true -->
 # WC-V4-07 · Netto-Wirkung, Transformationswirkung und Investitionseffizienz
 
 **lecture_id:** `WOEK-WB-WC-V4-007`  
@@ -96,3 +96,38 @@ Version 4.0 · Stand 21.08.2026. Legacy-Kennzahlenleiter entkoppelt; SROI-Strohm
 ## Sprechertext
 
 Es gibt nicht die eine Wirkungszahl. Manche Kennzahlen fragen: Was bleibt netto übrig? Andere fragen: Verändert das Projekt Strukturen? Wieder andere wollen Wirkung auf eingesetztes Kapital beziehen. Das sind verschiedene Fragen. v4 hält sie auseinander. So verhindert man, dass eine eindrucksvolle Zahl mehr verspricht, als sie wirklich weiß.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### NWI und T-SROI eindeutig benennen
+
+**WÖk-Netto-Wirkungs-Index (WÖk-NWI)** bezeichnet hier ein WÖk-eigenes Modell. Er ist nicht der **Nationale Wohlfahrtsindex (NWI)**, den das Umweltbundesamt als ergänzende Wohlfahrtsgröße beschreibt. Verwende in Tabellen, Folien und Berechnungen stets den ausgeschriebenen Namen mit Version und Geltungsbereich. [UBA: Nationaler Wohlfahrtsindex](https://www.umweltbundesamt.de/indikator-nationaler-wohlfahrtsindex).
+
+**T-SROI** wird als WÖk-Konzept beziehungsweise modellhafter Analyseansatz kenntlich gemacht. Ein konkretes Rechenverfahren erfordert eine benannte Methodenversion, Systemgrenzen, Zeithorizonte, monetäre Annahmen, Gegenfaktum, Sensitivitäten und Nichtkompensation. Ein Verhältniswert allein ist weder Transformationswirkung noch ein international einheitlich normierter Nachweis. Der etablierte SROI-Ansatz und die WÖk-Erweiterung dürfen nicht gleichgesetzt werden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Wirkung pro Euro braucht einen tragfähigen Zähler
+
+Eine Effizienzkennzahl verbindet einen Ergebnisbeitrag mit einem Ressourceneinsatz. Schon der Zähler verlangt eine klare Definition: Werden Aktivitäten, beobachtete Veränderungen oder kausal zurechenbare Beiträge verglichen? Im Nenner müssen die relevanten Ressourcen konsistent abgegrenzt sein. Werden bei einer Option nur Anschaffungskosten und bei einer anderen sämtliche Betriebskosten erfasst, entsteht keine faire Vergleichsgrundlage.
+
+Netto-Wirkung betrachtet relevante positive und negative Beiträge im offengelegten Rahmen. Transformationswirkung betrifft Veränderungen von Strukturen, Regeln oder Entwicklungspfaden und ist nicht einfach ein größeres Synonym für Netto-Wirkung. Monetäre Verdichtung kann nützlich sein, trägt jedoch zusätzliche Bewertungsannahmen und darf harte Schutzgrenzen nicht auflösen. T-SROI und Impact of Investment bleiben WÖk-eigene Instrumente mit entsprechend bezeichnetem Modellstatus.
+
+### Durchgearbeiteter Rechenfall: scheinbar günstige Schulung
+
+Zwei fiktive Maßnahmen kosten 10.000 beziehungsweise 15.000 Euro. A erreicht 100 Teilnahmen, B 75. Pro Teilnahme kostet A 100 Euro und B 200 Euro. Diese Rechnung ist korrekt, beurteilt aber zunächst die Kosten je Teilnahme, nicht die Wirkungseffizienz.
+
+Angenommen, eine geeignete spätere Prüfung würde für A zwanzig und für B dreißig zusätzliche erfolgreiche Anwendungen gegenüber dem jeweiligen Gegenfaktum hinreichend stützen. Dann lägen beide bei 500 Euro je zusätzlicher Anwendung. Diese zweite Rechnung beruht auf einer viel stärkeren Evidenzanforderung. Sie darf nicht aus den Teilnehmerzahlen allein konstruiert werden.
+
+Auch dann bleiben Vergleichbarkeit, Qualität der Anwendung, Dauer und Verteilung zu prüfen. Ein Kurs mit anderen Zielgruppen oder längerfristigen Folgen kann nicht ohne Weiteres in dieselbe Kennzahl gepresst werden. Die Zahlen des Beispiels sind didaktisch gesetzt und belegen keine reale Maßnahme.
+
+### Lernarbeit mit Erwartungshorizont
+
+Berechne beide Kennzahlen und benenne jeweils, welche Frage sie beantworten. Ergänze eine Unsicherheitsbetrachtung für den kausalen Zähler. Eine gute Lösung unterscheidet Kosten je Output von Kosten je zusätzlichem Outcome und behauptet keine allgemein beste Maßnahme aus einer einzigen Verhältniszahl.
+
+Prüfe außerdem die Abkürzung NWI im verwendeten Material. Der etablierte Nationale Wohlfahrtsindex und eine gleich benannte WÖk-Modellgröße dürfen nicht unmarkiert vermischt werden. Ein Registereintrag muss die ausgeschriebene Bedeutung, Quelle und Version enthalten, damit aus ähnlichen Namen keine falsche methodische Identität entsteht.

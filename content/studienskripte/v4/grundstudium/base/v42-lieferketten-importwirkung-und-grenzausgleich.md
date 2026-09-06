@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v42-lieferketten-importwirkung-und-grenzausgleich.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v42-lieferketten-importwirkung-und-grenzausgleich.md curriculum=4.0 sanitized=true -->
 # V42 · Lieferketten, Vorleistungen und Importwirkung – Datenweitergabe statt Herkunftspauschale
 
 **lecture_id:** `WOEK-G-BASE-042`  
@@ -258,3 +258,13 @@ Mit Daten, Recht, Handelsregeln, Gaming und Doppelzählung.
 Der Merksatz lautet:
 
 **Bewerte die Wirkung des Prozesses und Produkts – nicht den Pass des Herkunftslandes.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Aktualisierung zu CBAM · 6. September 2026
+
+Die Übergangsphase 2023–2025 ist beendet: Seit 1. Januar 2026 gilt das definitive CBAM-Regime. Konkrete Einfuhrpflichten sind nach Ware, Schwellen, Ausnahmen und dem geltenden Durchführungsrecht zu prüfen. CBAM adressiert eingebettete CO₂-Emissionen und Carbon Leakage; der WÖk-Modellvorschlag für breitere Importwirkungen darf damit weder gleichgesetzt noch als bereits geltendes Recht dargestellt werden.
+
+Quelle: [Europäische Kommission, CBAM und definitives Regime](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en).

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v16-maerkte-produkte-lieferketten-wirkungsraeume.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v16-maerkte-produkte-lieferketten-wirkungsraeume.md curriculum=4.0 sanitized=true -->
 # V16 · Märkte, Produkte und Lieferketten als Wirkungsräume
 
 **lecture_id:** `WOEK-G-BASE-016`  
@@ -86,3 +86,32 @@ Prüfungsfähig sind funktionale Einheit, Externalität, Systemgrenze, Lieferket
 ## Sprechertext
 
 Wenn wir einen Markt betrachten, hilft Schwarz-Weiß wenig. Preise sind unglaublich nützliche Signale. Aber sie enthalten nicht automatisch jede Folge. Deshalb gehen wir eine Ebene tiefer: Welche Funktion liefert ein Produkt? Welche Vorleistungen braucht es? Was passiert bei Herstellung, Nutzung und Ende des Lebenszyklus? Und was wäre die realistische Alternative? So wird aus „Markt gut oder schlecht“ eine überprüfbare Wirkungsfrage.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Vergleichbarkeit über die tatsächlich erfüllte Funktion herstellen
+
+Produkte werden sinnvoll verglichen, wenn ihre Funktion, Nutzungsdauer und Einsatzbedingungen hinreichend übereinstimmen. Ein Preis je Stück kann täuschen, wenn Produkte unterschiedlich lange halten oder verschieden häufig ersetzt werden müssen. Eine funktionale Vergleichseinheit benennt deshalb, welche Leistung über welchen Zeitraum betrachtet wird.
+
+Lieferketten erweitern den Wirkungsraum über den unmittelbaren Kauf hinaus. Herstellung, Transport, Nutzung, Reparatur und Entsorgung können relevante Pfade enthalten. Eine Herkunftsangabe allein belegt weder einen bestimmten Schaden noch die Verantwortung jedes beteiligten Unternehmens. Risiken werden anhand konkreter Lieferbeziehungen, Bedingungen und Evidenz untersucht.
+
+### Durchgearbeiteter Rechenfall: Einweg und Mehrweg
+
+Eine fiktive Beschaffung benötigt eine bestimmte Anzahl Transportvorgänge. Einwegbehälter werden nach einem Vorgang ersetzt. Mehrwegbehälter benötigen Herstellung, Rücktransport und Reinigung. Ein Vergleich pro gekauftem Behälter wäre ungeeignet, weil die Nutzungsfunktionen nicht gleich abgegrenzt sind.
+
+Der Vergleich wird auf beispielsweise 1.000 tatsächlich erbrachte Transportvorgänge bezogen. Dafür sind Umlaufzahl, Verlustquote, Reinigungsaufwand und Rücktransport zu berücksichtigen. Die Zahlen bleiben im Lehrfall offen, bis die entsprechenden Daten vorliegen. „Mehrweg“ ist kein automatischer Kausal- oder Gesamtwirkungsbeweis, auch wenn plausible Vorteile bestehen können.
+
+Ein weiterer Pfad betrifft die Organisation der Rücknahme. Wenn Rücktransporte schlecht ausgelastet sind oder Behälter häufig verloren gehen, verändert sich die Bilanz. Ein niedrigerer Preis könnte zugleich mehr Nutzung anregen; ein möglicher Rebound wird gesondert betrachtet. Belastungen außerhalb des eigenen Standorts dürfen nicht durch eine enge Systemgrenze verschwinden.
+
+### Lernarbeit mit Erwartungshorizont
+
+Definiere die funktionale Einheit und zeichne die Lebenszyklusgrenze des Falls. Benenne drei Daten, deren Veränderung die Rangfolge beeinflussen könnte. Eine gute Lösung erklärt, weshalb dieselbe Produktart unter anderen Nutzungsbedingungen anders abschneiden kann.
+
+Ergänze eine Lieferkettenaussage mit angemessener Evidenzstärke. Ein allgemeiner Branchenhinweis kann einen Prüfbedarf begründen, ersetzt aber keinen Nachweis für einen konkreten Lieferanten. Der Erwartungshorizont verlangt funktionale Vergleichbarkeit, transparente Auslassungen und eine getrennte Prüfung von Risiko, beobachteter Veränderung und Attribution.

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v01-die-massstabskrise.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v01-die-massstabskrise.md curriculum=4.0 sanitized=true -->
 # V01 · Die Maßstabskrise
 
 **lecture_id:** `WOEK-G-BASE-001`  
@@ -161,3 +161,7 @@ Stell dir ein Armaturenbrett vor, auf dem nur eine Lampe leuchtet. Die Lampe kan
 Die Wirkungsökonomie sagt deshalb nicht: Vorher war alles blind. Deutschland hat Statistiken, Nachhaltigkeitsziele, Gesetzesfolgenabschätzung und Evaluation. Die bessere Frage lautet: Welche Informationen werden in diesem konkreten Entscheidungsprozess gesehen? Welche Kausalannahmen sind offen? Wer trägt Nutzen und Risiken? Was ist nicht kompensierbar? Und was passiert, wenn die Realität später anders aussieht als erwartet?
 
 Die Maßstabskrise ist also keine Krise fehlender Zahlen. Sie ist oft eine Krise falscher Zuständigkeit von Zahlen. Wir geben jeder Kennzahl die Aufgabe, die sie tatsächlich erfüllen kann – und verbinden die offenen Teile zu einer lernenden Wirkungsarchitektur.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

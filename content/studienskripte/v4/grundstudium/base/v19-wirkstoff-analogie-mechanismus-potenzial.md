@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v19-wirkstoff-analogie-mechanismus-potenzial.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v19-wirkstoff-analogie-mechanismus-potenzial.md curriculum=4.0 sanitized=true -->
 # V19 · Wirkstoff-Analogie, Wirkmechanismus und Wirkungspotenzial
 
 **lecture_id:** `WOEK-G-BASE-019`  
@@ -88,3 +88,32 @@ Prüfungsfähig sind Analogiegrenze, A→M→ΔZ, Potenzial, Resonanz und Attrib
 ## Sprechertext
 
 Der Begriff Wirkstoff ist ein Bild. Er soll uns eine einzige disziplinierende Frage stellen: Wie kommt eine Maßnahme eigentlich zum Ergebnis? Zwischen „wir tun etwas“ und „der Zustand verändert sich“ liegt ein Mechanismus. Und dieser Mechanismus kann durch Kontext verstärkt oder blockiert werden. Genau das nehmen wir aus der Analogie mit. Was wir nicht übernehmen, ist die Vorstellung, Gesellschaft sei ein Körper mit einfacher Dosis-Wirkung-Kurve. Dafür sind soziale Systeme zu reflexiv, politisch und komplex.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Eine Analogie nutzen, ohne ihre Grenzen zu verlieren
+
+„Wirkstoff“ kann als Analogie helfen, zwischen einem Auslöser und dem Mechanismus seiner möglichen Folgen zu unterscheiden. In gesellschaftlichen Fällen gibt es jedoch keine allgemein messbare Substanz, die mit einer festen Dosis automatisch dieselbe Wirkung erzeugt. Menschen, Institutionen und Kontexte reagieren unterschiedlich und verändern ihr Verhalten auch aufgrund anderer Einflüsse.
+
+Die Analogie ist deshalb ein Einstieg in die Frage: Was soll unter welchen Bedingungen welchen Prozess auslösen? Sie ersetzt weder eine Theorie des konkreten Mechanismus noch empirische Evidenz. Ein Produkt, eine Regel oder eine Botschaft enthält Wirkung nicht wie einen stofflichen Bestandteil, der unabhängig von Nutzung und Kontext freigesetzt wird.
+
+### Durchgearbeiteter Fall: eine Erinnerung vor einem Termin
+
+Eine fiktive Beratungsstelle sendet eine sachliche Erinnerung an einen vereinbarten Termin. Der vermutete Mechanismus ist die Verringerung von Vergessen oder organisatorischer Unsicherheit. Der Auslöser ist die Erinnerung; ihr tatsächlicher Empfang, ihr Verständnis und die Möglichkeit, den Termin wahrzunehmen, sind notwendige Bedingungen.
+
+Wenn Termine wegen fehlender Kinderbetreuung oder unpassender Verkehrsverbindungen ausfallen, löst die Erinnerung diesen Engpass nicht automatisch. Eine höhere Zahl versendeter Nachrichten ist zunächst ein Output. Ein Rückgang versäumter Termine wäre eine beobachtete Veränderung. Der kausale Beitrag der Erinnerung müsste beispielsweise mit einem geeigneten Vergleich oder einer nachvollziehbaren Einführungsauswertung geprüft werden.
+
+Ein negativer Pfad kann entstehen, wenn Nachrichten an falsche Empfänger gelangen oder missverständlich formuliert sind. Dieser Pfad wird anhand des konkreten Verfahrens untersucht. Die Analogie „mehr Wirkstoff bedeutet mehr Wirkung“ wäre hier besonders irreführend: Häufigere Erinnerungen könnten auch stören, ohne das eigentliche Problem zu lösen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Beschreibe Auslöser, Mechanismus, notwendige Bedingungen, beobachtbaren Zustand und offene Attribution getrennt. Formuliere anschließend einen Satz, in dem die Wirkstoff-Analogie zulässig ist, und einen, der sie unzulässig vergegenständlicht. Eine gute Lösung kann die Erklärung auch vollständig ohne Analogie geben.
+
+Prüfe schließlich, welche neue Information einen anderen Handlungsansatz nahelegen würde. Wenn die Hauptursache fehlende Erreichbarkeit ist, könnte eine Termin- oder Zugangsänderung passender sein. Der Lernerfolg liegt im bedingten Mechanismusverständnis, nicht in der Suche nach einer vermeintlich universellen gesellschaftlichen Wirksubstanz.

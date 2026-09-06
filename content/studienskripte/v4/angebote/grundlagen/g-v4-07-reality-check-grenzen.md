@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-07-reality-check-grenzen.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-07-reality-check-grenzen.md curriculum=4.0 sanitized=true -->
 # G-V4-07 · Reality Check und Grenzen der Wirkungsökonomie
 
 **lecture_id:** `WOEK-WB-G-V4-007`  
@@ -183,3 +183,7 @@ Dabei hilft der Hindsight Guard. Wir tun nicht so, als hätten wir spätere Info
 Das ist auch die Grenze der Wirkungsökonomie. Sie ist keine Wahrheitsmaschine. Sie bewertet keine Menschen, ersetzt keine Demokratie und kann Unsicherheit nicht abschaffen. Selbst KI darf hier nur Werkzeug sein.
 
 Die Stärke liegt woanders: Wir bauen Entscheidungen so, dass sie korrigierbar bleiben. Wirkung wird nicht einmal bewertet und abgelegt. Sie wird beobachtet, neu geprüft und in die nächste Entscheidung zurückgeführt.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

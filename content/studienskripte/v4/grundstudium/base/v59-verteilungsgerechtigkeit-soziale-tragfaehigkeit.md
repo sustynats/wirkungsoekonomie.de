@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v59-verteilungsgerechtigkeit-soziale-tragfaehigkeit.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v59-verteilungsgerechtigkeit-soziale-tragfaehigkeit.md curriculum=4.0 sanitized=true -->
 # V59 · Verteilungsgerechtigkeit und soziale Tragfähigkeit
 
 **lecture_id:** `WOEK-G-BASE-059`  
@@ -247,3 +247,7 @@ Eine unpopuläre Maßnahme kann tragfähig sein, wenn Lasten fair verteilt, Alte
 Der Merksatz lautet:
 
 **Daten zeigen, wie Wirkung verteilt ist. Demokratie und Recht entscheiden, welche Verteilung wir als gerecht akzeptieren – und WÖk macht beides transparent.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

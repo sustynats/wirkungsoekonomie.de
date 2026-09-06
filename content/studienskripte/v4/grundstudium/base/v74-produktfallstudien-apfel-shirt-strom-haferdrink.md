@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v74-produktfallstudien-apfel-shirt-strom-haferdrink.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v74-produktfallstudien-apfel-shirt-strom-haferdrink.md curriculum=4.0 sanitized=true -->
 # V74 · Produktfallstudien: Apfel, T-Shirt, Strom und Haferdrink
 
 **lecture_id:** `WOEK-G-BASE-074`  
@@ -245,3 +245,7 @@ Und Milch gegen Haferdrink? Klima und Land sind nur ein Teil; Nährstofffunktion
 Der Merksatz lautet:
 
 **Fallbeispiele sind keine ewigen Rankings. Sie zeigen, wie man Scope, Daten und Wirkpfade so sauber baut, dass das Ergebnis für genau diesen Fall belastbar ist.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

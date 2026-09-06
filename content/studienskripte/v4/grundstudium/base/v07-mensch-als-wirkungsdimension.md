@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v07-mensch-als-wirkungsdimension.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v07-mensch-als-wirkungsdimension.md curriculum=4.0 sanitized=true -->
 # V07 · Mensch als Wirkungsdimension
 
 **lecture_id:** `WOEK-G-BASE-007`  
@@ -102,3 +102,7 @@ Prüfungsfähig sind State Variables, Distribution, Output/Outcome, Grundrechts-
 ## Sprechertext
 
 Wenn wir „Wirkung auf Menschen“ sagen, klingt das zunächst einfach. Aber Menschen haben nicht einen einzigen Zustand. Gesundheit kann besser werden, während Wohnkosten steigen. Einkommen kann wachsen, während Zeitdruck oder Unfallrisiko zunehmen. Darum zerlegen wir die große Überschrift in konkrete Zustände. Wir fragen außerdem nicht nur nach dem Durchschnitt: Wer profitiert? Wer trägt Lasten? Und gibt es Rechte oder Schutzgrenzen, die nicht einfach gegen Vorteile anderswo verrechnet werden dürfen? Genau so wird aus einem freundlichen Soziallabel eine prüfbare Wirkungsanalyse.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

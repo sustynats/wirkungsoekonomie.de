@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v11-positive-negative-ambivalente-wirkung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v11-positive-negative-ambivalente-wirkung.md curriculum=4.0 sanitized=true -->
 # V11 · Positive, negative und ambivalente Wirkung
 
 **lecture_id:** `WOEK-G-BASE-011`  
@@ -94,3 +94,32 @@ Prüfungsfähig sind Richtung-vs.-Evidenz, Ambivalenz, OPEN, Verteilung, Referen
 ## Sprechertext
 
 Positiv oder negativ klingt wie eine einfache Ampel. In Wirkungsfragen ist es komplizierter. Zuerst müssen wir wissen, welcher Zustand sich verändert. Dann brauchen wir eine Referenz, gegen die wir diese Veränderung bewerten. Und wir müssen sagen, wie sicher wir sind. Eine Maßnahme kann gleichzeitig Vorteile und Nachteile haben. Dann nennen wir sie nicht neutral, sondern ambivalent und zeigen die Pfade. Wenn wir zu wenig wissen, sagen wir offen: OPEN. Diese Trennung macht Bewertungen nicht schwächer, sondern nachvollziehbarer.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Wirkungsrichtung auf einen ausdrücklich benannten Referenzraum beziehen
+
+Eine Zustandsveränderung wird zunächst beschrieben und anschließend bewertet. Der Referenzraum erklärt, weshalb die Veränderung als positiv, negativ oder ambivalent eingeordnet wird. Dabei können verschiedene Gruppen, Zeiträume oder Schutzgüter betroffen sein. Ein Vorteil für eine Organisation ist nicht automatisch ein Vorteil für alle relevanten Betroffenen.
+
+Ambivalenz bedeutet, dass unterschiedliche relevante Wirkpfade verschieden gerichtet sind oder eine Veränderung unter mehreren begründeten Perspektiven unterschiedlich zu bewerten ist. Unsicherheit betrifft dagegen unser Wissen über den Befund. Eine Wirkung kann gut belegt und dennoch ambivalent sein. Umgekehrt kann ein positiver Wirkpfad plausibel, aber empirisch noch unsicher sein.
+
+### Durchgearbeiteter Fall: längere Öffnungszeiten
+
+Eine fiktive Einrichtung verlängert ihre Öffnungszeiten. Für Menschen mit bestimmten Arbeitszeiten kann sich der Zugang verbessern. Gleichzeitig können zusätzliche Belastungen für das Personal entstehen. Ob diese tatsächlich auftreten, hängt unter anderem von Besetzung, Ausgleich und Organisation ab. Der Fall verlangt daher getrennte Beobachtungen statt einer sofortigen Gesamtnote.
+
+Angenommen, eine Auswertung zeigt mehr erfolgreich wahrgenommene Termine am Abend, während dokumentierte Überstunden ebenfalls steigen. Beide Veränderungen werden mit Population und Zeitraum berichtet. Es ist noch zu prüfen, welche Anteile der verlängerten Öffnung zugerechnet werden können und ob beispielsweise vorübergehende Personalausfälle mitwirken.
+
+Die Bewertung kann den besseren Zugang positiv und die Mehrbelastung negativ einordnen. Eine positive Netto-Wirkung folgt daraus nicht ohne weitere Abgrenzung und Begründung. Insbesondere muss geprüft werden, ob anwendbare Arbeits- oder Schutzbedingungen berührt sind. Eine mögliche harte Grenzverletzung würde nicht durch zusätzliche Termine aufgewogen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Erstelle ein Wirkungsprofil mit zwei Gruppen, zwei Wirkpfaden und getrenntem Evidenzstatus. Formuliere eine ambivalente Gesamteinordnung, die den konkreten Befund erklärt. Eine gute Lösung verwendet „ambivalent“ nicht als Ersatz für die Untersuchung der einzelnen Pfade.
+
+Entwirf eine verbesserte Option, etwa eine andere Personalplanung oder gezieltere Öffnungsfenster. Der Erwartungshorizont zeigt, wie aus einer Bewertung eine begründete Veränderung der Handlung entstehen kann. Eine bloße moralische Rangfolge der Beteiligten trägt nichts zur Lösung des Zielkonflikts bei.

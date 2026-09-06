@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-08-strategie-entscheidungsarchitektur.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@aa10de6b5a5c26badb3747fd3e4a97b540e327a7 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-08-strategie-entscheidungsarchitektur.md curriculum=4.0 sanitized=true -->
 # WM-V4-08 · Wirkungsstrategie und Entscheidungsarchitektur
 
 **lecture_id:** `WOEK-WB-WM-V4-008`  
@@ -128,3 +128,32 @@ Wirkungsstrategie zeigt, wie Entscheidungen tatsächlich entstehen. Welche Probl
 Dazu gehören Rollen und Gates. Und ganz wichtig: Eine fachliche Empfehlung ist noch nicht automatisch die Managemententscheidung. Beides wird getrennt dokumentiert.
 
 So wird Strategie nicht zu einem Poster, sondern zu einer wiederholbaren Entscheidungsarchitektur, die aus neuen Daten lernen kann.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Entscheidungsrechte und Lernschleifen ausdrücklich festlegen
+
+Eine Wirkungsstrategie übersetzt einen begründeten Zielzustand in Entscheidungen, Verantwortlichkeiten und überprüfbare Annahmen. Ein Score kann Informationen verdichten, ersetzt aber weder die Zuständigkeit noch die Begründung der Entscheidung. Empfehlung, formaler Beschluss und operative Umsetzung sind unterschiedliche Schritte, deren Verbindung dokumentiert werden muss.
+
+Ein Gate ist ein festgelegter Prüfpunkt. Es kann beispielsweise verlangen, dass vor einer Investition ein materielles Risiko geklärt wird oder dass vor einer Ausweitung eines Piloten belastbare Betriebsdaten vorliegen. Ein Gate ist nur nützlich, wenn klar ist, wer es prüft, welche Evidenz genügt und was bei Nichterfüllung geschieht. Ein allgemeiner Satz wie „Nachhaltigkeit berücksichtigen“ reicht dafür nicht.
+
+### Durchgearbeiteter Fall: ein Pilot soll ausgeweitet werden
+
+Eine fiktive Organisation erprobt einen neuen Service an zwei Standorten. Die Projektleitung meldet hohe Nachfrage und möchte sofort auf zehn Standorte ausweiten. Die ursprüngliche Entscheidungsvorlage enthielt jedoch zusätzlich die Annahme, dass Personalaufwand und Wartezeiten nach einer Anlaufphase stabil bleiben. Diese Daten sind noch unvollständig.
+
+Die Entscheidungsarchitektur sieht deshalb einen Zwischenentscheid vor. Das zuständige Gremium kann eine begrenzte Fortsetzung zur Datenerhebung beschließen, eine Ausweitung unter klaren Bedingungen erlauben oder zunächst eine Umgestaltung verlangen. Keine dieser Optionen folgt automatisch aus der Nachfragezahl. Auch die Interessen der noch nicht erreichten Standorte und die Belastung des vorhandenen Teams gehören zur Prüfung.
+
+Die spätere Revision wird nicht als Scheitern versteckt. Wenn neue Befunde zeigen, dass die Personalannahme unzutreffend war, werden ursprüngliche Annahme, neue Evidenz und geänderte Entscheidung gemeinsam dokumentiert. Der Hindsight Guard verhindert die nachträgliche Behauptung, die neue Erkenntnis sei bereits Grundlage des ersten Beschlusses gewesen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Entwirf eine Entscheidungskette mit Vorschlag, fachlicher Prüfung, Beschluss, Umsetzung und Reality Check. Ordne jeder Stufe eine verantwortliche Rolle, ein Ergebnis und einen Rückweg bei Problemen zu. Eine gute Lösung macht deutlich, wer eine Empfehlung begründet überstimmen darf und wie die Begründung erhalten bleibt.
+
+Ergänze einen konkreten Revisionsauslöser. Er muss beobachtbar und entscheidungsrelevant sein. Die Formulierung „bei Bedarf prüfen“ ist zu unbestimmt. Die Prüfung bewertet die Nachvollziehbarkeit des Verfahrens, nicht die Anzahl seiner Gremien.
