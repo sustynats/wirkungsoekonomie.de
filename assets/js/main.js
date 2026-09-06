@@ -1731,7 +1731,7 @@ function initGlossarySystem(terms) {
 }
 
 function initGlossaryCards() {
-  const card = document.createElement("aside");
+  const card = document.createElement("div");
   card.id = "glossary-card";
   card.className = "glossary-card";
   card.setAttribute("role", "tooltip");
