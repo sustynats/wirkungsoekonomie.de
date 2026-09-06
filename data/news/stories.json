@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T09:51:17.221Z",
+  "updated_at": "2026-09-06T10:06:13.084Z",
   "stories": [
     {
       "story_id": "wt-2c2124e52b676caa",
@@ -541,7 +541,7 @@
       "verification_started_at": "2026-09-06T09:07:30.239Z",
       "publish_ready_at": "2026-09-06T09:07:44.090Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -877,7 +877,50 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T09:08:13.561Z",
         "status": "generated"
-      }
+      },
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "c8375172e4c3a901191cea86ac61cc8291f8f4f3c7d6566b8866f456d7db9e14",
+        "checked_at": "2026-09-06T10:06:13.084Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T16:06:13.084Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
+            "summary": "Die US-Unterhändler Witkoff und Kushner werden heute zu einem Treffen mit dem ukrainischen Präsidenten Präsident Selenskyj in Kiew erwartet. Russland hat angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen. Gestern hatten die US-Gesandten in Moskau mit dem russischen Präsidenten Putin gesprochen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T08:45:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "0c62fd1262be41262586474bd1654083562adfb27c12da24e4bb5a9cba174074",
+            "source_item_id": "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T08:45:20.000Z",
+            "ingested_at": "2026-09-06T09:06:22.155Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-3d9354235ee08f8f",
@@ -1389,6 +1432,94 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T09:08:05.546Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T10:06:13.084Z",
+        "content_hash": "de72a3602cddc05ae004bde29b692b6de76e2eca8352787e1f813c2372cb8dc5",
+        "sources": [
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+            "title": "Iran-USA-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
+            "summary": "Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Einer soll nun am Meeresgrund liegen. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T08:39:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "182b6964af639f02d716a0ce57953d8e5d32eb21adb6a70f52f2397129ba708f",
+            "source_item_id": "7f9426ee7e989f0d9269075b901bb81b7d980dc22b3105d57ac9a21b51a0c6c6",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T08:39:00.000Z",
+            "ingested_at": "2026-09-06T09:06:22.155Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+            "title": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt",
+            "summary": "Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T08:45:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "d26727e526551155230658acd1ce4e459ba4dc8cfdec6606a86a9a5fff1ef8a5",
+            "source_item_id": "f19b81892466964d367fd54c83b09b5d653ff4644a3889ab4ae56e74bd623ca1",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T08:45:20.000Z",
+            "ingested_at": "2026-09-06T09:06:22.155Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T10:06:13.084Z",
+          "fingerprint": "98c998135335d0968bf5e0087414a452d3f9d6caf5770dc3e95471769288eee4",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -2238,7 +2369,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:21:21.365Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-b7c356fdc686f6f2-claim-02",
@@ -2258,7 +2389,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:21:21.365Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-b7c356fdc686f6f2-claim-03",
@@ -2278,22 +2409,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:21:21.365Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         }
       ],
       "content_hash": "9d9492a7e685a78a56f4c1273c108bdded7321299cc9b24f5d693cbda7f0f3e5",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-06T09:51:21.365Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-06T11:06:13.084Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T09:21:21.365Z",
+      "updated_at": "2026-09-06T10:06:13.084Z",
       "event_first_seen_at": "2026-09-06T08:36:36.761Z",
       "event_detected_at": "2026-09-06T08:36:36.761Z",
       "event_id": "event-e43611c7b733caf8ee2c",
@@ -2327,23 +2456,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 60.589416666666665,
+        "source_age_minutes": 105.4514,
         "detection_delay_minutes": 15.846016666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.7434,
+        "queue_age_minutes": 89.60538333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 87,
+        "news_freshness_score": 78,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T09:21:21.365Z",
+        "checked_at": "2026-09-06T10:06:13.084Z",
         "fingerprint": "e454098e631eb35a5ca30c43bc16941c37fa77e144950179ba12dd53e734f482",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T10:06:13.084Z",
+      "rejection": {
+        "at": "2026-09-06T10:06:13.084Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -4011,7 +4152,7 @@
       "verification_started_at": "2026-09-06T07:18:12.568Z",
       "publish_ready_at": "2026-09-06T07:18:26.547Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -4431,7 +4572,49 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T07:19:32.124Z",
         "status": "generated"
-      }
+      },
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "2835f0e2cff67049769223d00c02310dc4a67239fef91d59c52a1deeb0db32c8",
+        "checked_at": "2026-09-06T10:06:13.084Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T16:06:13.084Z",
+        "sources": [
+          {
+            "source_id": "bundesregierung-presse",
+            "publisher": "Pressemitteilungen der Bundesregierung",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+            "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
+            "summary": "The negotiations on the Multiannual Financial Framework (MFF) 2028-2034 have entered a decisive stage. Through the MFF, the EU determines how it will spend its common resources well into the next decade. In an increasingly uncertain world, the MFF provides the foundation for ensuring the EU's capacity to act as a strong and sovereign community, and to ensure security for Europeans. To deliver on this ambition, the MFF must be modernised and reformed, both in its architecture and in the way it allocates resources. Both should be guided by our shared priorities, which are set out, not least, in our Strategic Agenda: security and defence, competitiveness, migration and sovereignty. By endorsing the three core spending programmes, the Council has laid the foundation for an architecture that is fit for the challenges ahead. Based on an affordable and viable EU budget, we jointly support the ambition to conclude the negotiations in 2026. At a time when virtually all Member States are un...",
+            "source_type": "official_rss",
+            "published_at": "2026-08-27T12:05:00.000Z",
+            "primary_source": true,
+            "source_priority": 88,
+            "source_topic": "Politik",
+            "content_hash": "d67af2ea27ec2c599b84b9434724fb45993cc6c5c2b9d84220b4c2c4c8ee3feb",
+            "source_item_id": "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+            "publisher_id": "bundesregierung",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-08-27T12:05:00.000Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:bundesregierung",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-5072789df611867b",
@@ -5129,7 +5312,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -5149,7 +5332,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -5169,7 +5352,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -5189,7 +5372,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -5209,7 +5392,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -5229,7 +5412,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -5249,7 +5432,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -5269,7 +5452,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -5289,7 +5472,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -5309,7 +5492,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -5329,7 +5512,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -5349,7 +5532,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -5369,7 +5552,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -5389,7 +5572,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -5409,7 +5592,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -5429,7 +5612,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -5449,7 +5632,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -5469,7 +5652,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -5489,7 +5672,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -5509,7 +5692,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -5529,7 +5712,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         }
       ],
       "content_hash": "7d76672bcb27aaf77e2849949310f833c46b9022fde6cc538f22ff0ead56a4b3",
@@ -5545,7 +5728,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T09:51:17.221Z",
+      "updated_at": "2026-09-06T10:06:13.084Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -5588,20 +5771,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 153.28701666666666,
+        "source_age_minutes": 168.21806666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3059.5677,
+        "queue_age_minutes": 3074.49875,
         "target_publication_minutes": 120,
-        "news_freshness_score": 68,
+        "news_freshness_score": 65,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T09:51:17.221Z",
+        "checked_at": "2026-09-06T10:06:13.084Z",
         "fingerprint": "c0666f4f3b1c5b3bc5aa2f6a4e52eb5f4b33eb4b0b9f4718c139c795c4d4179b",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
@@ -7887,6 +8070,61 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T05:36:07.920Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T10:06:13.084Z",
+        "content_hash": "3e51fcb126f1d83e96da4160567679f6ec66ff39a27961077e9afa224f5c9e2e",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+            "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
+            "summary": "Im Zusammenhang mit der Sabotage an Umspannwerken in Brandenburg, Nordrhein-Westfalen und Sachsen sucht die Polizei jetzt per Foto nach einem Tatverdächtigen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T05:18:36.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "40f2801787ac23e93e4c5c1ca8948c061fdba6ea06b581a49d1964de0e5cbc3c",
+            "source_item_id": "c0e45982664063a0ef87ad4f64c49db32a28f2f2dece681deea54c80331369b7",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T05:18:36.000Z",
+            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T10:06:13.084Z",
+          "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -8509,6 +8747,158 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T05:35:52.364Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T10:06:13.084Z",
+        "content_hash": "136542df2271394d165df493436d0ac2e1dc301582134daa2de96c6d83e1cfd7",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--putin-beginnt-gespraeche-mit-us-unterhaendlern-38211192.html",
+            "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+            "summary": "Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:11:39.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "d7e7db6b0e4741b35f75d0f6546135afa8de2d7da7c0a187961b74c464406a54",
+            "source_item_id": "05fe1f4448cc7b34a37a0108ec8885ac629e512648e2357735d9c024aa0bfe6f",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:11:39.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
+            "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
+            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:06:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "aa8002fb305244364b5dc556e7ac4c2b7ec7cccda58eecf09e84b72da02ab154",
+            "source_item_id": "235b4021196e08f1d60c8a911f608ba014fa851de581b8c9f4817f0dc07b9c51",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:06:25.000Z",
+            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--gespraeche-von-putin-und-us-gesandten-beendet-38211192.html",
+            "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
+            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T20:39:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "a0d78e44c3d496a0410e313a26cfb123e534b6bb6b4559b88117b8626514fb69",
+            "source_item_id": "66efc58caf10ee5f9e2a1f6eca3d96eb6e6829283a0016280a55ced43fc22d27",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T20:39:53.000Z",
+            "ingested_at": "2026-09-06T02:36:16.895Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+            "title": "Ukraine-Krieg - Gespräche im Kreml von Putin und US-Gesandten beendet",
+            "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Einzelheiten der rund dreistündigen Unterredung im Kreml sind bisher nicht bekannt. Nach Angaben des ​Weißen Hauses wurden konkrete Pläne für die nächsten Schritte in den Gesprächen über ein mögliches Ende des ‌Ukraine-Kriegs besprochen. ‌",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T05:18:36.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "3e4c8cab46d3a4e09d1b8fce22248040098b1a94cde7844832a47ae7efe4b98a",
+            "source_item_id": "7ccb92fbbdfa2b1a3a67b612b2925c9f09bf624c9bd11afea85d8fe535b753a9",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T05:18:36.000Z",
+            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T10:06:13.084Z",
+          "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -13290,7 +13680,7 @@
       "verification_started_at": "2026-09-05T21:15:46.118Z",
       "publish_ready_at": "2026-09-05T21:16:03.083Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -13664,11 +14054,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "ee69befdff1c3b1d2c4efebdb85b05e710b74ca4b9627541c628f3b137f3cf5a",
-        "checked_at": "2026-09-06T05:06:39.571Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "7a9de3495fcc7969c1501c5adf62adea6f8228118a8bdecb4ce1ffc576310d14",
+        "checked_at": "2026-09-06T10:06:13.084Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T11:06:39.571Z",
+        "expires_at": "2026-09-06T16:06:13.084Z",
         "sources": [
           {
             "source_id": "ndr-info",
@@ -13703,7 +14093,7 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-68eadb9f102a5367",
@@ -14737,7 +15127,7 @@
       "verification_started_at": "2026-09-05T18:37:42.731Z",
       "publish_ready_at": "2026-09-05T18:38:03.533Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -15387,11 +15777,11 @@
       ],
       "retirement_history": [],
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "2303cc911f453e8b3409ec51a684957d30552f41dac95ff1434b2ff165d6aa7a",
-        "checked_at": "2026-09-06T05:34:08.658Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "684fd00c8759bfb6ceaf5ea7199cc10edb41c7fab6c2c755ba7e64f2aa55b415",
+        "checked_at": "2026-09-06T10:06:13.084Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T11:34:08.658Z",
+        "expires_at": "2026-09-06T16:06:13.084Z",
         "sources": [
           {
             "source_id": "dw-news",
@@ -15456,7 +15846,7 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-5f843f61cc5736d4",
@@ -16029,7 +16419,7 @@
       "verification_started_at": "2026-09-05T17:52:36.037Z",
       "publish_ready_at": "2026-09-05T17:52:55.835Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -16424,11 +16814,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "36b35832271ee61b3be327892387078065e2f8e73f95b31b43be80fd8cfbf45e",
-        "checked_at": "2026-09-06T06:36:18.253Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "e71bd3bfca1c7abd3e198ba720a3307324854560b53851f05eff49fc3df9f058",
+        "checked_at": "2026-09-06T10:06:13.084Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T12:36:18.253Z",
+        "expires_at": "2026-09-06T16:06:13.084Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -16463,7 +16853,7 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-6a7145e6dc679f95",
@@ -17906,7 +18296,7 @@
       "verification_started_at": "2026-09-05T16:51:47.534Z",
       "publish_ready_at": "2026-09-05T16:52:06.230Z",
       "news_status": "updated",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -18323,11 +18713,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "9720552c293b20043bb90ba6e917e29d0ba6334c086f63d6651b32f5734c8f39",
-        "checked_at": "2026-09-06T06:36:18.253Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "37a24053cacd02a537791363bf843d41f0a532022f57693f00acf2ccffe48a24",
+        "checked_at": "2026-09-06T10:06:13.084Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T12:36:18.253Z",
+        "expires_at": "2026-09-06T16:06:13.084Z",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
@@ -18364,7 +18754,7 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-eefb978e3155ecf0",
@@ -21185,7 +21575,7 @@
       "verification_started_at": "2026-09-05T14:15:24.286Z",
       "publish_ready_at": "2026-09-05T14:15:41.958Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -21639,9 +22029,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "50b25b6a8b538ca1382339906b0d266573b1ec68acbe97b7ea0fbca47c25095f",
-        "checked_at": "2026-09-06T06:45:32.071Z",
+        "checked_at": "2026-09-06T10:06:13.084Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T12:45:32.071Z",
+        "expires_at": "2026-09-06T16:06:13.084Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -21769,7 +22159,7 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-cc110770aabd8a39",
@@ -28684,7 +29074,64 @@
           "type": "source_integrity",
           "note": "Die technische Quellenzuordnung wurde anhand der tatsächlichen Zieladresse korrigiert; Inhalt und Belegstatus wurden erneut geprüft."
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-06T10:06:13.084Z",
+        "content_hash": "9db31d4d11e4d69e842532adf04a9922c95ce5f2786543b5d842ec4a8dc90ac7",
+        "sources": [
+          {
+            "source_id": "euronews-en",
+            "publisher": "Euronews",
+            "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+            "title": "At least two killed and 81 injured after explosions at Bolivian army base",
+            "summary": "The Bolivian Defence Minister said the first explosion \"involved black powder from pyrotechnic material stored at the site,\" while the second, \"much larger\" blast was still being investigated.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:51:02.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Europa",
+            "content_hash": "3a362cedab86bae56dc37e159e1503119cc3e8f1286ae9529c2c7768f41fa8a9",
+            "source_item_id": "a5812bffb14cc989cab45455825d8efb61256f386f1845b6c1425391f592b52a",
+            "publisher_id": "euronews",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "en",
+            "geography": [
+              "EU",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:51:02.000Z",
+            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "provenance": {
+              "origin": "publisher:euronews",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "SOURCE_INTEGRITY_OPEN",
+        "quality_errors": [
+          "SOURCE_URL_INVALID"
+        ],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "open",
+          "publication_status": "hold",
+          "version": "1.0",
+          "checked_at": "2026-09-06T10:06:13.084Z",
+          "fingerprint": "c80c77c11dfffb66073cb2f822cccea2aa87e1c7ecb698dc63ffd9e05748283c",
+          "issue_codes": [
+            "SOURCE_URL_INVALID"
+          ],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-aabe8c0430bf8f84",
@@ -62764,7 +63211,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-06T09:51:17.221Z",
+          "checked_at": "2026-09-06T10:06:13.084Z",
           "fingerprint": "4859907217abb38878f583104d44f9a91d08c8eed99ba2c5d063d5e14f7f4603",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -127417,7 +127864,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T09:51:17.221Z"
+          "checked_at": "2026-09-06T10:06:13.084Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -127432,7 +127879,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T09:51:17.221Z",
+      "updated_at": "2026-09-06T10:06:13.084Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -127468,11 +127915,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4048.2870166666667,
+        "source_age_minutes": 4063.218066666667,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3570.0035166666667,
+        "queue_age_minutes": 3584.934566666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -127481,7 +127928,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T09:51:17.221Z",
+        "checked_at": "2026-09-06T10:06:13.084Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
