@@ -220,7 +220,7 @@
 .commitment[open] > summary::after,
 .nested[open] > summary::after,
 .proof[open] > summary::after {
-  content: "−";
+  content: "-";
 }
 
 .sectionAccordion > summary,

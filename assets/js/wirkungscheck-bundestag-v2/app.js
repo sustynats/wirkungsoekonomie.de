@@ -90,7 +90,7 @@
       audience: "Menschen mit gesundheitlichem oder pflegerischem Unterstützungsbedarf sowie ihre Angehörigen",
       objectives: [
         ["care_timely_help", "Menschen erhalten rechtzeitig die gesundheitliche oder pflegerische Hilfe, die sie benötigen.", "Zugang, Wartezeit, Erreichbarkeit und Übergänge verbessern."],
-        ["care_self_determined", "Pflegebedürftige Menschen können möglichst selbstbestimmt und sicher leben.", "Unterstützte Autonomie und Sicherheit – nicht bloß Verbleib zu Hause."],
+        ["care_self_determined", "Pflegebedürftige Menschen können möglichst selbstbestimmt und sicher leben.", "Unterstützte Autonomie und Sicherheit - nicht bloß Verbleib zu Hause."],
         ["care_relatives", "Angehörige werden durch Pflege nicht dauerhaft überlastet.", "Planbarkeit, Entlastung und Zugang zu Unterstützung verbessern."],
         ["care_workforce_time", "Fachkräfte haben genügend Zeit für gute Versorgung statt für vermeidbaren Verwaltungsaufwand.", "Versorgungszeit und Umsetzbarkeit statt bloßer Dokumentation."],
         ["care_continuity", "Hilfen greifen zwischen Praxis, Krankenhaus, Pflege, Reha und Kommune besser ineinander.", "Weniger Informations-, Zuständigkeits- und Versorgungsbrüche."],

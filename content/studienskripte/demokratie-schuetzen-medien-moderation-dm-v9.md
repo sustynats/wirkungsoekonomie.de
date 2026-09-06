@@ -56,7 +56,7 @@ Die Kategorien sind keine Rangordnung von Menschen. Eine Erfahrung kann einen wi
 
 Die [WÖk-Referenz zu Diskurskultur](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-079-diskurskultur-index-html/) beschreibt öffentliche Verständigung als Raum für begründeten Widerspruch. Genau dafür dient diese Sortierung: Sie reduziert nicht die Zahl der zulässigen Stimmen, sondern macht sichtbar, welche Frage an eine Stimme gerichtet werden muss.
 
-## Was eine Quelle tragen kann – und was nicht
+## Was eine Quelle tragen kann - und was nicht
 
 Eine gute Quelle ist nicht zwangsläufig die prominenteste. Für die konkrete Behauptung über Falkenau ist die Sitzungsunterlage näher am Beschlussstatus als ein weitergeleiteter Screenshot. Für die Frage, ob der Schulweg gefährlich ist, kann eine Ortsbegehung mit Eltern und Schule näher am Alltag liegen als eine allgemeine Verkehrsstatistik. Für die Frage, ob die Kosten angemessen sind, reichen beide Quellen noch nicht: Dafür braucht es Aufschlüsselung, Vergleichsmöglichkeiten und Kriterien.
 
@@ -175,7 +175,7 @@ Diese Prüfung macht Beiträge nicht automatisch richtig. Sie verhindert aber, d
 Beantworten Sie für den Modellfall nacheinander:
 
 1. Welche Aussage im ursprünglichen Clip war dokumentiert, welche war nur nahegelegt und welche blieb offen?
-2. Welche Quelle beantwortet die Frage nach dem Beschlussstatus – und welche Quelle braucht es für die Schulwegsicherheit?
+2. Welche Quelle beantwortet die Frage nach dem Beschlussstatus - und welche Quelle braucht es für die Schulwegsicherheit?
 3. Was müsste am ursprünglichen Clip sichtbar geändert werden, damit die Korrektur nicht nur in einem neuen Beitrag stattfindet?
 4. Welche Information über die Sprecherin ist für die Einordnung relevant, ohne ihre Frage zu entwerten?
 5. Welche Beobachtung würde auf eine tatsächliche Veränderung hinweisen, statt nur auf hohe Reichweite?

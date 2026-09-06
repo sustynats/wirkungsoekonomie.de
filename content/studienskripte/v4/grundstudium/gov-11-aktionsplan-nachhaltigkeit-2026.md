@@ -90,7 +90,7 @@ Sie sollen:
 - wo möglich eine Wirksamkeitsmessung erhalten,
 - mittelbar zur Erreichung der DNS-2025-Ziele beitragen.
 
-Das klingt wirkungsorientiert – und ist für WÖk interessant.
+Das klingt wirkungsorientiert - und ist für WÖk interessant.
 
 Aber auch hier gilt:
 
@@ -100,7 +100,7 @@ Eine Mission formuliert einen politisch gewünschten Veränderungsauftrag. Sie m
 
 ## 5. Ein bemerkenswerter WÖk-Anschluss: Wirksamkeitsmessung
 
-Die Beteiligungsfassung spricht ausdrücklich davon, Missionen – wo möglich – mit Wirksamkeitsmessung zu versehen und bis zum Ende der Legislatur konkrete messbare Ergebnisse umzusetzen.
+Die Beteiligungsfassung spricht ausdrücklich davon, Missionen - wo möglich - mit Wirksamkeitsmessung zu versehen und bis zum Ende der Legislatur konkrete messbare Ergebnisse umzusetzen.
 
 Das zeigt: Die staatliche Architektur bewegt sich selbst stärker in Richtung wirkungsorientierter Steuerung.
 
@@ -260,13 +260,13 @@ Nicht jede Mission muss zu einem anderen WÖk-Urteil führen. Konvergenz ist mö
 
 ### Amtliche Quellen
 
-1. **Bundesregierung – Aktionsplan Nachhaltigkeit, öffentliche Seite vom 16.07.2026**  
+1. **Bundesregierung - Aktionsplan Nachhaltigkeit, öffentliche Seite vom 16.07.2026**  
    https://www.bundesregierung.de/breg-de/aktuelles/aktionsplan-nachhaltigkeit-2392096
 
-2. **Bundesregierung – Aktionsplan Nachhaltigkeit, Beteiligungsfassung Stand 16.07.2026**  
+2. **Bundesregierung - Aktionsplan Nachhaltigkeit, Beteiligungsfassung Stand 16.07.2026**  
    https://www.bundesregierung.de/resource/blob/975228/2447318/ce245dd460c58c39c04a87878f68608a/2026-07-16-aktionsplan-nachhaltigkeit-data.pdf?download=1
 
-3. **Bundesregierung – DNS 2025 / Übergang zum Aktionsplan**  
+3. **Bundesregierung - DNS 2025 / Übergang zum Aktionsplan**  
    https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/deutsche-nachhaltigkeitsstrategie-2025-2332540
 
 ### Quellenfunktion
@@ -330,7 +330,7 @@ Und zweitens saubere Versionierung.
 
 Der Aktionsplan enthält 19 Missionen in fünf Handlungsfeldern. Die Idee ist: Aus der sehr breiten Deutschen Nachhaltigkeitsstrategie sollen ausgewählte, ressortübergreifende Veränderungsaufträge stärker in konkrete Umsetzung kommen.
 
-Die Missionen sollen Zielstellungen haben, später mit Maßnahmenpaketen und Meilensteinen ergänzt werden und – wo möglich – Wirksamkeitsmessung bekommen.
+Die Missionen sollen Zielstellungen haben, später mit Maßnahmenpaketen und Meilensteinen ergänzt werden und - wo möglich - Wirksamkeitsmessung bekommen.
 
 Das ist bemerkenswert, weil die Bundesregierung selbst die Nachhaltigkeitspolitik stärker in Richtung Wirkung und messbare Ergebnisse entwickeln will.
 
@@ -368,9 +368,9 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
 
 ### Zeitabhängiger Status
 

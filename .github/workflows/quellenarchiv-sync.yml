@@ -3,7 +3,7 @@ name: Quellenarchiv-Sync
 # Hält den Website-Spiegel des Quellenarchivs mit dem Wirkungsinstitut synchron.
 # Zieht den aktuellen Stand aus der öffentlichen Institut-API und aktualisiert den
 # Snapshot content/quellenarchiv/sources.json. Änderungen werden als Pull Request
-# vorgelegt (kein direkter main-Push) — nach dem Merge baut deploy.yml den Spiegel
+# vorgelegt (kein direkter main-Push) - nach dem Merge baut deploy.yml den Spiegel
 # aus der Quelle neu und stellt ihn live. Der Spiegel bleibt read-only; kuratiert,
 # hinzugefügt und diskutiert wird ausschließlich im Institut.
 
@@ -36,9 +36,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          # Nur den Snapshot betrachten – generierte Artefakte ignorieren.
+          # Nur den Snapshot betrachten - generierte Artefakte ignorieren.
           if git diff --quiet -- content/quellenarchiv/sources.json; then
-            echo "Snapshot unverändert – nichts zu tun."
+            echo "Snapshot unverändert - nichts zu tun."
             exit 0
           fi
           STAMP="$(date -u +%Y%m%d-%H%M)"
@@ -54,4 +54,4 @@ jobs:
             --base main \
             --head "$BRANCH" \
             --title "Quellenarchiv-Sync: ${COUNT} Quellen (${STAMP})" \
-            --body "Automatischer Abgleich des Quellenarchiv-Spiegels mit dem Wirkungsinstitut. Nur der Snapshot \`content/quellenarchiv/sources.json\` ändert sich; nach dem Merge baut der CI-Build die Seiten neu. Read-only-Spiegel – kuratiert wird ausschließlich im Institut."
+            --body "Automatischer Abgleich des Quellenarchiv-Spiegels mit dem Wirkungsinstitut. Nur der Snapshot \`content/quellenarchiv/sources.json\` ändert sich; nach dem Merge baut der CI-Build die Seiten neu. Read-only-Spiegel - kuratiert wird ausschließlich im Institut."

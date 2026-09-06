@@ -55,12 +55,12 @@ WÖk ergänzt Claim-Prüfung um Wirkpfad, Empfänger, Verteilung, Schutzgrenzen 
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
 - UN Agenda 2030 / SDGs: https://sdgs.un.org/2030agenda
 - Deutsche Nachhaltigkeitsstrategie: https://www.bundesregierung.de/breg-de/schwerpunkte/nachhaltigkeitspolitik
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - OECD Evaluation: https://www.oecd.org/dac/evaluation/
 - Digital Services Act: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
 
 ## Transferfrage / Praxisaufgabe
-Nimm einen Nachhaltigkeitsclaim und schreibe ihn in drei Varianten um: Fakt, Wirkungspotenzial und ex-post-Wirkung – jeweils mit erforderlicher Evidenz.
+Nimm einen Nachhaltigkeitsclaim und schreibe ihn in drei Varianten um: Fakt, Wirkungspotenzial und ex-post-Wirkung - jeweils mit erforderlicher Evidenz.
 
 ## Prüfungsrelevante Kernaussagen
 Claim-Klassifikation, Systemgrenzen, Quellenstatus und Kompensations-/Nichtkompensationslogik.
@@ -69,7 +69,7 @@ Claim-Klassifikation, Systemgrenzen, Quellenstatus und Kompensations-/Nichtkompe
 Glaubwürdige Wirkungskommunikation ist präziser als Marketing: Sie zeigt Leistung und Grenze zugleich.
 
 ## Sprechertext
-Wenn du einen guten Wirkungsclaim schreiben willst, stell dir vor, jemand dürfte nur eine Frage stellen: Woher weißt du das? Wenn dein Satz diese Frage aushält – mit Quelle, Systemgrenze und ehrlicher Unsicherheit – ist er schon sehr viel stärker.
+Wenn du einen guten Wirkungsclaim schreiben willst, stell dir vor, jemand dürfte nur eine Frage stellen: Woher weißt du das? Wenn dein Satz diese Frage aushält - mit Quelle, Systemgrenze und ehrlicher Unsicherheit - ist er schon sehr viel stärker.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst auf Basis des vollständigen Legacy-Reaudits B04 und des WÖk-Begriffs-/Methodenstands v1.5.

@@ -1,6 +1,6 @@
-# P5 — Einzelakten in drei Tiefen
+# P5 - Einzelakten in drei Tiefen
 
-Frische, saubere Ausgangsbasis: `5ae5af8fed34fd8916c9e3f26934bdc696ac6dc0`. Kein Import aus einem alten oder fremden Arbeitsbaum. P1–P4 sind gemergt; P5 verändert keine Fach-, Quellen-, Bewertungs- oder Release-Daten.
+Frische, saubere Ausgangsbasis: `5ae5af8fed34fd8916c9e3f26934bdc696ac6dc0`. Kein Import aus einem alten oder fremden Arbeitsbaum. P1-P4 sind gemergt; P5 verändert keine Fach-, Quellen-, Bewertungs- oder Release-Daten.
 
 Vor PR-Eröffnung erneut gegen den frischen P23-Merge `30c5ae2e1ec7e2d0eb31e5c2af441e1b59c8eeb9` integriert. Die P23-Fachmaterialisierung aus #369 bleibt unverändert geschützt.
 
@@ -38,7 +38,7 @@ Die Komponenten sind implementiert und fail-closed getestet. Fehlende strukturie
 | Belegstatus der vier Kettenglieder | Ausdrücklich stufengebundene Aussage und Evidenzlabel mit Quellenreferenz je Entscheidung/Umsetzung/Zustandsveränderung/Zurechnung | „Separater Belegstand offen“ bezeichnet ausschließlich die fehlende separate Projektionsbindung, nicht die Nicht-Existenz von Quellen oder die Nicht-Prüfung des Falles. Die vollständige Fallprüfung bleibt direkt darunter. |
 | Vierstufiger Evidenzgrad | Freigegebene ordinale Zuordnung, nicht aus HIGH/MEDIUM/LOW oder Text geraten | Bestehende P2-Regel unverändert: „Nicht eingestuft“, nicht Stufe null. |
 
-Diese Anzeigen sind keine Aufforderung, bereits vorliegende Fachurteile neu zu verfassen. Vorhandene Angaben werden nicht als fehlende Fachprüfung deklariert. SDGs 1–17 bleiben sichtbar; „nicht zugeordnet“ bedeutet ausdrücklich nicht „unberührt“. SDG+-Felder und Rechtsbezüge stammen ausschließlich aus den bestehenden Zuordnungen; Recht bleibt eine eigene Ebene.
+Diese Anzeigen sind keine Aufforderung, bereits vorliegende Fachurteile neu zu verfassen. Vorhandene Angaben werden nicht als fehlende Fachprüfung deklariert. SDGs 1-17 bleiben sichtbar; „nicht zugeordnet“ bedeutet ausdrücklich nicht „unberührt“. SDG+-Felder und Rechtsbezüge stammen ausschließlich aus den bestehenden Zuordnungen; Recht bleibt eine eigene Ebene.
 
 ## Prüfungen und Release-Grenze
 

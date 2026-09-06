@@ -23,6 +23,7 @@ Aufruf:
 """
 import sys, os, re, html, unicodedata
 from collections import Counter
+from pdf_reader_sections import ReaderSections
 import fitz
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -114,8 +115,11 @@ def running_lines(pdf):
     cnt = Counter()
     n = pdf.page_count
     for p in range(n):
-        for ln in pdf[p].get_text().splitlines():
-            s = ln.strip()
+        for block in pdf[p].get_text("blocks"):
+            # Repeated body labels are content, not running headers.
+            if block[1] > 65 and block[3] < pdf[p].rect.height - 55:
+                continue
+            s = block[4].strip()
             if s and len(s) < 90:
                 cnt[s] += 1
     thr = max(3, int(0.30 * n))
@@ -287,12 +291,12 @@ def build_one(pdf_path, detail_slug, title, short):
     npages = pdf.page_count
     chapters = []
     if clvl is not None:
-        for lvl, t, page in toc:
+        for toc_index, (lvl, t, page) in enumerate(toc):
             t = (t or "").strip()
             if lvl <= clvl:
-                chapters.append({"idx": len(chapters), "title": t, "page": page - 1, "subs": []})
+                chapters.append({"idx": len(chapters), "title": t, "page": page - 1, "toc_index": toc_index, "subs": []})
             elif chapters and lvl == clvl + 1:
-                chapters[-1]["subs"].append({"title": t, "page": page - 1})
+                chapters[-1]["subs"].append({"title": t, "page": page - 1, "toc_index": toc_index})
     else:  # aus Schriftgrößen erkannte Kapitel (kein PDF-TOC) -> per Text-Position splitten
         full = "\n".join(pdf[p].get_text() for p in range(npages))
         valid = []
@@ -317,36 +321,12 @@ def build_one(pdf_path, detail_slug, title, short):
         else:
             ch["slug"] = f'{ch["idx"]:02d}-{slugify(source_title)[:60]}'
 
+    if clvl is not None:
+        ReaderSections(pdf).partition(chapters)
     r = "../../../../"
     for ch in chapters:
         rc = r + "../"
-        source_title = ch.get("source_title", ch["title"])
-        raw = ch.get("text") or "\n".join(pdf[p].get_text() for p in range(ch["page"], max(ch["end"], ch["page"] + 1)))
-        blocks = []
-        if ch["subs"]:
-            positions = []
-            for sub in ch["subs"]:
-                m = re.search(re.escape(sub["title"][:50]), raw)
-                positions.append((m.start() if m else None, sub))
-            first = next((p for p, _ in positions if p is not None), None)
-            intro = raw[:first] if first else (raw if first is None else "")
-            ti = intro.rfind(source_title)
-            if ti != -1:
-                intro = intro[ti + len(source_title):]
-            if intro.strip():
-                blocks.append((None, intro))
-            valid = [(p, s) for p, s in positions if p is not None]
-            for j, (pos, sub) in enumerate(valid):
-                nxt = valid[j + 1][0] if j + 1 < len(valid) else len(raw)
-                seg = raw[pos:nxt]
-                seg = seg.split("\n", 1)[1] if "\n" in seg else seg
-                blocks.append((sub["title"], seg))
-        else:
-            intro = raw
-            ti = intro.find(source_title)
-            if ti != -1:
-                intro = intro[ti + len(source_title):]
-            blocks.append((None, intro))
+        blocks = ch.get('blocks', [(None, ch.get('text', ''))])
 
         parts = []
         for subtitle, seg in blocks:
@@ -457,10 +437,10 @@ if __name__ == "__main__":
     reg, by_primary, by_id, by_title = load_data()
     sel = select(mode, reg)
     print(f"Auswahl '{mode}': {len(sel)} Dokumente")
-    made_ch = made_single = failed = 0
+    made_ch = made_single = failed = errors = 0
     for x in sel:
         did = x.get("id")
-        slug = by_primary.get((x.get("urls") or {}).get("primary")) or by_id.get(did) or by_title.get(x.get("title"))
+        slug = by_primary.get((x.get("urls") or {}).get("primary")) or by_id.get(did)
         pdf = (x.get("urls") or {}).get("primary")
         if not slug or not pdf or not os.path.isfile(os.path.join(ROOT, pdf)):
             print(f"  ÜBERSPRUNGEN {did}: slug={slug} pdf={pdf}")
@@ -477,4 +457,8 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"  FEHLER {slug}: {type(e).__name__}: {e}")
             failed += 1
+            errors += 1
     print(f"\nFertig: {made_ch} Werke mit Kapiteln, {made_single} Einzelseiten, {failed} übersprungen/fehlerhaft")
+
+    if errors:
+        sys.exit(1)

@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v66-versorgungssicherheit-als-wirkungswert.md curriculum=4.0 sanitized=true -->
-# V66 · Versorgungssicherheit als Wirkungswert – Lehren aus Krisen ohne Krisenfetisch
+# V66 · Versorgungssicherheit als Wirkungswert - Lehren aus Krisen ohne Krisenfetisch
 
 **lecture_id:** `WOEK-G-BASE-066`  
 **display_code:** `V66`  

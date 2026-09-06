@@ -3,7 +3,7 @@
 **Reihe:** Demokratie schützen · Bürger:innen · DB9
 **Status:** vollständiger Master · Modellfall Falkenried
 **Empfohlene Lernzeit:** 70 Minuten
-**Voraussetzung:** DB1–DB8
+**Voraussetzung:** DB1-DB8
 **Reader-/Seed-Spiegel:** `woek-akademie-app/content/lehrgaenge/demokratie-schuetzen-buerger-db-v9.md`
 
 **Modellhinweis:** Falkenried, die Familie Werner und alle Dialoge dieser Lektion sind erfunden. Der Fall untersucht Kommunikationsformen, Schutzlücken und mögliche Folgen. Er bewertet weder politische Haltungen noch den Wert von Personen. Diese Lektion ist keine Anleitung zur Überwachung, keine Rechtsberatung und kein System zur Bewertung von Bürger:innen.

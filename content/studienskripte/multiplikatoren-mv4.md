@@ -1,9 +1,9 @@
-# Multiplikator:innen · Didaktik der Wirkung – wie man es erklärt
+# Multiplikator:innen · Didaktik der Wirkung - wie man es erklärt
 
 **Track / Kurscode:** Multiplikator:innen für Wirkungsökonomie · `multiplikatoren`
 **Vorlesungscode:** MV4
 **Empfohlene Lernzeit:** 70 Minuten · **Videolänge:** etwa 20 Minuten
-**Voraussetzung:** MV1 – Maßstabskrise und Wirkung statt Kapital; MV2 – Das Wirkungsvokabular sicher erklären; MV3 – Vom Messen zum Steuern
+**Voraussetzung:** MV1 - Maßstabskrise und Wirkung statt Kapital; MV2 - Das Wirkungsvokabular sicher erklären; MV3 - Vom Messen zum Steuern
 **Status:** fachlicher Master in Ausarbeitung · vor Veröffentlichung redaktionell prüfen
 **Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-buch-html/) · [WÖk-Referenz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-index-html/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-glossar-html/) · [WÖMS 2.0](https://wirkungsoekonomie.de/bibliothek/eintraege/woems-2-0/)
 
@@ -22,12 +22,12 @@ Diese Vorlesung behandelt Didaktik als Wirkungsarchitektur einer Erklärung. Sie
 - **Kernaussage:** Wer Wirkungsökonomie vermittelt, beginnt bei einem gemeinsamen Fall, trennt Beobachtung, Begriff und Urteil und gibt Prüffragen weiter. Eine gute Erklärung macht das Gegenüber nicht abhängig von der erklärenden Person, sondern handlungsfähig.
 - **Medienstatus:** Dieses Master-Skript ist die verbindliche Grundlage für Sprechertext, Folien, Grafiken und Video. Ein fehlendes Medium sperrt den Lernweg nicht.
 - **Verbindliche Dramaturgie für Folien, TTS und Video:**
-  1. **0:00–3:00 – Die acht Minuten vor dem Turnier:** Warum eine richtige Fachdefinition am falschen Anfang scheitern kann.
-  2. **3:00–6:30 – Vom Becher zur Wirkungsfrage:** Ein konkreter Fall, eine klare Veränderung und die Grenze zwischen Potenzial und Wirkung.
-  3. **6:30–10:00 – Die Drei-Schritt-Erklärung:** Beobachtung, Begriff, Prüffrage statt Fachwort-Kaskade.
-  4. **10:00–13:30 – Unterschiede ernst nehmen:** Zielgruppe, Vorwissen und Sorge hören, ohne den Maßstab zu wechseln.
-  5. **13:30–17:00 – Einwände als Daten:** Kosten, Hygiene und Bevormundung ruhig bearbeiten; Nichtkompensation nicht unterschlagen.
-  6. **17:00–20:00 – Die Übergabe:** Eine Erklärung ist gelungen, wenn andere den nächsten Fall selbst prüfen können.
+  1. **0:00-3:00 - Die acht Minuten vor dem Turnier:** Warum eine richtige Fachdefinition am falschen Anfang scheitern kann.
+  2. **3:00-6:30 - Vom Becher zur Wirkungsfrage:** Ein konkreter Fall, eine klare Veränderung und die Grenze zwischen Potenzial und Wirkung.
+  3. **6:30-10:00 - Die Drei-Schritt-Erklärung:** Beobachtung, Begriff, Prüffrage statt Fachwort-Kaskade.
+  4. **10:00-13:30 - Unterschiede ernst nehmen:** Zielgruppe, Vorwissen und Sorge hören, ohne den Maßstab zu wechseln.
+  5. **13:30-17:00 - Einwände als Daten:** Kosten, Hygiene und Bevormundung ruhig bearbeiten; Nichtkompensation nicht unterschlagen.
+  6. **17:00-20:00 - Die Übergabe:** Eine Erklärung ist gelungen, wenn andere den nächsten Fall selbst prüfen können.
 
 ## 3. Transkript / Erklärgerüst
 
@@ -119,7 +119,7 @@ Gute Didaktik der Wirkung beginnt bei einer gemeinsamen Lage, nicht bei einem Fa
 
 In der nächsten Vorlesung wird Sprache selbst zum Gegenstand: Wie spricht man über Wirkung, ohne Wirkung zu behaupten, wo nur Absicht oder Potenzial vorliegt? Die didaktische Grundhaltung aus dieser Vorlesung bleibt dafür entscheidend: prüfbar, quellenklar und offen für Rückkopplung.
 
-## 4. Skript / Folien – fachliche Sicherung
+## 4. Skript / Folien - fachliche Sicherung
 
 ### Die Drei-Schritt-Erklärung im Vereinsfall
 

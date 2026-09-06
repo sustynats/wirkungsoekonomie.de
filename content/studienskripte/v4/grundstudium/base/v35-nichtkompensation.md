@@ -154,7 +154,7 @@ Nichtkompensation bekämpft beide Muster, indem sie **Boundary-Fragen separat** 
 
 ## 8. Keine erfundenen Grenzen
 
-Eine harte Grenze ist mächtig – und deshalb missbrauchsanfällig.
+Eine harte Grenze ist mächtig - und deshalb missbrauchsanfällig.
 
 WÖk darf nicht beliebige politische Präferenzen zu „roten Linien“ erklären.
 
@@ -264,7 +264,7 @@ Und dann taucht ein glaubhafter Hinweis auf schwere Zwangsarbeit in der Rohstoff
 
 Was machen wir?
 
-Wir rechnen nicht: dreimal plus drei, einmal minus drei – macht immer noch positiv.
+Wir rechnen nicht: dreimal plus drei, einmal minus drei - macht immer noch positiv.
 
 Genau dafür gibt es Nichtkompensation.
 

@@ -1,4 +1,4 @@
-# P6 — gemeinsame Bereichseinstiege
+# P6 - gemeinsame Bereichseinstiege
 
 Frischer Branch nach dem vollständig grünen P5-Merge, exakte Ausgangsbasis `0101b3e7569f9a153721ea715cc4068402bf6a87`. Keine Übernahme eines alten Arbeitsbaums. Keine Fach-, Quellen-, Bewertungs-, Hosting- oder Workflow-Änderung.
 
@@ -28,7 +28,7 @@ Frischer Branch nach dem vollständig grünen P5-Merge, exakte Ausgangsbasis `01
 | Länder-Prinzipien und alle Landeskarten | Unverändert auf `/ebenen/laender`; vorgefilterter Registerlink nun nach dem Kartogramm statt vor H1. |
 | Bisherige Einstiegs-/Registertexte | Unverändert in gemeinsamer Überschrift, Zielliste bzw. vollständigem Register. |
 
-Die vor P6 gerenderte Baseline aller fünf Einstiege plus Länderseite enthält **438 Textpassagen**. `ux/p6-text-baseline-2026-09-04.json` ist an den literal getesteten P5-Head `5c706348333b157304a4eed856ac4d422152d91c` gebunden; SHA-256 `b9d3f89b64e0142a4deb019a35f6c27fd32cd49f9183292b0366f468a009142d`. Jede Passage wird gegen ihren gerenderten Zielcontainer geprüft und in `area-text-preservation.json` protokolliert. Das bestehende komplette P1–P6-AST-Textinventar und die 9457 P5-Passagen bleiben zusätzliche Gates. Audit-Fixture nur in GitHub, nicht im minimalen Runtime-Artefakt.
+Die vor P6 gerenderte Baseline aller fünf Einstiege plus Länderseite enthält **438 Textpassagen**. `ux/p6-text-baseline-2026-09-04.json` ist an den literal getesteten P5-Head `5c706348333b157304a4eed856ac4d422152d91c` gebunden; SHA-256 `b9d3f89b64e0142a4deb019a35f6c27fd32cd49f9183292b0366f468a009142d`. Jede Passage wird gegen ihren gerenderten Zielcontainer geprüft und in `area-text-preservation.json` protokolliert. Das bestehende komplette P1-P6-AST-Textinventar und die 9457 P5-Passagen bleiben zusätzliche Gates. Audit-Fixture nur in GitHub, nicht im minimalen Runtime-Artefakt.
 
 ## Prüfumfang
 

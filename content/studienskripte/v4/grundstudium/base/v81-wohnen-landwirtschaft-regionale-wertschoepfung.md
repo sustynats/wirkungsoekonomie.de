@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v81-wohnen-landwirtschaft-regionale-wertschoepfung.md curriculum=4.0 sanitized=true -->
-# V81 · Wohnen, Landwirtschaft und regionale Wertschöpfung – ortsgebundene Wirkungsräume
+# V81 · Wohnen, Landwirtschaft und regionale Wertschöpfung - ortsgebundene Wirkungsräume
 
 **lecture_id:** `WOEK-G-BASE-081`  
 **display_code:** `V81`  
@@ -230,7 +230,7 @@ Und „regional“ ist kein Zauberwort.
 
 Ein regionales Produkt kann ressourcenintensiv sein. Ein Import kann effizienter produziert worden sein. Entscheidend ist der konkrete Wirkpfad.
 
-Beim Wohnen gilt dasselbe: Mehr Wohnungen können helfen – aber Lage, Segment, Boden und Infrastruktur entscheiden, wem sie wirklich nützen.
+Beim Wohnen gilt dasselbe: Mehr Wohnungen können helfen - aber Lage, Segment, Boden und Infrastruktur entscheiden, wem sie wirklich nützen.
 
 Der Merksatz lautet:
 

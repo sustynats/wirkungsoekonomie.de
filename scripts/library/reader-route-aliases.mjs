@@ -25,6 +25,12 @@ function retiredReaderRoutes({ id, root, successor, title, routes }) {
  * in Navigation, Sitemap oder Suchindex.
  */
 export const readerRouteAliases = Object.freeze([
+  {id:'woems-problem-solution-hyphens',mode:'rename',from:'/bibliothek/eintraege/woems-2-0/lesen/77-f01-wirkungsproblemlosungs-fit/',to:'/bibliothek/eintraege/woems-2-0/lesen/77-f01-wirkungsproblem-losungs-fit/',title:'F01 Wirkungsproblem-Lösungs-Fit'},
+  {id:'woems-system-market-hyphens',mode:'rename',from:'/bibliothek/eintraege/woems-2-0/lesen/85-f09-problemwirkungssystemmarkt-fit/',to:'/bibliothek/eintraege/woems-2-0/lesen/85-f09-problem-wirkungs-system-markt-fit/',title:'F09 Problem-Wirkungs-System-Markt-Fit'},
+  {id:'woems-learning-loop-hyphens',mode:'rename',from:'/bibliothek/eintraege/woems-2-0/lesen/140-l03-discoverydeliverywirkungslernloop/',to:'/bibliothek/eintraege/woems-2-0/lesen/140-l03-discovery-delivery-wirkungslernloop/',title:'L03 Discovery-Delivery-Wirkungslernloop'},
+{"id": "glossary-mini-definitions-v1-1", "mode": "rename", "from": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-1-pdf/lesen/14-14-fuhrende-mini-definitionen-fur-hover-glossar-und-codex/", "to": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-1-pdf/lesen/14-14-mini-definitionen-fuer-die-oeffentliche-begriffsverwendung/", "title": "14. Mini-Definitionen für die öffentliche Begriffsverwendung"},
+{"id": "glossary-mini-definitions-v1-2", "mode": "rename", "from": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-2-pdf/lesen/14-14-fuhrende-mini-definitionen-fur-hover-glossar-und-codex/", "to": "/bibliothek/eintraege/download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-2-pdf/lesen/14-14-mini-definitionen-fuer-die-oeffentliche-begriffsverwendung/", "title": "14. Mini-Definitionen für die öffentliche Begriffsverwendung"},
+{"id": "system-resilience-reading-note", "mode": "rename", "from": "/bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-als-systemresilienz-definition-un/lesen/10-redaktioneller-hinweis/", "to": "/bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-als-systemresilienz-definition-un/lesen/10-hinweis-zur-verwendung/", "title": "Hinweis zur Verwendung"},
   {
     id: "political-standard-public-content-requirements",
     mode: "rename",

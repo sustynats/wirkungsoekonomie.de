@@ -550,6 +550,7 @@ const canonicalTermOverrides = new Map([
 
 // Dated clarification shared by detail pages, hover definitions and exports.
 for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/site-review-2026-09-05.json"), "utf8")).terms) canonicalTermOverrides.set(term.termId, term);
+for (const term of JSON.parse(fs.readFileSync(path.join(root, "content/glossary/imports/model-and-controlling-2026-09-06.json"), "utf8")).terms) canonicalTermOverrides.set(term.termId, term);
 
 function applyCanonicalTermOverride(term) {
   const override = canonicalTermOverrides.get(term.termId);

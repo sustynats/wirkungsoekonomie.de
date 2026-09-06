@@ -3,13 +3,13 @@
 **Track / Kurscode:** Multiplikator:innen für Wirkungsökonomie · `multiplikatoren`
 **Vorlesungscode:** MV5
 **Empfohlene Lernzeit:** 70 Minuten · **Videolänge:** etwa 20 Minuten
-**Voraussetzung:** MV1 – Maßstabskrise und Wirkung statt Kapital; MV2 – Das Wirkungsvokabular sicher erklären; MV3 – Vom Messen zum Steuern; MV4 – Didaktik der Wirkung
+**Voraussetzung:** MV1 - Maßstabskrise und Wirkung statt Kapital; MV2 - Das Wirkungsvokabular sicher erklären; MV3 - Vom Messen zum Steuern; MV4 - Didaktik der Wirkung
 **Status:** fachlicher Master in Ausarbeitung · vor Veröffentlichung redaktionell prüfen
 **Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-buch-html/) · [WÖk-Referenz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-index-html/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-glossar-html/) · [WÖMS 2.0](https://wirkungsoekonomie.de/bibliothek/eintraege/woems-2-0/)
 
 ## 1. Einstieg / Wirkungsfrage
 
-Am Mittwochmorgen sitzt Aylin in der kleinen Versandabteilung eines Onlinehändlers für Outdoorzubehör. Auf ihrem Bildschirm liegt ein Entwurf für den Herbst-Newsletter: ein grünes Paket, ein Bergpanorama und die Zeile „Unser Versand ist klimaneutral.“ Die Geschäftsführung möchte die Mail am selben Tag verschicken. Aylin weiß: Das Unternehmen hat bei einigen Transporten Emissionen berechnet und Zertifikate finanziert. Zugleich sind Verpackungen, Retouren und ein Teil der Lieferwege nicht in der Aussage erklärt. Sie fragt nicht zuerst, ob der Satz gut klingt. Sie fragt: Was darf dieser Satz über eine tatsächliche Veränderung behaupten? Was zeigt er, was lässt er offen – und was muss sich am Ablauf ändern, damit Kommunikation nicht ein schöner Anstrich bleibt?
+Am Mittwochmorgen sitzt Aylin in der kleinen Versandabteilung eines Onlinehändlers für Outdoorzubehör. Auf ihrem Bildschirm liegt ein Entwurf für den Herbst-Newsletter: ein grünes Paket, ein Bergpanorama und die Zeile „Unser Versand ist klimaneutral.“ Die Geschäftsführung möchte die Mail am selben Tag verschicken. Aylin weiß: Das Unternehmen hat bei einigen Transporten Emissionen berechnet und Zertifikate finanziert. Zugleich sind Verpackungen, Retouren und ein Teil der Lieferwege nicht in der Aussage erklärt. Sie fragt nicht zuerst, ob der Satz gut klingt. Sie fragt: Was darf dieser Satz über eine tatsächliche Veränderung behaupten? Was zeigt er, was lässt er offen - und was muss sich am Ablauf ändern, damit Kommunikation nicht ein schöner Anstrich bleibt?
 
 Das ist die zentrale Frage dieser Vorlesung. Wirkungskommunikation ist nicht die Kunst, eine Organisation möglichst vorteilhaft erscheinen zu lassen. Sie macht nachvollziehbar, welche Veränderung belegt ist, welches Wirkungspotenzial begründet vermutet wird, welches Wirkungsrisiko besteht und wo Daten oder Grenzen fehlen. So schützt sie Menschen vor Täuschung und Organisationen vor Aussagen, die später nicht tragen. Sie ist weder eine Sprachpolizei noch ein Moraltest für Personen. Sie ist eine Arbeitsweise für öffentliche Aussagen über Folgen.
 
@@ -22,12 +22,12 @@ Greenwashing entsteht oft nicht nur durch eine offen falsche Behauptung. Es kann
 - **Kernaussage:** Ehrliche Wirkungskommunikation trennt Befund, Potenzial, Risiko und offene Frage. Sie macht Rahmen, Quellen und Grenzen sichtbar, statt einzelne Vorteile zu einem Gesamturteil aufzublasen. Greenwashing wird so nicht mit Empörung, sondern mit präzisen Rückfragen bearbeitet.
 - **Medienstatus:** Dieses Master-Skript ist die verbindliche Grundlage für Sprechertext, Folien, Grafiken und Video. Ein fehlendes Medium sperrt den Lernweg nicht.
 - **Verbindliche Dramaturgie für Folien, TTS und Video:**
-  1. **0:00–3:00 – Die Mail vor dem Versand:** Warum Aylins Satz nicht an der Farbe, sondern an seiner Aussageart geprüft wird.
-  2. **3:00–6:30 – Vier Satzteile, vier Prüfungen:** Veränderung, Bezugsrahmen, Evidenz und Grenze.
-  3. **6:30–10:00 – Wenn ein grünes Detail zu viel verdeckt:** Reichweite, Absicht, Kompensation und die Reihenfolge kritischer Fragen.
-  4. **10:00–13:30 – Präzision ohne Sprachlähmung:** Unsicherheit benennen, ohne die Richtung zu verschweigen.
-  5. **13:30–17:00 – Das Gespräch mit der Geschäftsführung:** Rückfragen statt Bloßstellung; Kommunikation als Rückkopplung in den Betrieb.
-  6. **17:00–20:00 – Die Aussagekarte:** Ein praktisches Werkzeug für Newsletter, Gespräche und Social Media.
+  1. **0:00-3:00 - Die Mail vor dem Versand:** Warum Aylins Satz nicht an der Farbe, sondern an seiner Aussageart geprüft wird.
+  2. **3:00-6:30 - Vier Satzteile, vier Prüfungen:** Veränderung, Bezugsrahmen, Evidenz und Grenze.
+  3. **6:30-10:00 - Wenn ein grünes Detail zu viel verdeckt:** Reichweite, Absicht, Kompensation und die Reihenfolge kritischer Fragen.
+  4. **10:00-13:30 - Präzision ohne Sprachlähmung:** Unsicherheit benennen, ohne die Richtung zu verschweigen.
+  5. **13:30-17:00 - Das Gespräch mit der Geschäftsführung:** Rückfragen statt Bloßstellung; Kommunikation als Rückkopplung in den Betrieb.
+  6. **17:00-20:00 - Die Aussagekarte:** Ein praktisches Werkzeug für Newsletter, Gespräche und Social Media.
 
 ## 3. Transkript / Erklärgerüst
 
@@ -78,7 +78,7 @@ Sie schlägt vor: „Für ausgewählte Transportwege erfassen wir Emissionen und
 
 Nichtkompensation ist hier keine Wortpolizei gegen jede Kompensationsform. Sie ist eine Schutzregel für die Reihenfolge. Wenn bei einem Prozess eine schwerwiegende negative Wirkung oder ein erhebliches Risiko sichtbar wird, muss zuerst Schutz, Unterlassung oder Veränderung dieses Prozesses auf den Tisch. Ein gutes Projekt an anderer Stelle darf die Prüfung nicht ersetzen. Das gilt auch für Kommunikation: Ein freundlicher Ton, ein lokales Sponsoring oder ein einzelnes Recyclingprojekt machen eine unklare Kernbehauptung nicht glaubwürdig.
 
-Die **Reverse Merit Order** führt die gleiche Logik weiter. Sie fragt nicht zuerst: Welcher positive Punkt lässt sich am besten erzählen? Sie fragt: Wo ist der kritischste Punkt, den wir zuerst klären oder verbessern müssen? Für Aylin könnte das die fehlende Transparenz über Retouren sein, wenn diese einen großen Teil des Versandmodells prägen. Sie muss daraus keine fertige Bilanz basteln. Sie kann sagen: „Bevor wir eine Gesamtbehauptung treffen, brauchen wir für Retouren einen klaren Rahmen.“ So wird Kommunikation zum Auslöser für bessere Information und Entscheidungen – zur Rückkopplung in die Organisation.
+Die **Reverse Merit Order** führt die gleiche Logik weiter. Sie fragt nicht zuerst: Welcher positive Punkt lässt sich am besten erzählen? Sie fragt: Wo ist der kritischste Punkt, den wir zuerst klären oder verbessern müssen? Für Aylin könnte das die fehlende Transparenz über Retouren sein, wenn diese einen großen Teil des Versandmodells prägen. Sie muss daraus keine fertige Bilanz basteln. Sie kann sagen: „Bevor wir eine Gesamtbehauptung treffen, brauchen wir für Retouren einen klaren Rahmen.“ So wird Kommunikation zum Auslöser für bessere Information und Entscheidungen - zur Rückkopplung in die Organisation.
 
 ### Präzision ist keine Sprachlähmung
 
@@ -103,7 +103,7 @@ Im Jour fixe stellt Aylin ihre Bedenken vor. Der Vertriebsleiter sagt: „Unsere
 
 Die erste ist der kurze Slogan. Die zweite verbindet konkrete Handlung, Rahmen und Ausblick. Nun kann die Gruppe entscheiden, wie viel Raum die Mail hat, welche Detailseite notwendig ist und welche Daten bis zum nächsten Quartal fehlen. Die Kritik wird nicht an einer Person festgemacht. Sie wird zu einer Gestaltungsaufgabe: Wer erfasst die Retouren? Wer prüft die Verpackungsdaten? Wer beantwortet Rückfragen? Wann wird die Aussage aktualisiert?
 
-Das ist der Unterschied zwischen Reporting und Rückkopplung. Reporting wäre eine einmalige Nachhaltigkeitsseite, die nach Veröffentlichung niemand mehr ansieht. Rückkopplung entsteht, wenn Erkenntnisse die nächste Behauptung und den nächsten Ablauf ändern. Stellt sich heraus, dass die Mehrwegversandtasche kaum zurückkommt, ist die richtige Reaktion nicht, das Symbol größer zu drucken. Sie besteht darin, Rückgabe, Anreiz, Information oder Produktdesign zu verbessern – oder die Aussage zu korrigieren. Kommunikation wird dann nicht zum Deckel auf einem Problem, sondern zu einem Sensor für die Wirkungsarchitektur.
+Das ist der Unterschied zwischen Reporting und Rückkopplung. Reporting wäre eine einmalige Nachhaltigkeitsseite, die nach Veröffentlichung niemand mehr ansieht. Rückkopplung entsteht, wenn Erkenntnisse die nächste Behauptung und den nächsten Ablauf ändern. Stellt sich heraus, dass die Mehrwegversandtasche kaum zurückkommt, ist die richtige Reaktion nicht, das Symbol größer zu drucken. Sie besteht darin, Rückgabe, Anreiz, Information oder Produktdesign zu verbessern - oder die Aussage zu korrigieren. Kommunikation wird dann nicht zum Deckel auf einem Problem, sondern zu einem Sensor für die Wirkungsarchitektur.
 
 Eine gute Gesprächsfrage lautet: „Was müsste sich als falsch herausstellen, damit wir diesen Satz ändern würden?“ Wer darauf keine Antwort hat, behauptet womöglich eine Haltung statt einer prüfbaren Wirkung. Diese Frage ist unbequem, aber sie macht Organisationen lernfähig. Sie verhindert zugleich, dass Kritik nur als Angriff verstanden wird. Eine Rückmeldung kann zeigen, wo ein Satz missverständlich ist, wo eine Gruppe übersehen wird oder wo der Datenrahmen zu klein gewählt wurde.
 
@@ -134,7 +134,7 @@ Die grüne Paketgrafik war nicht das Problem. Das Problem wäre gewesen, aus ein
 
 In der nächsten Vorlesung wird es lauter: Medien, Narrative und Gegenwind. Die Aussagekarte bleibt dann nützlich. Wer den eigenen Satz prüfen kann, kann auch fremde Behauptungen ruhig einordnen, ohne selbst in Übertreibung, Empörung oder falsche Gewissheit zu geraten.
 
-## 4. Skript / Folien – fachliche Sicherung
+## 4. Skript / Folien - fachliche Sicherung
 
 ### Die Aussagekarte am Versandfall
 

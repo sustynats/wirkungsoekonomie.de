@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Du hast jetzt Problem, Ziel und Wirkpfad. Jetzt musst du entscheiden, **womit du die relevanten Zustände beobachtest**. Dabei gilt: MasterItem ist nicht Indikator. State Variable ist nicht Observation. Ein DNS-Indikator kann sehr nützlich sein – aber nur, wenn Definition, Population und Datenfunktion zum Fall passen. Die Kernkette lautet: `MasterItem -> StateVariable -> Indicator -> Observation -> Analysis/RealityCheck`.
+Du hast jetzt Problem, Ziel und Wirkpfad. Jetzt musst du entscheiden, **womit du die relevanten Zustände beobachtest**. Dabei gilt: MasterItem ist nicht Indikator. State Variable ist nicht Observation. Ein DNS-Indikator kann sehr nützlich sein - aber nur, wenn Definition, Population und Datenfunktion zum Fall passen. Die Kernkette lautet: `MasterItem -> StateVariable -> Indicator -> Observation -> Analysis/RealityCheck`.
 
 ## Lernziele
 
@@ -272,11 +272,11 @@ Und wenn kein guter Indikator existiert, markieren wir Data Gap.
 
 Wir erfinden keine Null.
 
-Vielleicht nutzen wir einen Proxy – aber dann sagen wir offen, dass er nur Ersatz ist.
+Vielleicht nutzen wir einen Proxy - aber dann sagen wir offen, dass er nur Ersatz ist.
 
 Der Merksatz lautet:
 
-**Nimm nicht die Zahl, die verfügbar ist. Nimm die Messgröße, die wirklich zu deinem Wirkpfad passt – und dokumentiere, was sie leisten kann und was nicht.**
+**Nimm nicht die Zahl, die verfügbar ist. Nimm die Messgröße, die wirklich zu deinem Wirkpfad passt - und dokumentiere, was sie leisten kann und was nicht.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

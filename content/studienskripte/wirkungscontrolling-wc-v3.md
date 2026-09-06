@@ -5,9 +5,7 @@
 **Vorlesungscode:** WC-V3  
 **Modul/Abschnitt:** WC  
 **Titel:** WÖk-IDs und Indikatorenarchitektur  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v3-woek-ids-indikatorenarchitektur.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v3.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v3.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **WÖk-IDs und Indikatorenarchitektur** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -51,22 +48,22 @@ Daten ohne Ordnung sind Rauschen. **Wie werden Wirkungsdaten so strukturiert, da
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** WÖk-IDs – das Ordnungssystem der Wirkungsdaten
+- **Titel:** WÖk-IDs - das Ordnungssystem der Wirkungsdaten
 - **Länge:** ~15 Min
-- **Kernaussage in einem Satz:** Die WÖk-ID ist ein Mapping-Instrument, das Daten, Produktmerkmale und Aktivitäten mit Wirkungsfeld, Bewertungslogik und Scorecard verknüpft – kein Siegel.
+- **Kernaussage in einem Satz:** Die WÖk-ID ist ein Mapping-Instrument, das Daten, Produktmerkmale und Aktivitäten mit Wirkungsfeld, Bewertungslogik und Scorecard verknüpft - kein Siegel.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Warum Ordnung nötig ist.** Ohne strukturierte Zuordnung lassen sich Daten nicht bewerten oder vergleichen.
+**Abschnitt A - Warum Ordnung nötig ist.** Ohne strukturierte Zuordnung lassen sich Daten nicht bewerten oder vergleichen.
 
-**Abschnitt B – Was eine WÖk-ID ist.** Eine strukturierte Zuordnung: Daten/Merkmal/Aktivität → Wirkungsfeld → Bewertungslogik → Scorecard. Kein Siegel, sondern Ordnungs-/Mapping-Instrument.
+**Abschnitt B - Was eine WÖk-ID ist.** Eine strukturierte Zuordnung: Daten/Merkmal/Aktivität → Wirkungsfeld → Bewertungslogik → Scorecard. Kein Siegel, sondern Ordnungs-/Mapping-Instrument.
 
-**Abschnitt C – Indikatorenarchitektur.** Die Master-Items-Architektur definiert Indikatoren, Bezüge und Bewertungslogik – die Bauteile, auf die WÖk-IDs verweisen.
+**Abschnitt C - Indikatorenarchitektur.** Die Master-Items-Architektur definiert Indikatoren, Bezüge und Bewertungslogik - die Bauteile, auf die WÖk-IDs verweisen.
 
-**Abschnitt D – Anschluss.** WÖk-IDs docken an NACE, CSRD-Datenpunkte, Produktpässe an und machen sie bewertbar.
+**Abschnitt D - Anschluss.** WÖk-IDs docken an NACE, CSRD-Datenpunkte, Produktpässe an und machen sie bewertbar.
 
-**Abschnitt E – Nutzen.** Vergleichbarkeit, Auditierbarkeit und Nachvollziehbarkeit – Voraussetzung für Scorecards (V4) und Audit (V9).
+**Abschnitt E - Nutzen.** Vergleichbarkeit, Auditierbarkeit und Nachvollziehbarkeit - Voraussetzung für Scorecards (V4) und Audit (V9).
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -74,7 +71,7 @@ Daten ohne Ordnung sind Rauschen. **Wie werden Wirkungsdaten so strukturiert, da
 
 **Die Indikatorenarchitektur** (Master Items) liefert die Bausteine: definierte Indikatoren, ihre Bezüge zum Referenzrahmen, Regeln, Benchmarkstatus und Prüfpfade. WÖk-IDs verweisen auf diese Architektur, statt Kennzahlen willkürlich neu zu erfinden. Leere Eingaben bleiben unbewertet; so bleibt das System konsistent und auditierbar (`assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx`).
 
-**Anschluss an bestehende Codierungen.** WÖk-IDs docken an NACE (Branche), CSRD/ESRS-Datenpunkte und den digitalen Produktpass an. Ein Produkt oder eine Aktivität erhält damit eine nachvollziehbare Zuordnung zur Wirkungsbewertung – die Brücke von Rohdaten (V2) zur Scorecard (V4).
+**Anschluss an bestehende Codierungen.** WÖk-IDs docken an NACE (Branche), CSRD/ESRS-Datenpunkte und den digitalen Produktpass an. Ein Produkt oder eine Aktivität erhält damit eine nachvollziehbare Zuordnung zur Wirkungsbewertung - die Brücke von Rohdaten (V2) zur Scorecard (V4).
 
 **Der Nutzen fürs Controlling.** WÖk-IDs schaffen: **Vergleichbarkeit** (gleiche Bewertungslogik), **Auditierbarkeit** (nachvollziehbare Herkunft und Zuordnung) und **Skalierbarkeit** (viele Datenpunkte, ein Ordnungssystem). Ohne diese Struktur bleibt jede Scorecard beliebig.
 
@@ -119,12 +116,11 @@ Wähle eine Aktivität oder ein Produkt deiner Organisation und skizziere die W�
 
 ## 8. Praxisbeispiel
 
-**Ein Bauteil, sauber zugeordnet.** Ein Zulieferteil erhält über seine WÖk-ID die Zuordnung zu Wirkungsfeldern (Arbeitsbedingungen, Emissionen, Wasser), zur passenden Bewertungslogik und Benchmark. Erst dadurch lässt sich seine Wirkung in der Scorecard bewerten und mit Alternativen vergleichen – nachvollziehbar und auditierbar. (Grundlage: Master Items, WUStG Technische Leitlinien.)
+**Ein Bauteil, sauber zugeordnet.** Ein Zulieferteil erhält über seine WÖk-ID die Zuordnung zu Wirkungsfeldern (Arbeitsbedingungen, Emissionen, Wasser), zur passenden Bewertungslogik und Benchmark. Erst dadurch lässt sich seine Wirkung in der Scorecard bewerten und mit Alternativen vergleichen - nachvollziehbar und auditierbar. (Grundlage: Master Items, WUStG Technische Leitlinien.)
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -322,13 +318,12 @@ Die folgende Runde verdichtet WC-V3 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V3. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx` – Indikatorenarchitektur, Regelstatus und Prüfpfade
-- `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` – WÖk-IDs, Benchmarks, Archetypen, Auditierbarkeit
+- `assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx` - Indikatorenarchitektur, Regelstatus und Prüfpfade
+- `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` - WÖk-IDs, Benchmarks, Archetypen, Auditierbarkeit
 - Glossar: `begriffe/woek-id`, `begriffe/benchmark`, `begriffe/archetyp`
 
 ## 4. Wirkungsökonomische Vertiefung
@@ -420,7 +415,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -924,8 +918,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v3-woek-ids-indikatorenarchitektur.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

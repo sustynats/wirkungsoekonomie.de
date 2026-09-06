@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-07-ggo-gesetzesfolgen.md curriculum=4.0 sanitized=true -->
-# GOV-07 · §§ 43–44 GGO: Gesetzesfolgen, Alternativen, Nebenwirkungen und spätere Überprüfung
+# GOV-07 · §§ 43-44 GGO: Gesetzesfolgen, Alternativen, Nebenwirkungen und spätere Überprüfung
 
 **lecture_id:** `WOEK-G-GOV-GFA-01`  
 **display_code:** `GOV-07`  
@@ -132,7 +132,7 @@ Nicht nur das politische Ziel wiederholen, sondern prüfen:
 
 `A -> M -> ΔZ -> R`
 
-plus Wirkungen 1.–3. Ordnung, Kaskaden, Rebound, Spillover und Verteilung.
+plus Wirkungen 1.-3. Ordnung, Kaskaden, Rebound, Spillover und Verteilung.
 
 ### 6.4 Attribution
 
@@ -171,7 +171,7 @@ Ein Ministerium will eine neue Regulierung einführen.
 - Welche Beobachtung würde die Kausalannahme widerlegen?
 - Wie wird die spätere Evaluation mit der ursprünglichen Wirkannahme verbunden?
 
-Der Unterschied ist Tiefe und Systemintegration – nicht die Existenz oder Nichtexistenz von Folgenprüfung.
+Der Unterschied ist Tiefe und Systemintegration - nicht die Existenz oder Nichtexistenz von Folgenprüfung.
 
 ## 8. Begriffsbox
 
@@ -220,7 +220,7 @@ Die faire Anschlussformel lautet:
 
 ### Primärquelle
 
-**Gemeinsame Geschäftsordnung der Bundesministerien – §§ 43–44**  
+**Gemeinsame Geschäftsordnung der Bundesministerien - §§ 43-44**  
 https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 
 Relevante amtliche Punkte:
@@ -230,7 +230,7 @@ Relevante amtliche Punkte:
 - § 43 Abs. 1 Nr. 3: andere Lösungsmöglichkeiten
 - § 43 Abs. 1 Nr. 5: Gesetzesfolgen
 - § 44 Abs. 1: beabsichtigte Wirkungen, unbeabsichtigte Nebenwirkungen, nachhaltige und langfristige Wirkungen
-- § 44 Abs. 2–6: weitere Folgen/Kosten
+- § 44 Abs. 2-6: weitere Folgen/Kosten
 - § 44 Abs. 7: spätere Überprüfung von Wirkung, Kosten-Ergebnis-Verhältnis und Nebenwirkungen
 
 ### Quellenfunktion
@@ -264,7 +264,7 @@ Prüfungsfähig:
 
 Jetzt kommt ein Abschnitt, der für die Wirkungsökonomie fast ein kleiner Reality Check über uns selbst ist.
 
-Denn wenn man nur unsere ältere Sprache liest, könnte man denken: Der Staat macht Gesetze, schaut auf Kosten – und wirkliche Folgen interessieren niemanden.
+Denn wenn man nur unsere ältere Sprache liest, könnte man denken: Der Staat macht Gesetze, schaut auf Kosten - und wirkliche Folgen interessieren niemanden.
 
 So ist es nicht.
 
@@ -288,7 +288,7 @@ Also: Ex post ist im staatlichen Verfahren durchaus angelegt.
 
 Was bleibt dann noch für die WÖk?
 
-Eine ganze Menge – aber eben präziser.
+Eine ganze Menge - aber eben präziser.
 
 Wir machen aus diesen wichtigen Prüffragen eine durchgehende Kette.
 
@@ -310,9 +310,9 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
 
 ### Drei Arten der Erfolgskontrolle
 

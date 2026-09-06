@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V2 – Daten-Audit
+# Wirkungscheck Bundestag V2 - Daten-Audit
 
 **Status:** abgeschlossen für die vorhandene Datei data-2025.js.  
 **Entscheidung für V2 Phase 1:** Die Datei darf zur Wahlkreissuche und

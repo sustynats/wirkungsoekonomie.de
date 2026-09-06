@@ -36,7 +36,7 @@ Civic Shield fragt deshalb:
 
 > Welche **institutionellen und technischen Kapazitäten** machen diese Funktionen robuster?
 
-Das ist Resilienzdesign – kein Zensurmodell.
+Das ist Resilienzdesign - kein Zensurmodell.
 
 ## 2. Bestehende Architektur zuerst
 
@@ -62,13 +62,13 @@ WÖk-Civic-Shield darf diese Instrumente nicht vereinnahmen oder als eigene Erfi
 
 Ein mögliches Design besteht aus sieben Funktionsschichten:
 
-1. **Source Integrity** – Primärquellen, Archive, Provenienz, Versionierung.
-2. **Plurality** – Medien-/Informationsvielfalt und Zugang.
-3. **Transparency** – Eigentum, politische Werbung, institutionelle Entscheidungsgrundlagen, Plattformregeln.
-4. **Agency** – digitale Selbstbestimmung, Nutzerkontrollen, Wahlmöglichkeiten.
-5. **Safety** – Schutz vor Einschüchterung, Gewalt und koordinierten Angriffen.
-6. **Literacy/Research** – Medienkompetenz, unabhängige Forschung, Zugang für Forschende.
-7. **Feedback** – Frühwarnung, Evaluation, Korrektur und öffentliche Rechenschaft.
+1. **Source Integrity** - Primärquellen, Archive, Provenienz, Versionierung.
+2. **Plurality** - Medien-/Informationsvielfalt und Zugang.
+3. **Transparency** - Eigentum, politische Werbung, institutionelle Entscheidungsgrundlagen, Plattformregeln.
+4. **Agency** - digitale Selbstbestimmung, Nutzerkontrollen, Wahlmöglichkeiten.
+5. **Safety** - Schutz vor Einschüchterung, Gewalt und koordinierten Angriffen.
+6. **Literacy/Research** - Medienkompetenz, unabhängige Forschung, Zugang für Forschende.
+7. **Feedback** - Frühwarnung, Evaluation, Korrektur und öffentliche Rechenschaft.
 
 Keine Schicht entscheidet, welche politische Meinung „richtig“ ist.
 
@@ -217,7 +217,7 @@ Falsch.
 
 Civic Shield ist eine WÖk-eigene **Integrations-/Designhypothese**. Seine Einzelbausteine stammen aus bestehender Rechts-, Medien-, Sicherheits-, Plattform- und Demokratieforschung.
 
-Sein Mehrwert muss daran gemessen werden, ob es bessere, grundrechtskompatible und evaluierbare Kombinationen erzeugt – nicht an einem neuen Namen.
+Sein Mehrwert muss daran gemessen werden, ob es bessere, grundrechtskompatible und evaluierbare Kombinationen erzeugt - nicht an einem neuen Namen.
 
 ## 14. Quellen
 
@@ -271,7 +271,7 @@ Und dann gibt es Frühwarnung.
 
 Aber ein Alarm darf niemals lauten: Diese Meinung wird populärer.
 
-Er muss an konkrete Funktionsrisiken gebunden sein – zum Beispiel koordinierte Einschüchterung oder massive Deepfake-Manipulation.
+Er muss an konkrete Funktionsrisiken gebunden sein - zum Beispiel koordinierte Einschüchterung oder massive Deepfake-Manipulation.
 
 Und besonders wichtig: Demokratieschutz kann selbst Nebenwirkungen haben.
 

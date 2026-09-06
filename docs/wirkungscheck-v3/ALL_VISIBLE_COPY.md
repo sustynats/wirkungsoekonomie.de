@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Freigegebene sichtbare Grundtexte
+# Wirkungscheck Bundestag V3 - Freigegebene sichtbare Grundtexte
 
 Alle variablen Modulttexte liegen in `WOHNEN_MODULE.md`, `GESUNDHEIT_MODULE.md`
 und `IMMEDIATE_FEEDBACK_RULES.md`. Sichtbare Texte verwenden keine interne
@@ -34,7 +34,7 @@ Was Sie erhalten
 - die vollständige Herleitung auf Wunsch.
 
 **Trustline**
-ca. 4–5 Minuten · keine Personenbewertung · keine Parteibewertung · keine
+ca. 4-5 Minuten · keine Personenbewertung · keine Parteibewertung · keine
 Wahlempfehlung
 
 **Primärer Button**
@@ -47,7 +47,7 @@ Beispiel ansehen
 
 Mitglieder des Bundestages entscheiden über Gesetze, Haushalte und
 Förderprogramme. Ob deren Ziel tatsächlich erreicht wird, zeigt sich jedoch
-häufig erst später – in Verwaltungen, Unternehmen, Kommunen, Schulen, Praxen
+häufig erst später - in Verwaltungen, Unternehmen, Kommunen, Schulen, Praxen
 und Haushalten.
 
 Der Wirkungscheck verbindet deshalb die bundespolitische Entscheidung mit der
@@ -83,14 +83,14 @@ dafür, ob und wie Bundespolitik regional ankommt.
 | Datenstatus: zusätzlich | Dafür braucht es passende zusätzliche Daten. |
 | Datenstatus: Lücke | Für diese Frage liegt derzeit keine ausreichend passende Wahlkreiskennzahl vor. |
 
-## Sofortreaktion – feste Überschriften
+## Sofortreaktion - feste Überschriften
 
 - Was verändert diese Auswahl zunächst?
 - Was folgt daraus noch nicht automatisch?
 - Deshalb fragen wir als Nächstes:
 - Was bedeutet diese Kombination?
 - Diese Grenze behandeln wir getrennt vom gewünschten Nutzen.
-- Was zeigen diese Daten – und was nicht?
+- Was zeigen diese Daten - und was nicht?
 
 ## Kurzreport
 
@@ -145,7 +145,7 @@ und bewerten keine Person.
 Mit WÖK-KI weiterdenken
 
 Die regelbasierte Analyse oben ist abgeschlossen. Wenn Sie möchten, kann die
-WÖK-KI Ihren Fall anschließend vertiefen – etwa durch Gegenargumente,
+WÖK-KI Ihren Fall anschließend vertiefen - etwa durch Gegenargumente,
 alternative Wirkpfade oder parlamentarische Prüffragen.
 
 **Datenschutzhinweis**

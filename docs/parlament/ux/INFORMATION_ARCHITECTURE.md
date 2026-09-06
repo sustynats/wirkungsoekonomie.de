@@ -1,4 +1,4 @@
-# Wirkungsportal Parlament — Informationsarchitektur
+# Wirkungsportal Parlament - Informationsarchitektur
 
 Stand: 2026-08-14 · Grundlage: Master-Prompt §7/§8, `docs/woek-knowledge/PARLIAMENT_REUSE_MAP.md`, `UX_ECOSYSTEM_MAP.md`.
 
@@ -34,7 +34,7 @@ Zukunftsfähig: `/europa/…` als Parallelast; alle Inhalte tragen `parliament_i
 
 - **Hauptnav (schlank, 6 Punkte)**: Anstehend · Entscheidungen · Historie · Monitor · Dialog · Methodik & Transparenz. Logo-Zeile = Portalname + Herausgeberzeile (Institut).
 - **Utility**: Suche · Modus-Schalter „Für alle / Für Parlament" · Link „Wirkungsökonomie.de" (Rückweg ins Ökosystem).
-- **Kein** Übernehmen der Website-Hauptnav — das Portal ist eine eigene Tür; Bindegewebe sind Glossar-Hover, Quellen-Drawer und Ausleitungen (Akademie/Bibliothek/Werkzeuge), nicht die Navigation.
+- **Kein** Übernehmen der Website-Hauptnav - das Portal ist eine eigene Tür; Bindegewebe sind Glossar-Hover, Quellen-Drawer und Ausleitungen (Akademie/Bibliothek/Werkzeuge), nicht die Navigation.
 - Footer: Institut (Impressum/Kontakt `wirkungscheck@wirkungsoekonomie.de`) · Transparenz-Links · Methodik · Datenschutz · keine Partei-/Kampagnenlinks.
 
 ## Die Entscheidungsseite als Dauerseite (zentrales IA-Muster)
@@ -55,7 +55,7 @@ Eine URL pro Vorgang, die den Lebenszyklus trägt (Entwurf→Beratung→Abstimmu
 
 ## Modus-Logik (Public/Parlament)
 
-Ein Schalter, ein Inhaltsbaum: Parlament-Modus blendet ZUSÄTZLICHE Blöcke ein (Drucksachen-Liste, Ausschüsse, Änderungsanträge, Prüffragen, Kurzbrief zum Kopieren, tiefere Evidenztabellen). Public-Modus zeigt Übersetzungsblöcke („Was bedeutet Ja/Nein?"). Voten, Zahlen und Quellen sind in beiden Modi identisch — der Schalter ändert Tiefe, nie Inhalt. Zustand in URL (`?modus=parlament`) für teilbare Links.
+Ein Schalter, ein Inhaltsbaum: Parlament-Modus blendet ZUSÄTZLICHE Blöcke ein (Drucksachen-Liste, Ausschüsse, Änderungsanträge, Prüffragen, Kurzbrief zum Kopieren, tiefere Evidenztabellen). Public-Modus zeigt Übersetzungsblöcke („Was bedeutet Ja/Nein?"). Voten, Zahlen und Quellen sind in beiden Modi identisch - der Schalter ändert Tiefe, nie Inhalt. Zustand in URL (`?modus=parlament`) für teilbare Links.
 
 ## Suche & Auffindbarkeit
 

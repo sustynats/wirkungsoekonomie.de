@@ -1,8 +1,8 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4410**
+- Sitemap routes: **4411**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **12216**
+- Extra tracked source HTML not in sitemap: **14473**
 - Routes with non-default #253 action: **3590**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **255**
 
@@ -19,7 +19,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/kompass.html | `kompass.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | nachhaltigkeitspruefung |
 | https://wirkungsoekonomie.de/fuer/politik.html | `fuer/politik.html` | REWRITE_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_DNS_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/evidenz/ | `evidenz/index.html` | ADD_SOURCE_LINKS | — |
-| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/datenbasis.html | `methodik/datenbasis.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/daten-standards-regularien.html | `methodik/daten-standards-regularien.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/externe-quellen.html | `methodik/externe-quellen.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
@@ -76,7 +76,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/blog/nachhaltigkeit-ist-keine-parteifarbe.html | `blog/nachhaltigkeit-ist-keine-parteifarbe.html` | NO_CHANGE_REQUIRED, CURRENT_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
 | https://wirkungsoekonomie.de/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html | `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` | BENCHMARK_REFERENCE, ADD_BENCHMARK_COMPARISON | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
 | https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/ | `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
-| https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | — |
+| https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns |
 | https://wirkungsoekonomie.de/wirkungswissenschaften/ | `wirkungswissenschaften/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/ | `wirkungsfelder/staat-recht-demokratie/index.html` | CORRECT_OVERCLAIM, ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/ | `wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/index.html` | ADD_GGO_GFA_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
@@ -3676,19 +3676,6 @@ Signals are review candidates, not automatic errors.
 - `wirkungsfelder/gesundheit-pflege/dossiers/index.html` — evaluation, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` — wirkungsblind, evaluation — No material #253 change identified by path rule; semantic scan still applies.
 - `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/index.html` — evaluation, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/us-vermittler-in-der-ukraine-trumps-schwiegersohn-doch-nicht-so-wichtig-7549bd/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-us-gesandte-werden-nach-gesprachen-im-kreml-in-kiew-erwartet-8964e4/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/inflationsrate-im-august-2026-voraussichtlich-2-9-322ccb/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `begriffe/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/affektheuristik/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/algorithmische-fairness/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3861,12 +3848,25 @@ Signals are review candidates, not automatic errors.
 - `quellenarchiv/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0465/index.html` — novelty_or_absence — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0843/index.html` — wirkungsblind — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
+- `wirkungsticker/index.html` — evaluation, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/us-vermittler-in-der-ukraine-trumps-schwiegersohn-doch-nicht-so-wichtig-7549bd/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-us-gesandte-werden-nach-gesprachen-im-kreml-in-kiew-erwartet-8964e4/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/witkoff-und-kushner-erstmals-in-kiew-erwartet-614acf/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/inflationsrate-im-august-2026-voraussichtlich-2-9-322ccb/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1159**
-- Combined matrix items (routes + extra HTML + support): **17785**
+- Tracked support text files inventoried: **1184**
+- Combined matrix items (routes + extra HTML + support): **20068**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3883,12 +3883,13 @@ Signals are review candidates, not automatic errors.
 | `assets/data/glossary-reference-index.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `assets/data/glossary-relations.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, alternativen, evaluation |
 | `assets/data/journal-pdf-manifest.json` | journal_source_or_manifest | NO_CHANGE_REQUIRED | enap |
-| `assets/data/library-source-details.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
+| `assets/data/library-source-details.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | enap, evaluation |
 | `assets/data/library-version-registry.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | enap, evaluation |
 | `assets/data/podcast-index.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind |
 | `assets/data/public-pdf-downloads.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
 | `assets/data/public-release-assets.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
 | `assets/data/publication-abstracts.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
+| `assets/data/publication-hygiene-2026-09-06.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | enap, evaluation |
 | `assets/data/sdg-reference.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, dns |
 | `assets/data/stranded-assets-parameter.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `assets/data/wirkungsradar-attention-traps.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | alternativen |
@@ -3929,6 +3930,7 @@ Signals are review candidates, not automatic errors.
 | `content/glossary/imports/klimaanpassungsmanagement.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
 | `content/glossary/imports/legacy-detail-definitions.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | alternativen |
 | `content/glossary/imports/maga-diskursformeln.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
+| `content/glossary/imports/model-and-controlling-2026-09-06.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | novelty_or_absence |
 | `content/glossary/imports/nwi-disambiguation.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
 | `content/glossary/imports/phineo-wirkungslogik.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
 | `content/glossary/imports/psychologie-und-kommunikation-definitionen.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | alternativen |
@@ -3968,7 +3970,9 @@ Signals are review candidates, not automatic errors.
 | `content/site/home-explainer.json` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/site/impact-controlling-course.json` | support_text | CORRECT_OVERCLAIM | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
 | `content/site/methodik.json` | support_text | ADD_SOURCE_LINKS | enap, egfa, dns, alternativen, evaluation |
+| `content/site/reader-section-restorations.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/site/reference-update.json` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| `content/site/state-benchmark-update-2026-09-06.json` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `content/sources/alternative-models-revival-monitor.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/sources/bibliography.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/sources/evidence-source-registry.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
@@ -4215,7 +4219,6 @@ Signals are review candidates, not automatic errors.
 | `content/studienskripte/woek-g-v34.md` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/studienskripte/woek-g-v35.md` | support_text | NO_CHANGE_REQUIRED | wirkungsblind, evaluation |
 | `content/studienskripte/woek-g-v36.md` | support_text | CORRECT_OVERCLAIM | alternativen, evaluation, novelty_or_absence |
-| `content/taxonomy/site-map.json` | support_text | CORRECT_OVERCLAIM | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
 | `content/visuals/visual-source-registry.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/visuals/woek_visual_assets_manifest.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/wirkungsradar/climate-energy.yml` | support_text | NO_CHANGE_REQUIRED | wirkungsblind, alternativen |
@@ -4407,7 +4410,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17786**
+- Combined reviewed items: **20069**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.

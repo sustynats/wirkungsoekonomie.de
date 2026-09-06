@@ -21,7 +21,7 @@ horizontale Blättern bleibt unabhängig davon erhalten.
 
 `assets/js/news-pwa.js` verwaltet Geste, Button, Status und einen gemeinsamen
 laufenden manuellen Request. Ein Live-Abruf des bestehenden JSON-Feeds prüft
-die Erreichbarkeit. Anschließend wird dieselbe URL neu geladen – auch ohne
+die Erreichbarkeit. Anschließend wird dieselbe URL neu geladen - auch ohne
 Karten auf einer Detailseite oder bei reinen Layout-/Bildänderungen. Es gibt
 keinen zusätzlichen KI-Aufruf, keine neue API und kein zusätzliches Polling.
 Auf Detailseiten werden keine globalen Nachrichten allein durch die manuelle

@@ -1,4 +1,4 @@
-# Wirkungsportal Parlament — Product Experience
+# Wirkungsportal Parlament - Product Experience
 
 Stand: 2026-08-14 · Positionierung: **Parteiunabhängige Wirkungsinfrastruktur für politische Entscheidungen**, herausgegeben vom Institut für Wirkungsökonomie (fachliche Leitung: Natalie Weber). Nie „Meta-Partei" öffentlich.
 
@@ -6,7 +6,7 @@ Stand: 2026-08-14 · Positionierung: **Parteiunabhängige Wirkungsinfrastruktur 
 
 > Vorher verstehen. Entscheidung prüfen. Nachher messen. Aus Wirkung lernen.
 
-Für jede relevante Bundestagsentscheidung beantwortet dieselbe Seite über ihren ganzen Lebenszyklus: Was wird entschieden? Was soll sich ändern? Über welchen Wirkpfad? Was wissen wir (nicht)? Wie ist es am veröffentlichten Referenzrahmen (SDGs/Agenda 2030/SDG+, Mensch–Planet–Demokratie) einzuordnen? Und später: Was ist tatsächlich eingetreten?
+Für jede relevante Bundestagsentscheidung beantwortet dieselbe Seite über ihren ganzen Lebenszyklus: Was wird entschieden? Was soll sich ändern? Über welchen Wirkpfad? Was wissen wir (nicht)? Wie ist es am veröffentlichten Referenzrahmen (SDGs/Agenda 2030/SDG+, Mensch-Planet-Demokratie) einzuordnen? Und später: Was ist tatsächlich eingetreten?
 
 ## Drei Nutzer:innen, drei Versprechen
 
@@ -16,11 +16,11 @@ Für jede relevante Bundestagsentscheidung beantwortet dieselbe Seite über ihre
 
 ## Fünf Säulen als eine Lernschleife (nicht fünf Silos)
 
-Radar (was kommt) → Wirkungscheck (was könnte es bewirken) → Dialog (was halten Parlament/Öffentlichkeit für wichtig — Präferenz, nie Wirkungsnachweis) → Historie (was wurde früher entschieden) → Monitor (was ist eingetreten) → zurück ins Radar. Die UI erzählt diese Schleife auf dem Portalstart und verlinkt sie auf jeder Entscheidungsseite („Diese Entscheidung im Lebenszyklus").
+Radar (was kommt) → Wirkungscheck (was könnte es bewirken) → Dialog (was halten Parlament/Öffentlichkeit für wichtig - Präferenz, nie Wirkungsnachweis) → Historie (was wurde früher entschieden) → Monitor (was ist eingetreten) → zurück ins Radar. Die UI erzählt diese Schleife auf dem Portalstart und verlinkt sie auf jeder Entscheidungsseite („Diese Entscheidung im Lebenszyklus").
 
 ## Vertrauensarchitektur = Produktkern (nicht Footer)
 
-Sichtbar auf jeder Analyse: Herausgeberzeile, analysierte Fassung + Stand, Methodenversion, „Warum prüfen wir dieses Vorhaben?", Empfehlungsbegründung mit Falsifizierbarkeit („Was würde das Votum ändern?"), stärkstes Gegenargument, Korrekturhistorie, Trust-Card mit Weg ins Trust-Center. Startseiten-Erklärung (Basis §25-Text): „Parteiunabhängig. Methodisch offen. Quellenbasiert. Wir bewerten keine Parteien oder Abgeordneten …" — SDG+-Disclosure inklusive.
+Sichtbar auf jeder Analyse: Herausgeberzeile, analysierte Fassung + Stand, Methodenversion, „Warum prüfen wir dieses Vorhaben?", Empfehlungsbegründung mit Falsifizierbarkeit („Was würde das Votum ändern?"), stärkstes Gegenargument, Korrekturhistorie, Trust-Card mit Weg ins Trust-Center. Startseiten-Erklärung (Basis §25-Text): „Parteiunabhängig. Methodisch offen. Quellenbasiert. Wir bewerten keine Parteien oder Abgeordneten …" - SDG+-Disclosure inklusive.
 
 ## Harte Produktgrenzen (UI erzwingt sie)
 
@@ -32,4 +32,4 @@ Wirkungslogik tragfähig · unter Bedingungen tragfähig · Begrenzte Erprobung 
 
 ## Erfolgskriterien (Definition of Done §75 als UX-Testfragen)
 
-Ein kritischer Erstnutzer kann ohne Hilfe die 20 Fragen beantworten (Was steht zur Entscheidung? Welche Fassung? Fakten vs. Annahmen? Warum diese Empfehlung? Was würde sie ändern? …). Jede Frage hat einen festen Ort im Layout — das Review prüft Frage für Frage gegen den Prototyp.
+Ein kritischer Erstnutzer kann ohne Hilfe die 20 Fragen beantworten (Was steht zur Entscheidung? Welche Fassung? Fakten vs. Annahmen? Warum diese Empfehlung? Was würde sie ändern? …). Jede Frage hat einen festen Ort im Layout - das Review prüft Frage für Frage gegen den Prototyp.

@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v73-produkte-als-wirkungstraeger.md curriculum=4.0 sanitized=true -->
-# V73 · Produkte als Wirkungsträger – vom Produktmerkmal zum Lebenszyklus-Outcomes
+# V73 · Produkte als Wirkungsträger - vom Produktmerkmal zum Lebenszyklus-Outcomes
 
 **lecture_id:** `WOEK-G-BASE-073`  
 **display_code:** `V73`  
@@ -81,7 +81,7 @@ Mindestens:
 
 WÖk nutzt LCA-/Produktdaten als Inputs, ergänzt Arbeit/Gesundheit/Sicherheit/Distribution/Resilienz.
 
-## 5. Nutzung dominiert manchmal – manchmal nicht
+## 5. Nutzung dominiert manchmal - manchmal nicht
 
 Beispiele:
 
@@ -207,7 +207,7 @@ Ein Produkt ist nicht einfach gut oder schlecht.
 
 Es wirkt über seinen Lebenszyklus und darüber, wie Menschen es nutzen.
 
-Ein Elektroauto kann ein Dieselauto ersetzen – oder ein Fahrrad. Das macht für die Netto-Wirkung einen riesigen Unterschied.
+Ein Elektroauto kann ein Dieselauto ersetzen - oder ein Fahrrad. Das macht für die Netto-Wirkung einen riesigen Unterschied.
 
 Darum brauchen wir eine funktionale Einheit und eine echte Vergleichsoption.
 

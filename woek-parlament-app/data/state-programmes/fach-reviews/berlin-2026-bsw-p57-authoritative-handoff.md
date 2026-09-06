@@ -1,4 +1,4 @@
-## WÖk FACH BATCH — Berlin BSW physical PDF page 57 complete source-bound review + U09-A05 segmentation repair
+## WÖk FACH BATCH - Berlin BSW physical PDF page 57 complete source-bound review + U09-A05 segmentation repair
 
 Authoritative continuation after P56 `5458013046`. Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P57/66. P57-U01 is **already fully consumed** by the mandatory P56→P57 biodiversity fragment repair in `5458013046` and remains versioned zero-count. Fresh P57 inventory after that pre-consumption: structural/context units U02/U05/U06/U08 plus 19 frozen atom IDs in U03/U04/U07/U09. Generic delegated RNAA from the old ledger is not Fach authority and is superseded below. No DNS mapping, Recommendation, score or party-wide judgement is created.
 
@@ -11,23 +11,23 @@ Authoritative continuation after P56 `5458013046`. Frozen artifact unchanged: `B
 5. **Sustainability/environmental learning is also not absent from Berlin schools.** `Nachhaltige Entwicklung/Lernen in globalen Zusammenhängen` is already an overarching curricular theme, with Berlin materials and curricular pathways existing for years. Reference: https://www.berlin.de/sen/bildung/unterricht/faecher-rahmenlehrplaene/faecheruebergreifende-themen/globale-entwicklung/ . Thus P57's `Rückkehr` wording is a political/source claim; the assessable delta is stronger/formal regular curricular embedding from grade 1, if actually specified and implemented.
 6. **Tenant protection is a hard non-compensation boundary.** Energy/lifecycle gains cannot be netted against displacement or severe affordability harm. Conversely, affordability protection does not make an ineffective or environmentally harmful retrofit automatically positive. Evaluate both dimensions separately.
 
-### A. U02 / U03 — Bauwende goals
+### A. U02 / U03 - Bauwende goals
 
-`BE-BSW-P57-U02-5651286130a6` — heading `Bauwende und sozialer Umweltschutz`.
+`BE-BSW-P57-U02-5651286130a6` - heading `Bauwende und sozialer Umweltschutz`.
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 - zero-count structural heading.
 
-`BE-BSW-P57-U03-A01-b6de5f05466b` — `Berlin kann bezahlbar, klimaneutral und nachhaltig bauen.`
+`BE-BSW-P57-U03-A01-b6de5f05466b` - `Berlin kann bezahlbar, klimaneutral und nachhaltig bauen.`
 - `terminal_fach_state = NON_EFFECT_MULTI_GOAL_END_STATE_REVIEWED`
 - Exact reason: affordability, climate-neutrality and sustainability are desired outcome dimensions, not an independent instrument. Preserve them separately; do not infer that one compensates another or that `klimaneutral` follows from a construction label.
 
-`BE-BSW-P57-U03-A02-a613e111c285` — `Wir setzen uns für eine grundlegende Bauwende ein.`
+`BE-BSW-P57-U03-A02-a613e111c285` - `Wir setzen uns für eine grundlegende Bauwende ein.`
 - `terminal_fach_state = NON_EFFECT_BROAD_TRANSFORMATION_GOAL_REVIEWED`
 - Exact reason: broad transformation frame without a distinct legal/funding/procurement/planning lever in this atom. Concrete P57-U04 measures carry the effect assessment.
 
-### B. U04 — ecological modular construction / biobased-material research / regional production
+### B. U04 - ecological modular construction / biobased-material research / regional production
 
-#### `BE-BSW-P57-U04-A01-26c8db02d668` — Land funding programme for ecological modular construction, especially social/municipal housing
+#### `BE-BSW-P57-U04-A01-26c8db02d668` - Land funding programme for ecological modular construction, especially social/municipal housing
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_LOW_CARBON_RESOURCE_EFFICIENT_AND_DELIVERY_STANDARDISATION_POTENTIAL / LIFECYCLE_AFFORDABILITY_AND_ADDITIONALITY_DEPENDENT`
@@ -40,7 +40,7 @@ Authoritative continuation after P56 `5458013046`. Frozen artifact unchanged: `B
 - Noncompensation: faster/cheaper construction does not compensate unsafe, poor-quality or materially higher lifecycle impact; lower lifecycle emissions do not compensate displacement/unaffordable rents or deficient housing quality.
 - Reality check: delivered dwellings and time/cost versus comparator; whole-life GHG/material footprint; construction waste/reuse; defects/quality; operating energy; rent/total housing cost; maintenance/replacement and provider diversity. Funding volume/modular-unit count alone = input/output.
 
-#### `BE-BSW-P57-U04-A02-cf7ab731924d` — research funding for biobased construction materials
+#### `BE-BSW-P57-U04-A02-cf7ab731924d` - research funding for biobased construction materials
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_MATERIAL_INNOVATION_AND_SUBSTITUTION_POTENTIAL / FEEDSTOCK_LIFECYCLE_AND_SCALE_DEPENDENT`
@@ -51,59 +51,59 @@ Authoritative continuation after P56 `5458013046`. Frozen artifact unchanged: `B
 - Boundary: `biobased` is not equivalent to climate-neutral/circular; count full lifecycle and counterfactual material.
 - Reality check: validated material performance/LCA, certification/readiness, durable substitution in real projects, feedstock impacts, cost and end-of-life; papers/patents/grants alone are not environmental outcome.
 
-`BE-BSW-P57-U04-A03-99ff8419a303` — `Regionale Produktion durch Genossenschaften, Handwerksbetriebe und Start-ups – für lokale Arbeitsplätze und Wertschöpfung.`
+`BE-BSW-P57-U04-A03-99ff8419a303` - `Regionale Produktion durch Genossenschaften, Handwerksbetriebe und Start-ups - für lokale Arbeitsplätze und Wertschöpfung.`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: the atom defines a preferred producer geography/actor mix and expected jobs/value-added, but no independent procurement preference, funding instrument, land/cluster policy, quota, eligibility rule or other delivery lever. It also provides no additionality/counterfactual for local jobs or lifecycle/import boundary. Preserve as desired industrial/distributional outcome/rationale linked to U04-A01/A02; do not infer `regional = environmentally positive` or a separate effect.
 
-### C. U05 — construction-emissions rationale
+### C. U05 - construction-emissions rationale
 
-`BE-BSW-P57-U05-0b29878d67cf` — broad `almost 40% CO₂` / Bauwende rationale.
+`BE-BSW-P57-U05-0b29878d67cf` - broad `almost 40% CO₂` / Bauwende rationale.
 - `terminal_fach_state = NON_EFFECT_SOURCE_CLAIM_AND_SYSTEM_RATIONALE_REVIEWED_WITH_BOUNDARY_GUARD`
 - Exact reason: no new intervention. Preserve the broad building-system climate/resource relevance, but version the exact `40%` claim by system boundary; do not render it as direct construction-sector emissions or as proof of the P57 instruments' outcomes.
 
-### D. U06 / U07 — social/environmental framing and hard safeguards
+### D. U06 / U07 - social/environmental framing and hard safeguards
 
-`BE-BSW-P57-U06-583dd7066b3f` — heading `Umweltschutz mit Augenmaß und sozialer Vernunft`.
+`BE-BSW-P57-U06-583dd7066b3f` - heading `Umweltschutz mit Augenmaß und sozialer Vernunft`.
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 
-`BE-BSW-P57-U07-A01-38fd230e452f` — environmental protection must not cause social division.
+`BE-BSW-P57-U07-A01-38fd230e452f` - environmental protection must not cause social division.
 - `terminal_fach_state = NON_EFFECT_DISTRIBUTIONAL_NONCOMPENSATION_GUARD_REVIEWED`
 - Preserve as an equity guard requiring incidence by income/tenure/district and protected groups; it is not itself an intervention.
 
-`BE-BSW-P57-U07-A02-7852c9aca530` — energy retrofits must not lead to tenant displacement.
+`BE-BSW-P57-U07-A02-7852c9aca530` - energy retrofits must not lead to tenant displacement.
 - `terminal_fach_state = NON_EFFECT_TENANT_AFFORDABILITY_AND_ANTI_DISPLACEMENT_GUARD_REVIEWED`
 - Preserve as a hard distributional/noncompensation test for retrofit policies. Actual rent, subsidy, modernisation-cost, social-housing or tenant-law instruments must be reviewed separately.
 
-`BE-BSW-P57-U07-A03-99af9f1c6d75` — `Umweltschutz braucht keinen Zwang, sondern Akzeptanz und Mitmachen.`
+`BE-BSW-P57-U07-A03-99af9f1c6d75` - `Umweltschutz braucht keinen Zwang, sondern Akzeptanz und Mitmachen.`
 - `terminal_fach_state = NON_EFFECT_GOVERNANCE_AND_ACCEPTANCE_PRINCIPLE_REVIEWED`
 - Exact reason: broad policy-design principle; no defined participation/incentive/regulatory alternative. Do not treat voluntary design as automatically more effective or legitimate than regulation; evaluate instrument-specific outcomes.
 
-`BE-BSW-P57-U07-A04-4177859d42b2` — clean/green city as basis for quality of life/health/community.
+`BE-BSW-P57-U07-A04-4177859d42b2` - clean/green city as basis for quality of life/health/community.
 - `terminal_fach_state = NON_EFFECT_EXPECTED_MULTI_OUTCOME_RATIONALE_REVIEWED`
 - Source causal frame; no independent intervention and no causal magnitude accepted.
 
-`BE-BSW-P57-U07-A05-c4db0579a7f0` — clean streets/cared-for trees/lively parks → trust in politics/city.
+`BE-BSW-P57-U07-A05-c4db0579a7f0` - clean streets/cared-for trees/lively parks → trust in politics/city.
 - `terminal_fach_state = NON_EFFECT_CAUSAL_TRUST_OUTCOME_CLAIM_REVIEWED`
 - Exact reason: this is a causal/political-outcome assertion. Public-space condition may correlate with perceived state capacity, but this source does not establish attribution or effect size. Do not render maintenance as proven cause of political trust.
 
-`BE-BSW-P57-U07-A06-2dd62ed45722` — policy should consider people before new rules.
+`BE-BSW-P57-U07-A06-2dd62ed45722` - policy should consider people before new rules.
 - `terminal_fach_state = NON_EFFECT_NORMATIVE_POLICY_DESIGN_FRAME_REVIEWED`
 - Preserve as framing, not as an effect object or evidence against/for specific regulation.
 
-### E. U08 / U09 — environmental education
+### E. U08 / U09 - environmental education
 
-`BE-BSW-P57-U08-c901f1e855e1` — heading `Umweltbildung – Wissen, das Zukunft schafft`.
+`BE-BSW-P57-U08-c901f1e855e1` - heading `Umweltbildung - Wissen, das Zukunft schafft`.
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 
-`BE-BSW-P57-U09-A01-6ddb4afbc3e5` — environmental education strengthens mindfulness, health and responsibility.
+`BE-BSW-P57-U09-A01-6ddb4afbc3e5` - environmental education strengthens mindfulness, health and responsibility.
 - `terminal_fach_state = NON_EFFECT_EXPECTED_EDUCATIONAL_AND_HEALTH_OUTCOME_CLAIM_REVIEWED`
 - Exact reason: broad causal outcome claim, not a separate intervention; health/behaviour effects require independent outcome evidence.
 
-`BE-BSW-P57-U09-A02-0e30ef21b357` — nature experience/understanding leads to protection.
+`BE-BSW-P57-U09-A02-0e30ef21b357` - nature experience/understanding leads to protection.
 - `terminal_fach_state = NON_EFFECT_BEHAVIOURAL_CAUSAL_RATIONALE_REVIEWED`
 - Exact reason: motivational/behavioural causal claim. Preserve as rationale; do not equate participation/knowledge with observed protective behaviour.
 
-#### `BE-BSW-P57-U09-A03-c13cc150ad48` — fund environmental-education institutions/initiatives and learning sites
+#### `BE-BSW-P57-U09-A03-c13cc150ad48` - fund environmental-education institutions/initiatives and learning sites
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_ENVIRONMENTAL_LEARNING_ACCESS_AND_INSTITUTIONAL_CAPACITY_POTENTIAL / ADDITIONALITY_REACH_AND_EDUCATIONAL_QUALITY_DEPENDENT`
@@ -115,7 +115,7 @@ Authoritative continuation after P56 `5458013046`. Frozen artifact unchanged: `B
 - Boundary: visits/events/grants = outputs, not ecological protection or health outcomes.
 - Reality check: additional capacity and continuity, reach/diversity, learning outcomes, repeat/transfer, provider stability and cost; any later environmental behaviour/outcome separately observed.
 
-`BE-BSW-P57-U09-A04-0d345a906026` — reliable structures and long-term financing.
+`BE-BSW-P57-U09-A04-0d345a906026` - reliable structures and long-term financing.
 - `terminal_fach_state = NON_EFFECT_DELIVERY_AND_FINANCING_GUARD_REVIEWED`
 - Exact reason: resource/delivery condition for the environmental-education portfolio; no separate funding amount/rule or additional intervention beyond the following/preceding funding proposals.
 
@@ -139,7 +139,7 @@ Preserve the original A05 ID/text/hash as a versioned **zero-count parent** and 
 - Risks: locking in weak providers, reduced contestability/innovation, fiscal rigidity, unequal district/provider access, funding without outcome quality.
 - Reality check: funding horizon/volatility, staff retention, programme continuity, access/reach and educational quality; budget security alone is not environmental outcome.
 
-#### `BE-BSW-P57-U09-A06-ec9c52b5be06` — stronger regular curricular environmental education from grade 1
+#### `BE-BSW-P57-U09-A06-ec9c52b5be06` - stronger regular curricular environmental education from grade 1
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_EARLY_AND_CONTINUOUS_SUSTAINABILITY_LEARNING_POTENTIAL / CURRICULUM_DESIGN_TEACHER_CAPACITY_AND_ADDITIONALITY_DEPENDENT`
@@ -150,7 +150,7 @@ Preserve the original A05 ID/text/hash as a versioned **zero-count parent** and 
 - Noncompensation: environmental-policy messaging must not replace open inquiry/scientific quality; curriculum volume alone does not prove learning or behaviour.
 - Reality check: actual curriculum delta, teacher readiness, classroom implementation, knowledge/competence measures, participation disparities and longitudinal transfer.
 
-#### `BE-BSW-P57-U09-A07-8ac037ec7699` — strengthen environmental-education network through conferences/cooperation/exchange
+#### `BE-BSW-P57-U09-A07-8ac037ec7699` - strengthen environmental-education network through conferences/cooperation/exchange
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_COORDINATION_KNOWLEDGE_SHARING_AND_PROVIDER_NETWORK_POTENTIAL / ADDITIONALITY_AND_FOLLOW_THROUGH_DEPENDENT`
@@ -159,7 +159,7 @@ Preserve the original A05 ID/text/hash as a versioned **zero-count parent** and 
 - Risks: meeting/activity inflation, insider network, admin burden, weak translation into provision.
 - Reality check: shared resources/referrals, reduced gaps/duplication, provider reach, implementation of jointly learned practices; event count is output.
 
-#### `BE-BSW-P57-U09-A08-297f29aacf7a` — use/expand freely available identification and learning apps
+#### `BE-BSW-P57-U09-A08-297f29aacf7a` - use/expand freely available identification and learning apps
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_LOW_BARRIER_DIGITAL_ENVIRONMENTAL_LEARNING_ACCESS_POTENTIAL / QUALITY_ACCESSIBILITY_AND_USAGE_DEPENDENT`
@@ -184,7 +184,7 @@ After the P56→P57 pre-consumption and the U09-A05 deterministic two-child repa
 
 `BE_BSW_P57_FACH_COMPLETE = PASS_SOURCE_BOUND_AFTER_P56_FRAGMENT_AND_U09_A05_REPAIR`
 
-After lossless materialisation, protected BSW physical Fach scope becomes **P1–P57** and the untouched physical Fach envelope becomes **P58–P66 = 9 pages**, unless a newer authoritative #240 handoff closes a subset before CodeX consumes this batch. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open` until the true nine-programme residual is zero.
+After lossless materialisation, protected BSW physical Fach scope becomes **P1-P57** and the untouched physical Fach envelope becomes **P58-P66 = 9 pages**, unless a newer authoritative #240 handoff closes a subset before CodeX consumes this batch. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open` until the true nine-programme residual is zero.
 
 ### CodeX boundary
 

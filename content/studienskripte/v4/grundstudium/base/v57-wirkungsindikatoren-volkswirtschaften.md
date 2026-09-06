@@ -32,7 +32,7 @@ Eine Volkswirtschaft ist gleichzeitig Produktions-, Einkommens-, Infrastruktur-,
 
 Darum gilt:
 
-> **Makro-Wirkung braucht ein mehrdimensionales Dashboard – nicht die Suche nach einer einzigen magischen Kennzahl.**
+> **Makro-Wirkung braucht ein mehrdimensionales Dashboard - nicht die Suche nach einer einzigen magischen Kennzahl.**
 
 ## 2. BIP / VGR: wichtige Aktivitätsmessung
 
@@ -46,7 +46,7 @@ Sie sagen aber nicht automatisch:
 - ob Infrastruktur resilient ist,
 - ob Aktivität nur Schäden repariert.
 
-BIP ist deshalb wichtig – aber nicht hinreichend als Wohlstands- oder Wirkungsmaß.
+BIP ist deshalb wichtig - aber nicht hinreichend als Wohlstands- oder Wirkungsmaß.
 
 ## 3. DNS-Indikatoren
 
@@ -194,15 +194,15 @@ So wird sichtbar, ob kurzfristige Krisenreaktion langfristige Resilienz erhöht 
 
 ## 14. Typische Fehlinterpretationen
 
-**„Das BIP muss abgeschafft werden.“** – Falsch. Es bleibt eine wichtige Aktivitätskennzahl.
+**„Das BIP muss abgeschafft werden.“** - Falsch. Es bleibt eine wichtige Aktivitätskennzahl.
 
-**„82 DNS-Indikatoren sind 82 politische Wirkungen.“** – Falsch.
+**„82 DNS-Indikatoren sind 82 politische Wirkungen.“** - Falsch.
 
-**„Ein Dashboard braucht am Ende eine Gesamtnote.“** – Nein.
+**„Ein Dashboard braucht am Ende eine Gesamtnote.“** - Nein.
 
-**„NWI ist in der WÖk der Netto-Wirkungs-Index.“** – Für öffentliche v4-Lehre falsch. `NWI` ist der Nationale Wohlfahrtsindex.
+**„NWI ist in der WÖk der Netto-Wirkungs-Index.“** - Für öffentliche v4-Lehre falsch. `NWI` ist der Nationale Wohlfahrtsindex.
 
-**„Ein positiver Makrotrend beweist Regierungserfolg.“** – Falsch; Attribution fehlt.
+**„Ein positiver Makrotrend beweist Regierungserfolg.“** - Falsch; Attribution fehlt.
 
 ## 15. WÖk-Abgrenzung
 
@@ -236,7 +236,7 @@ Prüfungsfähig sind BIP-vs.-Wohlstand, DNS-/SDG-Monitoring, Nationaler Wohlfahr
 
 ## 20. Sprechertext
 
-Wenn wir über Wohlstand sprechen, suchen wir gern nach einer Zahl. Das BIP ist dafür sehr bekannt. Es misst wirtschaftliche Aktivität – und das ist wichtig. Aber eine Volkswirtschaft kann gleichzeitig wachsen und trotzdem Bodenfruchtbarkeit verlieren, Menschen ungleich belasten oder kritische Infrastruktur fragiler machen.
+Wenn wir über Wohlstand sprechen, suchen wir gern nach einer Zahl. Das BIP ist dafür sehr bekannt. Es misst wirtschaftliche Aktivität - und das ist wichtig. Aber eine Volkswirtschaft kann gleichzeitig wachsen und trotzdem Bodenfruchtbarkeit verlieren, Menschen ungleich belasten oder kritische Infrastruktur fragiler machen.
 
 Darum schauen wir auf mehrere Ebenen: DNS-Indikatoren, europäische und globale SDG-Daten, Wohlfahrtsmaße, Verteilung und Resilienz.
 

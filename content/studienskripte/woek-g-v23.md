@@ -5,9 +5,7 @@
 **Vorlesungscode:** V23  
 **Modul/Abschnitt:** G2.4  
 **Titel:** Unsicherheit, Ambivalenz und transparente Bewertung  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v23-unsicherheit-ambivalenz-transparente-bewertung.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v23.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v23.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Unsicherheit, Ambivalenz und transparente Bewertung** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V22 „Wirkungssprache und Quellenklarheit"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Was tun wir, wenn Wirkung weder eindeutig gut noch eindeutig schlecht ist? Wirku
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Ambivalenz aushalten – transparent bewerten
+- **Titel:** Ambivalenz aushalten - transparent bewerten
 - **Länge:** ~14 Min
 - **Kernaussage in einem Satz:** Transparente Bewertung trennt Daten, Annahmen, Zielkonflikte und Unsicherheit, statt Ambivalenz in Scheinsicherheit zu verwandeln.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Wirkung ist oft gemischt.** Eine Maßnahme kann Klima entlasten und soziale Belastungen erzeugen. Ambivalenz ist kein Fehler, sondern ein typischer Befund.
+**Abschnitt A - Wirkung ist oft gemischt.** Eine Maßnahme kann Klima entlasten und soziale Belastungen erzeugen. Ambivalenz ist kein Fehler, sondern ein typischer Befund.
 
-**Abschnitt B – Unsicherheit benennen.** Daten können fehlen, ungenau, veraltet oder modelliert sein. Das muss in der Bewertung sichtbar werden.
+**Abschnitt B - Unsicherheit benennen.** Daten können fehlen, ungenau, veraltet oder modelliert sein. Das muss in der Bewertung sichtbar werden.
 
-**Abschnitt C – Zielkonflikte strukturieren.** Mensch, Planet und Demokratie dürfen nicht gegeneinander unsichtbar verrechnet werden. Konflikte müssen beschrieben und begründet entschieden werden.
+**Abschnitt C - Zielkonflikte strukturieren.** Mensch, Planet und Demokratie dürfen nicht gegeneinander unsichtbar verrechnet werden. Konflikte müssen beschrieben und begründet entschieden werden.
 
-**Abschnitt D – Transparenz statt Neutralisierung.** Transparente Bewertung zeigt, wo die Aussage stark ist und wo sie begrenzt bleibt.
+**Abschnitt D - Transparenz statt Neutralisierung.** Transparente Bewertung zeigt, wo die Aussage stark ist und wo sie begrenzt bleibt.
 
-**Abschnitt E – Entscheidungsfähigkeit.** Unsicherheit verhindert nicht jede Entscheidung. Sie verlangt angemessene Vorsicht, Rückkopplung und Lernschleifen.
+**Abschnitt E - Entscheidungsfähigkeit.** Unsicherheit verhindert nicht jede Entscheidung. Sie verlangt angemessene Vorsicht, Rückkopplung und Lernschleifen.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -130,7 +126,6 @@ Beschreibe eine ambivalente Maßnahme in vier Spalten: positive Wirkungen, negat
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -264,12 +259,11 @@ Die folgende Runde verdichtet V23 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V23. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Messung, Bewertung, Rückkopplung
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Messung, Bewertung, Rückkopplung
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/zielkonflikt`, `begriffe/datenqualitaet`, `begriffe/nichtkompensation`
 
@@ -362,7 +356,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 2
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -851,8 +844,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v23-unsicherheit-ambivalenz-transparente-bewertung.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

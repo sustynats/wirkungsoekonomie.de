@@ -97,7 +97,7 @@ WÖk ist eine **lernende Entscheidungsarchitektur**, keine perfekte Maschine.
 
 ## 6. Keine Personenbewertung
 
-Bewertet werden Handlungen, Produkte, Entscheidungen, Strukturen und beobachtbare Folgen – nicht der Wert eines Menschen.
+Bewertet werden Handlungen, Produkte, Entscheidungen, Strukturen und beobachtbare Folgen - nicht der Wert eines Menschen.
 
 WÖk-IDs sind keine Social-Credit-IDs. Ein Score für ein Produkt oder eine konkrete Entscheidung darf nicht in eine moralische Gesamtpunktzahl einer Person umgedeutet werden.
 
@@ -128,11 +128,11 @@ Der Reality Check könnte zeigen: Der angenommene Engpass war nicht Formularzahl
 
 ## Typische Fehlinterpretationen
 
-- „Monitoring = Wirkungsnachweis.“ – Falsch.
-- „Wenn die Empfehlung später falsch war, war die Analyse wertlos.“ – Falsch; entscheidend ist, ob Unsicherheit und Recheck sauber angelegt waren.
-- „WÖk bewertet Menschen.“ – Falsch.
-- „WÖk will Sprache verbieten.“ – Falsch; Kommunikationswirkungen werden analysiert, Rechte und demokratische Legitimation bleiben eigenständig.
-- „KI kann die Bewertung objektiv entscheiden.“ – Falsch; Modelle sind versionierte Werkzeuge.
+- „Monitoring = Wirkungsnachweis.“ - Falsch.
+- „Wenn die Empfehlung später falsch war, war die Analyse wertlos.“ - Falsch; entscheidend ist, ob Unsicherheit und Recheck sauber angelegt waren.
+- „WÖk bewertet Menschen.“ - Falsch.
+- „WÖk will Sprache verbieten.“ - Falsch; Kommunikationswirkungen werden analysiert, Rechte und demokratische Legitimation bleiben eigenständig.
+- „KI kann die Bewertung objektiv entscheiden.“ - Falsch; Modelle sind versionierte Werkzeuge.
 
 ## WÖk-Abgrenzung
 

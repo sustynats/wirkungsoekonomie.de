@@ -1,11 +1,11 @@
 # Verständlicher Einstieg und Impact Controlling
 
-Arbeitsstand: 6. September 2026. Fortsetzung des Gesamtseitenreviews vom 5. September. Aktives, intaktes Repository: `/Users/hagen/Codex-Repositories/wirkungsoekonomie.de`.
+Arbeitsstand: 6. September 2026. Fortsetzung des Gesamtseitenreviews vom 5. September. Aktives, intaktes Repository: `[lokales Arbeitsverzeichnis]/Codex-Repositories/wirkungsoekonomie.de`.
 
 ## Fachlicher und redaktioneller Umfang
 
 - Startseite: eine Definition, ein Küchenbeispiel, drei Lernschritte und drei Hauptpfade. Bestehende staatliche Prüfarchitektur, Fachquellen, Videos, Veröffentlichungen und persönliche Funktionen bleiben gezielt erreichbar.
-- Impact Controlling: gemeinsames, vollständig erfundenes Beispiel einer Schulküche. Problem- und Zielprüfung, Alternativen, Systemgrenze, Vergleich, Wirkungen 1.–3. Ordnung, Verteilung, Nichtkompensation, Reverse Merit Order und verantwortliche Lernschleife.
+- Impact Controlling: gemeinsames, vollständig erfundenes Beispiel einer Schulküche. Problem- und Zielprüfung, Alternativen, Systemgrenze, Vergleich, Wirkungen 1.-3. Ordnung, Verteilung, Nichtkompensation, Reverse Merit Order und verantwortliche Lernschleife.
 - 14 Kenn- und Prüfgrößen mit Rolle, Frage, Formel, Variablen, eingesetzten Werten, Ergebnis, Interpretation, Erhebungsweise und Grenzen. Leistungszahlen, beobachtete Zustände, kausale Schätzungen, Hochrechnungen, Geldquoten und Profilwerte sind getrennt. Dies ist keine universelle KII-Liste und keine Validierung der 621 Register-IDs.
 - Mengenrechnung: 40 kg beobachteter Rückgang minus 10 kg Veränderung im Vergleich ergeben bedingt 30 kg zusätzlichen Unterschied. Hochrechnung bei 180 Tagen: 5.400 kg, ausdrücklich kein gemessener Jahresbefund.
 - Fachrechnung: gleiche bereinigte Mengenbasis, keine doppelte Gegenfaktik, IOI/T-SROI 1,83 unter offengelegten Modellannahmen und eigener Schutzprüfung. Kein unbelegter Transformationsaufschlag. Datenqualität 0,8 und Profilwerte sind gesetzte Lernannahmen. WÖk-Netto-Wirkungsindex ist vom Nationalen Wohlfahrtsindex getrennt.
@@ -24,7 +24,7 @@ Primärquellen: UN SDG 12.3, World Bank zur Differenz-von-Differenzen und den Gr
 
 21 Regressionsprüfungen für Browser-Suchindex, öffentliche Normalisierung, Publikationshinweise und Mengen-/Geldrechnung bestanden. Browserprüfungen decken Schritte, Eingabefehler, Null-/Negativlogik, Zurücksetzen, Fachrechnung, Schutz-Gate, mobile Breite und Direktlinks ab. Beide PDF-Ausgaben wurden vollständig gerendert und visuell geprüft.
 
-Der vollständige Build wird mit den bestehenden Qualitätsgates ausgeführt. Zwei dabei gefundene Integrationsprobleme wurden behoben: Die alte staatliche Projektion erwartete einen ersetzten Startseitensatz; die NWI-Prüfung erfasste eine lokale Prüfkopie unter `outputs` als Quellseiten. Die neue Homepage behält die staatlichen Fachblöcke. Lokale Outputs sind aus der NWI-Projektion ausgeschlossen; die ältere Prüfkopie wurde verlustfrei nach `/Users/hagen/Codex-Repositories/_artifacts/wirkungsoekonomie-checkpoint-2026-09-05` verschoben.
+Der vollständige Build wird mit den bestehenden Qualitätsgates ausgeführt. Zwei dabei gefundene Integrationsprobleme wurden behoben: Die alte staatliche Projektion erwartete einen ersetzten Startseitensatz; die NWI-Prüfung erfasste eine lokale Prüfkopie unter `outputs` als Quellseiten. Die neue Homepage behält die staatlichen Fachblöcke. Lokale Outputs sind aus der NWI-Projektion ausgeschlossen; die ältere Prüfkopie wurde verlustfrei nach `[lokales Arbeitsverzeichnis]/Codex-Repositories/_artifacts/wirkungsoekonomie-checkpoint-2026-09-05` verschoben.
 
 Eine automatisierte Prüfung aller öffentlichen Seiten ersetzt keine wissenschaftliche Einzelbegutachtung jedes historischen Buchkapitels, PDFs oder Registergegenstands. Das verbleibende redaktionelle Register aus dem vorherigen Review wird weitergeführt. Keine Dropbox-Archivierung, keine Löschung historischer Werke und keine Serverbereinigung wurden vorgenommen. Keine Vercel-Builds oder zusätzlichen Hostingkosten.
 

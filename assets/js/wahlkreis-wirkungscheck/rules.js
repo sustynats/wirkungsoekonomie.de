@@ -138,7 +138,7 @@
     gesundheit: {
       subject: "verlässliche gesundheitliche und pflegerische Versorgung",
       affected: "Menschen profitieren erst, wenn sie eine fachlich passende Versorgung rechtzeitig erreichen und die Übergänge zwischen Angeboten funktionieren.",
-      local: "Im Wahlkreis wäre die Versorgung entlang eines konkreten Wegs sichtbar zu machen: Termin, Erreichbarkeit, Übergabe und Kontinuität – nicht nur die Zahl finanzierter Leistungen.",
+      local: "Im Wahlkreis wäre die Versorgung entlang eines konkreten Wegs sichtbar zu machen: Termin, Erreichbarkeit, Übergabe und Kontinuität - nicht nur die Zahl finanzierter Leistungen.",
       roles: {
         bund_recht: "Der Bund würde Zugangs-, Qualitäts- oder Übergabestandards verändern. Direkt zu prüfen ist, ob diese Standards die Versorgungskette schließen oder zusätzliche Dokumentations- und Zugangshürden schaffen.",
         bund_finanzierung: "Der Bund würde Vergütung oder Finanzierung von Versorgung verändern. Direkt zu prüfen ist, ob die Anreize die knappe Leistung tatsächlich dort verfügbar machen, wo Menschen sie benötigen.",
@@ -233,7 +233,7 @@
     klima: {
       subject: "Schutz vor Klimafolgen und Vorsorge",
       affected: "Wirkung liegt vor, wenn konkrete Risiken für Menschen, Natur und Infrastruktur sinken und Schäden nicht nur räumlich oder zeitlich verlagert werden.",
-      local: "Im Wahlkreis wäre sichtbar zu machen, ob Exposition, Schutz und Verwundbarkeit tatsächlich sinken – getrennt nach betroffenen Orten und Gruppen.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob Exposition, Schutz und Verwundbarkeit tatsächlich sinken - getrennt nach betroffenen Orten und Gruppen.",
       roles: {
         bund_recht: "Der Bund würde Schutz-, Vorsorge- oder Planungsstandards verändern. Direkt zu prüfen ist, welche Risiken verbindlich berücksichtigt werden und welche Zielkonflikte vor Ort entstehen.",
         bund_finanzierung: "Der Bund würde Anreize oder Finanzierung für Vorsorge verändern. Direkt zu prüfen ist, ob Mittel die größte verbleibende Verwundbarkeit erreichen und zusätzliche Schäden vermeiden.",
@@ -263,7 +263,7 @@
     staat: {
       subject: "einen handlungsfähigen, rechtsstaatlichen Vollzug",
       affected: "Wirkung liegt vor, wenn Menschen und Organisationen ihr Anliegen zuverlässig, nachvollziehbar und mit Rechtsschutz bearbeiten lassen können.",
-      local: "Im Wahlkreis wäre sichtbar zu machen, ob Verfahren tatsächlich schneller, verständlicher und zugänglicher werden – ohne Verlagerung ungedeckter Aufgaben.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob Verfahren tatsächlich schneller, verständlicher und zugänglicher werden - ohne Verlagerung ungedeckter Aufgaben.",
       roles: {
         bund_recht: "Der Bund würde Zuständigkeiten, Anspruchsregeln oder Verfahrensstandards verändern. Direkt zu prüfen ist, ob sie Entscheidungen vereinfachen oder neue Prüf- und Nachweispflichten erzeugen.",
         bund_finanzierung: "Der Bund würde Finanzierung oder Anreize für Verwaltungsfähigkeit verändern. Direkt zu prüfen ist, ob Mittel an einen konkreten Vollzugsengpass gebunden sind und dauerhafte Folgekosten abdecken.",
@@ -308,7 +308,7 @@
       federalReadout: "Teilnahme nach Ausgangslage, Wartelisten, Abbrüche, Übergänge und Qualitätsbedingungen",
       localReadout: "Platzsuche, tatsächliche Teilnahme, Personalverfügbarkeit, Übergänge und Zugang für Familien mit höherem Unterstützungsbedarf",
       correctionTrigger: "Erhöht sich die Zahl der Plätze oder Programme ohne Teilnahme, verlässliche Qualität oder gelingende Übergänge, müssen Personal, Zugang oder Qualitätsvorgaben angepasst werden.",
-      evidenceLimit: "Mehr Plätze, Geräte oder Projekte belegen keine Bildungswirkung. Entscheidend sind tatsächliche Teilnahme, Qualität und Übergänge – getrennt nach den Ausgangslagen der betroffenen Gruppen."
+      evidenceLimit: "Mehr Plätze, Geräte oder Projekte belegen keine Bildungswirkung. Entscheidend sind tatsächliche Teilnahme, Qualität und Übergänge - getrennt nach den Ausgangslagen der betroffenen Gruppen."
     },
     arbeit: {
       caseLabel: "den Übergang einer Person von Arbeitslosigkeit oder Qualifizierung in tragfähige Beschäftigung",
@@ -409,7 +409,7 @@
 
   function bottleneckDecisionCheck(id, domain) {
     if (id === "verfahren") {
-      return "Verfahrensprüfung vor der Ausweitung: Den heutigen und den vorgesehenen Weg für " + domain.caseLabel + " Schritt für Schritt vergleichen – Eingabe, Nachweis, Zuständigkeit, Wartepunkt, Entscheidung und Rechtsbehelf. Eine Beschleunigung ist nicht belegt, wenn nur ein interner Schritt schneller wird und Rückfragen, Ablehnungen oder Widersprüche steigen.";
+      return "Verfahrensprüfung vor der Ausweitung: Den heutigen und den vorgesehenen Weg für " + domain.caseLabel + " Schritt für Schritt vergleichen - Eingabe, Nachweis, Zuständigkeit, Wartepunkt, Entscheidung und Rechtsbehelf. Eine Beschleunigung ist nicht belegt, wenn nur ein interner Schritt schneller wird und Rückfragen, Ablehnungen oder Widersprüche steigen.";
     }
     if (id === "finanzierung") {
       return "Finanzierungsprüfung vor der Ausweitung: Für " + domain.decisionObject + " den tatsächlich begrenzenden Kostenpunkt, die Trägerschaft, die Dauerfinanzierung und die Verteilungswirkung offenlegen. Mehr Mittel ohne Zugang zum begrenzenden Faktor sind kein Wirkungsnachweis.";

@@ -131,10 +131,10 @@ Das ist nicht nur eine UX-Regel, sondern Governance.
 
 Ein robustes WÖk-System braucht mindestens:
 
-1. Source Correction – falsche Ausgangsdaten korrigieren.
-2. Method Review – falsche Zuordnung/Regel prüfen.
-3. Fach Review – strittige Wirkungseinschätzung neu bewerten.
-4. Governance Appeal – Interessenkonflikt/Verfahrensfehler prüfen.
+1. Source Correction - falsche Ausgangsdaten korrigieren.
+2. Method Review - falsche Zuordnung/Regel prüfen.
+3. Fach Review - strittige Wirkungseinschätzung neu bewerten.
+4. Governance Appeal - Interessenkonflikt/Verfahrensfehler prüfen.
 5. rechtlichen Rechtsbehelf, wenn ein staatlicher Eingriff betroffen ist.
 
 Nicht jeder Streit gehört in dieselbe Instanz.
@@ -260,7 +260,7 @@ Und welche legitimen Ziele eine Demokratie priorisiert, bleibt politische Verant
 
 Deshalb trennen wir Daten-, Methoden-, Entscheidungs- und Governance-Transparenz.
 
-Und wenn ein System Fehler machen kann – was jedes System kann –, braucht es Korrektur.
+Und wenn ein System Fehler machen kann - was jedes System kann -, braucht es Korrektur.
 
 Der Merksatz lautet:
 

@@ -28,4 +28,4 @@ ausgewiesen.
 bestätigt, Ausgestaltung problematisch; damals vertretbar, heute nicht
 bestätigt; Gegenoption vorzugswürdig; keine belastbare Rückschau möglich.
 Ein Status „Gegenoption vorzugswürdig“ verlangt Evidenz, Wirkpfad, SDG/SDG+,
-MPD, Nichtkompensation, Gegenfaktum und menschliche Freigabe – keine Score-Summe.
+MPD, Nichtkompensation, Gegenfaktum und menschliche Freigabe - keine Score-Summe.

@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v51-krisen-bip-und-schadensvermeidung.md curriculum=4.0 sanitized=true -->
-# V51 · Krisen-BIP und Kosten der Schadensvermeidung – Aktivität, Verlust und Wiederherstellung trennen
+# V51 · Krisen-BIP und Kosten der Schadensvermeidung - Aktivität, Verlust und Wiederherstellung trennen
 
 **lecture_id:** `WOEK-G-BASE-051`  
 **display_code:** `V51`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Nach einer Flut, Pandemie oder Energiekrise kann viel Geld ausgegeben und viel produziert werden. Das erhöht teilweise wirtschaftliche Aktivität – obwohl zuvor Wohlstand zerstört wurde. Die WÖk nutzt **„Krisen-BIP“** als Denkbegriff für diese Reparatur-/Bewältigungsaktivität. Er ist keine amtliche Kennzahl. Entscheidend ist die Trennung: **Schaden, Bewältigung, Wiederherstellung, Prävention und echte zusätzliche Zustandsverbesserung sind verschiedene Dinge.**
+Nach einer Flut, Pandemie oder Energiekrise kann viel Geld ausgegeben und viel produziert werden. Das erhöht teilweise wirtschaftliche Aktivität - obwohl zuvor Wohlstand zerstört wurde. Die WÖk nutzt **„Krisen-BIP“** als Denkbegriff für diese Reparatur-/Bewältigungsaktivität. Er ist keine amtliche Kennzahl. Entscheidend ist die Trennung: **Schaden, Bewältigung, Wiederherstellung, Prävention und echte zusätzliche Zustandsverbesserung sind verschiedene Dinge.**
 
 ## Lernziele
 
@@ -44,11 +44,11 @@ Aber oft stellen sie verlorenen Zustand wieder her statt zusätzlichen Wohlstand
 
 Für WÖk sauber trennen:
 
-1. `DAMAGE` – verlorener Zustand/Bestand.
-2. `CRISIS_RESPONSE` – unmittelbare Bewältigungsaktivität.
-3. `RESTORATION` – Wiederherstellung.
-4. `PREVENTION` – Verringerung künftiger Eintritts-/Schadenswahrscheinlichkeit.
-5. `NET_NEW_BENEFIT` – zusätzliche Verbesserung über früheren Zustand hinaus.
+1. `DAMAGE` - verlorener Zustand/Bestand.
+2. `CRISIS_RESPONSE` - unmittelbare Bewältigungsaktivität.
+3. `RESTORATION` - Wiederherstellung.
+4. `PREVENTION` - Verringerung künftiger Eintritts-/Schadenswahrscheinlichkeit.
+5. `NET_NEW_BENEFIT` - zusätzliche Verbesserung über früheren Zustand hinaus.
 
 ## 3. BIP ist nicht schuld
 

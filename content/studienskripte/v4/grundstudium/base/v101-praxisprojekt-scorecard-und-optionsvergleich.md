@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Jetzt vergleichst du **echte Optionen**. Nicht nur „Maßnahme vs. nichts“, sondern mindestens zwei realistische Wege zum Ziel. Jede Option bekommt dasselbe Wirkungsprofil: gleiche State Variables, gleiche Referenzen, getrennte Evidenz und Schutzgrenzen. Erst danach darf – wenn fachlich sinnvoll – Reverse Merit Order oder eine begründete Teilaggregation helfen. Wenn die Daten keine robuste Rangfolge tragen, ist `NO_ROBUST_RANKING` die richtige Antwort.
+Jetzt vergleichst du **echte Optionen**. Nicht nur „Maßnahme vs. nichts“, sondern mindestens zwei realistische Wege zum Ziel. Jede Option bekommt dasselbe Wirkungsprofil: gleiche State Variables, gleiche Referenzen, getrennte Evidenz und Schutzgrenzen. Erst danach darf - wenn fachlich sinnvoll - Reverse Merit Order oder eine begründete Teilaggregation helfen. Wenn die Daten keine robuste Rangfolge tragen, ist `NO_ROBUST_RANKING` die richtige Antwort.
 
 ## Lernziele
 
@@ -49,7 +49,7 @@ Nicht:
 
 Sondern:
 
-> Gleiche Problemdefinition, gleicher Zielzustand, gleiche Schutzgrenzen, gleiche State Variables – soweit sinnvoll.
+> Gleiche Problemdefinition, gleicher Zielzustand, gleiche Schutzgrenzen, gleiche State Variables - soweit sinnvoll.
 
 Damit wird Vergleich fair.
 
@@ -81,7 +81,7 @@ Eine Option mit ausgelöster nichtkompensierbarer Grenze kann aus dem zulässige
 
 Offene Rechts-/Schutzfrage:
 
-`BOUNDARY_OPEN` – nicht automatisch „minus Punkte“.
+`BOUNDARY_OPEN` - nicht automatisch „minus Punkte“.
 
 ## 5. Reverse Merit Order
 
@@ -116,7 +116,7 @@ Wenn nein:
 
 ## 7. Dominanz
 
-Option A dominiert B nur, wenn sie in relevanten Dimensionen mindestens gleich gut und in mindestens einer materiell besser ist – unter tragfähiger Evidenz und ohne neue Boundary.
+Option A dominiert B nur, wenn sie in relevanten Dimensionen mindestens gleich gut und in mindestens einer materiell besser ist - unter tragfähiger Evidenz und ohne neue Boundary.
 
 In der Praxis ist vollständige Dominanz selten.
 
@@ -153,7 +153,7 @@ Vergleich:
 - langfristige Resilienz,
 - Wasser/Flächenwirkung.
 
-Vielleicht ist D robust – vielleicht je Quartier eine andere Option.
+Vielleicht ist D robust - vielleicht je Quartier eine andere Option.
 
 Auch `SEGMENTED_RECOMMENDATION` ist zulässig.
 

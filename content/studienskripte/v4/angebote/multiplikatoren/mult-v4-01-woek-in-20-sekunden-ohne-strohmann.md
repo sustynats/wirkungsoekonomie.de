@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-01-woek-in-20-sekunden-ohne-strohmann.md curriculum=4.0 sanitized=true -->
-# MULT-V4-01 · WÖk in 20 Sekunden – ohne Strohmann
+# MULT-V4-01 · WÖk in 20 Sekunden - ohne Strohmann
 
 **lecture_id:** `WOEK-MP-V4-001`  
 **offering_id:** `WOEK-MP`  
@@ -19,7 +19,7 @@
 - WÖk-eigene Modelle als WÖk-Modelle kennzeichnen
 
 ## 20-Sekunden-Erklärung
-Die Wirkungsökonomie fragt nicht nur, wie viel Geld, Output oder Reichweite entsteht. Sie fragt, welche Zustände sich tatsächlich verändern – für Menschen, natürliche Lebensgrundlagen und Demokratie – und wie dieses Wissen in die nächste Entscheidung zurückfließt. Dafür nutzt sie vorhandene Daten und Prüfverfahren und verbindet sie zu einer lernenden Steuerungsarchitektur.
+Die Wirkungsökonomie fragt nicht nur, wie viel Geld, Output oder Reichweite entsteht. Sie fragt, welche Zustände sich tatsächlich verändern - für Menschen, natürliche Lebensgrundlagen und Demokratie - und wie dieses Wissen in die nächste Entscheidung zurückfließt. Dafür nutzt sie vorhandene Daten und Prüfverfahren und verbindet sie zu einer lernenden Steuerungsarchitektur.
 
 ## Einfache Einführung
 Eine gute Einführung muss weder die bestehende Ökonomie noch den Staat schlechtreden. Preise, Bilanzen, Statistik, Nachhaltigkeitsstrategien, Gesetzesfolgenabschätzung, Evaluation und wissenschaftliche Messmethoden existieren und leisten viel. Die WÖk setzt dort an, wo diese Informationen noch nicht durchgängig als objektspezifische Problem-, Ziel-, Kausal-, Options- und Lernkette zusammengeführt werden.
@@ -55,7 +55,7 @@ WÖk ist keine Überlegenheitsleiter. Sie ist eine spezifische Integrations- und
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
 - UN Agenda 2030 / SDGs: https://sdgs.un.org/2030agenda
 - Deutsche Nachhaltigkeitsstrategie: https://www.bundesregierung.de/breg-de/schwerpunkte/nachhaltigkeitspolitik
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - OECD Evaluation: https://www.oecd.org/dac/evaluation/
 - Digital Services Act: https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package
 
@@ -69,7 +69,7 @@ Formuliere eine 20-Sekunden-Erklärung der WÖk ohne die Wörter „blind“, �
 WÖk wird stärker durch Präzision: vorhandene Leistung anerkennen, eigene Zusatzleistung klar benennen, keine Totalblindheitsgeschichte erzählen.
 
 ## Sprechertext
-Wenn du Wirkungsökonomie erklärst, musst du nicht erst alles andere kleinmachen. Wir haben längst Statistik, Nachhaltigkeitsdaten, Evaluation, Folgenabschätzung und viele gute Fachmethoden. Die einfache WÖk-Frage lautet trotzdem: Was verändert sich tatsächlich – und was folgt daraus für die nächste Entscheidung? Genau diese Verbindung ist der Kern.
+Wenn du Wirkungsökonomie erklärst, musst du nicht erst alles andere kleinmachen. Wir haben längst Statistik, Nachhaltigkeitsdaten, Evaluation, Folgenabschätzung und viele gute Fachmethoden. Die einfache WÖk-Frage lautet trotzdem: Was verändert sich tatsächlich - und was folgt daraus für die nächste Entscheidung? Genau diese Verbindung ist der Kern.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst auf Basis des vollständigen Legacy-Reaudits B04 und des WÖk-Begriffs-/Methodenstands v1.5.

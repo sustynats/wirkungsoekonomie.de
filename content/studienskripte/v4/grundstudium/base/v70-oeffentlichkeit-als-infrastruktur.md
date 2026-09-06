@@ -225,7 +225,7 @@ Wir informieren uns. Streiten. Kontrollieren Regierungen. Korrigieren Fehler. Fi
 
 Darum kann man Öffentlichkeit wie eine Infrastruktur betrachten.
 
-Nicht wie eine Straße aus Beton – sondern als System, das Informationen, Kontrolle und Korrektur ermöglicht.
+Nicht wie eine Straße aus Beton - sondern als System, das Informationen, Kontrolle und Korrektur ermöglicht.
 
 Und jetzt wird Wirkung interessant.
 

@@ -5,9 +5,7 @@
 **Vorlesungscode:** WC-V1  
 **Modul/Abschnitt:** WC  
 **Titel:** Von KPI zu KII und der Kennzahlen-Stack  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v1-kpi-zu-kii-kennzahlenstack.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v1.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v1.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Von KPI zu KII und der Kennzahlen-Stack** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,34 +42,33 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** Grundlagenlehrgang; empfohlen Wirkungsmanagement (L1)
 **Führende Quellen (Repo):** `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` (Teil 2) · `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Baut auf Grundlagen + Wirkungsmanagement auf.
 
 ## 1. Einstieg / Wirkungsfrage
 
-Ein Dashboard voller grüner KPIs – und trotzdem weiß niemand, ob echte positive Netto-Wirkung entsteht. **Warum reichen klassische Kennzahlen nicht, und welche Kennzahlen macht Wirkung wirklich steuerbar?**
+Ein Dashboard voller grüner KPIs - und trotzdem weiß niemand, ob echte positive Netto-Wirkung entsteht. **Warum reichen klassische Kennzahlen nicht, und welche Kennzahlen macht Wirkung wirklich steuerbar?**
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Von KPI zu KII – die Kennzahlenordnung der Wirkungsökonomie
+- **Titel:** Von KPI zu KII - die Kennzahlenordnung der Wirkungsökonomie
 - **Länge:** ~15 Min
 - **Kernaussage in einem Satz:** Wirkungscontrolling ersetzt reine Aktivitäts-KPIs durch Key Impact Indicators und einen sauber getrennten Kennzahlen-Stack (Scorecard → FinalScore → NWI → T-SROI → IoI).
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Das KPI-Problem.** Klassische KPIs messen Einsatz und Aktivität (Umsatz, Output, Reichweite). Sie sagen nicht, welche Veränderung von Zuständen entsteht. Reichweite ist nicht Wirkung.
+**Abschnitt A - Das KPI-Problem.** Klassische KPIs messen Einsatz und Aktivität (Umsatz, Output, Reichweite). Sie sagen nicht, welche Veränderung von Zuständen entsteht. Reichweite ist nicht Wirkung.
 
-**Abschnitt B – KII: Key Impact Indicators.** KIIs messen tatsächliche Wirkung bei Wirkungsempfängern, bezogen auf den Referenzrahmen – nicht Aktivität.
+**Abschnitt B - KII: Key Impact Indicators.** KIIs messen tatsächliche Wirkung bei Wirkungsempfängern, bezogen auf den Referenzrahmen - nicht Aktivität.
 
-**Abschnitt C – Vier Kennzahlen sauber trennen.** Das T-SROI-Whitepaper trennt bewusst: Bewertung (Scorecard), Verdichtung (FinalScore), operative Netto-Wirkung (NWI) und Transformationswirkung (T-SROI). Dazu die einfache Steuerungskennzahl IoI.
+**Abschnitt C - Vier Kennzahlen sauber trennen.** Das T-SROI-Whitepaper trennt bewusst: Bewertung (Scorecard), Verdichtung (FinalScore), operative Netto-Wirkung (NWI) und Transformationswirkung (T-SROI). Dazu die einfache Steuerungskennzahl IoI.
 
-**Abschnitt D – Reihenfolge.** Aus Daten → Scorecard → Netto-Wirkung/Wirkungsklasse → Steuerungsentscheidung. Kennzahlen ohne Datenqualität und ohne Reverse Merit Order sind wertlos.
+**Abschnitt D - Reihenfolge.** Aus Daten → Scorecard → Netto-Wirkung/Wirkungsklasse → Steuerungsentscheidung. Kennzahlen ohne Datenqualität und ohne Reverse Merit Order sind wertlos.
 
-**Abschnitt E – Kein Scheingenauigkeit.** Kennzahlen bilden Wirkung als überprüfbares Profil ab, nicht als vermeintlich exakte Einzelzahl.
+**Abschnitt E - Kein Scheingenauigkeit.** Kennzahlen bilden Wirkung als überprüfbares Profil ab, nicht als vermeintlich exakte Einzelzahl.
 
 ## 4. Skript / Folien (Lernseite)
 
-**KPI misst Aktivität, KII misst Wirkung.** Ein **KPI** (Key Performance Indicator) beantwortet „Wie viel haben wir getan?" – Umsatz, Output, Reichweite. Ein **KII** (Key Impact Indicator) beantwortet „Welche tatsächliche Veränderung ist bei den Wirkungsempfängern entstanden?", bezogen auf SDGs/SDG+. Der Wechsel von KPI zu KII ist der Kern des Wirkungscontrollings.
+**KPI misst Aktivität, KII misst Wirkung.** Ein **KPI** (Key Performance Indicator) beantwortet „Wie viel haben wir getan?" - Umsatz, Output, Reichweite. Ein **KII** (Key Impact Indicator) beantwortet „Welche tatsächliche Veränderung ist bei den Wirkungsempfängern entstanden?", bezogen auf SDGs/SDG+. Der Wechsel von KPI zu KII ist der Kern des Wirkungscontrollings.
 
 **Der Kennzahlen-Stack (T-SROI-Whitepaper, Teil 2 „Vier Kennzahlen sauber trennen"):**
 
@@ -84,9 +80,9 @@ Ein Dashboard voller grüner KPIs – und trotzdem weiß niemand, ob echte posit
 | **T-SROI** | Welche transformative Wirkung pro Investition? | Investitions-/Transformationsbewertung |
 | **IoI (Impact of Investment)** | Positive Netto-Wirkung pro eingesetztem Euro? | einfache operative Steuerungskennzahl |
 
-**Die Reihenfolge ist verbindlich.** Aus **Daten** entsteht zunächst eine **Scorecard**, daraus eine **Netto-Wirkung und Wirkungsklasse** – und erst daraus eine **Steuerungsentscheidung**. Voraussetzung für alles: **Datenqualität, WÖk-IDs, Scorecards und die Reverse Merit Order**, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.
+**Die Reihenfolge ist verbindlich.** Aus **Daten** entsteht zunächst eine **Scorecard**, daraus eine **Netto-Wirkung und Wirkungsklasse** - und erst daraus eine **Steuerungsentscheidung**. Voraussetzung für alles: **Datenqualität, WÖk-IDs, Scorecards und die Reverse Merit Order**, damit schlechte Werte nicht durch gute Teilwerte verdeckt werden.
 
-**Kein Kennzahlen-Fetisch.** Auch der beste FinalScore/NWI bleibt der Nichtkompensation unterworfen und ersetzt kein Urteil. Wirkungscontrolling liefert ein **Profil**, das Entscheidungen begründet – keine Scheingenauigkeit. Die folgenden Vorlesungen füllen jede Stufe operativ: Rahmenwerke (V2), WÖk-IDs (V3), Scorecards (V4), Reverse Merit Order (V5), Monitoring (V6), T-SROI/IoI (V7).
+**Kein Kennzahlen-Fetisch.** Auch der beste FinalScore/NWI bleibt der Nichtkompensation unterworfen und ersetzt kein Urteil. Wirkungscontrolling liefert ein **Profil**, das Entscheidungen begründet - keine Scheingenauigkeit. Die folgenden Vorlesungen füllen jede Stufe operativ: Rahmenwerke (V2), WÖk-IDs (V3), Scorecards (V4), Reverse Merit Order (V5), Monitoring (V6), T-SROI/IoI (V7).
 
 ## 5. Glossar der Kernbegriffe
 
@@ -140,7 +136,6 @@ Wähle drei KPIs aus deinem Umfeld und überführe sie in **KIIs**: Für jede Ak
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -330,13 +325,12 @@ Die folgende Runde verdichtet WC-V1 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V1. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` – Teil 2 „Vier Kennzahlen sauber trennen"
-- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` – „Instrumente"
+- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` - Teil 2 „Vier Kennzahlen sauber trennen"
+- `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md` - „Instrumente"
 - Glossar: `begriffe/kii`, `begriffe/netto-wirkungs-index`, `begriffe/t-sroi`, `begriffe/impact-of-investment`
 
 ## 4. Wirkungsökonomische Vertiefung
@@ -434,7 +428,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -864,7 +857,7 @@ Zitation
 
 Zitierfähige Kurzform
 
-Weber, Natalie / Wirkungsökonomie (2026): Wirkungscontrolling – Detailkonzept-Dossier. Planung, Messung, Bewertung, Steuerung und Rückkopplung von Wirkung für Mensch, Planet und Demokratie. Version 1.0, 01. Juni 2026.
+Weber, Natalie / Wirkungsökonomie (2026): Wirkungscontrolling - Detailkonzept-Dossier. Planung, Messung, Bewertung, Steuerung und Rückkopplung von Wirkung für Mensch, Planet und Demokratie. Version 1.0, 01. Juni 2026.
 
 Online: wirkungsoekonomie.de/werkzeuge/impact-controlling/dossiers/wirkungscontrolling/
 
@@ -1074,8 +1067,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v1-kpi-zu-kii-kennzahlenstack.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

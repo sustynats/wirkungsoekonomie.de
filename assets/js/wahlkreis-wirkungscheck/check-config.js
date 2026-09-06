@@ -1,4 +1,4 @@
-/* Wahlkreis-Wirkungscheck – redaktionelle Fragen- und Begriffsstruktur.
+/* Wahlkreis-Wirkungscheck - redaktionelle Fragen- und Begriffsstruktur.
  * Keine Parteien, Personen oder Wahlprognosen. Die amtlichen Regionaldaten
  * liegen getrennt in data-2025.js; Regelwerk in rules.js. */
 (function () {
@@ -117,7 +117,7 @@
         "Vollzugsindikator: Wo entsteht der Engpass im Weg von der Regel zur Wirkung?",
         "Rückkopplungsindikator: Welches Signal zeigt früh, dass eine Annahme nicht trägt?"
       ],
-      dialogfrage: "Woran wäre bundesweit und im Wahlkreis konkret erkennbar, dass eine bundespolitische Änderung hilft – und wer würde eine unerwünschte Folge zuerst bemerken?",
+      dialogfrage: "Woran wäre bundesweit und im Wahlkreis konkret erkennbar, dass eine bundespolitische Änderung hilft - und wer würde eine unerwünschte Folge zuerst bemerken?",
       ersterschritt: "Vor der Entscheidung Zielzustand, Wirkpfad, mögliche Wirkungsrisiken und eine Rückkopplung verbindlich festhalten."
     },
     sensitivity: [

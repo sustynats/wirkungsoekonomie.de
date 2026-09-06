@@ -95,10 +95,10 @@ Verglichen werden nicht nur CO₂-Werte, sondern Funktion, Hygiene, Logistik, R�
 
 ## Typische Fehlinterpretationen
 
-- Delivery kommt erst nach der Wirkungsentscheidung. – Zu spät.
-- Finanzierung = nur Investitionsbudget. – Nein.
-- Mehr Optionen machen Entscheidung schlechter. – Nein; sie verhindern Instrumentfixierung.
-- Kohärenz bedeutet, dass alle Ziele gleich gewichtet werden. – Nein; es geht um widersprüchliche Steuerung.
+- Delivery kommt erst nach der Wirkungsentscheidung. - Zu spät.
+- Finanzierung = nur Investitionsbudget. - Nein.
+- Mehr Optionen machen Entscheidung schlechter. - Nein; sie verhindern Instrumentfixierung.
+- Kohärenz bedeutet, dass alle Ziele gleich gewichtet werden. - Nein; es geht um widersprüchliche Steuerung.
 
 ## WÖk-Abgrenzung
 
@@ -139,9 +139,9 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
 
 ### Durchgerechneter Übungsfall: Beratung und neue Software
 
@@ -156,7 +156,7 @@ Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M�
 
 Beide Gruppen erhalten zeitgleich neue Software. Nur die Pilotgruppe erhält zusätzlich Beratung. Die gleiche Zahl von Vorgängen vereinfacht die Rechnung; eine reale Studie müsste Gruppenzusammensetzung, Falldauer und Schweregrade genauer prüfen.
 
-**Rechnung.** In der Pilotgruppe sinkt die Quote um 6 Prozentpunkte, in der Vergleichsgruppe um 2 Prozentpunkte. Die Differenz der Veränderungen beträgt `(6 − 12) − (8 − 10) = −4 Prozentpunkte`. Unter den unten genannten Annahmen entspräche dies einer zusätzlichen Verringerung um 40 fehlerhafte Vorgänge je 1.000. Die beobachtete Verringerung um 60 Fehler darf nicht vollständig der Beratung zugerechnet werden. „Vier Prozentpunkte“ sind auch nicht „vier Prozent“; relativ zur Ausgangsquote von 12 % wären vier Prozentpunkte ein Drittel.
+**Rechnung.** In der Pilotgruppe sinkt die Quote um 6 Prozentpunkte, in der Vergleichsgruppe um 2 Prozentpunkte. Die Differenz der Veränderungen beträgt `(6 - 12) - (8 - 10) = -4 Prozentpunkte`. Unter den unten genannten Annahmen entspräche dies einer zusätzlichen Verringerung um 40 fehlerhafte Vorgänge je 1.000. Die beobachtete Verringerung um 60 Fehler darf nicht vollständig der Beratung zugerechnet werden. „Vier Prozentpunkte“ sind auch nicht „vier Prozent“; relativ zur Ausgangsquote von 12 % wären vier Prozentpunkte ein Drittel.
 
 **Annahmen und Unsicherheit.** Das Difference-in-Differences-Design benötigt eine begründete Annahme paralleler Entwicklung ohne Beratung, stabile Erfassung und keinen unterschiedlichen zusätzlichen Eingriff. Eine einzige Vorperiode kann parallele Trends nicht belegen. Untersuche deshalb weitere Vorperioden, Auswahl in die Pilotgruppe, unterschiedliche Nutzung der Software, spillover zu Vergleichsbetrieben und Änderungen in der Fehlererkennung. Die Tabelle enthält keine Betriebsebene und keine Varianzangaben; ein belastbares Konfidenzintervall oder eine Signifikanzbehauptung lässt sich daraus nicht ableiten. [Weltbank: Impact Evaluation in Practice, 2. Auflage, Kapitel Difference-in-Differences](https://www.worldbank.org/en/programs/sief-trust-fund/publication/impact-evaluation-in-practice).
 
@@ -173,11 +173,11 @@ Vergleiche drei echte Handlungsoptionen. Die Kosten sind ebenfalls modellhafte A
 | Option | Zusätzliche Kosten | Erwartung vor der Entscheidung | Umsetzung und Verantwortung | Revisionskriterium |
 | --- | ---: | --- | --- | --- |
 | A: Softwarebetrieb ohne zusätzliche Beratung | 0 € Zusatzbudget | Vergleichsentwicklung bleibt unsicher | IT betreibt Software; Fachbereich beobachtet Fehlerarten | Erfassungslücke oder Anstieg schwerer Fehler → Prüfung |
-| B: Beratungspilot fortsetzen | 24.000 € | Zusätzlicher Rückgang von 2–6 Prozentpunkten als Szenario | Fachbereich verantwortet Routine; Controlling prüft Daten; 0,2 Vollzeitäquivalente eingeplant | Kein belastbarer Mechanismus oder problematische Verdrängung → überarbeiten |
+| B: Beratungspilot fortsetzen | 24.000 € | Zusätzlicher Rückgang von 2-6 Prozentpunkten als Szenario | Fachbereich verantwortet Routine; Controlling prüft Daten; 0,2 Vollzeitäquivalente eingeplant | Kein belastbarer Mechanismus oder problematische Verdrängung → überarbeiten |
 | C: Pilot gezielt auf komplexe Vorgänge ausrichten | 32.000 € | Wirkung und Verteilung noch offen; weniger Gefahr einfacher Fallselektion | Pilotleitung verantwortet Schulung, Beschaffung und Datenschutzprüfung | Pilot erst nach Freigabe des Erfassungskonzepts; Schutzverletzung → stoppen |
 
 Begründe die Entscheidung ohne aus einem einzelnen Quotienten eine Empfehlung abzuleiten. Prüfe Ressourcen, Umsetzbarkeit, Datenqualität, Zielkonflikte und harte Schutzgrenzen zuerst. Reverse Merit Order kann die Bearbeitung kritischer Felder priorisieren; Nichtkompensation verhindert, dass eine Schutzverletzung durch bessere Durchschnittswerte verschwindet. Bei unklarer Präferenz ist `NO_ROBUST_RECOMMENDATION` ein zulässiges Ergebnis, verbunden mit einem konkreten nächsten Erkenntnisschritt.
 
 **90-Tage-Review:** Sind Rollen, Erfassung, Schulung und Beschaffung umgesetzt? Welche Annahmen sind bereits widerlegt? Diese Umsetzungskontrolle ist noch kein sechsmonatiger Outcome- oder Attributionstest. Der spätere Reality Check vergleicht die versionierten Ex-ante-Annahmen mit Beobachtungen, Gegenfaktum, Verteilung und Nebenwirkungen. Öffentlich finanzierte Varianten des Falls prüfen zusätzlich den jeweils einschlägigen staatlichen Rahmen, insbesondere BHO/VV-BHO/AAWU auf Bundesebene.
 
-**Arbeitsprodukt:** Erstelle ein zweiseitiges Entscheidungsmemo plus Rechenanlage. Es enthält Problem, Ziel, Datenwörterbuch, Rechnung, zwei Alternativerklärungen, Sensitivität, drei Optionen, eine Schutzgrenze, Verantwortliche und Prüftermine. Gib an, welche Aussage Fakt im Modell, welche Rechenfolgerung und welche normative Entscheidung ist. Zur Selbstkontrolle: Die zentrale Differenz beträgt −4 Prozentpunkte; jede andere Zahl muss aus einer ausdrücklich abweichenden Annahme folgen. Die Transferübung selbst ist kein fachlich bewerteter praktischer Kompetenznachweis; Umfang und Bewertung der Abschlussprüfung werden gesondert ausgewiesen.
+**Arbeitsprodukt:** Erstelle ein zweiseitiges Entscheidungsmemo plus Rechenanlage. Es enthält Problem, Ziel, Datenwörterbuch, Rechnung, zwei Alternativerklärungen, Sensitivität, drei Optionen, eine Schutzgrenze, Verantwortliche und Prüftermine. Gib an, welche Aussage Fakt im Modell, welche Rechenfolgerung und welche normative Entscheidung ist. Zur Selbstkontrolle: Die zentrale Differenz beträgt -4 Prozentpunkte; jede andere Zahl muss aus einer ausdrücklich abweichenden Annahme folgen. Die Transferübung selbst ist kein fachlich bewerteter praktischer Kompetenznachweis; Umfang und Bewertung der Abschlussprüfung werden gesondert ausgewiesen.

@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Jetzt darfst du zum ersten Mal eine Empfehlung formulieren – aber nur, wenn die Analyse sie wirklich trägt. Eine WÖk-Recommendation ist **kein Score-Sieger**. Sie muss sagen: Welche Option ist unter welchen Bedingungen gegenüber realistischen Alternativen vorzuziehen? Welche Schutzgrenzen gelten? Was muss umgesetzt werden? Welche Daten werden beobachtet? Und wann wird die Empfehlung zurückgezogen oder geändert?
+Jetzt darfst du zum ersten Mal eine Empfehlung formulieren - aber nur, wenn die Analyse sie wirklich trägt. Eine WÖk-Recommendation ist **kein Score-Sieger**. Sie muss sagen: Welche Option ist unter welchen Bedingungen gegenüber realistischen Alternativen vorzuziehen? Welche Schutzgrenzen gelten? Was muss umgesetzt werden? Welche Daten werden beobachtet? Und wann wird die Empfehlung zurückgezogen oder geändert?
 
 ## Lernziele
 
@@ -284,7 +284,7 @@ Welche Daten? Welche Schwelle? Welcher Fallback?
 
 Der Merksatz lautet:
 
-**Eine gute Recommendation sagt nicht nur, was wir tun sollten. Sie sagt auch, unter welchen Bedingungen sie gilt – und wann wir unsere Meinung ändern müssen.**
+**Eine gute Recommendation sagt nicht nur, was wir tun sollten. Sie sagt auch, unter welchen Bedingungen sie gilt - und wann wir unsere Meinung ändern müssen.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

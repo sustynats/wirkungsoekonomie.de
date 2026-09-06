@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V10  
 **Modul/Abschnitt:** WM  
 **Titel:** 90-Tage-Umsetzungsplan (Abschlussprojekt)  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v10-90-tage-umsetzungsplan.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v10.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v10.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **90-Tage-Umsetzungsplan (Abschlussprojekt)** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,7 +44,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-Verstehen allein verändert nichts. **Was tust du in den nächsten 90 Tagen konkret, damit Wirkung in deiner Organisation gesteuert wird – und woran misst du den Fortschritt?**
+Verstehen allein verändert nichts. **Was tust du in den nächsten 90 Tagen konkret, damit Wirkung in deiner Organisation gesteuert wird - und woran misst du den Fortschritt?**
 
 ## 2. Video-/Audio-Vorlesung
 
@@ -58,29 +55,29 @@ Verstehen allein verändert nichts. **Was tust du in den nächsten 90 Tagen konk
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Warum 90 Tage.** Kurz genug für Verbindlichkeit, lang genug für erste echte Rückkopplung. Kein Großprogramm, sondern ein tragfähiger Anfang.
+**Abschnitt A - Warum 90 Tage.** Kurz genug für Verbindlichkeit, lang genug für erste echte Rückkopplung. Kein Großprogramm, sondern ein tragfähiger Anfang.
 
-**Abschnitt B – Struktur.** Drei Phasen: Tage 1–30 (Fundament: ein Wirkungsziel, ein kritisches Feld), 31–60 (Verankerung in einer Routine), 61–90 (erste Rückkopplung + Nachsteuern).
+**Abschnitt B - Struktur.** Drei Phasen: Tage 1-30 (Fundament: ein Wirkungsziel, ein kritisches Feld), 31-60 (Verankerung in einer Routine), 61-90 (erste Rückkopplung + Nachsteuern).
 
-**Abschnitt C – Fokus über Vollständigkeit.** Ein Wirkungsziel, ein kritisches Wirkungsfeld, eine Entscheidungsroutine – konsequent statt breit.
+**Abschnitt C - Fokus über Vollständigkeit.** Ein Wirkungsziel, ein kritisches Wirkungsfeld, eine Entscheidungsroutine - konsequent statt breit.
 
-**Abschnitt D – Messbarkeit.** Fortschritt an konkreten, ehrlichen Indikatoren; Potenzial und Wirkung getrennt ausweisen.
+**Abschnitt D - Messbarkeit.** Fortschritt an konkreten, ehrlichen Indikatoren; Potenzial und Wirkung getrennt ausweisen.
 
-**Abschnitt E – Abschlussprojekt.** Der 90-Tage-Plan ist zugleich das Abschlussprojekt des Lehrgangs und Teil der Prüfung (Praxisfall).
+**Abschnitt E - Abschlussprojekt.** Der 90-Tage-Plan ist zugleich das Abschlussprojekt des Lehrgangs und Teil der Prüfung (Praxisfall).
 
 ## 4. Skript / Folien (Lernseite)
 
-**Der 90-Tage-Plan macht Wirkungsmanagement verbindlich.** Er bündelt die Ergebnisse des Lehrgangs (Wirkungsziel V3, kritisches Feld V4, Strategie/Canvas V8) in wenige, machbare Schritte mit Verantwortlichkeit und Termin. Prinzip: **Fokus vor Vollständigkeit** – ein Wirkungsziel, ein kritisches Wirkungsfeld, eine Entscheidungsroutine.
+**Der 90-Tage-Plan macht Wirkungsmanagement verbindlich.** Er bündelt die Ergebnisse des Lehrgangs (Wirkungsziel V3, kritisches Feld V4, Strategie/Canvas V8) in wenige, machbare Schritte mit Verantwortlichkeit und Termin. Prinzip: **Fokus vor Vollständigkeit** - ein Wirkungsziel, ein kritisches Wirkungsfeld, eine Entscheidungsroutine.
 
 **Struktur in drei 30-Tage-Phasen:**
 
 | Phase | Ziel | Beispiel-Schritte |
 |---|---|---|
-| Tage 1–30 · Fundament | Ein Wirkungsziel + kritisches Feld festlegen | Wirkpfad skizzieren; schwächstes kritisches Feld (V4) benennen; Datenlücke identifizieren |
-| Tage 31–60 · Verankerung | Wirkung in **eine** Routine einbauen | Wirkungsabschnitt in Entscheidungsvorlage/Investitionsprüfung; Verantwortliche benennen |
-| Tage 61–90 · Rückkopplung | Erste Bewertung → Entscheidung anpassen | Wirkung prüfen; eine Entscheidung anhand der Bewertung ändern; Lernnotiz |
+| Tage 1-30 · Fundament | Ein Wirkungsziel + kritisches Feld festlegen | Wirkpfad skizzieren; schwächstes kritisches Feld (V4) benennen; Datenlücke identifizieren |
+| Tage 31-60 · Verankerung | Wirkung in **eine** Routine einbauen | Wirkungsabschnitt in Entscheidungsvorlage/Investitionsprüfung; Verantwortliche benennen |
+| Tage 61-90 · Rückkopplung | Erste Bewertung → Entscheidung anpassen | Wirkung prüfen; eine Entscheidung anhand der Bewertung ändern; Lernnotiz |
 
-**Ehrliche Messbarkeit.** Fortschritt wird an konkreten Indikatoren gemessen, die **Potenzial und Wirkung trennen** (V5) und keine Reichweite als Wirkung ausgeben (V9). Ziel der 90 Tage ist nicht der große Erfolg, sondern eine **funktionierende Rückkopplungsschleife** – der Beweis, dass Steuerung greift.
+**Ehrliche Messbarkeit.** Fortschritt wird an konkreten Indikatoren gemessen, die **Potenzial und Wirkung trennen** (V5) und keine Reichweite als Wirkung ausgeben (V9). Ziel der 90 Tage ist nicht der große Erfolg, sondern eine **funktionierende Rückkopplungsschleife** - der Beweis, dass Steuerung greift.
 
 **Anschluss an Wirkungscontrolling (L2).** Spätestens bei der Messbarkeit zeigt sich der Bedarf an sauberen Kennzahlen (KII, Scorecards, NWI, T-SROI, IoI). Der Lehrgang Wirkungscontrolling / Impact-Controlling schließt hier an.
 
@@ -110,7 +107,7 @@ Verstehen allein verändert nichts. **Was tust du in den nächsten 90 Tagen konk
    - A) An Reichweite  B) An Indikatoren, die Potenzial und Wirkung trennen  C) An Klicks  D) Am Aktienkurs
    - ✅ **Richtig: B**
 
-5. **Was passiert in Phase 3 (Tage 61–90)?**
+5. **Was passiert in Phase 3 (Tage 61-90)?**
    - A) Werbung  B) Erste Bewertung → eine Entscheidung anpassen (Rückkopplung)  C) Nichts  D) Reporting nur
    - ✅ **Richtig: B**
 
@@ -121,22 +118,21 @@ Verstehen allein verändert nichts. **Was tust du in den nächsten 90 Tagen konk
 ## 7. Transferaufgabe (Abschlussprojekt)
 
 Erstelle deinen **90-Tage-Umsetzungsplan**:
-1. Ein **Wirkungsziel** + der **Wirkpfad** (V2–V3).
-2. Das **schwächste kritische Wirkungsfeld** (V4) und je ein zentrales **Potenzial/Risiko** (V5–V6).
-3. Die **eine Routine**, in der du Wirkung verankerst (V7–V8).
-4. Drei Phasen (1–30 / 31–60 / 61–90) mit je einem konkreten Schritt, Verantwortlichkeit und **einem Rückkopplungspunkt**.
+1. Ein **Wirkungsziel** + der **Wirkpfad** (V2-V3).
+2. Das **schwächste kritische Wirkungsfeld** (V4) und je ein zentrales **Potenzial/Risiko** (V5-V6).
+3. Die **eine Routine**, in der du Wirkung verankerst (V7-V8).
+4. Drei Phasen (1-30 / 31-60 / 61-90) mit je einem konkreten Schritt, Verantwortlichkeit und **einem Rückkopplungspunkt**.
 5. Zwei ehrliche Indikatoren (Potenzial vs. Wirkung getrennt).
 
 *Dies ist das Abschlussprojekt und Grundlage des Praxisfalls in der Abschlussprüfung.*
 
 ## 8. Praxisbeispiel
 
-**Der schlanke Einstieg.** Ein Team wählt ein Wirkungsziel (faire Arbeitsbedingungen bei zwei kritischen Lieferanten), verankert in Tagen 31–60 eine Wirkungsfrage in der Lieferantenfreigabe und ändert in Tagen 61–90 eine konkrete Bestellentscheidung auf Basis der ersten Bewertung. Ergebnis: eine reale Rückkopplungsschleife statt eines Großprogramms.
+**Der schlanke Einstieg.** Ein Team wählt ein Wirkungsziel (faire Arbeitsbedingungen bei zwei kritischen Lieferanten), verankert in Tagen 31-60 eine Wirkungsfrage in der Lieferantenfreigabe und ändert in Tagen 61-90 eine konkrete Bestellentscheidung auf Basis der ersten Bewertung. Ergebnis: eine reale Rückkopplungsschleife statt eines Großprogramms.
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -336,7 +332,6 @@ Die folgende Runde verdichtet WM-V10 nicht durch neue Schlagworte, sondern durch
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V10. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
@@ -415,7 +410,7 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
    - A) An Reichweite  B) An Indikatoren, die Potenzial und Wirkung trennen  C) An Klicks  D) Am Aktienkurs
    - ✅ **Richtig: B**
 
-5. **Was passiert in Phase 3 (Tage 61–90)?**
+5. **Was passiert in Phase 3 (Tage 61-90)?**
    - A) Werbung  B) Erste Bewertung → eine Entscheidung anpassen (Rückkopplung)  C) Nichts  D) Reporting nur
    - ✅ **Richtig: B**
 
@@ -433,7 +428,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -839,8 +833,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v10-90-tage-umsetzungsplan.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

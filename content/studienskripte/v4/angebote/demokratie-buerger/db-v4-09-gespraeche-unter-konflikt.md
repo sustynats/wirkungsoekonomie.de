@@ -18,16 +18,16 @@
 - eigene Wirkungshypothese später prüfen
 
 ## 20-Sekunden-Erklärung
-Ein Konflikt kann um Fakten, Werte oder Interessen gehen. Wenn wir das unterscheiden, wird das Gespräch oft klarer. Deeskalation kann helfen – muss aber nicht. Und niemand ist verpflichtet, ein unsicheres oder destruktives Gespräch fortzusetzen.
+Ein Konflikt kann um Fakten, Werte oder Interessen gehen. Wenn wir das unterscheiden, wird das Gespräch oft klarer. Deeskalation kann helfen - muss aber nicht. Und niemand ist verpflichtet, ein unsicheres oder destruktives Gespräch fortzusetzen.
 
 ## Einfache Einführung
 Viele Diskussionen eskalieren, weil Menschen gleichzeitig über verschiedene Ebenen streiten. Eine überprüfbare Tatsachenfrage braucht Quellen. Ein Normkonflikt braucht Begründung und Abwägung. Ein Interessenkonflikt braucht Verhandlung.
 
 ## Fachliche Vertiefung
-1. Frage zuerst: Ist dies ein Fakten-, Norm-, Interessen- oder Identitätskonflikt – oder eine Mischung?
+1. Frage zuerst: Ist dies ein Fakten-, Norm-, Interessen- oder Identitätskonflikt - oder eine Mischung?
 2. Gish Gallop beschreibt eine Behauptungsballung; statt Person zu etikettieren, wird die Gesprächsstruktur adressiert und ggf. eine Behauptung nach der anderen geprüft.
 3. False Balance bedeutet nicht, Minderheitspositionen zu verbieten. Entscheidend ist, ob Evidenzgewicht und redaktioneller Kontext verzerrt dargestellt werden.
-4. Gesprächsoptionen – Frage, Spiegelung, Faktencheck, Pause, Grenze, Ende – sind Interventionen mit unsicherer Wirkung.
+4. Gesprächsoptionen - Frage, Spiegelung, Faktencheck, Pause, Grenze, Ende - sind Interventionen mit unsicherer Wirkung.
 
 ## Begriffe / Glossarbox
 - **Faktenkonflikt**
@@ -68,7 +68,7 @@ Konfliktarten, Gish Gallop/False Balance, deeskalierende Optionen und Grenzen.
 Gute Konfliktkommunikation trennt Ebenen und hält die Option offen, das Gespräch sicher zu beenden.
 
 ## Sprechertext
-Manchmal reden zwei Menschen scheinbar über dasselbe und streiten eigentlich über drei Dinge: Was ist wahr? Was ist richtig? Und wer trägt die Kosten? Wenn wir diese Ebenen trennen, wird das Gespräch nicht automatisch leicht – aber viel klarer.
+Manchmal reden zwei Menschen scheinbar über dasselbe und streiten eigentlich über drei Dinge: Was ist wahr? Was ist richtig? Und wer trägt die Kosten? Wenn wir diese Ebenen trennen, wird das Gespräch nicht automatisch leicht - aber viel klarer.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Vollständige Neufassung nach Legacy-Reaudit B05; deterministische Psychologie-, Intent-, Reichweiten- und Wirkungsclaims wurden durch evidenzgebundene Potenzial-/Observation-/Attributionslogik ersetzt.

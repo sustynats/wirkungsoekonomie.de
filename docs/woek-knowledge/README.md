@@ -1,7 +1,7 @@
-# WÖk Knowledge Base — Kanonischer Einstiegspunkt
+# WÖk Knowledge Base - Kanonischer Einstiegspunkt
 
 Stand: 2026-08-14 (Phase 0 „Knowledge Bootstrap", Claude; Codex-Verifikation offen → `CROSSCHECK.md`).
-**Jede größere Aufgabe beginnt hier.** Grundregel: Nie annehmen „das gibt es wahrscheinlich noch nicht" — erst suchen, dann wiederverwenden/erweitern, erst zuletzt neu bauen. Gesprächskontext ist Hilfsmittel; Source of Truth ist dieses Verzeichnis plus die referenzierten Originalquellen.
+**Jede größere Aufgabe beginnt hier.** Grundregel: Nie annehmen „das gibt es wahrscheinlich noch nicht" - erst suchen, dann wiederverwenden/erweitern, erst zuletzt neu bauen. Gesprächskontext ist Hilfsmittel; Source of Truth ist dieses Verzeichnis plus die referenzierten Originalquellen.
 
 ## Was ist die Wirkungsökonomie?
 
@@ -36,7 +36,7 @@ Maßgeblich ist der **Status in der Website-Bibliothek** (`assets/data/library-v
 
 ## Produkte & Status (Kurzüberblick, Details in den Registries)
 
-- **wirkungsoekonomie.de** (PRODUCTION): statische Site, Rang-0–24-Portalsystem, Wirkungsradar, ~30 interaktive Tools, Bibliothek (3196 Registry-Einträge), Referenzbuch online, Quellenarchiv-Spiegel, Glossar (2281), statische `/api/v1/`, PWA, 7 EN-Seiten.
+- **wirkungsoekonomie.de** (PRODUCTION): statische Site, Rang-0-24-Portalsystem, Wirkungsradar, ~30 interaktive Tools, Bibliothek (3196 Registry-Einträge), Referenzbuch online, Quellenarchiv-Spiegel, Glossar (2281), statische `/api/v1/`, PWA, 7 EN-Seiten.
 - **akademie.wirkungsoekonomie.de** (PRODUCTION): Next.js/Vercel + Supabase; WÖk-G-Curriculum (9/36/108; 8 Vorlesungen published), Prüfungs-Engine, Moderations-Pipelines, KI-Beta, `/api/me`-Konto; Zertifikats-Ausstellung fehlt noch.
 - **institut.wirkungsoekonomie.de** (PRODUCTION, Repo lokal unbekannt): Herausgeber/Redaktion, Quellenarchiv-SoR (`/api/quellen`).
 - **WÖk-Kern-API auf Oracle** (PRODUCTION): Faktencheck, Frag-die-WÖk, Produktcheck, Feedback, Share, Community-Auth.

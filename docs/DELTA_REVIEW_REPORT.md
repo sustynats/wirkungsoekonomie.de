@@ -107,7 +107,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k031-lr-2026-2`
 - Quelle: WOeK_Master_Items_final_v1.2.xlsx
 - Aktion: Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.
-- Live-Referenztext/Hinweis: Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren – keine Menschen und keine persönliche Wertigkeit. Eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung.
+- Live-Referenztext/Hinweis: Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren - keine Menschen und keine persönliche Wertigkeit. Eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung.
 
 ### /referenz/kapitel-032-benchmarks-skalen-und-scorecards/ - addendum
 

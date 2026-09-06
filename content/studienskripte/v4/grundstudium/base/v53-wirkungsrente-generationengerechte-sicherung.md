@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v53-wirkungsrente-generationengerechte-sicherung.md curriculum=4.0 sanitized=true -->
-# V53 · Wirkungsrente und generationengerechte Sicherung – WÖk-Policy-Modell, kein bestehender Rentenanspruch
+# V53 · Wirkungsrente und generationengerechte Sicherung - WÖk-Policy-Modell, kein bestehender Rentenanspruch
 
 **lecture_id:** `WOEK-G-BASE-053`  
 **display_code:** `V53`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die gesetzliche Rente basiert heute vor allem auf Beitragszeiten, versichertem Einkommen und gesetzlich geregelten Anrechnungs-/Ausgleichstatbeständen. Die WÖk-Idee einer **Wirkungsrente** fragt zusätzlich, ob gesellschaftlich relevante, heute schwach vergütete Leistungen – etwa Pflege- und Sorgearbeit – in Alterssicherung besser berücksichtigt werden könnten. Das ist ein Reformmodell, kein bestehender Anspruch. Und es darf niemals bedeuten: „Wer als Mensch mehr positive Wirkung hat, bekommt mehr Rente.“
+Die gesetzliche Rente basiert heute vor allem auf Beitragszeiten, versichertem Einkommen und gesetzlich geregelten Anrechnungs-/Ausgleichstatbeständen. Die WÖk-Idee einer **Wirkungsrente** fragt zusätzlich, ob gesellschaftlich relevante, heute schwach vergütete Leistungen - etwa Pflege- und Sorgearbeit - in Alterssicherung besser berücksichtigt werden könnten. Das ist ein Reformmodell, kein bestehender Anspruch. Und es darf niemals bedeuten: „Wer als Mensch mehr positive Wirkung hat, bekommt mehr Rente.“
 
 ## Lernziele
 
@@ -39,7 +39,7 @@ Nicht:
 
 Sondern:
 
-> „Werden bestimmte gesellschaftlich relevante Leistungen im Alterssicherungssystem angemessen berücksichtigt – und welche Reformoption hätte welche Wirkung?“
+> „Werden bestimmte gesellschaftlich relevante Leistungen im Alterssicherungssystem angemessen berücksichtigt - und welche Reformoption hätte welche Wirkung?“
 
 Das ist eine institutionelle Policy-Frage.
 
@@ -70,7 +70,7 @@ Prüfen:
 - Demografie,
 - Produktivität.
 
-`GENERATIONAL_EFFECT != ONLY_FISCAL_BALANCE` – auch Care-Verteilung, Erwerbschancen und Armutsrisiko zählen.
+`GENERATIONAL_EFFECT != ONLY_FISCAL_BALANCE` - auch Care-Verteilung, Erwerbschancen und Armutsrisiko zählen.
 
 ## 5. Finanzierung
 
@@ -214,7 +214,7 @@ Die WÖk-Frage ist deshalb konkreter: Werden bestimmte gesellschaftlich wichtige
 
 Dann schauen wir auf Finanzierung, Generationen, Care-Verteilung und Arbeitsmarkt.
 
-Mehr Anerkennung kann Altersarmut senken – aber vielleicht auch traditionelle Rollen stabilisieren, wenn Betreuung und Erwerbschancen nicht mitgedacht werden.
+Mehr Anerkennung kann Altersarmut senken - aber vielleicht auch traditionelle Rollen stabilisieren, wenn Betreuung und Erwerbschancen nicht mitgedacht werden.
 
 Der Merksatz lautet:
 

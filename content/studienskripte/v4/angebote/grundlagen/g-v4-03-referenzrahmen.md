@@ -48,7 +48,7 @@ Darum wäre die Aussage falsch, Demokratie oder Rechtsstaatlichkeit kämen in de
 
 ## 3. WÖk-SDG+
 
-SDG+ ist **keine offizielle UN-Kategorie**. Die WÖk nutzt den Begriff, um bestimmte Voraussetzungen demokratischer Korrekturfähigkeit – etwa Medienqualität, Diskursfähigkeit, institutionelles Vertrauen und digitale Selbstbestimmung – expliziter zu operationalisieren.
+SDG+ ist **keine offizielle UN-Kategorie**. Die WÖk nutzt den Begriff, um bestimmte Voraussetzungen demokratischer Korrekturfähigkeit - etwa Medienqualität, Diskursfähigkeit, institutionelles Vertrauen und digitale Selbstbestimmung - expliziter zu operationalisieren.
 
 Das ist eine WÖk-Erweiterung, keine Behauptung, die UN habe diese Themen übersehen.
 
@@ -78,11 +78,11 @@ Ein Verkehrsprojekt wird mit SDG 3, SDG 11 und einem DNS-Ziel verknüpft. Das ze
 
 ## Typische Fehlinterpretationen
 
-- „SDGs enthalten keine Demokratie.“ – Falsch; insbesondere SDG 16 ist relevant.
-- „SDG+ ist eine UN-Erweiterung.“ – Falsch; WÖk-eigene Kategorie.
-- „DNS-Indikator = Wirkung.“ – Falsch; Indikator ist Beobachtungsgröße.
-- „SDG-Bezug beweist positive Wirkung.“ – Falsch.
-- „Art. 20a gehört in SDG+.“ – Nein, eigene Rechts-/Staatszielebene.
+- „SDGs enthalten keine Demokratie.“ - Falsch; insbesondere SDG 16 ist relevant.
+- „SDG+ ist eine UN-Erweiterung.“ - Falsch; WÖk-eigene Kategorie.
+- „DNS-Indikator = Wirkung.“ - Falsch; Indikator ist Beobachtungsgröße.
+- „SDG-Bezug beweist positive Wirkung.“ - Falsch.
+- „Art. 20a gehört in SDG+.“ - Nein, eigene Rechts-/Staatszielebene.
 
 ## Was bestehende Systeme bereits können
 
@@ -145,6 +145,6 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

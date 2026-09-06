@@ -671,7 +671,8 @@ const merged = Array.from(byUrl.values())
 // per-entry content hashes already identify the underlying source revision.
 const generatedAt = "source-derived";
 
-fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
+// One JSON record per line keeps diffs local without megabytes of indentation.
+fs.writeFileSync(indexPath, `[\n${merged.map(entry => JSON.stringify(entry)).join(",\n")}\n]\n`);
 const stableMeta = Object.fromEntries(
   Object.entries(meta)
     .filter(([route]) => isIndexableSearchRoute(route))

@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V9  
 **Modul/Abschnitt:** WM  
 **Titel:** Kommunikation ohne Impact-Washing  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v9-kommunikation-ohne-impact-washing.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v9.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v9.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Kommunikation ohne Impact-Washing** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -51,26 +48,26 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Glaubwürdig statt werblich – Kommunikation ohne Impact-Washing
+- **Titel:** Glaubwürdig statt werblich - Kommunikation ohne Impact-Washing
 - **Länge:** ~14 Min
 - **Kernaussage in einem Satz:** Glaubwürdige Wirkungskommunikation trennt Potenzial von Wirkung, belegt Aussagen, benennt Grenzen und verwechselt Reichweite nicht mit Wirkung.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Was Impact-Washing ist.** Wirkung behaupten, die nicht belegt ist; Potenzial als Wirkung ausgeben; Einzelfälle verallgemeinern; Reichweite als Wirkung verkaufen.
+**Abschnitt A - Was Impact-Washing ist.** Wirkung behaupten, die nicht belegt ist; Potenzial als Wirkung ausgeben; Einzelfälle verallgemeinern; Reichweite als Wirkung verkaufen.
 
-**Abschnitt B – Die vier Ehrlichkeitsregeln.** Potenzial ≠ Wirkung kennzeichnen; belegen statt behaupten; Grenzen/Negatives mitnennen; Reichweite nicht als Wirkung ausgeben.
+**Abschnitt B - Die vier Ehrlichkeitsregeln.** Potenzial ≠ Wirkung kennzeichnen; belegen statt behaupten; Grenzen/Negatives mitnennen; Reichweite nicht als Wirkung ausgeben.
 
-**Abschnitt C – Sprache der Wirkungsökonomie.** Präzise Begriffe helfen: „Wirkungspotenzial", „angestrebte Wirkung", „geprüfte Netto-Wirkung" statt pauschal „wirksam".
+**Abschnitt C - Sprache der Wirkungsökonomie.** Präzise Begriffe helfen: „Wirkungspotenzial", „angestrebte Wirkung", „geprüfte Netto-Wirkung" statt pauschal „wirksam".
 
-**Abschnitt D – Claim-Check.** Jede Wirkungsaussage vor Veröffentlichung prüfen: Beleg? Potenzial oder Wirkung? Grenzen genannt? Referenzrahmen?
+**Abschnitt D - Claim-Check.** Jede Wirkungsaussage vor Veröffentlichung prüfen: Beleg? Potenzial oder Wirkung? Grenzen genannt? Referenzrahmen?
 
-**Abschnitt E – Nutzen.** Glaubwürdige Kommunikation schützt vor Vorwürfen, stärkt Vertrauen und ist selbst Teil positiver Wirkung (Diskursqualität, SDG+).
+**Abschnitt E - Nutzen.** Glaubwürdige Kommunikation schützt vor Vorwürfen, stärkt Vertrauen und ist selbst Teil positiver Wirkung (Diskursqualität, SDG+).
 
 ## 4. Skript / Folien (Lernseite)
 
-**Impact-Washing ist das Kommunikations-Pendant zum Greenwashing.** Es entsteht, wenn Organisationen Wirkung behaupten, die sie nicht belegen können – oder **Wirkungspotenzial** als eingetretene **Wirkung** ausgeben (Grundlagen V2). Die Grundregel „**Reichweite ist nicht Wirkung**" gilt in der Kommunikation besonders: Große Sichtbarkeit ist kein Wirkungsnachweis.
+**Impact-Washing ist das Kommunikations-Pendant zum Greenwashing.** Es entsteht, wenn Organisationen Wirkung behaupten, die sie nicht belegen können - oder **Wirkungspotenzial** als eingetretene **Wirkung** ausgeben (Grundlagen V2). Die Grundregel „**Reichweite ist nicht Wirkung**" gilt in der Kommunikation besonders: Große Sichtbarkeit ist kein Wirkungsnachweis.
 
 **Vier Ehrlichkeitsregeln für Wirkungskommunikation:**
 
@@ -83,7 +80,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 **Präzise Sprache schützt.** Die Begriffe der Wirkungsökonomie sind hier ein Werkzeug, keine Kosmetik: „angestrebte Wirkung", „Wirkungspotenzial", „geprüfte Netto-Wirkung" sagen genau, was gemeint ist. Das ist keine Sprachpolizei (Grundlagen V7), sondern Voraussetzung für glaubwürdige Aussagen.
 
-**Der Claim-Check** stellt vor jeder Veröffentlichung vier Fragen: Ist die Aussage **belegt**? Ist es **Potenzial oder Wirkung**? Sind **Grenzen** genannt? Ist der **Referenzrahmen** (SDGs/SDG+) benannt? Aussagen, die den Check nicht bestehen, werden umformuliert – nicht veröffentlicht und später verteidigt. Glaubwürdige Wirkungskommunikation ist damit selbst Teil positiver Netto-Wirkung: Sie stärkt Diskursqualität und Vertrauen (SDG+).
+**Der Claim-Check** stellt vor jeder Veröffentlichung vier Fragen: Ist die Aussage **belegt**? Ist es **Potenzial oder Wirkung**? Sind **Grenzen** genannt? Ist der **Referenzrahmen** (SDGs/SDG+) benannt? Aussagen, die den Check nicht bestehen, werden umformuliert - nicht veröffentlicht und später verteidigt. Glaubwürdige Wirkungskommunikation ist damit selbst Teil positiver Netto-Wirkung: Sie stärkt Diskursqualität und Vertrauen (SDG+).
 
 ## 5. Glossar der Kernbegriffe
 
@@ -91,7 +88,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 |---|---|---|
 | Impact-Washing | unbelegte oder überzogene Wirkungsbehauptung | `begriffe/impact-washing` |
 | Greenwashing | Vortäuschen ökologischer Wirkung | `begriffe/greenwashing` |
-| Reichweite ≠ Wirkung | Aufmerksamkeit ist kein Wirkungsnachweis | _(noch keine Seite – Begriffsleitfaden §4)_ |
+| Reichweite ≠ Wirkung | Aufmerksamkeit ist kein Wirkungsnachweis | _(noch keine Seite - Begriffsleitfaden §4)_ |
 | Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
 
 ## 6. Verständnisfragen (Mini-Quiz)
@@ -131,7 +128,6 @@ Nimm drei reale Wirkungsaussagen (aus deiner Organisation oder extern) und wende
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -329,12 +325,11 @@ Die folgende Runde verdichtet WM-V9 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V9. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §4 (Reichweite ≠ Wirkung)
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §4 (Reichweite ≠ Wirkung)
 - Glossar: `begriffe/impact-washing`, `begriffe/greenwashing`, `begriffe/wirkungspotenzial`
 
 ## 4. Wirkungsökonomische Vertiefung
@@ -421,12 +416,11 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 |---|---|---|
 | Impact-Washing | unbelegte oder überzogene Wirkungsbehauptung | `begriffe/impact-washing` |
 | Greenwashing | Vortäuschen ökologischer Wirkung | `begriffe/greenwashing` |
-| Reichweite ≠ Wirkung | Aufmerksamkeit ist kein Wirkungsnachweis | _(noch keine Seite – Begriffsleitfaden §4)_ |
+| Reichweite ≠ Wirkung | Aufmerksamkeit ist kein Wirkungsnachweis | _(noch keine Seite - Begriffsleitfaden §4)_ |
 | Wirkungspotenzial | Möglichkeit, dass Wirkung entsteht | `begriffe/wirkungspotenzial` |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -832,8 +826,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v9-kommunikation-ohne-impact-washing.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

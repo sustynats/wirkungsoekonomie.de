@@ -5,9 +5,7 @@
 **Vorlesungscode:** V30  
 **Modul/Abschnitt:** G3.2  
 **Titel:** Datenqualität, Audit und Unsicherheit  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v30-datenqualitaet-audit-unsicherheit.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v30.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v30.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Datenqualität, Audit und Unsicherheit** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V29 „WÖk-IDs, Benchmarks und Archetypen"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Eine Bewertung ist nur so belastbar wie ihre Daten. Aber Daten sind selten perfe
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Datenqualität – wie belastbar ist eine Wirkungsbewertung?
+- **Titel:** Datenqualität - wie belastbar ist eine Wirkungsbewertung?
 - **Länge:** ~15 Min
 - **Kernaussage in einem Satz:** Datenqualität, Audit und Unsicherheitskennzeichnung machen Wirkungsbewertungen überprüfbar, ohne Perfektion vorzutäuschen.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Daten sind nicht automatisch Wahrheit.** Daten können fehlen, falsch, veraltet, interessengeleitet oder unpassend sein.
+**Abschnitt A - Daten sind nicht automatisch Wahrheit.** Daten können fehlen, falsch, veraltet, interessengeleitet oder unpassend sein.
 
-**Abschnitt B – Qualitätsdimensionen.** Relevanz, Genauigkeit, Aktualität, Vollständigkeit, Nachvollziehbarkeit und Vergleichbarkeit.
+**Abschnitt B - Qualitätsdimensionen.** Relevanz, Genauigkeit, Aktualität, Vollständigkeit, Nachvollziehbarkeit und Vergleichbarkeit.
 
-**Abschnitt C – Audit und Assurance.** Prüfung fragt: Stimmen Quelle, Methode, Berechnung, Grenze und Beleg?
+**Abschnitt C - Audit und Assurance.** Prüfung fragt: Stimmen Quelle, Methode, Berechnung, Grenze und Beleg?
 
-**Abschnitt D – Unsicherheit markieren.** Unsichere Daten dürfen genutzt werden, wenn ihr Status sichtbar ist und Entscheidungen entsprechend vorsichtig bleiben.
+**Abschnitt D - Unsicherheit markieren.** Unsichere Daten dürfen genutzt werden, wenn ihr Status sichtbar ist und Entscheidungen entsprechend vorsichtig bleiben.
 
-**Abschnitt E – Lernende Bewertung.** Datenqualität verbessert sich durch Rückkopplung, nicht durch einmalige Perfektion.
+**Abschnitt E - Lernende Bewertung.** Datenqualität verbessert sich durch Rückkopplung, nicht durch einmalige Perfektion.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -128,7 +124,6 @@ Bewerte drei Datenquellen für ein Wirkungsfeld nach Relevanz, Aktualität und N
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -276,12 +271,11 @@ Die folgende Runde verdichtet V30 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V30. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Datenqualität, Audit, Wirkungsmessung
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Datenqualität, Audit, Wirkungsmessung
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/datenqualitaet`, `begriffe/wirkungsaudit`, `begriffe/wirkungsassurance`
 
@@ -374,7 +368,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 4
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -935,8 +928,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v30-datenqualitaet-audit-unsicherheit.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

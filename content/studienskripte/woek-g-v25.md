@@ -5,9 +5,7 @@
 **Vorlesungscode:** V25  
 **Modul/Abschnitt:** G3.1  
 **Titel:** SDGs und Agenda 2030 als globaler Konsens der 193 Staaten  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v25-sdgs-agenda-2030-globaler-konsens.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v25.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v25.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **SDGs und Agenda 2030 als globaler Konsens der 193 Staaten** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V24 „Deeskalierende und demokratiestärkende Kommunikation"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Wenn Wirkung bewertet werden soll, braucht sie einen Referenzrahmen. Die SDGs si
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** SDGs und Agenda 2030 – der globale Mindestkompass
+- **Titel:** SDGs und Agenda 2030 - der globale Mindestkompass
 - **Länge:** ~14 Min
 - **Kernaussage in einem Satz:** Die SDGs bilden den global anerkannten Mindestkompass für positive Wirkung, müssen aber für offene Gesellschaften durch SDG+ präzisiert werden.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Warum ein Referenzrahmen nötig ist.** Ohne Referenzrahmen bleibt Wirkung beliebig. Jede Organisation könnte behaupten, ihre Wirkung sei gut.
+**Abschnitt A - Warum ein Referenzrahmen nötig ist.** Ohne Referenzrahmen bleibt Wirkung beliebig. Jede Organisation könnte behaupten, ihre Wirkung sei gut.
 
-**Abschnitt B – Agenda 2030.** Die 17 SDGs ordnen zentrale Menschheitsaufgaben: Armut, Gesundheit, Bildung, Klima, Biodiversität, Arbeit, Institutionen, Partnerschaft.
+**Abschnitt B - Agenda 2030.** Die 17 SDGs ordnen zentrale Menschheitsaufgaben: Armut, Gesundheit, Bildung, Klima, Biodiversität, Arbeit, Institutionen, Partnerschaft.
 
-**Abschnitt C – Stärke des Konsenses.** Die SDGs sind politisch breit anschlussfähig, weil sie von allen UN-Mitgliedstaaten getragen werden.
+**Abschnitt C - Stärke des Konsenses.** Die SDGs sind politisch breit anschlussfähig, weil sie von allen UN-Mitgliedstaaten getragen werden.
 
-**Abschnitt D – Grenzen der SDGs.** Sie sind breit, teils konfliktbehaftet und nicht ausreichend als Schutzrahmen für offene Demokratie, Grundrechte und digitale Macht.
+**Abschnitt D - Grenzen der SDGs.** Sie sind breit, teils konfliktbehaftet und nicht ausreichend als Schutzrahmen für offene Demokratie, Grundrechte und digitale Macht.
 
-**Abschnitt E – Brücke zu SDG+.** Die WÖk nutzt SDGs als Mindestkompass und ergänzt sie durch SDG+, Mensch, Planet und Demokratie.
+**Abschnitt E - Brücke zu SDG+.** Die WÖk nutzt SDGs als Mindestkompass und ergänzt sie durch SDG+, Mensch, Planet und Demokratie.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -128,7 +124,6 @@ Ordne ein Produkt oder Projekt drei SDGs zu. Schreibe daneben, welche tatsächli
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -294,12 +289,11 @@ Die folgende Runde verdichtet V25 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V25. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Referenzrahmen, SDG/SDG+
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Referenzrahmen, SDG/SDG+
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/sdgs`, `begriffe/sdg-plus`, `begriffe/referenzrahmen`
 
@@ -392,7 +386,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 3
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -1054,8 +1047,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v25-sdgs-agenda-2030-globaler-konsens.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

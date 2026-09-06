@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V2 – Nutzungsfluss und Abnahme
+# Wirkungscheck Bundestag V2 - Nutzungsfluss und Abnahme
 
 ## Hauptfluss
 

@@ -43,7 +43,7 @@ Eine konkrete Zustandsänderung, z. B. 100 kg CO₂e weniger oder höhere Unfall
 
 ### Wirkungsprofil
 
-Mehrere Wirkungen werden nebeneinander dargestellt – mit Richtung, Evidenz, Betroffenen, Zeit und Schutzgrenzen.
+Mehrere Wirkungen werden nebeneinander dargestellt - mit Richtung, Evidenz, Betroffenen, Zeit und Schutzgrenzen.
 
 ### Aggregierter Index
 
@@ -70,7 +70,7 @@ Aggregation kann sinnvoll sein, wenn:
 
 Beispiel:
 
-Mehrere Treibhausgase können über etablierte CO₂-Äquivalente in einer Klimawirkungsgröße zusammengeführt werden – mit allen methodischen Grenzen.
+Mehrere Treibhausgase können über etablierte CO₂-Äquivalente in einer Klimawirkungsgröße zusammengeführt werden - mit allen methodischen Grenzen.
 
 ## 4. Wann Aggregation problematisch wird
 
@@ -107,7 +107,7 @@ Jede Wahl enthält normative Annahmen.
 
 Darum muss sie sichtbar sein.
 
-## 6. Monetarisierung hilft – aber löst nicht alles
+## 6. Monetarisierung hilft - aber löst nicht alles
 
 True-Cost-Ansätze und T-SROI können verschiedene Wirkungen monetarisieren.
 
@@ -192,7 +192,7 @@ Falsch. Mehrdimensionale Profile können sehr entscheidungsrelevant sein.
 
 ## WÖk-Abgrenzung · Profil vor Gesamtsaldierung
 
-WÖk beansprucht keine universell gültige Ein-Zahl-Messung von Wirkung. Aggregation ist nur dort zulässig, wo Dimensionen, Skalen, Gewichte und Kompensationsregeln fachlich begründbar sind. Heterogene politische Portfolios, Grundrechtsfragen und harte Schutzgrenzen werden nicht künstlich zu einer Gesamtnote verrechnet. Der WÖk-Zusatz ist die transparente Entscheidungs- und Priorisierungslogik – nicht Scheingenauigkeit durch einen obligatorischen Score.
+WÖk beansprucht keine universell gültige Ein-Zahl-Messung von Wirkung. Aggregation ist nur dort zulässig, wo Dimensionen, Skalen, Gewichte und Kompensationsregeln fachlich begründbar sind. Heterogene politische Portfolios, Grundrechtsfragen und harte Schutzgrenzen werden nicht künstlich zu einer Gesamtnote verrechnet. Der WÖk-Zusatz ist die transparente Entscheidungs- und Priorisierungslogik - nicht Scheingenauigkeit durch einen obligatorischen Score.
 
 ## 11. Quellen
 
@@ -212,7 +212,7 @@ Dann entscheide für jede Dimension:
 - nur qualitativ vergleichbar?
 - harte Grenze?
 
-Erzeuge erst danach – falls zulässig – einen Teilindex. Begründe, warum du den Rest nicht hineingerechnet hast.
+Erzeuge erst danach - falls zulässig - einen Teilindex. Begründe, warum du den Rest nicht hineingerechnet hast.
 
 ## 14. Prüfungsrelevanz
 

@@ -1,4 +1,4 @@
-# Demokratie schützen als Bürgerin und Bürger – Narrative erkennen
+# Demokratie schützen als Bürgerin und Bürger - Narrative erkennen
 
 **Reihe:** Demokratie schützen · Bürger:innen · DB4
 
@@ -12,7 +12,7 @@ Menschen brauchen Erzählungen, um viele einzelne Informationen einzuordnen. Ein
 
 Ein **Narrativ** ist deshalb weder automatisch eine Lüge noch automatisch gefährlich. Es ist ein Deutungsrahmen: eine wiederkehrende Geschichte darüber, was passiert, wer verantwortlich ist und was daraus folgen soll. Diese Lektion zeigt, wie Sie Narrative erkennen können, ohne Menschen zu etikettieren, ohne Kritik zu verbieten und ohne jede politische Erzählung für Manipulation zu halten.
 
-Die Leitfrage lautet: **Hilft diese Erzählung dabei, einen Vorgang genauer zu prüfen und gemeinsam zu bearbeiten – oder macht sie Gegenbelege, Zwischentöne und Korrekturwege unsichtbar?**
+Die Leitfrage lautet: **Hilft diese Erzählung dabei, einen Vorgang genauer zu prüfen und gemeinsam zu bearbeiten - oder macht sie Gegenbelege, Zwischentöne und Korrekturwege unsichtbar?**
 
 Diese Lektion ist kein Test für gute oder schlechte Menschen und keine Anleitung, politische Überzeugungen zu sortieren. Sie betrachtet Aussagen, Darstellungsweisen und die Bedingungen eines Gesprächs. Eine Kritik kann zutreffen, auch wenn sie zugespitzt formuliert ist. Eine beruhigende Geschichte kann falsch sein, auch wenn sie freundlich klingt. Entscheidend ist, ob eine Behauptung einen Gegenstand, Belege und einen Weg zur Korrektur behält.
 
@@ -46,7 +46,7 @@ Am folgenden Morgen zeigt sich, warum diese Unterscheidung praktisch wichtig ist
 
 Genau hier liegt ein demokratischer Gewinn: Niemand muss die Sorge erst ablegen, um nachfragen zu dürfen. Aber auch niemand muss eine große Erzählung übernehmen, um die Sorge ernst zu nehmen.
 
-## Was ein Narrativ leistet – und was nicht
+## Was ein Narrativ leistet - und was nicht
 
 Ein einzelner Satz wie „Der Rat hat 80.000 Euro für Planung eingestellt“ ist eine überprüfbare Behauptung. „Ich finde, das Geld sollte zuerst in den Sportplatz fließen“ ist eine politische Meinung. Ein Narrativ verbindet mehrere Sätze zu einer Ordnung: **Wir verlieren etwas, weil eine mächtige Seite gegen uns handelt; die Zukunft ist dadurch bereits entschieden.**
 
@@ -117,7 +117,7 @@ Die folgenden Muster bewerten keine Menschen. Sie beschreiben Formen, die in vie
 
 ### 1. Die Alles-oder-nichts-Erzählung
 
-Aus einer Entscheidung wird eine totale Zukunft: „Wenn dieses Haus umgebaut wird, ist das Dorf verloren.“ Solche Sätze können auf ein echtes Risiko hinweisen. Sie überspringen aber Zwischenstufen, Alternativen und Gestaltungsmöglichkeiten. Die Gegenfrage lautet: **Welche konkrete Folge befürchtest du, in welchem Zeitraum – und was könnte sie verhindern?**
+Aus einer Entscheidung wird eine totale Zukunft: „Wenn dieses Haus umgebaut wird, ist das Dorf verloren.“ Solche Sätze können auf ein echtes Risiko hinweisen. Sie überspringen aber Zwischenstufen, Alternativen und Gestaltungsmöglichkeiten. Die Gegenfrage lautet: **Welche konkrete Folge befürchtest du, in welchem Zeitraum - und was könnte sie verhindern?**
 
 ### 2. Die pauschale Gegenseite
 
@@ -145,7 +145,7 @@ Die Zahl der Klicks, eine volle Sitzung oder ein besonders oft geteiltes Video s
 
 Für Eichenrode wären deshalb mehrere Beobachtungen nötig, etwa: Werden die offenen Kostenfragen tatsächlich beantwortet? Können Personen mit unterschiedlichen Interessen ohne Abwertung sprechen? Ist der Weg von Einwand zu Antwort sichtbar? Werden nachgewiesene Fehler korrigiert? Solche Beobachtungen beweisen noch keine positive Netto-Wirkung. Sie machen aber sichtbar, welche Zustände sich verändern und welche Nebenwirkungen auftreten.
 
-Soll eine Maßnahme – etwa ein lokales Informationsformat – als positiv bewertet werden, braucht sie einen transparenten Referenzrahmen. In der Wirkungsökonomie ist positive Netto-Wirkung nicht dasselbe wie ein guter Eindruck; sie wird im Verhältnis zu [Agenda 2030 und SDG+](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-verstehen-sdgs-sdgplus-agenda-2030-index-html/) diskutiert und muss Schutzverletzungen mit berücksichtigen. Ein Format, das viele Menschen mobilisiert, aber einzelne Gruppen einschüchtert oder falsche Vorwürfe gegen Personen verbreitet, kann seinen Erfolg nicht mit Beteiligungszahlen verrechnen.
+Soll eine Maßnahme - etwa ein lokales Informationsformat - als positiv bewertet werden, braucht sie einen transparenten Referenzrahmen. In der Wirkungsökonomie ist positive Netto-Wirkung nicht dasselbe wie ein guter Eindruck; sie wird im Verhältnis zu [Agenda 2030 und SDG+](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-verstehen-sdgs-sdgplus-agenda-2030-index-html/) diskutiert und muss Schutzverletzungen mit berücksichtigen. Ein Format, das viele Menschen mobilisiert, aber einzelne Gruppen einschüchtert oder falsche Vorwürfe gegen Personen verbreitet, kann seinen Erfolg nicht mit Beteiligungszahlen verrechnen.
 
 ## Eine ruhige Gegenbewegung: von der Geschichte zur Frage
 
@@ -156,7 +156,7 @@ Die Gegenbewegung zu einem geschlossenen Narrativ ist nicht ein Gegen-Narrativ, 
 | „Sie verkaufen unser Dorf.“ | „Welche Entscheidung und welcher Vertrag sind konkret gemeint?“ |
 | „Man darf nichts mehr sagen.“ | „Welche Kritik oder Frage konnte nicht geäußert werden, und wo ist das dokumentiert?“ |
 | „Alle Medien verschweigen das.“ | „Welche Redaktion oder welcher Bericht lässt welchen belegten Punkt aus?“ |
-| „Wer widerspricht, ist gegen uns.“ | „Welche Sorge wird durch die Rückfrage übersehen – und welcher Beleg würde uns weiterbringen?“ |
+| „Wer widerspricht, ist gegen uns.“ | „Welche Sorge wird durch die Rückfrage übersehen - und welcher Beleg würde uns weiterbringen?“ |
 
 Die Frage muss nicht taktisch sein. Sie darf zu dem Ergebnis führen, dass ein tatsächlicher Fehler, ein unfairer Plan oder ein übersehener Bedarf sichtbar wird. Ihr Wert liegt darin, dass eine Antwort möglich bleibt.
 
@@ -172,7 +172,7 @@ Die Antwort auf eine pauschale Erzählung darf nicht bloß spiegelbildlich werde
 
 Erstens kann die konkrete Erfahrung anerkannt werden: „Du machst dir Sorgen um das Gasthaus und die Vereine.“ Zweitens wird die überprüfbare Frage herausgelöst: „Welche Nutzung, welche Kosten oder welche Zusage fehlt dir?“ Drittens kann eine angemessene Handlung vereinbart werden: Unterlagen lesen, eine Frage in die Sitzung geben, einen Fehler nachtragen oder eine andere Lösung vorschlagen. Diese Reihenfolge ist keine Gesprächstechnik zum Gewinnen. Sie verhindert vielmehr, dass die Anerkennung einer Sorge zugleich als Zustimmung zu jeder zugespitzten Erklärung verstanden wird.
 
-Manchmal ist eine kurze Grenze nötig. Bei Drohungen, gezielter Entmenschlichung, der Veröffentlichung privater Daten oder falschen Behauptungen über identifizierbare Personen steht Schutz vor der Fortsetzung der Debatte. Die Grenze richtet sich gegen die konkrete Handlung oder Aussage, nicht gegen den Wert eines Menschen. Danach können, soweit es sicher ist, die offenen Sachfragen weiter behandelt werden. Nichtkompensation bedeutet gerade nicht, Konflikte zu glätten. Sie bedeutet, dass kein möglicher Nutzen – auch nicht Aktivierung, Reichweite oder Unterhaltung – eine schwere Schutzverletzung rechtfertigt.
+Manchmal ist eine kurze Grenze nötig. Bei Drohungen, gezielter Entmenschlichung, der Veröffentlichung privater Daten oder falschen Behauptungen über identifizierbare Personen steht Schutz vor der Fortsetzung der Debatte. Die Grenze richtet sich gegen die konkrete Handlung oder Aussage, nicht gegen den Wert eines Menschen. Danach können, soweit es sicher ist, die offenen Sachfragen weiter behandelt werden. Nichtkompensation bedeutet gerade nicht, Konflikte zu glätten. Sie bedeutet, dass kein möglicher Nutzen - auch nicht Aktivierung, Reichweite oder Unterhaltung - eine schwere Schutzverletzung rechtfertigt.
 
 Die [OECD-Empfehlung zur Informationsintegrität](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) ist ein externer Orientierungsrahmen für zugängliche, vielfältige und korrigierbare Informationsräume. Sie ersetzt keine lokale Entscheidung und keine Prüfung eines einzelnen Beitrags. Für die Praxis erinnert sie daran, dass Vielfalt von Stimmen, nachvollziehbare Quellen und Korrekturmöglichkeiten zusammengehören.
 

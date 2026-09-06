@@ -97,7 +97,7 @@ export const QUESTION_TOPICS = [
   {id:'resilienz', terms:['resilienz','resilient','nachhaltigkeit','systemarchitektur'], questions:[
     q('Was unterscheidet Systemresilienz von Wirkungsresilienz?', '/begriffe/wirkungsresilienz/'),
     q('Warum ist nicht jede widerstandsfähige Struktur nachhaltig?', '/begriffe/systemresilienz/'),
-    q('Wie wird Nachhaltigkeit im Referenzrahmen Mensch–Planet–Demokratie definiert?', '/begriffe/nachhaltigkeit/'),
+    q('Wie wird Nachhaltigkeit im Referenzrahmen Mensch-Planet-Demokratie definiert?', '/begriffe/nachhaltigkeit/'),
   ]},
   {id:'pricing', terms:['value-based','value based','value-pricing','value pricing','kundennutzen','kundenwert'], questions:[
     q('Woran orientiert sich Value-based Pricing?', '/begriffe/value-based-pricing/'),

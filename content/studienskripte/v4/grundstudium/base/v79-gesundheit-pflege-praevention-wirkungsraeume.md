@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Im Gesundheitswesen ist „mehr Leistung“ nicht automatisch „mehr Gesundheit“. Mehr Untersuchungen, Betten oder Ausgaben sind Outputs. Entscheidend sind **Gesundheit, Lebensqualität, Sicherheit, Zugang und Pflegequalität**. Prävention ist besonders anspruchsvoll, weil ihr Erfolg oft darin besteht, dass etwas nicht passiert. WÖk verbindet deshalb medizinische Evidenz, Versorgung, Verteilung, Prävention und Systemresilienz – ohne ärztliche oder HTA-Entscheidungen zu ersetzen.
+Im Gesundheitswesen ist „mehr Leistung“ nicht automatisch „mehr Gesundheit“. Mehr Untersuchungen, Betten oder Ausgaben sind Outputs. Entscheidend sind **Gesundheit, Lebensqualität, Sicherheit, Zugang und Pflegequalität**. Prävention ist besonders anspruchsvoll, weil ihr Erfolg oft darin besteht, dass etwas nicht passiert. WÖk verbindet deshalb medizinische Evidenz, Versorgung, Verteilung, Prävention und Systemresilienz - ohne ärztliche oder HTA-Entscheidungen zu ersetzen.
 
 ## Lernziele
 
@@ -224,7 +224,7 @@ Wähle eine Präventions- oder Versorgungsmaßnahme. Trenne Inputs/Outputs/Outco
 
 Im Gesundheitswesen ist mehr nicht automatisch besser.
 
-Mehr Untersuchungen, mehr Betten, mehr Geld – das sind zunächst Inputs und Outputs.
+Mehr Untersuchungen, mehr Betten, mehr Geld - das sind zunächst Inputs und Outputs.
 
 Der Zielzustand ist Gesundheit.
 
@@ -238,7 +238,7 @@ Sie verbindet diese Fachbasis mit Zugang, Verteilung, Nebenwirkungen und Systemr
 
 Der Merksatz lautet:
 
-**Gesundheitswirkung misst nicht, wie viel das System tut. Sie misst, ob Menschen gesünder, sicherer und tatsächlich versorgt werden – und ob das System diese Funktion auch unter Stress halten kann.**
+**Gesundheitswirkung misst nicht, wie viel das System tut. Sie misst, ob Menschen gesünder, sicherer und tatsächlich versorgt werden - und ob das System diese Funktion auch unter Stress halten kann.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

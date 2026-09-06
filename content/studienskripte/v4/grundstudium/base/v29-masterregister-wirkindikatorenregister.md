@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Das WÖk-Masterregister beantwortet **„Was betrachten wir?“** Das Wirkindikatorenregister beantwortet **„Womit beobachten wir diesen Zustand?“** Dazwischen liegt die State Variable – der konkret relevante Zustand. Ein Benchmark hilft beim Vergleich, ein Archetyp beim Wiederverwenden typischer Wirkmechanismen. Keines dieser Dinge ist automatisch ein Score oder eine Wirkung. Die Kernkette lautet: `MasterItem -> StateVariable -> Indicator -> Observation -> Analysis / RealityCheck`.
+Das WÖk-Masterregister beantwortet **„Was betrachten wir?“** Das Wirkindikatorenregister beantwortet **„Womit beobachten wir diesen Zustand?“** Dazwischen liegt die State Variable - der konkret relevante Zustand. Ein Benchmark hilft beim Vergleich, ein Archetyp beim Wiederverwenden typischer Wirkmechanismen. Keines dieser Dinge ist automatisch ein Score oder eine Wirkung. Die Kernkette lautet: `MasterItem -> StateVariable -> Indicator -> Observation -> Analysis / RealityCheck`.
 
 ## Lernziele
 
@@ -212,7 +212,7 @@ Nicht jede Wirkung hat sofort einen brauchbaren Indikator.
 
 Dann gibt es drei Möglichkeiten:
 
-1. vorhandenen Proxy verwenden – klar als Proxy markieren,
+1. vorhandenen Proxy verwenden - klar als Proxy markieren,
 2. neue Messgröße definieren,
 3. Bereich als `DATA_GAP/NOT_ASSESSABLE` offen lassen.
 
@@ -295,7 +295,7 @@ Dann könnte man einfach anfangen, tausende Kennzahlen hineinzuschreiben.
 
 CO₂. Wartezeiten. Löhne. Artenzahl. Unfallrate. Vertrauen.
 
-Und irgendwann haben wir sehr viele Zahlen – aber noch keine Ordnung.
+Und irgendwann haben wir sehr viele Zahlen - aber noch keine Ordnung.
 
 Darum trennt die WÖk zwei Ebenen.
 
@@ -319,7 +319,7 @@ Ist aber eigentlich Wirkungslogik.
 
 Denn wenn wir diese Ebenen nicht trennen, wird aus jeder verfügbaren Kennzahl plötzlich ein Wirkungsurteil.
 
-Auch Benchmarks sind nur Vergleiche. Ein Branchendurchschnitt ist nicht automatisch gut. Und ein Archetyp ist nur eine Prüfhilfe – keine Maschine, die Fallurteile produziert.
+Auch Benchmarks sind nur Vergleiche. Ein Branchendurchschnitt ist nicht automatisch gut. Und ein Archetyp ist nur eine Prüfhilfe - keine Maschine, die Fallurteile produziert.
 
 Der Merksatz lautet:
 

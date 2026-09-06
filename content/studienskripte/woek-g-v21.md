@@ -5,9 +5,7 @@
 **Vorlesungscode:** V21  
 **Modul/Abschnitt:** G2.3  
 **Titel:** Produkte, Technologien und Institutionen als Auslöser  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v21-produkte-technologien-institutionen-als-ausloeser.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v21.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v21.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Produkte, Technologien und Institutionen als Auslöser** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,30 +42,29 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V20 „Gesellschaftliche Resonanzfaktoren"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
-Ein Produkt, eine Technologie oder eine Institution ist nie nur „ein Ding". Es löst Verhalten aus, setzt Anreize, verschiebt Routinen und verteilt Risiken. Welche Zustände verändert ein Auslöser – und bei wem?
+Ein Produkt, eine Technologie oder eine Institution ist nie nur „ein Ding". Es löst Verhalten aus, setzt Anreize, verschiebt Routinen und verteilt Risiken. Welche Zustände verändert ein Auslöser - und bei wem?
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Auslöser der Wirkung – Produkte, Technologien, Institutionen
+- **Titel:** Auslöser der Wirkung - Produkte, Technologien, Institutionen
 - **Länge:** ~14 Min
 - **Kernaussage in einem Satz:** Produkte, Technologien und Institutionen wirken, weil sie Handlungsmöglichkeiten, Anreize und Regeln verändern.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Auslöser statt Absicht.** Wirkung beginnt nicht bei der guten Absicht, sondern bei einem Auslöser: einem Produkt, einer Regel, einer Plattform, einem Bauwerk, einer Infrastruktur.
+**Abschnitt A - Auslöser statt Absicht.** Wirkung beginnt nicht bei der guten Absicht, sondern bei einem Auslöser: einem Produkt, einer Regel, einer Plattform, einem Bauwerk, einer Infrastruktur.
 
-**Abschnitt B – Produkte als Wirkungsträger.** Produkte bündeln Lieferketten, Materialien, Nutzung, Entsorgung und soziale Bedingungen. Ihre Wirkung reicht über den Kaufmoment hinaus.
+**Abschnitt B - Produkte als Wirkungsträger.** Produkte bündeln Lieferketten, Materialien, Nutzung, Entsorgung und soziale Bedingungen. Ihre Wirkung reicht über den Kaufmoment hinaus.
 
-**Abschnitt C – Technologien als Möglichkeitsräume.** Technologien verändern, was leicht, billig, sichtbar oder skalierbar wird. Dadurch verändern sie Verhalten und Machtverhältnisse.
+**Abschnitt C - Technologien als Möglichkeitsräume.** Technologien verändern, was leicht, billig, sichtbar oder skalierbar wird. Dadurch verändern sie Verhalten und Machtverhältnisse.
 
-**Abschnitt D – Institutionen als Regelräume.** Institutionen wirken über Rechte, Pflichten, Standards, Routinen und Vertrauen. Sie können Wirkung begrenzen oder ermöglichen.
+**Abschnitt D - Institutionen als Regelräume.** Institutionen wirken über Rechte, Pflichten, Standards, Routinen und Vertrauen. Sie können Wirkung begrenzen oder ermöglichen.
 
-**Abschnitt E – Bewertung.** Entscheidend ist nicht, ob der Auslöser modern, beliebt oder profitabel ist, sondern welche positive Netto-Wirkung er für Mensch, Planet und Demokratie erzeugt.
+**Abschnitt E - Bewertung.** Entscheidend ist nicht, ob der Auslöser modern, beliebt oder profitabel ist, sondern welche positive Netto-Wirkung er für Mensch, Planet und Demokratie erzeugt.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -128,7 +124,6 @@ Wähle ein Produkt oder eine Institution aus deinem Alltag. Notiere drei Wirkpfa
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -230,12 +225,11 @@ Die folgende Runde verdichtet V21 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V21. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Produkte, Märkte, öffentliche Räume
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Produkte, Märkte, öffentliche Räume
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/wirkungstraeger`, `begriffe/wirkungsraum`, `begriffe/positive-netto-wirkung`
 
@@ -328,7 +322,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 2
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -811,8 +804,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v21-produkte-technologien-institutionen-als-ausloeser.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

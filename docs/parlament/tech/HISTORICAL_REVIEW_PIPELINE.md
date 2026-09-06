@@ -38,7 +38,7 @@ nicht für eine substanzielle externe Prüfung exportiert. Partei, Einbringung,
 Regierungs-/Oppositionsstatus und Mehrheitsverhältnisse sind keine
 Auswahlparameter.
 
-Die Größe ist auf 1–15 Fälle begrenzt (Standard 10). Große Fälle werden durch
+Die Größe ist auf 1-15 Fälle begrenzt (Standard 10). Große Fälle werden durch
 die Redaktion einzeln oder in kleineren Chargen angelegt. Die erste fachliche
 Kalibrierung wird als `GOLD_STANDARD_CANDIDATE` außerhalb dieser Pipeline
 freigegeben und später zu Regression-Fixtures verdichtet.

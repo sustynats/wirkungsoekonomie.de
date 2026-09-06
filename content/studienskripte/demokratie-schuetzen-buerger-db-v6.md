@@ -40,7 +40,7 @@ In diesem Abend liegen mehrere Dinge übereinander:
 | Deutung | „Für Leute wie meinen Vater gibt es keinen Platz.“ | Dass alle Verantwortlichen dieselbe Absicht haben oder Kritik sinnlos ist. |
 | Forderung | Der Übergangsplan muss geändert oder ergänzt werden. | Dass einzelne Personen angegriffen oder private Daten geteilt werden dürfen. |
 
-Miras Satz ist keine Kleinigkeit, die mit „Bleib sachlich“ weggewischt werden sollte. Er trägt eine konkrete Erfahrung: Ein Weg, der für viele als kleine Umorganisation erscheint, kann für ihren Vater den Ausschluss vom Reha-Sport bedeuten. Gleichzeitig enthält er eine sehr weitgehende Deutung über Absicht und Zugehörigkeit. Beide Teile müssen getrennt behandelt werden. Eine demokratisch tragfähige Antwort könnte lauten: „Es ist nachvollziehbar, dass du wegen des Weges und der Barriere Sorge hast. Lasst uns klären, ob der Ersatzort tatsächlich ohne Stufen erreichbar ist, wie der Fahrdienst geregelt wird und wer den Plan vor der Schließung ändern kann. Bitte keine Namen oder Angriffe auf Einzelne – die Zugangsfrage bleibt dadurch nicht weniger dringend.“
+Miras Satz ist keine Kleinigkeit, die mit „Bleib sachlich“ weggewischt werden sollte. Er trägt eine konkrete Erfahrung: Ein Weg, der für viele als kleine Umorganisation erscheint, kann für ihren Vater den Ausschluss vom Reha-Sport bedeuten. Gleichzeitig enthält er eine sehr weitgehende Deutung über Absicht und Zugehörigkeit. Beide Teile müssen getrennt behandelt werden. Eine demokratisch tragfähige Antwort könnte lauten: „Es ist nachvollziehbar, dass du wegen des Weges und der Barriere Sorge hast. Lasst uns klären, ob der Ersatzort tatsächlich ohne Stufen erreichbar ist, wie der Fahrdienst geregelt wird und wer den Plan vor der Schließung ändern kann. Bitte keine Namen oder Angriffe auf Einzelne - die Zugangsfrage bleibt dadurch nicht weniger dringend.“
 
 Diese Antwort ist weder weichgespült noch neutral im Sinn von gleichgültig. Sie hält eine Schutzfrage fest, öffnet eine konkrete Prüfung und setzt eine Grenze gegen eine Handlung, die andere aus dem Gespräch drängen könnte.
 
@@ -108,7 +108,7 @@ Ein Gespräch braucht nicht immer eine lange psychologische Analyse. Für eine e
 
 Die Reihenfolge ist entscheidend. Wer nur beruhigt, kann eine reale Schutzfrage vertagen. Wer nur korrigiert, kann eine Person beschämen und den Zugang zu ihrer Erfahrung verlieren. Anerkennen, präzisieren, schützen, handeln: Das ist kein starres Rezept, sondern eine kleine Wirkungsarchitektur für das Gespräch. Die [WÖk-Referenz zu Diskurskultur](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-079-diskurskultur-index-html/) macht deutlich, dass gute Öffentlichkeit nicht aus Zustimmung entsteht, sondern aus Regeln, die Kritik, Gründe und Korrekturen zugleich ermöglichen.
 
-## Grenzen sind kein Gegenargument – und kein Ende jeder Kritik
+## Grenzen sind kein Gegenargument - und kein Ende jeder Kritik
 
 Als in Nordbrück Namen von Verwaltungsmitarbeitenden auftauchen und jemand fordert, sie sollten sich nicht mehr zeigen, ändert sich die Lage. Jetzt reicht es nicht, nur auf den Inhalt der Sanierungsplanung zurückzukommen. Die konkrete Einschüchterung muss begrenzt werden: keine privaten Daten, keine Drohungen, keine abwertenden Bilder von einzelnen Personen oder Gruppen. Diese Grenze bewertet nicht den Wert der schreibenden Person. Sie schützt die Bedingungen, unter denen auch Betroffene, Mitarbeitende und Widersprechende noch sprechen können.
 
@@ -125,7 +125,7 @@ Der Beitrag erreicht in einer Nacht 180 Reaktionen. Diese Zahl sagt, dass viele 
 | Reichweite | Wie viele sehen oder teilen den Beitrag? | 180 Reaktionen in der Vereinsgruppe. |
 | Wirkungspotenzial | Was könnte der Beitrag im jeweiligen Kontext auslösen? | Er könnte eine Begehung, aber auch Feindbilder oder Rückzug aus der Gruppe auslösen. |
 | Wirkungsrisiko | Welche nachteilige Veränderung ist plausibel und wie schwer wäre sie? | Einzelne werden eingeschüchtert; die Zugangsfrage wird von persönlicher Feindschaft verdeckt. |
-| eingetretene Wirkung | Was hat sich nachweisbar verändert? | Die Gemeinde richtet einen Fahrdienst ein und der Reha-Sport findet weiter statt – oder Menschen bleiben ausgeschlossen. |
+| eingetretene Wirkung | Was hat sich nachweisbar verändert? | Die Gemeinde richtet einen Fahrdienst ein und der Reha-Sport findet weiter statt - oder Menschen bleiben ausgeschlossen. |
 | Rückkopplung | Welche Information verändert sichtbar das weitere Handeln? | Die Begehung führt zu einer geänderten Raumverteilung und einem überprüfbaren Termin. |
 
 Die [WÖk-Referenz zu Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-023-wirkungsrisiko-und-wirkungsresilienz-index-html/) legt nahe, Risiken nicht als Makel von Personen zu behandeln, sondern als mögliche Folgen von Entscheidungen in einem Kontext. Im Nordbrück-Fall kann eine öffentliche Zuspitzung zugleich ein Risiko und ein Hinweis sein: Sie kann Menschen gegeneinander stellen; sie kann aber auch eine bisher übersehene Barriere sichtbar machen. Die Bewertung liegt nicht in der Lautstärke des Posts, sondern in der Frage, welche Zustände er begünstigt und welche Schutz- und Korrekturwege folgen.
@@ -165,7 +165,7 @@ Dieser Weg verlangt nicht, dass jede Forderung erfüllt wird. Er verlangt, dass 
 
 Stellen Sie sich vor, Sie antworten in der Vereinsgruppe. Ihr Ziel ist nicht, Mira dazu zu bringen, ihre Angst vor allen zu widerrufen. Ihr Ziel ist auch nicht, die Stimmung schnell glattzuziehen. Sie können in vier Sätzen viel erreichen:
 
-> „Dass dein Vater seine Gruppe verlieren könnte, ist eine ernste Sorge. Der Aushang beantwortet die Barrierefreiheit und den Weg zum Ersatzort nicht. Lasst uns diese Punkte morgen mit der zuständigen Stelle und bei einer Begehung klären; ich sammle die konkreten Fragen. Bitte keine Namen oder Angriffe auf Einzelne – die Zugangsfrage soll dadurch nicht untergehen.“
+> „Dass dein Vater seine Gruppe verlieren könnte, ist eine ernste Sorge. Der Aushang beantwortet die Barrierefreiheit und den Weg zum Ersatzort nicht. Lasst uns diese Punkte morgen mit der zuständigen Stelle und bei einer Begehung klären; ich sammle die konkreten Fragen. Bitte keine Namen oder Angriffe auf Einzelne - die Zugangsfrage soll dadurch nicht untergehen.“
 
 Der Satz macht vier verschiedene Dinge: Er anerkennt Erfahrung, benennt eine Wissenslücke, eröffnet einen Handlungsweg und schützt Menschen im Raum. Er behauptet nicht, dass Mira recht oder unrecht hat, bevor die Fakten vorliegen. Er verlangt auch nicht, dass sie erst ruhig werden muss, um gehört zu werden.
 
@@ -251,16 +251,16 @@ Gefühle sind subjektiv, aber die Lebenslage, auf die sie hinweisen, kann sehr k
 
 ## Quellen und Vertiefung
 
-- [WÖk-Referenz: Demokratie als Wirkungsraum](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-028-demokratie-als-wirkungsraum-index-html/) – Demokratie als begrenzte, überprüfbare und korrekturfähige Ordnung.
-- [WÖk-Referenz: Wirkungspotenzial](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-011-wirkungspotenzial-index-html/) – Trennung zwischen Möglichkeit und eingetretener Veränderung.
-- [WÖk-Referenz: Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-023-wirkungsrisiko-und-wirkungsresilienz-index-html/) – Risiken als kontextbezogene mögliche Folgen analysieren.
-- [WÖk-Referenz: Diskurskultur](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-079-diskurskultur-index-html/) – Bedingungen für Kritik, Gegenrede und Korrektur in öffentlichen Räumen.
-- [WÖk-Begriff: Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) – Schutzverletzungen nicht im Durchschnitt verrechnen.
-- [WÖk-Begriff: Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) – Schutzfragen als Reihenfolge der Prüfung.
-- [WÖk-Begriff: Resonanzraum](https://wirkungsoekonomie.de/begriffe/resonanzraum/) – Zusammenhang von Kontext, Anschlussfähigkeit und möglichen Wirkpfaden.
-- [Grundgesetz für die Bundesrepublik Deutschland](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0157/) – Grundrechte und Bindung staatlichen Handelns an Recht und Gesetz.
-- [Europäische Menschenrechtskonvention](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0342/) – Schutz von Rechten und Freiheiten im europäischen Menschenrechtssystem.
-- [OECD: Recommendation on Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) – Transparenz, Resilienz und Verantwortlichkeit in Informationsräumen.
+- [WÖk-Referenz: Demokratie als Wirkungsraum](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-028-demokratie-als-wirkungsraum-index-html/) - Demokratie als begrenzte, überprüfbare und korrekturfähige Ordnung.
+- [WÖk-Referenz: Wirkungspotenzial](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-011-wirkungspotenzial-index-html/) - Trennung zwischen Möglichkeit und eingetretener Veränderung.
+- [WÖk-Referenz: Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-023-wirkungsrisiko-und-wirkungsresilienz-index-html/) - Risiken als kontextbezogene mögliche Folgen analysieren.
+- [WÖk-Referenz: Diskurskultur](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-079-diskurskultur-index-html/) - Bedingungen für Kritik, Gegenrede und Korrektur in öffentlichen Räumen.
+- [WÖk-Begriff: Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) - Schutzverletzungen nicht im Durchschnitt verrechnen.
+- [WÖk-Begriff: Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) - Schutzfragen als Reihenfolge der Prüfung.
+- [WÖk-Begriff: Resonanzraum](https://wirkungsoekonomie.de/begriffe/resonanzraum/) - Zusammenhang von Kontext, Anschlussfähigkeit und möglichen Wirkpfaden.
+- [Grundgesetz für die Bundesrepublik Deutschland](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0157/) - Grundrechte und Bindung staatlichen Handelns an Recht und Gesetz.
+- [Europäische Menschenrechtskonvention](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0342/) - Schutz von Rechten und Freiheiten im europäischen Menschenrechtssystem.
+- [OECD: Recommendation on Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) - Transparenz, Resilienz und Verantwortlichkeit in Informationsräumen.
 
 ## Schlussgedanke
 

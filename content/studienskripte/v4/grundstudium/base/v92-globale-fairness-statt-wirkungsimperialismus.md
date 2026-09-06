@@ -38,7 +38,7 @@ Eine Klimamaßnahme kann global Emissionen senken und zugleich kurzfristig Einko
 
 ## 4. Beispiel: Lieferkettenstandard
 
-Ein europäischer Standard kann Arbeits-/Umweltbedingungen verbessern. Er kann aber kleine Produzenten ausschließen, wenn Nachweiskosten hoch sind. Mögliche Optionen: technische Unterstützung, gestufte Pflichten, gemeinsame Dateninfrastruktur, längere Übergänge oder alternative Nachweise – sofern Schutzgrenzen nicht ausgehöhlt werden.
+Ein europäischer Standard kann Arbeits-/Umweltbedingungen verbessern. Er kann aber kleine Produzenten ausschließen, wenn Nachweiskosten hoch sind. Mögliche Optionen: technische Unterstützung, gestufte Pflichten, gemeinsame Dateninfrastruktur, längere Übergänge oder alternative Nachweise - sofern Schutzgrenzen nicht ausgehöhlt werden.
 
 ## 5. Betroffenenwissen
 
@@ -64,10 +64,10 @@ Komplexe Gesellschaften werden nicht zu einer Rangliste verdichtet. Analysiert w
 
 ## Typische Fehlinterpretationen
 
-- „Lokale Perspektive macht Menschenrechte relativ.“ – Nein.
-- „Ein globaler Score ist automatisch fair.“ – Nein.
-- „Strenge Standards helfen immer allen Produzenten.“ – Nicht ohne Delivery-/Verteilungsprüfung.
-- „Beteiligung ersetzt Evidenz.“ – Nein.
+- „Lokale Perspektive macht Menschenrechte relativ.“ - Nein.
+- „Ein globaler Score ist automatisch fair.“ - Nein.
+- „Strenge Standards helfen immer allen Produzenten.“ - Nicht ohne Delivery-/Verteilungsprüfung.
+- „Beteiligung ersetzt Evidenz.“ - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -89,7 +89,7 @@ Prüfungsfähig sind Universalität-vs.-Paternalismus, Verteilung, Just Transiti
 
 ## Sprechertext
 
-Wenn Europa Wirkung misst, entsteht schnell eine Machtfrage. Wer den Maßstab setzt, kann bestimmen, wer Zugang zu Märkten bekommt. Deshalb reicht „wir meinen es nachhaltig“ nicht. Wir müssen fragen, welche Regeln universal begründet sind, welche von uns gesetzt werden und welche Lasten die Messung selbst erzeugt. Das heißt nicht, Menschenrechte oder Naturgesetze zu relativieren. Es heißt, Transformation so zu gestalten, dass Schutz nicht zur Ausrede für neue Abhängigkeit wird – und dass Betroffene Wissen und Handlungsspielraum behalten.
+Wenn Europa Wirkung misst, entsteht schnell eine Machtfrage. Wer den Maßstab setzt, kann bestimmen, wer Zugang zu Märkten bekommt. Deshalb reicht „wir meinen es nachhaltig“ nicht. Wir müssen fragen, welche Regeln universal begründet sind, welche von uns gesetzt werden und welche Lasten die Messung selbst erzeugt. Das heißt nicht, Menschenrechte oder Naturgesetze zu relativieren. Es heißt, Transformation so zu gestalten, dass Schutz nicht zur Ausrede für neue Abhängigkeit wird - und dass Betroffene Wissen und Handlungsspielraum behalten.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

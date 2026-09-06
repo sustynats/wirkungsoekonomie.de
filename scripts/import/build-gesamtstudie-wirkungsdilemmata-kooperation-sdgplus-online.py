@@ -791,6 +791,7 @@ def extract_public_images(
 
 def render_toc(blocks: Iterable[Block]) -> str:
     items: list[str] = []
+    bibliography_level: int | None = None
     for block in blocks:
         if not isinstance(block, ParagraphBlock):
             continue
@@ -798,7 +799,12 @@ def render_toc(blocks: Iterable[Block]) -> str:
         if not level or not block.anchor:
             continue
         if compact(block.text) in BIBLIOGRAPHY_STARTS:
+            bibliography_level = level
             continue
+        if bibliography_level is not None:
+            if level > bibliography_level:
+                continue
+            bibliography_level = None
         items.append(
             f'              <li class="toc-level-{level + 1}"><a href="#{esc(block.anchor)}">{esc(block.text)}</a></li>'
         )

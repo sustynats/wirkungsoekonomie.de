@@ -113,7 +113,7 @@ Dieses Changelog dokumentiert Aktualisierungen gegenüber der Source-Original-Fa
 - Status: applied
 - Grund: Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.
 - Quelle: WOeK_Master_Items_final_v1.2.xlsx
-- Live-Referenz: Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren – keine Menschen und keine persönliche Wertigkeit. Eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung.
+- Live-Referenz: Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren - keine Menschen und keine persönliche Wertigkeit. Eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung.
 
 ## lr-2026-2-0012 - addendum
 

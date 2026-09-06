@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Registry für Sofortreaktionen
+# Wirkungscheck Bundestag V3 - Registry für Sofortreaktionen
 
 **Status:** Redaktionelle Registry. Sichtbare Texte werden daraus gerendert;
 keine Sofortreaktion darf im Frontend als freie Textlogik hinterlegt werden.
@@ -54,7 +54,7 @@ tatsächlich funktioniert?
 
 ### Erfolgssignale gewählt
 
-**Titel:** Was zeigen diese Daten – und was nicht?
+**Titel:** Was zeigen diese Daten - und was nicht?
 **Text:** Ein Wert kann zeigen, was getan wurde. Für die Wirkung ist
 entscheidend, ob sich der gewünschte Zustand bei den betroffenen Menschen
 tatsächlich verändert.

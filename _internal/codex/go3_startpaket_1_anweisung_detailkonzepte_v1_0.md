@@ -1,4 +1,4 @@
-# Go 3 – Startpaket 1: Detailkonzepte erzeugen
+# Go 3 - Startpaket 1: Detailkonzepte erzeugen
 
 Bitte erstelle die ersten drei echten Detailkonzepte im Referenzumfang:
 

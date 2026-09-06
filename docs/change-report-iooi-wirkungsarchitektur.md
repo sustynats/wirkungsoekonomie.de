@@ -19,7 +19,7 @@
 ## Inhaltliche Entscheidungen
 
 - **Wirkung** bleibt neutral und relational: tatsächliche Veränderung von Zuständen.
-- **IOOI** beschreibt die Ergebniskette Input – Aktivität – Output – Outcome – Impact und wird weder abgewertet noch als vollständige Steuerungsarchitektur ausgegeben.
+- **IOOI** beschreibt die Ergebniskette Input - Aktivität - Output - Outcome - Impact und wird weder abgewertet noch als vollständige Steuerungsarchitektur ausgegeben.
 - Die WÖk beginnt vor der eingetretenen Wirkung: Auslöser, Wirkstoff (ausschließlich didaktische Analogie), Wirkungspotenzial, Wirkungsrisiko und Wirkmechanismus werden von Nachweis und Bewertung getrennt.
 - Wirkungspotenzial, Wirkmechanismus und Wirkung werden nicht gleichgesetzt. Für behauptete Wirkung sind Beobachtung, Baseline, Vergleichslogik, Attribution oder Kontribution sowie Nebenwirkungen und Rebound zu prüfen.
 - Der Referenzrahmen sind SDGs, Agenda 2030 und SDG+. Positive Netto-Wirkung folgt Schutzgrenzen, Nichtkompensation und einer dokumentierten Bewertung.

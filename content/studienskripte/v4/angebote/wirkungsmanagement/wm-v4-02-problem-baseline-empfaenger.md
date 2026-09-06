@@ -97,10 +97,10 @@ Erst danach wird entschieden, welche Intervention überhaupt plausibel ist.
 
 ## Typische Fehlinterpretationen
 
-- Stakeholder = Wirkungsempfänger. – Nicht identisch.
-- Ein hoher KPI beweist das Problem. – Nicht ohne Kontext.
-- Problemstatement aus Managementsicht reicht. – Nein, alternative Erklärungen prüfen.
-- Baseline = Gegenfaktum. – Nein.
+- Stakeholder = Wirkungsempfänger. - Nicht identisch.
+- Ein hoher KPI beweist das Problem. - Nicht ohne Kontext.
+- Problemstatement aus Managementsicht reicht. - Nein, alternative Erklärungen prüfen.
+- Baseline = Gegenfaktum. - Nein.
 
 ## WÖk-Abgrenzung
 

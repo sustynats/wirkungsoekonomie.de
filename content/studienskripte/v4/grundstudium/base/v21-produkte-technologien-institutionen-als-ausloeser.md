@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Gegenstand wirkt nicht allein durch seine Existenz. Ein Produkt braucht Nutzung, eine Technologie Infrastruktur und Regeln, eine Institution Verfahren und Akteure. WÖk analysiert deshalb den tatsächlichen Auslöser und seine Mechanismen – nicht ein Etikett wie „digital“, „grün“ oder „öffentlich“.
+Ein Gegenstand wirkt nicht allein durch seine Existenz. Ein Produkt braucht Nutzung, eine Technologie Infrastruktur und Regeln, eine Institution Verfahren und Akteure. WÖk analysiert deshalb den tatsächlichen Auslöser und seine Mechanismen - nicht ein Etikett wie „digital“, „grün“ oder „öffentlich“.
 
 ## Lernziele
 
@@ -62,10 +62,10 @@ Vergleiche nicht „Technologie A“ mit nichts, sondern reale Alternativen für
 
 ## Typische Fehlinterpretationen
 
-- „Technologie wirkt unabhängig von Nutzung.“ – Falsch.
-- „Digital = automatisch effizient.“ – Nein.
-- „Institution = nur Organisation.“ – Zu eng.
-- „Technisches Potenzial = realisierter Outcome.“ – Nein.
+- „Technologie wirkt unabhängig von Nutzung.“ - Falsch.
+- „Digital = automatisch effizient.“ - Nein.
+- „Institution = nur Organisation.“ - Zu eng.
+- „Technisches Potenzial = realisierter Outcome.“ - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -86,7 +86,7 @@ Prüfungsfähig sind Auslösertypen, Nutzungssystem, Komplementarität, Technikd
 
 ## Sprechertext
 
-Ein Gerät liegt erst einmal nur da. Wirkung entsteht, wenn es genutzt wird – in einer Infrastruktur, unter Regeln, mit Preisen und Gewohnheiten. Dasselbe gilt für Institutionen: Ein Gesetzestext ist ein Auslöser, aber sein Outcome hängt vom Vollzug und Verhalten ab. Darum lassen wir uns von Labels wie digital, grün oder innovativ nicht die Analyse abnehmen. Wir zerlegen das System und vergleichen reale Alternativen für dieselbe Funktion.
+Ein Gerät liegt erst einmal nur da. Wirkung entsteht, wenn es genutzt wird - in einer Infrastruktur, unter Regeln, mit Preisen und Gewohnheiten. Dasselbe gilt für Institutionen: Ein Gesetzestext ist ein Auslöser, aber sein Outcome hängt vom Vollzug und Verhalten ab. Darum lassen wir uns von Labels wie digital, grün oder innovativ nicht die Analyse abnehmen. Wir zerlegen das System und vergleichen reale Alternativen für dieselbe Funktion.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
