@@ -42,6 +42,8 @@ Zwei alte lokale Buildstände sind unter `/WOEK/Archiv-Website-2026-09-06` in Dr
 
 Das GitHub-Actions-Inventar umfasst zum Aufnahmezeitpunkt 410 Artefakte mit insgesamt 14.054.416.198 Byte. Es enthält Website-Deployments, parlamentarische Quellenstände, fachliche Übergaben und Wiederherstellungsdaten. Diese gesamte Summe ist **kein bestätigter Waste-Bestand**. Unabhängige Oracle-/OCI-Dienste und historische Veröffentlichungsartefakte wurden nicht pauschal gelöscht. Das beschädigte frühere Arbeitsverzeichnis wurde ebenfalls nicht als entbehrlich behandelt.
 
+Nach dem serverseitigen Abgleich wurden zusätzlich 1.703 entbehrliche lokale Archiv- und Downloadkopien mit 1.437.834.350 Byte entfernt. Zusammen mit den alten Buildständen sind damit 3.081.697.006 Byte lokaler Altdateien entfernt. Die aktuellen Dokumente, Git-Objekte und Prüfnachweise bleiben erhalten. `local-backup-cleanup.json` dokumentiert den Vorgang.
+
 Die zusätzlichen Publikationsoriginale sind unter `/WOEK/Archiv-Website-2026-09-06/Publikationsbereinigung` gesichert. Der Nachweis `publication-archive-receipt.json` dokumentiert den serverseitigen Hashabgleich. Die dortigen Originale sind ein privates Wiederherstellungsarchiv und werden nicht als aktuelle Publikationen ausgeliefert.
 
 ## Einordnung automatischer Prüfsignale
