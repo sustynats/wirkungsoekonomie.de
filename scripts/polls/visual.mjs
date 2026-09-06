@@ -21,6 +21,7 @@ export function validateExperience(data) {
   const fail = message => { throw new Error(`Visual poll: ${message}`); };
   const ownImage = value => typeof value === 'string' && /^\/assets\/img\/polls\/[a-z0-9/.-]+\.(webp|png|jpg)$/.test(value) && !value.includes('..');
   if (!data || !ownImage(data.baseline) || !Array.isArray(data.domains) || !Array.isArray(data.scenarios)) fail('invalid structure');
+  if (data.introduction !== undefined && (!Array.isArray(data.introduction) || data.introduction.length > 6 || data.introduction.some(p => typeof p !== 'string' || !p.trim() || p.length > 1500))) fail('invalid introduction');
   if (data.scenarios.length < 2 || data.scenarios.length > 7 || !data.domains.length) fail('invalid counts');
   for (const list of [data.domains, data.scenarios]) if (new Set(list.map(x => x.id)).size !== list.length) fail('duplicate IDs');
   for (const d of data.domains) {
@@ -52,6 +53,8 @@ export function validateExperience(data) {
 export function visualPanel(data, {esc, safeJson}) {
   return `<section class="visual-poll" id="stadtvergleich" aria-labelledby="visual-title" data-search-type="Interaktiver Stadtvergleich">
 <p class="poll-kicker">Erkunden · Vergleichen · Entscheiden</p><h2 id="visual-title">${esc(data.title)}</h2>
+${data.introduction ? `<div class="vp-introduction">${data.introduction.map(p=>`<p>${esc(p)}</p>`).join('')}</div>` : ''}
+<div class="poll-share vp-share" data-poll-share="compact" role="group" aria-label="Umfrage teilen"><noscript><a href="#poll-share">Link zur Umfrage</a></noscript></div>
 <p class="poll-notice">${esc(data.horizon)}. Gleicher Ort, gleiche Perspektive. <strong>Illustrationen, keine berechnete Zukunftsprognose.</strong></p>
 <div class="vp-controls"><label>Szenario ansehen<select id="vp-scenario">${data.scenarios.map(s=>`<option value="${s.id}">${esc(s.label)}</option>`).join('')}</select></label><label>Bereich vergrößern<select id="vp-area"><option value="">Gesamtansicht</option>${[...data.domains,...(data.extraFocusAreas||[])].map(d=>`<option value="${d.id}">${esc(d.title)}</option>`).join('')}</select></label></div>
 <div class="vp-view-buttons" role="group" aria-label="Vergleichsansicht"><button type="button" data-vp-view="before" aria-pressed="true">Ausgangsbild</button><button type="button" data-vp-view="after" aria-pressed="false">Szenario</button><button type="button" data-vp-view="wipe" aria-pressed="false">Vorher / nachher</button><button type="button" data-vp-view="pair" aria-pressed="false">Nebeneinander</button></div>
