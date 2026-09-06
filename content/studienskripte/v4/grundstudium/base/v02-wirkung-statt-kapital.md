@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v02-wirkung-statt-kapital.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v02-wirkung-statt-kapital.md curriculum=4.0 sanitized=true -->
 # V02 · Wirkung statt Kapital
 
 **lecture_id:** `WOEK-G-BASE-002`  
@@ -150,3 +150,7 @@ Das Problem beginnt, wenn wir so tun, als würden diese Signale automatisch alle
 Darum erweitert die Wirkungsökonomie die Entscheidung. Wir fragen neben der finanziellen Tragfähigkeit: Welches Problem lösen wir? Welches Ziel passt dazu? Wie soll die Option wirken? Wer ist betroffen? Wo liegen Grenzen? Und was müsste später beobachtet werden, damit wir wissen, ob die Annahme gestimmt hat?
 
 Wirkung statt Kapital bedeutet also nicht: Geld ist unwichtig. Es bedeutet: Geld bekommt wieder die Rolle eines Mittels und Signals – nicht die Rolle einer vollständigen Beschreibung von Erfolg.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

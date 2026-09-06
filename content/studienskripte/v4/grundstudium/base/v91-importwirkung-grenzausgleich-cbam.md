@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v91-importwirkung-grenzausgleich-cbam.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v91-importwirkung-grenzausgleich-cbam.md curriculum=4.0 sanitized=true -->
 # V91 · Importwirkung, Grenzausgleich und CBAM
 
 **lecture_id:** `WOEK-G-BASE-091`  
@@ -116,3 +116,13 @@ Prüfungsfähig sind territorial-vs.-footprint, Carbon Leakage, CBAM-Scope, Zure
 ## Sprechertext
 
 Eine Grenze kann Statistiken verändern, aber die Atmosphäre kennt keine Zollstation. Wenn Produktion ins Ausland wandert, kann eine nationale Bilanz besser aussehen und die globale Wirkung trotzdem kaum sinken. Genau hier setzt der europäische CBAM bei bestimmten CO₂-intensiven Importen an. Aber wichtig: CBAM ist ein konkretes EU-Instrument mit eigenem Rechtsrahmen. Die WÖk darf daraus keinen universellen Nachhaltigkeitszoll machen. Sie kann zusätzlich Lieferketten-, Verteilungs- und Resilienzwirkungen prüfen – und muss sauber markieren, wo CBAM endet und die eigene Analyse beginnt.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Aktualisierung zu CBAM · 6. September 2026
+
+Die Übergangsphase 2023–2025 ist beendet: Seit 1. Januar 2026 gilt das definitive CBAM-Regime. Konkrete Einfuhrpflichten sind nach Ware, Schwellen, Ausnahmen und dem geltenden Durchführungsrecht zu prüfen. CBAM adressiert eingebettete CO₂-Emissionen und Carbon Leakage; der WÖk-Modellvorschlag für breitere Importwirkungen darf damit weder gleichgesetzt noch als bereits geltendes Recht dargestellt werden.
+
+Quelle: [Europäische Kommission, CBAM und definitives Regime](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en).

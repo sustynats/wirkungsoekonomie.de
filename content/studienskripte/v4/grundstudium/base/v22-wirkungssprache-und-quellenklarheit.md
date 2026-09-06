@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v22-wirkungssprache-und-quellenklarheit.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v22-wirkungssprache-und-quellenklarheit.md curriculum=4.0 sanitized=true -->
 # V22 · Wirkungssprache und Quellenklarheit
 
 **lecture_id:** `WOEK-G-BASE-022`  
@@ -94,3 +94,32 @@ Prüfungsfähig sind Claim-Typen, Beweislast, Provenienz, Version/Freshness und 
 ## Sprechertext
 
 Manchmal kippt eine Analyse durch ein einziges Verb. „Die Maßnahme wirkt“ klingt viel stärker als „die Maßnahme hat ein plausibles Wirkungspotenzial“. Darum behandeln wir Sprache wie ein Messinstrument. Ein Gesetz kann beweisen, was beschlossen wurde. Eine Statistik zeigt, was gemessen wurde. Eine Evaluation kann Kausalität stützen. Und wenn etwas öffentlich nicht auffindbar ist, sagen wir genau das – nicht mehr. Quellenklarheit ist keine Fußnote. Sie ist Teil der Methode.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Sprachliche Stärke an die Beleglage anpassen
+
+Ein Faktclaim behauptet einen Sachverhalt, ein Zielclaim einen angestrebten Zustand und ein Potenzialclaim eine bedingte Möglichkeit. Ein Beobachtungsclaim beschreibt eine gemessene Veränderung. Ein Kausalclaim schreibt diese Veränderung einem Auslöser zu. Diese Unterschiede müssen auch in Überschriften, Grafiken und Kurzfassungen erhalten bleiben.
+
+Primärquellen liegen näher am jeweiligen Gegenstand, sind aber nicht für jede Frage automatisch ausreichend. Ein amtlicher Entwurf kann seine eigene Begründung dokumentieren, ohne damit die tatsächliche spätere Wirkung zu beweisen. Eine Sekundäranalyse kann wichtige Einordnung liefern; ihr Aussagegehalt hängt von Methode und Quellen ab. Entscheidend ist die Funktion der Quelle in der konkreten Begründung.
+
+### Durchgearbeiteter Fall: Nachhaltigkeitsprüfung eines Bundesvorhabens
+
+Eine fiktive Analyse findet in einem veröffentlichten Regierungsentwurf eine Darstellung der Nachhaltigkeitsfolgen. Ein öffentlich abrufbarer eNAP-Rohexport wird nicht gefunden. Zulässig ist die Aussage, dass die veröffentlichte Darstellung vorliegt und der Rohexport öffentlich nicht festgestellt wurde. Unzulässig wäre der Schluss, es habe deshalb keine Nachhaltigkeitsprüfung gegeben.
+
+Der Status lautet für die nicht öffentlich festgestellte Dokumentation NOT_PUBLICLY_ESTABLISHED. Er wird vom Befund der veröffentlichten Darstellung getrennt. Die staatliche Referenzprüfung und das unabhängige WÖk-Urteil werden ebenfalls getrennt geführt. Wenn beide zu ähnlichen Ergebnissen kommen, ist diese Konvergenz ein valider Befund.
+
+Die WÖk-Prüfung kann anschließend konkrete Ergänzungsfragen stellen, etwa zur Verteilung, zu materiellen Auslassungen oder zur Umsetzungsfähigkeit. Sie darf Alternativenprüfung und spätere Überprüfung nicht als erstmals von ihr eingeführte Ideen darstellen. Die §§ 43 und 44 GGO enthalten bereits entsprechende Anforderungen für ihren Anwendungsbereich. Für andere Gegenstände wird der passende staatliche Rahmen gesondert bestimmt.
+
+### Lernarbeit mit Erwartungshorizont
+
+Schreibe eine Quellenkarte mit Dokumenttyp, Datum, Fundstelle, unterstützter Aussage und Aussagegrenze. Formuliere dazu einen Beobachtungsclaim und eine zulässige offene Frage. Eine gute Lösung unterscheidet „nicht gefunden“, „nicht veröffentlicht nachgewiesen“ und „nachweislich nicht durchgeführt“.
+
+Ergänze einen Standhinweis für eine später neu verfügbare Quelle. Die frühere Analyse wird nicht still umgeschrieben. Ein Addendum erklärt, welcher neue Befund welche Aussage verändert. Quellenklarheit zeigt sich darin, dass ein Leser die Schlussfolgerung und ihren damaligen Informationsstand nachvollziehen kann.
