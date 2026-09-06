@@ -52,4 +52,4 @@ Der Sprachscan meldet außerdem Fachbegriffe wie Input/Output, ausdrücklich bez
 
 ## Nachweise
 
-Die abschließenden Build-, Artefakt-, Link-, Browser- und Deploymentnachweise werden unter `outputs/closeout-2026-09-06/` abgelegt. Die Veröffentlichung erfolgt über das bestehende GitHub-Pages-Hosting ohne Vercel-Build oder neue kostenpflichtige Infrastruktur.
+Der vollständige lokale Build ist einschließlich aller Vor- und Nachprüfungen erfolgreich abgeschlossen. 16 zentrale Downloads wurden erneut über ihre öffentlichen URLs abgerufen und bytegenau geprüft; die 15 PDFs darin umfassen 1.913 Seiten und bestehen zusätzlich den Metadaten- und Textscan. Die abschließenden Artefakt-, Link-, Browser- und Deploymentnachweise werden unter `outputs/closeout-2026-09-06/` abgelegt. Die Veröffentlichung erfolgt über das bestehende GitHub-Pages-Hosting ohne Vercel-Build oder neue kostenpflichtige Infrastruktur.

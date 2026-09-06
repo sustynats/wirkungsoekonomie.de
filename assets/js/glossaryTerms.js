@@ -15326,7 +15326,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
       "Wirkungscontrolling",
       "Wirkungssteuerung im Controlling"
     ],
-    "definition": "Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.",
+    "definition": "Impact-Controlling prüft, was eine Maßnahme tatsächlich verändert, wodurch die Veränderung entsteht und wie die Entscheidung danach verbessert werden kann. Es verbindet Planung, Messung, Bewertung und Rückkopplung.",
     "url": "/begriffe/impact-controlling/",
     "priority": 709,
     "autoLinkAllowed": true,
@@ -43217,7 +43217,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     "aliases": [
       "Wirkungsökonomie"
     ],
-    "definition": "Die Wirkungsökonomie ist ein Ordnungsmodell, das Wirtschaft, Staat, Kapital, Medien und gesellschaftliche Entscheidungen nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie ausrichtet. Kapital bleibt Werkzeug, Wirkung wird Kompass.",
+    "definition": "Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Es richtet wirtschaftliche, staatliche und gesellschaftliche Entscheidungen an ihren tatsächlichen Folgen für Menschen, Umwelt und Demokratie aus. Angestrebt wird positive Netto-Wirkung.",
     "url": "/begriffe/wirkungsoekonomie/",
     "priority": 1999,
     "autoLinkAllowed": true,
