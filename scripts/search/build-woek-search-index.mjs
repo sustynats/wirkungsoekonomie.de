@@ -671,12 +671,23 @@ const merged = Array.from(byUrl.values())
 // per-entry content hashes already identify the underlying source revision.
 const generatedAt = "source-derived";
 
+function normalizeShortHyphens(value) {
+  if (typeof value === "string") return value.replace(/[\u2010-\u2015\u2212\uFE58\uFE63\uFF0D]/g, "-");
+  if (Array.isArray(value)) return value.map(normalizeShortHyphens);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, normalizeShortHyphens(item)]));
+  }
+  return value;
+}
+
+const normalizedMerged = merged.map(normalizeShortHyphens);
+
 // One JSON record per line keeps diffs local without megabytes of indentation.
-fs.writeFileSync(indexPath, `[\n${merged.map(entry => JSON.stringify(entry)).join(",\n")}\n]\n`);
+fs.writeFileSync(indexPath, `[\n${normalizedMerged.map(entry => JSON.stringify(entry)).join(",\n")}\n]\n`);
 const stableMeta = Object.fromEntries(
   Object.entries(meta)
     .filter(([route]) => isIndexableSearchRoute(route))
     .sort(([a], [b]) => compareStableText(a, b)),
 );
-fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt, entries: stableMeta }, null, 2)}\n`);
-console.log(`Integrated ${generated.length} WÖk search entries into ${merged.length} deliverable search results.`);
+fs.writeFileSync(metaPath, `${JSON.stringify(normalizeShortHyphens({ generatedAt, entries: stableMeta }), null, 2)}\n`);
+console.log(`Integrated ${generated.length} WÖk search entries into ${normalizedMerged.length} deliverable search results.`);

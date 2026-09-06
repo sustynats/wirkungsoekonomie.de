@@ -12,7 +12,8 @@ const esc = (v) => String(v ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").
 // Externe, freigegebene Profile
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/natalie-weber-woek/",
-  spotify: "https://open.spotify.com/show/7gfvcutQoqS8sfWCN5ZS22",
+  spotifyPodcast: "https://open.spotify.com/show/7gfvcutQoqS8sfWCN5ZS22",
+  spotifyMusic: "https://open.spotify.com/artist/0v7YDafomTIusMpGfLNuFw",
   appleMusic: "https://music.apple.com/de/artist/sustynats/1733095804",
   amazonMusic: "https://music.amazon.de/artists/B0CWK13RR3/sustynats",
   youtubeMusic: "https://music.youtube.com/channel/UCOpEj__GRuno-7yJbzXz2Ow",
@@ -84,7 +85,7 @@ const CSS = `
       .faq summary { cursor:pointer; font-weight:600; padding:.7rem 0; list-style:none; }
       .faq summary::-webkit-details-marker { display:none; }
       .faq summary::before { content:"＋"; margin-right:.6rem; color:var(--gold); font-weight:700; }
-      .faq details[open] summary::before { content:"－"; }
+      .faq details[open] summary::before { content:"-"; }
       .faq details > div { padding:0 0 .8rem; color:#3a4551; }
       .close { text-align:center; } .close h2 { max-width:24ch; margin-inline:auto; } .close .cta-row { justify-content:center; }
       .quote-grid { display:grid; gap:16px; margin-top:26px; }
@@ -236,7 +237,7 @@ function buildMain() {
     description: "Physikerin, Nachhaltigkeitsstrategin, Autorin, Musikerin und Begründerin der Wirkungsökonomie.",
     jobTitle: "Begründerin der Wirkungsökonomie",
     knowsAbout: ["Wirkungsökonomie", "Wirkungswissenschaften", "Wirkungsforschung", "Nachhaltigkeitsmanagement", "Systemdenken", "Wirkungsmessung", "Wirkungssteuerung", "Demokratie", "positive Netto-Wirkung"],
-    sameAs: [LINKS.linkedin, LINKS.spotify, LINKS.appleMusic, LINKS.amazonMusic, LINKS.youtubeMusic, LINKS.amazonAuthor],
+    sameAs: [LINKS.linkedin, LINKS.spotifyPodcast, LINKS.spotifyMusic, LINKS.appleMusic, LINKS.amazonMusic, LINKS.youtubeMusic, LINKS.amazonAuthor],
   });
   const body = `    <header class="hero">
       <div class="wrap">
@@ -253,7 +254,7 @@ function buildMain() {
           </div>
         </div>
         <figure class="hero-portrait">
-          <img src="${base}../../assets/img/people/natalie-weber.jpeg" alt="Natalie Weber – Physikerin, Nachhaltigkeitsstrategin, Autorin und Musikerin" width="300" height="375" decoding="async">
+          <img src="${base}../../assets/img/people/natalie-weber.jpeg" alt="Natalie Weber - Physikerin, Nachhaltigkeitsstrategin, Autorin und Musikerin" width="300" height="375" decoding="async">
         </figure>
       </div>
     </header>
@@ -319,7 +320,7 @@ ${sec({ num: "08 · Öffentliche Kommunikation", h2: "Bewusst im Hintergrund - w
       </div>
     </section>`;
   return shell({ rel: "w/natalie-weber/index.html", base, current: "",
-    title: "Natalie Weber", metaTitle: "Natalie Weber – Begründerin der Wirkungsökonomie und Entwicklerin der Wirkungswissenschaften",
+    title: "Natalie Weber", metaTitle: "Natalie Weber - Begründerin der Wirkungsökonomie und Entwicklerin der Wirkungswissenschaften",
     description: "Natalie Weber ist Physikerin, Nachhaltigkeitsstrategin, Autorin, Musikerin und Begründerin der Wirkungsökonomie. Sie entwickelt Wirkungswissenschaften, Wirkungsinstitut und Akademie als Räume für Wirkung auf Mensch, Planet und Demokratie.",
     jsonld, body });
 }
@@ -328,7 +329,7 @@ ${sec({ num: "08 · Öffentliche Kommunikation", h2: "Bewusst im Hintergrund - w
 function sub(rel, current, kicker, h1, subline, description, inner) {
   const base = "../";
   return shell({ rel: `w/natalie-weber/${rel}index.html`, base, current,
-    title: `${h1} – Natalie Weber`, metaTitle: `${h1} – Natalie Weber | Wirkungsökonomie`, description,
+    title: `${h1} - Natalie Weber`, metaTitle: `${h1} - Natalie Weber | Wirkungsökonomie`, description,
     body: subhero(base, kicker, h1, subline) + "\n" + inner(base) });
 }
 
@@ -368,13 +369,13 @@ function buildSubpages() {
     "Der Podcast von Natalie Weber: „Der neue Kompass“ erklärt die Wirkungsökonomie ruhig und verständlich - mit Transkripten und Anschlussseiten.",
     (base) => sec({ num: "Hören", h2: "Der neue Kompass",
       intro: "Im Podcast übersetzt Natalie Weber komplexe Wirkungsfragen in ruhige, verständliche Folgen - mit Player, Transkript und Anschlussseiten.",
-      inner: `        <p class="chips"><a class="chip" href="${base}../../podcast/">Zur Podcast-Übersicht</a><a class="chip" href="${LINKS.spotify}">Auf Spotify hören</a><a class="chip" href="${base}../../feeds/podcast.xml">RSS-Feed</a></p>` }) ));
+      inner: `        <p class="chips"><a class="chip" href="${base}../../podcast/">Zur Podcast-Übersicht</a><a class="chip" href="${LINKS.spotifyPodcast}">Auf Spotify hören</a><a class="chip" href="${base}../../feeds/podcast.xml">RSS-Feed</a></p>` }) ));
 
   out.push(sub("musik/", "musik/", "Musik", "Musik", "Natalies zweiter Resonanzraum: Sprache, Gefühl, Klang.",
-    "Musik von Natalie Weber (sustynats): der kreative Resonanzraum neben der fachlichen Arbeit - auf Apple Music, Amazon Music und YouTube Music.",
+    "Musik von Natalie Weber (sustynats): der kreative Resonanzraum neben der fachlichen Arbeit - auf Spotify, Apple Music, Amazon Music und YouTube Music.",
     (base) => sec({ num: "Hören", h2: "sustynats",
       intro: "Musik zeigt eine andere Seite derselben Grundfrage wie die Wirkungsökonomie: Was berührt, was verändert, was bleibt? Als „sustynats“ verbindet Natalie Weber Sprache, Gefühl und Öffentlichkeit.",
-      inner: `        <p class="chips"><a class="chip" href="${LINKS.appleMusic}">Apple Music</a><a class="chip" href="${LINKS.amazonMusic}">Amazon Music</a><a class="chip" href="${LINKS.youtubeMusic}">YouTube Music</a></p>` }) ));
+      inner: `        <p class="chips"><a class="chip" href="${LINKS.spotifyMusic}">Spotify</a><a class="chip" href="${LINKS.appleMusic}">Apple Music</a><a class="chip" href="${LINKS.amazonMusic}">Amazon Music</a><a class="chip" href="${LINKS.youtubeMusic}">YouTube Music</a></p>` }) ));
 
   out.push(sub("presse/", "presse/", "Presse", "Presse & Anfragen", "Presseinformationen zur Wirkungsökonomie, Hintergrundmaterialien und die passenden institutionellen Ansprechpartner:innen.",
     "Pressebereich zur Wirkungsökonomie: Kurzprofile, Hintergrundmaterialien, Zitate zur Verwendung sowie institutionelle Ansprechpartner:innen und Multiplikator:innen. Natalie Weber arbeitet bewusst im Hintergrund; Anfragen werden über Wirkungsinstitut, Akademie und autorisierte Vertreter:innen koordiniert.",
@@ -429,7 +430,7 @@ function buildSubpages() {
           <li>Wirkung, Wirkstoff, Wirkungspotenzial und Wirkungspfad</li>
           <li>Wirkungsmanagement</li>
           <li>Wirkungscontrolling</li>
-          <li>Netto-Wirkung, T-SROI, NWI und Impact-of-Investment</li>
+          <li>Netto-Wirkung, T-SROI, WÖk-Netto-Wirkungsindex und Impact-of-Investment</li>
           <li>Wirkungsökonomie in Unternehmen</li>
           <li>Wirkungsökonomie in Politik und Verwaltung</li>
           <li>Wirkungskommunikation ohne Greenwashing</li>
