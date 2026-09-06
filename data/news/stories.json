@@ -1,8 +1,770 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-06T13:36:20.439Z",
-  "updated_at": "2026-09-06T13:51:15.545Z",
+  "updated_at": "2026-09-06T14:06:24.915Z",
   "stories": [
+    {
+      "story_id": "wt-7d7a59cf8e16cea9",
+      "slug": "millionen-daten-geleakt-hackerangriff-konnte-grossere-folgen-haben-als-bisher-gedacht-16cea9",
+      "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
+      "first_seen": "2026-09-06T13:07:37.000Z",
+      "last_updated": "2026-09-06T14:03:00.000Z",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/millionen-daten-geleakt--hackerangriff-koennte-groessere-folgen-haben-als-bisher-gedacht-38213080.html",
+          "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
+          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:44:27.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "327e9e51cacf94197e2d3c10b9f835232081b7e604057467309a81d2ef063562",
+          "source_item_id": "d37c8512d460a864f6e0273b30e4935063f484e810dd70c9fc8d4399d966eda8",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:44:27.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-millionen-daten-geleakt-16023523.html",
+          "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
+          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:09:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d983009c2b3697205735c5e2516137d729c8fc437c5831e3e7b8051519ca4c22",
+          "source_item_id": "b90fed8b8eaacd013ed9980800610b729af0af499ecd121056e6494a6e06f15d",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:09:16.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/ausmass-noch-unbekannt-hackerangriff-auf-berliner-landesnetz/100247824.html",
+          "title": "Cybersicherattacke Berlin: Hackerangriff könnte größere Folgen haben als bisher gedacht",
+          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:29:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "59201674e9aea808bd51169e1c6a60cb84fc394c1c369304524bf0eb5804213a",
+          "source_item_id": "ddb38abb5d44f594c62fe2d011b5cc7eac7e5193043fca155c46afa739650f8c",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:29:00.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/datenleck-in-berlin--it-experten-und-politik-erheben-schwere-vorwuerfe-38213090.html",
+          "title": "Datenleck in Berlin: Hackerangriff könnte größere Folgen haben als bisher gedacht",
+          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Politiker und Experten äußern scharfe Kritik.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:03:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "8cf38484d4ccd2ca979d622cf007a581e5b8c9a3b7d02104ed670191b6329753",
+          "source_item_id": "486749689ea75c8f98e362eb7f276c7eb85b391c0849c6694df9d681f9407fef",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:03:00.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7d7a59cf8e16cea9-claim-01",
+          "story_id": "wt-7d7a59cf8e16cea9",
+          "claim": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T14:06:24.915Z"
+        },
+        {
+          "claim_id": "wt-7d7a59cf8e16cea9-claim-02",
+          "story_id": "wt-7d7a59cf8e16cea9",
+          "claim": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T14:06:24.915Z"
+        },
+        {
+          "claim_id": "wt-7d7a59cf8e16cea9-claim-03",
+          "story_id": "wt-7d7a59cf8e16cea9",
+          "claim": "Cybersicherattacke Berlin: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T14:06:24.915Z"
+        },
+        {
+          "claim_id": "wt-7d7a59cf8e16cea9-claim-04",
+          "story_id": "wt-7d7a59cf8e16cea9",
+          "claim": "Datenleck in Berlin: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Politiker und Experten äußern scharfe Kritik.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T14:06:24.915Z"
+        }
+      ],
+      "content_hash": "24f8bf4629ef9437d17f66013d2dda5f9924cab98e80e8cdbd4d31124cf0d563",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T14:21:24.915Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T14:06:24.915Z",
+      "event_first_seen_at": "2026-09-06T13:21:40.973Z",
+      "event_detected_at": "2026-09-06T13:21:40.973Z",
+      "event_id": "event-ca921f1d3261813a142c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Digitalisierung"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.41525,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 44.732366666666664,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T14:06:24.915Z",
+        "fingerprint": "0e5c69f63145e7bdf0b071e2efcfe884d6da473e043e9921237662a94969b5fa",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T14:06:24.915Z",
+      "rejection": {
+        "at": "2026-09-06T14:06:24.915Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-d1fe1258d50ff9d6",
+      "slug": "kriminalitat-23-jahriger-wird-in-limburg-angegriffen-und-verletzt-0ff9d6",
+      "title": "Kriminalität: 23-Jähriger wird in Limburg angegriffen und verletzt",
+      "first_seen": "2026-09-06T13:55:16.000Z",
+      "last_updated": "2026-09-06T13:55:16.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hessen/kriminalitaet--23-jaehriger-wird-in-limburg-angegriffen-und-verletzt-38213138.html",
+          "title": "Kriminalität: 23-Jähriger wird in Limburg angegriffen und verletzt",
+          "summary": "Mindestens fünf Menschen sollen an dem Angriff auf einen 23-Jährigen in Limburg beteiligt gewesen sein. Jetzt sucht die Polizei Zeugen für die Tat.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:55:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "7c5f4903b32ac29713618804a90f510e12c3fd1cb010d439bd3820375797c4ad",
+          "source_item_id": "591d59e7f5f29cdc5f5a7929186729d7379440a0373cbdaa14468e78626384c6",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:55:16.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d1fe1258d50ff9d6-claim-01",
+          "story_id": "wt-d1fe1258d50ff9d6",
+          "claim": "Kriminalität: 23-Jähriger wird in Limburg angegriffen und verletzt: Mindestens fünf Menschen sollen an dem Angriff auf einen 23-Jährigen in Limburg beteiligt gewesen sein. Jetzt sucht die Polizei Zeugen für die Tat.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T14:06:24.915Z"
+        }
+      ],
+      "content_hash": "8a0bcdb973a58adfd4b00c90d92e02e6c1c2829b231d45c90f7bd5df779840c3",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T14:21:24.915Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T14:06:24.915Z",
+      "event_first_seen_at": "2026-09-06T14:06:24.915Z",
+      "event_detected_at": "2026-09-06T14:06:24.915Z",
+      "event_id": "event-20aae15086eb2751fef1",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.148583333333333,
+        "detection_delay_minutes": 11.148583333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T14:06:24.915Z",
+        "fingerprint": "9ba270aea8843f69be35b3fd7883b051d311cae6d88e32a277a42792921a9e16",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T14:06:24.915Z",
+      "rejection": {
+        "at": "2026-09-06T14:06:24.915Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-bb2bc9604b13b293",
+      "slug": "wegen-drohnen-vorwurfen-zu-leipzig-russlands-aussenminister-lawrow-sieht-beginn-eines-ec-13b293",
+      "title": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland",
+      "first_seen": "2026-09-06T13:55:12.000Z",
+      "last_updated": "2026-09-06T13:55:12.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/russlands-aussenminister-lawrow-sieht-beginn-eines-echten-krieges-mit-deutschland-100.html",
+          "title": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland",
+          "summary": "In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft. Die gegen Moskau erhobenen Anschuldigungen, für den versuchten Anschlag mit einer Drohne verantwortlich zu sein, stellten letztlich den Beginn eines echten Krieges dar, sagte Lawrow laut der staatlichen Nachrichtenagentur Tass.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:55:12.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "2ed694fe33e89993ea15ebb452ab4ce261dff869cda39825b6218e70c52ddffc",
+          "source_item_id": "d732fdd73b39fcaf8acd1d02c0a66ab162c272fca831d71886044acb586776bd",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:55:12.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-bb2bc9604b13b293-claim-01",
+          "story_id": "wt-bb2bc9604b13b293",
+          "claim": "Wegen Drohnen-Vorwürfen zu Leipzig - Russlands Außenminister Lawrow sieht \"Beginn eines echten Krieges\" mit Deutschland: In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft. Die gegen Moskau erhobenen Anschuldigungen, für den versuchten Anschlag mit einer Drohne verantwortlich zu sein, stellten letztlich den Beginn eines echten Krieges dar, sagte Lawrow laut der staatlichen Nachrichtenagentur Tass.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T14:06:24.915Z"
+        }
+      ],
+      "content_hash": "3ece215dc06fe98bf4af022879492347ddbbd121b2ad3bf01328022cabbbaea9",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T14:21:24.915Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T14:06:24.915Z",
+      "event_first_seen_at": "2026-09-06T14:06:24.915Z",
+      "event_detected_at": "2026-09-06T14:06:24.915Z",
+      "event_id": "event-062951d95ceb8b44030c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.21525,
+        "detection_delay_minutes": 11.21525,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T14:06:24.915Z",
+        "fingerprint": "2b4af218fed2fbde3eba1acdd3e1cb608f39ddf34bff6884080bd95637888b3b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T14:06:24.915Z",
+      "rejection": {
+        "at": "2026-09-06T14:06:24.915Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-ecf4b205df1ecac3",
+      "slug": "kriegsfolgen-bombenentscharfung-tausende-kieler-mussen-aus-wohnungen-1ecac3",
+      "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
+      "first_seen": "2026-09-06T07:01:51.000Z",
+      "last_updated": "2026-09-06T13:52:19.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-muessen-aus-wohnungen-38212366.html",
+          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
+          "summary": "In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen. Die Polizei appelliert zur Mithilfe.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:55:40.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "33c8adea58d1a7159a9d9b19c0af32e917c89c409a0cfc2fece066dd8a61bde1",
+          "source_item_id": "ece9a49829da72c11fef3a399f12cf12fdd576e742a8a144eda9c2bcab100c88",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T12:55:40.000Z",
+          "ingested_at": "2026-09-06T13:21:40.973Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-aus-sperrgebiet-heraus-38212366.html",
+          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler aus Sperrgebiet heraus",
+          "summary": "In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:52:19.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "202644329857e5dee81ddadb4287ed9a7955f7cf7dfb43d7b7d889ee5da51032",
+          "source_item_id": "c946db1932c185504f03ddedb971240bb53862b58f8f453a6537d35658786e14",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:52:19.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ecf4b205df1ecac3-claim-01",
+          "story_id": "wt-ecf4b205df1ecac3",
+          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen: In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen. Die Polizei appelliert zur Mithilfe.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T14:06:24.915Z"
+        },
+        {
+          "claim_id": "wt-ecf4b205df1ecac3-claim-02",
+          "story_id": "wt-ecf4b205df1ecac3",
+          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler aus Sperrgebiet heraus: In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T14:06:24.915Z"
+        }
+      ],
+      "content_hash": "aa0a1ca0674541c69c79ffaa3f46feea6e018ac33bde9ffc32b5aff99961f924",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T14:06:24.915Z",
+      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
+      "event_detected_at": "2026-09-06T07:16:30.989Z",
+      "event_id": "event-c1061c18db8a491c241b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.098583333333334,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 409.8987666666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T14:06:24.915Z",
+        "fingerprint": "71e7ba38396d7583cc796cf8ab6405b424d37a44c44378eab0ef4b2c62457158",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-ed0f00e58dfe544f",
       "slug": "lawrow-deutschland-will-wieder-krieg-gegen-russland-fe544f",
@@ -352,14 +1114,14 @@
           "source_id": "zdfheute-nachrichten",
           "publisher": "ZDFheute",
           "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
-          "title": "Polizei fahndet nach Tatverdächtigem am Hambacher Forst",
+          "title": "Polizei fahndet nach Verdächtigem am Hambacher Forst",
           "summary": "Mit einem Großaufgebot sucht die Polizei am Hambacher Forst nach einem Tatverdächtigen. Er soll die Sabotage-Aktionen aufs Stromnetz durchgeführt haben. Ein Indiz: sein Fahrrad.",
           "source_type": "media_rss",
           "published_at": "2026-09-06T13:43:00.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "3e08c59924116ffa7bb28093b5dbdc4d1be4ac277d20096c25eb9806b9a1865e",
+          "content_hash": "42a5a21c3ddfd6c0ca4fa0fa64094b9ca30818b49e3f9d0247a4298e12798745",
           "source_item_id": "1e4be773f43481f8bf81c438e093fb41bb450bf5ed005840d53079ecedaf819c",
           "publisher_id": "zdfheute",
           "publisher_kind": "public_broadcasting",
@@ -372,7 +1134,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T13:43:00.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -386,7 +1148,7 @@
         {
           "claim_id": "wt-b5ca8651ce7844db-claim-01",
           "story_id": "wt-b5ca8651ce7844db",
-          "claim": "Polizei fahndet nach Tatverdächtigem am Hambacher Forst: Mit einem Großaufgebot sucht die Polizei am Hambacher Forst nach einem Tatverdächtigen. Er soll die Sabotage-Aktionen aufs Stromnetz durchgeführt haben. Ein Indiz: sein Fahrrad.",
+          "claim": "Polizei fahndet nach Verdächtigem am Hambacher Forst: Mit einem Großaufgebot sucht die Polizei am Hambacher Forst nach einem Tatverdächtigen. Er soll die Sabotage-Aktionen aufs Stromnetz durchgeführt haben. Ein Indiz: sein Fahrrad.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "zdfheute-nachrichten",
           "source_function": "journalistic_report",
@@ -401,20 +1163,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         }
       ],
-      "content_hash": "62213e5a4e389d5bd36bcb58ff7cbe008b4974922e7779aa6d04f802c2cdd9d5",
+      "content_hash": "33451b4ed891f2d18ea06c5e029130c62a54f1de37cf46b9826bc1c1816cf1b7",
       "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-06T14:06:15.545Z",
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
       "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T13:51:15.545Z",
+      "updated_at": "2026-09-06T14:06:24.915Z",
       "event_first_seen_at": "2026-09-06T13:51:15.545Z",
       "event_detected_at": "2026-09-06T13:51:15.545Z",
       "event_id": "event-2863d76840aa042b6f5e",
@@ -447,35 +1209,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.259083333333333,
+        "source_age_minutes": 23.41525,
         "detection_delay_minutes": 8.259083333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.156166666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:51:15.545Z",
-        "fingerprint": "2bb13f0c69616ef743d6e475c959daf4157fdda79850094326a5825ebaeb0e8a",
+        "checked_at": "2026-09-06T14:06:24.915Z",
+        "fingerprint": "a2828573af4a5e57a0ff057cab18f8cbd6424b7e503c5956f2cdff0167352f1f",
         "issue_codes": [],
         "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T13:51:15.545Z",
-      "rejection": {
-        "at": "2026-09-06T13:51:15.545Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
       }
     },
     {
@@ -512,7 +1262,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T13:37:48.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -541,24 +1291,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         }
       ],
       "content_hash": "d092676f74e4296dbc782fffc8159b1730fa7f53fd4431ab6a6eb514f1f56efe",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_NEWS_VALUE_CONTEXT_ONLY",
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
-        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:24"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-06T14:06:15.545Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-06T14:36:24.915Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T13:51:15.545Z",
+      "updated_at": "2026-09-06T14:06:24.915Z",
       "event_first_seen_at": "2026-09-06T13:51:15.545Z",
       "event_detected_at": "2026-09-06T13:51:15.545Z",
       "event_id": "event-b015c56a3cbdc889354c",
@@ -594,23 +1340,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 13.459083333333334,
+        "source_age_minutes": 28.61525,
         "detection_delay_minutes": 13.459083333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.156166666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:51:15.545Z",
+        "checked_at": "2026-09-06T14:06:24.915Z",
         "fingerprint": "0702b12b449f1eb77352981ee5d4442e4692728f534acac1231922b6e6978097",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T14:06:24.915Z",
+      "rejection": {
+        "at": "2026-09-06T14:06:24.915Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -1093,254 +1851,94 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T13:37:12.475Z",
         "status": "generated"
-      }
-    },
-    {
-      "story_id": "wt-7d7a59cf8e16cea9",
-      "slug": "millionen-daten-geleakt-hackerangriff-konnte-grossere-folgen-haben-als-bisher-gedacht-16cea9",
-      "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
-      "first_seen": "2026-09-06T13:07:37.000Z",
-      "last_updated": "2026-09-06T13:29:00.000Z",
-      "topic": [
-        "Digitalisierung"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/millionen-daten-geleakt--hackerangriff-koennte-groessere-folgen-haben-als-bisher-gedacht-38213080.html",
-          "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
-          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T13:44:27.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "327e9e51cacf94197e2d3c10b9f835232081b7e604057467309a81d2ef063562",
-          "source_item_id": "d37c8512d460a864f6e0273b30e4935063f484e810dd70c9fc8d4399d966eda8",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:44:27.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "f2555281f53c4ec1d712e566528c5f63acd1cfe7eb2812b659ab54ea769163f5",
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+            "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T11:05:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "424dbd5070971105161045cf7613a29930ba6acb14a1a3e0fc00ef53032a4b9e",
+            "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T11:05:30.000Z",
+            "ingested_at": "2026-09-06T11:51:43.074Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+            "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T13:35:27.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "b37dc0f2a85bb05f2368e0c3b99aab5c59d5e955280157f3552fef7686d747fd",
+            "source_item_id": "af75b6323e78549a2abcaa2a01049a838569ff8727ae93504700c98cf302b7cb",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T13:35:27.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-millionen-daten-geleakt-16023523.html",
-          "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
-          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T13:09:16.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "d983009c2b3697205735c5e2516137d729c8fc437c5831e3e7b8051519ca4c22",
-          "source_item_id": "b90fed8b8eaacd013ed9980800610b729af0af499ecd121056e6494a6e06f15d",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:09:16.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/deutschland/ausmass-noch-unbekannt-hackerangriff-auf-berliner-landesnetz/100247824.html",
-          "title": "Cybersicherattacke Berlin: Hackerangriff könnte größere Folgen haben als bisher gedacht",
-          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T13:29:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "59201674e9aea808bd51169e1c6a60cb84fc394c1c369304524bf0eb5804213a",
-          "source_item_id": "ddb38abb5d44f594c62fe2d011b5cc7eac7e5193043fca155c46afa739650f8c",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:29:00.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "423d55d844c3549d98d95d631efe3bdc8060a0df81cf9a4fdbd09eba7c2e81ea",
+          "issue_codes": [],
+          "warning_codes": []
         }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-7d7a59cf8e16cea9-claim-01",
-          "story_id": "wt-7d7a59cf8e16cea9",
-          "claim": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
-        },
-        {
-          "claim_id": "wt-7d7a59cf8e16cea9-claim-02",
-          "story_id": "wt-7d7a59cf8e16cea9",
-          "claim": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
-        },
-        {
-          "claim_id": "wt-7d7a59cf8e16cea9-claim-03",
-          "story_id": "wt-7d7a59cf8e16cea9",
-          "claim": "Cybersicherattacke Berlin: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
-        }
-      ],
-      "content_hash": "6d803dabf638d62a4f8c3026242278a15c6a87d90c88fd749cc52350a43adf42",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-06T14:06:15.545Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T13:51:15.545Z",
-      "event_first_seen_at": "2026-09-06T13:21:40.973Z",
-      "event_detected_at": "2026-09-06T13:21:40.973Z",
-      "event_id": "event-ca921f1d3261813a142c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 46,
-        "public_relevance": "mittel",
-        "topics": [
-          "Digitalisierung"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 6.809083333333334,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 29.5762,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T13:51:15.545Z",
-        "fingerprint": "5f951193158113c7624023fd6ebdc882b245dd672db153490044339e0b9cd525",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T13:51:15.545Z",
-      "rejection": {
-        "at": "2026-09-06T13:51:15.545Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
       }
     },
     {
@@ -2637,146 +3235,6 @@
       }
     },
     {
-      "story_id": "wt-ecf4b205df1ecac3",
-      "slug": "kriegsfolgen-bombenentscharfung-tausende-kieler-mussen-aus-wohnungen-1ecac3",
-      "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
-      "first_seen": "2026-09-06T07:01:51.000Z",
-      "last_updated": "2026-09-06T12:55:40.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-muessen-aus-wohnungen-38212366.html",
-          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
-          "summary": "In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen. Die Polizei appelliert zur Mithilfe.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:55:40.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "33c8adea58d1a7159a9d9b19c0af32e917c89c409a0cfc2fece066dd8a61bde1",
-          "source_item_id": "ece9a49829da72c11fef3a399f12cf12fdd576e742a8a144eda9c2bcab100c88",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T12:55:40.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-ecf4b205df1ecac3-claim-01",
-          "story_id": "wt-ecf4b205df1ecac3",
-          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen: In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen. Die Polizei appelliert zur Mithilfe.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
-        }
-      ],
-      "content_hash": "62984e043f01507f8dffaa06bb7ffa5f647588f2e4af734e9f7aef6f8c212719",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-06T13:51:20.439Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T13:36:20.439Z",
-      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
-      "event_detected_at": "2026-09-06T07:16:30.989Z",
-      "event_id": "event-c1061c18db8a491c241b",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 40.67398333333333,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 379.82416666666666,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 92,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T13:36:20.439Z",
-        "fingerprint": "2cc52fabef1caae7802c0e2304966a46adc3d22c5173b378f3dee6ef88902b7d",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T13:36:20.439Z",
-      "rejection": {
-        "at": "2026-09-06T13:36:20.439Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
       "story_id": "wt-55bd06a2965313bb",
       "slug": "attacken-auf-stromversorgung-strom-sabotage-polizei-startet-einsatz-am-hambacher-forst-5313bb",
       "title": "Attacken auf Stromversorgung: Strom-Sabotage: Polizei startet Einsatz am Hambacher Forst",
@@ -3763,6 +4221,61 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T12:40:51.864Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "dd722c36fdc578ba3dc9df001a0ffd9e77f15fefb61bd47eef2bc8744728c548",
+        "sources": [
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/US-Vermittler-in-der-Ukraine/!6210651",
+            "title": "US-Vermittler in der Ukraine: Trumps Schwiegersohn doch nicht so wichtig",
+            "summary": "Erst sollten sie mit dem Flugzeug in Kyjiw landen, jetzt sind Jared Kushner und Steve Witkoff doch Zug gefahren – so wie alle. Kommt ein Ende des Kriegs näher? mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T11:48:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "99429aa396c7fc51cc771b1a5e50d066e05bfe35bb8b9cf94692ead814a7e8f2",
+            "source_item_id": "4dcaebcfda13c3734b4f4b36bd91e85ff55fbc681ff8f38e0d8fe477163b20e1",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T11:48:00.000Z",
+            "ingested_at": "2026-09-06T12:38:11.963Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "1b8d9b174df22264a08c74cf10b778040acd7881d73cc50c14da2a7e4c0b1724",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -4817,7 +5330,230 @@
           "source_count": 5
         }
       ],
-      "retirement_history": []
+      "retirement_history": [],
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "b75841e17eb2b6294ac12b54c14aaafba6c4e940ace7c1577b3fdc48e86134cf",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
+            "summary": "Die US-Unterhändler Witkoff und Kushner werden heute zu einem Treffen mit dem ukrainischen Präsidenten Präsident Selenskyj in Kiew erwartet. Russland hat angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen. Gestern hatten die US-Gesandten in Moskau mit dem russischen Präsidenten Putin gesprochen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T08:45:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "0c62fd1262be41262586474bd1654083562adfb27c12da24e4bb5a9cba174074",
+            "source_item_id": "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T08:45:20.000Z",
+            "ingested_at": "2026-09-06T09:06:22.155Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-in-kiew-eingetroffen-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte in Kiew eingetroffen",
+            "summary": "Die US-Unterhändler Witkoff und Kushner sind zu einem Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew eingetroffen. Dabei sollen neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert werden. Selenskyj erklärte, sein Land wolle den Krieg mit Russland beenden. Dafür seien aber umfassende Sicherheitsgarantien nötig.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T12:30:49.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1f0f4ce79a8fc1bde60fdd5de126c899583beaa99eebdb955fe97b2225545da1",
+            "source_item_id": "bca2c955b228fac40e30e565c9a4d04a0b3cf538db8fb06c8ff0df97364fe1be",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T12:30:49.000Z",
+            "ingested_at": "2026-09-06T12:38:11.963Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/us-gesandte-witkoff-und-kushner-per-zug-in-kiew-eingetroffen-38212840.html",
+            "title": "US-Gesandte Witkoff und Kushner per Zug in Kiew eingetroffen",
+            "summary": "Die US-Gesandten Steve Witkoff und Jared Kushner sind am Sonntag zu Gesprächen über ein Ende des Ukraine-Kriegs in Kiew eingetroffen. Die beiden Gesandten von US-Präsident Donald Trump kamen per Zug aus Polen in der ukrainischen Hauptstadt an, wie ein AFP-Fotograf berichtete. Witkoff und Kushner waren zuvor in Moskau, wo sie mit dem russischen Präsidenten Wladimir Putin gesprochen hatten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:38:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "f683691c38a70bc08ccf8bf96c213907993945466a4eb4f7335f810eb300832b",
+            "source_item_id": "dae71c9c90bd0f60524643e0b031a88431feb09b9589394a12a9ad844c0d0e2f",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:38:33.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "afp",
+            "agency_origin_confidence": "high",
+            "provenance": {
+              "origin": "agency:afp",
+              "basis": "agency_attribution_in_available_text",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-witkoff-und-kushner-erstmals-in-kiew-38212846.html",
+            "title": "Ukraine-Krieg: US-Vermittler Witkoff und Kushner in Kiew eingetroffen",
+            "summary": "Die US-Unterhändler Witkoff und Kushner sind nach mehreren Besuchen in Russland während des Ukraine-Krieges erstmals in die Ukraine gereist. Bringt das die Wende im Krieg?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T12:14:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "86cf5a092bcbde7bd284a74728a811f8a949ee6a349239ad69280633260f0664",
+            "source_item_id": "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T12:14:00.000Z",
+            "ingested_at": "2026-09-06T12:38:11.963Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-vermittlungsversuch-100.html",
+            "title": "US-Gesandte in Kiew eingetroffen: Neuer Anlauf für Friedensgespräche",
+            "summary": "Nach ihrem Treffen mit Kremlchef Putin in Moskau sind die US-Sondergesandten Kushner und Witkoff in Kiew eingetroffen, um mit Präsident Selenskyj zu reden.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:53:40.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "e89cc40be98abdbdafcc725251a3d142820bd439e36db19478d483cf038cb290",
+            "source_item_id": "1ec910d22017fae8cd13bf62dce8d08cda37f6e3e2e1593f731ed6704f167b69",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:53:40.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "ndr-info"
+            },
+            "collection_source_id": "ndr-info",
+            "collection_publisher_id": "ndr"
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-erstmals-in-kiew-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte Witkoff und Kushner erstmals in Kiew",
+            "summary": "Die US-Unterhändler Witkoff und Kushner sind zu einem Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew eingetroffen. Dabei sollen neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert werden. Selenskyj erklärte, sein Land wolle den Krieg mit Russland beenden. Dafür seien aber umfassende Sicherheitsgarantien nötig.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T13:55:12.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "8b2da4da58fe2d34197e271d22f163e4708aa048c38fe44c0938d82cd84370f4",
+            "source_item_id": "698439e992203b1770ab824b31ce9a684666226412d174313abea16116405976",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T13:55:12.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "8b5ec3d091901b17e8f204c6ff0bb4a34c5dd582772c537f7b7c0a6aa1f1ccfe",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-9e3a2e21408b5561",
@@ -4956,6 +5692,155 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-5397e37f96a6bf1b",
+      "slug": "hackerangriff-ist-echter-daten-super-gau-a6bf1b",
+      "title": "Hackerangriff ist \"echter Daten-Super-Gau\"",
+      "first_seen": "2026-09-06T12:30:07.000Z",
+      "last_updated": "2026-09-06T12:30:07.000Z",
+      "topic": [
+        "Digitalisierung",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/hackerangriff-berlin-102.html",
+          "title": "Hackerangriff ist \"echter Daten-Super-Gau\"",
+          "summary": "Nach dem Hackerangriff in Berlin wurden offenbar auch hochsensible Daten zu Bundeswehr und kritischer Infrastruktur veröffentlicht. CDU-Sicherheitsexperte Kiesewetter sieht eine \"…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:30:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9fa8e97775769fa607deba27f419f55ec7e8ccf5c32d39720b76926c145cac5a",
+          "source_item_id": "bb9c1484413eb3e575fa9d2a561649ec5963cdc75b217502f6c1f229b203b27c",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T12:30:07.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5397e37f96a6bf1b-claim-01",
+          "story_id": "wt-5397e37f96a6bf1b",
+          "claim": "Hackerangriff ist \"echter Daten-Super-Gau\": Nach dem Hackerangriff in Berlin wurden offenbar auch hochsensible Daten zu Bundeswehr und kritischer Infrastruktur veröffentlicht. CDU-Sicherheitsexperte Kiesewetter sieht eine \"…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T14:06:24.915Z"
+        }
+      ],
+      "content_hash": "a7c45274dcc6f2e26a437d420498849593df1964c664365332dfb6b2e26fac71",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T14:21:24.915Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T14:06:24.915Z",
+      "event_first_seen_at": "2026-09-06T14:06:24.915Z",
+      "event_detected_at": "2026-09-06T14:06:24.915Z",
+      "event_id": "event-b8dcdeb9e8d48b0afd24",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Digitalisierung",
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 96.29858333333334,
+        "detection_delay_minutes": 96.29858333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 80,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T14:06:24.915Z",
+        "fingerprint": "9dc2dcd8b6d21c7b51eac0c610062bb6a62ae61b367210d56e6f9e995e6ddde1",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T14:06:24.915Z",
+      "rejection": {
+        "at": "2026-09-06T14:06:24.915Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -5539,7 +6424,7 @@
       },
       "pending_update": {
         "detected_at": "2026-09-06T13:06:40.348Z",
-        "content_hash": "a25cf1ff457cc2acace9c04059234f9550eb75681316250bc986d7b9a078671b",
+        "content_hash": "b62f30c39f9d5e55d711f4ef253335c22b38d83d3734540dae8cd07b094a97a3",
         "sources": [
           {
             "source_id": "ndr-info",
@@ -5578,14 +6463,14 @@
             "source_id": "ndr-info",
             "publisher": "NDR",
             "url": "https://www.ndr.de/nachrichten/schleswig-holstein/kiel_neumuenster_ploen_rendsburg-eckernfoerde/blindgaenger-in-kiel-wird-heute-entschaerft-evakuierung-fast-durch,regionkielnews-2802.html",
-            "title": "Blindgänger in Kiel wird heute entschärft - Evakuierung fast durch",
-            "summary": "Mehr als 5.000 Bewohner mussten bis 14 Uhr ihre Häuser und Wohnungen in Kiel-Dietrichsdorf verlassen. Die Entschärfung soll in diesen Minuten beginnen.",
+            "title": "Blindgänger in Kiel: Bombe erfolgreich entschärft",
+            "summary": "Der Kampfmittelräumdienst hat am Sonntagnachmittag eine Weltkriegsbombe im Stadtteil Dietrichdorf unschädlich gemacht.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T13:18:08.000Z",
+            "published_at": "2026-09-06T14:06:24.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "311d711a2ff2a5b8bd46b395e6c71e1f4bd4b8bf96d4256eb82687c64ac75454",
+            "content_hash": "70dc514ed25bcda85e74437751face38f237b079751707806888830013f8540a",
             "source_item_id": "ea18bc93865155c539ab6d868ee8e332d7caaae7dc99eed23c9e6fd9e1ee3e14",
             "publisher_id": "ndr",
             "publisher_kind": "public_broadcasting",
@@ -5597,8 +6482,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T13:18:08.000Z",
-            "ingested_at": "2026-09-06T13:21:40.973Z",
+            "source_published_at": "2026-09-06T14:06:24.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -5610,10 +6495,11 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
           "CLAIM_NUMBER_NOT_IN_EVIDENCE"
         ],
-        "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-06T13:51:40.973Z",
+        "quality_retry_count": 3,
+        "quality_retry_after": "2026-09-06T15:06:24.915Z",
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -5621,8 +6507,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T13:21:40.973Z",
-          "fingerprint": "788658c3fc0180445153c5ed7160a9c43019d5abc60978d0d0c0b53361604af8",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "63741470b2686d6df5e36659c6bc2f7644bb128949a9f596ee02741f844ccc37",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -6233,6 +7119,61 @@
             }
           }
         ]
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "a97bc042099f3f991e815ee278ec2b622ea82eed41f3b2acc155a781619c2d5a",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-100.html",
+            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
+            "summary": "Auf der Suche nach dem Tatverdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen das deutsche Stromnetz läuft ein Großeinsatz der Polizei am Hambacher Forst. Ein Reporter der Deutschen Presse-Agentur berichtet von bis zu 100 Polizeifahrzeugen vor Ort.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T13:55:12.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9d812be6208cdb25d5279142f4527709a7c5c46b2024dad0418355d9f5a6823c",
+            "source_item_id": "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T13:55:12.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "dpa",
+            "agency_origin_confidence": "high",
+            "provenance": {
+              "origin": "agency:dpa",
+              "basis": "agency_attribution_in_available_text",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "a170d0ae2e41c4209260012ffc7890113208f72819739c60567dae8c494cf075",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -7751,6 +8692,94 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T11:53:30.299Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "f16becd4b60051791dc12a54685bbf7e36d9e2d554e5302f7edd410215d1eb9d",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/oezdemir-fordert--hochdruck--beim-schutz-sicherheitsrelevanter-infrastruktur-38211938.html",
+            "title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+            "summary": "Nach Angriffen auf Umspannwerke in mehreren Bundesländern und einem nur knapp gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle hat Baden-Württembergs Ministerpräsident Cem Özdemir (Grüne) Tempo beim Schutz der sicherheitsrelevanten Infrastruktur sowie eine enge Zusammenarbeit der Bundesländer gefordert. „Die Sicherheitserfordernisse haben sich dramatisch verändert“, sagte Özdemir dem Redaktionsnetzwerk Deutschland (Sonntag).",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T22:49:44.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "5f1a04eafca6aaebe30dcf530227d08bd1b5d28f92e7eeb673bfb4e09ed686f0",
+            "source_item_id": "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T22:49:44.000Z",
+            "ingested_at": "2026-09-05T23:24:48.763Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-draengt-auf-besseren-schutz-von-infrastruktur-100.html",
+            "title": "Özdemir fordert \"Hochdruck\" beim Schutz sicherheitsrelevanter Infrastruktur",
+            "summary": "In vier Bundesländern waren Umspannwerke das Ziel von Brandstiftung. BW-Ministerpräsident Özdemir ruft zu schnellem Handeln auf. Die Bundesregierung kündigt Maßnahmen an.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T11:48:46.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "19a07e66873423ef7323d455ecd2000e220c30ee75ddfe1c4b1132893fbb2293",
+            "source_item_id": "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T11:48:46.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "de6fc3991d4fea8798415a759023dac4333248ae76dc8fa2a384d50054b77515",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -9395,7 +10424,62 @@
           "at": "2026-09-06T11:34:59.053Z",
           "note": "Die eigene Überschrift stellt nun den Brand und den betroffenen Markt vor die technische Ursachenangabe. Ein Medien- und Sprachcheck erläutert mögliche Assoziationen und die Grenzen einer Verallgemeinerung. Originalquelle, bisherige Sachverhaltsprüfung und Ereignisbewertungen bleiben erhalten."
         }
-      ]
+      ],
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "4c029ed44a766bc13aba9632b1809eee1b7242303ccc17bd52c9f32cc4b727c1",
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+            "title": "Seelze: Elektro-Rollstuhl löst Großbrand in Sonderpostenmarkt aus",
+            "summary": "Die Batterie des Rollstuhls hatte Funken geschlagen. Das Feuer konnte nicht eingedämmt werden, der Markt wurde komplett zerstört.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:03:10.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9bd2401d826938665e331469a12f0bfdc31650530596217e4707b9dd80d79a4d",
+            "source_item_id": "4308a7f3017d083a560046cd5a3931fb719b6a6b08956e91e871f8a23609fd57",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:03:10.000Z",
+            "ingested_at": "2026-09-06T10:21:08.621Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "249f18fd4be1f1cc4705514dcda46b786b53e92f94f2d94531e96c099cb8580d",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-2c3f96a91e1a0fb0",
@@ -10695,7 +11779,217 @@
           "source_count": 6
         }
       ],
-      "retirement_history": []
+      "retirement_history": [],
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "d729b8c1f06f08f7f3b7470a21fc041ccf3d10cdeeb67f2d05ddc16ed8218916",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:21:16.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
+            "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:21:16.000Z",
+            "ingested_at": "2026-09-04T17:39:54.371Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
+            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:22:14.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
+            "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:22:14.000Z",
+            "ingested_at": "2026-09-05T05:21:05.955Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
+            "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
+            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T17:46:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
+            "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T17:46:00.000Z",
+            "ingested_at": "2026-09-04T18:06:22.511Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T20:13:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
+            "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T20:13:08.000Z",
+            "ingested_at": "2026-09-04T20:36:32.644Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
+            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:18:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "7a7f9a1bdaea2412f799dd9ad08b8440ee47057859b3cb170b2ca789a4373bcc",
+            "source_item_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:18:53.000Z",
+            "ingested_at": "2026-09-05T11:31:43.777Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/ausland/us-vermittler-putin-moskau-kiew-ukraine-krieg-russland-100.html",
+            "title": "US-Vermittler treffen Selenskyj in Kiew",
+            "summary": "Nach einem Treffen mit Kremlchef Putin in Moskau sind die US-Vermittler Kushner und Witkoff weiter in die Ukraine gereist. Dort empfängt sie heute Präsident Selenskyj.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:58:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "c91e17e43ff46595eea56e62994723f8f62e9408293fc6cfd45f8fead427bdce",
+            "source_item_id": "9ad001726f59c5ef3ff4bc395560f9438257b4d897d29a3ba3b09a9738ec9a58",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:58:00.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "73c5deb23dce081eb674967ac81cf472c0b4964d59e6f31c46f7cce602dce265",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-d19b72245257af81",
@@ -12126,6 +13420,357 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T10:54:11.051Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "fe73af96d6717ba323684fdf0d2da3f372583b39a365c378383c3a1f1b549155",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+            "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:15:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ada3b25d5f1d2f6395fdb01c2694dc1c91caad6028096c51398f529688341224",
+            "source_item_id": "caa7462337f456f714632a73839e9496507b2c89174f6f0116345ae1d1cdd47d",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:15:04.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-100.html",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
+            "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T20:57:48.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ba6b5336cbefd5ab70cccb0ef8cbf8e0aa12442ee33c3304eb8af8705fc795b2",
+            "source_item_id": "88ed0dc883a49659c74146dce5d751ea22310c09eefc2d2a9aabbbbe22ae7017",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T20:57:48.000Z",
+            "ingested_at": "2026-09-05T22:06:43.441Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/ausland/europa/witkoff-kushner-treffen-putin-100.html",
+            "title": "Kreml spricht von nützlichen Gesprächen",
+            "summary": "Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Ein Kreml-Berater spricht von…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T23:00:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "68cc5596cfa13153dcbdecd3e5503f01c3bd01f7039b0fc64ce485c07bafc4a5",
+            "source_item_id": "94e3ce8628219fad670ec251de9fd4161e140178b0ec05449ed0a8ab76a74bc6",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T23:00:04.000Z",
+            "ingested_at": "2026-09-06T03:06:22.960Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-102.html",
+            "title": "Gespräche über Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
+            "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Jetzt werden die Gesandten von Präsident Trump in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T23:10:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "4366d035e754dab47a94244de00e70f6bc063f150ee84fe83a67b893671b1127",
+            "source_item_id": "9a0ca262de20d1c36c88339951571de63ee0f66468c2c9a41e6d97cd2ba9c277",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T23:10:33.000Z",
+            "ingested_at": "2026-09-06T01:21:36.222Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/verhandlungen--kreml-spricht-von-konstruktiven-gespraechen-mit-us-gesandten-38211922.html",
+            "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
+            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T22:32:05.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "2f6188f33f2744517fcce426e9b430520b23c489f294e87e772e8df74ebfb5d7",
+            "source_item_id": "97a589ea5e92a1c950dcc83b25867e955df33026edf37d66dec8bd86d010a06a",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T22:32:05.000Z",
+            "ingested_at": "2026-09-05T23:51:06.780Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021831.html",
+            "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
+            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T22:33:21.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9d73f3f185741b614c12381252743de2e98099de9b22127fd0d8a8e4c9dafd83",
+            "source_item_id": "ae1314fd3ad3115996c32022559adb37fa3c7e0ef25bcb686a0eada07dec0219",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T22:33:21.000Z",
+            "ingested_at": "2026-09-05T23:51:06.780Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-lage-im-uberblick-16021831.html",
+            "title": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
+            "summary": "Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T22:33:21.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1cd0d7f972bc99aa4fde22511d1164550b5bcdaa59a94ca4bedc57e5a8d23c7d",
+            "source_item_id": "88f82b8bbe2dcf995cc59d16a42521526282daa54a210f0db14a1fc5be39d1ad",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T22:33:21.000Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/lage-im-ueberblick--us-gesandte-nach-treffen-mit-putin-unterwegs-nach-kiew-38211922.html",
+            "title": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
+            "summary": "Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T00:18:16.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "e8797cb14ba76c632e4846dad974ec4de14526601f412e92380bdb855f4ce6e4",
+            "source_item_id": "589f28eeaf7513d13eb7463446c468070d74b137243fa82a5cf296fc309ae7ae",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T00:18:16.000Z",
+            "ingested_at": "2026-09-06T02:06:22.782Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+            "title": "Ukraine-News: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
+            "summary": "Der Kreml hat die nach langer Pause wieder aufgenommenen Gespräche von Präsident Wladimir Putin mit den US-Vermittlern Steve Witkoff und Jared Kushner als konstruktiv, inhaltsreich und vertrauensvoll bezeichnet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:33:10.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "f8da5cb0dc06c630d2b9db3781ffc4d22387d073e22031e988791c34b1d04b22",
+            "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:33:10.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
+            "title": "Vermittlungsmission: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
+            "summary": "Nach dem Treffen mit Wladimir Putin reisen Steve Witkoff und Jared Kushner nach Kiew. Bewegungen im Ukraine-Krieg sind derzeit nicht erkennbar.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:35:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "e54fe4cb334d14b14ccccfad74bdb3a88ae5ea5f9bedaf203c07564f08d061d7",
+            "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:35:00.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "1fc91e9d7e838095b8ac1a35749ca3e650f17e7a2d8f68f24d1752f3a5606811",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -12816,6 +14461,196 @@
             }
           }
         ]
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "71741ca9586225aa2b404b8f560305a17386cbebfff158834c98f50bae84b3d7",
+        "sources": [
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-102.html",
+            "title": "Witkoff und Kushner erstmals in Kiew erwartet",
+            "summary": "In Moskau hatten sie sich mit Kremlchef Putin getroffen und mit ihm über ein Ende des Ukraine-Kriegs verhandelt. Nun kommen die US-Gesandten Witkoff und Kushner nach Kiew - auf ei…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T03:15:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "8cfaaa864e14c5d17952e1a7016f37f46876ec6f8f3e75ba9ae99e92837e6617",
+            "source_item_id": "a3d74c05d2e65b2bce41a169eeb0ea68452733a4312efa79e87eb5c083eacb9e",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T03:15:04.000Z",
+            "ingested_at": "2026-09-06T05:41:03.427Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/ukraine-krieg--us-unterhaendler-witkoff-und-kushner-erstmals-in-kiew-38212818.html",
+            "title": "Ukraine-Krieg: US-Unterhändler Witkoff und Kushner erstmals in Kiew",
+            "summary": "Im Ringen um ein Ende des Ukraine-Kriegs sind die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen. Das berichteten mehrere Kiewer Medien; die Nachrichtenagentur Unian zeigte ein Video der Ankunft der beiden Männer in der ukrainischen Hauptstadt mit dem Zug. Video der Ankunft (Ukr.)",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:33:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "71203ece550f0c66e9b3ac45f69ca1b14352aac97b24d653b2cc04911216520a",
+            "source_item_id": "1d3e1d8b7ff7feef140430d18a007d3135f9394f54818d974f9cb76ef4a3126e",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:33:04.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-diplomatie-16022706.html",
+            "title": "Diplomatie: US-Vermittler Witkoff und Kushner erstmals in Kiew",
+            "summary": "Mehrfach waren die US-Unterhändler bereits in Russland, nun haben sie die Ukraine besucht. Präsident Selenskyj empfängt sie vor historischer Kulisse und verweist auf die lange Geschichte des Landes.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:50:59.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "43c3120732f0f701f1294a41114c29276f807202071502a6d4ce775a2a39dda9",
+            "source_item_id": "faa3b6b7c93c425b48481114e869b48653581cfef6f97233431fbc69a74d2457",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:50:59.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
+            "title": "Vermittlungsmission: US-Vermittler Witkoff und Kushner sind erstmals in Kiew",
+            "summary": "Mehrfach waren sie für Gespräche in Moskau, nun sind sie erstmals für ihre Vermittlungsbemühungen in Kiew: Bringt der Besuch der US-Unterhändler ein Ende des Ukraine-Kriegs näher?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T12:54:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "34d27677f3106de53e168aa32be3907eeffc52e2fb610d58e1eb969e3f17424f",
+            "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T12:54:00.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-erstmals-in-kiew-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte Witkoff und Kushner erstmals in Kiew",
+            "summary": "Die US-Unterhändler Witkoff und Kushner sind zu einem Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew eingetroffen. Dabei sollen neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert werden. Selenskyj erklärte, sein Land wolle den Krieg mit Russland beenden. Dafür seien aber umfassende Sicherheitsgarantien nötig.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T13:55:12.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "8b2da4da58fe2d34197e271d22f163e4708aa048c38fe44c0938d82cd84370f4",
+            "source_item_id": "698439e992203b1770ab824b31ce9a684666226412d174313abea16116405976",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T13:55:12.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "4b5cb8dbc32b33136f0c030b796f9b52a3a569289e64c3b6492d49951fce902e",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -13671,6 +15506,60 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T10:40:59.565Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
+        "sources": [
+          {
+            "source_id": "destatis-aktuell",
+            "publisher": "Statistisches Bundesamt",
+            "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+            "title": "Inflationsrate im August 2026 voraussichtlich +2,9 %",
+            "summary": "Die Inflationsrate in Deutschland wird im August 2026 voraussichtlich +2,9 % betragen. Gemessen wird sie als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat. Wie das Statistische Bundesamt (Destatis) nach bisher vorliegenden Ergebnissen weiter mitteilt, steigen die Verbraucherpreise gegenüber Juli 2026 um 0,2 %. Die Inflationsrate ohne Nahrungsmittel und Energie, oftmals auch als Kerninflation bezeichnet, beträgt im August 2026 voraussichtlich +2,4 %. Die Preise für Energie steigen gegenüber dem Vorjahresmonat voraussichtlich um 10,5 %. Damit nimmt die Teuerung für Energie im August weiter zu (Juli 2026: +8,3 % gegenüber Juli 2025; Juni 2026: +3,4 % gegenüber Juni 2025).",
+            "source_type": "official_rss",
+            "published_at": "2026-08-31T12:00:00.000Z",
+            "primary_source": true,
+            "source_priority": 95,
+            "source_topic": "Wirtschaft",
+            "content_hash": "8f08144f5eaee266485a9544ddff459202fc61c120da84d9fa185bb269374348",
+            "source_item_id": "047798272027efb1f0975e1e961e7d479178183f1b870dd1306cf8b242cc4efc",
+            "publisher_id": "destatis-aktuell",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-08-31T12:00:00.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:destatis-aktuell",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -15591,7 +17480,95 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "de72a3602cddc05ae004bde29b692b6de76e2eca8352787e1f813c2372cb8dc5",
+        "sources": [
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+            "title": "Iran-USA-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
+            "summary": "Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Einer soll nun am Meeresgrund liegen. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T08:39:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "182b6964af639f02d716a0ce57953d8e5d32eb21adb6a70f52f2397129ba708f",
+            "source_item_id": "7f9426ee7e989f0d9269075b901bb81b7d980dc22b3105d57ac9a21b51a0c6c6",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T08:39:00.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+            "title": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt",
+            "summary": "Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T13:55:12.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "d26727e526551155230658acd1ce4e459ba4dc8cfdec6606a86a9a5fff1ef8a5",
+            "source_item_id": "f19b81892466964d367fd54c83b09b5d653ff4644a3889ab4ae56e74bd623ca1",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T13:55:12.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "98c998135335d0968bf5e0087414a452d3f9d6caf5770dc3e95471769288eee4",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-da5c012392ca5f89",
@@ -17803,7 +19780,61 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "b1bae7b04df34bc6338acd68295c03bcc78f251e2a1fb3d3bb0005b5ad402ce7",
+        "sources": [
+          {
+            "source_id": "bundesregierung-presse",
+            "publisher": "Pressemitteilungen der Bundesregierung",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+            "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
+            "summary": "The negotiations on the Multiannual Financial Framework (MFF) 2028-2034 have entered a decisive stage. Through the MFF, the EU determines how it will spend its common resources well into the next decade. In an increasingly uncertain world, the MFF provides the foundation for ensuring the EU's capacity to act as a strong and sovereign community, and to ensure security for Europeans. To deliver on this ambition, the MFF must be modernised and reformed, both in its architecture and in the way it allocates resources. Both should be guided by our shared priorities, which are set out, not least, in our Strategic Agenda: security and defence, competitiveness, migration and sovereignty. By endorsing the three core spending programmes, the Council has laid the foundation for an architecture that is fit for the challenges ahead. Based on an affordable and viable EU budget, we jointly support the ambition to conclude the negotiations in 2026. At a time when virtually all Member States are un...",
+            "source_type": "official_rss",
+            "published_at": "2026-08-27T12:05:00.000Z",
+            "primary_source": true,
+            "source_priority": 88,
+            "source_topic": "Politik",
+            "content_hash": "d67af2ea27ec2c599b84b9434724fb45993cc6c5c2b9d84220b4c2c4c8ee3feb",
+            "source_item_id": "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+            "publisher_id": "bundesregierung",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-08-27T12:05:00.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:bundesregierung",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "6e342d5fd35d2293e28d3fbce951640b3384ddc6bf400910593ccb6dda8c0ecb",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-812148f3635566a6",
@@ -18688,7 +20719,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T18:32:23.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -18721,7 +20752,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:57:00.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -18754,7 +20785,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:36:00.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -18787,7 +20818,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T13:35:00.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -18816,7 +20847,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -18836,7 +20867,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -18856,7 +20887,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -18876,7 +20907,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -18896,7 +20927,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -18916,7 +20947,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -18936,7 +20967,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -18956,7 +20987,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -18976,7 +21007,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -18996,7 +21027,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -19016,7 +21047,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -19036,7 +21067,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -19056,7 +21087,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -19076,7 +21107,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -19096,7 +21127,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -19116,7 +21147,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -19136,7 +21167,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -19156,7 +21187,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -19176,7 +21207,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -19196,7 +21227,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -19216,7 +21247,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-22",
@@ -19236,7 +21267,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         }
       ],
       "content_hash": "d9745f0ba8831ddc9819bbcbe93c8d55d9c66bfc762db01991776a13e66c4a81",
@@ -19252,7 +21283,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T13:51:15.545Z",
+      "updated_at": "2026-09-06T14:06:24.915Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -19295,20 +21326,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 16.259083333333333,
+        "source_age_minutes": 31.41525,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3299.5397666666668,
+        "queue_age_minutes": 3314.6959333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 93,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:51:15.545Z",
+        "checked_at": "2026-09-06T14:06:24.915Z",
         "fingerprint": "4f06e4e777914a41f6a4b1af1f2fb21ee1e17ce0b24ce5243efa948c106d68d1",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
@@ -21173,7 +23204,62 @@
         "generated_at": "2026-09-06T05:36:07.920Z",
         "status": "generated"
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "3e51fcb126f1d83e96da4160567679f6ec66ff39a27961077e9afa224f5c9e2e",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+            "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
+            "summary": "Im Zusammenhang mit der Sabotage an Umspannwerken in Brandenburg, Nordrhein-Westfalen und Sachsen sucht die Polizei jetzt per Foto nach einem Tatverdächtigen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T05:18:36.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "40f2801787ac23e93e4c5c1ca8948c061fdba6ea06b581a49d1964de0e5cbc3c",
+            "source_item_id": "c0e45982664063a0ef87ad4f64c49db32a28f2f2dece681deea54c80331369b7",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T05:18:36.000Z",
+            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-166e870242fc37e6",
@@ -21935,7 +24021,159 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "136542df2271394d165df493436d0ac2e1dc301582134daa2de96c6d83e1cfd7",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--putin-beginnt-gespraeche-mit-us-unterhaendlern-38211192.html",
+            "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+            "summary": "Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:11:39.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "d7e7db6b0e4741b35f75d0f6546135afa8de2d7da7c0a187961b74c464406a54",
+            "source_item_id": "05fe1f4448cc7b34a37a0108ec8885ac629e512648e2357735d9c024aa0bfe6f",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:11:39.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
+            "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
+            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:06:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "aa8002fb305244364b5dc556e7ac4c2b7ec7cccda58eecf09e84b72da02ab154",
+            "source_item_id": "235b4021196e08f1d60c8a911f608ba014fa851de581b8c9f4817f0dc07b9c51",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:06:25.000Z",
+            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--gespraeche-von-putin-und-us-gesandten-beendet-38211192.html",
+            "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
+            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T20:39:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "a0d78e44c3d496a0410e313a26cfb123e534b6bb6b4559b88117b8626514fb69",
+            "source_item_id": "66efc58caf10ee5f9e2a1f6eca3d96eb6e6829283a0016280a55ced43fc22d27",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T20:39:53.000Z",
+            "ingested_at": "2026-09-06T02:36:16.895Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+            "title": "Ukraine-Krieg - Gespräche im Kreml von Putin und US-Gesandten beendet",
+            "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Einzelheiten der rund dreistündigen Unterredung im Kreml sind bisher nicht bekannt. Nach Angaben des ​Weißen Hauses wurden konkrete Pläne für die nächsten Schritte in den Gesprächen über ein mögliches Ende des ‌Ukraine-Kriegs besprochen. ‌",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T05:18:36.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "3e4c8cab46d3a4e09d1b8fce22248040098b1a94cde7844832a47ae7efe4b98a",
+            "source_item_id": "7ccb92fbbdfa2b1a3a67b612b2925c9f09bf624c9bd11afea85d8fe535b753a9",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T05:18:36.000Z",
+            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-aea544c06f230a5e",
@@ -25901,7 +28139,7 @@
       "verification_started_at": "2026-09-05T21:15:46.118Z",
       "publish_ready_at": "2026-09-05T21:16:03.083Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -26277,9 +28515,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "7a9de3495fcc7969c1501c5adf62adea6f8228118a8bdecb4ce1ffc576310d14",
-        "checked_at": "2026-09-06T10:06:13.084Z",
+        "checked_at": "2026-09-06T14:06:24.915Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T16:06:13.084Z",
+        "expires_at": "2026-09-06T20:06:24.915Z",
         "sources": [
           {
             "source_id": "ndr-info",
@@ -26314,7 +28552,7 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-68eadb9f102a5367",
@@ -28067,7 +30305,96 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 2,
+      "pending_update": {
+        "detected_at": "2026-09-06T14:06:24.915Z",
+        "content_hash": "0570d96ba98468ebd8c1cda0293043a8fc73f1f04a96d6df5c7909aa823767a8",
+        "sources": [
+          {
+            "source_id": "dw-news",
+            "publisher": "Deutsche Welle",
+            "url": "https://www.dw.com/de/putin-drei-tage-angriffspause-w%C3%A4hrend-ukraine-verhandlungen/a-79047412?maca=de-rss-de-news-1089-xml-mrss",
+            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+            "summary": "Die USA wollen ihre Vermittlung für ein Ende des Kriegs in der Ukraine wiederaufnehmen. Dazu sollen ihre Unterhändler in Moskau und Kyjiw Gespräche führen. Putins Ankündigung gilt allerdings nur für Kyjiw.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:01:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Geopolitik",
+            "content_hash": "2937cbc7832b70f800ca9e74dd1b483b1f3d65488d39858b60096081af35bfe1",
+            "source_item_id": "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
+            "publisher_id": "deutsche-welle",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:01:00.000Z",
+            "ingested_at": "2026-09-05T14:13:45.805Z",
+            "provenance": {
+              "origin": "publisher:deutsche-welle",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-158.html",
+            "title": "Ukraine-News: Gespräche zwischen Putin und US-Unterhändlern begonnen",
+            "summary": "In Moskau haben am Abend die neuen Gespräche zwischen Russland und den USA über ein Ende des Ukraine-Kriegs begonnen. Zuvor US-Präsident Donald Trump angekündigt, dass die US-Gesandten einen neuen Vorschlag präsentieren.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:33:12.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "e9c153f1d9d49c8343b05b13a925140e3cc39e3cf91016db796ebeb3dbafac1c",
+            "source_item_id": "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:33:12.000Z",
+            "ingested_at": "2026-09-05T18:36:52.497Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED",
+          "FOLLOWUP_DATE_UNSUPPORTED",
+          "AI_UNSUPPORTED_FRAMEWORK_NUMBER:16,1",
+          "AI_UNSUPPORTED_FRAMEWORK_NUMBER:16,3"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-06T14:21:24.915Z",
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "df5c463bf4ba3206744a71b032e64d92bd8f5b41f57854c37906335d6447629d",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-5f843f61cc5736d4",
@@ -38234,10 +40561,10 @@
       ],
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "5cef186ffad31a6460d63520f1fe0fbd58231c8f9f75ddc1058b17d1e3f3772f",
-        "checked_at": "2026-09-06T13:51:15.545Z",
+        "fingerprint": "e1645d0399ea75237c36fad66c042559b6ee77c013fff68ba3bc4e80d389df5d",
+        "checked_at": "2026-09-06T14:06:24.915Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-06T19:51:15.545Z",
+        "expires_at": "2026-09-06T20:06:24.915Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -38704,7 +41031,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -38803,7 +41130,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -38902,7 +41229,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -38935,7 +41262,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T13:35:00.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -38968,7 +41295,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T09:45:00.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -39001,7 +41328,40 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16021843.html",
+            "title": "Landtagswahl: Sachsen-Anhalt-Wahl: Mehr als jeder Zweite hat abgestimmt",
+            "summary": "In den Umfragen hat die AfD stets mit Abstand vor der CDU gelegen. Heute fällt die Entscheidung über die Politik der kommenden fünf Jahre. Die Wahllokale sind sehr gut besucht.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T02:32:15.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "cf2cc943c8a37fd8564c27cb955380218da42746ac5e0ee7c93cc7318fbf6efd",
+            "source_item_id": "77f15d60bd47bf3284082d5ce72892d6c2a3a787d2ec80a63514d47c6e3e1601",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T02:32:15.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -39015,7 +41375,7 @@
       "deepening_checks": 3,
       "pending_update": {
         "detected_at": "2026-09-06T13:51:15.545Z",
-        "content_hash": "d1bcec26c03c44999bbae87aeb996ae0089444e6f75f42b68cb94f5531403efd",
+        "content_hash": "c90a611a58c488e3d2049b8d7b02339605f6f88bb74bd7ec6b9dfe8fef5516bc",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -39482,7 +41842,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -39581,7 +41941,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -39680,7 +42040,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -39713,7 +42073,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T13:35:00.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -39746,7 +42106,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T09:45:00.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -39779,7 +42139,40 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16021843.html",
+            "title": "Landtagswahl: Sachsen-Anhalt-Wahl: Mehr als jeder Zweite hat abgestimmt",
+            "summary": "In den Umfragen hat die AfD stets mit Abstand vor der CDU gelegen. Heute fällt die Entscheidung über die Politik der kommenden fünf Jahre. Die Wahllokale sind sehr gut besucht.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T02:32:15.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "cf2cc943c8a37fd8564c27cb955380218da42746ac5e0ee7c93cc7318fbf6efd",
+            "source_item_id": "77f15d60bd47bf3284082d5ce72892d6c2a3a787d2ec80a63514d47c6e3e1601",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T02:32:15.000Z",
+            "ingested_at": "2026-09-06T14:06:24.915Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -39802,8 +42195,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T13:51:15.545Z",
-          "fingerprint": "bfed7c00b8588097d99556ce6a1ba557bb71786a69add94c336a85feef436838",
+          "checked_at": "2026-09-06T14:06:24.915Z",
+          "fingerprint": "4265575b343160024ed7ddab3c999be570db9f5dc8ee38cdb31aee53edf1e808",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -139560,7 +141953,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:06:24.915Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -139575,7 +141968,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T13:51:15.545Z",
+      "updated_at": "2026-09-06T14:06:24.915Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -139611,11 +142004,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4288.259083333333,
+        "source_age_minutes": 4303.41525,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3809.9755833333334,
+        "queue_age_minutes": 3825.13175,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -139624,7 +142017,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:51:15.545Z",
+        "checked_at": "2026-09-06T14:06:24.915Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
