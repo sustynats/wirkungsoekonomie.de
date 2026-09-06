@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { compactEvidenceSegments, expandEvidenceSegments, serializeEvidencePackets, reviewFingerprint, reviewCheckpoint, canReuseReview, articleSourceOrder } from '../../scripts/news/evidence-packets.mjs';
-import { runWirkungsticker, recoverAmbiguousPublicationDecisions } from '../../scripts/news/run.mjs';
+import { runWirkungsticker, recoverAmbiguousPublicationDecisions, normalizeEditorialDecision, retryCoolingDown } from '../../scripts/news/run.mjs';
+import { validateAnalysis } from '../../scripts/news/lib.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { evaluateRunHealth } from '../../scripts/news/check-run-health.mjs';
 
@@ -98,6 +99,12 @@ test('malformed AI output is retained and retried automatically after backoff', 
   assert.equal(pending.reason,'AI_OUTPUT_INVALID');
   assert.equal(pending.quality_retry_count,1);
   assert.equal(pending.quality_retry_after,'2026-09-04T12:15:00.000Z');
+  const waitingCandidate = { ...captured.storyStore.stories[0], sources: pending.sources, existing_story: captured.storyStore.stories[0], fresh: true, deepening_due: true, followup_due: true };
+  assert.equal(retryCoolingDown(waitingCandidate, '2026-09-04T12:10:00Z'), true);
+  const newEvidence = structuredClone(waitingCandidate);
+  newEvidence.sources[0].summary += ' Eine neue verbindliche Entscheidung liegt vor.';
+  assert.equal(retryCoolingDown(newEvidence, '2026-09-04T12:10:00Z'), false);
+  captured.storyStore.stories[0].deepening_due_at = now;
   await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T12:10:00.000Z',callAiImpl,captureState:value=>captured=value});
   assert.equal(calls,1);
   fail=false;
@@ -105,6 +112,17 @@ test('malformed AI output is retained and retried automatically after backoff', 
   assert.equal(calls,2);
   assert.equal(third.ai_batches_completed,1);
   assert.equal(captured.storyStore.stories[0].pending_update,undefined);
+});
+
+test('duplicate enum in a rejection is a terminal editorial decision, never a publication', () => {
+  const c = { ...candidate(), preanalysis: { filter_version: '4.0' } };
+  const draft = { story_id: c.story_id, publication_recommendation: false,
+    rejection: { code: 'duplicate_without_new_information', reason: 'Die Quellen wiederholen den bereits belegten Sachverhalt ohne neue materielle Information.' } };
+  normalizeEditorialDecision(draft);
+  assert.equal(draft.rejection.original_code, 'duplicate_without_new_information');
+  assert.deepEqual(validateAnalysis(draft, c), ['AI_PUBLICATION_NOT_RECOMMENDED', 'AI_DUPLICATE_WITHOUT_UPDATE']);
+  draft.rejection.reason = 'kurz';
+  assert.ok(validateAnalysis(draft, c).some(e => e.startsWith('AI_REQUIRED_STRING:')));
 });
 
 test('legacy exhausted records retry, but malformed rejection is never published or retired', async()=>{

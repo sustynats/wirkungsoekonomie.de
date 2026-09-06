@@ -30,3 +30,18 @@ Oracle-Release: lokaler Commit `036e955` im geprüften Service-Abbild. Produktio
 Code-Rollback: Dienst kontrolliert stoppen, Code-Backup wiederherstellen, Dienst starten. **Nach neuen Anbieteraufrufen nie das alte Kostenjournal zurückkopieren**, da dies neue Kosten verlieren würde. Die Sicherungen dienen dem Audit; eine erneute Ledger-Migration muss den dann aktuellen Stand berücksichtigen. Worker-Rollback berührt keine veröffentlichten Akten oder deren Historien.
 
 Auslieferung weiterhin GitHub/Oracle. Kein Vercel-Build, keine neue Infrastruktur und keine Erhöhung eines Budgets.
+
+## Nachbesserung am 6. September: Veröffentlichung statt Wiederholung
+
+Die Nachmittagsläufe liefen technisch erfolgreich, veröffentlichten aber wegen wiederkehrender Qualitätsfehler und Priorisierung alter Prüfungen kaum neue Meldungen. Nachgewiesen wurden:
+
+- Ein inhaltlich begründeter, an den Quellen-Fingerprint gebundener Medienbefund wurde nach seiner Zulassung erneut gegen den alten lokalen Trigger geprüft. Das Endgate verwendet jetzt denselben geprüften Befund; geänderte Quellen invalidieren ihn weiterhin.
+- `duplicate_without_new_information` im Ablehnungsfeld wird als exaktes Synonym von `no_new_information` normalisiert. Der Originalcode bleibt nachvollziehbar. Fehlende Begründungen und andere ungültige Entscheidungen bleiben gesperrt; eine Ablehnung kann hierdurch niemals zur Veröffentlichung werden.
+- Zahlenprüfungen für Claims, Nachrichtentext und Visuals verwenden dieselbe Normalisierung deutscher Tausender-/Dezimalschreibweisen. `5.200`, `5 200` und `5200` sind gleich; `5,2` bleibt etwas anderes. Weder Einheitenumrechnung noch eine unzitierte andere Textstelle liefert einen Beleg.
+- Der Frischebonus endet nach drei Stunden Quellenalter. Bei gleicher Relevanz erhält eine erste Veröffentlichung Vorrang vor einer Routineprüfung; zeitkritische materielle Updates behalten ihren Zusatzbonus.
+- `ai_retry` bindet Wiederholungswartezeiten an konkrete Quellen, Veröffentlichungsstand und Verarbeitungsversion. Erneute Feedlieferung oder eine fällige Vertiefung umgehen diese Uhr nicht. Neue Belege oder reparierte Regeln erlauben einen neuen Versuch. Historische Versuchszähler und sämtliche Kosten bleiben erhalten.
+- Auch bereits wartende Quellen werden über den vorhandenen Registerabgleich ihrem tatsächlichen Publisher zugeordnet. Eine ARD-Weiterleitung wird nicht durch pauschales Freischalten fremder Domains geheilt. Unklare Zuordnungen bleiben HOLD.
+- Der Lauf um 19:20 Uhr scheiterte nach seiner Analyse am erneuten Zahlencheck der gespeicherten Fassung. Zahlenbelege aus flüchtigen Artikelabrufen werden nun ohne fremden Volltext als versions- und quellengebundene numerische Prüfreferenz erhalten. Der Worker prüft die gespeicherte Darstellung vor Annahme jeder Veröffentlichung; ein fehlerhafter Übergang hält nur die betroffene Story zurück. Interne Versionsnummern zählen nicht als Leserbehauptungen.
+- `processing_version` ermöglicht den Vergleich vor/nach Auslieferung. Fehlgeschlagene Workflows sichern Zustand, Ergebnisse und Nutzungsprotokoll für drei Tage als Wiederherstellungsartefakt; diese Sicherung ist kein ungeprüfter öffentlicher Release. Sie verhindert nicht jede Betriebsstörung, macht bereits bezahlte Arbeit aber wiederherstellbar.
+
+Die Kostenwirkung ist nach Auslieferung anhand tatsächlicher erster Veröffentlichungen zu messen, inklusive Fehlversuchen und Ablehnungen, getrennt von Vertiefungen. Vier Cent sind ein Ziel und kein aus einem einzelnen grünen Lauf ableitbarer Stabilitätsnachweis.

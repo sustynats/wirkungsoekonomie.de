@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { numberTokens, persistedNumericEvidence } from "./numeric-evidence.mjs";
 import { analysisReaderCopy, hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
 import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-development.mjs";
 import { lookup } from "node:dns/promises";
@@ -1052,12 +1053,6 @@ function sentenceCount(value) {
   return protectedText.split(/[.!?]+(?:[”"'»)]*\s|$)/).filter((part) => part.trim()).length;
 }
 
-function numberTokens(value) {
-  return new Set((String(value).match(/\b\d+(?:[.,]\d+)?(?:\s?%|\s?(?:Millionen|Milliarden|Euro|EUR|USD))?\b/gi) || [])
-    .map((token) => token.match(/\d+(?:[.,]\d+)?/)?.[0].replace(".", ","))
-    .filter(Boolean));
-}
-
 export function maxSharedWordRun(a, b) {
   const left = String(a).toLowerCase().split(/\s+/).filter(Boolean);
   const right = String(b).toLowerCase().split(/\s+/).filter(Boolean);
@@ -1149,7 +1144,9 @@ export function validateAnalysis(analysis, story, options = {}) {
   }
   if (typeof analysis?.publication_recommendation !== "boolean") errors.push("AI_PUBLICATION_RECOMMENDATION_INVALID");
   else if (analysis.publication_recommendation === false) errors.push("AI_PUBLICATION_NOT_RECOMMENDED");
-  errors.push(...mediaImpactValidationErrors(analysis, story, story?.media_trigger || mediaTriggerForAnalysis(analysis, story)));
+  // A substantive finding can legitimately promote the cheap local trigger.
+  // Honour only the content-bound record; changed input falls back to detection.
+  errors.push(...mediaImpactValidationErrors(analysis, story, mediaTriggerForAnalysis(analysis, story)));
   if (filterVersion >= 4 && options.persisted !== true) errors.push(...validateNewsroomAnalysis(analysis, story));
   else if (filterVersion < 4 && !story.sources.some((source) => source.primary_source)) errors.push("PRIMARY_SOURCE_REQUIRED");
   if (!story.claims.length || story.claims.some((claim) => !claim.source_id)) errors.push("CLAIM_LEDGER_INCOMPLETE");
@@ -1162,13 +1159,17 @@ export function validateAnalysis(analysis, story, options = {}) {
   const sourceText = `${rawSourceText} ${story.source_summary || analysis?.source_summary || ""}`;
   const allowedNumbers = numberTokens(sourceText);
   const rawAllowedNumbers = numberTokens(rawSourceText);
+  if (options.persisted === true) for (const token of persistedNumericEvidence(story)) {
+    allowedNumbers.add(token);
+    rawAllowedNumbers.add(token);
+  }
   // Numeric publisher names (France 24, rbb24) are attribution, not an
   // unsupported quantity. Remove only the complete exact publisher name.
   const withoutPublisherNames = (value) => story.sources.reduce((text, source) => source.publisher ? text.split(source.publisher).join("Quelle") : text, value);
   // Visuals have their own source-bound sanitizer before this gate. Their
   // internal claim IDs and ISO date components are not journalistic numbers.
   const mediaForNumbers = analysis?.media_impact ? { ...analysis.media_impact, framing: { ...analysis.media_impact.framing, political_history_evidence: [] } } : null;
-  const textWithoutFrameworks = collectStrings({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null, media_impact: mediaForNumbers, media_analysis_version: "", media_checked_at: "", media_trigger_fingerprint: "", media_trigger: null }).join(" ");
+  const textWithoutFrameworks = collectStrings(analysisReaderCopy({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null, media_impact: mediaForNumbers })).join(" ");
   for (const token of numberTokens(withoutPublisherNames(textWithoutFrameworks))) if (!allowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_UNSUPPORTED_NUMBER:${token}`);
   if (options.validateSourceSummaryNumbers !== false) {
     for (const token of numberTokens(withoutPublisherNames(analysis?.source_summary || ""))) if (!rawAllowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);

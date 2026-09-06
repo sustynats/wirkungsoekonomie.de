@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { numericEvidenceReceipt, persistedNumericEvidence } from "../../scripts/news/numeric-evidence.mjs";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import fs from "node:fs";
@@ -185,6 +186,32 @@ function validAnalysis() {
     publication_recommendation: true,
   };
 }
+
+test("stored numeric evidence survives transient article removal but not a changed source/version", () => {
+  const s = candidate(), a = validAnalysis();
+  s.sources[0].content_hash = 'source-v1';
+  s.sources[0].article_excerpt = 'Der Anteil beträgt 2,1 Prozent. Die Schwelle liegt bei 5 Prozent.';
+  a.why_relevant = 'Die Quelle nennt einen Anteil von 2,1 Prozent und eine Schwelle von 5 Prozent.';
+  assert.deepEqual(validateAnalysis(a, s), []);
+  s.current_version = 1;
+  s.numeric_evidence = numericEvidenceReceipt(s, 1, '2026-09-06T17:30:00Z');
+  delete s.sources[0].article_excerpt;
+  assert.ok(validateAnalysis(a, s).some(e => e.startsWith('AI_UNSUPPORTED_NUMBER')));
+  assert.deepEqual(validateAnalysis(a, s, { persisted:true }), []);
+  s.sources[0].content_hash = 'source-v2';
+  assert.deepEqual(persistedNumericEvidence(s), []);
+  assert.ok(validateAnalysis(a, s, { persisted:true }).some(e => e.startsWith('AI_UNSUPPORTED_NUMBER')));
+  s.sources[0].content_hash = 'source-v1'; s.current_version++;
+  assert.deepEqual(persistedNumericEvidence(s), []);
+});
+
+test("internal IDs and method versions are not treated as reader-facing numeric claims", () => {
+  const a = validAnalysis();
+  a.method_version = '2.1'; a.provider_model = 'gpt-5.4-mini';
+  assert.deepEqual(validateAnalysis(a, candidate()), []);
+  a.summary = 'Die Vorgabe betrifft 999 Menschen. Die Folgen bleiben offen.';
+  assert.ok(validateAnalysis(a, candidate()).includes('AI_UNSUPPORTED_NUMBER:999'));
+});
 
 test("RSS wird normalisiert und Trackingparameter werden entfernt", () => {
   const [item] = parseFeed(feed, source);
@@ -663,7 +690,10 @@ test("Frische Meldungen und materielle Updates stehen vor alten Neubewertungen",
     content_hash: "neu",
   };
   assert.ok(queuePriority(freshNews, now) > queuePriority(reassessment, now));
-  assert.ok(queuePriority(freshUpdate, now) > queuePriority(freshNews, now));
+  assert.ok(queuePriority(freshUpdate, now) > queuePriority(reassessment, now));
+  assert.ok(queuePriority(freshNews, now) > queuePriority(freshUpdate, now), "first publication precedes equally relevant routine rechecks");
+  freshUpdate.preanalysis = { ...freshUpdate.preanalysis, material_development_review: { time_sensitive: true } };
+  assert.ok(queuePriority(freshUpdate, now) > queuePriority(freshNews, now), "urgent material updates still take priority");
 });
 
 test("Rollendes Stundenlimit zählt neue und alte Nutzungsprotokolle konservativ", () => {

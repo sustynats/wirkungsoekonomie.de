@@ -198,3 +198,18 @@ jobs:
       - name: Verify ticker run health
         if: always() && steps.slot.outputs.should_run == 'true'
         run: npm run news:health -- --started-after="$WOEK_NEWS_EXPECTED_AFTER"
+      - name: Preserve failed-run work and usage for recovery
+        if: failure() && steps.slot.outputs.should_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-recovery-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 3
+          compression-level: 6
+          if-no-files-found: warn
+          path: |
+            data/news/stories.json
+            data/news/state.json
+            data/news/usage.json
+            data/news/editorial-analyses.json
+            reports/wirkungsticker-latest-run.json
+            reports/wirkungsticker-editorial-analyses.json
