@@ -1394,7 +1394,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-9f64042f4e1e34d49c5b",
+      "event_id": "event-31e248310551ae4377cf",
       "first_seen_at": "2026-09-03T22:21:17.010Z"
     },
     "ba9e3e059b613fc7c63dc522ea06eec06a82fd054afbc9a0c99b17a1e4e55539": {
@@ -119758,7 +119758,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-06T04:58:03.000Z",
-      "ingested_at": "2026-09-06T15:33:52.069Z",
+      "ingested_at": "2026-09-06T16:36:30.955Z",
       "agency_origin": "unknown",
       "agency_origin_confidence": "unknown",
       "provenance": {
@@ -285622,19 +285622,9 @@
       "relevance": {
         "filter_version": "4.0",
         "material_development_review": {
-          "required": true,
+          "required": false,
           "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-130,wahl-560.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
+          "findings": []
         },
         "internal_relevance_score": 32,
         "public_relevance": "mittel",
@@ -289971,7 +289961,7 @@
       "role": "institutional_statement"
     },
     {
-      "event_id": "event-9f64042f4e1e34d49c5b",
+      "event_id": "event-31e248310551ae4377cf",
       "source_item_id": "9b36260f37c035ba7be21ca91d696d22762bda5990a1a50ad72f7f8730baf268",
       "source_id": "destatis-aktuell",
       "role": "institutional_statement"
@@ -313706,14 +313696,14 @@
     {
       "id": "discovery-cd0ca192c86c05d147ca",
       "url": "https://www.stmi.bayern.de/",
-      "discovered_at": "2026-09-06T15:33:52.069Z",
+      "discovered_at": "2026-09-06T16:36:30.955Z",
       "status": "quarantined",
       "reason": "New publisher requires access, relevance and editorial review; never auto-enabled."
     },
     {
       "id": "discovery-8450f4772ff4cf17c677",
       "url": "https://www.bayern-innovativ.de/",
-      "discovered_at": "2026-09-06T15:33:52.069Z",
+      "discovered_at": "2026-09-06T16:36:30.955Z",
       "status": "quarantined",
       "reason": "New publisher requires access, relevance and editorial review; never auto-enabled."
     }
@@ -468391,7 +468381,101 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die neue Quelle wiederholt den bereits veröffentlichten Kern; keine substanziell neue materielle Entwicklung gegenüber dem bestehenden Stand."
+    },
+    {
+      "at": "2026-09-06T16:36:30.955Z",
+      "story_id": "wt-06476c6e980f5f47",
+      "decision": "input_size_hold",
+      "reason": "AI_INPUT_TOO_LARGE"
+    },
+    {
+      "at": "2026-09-06T16:36:30.955Z",
+      "story_id": "wt-5072789df611867b",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "ndr-info",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        },
+        {
+          "source_id": "swr-aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T16:36:30.955Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "mdr-nachrichten",
+          "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T16:36:30.955Z",
+      "story_id": "wt-b8204dba21ee4eea",
+      "event_id": "event-079280c3a232824df66a",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Die Lage hat sich vom laufenden Einsatz zum Abschluss der Entschärfung verändert; das ist für mehrere tausend Betroffene unmittelbar materiell."
+    },
+    {
+      "at": "2026-09-06T16:36:30.955Z",
+      "story_id": "wt-cb1ef4e11861f849",
+      "event_id": "event-0a8e28dc904ae1fd6c86",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Erste Hochrechnung einer Landtagswahl ist neue, aktuelle Zustandsinformation mit klarer Relevanz für demokratische Entscheidungs- und Regierungsbildungsprozesse."
+    },
+    {
+      "at": "2026-09-06T16:36:30.955Z",
+      "story_id": "wt-c73edcf9866f078d",
+      "event_id": "event-a1b8a516baff70dece5b",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "not_material",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Nur ein programmatischer Übersichtsartikel ohne neue, zurechenbare Entscheidung oder belastbaren Zustandswechsel; die Beleglage bleibt zudem inhaltlich zu dünn."
+    },
+    {
+      "at": "2026-09-06T16:36:30.955Z",
+      "story_id": "wt-e28250d4074683af",
+      "event_id": "event-31e248310551ae4377cf",
+      "decision": "held_or_rejected",
+      "publication_recommendation": null,
+      "rejection_code": null,
+      "errors": [
+        "AI_PUBLICATION_RECOMMENDATION_INVALID",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:2,330",
+        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:2,270",
+        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:2,350"
+      ],
+      "rationale": "Neue amtliche Endergebnisse zu Einkommen und Armutsgefährdung von Ruheständler-Haushalten mit direktem sozialpolitischem Bezug."
     }
   ],
-  "updated_at": "2026-09-06T16:21:31.903Z"
+  "updated_at": "2026-09-06T16:36:30.955Z"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-06T12:24:05.188Z",
+  "updated_at": "2026-09-06T16:37:35.523Z",
   "candidates": [
     {
       "story_id": "wt-cf03acddb911d861",
@@ -297,8 +297,8 @@
         "reasons": []
       },
       "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-dab9cdd59202"
     },
     {
       "story_id": "wt-f7d7115a53ff2c2f",
@@ -8470,27 +8470,563 @@
           ]
         }
       ]
+    },
+    {
+      "analysis_id": "woek-analysis-dab9cdd59202",
+      "story_id": "wt-7b385f58748f3d32",
+      "related_story_ids": [
+        "wt-7b385f58748f3d32"
+      ],
+      "related_case_id": null,
+      "slug": "polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
+      "candidate_score": 75,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-06T16:37:35.523Z",
+      "updated_at": "2026-09-06T16:37:35.523Z",
+      "version": 1,
+      "editorial_question": "Was verändert sich systemisch, wenn Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten und die Fahndung weiterläuft?",
+      "analysis_type": "system_analysis",
+      "title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
+      "subtitle": "Warum die Meldung vor allem Ermittlungen, Schutzlogik und Risikowahrnehmung verschiebt",
+      "teaser": "Die eigentliche Wirkung liegt nicht im Schreiben selbst, sondern in der veränderten Lage: Ermittlungen, Schutz kritischer Infrastruktur und öffentliche Risikobewertung werden neu sortiert.",
+      "seo_description": "Polizei hält Bekennerschreiben zu Sabotageakten an der Stromversorgung für authentisch. Was das für Ermittlungen, Schutz und Risiko bedeutet.",
+      "additional_value": "Die Analyse trennt berichteten Ermittlungsstand, mögliche Schutzfolgen und offene Zuschreibungen. Sie zeigt, warum die Meldung vor allem als Systemsignal für kritische Infrastruktur wirkt, ohne daraus schon eine bestätigte Folgewirkung abzuleiten.",
+      "research_summary": "Aus den gelieferten Quellen ergibt sich ein einheitlicher Kern: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch; die Fahndung läuft weiter. Der rbb24-Bericht nennt Jänschwalde und Bergheim bei Köln als Tatorte und beschreibt einen mutmaßlichen Alleintäter. Deutschlandfunk berichtet ebenfalls von einer bundesweiten Fahndung nach einem Tatverdächtigen aus Gevelsberg und davon, dass die Schreiben bei Medienhäusern eingegangen seien. ZDFheute meldet, dass Ermittler ein Bekennerschreiben prüfen und sich einem Medienbericht zufolge ein Einzeltäter bekannt habe. Die Quellen stützen damit die laufende Ermittlungs- und Authentizitätslage, aber keinen darüber hinausgehenden Beweis für Täter, Motiv, organisatorische Hintergründe oder systemische Langzeitfolgen.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Eine laufende Fahndung und eine neue Ermittlungsgrundlage",
+          "paragraphs": [
+            "Nach der vorliegenden Berichterstattung hat die Polizei Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch gehalten. Die Fahndung läuft weiter. rbb24 nennt Jänschwalde und Bergheim bei Köln als Tatorte; Deutschlandfunk berichtet von einer bundesweiten Fahndung nach einem Tatverdächtigen aus Gevelsberg und davon, dass die Briefe bei deutschen Medienhäusern eingegangen seien.",
+            "Für die Analyse ist wichtig: Die Meldung beschreibt nicht nur einen Vorfall, sondern einen veränderten Ermittlungszustand. Ein Bekennerschreiben ist kein Wirkungsnachweis, aber es verschiebt die Lage von einer einzelnen Beschädigung hin zu einer möglichen personalisierten Ermittlungs- und Schutzsituation. Genau an dieser Stelle beginnt die systemische Betrachtung."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusatznutzen: Warum Stromsabotage mehr ist als ein Einzelfall",
+          "paragraphs": [
+            "Stromversorgung ist kritische Infrastruktur. Wenn in Berichten von Sabotage an Umspannwerken und Stromanlagen die Rede ist, betrifft das nicht nur den Tatort, sondern potenziell auch Netzbetreiber, Sicherheitsbehörden, Medien und die Öffentlichkeit. Die systemische Frage lautet daher nicht: Was steht in dem Schreiben? Sondern: Welche Handlungs- und Schutzlogiken werden dadurch ausgelöst?",
+            "Die Quellen erlauben einen begrenzten, aber belastbaren Pfad: Authentizitätszuschreibung und Fahndung können Ermittlungsressourcen bündeln, Schutzmaßnahmen verstärken und die Risikowahrnehmung in der Energieversorgung verändern. Das ist noch keine eingetretene breite Wirkung, aber ein plausibler Wirkpfad erster und zweiter Ordnung."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: unterschiedliche Betroffenheit im selben Ereignis",
+          "paragraphs": [
+            "Beim Referenzrahmen Mensch steht die unmittelbare Sicherheit im Vordergrund: Wer kritische Infrastruktur schützt, will Ausfälle, Gefährdungen und Folgeschäden vermeiden. Die Quellen nennen keine Verletzten oder Versorgungsausfälle in dieser Meldung, also bleibt eine beobachtete Wirkung auf Menschen offen. Gleichwohl kann schon die Fahndungslage Belastungen bei Polizei, Betreibern und Anwohnern erzeugen.",
+            "Für den Planeten ist aus der Meldung selbst kein direkter Umweltpfad belegt. Die einzige inhaltliche Nähe entsteht über die kritische Infrastruktur und die in den Schreiben erwähnte Kritik an fossilen Brennstoffen, wie der rbb24-Bericht sie wiedergibt. Daraus folgt aber kein Klimanutzen und keine ökologische Wirkung. Auf der Demokratieebene geht es um die Verlässlichkeit öffentlicher Information, die Funktionsfähigkeit von Ermittlungen und den Schutz gesellschaftlicher Grundversorgung. Das ist ein institutioneller Schutzraum, kein Beweis für eine politische Folge."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen 1 bis 3: vom Schreiben zur Sicherheitsarchitektur",
+          "paragraphs": [
+            "Erste Ordnung: Die Meldung verändert die unmittelbare Ermittlungs- und Informationslage. Polizei und Öffentlichkeit richten den Blick stärker auf die Authentizität der Schreiben und auf die Frage, wer dahintersteht. Das ist eine Zustandsänderung in der Lagebeschreibung, noch keine soziale Großwirkung.",
+            "Zweite Ordnung: Netzbetreiber, Sicherheitsbehörden und Medien können ihre Prioritäten anpassen. Daraus können mehr Schutzaufwand, intensivere Fahndung und eine neu sortierte Risikowahrnehmung folgen. Dritte Ordnung: Wenn solche Vorfälle häufiger würden oder als Teilmuster wahrgenommen würden, könnte sich die Schutzlogik für kritische Energieinfrastruktur langfristig verfestigen. Dieser dritte Schritt bleibt hier aber ausdrücklich nur ein bedingter Pfad, kein eingetretenes Ergebnis."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Schutz gewinnt, aber der Aufwand steigt",
+          "paragraphs": [
+            "Die Meldung berührt Resilienz in zwei Richtungen. Kurzfristig kann sie die Belastung erhöhen, weil Fahndung, Prüfung und Schutz kritischer Anlagen zusätzliche Ressourcen beanspruchen. Mittel- bis langfristig kann dieselbe Lage aber auch zu mehr Robustheit führen, wenn Betreiber und Behörden Routinen für Sabotageschutz, Lageabgleich und Krisenkommunikation nachschärfen.",
+            "Wichtig ist die Trennung von Reichweite und Wirkung: Dass über die Sache berichtet wird, bedeutet noch nicht, dass das System tatsächlich resilienter wird. Eine echte Resilienzsteigerung läge erst dann vor, wenn Schutzmaßnahmen, Koordination oder Wiederanlaufzeiten messbar besser würden. Dazu geben die gelieferten Quellen noch keinen Beleg."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten: Aufwand und Unsicherheit wandern mit",
+          "paragraphs": [
+            "Die möglichen Nebenfolgen liegen vor allem im Aufwand: Polizeiarbeit, Sicherheitsprüfungen, mögliche Schutzanpassungen und öffentliche Aufmerksamkeit. Das sind externe Kosten, die nicht beim Schreiben selbst enden. Wenn eine Infrastruktur als potenziell gezielt angreifbar wahrgenommen wird, verschiebt sich ein Teil der Last auf Betreiber und Sicherheitsinstitutionen.",
+            "Eine räumliche Verlagerung ist ebenfalls denkbar, aber hier nicht belegt: Schutz kann an einem Ort verschärft werden und an anderer Stelle weniger sichtbar bleiben. Solche Verschiebungen sind in der Wirkungsökonomie relevant, weil Nichtkompensation und Reverse Merit Order dort sichtbar werden, wo Schutz an einer Stelle nicht automatisch Schutz an anderer Stelle ersetzt. Im vorliegenden Material bleibt das jedoch eine analytische Möglichkeit, keine dokumentierte Folge."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer die Folgen trägt, ist ungleich",
+          "paragraphs": [
+            "Die direkte Last einer solchen Lage liegt zunächst bei Ermittlungsbehörden und Betreibern der betroffenen Infrastruktur. Indirekt trifft sie auch die Öffentlichkeit, wenn Unsicherheit zunimmt oder Schutzkosten auf Versorgungssysteme durchschlagen. Die Berichterstattung selbst zeigt diese Verteilung noch nicht als Kennzahl, aber sie macht die Adressaten der Belastung sichtbar.",
+            "Verteilung ist hier wichtiger als abstrakte Reichweite. Eine Sabotagespur bei der Stromversorgung trifft nicht alle gleich: Betreiber müssen sichern, Behörden prüfen, Medien ordnen ein, und Anwohner leben mit der Lage. Diese ungleiche Betroffenheit ist systemisch relevant, auch wenn die Quellen keine quantifizierten Folgen nennen."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Frame- und Diskurscheck: Bedrohungsrahmen ja, aber nicht mit Wirkung verwechseln",
+          "paragraphs": [
+            "Die Formulierung „Bekennerschreiben für authentisch“ lenkt die Wahrnehmung sofort auf Bedrohung, Täterwissen und Fahndung. Das ist ein kommunikativer Rahmen, aber noch keine materielle Wirkung. Die Berichterstattung kann den Eindruck einer akuten Gefährdung verstärken; ob daraus tatsächlich verändertes Verhalten, politische Entscheidungen oder zusätzliche Schutzmaßnahmen folgen, bleibt offen.",
+            "Die Quellen erlauben zudem eine saubere Attribution: Es handelt sich um einen Bericht über polizeiliche Einschätzungen, nicht um einen unabhängigen Beweis. Gerade deshalb darf die Analyse keine höhere Gewissheit behaupten als die Quelle trägt. Das ist kein Relativieren, sondern präzise Trennung von Meldung, Prüfung und bestätigter Folge."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "szenarien",
+          "title": "Szenarien: Was sich ändern könnte, wenn weitere Bestätigung folgt",
+          "paragraphs": [
+            "Wenn Polizei oder andere Ermittlungsstellen die Authentizität und die Täterzuordnung weiter absichern, dürfte sich die Fahndung noch stärker bündeln. Dann könnten Schutzmaßnahmen an weiteren Standorten wachsen und die Debatte über Sabotageschutz kritischer Infrastruktur zunehmen. Das wäre eine plausible zweite Ordnung, aber noch kein festgestellter Zustand.",
+            "Bleibt die Lage dagegen unklar oder relativiert sich die Zuschreibung, verschiebt sich der Schwerpunkt zurück auf die reine Ermittlungsarbeit. Dann wäre vor allem die kommunikative Wirkung groß: eine schnell erzeugte Bedrohungswahrnehmung ohne entsprechend belastbare Tat- oder Strukturzuschreibung. Auch dieses Gegenbild ist nur ein Szenario, das die Quellen nicht entscheiden."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was die Quellen nicht belegen",
+          "paragraphs": [
+            "Offen bleibt, ob die berichtete Täterzuschreibung unabhängig bestätigt ist. Offen bleibt auch, welche konkreten Schäden, Sicherheitsanpassungen oder Versorgungsfolgen tatsächlich eingetreten sind. Die Quellen sprechen von Authentizitätsprüfung, Fahndung und mutmaßlichem Alleintäter, nicht von einer abgeschlossenen Aufklärung.",
+            "Für die Wirkungseinschätzung heißt das: Die sichere Aussage betrifft die Lageverschiebung in den Ermittlungen. Alles darüber hinaus ist vorläufig, nur bedingt plausibel oder offen. Das ist in der Wirkungsökonomie zentral, weil hohe Unsicherheit nicht mit Neutralität verwechselt werden darf."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Wirkung später erkennen ließe",
+          "paragraphs": [
+            "Relevant wären in den nächsten Meldungen vor allem drei Dinge: Erstens, ob die Ermittler die Authentizität der Schreiben weiter bestätigen oder präzisieren. Zweitens, ob zusätzliche Tatorte, Beweismittel oder Festnahmen genannt werden. Drittens, ob Betreiber oder Behörden konkrete Schutzanpassungen öffentlich machen.",
+            "Erst wenn solche Angaben vorliegen, lässt sich von beobachteter Wirkung sprechen. Bis dahin bleibt die Meldung ein belastbares Ereignis im Ermittlungszusammenhang, aber noch keine dokumentierte Systemveränderung."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Das Ereignis wirkt vor allem als Systemsignal",
+          "paragraphs": [
+            "Die zusätzliche journalistische Erkenntnis dieser Meldung liegt nicht in einem neuen Tatdetail, sondern in der systemischen Verschiebung. Das Schreiben und seine Authentizitätsbewertung ziehen Polizei, Betreiber und Öffentlichkeit in einen gemeinsamen Schutz- und Prüfmodus. Damit wird kritische Infrastruktur als verletzlicher und zugleich schutzpflichtiger Raum markiert.",
+            "Die stärkste belastbare Aussage lautet deshalb: Die Meldung verändert den Zustand der Lage, nicht schon den Zustand des Systems im Ganzen. Sie kann Resilienzmaßnahmen anstoßen, Risiken neu sortieren und die Aufmerksamkeit auf Stromversorgung als kritischen Knoten lenken. Ob daraus dauerhafte Transformation folgt, ist offen und in den gelieferten Quellen nicht belegt."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch.",
+          "type": "fact",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Aussage stammt aus einem journalistischen Bericht über Polizeieinschätzungen; eine eigene Primärquelle liegt im Material nicht vor.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Laut Bericht bekennt sich ein mutmaßlicher Alleintäter zu den Anschlägen in Jänschwalde und Bergheim bei Köln.",
+          "type": "fact",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Täterzuschreibung bleibt berichtete Einschätzung und ist in den gelieferten Quellen nicht unabhängig verifiziert.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Fahndung nach der Person läuft weiter.",
+          "type": "fact",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die genaue Reichweite und Intensität der Fahndung sind in den Quellen nicht näher beziffert.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Deutschlandfunk berichtet zusätzlich, die Briefe seien bei deutschen Medienhäusern eingegangen.",
+          "type": "fact",
+          "source_ids": [
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "confirmed",
+          "uncertainty": "Der konkrete Inhalt der Briefe ist im Material nicht vollständig dokumentiert.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "ZDFheute meldet, Ermittler prüften ein Bekennerschreiben; einem Medienbericht zufolge habe sich ein Einzeltäter bekannt.",
+          "type": "fact",
+          "source_ids": [
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Der Befund ist medienvermittelt und nicht als Primärquelle im Material abgesichert.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Die Authentizitätszuschreibung kann Ermittlungsressourcen bündeln und Schutzmaßnahmen an kritischer Infrastruktur verstärken.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Plausibler Wirkpfad, aber in den Quellen nicht als eingetretene Maßnahme belegt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Ein direkter Umwelt- oder Klimawirkpfad ist aus den Quellen nicht belastbar ableitbar.",
+          "type": "observation",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Meldung nennt zwar Stromversorgung und fossile Brennstoffe, belegt aber keinen Umwelt- oder Klimafolgeeffekt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Meldung kann die öffentliche Risikowahrnehmung erhöhen, ohne dass daraus schon eine eingetretene materielle Wirkung folgt.",
+          "type": "impact_potential",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Kommunikatives Wirkungspotenzial ist plausibel, aber keine beobachtete Zustandsveränderung.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Eine beobachtete Wirkung im Sinn einer nachweisbaren Systemveränderung ist in den gelieferten Quellen nicht belegt.",
+          "type": "observed_impact",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "evidence_level": "high",
+          "data_status": "open",
+          "uncertainty": "Es liegen nur Berichte über laufende Ermittlungen vor, keine belastbaren Folgedaten zu Schutzmaßnahmen, Ausfällen oder Strukturänderungen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Wirkung ist in der WÖK die tatsächliche Zustandsveränderung, nicht Reichweite, Potenzial oder bloße Berichterstattung.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodische Arbeitsdefinition gemäß Auftrag; kein Nachrichtenfakt.",
+          "date": null
+        },
+        {
+          "claim": "Die Meldung verschiebt die Lage von einer isolierten Sabotagespur hin zu einem personalisierten Ermittlungs- und Schutzrahmen.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Tragfähig als Deutung der Berichterstattung, nicht als nachgewiesene Systemfolge.",
+          "date": "2026-09-04"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellen liefern keine bestätigten Angaben zu Verletzten, Versorgungsausfällen oder konkreten Schutzmaßnahmen.",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "effect_on_assessment": "Begrenzt die Zuschreibung von beobachteter Wirkung auf eine Lage- und Ermittlungsänderung; materielle Folgewirkungen bleiben offen."
+        },
+        {
+          "finding": "Die Täterzuschreibung wird nur berichtet und ist im Material nicht unabhängig bestätigt.",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "effect_on_assessment": "Senkt die Sicherheit von Schlussfolgerungen über Motiv, Organisationsgrad und langfristige Sicherheitsfolgen."
+        },
+        {
+          "finding": "Der Umweltreferenzbezug über fossile Brennstoffe in einem Schreiben belegt keine ökologische Wirkung der Tat.",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+          ],
+          "effect_on_assessment": "Schützt vor einer überzogenen Planet-Interpretation; der Planet-Bezug bleibt ohne belastbaren Wirkpfad."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Eine offizielle Bestätigung der Täterzuschreibung oder der Authentizität durch Primärquellen würde die Evidenz für den Ermittlungsrahmen erhöhen.",
+        "Konkrete Angaben zu Ausfällen, Beschädigungen oder Schutzmaßnahmen würden eine beobachtete Wirkung auf Infrastruktur und Resilienz wahrscheinlicher machen.",
+        "Weitere Medienberichte allein würden die Faktenlage nur begrenzt verbessern; entscheidend wären unabhängig belastbare Primärangaben oder belastbar gleiche Sachverhalte aus mehreren voneinander unabhängigen Quellen."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
+        "recommended_summary": "Die Fahndung läuft weiter, doch die systemische Wirkung liegt vor allem in der neuen Lage für Ermittlungen, Schutz und Risikobewertung.",
+        "recommended_meta_description": "Polizei hält Bekennerschreiben zu Sabotageakten an der Stromversorgung für authentisch. Was das für Ermittlungen, Schutz und Risiko bedeutet."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "published_at": "2026-09-04T10:06:18.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - Fahndung läuft",
+          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-fahndung-laeuft-100.html",
+          "published_at": "2026-09-04T16:23:25.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
+          "published_at": "2026-09-04T16:14:15.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Brandenburg: Polizei prüft Bekennerschreiben",
+          "url": "https://www.zdfheute.de/politik/deutschland/brandenburg-bekennerschreiben-sprengvorrichtung-stromnetz-umspannwerk-jaenschwalde-100.html",
+          "published_at": "2026-09-03T17:36:00.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T16:37:35.523Z",
+          "source_fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
+          "title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch.",
+              "type": "fact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Aussage stammt aus einem journalistischen Bericht über Polizeieinschätzungen; eine eigene Primärquelle liegt im Material nicht vor.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Laut Bericht bekennt sich ein mutmaßlicher Alleintäter zu den Anschlägen in Jänschwalde und Bergheim bei Köln.",
+              "type": "fact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Täterzuschreibung bleibt berichtete Einschätzung und ist in den gelieferten Quellen nicht unabhängig verifiziert.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Fahndung nach der Person läuft weiter.",
+              "type": "fact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die genaue Reichweite und Intensität der Fahndung sind in den Quellen nicht näher beziffert.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Deutschlandfunk berichtet zusätzlich, die Briefe seien bei deutschen Medienhäusern eingegangen.",
+              "type": "fact",
+              "source_ids": [
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Der konkrete Inhalt der Briefe ist im Material nicht vollständig dokumentiert.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "ZDFheute meldet, Ermittler prüften ein Bekennerschreiben; einem Medienbericht zufolge habe sich ein Einzeltäter bekannt.",
+              "type": "fact",
+              "source_ids": [
+                "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Der Befund ist medienvermittelt und nicht als Primärquelle im Material abgesichert.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Die Authentizitätszuschreibung kann Ermittlungsressourcen bündeln und Schutzmaßnahmen an kritischer Infrastruktur verstärken.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Plausibler Wirkpfad, aber in den Quellen nicht als eingetretene Maßnahme belegt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Ein direkter Umwelt- oder Klimawirkpfad ist aus den Quellen nicht belastbar ableitbar.",
+              "type": "observation",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Meldung nennt zwar Stromversorgung und fossile Brennstoffe, belegt aber keinen Umwelt- oder Klimafolgeeffekt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Meldung kann die öffentliche Risikowahrnehmung erhöhen, ohne dass daraus schon eine eingetretene materielle Wirkung folgt.",
+              "type": "impact_potential",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Kommunikatives Wirkungspotenzial ist plausibel, aber keine beobachtete Zustandsveränderung.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Eine beobachtete Wirkung im Sinn einer nachweisbaren Systemveränderung ist in den gelieferten Quellen nicht belegt.",
+              "type": "observed_impact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+              ],
+              "evidence_level": "high",
+              "data_status": "open",
+              "uncertainty": "Es liegen nur Berichte über laufende Ermittlungen vor, keine belastbaren Folgedaten zu Schutzmaßnahmen, Ausfällen oder Strukturänderungen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Wirkung ist in der WÖK die tatsächliche Zustandsveränderung, nicht Reichweite, Potenzial oder bloße Berichterstattung.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodische Arbeitsdefinition gemäß Auftrag; kein Nachrichtenfakt.",
+              "date": null
+            },
+            {
+              "claim": "Die Meldung verschiebt die Lage von einer isolierten Sabotagespur hin zu einem personalisierten Ermittlungs- und Schutzrahmen.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Tragfähig als Deutung der Berichterstattung, nicht als nachgewiesene Systemfolge.",
+              "date": "2026-09-04"
+            }
+          ]
+        }
+      ]
     }
   ],
   "retry_state": {
     "wt-1fbb056ccaaf351d": {
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
-      "attempts": 5,
-      "last_attempt_at": "2026-09-06T12:24:05.188Z",
-      "next_attempt_at": "2026-09-06T16:24:05.188Z",
+      "attempts": 6,
+      "last_attempt_at": "2026-09-06T16:37:35.523Z",
+      "next_attempt_at": "2026-09-07T00:37:35.523Z",
       "quality_errors": [
-        "EDITORIAL_SELF_FRAME_FAILED"
-      ],
-      "reason": "AI_PROVIDER_ERROR:503"
-    },
-    "wt-7b385f58748f3d32": {
-      "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
-      "method_version": "1.0",
-      "attempts": 5,
-      "last_attempt_at": "2026-09-06T12:24:05.188Z",
-      "next_attempt_at": "2026-09-06T16:24:05.188Z",
-      "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
       "reason": "AI_PROVIDER_ERROR:503"
