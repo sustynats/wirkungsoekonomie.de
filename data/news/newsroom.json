@@ -2398,7 +2398,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-03T00:00:00.000Z",
-      "ingested_at": "2026-09-05T23:24:48.763Z",
+      "ingested_at": "2026-09-06T05:29:46.602Z",
       "agency_origin": "unknown",
       "agency_origin_confidence": "unknown",
       "provenance": {
@@ -2442,7 +2442,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-03T00:00:00.000Z",
-      "ingested_at": "2026-09-05T23:24:48.763Z",
+      "ingested_at": "2026-09-06T05:29:46.602Z",
       "agency_origin": "unknown",
       "agency_origin_confidence": "unknown",
       "provenance": {
@@ -2486,7 +2486,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-03T00:00:00.000Z",
-      "ingested_at": "2026-09-05T23:24:48.763Z",
+      "ingested_at": "2026-09-06T05:29:46.602Z",
       "agency_origin": "unknown",
       "agency_origin_confidence": "unknown",
       "provenance": {
@@ -2530,7 +2530,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-03T00:00:00.000Z",
-      "ingested_at": "2026-09-05T23:24:48.763Z",
+      "ingested_at": "2026-09-06T05:29:46.602Z",
       "agency_origin": "unknown",
       "agency_origin_confidence": "unknown",
       "provenance": {
@@ -30626,7 +30626,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-04T00:00:00.000Z",
-      "ingested_at": "2026-09-05T23:24:48.763Z",
+      "ingested_at": "2026-09-06T05:29:46.602Z",
       "agency_origin": "unknown",
       "agency_origin_confidence": "unknown",
       "provenance": {
@@ -30670,7 +30670,7 @@
       "research_lane": "blindspot",
       "requires_corroboration": false,
       "source_published_at": "2026-09-04T00:00:00.000Z",
-      "ingested_at": "2026-09-05T23:24:48.763Z",
+      "ingested_at": "2026-09-06T05:29:46.602Z",
       "agency_origin": "unknown",
       "agency_origin_confidence": "unknown",
       "provenance": {
@@ -370974,7 +370974,92 @@
         "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
       ],
       "rationale": "Von der Ankündigung zum tatsächlichen Treffen in Kiew; das ist eine neue materielle Entwicklung mit möglicher Relevanz für die Kriegsdiplomatie."
+    },
+    {
+      "at": "2026-09-06T05:29:46.602Z",
+      "story_id": "wt-0a86f7da42c1a46a",
+      "event_id": "event-322af253e57485a58168",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Es liegt nur eine Warnung von Verbänden vor, keine bestätigte Kürzungsentscheidung oder konkrete Haushaltsänderung."
+    },
+    {
+      "at": "2026-09-06T05:29:46.602Z",
+      "story_id": "wt-3c1003be3a1a52c8",
+      "event_id": "event-3b24dabc10b485f8857d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur ein sekundärer Bericht ohne unabhängige Bestätigung oder Primärquellenbeleg; zentrale Zahlen und die behauptete Trendverschiebung bleiben so nicht belastbar."
+    },
+    {
+      "at": "2026-09-06T05:29:46.602Z",
+      "story_id": "wt-7587d1bde4d3d0dd",
+      "event_id": "event-dee7eaf221842b5eb806",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine sekundäre Quelle liegt vor; der zentrale Prüfbericht und unabhängige Bestätigung der Kernaussagen fehlen."
+    },
+    {
+      "at": "2026-09-06T05:29:46.602Z",
+      "story_id": "wt-04388fd1699f10c3",
+      "event_id": "event-18e06fadbbed69b9214b",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "rationale": "Globale Klimapfad-Aussage mit erheblicher Reichweite und Dauerwirkung; der Bericht liefert neue Lageeinschätzung statt bloßer Routinezahl."
+    },
+    {
+      "at": "2026-09-06T05:29:46.602Z",
+      "story_id": "wt-cc6813674a95cd84",
+      "event_id": "event-99d0bee0898a1a2949a1",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur ein journalistischer Bericht desselben Publishers liegt vor; unabhängige Bestätigung für den Raketenstart fehlt."
+    },
+    {
+      "at": "2026-09-06T05:29:46.602Z",
+      "story_id": "wt-3f3e6b2d1bf0e8a7",
+      "event_id": "event-5afeb135245d9a108fe2",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "rationale": "Die Meldung beschreibt einen großen kommunalen Haushaltseingriff mit möglichen Folgen für Gebühren, Personal und Leistungen; die Aussage ist jedoch zunächst nur über eine journalistische Quelle belegt."
+    },
+    {
+      "at": "2026-09-06T05:29:46.602Z",
+      "story_id": "wt-d7a0af1afc831caf",
+      "event_id": "event-0fef8df3a32c15bcde8d",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED"
+      ],
+      "rationale": "Gegenüber der Vorankündigung liegt nun der tatsächliche Reise- und Treffen-Schritt vor; das verändert den Verhandlungsstand materiell."
+    },
+    {
+      "at": "2026-09-06T05:29:46.602Z",
+      "story_id": "wt-b14b47324d087353",
+      "event_id": "event-72ae9f8aa4a7b9f609e9",
+      "decision": "held_or_rejected",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Der vorliegende Bericht wiederholt nur die bereits veröffentlichte Rettung von zwei Menschen nach den Fluten; keine neue materielle Entwicklung oder belastbar neue Einordnung."
     }
   ],
-  "updated_at": "2026-09-06T05:24:43.333Z"
+  "updated_at": "2026-09-06T05:29:46.602Z"
 }
