@@ -228,7 +228,7 @@ def main() -> int:
         fh.write("| File | Role | Classification | Signals |\n|---|---|---|---|\n")
         for row in support:
             if row["classification"] != ["NO_CHANGE_REQUIRED"] or row["matched_claims"] or row["file_path"] in ALWAYS_INCLUDE:
-                fh.write(f"| `{row['file_path']}` | {row['content_type']} | {', '.join(row['classification'])} | {', '.join(row['matched_claims']) or '—'} |\n")
+                fh.write(f"| `{row['file_path']}` | {row['content_type']} | {', '.join(row['classification'])} | {', '.join(row['matched_claims']) or '-'} |\n")
 
     print(json.dumps({"support_files": len(support), "all_items": len(all_items)}, ensure_ascii=False))
     return 0

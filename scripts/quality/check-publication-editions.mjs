@@ -12,13 +12,16 @@ function matchesSource(file,expected){
 if(manifest.files.length!==8 || !manifest.sourceHashes)throw new Error('Incomplete dated PDF release manifest');
 const learning=JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-09-06.json','utf8'));
 if(learning.files.length!==2 || Object.keys(learning.sourceHashes).length<6) throw new Error('Learning editions incomplete');
-const model=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-1.json','utf8'));
-for(const [source,expected] of Object.entries(model.sourceHashes))if(!matchesSource(source,expected))throw new Error(`Model explainer PDF source changed: ${source}`);
-for(const source of model.supersedesSources)if(!learning.sourceHashes[source]||!model.sourceHashes[source])throw new Error(`Invalid model source succession: ${source}`);
-for(const edition of model.files)if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${model.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1 || !learning.files.some(item=>item.filename===edition.supersedes))throw new Error('Invalid model edition metadata');
-console.log('Model introduction v1.1: explicit source succession, prior edition preserved.');
+const modelV11=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-1.json','utf8'));
+const modelV12=JSON.parse(fs.readFileSync('assets/data/model-explainer-edition-2026-09-06-v1-2.json','utf8'));
+for(const edition of modelV11.files)if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${modelV11.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1 || !learning.files.some(item=>item.filename===edition.supersedes))throw new Error('Invalid model v1.1 edition metadata');
+for(const [source,expected] of Object.entries(modelV12.sourceHashes))if(!matchesSource(source,expected))throw new Error(`Model explainer v1.2 source changed: ${source}`);
+for(const source of modelV12.supersedesSources)if(!modelV11.sourceHashes[source]||!modelV12.sourceHashes[source])throw new Error(`Invalid model v1.2 source succession: ${source}`);
+for(const edition of modelV12.files)if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${modelV12.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1 || !modelV11.files.some(item=>item.filename===edition.supersedes))throw new Error('Invalid model v1.2 edition metadata');
+console.log('Model introductions v1.1 and v1.2: explicit source succession, prior editions preserved.');
+const modelSupersededSources=new Set([...modelV11.supersedesSources,...modelV12.supersedesSources]);
 for(const [source,expected] of Object.entries(learning.sourceHashes)) {
- if(model.supersedesSources.includes(source))continue;
+ if(modelSupersededSources.has(source))continue;
  if(!matchesSource(source,expected)) throw new Error(`Learning PDF source changed: ${source}. Publish a new dated edition.`);
 }
 for(const source of learning.supersedesSources) {

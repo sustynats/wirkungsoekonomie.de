@@ -19062,5 +19062,16 @@ figure.impact-process { display: block; margin: var(--space-6) 0; }
 .home-clear .home-quiet-links { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; }
 .home-clear .home-details { padding: 1rem; border: 1px solid #d8d9d0; border-radius: 10px; margin-block: 1rem; }
 .home-clear .home-details summary { font-size: 1.1rem; font-weight: 650; cursor: pointer; padding: .6rem 0; }
+.home-simple-example .hero-subtitle { max-width: 70ch; }
+.home-simple-example-step { border-top: .28rem solid #246A4D; }
+.home-simple-example-step .card-title { margin-top: .15rem; }
+.home-example-conclusion {
+  max-width: 62ch;
+  margin: clamp(1.25rem, 3vw, 2rem) 0 .5rem;
+  color: var(--navy, #0B1020);
+  font-size: clamp(1.08rem, 2vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.5;
+}
 @media(max-width:700px) { .indicator-grid,.course-definitions { grid-template-columns: 1fr; } .course-bar-row { grid-template-columns: 1fr; gap: .3rem; } .course-controls .btn { flex: 1 1 auto; } }
 @media print { .course-controls,.course-form { display: none; } .course-comparison,.indicator-card { break-inside: avoid; } }
