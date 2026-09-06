@@ -1,7 +1,104 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T12:38:11.963Z",
+  "updated_at": "2026-09-06T13:36:20.439Z",
   "stories": [
+    {
+      "story_id": "wt-06837a611e9459ce",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06837a611e9459ce-cb830c830f11f3e0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06837a611e9459ce-58e89b47d2e41923-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06837a611e9459ce-fa7f7be1594981b3-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+      "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+      "source_summary": "Der MDR meldet in einem Liveblog, dass die US-Sondergesandten Steve Witkoff und Jared Kushner in Kiew eingetroffen sind. Die Passage ordnet den Besuch als Fortsetzung ihrer Gespräche in Moskau über ein Ende des Ukraine-Krieges ein und nennt ihn als ersten Aufenthalt der beiden in der ukrainischen Hauptstadt.\n\nSpäter ergänzt der Liveblog eine Aussage von Präsident Wolodymyr Selenskyj, wonach an den Gesprächen in Kiew auch europäische Sicherheitsberater teilnehmen sollen. Offen bleibt in der Quelle, ob bereits konkrete Ergebnisse oder Vereinbarungen vorliegen.",
+      "summary": "Witkoff und Kushner sind nach Angaben des MDR in Kiew eingetroffen und führen dort Gespräche über den Ukraine-Krieg. Selenskyj kündigte zudem Beratungen mit europäischen Sicherheitsberatern an.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die Ankunft der US-Gesandten Steve Witkoff und Jared Kushner in Kiew sowie der Bezug zu ihren vorherigen Gesprächen in Moskau. Der Bericht nennt den Besuch als ersten Aufenthalt der beiden in der ukrainischen Hauptstadt und verweist auf weitere Gespräche zur Beendigung des Ukraine-Kriegs. Zusätzlich zitiert der Liveblog Selenskyj mit dem Hinweis, dass auch europäische Sicherheitsberater teilnehmen sollen. Für die Lage ist das relevant, weil damit der diplomatische Prozess um einen möglichen Verhandlungsrahmen sichtbar weiterläuft. Mögliche Folge ist, dass sich der Gesprächskreis erweitert und dadurch neue Positionen, Bedingungen oder Vermittlungsansätze entstehen. Nicht belegt ist aber, ob daraus bereits eine Vereinbarung, eine Kursänderung oder ein messbarer politischer Effekt folgt.",
+      "why_relevant": "Die Meldung dokumentiert einen konkreten Schritt in einem laufenden, geopolitisch und sicherheitspolitisch wichtigen Verhandlungsprozess.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Gespräche betreffen den Krieg und damit Sicherheitslage, mögliche Flucht- und Schutzfolgen sowie politische Entscheidungen mit indirekten Folgen für Menschen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Bezug zu Umwelt- oder Klimawirkungen ist in der Quelle nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung betrifft diplomatische Verhandlungen zwischen Akteuren mit Einfluss auf Kriegsende, Sicherheitsordnung und politische Entscheidungsräume."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T13:36:20.439Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T11:05:30.000Z",
+      "last_updated": "2026-09-06T13:36:54.881Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-dfe7a7d9629460af52db",
+      "case_file": null,
+      "source_published_at": "2026-09-06T11:05:30.000Z",
+      "published_at": "2026-09-06T13:36:54.881Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "mdr-nachrichten",
+              "mdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T11:05:30.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:56:45.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-2b90423c6e7549bd",
       "title_image": {

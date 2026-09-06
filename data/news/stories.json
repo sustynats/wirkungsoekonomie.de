@@ -1,8 +1,490 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-06T12:38:11.963Z",
-  "updated_at": "2026-09-06T13:21:40.973Z",
+  "public_updated_at": "2026-09-06T13:36:20.439Z",
+  "updated_at": "2026-09-06T13:36:20.439Z",
   "stories": [
+    {
+      "story_id": "wt-06837a611e9459ce",
+      "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+      "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+      "first_seen": "2026-09-06T11:05:30.000Z",
+      "last_updated": "2026-09-06T13:36:54.881Z",
+      "published_at": "2026-09-06T13:36:54.881Z",
+      "updated_at": "2026-09-06T13:36:54.881Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+          "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+          "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T11:05:30.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "424dbd5070971105161045cf7613a29930ba6acb14a1a3e0fc00ef53032a4b9e",
+          "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T11:05:30.000Z",
+          "ingested_at": "2026-09-06T11:51:43.074Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+          "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+          "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:56:45.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b37dc0f2a85bb05f2368e0c3b99aab5c59d5e955280157f3552fef7686d747fd",
+          "source_item_id": "af75b6323e78549a2abcaa2a01049a838569ff8727ae93504700c98cf302b7cb",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T12:56:45.000Z",
+          "ingested_at": "2026-09-06T13:21:40.973Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-06837a611e9459ce-v1-claim-1",
+          "story_id": "wt-06837a611e9459ce",
+          "claim": "Die US-Gesandten Steve Witkoff und Jared Kushner sind in Kiew eingetroffen und führen dort Gespräche über ein Ende des Ukraine-Kriegs.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+              "excerpt_hash": "e8c8c89e5bf0b1bbfe91",
+              "checked_at": "2026-09-06T13:36:54.881Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T13:36:54.881Z"
+        },
+        {
+          "claim_id": "wt-06837a611e9459ce-v1-claim-2",
+          "story_id": "wt-06837a611e9459ce",
+          "claim": "Nach dem Gespräch in Moskau ist dies ihr erster Besuch in der ukrainischen Hauptstadt.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+              "excerpt_hash": "44c3267f6d3777e41a60",
+              "checked_at": "2026-09-06T13:36:54.881Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T13:36:54.881Z"
+        },
+        {
+          "claim_id": "wt-06837a611e9459ce-v1-claim-3",
+          "story_id": "wt-06837a611e9459ce",
+          "claim": "Nach ukrainischen Angaben sollen an den Gesprächen in Kiew auch europäische Sicherheitsberater teilnehmen.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+              "excerpt_hash": "7a1ae4633e94d94514dc",
+              "checked_at": "2026-09-06T13:36:54.881Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+              "excerpt_hash": "543cb28507d5effa7528",
+              "checked_at": "2026-09-06T13:36:54.881Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T13:36:54.881Z"
+        }
+      ],
+      "event_id": "event-dfe7a7d9629460af52db",
+      "event_first_seen_at": "2026-09-06T11:21:29.682Z",
+      "event_detected_at": "2026-09-06T11:21:29.682Z",
+      "verification_started_at": "2026-09-06T13:36:42.910Z",
+      "publish_ready_at": "2026-09-06T13:36:54.881Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "mdr-nachrichten",
+              "mdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T13:36:20.439Z",
+        "fingerprint": "423d55d844c3549d98d95d631efe3bdc8060a0df81cf9a4fdbd09eba7c2e81ea",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "f2555281f53c4ec1d712e566528c5f63acd1cfe7eb2812b659ab54ea769163f5",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Der MDR meldet in einem Liveblog, dass die US-Sondergesandten Steve Witkoff und Jared Kushner in Kiew eingetroffen sind. Die Passage ordnet den Besuch als Fortsetzung ihrer Gespräche in Moskau über ein Ende des Ukraine-Krieges ein und nennt ihn als ersten Aufenthalt der beiden in der ukrainischen Hauptstadt.\n\nSpäter ergänzt der Liveblog eine Aussage von Präsident Wolodymyr Selenskyj, wonach an den Gesprächen in Kiew auch europäische Sicherheitsberater teilnehmen sollen. Offen bleibt in der Quelle, ob bereits konkrete Ergebnisse oder Vereinbarungen vorliegen.",
+      "analysis": {
+        "story_id": "wt-06837a611e9459ce",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Witkoff und Kushner sind nach Angaben des MDR in Kiew eingetroffen und führen dort Gespräche über den Ukraine-Krieg. Selenskyj kündigte zudem Beratungen mit europäischen Sicherheitsberatern an.",
+        "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die Ankunft der US-Gesandten Steve Witkoff und Jared Kushner in Kiew sowie der Bezug zu ihren vorherigen Gesprächen in Moskau. Der Bericht nennt den Besuch als ersten Aufenthalt der beiden in der ukrainischen Hauptstadt und verweist auf weitere Gespräche zur Beendigung des Ukraine-Kriegs. Zusätzlich zitiert der Liveblog Selenskyj mit dem Hinweis, dass auch europäische Sicherheitsberater teilnehmen sollen. Für die Lage ist das relevant, weil damit der diplomatische Prozess um einen möglichen Verhandlungsrahmen sichtbar weiterläuft. Mögliche Folge ist, dass sich der Gesprächskreis erweitert und dadurch neue Positionen, Bedingungen oder Vermittlungsansätze entstehen. Nicht belegt ist aber, ob daraus bereits eine Vereinbarung, eine Kursänderung oder ein messbarer politischer Effekt folgt.",
+        "why_relevant": "Die Meldung dokumentiert einen konkreten Schritt in einem laufenden, geopolitisch und sicherheitspolitisch wichtigen Verhandlungsprozess.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Gespräche betreffen den Krieg und damit Sicherheitslage, mögliche Flucht- und Schutzfolgen sowie politische Entscheidungen mit indirekten Folgen für Menschen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Bezug zu Umwelt- oder Klimawirkungen ist in der Quelle nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung betrifft diplomatische Verhandlungen zwischen Akteuren mit Einfluss auf Kriegsende, Sicherheitsordnung und politische Entscheidungsräume."
+        },
+        "importance": "mittel",
+        "impact_potential": "Der Besuch kann das Wirkungspotenzial weiterer Verhandlungen erhöhen, weil der Gesprächskanal zwischen den Beteiligten sichtbar fortgesetzt wird.",
+        "impact_risks": [
+          "Ohne Ergebnis kann die Meldung Erwartungen an einen schnellen Durchbruch überzeichnen."
+        ],
+        "mechanisms": [
+          "Fortgesetzte direkte Gespräche können Verhandlungsoptionen erweitern und Positionen präzisieren."
+        ],
+        "first_order": [
+          "Weitere diplomatische Abstimmungen in Kiew."
+        ],
+        "second_order": [
+          "Mögliche Verdichtung des Verhandlungsrahmens durch zusätzliche Gesprächspartner."
+        ],
+        "third_order": [
+          "Falls sich ein belastbarer Prozess stabilisiert, könnten spätere Entscheidungen über Krieg und Sicherheit beeinflusst werden."
+        ],
+        "systemic_relevance": "Die Nachricht zeigt einen Baustein im internationalen Krisenmanagement; sie verändert noch keine Regel, aber sie kann den diplomatischen Wirkpfad und die spätere Entscheidungsstruktur beeinflussen.",
+        "transformation_potential": "Begrenzt, weil bisher nur eine Fortsetzung von Gesprächen belegt ist und keine verbindliche Einigung.",
+        "resilience": "Die Einbindung weiterer Gesprächspartner kann die Robustheit des Verhandlungsprozesses erhöhen, ist hier aber nur als Potenzial belegt.",
+        "side_effects": [
+          "Erhöhte Erwartung an schnelle Ergebnisse trotz offener Verhandlungen."
+        ],
+        "uncertainties": [
+          "Ob aus den Gesprächen konkrete Vereinbarungen folgen, ist offen.",
+          "Die Quelle belegt nur den Gesprächsstand, nicht den Inhalt aller Verhandlungen."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "MDR-Liveblog; Formulierung als journalistische Meldung, mit Selenskyj-Aussage im Text und ohne eigenständige Primärquelle für den gesamten Verhandlungsinhalt.",
+        "watch_next": [
+          "Ob nach Kiew weitere konkrete Ergebnisse, Termine oder gemeinsame Erklärungen gemeldet werden."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Gegenüber der Vorlage ist die Ankunft in Kiew ein neuer, belastbar gemeldeter Verhandlungsschritt; er ist für den laufenden Ukraine-Diplomatieprozess materiell relevant, auch wenn noch kein Ergebnis belegt ist."
+        },
+        "publication_recommendation": true,
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-06T13:36:20.439Z",
+        "media_trigger_fingerprint": "3f7810220e7b81380f8c9c5f7b7381129ae673f9b9521818007081890b25bad2",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "motive_or_guilt_attribution"
+          ],
+          "matched_terms": [
+            "mutmaßliche täter"
+          ],
+          "source_count": 2,
+          "comparable_source_count": 1,
+          "fingerprint": "3f7810220e7b81380f8c9c5f7b7381129ae673f9b9521818007081890b25bad2",
+          "content_fingerprint": "598d2b8de89cdfa616e3159f1f8aefb19e1c748f09caf17c19e8be77bd8c085c",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T13:36:54.881Z",
+          "content_hash": "f2555281f53c4ec1d712e566528c5f63acd1cfe7eb2812b659ab54ea769163f5",
+          "source_summary": "Der MDR meldet in einem Liveblog, dass die US-Sondergesandten Steve Witkoff und Jared Kushner in Kiew eingetroffen sind. Die Passage ordnet den Besuch als Fortsetzung ihrer Gespräche in Moskau über ein Ende des Ukraine-Krieges ein und nennt ihn als ersten Aufenthalt der beiden in der ukrainischen Hauptstadt.\n\nSpäter ergänzt der Liveblog eine Aussage von Präsident Wolodymyr Selenskyj, wonach an den Gesprächen in Kiew auch europäische Sicherheitsberater teilnehmen sollen. Offen bleibt in der Quelle, ob bereits konkrete Ergebnisse oder Vereinbarungen vorliegen.",
+          "analysis": {
+            "story_id": "wt-06837a611e9459ce",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Witkoff und Kushner sind nach Angaben des MDR in Kiew eingetroffen und führen dort Gespräche über den Ukraine-Krieg. Selenskyj kündigte zudem Beratungen mit europäischen Sicherheitsberatern an.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die Ankunft der US-Gesandten Steve Witkoff und Jared Kushner in Kiew sowie der Bezug zu ihren vorherigen Gesprächen in Moskau. Der Bericht nennt den Besuch als ersten Aufenthalt der beiden in der ukrainischen Hauptstadt und verweist auf weitere Gespräche zur Beendigung des Ukraine-Kriegs. Zusätzlich zitiert der Liveblog Selenskyj mit dem Hinweis, dass auch europäische Sicherheitsberater teilnehmen sollen. Für die Lage ist das relevant, weil damit der diplomatische Prozess um einen möglichen Verhandlungsrahmen sichtbar weiterläuft. Mögliche Folge ist, dass sich der Gesprächskreis erweitert und dadurch neue Positionen, Bedingungen oder Vermittlungsansätze entstehen. Nicht belegt ist aber, ob daraus bereits eine Vereinbarung, eine Kursänderung oder ein messbarer politischer Effekt folgt.",
+            "why_relevant": "Die Meldung dokumentiert einen konkreten Schritt in einem laufenden, geopolitisch und sicherheitspolitisch wichtigen Verhandlungsprozess.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Die Gespräche betreffen den Krieg und damit Sicherheitslage, mögliche Flucht- und Schutzfolgen sowie politische Entscheidungen mit indirekten Folgen für Menschen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer Bezug zu Umwelt- oder Klimawirkungen ist in der Quelle nicht erkennbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Meldung betrifft diplomatische Verhandlungen zwischen Akteuren mit Einfluss auf Kriegsende, Sicherheitsordnung und politische Entscheidungsräume."
+            },
+            "importance": "mittel",
+            "impact_potential": "Der Besuch kann das Wirkungspotenzial weiterer Verhandlungen erhöhen, weil der Gesprächskanal zwischen den Beteiligten sichtbar fortgesetzt wird.",
+            "impact_risks": [
+              "Ohne Ergebnis kann die Meldung Erwartungen an einen schnellen Durchbruch überzeichnen."
+            ],
+            "mechanisms": [
+              "Fortgesetzte direkte Gespräche können Verhandlungsoptionen erweitern und Positionen präzisieren."
+            ],
+            "first_order": [
+              "Weitere diplomatische Abstimmungen in Kiew."
+            ],
+            "second_order": [
+              "Mögliche Verdichtung des Verhandlungsrahmens durch zusätzliche Gesprächspartner."
+            ],
+            "third_order": [
+              "Falls sich ein belastbarer Prozess stabilisiert, könnten spätere Entscheidungen über Krieg und Sicherheit beeinflusst werden."
+            ],
+            "systemic_relevance": "Die Nachricht zeigt einen Baustein im internationalen Krisenmanagement; sie verändert noch keine Regel, aber sie kann den diplomatischen Wirkpfad und die spätere Entscheidungsstruktur beeinflussen.",
+            "transformation_potential": "Begrenzt, weil bisher nur eine Fortsetzung von Gesprächen belegt ist und keine verbindliche Einigung.",
+            "resilience": "Die Einbindung weiterer Gesprächspartner kann die Robustheit des Verhandlungsprozesses erhöhen, ist hier aber nur als Potenzial belegt.",
+            "side_effects": [
+              "Erhöhte Erwartung an schnelle Ergebnisse trotz offener Verhandlungen."
+            ],
+            "uncertainties": [
+              "Ob aus den Gesprächen konkrete Vereinbarungen folgen, ist offen.",
+              "Die Quelle belegt nur den Gesprächsstand, nicht den Inhalt aller Verhandlungen."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "MDR-Liveblog; Formulierung als journalistische Meldung, mit Selenskyj-Aussage im Text und ohne eigenständige Primärquelle für den gesamten Verhandlungsinhalt.",
+            "watch_next": [
+              "Ob nach Kiew weitere konkrete Ergebnisse, Termine oder gemeinsame Erklärungen gemeldet werden."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber der Vorlage ist die Ankunft in Kiew ein neuer, belastbar gemeldeter Verhandlungsschritt; er ist für den laufenden Ukraine-Diplomatieprozess materiell relevant, auch wenn noch kein Ergebnis belegt ist."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-06T13:36:20.439Z",
+            "media_trigger_fingerprint": "3f7810220e7b81380f8c9c5f7b7381129ae673f9b9521818007081890b25bad2",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "motive_or_guilt_attribution"
+              ],
+              "matched_terms": [
+                "mutmaßliche täter"
+              ],
+              "source_count": 2,
+              "comparable_source_count": 1,
+              "fingerprint": "3f7810220e7b81380f8c9c5f7b7381129ae673f9b9521818007081890b25bad2",
+              "content_fingerprint": "598d2b8de89cdfa616e3159f1f8aefb19e1c748f09caf17c19e8be77bd8c085c",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-06837a611e9459ce-v1-claim-1",
+              "story_id": "wt-06837a611e9459ce",
+              "claim": "Die US-Gesandten Steve Witkoff und Jared Kushner sind in Kiew eingetroffen und führen dort Gespräche über ein Ende des Ukraine-Kriegs.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+                  "excerpt_hash": "e8c8c89e5bf0b1bbfe91",
+                  "checked_at": "2026-09-06T13:36:54.881Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T13:36:54.881Z"
+            },
+            {
+              "claim_id": "wt-06837a611e9459ce-v1-claim-2",
+              "story_id": "wt-06837a611e9459ce",
+              "claim": "Nach dem Gespräch in Moskau ist dies ihr erster Besuch in der ukrainischen Hauptstadt.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+                  "excerpt_hash": "44c3267f6d3777e41a60",
+                  "checked_at": "2026-09-06T13:36:54.881Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T13:36:54.881Z"
+            },
+            {
+              "claim_id": "wt-06837a611e9459ce-v1-claim-3",
+              "story_id": "wt-06837a611e9459ce",
+              "claim": "Nach ukrainischen Angaben sollen an den Gesprächen in Kiew auch europäische Sicherheitsberater teilnehmen.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+                  "excerpt_hash": "7a1ae4633e94d94514dc",
+                  "checked_at": "2026-09-06T13:36:54.881Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+                  "excerpt_hash": "543cb28507d5effa7528",
+                  "checked_at": "2026-09-06T13:36:54.881Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T13:36:54.881Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+              "content_hash": "424dbd5070971105161045cf7613a29930ba6acb14a1a3e0fc00ef53032a4b9e"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+              "content_hash": "b37dc0f2a85bb05f2368e0c3b99aab5c59d5e955280157f3552fef7686d747fd"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T13:36:54.881Z",
+          "source_count": 2
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06837a611e9459ce-cb830c830f11f3e0-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "cb830c830f11f3e04b8b9f6a120e0471a38523abf68f9feb6de1dc920b2c5188"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06837a611e9459ce-58e89b47d2e41923-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "58e89b47d2e41923b3f4e2e410e9ff43161a999318992fc678881d6d6c741aff"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06837a611e9459ce-fa7f7be1594981b3-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "fa7f7be1594981b30da9ae1ed23658c9c89a3b035963b6d2d15f0056d131c178"
+        },
+        "source_visual": null,
+        "fingerprint": "1e02b94e5be3bc976922bfb585fb864767925671d60ebd6f82f764611d5bb0b4",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T13:37:12.475Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-0fa140930225eed0",
       "slug": "judoka-timo-cavelius-nimmt-nach-angriff-stellung-ich-war-erst-mal-in-schockstarre-25eed0",
@@ -401,20 +883,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         }
       ],
       "content_hash": "3702361a3afccfb882c5a1afeb9b0d08ddb3f744e908eb05e7c67c05e708a8d7",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T13:51:20.439Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
+      "updated_at": "2026-09-06T13:36:20.439Z",
       "event_first_seen_at": "2026-09-06T13:21:40.973Z",
       "event_detected_at": "2026-09-06T13:21:40.973Z",
       "event_id": "event-e77cf87cba242f43ae12",
@@ -447,23 +929,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 15.682883333333333,
+        "source_age_minutes": 30.34065,
         "detection_delay_minutes": 15.682883333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.657766666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
+        "checked_at": "2026-09-06T13:36:20.439Z",
         "fingerprint": "6a0d1f834794abac50cb4892f69fa97e451a8bbcaf2935af6b877f81579d5c60",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:36:20.439Z",
+      "rejection": {
+        "at": "2026-09-06T13:36:20.439Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -812,20 +1306,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         }
       ],
       "content_hash": "d05f418aef2b3f7bf6300a2c5a8227a9fbf75af394c47b27bbaf9a1bd2c47514",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T13:51:20.439Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
+      "updated_at": "2026-09-06T13:36:20.439Z",
       "event_first_seen_at": "2026-09-06T09:36:13.326Z",
       "event_detected_at": "2026-09-06T09:36:13.326Z",
       "event_id": "event-da6ebd1a1f417412c77e",
@@ -858,23 +1352,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 19.682883333333333,
+        "source_age_minutes": 34.34065,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 225.46078333333332,
+        "queue_age_minutes": 240.11855,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
+        "checked_at": "2026-09-06T13:36:20.439Z",
         "fingerprint": "b32910c3816201f13dada062b1a19661de7d618a6075f806dd80346b4879447c",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:36:20.439Z",
+      "rejection": {
+        "at": "2026-09-06T13:36:20.439Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -1326,187 +1832,6 @@
       }
     },
     {
-      "story_id": "wt-06837a611e9459ce",
-      "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
-      "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
-      "first_seen": "2026-09-06T11:05:30.000Z",
-      "last_updated": "2026-09-06T12:56:45.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
-          "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
-          "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T11:05:30.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "424dbd5070971105161045cf7613a29930ba6acb14a1a3e0fc00ef53032a4b9e",
-          "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T11:05:30.000Z",
-          "ingested_at": "2026-09-06T11:51:43.074Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
-          "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
-          "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:56:45.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "b37dc0f2a85bb05f2368e0c3b99aab5c59d5e955280157f3552fef7686d747fd",
-          "source_item_id": "af75b6323e78549a2abcaa2a01049a838569ff8727ae93504700c98cf302b7cb",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T12:56:45.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-06837a611e9459ce-claim-01",
-          "story_id": "wt-06837a611e9459ce",
-          "claim": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen: Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
-        },
-        {
-          "claim_id": "wt-06837a611e9459ce-claim-02",
-          "story_id": "wt-06837a611e9459ce",
-          "claim": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen: Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
-        }
-      ],
-      "content_hash": "f2555281f53c4ec1d712e566528c5f63acd1cfe7eb2812b659ab54ea769163f5",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
-      "event_first_seen_at": "2026-09-06T11:21:29.682Z",
-      "event_detected_at": "2026-09-06T11:21:29.682Z",
-      "event_id": "event-dfe7a7d9629460af52db",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 24.932883333333333,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 120.18818333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
-        "fingerprint": "423d55d844c3549d98d95d631efe3bdc8060a0df81cf9a4fdbd09eba7c2e81ea",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
       "story_id": "wt-ed0f00e58dfe544f",
       "slug": "lawrow-deutschland-will-wieder-krieg-gegen-russland-fe544f",
       "title": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland",
@@ -1711,20 +2036,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         }
       ],
       "content_hash": "62984e043f01507f8dffaa06bb7ffa5f647588f2e4af734e9f7aef6f8c212719",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T13:51:20.439Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
+      "updated_at": "2026-09-06T13:36:20.439Z",
       "event_first_seen_at": "2026-09-06T07:16:30.989Z",
       "event_detected_at": "2026-09-06T07:16:30.989Z",
       "event_id": "event-c1061c18db8a491c241b",
@@ -1757,23 +2082,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 26.016216666666665,
+        "source_age_minutes": 40.67398333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 365.1664,
+        "queue_age_minutes": 379.82416666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
+        "checked_at": "2026-09-06T13:36:20.439Z",
         "fingerprint": "2cc52fabef1caae7802c0e2304966a46adc3d22c5173b378f3dee6ef88902b7d",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:36:20.439Z",
+      "rejection": {
+        "at": "2026-09-06T13:36:20.439Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -3640,20 +3977,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         }
       ],
       "content_hash": "07158bac812d70844ccbc5b9a866978a88c12f6040b832bcc14d711a4da15812",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T13:51:20.439Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
+      "updated_at": "2026-09-06T13:36:20.439Z",
       "event_first_seen_at": "2026-09-06T13:06:40.348Z",
       "event_detected_at": "2026-09-06T13:06:40.348Z",
       "event_id": "event-deb374a1ef5febea601b",
@@ -3686,23 +4023,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 42.682883333333336,
+        "source_age_minutes": 57.34065,
         "detection_delay_minutes": 27.672466666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.010416666666666,
+        "queue_age_minutes": 29.66818333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 88,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
+        "checked_at": "2026-09-06T13:36:20.439Z",
         "fingerprint": "165ed0666bbdfba2c0eca074c62d26abe953080d28b14fcd7e0bed7451ed3180",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:36:20.439Z",
+      "rejection": {
+        "at": "2026-09-06T13:36:20.439Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -12009,20 +12358,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         }
       ],
       "content_hash": "e29293920d741a3c3a934d604e0c391376449727ebd97999e74495e8b0dd5775",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 3,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T16:36:20.439Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
+      "updated_at": "2026-09-06T13:36:20.439Z",
       "event_first_seen_at": "2026-09-06T10:51:35.145Z",
       "event_detected_at": "2026-09-06T10:51:35.145Z",
       "event_id": "event-95c25b4af98f082b4da0",
@@ -12055,23 +12404,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.59955,
+        "source_age_minutes": 23.257316666666668,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 150.09713333333335,
+        "queue_age_minutes": 164.7549,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
+        "checked_at": "2026-09-06T13:36:20.439Z",
         "fingerprint": "216cbf8a34622e64dbb19f6058edea8f3e867d5ffb0bbc6735366ec4d5889899",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:36:20.439Z",
+      "rejection": {
+        "at": "2026-09-06T13:36:20.439Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -17759,7 +18120,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -17779,7 +18140,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -17799,7 +18160,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -17819,7 +18180,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -17839,7 +18200,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -17859,7 +18220,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -17879,7 +18240,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -17899,7 +18260,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -17919,7 +18280,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -17939,7 +18300,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -17959,7 +18320,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -17979,7 +18340,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -17999,7 +18360,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -18019,7 +18380,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -18039,7 +18400,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -18059,7 +18420,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -18079,7 +18440,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -18099,7 +18460,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -18119,7 +18480,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -18139,7 +18500,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -18159,7 +18520,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         }
       ],
       "content_hash": "cb6a0074639070a3b26a2c8d84b3750ff2738e2702588a972c7e7f6b6197a703",
@@ -18175,7 +18536,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
+      "updated_at": "2026-09-06T13:36:20.439Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -18218,20 +18579,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 363.68288333333334,
+        "source_age_minutes": 378.34065,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3269.963566666667,
+        "queue_age_minutes": 3284.6213333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 24,
+        "news_freshness_score": 21,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
+        "checked_at": "2026-09-06T13:36:20.439Z",
         "fingerprint": "da5957a2d5973bb8347f2121d629188a6bad353f609cac3220931cba0eb170de",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
@@ -137589,7 +137950,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:36:20.439Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -137604,7 +137965,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
+      "updated_at": "2026-09-06T13:36:20.439Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -137640,11 +138001,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4258.682883333333,
+        "source_age_minutes": 4273.34065,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3780.3993833333334,
+        "queue_age_minutes": 3795.05715,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -137653,7 +138014,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
+        "checked_at": "2026-09-06T13:36:20.439Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
