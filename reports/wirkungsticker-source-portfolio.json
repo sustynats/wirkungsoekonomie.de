@@ -1951,10 +1951,8 @@
       "role": "A",
       "trial_mode": false,
       "observation_status": "measurable",
-      "review_required": true,
-      "review_reasons": [
-        "no_unique_publication_in_30_days"
-      ],
+      "review_required": false,
+      "review_reasons": [],
       "source_utility_score": 100,
       "metrics": {
         "items_seen": 560,
@@ -1962,15 +1960,15 @@
         "items_duplicate": 353,
         "items_existing_story": 19,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 21,
-        "items_published": 0,
+        "items_full_analyzed": 25,
+        "items_published": 2,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 90843,
-        "ai_output_tokens": 6344,
-        "estimated_ai_cost": 0.062862,
+        "ai_input_tokens": 105905,
+        "ai_output_tokens": 8512,
+        "estimated_ai_cost": 0.077786,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -1980,10 +1978,8 @@
       "role": "A",
       "trial_mode": false,
       "observation_status": "measurable",
-      "review_required": true,
-      "review_reasons": [
-        "no_unique_publication_in_30_days"
-      ],
+      "review_required": false,
+      "review_reasons": [],
       "source_utility_score": 100,
       "metrics": {
         "items_seen": 1680,
@@ -1991,15 +1987,15 @@
         "items_duplicate": 1368,
         "items_existing_story": 15,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 13,
-        "items_published": 0,
+        "items_full_analyzed": 16,
+        "items_published": 2,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 33709,
-        "ai_output_tokens": 2580,
-        "estimated_ai_cost": 0.023982,
+        "ai_input_tokens": 41146,
+        "ai_output_tokens": 4353,
+        "estimated_ai_cost": 0.034693,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2018,15 +2014,15 @@
         "items_duplicate": 56,
         "items_existing_story": 1,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 3,
+        "items_full_analyzed": 4,
         "items_published": 0,
         "items_story_updates": 1,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 23114,
-        "ai_output_tokens": 3736,
-        "estimated_ai_cost": 0.025937,
+        "ai_input_tokens": 28148,
+        "ai_output_tokens": 3843,
+        "estimated_ai_cost": 0.028552,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2184,15 +2180,15 @@
         "items_duplicate": 211,
         "items_existing_story": 20,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 9,
+        "items_full_analyzed": 10,
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 6,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 16005,
-        "ai_output_tokens": 2261,
-        "estimated_ai_cost": 0.018675,
+        "ai_input_tokens": 18159,
+        "ai_output_tokens": 2670,
+        "estimated_ai_cost": 0.021475,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2570,22 +2566,22 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 50.9,
+      "source_utility_score": 51.9,
       "metrics": {
         "items_seen": 1575,
         "items_local_rejected": 17,
         "items_duplicate": 1096,
         "items_existing_story": 4,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 5,
+        "items_full_analyzed": 6,
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 51577,
-        "ai_output_tokens": 12969,
-        "estimated_ai_cost": 0.084428,
+        "ai_input_tokens": 60639,
+        "ai_output_tokens": 13227,
+        "estimated_ai_cost": 0.089102,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2604,15 +2600,15 @@
         "items_duplicate": 1110,
         "items_existing_story": 12,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 8,
+        "items_full_analyzed": 10,
         "items_published": 0,
         "items_story_updates": 1,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 34374,
-        "ai_output_tokens": 4031,
-        "estimated_ai_cost": 0.032091,
+        "ai_input_tokens": 41561,
+        "ai_output_tokens": 4548,
+        "estimated_ai_cost": 0.037506,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2773,7 +2769,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 72.6,
+      "source_utility_score": 74.1,
       "metrics": {
         "items_seen": 681,
         "items_local_rejected": 16,
@@ -2800,8 +2796,7 @@
       "observation_status": "measurable",
       "review_required": true,
       "review_reasons": [
-        "duplicates_over_90_percent",
-        "no_unique_publication_in_30_days"
+        "duplicates_over_90_percent"
       ],
       "source_utility_score": 100,
       "metrics": {
@@ -2810,15 +2805,15 @@
         "items_duplicate": 681,
         "items_existing_story": 25,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 17,
-        "items_published": 0,
+        "items_full_analyzed": 22,
+        "items_published": 3,
         "items_story_updates": 0,
         "items_primary_source_found": 6,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 55505,
-        "ai_output_tokens": 4824,
-        "estimated_ai_cost": 0.044255,
+        "ai_input_tokens": 79905,
+        "ai_output_tokens": 8593,
+        "estimated_ai_cost": 0.070103,
         "fetch_failures": 0,
         "parse_failures": 0
       }

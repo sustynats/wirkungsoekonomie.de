@@ -1,7 +1,1659 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T05:29:46.602Z",
+  "updated_at": "2026-09-06T05:34:08.658Z",
   "stories": [
+    {
+      "story_id": "wt-86ea1ddfd89beabf",
+      "slug": "sabotage-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-fahndung-mit-foto-n-9beabf",
+      "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
+      "first_seen": "2026-09-06T01:34:27.000Z",
+      "last_updated": "2026-09-06T05:34:49.981Z",
+      "published_at": "2026-09-06T05:34:49.981Z",
+      "updated_at": "2026-09-06T05:34:49.981Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+          "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
+          "summary": "Im Zusammenhang mit der Sabotage an Umspannwerken in Brandenburg, Nordrhein-Westfalen und Sachsen sucht die Polizei jetzt per Foto nach einem Tatverdächtigen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T05:18:36.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "40f2801787ac23e93e4c5c1ca8948c061fdba6ea06b581a49d1964de0e5cbc3c",
+          "source_item_id": "c0e45982664063a0ef87ad4f64c49db32a28f2f2dece681deea54c80331369b7",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T05:18:36.000Z",
+          "ingested_at": "2026-09-06T05:21:43.058Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-86ea1ddfd89beabf-v1-claim-1",
+          "story_id": "wt-86ea1ddfd89beabf",
+          "claim": "In Sachsen haben Ermittler an Stromtrassen insgesamt zwölf selbstgebaute Sprengvorrichtungen entdeckt.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+              "excerpt_hash": "784762652a10e073c58e",
+              "checked_at": "2026-09-06T05:34:49.981Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T05:34:49.981Z"
+        },
+        {
+          "claim_id": "wt-86ea1ddfd89beabf-v1-claim-2",
+          "story_id": "wt-86ea1ddfd89beabf",
+          "claim": "Die Polizei sucht per Foto nach einem Verdächtigen aus Gevelsberg in Nordrhein-Westfalen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+              "excerpt_hash": "c68ce48d2ea6838dd167",
+              "checked_at": "2026-09-06T05:34:49.981Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+              "excerpt_hash": "1a123f4fc486b0eece00",
+              "checked_at": "2026-09-06T05:34:49.981Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T05:34:49.981Z"
+        },
+        {
+          "claim_id": "wt-86ea1ddfd89beabf-v1-claim-3",
+          "story_id": "wt-86ea1ddfd89beabf",
+          "claim": "Die sächsischen Behörden prüfen einen möglichen Zusammenhang mit ähnlichen Funden in Brandenburg und Nordrhein-Westfalen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+              "excerpt_hash": "696e95726011039038e9",
+              "checked_at": "2026-09-06T05:34:49.981Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+              "excerpt_hash": "1a123f4fc486b0eece00",
+              "checked_at": "2026-09-06T05:34:49.981Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T05:34:49.981Z"
+        }
+      ],
+      "event_id": "event-ae3d4b273922de048bb3",
+      "event_first_seen_at": "2026-09-06T01:36:55.721Z",
+      "event_detected_at": "2026-09-06T01:36:55.721Z",
+      "verification_started_at": "2026-09-06T05:34:40.715Z",
+      "publish_ready_at": "2026-09-06T05:34:49.981Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T05:34:08.658Z",
+        "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "3e51fcb126f1d83e96da4160567679f6ec66ff39a27961077e9afa224f5c9e2e",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die Meldung beschreibt Ermittlungen nach einem mutmaßlichen Anschlagversuch auf die Stromversorgung in Sachsen. Nach Angaben der Generalstaatsanwaltschaft Dresden wurden in den Landkreisen Bautzen und Görlitz insgesamt zwölf selbstgebaute Sprengvorrichtungen entdeckt. Die Polizei sucht per Foto nach einem 48-Jährigen aus Gevelsberg in Nordrhein-Westfalen und hofft auf Hinweise zu seinem Aufenthaltsort; auch Hinweise aus einem Online-Portal werden geprüft.\n\nDie sächsischen Behörden prüfen zudem einen Zusammenhang mit ähnlichen Funden in Brandenburg und Nordrhein-Westfalen. Die vorliegenden Angaben stammen aus einem Deutschlandfunk-Bericht; weitere Hintergründe bleiben in den Textausschnitten offen.",
+      "analysis": {
+        "story_id": "wt-86ea1ddfd89beabf",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "In Sachsen wurden an Stromtrassen zwölf Sprengvorrichtungen entdeckt. Die Polizei fahndet per Foto nach einem Verdächtigen und prüft Zusammenhänge mit Fällen in anderen Ländern.",
+        "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Fund von zwölf selbstgebauten Sprengvorrichtungen an Stromtrassen in den Landkreisen Bautzen und Görlitz sowie die Fahndung per Foto nach einem 48-Jährigen aus Gevelsberg. Relevanz entsteht, weil es um kritische Energieinfrastruktur geht und damit um einen möglichen Eingriff in eine systemrelevante Versorgung. Der Wirkpfad liegt nicht in der Meldung selbst, sondern in der möglichen Beeinträchtigung von Sicherheit, Betrieb und Vertrauen in die Resilienz solcher Netze. Mögliche Folgen sind zusätzliche Schutzmaßnahmen, Ermittlungsaufwand und bei bestätigtem Zusammenhang eine breitere Lagebewertung über Ländergrenzen hinweg. Die Evidenz bleibt begrenzt, weil hier nur eine journalistische Quelle vorliegt und die behördlichen Einzelheiten nur ausschnittsweise belegt sind.",
+        "why_relevant": "Die Meldung betrifft kritische Strominfrastruktur und mögliche Sabotage, also einen Zustand mit potenziellen Folgen für Versorgungssicherheit, Schutzaufwand und öffentliche Sicherheitslage.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Stromversorgung ist für Haushalte und öffentliche Versorgung unmittelbar relevant; konkrete Ausfälle sind hier aber nicht belegt."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Energieinfrastruktur betrifft auch die Stabilität von Versorgungssystemen; ökologische Folgen sind aus der Quelle nicht belegbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und damit demokratische Korrekturfähigkeit, ohne dass ein institutioneller Schaden hier belegt ist."
+        },
+        "importance": "hoch",
+        "impact_potential": "Bei Bestätigung kann die Meldung zusätzliche Schutz- und Ermittlungsmaßnahmen sowie eine Neubewertung der Verwundbarkeit kritischer Strominfrastruktur auslösen.",
+        "impact_risks": [
+          "Mögliche Störung oder Verzögerung im Betrieb kritischer Infrastruktur",
+          "Erhöhter Sicherheits- und Ermittlungsaufwand",
+          "Vertrauensverlust in die Schutzfähigkeit von Energieversorgungssystemen"
+        ],
+        "mechanisms": [
+          "Entdeckte Sprengvorrichtungen erhöhen den Schutz- und Fahndungsdruck",
+          "Der mögliche Bezug zu mehreren Ländern kann die Lagebewertung erweitern",
+          "Kritische Infrastruktur erzeugt systemische Folgewirkungen über den Einzelfall hinaus"
+        ],
+        "first_order": [
+          "Ermittlungen und Fahndung konzentrieren sich auf den Verdächtigen und die Fundorte"
+        ],
+        "second_order": [
+          "Behörden könnten Schutzmaßnahmen an Stromtrassen und Umspannwerken verstärken"
+        ],
+        "third_order": [
+          "Bei bestätigter Serie könnte sich die Sicherheitsarchitektur für Energieinfrastruktur anpassen"
+        ],
+        "systemic_relevance": "Die Meldung betrifft eine potenziell systemrelevante Infrastruktur und mögliche Kaskaden über mehrere Bundesländer.",
+        "transformation_potential": "Niedrig bis mittel; die Quelle zeigt eine Sicherheitslage, nicht bereits eine strukturelle Umgestaltung.",
+        "resilience": "Offen; die tatsächliche Resilienz der betroffenen Netze ist aus der Quelle nicht messbar.",
+        "side_effects": [
+          "Mehr Polizeieinsatz und technische Sicherung",
+          "Mögliche öffentliche Verunsicherung"
+        ],
+        "uncertainties": [
+          "Ob die Funde strafrechtlich als Anschläge, Versuche oder andere Tatformen eingestuft werden",
+          "Ob der gesuchte Mann tatsächlich beteiligt war",
+          "Ob ein belastbarer Zusammenhang zu Brandenburg und Nordrhein-Westfalen besteht"
+        ],
+        "evidence_level": "low",
+        "attribution": "Berichtet wird Deutschlandfunk; zugeschrieben werden die Fund- und Fahndungsangaben der Generalstaatsanwaltschaft Dresden bzw. der Polizei. Der Artikel nennt die Formulierung als Bericht, nicht als eigene amtliche Entscheidung.",
+        "watch_next": [
+          "Bestätigen Behörden die Zahl der Funde und die Fahndung offiziell?",
+          "Wird der Zusammenhang zu Brandenburg und Nordrhein-Westfalen belegt?",
+          "Ergibt sich aus weiteren Ermittlungen eine belastbare Tatserie?"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7, SDG 9, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Neue, konkrete Angabe zu zwölf Sprengvorrichtungen an kritischer Infrastruktur und laufender Fahndung; materiell wegen Systemrelevanz, trotz bislang nur einer belastbaren Quelle."
+        },
+        "publication_recommendation": true,
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-06T05:34:08.658Z",
+        "media_trigger_fingerprint": "0ebc3e32c7b5bfe6d473ed573ce61502ea16abba5339b1310eb446f175700714",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "0ebc3e32c7b5bfe6d473ed573ce61502ea16abba5339b1310eb446f175700714",
+          "content_fingerprint": "b82d6e42143854c83671eab9143c39219f0af9c8837b20585e45baf1cdd3d43b",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T05:34:49.981Z",
+          "content_hash": "3e51fcb126f1d83e96da4160567679f6ec66ff39a27961077e9afa224f5c9e2e",
+          "source_summary": "Die Meldung beschreibt Ermittlungen nach einem mutmaßlichen Anschlagversuch auf die Stromversorgung in Sachsen. Nach Angaben der Generalstaatsanwaltschaft Dresden wurden in den Landkreisen Bautzen und Görlitz insgesamt zwölf selbstgebaute Sprengvorrichtungen entdeckt. Die Polizei sucht per Foto nach einem 48-Jährigen aus Gevelsberg in Nordrhein-Westfalen und hofft auf Hinweise zu seinem Aufenthaltsort; auch Hinweise aus einem Online-Portal werden geprüft.\n\nDie sächsischen Behörden prüfen zudem einen Zusammenhang mit ähnlichen Funden in Brandenburg und Nordrhein-Westfalen. Die vorliegenden Angaben stammen aus einem Deutschlandfunk-Bericht; weitere Hintergründe bleiben in den Textausschnitten offen.",
+          "analysis": {
+            "story_id": "wt-86ea1ddfd89beabf",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "In Sachsen wurden an Stromtrassen zwölf Sprengvorrichtungen entdeckt. Die Polizei fahndet per Foto nach einem Verdächtigen und prüft Zusammenhänge mit Fällen in anderen Ländern.",
+            "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Fund von zwölf selbstgebauten Sprengvorrichtungen an Stromtrassen in den Landkreisen Bautzen und Görlitz sowie die Fahndung per Foto nach einem 48-Jährigen aus Gevelsberg. Relevanz entsteht, weil es um kritische Energieinfrastruktur geht und damit um einen möglichen Eingriff in eine systemrelevante Versorgung. Der Wirkpfad liegt nicht in der Meldung selbst, sondern in der möglichen Beeinträchtigung von Sicherheit, Betrieb und Vertrauen in die Resilienz solcher Netze. Mögliche Folgen sind zusätzliche Schutzmaßnahmen, Ermittlungsaufwand und bei bestätigtem Zusammenhang eine breitere Lagebewertung über Ländergrenzen hinweg. Die Evidenz bleibt begrenzt, weil hier nur eine journalistische Quelle vorliegt und die behördlichen Einzelheiten nur ausschnittsweise belegt sind.",
+            "why_relevant": "Die Meldung betrifft kritische Strominfrastruktur und mögliche Sabotage, also einen Zustand mit potenziellen Folgen für Versorgungssicherheit, Schutzaufwand und öffentliche Sicherheitslage.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Die Stromversorgung ist für Haushalte und öffentliche Versorgung unmittelbar relevant; konkrete Ausfälle sind hier aber nicht belegt."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Energieinfrastruktur betrifft auch die Stabilität von Versorgungssystemen; ökologische Folgen sind aus der Quelle nicht belegbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und damit demokratische Korrekturfähigkeit, ohne dass ein institutioneller Schaden hier belegt ist."
+            },
+            "importance": "hoch",
+            "impact_potential": "Bei Bestätigung kann die Meldung zusätzliche Schutz- und Ermittlungsmaßnahmen sowie eine Neubewertung der Verwundbarkeit kritischer Strominfrastruktur auslösen.",
+            "impact_risks": [
+              "Mögliche Störung oder Verzögerung im Betrieb kritischer Infrastruktur",
+              "Erhöhter Sicherheits- und Ermittlungsaufwand",
+              "Vertrauensverlust in die Schutzfähigkeit von Energieversorgungssystemen"
+            ],
+            "mechanisms": [
+              "Entdeckte Sprengvorrichtungen erhöhen den Schutz- und Fahndungsdruck",
+              "Der mögliche Bezug zu mehreren Ländern kann die Lagebewertung erweitern",
+              "Kritische Infrastruktur erzeugt systemische Folgewirkungen über den Einzelfall hinaus"
+            ],
+            "first_order": [
+              "Ermittlungen und Fahndung konzentrieren sich auf den Verdächtigen und die Fundorte"
+            ],
+            "second_order": [
+              "Behörden könnten Schutzmaßnahmen an Stromtrassen und Umspannwerken verstärken"
+            ],
+            "third_order": [
+              "Bei bestätigter Serie könnte sich die Sicherheitsarchitektur für Energieinfrastruktur anpassen"
+            ],
+            "systemic_relevance": "Die Meldung betrifft eine potenziell systemrelevante Infrastruktur und mögliche Kaskaden über mehrere Bundesländer.",
+            "transformation_potential": "Niedrig bis mittel; die Quelle zeigt eine Sicherheitslage, nicht bereits eine strukturelle Umgestaltung.",
+            "resilience": "Offen; die tatsächliche Resilienz der betroffenen Netze ist aus der Quelle nicht messbar.",
+            "side_effects": [
+              "Mehr Polizeieinsatz und technische Sicherung",
+              "Mögliche öffentliche Verunsicherung"
+            ],
+            "uncertainties": [
+              "Ob die Funde strafrechtlich als Anschläge, Versuche oder andere Tatformen eingestuft werden",
+              "Ob der gesuchte Mann tatsächlich beteiligt war",
+              "Ob ein belastbarer Zusammenhang zu Brandenburg und Nordrhein-Westfalen besteht"
+            ],
+            "evidence_level": "low",
+            "attribution": "Berichtet wird Deutschlandfunk; zugeschrieben werden die Fund- und Fahndungsangaben der Generalstaatsanwaltschaft Dresden bzw. der Polizei. Der Artikel nennt die Formulierung als Bericht, nicht als eigene amtliche Entscheidung.",
+            "watch_next": [
+              "Bestätigen Behörden die Zahl der Funde und die Fahndung offiziell?",
+              "Wird der Zusammenhang zu Brandenburg und Nordrhein-Westfalen belegt?",
+              "Ergibt sich aus weiteren Ermittlungen eine belastbare Tatserie?"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 9, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neue, konkrete Angabe zu zwölf Sprengvorrichtungen an kritischer Infrastruktur und laufender Fahndung; materiell wegen Systemrelevanz, trotz bislang nur einer belastbaren Quelle."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-06T05:34:08.658Z",
+            "media_trigger_fingerprint": "0ebc3e32c7b5bfe6d473ed573ce61502ea16abba5339b1310eb446f175700714",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "0ebc3e32c7b5bfe6d473ed573ce61502ea16abba5339b1310eb446f175700714",
+              "content_fingerprint": "b82d6e42143854c83671eab9143c39219f0af9c8837b20585e45baf1cdd3d43b",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-86ea1ddfd89beabf-v1-claim-1",
+              "story_id": "wt-86ea1ddfd89beabf",
+              "claim": "In Sachsen haben Ermittler an Stromtrassen insgesamt zwölf selbstgebaute Sprengvorrichtungen entdeckt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+                  "excerpt_hash": "784762652a10e073c58e",
+                  "checked_at": "2026-09-06T05:34:49.981Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T05:34:49.981Z"
+            },
+            {
+              "claim_id": "wt-86ea1ddfd89beabf-v1-claim-2",
+              "story_id": "wt-86ea1ddfd89beabf",
+              "claim": "Die Polizei sucht per Foto nach einem Verdächtigen aus Gevelsberg in Nordrhein-Westfalen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+                  "excerpt_hash": "c68ce48d2ea6838dd167",
+                  "checked_at": "2026-09-06T05:34:49.981Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+                  "excerpt_hash": "1a123f4fc486b0eece00",
+                  "checked_at": "2026-09-06T05:34:49.981Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T05:34:49.981Z"
+            },
+            {
+              "claim_id": "wt-86ea1ddfd89beabf-v1-claim-3",
+              "story_id": "wt-86ea1ddfd89beabf",
+              "claim": "Die sächsischen Behörden prüfen einen möglichen Zusammenhang mit ähnlichen Funden in Brandenburg und Nordrhein-Westfalen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+                  "excerpt_hash": "696e95726011039038e9",
+                  "checked_at": "2026-09-06T05:34:49.981Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+                  "excerpt_hash": "1a123f4fc486b0eece00",
+                  "checked_at": "2026-09-06T05:34:49.981Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T05:34:49.981Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
+              "content_hash": "40f2801787ac23e93e4c5c1ca8948c061fdba6ea06b581a49d1964de0e5cbc3c"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T05:34:49.981Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-86ea1ddfd89beabf-bc9fc18a9e636684-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "bc9fc18a9e636684cad8a6fbd429ca0f7570f9d4564685cc477ecb1600987ed5"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-86ea1ddfd89beabf-98a85508fb2dc299-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "98a85508fb2dc299e273ad9f932bc22f9384feb04d8b5149bda0293430786c52"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-86ea1ddfd89beabf-0cc9823cf906a53b-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "0cc9823cf906a53b09f12d0c6a05baee35ad7fdaab19d9ffa829f066e161253e"
+        },
+        "source_visual": null,
+        "fingerprint": "8a38c28f43498799da1d99dc034f6165a1cdbb1d7eec5b1eefda777af158b2fa",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T05:36:07.920Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-3d9354235ee08f8f",
+      "slug": "iran-krieg-us-militar-angegriffener-iranischer-oltanker-versenkt-e08f8f",
+      "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
+      "first_seen": "2026-09-06T02:15:41.000Z",
+      "last_updated": "2026-09-06T05:34:38.212Z",
+      "published_at": "2026-09-06T05:34:38.212Z",
+      "updated_at": "2026-09-06T05:34:38.212Z",
+      "topic": [
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16021839.html",
+          "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
+          "summary": "Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Eines der Schiffe liegt laut US-Militär nun am Meeresgrund.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T02:15:41.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4022f4b5104538b3b63c71e37f84b40dc490555943f2f112dfcae6603cee9fca",
+          "source_item_id": "aa5780b0091a0763bd208685cf7993b4304ed2a7ac3620b0e5eb087bca30b21d",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T02:15:41.000Z",
+          "ingested_at": "2026-09-06T05:21:43.058Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/iran-krieg--us-militaer--angegriffener-iranischer-oeltanker-versenkt-38212054.html",
+          "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
+          "summary": "Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Eines der Schiffe liegt laut US-Militär nun am Meeresgrund.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T02:14:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "38c242edd9850880679d3cb8d500e2a1b2d7b98da2206460daabe9190fb27222",
+          "source_item_id": "b4d04a17938030f20b32d5275d89f6c2c708eed1025d008026d54aeb473539a4",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T02:14:28.000Z",
+          "ingested_at": "2026-09-06T03:06:22.960Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+          "title": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt",
+          "summary": "Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T05:18:36.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d26727e526551155230658acd1ce4e459ba4dc8cfdec6606a86a9a5fff1ef8a5",
+          "source_item_id": "f19b81892466964d367fd54c83b09b5d653ff4644a3889ab4ae56e74bd623ca1",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T05:18:36.000Z",
+          "ingested_at": "2026-09-06T05:21:43.058Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3d9354235ee08f8f-v1-claim-1",
+          "story_id": "wt-3d9354235ee08f8f",
+          "claim": "Nach amerikanischen Angaben hat das US-Militär im Golf von Oman einen angegriffenen iranischen Öltanker versenkt.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "excerpt_hash": "ffc8b1bc51c5eac129c0",
+              "checked_at": "2026-09-06T05:34:38.212Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "excerpt_hash": "c85c9447fe4766542eee",
+              "checked_at": "2026-09-06T05:34:38.212Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "excerpt_hash": "ba27a8279d0e8315016b",
+              "checked_at": "2026-09-06T05:34:38.212Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T05:34:38.212Z"
+        },
+        {
+          "claim_id": "wt-3d9354235ee08f8f-v1-claim-2",
+          "story_id": "wt-3d9354235ee08f8f",
+          "claim": "Das US-Militär stellt die Aktion als Reaktion auf einen iranischen Angriff dar und nennt insgesamt drei angegriffene iranische Tanker.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "excerpt_hash": "e81ec854cdff558842aa",
+              "checked_at": "2026-09-06T05:34:38.212Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "excerpt_hash": "1d64bf51d713b7bbd419",
+              "checked_at": "2026-09-06T05:34:38.212Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T05:34:38.212Z"
+        },
+        {
+          "claim_id": "wt-3d9354235ee08f8f-v1-claim-3",
+          "story_id": "wt-3d9354235ee08f8f",
+          "claim": "Der Tanker soll zum Zeitpunkt der Attacke kein Öl geladen gehabt haben.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "excerpt_hash": "e81ec854cdff558842aa",
+              "checked_at": "2026-09-06T05:34:38.212Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T05:34:38.212Z"
+        }
+      ],
+      "event_id": "event-1b58b224158d7561b786",
+      "event_first_seen_at": "2026-09-06T02:36:16.895Z",
+      "event_detected_at": "2026-09-06T02:36:16.895Z",
+      "verification_started_at": "2026-09-06T05:34:27.865Z",
+      "publish_ready_at": "2026-09-06T05:34:38.212Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T05:34:08.658Z",
+        "fingerprint": "b2825facb99f37da3a612cad7477a4a9996e765d5c693defa699d312ab754322",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob weitere US- oder iranische Militärangaben den Vorfall bestätigen oder präzisieren.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue belastbare Angaben zu Ort, Zeit, Ziel und Folgen des Angriffs",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ad86726168c48a73",
+          "announced_at": "2026-09-06T05:18:36.000Z",
+          "follow_up_date": "2026-09-13T05:34:38.212Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "4199140a84fab7a045994245c09e8690da69589d4d9b8086798f3fcce2bd4fcd",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Mehrere Medien melden übereinstimmend, dass das US-Militär einen iranischen Öltanker im Golf von Oman angegriffen und versenkt haben soll. Deutschlandfunk verweist dabei auf Angaben des zuständigen Regionalkommandos Centcom auf X und ergänzt, der Tanker sei zum Zeitpunkt der Attacke nicht mit Öl beladen gewesen.\n\nDie Berichte ordnen den Angriff als Reaktion auf einen iranischen Angriff ein. Zugleich heißt es, das US-Militär habe bereits zuvor mitgeteilt, insgesamt drei iranische Öltanker angegriffen zu haben; iranische Medien stellten dagegen dar, die US-Schiffe seien zur Flucht gezwungen worden. Unklar bleibt in den gelieferten Texten, wie der Vorfall unabhängig verifiziert werden kann und welche unmittelbaren Folgen er hat.",
+      "analysis": {
+        "story_id": "wt-3d9354235ee08f8f",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "US-Militärangaben zufolge ist im Golf von Oman ein iranischer Öltanker nach einem Angriff gesunken. Die Berichte lassen offen, wie unabhängig der Vorfall bestätigt ist und wie sich die Lage weiter entwickelt.",
+        "detail_summary": "Gesichert aus den gelieferten Quellen ist vor allem die militärische Behauptung, ein angegriffener iranischer Öltanker sei im Golf von Oman gesunken. Die Meldung ist relevant, weil sie einen direkten militärischen Eingriff im Seegebiet und damit einen möglichen Eskalationsschritt im Iran-Konflikt beschreibt. Der Wirkpfad liegt weniger in einer unmittelbaren Binnenwirkung als in möglichen Folgen für Schifffahrt, Sicherheitslage, Versicherungsrisiken und weitere militärische Reaktionen. Als mögliche Folge kommen zusätzliche Zwischenfälle oder eine verschärfte Lage im Seeverkehr in Betracht. Die Evidenz bleibt aber begrenzt: In den gelieferten Texten dominieren sekundäre Berichte und die US-Darstellung; eine unabhängige Bestätigung des Vorfalls selbst fehlt hier.",
+        "why_relevant": "Die Meldung beschreibt einen militärischen Angriff auf ein ziviles oder zivil nutzbares Schiff in einer strategisch wichtigen Seeroute. Das kann Sicherheitslage, Risikoprämien und weitere Reaktionen beeinflussen.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "monitoring",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Schifffahrt, Besatzungen und Sicherheitslage in einer strategischen Route; mögliche Eskalationsfolgen reichen über den Einzelfall hinaus."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Ein Tankerangriff kann Umwelt- und Havarierisiken erhöhen; im gelieferten Material ist aber kein Ölaustritt oder Schaden an der Umwelt belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Vorfall betrifft sicherheits- und außenpolitische Entscheidungen, aber in den Quellen ist keine direkte demokratische Entscheidungsänderung belegt."
+        },
+        "importance": "hoch",
+        "impact_potential": "Ein bestätigter Angriff auf einen Tanker kann militärische Gegenschritte, höhere Sicherheitskosten und Störungen im Seeverkehr auslösen.",
+        "impact_risks": [
+          "Weitere Eskalation zwischen den Konfliktparteien",
+          "Erhöhte Risiken für Handelsschiffe und Versicherungen",
+          "Mögliche Verunsicherung an Rohstoff- und Transportmärkten"
+        ],
+        "mechanisms": [
+          "Direkter militärischer Zwang gegen Schifffahrt",
+          "Signalwirkung für weitere Angriffe oder Abschreckung",
+          "Erhöhte wahrgenommene Unsicherheit in einer strategischen Seeroute"
+        ],
+        "first_order": [
+          "Beschädigung oder Versenkung eines einzelnen Schiffes",
+          "Unmittelbare Gefährdung von Besatzung und Fahrtbetrieb"
+        ],
+        "second_order": [
+          "Veränderte Sicherheitsmaßnahmen für Schifffahrt",
+          "Steigende Prämien und Umwege im maritimen Verkehr"
+        ],
+        "third_order": [
+          "Mögliche Verschiebung regionaler Eskalationsmuster",
+          "Dauerhafte Risikoneubewertung für die Route"
+        ],
+        "systemic_relevance": "Die Meldung hat Systemrelevanz, weil der Golf von Oman eine wichtige Route für Energie- und Güterverkehr ist und militärische Vorfälle dort über den Einzelfall hinaus wirken können.",
+        "transformation_potential": "Kein Transformationsereignis, aber ein möglicher Katalysator für veränderte Sicherheits- und Routenentscheidungen im Seeverkehr.",
+        "resilience": "Die Widerstandsfähigkeit hängt davon ab, ob Schifffahrt, Staaten und Versicherer kurzfristig auf die Lage reagieren; die Quellenlage reicht für eine Bewertung nur begrenzt.",
+        "side_effects": [
+          "Mögliche Verstärkung von Misstrauen und Gegendarstellungen",
+          "Mehr Nachrichten- und Marktvolatilität rund um die Route"
+        ],
+        "uncertainties": [
+          "Unabhängige Bestätigung des Angriffs fehlt in den gelieferten Quellen",
+          "Unklar bleibt der tatsächliche Schaden am Schiff und die Lage der Besatzung",
+          "Die Gegendarstellung iranischer Medien wird nicht aufgelöst"
+        ],
+        "evidence_level": "medium",
+        "attribution": "Die Formulierung stammt aus Berichten, die US-Militärangaben wiedergeben; der Originalton des Militärs ist in den Auszügen nur indirekt belegt.",
+        "watch_next": [
+          "Weitere amtliche oder unabhängige Bestätigungen des Vorfalls",
+          "Angaben zu Schaden, Ladung und Besatzung",
+          "Mögliche Reaktionen der betroffenen Staaten"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16, SDG 14"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_with_caveats",
+          "duplicate_status": "new_story",
+          "rationale": "Neue militärische Angabe zu einem Tankerangriff mit möglicher Bedeutung für regionale Sicherheit, Handel und Eskalationsdynamik; die Meldung ist nicht bloß Routine."
+        },
+        "publication_recommendation": true,
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-06T05:34:08.658Z",
+        "media_trigger_fingerprint": "dbfa4def7be084dfd6bbf16ddc73fc81f24bca5a7c3996c38762987184f8be67",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 3,
+          "comparable_source_count": 3,
+          "fingerprint": "dbfa4def7be084dfd6bbf16ddc73fc81f24bca5a7c3996c38762987184f8be67",
+          "content_fingerprint": "4b8ac35a1950b9b296f734357ab85dbc04e71dcb45f42635b4083c4f707a4402",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T05:34:38.212Z",
+          "content_hash": "4199140a84fab7a045994245c09e8690da69589d4d9b8086798f3fcce2bd4fcd",
+          "source_summary": "Mehrere Medien melden übereinstimmend, dass das US-Militär einen iranischen Öltanker im Golf von Oman angegriffen und versenkt haben soll. Deutschlandfunk verweist dabei auf Angaben des zuständigen Regionalkommandos Centcom auf X und ergänzt, der Tanker sei zum Zeitpunkt der Attacke nicht mit Öl beladen gewesen.\n\nDie Berichte ordnen den Angriff als Reaktion auf einen iranischen Angriff ein. Zugleich heißt es, das US-Militär habe bereits zuvor mitgeteilt, insgesamt drei iranische Öltanker angegriffen zu haben; iranische Medien stellten dagegen dar, die US-Schiffe seien zur Flucht gezwungen worden. Unklar bleibt in den gelieferten Texten, wie der Vorfall unabhängig verifiziert werden kann und welche unmittelbaren Folgen er hat.",
+          "analysis": {
+            "story_id": "wt-3d9354235ee08f8f",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "US-Militärangaben zufolge ist im Golf von Oman ein iranischer Öltanker nach einem Angriff gesunken. Die Berichte lassen offen, wie unabhängig der Vorfall bestätigt ist und wie sich die Lage weiter entwickelt.",
+            "detail_summary": "Gesichert aus den gelieferten Quellen ist vor allem die militärische Behauptung, ein angegriffener iranischer Öltanker sei im Golf von Oman gesunken. Die Meldung ist relevant, weil sie einen direkten militärischen Eingriff im Seegebiet und damit einen möglichen Eskalationsschritt im Iran-Konflikt beschreibt. Der Wirkpfad liegt weniger in einer unmittelbaren Binnenwirkung als in möglichen Folgen für Schifffahrt, Sicherheitslage, Versicherungsrisiken und weitere militärische Reaktionen. Als mögliche Folge kommen zusätzliche Zwischenfälle oder eine verschärfte Lage im Seeverkehr in Betracht. Die Evidenz bleibt aber begrenzt: In den gelieferten Texten dominieren sekundäre Berichte und die US-Darstellung; eine unabhängige Bestätigung des Vorfalls selbst fehlt hier.",
+            "why_relevant": "Die Meldung beschreibt einen militärischen Angriff auf ein ziviles oder zivil nutzbares Schiff in einer strategisch wichtigen Seeroute. Das kann Sicherheitslage, Risikoprämien und weitere Reaktionen beeinflussen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind potenziell Schifffahrt, Besatzungen und Sicherheitslage in einer strategischen Route; mögliche Eskalationsfolgen reichen über den Einzelfall hinaus."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Ein Tankerangriff kann Umwelt- und Havarierisiken erhöhen; im gelieferten Material ist aber kein Ölaustritt oder Schaden an der Umwelt belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Der Vorfall betrifft sicherheits- und außenpolitische Entscheidungen, aber in den Quellen ist keine direkte demokratische Entscheidungsänderung belegt."
+            },
+            "importance": "hoch",
+            "impact_potential": "Ein bestätigter Angriff auf einen Tanker kann militärische Gegenschritte, höhere Sicherheitskosten und Störungen im Seeverkehr auslösen.",
+            "impact_risks": [
+              "Weitere Eskalation zwischen den Konfliktparteien",
+              "Erhöhte Risiken für Handelsschiffe und Versicherungen",
+              "Mögliche Verunsicherung an Rohstoff- und Transportmärkten"
+            ],
+            "mechanisms": [
+              "Direkter militärischer Zwang gegen Schifffahrt",
+              "Signalwirkung für weitere Angriffe oder Abschreckung",
+              "Erhöhte wahrgenommene Unsicherheit in einer strategischen Seeroute"
+            ],
+            "first_order": [
+              "Beschädigung oder Versenkung eines einzelnen Schiffes",
+              "Unmittelbare Gefährdung von Besatzung und Fahrtbetrieb"
+            ],
+            "second_order": [
+              "Veränderte Sicherheitsmaßnahmen für Schifffahrt",
+              "Steigende Prämien und Umwege im maritimen Verkehr"
+            ],
+            "third_order": [
+              "Mögliche Verschiebung regionaler Eskalationsmuster",
+              "Dauerhafte Risikoneubewertung für die Route"
+            ],
+            "systemic_relevance": "Die Meldung hat Systemrelevanz, weil der Golf von Oman eine wichtige Route für Energie- und Güterverkehr ist und militärische Vorfälle dort über den Einzelfall hinaus wirken können.",
+            "transformation_potential": "Kein Transformationsereignis, aber ein möglicher Katalysator für veränderte Sicherheits- und Routenentscheidungen im Seeverkehr.",
+            "resilience": "Die Widerstandsfähigkeit hängt davon ab, ob Schifffahrt, Staaten und Versicherer kurzfristig auf die Lage reagieren; die Quellenlage reicht für eine Bewertung nur begrenzt.",
+            "side_effects": [
+              "Mögliche Verstärkung von Misstrauen und Gegendarstellungen",
+              "Mehr Nachrichten- und Marktvolatilität rund um die Route"
+            ],
+            "uncertainties": [
+              "Unabhängige Bestätigung des Angriffs fehlt in den gelieferten Quellen",
+              "Unklar bleibt der tatsächliche Schaden am Schiff und die Lage der Besatzung",
+              "Die Gegendarstellung iranischer Medien wird nicht aufgelöst"
+            ],
+            "evidence_level": "medium",
+            "attribution": "Die Formulierung stammt aus Berichten, die US-Militärangaben wiedergeben; der Originalton des Militärs ist in den Auszügen nur indirekt belegt.",
+            "watch_next": [
+              "Weitere amtliche oder unabhängige Bestätigungen des Vorfalls",
+              "Angaben zu Schaden, Ladung und Besatzung",
+              "Mögliche Reaktionen der betroffenen Staaten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16, SDG 14"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_with_caveats",
+              "duplicate_status": "new_story",
+              "rationale": "Neue militärische Angabe zu einem Tankerangriff mit möglicher Bedeutung für regionale Sicherheit, Handel und Eskalationsdynamik; die Meldung ist nicht bloß Routine."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-06T05:34:08.658Z",
+            "media_trigger_fingerprint": "dbfa4def7be084dfd6bbf16ddc73fc81f24bca5a7c3996c38762987184f8be67",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 3,
+              "comparable_source_count": 3,
+              "fingerprint": "dbfa4def7be084dfd6bbf16ddc73fc81f24bca5a7c3996c38762987184f8be67",
+              "content_fingerprint": "4b8ac35a1950b9b296f734357ab85dbc04e71dcb45f42635b4083c4f707a4402",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-3d9354235ee08f8f-v1-claim-1",
+              "story_id": "wt-3d9354235ee08f8f",
+              "claim": "Nach amerikanischen Angaben hat das US-Militär im Golf von Oman einen angegriffenen iranischen Öltanker versenkt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+                  "excerpt_hash": "ffc8b1bc51c5eac129c0",
+                  "checked_at": "2026-09-06T05:34:38.212Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+                  "excerpt_hash": "c85c9447fe4766542eee",
+                  "checked_at": "2026-09-06T05:34:38.212Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+                  "excerpt_hash": "ba27a8279d0e8315016b",
+                  "checked_at": "2026-09-06T05:34:38.212Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T05:34:38.212Z"
+            },
+            {
+              "claim_id": "wt-3d9354235ee08f8f-v1-claim-2",
+              "story_id": "wt-3d9354235ee08f8f",
+              "claim": "Das US-Militär stellt die Aktion als Reaktion auf einen iranischen Angriff dar und nennt insgesamt drei angegriffene iranische Tanker.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+                  "excerpt_hash": "e81ec854cdff558842aa",
+                  "checked_at": "2026-09-06T05:34:38.212Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+                  "excerpt_hash": "1d64bf51d713b7bbd419",
+                  "checked_at": "2026-09-06T05:34:38.212Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T05:34:38.212Z"
+            },
+            {
+              "claim_id": "wt-3d9354235ee08f8f-v1-claim-3",
+              "story_id": "wt-3d9354235ee08f8f",
+              "claim": "Der Tanker soll zum Zeitpunkt der Attacke kein Öl geladen gehabt haben.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+                  "excerpt_hash": "e81ec854cdff558842aa",
+                  "checked_at": "2026-09-06T05:34:38.212Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T05:34:38.212Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16021839.html",
+              "content_hash": "4022f4b5104538b3b63c71e37f84b40dc490555943f2f112dfcae6603cee9fca"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/ausland/iran-krieg--us-militaer--angegriffener-iranischer-oeltanker-versenkt-38212054.html",
+              "content_hash": "38c242edd9850880679d3cb8d500e2a1b2d7b98da2206460daabe9190fb27222"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+              "content_hash": "d26727e526551155230658acd1ce4e459ba4dc8cfdec6606a86a9a5fff1ef8a5"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T05:34:38.212Z",
+          "source_count": 3
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-82f3c286735c51a4-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "82f3c286735c51a4d4a9c9151288a3350e78784d1f6274d8debfcc650cc684cc"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-093aa6e5083e4866-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "093aa6e5083e4866c9aec6040694b5c8555ef12da83c7404bf6b69068704e7f7"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-97e4b4696d568490-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "97e4b4696d568490db9e7aeaa3a46579433a5a6e774e753b995eb7fd5cf0bd09"
+        },
+        "source_visual": null,
+        "fingerprint": "7ccb900006691b16c93888467cd2e6e3d84787db3d749301c5a2a580816b6640",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T05:36:00.002Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-166e870242fc37e6",
+      "slug": "verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6",
+      "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+      "first_seen": "2026-09-05T17:11:39.000Z",
+      "last_updated": "2026-09-06T05:34:25.362Z",
+      "published_at": "2026-09-06T05:34:25.362Z",
+      "updated_at": "2026-09-06T05:34:25.362Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--putin-beginnt-gespraeche-mit-us-unterhaendlern-38211192.html",
+          "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+          "summary": "Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T17:11:39.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "d7e7db6b0e4741b35f75d0f6546135afa8de2d7da7c0a187961b74c464406a54",
+          "source_item_id": "05fe1f4448cc7b34a37a0108ec8885ac629e512648e2357735d9c024aa0bfe6f",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T17:11:39.000Z",
+          "ingested_at": "2026-09-05T17:51:35.693Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
+          "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
+          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:06:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "aa8002fb305244364b5dc556e7ac4c2b7ec7cccda58eecf09e84b72da02ab154",
+          "source_item_id": "235b4021196e08f1d60c8a911f608ba014fa851de581b8c9f4817f0dc07b9c51",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T11:06:25.000Z",
+          "ingested_at": "2026-09-06T05:21:43.058Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--gespraeche-von-putin-und-us-gesandten-beendet-38211192.html",
+          "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
+          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T20:39:53.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "a0d78e44c3d496a0410e313a26cfb123e534b6bb6b4559b88117b8626514fb69",
+          "source_item_id": "66efc58caf10ee5f9e2a1f6eca3d96eb6e6829283a0016280a55ced43fc22d27",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T20:39:53.000Z",
+          "ingested_at": "2026-09-06T02:36:16.895Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+          "title": "Ukraine-Krieg - Gespräche im Kreml von Putin und US-Gesandten beendet",
+          "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Einzelheiten der rund dreistündigen Unterredung im Kreml sind bisher nicht bekannt. Nach Angaben des ​Weißen Hauses wurden konkrete Pläne für die nächsten Schritte in den Gesprächen über ein mögliches Ende des ‌Ukraine-Kriegs besprochen. ‌",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T05:18:36.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3e4c8cab46d3a4e09d1b8fce22248040098b1a94cde7844832a47ae7efe4b98a",
+          "source_item_id": "7ccb92fbbdfa2b1a3a67b612b2925c9f09bf624c9bd11afea85d8fe535b753a9",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T05:18:36.000Z",
+          "ingested_at": "2026-09-06T05:21:43.058Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-166e870242fc37e6-v1-claim-1",
+          "story_id": "wt-166e870242fc37e6",
+          "claim": "In Moskau sind die Gespräche zwischen Putin und den US-Unterhändlern Witkoff und Kushner beendet worden.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+              "excerpt_hash": "f993421bf1f3e1928e3d",
+              "checked_at": "2026-09-06T05:34:25.362Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+              "excerpt_hash": "7aaa5495a0714bd68f30",
+              "checked_at": "2026-09-06T05:34:25.362Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T05:34:25.362Z"
+        },
+        {
+          "claim_id": "wt-166e870242fc37e6-v1-claim-2",
+          "story_id": "wt-166e870242fc37e6",
+          "claim": "Laut dem Weißen Haus wurden in den Gesprächen konkrete Pläne für die nächsten Schritte besprochen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+              "excerpt_hash": "c0353a6852792aca74d7",
+              "checked_at": "2026-09-06T05:34:25.362Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+              "excerpt_hash": "f993421bf1f3e1928e3d",
+              "checked_at": "2026-09-06T05:34:25.362Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T05:34:25.362Z"
+        },
+        {
+          "claim_id": "wt-166e870242fc37e6-v1-claim-3",
+          "story_id": "wt-166e870242fc37e6",
+          "claim": "Russland kündigte an, die Luftangriffe auf Kyjiw für drei Tage einzustellen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+              "excerpt_hash": "0cb73e70d4169ca9ae31",
+              "checked_at": "2026-09-06T05:34:25.362Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T05:34:25.362Z"
+        }
+      ],
+      "event_id": "event-165020cd14b0b8c7db2e",
+      "event_first_seen_at": "2026-09-05T17:36:24.715Z",
+      "event_detected_at": "2026-09-05T17:36:24.715Z",
+      "verification_started_at": "2026-09-06T05:34:10.384Z",
+      "publish_ready_at": "2026-09-06T05:34:25.362Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T05:34:08.658Z",
+        "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und mit welchem Inhalt die in den Gesprächen angekündigten nächsten Schritte in den kommenden Wochen tatsächlich bekanntgegeben werden.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Mitteilung konkreter Folgeschritte oder Absage derselben",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6ef0f3a9aeb66bfc",
+          "announced_at": "2026-09-06T05:18:36.000Z",
+          "follow_up_date": "2026-09-13T05:34:25.362Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "136542df2271394d165df493436d0ac2e1dc301582134daa2de96c6d83e1cfd7",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "In Moskau sind die Gespräche zwischen dem russischen Präsidenten Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Deutschlandfunk nennt eine Dauer von rund drei Stunden und schreibt, Einzelheiten der Unterredung seien bisher nicht bekannt. Zugleich heißt es, nach Angaben des Weißen Hauses seien konkrete Pläne für die nächsten Schritte in den Gesprächen über ein mögliches Ende des Ukraine-Kriegs besprochen worden.\n\nDie Meldung verweist außerdem darauf, dass die US-Gesandten heute in der Ukraine erwartet werden. Russland habe angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen. Damit beschreibt die Quelle eine laufende diplomatische Phase mit offenem Verhandlungsergebnis und noch unklaren Details.",
+      "analysis": {
+        "story_id": "wt-166e870242fc37e6",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Putin hat in Moskau mit den US-Gesandten Witkoff und Kushner gesprochen, die Gespräche sind laut Deutschlandfunk beendet. Parallel steht eine dreitägige Angriffspause auf Kyjiw im Raum.",
+        "detail_summary": "Gesichert ist, dass Putin in Moskau mit den US-Unterhändlern Witkoff und Kushner gesprochen hat und dass diese Runde laut Deutschlandfunk beendet ist. Die Meldung nennt für das Treffen rund drei Stunden und verweist darauf, dass Details der Unterredung noch offen sind. Politisch und strategisch relevant ist das, weil direkte Gespräche zwischen Moskau und Washington einen möglichen Verhandlungspfad im Ukraine-Krieg markieren. Ein möglicher Wirkpfad wäre, dass aus dem Treffen konkrete nächste Schritte, Zeitpläne oder weitere Kontaktkanäle entstehen; ebenso möglich ist aber, dass es bei Sondierungen ohne greifbare Folge bleibt. Als zusätzliche, noch nicht unabhängige Angabe nennt die Quelle eine dreitägige Einstellung der Angriffe auf Kyjiw. Die Evidenzlage reicht für eine vorsichtige Erstmeldung, nicht für eine endgültige Bewertung des Ergebnisses oder der Tragweite.",
+        "why_relevant": "Die Meldung beschreibt direkte Gespräche über den Ukraine-Krieg und eine angekündigte Unterbrechung von Angriffen; beides kann den weiteren Verhandlungspfad und die Sicherheitslage kurzfristig beeinflussen.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind unmittelbar Menschen in der Ukraine; ob daraus Schutz oder nur eine kurze Pause entsteht, bleibt offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein unmittelbarer Umwelt- oder Klimabezug ist in den Quellen belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Gespräche betreffen diplomatische Entscheidungswege zwischen Staaten und damit indirekt kriegsbezogene politische Steuerung."
+        },
+        "importance": "mittel",
+        "impact_potential": "Ein konkreter Folgeschritt könnte Verhandlungen strukturieren und kurzfristig die Angriffe auf Kyjiw begrenzen; die tatsächliche Wirkung ist noch nicht belegt.",
+        "impact_risks": [
+          "Die angekündigte Pause kann nur taktisch sein und ohne belastbare Folge enden.",
+          "Offene Details können Erwartungen erzeugen, die später enttäuscht werden."
+        ],
+        "mechanisms": [
+          "Direkte Verhandlungen können Kommunikationskanäle verdichten.",
+          "Eine Angriffspause kann kurzfristig die Exposition von Zivilpersonen senken."
+        ],
+        "first_order": [
+          "Beendete Gespräche und angekündigte nächste Schritte werden öffentlich sichtbar.",
+          "Eine mögliche dreitägige Pause könnte die unmittelbare Gefährdung in Kyjiw verringern."
+        ],
+        "second_order": [
+          "Folgetreffen oder schriftliche Vorschläge könnten den Verhandlungskorridor verengen.",
+          "Eine begrenzte Pause kann militärisch oder politisch als Signal genutzt werden."
+        ],
+        "third_order": [
+          "Wiederholte Gespräche könnten einen dauerhafteren diplomatischen Prozess stützen.",
+          "Scheitern oder Bruch der Pause könnte Misstrauen und Eskalationsrisiken erhöhen."
+        ],
+        "systemic_relevance": "Der Vorgang ist systemrelevant, weil er den diplomatischen Wirkpfad im Ukraine-Krieg berührt und mögliche Kaskaden für Sicherheit, Verhandlungstempo und zivile Risiken hat.",
+        "transformation_potential": "Niedrig bis mittel: Die Gespräche sind ein möglicher Baustein, aber noch keine nachweisbare Strukturveränderung.",
+        "resilience": "Eine echte Belastbarkeit wäre erst erkennbar, wenn Zusagen überprüfbar eingehalten und Folgekanäle stabilisiert werden.",
+        "side_effects": [
+          "Kurzfristige Beruhigungserwartungen können steigen, ohne dass dies durch belastbare Ergebnisse gedeckt ist.",
+          "Die Ankündigung kann beide Seiten kommunikativ als Erfolgszeichen nutzen."
+        ],
+        "uncertainties": [
+          "Ob die besprochenen nächsten Schritte tatsächlich konkretisiert werden.",
+          "Ob die angekündigte Angriffspause umgesetzt und eingehalten wird.",
+          "Wie belastbar die Angaben zu Inhalt und Folgen des Treffens sind."
+        ],
+        "evidence_level": "medium",
+        "attribution": "Deutschlandfunk berichtet über das Ende der Gespräche und verweist teils auf Angaben des Weißen Hauses sowie auf russische Ankündigungen; die Quelle trennt nicht vollständig zwischen direkter Beobachtung und Überlieferung.",
+        "watch_next": [
+          "Ob die angekündigten nächsten Schritte in den kommenden Wochen benannt werden.",
+          "Ob die dreitägige Einstellung der Angriffe auf Kyjiw tatsächlich eintritt."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_with_caveats",
+          "duplicate_status": "material_update",
+          "rationale": "Gegenüber der Vorgeschichte liegt eine neue, materielle Aktualisierung vor: Die Gespräche sind beendet und es gibt neue Angaben zu nächsten Schritten sowie zur Angriffspause."
+        },
+        "visuals": {
+          "affected_groups": [
+            "aeltere",
+            "kinder_jugend",
+            "staat"
+          ],
+          "tendency": {
+            "human": "gemischt",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true,
+        "media_impact": null,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-06T05:34:08.658Z",
+        "media_trigger_fingerprint": "e3cd6b0c5296e0fdbaf1ac9561fd569e4657f8e56ac8e76fbda45a8a735beed9",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 4,
+          "comparable_source_count": 3,
+          "fingerprint": "e3cd6b0c5296e0fdbaf1ac9561fd569e4657f8e56ac8e76fbda45a8a735beed9",
+          "content_fingerprint": "4425d124b8164c90260191b018f569c0a9c445ff4448709456875b60492cebe7",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T05:34:25.362Z",
+          "content_hash": "136542df2271394d165df493436d0ac2e1dc301582134daa2de96c6d83e1cfd7",
+          "source_summary": "In Moskau sind die Gespräche zwischen dem russischen Präsidenten Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Deutschlandfunk nennt eine Dauer von rund drei Stunden und schreibt, Einzelheiten der Unterredung seien bisher nicht bekannt. Zugleich heißt es, nach Angaben des Weißen Hauses seien konkrete Pläne für die nächsten Schritte in den Gesprächen über ein mögliches Ende des Ukraine-Kriegs besprochen worden.\n\nDie Meldung verweist außerdem darauf, dass die US-Gesandten heute in der Ukraine erwartet werden. Russland habe angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen. Damit beschreibt die Quelle eine laufende diplomatische Phase mit offenem Verhandlungsergebnis und noch unklaren Details.",
+          "analysis": {
+            "story_id": "wt-166e870242fc37e6",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Putin hat in Moskau mit den US-Gesandten Witkoff und Kushner gesprochen, die Gespräche sind laut Deutschlandfunk beendet. Parallel steht eine dreitägige Angriffspause auf Kyjiw im Raum.",
+            "detail_summary": "Gesichert ist, dass Putin in Moskau mit den US-Unterhändlern Witkoff und Kushner gesprochen hat und dass diese Runde laut Deutschlandfunk beendet ist. Die Meldung nennt für das Treffen rund drei Stunden und verweist darauf, dass Details der Unterredung noch offen sind. Politisch und strategisch relevant ist das, weil direkte Gespräche zwischen Moskau und Washington einen möglichen Verhandlungspfad im Ukraine-Krieg markieren. Ein möglicher Wirkpfad wäre, dass aus dem Treffen konkrete nächste Schritte, Zeitpläne oder weitere Kontaktkanäle entstehen; ebenso möglich ist aber, dass es bei Sondierungen ohne greifbare Folge bleibt. Als zusätzliche, noch nicht unabhängige Angabe nennt die Quelle eine dreitägige Einstellung der Angriffe auf Kyjiw. Die Evidenzlage reicht für eine vorsichtige Erstmeldung, nicht für eine endgültige Bewertung des Ergebnisses oder der Tragweite.",
+            "why_relevant": "Die Meldung beschreibt direkte Gespräche über den Ukraine-Krieg und eine angekündigte Unterbrechung von Angriffen; beides kann den weiteren Verhandlungspfad und die Sicherheitslage kurzfristig beeinflussen.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind unmittelbar Menschen in der Ukraine; ob daraus Schutz oder nur eine kurze Pause entsteht, bleibt offen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Kein unmittelbarer Umwelt- oder Klimabezug ist in den Quellen belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Gespräche betreffen diplomatische Entscheidungswege zwischen Staaten und damit indirekt kriegsbezogene politische Steuerung."
+            },
+            "importance": "mittel",
+            "impact_potential": "Ein konkreter Folgeschritt könnte Verhandlungen strukturieren und kurzfristig die Angriffe auf Kyjiw begrenzen; die tatsächliche Wirkung ist noch nicht belegt.",
+            "impact_risks": [
+              "Die angekündigte Pause kann nur taktisch sein und ohne belastbare Folge enden.",
+              "Offene Details können Erwartungen erzeugen, die später enttäuscht werden."
+            ],
+            "mechanisms": [
+              "Direkte Verhandlungen können Kommunikationskanäle verdichten.",
+              "Eine Angriffspause kann kurzfristig die Exposition von Zivilpersonen senken."
+            ],
+            "first_order": [
+              "Beendete Gespräche und angekündigte nächste Schritte werden öffentlich sichtbar.",
+              "Eine mögliche dreitägige Pause könnte die unmittelbare Gefährdung in Kyjiw verringern."
+            ],
+            "second_order": [
+              "Folgetreffen oder schriftliche Vorschläge könnten den Verhandlungskorridor verengen.",
+              "Eine begrenzte Pause kann militärisch oder politisch als Signal genutzt werden."
+            ],
+            "third_order": [
+              "Wiederholte Gespräche könnten einen dauerhafteren diplomatischen Prozess stützen.",
+              "Scheitern oder Bruch der Pause könnte Misstrauen und Eskalationsrisiken erhöhen."
+            ],
+            "systemic_relevance": "Der Vorgang ist systemrelevant, weil er den diplomatischen Wirkpfad im Ukraine-Krieg berührt und mögliche Kaskaden für Sicherheit, Verhandlungstempo und zivile Risiken hat.",
+            "transformation_potential": "Niedrig bis mittel: Die Gespräche sind ein möglicher Baustein, aber noch keine nachweisbare Strukturveränderung.",
+            "resilience": "Eine echte Belastbarkeit wäre erst erkennbar, wenn Zusagen überprüfbar eingehalten und Folgekanäle stabilisiert werden.",
+            "side_effects": [
+              "Kurzfristige Beruhigungserwartungen können steigen, ohne dass dies durch belastbare Ergebnisse gedeckt ist.",
+              "Die Ankündigung kann beide Seiten kommunikativ als Erfolgszeichen nutzen."
+            ],
+            "uncertainties": [
+              "Ob die besprochenen nächsten Schritte tatsächlich konkretisiert werden.",
+              "Ob die angekündigte Angriffspause umgesetzt und eingehalten wird.",
+              "Wie belastbar die Angaben zu Inhalt und Folgen des Treffens sind."
+            ],
+            "evidence_level": "medium",
+            "attribution": "Deutschlandfunk berichtet über das Ende der Gespräche und verweist teils auf Angaben des Weißen Hauses sowie auf russische Ankündigungen; die Quelle trennt nicht vollständig zwischen direkter Beobachtung und Überlieferung.",
+            "watch_next": [
+              "Ob die angekündigten nächsten Schritte in den kommenden Wochen benannt werden.",
+              "Ob die dreitägige Einstellung der Angriffe auf Kyjiw tatsächlich eintritt."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_with_caveats",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber der Vorgeschichte liegt eine neue, materielle Aktualisierung vor: Die Gespräche sind beendet und es gibt neue Angaben zu nächsten Schritten sowie zur Angriffspause."
+            },
+            "visuals": {
+              "affected_groups": [
+                "aeltere",
+                "kinder_jugend",
+                "staat"
+              ],
+              "tendency": {
+                "human": "gemischt",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true,
+            "media_impact": null,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-06T05:34:08.658Z",
+            "media_trigger_fingerprint": "e3cd6b0c5296e0fdbaf1ac9561fd569e4657f8e56ac8e76fbda45a8a735beed9",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 4,
+              "comparable_source_count": 3,
+              "fingerprint": "e3cd6b0c5296e0fdbaf1ac9561fd569e4657f8e56ac8e76fbda45a8a735beed9",
+              "content_fingerprint": "4425d124b8164c90260191b018f569c0a9c445ff4448709456875b60492cebe7",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-166e870242fc37e6-v1-claim-1",
+              "story_id": "wt-166e870242fc37e6",
+              "claim": "In Moskau sind die Gespräche zwischen Putin und den US-Unterhändlern Witkoff und Kushner beendet worden.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+                  "excerpt_hash": "f993421bf1f3e1928e3d",
+                  "checked_at": "2026-09-06T05:34:25.362Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+                  "excerpt_hash": "7aaa5495a0714bd68f30",
+                  "checked_at": "2026-09-06T05:34:25.362Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T05:34:25.362Z"
+            },
+            {
+              "claim_id": "wt-166e870242fc37e6-v1-claim-2",
+              "story_id": "wt-166e870242fc37e6",
+              "claim": "Laut dem Weißen Haus wurden in den Gesprächen konkrete Pläne für die nächsten Schritte besprochen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+                  "excerpt_hash": "c0353a6852792aca74d7",
+                  "checked_at": "2026-09-06T05:34:25.362Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+                  "excerpt_hash": "f993421bf1f3e1928e3d",
+                  "checked_at": "2026-09-06T05:34:25.362Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T05:34:25.362Z"
+            },
+            {
+              "claim_id": "wt-166e870242fc37e6-v1-claim-3",
+              "story_id": "wt-166e870242fc37e6",
+              "claim": "Russland kündigte an, die Luftangriffe auf Kyjiw für drei Tage einzustellen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+                  "excerpt_hash": "0cb73e70d4169ca9ae31",
+                  "checked_at": "2026-09-06T05:34:25.362Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T05:34:25.362Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--putin-beginnt-gespraeche-mit-us-unterhaendlern-38211192.html",
+              "content_hash": "d7e7db6b0e4741b35f75d0f6546135afa8de2d7da7c0a187961b74c464406a54"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
+              "content_hash": "aa8002fb305244364b5dc556e7ac4c2b7ec7cccda58eecf09e84b72da02ab154"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--gespraeche-von-putin-und-us-gesandten-beendet-38211192.html",
+              "content_hash": "a0d78e44c3d496a0410e313a26cfb123e534b6bb6b4559b88117b8626514fb69"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
+              "content_hash": "3e4c8cab46d3a4e09d1b8fce22248040098b1a94cde7844832a47ae7efe4b98a"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T05:34:25.362Z",
+          "source_count": 4
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-166e870242fc37e6-303202d56aa3ee5d-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "303202d56aa3ee5dfc1268fb0944c9e2dfea3a5599ea4bf30e9aa2bceb21a035"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-166e870242fc37e6-9a82d99641370054-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "9a82d996413700540583d3b5fcf462f15afe65824d6557cc513ea0c21e1eecbd"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-166e870242fc37e6-67fc2ff248018abb-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "67fc2ff248018abbf00aa752e73c8103fc86ee8b7a779b1a57617469d16b5030"
+        },
+        "source_visual": null,
+        "fingerprint": "9be33e8ae1976b5bfa299649ad4978b7da82fd948d7409e0b28fadf4825893db",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T05:35:52.364Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-5856c52b53dce2d2",
       "slug": "nachrichten-fur-nrw-landtagswahl-in-sachsen-anhalt-dce2d2",
@@ -65,20 +1717,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "4adbfcdd80cb4fef0a0a63acc6fcb2b72825c1c310a68bbf04b92078fc342d76",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T05:49:08.658Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-06T05:21:43.058Z",
       "event_detected_at": "2026-09-06T05:21:43.058Z",
       "event_id": "event-373d5fba3b5ca21e429c",
@@ -111,23 +1763,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 36.44336666666667,
+        "source_age_minutes": 40.810966666666666,
         "detection_delay_minutes": 28.3843,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 8.059066666666666,
+        "queue_age_minutes": 12.426666666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 92,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "59b400b799a4f6601404d6228209ba7c726c3cc3b1cdacfc585fa74dcc50cb57",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T05:34:08.658Z",
+      "rejection": {
+        "at": "2026-09-06T05:34:08.658Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -226,7 +1890,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-5d21d1cd957b6139-claim-02",
@@ -246,20 +1910,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "db574d6a305bbc281225c1252a87d2ecb96e10c457d346853c356e5ce33710f6",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T05:49:08.658Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-06T02:06:22.782Z",
       "event_detected_at": "2026-09-06T02:06:22.782Z",
       "event_id": "event-b96df0b05c569027a1d1",
@@ -292,23 +1956,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 44.0767,
+        "source_age_minutes": 48.4443,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 203.397,
+        "queue_age_minutes": 207.7646,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 90,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "6b80510fa204f94c05f2edfe3e2d6dc9d9ffd1979cd07cdf4559740533796df2",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T05:34:08.658Z",
+      "rejection": {
+        "at": "2026-09-06T05:34:08.658Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -718,7 +2394,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "7c12333d8b9dbf86ac02ad49999796af0784a14d0e0667cdf06f664fc6bb5d1b",
@@ -731,7 +2407,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-06T03:36:18.728Z",
       "event_detected_at": "2026-09-06T03:36:18.728Z",
       "event_id": "event-e4a2cdfba2db5d200069",
@@ -764,20 +2440,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 134.71003333333334,
+        "source_age_minutes": 139.07763333333332,
         "detection_delay_minutes": 21.245466666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 113.46456666666667,
+        "queue_age_minutes": 117.83216666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 72,
+        "news_freshness_score": 71,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "74149a77b6220c5224f70a6792024907ff476318ae2cae47bd89b318a9205449",
         "issue_codes": [],
         "warning_codes": []
@@ -879,7 +2555,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-a7abe0cbde1fd5d4-claim-02",
@@ -899,7 +2575,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "e66a443659f17a6020ae943be385ea3cfc01a5a8721774634c6321bcff653802",
@@ -912,7 +2588,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-06T03:06:22.960Z",
       "event_detected_at": "2026-09-06T03:06:22.960Z",
       "event_id": "event-cc3bc8b61f70efcc1a88",
@@ -945,20 +2621,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 146.2267,
+        "source_age_minutes": 150.5943,
         "detection_delay_minutes": 2.832666666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 143.39403333333334,
+        "queue_age_minutes": 147.76163333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 70,
+        "news_freshness_score": 69,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "ccce665ec11bbb399d53116f4f89b20642b1add911223fd2ba4226719c12730b",
         "issue_codes": [],
         "warning_codes": []
@@ -1061,7 +2737,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-f753f67023632451-claim-02",
@@ -1081,7 +2757,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "5e7b181e88116d742080b64c862c4b5d402effcfae194ba6e7aeee804f5fa97a",
@@ -1094,7 +2770,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-06T03:06:22.960Z",
       "event_detected_at": "2026-09-06T03:06:22.960Z",
       "event_id": "event-febfcf00118f47940594",
@@ -1130,542 +2806,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 147.76003333333333,
+        "source_age_minutes": 152.12763333333334,
         "detection_delay_minutes": 4.366,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 143.39403333333334,
+        "queue_age_minutes": 147.76163333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 69,
+        "news_freshness_score": 68,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "bec97247573ddf7ac43246134c2f49a09ee34b788d1baec6223bb3056cdfe398",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-166e870242fc37e6",
-      "slug": "verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6",
-      "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
-      "first_seen": "2026-09-05T17:11:39.000Z",
-      "last_updated": "2026-09-06T02:27:51.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--putin-beginnt-gespraeche-mit-us-unterhaendlern-38211192.html",
-          "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
-          "summary": "Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T17:11:39.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "d7e7db6b0e4741b35f75d0f6546135afa8de2d7da7c0a187961b74c464406a54",
-          "source_item_id": "05fe1f4448cc7b34a37a0108ec8885ac629e512648e2357735d9c024aa0bfe6f",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T17:11:39.000Z",
-          "ingested_at": "2026-09-05T17:51:35.693Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
-          "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
-          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T11:06:25.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "aa8002fb305244364b5dc556e7ac4c2b7ec7cccda58eecf09e84b72da02ab154",
-          "source_item_id": "235b4021196e08f1d60c8a911f608ba014fa851de581b8c9f4817f0dc07b9c51",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T11:06:25.000Z",
-          "ingested_at": "2026-09-06T05:21:43.058Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown"
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--gespraeche-von-putin-und-us-gesandten-beendet-38211192.html",
-          "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
-          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T20:39:53.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "a0d78e44c3d496a0410e313a26cfb123e534b6bb6b4559b88117b8626514fb69",
-          "source_item_id": "66efc58caf10ee5f9e2a1f6eca3d96eb6e6829283a0016280a55ced43fc22d27",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T20:39:53.000Z",
-          "ingested_at": "2026-09-06T02:36:16.895Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown"
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
-          "title": "Ukraine-Krieg - Gespräche im Kreml von Putin und US-Gesandten beendet",
-          "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Einzelheiten der rund dreistündigen Unterredung im Kreml sind bisher nicht bekannt. Nach Angaben des ​Weißen Hauses wurden konkrete Pläne für die nächsten Schritte in den Gesprächen über ein mögliches Ende des ‌Ukraine-Kriegs besprochen. ‌",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T05:18:36.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "3e4c8cab46d3a4e09d1b8fce22248040098b1a94cde7844832a47ae7efe4b98a",
-          "source_item_id": "7ccb92fbbdfa2b1a3a67b612b2925c9f09bf624c9bd11afea85d8fe535b753a9",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T05:18:36.000Z",
-          "ingested_at": "2026-09-06T05:21:43.058Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-166e870242fc37e6-claim-01",
-          "story_id": "wt-166e870242fc37e6",
-          "claim": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern: Kremlchef Putin lässt die US-Gesandten Witkoff und Kushner fast den ganzen Tag warten in Moskau. Nun gibt es neue Gespräche, die zuerst der ukrainische Präsident Selenskyj angekündigt hat.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
-        },
-        {
-          "claim_id": "wt-166e870242fc37e6-claim-02",
-          "story_id": "wt-166e870242fc37e6",
-          "claim": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet: Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
-        },
-        {
-          "claim_id": "wt-166e870242fc37e6-claim-03",
-          "story_id": "wt-166e870242fc37e6",
-          "claim": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet: Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
-        },
-        {
-          "claim_id": "wt-166e870242fc37e6-claim-04",
-          "story_id": "wt-166e870242fc37e6",
-          "claim": "Ukraine-Krieg - Gespräche im Kreml von Putin und US-Gesandten beendet: In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Einzelheiten der rund dreistündigen Unterredung im Kreml sind bisher nicht bekannt. Nach Angaben des ​Weißen Hauses wurden konkrete Pläne für die nächsten Schritte in den Gesprächen über ein mögliches Ende des ‌Ukraine-Kriegs besprochen. ‌",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
-        }
-      ],
-      "content_hash": "136542df2271394d165df493436d0ac2e1dc301582134daa2de96c6d83e1cfd7",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
-      "event_first_seen_at": "2026-09-05T17:36:24.715Z",
-      "event_detected_at": "2026-09-05T17:36:24.715Z",
-      "event_id": "event-165020cd14b0b8c7db2e",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 11.1767,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 713.3647833333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
-        "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-3d9354235ee08f8f",
-      "slug": "iran-krieg-us-militar-angegriffener-iranischer-oltanker-versenkt-e08f8f",
-      "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
-      "first_seen": "2026-09-06T02:15:41.000Z",
-      "last_updated": "2026-09-06T02:15:41.000Z",
-      "topic": [
-        "Geopolitik",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16021839.html",
-          "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
-          "summary": "Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Eines der Schiffe liegt laut US-Militär nun am Meeresgrund.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T02:15:41.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "4022f4b5104538b3b63c71e37f84b40dc490555943f2f112dfcae6603cee9fca",
-          "source_item_id": "aa5780b0091a0763bd208685cf7993b4304ed2a7ac3620b0e5eb087bca30b21d",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T02:15:41.000Z",
-          "ingested_at": "2026-09-06T05:21:43.058Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/iran-krieg--us-militaer--angegriffener-iranischer-oeltanker-versenkt-38212054.html",
-          "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
-          "summary": "Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Eines der Schiffe liegt laut US-Militär nun am Meeresgrund.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T02:14:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "38c242edd9850880679d3cb8d500e2a1b2d7b98da2206460daabe9190fb27222",
-          "source_item_id": "b4d04a17938030f20b32d5275d89f6c2c708eed1025d008026d54aeb473539a4",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T02:14:28.000Z",
-          "ingested_at": "2026-09-06T03:06:22.960Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-          "title": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt",
-          "summary": "Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T05:18:36.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "d26727e526551155230658acd1ce4e459ba4dc8cfdec6606a86a9a5fff1ef8a5",
-          "source_item_id": "f19b81892466964d367fd54c83b09b5d653ff4644a3889ab4ae56e74bd623ca1",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T05:18:36.000Z",
-          "ingested_at": "2026-09-06T05:21:43.058Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-3d9354235ee08f8f-claim-01",
-          "story_id": "wt-3d9354235ee08f8f",
-          "claim": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt: Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Eines der Schiffe liegt laut US-Militär nun am Meeresgrund.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
-        },
-        {
-          "claim_id": "wt-3d9354235ee08f8f-claim-02",
-          "story_id": "wt-3d9354235ee08f8f",
-          "claim": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt: Die USA wehren Angriffe auf ihre Kriegsschiffe ab. Im Gegenzug schalten sie bei Attacken drei Tanker aus. Eines der Schiffe liegt laut US-Militär nun am Meeresgrund.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
-        },
-        {
-          "claim_id": "wt-3d9354235ee08f8f-claim-03",
-          "story_id": "wt-3d9354235ee08f8f",
-          "claim": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt: Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
-        }
-      ],
-      "content_hash": "4199140a84fab7a045994245c09e8690da69589d4d9b8086798f3fcce2bd4fcd",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
-      "event_first_seen_at": "2026-09-06T02:36:16.895Z",
-      "event_detected_at": "2026-09-06T02:36:16.895Z",
-      "event_id": "event-1b58b224158d7561b786",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik",
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 11.1767,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 173.49511666666666,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
-        "fingerprint": "b2825facb99f37da3a612cad7477a4a9996e765d5c693defa699d312ab754322",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -1814,134 +2969,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_MATERIALITY_TOO_LOW"
         ]
-      }
-    },
-    {
-      "story_id": "wt-86ea1ddfd89beabf",
-      "slug": "sabotage-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-fahndung-mit-foto-n-9beabf",
-      "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
-      "first_seen": "2026-09-06T01:34:27.000Z",
-      "last_updated": "2026-09-06T01:34:27.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
-          "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
-          "summary": "Im Zusammenhang mit der Sabotage an Umspannwerken in Brandenburg, Nordrhein-Westfalen und Sachsen sucht die Polizei jetzt per Foto nach einem Tatverdächtigen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T05:18:36.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "40f2801787ac23e93e4c5c1ca8948c061fdba6ea06b581a49d1964de0e5cbc3c",
-          "source_item_id": "c0e45982664063a0ef87ad4f64c49db32a28f2f2dece681deea54c80331369b7",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T05:18:36.000Z",
-          "ingested_at": "2026-09-06T05:21:43.058Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-86ea1ddfd89beabf-claim-01",
-          "story_id": "wt-86ea1ddfd89beabf",
-          "claim": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW: Im Zusammenhang mit der Sabotage an Umspannwerken in Brandenburg, Nordrhein-Westfalen und Sachsen sucht die Polizei jetzt per Foto nach einem Tatverdächtigen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
-        }
-      ],
-      "content_hash": "3e51fcb126f1d83e96da4160567679f6ec66ff39a27961077e9afa224f5c9e2e",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
-      "event_first_seen_at": "2026-09-06T01:36:55.721Z",
-      "event_detected_at": "2026-09-06T01:36:55.721Z",
-      "event_id": "event-ae3d4b273922de048bb3",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 11.1767,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 232.84801666666667,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
-        "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -2272,7 +3299,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-02",
@@ -2292,7 +3319,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-03",
@@ -2313,7 +3340,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-04",
@@ -2333,7 +3360,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-05",
@@ -2353,7 +3380,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-06",
@@ -2373,7 +3400,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-07",
@@ -2393,7 +3420,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-08",
@@ -2413,7 +3440,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-09",
@@ -2433,20 +3460,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "2e64a906205a79b782ff029f6fce8bfe1ffcaf2ff9e7c92d56787ca98fd7d442",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_SOURCE_SUMMARY_PARAGRAPHS"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-06T05:49:08.658Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-05T18:21:18.289Z",
       "event_detected_at": "2026-09-05T18:21:18.289Z",
       "event_id": "event-33c99d9ec5432a4822d9",
@@ -2481,20 +3510,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 29.943366666666666,
+        "source_age_minutes": 34.310966666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 668.4718833333334,
+        "queue_age_minutes": 672.8394833333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 93,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "bd605fb94dcf5a6bec790ea76451cdbf342a2d3e0aceb53a1a6995c416f07e60",
         "issue_codes": [],
         "warning_codes": []
@@ -4733,7 +5762,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         },
         {
           "claim_id": "wt-58cac49b38f415db-claim-02",
@@ -4753,7 +5782,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "3f0ed37b30304fe29dcca7b6cd4ac8076e37777deb0667a015026c76c5aeb95a",
@@ -4766,7 +5795,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-05T16:36:34.186Z",
       "event_detected_at": "2026-09-05T16:36:34.186Z",
       "event_id": "event-201da883bf8004ddde01",
@@ -4800,20 +5829,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 438.54336666666666,
+        "source_age_minutes": 442.91096666666664,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 773.2069333333334,
+        "queue_age_minutes": 777.5745333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 9,
+        "news_freshness_score": 8,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "27778afca13942aaba1af50846dc46589c13bc35657b8d285e46536282fbf33f",
         "issue_codes": [],
         "warning_codes": []
@@ -6584,7 +7613,7 @@
       "verification_started_at": "2026-09-05T18:37:42.731Z",
       "publish_ready_at": "2026-09-05T18:38:03.533Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -7233,9 +8262,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "0570d96ba98468ebd8c1cda0293043a8fc73f1f04a96d6df5c7909aa823767a8",
+      "review_checkpoint": {
+        "version": "evidence-packet-2",
+        "fingerprint": "2303cc911f453e8b3409ec51a684957d30552f41dac95ff1434b2ff165d6aa7a",
+        "checked_at": "2026-09-06T05:34:08.658Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T11:34:08.658Z",
         "sources": [
           {
             "source_id": "dw-news",
@@ -7298,24 +8330,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
-          "fingerprint": "df5c463bf4ba3206744a71b032e64d92bd8f5b41f57854c37906335d6447629d",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-5f843f61cc5736d4",
@@ -8226,7 +9243,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
+          "checked_at": "2026-09-06T05:34:08.658Z",
           "fingerprint": "a983d6c3fbf2106a3a1d9f5de0dd20addd25782e704d208025279b7f0345a453",
           "issue_codes": [],
           "warning_codes": []
@@ -10180,7 +11197,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
+          "checked_at": "2026-09-06T05:34:08.658Z",
           "fingerprint": "48283262f5d1a537152d48a72d316403c329a5e38c93e715b11044341ba0e9c6",
           "issue_codes": [],
           "warning_codes": []
@@ -11955,7 +12972,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "5077504fba761724756585440bff06fc3606bde296cdd7d92e1ab67b5eeafabd",
@@ -11968,7 +12985,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-05T11:31:43.777Z",
       "event_detected_at": "2026-09-05T11:31:43.777Z",
       "event_id": "event-454194767a4d7ef00523",
@@ -12001,11 +13018,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 892.7767,
+        "source_age_minutes": 897.1443,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1078.0470833333334,
+        "queue_age_minutes": 1082.4146833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -12014,7 +13031,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "1c4421f45303671688dac2f2d2e352c04a184c96a7ca440b37089a865ea2a7ec",
         "issue_codes": [],
         "warning_codes": []
@@ -13719,7 +14736,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
+          "checked_at": "2026-09-06T05:34:08.658Z",
           "fingerprint": "149b7fa7ca0dcfd76e7a397555d5805e931a1468e471daf2147c018703d2105e",
           "issue_codes": [],
           "warning_codes": []
@@ -28452,7 +29469,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
+          "checked_at": "2026-09-06T05:34:08.658Z",
           "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
           "issue_codes": [],
           "warning_codes": []
@@ -28960,7 +29977,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
+          "checked_at": "2026-09-06T05:34:08.658Z",
           "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
           "issue_codes": [],
           "warning_codes": []
@@ -30804,7 +31821,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
+          "checked_at": "2026-09-06T05:34:08.658Z",
           "fingerprint": "a94e42a10fee0ca4358313d0c1433a5e135b9eccdc47643442950d15c3b0784b",
           "issue_codes": [],
           "warning_codes": []
@@ -31626,7 +32643,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
+          "checked_at": "2026-09-06T05:34:08.658Z",
           "fingerprint": "7c93a7fb70b8f858cc83068389dc335d183b2ab7b0a285a18ff480e612f083e5",
           "issue_codes": [],
           "warning_codes": []
@@ -31923,7 +32940,7 @@
       "verification_started_at": "2026-09-05T10:59:24.907Z",
       "publish_ready_at": "2026-09-05T10:59:56.119Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -33236,9 +34253,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-2",
         "fingerprint": "84223798a3609746bf70b953e2e58d9be3555d7a1063f46c91927f0f804b41b4",
-        "checked_at": "2026-09-05T18:06:31.189Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T00:06:31.189Z",
+        "expires_at": "2026-09-06T11:34:08.658Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -33304,91 +34321,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "b3f734b08717690c3f2c914414bb236f9e337139f7eaa449d918378a126332e3",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-100.html",
-            "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
-            "summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft. Am Hambacher Forst kam es zu einem SEK-Einsatz.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:11:33.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "00de990f20bf22872d2ddba6fd7aaecee003d9fa046d3262e7e94147d99b430f",
-            "source_item_id": "603b3a314a06b872ded379d4bff2af2156df9995f2d16048da924eb6c7544d5a",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:11:33.000Z",
-            "ingested_at": "2026-09-04T17:21:09.783Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverdaechtigem-laeuft-102.html",
-            "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
-            "summary": "Bundesinnenminister Dobrindt hat die Sabotageversuche an deutschen Umspannwerken als \"Klimaextremismus\" bezeichnet. Der CSU-Politiker sagte, man gehe derzeit von einem Einzeltäter aus. Die Fahndung nach dem Verdächtigen läuft.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T06:25:17.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "151e54943f2f40e4411b21eafe8ca35dd989429c9930f29c1b06dba72cd27220",
-            "source_item_id": "26e81c07cc436169edeac35ec7b110399a8e58184bf4a6fc604c4beeb00ca4ce",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T06:25:17.000Z",
-            "ingested_at": "2026-09-05T06:36:46.215Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
-          "fingerprint": "c247733d9976b5b0c1d4fe80fbb8dd21e1deedcf6f0f639185da50dd68f182d8",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-4d45c64b930426e2",
@@ -47922,7 +48855,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
+          "checked_at": "2026-09-06T05:34:08.658Z",
           "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
           "issue_codes": [],
           "warning_codes": []
@@ -64496,7 +65429,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:29:46.602Z",
+          "checked_at": "2026-09-06T05:34:08.658Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -129750,7 +130683,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -129763,7 +130696,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -129797,11 +130730,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7169.7767,
+        "source_age_minutes": 7174.1443,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3308.4932,
+        "queue_age_minutes": 3312.8608,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -129810,7 +130743,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
         "issue_codes": [],
         "warning_codes": []
@@ -130279,7 +131212,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:29:46.602Z"
+          "checked_at": "2026-09-06T05:34:08.658Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -130292,7 +131225,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:29:46.602Z",
+      "updated_at": "2026-09-06T05:34:08.658Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -130329,11 +131262,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8249.7767,
+        "source_age_minutes": 8254.1443,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3308.4932,
+        "queue_age_minutes": 3312.8608,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -130342,7 +131275,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:29:46.602Z",
+        "checked_at": "2026-09-06T05:34:08.658Z",
         "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
         "issue_codes": [],
         "warning_codes": []
@@ -131200,5 +132133,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-05T21:51:30.215Z"
+  "public_updated_at": "2026-09-06T05:34:08.658Z"
 }
