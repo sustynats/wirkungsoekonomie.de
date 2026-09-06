@@ -3,6 +3,247 @@
   "updated_at": "2026-09-06T11:21:29.682Z",
   "stories": [
     {
+      "story_id": "wt-7bd1d7f242af3f7b",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-eabd7afdad730244-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-57349140780a769d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-1929e578d1c32da2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "seelze-elektro-rollstuhl-lost-grossbrand-in-sonderpostenmarkt-aus-af3f7b",
+      "title": "Großbrand zerstört Sonderpostenmarkt in Seelze",
+      "source_summary": "In Seelze (Region Hannover) ist am Samstag ein Sonderpostenmarkt in Brand geraten. Nach dem Bericht brannte der Laden laut Feuerwehrsprecher teilweise ein und wurde vollständig zerstört; die Löscharbeiten dauerten am Sonntagmorgen noch an. Eine schwarze Rauchwolke war kilometerweit zu sehen.\n\nDie Polizei geht nach dem Bericht davon aus, dass die Batterie eines elektrischen Rollstuhls eines Kunden Funken schlug und das Feuer in der Abteilung für Malbedarf auslöste. Der Schaden wird ersten Schätzungen zufolge auf etwa drei Millionen Euro beziffert. Der Rollstuhlfahrer wurde leicht verletzt, alle Kunden und Beschäftigten konnten rechtzeitig in Sicherheit gebracht werden.",
+      "summary": "In Seelze ist ein Sonderpostenmarkt bei einem Großbrand vollständig zerstört worden. Nach dem Bericht steht als Ursache eine funken schlagende Rollstuhl-Batterie im Raum.",
+      "detail_summary": "Gesichert ist nach dem vorliegenden Bericht ein Großbrand in einem Sonderpostenmarkt in Seelze, bei dem der Markt vollständig zerstört wurde und die Löscharbeiten bis Sonntagmorgen andauerten. Als mögliche Ursache nennt die Polizei die Batterie eines elektrischen Rollstuhls; sie soll Funken geschlagen und das Feuer in der Abteilung für Malbedarf ausgelöst haben. Der Schaden wird auf etwa drei Millionen Euro geschätzt, der Rollstuhlfahrer wurde leicht verletzt. Für die Einordnung ist vor allem relevant, dass hier ein einzelnes technisches Ereignis einen kompletten Betriebsverlust und damit einen klaren Sachschaden ausgelöst haben soll. Mögliche Folgen sind Betriebsunterbrechung, Versicherungs- und Wiederaufbaukosten sowie vorübergehende lokale Versorgungs- und Beschäftigungseffekte. Die Evidenz bleibt vorläufig, weil die Quelle ein journalistischer Bericht ist und die Ursache laut Formulierung noch auf Angaben der Polizei beruht.",
+      "why_relevant": "Der Brand zerstört einen Betrieb vollständig und verursacht laut Bericht einen Schaden in Millionenhöhe; das ist für lokale Versorgung, Beschäftigung und Versicherung relevant.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Ein Ladenbrand mit Vollzerstörung und Verletzung kann Beschäftigte, Kunden und lokale Versorgung kurzfristig beeinträchtigen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Es liegen nur Hinweise auf einen Brand vor; belastbare Umweltfolgen oder Folgeschäden sind in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Kein direkter demokratischer Wirkpfad ist aus der Quelle ersichtlich."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Originalüberschrift rückt eine technische Eigenschaft vor den konkreten Brandschaden. Zu prüfen sind kausale Zuschreibung und eine mögliche Verallgemeinerung über den Einzelfall hinaus.",
+        "factual_core": "Ein Sonderpostenmarkt in Seelze wurde laut NDR bei einem Brand zerstört. Der Bericht führt den Auslöser nach Polizeiangaben auf die Batterie eines Rollstuhls zurück.",
+        "epistemic_status": {
+          "confirmed": [
+            "Der NDR berichtet über einen zerstörten Sonderpostenmarkt in Seelze."
+          ],
+          "actor_claims": [
+            "Die Ursachenangabe wird in der bisherigen Quellenprüfung der Polizei zugeschrieben."
+          ],
+          "open": [
+            "Eine eigenständig geprüfte technische Untersuchung und Daten zur Reaktion des Publikums liegen für diesen Check nicht vor."
+          ]
+        },
+        "attribution": {
+          "frame_source": "die NDR-Überschrift; die Ursachenangabe wird im Bericht der Polizei zugeschrieben",
+          "speaker": "Polizei, vermittelt durch NDR",
+          "original_term": "Elektro-Rollstuhl",
+          "usage_type": "editorial",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "late"
+        },
+        "speaker_statement": {
+          "present": true,
+          "speaker": "Polizei, nach dem NDR-Bericht",
+          "statement": "Die Batterie eines Rollstuhls soll Funken geschlagen und das Feuer ausgelöst haben.",
+          "status": "claim"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Elektro-Rollstuhl",
+          "origin_in_story": "NDR-Überschrift",
+          "media_usage": "headline",
+          "attribution_quality": "Attribution erst später sichtbar",
+          "factual_status": "Aussage eines Akteurs",
+          "frame_type": [
+            "technischer Frame"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Elektro-Rollstuhl",
+          "frame_type": [
+            "technischer Frame"
+          ],
+          "problem_definition": "Der technische Gegenstand steht sprachlich als Auslöser im Vordergrund. Der betroffene Markt und der konkrete Schaden folgen danach.",
+          "implied_cause": "Die Überschrift formuliert den Auslöser bestimmt; die Quellenakte ordnet diese Angabe der Polizei zu.",
+          "implied_responsibility": "Aus der technischen Ursachenangabe folgt keine persönliche Schuldzuweisung.",
+          "implied_threat": "Eine Übertragung auf eine ganze Technologie wäre eine zusätzliche Deutung, nicht Bestandteil des belegten Ereignisses.",
+          "implied_solution_space": "Welche Schutzmaßnahmen angemessen wären, hängt vom konkreten technischen Befund ab.",
+          "material_omissions": [
+            "Die Zuordnung der Ursachenangabe zur Polizei ist in der Originalüberschrift nicht sichtbar."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Eine politische Verwendungsgeschichte oder ein verbreitetes Narrativ ist mit dieser Einzelquelle nicht belegt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "Wiederholte Aussagen können unter bestimmten Bedingungen vertrauter und dadurch glaubwürdiger erscheinen. Eine solche Wiederholung und ein Illusory-Truth-Effekt sind für diesen Fall nicht nachgewiesen.",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Bei Menschen mit bestehenden Technikbefürchtungen kann die hervorgehobene Eigenschaft an diese Vorstellungen anschließen. Ob das hier geschieht, ist offen.",
+          "normalization_potential": "open",
+          "repetition_risk": "open",
+          "polarization_potential": "Eine gesellschaftliche Polarisierung ist aus dieser Einzelmeldung nicht ableitbar.",
+          "trust_effect_potential": "Eine sichtbare Quellenzuordnung kann helfen, Bericht und eigenständigen technischen Nachweis auseinanderzuhalten.",
+          "discourse_effect_potential": "Falls ein einzelner Defekt als allgemeines Technikrisiko verstanden wird, könnte die Diskussion um konkrete Schutzmaßnahmen in den Hintergrund geraten. Dies ist eine bedingte Analysehypothese."
+        },
+        "impact_path": {
+          "first_order": "Die Überschrift verbindet die technische Eigenschaft mit dem konkreten Schadensereignis. Ob Lesende daraus mehr ableiten, bleibt offen.",
+          "second_order": "Bei passenden Vorerfahrungen und wiederholter ähnlicher Vermittlung könnte ein Einzelfall zur Schablone für weitere Fälle werden. Eine solche Serie ist hier nicht belegt.",
+          "third_order": "Erst bei anhaltender breiter Verallgemeinerung wären veränderte Erwartungen an Technik und Schutzregeln ein möglicher weiterer Pfad. Dafür liegen hier keine Wirkungsdaten vor."
+        },
+        "evidence": {
+          "status": "open",
+          "level": "open",
+          "what_is_known": "Der vorliegende NDR-Bericht behandelt einen konkreten Brand in Seelze; die Ursachenangabe wird der Polizei zugeschrieben.",
+          "what_is_inferred": "Die prominente Eigenschaft könnte bei entsprechendem Vorwissen an weitergehende Technikbefürchtungen anschließen. Das ist eine Hypothese über mögliche Rezeption.",
+          "what_is_open": "Ein Rollstuhl ist kein Elektroauto. Der Einzelfall belegt weder deren allgemeines Brandrisiko noch eine vergleichende Brandhäufigkeit. Eine wiederkehrende Berichtsserie, Publikumsreaktionen und ein Illusory-Truth-Effekt sind hier nicht nachgewiesen. Die sachlich relevante Antriebsart darf weiterhin benannt werden.",
+          "facts": [
+            "Der vorliegende NDR-Bericht behandelt einen konkreten Brand in Seelze; die Ursachenangabe wird der Polizei zugeschrieben."
+          ],
+          "observations": [
+            "Die Originalüberschrift beginnt mit Ort und technischem Gegenstand und formuliert den Auslöser ohne sichtbare Quellenzuordnung."
+          ],
+          "inferences": [
+            "Die prominente Eigenschaft könnte bei entsprechendem Vorwissen an weitergehende Technikbefürchtungen anschließen. Das ist eine Hypothese über mögliche Rezeption."
+          ],
+          "impact_potentials": [
+            "Eine Verallgemeinerung könnte die Aufmerksamkeit vom konkreten Defekt auf eine ganze Technologie verschieben."
+          ],
+          "impact_risks": [
+            "Ein spezifischer Vorfall könnte fälschlich als Beleg für das Risiko anderer Geräte verstanden werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Ein Rollstuhl ist kein Elektroauto. Der Einzelfall belegt weder deren allgemeines Brandrisiko noch eine vergleichende Brandhäufigkeit.",
+            "Eine wiederkehrende Berichtsserie, Publikumsreaktionen und ein Illusory-Truth-Effekt sind hier nicht nachgewiesen. Die sachlich relevante Antriebsart darf weiterhin benannt werden."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Ein Sonderpostenmarkt in Seelze wurde laut NDR bei einem Brand zerstört. Die Originalüberschrift nennt die elektrische Antriebsart des Rollstuhls prominent als Teil der Ursachenbeschreibung. Das kann sachlich relevant sein: Der Bericht führt den Auslöser nach Polizeiangaben auf dessen Batterie zurück. Allein diese technische Angabe ist weder falsch noch ein Beleg für Manipulation.\n\nBei Menschen mit entsprechenden Vorerfahrungen könnte die Hervorhebung jedoch weitergehende Vorstellungen über Technikrisiken aufrufen. Eine Übertragung auf andere Geräte oder Fahrzeuge wäre durch diesen Einzelfall nicht gedeckt. Ob Lesende diese Verbindung tatsächlich herstellen, wissen wir nicht. Auch eine wiederkehrende Berichtsserie oder eine durch Wiederholung gestiegene Glaubwürdigkeit solcher Verallgemeinerungen ist hier nicht nachgewiesen. Der Ticker stellt deshalb den konkreten Schaden zuerst dar und hält die Ursachenangabe an die berichtete Quelle gebunden.",
+        "editorial_assessment": "Die technische Angabe kann informativ sein. Prüfbedürftig sind ihre Hervorhebung und mögliche Verallgemeinerungen, nicht das Medium oder die Antriebsart als solche.",
+        "fact_first_alternative": "Großbrand zerstört Sonderpostenmarkt in Seelze. Nach dem NDR-Bericht nennt die Polizei eine funken schlagende Rollstuhlbatterie als Auslöser.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Der eigene Titel übernimmt die technische Ursache prominent, ohne die Zuordnung zur berichteten Polizeiaussage sichtbar zu machen.",
+            "Unsicherer Frame-Einstieg in title"
+          ],
+          "frame_repetition_count": 1,
+          "rewrite_required": true,
+          "recommended_title": "Großbrand zerstört Sonderpostenmarkt in Seelze",
+          "recommended_summary": "",
+          "recommended_meta_description": ""
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T11:34:59.053Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T10:03:10.000Z",
+      "last_updated": "2026-09-06T11:34:59.053Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-cddc4a44512169719de0",
+      "case_file": null,
+      "source_published_at": "2026-09-06T10:03:10.000Z",
+      "published_at": "2026-09-06T10:22:08.636Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:03:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
       "story_id": "wt-d7a0af1afc831caf",
       "title_image": {
         "mode": "impact_card",
@@ -676,98 +917,6 @@
           "source_type": "official_rss",
           "published_at": "2026-08-31T12:00:00.000Z",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7bd1d7f242af3f7b",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-eabd7afdad730244-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-57349140780a769d-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-1929e578d1c32da2-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "seelze-elektro-rollstuhl-lost-grossbrand-in-sonderpostenmarkt-aus-af3f7b",
-      "title": "Seelze: Elektro-Rollstuhl löst Großbrand in Sonderpostenmarkt aus",
-      "source_summary": "In Seelze (Region Hannover) ist am Samstag ein Sonderpostenmarkt in Brand geraten. Nach dem Bericht brannte der Laden laut Feuerwehrsprecher teilweise ein und wurde vollständig zerstört; die Löscharbeiten dauerten am Sonntagmorgen noch an. Eine schwarze Rauchwolke war kilometerweit zu sehen.\n\nDie Polizei geht nach dem Bericht davon aus, dass die Batterie eines elektrischen Rollstuhls eines Kunden Funken schlug und das Feuer in der Abteilung für Malbedarf auslöste. Der Schaden wird ersten Schätzungen zufolge auf etwa drei Millionen Euro beziffert. Der Rollstuhlfahrer wurde leicht verletzt, alle Kunden und Beschäftigten konnten rechtzeitig in Sicherheit gebracht werden.",
-      "summary": "In Seelze ist ein Sonderpostenmarkt bei einem Großbrand vollständig zerstört worden. Nach dem Bericht steht als Ursache eine funken schlagende Rollstuhl-Batterie im Raum.",
-      "detail_summary": "Gesichert ist nach dem vorliegenden Bericht ein Großbrand in einem Sonderpostenmarkt in Seelze, bei dem der Markt vollständig zerstört wurde und die Löscharbeiten bis Sonntagmorgen andauerten. Als mögliche Ursache nennt die Polizei die Batterie eines elektrischen Rollstuhls; sie soll Funken geschlagen und das Feuer in der Abteilung für Malbedarf ausgelöst haben. Der Schaden wird auf etwa drei Millionen Euro geschätzt, der Rollstuhlfahrer wurde leicht verletzt. Für die Einordnung ist vor allem relevant, dass hier ein einzelnes technisches Ereignis einen kompletten Betriebsverlust und damit einen klaren Sachschaden ausgelöst haben soll. Mögliche Folgen sind Betriebsunterbrechung, Versicherungs- und Wiederaufbaukosten sowie vorübergehende lokale Versorgungs- und Beschäftigungseffekte. Die Evidenz bleibt vorläufig, weil die Quelle ein journalistischer Bericht ist und die Ursache laut Formulierung noch auf Angaben der Polizei beruht.",
-      "why_relevant": "Der Brand zerstört einen Betrieb vollständig und verursacht laut Bericht einen Schaden in Millionenhöhe; das ist für lokale Versorgung, Beschäftigung und Versicherung relevant.",
-      "topic": [
-        "Wirtschaft"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Ein Ladenbrand mit Vollzerstörung und Verletzung kann Beschäftigte, Kunden und lokale Versorgung kurzfristig beeinträchtigen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Es liegen nur Hinweise auf einen Brand vor; belastbare Umweltfolgen oder Folgeschäden sind in der Quelle nicht belegt."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Kein direkter demokratischer Wirkpfad ist aus der Quelle ersichtlich."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "unternehmen",
-          "beschaeftigte",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "offen"
-        }
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.0",
-      "media_checked_at": "2026-09-06T10:21:08.621Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-06T10:03:10.000Z",
-      "last_updated": "2026-09-06T10:22:08.636Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-cddc4a44512169719de0",
-      "case_file": null,
-      "source_published_at": "2026-09-06T10:03:10.000Z",
-      "published_at": "2026-09-06T10:22:08.636Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "ndr-info"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T10:03:10.000Z",
-          "primary_source": false
         }
       ]
     },

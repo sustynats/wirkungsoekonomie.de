@@ -1,0 +1,98 @@
+{
+  "review_type": "media_impact",
+  "story_id": "wt-7bd1d7f242af3f7b",
+  "expected_content_hash": "4c029ed44a766bc13aba9632b1809eee1b7242303ccc17bd52c9f32cc4b727c1",
+  "research_checked_at": "2026-09-06T11:30:28Z",
+  "review_basis": "Quellengebundene redaktionelle Nachprüfung der gespeicherten NDR-Überschrift, des Teasers und der bereits verifizierten Claim-Akte. Keine neue Tatsachenermittlung zum Brand, keine Behauptung empirischer Publikumswirkung und kein Medienvergleich.",
+  "correction_note": "Die eigene Überschrift stellt nun den Brand und den betroffenen Markt vor die technische Ursachenangabe. Ein Medien- und Sprachcheck erläutert mögliche Assoziationen und die Grenzen einer Verallgemeinerung. Originalquelle, bisherige Sachverhaltsprüfung und Ereignisbewertungen bleiben erhalten.",
+  "method_sources": [
+    "source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
+    "docs/ops/WIRKUNGSTICKER-MEDIEN-SPRACHWIRKUNG.md"
+  ],
+  "media_impact": {
+    "relevant": true,
+    "relevance_level": "medium",
+    "reason": "Die Originalüberschrift rückt eine technische Eigenschaft vor den konkreten Brandschaden. Zu prüfen sind kausale Zuschreibung und eine mögliche Verallgemeinerung über den Einzelfall hinaus.",
+    "factual_core": "Ein Sonderpostenmarkt in Seelze wurde laut NDR bei einem Brand zerstört. Der Bericht führt den Auslöser nach Polizeiangaben auf die Batterie eines Rollstuhls zurück.",
+    "epistemic_status": {
+      "confirmed": ["Der NDR berichtet über einen zerstörten Sonderpostenmarkt in Seelze."],
+      "actor_claims": ["Die Ursachenangabe wird in der bisherigen Quellenprüfung der Polizei zugeschrieben."],
+      "open": ["Eine eigenständig geprüfte technische Untersuchung und Daten zur Reaktion des Publikums liegen für diesen Check nicht vor."]
+    },
+    "attribution": {
+      "frame_source": "die NDR-Überschrift; die Ursachenangabe wird im Bericht der Polizei zugeschrieben",
+      "speaker": "Polizei, vermittelt durch NDR",
+      "original_term": "Elektro-Rollstuhl",
+      "usage_type": "editorial",
+      "placement": ["headline"],
+      "attribution_quality": "late"
+    },
+    "speaker_statement": {
+      "present": true,
+      "speaker": "Polizei, nach dem NDR-Bericht",
+      "statement": "Die Batterie eines Rollstuhls soll Funken geschlagen und das Feuer ausgelöst haben.",
+      "status": "claim"
+    },
+    "frame_analysis": {
+      "frame_detected": true,
+      "frame_term": "Elektro-Rollstuhl",
+      "frame_type": ["technischer Frame"],
+      "problem_definition": "Der technische Gegenstand steht sprachlich als Auslöser im Vordergrund. Der betroffene Markt und der konkrete Schaden folgen danach.",
+      "implied_cause": "Die Überschrift formuliert den Auslöser bestimmt; die Quellenakte ordnet diese Angabe der Polizei zu.",
+      "implied_responsibility": "Aus der technischen Ursachenangabe folgt keine persönliche Schuldzuweisung.",
+      "implied_threat": "Eine Übertragung auf eine ganze Technologie wäre eine zusätzliche Deutung, nicht Bestandteil des belegten Ereignisses.",
+      "implied_solution_space": "Welche Schutzmaßnahmen angemessen wären, hängt vom konkreten technischen Befund ab.",
+      "material_omissions": ["Die Zuordnung der Ursachenangabe zur Polizei ist in der Originalüberschrift nicht sichtbar."]
+    },
+    "framing": {
+      "detected": true,
+      "term": "Elektro-Rollstuhl",
+      "origin_in_story": "NDR-Überschrift",
+      "media_usage": "headline",
+      "attribution_quality": "Attribution erst später sichtbar",
+      "factual_status": "Aussage eines Akteurs",
+      "political_history_relevant": false,
+      "political_history_evidence": []
+    },
+    "political_context": {"relevant": false, "evidence_based": false, "evidence": [], "uncertainty": "Eine politische Verwendungsgeschichte oder ein verbreitetes Narrativ ist mit dieser Einzelquelle nicht belegt."},
+    "discourse_effect": {
+      "impact_status": "potential",
+      "resonance_space": "Bei Menschen mit bestehenden Technikbefürchtungen kann die hervorgehobene Eigenschaft an diese Vorstellungen anschließen. Ob das hier geschieht, ist offen.",
+      "normalization_potential": "open",
+      "repetition_risk": "open",
+      "polarization_potential": "Eine gesellschaftliche Polarisierung ist aus dieser Einzelmeldung nicht ableitbar.",
+      "trust_effect_potential": "Eine sichtbare Quellenzuordnung kann helfen, Bericht und eigenständigen technischen Nachweis auseinanderzuhalten.",
+      "discourse_effect_potential": "Falls ein einzelner Defekt als allgemeines Technikrisiko verstanden wird, könnte die Diskussion um konkrete Schutzmaßnahmen in den Hintergrund geraten. Dies ist eine bedingte Analysehypothese."
+    },
+    "resonance": {"repetition_effect": "Wiederholte Aussagen können unter bestimmten Bedingungen vertrauter und dadurch glaubwürdiger erscheinen. Eine solche Wiederholung und ein Illusory-Truth-Effekt sind für diesen Fall nicht nachgewiesen."},
+    "impact_path": {
+      "first_order": "Die Überschrift verbindet die technische Eigenschaft mit dem konkreten Schadensereignis. Ob Lesende daraus mehr ableiten, bleibt offen.",
+      "second_order": "Bei passenden Vorerfahrungen und wiederholter ähnlicher Vermittlung könnte ein Einzelfall zur Schablone für weitere Fälle werden. Eine solche Serie ist hier nicht belegt.",
+      "third_order": "Erst bei anhaltender breiter Verallgemeinerung wären veränderte Erwartungen an Technik und Schutzregeln ein möglicher weiterer Pfad. Dafür liegen hier keine Wirkungsdaten vor."
+    },
+    "evidence": {
+      "level": "open",
+      "facts": ["Der vorliegende NDR-Bericht behandelt einen konkreten Brand in Seelze; die Ursachenangabe wird der Polizei zugeschrieben."],
+      "observations": ["Die Originalüberschrift beginnt mit Ort und technischem Gegenstand und formuliert den Auslöser ohne sichtbare Quellenzuordnung."],
+      "inferences": ["Die prominente Eigenschaft könnte bei entsprechendem Vorwissen an weitergehende Technikbefürchtungen anschließen. Das ist eine Hypothese über mögliche Rezeption."],
+      "impact_potentials": ["Eine Verallgemeinerung könnte die Aufmerksamkeit vom konkreten Defekt auf eine ganze Technologie verschieben."],
+      "impact_risks": ["Ein spezifischer Vorfall könnte fälschlich als Beleg für das Risiko anderer Geräte verstanden werden."],
+      "observed_impacts": [],
+      "limitations": ["Ein Rollstuhl ist kein Elektroauto. Der Einzelfall belegt weder deren allgemeines Brandrisiko noch eine vergleichende Brandhäufigkeit.", "Eine wiederkehrende Berichtsserie, Publikumsreaktionen und ein Illusory-Truth-Effekt sind hier nicht nachgewiesen. Die sachlich relevante Antriebsart darf weiterhin benannt werden."]
+    },
+    "observed_impact": {"present": false, "description": null, "evidence": []},
+    "public_explanation": "Ein Sonderpostenmarkt in Seelze wurde laut NDR bei einem Brand zerstört. Die Originalüberschrift nennt die elektrische Antriebsart des Rollstuhls prominent als Teil der Ursachenbeschreibung. Das kann sachlich relevant sein: Der Bericht führt den Auslöser nach Polizeiangaben auf dessen Batterie zurück. Allein diese technische Angabe ist weder falsch noch ein Beleg für Manipulation.\n\nBei Menschen mit entsprechenden Vorerfahrungen könnte die Hervorhebung jedoch weitergehende Vorstellungen über Technikrisiken aufrufen. Eine Übertragung auf andere Geräte oder Fahrzeuge wäre durch diesen Einzelfall nicht gedeckt. Ob Lesende diese Verbindung tatsächlich herstellen, wissen wir nicht. Auch eine wiederkehrende Berichtsserie oder eine durch Wiederholung gestiegene Glaubwürdigkeit solcher Verallgemeinerungen ist hier nicht nachgewiesen. Der Ticker stellt deshalb den konkreten Schaden zuerst dar und hält die Ursachenangabe an die berichtete Quelle gebunden.",
+    "editorial_assessment": "Die technische Angabe kann informativ sein. Prüfbedürftig sind ihre Hervorhebung und mögliche Verallgemeinerungen, nicht das Medium oder die Antriebsart als solche.",
+    "fact_first_alternative": "Großbrand zerstört Sonderpostenmarkt in Seelze. Nach dem NDR-Bericht nennt die Polizei eine funken schlagende Rollstuhlbatterie als Auslöser.",
+    "self_frame_check": {
+      "problem_detected": true,
+      "problems": ["Der eigene Titel übernimmt die technische Ursache prominent, ohne die Zuordnung zur berichteten Polizeiaussage sichtbar zu machen."],
+      "frame_repetition_count": 0,
+      "rewrite_required": true,
+      "recommended_title": "Großbrand zerstört Sonderpostenmarkt in Seelze",
+      "recommended_summary": "",
+      "recommended_meta_description": ""
+    },
+    "source_comparison": {"sufficient_basis": false, "finding": ""}
+  }
+}
