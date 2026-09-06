@@ -1,7 +1,1261 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T10:06:13.084Z",
+  "updated_at": "2026-09-06T10:21:08.621Z",
   "stories": [
+    {
+      "story_id": "wt-7bd1d7f242af3f7b",
+      "slug": "seelze-elektro-rollstuhl-lost-grossbrand-in-sonderpostenmarkt-aus-af3f7b",
+      "title": "Seelze: Elektro-Rollstuhl löst Großbrand in Sonderpostenmarkt aus",
+      "first_seen": "2026-09-06T10:03:10.000Z",
+      "last_updated": "2026-09-06T10:22:08.636Z",
+      "published_at": "2026-09-06T10:22:08.636Z",
+      "updated_at": "2026-09-06T10:22:08.636Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+          "title": "Seelze: Elektro-Rollstuhl löst Großbrand in Sonderpostenmarkt aus",
+          "summary": "Die Batterie des Rollstuhls hatte Funken geschlagen. Das Feuer konnte nicht eingedämmt werden, der Markt wurde komplett zerstört.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:03:10.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9bd2401d826938665e331469a12f0bfdc31650530596217e4707b9dd80d79a4d",
+          "source_item_id": "4308a7f3017d083a560046cd5a3931fb719b6a6b08956e91e871f8a23609fd57",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T10:03:10.000Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7bd1d7f242af3f7b-v1-claim-1",
+          "story_id": "wt-7bd1d7f242af3f7b",
+          "claim": "In Seelze ist es in einem Sonderpostenmarkt zu einem Großbrand gekommen, der den Markt vollständig zerstörte.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+              "excerpt_hash": "076fd9516e697c0584d6",
+              "checked_at": "2026-09-06T10:22:08.636Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+              "excerpt_hash": "4ef990983b8705947ade",
+              "checked_at": "2026-09-06T10:22:08.636Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T10:22:08.636Z"
+        },
+        {
+          "claim_id": "wt-7bd1d7f242af3f7b-v1-claim-2",
+          "story_id": "wt-7bd1d7f242af3f7b",
+          "claim": "Nach Angaben der Polizei soll die Batterie eines elektrischen Rollstuhls eines Kunden Funken geschlagen und das Feuer ausgelöst haben.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+              "excerpt_hash": "122ce9c829ba2087057d",
+              "checked_at": "2026-09-06T10:22:08.636Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T10:22:08.636Z"
+        },
+        {
+          "claim_id": "wt-7bd1d7f242af3f7b-v1-claim-3",
+          "story_id": "wt-7bd1d7f242af3f7b",
+          "claim": "Der Schaden wird ersten Schätzungen zufolge auf etwa drei Millionen Euro beziffert; der Rollstuhlfahrer wurde leicht verletzt.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+              "excerpt_hash": "970bf93aca5cf387737c",
+              "checked_at": "2026-09-06T10:22:08.636Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T10:22:08.636Z"
+        },
+        {
+          "claim_id": "wt-7bd1d7f242af3f7b-v1-claim-4",
+          "story_id": "wt-7bd1d7f242af3f7b",
+          "claim": "Angestellte konnten nach Angaben der Feuerwehr alle Kunden und sich selbst rechtzeitig in Sicherheit bringen.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+              "excerpt_hash": "970bf93aca5cf387737c",
+              "checked_at": "2026-09-06T10:22:08.636Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T10:22:08.636Z"
+        }
+      ],
+      "event_id": "event-cddc4a44512169719de0",
+      "event_first_seen_at": "2026-09-06T10:21:08.621Z",
+      "event_detected_at": "2026-09-06T10:21:08.621Z",
+      "verification_started_at": "2026-09-06T10:21:55.310Z",
+      "publish_ready_at": "2026-09-06T10:22:08.636Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:21:08.621Z",
+        "fingerprint": "249f18fd4be1f1cc4705514dcda46b786b53e92f94f2d94531e96c099cb8580d",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "4c029ed44a766bc13aba9632b1809eee1b7242303ccc17bd52c9f32cc4b727c1",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "In Seelze (Region Hannover) ist am Samstag ein Sonderpostenmarkt in Brand geraten. Nach dem Bericht brannte der Laden laut Feuerwehrsprecher teilweise ein und wurde vollständig zerstört; die Löscharbeiten dauerten am Sonntagmorgen noch an. Eine schwarze Rauchwolke war kilometerweit zu sehen.\n\nDie Polizei geht nach dem Bericht davon aus, dass die Batterie eines elektrischen Rollstuhls eines Kunden Funken schlug und das Feuer in der Abteilung für Malbedarf auslöste. Der Schaden wird ersten Schätzungen zufolge auf etwa drei Millionen Euro beziffert. Der Rollstuhlfahrer wurde leicht verletzt, alle Kunden und Beschäftigten konnten rechtzeitig in Sicherheit gebracht werden.",
+      "analysis": {
+        "story_id": "wt-7bd1d7f242af3f7b",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "In Seelze ist ein Sonderpostenmarkt bei einem Großbrand vollständig zerstört worden. Nach dem Bericht steht als Ursache eine funken schlagende Rollstuhl-Batterie im Raum.",
+        "detail_summary": "Gesichert ist nach dem vorliegenden Bericht ein Großbrand in einem Sonderpostenmarkt in Seelze, bei dem der Markt vollständig zerstört wurde und die Löscharbeiten bis Sonntagmorgen andauerten. Als mögliche Ursache nennt die Polizei die Batterie eines elektrischen Rollstuhls; sie soll Funken geschlagen und das Feuer in der Abteilung für Malbedarf ausgelöst haben. Der Schaden wird auf etwa drei Millionen Euro geschätzt, der Rollstuhlfahrer wurde leicht verletzt. Für die Einordnung ist vor allem relevant, dass hier ein einzelnes technisches Ereignis einen kompletten Betriebsverlust und damit einen klaren Sachschaden ausgelöst haben soll. Mögliche Folgen sind Betriebsunterbrechung, Versicherungs- und Wiederaufbaukosten sowie vorübergehende lokale Versorgungs- und Beschäftigungseffekte. Die Evidenz bleibt vorläufig, weil die Quelle ein journalistischer Bericht ist und die Ursache laut Formulierung noch auf Angaben der Polizei beruht.",
+        "why_relevant": "Der Brand zerstört einen Betrieb vollständig und verursacht laut Bericht einen Schaden in Millionenhöhe; das ist für lokale Versorgung, Beschäftigung und Versicherung relevant.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Ein Ladenbrand mit Vollzerstörung und Verletzung kann Beschäftigte, Kunden und lokale Versorgung kurzfristig beeinträchtigen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Es liegen nur Hinweise auf einen Brand vor; belastbare Umweltfolgen oder Folgeschäden sind in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Kein direkter demokratischer Wirkpfad ist aus der Quelle ersichtlich."
+        },
+        "importance": "mittel",
+        "impact_potential": "Der Vorfall kann zu Betriebsunterbrechung, Wiederaufbaukosten, Versicherungsansprüchen und einem vorübergehenden Ausfall eines lokalen Angebots führen.",
+        "impact_risks": [
+          "Mögliche Kaskade aus Sachschaden, Betriebsstillstand und Kostenbelastung für Betreiber oder Versicherung."
+        ],
+        "mechanisms": [
+          "Technischer Defekt oder Funkenbildung löst Brand aus.",
+          "Der Brand zerstört Inventar und Gebäude, wodurch der Geschäftsbetrieb ausfällt.",
+          "Ausfall und Wiederaufbau verursachen finanzielle und organisatorische Folgekosten."
+        ],
+        "first_order": [
+          "Vollständige Zerstörung des Marktes.",
+          "Leichte Verletzung einer Person.",
+          "Sofortige Unterbrechung des Betriebs."
+        ],
+        "second_order": [
+          "Versicherungs- und Ersatzbeschaffungskosten.",
+          "Vorübergehender Ausfall lokaler Einkaufsangebote.",
+          "Belastung für Beschäftigte und Betreiber durch Wiederaufbau."
+        ],
+        "third_order": [
+          "Mögliche Veränderungen bei Sicherheits- oder Lagerkonzepten im Betrieb.",
+          "Eventuell strengere interne Vorsorge gegen technische Brandursachen."
+        ],
+        "systemic_relevance": "Systemisch relevant ist der Fall vor allem als lokaler Sachschaden mit möglicher Kaskade auf Betrieb, Beschäftigung und Versicherung; über regionale Effekte hinaus bleibt die Reichweite offen.",
+        "transformation_potential": "Kein Transformationsereignis, aber der Schaden kann Anlass für technische und betriebliche Sicherheitsanpassungen sein.",
+        "resilience": "Die rechtzeitige Räumung deutet auf begrenzte Personenschäden hin; die wirtschaftliche Resilienz hängt nun von Versicherbarkeit, Wiederaufbau und Ersatzangeboten ab.",
+        "side_effects": [
+          "Mögliche Liefer- und Umsatzverluste während der Schließzeit.",
+          "Zeitweise Verlagerung von Kundschaft auf andere Anbieter."
+        ],
+        "uncertainties": [
+          "Die Brandursache ist laut Bericht noch nicht endgültig geklärt.",
+          "Zur Höhe des Schadens liegt nur eine erste Schätzung vor.",
+          "Weitere Folgen für Beschäftigung oder Umgebung sind nicht belegt."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Berichtet vom NDR; Ursache nach Angaben der Polizei, Bewertung des Schadens als erste Schätzung, Zitat eines Feuerwehrsprechers über den Vollbrand.",
+        "watch_next": [
+          "Bestätigt die Polizei die Brandursache?",
+          "Wie hoch fällt der endgültige Schaden aus?",
+          "Wann kann der Markt wieder aufgebaut oder ersetzt werden?"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030: SDG 8, SDG 11, SDG 12"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "intensity",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neuer Vorfall mit vollständiger Zerstörung eines Betriebs und Millionen-Schaden; materiell wegen Intensität und Dauer des Ausfalls."
+        },
+        "visuals": {
+          "affected_groups": [
+            "unternehmen",
+            "beschaeftigte",
+            "verbraucherinnen"
+          ],
+          "tendency": {
+            "human": "risiko",
+            "planet": "offen",
+            "democracy": "offen"
+          }
+        },
+        "publication_recommendation": true,
+        "media_impact": null,
+        "media_analysis_version": "2.0",
+        "media_checked_at": "2026-09-06T10:21:08.621Z",
+        "media_trigger_fingerprint": "75331f78872d2a23218944a6600e0abdb79c0da39a00c45e6b4a59fd82fcf695",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "75331f78872d2a23218944a6600e0abdb79c0da39a00c45e6b4a59fd82fcf695",
+          "content_fingerprint": "c453e7593b9f65c8e87f5abbb36b99a352f571d76e6128844b4ddecb5a8ca1f8",
+          "basis": "controlled_source_text",
+          "version": "2.0"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T10:22:08.636Z",
+          "content_hash": "4c029ed44a766bc13aba9632b1809eee1b7242303ccc17bd52c9f32cc4b727c1",
+          "source_summary": "In Seelze (Region Hannover) ist am Samstag ein Sonderpostenmarkt in Brand geraten. Nach dem Bericht brannte der Laden laut Feuerwehrsprecher teilweise ein und wurde vollständig zerstört; die Löscharbeiten dauerten am Sonntagmorgen noch an. Eine schwarze Rauchwolke war kilometerweit zu sehen.\n\nDie Polizei geht nach dem Bericht davon aus, dass die Batterie eines elektrischen Rollstuhls eines Kunden Funken schlug und das Feuer in der Abteilung für Malbedarf auslöste. Der Schaden wird ersten Schätzungen zufolge auf etwa drei Millionen Euro beziffert. Der Rollstuhlfahrer wurde leicht verletzt, alle Kunden und Beschäftigten konnten rechtzeitig in Sicherheit gebracht werden.",
+          "analysis": {
+            "story_id": "wt-7bd1d7f242af3f7b",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "In Seelze ist ein Sonderpostenmarkt bei einem Großbrand vollständig zerstört worden. Nach dem Bericht steht als Ursache eine funken schlagende Rollstuhl-Batterie im Raum.",
+            "detail_summary": "Gesichert ist nach dem vorliegenden Bericht ein Großbrand in einem Sonderpostenmarkt in Seelze, bei dem der Markt vollständig zerstört wurde und die Löscharbeiten bis Sonntagmorgen andauerten. Als mögliche Ursache nennt die Polizei die Batterie eines elektrischen Rollstuhls; sie soll Funken geschlagen und das Feuer in der Abteilung für Malbedarf ausgelöst haben. Der Schaden wird auf etwa drei Millionen Euro geschätzt, der Rollstuhlfahrer wurde leicht verletzt. Für die Einordnung ist vor allem relevant, dass hier ein einzelnes technisches Ereignis einen kompletten Betriebsverlust und damit einen klaren Sachschaden ausgelöst haben soll. Mögliche Folgen sind Betriebsunterbrechung, Versicherungs- und Wiederaufbaukosten sowie vorübergehende lokale Versorgungs- und Beschäftigungseffekte. Die Evidenz bleibt vorläufig, weil die Quelle ein journalistischer Bericht ist und die Ursache laut Formulierung noch auf Angaben der Polizei beruht.",
+            "why_relevant": "Der Brand zerstört einen Betrieb vollständig und verursacht laut Bericht einen Schaden in Millionenhöhe; das ist für lokale Versorgung, Beschäftigung und Versicherung relevant.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "rationale": "Ein Ladenbrand mit Vollzerstörung und Verletzung kann Beschäftigte, Kunden und lokale Versorgung kurzfristig beeinträchtigen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Es liegen nur Hinweise auf einen Brand vor; belastbare Umweltfolgen oder Folgeschäden sind in der Quelle nicht belegt."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "rationale": "Kein direkter demokratischer Wirkpfad ist aus der Quelle ersichtlich."
+            },
+            "importance": "mittel",
+            "impact_potential": "Der Vorfall kann zu Betriebsunterbrechung, Wiederaufbaukosten, Versicherungsansprüchen und einem vorübergehenden Ausfall eines lokalen Angebots führen.",
+            "impact_risks": [
+              "Mögliche Kaskade aus Sachschaden, Betriebsstillstand und Kostenbelastung für Betreiber oder Versicherung."
+            ],
+            "mechanisms": [
+              "Technischer Defekt oder Funkenbildung löst Brand aus.",
+              "Der Brand zerstört Inventar und Gebäude, wodurch der Geschäftsbetrieb ausfällt.",
+              "Ausfall und Wiederaufbau verursachen finanzielle und organisatorische Folgekosten."
+            ],
+            "first_order": [
+              "Vollständige Zerstörung des Marktes.",
+              "Leichte Verletzung einer Person.",
+              "Sofortige Unterbrechung des Betriebs."
+            ],
+            "second_order": [
+              "Versicherungs- und Ersatzbeschaffungskosten.",
+              "Vorübergehender Ausfall lokaler Einkaufsangebote.",
+              "Belastung für Beschäftigte und Betreiber durch Wiederaufbau."
+            ],
+            "third_order": [
+              "Mögliche Veränderungen bei Sicherheits- oder Lagerkonzepten im Betrieb.",
+              "Eventuell strengere interne Vorsorge gegen technische Brandursachen."
+            ],
+            "systemic_relevance": "Systemisch relevant ist der Fall vor allem als lokaler Sachschaden mit möglicher Kaskade auf Betrieb, Beschäftigung und Versicherung; über regionale Effekte hinaus bleibt die Reichweite offen.",
+            "transformation_potential": "Kein Transformationsereignis, aber der Schaden kann Anlass für technische und betriebliche Sicherheitsanpassungen sein.",
+            "resilience": "Die rechtzeitige Räumung deutet auf begrenzte Personenschäden hin; die wirtschaftliche Resilienz hängt nun von Versicherbarkeit, Wiederaufbau und Ersatzangeboten ab.",
+            "side_effects": [
+              "Mögliche Liefer- und Umsatzverluste während der Schließzeit.",
+              "Zeitweise Verlagerung von Kundschaft auf andere Anbieter."
+            ],
+            "uncertainties": [
+              "Die Brandursache ist laut Bericht noch nicht endgültig geklärt.",
+              "Zur Höhe des Schadens liegt nur eine erste Schätzung vor.",
+              "Weitere Folgen für Beschäftigung oder Umgebung sind nicht belegt."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Berichtet vom NDR; Ursache nach Angaben der Polizei, Bewertung des Schadens als erste Schätzung, Zitat eines Feuerwehrsprechers über den Vollbrand.",
+            "watch_next": [
+              "Bestätigt die Polizei die Brandursache?",
+              "Wie hoch fällt der endgültige Schaden aus?",
+              "Wann kann der Markt wieder aufgebaut oder ersetzt werden?"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030: SDG 8, SDG 11, SDG 12"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "intensity",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neuer Vorfall mit vollständiger Zerstörung eines Betriebs und Millionen-Schaden; materiell wegen Intensität und Dauer des Ausfalls."
+            },
+            "visuals": {
+              "affected_groups": [
+                "unternehmen",
+                "beschaeftigte",
+                "verbraucherinnen"
+              ],
+              "tendency": {
+                "human": "risiko",
+                "planet": "offen",
+                "democracy": "offen"
+              }
+            },
+            "publication_recommendation": true,
+            "media_impact": null,
+            "media_analysis_version": "2.0",
+            "media_checked_at": "2026-09-06T10:21:08.621Z",
+            "media_trigger_fingerprint": "75331f78872d2a23218944a6600e0abdb79c0da39a00c45e6b4a59fd82fcf695",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "75331f78872d2a23218944a6600e0abdb79c0da39a00c45e6b4a59fd82fcf695",
+              "content_fingerprint": "c453e7593b9f65c8e87f5abbb36b99a352f571d76e6128844b4ddecb5a8ca1f8",
+              "basis": "controlled_source_text",
+              "version": "2.0"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-7bd1d7f242af3f7b-v1-claim-1",
+              "story_id": "wt-7bd1d7f242af3f7b",
+              "claim": "In Seelze ist es in einem Sonderpostenmarkt zu einem Großbrand gekommen, der den Markt vollständig zerstörte.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+                  "excerpt_hash": "076fd9516e697c0584d6",
+                  "checked_at": "2026-09-06T10:22:08.636Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+                  "excerpt_hash": "4ef990983b8705947ade",
+                  "checked_at": "2026-09-06T10:22:08.636Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T10:22:08.636Z"
+            },
+            {
+              "claim_id": "wt-7bd1d7f242af3f7b-v1-claim-2",
+              "story_id": "wt-7bd1d7f242af3f7b",
+              "claim": "Nach Angaben der Polizei soll die Batterie eines elektrischen Rollstuhls eines Kunden Funken geschlagen und das Feuer ausgelöst haben.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+                  "excerpt_hash": "122ce9c829ba2087057d",
+                  "checked_at": "2026-09-06T10:22:08.636Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T10:22:08.636Z"
+            },
+            {
+              "claim_id": "wt-7bd1d7f242af3f7b-v1-claim-3",
+              "story_id": "wt-7bd1d7f242af3f7b",
+              "claim": "Der Schaden wird ersten Schätzungen zufolge auf etwa drei Millionen Euro beziffert; der Rollstuhlfahrer wurde leicht verletzt.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+                  "excerpt_hash": "970bf93aca5cf387737c",
+                  "checked_at": "2026-09-06T10:22:08.636Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T10:22:08.636Z"
+            },
+            {
+              "claim_id": "wt-7bd1d7f242af3f7b-v1-claim-4",
+              "story_id": "wt-7bd1d7f242af3f7b",
+              "claim": "Angestellte konnten nach Angaben der Feuerwehr alle Kunden und sich selbst rechtzeitig in Sicherheit bringen.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+                  "excerpt_hash": "970bf93aca5cf387737c",
+                  "checked_at": "2026-09-06T10:22:08.636Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T10:22:08.636Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+              "content_hash": "9bd2401d826938665e331469a12f0bfdc31650530596217e4707b9dd80d79a4d"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T10:22:08.636Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-eabd7afdad730244-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "eabd7afdad730244d1185370975dba29f0504366e2df0b9c40674c2ab3977393"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-57349140780a769d-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "57349140780a769d068ed5ca594aa81e7565f10b9adf8ad1e87f22ad4cea41ce"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-1929e578d1c32da2-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "1929e578d1c32da2f3c5914ca3f27f8a4f820a7ebf0b228d2b91c5537dbef26c"
+        },
+        "source_visual": null,
+        "fingerprint": "d4bdee54cf80e1a4ee98a5d59c09a6468879daace7c02e164a5aeb535d55a927",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T10:23:00.958Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-2b0fbde487313b73",
+      "slug": "anschlage-auf-stromleitungen-schuster-stromnetz-mit-videotechnik-und-drohnen-schutzen-313b73",
+      "title": "Anschläge auf Stromleitungen: Schuster: Stromnetz mit Videotechnik und Drohnen schützen",
+      "first_seen": "2026-09-06T10:13:48.000Z",
+      "last_updated": "2026-09-06T10:14:39.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--schuster--stromnetz-mit-videotechnik-und-drohnen-schuetzen-38212790.html",
+          "title": "Anschläge auf Stromleitungen: Schuster: Stromnetz mit Videotechnik und Drohnen schützen",
+          "summary": "Die Polizei hat mehrere Angriffe auf das Stromnetz vereitelt. Betroffen ist auch Ostsachsen. Wie kann der Schutz solcher Anlagen verbessert werden?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:13:48.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c25b37ba339f71954b7cd92bc9a597dcfbbcc1222a4d1b38c9aa63f56848f334",
+          "source_item_id": "861ef476b3a181a8994268008e3cb0de99bb5a93f2a1474b0561d2e375d092c5",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T10:13:48.000Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16022592.html",
+          "title": "Anschläge auf Stromleitungen: Schuster: Stromnetz mit Videotechnik und Drohnen schützen",
+          "summary": "Die Polizei hat mehrere Angriffe auf das Stromnetz vereitelt. Betroffen ist auch Ostsachsen. Wie kann der Schutz solcher Anlagen verbessert werden?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:14:39.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "c556ca9d22c6f6a89cc439dea94387db7a733551d1c9c3a7b3f447b5065c6786",
+          "source_item_id": "b3c9373ff9ed914b8b5d64e920df97459d0cc7be65f85397d727660bb80b6fb0",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T10:14:39.000Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2b0fbde487313b73-claim-01",
+          "story_id": "wt-2b0fbde487313b73",
+          "claim": "Anschläge auf Stromleitungen: Schuster: Stromnetz mit Videotechnik und Drohnen schützen: Die Polizei hat mehrere Angriffe auf das Stromnetz vereitelt. Betroffen ist auch Ostsachsen. Wie kann der Schutz solcher Anlagen verbessert werden?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:21:08.621Z"
+        },
+        {
+          "claim_id": "wt-2b0fbde487313b73-claim-02",
+          "story_id": "wt-2b0fbde487313b73",
+          "claim": "Anschläge auf Stromleitungen: Schuster: Stromnetz mit Videotechnik und Drohnen schützen: Die Polizei hat mehrere Angriffe auf das Stromnetz vereitelt. Betroffen ist auch Ostsachsen. Wie kann der Schutz solcher Anlagen verbessert werden?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:21:08.621Z"
+        }
+      ],
+      "content_hash": "f2f8804169e874fcea9199f646d00052723c8ebeb245aacae4c87fb2f407df06",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T10:36:08.621Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T10:21:08.621Z",
+      "event_first_seen_at": "2026-09-06T10:21:08.621Z",
+      "event_detected_at": "2026-09-06T10:21:08.621Z",
+      "event_id": "event-622c274392493f443001",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.493683333333333,
+        "detection_delay_minutes": 6.493683333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:21:08.621Z",
+        "fingerprint": "a24a650fbf8eb17523a39f1aaa0f50209b1695be01f2c8be746c7165254bad25",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T10:21:08.621Z",
+      "rejection": {
+        "at": "2026-09-06T10:21:08.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-bbaa7af8793200d8",
+      "slug": "so-hat-das-reiche-monheim-riesige-schulden-angehauft-3200d8",
+      "title": "So hat das reiche Monheim riesige Schulden angehäuft",
+      "first_seen": "2026-09-06T10:03:08.000Z",
+      "last_updated": "2026-09-06T10:03:08.000Z",
+      "topic": [
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+          "title": "So hat das reiche Monheim riesige Schulden angehäuft",
+          "summary": "Monheim war mal reich. Heute sitzt die Stadt auf dem größten Schuldenberg in NRW und eröffnet eine ultrateure Veranstaltungshalle.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:03:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b4f1a513b4d3d1b948b52e6965f626156a2e2ca80bc6c67c6007d7ec9bf21d5e",
+          "source_item_id": "b1f75024e44cb4822aa189ad11e89354e36d80e53966eb1e82336e61ebbab56f",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T10:03:08.000Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-bbaa7af8793200d8-claim-01",
+          "story_id": "wt-bbaa7af8793200d8",
+          "claim": "So hat das reiche Monheim riesige Schulden angehäuft: Monheim war mal reich. Heute sitzt die Stadt auf dem größten Schuldenberg in NRW und eröffnet eine ultrateure Veranstaltungshalle.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:21:08.621Z"
+        }
+      ],
+      "content_hash": "f103e81aad6c78a2c7e6c626b3899c61d4092d0971eed2cea596b9a17644d947",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_SOURCE_SUMMARY_PARAGRAPHS"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-06T10:36:08.621Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-06T10:21:08.621Z",
+      "event_first_seen_at": "2026-09-06T10:21:08.621Z",
+      "event_detected_at": "2026-09-06T10:21:08.621Z",
+      "event_id": "event-e0c46d015bac0e2a41fa",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Finanzen"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "implementation"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.01035,
+        "detection_delay_minutes": 18.01035,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:21:08.621Z",
+        "fingerprint": "ac644e55b8cdaae9df9dad207c370c2b63de475a265569e0e4c343e241838df4",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-4c432e73b7eca26a",
+      "slug": "sabotage-an-stromleitungen-suche-nach-tatverdachtigem-geht-weiter-eca26a",
+      "title": "Sabotage an Stromleitungen - Suche nach Tatverdächtigem geht weiter",
+      "first_seen": "2026-09-06T10:02:34.000Z",
+      "last_updated": "2026-09-06T10:02:34.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/suche-nach-tatverdaechtigem-geht-weiter-102.html",
+          "title": "Sabotage an Stromleitungen - Suche nach Tatverdächtigem geht weiter",
+          "summary": "Nach mehreren Sabotageaktionen gegen das deutsche Stromnetz geht die Suche nach dem Tatverdächtigen weiter.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:02:34.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3b9e4c48b464ded515580ade04ada995549f945643c1bedd1399869d2864b21c",
+          "source_item_id": "2ff40c8cac9d8448bf1a66df7c70e520b9fa5f39e9bae28b8d53ac61d1d3f040",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T10:02:34.000Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4c432e73b7eca26a-claim-01",
+          "story_id": "wt-4c432e73b7eca26a",
+          "claim": "Sabotage an Stromleitungen - Suche nach Tatverdächtigem geht weiter: Nach mehreren Sabotageaktionen gegen das deutsche Stromnetz geht die Suche nach dem Tatverdächtigen weiter.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:21:08.621Z"
+        }
+      ],
+      "content_hash": "35f8b51efff91f47d8bdb5958cdc13ec9b5ce4b5c6450f74a98f4a820c27bff3",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T10:36:08.621Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T10:21:08.621Z",
+      "event_first_seen_at": "2026-09-06T10:21:08.621Z",
+      "event_detected_at": "2026-09-06T10:21:08.621Z",
+      "event_id": "event-eaa87b644db7c360fd20",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.577016666666665,
+        "detection_delay_minutes": 18.577016666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:21:08.621Z",
+        "fingerprint": "40497977be094848e523569f8b11ed446a1bbbdc1de0480ba5d27ccc6f7e2fe9",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T10:21:08.621Z",
+      "rejection": {
+        "at": "2026-09-06T10:21:08.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-09eb5d45200288ae",
+      "slug": "stefanie-stahl-uber-fluchtfantasien-und-ihr-inneres-kind-0288ae",
+      "title": "Stefanie Stahl über Fluchtfantasien und ihr inneres Kind",
+      "first_seen": "2026-09-06T10:02:00.000Z",
+      "last_updated": "2026-09-06T10:02:00.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/kultur/stefanie-stahl-ueber-fluchtfantasien-und-ihr-inneres-kind-a-f64c13ec-56a3-4baf-81dc-d0c09e711c0e",
+          "title": "Stefanie Stahl über Fluchtfantasien und ihr inneres Kind",
+          "summary": "Deutschlands bekannteste Psychologin Stefanie Stahl eröffnet ein Lokal. Warum? Hier spricht sie über Fluchtfantasien und ihr eigenes inneres Kind.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:02:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "8a6bc501489df65de1661119a888fd93c5fb5804b411d8f3ee40ec4f873a444d",
+          "source_item_id": "d53a291c0bb0bfceea84bb2fe926cd076e17ad0351eb80cc2675f1f1962b7dfe",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T10:02:00.000Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-09eb5d45200288ae-claim-01",
+          "story_id": "wt-09eb5d45200288ae",
+          "claim": "Stefanie Stahl über Fluchtfantasien und ihr inneres Kind: Deutschlands bekannteste Psychologin Stefanie Stahl eröffnet ein Lokal. Warum? Hier spricht sie über Fluchtfantasien und ihr eigenes inneres Kind.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:21:08.621Z"
+        }
+      ],
+      "content_hash": "a2c99a9fd8ea27772bf0cebec25abd10c05d737f729450544f0474d94257cdb7",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T10:36:08.621Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T10:21:08.621Z",
+      "event_first_seen_at": "2026-09-06T10:21:08.621Z",
+      "event_detected_at": "2026-09-06T10:21:08.621Z",
+      "event_id": "event-729adfb8b7c495878eb8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "implementation"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 19.143683333333332,
+        "detection_delay_minutes": 19.143683333333332,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:21:08.621Z",
+        "fingerprint": "313e5b0b331e8da23ef11387d0aacf4d2bc1cf2d325d9963a33fba826ca2e466",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T10:21:08.621Z",
+      "rejection": {
+        "at": "2026-09-06T10:21:08.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-d85e71fe828c5dc5",
+      "slug": "maisie-williams-empfand-die-zeit-nach-game-of-thrones-als-holle-8c5dc5",
+      "title": "Maisie Williams empfand die Zeit nach »Game of Thrones« als »Hölle«",
+      "first_seen": "2026-09-06T09:49:00.000Z",
+      "last_updated": "2026-09-06T09:49:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/kultur/kino/maisie-williams-empfand-die-zeit-nach-game-of-thrones-als-hoelle-a-ef3657ab-e779-44a1-8ff4-ddba3539042c",
+          "title": "Maisie Williams empfand die Zeit nach »Game of Thrones« als »Hölle«",
+          "summary": "Schon als Kind wurde sie berühmt: Maisie Williams spielte Arya Stark in »Game of Thrones« – und sagt nun, sie habe danach nicht weitergewusst. Mittlerweile kriegt sie aber Ratschläge von keinen Geringeren als Nicole Kidman und Sandra Bullock.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T09:49:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ecaa4f8324ba0fb0580c273377a9b02f50e972fd8f6af82cc193924290d88b06",
+          "source_item_id": "2dad0c0aee2c66a2f7dacb3ac5a9802ff48341d9b75dc382c9cd2d505d65d0f4",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T09:49:00.000Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d85e71fe828c5dc5-claim-01",
+          "story_id": "wt-d85e71fe828c5dc5",
+          "claim": "Maisie Williams empfand die Zeit nach »Game of Thrones« als »Hölle«: Schon als Kind wurde sie berühmt: Maisie Williams spielte Arya Stark in »Game of Thrones« – und sagt nun, sie habe danach nicht weitergewusst. Mittlerweile kriegt sie aber Ratschläge von keinen Geringeren als Nicole Kidman und Sandra Bullock.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T10:21:08.621Z"
+        }
+      ],
+      "content_hash": "6e031439ee05edd724b3d35f14e6343e10a5b1d2dc9856c19cc5ca8e679bf552",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T10:36:08.621Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T10:21:08.621Z",
+      "event_first_seen_at": "2026-09-06T10:21:08.621Z",
+      "event_detected_at": "2026-09-06T10:21:08.621Z",
+      "event_id": "event-a1e238f1cf5e16cb7fb5",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 32.143683333333335,
+        "detection_delay_minutes": 32.143683333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T10:21:08.621Z",
+        "fingerprint": "c799cc52f550767d4c9dab9fa18812934041b4013726c7715c4deabeae3f8ac8",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T10:21:08.621Z",
+      "rejection": {
+        "at": "2026-09-06T10:21:08.621Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-2c2124e52b676caa",
       "slug": "filmfestspiele-in-venedig-verruckte-gibt-es-hier-nicht-676caa",
@@ -1078,7 +2332,7 @@
       "verification_started_at": "2026-09-06T09:07:17.006Z",
       "publish_ready_at": "2026-09-06T09:07:27.736Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": "2026-09-06T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -1433,9 +2687,12 @@
         "generated_at": "2026-09-06T09:08:05.546Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-06T10:06:13.084Z",
-        "content_hash": "de72a3602cddc05ae004bde29b692b6de76e2eca8352787e1f813c2372cb8dc5",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "29da4404b91639d1daf61fe3b3b6c3e14c4f4a4017b653bff754f25f46bd227b",
+        "checked_at": "2026-09-06T10:21:08.621Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T16:21:08.621Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -1461,7 +2718,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T08:39:00.000Z",
-            "ingested_at": "2026-09-06T09:06:22.155Z",
+            "ingested_at": "2026-09-06T10:21:08.621Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -1477,7 +2734,7 @@
             "title": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt",
             "summary": "Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T08:45:20.000Z",
+            "published_at": "2026-09-06T10:02:34.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -1493,8 +2750,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T08:45:20.000Z",
-            "ingested_at": "2026-09-06T09:06:22.155Z",
+            "source_published_at": "2026-09-06T10:02:34.000Z",
+            "ingested_at": "2026-09-06T10:21:08.621Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -1503,24 +2760,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T10:06:13.084Z",
-          "fingerprint": "98c998135335d0968bf5e0087414a452d3f9d6caf5770dc3e95471769288eee4",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-da5c012392ca5f89",
@@ -4617,11 +5859,433 @@
       "deepening_checks": 1
     },
     {
+      "story_id": "wt-812148f3635566a6",
+      "slug": "umstrittene-reformplane-100-tage-programm-wie-die-afd-in-sachsen-anhalt-das-bildungssyst-5566a6",
+      "title": "Umstrittene Reformpläne: 100-Tage-Programm: Wie die AfD in Sachsen-Anhalt das Bildungssystem ändern will",
+      "first_seen": "2026-09-06T07:10:00.000Z",
+      "last_updated": "2026-09-06T07:10:00.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/wahl-in-sachsen-anhalt-2026--wie-die-afd-das-bildungssystem-veraendern-will-38140406.html",
+          "title": "Umstrittene Reformpläne: 100-Tage-Programm: Wie die AfD in Sachsen-Anhalt das Bildungssystem ändern will",
+          "summary": "Weniger Inklusion, keine Regenbogenflaggen, das Aus der Schulpflicht – die AfD wirbt für radikale Bildungsreformen in Sachsen-Anhalt. Doch viele sehen die Pläne äußerst kritisch.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:10:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c4bffd82a2fc4c66ca69bd29d47cdba4d3ce716c3d5ad983b63becf3a08b6930",
+          "source_item_id": "a1d5ae0a5428313f8f9b017ecae181eb6fadf94eda317e062669567a9e84d8ca",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:10:00.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-812148f3635566a6-claim-01",
+          "story_id": "wt-812148f3635566a6",
+          "claim": "Umstrittene Reformpläne: 100-Tage-Programm: Wie die AfD in Sachsen-Anhalt das Bildungssystem ändern will: Weniger Inklusion, keine Regenbogenflaggen, das Aus der Schulpflicht – die AfD wirbt für radikale Bildungsreformen in Sachsen-Anhalt. Doch viele sehen die Pläne äußerst kritisch.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        }
+      ],
+      "content_hash": "958261de01171cb090292f53cc2fe218b4449712f8e31bba0a7ba1f282da7b08",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T07:31:30.989Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:16:30.989Z",
+      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
+      "event_detected_at": "2026-09-06T07:16:30.989Z",
+      "event_id": "event-1f28dd97362517bfd26b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.516483333333333,
+        "detection_delay_minutes": 6.516483333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:16:30.989Z",
+        "fingerprint": "58387114d18a11e44f3289081156c4d640c3b8ebdded57b1c2632dbd369b3326",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:16:30.989Z",
+      "rejection": {
+        "at": "2026-09-06T07:16:30.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-ecf4b205df1ecac3",
+      "slug": "kriegsfolgen-bombenentscharfung-tausende-kieler-mussen-aus-wohnungen-1ecac3",
+      "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
+      "first_seen": "2026-09-06T07:01:51.000Z",
+      "last_updated": "2026-09-06T07:01:51.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-muessen-aus-wohnungen-38212366.html",
+          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
+          "summary": "In Kiel ist eine 250-Kilo-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Sonntagnachmittag nicht zu Hause verbringen. Das sind die Vorkehrungen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:01:51.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "afa22bd14db3b7104db5a246ad2d33d1288a59f1ec64d0d422035cf4758ed4f0",
+          "source_item_id": "ece9a49829da72c11fef3a399f12cf12fdd576e742a8a144eda9c2bcab100c88",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:01:51.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ecf4b205df1ecac3-claim-01",
+          "story_id": "wt-ecf4b205df1ecac3",
+          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen: In Kiel ist eine 250-Kilo-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Sonntagnachmittag nicht zu Hause verbringen. Das sind die Vorkehrungen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        }
+      ],
+      "content_hash": "e833835558897d8dc632efac2b350d26b3f766b7b47cb5f3e1bfbd87596d69a8",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T07:31:30.989Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:16:30.989Z",
+      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
+      "event_detected_at": "2026-09-06T07:16:30.989Z",
+      "event_id": "event-c1061c18db8a491c241b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.666483333333334,
+        "detection_delay_minutes": 14.666483333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:16:30.989Z",
+        "fingerprint": "5ede5826e093c027e109a6bd0ad01ad90ade1ceefbd4fa40d595afe60b29c01d",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:16:30.989Z",
+      "rejection": {
+        "at": "2026-09-06T07:16:30.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-abe8f1ad00728254",
+      "slug": "hammarskjold-kampf-fur-den-frieden-ein-polit-thriller-aus-dem-wahren-leben-728254",
+      "title": "\"Hammarskjöld – Kampf für den Frieden\": Ein Polit-Thriller aus dem wahren Leben",
+      "first_seen": "2026-09-06T07:00:10.000Z",
+      "last_updated": "2026-09-06T07:00:10.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/kultur/tv/ein-polit-thriller-aus-dem-wahren-leben-38212352.html",
+          "title": "\"Hammarskjöld – Kampf für den Frieden\": Ein Polit-Thriller aus dem wahren Leben",
+          "summary": "Ein hochrangiger Diplomat, dessen Ideale in den Wirren von Entkolonisierung und Kaltem Krieg auf eine harte Probe gestellt werden: 3sat zeigt das Biopic-Drama \"Hammarskjöld\" als Free-TV-Premiere.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:00:10.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "a24f6d11c7f166914ab85674e7b0fb596b316abfa64e6d17d9b44016b734497c",
+          "source_item_id": "bbd065153761162147f805bf3efa5da20fe51b256acb83985039d741d00f3dec",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:00:10.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-abe8f1ad00728254-claim-01",
+          "story_id": "wt-abe8f1ad00728254",
+          "claim": "\"Hammarskjöld – Kampf für den Frieden\": Ein Polit-Thriller aus dem wahren Leben: Ein hochrangiger Diplomat, dessen Ideale in den Wirren von Entkolonisierung und Kaltem Krieg auf eine harte Probe gestellt werden: 3sat zeigt das Biopic-Drama \"Hammarskjöld\" als Free-TV-Premiere.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:16:30.989Z"
+        }
+      ],
+      "content_hash": "e10d558dd553f5f475e60588661cb606cf435a6c961c2b32701df009750bcffb",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T07:31:30.989Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:16:30.989Z",
+      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
+      "event_detected_at": "2026-09-06T07:16:30.989Z",
+      "event_id": "event-d8952447920a8241685b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.349816666666666,
+        "detection_delay_minutes": 16.349816666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:16:30.989Z",
+        "fingerprint": "ac5fc698103594c0b099fc732724fba6146f61e2f10f9a18aeba3d5bf4b2a0fe",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:16:30.989Z",
+      "rejection": {
+        "at": "2026-09-06T07:16:30.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
       "story_id": "wt-5072789df611867b",
       "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
       "title": "Sachsen-Anhalt und die Tücken der Umfragen",
       "first_seen": "2026-09-04T06:45:02.000Z",
-      "last_updated": "2026-09-06T07:18:00.000Z",
+      "last_updated": "2026-09-06T06:36:00.000Z",
       "topic": [
         "Demokratie",
         "Wirtschaft",
@@ -5217,7 +6881,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T18:32:23.000Z",
-          "ingested_at": "2026-09-06T09:51:17.221Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -5250,7 +6914,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:57:00.000Z",
-          "ingested_at": "2026-09-06T09:51:17.221Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -5264,13 +6928,13 @@
           "publisher": "taz",
           "url": "https://taz.de/Sachsen-Anhalt/!6210514",
           "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
-          "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: Das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
+          "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
           "source_type": "media_rss",
           "published_at": "2026-09-06T06:36:00.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Gesellschaft",
-          "content_hash": "4bf0ae8999a493eb38a43523468d423c918dbf51763f69537bad330ddb2a6a66",
+          "content_hash": "cedb03632c290325084c9ed10d0ef1498e806262abaf1cd167cc7e0603b84dce",
           "source_item_id": "f363844a39f1eb4c8196fcc3e09e309040f6e7b42f9942bb90cf76341686c882",
           "publisher_id": "taz",
           "publisher_kind": "journalism",
@@ -5283,7 +6947,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:36:00.000Z",
-          "ingested_at": "2026-09-06T09:51:17.221Z",
+          "ingested_at": "2026-09-06T10:21:08.621Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -5312,7 +6976,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -5332,7 +6996,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -5352,7 +7016,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -5372,7 +7036,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -5392,7 +7056,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -5412,7 +7076,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -5432,7 +7096,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -5452,7 +7116,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -5472,7 +7136,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -5492,7 +7156,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -5512,7 +7176,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -5532,7 +7196,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -5552,7 +7216,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -5572,7 +7236,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -5592,7 +7256,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -5612,7 +7276,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -5632,7 +7296,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -5652,7 +7316,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -5672,7 +7336,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -5692,12 +7356,12 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
           "story_id": "wt-5072789df611867b",
-          "claim": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße: Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: Das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
+          "claim": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße: Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "taz-aktuell",
           "source_function": "journalistic_report",
@@ -5712,10 +7376,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         }
       ],
-      "content_hash": "7d76672bcb27aaf77e2849949310f833c46b9022fde6cc538f22ff0ead56a4b3",
+      "content_hash": "cb6a0074639070a3b26a2c8d84b3750ff2738e2702588a972c7e7f6b6197a703",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
@@ -5728,7 +7392,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T10:06:13.084Z",
+      "updated_at": "2026-09-06T10:21:08.621Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -5771,447 +7435,25 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 168.21806666666666,
+        "source_age_minutes": 183.14368333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3074.49875,
+        "queue_age_minutes": 3089.4243666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 65,
+        "news_freshness_score": 62,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T10:06:13.084Z",
-        "fingerprint": "c0666f4f3b1c5b3bc5aa2f6a4e52eb5f4b33eb4b0b9f4718c139c795c4d4179b",
+        "checked_at": "2026-09-06T10:21:08.621Z",
+        "fingerprint": "da5957a2d5973bb8347f2121d629188a6bad353f609cac3220931cba0eb170de",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
         ],
         "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-812148f3635566a6",
-      "slug": "umstrittene-reformplane-100-tage-programm-wie-die-afd-in-sachsen-anhalt-das-bildungssyst-5566a6",
-      "title": "Umstrittene Reformpläne: 100-Tage-Programm: Wie die AfD in Sachsen-Anhalt das Bildungssystem ändern will",
-      "first_seen": "2026-09-06T07:10:00.000Z",
-      "last_updated": "2026-09-06T07:10:00.000Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/wahl-in-sachsen-anhalt-2026--wie-die-afd-das-bildungssystem-veraendern-will-38140406.html",
-          "title": "Umstrittene Reformpläne: 100-Tage-Programm: Wie die AfD in Sachsen-Anhalt das Bildungssystem ändern will",
-          "summary": "Weniger Inklusion, keine Regenbogenflaggen, das Aus der Schulpflicht – die AfD wirbt für radikale Bildungsreformen in Sachsen-Anhalt. Doch viele sehen die Pläne äußerst kritisch.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T07:10:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "c4bffd82a2fc4c66ca69bd29d47cdba4d3ce716c3d5ad983b63becf3a08b6930",
-          "source_item_id": "a1d5ae0a5428313f8f9b017ecae181eb6fadf94eda317e062669567a9e84d8ca",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T07:10:00.000Z",
-          "ingested_at": "2026-09-06T07:16:30.989Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-812148f3635566a6-claim-01",
-          "story_id": "wt-812148f3635566a6",
-          "claim": "Umstrittene Reformpläne: 100-Tage-Programm: Wie die AfD in Sachsen-Anhalt das Bildungssystem ändern will: Weniger Inklusion, keine Regenbogenflaggen, das Aus der Schulpflicht – die AfD wirbt für radikale Bildungsreformen in Sachsen-Anhalt. Doch viele sehen die Pläne äußerst kritisch.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:16:30.989Z"
-        }
-      ],
-      "content_hash": "958261de01171cb090292f53cc2fe218b4449712f8e31bba0a7ba1f282da7b08",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-06T07:31:30.989Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T07:16:30.989Z",
-      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
-      "event_detected_at": "2026-09-06T07:16:30.989Z",
-      "event_id": "event-1f28dd97362517bfd26b",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesellschaft"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 6.516483333333333,
-        "detection_delay_minutes": 6.516483333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T07:16:30.989Z",
-        "fingerprint": "58387114d18a11e44f3289081156c4d640c3b8ebdded57b1c2632dbd369b3326",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T07:16:30.989Z",
-      "rejection": {
-        "at": "2026-09-06T07:16:30.989Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-ecf4b205df1ecac3",
-      "slug": "kriegsfolgen-bombenentscharfung-tausende-kieler-mussen-aus-wohnungen-1ecac3",
-      "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
-      "first_seen": "2026-09-06T07:01:51.000Z",
-      "last_updated": "2026-09-06T07:01:51.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-muessen-aus-wohnungen-38212366.html",
-          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
-          "summary": "In Kiel ist eine 250-Kilo-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Sonntagnachmittag nicht zu Hause verbringen. Das sind die Vorkehrungen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T07:01:51.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "afa22bd14db3b7104db5a246ad2d33d1288a59f1ec64d0d422035cf4758ed4f0",
-          "source_item_id": "ece9a49829da72c11fef3a399f12cf12fdd576e742a8a144eda9c2bcab100c88",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T07:01:51.000Z",
-          "ingested_at": "2026-09-06T07:16:30.989Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-ecf4b205df1ecac3-claim-01",
-          "story_id": "wt-ecf4b205df1ecac3",
-          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen: In Kiel ist eine 250-Kilo-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Sonntagnachmittag nicht zu Hause verbringen. Das sind die Vorkehrungen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:16:30.989Z"
-        }
-      ],
-      "content_hash": "e833835558897d8dc632efac2b350d26b3f766b7b47cb5f3e1bfbd87596d69a8",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-06T07:31:30.989Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T07:16:30.989Z",
-      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
-      "event_detected_at": "2026-09-06T07:16:30.989Z",
-      "event_id": "event-c1061c18db8a491c241b",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 14.666483333333334,
-        "detection_delay_minutes": 14.666483333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T07:16:30.989Z",
-        "fingerprint": "5ede5826e093c027e109a6bd0ad01ad90ade1ceefbd4fa40d595afe60b29c01d",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T07:16:30.989Z",
-      "rejection": {
-        "at": "2026-09-06T07:16:30.989Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-abe8f1ad00728254",
-      "slug": "hammarskjold-kampf-fur-den-frieden-ein-polit-thriller-aus-dem-wahren-leben-728254",
-      "title": "\"Hammarskjöld – Kampf für den Frieden\": Ein Polit-Thriller aus dem wahren Leben",
-      "first_seen": "2026-09-06T07:00:10.000Z",
-      "last_updated": "2026-09-06T07:00:10.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/kultur/tv/ein-polit-thriller-aus-dem-wahren-leben-38212352.html",
-          "title": "\"Hammarskjöld – Kampf für den Frieden\": Ein Polit-Thriller aus dem wahren Leben",
-          "summary": "Ein hochrangiger Diplomat, dessen Ideale in den Wirren von Entkolonisierung und Kaltem Krieg auf eine harte Probe gestellt werden: 3sat zeigt das Biopic-Drama \"Hammarskjöld\" als Free-TV-Premiere.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T07:00:10.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "a24f6d11c7f166914ab85674e7b0fb596b316abfa64e6d17d9b44016b734497c",
-          "source_item_id": "bbd065153761162147f805bf3efa5da20fe51b256acb83985039d741d00f3dec",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T07:00:10.000Z",
-          "ingested_at": "2026-09-06T07:16:30.989Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-abe8f1ad00728254-claim-01",
-          "story_id": "wt-abe8f1ad00728254",
-          "claim": "\"Hammarskjöld – Kampf für den Frieden\": Ein Polit-Thriller aus dem wahren Leben: Ein hochrangiger Diplomat, dessen Ideale in den Wirren von Entkolonisierung und Kaltem Krieg auf eine harte Probe gestellt werden: 3sat zeigt das Biopic-Drama \"Hammarskjöld\" als Free-TV-Premiere.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:16:30.989Z"
-        }
-      ],
-      "content_hash": "e10d558dd553f5f475e60588661cb606cf435a6c961c2b32701df009750bcffb",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-06T07:31:30.989Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T07:16:30.989Z",
-      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
-      "event_detected_at": "2026-09-06T07:16:30.989Z",
-      "event_id": "event-d8952447920a8241685b",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 16.349816666666666,
-        "detection_delay_minutes": 16.349816666666666,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T07:16:30.989Z",
-        "fingerprint": "ac5fc698103594c0b099fc732724fba6146f61e2f10f9a18aeba3d5bf4b2a0fe",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T07:16:30.989Z",
-      "rejection": {
-        "at": "2026-09-06T07:16:30.989Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
       }
     },
     {
@@ -8120,7 +9362,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T10:06:13.084Z",
+          "checked_at": "2026-09-06T10:21:08.621Z",
           "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
           "issue_codes": [],
           "warning_codes": []
@@ -8894,7 +10136,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T10:06:13.084Z",
+          "checked_at": "2026-09-06T10:21:08.621Z",
           "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
           "issue_codes": [],
           "warning_codes": []
@@ -28588,7 +29830,7 @@
       "verification_started_at": "2026-09-05T07:06:40.950Z",
       "publish_ready_at": "2026-09-05T07:06:50.393Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -29019,16 +30261,16 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "96d930ce23e612089bf29162d6d8893c90f5eaded503e4bb59eb2616265a1e96",
-        "checked_at": "2026-09-05T10:57:29.473Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "ec31e8719786fc4c0f155719ee755379c7557c8df37cefe747c5c79239689805",
+        "checked_at": "2026-09-06T10:21:08.621Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-05T16:57:29.473Z",
+        "expires_at": "2026-09-06T16:21:08.621Z",
         "sources": [
           {
             "source_id": "euronews-en",
             "publisher": "Euronews",
-            "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
+            "url": "https://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
             "title": "At least two killed and 81 injured after explosions at Bolivian army base",
             "summary": "The Bolivian Defence Minister said the first explosion \"involved black powder from pyrotechnic material stored at the site,\" while the second, \"much larger\" blast was still being investigated.",
             "source_type": "media_rss",
@@ -29036,8 +30278,8 @@
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Europa",
-            "content_hash": "3a362cedab86bae56dc37e159e1503119cc3e8f1286ae9529c2c7768f41fa8a9",
-            "source_item_id": "a5812bffb14cc989cab45455825d8efb61256f386f1845b6c1425391f592b52a",
+            "content_hash": "d258405c501ab75b90eda9e111882b228b1e2eaf02f4bbe51b43d1ceec448e47",
+            "source_item_id": "8a15e2879fabc16adf84b84371a95a553c4c0d3e2f0810fde8fdbd52c32faf1f",
             "publisher_id": "euronews",
             "publisher_kind": "journalism",
             "source_role": "journalistic_report",
@@ -29049,7 +30291,9 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:51:02.000Z",
-            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "ingested_at": "2026-09-06T10:21:08.621Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
             "provenance": {
               "origin": "publisher:euronews",
               "basis": "publisher_only_origin_unverified",
@@ -29058,7 +30302,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
+      "deepening_checks": 3,
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
@@ -29074,64 +30318,7 @@
           "type": "source_integrity",
           "note": "Die technische Quellenzuordnung wurde anhand der tatsächlichen Zieladresse korrigiert; Inhalt und Belegstatus wurden erneut geprüft."
         }
-      ],
-      "pending_update": {
-        "detected_at": "2026-09-06T10:06:13.084Z",
-        "content_hash": "9db31d4d11e4d69e842532adf04a9922c95ce5f2786543b5d842ec4a8dc90ac7",
-        "sources": [
-          {
-            "source_id": "euronews-en",
-            "publisher": "Euronews",
-            "url": "http://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
-            "title": "At least two killed and 81 injured after explosions at Bolivian army base",
-            "summary": "The Bolivian Defence Minister said the first explosion \"involved black powder from pyrotechnic material stored at the site,\" while the second, \"much larger\" blast was still being investigated.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T06:51:02.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Europa",
-            "content_hash": "3a362cedab86bae56dc37e159e1503119cc3e8f1286ae9529c2c7768f41fa8a9",
-            "source_item_id": "a5812bffb14cc989cab45455825d8efb61256f386f1845b6c1425391f592b52a",
-            "publisher_id": "euronews",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "EU",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T06:51:02.000Z",
-            "ingested_at": "2026-09-05T10:23:53.587Z",
-            "provenance": {
-              "origin": "publisher:euronews",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "SOURCE_INTEGRITY_OPEN",
-        "quality_errors": [
-          "SOURCE_URL_INVALID"
-        ],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "open",
-          "publication_status": "hold",
-          "version": "1.0",
-          "checked_at": "2026-09-06T10:06:13.084Z",
-          "fingerprint": "c80c77c11dfffb66073cb2f822cccea2aa87e1c7ecb698dc63ffd9e05748283c",
-          "issue_codes": [
-            "SOURCE_URL_INVALID"
-          ],
-          "warning_codes": []
-        }
-      }
+      ]
     },
     {
       "story_id": "wt-aabe8c0430bf8f84",
@@ -63188,7 +64375,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T08:56:13.000Z",
-            "ingested_at": "2026-09-06T09:51:17.221Z",
+            "ingested_at": "2026-09-06T10:21:08.621Z",
             "provenance": {
               "origin": "publisher:wdr",
               "basis": "publisher_only_origin_unverified",
@@ -63211,7 +64398,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-06T10:06:13.084Z",
+          "checked_at": "2026-09-06T10:21:08.621Z",
           "fingerprint": "4859907217abb38878f583104d44f9a91d08c8eed99ba2c5d063d5e14f7f4603",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -127864,7 +129051,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T10:06:13.084Z"
+          "checked_at": "2026-09-06T10:21:08.621Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -127879,7 +129066,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T10:06:13.084Z",
+      "updated_at": "2026-09-06T10:21:08.621Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -127915,11 +129102,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4063.218066666667,
+        "source_age_minutes": 4078.1436833333332,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3584.934566666667,
+        "queue_age_minutes": 3599.860183333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -127928,7 +129115,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T10:06:13.084Z",
+        "checked_at": "2026-09-06T10:21:08.621Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
@@ -137961,5 +139148,5 @@
       }
     }
   ],
-  "public_updated_at": "2026-09-06T09:06:22.155Z"
+  "public_updated_at": "2026-09-06T10:21:08.621Z"
 }
