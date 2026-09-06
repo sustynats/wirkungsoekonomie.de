@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260904-cases1";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260906-pull-refresh1";
 const NEWS_STATE_CACHE = "woek-wirkungsticker-notification-state-v1";
 const NEWS_STATE_URL = "/wirkungsticker/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-wirkungsticker-updates";
@@ -78,6 +78,11 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (request.method !== "GET" || url.origin !== self.location.origin || !url.pathname.startsWith("/wirkungsticker/")) return;
   if (url.pathname === "/wirkungsticker/feed.json") {
+    // A freshness probe must never mistake the offline cache for a live reply.
+    if (url.searchParams.has("check")) {
+      event.respondWith(fetch(request, { cache: "no-store" }));
+      return;
+    }
     event.respondWith(networkFirst(request));
     return;
   }
