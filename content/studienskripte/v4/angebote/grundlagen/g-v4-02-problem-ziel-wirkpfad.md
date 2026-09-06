@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-02-problem-ziel-wirkpfad.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-02-problem-ziel-wirkpfad.md curriculum=4.0 sanitized=true -->
 # G-V4-02 · Von Problem und Ziel zum Wirkpfad
 
 **lecture_id:** `WOEK-WB-G-V4-002`  
@@ -156,3 +156,32 @@ Danach kommt das Ziel. Erst danach die Maßnahme.
 Für die Maßnahme schreiben wir einen einfachen Wirkpfad: Auslöser, Mechanismus, Zustandsänderung, Referenz. A, M, Delta Z, R. Das zwingt uns zu erklären, warum zwischen „wir tun etwas“ und „es wird besser“ überhaupt eine Verbindung bestehen soll.
 
 Vor Umsetzung bleibt das eine Hypothese mit Wirkungspotenzial und Risiko. Später prüfen wir, was tatsächlich passiert ist. Genau diese Trennung macht Entscheidungen lernfähig.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Eine Lösung erst nach der Problemklärung wählen
+
+Ein Problem Review beschreibt den tatsächlich unbefriedigenden Zustand. Der Goal Review prüft anschließend, welcher Zielzustand begründet angestrebt wird. Werden beide Schritte übersprungen, besteht die Gefahr, eine bevorzugte Maßnahme nachträglich mit einer passenden Begründung zu versehen. Die Frage „Welche App brauchen wir?“ sollte beispielsweise nicht vor der Frage stehen, welche Schwierigkeit überhaupt bearbeitet werden soll.
+
+A→M→ΔZ→R verbindet Handlung, Mechanismus, Zustandsveränderung und Referenzraum. Der Pfeil zwischen Handlung und Veränderung ist eine Hypothese, die Bedingungen und Evidenz benötigt. Ein gutes Wirkmodell benennt auch Unterbrechungen und alternative Erklärungen. Dadurch wird sichtbar, welche Information vor einer Entscheidung besonders wichtig ist.
+
+### Durchgearbeiteter Fall: viele Rückfragen zu einem Angebot
+
+Eine fiktive Bildungsstätte erhält zahlreiche Rückfragen zu ihren Kursen. Sie erwägt einen Chatbot. Eine erste Sichtung zeigt jedoch, dass vor allem widersprüchliche Angaben zu Voraussetzungen und Terminen die Fragen auslösen. Das Problem ist damit nicht einfach „zu wenig Automatisierung“, sondern zunächst unklare Information.
+
+Der Zielzustand lautet: Interessierte verstehen Angebot, Voraussetzungen und nächsten Anmeldeschritt. Zwei ernsthafte Optionen sind eine redaktionelle Überarbeitung und ein zusätzliches automatisches Auskunftssystem. Die erste bearbeitet die widersprüchlichen Ausgangsdaten unmittelbar. Die zweite kann nur dann zuverlässig helfen, wenn ihre Informationen korrekt und aktuell sind.
+
+Ein Wirkpfad der Überarbeitung lautet: konsistente Beschreibung erleichtert Verständnis, wodurch weniger vermeidbare Rückfragen und Fehlanmeldungen entstehen. Die Zahl geänderter Texte ist ein Output. Ein Rückgang bestimmter Rückfragen wäre eine beobachtete Veränderung. Ob die Überarbeitung dafür verantwortlich ist, muss unter Berücksichtigung anderer Änderungen geprüft werden. Weniger Rückfragen könnten beispielsweise auch durch schlechter erreichbare Kontaktwege entstehen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Schreibe zum Fall einen Problem Review, einen Goal Review und zwei Wirkpfade. Ergänze jeweils eine notwendige Bedingung und eine alternative Erklärung. Eine gute Lösung prüft nicht nur die Zahl der Rückfragen, sondern auch, ob Interessierte tatsächlich besser informiert sind.
+
+Wähle einen realistischen ersten Schritt und einen Überprüfungstermin. Der Erwartungshorizont verlangt eine begründete Entscheidung zwischen Optionen. Ein Wirkmodell ist dann hilfreich, wenn es diese Entscheidung und eine spätere Korrektur ermöglicht; die bloße Verwendung der Buchstabenfolge reicht nicht aus.

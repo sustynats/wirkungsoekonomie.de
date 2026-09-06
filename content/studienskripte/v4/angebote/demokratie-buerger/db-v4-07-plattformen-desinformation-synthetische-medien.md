@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-07-plattformen-desinformation-synthetische-medien.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-07-plattformen-desinformation-synthetische-medien.md curriculum=4.0 sanitized=true -->
 # DB-V4-07 · Plattformen, Desinformation und synthetische Medien
 
 **lecture_id:** `WOEK-WB-DB-V4-007`  
@@ -73,3 +73,40 @@ Wenn etwas viral geht, wissen wir zuerst nur: Viele Menschen konnten es sehen. D
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Vollständige Neufassung nach Legacy-Reaudit B05; deterministische Psychologie-, Intent-, Reichweiten- und Wirkungsclaims wurden durch evidenzgebundene Potenzial-/Observation-/Attributionslogik ersetzt.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Aktualisierung zum AI Act · 6. September 2026
+
+Der AI Act ist seit 2. August 2026 grundsätzlich anwendbar, mit gestaffelten Ausnahmen. Verbote und KI-Kompetenzpflichten gelten bereits seit Februar 2025, GPAI-Regeln seit August 2025. Nach der aktualisierten Kommissionsübersicht und dem im Juli 2026 in Kraft getretenen AI Omnibus gelten verlängerte Fristen für bestimmte Hochrisikobereiche bis 2. Dezember 2027 und produktintegrierte Hochrisikosysteme bis 2. August 2028. Für den Einzelfall sind Rolle, Systemkategorie und konkrete Vorschrift zu bestimmen. KI-Ergebnisse bleiben überprüfungsbedürftig; Transparenz und menschliche Verantwortung ersetzen keinen Kausalitätsnachweis.
+
+Quelle: [Europäische Kommission, AI Act, aktualisiert am 3. August 2026, mit finalem Omnibus-Rechtstext](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai).
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Sichtbarkeit erklärt weder Wahrheit noch Absicht
+
+Ein Beitrag kann häufig angezeigt werden, weil viele Menschen mit ihm interagieren, weil er beworben wird oder weil eine Plattform ihn bestimmten Nutzern empfiehlt. Aus der eigenen Anzeige allein lässt sich nicht rekonstruieren, warum genau dieser Beitrag erschien. Ebenso belegt eine starke Verbreitung weder seinen Wahrheitsgehalt noch eine koordinierte Täuschung. Die Prüfung beginnt beim konkreten Material und bei den tatsächlich verfügbaren Informationen über seine Verbreitung.
+
+Drei Ebenen helfen: Was behauptet der Inhalt? Was wissen wir über Herkunft und Bearbeitung? Was wissen wir über Auswahl und Verbreitung? Ein Originaldokument kann die erste Frage beantworten, eine nachvollziehbare Bearbeitungskette Teile der zweiten. Angaben über Reichweite oder Anzeigenkennzeichnung betreffen die dritte. Keine Ebene ersetzt die anderen.
+
+Synthetische Medien verschärfen manche Prüfprobleme, schaffen sie aber nicht erst. Ein echtes Bild mit falscher Ortsangabe kann ebenso irreführen wie ein künstlich erzeugtes Bild. Umgekehrt ist eine klar gekennzeichnete Illustration nicht automatisch eine Täuschung. Entscheidend ist, welche Tatsachenbehauptung mit dem Bild verbunden wird und ob die Darstellung ihren Charakter verständlich macht.
+
+### Durchgearbeiteter Fall: ein vermeintliches Ereignisfoto
+
+In einem fiktiven Gruppenchat erscheint ein spektakuläres Bild mit der Behauptung, es sei am selben Tag in der Nachbarstadt aufgenommen worden. Mehrere Personen teilen es weiter. Zunächst lässt sich nur sagen, dass dieses Bild mit dieser Behauptung verbreitet wird. Der Ort und das Datum sind dadurch nicht bestätigt.
+
+Eine vorsichtige Prüfung sucht eine frühere Veröffentlichung, nachvollziehbare Originalangaben und unabhängige Informationen zum behaupteten Ereignis. Auffällige Bilddetails können einen Prüfbedarf anzeigen. Sie sind allein kein zuverlässiger Nachweis einer KI-Erzeugung. Auch ein automatischer Detektor ist kein unfehlbares Urteil und darf nicht die einzige Grundlage einer Anschuldigung sein.
+
+Bis zur Klärung kann eine kurze Antwort genügen: „Für Ort und Datum finde ich hier noch keinen Beleg; bitte vorerst nicht als aktuelles Foto weitergeben.“ Wird später eine frühere Veröffentlichung gefunden, wird genau dieser Befund erklärt. Es ist nicht notwendig, eine unbelegte Geschichte über die Motive aller Personen zu ergänzen, die das Bild geteilt haben.
+
+### Lernarbeit mit Erwartungshorizont
+
+Lege eine Prüfkarte mit Inhalt, Herkunft, Verbreitung und offenen Fragen an. Formuliere je eine zulässige und eine zu weit gehende Schlussfolgerung. Eine gute Lösung hält etwa fest, dass das Bild die behauptete aktuelle Lage nicht belegt, wenn eine ältere Originalfassung nachgewiesen wurde. Sie behauptet nicht automatisch, dass alle Beteiligten absichtlich gelogen hätten.
+
+Ergänze einen eigenen Weitergabe-Entscheid: teilen, nur mit Prüfhinweis diskutieren oder vorerst nicht weitergeben. Begründe ihn mit dem Informationswert und den möglichen Folgen, nicht mit einem pauschalen Vertrauensscore des Absenders. Der persönliche Reality Check prüft, ob du in vergleichbaren Situationen Herkunft und Datierung tatsächlich kontrollierst. Die Anzahl unterlassener Weiterleitungen ist ein Verhaltensindikator; eine gesellschaftliche Gesamtwirkung lässt sich daraus allein nicht ableiten.

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v89-datenschutz-cyberresilienz-digitale-souveraenitaet.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v89-datenschutz-cyberresilienz-digitale-souveraenitaet.md curriculum=4.0 sanitized=true -->
 # V89 · Datenschutz, Cyberresilienz und digitale Souveränität
 
 **lecture_id:** `WOEK-G-BASE-089`  
@@ -289,3 +289,13 @@ Und manchmal ist ein föderiertes System robuster als eine zentrale Riesendatenb
 Der Merksatz lautet:
 
 **Eine gute Wirkungsdatenarchitektur sammelt nicht maximal viele Daten. Sie sammelt die richtigen - und bleibt sicher, korrigierbar und verlassbar.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Aktualisierung zum AI Act · 6. September 2026
+
+Der AI Act ist seit 2. August 2026 grundsätzlich anwendbar, mit gestaffelten Ausnahmen. Verbote und KI-Kompetenzpflichten gelten bereits seit Februar 2025, GPAI-Regeln seit August 2025. Nach der aktualisierten Kommissionsübersicht und dem im Juli 2026 in Kraft getretenen AI Omnibus gelten verlängerte Fristen für bestimmte Hochrisikobereiche bis 2. Dezember 2027 und produktintegrierte Hochrisikosysteme bis 2. August 2028. Für den Einzelfall sind Rolle, Systemkategorie und konkrete Vorschrift zu bestimmen. KI-Ergebnisse bleiben überprüfungsbedürftig; Transparenz und menschliche Verantwortung ersetzen keinen Kausalitätsnachweis.
+
+Quelle: [Europäische Kommission, AI Act, aktualisiert am 3. August 2026, mit finalem Omnibus-Rechtstext](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai).

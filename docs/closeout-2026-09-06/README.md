@@ -34,7 +34,7 @@ Der Textvergleich der lokalen PDFs umfasst 13.376 Seiten und 21.271 ersetzte Str
 
 `assets/data/publication-hygiene-2026-09-06.json` bindet die bereinigten Fassungen an ihre geprüften Hashes. Die Prüfsummen historischer Quellstände bleiben erhalten; eine ausdrücklich dokumentierte technische Berichtigung erlaubt genau die geprüften neuen Bytes. Künftige ungeprüfte Änderungen bleiben gesperrt. Auch die 172 typografisch angepassten Akademie-Master behalten ihren ursprünglichen Quellnachweis.
 
-Die Veröffentlichung umfasst 1.605 PDF- und Office-Assets in sieben bestehenden GitHub Releases. Downloadnamen und URLs werden erhalten. Eine korrigierte Datei wird vor dem Austausch vollständig hochgeladen und gegen die lokale Prüfsumme geprüft. Die Release-Beschreibungen weisen die technische Berichtigung vom 6. September 2026 aus.
+Veröffentlicht und serverseitig per SHA-256 und Dateigröße geprüft sind 1.605 PDF- und Office-Assets in sieben bestehenden GitHub Releases sowie neun zugehörige Manifest- und Prüfsummendateien. Downloadnamen und URLs sind erhalten; es verbleiben keine temporären Upload-Assets. Eine korrigierte Datei wird vor dem Austausch vollständig hochgeladen und gegen die lokale Prüfsumme geprüft. Die Release-Beschreibungen weisen die technische Berichtigung vom 6. September 2026 aus.
 
 ## Archivierung und Speicher
 

@@ -5,10 +5,63 @@ import { prepareReviewedStory } from "../../scripts/news/publish-reviewed.mjs";
 import { loadNewsRegistry } from "../../scripts/news/registry.mjs";
 import { sourceIntegrityForStory } from "../../scripts/news/source-integrity.mjs";
 import { duplicateGroups } from "../../scripts/news/living-files.mjs";
+import { storyPage } from "../../scripts/news/build.mjs";
 
 const review = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/sachsen-anhalt-kandidatur-2026-09-05.json", import.meta.url)));
 const registry = loadNewsRegistry(new URL("../../", import.meta.url).pathname);
 const now = "2026-09-05T23:00:00Z";
+
+const mediaReview = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/seelze-media-2026-09-06.json", import.meta.url)));
+function originalMediaStory() {
+  const item = structuredClone(JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories.find(story => story.story_id === mediaReview.story_id));
+  item.title = item.sources[0].title;
+  item.analysis = structuredClone(item.versions[0].analysis);
+  item.source_summary = item.versions[0].source_summary;
+  item.current_version = 1;
+  item.versions = item.versions.slice(0, 1);
+  delete item.corrections;
+  return item;
+}
+
+test("media-only review preserves event, sources, claims, scores and history", () => {
+  const original = originalMediaStory();
+  const copy = structuredClone(original);
+  const result = prepareReviewedStory(mediaReview, registry, [original], "2026-09-06T11:40:00Z");
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(original, copy, "preparation must not mutate its input");
+  const record = result.record;
+  for (const key of ["story_id", "slug", "event_id", "content_hash", "published_at", "claims", "sources", "source_summary"]) assert.deepEqual(record[key], original[key], key);
+  for (const key of Object.keys(original.analysis).filter(key => !key.startsWith("media_"))) assert.deepEqual(record.analysis[key], original.analysis[key], key);
+  assert.equal(record.title, "Großbrand zerstört Sonderpostenmarkt in Seelze");
+  assert.deepEqual(record.versions[0], original.versions[0]);
+  assert.equal(record.versions[1].previous_title, original.title);
+  assert.equal(record.versions[1].self_frame_rewrites, 1);
+  assert.equal(record.current_version, 2);
+  assert.equal(record.analysis.media_impact.observed_impact.present, false);
+  assert.equal(record.analysis.media_impact.discourse_effect.repetition_risk, "open");
+  assert.equal(record.analysis.media_impact.source_comparison.sufficient_basis, false);
+  const html = storyPage(record);
+  assert.match(html, /id="medienwirkung"/);
+  assert.ok(html.includes(mediaReview.correction_note));
+  assert.match(html, /Eine solche Wiederholung und ein Illusory-Truth-Effekt sind für diesen Fall nicht nachgewiesen/);
+  assert.ok(html.includes(original.sources[0].title), "Originalheadline stays visible at the source");
+  assert.equal(prepareReviewedStory(mediaReview, registry, [record], "2026-09-06T11:45:00Z").unchanged, true);
+});
+
+test("media-only review rejects changed source content or wrong publisher URL", () => {
+  const original = originalMediaStory();
+  original.content_hash = "changed";
+  assert.throws(() => prepareReviewedStory(mediaReview, registry, [original], "2026-09-06T11:40:00Z"), /EDITORIAL_MEDIA_SOURCE_CHANGED/);
+  original.content_hash = mediaReview.expected_content_hash;
+  original.sources[0].url = "https://example.org/wrong";
+  assert.ok(prepareReviewedStory(mediaReview, registry, [original], "2026-09-06T11:40:00Z").errors.includes("SOURCE_PUBLISHER_URL_MISMATCH"));
+});
+
+test("media-only review cannot bypass the no-intent quality gate", () => {
+  const wrong = structuredClone(mediaReview);
+  wrong.media_impact.editorial_assessment = "Die Redaktion will manipulieren.";
+  assert.ok(prepareReviewedStory(wrong, registry, [originalMediaStory()], "2026-09-06T11:40:00Z").errors.includes("MEDIA_INTENT_ATTRIBUTION_NOT_ALLOWED"));
+});
 
 test("reviewed election story passes production source, evidence, media and self-frame gates", () => {
   const result = prepareReviewedStory(review, registry, [], now);

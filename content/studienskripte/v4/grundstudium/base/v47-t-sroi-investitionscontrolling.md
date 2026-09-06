@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v47-t-sroi-investitionscontrolling.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v47-t-sroi-investitionscontrolling.md curriculum=4.0 sanitized=true -->
 # V47 · T-SROI im Investitionscontrolling - WÖk-Erweiterung eines etablierten SROI-Ansatzes
 
 **lecture_id:** `WOEK-G-BASE-047`  
@@ -268,3 +268,13 @@ Ein Grundrecht oder eine harte ökologische Grenze wird nicht dadurch verhandelb
 Der Merksatz lautet:
 
 **T-SROI ist kein Zauberrechner für den gesellschaftlichen Wert. Es ist ein transparentes Modell - und seine Aussage ist nur so stark wie Gegenfaktum, Attribution und Proxies.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### NWI und T-SROI eindeutig benennen
+
+**WÖk-Netto-Wirkungs-Index (WÖk-NWI)** bezeichnet hier ein WÖk-eigenes Modell. Er ist nicht der **Nationale Wohlfahrtsindex (NWI)**, den das Umweltbundesamt als ergänzende Wohlfahrtsgröße beschreibt. Verwende in Tabellen, Folien und Berechnungen stets den ausgeschriebenen Namen mit Version und Geltungsbereich. [UBA: Nationaler Wohlfahrtsindex](https://www.umweltbundesamt.de/indikator-nationaler-wohlfahrtsindex).
+
+**T-SROI** wird als WÖk-Konzept beziehungsweise modellhafter Analyseansatz kenntlich gemacht. Ein konkretes Rechenverfahren erfordert eine benannte Methodenversion, Systemgrenzen, Zeithorizonte, monetäre Annahmen, Gegenfaktum, Sensitivitäten und Nichtkompensation. Ein Verhältniswert allein ist weder Transformationswirkung noch ein international einheitlich normierter Nachweis. Der etablierte SROI-Ansatz und die WÖk-Erweiterung dürfen nicht gleichgesetzt werden.

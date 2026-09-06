@@ -2,26 +2,68 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-06T11:24:21.866Z",
-  "scanned_stories": 98,
-  "scanned_subjects": 84,
-  "editorial_candidates": 15,
-  "ready_for_research": 3,
+  "started_at": "2026-09-06T11:53:33.246Z",
+  "scanned_stories": 99,
+  "scanned_subjects": 85,
+  "editorial_candidates": 16,
+  "ready_for_research": 4,
   "research_pending": 5,
   "retry_deferred": 3,
   "editorial_research_sources_discovered": 12,
-  "selected": 0,
-  "editorial_research_started": 0,
-  "editorial_analyses_published": 0,
+  "selected": 1,
+  "editorial_research_started": 1,
+  "editorial_analyses_published": 1,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
+  "research_calls": 1,
+  "research_tokens": 5045,
+  "analysis_tokens": 5257,
+  "estimated_cost_usd": 0.02744,
   "quality_retries": 0,
   "publication_deferred": false,
   "failed": [],
   "candidates": [
+    {
+      "story_id": "wt-cf03acddb911d861",
+      "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
+      "story_title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+      "editorial_analysis_score": 73,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "2f2b82710b0f861b0a1ae02287680ad6f589dd63664b20ca92312f5602829f66",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-995822cc0b71a7f8",
       "story_slug": "statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannu-71a7f8",
@@ -666,5 +708,6 @@
       "status": "published",
       "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
-  ]
+  ],
+  "completed_at": "2026-09-06T11:54:01.087Z"
 }

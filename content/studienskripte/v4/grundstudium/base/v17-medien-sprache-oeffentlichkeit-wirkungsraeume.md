@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v17-medien-sprache-oeffentlichkeit-wirkungsraeume.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v17-medien-sprache-oeffentlichkeit-wirkungsraeume.md curriculum=4.0 sanitized=true -->
 # V17 · Medien, Sprache und Öffentlichkeit als Wirkungsräume
 
 **lecture_id:** `WOEK-G-BASE-017`  
@@ -96,3 +96,32 @@ Prüfungsfähig sind Zwei-Ebenen-Trennung, Kommunikationswirkpfad, Frame/Narrati
 ## Sprechertext
 
 Eine politische Botschaft kann Millionen Menschen erreichen. Das ist erst einmal Reichweite. Ob sie informiert, verunsichert, Vertrauen stärkt oder Gruppen gegeneinander stellt, ist eine weitere Frage. Deshalb zerlegen wir Kommunikation in einen Wirkpfad. Und wir machen noch etwas Wichtiges: Wir bewerten die Kommunikation getrennt von der Sachmaßnahme. Ein Gesetz kann gut wirken und schlecht erklärt werden - oder umgekehrt. So vermeiden wir, dass rhetorische Analyse heimlich zur Politikbewertung wird.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Die Übergänge von Sichtbarkeit zu Verhalten einzeln prüfen
+
+Kommunikation kann einen Inhalt verfügbar machen, Aufmerksamkeit auslösen, eine Interpretation beeinflussen und unter bestimmten Bedingungen zu verändertem Verhalten beitragen. Diese Übergänge sind nicht identisch. Exposure bezeichnet Kontakt oder mögliche Exposition. Interpretation betrifft das Verständnis. Resonanz beschreibt hier die Anschlussfähigkeit in einem bestimmten Kontext. Ein Outcome verlangt eine tatsächlich beobachtete Zustandsveränderung.
+
+Framing oder Narrative können Wirkmechanismen strukturieren. Ihre bloße Identifikation beweist jedoch keine bestimmte Wirkung auf alle Empfänger. Auch Plattformverstärkung ist eine Bedingung, deren Bedeutung fallbezogen geprüft werden muss. Ein hoher Verbreitungswert beantwortet die Frage nach Verständnis, Bewertung oder Handlung nicht von selbst.
+
+### Durchgearbeiteter Fall: eine geänderte Erklärung
+
+Eine fiktive Einrichtung überarbeitet ihre Informationen zu einem Antrag. Die neue Fassung erklärt Voraussetzungen und häufige Fehler in einfacher Sprache. Die Seitenaufrufe steigen. Gleichzeitig sinkt der Anteil unvollständiger Anträge. Die erste Beobachtung betrifft Nutzung, die zweite einen relevanten Prozesszustand. Für eine kausale Zuschreibung müssen unter anderem geänderte Anforderungen, Fallzusammensetzung und weitere Beratungsangebote geprüft werden.
+
+Ein plausibler Wirkpfad lautet: verständlichere Information erleichtert die korrekte Vorbereitung, wodurch weniger Rückfragen erforderlich werden. Er kann durch Verständnisprüfungen und dokumentierte Fehlerarten gestützt werden. Eine größere Reichweite allein genügt dafür nicht. Die neue Fassung könnte außerdem bestimmte Ausnahmen zu stark verkürzen und dadurch einzelne Gruppen fehlleiten.
+
+Die Analyse trennt deshalb die Wirkung der Kommunikation von der Wirkung der dahinterliegenden Leistung. Ein klarer Antragstext kann den Zugang verbessern, ohne die Kapazität der Leistung selbst zu erhöhen. Eine steigende Nachfrage könnte sogar neue Wartezeiten sichtbar machen. Diese Folge gehört in einen weiteren Wirkpfad.
+
+### Lernarbeit mit Erwartungshorizont
+
+Erstelle für den Fall eine Kette aus Exposition, Verständnis, Handlung und Zustandsveränderung. Ordne jeder Stufe eine mögliche Beobachtung und eine typische Fehlschlussgefahr zu. Eine gute Lösung nennt mindestens eine alternative Erklärung und eine Gruppe, für die die vereinfachte Darstellung anders wirken könnte.
+
+Formuliere eine angemessene Erfolgsmeldung. Sie darf den beobachteten Rückgang unvollständiger Anträge benennen, muss aber die noch offene Zurechnung kenntlich machen. Die Prüfung bewertet empirische Sorgfalt und Verständlichkeit, keine moralische Benotung der Sprache oder der angesprochenen Menschen.

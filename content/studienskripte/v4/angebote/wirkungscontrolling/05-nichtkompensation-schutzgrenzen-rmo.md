@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/05-nichtkompensation-schutzgrenzen-rmo.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/05-nichtkompensation-schutzgrenzen-rmo.md curriculum=4.0 sanitized=true -->
 # WC-V4-05 · Nichtkompensation, Schutzgrenzen und Reverse Merit Order
 
 **lecture_id:** `WOEK-WB-WC-V4-005`  
@@ -94,3 +94,32 @@ Version 4.0 · Stand 21.08.2026. Legacy Minimumformel korrigiert; Nichtkompensat
 ## Sprechertext
 
 Der Satz „das schwächste Feld entscheidet“ klingt griffig - und ist zu grob. v4 fragt genauer: Ist dieses Feld materiell? Berührt es eine harte Grenze? Ist der Schaden reversibel? Wie sicher ist der Befund? Erst dann entscheidet sich, ob eine Grenze greift, ob Mitigation reicht oder ob eine Option ausscheidet. So verhindert man gleichzeitig Schönrechnen und mechanische Score-Logik.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Schutzbedingungen vor der Verrechnung prüfen
+
+Nichtkompensation begrenzt die Möglichkeit, Vorteile und Nachteile zu einer Gesamtnote zusammenzufassen. Eine konkret anwendbare harte Schutzgrenze bleibt auch bei erheblichen Vorteilen in anderen Feldern wirksam. Ihr Status muss nachvollziehbar sein: Handelt es sich um eine rechtliche Anforderung, eine wissenschaftlich begründete Schwelle, eine Sicherheitsbedingung oder ein zusätzliches internes Ziel?
+
+Reverse Merit Order kann die Priorität materiell kritischer Felder sichtbar machen. Sie ist kein allgemeiner Algorithmus, der aus beliebigen Mikro-Scores automatisch ein Gesamturteil produziert. Ein geringfügiger Nachteil in einem wenig relevanten Feld muss nicht wichtiger sein als ein schlechter dokumentiertes, aber potenziell schwerwiegendes Risiko.
+
+### Durchgearbeiteter Fall: Kostenersparnis und Ausfallsicherheit
+
+Eine fiktive Einrichtung beschafft Geräte für einen ausfallsensiblen Prozess. Für diesen konkreten Einsatz ist eine begründete maximale Unterbrechungsdauer festgelegt. Angebot A ist günstiger, kann aber die notwendige Ersatzteilversorgung nicht nachweisen. Angebot B ist teurer und erfüllt die dokumentierte Anforderung.
+
+Die Prüfung unterscheidet zunächst fehlenden Nachweis und nachgewiesene Nichterfüllung. Beides darf nicht als identischer technischer Befund ausgegeben werden. Für die Vergabeentscheidung kann dennoch entscheidend sein, ob der erforderliche Nachweis rechtzeitig vorliegt. A erhält eine sachlich bestimmte Nachforderung oder muss technisch umgestaltet werden. Ein höherer Umweltvorteil in einem anderen Bereich ersetzt den erforderlichen Sicherheitsnachweis nicht.
+
+Ein weniger kritischer Komfortnachteil von B wird dagegen als gewöhnlicher Zielkonflikt behandelt. Er darf abgewogen und gegebenenfalls gemindert werden. Die gleiche Farbe in einer Ampeltabelle macht aus beiden Feldern keine gleichartige Grenze.
+
+### Lernarbeit mit Erwartungshorizont
+
+Formuliere für den Fall eine Boundary-Entscheidung mit Gegenstand, Quelle, Anwendbarkeit, Evidenzstatus und Konsequenz. Eine gute Lösung nennt ausdrücklich, ob die Option ausgeschlossen, nachgebessert oder bis zur Klärung zurückgestellt wird. Sie behauptet keinen bereits eingetretenen Schaden, wenn nur ein Risiko oder ein fehlender Nachweis vorliegt.
+
+Ergänze einen Fall, in dem keine harte Grenze betroffen ist. Zeige daran, wie eine transparente Abwägung möglich bleibt. Der Lernerfolg liegt in der Unterscheidung zwischen zulässigem Zielkonflikt, materiellem Risiko und nicht kompensierbarer Grenzverletzung. Die Entscheidung muss aus dem konkreten Gegenstand begründet werden können.

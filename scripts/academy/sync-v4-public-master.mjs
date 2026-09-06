@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, relative, resolve } from 'node:path';
 import process from 'node:process';
@@ -19,6 +20,17 @@ if (checkOnly) {
 }
 
 const lock = JSON.parse(await readFile(lockPath, 'utf8'));
+const sourceDirArg = process.argv.find(value => value.startsWith('--source-dir='));
+const localSourceDir = sourceDirArg ? resolve(sourceDirArg.slice('--source-dir='.length)) : null;
+if (localSourceDir) {
+  if (!/^[a-f0-9]{40}$/.test(lock.source_sha)) throw new Error('Local import requires an exact source commit SHA.');
+  const type = execFileSync('git', ['-C', localSourceDir, 'cat-file', '-t', lock.source_sha], { encoding: 'utf8' }).trim();
+  if (type !== 'commit') throw new Error('Source lock does not name a commit.');
+}
+function localGit(args) {
+  return execFileSync('git', ['-C', localSourceDir, ...args], { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 });
+}
+
 
 function sha256(value) {
   return createHash('sha256').update(value, 'utf8').digest('hex');
@@ -31,6 +43,16 @@ function githubCoordinates(fullName) {
 }
 
 async function fetchJson(url) {
+  if (localSourceDir) {
+    const expected = `https://api.github.com/repos/${lock.source_repo}/git/trees/${lock.source_sha}?recursive=1`;
+    if (url !== expected) throw new Error('Unexpected local import tree request.');
+    const records = localGit(['ls-tree', '-r', lock.source_sha]).trim().split('\n').filter(Boolean);
+    return { truncated: false, tree: records.map(line => {
+      const [meta, ...name] = line.split('\t');
+      const [mode, type, sha] = meta.split(' ');
+      return { mode, type, sha, path: name.join('\t') };
+    }) };
+  }
   const response = await fetch(url, {
     headers: {
       Accept: 'application/vnd.github+json',
@@ -42,6 +64,13 @@ async function fetchJson(url) {
 }
 
 async function fetchText(url) {
+  if (localSourceDir) {
+    const prefix = `https://raw.githubusercontent.com/${lock.source_repo}/${lock.source_sha}/`;
+    if (!url.startsWith(prefix)) throw new Error('Unexpected local import file request.');
+    const file = url.slice(prefix.length);
+    if (!file.startsWith(`${lock.source_root}/`) || file.split('/').includes('..')) throw new Error('Unsafe local source path.');
+    return localGit(['show', `${lock.source_sha}:${file}`]);
+  }
   const response = await fetch(url, { headers: { 'User-Agent': 'woek-academy-v4-public-master-sync' } });
   if (!response.ok) throw new Error(`Source fetch ${response.status}: ${url}`);
   return response.text();
@@ -266,8 +295,11 @@ for (const slug of Object.keys(lock.offering_projection.expected_lecture_counts)
 }
 
 const manifest = {
-  schema_version: '1.1',
+  schema_version: '1.2',
   status: 'PRE_CUTOVER_PUBLIC_MASTER',
+  source_repo: lock.source_repo,
+  source_sha: lock.source_sha,
+  terminology_baseline: lock.terminology_baseline.version,
   generated_from: {
     repo: lock.source_repo,
     sha: lock.source_sha,
@@ -294,7 +326,10 @@ const manifest = {
     fail_closed_patterns: forbiddenPublicPatterns.map((pattern) => pattern.source)
   },
   gates: Object.fromEntries(lock.required_gates.map((gate) => [gate, gate === 'ACADEMY_SCRIPT_MASTER_MIRROR_PARITY' ? 'SOURCE_HASH_READY_RUNTIME_PENDING' : 'PENDING_CROSS_REPO_RELEASE_GATE'])),
-  lectures: sourceRecords.map(({ public_content, ...record }) => record)
+  lectures: sourceRecords.map(({ public_content, ...record }) => ({
+    ...record,
+    public_path: relative(join(repoRoot, "content/studienskripte/v4"), join(repoRoot, record.public_path)).replaceAll("\\", "/")
+  }))
 };
 
 const studyTargetRoot = join(repoRoot, lock.public_projection.target_root);

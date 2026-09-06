@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v78-wirkungscontrolling-erm-boni.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v78-wirkungscontrolling-erm-boni.md curriculum=4.0 sanitized=true -->
 # V78 · Wirkungscontrolling, ERM und Boni - Steuerung ohne KPI-Gaming
 
 **lecture_id:** `WOEK-G-BASE-078`  
@@ -228,3 +228,13 @@ Darum brauchen wir mehrere Signale, Attribution, längere Zeiträume und Anti-Ga
 Der Merksatz lautet:
 
 **Wirkungscontrolling misst nicht nur, ob wir Ziele melden. Es prüft, ob Entscheidungen reale Zustände verändern - und ob unsere Kennzahlen selbst neue Fehlanreize erzeugen.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Aktualisierung zu CSRD und Sorgfaltspflichten · 6. September 2026
+
+Ältere Reichweiten- und Terminangaben sind am Änderungsrecht zu prüfen: Der Rat hat am 24. Februar 2026 die Omnibus-I-Vereinfachung von CSRD und CS3D endgültig gebilligt. Sie verändert unter anderem die erfassten Unternehmen und Übergänge. Für ein konkretes Unternehmen sind die veröffentlichte Änderungsrichtlinie, ihre nationale Umsetzung und das Geschäftsjahr maßgeblich; die ursprüngliche CSRD-Zeitplanung darf nicht ungeprüft fortgeschrieben werden. Unabhängig von einer Berichtspflicht bleibt der Unterschied zwischen berichteter Kennzahl, Zustandsveränderung und kausaler Zurechnung bestehen.
+
+Quelle: [Rat der EU, Beschluss und Anschlussdokumente vom 24. Februar 2026](https://www.consilium.europa.eu/en/press/press-releases/2026/02/24/council-signs-off-simplification-of-sustainability-reporting-and-due-diligence-requirements-to-boost-eu-competitiveness/).
