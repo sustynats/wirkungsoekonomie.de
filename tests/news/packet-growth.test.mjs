@@ -83,6 +83,7 @@ test('another real source and growing context yield to evidence before optional 
   assert.match(prompt, /media_impact/);
   assert.match(prompt, /Politisch symmetrisch prüfen/);
   assert.match(prompt, /drei voneinander unabhängige Pflichtgates/);
+  assert.match(prompt, /10000 Zeichen mit relevantem Mediencheck, sonst 6300/);
   const packet = expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
   assert.equal(packet.sources.length, 21);
   assert.deepEqual(packet.sources.map(source => source.url), fixture.sources.map(source => source.url));

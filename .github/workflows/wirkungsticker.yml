@@ -77,7 +77,9 @@ jobs:
         run: echo "WOEK_NEWS_EXPECTED_AFTER=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
       - name: Unit and security tests
         if: steps.slot.outputs.should_run == 'true'
-        run: npm run news:test
+        run: |
+          npm run news:test
+          node --test tests/ops/discord-monitor.test.mjs
       - name: Recover usage from failed atomic publications
         if: steps.slot.outputs.should_run == 'true'
         # Provider-side accounting remains authoritative if GitHub logs are

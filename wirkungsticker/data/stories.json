@@ -1,7 +1,231 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T16:37:35.523Z",
+  "updated_at": "2026-09-06T17:59:56.588Z",
   "stories": [
+    {
+      "story_id": "wt-9bf2a4011a0e1751",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9bf2a4011a0e1751-631b9b64e4520816-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9bf2a4011a0e1751-358872486c839b22-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9bf2a4011a0e1751-cfb5ce7db759e121-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9bf2a4011a0e1751-7720706860d87231-source.png"
+        }
+      },
+      "slug": "newsblog-zur-landtagswahl-in-sachsen-anhalt-ministerprasident-schulze-cdu-raumt-niederla-0e1751",
+      "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Ministerpräsident Schulze (CDU) räumt Niederlage ein - Klingbeil (SPD) spricht von \"Signal an Berlin\"",
+      "source_summary": "Der Deutschlandfunk fasst einen Newsblog zur Landtagswahl in Sachsen-Anhalt zusammen. Darin heißt es, Ministerpräsident Schulze habe die Niederlage seiner Partei eingeräumt und der AfD zum Wahlsieg gratuliert. Zugleich werden Stimmen aus CDU und SPD sowie eine Analyse zur Wählerwanderung und zum Abschneiden der CDU bei jungen Wählerinnen und Wählern wiedergegeben.\n\nAußerdem wird berichtet, dass die Junge Union Sachsen-Anhalt aus einem Beschlusspapier den Rücktritt von Schulze und einen Neuanfang fordert. Klingbeil sieht in der Politik der Bundesregierung einen Grund für das Ergebnis und spricht von einem Signal an Berlin. Offene Punkte bleiben der weitere Umgang der CDU mit dem Ergebnis und die unabhängige Bestätigung einzelner Aussagen aus den zitierten Beiträgen.",
+      "summary": "Schulze hat laut dem Bericht die Niederlage seiner Partei eingeräumt und der AfD gratuliert. Klingbeil deutet das Ergebnis als Signal an Berlin.",
+      "detail_summary": "Gesichert ist, dass der Bericht einen klaren Wahlfolgeschritt beschreibt: Schulze räumt die Niederlage ein, gratuliert der AfD und lässt das weitere Vorgehen offen. Das ist politisch relevant, weil sich damit unmittelbar die Lage in Sachsen-Anhalt und die innerparteiliche Debatte der CDU verändert. Hinzu kommt die Forderung der Jungen Union nach Rücktritt und Neuwahl der Landesführung sowie Klingbeils Deutung als Signal an Berlin. Der Wirkpfad liegt vor allem in der parteipolitischen Neuordnung, möglichen Personalentscheidungen und der bundespolitischen Einordnung des Wahlergebnisses. Mögliche Folgen sind verschärfter Druck auf die Landes-CDU und Nachwirkungen auf den Reformkurs der Bundesregierung. Die Evidenz bleibt begrenzt, weil die Meldung auf einem einzelnen journalistischen Bericht beruht und mehrere Aussagen darin nur zitiert oder zusammengefasst werden.",
+      "why_relevant": "Die Meldung betrifft einen unmittelbaren Macht- und Kurswechsel nach einer Landtagswahl, mit möglichem Einfluss auf Personal, Koalitionsoptionen und bundespolitische Debatten.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Aussagen betreffen Wahlausgang, Parteiführung und mögliche politische Neuordnung in einem Bundesland."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter materieller Umweltbezug ist in den gelieferten Belegen nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Es geht um Wahlresultat, Regierungsfähigkeit, innerparteiliche Konsequenzen und politische Signalwirkung."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T17:59:56.588Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T17:35:05.000Z",
+      "last_updated": "2026-09-06T18:00:15.606Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-362672492a355b62c3fa",
+      "case_file": null,
+      "source_published_at": "2026-09-06T17:47:51.000Z",
+      "published_at": "2026-09-06T18:00:15.606Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/ministerpraesident-schulze-cdu-raeumt-niederlage-ein-klingbeil-spd-spricht-von-signal-an-berlin-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T17:47:51.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4b5d0962d323432a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-980c18f3dd96941c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-e308c1a6d31092c4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-2a6919d179539aba-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+      "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+      "source_summary": "Die Europäische Kommission teilt mit, sie habe einen für Deutschland vorgesehenen Kapazitätsmechanismus nach EU-Beihilfevorschriften geprüft und genehmigt. Die Maßnahme soll ab 2031 zur Verfügung stehen; die Kosten werden in der Mitteilung mit 15,6 Mrd. EUR bis 35,2 Mrd. EUR angegeben.\n\nDie Bundesregierung beschreibt das zugehörige Stromversorgungssicherheits- und Kapazitätengesetz als bereits verabschiedet und nennt den 22. Juli als Inkrafttretensdatum. Nach ihrer Darstellung soll ein Kapazitätsmarkt den Bedarf ab 2031 decken; in den nächsten zwölf Monaten seien Ausschreibungen über insgesamt elf Gigawatt vorgesehen, weitere im Jahr 2027 und 2029.",
+      "summary": "Die EU-Kommission hat den deutschen Kapazitätsmechanismus genehmigt. Die Bundesregierung beschreibt dazu ein bereits in Kraft getretenes Gesetz mit ersten Ausschreibungen und einem Start des Kapazitätsmarkts ab 2031.",
+      "detail_summary": "Gesichert ist damit eine regulatorische Entscheidung mit direktem Bezug zur Stromversorgung: Die EU-Kommission hat den deutschen Kapazitätsmechanismus genehmigt, während die Bundesregierung das zugrunde liegende Gesetz als in Kraft getreten beschreibt. Materiell relevant ist das vor allem, weil damit Investitionsanreize, die Bereitstellung flexibler Stromkapazitäten und spätere Zahlungsströme für Marktteilnehmer beeinflusst werden können. Der Wirkpfad verläuft über Ausschreibungen, Zuschläge und die Verpflichtung, Leistung zu halten oder neu zu errichten. Mögliche Folgen sind mehr gesicherte Kapazität für Dunkelflauten und damit mehr Versorgungssicherheit, zugleich aber auch Kostenwirkungen und Verteilungseffekte für Verbraucher und Wirtschaft. Offen bleibt, wie genau die Finanzierung, die Technologiekriterien und die tatsächliche Nutzung aussehen. Ebenfalls unbelegt sind hier die spätere Emissionswirkung und die konkrete Marktreaktion.",
+      "why_relevant": "Die Meldung betrifft eine verbindliche EU-Genehmigung und ein bereits in Kraft getretenes nationales Regelwerk für Stromkapazitäten. Das kann Regeln, Anreize und Kapitalflüsse im Energiesystem verändern und ist damit systemisch relevant.",
+      "topic": [
+        "Energie",
+        "Europa",
+        "Politik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Maßnahme zielt auf Versorgungssicherheit und Investitionen im Stromsystem, also auf einen Bereich mit direkter Bedeutung für Haushalte und Betriebe."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Bundesregierung verknüpft das Gesetz mit Dekarbonisierung und Wasserstoff-Readiness; konkrete Klima- oder Emissionswirkungen sind aber noch offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Es geht um beihilferechtlich genehmigte staatliche Marktgestaltung und spätere Kostenzuordnung; die konkrete Ausgestaltung bleibt politisch kontrollierbar."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Geschätzte Kosten",
+            "value": "15,6",
+            "unit": "Mrd. EUR",
+            "context": "untere Kostenschätzung des Mechanismus",
+            "claim_id": "wt-4b5d0962d323432a-v3-claim-1"
+          },
+          {
+            "label": "Geschätzte Kosten",
+            "value": "35,2",
+            "unit": "Mrd. EUR",
+            "context": "obere Kostenschätzung des Mechanismus",
+            "claim_id": "wt-4b5d0962d323432a-v3-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "beschaeftigte",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "gemischt",
+          "democracy": "offen"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T17:52:07.787Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-0bfd0f9a3434",
+        "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
+        "title": "Deutscher Kapazitätsmechanismus: Was die EU-Genehmigung für Stromsicherheit und Systemrisiken bedeutet",
+        "teaser": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus genehmigt. Die Analyse ordnet ein, welche Systemwirkung das potenziell hat - und was noch offen bleibt.",
+        "published_at": "2026-09-05T21:07:03.109Z",
+        "updated_at": "2026-09-05T21:07:03.109Z"
+      },
+      "first_seen": "2026-09-01T22:00:00.000Z",
+      "last_updated": "2026-09-06T17:53:28.215Z",
+      "version": 3,
+      "news_status": "confirmed",
+      "event_id": "event-657469d969e66b251ae7",
+      "case_file": null,
+      "source_published_at": "2026-09-01T22:00:00.000Z",
+      "published_at": "2026-09-03T11:15:45.293Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "eu-kommission-presse"
+          ],
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die ersten Ausschreibungen tatsächlich wie angekündigt starten und in welchem Umfang Kapazitäten bezuschlagt werden.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Ausschreibungen, Zuschlagsmengen und Termine",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9efbc37f6ede6e40",
+          "announced_at": "2026-09-03T11:00:00.000Z",
+          "follow_up_date": "2026-09-13T17:53:28.215Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Europäische Kommission - Press Corner",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
+          "source_type": "official_rss",
+          "published_at": "2026-09-01T22:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
+          "source_type": "official_rss",
+          "published_at": "2026-09-03T11:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-b5ca8651ce7844db",
       "title_image": {
@@ -2646,105 +2870,6 @@
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
           "source_type": "official_rss",
           "published_at": "2026-09-02T00:00:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4b5d0962d323432a",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-8b1b89c8a225853d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-2b014008dac1350e-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-98954ddbf0e0c693-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
-      "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
-      "source_summary": "Die Europäische Kommission hat einen deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften genehmigt. Er soll ab 2031 Kapazitäten für Stromerzeugung, Speicherung und flexiblen Verbrauch verfügbar machen; die Kommission beziffert die erwarteten Kosten auf 15,6 bis 35,2 Milliarden Euro. Die Bundesregierung berichtet ergänzend, dass Bundestag und Bundesrat das Strom-Versorgungssicherheits- und Kapazitätengesetz verabschiedet haben.\n\nNach der Regierungsdarstellung sollen in den nächsten zwölf Monaten elf Gigawatt steuerbare Kapazität ausgeschrieben werden; weitere Ausschreibungen sind für 2027 und 2029 vorgesehen. Anbieter sollen bereits für die Bereithaltung von Leistung vergütet werden und müssen zugesagte Kapazität zu relevanten Zeitpunkten nachweisen. Für erste Langzeitkapazitäten ist ein Resilienzkriterium zur Fertigung wesentlicher Bauteile im Europäischen Wirtschaftsraum genannt. Der Mechanismus soll Dunkelflauten bei wachsendem Anteil erneuerbarer Energien absichern.",
-      "summary": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus mit 15,6 Mrd. EUR bis 35,2 Mrd. EUR genehmigt. Materiell ist vor allem der mögliche Eingriff in Versorgungssicherheit, Flexibilität und Kapitalflüsse.",
-      "detail_summary": "Fakt ist die beihilferechtliche Genehmigung eines ab 2031 verfügbaren Mechanismus. Er soll Erzeugung, Speicherung und flexiblen Stromverbrauch absichern. Ex ante liegt Wirkungspotenzial vor, aber noch keine eingetretene Wirkung. Materiell sind Systemrelevanz, Dauer, Kostenhöhe und mögliche Kaskaden im Stromsystem. Offen bleiben konkrete Ausgestaltung, Verteilungseffekte und Klimaeffekte.",
-      "why_relevant": "Die Maßnahme kann Regeln, Anreize, Infrastruktur und Kapitalflüsse im deutschen Stromsystem verändern.",
-      "topic": [
-        "Energie",
-        "Europa"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Versorgungssicherheit betrifft Haushalte, Wirtschaft und kritische Dienste; konkrete Verteilungswirkungen sind noch offen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Speicher und Flexibilität können helfen; ohne Technologiemix bleiben Emissions- und Lock-in-Risiken offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Hohe öffentliche Kosten und Marktregeln berühren Kontrolle, Transparenz und spätere Korrekturfähigkeit."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "editorial_analysis": {
-        "analysis_id": "woek-analysis-0bfd0f9a3434",
-        "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
-        "title": "Deutscher Kapazitätsmechanismus: Was die EU-Genehmigung für Stromsicherheit und Systemrisiken bedeutet",
-        "teaser": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus genehmigt. Die Analyse ordnet ein, welche Systemwirkung das potenziell hat - und was noch offen bleibt.",
-        "published_at": "2026-09-05T21:07:03.109Z",
-        "updated_at": "2026-09-05T21:07:03.109Z"
-      },
-      "first_seen": "2026-09-01T22:00:00.000Z",
-      "last_updated": "2026-09-05T12:28:41.779Z",
-      "version": 2,
-      "news_status": null,
-      "event_id": null,
-      "case_file": null,
-      "source_published_at": "2026-09-01T22:00:00.000Z",
-      "published_at": "2026-09-03T11:15:45.293Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "eu-kommission-presse"
-          ],
-          [
-            "bundesregierung-kompakt"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Europäische Kommission - Press Corner",
-          "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
-          "source_type": "official_rss",
-          "published_at": "2026-09-01T22:00:00.000Z",
-          "primary_source": true
-        },
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
-          "source_type": "official_rss",
-          "published_at": "2026-09-03T11:00:00.000Z",
           "primary_source": true
         }
       ]
