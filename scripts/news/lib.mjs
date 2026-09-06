@@ -32,7 +32,7 @@ const TOPIC_RULES = [
 ];
 
 const MATERIALITY_RULES = [
-  [16, "eingetretene Entscheidung oder Umsetzung", /\b(beschlossen|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|eingeführt|eingefuehrt|abgeschafft|eröffnet|eroeffnet|gestartet|stärkt|staerkt|senkt|erhöht|erhoeht)\w*/i],
+  [16, "eingetretene Entscheidung oder Umsetzung", /\b(beschlossen|beschließt|beschliesst|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|eingeführt|eingefuehrt|abgeschafft|eröffnet|eroeffnet|gestartet|stärkt|staerkt|senkt|erhöht|erhoeht)\w*/i],
   [14, "System-, Infrastruktur- oder Resilienzbezug", /\b(infrastruktur|marktstruktur|kapitalfluss|resilienz|versorgungssicherheit|kritische\s+infrastruktur|systemrelev|systemisch|transformation|kaskad|schutzgrenz)\w*/i],
   [12, "materieller Bezug zu Mensch, Planet oder Demokratie", /\b(arbeitslos|armut|inflation|gesundheit|pflege|klima|umwelt|emission|industrieemission|energieversorgung|gasspeicher|biodivers|bildung|schule|kind(?:er|ergeld)?|jugend|wohnen|miete|rente|migration|asyl|menschenrecht|grundrecht|transparenz|informationsfreiheit|rechtsstaat|justiz|gericht|verbraucher|rohstoff|lieferkette|landwirtschaft|ernährung|ernaehrung)\w*/i],
   [10, "Veränderung von Regeln, Programmen oder Vereinbarungen", /\b(?:\w*gesetz\w*|\w*verordnung\w*|richtlinie\w*|reform\w*|haushalt\w*|staatsvertrag\w*|abkommen\w*|vereinbarung\w*|programm\w*|maßnahme\w*|massnahme\w*|entwurf\w*|vorschlag\w*|umsetzung\w*|neuregelung\w*|förderung\w*|foerderung\w*)/i],
@@ -59,7 +59,7 @@ const EVENT_RELEVANCE_RULES = [
 ];
 
 const NEWS_VALUE_RULES = [
-  ["binding_decision", /\b(beschlossen|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|aufgehoben|eingeführt|eingefuehrt|abgeschafft)\w*/i],
+  ["binding_decision", /\b(beschlossen|beschließt|beschliesst|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|aufgehoben|eingeführt|eingefuehrt|abgeschafft)\w*/i],
   ["implementation", /\b(umgesetzt|vollzug|ausgezahlt|ausgeschrieben|eröffnet|eroeffnet|gestartet|nimmt\s+betrieb\s+auf|ab\s+sofort)\w*/i],
   ["material_proposal", /\b(referentenentwurf|gesetzentwurf|verordnungsentwurf|kabinett\s+(?:beschließt|beschliesst)|legt\s+(?:einen\s+)?entwurf\s+vor)\w*/i],
   ["new_evidence", /\b(evaluation|evaluiert|erste\s+daten|daten\s+(?:zeigen|belegen)|wirkungsbericht|abschlussbericht|signifikant|rekord(?:hoch|tief)?|stark\s+(?:gestiegen|gesunken))\w*/i],
@@ -533,6 +533,13 @@ export function classifyItem(item, source = {}, now = new Date().toISOString()) 
   if (source.selection_profile === "systemic_technology" && TECHNOLOGY_ROUTINE.test(originalText) && !TECHNOLOGY_SYSTEMIC.test(originalText)) {
     score -= score >= 52 ? 8 : 28;
     drivers.push("technische Produkt- oder Routinemeldung ohne belegten Systembezug");
+  }
+  if (source.selection_profile === "regional_materiality"
+    && /\b(?:sommerfest|empfang|gratulier\w*|jubilaeum|jubiläum|laudatio|verdienstkreuz|pressetermin|ortstermin|einladung|terminhinweis|besucht|auszeichnung|wuerdigt|würdigt)\b/i.test(originalText)
+    && !NEWS_VALUE_RULES.some(([, pattern]) => pattern.test(originalText))
+    && !/\b(?:gesetzentwurf|gesetz|urteil|insolvenz|stellenabbau|massenentlass\w*|cyberangriff\w*|hochwasser|korruption|ruecktritt|rücktritt|versorgungssicherheit|evakuierung|notlage|milliard\w*)\b/i.test(originalText)) {
+    score = Math.min(score, 24);
+    drivers.push("regionaler Repräsentations- oder Routinetermin ohne materiellen neuen Sachverhalt");
   }
   const newsValueSignals = NEWS_VALUE_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
   const contextFormats = CONTEXT_FORMAT_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);

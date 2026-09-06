@@ -1,3 +1,5 @@
+import { regionalCoverage } from "./regional-coverage.mjs";
+
 const round = (value, digits = 3) => Number(Number(value || 0).toFixed(digits));
 
 export const SOURCE_PORTFOLIO_AUDIT_DATE = "2026-09-05";
@@ -48,17 +50,21 @@ export const COVERAGE_REQUIREMENTS = Object.freeze([
 ]);
 
 export const PORTFOLIO_DECISIONS = Object.freeze([
+  { source: "Bayerische Staatsregierung", source_id: "bayern-landesregierung-presse", old_role: "E", new_role: "A", topics: ["Bayern", "Landespolitik"], reason: "Amtliche Grundabdeckung im stündlichen Probebetrieb; Auswertung von Pressemitteilungen ausdrücklich gestattet. Kein Ersatz für unabhängigen Journalismus.", official_endpoint: "https://www.bayern.de/rss/pm_alle.php", terms_url: "https://www.bayern.de/impressum/", robots_url: "https://www.bayern.de/robots.txt", rsl_url: null, access: "verified_press_metadata_only", unique_value: "high_regional", duplication_risk: "medium", noise_risk: "high", prefilter: "regional_materiality", confidence: "high" },
+  { source: "Bremen – Pressestelle des Senats", source_id: "bremen-senat-presse", old_role: "E", new_role: "A", topics: ["Bremen", "Landespolitik"], reason: "Amtliche Grundabdeckung über erlaubte aktuelle Presseübersicht, stündlicher Probebetrieb. Keine erfundene RSS-Adresse; kein Archivcrawl.", official_endpoint: "https://www.senatspressestelle.bremen.de/pressemitteilungen-1464", terms_url: "https://www.senatspressestelle.bremen.de/impressum-1478", robots_url: "https://www.senatspressestelle.bremen.de/robots.txt", rsl_url: null, access: "verified_press_metadata_only", unique_value: "high_regional", duplication_risk: "low", noise_risk: "high", prefilter: "regional_materiality", confidence: "high" },
   { source: "heise online – Wirtschaft", source_id: "heise-wirtschaft", old_role: "E", new_role: "A", topics: ["Wirtschaft", "Digitalisierung", "Technologie"], reason: "Schließt Digitalwirtschafts- und Halbleiterlücken; enger lokaler Filter; Probebetrieb.", official_endpoint: "https://www.heise.de/rss/heise-Rubrik-Wirtschaft-atom.xml", terms_url: "https://www.heise.de/news-extern/news.html", robots_url: "https://www.heise.de/robots.txt", rsl_url: "https://www.heise.de/rsl.xml", access: "verified_metadata_only", unique_value: "high", duplication_risk: "medium", noise_risk: "high", prefilter: "systemic_technology", confidence: "high" },
   { source: "heise online – Netzpolitik", source_id: "heise-netzpolitik", old_role: "E", new_role: "A", topics: ["Netzpolitik", "Datenschutz", "Plattformen", "KI"], reason: "Schließt eine materielle Governance- und Grundrechtslücke; Probebetrieb.", official_endpoint: "https://www.heise.de/rss/heise-Rubrik-Netzpolitik-atom.xml", terms_url: "https://www.heise.de/news-extern/news.html", robots_url: "https://www.heise.de/robots.txt", rsl_url: "https://www.heise.de/rsl.xml", access: "verified_metadata_only", unique_value: "very_high", duplication_risk: "low", noise_risk: "low", prefilter: "systemic_technology", confidence: "high" },
   { source: "heise Security", source_id: "heise-security", old_role: "E", new_role: "A", topics: ["Cybersecurity", "kritische Infrastruktur", "Datenschutz"], reason: "Schließt die akute Cyber-Blindstelle; Patch-, Produkt- und Routinewarnungen werden lokal verworfen; Probebetrieb.", official_endpoint: "https://www.heise.de/security/feed.xml", terms_url: "https://www.heise.de/news-extern/news.html", robots_url: "https://www.heise.de/robots.txt", rsl_url: "https://www.heise.de/rsl.xml", access: "verified_metadata_only", unique_value: "very_high", duplication_risk: "low", noise_risk: "high", prefilter: "systemic_technology", confidence: "high" },
   { source: "Telepolis", source_id: "telepolis-aktuell", old_role: "A", new_role: "C", topics: ["Gesellschaft", "Geopolitik", "Technologie"], reason: "Hoher Analyse-/Meinungsanteil und bislang kein belegter einzigartiger Nachrichtengewinn; nur fallbezogene Kontext- oder Gegenquelle.", official_endpoint: "https://www.telepolis.de/feed.xml", terms_url: "https://www.heise.de/news-extern/news.html", robots_url: "https://www.telepolis.de/robots.txt", rsl_url: "https://www.telepolis.de/rsl.xml", access: "verified_case_only", unique_value: "open", duplication_risk: "medium", noise_risk: "high", prefilter: "analysis_discovery", confidence: "medium" },
   { source: "tagesschau.de", source_id: "tagesschau-access", old_role: "E", new_role: "E", topics: ["Politik", "Wirtschaft", "Wissen"], reason: "Offizieller Feed vorhanden, aber Nutzung laut Anbieter nur privat und nichtkommerziell; das öffentliche Projekt ist nicht privat.", official_endpoint: "https://www.tagesschau.de/index~rss2.xml", terms_url: "https://www.tagesschau.de/infoservices/rssfeeds", robots_url: "https://www.tagesschau.de/robots.txt", rsl_url: "https://www.tagesschau.de/rsl.xml", access: "legal_restriction", unique_value: "high", duplication_risk: "high", noise_risk: "medium", prefilter: "not_active", confidence: "high" },
-  { source: "BR24", source_id: "br24-access", old_role: "E", new_role: "E", topics: ["Bayern", "Landespolitik"], reason: "Offizieller BR24-Feed verifiziert; Nutzungsrahmen und regionaler Filter werden vor einer späteren Trial-Aktivierung separat geklärt.", official_endpoint: "https://nachrichtenfeeds.br.de/rss/nachrichten/seiten/QXAPkQJ", terms_url: "https://www.br.de/service/br-rss-feeds-100.html", robots_url: null, rsl_url: null, access: "technical_verified_legal_open", unique_value: "high_regional", duplication_risk: "medium", noise_risk: "high", prefilter: "regional_materiality", confidence: "medium" },
+  { source: "BR24", source_id: "br24-access", old_role: "E", new_role: "E", topics: ["Bayern", "Landespolitik"], reason: "Feed verifiziert; RSS-Bedingungen beschränken Archivierung und Weitergabe an Dritte. Robots-RAG-Ausnahme ersetzt keine Freigabe der getrennten RSS-Bedingungen. Pipeline-Einsatz vor Aktivierung klären.", official_endpoint: "https://nachrichtenfeeds.br.de/rss/nachrichten/seiten/QXAPkQJ", terms_url: "https://www.br.de/service/nutzungsbedingungen-rss-feeds-100.html", robots_url: "https://www.br.de/robots.txt", rsl_url: null, access: "technical_verified_legal_open", unique_value: "high_regional", duplication_risk: "medium", noise_risk: "high", prefilter: "regional_materiality", confidence: "high" },
   { source: "EEA", source_id: "eea-access", old_role: "E", new_role: "D", topics: ["Biodiversität", "Umwelt", "Ressourcen"], reason: "Geeignete CC-BY-Primärquelle zur kritischen Biodiversitätslücke; der offizielle RSS-Pfad ist laut aktueller robots.txt gesperrt und bleibt deshalb aus dem Collector.", official_endpoint: "https://www.eea.europa.eu/en/newsroom/rss-feeds/publications-rss/rss.xml", terms_url: "https://www.eea.europa.eu/en/legal-notice", robots_url: "https://www.eea.europa.eu/robots.txt", rsl_url: "https://www.eea.europa.eu/rsl.xml", access: "robots_disallowed_case_primary", unique_value: "very_high", duplication_risk: "low", noise_risk: "low", prefilter: "official_environment", confidence: "high" },
   { source: "BSI", source_id: "bsi-access", old_role: "E", new_role: "D", topics: ["Cybersecurity", "kritische IT"], reason: "Amtliche Primärquelle für eigene Warnungen und Lagebilder; fallbezogen, bis ein offizieller automatisierbarer Nachrichtenendpunkt verifiziert ist.", official_endpoint: null, terms_url: "https://www.bsi.bund.de/DE/Service-Navi/Presse/presse.html", robots_url: null, rsl_url: null, access: "case_primary_pending_endpoint", unique_value: "very_high", duplication_risk: "low", noise_risk: "medium", prefilter: "official_cyber", confidence: "medium" },
 ]);
 
 export const DO_NOT_ACTIVATE = Object.freeze([
+  ["BR24", "E", "Archivierung und Weitergabe nach RSS-Bedingungen nicht freigegeben; konkrete Nutzung mit Anbieter klären.", "Bayerische Staatsregierung als amtliche Grundabdeckung, überregionale Medien ergänzend."],
+  ["Saarland – Landesregierung", "D", "RSS-Übersicht und direkter Zugang bei Prüfung gesperrt; kein verifizierter automatisierter Feed.", "Überregionale Quellen ergänzend; eigene regionale Abdeckung bleibt offen."],
   ["Apollo News", "F", "Ausdrücklicher redaktioneller Ausschluss.", "Andere Primär- und journalistische Quellen."],
   ["NIUS", "F", "Ausdrücklicher redaktioneller Ausschluss.", "Andere Primär- und journalistische Quellen."],
   ["BILD", "C", "RSL untersagt AI-Input; höchstens externer Hinweis mit unabhängiger Bestätigung.", "Primärquelle und unabhängige freie Berichte."],
@@ -165,6 +171,7 @@ export function buildSourcePortfolioAudit(registry, usage = { runs: [] }, state 
   });
   const networks = networkGroups(registry);
   const performance = sourcePerformance(registry, usage, state, auditDate);
+  const regional = regionalCoverage(registry, state, state.last_attempted_run || `${auditDate}T12:00:00Z`);
   return {
     audit_date: auditDate,
     schema_version: 1,
@@ -183,15 +190,20 @@ export function buildSourcePortfolioAudit(registry, usage = { runs: [] }, state 
       coverage_partial: coverage.filter((item) => item.coverage === "partial").length,
       coverage_critical_gap: coverage.filter((item) => item.coverage === "critical_gap").length,
       performance_items_seen: performance.reduce((total, source) => total + Number(source.metrics.items_seen || 0), 0),
+      regional_states_configured: regional.configured_states,
+      regional_states_healthy: regional.healthy_states,
+      regional_journalistic_states: regional.journalistic_states,
+      regional_missing_states: regional.missing_states,
     },
     coverage,
+    regional_coverage: regional,
     changes: PORTFOLIO_DECISIONS.slice(0, 20),
     do_not_activate: DO_NOT_ACTIVATE.map(([source, role, reason, covered_by]) => ({ source, role, reason, covered_by })),
     ...networks,
     source_performance: performance,
     open_followups: [
       { source: "EEA/IPBES", reason: "Biodiversität ist die einzige kritische Fachlücke; exakten offiziellen Endpoint, Robots/RSL und Nutzungsrahmen vor einer Trial-Aktivierung verifizieren." },
-      { source: "BR24, Radio Bremen, Saarländischer Rundfunk", reason: "Geografische Abdeckung ist nur teilweise vollständig; einzelne offizielle Feed- und Nutzungsprüfungen gestuft durchführen." },
+      { source: "BR24, Radio Bremen, Saarländischer Rundfunk", reason: "Unabhängige Regionalzugänge für Bayern, Bremen und Saarland weiter klären. Amtliche Trial-Zugänge in Bayern/Bremen sind nur Grundabdeckung. Saarland bleibt ohne verifizierten automatischen Regionalzugang." },
       { source: "BSI, BfDI, ENISA", reason: "Als fallbezogene Primärquellen verwenden; automatisierte Endpunkte erst nach vollständiger technischer und rechtlicher Prüfung aktivieren." },
     ],
   };

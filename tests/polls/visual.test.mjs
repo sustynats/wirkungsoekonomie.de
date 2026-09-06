@@ -8,7 +8,7 @@ import { PollStore, CONSENT_VERSION } from '../../ops/polls/backend/store.mjs';
 import { prepareRestore } from '../../ops/polls/backend/restore.mjs';
 import { loadExperience,validateExperience } from '../../scripts/polls/visual.mjs';
 import { pollPage } from '../../scripts/polls/pages.mjs';
-import { minimiseSensitivePollHtml } from '../../scripts/polls/privacy.mjs';
+import { minimiseSensitivePollHtml, assertPollScriptPolicy } from '../../scripts/polls/privacy.mjs';
 import { zoomTransform } from '../../assets/js/poll-visual.js';
 const root=path.resolve(import.meta.dirname,'../..');
 const seed=JSON.parse(fs.readFileSync(path.join(root,'ops/polls/backend/city-poll.json')));
@@ -63,6 +63,16 @@ test('explicit consent, own withdrawal, result secrecy and zero restoration',t=>
  store.withdraw(p.slug,a,{confirmation:'EIGENE STIMME LÖSCHEN'});assert.equal(store.results(p).total,1);
  const row=store.db.prepare('SELECT * FROM vote_withdrawals').get();assert.deepEqual(Object.keys(row).sort(),['vote_id','withdrawn_at']);
  store.withdraw(p.slug,b,{confirmation:'EIGENE STIMME LÖSCHEN'});assert.equal(store.results(p).total,0);
+});
+test('artifact integration keeps ordinary questions but forbids tracking on sensitive polls',t=>{
+ const {store}=fixture(t),poll=store.create({...seed,status:'active'}),html=pollPage(root,poll);
+ assert.doesNotThrow(()=>assertPollScriptPolicy(html,{sensitive:true}));
+ assert.throws(()=>assertPollScriptPolicy(html),/Ordinary poll/);
+ assert.throws(()=>assertPollScriptPolicy(html.replace('name="woek-private-interaction"','name="unrelated"'),{sensitive:true}),/markers/);
+ assert.throws(()=>assertPollScriptPolicy(html+'<script src="/assets/js/main.js?v=012345abcdef"></script>',{sensitive:true}),/analytics/);
+ assert.throws(()=>assertPollScriptPolicy(html+'<script src="/assets/js/newsletter.js"></script>',{sensitive:true}),/analytics/);
+ assert.throws(()=>assertPollScriptPolicy('<script src="/assets/js/main.js"></script>'),/versioned/);
+ assert.doesNotThrow(()=>assertPollScriptPolicy('<script defer src="../../assets/js/main.js?v=012345abcdef"></script>'));
 });
 test('retention affects sensitive votes only, restore replays withdrawals without changing backup',t=>{
  const f=fixture(t),p=f.store.create({...seed,status:'active'}),a=token(),b=token();

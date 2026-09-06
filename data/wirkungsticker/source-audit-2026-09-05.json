@@ -16,13 +16,19 @@
     "observation_window": "30 Tage; bei weniger als 20 gesehenen Einträgen und acht erfassten Läufen keine automatische Review-Markierung."
   },
   "summary": {
-    "registered_sources": 70,
-    "active_automated_sources": 47,
-    "trial_sources": 3,
+    "registered_sources": 73,
+    "active_automated_sources": 49,
+    "trial_sources": 5,
     "coverage_good": 27,
     "coverage_partial": 12,
     "coverage_critical_gap": 1,
-    "performance_items_seen": 13066
+    "performance_items_seen": 13066,
+    "regional_states_configured": 15,
+    "regional_states_healthy": 15,
+    "regional_journalistic_states": 13,
+    "regional_missing_states": [
+      "DE-SL"
+    ]
   },
   "coverage": [
     {
@@ -453,7 +459,476 @@
       "gap_note": null
     }
   ],
+  "regional_coverage": {
+    "checked_at": "2026-09-06T10:51:35.145Z",
+    "required_states": 16,
+    "configured_states": 15,
+    "healthy_states": 15,
+    "journalistic_states": 13,
+    "missing_states": [
+      "DE-SL"
+    ],
+    "degraded_states": [],
+    "awaiting_first_run": [],
+    "review_required": true,
+    "rows": [
+      {
+        "code": "DE-BW",
+        "name": "Baden-Württemberg",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "swr-aktuell",
+            "publisher_id": "swr",
+            "name": "SWR Aktuell",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:45:03.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-BY",
+        "name": "Bayern",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": false,
+        "journalistic_source_healthy": false,
+        "sources": [
+          {
+            "source_id": "bayern-landesregierung-presse",
+            "publisher_id": "bayerische-staatsregierung",
+            "name": "Bayerische Staatsregierung – Pressemitteilungen",
+            "scope": "official_statements",
+            "trial_mode": true,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T04:58:03.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 60,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": [
+          {
+            "source_id": "br24-access",
+            "publisher_id": "br24",
+            "name": "BR24"
+          }
+        ]
+      },
+      {
+        "code": "DE-BE",
+        "name": "Berlin",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "rbb24-nachrichten",
+            "publisher_id": "rbb",
+            "name": "rbb24",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:35:05.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-BB",
+        "name": "Brandenburg",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "rbb24-nachrichten",
+            "publisher_id": "rbb",
+            "name": "rbb24",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:35:05.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-HB",
+        "name": "Bremen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": false,
+        "journalistic_source_healthy": false,
+        "sources": [
+          {
+            "source_id": "bremen-senat-presse",
+            "publisher_id": "bremen-senat",
+            "name": "Bremen – Pressestelle des Senats",
+            "scope": "official_statements",
+            "trial_mode": true,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-04T00:00:00.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 60,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-HH",
+        "name": "Hamburg",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "publisher_id": "ndr",
+            "name": "NDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:03:10.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-HE",
+        "name": "Hessen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "hr-hessenschau",
+            "publisher_id": "hr",
+            "name": "hessenschau",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:45:56.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-MV",
+        "name": "Mecklenburg-Vorpommern",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "publisher_id": "ndr",
+            "name": "NDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:03:10.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-NI",
+        "name": "Niedersachsen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "publisher_id": "ndr",
+            "name": "NDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:03:10.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-NW",
+        "name": "Nordrhein-Westfalen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher_id": "wdr",
+            "name": "WDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:44:15.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-RP",
+        "name": "Rheinland-Pfalz",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "swr-aktuell",
+            "publisher_id": "swr",
+            "name": "SWR Aktuell",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:45:03.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-SL",
+        "name": "Saarland",
+        "status": "gap",
+        "configured": false,
+        "journalistic_source_configured": false,
+        "journalistic_source_healthy": false,
+        "sources": [],
+        "inactive_candidates": [
+          {
+            "source_id": "saarland-landesregierung-access",
+            "publisher_id": "saarland-landesregierung",
+            "name": "Saarland – Landesregierung"
+          }
+        ]
+      },
+      {
+        "code": "DE-SN",
+        "name": "Sachsen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher_id": "mdr",
+            "name": "MDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:42:44.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-ST",
+        "name": "Sachsen-Anhalt",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher_id": "mdr",
+            "name": "MDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:42:44.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-SH",
+        "name": "Schleswig-Holstein",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "publisher_id": "ndr",
+            "name": "NDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:03:10.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-TH",
+        "name": "Thüringen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher_id": "mdr",
+            "name": "MDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:42:44.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      }
+    ]
+  },
   "changes": [
+    {
+      "source": "Bayerische Staatsregierung",
+      "source_id": "bayern-landesregierung-presse",
+      "old_role": "E",
+      "new_role": "A",
+      "topics": [
+        "Bayern",
+        "Landespolitik"
+      ],
+      "reason": "Amtliche Grundabdeckung im stündlichen Probebetrieb; Auswertung von Pressemitteilungen ausdrücklich gestattet. Kein Ersatz für unabhängigen Journalismus.",
+      "official_endpoint": "https://www.bayern.de/rss/pm_alle.php",
+      "terms_url": "https://www.bayern.de/impressum/",
+      "robots_url": "https://www.bayern.de/robots.txt",
+      "rsl_url": null,
+      "access": "verified_press_metadata_only",
+      "unique_value": "high_regional",
+      "duplication_risk": "medium",
+      "noise_risk": "high",
+      "prefilter": "regional_materiality",
+      "confidence": "high"
+    },
+    {
+      "source": "Bremen – Pressestelle des Senats",
+      "source_id": "bremen-senat-presse",
+      "old_role": "E",
+      "new_role": "A",
+      "topics": [
+        "Bremen",
+        "Landespolitik"
+      ],
+      "reason": "Amtliche Grundabdeckung über erlaubte aktuelle Presseübersicht, stündlicher Probebetrieb. Keine erfundene RSS-Adresse; kein Archivcrawl.",
+      "official_endpoint": "https://www.senatspressestelle.bremen.de/pressemitteilungen-1464",
+      "terms_url": "https://www.senatspressestelle.bremen.de/impressum-1478",
+      "robots_url": "https://www.senatspressestelle.bremen.de/robots.txt",
+      "rsl_url": null,
+      "access": "verified_press_metadata_only",
+      "unique_value": "high_regional",
+      "duplication_risk": "low",
+      "noise_risk": "high",
+      "prefilter": "regional_materiality",
+      "confidence": "high"
+    },
     {
       "source": "heise online – Wirtschaft",
       "source_id": "heise-wirtschaft",
@@ -574,17 +1049,17 @@
         "Bayern",
         "Landespolitik"
       ],
-      "reason": "Offizieller BR24-Feed verifiziert; Nutzungsrahmen und regionaler Filter werden vor einer späteren Trial-Aktivierung separat geklärt.",
+      "reason": "Feed verifiziert; RSS-Bedingungen beschränken Archivierung und Weitergabe an Dritte. Robots-RAG-Ausnahme ersetzt keine Freigabe der getrennten RSS-Bedingungen. Pipeline-Einsatz vor Aktivierung klären.",
       "official_endpoint": "https://nachrichtenfeeds.br.de/rss/nachrichten/seiten/QXAPkQJ",
-      "terms_url": "https://www.br.de/service/br-rss-feeds-100.html",
-      "robots_url": null,
+      "terms_url": "https://www.br.de/service/nutzungsbedingungen-rss-feeds-100.html",
+      "robots_url": "https://www.br.de/robots.txt",
       "rsl_url": null,
       "access": "technical_verified_legal_open",
       "unique_value": "high_regional",
       "duplication_risk": "medium",
       "noise_risk": "high",
       "prefilter": "regional_materiality",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "source": "EEA",
@@ -631,6 +1106,18 @@
     }
   ],
   "do_not_activate": [
+    {
+      "source": "BR24",
+      "role": "E",
+      "reason": "Archivierung und Weitergabe nach RSS-Bedingungen nicht freigegeben; konkrete Nutzung mit Anbieter klären.",
+      "covered_by": "Bayerische Staatsregierung als amtliche Grundabdeckung, überregionale Medien ergänzend."
+    },
+    {
+      "source": "Saarland – Landesregierung",
+      "role": "D",
+      "reason": "RSS-Übersicht und direkter Zugang bei Prüfung gesperrt; kein verifizierter automatisierter Feed.",
+      "covered_by": "Überregionale Quellen ergänzend; eigene regionale Abdeckung bleibt offen."
+    },
     {
       "source": "Apollo News",
       "role": "F",
@@ -1001,6 +1488,20 @@
   ],
   "blindspot_network": [
     {
+      "source_id": "bayern-landesregierung-presse",
+      "name": "Bayerische Staatsregierung – Pressemitteilungen",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": true
+    },
+    {
+      "source_id": "bremen-senat-presse",
+      "name": "Bremen – Pressestelle des Senats",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": true
+    },
+    {
       "source_id": "lto-news",
       "name": "Legal Tribune Online",
       "role": "A",
@@ -1096,6 +1597,13 @@
     {
       "source_id": "bmas-aktuell",
       "name": "Bundesministerium für Arbeit und Soziales",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "saarland-landesregierung-access",
+      "name": "Saarland – Landesregierung",
       "role": "D",
       "cadence": "high_frequency",
       "trial_mode": false
@@ -1648,6 +2156,87 @@
       "source_utility_score": 50,
       "metrics": {
         "items_seen": 210,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bayern-landesregierung-presse",
+      "role": "A",
+      "trial_mode": true,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bremen-senat-presse",
+      "role": "A",
+      "trial_mode": true,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "saarland-landesregierung-access",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
         "items_local_rejected": 0,
         "items_duplicate": 0,
         "items_existing_story": 0,
@@ -3188,7 +3777,7 @@
     },
     {
       "source": "BR24, Radio Bremen, Saarländischer Rundfunk",
-      "reason": "Geografische Abdeckung ist nur teilweise vollständig; einzelne offizielle Feed- und Nutzungsprüfungen gestuft durchführen."
+      "reason": "Unabhängige Regionalzugänge für Bayern, Bremen und Saarland weiter klären. Amtliche Trial-Zugänge in Bayern/Bremen sind nur Grundabdeckung. Saarland bleibt ohne verifizierten automatischen Regionalzugang."
     },
     {
       "source": "BSI, BfDI, ENISA",

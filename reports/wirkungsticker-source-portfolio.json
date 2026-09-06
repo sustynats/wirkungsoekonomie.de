@@ -16,13 +16,19 @@
     "observation_window": "30 Tage; bei weniger als 20 gesehenen Einträgen und acht erfassten Läufen keine automatische Review-Markierung."
   },
   "summary": {
-    "registered_sources": 70,
-    "active_automated_sources": 47,
-    "trial_sources": 3,
+    "registered_sources": 73,
+    "active_automated_sources": 49,
+    "trial_sources": 5,
     "coverage_good": 27,
     "coverage_partial": 12,
     "coverage_critical_gap": 1,
-    "performance_items_seen": 35062
+    "performance_items_seen": 39926,
+    "regional_states_configured": 15,
+    "regional_states_healthy": 15,
+    "regional_journalistic_states": 13,
+    "regional_missing_states": [
+      "DE-SL"
+    ]
   },
   "coverage": [
     {
@@ -453,7 +459,476 @@
       "gap_note": null
     }
   ],
+  "regional_coverage": {
+    "checked_at": "2026-09-06T10:51:35.145Z",
+    "required_states": 16,
+    "configured_states": 15,
+    "healthy_states": 15,
+    "journalistic_states": 13,
+    "missing_states": [
+      "DE-SL"
+    ],
+    "degraded_states": [],
+    "awaiting_first_run": [],
+    "review_required": true,
+    "rows": [
+      {
+        "code": "DE-BW",
+        "name": "Baden-Württemberg",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "swr-aktuell",
+            "publisher_id": "swr",
+            "name": "SWR Aktuell",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:45:03.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-BY",
+        "name": "Bayern",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": false,
+        "journalistic_source_healthy": false,
+        "sources": [
+          {
+            "source_id": "bayern-landesregierung-presse",
+            "publisher_id": "bayerische-staatsregierung",
+            "name": "Bayerische Staatsregierung – Pressemitteilungen",
+            "scope": "official_statements",
+            "trial_mode": true,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T04:58:03.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 60,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": [
+          {
+            "source_id": "br24-access",
+            "publisher_id": "br24",
+            "name": "BR24"
+          }
+        ]
+      },
+      {
+        "code": "DE-BE",
+        "name": "Berlin",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "rbb24-nachrichten",
+            "publisher_id": "rbb",
+            "name": "rbb24",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:35:05.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-BB",
+        "name": "Brandenburg",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "rbb24-nachrichten",
+            "publisher_id": "rbb",
+            "name": "rbb24",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:35:05.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-HB",
+        "name": "Bremen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": false,
+        "journalistic_source_healthy": false,
+        "sources": [
+          {
+            "source_id": "bremen-senat-presse",
+            "publisher_id": "bremen-senat",
+            "name": "Bremen – Pressestelle des Senats",
+            "scope": "official_statements",
+            "trial_mode": true,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-04T00:00:00.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 60,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-HH",
+        "name": "Hamburg",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "publisher_id": "ndr",
+            "name": "NDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:03:10.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-HE",
+        "name": "Hessen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "hr-hessenschau",
+            "publisher_id": "hr",
+            "name": "hessenschau",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:45:56.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-MV",
+        "name": "Mecklenburg-Vorpommern",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "publisher_id": "ndr",
+            "name": "NDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:03:10.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-NI",
+        "name": "Niedersachsen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "publisher_id": "ndr",
+            "name": "NDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:03:10.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-NW",
+        "name": "Nordrhein-Westfalen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher_id": "wdr",
+            "name": "WDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:44:15.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-RP",
+        "name": "Rheinland-Pfalz",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "swr-aktuell",
+            "publisher_id": "swr",
+            "name": "SWR Aktuell",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:45:03.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-SL",
+        "name": "Saarland",
+        "status": "gap",
+        "configured": false,
+        "journalistic_source_configured": false,
+        "journalistic_source_healthy": false,
+        "sources": [],
+        "inactive_candidates": [
+          {
+            "source_id": "saarland-landesregierung-access",
+            "publisher_id": "saarland-landesregierung",
+            "name": "Saarland – Landesregierung"
+          }
+        ]
+      },
+      {
+        "code": "DE-SN",
+        "name": "Sachsen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher_id": "mdr",
+            "name": "MDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:42:44.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-ST",
+        "name": "Sachsen-Anhalt",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher_id": "mdr",
+            "name": "MDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:42:44.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-SH",
+        "name": "Schleswig-Holstein",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "publisher_id": "ndr",
+            "name": "NDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:03:10.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      },
+      {
+        "code": "DE-TH",
+        "name": "Thüringen",
+        "status": "monitored",
+        "configured": true,
+        "journalistic_source_configured": true,
+        "journalistic_source_healthy": true,
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher_id": "mdr",
+            "name": "MDR",
+            "scope": "journalism",
+            "trial_mode": false,
+            "status": "active",
+            "content_warning": null,
+            "last_success": "2026-09-06T10:51:35.145Z",
+            "latest_item": "2026-09-06T10:42:44.000Z",
+            "last_error": null,
+            "governance_hold_until": null,
+            "interval_minutes": 15,
+            "error_rate": 0
+          }
+        ],
+        "inactive_candidates": []
+      }
+    ]
+  },
   "changes": [
+    {
+      "source": "Bayerische Staatsregierung",
+      "source_id": "bayern-landesregierung-presse",
+      "old_role": "E",
+      "new_role": "A",
+      "topics": [
+        "Bayern",
+        "Landespolitik"
+      ],
+      "reason": "Amtliche Grundabdeckung im stündlichen Probebetrieb; Auswertung von Pressemitteilungen ausdrücklich gestattet. Kein Ersatz für unabhängigen Journalismus.",
+      "official_endpoint": "https://www.bayern.de/rss/pm_alle.php",
+      "terms_url": "https://www.bayern.de/impressum/",
+      "robots_url": "https://www.bayern.de/robots.txt",
+      "rsl_url": null,
+      "access": "verified_press_metadata_only",
+      "unique_value": "high_regional",
+      "duplication_risk": "medium",
+      "noise_risk": "high",
+      "prefilter": "regional_materiality",
+      "confidence": "high"
+    },
+    {
+      "source": "Bremen – Pressestelle des Senats",
+      "source_id": "bremen-senat-presse",
+      "old_role": "E",
+      "new_role": "A",
+      "topics": [
+        "Bremen",
+        "Landespolitik"
+      ],
+      "reason": "Amtliche Grundabdeckung über erlaubte aktuelle Presseübersicht, stündlicher Probebetrieb. Keine erfundene RSS-Adresse; kein Archivcrawl.",
+      "official_endpoint": "https://www.senatspressestelle.bremen.de/pressemitteilungen-1464",
+      "terms_url": "https://www.senatspressestelle.bremen.de/impressum-1478",
+      "robots_url": "https://www.senatspressestelle.bremen.de/robots.txt",
+      "rsl_url": null,
+      "access": "verified_press_metadata_only",
+      "unique_value": "high_regional",
+      "duplication_risk": "low",
+      "noise_risk": "high",
+      "prefilter": "regional_materiality",
+      "confidence": "high"
+    },
     {
       "source": "heise online – Wirtschaft",
       "source_id": "heise-wirtschaft",
@@ -574,17 +1049,17 @@
         "Bayern",
         "Landespolitik"
       ],
-      "reason": "Offizieller BR24-Feed verifiziert; Nutzungsrahmen und regionaler Filter werden vor einer späteren Trial-Aktivierung separat geklärt.",
+      "reason": "Feed verifiziert; RSS-Bedingungen beschränken Archivierung und Weitergabe an Dritte. Robots-RAG-Ausnahme ersetzt keine Freigabe der getrennten RSS-Bedingungen. Pipeline-Einsatz vor Aktivierung klären.",
       "official_endpoint": "https://nachrichtenfeeds.br.de/rss/nachrichten/seiten/QXAPkQJ",
-      "terms_url": "https://www.br.de/service/br-rss-feeds-100.html",
-      "robots_url": null,
+      "terms_url": "https://www.br.de/service/nutzungsbedingungen-rss-feeds-100.html",
+      "robots_url": "https://www.br.de/robots.txt",
       "rsl_url": null,
       "access": "technical_verified_legal_open",
       "unique_value": "high_regional",
       "duplication_risk": "medium",
       "noise_risk": "high",
       "prefilter": "regional_materiality",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "source": "EEA",
@@ -631,6 +1106,18 @@
     }
   ],
   "do_not_activate": [
+    {
+      "source": "BR24",
+      "role": "E",
+      "reason": "Archivierung und Weitergabe nach RSS-Bedingungen nicht freigegeben; konkrete Nutzung mit Anbieter klären.",
+      "covered_by": "Bayerische Staatsregierung als amtliche Grundabdeckung, überregionale Medien ergänzend."
+    },
+    {
+      "source": "Saarland – Landesregierung",
+      "role": "D",
+      "reason": "RSS-Übersicht und direkter Zugang bei Prüfung gesperrt; kein verifizierter automatisierter Feed.",
+      "covered_by": "Überregionale Quellen ergänzend; eigene regionale Abdeckung bleibt offen."
+    },
     {
       "source": "Apollo News",
       "role": "F",
@@ -1001,6 +1488,20 @@
   ],
   "blindspot_network": [
     {
+      "source_id": "bayern-landesregierung-presse",
+      "name": "Bayerische Staatsregierung – Pressemitteilungen",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": true
+    },
+    {
+      "source_id": "bremen-senat-presse",
+      "name": "Bremen – Pressestelle des Senats",
+      "role": "A",
+      "cadence": "regular",
+      "trial_mode": true
+    },
+    {
       "source_id": "lto-news",
       "name": "Legal Tribune Online",
       "role": "A",
@@ -1096,6 +1597,13 @@
     {
       "source_id": "bmas-aktuell",
       "name": "Bundesministerium für Arbeit und Soziales",
+      "role": "D",
+      "cadence": "high_frequency",
+      "trial_mode": false
+    },
+    {
+      "source_id": "saarland-landesregierung-access",
+      "name": "Saarland – Landesregierung",
       "role": "D",
       "cadence": "high_frequency",
       "trial_mode": false
@@ -1218,9 +1726,9 @@
       ],
       "source_utility_score": 46.4,
       "metrics": {
-        "items_seen": 760,
+        "items_seen": 860,
         "items_local_rejected": 0,
-        "items_duplicate": 646,
+        "items_duplicate": 731,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 5,
@@ -1243,22 +1751,22 @@
       "observation_status": "measurable",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 59.1,
+      "source_utility_score": 60.2,
       "metrics": {
-        "items_seen": 760,
+        "items_seen": 860,
         "items_local_rejected": 0,
-        "items_duplicate": 532,
+        "items_duplicate": 602,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 4,
+        "items_full_analyzed": 5,
         "items_published": 1,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 32414,
-        "ai_output_tokens": 7268,
-        "estimated_ai_cost": 0.043883,
+        "ai_input_tokens": 40443,
+        "ai_output_tokens": 7511,
+        "estimated_ai_cost": 0.047715,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -1275,9 +1783,9 @@
       ],
       "source_utility_score": 40,
       "metrics": {
-        "items_seen": 570,
+        "items_seen": 645,
         "items_local_rejected": 0,
-        "items_duplicate": 570,
+        "items_duplicate": 645,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1304,9 +1812,9 @@
       ],
       "source_utility_score": 48.7,
       "metrics": {
-        "items_seen": 570,
+        "items_seen": 645,
         "items_local_rejected": 0,
-        "items_duplicate": 76,
+        "items_duplicate": 86,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1333,9 +1841,9 @@
       ],
       "source_utility_score": 48.7,
       "metrics": {
-        "items_seen": 570,
+        "items_seen": 645,
         "items_local_rejected": 0,
-        "items_duplicate": 76,
+        "items_duplicate": 86,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1385,25 +1893,24 @@
       "observation_status": "measurable",
       "review_required": true,
       "review_reasons": [
-        "duplicates_over_90_percent",
-        "no_unique_publication_in_30_days"
+        "duplicates_over_90_percent"
       ],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 380,
+        "items_seen": 430,
         "items_local_rejected": 0,
-        "items_duplicate": 380,
+        "items_duplicate": 430,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 2,
-        "items_published": 0,
+        "items_full_analyzed": 4,
+        "items_published": 1,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 14623,
-        "ai_output_tokens": 4406,
-        "estimated_ai_cost": 0.024228,
+        "ai_input_tokens": 30643,
+        "ai_output_tokens": 9114,
+        "estimated_ai_cost": 0.050863,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -1419,9 +1926,9 @@
       ],
       "source_utility_score": 41,
       "metrics": {
-        "items_seen": 380,
+        "items_seen": 430,
         "items_local_rejected": 0,
-        "items_duplicate": 342,
+        "items_duplicate": 387,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1448,9 +1955,9 @@
       ],
       "source_utility_score": 47.3,
       "metrics": {
-        "items_seen": 570,
+        "items_seen": 645,
         "items_local_rejected": 0,
-        "items_duplicate": 152,
+        "items_duplicate": 172,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1477,7 +1984,7 @@
       ],
       "source_utility_score": 50,
       "metrics": {
-        "items_seen": 380,
+        "items_seen": 430,
         "items_local_rejected": 0,
         "items_duplicate": 0,
         "items_existing_story": 0,
@@ -1560,9 +2067,9 @@
       ],
       "source_utility_score": 43.8,
       "metrics": {
-        "items_seen": 380,
+        "items_seen": 430,
         "items_local_rejected": 0,
-        "items_duplicate": 304,
+        "items_duplicate": 344,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 2,
@@ -1616,9 +2123,9 @@
       ],
       "source_utility_score": 49.8,
       "metrics": {
-        "items_seen": 1080,
+        "items_seen": 1320,
         "items_local_rejected": 0,
-        "items_duplicate": 18,
+        "items_duplicate": 22,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1645,7 +2152,92 @@
       ],
       "source_utility_score": 50,
       "metrics": {
-        "items_seen": 570,
+        "items_seen": 645,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bayern-landesregierung-presse",
+      "role": "A",
+      "trial_mode": true,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 51.2,
+      "metrics": {
+        "items_seen": 40,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 1,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 1,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 7409,
+        "ai_output_tokens": 204,
+        "estimated_ai_cost": 0.003192,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "bremen-senat-presse",
+      "role": "A",
+      "trial_mode": true,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 20,
+        "items_local_rejected": 0,
+        "items_duplicate": 0,
+        "items_existing_story": 0,
+        "items_short_ai_checked": 0,
+        "items_full_analyzed": 0,
+        "items_published": 0,
+        "items_story_updates": 0,
+        "items_primary_source_found": 0,
+        "items_source_integrity_failed": 0,
+        "items_corrected_later": 0,
+        "ai_input_tokens": 0,
+        "ai_output_tokens": 0,
+        "estimated_ai_cost": 0,
+        "fetch_failures": 0,
+        "parse_failures": 0
+      }
+    },
+    {
+      "source_id": "saarland-landesregierung-access",
+      "role": "D",
+      "trial_mode": false,
+      "observation_status": "insufficient_window",
+      "review_required": false,
+      "review_reasons": [],
+      "source_utility_score": 50,
+      "metrics": {
+        "items_seen": 0,
         "items_local_rejected": 0,
         "items_duplicate": 0,
         "items_existing_story": 0,
@@ -1782,9 +2374,9 @@
       ],
       "source_utility_score": 46.3,
       "metrics": {
-        "items_seen": 420,
+        "items_seen": 450,
         "items_local_rejected": 1,
-        "items_duplicate": 154,
+        "items_duplicate": 166,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -1865,11 +2457,11 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 54.8,
+      "source_utility_score": 54.7,
       "metrics": {
-        "items_seen": 883,
-        "items_local_rejected": 6,
-        "items_duplicate": 722,
+        "items_seen": 1003,
+        "items_local_rejected": 10,
+        "items_duplicate": 815,
         "items_existing_story": 1,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 6,
@@ -1896,20 +2488,20 @@
       ],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 350,
-        "items_local_rejected": 1,
-        "items_duplicate": 0,
+        "items_seen": 450,
+        "items_local_rejected": 2,
+        "items_duplicate": 3,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 1,
+        "items_full_analyzed": 2,
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 11,
+        "items_source_integrity_failed": 12,
         "items_corrected_later": 0,
-        "ai_input_tokens": 6499,
-        "ai_output_tokens": 313,
-        "estimated_ai_cost": 0.003,
+        "ai_input_tokens": 13159,
+        "ai_output_tokens": 492,
+        "estimated_ai_cost": 0.005517,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -1921,25 +2513,24 @@
       "observation_status": "measurable",
       "review_required": true,
       "review_reasons": [
-        "duplicates_over_90_percent",
-        "no_unique_publication_in_30_days"
+        "duplicates_over_90_percent"
       ],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 760,
-        "items_local_rejected": 30,
-        "items_duplicate": 724,
-        "items_existing_story": 17,
+        "items_seen": 860,
+        "items_local_rejected": 39,
+        "items_duplicate": 809,
+        "items_existing_story": 18,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 14,
-        "items_published": 0,
+        "items_full_analyzed": 16,
+        "items_published": 1,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 44975,
-        "ai_output_tokens": 3359,
-        "estimated_ai_cost": 0.033706,
+        "ai_input_tokens": 49938,
+        "ai_output_tokens": 4087,
+        "estimated_ai_cost": 0.039063,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -1953,20 +2544,20 @@
       "review_reasons": [],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 760,
-        "items_local_rejected": 144,
-        "items_duplicate": 442,
-        "items_existing_story": 26,
+        "items_seen": 860,
+        "items_local_rejected": 181,
+        "items_duplicate": 494,
+        "items_existing_story": 31,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 47,
-        "items_published": 2,
+        "items_full_analyzed": 58,
+        "items_published": 4,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 8,
+        "items_source_integrity_failed": 14,
         "items_corrected_later": 0,
-        "ai_input_tokens": 221783,
-        "ai_output_tokens": 14491,
-        "estimated_ai_cost": 0.137539,
+        "ai_input_tokens": 274513,
+        "ai_output_tokens": 18085,
+        "estimated_ai_cost": 0.174108,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -1980,20 +2571,20 @@
       "review_reasons": [],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 2280,
-        "items_local_rejected": 59,
-        "items_duplicate": 1763,
-        "items_existing_story": 22,
+        "items_seen": 2580,
+        "items_local_rejected": 80,
+        "items_duplicate": 1941,
+        "items_existing_story": 25,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 30,
-        "items_published": 2,
+        "items_full_analyzed": 37,
+        "items_published": 4,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 8,
+        "items_source_integrity_failed": 14,
         "items_corrected_later": 0,
-        "ai_input_tokens": 97018,
-        "ai_output_tokens": 8000,
-        "estimated_ai_cost": 0.076732,
+        "ai_input_tokens": 122706,
+        "ai_output_tokens": 9616,
+        "estimated_ai_cost": 0.091837,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2007,20 +2598,20 @@
       "review_reasons": [],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 380,
+        "items_seen": 430,
         "items_local_rejected": 2,
-        "items_duplicate": 75,
+        "items_duplicate": 90,
         "items_existing_story": 1,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 6,
+        "items_full_analyzed": 7,
         "items_published": 0,
         "items_story_updates": 1,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 45679,
-        "ai_output_tokens": 4416,
-        "estimated_ai_cost": 0.037022,
+        "ai_input_tokens": 50675,
+        "ai_output_tokens": 4549,
+        "estimated_ai_cost": 0.039726,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2063,7 +2654,7 @@
       ],
       "source_utility_score": 50,
       "metrics": {
-        "items_seen": 25,
+        "items_seen": 50,
         "items_local_rejected": 0,
         "items_duplicate": 0,
         "items_existing_story": 0,
@@ -2146,9 +2737,9 @@
       ],
       "source_utility_score": 47.5,
       "metrics": {
-        "items_seen": 168,
+        "items_seen": 180,
         "items_local_rejected": 0,
-        "items_duplicate": 42,
+        "items_duplicate": 45,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -2174,19 +2765,19 @@
       "source_utility_score": 100,
       "metrics": {
         "items_seen": 0,
-        "items_local_rejected": 59,
-        "items_duplicate": 252,
-        "items_existing_story": 23,
+        "items_local_rejected": 78,
+        "items_duplicate": 273,
+        "items_existing_story": 26,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 15,
-        "items_published": 0,
+        "items_full_analyzed": 18,
+        "items_published": 2,
         "items_story_updates": 0,
         "items_primary_source_found": 6,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 37689,
-        "ai_output_tokens": 3223,
-        "estimated_ai_cost": 0.030652,
+        "ai_input_tokens": 45883,
+        "ai_output_tokens": 4499,
+        "estimated_ai_cost": 0.039255,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2339,20 +2930,20 @@
       ],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 400,
-        "items_local_rejected": 8,
-        "items_duplicate": 383,
-        "items_existing_story": 3,
+        "items_seen": 650,
+        "items_local_rejected": 12,
+        "items_duplicate": 617,
+        "items_existing_story": 4,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 10,
+        "items_full_analyzed": 12,
         "items_published": 1,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 5,
+        "items_source_integrity_failed": 11,
         "items_corrected_later": 0,
-        "ai_input_tokens": 76893,
-        "ai_output_tokens": 2833,
-        "estimated_ai_cost": 0.041287,
+        "ai_input_tokens": 89915,
+        "ai_output_tokens": 3123,
+        "estimated_ai_cost": 0.047434,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2367,11 +2958,11 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 42.8,
+      "source_utility_score": 42.7,
       "metrics": {
-        "items_seen": 1140,
+        "items_seen": 1290,
         "items_local_rejected": 3,
-        "items_duplicate": 1067,
+        "items_duplicate": 1217,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 2,
@@ -2420,25 +3011,27 @@
       "source_id": "heise-netzpolitik",
       "role": "A",
       "trial_mode": true,
-      "observation_status": "insufficient_window",
-      "review_required": false,
-      "review_reasons": [],
-      "source_utility_score": 48.9,
+      "observation_status": "measurable",
+      "review_required": true,
+      "review_reasons": [
+        "no_unique_publication_in_30_days"
+      ],
+      "source_utility_score": 50.9,
       "metrics": {
-        "items_seen": 15,
+        "items_seen": 30,
         "items_local_rejected": 4,
-        "items_duplicate": 0,
+        "items_duplicate": 5,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 1,
+        "items_full_analyzed": 2,
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 6576,
-        "ai_output_tokens": 208,
-        "estimated_ai_cost": 0.002585,
+        "ai_input_tokens": 13082,
+        "ai_output_tokens": 361,
+        "estimated_ai_cost": 0.008153,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2452,11 +3045,11 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 60.8,
+      "source_utility_score": 60.9,
       "metrics": {
-        "items_seen": 280,
+        "items_seen": 300,
         "items_local_rejected": 5,
-        "items_duplicate": 91,
+        "items_duplicate": 98,
         "items_existing_story": 6,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 7,
@@ -2510,9 +3103,9 @@
       ],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 2280,
-        "items_local_rejected": 14,
-        "items_duplicate": 1374,
+        "items_seen": 2580,
+        "items_local_rejected": 18,
+        "items_duplicate": 1533,
         "items_existing_story": 14,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 8,
@@ -2537,20 +3130,20 @@
       "review_reasons": [],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 1738,
-        "items_local_rejected": 7,
-        "items_duplicate": 424,
-        "items_existing_story": 14,
+        "items_seen": 1963,
+        "items_local_rejected": 9,
+        "items_duplicate": 496,
+        "items_existing_story": 15,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 6,
-        "items_published": 1,
+        "items_full_analyzed": 8,
+        "items_published": 2,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 8,
+        "items_source_integrity_failed": 14,
         "items_corrected_later": 0,
-        "ai_input_tokens": 22496,
-        "ai_output_tokens": 2253,
-        "estimated_ai_cost": 0.018928,
+        "ai_input_tokens": 39835,
+        "ai_output_tokens": 4468,
+        "estimated_ai_cost": 0.035333,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2564,22 +3157,22 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 57.8,
+      "source_utility_score": 66.3,
       "metrics": {
-        "items_seen": 2171,
-        "items_local_rejected": 34,
-        "items_duplicate": 1507,
+        "items_seen": 2471,
+        "items_local_rejected": 37,
+        "items_duplicate": 1728,
         "items_existing_story": 5,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 6,
+        "items_full_analyzed": 9,
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 4,
+        "items_source_integrity_failed": 10,
         "items_corrected_later": 0,
-        "ai_input_tokens": 60639,
-        "ai_output_tokens": 13227,
-        "estimated_ai_cost": 0.089102,
+        "ai_input_tokens": 86211,
+        "ai_output_tokens": 22173,
+        "estimated_ai_cost": 0.138689,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2593,20 +3186,20 @@
       "review_reasons": [],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 1791,
-        "items_local_rejected": 34,
-        "items_duplicate": 1491,
-        "items_existing_story": 16,
+        "items_seen": 2041,
+        "items_local_rejected": 40,
+        "items_duplicate": 1687,
+        "items_existing_story": 17,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 17,
-        "items_published": 0,
+        "items_full_analyzed": 21,
+        "items_published": 1,
         "items_story_updates": 1,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 16,
+        "items_source_integrity_failed": 22,
         "items_corrected_later": 0,
-        "ai_input_tokens": 71930,
-        "ai_output_tokens": 7569,
-        "estimated_ai_cost": 0.062146,
+        "ai_input_tokens": 90400,
+        "ai_output_tokens": 8721,
+        "estimated_ai_cost": 0.0779,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2622,16 +3215,16 @@
       ],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 2042,
+        "items_seen": 2317,
         "items_local_rejected": 15,
-        "items_duplicate": 1275,
-        "items_existing_story": 15,
+        "items_duplicate": 1446,
+        "items_existing_story": 16,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 7,
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 8,
+        "items_source_integrity_failed": 14,
         "items_corrected_later": 0,
         "ai_input_tokens": 26151,
         "ai_output_tokens": 3617,
@@ -2652,20 +3245,20 @@
       ],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 1881,
-        "items_local_rejected": 3,
-        "items_duplicate": 1725,
+        "items_seen": 2125,
+        "items_local_rejected": 7,
+        "items_duplicate": 1940,
         "items_existing_story": 7,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 11,
+        "items_full_analyzed": 12,
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 6,
         "items_source_integrity_failed": 0,
         "items_corrected_later": 0,
-        "ai_input_tokens": 50083,
-        "ai_output_tokens": 3616,
-        "estimated_ai_cost": 0.040714,
+        "ai_input_tokens": 59121,
+        "ai_output_tokens": 3848,
+        "estimated_ai_cost": 0.045253,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2679,11 +3272,11 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 42.5,
+      "source_utility_score": 42.4,
       "metrics": {
-        "items_seen": 1869,
-        "items_local_rejected": 12,
-        "items_duplicate": 1381,
+        "items_seen": 2084,
+        "items_local_rejected": 16,
+        "items_duplicate": 1562,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -2711,9 +3304,9 @@
       ],
       "source_utility_score": 87.2,
       "metrics": {
-        "items_seen": 154,
+        "items_seen": 165,
         "items_local_rejected": 0,
-        "items_duplicate": 153,
+        "items_duplicate": 164,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 2,
@@ -2740,9 +3333,9 @@
       ],
       "source_utility_score": 45,
       "metrics": {
-        "items_seen": 140,
+        "items_seen": 150,
         "items_local_rejected": 0,
-        "items_duplicate": 70,
+        "items_duplicate": 75,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -2767,22 +3360,22 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 94.5,
+      "source_utility_score": 100,
       "metrics": {
-        "items_seen": 875,
-        "items_local_rejected": 21,
-        "items_duplicate": 653,
-        "items_existing_story": 1,
+        "items_seen": 984,
+        "items_local_rejected": 28,
+        "items_duplicate": 712,
+        "items_existing_story": 2,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 9,
+        "items_full_analyzed": 11,
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 8,
+        "items_source_integrity_failed": 14,
         "items_corrected_later": 0,
-        "ai_input_tokens": 51856,
-        "ai_output_tokens": 5477,
-        "estimated_ai_cost": 0.045644,
+        "ai_input_tokens": 65516,
+        "ai_output_tokens": 5836,
+        "estimated_ai_cost": 0.054222,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2798,20 +3391,20 @@
       ],
       "source_utility_score": 100,
       "metrics": {
-        "items_seen": 940,
-        "items_local_rejected": 36,
-        "items_duplicate": 893,
-        "items_existing_story": 29,
+        "items_seen": 1078,
+        "items_local_rejected": 44,
+        "items_duplicate": 1022,
+        "items_existing_story": 32,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 31,
-        "items_published": 5,
+        "items_full_analyzed": 39,
+        "items_published": 6,
         "items_story_updates": 0,
         "items_primary_source_found": 6,
-        "items_source_integrity_failed": 8,
+        "items_source_integrity_failed": 14,
         "items_corrected_later": 0,
-        "ai_input_tokens": 121174,
-        "ai_output_tokens": 12992,
-        "estimated_ai_cost": 0.104026,
+        "ai_input_tokens": 166044,
+        "ai_output_tokens": 16054,
+        "estimated_ai_cost": 0.1334,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2827,9 +3420,9 @@
       ],
       "source_utility_score": 49.3,
       "metrics": {
-        "items_seen": 2280,
+        "items_seen": 2580,
         "items_local_rejected": 0,
-        "items_duplicate": 152,
+        "items_duplicate": 172,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -2856,9 +3449,9 @@
       ],
       "source_utility_score": 47,
       "metrics": {
-        "items_seen": 840,
+        "items_seen": 900,
         "items_local_rejected": 1,
-        "items_duplicate": 246,
+        "items_duplicate": 264,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -2885,9 +3478,9 @@
       ],
       "source_utility_score": 47.8,
       "metrics": {
-        "items_seen": 840,
+        "items_seen": 900,
         "items_local_rejected": 2,
-        "items_duplicate": 183,
+        "items_duplicate": 198,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -2914,9 +3507,9 @@
       ],
       "source_utility_score": 49.5,
       "metrics": {
-        "items_seen": 140,
+        "items_seen": 160,
         "items_local_rejected": 0,
-        "items_duplicate": 7,
+        "items_duplicate": 8,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -3183,7 +3776,7 @@
     },
     {
       "source": "BR24, Radio Bremen, Saarländischer Rundfunk",
-      "reason": "Geografische Abdeckung ist nur teilweise vollständig; einzelne offizielle Feed- und Nutzungsprüfungen gestuft durchführen."
+      "reason": "Unabhängige Regionalzugänge für Bayern, Bremen und Saarland weiter klären. Amtliche Trial-Zugänge in Bayern/Bremen sind nur Grundabdeckung. Saarland bleibt ohne verifizierten automatischen Regionalzugang."
     },
     {
       "source": "BSI, BfDI, ENISA",
