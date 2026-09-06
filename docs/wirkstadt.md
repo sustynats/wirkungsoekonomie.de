@@ -62,7 +62,13 @@ Keine Mengen-/Preis-/Versorgungssicherheitsprognose wird vorgetäuscht.
 Zusätzlich geprüft: alle sieben gleichartigen Energieprofile, fehlende Daten
 als Validierungsfehler, 390-Pixel-Ansicht ohne horizontalen Überlauf, gleiche
 Zoomtransformation in beiden Vergleichsbildern, bewusste Quellenaufdeckung
-und fehlerfreie Browserkonsole. Die Artefaktprüfung erkennt den gesonderten
+und fehlerfreie Browserkonsole.
+Die Energieansicht hat zwei gemeinsame Zoomziele: das nördliche Umland und
+den südöstlichen Energie-/Wärmestandort. So bleiben auch die in F und G rechts
+unten gezeichneten konventionellen Anlagen direkt auffindbar. Beide Ziele
+verwenden beim Vergleich unverändert dieselben Koordinaten.
+
+Die Artefaktprüfung erkennt den gesonderten
 Einstieg `poll-visual.js`; sie kontrolliert weiterhin sämtliche Bilder und die
 unveränderten eingebetteten Szenariodaten.
 

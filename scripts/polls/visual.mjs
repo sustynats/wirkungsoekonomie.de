@@ -29,13 +29,17 @@ export function validateExperience(data) {
     if (Object.keys(s.topics || {}).sort().join() !== data.domains.map(d => d.id).sort().join()) fail('unequal topic coverage');
     for (const t of Object.values(s.topics)) if (!t.programme || !t.scene || !Array.isArray(t.pages) || !t.pages.length || !t.pages.every(p => Number.isInteger(p) && p > 0)) fail('missing evidence');
   }
+  for(const area of data.extraFocusAreas||[]) {
+    if(!/^[a-z]+$/.test(area.id)||data.domains.some(d=>d.id===area.id)||!data.domains.some(d=>d.id===area.domainId)||!area.title||![area.x,area.y].every(v=>Number.isFinite(v)&&v>=0&&v<=100)||!(area.zoom>=1&&area.zoom<=4)) fail('invalid extra focus area');
+  }
+  if(new Set((data.extraFocusAreas||[]).map(a=>a.id)).size!==(data.extraFocusAreas||[]).length) fail('duplicate extra focus area');
   return data;
 }
 export function visualPanel(data, {esc, safeJson}) {
   return `<section class="visual-poll" id="stadtvergleich" aria-labelledby="visual-title" data-search-type="Interaktiver Stadtvergleich">
 <p class="poll-kicker">Erkunden · Vergleichen · Entscheiden</p><h2 id="visual-title">${esc(data.title)}</h2>
 <p class="poll-notice">${esc(data.horizon)}. Gleicher Ort, gleiche Perspektive. <strong>Illustrationen, keine berechnete Zukunftsprognose.</strong></p>
-<div class="vp-controls"><label>Szenario ansehen<select id="vp-scenario">${data.scenarios.map(s=>`<option value="${s.id}">${esc(s.label)}</option>`).join('')}</select></label><label>Bereich vergrößern<select id="vp-area"><option value="">Gesamtansicht</option>${data.domains.map(d=>`<option value="${d.id}">${esc(d.title)}</option>`).join('')}</select></label></div>
+<div class="vp-controls"><label>Szenario ansehen<select id="vp-scenario">${data.scenarios.map(s=>`<option value="${s.id}">${esc(s.label)}</option>`).join('')}</select></label><label>Bereich vergrößern<select id="vp-area"><option value="">Gesamtansicht</option>${[...data.domains,...(data.extraFocusAreas||[])].map(d=>`<option value="${d.id}">${esc(d.title)}</option>`).join('')}</select></label></div>
 <div class="vp-view-buttons" role="group" aria-label="Vergleichsansicht"><button type="button" data-vp-view="before" aria-pressed="true">Ausgangsbild</button><button type="button" data-vp-view="after" aria-pressed="false">Szenario</button><button type="button" data-vp-view="wipe" aria-pressed="false">Vorher / nachher</button><button type="button" data-vp-view="pair" aria-pressed="false">Nebeneinander</button></div>
 <div class="vp-controls vp-pair-choice" hidden><label>Links vergleichen mit<select id="vp-compare"><option value="">Ausgangsbild</option>${data.scenarios.map(s=>`<option value="${s.id}">${esc(s.label)}</option>`).join('')}</select></label></div>
 <div class="vp-stage" data-view="before" id="vp-stage">

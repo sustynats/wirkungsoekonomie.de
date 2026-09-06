@@ -9,6 +9,7 @@ export function zoomTransform(area) {
 function startVisual() {
   const dataNode=document.getElementById('vp-data');if(!dataNode)return;
   const data=JSON.parse(dataNode.textContent),$=id=>document.getElementById(id);
+  const focusAreas=[...data.domains,...(data.extraFocusAreas||[])];
   const stage=$('vp-stage'),scenarioSelect=$('vp-scenario'),areaSelect=$('vp-area'),compareSelect=$('vp-compare');
   let scenario=data.scenarios[0],area=null,view='before',revealed=false,hotspots=false,voted=false,requestNumber=0;
   const scenarioName=s=>`${s.label}${revealed?` · ${s.party}`:''}`;
@@ -31,8 +32,11 @@ function startVisual() {
       else proof.append(document.createTextNode('Parteien und Quellen kannst Du unten bewusst anzeigen.'));
       panel.append(title,grid,proof);return panel;
     });
-    const zoom=button('Energieanlagen im Bild vergrößern',()=>{selectArea('energie');stage.scrollIntoView({behavior:'auto',block:'center'});});
-    target.replaceChildren(...panels,zoom);
+    const zooms=el('div',undefined,'poll-actions');
+    for(const [id,label] of [['energie','Energieanlagen im nördlichen Umland'],['energiesued','Energieanlagen am südöstlichen Standort']]){
+      if(focusAreas.some(a=>a.id===id))zooms.append(button(label,()=>{selectArea(id);stage.scrollIntoView({behavior:'auto',block:'center'});}));
+    }
+    target.replaceChildren(...panels,zooms);
   }
   function refreshNames() {
     for(const select of [scenarioSelect,compareSelect])for(const option of select.options){const s=data.scenarios.find(s=>s.id===option.value);if(s)option.textContent=scenarioName(s);}
@@ -58,13 +62,13 @@ function startVisual() {
     if(stage.getAttribute('aria-busy')!=='true')$('vp-image-status').textContent=area?`${area.title} vergrößert. Gleicher Ausschnitt in beiden Bildern.`:'Illustrativer Vergleich. Anlagen- und Gebäudezahlen sind keine Prognose.';
   }
   function selectArea(id,{focus=false}={}) {
-    area=data.domains.find(d=>d.id===id)||null;updateZoom();
-    if(area){const topic=$(`vp-topic-${area.id}`);topic.open=true;if(focus){const summary=topic.querySelector('summary');summary.focus({preventScroll:true});topic.scrollIntoView({behavior:'auto',block:'nearest'});}}
+    area=focusAreas.find(d=>d.id===id)||null;updateZoom();
+    if(area){const topic=$(`vp-topic-${area.domainId||area.id}`);topic.open=true;if(focus){const summary=topic.querySelector('summary');summary.focus({preventScroll:true});topic.scrollIntoView({behavior:'auto',block:'nearest'});}}
   }
   function renderTopics() {
     const open=new Set([...$('vp-topics').querySelectorAll('details[open]')].map(d=>d.id));
     const topics=data.domains.map(d=>{
-      const t=scenario.topics[d.id],details=el('details');details.id=`vp-topic-${d.id}`;details.open=open.has(details.id)||d.id===area?.id;
+      const t=scenario.topics[d.id],details=el('details');details.id=`vp-topic-${d.id}`;details.open=open.has(details.id)||d.id===(area?.domainId||area?.id);
       const summary=el('summary',d.title),question=el('p',d.question,'vp-question');
       details.append(summary,question);
       for(const [label,text] of [['Programmrichtung',t.programme],['Was das Bild übersetzt',t.scene],['Möglicher Wirkpfad',d.mechanism],['Bedingungen, Risiken und Verteilung',d.check]]){

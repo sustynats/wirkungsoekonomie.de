@@ -34,7 +34,8 @@ test('seven scenarios use equal domains, valid sources and actual own images',()
 test('zoom is deterministic, centred and clamped without blank image edges',()=>{
  assert.deepEqual(zoomTransform(null),{scale:1,x:0,y:0});
  const data=loadExperience(root,seed.slug);
- for(const area of data.domains){const z=zoomTransform(area),limit=50*(z.scale-1);assert.ok(Math.abs(z.x)<=limit);assert.ok(Math.abs(z.y)<=limit);assert.deepEqual(z,zoomTransform(area));}
+ for(const area of [...data.domains,...data.extraFocusAreas]){const z=zoomTransform(area),limit=50*(z.scale-1);assert.ok(Math.abs(z.x)<=limit);assert.ok(Math.abs(z.y)<=limit);assert.deepEqual(z,zoomTransform(area));}
+ const wrong=structuredClone(data);wrong.extraFocusAreas[0].domainId='missing';assert.throws(()=>validateExperience(wrong),/extra focus/);
  assert.deepEqual(zoomTransform({x:0,y:100,zoom:3}),{scale:3,x:100,y:-100});
 });
 test('sensitive HTML has zoom, sources, metadata, consent and no cross-page scripts',t=>{
