@@ -813,6 +813,23 @@ test("Queue- und Providerstatus unterscheiden Kapazität, Redaktion und Betriebs
   assert.equal(aiProviderCoverageDegraded({ ai_provider_successes: 0, ai_provider_failures: 1, ai_provider_errors: [{ error: "AI_PROVIDER_ERROR:503" }] }), true);
 });
 
+test('budget-blocked queues never claim active draining or lose their pending reasons', () => {
+  const now = '2026-09-06T21:00:00Z';
+  const rows = [
+    { published:false, pending_reason:'AI_BUDGET_BLOCKED', event_detected_at:'2026-09-06T19:00:00Z' },
+    { published:false, pending_reason:'AI_OUTPUT_INVALID', event_detected_at:'2026-09-06T19:00:00Z' },
+  ];
+  const before = structuredClone(rows);
+  const blocked = queueSnapshot(rows, now, 2, {budgetBlocked:true});
+  assert.equal(blocked.status, 'budget_blocked');
+  assert.equal(blocked.capacity, 1);
+  assert.equal(blocked.technical, 1);
+  assert.equal(blocked.oldest_technical_minutes, 120);
+  assert.deepEqual(rows, before);
+  assert.equal(queueSnapshot(rows, now, 2).status, 'technical_delay', 'a past budget hold does not claim the service is still blocked');
+  assert.equal(queueSnapshot([], now, 0, {budgetBlocked:true}).status, 'clear');
+});
+
 test('technical delay starts at the failed attempt, not the preceding capacity wait', () => {
   const now='2026-09-06T19:00:00Z';
   const row={published:false,first_seen:'2026-09-06T10:00:00Z',event_detected_at:'2026-09-06T10:00:00Z',pending_reason:'QUALITY_GATE_FAILED',quality_errors:['AI_PUBLICATION_RECOMMENDATION_INVALID'],ai_retry:{first_failed_at:'2026-09-06T18:55:00Z',failed_at:'2026-09-06T18:55:00Z'}};

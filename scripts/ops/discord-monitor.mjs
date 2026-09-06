@@ -92,6 +92,13 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     oldest_minutes: null,
     oldest_technical_minutes: null,
   };
+  // Older reports called every retryable queue "draining", even when the
+  // authenticated service had refused all further budget reservations.
+  if ((report?.budget_blocked || report?.budget_stage >= 3)
+    && Number(queue.capacity || 0) + Number(queue.technical || 0) > 0) {
+    queue.status = 'budget_blocked';
+    queue.budget_blocked = true;
+  }
   const dailySourceFunnel = summarizeSourceFunnel(todayRuns.flatMap(run => run.source_funnel || []));
   const latestSourceFunnel = summarizeSourceFunnel(report?.source_funnel || []);
   const dailyPipeline = todayRuns.reduce((total, run) => {
@@ -151,8 +158,10 @@ export function evaluateChecks(data, now) {
   checks.push({ id: 'run', name: 'Automatische Nachrichtenläufe', ok: runOk, reason: runOk ? 'letzter Lauf betrieblich gesund' : summary.runAgeMinutes > 45 ? 'Seit über 45 Minuten kein abgeschlossener Laufbericht.' : 'Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.', immediate: true });
   const providerDegraded = Boolean(data.report?.ai_provider_degraded || data.report?.ai_error);
   checks.push({ id: 'provider', name: 'KI-Verarbeitung', ok: !providerDegraded, reason: providerDegraded ? aiFailureReason(data.report) : 'kein Anbieterfehler im letzten Lauf', immediate: false });
-  const technicalQueueDelay = summary.queue.status === 'technical_delay';
-  checks.push({ id: 'queue', name: 'Nachrichten-Warteschlange', ok: !technicalQueueDelay, reason: technicalQueueDelay ? `${summary.queue.technical || 0} technisch blockierte Akte(n); älteste technische Blockade seit ${Math.round(summary.queue.oldest_technical_minutes || 0)} Minuten. Kapazitätswarteschlange: ${summary.queue.capacity || 0}; redaktionelle Ablehnungen: ${summary.queue.editorial || 0}.` : 'Queue läuft oder enthält nur erwartbare Kapazitäts-/Redaktionsfälle.', immediate: false });
+  const technicalQueueDelay = summary.queue.status === 'technical_delay'
+    || (Number(summary.queue.technical) > 0 && Number(summary.queue.oldest_technical_minutes) >= 90);
+  const queueBudgetBlocked = summary.queue.status === 'budget_blocked' || Boolean(data.report?.budget_blocked || data.report?.budget_stage >= 3);
+  checks.push({ id: 'queue', name: 'Nachrichten-Warteschlange', ok: !technicalQueueDelay, reason: technicalQueueDelay ? `${summary.queue.technical || 0} technisch blockierte Akte(n); älteste technische Blockade seit ${Math.round(summary.queue.oldest_technical_minutes || 0)} Minuten. Kapazitätswarteschlange: ${summary.queue.capacity || 0}; redaktionelle Ablehnungen: ${summary.queue.editorial || 0}.` : queueBudgetBlocked ? 'Die KI-Verarbeitung wartet auf Budgetfreigabe; ein laufender Abbau ist nicht nachgewiesen. Vorgemerkte Nachrichten bleiben erhalten.' : 'Keine überfällige technische Blockade; der tatsächliche Abbau wird separat geprüft.', immediate: false });
   const flow = summary.publicationFlow;
   checks.push({ id: 'publication-flow', name: 'Fortschritt der Nachrichtenverarbeitung', ok: !flow.stalled, reason: flow.stalled
     ? `${flow.observed_runs} gespeicherte Läufe über mindestens zwei Stunden ohne Veröffentlichung, Aktualisierung oder abgeschlossene Warteschlangenprüfung; ${flow.capacity} Kandidaten warten auf Verarbeitung. Budget- und Auswahlsteuerung prüfen; dies belegt keinen Anbieterausfall.`
