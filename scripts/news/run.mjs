@@ -600,8 +600,8 @@ function latestSourceDate(items) {
 function candidateQueuedAt(candidate) {
   const existing = candidate.existing_story;
   return existing?.pending_update?.detected_at
-    || (!existing?.published ? existing?.first_seen || candidate.first_seen : null)
-    || existing?.updated_at || candidate.first_seen;
+    || (!existing?.published ? existing?.event_detected_at || candidate.event_detected_at : null)
+    || existing?.updated_at;
 }
 
 export function queuePriority(candidate, now) {
@@ -762,7 +762,9 @@ export function queueSnapshot(stories = [], now = new Date().toISOString(), befo
     const errors = pending.quality_errors || story.quality_errors || [];
     const retryCount = pending.quality_retry_count ?? story.quality_retry_count ?? 0;
     const retryAfter = pending.quality_retry_after || story.quality_retry_after || null;
-    const queuedAt = Date.parse(pending.detected_at || (!story.published ? story.first_seen : null) || story.updated_at || story.first_seen || now);
+    // Legacy first_seen is sometimes the source's publication date, not our
+    // receipt time. Never turn an older article into an invented queue delay.
+    const queuedAt = Date.parse(pending.detected_at || (!story.published ? story.event_detected_at : null) || story.updated_at || now);
     const ageMinutes = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / 60000) : 0;
     snapshot.oldest_minutes = Math.max(snapshot.oldest_minutes, ageMinutes);
     snapshot.by_reason[reason] = Number(snapshot.by_reason[reason] || 0) + 1;
