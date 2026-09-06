@@ -4,10 +4,10 @@ import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
-import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, sourceEvidenceSegments } from "./newsroom.mjs";
+import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
 import { livingFileMatch, subjectConflict, matchingStories, isMerged } from "./living-files.mjs";
-import { compactEvidenceSegments, serializeEvidencePackets } from "./evidence-packets.mjs";
+import { compactEvidenceSegments, serializeEvidencePackets, expandEvidenceSegments, expandPacketTransport } from "./evidence-packets.mjs";
 import { MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, detectMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis } from "./media-impact.mjs";
 
 const STOPWORDS = new Set([
@@ -795,12 +795,12 @@ export function analysisInputFor(stories) {
       evidence_level: claim.evidence_level,
       uncertainty: claim.uncertainty,
     })),
-    sources: story.sources.map((source) => ({
+    sources: story.sources.map((source, sourceIndex) => ({
       source_id: source.source_id,
       publisher: source.publisher,
       title: cleanForPrompt(source.title, 220),
       abstract: cleanForPrompt(source.summary, 720),
-      evidence_segments: sourceEvidenceSegments(source),
+      evidence_segments: promptEvidenceSegments(source, sourceIndex),
       published_at: source.published_at,
       primary_source: source.primary_source,
       role: source.source_role || (source.primary_source ? "institutional_statement" : "journalistic_report"),
@@ -812,7 +812,7 @@ export function analysisInputFor(stories) {
   }));
 }
 
-export function buildAnalysisPrompt(stories) {
+export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
   const input = analysisInputFor(stories);
   const lines = [
     "Du bist der bereits bestehende quellengebundene WÖk-Analysedienst. Analysiere die folgenden vorgefilterten Story-Cluster.",
@@ -845,8 +845,9 @@ export function buildAnalysisPrompt(stories) {
     "Verbindliches Belegformat: Quellen enthalten evidence_segments mit unveränderlichem evidence_id und excerpt. In event_claims.evidence gib ausschließlich {evidence_id:...} mit einer tatsächlich gelieferten ID aus. Kein Zitat abschreiben, keine URLs oder IDs erfinden. Bei Bedarf mehrere Textstellen-IDs auswählen, die zusammen die konkrete Behauptung tragen. Der Server löst sie vor der Prüfung exakt auf. evidence_segments ersetzen article_excerpt als bereitgestellten Quellentext. Sämtliche Lesertexte einschließlich event_claims.claim auf Deutsch; fremdsprachige Originalbelege nicht übersetzen.",
     "evidence_selection.incomplete kennzeichnet eine begrenzte Textstellenauswahl, keinen vollständig gelesenen Artikel. Keine Vollständigkeit behaupten; fehlt Beleg oder Kontext für eine Kernbehauptung, insufficient_evidence statt Ergänzen aus Vermutung.",
     ...MEDIA_PROMPT_RULES,
-    ...VISUALS_PROMPT_RULES,
-    "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar.",
+    ...(includeVisuals ? [...VISUALS_PROMPT_RULES,
+      "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar."]
+      : ["Quellenumfang: In diesem Durchlauf visuals:null; keine neue optionale Grafik erzeugen. Quellen, Sachverhalt, Fakten-, Folgen- und Mediencheck sowie sämtliche Evidenz- und Qualitätsregeln bleiben vollständig verbindlich."]),
     "Gib ausschließlich valides JSON ohne Markdown aus. Schema:",
     "Auch Ablehnungen bleiben IMMER innerhalb des äußeren Objekts {analyses:[...]}. Bei genau einer Story enthält analyses genau einen Eintrag; niemals den einzelnen Eintrag als Wurzelobjekt zurückgeben.",
     JSON.stringify({
@@ -889,7 +890,7 @@ export function buildAnalysisPrompt(stories) {
           duplicate_status: "new_story|material_update|duplicate_without_new_information",
           rationale: "string",
         },
-        visuals: VISUALS_SCHEMA,
+        visuals: includeVisuals ? VISUALS_SCHEMA : null,
         media_impact: MEDIA_IMPACT_SCHEMA,
         publication_recommendation: true,
       }],
@@ -898,7 +899,15 @@ export function buildAnalysisPrompt(stories) {
     "",
     "UNTRUSTED_SOURCE_DATA_END",
   ];
-  lines[lines.length - 2] = fitAnalysisInput(input, 39000 - lines.join("\n").length);
+  try {
+    lines[lines.length - 2] = fitAnalysisInput(input, 39000 - lines.join("\n").length);
+  } catch (error) {
+    // Optional new illustrations must not crowd out a complete source catalog.
+    // Retry prompt assembly locally, never the provider. No required rule or
+    // source record is removed, and genuinely oversized input still fails safe.
+    if (includeVisuals && error.message === "AI_INPUT_TOO_LARGE") return buildAnalysisPrompt(stories, { includeVisuals: false });
+    throw error;
+  }
   return lines.join("\n");
 }
 
@@ -932,6 +941,7 @@ function aiRetryDelayMs(response, attempt) {
 export async function callWoekAi(stories, options = {}) {
   const apiUrl = options.apiUrl || "https://130.162.217.58.sslip.io/api/woek-ai";
   const prompt = options.prompt || buildAnalysisPrompt(stories);
+  const suppliedIds = suppliedEvidenceIds(prompt);
   const attempts = Math.max(1, Math.min(3, Number(options.attempts || 3)));
   let response;
   let payload;
@@ -992,6 +1002,8 @@ export async function callWoekAi(stories, options = {}) {
   if (!Array.isArray(parsed.analyses)) throw new Error("AI_SCHEMA_ANALYSES_REQUIRED");
   return {
     analyses: parsed.analyses,
+    supplied_evidence_ids: suppliedIds,
+    optional_visuals_deferred: prompt.slice(0, prompt.indexOf("UNTRUSTED_SOURCE_DATA_BEGIN")).includes("Quellenumfang: In diesem Durchlauf visuals:null"),
     provider: String(payload.provider || "Oracle WOeK-KI API"),
     model: String(payload.model || "unknown"),
     mode: String(payload.mode || "unknown"),
@@ -1005,6 +1017,15 @@ export async function callWoekAi(stories, options = {}) {
     cache_status: payload.cacheStatus || null,
     request_attempts: requestAttempts,
   };
+}
+
+export function suppliedEvidenceIds(prompt) {
+  const start = prompt.lastIndexOf("UNTRUSTED_SOURCE_DATA_BEGIN\n");
+  const end = prompt.lastIndexOf("\nUNTRUSTED_SOURCE_DATA_END");
+  if (start < 0 || end < start) return {};
+  const packets = JSON.parse(prompt.slice(start + "UNTRUSTED_SOURCE_DATA_BEGIN\n".length, end));
+  if (!Array.isArray(packets)) return {};
+  return Object.fromEntries(packets.map(packet => [expandPacketTransport(packet).story_id, expandEvidenceSegments(packet).flatMap(source => (source.evidence_segments || []).map(segment => segment.evidence_id))]));
 }
 
 function collectStrings(value, result = []) {

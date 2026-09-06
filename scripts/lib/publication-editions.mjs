@@ -1,11 +1,18 @@
 import fs from 'node:fs';
 import {escapeHtml} from './explainer-components.mjs';
 
+function allPdfEditions() {
+  const historical = JSON.parse(fs.readFileSync('assets/data/site-review-pdf-editions.json', 'utf8')).files;
+  const learning = JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-09-06.json', 'utf8')).files;
+  return [...historical, ...learning];
+}
 export function currentPdfEditions() {
-  return JSON.parse(fs.readFileSync('assets/data/site-review-pdf-editions.json', 'utf8')).files;
+  const all = allPdfEditions();
+  const superseded = new Set(all.map(item => item.supersedes).filter(Boolean));
+  return all.filter(item => !superseded.has(item.filename));
 }
 export function editionFor(filename) {
-  const edition=currentPdfEditions().find(item => item.filename===filename);
+  const edition=allPdfEditions().find(item => item.filename===filename);
   if (!edition) throw new Error(`Unknown publication edition: ${filename}`);
   return edition;
 }

@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateP23 } from './check-berlin-spd-p23.mjs';
+import { validateP24 } from './check-berlin-spd-p24.mjs';
 
 const APP_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const OUTPUT_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-content-residuals/berlin-2026-v3.json');
@@ -97,6 +98,7 @@ const SPD_EFFECT_ATOMS_P19_P24_PATH = path.join(APP_ROOT, 'data/state-programmes
 const SPD_FACH_RETURN_PATH = path.join(APP_ROOT, 'data/state-programmes/source-integrity/berlin-2026-spd-fach-return-v1.json');
 const SPD_P22_HANDOFF_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p22-explicit-v1.json');
 const SPD_P23_HANDOFF_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p23-explicit-v1.json');
+const SPD_P24_HANDOFF_PATH = path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p24-explicit-v1.json');
 const SPD_P22_MARKDOWN_PATHS = new Map([
   [5477750046, path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-1-authoritative-handoff.md')],
   [5477758987, path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-spd-p22-part-2-authoritative-handoff.md')],
@@ -951,8 +953,8 @@ function spdP22Materialization(handoff) {
   return { terminals };
 }
 
-function spdP23Materialization(handoff) {
-  validateP23(handoff);
+function spdExactPageMaterialization(handoff, validate) {
+  validate(handoff);
   const snapshot = handoff.authoritative_markdowns[0];
   return {
     terminals: handoff.terminal_records.map((record) => {
@@ -963,7 +965,7 @@ function spdP23Materialization(handoff) {
         ...record,
         object_kind: record.parent_object_ids ? 'DETERMINISTIC_SEGMENTATION_REPLACEMENT'
           : versioned ? 'SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING'
-            : record.counts_as_effect_object ? 'SOURCE_BOUND_EXACT_RNAA_OBJECT' : 'SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT',
+            : record.counts_as_effect_object ? (record.terminal_fach_state === 'EXPLICIT_FACH_APPROVED' ? 'SOURCE_BOUND_EXPLICIT_FACH_OBJECT' : 'SOURCE_BOUND_EXACT_RNAA_OBJECT') : 'SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT',
         source_excerpt: record.source_text,
         source_state: 'SOURCE_BOUND_VERIFIED',
         segmentation_state: versioned ? 'SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING' : 'OBJECT_BOUNDARY_VERIFIED',
@@ -3652,6 +3654,7 @@ export function buildBerlinFachTruthResidual() {
   const bswP34P43ChildClosureHandoff = readJson(BSW_P34_P43_CHILD_CLOSURE_PATH);
   const spdP22Handoff = readJson(SPD_P22_HANDOFF_PATH);
   const spdP23Handoff = readJson(SPD_P23_HANDOFF_PATH);
+  const spdP24Handoff = readJson(SPD_P24_HANDOFF_PATH);
   assert.ok(descriptorValid(register), 'Berlin source-register descriptor mismatch');
   assert.ok(descriptorValid(acceptedV1), 'accepted Berlin v1 descriptor mismatch');
   assert.equal(acceptedV1.coverage_summary.programme_analysis_complete, 3);
@@ -3679,16 +3682,18 @@ export function buildBerlinFachTruthResidual() {
   const bswP34P43PredecessorOpen = [...bswP34P37.openObjects, ...bswP38P41.openObjects, ...bswP42P45.openObjects];
   const bswP34P43ChildClosure = bswP34P43ChildClosureMaterialization(bswP34P43PredecessorOpen, bswP34P43ChildClosureHandoff);
   const spdP22 = spdP22Materialization(spdP22Handoff);
-  const spdP23 = spdP23Materialization(spdP23Handoff);
+  const spdP23 = spdExactPageMaterialization(spdP23Handoff, validateP23);
+  const spdP24 = spdExactPageMaterialization(spdP24Handoff, validateP24);
   // P1-P21 is the protected predecessor scope, not a newly generated Fach claim.
   const protectedSpdPages = new Set([
     ...Array.from({ length: 21 }, (_, index) => index + 1),
     ...spdP22Handoff.coverage.terminal_pages,
     ...spdP23Handoff.coverage.terminal_pages,
+    ...spdP24Handoff.coverage.terminal_pages,
   ]);
   const spdManifest = readJson(SPD_MANIFEST_PATH);
   const spdSourceUnits = spdManifest.source_unit_shards.flatMap((ref) => readJson(path.join(path.dirname(SPD_MANIFEST_PATH), ref.path)).records);
-  const consumedSpdUnits = new Set(spdP23Handoff.coverage.source_unit_ids);
+  const consumedSpdUnits = new Set([...spdP23Handoff.coverage.source_unit_ids, ...spdP24Handoff.coverage.source_unit_ids]);
   const nextSpdSource = spdSourceUnits.find((unit) => !protectedSpdPages.has(unit.pdf_page) && !consumedSpdUnits.has(unit.source_unit_id));
   assert.ok(nextSpdSource, 'Open SPD programme lost its source-order frontier');
   const programmes = BINDING_ORDER.map((party, index) => {
@@ -3701,7 +3706,7 @@ export function buildBerlinFachTruthResidual() {
     const terminalObjects = party === 'BSW'
       ? [...bswProtectedTerminals(source, bswLedger), ...bswPage14Terminals(bswLedger, bswP14Handoff), ...bswIncrement.terminals, ...bswSuccessor.terminals, ...bswP22.terminals, ...bswP24P25ChildClosure.terminals, ...bswP26P29.terminals, ...bswP30P33.terminals, ...bswP34P37.terminals, ...bswP38P41.terminals, ...bswP42P45.terminals, ...bswP46P49.terminals, ...bswP50P53.terminals, ...bswP54P57.terminals, ...bswP58P59.terminals, ...bswP60P63.terminals, ...bswP64P66.terminals, ...bswP34P43ChildClosure.closedTerminals]
       : party === 'SPD'
-        ? [...spdP22.terminals, ...spdP23.terminals]
+        ? [...spdP22.terminals, ...spdP23.terminals, ...spdP24.terminals]
       : source.active_source_objects
         .filter((item) => item.status !== 'GENUINE_FACH_REVIEW_REQUIRED')
         .map(normalizedLegacyTerminal);
@@ -3746,8 +3751,9 @@ export function buildBerlinFachTruthResidual() {
           protected_cross_page_object: 'BE-SPD-2026-SU-0247',
           p22_materialized_terminal_records: spdP22.terminals.length,
           p23_materialized_terminal_records: spdP23.terminals.length,
-          materialized_page_set: [...new Set([...spdP22Handoff.coverage.terminal_pages, ...spdP23Handoff.coverage.terminal_pages])],
-          consumed_cross_page_objects: spdP23Handoff.coverage.cross_page_objects_consumed_once,
+          p24_materialized_terminal_records: spdP24.terminals.length,
+          materialized_page_set: [...new Set([...spdP22Handoff.coverage.terminal_pages, ...spdP23Handoff.coverage.terminal_pages, ...spdP24Handoff.coverage.terminal_pages])],
+          consumed_cross_page_objects: [...new Set([...spdP23Handoff.coverage.cross_page_objects_consumed_once, ...spdP24Handoff.coverage.cross_page_objects_consumed_once])],
           next_unreviewed_source_order_frontier: {
             physical_page: nextSpdSource.pdf_page,
             source_unit_from: nextSpdSource.source_unit_id,
@@ -4168,6 +4174,25 @@ export function buildBerlinFachTruthResidual() {
         cross_page_objects_consumed_once: spdP23Handoff.coverage.cross_page_objects_consumed_once,
         next_source_order_frontier: { physical_page: nextSpdSource.pdf_page, source_unit_from: nextSpdSource.source_unit_id },
         gate: spdP23Handoff.coverage.gate,
+      },
+      {
+        handoff_id: spdP24Handoff.handoff_id,
+        issue_comment_ids: spdP24Handoff.authoritative_markdowns.map((item) => item.issue_comment_id),
+        issue_comment_urls: spdP24Handoff.authoritative_markdowns.map((item) => item.issue_comment_url),
+        path: repoPath(SPD_P24_HANDOFF_PATH),
+        file_sha256: fileSha256(SPD_P24_HANDOFF_PATH),
+        authoritative_markdown_paths: spdP24Handoff.authoritative_markdowns.map((item) => item.path),
+        authoritative_markdown_file_sha256s: spdP24Handoff.authoritative_markdowns.map((item) => item.file_sha256),
+        full_source_proof: spdP24Handoff.full_source_proof,
+        artifact_id: spdP24Handoff.artifact.artifact_id,
+        artifact_sha256: spdP24Handoff.artifact.sha256,
+        exact_terminal_object_count: spdP24.terminals.length,
+        active_terminal_review_leaf_count: spdP24Handoff.coverage.active_terminal_review_leaf_ids.length,
+        exact_open_child_object_count: spdP24Handoff.coverage.remaining_p24_source_object_ids.length,
+        physical_pdf_pages: spdP24Handoff.coverage.terminal_pages,
+        cross_page_objects_consumed_once: spdP24Handoff.coverage.cross_page_objects_consumed_once,
+        next_source_order_frontier: { physical_page: nextSpdSource.pdf_page, source_unit_from: nextSpdSource.source_unit_id },
+        gate: spdP24Handoff.coverage.gate,
       },
     ],
     rejected_predecessor: {

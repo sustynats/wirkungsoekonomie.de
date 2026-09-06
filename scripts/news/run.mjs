@@ -1049,6 +1049,7 @@ export async function runWirkungsticker(options = {}) {
         report.model ||= aiResult.model;
         report.ai_calls += Number(aiResult.request_attempts || 1);
         report.prompt_chars_sent += Number(aiResult.prompt_chars || 0);
+        report.optional_visuals_deferred = Number(report.optional_visuals_deferred || 0) + Number(Boolean(aiResult.optional_visuals_deferred));
         report.ai_batches_completed += 1;
         const estimated = costFromUsage(aiResult, estimateUsage(aiResult.prompt_chars, aiResult.answer_chars, aiResult.model, modelRates(aiResult.model)));
         report.input_tokens += estimated.input_tokens;
@@ -1077,7 +1078,7 @@ export async function runWirkungsticker(options = {}) {
             report.media_check_cost_usd = Number((report.media_check_cost_usd + mediaUsage.estimated_cost_usd).toFixed(6));
           } else if (analysisCandidate.media_trigger?.relevant) report.media_checks_triggered += 1;
           else report.media_checks_skipped += 1;
-          if (analysis) resolveEvidenceReferences(analysis, analysisCandidate);
+          if (analysis) resolveEvidenceReferences(analysis, analysisCandidate, aiResult.supplied_evidence_ids?.[candidate.story_id] || []);
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
           const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
           newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });

@@ -3,7 +3,23 @@ import crypto from 'node:crypto';
 const manifest=JSON.parse(fs.readFileSync('assets/data/site-review-pdf-editions.json','utf8'));
 const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 if(manifest.files.length!==8 || !manifest.sourceHashes)throw new Error('Incomplete dated PDF release manifest');
+const learning=JSON.parse(fs.readFileSync('assets/data/learning-editions-2026-09-06.json','utf8'));
+if(learning.files.length!==2 || Object.keys(learning.sourceHashes).length<6) throw new Error('Learning editions incomplete');
+for(const [source,expected] of Object.entries(learning.sourceHashes)) {
+ if(hash(source)!==expected) throw new Error(`Learning PDF source changed: ${source}. Publish a new dated edition.`);
+}
+for(const source of learning.supersedesSources) {
+ if(!learning.sourceHashes[source] || !manifest.sourceHashes[source]) throw new Error(`Invalid source succession: ${source}`);
+}
+for(const edition of learning.files) {
+ if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${learning.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.sha256==='0'.repeat(64) || edition.pages<1) throw new Error('Invalid learning edition release metadata');
+ if(edition.supersedes&&!manifest.files.some(item=>item.filename===edition.supersedes)) throw new Error('Missing historical predecessor');
+}
+console.log('Learning editions: 2 current PDFs, source succession and immutable metadata consistent.');
 for(const source of manifest.sources) {
+  // Historical release keeps its original manifest. Only explicitly replaced
+  // live sources move to the new edition guard above; other guards stay active.
+  if(learning.supersedesSources.includes(source)) continue;
   if(hash(source)!==manifest.sourceHashes[source])throw new Error(`PDF content changed: ${source}. Publish a new dated PDF edition and update its manifest before deployment.`);
 }
 for(const edition of manifest.files) {

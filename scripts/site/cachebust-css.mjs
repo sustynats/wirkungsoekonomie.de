@@ -27,7 +27,7 @@ try {
   const mainHash = fs.existsSync(mainPath) ? crypto.createHash("sha256").update(fs.readFileSync(mainPath)).update(fs.existsSync(questionsPath) ? fs.readFileSync(questionsPath) : '').digest("hex").slice(0, 12) : null;
   const searchPath = path.join(SITE, "assets/js/search.js");
   const searchHash = fs.existsSync(searchPath) ? crypto.createHash("sha256").update(fs.readFileSync(searchPath)).digest("hex").slice(0, 12) : null;
-  const toolHashes = ["impact-calculations", "impact-controlling-rechner", "impact-investment-calculators"].map(name => {
+  const toolHashes = ["impact-calculations", "impact-controlling-rechner", "impact-investment-calculators", "kitchen-impact"].map(name => {
     const file=path.join(SITE, `assets/js/${name}.js`);
     return [name,fs.existsSync(file)?crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex").slice(0,12):null];
   });
