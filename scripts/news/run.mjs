@@ -7,6 +7,8 @@ import {
   callWoekAi,
   claimLedgerFor,
   clusterItems,
+  anchoredSources,
+  existingStoryMatch,
   estimateUsage,
   fetchArticleExcerpt,
   fetchFeed,
@@ -41,7 +43,7 @@ import { regionalCoverage } from "./regional-coverage.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
 const RELEVANCE_BACKFILL_DAYS = 7;
-const AI_PROCESSING_VERSION = "2026-09-06-throughput-1";
+const AI_PROCESSING_VERSION = "2026-09-06-throughput-2";
 const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE"]);
 const CAPACITY_HOLD_REASONS = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
 const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
@@ -226,6 +228,45 @@ function createCandidate(cluster, now, reassessment = false, fresh = false) {
   return candidate;
 }
 
+export function repartitionOversizedSourceQueues(stories, now) {
+  const changes = [], requeued = new Map();
+  for (const story of stories) {
+    if (isMerged(story) || story.listed === false) continue;
+    const pending = story.pending_update || story;
+    const sources = pending.sources || [];
+    const reason = pending.reason || pending.pending_reason;
+    if (reason !== 'AI_INPUT_TOO_LARGE' && !(reason === 'SOURCE_INTEGRITY_OPEN' && sources.length > 12)) continue;
+    const originalLead = story.sources?.[0];
+    if (!originalLead || sources.length < 2) continue;
+    const leading = sources.find(source => source.url === originalLead.url);
+    if (!leading) continue; // Never guess the original subject.
+    const rooted = { ...story, sources: [leading, ...sources.filter(source => source !== leading)] };
+    const kept = anchoredSources(rooted), keptSet = new Set(kept);
+    const detached = sources.filter(source => !keptSet.has(source));
+    if (!detached.length) continue; // A genuinely large single event remains on hold.
+    // This changes only queued source ownership, never published text/claims.
+    // All detached metadata is retained and re-enters the normal local gates.
+    const record = { version: 1, at: now, retained_urls: kept.map(source => source.url),
+      detached_sources: detached.map(({article_excerpt, evidence_segments, ...source}) => source) };
+    story.queue_source_repartitions = [...(story.queue_source_repartitions || []), record];
+    delete story.review_checkpoint; // Its cached source set has been repartitioned.
+    for (const source of detached) {
+      const prior = requeued.get(source.url);
+      if (!prior || Date.parse(source.published_at || 0) >= Date.parse(prior.published_at || 0)) requeued.set(source.url, source);
+    }
+    pending.sources = kept;
+    if (story.pending_update) pending.reason = 'AI_BUDGET_OR_BATCH_LIMIT';
+    else {
+      pending.pending_reason = 'AI_BUDGET_OR_BATCH_LIMIT';
+      pending.claims = claimLedgerFor(kept, story.story_id, now);
+    }
+    pending.quality_errors = [];
+    pending.content_hash = storyContentHash({sources:kept});
+    changes.push({story_id:story.story_id, before:sources.length, retained:kept.length, requeued:detached.length});
+  }
+  return {changes, requeued_sources:[...requeued.values()]};
+}
+
 export function refreshUnpublishedDraftTitle(candidate) {
   // A never-published, single-document draft follows that document's current
   // observed title, not the headline seen during its first queue arrival.
@@ -283,6 +324,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     title: candidate.title,
     ...(existing?.title_image ? { title_image: existing.title_image } : {}),
     ...(existing?.corrections ? { corrections: existing.corrections } : {}),
+    ...(existing?.queue_source_repartitions ? {queue_source_repartitions:existing.queue_source_repartitions} : {}),
     ...(existing?.living_file ? { living_file: existing.living_file } : {}),
     ...(existing?.review_checkpoint ? { review_checkpoint: existing.review_checkpoint } : {}),
     ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
@@ -483,6 +525,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     numeric_evidence: numericEvidenceReceipt(candidate, versionNumber, now),
   };
   return {
+    ...(existing?.queue_source_repartitions ? {queue_source_repartitions:existing.queue_source_repartitions} : {}),
     ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
     story_id: candidate.story_id,
     slug: candidate.slug,
@@ -917,6 +960,10 @@ export async function runWirkungsticker(options = {}) {
   const pruneBefore = nowDate.getTime() - 120 * 24 * 60 * 60 * 1000;
   for (const [id, record] of Object.entries(state.seen_items)) if (Date.parse(record.last_seen || 0) < pruneBefore) delete state.seen_items[id];
 
+  const repartition = repartitionOversizedSourceQueues(storyStore.stories || [], now);
+  report.source_queue_repartitions = repartition.changes;
+  const freshUrls = new Set(changedItems.map(item => item.url));
+  changedItems.push(...repartition.requeued_sources.filter(item => !freshUrls.has(item.url)));
   report.living_file_merges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
   report.retired_stories += report.living_file_merges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
   const matchableStories = (storyStore.stories || [])
@@ -979,7 +1026,9 @@ export async function runWirkungsticker(options = {}) {
   for (const candidate of clusters) {
     candidate.followup_due = dueFollowupIds.has(candidate.story_id);
     candidate.deepening_due = dueDeepeningIds.has(candidate.story_id);
-    const alternativeItems = allItems.filter((item) => !subjectConflict(item, candidate) && (livingFileMatch(item, candidate).score > 0 || candidate.sources.some((source) => !subjectConflict(item, source) && eventCompatibility(item, source).same_event)));
+    const matchingEntry = {story:candidate,last_updated:candidate.last_updated,
+      anchored_story:{...candidate,sources:anchoredSources(candidate)}};
+    const alternativeItems = allItems.filter((item) => existingStoryMatch(item, matchingEntry, now) >= 0.64);
     const mergedSources = mergeSources(candidate.sources, alternativeItems);
     candidate.sources = reconcileKnownSourceAliases(mergedSources.map(source =>
       reconcileSourceIdentity(source, registry.sources.find(entry => entry.source_id === source.source_id), registry)));
