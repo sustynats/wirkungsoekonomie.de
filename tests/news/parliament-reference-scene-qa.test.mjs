@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import { createHash } from "node:crypto";
+import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import { evaluateReferenceSceneCandidates, checkReferenceSceneAudit } from "../../scripts/parliament/impact-visuals/check-reference-scene-candidates.mjs";
 const read = (file) => JSON.parse(fs.readFileSync(new URL(`../../${file}`, import.meta.url), "utf8"));
 const audit = read("docs/audits/parliament-reference-scene-visual-qa-2026-09-06.json");
@@ -8,6 +11,19 @@ const results = read(audit.results_path);
 const contract = read(results.contract_path);
 const descriptor = read(contract.source_descriptor_path);
 const input = () => structuredClone({ contract, descriptor, results, audit });
+
+test("original generation manifest and visual review remain immutable versioned evidence", () => {
+  for (const [file, sha] of [
+    [audit.results_path, "3bcbc24d45369dee6d4697791d5da948f0f419daddb6f71d1187b8228b4d650c"],
+    ["docs/audits/parliament-reference-scene-visual-qa-2026-09-06.json", "f47ab63cada474cbd97b83ae24c1178cead329cee4e9d4b39fdc57e6142804af"],
+  ]) assert.equal(createHash("sha256").update(fs.readFileSync(new URL(`../../${file}`, import.meta.url))).digest("hex"), sha);
+});
+test("normal CLI denies publication and audit-only mode cannot disguise a missing asset argument", () => {
+  const script = fileURLToPath(new URL("../../scripts/parliament/impact-visuals/check-reference-scene-candidates.mjs", import.meta.url));
+  assert.equal(spawnSync(process.execPath, [script]).status, 1);
+  assert.equal(spawnSync(process.execPath, [script, "--expect-rejected"]).status, 0);
+  assert.equal(spawnSync(process.execPath, [script, "--assets", "--expect-rejected"]).status, 1);
+});
 
 test("all seven exact candidates are inventoried and the observed text failures reject the whole set", () => {
   const result = checkReferenceSceneAudit();
