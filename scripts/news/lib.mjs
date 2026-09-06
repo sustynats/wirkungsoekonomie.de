@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { analysisReaderCopy, hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
 import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-development.mjs";
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
@@ -822,6 +823,7 @@ export function analysisInputFor(stories) {
 export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
   const input = analysisInputFor(stories);
   const lines = [
+    READER_COPY_RULE,
     "Du bist der bereits bestehende quellengebundene WÖk-Analysedienst. Analysiere die folgenden vorgefilterten Story-Cluster.",
     "Eigenständige Nachrichtenredaktion: Ereignis aus den verfügbaren Quellen rekonstruieren, Beiträge/Interessen prüfen, eigenen journalistischen Text schreiben. Keine Paywallrekonstruktion oder ungelieferte Quellenkenntnis.",
     "Amtliche Stellen, Unternehmen und NGOs sind Primärquellen für eigene Erklärungen, nicht automatisch neutrale Wahrheitsinstanzen. Auch ohne amtliche Quelle kann ein belegtes Ereignis berichtenswert sein. Agenturabdrucke, gemeinsame Pressemitteilungen und gleiche Textpassagen zählen nicht als unabhängige Bestätigung. evidence_groups ist eine konservative Abhängigkeitsvorprüfung, kein Beweis für Unabhängigkeit. Bei strittigen oder schwerwiegenden Sachbehauptungen Originalbeleg plus unabhängige Recherche verlangen; ohne ausreichende Evidenz zurückstellen.",
@@ -1095,6 +1097,7 @@ export function validateAnalysis(analysis, story, options = {}) {
   for (const key of requiredStrings) if (typeof analysis?.[key] !== "string" || !analysis[key].trim()) errors.push(`AI_REQUIRED_STRING:${key}`);
   if (analysis?.story_id !== story.story_id) errors.push("AI_STORY_ID_MISMATCH");
   errors.push(...statusConsistencyErrors(analysis));
+  if (hasEditorialResidue(analysisReaderCopy(analysis))) errors.push("AI_PUBLIC_EDITORIAL_RESIDUE");
   if (!new Set(["angekündigt", "Entwurf", "beschlossen", "in Kraft", "laufende Umsetzung", "erste Daten", "evaluiert", "laufende Entwicklung", "offen"]).has(analysis?.status)) errors.push("AI_STATUS_INVALID");
   if (!new Set(["ex_ante", "monitoring", "ex_post"]).has(analysis?.analysis_type)) errors.push("AI_ANALYSIS_TYPE_INVALID");
   if (!new Set(["gering", "mittel", "hoch", "sehr hoch"]).has(analysis?.importance)) errors.push("AI_IMPORTANCE_INVALID");

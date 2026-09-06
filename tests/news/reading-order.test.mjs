@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { evidenceLevelLabel, storyPage } from "../../scripts/news/build.mjs";
+import { readerHtmlHasEditorialResidue } from "../../scripts/news/reader-copy.mjs";
 
 const fixture = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories.find(story => story.published && story.listed !== false && story.analysis && story.news_status);
 
@@ -52,4 +53,19 @@ test("public ticker copy explains quality without infrastructure internals", () 
   assert.match(html, /Vorprüfen und bündeln/);
   assert.match(html, /Nur Belastbares veröffentlichen/);
   assert.match(html, /Name und E-Mail-Adresse sind nicht erforderlich/);
+});
+
+test("all existing reader pages keep concrete findings but no editorial boilerplate", () => {
+  const stories = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories;
+  for (const story of stories.filter(item => item.published && item.listed !== false)) {
+    const before = structuredClone(story);
+    const html = storyPage(story);
+    assert.equal(readerHtmlHasEditorialResidue(html), false, story.story_id);
+    const facts = html.match(/<article\b[^>]*id="faktencheck"[\s\S]*?<\/article>/)?.[0];
+    assert.ok(facts.indexOf("Gesicherter Ausgangspunkt") < facts.indexOf("Was dieser Stand nicht belegt"));
+    assert.match(html, /href="\.\.\/\.\.\/methodik\/">Wie diese Einordnung entsteht/);
+    assert.match(html, /id="quellen"/);
+    assert.doesNotMatch(facts, /Wahrheit zuerst|quellengebundenen? Claims?/);
+    assert.deepEqual(story, before, "rendering preserves facts, uncertainty, sources, corrections, scores and dates");
+  }
 });
