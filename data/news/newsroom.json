@@ -94330,7 +94330,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-33c99d9ec5432a4822d9",
+      "event_id": "event-e4a2cdfba2db5d200069",
       "first_seen_at": "2026-09-05T14:51:17.850Z"
     },
     "db0d0138e6425987497f69851d0a177ddec75be91a228052e2c06109a3431f8d": {
@@ -282077,19 +282077,9 @@
       "relevance": {
         "filter_version": "4.0",
         "material_development_review": {
-          "required": true,
+          "required": false,
           "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/folgen-konsequenzen-110,nicht-waehlen-100.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
+          "findings": []
         },
         "internal_relevance_score": 34,
         "public_relevance": "mittel",
@@ -300274,7 +300264,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-33c99d9ec5432a4822d9",
+      "event_id": "event-e4a2cdfba2db5d200069",
       "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
       "source_id": "wiwo-schlagzeilen",
       "role": "journalistic_report"
@@ -457437,7 +457427,147 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die Meldung wiederholt den laufenden Fahndungsstand ohne neue materiell belegte Entwicklung gegenüber dem bereits veröffentlichten Zwischenstand."
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-06476c6e980f5f47",
+      "decision": "input_size_hold",
+      "reason": "AI_INPUT_TOO_LARGE"
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-5072789df611867b",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "ndr-info",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        },
+        {
+          "source_id": "swr-aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "mdr-nachrichten",
+          "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-5469869109614acf",
+      "event_id": "event-e4a2cdfba2db5d200069",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Meldung wiederholt bereits veröffentlichte Angaben zum ersten Kiew-Besuch von Witkoff und Kushner; es liegt keine substanzielle neue Entwicklung vor."
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-b8204dba21ee4eea",
+      "event_id": "event-079280c3a232824df66a",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "rationale": "Neue, konkret belegte Entwicklung: die angekündigte Evakuierung ist beendet und der Blindgänger wurde entschärft; dadurch ändert sich der Zustand vor Ort materiell."
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-d7a0af1afc831caf",
+      "event_id": "event-0fef8df3a32c15bcde8d",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+      ],
+      "rationale": "Gegenüber der Vorankündigung liegt nun die tatsächliche Reise und der Empfang in Kiew vor; das ist neue, materiell relevante Zustandsinformation."
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-ed0f00e58dfe544f",
+      "event_id": "event-3668bca1040e9350b498",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "not_material",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Meldung besteht vor allem aus Lawrows zugespitzter Behauptung und Reaktionen auf den Drohnenvorfall; sie liefert keine neue materielle Zustandsänderung oder belastbare neue Evidenz."
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-f64f31247bfc1aa1",
+      "event_id": "event-046c7c0934d7305129df",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "not_material",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Der Beitrag erklärt nur die Folgen des Nichtwählens und liefert keine neue materielle Zustandsänderung, Entscheidung oder belastbare Entwicklung."
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-ecf4b205df1ecac3",
+      "event_id": "event-c1061c18db8a491c241b",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH"
+      ],
+      "rationale": "Die spätere Meldung enthält eine materielle Entwicklung gegenüber der früheren Evakuierungsreportage: Die Entschärfung ist beendet und die Rückkehr möglich."
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-cf03acddb911d861",
+      "event_id": "event-bae82494ff50b6e4ca6a",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "AI_SOURCE_SUMMARY_LENGTH"
+      ],
+      "rationale": "Zur bestehenden Erstmeldung kommen konkrete Maßnahmen, Schutzinstrumente und ein engerer Bezug zu kritischer Infrastruktur hinzu; das ist mehr als bloße Umformulierung."
+    },
+    {
+      "at": "2026-09-06T15:21:12.149Z",
+      "story_id": "wt-7bd1d7f242af3f7b",
+      "event_id": "event-cddc4a44512169719de0",
+      "decision": "held_or_rejected",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [
+        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
+      ],
+      "rationale": "Gegenüber der Erstfassung liegen nun konkrete Zusatzfakten zu Schaden, Verletzung und Rettung vor; das ist substanziell materialer als nur ein offener Brandhinweis."
     }
   ],
-  "updated_at": "2026-09-06T15:06:13.347Z"
+  "updated_at": "2026-09-06T15:21:12.149Z"
 }
