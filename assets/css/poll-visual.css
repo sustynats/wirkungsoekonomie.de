@@ -28,6 +28,17 @@
 .vp-hotspots button { position:absolute; transform:translate(-50%,-50%); width:46px; height:46px; padding:0; border:3px solid white; border-radius:50%; background:var(--navy); color:white; font:700 1rem system-ui; cursor:pointer; pointer-events:auto; box-shadow:0 2px 12px #0009; }
 .vp-hotspots button[aria-pressed=true] { background:var(--green-dark); }
 .vp-written { margin-top:2rem; }
+.vp-focus-tabs { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.5rem; margin:1rem 0; }
+.vp-focus-tabs button { min-height:48px; padding:.65rem; border:1px solid #8c938d; border-radius:6px; background:var(--paper); color:var(--navy); font:inherit; font-weight:650; cursor:pointer; }
+.vp-focus-tabs button[aria-pressed=true] { background:var(--navy); color:white; }
+.vp-contrast { margin:1.5rem 0 2rem; }
+.vp-contrast-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+.vp-contrast-grid article { padding:1.1rem; border:1px solid #c9d2cf; border-radius:8px; background:white; min-width:0; }
+.vp-contrast-grid article[data-selected=true] { outline:3px solid var(--green-dark); outline-offset:-3px; }
+.vp-contrast-grid h4 { margin:.6rem 0; font-size:1.1rem; line-height:1.45; }
+.vp-contrast-grid p { line-height:1.6; }
+.vp-contrast-grid .poll-kicker { margin:0; }
+.vp-focus-tabs button:focus-visible { outline:3px solid var(--green-dark); outline-offset:3px; }
 .vp-energy { margin:1.5rem 0; padding:1.25rem; border:1px solid #c9d2cf; border-radius:10px; background:#f2f6f3; }
 .vp-energy h3 { margin-top:0; }
 .vp-energy h4 { margin:1.4rem 0 .7rem; font-size:1.15rem; }
@@ -43,6 +54,8 @@
 .visual-poll-page .poll-checkbox { display:flex; gap:.8rem; align-items:flex-start; margin:1rem 0; line-height:1.6; }
 .visual-poll-page .poll-checkbox input { min-width:22px; min-height:22px; margin-top:.25rem; }
 @media(max-width:640px) {
+ .vp-focus-tabs { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .vp-contrast-grid { grid-template-columns:1fr; }
  .vp-energy-grid { grid-template-columns:1fr; }
  .vp-energy { padding:1rem; }
  .vp-stage[data-view=pair] { grid-template-columns:1fr; }

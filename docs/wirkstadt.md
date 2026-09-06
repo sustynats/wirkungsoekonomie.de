@@ -135,7 +135,7 @@ Schema-2-Abstimmung für diese politische Experience freigeben.
 
 ## Bisherige Prüfungen
 
-- `npm run polls:test`: 32 Tests bestanden, einschließlich Schema-1→3 mit
+- `npm run polls:test`: 34 Tests bestanden, einschließlich Schema-1→3 mit
   bestehenden Stimmen, Consent, Isolation, Datenschutz, Restore, Rate-Limits,
   Ergebnis-Sichtbarkeit und Zoomgrenzen.
 - Lokaler Browser: 390-Pixel-Mobilansicht, identischer Ausschnitt bei
@@ -165,6 +165,31 @@ Test-/Startstimmen, bis zur Frontend-Abnahme pausiert.
 Noch ausstehend: vollständiger Website-/Artefakt-Build, GitHub-Pages-Deployment,
 Aktivierung und Live-Abnahme. Der lokale Testserver ist **kein**
 Veröffentlichungsnachweis.
+
+### Alltag, Verkehrsflächen und Stadtgrün (Erweiterung vor Erstveröffentlichung)
+
+`stadtvergleich-alltag.json` ergänzt sechs gleiche Vergleichsachsen mit 42
+quellenbezogenen Einordnungen: Emissionen, Radwege, Straßen/Parken/Auto,
+ÖPNV, Parks/Stadtgrün und Erholung. Die Auswahl koppelt Textvergleich und
+identischen Bildausschnitt; sie löst niemals eine Abstimmung aus. Zusätzliche
+Zoomziele zeigen Bahnhof und öffentlichen Freiraum. Programme werden nicht
+künstlich gegensätzlich gemacht: Auch CDU/CSU und BSW fordern Radwege; SPD,
+Grüne und Linke benennen Stadtgrün und Entsiegelung ausdrücklich. Fehlende
+ausgewertete Festlegungen sind kein Nachweis einer Ablehnung.
+
+Fünf nichtdestruktiv gespeicherte Bildrevisionen `*-alltag-v2.webp` verdeutlichen
+Radverbindungen, öffentlichen Verkehr, Bildungsorte und die Umwidmung von
+Parkraum zu Grün- und Aufenthaltsraum. Im BSW-Bild liegt das Gaswerk nun am
+nördlichen Umspannwerk; die Abwasserinfrastruktur bleibt erhalten. Das bestehende
+G-Bild wird beibehalten, weil der Korrekturentwurf die Erhaltungsbedingungen
+nicht vollständig erfüllte. Promptprotokoll: `wirkstadt-alltag-bildprompts.json`.
+Verwendet wurde der eingebaute Bildgenerator, kein kostenpflichtiger API-Fallback.
+
+Emissionen werden qualitativ nach Quellen und Mechanismen eingeordnet,
+nicht als erfundene Tonnenzahl, Rauchstärke oder manipulierte Wetterstimmung.
+Die neue Artefakt-Skriptprüfung verlangt bei sensiblen Umfragen den separaten
+Einstieg und Datenschutzmarker; allgemeine Seiten benötigen weiterhin ihr
+versioniertes Hauptskript. Analytics werden auch später nicht nachgerüstet.
 
 Lokaler Teststart:
 

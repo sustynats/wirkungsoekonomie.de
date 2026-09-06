@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-06",
+  "method": "built-in image_gen",
+  "firstPass": {
+    "b": "Clarify the existing public-services and public-transport changes ONLY: at the existing school beside the sports courts on the lower-left riverbank retain school and courts but make its new attached classroom and dining-hall wing visibly distinct; at the existing foreground kindergarten extend the existing building with a modest matching attached childcare wing on its paved plot, retaining playground; at the existing railway station show a clearly legible compact bus interchange with roofed waiting platforms and several normal city buses. These are possible built forms, not numerical capacity claims. Preserve existing wind farm, PV, housing additions and all other areas. Avoid inventing fees, staffing, new tram networks or larger hospital.",
+    "c": "Clarify only the mobility and climate-adaptation public-space design already intended: around the central town-hall riverfront and its approaches make a continuous, visibly distinct protected red cycle path, tree-lined pedestrian promenade and several substantial planted rain-garden islands that replace parts of the existing surface parking; retain access for delivery, emergency and accessible vehicles. Show fewer surface parking bays specifically where repurposed, not a town without cars. Retain exact buildings, bridges and street axes, existing energy wind/solar/storage, housing, school and hospital. Mature greenery should be locally plausible for the illustrative horizon, no artificial green tint or sunny utopia, no removal of needed infrastructure.",
+    "f": "Correct energy siting only for fair comparison: move the existing compact gas power plant from the lower-right sewage works to the field directly adjoining the upper-left electricity substation, making the gas turbine hall, exhaust stacks and grid connection clearly visible at plausible scale. Restore every baseline sewage-treatment basin and its original buildings in the lower-right using image 2, without erasing any unrelated additions. Preserve the existing wind farm, new apartment blocks, school, hospital, roads and cars, greenery, all else unchanged. This scenario has a gas reserve alongside renewables; NO nuclear plant, no coal plant, no smoke drama.",
+    "g": "Correct energy siting only for fair comparison: move the existing gas power building from the lower-right sewage works to the field directly adjoining the upper-left electricity substation. Make a plausible compact gas turbine hall with clear exhaust stacks and PV roof, and adjacent rectangular battery containers, legible at the same site used by other scenarios. Restore all sewage-treatment basins and original utility buildings lower-right exactly from image 2. Preserve all existing new private housing development and other buildings, wind farm, roads, car access and transport hub. No nuclear plant depicted as guaranteed completed; no coal plant added without a specific site. No changes elsewhere."
+  },
+  "secondPass": {
+    "a": {
+      "file": "a.webp",
+      "prompt": "Use case: precise-object-edit. Edit the first supplied aerial city image only. Keep camera, viewpoint, crop, buildings, church, river, bridges, hospital, schools, sewage works, countryside, sky, lighting, colour grading, image quality and all energy installations exactly the same. No labels/logos/text, no partisan mood, no invented outcome statistics. Add only the listed programme-grounded spatial features, preserving everything else. High-detail photoreal architectural visualization, same 1672x941.Along the existing approach to the railway station and main central road add a clearly visible continuous segregated red bicycle lane with bike stands at the station, alongside retained car lanes and parking. This illustrates new cycle connections and multimodal interchanges, not a car-free centre. Keep the same number/size of main streets and the same existing buildings."
+    },
+    "e": {
+      "file": "e.webp",
+      "prompt": "Use case: precise-object-edit. Edit the first supplied aerial city image only. Keep camera, viewpoint, crop, buildings, church, river, bridges, hospital, schools, sewage works, countryside, sky, lighting, colour grading, image quality and all energy installations exactly the same. No labels/logos/text, no partisan mood, no invented outcome statistics. Add only the listed programme-grounded spatial features, preserving everything else. High-detail photoreal architectural visualization, same 1672x941.Create the explicitly intended mostly car-free central town-hall/riverfront area: replace the central surface parking and parts of its motor-traffic lanes with a connected public riverside park, trees, small lawns, paths, playground and community-garden beds. Add a protected red cycle link to the station and the already enlarged school. Retain accessible/emergency/delivery access, bus routes and bridges. Keep ordinary cars on the outer road network and all buildings, energy, housing and surroundings unchanged. Make this public-space reallocation clearly legible rather than merely adding tiny decorative trees."
+    },
+    "f": {
+      "file": "/Users/hagen/.codex/generated_images/019fae7c-8da0-72b2-82e8-b46a07da1cab/exec-23a19b69-6884-412a-8ed4-fa4e5bd953d4.png",
+      "prompt": "Use case: precise-object-edit. Edit the first supplied aerial city image only. Keep camera, viewpoint, crop, buildings, church, river, bridges, hospital, schools, sewage works, countryside, sky, lighting, colour grading, image quality and all energy installations exactly the same. No labels/logos/text, no partisan mood, no invented outcome statistics. Add only the listed programme-grounded spatial features, preserving everything else. High-detail photoreal architectural visualization, same 1672x941.Add a distinct segregated red cycle connection along the central road to the railway station, normal bus stops with shelters and a few normal city buses at the station. Preserve car lanes, parking and road access: the programme supports safe cycle links and affordable bus/rail alongside individual cars. Keep the gas plant at the upper-left substation, wind turbines and all sewage basins lower-right as they are. No other changes."
+    }
+  },
+  "selected": [
+    "a-alltag-v2.webp",
+    "b-alltag-v2.webp",
+    "c-alltag-v2.webp",
+    "e-alltag-v2.webp",
+    "f-alltag-v2.webp"
+  ],
+  "discarded": "G correction did not fully satisfy restoration invariants. Existing G retained.",
+  "note": "Same city, crop and neutral weather. Qualitative spatial illustrations, not quantities or achieved effects."
+}

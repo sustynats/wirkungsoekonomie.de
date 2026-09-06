@@ -6,6 +6,10 @@ export function loadExperience(root, slug) {
   const file = path.join(root, 'content/polls/experiences', `${slug}.json`);
   if (!fs.existsSync(file)) return null;
   const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  if(data.comparisonData){
+    if(!/^[a-z0-9-]+\.json$/.test(data.comparisonData))throw new Error('Visual poll: invalid comparison data path');
+    data.comparison=JSON.parse(fs.readFileSync(path.join(path.dirname(file),data.comparisonData),'utf8'));
+  }
   if (data.energyData) {
     if (!/^[a-z0-9-]+\.json$/.test(data.energyData)) throw new Error('Visual poll: invalid energy data path');
     const energy = JSON.parse(fs.readFileSync(path.join(path.dirname(file), data.energyData), 'utf8'));
@@ -33,6 +37,16 @@ export function validateExperience(data) {
     if(!/^[a-z]+$/.test(area.id)||data.domains.some(d=>d.id===area.id)||!data.domains.some(d=>d.id===area.domainId)||!area.title||![area.x,area.y].every(v=>Number.isFinite(v)&&v>=0&&v<=100)||!(area.zoom>=1&&area.zoom<=4)) fail('invalid extra focus area');
   }
   if(new Set((data.extraFocusAreas||[]).map(a=>a.id)).size!==(data.extraFocusAreas||[]).length) fail('duplicate extra focus area');
+  if(data.comparisonData){
+    const c=data.comparison,areas=[...data.domains,...(data.extraFocusAreas||[])];
+    if(!Array.isArray(c?.categories)||!c.categories.length||new Set(c.categories.map(x=>x.id)).size!==c.categories.length)fail('invalid comparison categories');
+    if(Object.keys(c.scenarios||{}).sort().join()!==data.scenarios.map(s=>s.id).sort().join())fail('unequal comparison scenarios');
+    for(const category of c.categories){
+      if(!/^[a-z]+$/.test(category.id)||!category.title||!category.note||!areas.some(a=>a.id===category.focus))fail('invalid comparison category');
+      for(const s of data.scenarios){const entry=c.scenarios[s.id][category.id];if(!entry?.headline||!entry.text||!Array.isArray(entry.pages)||!entry.pages.length||!entry.pages.every(p=>Number.isInteger(p)&&p>0))fail('missing comparison evidence');}
+    }
+    for(const entries of Object.values(c.scenarios))if(Object.keys(entries).sort().join()!==c.categories.map(c=>c.id).sort().join())fail('unequal comparison coverage');
+  }
   return data;
 }
 export function visualPanel(data, {esc, safeJson}) {
@@ -42,6 +56,7 @@ export function visualPanel(data, {esc, safeJson}) {
 <div class="vp-controls"><label>Szenario ansehen<select id="vp-scenario">${data.scenarios.map(s=>`<option value="${s.id}">${esc(s.label)}</option>`).join('')}</select></label><label>Bereich vergrößern<select id="vp-area"><option value="">Gesamtansicht</option>${[...data.domains,...(data.extraFocusAreas||[])].map(d=>`<option value="${d.id}">${esc(d.title)}</option>`).join('')}</select></label></div>
 <div class="vp-view-buttons" role="group" aria-label="Vergleichsansicht"><button type="button" data-vp-view="before" aria-pressed="true">Ausgangsbild</button><button type="button" data-vp-view="after" aria-pressed="false">Szenario</button><button type="button" data-vp-view="wipe" aria-pressed="false">Vorher / nachher</button><button type="button" data-vp-view="pair" aria-pressed="false">Nebeneinander</button></div>
 <div class="vp-controls vp-pair-choice" hidden><label>Links vergleichen mit<select id="vp-compare"><option value="">Ausgangsbild</option>${data.scenarios.map(s=>`<option value="${s.id}">${esc(s.label)}</option>`).join('')}</select></label></div>
+${data.comparison?`<div class="vp-focus-tabs" role="group" aria-label="Alltagsunterschiede im Bild und Text vergleichen">${data.comparison.categories.map(c=>`<button type="button" data-vp-contrast="${c.id}" aria-pressed="${c.id==='auto'}">${esc(c.title)}</button>`).join('')}</div>`:''}
 <div class="vp-stage" data-view="before" id="vp-stage">
 <figure class="vp-pane vp-left"><div class="vp-viewport"><div class="vp-transform"><img id="vp-before" src="${esc(data.baseline)}" alt="${esc(data.baselineAlt)}" width="1672" height="941" fetchpriority="high"></div></div><figcaption id="vp-left-caption">Gemeinsamer Ausgangszustand</figcaption></figure>
 <figure class="vp-pane vp-right"><div class="vp-viewport"><div class="vp-transform"><img id="vp-after" src="${esc(data.scenarios[0].image)}" alt="${esc(data.scenarios[0].alt)}" width="1672" height="941" decoding="async"></div><div class="vp-hotspots" hidden>${data.domains.map((d,i)=>`<button type="button" data-vp-area="${d.id}" style="left:${d.x}%;top:${d.y}%" aria-label="${esc(d.title)}: vergrößern und Details öffnen"><span aria-hidden="true">${i+1}</span></button>`).join('')}</div></div><figcaption id="vp-right-caption">Szenario A · illustrative Umsetzung</figcaption></figure>
@@ -51,6 +66,7 @@ export function visualPanel(data, {esc, safeJson}) {
 <p id="vp-image-status" class="poll-notice" role="status" aria-live="polite"></p>
 <div class="poll-actions"><button id="vp-hotspot-toggle" type="button" class="btn btn-secondary" aria-expanded="false">Details entdecken</button><button id="vp-reset" type="button" class="btn btn-secondary">Gesamtansicht</button><a id="vp-image-link" class="btn btn-secondary" href="${esc(data.baseline)}" target="_blank" rel="noopener">Bild groß öffnen</a><a class="btn btn-primary" href="#poll-ui">Zur Abstimmung</a></div>
 <p class="poll-notice">Zoom: Wähle einen Bereich oder tippe auf eine nummerierte Markierung. Der Ausschnitt bleibt beim Szenariowechsel gleich. Auf dem Smartphone kannst Du zusätzlich die normale Browser-Vergrößerung nutzen.</p>
+${data.comparison?`<section class="vp-contrast" aria-labelledby="vp-contrast-title"><h3 id="vp-contrast-title">Straßen, Parken und Auto-Dominanz: sieben Richtungen im Vergleich</h3><p>Gleiche Frage an jedes Programm. Wähle oben ein Thema; „Im Bild ansehen“ zeigt Dir den passenden Ausschnitt. Die Bildauswahl gibt noch keine Stimme ab.</p><p id="vp-contrast-note" class="poll-notice">${esc(data.comparison.categories.find(c=>c.id==='auto').note)}</p><div id="vp-contrast-cards" class="vp-contrast-grid">${data.scenarios.map(s=>{const e=data.comparison.scenarios[s.id].auto;return `<article><p class="poll-kicker">${esc(s.label)}</p><h4>${esc(e.headline)}</h4><p>${esc(e.text)}</p><p class="poll-notice">Programm 2025 · PDF-Seiten ${e.pages.join(', ')}</p></article>`;}).join('')}</div></section>`:''}
 ${data.energyData ? `<section class="vp-energy" aria-labelledby="vp-energy-title"><h3 id="vp-energy-title">Woher kommt die Energie?</h3><p>Die Modellstadt ist <strong>keine Energieinsel</strong>. In jedem Szenario gehört das überregionale Stromnetz dazu. Nicht jede Anlage steht im Bildausschnitt; die Illustrationen zeigen weder einen vollständigen Kraftwerkspark noch einen berechneten Strommix.</p><div id="vp-energy-content"><p>Im Ausgangsbild ist links im Umland ein Umspannwerk zu sehen. Es verteilt Strom aus dem Verbundnetz und erzeugt selbst keinen. Wähle „Szenario“, um Erzeugung, Reserven und Kernenergieoptionen der jeweiligen Programmrichtung zu vergleichen.</p></div><p class="poll-notice">Die folgenden Angaben beschreiben Programmziele, keine bereits eingetretene Wirkung. Ein nicht gezeichnetes Kraftwerk bedeutet nicht „kein Kraftwerk“. Speicher liefern zuvor eingespeicherte Energie; sie sind keine zusätzliche Primärenergiequelle. Auch ein wolkenloses Bild beweist keine emissionsfreie Versorgung.</p></section>` : ''}
 <section class="vp-written" aria-labelledby="vp-written-title"><h3 id="vp-written-title">Was würde sich ändern?</h3><p>Die wichtigsten Programmpunkte, unsere bildliche Übersetzung und die offenen Wirkungsfragen. Zunächst ohne Parteinamen.</p><div id="vp-topics">${data.domains.map(d=>`<details id="vp-topic-${d.id}"><summary>${esc(d.title)}</summary><p><strong>Programmrichtung:</strong> ${esc(data.scenarios[0].topics[d.id].programme)}</p><p><strong>Illustrative Übersetzung:</strong> ${esc(data.scenarios[0].topics[d.id].scene)}</p><p>${esc(d.check)}</p></details>`).join('')}</div></section>
 <details id="vp-method"><summary>Wie belastbar ist dieser Vergleich?</summary>

@@ -1,68 +1,475 @@
 {
-  "version": "1.1",
+  "version": "1.2",
+  "comparisonData": "stadtvergleich-alltag.json",
   "energyData": "stadtvergleich-energie.json",
-  "extraFocusAreas": [{"id":"energiesued","domainId":"energie","title":"Energie: südöstlicher Standort","x":84,"y":80,"zoom":2.6}],
+  "extraFocusAreas": [
+    {
+      "id": "energiesued",
+      "domainId": "energie",
+      "title": "Wärme und Infrastruktur im Südosten",
+      "x": 84,
+      "y": 80,
+      "zoom": 2.6
+    },
+    {
+      "id": "bahnhof",
+      "domainId": "mobilitaet",
+      "title": "Bahnhof und ÖPNV",
+      "x": 65,
+      "y": 44,
+      "zoom": 3.2
+    },
+    {
+      "id": "freiraum",
+      "domainId": "mobilitaet",
+      "title": "Parks, Erholung und Flächenverteilung",
+      "x": 50,
+      "y": 58,
+      "zoom": 2.8
+    }
+  ],
   "slug": "stadtvergleich-bundestagswahl-2025",
   "title": "Eine Stadt. Sieben mögliche Wege.",
   "baseline": "/assets/img/polls/wirkstadt/basis.webp",
   "baselineAlt": "Fiktive deutsche Stadt mit Umland, Fluss, Bahnhof, Wohnvierteln, Kita, Schule und Krankenhaus. Gemeinsamer Ausgangszustand aller Szenarien.",
   "horizon": "Illustrativer Horizont 2035 · Programme zur Bundestagswahl 2025",
   "domains": [
-    {"id":"energie","title":"Energie und Wärme","x":24,"y":24,"zoom":2.3,"question":"Wie werden Strom und Wärme bereitgestellt?","mechanism":"Erzeugung, Netze, Speicher und Gebäudeeffizienz wirken zusammen. Eine zusätzliche Anlage allein belegt weder Versorgungssicherheit noch sinkende Rechnungen.","check":"Zu prüfen: saisonale Versorgung, Netzkosten, Brennstoffabhängigkeit, Treibhausgase, Flächenbedarf und die Verteilung von Kosten und Erträgen. Wärmenetze brauchen eine örtliche Planung; im Luftbild sind ihre Leitungen nicht sichtbar."},
-    {"id":"mobilitaet","title":"Mobilität und öffentlicher Raum","x":55,"y":63,"zoom":2.7,"question":"Wie gelangen Menschen zuverlässig an ihr Ziel?","mechanism":"Infrastruktur schafft Angebote. Erst nutzbare Verbindungen, bezahlbare Preise und erreichbare Ziele können Wege verändern. Ein sichtbarer Bus sagt noch nichts über seinen Takt aus.","check":"Zu prüfen: Erreichbarkeit auch ohne Auto, Pendelzeiten, Barrierefreiheit, Sicherheit, Lärm und Flächenverbrauch. Betrieb, Personal und Finanzierung zählen ebenso wie neue Haltestellen."},
-    {"id":"wohnen","title":"Wohnen und Quartiere","x":23,"y":42,"zoom":2.7,"question":"Wer kann sich welchen Wohnraum leisten?","mechanism":"Bauen, Sanieren, Eigentumsformen und Mietregeln setzen unterschiedliche Hebel an. Mehr Gebäude sind nicht automatisch mehr bezahlbare Wohnungen.","check":"Zu prüfen: Miete einschließlich Wärme, Belegungsbindungen, Einkommen, Baukapazitäten und Verdrängung. Neubau beansprucht Material und Fläche; Nachverdichtung kann Freiräume belasten. Die konkrete Architektur ist illustrative Gestaltungsentscheidung."},
-    {"id":"bildung","title":"Kitas und Schulen","x":35,"y":80,"zoom":2.6,"question":"Wer erhält verlässliche Bildung und Betreuung?","mechanism":"Gebäude ermöglichen Betreuung, ersetzen aber keine qualifizierten Fachkräfte. Gebühren, Öffnungszeiten, Personalschlüssel und Zugang entscheiden über die tatsächliche Entlastung von Familien.","check":"Zu prüfen: verlässlich verfügbare Plätze, Qualität, Teilhabe und Belastung der Beschäftigten. Bund, Länder, Kommunen und Träger müssen zusammenwirken. Die Schule liegt auf der gegenüberliegenden Flussseite; der Marker umfasst beide Einrichtungen."},
-    {"id":"gesundheit","title":"Gesundheit und Pflege","x":74,"y":63,"zoom":2.6,"question":"Wie erreichbar und verlässlich ist die Versorgung?","mechanism":"Ein Klinikgebäude zeigt keine Behandlungsqualität. Personal, ambulante Angebote, Notfallwege und Finanzierung müssen zusammenpassen.","check":"Zu prüfen: Wartezeiten, Behandlungsqualität, Pflegebelastung und Zugang unabhängig vom Einkommen. Krankenhausplanung und lokale Versorgung lassen sich nicht allein durch ein Bundeswahlprogramm festlegen. Kein Szenario behauptet eine konkret bevorstehende Klinikschließung."}
+    {
+      "id": "energie",
+      "title": "Energie und Wärme",
+      "x": 24,
+      "y": 24,
+      "zoom": 2.3,
+      "question": "Wie werden Strom und Wärme bereitgestellt?",
+      "mechanism": "Erzeugung, Netze, Speicher und Gebäudeeffizienz wirken zusammen. Eine zusätzliche Anlage allein belegt weder Versorgungssicherheit noch sinkende Rechnungen.",
+      "check": "Zu prüfen: saisonale Versorgung, Netzkosten, Brennstoffabhängigkeit, Treibhausgase, Flächenbedarf und die Verteilung von Kosten und Erträgen. Wärmenetze brauchen eine örtliche Planung; im Luftbild sind ihre Leitungen nicht sichtbar."
+    },
+    {
+      "id": "mobilitaet",
+      "title": "Mobilität und öffentlicher Raum",
+      "x": 55,
+      "y": 63,
+      "zoom": 2.7,
+      "question": "Wie gelangen Menschen zuverlässig an ihr Ziel?",
+      "mechanism": "Infrastruktur schafft Angebote. Erst nutzbare Verbindungen, bezahlbare Preise und erreichbare Ziele können Wege verändern. Ein sichtbarer Bus sagt noch nichts über seinen Takt aus.",
+      "check": "Zu prüfen: Erreichbarkeit auch ohne Auto, Pendelzeiten, Barrierefreiheit, Sicherheit, Lärm und Flächenverbrauch. Betrieb, Personal und Finanzierung zählen ebenso wie neue Haltestellen."
+    },
+    {
+      "id": "wohnen",
+      "title": "Wohnen und Quartiere",
+      "x": 23,
+      "y": 42,
+      "zoom": 2.7,
+      "question": "Wer kann sich welchen Wohnraum leisten?",
+      "mechanism": "Bauen, Sanieren, Eigentumsformen und Mietregeln setzen unterschiedliche Hebel an. Mehr Gebäude sind nicht automatisch mehr bezahlbare Wohnungen.",
+      "check": "Zu prüfen: Miete einschließlich Wärme, Belegungsbindungen, Einkommen, Baukapazitäten und Verdrängung. Neubau beansprucht Material und Fläche; Nachverdichtung kann Freiräume belasten. Die konkrete Architektur ist illustrative Gestaltungsentscheidung."
+    },
+    {
+      "id": "bildung",
+      "title": "Kitas und Schulen",
+      "x": 35,
+      "y": 80,
+      "zoom": 2.6,
+      "question": "Wer erhält verlässliche Bildung und Betreuung?",
+      "mechanism": "Gebäude ermöglichen Betreuung, ersetzen aber keine qualifizierten Fachkräfte. Gebühren, Öffnungszeiten, Personalschlüssel und Zugang entscheiden über die tatsächliche Entlastung von Familien.",
+      "check": "Zu prüfen: verlässlich verfügbare Plätze, Qualität, Teilhabe und Belastung der Beschäftigten. Bund, Länder, Kommunen und Träger müssen zusammenwirken. Die Schule liegt auf der gegenüberliegenden Flussseite; der Marker umfasst beide Einrichtungen."
+    },
+    {
+      "id": "gesundheit",
+      "title": "Gesundheit und Pflege",
+      "x": 74,
+      "y": 63,
+      "zoom": 2.6,
+      "question": "Wie erreichbar und verlässlich ist die Versorgung?",
+      "mechanism": "Ein Klinikgebäude zeigt keine Behandlungsqualität. Personal, ambulante Angebote, Notfallwege und Finanzierung müssen zusammenpassen.",
+      "check": "Zu prüfen: Wartezeiten, Behandlungsqualität, Pflegebelastung und Zugang unabhängig vom Einkommen. Krankenhausplanung und lokale Versorgung lassen sich nicht allein durch ein Bundeswahlprogramm festlegen. Kein Szenario behauptet eine konkret bevorstehende Klinikschließung."
+    }
   ],
   "scenarios": [
-    {"id":"a","label":"Szenario A","party":"CDU/CSU","image":"/assets/img/polls/wirkstadt/a.webp","alt":"Dieselbe Stadt mit gemischtem Energieausbau, erhaltenen Straßen- und Parkflächen sowie ergänzten Wohngebäuden.","source":"https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf","sourceTitle":"CDU/CSU: Politikwechsel für Deutschland (2025)","funding":"Programmhebel sind unter anderem private Investitionen, einfacheres Baurecht und Förderung. Ob Entlastungen, öffentliche Aufgaben und Investitionen gemeinsam finanzierbar sind, ist hier nicht durchgerechnet.","topics":{
-      "energie":{"pages":[21,22],"programme":"Erneuerbare ausbauen, Versorgung technologieoffen absichern; Kernenergieoption prüfen und Heizungsgesetz abschaffen.","scene":"Windanlagen, Dach-PV und ein kompaktes flexibles Kraftwerk stehen für einen gemischten Ausbau. Kein neues Atomkraftwerk wird als gesichert dargestellt."},
-      "mobilitaet":{"pages":[74,75],"programme":"Straßen und Schiene erneuern, Autozugang erhalten; ÖPNV und weitere Verkehrsträger ergänzen sich.","scene":"Erneuerte Straßen, Parken und Umstiegsmöglichkeiten bleiben nebeneinander sichtbar. Daraus folgt keine berechnete Zunahme des Autoverkehrs."},
-      "wohnen":{"pages":[73],"programme":"Baurecht vereinfachen, Nachverdichtung und Neubau ermöglichen; sozialen Wohnungsbau fördern.","scene":"Zusätzliche Wohnungen entstehen innen und am Rand. Gebäudezahlen und Eigentumsanteile sind keine Programmprognose."},
-      "bildung":{"pages":[65,66],"programme":"Verlässliche Betreuung, Sprachförderung und digitale Schulausstattung stärken.","scene":"Die bestehenden Einrichtungen werden modernisiert. Ob dadurch Ausfälle sinken, hängt vor allem von Personal und Betrieb ab."},
-      "gesundheit":{"pages":[69,70],"programme":"Flächendeckende Grundversorgung und spezialisierte Leistungen verbinden; Fehlsteuerungen der Krankenhausreform korrigieren.","scene":"Das Krankenhaus bleibt erhalten, ambulante Versorgung ergänzt den Standort. Konkrete Behandlungskapazitäten werden nicht behauptet."}
-    }},
-    {"id":"b","label":"Szenario B","party":"SPD","image":"/assets/img/polls/wirkstadt/b.webp","alt":"Dieselbe Stadt mit Windenergie, Dach-PV, Wärmeinfrastruktur und erweiterten öffentlichen Einrichtungen.","source":"https://mehr.spd.de/custom-static-assets/documents/Regierungsprogramm.pdf","sourceTitle":"SPD: Mehr für Dich. Besser für Deutschland. (2025)","funding":"Der Deutschlandfonds soll öffentliche und private Investitionen ermöglichen. Finanzierung, Betriebskosten und örtliche Lieferfähigkeit bleiben eigene Prüfaufgaben; das Bild ist kein ausgeglichener Stadtetat.","topics":{
-      "energie":{"pages":[6,7,8,33,53],"programme":"Erneuerbare, Strom- und Wärmenetze ausbauen; klimafreundliche Wärme sozial unterstützen.","scene":"Dach-PV, Windanlagen und eine Wärmeinfrastruktur ergänzen den Bestand. Das überregionale Stromnetz bleibt Teil der Versorgung; das Bild behauptet keine ausschließlich örtliche Erzeugung. Günstigere Rechnungen sind daran nicht automatisch ablesbar."},
-      "mobilitaet":{"pages":[35,36],"programme":"Schiene und öffentlichen Verkehr stärken; Deutschlandticket dauerhaft finanzieren.","scene":"Ein ausgebauter Umsteigepunkt und Busangebote ergänzen weiterhin nutzbare Straßen. Preis und Takt müssen zusätzlich finanziert werden."},
-      "wohnen":{"pages":[20,21],"programme":"Sozialen und gemeinnützigen Wohnungsbau stärken und Mieten begrenzen; auch private Investitionen ermöglichen.","scene":"Neue Mehrfamilienhäuser und gemeinschaftliche Höfe zeigen möglichen Ausbau. Sozialbindung lässt sich nur in den zugehörigen Regeln prüfen."},
-      "bildung":{"pages":[15,27],"programme":"Kitaqualität, Ganztag und Schulen stärken; kostenloses Mittagessen gemeinsam mit den Ländern ermöglichen.","scene":"Kita und Schule erhalten zusätzliche Nutzflächen. Personalausstattung, Qualität und tatsächliche Gebühren sind nicht im Bild messbar."},
-      "gesundheit":{"pages":[29,30,31],"programme":"Ambulante und stationäre Versorgung vernetzen; örtliche Angebote und Pflege stärken.","scene":"Ein ergänzter Versorgungsstandort steht für bessere Zusammenarbeit. Ob Termine schneller verfügbar werden, bleibt zu überprüfen."}
-    }},
-    {"id":"c","label":"Szenario C","party":"Bündnis 90/Die Grünen","image":"/assets/img/polls/wirkstadt/c.webp","alt":"Dieselbe Stadt mit Wind- und Solarenergie, vielen Solardächern, Wärmeinfrastruktur und stärker begrünten Verkehrsflächen.","source":"https://cms.gruene.de/uploads/assets/Regierungsprogramm_DIGITAL_DINA5.pdf","sourceTitle":"Bündnis 90/Die Grünen: Zusammen wachsen (2025)","funding":"Investitionen, verlässliche Förderung und soziale Abfederung sollen den Umbau tragen. Finanzierung und Kapazitäten müssen gesondert belegt werden; ein grüneres Bild ist kein Beweis positiver Netto-Wirkung.","topics":{
-      "energie":{"pages":[41,42,43,44],"programme":"Erneuerbare, Netze, Speicher und klimafreundliche Wärme ausbauen; regelbare Kraftwerke möglichst bald mit grünem Wasserstoff sowie flexible Biogaskraftwerke vorsehen. Kohleausstieg 2030 und klimaneutrale Stromerzeugung 2035 sind Programmziele.","scene":"Solardächer, Windanlagen und Wärmeinfrastruktur machen einen Teil des Umbaus sichtbar. Regelbare Kraftwerke im Verbundnetz sind ebenfalls vorgesehen, aber nicht vollständig im örtlichen Bild abgebildet. Anlagenzahlen sind zeichnerisch, nicht aus Zielwerten berechnet."},
-      "mobilitaet":{"pages":[47,48],"programme":"Öffentlichen Verkehr, Fuß- und Radverkehr sowie verkehrsberuhigte Quartiere stärken.","scene":"Radverbindungen und bepflanzte Aufenthaltsflächen ersetzen teilweise Parkraum. Erreichbarkeit für Menschen mit Mobilitätseinschränkungen bleibt eine Prüfbedingung."},
-      "wohnen":{"pages":[70,71,72],"programme":"Sozialen und gemeinnützigen Wohnungsbau, Mieterschutz und klimaverträgliche Sanierung unterstützen.","scene":"Ergänztes Wohnen, Solardächer und Höfe zeigen einen möglichen Umbau. Sanierung darf nicht ungeprüft als sinkende Gesamtmiete gelten."},
-      "bildung":{"pages":[75,76],"programme":"Kitaqualität und Fachkräfte stärken; einkommensabhängige Kitagebühren als Standard anstreben.","scene":"Modernisierte Lern- und Betreuungsorte werden gezeigt. Das Programm bedeutet hier ausdrücklich nicht pauschal kostenlose Kitas für alle."},
-      "gesundheit":{"pages":[51,88,89],"programme":"Versorgung besser koordinieren, kommunale Gesundheitszentren ermöglichen und Einrichtungen an Klimarisiken anpassen.","scene":"Ein ergänzter Gesundheitsstandort bleibt in die Stadt eingebunden. Gebäude allein garantieren weder Personal noch kürzere Wartezeiten."}
-    }},
-    {"id":"d","label":"Szenario D","party":"AfD","image":"/assets/img/polls/wirkstadt/d-energy-v2.webp","alt":"Dieselbe Stadt mit einem Kohle- und Gaskraftwerkskomplex am Umspannwerk im linken Umland, erhaltenen Straßen und zusätzlichen niedrigeren Wohngebäuden. Ein Kernenergie-Wiedereinstieg wird nicht als bereits verfügbar dargestellt.","source":"https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf","sourceTitle":"AfD: Zeit für Deutschland (2025)","funding":"Steuer- und Regulierungsentlastung sowie konventionelle Energie bilden wichtige Programmhebel. Weder sinkende Energiepreise noch eine tragfähige Finanzierung öffentlicher Leistungen sind dadurch bereits nachgewiesen.","topics":{
-      "energie":{"pages":[14,40,41,42],"programme":"Windenergieausbau stoppen, Braunkohleausstieg ablehnen und Kohlekraftwerke ausbauen. Kohle und Gas sollen die Stromversorgung bis zum angestrebten Kernenergie-Wiedereinstieg sichern.","scene":"Links im Umland stehen ein Kohlekraftwerk mit Kohlelager und Förderband sowie ein kleineres Gaskraftwerk am Umspannwerk. Lage und Größe sind illustrative Übersetzungen nationaler Programmrichtungen, keine örtlichen Bauzusagen. Ein fertiges Atomkraftwerk wird nicht unterstellt; Emissionen und Importabhängigkeit bleiben zu prüfen."},
-      "mobilitaet":{"pages":[43,44,45],"programme":"Verbrennungsmotor und individuellen Verkehr stärken; öffentliche Förderung der Ladeinfrastruktur beenden.","scene":"Straßen- und Parkflächen bleiben erhalten. Das Bild behauptet weder einen Verkehrskollaps noch die Abschaffung des öffentlichen Verkehrs."},
-      "wohnen":{"pages":[37,38,39],"programme":"Wohneigentum und einfacheres Bauen fördern, Umwandlung von Mietwohnungen in Eigentum erleichtern.","scene":"Neue niedrige Wohnbauten ergänzen den Bestand. Wer Eigentum finanzieren kann und wie Mietende betroffen sind, bleibt offen."},
-      "bildung":{"pages":[153],"programme":"Familiäre Betreuung finanziell unterstützen, Betriebskindergärten fördern und ausreichendes qualifiziertes Kita-Personal vorsehen.","scene":"Die Kita bleibt geöffnet. Zusätzliche familiennahe Wohn- und Spielflächen veranschaulichen eine mögliche Ausgestaltung, keine belegte Betreuungswirkung."},
-      "gesundheit":{"pages":[27,28,29],"programme":"Krankenhausfinanzierung verändern, ambulante Versorgung und Pflegebedingungen verbessern.","scene":"Der vorhandene Versorgungsstandort wird weiter genutzt. Das Programm wird nicht mit unbelegten Krankenhausruinen illustriert."}
-    }},
-    {"id":"e","label":"Szenario E","party":"Die Linke","image":"/assets/img/polls/wirkstadt/e.webp","alt":"Dieselbe Stadt mit gemeinschaftlich gedachter Energieinfrastruktur, zusätzlichen Wohnhöfen, Bus- und Radverbindungen sowie Bildungseinrichtungen.","source":"https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf","sourceTitle":"Die Linke: Alle wollen regieren. Wir wollen verändern. (2025)","funding":"Öffentliche Investitionen, höhere Beiträge großer Vermögen und eine andere Verschuldungsregel sollen Spielräume schaffen. Umsetzbarkeit, dauerhafte Einnahmen und Bau- sowie Personalengpässe sind nicht durch das Bild gelöst.","topics":{
-      "energie":{"pages":[32,33,34],"programme":"Erneuerbare und Wärmeversorgung öffentlich beziehungsweise genossenschaftlich ausbauen; Haushalte sozial entlasten.","scene":"Wind, Solar und lokale Wärme ergänzen den Bestand. Eigentumsverhältnisse werden im Bild nicht vorgetäuscht; sie sind eine institutionelle Bedingung."},
-      "mobilitaet":{"pages":[36,37],"programme":"Bus und Bahn ausbauen und deutlich verbilligen; öffentliche Trägerschaft und kurze Wege stärken.","scene":"Öffentliche Verkehrsangebote und Radverbindungen gewinnen Platz. Die Nutzung und der dauerhaft finanzierte Betrieb müssen separat geprüft werden."},
-      "wohnen":{"pages":[8,9],"programme":"Gemeinnützigen Wohnungsbau stark fördern, Mieten begrenzen und öffentliche Bestände stärken.","scene":"Zusätzliche Wohnhöfe illustrieren möglichen Ausbau, nicht eine berechnete Wohnungszahl oder automatisch niedrige Mieten."},
-      "bildung":{"pages":[16,38],"programme":"Gebührenfreie Betreuung, bessere Personalschlüssel und kostenfreie Verpflegung anstreben.","scene":"Betreuungs- und Schulflächen werden erweitert. Die entscheidenden Unterschiede bei Gebühren und Personal werden erklärt, nicht im Luftbild erfunden."},
-      "gesundheit":{"pages":[17,18,19],"programme":"Gesundheitsversorgung gemeinwohlorientiert finanzieren; kommunale Versorgungszentren und bessere Pflege ermöglichen.","scene":"Ein integrierter Versorgungsstandort ergänzt die Klinik. Öffentliche Trägerschaft allein beweist noch keine bessere Behandlung."}
-    }},
-    {"id":"f","label":"Szenario F","party":"BSW","image":"/assets/img/polls/wirkstadt/f.webp","alt":"Dieselbe Stadt mit erneuerbaren Anlagen und Gasreserve, zusätzlichem Geschosswohnungsbau sowie erhaltenen Verkehrs- und Versorgungsangeboten.","source":"https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf","sourceTitle":"BSW: Unser Land verdient mehr! (2025)","funding":"Öffentliche Infrastrukturinvestitionen, Reform der Schuldenbremse und soziale Regulierung sollen den Umbau tragen. Verfügbarkeit und Preise von Energieimporten sowie europäische Vorgaben bleiben entscheidende Unsicherheiten.","topics":{
-      "energie":{"pages":[9,10,11,12],"programme":"Erneuerbare mit Gasreserven verbinden, Netze stärker öffentlich steuern und Heizungsgesetz zurücknehmen.","scene":"Windenergie und eine kompakte Gasreserve stehen nebeneinander. Ein Kernkraftneubau wird nicht dargestellt; er wird im Programm abgelehnt."},
-      "mobilitaet":{"pages":[28,29,30],"programme":"Bezahlbaren öffentlichen Verkehr und individuelle Mobilität einschließlich sparsamer Autos ermöglichen.","scene":"Bus, Bahn, Straßen und Parken bleiben parallel nutzbar. Erschwinglichkeit ist eine Finanzierungsfrage, kein sichtbares Fahrzeugmerkmal."},
-      "wohnen":{"pages":[27,28],"programme":"Mieten begrenzen und gemeinnützigen Wohnungsbau fördern; Genehmigungen vereinfachen.","scene":"Ergänzter Geschosswohnungsbau illustriert mögliche zusätzliche Angebote. Ein garantiert niedriger Mietpreis wird nicht behauptet."},
-      "bildung":{"pages":[31,32,33],"programme":"Kostenloses Schul- und Kitaessen sowie verlässliche Ganztagsbetreuung ausbauen.","scene":"Erweiterte Betreuungsorte zeigen räumliche Möglichkeiten. Tatsächliche Öffnungszeiten und Qualität bleiben von Personal abhängig."},
-      "gesundheit":{"pages":[26,27],"programme":"Krankenhäuser erhalten und Versorgungssektoren besser verzahnen; Pflege solidarischer absichern.","scene":"Klinik und ergänzte lokale Versorgung bleiben erhalten. Die neue Architektur ist kein Nachweis gelungener Zusammenarbeit."}
-    }},
-    {"id":"g","label":"Szenario G","party":"FDP","image":"/assets/img/polls/wirkstadt/g.webp","alt":"Dieselbe Stadt mit marktgetriebenem Energieausbau, neuer Wohnbebauung, Umsteigeangeboten und ergänzten Versorgungsgebäuden.","source":"https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf","sourceTitle":"FDP: Alles lässt sich ändern (2025)","funding":"Private Investitionen, Wettbewerb und weniger Regulierung sollen Ausbau ermöglichen. Rentabilität kann regional unterschiedlich ausfallen; öffentliche Aufgaben und soziale Zugänglichkeit sind gesondert abzusichern.","topics":{
-      "energie":{"pages":[12,17,18,45],"programme":"Erneuerbare marktlich integrieren, Netze und Speicher abstimmen; neue Gaskraftwerke über einen Kapazitätsmarkt ermöglichen und Kernenergieoptionen offenhalten. Ein vorgezogener Braunkohleausstieg vor 2038 wird abgelehnt.","scene":"Wind, Solardächer und ein kompaktes Gaskraftwerk ergänzen den Bestand. Kohlekraftwerke außerhalb des Bildausschnitts können nach dieser Programmrichtung weiter zum Verbundnetz beitragen. Keine gesicherte Atomkraftwerksfertigstellung wird unterstellt."},
-      "mobilitaet":{"pages":[41,42,43],"programme":"Straßen und Schiene stärken; flexible ÖPNV-Angebote, Wettbewerb und Mobilitätsknoten ausbauen.","scene":"Ein Umsteigepunkt und Kleinbusse ergänzen erhaltene Autoangebote. Digitale Vermittlung allein schafft noch keine flächendeckende Verbindung."},
-      "wohnen":{"pages":[43,44],"programme":"Privaten Wohnungsbau durch Abschreibungen, einfachere Standards und schnellere Genehmigungen erleichtern.","scene":"Randbebauung und zusätzliche Wohnungen innen zeigen eine mögliche Angebotsausweitung. Mietsenkung und Erschwinglichkeit folgen daraus nicht automatisch."},
-      "bildung":{"pages":[7,8],"programme":"Betreuungsangebote und Qualität stärken; Kindertagespflege, Schulen und digitale Bildung weiterentwickeln.","scene":"Modernisierte Einrichtungen und ergänzende Betreuung zeigen unterschiedliche Angebotsformen. Die Finanzierung jedes Platzes bleibt zu prüfen."},
-      "gesundheit":{"pages":[33,34,35],"programme":"Versorgung vernetzen, Digitalisierung nutzen und Pflegefinanzierung ergänzen.","scene":"Ein ergänzter Versorgungsbau steht für mögliche Vernetzung. Weder bessere Behandlung noch geringere Eigenanteile sind allein daraus ableitbar."}
-    }}
+    {
+      "id": "a",
+      "label": "Szenario A",
+      "party": "CDU/CSU",
+      "image": "/assets/img/polls/wirkstadt/a-alltag-v2.webp",
+      "alt": "Dieselbe Stadt mit gemischtem Energieausbau, erhaltenen Straßen- und Parkflächen sowie ergänzten Wohngebäuden.",
+      "source": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf",
+      "sourceTitle": "CDU/CSU: Politikwechsel für Deutschland (2025)",
+      "funding": "Programmhebel sind unter anderem private Investitionen, einfacheres Baurecht und Förderung. Ob Entlastungen, öffentliche Aufgaben und Investitionen gemeinsam finanzierbar sind, ist hier nicht durchgerechnet.",
+      "topics": {
+        "energie": {
+          "pages": [
+            21,
+            22
+          ],
+          "programme": "Erneuerbare ausbauen, Versorgung technologieoffen absichern; Kernenergieoption prüfen und Heizungsgesetz abschaffen.",
+          "scene": "Windanlagen, Dach-PV und ein kompaktes flexibles Kraftwerk stehen für einen gemischten Ausbau. Kein neues Atomkraftwerk wird als gesichert dargestellt."
+        },
+        "mobilitaet": {
+          "pages": [
+            74,
+            75
+          ],
+          "programme": "Straßen und Schiene erneuern, Autozugang erhalten; ÖPNV und weitere Verkehrsträger ergänzen sich.",
+          "scene": "Erneuerte Straßen, Parken und Umstiegsmöglichkeiten bleiben nebeneinander sichtbar. Daraus folgt keine berechnete Zunahme des Autoverkehrs."
+        },
+        "wohnen": {
+          "pages": [
+            73
+          ],
+          "programme": "Baurecht vereinfachen, Nachverdichtung und Neubau ermöglichen; sozialen Wohnungsbau fördern.",
+          "scene": "Zusätzliche Wohnungen entstehen innen und am Rand. Gebäudezahlen und Eigentumsanteile sind keine Programmprognose."
+        },
+        "bildung": {
+          "pages": [
+            65,
+            66
+          ],
+          "programme": "Verlässliche Betreuung, Sprachförderung und digitale Schulausstattung stärken.",
+          "scene": "Die bestehenden Einrichtungen werden modernisiert. Ob dadurch Ausfälle sinken, hängt vor allem von Personal und Betrieb ab."
+        },
+        "gesundheit": {
+          "pages": [
+            69,
+            70
+          ],
+          "programme": "Flächendeckende Grundversorgung und spezialisierte Leistungen verbinden; Fehlsteuerungen der Krankenhausreform korrigieren.",
+          "scene": "Das Krankenhaus bleibt erhalten, ambulante Versorgung ergänzt den Standort. Konkrete Behandlungskapazitäten werden nicht behauptet."
+        }
+      }
+    },
+    {
+      "id": "b",
+      "label": "Szenario B",
+      "party": "SPD",
+      "image": "/assets/img/polls/wirkstadt/b-alltag-v2.webp",
+      "alt": "Dieselbe Stadt mit Windenergie, Dach-PV, Wärmeinfrastruktur und erweiterten öffentlichen Einrichtungen.",
+      "source": "https://mehr.spd.de/custom-static-assets/documents/Regierungsprogramm.pdf",
+      "sourceTitle": "SPD: Mehr für Dich. Besser für Deutschland. (2025)",
+      "funding": "Der Deutschlandfonds soll öffentliche und private Investitionen ermöglichen. Finanzierung, Betriebskosten und örtliche Lieferfähigkeit bleiben eigene Prüfaufgaben; das Bild ist kein ausgeglichener Stadtetat.",
+      "topics": {
+        "energie": {
+          "pages": [
+            6,
+            7,
+            8,
+            33,
+            53
+          ],
+          "programme": "Erneuerbare, Strom- und Wärmenetze ausbauen; klimafreundliche Wärme sozial unterstützen.",
+          "scene": "Dach-PV, Windanlagen und eine Wärmeinfrastruktur ergänzen den Bestand. Das überregionale Stromnetz bleibt Teil der Versorgung; das Bild behauptet keine ausschließlich örtliche Erzeugung. Günstigere Rechnungen sind daran nicht automatisch ablesbar."
+        },
+        "mobilitaet": {
+          "pages": [
+            35,
+            36
+          ],
+          "programme": "Schiene und öffentlichen Verkehr stärken; Deutschlandticket dauerhaft finanzieren.",
+          "scene": "Ein ausgebauter Umsteigepunkt und Busangebote ergänzen weiterhin nutzbare Straßen. Preis und Takt müssen zusätzlich finanziert werden."
+        },
+        "wohnen": {
+          "pages": [
+            20,
+            21
+          ],
+          "programme": "Sozialen und gemeinnützigen Wohnungsbau stärken und Mieten begrenzen; auch private Investitionen ermöglichen.",
+          "scene": "Neue Mehrfamilienhäuser und gemeinschaftliche Höfe zeigen möglichen Ausbau. Sozialbindung lässt sich nur in den zugehörigen Regeln prüfen."
+        },
+        "bildung": {
+          "pages": [
+            15,
+            27
+          ],
+          "programme": "Kitaqualität, Ganztag und Schulen stärken; kostenloses Mittagessen gemeinsam mit den Ländern ermöglichen.",
+          "scene": "Kita und Schule erhalten zusätzliche Nutzflächen. Personalausstattung, Qualität und tatsächliche Gebühren sind nicht im Bild messbar."
+        },
+        "gesundheit": {
+          "pages": [
+            29,
+            30,
+            31
+          ],
+          "programme": "Ambulante und stationäre Versorgung vernetzen; örtliche Angebote und Pflege stärken.",
+          "scene": "Ein ergänzter Versorgungsstandort steht für bessere Zusammenarbeit. Ob Termine schneller verfügbar werden, bleibt zu überprüfen."
+        }
+      }
+    },
+    {
+      "id": "c",
+      "label": "Szenario C",
+      "party": "Bündnis 90/Die Grünen",
+      "image": "/assets/img/polls/wirkstadt/c-alltag-v2.webp",
+      "alt": "Dieselbe Stadt mit Wind- und Solarenergie, vielen Solardächern, Wärmeinfrastruktur und stärker begrünten Verkehrsflächen.",
+      "source": "https://cms.gruene.de/uploads/assets/Regierungsprogramm_DIGITAL_DINA5.pdf",
+      "sourceTitle": "Bündnis 90/Die Grünen: Zusammen wachsen (2025)",
+      "funding": "Investitionen, verlässliche Förderung und soziale Abfederung sollen den Umbau tragen. Finanzierung und Kapazitäten müssen gesondert belegt werden; ein grüneres Bild ist kein Beweis positiver Netto-Wirkung.",
+      "topics": {
+        "energie": {
+          "pages": [
+            41,
+            42,
+            43,
+            44
+          ],
+          "programme": "Erneuerbare, Netze, Speicher und klimafreundliche Wärme ausbauen; regelbare Kraftwerke möglichst bald mit grünem Wasserstoff sowie flexible Biogaskraftwerke vorsehen. Kohleausstieg 2030 und klimaneutrale Stromerzeugung 2035 sind Programmziele.",
+          "scene": "Solardächer, Windanlagen und Wärmeinfrastruktur machen einen Teil des Umbaus sichtbar. Regelbare Kraftwerke im Verbundnetz sind ebenfalls vorgesehen, aber nicht vollständig im örtlichen Bild abgebildet. Anlagenzahlen sind zeichnerisch, nicht aus Zielwerten berechnet."
+        },
+        "mobilitaet": {
+          "pages": [
+            47,
+            48
+          ],
+          "programme": "Öffentlichen Verkehr, Fuß- und Radverkehr sowie verkehrsberuhigte Quartiere stärken.",
+          "scene": "Radverbindungen und bepflanzte Aufenthaltsflächen ersetzen teilweise Parkraum. Erreichbarkeit für Menschen mit Mobilitätseinschränkungen bleibt eine Prüfbedingung."
+        },
+        "wohnen": {
+          "pages": [
+            70,
+            71,
+            72
+          ],
+          "programme": "Sozialen und gemeinnützigen Wohnungsbau, Mieterschutz und klimaverträgliche Sanierung unterstützen.",
+          "scene": "Ergänztes Wohnen, Solardächer und Höfe zeigen einen möglichen Umbau. Sanierung darf nicht ungeprüft als sinkende Gesamtmiete gelten."
+        },
+        "bildung": {
+          "pages": [
+            75,
+            76
+          ],
+          "programme": "Kitaqualität und Fachkräfte stärken; einkommensabhängige Kitagebühren als Standard anstreben.",
+          "scene": "Modernisierte Lern- und Betreuungsorte werden gezeigt. Das Programm bedeutet hier ausdrücklich nicht pauschal kostenlose Kitas für alle."
+        },
+        "gesundheit": {
+          "pages": [
+            51,
+            88,
+            89
+          ],
+          "programme": "Versorgung besser koordinieren, kommunale Gesundheitszentren ermöglichen und Einrichtungen an Klimarisiken anpassen.",
+          "scene": "Ein ergänzter Gesundheitsstandort bleibt in die Stadt eingebunden. Gebäude allein garantieren weder Personal noch kürzere Wartezeiten."
+        }
+      }
+    },
+    {
+      "id": "d",
+      "label": "Szenario D",
+      "party": "AfD",
+      "image": "/assets/img/polls/wirkstadt/d-energy-v2.webp",
+      "alt": "Dieselbe Stadt mit einem Kohle- und Gaskraftwerkskomplex am Umspannwerk im linken Umland, erhaltenen Straßen und zusätzlichen niedrigeren Wohngebäuden. Ein Kernenergie-Wiedereinstieg wird nicht als bereits verfügbar dargestellt.",
+      "source": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
+      "sourceTitle": "AfD: Zeit für Deutschland (2025)",
+      "funding": "Steuer- und Regulierungsentlastung sowie konventionelle Energie bilden wichtige Programmhebel. Weder sinkende Energiepreise noch eine tragfähige Finanzierung öffentlicher Leistungen sind dadurch bereits nachgewiesen.",
+      "topics": {
+        "energie": {
+          "pages": [
+            14,
+            40,
+            41,
+            42
+          ],
+          "programme": "Windenergieausbau stoppen, Braunkohleausstieg ablehnen und Kohlekraftwerke ausbauen. Kohle und Gas sollen die Stromversorgung bis zum angestrebten Kernenergie-Wiedereinstieg sichern.",
+          "scene": "Links im Umland stehen ein Kohlekraftwerk mit Kohlelager und Förderband sowie ein kleineres Gaskraftwerk am Umspannwerk. Lage und Größe sind illustrative Übersetzungen nationaler Programmrichtungen, keine örtlichen Bauzusagen. Ein fertiges Atomkraftwerk wird nicht unterstellt; Emissionen und Importabhängigkeit bleiben zu prüfen."
+        },
+        "mobilitaet": {
+          "pages": [
+            43,
+            44,
+            45
+          ],
+          "programme": "Verbrennungsmotor und individuellen Verkehr stärken; öffentliche Förderung der Ladeinfrastruktur beenden.",
+          "scene": "Straßen- und Parkflächen bleiben erhalten. Das Bild behauptet weder einen Verkehrskollaps noch die Abschaffung des öffentlichen Verkehrs."
+        },
+        "wohnen": {
+          "pages": [
+            37,
+            38,
+            39
+          ],
+          "programme": "Wohneigentum und einfacheres Bauen fördern, Umwandlung von Mietwohnungen in Eigentum erleichtern.",
+          "scene": "Neue niedrige Wohnbauten ergänzen den Bestand. Wer Eigentum finanzieren kann und wie Mietende betroffen sind, bleibt offen."
+        },
+        "bildung": {
+          "pages": [
+            153
+          ],
+          "programme": "Familiäre Betreuung finanziell unterstützen, Betriebskindergärten fördern und ausreichendes qualifiziertes Kita-Personal vorsehen.",
+          "scene": "Die Kita bleibt geöffnet. Zusätzliche familiennahe Wohn- und Spielflächen veranschaulichen eine mögliche Ausgestaltung, keine belegte Betreuungswirkung."
+        },
+        "gesundheit": {
+          "pages": [
+            27,
+            28,
+            29
+          ],
+          "programme": "Krankenhausfinanzierung verändern, ambulante Versorgung und Pflegebedingungen verbessern.",
+          "scene": "Der vorhandene Versorgungsstandort wird weiter genutzt. Das Programm wird nicht mit unbelegten Krankenhausruinen illustriert."
+        }
+      }
+    },
+    {
+      "id": "e",
+      "label": "Szenario E",
+      "party": "Die Linke",
+      "image": "/assets/img/polls/wirkstadt/e-alltag-v2.webp",
+      "alt": "Dieselbe Stadt mit gemeinschaftlich gedachter Energieinfrastruktur, zusätzlichen Wohnhöfen, Bus- und Radverbindungen sowie Bildungseinrichtungen.",
+      "source": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf",
+      "sourceTitle": "Die Linke: Alle wollen regieren. Wir wollen verändern. (2025)",
+      "funding": "Öffentliche Investitionen, höhere Beiträge großer Vermögen und eine andere Verschuldungsregel sollen Spielräume schaffen. Umsetzbarkeit, dauerhafte Einnahmen und Bau- sowie Personalengpässe sind nicht durch das Bild gelöst.",
+      "topics": {
+        "energie": {
+          "pages": [
+            32,
+            33,
+            34
+          ],
+          "programme": "Erneuerbare und Wärmeversorgung öffentlich beziehungsweise genossenschaftlich ausbauen; Haushalte sozial entlasten.",
+          "scene": "Wind, Solar und lokale Wärme ergänzen den Bestand. Eigentumsverhältnisse werden im Bild nicht vorgetäuscht; sie sind eine institutionelle Bedingung."
+        },
+        "mobilitaet": {
+          "pages": [
+            36,
+            37
+          ],
+          "programme": "Bus und Bahn ausbauen und deutlich verbilligen; öffentliche Trägerschaft und kurze Wege stärken.",
+          "scene": "Öffentliche Verkehrsangebote und Radverbindungen gewinnen Platz. Die Nutzung und der dauerhaft finanzierte Betrieb müssen separat geprüft werden."
+        },
+        "wohnen": {
+          "pages": [
+            8,
+            9
+          ],
+          "programme": "Gemeinnützigen Wohnungsbau stark fördern, Mieten begrenzen und öffentliche Bestände stärken.",
+          "scene": "Zusätzliche Wohnhöfe illustrieren möglichen Ausbau, nicht eine berechnete Wohnungszahl oder automatisch niedrige Mieten."
+        },
+        "bildung": {
+          "pages": [
+            16,
+            38
+          ],
+          "programme": "Gebührenfreie Betreuung, bessere Personalschlüssel und kostenfreie Verpflegung anstreben.",
+          "scene": "Betreuungs- und Schulflächen werden erweitert. Die entscheidenden Unterschiede bei Gebühren und Personal werden erklärt, nicht im Luftbild erfunden."
+        },
+        "gesundheit": {
+          "pages": [
+            17,
+            18,
+            19
+          ],
+          "programme": "Gesundheitsversorgung gemeinwohlorientiert finanzieren; kommunale Versorgungszentren und bessere Pflege ermöglichen.",
+          "scene": "Ein integrierter Versorgungsstandort ergänzt die Klinik. Öffentliche Trägerschaft allein beweist noch keine bessere Behandlung."
+        }
+      }
+    },
+    {
+      "id": "f",
+      "label": "Szenario F",
+      "party": "BSW",
+      "image": "/assets/img/polls/wirkstadt/f-alltag-v2.webp",
+      "alt": "Dieselbe Stadt mit erneuerbaren Anlagen und Gasreserve, zusätzlichem Geschosswohnungsbau sowie erhaltenen Verkehrs- und Versorgungsangeboten.",
+      "source": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf",
+      "sourceTitle": "BSW: Unser Land verdient mehr! (2025)",
+      "funding": "Öffentliche Infrastrukturinvestitionen, Reform der Schuldenbremse und soziale Regulierung sollen den Umbau tragen. Verfügbarkeit und Preise von Energieimporten sowie europäische Vorgaben bleiben entscheidende Unsicherheiten.",
+      "topics": {
+        "energie": {
+          "pages": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "programme": "Erneuerbare mit Gasreserven verbinden, Netze stärker öffentlich steuern und Heizungsgesetz zurücknehmen.",
+          "scene": "Windenergie und eine kompakte Gasreserve stehen nebeneinander. Ein Kernkraftneubau wird nicht dargestellt; er wird im Programm abgelehnt."
+        },
+        "mobilitaet": {
+          "pages": [
+            28,
+            29,
+            30
+          ],
+          "programme": "Bezahlbaren öffentlichen Verkehr und individuelle Mobilität einschließlich sparsamer Autos ermöglichen.",
+          "scene": "Bus, Bahn, Straßen und Parken bleiben parallel nutzbar. Erschwinglichkeit ist eine Finanzierungsfrage, kein sichtbares Fahrzeugmerkmal."
+        },
+        "wohnen": {
+          "pages": [
+            27,
+            28
+          ],
+          "programme": "Mieten begrenzen und gemeinnützigen Wohnungsbau fördern; Genehmigungen vereinfachen.",
+          "scene": "Ergänzter Geschosswohnungsbau illustriert mögliche zusätzliche Angebote. Ein garantiert niedriger Mietpreis wird nicht behauptet."
+        },
+        "bildung": {
+          "pages": [
+            31,
+            32,
+            33
+          ],
+          "programme": "Kostenloses Schul- und Kitaessen sowie verlässliche Ganztagsbetreuung ausbauen.",
+          "scene": "Erweiterte Betreuungsorte zeigen räumliche Möglichkeiten. Tatsächliche Öffnungszeiten und Qualität bleiben von Personal abhängig."
+        },
+        "gesundheit": {
+          "pages": [
+            26,
+            27
+          ],
+          "programme": "Krankenhäuser erhalten und Versorgungssektoren besser verzahnen; Pflege solidarischer absichern.",
+          "scene": "Klinik und ergänzte lokale Versorgung bleiben erhalten. Die neue Architektur ist kein Nachweis gelungener Zusammenarbeit."
+        }
+      }
+    },
+    {
+      "id": "g",
+      "label": "Szenario G",
+      "party": "FDP",
+      "image": "/assets/img/polls/wirkstadt/g.webp",
+      "alt": "Dieselbe Stadt mit marktgetriebenem Energieausbau, neuer Wohnbebauung, Umsteigeangeboten und ergänzten Versorgungsgebäuden.",
+      "source": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf",
+      "sourceTitle": "FDP: Alles lässt sich ändern (2025)",
+      "funding": "Private Investitionen, Wettbewerb und weniger Regulierung sollen Ausbau ermöglichen. Rentabilität kann regional unterschiedlich ausfallen; öffentliche Aufgaben und soziale Zugänglichkeit sind gesondert abzusichern.",
+      "topics": {
+        "energie": {
+          "pages": [
+            12,
+            17,
+            18,
+            45
+          ],
+          "programme": "Erneuerbare marktlich integrieren, Netze und Speicher abstimmen; neue Gaskraftwerke über einen Kapazitätsmarkt ermöglichen und Kernenergieoptionen offenhalten. Ein vorgezogener Braunkohleausstieg vor 2038 wird abgelehnt.",
+          "scene": "Wind, Solardächer und ein kompaktes Gaskraftwerk ergänzen den Bestand. Kohlekraftwerke außerhalb des Bildausschnitts können nach dieser Programmrichtung weiter zum Verbundnetz beitragen. Keine gesicherte Atomkraftwerksfertigstellung wird unterstellt."
+        },
+        "mobilitaet": {
+          "pages": [
+            41,
+            42,
+            43
+          ],
+          "programme": "Straßen und Schiene stärken; flexible ÖPNV-Angebote, Wettbewerb und Mobilitätsknoten ausbauen.",
+          "scene": "Ein Umsteigepunkt und Kleinbusse ergänzen erhaltene Autoangebote. Digitale Vermittlung allein schafft noch keine flächendeckende Verbindung."
+        },
+        "wohnen": {
+          "pages": [
+            43,
+            44
+          ],
+          "programme": "Privaten Wohnungsbau durch Abschreibungen, einfachere Standards und schnellere Genehmigungen erleichtern.",
+          "scene": "Randbebauung und zusätzliche Wohnungen innen zeigen eine mögliche Angebotsausweitung. Mietsenkung und Erschwinglichkeit folgen daraus nicht automatisch."
+        },
+        "bildung": {
+          "pages": [
+            7,
+            8
+          ],
+          "programme": "Betreuungsangebote und Qualität stärken; Kindertagespflege, Schulen und digitale Bildung weiterentwickeln.",
+          "scene": "Modernisierte Einrichtungen und ergänzende Betreuung zeigen unterschiedliche Angebotsformen. Die Finanzierung jedes Platzes bleibt zu prüfen."
+        },
+        "gesundheit": {
+          "pages": [
+            33,
+            34,
+            35
+          ],
+          "programme": "Versorgung vernetzen, Digitalisierung nutzen und Pflegefinanzierung ergänzen.",
+          "scene": "Ein ergänzter Versorgungsbau steht für mögliche Vernetzung. Weder bessere Behandlung noch geringere Eigenanteile sind allein daraus ableitbar."
+        }
+      }
+    }
   ]
 }

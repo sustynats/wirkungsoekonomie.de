@@ -38,9 +38,20 @@ test('zoom is deterministic, centred and clamped without blank image edges',()=>
  const wrong=structuredClone(data);wrong.extraFocusAreas[0].domainId='missing';assert.throws(()=>validateExperience(wrong),/extra focus/);
  assert.deepEqual(zoomTransform({x:0,y:100,zoom:3}),{scale:3,x:100,y:-100});
 });
+test('all everyday comparison dimensions cover every scenario with evidence and a shared focus',()=>{
+ const data=loadExperience(root,seed.slug);
+ assert.deepEqual(data.comparison.categories.map(c=>c.id),['emissionen','radwege','auto','oepnv','parks','erholung']);
+ assert.equal(Object.values(data.comparison.scenarios).flatMap(s=>Object.values(s)).length,42);
+ const missing=structuredClone(data);delete missing.comparison.scenarios.b.parks;assert.throws(()=>validateExperience(missing),/comparison evidence/);
+ const wrong=structuredClone(data);wrong.comparison.categories[0].focus='missing';assert.throws(()=>validateExperience(wrong),/comparison category/);
+ const source=structuredClone(data);source.comparison.scenarios.c.auto.pages=[];assert.throws(()=>validateExperience(source),/comparison evidence/);
+ assert.match(data.comparison.scenarios.a.radwege.text,/neue Radwege/);
+ assert.match(data.comparison.scenarios.f.radwege.text,/ausdrücklich/);
+ assert.match(data.comparison.scenarios.e.auto.text,/Autofreie Innenstädte/);
+});
 test('sensitive HTML has zoom, sources, metadata, consent and no cross-page scripts',t=>{
  const {store}=fixture(t),poll=store.create({...seed,status:'active'}),html=pollPage(root,poll);
- for(const part of ['id="vp-area"','id="vp-wipe"','id="vp-compare"','id="vp-reveal"','id="einwilligung"','poll-visual.js','summary_large_image','no-referrer','id="vp-energy-content"','keine Energieinsel'])assert.ok(html.includes(part),part);
+ for(const part of ['id="vp-area"','id="vp-wipe"','id="vp-compare"','id="vp-reveal"','id="einwilligung"','poll-visual.js','summary_large_image','no-referrer','id="vp-energy-content"','keine Energieinsel','id="vp-contrast-cards"','data-vp-contrast="emissionen"','data-vp-contrast="parks"'])assert.ok(html.includes(part),part);
  assert.ok(!/src="[^\"]*(?:main|newsletter)\.js/.test(html));
  assert.ok(html.includes('/wirkungsradar/newsletter/'));
  assert.ok(!html.includes('anonymous_vote_identifier'));

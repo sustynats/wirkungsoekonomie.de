@@ -12,7 +12,22 @@ function startVisual() {
   const focusAreas=[...data.domains,...(data.extraFocusAreas||[])];
   const stage=$('vp-stage'),scenarioSelect=$('vp-scenario'),areaSelect=$('vp-area'),compareSelect=$('vp-compare');
   let scenario=data.scenarios[0],area=null,view='before',revealed=false,hotspots=false,voted=false,requestNumber=0;
+  let contrast='auto';
   const scenarioName=s=>`${s.label}${revealed?` · ${s.party}`:''}`;
+  function renderContrast(){
+    if(!data.comparison)return;
+    const category=data.comparison.categories.find(c=>c.id===contrast);
+    $('vp-contrast-title').textContent=`${category.title}: sieben Richtungen im Vergleich`;
+    $('vp-contrast-note').textContent=category.note;
+    document.querySelectorAll('[data-vp-contrast]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.vpContrast===contrast)));
+    $('vp-contrast-cards').replaceChildren(...data.scenarios.map(s=>{
+      const e=data.comparison.scenarios[s.id][contrast],card=el('article');card.dataset.selected=String(s.id===scenario.id);
+      card.append(el('p',scenarioName(s),'poll-kicker'),el('h4',e.headline),el('p',e.text));
+      const proof=el('p',`Programm 2025 · PDF-Seiten ${e.pages.join(', ')}. `,'poll-notice');
+      if(revealed){const a=el('a','Originalquelle');a.href=`${s.source}#page=${e.pages[0]}`;a.target='_blank';a.rel='noopener noreferrer';proof.append(a);}
+      card.append(proof,button(`${s.label} im Bild ansehen`,()=>{scenario=s;scenarioSelect.value=s.id;renderTopics();selectArea(category.focus);setView(view==='before'?'after':view);stage.scrollIntoView({behavior:'auto',block:'center'});}));return card;
+    }));
+  }
   function renderEnergy() {
     const target=$('vp-energy-content');if(!target)return;
     if(view==='before'){
@@ -46,6 +61,7 @@ function startVisual() {
     $('vp-written-title').textContent=`${scenarioName(scenario)}: Was würde sich ändern?`;
     $('vp-legend').textContent=`Links: Ausgangsbild · Rechts: ${scenarioName(scenario)}`;
     renderEnergy();
+    renderContrast();
   }
   function updateZoom() {
     const z=zoomTransform(area);
@@ -125,6 +141,7 @@ function startVisual() {
   areaSelect.addEventListener('change',()=>selectArea(areaSelect.value));
   document.querySelectorAll('[data-vp-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.vpView)));
   document.querySelectorAll('[data-vp-area]').forEach(b=>b.addEventListener('click',()=>selectArea(b.dataset.vpArea)));
+  document.querySelectorAll('[data-vp-contrast]').forEach(b=>b.addEventListener('click',()=>{contrast=b.dataset.vpContrast;const category=data.comparison.categories.find(c=>c.id===contrast);selectArea(category.focus);if(view==='before')setView('after');else renderContrast();}));
   $('vp-wipe').addEventListener('input',event=>{const value=Number(event.target.value);stage.style.setProperty('--vp-wipe',`${value}%`);event.target.setAttribute('aria-valuetext',`${value} Prozent Ausgangsbild, ${100-value} Prozent Szenario`);});
   $('vp-reset').addEventListener('click',()=>selectArea(''));
   $('vp-hotspot-toggle').addEventListener('click',()=>{hotspots=!hotspots;$('vp-hotspot-toggle').setAttribute('aria-expanded',String(hotspots));$('vp-hotspot-toggle').textContent=hotspots?'Markierungen ausblenden':'Details entdecken';if(hotspots&&view==='before')setView('after');document.querySelector('.vp-hotspots').hidden=!hotspots;});
