@@ -127,19 +127,23 @@ export function renderPoll(poll, mount, { voted=false, selected_option=null, res
   if(poll.further_url&&validLink(poll.further_url)) { const a=el('a','Weiterführende Informationen');a.href=validLink(poll.further_url);mount.append(a); }
   document.dispatchEvent(new CustomEvent('woek:poll-render',{detail:{poll,voted,selected_option,results}}));
 }
-export function initSharing(container, title, url) {
+export function initSharing(container, title, url, {compact=false}={}) {
   const actions=el('div',undefined,'poll-actions'), status=el('p','','poll-notice');status.setAttribute('role','status');
   const input=el('input');input.value=url;input.readOnly=true;input.setAttribute('aria-label','Link zu dieser Umfrage');
+  input.hidden=compact;
   actions.append(button('Link kopieren',async()=>{
     try { await navigator.clipboard.writeText(url);status.textContent='Link kopiert.'; }
-    catch { input.focus();input.select();status.textContent='Bitte den markierten Link kopieren.'; }
+    catch { input.hidden=false;input.focus();input.select();status.textContent='Bitte den markierten Link kopieren.'; }
   }));
   if(navigator.share) actions.prepend(button('Umfrage teilen',async()=>{ try{await navigator.share({title,url});}catch(error){if(error.name!=='AbortError')status.textContent='Teilen nicht möglich. Du kannst den Link kopieren.';} }));
-  container.append(el('h2','Andere einladen'),actions,input,status);
+  if(!compact)container.append(el('h2','Andere einladen'));
+  container.append(actions,input,status);
 }
 async function start() {
   const page=document.querySelector('[data-poll-slug]');if(!page)return;
   const slug=page.dataset.pollSlug, id=page.dataset.pollId, mount=document.getElementById('poll-ui');
+  // Sharing never needs a vote, an anonymous identifier or a working API.
+  for(const share of document.querySelectorAll('#poll-share, [data-poll-share]'))initSharing(share,document.title,`https://wirkungsoekonomie.de/umfragen/${slug}/`,{compact:share.dataset.pollShare==='compact'});
   let current;
   async function load() {
     const data=await request(`/api/polls/${encodeURIComponent(slug)}`,{token:storedToken(id)});current=data;
@@ -176,6 +180,5 @@ async function start() {
   // Never destroy an in-progress comment or withdrawal confirmation on refresh.
   const timer=setInterval(()=>{const feedbackInput=mount.querySelector('textarea');if(mount.querySelector('details[open]')||mount.contains(document.activeElement))return;if(feedbackInput&&feedbackInput.value)return;if(!document.hidden&&current&&(current.voted||current.poll.effective_status!=='active'))load().catch(()=>{});},60000);
   window.addEventListener('pagehide',()=>clearInterval(timer),{once:true});
-  const share=document.getElementById('poll-share');if(share)initSharing(share,document.title,`https://wirkungsoekonomie.de/umfragen/${slug}/`);
 }
 if(typeof document!=='undefined') start();

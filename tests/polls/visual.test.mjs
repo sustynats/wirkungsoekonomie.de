@@ -30,6 +30,8 @@ test('seven scenarios use equal domains, valid sources and actual own images',()
  assert.ok(data.scenarios[3].image.endsWith('d-energy-v2.webp'));
  assert.match(data.scenarios[3].energy.fossil,/Kohle/);
  assert.match(data.scenarios[2].energy.fossil,/Wasserstoff/);
+ const intro=structuredClone(data);intro.introduction=[''];assert.throws(()=>validateExperience(intro),/introduction/);
+ assert.equal(data.introduction.length,4);
 });
 test('zoom is deterministic, centred and clamped without blank image edges',()=>{
  assert.deepEqual(zoomTransform(null),{scale:1,x:0,y:0});
@@ -55,6 +57,8 @@ test('sensitive HTML has zoom, sources, metadata, consent and no cross-page scri
  assert.ok(!/src="[^\"]*(?:main|newsletter)\.js/.test(html));
  assert.ok(html.includes('/wirkungsradar/newsletter/'));
  assert.ok(!html.includes('anonymous_vote_identifier'));
+ assert.ok(html.includes('data-poll-share="compact"'));
+ assert.ok(html.includes('auf dem Weg zur Arbeit'));
  const later=html.replace('</body>','<script defer src="/assets/js/main.js"></script></body>');
  assert.ok(!minimiseSensitivePollHtml(later).includes('src="/assets/js/main.js"'));
  const mismatch={...poll,options:poll.options.slice(1)};assert.throws(()=>pollPage(root,mismatch),/mapping/);

@@ -2,6 +2,8 @@
 .visual-poll-page #poll-ui,.visual-poll-page #datenschutz,.visual-poll-page #poll-share { max-width: 850px; margin-inline:auto; }
 .visual-poll-page .poll-shell>h1 { max-width: 24ch; }
 .visual-poll { margin: 2.5rem 0; }
+.vp-introduction { max-width: 75ch; line-height: 1.7; }
+.vp-share { max-width: 850px; margin-block: 1.5rem; }
 .vp-controls { display:flex; flex-wrap:wrap; gap:1rem; margin:1.25rem 0; }
 .vp-controls label { flex:1 1 250px; font-size:.9rem; font-weight:700; }
 .vp-controls select { display:block; width:100%; min-height:48px; padding:.7rem; margin-top:.4rem; border:1px solid #81908b; border-radius:6px; background:#fff; color:var(--navy); font:inherit; }
